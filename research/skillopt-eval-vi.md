@@ -1,3 +1,10 @@
+---
+id: research.skillopt
+type: research
+status: reference
+updated: 2026-10-12
+tags: [skills, evaluation]
+---
 # Đánh giá microsoft/skillopt (12/10/2026)
 **Có tồn tại [đã xác minh]:** https://github.com/microsoft/skillopt (tên chính thức "SkillOpt"). Kèm paper arXiv 2605.23904, bài viết của Microsoft Research (24/7/2026), và gói PyPI `skillopt` (v0.1.0 ngày 2/6/2026, v0.2.0 ngày 2/7/2026).
 - **Làm gì:** coi file skill (markdown) như "tham số" để huấn luyện cho một agent có model cố định. Một model optimizer đọc các lần chạy đã chấm điểm rồi đề xuất sửa (thêm / xoá / thay) trong skill. Bản sửa chỉ được nhận khi điểm trên tập validation tăng. Kết quả là file `best_skill.md` (300–2.000 token), lúc dùng không tốn thêm lần gọi model nào. Có thêm **SkillOpt-Sleep**: chạy offline mỗi đêm, xem lại các phiên làm việc của Claude Code / Codex / Copilot để gom và chỉnh skill. Có WebUI (Gradio).

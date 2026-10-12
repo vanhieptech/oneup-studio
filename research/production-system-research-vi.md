@@ -1,3 +1,10 @@
+---
+id: research.production-system
+type: research
+status: reference
+updated: 2026-10-12
+tags: [stack, pipeline, anti-ai]
+---
 # Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất
 *Ngày 12/10/2026 (giờ VN). Nguồn: web, GitHub, tài liệu chính thức. Mục nào ghi [đã xác minh] là mình đã đọc nguồn hoặc chạy thử hôm nay. Mục ghi [cần kiểm lại] là mình viết theo hiểu biết sẵn có, chưa mở lại nguồn.*
 *Tài liệu này không đổi bộ luật `rules/video-rules.md`. Mọi lựa chọn đều nằm ở mục 8, chờ Hiệp quyết.*

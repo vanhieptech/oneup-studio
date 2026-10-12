@@ -1,3 +1,10 @@
+---
+id: research.motion-layer
+type: research
+status: reference
+updated: 2026-10-12
+tags: [motion]
+---
 # @hi.oneup motion layer, based on gongnyang/awesome-ai-motion
 
 Local clone: `refs/awesome-ai-motion (clone, xem refs/README.md)` (shallow clone, 2026-10-12)

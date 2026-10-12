@@ -1,0 +1,5 @@
+body{width:2400px;height:auto;overflow:visible}body:after{display:none}
+.sheet{padding:80px}.sheet h1{font-size:56px;letter-spacing:-.03em}.sub{color:$MUTED;font-size:26px;margin:12px 0 56px}
+.g{display:grid;grid-template-columns:repeat(5,1fr);gap:48px 40px}.c img{width:100%;border-radius:20px;border:2px solid #E3E3E0;display:block}
+.h{display:flex;gap:14px;align-items:baseline;margin:20px 0 8px}.h b{font-size:34px}.h span{color:#6B6B6B;font-size:22px;font-weight:500;text-transform:uppercase;letter-spacing:.05em}
+.c p{font-size:24px;line-height:1.45}

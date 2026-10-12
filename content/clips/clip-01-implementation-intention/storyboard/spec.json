@@ -1,0 +1,564 @@
+{
+ "id": "clip-01.storyboard",
+ "clip": "clip-01",
+ "theme": "LIGHT",
+ "seed": 7,
+ "logo": "brand/logos/05-pair-plus.svg",
+ "title": "Clip 01 · Implementation intention — Storyboard",
+ "subtitle": "@hi.oneup · script v2 · 55–60s · LIGHT · placeholders = live shots Hiệp quay (S1–S7)",
+ "script": "content/clips/clip-01-implementation-intention/script.md",
+ "revisions": [
+  {
+   "rev": 1,
+   "date": "2026-10-12",
+   "note": "First storyboard (10 beats) from script v2",
+   "decision": "DL-012"
+  },
+  {
+   "rev": 2,
+   "date": "2026-10-12",
+   "note": "Migrated to data-driven spec + shared renderer, layout unchanged",
+   "decision": "DL-015"
+  }
+ ],
+ "beats": [
+  {
+   "n": 1,
+   "id": "clip-01.b01",
+   "time": "0–3s",
+   "part": "Hook",
+   "vi": "Bạn viết \"mai mình làm\" cả tuần rồi… mà vẫn chưa bắt đầu.",
+   "shot": {
+    "id": "S1",
+    "label": "face to camera, handheld",
+    "sketch": "face"
+   },
+   "caption": {
+    "words": [
+     "You've",
+     "written",
+     "\"I'll",
+     "do",
+     "it",
+     "tomorrow\"",
+     "all",
+     "week…"
+    ],
+    "highlight": 5
+   },
+   "onscreen": [
+    {
+     "style": "big",
+     "top": 1150,
+     "html": "“Tomorrow.”"
+    }
+   ],
+   "draw": [
+    {
+     "type": "strike",
+     "xy": [
+      70,
+      1220,
+      560,
+      1206
+     ],
+     "w": 9
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 2,
+   "id": "clip-01.b02",
+   "time": "3–9s",
+   "part": "Problem",
+   "vi": "Không phải bạn lười. Câu \"mình sẽ làm\" không nói lúc nào, ở đâu.",
+   "shot": {
+    "id": "S2",
+    "label": "hands open notebook",
+    "sketch": "notebook"
+   },
+   "caption": {
+    "words": [
+     "\"I'll",
+     "do",
+     "it\"",
+     "has",
+     "no",
+     "when,",
+     "no",
+     "where."
+    ],
+    "highlight": 5
+   },
+   "onscreen": [
+    {
+     "style": "mid",
+     "top": 1150,
+     "html": "no when <span class=\"dot\">·</span> no where"
+    }
+   ],
+   "draw": [
+    {
+     "type": "glyph",
+     "text": "?",
+     "xy": [
+      640,
+      560
+     ],
+     "size": 130,
+     "rotate": -8
+    },
+    {
+     "type": "glyph",
+     "text": "?",
+     "xy": [
+      760,
+      700
+     ],
+     "size": 100,
+     "rotate": 10
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 3,
+   "id": "clip-01.b03",
+   "time": "9–16s",
+   "part": "Explain · formula",
+   "vi": "Đổi đúng một câu. Viết theo kiểu: nếu… thì…",
+   "caption": {
+    "words": [
+     "Write",
+     "it",
+     "as:",
+     "if…",
+     "then…"
+    ],
+    "highlight": 3
+   },
+   "onscreen": [
+    {
+     "style": "kicker",
+     "top": 390,
+     "html": "Change one sentence"
+    },
+    {
+     "style": "boxlbl",
+     "top": 700,
+     "html": "IF",
+     "css": "left:120px"
+    },
+    {
+     "style": "boxlbl",
+     "top": 700,
+     "html": "THEN",
+     "css": "left:600px"
+    },
+    {
+     "style": "small",
+     "top": 960,
+     "html": "time · place · cue",
+     "css": "left:120px;width:300px"
+    },
+    {
+     "style": "small",
+     "top": 960,
+     "html": "one action",
+     "css": "left:600px;width:300px"
+    }
+   ],
+   "draw": [
+    {
+     "type": "box",
+     "xywh": [
+      90,
+      620,
+      330,
+      300
+     ]
+    },
+    {
+     "type": "box",
+     "xywh": [
+      570,
+      620,
+      330,
+      300
+     ]
+    },
+    {
+     "type": "arrow",
+     "xy": [
+      430,
+      770,
+      555,
+      770
+     ]
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 4,
+   "id": "clip-01.b04",
+   "time": "16–23s",
+   "part": "Explain · example",
+   "vi": "Ví dụ: \"Thứ Ba, tám giờ sáng, ngồi vào bàn, thì viết phần mở đầu trước.\"",
+   "shot": {
+    "id": "S3",
+    "label": "hand writing the line",
+    "sketch": "hand"
+   },
+   "caption": {
+    "words": [
+     "Tuesday,",
+     "8",
+     "a.m.,",
+     "I",
+     "sit",
+     "at",
+     "my",
+     "desk"
+    ],
+    "highlight": 0
+   },
+   "onscreen": [
+    {
+     "style": "note",
+     "top": 1140,
+     "html": "<b>IF</b> Tue 8am, at my desk<br><b>THEN</b> write the intro"
+    }
+   ],
+   "draw": [
+    {
+     "type": "arrow",
+     "xy": [
+      108,
+      1180,
+      108,
+      1280
+     ],
+     "w": 4
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 5,
+   "id": "clip-01.b05",
+   "time": "23–30s",
+   "part": "Explain · why",
+   "vi": "Tình huống đó trở thành cái công tắc. Đến giờ, ngồi vào bàn, là việc tự bắt đầu.",
+   "shot": {
+    "id": "S4 → S5",
+    "label": "clock 8:00 → sit, open laptop",
+    "sketch": "clock"
+   },
+   "caption": {
+    "words": [
+     "The",
+     "situation",
+     "becomes",
+     "a",
+     "trigger."
+    ],
+    "highlight": 4
+   },
+   "onscreen": [
+    {
+     "style": "mid",
+     "top": 1150,
+     "html": "cue <span class=\"arr\">→</span> action"
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 6,
+   "id": "clip-01.b06",
+   "time": "30–38s",
+   "part": "Proof",
+   "vi": "Một nghiên cứu gộp 94 kiểm nghiệm độc lập… hiệu ứng mức trung bình đến lớn.",
+   "caption": {
+    "words": [
+     "A",
+     "meta-analysis",
+     "of",
+     "94",
+     "independent",
+     "tests"
+    ],
+    "highlight": 3
+   },
+   "onscreen": [
+    {
+     "style": "kicker",
+     "top": 390,
+     "html": "Implementation intention"
+    },
+    {
+     "style": "huge",
+     "top": 460,
+     "html": "94"
+    },
+    {
+     "style": "mid",
+     "top": 760,
+     "html": "independent tests",
+     "css": "font-size:64px"
+    },
+    {
+     "style": "small",
+     "top": 930,
+     "html": "effect size <b style=\"color:#111\">d = 0.65</b>",
+     "css": "left:90px"
+    },
+    {
+     "style": "scale",
+     "top": 1060,
+     "html": "<span>small</span><span>medium</span><span>large</span>"
+    },
+    {
+     "style": "src",
+     "top": 1130,
+     "html": "Gollwitzer &amp; Sheeran, 2006 · meta-analysis"
+    }
+   ],
+   "draw": [
+    {
+     "type": "bar",
+     "xyw": [
+      90,
+      990,
+      810
+     ],
+     "value": 0.65,
+     "marks": [
+      0.5,
+      0.8
+     ]
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 7,
+   "id": "clip-01.b07",
+   "time": "38–45s",
+   "part": "Proof · 3 uses",
+   "vi": "Nó giúp ở ba chỗ: bắt đầu làm, giữ được khi bị cắt ngang, và dừng đúng lúc.",
+   "caption": {
+    "words": [
+     "and",
+     "quitting",
+     "what",
+     "can't",
+     "work."
+    ],
+    "highlight": 1
+   },
+   "onscreen": [
+    {
+     "style": "kicker",
+     "top": 390,
+     "html": "It helps in three places"
+    },
+    {
+     "style": "li",
+     "top": 500,
+     "html": "start"
+    },
+    {
+     "style": "li",
+     "top": 700,
+     "html": "hold on"
+    },
+    {
+     "style": "li",
+     "top": 900,
+     "html": "let go"
+    }
+   ],
+   "draw": [
+    {
+     "type": "box",
+     "xywh": [
+      90,
+      505,
+      90,
+      90
+     ],
+     "w": 5
+    },
+    {
+     "type": "tick",
+     "xy": [
+      105,
+      550
+     ]
+    },
+    {
+     "type": "box",
+     "xywh": [
+      90,
+      705,
+      90,
+      90
+     ],
+     "w": 5
+    },
+    {
+     "type": "tick",
+     "xy": [
+      105,
+      750
+     ]
+    },
+    {
+     "type": "box",
+     "xywh": [
+      90,
+      905,
+      90,
+      90
+     ],
+     "w": 5,
+     "color": "green"
+    },
+    {
+     "type": "tick",
+     "xy": [
+      105,
+      950
+     ],
+     "color": "green"
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 8,
+   "id": "clip-01.b08",
+   "time": "45–51s",
+   "part": "Caveat",
+   "vi": "Nhưng nó chỉ hiệu quả với việc bạn thật sự muốn làm.",
+   "shot": {
+    "id": "S6",
+    "label": "hand strikes a 'should' line",
+    "sketch": "strike"
+   },
+   "caption": {
+    "words": [
+     "But",
+     "it",
+     "only",
+     "works",
+     "for",
+     "goals",
+     "you",
+     "actually",
+     "want."
+    ],
+    "highlight": 7
+   },
+   "onscreen": [
+    {
+     "style": "mid",
+     "top": 1150,
+     "html": "only for goals <u>you want</u>",
+     "css": "font-size:76px"
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 9,
+   "id": "clip-01.b09",
+   "time": "51–56s",
+   "part": "Action",
+   "vi": "Tối nay, chọn một việc thật. Viết một câu \"nếu… thì…\". Mất một, hai phút.",
+   "shot": {
+    "id": "S7",
+    "label": "face to camera, holds up notebook",
+    "sketch": "face"
+   },
+   "caption": {
+    "words": [
+     "Tonight,",
+     "pick",
+     "one",
+     "real",
+     "task."
+    ],
+    "highlight": 0
+   },
+   "onscreen": [
+    {
+     "style": "big",
+     "top": 1150,
+     "html": "Tonight: 1 line",
+     "css": "font-size:104px"
+    }
+   ],
+   "draw": [
+    {
+     "type": "underline",
+     "xy": [
+      66,
+      1252,
+      330
+     ]
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  },
+  {
+   "n": 10,
+   "id": "clip-01.b10",
+   "time": "56–60s",
+   "part": "CTA + loop",
+   "vi": "Viết câu của bạn xuống comment. Vì \"mai mình làm\"… không phải là một kế hoạch.",
+   "shot": {
+    "id": "S7",
+    "label": "face → back to hook frame",
+    "sketch": "face"
+   },
+   "caption": {
+    "words": [
+     "\"I'll",
+     "do",
+     "it",
+     "tomorrow\"…",
+     "is",
+     "not",
+     "a",
+     "plan."
+    ],
+    "highlight": 7
+   },
+   "onscreen": [
+    {
+     "style": "big",
+     "top": 1112,
+     "html": "“Tomorrow.”<br>is not a plan.",
+     "css": "font-size:88px;line-height:1.05"
+    }
+   ],
+   "draw": [
+    {
+     "type": "strike",
+     "xy": [
+      66,
+      1160,
+      480,
+      1148
+     ],
+     "w": 8
+    }
+   ],
+   "motion": "TBD (rule-19, after real timestamps)"
+  }
+ ]
+}

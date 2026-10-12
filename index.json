@@ -1,0 +1,451 @@
+{
+ "generated_by": "pipeline/scripts/build-index.py",
+ "docs": [
+  {
+   "id": "agents",
+   "type": "guide",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "AGENTS.md",
+   "title": "AGENTS.md: cách AI làm việc trong repo này"
+  },
+  {
+   "id": "repo-readme",
+   "type": "readme",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "README.md",
+   "title": "oneup-studio: hệ thống nội dung @hi.oneup"
+  },
+  {
+   "id": "sfx-sources",
+   "type": "log",
+   "status": "living",
+   "updated": "2026-10-12",
+   "path": "assets/sfx/SOURCES.md",
+   "title": "Nguồn SFX (chỉ dùng CC0 hoặc Mixkit, theo luật 22)"
+  },
+  {
+   "id": "brand-index",
+   "type": "brand",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "brand/brand-index.md",
+   "title": "@hi.oneup — Brand index cho video"
+  },
+  {
+   "id": "clip-01.beat-sheet",
+   "type": "beat-sheet",
+   "status": "draft",
+   "updated": "2026-10-12",
+   "path": "content/clips/clip-01-implementation-intention/beat-sheet.md",
+   "title": "Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md"
+  },
+  {
+   "id": "clip-01.script",
+   "type": "script",
+   "status": "awaiting-approval",
+   "updated": "2026-10-12",
+   "path": "content/clips/clip-01-implementation-intention/script.md",
+   "title": "@hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt"
+  },
+  {
+   "id": "clip-01.shot-list",
+   "type": "shot-list",
+   "status": "draft",
+   "updated": "2026-10-12",
+   "path": "content/clips/clip-01-implementation-intention/shot-list.md",
+   "title": "Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md"
+  },
+  {
+   "id": "idea-bank",
+   "type": "plan",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "content/idea-bank.md",
+   "title": "Idea bank"
+  },
+  {
+   "id": "theme-map",
+   "type": "plan",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "content/theme-map.md",
+   "title": "Theme map — @hi.oneup (LIGHT / DARK theo tone)"
+  },
+  {
+   "id": "decision-log",
+   "type": "log",
+   "status": "living",
+   "updated": "2026-10-12",
+   "path": "logs/decision-log.md",
+   "title": "Nhật ký quyết định: @hi.oneup (luật 33)"
+  },
+  {
+   "id": "effects-log",
+   "type": "log",
+   "status": "living",
+   "updated": "2026-10-12",
+   "path": "logs/effects-log.md",
+   "title": "Effects log"
+  },
+  {
+   "id": "pipeline",
+   "type": "workflow",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "pipeline/pipeline.md",
+   "title": "Pipeline sản xuất 1 clip (theo rules v2)"
+  },
+  {
+   "id": "refs",
+   "type": "reference",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "refs/README.md",
+   "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
+  },
+  {
+   "id": "research.motion-layer",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-12",
+   "path": "research/motion-layer.md",
+   "title": "@hi.oneup motion layer, based on gongnyang/awesome-ai-motion"
+  },
+  {
+   "id": "research.video-gen",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-12",
+   "path": "research/oneup-video-gen-research-vi.md",
+   "title": "Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup"
+  },
+  {
+   "id": "research.production-system",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-12",
+   "path": "research/production-system-research-vi.md",
+   "title": "Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất"
+  },
+  {
+   "id": "research.skillopt",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-12",
+   "path": "research/skillopt-eval-vi.md",
+   "title": "Đánh giá microsoft/skillopt (12/10/2026)"
+  },
+  {
+   "id": "trends-2026-10-12",
+   "type": "trend-digest",
+   "status": "done",
+   "updated": "2026-10-12",
+   "path": "research/trends/2026-10-12/digest.md",
+   "title": "Trend digest: 2026-10-12 (lần chạy đầu để kiểm thử skill trend-digest)"
+  },
+  {
+   "id": "trends-ingest",
+   "type": "trend-library",
+   "status": "living",
+   "updated": "2026-10-12",
+   "path": "research/trends/ingest.md",
+   "title": "Trend ingest: thư viện sống (rule-37)"
+  },
+  {
+   "id": "rules",
+   "type": "rules",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "rules/video-rules.md",
+   "title": "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
+  },
+  {
+   "id": "skill.motion-picks-per-script",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/motion-picks-per-script/SKILL.md",
+   "title": "Motion picks per script"
+  },
+  {
+   "id": "skill.trend-digest",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/trend-digest/SKILL.md",
+   "title": "Trend digest"
+  }
+ ],
+ "rules": [
+  {
+   "id": "rule-1",
+   "title": "Ngôn ngữ",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-2",
+   "title": "Giọng",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-3",
+   "title": "Lên hình",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-4",
+   "title": "Độ dài",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-5",
+   "title": "Phong cách (xoay vòng)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-6",
+   "title": "Tỉ lệ hình",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-7",
+   "title": "Cấu trúc mặc định",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-8",
+   "title": "CTA",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-9",
+   "title": "Nhịp đổi hình",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-10",
+   "title": "Chủ đề",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-11",
+   "title": "Lịch đưa app",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-12",
+   "title": "Clip đầu tiên",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-13",
+   "title": "Ghi nguồn",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-14",
+   "title": "Brand",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-15",
+   "title": "Font",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-16",
+   "title": "Chữ chính trên màn hình",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-17",
+   "title": "Theme",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-18",
+   "title": "Minh hoạ",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-19",
+   "title": "Motion",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-20",
+   "title": "Hậu kỳ",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-21",
+   "title": "Nhạc",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-22",
+   "title": "SFX",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-23",
+   "title": "Stock",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-24",
+   "title": "Chỉ dùng công cụ miễn phí",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-25",
+   "title": "Engine",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-26",
+   "title": "Transcribe",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-27",
+   "title": "Nơi render",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-28",
+   "title": "Mức tự động",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-29",
+   "title": "Quay",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-30",
+   "title": "Cover",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-31",
+   "title": "Tần suất",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-32",
+   "title": "Đăng",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-33",
+   "title": "Nhật ký quyết định",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-34",
+   "title": "Chuẩn chất lượng",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-35",
+   "title": "Storyboard trước khi duyệt script",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-36",
+   "title": "Storyboard là tài sản có phiên bản",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-37",
+   "title": "Script phải dùng trend",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-38",
+   "title": "Trend digest hằng ngày",
+   "path": "rules/video-rules.md"
+  }
+ ],
+ "clips": [
+  {
+   "id": "clip-01",
+   "path": "content/clips/clip-01-implementation-intention",
+   "theme": "LIGHT",
+   "files": [
+    "beat-sheet.md",
+    "script.md",
+    "shot-list.md",
+    "storyboard"
+   ]
+  }
+ ],
+ "assets": [
+  {
+   "id": "asset.fonts",
+   "path": "brand/fonts/",
+   "desc": "Be Vietnam Pro (video), DM Sans (app) + OFL licenses"
+  },
+  {
+   "id": "asset.logos",
+   "path": "brand/logos/",
+   "desc": "Logo SVG/PNG; hero = 05-pair-plus.svg"
+  },
+  {
+   "id": "asset.omi",
+   "path": "brand/omi-exports/",
+   "desc": "Omi mascot SVG/PNG, 4 styles x 12 moods"
+  },
+  {
+   "id": "asset.app-icons",
+   "path": "brand/app-icon-exports/",
+   "desc": "App icons light/dark"
+  },
+  {
+   "id": "asset.tokens",
+   "path": "brand/brand-tokens.json",
+   "desc": "Colors/fonts/caption/logo tokens (machine-readable)"
+  },
+  {
+   "id": "asset.sfx",
+   "path": "assets/sfx/",
+   "desc": "CC0/Mixkit SFX + SOURCES.md"
+  },
+  {
+   "id": "asset.template",
+   "path": "templates/hyperframes-base/",
+   "desc": "HyperFrames 1080x1920 scaffold, local GSAP"
+  },
+  {
+   "id": "tool.storyboard",
+   "path": "pipeline/storyboard/render.py",
+   "desc": "Shared storyboard renderer (spec.json -> PNGs + contact sheet)"
+  },
+  {
+   "id": "tool.sync-trends",
+   "path": "pipeline/scripts/sync-trends.sh",
+   "desc": "Box -> repo trend sync, commit, push"
+  },
+  {
+   "id": "tool.build-index",
+   "path": "pipeline/scripts/build-index.py",
+   "desc": "Regenerates this index"
+  },
+  {
+   "id": "data.trends",
+   "path": "research/trends/",
+   "desc": "Daily digests YYYY-MM-DD/{digest.md,raw.json} + ingest.md"
+  },
+  {
+   "id": "dir.footage",
+   "path": "footage/inbox/",
+   "desc": "AirDrop inbox (media gitignored)"
+  },
+  {
+   "id": "dir.renders",
+   "path": "renders/ready/",
+   "desc": "Ready-to-post packages (media gitignored)"
+  }
+ ]
+}

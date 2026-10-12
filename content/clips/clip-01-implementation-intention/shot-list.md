@@ -1,3 +1,10 @@
+---
+id: clip-01.shot-list
+type: shot-list
+status: draft
+updated: 2026-10-12
+tags: [clip-01]
+---
 # Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md
 
 - S1: Mặt nói vào camera, cầm tay hơi rung, câu hook (quay 3 lần)

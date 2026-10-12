@@ -1,0 +1,41 @@
+---
+id: agents
+type: guide
+status: active
+updated: 2026-10-12
+tags: [agents, retrieval, workflow]
+---
+# AGENTS.md: cách AI làm việc trong repo này
+Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hiệp). Đọc theo thứ tự: file này → `INDEX.md` (bản đồ mọi file, id) → nguồn chuẩn liên quan.
+
+## Nguồn chuẩn (không sao chép nội dung, chỉ trỏ tới)
+| Cần gì | File chuẩn |
+|---|---|
+| Luật (id `rule-N` = mục N) | `rules/video-rules.md` |
+| Lịch sử quyết định, góp ý (id `DL-NNN`) | `logs/decision-log.md`, **đọc trước mỗi clip** (rule-33) |
+| Brand (màu, font, logo, caption) | `brand/brand-tokens.json` (máy đọc), `brand/brand-index.md` (người đọc) |
+| Thứ tự đăng + theme | `content/theme-map.md` |
+| Một clip (id `clip-NN`) | `content/clips/clip-NN-<slug>/`: `script.md`, `shot-list.md`, `beat-sheet.md`, `storyboard/spec.json` |
+| Storyboard | `storyboard/spec.json` là nguồn, PNG là kết quả render. Renderer: `pipeline/storyboard/render.py` |
+| Trend | `research/trends/ingest.md` (thư viện sống) + `research/trends/YYYY-MM-DD/` |
+| Quy trình | `pipeline/pipeline.md` |
+| Skill | `skills/<id>/SKILL.md` (`motion-picks-per-script`, `trend-digest`) |
+
+## Quy ước
+- Mọi file `.md` (trừ SKILL.md và tài liệu brand gốc) có front-matter `id, type, status, updated, tags`. Khi tạo hoặc đổi tên file, chạy `python3 pipeline/scripts/build-index.py`.
+- Id ổn định: `rule-N`, `DL-NNN`, `clip-NN`, `clip-NN.bNN` (beat), `trends-YYYY-MM-DD`, `skill.<id>`. Không đổi id đã dùng.
+- Không đưa media vào git (`footage/`, `renders/` đã có trong .gitignore). Không vendor repo ngoài (xem `refs/README.md`).
+
+## Workflow
+1. **Clip mới:** đọc decision-log → theme-map → trend ingest (rule-37) → viết script + storyboard spec → render storyboard → Hiệp duyệt → thu / quay → pipeline.md bước 5–16.
+2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
+3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
+
+## Trend sync (rule-38)
+Job chạy tự động hằng ngày trên box không xin được quyền trên Mac, nên:
+1. Job chạy `skills/trend-digest`. Repo public nên box có thể `git clone` / `pull` để đọc `ingest.md` mới nhất. Job ghi vào box `/workspace/oneup-studio-sync/research/trends/{YYYY-MM-DD/,ingest.md}`.
+2. Khi agent có quyền truy cập Mac: chạy `tar czf /workspace/oneup-studio-sync.tgz -C /workspace/oneup-studio-sync research` → CopyFromBox tới `/Users/macbook/me/projects/.oneup-sync/trends.tgz` → chạy trên Mac `pipeline/scripts/sync-trends.sh`. Script chỉ thêm các ngày mới, ghi đè `ingest.md` bằng bản trên box, rồi commit và push.
+3. Nếu chưa sync được thì dữ liệu vẫn nằm an toàn trên box. Lần sync sau sẽ gom hết các ngày còn thiếu.
+
+## Đường dẫn máy
+Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (machine I-Am-Focused). Bản clone trên box (chỉ đọc / nháp): `/workspace/oneup-studio`.

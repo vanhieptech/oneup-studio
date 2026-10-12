@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-12",
+ "collected_at": "2026-10-12T22:58:00+07:00",
+ "sources_tried": [
+  {"source": "web_search", "status": "ok"},
+  {"source": "x_search_posts_all", "status": "error", "note": "HTTP 429 shared rate limit; retry next run"},
+  {"source": "tiktok_creative_center", "status": "blocked", "note": "JS-only page, fetch returned shell only"},
+  {"source": "agent_reach_youtube_rss_reddit", "status": "skipped", "note": "first validation run; enable in next run"},
+  {"source": "google_trends_vn", "status": "skipped"}
+ ],
+ "items": [
+  {"id": "du-an-ma", "kind": "phrase", "lang": "vi", "text": "dự án ma", "meaning": "kế hoạch mãi nằm trên giấy (du lịch, học, khởi nghiệp, tập thể dục...)", "evidence": [{"url": "https://vtcnews.vn/du-an-ma-la-gi-ma-gioi-tre-ram-ro-khoe-tren-mang-xa-hoi-ar1044235.html", "date": "2026-10-09", "publisher": "VTC News"}], "platforms": ["tiktok", "facebook"], "fit": "pillar-1", "clips": ["clip-01", "clip-03", "clip-04"]},
+  {"id": "great-lock-in", "kind": "format", "lang": "en", "text": "The Great Lock In / locking in (Sep 1–Dec 31)", "evidence": [{"url": "https://www.buzzfeed.com/beccamonaghan/the-great-lock-in-tiktok-explained"}, {"url": "https://www.takeroon.com/blog/the-great-lock-in-2026"}], "platforms": ["tiktok"], "fit": "pillar-1", "clips": ["clip-01", "clip-06"]},
+  {"id": "winter-arc", "kind": "format", "lang": "en", "text": "Winter Arc (Oct 1–Dec 31, 90 days)", "evidence": [{"url": "https://www.takeroon.com/blog/the-great-lock-in-2026"}, {"url": "https://dailyhabitai.com/guides/monk-mode/"}], "platforms": ["tiktok"], "fit": "pillar-1", "clips": ["clip-06"]},
+  {"id": "monk-mode", "kind": "phrase", "lang": "en", "text": "monk mode", "evidence": [{"url": "https://focusbox.io/blog/monk-mode/"}], "platforms": ["tiktok", "youtube", "reddit"], "fit": "pillar-2", "clips": ["clip-08", "clip-10"]},
+  {"id": "dang-buc-ma-con-kiem-tui", "kind": "meme", "lang": "vi", "text": "Đang bực mà còn kiếm tui nữa", "evidence": [{"url": "https://35express.org/trend-dang-buc-ma-con-kiem-tui-nua/", "date": "2026-10-08"}], "platforms": ["tiktok"], "fit": "pillar-2", "clips": ["clip-07", "clip-09", "clip-11"]},
+  {"id": "ba-khi", "kind": "slang", "lang": "vi", "text": "bá khí", "evidence": [{"url": "https://thethao247.vn/441-ba-khi-la-gi-vi-sao-trao-luu-nay-dang-phu-song-tiktok-facebook-c123-d438617.html"}], "platforms": ["tiktok", "facebook"], "fit": "comment-tone", "clips": []},
+  {"id": "studytok-blurting-bodydoubling", "kind": "format", "lang": "en", "text": "StudyTok: study-with-me timelapse, body doubling, blurting, Pomodoro", "evidence": [{"url": "https://contentscout.co/trending/tiktok/education/", "date": "2026-10-07"}, {"url": "https://studies.ayojakarta.com/tiktok-study-hacks-what-actually-works/"}], "platforms": ["tiktok"], "fit": "pillar-2", "clips": []},
+  {"id": "search-habit-tracker", "kind": "search", "lang": "en", "text": "TikTok searches: 'best habit tracker app' 274,617 / 'To do list' 281,628 / 'Productivity' 225,487 in 7 days to 2026-10-05", "evidence": [{"url": "https://tokconnect.com/guides/tiktok-for-saas/"}], "platforms": ["tiktok"], "fit": "app-weeks-3+", "clips": []}
+ ]
+}

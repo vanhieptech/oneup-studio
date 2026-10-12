@@ -1,3 +1,10 @@
+---
+id: brand-index
+type: brand
+status: active
+updated: 2026-10-12
+tags: [brand, tokens]
+---
 # @hi.oneup — Brand index cho video
 
 Nguồn: `/Users/macbook/work/oneup/design-system/oneup/` (MASTER.md, brand/COLOR.md, brand/LOGO.md, brand/omi-exports, scripts/export_omi_assets.py). Bản sao trên box: `./brand/` (chỉ file text + SVG chính; PNG vẫn ở Mac). Tokens máy đọc: `brand-tokens.json`. Preview: `brand-preview-dark.png`, `brand-preview-light.png` (nguồn `preview/gen.py`).

@@ -1,3 +1,10 @@
+---
+id: research.video-gen
+type: research
+status: reference
+updated: 2026-10-12
+tags: [stack, clip-plan]
+---
 # Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup
 
 > Kênh TikTok: [@hi.oneup](https://www.tiktok.com/@hi.oneup)

@@ -1,3 +1,10 @@
+---
+id: clip-01.beat-sheet
+type: beat-sheet
+status: draft
+updated: 2026-10-12
+tags: [clip-01]
+---
 # Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md
 | # | Thời gian | Phần | Loại hình | Minh hoạ | Shot | Motion (chọn bằng skill, sau khi có timestamp thật) |
 |---|---|---|---|---|---|---|

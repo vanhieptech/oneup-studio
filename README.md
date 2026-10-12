@@ -1,4 +1,13 @@
+---
+id: repo-readme
+type: readme
+status: active
+updated: 2026-10-12
+tags: [overview]
+---
 # oneup-studio: hệ thống nội dung @hi.oneup
+Agent: đọc `AGENTS.md` trước. Bản đồ file: `INDEX.md`.
+
 Kênh TikTok https://www.tiktok.com/@hi.oneup: video productivity/motivation 55–60s, nội dung chuyển thể từ HowToLiveBetter (CC BY 4.0), dùng brand OneUp.
 
 | Thư mục | Nội dung |

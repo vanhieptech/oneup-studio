@@ -1,3 +1,10 @@
+---
+id: refs
+type: reference
+status: active
+updated: 2026-10-12
+tags: [links]
+---
 # Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)
 - **awesome-ai-motion** (MIT): https://github.com/gongnyang/awesome-ai-motion
   Clone vào máy bằng `git clone https://github.com/gongnyang/awesome-ai-motion refs/awesome-ai-motion` (đã có trong .gitignore). Skill `skills/motion-picks-per-script` đọc `refs/awesome-ai-motion/index.json`.

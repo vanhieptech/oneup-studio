@@ -1,3 +1,10 @@
+---
+id: rules
+type: rules
+status: active
+updated: 2026-10-12
+tags: [rules, source-of-truth]
+---
 # @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
@@ -65,7 +72,19 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 34. **Chuẩn chất lượng:** mọi hình gửi Hiệp (preview, storyboard, frame, video) phải đạt mức "premium". Agent tự xem và sửa ít nhất 2 vòng trước khi gửi (sau góp ý "xấu quá" ngày 12/10/2026).
 35. **Storyboard trước khi duyệt script:** mỗi clip có storyboard (1 frame 1080×1920 cho mỗi beat, kèm contact sheet) nằm trong `content/clips/NN-slug/storyboard/`, gửi cùng script để Hiệp duyệt.
 
+36. **Storyboard là tài sản có phiên bản:**
+    - Nguồn chuẩn là `content/clips/<clip>/storyboard/spec.json`, render bằng renderer chung `pipeline/storyboard/render.py`.
+    - Khi có góp ý: sửa spec (hoặc renderer / style nếu là thay đổi chung), không tạo lại từ đầu. Thêm một dòng vào `revisions` trong spec, render lại, rồi commit với message dẫn mã decision log (`... (DL-0xx)`).
+37. **Script phải dùng trend:**
+    - Trước khi viết script, đọc `research/trends/ingest.md` và digest mới nhất.
+    - Mỗi script có ít nhất 1 cụm từ hoặc tình huống đang phổ biến, gần gũi với khán giả (ghi id trend trong script), nhưng fact vẫn giữ đúng HowToLiveBetter và nguồn trích dẫn.
+    - Không sao chép nội dung của người khác.
+38. **Trend digest hằng ngày:**
+    - Chạy theo `skills/trend-digest/SKILL.md`, chỉ dùng nguồn miễn phí, công khai, có trích link.
+    - Job chạy tự động ghi vào box `/workspace/oneup-studio-sync/research/trends/`. Agent đồng bộ vào repo bằng `pipeline/scripts/sync-trends.sh` mỗi khi có quyền truy cập Mac (xem AGENTS.md).
+
 ## Changelog
+- **v2.2, 12/10/2026:** thêm luật 36 (storyboard theo spec + renderer chung, sửa thay vì tạo lại), luật 37 (script phải đọc trend ingest, có ≥1 cụm từ đang phổ biến), luật 38 (trend digest hằng ngày + sync). Thêm front-matter và id ổn định cho tài liệu.
 - **v2.1, 12/10/2026:** thêm luật 33 (nhật ký quyết định + retro tuần), luật 34 (chuẩn chất lượng premium), luật 35 (storyboard trước khi duyệt script).
 - **v2, 12/10/2026:**
   - Gộp 21 luật v1 với 20 quyết định đã duyệt.

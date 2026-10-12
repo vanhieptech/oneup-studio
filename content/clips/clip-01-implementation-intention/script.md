@@ -1,3 +1,10 @@
+---
+id: clip-01.script
+type: script
+status: awaiting-approval
+updated: 2026-10-12
+tags: [clip-01, light, pillar-1]
+---
 # @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt
 
 Theme: **LIGHT** (paper #F7F7F5, chữ ink #111111) · Trụ 1 "Làm ít, xong nhiều" · Không có app OneUp (tuần 1–2) · Không nhạc trong file

@@ -1,3 +1,10 @@
+---
+id: theme-map
+type: plan
+status: active
+updated: 2026-10-12
+tags: [theme, schedule]
+---
 # Theme map — @hi.oneup (LIGHT / DARK theo tone)
 
 Nguồn: HowToLiveBetter (repo `book/`, 34 phần, ~672 mục, đã đối chiếu tiêu đề từng mục) + kế hoạch 30 clip trong `research/oneup-video-gen-research-vi.md` §1.4. Quyết định của Hiệp 12/10/2026.
