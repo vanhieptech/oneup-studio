@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "id": "sample-script",
+  "title": "Mai hoc demo",
+  "meta": {
+    "clip": "clip-01",
+    "week": 1
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "theme": "light"
+  },
+  "scenes": [
+    {
+      "id": "night",
+      "duration": 4.5,
+      "background": {
+        "kind": "bed"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0.04
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.4
+      },
+      "characters": [
+        {
+          "characterId": "hiep",
+          "x": 0.5,
+          "pose": "sitting",
+          "action": "idle",
+          "expression": "sad",
+          "facing": "right",
+          "enter": "none",
+          "exit": "none",
+          "expressionChanges": [],
+          "actionChanges": []
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "hiep",
+          "text": "Thôi… **mai học**.",
+          "start": 0.5,
+          "end": 1.76,
+          "style": "thought"
+        },
+        {
+          "speaker": "hiep",
+          "text": "Mai của mình dài cả tuần luôn á.",
+          "start": 1.88,
+          "end": 4.21,
+          "style": "speech"
+        }
+      ],
+      "narration": {
+        "text": "11:48 PM",
+        "start": 0.2
+      },
+      "sfx": []
+    },
+    {
+      "id": "turn",
+      "duration": 5,
+      "background": {
+        "kind": "grid"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0.04
+      },
+      "transition": {
+        "type": "iris",
+        "duration": 0.5
+      },
+      "characters": [
+        {
+          "characterId": "hiep",
+          "x": 0.5,
+          "pose": "standing",
+          "action": "thinking",
+          "expression": "focused",
+          "facing": "right",
+          "enter": "none",
+          "exit": "none",
+          "expressionChanges": [
+            {
+              "at": 2.22,
+              "value": "happy"
+            }
+          ],
+          "actionChanges": [
+            {
+              "at": 2.22,
+              "value": "reacting"
+            }
+          ]
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "hiep",
+          "text": "Hmm, nghĩ lại coi…",
+          "start": 0.5,
+          "end": 2.1,
+          "style": "thought"
+        },
+        {
+          "speaker": "hiep",
+          "text": "Nếu 9 giờ tối, thì mở **listening**!",
+          "start": 2.22,
+          "end": 4.69,
+          "style": "shout"
+        }
+      ],
+      "caption": {
+        "text": "if… then…",
+        "start": 0.5,
+        "highlight": [
+          0,
+          1
+        ]
+      },
+      "sfx": [
+        {
+          "name": "ding",
+          "at": 2.4
+        }
+      ]
+    }
+  ]
+}

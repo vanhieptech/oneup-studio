@@ -1,0 +1,34 @@
+{
+  "name": "oneup-video-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Comic character video engine for @hi.oneup (Remotion + React + TS)",
+  "type": "module",
+  "scripts": {
+    "preview": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "remotion bundle src/index.ts --out-dir=build",
+    "validate": "tsx src/cli.ts validate",
+    "plan": "tsx src/cli.ts plan",
+    "render": "tsx src/cli.ts render",
+    "frames": "tsx src/cli.ts frames"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.535",
+    "@remotion/cli": "^4.0.535",
+    "@remotion/renderer": "^4.0.535",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.535",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}

@@ -1,0 +1,238 @@
+{
+ "version": 1,
+ "id": "clip-01-story-b01-b03",
+ "title": "Clip 01 · đoạn kể chuyện (beat 1–3, script v3 draft)",
+ "meta": {
+  "clip": "clip-01",
+  "week": 1,
+  "source": "content/clips/clip-01-implementation-intention/script-v3-draft.md"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "b01-goal",
+   "beat": "clip-01.b01",
+   "duration": 4,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.05
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "narration": {
+    "text": "Mục tiêu: TOEIC 700 · trước tháng 11",
+    "start": 0.2
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.36,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "focused",
+     "expressionChanges": [
+      {
+       "at": 2.0,
+       "value": "happy"
+      }
+     ],
+     "actionChanges": [
+      {
+       "at": 1.0,
+       "value": "idle"
+      }
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kế hoạch học của mình là…",
+     "start": 0.9,
+     "end": 1.95
+    },
+    {
+     "speaker": "hiep",
+     "text": "“**Mai học.**”",
+     "start": 2.05,
+     "end": 3.85
+    }
+   ],
+   "caption": {
+    "text": "My study plan for TOEIC 700… “tomorrow.”",
+    "start": 0.9,
+    "end": 3.9,
+    "highlight": [
+     6
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 2.05
+    }
+   ]
+  },
+  {
+   "id": "b02-every-night",
+   "beat": "clip-01.b02",
+   "duration": 6,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.06
+   },
+   "transition": {
+    "type": "wipe",
+    "duration": 0.45
+   },
+   "narration": {
+    "text": "Tối nào cũng vậy · 11:48 PM",
+    "start": 0.3
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.5,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "neutral",
+     "expressionChanges": [
+      {
+       "at": 2.4,
+       "value": "sad"
+      },
+      {
+       "at": 4.3,
+       "value": "confused"
+      }
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thôi… **mai học.**",
+     "start": 0.6,
+     "end": 2.2,
+     "style": "thought"
+    },
+    {
+     "speaker": "hiep",
+     "text": "Mà “mai” của mình dài cả tuần luôn á.",
+     "start": 2.4,
+     "end": 4.2
+    },
+    {
+     "speaker": "hiep",
+     "text": "Người ta có dự án ma, mình có hẳn **kỳ thi ma**.",
+     "start": 4.3,
+     "end": 5.95
+    }
+   ],
+   "caption": {
+    "text": "My “tomorrow” lasts all week. Mine is a ghost exam.",
+    "start": 2.4,
+    "end": 5.95,
+    "highlight": [
+     8,
+     9
+    ]
+   },
+   "sfx": [
+    {
+     "name": "whoosh",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "b03-one-sentence",
+   "beat": "clip-01.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.03
+   },
+   "transition": {
+    "type": "iris",
+    "duration": 0.5
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.5,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "focused",
+     "enter": "rise",
+     "expressionChanges": [
+      {
+       "at": 2.6,
+       "value": "surprised"
+      },
+      {
+       "at": 3.3,
+       "value": "happy"
+      }
+     ],
+     "actionChanges": [
+      {
+       "at": 2.6,
+       "value": "reacting"
+      },
+      {
+       "at": 3.4,
+       "value": "talking"
+      }
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi mình đọc được một nghiên cứu…",
+     "start": 0.6,
+     "end": 2.5,
+     "style": "thought"
+    },
+    {
+     "speaker": "hiep",
+     "text": "Đổi đúng **một câu** thôi: “Nếu… thì…”",
+     "start": 2.7,
+     "end": 5.9,
+     "style": "shout"
+    }
+   ],
+   "caption": {
+    "text": "Then I found one sentence that works: if… then…",
+    "start": 2.7,
+    "end": 5.95,
+    "highlight": [
+     7,
+     8
+    ]
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 2.6
+    }
+   ]
+  }
+ ]
+}

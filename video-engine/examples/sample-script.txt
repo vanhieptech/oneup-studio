@@ -1,0 +1,14 @@
+# title: Mai hoc demo
+@video 1080x1920 30fps light week=1 clip=clip-01
+@cast hiep
+
+== night | 4.5s | bed | medium | cut
+NARRATION: 11:48 PM
+hiep (sitting, thought): Thôi… **mai học**.
+hiep (sad): Mai của mình dài cả tuần luôn á.
+
+== turn | 5s | grid | medium | iris:0.5
+CAPTION: if… then… [0, 1]
+hiep (thinking, focused): Hmm, nghĩ lại coi…
+hiep (happy, reacting, shout): Nếu 9 giờ tối, thì mở **listening**!
+SFX: ding @2.4

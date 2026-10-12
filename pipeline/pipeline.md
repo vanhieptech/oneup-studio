@@ -24,7 +24,7 @@ tags: [pipeline, workflow]
 | 8 | Beat sheet có thời gian thật | agent | Tự động | `beats.json` |
 | 9 | Chọn motion | `skills/motion-picks-per-script` | Tự động | `logs/effects-log.md` |
 | 10 | Lấy tài sản (Pexels/Pixabay, Phosphor, SFX CC0) | `scripts/04-fetch-assets.py` | Tự động | `assets/` |
-| 11 | Dựng composition | `templates/hyperframes-base` (+ Manim cho biểu đồ) | Agent | `content/clips/NN-slug/comp/` |
+| 11 | Dựng composition | Beat kể chuyện: `video-engine/` (Remotion, plan JSON, luật 45). Beat giải thích: `templates/hyperframes-base` (+ Manim cho biểu đồ) | Agent | `content/clips/NN-slug/comp/`, `out/*.mp4` |
 | 12 | Render nháp | box | Tự động | `renders/NN-slug/draft.mp4` |
 | 13 | QA (lint, snapshot, safe-zone, dấu tiếng Việt, LUFS, checklist anti-AI) | `scripts/05-qa.sh` | Tự động | `qa.md` |
 | 14 | Render final | Mac | Tự động | `renders/NN-slug/final.mp4` |

@@ -43,6 +43,7 @@ tags: [index, retrieval]
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | Script polish (VI voice) |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | Trend digest |
+| video-engine | guide | active | `video-engine/README.md` | video-engine: comic character video từ scene plan (Remotion + React + TS) |
 
 ## Rules (source: `rules/video-rules.md`)
 | id | title |
@@ -91,6 +92,7 @@ tags: [index, retrieval]
 | rule-42 | Loại beat quyết định kiểu hình |
 | rule-43 | Cách điệu mạnh |
 | rule-44 | AI image local chỉ để phác ý tưởng |
+| rule-45 | Engine video comic (`video-engine/`) |
 
 ## Clips
 | id | theme | path | files |

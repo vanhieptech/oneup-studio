@@ -1,0 +1,18 @@
+{
+  "id": "omi",
+  "name": "Omi",
+  "rig": "liquid-omi",
+  "style": "round ink blob, liquid gooey morph between emotions, orbiting droplets, paper face",
+  "colors": { "ink": "#111111", "paper": "#F7F7F5", "soft": "#E4E2DD" },
+  "proportions": { "heightUnits": 300, "headRatio": 1, "headRadius": 120 },
+  "hair": "none",
+  "clothing": "none",
+  "face": "paper oval eyes with ink pupils, tiny paper mouth; emotion mostly carried by body shape",
+  "expressions": ["neutral", "happy", "sad", "surprised", "confused", "focused"],
+  "poses": ["standing", "sitting"],
+  "actions": ["idle", "talking", "thinking", "walking", "reacting"],
+  "defaults": { "expression": "neutral", "pose": "standing", "action": "idle", "blinkEverySec": 2.9 },
+  "availableFromWeek": 5,
+  "assets": ["pipeline/characters-v2/chars.html (blobPath + EMO params)"],
+  "notes": "AI companion. Appears only from week 5 (rule-11). Voice undecided (DL-023): text bubbles only. Cannot type (no hands)."
+}

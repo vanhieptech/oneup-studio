@@ -104,9 +104,14 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
     - Omi chỉ xuất hiện từ tuần 5 (luật 11 giữ nguyên).
 43. **Cách điệu mạnh:** chibi đầu to, khối tròn, không góc nhọn, biểu cảm và đạo cụ phóng đại để người xem hiểu ngữ cảnh ngay và thấy vui. Vẫn giữ brand ink/paper 90/8/2 và Be Vietnam Pro. Rig nguồn: `pipeline/characters-v2/`.
 44. **AI image local chỉ để phác ý tưởng:** được dùng model tạo ảnh chạy local để sketch/ideation. Không đưa ảnh AI vào video final; hình final phải vẽ lại bằng rig/vector.
+45. **Engine video comic (`video-engine/`):**
+    - Beat kể chuyện render bằng `video-engine/` (Remotion + React + TS): nguồn chuẩn là JSON scene plan (`content/clips/<clip>/comic/plan.json`; bản đầu của clip-01 đang ở `video-engine/examples/clip-01-story.json`) hoặc script text theo `src/scenes/textFormat.ts`, validate trước khi render (`npm run validate`).
+    - Nhân vật chỉ vẽ bằng rig SVG trong `video-engine/src/characters/` theo character profile. Không AI ảnh/video trong render. LLM chỉ là tuỳ chọn để lập plan, kết quả phải qua validator.
+    - Beat giải thích/motion graphics vẫn dùng HyperFrames (`templates/hyperframes-base`). Không trộn 2 engine trong một lần render, ghép ở bước dựng.
+    - Sau mỗi render: `npm run frames` rồi tự soát contact sheet (luật 34) trước khi gửi Hiệp.
 
 ## Changelog
-- **v2.5, 13/10/2026:** luật 42 (comic cho beat kể chuyện, motion graphics cho beat giải thích), luật 43 (cách điệu mạnh, chibi), luật 44 (AI image local chỉ để phác). Giọng AI cho Omi: chưa đổi, chờ quyết (research/omi-voice-tts-research-vi.md).
+- **v2.6, 13/10/2026:** luật 45 (engine video comic `video-engine/`: Remotion cho beat kể chuyện, HyperFrames cho beat giải thích, plan JSON có validate) (DL-024).- **v2.5, 13/10/2026:** luật 42 (comic cho beat kể chuyện, motion graphics cho beat giải thích), luật 43 (cách điệu mạnh, chibi), luật 44 (AI image local chỉ để phác). Giọng AI cho Omi: chưa đổi, chờ quyết (research/omi-voice-tts-research-vi.md).
 - **v2.4, 12/10/2026:** luật 41 (kể chuyện trước, chỉ chuyện thật, voice profile đã xác nhận).
 - **v2.3, 12/10/2026:** luật 39 (bridge trend → bài học, lọc brand-safety), luật 40 (polish script bằng humanizer + voice profile).
 - **v2.2, 12/10/2026:** thêm luật 36 (storyboard theo spec + renderer chung, sửa thay vì tạo lại), luật 37 (script phải đọc trend ingest, có ≥1 cụm từ đang phổ biến), luật 38 (trend digest hằng ngày + sync). Thêm front-matter và id ổn định cho tài liệu.

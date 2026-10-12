@@ -1,0 +1,17 @@
+{
+  "id": "hiep",
+  "name": "Hiệp",
+  "rig": "chibi-hiep",
+  "style": "chibi comic, big round head (~45% of height), soft rounded shapes, no sharp corners, ink-on-paper, strong caricature (rule-43)",
+  "colors": { "ink": "#111111", "paper": "#F7F7F5", "soft": "#E4E2DD", "accent": "#FF5A36" },
+  "proportions": { "heightUnits": 640, "headRatio": 0.52, "headRadius": 168 },
+  "hair": "solid ink cloud of 4 rounded tufts + one cowlick; generic until Hiệp provides real look",
+  "clothing": "ink hoodie with paper drawstring, ink trousers, rounded shoes",
+  "face": "two large glossy oval eyes with paper highlights, soft blush ovals, small expressive mouth, brows only on strong emotions",
+  "expressions": ["neutral", "happy", "sad", "surprised", "confused", "focused"],
+  "poses": ["standing", "sitting"],
+  "actions": ["idle", "talking", "thinking", "typing", "walking", "reacting"],
+  "defaults": { "expression": "neutral", "pose": "standing", "action": "idle", "blinkEverySec": 3.4 },
+  "assets": ["pipeline/characters-v2/chars.html (v2 rig, source of shapes)", "brand/characters/v2/"],
+  "notes": "Generic avatar: hair/glasses/clothes not yet confirmed by Hiệp (DL-022)."
+}

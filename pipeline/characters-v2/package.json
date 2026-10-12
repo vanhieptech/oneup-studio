@@ -1,0 +1,6 @@
+{
+  "name": "characters-v2-rig-test",
+  "private": true,
+  "description": "Legacy puppeteer frame capture for chars.html. Real renders: video-engine/.",
+  "dependencies": { "puppeteer-core": "^23.0.0" }
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "id": "debugging-story",
+  "title": "Demo: Hiệp + Omi debug một bug lúc nửa đêm (2 nhân vật, week ≥ 5)",
+  "meta": { "week": 6 },
+  "video": { "width": 1080, "height": 1920, "fps": 30, "theme": "light" },
+  "scenes": [
+    {
+      "id": "s1-bug",
+      "duration": 4,
+      "background": { "kind": "desk" },
+      "camera": { "framing": "medium" },
+      "narration": { "text": "1:12 AM · build thứ 14" },
+      "characters": [
+        { "characterId": "hiep", "x": 0.42, "pose": "sitting", "action": "typing", "expression": "focused",
+          "expressionChanges": [{ "at": 2.2, "value": "sad" }], "actionChanges": [{ "at": 2.2, "value": "idle" }] }
+      ],
+      "dialogue": [{ "speaker": "hiep", "text": "Chạy local thì ngon lành mà…", "start": 2.3, "end": 3.9 }]
+    },
+    {
+      "id": "s2-omi-arrives",
+      "duration": 4.5,
+      "background": { "kind": "paper" },
+      "camera": { "framing": "wide", "push": 0.05 },
+      "transition": { "type": "slide", "duration": 0.4 },
+      "characters": [
+        { "characterId": "hiep", "x": 0.33, "action": "idle", "expression": "confused" },
+        { "characterId": "omi", "x": 0.74, "action": "idle", "expression": "happy", "enter": "rise", "facing": "left" }
+      ],
+      "dialogue": [{ "speaker": "omi", "text": "Thử **log** ra coi bạn ơi?", "start": 0.8, "end": 2.6 },
+                   { "speaker": "hiep", "text": "Ờ ha.", "start": 2.8, "end": 4.3 }]
+    },
+    {
+      "id": "s3-think",
+      "duration": 4,
+      "background": { "kind": "grid" },
+      "camera": { "framing": "closeup", "push": 0.02 },
+      "transition": { "type": "fade", "duration": 0.35 },
+      "characters": [{ "characterId": "hiep", "x": 0.5, "action": "thinking", "expression": "focused" }],
+      "dialogue": [{ "speaker": "hiep", "text": "Timezone… là **timezone**!", "start": 1.4, "end": 3.9, "style": "thought" }],
+      "caption": { "text": "It was the timezone. It's always the timezone.", "start": 0.4, "highlight": [3] }
+    },
+    {
+      "id": "s4-win",
+      "duration": 4.5,
+      "background": { "kind": "paper" },
+      "camera": { "framing": "wide" },
+      "transition": { "type": "iris", "duration": 0.5 },
+      "characters": [
+        { "characterId": "hiep", "x": 0.04, "toX": 0.38, "action": "walking", "expression": "happy", "actionChanges": [{ "at": 2.2, "value": "reacting" }] },
+        { "characterId": "omi", "x": 0.74, "pose": "sitting", "action": "idle", "expression": "neutral", "expressionChanges": [{ "at": 2.2, "value": "surprised" }, { "at": 2.8, "value": "happy" }] }
+      ],
+      "dialogue": [{ "speaker": "hiep", "text": "Fix xong! Đi ngủ thôi.", "start": 2.3, "end": 4.3, "style": "shout" }]
+    }
+  ]
+}

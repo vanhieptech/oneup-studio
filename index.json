@@ -268,6 +268,14 @@
    "status": "active",
    "path": "skills/trend-digest/SKILL.md",
    "title": "Trend digest"
+  },
+  {
+   "id": "video-engine",
+   "type": "guide",
+   "status": "active",
+   "updated": "2026-10-13",
+   "path": "video-engine/README.md",
+   "title": "video-engine: comic character video từ scene plan (Remotion + React + TS)"
   }
  ],
  "rules": [
@@ -489,6 +497,11 @@
   {
    "id": "rule-44",
    "title": "AI image local chỉ để phác ý tưởng",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-45",
+   "title": "Engine video comic (`video-engine/`)",
    "path": "rules/video-rules.md"
   }
  ],
