@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Omi seed celebrate">
+  <circle cx="24" cy="24" r="15.5" fill="none" stroke="#111111" stroke-width="1.85"/>
+  <path d="M14.5 22c1.2-1.4 3.2-1.4 4.4 0M29 22c1.2-1.4 3.2-1.4 4.4 0" fill="none" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+  <path d="M15.5 29c3.2 4.4 9.8 4.4 13 0" fill="none" stroke="#111111" stroke-width="1.85" stroke-linecap="round"/>
+  <g>
+            <path d="M7 9l1.15 2.3 2.35.4-1.7 1.65.4 2.35L7 14.5l-2.2 1.2.4-2.35-1.7-1.65 2.35-.4Z" fill="#111111"/>
+            <path d="M40 7.5l.95 1.9 1.95.35-1.4 1.35.35 1.95L40 12l-1.85 1.05.35-1.95-1.4-1.35 1.95-.35Z" fill="#111111"/>
+            <path d="M41 29.5l.7 1.4 1.45.25-1.05 1 .25 1.45L41 32.5l-1.35.8.25-1.45-1.05-1 1.45-.25Z" fill="#111111"/>
+            </g>
+</svg>

@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+footage/**/*.mov
+footage/**/*.mp4
+footage/**/*.m4a
+footage/**/*.wav
+renders/**/*.mov
+renders/**/*.mp4
+renders/**/*.webm
+renders/**/frames/
+refs/awesome-ai-motion/
+.env

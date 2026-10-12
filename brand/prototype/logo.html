@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OneUp — Logo (simple)</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    :root { --bg:#F7F7F5; --ink:#111; --muted:#6B6B6B; --border:#E8E8E6; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "DM Sans", system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 48px 20px 80px; }
+    .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    h1 { font-family: "Instrument Serif", Georgia, serif; font-size: clamp(2rem,4vw,2.8rem); font-weight: 400; letter-spacing: -.02em; line-height: 1.15; margin-bottom: 10px; }
+    h1 em { font-style: italic; }
+    .lede { color: var(--muted); max-width: 34rem; margin-bottom: 20px; line-height: 1.5; }
+    .story {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 28px;
+    }
+    @media (max-width: 700px) { .story { grid-template-columns: 1fr 1fr; } }
+    .beat {
+      background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 12px;
+      font-size: 12px;
+    }
+    .beat strong { display: block; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+    .beat span { color: var(--muted); }
+    .note {
+      background: #111; color: #fff; border-radius: 12px; padding: 12px 16px;
+      font-size: 13px; margin-bottom: 24px; max-width: 36rem;
+    }
+    .hero {
+      display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border);
+      border-radius: 20px; overflow: hidden; margin-bottom: 28px;
+    }
+    @media (max-width: 600px) { .hero { grid-template-columns: 1fr; } }
+    .hero .cell { min-height: 200px; display: grid; place-items: center; }
+    .hero .l { background: #fff; }
+    .hero .d { background: #111; }
+    .hero img { width: 112px; height: 112px; }
+    .hero .d img { filter: invert(1); }
+    h2 { font-size: 1.1rem; margin: 8px 0 12px; }
+    .word {
+      margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 14px;
+      padding: 24px; background: #fff; border: 1px solid var(--border); border-radius: 16px;
+    }
+    .word img { width: 44px; height: 44px; }
+    .word .n { font-family: "Instrument Serif", Georgia, serif; font-size: 1.9rem; }
+    .word .n span { opacity: .35; }
+    .app-icons { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 20px; }
+    .app-icon { display: grid; gap: 8px; font-size: 12px; color: var(--muted); }
+    .app-icon img { width: 132px; height: 132px; border-radius: 29px; box-shadow: 0 10px 30px rgba(17,17,17,.12); }
+    .app-icon a { color: var(--ink); font-weight: 600; }
+    .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+    a.btn {
+      display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px;
+      border-radius: 12px; font-weight: 600; font-size: 14px; text-decoration: none;
+      background: #111; color: #fff;
+    }
+    a.ghost { background: transparent; color: #111; border: 1px solid #111; }
+    footer { margin-top: 36px; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">/logo-generator · simple</p>
+    <h1>Listen. Understand.<br/><em>Your next +1.</em></h1>
+    <p class="lede">Less decoration. More story. Open forms = listening · calm center = understanding · plus/one = growth.</p>
+
+    <div class="story">
+      <div class="beat"><strong>Listen</strong><span>Open arc / soft circle</span></div>
+      <div class="beat"><strong>Understand</strong><span>Quiet nest / center</span></div>
+      <div class="beat"><strong>+1</strong><span>Clear plus and one</span></div>
+      <div class="beat"><strong>Grow</strong><span>Orbit · next step</span></div>
+    </div>
+
+    <div class="note">Hero: <strong>05 Pair +Bond +1</strong> — open listening circle, two bonded points, and one shared +/1 stem.</div>
+
+    <div class="hero">
+      <div class="cell l"><img src="../../design-system/oneup/brand/logos/05-pair-plus.svg?v=4" width="112" height="112" alt="Pair Bond plus one on light" /></div>
+      <div class="cell d"><img src="../../design-system/oneup/brand/logos/05-pair-plus.svg?v=4" width="112" height="112" alt="Pair Bond plus one on dark" /></div>
+    </div>
+
+    <div class="word">
+      <img src="../../design-system/oneup/brand/logos/05-pair-plus.svg?v=4" width="44" height="44" alt="" />
+      <div class="n">OneUp<span>.</span></div>
+    </div>
+
+    <h2>iOS app icon</h2>
+    <div class="app-icons">
+      <div class="app-icon">
+        <img src="../../design-system/oneup/brand/app-icon-exports/light/AppIcon-light-1024.png" alt="OneUp app icon light" />
+        <a href="../../design-system/oneup/brand/app-icon-exports/light/AppIcon-light-1024.png" download>Light · 1024 PNG</a>
+      </div>
+      <div class="app-icon">
+        <img src="../../design-system/oneup/brand/app-icon-exports/dark/AppIcon-dark-1024.png" alt="OneUp app icon dark" />
+        <a href="../../design-system/oneup/brand/app-icon-exports/dark/AppIcon-dark-1024.png" download>Dark · 1024 PNG</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a class="btn" href="color.html">Color (B/W)</a>
+      <a class="btn ghost" href="index.html">Brand hub</a>
+      <a class="btn ghost" href="../../design-system/oneup/brand/logos/05-pair-plus.svg?v=4">Open hero SVG</a>
+    </div>
+    <footer>Docs: design-system/oneup/brand/LOGO.md</footer>
+  </div>
+</body>
+</html>
