@@ -28,8 +28,10 @@ tags: [index, retrieval]
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v2) |
 | refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
+| research-character-animation | None | None | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.motion-layer | research | reference | `research/motion-layer.md` | @hi.oneup motion layer, based on gongnyang/awesome-ai-motion |
+| research-omi-voice-tts | None | chờ Hiệp quyết (mâu thuẫn luật "không giọng AI") | `research/omi-voice-tts-research-vi.md` | Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026) |
 | research.video-gen | research | reference | `research/oneup-video-gen-research-vi.md` | Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup |
 | research.production-system | research | reference | `research/production-system-research-vi.md` | Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
@@ -86,6 +88,9 @@ tags: [index, retrieval]
 | rule-39 | Bridge từ trend sang bài học |
 | rule-40 | Polish script (humanizer + voice) |
 | rule-41 | Kể chuyện trước |
+| rule-42 | Loại beat quyết định kiểu hình |
+| rule-43 | Cách điệu mạnh |
+| rule-44 | AI image local chỉ để phác ý tưởng |
 
 ## Clips
 | id | theme | path | files |

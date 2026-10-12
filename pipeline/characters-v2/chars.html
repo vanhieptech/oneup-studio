@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;background:#F7F7F5}svg{display:block}
+text{font-family:'Be Vietnam Pro'}
+</style></head><body><svg id="s" fill="#111111" xmlns="http://www.w3.org/2000/svg"></svg>
+<script>
+// Character rig v2 (chibi, rounded, liquid). Brand: ink #111111, paper #F7F7F5. Hiệp = generic avatar (real looks unknown).
+const INK='#111111',PAPER='#F7F7F5',SOFT='#E4E2DD',MUTED='#8A8A86';
+const lerp=(a,b,t)=>a+(b-a)*t, clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+function spring(t){ if(t<0) return 0; return 1-Math.exp(-6*t)*Math.cos(14*t); }
+// ---------- Hiệp ----------
+function hiepEyes(expr,blink,look){
+  let o='';for(const s of[-1,1]){const x=s*58+look*10,y=30;
+  if(expr==='happy'){o+=`<path d="M${x-20},${y+8} Q${x},${y-18} ${x+20},${y+8}" fill="none" stroke="${INK}" stroke-width="11" stroke-linecap="round"/>`;continue;}
+  if(expr==='tired'){o+=`<path d="M${x-20},${y} Q${x},${y+12} ${x+20},${y}" fill="none" stroke="${INK}" stroke-width="10" stroke-linecap="round"/><path d="M${x-14},${y+28} Q${x},${y+34} ${x+14},${y+28}" fill="none" stroke="${MUTED}" stroke-width="5" stroke-linecap="round"/>`;continue;}
+  const big=expr==='surprised'?1.35:1, ry=Math.max(3,26*big*(1-blink)), rx=19*big;
+  o+=`<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${INK}"/>`;
+  if(blink<.6) o+=`<circle cx="${x+6}" cy="${y-9*big}" r="${6.5*big}" fill="${PAPER}"/><circle cx="${x-7}" cy="${y+9}" r="3" fill="${PAPER}" opacity=".8"/>`;}
+  return o;}
+function hiepMouth(expr){
+  if(expr==='happy') return `<path d="M-26,92 Q0,128 26,92 Z" fill="${INK}"/>`;
+  if(expr==='surprised') return `<ellipse cx="0" cy="104" rx="14" ry="18" fill="${INK}"/>`;
+  if(expr==='tired') return `<path d="M-18,104 Q0,96 18,104" fill="none" stroke="${INK}" stroke-width="8" stroke-linecap="round"/>`;
+  if(expr==='focused') return `<path d="M-16,100 L16,100" stroke="${INK}" stroke-width="8" stroke-linecap="round"/>`;
+  return `<path d="M-20,96 Q0,114 20,96" fill="none" stroke="${INK}" stroke-width="8" stroke-linecap="round"/>`;}
+function hiepBrows(expr){ if(expr==='focused') return `<path d="M-84,-22 L-36,-8 M84,-22 L36,-8" stroke="${INK}" stroke-width="10" stroke-linecap="round"/>`;
+  if(expr==='surprised') return `<path d="M-80,-34 Q-58,-50 -36,-34 M80,-34 Q58,-50 36,-34" fill="none" stroke="${INK}" stroke-width="9" stroke-linecap="round"/>`; return '';}
+// p: {sx,sy,headLag,tilt,arm,blink,look,expr}
+function hiep(p,id='h'){
+  const {sx=1,sy=1,lag=0,tilt=0,arm=0,blink=0,look=0,expr='neutral'}=p;
+  const hy=-300;
+  return `<g>
+  <ellipse cx="0" cy="6" rx="${120*sx}" ry="16" fill="${INK}" opacity=".08"/>
+  <g transform="scale(${sx},${sy})">
+   <g transform="rotate(${24+arm} -80 -130)"><rect x="-96" y="-128" width="40" height="92" rx="20" fill="${INK}"/></g>
+   <g transform="rotate(${-24-arm} 80 -130)"><rect x="56" y="-128" width="40" height="92" rx="20" fill="${INK}"/></g>
+   <path d="M-92,-150 C-96,-60 -100,-10 -60,0 L60,0 C100,-10 96,-60 92,-150 C60,-176 -60,-176 -92,-150Z" fill="${INK}"/>
+   <path d="M-34,-160 Q0,-128 34,-160" fill="none" stroke="${PAPER}" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+   <rect x="-58" y="-24" width="48" height="34" rx="17" fill="${INK}"/><rect x="10" y="-24" width="48" height="34" rx="17" fill="${INK}"/>
+  </g>
+  <g transform="translate(0,${hy*sy+lag}) rotate(${tilt}) scale(${1+(sx-1)*.6},${1+(sy-1)*.6})">
+   <clipPath id="${id}c"><circle r="168"/></clipPath>
+   <circle r="168" fill="${PAPER}"/>
+   <g clip-path="url(#${id}c)">
+     <ellipse cx="0" cy="-118" rx="210" ry="118" fill="${INK}"/>
+     <circle cx="-112" cy="-30" r="52" fill="${INK}"/><circle cx="-40" cy="-40" r="46" fill="${INK}"/><circle cx="34" cy="-46" r="42" fill="${INK}"/><circle cx="118" cy="-24" r="56" fill="${INK}"/>
+     <ellipse cx="-96" cy="80" rx="30" ry="15" fill="${SOFT}"/><ellipse cx="96" cy="80" rx="30" ry="15" fill="${SOFT}"/>
+   </g>
+   <circle r="168" fill="none" stroke="${INK}" stroke-width="10"/>
+   <path d="M-40,-150 Q-20,-200 10,-178" fill="none" stroke="${INK}" stroke-width="12" stroke-linecap="round"/>
+   <path d="M-150,-60 Q-120,-110 -80,-120" fill="none" stroke="${PAPER}" stroke-width="7" stroke-linecap="round" opacity=".35"/>
+   ${hiepBrows(expr)}${hiepEyes(expr,blink,look)}${hiepMouth(expr)}
+  </g></g>`;}
+// ---------- Omi ----------
+const EMO={ // shape params: sx, sy, bottom-heavy (tear), wobble amp
+  happy:{sx:1.08,sy:.93,tear:0,wob:.018},
+  curious:{sx:.95,sy:1.07,tear:-.06,wob:.026},
+  worried:{sx:.98,sy:1.02,tear:.16,wob:.012}};
+function blobPath(R,par,t){
+  const N=72,pts=[];
+  for(let i=0;i<N;i++){const a=i/N*Math.PI*2;
+    let r=R*(1+par.wob*Math.sin(3*a+t*2.1)+par.wob*.7*Math.sin(5*a-t*1.7)+par.wob*.5*Math.sin(2*a+t*1.3));
+    const yv=Math.sin(a); // +down
+    r*=1+par.tear*(-yv)*.5; // tear>0: pointy top
+    pts.push([Math.cos(a)*r*par.sx, yv*r*par.sy*(1+par.tear*.25*Math.max(0,yv))]);}
+  let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for(let i=0;i<N;i++){const p0=pts[(i-1+N)%N],p1=pts[i],p2=pts[(i+1)%N],p3=pts[(i+2)%N];
+    d+=` C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return d+'Z';}
+function omiFace(emo,blink){
+  let o='';for(const s of[-1,1]){const x=s*36,y=-6;
+   if(emo==='happy'){o+=`<path d="M${x-15},${y+6} Q${x},${y-16} ${x+15},${y+6}" fill="none" stroke="${PAPER}" stroke-width="9" stroke-linecap="round"/>`;}
+   else if(emo==='worried'){o+=`<ellipse cx="${x}" cy="${y+4}" rx="12" ry="${Math.max(2,15*(1-blink))}" fill="${PAPER}"/><path d="M${x-16*s},${y-26} L${x+14*s},${y-18}" stroke="${PAPER}" stroke-width="7" stroke-linecap="round" transform="scale(1,1)"/>`;}
+   else {o+=`<ellipse cx="${x}" cy="${y}" rx="17" ry="${Math.max(2,21*(1-blink))}" fill="${PAPER}"/>`; if(blink<.5) o+=`<circle cx="${x+5}" cy="${y+4}" r="8" fill="${INK}"/>`;}}
+  if(emo==='happy') o+=`<path d="M-16,26 Q0,44 16,26" fill="none" stroke="${PAPER}" stroke-width="7" stroke-linecap="round"/>`;
+  if(emo==='curious') o+=`<circle cx="8" cy="34" r="7" fill="${PAPER}"/>`;
+  if(emo==='worried') o+=`<path d="M-14,36 Q0,26 14,36" fill="none" stroke="${PAPER}" stroke-width="7" stroke-linecap="round"/>`;
+  return o;}
+function omi(t,emoA,emoB,k,blink,faceSquash=1,id='o'){
+  const A=EMO[emoA],B=EMO[emoB],e=ease(k);
+  const par={};for(const key in A) par[key]=lerp(A[key],B[key],e);
+  const face=k<.5?emoA:emoB;
+  const dropA=t*1.4, d1=[Math.cos(dropA)*118,Math.sin(dropA)*50+20], d2=[Math.cos(dropA+2.6)*112,Math.sin(dropA+2.6)*56];
+  const pulse=4*Math.sin(t*3);
+  return `<defs><filter id="${id}g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="12"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 24 -10"/></filter></defs>
+  <ellipse cx="0" cy="175" rx="${80-pulse*3}" ry="12" fill="${INK}" opacity=".07"/>
+  <g filter="url(#${id}g)" fill="${INK}"><path d="${blobPath(110+pulse,par,t)}"/>
+   <circle cx="${d1[0]}" cy="${d1[1]}" r="${22+6*Math.sin(t*2)}"/><circle cx="${d2[0]}" cy="${d2[1]}" r="${16+5*Math.cos(t*2.4)}"/></g>
+  <path d="M-62,-58 Q-40,-84 -8,-86" fill="none" stroke="${PAPER}" stroke-width="8" stroke-linecap="round" opacity=".28"/>
+  <g transform="scale(1,${faceSquash})">${omiFace(face,blink)}</g>`;}
+window.CH={hiep,omi,spring,ease,clamp,lerp};
+</script></body></html>

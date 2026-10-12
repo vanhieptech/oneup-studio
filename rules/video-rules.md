@@ -2,7 +2,7 @@
 id: rules
 type: rules
 status: active
-updated: 2026-10-12
+updated: 2026-10-13
 tags: [rules, source-of-truth]
 ---
 # @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)
@@ -98,7 +98,15 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
     - Chuyện **chỉ được là chuyện thật của Hiệp**, lấy từ `content/story-bank.md`. Chi tiết chưa xác nhận thì ghi `[CẦN HIỆP XÁC NHẬN]` và phải được xác nhận trước khi thu. Không bao giờ bịa chuyện hay kết quả.
     - Giọng theo `content/voice-profile.md` (đã xác nhận): mình/bạn, miền Nam, hài 4/5 tinh tế, chen 1–3 từ tiếng Anh.
 
+42. **Loại beat quyết định kiểu hình:**
+    - Beat kể chuyện → **comic** (nhân vật Hiệp/Omi, panel, bubble), nhân vật luôn có chuyển động (idle thở, chớp mắt, squash-stretch, follow-through).
+    - Beat dẫn chứng / giải thích / kiến thức → **motion graphics minh hoạ** (số liệu, sơ đồ, icon), không vẽ comic.
+    - Omi chỉ xuất hiện từ tuần 5 (luật 11 giữ nguyên).
+43. **Cách điệu mạnh:** chibi đầu to, khối tròn, không góc nhọn, biểu cảm và đạo cụ phóng đại để người xem hiểu ngữ cảnh ngay và thấy vui. Vẫn giữ brand ink/paper 90/8/2 và Be Vietnam Pro. Rig nguồn: `pipeline/characters-v2/`.
+44. **AI image local chỉ để phác ý tưởng:** được dùng model tạo ảnh chạy local để sketch/ideation. Không đưa ảnh AI vào video final; hình final phải vẽ lại bằng rig/vector.
+
 ## Changelog
+- **v2.5, 13/10/2026:** luật 42 (comic cho beat kể chuyện, motion graphics cho beat giải thích), luật 43 (cách điệu mạnh, chibi), luật 44 (AI image local chỉ để phác). Giọng AI cho Omi: chưa đổi, chờ quyết (research/omi-voice-tts-research-vi.md).
 - **v2.4, 12/10/2026:** luật 41 (kể chuyện trước, chỉ chuyện thật, voice profile đã xác nhận).
 - **v2.3, 12/10/2026:** luật 39 (bridge trend → bài học, lọc brand-safety), luật 40 (polish script bằng humanizer + voice profile).
 - **v2.2, 12/10/2026:** thêm luật 36 (storyboard theo spec + renderer chung, sửa thay vì tạo lại), luật 37 (script phải đọc trend ingest, có ≥1 cụm từ đang phổ biến), luật 38 (trend digest hằng ngày + sync). Thêm front-matter và id ổn định cho tài liệu.

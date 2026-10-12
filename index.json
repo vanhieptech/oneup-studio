@@ -154,6 +154,14 @@
    "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
   },
   {
+   "id": "research-character-animation",
+   "type": null,
+   "status": null,
+   "updated": null,
+   "path": "research/character-animation-research-vi.md",
+   "title": "Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026)"
+  },
+  {
    "id": "research.comic-system",
    "type": "research",
    "status": "reference",
@@ -168,6 +176,14 @@
    "updated": "2026-10-12",
    "path": "research/motion-layer.md",
    "title": "@hi.oneup motion layer, based on gongnyang/awesome-ai-motion"
+  },
+  {
+   "id": "research-omi-voice-tts",
+   "type": null,
+   "status": "chờ Hiệp quyết (mâu thuẫn luật \"không giọng AI\")",
+   "updated": null,
+   "path": "research/omi-voice-tts-research-vi.md",
+   "title": "Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026)"
   },
   {
    "id": "research.video-gen",
@@ -213,7 +229,7 @@
    "id": "rules",
    "type": "rules",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-13",
    "path": "rules/video-rules.md",
    "title": "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
   },
@@ -458,6 +474,21 @@
   {
    "id": "rule-41",
    "title": "Kể chuyện trước",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-42",
+   "title": "Loại beat quyết định kiểu hình",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-43",
+   "title": "Cách điệu mạnh",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-44",
+   "title": "AI image local chỉ để phác ý tưởng",
    "path": "rules/video-rules.md"
   }
  ],
