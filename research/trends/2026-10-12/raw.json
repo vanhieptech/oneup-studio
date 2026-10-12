@@ -2,20 +2,313 @@
  "date": "2026-10-12",
  "collected_at": "2026-10-12T22:58:00+07:00",
  "sources_tried": [
-  {"source": "web_search", "status": "ok"},
-  {"source": "x_search_posts_all", "status": "error", "note": "HTTP 429 shared rate limit; retry next run"},
-  {"source": "tiktok_creative_center", "status": "blocked", "note": "JS-only page, fetch returned shell only"},
-  {"source": "agent_reach_youtube_rss_reddit", "status": "skipped", "note": "first validation run; enable in next run"},
-  {"source": "google_trends_vn", "status": "skipped"}
+  {
+   "source": "google_trends_rss_vn",
+   "status": "ok"
+  },
+  {
+   "source": "google_trends_rss_us",
+   "status": "ok"
+  },
+  {
+   "source": "x_get_trends_by_woeid",
+   "status": "error",
+   "note": "HTTP 429 shared limit (3 tries)"
+  },
+  {
+   "source": "youtube_trending_vn_yt-dlp",
+   "status": "error",
+   "note": "/feed/trending no longer returns a list; use ytsearch next run"
+  },
+  {
+   "source": "web_search",
+   "status": "ok"
+  },
+  {
+   "source": "tiktok_creative_center",
+   "status": "blocked"
+  }
  ],
  "items": [
-  {"id": "du-an-ma", "kind": "phrase", "lang": "vi", "text": "dự án ma", "meaning": "kế hoạch mãi nằm trên giấy (du lịch, học, khởi nghiệp, tập thể dục...)", "evidence": [{"url": "https://vtcnews.vn/du-an-ma-la-gi-ma-gioi-tre-ram-ro-khoe-tren-mang-xa-hoi-ar1044235.html", "date": "2026-10-09", "publisher": "VTC News"}], "platforms": ["tiktok", "facebook"], "fit": "pillar-1", "clips": ["clip-01", "clip-03", "clip-04"]},
-  {"id": "great-lock-in", "kind": "format", "lang": "en", "text": "The Great Lock In / locking in (Sep 1–Dec 31)", "evidence": [{"url": "https://www.buzzfeed.com/beccamonaghan/the-great-lock-in-tiktok-explained"}, {"url": "https://www.takeroon.com/blog/the-great-lock-in-2026"}], "platforms": ["tiktok"], "fit": "pillar-1", "clips": ["clip-01", "clip-06"]},
-  {"id": "winter-arc", "kind": "format", "lang": "en", "text": "Winter Arc (Oct 1–Dec 31, 90 days)", "evidence": [{"url": "https://www.takeroon.com/blog/the-great-lock-in-2026"}, {"url": "https://dailyhabitai.com/guides/monk-mode/"}], "platforms": ["tiktok"], "fit": "pillar-1", "clips": ["clip-06"]},
-  {"id": "monk-mode", "kind": "phrase", "lang": "en", "text": "monk mode", "evidence": [{"url": "https://focusbox.io/blog/monk-mode/"}], "platforms": ["tiktok", "youtube", "reddit"], "fit": "pillar-2", "clips": ["clip-08", "clip-10"]},
-  {"id": "dang-buc-ma-con-kiem-tui", "kind": "meme", "lang": "vi", "text": "Đang bực mà còn kiếm tui nữa", "evidence": [{"url": "https://35express.org/trend-dang-buc-ma-con-kiem-tui-nua/", "date": "2026-10-08"}], "platforms": ["tiktok"], "fit": "pillar-2", "clips": ["clip-07", "clip-09", "clip-11"]},
-  {"id": "ba-khi", "kind": "slang", "lang": "vi", "text": "bá khí", "evidence": [{"url": "https://thethao247.vn/441-ba-khi-la-gi-vi-sao-trao-luu-nay-dang-phu-song-tiktok-facebook-c123-d438617.html"}], "platforms": ["tiktok", "facebook"], "fit": "comment-tone", "clips": []},
-  {"id": "studytok-blurting-bodydoubling", "kind": "format", "lang": "en", "text": "StudyTok: study-with-me timelapse, body doubling, blurting, Pomodoro", "evidence": [{"url": "https://contentscout.co/trending/tiktok/education/", "date": "2026-10-07"}, {"url": "https://studies.ayojakarta.com/tiktok-study-hacks-what-actually-works/"}], "platforms": ["tiktok"], "fit": "pillar-2", "clips": []},
-  {"id": "search-habit-tracker", "kind": "search", "lang": "en", "text": "TikTok searches: 'best habit tracker app' 274,617 / 'To do list' 281,628 / 'Productivity' 225,487 in 7 days to 2026-10-05", "evidence": [{"url": "https://tokconnect.com/guides/tiktok-for-saas/"}], "platforms": ["tiktok"], "fit": "app-weeks-3+", "clips": []}
- ]
+  {
+   "id": "du-an-ma",
+   "kind": "phrase",
+   "lang": "vi",
+   "text": "dự án ma",
+   "meaning": "kế hoạch mãi nằm trên giấy (du lịch, học, khởi nghiệp, tập thể dục...)",
+   "evidence": [
+    {
+     "url": "https://vtcnews.vn/du-an-ma-la-gi-ma-gioi-tre-ram-ro-khoe-tren-mang-xa-hoi-ar1044235.html",
+     "date": "2026-10-09",
+     "publisher": "VTC News"
+    }
+   ],
+   "platforms": [
+    "tiktok",
+    "facebook"
+   ],
+   "fit": "pillar-1",
+   "clips": [
+    "clip-01",
+    "clip-03",
+    "clip-04"
+   ]
+  },
+  {
+   "id": "great-lock-in",
+   "kind": "format",
+   "lang": "en",
+   "text": "The Great Lock In / locking in (Sep 1–Dec 31)",
+   "evidence": [
+    {
+     "url": "https://www.buzzfeed.com/beccamonaghan/the-great-lock-in-tiktok-explained"
+    },
+    {
+     "url": "https://www.takeroon.com/blog/the-great-lock-in-2026"
+    }
+   ],
+   "platforms": [
+    "tiktok"
+   ],
+   "fit": "pillar-1",
+   "clips": [
+    "clip-01",
+    "clip-06"
+   ]
+  },
+  {
+   "id": "winter-arc",
+   "kind": "format",
+   "lang": "en",
+   "text": "Winter Arc (Oct 1–Dec 31, 90 days)",
+   "evidence": [
+    {
+     "url": "https://www.takeroon.com/blog/the-great-lock-in-2026"
+    },
+    {
+     "url": "https://dailyhabitai.com/guides/monk-mode/"
+    }
+   ],
+   "platforms": [
+    "tiktok"
+   ],
+   "fit": "pillar-1",
+   "clips": [
+    "clip-06"
+   ]
+  },
+  {
+   "id": "monk-mode",
+   "kind": "phrase",
+   "lang": "en",
+   "text": "monk mode",
+   "evidence": [
+    {
+     "url": "https://focusbox.io/blog/monk-mode/"
+    }
+   ],
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "reddit"
+   ],
+   "fit": "pillar-2",
+   "clips": [
+    "clip-08",
+    "clip-10"
+   ]
+  },
+  {
+   "id": "dang-buc-ma-con-kiem-tui",
+   "kind": "meme",
+   "lang": "vi",
+   "text": "Đang bực mà còn kiếm tui nữa",
+   "evidence": [
+    {
+     "url": "https://35express.org/trend-dang-buc-ma-con-kiem-tui-nua/",
+     "date": "2026-10-08"
+    }
+   ],
+   "platforms": [
+    "tiktok"
+   ],
+   "fit": "pillar-2",
+   "clips": [
+    "clip-07",
+    "clip-09",
+    "clip-11"
+   ]
+  },
+  {
+   "id": "ba-khi",
+   "kind": "slang",
+   "lang": "vi",
+   "text": "bá khí",
+   "evidence": [
+    {
+     "url": "https://thethao247.vn/441-ba-khi-la-gi-vi-sao-trao-luu-nay-dang-phu-song-tiktok-facebook-c123-d438617.html"
+    }
+   ],
+   "platforms": [
+    "tiktok",
+    "facebook"
+   ],
+   "fit": "comment-tone",
+   "clips": []
+  },
+  {
+   "id": "studytok-blurting-bodydoubling",
+   "kind": "format",
+   "lang": "en",
+   "text": "StudyTok: study-with-me timelapse, body doubling, blurting, Pomodoro",
+   "evidence": [
+    {
+     "url": "https://contentscout.co/trending/tiktok/education/",
+     "date": "2026-10-07"
+    },
+    {
+     "url": "https://studies.ayojakarta.com/tiktok-study-hacks-what-actually-works/"
+    }
+   ],
+   "platforms": [
+    "tiktok"
+   ],
+   "fit": "pillar-2",
+   "clips": []
+  },
+  {
+   "id": "search-habit-tracker",
+   "kind": "search",
+   "lang": "en",
+   "text": "TikTok searches: 'best habit tracker app' 274,617 / 'To do list' 281,628 / 'Productivity' 225,487 in 7 days to 2026-10-05",
+   "evidence": [
+    {
+     "url": "https://tokconnect.com/guides/tiktok-for-saas/"
+    }
+   ],
+   "platforms": [
+    "tiktok"
+   ],
+   "fit": "app-weeks-3+",
+   "clips": []
+  },
+  {
+   "id": "c1-late-night",
+   "kind": "topic",
+   "category": "sports",
+   "lang": "vi",
+   "text": "Champions League (C1): Man United vs Atletico, các trận 23h–2h giờ VN",
+   "heat": "2000+ searches (GT VN)",
+   "evidence": [
+    {
+     "url": "https://laodong.vn/bong-da-quoc-te/man-united-doi-mat-thu-thach-lon-truoc-atletico-madrid-1781803.ldo"
+    }
+   ],
+   "safety": "ok"
+  },
+  {
+   "id": "vietlott-200-ty",
+   "kind": "news",
+   "category": "news/money",
+   "lang": "vi",
+   "text": "Một phụ nữ trúng Vietlott kỷ lục gần 200 tỷ",
+   "heat": "5000+ (GT VN, #1)",
+   "evidence": [
+    {
+     "url": "https://dantri.com.vn/kinh-doanh/mot-phu-nu-trung-vietlott-ky-luc-gan-200-ty-dong-20261012090437723.htm"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "không chế giễu / ghen tị người trúng; không cổ vũ cờ bạc; số liệu xổ số trong sách là của Trung Quốc"
+  },
+  {
+   "id": "game-pass-oct",
+   "kind": "topic",
+   "category": "tech/gaming",
+   "lang": "en",
+   "text": "Xbox Game Pass October: Battlefield 6…",
+   "heat": "1000+ (GT US)",
+   "evidence": [
+    {
+     "url": "https://news.xbox.com/en-us/2026/10/07/xbox-game-pass-october-2026-wave-1/"
+    }
+   ],
+   "safety": "ok"
+  },
+  {
+   "id": "spiderman-nycc",
+   "kind": "topic",
+   "category": "pop culture",
+   "lang": "en",
+   "text": "Peter Parker vs Miles Morales (NYCC 2026)",
+   "heat": "1000+ (GT US)",
+   "evidence": [
+    {
+     "url": "https://www.marvel.com/articles/comics/spider-man-comics-nycc-2026-crisis-of-faith-peter-miles-crossover-spider-punk-spider-noir"
+    }
+   ],
+   "safety": "ok"
+  },
+  {
+   "id": "kim-yong-ji-wedding",
+   "kind": "celebrity",
+   "category": "entertainment",
+   "lang": "vi/ko",
+   "text": "Kim Yong-ji cưới bất ngờ kiểu hanok",
+   "heat": "100+",
+   "evidence": [
+    {
+     "url": "https://biz.chosun.com/en/en-entertainment/2026/10/12/XQYBDTWXLFHU7IEA5I7FWAIW7E/"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "người nổi tiếng: chỉ dùng góc tích cực"
+  },
+  {
+   "id": "svd-135k",
+   "kind": "news",
+   "category": "sports/infrastructure",
+   "lang": "vi",
+   "text": "Mái che siêu SVĐ 135.000 chỗ",
+   "heat": "500+",
+   "evidence": [
+    {
+     "url": "https://thethao247.vn/175391-truyen-thong-duc-day-song-voi-mai-che-cua-sieu-svd-135000-cho-cua-viet-nam-c1-d439884.html"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "dự án công, không phê phán; tạm không bridge"
+  },
+  {
+   "id": "can-nha-khong-mai-che",
+   "kind": "entertainment",
+   "category": "tv drama",
+   "lang": "vi",
+   "text": "Phim 'Căn nhà không mái che'",
+   "evidence": [
+    {
+     "url": "https://vietnamnet.vn/"
+    }
+   ],
+   "safety": "drop",
+   "safety_reason": "cốt truyện bạo lực gia đình"
+  },
+  {
+   "id": "us-supreme-court",
+   "kind": "news",
+   "category": "politics",
+   "lang": "en",
+   "safety": "drop",
+   "safety_reason": "chính trị"
+  },
+  {
+   "id": "cuc-dien-anh",
+   "kind": "news",
+   "category": "regulation",
+   "lang": "vi",
+   "safety": "drop",
+   "safety_reason": "cơ quan nhà nước / pháp lý"
+  }
+ ],
+ "mode": "broad (rerun 23:30 +07)"
 }

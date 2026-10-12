@@ -26,6 +26,8 @@ tags: [decisions, feedback]
 | DL-014 | 2026-10-12 | Tìm hiểu microsoft/skillopt | Đánh giá, chưa áp dụng (xem research/skillopt-eval-vi.md) | research/skillopt-eval-vi.md |
 | DL-015 | 2026-10-12 | Storyboard phải là tài sản có phiên bản, khi góp ý thì sửa từ nguồn đã commit chứ không tạo lại. Repo thiết kế cho AI tra cứu (AGENTS.md, index, front-matter, id ổn định) | spec.json + renderer chung. AGENTS.md, INDEX.md / index.json, front-matter | rule-36, AGENTS.md, INDEX.md |
 | DL-016 | 2026-10-12 | Hệ thống nghiên cứu trend hằng ngày (digest + ingest), skill trend-digest. Mỗi script phải dùng ≥1 cụm từ / tình huống đang phổ biến. Đồng bộ từ box sang repo | research/trends/, skill trend-digest, sync-trends.sh. Digest đầu tiên 2026-10-12 | rule-37, rule-38 |
+| DL-017 | 2026-10-12 | Mở rộng trend sang mọi chủ đề nóng (VN + global), thêm bước bridge trend → bài học HowToLiveBetter, nhiều góc, lọc brand-safety | Viết lại skill trend-digest, thêm bảng Bridges trong ingest, chạy lại digest 2026-10-12, thêm vào idea-bank | rule-39, skills/trend-digest |
+| DL-018 | 2026-10-12 | Đánh giá blader/humanizer, tạo voice profile, áp lên clip 01 thành bản v2.1 draft | Vendor humanizer (MIT) + skill script-polish + content/voice-profile.md + script-v2.1-draft.md | rule-40 |
 
 ## Góp ý lặp lại (theo dõi để nâng thành luật)
 | Chủ đề | Số lần | Đã nâng? |

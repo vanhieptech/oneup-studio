@@ -10,14 +10,17 @@ tags: [index, retrieval]
 | id | type | status | path | title |
 |---|---|---|---|---|
 | agents | guide | active | `AGENTS.md` | AGENTS.md: cách AI làm việc trong repo này |
+| index | index | generated | `INDEX.md` | INDEX (generated, do not hand-edit; run `python3 pipeline/scripts/build-index.py`) |
 | repo-readme | readme | active | `README.md` | oneup-studio: hệ thống nội dung @hi.oneup |
 | sfx-sources | log | living | `assets/sfx/SOURCES.md` | Nguồn SFX (chỉ dùng CC0 hoặc Mixkit, theo luật 22) |
 | brand-index | brand | active | `brand/brand-index.md` | @hi.oneup — Brand index cho video |
 | clip-01.beat-sheet | beat-sheet | draft | `content/clips/clip-01-implementation-intention/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
+| clip-01.script-v2.1-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
 | clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
 | clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | theme-map | plan | active | `content/theme-map.md` | Theme map — @hi.oneup (LIGHT / DARK theo tone) |
+| voice-profile | profile | draft-needs-input | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v2) |
@@ -26,10 +29,13 @@ tags: [index, retrieval]
 | research.video-gen | research | reference | `research/oneup-video-gen-research-vi.md` | Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup |
 | research.production-system | research | reference | `research/production-system-research-vi.md` | Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
-| trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (lần chạy đầu để kiểm thử skill trend-digest) |
-| trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37) |
+| trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
+| trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026) |
+| skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
+| skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
+| skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | Script polish (VI voice) |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | Trend digest |
 
 ## Rules (source: `rules/video-rules.md`)
@@ -73,11 +79,13 @@ tags: [index, retrieval]
 | rule-36 | Storyboard là tài sản có phiên bản |
 | rule-37 | Script phải dùng trend |
 | rule-38 | Trend digest hằng ngày |
+| rule-39 | Bridge từ trend sang bài học |
+| rule-40 | Polish script (humanizer + voice) |
 
 ## Clips
 | id | theme | path | files |
 |---|---|---|---|
-| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, script.md, shot-list.md, storyboard |
+| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, script-v2.1-draft.md, script.md, shot-list.md, storyboard |
 
 ## Assets & tools
 | id | path | description |

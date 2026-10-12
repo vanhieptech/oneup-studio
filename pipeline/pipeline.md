@@ -11,7 +11,9 @@ tags: [pipeline, workflow]
 | 0 | Đọc lại `logs/decision-log.md` (luật 33) | | Agent | |
 | 1 | Chọn ý tưởng + theme | `content/idea-bank.md`, `content/theme-map.md` | Agent | |
 | 1b | Đọc `research/trends/ingest.md` + digest mới nhất, chọn ≥1 cụm từ / tình huống (rule-37) | skill trend-digest | Agent | ghi id trend vào script |
+| 1c | Chọn bridge (trend → bài học → hook) từ `research/trends/ingest.md` §Bridges, đổi góc so với clip trước (rule-39) | skill trend-digest | Agent | ghi bridge id vào script |
 | 2 | Script VI + bản dịch EN + shot list + beat sheet nháp | template trong `content/clips/clip-01-*` | Agent | `content/clips/NN-slug/` |
+| 2a | Polish script: humanizer + voice profile, khoá fact, lưu draft vX.Y (rule-40) | `skills/script-polish` | Agent | `script-vX.Y-draft.md` |
 | 2b | Storyboard: 1 frame 1080×1920 mỗi beat + contact sheet, tự xem và sửa ≥2 vòng (luật 34–35) | HTML + headless Chrome `pipeline/storyboard/render.py <clip-dir>` đọc `storyboard/spec.json` (rule-36) | Agent | `content/clips/NN-slug/storyboard/` |
 | 3 | Duyệt script + storyboard | Hiệp | Tay | |
 | 4 | Thu giọng + quay b-roll | iPhone | Hiệp | AirDrop vào `footage/inbox/` |

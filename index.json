@@ -10,6 +10,14 @@
    "title": "AGENTS.md: cách AI làm việc trong repo này"
   },
   {
+   "id": "index",
+   "type": "index",
+   "status": "generated",
+   "updated": null,
+   "path": "INDEX.md",
+   "title": "INDEX (generated, do not hand-edit; run `python3 pipeline/scripts/build-index.py`)"
+  },
+  {
    "id": "repo-readme",
    "type": "readme",
    "status": "active",
@@ -42,6 +50,14 @@
    "title": "Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md"
   },
   {
+   "id": "clip-01.script-v2.1-draft",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-12",
+   "path": "content/clips/clip-01-implementation-intention/script-v2.1-draft.md",
+   "title": "Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2"
+  },
+  {
    "id": "clip-01.script",
    "type": "script",
    "status": "awaiting-approval",
@@ -72,6 +88,14 @@
    "updated": "2026-10-12",
    "path": "content/theme-map.md",
    "title": "Theme map — @hi.oneup (LIGHT / DARK theo tone)"
+  },
+  {
+   "id": "voice-profile",
+   "type": "profile",
+   "status": "draft-needs-input",
+   "updated": "2026-10-12",
+   "path": "content/voice-profile.md",
+   "title": "Voice profile: Hiệp (@hi.oneup)"
   },
   {
    "id": "decision-log",
@@ -143,7 +167,7 @@
    "status": "done",
    "updated": "2026-10-12",
    "path": "research/trends/2026-10-12/digest.md",
-   "title": "Trend digest: 2026-10-12 (lần chạy đầu để kiểm thử skill trend-digest)"
+   "title": "Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN)"
   },
   {
    "id": "trends-ingest",
@@ -151,7 +175,7 @@
    "status": "living",
    "updated": "2026-10-12",
    "path": "research/trends/ingest.md",
-   "title": "Trend ingest: thư viện sống (rule-37)"
+   "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
   {
    "id": "rules",
@@ -162,11 +186,33 @@
    "title": "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
   },
   {
+   "id": "skill.humanizer",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/humanizer/SKILL.md",
+   "title": "humanizer"
+  },
+  {
+   "id": "skill.humanizer.upstream",
+   "type": "vendor-note",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "skills/humanizer/UPSTREAM.md",
+   "title": "Humanizer (vendored, MIT)"
+  },
+  {
    "id": "skill.motion-picks-per-script",
    "type": "skill",
    "status": "active",
    "path": "skills/motion-picks-per-script/SKILL.md",
    "title": "Motion picks per script"
+  },
+  {
+   "id": "skill.script-polish",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/script-polish/SKILL.md",
+   "title": "Script polish (VI voice)"
   },
   {
    "id": "skill.trend-digest",
@@ -366,6 +412,16 @@
    "id": "rule-38",
    "title": "Trend digest hằng ngày",
    "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-39",
+   "title": "Bridge từ trend sang bài học",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-40",
+   "title": "Polish script (humanizer + voice)",
+   "path": "rules/video-rules.md"
   }
  ],
  "clips": [
@@ -375,6 +431,7 @@
    "theme": "LIGHT",
    "files": [
     "beat-sheet.md",
+    "script-v2.1-draft.md",
     "script.md",
     "shot-list.md",
     "storyboard"

@@ -83,7 +83,18 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
     - Chạy theo `skills/trend-digest/SKILL.md`, chỉ dùng nguồn miễn phí, công khai, có trích link.
     - Job chạy tự động ghi vào box `/workspace/oneup-studio-sync/research/trends/`. Agent đồng bộ vào repo bằng `pipeline/scripts/sync-trends.sh` mỗi khi có quyền truy cập Mac (xem AGENTS.md).
 
+39. **Bridge từ trend sang bài học:**
+    - Khi lên ý tưởng hook, dùng mọi trend nóng (không chỉ trend ngách) qua bảng Bridges (trend → khoảnh khắc → bài học HowToLiveBetter phần.mục → hook VI → góc → clip).
+    - Thay đổi góc giữa các clip: humor, contrarian, empathy, data, story.
+    - Qua bộ lọc brand-safety: không chính trị, không bi kịch hay bạo lực, không chế giễu ai, không cổ vũ cờ bạc. Trend về người nổi tiếng hay tiền bạc thì phải có Hiệp duyệt.
+    - Không dùng hình, âm thanh của sự kiện. Fact bài học lấy đúng theo sách, số liệu chỉ có ở Trung Quốc thì phải tìm số liệu tương đương ở VN.
+40. **Polish script (humanizer + voice):**
+    - Sau khi kiểm fact và trước khi gửi duyệt, chạy skill `skills/script-polish` (dùng `skills/humanizer`, MIT, cùng `content/voice-profile.md`).
+    - Khoá fact: số liệu, nghiên cứu, trích dẫn giữ nguyên. Không bịa chuyện cá nhân, dùng placeholder `[VÍ DỤ THẬT CỦA HIỆP]`.
+    - Lưu thành `script-vX.Y-draft.md` cạnh bản đã duyệt, không ghi đè.
+
 ## Changelog
+- **v2.3, 12/10/2026:** luật 39 (bridge trend → bài học, lọc brand-safety), luật 40 (polish script bằng humanizer + voice profile).
 - **v2.2, 12/10/2026:** thêm luật 36 (storyboard theo spec + renderer chung, sửa thay vì tạo lại), luật 37 (script phải đọc trend ingest, có ≥1 cụm từ đang phổ biến), luật 38 (trend digest hằng ngày + sync). Thêm front-matter và id ổn định cho tài liệu.
 - **v2.1, 12/10/2026:** thêm luật 33 (nhật ký quyết định + retro tuần), luật 34 (chuẩn chất lượng premium), luật 35 (storyboard trước khi duyệt script).
 - **v2, 12/10/2026:**

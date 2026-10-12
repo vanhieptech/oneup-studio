@@ -3,31 +3,47 @@ id: trends-2026-10-12
 type: trend-digest
 status: done
 updated: 2026-10-12
-tags: [trends, vi, en, productivity]
+tags: [trends, broad, bridges, vi, en]
 ---
-# Trend digest: 2026-10-12 (lần chạy đầu để kiểm thử skill trend-digest)
+# Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN)
 **Nguồn:**
+- Google Trends RSS VN + US: ok.
 - Web search: ok.
-- X: lỗi 429, gọi lại lần sau.
-- TikTok Creative Center: trang chỉ chạy JS, fetch không lấy được nội dung.
-- YouTube / RSS / Reddit qua Agent Reach và Google Trends: chưa chạy, sẽ bật ở lần sau.
-- Dữ liệu thô: `raw.json`.
+- X: lỗi 429, đã thử 3 lần.
+- YouTube trending qua yt-dlp: trang /feed/trending không còn trả danh sách, lần sau dùng ytsearch.
+- TikTok Creative Center: bị chặn.
+- Dữ liệu thô và kết quả lọc brand-safety: `raw.json`.
 
-## Top 5
-1. **"dự án ma"** (VI, TikTok/Facebook, VTC News 9/10/2026): kế hoạch mãi nằm trên giấy, như chuyến Đà Lạt bàn từ 2022, startup bàn ở quán cà phê rồi chia tiền nước về. Khớp gần như hoàn hảo với **clip-01** (nếu… thì…) và clip-03/04. https://vtcnews.vn/du-an-ma-la-gi-ma-gioi-tre-ram-ro-khoe-tren-mang-xa-hoi-ar1044235.html
-2. **"The Great Lock In" / "locking in"** (EN, TikTok, 1/9 → 31/12, năm thứ 2): tự đặt vài mục tiêu cho 4 tháng cuối năm, không cần chờ tháng Giêng. https://www.buzzfeed.com/beccamonaghan/the-great-lock-in-tiktok-explained · https://www.takeroon.com/blog/the-great-lock-in-2026
-3. **"Winter Arc"** (EN, 1/10 → 31/12, 90 ngày) và **"monk mode"**: cùng nhóm format "giai đoạn tập trung". Lưu ý: không phải phương pháp đã được kiểm chứng. https://focusbox.io/blog/monk-mode/
-4. **"Đang bực mà còn kiếm tui nữa"** (VI meme, 8/10/2026): đang khó chịu thì bị ai đó tìm đến. Hợp với tình huống "đang tập trung thì bị ping". https://35express.org/trend-dang-buc-ma-con-kiem-tui-nua/
-5. **StudyTok** (ContentScout 7/10/2026): timelapse "studying until the candle goes out", body doubling, blurting, Pomodoro. Ngoài ra, lượt tìm kiếm trên TikTok cho "best habit tracker app" đạt 274.617 trong 7 ngày (để dành cho giai đoạn app từ tuần 3). https://contentscout.co/trending/tiktok/education/ · https://tokconnect.com/guides/tiktok-for-saas/
+## Top trend chung (đã lọc brand-safety)
+1. **Vietlott kỷ lục gần 200 tỷ** (#1 Google Trends VN, 5000+), caution. https://dantri.com.vn/kinh-doanh/mot-phu-nu-trung-vietlott-ky-luc-gan-200-ty-dong-20261012090437723.htm
+2. **C1 / Champions League** (2000+, MU vs Atletico, trận 23h–2h giờ VN). https://laodong.vn/bong-da-quoc-te/man-united-doi-mat-thu-thach-lon-truoc-atletico-madrid-1781803.ldo
+3. **Xbox Game Pass tháng 10 (Battlefield 6…)** (US 1000+). https://news.xbox.com/en-us/2026/10/07/xbox-game-pass-october-2026-wave-1/
+4. **Peter Parker vs Miles Morales** (NYCC 2026, US 1000+). https://www.marvel.com/articles/comics/spider-man-comics-nycc-2026-crisis-of-faith-peter-miles-crossover-spider-punk-spider-noir
+5. **Kim Yong-ji cưới bất ngờ kiểu hanok** (VN 100+), caution. https://biz.chosun.com/en/en-entertainment/2026/10/12/XQYBDTWXLFHU7IEA5I7FWAIW7E/
 
-Phụ: **"bá khí"** (slang VI, từ tháng 9/2026), chỉ nên dùng làm giọng khi trả lời comment, không đưa vào script. https://thethao247.vn/441-ba-khi-la-gi-vi-sao-trao-luu-nay-dang-phu-song-tiktok-facebook-c123-d438617.html
+## Trend ngách (từ lần chạy trước, vẫn còn nóng)
+"dự án ma" (VTC 9/10) · The Great Lock In / Winter Arc · "Đang bực mà còn kiếm tui nữa" · StudyTok. Link nằm trong `ingest.md`.
 
-## Script hooks (theo theme-map)
-1. **clip-01 (LIGHT):** thay hook bằng *"Nhóm chat nào cũng có một 'dự án ma'…"*, hoặc chèn vào beat 2 câu "kế hoạch đi Đà Lạt từ 2022". Fact giữ nguyên: 94 kiểm nghiệm, d = 0,65. → cần Hiệp duyệt (sửa script v2).
-2. **clip-03 (DARK, task "làm app" không xong):** *"App của bạn có phải 'dự án ma' không?"* Hợp với khán giả dev.
-3. **clip-06 (DARK, myth 21 ngày):** dùng Winter Arc / Great Lock In làm bối cảnh: *"90 ngày Winter Arc: đủ hay chưa?"* Fact lấy từ HowToLiveBetter mục 4.12, không dùng con số của bài viết về trend.
-4. **clip-08/11 (DARK, ngắt quãng):** caption hoặc on-screen kiểu meme *"Đang focus mà còn ping tui nữa"*, chỉ mượn cấu trúc câu, không dùng âm thanh hay clip gốc.
-5. **CTA comment:** *"Dự án ma của bạn là gì? Viết câu 'nếu… thì…' cho nó."*
+## Đã loại (brand-safety)
+Phim "Căn nhà không mái che" (cốt truyện bạo lực gia đình) · Tòa án Tối cao Mỹ, Ben Shapiro (chính trị) · công văn Cục Điện ảnh (pháp lý) · mái che SVĐ 135.000 chỗ (dự án công, tạm không dùng).
 
-## Ghi chú tuân thủ
-Không sao chép video, âm thanh hay câu thoại nguyên bản. Chỉ mượn ngữ cảnh, tình huống và cụm từ phổ biến. Âm thanh trend: không có dữ liệu (Creative Center bị chặn). Nhạc vẫn do Hiệp thêm trên TikTok.
+## Bridges (trend → khoảnh khắc → bài học → hook)
+| # | Trend | Khoảnh khắc ai cũng gặp | Bài học HowToLiveBetter (đã đối chiếu sách) | Hook VI | Góc | Đích |
+|---|---|---|---|---|---|---|
+| B1 | dự án ma | Nhóm chat bàn đi Đà Lạt từ 2022 | 4.1 nếu… thì… (94 kiểm nghiệm, d = 0,65) | "Nhóm chat nào cũng có một 'dự án ma'." | humor / empathy | **clip-01** (v2.1 draft) |
+| B2 | dự án ma | Startup bàn ở quán cà phê rồi chia tiền nước về | 4.7 chia việc lớn thành việc làm xong trong một lần ngồi | "App của bạn có phải dự án ma?" | story | **clip-03** |
+| B3 | C1 khuya | Thức xem MU đến 2h sáng, mai vẫn đi làm | 2.38 thức khuya thì tối hôm sau ngủ bù, đừng dồn tới cuối tuần (UK Biobank 85.618 người: không bù thì nguy cơ tử vong cao hơn khoảng 15%, thiếu nhiều thì khoảng 42%; bù được thì không thấy tăng) | "Thức xem C1 tới 2h? Tối nay mới là trận quan trọng." | data / humor | **ý tưởng mới** (trụ ngủ) |
+| B4 | Game Pass tháng 10 | "Một trận nữa thôi" lúc 1h sáng | 3.9 tới giờ thì ngủ, không thức vì game / video ngắn | "Battlefield 6 vừa vào Game Pass. Giờ ngủ của bạn thì chưa chắc." | humor / contrarian | **ý tưởng mới**, gần clip-10 (4.15) |
+| B5 | Vietlott 200 tỷ | Cả công ty bàn "trúng thì nghỉ việc" | 5.5 không mua xổ số. Số liệu trong sách là của Trung Quốc (trả thưởng ~50–51%), **cần số liệu Vietlott VN** trước khi dùng | "Chúc mừng chị ấy. Còn mình thì tính kiểu khác." | data / empathy (không chế giễu) | **ý tưởng mới**, caution, cần fact VN |
+| B6 | Winter Arc / Great Lock In | Thử thách 90 ngày, tới ngày 21 thì nản | 4.12 thói quen tính theo tháng (18–254 ngày, bỏ một ngày không reset) | "Winter Arc ngày 21 mà vẫn thấy khó? Bình thường." | contrarian / empathy | **clip-06** |
+| B7 | "Đang bực mà còn kiếm tui" | Đang focus thì bị ping | 3.1 tắt thông báo không cần thiết, để điện thoại ngoài tầm mắt | "Đang focus mà còn ping tui nữa." | humor | **clip-08** |
+
+## Script hooks
+1. **clip-01:** B1 đã nằm trong `script-v2.1-draft.md`, chờ Hiệp chọn v2 hay v2.1.
+2. **clip-06:** dùng B6 làm hook (giữ fact 18–254 ngày).
+3. **clip-08:** dùng B7 làm on-screen, chỉ mượn cấu trúc câu.
+4. **Ý tưởng mới B3 (ngủ bù sau C1):** hợp tuần đầu mùa C1. Theme LIGHT (hành động nên làm). Cần xếp vào theme-map.
+5. **B5:** chỉ làm khi có số liệu tỷ lệ trả thưởng Vietlott chính thức. Mặc định không làm.
+
+## Ghi chú an toàn
+Không dùng hình hay âm thanh của trận đấu, game, phim (bản quyền). Chỉ nhắc tên sự kiện như bối cảnh. Không nêu tên hay ảnh người trúng Vietlott.

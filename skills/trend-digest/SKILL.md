@@ -1,40 +1,56 @@
 ---
 name: Trend digest
 description: >-
-  Use for the daily (or on-demand) trend scan for a short-form content channel:
-  collect current memes, formats, comment phrases, hashtags, topics and sound names
-  in the channel's niche from free public sources, write a dated digest + raw.json,
-  update the rolling ingest library, and propose script hooks for upcoming clips.
+  Use for the daily (or on-demand) trend scan for a "how to live" short-form channel:
+  collect ANY hot trends (VN + global news, entertainment, sports, memes, viral moments,
+  pop culture, tech, social debates, seasonal events) plus niche productivity trends
+  from free public sources, brand-safety filter them, write storytelling bridges from
+  each strong trend to a lesson in the channel's source book, then save a dated
+  digest + raw.json, update the rolling ingest library, and propose script hooks.
 ---
 # Trend digest
 
 ## Inputs (from the channel repo's AGENTS.md)
-- Niche and audiences. For @hi.oneup: productivity, self-improvement, study, office, dev; VN + global.
-- Clip plan / theme map, used to map findings to clips.
+- Source book index (for @hi.oneup: HowToLiveBetter, 34 parts, "phần.mục" ids) and the clip plan / theme map.
+- Audiences: for @hi.oneup, VN gen Z, students, office workers, devs, plus global English-speaking viewers.
 - Output root. Unattended runs write to the box sync dir, never directly to the user's computer.
 
-## Sources (free and public only)
-1. Web search: "<niche> TikTok trend <month year>", "trend TikTok Việt Nam <tháng năm>", "câu nói hot giới trẻ", "<slang> là gì".
-2. X public search tool (`search_posts_all`, last 7 days, min_faves filter). On 429 errors, retry once, then log it in `sources_tried`.
-3. Agent Reach on the box: YouTube search (yt-dlp), RSS, Reddit (r/productivity, r/getdisciplined, r/studytips, r/vozforums when reachable).
-4. TikTok Creative Center (hashtags, songs, VN region) and public TikTok hashtag pages via web fetch. These pages are often JS-only; if so, mark `blocked`, never log in.
-5. Google Trends VN (trends.google.com/trending?geo=VN) via fetch, if it is reachable.
+## Sources (free and public only; record a status for each in raw.json)
+1. **Google Trends RSS** for VN and US/global: `curl -s "https://trends.google.com/trending/rss?geo=VN"` (also `geo=US`). Parse title, approx_traffic, news_item_title, news_item_url.
+2. **X public tools:** `get_trends_by_woeid` (VN 23424984, worldwide 1) and `search_posts_all` (last 7 days, min_faves). On a 429 error, retry once and log it.
+3. **Web search**, broad: "trend TikTok Việt Nam hôm nay", "câu nói hot <tháng năm>", "viral <date>", "<keyword> là gì". Niche: "<niche> TikTok trend <month year>".
+4. **Agent Reach on the box:** YouTube search via yt-dlp (`ytsearch20:<query>`; the old /feed/trending page no longer works), RSS feeds (VnExpress, Tuổi Trẻ, Kenh14 giải trí), Reddit (r/OutOfTheLoop, r/productivity, r/vozforums when reachable).
+5. **TikTok Creative Center and hashtag pages** via fetch. These are often JS-only; if so, mark `blocked`, never log in.
 
-## What to collect
-Each item records: kind (meme / format / phrase / slang / hashtag / topic / sound / search), language, audience, a one-line meaning, ≥1 evidence URL with a date, platforms, which pillar it fits, and candidate clip ids.
+## Collect (aim for 20–40 candidates, then rank)
+Categories: news · entertainment/K-pop/film · sports · memes/slang · viral moments · celebrity · tech/AI · social debates · seasonal/holidays · niche productivity/study/office/dev.
+Each item records: kind, category, language, a one-line summary, traffic or heat signal, ≥1 dated evidence URL, platforms, and a safety verdict.
 
-## Rules
-- Do not copy other creators' video, audio, or verbatim lines. Borrow only situations and common phrases.
-- Respect platform terms of service. No logged-in scraping, no cookie extraction, no paid APIs.
-- Every item needs a citation. Mark anything unverified as such. Drop items without evidence.
-- Trend facts never replace source facts. Scripts keep their factual source (for example HowToLiveBetter).
-- Skip edgy or political slang that clashes with the brand. Words like "bá khí" are for comment replies only.
+## Brand-safety filter (apply before bridging)
+- **Drop:** politics, government or legal disputes, religion, tragedies, deaths, accidents, crime, violence (including domestic violence plots), disasters, illness of a named person, and anything where the lesson would profit from someone's suffering.
+- **Drop:** content that mocks a person, body or region, gambling promotion, sexual content, and medical claims without a source.
+- **Caution (needs approval):** named celebrities (positive or neutral framing only), big public projects (don't criticise), money windfalls (don't mock or envy the winner).
+- Record `safety: ok | caution | drop` with a reason. Dropped items stay in raw.json only.
+
+## Bridges (the core step)
+For each strong trend (ok or caution), write 1–3 bridges:
+`trend → relatable moment (what the viewer actually lives through) → lesson (source book part.item + one-line fact, checked in the book) → VI hook line → angle → target (existing clip id or "new idea")`.
+- Angles: humor · contrarian · empathy · data · story. Vary the angles across the digest.
+- The lesson fact must come from the source book as written. Flag lessons whose data is country-specific (for example China-only numbers) and that need a local equivalent.
+- The hook mentions the trend, the lesson carries the value. Never copy the trend's video, audio or lines.
 
 ## Steps
-1. Read the current `ingest.md` and the theme map (the next 6 clips).
-2. Query the sources. Aim for 15–40 candidate items, then dedupe against ingest by id.
-3. Write `research/trends/YYYY-MM-DD/raw.json`, holding every item plus `sources_tried` with a status for each source.
-4. Write `research/trends/YYYY-MM-DD/digest.md`. Include front-matter, a sources line, the top 5 with links, and a **Script hooks** section: 3–5 concrete ways to weave today's findings into specific upcoming clips (by clip id and theme), each marked as needing approval if it changes an approved script. End with compliance notes.
-5. Update `ingest.md`. Add new rows (first_seen = last_seen = today, count 1). For existing rows, increment count and set last_seen. Update `updated:`.
-6. If running unattended, stop here. The sync step (AGENTS.md "Trend sync") moves the files into the repo. Otherwise, sync, commit as "trends: YYYY-MM-DD digest", and push if allowed.
-7. Report the top 5 with links and any source failures.
+1. Read `ingest.md`, the theme map (next 6–8 clips) and the idea bank.
+2. Collect from all sources. Dedupe against ingest by id.
+3. Apply the safety filter, then rank by heat × audience fit × bridgeability.
+4. Write bridges for the top 5–8 trends and look up each lesson in the source book.
+5. Write `research/trends/YYYY-MM-DD/raw.json` (every item, its safety verdict, `sources_tried`).
+6. Write `research/trends/YYYY-MM-DD/digest.md`:
+   - front-matter and a sources line
+   - top trends (general and niche) with links
+   - a **Bridges** table
+   - **Script hooks**: 3–5 concrete uses for upcoming clips, marked as needing approval if they change an approved script
+   - safety notes
+7. Update `ingest.md`: add or bump rows in each table, including **Bridges**, and refresh `updated:`. Add new-idea bridges to `content/idea-bank.md`.
+8. If running unattended, stop here and let the sync move the files into the repo (AGENTS.md "Trend sync"). Otherwise, sync, commit "trends: YYYY-MM-DD digest", and push if allowed.
+9. Report the top 5 trends, top bridges with links, and any source failures.

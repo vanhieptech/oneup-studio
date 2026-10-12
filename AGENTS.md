@@ -13,13 +13,14 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 |---|---|
 | Luật (id `rule-N` = mục N) | `rules/video-rules.md` |
 | Lịch sử quyết định, góp ý (id `DL-NNN`) | `logs/decision-log.md`, **đọc trước mỗi clip** (rule-33) |
+| Giọng nói của Hiệp | `content/voice-profile.md` |
 | Brand (màu, font, logo, caption) | `brand/brand-tokens.json` (máy đọc), `brand/brand-index.md` (người đọc) |
 | Thứ tự đăng + theme | `content/theme-map.md` |
 | Một clip (id `clip-NN`) | `content/clips/clip-NN-<slug>/`: `script.md`, `shot-list.md`, `beat-sheet.md`, `storyboard/spec.json` |
 | Storyboard | `storyboard/spec.json` là nguồn, PNG là kết quả render. Renderer: `pipeline/storyboard/render.py` |
 | Trend | `research/trends/ingest.md` (thư viện sống) + `research/trends/YYYY-MM-DD/` |
 | Quy trình | `pipeline/pipeline.md` |
-| Skill | `skills/<id>/SKILL.md` (`motion-picks-per-script`, `trend-digest`) |
+| Skill | `skills/<id>/SKILL.md` (`motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT)) |
 
 ## Quy ước
 - Mọi file `.md` (trừ SKILL.md và tài liệu brand gốc) có front-matter `id, type, status, updated, tags`. Khi tạo hoặc đổi tên file, chạy `python3 pipeline/scripts/build-index.py`.
