@@ -6,7 +6,7 @@ updated: 2026-10-13
 version: 3.0
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.0, 13/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.1, 13/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -14,10 +14,10 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 ## A. Định dạng
 1. **Ngôn ngữ:** giọng nói tiếng Việt. Caption tiếng Anh highlight từng từ.
 2. **Giọng:** giọng của Hiệp luôn là giọng thật, thu bằng iPhone. Giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s. Không bao giờ dùng giọng AI cho Hiệp hay bất kỳ người thật nào; khi chưa có bản thu, lời của Hiệp chỉ hiện bằng bubble/chữ. Ngoại lệ duy nhất: giọng AI của **Omi** theo luật 46.
-3. **Lên hình:** có clip lộ mặt, có clip không lộ mặt.
+3. **Lên hình:** series này **chỉ dùng comic + motion graphics**, không quay mặt/cảnh thật (DL-027). Hiệp lên hình bằng nhân vật chibi (luật 43).
 4. **Độ dài:** 55–60s, 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
-5. **Phong cách (xoay vòng):** talking head · chữ trên b-roll tự quay · quay màn hình app OneUp kèm lồng tiếng · POV bàn làm việc / tay · **comic kể chuyện** (luật 42).
-6. **Tỉ lệ hình:** stock ≤30%. Clip không có beat comic: tự quay ≥50%, còn lại là minh hoạ. Clip kể chuyện bằng comic (luật 41–42): beat comic + motion graphics được tính là minh hoạ, tự quay không bắt buộc ≥50% nhưng nên có ít nhất 1 cảnh thật (tay, bàn, màn hình) để clip không "AI-look" *(tạm áp dụng, chờ Hiệp xác nhận, DL-025)*.
+5. **Phong cách (xoay vòng trong khuôn comic):** beat kể chuyện comic (Remotion, luật 42) · beat giải thích motion graphics (HyperFrames) · màn hình app OneUp dựng lại bằng vector/mockup trong motion beat (từ tuần 3). Không talking head, không b-roll tự quay trong series này.
+6. **Tỉ lệ hình:** 100% hình dựng (comic + motion graphics) để đồng nhất. **Không** yêu cầu cảnh tự quay, không trộn cảnh quay thật (DL-027). Cảnh quay thật để dành cho giai đoạn sau hoặc series khác (sẽ có bộ luật riêng).
 
 ## B. Script & nội dung
 7. **Cấu trúc:** mặc định là mạch kể chuyện của luật 41. Khi không có chuyện thật phù hợp thì dùng dạng giải thích: Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay. Dạng nào cũng có câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều". Script khoảng 150–170 từ tiếng Việt (cho 55–60s, luật 4).
@@ -46,7 +46,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 ## D. Âm thanh & tài sản
 21. **Nhạc:** không có nhạc trong file. Hiệp thêm nhạc từ TikTok Commercial Music Library lúc đăng.
 22. **SFX:** được dùng tiếng động nhẹ (click, tick, whoosh nhỏ), chỉ lấy file CC0 (Freesound) hoặc Mixkit. Ghi nguồn từng file vào `assets/sfx/SOURCES.md`.
-23. **Stock:** Pexels + Pixabay + Mixkit. Lọc bỏ ảnh AI, ưu tiên cảnh không nhìn vào camera.
+23. **Stock:** series comic không dùng stock video/ảnh người thật. Nếu cần texture/icon thì Pexels/Pixabay/Mixkit/Phosphor, lọc bỏ ảnh AI, không quá 10% thời lượng.
 24. **Chỉ dùng công cụ miễn phí, không AI trong hình final:** không video AI, không ảnh AI trong video (luật 44). Giọng AI chỉ cho Omi (luật 46). Clip **không** có giọng Omi thì không cần nhãn AI. Clip **có** giọng Omi thì phải gắn nhãn AI theo luật 46.
 
 ## E. Công cụ & pipeline
@@ -59,12 +59,12 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 26. **Transcribe:** whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ cho giọng Hiệp. Câu của Omi lấy thời lượng + envelope từ file TTS (`npm run voice`), kiểm lại bằng ASR. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
 27. **Nơi render:** bản nháp render trên box ảo, bản final render trên Mac I-Am-Focused.
 28. **Mức tự động:** agent làm toàn bộ, Hiệp duyệt 2 lần (script trước khi thu, final trước khi đăng). Duyệt beat sheet là tuỳ chọn.
-29. **Quay:** agent gửi shot list cùng script. Hiệp AirDrop giọng và b-roll vào `footage/inbox/` trên Mac. File footage và render không commit lên git.
+29. **Thu giọng:** agent gửi script kèm danh sách câu cần thu (không có shot list). Hiệp chỉ thu **giọng** bằng iPhone và AirDrop vào `footage/inbox/` trên Mac. File âm thanh và render không commit lên git.
 30. **Cover:** frame hook kèm chữ to.
 
 ## F. Lịch & đăng
 31. **Tần suất:** 3 clip/tuần trong 2 tuần đầu, sau đó đánh giá lại (mục tiêu 3–4 clip/tuần).
-32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover, và dòng nhãn AI nếu có giọng Omi) trong `renders/ready/`, rồi nhắc Hiệp lúc 19:00. Tuần 1–2 (3 clip/tuần, luật 31): thứ Hai, Tư, Sáu. Từ tuần 3 nếu lên 4 clip/tuần: thêm Chủ nhật. Hiệp tự đăng.
+32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover, và dòng nhãn AI nếu có giọng Omi) trong `renders/ready/`. **Không có nhắc đăng** (routine nhắc đã xoá, DL-028): Hiệp tự đăng theo lịch của mình, gợi ý thứ Hai, Tư, Sáu trong 2 tuần đầu.
 
 ## G. Cải tiến liên tục
 33. **Nhật ký quyết định** (`logs/decision-log.md`):
@@ -82,7 +82,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Trước khi viết script, đọc `research/trends/ingest.md` và digest mới nhất.
     - Mỗi script có ít nhất 1 cụm từ hoặc tình huống đang phổ biến, gần gũi với khán giả (ghi id trend trong script), nhưng fact vẫn giữ đúng HowToLiveBetter và nguồn trích dẫn.
     - Không sao chép nội dung của người khác.
-38. **Trend digest hằng ngày:**
+38. **Trend digest hằng ngày (v2, học hỏi, luật 47):**
     - Chạy theo `skills/trend-digest/SKILL.md`, chỉ dùng nguồn miễn phí, công khai, có trích link.
     - Job chạy tự động ghi vào box `/workspace/oneup-studio-sync/research/trends/`. Agent đồng bộ vào repo bằng `pipeline/scripts/sync-trends.sh` mỗi khi có quyền truy cập Mac (xem AGENTS.md).
 
@@ -122,7 +122,15 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng Omi là giọng tổng hợp nghe như người thật → mọi clip có giọng Omi: **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Omi là giọng AI tổng hợp (VieNeu-TTS)." Clip không có Omi nói thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
     - Nếu TTS lỗi: không giả giọng; dùng placeholder có ghi rõ "[PLACEHOLDER – chưa có giọng Omi]" và báo Hiệp.
 
+47. **Trend job biết học (DL-029):**
+    - Mỗi ngày: chấm `novelty`/`saturation`, khử trùng với digest cũ và bridge đã dùng (`pipeline/scripts/trend-learn.py score`), ghi tín hiệu miễn phí (Google Trends traffic, view YouTube qua yt-dlp, X public), mổ xẻ dạng hook đang chạy vào `research/trends/patterns.md` (chỉ lưu khuôn trừu tượng, không chép).
+    - Mỗi bridge có dòng **khác biệt**: "mọi người đang nói" vs "góc của mình" (chuyện thật của Hiệp, cú cà khịa của Omi, fact sách mà số đông bỏ qua, hoặc góc ngược). Góc trùng số đông thì loại.
+    - Top 1–2 ý tưởng có **plan stub** JSON theo schema `video-engine` (`trend-learn.py stub`) và phải qua `npm run validate`. Stub luôn `stub-needs-approval`, chuyện chưa xác nhận để placeholder (luật 41).
+    - Chủ nhật: tổng hợp tuần `research/trends/weekly/YYYY-Www.md` + cập nhật uses/wins của pattern theo số liệu Hiệp báo (không bịa số). Đề xuất đổi luật thì hỏi Hiệp trước.
+    - Vẫn giữ: nguồn miễn phí, lọc brand-safety (luật 39), không đăng/gửi gì.
+
 ## Changelog
+- **v3.1, 13/10/2026:** series chỉ comic + motion, bỏ yêu cầu tự quay (luật 3, 5, 6, 23, 29; DL-027). Bỏ nhắc đăng (luật 32; DL-028). Luật 47 trend job học hỏi, luật 38 trỏ sang skill v2 (DL-029).
 - **v3.0, 13/10/2026:** audit toàn bộ 45 luật (DL-025, DL-026, `logs/rules-audit-2026-10-13.md`). Luật 46 mới (giọng AI Omi, VieNeu-TTS, nhãn AI TikTok). Sửa luật 2, 24 (không còn "cấm mọi giọng AI"), 25 + 45 (vai trò Remotion/HyperFrames/ffmpeg, bỏ trùng), 5, 6, 7, 11, 16, 18, 26, 32 (lịch nhắc khớp 3 clip/tuần), 42 (bỏ trùng luật 11). Sửa lỗi dính dòng changelog.
 - **v2.6, 13/10/2026:** luật 45 (engine video comic `video-engine/`: Remotion cho beat kể chuyện, HyperFrames cho beat giải thích, plan JSON có validate) (DL-024).
 - **v2.5, 13/10/2026:** luật 42 (comic cho beat kể chuyện, motion graphics cho beat giải thích), luật 43 (cách điệu mạnh, chibi), luật 44 (AI image local chỉ để phác). Giọng AI cho Omi: chưa đổi, chờ quyết (research/omi-voice-tts-research-vi.md).

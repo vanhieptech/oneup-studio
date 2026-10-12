@@ -5,6 +5,8 @@ status: draft
 updated: 2026-10-12
 tags: [clip-01]
 ---
+> **Deprecated (DL-027, 13/10/2026):** series chỉ comic + motion, không quay hình. Chỉ giữ phần thu giọng (S-voice) nếu có; các shot quay đã chuyển thành beat comic trong `comic/plan.json` / storyboard.
+
 # Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md
 
 - S1: Mặt nói vào camera, cầm tay hơi rung, câu hook (quay 3 lần)

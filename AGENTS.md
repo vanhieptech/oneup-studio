@@ -16,7 +16,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 | Giọng nói của Hiệp | `content/voice-profile.md` (confirmed) · chuyện thật: `content/story-bank.md` |
 | Brand (màu, font, logo, caption) | `brand/brand-tokens.json` (máy đọc), `brand/brand-index.md` (người đọc) |
 | Thứ tự đăng + theme | `content/theme-map.md` |
-| Một clip (id `clip-NN`) | `content/clips/clip-NN-<slug>/`: `script.md`, `shot-list.md`, `beat-sheet.md`, `storyboard/spec.json` |
+| Một clip (id `clip-NN`) | `content/clips/clip-NN-<slug>/`: `script.md`, `beat-sheet.md`, `comic/plan.json`, `storyboard/spec.json` |
 | Nhân vật (Hiệp, Omi) | `brand/characters/` (rig.py, sheets). Comic: `<clip>/comic/spec.json` → `pipeline/comic/render.py` |
 | Video comic có chuyển động | `video-engine/` (README: setup, schema, lệnh `validate/plan/voice/render/frames`). Giọng Omi: `pipeline/tts/` (rule-46). Ghép beat: `pipeline/scripts/join-beats.sh`. Mẫu tổng hợp: `content/samples/sample-full-w5/`. Profile nhân vật: `video-engine/src/characters/profiles/` |
 | Storyboard | `storyboard/spec.json` là nguồn, PNG là kết quả render. Renderer: `pipeline/storyboard/render.py` |
@@ -34,7 +34,10 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
 3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
 
-## Trend sync (rule-38)
+## Series format (DL-027)
+Series @hi.oneup hiện tại **chỉ comic + motion graphics** (Remotion `video-engine/` + HyperFrames). Không shot list, không b-roll tự quay; Hiệp chỉ thu giọng. Không nhắc đăng (DL-028).
+
+## Trend sync (rule-38, rule-47: skill v2, `research/trends/patterns.md`, `pipeline/scripts/trend-learn.py`)
 Job chạy tự động hằng ngày trên box không xin được quyền trên Mac, nên:
 1. Job chạy `skills/trend-digest`. Repo public nên box có thể `git clone` / `pull` để đọc `ingest.md` mới nhất. Job ghi vào box `/workspace/oneup-studio-sync/research/trends/{YYYY-MM-DD/,ingest.md}`.
 2. Khi agent có quyền truy cập Mac: chạy `tar czf /workspace/oneup-studio-sync.tgz -C /workspace/oneup-studio-sync research` → CopyFromBox tới `/Users/macbook/me/projects/.oneup-sync/trends.tgz` → chạy trên Mac `pipeline/scripts/sync-trends.sh`. Script chỉ thêm các ngày mới, ghi đè `ingest.md` bằng bản trên box, rồi commit và push.

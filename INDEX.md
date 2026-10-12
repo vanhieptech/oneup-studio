@@ -28,7 +28,7 @@ tags: [index, retrieval]
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
-| pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v2) |
+| pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
 | refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | research-character-animation | None | None | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
@@ -39,7 +39,8 @@ tags: [index, retrieval]
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
-| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.0, 13/10/2026) |
+| trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
+| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.1, 13/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
 | skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
@@ -54,7 +55,7 @@ tags: [index, retrieval]
 | rule-2 | Giọng |
 | rule-3 | Lên hình |
 | rule-4 | Độ dài |
-| rule-5 | Phong cách (xoay vòng) |
+| rule-5 | Phong cách (xoay vòng trong khuôn comic) |
 | rule-6 | Tỉ lệ hình |
 | rule-7 | Cấu trúc |
 | rule-8 | CTA |
@@ -78,7 +79,7 @@ tags: [index, retrieval]
 | rule-26 | Transcribe |
 | rule-27 | Nơi render |
 | rule-28 | Mức tự động |
-| rule-29 | Quay |
+| rule-29 | Thu giọng |
 | rule-30 | Cover |
 | rule-31 | Tần suất |
 | rule-32 | Đăng |
@@ -87,7 +88,7 @@ tags: [index, retrieval]
 | rule-35 | Storyboard trước khi duyệt script |
 | rule-36 | Storyboard là tài sản có phiên bản |
 | rule-37 | Script phải dùng trend |
-| rule-38 | Trend digest hằng ngày |
+| rule-38 | Trend digest hằng ngày (v2, học hỏi, luật 47) |
 | rule-39 | Bridge từ trend sang bài học |
 | rule-40 | Polish script (humanizer + voice) |
 | rule-41 | Kể chuyện trước |
@@ -96,6 +97,7 @@ tags: [index, retrieval]
 | rule-44 | AI image local chỉ để phác ý tưởng |
 | rule-45 | Engine video comic (`video-engine/`, vai trò xem luật 25) |
 | rule-46 | Giọng AI của Omi (VieNeu-TTS) |
+| rule-47 | Trend job biết học (DL-029) |
 
 ## Clips
 | id | theme | path | files |

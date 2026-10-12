@@ -157,9 +157,9 @@
    "id": "pipeline",
    "type": "workflow",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-13",
    "path": "pipeline/pipeline.md",
-   "title": "Pipeline sản xuất 1 clip (theo rules v2)"
+   "title": "Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only)"
   },
   {
    "id": "refs",
@@ -242,12 +242,20 @@
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
   {
+   "id": "trends-patterns",
+   "type": "pattern-library",
+   "status": "living",
+   "updated": "2026-10-13",
+   "path": "research/trends/patterns.md",
+   "title": "Hook & format pattern library (rule-47)"
+  },
+  {
    "id": "rules",
    "type": "rules",
    "status": "active",
    "updated": "2026-10-13",
    "path": "rules/video-rules.md",
-   "title": "@hi.oneup: Bộ luật sản xuất video (v3.0, 13/10/2026)"
+   "title": "@hi.oneup: Bộ luật sản xuất video (v3.1, 13/10/2026)"
   },
   {
    "id": "skill.humanizer",
@@ -317,7 +325,7 @@
   },
   {
    "id": "rule-5",
-   "title": "Phong cách (xoay vòng)",
+   "title": "Phong cách (xoay vòng trong khuôn comic)",
    "path": "rules/video-rules.md"
   },
   {
@@ -437,7 +445,7 @@
   },
   {
    "id": "rule-29",
-   "title": "Quay",
+   "title": "Thu giọng",
    "path": "rules/video-rules.md"
   },
   {
@@ -482,7 +490,7 @@
   },
   {
    "id": "rule-38",
-   "title": "Trend digest hằng ngày",
+   "title": "Trend digest hằng ngày (v2, học hỏi, luật 47)",
    "path": "rules/video-rules.md"
   },
   {
@@ -523,6 +531,11 @@
   {
    "id": "rule-46",
    "title": "Giọng AI của Omi (VieNeu-TTS)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-47",
+   "title": "Trend job biết học (DL-029)",
    "path": "rules/video-rules.md"
   }
  ],
