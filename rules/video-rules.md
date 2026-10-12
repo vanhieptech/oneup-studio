@@ -56,7 +56,17 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 31. **Tần suất:** 3 clip/tuần trong 2 tuần đầu, sau đó đánh giá lại (mục tiêu 3–4 clip/tuần).
 32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover) trong `renders/ready/`, rồi nhắc Hiệp lúc 19:00 thứ Hai, Tư, Sáu, Chủ nhật. Hiệp tự đăng.
 
+## G. Cải tiến liên tục
+33. **Nhật ký quyết định** (`logs/decision-log.md`):
+    - Ghi mọi câu hỏi, yêu cầu, góp ý sửa và quyết định của Hiệp, gồm ngày, tóm tắt yêu cầu (giữ nguyên ý), quyết định, luật / file bị ảnh hưởng.
+    - Agent đọc lại log trước khi làm mỗi clip mới.
+    - Góp ý lặp lại từ 2 lần trở lên thì nâng thành luật trong file này hoặc thành skill trong `skills/`, rồi ghi lại việc nâng đó.
+    - Mỗi Chủ nhật có retro tuần trong cùng file: điều tốt, điều cần sửa, chỉ số, luật hay skill đã đổi.
+34. **Chuẩn chất lượng:** mọi hình gửi Hiệp (preview, storyboard, frame, video) phải đạt mức "premium". Agent tự xem và sửa ít nhất 2 vòng trước khi gửi (sau góp ý "xấu quá" ngày 12/10/2026).
+35. **Storyboard trước khi duyệt script:** mỗi clip có storyboard (1 frame 1080×1920 cho mỗi beat, kèm contact sheet) nằm trong `content/clips/NN-slug/storyboard/`, gửi cùng script để Hiệp duyệt.
+
 ## Changelog
+- **v2.1, 12/10/2026:** thêm luật 33 (nhật ký quyết định + retro tuần), luật 34 (chuẩn chất lượng premium), luật 35 (storyboard trước khi duyệt script).
 - **v2, 12/10/2026:**
   - Gộp 21 luật v1 với 20 quyết định đã duyệt.
   - Độ dài đổi từ 30–45s thành 55–60s.

@@ -1,9 +1,11 @@
 # Pipeline sản xuất 1 clip (theo rules v2)
 | # | Bước | Công cụ | Ai làm | Kết quả lưu ở |
 |---|---|---|---|---|
+| 0 | Đọc lại `logs/decision-log.md` (luật 33) | | Agent | |
 | 1 | Chọn ý tưởng + theme | `content/idea-bank.md`, `content/theme-map.md` | Agent | |
 | 2 | Script VI + bản dịch EN + shot list + beat sheet nháp | template trong `content/clips/clip-01-*` | Agent | `content/clips/NN-slug/` |
-| 3 | Duyệt script | Hiệp | Tay | |
+| 2b | Storyboard: 1 frame 1080×1920 mỗi beat + contact sheet, tự xem và sửa ≥2 vòng (luật 34–35) | HTML + headless Chrome (`storyboard/src/gen.py`, `render.sh`, `sheet.py`) | Agent | `content/clips/NN-slug/storyboard/` |
+| 3 | Duyệt script + storyboard | Hiệp | Tay | |
 | 4 | Thu giọng + quay b-roll | iPhone | Hiệp | AirDrop vào `footage/inbox/` |
 | 5 | Làm sạch âm thanh (cắt khoảng lặng >0,6s, −14 LUFS) | `scripts/01-audio-clean.sh` (FFmpeg) | Tự động | `footage/NN-slug/` |
 | 6 | Transcribe, lấy timestamp từng từ | `scripts/02-transcribe.sh` (whisper.cpp large-v3) | Tự động | `captions.vi.json` |
