@@ -30,6 +30,7 @@ tags: [decisions, feedback]
 | DL-018 | 2026-10-12 | Đánh giá blader/humanizer, tạo voice profile, áp lên clip 01 thành bản v2.1 draft | Vendor humanizer (MIT) + skill script-polish + content/voice-profile.md + script-v2.1-draft.md | rule-40 |
 | DL-019 | 2026-10-12 | Trả lời câu hỏi voice profile: bạn/mình, miền Nam + từ đệm, hài 4/5 (cà khịa, đá xéo, nhắc khéo, tinh tế), chen tiếng Anh, không có từ cấm, chuyện thật càng nhiều càng tốt, thích kể chuyện, không có ví dụ "dự án ma" riêng | voice-profile confirmed. Skill script-polish áp dụng. Tạo story-bank | content/voice-profile.md, skills/script-polish, content/story-bank.md |
 | DL-020 | 2026-10-12 | Script phải kể chuyện trước, chỉ dùng chuyện thật. Viết clip 01 v3 draft + storyboard v3 | rule-41. script-v3-draft.md, spec-v3.json → storyboard/v3/ (spec v2 giữ nguyên) | rule-41, clip-01 |
+| DL-021 | 2026-10-12 | Clip kể chuyện minh hoạ kiểu comic, Omi là trợ lý giúp Hiệp. Nghiên cứu công cụ, làm model sheet trước | research/comic-system-research-vi.md. Rig SVG + model sheet Hiệp v0.1, sheet Omi (companion), comic spec + renderer, strip clip-01 b01–b03. ⚠ Mâu thuẫn rule-11 (Omi từ tuần 5): đã báo, chưa đổi luật | brand/characters/, pipeline/comic/, content/clips/clip-01-*/comic/ |
 
 ## Góp ý lặp lại (theo dõi để nâng thành luật)
 | Chủ đề | Số lần | Đã nâng? |

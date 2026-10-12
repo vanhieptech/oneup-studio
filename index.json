@@ -42,6 +42,14 @@
    "title": "@hi.oneup — Brand index cho video"
   },
   {
+   "id": "characters",
+   "type": "brand",
+   "status": "prototype",
+   "updated": "2026-10-12",
+   "path": "brand/characters/README.md",
+   "title": "Characters (prototype v0.1)"
+  },
+  {
    "id": "clip-01.beat-sheet",
    "type": "beat-sheet",
    "status": "draft",
@@ -144,6 +152,14 @@
    "updated": "2026-10-12",
    "path": "refs/README.md",
    "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
+  },
+  {
+   "id": "research.comic-system",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-12",
+   "path": "research/comic-system-research-vi.md",
+   "title": "Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi)"
   },
   {
    "id": "research.motion-layer",
@@ -452,6 +468,7 @@
    "theme": "LIGHT",
    "files": [
     "beat-sheet.md",
+    "comic",
     "script-v2.1-draft.md",
     "script-v3-draft.md",
     "script.md",
@@ -495,6 +512,16 @@
    "id": "asset.template",
    "path": "templates/hyperframes-base/",
    "desc": "HyperFrames 1080x1920 scaffold, local GSAP"
+  },
+  {
+   "id": "asset.characters",
+   "path": "brand/characters/",
+   "desc": "Hiệp rig + model sheets, Omi sheet (prototype v0.1)"
+  },
+  {
+   "id": "tool.comic",
+   "path": "pipeline/comic/render.py",
+   "desc": "Comic strip renderer (comic/spec.json -> strip.png)"
   },
   {
    "id": "tool.storyboard",

@@ -1,0 +1,103 @@
+{
+ "id": "clip-01.comic.v3-b01-03",
+ "clip": "clip-01",
+ "script": "content/clips/clip-01-implementation-intention/script-v3-draft.md",
+ "theme": "LIGHT",
+ "note": "Prototype. Omi as on-screen character conflicts with rule-11 (Omi from week 5). Needs Hiệp decision.",
+ "revisions": [
+  {
+   "rev": 1,
+   "date": "2026-10-12",
+   "note": "First 3-panel strip for v3 beats 1-3",
+   "decision": "DL-021"
+  }
+ ],
+ "caption": {
+  "words": [
+   "Then",
+   "I",
+   "found",
+   "one",
+   "sentence",
+   "that",
+   "works:",
+   "if…",
+   "then…"
+  ],
+  "highlight": 7
+ },
+ "panels": [
+  {
+   "beat": "clip-01.b01",
+   "scene": "desk",
+   "expr": "neutral",
+   "narration": "GOAL: TOEIC 700 · BY NOVEMBER",
+   "bubbles": [
+    {
+     "who": "hiep",
+     "text": "Study plan?<br><b>…tomorrow.</b>",
+     "x": 470,
+     "y": 50,
+     "w": 360,
+     "h": 140,
+     "tail": [
+      -150,
+      60
+     ]
+    }
+   ]
+  },
+  {
+   "beat": "clip-01.b02",
+   "scene": "bed",
+   "expr": "procrastinating",
+   "narration": "EVERY NIGHT. 11:48 PM",
+   "bubbles": [
+    {
+     "who": "hiep",
+     "text": "Eh. <b>Tomorrow.</b>",
+     "x": 420,
+     "y": 70,
+     "w": 320,
+     "h": 100,
+     "tail": [
+      -180,
+      40
+     ]
+    }
+   ],
+   "omi": {
+    "x": 840,
+    "y": 130,
+    "size": 90,
+    "mood": "worry"
+   }
+  },
+  {
+   "beat": "clip-01.b03",
+   "scene": "desk-notebook",
+   "expr": "surprised",
+   "narration": "THEN: ONE SENTENCE",
+   "omi": {
+    "x": 110,
+    "y": 190,
+    "size": 104,
+    "mood": "spark"
+   },
+   "bubbles": [
+    {
+     "who": "omi",
+     "text": "Try one line:<br><b>IF</b> 9pm, laptop closed<br><b>THEN</b> one TOEIC listening.",
+     "x": 200,
+     "y": 70,
+     "w": 470,
+     "h": 176,
+     "tail": [
+      -40,
+      30
+     ]
+    }
+   ]
+  }
+ ]
+}

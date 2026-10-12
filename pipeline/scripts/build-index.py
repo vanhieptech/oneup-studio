@@ -33,6 +33,8 @@ assets = [
  {'id': 'asset.tokens', 'path': 'brand/brand-tokens.json', 'desc': 'Colors/fonts/caption/logo tokens (machine-readable)'},
  {'id': 'asset.sfx', 'path': 'assets/sfx/', 'desc': 'CC0/Mixkit SFX + SOURCES.md'},
  {'id': 'asset.template', 'path': 'templates/hyperframes-base/', 'desc': 'HyperFrames 1080x1920 scaffold, local GSAP'},
+ {'id': 'asset.characters', 'path': 'brand/characters/', 'desc': 'Hiệp rig + model sheets, Omi sheet (prototype v0.1)'},
+ {'id': 'tool.comic', 'path': 'pipeline/comic/render.py', 'desc': 'Comic strip renderer (comic/spec.json -> strip.png)'},
  {'id': 'tool.storyboard', 'path': 'pipeline/storyboard/render.py', 'desc': 'Shared storyboard renderer (spec.json -> PNGs + contact sheet)'},
  {'id': 'tool.sync-trends', 'path': 'pipeline/scripts/sync-trends.sh', 'desc': 'Box -> repo trend sync, commit, push'},
  {'id': 'tool.build-index', 'path': 'pipeline/scripts/build-index.py', 'desc': 'Regenerates this index'},
