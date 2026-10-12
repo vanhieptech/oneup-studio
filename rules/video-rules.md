@@ -3,27 +3,28 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
+version: 3.0
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.0, 13/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
-Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩn.
+Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
 
 ## A. Định dạng
 1. **Ngôn ngữ:** giọng nói tiếng Việt. Caption tiếng Anh highlight từng từ.
-2. **Giọng:** giọng thật của Hiệp, thu bằng iPhone. Không dùng giọng AI. Giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s.
+2. **Giọng:** giọng của Hiệp luôn là giọng thật, thu bằng iPhone. Giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s. Không bao giờ dùng giọng AI cho Hiệp hay bất kỳ người thật nào; khi chưa có bản thu, lời của Hiệp chỉ hiện bằng bubble/chữ. Ngoại lệ duy nhất: giọng AI của **Omi** theo luật 46.
 3. **Lên hình:** có clip lộ mặt, có clip không lộ mặt.
 4. **Độ dài:** 55–60s, 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
-5. **Phong cách (xoay vòng):** talking head · chữ trên b-roll tự quay · quay màn hình app OneUp kèm lồng tiếng · POV bàn làm việc / tay.
-6. **Tỉ lệ hình:** tự quay ≥50%, stock ≤30%, phần còn lại là minh hoạ (diagram, khái niệm động, số liệu, trước/sau).
+5. **Phong cách (xoay vòng):** talking head · chữ trên b-roll tự quay · quay màn hình app OneUp kèm lồng tiếng · POV bàn làm việc / tay · **comic kể chuyện** (luật 42).
+6. **Tỉ lệ hình:** stock ≤30%. Clip không có beat comic: tự quay ≥50%, còn lại là minh hoạ. Clip kể chuyện bằng comic (luật 41–42): beat comic + motion graphics được tính là minh hoạ, tự quay không bắt buộc ≥50% nhưng nên có ít nhất 1 cảnh thật (tay, bàn, màn hình) để clip không "AI-look" *(tạm áp dụng, chờ Hiệp xác nhận, DL-025)*.
 
 ## B. Script & nội dung
-7. **Cấu trúc mặc định:** Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay → câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều" hoặc kể chuyện cá nhân để tránh lặp. Script khoảng 150–170 từ tiếng Việt.
+7. **Cấu trúc:** mặc định là mạch kể chuyện của luật 41. Khi không có chuyện thật phù hợp thì dùng dạng giải thích: Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay. Dạng nào cũng có câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều". Script khoảng 150–170 từ tiếng Việt (cho 55–60s, luật 4).
 8. **CTA:** câu hỏi kéo comment. Từ tuần 3 nhắc OneUp theo luật 11.
 9. **Nhịp đổi hình:** theo nội dung, mỗi cảnh tối đa 8s. Không cắt đều tăm tắp.
 10. **Chủ đề:** không giới hạn (bỏ các mục chỉ áp dụng cho luật / thủ tục Trung Quốc). Nguồn: HowToLiveBetter.
-11. **Lịch đưa app:** tuần 1–2 không có app · tuần 3–4 có màn hình app ngắn · từ tuần 5 có Omi.
+11. **Lịch đưa app:** tuần 1–2 không có app · tuần 3–4 có màn hình app ngắn · từ tuần 5 có Omi (nhân vật comic + giọng luật 46). Validator `video-engine` chặn Omi khi `meta.week < 5`. Bản mẫu nội bộ phải ghi `week ≥ 5` và không đăng.
 12. **Clip đầu tiên:** trụ 1 "Làm ít, xong nhiều", clip 1 (`content/clips/clip-01-implementation-intention/`).
 13. **Ghi nguồn:** HowToLiveBetter (CC BY 4.0, kèm link giấy phép, ghi "đã chuyển thể") chỉ đặt trong caption bài đăng.
 
@@ -34,11 +35,11 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
     - Logo 05-pair-plus đặt nhỏ ở góc trên trái suốt clip. Mọi chữ nằm trong safe-zone TikTok.
     - Chi tiết: `brand/brand-index.md`, `brand/brand-tokens.json`.
 15. **Font:** toàn bộ chữ trên màn hình (tiếng Anh và tiếng Việt) dùng Be Vietnam Pro (OFL, 400/500/600/700, `brand/fonts/`), font được nhúng sẵn, không dùng font hệ thống. Không trộn 2 font trong một dòng. DM Sans (font của app) chưa dùng cho video cho đến khi Hiệp đổi luật.
-16. **Chữ chính trên màn hình:** chỉ tiếng Anh, khớp với caption.
+16. **Chữ chính trên màn hình:** caption và tiêu đề chỉ tiếng Anh, khớp với lời nói, highlight từ khoá. Ngoại lệ: bubble thoại và hộp dẫn chuyện trong beat comic là lời nhân vật nên viết tiếng Việt (giọng luật 41).
 17. **Theme:**
     - Mỗi clip là LIGHT (tích cực) hoặc DARK (mặt trái), xét theo hook. Không quá 2 clip cùng theme liên tiếp. Một clip chỉ một theme.
     - Bảng phân theme: `content/theme-map.md` (clip 1 = LIGHT).
-18. **Minh hoạ:** diagram dùng nét vẽ tay (rough.js / Open Peeps), icon dùng Phosphor (đơn sắc).
+18. **Minh hoạ:** diagram dùng nét vẽ tay (rough.js), icon dùng Phosphor (đơn sắc). Người/nhân vật chỉ dùng rig Hiệp/Omi (luật 43), không dùng Open Peeps cho nhân vật chính.
 19. **Motion:** chọn theo từng script, mỗi beat một hiệu ứng chính, lấy từ catalog awesome-ai-motion (637 effect, xem `refs/README.md`) bằng skill `skills/motion-picks-per-script/SKILL.md`. Ghi vào `logs/effects-log.md` để không lặp.
 20. **Hậu kỳ:** grain phim nhẹ toàn clip. Bố cục lệch, căn trái. Theo checklist anti-AI-look (`research/production-system-research-vi.md` §6).
 
@@ -46,14 +47,16 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 21. **Nhạc:** không có nhạc trong file. Hiệp thêm nhạc từ TikTok Commercial Music Library lúc đăng.
 22. **SFX:** được dùng tiếng động nhẹ (click, tick, whoosh nhỏ), chỉ lấy file CC0 (Freesound) hoặc Mixkit. Ghi nguồn từng file vào `assets/sfx/SOURCES.md`.
 23. **Stock:** Pexels + Pixabay + Mixkit. Lọc bỏ ảnh AI, ưu tiên cảnh không nhìn vào camera.
-24. **Chỉ dùng công cụ miễn phí:** không video AI, không giọng AI, nên không cần nhãn AI.
+24. **Chỉ dùng công cụ miễn phí, không AI trong hình final:** không video AI, không ảnh AI trong video (luật 44). Giọng AI chỉ cho Omi (luật 46). Clip **không** có giọng Omi thì không cần nhãn AI. Clip **có** giọng Omi thì phải gắn nhãn AI theo luật 46.
 
 ## E. Công cụ & pipeline
-25. **Engine:**
-    - HyperFrames (Apache 2.0) + GSAP cài local (không dùng CDN). Manim CE cho cảnh biểu đồ. FFmpeg để ghép và hậu kỳ.
-    - Template: `templates/hyperframes-base/`.
+25. **Engine (vai trò cố định):**
+    - Beat kể chuyện / comic: **Remotion** trong `video-engine/` (chi tiết luật 45).
+    - Beat giải thích / motion graphics: **HyperFrames** (Apache 2.0, cần Node ≥ 22) + GSAP cài local (không CDN), template `templates/hyperframes-base/`. Manim CE cho cảnh biểu đồ.
+    - Giọng Omi: VieNeu-TTS local (luật 46).
+    - Ghép và hậu kỳ: FFmpeg, `pipeline/scripts/join-beats.sh` (xfade giữa beat, chuẩn −14 LUFS). Mỗi engine render file riêng, không trộn trong một lần render.
     - Pipeline: `pipeline/pipeline.md`.
-26. **Transcribe:** whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
+26. **Transcribe:** whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ cho giọng Hiệp. Câu của Omi lấy thời lượng + envelope từ file TTS (`npm run voice`), kiểm lại bằng ASR. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
 27. **Nơi render:** bản nháp render trên box ảo, bản final render trên Mac I-Am-Focused.
 28. **Mức tự động:** agent làm toàn bộ, Hiệp duyệt 2 lần (script trước khi thu, final trước khi đăng). Duyệt beat sheet là tuỳ chọn.
 29. **Quay:** agent gửi shot list cùng script. Hiệp AirDrop giọng và b-roll vào `footage/inbox/` trên Mac. File footage và render không commit lên git.
@@ -61,7 +64,7 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 
 ## F. Lịch & đăng
 31. **Tần suất:** 3 clip/tuần trong 2 tuần đầu, sau đó đánh giá lại (mục tiêu 3–4 clip/tuần).
-32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover) trong `renders/ready/`, rồi nhắc Hiệp lúc 19:00 thứ Hai, Tư, Sáu, Chủ nhật. Hiệp tự đăng.
+32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover, và dòng nhãn AI nếu có giọng Omi) trong `renders/ready/`, rồi nhắc Hiệp lúc 19:00. Tuần 1–2 (3 clip/tuần, luật 31): thứ Hai, Tư, Sáu. Từ tuần 3 nếu lên 4 clip/tuần: thêm Chủ nhật. Hiệp tự đăng.
 
 ## G. Cải tiến liên tục
 33. **Nhật ký quyết định** (`logs/decision-log.md`):
@@ -101,17 +104,28 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 42. **Loại beat quyết định kiểu hình:**
     - Beat kể chuyện → **comic** (nhân vật Hiệp/Omi, panel, bubble), nhân vật luôn có chuyển động (idle thở, chớp mắt, squash-stretch, follow-through).
     - Beat dẫn chứng / giải thích / kiến thức → **motion graphics minh hoạ** (số liệu, sơ đồ, icon), không vẽ comic.
-    - Omi chỉ xuất hiện từ tuần 5 (luật 11 giữ nguyên).
+    - Omi chỉ xuất hiện từ tuần 5 (luật 11).
 43. **Cách điệu mạnh:** chibi đầu to, khối tròn, không góc nhọn, biểu cảm và đạo cụ phóng đại để người xem hiểu ngữ cảnh ngay và thấy vui. Vẫn giữ brand ink/paper 90/8/2 và Be Vietnam Pro. Rig nguồn: `pipeline/characters-v2/`.
 44. **AI image local chỉ để phác ý tưởng:** được dùng model tạo ảnh chạy local để sketch/ideation. Không đưa ảnh AI vào video final; hình final phải vẽ lại bằng rig/vector.
-45. **Engine video comic (`video-engine/`):**
+45. **Engine video comic (`video-engine/`, vai trò xem luật 25):**
     - Beat kể chuyện render bằng `video-engine/` (Remotion + React + TS): nguồn chuẩn là JSON scene plan (`content/clips/<clip>/comic/plan.json`; bản đầu của clip-01 đang ở `video-engine/examples/clip-01-story.json`) hoặc script text theo `src/scenes/textFormat.ts`, validate trước khi render (`npm run validate`).
     - Nhân vật chỉ vẽ bằng rig SVG trong `video-engine/src/characters/` theo character profile. Không AI ảnh/video trong render. LLM chỉ là tuỳ chọn để lập plan, kết quả phải qua validator.
-    - Beat giải thích/motion graphics vẫn dùng HyperFrames (`templates/hyperframes-base`). Không trộn 2 engine trong một lần render, ghép ở bước dựng.
+    - Có giọng Omi: `npm run voice <plan.json>` → `plan.voiced.json` (audio + envelope), rồi mới render. Miệng Omi chạy theo envelope audio thật; Hiệp chưa có bản thu thì chỉ có bubble.
+    - Logo 05-pair-plus (luật 14) và Be Vietnam Pro (luật 15) có sẵn trong composition.
     - Sau mỗi render: `npm run frames` rồi tự soát contact sheet (luật 34) trước khi gửi Hiệp.
 
+46. **Giọng AI của Omi (VieNeu-TTS):**
+    - Chỉ **Omi** được có giọng AI. Engine: VieNeu-TTS v3 Turbo (Apache-2.0), chạy **local** trên CPU/ONNX, miễn phí, không gọi API. Giọng mẫu cố định: preset **"Kim Thanh"** (nữ, miền Nam), khai báo ở `video-engine/src/characters/profiles/omi.json` → `voice`. Đổi preset phải ghi DL.
+    - **Cấm clone giọng** người thật (kể cả Hiệp) và cấm dùng `ref_audio`. Chỉ dùng preset có sẵn của model.
+    - Cảm xúc theo ngữ cảnh: mỗi câu có `emotion` (mặc định lấy theo biểu cảm của Omi lúc đó): neutral · happy · teasing · surprised · sad · focused · confused → tag phi ngôn ngữ ([cười], [thở dài], [hắng giọng]) + tốc độ/cao độ (`pipeline/tts/vieneu_tts.py`). Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh.
+    - Audio cache theo hash (text + preset + emotion), chuẩn loudness rồi ghép −14 LUFS. Không nhạc (luật 21). Kiểm bằng ffprobe (có track audio) và ASR (đúng chữ) trước khi gửi Hiệp.
+    - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng Omi là giọng tổng hợp nghe như người thật → mọi clip có giọng Omi: **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Omi là giọng AI tổng hợp (VieNeu-TTS)." Clip không có Omi nói thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
+    - Nếu TTS lỗi: không giả giọng; dùng placeholder có ghi rõ "[PLACEHOLDER – chưa có giọng Omi]" và báo Hiệp.
+
 ## Changelog
-- **v2.6, 13/10/2026:** luật 45 (engine video comic `video-engine/`: Remotion cho beat kể chuyện, HyperFrames cho beat giải thích, plan JSON có validate) (DL-024).- **v2.5, 13/10/2026:** luật 42 (comic cho beat kể chuyện, motion graphics cho beat giải thích), luật 43 (cách điệu mạnh, chibi), luật 44 (AI image local chỉ để phác). Giọng AI cho Omi: chưa đổi, chờ quyết (research/omi-voice-tts-research-vi.md).
+- **v3.0, 13/10/2026:** audit toàn bộ 45 luật (DL-025, DL-026, `logs/rules-audit-2026-10-13.md`). Luật 46 mới (giọng AI Omi, VieNeu-TTS, nhãn AI TikTok). Sửa luật 2, 24 (không còn "cấm mọi giọng AI"), 25 + 45 (vai trò Remotion/HyperFrames/ffmpeg, bỏ trùng), 5, 6, 7, 11, 16, 18, 26, 32 (lịch nhắc khớp 3 clip/tuần), 42 (bỏ trùng luật 11). Sửa lỗi dính dòng changelog.
+- **v2.6, 13/10/2026:** luật 45 (engine video comic `video-engine/`: Remotion cho beat kể chuyện, HyperFrames cho beat giải thích, plan JSON có validate) (DL-024).
+- **v2.5, 13/10/2026:** luật 42 (comic cho beat kể chuyện, motion graphics cho beat giải thích), luật 43 (cách điệu mạnh, chibi), luật 44 (AI image local chỉ để phác). Giọng AI cho Omi: chưa đổi, chờ quyết (research/omi-voice-tts-research-vi.md).
 - **v2.4, 12/10/2026:** luật 41 (kể chuyện trước, chỉ chuyện thật, voice profile đã xác nhận).
 - **v2.3, 12/10/2026:** luật 39 (bridge trend → bài học, lọc brand-safety), luật 40 (polish script bằng humanizer + voice profile).
 - **v2.2, 12/10/2026:** thêm luật 36 (storyboard theo spec + renderer chung, sửa thay vì tạo lại), luật 37 (script phải đọc trend ingest, có ≥1 cụm từ đang phổ biến), luật 38 (trend digest hằng ngày + sync). Thêm front-matter và id ổn định cho tài liệu.

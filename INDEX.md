@@ -21,23 +21,25 @@ tags: [index, retrieval]
 | clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
 | clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
+| sample-full-w5 | sample | internal (không đăng) | `content/samples/sample-full-w5/README.md` | Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer |
 | story-bank | plan | needs-confirmation | `content/story-bank.md` | Story bank: chuyện thật của Hiệp (rule-41) |
 | theme-map | plan | active | `content/theme-map.md` | Theme map — @hi.oneup (LIGHT / DARK theo tone) |
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
+| rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v2) |
 | refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | research-character-animation | None | None | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.motion-layer | research | reference | `research/motion-layer.md` | @hi.oneup motion layer, based on gongnyang/awesome-ai-motion |
-| research-omi-voice-tts | None | chờ Hiệp quyết (mâu thuẫn luật "không giọng AI") | `research/omi-voice-tts-research-vi.md` | Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026) |
+| research-omi-voice-tts | None | decided (Hiệp chọn A ngày 13/10/2026, DL-025, rule-46) | `research/omi-voice-tts-research-vi.md` | Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026) |
 | research.video-gen | research | reference | `research/oneup-video-gen-research-vi.md` | Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup |
 | research.production-system | research | reference | `research/production-system-research-vi.md` | Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
-| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026) |
+| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.0, 13/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
 | skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
@@ -54,7 +56,7 @@ tags: [index, retrieval]
 | rule-4 | Độ dài |
 | rule-5 | Phong cách (xoay vòng) |
 | rule-6 | Tỉ lệ hình |
-| rule-7 | Cấu trúc mặc định |
+| rule-7 | Cấu trúc |
 | rule-8 | CTA |
 | rule-9 | Nhịp đổi hình |
 | rule-10 | Chủ đề |
@@ -71,8 +73,8 @@ tags: [index, retrieval]
 | rule-21 | Nhạc |
 | rule-22 | SFX |
 | rule-23 | Stock |
-| rule-24 | Chỉ dùng công cụ miễn phí |
-| rule-25 | Engine |
+| rule-24 | Chỉ dùng công cụ miễn phí, không AI trong hình final |
+| rule-25 | Engine (vai trò cố định) |
 | rule-26 | Transcribe |
 | rule-27 | Nơi render |
 | rule-28 | Mức tự động |
@@ -92,7 +94,8 @@ tags: [index, retrieval]
 | rule-42 | Loại beat quyết định kiểu hình |
 | rule-43 | Cách điệu mạnh |
 | rule-44 | AI image local chỉ để phác ý tưởng |
-| rule-45 | Engine video comic (`video-engine/`) |
+| rule-45 | Engine video comic (`video-engine/`, vai trò xem luật 25) |
+| rule-46 | Giọng AI của Omi (VieNeu-TTS) |
 
 ## Clips
 | id | theme | path | files |

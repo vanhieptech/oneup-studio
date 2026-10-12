@@ -1,0 +1,181 @@
+{
+ "version": 1,
+ "id": "sample-full-w5-story",
+ "title": "Sample tổng hợp: beat kể chuyện Hiệp + Omi (giọng AI Omi) — tuần 5+",
+ "meta": {
+  "clip": "sample",
+  "week": 5,
+  "source": "content/samples/sample-full-w5/README.md"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s1-mai-hoc",
+   "beat": "sample.b01",
+   "duration": 7.0,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.05
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.3,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "focused",
+     "actionChanges": [
+      {
+       "at": 0.8,
+       "value": "idle"
+      }
+     ],
+     "expressionChanges": [
+      {
+       "at": 0.8,
+       "value": "happy"
+      },
+      {
+       "at": 2.0,
+       "value": "surprised"
+      },
+      {
+       "at": 4.6,
+       "value": "sad"
+      }
+     ]
+    },
+    {
+     "characterId": "omi",
+     "x": 0.73,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "surprised",
+     "facing": "left",
+     "enter": "pop",
+     "expressionChanges": [
+      {
+       "at": 1.6,
+       "value": "happy"
+      }
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thôi… **mai học** ha.",
+     "start": 0.3,
+     "end": 1.6
+    },
+    {
+     "speaker": "omi",
+     "text": "Ủa, lại **mai học** nữa hả? Ba lần rồi á nha.",
+     "start": 1.7,
+     "end": 6.9,
+     "emotion": "teasing"
+    }
+   ],
+   "caption": {
+    "text": "“Tomorrow” again? That's three times already.",
+    "start": 2.5,
+    "end": 6.95,
+    "highlight": [
+     0
+    ]
+   },
+   "sfx": [],
+   "narration": {
+    "text": "11:48 PM · lần thứ 3 tuần này",
+    "start": 0.1
+   }
+  },
+  {
+   "id": "s2-if-then",
+   "beat": "sample.b02",
+   "duration": 5.8,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "slide",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.3,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "confused",
+     "facing": "right",
+     "expressionChanges": [
+      {
+       "at": 4.2,
+       "value": "happy"
+      }
+     ],
+     "actionChanges": [
+      {
+       "at": 4.2,
+       "value": "reacting"
+      }
+     ]
+    },
+    {
+     "characterId": "omi",
+     "x": 0.72,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused",
+     "facing": "left",
+     "expressionChanges": [
+      {
+       "at": 3.3,
+       "value": "happy"
+      }
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "omi",
+     "text": "Nè: **nếu** chín giờ, **thì** mở sách năm phút. Dễ hông?",
+     "start": 0.3,
+     "end": 4.3
+    },
+    {
+     "speaker": "hiep",
+     "text": "Năm phút hả? **Okay**, chơi luôn.",
+     "start": 4.35,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "IF it's 9 PM, THEN open the book. Just 5 minutes.",
+    "start": 0.6,
+    "end": 5.75,
+    "highlight": [
+     0,
+     4
+    ]
+   },
+   "sfx": []
+  }
+ ]
+}

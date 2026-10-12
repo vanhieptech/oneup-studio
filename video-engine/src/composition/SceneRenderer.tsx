@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame } from "remotion";
 import type { Scene, VideoConfig } from "../validation/schema";
 import type { ProfileRegistry } from "../characters/registry";
 import { getCharacterState } from "../animation/controller";
@@ -57,6 +57,11 @@ export const SceneRenderer: React.FC<{
           const p = proj(ax, Math.max(ay, 420));
           return <DialogueBubble key={i} text={d.text} style={d.style} start={d.start} end={d.end} t={t} anchorX={p.x} anchorY={p.y} side={ax > 540 ? -1 : 1} />;
         })}
+        {scene.dialogue.map((d, i) => d.audio ? (
+          <Sequence key={`a${i}`} from={Math.round(d.start * fps)} durationInFrames={Math.ceil(d.audio.duration * fps) + 2} layout="none">
+            <Audio src={staticFile(d.audio.src)} />
+          </Sequence>
+        ) : null)}
         {scene.narration && <NarrationBox text={scene.narration.text} start={scene.narration.start} end={scene.narration.end ?? scene.duration} t={t} />}
         {scene.caption && <Caption text={scene.caption.text} start={scene.caption.start} end={scene.caption.end ?? scene.duration} t={t} highlight={scene.caption.highlight} top={H * 0.775} theme={theme} />}
       </div>

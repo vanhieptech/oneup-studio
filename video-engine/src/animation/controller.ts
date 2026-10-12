@@ -46,6 +46,14 @@ export function mouthAt(text: string, local: number, dur: number): number {
   return clamp(v) * fade;
 }
 
+/** Lip-sync from the real voice: per-frame RMS envelope (0..1), lightly smoothed, gated. */
+export function mouthFromEnvelope(env: number[], local: number, fps: number): number {
+  const i = Math.floor(local * fps);
+  if (i < 0 || i >= env.length) return 0;
+  const v = 0.25 * (env[i - 1] ?? 0) + 0.5 * env[i] + 0.25 * (env[i + 1] ?? 0);
+  return clamp((v - 0.08) / 0.7);
+}
+
 export function getCharacterState(args: {
   cue: CharacterCue; profile: CharacterProfile; frame: number; fps: number;
   sceneDuration: number; dialogue: Dialogue[];
@@ -63,7 +71,7 @@ export function getCharacterState(args: {
   const speaking = !!line && line.style !== "thought";
   let action = ac.cur;
   if (speaking && action === "idle") action = "talking";
-  const mouthOpen = speaking && line ? mouthAt(line.text, t - line.start, line.end - line.start) : 0;
+  const mouthOpen = speaking && line ? (line.audio?.envelope.length ? mouthFromEnvelope(line.audio.envelope, t - line.start, fps) : mouthAt(line.text, t - line.start, line.end - line.start)) : 0;
 
   // blink: periodic, per-character offset, plus a forced blink at each expression change
   const period = profile.defaults.blinkEverySec;

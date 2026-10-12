@@ -75,6 +75,9 @@ export function validatePlan(input: unknown, registry: ProfileRegistry = default
       if (!ids.has(d.speaker) && d.speaker !== "narrator") err(`${dp}.speaker`, `speaker "${d.speaker}" is not in this scene's characters (${list([...ids]) || "none"})`);
       if (d.end <= d.start) err(dp, `end (${d.end}s) must be after start (${d.start}s)`);
       if (d.end > s.duration + 1e-9) err(`${dp}.end`, `dialogue ends at ${d.end}s but scene is only ${s.duration}s`);
+      const sp = registry.get(d.speaker);
+      if (d.audio && !sp?.voice) err(`${dp}.audio`, `"${d.speaker}" has no synthetic voice profile; only Omi may use the AI voice, real people use their real recorded voice (rule-46)`);
+      if (d.audio && d.start + d.audio.duration > s.duration + 0.05) err(`${dp}.audio`, `voice line (${d.audio.duration}s) runs past scene end (${s.duration}s)`);
     });
     for (const [k, t] of [["caption", s.caption], ["narration", s.narration]] as const) {
       if (t?.end !== undefined && t.end > s.duration + 1e-9) err(`${p}.${k}.end`, `${k} ends at ${t.end}s but scene is only ${s.duration}s`);

@@ -27,6 +27,7 @@ function hashDir(dir: string, h = createHash("sha1")) {
 export async function getBundle(log = console.log): Promise<string> {
   const h = hashDir(path.join(ROOT, "src"));
   hashDir(path.join(ROOT, "examples"), h);
+  hashDir(path.join(ROOT, "public"), h); // voice WAVs live in public/voice
   const key = h.digest("hex").slice(0, 12);
   const out = path.join(ROOT, ".bundle-cache", key);
   if (existsSync(path.join(out, "index.html"))) { log(`bundle: reuse ${path.relative(ROOT, out)}`); return out; }
@@ -46,10 +47,12 @@ export async function renderPlan(plan: VideoPlan, outFile: string, opts: { serve
   mkdirSync(path.dirname(path.resolve(outFile)), { recursive: true });
   let last = -1;
   await renderMedia({
-    serveUrl, composition, inputProps, codec: "h264", crf: 18, pixelFormat: "yuv420p", muted: true,
+    serveUrl, composition, inputProps, codec: "h264", crf: 18, pixelFormat: "yuv420p", muted: !hasAudio(plan), audioCodec: "aac", audioBitrate: "192k",
     outputLocation: outFile, browserExecutable, concurrency: opts.concurrency ?? null,
     onProgress: ({ progress }) => { const p = Math.floor(progress * 10); if (p !== last) { last = p; log(`render ${plan.id}: ${p * 10}%`); } },
   });
   if (!existsSync(outFile) || statSync(outFile).size < 1000) throw new Error(`render finished but ${outFile} is missing or empty`);
   return { outFile, frames: composition.durationInFrames, fps: composition.fps, width: composition.width, height: composition.height };
 }
+
+export const hasAudio = (plan: VideoPlan) => plan.scenes.some((s) => s.dialogue.some((d) => d.audio));

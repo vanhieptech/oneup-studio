@@ -12,7 +12,8 @@
     "validate": "tsx src/cli.ts validate",
     "plan": "tsx src/cli.ts plan",
     "render": "tsx src/cli.ts render",
-    "frames": "tsx src/cli.ts frames"
+    "frames": "tsx src/cli.ts frames",
+    "voice": "tsx src/cli.ts voice"
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.535",

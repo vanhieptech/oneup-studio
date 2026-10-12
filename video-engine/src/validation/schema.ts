@@ -46,6 +46,10 @@ export const DialogueSchema = z.object({
   start: seconds,
   end: seconds,
   style: z.enum(["speech", "thought", "shout"]).default("speech"),
+  /** Voice emotion for the TTS step (rule-46). Defaults to the speaker's current expression. */
+  emotion: z.string().optional(),
+  /** Filled by `npm run voice` (VieNeu-TTS, Omi only). src is relative to public/. */
+  audio: z.object({ src: nonEmpty, duration: z.number().positive(), envelope: z.array(z.number().min(0).max(1)).default([]), engine: z.string().optional() }).optional(),
 });
 
 export const SceneSchema = z.object({
@@ -104,6 +108,8 @@ export const CharacterProfileSchema = z.object({
   actions: z.array(z.enum(ACTIONS)).min(1),
   defaults: z.object({ expression: z.enum(EXPRESSIONS), pose: z.enum(POSES), action: z.enum(ACTIONS), blinkEverySec: z.number().positive() }),
   availableFromWeek: z.number().int().positive().optional(),
+  /** Synthetic voice. Only AI characters may have one (rule-46): never a real person, never cloned. */
+  voice: z.object({ engine: z.literal("vieneu-tts"), preset: nonEmpty, synthetic: z.literal(true) }).optional(),
   assets: z.array(z.string()).default([]),
   notes: z.string().optional(),
 });

@@ -26,10 +26,10 @@ Triết lý: **ink + paper = brand**. Hue chỉ dùng cho ngữ nghĩa, không b
 
 - Tỷ lệ: ~90% neutral · ~8% CTA (ink/paper) · ~2% hue semantic.
 - Cấm: tím "AI", neon/glow, cream + terracotta, teal làm brand, cầu vồng, cặp #000/#FFF thuần, confetti, emoji icon, shadow nhiều lớp.
-- Đề xuất video: **dark làm mặc định** cho text-over-b-roll (ink #111111 + chữ paper), light cho cảnh desk/app.
+- Đề xuất video (cũ, đã thay bằng luật 17: theme LIGHT/DARK theo tone của clip): **dark làm mặc định** cho text-over-b-roll (ink #111111 + chữ paper), light cho cảnh desk/app.
 
 ## 2. Caption word-by-word (đề xuất)
-- Chữ chưa đọc: muted (#A3A3A0 trên nền tối / #6B6B6B trên nền sáng), DM Sans 500, 76px.
+- Chữ chưa đọc: muted (#A3A3A0 trên nền tối / #6B6B6B trên nền sáng), **Be Vietnam Pro** 500 (luật 15; ghi chú cũ "DM Sans" đã bỏ, audit 13/10/2026).
 - Từ đang đọc: **paper #F7F7F5, weight 800 + gạch chân 8px** — nhấn bằng hình/độ đậm, không đổi hue.
 - Từ khoá: pill paper (#F7F7F5 nền, chữ #111111, radius 14) — đúng "paper button on ink".
 - Xanh success chỉ cho beat "done/+1". Không bao giờ dùng đỏ cho skip.
@@ -73,7 +73,7 @@ Form (tăng dần theo Bond): **seed** (mặt trơn) → **companion** (+ "tai" 
 
 ## 6. Xung đột cần sửa
 1. `clip-01-implementation-intention.md` dòng 51 "No logo required" ↔ rule 7 (logo nhỏ) → **phải thêm logo nhỏ** 05-pair-plus góc trên-trái.
-2. `hi-oneup-video-rules.md` rule 7 ghi "assets needed from Hiệp" → nay đã có màu, font (DM Sans), logo; chỉ cần cập nhật trỏ về file này.
+2. ~~rule 7 cũ "assets needed from Hiệp"~~ → đã xử lý trong rules v2 (font video là Be Vietnam Pro, không phải DM Sans).
 3. Rule 19 (motion từ awesome-ai-motion) phải lọc theo MASTER §6: không confetti, không glow/neon, không nảy mạnh — ưu tiên ease-out, crossfade, spring nhẹ.
 4. Phong cách "app screen recording" trong rule 5 chỉ được dùng từ tuần 3.
 

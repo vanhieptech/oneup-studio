@@ -2,11 +2,11 @@
 id: research-omi-voice-tts
 date: 2026-10-13
 tags: [omi, voice, tts]
-status: chờ Hiệp quyết (mâu thuẫn luật "không giọng AI")
+status: decided (Hiệp chọn A ngày 13/10/2026, DL-025, rule-46)
 ---
 # Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026)
 
-> ⚠ Luật hiện tại: chỉ dùng công cụ miễn phí, **không giọng AI**. Hiệp muốn Omi có giọng cảm xúc. File này chỉ đưa lựa chọn, **chưa đổi luật**.
+> ✅ 13/10/2026: Hiệp chọn **A** (DL-025). Đã thành luật 46. Cài thực tế: `pip install vieneu` + `onnxruntime==1.22.1` (bản 1.31 lỗi "External data path escapes model directory" với cache HuggingFace). Preset Omi: "Kim Thanh" (nữ, miền Nam).
 
 | Lựa chọn | License | Chất lượng tiếng Việt / cảm xúc | Chạy trên Mac M-series | Ghi chú |
 |---|---|---|---|---|

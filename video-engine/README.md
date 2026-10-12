@@ -110,10 +110,21 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 ### LLM (tuỳ chọn)
 `LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=qwen2.5 npm run plan -- script.txt --llm`. Kết quả LLM phải qua cùng validator. Nếu lỗi mạng, JSON hỏng hoặc plan không hợp lệ thì tự quay về rule-based và ghi rõ trong log. Không cài SDK của hãng nào.
 
+## Giọng Omi (luật 46) <a name="voice"></a>
+Cài một lần (box/Mac, CPU, miễn phí, không API):
+```bash
+python3 -m venv /workspace/tts-venv
+/workspace/tts-venv/bin/pip install vieneu "onnxruntime==1.22.1"   # 1.31 lỗi external-data với cache HF
+export VIENEU_PYTHON=/workspace/tts-venv/bin/python                  # mặc định là đường dẫn này
+```
+Luồng: `npm run voice -- plan.json` → với mỗi câu của nhân vật có `voice` trong profile (chỉ Omi), gọi `pipeline/tts/vieneu_tts.py` (preset "Kim Thanh", tag cảm xúc + tempo/pitch theo `emotion`, cắt lặng, loudnorm) → `public/voice/<hash>.wav` + `.json` (duration, envelope theo frame) → ghi `plan.voiced.json` (điền `dialogue[].audio`, kéo dài `end` nếu cần) và validate lại. `npm run render -- plan.voiced.json` sẽ tự bật audio (AAC 192k). Validator chặn audio gắn vào người thật. Clip có giọng Omi phải bật nhãn AI khi đăng.
+
+Mẫu đầy đủ (comic + giọng Omi + HyperFrames explainer + ghép): `content/samples/sample-full-w5/README.md`.
+
 ## HyperFrames ở đâu (ranh giới)
 - **Remotion = engine chính cho beat kể chuyện (comic, luật 42).** Nhân vật là component React dùng lại được, state theo frame, test được bằng vitest.
 - **HyperFrames (`templates/hyperframes-base`) giữ cho beat giải thích/motion graphics** (số liệu, sơ đồ, GSAP timeline), như luật 42 và pipeline cũ.
-- Không trộn hai engine trong một lần render. Mỗi engine xuất MP4 1080×1920 30fps riêng, ghép ở bước dựng (`ffmpeg concat`/NLE). Browser capture không cần cho render thường; `pipeline/characters-v2/render.js` (puppeteer) chỉ còn là công cụ thử rig cũ.
+- Không trộn hai engine trong một lần render. Mỗi engine xuất MP4 1080×1920 30fps riêng, ghép ở bước dựng bằng `pipeline/scripts/join-beats.sh` (xfade + −14 LUFS). HyperFrames CLI cần Node ≥ 22 (box: `/workspace/tools/node-v22.20.0-linux-x64/bin`). Browser capture không cần cho render thường; `pipeline/characters-v2/render.js` (puppeteer) chỉ còn là công cụ thử rig cũ.
 
 ## Giấy phép
 - **Remotion** dùng [Remotion License](https://www.remotion.dev/license): **miễn phí cho cá nhân và công ty ≤ 3 người**. Công ty lớn hơn cần Company License. @hi.oneup hiện là cá nhân nên dùng miễn phí. Nếu sau này OneUp có > 3 nhân sự thì phải xem lại.
@@ -121,7 +132,9 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 
 ## Giới hạn đã biết
 - Hiệp vẫn là avatar generic (tóc/kính/quần áo chưa xác nhận).
-- `sfx` và `narration` mới là cue dữ liệu, chưa mix âm thanh (video không nhạc theo yêu cầu). Chưa có voice/lip-sync theo audio thật, nhép miệng chỉ theo nhịp văn bản.
+- `sfx` mới là cue dữ liệu, chưa mix. Giọng: chỉ Omi có audio (VieNeu-TTS, luật 46), miệng Omi theo envelope audio thật. Hiệp chưa có bản thu nên miệng Hiệp vẫn nhép theo nhịp chữ.
+- Không có lớp grain phim (luật 20) trong engine; comic dùng chấm nền. Thêm grain ở bước ghép nếu Hiệp muốn.
+- VieNeu không tất định (sampling); tính lặp lại nhờ cache theo hash, xoá `public/voice/<hash>.*` để tạo lại.
 - `facing: "left"` lật cả rig, nên dấu "?" của biểu cảm confused cũng bị lật.
 - Background mới có 5 bộ (paper, ink, desk, bed, grid), props cố định (chưa có điện thoại cầm tay, sách...).
 - Bubble tự đặt trên đầu speaker. Hai bubble cùng lúc của hai người đứng gần có thể chồng nhau, cần chỉnh `x` trong plan.

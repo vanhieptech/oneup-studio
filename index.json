@@ -98,6 +98,14 @@
    "title": "Idea bank"
   },
   {
+   "id": "sample-full-w5",
+   "type": "sample",
+   "status": "internal (không đăng)",
+   "updated": "2026-10-13",
+   "path": "content/samples/sample-full-w5/README.md",
+   "title": "Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer"
+  },
+  {
    "id": "story-bank",
    "type": "plan",
    "status": "needs-confirmation",
@@ -125,7 +133,7 @@
    "id": "decision-log",
    "type": "log",
    "status": "living",
-   "updated": "2026-10-12",
+   "updated": "2026-10-13",
    "path": "logs/decision-log.md",
    "title": "Nhật ký quyết định: @hi.oneup (luật 33)"
   },
@@ -136,6 +144,14 @@
    "updated": "2026-10-12",
    "path": "logs/effects-log.md",
    "title": "Effects log"
+  },
+  {
+   "id": "rules-audit-2026-10-13",
+   "type": "log",
+   "status": "done",
+   "updated": "2026-10-13",
+   "path": "logs/rules-audit-2026-10-13.md",
+   "title": "Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0)"
   },
   {
    "id": "pipeline",
@@ -180,7 +196,7 @@
   {
    "id": "research-omi-voice-tts",
    "type": null,
-   "status": "chờ Hiệp quyết (mâu thuẫn luật \"không giọng AI\")",
+   "status": "decided (Hiệp chọn A ngày 13/10/2026, DL-025, rule-46)",
    "updated": null,
    "path": "research/omi-voice-tts-research-vi.md",
    "title": "Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026)"
@@ -231,7 +247,7 @@
    "status": "active",
    "updated": "2026-10-13",
    "path": "rules/video-rules.md",
-   "title": "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
+   "title": "@hi.oneup: Bộ luật sản xuất video (v3.0, 13/10/2026)"
   },
   {
    "id": "skill.humanizer",
@@ -311,7 +327,7 @@
   },
   {
    "id": "rule-7",
-   "title": "Cấu trúc mặc định",
+   "title": "Cấu trúc",
    "path": "rules/video-rules.md"
   },
   {
@@ -396,12 +412,12 @@
   },
   {
    "id": "rule-24",
-   "title": "Chỉ dùng công cụ miễn phí",
+   "title": "Chỉ dùng công cụ miễn phí, không AI trong hình final",
    "path": "rules/video-rules.md"
   },
   {
    "id": "rule-25",
-   "title": "Engine",
+   "title": "Engine (vai trò cố định)",
    "path": "rules/video-rules.md"
   },
   {
@@ -501,7 +517,12 @@
   },
   {
    "id": "rule-45",
-   "title": "Engine video comic (`video-engine/`)",
+   "title": "Engine video comic (`video-engine/`, vai trò xem luật 25)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-46",
+   "title": "Giọng AI của Omi (VieNeu-TTS)",
    "path": "rules/video-rules.md"
   }
  ],

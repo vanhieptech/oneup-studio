@@ -32,5 +32,10 @@ Hiệp xác nhận ngày 2026-10-12 (DL-019). Skill `script-polish` áp dụng f
 | "Việc bạn hông thật sự muốn thì viết cỡ nào cũng vậy." | Từ đệm ở cuối mọi câu ("nha… nha… nha") |
 | "Deadline hông có thì tự đặt nha." (chen tiếng Anh để nhấn ý) | "Let's lock in and be productive guys!" (cả câu tiếng Anh) |
 
+## 3b. Giọng Omi (luật 46, từ tuần 5)
+- Giọng AI tổng hợp VieNeu-TTS preset "Kim Thanh" (nữ, miền Nam). Không clone giọng ai.
+- Omi gọi người xem/Hiệp là **"bạn"**, câu ngắn, từ đệm nha/á/hông/nè, cà khịa nhẹ kiểu bạn thân ("Ba lần rồi á nha."), chen 1 từ tiếng Anh khi cần.
+- Cảm xúc ghi theo từng câu (`emotion`): teasing/happy khi trêu, focused khi chỉ cách, sad/[thở dài] khi đồng cảm. Không chọc người xem.
+
 ## 4. Mẫu thật
 _Chưa có. Khi Hiệp gửi ghi âm 1 phút, đặt link hoặc transcript ở đây._

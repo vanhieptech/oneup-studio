@@ -4,6 +4,7 @@
  *   validate <plan.json|script.txt>...            validate only (fast, no browser)
  *   plan <script.txt> [--out plan.json] [--llm]   script → JSON scene plan (rule-based unless --llm + env configured)
  *   render <plan.json|script.txt>... [--out-dir out] [--llm]   validate all, then render each to MP4 (one shared bundle)
+ *   voice <plan.json> [--out plan.voiced.json]    synthesize Omi lines with local VieNeu-TTS (rule-46), fill dialogue.audio
  *   frames <video.mp4> [--every 1] [--out dir]    extract frames + contact sheet (needs ffmpeg) for visual QA
  */
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -12,6 +13,8 @@ import path from "node:path";
 import { validatePlan, formatIssues } from "./validation/validate";
 import { getPlanner, planWithFallback } from "./providers/llm";
 import { getBundle, renderPlan } from "./rendering/render";
+import { voicePlan } from "./voice/voice";
+import { validatePlan as revalidate } from "./validation/validate";
 import type { VideoPlan } from "./validation/schema";
 
 const args = process.argv.slice(2);
@@ -59,6 +62,15 @@ async function main() {
   if (bad) { console.error(`\n${bad} file(s) invalid — nothing rendered.`); process.exit(1); }
 
   if (cmd === "validate") return;
+  if (cmd === "voice") {
+    const voiced = voicePlan(loaded[0].plan!);
+    const r = revalidate(voiced);
+    if (!r.ok) { console.error(formatIssues(r.issues)); process.exit(1); }
+    const out = flag("--out", files[0].replace(/\.json$/, "") + ".voiced.json")!;
+    writeFileSync(out, JSON.stringify(voiced, null, 1) + "\n");
+    console.log(`voiced plan → ${out}`);
+    return;
+  }
   if (cmd === "plan") {
     const out = flag("--out");
     const json = JSON.stringify(loaded[0].plan, null, 2);

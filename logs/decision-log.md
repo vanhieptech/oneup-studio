@@ -2,7 +2,7 @@
 id: decision-log
 type: log
 status: living
-updated: 2026-10-12
+updated: 2026-10-13
 tags: [decisions, feedback]
 ---
 # Nhật ký quyết định: @hi.oneup (luật 33)
@@ -34,6 +34,8 @@ tags: [decisions, feedback]
 | DL-022 | 2026-10-13 | Trả lời 6 câu hỏi nhân vật: cute/bo tròn/liquid; Omi từ tuần 5; Omi có giọng cảm xúc; comic chỉ cho beat kể chuyện, còn lại motion minh hoạ; cách điệu mạnh; cho AI image local để phác | Research hoạt hoạ (GSAP + SVG gooey + blob morph), rig v2 chibi, sheet + motion test 7s. Luật 42–44. Luật 11 giữ | rule-42, rule-43, rule-44, research/character-animation-research-vi.md, brand/characters/v2/ |
 | DL-023 | 2026-10-13 | Giọng AI cảm xúc cho Omi (mâu thuẫn luật "không giọng AI") | Research TTS local tiếng Việt, đề xuất A/B/C (VieNeu-TTS Apache-2.0 đứng đầu). **Chưa đổi luật, chờ Hiệp chọn** | research/omi-voice-tts-research-vi.md |
 | DL-024 | 2026-10-13 | Prompt hệ thống: dựng hệ thống tự động tạo video nhân vật comic (Remotion + React + TS, HyperFrames chỉ khi hợp lý, LLM tuỳ chọn, không AI ảnh/video, test + README) | `video-engine/`: schema zod + validator, profile Hiệp/Omi, rig SVG, state controller tất định, composition nhiều cảnh, planner rule-based + interface LLM OpenAI-compatible (fallback), CLI validate/plan/render/frames, 34 test. Mẫu clip-01 b01–b03 + debugging-story. Remotion license: miễn phí cho cá nhân/≤3 người. Sửa render.js bỏ phụ thuộc /tmp/pp | rule-45, video-engine/README.md |
+| DL-025 | 2026-10-13 | Chọn giọng Omi: **A** (VieNeu-TTS). "Kiểm tra hoàn thiện rules đã có từ trước chưa" | Luật 46 (chỉ Omi có giọng AI, VieNeu local, preset "Kim Thanh", không clone, emotion theo câu, nhãn AI TikTok khi có giọng Omi). Audit 45 luật → rules v3.0: sửa luật 2, 5, 6 (tạm, chờ xác nhận), 7, 11, 16, 18, 24, 25+45, 26, 32, 42; sửa brand-index, pipeline, research TTS, voice-profile | rule-46, rules v3.0, logs/rules-audit-2026-10-13.md |
+| DL-026 | 2026-10-13 | "Kết hợp toàn bộ và tạo 1 video sample một phân cảnh cho tôi xem" | Sample 15,5s tuần 5+: comic Hiệp + Omi (Omi có giọng, Hiệp chỉ bubble), caption EN highlight, xfade sang explainer HyperFrames If → Then. Thêm `npm run voice`, lip-sync theo envelope, audio trong render, logo trong composition, `join-beats.sh`, 7 test | content/samples/sample-full-w5/, video-engine/src/voice/, pipeline/tts/, pipeline/scripts/join-beats.sh |
 
 ## Góp ý lặp lại (theo dõi để nâng thành luật)
 | Chủ đề | Số lần | Đã nâng? |

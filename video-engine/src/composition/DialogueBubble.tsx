@@ -28,7 +28,7 @@ export const DialogueBubble: React.FC<{
         lineHeight: 1.22, textWrap: "balance" as React.CSSProperties["textWrap"], color: BRAND.ink, textAlign: "center", boxShadow: `10px 12px 0 ${BRAND.ink}`, letterSpacing: -0.5,
         fontStyle: style === "thought" ? "italic" : "normal",
       }}>
-        {parts.map((p, i) => p.startsWith("**") ? <b key={i} style={{ fontWeight: 800, background: BRAND.ink, color: BRAND.paper, borderRadius: 12, padding: "0 10px" }}>{p.slice(2, -2)}</b> : <span key={i}>{p}</span>)}
+        {parts.map((p, i) => p.startsWith("**") ? <b key={i} style={{ fontWeight: 700, background: BRAND.ink, color: BRAND.paper, borderRadius: 12, padding: "0 10px", whiteSpace: "nowrap" }}>{p.slice(2, -2)}</b> : <span key={i}>{p}</span>)}
       </div>
       <svg width={W} height={80} style={{ position: "absolute", left: 0, top: "100%", marginTop: -border - 2, overflow: "visible" }}>
         {style === "thought" ? (

@@ -45,7 +45,7 @@ export const NarrationBox: React.FC<{ text: string; start: number; end: number; 
   const out = clamp((end - t) / 0.2);
   return (
     <div style={{
-      position: "absolute", left: 76, top: 150, maxWidth: 900, background: BRAND.ink, color: BRAND.paper,
+      position: "absolute", left: 160, top: 66, maxWidth: 900, background: BRAND.ink, color: BRAND.paper,
       fontFamily: FONT_FAMILY, fontWeight: 700, fontSize: 36, letterSpacing: 1.5, textTransform: "uppercase",
       padding: "18px 30px 22px", borderRadius: 22, transform: `translateX(${(1 - k) * -80}px) rotate(-1.5deg)`, opacity: out * progress(t, start, start + 0.12),
       boxShadow: `8px 8px 0 ${BRAND.soft}`,

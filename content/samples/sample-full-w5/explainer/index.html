@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=1080, height=1920" />
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
+#root{position:relative;width:1080px;height:1920px;font-family:"BVP";color:#111}
+#grain{position:absolute;inset:0;background-image:radial-gradient(#11111110 1.2px,transparent 1.2px);background-size:22px 22px}
+#logo{position:absolute;left:64px;top:60px;width:72px;height:72px}
+#kicker{position:absolute;left:96px;top:250px;font-size:40px;font-weight:700;letter-spacing:3px;text-transform:uppercase;opacity:.55}
+#title{position:absolute;left:92px;top:310px;font-size:118px;font-weight:700;letter-spacing:-4px;line-height:1.02}
+.card{position:absolute;left:96px;width:888px;height:330px;border:8px solid #111;border-radius:48px;background:#F7F7F5;box-shadow:14px 16px 0 #111;display:flex;align-items:center;padding:0 56px;gap:36px}
+.card svg{flex-shrink:0}
+#ifc{top:640px;transform:rotate(-1.2deg)}
+#thenc{top:1230px;transform:rotate(1deg)}
+.tag{font-size:64px;font-weight:700;background:#111;color:#F7F7F5;border-radius:26px;padding:6px 30px 14px}
+.big{white-space:nowrap;font-size:80px;font-weight:700;letter-spacing:-3px}
+.small{white-space:nowrap;font-size:38px;font-weight:400;opacity:.7;margin-top:2px}
+#arrow{position:absolute;left:470px;top:975px}
+#plus{position:absolute;left:880px;top:1170px;width:150px;height:150px;border-radius:75px;background:#1F9D55;color:#F7F7F5;font-size:72px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:8px 10px 0 #111}
+#foot{position:absolute;left:96px;top:1660px;font-size:46px;font-weight:700;line-height:1.25}
+#foot b{border-bottom:8px solid #111}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="3.0" data-width="1080" data-height="1920">
+  <div id="grain"></div>
+  <img id="logo" src="logo.svg" />
+  <div id="kicker" class="clip" data-start="0" data-duration="3.0" data-track-index="0">Implementation intention</div>
+  <div id="title" class="clip" data-start="0" data-duration="3.0" data-track-index="1">If → Then</div>
+  <div id="ifc" class="card clip" data-start="0" data-duration="3.0" data-track-index="2">
+    <span class="tag">IF</span>
+    <svg width="150" height="150" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#111" stroke-width="7"/><path id="hand" d="M50 50 L50 22" stroke="#111" stroke-width="7" stroke-linecap="round"/><path d="M50 50 L68 58" stroke="#111" stroke-width="7" stroke-linecap="round"/></svg>
+    <div><div class="big">9:00 PM</div><div class="small">a cue you already have</div></div>
+  </div>
+  <svg id="arrow" class="clip" data-start="0" data-duration="3.0" data-track-index="3" width="140" height="240" viewBox="0 0 140 240"><path id="arrowPath" d="M70 8 C 58 70, 84 130, 70 200 M40 168 L70 214 L102 170" fill="none" stroke="#111" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div id="thenc" class="card clip" data-start="0" data-duration="3.0" data-track-index="4">
+    <span class="tag">THEN</span>
+    <svg width="150" height="150" viewBox="0 0 100 100"><path d="M10 24 Q30 16 50 26 Q70 16 90 24 V82 Q70 74 50 84 Q30 74 10 82 Z" fill="none" stroke="#111" stroke-width="7" stroke-linejoin="round"/><path d="M50 26 V84" stroke="#111" stroke-width="7"/></svg>
+    <div><div class="big">5 min</div><div class="small">open the book</div></div>
+  </div>
+  <div id="plus" class="clip" data-start="0" data-duration="3.0" data-track-index="5">+1</div>
+  <div id="foot" class="clip" data-start="0" data-duration="3.0" data-track-index="6">Decide <b>when</b> and <b>where</b> before. Not “tomorrow”.</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const ap = document.getElementById("arrowPath"); const L = ap.getTotalLength();
+gsap.set(ap,{strokeDasharray:L,strokeDashoffset:L});
+tl.from("#kicker",{opacity:0,x:-40,duration:.35,ease:"power3.out"},0.05)
+  .from("#title",{opacity:0,y:60,duration:.5,ease:"back.out(1.6)"},0.1)
+  .from("#ifc",{opacity:0,x:-120,rotate:-6,duration:.55,ease:"back.out(1.5)"},0.35)
+  .fromTo("#hand",{rotate:-120,transformOrigin:"50px 50px"},{rotate:0,duration:.7,ease:"power2.inOut"},0.55)
+  .fromTo("#arrow",{opacity:0},{opacity:1,duration:.05,immediateRender:true},0.95).to(ap,{strokeDashoffset:0,duration:.5,ease:"power2.inOut"},0.95)
+  .from("#thenc",{opacity:0,x:120,rotate:6,duration:.55,ease:"back.out(1.5)"},1.3)
+  .from("#plus",{scale:0,rotate:-30,duration:.45,ease:"back.out(2.4)"},1.95)
+  .from("#foot",{opacity:0,y:30,duration:.4,ease:"power3.out"},2.2)
+  .to("#root",{scale:1.02,duration:3.0,ease:"none",transformOrigin:"50% 50%"},0);
+window.__timelines = window.__timelines || {}; window.__timelines["main"] = tl; tl.seek(0);
+</script>
+</body></html>

@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Img, Sequence, staticFile } from "remotion";
 import type { VideoPlan } from "../validation/schema";
 import { defaultRegistry } from "../characters/registry";
 import { buildTimeline } from "../animation/timing";
@@ -24,6 +24,8 @@ export const ComicComposition: React.FC<ComicProps> = ({ plan }) => {
           </Sequence>
         );
       })}
+      {/* rule-14: small 05-pair-plus logo top-left for the whole clip */}
+      <Img src={staticFile("brand/logo.svg")} style={{ position: "absolute", left: 64 * plan.video.width / 1080, top: 60 * plan.video.width / 1080, width: 72 * plan.video.width / 1080, height: 72 * plan.video.width / 1080 }} />
     </AbsoluteFill>
   );
 };

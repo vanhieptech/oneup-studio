@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="OneUp Pair Bond plus one">
+  <style>svg{color:#111111}</style>
+
+  <!-- Open circle: listening, safety, and continuous growth. -->
+  <path
+    d="M73 19A38 38 0 1 0 84 31"
+    stroke="currentColor"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <!-- Pair: user and Omi connected through one shared next step. -->
+  <circle cx="30" cy="52" r="5" fill="currentColor"/>
+  <circle cx="70" cy="52" r="5" fill="currentColor"/>
+
+  <!-- Plus and one share one stem; the angled flag makes the 1 legible. -->
+  <g stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 52h30"/>
+    <path d="M50 30v44"/>
+    <path d="M38 41l12-11"/>
+  </g>
+</svg>
