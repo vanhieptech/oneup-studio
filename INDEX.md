@@ -16,6 +16,8 @@ tags: [index, retrieval]
 | brand-index | brand | active | `brand/brand-index.md` | @hi.oneup — Brand index cho video |
 | characters | brand | prototype | `brand/characters/README.md` | Characters (prototype v0.1) |
 | clip-01.beat-sheet | beat-sheet | draft | `content/clips/clip-01-implementation-intention/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
+| clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/clips/clip-01-implementation-intention/final/post.md` | Gói đăng clip 01 (final demo) |
+| clip-01.script-final | script | review (gate 2) · DEMO tuần 5 | `content/clips/clip-01-implementation-intention/final/script-final.md` | Clip 01 FINAL (demo / template tuần 5): "Mai học" → nếu… thì… |
 | clip-01.script-v2.1-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
 | clip-01.script-v3-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v3-draft.md` | Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1 |
 | clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
@@ -40,9 +42,10 @@ tags: [index, retrieval]
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
-| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.1, 13/10/2026) |
+| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
 | skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
+| skill.make-video | skill | active | `skills/make-video/SKILL.md` | Make video (@hi.oneup end-to-end) |
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | Script polish (VI voice) |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | Trend digest |
@@ -52,7 +55,7 @@ tags: [index, retrieval]
 | id | title |
 |---|---|
 | rule-1 | Ngôn ngữ |
-| rule-2 | Giọng |
+| rule-2 | Giọng (DL-030) |
 | rule-3 | Lên hình |
 | rule-4 | Độ dài |
 | rule-5 | Phong cách (xoay vòng trong khuôn comic) |
@@ -96,13 +99,14 @@ tags: [index, retrieval]
 | rule-43 | Cách điệu mạnh |
 | rule-44 | AI image local chỉ để phác ý tưởng |
 | rule-45 | Engine video comic (`video-engine/`, vai trò xem luật 25) |
-| rule-46 | Giọng AI của Omi (VieNeu-TTS) |
+| rule-46 | Giọng AI nhân vật (VieNeu-TTS) |
 | rule-47 | Trend job biết học (DL-029) |
+| rule-48 | Một quy trình duy nhất cho mọi clip (DL-031) |
 
 ## Clips
 | id | theme | path | files |
 |---|---|---|---|
-| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, comic, script-v2.1-draft.md, script-v3-draft.md, script.md, shot-list.md, storyboard |
+| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, comic, final, script-v2.1-draft.md, script-v3-draft.md, script.md, shot-list.md, storyboard |
 
 ## Assets & tools
 | id | path | description |

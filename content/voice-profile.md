@@ -32,6 +32,9 @@ Hiệp xác nhận ngày 2026-10-12 (DL-019). Skill `script-polish` áp dụng f
 | "Việc bạn hông thật sự muốn thì viết cỡ nào cũng vậy." | Từ đệm ở cuối mọi câu ("nha… nha… nha") |
 | "Deadline hông có thì tự đặt nha." (chen tiếng Anh để nhấn ý) | "Let's lock in and be productive guys!" (cả câu tiếng Anh) |
 
+## 3a. Giọng AI của nhân vật Hiệp (DL-030)
+- VieNeu-TTS preset **"Đức Trí"** (nam, miền Nam, trầm ấm), tempo 1.3×. Không clone giọng thật. Cảm xúc theo câu (neutral/sad/happy/focused...). Viết số theo cách đọc, từ tiếng Anh khó đọc thì thêm `say` phiên âm (TOEIC → "tô ích", okay → "ô kê").
+
 ## 3b. Giọng Omi (luật 46, từ tuần 5)
 - Giọng AI tổng hợp VieNeu-TTS preset "Kim Thanh" (nữ, miền Nam). Không clone giọng ai.
 - Omi gọi người xem/Hiệp là **"bạn"**, câu ngắn, từ đệm nha/á/hông/nè, cà khịa nhẹ kiểu bạn thân ("Ba lần rồi á nha."), chen 1 từ tiếng Anh khi cần.

@@ -63,7 +63,7 @@ VideoPlan ─▶ validation (zod + semantic, theo character profiles) ─▶ ani
 | Biểu cảm | neutral, happy, sad, surprised, confused, focused | như Hiệp (morph hình dạng thân kiểu chất lỏng giữa các biểu cảm) |
 | Hành động | idle, talking, thinking, typing, walking, reacting | idle, talking, thinking, walking, reacting (không có tay nên không typing) |
 | Tư thế | standing, sitting | standing (lơ lửng), sitting (đậu xuống đất) |
-| Ghi chú | Ngoại hình còn generic, chờ Hiệp tả/gửi ảnh (DL-022) | Chỉ từ tuần 5 (luật 11, validator chặn). Giọng chưa chốt (DL-023) nên chỉ bubble chữ |
+| Ghi chú | Ngoại hình còn generic, chờ Hiệp tả/gửi ảnh (DL-022). Giọng AI preset "Đức Trí" (DL-030) | Chỉ từ tuần 5 (luật 11, validator chặn). Giọng preset "Kim Thanh" |
 
 Chuyển động có sẵn: thở (squash/stretch), chớp mắt theo chu kỳ riêng mỗi nhân vật + chớp ép khi đổi biểu cảm, blend biểu cảm 0.28s, nhép miệng theo nhịp âm tiết trong khoảng thoại, nghiêng đầu, liếc mắt, vung tay, bước đi tới `toX`, nhảy squash khi reacting, enter (`pop`, `rise`, `slide-left/right`), exit (`fade`, `slide-*`), camera push-in, framing `wide/medium/closeup`.
 
@@ -110,14 +110,14 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 ### LLM (tuỳ chọn)
 `LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=qwen2.5 npm run plan -- script.txt --llm`. Kết quả LLM phải qua cùng validator. Nếu lỗi mạng, JSON hỏng hoặc plan không hợp lệ thì tự quay về rule-based và ghi rõ trong log. Không cài SDK của hãng nào.
 
-## Giọng Omi (luật 46) <a name="voice"></a>
+## Giọng nhân vật (luật 46, DL-030: Hiệp = "Đức Trí", Omi = "Kim Thanh") <a name="voice"></a>
 Cài một lần (box/Mac, CPU, miễn phí, không API):
 ```bash
 python3 -m venv /workspace/tts-venv
 /workspace/tts-venv/bin/pip install vieneu "onnxruntime==1.22.1"   # 1.31 lỗi external-data với cache HF
 export VIENEU_PYTHON=/workspace/tts-venv/bin/python                  # mặc định là đường dẫn này
 ```
-Luồng: `npm run voice -- plan.json` → với mỗi câu của nhân vật có `voice` trong profile (chỉ Omi), gọi `pipeline/tts/vieneu_tts.py` (preset "Kim Thanh", tag cảm xúc + tempo/pitch theo `emotion`, cắt lặng, loudnorm) → `public/voice/<hash>.wav` + `.json` (duration, envelope theo frame) → ghi `plan.voiced.json` (điền `dialogue[].audio`, kéo dài `end` nếu cần) và validate lại. `npm run render -- plan.voiced.json` sẽ tự bật audio (AAC 192k). Validator chặn audio gắn vào người thật. Clip có giọng Omi phải bật nhãn AI khi đăng.
+Luồng: `npm run voice -- plan.json` → với mỗi câu của nhân vật có `voice` trong profile (Hiệp, Omi), gọi `pipeline/tts/vieneu_tts.py` (preset theo profile, tag cảm xúc + tempo/pitch theo `emotion`, cắt lặng, loudnorm) → `public/voice/<hash>.wav` + `.json` (duration, envelope theo frame) → ghi `plan.voiced.json` (điền `dialogue[].audio`, kéo dài `end` nếu cần) và validate lại. `npm run render -- plan.voiced.json` sẽ tự bật audio (AAC 192k). Validator chặn audio của speaker không có preset. Clip có giọng AI phải bật nhãn AI khi đăng. Caption có thể chia theo câu (`caption.segments`). Clip final nhiều phần: `pipeline/scripts/build-final.py` (xem `skills/make-video`).
 
 Mẫu đầy đủ (comic + giọng Omi + HyperFrames explainer + ghép): `content/samples/sample-full-w5/README.md`.
 

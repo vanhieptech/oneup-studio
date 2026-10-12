@@ -22,7 +22,7 @@ function emotionAt(plan: VideoPlan, si: number, speaker: string, at: number): st
   return e;
 }
 
-/** Lines that need a synthetic voice: speaker profile has `voice` (Omi only). Real people are never voiced. */
+/** Lines that need a synthetic voice: speaker profile declares a `voice` preset (Hiệp chibi + Omi, DL-030). Never cloned. */
 export function collectVoiceJobs(plan: VideoPlan, registry: ProfileRegistry = defaultRegistry): VoiceJob[] {
   const jobs: VoiceJob[] = [];
   plan.scenes.forEach((s, si) => s.dialogue.forEach((d, li) => {

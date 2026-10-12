@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+"""Build a final clip from ONE source spec (content/clips/<clip>/final/spec.json).
+
+  build-final.py <spec.json> [--stage voice|plans|render|assemble|all]   (default all)
+
+Stages (each reuses cached output; edit the spec, never the generated files):
+  voice    : every line -> VieNeu-TTS preset of the speaker's profile (Hiệp: Đức Trí, Omi: Kim Thanh; rule-46, DL-030)
+             cached in video-engine/public/voice/<key>.wav|json (key = preset+emotion+text)
+  plans    : Remotion parts -> <final>/plan-<part>.voiced.json (timed from real audio, captions per line, lip-sync envelope)
+             HyperFrames parts -> <final>/<dir>/index.html (from index.html.tpl) + <final>/out/<part>-voice.wav
+  render   : npm run render (Remotion) / hyperframes render (explainer), then mux explainer voice
+  assemble : xfade parts + acrossfade audio, in-house SFX, light grain (rule-20), -14 LUFS (rule-4), no music (rule-21)
+Outputs: <final>/out/*.mp4 (gitignored) and <final>/<id>.mp4, timing.json (for STT/QA + script table).
+"""
+import hashlib, json, os, re, subprocess, sys, math, wave, struct
+
+REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+VE = os.path.join(REPO, "video-engine")
+NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x64/bin")
+PY = os.environ.get("VIENEU_PYTHON", "/workspace/tts-venv/bin/python")
+FPS = 30
+XF = 0.35  # cross-part transition
+
+def sh(cmd, **kw):
+    print("+", cmd if isinstance(cmd, str) else " ".join(cmd), flush=True)
+    env = dict(os.environ, PATH=NODE_BIN + ":" + os.environ["PATH"])
+    subprocess.run(cmd, shell=isinstance(cmd, str), check=True, env=env, **kw)
+
+def profiles():
+    d = os.path.join(VE, "src/characters/profiles")
+    return {j["id"]: j for j in (json.load(open(os.path.join(d, f))) for f in os.listdir(d) if f.endswith(".json"))}
+
+def spoken(line):
+    return line.get("say") or re.sub(r"\*\*|[“”\"]", "", line["text"]).replace("…", ",").strip()
+
+def all_lines(spec):
+    for p in spec["parts"]:
+        for s in p.get("scenes", []) + p.get("sections", []):
+            for l in s["lines"]:
+                yield p, s, l
+
+def voice_key(preset, emotion, text, take=1):
+    return hashlib.sha1(json.dumps(["vieneu-tts", preset, emotion, text, 4] + ([take] if take != 1 else []), ensure_ascii=False).encode()).hexdigest()[:12]
+
+def stage_voice(spec):
+    prof = profiles(); jobs = []
+    for _, _, l in all_lines(spec):
+        v = prof[l["speaker"]].get("voice")
+        if not v: raise SystemExit(f"{l['speaker']} has no voice preset in its profile (rule-46)")
+        k = voice_key(v["preset"], l["emotion"], spoken(l), l.get("take", 1))  # bump "take" in the spec to re-roll a line that fails STT
+        l["_key"] = k
+        jobs.append({"text": spoken(l), "voice": v["preset"], "emotion": l["emotion"], "out": os.path.join(VE, "public/voice", k)})
+    todo = [j for j in jobs if not os.path.exists(j["out"] + ".wav")]
+    print(f"voice: {len(jobs)} lines, {len(jobs)-len(todo)} cached")
+    sh([PY, os.path.join(REPO, "pipeline/tts/vieneu_tts.py"), json.dumps({"fps": FPS, "jobs": jobs}, ensure_ascii=False)], stdout=subprocess.DEVNULL)
+    for _, _, l in all_lines(spec):
+        m = json.load(open(os.path.join(VE, "public/voice", l["_key"] + ".json")))
+        l["_dur"], l["_env"], l["_engine"] = m["duration"], m["envelope"], m["engine"]
+
+def en_words(text, start, end, hl):
+    ws = text.split(); w = [len(x) + 2 for x in ws]; tot = sum(w); acc = start; out = []
+    for i, x in enumerate(ws):
+        d = (end - start) * w[i] / tot; out.append({"word": x, "start": round(acc, 3)}); acc += d
+    return out
+
+def remotion_plan(spec, part):
+    scenes = []; timing = []
+    for si, sc in enumerate(part["scenes"]):
+        tr = sc.get("transition", "cut"); trd = 0.0 if tr == "cut" else 0.4
+        t = 0.12 if (si == 0 and part is spec["parts"][0]) else max(0.3, trd + 0.15)
+        cast = {c["id"]: {"characterId": c["id"], "x": c["x"], "pose": c.get("pose", "standing"), "action": c.get("action", "idle"),
+                          "expression": c.get("expression", "neutral"), "facing": c.get("facing", "right"), "enter": c.get("enter", "none"),
+                          "expressionChanges": [], "actionChanges": []} for c in sc["cast"]}
+        dlg = []; segs = []
+        for li, l in enumerate(sc["lines"]):
+            st = round(t, 3); en = round(st + l["_dur"], 3)
+            for cid, ch in (l.get("set") or {}).items():
+                if "expression" in ch: cast[cid]["expressionChanges"].append({"at": st, "value": ch["expression"]})
+                if "action" in ch: cast[cid]["actionChanges"].append({"at": st, "value": ch["action"]})
+            dlg.append({"speaker": l["speaker"], "text": l["text"], "start": st, "end": round(en + 0.25, 3), "emotion": l["emotion"],
+                        "audio": {"src": f"voice/{l['_key']}.wav", "duration": l["_dur"], "envelope": l["_env"], "engine": l["_engine"]}})
+            segs.append({"text": l["en"], "start": round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})
+            timing.append({"beat": sc["beat"], "scene": sc["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": l["_dur"]})
+            t = en + (0.2 if li < len(sc["lines"]) - 1 else 0)
+        dur = round(t + 0.45, 3)
+        dlg[-1]["end"] = min(dlg[-1]["end"], dur); segs[-1]["end"] = min(segs[-1]["end"], round(dur - 0.05, 3))
+        for i in range(len(segs) - 1): segs[i]["end"] = min(segs[i]["end"], segs[i + 1]["start"])
+        scene = {"id": sc["id"], "beat": sc["beat"], "duration": dur, "background": {"kind": sc["background"]},
+                 "camera": {"framing": sc.get("framing", "medium"), "push": sc.get("push", 0.04)},
+                 "transition": {"type": tr, "duration": trd or 0.4}, "characters": list(cast.values()), "dialogue": dlg,
+                 "caption": {"text": " ".join(s["text"] for s in segs), "start": segs[0]["start"], "segments": segs},
+                 "sfx": [{"name": x["name"], "at": round(max(0, dlg[x["atLine"]]["start"] + x.get("offset", 0)), 3)} for x in sc.get("sfx", [])]}
+        if sc.get("narration"): scene["narration"] = {"text": sc["narration"], "start": 0.05}
+        scenes.append(scene)
+    plan = {"version": 1, "id": f"{spec['id']}-{part['id']}", "title": spec["title"], "meta": {"clip": spec["clip"], "week": spec["week"], "source": "final/spec.json"},
+            "video": {"width": 1080, "height": 1920, "fps": FPS, "theme": spec["theme"]}, "scenes": scenes}
+    return plan, timing, sum(s["duration"] for s in scenes)
+
+def explainer(spec, part, fdir):
+    t = 0.35; secs = []; timing = []; mix = []
+    for sec in part["sections"]:
+        s0 = t; t += 0.3; lines = []
+        for li, l in enumerate(sec["lines"]):
+            st = round(t, 3); d = l["_dur"]
+            vw = spoken(l).split(); w = [len(x) + 2 for x in vw]; tot = sum(w); acc = st; words = []
+            for i, x in enumerate(vw): words.append({"w": x, "start": round(acc, 3)}); acc += d * w[i] / tot
+            lines.append({"start": st, "end": round(st + d, 3), "capEnd": round(st + d + 0.25, 3), "words": words, "hl": l.get("hl", []),
+                          "cap": en_words(l["en"], st + 0.05, st + d - 0.1, l.get("hl", []))})
+            mix.append((l["_key"], st))
+            timing.append({"beat": sec["beat"], "scene": sec["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": d})
+            t = st + d + 0.25
+        t += 0.3
+        for i, ln in enumerate(lines[:-1]): ln["capEnd"] = min(ln["capEnd"], lines[i + 1]["start"])
+        secs.append({"id": sec["id"], "start": round(s0, 3), "end": round(t, 3), "lines": lines})
+    dur = round(t + 0.1, 2)
+    tpl = open(os.path.join(fdir, part["dir"], "index.html.tpl")).read()
+    open(os.path.join(fdir, part["dir"], "index.html"), "w").write(tpl.replace("__DUR__", str(dur)).replace("__TIMING__", json.dumps({"sections": secs}, ensure_ascii=False)))
+    # voice track
+    out = os.path.join(fdir, "out", f"{part['id']}-voice.wav")
+    ins = []; flt = []
+    for i, (k, st) in enumerate(mix):
+        ins += ["-i", os.path.join(VE, "public/voice", k + ".wav")]
+        flt.append(f"[{i}:a]aresample=48000,adelay={int(st*1000)}:all=1[a{i}]")
+    flt.append("".join(f"[a{i}]" for i in range(len(mix))) + f"amix=inputs={len(mix)}:normalize=0,apad,atrim=0:{dur}[o]")
+    sh(["ffmpeg", "-loglevel", "error", "-y", *ins, "-filter_complex", ";".join(flt), "-map", "[o]", "-ac", "1", "-ar", "48000", out])
+    return timing, dur
+
+SFX = {  # in-house synthesized (no third-party license; logged in assets/sfx/SOURCES.md)
+    "pop": "sine=f=520:d=0.09,afade=t=out:st=0.02:d=0.07,volume=0.35",
+    "ding": "sine=f=1318:d=0.5,afade=t=out:st=0.03:d=0.47,volume=0.22",
+    "whoosh": "anoisesrc=d=0.3:c=pink:a=0.25,bandpass=f=1500:w=900,afade=t=in:d=0.12,afade=t=out:st=0.14:d=0.16",
+}
+
+def main():
+    specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
+    fdir = os.path.dirname(specp); spec = json.load(open(specp)); os.makedirs(os.path.join(fdir, "out"), exist_ok=True)
+    stage_voice(spec)
+    parts = []; timing = []; offset = 0.0
+    for p in spec["parts"]:
+        if p["engine"] == "remotion":
+            plan, tm, dur = remotion_plan(spec, p); pp = os.path.join(fdir, f"plan-{p['id']}.voiced.json")
+            json.dump(plan, open(pp, "w"), ensure_ascii=False, indent=1)
+            # absolute times: Remotion scene starts are cumulative
+            starts = {}; acc = 0
+            for s in plan["scenes"]: starts[s["id"]] = acc; acc += s["duration"]
+            sfx = [(x["name"], offset + starts[s["id"]] + x["at"]) for s in plan["scenes"] for x in s["sfx"]]
+            parts.append({"id": p["id"], "engine": "remotion", "plan": pp, "dur": dur, "mp4": os.path.join(VE, "out", plan["id"] + ".mp4"), "sfx": sfx, "fx": p.get("transitionOut")})
+            for x in tm: x["t"] = round(offset + starts[x["scene"]] + x["local"], 3); timing.append(x)
+        else:
+            tm, dur = explainer(spec, p, fdir)
+            parts.append({"id": p["id"], "engine": "hyperframes", "dir": os.path.join(fdir, p["dir"]), "dur": dur, "mp4": os.path.join(fdir, "out", f"{p['id']}.mp4"),
+                          "sfx": [("whoosh", offset + s0) for s0 in []], "fx": p.get("transitionOut")})
+            for x in tm: x["t"] = round(offset + x["local"], 3); timing.append(x)
+        offset += parts[-1]["dur"] - XF
+    total = round(offset + XF, 2)
+    json.dump({"total": total, "parts": [{k: v for k, v in q.items() if k != "sfx"} for q in parts], "lines": timing}, open(os.path.join(fdir, "timing.json"), "w"), ensure_ascii=False, indent=1)
+    print(f"plans: total ≈ {total}s")
+    sh(["npx", "tsx", "src/cli.ts", "validate", *[q["plan"] for q in parts if q["engine"] == "remotion"]], cwd=VE)
+    if stage in ("voice", "plans"): return
+    if stage in ("render", "all"):
+        sh(["npx", "tsx", "src/cli.ts", "render", *[q["plan"] for q in parts if q["engine"] == "remotion"], "--out-dir", "out"], cwd=VE)
+        for q in parts:
+            if q["engine"] == "hyperframes":
+                silent = q["mp4"].replace(".mp4", "-silent.mp4")
+                sh(["npx", "--yes", "hyperframes@0.8.150", "render", ".", "-o", silent, "-f", str(FPS), "--quality", "delivery"], cwd=q["dir"])
+                sh(["ffmpeg", "-loglevel", "error", "-y", "-i", silent, "-i", os.path.join(fdir, "out", f"{q['id']}-voice.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", q["mp4"]])
+    # assemble (two passes: audio graph first, then video + mux; one big graph with lavfi sources can deadlock)
+    for q in parts:
+        real = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", q["mp4"]], capture_output=True, text=True).stdout)
+        if abs(real - q["dur"]) > 0.1: print(f"warn: part {q['id']} is {real:.2f}s, planned {q['dur']:.2f}s")
+        q["dur"] = round(min(real, q["dur"] + 0.4), 3)
+    ins = []; vf = []; af = []
+    for i, q in enumerate(parts):
+        ins += ["-i", q["mp4"]]
+        vf.append(f"[{i}:v]trim=0:{q['dur']},setpts=PTS-STARTPTS,fps={FPS},scale=out_range=tv,format=yuv420p,setsar=1[v{i}]")
+        af.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:{q['dur']},asetpts=PTS-STARTPTS[a{i}]")
+    vprev, aprev, acc = "v0", "a0", parts[0]["dur"]; starts = [0.0]
+    for i in range(1, len(parts)):
+        off = round(acc - XF, 3); fx = parts[i - 1]["fx"] or "fade"; starts.append(off)
+        vf.append(f"[{vprev}][v{i}]xfade=transition={fx}:duration={XF}:offset={off}[vx{i}]"); af.append(f"[{aprev}][a{i}]acrossfade=d={XF}:c1=tri:c2=tri[ax{i}]")
+        vprev, aprev, acc = f"vx{i}", f"ax{i}", acc + parts[i]["dur"] - XF
+    total = round(acc, 3)
+    sfx = [s for q in parts for s in q["sfx"]] + [("whoosh", round(st - 0.15, 3)) for st in starts[1:]]
+    tmp = os.path.join(fdir, "out", "sfx"); os.makedirs(tmp, exist_ok=True); mixl = [f"[{aprev}]"]
+    for j, (name, at) in enumerate(sfx):
+        w = os.path.join(tmp, name + ".wav")
+        if not os.path.exists(w): sh(["ffmpeg", "-loglevel", "error", "-y", "-f", "lavfi", "-i", SFX[name], "-ac", "1", "-ar", "48000", w])
+        ins_a = len(parts) + j; af.append(f"[{ins_a}:a]aresample=48000,adelay={int(max(0, at)*1000)}:all=1[s{j}]"); mixl.append(f"[s{j}]")
+    af.append("".join(mixl) + f"amix=inputs={len(mixl)}:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,atrim=0:{total}[a]")
+    sfx_in = [x for (name, _) in sfx for x in ("-i", os.path.join(tmp, name + ".wav"))]
+    wav = os.path.join(fdir, "out", "mix.wav")
+    sh(["ffmpeg", "-loglevel", "error", "-y", *ins, *sfx_in, "-filter_complex", ";".join(af), "-map", "[a]", "-ac", "1", "-ar", "48000", wav])
+    # 2nd loudness pass: single-pass loudnorm lands ~1 LU low on short clips; correct with a linear gain to -14 LUFS (rule-4)
+    m = subprocess.run(["ffmpeg", "-hide_banner", "-i", wav, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    li = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", m)[-1]); gain = round(-14.0 - li, 2)
+    if abs(gain) > 0.2:
+        sh(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-af", f"volume={gain}dB,alimiter=limit=0.84:level=false", wav.replace(".wav", "-g.wav")]); os.replace(wav.replace(".wav", "-g.wav"), wav)
+    vf.append(f"[{vprev}]noise=alls=4:allf=t,format=yuv420p[v]")  # light film grain over the whole clip (rule-20)
+    out = os.path.join(fdir, "out", spec["id"] + ".mp4")
+    sh(["ffmpeg", "-loglevel", "error", "-y", *ins, "-i", wav, "-filter_complex", ";".join(vf), "-map", "[v]", "-map", f"{len(parts)}:a", "-c:v", "libx264", "-profile:v", "high", "-crf", "20", "-maxrate", "14M", "-bufsize", "28M",
+        "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv", "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", out])
+    t2 = json.load(open(os.path.join(fdir, "timing.json"))); t2["total"] = total; t2["partStarts"] = starts
+    json.dump(t2, open(os.path.join(fdir, "timing.json"), "w"), ensure_ascii=False, indent=1)
+    print("final →", out, f"({total}s)")
+
+if __name__ == "__main__":
+    main()

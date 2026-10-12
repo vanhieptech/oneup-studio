@@ -1,0 +1,204 @@
+{
+ "total": 57.261,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json",
+   "dur": 22.275,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-01-final-A.mp4",
+   "fx": "slideleft"
+  },
+  {
+   "id": "E",
+   "engine": "hyperframes",
+   "dir": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer",
+   "dur": 19.71,
+   "mp4": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E.mp4",
+   "fx": "circleopen"
+  },
+  {
+   "id": "B",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json",
+   "dur": 15.979000000000001,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-01-final-B.mp4",
+   "fx": null
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-01.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Kế hoạch học tô ích của mình là, mai học.",
+   "en": "My TOEIC study plan: “tomorrow.”",
+   "emotion": "neutral",
+   "key": "ece51f5291e6",
+   "local": 0.12,
+   "dur": 2.276,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-01.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Tối nào cũng vậy á: code xong, mệt, rồi,",
+   "en": "Every night: code, tired, then…",
+   "emotion": "neutral",
+   "key": "b6d4e975cf51",
+   "local": 0.55,
+   "dur": 2.395,
+   "t": 3.396
+  },
+  {
+   "beat": "clip-01.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Thôi, mai học. Mai của mình dài cả tuần luôn.",
+   "en": "“Eh, tomorrow.” My tomorrow lasts all week.",
+   "emotion": "sad",
+   "key": "106e2985787a",
+   "local": 3.145,
+   "dur": 3.682,
+   "t": 5.991
+  },
+  {
+   "beat": "clip-01.b03",
+   "scene": "b03",
+   "speaker": "omi",
+   "say": "Nhóm chat nào cũng có dự án ma. Còn bạn có hẳn kỳ thi ma á nha.",
+   "en": "Everyone has a ghost project. You have a ghost exam.",
+   "emotion": "teasing",
+   "key": "4dd861220067",
+   "local": 0.3,
+   "dur": 5.17,
+   "t": 10.423
+  },
+  {
+   "beat": "clip-01.b04",
+   "scene": "b04",
+   "speaker": "omi",
+   "say": "Nè, sửa đúng một câu thôi: nếu, thì,",
+   "en": "Change one sentence: IF… THEN…",
+   "emotion": "focused",
+   "key": "99d6689a5e03",
+   "local": 0.55,
+   "dur": 2.657,
+   "t": 16.593
+  },
+  {
+   "beat": "clip-01.b04",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Nếu, thì? Nghe giống code ghê á.",
+   "en": "If-then? Sounds like code.",
+   "emotion": "happy",
+   "key": "abcc5b2c73d6",
+   "local": 3.407,
+   "dur": 2.375,
+   "t": 19.45
+  },
+  {
+   "beat": "clip-01.b05",
+   "scene": "e01",
+   "speaker": "hiep",
+   "say": "Công thức nè: mấy giờ, ở đâu, gặp gì, thì làm gì.",
+   "en": "When, where, what cue, THEN what.",
+   "emotion": "focused",
+   "key": "8560d8602f9b",
+   "local": 0.65,
+   "dur": 3.335,
+   "t": 22.575
+  },
+  {
+   "beat": "clip-01.b06",
+   "scene": "e02",
+   "speaker": "hiep",
+   "say": "Ví dụ: chín giờ tối, gập laptop lại, thì mở một bài listening.",
+   "en": "9 PM, laptop closed: one listening lesson.",
+   "emotion": "neutral",
+   "key": "814df1fff14d",
+   "local": 4.835,
+   "dur": 3.644,
+   "t": 26.76
+  },
+  {
+   "beat": "clip-01.b07",
+   "scene": "e03",
+   "speaker": "hiep",
+   "say": "Gộp chín mươi tư kiểm nghiệm độc lập: ai viết nếu–thì, làm xong mục tiêu nhiều hơn hẳn.",
+   "en": "94 independent tests: if-then planners reached goals more often.",
+   "emotion": "focused",
+   "key": "bd3e7053bcf3",
+   "local": 9.329,
+   "dur": 4.392,
+   "t": 31.254
+  },
+  {
+   "beat": "clip-01.b08",
+   "scene": "e04",
+   "speaker": "hiep",
+   "say": "Nó giúp lúc bắt đầu, lúc Messenger réo, và lúc nên bỏ việc chắc chắn không thành.",
+   "en": "It helps you start, hold on when Messenger pings, and quit what can't work.",
+   "emotion": "neutral",
+   "key": "1ca03710f8e4",
+   "local": 14.571,
+   "dur": 4.493,
+   "t": 36.496
+  },
+  {
+   "beat": "clip-01.b09",
+   "scene": "b09",
+   "speaker": "omi",
+   "say": "Mà nhớ nha: việc hông thật sự muốn thì viết cỡ nào cũng vậy.",
+   "en": "Only works for goals you actually want.",
+   "emotion": "focused",
+   "key": "82aced660c6f",
+   "local": 0.3,
+   "dur": 3.696,
+   "t": 41.585
+  },
+  {
+   "beat": "clip-01.b09",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Ô kê. Chín giờ tối nay, mình có hẹn với tô ích.",
+   "en": "Okay. 9 PM tonight: date with TOEIC.",
+   "emotion": "happy",
+   "key": "11012bab20ff",
+   "local": 4.196,
+   "dur": 3.452,
+   "t": 45.481
+  },
+  {
+   "beat": "clip-01.b10",
+   "scene": "b10",
+   "speaker": "hiep",
+   "say": "Còn bạn? Viết một câu nếu–thì cho cái mai của bạn, rồi comment nha.",
+   "en": "Your turn: one if-then line. Drop it in the comments.",
+   "emotion": "happy",
+   "key": "0533ccbae70d",
+   "local": 0.55,
+   "dur": 4.325,
+   "t": 49.933
+  },
+  {
+   "beat": "clip-01.b10",
+   "scene": "b10",
+   "speaker": "omi",
+   "say": "Cái mai hết đường trốn rồi nha.",
+   "en": "“Tomorrow” has nowhere to hide.",
+   "emotion": "happy",
+   "key": "bd94c563d9ea",
+   "local": 5.075,
+   "dur": 2.356,
+   "t": 54.458
+  }
+ ],
+ "partStarts": [
+  0.0,
+  21.922,
+  41.282
+ ]
+}

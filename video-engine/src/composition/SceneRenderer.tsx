@@ -63,7 +63,8 @@ export const SceneRenderer: React.FC<{
           </Sequence>
         ) : null)}
         {scene.narration && <NarrationBox text={scene.narration.text} start={scene.narration.start} end={scene.narration.end ?? scene.duration} t={t} />}
-        {scene.caption && <Caption text={scene.caption.text} start={scene.caption.start} end={scene.caption.end ?? scene.duration} t={t} highlight={scene.caption.highlight} top={H * 0.775} theme={theme} />}
+        {scene.caption && !scene.caption.segments?.length && <Caption text={scene.caption.text} start={scene.caption.start} end={scene.caption.end ?? scene.duration} t={t} highlight={scene.caption.highlight} top={H * 0.775} theme={theme} />}
+        {scene.caption?.segments?.map((sg, i) => <Caption key={`cs${i}`} text={sg.text} start={sg.start} end={sg.end} t={t} highlight={sg.highlight} top={H * 0.775} theme={theme} />)}
       </div>
     </AbsoluteFill>
   );

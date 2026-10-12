@@ -11,3 +11,5 @@ renders/**/frames/
 refs/awesome-ai-motion/
 .env
 content/samples/**/explainer/renders/
+content/clips/**/final/out/
+content/clips/**/final/*.mp4

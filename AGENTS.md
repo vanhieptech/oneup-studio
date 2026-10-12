@@ -18,11 +18,12 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 | Thứ tự đăng + theme | `content/theme-map.md` |
 | Một clip (id `clip-NN`) | `content/clips/clip-NN-<slug>/`: `script.md`, `beat-sheet.md`, `comic/plan.json`, `storyboard/spec.json` |
 | Nhân vật (Hiệp, Omi) | `brand/characters/` (rig.py, sheets). Comic: `<clip>/comic/spec.json` → `pipeline/comic/render.py` |
-| Video comic có chuyển động | `video-engine/` (README: setup, schema, lệnh `validate/plan/voice/render/frames`). Giọng Omi: `pipeline/tts/` (rule-46). Ghép beat: `pipeline/scripts/join-beats.sh`. Mẫu tổng hợp: `content/samples/sample-full-w5/`. Profile nhân vật: `video-engine/src/characters/profiles/` |
+| Video comic có chuyển động | `video-engine/` (README: setup, schema, lệnh `validate/plan/voice/render/frames`). Giọng nhân vật (Hiệp "Đức Trí", Omi "Kim Thanh"): `pipeline/tts/` (rule-46, DL-030). Ghép beat: `pipeline/scripts/join-beats.sh`. Mẫu tổng hợp: `content/samples/sample-full-w5/`. Profile nhân vật: `video-engine/src/characters/profiles/` |
 | Storyboard | `storyboard/spec.json` là nguồn, PNG là kết quả render. Renderer: `pipeline/storyboard/render.py` |
 | Trend | `research/trends/ingest.md` (thư viện sống) + `research/trends/YYYY-MM-DD/` |
 | Quy trình | `pipeline/pipeline.md` |
-| Skill | `skills/<id>/SKILL.md` (`motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT)) |
+| **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` · mẫu `content/clips/clip-01-implementation-intention/final/` |
+| Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT)) |
 
 ## Quy ước
 - Mọi file `.md` (trừ SKILL.md và tài liệu brand gốc) có front-matter `id, type, status, updated, tags`. Khi tạo hoặc đổi tên file, chạy `python3 pipeline/scripts/build-index.py`.
@@ -30,7 +31,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 - Không đưa media vào git (`footage/`, `renders/` đã có trong .gitignore). Không vendor repo ngoài (xem `refs/README.md`).
 
 ## Workflow
-1. **Clip mới:** đọc decision-log → theme-map → trend ingest (rule-37) → viết script + storyboard spec → render storyboard → Hiệp duyệt → thu / quay → pipeline.md bước 5–16.
+1. **Clip mới:** theo `skills/make-video/SKILL.md` (intake → đọc nguồn → spec → humanizer → check-rules → gate 1 → render → check-rules --final → gate 2 → DL).
 2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
 3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
 

@@ -58,6 +58,22 @@
    "title": "Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md"
   },
   {
+   "id": "clip-01.post",
+   "type": "post-package",
+   "status": "review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1",
+   "updated": "2026-10-13",
+   "path": "content/clips/clip-01-implementation-intention/final/post.md",
+   "title": "Gói đăng clip 01 (final demo)"
+  },
+  {
+   "id": "clip-01.script-final",
+   "type": "script",
+   "status": "review (gate 2) · DEMO tuần 5",
+   "updated": "2026-10-13",
+   "path": "content/clips/clip-01-implementation-intention/final/script-final.md",
+   "title": "Clip 01 FINAL (demo / template tuần 5): \"Mai học\" → nếu… thì…"
+  },
+  {
    "id": "clip-01.script-v2.1-draft",
    "type": "script",
    "status": "draft",
@@ -255,7 +271,7 @@
    "status": "active",
    "updated": "2026-10-13",
    "path": "rules/video-rules.md",
-   "title": "@hi.oneup: Bộ luật sản xuất video (v3.1, 13/10/2026)"
+   "title": "@hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026)"
   },
   {
    "id": "skill.humanizer",
@@ -271,6 +287,13 @@
    "updated": "2026-10-12",
    "path": "skills/humanizer/UPSTREAM.md",
    "title": "Humanizer (vendored, MIT)"
+  },
+  {
+   "id": "skill.make-video",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/make-video/SKILL.md",
+   "title": "Make video (@hi.oneup end-to-end)"
   },
   {
    "id": "skill.motion-picks-per-script",
@@ -310,7 +333,7 @@
   },
   {
    "id": "rule-2",
-   "title": "Giọng",
+   "title": "Giọng (DL-030)",
    "path": "rules/video-rules.md"
   },
   {
@@ -530,12 +553,17 @@
   },
   {
    "id": "rule-46",
-   "title": "Giọng AI của Omi (VieNeu-TTS)",
+   "title": "Giọng AI nhân vật (VieNeu-TTS)",
    "path": "rules/video-rules.md"
   },
   {
    "id": "rule-47",
    "title": "Trend job biết học (DL-029)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-48",
+   "title": "Một quy trình duy nhất cho mọi clip (DL-031)",
    "path": "rules/video-rules.md"
   }
  ],
@@ -547,6 +575,7 @@
    "files": [
     "beat-sheet.md",
     "comic",
+    "final",
     "script-v2.1-draft.md",
     "script-v3-draft.md",
     "script.md",

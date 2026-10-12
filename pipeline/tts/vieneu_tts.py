@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Omi voice (rule-46): VieNeu-TTS v3 Turbo, local CPU/ONNX, Apache-2.0. Omi ONLY.
+"""Omi voice (rule-46): VieNeu-TTS v3 Turbo, local CPU/ONNX, Apache-2.0. Characters with a declared preset only (Hiệp: Đức Trí, Omi: Kim Thanh; DL-030).
 
 stdin/argv: JSON {"fps":30,"jobs":[{"text","voice","emotion","out"}]}
 For each job: synthesize (cached: skipped if out exists), apply emotion post-fx
@@ -19,6 +19,10 @@ EMOTION = {
     "focused":   ("", 0.98, 0.0),
     "confused":  ("[hắng giọng] ", 0.97, 0.0),
 }
+
+# Per-preset base tempo (pitch kept). Both presets read in a slow storybook pace (~3 syl/s);
+# a 55-60s clip needs ~3.6-3.9 syl/s (DL-030). Checked by STT after every change.
+VOICE_TEMPO = {"Đức Trí": 1.3, "Kim Thanh": 1.12}
 
 def envelope(path, fps):
     with wave.open(path) as w:
@@ -51,6 +55,7 @@ def main():
             with tempfile.TemporaryDirectory() as d:
                 raw = os.path.join(d, "raw.wav"); tts.save(audio, raw)
                 rate = 2 ** (semi / 12)
+                tempo *= VOICE_TEMPO.get(j["voice"], 1.0)
                 af = (f"asetrate=48000*{rate:.4f},aresample=48000,atempo={tempo / rate:.4f},"
                       "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
                       "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"

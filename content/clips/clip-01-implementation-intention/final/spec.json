@@ -1,0 +1,448 @@
+{
+  "id": "clip-01-final",
+  "clip": "clip-01",
+  "title": "Mai học → nếu… thì… (implementation intention)",
+  "week": 5,
+  "weekNote": "DEMO / week-5 template: Omi appears (rule-11 allows Omi only from week 5). Cannot be posted as week-1 clip as-is.",
+  "theme": "light",
+  "pillar": "1 Làm ít, xong nhiều",
+  "trend": "ingest: 'mai làm' / 'dự án ma' (generic jab, DL-019: no real ghost-project example)",
+  "revisions": [
+    {
+      "date": "2026-10-13",
+      "dl": "DL-030",
+      "note": "v1 final demo: Hiệp + Omi AI voices, comic A/B + HyperFrames explainer"
+    },
+    {
+      "date": "2026-10-13",
+      "dl": "DL-030",
+      "note": "review r1: b01 medium framing (caption covered face), EN highlight indices e03/e04, explainer layout fills frame, tv range, 2-pass loudness"
+    },
+    {
+      "date": "2026-10-13",
+      "dl": "DL-030",
+      "note": "review r2: e04 row 3 overflowed right edge (font 84→72), b09 EN highlight 'actually want'"
+    },
+    {
+      "date": "2026-10-13",
+      "dl": "DL-030",
+      "note": "review r3: b03 EN highlight 'ghost … exam.' (was 'a'); grain alls 4 + CRF 20/maxrate 14M (431 MB → ~30 MB)"
+    }
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "engine": "remotion",
+      "transitionOut": "slideleft",
+      "scenes": [
+        {
+          "id": "b01",
+          "beat": "clip-01.b01",
+          "part": "hook",
+          "background": "bed",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "narration": "11:48 PM",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "sad"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "neutral",
+              "text": "Kế hoạch học TOEIC của mình là… **mai học**.",
+              "say": "Kế hoạch học tô ích của mình là, mai học.",
+              "en": "My TOEIC study plan: “tomorrow.”",
+              "hl": [
+                4
+              ]
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 0.0
+            }
+          ]
+        },
+        {
+          "id": "b02",
+          "beat": "clip-01.b02",
+          "part": "story",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.42,
+              "pose": "sitting",
+              "action": "typing",
+              "expression": "focused"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "neutral",
+              "text": "Tối nào cũng vậy á: code xong, mệt, rồi…",
+              "en": "Every night: code, tired, then…",
+              "hl": [
+                2
+              ],
+              "set": {
+                "hiep": {
+                  "action": "idle",
+                  "expression": "neutral"
+                }
+              }
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "“Thôi, **mai học**.” Mai của mình dài cả tuần luôn.",
+              "en": "“Eh, tomorrow.” My tomorrow lasts all week.",
+              "hl": [
+                1,
+                4
+              ],
+              "set": {
+                "hiep": {
+                  "expression": "sad"
+                }
+              },
+              "take": 2
+            }
+          ]
+        },
+        {
+          "id": "b03",
+          "beat": "clip-01.b03",
+          "part": "story",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.3,
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "sad"
+            },
+            {
+              "id": "omi",
+              "x": 0.74,
+              "pose": "standing",
+              "action": "idle",
+              "expression": "happy",
+              "facing": "left",
+              "enter": "pop"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "omi",
+              "emotion": "teasing",
+              "text": "Nhóm chat nào cũng có **dự án ma**. Còn bạn có hẳn **kỳ thi ma** á nha.",
+              "en": "Everyone has a ghost project. You have a ghost exam.",
+              "hl": [
+                3,
+                9
+              ],
+              "set": {
+                "hiep": {
+                  "expression": "surprised",
+                  "action": "reacting"
+                }
+              }
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": -0.3
+            }
+          ]
+        },
+        {
+          "id": "b04",
+          "beat": "clip-01.b04",
+          "part": "turn",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "iris",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.3,
+              "pose": "standing",
+              "action": "idle",
+              "expression": "confused",
+              "facing": "right"
+            },
+            {
+              "id": "omi",
+              "x": 0.72,
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused",
+              "facing": "left"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "omi",
+              "emotion": "focused",
+              "text": "Nè, sửa đúng một câu thôi: **nếu…** thì…",
+              "en": "Change one sentence: IF… THEN…",
+              "hl": [
+                3,
+                4
+              ]
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Nếu… thì? Nghe giống **code** ghê á.",
+              "en": "If-then? Sounds like code.",
+              "hl": [
+                3
+              ],
+              "set": {
+                "hiep": {
+                  "expression": "happy",
+                  "action": "reacting"
+                },
+                "omi": {
+                  "expression": "happy",
+                  "action": "idle"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "engine": "hyperframes",
+      "dir": "explainer",
+      "transitionOut": "circleopen",
+      "sections": [
+        {
+          "id": "e01",
+          "beat": "clip-01.b05",
+          "part": "explain",
+          "motion": "stagger",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Công thức nè: mấy giờ, ở đâu, gặp gì, thì làm gì.",
+              "en": "When, where, what cue, THEN what.",
+              "hl": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e02",
+          "beat": "clip-01.b06",
+          "part": "explain",
+          "motion": "strikethrough-replace",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "neutral",
+              "text": "Ví dụ: chín giờ tối, gập laptop lại, thì mở một bài listening.",
+              "en": "9 PM, laptop closed: one listening lesson.",
+              "hl": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e03",
+          "beat": "clip-01.b07",
+          "part": "evidence",
+          "motion": "count-up",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Gộp chín mươi tư kiểm nghiệm độc lập: ai viết nếu–thì, làm xong mục tiêu nhiều hơn hẳn.",
+              "en": "94 independent tests: if-then planners reached goals more often.",
+              "hl": [
+                0,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e04",
+          "beat": "clip-01.b08",
+          "part": "explain",
+          "motion": "underline-draw",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "neutral",
+              "text": "Nó giúp lúc bắt đầu, lúc Messenger réo, và lúc nên bỏ việc chắc chắn không thành.",
+              "en": "It helps you start, hold on when Messenger pings, and quit what can't work.",
+              "hl": [
+                3,
+                7,
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "engine": "remotion",
+      "scenes": [
+        {
+          "id": "b09",
+          "beat": "clip-01.b09",
+          "part": "payoff",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.3,
+              "pose": "standing",
+              "action": "idle",
+              "expression": "neutral",
+              "facing": "right"
+            },
+            {
+              "id": "omi",
+              "x": 0.72,
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused",
+              "facing": "left"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "omi",
+              "emotion": "focused",
+              "text": "Mà nhớ nha: việc **hông thật sự muốn** thì viết cỡ nào cũng vậy.",
+              "en": "Only works for goals you actually want.",
+              "hl": [
+                5,
+                6
+              ]
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Okay. Chín giờ tối nay, mình có hẹn với **TOEIC**.",
+              "en": "Okay. 9 PM tonight: date with TOEIC.",
+              "hl": [
+                6
+              ],
+              "set": {
+                "hiep": {
+                  "expression": "happy",
+                  "action": "reacting"
+                },
+                "omi": {
+                  "expression": "happy",
+                  "action": "idle"
+                }
+              },
+              "say": "Ô kê. Chín giờ tối nay, mình có hẹn với tô ích."
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 1,
+              "offset": 0.2
+            }
+          ]
+        },
+        {
+          "id": "b10",
+          "beat": "clip-01.b10",
+          "part": "cta",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.3,
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy",
+              "facing": "right"
+            },
+            {
+              "id": "omi",
+              "x": 0.72,
+              "pose": "standing",
+              "action": "idle",
+              "expression": "happy",
+              "facing": "left"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Còn bạn? Viết một câu **nếu–thì** cho cái “mai” của bạn, rồi comment nha.",
+              "en": "Your turn: one if-then line. Drop it in the comments.",
+              "hl": [
+                3,
+                4
+              ]
+            },
+            {
+              "speaker": "omi",
+              "emotion": "happy",
+              "text": "Cái “mai” hết đường trốn rồi nha.",
+              "en": "“Tomorrow” has nowhere to hide.",
+              "hl": [
+                0
+              ],
+              "set": {
+                "hiep": {
+                  "action": "idle"
+                },
+                "omi": {
+                  "action": "reacting"
+                }
+              },
+              "take": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

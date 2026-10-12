@@ -48,7 +48,7 @@ export const DialogueSchema = z.object({
   style: z.enum(["speech", "thought", "shout"]).default("speech"),
   /** Voice emotion for the TTS step (rule-46). Defaults to the speaker's current expression. */
   emotion: z.string().optional(),
-  /** Filled by `npm run voice` (VieNeu-TTS, Omi only). src is relative to public/. */
+  /** Filled by `npm run voice` (VieNeu-TTS, characters with a voice preset). src is relative to public/. */
   audio: z.object({ src: nonEmpty, duration: z.number().positive(), envelope: z.array(z.number().min(0).max(1)).default([]), engine: z.string().optional() }).optional(),
 });
 
@@ -70,7 +70,9 @@ export const SceneSchema = z.object({
   }).default({}),
   characters: z.array(CharacterCueSchema).default([]),
   dialogue: z.array(DialogueSchema).default([]),
-  caption: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional(), highlight: z.array(z.number().int().nonnegative()).default([]) }).optional(),
+  caption: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional(), highlight: z.array(z.number().int().nonnegative()).default([]),
+    /** Optional per-line caption segments synced to voice lines (one segment visible at a time). Overrides text/start/end when present. */
+    segments: z.array(z.object({ text: nonEmpty, start: seconds, end: seconds, highlight: z.array(z.number().int().nonnegative()).default([]) })).optional() }).optional(),
   narration: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional() }).optional(),
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
   beat: z.string().optional().describe("repo beat id, e.g. clip-01.b02"),

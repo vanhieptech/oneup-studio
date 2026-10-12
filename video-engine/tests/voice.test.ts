@@ -8,20 +8,20 @@ import { hasAudio } from "../src/rendering/render";
 const plan = () => JSON.parse(readFileSync(new URL("../../content/samples/sample-full-w5/plan.json", import.meta.url), "utf8"));
 
 describe("Omi voice (rule-46)", () => {
-  it("only Omi lines get a synthetic voice; Hiệp is never voiced", () => {
+  it("each character uses its own preset (Hiệp: Đức Trí, Omi: Kim Thanh; DL-030)", () => {
     const r = validatePlan(plan()); expect(r.ok).toBe(true);
     const jobs = collectVoiceJobs(r.ok ? r.plan : (null as never));
-    expect(jobs.length).toBe(2);
-    expect(jobs.every((j) => j.voice === "Kim Thanh")).toBe(true);
-    expect(jobs[0].emotion).toBe("teasing"); // explicit emotion wins
-    expect(jobs[1].emotion).toBe("focused"); // falls back to expression at line start
+    expect(jobs.length).toBe(4);
+    expect(jobs.map((j) => j.voice)).toEqual(["Đức Trí", "Kim Thanh", "Kim Thanh", "Đức Trí"]);
+    expect(jobs[1].emotion).toBe("teasing"); // explicit emotion wins
+    expect(jobs[2].emotion).toBe("focused"); // falls back to expression at line start
   });
   it("cache key is stable for identical text/voice/emotion", () => {
     const r = validatePlan(plan()); if (!r.ok) throw 0;
     expect(collectVoiceJobs(r.plan)[0].key).toBe(collectVoiceJobs(r.plan)[0].key);
   });
-  it("rejects AI audio attached to a real person", () => {
-    const p = plan(); p.scenes[0].dialogue[0].audio = { src: "voice/x.wav", duration: 1, envelope: [] };
+  it("rejects AI audio on a speaker without a declared voice preset", () => {
+    const p = plan(); p.scenes[0].dialogue.push({ speaker: "narrator", text: "x", start: 0.1, end: 0.5 }); p.scenes[0].dialogue[2].audio = { src: "voice/x.wav", duration: 1, envelope: [] };
     const r = validatePlan(p); expect(r.ok).toBe(false);
     expect(r.issues.some((i) => i.message.includes("rule-46"))).toBe(true);
   });
