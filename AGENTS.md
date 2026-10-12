@@ -13,7 +13,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 |---|---|
 | Luật (id `rule-N` = mục N) | `rules/video-rules.md` |
 | Lịch sử quyết định, góp ý (id `DL-NNN`) | `logs/decision-log.md`, **đọc trước mỗi clip** (rule-33) |
-| Giọng nói của Hiệp | `content/voice-profile.md` |
+| Giọng nói của Hiệp | `content/voice-profile.md` (confirmed) · chuyện thật: `content/story-bank.md` |
 | Brand (màu, font, logo, caption) | `brand/brand-tokens.json` (máy đọc), `brand/brand-index.md` (người đọc) |
 | Thứ tự đăng + theme | `content/theme-map.md` |
 | Một clip (id `clip-NN`) | `content/clips/clip-NN-<slug>/`: `script.md`, `shot-list.md`, `beat-sheet.md`, `storyboard/spec.json` |

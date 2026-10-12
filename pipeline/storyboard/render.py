@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Shared storyboard renderer (rule-36). Source of truth = <clip>/storyboard/spec.json.
-Usage: python3 pipeline/storyboard/render.py content/clips/<clip-id>   (needs google-chrome or Chrome.app, Pillow optional)
+Usage: python3 pipeline/storyboard/render.py content/clips/<clip-id> [spec-v3.json]   (needs google-chrome or Chrome.app, Pillow optional)
 Edits on feedback: change spec.json (or this renderer for shared style), re-render, commit referencing decision-log id."""
 import json, math, random, html, sys, os, subprocess, shutil, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -37,6 +37,7 @@ SKETCH = {  # placeholder silhouettes for live shots (coords in 900-wide box)
  'hand': lambda d: d.rect(220,470,440,380,5,GREY)+d.line(330,640,560,620,4,LGREY)+d.line(560,620,690,470,7,GREY)+d.circle(700,455,26,5,GREY,1),
  'clock': lambda d: d.circle(450,640,180,6,GREY)+d.line(450,640,450,520,7,GREY)+d.line(450,640,530,640,7,GREY)+"".join(d.line(450+165*math.cos(a),640+165*math.sin(a),450+145*math.cos(a),640+145*math.sin(a),4,GREY,passes=1) for a in [i*math.pi/6 for i in range(12)]),
  'laptop': lambda d: d.rect(270,480,360,240,5,GREY)+d.line(200,760,700,760,6,GREY)+d.line(270,720,200,760,5,GREY)+d.line(630,720,700,760,5,GREY),
+ 'phone': lambda d: d.rect(330,380,240,440,6,GREY)+d.line(400,410,500,410,4,LGREY,passes=1)+d.circle(450,780,16,4,GREY,1)+d.line(180,880,720,880,5,LGREY),
  'strike': lambda d: d.rect(260,430,380,470,5,GREY)+d.line(300,560,600,560,3,LGREY,passes=1)+d.line(300,640,600,640,3,LGREY,passes=1)+d.line(290,642,610,630,6,GREY),
 }
 def svg_el(d, e, col):
@@ -55,12 +56,13 @@ def svg_el(d, e, col):
 def css(fonts, col):
     ff = "".join(f'@font-face{{font-family:BVP;src:url({fonts}BeVietnamPro-{n}.ttf);font-weight:{w}}}' for n, w in [('Regular',400),('Medium',500),('SemiBold',600),('Bold',700)])
     return ff+open(pathlib.Path(__file__).parent/'style.css').read().replace('$BG', col['bg']).replace('$INK', col['ink']).replace('$MUTED', col['muted']).replace('$BORDER', col['border'])
-def render(clip):
-    clip = pathlib.Path(clip).resolve(); sb = clip/'storyboard'; spec = json.load(open(sb/'spec.json'))
+def render(clip, spec_name='spec.json'):
+    clip = pathlib.Path(clip).resolve(); src = clip/'storyboard'; spec = json.load(open(src/spec_name))
+    sb = src/spec['out'] if spec.get('out') else src; sb.mkdir(exist_ok=True)
     theme = spec['theme'].lower(); col = dict(TOK['colors'][theme]); col['green'] = col['success']
     fonts = (ROOT/'brand/fonts').as_uri()+'/'; logo = (ROOT/spec.get('logo', 'brand/logos/05-pair-plus.svg')).read_text().split('?>')[-1]
     logo = logo.replace('<svg ', f'<svg width="72" height="72" style="color:{col["ink"]}" ', 1).replace('svg{color:#111111}', '')
-    build = sb/'.build'; build.mkdir(exist_ok=True); C = chrome()
+    build = src/'.build'; build.mkdir(exist_ok=True); C = chrome()
     for b in spec['beats']:
         d = D(spec.get('seed', 7)*100+b['n'], col['ink'])
         cap = b['caption']; hl = cap['highlight']
@@ -81,4 +83,4 @@ def render(clip):
     sh = build/'sheet.html'; sh.write_text(f'<!doctype html><meta charset="utf-8"><style>{css(fonts,col)}{open(pathlib.Path(__file__).parent/"sheet.css").read()}</style><div class="sheet"><h1>{html.escape(spec["title"])}</h1><div class="sub">{html.escape(spec["subtitle"])}</div><div class="g">{cells}</div></div>')
     subprocess.run([C, '--headless=new', '--no-sandbox', '--disable-gpu', '--hide-scrollbars', '--window-size=2400,2200', '--virtual-time-budget=4000', f'--screenshot={sb}/storyboard.png', sh.as_uri()], capture_output=True)
     print('rendered', len(spec['beats']), 'beats ->', sb)
-if __name__ == '__main__': render(sys.argv[1])
+if __name__ == '__main__': render(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else 'spec.json')  # optional variant spec, e.g. spec-v3.json (writes to spec['out'])

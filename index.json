@@ -58,6 +58,14 @@
    "title": "Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2"
   },
   {
+   "id": "clip-01.script-v3-draft",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-12",
+   "path": "content/clips/clip-01-implementation-intention/script-v3-draft.md",
+   "title": "Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1"
+  },
+  {
    "id": "clip-01.script",
    "type": "script",
    "status": "awaiting-approval",
@@ -82,6 +90,14 @@
    "title": "Idea bank"
   },
   {
+   "id": "story-bank",
+   "type": "plan",
+   "status": "needs-confirmation",
+   "updated": "2026-10-12",
+   "path": "content/story-bank.md",
+   "title": "Story bank: chuyện thật của Hiệp (rule-41)"
+  },
+  {
    "id": "theme-map",
    "type": "plan",
    "status": "active",
@@ -92,7 +108,7 @@
   {
    "id": "voice-profile",
    "type": "profile",
-   "status": "draft-needs-input",
+   "status": "confirmed",
    "updated": "2026-10-12",
    "path": "content/voice-profile.md",
    "title": "Voice profile: Hiệp (@hi.oneup)"
@@ -422,6 +438,11 @@
    "id": "rule-40",
    "title": "Polish script (humanizer + voice)",
    "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-41",
+   "title": "Kể chuyện trước",
+   "path": "rules/video-rules.md"
   }
  ],
  "clips": [
@@ -432,6 +453,7 @@
    "files": [
     "beat-sheet.md",
     "script-v2.1-draft.md",
+    "script-v3-draft.md",
     "script.md",
     "shot-list.md",
     "storyboard"

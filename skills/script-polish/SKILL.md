@@ -27,9 +27,15 @@ description: >-
    - Use the profile's pronouns (mình/bạn by default).
    - Numbers are written the way they are read aloud ("chín mươi tư").
    - Leave room to breathe: mark `/` for a short pause.
-4. **Voice pass.**
+4. **Voice pass.** Apply the confirmed profile:
+   - Use the profile's region and particles, sparingly.
+   - Use its humor style. For @hi.oneup that is 4/5 sly teasing aimed at habits and at the creator himself, never at viewers or groups.
+   - Use its English-mix rule: 1–3 words per clip, to lighten the mood or stress the key idea.
+   - Copy the do/don't examples in the profile.
+5. **Story pass (rule-41).** Prefer a personal story arc (situation → struggle → turn → lesson → invite) built from a story-bank entry. Mark each unconfirmed detail `[CẦN HIỆP XÁC NHẬN]`. Never invent outcomes, like "it worked", that the creator hasn't confirmed.
+6. **Voice details.**
    - Use only the creator's real phrases, examples and level of humor from the profile.
    - Never invent a personal story. If a line needs one, insert `[VÍ DỤ THẬT CỦA HIỆP: ...]` as a placeholder.
-5. **Trend check (rule-37).** At least one current phrase or situation from `research/trends/ingest.md` must stay in the script, used naturally.
-6. **Diff + verify.** Output the old and new lines side by side, list the facts and confirm each is unchanged, and keep the target length (55–60s ≈ 150–170 Vietnamese words).
-7. Save as `script-vX.Y-draft.md` next to the approved version. Never overwrite the approved script until the creator approves.
+7. **Trend check (rule-37).** At least one current phrase or situation from `research/trends/ingest.md` must stay in the script, used naturally.
+8. **Diff + verify.** Output the old and new lines side by side, list the facts and confirm each is unchanged, and keep the target length (55–60s ≈ 150–170 Vietnamese words).
+9. Save as `script-vX.Y-draft.md` next to the approved version. Never overwrite the approved script until the creator approves.

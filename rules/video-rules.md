@@ -93,7 +93,13 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
     - Khoá fact: số liệu, nghiên cứu, trích dẫn giữ nguyên. Không bịa chuyện cá nhân, dùng placeholder `[VÍ DỤ THẬT CỦA HIỆP]`.
     - Lưu thành `script-vX.Y-draft.md` cạnh bản đã duyệt, không ghi đè.
 
+41. **Kể chuyện trước:**
+    - Script mặc định theo mạch chuyện cá nhân: tình huống → vật lộn → bước ngoặt → bài học (HowToLiveBetter, fact giữ nguyên) → mời gọi.
+    - Chuyện **chỉ được là chuyện thật của Hiệp**, lấy từ `content/story-bank.md`. Chi tiết chưa xác nhận thì ghi `[CẦN HIỆP XÁC NHẬN]` và phải được xác nhận trước khi thu. Không bao giờ bịa chuyện hay kết quả.
+    - Giọng theo `content/voice-profile.md` (đã xác nhận): mình/bạn, miền Nam, hài 4/5 tinh tế, chen 1–3 từ tiếng Anh.
+
 ## Changelog
+- **v2.4, 12/10/2026:** luật 41 (kể chuyện trước, chỉ chuyện thật, voice profile đã xác nhận).
 - **v2.3, 12/10/2026:** luật 39 (bridge trend → bài học, lọc brand-safety), luật 40 (polish script bằng humanizer + voice profile).
 - **v2.2, 12/10/2026:** thêm luật 36 (storyboard theo spec + renderer chung, sửa thay vì tạo lại), luật 37 (script phải đọc trend ingest, có ≥1 cụm từ đang phổ biến), luật 38 (trend digest hằng ngày + sync). Thêm front-matter và id ổn định cho tài liệu.
 - **v2.1, 12/10/2026:** thêm luật 33 (nhật ký quyết định + retro tuần), luật 34 (chuẩn chất lượng premium), luật 35 (storyboard trước khi duyệt script).

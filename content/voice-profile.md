@@ -1,43 +1,36 @@
 ---
 id: voice-profile
 type: profile
-status: draft-needs-input
+status: confirmed
 updated: 2026-10-12
-tags: [voice, script, persona]
+tags: [voice, script, persona, southern-vi]
 ---
 # Voice profile: Hiệp (@hi.oneup)
-Dùng cho skill `script-polish`. Mẫu thật của Hiệp (mục 4) được ưu tiên hơn mọi quy tắc chung.
+Hiệp xác nhận ngày 2026-10-12 (DL-019). Skill `script-polish` áp dụng file này. Mẫu ghi âm thật (khi có) sẽ ưu tiên hơn.
 
-## 1. Những gì đã biết
-- Kỹ sư phần mềm (SE), đang tự làm app iOS **OneUp**, có AI companion tên **Omi**.
-- Nói tiếng Việt, đọc / viết được tiếng Anh. Video dùng giọng thật thu bằng iPhone.
-- Tone brand: **bình tĩnh, như một người bạn đồng hành**, không hustle, không la hét, không "thay đổi cuộc đời". Tối giản (ink / paper).
-- Khán giả: student, dân văn phòng, dev (VN).
-- Nội dung có dẫn chứng (HowToLiveBetter + nghiên cứu), có nói rõ giới hạn.
+## 1. Thông tin nền
+- Kỹ sư phần mềm (SE), tự làm app iOS **OneUp** với AI companion **Omi**.
+- Tone brand bình tĩnh, như bạn đồng hành, không hustle. Có số liệu, nói rõ giới hạn.
 
-## 2. Mặc định tạm thời (đến khi Hiệp trả lời)
-- Xưng hô: **mình – bạn**.
-- Mức hài: nhẹ (2/5), tự giễu nhẹ được, không cà khịa người khác.
-- Từ đệm: ít (tối đa khoảng 1 lần mỗi 2 câu).
-- Phương ngữ: trung tính, đọc tự nhiên theo giọng của Hiệp.
-- Câu ngắn, nhiều chỗ ngắt. Kết bằng hành động nhỏ hoặc câu hỏi, không chốt bằng khẩu hiệu.
-
-## 3. Câu hỏi cho Hiệp
-1. Bạn xưng hô thế nào khi nói chuyện với người xem: mình/bạn, tui/bạn, anh/em, tớ/cậu?
-2. Bạn nói giọng vùng nào (Bắc / Trung / Nam)? Có từ địa phương nào bạn hay dùng và muốn giữ không (ví dụ "nha", "á", "hông", "nhé", "đó")?
-3. Mức hài bạn muốn, từ 1 (nghiêm túc) đến 5 (lầy)? Tự giễu mình được không?
-4. 5–10 câu cửa miệng, cụm từ bạn hay nói (cả tiếng Anh chen vào, ví dụ "deadline", "ship", "bug")?
-5. Có từ hoặc kiểu nói nào bạn ghét, không bao giờ muốn nghe mình nói không?
-6. Bạn có muốn kể chuyện thật của mình không (làm OneUp, công việc SE, thất bại)? Kể đến mức nào?
-7. Bạn thích mở video kiểu nào: hỏi thẳng, kể một tình huống, hay nói một con số?
-8. Gửi giúp 2–3 mẫu: một đoạn ghi âm nói tự nhiên 1 phút (bất kỳ chủ đề), hoặc tin nhắn / caption / bài bạn từng viết.
-9. Tiếng Anh chen vào câu nói: nhiều, vừa, hay hạn chế?
-10. Nhắc đến người xem đang mệt / trì hoãn thì bạn muốn giọng: thông cảm, thẳng thắn, hay hài?
-
-## 4. Mẫu thật của Hiệp
-_(chưa có, chờ mục 3 câu 8)_
-
-## 5. Cụm từ đã duyệt / cấm
-| Duyệt | Cấm |
+## 2. Đã xác nhận
+| Mục | Cách dùng |
 |---|---|
-| _(chờ)_ | "bí quyết", "thay đổi cuộc đời", "đỉnh cao", "Bạn có biết…" (tell của AI) |
+| Xưng hô | **mình – bạn** |
+| Giọng | **miền Nam**, giữ từ đệm: nha, á, hông, nè, đó, hen, ha, luôn, thôi |
+| Hài | **4/5**: cà khịa, đá xéo, nhắc khéo, tinh tế. Chỉ trêu thói quen và tình huống (kể cả của chính mình), **không bao giờ** trêu người hay nhóm người cụ thể |
+| Tiếng Anh chen | Thỉnh thoảng, để bớt nghiêm túc hoặc làm nổi ý chính: "deadline", "work", "focus", "ship", "plan", "lock in". Khoảng 1–3 từ mỗi clip, không chen cả câu |
+| Từ cấm | Không có từ cấm riêng. Vẫn tránh các tell của AI (rule-40) |
+| Chuyện thật | Càng nhiều càng tốt. **Ưu tiên video kể chuyện** (rule-41). Chỉ dùng chuyện Hiệp đã xác nhận (`content/story-bank.md`) |
+
+## 3. Nên / Không nên (ví dụ)
+| Nên (giọng Hiệp) | Không nên |
+|---|---|
+| "Kế hoạch học của mình là… 'mai học'. Mai của mình dài cả tuần luôn á." | "Trì hoãn là kẻ thù lớn nhất của thành công." (khẩu hiệu) |
+| "Nghe hơi kỳ, mà nó **work** nha." | "Phương pháp này sẽ thay đổi cuộc đời bạn." (thổi phồng) |
+| "Ai mà lên giường rồi còn 'lướt xíu thôi'… mình biết, mình cũng vậy." (tự giễu) | "Mấy người lười thì nghe kỹ nè." (trêu người xem) |
+| "Cái 'mai' hết chỗ trốn hen." (nhắc khéo) | "Bạn có biết…?" / "Hãy cùng tìm hiểu…" (mở bài kiểu AI) |
+| "Việc bạn hông thật sự muốn thì viết cỡ nào cũng vậy." | Từ đệm ở cuối mọi câu ("nha… nha… nha") |
+| "Deadline hông có thì tự đặt nha." (chen tiếng Anh để nhấn ý) | "Let's lock in and be productive guys!" (cả câu tiếng Anh) |
+
+## 4. Mẫu thật
+_Chưa có. Khi Hiệp gửi ghi âm 1 phút, đặt link hoặc transcript ở đây._

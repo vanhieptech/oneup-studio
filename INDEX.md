@@ -16,11 +16,13 @@ tags: [index, retrieval]
 | brand-index | brand | active | `brand/brand-index.md` | @hi.oneup — Brand index cho video |
 | clip-01.beat-sheet | beat-sheet | draft | `content/clips/clip-01-implementation-intention/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
 | clip-01.script-v2.1-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
+| clip-01.script-v3-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v3-draft.md` | Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1 |
 | clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
 | clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
+| story-bank | plan | needs-confirmation | `content/story-bank.md` | Story bank: chuyện thật của Hiệp (rule-41) |
 | theme-map | plan | active | `content/theme-map.md` | Theme map — @hi.oneup (LIGHT / DARK theo tone) |
-| voice-profile | profile | draft-needs-input | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
+| voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v2) |
@@ -81,11 +83,12 @@ tags: [index, retrieval]
 | rule-38 | Trend digest hằng ngày |
 | rule-39 | Bridge từ trend sang bài học |
 | rule-40 | Polish script (humanizer + voice) |
+| rule-41 | Kể chuyện trước |
 
 ## Clips
 | id | theme | path | files |
 |---|---|---|---|
-| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, script-v2.1-draft.md, script.md, shot-list.md, storyboard |
+| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, script-v2.1-draft.md, script-v3-draft.md, script.md, shot-list.md, storyboard |
 
 ## Assets & tools
 | id | path | description |
