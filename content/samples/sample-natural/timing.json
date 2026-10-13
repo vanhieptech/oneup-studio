@@ -1,0 +1,75 @@
+{
+ "total": 20.004,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/samples/sample-natural/plan-A.voiced.json",
+   "dur": 14.75,
+   "mp4": "/workspace/oneup-studio/video-engine/out/sample-natural-A.mp4",
+   "fx": "circleopen"
+  },
+  {
+   "id": "E",
+   "engine": "hyperframes",
+   "dir": "/workspace/oneup-studio/content/samples/sample-natural/explainer",
+   "dur": 5.57,
+   "mp4": "/workspace/oneup-studio/content/samples/sample-natural/out/E.mp4",
+   "fx": null
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-01.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Kế hoạch học tô ích của mình là... mai học.",
+   "en": "My TOEIC study plan: “tomorrow.”",
+   "emotion": "sad",
+   "key": "vp-0fc9f8d3dd4a",
+   "local": 0.12,
+   "dur": 3.053,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-01.b03",
+   "scene": "b03",
+   "speaker": "omi",
+   "say": "Ủa? Nhóm chat nào cũng có dự án ma. Còn bạn á, có hẳn kỳ thi ma luôn nha!",
+   "en": "Everyone has a ghost project. You have a ghost exam.",
+   "emotion": "teasing",
+   "key": "vp-6bf93cb80535",
+   "local": 0.55,
+   "dur": 6.454,
+   "t": 4.173
+  },
+  {
+   "beat": "clip-01.b03",
+   "scene": "b03",
+   "speaker": "omi",
+   "say": "Nè, sửa đúng một câu thôi: nếu... thì...",
+   "en": "Fix one sentence: IF… THEN…",
+   "emotion": "focused",
+   "key": "vp-6a20a8a16202",
+   "local": 7.204,
+   "dur": 3.473,
+   "t": 10.827
+  },
+  {
+   "beat": "clip-01.b05",
+   "scene": "e01",
+   "speaker": "hiep",
+   "say": "Công thức nè: mấy giờ, ở đâu, gặp gì, thì làm gì.",
+   "en": "Here's the formula: when, where, what cue, THEN what.",
+   "emotion": "focused",
+   "key": "vp-e5f784aa43bc",
+   "local": 0.65,
+   "dur": 4.274,
+   "t": 15.05
+  }
+ ],
+ "partStarts": [
+  0.0,
+  14.434
+ ]
+}

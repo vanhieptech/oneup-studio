@@ -24,12 +24,13 @@ tags: [index, retrieval]
 | clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | sample-full-w5 | sample | internal (không đăng) | `content/samples/sample-full-w5/README.md` | Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer |
+| sample-natural | sample | None | `content/samples/sample-natural/README.md` | sample-natural (DL-033): natural-prosody voice + lint-clean HyperFrames explainer |
 | story-bank | plan | needs-confirmation | `content/story-bank.md` | Story bank: chuyện thật của Hiệp (rule-41) |
 | theme-map | plan | active | `content/theme-map.md` | Theme map — @hi.oneup (LIGHT / DARK theo tone) |
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
-| hyperframes-audit-2026-10-13 | audit | open | `logs/hyperframes-audit-2026-10-13.md` | Audit: clip-01 explainer vs HyperFrames skills (DL-032) |
+| hyperframes-audit-2026-10-13 | audit | partial (sample fixed, clip-01 port pending) | `logs/hyperframes-audit-2026-10-13.md` | Audit: clip-01 explainer vs HyperFrames skills (DL-032) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
 | refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |

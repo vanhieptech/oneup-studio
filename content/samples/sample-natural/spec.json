@@ -1,0 +1,228 @@
+{
+ "id": "sample-natural",
+ "clip": "clip-01",
+ "title": "Sample: natural prosody (b01+b03 comic → e01 explainer)",
+ "week": 5,
+ "weekNote": "SAMPLE ONLY (Omi present → week ≥5, DL-033)",
+ "theme": "light",
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "transitionOut": "circleopen",
+   "scenes": [
+    {
+     "id": "b01",
+     "beat": "clip-01.b01",
+     "part": "hook",
+     "background": "bed",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "narration": "11:48 PM",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "sad"
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "text": "Kế hoạch học TOEIC của mình là… **mai học**.",
+       "en": "My TOEIC study plan: “tomorrow.”",
+       "hl": [
+        4
+       ],
+       "phrases": [
+        {
+         "t": "Kế hoạch học tô ích của mình là...",
+         "gap": 0.42,
+         "tempo": 0.96,
+         "semi": -0.3
+        },
+        {
+         "t": "mai học.",
+         "gap": 0,
+         "emph": true,
+         "tempo": 0.92
+        }
+       ]
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.0
+      }
+     ]
+    },
+    {
+     "id": "b03",
+     "beat": "clip-01.b03",
+     "part": "story",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.05,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.3,
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "sad"
+      },
+      {
+       "id": "omi",
+       "x": 0.74,
+       "pose": "standing",
+       "action": "idle",
+       "expression": "happy",
+       "facing": "left",
+       "enter": "pop"
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "omi",
+       "emotion": "teasing",
+       "text": "Ủa? Nhóm chat nào cũng có **dự án ma**. Còn bạn á, có hẳn **kỳ thi ma** luôn nha!",
+       "en": "Everyone has a ghost project. You have a ghost exam.",
+       "hl": [
+        3,
+        9
+       ],
+       "set": {
+        "hiep": {
+         "expression": "surprised",
+         "action": "reacting"
+        }
+       },
+       "phrases": [
+        {
+         "t": "Ủa?",
+         "gap": 0.22,
+         "semi": 1.2,
+         "tempo": 1.05
+        },
+        {
+         "t": "Nhóm chat nào cũng có dự án ma.",
+         "gap": 0.3
+        },
+        {
+         "t": "Còn bạn á, có hẳn",
+         "gap": 0.16,
+         "tempo": 1.04
+        },
+        {
+         "t": "kỳ thi ma luôn nha!",
+         "gap": 0,
+         "emph": true,
+         "semi": 0.3
+        }
+       ]
+      },
+      {
+       "speaker": "omi",
+       "emotion": "focused",
+       "text": "Nè, sửa đúng một câu thôi: **nếu…** thì…",
+       "en": "Fix one sentence: IF… THEN…",
+       "hl": [
+        3,
+        4
+       ],
+       "phrases": [
+        {
+         "t": "Nè,",
+         "gap": 0.22,
+         "semi": 0.5
+        },
+        {
+         "t": "sửa đúng một câu thôi:",
+         "gap": 0.3
+        },
+        {
+         "t": "nếu...",
+         "gap": 0.32,
+         "emph": true
+        },
+        {
+         "t": "thì...",
+         "gap": 0,
+         "emph": true
+        }
+       ],
+       "set": {
+        "omi": {
+         "action": "talking",
+         "expression": "focused"
+        },
+        "hiep": {
+         "expression": "confused",
+         "action": "idle"
+        }
+       }
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": -0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "engine": "hyperframes",
+   "dir": "explainer",
+   "sections": [
+    {
+     "id": "e01",
+     "beat": "clip-01.b05",
+     "part": "explain",
+     "motion": "stagger",
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Công thức nè: mấy giờ, ở đâu, gặp gì, thì làm gì.",
+       "en": "Here's the formula: when, where, what cue, THEN what.",
+       "hl": [
+        7
+       ],
+       "phrases": [
+        {
+         "t": "Công thức nè:",
+         "gap": 0.3,
+         "semi": 0.4,
+         "en": "Here's the formula:"
+        },
+        {
+         "t": "mấy giờ, ở đâu, gặp gì,",
+         "gap": 0.26,
+         "en": "when, where, what cue,"
+        },
+        {
+         "t": "thì làm gì.",
+         "gap": 0,
+         "emph": true,
+         "emph_semi": -0.5,
+         "en": "THEN what."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

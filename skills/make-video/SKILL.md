@@ -33,6 +33,15 @@ Write the script directly as the spec (format below). Structure rule-41: hook 0�
 - Story beats = comic (`engine: remotion`); explain/evidence beats = motion graphics (`engine: hyperframes`), rule-42.
 - Voice: "bạn", Southern particles on some (not all) lines, humor 4/5 aimed at habits, 1–3 English words.
 - Every line: `speaker`, `emotion`, `text` (bubble, `**bold**` = emphasis), `en` (caption, English only), `hl` (indexes of highlighted EN words), optional `say` (phonetic spelling for TTS, e.g. TOEIC → "tô ích", numbers as read), optional `take`.
+- **Voice prosody (required for new lines, DL-033):** give every line `phrases` so it sounds human, not read. `build-final.py` then voices it with `pipeline/scripts/voice-prosody.py` instead of the old sentence+stretch path:
+  `"phrases": [{"t": "Kế hoạch học tô ích của mình là...", "gap": 0.42, "tempo": 0.96, "semi": -0.3}, {"t": "mai học.", "emph": true, "en": "…"}]`
+  1. Split into breath groups of 3–8 syllables; keep each phrase's own punctuation (`...` trails off, `?` rises, `,` continues, `:` sets up). Never phrases of 1–2 syllables except a particle/interjection (`Ủa?`, `Nè,`).
+  2. `gap` after each phrase 0.15–0.42 s (comma ≈0.18, colon ≈0.26, ellipsis ≈0.38, before the punchline ≈0.4). Gaps are filled with room tone.
+  3. One `emph` per line (the punch word/phrase) → slower, +0.8 st, +1.5 dB. For a falling statement end use `"emph_semi": -0.5` (otherwise it can sound like a question).
+  4. Vary `tempo` (0.9–1.08) and `semi` (−0.5…+1.2): question/tease up, tired/sad down. Particles (á, nha, hông, ủa, nè) at phrase ends or as a lead-in, max 1–2 per line, and keep them inside a ≥3-syllable phrase (alone they get mangled).
+  5. Don't use `[cười]` / `[thở dài]` tags with presets: STT showed they get spoken as words ("Thì…", "hờt"). Show the laugh/sigh in the face instead.
+  6. The script picks the best of 3 takes per phrase (STT ≥ 0.7 gate, F0 range, artifacts), checks the whole line by STT (toneless ≥ 0.92) and re-rolls weak phrases; a `warn: … line STT sim` in the build log = rewrite the phrase or the `say` spelling.
+  7. Optional per-phrase `en` = caption chunk timed to that phrase (better sync than one EN line spread evenly).
 
 ```jsonc
 { "id": "clip-NN-final", "clip": "clip-NN", "title": "…", "week": 1, "theme": "light", "pillar": "…", "trend": "<ingest id>",
@@ -52,7 +61,7 @@ Write the script directly as the spec (format below). Structure rule-41: hook 0�
 ```
 **HyperFrames skills (required, rule-42, DL-032).** Before writing or editing any `engine: hyperframes` beat, read `skills/hyperframes/README.md` and then in order `hyperframes/SKILL.md` (router), `hyperframes-core`, `hyperframes-animation`, `hyperframes-creative` (brand rules win on palette/font), `hyperframes-registry` (check for a block before hand-building), `hyperframes-cli`. Run `npx hyperframes lint` (Node ≥ 22) on the explainer before rendering. Open gaps in the clip-01 reference: `logs/hyperframes-audit-2026-10-13.md`.
 
-Explainer visuals: copy `clip-01…/final/explainer/` (fonts, logo, package.json) and write `index.html.tpl` for the new content. It receives `__TIMING__` (sections → lines → `words[].start` for each spoken VI word, `cap`) and `__DUR__`; tie each animation to the spoken word that names it. GSAP local, transforms only (HyperFrames lint), Be Vietnam Pro.
+Explainer visuals: copy **`content/samples/sample-natural/explainer/`** (the lint-clean reference, DL-033: host `index.html.tpl` + one sub-composition per section in `compositions/<eNN>.html.tpl` + `compositions/captions.html.tpl`). Every `*.tpl` receives `__TIMING__`, `__DUR__` and per section `__START_<id>__` / `__DUR_<id>__`, used as the section host's real `data-start`/`data-duration` (the runtime hides it outside its window; never fake visibility with opacity). Inside a section: animate children with `fromTo` (never the clip, no CSS transform on tweened nodes, no exit tweens except the last scene), convert times with `t - __START_<id>__`. Captions = brand-styled adaptation of registry `caption-pill-karaoke` (group ≤4 words, karaoke step, hard-kill at group end), host carries `data-track-kind="captions"`. Section-to-section transitions: `hyperframes-animation/transitions/catalog.md` (push slide primary). Gate: `npx hyperframes lint` **and** `npx hyperframes check` must both report 0 errors / 0 warnings (build-final runs lint before rendering). GSAP local, Be Vietnam Pro.
 Motion: run `skills/motion-picks-per-script` → one main effect per beat (`motion` field + table in script-final.md) → append to `logs/effects-log.md`.
 
 ## 3. Polish

@@ -13,3 +13,7 @@ refs/awesome-ai-motion/
 content/samples/**/explainer/renders/
 content/clips/**/final/out/
 content/clips/**/final/*.mp4
+__pycache__/
+content/samples/**/out/
+content/samples/**/explainer/snapshots/
+video-engine/public/voice/_prosody-job.json

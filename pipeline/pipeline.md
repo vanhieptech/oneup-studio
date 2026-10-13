@@ -26,6 +26,7 @@ tags: [pipeline, workflow]
 | 9 | Chọn motion | `skills/motion-picks-per-script` | Tự động | `logs/effects-log.md` |
 | 10 | Lấy tài sản (Phosphor, SFX CC0; không stock người thật) | `scripts/04-fetch-assets.py` | Tự động | `assets/` |
 | 10b | Giọng Omi (nếu tuần ≥ 5 và Omi nói) | `npm run voice` (VieNeu-TTS local, luật 46) → `plan.voiced.json` + ASR kiểm chữ | Tự động | `video-engine/public/voice/` |
+| 10c | Prosody giọng (DL-033): line có `phrases` → cụm hơi + nghỉ 150–420ms + nhấn + 3 take/cụm chọn theo STT/F0/lỗi + master | `pipeline/scripts/voice-prosody.py` (gọi từ `build-final.py`; `--metrics a.wav` để đo F0/pause) | Tự động | `video-engine/public/voice/vp-*.wav|json` |
 | 11 | Dựng composition | Beat kể chuyện: `video-engine/` (Remotion, plan JSON, luật 45). Beat giải thích: `templates/hyperframes-base` (HyperFrames, Node ≥ 22; + Manim cho biểu đồ). **Bắt buộc đọc trước** `skills/hyperframes/` (router → core → animation → creative → registry → cli) và chạy `hyperframes lint`. Ghép: `pipeline/scripts/join-beats.sh` | Agent | `content/clips/NN-slug/comp/`, `out/*.mp4` |
 | 12 | Render nháp | box | Tự động | `renders/NN-slug/draft.mp4` |
 | 13 | QA (lint, snapshot, safe-zone, dấu tiếng Việt, LUFS, checklist anti-AI) | `scripts/05-qa.sh` | Tự động | `qa.md` |

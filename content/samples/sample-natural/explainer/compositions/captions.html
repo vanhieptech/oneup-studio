@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="UTF-8" /></head>
+<body>
+<template>
+<!-- EN captions (rule-1/16). Adapted from registry component caption-pill-karaoke (hyperframes add caption-pill-karaoke):
+     groups ≤4 words split at punctuation/pauses, karaoke colour step per word, deterministic hard-kill at group end. Brand: BVP, ink/paper. -->
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+#cap-root{position:absolute;inset:0;pointer-events:none;font-family:"BVP"}
+#cap-root .grp{position:absolute;left:70px;right:70px;top:1500px;display:flex;justify-content:center;opacity:0}
+#cap-root .pill{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;max-width:940px;background:#F7F7F5;border:6px solid #111;border-radius:36px;padding:20px 34px 26px;box-shadow:8px 10px 0 #111}
+#cap-root .w{font-size:58px;font-weight:700;line-height:1.18;letter-spacing:-.5px;color:#8C8C8A;display:block;padding:2px 0 6px}
+#cap-root .w.hl{border-radius:18px;padding:2px 16px 6px}
+</style>
+<div id="cap-root" data-composition-id="captions" data-width="1080" data-height="1920"></div>
+<script>
+(function () {
+  const T = {"sections": [{"id": "e01", "start": 0.35, "end": 5.474, "lines": [{"start": 0.65, "end": 4.924, "capEnd": 5.174, "words": [{"w": "Công", "start": 0.71}, {"w": "thức", "start": 0.973}, {"w": "nè:", "start": 1.237}, {"w": "mấy", "start": 1.756}, {"w": "giờ,", "start": 2.096}, {"w": "ở", "start": 2.504}, {"w": "đâu,", "start": 2.708}, {"w": "gặp", "start": 3.117}, {"w": "gì,", "start": 3.457}, {"w": "thì", "start": 4.057}, {"w": "làm", "start": 4.319}, {"w": "gì.", "start": 4.582}], "hl": [7], "cap": [{"word": "Here's", "start": 0.71}, {"word": "the", "start": 0.969}, {"word": "formula:", "start": 1.132}, {"word": "when,", "start": 1.756}, {"word": "where,", "start": 2.285}, {"word": "what", "start": 2.89}, {"word": "cue,", "start": 3.343}, {"word": "THEN", "start": 4.057}, {"word": "what.", "start": 4.42}]}]}]}, root = document.getElementById("cap-root"), tl = gsap.timeline({ paused: true });
+  const MAXW = 4, BUF = 0.25;
+  const words = []; T.sections.forEach(s => s.lines.forEach(l => l.cap.forEach((c, i) => words.push({ text: c.word, start: c.start, hl: l.hl.includes(i), lineEnd: l.capEnd, last: i === l.cap.length - 1 }))));
+  const groups = []; let cur = [];
+  words.forEach(w => { cur.push(w); if (cur.length >= MAXW || /[,.:!?…]$/.test(w.text) || w.last) { groups.push(cur); cur = []; } });
+  if (cur.length) groups.push(cur);
+  groups.forEach((g, gi) => {
+    const el = document.createElement("div"); el.className = "grp"; el.id = "cg" + gi;
+    const pill = document.createElement("div"); pill.className = "pill"; el.appendChild(pill);
+    g.forEach((w, wi) => { const s = document.createElement("span"); s.className = "w" + (w.hl ? " hl" : ""); s.id = "cw" + gi + "_" + wi; s.textContent = w.text; pill.appendChild(s); });
+    root.appendChild(el);
+    const start = g[0].start, nxt = groups[gi + 1];
+    const end = nxt ? Math.min(nxt[0].start, g[g.length - 1].last ? g[g.length - 1].lineEnd : g[g.length - 1].start + 0.9 + BUF) : g[g.length - 1].lineEnd;
+    tl.fromTo(el, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, start - 0.05);
+    g.forEach((w, wi) => tl.set("#cw" + gi + "_" + wi, w.hl ? { color: "#F7F7F5", backgroundColor: "#111" } : { color: "#111" }, Math.max(start - 0.05, w.start - 0.04)));
+    tl.set(el, { opacity: 0, visibility: "hidden" }, end);   // caption hard-kill (non-clip child)
+  });
+  window.__timelines["captions"] = tl;
+})();
+</script>
+</template>
+</body></html>

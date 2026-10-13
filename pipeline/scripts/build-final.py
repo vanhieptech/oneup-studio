@@ -31,6 +31,7 @@ def profiles():
     return {j["id"]: j for j in (json.load(open(os.path.join(d, f))) for f in os.listdir(d) if f.endswith(".json"))}
 
 def spoken(line):
+    if line.get("phrases"): return " ".join(re.sub(r"\[[^\]]*\]\s*", "", p["t"]) for p in line["phrases"])
     return line.get("say") or re.sub(r"\*\*|[“”\"]", "", line["text"]).replace("…", ",").strip()
 
 def all_lines(spec):
@@ -43,19 +44,28 @@ def voice_key(preset, emotion, text, take=1):
     return hashlib.sha1(json.dumps(["vieneu-tts", preset, emotion, text, 4] + ([take] if take != 1 else []), ensure_ascii=False).encode()).hexdigest()[:12]
 
 def stage_voice(spec):
-    prof = profiles(); jobs = []
+    prof = profiles(); jobs = []; pjobs = []
     for _, _, l in all_lines(spec):
+        if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
+            v = prof[l["speaker"]]["voice"]["preset"]
+            l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, [{k: x for k, x in ph.items() if k != "en"} for ph in l["phrases"]], "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
+            pjobs.append({"voice": v, "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
+            continue
         v = prof[l["speaker"]].get("voice")
         if not v: raise SystemExit(f"{l['speaker']} has no voice preset in its profile (rule-46)")
         k = voice_key(v["preset"], l["emotion"], spoken(l), l.get("take", 1))  # bump "take" in the spec to re-roll a line that fails STT
         l["_key"] = k
         jobs.append({"text": spoken(l), "voice": v["preset"], "emotion": l["emotion"], "out": os.path.join(VE, "public/voice", k)})
-    todo = [j for j in jobs if not os.path.exists(j["out"] + ".wav")]
-    print(f"voice: {len(jobs)} lines, {len(jobs)-len(todo)} cached")
-    sh([PY, os.path.join(REPO, "pipeline/tts/vieneu_tts.py"), json.dumps({"fps": FPS, "jobs": jobs}, ensure_ascii=False)], stdout=subprocess.DEVNULL)
+    todo = [j for j in jobs + pjobs if not os.path.exists(j["out"] + ".wav")]
+    print(f"voice: {len(jobs) + len(pjobs)} lines ({len(pjobs)} prosody), {len(jobs) + len(pjobs) - len(todo)} cached")
+    if jobs: sh([PY, os.path.join(REPO, "pipeline/tts/vieneu_tts.py"), json.dumps({"fps": FPS, "jobs": jobs}, ensure_ascii=False)], stdout=subprocess.DEVNULL)
+    if pjobs:
+        jf = os.path.join(VE, "public/voice", "_prosody-job.json"); json.dump({"jobs": pjobs}, open(jf, "w"), ensure_ascii=False)
+        sh([PY, os.path.join(REPO, "pipeline/scripts/voice-prosody.py"), jf], stdout=subprocess.DEVNULL)
     for _, _, l in all_lines(spec):
         m = json.load(open(os.path.join(VE, "public/voice", l["_key"] + ".json")))
-        l["_dur"], l["_env"], l["_engine"] = m["duration"], m["envelope"], m["engine"]
+        l["_dur"], l["_env"], l["_engine"], l["_phr"] = m["duration"], m["envelope"], m["engine"], m.get("phrases")
+        if m.get("stt_sim", 1) < 0.85: print(f"warn: {l['_key']} line STT sim {m['stt_sim']}: {m.get('stt')}")
 
 def en_words(text, start, end, hl):
     ws = text.split(); w = [len(x) + 2 for x in ws]; tot = sum(w); acc = start; out = []
@@ -102,10 +112,17 @@ def explainer(spec, part, fdir):
         s0 = t; t += 0.3; lines = []
         for li, l in enumerate(sec["lines"]):
             st = round(t, 3); d = l["_dur"]
-            vw = spoken(l).split(); w = [len(x) + 2 for x in vw]; tot = sum(w); acc = st; words = []
-            for i, x in enumerate(vw): words.append({"w": x, "start": round(acc, 3)}); acc += d * w[i] / tot
+            words = []
+            if l.get("_phr"):  # real phrase boundaries from voice-prosody: spread words inside each phrase only
+                for ph in l["_phr"]:
+                    vw = re.sub(r"\[[^\]]*\]\s*", "", ph["text"]).split(); w = [len(x) + 2 for x in vw]; tot = sum(w); acc = st + ph["start"]
+                    for i, x in enumerate(vw): words.append({"w": x, "start": round(acc, 3)}); acc += (ph["end"] - ph["start"]) * w[i] / tot
+            else:
+                vw = spoken(l).split(); w = [len(x) + 2 for x in vw]; tot = sum(w); acc = st
+                for i, x in enumerate(vw): words.append({"w": x, "start": round(acc, 3)}); acc += d * w[i] / tot
             lines.append({"start": st, "end": round(st + d, 3), "capEnd": round(st + d + 0.25, 3), "words": words, "hl": l.get("hl", []),
-                          "cap": en_words(l["en"], st + 0.05, st + d - 0.1, l.get("hl", []))})
+                          "cap": ([w for ph, q in zip(l["phrases"], l["_phr"]) if ph.get("en") for w in en_words(ph["en"], st + q["start"], st + q["end"], [])]
+                                  if l.get("_phr") and any(ph.get("en") for ph in l["phrases"]) else en_words(l["en"], st + 0.05, st + d - 0.1, l.get("hl", [])))})
             mix.append((l["_key"], st))
             timing.append({"beat": sec["beat"], "scene": sec["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": d})
             t = st + d + 0.25
@@ -113,8 +130,19 @@ def explainer(spec, part, fdir):
         for i, ln in enumerate(lines[:-1]): ln["capEnd"] = min(ln["capEnd"], lines[i + 1]["start"])
         secs.append({"id": sec["id"], "start": round(s0, 3), "end": round(t, 3), "lines": lines})
     dur = round(t + 0.1, 2)
-    tpl = open(os.path.join(fdir, part["dir"], "index.html.tpl")).read()
-    open(os.path.join(fdir, part["dir"], "index.html"), "w").write(tpl.replace("__DUR__", str(dur)).replace("__TIMING__", json.dumps({"sections": secs}, ensure_ascii=False)))
+    # every *.tpl under the explainer dir (host index + sub-compositions) gets real timing (audit #2, DL-033):
+    # __DUR__, __TIMING__ and per-section __START_<id>__ / __DUR_<id>__ for the clip's data-start/data-duration
+    reps = {"__DUR__": str(dur), "__TIMING__": json.dumps({"sections": secs}, ensure_ascii=False)}
+    for i, sc in enumerate(secs):
+        end = secs[i + 1]["start"] if i + 1 < len(secs) else dur
+        reps[f"__START_{sc['id']}__"] = str(sc["start"] if i else 0); reps[f"__DUR_{sc['id']}__"] = str(round(end - (sc["start"] if i else 0), 3))
+    for root, _, files in os.walk(os.path.join(fdir, part["dir"])):
+        if "node_modules" in root: continue
+        for f in files:
+            if f.endswith(".tpl"):
+                txt = open(os.path.join(root, f)).read()
+                for k, v in reps.items(): txt = txt.replace(k, v)
+                open(os.path.join(root, f[:-4]), "w").write(txt)
     # voice track
     out = os.path.join(fdir, "out", f"{part['id']}-voice.wav")
     ins = []; flt = []
@@ -128,6 +156,7 @@ def explainer(spec, part, fdir):
 SFX = {  # in-house synthesized (no third-party license; logged in assets/sfx/SOURCES.md)
     "pop": "sine=f=520:d=0.09,afade=t=out:st=0.02:d=0.07,volume=0.35",
     "ding": "sine=f=1318:d=0.5,afade=t=out:st=0.03:d=0.47,volume=0.22",
+    "roomtone": "anoisesrc=d=120:c=brown:a=0.0025:r=48000,highpass=f=60,lowpass=f=3500",  # DL-033: bed under the whole clip, no digital silence between lines
     "whoosh": "anoisesrc=d=0.3:c=pink:a=0.25,bandpass=f=1500:w=900,afade=t=in:d=0.12,afade=t=out:st=0.14:d=0.16",
 }
 
@@ -162,6 +191,7 @@ def main():
         for q in parts:
             if q["engine"] == "hyperframes":
                 silent = q["mp4"].replace(".mp4", "-silent.mp4")
+                sh(["npx", "--yes", "hyperframes@0.8.150", "lint"], cwd=q["dir"])  # audit #1: lint gate (exit≠0 on error)
                 sh(["npx", "--yes", "hyperframes@0.8.150", "render", ".", "-o", silent, "-f", str(FPS), "--quality", "delivery"], cwd=q["dir"])
                 sh(["ffmpeg", "-loglevel", "error", "-y", "-i", silent, "-i", os.path.join(fdir, "out", f"{q['id']}-voice.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", q["mp4"]])
     # assemble (two passes: audio graph first, then video + mux; one big graph with lavfi sources can deadlock)
@@ -180,7 +210,7 @@ def main():
         vf.append(f"[{vprev}][v{i}]xfade=transition={fx}:duration={XF}:offset={off}[vx{i}]"); af.append(f"[{aprev}][a{i}]acrossfade=d={XF}:c1=tri:c2=tri[ax{i}]")
         vprev, aprev, acc = f"vx{i}", f"ax{i}", acc + parts[i]["dur"] - XF
     total = round(acc, 3)
-    sfx = [s for q in parts for s in q["sfx"]] + [("whoosh", round(st - 0.15, 3)) for st in starts[1:]]
+    sfx = [s for q in parts for s in q["sfx"]] + [("whoosh", round(st - 0.15, 3)) for st in starts[1:]] + [("roomtone", 0.0)]
     tmp = os.path.join(fdir, "out", "sfx"); os.makedirs(tmp, exist_ok=True); mixl = [f"[{aprev}]"]
     for j, (name, at) in enumerate(sfx):
         w = os.path.join(tmp, name + ".wav")

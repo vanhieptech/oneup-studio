@@ -122,6 +122,14 @@
    "title": "Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer"
   },
   {
+   "id": "sample-natural",
+   "type": "sample",
+   "status": null,
+   "updated": "2026-10-13",
+   "path": "content/samples/sample-natural/README.md",
+   "title": "sample-natural (DL-033): natural-prosody voice + lint-clean HyperFrames explainer"
+  },
+  {
    "id": "story-bank",
    "type": "plan",
    "status": "needs-confirmation",
@@ -164,7 +172,7 @@
   {
    "id": "hyperframes-audit-2026-10-13",
    "type": "audit",
-   "status": "open",
+   "status": "partial (sample fixed, clip-01 port pending)",
    "updated": "2026-10-13",
    "path": "logs/hyperframes-audit-2026-10-13.md",
    "title": "Audit: clip-01 explainer vs HyperFrames skills (DL-032)"
