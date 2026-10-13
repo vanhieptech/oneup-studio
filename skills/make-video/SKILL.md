@@ -50,6 +50,8 @@ Write the script directly as the spec (format below). Structure rule-41: hook 0�
     { "id": "B", "engine": "remotion", "scenes": [ … last scene part: "cta" … ] }
   ] }
 ```
+**HyperFrames skills (required, rule-42, DL-032).** Before writing or editing any `engine: hyperframes` beat, read `skills/hyperframes/README.md` and then in order `hyperframes/SKILL.md` (router), `hyperframes-core`, `hyperframes-animation`, `hyperframes-creative` (brand rules win on palette/font), `hyperframes-registry` (check for a block before hand-building), `hyperframes-cli`. Run `npx hyperframes lint` (Node ≥ 22) on the explainer before rendering. Open gaps in the clip-01 reference: `logs/hyperframes-audit-2026-10-13.md`.
+
 Explainer visuals: copy `clip-01…/final/explainer/` (fonts, logo, package.json) and write `index.html.tpl` for the new content. It receives `__TIMING__` (sections → lines → `words[].start` for each spoken VI word, `cap`) and `__DUR__`; tie each animation to the spoken word that names it. GSAP local, transforms only (HyperFrames lint), Be Vietnam Pro.
 Motion: run `skills/motion-picks-per-script` → one main effect per beat (`motion` field + table in script-final.md) → append to `logs/effects-log.md`.
 

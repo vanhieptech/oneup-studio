@@ -162,6 +162,14 @@
    "title": "Effects log"
   },
   {
+   "id": "hyperframes-audit-2026-10-13",
+   "type": "audit",
+   "status": "open",
+   "updated": "2026-10-13",
+   "path": "logs/hyperframes-audit-2026-10-13.md",
+   "title": "Audit: clip-01 explainer vs HyperFrames skills (DL-032)"
+  },
+  {
    "id": "rules-audit-2026-10-13",
    "type": "log",
    "status": "done",
@@ -319,6 +327,637 @@
    "updated": "2026-10-12",
    "path": "skills/humanizer/UPSTREAM.md",
    "title": "Humanizer (vendored, MIT)"
+  },
+  {
+   "id": "skills-hyperframes",
+   "type": "vendored-skills",
+   "status": null,
+   "updated": null,
+   "path": "skills/hyperframes/README.md",
+   "title": "HyperFrames official skills (vendored)"
+  },
+  {
+   "id": "skill.embedded-captions",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/embedded-captions/SKILL.md",
+   "title": "embedded-captions"
+  },
+  {
+   "id": "skill.standard",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/embedded-captions/modes/standard/_anatomy.md",
+   "title": "caption-template-anatomy"
+  },
+  {
+   "id": "skill.standard",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/embedded-captions/modes/standard/_motion.md",
+   "title": "caption-template-motion"
+  },
+  {
+   "id": "skill.faceless-explainer",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/faceless-explainer/SKILL.md",
+   "title": "faceless-explainer"
+  },
+  {
+   "id": "skill.figma",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/figma/SKILL.md",
+   "title": "figma"
+  },
+  {
+   "id": "skill.general-video",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/general-video/SKILL.md",
+   "title": "general-video"
+  },
+  {
+   "id": "skill.hyperframes",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes/SKILL.md",
+   "title": "hyperframes"
+  },
+  {
+   "id": "skill.hyperframes-animation",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/SKILL.md",
+   "title": "hyperframes-animation"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/animejs.md",
+   "title": "hyperframes-animejs"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/css-animations.md",
+   "title": "hyperframes-css-animations"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/gsap.md",
+   "title": "hyperframes-gsap-adapter"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/lottie.md",
+   "title": "hyperframes-lottie"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/three.md",
+   "title": "hyperframes-three"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/typegpu.md",
+   "title": "hyperframes-typegpu"
+  },
+  {
+   "id": "skill.adapters",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/adapters/waapi.md",
+   "title": "hyperframes-waapi"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/3d-camera-flight.md",
+   "title": "3d-camera-flight"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/3d-page-scroll.md",
+   "title": "3d-page-scroll"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/3d-text-depth-layers.md",
+   "title": "3d-text-depth-layers"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/ai-tracking-box.md",
+   "title": "ai-tracking-box"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/ambient-glow-bloom.md",
+   "title": "ambient-glow-bloom"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/anchored-layout-expand.md",
+   "title": "anchored-layout-expand"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/asr-keyword-glow.md",
+   "title": "asr-keyword-glow"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/avatar-cloud-network.md",
+   "title": "avatar-cloud-network"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/camera-cursor-tracking.md",
+   "title": "camera-cursor-tracking"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/card-morph-anchor.md",
+   "title": "card-morph-anchor"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/center-outward-expansion.md",
+   "title": "center-outward-expansion"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/chart-scrub-readout.md",
+   "title": "chart-scrub-readout"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/chromatic-glitch.md",
+   "title": "chromatic-glitch"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/context-sensitive-cursor.md",
+   "title": "context-sensitive-cursor"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/control-target-sync.md",
+   "title": "control-target-sync"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/coordinate-target-zoom.md",
+   "title": "coordinate-target-zoom"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/counting-dynamic-scale.md",
+   "title": "counting-dynamic-scale"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/cursor-click-ripple.md",
+   "title": "cursor-click-ripple"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/cursor-drag.md",
+   "title": "cursor-drag"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/depth-of-field-blur.md",
+   "title": "depth-of-field-blur"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/depth-scatter-assemble.md",
+   "title": "depth-scatter-assemble"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/discrete-text-sequence.md",
+   "title": "discrete-text-sequence"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/dynamic-content-sequencing.md",
+   "title": "dynamic-content-sequencing"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/gradient-text-sweep.md",
+   "title": "gradient-text-sweep"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/hacker-flip-3d.md",
+   "title": "hacker-flip-3d"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/kinetic-beat-slam.md",
+   "title": "kinetic-beat-slam"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/motion-blur-streak.md",
+   "title": "motion-blur-streak"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/multi-cursor-choreography.md",
+   "title": "multi-cursor-choreography"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/multi-phase-camera.md",
+   "title": "multi-phase-camera"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/nudge-curve.md",
+   "title": "nudge-curve"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/orbit-3d-entry.md",
+   "title": "orbit-3d-entry"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/particle-burst.md",
+   "title": "particle-burst"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/physics-press-reaction.md",
+   "title": "physics-press-reaction"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/press-release-spring.md",
+   "title": "press-release-spring"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/reactive-displacement.md",
+   "title": "reactive-displacement"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/scale-swap-transition.md",
+   "title": "scale-swap-transition"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/sine-wave-loop.md",
+   "title": "sine-wave-loop"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/split-tilt-cards.md",
+   "title": "split-tilt-cards"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/spring-pop-entrance.md",
+   "title": "spring-pop-entrance"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/stat-bars-and-fills.md",
+   "title": "stat-bars-and-fills"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/svg-icon-enrichment.md",
+   "title": "svg-icon-enrichment"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/svg-path-draw.md",
+   "title": "svg-path-draw"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/theme-crossfade-morph.md",
+   "title": "theme-crossfade-morph"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/vertical-spring-ticker.md",
+   "title": "vertical-spring-ticker"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/viewport-change.md",
+   "title": "viewport-change"
+  },
+  {
+   "id": "skill.rules",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-animation/rules/waterfall-entry.md",
+   "title": "waterfall-entry"
+  },
+  {
+   "id": "skill.hyperframes-audio",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-audio/SKILL.md",
+   "title": "hyperframes-audio"
+  },
+  {
+   "id": "skill.hyperframes-cli",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-cli/SKILL.md",
+   "title": "hyperframes-cli"
+  },
+  {
+   "id": "skill.hyperframes-core",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-core/SKILL.md",
+   "title": "hyperframes-core"
+  },
+  {
+   "id": "skill.hyperframes-creative",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/SKILL.md",
+   "title": "hyperframes-creative"
+  },
+  {
+   "id": "skill.biennale-yellow",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/biennale-yellow/FRAME.md",
+   "title": "Biennale Yellow — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.blockframe",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/blockframe/FRAME.md",
+   "title": "BlockFrame — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.blue-professional",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/blue-professional/FRAME.md",
+   "title": "Blue Professional — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.bold-poster",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/bold-poster/FRAME.md",
+   "title": "Bold Poster — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.broadside",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/broadside/FRAME.md",
+   "title": "Broadside — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.capsule",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/capsule/FRAME.md",
+   "title": "Capsule — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.cartesian",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/cartesian/FRAME.md",
+   "title": "Cartesian — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.cobalt-grid",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/cobalt-grid/FRAME.md",
+   "title": "Cobalt Grid — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.code-editorial",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/code-editorial/FRAME.md",
+   "title": "Code editorial — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.coral",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/coral/FRAME.md",
+   "title": "Coral — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.creative-mode",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/creative-mode/FRAME.md",
+   "title": "Creative Mode — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.daisy-days",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/daisy-days/FRAME.md",
+   "title": "Daisy Days — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.editorial-forest",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-creative/frame-presets/editorial-forest/FRAME.md",
+   "title": "Editorial Forest — Frame (video / frame layer)"
+  },
+  {
+   "id": "skill.hyperframes-keyframes",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-keyframes/SKILL.md",
+   "title": "hyperframes-keyframes"
+  },
+  {
+   "id": "skill.hyperframes-registry",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-registry/SKILL.md",
+   "title": "hyperframes-registry"
+  },
+  {
+   "id": "skill.hyperframes-studio",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/hyperframes-studio/SKILL.md",
+   "title": "hyperframes-studio"
+  },
+  {
+   "id": "skill.media-use",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/media-use/SKILL.md",
+   "title": "media-use"
+  },
+  {
+   "id": "skill.motion-graphics",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/motion-graphics/SKILL.md",
+   "title": "motion-graphics"
+  },
+  {
+   "id": "skill.music-to-video",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/music-to-video/SKILL.md",
+   "title": "music-to-video"
+  },
+  {
+   "id": "skill.pr-to-video",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/pr-to-video/SKILL.md",
+   "title": "pr-to-video"
+  },
+  {
+   "id": "skill.product-launch-video",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/product-launch-video/SKILL.md",
+   "title": "product-launch-video"
+  },
+  {
+   "id": "skill.remotion-to-hyperframes",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+   "title": "remotion-to-hyperframes"
+  },
+  {
+   "id": "skill.slideshow",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/slideshow/SKILL.md",
+   "title": "slideshow"
+  },
+  {
+   "id": "skill.talking-head-recut",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/hyperframes/talking-head-recut/SKILL.md",
+   "title": "talking-head-recut"
   },
   {
    "id": "skill.make-video",

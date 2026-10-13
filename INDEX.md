@@ -29,6 +29,7 @@ tags: [index, retrieval]
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
+| hyperframes-audit-2026-10-13 | audit | open | `logs/hyperframes-audit-2026-10-13.md` | Audit: clip-01 explainer vs HyperFrames skills (DL-032) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
 | refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
@@ -49,6 +50,96 @@ tags: [index, retrieval]
 | rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
 | skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
+| skills-hyperframes | vendored-skills | None | `skills/hyperframes/README.md` | HyperFrames official skills (vendored) |
+| skill.embedded-captions | skill | active | `skills/hyperframes/embedded-captions/SKILL.md` | embedded-captions |
+| skill.standard | skill | active | `skills/hyperframes/embedded-captions/modes/standard/_anatomy.md` | caption-template-anatomy |
+| skill.standard | skill | active | `skills/hyperframes/embedded-captions/modes/standard/_motion.md` | caption-template-motion |
+| skill.faceless-explainer | skill | active | `skills/hyperframes/faceless-explainer/SKILL.md` | faceless-explainer |
+| skill.figma | skill | active | `skills/hyperframes/figma/SKILL.md` | figma |
+| skill.general-video | skill | active | `skills/hyperframes/general-video/SKILL.md` | general-video |
+| skill.hyperframes | skill | active | `skills/hyperframes/hyperframes/SKILL.md` | hyperframes |
+| skill.hyperframes-animation | skill | active | `skills/hyperframes/hyperframes-animation/SKILL.md` | hyperframes-animation |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/animejs.md` | hyperframes-animejs |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/css-animations.md` | hyperframes-css-animations |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/gsap.md` | hyperframes-gsap-adapter |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/lottie.md` | hyperframes-lottie |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/three.md` | hyperframes-three |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/typegpu.md` | hyperframes-typegpu |
+| skill.adapters | skill | active | `skills/hyperframes/hyperframes-animation/adapters/waapi.md` | hyperframes-waapi |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/3d-camera-flight.md` | 3d-camera-flight |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/3d-page-scroll.md` | 3d-page-scroll |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/3d-text-depth-layers.md` | 3d-text-depth-layers |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/ai-tracking-box.md` | ai-tracking-box |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/ambient-glow-bloom.md` | ambient-glow-bloom |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/anchored-layout-expand.md` | anchored-layout-expand |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/asr-keyword-glow.md` | asr-keyword-glow |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/avatar-cloud-network.md` | avatar-cloud-network |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/camera-cursor-tracking.md` | camera-cursor-tracking |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/card-morph-anchor.md` | card-morph-anchor |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/center-outward-expansion.md` | center-outward-expansion |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/chart-scrub-readout.md` | chart-scrub-readout |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/chromatic-glitch.md` | chromatic-glitch |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/context-sensitive-cursor.md` | context-sensitive-cursor |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/control-target-sync.md` | control-target-sync |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/coordinate-target-zoom.md` | coordinate-target-zoom |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/counting-dynamic-scale.md` | counting-dynamic-scale |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/cursor-click-ripple.md` | cursor-click-ripple |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/cursor-drag.md` | cursor-drag |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/depth-of-field-blur.md` | depth-of-field-blur |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/depth-scatter-assemble.md` | depth-scatter-assemble |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/discrete-text-sequence.md` | discrete-text-sequence |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/dynamic-content-sequencing.md` | dynamic-content-sequencing |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/gradient-text-sweep.md` | gradient-text-sweep |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/hacker-flip-3d.md` | hacker-flip-3d |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/kinetic-beat-slam.md` | kinetic-beat-slam |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/motion-blur-streak.md` | motion-blur-streak |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/multi-cursor-choreography.md` | multi-cursor-choreography |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/multi-phase-camera.md` | multi-phase-camera |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/nudge-curve.md` | nudge-curve |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/orbit-3d-entry.md` | orbit-3d-entry |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/particle-burst.md` | particle-burst |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/physics-press-reaction.md` | physics-press-reaction |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/press-release-spring.md` | press-release-spring |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/reactive-displacement.md` | reactive-displacement |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/scale-swap-transition.md` | scale-swap-transition |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/sine-wave-loop.md` | sine-wave-loop |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/split-tilt-cards.md` | split-tilt-cards |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/spring-pop-entrance.md` | spring-pop-entrance |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/stat-bars-and-fills.md` | stat-bars-and-fills |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/svg-icon-enrichment.md` | svg-icon-enrichment |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/svg-path-draw.md` | svg-path-draw |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/theme-crossfade-morph.md` | theme-crossfade-morph |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/vertical-spring-ticker.md` | vertical-spring-ticker |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/viewport-change.md` | viewport-change |
+| skill.rules | skill | active | `skills/hyperframes/hyperframes-animation/rules/waterfall-entry.md` | waterfall-entry |
+| skill.hyperframes-audio | skill | active | `skills/hyperframes/hyperframes-audio/SKILL.md` | hyperframes-audio |
+| skill.hyperframes-cli | skill | active | `skills/hyperframes/hyperframes-cli/SKILL.md` | hyperframes-cli |
+| skill.hyperframes-core | skill | active | `skills/hyperframes/hyperframes-core/SKILL.md` | hyperframes-core |
+| skill.hyperframes-creative | skill | active | `skills/hyperframes/hyperframes-creative/SKILL.md` | hyperframes-creative |
+| skill.biennale-yellow | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/biennale-yellow/FRAME.md` | Biennale Yellow — Frame (video / frame layer) |
+| skill.blockframe | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/blockframe/FRAME.md` | BlockFrame — Frame (video / frame layer) |
+| skill.blue-professional | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/blue-professional/FRAME.md` | Blue Professional — Frame (video / frame layer) |
+| skill.bold-poster | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/bold-poster/FRAME.md` | Bold Poster — Frame (video / frame layer) |
+| skill.broadside | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/broadside/FRAME.md` | Broadside — Frame (video / frame layer) |
+| skill.capsule | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/capsule/FRAME.md` | Capsule — Frame (video / frame layer) |
+| skill.cartesian | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/cartesian/FRAME.md` | Cartesian — Frame (video / frame layer) |
+| skill.cobalt-grid | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/cobalt-grid/FRAME.md` | Cobalt Grid — Frame (video / frame layer) |
+| skill.code-editorial | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/code-editorial/FRAME.md` | Code editorial — Frame (video / frame layer) |
+| skill.coral | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/coral/FRAME.md` | Coral — Frame (video / frame layer) |
+| skill.creative-mode | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/creative-mode/FRAME.md` | Creative Mode — Frame (video / frame layer) |
+| skill.daisy-days | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/daisy-days/FRAME.md` | Daisy Days — Frame (video / frame layer) |
+| skill.editorial-forest | skill | active | `skills/hyperframes/hyperframes-creative/frame-presets/editorial-forest/FRAME.md` | Editorial Forest — Frame (video / frame layer) |
+| skill.hyperframes-keyframes | skill | active | `skills/hyperframes/hyperframes-keyframes/SKILL.md` | hyperframes-keyframes |
+| skill.hyperframes-registry | skill | active | `skills/hyperframes/hyperframes-registry/SKILL.md` | hyperframes-registry |
+| skill.hyperframes-studio | skill | active | `skills/hyperframes/hyperframes-studio/SKILL.md` | hyperframes-studio |
+| skill.media-use | skill | active | `skills/hyperframes/media-use/SKILL.md` | media-use |
+| skill.motion-graphics | skill | active | `skills/hyperframes/motion-graphics/SKILL.md` | motion-graphics |
+| skill.music-to-video | skill | active | `skills/hyperframes/music-to-video/SKILL.md` | music-to-video |
+| skill.pr-to-video | skill | active | `skills/hyperframes/pr-to-video/SKILL.md` | pr-to-video |
+| skill.product-launch-video | skill | active | `skills/hyperframes/product-launch-video/SKILL.md` | product-launch-video |
+| skill.remotion-to-hyperframes | skill | active | `skills/hyperframes/remotion-to-hyperframes/SKILL.md` | remotion-to-hyperframes |
+| skill.slideshow | skill | active | `skills/hyperframes/slideshow/SKILL.md` | slideshow |
+| skill.talking-head-recut | skill | active | `skills/hyperframes/talking-head-recut/SKILL.md` | talking-head-recut |
 | skill.make-video | skill | active | `skills/make-video/SKILL.md` | Make video (@hi.oneup end-to-end) |
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | Script polish (VI voice) |

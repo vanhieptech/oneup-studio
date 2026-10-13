@@ -23,7 +23,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 | Trend | `research/trends/ingest.md` (thư viện sống) + `research/trends/YYYY-MM-DD/` |
 | Quy trình | `pipeline/pipeline.md` |
 | **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` · mẫu `content/clips/clip-01-implementation-intention/final/` |
-| Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT)) |
+| Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) |
 
 ## Quy ước
 - Mọi file `.md` (trừ SKILL.md và tài liệu brand gốc) có front-matter `id, type, status, updated, tags`. Khi tạo hoặc đổi tên file, chạy `python3 pipeline/scripts/build-index.py`.
