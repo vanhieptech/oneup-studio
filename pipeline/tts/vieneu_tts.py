@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Omi voice (rule-46): VieNeu-TTS v3 Turbo, local CPU/ONNX, Apache-2.0. Characters with a declared preset only (Hiệp: Đức Trí, Omi: Kim Thanh; DL-030).
+"""LEGACY / fallback since DL-035 (default is F5-TTS via voice-prosody.py). VieNeu-TTS v3 Turbo, local CPU/ONNX, Apache-2.0. Characters with a declared preset only (Hiệp: Đức Trí, Omi: Kim Thanh; DL-030).
 
 stdin/argv: JSON {"fps":30,"jobs":[{"text","voice","emotion","out"}]}
 For each job: synthesize (cached: skipped if out exists), apply emotion post-fx

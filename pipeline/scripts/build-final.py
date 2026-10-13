@@ -4,8 +4,11 @@
   build-final.py <spec.json> [--stage voice|plans|render|assemble|all]   (default all)
 
 Stages (each reuses cached output; edit the spec, never the generated files):
-  voice    : every line -> VieNeu-TTS preset of the speaker's profile (Hiệp: Đức Trí, Omi: Kim Thanh; rule-46, DL-030)
-             cached in video-engine/public/voice/<key>.wav|json (key = preset+emotion+text)
+  voice    : every line -> the speaker profile's voice (rule-46). Default since DL-035: F5-TTS (hynt ViVoice, CC-BY-NC-SA,
+             risk accepted) with synthetic refs (Hiệp: F5 · Thái Sơn, Omi: F5 · Mỹ Duyên), always via voice-prosody.py
+             (phrase-level, leakage trim, 3 takes + STT pick). Lines without `phrases` become one phrase.
+             Legacy profiles with engine vieneu-tts keep the DL-030/033 paths.
+             cached in video-engine/public/voice/<key>.wav|json (key = engine+voice+ref+phrases)
   plans    : Remotion parts -> <final>/plan-<part>.voiced.json (timed from real audio, captions per line, lip-sync envelope)
              HyperFrames parts -> <final>/<dir>/index.html (from index.html.tpl) + <final>/out/<part>-voice.wav
   render   : npm run render (Remotion) / hyperframes render (explainer), then mux explainer voice
@@ -46,10 +49,17 @@ def voice_key(preset, emotion, text, take=1):
 def stage_voice(spec):
     prof = profiles(); jobs = []; pjobs = []
     for _, _, l in all_lines(spec):
+        pv = prof[l["speaker"]].get("voice") or {}
+        if pv.get("engine") == "f5-tts" and not l.get("phrases"):
+            l["phrases"] = [{"t": spoken(l), "gap": 0}]
         if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
-            v = prof[l["speaker"]]["voice"]["preset"]
-            l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, [{k: x for k, x in ph.items() if k != "en"} for ph in l["phrases"]], "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
-            pjobs.append({"voice": v, "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
+            v = pv["preset"]; ph = [{k: x for k, x in p.items() if k != "en"} for p in l["phrases"]]
+            if pv.get("engine") == "f5-tts":  # DL-035
+                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp2"], ensure_ascii=False).encode()).hexdigest()[:12]
+                pjobs.append({"engine": "f5-tts", "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
+            else:
+                l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, ph, "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
+                pjobs.append({"voice": v, "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
             continue
         v = prof[l["speaker"]].get("voice")
         if not v: raise SystemExit(f"{l['speaker']} has no voice preset in its profile (rule-46)")

@@ -167,8 +167,15 @@ def main():
         else: voiced.add(f"{prof[l['speaker']]['name']}={v['preset']}")
         if "ref_audio" in json.dumps(l): err("rule-46", "ref_audio (voice cloning) is forbidden")
     if voiced: ok("rule-46", "AI voices: " + ", ".join(sorted(voiced)))
-    if omi_used and "omi" in prof and prof["omi"].get("voice", {}).get("preset") != "Kim Thanh": err("rule-46", "Omi preset changed without DL")
-    if "hiep" in prof and prof["hiep"].get("voice", {}).get("preset") != "Đức Trí": warn("rule-46", "Hiệp preset differs from DL-030 (Đức Trí); log a DL")
+    # DL-035: F5-TTS voices with synthetic VieNeu references
+    VOICES = {"omi": ("f5-tts", "F5 · Mỹ Duyên", "pipeline/tts/f5-refs/my-duyen.wav"), "hiep": ("f5-tts", "F5 · Thái Sơn", "pipeline/tts/f5-refs/thai-son.wav")}
+    for cid, (eng, pre, ref) in VOICES.items():
+        pv = prof.get(cid, {}).get("voice", {})
+        if cid == "omi" and not omi_used: continue
+        if (pv.get("engine"), pv.get("preset"), pv.get("ref")) != (eng, pre, ref):
+            (err if cid == "omi" else warn)("rule-46", f"{cid} voice {pv.get('engine')}/{pv.get('preset')} differs from DL-035 ({pre}); log a DL")
+        elif not os.path.exists(os.path.join(REPO, ref)): err("rule-46", f"{cid} F5 reference missing: {ref}")
+        else: ok("rule-46", f"{cid} voice = {pre} (F5-TTS, CC-BY-NC-SA risk accepted DL-035)")
     # rule-13 / 46 / 32 post package
     post = os.path.join(fdir, "post.md")
     if os.path.exists(post):
@@ -179,6 +186,7 @@ def main():
         if voiced:
             (ok if "AI-generated content" in pt else err)("rule-46", "post.md: TikTok 'AI-generated content' toggle")
             (ok if "giọng AI" in pt else err)("rule-46", "post.md: AI-voice disclosure line in caption")
+            if "giọng AI" in pt: (ok if "F5-TTS" in pt else err)("rule-46", "post.md: disclosure names the engine (F5-TTS, DL-035)")
         (ok if "#" in pt else warn)("rule-32", "post.md hashtags")
     else: (err if final else warn)("rule-32", "post.md missing")
     # rule-45 plans validate

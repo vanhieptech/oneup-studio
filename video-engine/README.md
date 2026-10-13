@@ -63,7 +63,7 @@ VideoPlan ─▶ validation (zod + semantic, theo character profiles) ─▶ ani
 | Biểu cảm | neutral, happy, sad, surprised, confused, focused | như Hiệp (morph hình dạng thân kiểu chất lỏng giữa các biểu cảm) |
 | Hành động | idle, talking, thinking, typing, walking, reacting | idle, talking, thinking, walking, reacting (không có tay nên không typing) |
 | Tư thế | standing, sitting | standing (lơ lửng), sitting (đậu xuống đất) |
-| Ghi chú | Ngoại hình còn generic, chờ Hiệp tả/gửi ảnh (DL-022). Giọng AI preset "Đức Trí" (DL-030) | Chỉ từ tuần 5 (luật 11, validator chặn). Giọng preset "Kim Thanh" |
+| Ghi chú | Ngoại hình còn generic, chờ Hiệp tả/gửi ảnh (DL-022). Giọng AI F5-TTS "F5 · Thái Sơn" (DL-035) | Chỉ từ tuần 5 (luật 11, validator chặn). Giọng F5-TTS "F5 · Mỹ Duyên" (DL-035) |
 
 Chuyển động có sẵn: thở (squash/stretch), chớp mắt theo chu kỳ riêng mỗi nhân vật + chớp ép khi đổi biểu cảm, blend biểu cảm 0.28s, nhép miệng theo nhịp âm tiết trong khoảng thoại, nghiêng đầu, liếc mắt, vung tay, bước đi tới `toX`, nhảy squash khi reacting, enter (`pop`, `rise`, `slide-left/right`), exit (`fade`, `slide-*`), camera push-in, framing `wide/medium/closeup`.
 
@@ -110,8 +110,16 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 ### LLM (tuỳ chọn)
 `LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=qwen2.5 npm run plan -- script.txt --llm`. Kết quả LLM phải qua cùng validator. Nếu lỗi mạng, JSON hỏng hoặc plan không hợp lệ thì tự quay về rule-based và ghi rõ trong log. Không cài SDK của hãng nào.
 
-## Giọng nhân vật (luật 46, DL-030: Hiệp = "Đức Trí", Omi = "Kim Thanh") <a name="voice"></a>
-Cài một lần (box/Mac, CPU, miễn phí, không API):
+## Giọng nhân vật (luật 46, DL-035: Hiệp = "F5 · Thái Sơn", Omi = "F5 · Mỹ Duyên") <a name="voice"></a>
+**Mặc định (DL-035): F5-TTS** + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice` (⚠ CC-BY-NC-SA-4.0, không thương mại; Hiệp chấp nhận rủi ro). Profile: `voice.engine = "f5-tts"`, `ref` (giọng mẫu tổng hợp bằng VieNeu, `pipeline/tts/f5-refs/`), `refText`.
+```bash
+python3 -m venv /workspace/f5-venv && /workspace/f5-venv/bin/pip install f5-tts      # CPU
+# checkpoint: tải model_last.pt + vocab.txt của hynt/F5-TTS-Vietnamese-ViVoice vào /workspace/f5-ckpt (F5_CKPT_DIR)
+export F5_PYTHON=/workspace/f5-venv/bin/python F5_NFE=24                              # NFE 24–32; ~40–70 s/take trên CPU 8 nhân
+```
+Đường F5 luôn đi qua `pipeline/scripts/voice-prosody.py` (chạy bằng tts-venv; cần asr-venv faster-whisper): theo cụm, 3 take/cụm (seed/speed), tự cắt rò giọng mẫu, chọn take bằng STT + F0. `npm run voice` cũng tự chuyển câu của nhân vật F5 sang đường này (mỗi câu một cụm).
+
+VieNeu (dự phòng, Apache-2.0, và để tạo giọng mẫu). Cài một lần (box/Mac, CPU, miễn phí, không API):
 ```bash
 python3 -m venv /workspace/tts-venv
 /workspace/tts-venv/bin/pip install vieneu "onnxruntime==1.22.1"   # 1.31 lỗi external-data với cache HF

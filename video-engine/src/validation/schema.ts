@@ -48,7 +48,7 @@ export const DialogueSchema = z.object({
   style: z.enum(["speech", "thought", "shout"]).default("speech"),
   /** Voice emotion for the TTS step (rule-46). Defaults to the speaker's current expression. */
   emotion: z.string().optional(),
-  /** Filled by `npm run voice` (VieNeu-TTS, characters with a voice preset). src is relative to public/. */
+  /** Filled by `npm run voice` (F5-TTS / VieNeu-TTS, characters with a voice preset). src is relative to public/. */
   audio: z.object({ src: nonEmpty, duration: z.number().positive(), envelope: z.array(z.number().min(0).max(1)).default([]), engine: z.string().optional() }).optional(),
 });
 
@@ -111,7 +111,18 @@ export const CharacterProfileSchema = z.object({
   defaults: z.object({ expression: z.enum(EXPRESSIONS), pose: z.enum(POSES), action: z.enum(ACTIONS), blinkEverySec: z.number().positive() }),
   availableFromWeek: z.number().int().positive().optional(),
   /** Synthetic voice. Only AI characters may have one (rule-46): never a real person, never cloned. */
-  voice: z.object({ engine: z.literal("vieneu-tts"), preset: nonEmpty, synthetic: z.literal(true) }).optional(),
+  voice: z
+    .object({
+      engine: z.enum(["vieneu-tts", "f5-tts"]),
+      preset: nonEmpty,
+      synthetic: z.literal(true),
+      /** f5-tts only (DL-035): synthetic reference clip (repo-relative) + its transcript. */
+      ref: z.string().optional(),
+      refText: z.string().optional(),
+    })
+    .passthrough()
+    .refine((v) => v.engine !== "f5-tts" || (!!v.ref && !!v.refText), { message: "f5-tts voice needs ref + refText" })
+    .optional(),
   assets: z.array(z.string()).default([]),
   notes: z.string().optional(),
 });

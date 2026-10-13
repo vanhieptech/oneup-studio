@@ -8,11 +8,12 @@ import { hasAudio } from "../src/rendering/render";
 const plan = () => JSON.parse(readFileSync(new URL("../../content/samples/sample-full-w5/plan.json", import.meta.url), "utf8"));
 
 describe("Omi voice (rule-46)", () => {
-  it("each character uses its own preset (Hiệp: Đức Trí, Omi: Kim Thanh; DL-030)", () => {
+  it("each character uses its own voice (Hiệp: F5 · Thái Sơn, Omi: F5 · Mỹ Duyên; DL-035)", () => {
     const r = validatePlan(plan()); expect(r.ok).toBe(true);
     const jobs = collectVoiceJobs(r.ok ? r.plan : (null as never));
     expect(jobs.length).toBe(4);
-    expect(jobs.map((j) => j.voice)).toEqual(["Đức Trí", "Kim Thanh", "Kim Thanh", "Đức Trí"]);
+    expect(jobs.map((j) => j.voice)).toEqual(["F5 · Thái Sơn", "F5 · Mỹ Duyên", "F5 · Mỹ Duyên", "F5 · Thái Sơn"]);
+    expect(jobs.every((j) => j.engine === "f5-tts" && !!j.ref && !!j.refText)).toBe(true);
     expect(jobs[1].emotion).toBe("teasing"); // explicit emotion wins
     expect(jobs[2].emotion).toBe("focused"); // falls back to expression at line start
   });

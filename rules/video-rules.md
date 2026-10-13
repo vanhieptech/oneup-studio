@@ -3,17 +3,17 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.2
+version: 3.3
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.3, 13/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
 
 ## A. Định dạng
 1. **Ngôn ngữ:** giọng nói tiếng Việt. Caption tiếng Anh highlight từng từ.
-2. **Giọng (DL-030):** cả hai nhân vật dùng **giọng AI preset** của VieNeu-TTS theo luật 46: nhân vật chibi **Hiệp** = preset "Đức Trí" (nam, miền Nam, trầm ấm), **Omi** = "Kim Thanh" (nữ, miền Nam). Không clone giọng thật của ai (kể cả Hiệp). Hiệp vẫn có thể tự thu giọng thật cho một clip (thì clip đó không dùng giọng AI cho Hiệp); khi đó giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s.
+2. **Giọng (DL-035):** cả hai nhân vật dùng **giọng AI F5-TTS** theo luật 46: nhân vật chibi **Hiệp** = "F5 · Thái Sơn" (nam, miền Nam), **Omi** = "F5 · Mỹ Duyên" (nữ, miền Nam). Giọng mẫu (reference) là câu tổng hợp bằng preset VieNeu, không clone giọng thật của ai (kể cả Hiệp). Hiệp vẫn có thể tự thu giọng thật cho một clip (thì clip đó không dùng giọng AI cho Hiệp); khi đó giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s.
 3. **Lên hình:** series này **chỉ dùng comic + motion graphics**, không quay mặt/cảnh thật (DL-027). Hiệp lên hình bằng nhân vật chibi (luật 43).
 4. **Độ dài:** 55–60s, 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
 5. **Phong cách (xoay vòng trong khuôn comic):** beat kể chuyện comic (Remotion, luật 42) · beat giải thích motion graphics (HyperFrames) · màn hình app OneUp dựng lại bằng vector/mockup trong motion beat (từ tuần 3). Không talking head, không b-roll tự quay trong series này.
@@ -47,13 +47,13 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 21. **Nhạc:** không có nhạc trong file. Hiệp thêm nhạc từ TikTok Commercial Music Library lúc đăng.
 22. **SFX:** được dùng tiếng động nhẹ (click, tick, whoosh nhỏ), chỉ lấy file CC0 (Freesound) hoặc Mixkit. Ghi nguồn từng file vào `assets/sfx/SOURCES.md`.
 23. **Stock:** series comic không dùng stock video/ảnh người thật. Nếu cần texture/icon thì Pexels/Pixabay/Mixkit/Phosphor, lọc bỏ ảnh AI, không quá 10% thời lượng.
-24. **Chỉ dùng công cụ miễn phí, không AI trong hình final:** không video AI, không ảnh AI trong video (luật 44). Giọng AI chỉ cho nhân vật có preset trong profile (Hiệp chibi, Omi; luật 46). **Mọi clip có giọng AI (gần như mọi clip) phải gắn nhãn AI** theo luật 46. Chỉ clip hoàn toàn không có giọng AI mới không bật nhãn.
+24. **Chỉ dùng công cụ miễn phí, không AI trong hình final:** không video AI, không ảnh AI trong video (luật 44). Giọng AI chỉ cho nhân vật có `voice` trong profile (Hiệp chibi, Omi; luật 46). Ngoại lệ đã được Hiệp chấp nhận: checkpoint F5-TTS tiếng Việt có giấy phép không thương mại (DL-035). **Mọi clip có giọng AI (gần như mọi clip) phải gắn nhãn AI** theo luật 46. Chỉ clip hoàn toàn không có giọng AI mới không bật nhãn.
 
 ## E. Công cụ & pipeline
 25. **Engine (vai trò cố định):**
     - Beat kể chuyện / comic: **Remotion** trong `video-engine/` (chi tiết luật 45).
     - Beat giải thích / motion graphics: **HyperFrames** (Apache 2.0, cần Node ≥ 22) + GSAP cài local (không CDN), template `templates/hyperframes-base/`. Manim CE cho cảnh biểu đồ.
-    - Giọng nhân vật (Hiệp, Omi): VieNeu-TTS local (luật 46). Clip final: `pipeline/scripts/build-final.py <final/spec.json>` (TTS → plan → render → ghép), kiểm bằng `pipeline/scripts/check-rules.py` và `pipeline/tts/stt_check.py`.
+    - Giọng nhân vật (Hiệp, Omi): F5-TTS local qua `pipeline/scripts/voice-prosody.py` (luật 46, DL-035); VieNeu-TTS chỉ còn để tạo giọng mẫu và làm phương án dự phòng. Clip final: `pipeline/scripts/build-final.py <final/spec.json>` (TTS → plan → render → ghép), kiểm bằng `pipeline/scripts/check-rules.py` và `pipeline/tts/stt_check.py`.
     - Ghép và hậu kỳ: FFmpeg, `pipeline/scripts/join-beats.sh` (xfade giữa beat, chuẩn −14 LUFS). Mỗi engine render file riêng, không trộn trong một lần render.
     - Pipeline: `pipeline/pipeline.md`.
 26. **Transcribe:** câu TTS (Hiệp, Omi) lấy thời lượng + envelope từ file TTS, kiểm lại bằng ASR (`pipeline/tts/stt_check.py`, faster-whisper). Nếu Hiệp tự thu giọng thật: whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
@@ -114,12 +114,13 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Logo 05-pair-plus (luật 14) và Be Vietnam Pro (luật 15) có sẵn trong composition.
     - Sau mỗi render: `npm run frames` rồi tự soát contact sheet (luật 34) trước khi gửi Hiệp.
 
-46. **Giọng AI nhân vật (VieNeu-TTS):**
-    - Chỉ nhân vật có `voice` trong profile mới có giọng AI: **Hiệp chibi** = preset **"Đức Trí"** (nam, miền Nam, trầm ấm; chọn 13/10/2026 bằng nghe thử 4 preset nam miền Nam + đo cao độ + STT, DL-030), **Omi** = preset **"Kim Thanh"** (nữ, miền Nam). Khai báo ở `video-engine/src/characters/profiles/{hiep,omi}.json` → `voice`. Engine: VieNeu-TTS v3 Turbo (Apache-2.0), chạy **local** trên CPU/ONNX, miễn phí, không gọi API. Tempo gốc theo preset trong `pipeline/tts/vieneu_tts.py` (`VOICE_TEMPO`). Đổi preset/tempo phải ghi DL.
-    - **Cấm clone giọng** người thật (kể cả Hiệp) và cấm dùng `ref_audio`. Chỉ dùng preset có sẵn của model.
-    - Cảm xúc theo ngữ cảnh: mỗi câu có `emotion` (mặc định lấy theo biểu cảm của nhân vật lúc đó): neutral · happy · teasing · surprised · sad · focused · confused → tag phi ngôn ngữ ([cười], [thở dài], [hắng giọng]) + tốc độ/cao độ (`pipeline/tts/vieneu_tts.py`). Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh.
-    - Audio cache theo hash (text + preset + emotion), chuẩn loudness rồi ghép −14 LUFS. Không nhạc (luật 21). Kiểm bằng ffprobe (có track audio) và ASR (đúng chữ) trước khi gửi Hiệp.
-    - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng nhân vật là giọng tổng hợp nghe như người thật → **mọi clip có giọng AI** (Hiệp và/hoặc Omi): **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (VieNeu-TTS)." (chỉ nêu nhân vật thật sự nói). Clip không có giọng AI thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
+46. **Giọng AI nhân vật (F5-TTS, DL-035):**
+    - Chỉ nhân vật có `voice` trong profile mới có giọng AI: **Hiệp chibi** = **"F5 · Thái Sơn"** (nam, miền Nam; nghe thử 8 giọng, chọn số 6), **Omi** = **"F5 · Mỹ Duyên"** (nữ, miền Nam; số 6). Hiệp chọn 13/10/2026 (DL-035), thay Đức Trí / Kim Thanh (DL-030). Khai báo ở `video-engine/src/characters/profiles/{hiep,omi}.json` → `voice` (`engine: f5-tts`, `ref`, `refText`). Engine: F5-TTS + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice`, chạy **local** trên CPU (`/workspace/f5-venv`, `pipeline/tts/f5tts_gen.py`), không gọi API. Đổi giọng/giọng mẫu phải ghi DL.
+    - ⚠ **Giấy phép:** checkpoint là **CC-BY-NC-SA-4.0 (không thương mại)**. Kênh có quảng bá app OneUp nên dùng trong clip đăng là **rủi ro vi phạm giấy phép**; Hiệp đã xác nhận chấp nhận rủi ro này (13/10/2026, DL-035). Nếu bị khiếu nại hoặc kênh bắt đầu kiếm tiền trực tiếp thì quay về VieNeu (Apache-2.0, `engine: vieneu-tts`, profile còn ghi `previous`) và ghi DL.
+    - **Giọng mẫu (reference):** chỉ dùng câu trung tính do preset VieNeu tổng hợp (`pipeline/tts/f5-refs/`, câu "Hôm nay trời Sài Gòn mát mẻ…"). **Cấm clone giọng người thật** (kể cả Hiệp), cấm `ref_audio` lấy từ bản thu người thật.
+    - **Prosody:** mọi câu đi qua `voice-prosody.py` theo từng cụm hơi (`phrases`: khoảng nghỉ, nhấn = chậm + lên giọng + to hơn), mỗi cụm 3 take (seed/speed) chọn bằng STT + F0 + lỗi; tự cắt phần **rò giọng mẫu** (chữ của câu mẫu lọt vào đầu take) bằng timestamp từng từ của faster-whisper. Câu không có `phrases` được tính là một cụm. Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh. Không dùng tag [cười]/[thở dài].
+    - Audio cache theo hash (engine + giọng + giọng mẫu + cụm), chuẩn loudness rồi ghép −14 LUFS. Không nhạc (luật 21). Kiểm bằng ffprobe (có track audio) và ASR (đúng chữ) trước khi gửi Hiệp.
+    - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng nhân vật là giọng tổng hợp nghe như người thật → **mọi clip có giọng AI** (Hiệp và/hoặc Omi): **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." (chỉ nêu nhân vật thật sự nói). Clip không có giọng AI thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
     - Mọi câu phải qua STT (`pipeline/tts/stt_check.py`); câu nghe sai thì sửa cách viết (`say`, vd. TOEIC → "tô ích") hoặc tăng `take` trong spec để đọc lại.
     - Nếu TTS lỗi: không giả giọng; dùng placeholder có ghi rõ "[PLACEHOLDER – chưa có giọng]" và báo Hiệp.
 
@@ -136,6 +137,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Hiệp yêu cầu bằng "Làm clip tiếp theo" / "Làm clip về <chủ đề/trend>"; góp ý theo id beat ("b03: đổi câu …"). Agent sửa `final/spec.json` (hoặc template), tăng `revisions`, build lại; không viết lại từ đầu.
 
 ## Changelog
+- **v3.3, 13/10/2026:** giọng nhân vật chuyển sang F5-TTS (Hiệp "F5 · Thái Sơn", Omi "F5 · Mỹ Duyên", giọng mẫu tổng hợp từ VieNeu); Hiệp chấp nhận rủi ro giấy phép CC-BY-NC-SA của checkpoint; dòng nhãn AI ghi "(F5-TTS)" (luật 2, 24, 25, 46; DL-035).
 - **v3.2, 13/10/2026:** giọng AI preset cho cả Hiệp chibi ("Đức Trí") và Omi ("Kim Thanh"); nhãn AI cho mọi clip có giọng AI (luật 2, 24, 26, 29, 32, 45, 46; DL-030). Luật 48: skill `make-video` + `check-rules.py` là quy trình bắt buộc (luật 28; DL-031).
 - **v3.1, 13/10/2026:** series chỉ comic + motion, bỏ yêu cầu tự quay (luật 3, 5, 6, 23, 29; DL-027). Bỏ nhắc đăng (luật 32; DL-028). Luật 47 trend job học hỏi, luật 38 trỏ sang skill v2 (DL-029).
 - **v3.0, 13/10/2026:** audit toàn bộ 45 luật (DL-025, DL-026, `logs/rules-audit-2026-10-13.md`). Luật 46 mới (giọng AI Omi, VieNeu-TTS, nhãn AI TikTok). Sửa luật 2, 24 (không còn "cấm mọi giọng AI"), 25 + 45 (vai trò Remotion/HyperFrames/ffmpeg, bỏ trùng), 5, 6, 7, 11, 16, 18, 26, 32 (lịch nhắc khớp 3 clip/tuần), 42 (bỏ trùng luật 11). Sửa lỗi dính dòng changelog.

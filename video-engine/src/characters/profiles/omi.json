@@ -45,10 +45,19 @@
   "assets": [
     "pipeline/characters-v2/chars.html (blobPath + EMO params)"
   ],
-  "notes": "AI companion. Appears only from week 5 (rule-11). Voice: VieNeu-TTS preset 'Kim Thanh' (Nữ · Nam), local, emotion per line (rule-46, DL-025). Cannot type (no hands).",
+  "notes": "AI companion. Appears only from week 5 (rule-11). Voice (DL-035, rule-46): F5-TTS Vietnamese, reference = VieNeu 'Mỹ Duyên' synthetic sentence (audition #6). Never clone a real person. Cannot type (no hands).",
   "voice": {
-    "engine": "vieneu-tts",
-    "preset": "Kim Thanh",
-    "synthetic": true
+    "engine": "f5-tts",
+    "preset": "F5 · Mỹ Duyên",
+    "synthetic": true,
+    "ref": "pipeline/tts/f5-refs/my-duyen.wav",
+    "refText": "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha.",
+    "refSource": "VieNeu-TTS preset 'Mỹ Duyên' neutral sentence (synthetic, no real person cloned)",
+    "model": "hynt/F5-TTS-Vietnamese-ViVoice",
+    "license": "CC-BY-NC-SA-4.0 (non-commercial; risk accepted by Hiệp, DL-035)",
+    "previous": {
+      "engine": "vieneu-tts",
+      "preset": "Kim Thanh"
+    }
   }
 }

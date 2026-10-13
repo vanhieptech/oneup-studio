@@ -47,10 +47,19 @@
     "pipeline/characters-v2/chars.html (v2 rig, source of shapes)",
     "brand/characters/v2/"
   ],
-  "notes": "Generic avatar: hair/glasses/clothes not yet confirmed by Hiệp (DL-022). Voice: VieNeu-TTS preset 'Đức Trí' (Nam · miền Nam, trầm ấm, F0 ~91 Hz) by Hiệp's decision 2026-10-13 (DL-030, rule-2/46). Preset only, never cloned.",
+  "notes": "Generic avatar: hair/glasses/clothes not yet confirmed by Hiệp (DL-022). Voice (DL-035, rule-46): F5-TTS Vietnamese, reference = VieNeu 'Thái Sơn' synthetic sentence (audition #6). Never clone a real person.",
   "voice": {
-    "engine": "vieneu-tts",
-    "preset": "Đức Trí",
-    "synthetic": true
+    "engine": "f5-tts",
+    "preset": "F5 · Thái Sơn",
+    "synthetic": true,
+    "ref": "pipeline/tts/f5-refs/thai-son.wav",
+    "refText": "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha.",
+    "refSource": "VieNeu-TTS preset 'Thái Sơn' neutral sentence (synthetic, no real person cloned)",
+    "model": "hynt/F5-TTS-Vietnamese-ViVoice",
+    "license": "CC-BY-NC-SA-4.0 (non-commercial; risk accepted by Hiệp, DL-035)",
+    "previous": {
+      "engine": "vieneu-tts",
+      "preset": "Đức Trí"
+    }
   }
 }

@@ -33,13 +33,14 @@ Write the script directly as the spec (format below). Structure rule-41: hook 0�
 - Story beats = comic (`engine: remotion`); explain/evidence beats = motion graphics (`engine: hyperframes`), rule-42.
 - Voice: "bạn", Southern particles on some (not all) lines, humor 4/5 aimed at habits, 1–3 English words.
 - Every line: `speaker`, `emotion`, `text` (bubble, `**bold**` = emphasis), `en` (caption, English only), `hl` (indexes of highlighted EN words), optional `say` (phonetic spelling for TTS, e.g. TOEIC → "tô ích", numbers as read), optional `take`.
+- **Voices (DL-035):** Hiệp = "F5 · Thái Sơn", Omi = "F5 · Mỹ Duyên" (F5-TTS, synthetic VieNeu references in `pipeline/tts/f5-refs/`; checkpoint CC-BY-NC-SA, risk accepted by Hiệp — do not re-ask, but flag it if the channel starts direct monetisation). F5 runs on CPU ≈40–70 s per take × 3 takes per phrase: a 55–60 s clip ≈ 60–90 min voice stage the first time (cached afterwards, so revise per line, not whole spec). Leakage of the reference sentence ("hôm nay trời Sài Gòn…") at a take's start is auto-trimmed; check `leak_trims` in the voice JSON and re-listen if many.
 - **Voice prosody (required for new lines, DL-033):** give every line `phrases` so it sounds human, not read. `build-final.py` then voices it with `pipeline/scripts/voice-prosody.py` instead of the old sentence+stretch path:
   `"phrases": [{"t": "Kế hoạch học tô ích của mình là...", "gap": 0.42, "tempo": 0.96, "semi": -0.3}, {"t": "mai học.", "emph": true, "en": "…"}]`
   1. Split into breath groups of 3–8 syllables; keep each phrase's own punctuation (`...` trails off, `?` rises, `,` continues, `:` sets up). Never phrases of 1–2 syllables except a particle/interjection (`Ủa?`, `Nè,`).
   2. `gap` after each phrase 0.15–0.42 s (comma ≈0.18, colon ≈0.26, ellipsis ≈0.38, before the punchline ≈0.4). Gaps are filled with room tone.
   3. One `emph` per line (the punch word/phrase) → slower, +0.8 st, +1.5 dB. For a falling statement end use `"emph_semi": -0.5` (otherwise it can sound like a question).
   4. Vary `tempo` (0.9–1.08) and `semi` (−0.5…+1.2): question/tease up, tired/sad down. Particles (á, nha, hông, ủa, nè) at phrase ends or as a lead-in, max 1–2 per line, and keep them inside a ≥3-syllable phrase (alone they get mangled).
-  5. Don't use `[cười]` / `[thở dài]` tags with presets: STT showed they get spoken as words ("Thì…", "hờt"). Show the laugh/sigh in the face instead.
+  5. Don't use `[cười]` / `[thở dài]` tags (VieNeu or F5): STT showed they get spoken as words ("Thì…", "hờt"). Show the laugh/sigh in the face instead.
   6. The script picks the best of 3 takes per phrase (STT ≥ 0.7 gate, F0 range, artifacts), checks the whole line by STT (toneless ≥ 0.92) and re-rolls weak phrases; a `warn: … line STT sim` in the build log = rewrite the phrase or the `say` spelling.
   7. Optional per-phrase `en` = caption chunk timed to that phrase (better sync than one EN line spread evenly).
 
@@ -86,7 +87,7 @@ python3 pipeline/scripts/check-rules.py <clip>/ --final --stt --out <clip>/final
 Look at full-size frames of every beat at least 2 rounds (rule-34): text inside safe area, nothing clipped, captions not covering faces, highlight on the right word, logo present. Fix in spec/template, add a `revisions` row, rebuild.
 
 ## 7. Review gate 2 (Hiệp): final
-Send the MP4 + `post.md` (caption VI in "bạn" voice that asserts no unconfirmed fact, hashtags, HowToLiveBetter CC BY 4.0 credit + license link + "đã chuyển thể", AI toggle + disclosure line naming the characters who speak) + `check-rules.txt` summary + confirm list. Agent never posts.
+Send the MP4 + `post.md` (caption VI in "bạn" voice that asserts no unconfirmed fact, hashtags, HowToLiveBetter CC BY 4.0 credit + license link + "đã chuyển thể", AI toggle + disclosure line naming the characters who speak, exact form: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." — rule-46/DL-035, check-rules errors if "F5-TTS" is missing) + `check-rules.txt` summary + confirm list. Agent never posts.
 
 ## 8. Feedback loop
 Hiệp gives feedback by beat id, one per line:
