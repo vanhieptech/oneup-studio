@@ -306,11 +306,21 @@ def lessons(spec, fdir, L, final, tpath):
             jp = os.path.join(vd, l["key"] + ".json"); wp = os.path.join(vd, l["key"] + ".wav")
             if not os.path.exists(jp): err("L-007", f"{l['scene']}: voice cache {l['key']} missing"); continue
             m = json.load(open(jp)); tag = f"{l['scene']}/{l['key']}"
+            am = m
             if "F5" in m.get("engine", ""):
-                (ok if "v3" in m["engine"] else err)("L-007", f"{tag}: F5 engine {'line mode v3' if 'v3' in m['engine'] else 'old phrase/collage mode → rebuild'}")
-                takes = {p.get("take") for p in m.get("phrases", [])}
-                (ok if len(takes) <= 1 else err)("L-008", f"{tag}: takes per line {sorted(takes)}" + (" (cross-take collage = stutter)" if len(takes) > 1 else ""))
-            probs, clicks = audio_cuts(wp, m) if os.path.exists(wp) else (["wav missing"], [])
+                v4 = "v4" in m["engine"] and m.get("intra_output_cuts") == 0 and m.get("units")
+                (ok if v4 else err)("L-016", f"{tag}: " + ("sentence/clause units, no cut inside any F5 output" if v4 else "F5 audio cut inside a model output (v2 collage / v3 word-cut) → rebuild with voice-prosody v4"))
+                (ok if "v4" in m["engine"] else err)("L-007", f"{tag}: F5 per-unit generation (whole clause per call)")
+                if v4:
+                    us = m["units"]
+                    badu = [u["text"] for u in us[:-1] if not re.search(r"(\.\.\.|[.,?!…;:])$", u["text"].strip())]
+                    shortu = [u["text"] for u in us if len(norm(u["text"])) < 4 and len(us) > 1]
+                    (err if badu or shortu else ok)("L-016", f"{tag}: {len(us)} unit(s)" + (f", split not at punctuation {badu}" if badu else "") + (f", unit < 4 syllables {shortu}" if shortu else ""))
+                    f0 = [u["f0"] for u in us if u.get("f0")]
+                    if len(f0) > 1:
+                        spread = 12 * math.log2(max(f0) / min(f0)); (ok if spread <= 2.5 else err)("L-008", f"{tag}: timbre/F0 spread across units {spread:.1f} st (≤ 2.5)")
+                    am = {"phrases": us}
+            probs, clicks = audio_cuts(wp, am) if os.path.exists(wp) else (["wav missing"], [])
             (err if probs else ok)("L-008", f"{tag}: " + ("; ".join(probs) if probs else "edit points clean (no loud/mid-syllable cuts)"))
             if clicks: warn("L-008", f"{tag}: possible click(s) at {clicks[:5]}s — listen")
             hyp, ref = norm(m.get("stt", "")), norm(l.get("say", ""))

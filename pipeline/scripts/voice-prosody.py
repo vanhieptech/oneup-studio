@@ -295,6 +295,79 @@ def f5_line(j, d, sil_db=-32.0, search=0.25, fade=0.012):
     j["_cuts"] = {"boundary_db": info, "cut": [c is not None for c in cuts]}
     return tmp, meta, lt, sim(lt, txt), sim(lt, txt, toneless=True)
 
+UNIT_GAP = {",": 0.18, ";": 0.26, ":": 0.26, ".": 0.35, "?": 0.40, "!": 0.40, "…": 0.50, "...": 0.50}
+F5_UNIT_SEEDS = [11, 23, 37]   # same seed grid + speed 1.0 for every unit of a character → consistent timbre
+
+def split_units(txt, min_syl=4):
+    """Split a line at punctuation (. , ? ! … ; :) into clause units, keeping the mark. Units < min_syl
+    syllables are merged into the following unit (the last one into the previous). Returns [(text, char_start, char_end)]."""
+    u = [(m.group(0).strip(), m.start(), m.end()) for m in re.finditer(r"[^.,?!…;:]+(?:\.\.\.|[.,?!…;:]+)?", txt) if m.group(0).strip()]
+    out = []
+    for t, a, b in u:
+        if out and len(norm(out[-1][0])) < min_syl: pt, pa, _ = out.pop(); out.append((pt + " " + t, pa, b))
+        else: out.append((t, a, b))
+    if len(out) > 1 and len(norm(out[-1][0])) < min_syl: t, _, b = out.pop(); pt, pa, _ = out.pop(); out.append((pt + " " + t, pa, b))
+    return out
+
+def _trim_unit(x, sr, thr_db=-50.0, pad=0.04, fade=0.015):
+    """Gentle edge trim only (never inside): first/last 10 ms frame above thr_db dBFS, keep 40 ms pads, 15 ms fades."""
+    hop = int(sr * 0.01); fr = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2) + 1e-12) for i in range(0, max(1, len(x) - hop), hop)])
+    on = np.where(20 * np.log10(fr + 1e-12) > thr_db)[0]
+    if len(on) == 0: return x, 0.0, 0.0
+    a = max(0, on[0] * hop - int(pad * sr)); b = min(len(x), (on[-1] + 1) * hop + int(pad * sr)); y = x[a:b].copy()
+    f = int(fade * sr)
+    if len(y) > 2 * f: y[:f] *= np.linspace(0, 1, f); y[-f:] *= np.linspace(1, 0, f)
+    return y, a / sr, (len(x) - b) / sr
+
+def f5_units(j, d):
+    """F5 v4 (DL-038, L-016): NO cutting inside any F5 output. Line → punctuation units (merge < 4 syllables);
+    each unit is its own F5 call × len(F5_UNIT_SEEDS) takes (speed 1.0); score = toneless STT + STT − 2·repeat/drop
+    penalty, then a timbre pass (F0 median within the line, same-seed bonus); edge-only trim; units joined with
+    punctuation pauses filled with room tone. Returns (wav, meta, stt, sim, sim_toneless)."""
+    txt = re.sub(r"\s+", " ", " ".join(re.sub(r"\[[^\]]*\]\s*", "", ph["t"]) for ph in j["phrases"])).strip()
+    units = split_units(txt)
+    ref = j["ref"] if os.path.isabs(j["ref"]) else os.path.join(REPO, j["ref"])
+    items = [{"t": u[0], "seed": sd, "speed": 1.0, "out": os.path.join(d, f"u{ui}s{si}.wav")} for ui, u in enumerate(units) for si, sd in enumerate(F5_UNIT_SEEDS)]
+    bf = os.path.join(d, "f5-batch.json"); json.dump({"ref": ref, "ref_text": j["ref_text"], "items": items}, open(bf, "w"), ensure_ascii=False)
+    subprocess.run([F5_PY, os.path.join(REPO, "pipeline/tts/f5tts_gen.py"), bf], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    tx = stt([it["out"] for it in items]); cand = {}
+    for it in items:
+        ui, si = int(re.search(r"u(\d+)s(\d+)", it["out"]).group(1)), int(re.search(r"s(\d+)\.wav", it["out"]).group(1))
+        x, sr = read(it["out"])
+        if sr != SR:
+            import librosa; x = librosa.resample(x, orig_sr=sr, target_sr=SR).astype(np.float32); sr = SR
+        y, lead, tail = _trim_unit(x, sr); h = tx[it["out"]]; t = it["t"]
+        hn, rn = len(norm(h)), max(1, len(norm(t))); drop = max(0, rn - hn) / rn
+        sc = sim(h, t, toneless=True) + 0.5 * sim(h, t) - 2 * _rep_penalty(h, t) - 2 * max(0, drop - 0.1)
+        cand.setdefault(ui, []).append({"seed": F5_UNIT_SEEDS[si], "y": y, "stt": h, "score": round(sc, 3), "f0": f0_stats(y, sr)["f0_med_hz"], "trim": [round(lead, 3), round(tail, 3)]})
+    pick = {ui: max(c, key=lambda r: r["score"]) for ui, c in cand.items()}
+    if len(units) > 1:  # timbre pass: stay near the line's F0 median and prefer the dominant seed
+        med = float(np.median([p["f0"] for p in pick.values() if p["f0"]] or [0])); dom = max(set(p["seed"] for p in pick.values()), key=lambda s: sum(p["seed"] == s for p in pick.values()))
+        for ui, c in cand.items():
+            def tscore(r): return r["score"] - (0.08 * abs(12 * np.log2(r["f0"] / med)) if r["f0"] and med else 0) + (0.05 if r["seed"] == dom else 0)
+            ok_ = [r for r in c if r["score"] >= pick[ui]["score"] - 0.15]; pick[ui] = max(ok_, key=tscore)
+    segs = [np.zeros(int(0.06 * SR), np.float32)]; t = 0.06; um = []
+    for ui, (ut, ca, cb) in enumerate(units):
+        y = pick[ui]["y"]; end = ut.rstrip()[-3:] if ut.rstrip().endswith("...") else ut.rstrip()[-1:]
+        gap = 0 if ui == len(units) - 1 else UNIT_GAP.get(end, 0.16)
+        segs += [y, np.zeros(int(gap * SR), np.float32)]
+        um.append({"text": ut, "start": round(t, 3), "end": round(t + len(y) / SR, 3), "chars": [ca, cb], "seed": pick[ui]["seed"], "score": pick[ui]["score"], "stt": pick[ui]["stt"], "f0": pick[ui]["f0"], "trim": pick[ui]["trim"], "gap_after": gap,
+                   "alts": [{"seed": r["seed"], "score": r["score"], "f0": r["f0"]} for r in cand[ui]]})
+        t += len(y) / SR + gap
+    segs.append(np.zeros(int(0.08 * SR), np.float32)); y = np.concatenate(segs); y = y + room_tone(len(y))
+    # spec phrases (caption chunks) → times inside their unit by character position (no audio is cut)
+    meta = []; pos = 0
+    for ph in j["phrases"]:
+        pt = re.sub(r"\[[^\]]*\]\s*", "", ph["t"]).strip(); a = txt.find(pt, pos); a = pos if a < 0 else a; b = a + len(pt); pos = b
+        def at(c):
+            for u in um:
+                if u["chars"][0] <= c <= u["chars"][1]: return u["start"] + (u["end"] - u["start"]) * (c - u["chars"][0]) / max(1, u["chars"][1] - u["chars"][0])
+            return um[-1]["end"]
+        meta.append({"text": ph["t"], "start": round(at(a), 3), "end": round(at(b), 3), "emph": ph.get("emph", False), "take": None, "sim": 1.0, "merged": True})
+    tmp = os.path.join(d, "line.wav"); write(tmp, y); lt = stt([tmp])[tmp]
+    j["_units"] = um; j["_take_stt"] = {}; j["_leak"] = {}; j["_cuts"] = None
+    return tmp, meta, lt, sim(lt, txt), sim(lt, txt, toneless=True)
+
 def run(jobs):
     tts = None; results = []
     for j in jobs:
@@ -305,7 +378,7 @@ def run(jobs):
         if tts is None and not f5:
             from vieneu import Vieneu; tts = Vieneu()
         d = tempfile.mkdtemp(prefix="vp-"); cands = []
-        if f5: tmp, meta, line_tx, line_sim, line_sim_tl = f5_line(j, d)
+        if f5: tmp, meta, line_tx, line_sim, line_sim_tl = f5_units(j, d)  # v4; f5_line (v3) kept for reference only
         else:
             raws = f5_raw(j, d) if f5 else {}
             if f5 and not raws: raise SystemExit(f"{j['out']}: no F5 take could be aligned to its phrases (STT: {j.get('_take_stt')}); rewrite the line or add takes")
@@ -354,7 +427,7 @@ def run(jobs):
         os.makedirs(os.path.dirname(j["out"]) or ".", exist_ok=True)
         ff(tmp, j["out"] + ".wav", "highpass=f=70,deesser=i=0.35:m=0.5:f=0.5,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=140:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000")
         z, _ = read(j["out"] + ".wav")
-        m = {"duration": round(len(z) / SR, 3), "envelope": envelope(z, SR), "engine": ("F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v3 (single take, silence-only cuts)" if f5 else "VieNeu-TTS v3 Turbo (local ONNX) + voice-prosody v1"), "voice": j["voice"], "leak_trims": j.get("_leak", {}), "take_stt": j.get("_take_stt", {}), "cuts": j.get("_cuts"),
+        m = {"duration": round(len(z) / SR, 3), "envelope": envelope(z, SR), "engine": ("F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v4 (punctuation units, separate F5 calls, no intra-output cuts)" if f5 else "VieNeu-TTS v3 Turbo (local ONNX) + voice-prosody v1"), "voice": j["voice"], "leak_trims": j.get("_leak", {}), "take_stt": j.get("_take_stt", {}), "cuts": j.get("_cuts"), "units": [{k: v for k, v in u.items()} for u in j.get("_units", [])], "intra_output_cuts": 0 if j.get("_units") else None,
              "phrases": meta, "stt": line_tx, "stt_sim": round(line_sim, 3), "stt_sim_toneless": round(line_sim_tl, 3), "metrics": metrics(j["out"] + ".wav")}
         json.dump(m, open(j["out"] + ".json", "w"), ensure_ascii=False); results.append(m)
         print(f"{os.path.basename(j['out'])}: {m['duration']}s takes={[p['take'] for p in meta]} sims={[p['sim'] for p in meta]} cuts={j.get('_cuts')} stt={line_tx}", file=sys.stderr)

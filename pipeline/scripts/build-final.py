@@ -55,7 +55,7 @@ def stage_voice(spec):
         if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
             v = pv["preset"]; ph = [{k: x for k, x in p.items() if k != "en"} for p in l["phrases"]]
             if pv.get("engine") == "f5-tts":  # DL-035
-                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp3"], ensure_ascii=False).encode()).hexdigest()[:12]
+                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp4"], ensure_ascii=False).encode()).hexdigest()[:12]
                 pjobs.append({"engine": "f5-tts", "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
             else:
                 l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, ph, "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
