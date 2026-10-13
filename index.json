@@ -250,6 +250,38 @@
    "title": "Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN)"
   },
   {
+   "id": "trends-2026-10-13-v2",
+   "type": null,
+   "status": null,
+   "updated": null,
+   "path": "research/trends/2026-10-13/digest-v2.md",
+   "title": "Trend digest 2026-10-13 · v2 (chạy lại, nhiều nguồn)"
+  },
+  {
+   "id": "trends-2026-10-13",
+   "type": "trend-digest",
+   "status": "done",
+   "updated": "2026-10-13",
+   "path": "research/trends/2026-10-13/digest.md",
+   "title": "Trend digest: 2026-10-13 (skill v2, chạy tự động 08:05–08:30 giờ VN)"
+  },
+  {
+   "id": "trends-2026-10-13-idea-bank-additions",
+   "type": "plan",
+   "status": "pending-merge",
+   "updated": "2026-10-13",
+   "path": "research/trends/2026-10-13/idea-bank-additions.md",
+   "title": "Dòng mới cho content/idea-bank.md (sync-trends.sh chưa tự gộp file này)"
+  },
+  {
+   "id": "trends-patterns",
+   "type": "pattern-library",
+   "status": "living",
+   "updated": "2026-10-13",
+   "path": "research/trends/2026-10-13/patterns.md",
+   "title": "Hook & format pattern library (rule-47)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",

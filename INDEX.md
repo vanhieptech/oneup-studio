@@ -40,6 +40,10 @@ tags: [index, retrieval]
 | research.production-system | research | reference | `research/production-system-research-vi.md` | Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
+| trends-2026-10-13-v2 | None | None | `research/trends/2026-10-13/digest-v2.md` | Trend digest 2026-10-13 · v2 (chạy lại, nhiều nguồn) |
+| trends-2026-10-13 | trend-digest | done | `research/trends/2026-10-13/digest.md` | Trend digest: 2026-10-13 (skill v2, chạy tự động 08:05–08:30 giờ VN) |
+| trends-2026-10-13-idea-bank-additions | plan | pending-merge | `research/trends/2026-10-13/idea-bank-additions.md` | Dòng mới cho content/idea-bank.md (sync-trends.sh chưa tự gộp file này) |
+| trends-patterns | pattern-library | living | `research/trends/2026-10-13/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026) |

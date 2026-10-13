@@ -1,6 +1,6 @@
 ---
 name: Trend digest
-version: 2
+version: 3
 description: >-
   Daily (and Sunday weekly-synthesis) trend scan for a "how to live" short-form comic channel.
   Collect ANY hot trends + niche trends from free public sources, brand-safety filter, score
@@ -9,7 +9,7 @@ description: >-
   angle), bridge to a source-book lesson, grow a hook-pattern library, and emit validated
   scene-plan stubs for the top 1-2 ideas so trend -> script -> comic render is seamless.
 ---
-# Trend digest v2 (learning loop)
+# Trend digest v3 (multi-source collector + learning loop)
 
 ## Inputs (from the channel repo's AGENTS.md)
 - Source book index (@hi.oneup: HowToLiveBetter, "phần.mục" ids), `content/theme-map.md`, `content/idea-bank.md`, `content/story-bank.md`, `content/voice-profile.md`.
@@ -17,16 +17,17 @@ description: >-
 - Series format: comic-only (Remotion comic story beats with Hiệp/Omi chibi rigs + HyperFrames motion explainers). No real footage, no event footage/audio.
 - Output root: unattended runs write to the box sync dir, never directly to the user's computer.
 
-## Sources (free and public only; record status per source in raw.json `sources_tried`)
-1. Google Trends RSS VN + US: `curl -s "https://trends.google.com/trending/rss?geo=VN"` (also `geo=US`). `approx_traffic` -> heat.
-2. YouTube via yt-dlp (`yt-dlp --flat-playlist -J "ytsearch20:<query>"`, add `--extractor-args` only if needed): for each top trend AND each niche query, record view_count / upload age of top results -> `signals.yt_views_median`, `signals.yt_results_7d` (saturation proxy). Note titles' hook shapes for pattern mining.
-3. X public reads: `get_trends_by_woeid` (VN 23424984, worldwide 1), `search_posts_all` (7 days, min_faves) -> `signals.x_posts`, `signals.x_top_likes`. On 429 retry once, log.
-4. News RSS / web search: VnExpress, Tuổi Trẻ, Kenh14, global tech/pop; "trend TikTok Việt Nam hôm nay", "câu nói hot <tháng năm>". `get_news`/`search_news` from the X tools if available.
-5. TikTok Creative Center / hashtag pages via fetch; if JS-only mark `blocked`. Never log in, never extract cookies.
+## Sources (free and public only; no login, no cookies, no paid API)
+Config: `pipeline/trends/sources.yaml` (33 sources verified 2026-10-13). Collector: `pipeline/scripts/trend-collect.py` (stdlib + yt-dlp; parallel, 15 s timeout per source, per-source status, cross-source clustering, keyword safety pre-filter, heuristic heat/fit/bridgeability). Expect 400+ raw items/day.
+1. **Script sources** (run by the collector): Google Trends RSS VN+US (approx_traffic) · VnExpress (tin-noi-bat, tin-moi-nhat, so-hoa, giai-tri, doi-song) · Kenh14 (`/rss/home.rss`, `/star.rss`, `/doi-song.rss`) · Thanh Niên · Dân Trí · Genk (`/rss/home.rss`) · CafeBiz · Tinh tế · Tuổi Trẻ via Google News `site:tuoitre.vn` · Google News RSS (VN top, "trend TikTok", "gen Z", US productivity, US TikTok trend) · HN front page (Algolia, points) · Product Hunt · The Verge · Ars · Know Your Meme · Wikipedia top pageviews vi/en · Bluesky trending + top search · Spotify VN daily (kworb) · YouTube niche search (yt-dlp, view counts → saturation/pattern evidence only).
+2. **X (MCP only, the agent calls it, a script cannot):** `GetDynamicTools {namespace:"x"}` first, then `get_trends_by_woeid` (23424984 VN, 1 worldwide), `search_news` (2–4 niche queries, max_age_hours 72), optional `search_posts_all`. Save as a JSON list `research/trends/DATE/x-extra.json` with keys source (x-trends-vn / x-trends-ww / x-news), title, url, cat, lang, rank; pass with `--extra`. If the x namespace is missing or errors, retry discovery once, then record `x: unavailable (<exact error>)`. Budget: 30 reads/min, 1000/day.
+3. **Known blocked (do not retry daily):** TikTok Creative Center (SPA; `creative_radar_api` answers `40101 no permission` without browser-signed headers) → use Google News "trend TikTok", Kenh14, X News instead · reddit.com JSON/RSS (403 from the box IP; needs OAuth) · rsshub.app public (403) · Threads (login/JS). Retest monthly; to add a source, test it and append to sources.yaml.
 
-## Collect (20–40 candidates)
+## Collect
+`python3 pipeline/scripts/trend-collect.py --date YYYY-MM-DD --out research/trends/YYYY-MM-DD --extra research/trends/YYYY-MM-DD/x-extra.json` → `collect.json`. Then build `raw.json` = collect items (+ any web-search finds) and **override scores by hand for the shortlist (15–25 items)**: heat_score, fit_score, bridgeability, saturation_signal, patterns, safety_reason. Items of kind `pattern-evidence` (YT niche) feed patterns/saturation, never the top list.
 Categories: news · entertainment · sports · memes/slang · viral moments · celebrity · tech/AI · social debates · seasonal · niche productivity/study/office/dev.
-Each item: `id` (kebab, stable across days), kind, category, lang, summary, `heat_score` 0–1 (normalised from traffic), `fit_score` 0–1 (audience fit), `bridgeability` 0–1, `signals{}` (raw numbers), `saturation_signal` 0–1 (how many creators already cover it with the SAME lesson angle; from YT/X counts), `patterns[]` (pattern ids seen in top-performing external content), ≥1 dated evidence URL, safety verdict.
+Item schema unchanged (id, kind, category, lang, text, summary, heat_score, fit_score, bridgeability, signals{sources, cross_sources, best_rank, metrics}, saturation_signal, patterns[], evidence[], safety).
+Quality signals to weigh: cross_sources ≥2, traffic/points/likes/pageviews, X News stories (= real debate), and recency. Lessons and numbers come only from `content/theme-map.md`/the book; never invent a section id or statistic.
 
 ## Brand-safety filter (unchanged, apply before bridging)
 - Drop: politics, government/legal disputes, religion, tragedies, deaths, accidents, crime, violence, disasters, illness of a named person, profiting from suffering, mocking a person/body/region, gambling promotion, sexual content, unsourced medical claims.
@@ -51,12 +52,12 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 
 ## Daily steps
 1. Read ingest.md, patterns.md, theme map (next 6–8 clips), idea bank, last digest.
-2. Collect all sources (+ signals). 3. Safety filter. 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
+2. X via MCP → x-extra.json; run trend-collect.py. 3. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
 6. Bridges (top 5–8) with differentiation. 7. Ideas + plan stubs for top 1–2, validate.
 8. Write `digest.md`: front-matter, sources line, top trends (with rank_score/novelty/saturation), **Learning** (new patterns, saturated topics to avoid), **Bridges** table, **Differentiation**, **Plan stubs** (paths + validate result), **Script hooks** (3–5, mark approval needed), safety notes.
 9. Update ingest.md (rows, counts, Bridges with pattern+status) and idea-bank for new ideas.
 10. Unattended: stop; sync moves files (AGENTS.md "Trend sync"). Attended: sync, commit "trends: YYYY-MM-DD digest", push if allowed.
-11. Report top 5 trends, top bridges + differentiation, stub paths, source failures.
+11. Report counts (sources ok/total, raw, clusters, kept), top 10 trends, top bridges + differentiation, stub paths, source failures.
 
 ## Weekly synthesis (Sunday, after the daily run)
 1. `python3 pipeline/scripts/trend-learn.py week` for the 7-day roll-up.

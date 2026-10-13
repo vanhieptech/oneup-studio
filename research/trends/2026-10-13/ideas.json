@@ -1,0 +1,34 @@
+{"date":"2026-10-13","ideas":[
+ {"id":"ai-more-code-done-less","title":"AI viết nhiều code hơn, việc xong thì không","trend_id":"ai-agents-more-code-not-software","bridge_id":"B-aiagents-01",
+  "lesson":"4.7 Chia việc lớn thành phần làm xong trong một lần ngồi rồi mới ước giờ (Kruger & Evans 2004; sách ghi chỉ kiểm được hướng, không có %)","angle":"data / humor","pattern":"P04 + P03",
+  "differentiation":"Mọi người đang nói: AI làm dev nhanh gấp mấy lần / AI hype, dev sắp mất việc (arstechnica, forkast). Góc của mình: chính nghiên cứu cho thấy chỗ kẹt là khâu 'xong' chứ không phải khâu 'viết'; to-do của bạn cũng vậy, và sách chỉ cách chia tới mức một lần ngồi. Chuyện OneUp của Hiệp chỉ dùng khi Hiệp xác nhận (S-02).",
+  "theme":"dark","week":1,"target":"clip-03 (4.7, đăng #3, DARK) — hook thay thế",
+  "hook_vi":"AI giúp dân code viết nhiều hơn ba mươi phần trăm. Số việc xong thêm? Gần như hông có.","moment_vi":"To-do dài thêm mỗi ngày, việc xong thì vẫn vậy.","turn_vi":"Chia tới mức mỗi phần làm xong trong một lần ngồi.","hook_en":"30% more code. Almost nothing more done.",
+  "explainer":"HyperFrames: thanh 'code viết ra' dài +30% vs thanh 'việc xong' đứng yên; mũi tên kẹt ở 'review +49%'.",
+  "beats":[
+   {"text":"AI giúp dân code viết nhiều hơn ba mươi phần trăm. Số việc xong thêm? Gần như hông có.","expression":"surprised","action":"typing","pose":"sitting","background":"desk","duration":6,"caption_en":"30% more code. Almost nothing more done."},
+   {"text":"Nghiên cứu Harvard theo dõi bảy trăm mười tám công ty. Code đẩy lên tăng vọt, mà việc làm xong thì đứng yên.","expression":"focused","action":"talking","pose":"standing","background":"grid","duration":7,"caption_en":"718 firms: more code pushed, same work finished."},
+   {"text":"Kẹt ở đâu? Ở khâu xong á. Thời gian review dài thêm gần một nửa.","expression":"confused","action":"thinking","pose":"standing","background":"grid","duration":6,"caption_en":"Stuck at 'done': review time up 49%."},
+   {"text":"[CẦN HIỆP XÁC NHẬN] Chuyện một feature OneUp viết rất nhanh mà mãi chưa ship.","expression":"sad","action":"typing","pose":"sitting","background":"desk","duration":7,"caption_en":"[story placeholder]"},
+   {"text":"To-do của bạn cũng vậy á. Viết thêm task hông làm bạn xong thêm việc.","expression":"neutral","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"More tasks written is not more tasks done."},
+   {"text":"Sách chỉ vầy nè: chia việc tới mức mỗi phần làm xong trong một lần ngồi.","expression":"focused","action":"talking","pose":"standing","background":"paper","duration":7,"caption_en":"Split it until each piece fits one sitting."},
+   {"text":"Liệt kê từng phần ra trước rồi mới ước giờ, đỡ ước hụt hơn nhiều.","expression":"focused","action":"thinking","pose":"standing","background":"paper","duration":6,"caption_en":"List the pieces first, then estimate."},
+   {"text":"Task lớn nhất của bạn bây giờ là gì? Chia thử ra ba phần, mỗi phần một buổi thôi nha.","expression":"happy","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"Your biggest task: split it into 3 sittings."}
+  ]},
+ {"id":"vu-tru-khong-gui-deadline","title":"Vũ trụ không gửi deadline","trend_id":"chup-tran-nha-thong-diep","bridge_id":"B-trannha-01",
+  "lesson":"4.8 Tự đặt ngày cho việc không có hạn ngoài (Buehler et al. 1994: 80,6% xong trước hạn ngoài vs 38,7% xong đúng dự tính; sách ghi hạn tự đặt chưa được đo trực tiếp)","angle":"contrarian / humor","pattern":"P07",
+  "differentiation":"Mọi người đang nói: chụp trần nhà xem TikTok ghép bài gì, nghe trúng tâm trạng ghê (kenh14, 35express) / 'this is your sign to go all in'. Góc của mình: đảo trend — thông điệp duy nhất là vũ trụ không đặt hạn cho bạn; số liệu 80,6% vs 38,7% mà video trend không có, và nói rõ giới hạn bằng chứng như sách. Chuyện TOEIC của Hiệp chỉ dùng khi Hiệp xác nhận (S-01).",
+  "theme":"light","week":1,"target":"clip-04 (4.8, đăng #4, LIGHT) — hook thay thế",
+  "hook_vi":"Chụp trần nhà chờ vũ trụ gửi thông điệp hả? Thông điệp nè: vũ trụ hông gửi deadline đâu.","moment_vi":"Việc không ai giao hạn thì cứ để tuần sau.","turn_vi":"Tự đặt một ngày, nói cho một người biết.","hook_en":"The universe doesn't send deadlines.",
+  "explainer":"HyperFrames: hai cột 80,6% (hạn người khác đặt) vs 38,7% (tự dự tính), đếm số lên.",
+  "beats":[
+   {"text":"Chụp trần nhà chờ vũ trụ gửi thông điệp hả? Thông điệp nè: vũ trụ hông gửi deadline đâu.","expression":"surprised","action":"reacting","pose":"sitting","background":"bed","duration":6,"caption_en":"The universe doesn't send deadlines."},
+   {"text":"Mấy việc như học tiếng Anh hay làm side project, hông ai giao hạn hết. Nên nó cứ để tuần sau.","expression":"confused","action":"thinking","pose":"sitting","background":"bed","duration":7,"caption_en":"No one sets a date, so it's always next week."},
+   {"text":"[CẦN HIỆP XÁC NHẬN] Chuyện TOEIC: hẹn thi mấy lần, ngày thi cụ thể là ngày nào.","expression":"sad","action":"idle","pose":"sitting","background":"desk","duration":7,"caption_en":"[story placeholder]"},
+   {"text":"Có nghiên cứu nè: có hạn do người khác đặt thì tám mươi phần trăm sinh viên làm xong trước hạn.","expression":"focused","action":"talking","pose":"standing","background":"grid","duration":7,"caption_en":"External deadline: 80.6% finished in time."},
+   {"text":"Còn theo ngày tự đoán trong đầu? Chỉ chừng ba mươi chín phần trăm.","expression":"surprised","action":"reacting","pose":"standing","background":"grid","duration":5,"caption_en":"Their own estimate: 38.7%."},
+   {"text":"Nên việc hông có hạn thì tự đặt một ngày, rồi nói cho một người biết, cho nó giống hạn người khác giao.","expression":"happy","action":"talking","pose":"standing","background":"paper","duration":8,"caption_en":"No deadline? Set a date. Tell someone."},
+   {"text":"Nói thiệt, hạn tự đặt thì chưa ai đo trực tiếp. Nhưng vẫn hơn ngồi chờ vũ trụ lo.","expression":"neutral","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"Self-set dates weren't tested directly. Still beats waiting."},
+   {"text":"Việc để tuần sau của bạn là gì? Ghi ngày vô comment đi, mình làm người biết cho.","expression":"happy","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"Drop your date in the comments."}
+  ]}
+]}

@@ -1,0 +1,41 @@
+# Trend sources for pipeline/scripts/trend-collect.py (JSON-compatible YAML so stdlib can read it).
+# type: rss | gtrends | hn | wiki | bsky_trending | bsky_search | yt | kworb | gnews
+# Verified 2026-10-13 from the box. Blocked (do not add back without re-testing):
+#   reddit.com json/rss (403 datacenter IP, needs OAuth) · rsshub.app public (403) · TikTok Creative Center
+#   (SPA + creative_radar_api returns 40101 "no permission" without browser-signed headers) · threads.net (login/JS)
+#   znews.vn/rss/tin-moi.rss, vietcetera feeds, kenh14.vn/home.rss, genk.vn/home.rss (404) · tuoitre RSS (0 items, use gnews site:)
+{"sources": [
+ {"id":"gtrends-vn","type":"gtrends","geo":"VN","cat":"hot","lang":"vi"},
+ {"id":"gtrends-us","type":"gtrends","geo":"US","cat":"hot","lang":"en"},
+ {"id":"vnexpress-noibat","type":"rss","url":"https://vnexpress.net/rss/tin-noi-bat.rss","cat":"news","lang":"vi","max":20},
+ {"id":"vnexpress-moi","type":"rss","url":"https://vnexpress.net/rss/tin-moi-nhat.rss","cat":"news","lang":"vi","max":20},
+ {"id":"vnexpress-sohoa","type":"rss","url":"https://vnexpress.net/rss/so-hoa.rss","cat":"tech/AI","lang":"vi","max":15},
+ {"id":"vnexpress-giaitri","type":"rss","url":"https://vnexpress.net/rss/giai-tri.rss","cat":"entertainment","lang":"vi","max":15},
+ {"id":"vnexpress-doisong","type":"rss","url":"https://vnexpress.net/rss/doi-song.rss","cat":"lifestyle","lang":"vi","max":15},
+ {"id":"kenh14-home","type":"rss","url":"https://kenh14.vn/rss/home.rss","cat":"viral","lang":"vi","max":20},
+ {"id":"kenh14-star","type":"rss","url":"https://kenh14.vn/star.rss","cat":"celebrity","lang":"vi","max":10},
+ {"id":"kenh14-doisong","type":"rss","url":"https://kenh14.vn/doi-song.rss","cat":"lifestyle","lang":"vi","max":10},
+ {"id":"thanhnien","type":"rss","url":"https://thanhnien.vn/rss/home.rss","cat":"news","lang":"vi","max":15},
+ {"id":"dantri","type":"rss","url":"https://dantri.com.vn/rss/home.rss","cat":"news","lang":"vi","max":15},
+ {"id":"genk","type":"rss","url":"https://genk.vn/rss/home.rss","cat":"tech/AI","lang":"vi","max":15},
+ {"id":"cafebiz","type":"rss","url":"https://cafebiz.vn/rss/home.rss","cat":"work/career","lang":"vi","max":10},
+ {"id":"tinhte","type":"rss","url":"https://tinhte.vn/rss","cat":"tech/AI","lang":"vi","max":10},
+ {"id":"gnews-vn-top","type":"gnews","hl":"vi","gl":"VN","cat":"news","lang":"vi","max":20},
+ {"id":"gnews-vn-tiktok","type":"gnews","q":"trend TikTok when:3d","hl":"vi","gl":"VN","cat":"viral","lang":"vi","max":15},
+ {"id":"gnews-vn-genz","type":"gnews","q":"gen Z when:3d","hl":"vi","gl":"VN","cat":"social","lang":"vi","max":10},
+ {"id":"gnews-vn-tuoitre","type":"gnews","q":"site:tuoitre.vn when:1d","hl":"vi","gl":"VN","cat":"news","lang":"vi","max":10},
+ {"id":"gnews-us-productivity","type":"gnews","q":"productivity OR procrastination OR habits when:3d","hl":"en-US","gl":"US","cat":"niche","lang":"en","max":15},
+ {"id":"gnews-us-tiktoktrend","type":"gnews","q":"TikTok trend when:3d","hl":"en-US","gl":"US","cat":"viral","lang":"en","max":10},
+ {"id":"hn-front","type":"hn","cat":"tech/AI","lang":"en","max":20},
+ {"id":"producthunt","type":"rss","url":"https://www.producthunt.com/feed","cat":"tech/AI","lang":"en","max":10},
+ {"id":"verge","type":"rss","url":"https://www.theverge.com/rss/index.xml","cat":"tech/AI","lang":"en","max":10},
+ {"id":"ars","type":"rss","url":"https://feeds.arstechnica.com/arstechnica/index","cat":"tech/AI","lang":"en","max":10},
+ {"id":"kym-memes","type":"rss","url":"https://knowyourmeme.com/memes.rss","cat":"meme","lang":"en","max":16},
+ {"id":"wiki-vi","type":"wiki","project":"vi.wikipedia","cat":"hot","lang":"vi","max":20},
+ {"id":"wiki-en","type":"wiki","project":"en.wikipedia","cat":"hot","lang":"en","max":20},
+ {"id":"bsky-trending","type":"bsky_trending","cat":"hot","lang":"en","max":10},
+ {"id":"bsky-productivity","type":"bsky_search","q":"productivity","cat":"niche","lang":"en","max":10},
+ {"id":"spotify-vn","type":"kworb","url":"https://kworb.net/spotify/country/vn_daily.html","cat":"music","lang":"vi","max":15},
+ {"id":"yt-niche-vn","type":"yt","q":"cách hết trì hoãn","cat":"niche","lang":"vi","max":8},
+ {"id":"yt-niche-en","type":"yt","q":"how to stop procrastinating 2026","cat":"niche","lang":"en","max":8}
+]}

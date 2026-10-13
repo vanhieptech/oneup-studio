@@ -1,0 +1,1229 @@
+{
+ "date": "2026-10-13",
+ "collected_at": "2026-10-13T08:20:00+07:00",
+ "mode": "broad-v2",
+ "sources_tried": [
+  {
+   "source": "google_trends_rss_vn",
+   "status": "ok",
+   "note": "10 items"
+  },
+  {
+   "source": "google_trends_rss_us",
+   "status": "ok",
+   "note": "10 items"
+  },
+  {
+   "source": "youtube_ytsearch_yt-dlp",
+   "status": "ok",
+   "note": "24 queries via ytsearch15/10; ytsearchdate returned 0 entries -> yt_results_7d unavailable"
+  },
+  {
+   "source": "x_public_trends_search",
+   "status": "unavailable",
+   "note": "X tools are MCP-based; MCP connector discovery failed this run"
+  },
+  {
+   "source": "news_rss",
+   "status": "partial",
+   "note": "VnExpress giải trí + số hóa, Tuổi Trẻ, Ars Technica, The Verge ok; VnExpress tin-moi-nhat empty; Kenh14 home.rss tiny/no items"
+  },
+  {
+   "source": "web_search",
+   "status": "ok",
+   "note": "35express, kenh14, 24h, t2vn, postdom, trendsmcp, kabo, newengen, ars/forkast/dataphoenix"
+  },
+  {
+   "source": "tiktok_creative_center",
+   "status": "blocked",
+   "note": "HTTP 301 to JS-only page; no login attempted"
+  }
+ ],
+ "items": [
+  {
+   "id": "ai-agents-more-code-not-software",
+   "kind": "news",
+   "category": "tech/AI",
+   "lang": "en",
+   "text": "AI coding agents generate more code, but not more software (Harvard working paper)",
+   "summary": "Nghiên cứu Harvard (Chen & Stratton, dữ liệu Jellyfish, 718 công ty, ~726k người, 2021–03/2026): sau khi dùng AI coding agent, số dòng code +30%, commit +20%, PR +23%, nhưng số issue/epic giải quyết không tăng có ý nghĩa thống kê; thời gian review +49%.",
+   "heat_score": 0.55,
+   "fit_score": 0.85,
+   "bridgeability": 0.9,
+   "saturation_signal": 0.15,
+   "signals": {
+    "outlets": [
+     "arstechnica 2026-10",
+     "forkast",
+     "dataphoenix 2026-10-09",
+     "aiincontext 2026-10-09"
+    ],
+    "yt_query": "AI coding agents more code not more software",
+    "yt_views_median_top10": 111040,
+    "yt_news_videos_on_study_views": [
+     2,
+     6
+    ],
+    "yt_results_7d": null
+   },
+   "patterns": [
+    "P04",
+    "P03"
+   ],
+   "evidence": [
+    {
+     "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+     "date": "2026-10",
+     "publisher": "Ars Technica"
+    },
+    {
+     "url": "https://dataphoenix.info/news/harvard-coding-agent-gains-code-review",
+     "date": "2026-10-09",
+     "publisher": "Data Phoenix"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "tech research, no person mocked",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.07,
+   "already_used": false,
+   "rank_score": 0.605
+  },
+  {
+   "id": "chup-tran-nha-thong-diep",
+   "kind": "format",
+   "category": "memes/viral",
+   "lang": "vi",
+   "text": "Chụp ảnh trần nhà để TikTok ghép nhạc 'thông điệp từ vũ trụ'",
+   "summary": "Trend VN đang viral: chụp ảnh trần nhà, TikTok ghép ngẫu nhiên một bài nhạc, người xem đọc lời như thông điệp dành cho mình.",
+   "heat_score": 0.7,
+   "fit_score": 0.75,
+   "bridgeability": 0.8,
+   "saturation_signal": 0.2,
+   "signals": {
+    "kenh14_published": "2026-10-12T23:57Z",
+    "note": "YT search không có video cùng góc bài học; số view TikTok không đọc được (không đăng nhập)"
+   },
+   "patterns": [
+    "P07"
+   ],
+   "evidence": [
+    {
+     "url": "https://kenh14.vn/mot-chiec-trend-dang-viral-chup-anh-tran-nha-de-nhan-thong-diep-tu-vu-tru-ban-bi-cuoc-doi-di-toi-muc-nay-roi-sao-215261013063429553.chn",
+     "date": "2026-10-13",
+     "publisher": "Kenh14"
+    },
+    {
+     "url": "https://35express.org/trend-trend-chup-tam-anh-tren-tran-nha-tiktok-se-ghep-nhac-thong-diep/",
+     "date": "2026-10-12",
+     "publisher": "35express"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "lifestyle meme",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.1,
+   "already_used": false,
+   "rank_score": 0.592
+  },
+  {
+   "id": "this-is-your-sign",
+   "kind": "format",
+   "category": "memes/format",
+   "lang": "en",
+   "text": "'This is your sign to…' format",
+   "summary": "Format #2 tuần 5–11/10 theo postdom (video top 8,8M view); YT 'this is your sign to go all in' 1,7M, 'to stop scrolling' 686k.",
+   "heat_score": 0.6,
+   "fit_score": 0.6,
+   "bridgeability": 0.7,
+   "saturation_signal": 0.6,
+   "signals": {
+    "postdom_rank": 2,
+    "postdom_top_views": 8800000,
+    "yt_views_median_top10": 235192
+   },
+   "patterns": [
+    "P07"
+   ],
+   "evidence": [
+    {
+     "url": "https://postdom.com/blog/tiktok-trends",
+     "date": "2026-10-12",
+     "publisher": "Postdom"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=FI3tZiciiKU",
+     "date": "n/a",
+     "publisher": "YouTube"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "format only",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.3,
+   "already_used": false,
+   "rank_score": 0.31
+  },
+  {
+   "id": "dragon-ball-super-beerus",
+   "kind": "pop",
+   "category": "entertainment/anime",
+   "lang": "vi+en",
+   "text": "Dragon Ball Super: Beerus (anime remake) vừa ra mắt đã gây sốt",
+   "summary": "Anime remake 'Dragon Ball Super: Beerus' ra mắt, Tuổi Trẻ đưa tin gây sốt; trailer Crunchyroll 4,5M view, opening 3,4M.",
+   "heat_score": 0.65,
+   "fit_score": 0.6,
+   "bridgeability": 0.6,
+   "saturation_signal": 0.1,
+   "signals": {
+    "yt_trailer_views": 4501515,
+    "yt_opening_views": 3406549,
+    "yt_views_median_top10": 212900
+   },
+   "patterns": [
+    "P01"
+   ],
+   "evidence": [
+    {
+     "url": "https://tuoitre.vn/dragon-ball-super-beerus-vua-ra-mat-da-gay-sot-100261013001914802.htm",
+     "date": "2026-10-13",
+     "publisher": "Tuổi Trẻ"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=W9W5CLUGjbU",
+     "date": "n/a",
+     "publisher": "Crunchyroll / YouTube"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "pop culture; chỉ nhắc tên, không dùng hình/âm thanh (bản quyền)",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.05,
+   "already_used": false,
+   "rank_score": 0.34
+  },
+  {
+   "id": "vali-so-7-content",
+   "kind": "meme",
+   "category": "memes/slang",
+   "lang": "vi",
+   "text": "'Làm content cả năm không ai hay, chọn vali số 7 cả nước biết'",
+   "summary": "Meme tự trào của người làm content: cố cả năm không viral, một khoảnh khắc vô tri lại nổi.",
+   "heat_score": 0.45,
+   "fit_score": 0.65,
+   "bridgeability": 0.65,
+   "saturation_signal": 0.3,
+   "signals": {
+    "first_article": "2026-10-06"
+   },
+   "patterns": [
+    "P09"
+   ],
+   "evidence": [
+    {
+     "url": "https://35express.org/trend-lam-content-ca-nam-khong-ai-hay-chon-vali-so-7-ca-nuoc-biet/",
+     "date": "2026-10-06",
+     "publisher": "35express"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "self-deprecating, không nhắm người cụ thể",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.15,
+   "already_used": false,
+   "rank_score": 0.26
+  },
+  {
+   "id": "du-an-ma",
+   "kind": "phrase",
+   "category": "memes/slang",
+   "lang": "vi",
+   "text": "dự án ma",
+   "summary": "Vẫn là câu nói hot nhất của gen Z tháng 10; VTV3 'Gì thế nhỉ?' 11/10 làm riêng một số; 24h, T2VN viết thêm.",
+   "heat_score": 0.7,
+   "fit_score": 0.9,
+   "bridgeability": 0.9,
+   "saturation_signal": 0.35,
+   "signals": {
+    "yt_views_median_top10": 23328,
+    "vtv3_episode_views": 4515,
+    "top_vi_video": "'Dự án ma' của giới trẻ: hẹn đi Đà Lạt từ 2024… 23k"
+   },
+   "patterns": [
+    "P01"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.24h.com.vn/ban-tre-cuoc-song/meme-du-an-ma-la-gi-ma-duoc-gioi-tre-nhac-di-nhac-lai-khap-mang-xa-hoi-c64a1801354.html",
+     "date": "2026-10",
+     "publisher": "24h"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=GAxlwajzRWk",
+     "date": "2026-10-11",
+     "publisher": "VTV3"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "slang; tránh nghĩa gốc 'dự án ma' bất động sản lừa đảo",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.42,
+   "already_used": true,
+   "rank_score": 0.127
+  },
+  {
+   "id": "great-lock-in",
+   "kind": "format",
+   "category": "niche productivity",
+   "lang": "en",
+   "text": "The Great Lock In / locking in (Sep 1–Dec 31)",
+   "summary": "Vẫn nóng ở mảng EN self-improvement; nhiều video 'transform your life before 2026 ends'.",
+   "heat_score": 0.55,
+   "fit_score": 0.8,
+   "bridgeability": 0.8,
+   "saturation_signal": 0.7,
+   "signals": {
+    "yt_views_median_top10": 107932,
+    "yt_top": "790k 'become unrecognizable before 2026 ends'"
+   },
+   "patterns": [
+    "P05",
+    "P06",
+    "P08"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.youtube.com/watch?v=nKzW-Pq99Hg",
+     "date": "n/a",
+     "publisher": "YouTube"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "format",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.6,
+   "already_used": true,
+   "rank_score": 0.068
+  },
+  {
+   "id": "winter-arc",
+   "kind": "format",
+   "category": "niche productivity",
+   "lang": "en",
+   "text": "Winter Arc (Oct 1–Dec 31, 90 days)",
+   "summary": "Tiếp tục, video hướng dẫn 90-day reset.",
+   "heat_score": 0.5,
+   "fit_score": 0.8,
+   "bridgeability": 0.8,
+   "saturation_signal": 0.6,
+   "signals": {
+    "yt_views_median_top10": 76789,
+    "yt_top": "571k 'COMPLETE WINTER ARC GUIDE'"
+   },
+   "patterns": [
+    "P05"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.youtube.com/watch?v=dzVGY70shLk",
+     "date": "n/a",
+     "publisher": "YouTube"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "format",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.55,
+   "already_used": true,
+   "rank_score": 0.064
+  },
+  {
+   "id": "dang-buc-ma-con-kiem-tui",
+   "kind": "meme",
+   "category": "memes/slang",
+   "lang": "vi",
+   "text": "Đang bực mà còn kiếm tui nữa",
+   "summary": "Vẫn nằm trong danh sách trend câu nói tháng 10.",
+   "heat_score": 0.4,
+   "fit_score": 0.7,
+   "bridgeability": 0.7,
+   "saturation_signal": 0.4,
+   "signals": {},
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://35express.org/trend-dang-buc-ma-con-kiem-tui-nua/",
+     "date": "2026-10",
+     "publisher": "35express"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "meme",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.45,
+   "already_used": false,
+   "rank_score": 0.143
+  },
+  {
+   "id": "c1-late-night",
+   "kind": "news",
+   "category": "sports",
+   "lang": "vi",
+   "text": "Champions League: Atletico Madrid vs Man United (khuya giờ VN)",
+   "summary": "Lịch trực tiếp C1 Atletico–MU, trận khuya giờ VN; Tuổi Trẻ dự đoán tỉ số.",
+   "heat_score": 0.6,
+   "fit_score": 0.65,
+   "bridgeability": 0.75,
+   "saturation_signal": 0.2,
+   "signals": {
+    "yt_views_median_top10": 1003524
+   },
+   "patterns": [
+    "P01"
+   ],
+   "evidence": [
+    {
+     "url": "https://tuoitre.vn/lich-truc-tiep-champions-league-atletico-madrid-dau-man-united-100261012174032699.htm",
+     "date": "2026-10-12",
+     "publisher": "Tuổi Trẻ"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "không dùng hình/âm thanh trận đấu",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.35,
+   "already_used": false,
+   "rank_score": 0.231
+  },
+  {
+   "id": "no-mans-sky-ios",
+   "kind": "news",
+   "category": "tech/gaming",
+   "lang": "en",
+   "text": "No Man's Sky lên iPhone/iPad sau 'redemption arc' 10 năm",
+   "summary": "Game từng bị chê lúc ra mắt, cập nhật miễn phí suốt 10 năm, nay port lên iOS.",
+   "heat_score": 0.4,
+   "fit_score": 0.45,
+   "bridgeability": 0.6,
+   "saturation_signal": 0.1,
+   "signals": {
+    "yt_views_median_top10": 84575
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://arstechnica.com/gaming/2026/10/after-a-10-year-redemption-arc-no-mans-sky-is-coming-to-the-iphone-and-ipad/",
+     "date": "2026-10",
+     "publisher": "Ars Technica"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "gaming news",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.05,
+   "already_used": false,
+   "rank_score": 0.157
+  },
+  {
+   "id": "claude-bullying-ban",
+   "kind": "news",
+   "category": "tech/AI",
+   "lang": "vi",
+   "text": "Anthropic cấm người dùng 'bắt nạt' chatbot Claude",
+   "summary": "Tin công nghệ: chatbot được quyền dừng hội thoại khi bị chửi/bắt nạt.",
+   "heat_score": 0.4,
+   "fit_score": 0.6,
+   "bridgeability": 0.6,
+   "saturation_signal": 0.1,
+   "signals": {},
+   "patterns": [
+    "P02"
+   ],
+   "evidence": [
+    {
+     "url": "https://vnexpress.net/anthropic-cam-nguoi-dung-bat-nat-chatbot-claude-5131204.html",
+     "date": "2026-10",
+     "publisher": "VnExpress"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "tin công nghệ trung tính; không chê công ty",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.05,
+   "already_used": false,
+   "rank_score": 0.21
+  },
+  {
+   "id": "halloween-2026",
+   "kind": "seasonal",
+   "category": "seasonal",
+   "lang": "en",
+   "text": "Halloween (31/10) – hashtag #1 TikTok toàn cầu",
+   "summary": "#halloween hạng 1, +262% 7 ngày; format biến hình trước/sau, Ramalama, pumpkin head.",
+   "heat_score": 0.8,
+   "fit_score": 0.4,
+   "bridgeability": 0.4,
+   "saturation_signal": 0.8,
+   "signals": {
+    "trendsmcp_rank": 1,
+    "growth_7d_pct": 262.13
+   },
+   "patterns": [
+    "P05"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.trendsmcp.ai/trending/tiktok-hashtags-trending-october-12-2026",
+     "date": "2026-10-12",
+     "publisher": "Trends MCP"
+    },
+    {
+     "url": "https://35express.org/trend-trend-bien-hinh-don-halloween/",
+     "date": "2026-10-12",
+     "publisher": "35express"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "seasonal",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.4,
+   "already_used": false,
+   "rank_score": 0.146
+  },
+  {
+   "id": "ngay-doanh-nhan-13-10",
+   "kind": "seasonal",
+   "category": "seasonal",
+   "lang": "vi",
+   "text": "Ngày Doanh nhân Việt Nam 13/10",
+   "summary": "Google Trends VN 100+ (2 cụm). Hôm nay.",
+   "heat_score": 0.35,
+   "fit_score": 0.4,
+   "bridgeability": 0.4,
+   "saturation_signal": 0.2,
+   "signals": {
+    "gtrends_vn_traffic": "100+ x2",
+    "yt_views_median_top10": 245
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://dantri.com.vn/kinh-doanh/chap-canh-nhung-doanh-nhan-dan-toc-20261012193345541.htm",
+     "date": "2026-10-12",
+     "publisher": "Dân Trí"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "tin có nêu tên tỷ phú; chỉ dùng chung chung, không nêu tên",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.1,
+   "already_used": false,
+   "rank_score": 0.079
+  },
+  {
+   "id": "dieu-hoa-26-do",
+   "kind": "news",
+   "category": "lifestyle",
+   "lang": "vi",
+   "text": "Bật điều hòa 26 độ ban đêm",
+   "summary": "Google Trends VN 200+; Kenh14 lời khuyên bật điều hòa 26 độ khi ngủ. Sách không có mục nhiệt độ phòng ngủ.",
+   "heat_score": 0.4,
+   "fit_score": 0.6,
+   "bridgeability": 0.3,
+   "saturation_signal": 0.3,
+   "signals": {
+    "gtrends_vn_traffic": "200+",
+    "yt_views_median_top10": 7833
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://kenh14.vn/loi-khuyen-cho-nhung-gia-dinh-hay-bat-dieu-hoa-26-do-vao-ban-dem-215261012225044575.chn",
+     "date": "2026-10-12",
+     "publisher": "Kenh14"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "lifestyle; không đưa lời khuyên y tế không có nguồn",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.15,
+   "already_used": false,
+   "rank_score": 0.098
+  },
+  {
+   "id": "fitbit-edge-screenless",
+   "kind": "news",
+   "category": "tech",
+   "lang": "en",
+   "text": "Fitbit Edge: cho người không muốn bỏ hẳn màn hình",
+   "summary": "Thiết bị đeo ít màn hình; tranh luận giảm màn hình.",
+   "heat_score": 0.3,
+   "fit_score": 0.4,
+   "bridgeability": 0.5,
+   "saturation_signal": 0.2,
+   "signals": {},
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://www.theverge.com/gadgets/1008410/fitbit-edge-price-battery-specs-fitness-tracker",
+     "date": "2026-10",
+     "publisher": "The Verge"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "product news",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.1,
+   "already_used": false,
+   "rank_score": 0.085
+  },
+  {
+   "id": "creators-humanity-ai",
+   "kind": "news",
+   "category": "tech/AI",
+   "lang": "vi",
+   "text": "Nhà sáng tạo vật lộn chứng minh 'tính người' trong thời AI",
+   "summary": "VnExpress: creator phải chứng minh nội dung không phải AI.",
+   "heat_score": 0.3,
+   "fit_score": 0.5,
+   "bridgeability": 0.4,
+   "saturation_signal": 0.3,
+   "signals": {},
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://vnexpress.net/nha-sang-tao-vat-lon-chung-minh-tinh-nguoi-trong-thoi-ai-5128776.html",
+     "date": "2026-10",
+     "publisher": "VnExpress"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "meta, liên quan cách kênh làm nội dung",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.15,
+   "already_used": false,
+   "rank_score": 0.082
+  },
+  {
+   "id": "ai-robots-jobs",
+   "kind": "news",
+   "category": "tech/AI",
+   "lang": "en",
+   "text": "Amazon 1 triệu robot; Bezos: AI đưa lại gia đình một người đi làm",
+   "summary": "Tin AI và việc làm.",
+   "heat_score": 0.35,
+   "fit_score": 0.5,
+   "bridgeability": 0.4,
+   "saturation_signal": 0.5,
+   "signals": {},
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://arstechnica.com/ai/2026/10/inside-amazons-robotic-arms-race-and-what-it-means-for-the-future-of-human-work/",
+     "date": "2026-10",
+     "publisher": "Ars Technica"
+    },
+    {
+     "url": "https://vnexpress.net/ty-phu-bezos-ai-se-dua-tro-lai-mo-hinh-gia-dinh-chi-mot-nguoi-di-lam-5130811.html",
+     "date": "2026-10",
+     "publisher": "VnExpress"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "nêu tên tỷ phú; dễ gây lo âu mất việc",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.25,
+   "already_used": false,
+   "rank_score": 0.089
+  },
+  {
+   "id": "kospi-ai-stocks-cold",
+   "kind": "news",
+   "category": "money",
+   "lang": "en",
+   "text": "KOSPI: thị trường cổ phiếu AI nóng nhất thế giới hạ nhiệt",
+   "summary": "US Google Trends 500+; cổ phiếu chip Hàn giảm.",
+   "heat_score": 0.45,
+   "fit_score": 0.3,
+   "bridgeability": 0.3,
+   "saturation_signal": 0.3,
+   "signals": {
+    "gtrends_us_traffic": "500+",
+    "yt_views_median_top10": 206
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/worlds-hottest-ai-stock-market-085239508.html",
+     "date": "2026-10-13",
+     "publisher": "Yahoo Finance"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "tiền/đầu tư; không khuyến nghị, không chế giễu người lỗ",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.15,
+   "already_used": false,
+   "rank_score": 0.055
+  },
+  {
+   "id": "tang-thanh-ha-top100",
+   "kind": "celebrity",
+   "category": "celebrity",
+   "lang": "vi",
+   "text": "Tăng Thanh Hà lọt đề cử top 100 gương mặt đẹp nhất thế giới",
+   "summary": "Google Trends VN 200+.",
+   "heat_score": 0.4,
+   "fit_score": 0.3,
+   "bridgeability": 0.2,
+   "saturation_signal": 0.3,
+   "signals": {
+    "gtrends_vn_traffic": "200+"
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://ngoisao.vnexpress.net/tang-thanh-ha-lan-dau-lot-de-cu-top-100-guong-mat-dep-nhat-the-gioi-5131472.html",
+     "date": "2026-10-12",
+     "publisher": "VnExpress Ngôi sao"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "người nổi tiếng + chủ đề ngoại hình; chỉ trung tính/tích cực",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.15,
+   "already_used": false,
+   "rank_score": 0.033
+  },
+  {
+   "id": "chelsea-green-imposter",
+   "kind": "celebrity",
+   "category": "celebrity/sports",
+   "lang": "en",
+   "text": "Chelsea Green (WWE) nói vẫn bị imposter syndrome",
+   "summary": "US Google Trends 200+.",
+   "heat_score": 0.3,
+   "fit_score": 0.35,
+   "bridgeability": 0.55,
+   "saturation_signal": 0.5,
+   "signals": {
+    "gtrends_us_traffic": "200+",
+    "yt_imposter_median": 107982
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://411mania.com/wrestling/chelsea-green-still-has-wrestling-imposter-syndrome/",
+     "date": "2026-10-12",
+     "publisher": "411mania"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "người nổi tiếng; chỉ trung tính",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.25,
+   "already_used": false,
+   "rank_score": 0.074
+  },
+  {
+   "id": "scam-xem-phim-ngan",
+   "kind": "news",
+   "category": "tech/security",
+   "lang": "vi",
+   "text": "Chiêu lừa 'xem phim ngắn kiếm tiền triệu'",
+   "summary": "VnExpress cảnh báo chiêu lừa nhiệm vụ xem phim ngắn.",
+   "heat_score": 0.35,
+   "fit_score": 0.6,
+   "bridgeability": 0.5,
+   "saturation_signal": 0.3,
+   "signals": {},
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://vnexpress.net/chieu-lua-xem-phim-ngan-kiem-tien-trieu-5130435.html",
+     "date": "2026-10",
+     "publisher": "VnExpress"
+    }
+   ],
+   "safety": "caution",
+   "safety_reason": "liên quan lừa đảo; chỉ dùng góc phòng tránh, không kể nạn nhân",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.15,
+   "already_used": false,
+   "rank_score": 0.143
+  },
+  {
+   "id": "sound-we-fell-in-love-in-october",
+   "kind": "sound",
+   "category": "music",
+   "lang": "en",
+   "text": "Sound 'we fell in love in october' – girl in red",
+   "summary": "Sound tăng nhanh nhất (Kabo, +20,2k video/ngày). Chỉ ghi tên, Hiệp tự chọn nhạc trên TikTok.",
+   "heat_score": 0.6,
+   "fit_score": 0.3,
+   "bridgeability": 0.2,
+   "saturation_signal": 0.7,
+   "signals": {
+    "videos": 1985722,
+    "new_today": 20184
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://kabo.sh/tools/trending-tiktok-sounds",
+     "date": "2026-10-12",
+     "publisher": "Kabo"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "sound name only",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.35,
+   "already_used": false,
+   "rank_score": 0.043
+  },
+  {
+   "id": "al-nassr-ronaldo",
+   "kind": "news",
+   "category": "sports",
+   "lang": "vi",
+   "text": "Al Nassr – Neftchi, Ronaldo tỏa sáng (AFC Champions League Elite)",
+   "summary": "Google Trends VN 200+.",
+   "heat_score": 0.4,
+   "fit_score": 0.4,
+   "bridgeability": 0.3,
+   "saturation_signal": 0.4,
+   "signals": {
+    "gtrends_vn_traffic": "200+",
+    "yt_views_median_top10": 148469
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://www.24h.com.vn/bong-da/ket-qua-bong-da-al-nassr-neftchi-fergana-ronaldo-toa-sang-cup-c1-chau-a-c48a1802210.html",
+     "date": "2026-10-12",
+     "publisher": "24h"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "sports; không dùng hình trận đấu",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.2,
+   "already_used": false,
+   "rank_score": 0.063
+  },
+  {
+   "id": "studytok-blurting-bodydoubling",
+   "kind": "format",
+   "category": "niche productivity",
+   "lang": "en",
+   "text": "Study-with-me / lock-in study sessions",
+   "summary": "Format kinh điển, view rất cao nhưng bão hòa.",
+   "heat_score": 0.5,
+   "fit_score": 0.7,
+   "bridgeability": 0.6,
+   "saturation_signal": 0.9,
+   "signals": {
+    "yt_views_median_top10": 2592088
+   },
+   "patterns": [
+    "P06"
+   ],
+   "evidence": [
+    {
+     "url": "https://www.youtube.com/watch?v=UXwJ9RwdyHs",
+     "date": "n/a",
+     "publisher": "YouTube"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "format",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.7,
+   "already_used": false,
+   "rank_score": 0.122
+  },
+  {
+   "id": "monk-mode",
+   "kind": "phrase",
+   "category": "niche productivity",
+   "lang": "en",
+   "text": "monk mode",
+   "summary": "Ổn định, không tăng.",
+   "heat_score": 0.3,
+   "fit_score": 0.7,
+   "bridgeability": 0.7,
+   "saturation_signal": 0.5,
+   "signals": {
+    "yt_views_median_top10": 38096
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://www.youtube.com/watch?v=Fg0UcmvMgIQ",
+     "date": "n/a",
+     "publisher": "YouTube"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "slang",
+   "seen_days": 1,
+   "novelty": 0.5,
+   "saturation": 0.5,
+   "already_used": true,
+   "rank_score": 0.031
+  },
+  {
+   "id": "nfl-week5-bills-rams",
+   "kind": "news",
+   "category": "sports",
+   "lang": "en",
+   "text": "NFL tuần 5 (Tyler Bass, Bills–Rams)",
+   "summary": "US Google Trends 100000+. Khán giả VN gần như không quan tâm.",
+   "heat_score": 0.9,
+   "fit_score": 0.1,
+   "bridgeability": 0.1,
+   "saturation_signal": 0.5,
+   "signals": {
+    "gtrends_us_traffic": "100000+"
+   },
+   "patterns": [],
+   "evidence": [
+    {
+     "url": "https://www.nfl.com/news/week-5-monday-night-inactives-buffalo-bills-at-los-angeles-rams",
+     "date": "2026-10-12",
+     "publisher": "NFL"
+    }
+   ],
+   "safety": "ok",
+   "safety_reason": "sports",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.25,
+   "already_used": false,
+   "rank_score": 0.011
+  },
+  {
+   "id": "thuong-tuong-qdnd",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "thượng tướng quân đội nhân dân việt nam",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "quân đội/chính trị",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "trom-cap",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "trộm cắp (tin bắt giữ)",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "tội phạm",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "sherrod-brown",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "Sherrod Brown / bầu cử giữa kỳ Mỹ",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "chính trị",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "crown-jewel-2026",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "crown jewel 2026 (tin kèm theo là tấn công Ả Rập Xê Út)",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "bạo lực/chiến sự",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "thoi-tiet-mien-trung-mua-to",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "dự báo thời tiết Đà Nẵng, miền Trung mưa rất to",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "nguy cơ thiên tai",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "nga-mien-visa",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "Nga miễn visa 30 ngày cho công dân VN",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "chính sách nhà nước/chính trị",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "musk-midterm-donation",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "Elon Musk tài trợ 276 triệu USD cho đảng Cộng hòa",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "chính trị",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "fifa-infantino",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "Chủ tịch FIFA vướng bê bối",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "bê bối/pháp lý",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "measles-death-pa",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "ca tử vong sởi ở Pennsylvania",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "tử vong/bệnh",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "claude-false-murder-tip",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "AI gửi tố giác giả về vụ giết người",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "tội phạm",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "hacker-fridge",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "hacker làm hỏng tủ lạnh siêu thị",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "tội phạm",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "teen-cliff-ai-route",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "thiếu niên kẹt trên vách núi do AI lên lộ trình",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "tai nạn",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "tro-cot-danh-ca",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "tro cốt danh ca bị đánh cắp",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "tội phạm/người đã mất",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  },
+  {
+   "id": "ukraine-drones-datacenter",
+   "kind": "news",
+   "category": "dropped",
+   "lang": "vi/en",
+   "text": "drone tấn công trung tâm dữ liệu",
+   "summary": "",
+   "heat_score": 0.3,
+   "fit_score": 0,
+   "bridgeability": 0,
+   "signals": {},
+   "patterns": [],
+   "evidence": [],
+   "safety": "drop",
+   "safety_reason": "chiến sự",
+   "seen_days": 0,
+   "novelty": 1.0,
+   "saturation": 0.0,
+   "already_used": false,
+   "rank_score": 0.0
+  }
+ ],
+ "scoring": {
+  "method": "trend-learn.py v1: heat*fit*bridgeability*(0.5+novelty)*(1-0.6*saturation)*(0.3 if used)"
+ }
+}

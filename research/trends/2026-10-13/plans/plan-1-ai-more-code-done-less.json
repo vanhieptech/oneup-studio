@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-ai-more-code-done-less",
+ "title": "[STUB] AI viết nhiều code hơn, việc xong thì không",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "ai-agents-more-code-not-software",
+  "bridge_id": "B-aiagents-01",
+  "lesson": "4.7 Chia việc lớn thành phần làm xong trong một lần ngồi rồi mới ước giờ (Kruger & Evans 2004; sách ghi chỉ kiểm được hướng, không có %)",
+  "angle": "data / humor",
+  "pattern": "P04 + P03",
+  "differentiation": "Mọi người đang nói: AI làm dev nhanh gấp mấy lần / AI hype, dev sắp mất việc (arstechnica, forkast). Góc của mình: chính nghiên cứu cho thấy chỗ kẹt là khâu 'xong' chứ không phải khâu 'viết'; to-do của bạn cũng vậy, và sách chỉ cách chia tới mức một lần ngồi. Chuyện OneUp của Hiệp chỉ dùng khi Hiệp xác nhận (S-02)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ai-more-code-done-less.b01",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "AI giúp dân code viết nhiều hơn ba mươi phần trăm. Số việc xong thêm? Gần như hông có.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "30% more code. Almost nothing more done.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ai-more-code-done-less.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nghiên cứu Harvard theo dõi bảy trăm mười tám công ty. Code đẩy lên tăng vọt, mà việc làm xong thì đứng yên.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "718 firms: more code pushed, same work finished.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ai-more-code-done-less.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kẹt ở đâu? Ở khâu xong á. Thời gian review dài thêm gần một nửa.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Stuck at 'done': review time up 49%.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ai-more-code-done-less.b04",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện một feature OneUp viết rất nhanh mà mãi chưa ship.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder]",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ai-more-code-done-less.b05",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "To-do của bạn cũng vậy á. Viết thêm task hông làm bạn xong thêm việc.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "More tasks written is not more tasks done.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ai-more-code-done-less.b06",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách chỉ vầy nè: chia việc tới mức mỗi phần làm xong trong một lần ngồi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Split it until each piece fits one sitting.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ai-more-code-done-less.b07",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Liệt kê từng phần ra trước rồi mới ước giờ, đỡ ước hụt hơn nhiều.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "List the pieces first, then estimate.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "ai-more-code-done-less.b08",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Task lớn nhất của bạn bây giờ là gì? Chia thử ra ba phần, mỗi phần một buổi thôi nha.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Your biggest task: split it into 3 sittings.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

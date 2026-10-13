@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-vu-tru-khong-gui-deadline",
+ "title": "[STUB] Vũ trụ không gửi deadline",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "chup-tran-nha-thong-diep",
+  "bridge_id": "B-trannha-01",
+  "lesson": "4.8 Tự đặt ngày cho việc không có hạn ngoài (Buehler et al. 1994: 80,6% xong trước hạn ngoài vs 38,7% xong đúng dự tính; sách ghi hạn tự đặt chưa được đo trực tiếp)",
+  "angle": "contrarian / humor",
+  "pattern": "P07",
+  "differentiation": "Mọi người đang nói: chụp trần nhà xem TikTok ghép bài gì, nghe trúng tâm trạng ghê (kenh14, 35express) / 'this is your sign to go all in'. Góc của mình: đảo trend — thông điệp duy nhất là vũ trụ không đặt hạn cho bạn; số liệu 80,6% vs 38,7% mà video trend không có, và nói rõ giới hạn bằng chứng như sách. Chuyện TOEIC của Hiệp chỉ dùng khi Hiệp xác nhận (S-01)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "vu-tru-khong-gui-deadline.b01",
+   "duration": 6,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chụp trần nhà chờ vũ trụ gửi thông điệp hả? Thông điệp nè: vũ trụ hông gửi deadline đâu.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The universe doesn't send deadlines.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "vu-tru-khong-gui-deadline.b02",
+   "duration": 7,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy việc như học tiếng Anh hay làm side project, hông ai giao hạn hết. Nên nó cứ để tuần sau.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "No one sets a date, so it's always next week.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "vu-tru-khong-gui-deadline.b03",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện TOEIC: hẹn thi mấy lần, ngày thi cụ thể là ngày nào.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder]",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "vu-tru-khong-gui-deadline.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có nghiên cứu nè: có hạn do người khác đặt thì tám mươi phần trăm sinh viên làm xong trước hạn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "External deadline: 80.6% finished in time.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "vu-tru-khong-gui-deadline.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn theo ngày tự đoán trong đầu? Chỉ chừng ba mươi chín phần trăm.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Their own estimate: 38.7%.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "vu-tru-khong-gui-deadline.b06",
+   "duration": 8,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên việc hông có hạn thì tự đặt một ngày, rồi nói cho một người biết, cho nó giống hạn người khác giao.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "No deadline? Set a date. Tell someone.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "vu-tru-khong-gui-deadline.b07",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thiệt, hạn tự đặt thì chưa ai đo trực tiếp. Nhưng vẫn hơn ngồi chờ vũ trụ lo.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Self-set dates weren't tested directly. Still beats waiting.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "vu-tru-khong-gui-deadline.b08",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Việc để tuần sau của bạn là gì? Ghi ngày vô comment đi, mình làm người biết cho.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Drop your date in the comments.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
