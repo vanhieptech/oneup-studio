@@ -55,7 +55,7 @@ def stage_voice(spec):
         if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
             v = pv["preset"]; ph = [{k: x for k, x in p.items() if k != "en"} for p in l["phrases"]]
             if pv.get("engine") == "f5-tts":  # DL-035
-                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp2"], ensure_ascii=False).encode()).hexdigest()[:12]
+                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp3"], ensure_ascii=False).encode()).hexdigest()[:12]
                 pjobs.append({"engine": "f5-tts", "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
             else:
                 l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, ph, "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
@@ -202,6 +202,7 @@ def main():
             if q["engine"] == "hyperframes":
                 silent = q["mp4"].replace(".mp4", "-silent.mp4")
                 sh(["npx", "--yes", "hyperframes@0.8.150", "lint"], cwd=q["dir"])  # audit #1: lint gate (exit≠0 on error)
+                open(os.path.join(fdir, "hf-check.txt"), "w").write(f"hyperframes@0.8.150 lint {q['id']}: 0 errors (build-final gate)\n")  # L-014
                 sh(["npx", "--yes", "hyperframes@0.8.150", "render", ".", "-o", silent, "-f", str(FPS), "--quality", "delivery"], cwd=q["dir"])
                 sh(["ffmpeg", "-loglevel", "error", "-y", "-i", silent, "-i", os.path.join(fdir, "out", f"{q['id']}-voice.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", q["mp4"]])
     # assemble (two passes: audio graph first, then video + mux; one big graph with lavfi sources can deadlock)

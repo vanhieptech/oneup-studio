@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.3
+version: 3.4
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.3, 13/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.4, 13/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -118,7 +118,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Chỉ nhân vật có `voice` trong profile mới có giọng AI: **Hiệp chibi** = **"F5 · Thái Sơn"** (nam, miền Nam; nghe thử 8 giọng, chọn số 6), **Omi** = **"F5 · Mỹ Duyên"** (nữ, miền Nam; số 6). Hiệp chọn 13/10/2026 (DL-035), thay Đức Trí / Kim Thanh (DL-030). Khai báo ở `video-engine/src/characters/profiles/{hiep,omi}.json` → `voice` (`engine: f5-tts`, `ref`, `refText`). Engine: F5-TTS + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice`, chạy **local** trên CPU (`/workspace/f5-venv`, `pipeline/tts/f5tts_gen.py`), không gọi API. Đổi giọng/giọng mẫu phải ghi DL.
     - ⚠ **Giấy phép:** checkpoint là **CC-BY-NC-SA-4.0 (không thương mại)**. Kênh có quảng bá app OneUp nên dùng trong clip đăng là **rủi ro vi phạm giấy phép**; Hiệp đã xác nhận chấp nhận rủi ro này (13/10/2026, DL-035). Nếu bị khiếu nại hoặc kênh bắt đầu kiếm tiền trực tiếp thì quay về VieNeu (Apache-2.0, `engine: vieneu-tts`, profile còn ghi `previous`) và ghi DL.
     - **Giọng mẫu (reference):** chỉ dùng câu trung tính do preset VieNeu tổng hợp (`pipeline/tts/f5-refs/`, câu "Hôm nay trời Sài Gòn mát mẻ…"). **Cấm clone giọng người thật** (kể cả Hiệp), cấm `ref_audio` lấy từ bản thu người thật.
-    - **Prosody:** mọi câu đi qua `voice-prosody.py` theo từng cụm hơi (`phrases`: khoảng nghỉ, nhấn = chậm + lên giọng + to hơn), mỗi cụm 3 take (seed/speed) chọn bằng STT + F0 + lỗi; tự cắt phần **rò giọng mẫu** (chữ của câu mẫu lọt vào đầu take) bằng timestamp từng từ của faster-whisper. Câu không có `phrases` được tính là một cụm. Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh. Không dùng tag [cười]/[thở dài].
+    - **Prosody:** mọi câu đi qua `voice-prosody.py` theo từng cụm hơi (`phrases`: khoảng nghỉ, nhấn = chậm + lên giọng + to hơn), với F5: mỗi câu sinh nguyên câu 3 take (seed/speed, NFE 32), giữ **một take tự nhiên duy nhất** (không ghép cụm từ nhiều take), loại take lặp/thừa âm tiết bằng STT, chỉ cắt cụm ở khoảng lặng thật (DL-036); tự cắt phần **rò giọng mẫu** (chữ của câu mẫu lọt vào đầu take) bằng timestamp từng từ của faster-whisper. Câu không có `phrases` được tính là một cụm. Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh. Không dùng tag [cười]/[thở dài].
     - Audio cache theo hash (engine + giọng + giọng mẫu + cụm), chuẩn loudness rồi ghép −14 LUFS. Không nhạc (luật 21). Kiểm bằng ffprobe (có track audio) và ASR (đúng chữ) trước khi gửi Hiệp.
     - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng nhân vật là giọng tổng hợp nghe như người thật → **mọi clip có giọng AI** (Hiệp và/hoặc Omi): **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." (chỉ nêu nhân vật thật sự nói). Clip không có giọng AI thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
     - Mọi câu phải qua STT (`pipeline/tts/stt_check.py`); câu nghe sai thì sửa cách viết (`say`, vd. TOEIC → "tô ích") hoặc tăng `take` trong spec để đọc lại.
@@ -135,8 +135,13 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Mọi clip làm theo `skills/make-video/SKILL.md`: intake → đọc nguồn chuẩn → script → humanizer → `check-rules` → **gate 1** (script.md + beat table + storyboard) → render → `check-rules --final` + soát frame + STT → **gate 2** (MP4 + post.md) → ghi DL.
     - `pipeline/scripts/check-rules.py` là cổng tự động: lỗi (✖) thì không gửi Hiệp duyệt và không render final.
     - Hiệp yêu cầu bằng "Làm clip tiếp theo" / "Làm clip về <chủ đề/trend>"; góp ý theo id beat ("b03: đổi câu …"). Agent sửa `final/spec.json` (hoặc template), tăng `revisions`, build lại; không viết lại từ đầu.
+49. **Cổng bài học, tự học từ lỗi (lessons gate):**
+    - `logs/lessons.md` ghi mọi lỗi đã gặp (id `L-NNN`, ngày, triệu chứng theo lời Hiệp, nguyên nhân gốc, cách sửa, cách phát hiện, tên check tự động, trạng thái). Đọc file này **trước mỗi clip**.
+    - Mỗi lần Hiệp góp ý/chê ("vấp", "xấu", "đọc sai"…): **trước khi sửa** thêm hoặc cập nhật lesson, và nếu đo được thì thêm check `L-NNN` vào `pipeline/scripts/check-rules.py`. Check ✖ chặn gửi duyệt (luật 48) như mọi luật khác. Lỗi chưa đo được thì ghi `manual` kèm cách soát tay.
+    - Không xoá lesson; khi đổi cách sửa thì cập nhật dòng và ghi DL.
 
 ## Changelog
+- **v3.4, 13/10/2026:** luật 49 (cổng bài học `logs/lessons.md` + check `L-NNN`); F5 v3 chống "vấp": 1 take tự nhiên mỗi câu, chỉ cắt ở lặng thật (luật 46; DL-036, DL-037).
 - **v3.3, 13/10/2026:** giọng nhân vật chuyển sang F5-TTS (Hiệp "F5 · Thái Sơn", Omi "F5 · Mỹ Duyên", giọng mẫu tổng hợp từ VieNeu); Hiệp chấp nhận rủi ro giấy phép CC-BY-NC-SA của checkpoint; dòng nhãn AI ghi "(F5-TTS)" (luật 2, 24, 25, 46; DL-035).
 - **v3.2, 13/10/2026:** giọng AI preset cho cả Hiệp chibi ("Đức Trí") và Omi ("Kim Thanh"); nhãn AI cho mọi clip có giọng AI (luật 2, 24, 26, 29, 32, 45, 46; DL-030). Luật 48: skill `make-video` + `check-rules.py` là quy trình bắt buộc (luật 28; DL-031).
 - **v3.1, 13/10/2026:** series chỉ comic + motion, bỏ yêu cầu tự quay (luật 3, 5, 6, 23, 29; DL-027). Bỏ nhắc đăng (luật 32; DL-028). Luật 47 trend job học hỏi, luật 38 trỏ sang skill v2 (DL-029).

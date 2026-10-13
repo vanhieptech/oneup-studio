@@ -6,9 +6,9 @@
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
 
-Source: <clip>/final/spec.json (format: see skills/make-video/SKILL.md). Exit 1 if any ✖ error.
+Source: <clip>/final/spec.json (format: see skills/make-video/SKILL.md). Exit 1 if any ✖ error. Also runs the lessons gate (rule-49, logs/lessons.md): checks named L-NNN.
 """
-import json, os, re, subprocess, sys, difflib, unicodedata, glob
+import json, os, re, subprocess, sys, difflib, unicodedata, glob, math
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x64/bin")
@@ -55,6 +55,7 @@ def main():
     a = sys.argv[1:]; clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
     outp = a[a.index("--out") + 1] if "--out" in a else None
     specp = os.path.join(clip_dir, "final", "spec.json")
+    if not os.path.exists(specp) and os.path.exists(os.path.join(clip_dir, "spec.json")): specp = os.path.join(clip_dir, "spec.json")  # samples
     if not os.path.exists(specp): err("rule-48", f"missing {os.path.relpath(specp, REPO)} (source of truth for the clip)"); return report(outp)
     spec = json.load(open(specp)); fdir = os.path.dirname(specp)
     prof = {}
@@ -220,7 +221,107 @@ def main():
         for l in t["lines"]:
             hyp = got.get(l["key"] + ".wav", ""); sim = difflib.SequenceMatcher(None, norm(l["say"]), norm(hyp)).ratio()
             (ok if sim >= 0.75 else warn if sim >= 0.55 else err)("rule-46", f"STT {l['scene']} {sim:.2f}: “{hyp}”")
+    lessons(spec, fdir, L, final, tpath)
     return report(outp)
+
+# ---- rule-49: lessons gate (logs/lessons.md). Every measurable lesson = a check named after its id. ----
+KEY_TERMS = {"toeic": "tô ích", "ok": "ô kê", "okay": "ô kê"}   # L-010: Latin terms TTS misreads → required phonetic
+FUNC_WORDS = {"a", "an", "the", "to", "of", "and", "or", "is", "are", "my", "your", "it", "in", "on", "at", "for"}
+
+def wav_read(path):
+    import wave, array
+    with wave.open(path) as w:
+        n, ch, sw = w.getnframes(), w.getnchannels(), w.getsampwidth(); b = w.readframes(n); sr = w.getframerate()
+    a = array.array("h", b)[::ch] if sw == 2 else array.array("h")
+    return [x / 32768 for x in a], sr
+
+def audio_cuts(path, meta):
+    """L-008: clicks (sample jump > 0.35 of peak) and phrase edges that start/end loud (cut mid-syllable)."""
+    x, sr = wav_read(path)
+    if not x: return [], []
+    import numpy as np
+    a = np.asarray(x, np.float32); pk = float(np.abs(a).max()) or 1; probs = []
+    # Generic click scan is a WARNING heuristic only: on natural F5/VieNeu takes plosives reach 2nd-diff/median
+    # ratios up to ~160, overlapping real splices (~14), so it cannot block. Blocking = edit-point checks below.
+    d2 = np.abs(np.diff(a, 2)); f = int(sr / 1000); n = len(d2) // f; clicks = []
+    if n > 60:
+        e = d2[:n * f].reshape(n, f).mean(1)
+        med = np.array([np.median(e[max(0, i - 25):i + 25]) for i in range(n)]) + 1e-9
+        clicks = [round(i / 1000, 2) for i in np.where((e > 200 * med) & (e > e.max() * 0.1))[0]]
+    def rdb(a, b):
+        seg = x[max(0, int(a * sr)):max(0, int(b * sr))]
+        return 20 * math.log10((sum(v * v for v in seg) / max(1, len(seg))) ** 0.5 / pk + 1e-9) if seg else -99
+    ph = meta.get("phrases") or []
+    for k, p in enumerate(ph):
+        if p.get("merged") and k + 1 < len(ph) and ph[k + 1].get("merged") and abs(ph[k + 1]["start"] - p["end"]) < 0.005: continue  # inside one natural segment
+        if k > 0 and abs(p["start"] - ph[k - 1]["end"]) > 0.05 and rdb(p["start"], p["start"] + 0.008) > -20: probs.append(f"phrase {k} starts loud (mid-syllable cut)")
+        if k + 1 < len(ph) and abs(ph[k + 1]["start"] - p["end"]) > 0.05 and rdb(p["end"] - 0.008, p["end"]) > -20: probs.append(f"phrase {k} ends loud (mid-syllable cut)")
+    return probs, clicks
+
+def lessons(spec, fdir, L, final, tpath):
+    lp = os.path.join(REPO, "logs/lessons.md")
+    if not os.path.exists(lp): err("rule-49", "logs/lessons.md missing"); return
+    ids = re.findall(r"^\| (L-\d{3}) ", open(lp).read(), re.M); ok("rule-49", f"lessons.md: {len(ids)} lessons loaded")
+    # L-001 contact sheet (frame review)
+    (ok if os.path.exists(os.path.join(fdir, "contact-sheet.png")) else (err if final else warn))("L-001", "contact-sheet.png present for self-review")
+    # L-004 highlight index
+    bad = [f"{s['id']}:{l['en']!r} hl={l.get('hl')}" for _, s, l in L if l.get("en") and any((not isinstance(i, int)) or i >= len(l["en"].split()) for i in l.get("hl", []))]
+    fw = [f"{s['id']}:{l['en'].split()[i]}" for _, s, l in L if l.get("en") for i in l.get("hl", []) if isinstance(i, int) and i < len(l["en"].split()) and re.sub(r"\W", "", l["en"].split()[i].lower()) in FUNC_WORDS]
+    (err if bad else ok)("L-004", f"highlight indexes out of range: {bad}" if bad else "highlight indexes within EN caption")
+    if fw: err("L-004", f"function word highlighted: {fw}")
+    # L-005 TTS tags spoken as words
+    tg = [s["id"] for _, s, l in L if any(re.search(r"\[[^\]]+\]", t or "") for t in [l.get("text"), l.get("say")] + [p.get("t", "") + p.get("tag", "") for p in l.get("phrases", [])])]
+    (err if tg else ok)("L-005", f"non-verbal [tags] in spoken text: {tg}" if tg else "no [tags] in spoken text")
+    # L-006 robotic tempo
+    tp = [f"{s['id']}:{p.get('tempo')}" for _, s, l in L for p in l.get("phrases", []) if not 0.85 <= p.get("tempo", 1.0) <= 1.15]
+    nop = [s["id"] for _, s, l in L if not l.get("phrases")]
+    (err if tp else ok)("L-006", f"phrase tempo outside 0.85–1.15: {tp}" if tp else "phrase tempos within 0.85–1.15")
+    if nop: warn("L-006", f"lines without `phrases` (no prosody shaping): {nop}")
+    # L-010 key terms
+    kt = []
+    for _, s, l in L:
+        spoken = (" ".join(p.get("t", "") for p in l["phrases"]) if l.get("phrases") else l.get("say") or l.get("text", "")).lower()
+        for term, ph in KEY_TERMS.items():
+            if re.search(rf"(?<!\w){term}(?!\w)", spoken): kt.append(f"{s['id']}: '{term}' spoken raw (use '{ph}')")
+    (err if kt else ok)("L-010", "; ".join(kt) if kt else "key terms use phonetic spelling")
+    # L-011 Omi week
+    omi = any(l.get("speaker") == "omi" for _, _, l in L) or "\"omi\"" in json.dumps(spec)
+    if omi and spec.get("week", 0) < 5: err("L-011", f"Omi present but week={spec.get('week')} < 5 (rule-11)")
+    else: ok("L-011", "Omi/week consistent")
+    # L-003 caption overlap (time); face-box overlap is fixed by layout, verified on contact sheet
+    ov = []
+    for pp in glob.glob(os.path.join(fdir, "plan-*.voiced.json")):
+        for sc in json.load(open(pp))["scenes"]:
+            segs = sorted((sc.get("caption") or {}).get("segments", []), key=lambda g: g["start"])
+            ov += [f"{sc['id']}:{a['text'][:20]}|{b['text'][:20]}" for a, b in zip(segs, segs[1:]) if b["start"] < a["end"] - 0.01]
+    (err if ov else ok)("L-003", f"caption segments overlap in time: {ov}" if ov else "caption segments never overlap")
+    # L-014 HyperFrames lint evidence
+    if any(p["engine"] == "hyperframes" for p in spec["parts"]):
+        hf = os.path.join(fdir, "hf-check.txt"); txt = open(hf).read() if os.path.exists(hf) else ""
+        (ok if re.search(r"\b0 errors?\b", txt) else (err if final else warn))("L-014", "hf-check.txt shows hyperframes lint 0 errors" if txt else "hf-check.txt missing (run build-final lint gate)")
+    # L-007/L-008/L-009 voice audio per line
+    if os.path.exists(tpath):
+        vd = os.path.join(REPO, "video-engine/public/voice")
+        for l in json.load(open(tpath))["lines"]:
+            jp = os.path.join(vd, l["key"] + ".json"); wp = os.path.join(vd, l["key"] + ".wav")
+            if not os.path.exists(jp): err("L-007", f"{l['scene']}: voice cache {l['key']} missing"); continue
+            m = json.load(open(jp)); tag = f"{l['scene']}/{l['key']}"
+            if "F5" in m.get("engine", ""):
+                (ok if "v3" in m["engine"] else err)("L-007", f"{tag}: F5 engine {'line mode v3' if 'v3' in m['engine'] else 'old phrase/collage mode → rebuild'}")
+                takes = {p.get("take") for p in m.get("phrases", [])}
+                (ok if len(takes) <= 1 else err)("L-008", f"{tag}: takes per line {sorted(takes)}" + (" (cross-take collage = stutter)" if len(takes) > 1 else ""))
+            probs, clicks = audio_cuts(wp, m) if os.path.exists(wp) else (["wav missing"], [])
+            (err if probs else ok)("L-008", f"{tag}: " + ("; ".join(probs) if probs else "edit points clean (no loud/mid-syllable cuts)"))
+            if clicks: warn("L-008", f"{tag}: possible click(s) at {clicks[:5]}s — listen")
+            hyp, ref = norm(m.get("stt", "")), norm(l.get("say", ""))
+            if hyp and ref:
+                extra = (len(hyp) - len(ref)) / len(ref); rep = [hyp[i] for i in range(1, len(hyp)) if hyp[i] == hyp[i - 1] and not any(ref[k] == ref[k - 1] == hyp[i] for k in range(1, len(ref)))]
+                bad = extra > 0.2 or extra < -0.25 or rep
+                (err if bad else ok)("L-009", f"{tag}: STT {len(hyp)} vs {len(ref)} syllables" + (f", repeated {rep}" if rep else "") + ("" if not bad else " → re-roll/rewrite"))
+    # L-013 push pending (warning only)
+    r = subprocess.run(["git", "rev-list", "--count", "origin/main..HEAD"], cwd=REPO, capture_output=True, text=True)
+    n = int(r.stdout.strip() or 0) if r.returncode == 0 else 0
+    (warn if n else ok)("L-013", f"{n} commit(s) not pushed to origin (tell Hiệp; push when Mac online)" if n else "nothing pending push")
 
 def report(outp):
     lines_ = [f"{a} {b:8} {c}" for a, b, c in res]

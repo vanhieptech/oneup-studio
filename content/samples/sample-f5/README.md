@@ -10,3 +10,6 @@ Hiệp "F5 · Thái Sơn", Omi "F5 · Mỹ Duyên" (synthetic VieNeu refs, `pipe
 - F5 line mode: each take = whole line, cut into `phrases` at word timestamps, then gaps/emphasis; 3 takes, STT pick, leakage trim (0 trims needed here).
 - Line STT (toneless): L1 Hiệp 0.70 ("tô ích" heard as "tổ ích"; whisper weakness, words otherwise right), L2 Omi 0.92, L3 Omi 0.93, L4 Hiệp 0.92. Omi drops the particle "á" in L2.
 - ⚠ Checkpoint CC-BY-NC-SA-4.0 (non-commercial), risk accepted by Hiệp (DL-035). Caption disclosure: "… giọng AI tổng hợp (F5-TTS)."
+
+## v2 (DL-036, fixes "bị vấp")
+16.65 s, −14.2 LUFS, peak −1.4 dBFS. F5 v3: one natural take per line (NFE 32), phrases cut only at real silences (boundary minima −36…−68 dB re peak, all 9 cut), no silenceremove/rubberband on F5. check-rules L-007/L-008/L-009 all ✔ (v1 failed L-007/L-008 on all 4 lines). STT of the full mix: all words present; "tô ích" still heard "tố ích", "kỳ" → "tì" (whisper on TTS tones). A/B (v1 processed → raw F5 take → v3 per line): /workspace/hi-oneup/sample-f5/ab.wav (outside repo).

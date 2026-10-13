@@ -208,6 +208,93 @@ def f5_raw(j, d):
             p = os.path.join(d, f"p{pi}t{ti}-raw.wav"); write(p, x[int(b[pi] * sr):int(b[pi + 1] * sr)], sr); res[(pi, ti)] = p
     return res
 
+def _rms_db(x, sr, hop_s=0.005, win_s=0.02):
+    hop, win = int(sr * hop_s), int(sr * win_s); pk = np.abs(x).max() + 1e-9
+    n = max(1, (len(x) - win) // hop)
+    return np.array([20 * np.log10(np.sqrt(np.mean(x[i * hop:i * hop + win] ** 2)) / pk + 1e-9) for i in range(n)]), hop
+
+def _zc(x, i, r=240):
+    lo, hi = max(1, i - r), min(len(x) - 1, i + r)
+    z = np.where(np.signbit(x[lo - 1:hi - 1]) != np.signbit(x[lo:hi]))[0]
+    return lo + int(z[np.argmin(np.abs(z + lo - i))]) if len(z) else i
+
+def _rep_penalty(hyp, ref):
+    h, r = [tl(w) for w in norm(hyp)], [tl(w) for w in norm(ref)]
+    extra = max(0, len(h) - len(r)) / max(1, len(r))
+    rb = set(zip(r, r[1:]))
+    dup = sum(1 for k in range(1, len(h)) if h[k] == h[k - 1] and (h[k], h[k]) not in rb)
+    return extra + 0.25 * dup
+
+def f5_line(j, d, sil_db=-32.0, search=0.25, fade=0.012):
+    """F5 v3 (DL-036, fixes 'vấp'): ONE natural take per line, never a cross-take collage. Whole-line takes
+    (seed/speed grid, NFE 32) → STT (word timestamps) → leakage trim → score = toneless STT + STT − repeat/drop
+    penalty → best take. Phrase boundaries are only CUT where the take is really silent (energy minimum
+    < sil_db re peak within ±search s of the word-timestamp boundary); the silence is replaced by the spec gap,
+    cut points snapped to zero crossings with 12 ms fades. Boundaries without a real pause stay continuous
+    (F5's own phrasing). No silenceremove, no rubberband on F5 audio (they caused smeared onsets/glitches);
+    emphasis = +1.5 dB gain ramp only. Returns (wav, meta, stt, sim, sim_toneless)."""
+    txt = re.sub(r"\s+", " ", " ".join(re.sub(r"\[[^\]]*\]\s*", "", ph["t"]) for ph in j["phrases"])).strip()
+    items = [{"t": txt, "seed": seed, "speed": spd, "out": os.path.join(d, f"t{ti}-f5.wav")} for ti, (seed, spd) in enumerate(F5_TAKES)]
+    ref = j["ref"] if os.path.isabs(j["ref"]) else os.path.join(REPO, j["ref"])
+    bf = os.path.join(d, "f5-batch.json"); json.dump({"ref": ref, "ref_text": j["ref_text"], "items": items}, open(bf, "w"), ensure_ascii=False)
+    subprocess.run([F5_PY, os.path.join(REPO, "pipeline/tts/f5tts_gen.py"), bf], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    wd = stt_words([it["out"] for it in items]); takes = []
+    for ti, it in enumerate(items):
+        ws = wd[it["out"]]; cut = leak_cut(ws, txt, j["ref_text"])
+        ws = [[w, a - cut, e - cut] for w, a, e in ws if a >= cut - 0.02]; hyp = " ".join(w for w, _, _ in ws)
+        sc = sim(hyp, txt, toneless=True) + 0.5 * sim(hyp, txt) - 2 * _rep_penalty(hyp, txt)
+        takes.append({"take": ti, "path": it["out"], "cut": round(cut, 3), "words": ws, "stt": hyp, "score": round(sc, 3)})
+    takes.sort(key=lambda t: -t["score"]); best = takes[0]
+    x, sr = read(best["path"]); x = x[int(best["cut"] * sr):].copy()
+    if sr != SR:
+        import librosa; x = librosa.resample(x, orig_sr=sr, target_sr=SR).astype(np.float32); sr = SR
+    db, hop = _rms_db(x, sr); voiced = np.where(db > -40)[0]
+    s0 = max(0, voiced[0] * hop - int(0.03 * sr)); s1 = min(len(x), voiced[-1] * hop + int(0.02 * sr * 2) + int(0.03 * sr))
+    bounds = align_bounds(best["words"], j["phrases"]) if len(j["phrases"]) > 1 else []
+    if bounds is None: bounds = []
+    cuts = []; info = []
+    for bt in bounds:
+        c = int(bt * sr / hop); lo, hi = max(0, c - int(search * sr / hop)), min(len(db) - 1, c + int(search * sr / hop))
+        if hi <= lo: cuts.append(None); continue
+        k = lo + int(np.argmin(db[lo:hi]))
+        if db[k] > sil_db: cuts.append(None); info.append(round(float(db[k]), 1)); continue
+        a, b = k, k
+        while a > 0 and db[a - 1] < sil_db: a -= 1
+        while b < len(db) - 1 and db[b + 1] < sil_db: b += 1
+        cuts.append((_zc(x, a * hop + int(0.01 * sr)), _zc(x, b * hop + int(0.01 * sr)))); info.append(round(float(db[k]), 1))
+    # assemble: segments between real-silence cuts; phrases without a cut are merged with the next one
+    segs = [np.zeros(int(0.06 * SR), np.float32)]; meta = []; t = 0.06; start = s0; group = []
+    fd = int(fade * sr)
+    def emit(end, gap):
+        nonlocal t, start
+        y = x[start:end].copy()
+        if len(y) > 2 * fd: y[:fd] *= np.linspace(0, 1, fd); y[-fd:] *= np.linspace(1, 0, fd)
+        if any(j["phrases"][q].get("emph") for q in group):
+            g = 10 ** ((1.5 + max(j["phrases"][q].get("gain", 0) for q in group)) / 20); r = np.ones(len(y), np.float32) * g
+            ramp = min(int(0.03 * sr), len(y) // 2); r[:ramp] = np.linspace(1, g, ramp); r[-ramp:] = np.linspace(g, 1, ramp); y *= r
+        segs.append(y); meta.append({"text": " ".join(j["phrases"][q]["t"] for q in group), "phrases": list(group), "start": round(t, 3), "end": round(t + len(y) / SR, 3),
+                                     "emph": any(j["phrases"][q].get("emph") for q in group), "take": best["take"], "sim": 1.0})
+        t += len(y) / SR + gap; segs.append(np.zeros(int(gap * SR), np.float32))
+    for pi in range(len(j["phrases"])):
+        group.append(pi)
+        c = cuts[pi] if pi < len(cuts) else None
+        if pi == len(j["phrases"]) - 1: emit(s1, 0)
+        elif c is not None:
+            nat = (c[1] - c[0]) / sr; gap = max(0.12, j["phrases"][pi].get("gap", 0.2), min(nat, 0.5))
+            emit(c[0], gap); start = c[1]; group = []
+    segs.append(np.zeros(int(0.08 * SR), np.float32)); y = np.concatenate(segs); y = y + room_tone(len(y))
+    out = []  # one meta entry per spec phrase (captions zip phrases 1:1); merged groups split by syllable share
+    for g in meta:
+        n = [max(1, len(norm(j["phrases"][q]["t"]))) for q in g["phrases"]]; acc = g["start"]; span = g["end"] - g["start"]
+        for q, k in zip(g["phrases"], n):
+            e = acc + span * k / sum(n); out.append({**g, "text": j["phrases"][q]["t"], "start": round(acc, 3), "end": round(e, 3), "merged": len(n) > 1}); acc = e
+    meta = out
+    tmp = os.path.join(d, "line.wav"); write(tmp, y)
+    lt = stt([tmp])[tmp]
+    j["_take_stt"] = {f"t{t_['take']}": f"{t_['stt']} (score {t_['score']})" for t_ in takes}; j["_leak"] = {f"t{t_['take']}": t_["cut"] for t_ in takes if t_["cut"]}
+    j["_cuts"] = {"boundary_db": info, "cut": [c is not None for c in cuts]}
+    return tmp, meta, lt, sim(lt, txt), sim(lt, txt, toneless=True)
+
 def run(jobs):
     tts = None; results = []
     for j in jobs:
@@ -218,57 +305,59 @@ def run(jobs):
         if tts is None and not f5:
             from vieneu import Vieneu; tts = Vieneu()
         d = tempfile.mkdtemp(prefix="vp-"); cands = []
-        raws = f5_raw(j, d) if f5 else {}
-        if f5 and not raws: raise SystemExit(f"{j['out']}: no F5 take could be aligned to its phrases (STT: {j.get('_take_stt')}); rewrite the line or add takes")
-        for pi, ph in enumerate(j["phrases"]):
-            tempo = ph.get("tempo", 1.0) * BASE_TEMPO.get(j["voice"], 1.0) * (0.9 if ph.get("emph") else 1.0)
-            semi = ph.get("semi", 0) + (ph.get("emph_semi", 0.8) if ph.get("emph") else 0); gain = ph.get("gain", 0) + (1.5 if ph.get("emph") else 0)
-            for ti, (temp, k) in enumerate(F5_TAKES if f5 else TAKES):
-                if f5:
-                    if (pi, ti) not in raws: continue
-                    out = os.path.join(d, f"p{pi}t{ti}.wav")
+        if f5: tmp, meta, line_tx, line_sim, line_sim_tl = f5_line(j, d)
+        else:
+            raws = f5_raw(j, d) if f5 else {}
+            if f5 and not raws: raise SystemExit(f"{j['out']}: no F5 take could be aligned to its phrases (STT: {j.get('_take_stt')}); rewrite the line or add takes")
+            for pi, ph in enumerate(j["phrases"]):
+                tempo = ph.get("tempo", 1.0) * BASE_TEMPO.get(j["voice"], 1.0) * (0.9 if ph.get("emph") else 1.0)
+                semi = ph.get("semi", 0) + (ph.get("emph_semi", 0.8) if ph.get("emph") else 0); gain = ph.get("gain", 0) + (1.5 if ph.get("emph") else 0)
+                for ti, (temp, k) in enumerate(F5_TAKES if f5 else TAKES):
+                    if f5:
+                        if (pi, ti) not in raws: continue
+                        out = os.path.join(d, f"p{pi}t{ti}.wav")
+                        af = (f"silenceremove=start_periods=1:start_threshold=-42dB,areverse,silenceremove=start_periods=1:start_threshold=-42dB,areverse,"
+                              f"aresample={SR},rubberband=tempo={tempo:.3f}:pitch={2 ** (semi / 12):.4f}:formant=preserved:transients=smooth,volume={gain}dB")
+                        ff(raws[(pi, ti)], out, af); cands.append((pi, ti, out)); continue
+                    np.random.seed(1000 * pi + ti)
+                    try:
+                        import torch; torch.manual_seed(1000 * pi + ti)
+                    except Exception: pass
+                    raw = os.path.join(d, f"p{pi}t{ti}-raw.wav"); out = os.path.join(d, f"p{pi}t{ti}.wav")
+                    tts.save(tts.infer(ph.get("tag", "") + ph["t"], voice=j["voice"], temperature=temp, top_k=k), raw)
                     af = (f"silenceremove=start_periods=1:start_threshold=-42dB,areverse,silenceremove=start_periods=1:start_threshold=-42dB,areverse,"
                           f"aresample={SR},rubberband=tempo={tempo:.3f}:pitch={2 ** (semi / 12):.4f}:formant=preserved:transients=smooth,volume={gain}dB")
-                    ff(raws[(pi, ti)], out, af); cands.append((pi, ti, out)); continue
-                np.random.seed(1000 * pi + ti)
-                try:
-                    import torch; torch.manual_seed(1000 * pi + ti)
-                except Exception: pass
-                raw = os.path.join(d, f"p{pi}t{ti}-raw.wav"); out = os.path.join(d, f"p{pi}t{ti}.wav")
-                tts.save(tts.infer(ph.get("tag", "") + ph["t"], voice=j["voice"], temperature=temp, top_k=k), raw)
-                af = (f"silenceremove=start_periods=1:start_threshold=-42dB,areverse,silenceremove=start_periods=1:start_threshold=-42dB,areverse,"
-                      f"aresample={SR},rubberband=tempo={tempo:.3f}:pitch={2 ** (semi / 12):.4f}:formant=preserved:transients=smooth,volume={gain}dB")
-                ff(raw, out, af); cands.append((pi, ti, out))
-        tx = stt([c[2] for c in cands]); per = {}
-        for pi, ti, out in cands:
-            x, sr = read(out); ph = j["phrases"][pi]; s = sim(tx[out], ph["t"]); f = f0_stats(x, sr); a = artifact(x, sr, ph["t"])
-            short = len(norm(ph["t"])) <= 3   # whisper is unreliable on <1 s fragments: judge those on the whole line instead
-            if short: score = 0.6 * min(f["f0_range_st"] / 8, 1) + 0.4 * (1 - a)
-            else: score = (0.55 * s + 0.3 * min(f["f0_range_st"] / 8, 1) + 0.15 * (1 - a)) if s >= 0.7 else s * 0.5
-            per.setdefault(pi, []).append({"take": ti, "path": out, "stt": tx[out], "sim": round(s, 2), "score": round(score, 3), **f, "artifact": a})
-        rank = {pi: sorted(per[pi], key=lambda r: -r["score"]) for pi in per}; pick = {pi: 0 for pi in per}
-        best = None
-        for attempt in range(6):
-            y, meta = assemble(j, rank, pick)
-            tmp = os.path.join(d, "line.wav"); write(tmp, y)
-            ref = " ".join(re.sub(r"\[[^\]]*\]", "", p["t"]) for p in j["phrases"])
-            line_tx = stt([tmp])[tmp]; line_sim = sim(line_tx, ref); line_sim_tl = sim(line_tx, ref, toneless=True)
-            if best is None or line_sim_tl + line_sim > best[0]: best = (line_sim_tl + line_sim, dict(pick), line_tx, line_sim, line_sim_tl)
-            if line_sim_tl >= 0.92 and line_sim >= 0.8: break   # gate on base syllables; whisper-small mishears tones on TTS
-            # re-roll: short phrases first (not STT-judged alone), then the weakest STT phrase; next-best take
-            shorts = sorted([pi for pi in per if pick[pi] + 1 < len(rank[pi])], key=lambda pi: (len(norm(j["phrases"][pi]["t"])) > 3, rank[pi][pick[pi]]["sim"]))
-            if not shorts: break
-            pick[shorts[0]] += 1
-        if best and best[1] != pick:  # never ship a re-roll that scored worse than an earlier attempt
-            pick = best[1]; line_tx, line_sim, line_sim_tl = best[2], best[3], best[4]
-            y, meta = assemble(j, rank, pick); write(tmp, y)
+                    ff(raw, out, af); cands.append((pi, ti, out))
+            tx = stt([c[2] for c in cands]); per = {}
+            for pi, ti, out in cands:
+                x, sr = read(out); ph = j["phrases"][pi]; s = sim(tx[out], ph["t"]); f = f0_stats(x, sr); a = artifact(x, sr, ph["t"])
+                short = len(norm(ph["t"])) <= 3   # whisper is unreliable on <1 s fragments: judge those on the whole line instead
+                if short: score = 0.6 * min(f["f0_range_st"] / 8, 1) + 0.4 * (1 - a)
+                else: score = (0.55 * s + 0.3 * min(f["f0_range_st"] / 8, 1) + 0.15 * (1 - a)) if s >= 0.7 else s * 0.5
+                per.setdefault(pi, []).append({"take": ti, "path": out, "stt": tx[out], "sim": round(s, 2), "score": round(score, 3), **f, "artifact": a})
+            rank = {pi: sorted(per[pi], key=lambda r: -r["score"]) for pi in per}; pick = {pi: 0 for pi in per}
+            best = None
+            for attempt in range(6):
+                y, meta = assemble(j, rank, pick)
+                tmp = os.path.join(d, "line.wav"); write(tmp, y)
+                ref = " ".join(re.sub(r"\[[^\]]*\]", "", p["t"]) for p in j["phrases"])
+                line_tx = stt([tmp])[tmp]; line_sim = sim(line_tx, ref); line_sim_tl = sim(line_tx, ref, toneless=True)
+                if best is None or line_sim_tl + line_sim > best[0]: best = (line_sim_tl + line_sim, dict(pick), line_tx, line_sim, line_sim_tl)
+                if line_sim_tl >= 0.92 and line_sim >= 0.8: break   # gate on base syllables; whisper-small mishears tones on TTS
+                # re-roll: short phrases first (not STT-judged alone), then the weakest STT phrase; next-best take
+                shorts = sorted([pi for pi in per if pick[pi] + 1 < len(rank[pi])], key=lambda pi: (len(norm(j["phrases"][pi]["t"])) > 3, rank[pi][pick[pi]]["sim"]))
+                if not shorts: break
+                pick[shorts[0]] += 1
+            if best and best[1] != pick:  # never ship a re-roll that scored worse than an earlier attempt
+                pick = best[1]; line_tx, line_sim, line_sim_tl = best[2], best[3], best[4]
+                y, meta = assemble(j, rank, pick); write(tmp, y)
         os.makedirs(os.path.dirname(j["out"]) or ".", exist_ok=True)
         ff(tmp, j["out"] + ".wav", "highpass=f=70,deesser=i=0.35:m=0.5:f=0.5,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=140:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000")
         z, _ = read(j["out"] + ".wav")
-        m = {"duration": round(len(z) / SR, 3), "envelope": envelope(z, SR), "engine": ("F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v2" if f5 else "VieNeu-TTS v3 Turbo (local ONNX) + voice-prosody v1"), "voice": j["voice"], "leak_trims": j.get("_leak", {}), "take_stt": j.get("_take_stt", {}),
+        m = {"duration": round(len(z) / SR, 3), "envelope": envelope(z, SR), "engine": ("F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v3 (single take, silence-only cuts)" if f5 else "VieNeu-TTS v3 Turbo (local ONNX) + voice-prosody v1"), "voice": j["voice"], "leak_trims": j.get("_leak", {}), "take_stt": j.get("_take_stt", {}), "cuts": j.get("_cuts"),
              "phrases": meta, "stt": line_tx, "stt_sim": round(line_sim, 3), "stt_sim_toneless": round(line_sim_tl, 3), "metrics": metrics(j["out"] + ".wav")}
         json.dump(m, open(j["out"] + ".json", "w"), ensure_ascii=False); results.append(m)
-        print(f"{os.path.basename(j['out'])}: {m['duration']}s takes={[p['take'] for p in meta]} sims={[p['sim'] for p in meta]}", file=sys.stderr)
+        print(f"{os.path.basename(j['out'])}: {m['duration']}s takes={[p['take'] for p in meta]} sims={[p['sim'] for p in meta]} cuts={j.get('_cuts')} stt={line_tx}", file=sys.stderr)
     return results
 
 if __name__ == "__main__":
