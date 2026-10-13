@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head><meta charset="UTF-8" /></head>
+<body>
+<template>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+#e01-root{position:absolute;inset:0;font-family:"BVP";color:#111}
+#e01-root .kicker{position:absolute;left:96px;top:250px;font-size:38px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#11111199}
+#e01-root .title{position:absolute;left:92px;top:306px;font-size:124px;font-weight:700;letter-spacing:-4px;line-height:1.05;display:block;width:900px}
+#e01-root .chip{position:absolute;width:440px;height:340px;border:8px solid #111;border-radius:48px;background:#F7F7F5;box-shadow:12px 14px 0 #111;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:0 44px}
+#e01-root .lbl{font-size:76px;font-weight:700;letter-spacing:-2px;white-space:nowrap}
+#e01-root .sub{font-size:40px;font-weight:400;color:#111111a8;white-space:nowrap}
+#c1{left:80px;top:640px} #c2{left:560px;top:640px} #c3{left:80px;top:1030px}
+#c4{left:560px;top:1030px;background:#111 !important;color:#F7F7F5} #c4 .sub{color:#F7F7F5;font-weight:600}
+</style>
+<div id="e01-root" data-composition-id="e01" data-width="1080" data-height="1920">
+  <div class="kicker">The one-sentence plan</div>
+  <div class="title">If → Then</div>
+  <div id="c1" class="chip"><svg width="74" height="74" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#111" stroke-width="9"/><path id="hand1" d="M50 50 L50 24 M50 50 L68 60" stroke="#111" stroke-width="9" stroke-linecap="round"/></svg><div class="lbl">When</div><div class="sub">9 PM</div></div>
+  <div id="c2" class="chip"><svg width="74" height="74" viewBox="0 0 100 100"><path d="M50 92 C 26 62 18 50 18 38 a32 32 0 0 1 64 0 c0 12 -8 24 -32 54z" fill="none" stroke="#111" stroke-width="9" stroke-linejoin="round"/><circle cx="50" cy="38" r="11" fill="#111"/></svg><div class="lbl">Where</div><div class="sub">at my desk</div></div>
+  <div id="c3" class="chip"><svg width="74" height="74" viewBox="0 0 100 100"><path d="M24 72 h52 l-8-12 v-18 a18 18 0 0 0 -36 0 v18 z" fill="none" stroke="#111" stroke-width="9" stroke-linejoin="round"/><path d="M42 82 a8 8 0 0 0 16 0" stroke="#111" stroke-width="9" fill="none"/></svg><div class="lbl">Cue</div><div class="sub">laptop closes</div></div>
+  <div id="c4" class="chip"><svg width="74" height="74" viewBox="0 0 100 100"><path id="chk" d="M18 54 L40 76 L84 28" fill="none" stroke="#1F9D55" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="lbl">Then…</div><div class="sub">one small action</div></div>
+</div>
+<script>
+(function () {
+  // Section-local times: T is explainer-absolute, this clip starts at S0 (host data-start).
+  const T = {"sections": [{"id": "e01", "start": 0.35, "end": 4.195, "lines": [{"start": 0.65, "end": 3.645, "capEnd": 3.895, "words": [{"w": "Công", "start": 0.71}, {"w": "thức", "start": 0.943}, {"w": "nè:", "start": 1.176}, {"w": "mấy", "start": 1.37}, {"w": "giờ,", "start": 1.608}, {"w": "ở", "start": 1.893}, {"w": "đâu,", "start": 2.035}, {"w": "gặp", "start": 2.32}, {"w": "gì", "start": 2.558}, {"w": "—", "start": 2.748}, {"w": "thì", "start": 2.89}, {"w": "làm", "start": 3.115}, {"w": "gì.", "start": 3.34}], "hl": [7], "cap": [{"word": "Here's", "start": 0.71}, {"word": "the", "start": 0.94}, {"word": "formula:", "start": 1.083}, {"word": "when,", "start": 1.37}, {"word": "where,", "start": 1.764}, {"word": "what", "start": 2.214}, {"word": "cue,", "start": 2.552}, {"word": "THEN", "start": 2.89}, {"word": "what.", "start": 3.202}]}]}]}, S0 = 0;
+  const sec = T.sections.find(s => s.id === "e01"), w = sec.lines[0].words, at = i => w[Math.min(i, w.length - 1)].start - S0;
+  const tl = gsap.timeline({ paused: true });
+  // entrance (hyperframes-animation rules: fromTo, children only, no exit on the final scene)
+  tl.fromTo("#e01-root .kicker", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+  tl.fromTo("#e01-root .title", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.55, ease: "back.out(1.6)" }, 0.12);
+  // words: "Công thức nè: mấy giờ, ở đâu, gặp gì, thì làm gì." → chips land on their spoken word
+  [["#c1", 3, -1.5], ["#c2", 5, 1.2], ["#c3", 7, 1], ["#c4", 9, -1]].forEach(([c, wi, r]) =>
+    tl.fromTo(c, { opacity: 0, y: 80, scale: 0.86, rotation: 0 }, { opacity: 1, y: 0, scale: 1, rotation: r, duration: 0.5, ease: "back.out(1.8)" }, Math.max(0.2, at(wi) - 0.12)));
+  tl.fromTo("#hand1", { rotation: -150, svgOrigin: "50 50" }, { rotation: 0, svgOrigin: "50 50", duration: 0.8, ease: "power2.inOut" }, at(3));
+  const chk = document.getElementById("chk"), cl = 90;
+  tl.fromTo(chk, { strokeDasharray: cl, strokeDashoffset: cl }, { strokeDasharray: cl, strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, at(10) + 0.15);
+  tl.fromTo("#c4", { boxShadow: "12px 14px 0 #111" }, { boxShadow: "16px 20px 0 #1F9D55", duration: 0.4, ease: "power2.out" }, at(10) + 0.2);
+  window.__timelines["e01"] = tl;
+})();
+</script>
+</template>
+</body></html>

@@ -33,8 +33,11 @@ def profiles():
     d = os.path.join(VE, "src/characters/profiles")
     return {j["id"]: j for j in (json.load(open(os.path.join(d, f))) for f in os.listdir(d) if f.endswith(".json"))}
 
+sys.path.insert(0, os.path.join(REPO, "pipeline/tts"))
+import markup as MK  # DL-039 fillers/particles markup
+
 def spoken(line):
-    if line.get("phrases"): return " ".join(re.sub(r"\[[^\]]*\]\s*", "", p["t"]) for p in line["phrases"])
+    if line.get("phrases"): return MK.spoken(" ".join(re.sub(r"\[[^\]]*\]\s*", "", p["t"]) for p in line["phrases"]), line.get("speaker"))
     return line.get("say") or re.sub(r"\*\*|[“”\"]", "", line["text"]).replace("…", ",").strip()
 
 def all_lines(spec):
@@ -55,8 +58,8 @@ def stage_voice(spec):
         if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
             v = pv["preset"]; ph = [{k: x for k, x in p.items() if k != "en"} for p in l["phrases"]]
             if pv.get("engine") == "f5-tts":  # DL-035
-                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp4"], ensure_ascii=False).encode()).hexdigest()[:12]
-                pjobs.append({"engine": "f5-tts", "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
+                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp5"], ensure_ascii=False).encode()).hexdigest()[:12]
+                pjobs.append({"engine": "f5-tts", "speaker": l["speaker"], "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
             else:
                 l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, ph, "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
                 pjobs.append({"voice": v, "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})

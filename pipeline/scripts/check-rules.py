@@ -284,6 +284,24 @@ def lessons(spec, fdir, L, final, tpath):
         for term, ph in KEY_TERMS.items():
             if re.search(rf"(?<!\w){term}(?!\w)", spoken): kt.append(f"{s['id']}: '{term}' spoken raw (use '{ph}')")
     (err if kt else ok)("L-010", "; ".join(kt) if kt else "key terms use phonetic spelling")
+    # L-017 voice markup (fillers / particles / hesitation) valid + density caps (voice-profile §3c)
+    sys.path.insert(0, os.path.join(REPO, "pipeline/tts")); import markup as MK
+    srcs = [(s["id"], " ".join(p.get("t", "") for p in l.get("phrases", [])) or l.get("say") or "") for _, s, l in L]
+    badm = [f"{sid}: {b}" for sid, t in srcs for b in MK.validate(t)]
+    (err if badm else ok)("L-017", f"invalid voice markup: {badm}" if badm else "voice markup valid")
+    nob = []
+    for _, s_, l in L:
+        for f in re.findall(r"\{bank:\s*([^}]+)\}", " ".join(p.get("t", "") for p in l.get("phrases", []))):
+            if not glob.glob(os.path.join(REPO, "pipeline/tts/filler-bank", l["speaker"], f.strip() + "-*.wav")): nob.append(f"{s_['id']}:{l['speaker']}/{f}")
+    (err if nob else ok)("L-017", f"filler not in bank (F5 failed it for that voice; use inline {{…}} or another filler): {nob}" if nob else "bank fillers available")
+    per = [(sid, MK.count_fillers(t)) for sid, t in srcs]; tot = sum(n for _, n in per); cap = max(2, len(srcs) // 4)
+    over = [f"{sid}:{n}" for sid, n in per if n > MK.MAX_FILLERS_LINE]
+    (err if over or tot > cap else ok)("L-017", f"fillers {tot}/clip (cap {cap}), per line ≤ {MK.MAX_FILLERS_LINE}" + (f"; over: {over}" if over else ""))
+    vis = [f"{s['id']}" for _, s, l in L if "{" in l.get("text", "") or "{" in l.get("en", "")]
+    (err if vis else ok)("L-017", f"markup leaked into on-screen text/caption: {vis}" if vis else "no markup in on-screen text")
+    raw_fill = [s["id"] for _, s, l in L if re.search(r"(?<!\w)(ừm|ờ|hừm|hmm)(?!\w)", " ".join(p.get("t", "") for p in l.get("phrases", [])).replace("{", " {"))
+                and not re.search(r"\{(ừm|ờ|hừm|hmm|bank:[^}]+)\}", " ".join(p.get("t", "") for p in l.get("phrases", [])))]
+    if raw_fill: warn("L-017", f"bare filler words (use {{ừm}} markup so they are counted/capped): {raw_fill}")
     # L-011 Omi week
     omi = any(l.get("speaker") == "omi" for _, _, l in L) or "\"omi\"" in json.dumps(spec)
     if omi and spec.get("week", 0) < 5: err("L-011", f"Omi present but week={spec.get('week')} < 5 (rule-11)")
@@ -308,12 +326,12 @@ def lessons(spec, fdir, L, final, tpath):
             m = json.load(open(jp)); tag = f"{l['scene']}/{l['key']}"
             am = m
             if "F5" in m.get("engine", ""):
-                v4 = "v4" in m["engine"] and m.get("intra_output_cuts") == 0 and m.get("units")
+                v4 = re.search(r"voice-prosody v[45]", m["engine"]) and m.get("intra_output_cuts") == 0 and m.get("units")
                 (ok if v4 else err)("L-016", f"{tag}: " + ("sentence/clause units, no cut inside any F5 output" if v4 else "F5 audio cut inside a model output (v2 collage / v3 word-cut) → rebuild with voice-prosody v4"))
-                (ok if "v4" in m["engine"] else err)("L-007", f"{tag}: F5 per-unit generation (whole clause per call)")
+                (ok if re.search(r"voice-prosody v[45]", m["engine"]) else err)("L-007", f"{tag}: F5 per-unit generation (whole clause per call)")
                 if v4:
                     us = m["units"]
-                    badu = [u["text"] for u in us[:-1] if not re.search(r"(\.\.\.|[.,?!…;:])$", u["text"].strip())]
+                    badu = [u["text"] for u in us[:-1] if not re.search(r"(\.\.\.|[.,?!…;:—)”\"])$", u["text"].strip())]
                     shortu = [u["text"] for u in us if len(norm(u["text"])) < 4 and len(us) > 1]
                     (err if badu or shortu else ok)("L-016", f"{tag}: {len(us)} unit(s)" + (f", split not at punctuation {badu}" if badu else "") + (f", unit < 4 syllables {shortu}" if shortu else ""))
                     f0 = [u["f0"] for u in us if u.get("f0")]

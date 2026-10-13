@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.5
+version: 3.6
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.5, 13/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.6, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -118,7 +118,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Chỉ nhân vật có `voice` trong profile mới có giọng AI: **Hiệp chibi** = **"F5 · Thái Sơn"** (nam, miền Nam; nghe thử 8 giọng, chọn số 6), **Omi** = **"F5 · Mỹ Duyên"** (nữ, miền Nam; số 6). Hiệp chọn 13/10/2026 (DL-035), thay Đức Trí / Kim Thanh (DL-030). Khai báo ở `video-engine/src/characters/profiles/{hiep,omi}.json` → `voice` (`engine: f5-tts`, `ref`, `refText`). Engine: F5-TTS + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice`, chạy **local** trên CPU (`/workspace/f5-venv`, `pipeline/tts/f5tts_gen.py`), không gọi API. Đổi giọng/giọng mẫu phải ghi DL.
     - ⚠ **Giấy phép:** checkpoint là **CC-BY-NC-SA-4.0 (không thương mại)**. Kênh có quảng bá app OneUp nên dùng trong clip đăng là **rủi ro vi phạm giấy phép**; Hiệp đã xác nhận chấp nhận rủi ro này (13/10/2026, DL-035). Nếu bị khiếu nại hoặc kênh bắt đầu kiếm tiền trực tiếp thì quay về VieNeu (Apache-2.0, `engine: vieneu-tts`, profile còn ghi `previous`) và ghi DL.
     - **Giọng mẫu (reference):** chỉ dùng câu trung tính do preset VieNeu tổng hợp (`pipeline/tts/f5-refs/`, câu "Hôm nay trời Sài Gòn mát mẻ…"). **Cấm clone giọng người thật** (kể cả Hiệp), cấm `ref_audio` lấy từ bản thu người thật.
-    - **Prosody:** mọi câu đi qua `voice-prosody.py` theo từng cụm hơi (`phrases`: khoảng nghỉ, nhấn = chậm + lên giọng + to hơn), với F5 (DL-038, L-016): **không bao giờ cắt bên trong một output F5**. Tách câu theo dấu câu (. , ? ! … ; :) thành đơn vị câu/mệnh đề (gộp đơn vị < 4 âm tiết), mỗi đơn vị một lần gọi F5 riêng, 3 seed cố định cho mỗi nhân vật (speed 1.0, NFE 32), chọn take bằng STT trừ lặp/mất âm tiết + khớp F0 với các đơn vị khác; chỉ gọt lặng đầu/cuối (−50 dB, đệm 40 ms, fade 15 ms); nối bằng khoảng nghỉ theo dấu câu (phẩy 180 ms, chấm 350, ?/! 400, … 500) có room tone. Muốn ngắt/nhấn thì sửa dấu câu, không cắt audio. Thời gian beat/caption theo audio; tự cắt phần **rò giọng mẫu** (chữ của câu mẫu lọt vào đầu take) bằng timestamp từng từ của faster-whisper. Câu không có `phrases` được tính là một cụm. Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh. Không dùng tag [cười]/[thở dài].
+    - **Prosody:** mọi câu đi qua `voice-prosody.py` theo từng cụm hơi (`phrases`: khoảng nghỉ, nhấn = chậm + lên giọng + to hơn), với F5 (DL-038, L-016): **không bao giờ cắt bên trong một output F5**. Tách câu theo dấu câu (. , ? ! … ; :) thành đơn vị câu/mệnh đề (gộp đơn vị < 4 âm tiết), mỗi đơn vị một lần gọi F5 riêng, 3 seed cố định cho mỗi nhân vật (speed 1.0, NFE 32), chọn take bằng STT trừ lặp/mất âm tiết + khớp F0 với các đơn vị khác; chỉ gọt lặng đầu/cuối (−50 dB, đệm 40 ms, fade 15 ms); nối bằng khoảng nghỉ theo dấu câu (phẩy 180 ms, chấm 350, ?/! 400, … 500) có room tone. Muốn ngắt/nhấn thì sửa dấu câu, không cắt audio. Nhấn nhá thêm bằng markup giọng (từ đệm, ngập ngừng, kéo tiểu từ, câu chen, ngắt ngang; bảng ở `content/voice-profile.md` §3c, DL-039), tối đa 1 từ đệm/câu và max(2, số câu ÷ 4)/clip (check L-017). Thời gian beat/caption theo audio; tự cắt phần **rò giọng mẫu** (chữ của câu mẫu lọt vào đầu take) bằng timestamp từng từ của faster-whisper. Câu không có `phrases` được tính là một cụm. Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh. Không dùng tag [cười]/[thở dài].
     - Audio cache theo hash (engine + giọng + giọng mẫu + cụm), chuẩn loudness rồi ghép −14 LUFS. Không nhạc (luật 21). Kiểm bằng ffprobe (có track audio) và ASR (đúng chữ) trước khi gửi Hiệp.
     - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng nhân vật là giọng tổng hợp nghe như người thật → **mọi clip có giọng AI** (Hiệp và/hoặc Omi): **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." (chỉ nêu nhân vật thật sự nói). Clip không có giọng AI thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
     - Mọi câu phải qua STT (`pipeline/tts/stt_check.py`); câu nghe sai thì sửa cách viết (`say`, vd. TOEIC → "tô ích") hoặc tăng `take` trong spec để đọc lại.
@@ -141,6 +141,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Không xoá lesson; khi đổi cách sửa thì cập nhật dòng và ghi DL.
 
 ## Changelog
+- **v3.6, 14/10/2026:** markup giọng tự nhiên (từ đệm, kho từ đệm theo nhân vật, ngập ngừng, kéo tiểu từ, pause từng dấu, câu chen), bảng tiểu từ đo bằng STT + F0, giới hạn tần suất từ đệm (luật 46; DL-039, L-017).
 - **v3.5, 13/10/2026:** F5 sinh theo đơn vị câu/mệnh đề tách bằng dấu câu, cấm cắt bên trong output F5 (luật 46; DL-038, L-016).
 - **v3.4, 13/10/2026:** luật 49 (cổng bài học `logs/lessons.md` + check `L-NNN`); F5 v3 chống "vấp": 1 take tự nhiên mỗi câu, chỉ cắt ở lặng thật (luật 46; DL-036, DL-037).
 - **v3.3, 13/10/2026:** giọng nhân vật chuyển sang F5-TTS (Hiệp "F5 · Thái Sơn", Omi "F5 · Mỹ Duyên", giọng mẫu tổng hợp từ VieNeu); Hiệp chấp nhận rủi ro giấy phép CC-BY-NC-SA của checkpoint; dòng nhãn AI ghi "(F5-TTS)" (luật 2, 24, 25, 46; DL-035).

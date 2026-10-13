@@ -1,0 +1,626 @@
+{
+ "hiep": {
+  "ha": {
+   "auto": "ha",
+   "auto_mark_extra": "..",
+   "long": "haa",
+   "tested": [
+    {
+     "t": "Vậy cũng được ha...",
+     "stt": "Vậy cũng được ha!",
+     "final_dur": 0.26,
+     "slope_st": -3.83,
+     "heard": true,
+     "score": 1.908
+    },
+    {
+     "t": "Vậy cũng được ha.",
+     "stt": "Vậy cũng được hả?",
+     "final_dur": 0.22,
+     "slope_st": -0.8,
+     "heard": true,
+     "score": 1.876
+    },
+    {
+     "t": "Vậy cũng được haa.",
+     "stt": "Vậy cũng được ha!",
+     "final_dur": 0.22,
+     "slope_st": -2.32,
+     "heard": true,
+     "score": 1.626
+    }
+   ]
+  },
+  "hông": {
+   "auto": "hông",
+   "auto_mark_extra": "??",
+   "long": "hôông",
+   "tested": [
+    {
+     "t": "Bạn có thấy mệt hông??",
+     "stt": "Bạn có thấy mệt không?",
+     "final_dur": 0.14,
+     "slope_st": 1.77,
+     "heard": false,
+     "score": 0.612
+    },
+    {
+     "t": "Bạn có thấy mệt hông?",
+     "stt": "Bạn có thấy mệt không?",
+     "final_dur": 0.16,
+     "slope_st": -2.68,
+     "heard": false,
+     "score": 0.028
+    },
+    {
+     "t": "Bạn có thấy mệt hôông?",
+     "stt": "Bạn có thấy mệt không?",
+     "final_dur": 0.16,
+     "slope_st": -0.77,
+     "heard": false,
+     "score": 0.028
+    }
+   ]
+  },
+  "hả": {
+   "auto": "hả",
+   "auto_mark_extra": "??",
+   "long": "hảả",
+   "tested": [
+    {
+     "t": "Lại mai học nữa hả??",
+     "stt": "Lại mai học nữa hả?",
+     "final_dur": 0.24,
+     "slope_st": 0.92,
+     "heard": true,
+     "score": 1.892
+    },
+    {
+     "t": "Lại mai học nữa hảả?",
+     "stt": "Lại mai học nữa hả?",
+     "final_dur": 0.32,
+     "slope_st": 7.38,
+     "heard": true,
+     "score": 1.756
+    },
+    {
+     "t": "Lại mai học nữa hả?",
+     "stt": "Lại mai học nữa hả?",
+     "final_dur": 0.28,
+     "slope_st": -0.06,
+     "heard": true,
+     "score": 1.324
+    }
+   ]
+  },
+  "luôn": {
+   "auto": "luôn",
+   "auto_mark_extra": "",
+   "long": "luôôn",
+   "tested": [
+    {
+     "t": "Làm xong hết luôn!",
+     "stt": "Làm xong hết luôn.",
+     "final_dur": 0.2,
+     "slope_st": -3.85,
+     "heard": true,
+     "score": 1.86
+    },
+    {
+     "t": "Làm xong hết luôn!!",
+     "stt": "Làm xong hết luôn.",
+     "final_dur": 0.2,
+     "slope_st": -3.84,
+     "heard": true,
+     "score": 1.86
+    },
+    {
+     "t": "Làm xong hết luôôn!",
+     "stt": "Làm xong hết luôn.",
+     "final_dur": 0.22,
+     "slope_st": -6.16,
+     "heard": true,
+     "score": 1.626
+    }
+   ]
+  },
+  "nghen": {
+   "auto": "nghen",
+   "auto_mark_extra": "!!",
+   "long": "ngheen",
+   "tested": [
+    {
+     "t": "Nhớ ngủ sớm nghen!!",
+     "stt": "Nhớ ngủ sớm nghe.",
+     "final_dur": 0.18,
+     "slope_st": -6.35,
+     "heard": true,
+     "score": 1.594
+    },
+    {
+     "t": "Nhớ ngủ sớm nghen!",
+     "stt": "Nhớ ngủ sớm nghe.",
+     "final_dur": 0.16,
+     "slope_st": -8.03,
+     "heard": true,
+     "score": 1.578
+    },
+    {
+     "t": "Nhớ ngủ sớm ngheen!",
+     "stt": "Nhấn ngụ sớm nghiên.",
+     "final_dur": 0.2,
+     "slope_st": -8.5,
+     "heard": true,
+     "score": 1.36
+    }
+   ]
+  },
+  "nha": {
+   "auto": "nhaa",
+   "auto_mark_extra": "",
+   "long": "nhaa",
+   "tested": [
+    {
+     "t": "Mai nhớ học bài nhaa!",
+     "stt": "May nhớ học bài nhau.",
+     "final_dur": 0.3,
+     "slope_st": 0.3,
+     "heard": true,
+     "score": 1.54
+    },
+    {
+     "t": "Mai nhớ học bài nha!",
+     "stt": "May nhớ học bài nhau!",
+     "final_dur": 0.26,
+     "slope_st": 0.83,
+     "heard": true,
+     "score": 1.508
+    },
+    {
+     "t": "Mai nhớ học bài nha!!",
+     "stt": "May nhớ học bài nhau.",
+     "final_dur": 0.26,
+     "slope_st": -0.64,
+     "heard": true,
+     "score": 1.508
+    }
+   ]
+  },
+  "nè": {
+   "auto": "nèè",
+   "auto_mark_extra": "",
+   "long": "nèè",
+   "tested": [
+    {
+     "t": "Thử cách này nèè!",
+     "stt": "Thử cách này nè!",
+     "final_dur": 0.26,
+     "slope_st": -2.57,
+     "heard": true,
+     "score": 1.658
+    },
+    {
+     "t": "Thử cách này nè!!",
+     "stt": "Thử cách này nào.",
+     "final_dur": 0.22,
+     "slope_st": -3.37,
+     "heard": false,
+     "score": 0.626
+    },
+    {
+     "t": "Thử cách này nè!",
+     "stt": "Thử cách này nào.",
+     "final_dur": 0.2,
+     "slope_st": -2.87,
+     "heard": false,
+     "score": 0.61
+    }
+   ]
+  },
+  "ta": {
+   "auto": "ta",
+   "auto_mark_extra": "??",
+   "long": "taa",
+   "tested": [
+    {
+     "t": "Sao kỳ vậy ta??",
+     "stt": "Sao kì vậy ta?",
+     "final_dur": 0.2,
+     "slope_st": 3.08,
+     "heard": true,
+     "score": 1.61
+    },
+    {
+     "t": "Sao kỳ vậy ta?",
+     "stt": "Sao kì vậy ta?",
+     "final_dur": 0.14,
+     "slope_st": 3.21,
+     "heard": true,
+     "score": 1.562
+    },
+    {
+     "t": "Sao kỳ vậy taa?",
+     "stt": "Sao kì vậy ta?",
+     "final_dur": 0.18,
+     "slope_st": 3.55,
+     "heard": true,
+     "score": 1.344
+    }
+   ]
+  },
+  "á": {
+   "auto": "á",
+   "auto_mark_extra": "",
+   "long": "áá",
+   "tested": [
+    {
+     "t": "Ba lần rồi á!",
+     "stt": "Ba lần rồi á!",
+     "final_dur": 0.14,
+     "slope_st": 9.0,
+     "heard": true,
+     "score": 1.812
+    },
+    {
+     "t": "Ba lần rồi á!!",
+     "stt": "Ba lần rồi áo",
+     "final_dur": 0.3,
+     "slope_st": 11.48,
+     "heard": false,
+     "score": 0.69
+    },
+    {
+     "t": "Ba lần rồi áá!",
+     "stt": "3 lần rồi áp.",
+     "final_dur": 0.26,
+     "slope_st": 8.16,
+     "heard": false,
+     "score": 0.408
+    }
+   ]
+  },
+  "đó": {
+   "auto": "đó",
+   "auto_mark_extra": "",
+   "long": "đóó",
+   "tested": [
+    {
+     "t": "Mình nói rồi đó.",
+     "stt": "Mình nói rồi đó.",
+     "final_dur": 0.22,
+     "slope_st": 13.06,
+     "heard": true,
+     "score": 1.876
+    },
+    {
+     "t": "Mình nói rồi đó...",
+     "stt": "Mình nói rồi đó.",
+     "final_dur": 0.22,
+     "slope_st": 12.35,
+     "heard": true,
+     "score": 1.876
+    },
+    {
+     "t": "Mình nói rồi đóó.",
+     "stt": "Mình nói rồi đó.",
+     "final_dur": 0.22,
+     "slope_st": 12.85,
+     "heard": true,
+     "score": 1.626
+    }
+   ]
+  }
+ },
+ "omi": {
+  "ha": {
+   "auto": "ha",
+   "auto_mark_extra": "..",
+   "long": "haa",
+   "tested": [
+    {
+     "t": "Vậy cũng được ha...",
+     "stt": "Vậy cũng được ha.",
+     "final_dur": 0.28,
+     "slope_st": -1.03,
+     "heard": true,
+     "score": 1.924
+    },
+    {
+     "t": "Vậy cũng được ha.",
+     "stt": "Vậy cũng được, hả?",
+     "final_dur": 0.18,
+     "slope_st": 1.0,
+     "heard": true,
+     "score": 1.844
+    },
+    {
+     "t": "Vậy cũng được haa.",
+     "stt": "Vậy cũng được ha!",
+     "final_dur": 0.28,
+     "slope_st": -0.74,
+     "heard": true,
+     "score": 1.674
+    }
+   ]
+  },
+  "hông": {
+   "auto": "hôông",
+   "auto_mark_extra": "",
+   "long": "hôông",
+   "tested": [
+    {
+     "t": "Bạn có thấy mệt hôông?",
+     "stt": "Bạn có thấy mệt hông?",
+     "final_dur": 0.26,
+     "slope_st": -0.15,
+     "heard": true,
+     "score": 1.108
+    },
+    {
+     "t": "Bạn có thấy mệt hông??",
+     "stt": "Bạn có thấy mệt không?",
+     "final_dur": 0.2,
+     "slope_st": -0.65,
+     "heard": false,
+     "score": 0.06
+    },
+    {
+     "t": "Bạn có thấy mệt hông?",
+     "stt": "Bạn có thấy mệt không?",
+     "final_dur": 0.18,
+     "slope_st": 0.04,
+     "heard": false,
+     "score": 0.044
+    }
+   ]
+  },
+  "hả": {
+   "auto": "hả",
+   "auto_mark_extra": "??",
+   "long": "hảả",
+   "tested": [
+    {
+     "t": "Lại mai học nữa hả??",
+     "stt": "Lại mai học nữa hả?",
+     "final_dur": 0.22,
+     "slope_st": 3.77,
+     "heard": true,
+     "score": 1.876
+    },
+    {
+     "t": "Lại mai học nữa hả?",
+     "stt": "Lại mai học nữa hả?",
+     "final_dur": 0.32,
+     "slope_st": -6.27,
+     "heard": true,
+     "score": 1.356
+    },
+    {
+     "t": "Lại mai học nữa hảả?",
+     "stt": "Lại mai học nữa hả?",
+     "final_dur": 0.32,
+     "slope_st": 0.0,
+     "heard": true,
+     "score": 1.156
+    }
+   ]
+  },
+  "luôn": {
+   "auto": "luôn",
+   "auto_mark_extra": "",
+   "long": "luôôn",
+   "tested": [
+    {
+     "t": "Làm xong hết luôn!",
+     "stt": "Làm xong hết luôn!",
+     "final_dur": 0.22,
+     "slope_st": -1.14,
+     "heard": true,
+     "score": 1.876
+    },
+    {
+     "t": "Làm xong hết luôn!!",
+     "stt": "Làm xong hết luôn!",
+     "final_dur": 0.22,
+     "slope_st": -0.22,
+     "heard": true,
+     "score": 1.876
+    },
+    {
+     "t": "Làm xong hết luôôn!",
+     "stt": "Làm xong hết luôn!",
+     "final_dur": 0.26,
+     "slope_st": -2.72,
+     "heard": true,
+     "score": 1.658
+    }
+   ]
+  },
+  "nghen": {
+   "auto": "nghen",
+   "auto_mark_extra": "!!",
+   "long": "ngheen",
+   "tested": [
+    {
+     "t": "Nhớ ngủ sớm nghen!!",
+     "stt": "Nhớ ngủ sớm nghe.",
+     "final_dur": 0.24,
+     "slope_st": -2.41,
+     "heard": true,
+     "score": 1.642
+    },
+    {
+     "t": "Nhớ ngủ sớm nghen!",
+     "stt": "Nhớ ngủ sớm nghe.",
+     "final_dur": 0.22,
+     "slope_st": -4.65,
+     "heard": true,
+     "score": 1.626
+    },
+    {
+     "t": "Nhớ ngủ sớm ngheen!",
+     "stt": "Nhớ ngủ sớm nghe.",
+     "final_dur": 0.2,
+     "slope_st": -3.19,
+     "heard": true,
+     "score": 1.61
+    }
+   ]
+  },
+  "nha": {
+   "auto": "nhaa",
+   "auto_mark_extra": "",
+   "long": "nhaa",
+   "tested": [
+    {
+     "t": "Mai nhớ học bài nhaa!",
+     "stt": "Mai nhớ học bài nhau!",
+     "final_dur": 0.34,
+     "slope_st": 1.8,
+     "heard": true,
+     "score": 1.772
+    },
+    {
+     "t": "Mai nhớ học bài nha!!",
+     "stt": "Mai nhớ học bài nhau!",
+     "final_dur": 0.34,
+     "slope_st": 1.16,
+     "heard": true,
+     "score": 1.772
+    },
+    {
+     "t": "Mai nhớ học bài nha!",
+     "stt": "bay nhớ học bài nhau.",
+     "final_dur": 0.34,
+     "slope_st": 3.06,
+     "heard": true,
+     "score": 1.572
+    }
+   ]
+  },
+  "nè": {
+   "auto": "nè",
+   "auto_mark_extra": "",
+   "long": "nèè",
+   "tested": [
+    {
+     "t": "Thử cách này nè!",
+     "stt": "Thử cách này nè!",
+     "final_dur": 0.28,
+     "slope_st": 0.27,
+     "heard": true,
+     "score": 1.924
+    },
+    {
+     "t": "Thử cách này nè!!",
+     "stt": "Thử cách này nèo.",
+     "final_dur": 0.42,
+     "slope_st": -0.77,
+     "heard": true,
+     "score": 1.786
+    },
+    {
+     "t": "Thử cách này nèè!",
+     "stt": "Thử cách này nè!",
+     "final_dur": 0.34,
+     "slope_st": -0.1,
+     "heard": true,
+     "score": 1.722
+    }
+   ]
+  },
+  "ta": {
+   "auto": "ta",
+   "auto_mark_extra": "",
+   "long": "taa",
+   "tested": [
+    {
+     "t": "Sao kỳ vậy ta?",
+     "stt": "Sao kì vậy ta?",
+     "final_dur": 0.18,
+     "slope_st": 6.98,
+     "heard": true,
+     "score": 1.594
+    },
+    {
+     "t": "Sao kỳ vậy taa?",
+     "stt": "Sau khi vậy ta",
+     "final_dur": 0.24,
+     "slope_st": 5.67,
+     "heard": true,
+     "score": 1.142
+    },
+    {
+     "t": "Sao kỳ vậy ta??",
+     "stt": "Sao kì vậy ta?",
+     "final_dur": 0.2,
+     "slope_st": -0.84,
+     "heard": true,
+     "score": 1.01
+    }
+   ]
+  },
+  "á": {
+   "auto": "á",
+   "auto_mark_extra": "",
+   "long": "áá",
+   "tested": [
+    {
+     "t": "Ba lần rồi á!",
+     "stt": "Ba lần rồi á!",
+     "final_dur": 0.16,
+     "slope_st": 10.1,
+     "heard": true,
+     "score": 1.828
+    },
+    {
+     "t": "Ba lần rồi áá!",
+     "stt": "Ba lần rồi áo.",
+     "final_dur": 0.34,
+     "slope_st": 2.57,
+     "heard": false,
+     "score": 0.722
+    },
+    {
+     "t": "Ba lần rồi á!!",
+     "stt": "3 lần rối áo",
+     "final_dur": 0.26,
+     "slope_st": 9.17,
+     "heard": false,
+     "score": 0.408
+    }
+   ]
+  },
+  "đó": {
+   "auto": "đó",
+   "auto_mark_extra": "",
+   "long": "đóó",
+   "tested": [
+    {
+     "t": "Mình nói rồi đó.",
+     "stt": "Mình nói rồi đó.",
+     "final_dur": 0.24,
+     "slope_st": 10.88,
+     "heard": true,
+     "score": 1.892
+    },
+    {
+     "t": "Mình nói rồi đó...",
+     "stt": "Mình nói rồi đó.",
+     "final_dur": 0.24,
+     "slope_st": 9.96,
+     "heard": true,
+     "score": 1.892
+    },
+    {
+     "t": "Mình nói rồi đóó.",
+     "stt": "Mình nói rồi đó.",
+     "final_dur": 0.26,
+     "slope_st": 11.61,
+     "heard": true,
+     "score": 1.658
+    }
+   ]
+  }
+ }
+}

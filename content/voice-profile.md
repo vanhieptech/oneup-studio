@@ -35,6 +35,25 @@ Hiệp xác nhận ngày 2026-10-12 (DL-019). Skill `script-polish` áp dụng f
 ## 3a. Giọng AI của nhân vật Hiệp (DL-035)
 - F5-TTS **"F5 · Thái Sơn"** (nam, miền Nam; giọng mẫu là câu tổng hợp bằng preset VieNeu "Thái Sơn", trước đây là "Đức Trí" DL-030). Không clone giọng thật. Nhấn nhá qua `phrases` (luật 46). Giấy phép checkpoint không thương mại, Hiệp đã chấp nhận rủi ro (DL-035). Viết số theo cách đọc, từ tiếng Anh khó đọc thì thêm `say` phiên âm (TOEIC → "tô ích", okay → "ô kê").
 
+## 3c. Nhấn nhá tự nhiên: markup giọng (DL-039, luật 46, check L-017)
+Chỉ viết trong `phrases[].t` (lời đọc). Bubble (`text`) và caption (`en`) **không** chứa markup.
+
+| Viết | Đọc ra | Ghi chú |
+|---|---|---|
+| `,` `;` `:` `.` | nghỉ 180 / 260 / 280 / 350 ms | mỗi dấu là một ranh giới đơn vị (mỗi đơn vị một lần gọi F5, gộp nếu < 4 âm tiết) |
+| `?` | lên giọng cuối, nghỉ 420 ms | |
+| `!` | mạnh, nghỉ 380 ms | |
+| `…` / `...` | kéo dài, lửng lơ, nghỉ 520 ms | |
+| `—` | ngắt ngang (bị cắt lời), nghỉ 120 ms | |
+| `( … )` hoặc `{nhỏ: …}` | câu chen, nhỏ hơn 4 dB | nên ≥ 4 âm tiết để thành đơn vị riêng |
+| `“ … ”` | trích lời, nghỉ 150 ms quanh | |
+| `{ừm}` `{ờ}` `{à}` `{ơ}` `{hừm}` `{ủa}` `{trời ơi}` `{thì là}` | từ đệm nói **liền** với mệnh đề sau (cùng một lần gọi F5) | |
+| `{bank:ừm}` (ờ, à, hừm, ủa, trời ơi) | từ đệm lấy từ kho đã thu sẵn của nhân vật, chèn **giữa** hai đơn vị có room tone | chọn biến thể cố định theo câu |
+| `{ngập ngừng}` | ngập ngừng giữa câu ("…" trong cùng đơn vị, không tách) | |
+| `{kéo: nha}` (nha, á, hông, nè, ha, luôn, ta, đó, hả, nghen) | kéo dài tiểu từ theo bảng `pipeline/tts/particle-styles.json` | tiểu từ cuối câu (trước . ! ? …) tự dùng cách viết tốt nhất của nhân vật |
+
+**Tần suất (để không giả):** tối đa **1 từ đệm mỗi câu**, **max(2, số câu ÷ 4) mỗi clip** (clip 60s ≈ 3–4). Không mở mọi câu bằng "ủa/ừm". Ngập ngừng chỉ ở chỗ nhân vật thật sự lưỡng lự. `check-rules` chặn khi vượt (L-017).
+
 ## 3b. Giọng Omi (luật 46, từ tuần 5)
 - Giọng AI F5-TTS **"F5 · Mỹ Duyên"** (nữ, miền Nam; giọng mẫu tổng hợp từ preset VieNeu "Mỹ Duyên", DL-035; trước đây "Kim Thanh"). Không clone giọng ai.
 - Omi gọi người xem/Hiệp là **"bạn"**, câu ngắn, từ đệm nha/á/hông/nè, cà khịa nhẹ kiểu bạn thân ("Ba lần rồi á nha."), chen 1 từ tiếng Anh khi cần.
