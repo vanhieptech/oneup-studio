@@ -53,7 +53,7 @@ B=[SC("b11","b11","payoff","paper","cut",H(0.66,pose="standing",act="talking",ex
       L("Còn tính năng Omi? Mình đi hỏi câu đó đây.","And the Omi feature? Asking myself right now.",["Omi"],["Còn tính năng Omi?","Mình đi hỏi câu đó đây."],"happy",{"action":"reacting"})],
       ("Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại màn hình 'Omi feature' như hook (loop), Hiệp mở laptop","Omi"),[{"name":"ding","atLine":1,"offset":0.1,"word":"hỏi câu đó"}])]
 s={"id":"clip-02-final","clip":"clip-02","title":"Trì hoãn = né cảm giác khó chịu, không phải lười (Steel 2007)","week":1,"theme":"dark","pillar":"1 Làm ít, xong nhiều",
- "story":"S-02 Omi feature (Hiệp xác nhận 14/10, DL-047)","trend":"‘vừa than bị dí deadline vừa lướt TikTok’ (vtcnews.vn; câu chung, không phải chuyện thật của Hiệp)",
+ "length_exception":"DL-058: Hiệp 14/10 17:54 chỉ cắt e06 nếu > 62s (cho phép ≤ 62s)","story":"S-02 Omi feature (Hiệp xác nhận 14/10, DL-047)","trend":"‘vừa than bị dí deadline vừa lướt TikTok’ (vtcnews.vn; câu chung, không phải chuyện thật của Hiệp)",
  "revisions":[{"date":"2026-10-14","dl":"DL-044","note":"gate-1 draft: info-complete script + rule-52 effects table + template-A cover (rule 54)"}],
  "transition_sfx":{"part":"whoosh-soft","scene":"swish"},
  "cover":{"direction":"a","theme":"dark","series":"Làm ít, xong nhiều","ep":2,"hero":["LƯỜI?","ĐANG NÉ!"],"accent":1,"strike":0,"expression":"sad","action":"reacting","emote":"!","tilt":-5},

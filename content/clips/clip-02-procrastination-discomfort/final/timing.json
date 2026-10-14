@@ -1,5 +1,5 @@
 {
- "total": 61.456,
+ "total": 61.34,
  "parts": [
   {
    "id": "A",
@@ -20,16 +20,16 @@
    "id": "E",
    "engine": "hyperframes",
    "dir": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer",
-   "dur": 34.55,
+   "dur": 34.44,
    "mp4": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4",
    "fx": "circleopen",
    "scene_starts": [
-    6.236,
-    12.460999999999999,
-    17.306,
-    21.457,
-    26.537,
-    30.037
+    6.184,
+    12.408999999999999,
+    17.253999999999998,
+    21.404999999999998,
+    26.375,
+    29.926
    ],
    "_off": 15.021
   },
@@ -43,7 +43,7 @@
    "scene_starts": [
     5.58
    ],
-   "_off": 49.221
+   "_off": 49.111
   }
  ],
  "lines": [
@@ -128,7 +128,7 @@
    "emotion": "focused",
    "key": "f5-fd1d2dfea83a",
    "local": 0.65,
-   "dur": 5.036,
+   "dur": 4.984,
    "t": 15.671
   },
   {
@@ -139,9 +139,9 @@
    "en": "691 correlations: the nastier the task and the lower your confidence, the more you delay.",
    "emotion": "focused",
    "key": "f5-00112fb8fae8",
-   "local": 6.536,
+   "local": 6.484,
    "dur": 5.375,
-   "t": 21.557
+   "t": 21.505
   },
   {
    "beat": "clip-02.b06",
@@ -151,9 +151,9 @@
    "en": "Because the reward is far away, the discomfort is right now. So the phone wins.",
    "emotion": "focused",
    "key": "f5-ba77a972a011",
-   "local": 12.761,
+   "local": 12.709,
    "dur": 3.995,
-   "t": 27.782
+   "t": 27.73
   },
   {
    "beat": "clip-02.b07",
@@ -163,9 +163,9 @@
    "en": "So before you start, ask: what exactly feels bad here?",
    "emotion": "focused",
    "key": "f5-6505e5807de7",
-   "local": 17.606,
+   "local": 17.554,
    "dur": 3.301,
-   "t": 32.627
+   "t": 32.575
   },
   {
    "beat": "clip-02.b08",
@@ -175,9 +175,9 @@
    "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
    "emotion": "focused",
    "key": "f5-bf146a0cd99f",
-   "local": 21.757,
-   "dur": 4.23,
-   "t": 36.778
+   "local": 21.705,
+   "dur": 4.12,
+   "t": 36.726
   },
   {
    "beat": "clip-02.b09",
@@ -187,9 +187,9 @@
    "en": "Bored? Set 10 minutes. When it rings, you may stop.",
    "emotion": "focused",
    "key": "f5-fba3f5ca09cc",
-   "local": 26.837,
-   "dur": 2.65,
-   "t": 41.858
+   "local": 26.675,
+   "dur": 2.701,
+   "t": 41.696
   },
   {
    "beat": "clip-02.b10",
@@ -199,9 +199,9 @@
    "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
    "emotion": "focused",
    "key": "f5-ec90053679ba",
-   "local": 30.337,
+   "local": 30.226,
    "dur": 3.56,
-   "t": 45.358
+   "t": 45.247
   },
   {
    "beat": "clip-02.b11",
@@ -213,7 +213,7 @@
    "key": "f5-5e41f5a3ecac",
    "local": 0.3,
    "dur": 4.83,
-   "t": 49.521
+   "t": 49.411
   },
   {
    "beat": "clip-02.b12",
@@ -225,7 +225,7 @@
    "key": "f5-ea4c76dacef9",
    "local": 0.55,
    "dur": 2.89,
-   "t": 55.351
+   "t": 55.241
   },
   {
    "beat": "clip-02.b12",
@@ -237,313 +237,7 @@
    "key": "f5-08542e06141e",
    "local": 3.64,
    "dur": 2.556,
-   "t": 58.441
+   "t": 58.331
   }
- ],
- "transitions": [
-  {
-   "at": 1.023,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 3.473,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 4.573,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 10.572,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 15.228,
-   "kind": "part",
-   "sfx": "whoosh-soft"
-  },
-  {
-   "at": 21.289,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 27.514,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 32.359,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 36.51,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 41.59,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 45.09,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 49.428,
-   "kind": "part",
-   "sfx": "whoosh-soft"
-  },
-  {
-   "at": 54.833,
-   "kind": "scene",
-   "sfx": "swish"
-  }
- ],
- "sfx_mix": [
-  {
-   "name": "stamp",
-   "at": 0.12
-  },
-  {
-   "name": "click",
-   "at": 1.083
-  },
-  {
-   "name": "click",
-   "at": 1.843
-  },
-  {
-   "name": "stamp",
-   "at": 2.583
-  },
-  {
-   "name": "stamp",
-   "at": 3.533
-  },
-  {
-   "name": "pop",
-   "at": 6.473
-  },
-  {
-   "name": "stamp",
-   "at": 9.645
-  },
-  {
-   "name": "pen",
-   "at": 12.722
-  },
-  {
-   "name": "pop",
-   "at": 16.76
-  },
-  {
-   "name": "tick",
-   "at": 19.403
-  },
-  {
-   "name": "rise",
-   "at": 21.701
-  },
-  {
-   "name": "ding",
-   "at": 25.808
-  },
-  {
-   "name": "snap",
-   "at": 30.446
-  },
-  {
-   "name": "ding",
-   "at": 31.634
-  },
-  {
-   "name": "pop",
-   "at": 34.612
-  },
-  {
-   "name": "pen",
-   "at": 38.154
-  },
-  {
-   "name": "stamp",
-   "at": 40.618
-  },
-  {
-   "name": "tick",
-   "at": 42.905
-  },
-  {
-   "name": "ding",
-   "at": 44.355
-  },
-  {
-   "name": "stamp",
-   "at": 46.724
-  },
-  {
-   "name": "rise",
-   "at": 48.628
-  },
-  {
-   "name": "tick",
-   "at": 50.553
-  },
-  {
-   "name": "pop",
-   "at": 52.953
-  },
-  {
-   "name": "ding",
-   "at": 58.573
-  },
-  {
-   "name": "swish",
-   "at": 0.903
-  },
-  {
-   "name": "swish",
-   "at": 3.353
-  },
-  {
-   "name": "swish",
-   "at": 4.453
-  },
-  {
-   "name": "swish",
-   "at": 10.452
-  },
-  {
-   "name": "whoosh-soft",
-   "at": 15.108
-  },
-  {
-   "name": "swish",
-   "at": 21.169
-  },
-  {
-   "name": "swish",
-   "at": 27.394
-  },
-  {
-   "name": "swish",
-   "at": 32.239
-  },
-  {
-   "name": "swish",
-   "at": 36.39
-  },
-  {
-   "name": "swish",
-   "at": 41.47
-  },
-  {
-   "name": "swish",
-   "at": 44.97
-  },
-  {
-   "name": "whoosh-soft",
-   "at": 49.308
-  },
-  {
-   "name": "swish",
-   "at": 54.713
-  },
-  {
-   "name": "ambience",
-   "at": 0.0
-  }
- ],
- "hits": [
-  {
-   "section": "e01",
-   "id": "shield",
-   "t": 16.76,
-   "sfx": "pop"
-  },
-  {
-   "section": "e01",
-   "id": "faces",
-   "t": 19.403,
-   "sfx": "tick"
-  },
-  {
-   "section": "e02",
-   "id": "count",
-   "t": 21.701,
-   "sfx": "rise"
-  },
-  {
-   "section": "e02",
-   "id": "bars",
-   "t": 25.808,
-   "sfx": "ding"
-  },
-  {
-   "section": "e03",
-   "id": "tip",
-   "t": 30.446,
-   "sfx": "snap"
-  },
-  {
-   "section": "e03",
-   "id": "win",
-   "t": 31.634,
-   "sfx": "ding"
-  },
-  {
-   "section": "e04",
-   "id": "q",
-   "t": 34.612,
-   "sfx": "pop"
-  },
-  {
-   "section": "e05",
-   "id": "bullets",
-   "t": 38.154,
-   "sfx": "pen"
-  },
-  {
-   "section": "e05",
-   "id": "draft",
-   "t": 40.618,
-   "sfx": "stamp"
-  },
-  {
-   "section": "e06",
-   "id": "timer",
-   "t": 42.905,
-   "sfx": "tick"
-  },
-  {
-   "section": "e06",
-   "id": "ring",
-   "t": 44.355,
-   "sfx": "ding"
-  },
-  {
-   "section": "e07",
-   "id": "stamp",
-   "t": 46.724,
-   "sfx": "stamp"
-  },
-  {
-   "section": "e07",
-   "id": "worse",
-   "t": 48.628,
-   "sfx": "rise"
-  }
- ],
- "partStarts": [
-  0.0,
-  15.053,
-  49.253
  ]
 }

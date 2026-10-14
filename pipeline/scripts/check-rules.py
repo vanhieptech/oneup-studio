@@ -467,7 +467,7 @@ def lessons(spec, fdir, L, final, tpath):
             probs, clicks = audio_cuts(wp, am) if os.path.exists(wp) else (["wav missing"], [])
             (err if probs else ok)("L-008", f"{tag}: " + ("; ".join(probs) if probs else "edit points clean (no loud/mid-syllable cuts)"))
             if clicks: warn("L-008", f"{tag}: possible click(s) at {clicks[:5]}s — listen")
-            hyp, ref = norm(m.get("stt", "")), norm(l.get("say", ""))
+            hyp, ref = norm(m.get("stt", "")), norm(re.sub(r"\b[Oo]mi\b", "Ô mi", l.get("say", "")))  # Omi = 2 spoken syllables (O-mi)
             if hyp and ref:
                 extra = (len(hyp) - len(ref)) / len(ref); rep = [hyp[i] for i in range(1, len(hyp)) if hyp[i] == hyp[i - 1] and not any(ref[k] == ref[k - 1] == hyp[i] for k in range(1, len(ref)))]
                 bad = extra > 0.2 or extra < -0.25 or rep

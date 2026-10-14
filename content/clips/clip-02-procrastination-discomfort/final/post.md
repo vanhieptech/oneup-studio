@@ -22,7 +22,7 @@ Cover: **template A** (luật 54), props trong `spec.json → cover`. File: `fin
 
 ## 3. Caption / tiêu đề TikTok (VI)
 ```
-POV: tính năng Omi bị hoãn lần thứ n. Hoãn, hoãn, lại hoãn. Mở code ra, 5 giây sau đã lướt TikTok… chán nản, tội lỗi, rồi tự mắng "mình lười quá". Nghe quen không?
+POV: tính năng Omi. Hoãn hôm nay, hoãn ngày mai, rồi lại hoãn. Toang thật rồi. Mở code ra, 5 giây sau đã lướt TikTok… chán nản, tội lỗi, rồi tự mắng "mình lười quá". Nghe quen không?
 Nghiên cứu nói: trì hoãn thường không phải lười, mà là né cảm giác khó chịu (chán, sợ làm dở, không biết bắt đầu).
 Gộp 691 hệ số tương quan (Steel, 2007): việc càng khó chịu, càng thấy mình kém thì càng dễ hoãn. Phần thưởng thì ở xa, cái khó chịu ở ngay bây giờ.
 Cách gỡ: trước khi làm, hỏi "việc này khó chịu ở chỗ nào?". Không biết bắt đầu thì viết 3 gạch đầu dòng. Sợ làm dở thì cho phép nháp xấu. Thấy chán thì hẹn 10 phút.

@@ -1,7 +1,7 @@
 ---
 id: clip-02.script-final
 type: script
-status: gate 1 duyệt 17:54, đang build
+status: đã render, chờ Hiệp duyệt
 updated: 2026-10-14
 tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 ---
@@ -47,7 +47,7 @@ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 |---|---|---|---|
 | 0.00 | Frame 0: cận laptop (prop mới) 0 dòng code, 'Omi feature · TODO', chữ hook to đã hiện | — | **OMI FEATURE: HOÃN. HOÃN. HOÃN.** |
 | 0.12 | Push-in mạnh 0.14, dấu đỏ POSTPONED đóng xuống | `stamp` + "Tính năng Omi." (buồn) | giữ |
-| ~1.1 | **CUT 1** → b01b lịch DEADLINE xé 3 tờ HÔM NAY→MAI→TUẦN SAU→THÁNG SAU, nhãn HOÃN x3 | `click` "Hoãn." · `click` "Hoãn." · `stamp` "Lại hoãn." | HOÃN / HOÃN / LẠI HOÃN |
+| ~1.1 | **CUT 1** → b01b lịch DEADLINE xé 3 tờ HÔM NAY→MAI→TUẦN SAU→THÁNG SAU, nhãn HOÃN x3 | `click` "Hoãn hôm nay." · `click` "Hoãn ngày mai." · `stamp` "Rồi lại hoãn." (đổi vì F5 nuốt 1 chữ "Hoãn" khi lặp) | HOÃN / HOÃN / LẠI HOÃN |
 | ~2.4 | **CUT 2** → b01c mặt Hiệp khóc, nền tối dần (vignette) | `stamp` + "Toang thật rồi." (buồn) | **TOANG!** đập xuống |
 | ~3.6 | CUT (swish) → b02 TikTok, chán nản, tội lỗi | `pop` "TikTok" | |
 
