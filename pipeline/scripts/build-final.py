@@ -114,6 +114,9 @@ def remotion_plan(spec, part):
                  "transition": {"type": tr, "duration": trd or 0.4}, "characters": list(cast.values()), "dialogue": dlg,
                  "caption": {"text": " ".join(s["text"] for s in segs), "start": segs[0]["start"], "segments": segs},
                  "sfx": [{"name": x["name"], "at": round(max(0, dlg[x["atLine"]]["start"] + x.get("offset", 0)), 3)} for x in sc.get("sfx", [])]}
+        if sc.get("props"):  # DL-056: prop times are relative to the first line start
+            b0 = dlg[0]["start"]; sh = lambda v: round(v + b0, 3)
+            scene["props"] = [{**p_, **{k: (sh(p_[k]) if not isinstance(p_[k], list) else [sh(v) for v in p_[k]]) for k in ("at", "until", "tearAt", "dropAt") if k in p_}} for p_ in sc["props"]]
         if sc.get("narration"): scene["narration"] = {"text": sc["narration"], "start": 0.0 if (si == 0 and part is spec["parts"][0]) else 0.05}  # rule-55: hook text on frame 0
         scenes.append(scene)
     plan = {"version": 1, "id": f"{spec['id']}-{part['id']}", "title": spec["title"], "meta": {"clip": spec["clip"], "week": spec["week"], "source": "final/spec.json"},

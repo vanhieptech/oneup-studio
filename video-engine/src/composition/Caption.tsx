@@ -41,13 +41,14 @@ export const Caption: React.FC<{ text: string; start: number; end: number; t: nu
 
 export const NarrationBox: React.FC<{ text: string; start: number; end: number; t: number }> = ({ text, start, end, t }) => {
   if (t < start || t > end) return null;
-  const k = Math.min(1, springAt(t - start, 16, 8));
+  const hook = start === 0; // rule-55: hook text is fully visible and big on frame 0
+  const k = hook ? 1 : Math.min(1, springAt(t - start, 16, 8));
   const out = clamp((end - t) / 0.2);
   return (
     <div style={{
       position: "absolute", left: 160, top: 66, maxWidth: 900, background: BRAND.ink, color: BRAND.paper,
-      fontFamily: FONT_FAMILY, fontWeight: 700, fontSize: 36, letterSpacing: 1.5, textTransform: "uppercase",
-      padding: "18px 30px 22px", borderRadius: 22, transform: `translateX(${(1 - k) * -80}px) rotate(-1.5deg)`, opacity: out * progress(t, start, start + 0.12),
+      fontFamily: FONT_FAMILY, fontWeight: hook ? 800 : 700, fontSize: hook ? 60 : 36, letterSpacing: hook ? 0.5 : 1.5, lineHeight: 1.15, textTransform: "uppercase",
+      padding: "18px 30px 22px", borderRadius: 22, transform: `translateX(${(1 - k) * -80}px) rotate(-1.5deg)`, opacity: out * (hook ? 1 : progress(t, start, start + 0.12)),
       boxShadow: `8px 8px 0 ${BRAND.soft}`,
     }}>{text}</div>
   );

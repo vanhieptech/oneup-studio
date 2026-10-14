@@ -103,7 +103,7 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.45,
+              "x": 0.74,
               "facing": "right",
               "pose": "sitting",
               "action": "idle",
@@ -138,7 +138,19 @@
               "word": "Omi"
             }
           ],
-          "narration": "OMI FEATURE: HOÃN. HOÃN. HOÃN."
+          "narration": "OMI FEATURE: HOÃN. HOÃN. HOÃN.",
+          "props": [
+            {
+              "kind": "laptop",
+              "x": 400,
+              "y": 1560,
+              "s": 1.05,
+              "text": "Omi feature",
+              "sub": "0 dòng code",
+              "stamp": "HOÃN",
+              "at": 0.0
+            }
+          ]
         },
         {
           "id": "b01b",
@@ -151,7 +163,7 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.45,
+              "x": 0.86,
               "facing": "right",
               "pose": "sitting",
               "action": "idle",
@@ -203,6 +215,26 @@
               "offset": 0.95,
               "word": "Lại hoãn"
             }
+          ],
+          "props": [
+            {
+              "kind": "calendar",
+              "x": 430,
+              "y": 1000,
+              "s": 0.95,
+              "rot": -4,
+              "pages": [
+                "HÔM NAY",
+                "MAI",
+                "TUẦN SAU",
+                "THÁNG SAU"
+              ],
+              "tearAt": [
+                0.0,
+                0.45,
+                0.95
+              ]
+            }
           ]
         },
         {
@@ -210,13 +242,13 @@
           "beat": "clip-02.b01",
           "part": "hook",
           "background": "desk",
-          "framing": "closeup",
-          "push": 0.08,
+          "framing": "medium",
+          "push": 0.12,
           "transition": "cut",
           "cast": [
             {
               "id": "hiep",
-              "x": 0.45,
+              "x": 0.5,
               "facing": "right",
               "pose": "sitting",
               "action": "idle",
@@ -227,28 +259,46 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Mình ghét bản thân ghê.",
-              "en": "I kind of hate myself.",
+              "text": "Tại sao mình lại như vậy?!",
+              "en": "Why am I like this?!",
               "hl": [
-                3
+                4
               ],
               "phrases": [
                 {
-                  "t": "Mình ghét bản thân ghê."
+                  "t": "Tại sao mình lại như vậy?!"
                 }
               ]
             }
           ],
           "fx": {
-            "visual": "Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ GHÉT BẢN THÂN rung",
-            "word": "ghét bản thân"
+            "visual": "Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TẠI SAO?! đập xuống rung",
+            "word": "như vậy"
           },
           "sfx": [
             {
               "name": "rise",
               "atLine": 0,
               "offset": 0.2,
-              "word": "ghét"
+              "word": "như vậy"
+            }
+          ],
+          "props": [
+            {
+              "kind": "vignette",
+              "at": 0.0,
+              "dark": 0.6
+            },
+            {
+              "kind": "words",
+              "x": 540,
+              "y": 430,
+              "words": [
+                "TẠI SAO?!"
+              ],
+              "dropAt": [
+                0.15
+              ]
             }
           ]
         },
@@ -274,12 +324,10 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Mở code ra, năm giây sau đã lướt TikTok. Chán nản, tội lỗi, rồi tự mắng: mình lười quá.",
-              "en": "Open the code… five seconds later: TikTok. Drained, guilty: “I'm so lazy.”",
+              "text": "Mở code ra, năm giây sau đã lướt TikTok.",
+              "en": "Open the code… five seconds later: TikTok.",
               "hl": [
-                6,
-                8,
-                11
+                6
               ],
               "phrases": [
                 {
@@ -287,12 +335,6 @@
                 },
                 {
                   "t": "năm giây sau đã lướt TikTok."
-                },
-                {
-                  "t": "Chán nản, tội lỗi,"
-                },
-                {
-                  "t": "rồi tự mắng: {ừm} mình lười quá."
                 }
               ],
               "set": {
@@ -301,6 +343,24 @@
                   "expression": "sad"
                 }
               }
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Chán nản, tội lỗi, rồi tự mắng: mình lười quá.",
+              "en": "Drained, guilty: “I'm so lazy.”",
+              "hl": [
+                1,
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "Chán nản, tội lỗi,"
+                },
+                {
+                  "t": "rồi tự mắng: {ừm} mình lười quá."
+                }
+              ]
             }
           ],
           "fx": {
@@ -316,9 +376,45 @@
             },
             {
               "name": "stamp",
-              "atLine": 0,
-              "offset": 4.2,
+              "atLine": 1,
+              "offset": 1.9,
               "word": "lười"
+            }
+          ],
+          "props": [
+            {
+              "kind": "laptop",
+              "x": 300,
+              "y": 1330,
+              "s": 0.62,
+              "text": "Omi feature",
+              "sub": "đang mở…"
+            },
+            {
+              "kind": "phone",
+              "x": 800,
+              "y": 1120,
+              "s": 0.95,
+              "rot": 8,
+              "at": 1.5,
+              "text": "TikTok"
+            },
+            {
+              "kind": "cloud",
+              "x": 360,
+              "y": 300,
+              "s": 0.7,
+              "at": 2.8,
+              "words": [
+                "CHÁN NẢN",
+                "TỘI LỖI",
+                "LƯỜI"
+              ],
+              "dropAt": [
+                3.0,
+                3.5,
+                4.8
+              ]
             }
           ]
         },
@@ -743,7 +839,7 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.5,
+              "x": 0.66,
               "facing": "right",
               "pose": "standing",
               "action": "talking",
@@ -792,6 +888,17 @@
               "atLine": 0,
               "offset": 3.4,
               "word": "Lưu lại"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 290,
+              "y": 930,
+              "s": 0.9,
+              "rot": -5,
+              "text": "CHỈ LÀ TƯƠNG QUAN",
+              "at": 1.0
             }
           ]
         },

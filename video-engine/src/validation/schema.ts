@@ -75,6 +75,8 @@ export const SceneSchema = z.object({
     segments: z.array(z.object({ text: nonEmpty, start: seconds, end: seconds, highlight: z.array(z.number().int().nonnegative()).default([]) })).optional() }).optional(),
   narration: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional() }).optional(),
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
+  /** DL-056 comic props (laptop/phone/calendar/cloud/sign/words/vignette), see composition/Props.tsx */
+  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words"]) }).passthrough()).default([]),
   beat: z.string().optional().describe("repo beat id, e.g. clip-01.b02"),
 });
 

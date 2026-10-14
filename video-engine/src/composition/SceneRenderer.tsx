@@ -5,6 +5,7 @@ import type { ProfileRegistry } from "../characters/registry";
 import { getCharacterState } from "../animation/controller";
 import { CharacterRenderer, RIG_HEAD_TOP, RIG_SIZE } from "../characters/CharacterRenderer";
 import { Background } from "./Background";
+import { Props, type PropCue } from "./Props";
 import { Caption, NarrationBox } from "./Caption";
 import { DialogueBubble } from "./DialogueBubble";
 import { BRAND, DESIGN_W, FRAMING } from "./theme";
@@ -44,6 +45,7 @@ export const SceneRenderer: React.FC<{
             {states.map(({ state, profile }, i) => (
               <CharacterRenderer key={profile.id} uid={`${scene.id}-${profile.id}-${i}`} state={state} profile={profile} width={DESIGN_W} groundY={groundY} scale={fr.scale} />
             ))}
+            {scene.props?.length ? <Props props={scene.props as PropCue[]} t={t} h={H} /> : null}
           </g>
           {/* comic panel frame */}
           <path fillRule="evenodd" fill={frameColor} d={`M0,0 H${DESIGN_W} V${H} H0 Z M84,28 H${DESIGN_W - 84} Q${DESIGN_W - 28},28 ${DESIGN_W - 28},84 V${H - 84} Q${DESIGN_W - 28},${H - 28} ${DESIGN_W - 84},${H - 28} H84 Q28,${H - 28} 28,${H - 84} V84 Q28,28 84,28 Z`} />
