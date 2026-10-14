@@ -294,6 +294,8 @@ def lessons(spec, fdir, L, final, tpath):
         for f in re.findall(r"\{bank:\s*([^}]+)\}", " ".join(p.get("t", "") for p in l.get("phrases", []))):
             if not glob.glob(os.path.join(REPO, "pipeline/tts/filler-bank", l["speaker"], f.strip() + "-*.wav")): nob.append(f"{s_['id']}:{l['speaker']}/{f}")
     (err if nob else ok)("L-017", f"filler not in bank (F5 failed it for that voice; use inline {{…}} or another filler): {nob}" if nob else "bank fillers available")
+    nk = sum(len(re.findall(r"\{kéo:", t)) for _, t in srcs)
+    (warn if nk > 1 else ok)("L-018", f"{{kéo:}} used {nk}× (plain particles preferred by Hiệp; ≤ 1/clip)")
     per = [(sid, MK.count_fillers(t)) for sid, t in srcs]; tot = sum(n for _, n in per); cap = max(2, len(srcs) // 4)
     over = [f"{sid}:{n}" for sid, n in per if n > MK.MAX_FILLERS_LINE]
     (err if over or tot > cap else ok)("L-017", f"fillers {tot}/clip (cap {cap}), per line ≤ {MK.MAX_FILLERS_LINE}" + (f"; over: {over}" if over else ""))

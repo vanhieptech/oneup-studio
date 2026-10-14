@@ -29,7 +29,8 @@
      "heard": true,
      "score": 1.626
     }
-   ]
+   ],
+   "auto_tested_best": "ha"
   },
   "hông": {
    "auto": "hông",
@@ -60,7 +61,8 @@
      "heard": false,
      "score": 0.028
     }
-   ]
+   ],
+   "auto_tested_best": "hông"
   },
   "hả": {
    "auto": "hả",
@@ -91,7 +93,8 @@
      "heard": true,
      "score": 1.324
     }
-   ]
+   ],
+   "auto_tested_best": "hả"
   },
   "luôn": {
    "auto": "luôn",
@@ -122,7 +125,8 @@
      "heard": true,
      "score": 1.626
     }
-   ]
+   ],
+   "auto_tested_best": "luôn"
   },
   "nghen": {
    "auto": "nghen",
@@ -153,10 +157,11 @@
      "heard": true,
      "score": 1.36
     }
-   ]
+   ],
+   "auto_tested_best": "nghen"
   },
   "nha": {
-   "auto": "nhaa",
+   "auto": "nha",
    "auto_mark_extra": "",
    "long": "nhaa",
    "tested": [
@@ -184,10 +189,11 @@
      "heard": true,
      "score": 1.508
     }
-   ]
+   ],
+   "auto_tested_best": "nhaa"
   },
   "nè": {
-   "auto": "nèè",
+   "auto": "nè",
    "auto_mark_extra": "",
    "long": "nèè",
    "tested": [
@@ -215,7 +221,8 @@
      "heard": false,
      "score": 0.61
     }
-   ]
+   ],
+   "auto_tested_best": "nèè"
   },
   "ta": {
    "auto": "ta",
@@ -246,7 +253,8 @@
      "heard": true,
      "score": 1.344
     }
-   ]
+   ],
+   "auto_tested_best": "ta"
   },
   "á": {
    "auto": "á",
@@ -277,7 +285,8 @@
      "heard": false,
      "score": 0.408
     }
-   ]
+   ],
+   "auto_tested_best": "á"
   },
   "đó": {
    "auto": "đó",
@@ -308,7 +317,8 @@
      "heard": true,
      "score": 1.626
     }
-   ]
+   ],
+   "auto_tested_best": "đó"
   }
  },
  "omi": {
@@ -341,10 +351,11 @@
      "heard": true,
      "score": 1.674
     }
-   ]
+   ],
+   "auto_tested_best": "ha"
   },
   "hông": {
-   "auto": "hôông",
+   "auto": "hông",
    "auto_mark_extra": "",
    "long": "hôông",
    "tested": [
@@ -372,7 +383,8 @@
      "heard": false,
      "score": 0.044
     }
-   ]
+   ],
+   "auto_tested_best": "hôông"
   },
   "hả": {
    "auto": "hả",
@@ -403,7 +415,8 @@
      "heard": true,
      "score": 1.156
     }
-   ]
+   ],
+   "auto_tested_best": "hả"
   },
   "luôn": {
    "auto": "luôn",
@@ -434,7 +447,8 @@
      "heard": true,
      "score": 1.658
     }
-   ]
+   ],
+   "auto_tested_best": "luôn"
   },
   "nghen": {
    "auto": "nghen",
@@ -465,10 +479,11 @@
      "heard": true,
      "score": 1.61
     }
-   ]
+   ],
+   "auto_tested_best": "nghen"
   },
   "nha": {
-   "auto": "nhaa",
+   "auto": "nha",
    "auto_mark_extra": "",
    "long": "nhaa",
    "tested": [
@@ -496,7 +511,8 @@
      "heard": true,
      "score": 1.572
     }
-   ]
+   ],
+   "auto_tested_best": "nhaa"
   },
   "nè": {
    "auto": "nè",
@@ -527,7 +543,8 @@
      "heard": true,
      "score": 1.722
     }
-   ]
+   ],
+   "auto_tested_best": "nè"
   },
   "ta": {
    "auto": "ta",
@@ -558,7 +575,8 @@
      "heard": true,
      "score": 1.01
     }
-   ]
+   ],
+   "auto_tested_best": "ta"
   },
   "á": {
    "auto": "á",
@@ -589,7 +607,8 @@
      "heard": false,
      "score": 0.408
     }
-   ]
+   ],
+   "auto_tested_best": "á"
   },
   "đó": {
    "auto": "đó",
@@ -620,7 +639,9 @@
      "heard": true,
      "score": 1.658
     }
-   ]
+   ],
+   "auto_tested_best": "đó"
   }
- }
+ },
+ "_note": "DL-040/L-018: Hiệp prefers plain particles; 'auto' = plain spelling for all. 'long' used only by explicit {kéo: …}."
 }

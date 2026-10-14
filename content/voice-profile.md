@@ -50,7 +50,7 @@ Chỉ viết trong `phrases[].t` (lời đọc). Bubble (`text`) và caption (`e
 | `{ừm}` `{ờ}` `{à}` `{ơ}` `{hừm}` `{ủa}` `{trời ơi}` `{thì là}` | từ đệm nói **liền** với mệnh đề sau (cùng một lần gọi F5) | |
 | `{bank:ừm}` (ờ, à, hừm, ủa, trời ơi) | từ đệm lấy từ kho đã thu sẵn của nhân vật, chèn **giữa** hai đơn vị có room tone | chọn biến thể cố định theo câu |
 | `{ngập ngừng}` | ngập ngừng giữa câu ("…" trong cùng đơn vị, không tách) | |
-| `{kéo: nha}` (nha, á, hông, nè, ha, luôn, ta, đó, hả, nghen) | kéo dài tiểu từ theo bảng `pipeline/tts/particle-styles.json` | tiểu từ cuối câu (trước . ! ? …) tự dùng cách viết tốt nhất của nhân vật |
+| `{kéo: nha}` (nha, á, hông, nè, ha, luôn, ta, đó, hả, nghen) | kéo dài tiểu từ theo bảng `pipeline/tts/particle-styles.json` | **tuỳ chọn, chỉ khi viết rõ**; mặc định mọi tiểu từ đọc thường (Hiệp nghe thấy bản thường hay hơn, DL-040). Tối đa 1 lần/clip |
 
 **Tần suất (để không giả):** tối đa **1 từ đệm mỗi câu**, **max(2, số câu ÷ 4) mỗi clip** (clip 60s ≈ 3–4). Không mở mọi câu bằng "ủa/ừm". Ngập ngừng chỉ ở chỗ nhân vật thật sự lưỡng lự. `check-rules` chặn khi vượt (L-017).
 

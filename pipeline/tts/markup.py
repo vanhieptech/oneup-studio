@@ -58,7 +58,7 @@ def expand(text, character=None):
 
 def auto_particles(unit, character):
     """Sentence-final particle → best spelling for this character (table 'auto'), only right before . ! ? …"""
-    st = styles().get(character or "", {})
+    st = styles().get(character or "", {})  # DL-040: table auto = plain spelling (no lengthening unless {kéo: …})
     def rep(m):
         p = m.group(1); s = st.get(p.lower(), {})
         return (s.get("auto") or p) + m.group(2)
