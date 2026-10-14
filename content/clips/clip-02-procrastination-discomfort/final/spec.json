@@ -174,20 +174,20 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Hoãn. Hoãn. Lại hoãn.",
-              "en": "Postponed. Postponed. Again.",
+              "text": "Hoãn hôm nay. Hoãn ngày mai. Rồi lại hoãn.",
+              "en": "Not today. Not tomorrow. Again.",
               "hl": [
-                2
+                4
               ],
               "phrases": [
                 {
-                  "t": "Hoãn."
+                  "t": "Hoãn hôm nay."
                 },
                 {
-                  "t": "Hoãn."
+                  "t": "Hoãn ngày mai."
                 },
                 {
-                  "t": "Lại hoãn."
+                  "t": "Rồi lại hoãn."
                 }
               ]
             }
@@ -206,14 +206,14 @@
             {
               "name": "click",
               "atLine": 0,
-              "offset": 0.45,
+              "offset": 0.76,
               "word": "Hoãn"
             },
             {
               "name": "stamp",
               "atLine": 0,
-              "offset": 0.95,
-              "word": "Lại hoãn"
+              "offset": 1.5,
+              "word": "lại hoãn"
             }
           ],
           "props": [
@@ -231,8 +231,8 @@
               ],
               "tearAt": [
                 0.0,
-                0.45,
-                0.95
+                0.76,
+                1.5
               ]
             }
           ]
@@ -377,7 +377,7 @@
             {
               "name": "stamp",
               "atLine": 1,
-              "offset": 1.9,
+              "offset": 2.5,
               "word": "lười"
             }
           ],
@@ -404,16 +404,16 @@
               "x": 360,
               "y": 300,
               "s": 0.7,
-              "at": 2.8,
+              "at": 2.1,
               "words": [
                 "CHÁN NẢN",
                 "TỘI LỖI",
                 "LƯỜI"
               ],
               "dropAt": [
-                3.0,
-                3.5,
-                4.8
+                2.33,
+                2.95,
+                4.55
               ]
             }
           ]
