@@ -1,5 +1,5 @@
 {
- "total": 61.346,
+ "total": 61.206,
  "parts": [
   {
    "id": "A",
@@ -20,7 +20,7 @@
    "id": "E",
    "engine": "hyperframes",
    "dir": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer",
-   "dur": 34.44,
+   "dur": 34.3,
    "mp4": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4",
    "fx": "circleopen",
    "scene_starts": [
@@ -28,8 +28,8 @@
     12.408999999999999,
     17.253999999999998,
     21.404999999999998,
-    26.375,
-    29.926
+    26.215,
+    29.794999999999998
    ],
    "_off": 15.021
   },
@@ -43,7 +43,7 @@
    "scene_starts": [
     5.58
    ],
-   "_off": 49.111
+   "_off": 48.971
   }
  ],
  "lines": [
@@ -171,25 +171,25 @@
    "beat": "clip-02.b08",
    "scene": "e05",
    "speaker": "hiep",
-   "say": "Không biết bắt đầu? Viết ba gạch đầu dòng. Sợ dở? Cho phép nháp xấu.",
+   "say": "Không biết bắt đầu thì viết ba gạch đầu dòng, sợ dở thì cho phép nháp xấu.",
    "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
    "emotion": "focused",
-   "key": "f5-bf146a0cd99f",
+   "key": "f5-7d0e3c4641ec",
    "local": 21.705,
-   "dur": 4.12,
+   "dur": 3.96,
    "t": 36.726
   },
   {
    "beat": "clip-02.b09",
    "scene": "e06",
    "speaker": "hiep",
-   "say": "Thấy chán? Hẹn mười phút, hết giờ thì được dừng.",
+   "say": "Thấy chán thì hẹn mười phút, hết giờ là được dừng.",
    "en": "Bored? Set 10 minutes. When it rings, you may stop.",
    "emotion": "focused",
-   "key": "f5-fba3f5ca09cc",
-   "local": 26.675,
-   "dur": 2.701,
-   "t": 41.696
+   "key": "f5-1eda90f9886a",
+   "local": 26.515,
+   "dur": 2.73,
+   "t": 41.536
   },
   {
    "beat": "clip-02.b10",
@@ -199,9 +199,9 @@
    "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
    "emotion": "focused",
    "key": "f5-ec90053679ba",
-   "local": 30.226,
+   "local": 30.095,
    "dur": 3.56,
-   "t": 45.247
+   "t": 45.116
   },
   {
    "beat": "clip-02.b11",
@@ -213,7 +213,7 @@
    "key": "f5-5e41f5a3ecac",
    "local": 0.3,
    "dur": 4.83,
-   "t": 49.411
+   "t": 49.271
   },
   {
    "beat": "clip-02.b12",
@@ -225,7 +225,7 @@
    "key": "f5-ea4c76dacef9",
    "local": 0.55,
    "dur": 2.89,
-   "t": 55.241
+   "t": 55.101
   },
   {
    "beat": "clip-02.b12",
@@ -237,7 +237,7 @@
    "key": "f5-08542e06141e",
    "local": 3.64,
    "dur": 2.556,
-   "t": 58.331
+   "t": 58.191
   }
  ],
  "transitions": [
@@ -287,22 +287,22 @@
    "sfx": "swish"
   },
   {
-   "at": 41.428,
+   "at": 41.268,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 44.979,
+   "at": 44.848,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 49.318,
+   "at": 49.178,
    "kind": "part",
    "sfx": "whoosh-soft"
   },
   {
-   "at": 54.723,
+   "at": 54.583,
    "kind": "scene",
    "sfx": "swish"
   }
@@ -370,39 +370,39 @@
   },
   {
    "name": "pen",
-   "at": 38.069
+   "at": 38.021
   },
   {
    "name": "stamp",
-   "at": 40.472
+   "at": 40.337
   },
   {
    "name": "tick",
-   "at": 42.761
+   "at": 42.611
   },
   {
    "name": "ding",
-   "at": 44.236
+   "at": 44.101
   },
   {
    "name": "stamp",
-   "at": 46.612
+   "at": 46.481
   },
   {
    "name": "rise",
-   "at": 48.518
+   "at": 48.387
   },
   {
    "name": "tick",
-   "at": 50.443
+   "at": 50.303
   },
   {
    "name": "pop",
-   "at": 52.843
+   "at": 52.703
   },
   {
    "name": "ding",
-   "at": 58.463
+   "at": 58.323
   },
   {
    "name": "swish",
@@ -442,19 +442,19 @@
   },
   {
    "name": "swish",
-   "at": 41.308
+   "at": 41.148
   },
   {
    "name": "swish",
-   "at": 44.859
+   "at": 44.728
   },
   {
    "name": "whoosh-soft",
-   "at": 49.198
+   "at": 49.058
   },
   {
    "name": "swish",
-   "at": 54.603
+   "at": 54.463
   },
   {
    "name": "ambience",
@@ -507,43 +507,43 @@
   {
    "section": "e05",
    "id": "bullets",
-   "t": 38.069,
+   "t": 38.021,
    "sfx": "pen"
   },
   {
    "section": "e05",
    "id": "draft",
-   "t": 40.472,
+   "t": 40.337,
    "sfx": "stamp"
   },
   {
    "section": "e06",
    "id": "timer",
-   "t": 42.761,
+   "t": 42.611,
    "sfx": "tick"
   },
   {
    "section": "e06",
    "id": "ring",
-   "t": 44.236,
+   "t": 44.101,
    "sfx": "ding"
   },
   {
    "section": "e07",
    "id": "stamp",
-   "t": 46.612,
+   "t": 46.481,
    "sfx": "stamp"
   },
   {
    "section": "e07",
    "id": "worse",
-   "t": 48.518,
+   "t": 48.387,
    "sfx": "rise"
   }
  ],
  "partStarts": [
   0.0,
   15.053,
-  49.143
+  49.003
  ]
 }

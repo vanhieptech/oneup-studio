@@ -7,5 +7,6 @@ m = WhisperModel("small", device="cpu", compute_type="int8")
 for f in sys.argv[1:]:
     pcm = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", f, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
     a = np.frombuffer(pcm, dtype=np.int16).astype("float32") / 32768
+    if len(a) < 16000 * 1.5: a = np.pad(a, 9600)  # whisper returns "" on very short clips (b01c 0.89s) → pad 0.6s silence
     segs, _ = m.transcribe(a, language="vi")
     print(f.split("/")[-1], "|", " ".join(s.text.strip() for s in segs), flush=True)

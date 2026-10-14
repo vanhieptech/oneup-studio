@@ -687,19 +687,29 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Không biết bắt đầu thì viết ba gạch đầu dòng, sợ dở thì cho phép nháp xấu.",
-              "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
+              "text": "Không biết bắt đầu thì viết ba gạch đầu dòng.",
+              "en": "No clear start? Write 3 bullets.",
               "hl": [
                 4,
-                5,
-                12
+                5
               ],
               "phrases": [
                 {
-                  "t": "Không biết bắt đầu thì viết ba gạch đầu dòng,"
-                },
+                  "t": "Không biết bắt đầu thì viết ba gạch đầu dòng."
+                }
+              ]
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Sợ dở thì cho phép nháp xấu.",
+              "en": "Afraid it'll be bad? Allow an ugly draft.",
+              "hl": [
+                6
+              ],
+              "phrases": [
                 {
-                  "t": "sợ dở thì cho phép nháp xấu."
+                  "t": "Sợ dở thì cho phép nháp xấu."
                 }
               ]
             }
@@ -732,18 +742,15 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Thấy chán thì hẹn mười phút, hết giờ là được dừng.",
-              "en": "Bored? Set 10 minutes. When it rings, you may stop.",
+              "text": "Thấy chán thì hẹn mười phút rồi được dừng.",
+              "en": "Bored? Set 10 minutes, then you may stop.",
               "hl": [
                 2,
-                9
+                7
               ],
               "phrases": [
                 {
-                  "t": "Thấy chán thì hẹn mười phút,"
-                },
-                {
-                  "t": "hết giờ là được dừng."
+                  "t": "Thấy chán thì hẹn mười phút rồi được dừng."
                 }
               ]
             }
