@@ -257,6 +257,15 @@ def main():
         (ok if all(t in cap for t in tags) else warn)("rule-53", "hashtags appended to caption")
         st = blk("Checklist cài đặt") or ""; (ok if all(k in st for k in ("AI", "Duet", "Stitch", "Vị trí")) else err)("rule-53", "settings checklist: AI toggle, duet/stitch, location")
         (ok if os.path.exists(os.path.join(fdir, "post-checklist.md")) else err)("rule-53", "post-checklist.md present")
+    # L-020 (DL-046): cover comes from the Cover template (props json), never a video frame grab
+    if final:
+        import hashlib
+        cdir = os.path.join(fdir, "cover"); cpng = os.path.join(fdir, "cover.png")
+        props = glob.glob(os.path.join(cdir, "cover-*.props.json"))
+        rend = {hashlib.md5(open(f, "rb").read()).hexdigest() for f in glob.glob(os.path.join(cdir, "cover-*.png")) if "grid" not in f}
+        okc = os.path.exists(cpng) and hashlib.md5(open(cpng, "rb").read()).hexdigest() in rend
+        (ok if props and okc else warn)("L-020", "cover.png rendered from Cover template (props json present)" if okc else
+            f"cover.png is not a Cover-template render ({len(props)} template direction(s) in cover/ — Hiệp must pick one; becomes ✖ once rule-final)")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
