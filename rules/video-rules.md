@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.9
+version: 3.10
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.9, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.10, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -158,7 +158,24 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Hiệp duyệt bảng này ở gate 1. Chưa duyệt thì không render.
     - check-rules (rule-52) chặn ngay từ trước khi render (không cần `--final`) nếu: beat thiếu mô tả motion, chữ gắn hiệu ứng không có trong lời thoại, explainer không có hit + SFX, thiếu `transition_sfx`, hoặc bảng thiếu beat.
 
+53. **Gói đăng TikTok đầy đủ, có hệ thống (DL-045):** mỗi clip final có `post.md` theo `templates/post-package.md`, gồm 12 mục, mỗi mục một code block để copy-paste:
+    1. File video: đường dẫn, thời lượng, độ phân giải.
+    2. Chữ trên cover (≤ 40 ký tự), kèm timestamp frame cover và file `cover.png` đã xuất.
+    3. Caption VI: dòng đầu là hook, xưng "bạn", không nêu chi tiết chưa xác nhận, ≤ 2200 ký tự, có từ khoá SEO và hashtag ở cuối.
+    4. Hashtag: 3–5 thẻ, trộn thẻ rộng / ngách / VN, lấy từ dữ liệu trend hiện tại và ghi nguồn; không dùng thẻ spam (#fyp, #viral, #xuhuong…).
+    5. Từ khoá SEO.
+    6. Bình luận ghim (câu hỏi CTA).
+    7. Giờ đăng VN, có lý do từ dữ liệu, hoặc ghi rõ là mặc định.
+    8. Âm thanh: thêm từ Commercial Music Library, mood gợi ý, mức âm lượng.
+    9. Checklist cài đặt: AI toggle ON, dòng công bố, bình luận/duet/stitch, người xem, không gắn vị trí, tắt nội dung thương mại, playlist.
+    10. Ghi nguồn CC BY 4.0, kèm link và "đã chuyển thể".
+    11. Series / playlist.
+    12. Nhãn AI.
+
+    Kèm theo là `post-checklist.md`. check-rules `--final` (rule-53) chặn nếu thiếu mục, mục rỗng, hoặc vi phạm giới hạn.
+
 ## Changelog
+- **v3.10, 14/10/2026:** luật 53, gói đăng TikTok 12 mục theo template, có cover.png và post-checklist.md (DL-045).
 - **v3.9, 14/10/2026:** luật 52, bảng hiệu ứng chi tiết ở bước kịch bản, duyệt ở gate 1 trước khi render (DL-044, L-019).
 - **v3.8, 14/10/2026:** luật 51, motion gắn với nội dung + SFX nhấn ở điểm animation trọng tâm (DL-043).
 - **v3.7, 14/10/2026:** luật 50, chuyển cảnh nào cũng có SFX và luôn có lớp nền ambience (DL-042).

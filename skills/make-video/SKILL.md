@@ -107,6 +107,22 @@ python3 pipeline/scripts/check-rules.py <clip>/ --final --stt --out <clip>/final
 ```
 Look at full-size frames of every beat at least 2 rounds (rule-34): text inside safe area, nothing clipped, captions not covering faces, highlight on the right word, logo present. Fix in spec/template, add a `revisions` row, rebuild.
 
+**Post package (rule 53, DL-045).** Copy `templates/post-package.md` to `final/post.md` and fill in all 12 sections, each in its own code block:
+- file specs;
+- cover text (≤40 chars), the cover frame time, and `cover.png`. Export it with ffmpeg: grab the frame, then drawtext with BVP Bold on a #111 band;
+- caption: hook first line, "bạn" voice, ≤2200 chars, SEO keywords, hashtags at the end;
+- 3–5 hashtags taken from current VN trend data, with sources, no spammy tags;
+- SEO keywords;
+- pinned comment;
+- VN posting time, with sources or flagged as default;
+- sound note (Commercial Music Library, music at 5–10%);
+- settings checklist (AI toggle, duet/stitch, audience, no location, commercial OFF, playlist);
+- CC BY 4.0 credit;
+- series;
+- AI label.
+
+Also write `post-checklist.md`. `check-rules --final` blocks on any gap.
+
 ## 7. Review gate 2 (Hiệp): final
 Send the MP4 + `post.md` (caption VI in "bạn" voice that asserts no unconfirmed fact, hashtags, HowToLiveBetter CC BY 4.0 credit + license link + "đã chuyển thể", AI toggle + disclosure line naming the characters who speak, exact form: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." — rule-46/DL-035, check-rules errors if "F5-TTS" is missing) + `check-rules.txt` summary + confirm list. Agent never posts.
 

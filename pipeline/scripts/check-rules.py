@@ -234,6 +234,29 @@ def main():
             (ok if any(m["name"] == "ambience" for m in mixs) else err)("rule-50", "ambience bed under whole clip")
             for n in sorted({m["name"] for m in mixs}):
                 if n not in src: err("rule-22", f"sfx '{n}' missing in assets/sfx/SOURCES.md")
+    # rule-53 (DL-045): complete TikTok post package (template v1), each field in its own code block
+    pm = os.path.join(fdir, "post.md")
+    if final:
+        pt = open(pm).read() if os.path.exists(pm) else ""
+        secs = {m.group(1).strip(): m.group(2) for m in re.finditer(r"^## \d+\. ([^\n]+)\n(.*?)(?=^## |\Z)", pt, re.S | re.M)}
+        need = ["File video", "Chữ trên cover", "Caption", "Hashtag", "Từ khoá SEO", "Bình luận ghim", "Giờ đăng", "Âm thanh", "Checklist cài đặt", "Ghi nguồn", "Series", "Nhãn AI"]
+        def blk(k):
+            for h, b in secs.items():
+                if h.startswith(k):
+                    m = re.search(r"```\n(.*?)\n```", b, re.S); return m.group(1).strip() if m else ""
+            return None
+        miss = [k for k in need if not blk(k)]
+        (ok if not miss else err)("rule-53", "post.md has all 12 fields with code blocks" + (f" — missing/empty: {miss}" if miss else ""))
+        cv = blk("Chữ trên cover") or ""; (ok if 0 < len(cv) <= 40 else err)("rule-53", f"cover text {len(cv)} chars (≤ 40)")
+        (ok if os.path.exists(os.path.join(fdir, "cover.png")) else err)("rule-53", "cover.png exported")
+        (ok if re.search(r"Frame cover: \*\*[\d.]+s\*\*", pt) else err)("rule-53", "cover frame timestamp given")
+        cap = blk("Caption") or ""; (ok if 0 < len(cap) <= 2200 else err)("rule-53", f"caption {len(cap)} chars (≤ 2200)")
+        tags = re.findall(r"#\w+", blk("Hashtag") or ""); (ok if 3 <= len(tags) <= 5 else err)("rule-53", f"{len(tags)} hashtags (3–5)")
+        spam = [t for t in tags if t.lower() in ("#fyp", "#foryou", "#foryoupage", "#viral", "#xuhuong", "#trending", "#lenxuhuong")]
+        (ok if not spam else err)("rule-53", "no spammy hashtags" + (f": {spam}" if spam else ""))
+        (ok if all(t in cap for t in tags) else warn)("rule-53", "hashtags appended to caption")
+        st = blk("Checklist cài đặt") or ""; (ok if all(k in st for k in ("AI", "Duet", "Stitch", "Vị trí")) else err)("rule-53", "settings checklist: AI toggle, duet/stitch, location")
+        (ok if os.path.exists(os.path.join(fdir, "post-checklist.md")) else err)("rule-53", "post-checklist.md present")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
