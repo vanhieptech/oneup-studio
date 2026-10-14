@@ -81,7 +81,7 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
 | b01 | remotion | Hook cut 1: zoom mạnh vào màn hình laptop 'Omi feature · TODO', chữ hook to ngay frame 0; dấu đỏ POSTPONED đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
-| b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | “hoãn” | `click` → “Hoãn”; `click` → “Hoãn”; `stamp` → “Lại hoãn” | cut (`swish`) |
+| b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | “hoãn” | `click` → “Hoãn”; `click` → “Hoãn”; `stamp` → “lại hoãn” | cut (`swish`) |
 | b01c | remotion | Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TOANG! đập xuống rung | “Toang” | `stamp` → “Toang” | cut (`swish`) |
 | b02 | remotion | Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash) | “tội lỗi” | `pop` → “TikTok”; `stamp` → “lười” | cut (`swish`) |
 | b03 | remotion | Comic: iris mở sang giấy trắng, chữ 'LƯỜI' bị bút gạch, Hiệp ngẩng lên nhận ra | “né một cảm giác” | `pen` → “đâu phải lười” | iris (`swish`) |

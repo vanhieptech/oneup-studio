@@ -687,7 +687,7 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Không biết bắt đầu? Viết ba gạch đầu dòng. Sợ dở? Cho phép nháp xấu.",
+              "text": "Không biết bắt đầu thì viết ba gạch đầu dòng, sợ dở thì cho phép nháp xấu.",
               "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
               "hl": [
                 4,
@@ -696,16 +696,10 @@
               ],
               "phrases": [
                 {
-                  "t": "Không biết bắt đầu?"
+                  "t": "Không biết bắt đầu thì viết ba gạch đầu dòng,"
                 },
                 {
-                  "t": "Viết ba gạch đầu dòng."
-                },
-                {
-                  "t": "Sợ dở?"
-                },
-                {
-                  "t": "Cho phép nháp xấu."
+                  "t": "sợ dở thì cho phép nháp xấu."
                 }
               ]
             }
@@ -738,7 +732,7 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Thấy chán? Hẹn mười phút, hết giờ thì được dừng.",
+              "text": "Thấy chán thì hẹn mười phút, hết giờ là được dừng.",
               "en": "Bored? Set 10 minutes. When it rings, you may stop.",
               "hl": [
                 2,
@@ -746,13 +740,10 @@
               ],
               "phrases": [
                 {
-                  "t": "Thấy chán?"
+                  "t": "Thấy chán thì hẹn mười phút,"
                 },
                 {
-                  "t": "Hẹn mười phút,"
-                },
-                {
-                  "t": "hết giờ thì được dừng."
+                  "t": "hết giờ là được dừng."
                 }
               ]
             }

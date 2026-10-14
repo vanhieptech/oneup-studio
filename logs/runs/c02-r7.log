@@ -1,0 +1,664 @@
+voice: 16 lines (16 prosody), 16 cached
++ /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json
+warn: f5-326c41246390 line STT sim 0.571: tính năng ôm ý
+warn: f5-4095f70a2567 line STT sim 0.667: Hoảng hôm nay, hoảng ngày mai, rồi lại hoảng.
+warn: f5-2ec9b28a5ba0 line STT sim 0.632: Mở có ra 5 giây sau đã lướt tiết tóc.
+warn: f5-14547a444848 line STT sim 0.727: chán nãn tội lỗi, rồi tự mắng ngựa mình lùi quá.
+warn: f5-fd1d2dfea83a line STT sim 0.8: Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ, hay không biết bắt đầu, nghe quen không.
+warn: f5-00112fb8fae8 line STT sim 0.737: Gọt 691 hệ số tương quan, việc càng khó chịu, càng thấy mình kém càng dễ hoảng.
+warn: f5-bf146a0cd99f line STT sim 0.733: không biết bắt đầu, viết 3 gạch đầu dòng, sở dỡ cho phép nháp 6.
+warn: f5-fba3f5ca09cc line STT sim 0.8: Thấy tráng hẹn 10 phút, hết giờ thì được dừng.
+warn: f5-ec90053679ba line STT sim 0.846: Lỗi hay gặp mắn mình rồi gồng, mắn xong việc càng khó chịu.
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/public/voice/f5-fd1d2dfea83a.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-00112fb8fae8.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ba77a972a011.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-6505e5807de7.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-bf146a0cd99f.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-fba3f5ca09cc.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ec90053679ba.wav -filter_complex [0:a]aresample=48000,adelay=650:all=1[a0];[1:a]aresample=48000,adelay=6484:all=1[a1];[2:a]aresample=48000,adelay=12709:all=1[a2];[3:a]aresample=48000,adelay=17554:all=1[a3];[4:a]aresample=48000,adelay=21705:all=1[a4];[5:a]aresample=48000,adelay=26675:all=1[a5];[6:a]aresample=48000,adelay=30226:all=1[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0,apad,atrim=0:34.44[o] -map [o] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-voice.wav
+plans: total ≈ 61.34s
++ npx tsx src/cli.ts validate /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json: 5 scenes, 15.37s
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json: 2 scenes, 12.23s
+voice: 16 lines (16 prosody), 16 cached
++ /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json
+warn: f5-326c41246390 line STT sim 0.571: tính năng ôm ý
+warn: f5-4095f70a2567 line STT sim 0.667: Hoảng hôm nay, hoảng ngày mai, rồi lại hoảng.
+warn: f5-2ec9b28a5ba0 line STT sim 0.632: Mở có ra 5 giây sau đã lướt tiết tóc.
+warn: f5-14547a444848 line STT sim 0.727: chán nãn tội lỗi, rồi tự mắng ngựa mình lùi quá.
+warn: f5-fd1d2dfea83a line STT sim 0.8: Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ, hay không biết bắt đầu, nghe quen không.
+warn: f5-00112fb8fae8 line STT sim 0.737: Gọt 691 hệ số tương quan, việc càng khó chịu, càng thấy mình kém càng dễ hoảng.
+warn: f5-bf146a0cd99f line STT sim 0.733: không biết bắt đầu, viết 3 gạch đầu dòng, sở dỡ cho phép nháp 6.
+warn: f5-fba3f5ca09cc line STT sim 0.8: Thấy tráng hẹn 10 phút, hết giờ thì được dừng.
+warn: f5-ec90053679ba line STT sim 0.846: Lỗi hay gặp mắn mình rồi gồng, mắn xong việc càng khó chịu.
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/public/voice/f5-fd1d2dfea83a.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-00112fb8fae8.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ba77a972a011.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-6505e5807de7.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-bf146a0cd99f.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-fba3f5ca09cc.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ec90053679ba.wav -filter_complex [0:a]aresample=48000,adelay=650:all=1[a0];[1:a]aresample=48000,adelay=6484:all=1[a1];[2:a]aresample=48000,adelay=12709:all=1[a2];[3:a]aresample=48000,adelay=17554:all=1[a3];[4:a]aresample=48000,adelay=21705:all=1[a4];[5:a]aresample=48000,adelay=26675:all=1[a5];[6:a]aresample=48000,adelay=30226:all=1[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0,apad,atrim=0:34.44[o] -map [o] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-voice.wav
+plans: total ≈ 61.34s
++ npx tsx src/cli.ts validate /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json: 5 scenes, 15.37s
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json: 2 scenes, 12.23s
++ npx tsx src/cli.ts render /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json --out-dir out
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json: 5 scenes, 15.37s
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json: 2 scenes, 12.23s
+bundle: building…
+render clip-02-final-A: 0%
+render clip-02-final-A: 10%
+render clip-02-final-A: 20%
+render clip-02-final-A: 30%
+render clip-02-final-A: 40%
+render clip-02-final-A: 50%
+render clip-02-final-A: 60%
+render clip-02-final-A: 70%
+render clip-02-final-A: 80%
+render clip-02-final-A: 90%
+render clip-02-final-A: 100%
+✔ out/clip-02-final-A.mp4: 1080x1920 30fps 462 frames in 49.7s
+render clip-02-final-B: 0%
+render clip-02-final-B: 10%
+render clip-02-final-B: 20%
+render clip-02-final-B: 30%
+render clip-02-final-B: 40%
+render clip-02-final-B: 50%
+render clip-02-final-B: 60%
+render clip-02-final-B: 70%
+render clip-02-final-B: 80%
+render clip-02-final-B: 90%
+render clip-02-final-B: 100%
+✔ out/clip-02-final-B.mp4: 1080x1920 30fps 366 frames in 34.3s
++ npx --yes hyperframes@0.8.150 lint
+◆  Linting explainer/index.html
+
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:73:3] nested_structure_needs_subcomposition [e01]: <div id="e01"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e01"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:81:3] nested_structure_needs_subcomposition [e02]: <div id="e02"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e02"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:90:3] nested_structure_needs_subcomposition [e03]: <div id="e03"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e03"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:101:3] nested_structure_needs_subcomposition [e04]: <div id="e04"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e04"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:106:3] nested_structure_needs_subcomposition [e05]: <div id="e05"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e05"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:112:3] nested_structure_needs_subcomposition [e06]: <div id="e06"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e06"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html:118:3] nested_structure_needs_subcomposition [e07]: <div id="e07"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e07"> and its contents into a sub-composition file and mount it with data-composition-src.
+
+◇  0 error(s), 7 warning(s)
+
+  This project pins hyperframes@0.8.150 (latest 0.8.153).
+  Bump it: npx hyperframes@latest upgrade --project
+
++ npx --yes hyperframes@0.8.150 render . -o /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-silent.mp4 -f 30 --quality delivery
+
+◆  Rendering explainer → /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-silent.mp4
+   30fps · high · auto workers (8 cores detected)
+   GPU: browser GPU (auto-detect)
+
+[?25l│
+◒  Checking browser[1G[J◐  Checking browser[1G[J◓  Checking browser[1G[J◑  Checking browser[1G[J◒  Checking browser[1G[J◐  Checking browser[1G[J◓  Checking browser[1G[J◑  Checking browser[1G[J◒  Checking browser.[1G[J◐  Checking browser.[1G[J◓  Checking browser.[1G[J◑  Checking browser.[1G[J◒  Checking browser.[1G[J◐  Checking browser.[1G[J◓  Checking browser.[1G[J◑  Checking browser.[1G[J◒  Checking browser..[1G[J◐  Checking browser..[1G[J◓  Checking browser..[1G[J◑  Checking browser..[1G[J◒  Checking browser..[1G[J◐  Checking browser..[1G[J◓  Checking browser..[1G[J◑  Checking browser..[1G[J◒  Checking browser...[1G[J◐  Checking browser...[1G[J◓  Checking browser...[1G[J◑  Checking browser...[1G[J◒  Checking browser...[1G[J◐  Checking browser...[1G[J◓  Checking browser...[1G[J◑  Checking browser...[1G[J◒  Checking browser...[1G[J◐  Checking browser[1G[J◓  Checking browser[1G[J◑  Checking browser[1G[J◒  Checking browser[1G[J◐  Checking browser[1G[J◓  Checking browser[1G[J◑  Checking browser[1G[J◇  Browser: download
+[?25h
+  Lint: 0 error(s), 7 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+
+[INFO] [Render] Pipeline started {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","platform":"linux","arch":"x64","nodeVersion":"v22.20.0","fps":{"num":30,"den":1},"format":"mp4","quality":"high","browserGpuMode":"auto","forceScreenshot":false,"protocolTimeout":300000,"browserTimeout":120000,"pageNavigationTimeout":60000,"playerReadyTimeout":45000}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"pipeline","status":"checkpoint","elapsedMs":3,"message":"started","format":"mp4","quality":"high","browserGpuMode":"auto","forceScreenshot":false,"protocolTimeoutMs":300000,"pageNavigationTimeoutMs":60000,"playerReadyTimeoutMs":45000,"requestedWorkers":"auto"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"compile","status":"start","elapsedMs":6,"needsAlpha":false}
+  █░░░░░░░░░░░░░░░░░░░░░░░░  5%  Compiling composition
+@hf-progress {"code":"compile","pct":5}
+[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-Bold.ttf (136 KB → data URI)
+[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-SemiBold.ttf (132 KB → data URI)
+[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-Regular.ttf (129 KB → data URI)
+[INFO] Compiled composition metadata {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","entryFile":"index.html","staticDuration":34.44,"width":1080,"height":1920,"videoCount":0,"audioCount":0,"renderModeHints":{"recommendScreenshot":false,"reasons":[]}}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"compile","status":"end","elapsedMs":1226,"durationMs":1220,"needsAlpha":false}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"compile","status":"checkpoint","elapsedMs":1227,"message":"composition metadata resolved","width":1080,"height":1920,"videoCount":0,"audioCount":0,"imageCount":1,"deviceScaleFactor":1,"forceScreenshot":false,"compositionHash":"0df6b7950a851db0"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"browser_probe","status":"start","elapsedMs":1227,"forceScreenshot":false,"stagePhase":"calibrating"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"browser_probe","status":"end","elapsedMs":1317,"durationMs":89,"forceScreenshot":false,"stagePhase":"calibrating"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"browser_probe","status":"checkpoint","elapsedMs":1318,"message":"duration resolved","durationSeconds":34.44,"totalFrames":1034,"compositionHash":"0df6b7950a851db0","beginFrameStalled":false}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"video_extract","status":"start","elapsedMs":1318,"videoCount":0}
+  ██░░░░░░░░░░░░░░░░░░░░░░░  10%  Extracting video frames
+@hf-progress {"code":"extract_video","pct":10}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"video_extract","status":"end","elapsedMs":1320,"durationMs":2,"videoCount":0}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"video_extract","status":"checkpoint","elapsedMs":1322,"message":"frames resolved","videoCount":0,"extractedVideoCount":0,"totalFramesExtracted":0,"maxFramesPerVideo":0,"avgFramesPerExtractedVideo":null,"vfrPreflightCount":null,"vfrPreflightMs":null,"cacheHits":null,"cacheMisses":null,"transientRetries":null,"minVideoFrameCoverageRatio":null,"authoredTimedClipCount":9}
+[INFO] [Render] No HDR sources detected, rendering SDR {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"hdr_detection","status":"checkpoint","elapsedMs":1323,"message":"resolved","requestedHdrMode":"auto","effectiveHdr":"sdr","nativeHdrVideoCount":0,"nativeHdrImageCount":0}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"audio_process","status":"start","elapsedMs":1323,"audioCount":0}
+  █████░░░░░░░░░░░░░░░░░░░░  20%  Processing audio tracks
+@hf-progress {"code":"process_audio","pct":20}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"audio_process","status":"end","elapsedMs":1323,"durationMs":0,"audioCount":0}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"file_server","status":"start","elapsedMs":1323,"reused":false}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting frame capture
+@hf-progress {"code":"start_browsers","pct":25}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"file_server","status":"end","elapsedMs":1331,"durationMs":8}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Checking browser GPU
+@hf-progress {"code":"start_browsers","pct":25}
+[hyperframes] browserGpuMode probe → software (WebGL unavailable)
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"capture_calibration","status":"start","elapsedMs":2344,"stagePhase":"calibrating","forceScreenshot":false,"totalFrames":1034,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render] Calibration config {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","protocolTimeout":30000,"parentProtocolTimeout":300000,"forceScreenshot":false,"totalFrames":1034}
+[INFO] Launching browser for capture calibration... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Measuring capture speed
+@hf-progress {"code":"start_browsers","pct":25}
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[INFO] Initializing calibration session... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (1ms)
+[initSession:beginframe] page.goto complete (217ms)
+[initSession:beginframe] GSAP proxy flush complete (224ms)
+[Browser:WARN] GSAP target #e02 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:beginframe] pollHfReady complete (379ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (381ms)
+[initSession:beginframe] applyVideoMetadataHints complete (382ms)
+[initSession:beginframe] media + fonts + tailwind ready (385ms)
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (422ms)
+[INFO] Calibration session ready, capturing test frames... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] Calibration: capturing test frame 1/5... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] Calibration: capturing test frame 2/5... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] Calibration: capturing test frame 3/5... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] Calibration: capturing test frame 4/5... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] Calibration: capturing test frame 5/5... {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] Calibration complete, estimated cost: 63ms/frame (p95) {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"capture_calibration","status":"end","elapsedMs":3409,"durationMs":1064,"stagePhase":"calibrating","forceScreenshot":false,"totalFrames":1034,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"capture_calibration","status":"checkpoint","elapsedMs":3410,"message":"resolved","forceScreenshot":false,"multiplier":1,"p95Ms":63}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"worker_resolution","status":"checkpoint","elapsedMs":3411,"message":"resolved","workerCount":3}
+[INFO] [Render] Parallel beginframe capture will stream to the encoder (interleaved, 3 workers) instead of the disk path. Set HF_CAPTURE_PARALLEL_STREAM=false to disable. {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"worker_resolution","status":"checkpoint","elapsedMs":3411,"message":"parallel beginframe capture routed to streaming"}
+[INFO] streaming-encode gate {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","enabled":true,"reason":"parallel_forced","configFlag":true,"durationCapEnabled":false,"outputFormat":"mp4","workerCount":3,"durationSeconds":34.44,"maxDurationSeconds":240}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"capture_strategy","status":"checkpoint","elapsedMs":3412,"message":"resolved","workerCount":3,"forceScreenshot":false,"captureBeyondViewport":null,"useStreamingEncode":true,"useLayeredComposite":false,"usePageSideCompositing":false,"hasHdrContent":false,"hasShaderTransitions":false,"isPngSequence":false}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"capture_streaming","status":"start","elapsedMs":3412,"stagePhase":"capturing","workerCount":3,"forceScreenshot":false,"totalFrames":1034,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":0,"phase":"browser_launch","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":1,"phase":"browser_launch","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":2,"phase":"browser_launch","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (0/3 ready)
+@hf-progress {"code":"start_browsers","done":0,"total":3,"pct":25}
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":1,"phase":"browser_probe","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":1,"phase":"session_init","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (0ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":2,"phase":"browser_probe","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":2,"phase":"session_init","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":0,"phase":"browser_probe","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":0,"phase":"session_init","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (0ms)
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (0ms)
+[initSession:beginframe] page.goto complete (294ms)
+[initSession:beginframe] page.goto complete (301ms)
+[initSession:beginframe] GSAP proxy flush complete (304ms)
+[initSession:beginframe] GSAP proxy flush complete (310ms)
+[initSession:beginframe] page.goto complete (317ms)
+[Browser:WARN] GSAP target #e02 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e02 .title not found. https://gsap.com
+[initSession:beginframe] GSAP proxy flush complete (324ms)
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e02 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:beginframe] pollHfReady complete (464ms)
+[initSession:beginframe] pollHfReady complete (466ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (467ms)
+[initSession:beginframe] applyVideoMetadataHints complete (467ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (468ms)
+[initSession:beginframe] applyVideoMetadataHints complete (468ms)
+[initSession:beginframe] media + fonts + tailwind ready (469ms)
+[initSession:beginframe] pollHfReady complete (472ms)
+[initSession:beginframe] media + fonts + tailwind ready (469ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (474ms)
+[initSession:beginframe] applyVideoMetadataHints complete (475ms)
+[initSession:beginframe] media + fonts + tailwind ready (476ms)
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (474ms)
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (473ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":2,"phase":"frame_capture","frameIndex":2,"browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":false,"gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (1/3 ready)
+@hf-progress {"code":"start_browsers","done":1,"total":3,"pct":25}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":0,"phase":"frame_capture","frameIndex":0,"browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":false,"gpuBackend":"unknown"}
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (512ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","workerId":1,"phase":"frame_capture","frameIndex":1,"browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":false,"gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Streaming frame 1/1034 (3 workers)
+@hf-progress {"code":"capture","done":1,"total":1034,"pct":25}
+  ██████░░░░░░░░░░░░░░░░░░░  26%  Streaming frame 18/1034 (3 workers)
+@hf-progress {"code":"capture","done":18,"total":1034,"pct":26}
+  ██████░░░░░░░░░░░░░░░░░░░  27%  Streaming frame 33/1034 (3 workers)
+@hf-progress {"code":"capture","done":33,"total":1034,"pct":27}
+  ██████░░░░░░░░░░░░░░░░░░░  27%  Streaming frame 39/1034 (3 workers)
+@hf-progress {"code":"capture","done":39,"total":1034,"pct":27}
+  ███████░░░░░░░░░░░░░░░░░░  28%  Streaming frame 54/1034 (3 workers)
+@hf-progress {"code":"capture","done":54,"total":1034,"pct":28}
+  ███████░░░░░░░░░░░░░░░░░░  29%  Streaming frame 66/1034 (3 workers)
+@hf-progress {"code":"capture","done":66,"total":1034,"pct":29}
+  ███████░░░░░░░░░░░░░░░░░░  29%  Streaming frame 81/1034 (3 workers)
+@hf-progress {"code":"capture","done":81,"total":1034,"pct":29}
+  ███████░░░░░░░░░░░░░░░░░░  30%  Streaming frame 95/1034 (3 workers)
+@hf-progress {"code":"capture","done":95,"total":1034,"pct":30}
+  ███████░░░░░░░░░░░░░░░░░░  31%  Streaming frame 108/1034 (3 workers)
+@hf-progress {"code":"capture","done":108,"total":1034,"pct":31}
+  ███████░░░░░░░░░░░░░░░░░░  31%  Streaming frame 122/1034 (3 workers)
+@hf-progress {"code":"capture","done":122,"total":1034,"pct":31}
+  ████████░░░░░░░░░░░░░░░░░  32%  Streaming frame 136/1034 (3 workers)
+@hf-progress {"code":"capture","done":136,"total":1034,"pct":32}
+  ████████░░░░░░░░░░░░░░░░░  33%  Streaming frame 149/1034 (3 workers)
+@hf-progress {"code":"capture","done":149,"total":1034,"pct":33}
+  ████████░░░░░░░░░░░░░░░░░  34%  Streaming frame 163/1034 (3 workers)
+@hf-progress {"code":"capture","done":163,"total":1034,"pct":34}
+  ████████░░░░░░░░░░░░░░░░░  34%  Streaming frame 176/1034 (3 workers)
+@hf-progress {"code":"capture","done":176,"total":1034,"pct":34}
+  ████████░░░░░░░░░░░░░░░░░  35%  Streaming frame 189/1034 (3 workers)
+@hf-progress {"code":"capture","done":189,"total":1034,"pct":35}
+  █████████░░░░░░░░░░░░░░░░  36%  Streaming frame 202/1034 (3 workers)
+@hf-progress {"code":"capture","done":202,"total":1034,"pct":36}
+  █████████░░░░░░░░░░░░░░░░  36%  Streaming frame 216/1034 (3 workers)
+@hf-progress {"code":"capture","done":216,"total":1034,"pct":36}
+  █████████░░░░░░░░░░░░░░░░  37%  Streaming frame 231/1034 (3 workers)
+@hf-progress {"code":"capture","done":231,"total":1034,"pct":37}
+  █████████░░░░░░░░░░░░░░░░  38%  Streaming frame 243/1034 (3 workers)
+@hf-progress {"code":"capture","done":243,"total":1034,"pct":38}
+  █████████░░░░░░░░░░░░░░░░  39%  Streaming frame 256/1034 (3 workers)
+@hf-progress {"code":"capture","done":256,"total":1034,"pct":39}
+  █████████░░░░░░░░░░░░░░░░  39%  Streaming frame 269/1034 (3 workers)
+@hf-progress {"code":"capture","done":269,"total":1034,"pct":39}
+  ██████████░░░░░░░░░░░░░░░  40%  Streaming frame 282/1034 (3 workers)
+@hf-progress {"code":"capture","done":282,"total":1034,"pct":40}
+  ██████████░░░░░░░░░░░░░░░  41%  Streaming frame 296/1034 (3 workers)
+@hf-progress {"code":"capture","done":296,"total":1034,"pct":41}
+  ██████████░░░░░░░░░░░░░░░  41%  Streaming frame 309/1034 (3 workers)
+@hf-progress {"code":"capture","done":309,"total":1034,"pct":41}
+  ██████████░░░░░░░░░░░░░░░  42%  Streaming frame 322/1034 (3 workers)
+@hf-progress {"code":"capture","done":322,"total":1034,"pct":42}
+  ██████████░░░░░░░░░░░░░░░  43%  Streaming frame 337/1034 (3 workers)
+@hf-progress {"code":"capture","done":337,"total":1034,"pct":43}
+  ███████████░░░░░░░░░░░░░░  44%  Streaming frame 352/1034 (3 workers)
+@hf-progress {"code":"capture","done":352,"total":1034,"pct":44}
+  ███████████░░░░░░░░░░░░░░  44%  Streaming frame 366/1034 (3 workers)
+@hf-progress {"code":"capture","done":366,"total":1034,"pct":44}
+  ███████████░░░░░░░░░░░░░░  45%  Streaming frame 381/1034 (3 workers)
+@hf-progress {"code":"capture","done":381,"total":1034,"pct":45}
+  ███████████░░░░░░░░░░░░░░  46%  Streaming frame 396/1034 (3 workers)
+@hf-progress {"code":"capture","done":396,"total":1034,"pct":46}
+  ███████████░░░░░░░░░░░░░░  47%  Streaming frame 411/1034 (3 workers)
+@hf-progress {"code":"capture","done":411,"total":1034,"pct":47}
+  ████████████░░░░░░░░░░░░░  48%  Streaming frame 425/1034 (3 workers)
+@hf-progress {"code":"capture","done":425,"total":1034,"pct":48}
+  ████████████░░░░░░░░░░░░░  48%  Streaming frame 439/1034 (3 workers)
+@hf-progress {"code":"capture","done":439,"total":1034,"pct":48}
+  ████████████░░░░░░░░░░░░░  49%  Streaming frame 453/1034 (3 workers)
+@hf-progress {"code":"capture","done":453,"total":1034,"pct":49}
+  ████████████░░░░░░░░░░░░░  50%  Streaming frame 467/1034 (3 workers)
+@hf-progress {"code":"capture","done":467,"total":1034,"pct":50}
+  ████████████░░░░░░░░░░░░░  51%  Streaming frame 483/1034 (3 workers)
+@hf-progress {"code":"capture","done":483,"total":1034,"pct":51}
+  ████████████░░░░░░░░░░░░░  51%  Streaming frame 498/1034 (3 workers)
+@hf-progress {"code":"capture","done":498,"total":1034,"pct":51}
+  █████████████░░░░░░░░░░░░  52%  Streaming frame 513/1034 (3 workers)
+@hf-progress {"code":"capture","done":513,"total":1034,"pct":52}
+  █████████████░░░░░░░░░░░░  53%  Streaming frame 528/1034 (3 workers)
+@hf-progress {"code":"capture","done":528,"total":1034,"pct":53}
+  █████████████░░░░░░░░░░░░  54%  Streaming frame 543/1034 (3 workers)
+@hf-progress {"code":"capture","done":543,"total":1034,"pct":54}
+  █████████████░░░░░░░░░░░░  55%  Streaming frame 557/1034 (3 workers)
+@hf-progress {"code":"capture","done":557,"total":1034,"pct":55}
+  █████████████░░░░░░░░░░░░  55%  Streaming frame 571/1034 (3 workers)
+@hf-progress {"code":"capture","done":571,"total":1034,"pct":55}
+  ██████████████░░░░░░░░░░░  56%  Streaming frame 585/1034 (3 workers)
+@hf-progress {"code":"capture","done":585,"total":1034,"pct":56}
+  ██████████████░░░░░░░░░░░  57%  Streaming frame 600/1034 (3 workers)
+@hf-progress {"code":"capture","done":600,"total":1034,"pct":57}
+  ██████████████░░░░░░░░░░░  58%  Streaming frame 615/1034 (3 workers)
+@hf-progress {"code":"capture","done":615,"total":1034,"pct":58}
+  ██████████████░░░░░░░░░░░  59%  Streaming frame 631/1034 (3 workers)
+@hf-progress {"code":"capture","done":631,"total":1034,"pct":59}
+  ██████████████░░░░░░░░░░░  59%  Streaming frame 645/1034 (3 workers)
+@hf-progress {"code":"capture","done":645,"total":1034,"pct":59}
+  ███████████████░░░░░░░░░░  60%  Streaming frame 659/1034 (3 workers)
+@hf-progress {"code":"capture","done":659,"total":1034,"pct":60}
+  ███████████████░░░░░░░░░░  61%  Streaming frame 675/1034 (3 workers)
+@hf-progress {"code":"capture","done":675,"total":1034,"pct":61}
+  ███████████████░░░░░░░░░░  62%  Streaming frame 689/1034 (3 workers)
+@hf-progress {"code":"capture","done":689,"total":1034,"pct":62}
+  ███████████████░░░░░░░░░░  62%  Streaming frame 703/1034 (3 workers)
+@hf-progress {"code":"capture","done":703,"total":1034,"pct":62}
+  ███████████████░░░░░░░░░░  63%  Streaming frame 716/1034 (3 workers)
+@hf-progress {"code":"capture","done":716,"total":1034,"pct":63}
+  ████████████████░░░░░░░░░  64%  Streaming frame 730/1034 (3 workers)
+@hf-progress {"code":"capture","done":730,"total":1034,"pct":64}
+  ████████████████░░░░░░░░░  65%  Streaming frame 744/1034 (3 workers)
+@hf-progress {"code":"capture","done":744,"total":1034,"pct":65}
+  ████████████████░░░░░░░░░  65%  Streaming frame 759/1034 (3 workers)
+@hf-progress {"code":"capture","done":759,"total":1034,"pct":65}
+  ████████████████░░░░░░░░░  66%  Streaming frame 774/1034 (3 workers)
+@hf-progress {"code":"capture","done":774,"total":1034,"pct":66}
+  ████████████████░░░░░░░░░  67%  Streaming frame 788/1034 (3 workers)
+@hf-progress {"code":"capture","done":788,"total":1034,"pct":67}
+  █████████████████░░░░░░░░  68%  Streaming frame 803/1034 (3 workers)
+@hf-progress {"code":"capture","done":803,"total":1034,"pct":68}
+  █████████████████░░░░░░░░  69%  Streaming frame 818/1034 (3 workers)
+@hf-progress {"code":"capture","done":818,"total":1034,"pct":69}
+  █████████████████░░░░░░░░  69%  Streaming frame 834/1034 (3 workers)
+@hf-progress {"code":"capture","done":834,"total":1034,"pct":69}
+  █████████████████░░░░░░░░  70%  Streaming frame 849/1034 (3 workers)
+@hf-progress {"code":"capture","done":849,"total":1034,"pct":70}
+  █████████████████░░░░░░░░  71%  Streaming frame 863/1034 (3 workers)
+@hf-progress {"code":"capture","done":863,"total":1034,"pct":71}
+  ██████████████████░░░░░░░  72%  Streaming frame 876/1034 (3 workers)
+@hf-progress {"code":"capture","done":876,"total":1034,"pct":72}
+  ██████████████████░░░░░░░  72%  Streaming frame 891/1034 (3 workers)
+@hf-progress {"code":"capture","done":891,"total":1034,"pct":72}
+  ██████████████████░░░░░░░  73%  Streaming frame 904/1034 (3 workers)
+@hf-progress {"code":"capture","done":904,"total":1034,"pct":73}
+  ██████████████████░░░░░░░  74%  Streaming frame 916/1034 (3 workers)
+@hf-progress {"code":"capture","done":916,"total":1034,"pct":74}
+  ██████████████████░░░░░░░  75%  Streaming frame 931/1034 (3 workers)
+@hf-progress {"code":"capture","done":931,"total":1034,"pct":75}
+  ██████████████████░░░░░░░  75%  Streaming frame 946/1034 (3 workers)
+@hf-progress {"code":"capture","done":946,"total":1034,"pct":75}
+  ███████████████████░░░░░░  76%  Streaming frame 959/1034 (3 workers)
+@hf-progress {"code":"capture","done":959,"total":1034,"pct":76}
+  ███████████████████░░░░░░  77%  Streaming frame 972/1034 (3 workers)
+@hf-progress {"code":"capture","done":972,"total":1034,"pct":77}
+  ███████████████████░░░░░░  77%  Streaming frame 986/1034 (3 workers)
+@hf-progress {"code":"capture","done":986,"total":1034,"pct":77}
+  ███████████████████░░░░░░  78%  Streaming frame 1001/1034 (3 workers)
+@hf-progress {"code":"capture","done":1001,"total":1034,"pct":78}
+  ███████████████████░░░░░░  79%  Streaming frame 1016/1034 (3 workers)
+@hf-progress {"code":"capture","done":1016,"total":1034,"pct":79}
+  ████████████████████░░░░░  80%  Streaming frame 1031/1034 (3 workers)
+@hf-progress {"code":"capture","done":1031,"total":1034,"pct":80}
+  ████████████████████░░░░░  80%  Streaming frame 1034/1034 (3 workers)
+@hf-progress {"code":"capture","done":1034,"total":1034,"pct":80}
+  ██████████████████████░░░  89%  Encoding frame 966/1034
+@hf-progress {"code":"encode","done":966,"total":1034,"pct":89}
+  ██████████████████████░░░  90%  Encoding frame 1034/1034
+@hf-progress {"code":"encode","done":1034,"total":1034,"pct":90}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"capture_streaming","status":"end","elapsedMs":24354,"durationMs":20942,"stagePhase":"capturing","workerCount":3,"forceScreenshot":false,"totalFrames":1034,"framesCompleted":1034,"captureMode":"beginframe","captureOperation":"encode"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"assemble","status":"start","elapsedMs":24355,"stagePhase":"capturing","hasAudio":false,"workerCount":3,"forceScreenshot":false,"totalFrames":1034,"framesCompleted":1034,"captureMode":"beginframe","captureOperation":"encode"}
+  ██████████████████████░░░  90%  Assembling final video
+@hf-progress {"code":"assemble","done":0,"total":34.44,"pct":90}
+  ████████████████████████░  99%  Assembling final video
+@hf-progress {"code":"assemble","done":34.44,"total":34.44,"pct":99}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"assemble","status":"end","elapsedMs":24461,"durationMs":106,"stagePhase":"capturing","hasAudio":false,"workerCount":3,"forceScreenshot":false,"totalFrames":1034,"framesCompleted":1034,"captureMode":"beginframe","captureOperation":"encode"}
+[INFO] [Render:trace] {"renderJobId":"7b935bf1-8363-4e00-ae04-21c2c1a74ef4","phase":"pipeline","status":"checkpoint","elapsedMs":24543,"message":"artifact validated","totalElapsedMs":24542}
+  █████████████████████████  100%  Render complete
+
+◇  /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-silent.mp4
+   7.1 MB · 34.4s video · rendered in 24.6s
+   beginframe capture · software gpu · compile 1.3s · extract 0.0s · audio 0.0s · probe 0.1s · setup 2.1s · capture 20.9s · encode (during capture) 20.9s · assemble 0.1s
+   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.dev/studio/download?os=linux
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-silent.mp4 -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-voice.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4
++ ffmpeg -loglevel error -y -f lavfi -i aevalsrc='0.08*sin(2*PI*95*t)*exp(-14*t)+0.02*(random(0)*2-1)*exp(-40*t)':d=0.2:s=48000 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav
++ ffmpeg -loglevel error -y -f lavfi -i anoisesrc=d=0.025:c=white:a=0.07:r=48000,highpass=f=1500,afade=t=out:st=0.003:d=0.022 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/click.wav
++ ffmpeg -loglevel error -y -f lavfi -i sine=f=520:d=0.09,afade=t=out:st=0.02:d=0.07,volume=0.35 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pop.wav
++ ffmpeg -loglevel error -y -f lavfi -i anoisesrc=d=0.4:c=pink:a=0.5:r=48000,highpass=f=1800,lowpass=f=5000,tremolo=f=14:d=0.8,afade=t=in:d=0.05,afade=t=out:st=0.25:d=0.15 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pen.wav
++ ffmpeg -loglevel error -y -f lavfi -i sine=f=2400:d=0.03:r=48000,afade=t=out:st=0.005:d=0.025,volume=0.25 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/tick.wav
++ ffmpeg -loglevel error -y -f lavfi -i aevalsrc='0.03*sin(2*PI*(300*t+500*t*t))':d=0.6:s=48000,afade=t=in:d=0.35,afade=t=out:st=0.45:d=0.15 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/rise.wav
++ ffmpeg -loglevel error -y -f lavfi -i sine=f=1318:d=0.5,afade=t=out:st=0.03:d=0.47,volume=0.22 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ding.wav
++ ffmpeg -loglevel error -y -f lavfi -i sine=f=180:d=0.08:r=48000,afade=t=out:st=0.01:d=0.07,volume=0.4 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/snap.wav
++ ffmpeg -loglevel error -y -f lavfi -i anoisesrc=d=0.28:c=white:a=0.07:r=48000,highpass=f=2000,lowpass=f=6000,afade=t=in:d=0.1,afade=t=out:st=0.1:d=0.18 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav
++ ffmpeg -loglevel error -y -f lavfi -i anoisesrc=d=0.45:c=pink:a=0.32:r=48000,highpass=f=500,lowpass=f=2500,afade=t=in:d=0.2,afade=t=out:st=0.2:d=0.25 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/whoosh-soft.wav
++ ffmpeg -loglevel error -y -f lavfi -i anoisesrc=d=120:c=brown:a=0.004:r=48000,highpass=f=50,lowpass=f=2200 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ambience.wav
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/out/clip-02-final-A.mp4 -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4 -i /workspace/oneup-studio/video-engine/out/clip-02-final-B.mp4 -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/click.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/click.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pop.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pen.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pop.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/tick.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/rise.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ding.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/snap.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ding.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pop.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pen.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/tick.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ding.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/stamp.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/rise.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/tick.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/pop.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ding.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/whoosh-soft.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/whoosh-soft.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/swish.wav -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/sfx/ambience.wav -filter_complex [0:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:15.403,asetpts=PTS-STARTPTS[a0];[1:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:34.44,asetpts=PTS-STARTPTS[a1];[2:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:12.203,asetpts=PTS-STARTPTS[a2];[a0][a1]acrossfade=d=0.35:c1=tri:c2=tri[ax1];[ax1][a2]acrossfade=d=0.35:c1=tri:c2=tri[ax2];[3:a]aresample=48000,adelay=120:all=1[s0];[4:a]aresample=48000,adelay=1083:all=1[s1];[5:a]aresample=48000,adelay=1843:all=1[s2];[6:a]aresample=48000,adelay=2583:all=1[s3];[7:a]aresample=48000,adelay=3533:all=1[s4];[8:a]aresample=48000,adelay=6473:all=1[s5];[9:a]aresample=48000,adelay=9645:all=1[s6];[10:a]aresample=48000,adelay=12722:all=1[s7];[11:a]aresample=48000,adelay=16750:all=1[s8];[12:a]aresample=48000,adelay=19367:all=1[s9];[13:a]aresample=48000,adelay=21649:all=1[s10];[14:a]aresample=48000,adelay=25756:all=1[s11];[15:a]aresample=48000,adelay=30394:all=1[s12];[16:a]aresample=48000,adelay=31582:all=1[s13];[17:a]aresample=48000,adelay=34560:all=1[s14];[18:a]aresample=48000,adelay=38069:all=1[s15];[19:a]aresample=48000,adelay=40472:all=1[s16];[20:a]aresample=48000,adelay=42761:all=1[s17];[21:a]aresample=48000,adelay=44236:all=1[s18];[22:a]aresample=48000,adelay=46612:all=1[s19];[23:a]aresample=48000,adelay=48518:all=1[s20];[24:a]aresample=48000,adelay=50443:all=1[s21];[25:a]aresample=48000,adelay=52843:all=1[s22];[26:a]aresample=48000,adelay=58463:all=1[s23];[27:a]aresample=48000,adelay=903:all=1[s24];[28:a]aresample=48000,adelay=3353:all=1[s25];[29:a]aresample=48000,adelay=4453:all=1[s26];[30:a]aresample=48000,adelay=10452:all=1[s27];[31:a]aresample=48000,adelay=15108:all=1[s28];[32:a]aresample=48000,adelay=21117:all=1[s29];[33:a]aresample=48000,adelay=27342:all=1[s30];[34:a]aresample=48000,adelay=32186:all=1[s31];[35:a]aresample=48000,adelay=36338:all=1[s32];[36:a]aresample=48000,adelay=41308:all=1[s33];[37:a]aresample=48000,adelay=44859:all=1[s34];[38:a]aresample=48000,adelay=49198:all=1[s35];[39:a]aresample=48000,adelay=54603:all=1[s36];[40:a]aresample=48000,adelay=0:all=1[s37];[ax2][s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36][s37]amix=inputs=39:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,atrim=0:61.346[a] -map [a] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/mix.wav
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/mix.wav -af volume=1.1dB,alimiter=limit=0.84:level=false /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/mix-g.wav
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/out/clip-02-final-A.mp4 -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4 -i /workspace/oneup-studio/video-engine/out/clip-02-final-B.mp4 -i /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/mix.wav -filter_complex [0:v]trim=0:15.403,setpts=PTS-STARTPTS,fps=30,scale=out_range=tv,format=yuv420p,setsar=1[v0];[1:v]trim=0:34.44,setpts=PTS-STARTPTS,fps=30,scale=out_range=tv,format=yuv420p,setsar=1[v1];[2:v]trim=0:12.203,setpts=PTS-STARTPTS,fps=30,scale=out_range=tv,format=yuv420p,setsar=1[v2];[v0][v1]xfade=transition=slideleft:duration=0.35:offset=15.053[vx1];[vx1][v2]xfade=transition=circleopen:duration=0.35:offset=49.143[vx2];[vx2]noise=alls=4:allf=t,format=yuv420p[v] -map [v] -map 3:a -c:v libx264 -profile:v high -crf 20 -maxrate 14M -bufsize 28M -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -color_range tv -r 30 -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4
+final → /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4 (61.346s)
+⚠ rule-4   planned length 61.3s (target 55–60s) · exception DL-058: Hiệp 14/10 17:54 chỉ cắt e06 nếu > 62s (cho phép ≤ 62s)
+⚠ rule-7   198 VI words (target ~150–170)
+✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
+✔ rule-8   last beat b12 part='cta' (CTA question expected)
+✔ rule-11  no Omi
+✔ rule-17  theme dark vs theme-map DARK
+✔ rule-15  explainer/index.html: Be Vietnam Pro embedded
+✔ rule-15  explainer/index.html.tpl: Be Vietnam Pro embedded
+✔ rule-15  video-engine fonts.ts uses Be Vietnam Pro
+✔ rule-21  no music
+⚠ rule-41  Southern particles in 1/16 lines
+✔ rule-41  addresses viewer as “bạn”
+✔ rule-41  English mix words: ['code'] (profile: 1–3 per clip; proper nouns exempt)
+⚠ rule-41  content/clips/clip-02-procrastination-discomfort/final/script-final.md: has unconfirmed story items → Hiệp must confirm before posting
+✔ rule-46  AI voices: Hiệp=F5 · Thái Sơn
+✔ rule-46  hiep voice = F5 · Thái Sơn (F5-TTS, CC-BY-NC-SA risk accepted DL-035)
+✔ rule-13  post.md credit HowToLiveBetter
+✔ rule-13  post.md license name
+✔ rule-13  post.md license link
+✔ rule-13  post.md 'đã chuyển thể / adapted'
+✔ rule-46  post.md: TikTok 'AI-generated content' toggle
+✔ rule-46  post.md: AI-voice disclosure line in caption
+✔ rule-46  post.md: disclosure names the engine (F5-TTS, DL-035)
+✔ rule-32  post.md hashtags
+✔ rule-45  video-engine validate: ✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json: 5 scenes, 15.37s | ✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json: 2 scenes, 12.23s
+⚠ rule-4   MP4 61.29s · exception DL-058: Hiệp 14/10 17:54 chỉ cắt e06 nếu > 62s (cho phép ≤ 62s)
+✔ rule-4   video 1080×1920 30/1 h264 High yuv420p bt709
+✔ rule-4   audio aac 48000 Hz, -14.4 LUFS, peak -1.4 dBFS (target −14 ±1, peak ≤ −0.5)
+✔ rule-34  contact-sheet.png for frame review
+⚠ rule-46  STT b01 0.57: “Tính năng ôm ý”
+⚠ rule-46  STT b01b 0.67: “Hoảng hôm nay, hoảng ngày mai, rồi lại hoảng.”
+✔ rule-46  STT b01c 1.00: “toang thật rồi.”
+⚠ rule-46  STT b02 0.63: “Mở có ra 5 giây sau đã lướt tiết tóc.”
+✔ rule-46  STT b02 0.78: “chán nãn tội lỗi, rồi tự mắng ngựa ưu mình lùi quá.”
+✔ rule-46  STT b03 0.93: “Nhưng nghiên cứu nói, thường đâu phải lười. Mình đang nếm một cảm giác.”
+✔ rule-46  STT e01 0.80: “Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ hay không biết bắt đầu, nghe quen không.”
+✔ rule-46  STT e02 0.77: “Gọt 690 mốt hệ số tương quan, việc càng khó chịu, càng thấy mình kém, càng dễ hoảng.”
+✔ rule-46  STT e03 1.00: “Vì phân thưởng ở xa, cái khó chịu ở ngay bây giờ nên điện thoại thắng.”
+✔ rule-46  STT e04 1.00: “nên trước khi làm hỏi một câu việc này khó chịu ở chỗ nào.”
+✔ rule-46  STT e05 0.87: “không biết bắt đầu, viết 3 gạch đầu dòng, sợ giỡ cho phép nháp xấu.”
+✔ rule-46  STT e06 0.80: “Thấy tráng hẹn 10 phút, hết giờ thì được dừng.”
+✔ rule-46  STT e07 0.85: “Lỗi hay gặp mắn mình rồi gong, mắn xong việc càng khó chịu.”
+✔ rule-46  STT b11 0.95: “Lưu ý nghiên cứu này là tương quan chỉ cho thấy hướng, lưu lại lần sau hoảng thì mở ra.”
+✔ rule-46  STT b12 1.00: “Việc bạn đang hoãn khó chịu chỗ nào, comment một chữ.”
+✔ rule-46  STT b12 1.00: “Còn tính năng Omi, mình đi hỏi câu đó đây.”
+✔ rule-50  13 transitions, 13 with SFX
+✔ rule-50  ambience bed under whole clip
+✔ rule-53  post.md has all 12 fields with code blocks
+✔ rule-53  cover text 16 chars (≤ 40)
+✔ rule-53  cover.png exported
+✔ rule-53  cover frame timestamp given
+✔ rule-53  caption 947 chars (≤ 2200)
+✔ rule-53  5 hashtags (3–5)
+✔ rule-53  no spammy hashtags
+✔ rule-53  hashtags appended to caption
+✔ rule-53  settings checklist: AI toggle, duet/stitch, location
+✔ rule-53  post-checklist.md present
+✔ rule-54  spec.cover props (template A) present
+✔ L-020    cover.png rendered from Cover template (props json present)
+✔ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
+✔ rule-55  first spoken clause 3 words (≤ 6, punchy)
+✔ rule-55  first spoken word at 0.12s (≤ 0.3)
+✔ rule-55  first visual change/hit at 0.12s (≤ 1.0)
+✔ rule-55  0–3s: 1 cut(s) + 4 hit(s) (need ≥ 2 total, ≥ 1 cut)
+✔ rule-55  hook voice emotions ['sad', 'sad', 'sad'] (dramatic)
+✔ rule-56  engagement devices ['comment-challenge', 'loop', 'relatable-question', 'save-prompt'] (≥3 incl. comment-challenge + loop)
+✔ rule-56  no begging for likes/follows
+✔ rule-57  trend-signals.md has clip URLs with view counts
+⚠ rule-57  only proxy signals, no TikTok clip URL yet → verify in app before posting
+✔ rule-52  transition_sfx planned: {'part': 'whoosh-soft', 'scene': 'swish'}
+✔ rule-52  b01: motion/visual described
+✔ rule-52  b01: effect tied to spoken word “Omi”
+✔ rule-52  b01b: motion/visual described
+✔ rule-52  b01b: effect tied to spoken word “hoãn”
+✔ rule-52  b01c: motion/visual described
+✔ rule-52  b01c: effect tied to spoken word “Toang”
+✔ rule-52  b02: motion/visual described
+✔ rule-52  b02: effect tied to spoken word “tội lỗi”
+✔ rule-52  b03: motion/visual described
+✔ rule-52  b03: effect tied to spoken word “né một cảm giác”
+✔ rule-52  e01: motion/visual described
+✔ rule-52  e01: effect tied to spoken word “khó chịu”
+✔ rule-52  e01: explainer has ≥1 planned hit + SFX
+✔ rule-52  e02: motion/visual described
+✔ rule-52  e02: effect tied to spoken word “sáu trăm chín mươi mốt”
+✔ rule-52  e02: explainer has ≥1 planned hit + SFX
+✔ rule-52  e03: motion/visual described
+✔ rule-52  e03: effect tied to spoken word “ở xa”
+✔ rule-52  e03: explainer has ≥1 planned hit + SFX
+✔ rule-52  e04: motion/visual described
+✔ rule-52  e04: effect tied to spoken word “hỏi một câu”
+✔ rule-52  e04: explainer has ≥1 planned hit + SFX
+✔ rule-52  e05: motion/visual described
+✔ rule-52  e05: effect tied to spoken word “gạch đầu dòng”
+✔ rule-52  e05: explainer has ≥1 planned hit + SFX
+✔ rule-52  e06: motion/visual described
+✔ rule-52  e06: effect tied to spoken word “mười phút”
+✔ rule-52  e06: explainer has ≥1 planned hit + SFX
+✔ rule-52  e07: motion/visual described
+✔ rule-52  e07: effect tied to spoken word “mắng mình”
+✔ rule-52  e07: explainer has ≥1 planned hit + SFX
+✔ rule-52  b11: motion/visual described
+✔ rule-52  b11: effect tied to spoken word “tương quan”
+✔ rule-52  b12: motion/visual described
+✔ rule-52  b12: effect tied to spoken word “Omi”
+✔ rule-52  script-final.md effects table covers every beat
+✔ rule-52  effects table has no **THIẾU** cells
+✔ rule-51  e01: 2 accent hit(s) [pop, tick]
+✔ rule-51  e02: 2 accent hit(s) [rise, ding]
+✔ rule-51  e03: 2 accent hit(s) [snap, ding]
+✔ rule-51  e04: 1 accent hit(s) [pop]
+✔ rule-51  e05: 2 accent hit(s) [pen, stamp]
+✔ rule-51  e06: 2 accent hit(s) [tick, ding]
+✔ rule-51  e07: 2 accent hit(s) [stamp, rise]
+✔ rule-51  24 accent SFX, spacing ≥ 0.25s
+✔ rule-49  lessons.md: 20 lessons loaded
+✔ L-001    contact-sheet.png present for self-review
+✔ L-004    highlight indexes within EN caption
+✔ L-005    no [tags] in spoken text
+✔ L-006    phrase tempos within 0.85–1.15
+✔ L-010    key terms use phonetic spelling
+✔ L-017    voice markup valid
+✔ L-017    bank fillers available
+✔ L-018    {kéo:} used 0× (plain particles preferred by Hiệp; ≤ 1/clip)
+✔ L-017    fillers 1/clip (cap 4), per line ≤ 1
+✔ L-017    no markup in on-screen text
+✔ L-011    Omi/week consistent
+✔ L-003    caption segments never overlap
+✔ L-014    hf-check.txt shows hyperframes lint 0 errors
+✔ L-016    b01/f5-326c41246390: sentence/clause units, no cut inside any F5 output
+✔ L-007    b01/f5-326c41246390: F5 per-unit generation (whole clause per call)
+✔ L-016    b01/f5-326c41246390: 1 unit(s)
+✔ L-008    b01/f5-326c41246390: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b01/f5-326c41246390: STT 4 vs 4 syllables
+✔ L-016    b01b/f5-4095f70a2567: sentence/clause units, no cut inside any F5 output
+✔ L-007    b01b/f5-4095f70a2567: F5 per-unit generation (whole clause per call)
+✔ L-016    b01b/f5-4095f70a2567: 1 unit(s)
+✔ L-008    b01b/f5-4095f70a2567: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b01b/f5-4095f70a2567: STT 9 vs 9 syllables
+✔ L-016    b01c/f5-f79fbf5a67cf: sentence/clause units, no cut inside any F5 output
+✔ L-007    b01c/f5-f79fbf5a67cf: F5 per-unit generation (whole clause per call)
+✔ L-016    b01c/f5-f79fbf5a67cf: 1 unit(s)
+✔ L-008    b01c/f5-f79fbf5a67cf: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b01c/f5-f79fbf5a67cf: STT 3 vs 3 syllables
+✔ L-016    b02/f5-2ec9b28a5ba0: sentence/clause units, no cut inside any F5 output
+✔ L-007    b02/f5-2ec9b28a5ba0: F5 per-unit generation (whole clause per call)
+✔ L-016    b02/f5-2ec9b28a5ba0: 1 unit(s)
+✔ L-008    b02/f5-2ec9b28a5ba0: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b02/f5-2ec9b28a5ba0: STT 10 vs 9 syllables
+✔ L-016    b02/f5-14547a444848: sentence/clause units, no cut inside any F5 output
+✔ L-007    b02/f5-14547a444848: F5 per-unit generation (whole clause per call)
+✔ L-016    b02/f5-14547a444848: 2 unit(s)
+✔ L-008    b02/f5-14547a444848: timbre/F0 spread across units 1.1 st (≤ 2.5)
+✔ L-008    b02/f5-14547a444848: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b02/f5-14547a444848: STT 11 vs 11 syllables
+✔ L-016    b03/f5-0271eb2054b8: sentence/clause units, no cut inside any F5 output
+✔ L-007    b03/f5-0271eb2054b8: F5 per-unit generation (whole clause per call)
+✔ L-016    b03/f5-0271eb2054b8: 3 unit(s)
+✔ L-008    b03/f5-0271eb2054b8: timbre/F0 spread across units 2.0 st (≤ 2.5)
+✔ L-008    b03/f5-0271eb2054b8: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b03/f5-0271eb2054b8: STT 14 vs 14 syllables
+✔ L-016    e01/f5-fd1d2dfea83a: sentence/clause units, no cut inside any F5 output
+✔ L-007    e01/f5-fd1d2dfea83a: F5 per-unit generation (whole clause per call)
+✔ L-016    e01/f5-fd1d2dfea83a: 3 unit(s)
+✔ L-008    e01/f5-fd1d2dfea83a: timbre/F0 spread across units 1.4 st (≤ 2.5)
+✔ L-008    e01/f5-fd1d2dfea83a: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e01/f5-fd1d2dfea83a: STT 20 vs 20 syllables
+✔ L-016    e02/f5-00112fb8fae8: sentence/clause units, no cut inside any F5 output
+✔ L-007    e02/f5-00112fb8fae8: F5 per-unit generation (whole clause per call)
+✔ L-016    e02/f5-00112fb8fae8: 3 unit(s)
+✔ L-008    e02/f5-00112fb8fae8: timbre/F0 spread across units 2.1 st (≤ 2.5)
+✔ L-008    e02/f5-00112fb8fae8: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e02/f5-00112fb8fae8: STT 17 vs 21 syllables
+✔ L-016    e03/f5-ba77a972a011: sentence/clause units, no cut inside any F5 output
+✔ L-007    e03/f5-ba77a972a011: F5 per-unit generation (whole clause per call)
+✔ L-016    e03/f5-ba77a972a011: 3 unit(s)
+✔ L-008    e03/f5-ba77a972a011: timbre/F0 spread across units 0.9 st (≤ 2.5)
+✔ L-008    e03/f5-ba77a972a011: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e03/f5-ba77a972a011: STT 16 vs 16 syllables
+✔ L-016    e04/f5-6505e5807de7: sentence/clause units, no cut inside any F5 output
+✔ L-007    e04/f5-6505e5807de7: F5 per-unit generation (whole clause per call)
+✔ L-016    e04/f5-6505e5807de7: 2 unit(s)
+✔ L-008    e04/f5-6505e5807de7: timbre/F0 spread across units 1.3 st (≤ 2.5)
+✔ L-008    e04/f5-6505e5807de7: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e04/f5-6505e5807de7: STT 14 vs 14 syllables
+✔ L-016    e05/f5-bf146a0cd99f: sentence/clause units, no cut inside any F5 output
+✔ L-007    e05/f5-bf146a0cd99f: F5 per-unit generation (whole clause per call)
+✔ L-016    e05/f5-bf146a0cd99f: 3 unit(s)
+✖ L-008    e05/f5-bf146a0cd99f: timbre/F0 spread across units 5.8 st (≤ 2.5)
+✔ L-008    e05/f5-bf146a0cd99f: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e05/f5-bf146a0cd99f: STT 15 vs 15 syllables
+✔ L-016    e06/f5-fba3f5ca09cc: sentence/clause units, no cut inside any F5 output
+✔ L-007    e06/f5-fba3f5ca09cc: F5 per-unit generation (whole clause per call)
+✔ L-016    e06/f5-fba3f5ca09cc: 2 unit(s)
+✖ L-008    e06/f5-fba3f5ca09cc: timbre/F0 spread across units 5.4 st (≤ 2.5)
+✔ L-008    e06/f5-fba3f5ca09cc: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e06/f5-fba3f5ca09cc: STT 10 vs 10 syllables
+✔ L-016    e07/f5-ec90053679ba: sentence/clause units, no cut inside any F5 output
+✔ L-007    e07/f5-ec90053679ba: F5 per-unit generation (whole clause per call)
+✔ L-016    e07/f5-ec90053679ba: 2 unit(s)
+✔ L-008    e07/f5-ec90053679ba: timbre/F0 spread across units 0.8 st (≤ 2.5)
+✔ L-008    e07/f5-ec90053679ba: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    e07/f5-ec90053679ba: STT 13 vs 13 syllables
+✔ L-016    b11/f5-5e41f5a3ecac: sentence/clause units, no cut inside any F5 output
+✔ L-007    b11/f5-5e41f5a3ecac: F5 per-unit generation (whole clause per call)
+✔ L-016    b11/f5-5e41f5a3ecac: 3 unit(s)
+✔ L-008    b11/f5-5e41f5a3ecac: timbre/F0 spread across units 1.5 st (≤ 2.5)
+✔ L-008    b11/f5-5e41f5a3ecac: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b11/f5-5e41f5a3ecac: STT 20 vs 20 syllables
+✔ L-016    b12/f5-ea4c76dacef9: sentence/clause units, no cut inside any F5 output
+✔ L-007    b12/f5-ea4c76dacef9: F5 per-unit generation (whole clause per call)
+✔ L-016    b12/f5-ea4c76dacef9: 1 unit(s)
+✔ L-008    b12/f5-ea4c76dacef9: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b12/f5-ea4c76dacef9: STT 11 vs 11 syllables
+✔ L-016    b12/f5-08542e06141e: sentence/clause units, no cut inside any F5 output
+✔ L-007    b12/f5-08542e06141e: F5 per-unit generation (whole clause per call)
+✔ L-016    b12/f5-08542e06141e: 2 unit(s)
+✔ L-008    b12/f5-08542e06141e: timbre/F0 spread across units 0.6 st (≤ 2.5)
+✔ L-008    b12/f5-08542e06141e: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b12/f5-08542e06141e: STT 10 vs 11 syllables
+⚠ L-013    1 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+
+221 checks · 2 error(s) · 10 warning(s) → FAIL
+EXIT 1
