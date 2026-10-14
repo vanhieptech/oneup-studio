@@ -30,11 +30,11 @@
 ✔ rule-46  STT b01 1.00: “Kế hoạch học tố ích của mình là Mai Học.”
 ✔ rule-46  STT b02 0.92: “Tối nào cũng vậy, cô xong mệt rồi ưm thôi, mai học!”
 ✔ rule-46  STT b03 1.00: “Hóa ra mình đâu có thiếu động lực. Mình thiếu một câu nếu, thì...”
-✔ rule-46  STT e01 1.00: “Tâm lý học gọi nó là ý định thực hiện, viết sẵn mấy giờ, ở đâu gặp gì thì làm gì.”
+✔ rule-46  STT e01 1.00: “Tâm lý học gọi nó là ý định, thực hiện, viết sẵn mấy giờ, ở đâu gặp gì thì làm gì.”
 ✔ rule-46  STT e02 1.00: “Vì mình quyết sẵn lúc còn tỉnh táo, tới lúc mệt thì khỏi phải cải với bản thân.”
 ✔ rule-46  STT e03 0.83: “Ví dụ 9 giờ tối, gặp laptop thì mở một bay listening.”
 ✔ rule-46  STT e04 0.87: “hoặc sáng thứ 3-8 giờ ngồi vào bàn thì viết phần mở đầu trước.”
-✔ rule-46  STT e05 0.86: “gọt 94 kiểm nghiệm độc lập, người viết kiểu này đạt mục tiêu nhiều hơn rõ, hiệu ứng vừa tới lớn.”
+✔ rule-46  STT e05 0.89: “gọt 90 tư kiểm nghiệm độc lập, người viết kiểu này đạt mục tiêu nhiều hơn rõ, hiệu ứng vừa tới lớn.”
 ✔ rule-46  STT e06 0.95: “Nó giúp bạn bắt tay làm, đứng vững khi bị chan ngang và dừng việc chắc chắn không thành.”
 ✔ rule-46  STT e07 0.91: “Lỗi hai gặp rảnh thì học. Rảnh đâu phải tính hiệu. Phải là một giờ, một chỗ hay một việc vừa xong.”
 ✔ rule-46  STT b11 0.89: “mà nhớ nha chỉ hiệu quả với việc bạn thật sự muốn, viết mất 1-2 phút thôi.”
@@ -42,6 +42,40 @@
 ✔ rule-46  STT b12 0.83: “cái máy hết đường trốn rồi.”
 ✔ rule-50  11 transitions, 11 with SFX
 ✔ rule-50  ambience bed under whole clip
+✔ rule-52  transition_sfx planned: {'part': 'whoosh-soft', 'scene': 'swish'}
+✔ rule-52  b01: motion/visual described
+✔ rule-52  b01: effect tied to spoken word “mai học”
+✔ rule-52  b02: motion/visual described
+✔ rule-52  b02: effect tied to spoken word “code”
+✔ rule-52  b03: motion/visual described
+✔ rule-52  b03: effect tied to spoken word “nếu”
+✔ rule-52  e01: motion/visual described
+✔ rule-52  e01: effect tied to spoken word “ý định thực hiện”
+✔ rule-52  e01: explainer has ≥1 planned hit + SFX
+✔ rule-52  e02: motion/visual described
+✔ rule-52  e02: effect tied to spoken word “tỉnh táo”
+✔ rule-52  e02: explainer has ≥1 planned hit + SFX
+✔ rule-52  e03: motion/visual described
+✔ rule-52  e03: effect tied to spoken word “gập laptop”
+✔ rule-52  e03: explainer has ≥1 planned hit + SFX
+✔ rule-52  e04: motion/visual described
+✔ rule-52  e04: effect tied to spoken word “sáng thứ ba”
+✔ rule-52  e04: explainer has ≥1 planned hit + SFX
+✔ rule-52  e05: motion/visual described
+✔ rule-52  e05: effect tied to spoken word “chín mươi tư”
+✔ rule-52  e05: explainer has ≥1 planned hit + SFX
+✔ rule-52  e06: motion/visual described
+✔ rule-52  e06: effect tied to spoken word “bắt tay làm”
+✔ rule-52  e06: explainer has ≥1 planned hit + SFX
+✔ rule-52  e07: motion/visual described
+✔ rule-52  e07: effect tied to spoken word “rảnh thì học”
+✔ rule-52  e07: explainer has ≥1 planned hit + SFX
+✔ rule-52  b11: motion/visual described
+✔ rule-52  b11: effect tied to spoken word “thật sự muốn”
+✔ rule-52  b12: motion/visual described
+✔ rule-52  b12: effect tied to spoken word “nếu–thì”
+✔ rule-52  script-final.md effects table covers every beat
+✔ rule-52  effects table has no **THIẾU** cells
 ✔ rule-51  e01: 3 accent hit(s) [tick, snap, ding]
 ✔ rule-51  e02: 2 accent hit(s) [rise, stamp]
 ✔ rule-51  e03: 2 accent hit(s) [pen, click]
@@ -50,7 +84,7 @@
 ✔ rule-51  e06: 3 accent hit(s) [pop, pop, pop]
 ✔ rule-51  e07: 2 accent hit(s) [stamp, ding]
 ✔ rule-51  22 accent SFX, spacing ≥ 0.25s
-✔ rule-49  lessons.md: 18 lessons loaded
+✔ rule-49  lessons.md: 19 lessons loaded
 ✔ L-001    contact-sheet.png present for self-review
 ✔ L-004    highlight indexes within EN caption
 ✔ L-005    no [tags] in spoken text
@@ -139,6 +173,6 @@
 ✔ L-016    b12/f5-aa89c183bf41: 1 unit(s)
 ✔ L-008    b12/f5-aa89c183bf41: edit points clean (no loud/mid-syllable cuts)
 ✔ L-009    b12/f5-aa89c183bf41: STT 6 vs 6 syllables
-⚠ L-013    18 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+⚠ L-013    19 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
-142 checks · 0 error(s) · 5 warning(s) → PASS
+176 checks · 0 error(s) · 5 warning(s) → PASS

@@ -44,6 +44,24 @@ tags: [clip-01, light, pillar-1, story:S-01, ai-voice, f5, final, week-1]
 | CTA | comment | làm ngay: viết câu nếu–thì cho cái "mai" của bạn, rồi comment |
 | Omi | có (nên phải là tuần 5) | bỏ (tuần 1) |
 
+## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
+Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
+
+| Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
+|---|---|---|---|---|---|
+| b01 | remotion | Comic: phòng ngủ tối, đồng hồ 11:48 PM, trăng + zzz; camera push-in, bong bóng thoại pop | “mai học” | `pop` → “Kế hoạch”; `tick` → “TOEIC” | mở đầu |
+| b02 | remotion | Comic: Hiệp gõ phím rồi dừng tay, gục xuống (squash-stretch), mặt chuyển buồn | “code” | `click` → “code” | slide (`swish`) |
+| b03 | remotion | Comic: chuyển cảnh iris sang giấy trắng, Hiệp ngẩng lên nhận ra, bong bóng thoại 'nếu… thì…' pop | “nếu” | `snap` → “nếu” | iris (`swish`) |
+| e01 | hyperframes | 4 thẻ When/Where/Cue/Then bay vào từ 4 phía như mảnh ghép, kim đồng hồ quay, chuông rung, mũi tên giữa pop, cả câu khoá lại, dấu ✓ tự vẽ | “ý định thực hiện” | `tick` → “mấy giờ”; `snap` → “thì làm gì”; `ding` → “làm gì” | slideleft (`whoosh-soft`) |
+| e02 | hyperframes | 2 cột Now/Later: pin xanh đầy và pin cạn dần sang đỏ; bong bóng 'Hay để mai…?' bị đóng dấu NO DEBATE | “tỉnh táo” | `rise` → “mệt”; `stamp` → “cãi” | push (`swish`) |
+| e03 | hyperframes | Bút gạch 'Mai học'; nắp laptop gập lại + tag 9:00 PM; thẻ vé IF/THEN trượt vào | “gập laptop” | `pen` → “Ví dụ”; `click` → “gập laptop” | push (`swish`) |
+| e04 | hyperframes | Bút gạch 'Viết sau'; lịch lật trang sang 'Tuesday 8:00 AM'; thẻ IF/THEN | “sáng thứ ba” | `pen` → “Hoặc”; `tick` → “tám giờ” | push (`swish`) |
+| e05 | hyperframes | Số 94 đếm lên, thước small/medium/large đầy dần tới vạch d = 0.65 (marker pulse), có nguồn trích dẫn | “chín mươi tư” | `rise` → “chín mươi tư”; `ding` → “vừa tới lớn” | push (`swish`) |
+| e06 | hyperframes | 3 icon play / khiên / stop xoay vào đúng lúc nói 3 tác dụng, gạch chân vẽ tay; thông báo Messenger pop rồi trượt đi | “bắt tay làm” | `pop` → “bắt tay làm”; `pop` → “chen ngang”; `pop` → “dừng việc” | push (`swish`) |
+| e07 | hyperframes | Con dấu đỏ '✕ NOT A CUE' đè lên 'Rảnh thì học'; 3 thẻ TIME / PLACE / AFTER (tín hiệu đúng) trượt vào | “rảnh thì học” | `stamp` → “rảnh thì học”; `ding` → “việc vừa xong” | push (`swish`) |
+| b11 | remotion | Comic: Hiệp giơ một ngón tay nhắc ý; bong bóng thoại nhấn 'thật sự muốn' và 'một, hai phút' | “thật sự muốn” | `tick` → “một, hai phút” | circleopen (`whoosh-soft`) |
+| b12 | remotion | Comic: chuyển cảnh slide sang lưới, Hiệp cười chỉ vào người xem, câu cuối nối lại hook 'mai' (loop) | “nếu–thì” | `ding` → “hết đường trốn” | slide (`swish`) |
+
 ## Motion picks
 stagger (e01) · two-column compare (e02) · strikethrough-replace (e03, e04) · count-up + bar-grow (e05) · underline-draw (e06) · scale-pop ✕ + stagger fixes (e07) · push-transition giữa các section · hard-shadow-pop bubble + ding (b12, câu cuối nối lại hook).
 

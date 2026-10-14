@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.8
+version: 3.9
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.8, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.9, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -152,7 +152,14 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - SFX nhấn gồm pop, ding, tick, click, snap, pen, stamp, rise. Tự tổng hợp (luật 22), nhỏ hơn giọng khoảng 12–16 dB, chỉ đặt ở điểm nhấn chứ không phải mọi chuyển động nhỏ, tối đa 3 cái mỗi section.
     - check-rules (rule-51): mỗi section explainer có ≥ 1 hit gắn SFX; SFX phải có trong SOURCES.md; không có 2 SFX nhấn cách nhau dưới 0.25s.
 
+52. **Lên kế hoạch hiệu ứng ngay ở bước kịch bản, duyệt ở gate 1 trước khi render (DL-044, L-019):**
+    - Trong `script-final.md` phải có mục `## Bảng hiệu ứng`, mỗi beat một dòng gồm: hiệu ứng/ẩn dụ hình ảnh gắn với nội dung (cả beat comic lẫn explainer), chữ đang nói mà hiệu ứng gắn vào, SFX nhấn kèm chữ trúng điểm nhấn, kiểu chuyển cảnh kèm SFX. Bảng sinh từ spec bằng `python3 pipeline/scripts/fx-table.py <clip>/final/spec.json --write`.
+    - `spec.json` có đủ các trường này ngay từ bản nháp: mỗi scene/section có `fx: {visual, word}`, section explainer có `hits: [{id, f, sfx, word}]`, scene có `sfx: [{name, atLine, offset, word}]`, cấp clip có `transition_sfx: {part, scene}`.
+    - Hiệp duyệt bảng này ở gate 1. Chưa duyệt thì không render.
+    - check-rules (rule-52) chặn ngay từ trước khi render (không cần `--final`) nếu: beat thiếu mô tả motion, chữ gắn hiệu ứng không có trong lời thoại, explainer không có hit + SFX, thiếu `transition_sfx`, hoặc bảng thiếu beat.
+
 ## Changelog
+- **v3.9, 14/10/2026:** luật 52, bảng hiệu ứng chi tiết ở bước kịch bản, duyệt ở gate 1 trước khi render (DL-044, L-019).
 - **v3.8, 14/10/2026:** luật 51, motion gắn với nội dung + SFX nhấn ở điểm animation trọng tâm (DL-043).
 - **v3.7, 14/10/2026:** luật 50, chuyển cảnh nào cũng có SFX và luôn có lớp nền ambience (DL-042).
 - **v3.6, 14/10/2026:** markup giọng tự nhiên (từ đệm, kho từ đệm theo nhân vật, ngập ngừng, kéo tiểu từ, pause từng dấu, câu chen), bảng tiểu từ đo bằng STT + F0, giới hạn tần suất từ đệm (luật 46; DL-039, L-017).

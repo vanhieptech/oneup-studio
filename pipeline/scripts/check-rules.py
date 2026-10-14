@@ -234,6 +234,26 @@ def main():
             (ok if any(m["name"] == "ambience" for m in mixs) else err)("rule-50", "ambience bed under whole clip")
             for n in sorted({m["name"] for m in mixs}):
                 if n not in src: err("rule-22", f"sfx '{n}' missing in assets/sfx/SOURCES.md")
+    # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
+    ts = spec.get("transition_sfx") or {}
+    TRN = {"whoosh-soft", "swish", "whoosh"}
+    (ok if ts.get("part") in TRN and ts.get("scene") in TRN else err)("rule-52", f"transition_sfx planned: {ts or 'missing'}")
+    def _norm(x): return re.sub(r"[^\w\s]", "", x.lower())
+    for p_ in spec["parts"]:
+        for x in p_.get("scenes", p_.get("sections", [])):
+            fx = x.get("fx") or {}; txt = _norm(" ".join(l["text"] for l in x["lines"]))
+            (ok if len(fx.get("visual", "")) >= 15 else err)("rule-52", f"{x['id']}: motion/visual described" + ("" if fx.get("visual") else " — MISSING fx.visual"))
+            w = fx.get("word", ""); (ok if w and _norm(w) in txt else err)("rule-52", f"{x['id']}: effect tied to spoken word “{w}”" + ("" if w and _norm(w) in txt else " — not in line text"))
+            accs = [h for h in x.get("hits", []) if h.get("sfx")] + [{"sfx": y["name"], "word": y.get("word")} for y in x.get("sfx", [])]
+            for h in accs:
+                if not h.get("word") or _norm(h["word"]) not in txt: err("rule-52", f"{x['id']}: accent `{h['sfx']}` hit word “{h.get('word')}” not in line text")
+            if p_["engine"] == "hyperframes": (ok if any(h.get("sfx") for h in x.get("hits", [])) else err)("rule-52", f"{x['id']}: explainer has ≥1 planned hit + SFX")
+    sfm = os.path.join(fdir, "script-final.md"); stx = open(sfm).read() if os.path.exists(sfm) else ""
+    tab = stx.split("## Bảng hiệu ứng", 1)[1] if "## Bảng hiệu ứng" in stx else ""
+    ids = [x["id"] for p_ in spec["parts"] for x in p_.get("scenes", p_.get("sections", []))]
+    miss = [i for i in ids if f"| {i} |" not in tab]
+    (ok if tab and not miss else err)("rule-52", "script-final.md effects table covers every beat" + (f" — missing {miss or 'table'} (run pipeline/scripts/fx-table.py --write)" if (miss or not tab) else ""))
+    (ok if not tab or "**THIẾU**" not in tab else err)("rule-52", "effects table has no **THIẾU** cells")
     # rule-51 (DL-043): every explainer section has ≥1 marked hit with an accent SFX, mixed at the hit time
     if final and os.path.exists(tpath):
         tj = json.load(open(tpath)); hits = tj.get("hits", []); mixs = tj.get("sfx_mix", [])

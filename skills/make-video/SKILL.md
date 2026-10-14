@@ -80,6 +80,24 @@ python3 pipeline/scripts/check-rules.py <clip>/ --stt                          #
 ## 5. Review gate 1 (Hiệp): script
 Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
 
+
+**Effects table, required at gate 1 (rule 52, DL-044, L-019).** Plan every effect *before* any render, so late requests don't cost extra re-renders. When drafting `spec.json`, fill in:
+- `fx: {visual, word}` on every scene and section. `visual` is a content-specific metaphor or motion, including comic beats. `word` is the spoken word it lands on.
+- `hits: [{id, f, sfx, word}]` on every explainer section (≥1, ≤3).
+- `sfx: [{name, atLine, offset, word}]` on comic accents.
+- `transition_sfx: {part: "whoosh-soft", scene: "swish"}` at clip level.
+
+Then run `python3 pipeline/scripts/fx-table.py <clip>/final/spec.json --write`. It writes this section into `script-final.md`:
+
+```
+## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
+| Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
+|---|---|---|---|---|---|
+| e05 | hyperframes | Số 94 đếm lên, thước đầy tới vạch d = 0.65 | “chín mươi tư” | `rise` → “chín mươi tư”; `ding` → “vừa tới lớn” | push (`swish`) |
+```
+
+`check-rules <clip>/` (pre-render, no `--final`) blocks with rule-52 if any beat lacks `fx`, a word isn't in the line, an explainer has no hit+SFX, `transition_sfx` is missing, or the table misses a beat. Hiệp approves the table along with the script. Do not render before that.
+
 ## 6. Render + self-review
 ```bash
 python3 pipeline/scripts/build-final.py <clip>/final/spec.json        # voice → plans → Remotion + HyperFrames → join, SFX, grain, −14 LUFS

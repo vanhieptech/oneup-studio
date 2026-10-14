@@ -62,12 +62,14 @@
             {
               "name": "pop",
               "atLine": 0,
-              "offset": 0.0
+              "offset": 0.0,
+              "word": "Kế hoạch"
             },
             {
               "name": "tick",
               "atLine": 0,
-              "offset": 0.7
+              "offset": 0.7,
+              "word": "TOEIC"
             }
           ],
           "lines": [
@@ -88,7 +90,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Comic: phòng ngủ tối, đồng hồ 11:48 PM, trăng + zzz; camera push-in, bong bóng thoại pop",
+            "word": "mai học"
+          }
         },
         {
           "id": "b02",
@@ -140,9 +146,14 @@
             {
               "name": "click",
               "atLine": 0,
-              "offset": 0.9
+              "offset": 0.9,
+              "word": "code"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Comic: Hiệp gõ phím rồi dừng tay, gục xuống (squash-stretch), mặt chuyển buồn",
+            "word": "code"
+          }
         },
         {
           "id": "b03",
@@ -197,9 +208,14 @@
             {
               "name": "snap",
               "atLine": 0,
-              "offset": 2.9
+              "offset": 2.9,
+              "word": "nếu"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Comic: chuyển cảnh iris sang giấy trắng, Hiệp ngẩng lên nhận ra, bong bóng thoại 'nếu… thì…' pop",
+            "word": "nếu"
+          }
         }
       ]
     },
@@ -242,19 +258,26 @@
             {
               "id": "clock",
               "f": 0.22,
-              "sfx": "tick"
+              "sfx": "tick",
+              "word": "mấy giờ"
             },
             {
               "id": "lock",
               "f": 0.72,
-              "sfx": "snap"
+              "sfx": "snap",
+              "word": "thì làm gì"
             },
             {
               "id": "check",
               "f": 0.88,
-              "sfx": "ding"
+              "sfx": "ding",
+              "word": "làm gì"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "4 thẻ When/Where/Cue/Then bay vào từ 4 phía như mảnh ghép, kim đồng hồ quay, chuông rung, mũi tên giữa pop, cả câu khoá lại, dấu ✓ tự vẽ",
+            "word": "ý định thực hiện"
+          }
         },
         {
           "id": "e02",
@@ -285,14 +308,20 @@
             {
               "id": "drain",
               "f": 0.55,
-              "sfx": "rise"
+              "sfx": "rise",
+              "word": "mệt"
             },
             {
               "id": "nodebate",
               "f": 0.85,
-              "sfx": "stamp"
+              "sfx": "stamp",
+              "word": "cãi"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "2 cột Now/Later: pin xanh đầy và pin cạn dần sang đỏ; bong bóng 'Hay để mai…?' bị đóng dấu NO DEBATE",
+            "word": "tỉnh táo"
+          }
         },
         {
           "id": "e03",
@@ -323,14 +352,20 @@
             {
               "id": "strike",
               "f": 0.12,
-              "sfx": "pen"
+              "sfx": "pen",
+              "word": "Ví dụ"
             },
             {
               "id": "lid",
               "f": 0.38,
-              "sfx": "click"
+              "sfx": "click",
+              "word": "gập laptop"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Bút gạch 'Mai học'; nắp laptop gập lại + tag 9:00 PM; thẻ vé IF/THEN trượt vào",
+            "word": "gập laptop"
+          }
         },
         {
           "id": "e04",
@@ -361,14 +396,20 @@
             {
               "id": "strike",
               "f": 0.12,
-              "sfx": "pen"
+              "sfx": "pen",
+              "word": "Hoặc"
             },
             {
               "id": "flip",
               "f": 0.35,
-              "sfx": "tick"
+              "sfx": "tick",
+              "word": "tám giờ"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Bút gạch 'Viết sau'; lịch lật trang sang 'Tuesday 8:00 AM'; thẻ IF/THEN",
+            "word": "sáng thứ ba"
+          }
         },
         {
           "id": "e05",
@@ -403,14 +444,20 @@
             {
               "id": "count",
               "f": 0.02,
-              "sfx": "rise"
+              "sfx": "rise",
+              "word": "chín mươi tư"
             },
             {
               "id": "mark",
               "f": 0.62,
-              "sfx": "ding"
+              "sfx": "ding",
+              "word": "vừa tới lớn"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Số 94 đếm lên, thước small/medium/large đầy dần tới vạch d = 0.65 (marker pulse), có nguồn trích dẫn",
+            "word": "chín mươi tư"
+          }
         },
         {
           "id": "e06",
@@ -445,19 +492,26 @@
             {
               "id": "i1",
               "f": 0.12,
-              "sfx": "pop"
+              "sfx": "pop",
+              "word": "bắt tay làm"
             },
             {
               "id": "i2",
               "f": 0.42,
-              "sfx": "pop"
+              "sfx": "pop",
+              "word": "chen ngang"
             },
             {
               "id": "i3",
               "f": 0.72,
-              "sfx": "pop"
+              "sfx": "pop",
+              "word": "dừng việc"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "3 icon play / khiên / stop xoay vào đúng lúc nói 3 tác dụng, gạch chân vẽ tay; thông báo Messenger pop rồi trượt đi",
+            "word": "bắt tay làm"
+          }
         },
         {
           "id": "e07",
@@ -494,14 +548,20 @@
             {
               "id": "stamp",
               "f": 0.3,
-              "sfx": "stamp"
+              "sfx": "stamp",
+              "word": "rảnh thì học"
             },
             {
               "id": "fixed",
               "f": 0.82,
-              "sfx": "ding"
+              "sfx": "ding",
+              "word": "việc vừa xong"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Con dấu đỏ '✕ NOT A CUE' đè lên 'Rảnh thì học'; 3 thẻ TIME / PLACE / AFTER (tín hiệu đúng) trượt vào",
+            "word": "rảnh thì học"
+          }
         }
       ]
     },
@@ -551,9 +611,14 @@
             {
               "name": "tick",
               "atLine": 0,
-              "offset": 3.2
+              "offset": 3.2,
+              "word": "một, hai phút"
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Comic: Hiệp giơ một ngón tay nhắc ý; bong bóng thoại nhấn 'thật sự muốn' và 'một, hai phút'",
+            "word": "thật sự muốn"
+          }
         },
         {
           "id": "b12",
@@ -577,7 +642,8 @@
             {
               "name": "ding",
               "atLine": 1,
-              "offset": 0.1
+              "offset": 0.1,
+              "word": "hết đường trốn"
             }
           ],
           "lines": [
@@ -620,10 +686,18 @@
                 }
               }
             }
-          ]
+          ],
+          "fx": {
+            "visual": "Comic: chuyển cảnh slide sang lưới, Hiệp cười chỉ vào người xem, câu cuối nối lại hook 'mai' (loop)",
+            "word": "nếu–thì"
+          }
         }
       ]
     }
   ],
-  "length_exception": "DL-041 (info-dense, ≤70s, Hiệp allowed 2026-10-14)"
+  "length_exception": "DL-041 (info-dense, ≤70s, Hiệp allowed 2026-10-14)",
+  "transition_sfx": {
+    "part": "whoosh-soft",
+    "scene": "swish"
+  }
 }
