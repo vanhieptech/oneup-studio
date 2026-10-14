@@ -5,6 +5,7 @@
   "week": 1,
   "theme": "dark",
   "pillar": "1 Làm ít, xong nhiều",
+  "story": "S-02 Omi feature (Hiệp xác nhận 14/10, DL-047)",
   "trend": "‘vừa than bị dí deadline vừa lướt TikTok’ (vtcnews.vn; câu chung, không phải chuyện thật của Hiệp)",
   "revisions": [
     {
@@ -23,15 +24,68 @@
     "series": "Làm ít, xong nhiều",
     "ep": 2,
     "hero": [
-      "LƯỜI",
-      "NÉ KHÓ CHỊU"
+      "LƯỜI?",
+      "ĐANG NÉ!"
     ],
     "accent": 1,
     "strike": 0,
     "expression": "sad",
     "action": "reacting",
+    "emote": "!",
     "tilt": -5
   },
+  "cover_options": [
+    {
+      "hero": [
+        "LƯỜI?",
+        "ĐANG NÉ!"
+      ],
+      "picked": true
+    },
+    {
+      "hero": [
+        "HOÃN MÃI",
+        "VÌ SỢ"
+      ]
+    },
+    {
+      "hero": [
+        "TỰ MẮNG",
+        "VÔ ÍCH"
+      ]
+    }
+  ],
+  "hook": {
+    "text": "OMI FEATURE: HOÃN. HOÃN. HOÃN.",
+    "scenes": [
+      "b01",
+      "b01b",
+      "b01c"
+    ]
+  },
+  "engagement": [
+    {
+      "type": "relatable-question",
+      "beat": "e01",
+      "text": "Nghe quen không?"
+    },
+    {
+      "type": "save-prompt",
+      "beat": "b11",
+      "text": "Lưu lại, lần sau hoãn thì mở ra."
+    },
+    {
+      "type": "comment-challenge",
+      "beat": "b12",
+      "text": "Comment một chữ."
+    },
+    {
+      "type": "loop",
+      "beat": "b12",
+      "text": "Còn tính năng Omi?",
+      "hook_word": "Omi"
+    }
+  ],
   "parts": [
     {
       "id": "A",
@@ -43,80 +97,13 @@
           "beat": "clip-02.b01",
           "part": "hook",
           "background": "desk",
-          "framing": "medium",
-          "push": 0.04,
+          "framing": "closeup",
+          "push": 0.14,
           "transition": "cut",
           "cast": [
             {
               "id": "hiep",
-              "x": 0.42,
-              "facing": "right",
-              "pose": "sitting",
-              "action": "typing",
-              "expression": "focused"
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "neutral",
-              "text": "Deadline sáng mai. Mở file báo cáo, năm giây sau, mình đang lướt TikTok.",
-              "en": "Deadline tomorrow. Open the report… five seconds later: TikTok.",
-              "hl": [
-                0,
-                8
-              ],
-              "phrases": [
-                {
-                  "t": "Deadline sáng mai."
-                },
-                {
-                  "t": "Mở file báo cáo,"
-                },
-                {
-                  "t": "năm giây sau, mình đang lướt TikTok."
-                }
-              ],
-              "set": {
-                "hiep": {
-                  "action": "idle",
-                  "expression": "confused"
-                }
-              }
-            }
-          ],
-          "fx": {
-            "visual": "Comic bàn tối: màn hình laptop 'report.docx' trống, tay Hiệp trượt sang điện thoại, màn hình điện thoại sáng lên; camera push-in",
-            "word": "TikTok"
-          },
-          "sfx": [
-            {
-              "name": "click",
-              "atLine": 0,
-              "offset": 0.4,
-              "word": "Mở file"
-            },
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 2.2,
-              "word": "TikTok"
-            }
-          ],
-          "narration": "11:20 PM"
-        },
-        {
-          "id": "b02",
-          "beat": "clip-02.b02",
-          "part": "struggle",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.04,
-          "transition": "slide",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.42,
+              "x": 0.45,
               "facing": "right",
               "pose": "sitting",
               "action": "idle",
@@ -127,30 +114,210 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Rồi tự mắng: mình lười quá.",
-              "en": "Then I scold myself: “I'm so lazy.”",
+              "text": "Tính năng Omi.",
+              "en": "The Omi feature.",
               "hl": [
-                6
+                1
               ],
               "phrases": [
                 {
-                  "t": "Rồi tự mắng:"
-                },
-                {
-                  "t": "{ừm} mình lười quá."
+                  "t": "Tính năng Omi."
                 }
               ]
             }
           ],
           "fx": {
-            "visual": "Comic: Hiệp gục xuống bàn, đám mây đen nhỏ trên đầu với chữ 'LƯỜI' đè xuống (squash)",
-            "word": "lười"
+            "visual": "Hook cut 1: zoom mạnh vào màn hình laptop 'Omi feature · TODO', chữ hook to ngay frame 0; dấu đỏ POSTPONED đóng xuống",
+            "word": "Omi"
           },
           "sfx": [
             {
               "name": "stamp",
               "atLine": 0,
-              "offset": 1.4,
+              "offset": 0.0,
+              "word": "Omi"
+            }
+          ],
+          "narration": "OMI FEATURE: HOÃN. HOÃN. HOÃN."
+        },
+        {
+          "id": "b01b",
+          "beat": "clip-02.b01",
+          "part": "hook",
+          "background": "desk",
+          "framing": "closeup",
+          "push": 0.1,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.45,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "confused"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Hoãn. Hoãn. Lại hoãn.",
+              "en": "Postponed. Postponed. Again.",
+              "hl": [
+                2
+              ],
+              "phrases": [
+                {
+                  "t": "Hoãn."
+                },
+                {
+                  "t": "Hoãn."
+                },
+                {
+                  "t": "Lại hoãn."
+                }
+              ]
+            }
+          ],
+          "fx": {
+            "visual": "Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp",
+            "word": "hoãn"
+          },
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "Hoãn"
+            },
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.45,
+              "word": "Hoãn"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.95,
+              "word": "Lại hoãn"
+            }
+          ]
+        },
+        {
+          "id": "b01c",
+          "beat": "clip-02.b01",
+          "part": "hook",
+          "background": "desk",
+          "framing": "closeup",
+          "push": 0.08,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.45,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "sad"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Mình ghét bản thân ghê.",
+              "en": "I kind of hate myself.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Mình ghét bản thân ghê."
+                }
+              ]
+            }
+          ],
+          "fx": {
+            "visual": "Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ GHÉT BẢN THÂN rung",
+            "word": "ghét bản thân"
+          },
+          "sfx": [
+            {
+              "name": "rise",
+              "atLine": 0,
+              "offset": 0.2,
+              "word": "ghét"
+            }
+          ]
+        },
+        {
+          "id": "b02",
+          "beat": "clip-02.b02",
+          "part": "struggle",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.42,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "typing",
+              "expression": "sad"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Mở code ra, năm giây sau đã lướt TikTok. Chán nản, tội lỗi, rồi tự mắng: mình lười quá.",
+              "en": "Open the code… five seconds later: TikTok. Drained, guilty: “I'm so lazy.”",
+              "hl": [
+                6,
+                8,
+                11
+              ],
+              "phrases": [
+                {
+                  "t": "Mở code ra,"
+                },
+                {
+                  "t": "năm giây sau đã lướt TikTok."
+                },
+                {
+                  "t": "Chán nản, tội lỗi,"
+                },
+                {
+                  "t": "rồi tự mắng: {ừm} mình lười quá."
+                }
+              ],
+              "set": {
+                "hiep": {
+                  "action": "idle",
+                  "expression": "sad"
+                }
+              }
+            }
+          ],
+          "fx": {
+            "visual": "Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash)",
+            "word": "tội lỗi"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 1.6,
+              "word": "TikTok"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 4.2,
               "word": "lười"
             }
           ]
@@ -231,21 +398,25 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Trì hoãn là cách né cảm giác khó chịu: chán, sợ làm dở, hay không biết bắt đầu.",
-              "en": "Procrastination = dodging discomfort: boredom, fear of doing badly, no clear start.",
+              "text": "Trì hoãn là né cảm giác khó chịu: chán, sợ làm dở, hay không biết bắt đầu. Nghe quen không?",
+              "en": "Procrastination = dodging discomfort: boredom, fear of failing, no clear start. Sound familiar?",
               "hl": [
                 2,
-                3
+                3,
+                12
               ],
               "phrases": [
                 {
-                  "t": "Trì hoãn là cách né cảm giác khó chịu:"
+                  "t": "Trì hoãn là né cảm giác khó chịu:"
                 },
                 {
                   "t": "chán, sợ làm dở,"
                 },
                 {
                   "t": "hay không biết bắt đầu."
+                },
+                {
+                  "t": "Nghe quen không?"
                 }
               ]
             }
@@ -278,7 +449,7 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Gộp sáu trăm chín mươi mốt hệ số tương quan: việc càng khó chịu, càng thấy mình không làm được, càng dễ hoãn.",
+              "text": "Gộp sáu trăm chín mươi mốt hệ số tương quan: việc càng khó chịu, càng thấy mình kém, càng dễ hoãn.",
               "en": "691 correlations: the nastier the task and the lower your confidence, the more you delay.",
               "hl": [
                 0,
@@ -293,7 +464,7 @@
                   "t": "việc càng khó chịu,"
                 },
                 {
-                  "t": "càng thấy mình không làm được,"
+                  "t": "càng thấy mình kém,"
                 },
                 {
                   "t": "càng dễ hoãn."
@@ -329,7 +500,7 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Vì phần thưởng thì ở xa, còn cái khó chịu ở ngay bây giờ. Nên điện thoại thắng.",
+              "text": "Vì phần thưởng ở xa, cái khó chịu ở ngay bây giờ. Nên điện thoại thắng.",
               "en": "Because the reward is far away, the discomfort is right now. So the phone wins.",
               "hl": [
                 4,
@@ -338,10 +509,10 @@
               ],
               "phrases": [
                 {
-                  "t": "Vì phần thưởng thì ở xa,"
+                  "t": "Vì phần thưởng ở xa,"
                 },
                 {
-                  "t": "còn cái khó chịu ở ngay bây giờ."
+                  "t": "cái khó chịu ở ngay bây giờ."
                 },
                 {
                   "t": "Nên điện thoại thắng."
@@ -516,7 +687,7 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Lỗi hay gặp: mắng mình rồi gồng. Mắng xong, việc còn khó chịu hơn.",
+              "text": "Lỗi hay gặp: mắng mình rồi gồng. Mắng xong, việc càng khó chịu.",
               "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
               "hl": [
                 0,
@@ -531,7 +702,7 @@
                   "t": "mắng mình rồi gồng."
                 },
                 {
-                  "t": "Mắng xong, việc còn khó chịu hơn."
+                  "t": "Mắng xong, việc càng khó chịu."
                 }
               ]
             }
@@ -547,7 +718,7 @@
               "id": "worse",
               "f": 0.85,
               "sfx": "rise",
-              "word": "khó chịu hơn"
+              "word": "càng khó chịu"
             }
           ],
           "fx": {
@@ -583,30 +754,30 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Lưu ý: đây là nghiên cứu tương quan, chỉ cho thấy hướng, chưa phải nguyên nhân.",
-              "en": "Note: correlational research. A pattern, not proof of cause.",
+              "text": "Lưu ý: nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra.",
+              "en": "Note: correlational, a pattern only. Save this for the next time you stall.",
               "hl": [
                 1,
-                4
+                5
               ],
               "phrases": [
                 {
                   "t": "Lưu ý:"
                 },
                 {
-                  "t": "đây là nghiên cứu tương quan,"
+                  "t": "nghiên cứu này là tương quan,"
                 },
                 {
-                  "t": "chỉ cho thấy hướng,"
+                  "t": "chỉ cho thấy hướng."
                 },
                 {
-                  "t": "chưa phải nguyên nhân."
+                  "t": "Lưu lại, lần sau hoãn thì mở ra."
                 }
               ]
             }
           ],
           "fx": {
-            "visual": "Comic: Hiệp giơ ngón tay nhắc ý, bên cạnh tấm bảng nhỏ 'tương quan ≠ nhân quả' với hai mũi tên",
+            "visual": "Comic: Hiệp giơ ngón tay, bảng nhỏ 'tương quan khác nhân quả'; icon bookmark nảy lên ở chữ 'lưu lại'",
             "word": "tương quan"
           },
           "sfx": [
@@ -615,6 +786,12 @@
               "atLine": 0,
               "offset": 1.0,
               "word": "tương quan"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 3.4,
+              "word": "Lưu lại"
             }
           ]
         },
@@ -641,10 +818,10 @@
               "speaker": "hiep",
               "emotion": "happy",
               "text": "Việc bạn đang hoãn khó chịu chỗ nào? Comment một chữ.",
-              "en": "What's the bad part of the task you're avoiding? One word in the comments.",
+              "en": "What feels bad about the task you're avoiding? One word in the comments.",
               "hl": [
                 2,
-                9
+                8
               ],
               "phrases": [
                 {
@@ -661,17 +838,17 @@
             {
               "speaker": "hiep",
               "emotion": "happy",
-              "text": "Lần sau mở TikTok, hỏi câu đó trước.",
-              "en": "Next time you open TikTok, ask that first.",
+              "text": "Còn tính năng Omi? Mình đi hỏi câu đó đây.",
+              "en": "And the Omi feature? Asking myself right now.",
               "hl": [
-                5
+                2
               ],
               "phrases": [
                 {
-                  "t": "Lần sau mở TikTok,"
+                  "t": "Còn tính năng Omi?"
                 },
                 {
-                  "t": "hỏi câu đó trước."
+                  "t": "Mình đi hỏi câu đó đây."
                 }
               ],
               "set": {
@@ -682,8 +859,8 @@
             }
           ],
           "fx": {
-            "visual": "Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối nối lại hook 'mở TikTok' (loop), điện thoại nhỏ hiện lại góc khung",
-            "word": "một chữ"
+            "visual": "Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại màn hình 'Omi feature' như hook (loop), Hiệp mở laptop",
+            "word": "Omi"
           },
           "sfx": [
             {

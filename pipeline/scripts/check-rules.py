@@ -268,6 +268,51 @@ def main():
         (ok if cv.get("direction") == "a" and cv.get("hero") and cv.get("series") and cv.get("ep") else err)("rule-54", f"spec.cover props (template A) {'present' if cv else 'MISSING'}")
         (ok if props and okc else err)("L-020", "cover.png rendered from Cover template (props json present)" if okc else
             f"cover.png is not a Cover-template render ({len(props)} template direction(s) in cover/ — render cover from template A: npx remotion still src/index.ts Cover final/cover.png --props=spec.cover)")
+    # rule-55 (DL-051): hook 0–3s rapid, dramatic, emotion-dense (clips before 02 are legacy → warn)
+    e55 = warn if "clip-01" in clip_dir else err
+    hk = spec.get("hook") or {}; A0 = spec["parts"][0]; scs = A0.get("scenes", [])
+    hsc = [x for x in scs if x["id"] in hk.get("scenes", [])]
+    (ok if hk.get("text") and scs and scs[0].get("narration") == hk["text"] else e55)("rule-55", "on-screen hook text on frame 0 (first scene narration = spec.hook.text)")
+    if hsc:
+        fw = len(re.sub(r"\{[^}]*\}|\*", "", hsc[0]["lines"][0]["text"]).split())
+        (ok if fw <= 6 else e55)("rule-55", f"first spoken clause {fw} words (≤ 6, punchy)")
+        t = 0.12; ev = []; first_sp = 0.12
+        tl_ = {}
+        if os.path.exists(tpath):
+            for l in json.load(open(tpath)).get("lines", []): tl_.setdefault(l["scene"], []).append(l)
+        for k, x in enumerate(hsc):
+            if k: ev.append(("cut", t)); t += 0.06
+            st = t
+            for x2 in x.get("sfx", []): ev.append(("hit", st + x2.get("offset", 0)))
+            d = sum((tl_[x["id"]][i]["dur"] if x["id"] in tl_ and i < len(tl_[x["id"]]) else len(re.sub(r"\{[^}]*\}|\*", "", l["text"]).split()) * 0.27 + 0.3) for i, l in enumerate(x["lines"]))
+            t = st + d + 0.15
+        if tl_ and hsc[0]["id"] in tl_: first_sp = tl_[hsc[0]["id"]][0]["t"]
+        in3 = [e for e in ev if e[1] <= 3.0]; fv = min([e[1] for e in ev] or [99])
+        (ok if first_sp <= 0.3 else e55)("rule-55", f"first spoken word at {first_sp:.2f}s (≤ 0.3)")
+        (ok if fv <= 1.0 else e55)("rule-55", f"first visual change/hit at {fv:.2f}s (≤ 1.0)")
+        nc = sum(1 for e in in3 if e[0] == "cut")
+        (ok if len(in3) >= 2 and nc >= 1 else e55)("rule-55", f"0–3s: {nc} cut(s) + {len(in3) - nc} hit(s) (need ≥ 2 total, ≥ 1 cut)" + ("" if os.path.exists(tpath) else " · estimated"))
+        emo = [l["emotion"] for x in hsc for l in x["lines"]]
+        (ok if any(e in ("sad", "surprised", "angry", "scared", "confused") for e in emo) else warn)("rule-55", f"hook voice emotions {emo} (dramatic)")
+    else: e55("rule-55", "spec.hook.scenes missing")
+    # rule-56 (DL-052): subtle engagement devices, no begging
+    eng = spec.get("engagement") or []; types = {e.get("type") for e in eng}
+    btxt = {x["id"]: " ".join(l["text"] for l in x["lines"]) for p_ in spec["parts"] for x in p_.get("scenes", p_.get("sections", []))}
+    def _n(x): return re.sub(r"[^\w\s]", "", x.lower())
+    (ok if len(types & {"comment-challenge", "save-prompt", "relatable-question", "loop"}) >= 3 and {"comment-challenge", "loop"} <= types else e55)("rule-56", f"engagement devices {sorted(t for t in types if t)} (≥3 incl. comment-challenge + loop)")
+    for e in eng:
+        if _n(e.get("text", "")) not in _n(btxt.get(e.get("beat"), "")): e55("rule-56", f"{e.get('type')} text not in beat {e.get('beat')}: “{e.get('text')}”")
+        if e.get("type") == "loop" and hsc and _n(e.get("hook_word", "")) not in _n(" ".join(btxt.get(x["id"], "") for x in hsc)): e55("rule-56", "loop hook_word not in hook")
+    beg = [k for k, v in btxt.items() if re.search(r"(like|follow|thả tim|share|chia sẻ) (đi|nha|giùm|giúp)|nhớ (like|follow|thả tim)|xin (like|follow)", v.lower())]
+    (ok if not beg else e55)("rule-56", "no begging for likes/follows" + (f": {beg}" if beg else ""))
+    # rule-57 (DL-053): TikTok-native trend signals
+    tsp = os.path.join(clip_dir, "final", "trend-signals.md")
+    if "clip-01" in clip_dir: pass
+    elif not os.path.exists(tsp): warn("rule-57", "final/trend-signals.md missing")
+    else:
+        ts = open(tsp, encoding="utf8").read()
+        (ok if re.search(r"http\S+.*\d[\d.,]*\s*(M\s*)?view", ts) else warn)("rule-57", "trend-signals.md has clip URLs with view counts")
+        if "proxy" in ts.lower() and "tiktok.com/@" not in ts: warn("rule-57", "only proxy signals, no TikTok clip URL yet → verify in app before posting")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}

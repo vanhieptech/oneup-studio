@@ -90,7 +90,8 @@ def remotion_plan(spec, part):
     scenes = []; timing = []
     for si, sc in enumerate(part["scenes"]):
         tr = sc.get("transition", "cut"); trd = 0.0 if tr == "cut" else 0.4
-        t = 0.12 if (si == 0 and part is spec["parts"][0]) else max(0.3, trd + 0.15)
+        hook = sc.get("part") == "hook"  # rule-55: rapid hook, near-zero lead + short tail on cut scenes
+        t = 0.12 if (si == 0 and part is spec["parts"][0]) else (0.06 if hook and tr == "cut" else max(0.3, trd + 0.15))
         cast = {c["id"]: {"characterId": c["id"], "x": c["x"], "pose": c.get("pose", "standing"), "action": c.get("action", "idle"),
                           "expression": c.get("expression", "neutral"), "facing": c.get("facing", "right"), "enter": c.get("enter", "none"),
                           "expressionChanges": [], "actionChanges": []} for c in sc["cast"]}
@@ -105,7 +106,7 @@ def remotion_plan(spec, part):
             segs.append({"text": l["en"], "start": round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})
             timing.append({"beat": sc["beat"], "scene": sc["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": l["_dur"]})
             t = en + (0.2 if li < len(sc["lines"]) - 1 else 0)
-        dur = round(t + 0.45, 3)
+        dur = round(t + (0.15 if hook else 0.45), 3)
         dlg[-1]["end"] = min(dlg[-1]["end"], dur); segs[-1]["end"] = min(segs[-1]["end"], round(dur - 0.05, 3))
         for i in range(len(segs) - 1): segs[i]["end"] = min(segs[i]["end"], segs[i + 1]["start"])
         scene = {"id": sc["id"], "beat": sc["beat"], "duration": dur, "background": {"kind": sc["background"]},
@@ -113,7 +114,7 @@ def remotion_plan(spec, part):
                  "transition": {"type": tr, "duration": trd or 0.4}, "characters": list(cast.values()), "dialogue": dlg,
                  "caption": {"text": " ".join(s["text"] for s in segs), "start": segs[0]["start"], "segments": segs},
                  "sfx": [{"name": x["name"], "at": round(max(0, dlg[x["atLine"]]["start"] + x.get("offset", 0)), 3)} for x in sc.get("sfx", [])]}
-        if sc.get("narration"): scene["narration"] = {"text": sc["narration"], "start": 0.05}
+        if sc.get("narration"): scene["narration"] = {"text": sc["narration"], "start": 0.0 if (si == 0 and part is spec["parts"][0]) else 0.05}  # rule-55: hook text on frame 0
         scenes.append(scene)
     plan = {"version": 1, "id": f"{spec['id']}-{part['id']}", "title": spec["title"], "meta": {"clip": spec["clip"], "week": spec["week"], "source": "final/spec.json"},
             "video": {"width": 1080, "height": 1920, "fps": FPS, "theme": spec["theme"]}, "scenes": scenes}

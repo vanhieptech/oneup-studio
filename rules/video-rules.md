@@ -6,7 +6,7 @@ updated: 2026-10-13
 version: 3.11
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.11, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.13, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -180,7 +180,26 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Props của cover nằm trong `spec.json → cover` ngay từ bước kịch bản, và bản render nháp của cover phải có trong gói gate 1.
     - check-rules: `rule-54` (props trong spec, direction "a") và `L-020` (cover.png trùng md5 với bản render template) đều chặn khi chạy `--final`.
 
+55. **Hook 0–3s dồn dập, kịch tính, đậm cảm xúc (DL-051):**
+    - 0–3s phải có: chữ hook to ngay frame 0 (`spec.hook.text` = narration cảnh đầu), lời đầu ≤ 0.3s, đổi hình/SFX đầu ≤ 1s, ≥ 2 cut/hit (ít nhất 1 cut) trong 3s đầu.
+    - Câu ngắn, cụt (vế đầu ≤ 6 chữ), lặp nhịp ("Hoãn. Hoãn. Lại hoãn."), pattern interrupt, zoom/push mạnh, giọng cảm xúc rõ (buồn/sốc/giận), không mở bằng câu dẫn trung tính.
+    - Cảnh hook đánh dấu `part: "hook"`, chuyển `cut`, lead 0.06s, đuôi 0.15s (build-final).
+    - check-rules: `rule-55` (chặn; trước render ước tính, `--final` đo từ timing.json).
+56. **Tương tác khéo, không xin (DL-052):**
+    - Mỗi clip có ≥ 3 kiểu trong `spec.engagement`, bắt buộc có thử thách comment 1 chữ + loop về hook; thêm câu hỏi đồng cảm giữa clip ("Nghe quen không?") và/hoặc nhắc lưu ("Lưu lại, lần sau … mở ra").
+    - Loop: câu cuối nhắc lại từ khoá hook (`hook_word`). Bình luận ghim nối tiếp thử thách comment.
+    - Cấm xin: "like đi", "follow nha", "nhớ like", "xin follow", "thả tim đi"…
+    - check-rules: `rule-56` (chặn).
+
+57. **Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053):**
+    - Lớp trend của mỗi clip lấy từ clip TikTok về cùng chủ đề, xếp theo view + comment (VN trước). Chép lại cả câu nói/format/sound/meme lặp lại trong comment.
+    - Thứ tự nguồn: trang tìm kiếm/tag TikTok công khai → báo/blog về trend TikTok VN → YouTube Shorts/video VN làm proxy (khi TikTok chặn). Không dùng TikTok Creative Center.
+    - Mỗi clip có `final/trend-signals.md`: URL clip, view, comment, ngày, dùng ở beat nào. Ghi rõ trend không dùng và lý do (brand-safe, bản quyền sound, lệch tone). Số liệu proxy phải ghi là proxy.
+    - check-rules: `rule-57` (cảnh báo nếu thiếu trend-signals.md hoặc không có dòng nào có số view).
+
 ## Changelog
+- **v3.13, 14/10/2026:** luật 57, lớp trend ưu tiên tín hiệu gốc TikTok theo view/comment (DL-053).
+- **v3.12, 14/10/2026:** luật 55, hook 0–3s dồn dập; luật 56, tương tác khéo không xin (DL-051, DL-052).
 - **v3.11, 14/10/2026:** luật 54, cover render từ template A, props có trong spec từ gate 1 (DL-046).
 - **v3.10, 14/10/2026:** luật 53, gói đăng TikTok 12 mục theo template, có cover.png và post-checklist.md (DL-045).
 - **v3.9, 14/10/2026:** luật 52, bảng hiệu ứng chi tiết ở bước kịch bản, duyệt ở gate 1 trước khi render (DL-044, L-019).

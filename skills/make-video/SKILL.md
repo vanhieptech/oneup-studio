@@ -116,6 +116,13 @@ Look at full-size frames of every beat at least 2 rounds (rule-34): text inside 
 
 Render a draft for gate 1 with `cd video-engine && npx remotion still src/index.ts Cover ../<clip>/final/cover.png --props="$(python3 -c 'import json,sys;print(json.dumps(json.load(open(sys.argv[1]))["cover"]))' ../<clip>/final/spec.json)"`. Keep a copy as `final/cover/cover-a.png` plus `cover-a.props.json`. Never use a video frame. `check-rules --final` blocks on rule-54 and L-020.
 
+**Hook 0–3s (rule 55, DL-051).** Put `spec.hook = {text, scenes}`. The first scene narration must equal `hook.text`, which build-final shows from frame 0. Build the hook from 2–3 `cut` scenes marked `part: "hook"` (lead 0.06s, tail 0.15s). Use short repeated clauses (first clause ≤ 6 words), a strong push/zoom, stamp/click hits and an emotional voice. Never open with a neutral setup sentence. Needed: first word ≤ 0.3s, first visual change ≤ 1s, ≥ 2 cuts/hits (≥ 1 cut) in 0–3s. `check-rules` rule-55 blocks.
+
+**Engagement (rule 56, DL-052).** Put `spec.engagement = [{type, beat, text[, hook_word]}]` with ≥ 3 types. comment-challenge (one word) and loop (last line repeats the hook keyword) are required. Add relatable-question ("Nghe quen không?") and/or save-prompt ("Lưu lại, lần sau … mở ra"). The pinned comment continues the challenge. Never beg ("like đi", "nhớ follow", "xin like"…). `check-rules` rule-56 blocks.
+
+**Trend layer (rule 57, DL-053).** Before gate 1, write `final/trend-signals.md`. It needs TikTok clips on the topic ranked by views plus comments (VN first), with URL, views, comments and the beat where each trend is used. Use YouTube as a labeled proxy if TikTok blocks the box. List rejected trends with the reason. Weave the trend into the hook, cover and caption. `check-rules` rule-57 warns.
+
+
 **Post package (rule 53, DL-045).** Copy `templates/post-package.md` to `final/post.md` and fill in all 12 sections, each in its own code block:
 - file specs;
 - cover text (≤40 chars), the cover frame time, and `cover.png`. Export it with ffmpeg: grab the frame, then drawtext with BVP Bold on a #111 band;
