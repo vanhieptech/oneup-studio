@@ -172,8 +172,8 @@ SFX = {  # in-house synthesized (no third-party license; logged in assets/sfx/SO
     "roomtone": "anoisesrc=d=120:c=brown:a=0.0025:r=48000,highpass=f=60,lowpass=f=3500",  # DL-033: bed under the whole clip, no digital silence between lines
     "whoosh": "anoisesrc=d=0.3:c=pink:a=0.25,bandpass=f=1500:w=900,afade=t=in:d=0.12,afade=t=out:st=0.14:d=0.16",
     # DL-042: transition SFX + ambience bed (in-house synthesized, see assets/sfx/SOURCES.md)
-    "whoosh-soft": "anoisesrc=d=0.45:c=pink:a=0.12:r=48000,bandpass=f=1100:w=1200,afade=t=in:d=0.2,afade=t=out:st=0.2:d=0.25",   # part change (xfade)
-    "swish": "anoisesrc=d=0.28:c=white:a=0.06:r=48000,bandpass=f=3200:w=2400,afade=t=in:d=0.1,afade=t=out:st=0.1:d=0.18",       # scene/section change inside a part
+    "whoosh-soft": "anoisesrc=d=0.45:c=pink:a=0.32:r=48000,highpass=f=500,lowpass=f=2500,afade=t=in:d=0.2,afade=t=out:st=0.2:d=0.25",   # part change (xfade) ≈ −37 dBFS RMS pre-mix (bandpass made it inaudible, fixed)
+    "swish": "anoisesrc=d=0.28:c=white:a=0.07:r=48000,highpass=f=2000,lowpass=f=6000,afade=t=in:d=0.1,afade=t=out:st=0.1:d=0.18",       # scene/section change ≈ −40 dBFS RMS pre-mix
     "ambience": "anoisesrc=d=120:c=brown:a=0.004:r=48000,highpass=f=50,lowpass=f=2200",                                          # continuous bed, replaces bare roomtone
 }
 TRANS_SFX = {"part": "whoosh-soft", "scene": "swish"}
