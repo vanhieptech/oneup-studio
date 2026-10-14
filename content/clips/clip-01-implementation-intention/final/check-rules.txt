@@ -29,7 +29,7 @@
 ✔ rule-34  contact-sheet.png for frame review
 ✔ rule-46  STT b01 1.00: “Kế hoạch học tố ích của mình là Mai Học.”
 ✔ rule-46  STT b02 0.92: “Tối nào cũng vậy, cô xong mệt rồi ưm thôi, mai học!”
-✔ rule-46  STT b03 0.85: “Hóa ra mình đâu có thiếu động lực. Mình thiếu mục cầu.”
+✔ rule-46  STT b03 1.00: “Hóa ra mình đâu có thiếu động lực. Mình thiếu một câu nếu, thì...”
 ✔ rule-46  STT e01 1.00: “Tâm lý học gọi nó là ý định thực hiện, viết sẵn mấy giờ, ở đâu gặp gì thì làm gì.”
 ✔ rule-46  STT e02 1.00: “Vì mình quyết sẵn lúc còn tỉnh táo, tới lúc mệt thì khỏi phải cải với bản thân.”
 ✔ rule-46  STT e03 0.83: “Ví dụ 9 giờ tối, gặp laptop thì mở một bay listening.”
@@ -40,6 +40,8 @@
 ✔ rule-46  STT b11 0.89: “mà nhớ nha chỉ hiệu quả với việc bạn thật sự muốn, viết mất 1-2 phút thôi.”
 ✔ rule-46  STT b12 0.88: “Thử luôn đứa viết 1 câu nếu thì cho cái mai của bạn rồi comment nha.”
 ✔ rule-46  STT b12 0.83: “cái máy hết đường trốn rồi.”
+✔ rule-50  11 transitions, 11 with SFX
+✔ rule-50  ambience bed under whole clip
 ✔ rule-49  lessons.md: 18 lessons loaded
 ✔ L-001    contact-sheet.png present for self-review
 ✔ L-004    highlight indexes within EN caption
@@ -129,6 +131,6 @@
 ✔ L-016    b12/f5-aa89c183bf41: 1 unit(s)
 ✔ L-008    b12/f5-aa89c183bf41: edit points clean (no loud/mid-syllable cuts)
 ✔ L-009    b12/f5-aa89c183bf41: STT 6 vs 6 syllables
-⚠ L-013    15 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+⚠ L-013    16 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
-132 checks · 0 error(s) · 5 warning(s) → PASS
+134 checks · 0 error(s) · 5 warning(s) → PASS

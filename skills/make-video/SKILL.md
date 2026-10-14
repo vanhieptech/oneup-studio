@@ -75,7 +75,7 @@ Run `skills/script-polish` (humanizer + voice profile) on `text`/`en`. Fact lock
 python3 pipeline/scripts/build-final.py <clip>/final/spec.json --stage plans   # TTS (cached) + timing.json + plans + explainer html
 python3 pipeline/scripts/check-rules.py <clip>/ --stt                          # must PASS (0 ✖) before gate 1
 ```
-`check-rules` covers: length 55–60s, word count, hook/CTA, scene ≤ 8s, Omi week (rule-11), theme vs theme-map, beat ids, comic vs motion engine, EN-only captions + highlight indexes, no emoji, Be Vietnam Pro only + no CDN, no music, SFX allowed + sourced, AI-tell phrases, particles / "bạn" / English mix, unconfirmed story items, voice presets (no cloning), STT of every line, post package (credit + license link + "đã chuyển thể", AI toggle + disclosure), video-engine validator; with `--final` also MP4 spec, −14 LUFS, contact sheet. A line failing STT: fix `say` or bump `take`, rebuild.
+`check-rules` covers: length 55–60s, word count, hook/CTA, scene ≤ 8s, Omi week (rule-11), theme vs theme-map, beat ids, comic vs motion engine, EN-only captions + highlight indexes, no emoji, Be Vietnam Pro only + no CDN, no music, SFX allowed + sourced, every transition has an SFX + ambience bed (rule-50, DL-042: default whoosh-soft at part xfades, swish at scene/section changes, 0.12s lead, quiet; continuous ambience; never music), AI-tell phrases, particles / "bạn" / English mix, unconfirmed story items, voice presets (no cloning), STT of every line, post package (credit + license link + "đã chuyển thể", AI toggle + disclosure), video-engine validator; with `--final` also MP4 spec, −14 LUFS, contact sheet. A line failing STT: fix `say` or bump `take`, rebuild.
 
 ## 5. Review gate 1 (Hiệp): script
 Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
@@ -83,6 +83,7 @@ Send `final/script-final.md` (beat table: **beat · time · visual · VI line ·
 ## 6. Render + self-review
 ```bash
 python3 pipeline/scripts/build-final.py <clip>/final/spec.json        # voice → plans → Remotion + HyperFrames → join, SFX, grain, −14 LUFS
+python3 pipeline/scripts/build-final.py <clip>/final/spec.json --stage assemble   # mix/SFX only, reuses rendered parts (no re-voice/re-render)
 ffmpeg -i <clip>/final/out/<id>.mp4 -vf "fps=1/2,scale=216:384,tile=8x4:padding=6:color=0x111111" -frames:v 1 <clip>/final/contact-sheet.png
 python3 pipeline/scripts/check-rules.py <clip>/ --final --stt --out <clip>/final/check-rules.txt
 ```

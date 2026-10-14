@@ -171,7 +171,13 @@ SFX = {  # in-house synthesized (no third-party license; logged in assets/sfx/SO
     "ding": "sine=f=1318:d=0.5,afade=t=out:st=0.03:d=0.47,volume=0.22",
     "roomtone": "anoisesrc=d=120:c=brown:a=0.0025:r=48000,highpass=f=60,lowpass=f=3500",  # DL-033: bed under the whole clip, no digital silence between lines
     "whoosh": "anoisesrc=d=0.3:c=pink:a=0.25,bandpass=f=1500:w=900,afade=t=in:d=0.12,afade=t=out:st=0.14:d=0.16",
+    # DL-042: transition SFX + ambience bed (in-house synthesized, see assets/sfx/SOURCES.md)
+    "whoosh-soft": "anoisesrc=d=0.45:c=pink:a=0.12:r=48000,bandpass=f=1100:w=1200,afade=t=in:d=0.2,afade=t=out:st=0.2:d=0.25",   # part change (xfade)
+    "swish": "anoisesrc=d=0.28:c=white:a=0.06:r=48000,bandpass=f=3200:w=2400,afade=t=in:d=0.1,afade=t=out:st=0.1:d=0.18",       # scene/section change inside a part
+    "ambience": "anoisesrc=d=120:c=brown:a=0.004:r=48000,highpass=f=50,lowpass=f=2200",                                          # continuous bed, replaces bare roomtone
 }
+TRANS_SFX = {"part": "whoosh-soft", "scene": "swish"}
+SFX_LEAD = 0.12  # SFX starts slightly before the cut so it overlaps across it
 
 def main():
     specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
@@ -186,12 +192,16 @@ def main():
             starts = {}; acc = 0
             for s in plan["scenes"]: starts[s["id"]] = acc; acc += s["duration"]
             sfx = [(x["name"], offset + starts[s["id"]] + x["at"]) for s in plan["scenes"] for x in s["sfx"]]
-            parts.append({"id": p["id"], "engine": "remotion", "plan": pp, "dur": dur, "mp4": os.path.join(VE, "out", plan["id"] + ".mp4"), "sfx": sfx, "fx": p.get("transitionOut")})
+            parts.append({"id": p["id"], "engine": "remotion", "plan": pp, "dur": dur, "mp4": os.path.join(VE, "out", plan["id"] + ".mp4"), "sfx": sfx, "fx": p.get("transitionOut"),
+                          "scene_starts": [starts[s["id"]] for s in plan["scenes"]][1:]})
             for x in tm: x["t"] = round(offset + starts[x["scene"]] + x["local"], 3); timing.append(x)
         else:
             tm, dur = explainer(spec, p, fdir)
             parts.append({"id": p["id"], "engine": "hyperframes", "dir": os.path.join(fdir, p["dir"]), "dur": dur, "mp4": os.path.join(fdir, "out", f"{p['id']}.mp4"),
-                          "sfx": [("whoosh", offset + s0) for s0 in []], "fx": p.get("transitionOut")})
+                          "sfx": [], "fx": p.get("transitionOut")})
+            sec0 = {}
+            for x in tm: sec0[x["scene"]] = min(sec0.get(x["scene"], 1e9), x["local"])
+            parts[-1]["scene_starts"] = sorted(max(0, v - 0.3) for v in sec0.values())[1:]
             for x in tm: x["t"] = round(offset + x["local"], 3); timing.append(x)
         offset += parts[-1]["dur"] - XF
     total = round(offset + XF, 2)
@@ -224,7 +234,13 @@ def main():
         vf.append(f"[{vprev}][v{i}]xfade=transition={fx}:duration={XF}:offset={off}[vx{i}]"); af.append(f"[{aprev}][a{i}]acrossfade=d={XF}:c1=tri:c2=tri[ax{i}]")
         vprev, aprev, acc = f"vx{i}", f"ax{i}", acc + parts[i]["dur"] - XF
     total = round(acc, 3)
-    sfx = [s for q in parts for s in q["sfx"]] + [("whoosh", round(st - 0.15, 3)) for st in starts[1:]] + [("roomtone", 0.0)]
+    trans = [{"at": round(st + XF / 2, 3), "kind": "part", "sfx": TRANS_SFX["part"]} for st in starts[1:]]
+    for q, st in zip(parts, starts):
+        trans += [{"at": round(st + t0, 3), "kind": "scene", "sfx": TRANS_SFX["scene"]} for t0 in q.get("scene_starts", [])]
+    trans.sort(key=lambda x: x["at"])
+    sfx = [s for q in parts for s in q["sfx"]] + [(t["sfx"], round(t["at"] - SFX_LEAD, 3)) for t in trans] + [("ambience", 0.0)]
+    tj = os.path.join(fdir, "timing.json"); tjd = json.load(open(tj)); tjd["transitions"] = trans; tjd["sfx_mix"] = [{"name": n, "at": a} for n, a in sfx]
+    json.dump(tjd, open(tj, "w"), ensure_ascii=False, indent=1)
     tmp = os.path.join(fdir, "out", "sfx"); os.makedirs(tmp, exist_ok=True); mixl = [f"[{aprev}]"]
     for j, (name, at) in enumerate(sfx):
         w = os.path.join(tmp, name + ".wav")

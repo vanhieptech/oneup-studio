@@ -7,7 +7,11 @@
    "plan": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json",
    "dur": 11.614,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-01-final-A.mp4",
-   "fx": "slideleft"
+   "fx": "slideleft",
+   "scene_starts": [
+    2.79,
+    6.901
+   ]
   },
   {
    "id": "E",
@@ -15,7 +19,15 @@
    "dir": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer",
    "dur": 38.24,
    "mp4": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E.mp4",
-   "fx": "circleopen"
+   "fx": "circleopen",
+   "scene_starts": [
+    6.0920000000000005,
+    11.192,
+    15.177,
+    19.617,
+    26.057,
+    31.477
+   ]
   },
   {
    "id": "B",
@@ -23,7 +35,10 @@
    "plan": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json",
    "dur": 11.562000000000001,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-01-final-B.mp4",
-   "fx": null
+   "fx": null,
+   "scene_starts": [
+    5.23
+   ]
   }
  ],
  "lines": [
@@ -182,6 +197,121 @@
    "local": 4.33,
    "dur": 1.552,
    "t": 58.714
+  }
+ ],
+ "transitions": [
+  {
+   "at": 2.79,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 6.901,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 11.43,
+   "kind": "part",
+   "sfx": "whoosh-soft"
+  },
+  {
+   "at": 17.347,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 22.447,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 26.432,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 30.872,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 37.312,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 42.732,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 49.32,
+   "kind": "part",
+   "sfx": "whoosh-soft"
+  },
+  {
+   "at": 54.375,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "pop",
+   "at": 0.12
+  },
+  {
+   "name": "ding",
+   "at": 58.814
+  },
+  {
+   "name": "swish",
+   "at": 2.67
+  },
+  {
+   "name": "swish",
+   "at": 6.781
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 11.31
+  },
+  {
+   "name": "swish",
+   "at": 17.227
+  },
+  {
+   "name": "swish",
+   "at": 22.327
+  },
+  {
+   "name": "swish",
+   "at": 26.312
+  },
+  {
+   "name": "swish",
+   "at": 30.752
+  },
+  {
+   "name": "swish",
+   "at": 37.192
+  },
+  {
+   "name": "swish",
+   "at": 42.612
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 49.2
+  },
+  {
+   "name": "swish",
+   "at": 54.255
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
   }
  ],
  "partStarts": [

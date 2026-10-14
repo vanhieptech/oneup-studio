@@ -24,7 +24,7 @@ AI_TELLS = ["bạn có biết", "hãy cùng", "bí quyết", "thay đổi cuộc
 PARTICLES = ["nha", "á", "hông", "nè", "hen", "ha", "đó", "luôn", "thôi"]
 EN_EXEMPT = {"toeic", "messenger", "oneup", "omi", "tiktok", "ios", "app", "laptop", "comment", "ok", "okay"}
 EN_MIX = {"code", "listening", "deadline", "work", "focus", "ship", "plan", "lock", "in", "productive", "goal", "habit", "check", "level", "mindset", "skip", "reset"}
-SFX_OK = {"pop", "ding", "whoosh", "tick", "click"}
+SFX_OK = {"pop", "ding", "whoosh", "tick", "click", "whoosh-soft", "swish", "ambience"}
 
 def norm(s):
     s = unicodedata.normalize("NFD", s.lower()); s = "".join(c for c in s if unicodedata.category(c) != "Mn")
@@ -223,6 +223,17 @@ def main():
         for l in t["lines"]:
             hyp = got.get(l["key"] + ".wav", ""); sim = difflib.SequenceMatcher(None, norm(l["say"]), norm(hyp)).ratio()
             (ok if sim >= 0.75 else warn if sim >= 0.55 else err)("rule-46", f"STT {l['scene']} {sim:.2f}: “{hyp}”")
+    # rule-50 (DL-042): every transition has an SFX + continuous ambience bed
+    if final and os.path.exists(tpath):
+        tj = json.load(open(tpath)); tr = tj.get("transitions"); mixs = tj.get("sfx_mix", [])
+        if not tr: err("rule-50", "timing.json has no transitions list (build-final ≥ DL-042 writes it)")
+        else:
+            src = open(os.path.join(REPO, "assets/sfx/SOURCES.md")).read()
+            miss = [t for t in tr if not any(m["name"] == t["sfx"] and abs(m["at"] - t["at"]) <= 0.3 for m in mixs)]
+            (ok if not miss else err)("rule-50", f"{len(tr)} transitions, {len(tr) - len(miss)} with SFX" + (f"; missing at {[t['at'] for t in miss]}" if miss else ""))
+            (ok if any(m["name"] == "ambience" for m in mixs) else err)("rule-50", "ambience bed under whole clip")
+            for n in sorted({m["name"] for m in mixs}):
+                if n not in src: err("rule-22", f"sfx '{n}' missing in assets/sfx/SOURCES.md")
     lessons(spec, fdir, L, final, tpath)
     return report(outp)
 

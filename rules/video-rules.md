@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.6
+version: 3.7
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.6, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.7, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -140,7 +140,14 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Mỗi lần Hiệp góp ý/chê ("vấp", "xấu", "đọc sai"…): **trước khi sửa** thêm hoặc cập nhật lesson, và nếu đo được thì thêm check `L-NNN` vào `pipeline/scripts/check-rules.py`. Check ✖ chặn gửi duyệt (luật 48) như mọi luật khác. Lỗi chưa đo được thì ghi `manual` kèm cách soát tay.
     - Không xoá lesson; khi đổi cách sửa thì cập nhật dòng và ghi DL.
 
+50. **Mỗi lần chuyển cảnh đều có SFX, luôn có lớp nền ambience (DL-042):**
+    - Chuyển phần (xfade A→E→B) dùng `whoosh-soft`. Chuyển scene/section bên trong một phần dùng `swish`. SFX bắt đầu sớm hơn điểm cắt khoảng 0.12s để chồng qua vết cắt, âm lượng nhỏ, nằm dưới giọng.
+    - Lớp nền `ambience` (brown noise rất nhỏ) chạy suốt clip, để khoảng lặng giữa các cảnh không bị "chết". Vẫn không có nhạc (luật 21).
+    - Chỉ dùng SFX tự tổng hợp, CC0 hoặc Mixkit, có ghi trong `assets/sfx/SOURCES.md` (luật 22).
+    - Kiểm tra bằng `check-rules` (rule-50): mọi transition trong `timing.json` phải có SFX nằm trong khoảng ±0.3s, và phải có `ambience`.
+
 ## Changelog
+- **v3.7, 14/10/2026:** luật 50, chuyển cảnh nào cũng có SFX và luôn có lớp nền ambience (DL-042).
 - **v3.6, 14/10/2026:** markup giọng tự nhiên (từ đệm, kho từ đệm theo nhân vật, ngập ngừng, kéo tiểu từ, pause từng dấu, câu chen), bảng tiểu từ đo bằng STT + F0, giới hạn tần suất từ đệm (luật 46; DL-039, L-017).
 - **v3.5, 13/10/2026:** F5 sinh theo đơn vị câu/mệnh đề tách bằng dấu câu, cấm cắt bên trong output F5 (luật 46; DL-038, L-016).
 - **v3.4, 13/10/2026:** luật 49 (cổng bài học `logs/lessons.md` + check `L-NNN`); F5 v3 chống "vấp": 1 take tự nhiên mỗi câu, chỉ cắt ở lặng thật (luật 46; DL-036, DL-037).

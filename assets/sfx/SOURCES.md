@@ -9,3 +9,4 @@ tags: [sfx, license]
 | File | Nguồn (URL) | License | Ngày tải |
 |---|---|---|---|
 | pop / ding / whoosh (clip-01 final) | Tự tổng hợp bằng ffmpeg lavfi (sine / anoisesrc), công thức trong `pipeline/scripts/build-final.py` → `SFX` | Tự tạo, không có bên thứ ba (tương đương CC0) | 2026-10-13 |
+| whoosh-soft / swish / ambience (DL-042, clip-01 v2) | Tự tổng hợp bằng ffmpeg lavfi (anoisesrc pink/white/brown + bandpass/lowpass), công thức trong `pipeline/scripts/build-final.py` → `SFX` | Tự tạo, không có bên thứ ba (tương đương CC0) | 2026-10-14 |
