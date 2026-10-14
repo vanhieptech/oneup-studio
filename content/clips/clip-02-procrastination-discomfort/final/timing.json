@@ -1,0 +1,243 @@
+{
+ "total": 61.45,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json",
+   "dur": 15.371,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A.mp4",
+   "fx": "slideleft",
+   "scene_starts": [
+    1.023,
+    3.473,
+    4.573,
+    10.572
+   ],
+   "_off": 0.0
+  },
+  {
+   "id": "E",
+   "engine": "hyperframes",
+   "dir": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer",
+   "dur": 34.55,
+   "mp4": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4",
+   "fx": "circleopen",
+   "scene_starts": [
+    6.236,
+    12.460999999999999,
+    17.306,
+    21.457,
+    26.537,
+    30.037
+   ],
+   "_off": 15.021
+  },
+  {
+   "id": "B",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json",
+   "dur": 12.225999999999999,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-B.mp4",
+   "fx": null,
+   "scene_starts": [
+    5.58
+   ],
+   "_off": 49.221
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Tính năng Omi.",
+   "en": "The Omi feature.",
+   "emotion": "sad",
+   "key": "f5-326c41246390",
+   "local": 0.12,
+   "dur": 0.753,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "Hoãn hôm nay. Hoãn ngày mai. Rồi lại hoãn.",
+   "en": "Not today. Not tomorrow. Again.",
+   "emotion": "sad",
+   "key": "f5-4095f70a2567",
+   "local": 0.06,
+   "dur": 2.24,
+   "t": 1.083
+  },
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01c",
+   "speaker": "hiep",
+   "say": "Toang thật rồi.",
+   "en": "It's over.",
+   "emotion": "sad",
+   "key": "f5-f79fbf5a67cf",
+   "local": 0.06,
+   "dur": 0.89,
+   "t": 3.533
+  },
+  {
+   "beat": "clip-02.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Mở code ra, năm giây sau đã lướt TikTok.",
+   "en": "Open the code… five seconds later: TikTok.",
+   "emotion": "sad",
+   "key": "f5-2ec9b28a5ba0",
+   "local": 0.3,
+   "dur": 2.072,
+   "t": 4.873
+  },
+  {
+   "beat": "clip-02.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Chán nản, tội lỗi, rồi tự mắng: ừm... mình lười quá.",
+   "en": "Drained, guilty: “I'm so lazy.”",
+   "emotion": "sad",
+   "key": "f5-14547a444848",
+   "local": 2.572,
+   "dur": 2.977,
+   "t": 7.145
+  },
+  {
+   "beat": "clip-02.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Nhưng nghiên cứu nói: thường đâu phải lười. Mình đang né một cảm giác.",
+   "en": "Research says: usually not lazy. You're dodging a feeling.",
+   "emotion": "focused",
+   "key": "f5-0271eb2054b8",
+   "local": 0.55,
+   "dur": 3.799,
+   "t": 11.122
+  },
+  {
+   "beat": "clip-02.b04",
+   "scene": "e01",
+   "speaker": "hiep",
+   "say": "Trì hoãn là né cảm giác khó chịu: chán, sợ làm dở, hay không biết bắt đầu. Nghe quen không?",
+   "en": "Procrastination = dodging discomfort: boredom, fear of failing, no clear start. Sound familiar?",
+   "emotion": "focused",
+   "key": "f5-fd1d2dfea83a",
+   "local": 0.65,
+   "dur": 5.036,
+   "t": 15.671
+  },
+  {
+   "beat": "clip-02.b05",
+   "scene": "e02",
+   "speaker": "hiep",
+   "say": "Gộp sáu trăm chín mươi mốt hệ số tương quan: việc càng khó chịu, càng thấy mình kém, càng dễ hoãn.",
+   "en": "691 correlations: the nastier the task and the lower your confidence, the more you delay.",
+   "emotion": "focused",
+   "key": "f5-00112fb8fae8",
+   "local": 6.536,
+   "dur": 5.375,
+   "t": 21.557
+  },
+  {
+   "beat": "clip-02.b06",
+   "scene": "e03",
+   "speaker": "hiep",
+   "say": "Vì phần thưởng ở xa, cái khó chịu ở ngay bây giờ. Nên điện thoại thắng.",
+   "en": "Because the reward is far away, the discomfort is right now. So the phone wins.",
+   "emotion": "focused",
+   "key": "f5-ba77a972a011",
+   "local": 12.761,
+   "dur": 3.995,
+   "t": 27.782
+  },
+  {
+   "beat": "clip-02.b07",
+   "scene": "e04",
+   "speaker": "hiep",
+   "say": "Nên trước khi làm, hỏi một câu: việc này khó chịu ở chỗ nào?",
+   "en": "So before you start, ask: what exactly feels bad here?",
+   "emotion": "focused",
+   "key": "f5-6505e5807de7",
+   "local": 17.606,
+   "dur": 3.301,
+   "t": 32.627
+  },
+  {
+   "beat": "clip-02.b08",
+   "scene": "e05",
+   "speaker": "hiep",
+   "say": "Không biết bắt đầu? Viết ba gạch đầu dòng. Sợ dở? Cho phép nháp xấu.",
+   "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
+   "emotion": "focused",
+   "key": "f5-bf146a0cd99f",
+   "local": 21.757,
+   "dur": 4.23,
+   "t": 36.778
+  },
+  {
+   "beat": "clip-02.b09",
+   "scene": "e06",
+   "speaker": "hiep",
+   "say": "Thấy chán? Hẹn mười phút, hết giờ thì được dừng.",
+   "en": "Bored? Set 10 minutes. When it rings, you may stop.",
+   "emotion": "focused",
+   "key": "f5-fba3f5ca09cc",
+   "local": 26.837,
+   "dur": 2.65,
+   "t": 41.858
+  },
+  {
+   "beat": "clip-02.b10",
+   "scene": "e07",
+   "speaker": "hiep",
+   "say": "Lỗi hay gặp: mắng mình rồi gồng. Mắng xong, việc càng khó chịu.",
+   "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
+   "emotion": "focused",
+   "key": "f5-ec90053679ba",
+   "local": 30.337,
+   "dur": 3.56,
+   "t": 45.358
+  },
+  {
+   "beat": "clip-02.b11",
+   "scene": "b11",
+   "speaker": "hiep",
+   "say": "Lưu ý: nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra.",
+   "en": "Note: correlational, a pattern only. Save this for the next time you stall.",
+   "emotion": "focused",
+   "key": "f5-5e41f5a3ecac",
+   "local": 0.3,
+   "dur": 4.83,
+   "t": 49.521
+  },
+  {
+   "beat": "clip-02.b12",
+   "scene": "b12",
+   "speaker": "hiep",
+   "say": "Việc bạn đang hoãn khó chịu chỗ nào? Comment một chữ.",
+   "en": "What feels bad about the task you're avoiding? One word in the comments.",
+   "emotion": "happy",
+   "key": "f5-ea4c76dacef9",
+   "local": 0.55,
+   "dur": 2.89,
+   "t": 55.351
+  },
+  {
+   "beat": "clip-02.b12",
+   "scene": "b12",
+   "speaker": "hiep",
+   "say": "Còn tính năng Omi? Mình đi hỏi câu đó đây.",
+   "en": "And the Omi feature? Asking myself right now.",
+   "emotion": "happy",
+   "key": "f5-08542e06141e",
+   "local": 3.64,
+   "dur": 2.556,
+   "t": 58.441
+  }
+ ]
+}

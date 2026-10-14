@@ -1,2 +1,31 @@
 voice: 16 lines (16 prosody), 0 cached
 + /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json
+f5-326c41246390: 0.753s takes=[None] sims=[1.0] cuts=None stt=tính năng ôm ý
+f5-6bd83b99f7a3: 1.019s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Hoàng, lại hoàng.
+f5-f79fbf5a67cf: 0.89s takes=[None] sims=[1.0] cuts=None stt=toang thật rồi.
+f5-2ec9b28a5ba0: 2.072s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=Mở có ra 5 giây sau đã lướt tiết tóc.
+f5-14547a444848: 2.977s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=chán nãn tội lỗi, rồi tự mắng ngựa mình lùi quá.
+f5-0271eb2054b8: 3.799s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Nhưng nghiên cứu nói, thường đâu phải lười. Mình đang nếm một cảm giác.
+f5-fd1d2dfea83a: 5.036s takes=[None, None, None, None] sims=[1.0, 1.0, 1.0, 1.0] cuts=None stt=Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ hay không biết bắt đầu, nghe quen không.
+f5-00112fb8fae8: 5.375s takes=[None, None, None, None] sims=[1.0, 1.0, 1.0, 1.0] cuts=None stt=Gọt 691 hệ số tương quan, việc càng khó chịu, càng thấy mình kém càng dễ hoảng.
+f5-ba77a972a011: 3.995s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Vì phân thưởng ở xa, cái khó chịu ở ngay bây giờ nên điện thoại thắng.
+f5-6505e5807de7: 3.301s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=nên trước khi làm, hỏi một câu việc này khó chịu ở chỗ nào.
+f5-bf146a0cd99f: 4.23s takes=[None, None, None, None] sims=[1.0, 1.0, 1.0, 1.0] cuts=None stt=Không biết bắt đầu, viết ba gạch đầu dòng, sợ giỡ cho phép nháp xấu.
+f5-fba3f5ca09cc: 2.65s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Thấy tráng hẹn 10 phút, hết giờ thì được dừng.
+f5-ec90053679ba: 3.56s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Lỗi hay gặp mắn mình rồi gồng, mắn xong việc càng khó chịu.
+f5-5e41f5a3ecac: 4.83s takes=[None, None, None, None] sims=[1.0, 1.0, 1.0, 1.0] cuts=None stt=Lưu ý nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại lần sau hoảng thì mở ra.
+f5-ea4c76dacef9: 2.89s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Việc bạn đang hoãn khó chịu chỗ nào, comment một chữ.
+f5-08542e06141e: 2.556s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=Còn tính năng Omi, mình đi hỏi câu đó đây.
+warn: f5-326c41246390 line STT sim 0.571: tính năng ôm ý
+warn: f5-6bd83b99f7a3 line STT sim 0.286: Hoàng, lại hoàng.
+warn: f5-2ec9b28a5ba0 line STT sim 0.632: Mở có ra 5 giây sau đã lướt tiết tóc.
+warn: f5-14547a444848 line STT sim 0.727: chán nãn tội lỗi, rồi tự mắng ngựa mình lùi quá.
+warn: f5-fd1d2dfea83a line STT sim 0.8: Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ hay không biết bắt đầu, nghe quen không.
+warn: f5-00112fb8fae8 line STT sim 0.737: Gọt 691 hệ số tương quan, việc càng khó chịu, càng thấy mình kém càng dễ hoảng.
+warn: f5-fba3f5ca09cc line STT sim 0.8: Thấy tráng hẹn 10 phút, hết giờ thì được dừng.
+warn: f5-ec90053679ba line STT sim 0.846: Lỗi hay gặp mắn mình rồi gồng, mắn xong việc càng khó chịu.
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/public/voice/f5-fd1d2dfea83a.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-00112fb8fae8.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ba77a972a011.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-6505e5807de7.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-bf146a0cd99f.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-fba3f5ca09cc.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ec90053679ba.wav -filter_complex [0:a]aresample=48000,adelay=650:all=1[a0];[1:a]aresample=48000,adelay=6536:all=1[a1];[2:a]aresample=48000,adelay=12761:all=1[a2];[3:a]aresample=48000,adelay=17606:all=1[a3];[4:a]aresample=48000,adelay=21757:all=1[a4];[5:a]aresample=48000,adelay=26837:all=1[a5];[6:a]aresample=48000,adelay=30337:all=1[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0,apad,atrim=0:34.55[o] -map [o] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-voice.wav
+plans: total ≈ 60.23s
++ npx tsx src/cli.ts validate /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json: 5 scenes, 14.15s
+✔ /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json: 2 scenes, 12.23s
