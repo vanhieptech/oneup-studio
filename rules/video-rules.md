@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.10
+version: 3.11
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.10, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.11, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -174,7 +174,14 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 
     Kèm theo là `post-checklist.md`. check-rules `--final` (rule-53) chặn nếu thiếu mục, mục rỗng, hoặc vi phạm giới hạn.
 
+54. **Cover luôn render từ template A (DL-046, L-020):**
+    - Mọi clip dùng `Cover` direction A (`video-engine/src/composition/Cover.tsx`): tag series + số tập, hero 2–4 chữ (chữ thói quen cũ bị gạch → chữ mới trong pill ink), chibi tạo dáng riêng với biểu cảm mạnh, logo +1, theme theo luật 17, mọi slot nằm trong y 290–1600 (lưới 3:4).
+    - Không bao giờ lấy frame video làm cover.
+    - Props của cover nằm trong `spec.json → cover` ngay từ bước kịch bản, và bản render nháp của cover phải có trong gói gate 1.
+    - check-rules: `rule-54` (props trong spec, direction "a") và `L-020` (cover.png trùng md5 với bản render template) đều chặn khi chạy `--final`.
+
 ## Changelog
+- **v3.11, 14/10/2026:** luật 54, cover render từ template A, props có trong spec từ gate 1 (DL-046).
 - **v3.10, 14/10/2026:** luật 53, gói đăng TikTok 12 mục theo template, có cover.png và post-checklist.md (DL-045).
 - **v3.9, 14/10/2026:** luật 52, bảng hiệu ứng chi tiết ở bước kịch bản, duyệt ở gate 1 trước khi render (DL-044, L-019).
 - **v3.8, 14/10/2026:** luật 51, motion gắn với nội dung + SFX nhấn ở điểm animation trọng tâm (DL-043).

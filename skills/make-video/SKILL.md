@@ -107,6 +107,15 @@ python3 pipeline/scripts/check-rules.py <clip>/ --final --stt --out <clip>/final
 ```
 Look at full-size frames of every beat at least 2 rounds (rule-34): text inside safe area, nothing clipped, captions not covering faces, highlight on the right word, logo present. Fix in spec/template, add a `revisions` row, rebuild.
 
+**Cover (rule 54, DL-046).** At the script stage, put `cover` props into `spec.json`. Use template A (`video-engine/src/composition/Cover.tsx`), with these fields:
+- `direction: "a"`
+- `theme` (rule 17)
+- `series`, `ep`
+- `hero` [old, new] with `strike: 0` and `accent: 1`
+- `expression`, `action`, `emote`, `tilt`
+
+Render a draft for gate 1 with `cd video-engine && npx remotion still src/index.ts Cover ../<clip>/final/cover.png --props="$(python3 -c 'import json,sys;print(json.dumps(json.load(open(sys.argv[1]))["cover"]))' ../<clip>/final/spec.json)"`. Keep a copy as `final/cover/cover-a.png` plus `cover-a.props.json`. Never use a video frame. `check-rules --final` blocks on rule-54 and L-020.
+
 **Post package (rule 53, DL-045).** Copy `templates/post-package.md` to `final/post.md` and fill in all 12 sections, each in its own code block:
 - file specs;
 - cover text (≤40 chars), the cover frame time, and `cover.png`. Export it with ffmpeg: grab the frame, then drawtext with BVP Bold on a #111 band;

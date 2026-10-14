@@ -16,9 +16,9 @@ Thời lượng: 60.7s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · �
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
 ```
-Kế hoạch học của bạn: “mai học”?
+MAI HỌC → NẾU–THÌ
 ```
-Frame cover: **1.5s** (hook b01, 11:48 PM). File: `final/cover.png`. Lúc đăng, chọn "Tải ảnh bìa lên" và dùng file này, hoặc kéo tới 1.5s rồi gõ lại chữ ở trên.
+Cover: **template A** (luật 54, DL-046), render từ `video-engine/src/composition/Cover.tsx`, props lấy từ `spec.json → cover` (`final/cover/cover-a.props.json`). File: `final/cover.png`. Frame cover: **0s** (ảnh bìa tải lên riêng, không lấy frame video). Lúc đăng, chọn "Tải ảnh bìa lên" → `cover.png`.
 
 ## 3. Caption / tiêu đề TikTok (VI)
 ```

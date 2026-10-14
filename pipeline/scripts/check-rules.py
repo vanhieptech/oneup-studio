@@ -264,8 +264,10 @@ def main():
         props = glob.glob(os.path.join(cdir, "cover-*.props.json"))
         rend = {hashlib.md5(open(f, "rb").read()).hexdigest() for f in glob.glob(os.path.join(cdir, "cover-*.png")) if "grid" not in f}
         okc = os.path.exists(cpng) and hashlib.md5(open(cpng, "rb").read()).hexdigest() in rend
-        (ok if props and okc else warn)("L-020", "cover.png rendered from Cover template (props json present)" if okc else
-            f"cover.png is not a Cover-template render ({len(props)} template direction(s) in cover/ — Hiệp must pick one; becomes ✖ once rule-final)")
+        cv = spec.get("cover") or {}
+        (ok if cv.get("direction") == "a" and cv.get("hero") and cv.get("series") and cv.get("ep") else err)("rule-54", f"spec.cover props (template A) {'present' if cv else 'MISSING'}")
+        (ok if props and okc else err)("L-020", "cover.png rendered from Cover template (props json present)" if okc else
+            f"cover.png is not a Cover-template render ({len(props)} template direction(s) in cover/ — render cover from template A: npx remotion still src/index.ts Cover final/cover.png --props=spec.cover)")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
