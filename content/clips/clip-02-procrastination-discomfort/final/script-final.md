@@ -1,7 +1,7 @@
 ---
 id: clip-02.script-final
 type: script
-status: review gate 1 (chưa render)
+status: gate 1 duyệt 17:54, đang build
 updated: 2026-10-14
 tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 ---
@@ -48,7 +48,7 @@ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 | 0.00 | Frame 0: cận laptop (prop mới) 0 dòng code, 'Omi feature · TODO', chữ hook to đã hiện | — | **OMI FEATURE: HOÃN. HOÃN. HOÃN.** |
 | 0.12 | Push-in mạnh 0.14, dấu đỏ POSTPONED đóng xuống | `stamp` + "Tính năng Omi." (buồn) | giữ |
 | ~1.1 | **CUT 1** → b01b lịch DEADLINE xé 3 tờ HÔM NAY→MAI→TUẦN SAU→THÁNG SAU, nhãn HOÃN x3 | `click` "Hoãn." · `click` "Hoãn." · `stamp` "Lại hoãn." | HOÃN / HOÃN / LẠI HOÃN |
-| ~2.4 | **CUT 2** → b01c mặt Hiệp khóc, nền tối dần (vignette) | `rise` + "Tại sao mình lại như vậy?!" (buồn) | **TẠI SAO?!** đập xuống |
+| ~2.4 | **CUT 2** → b01c mặt Hiệp khóc, nền tối dần (vignette) | `stamp` + "Toang thật rồi." (buồn) | **TOANG!** đập xuống |
 | ~3.6 | CUT (swish) → b02 TikTok, chán nản, tội lỗi | `pop` "TikTok" | |
 
 Check (ước tính): lời đầu 0.12s ≤ 0.3 · đổi hình/hit đầu 0.12s ≤ 1.0 · 0–3s: 2 cut + 4 hit · chữ hook ở frame 0.
@@ -56,9 +56,9 @@ Check (ước tính): lời đầu 0.12s ≤ 0.3 · đổi hình/hit đầu 0.12
 ## Câu hook b01c (DL-054), 4 phương án
 | # | Câu | Gợi từ trend | Ghi chú |
 |---|---|---|---|
-| 1 ⭐ | **Tại sao mình lại như vậy?!** | T6 "Tại sao mày không vào lớp vậy?" (hỏi rồi trả lời đánh úp) + meme EN "Why am I like this?!" | Câu hỏi tự vấn kịch tính, b03 trả lời ngay "thường đâu phải lười" → đúng format câu hỏi → cú lật |
+| 1 | Tại sao mình lại như vậy?! | T6 "Tại sao mày không vào lớp vậy?" (hỏi rồi trả lời đánh úp) + meme EN "Why am I like this?!" | Câu hỏi tự vấn kịch tính, b03 trả lời ngay "thường đâu phải lười" → đúng format câu hỏi → cú lật |
 | 2 | Bị dí deadline… mà vẫn lướt. | T4 "vừa than bị dí deadline vừa lướt TikTok" | Đúng tình huống, nhưng lặp ý với b02 |
-| 3 | Toang thật rồi. | meme "toang" (lâu đời, chưa có số liệu 2026) | Rất ngắn, dễ meme, nhưng cũ và ít cảm xúc tự trách |
+| 3 ⭐ (Hiệp chọn, DL-057) | **Toang thật rồi.** | meme "toang" (lâu đời, chưa có số liệu 2026) | Rất ngắn, dễ meme, nhưng cũ và ít cảm xúc tự trách |
 | 4 | Mình tệ thật sự luôn á. | cách nói nhấn "thật sự luôn" của Gen Z (chưa có nguồn số liệu) | Giọng Nam, cảm xúc mạnh, nhưng có tiểu từ "á" (DL-040 đọc thường) |
 
 ## Trend (luật 57, xem trend-signals.md)
@@ -82,7 +82,7 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 |---|---|---|---|---|---|
 | b01 | remotion | Hook cut 1: zoom mạnh vào màn hình laptop 'Omi feature · TODO', chữ hook to ngay frame 0; dấu đỏ POSTPONED đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
 | b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | “hoãn” | `click` → “Hoãn”; `click` → “Hoãn”; `stamp` → “Lại hoãn” | cut (`swish`) |
-| b01c | remotion | Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TẠI SAO?! đập xuống rung | “như vậy” | `rise` → “như vậy” | cut (`swish`) |
+| b01c | remotion | Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TOANG! đập xuống rung | “Toang” | `stamp` → “Toang” | cut (`swish`) |
 | b02 | remotion | Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash) | “tội lỗi” | `pop` → “TikTok”; `stamp` → “lười” | cut (`swish`) |
 | b03 | remotion | Comic: iris mở sang giấy trắng, chữ 'LƯỜI' bị bút gạch, Hiệp ngẩng lên nhận ra | “né một cảm giác” | `pen` → “đâu phải lười” | iris (`swish`) |
 | e01 | hyperframes | Một việc (thẻ 'Báo cáo') tỏa ra 3 'gai' cảm xúc Chán / Sợ làm dở / Không biết bắt đầu; mũi tên né cong vòng qua thẻ | “khó chịu” | `pop` → “né”; `tick` → “chán” | slideleft (`whoosh-soft`) |
@@ -119,7 +119,7 @@ push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial
 - câu "mắng xong, việc càng khó chịu" ở e07 là suy luận, không có số liệu
 
 ## [CẦN HIỆP XÁC NHẬN]
-1. Hook b01c tạm dùng "Tại sao mình lại như vậy?!" (DL-054). Hiệp chọn 1 trong 4 phương án ở trên.
+1. Hook b01c: "Toang thật rồi." (Hiệp chọn 17:54, DL-057).
 2. Cover: ĐÃ DUYỆT "~~LƯỜI?~~ → ĐANG NÉ!" (Hiệp "Okr", DL-055).
 3. Prop comic mới (laptop, điện thoại, lịch, mây LƯỜI, biển): xem preview/preview-strip.png (DL-056). OK chưa?
 4. 3 cách gỡ ở e05–e06 là ví dụ minh hoạ (đã giữ theo "Giữ").

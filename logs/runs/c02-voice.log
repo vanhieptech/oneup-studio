@@ -1,0 +1,2 @@
+voice: 16 lines (16 prosody), 0 cached
++ /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json

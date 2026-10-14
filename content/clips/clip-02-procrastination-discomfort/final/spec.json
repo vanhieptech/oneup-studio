@@ -97,8 +97,8 @@
           "beat": "clip-02.b01",
           "part": "hook",
           "background": "desk",
-          "framing": "closeup",
-          "push": 0.14,
+          "framing": "medium",
+          "push": 0.16,
           "transition": "cut",
           "cast": [
             {
@@ -142,9 +142,9 @@
           "props": [
             {
               "kind": "laptop",
-              "x": 400,
-              "y": 1560,
-              "s": 1.05,
+              "x": 330,
+              "y": 1330,
+              "s": 0.8,
               "text": "Omi feature",
               "sub": "0 dòng code",
               "stamp": "HOÃN",
@@ -157,8 +157,8 @@
           "beat": "clip-02.b01",
           "part": "hook",
           "background": "desk",
-          "framing": "closeup",
-          "push": 0.1,
+          "framing": "medium",
+          "push": 0.12,
           "transition": "cut",
           "cast": [
             {
@@ -219,9 +219,9 @@
           "props": [
             {
               "kind": "calendar",
-              "x": 430,
-              "y": 1000,
-              "s": 0.95,
+              "x": 360,
+              "y": 1010,
+              "s": 0.8,
               "rot": -4,
               "pages": [
                 "HÔM NAY",
@@ -259,28 +259,28 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Tại sao mình lại như vậy?!",
-              "en": "Why am I like this?!",
+              "text": "Toang thật rồi.",
+              "en": "It's over.",
               "hl": [
-                4
+                1
               ],
               "phrases": [
                 {
-                  "t": "Tại sao mình lại như vậy?!"
+                  "t": "Toang thật rồi."
                 }
               ]
             }
           ],
           "fx": {
-            "visual": "Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TẠI SAO?! đập xuống rung",
-            "word": "như vậy"
+            "visual": "Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TOANG! đập xuống rung",
+            "word": "Toang"
           },
           "sfx": [
             {
-              "name": "rise",
+              "name": "stamp",
               "atLine": 0,
-              "offset": 0.2,
-              "word": "như vậy"
+              "offset": 0.0,
+              "word": "Toang"
             }
           ],
           "props": [
@@ -294,10 +294,10 @@
               "x": 540,
               "y": 430,
               "words": [
-                "TẠI SAO?!"
+                "TOANG!"
               ],
               "dropAt": [
-                0.15
+                0.0
               ]
             }
           ]

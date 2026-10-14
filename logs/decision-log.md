@@ -66,6 +66,7 @@ tags: [decisions, feedback]
 | DL-054 | 2026-10-14 | Hiệp (17:46) về câu "Mình ghét bản thân ghê": "Kiếm câu nào trend và dramatic peak hơn đi" | 4 phương án gắn nguồn trend. Tạm dùng "Tại sao mình lại như vậy?!" (T6 hỏi → lật + meme "Why am I like this?!"), chờ Hiệp chốt | clip-02-mkspec.py, script-final.md |
 | DL-055 | 2026-10-14 | Hiệp (17:46) về cover: "Okr" | Chốt cover clip-02 "~~LƯỜI?~~ → ĐANG NÉ!" (cover-a1) | final/cover.png |
 | DL-056 | 2026-10-14 | Hiệp (17:46) về prop comic: "Oke vẽ thêm" | Thêm `video-engine/src/composition/Props.tsx` (laptop, phone, calendar, cloud, sign, words, vignette) theo brand: ink/paper, viền 8–10px, bo tròn, bóng offset, 1 màu nhấn. Schema `scene.props`, build-final dời thời gian theo câu đầu, `props-preview.py` render still trước khi có giọng. Chữ hook frame 0 to hơn (60px, không fade) | Props.tsx, schema.ts, SceneRenderer.tsx, Caption.tsx, build-final.py, props-preview.py, clip-02 preview/ |
+| DL-057 | 2026-10-14 | Hiệp (17:54) chọn câu hook b01c: "Toang thật rồi." | b01c = "Toang thật rồi." (EN "It's over."), chữ slam đổi thành TOANG! + stamp ngay từ chữ đầu. Gate 1 duyệt, bắt đầu build đầy đủ. b01/b01b chuyển framing medium cho khỏi cắt mất Hiệp | clip-02-mkspec.py, spec.json, script-final.md |
 ## Góp ý lặp lại (theo dõi để nâng thành luật)
 | Chủ đề | Số lần | Đã nâng? |
 |---|---|---|
