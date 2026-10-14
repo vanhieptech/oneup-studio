@@ -11,7 +11,8 @@
    "scene_starts": [
     2.79,
     6.901
-   ]
+   ],
+   "_off": 0.0
   },
   {
    "id": "E",
@@ -27,7 +28,8 @@
     19.617,
     26.057,
     31.477
-   ]
+   ],
+   "_off": 11.264000000000001
   },
   {
    "id": "B",
@@ -38,7 +40,8 @@
    "fx": null,
    "scene_starts": [
     5.23
-   ]
+   ],
+   "_off": 49.154
   }
  ],
  "lines": [
@@ -262,8 +265,88 @@
    "at": 0.12
   },
   {
+   "name": "tick",
+   "at": 0.82
+  },
+  {
+   "name": "click",
+   "at": 4.24
+  },
+  {
+   "name": "snap",
+   "at": 10.351
+  },
+  {
+   "name": "tick",
+   "at": 13.036
+  },
+  {
+   "name": "snap",
+   "at": 15.607
+  },
+  {
    "name": "ding",
-   "at": 58.814
+   "at": 16.43
+  },
+  {
+   "name": "rise",
+   "at": 20.122
+  },
+  {
+   "name": "stamp",
+   "at": 21.472
+  },
+  {
+   "name": "pen",
+   "at": 23.153
+  },
+  {
+   "name": "click",
+   "at": 24.033
+  },
+  {
+   "name": "pen",
+   "at": 27.193
+  },
+  {
+   "name": "tick",
+   "at": 28.076
+  },
+  {
+   "name": "rise",
+   "at": 31.289
+  },
+  {
+   "name": "ding",
+   "at": 34.793
+  },
+  {
+   "name": "pop",
+   "at": 38.19
+  },
+  {
+   "name": "pop",
+   "at": 39.636
+  },
+  {
+   "name": "pop",
+   "at": 41.082
+  },
+  {
+   "name": "stamp",
+   "at": 44.85
+  },
+  {
+   "name": "ding",
+   "at": 48.001
+  },
+  {
+   "name": "tick",
+   "at": 52.645
+  },
+  {
+   "name": "ding",
+   "at": 58.805
   },
   {
    "name": "swish",
@@ -312,6 +395,104 @@
   {
    "name": "ambience",
    "at": 0.0
+  }
+ ],
+ "hits": [
+  {
+   "section": "e01",
+   "id": "clock",
+   "t": 13.036,
+   "sfx": "tick"
+  },
+  {
+   "section": "e01",
+   "id": "lock",
+   "t": 15.607,
+   "sfx": "snap"
+  },
+  {
+   "section": "e01",
+   "id": "check",
+   "t": 16.43,
+   "sfx": "ding"
+  },
+  {
+   "section": "e02",
+   "id": "drain",
+   "t": 20.122,
+   "sfx": "rise"
+  },
+  {
+   "section": "e02",
+   "id": "nodebate",
+   "t": 21.472,
+   "sfx": "stamp"
+  },
+  {
+   "section": "e03",
+   "id": "strike",
+   "t": 23.153,
+   "sfx": "pen"
+  },
+  {
+   "section": "e03",
+   "id": "lid",
+   "t": 24.033,
+   "sfx": "click"
+  },
+  {
+   "section": "e04",
+   "id": "strike",
+   "t": 27.193,
+   "sfx": "pen"
+  },
+  {
+   "section": "e04",
+   "id": "flip",
+   "t": 28.076,
+   "sfx": "tick"
+  },
+  {
+   "section": "e05",
+   "id": "count",
+   "t": 31.289,
+   "sfx": "rise"
+  },
+  {
+   "section": "e05",
+   "id": "mark",
+   "t": 34.793,
+   "sfx": "ding"
+  },
+  {
+   "section": "e06",
+   "id": "i1",
+   "t": 38.19,
+   "sfx": "pop"
+  },
+  {
+   "section": "e06",
+   "id": "i2",
+   "t": 39.636,
+   "sfx": "pop"
+  },
+  {
+   "section": "e06",
+   "id": "i3",
+   "t": 41.082,
+   "sfx": "pop"
+  },
+  {
+   "section": "e07",
+   "id": "stamp",
+   "t": 44.85,
+   "sfx": "stamp"
+  },
+  {
+   "section": "e07",
+   "id": "fixed",
+   "t": 48.001,
+   "sfx": "ding"
   }
  ],
  "partStarts": [

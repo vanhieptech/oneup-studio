@@ -63,6 +63,11 @@
               "name": "pop",
               "atLine": 0,
               "offset": 0.0
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 0.7
             }
           ],
           "lines": [
@@ -130,6 +135,13 @@
                 }
               }
             }
+          ],
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.9
+            }
           ]
         },
         {
@@ -180,6 +192,13 @@
                 }
               }
             }
+          ],
+          "sfx": [
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 2.9
+            }
           ]
         }
       ]
@@ -218,6 +237,23 @@
                 }
               ]
             }
+          ],
+          "hits": [
+            {
+              "id": "clock",
+              "f": 0.22,
+              "sfx": "tick"
+            },
+            {
+              "id": "lock",
+              "f": 0.72,
+              "sfx": "snap"
+            },
+            {
+              "id": "check",
+              "f": 0.88,
+              "sfx": "ding"
+            }
           ]
         },
         {
@@ -243,6 +279,18 @@
                   "t": "Tới lúc mệt thì khỏi phải cãi với bản thân."
                 }
               ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "drain",
+              "f": 0.55,
+              "sfx": "rise"
+            },
+            {
+              "id": "nodebate",
+              "f": 0.85,
+              "sfx": "stamp"
             }
           ]
         },
@@ -270,6 +318,18 @@
                 }
               ]
             }
+          ],
+          "hits": [
+            {
+              "id": "strike",
+              "f": 0.12,
+              "sfx": "pen"
+            },
+            {
+              "id": "lid",
+              "f": 0.38,
+              "sfx": "click"
+            }
           ]
         },
         {
@@ -295,6 +355,18 @@
                   "t": "thì viết phần mở đầu trước."
                 }
               ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "strike",
+              "f": 0.12,
+              "sfx": "pen"
+            },
+            {
+              "id": "flip",
+              "f": 0.35,
+              "sfx": "tick"
             }
           ]
         },
@@ -326,6 +398,18 @@
                 }
               ]
             }
+          ],
+          "hits": [
+            {
+              "id": "count",
+              "f": 0.02,
+              "sfx": "rise"
+            },
+            {
+              "id": "mark",
+              "f": 0.62,
+              "sfx": "ding"
+            }
           ]
         },
         {
@@ -355,6 +439,23 @@
                   "t": "và dừng việc chắc chắn không thành."
                 }
               ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "i1",
+              "f": 0.12,
+              "sfx": "pop"
+            },
+            {
+              "id": "i2",
+              "f": 0.42,
+              "sfx": "pop"
+            },
+            {
+              "id": "i3",
+              "f": 0.72,
+              "sfx": "pop"
             }
           ]
         },
@@ -387,6 +488,18 @@
                   "t": "Phải là một giờ, một chỗ, hay một việc vừa xong."
                 }
               ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "stamp",
+              "f": 0.3,
+              "sfx": "stamp"
+            },
+            {
+              "id": "fixed",
+              "f": 0.82,
+              "sfx": "ding"
             }
           ]
         }
@@ -432,6 +545,13 @@
                   "t": "Viết mất một, hai phút thôi."
                 }
               ]
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 3.2
             }
           ]
         },

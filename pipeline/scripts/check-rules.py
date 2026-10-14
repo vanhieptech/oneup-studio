@@ -24,7 +24,7 @@ AI_TELLS = ["bạn có biết", "hãy cùng", "bí quyết", "thay đổi cuộc
 PARTICLES = ["nha", "á", "hông", "nè", "hen", "ha", "đó", "luôn", "thôi"]
 EN_EXEMPT = {"toeic", "messenger", "oneup", "omi", "tiktok", "ios", "app", "laptop", "comment", "ok", "okay"}
 EN_MIX = {"code", "listening", "deadline", "work", "focus", "ship", "plan", "lock", "in", "productive", "goal", "habit", "check", "level", "mindset", "skip", "reset"}
-SFX_OK = {"pop", "ding", "whoosh", "tick", "click", "whoosh-soft", "swish", "ambience"}
+SFX_OK = {"pop", "ding", "whoosh", "tick", "click", "whoosh-soft", "swish", "ambience", "snap", "pen", "stamp", "rise"}
 
 def norm(s):
     s = unicodedata.normalize("NFD", s.lower()); s = "".join(c for c in s if unicodedata.category(c) != "Mn")
@@ -234,6 +234,18 @@ def main():
             (ok if any(m["name"] == "ambience" for m in mixs) else err)("rule-50", "ambience bed under whole clip")
             for n in sorted({m["name"] for m in mixs}):
                 if n not in src: err("rule-22", f"sfx '{n}' missing in assets/sfx/SOURCES.md")
+    # rule-51 (DL-043): every explainer section has ≥1 marked hit with an accent SFX, mixed at the hit time
+    if final and os.path.exists(tpath):
+        tj = json.load(open(tpath)); hits = tj.get("hits", []); mixs = tj.get("sfx_mix", [])
+        for p_ in spec["parts"]:
+            for sec in p_.get("sections", []):
+                hs = [h for h in hits if h.get("section") == sec["id"] and h.get("sfx")]
+                bad = [h["id"] for h in hs if not any(m["name"] == h["sfx"] and abs(m["at"] - h["t"]) <= 0.05 for m in mixs)]
+                (ok if hs and not bad else err)("rule-51", f"{sec['id']}: {len(hs)} accent hit(s) " + (f"[{', '.join(h['sfx'] for h in hs)}]" if hs else "— none") + (f"; not in mix: {bad}" if bad else ""))
+                if len(hs) > 3: warn("rule-51", f"{sec['id']}: {len(hs)} accent SFX (> 3 → clutter)")
+        acc = sorted(m["at"] for m in mixs if m["name"] not in ("ambience", "whoosh-soft", "swish", "roomtone"))
+        close = [round(b, 2) for a, b in zip(acc, acc[1:]) if b - a < 0.25]
+        (ok if not close else warn)("rule-51", f"{len(acc)} accent SFX, spacing ≥ 0.25s" + (f"; too close at {close}" if close else ""))
     lessons(spec, fdir, L, final, tpath)
     return report(outp)
 

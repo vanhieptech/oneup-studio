@@ -141,7 +141,9 @@ def explainer(spec, part, fdir):
             t = st + d + 0.25
         t += 0.3
         for i, ln in enumerate(lines[:-1]): ln["capEnd"] = min(ln["capEnd"], lines[i + 1]["start"])
-        secs.append({"id": sec["id"], "start": round(s0, 3), "end": round(t, 3), "lines": lines})
+        a0 = lines[0]["start"]; b0 = lines[-1]["capEnd"]  # same formula as the template's A(id, f)
+        hits = [{"id": h["id"], "t": round(a0 + h["f"] * (b0 - a0), 3), "sfx": h.get("sfx")} for h in sec.get("hits", [])]
+        secs.append({"id": sec["id"], "start": round(s0, 3), "end": round(t, 3), "lines": lines, "hits": hits})
     dur = round(t + 0.1, 2)
     # every *.tpl under the explainer dir (host index + sub-compositions) gets real timing (audit #2, DL-033):
     # __DUR__, __TIMING__ and per-section __START_<id>__ / __DUR_<id>__ for the clip's data-start/data-duration
@@ -164,6 +166,7 @@ def explainer(spec, part, fdir):
         flt.append(f"[{i}:a]aresample=48000,adelay={int(st*1000)}:all=1[a{i}]")
     flt.append("".join(f"[a{i}]" for i in range(len(mix))) + f"amix=inputs={len(mix)}:normalize=0,apad,atrim=0:{dur}[o]")
     sh(["ffmpeg", "-loglevel", "error", "-y", *ins, "-filter_complex", ";".join(flt), "-map", "[o]", "-ac", "1", "-ar", "48000", out])
+    explainer.hits = [{"section": sc["id"], **h} for sc in secs for h in sc["hits"]]
     return timing, dur
 
 SFX = {  # in-house synthesized (no third-party license; logged in assets/sfx/SOURCES.md)
@@ -176,6 +179,15 @@ SFX = {  # in-house synthesized (no third-party license; logged in assets/sfx/SO
     "swish": "anoisesrc=d=0.28:c=white:a=0.07:r=48000,highpass=f=2000,lowpass=f=6000,afade=t=in:d=0.1,afade=t=out:st=0.1:d=0.18",       # scene/section change ≈ −40 dBFS RMS pre-mix
     "ambience": "anoisesrc=d=120:c=brown:a=0.004:r=48000,highpass=f=50,lowpass=f=2200",                                          # continuous bed, replaces bare roomtone
 }
+# DL-043: accent SFX for key animation hits (in-house, ≈ −32…−37 dBFS RMS pre-mix → ~12–16 dB under voice)
+SFX.update({
+    "tick": "sine=f=2400:d=0.03:r=48000,afade=t=out:st=0.005:d=0.025,volume=0.25",
+    "click": "anoisesrc=d=0.025:c=white:a=0.07:r=48000,highpass=f=1500,afade=t=out:st=0.003:d=0.022",
+    "snap": "sine=f=180:d=0.08:r=48000,afade=t=out:st=0.01:d=0.07,volume=0.4",
+    "pen": "anoisesrc=d=0.4:c=pink:a=0.5:r=48000,highpass=f=1800,lowpass=f=5000,tremolo=f=14:d=0.8,afade=t=in:d=0.05,afade=t=out:st=0.25:d=0.15",
+    "stamp": "aevalsrc='0.08*sin(2*PI*95*t)*exp(-14*t)+0.02*(random(0)*2-1)*exp(-40*t)':d=0.2:s=48000",
+    "rise": "aevalsrc='0.03*sin(2*PI*(300*t+500*t*t))':d=0.6:s=48000,afade=t=in:d=0.35,afade=t=out:st=0.45:d=0.15",
+})
 TRANS_SFX = {"part": "whoosh-soft", "scene": "swish"}
 SFX_LEAD = 0.12  # SFX starts slightly before the cut so it overlaps across it
 
@@ -198,14 +210,16 @@ def main():
         else:
             tm, dur = explainer(spec, p, fdir)
             parts.append({"id": p["id"], "engine": "hyperframes", "dir": os.path.join(fdir, p["dir"]), "dur": dur, "mp4": os.path.join(fdir, "out", f"{p['id']}.mp4"),
-                          "sfx": [], "fx": p.get("transitionOut")})
+                          "sfx": [(h["sfx"], offset + h["t"]) for h in explainer.hits if h.get("sfx")], "fx": p.get("transitionOut"),
+                          "hits": [dict(h, t=round(offset + h["t"], 3)) for h in explainer.hits]})
             sec0 = {}
             for x in tm: sec0[x["scene"]] = min(sec0.get(x["scene"], 1e9), x["local"])
             parts[-1]["scene_starts"] = sorted(max(0, v - 0.3) for v in sec0.values())[1:]
             for x in tm: x["t"] = round(offset + x["local"], 3); timing.append(x)
+        parts[-1]["_off"] = offset
         offset += parts[-1]["dur"] - XF
     total = round(offset + XF, 2)
-    json.dump({"total": total, "parts": [{k: v for k, v in q.items() if k != "sfx"} for q in parts], "lines": timing}, open(os.path.join(fdir, "timing.json"), "w"), ensure_ascii=False, indent=1)
+    json.dump({"total": total, "parts": [{k: v for k, v in q.items() if k not in ("sfx", "hits")} for q in parts], "lines": timing}, open(os.path.join(fdir, "timing.json"), "w"), ensure_ascii=False, indent=1)
     print(f"plans: total ≈ {total}s")
     sh(["npx", "tsx", "src/cli.ts", "validate", *[q["plan"] for q in parts if q["engine"] == "remotion"]], cwd=VE)
     if stage in ("voice", "plans"): return
@@ -238,8 +252,10 @@ def main():
     for q, st in zip(parts, starts):
         trans += [{"at": round(st + t0, 3), "kind": "scene", "sfx": TRANS_SFX["scene"]} for t0 in q.get("scene_starts", [])]
     trans.sort(key=lambda x: x["at"])
-    sfx = [s for q in parts for s in q["sfx"]] + [(t["sfx"], round(t["at"] - SFX_LEAD, 3)) for t in trans] + [("ambience", 0.0)]
+    sfx = [(n, round(a - q["_off"] + st, 3)) for q, st in zip(parts, starts) for n, a in q["sfx"]] + [(t["sfx"], round(t["at"] - SFX_LEAD, 3)) for t in trans] + [("ambience", 0.0)]
     tj = os.path.join(fdir, "timing.json"); tjd = json.load(open(tj)); tjd["transitions"] = trans; tjd["sfx_mix"] = [{"name": n, "at": a} for n, a in sfx]
+    # absolute (clip-time) hits; part offsets shift by xfade, so re-base on assembled starts
+    tjd["hits"] = [dict(h, t=round(h["t"] - q["_off"] + st, 3)) for q, st in zip(parts, starts) for h in q.get("hits", [])]
     json.dump(tjd, open(tj, "w"), ensure_ascii=False, indent=1)
     tmp = os.path.join(fdir, "out", "sfx"); os.makedirs(tmp, exist_ok=True); mixl = [f"[{aprev}]"]
     for j, (name, at) in enumerate(sfx):

@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.7
+version: 3.8
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.7, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.8, 14/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -146,7 +146,14 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Chỉ dùng SFX tự tổng hợp, CC0 hoặc Mixkit, có ghi trong `assets/sfx/SOURCES.md` (luật 22).
     - Kiểm tra bằng `check-rules` (rule-50): mọi transition trong `timing.json` phải có SFX nằm trong khoảng ±0.3s, và phải có `ambience`.
 
+51. **Motion phải gắn với nội dung; mỗi điểm animation trọng tâm có SFX nhấn (DL-043):**
+    - Mỗi beat/section có ít nhất một ẩn dụ hình ảnh gắn với đúng chữ đang nói, ví dụ: câu nếu–thì ráp như mảnh ghép, pin đầy/cạn, laptop gập lại, lịch lật trang, số đếm lên, con dấu ✕. Không dùng chung một hiệu ứng cho mọi section (tránh lặp; chọn theo skill motion-picks-per-script). Chỉ animate transform/opacity, chữ nằm trong safe area.
+    - Điểm nhấn được đánh dấu trong spec bằng `hits: [{id, f, sfx}]` (section) hoặc `sfx` (scene). Template dùng `H(id, hit)` nên hình và tiếng rơi đúng cùng một thời điểm.
+    - SFX nhấn gồm pop, ding, tick, click, snap, pen, stamp, rise. Tự tổng hợp (luật 22), nhỏ hơn giọng khoảng 12–16 dB, chỉ đặt ở điểm nhấn chứ không phải mọi chuyển động nhỏ, tối đa 3 cái mỗi section.
+    - check-rules (rule-51): mỗi section explainer có ≥ 1 hit gắn SFX; SFX phải có trong SOURCES.md; không có 2 SFX nhấn cách nhau dưới 0.25s.
+
 ## Changelog
+- **v3.8, 14/10/2026:** luật 51, motion gắn với nội dung + SFX nhấn ở điểm animation trọng tâm (DL-043).
 - **v3.7, 14/10/2026:** luật 50, chuyển cảnh nào cũng có SFX và luôn có lớp nền ambience (DL-042).
 - **v3.6, 14/10/2026:** markup giọng tự nhiên (từ đệm, kho từ đệm theo nhân vật, ngập ngừng, kéo tiểu từ, pause từng dấu, câu chen), bảng tiểu từ đo bằng STT + F0, giới hạn tần suất từ đệm (luật 46; DL-039, L-017).
 - **v3.5, 13/10/2026:** F5 sinh theo đơn vị câu/mệnh đề tách bằng dấu câu, cấm cắt bên trong output F5 (luật 46; DL-038, L-016).
