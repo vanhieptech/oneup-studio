@@ -1,5 +1,5 @@
 {
- "total": 61.45,
+ "total": 61.456,
  "parts": [
   {
    "id": "A",
@@ -239,5 +239,311 @@
    "dur": 2.556,
    "t": 58.441
   }
+ ],
+ "transitions": [
+  {
+   "at": 1.023,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 3.473,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 4.573,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 10.572,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 15.228,
+   "kind": "part",
+   "sfx": "whoosh-soft"
+  },
+  {
+   "at": 21.289,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 27.514,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 32.359,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 36.51,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 41.59,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 45.09,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 49.428,
+   "kind": "part",
+   "sfx": "whoosh-soft"
+  },
+  {
+   "at": 54.833,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "click",
+   "at": 1.083
+  },
+  {
+   "name": "click",
+   "at": 1.843
+  },
+  {
+   "name": "stamp",
+   "at": 2.583
+  },
+  {
+   "name": "stamp",
+   "at": 3.533
+  },
+  {
+   "name": "pop",
+   "at": 6.473
+  },
+  {
+   "name": "stamp",
+   "at": 9.645
+  },
+  {
+   "name": "pen",
+   "at": 12.722
+  },
+  {
+   "name": "pop",
+   "at": 16.76
+  },
+  {
+   "name": "tick",
+   "at": 19.403
+  },
+  {
+   "name": "rise",
+   "at": 21.701
+  },
+  {
+   "name": "ding",
+   "at": 25.808
+  },
+  {
+   "name": "snap",
+   "at": 30.446
+  },
+  {
+   "name": "ding",
+   "at": 31.634
+  },
+  {
+   "name": "pop",
+   "at": 34.612
+  },
+  {
+   "name": "pen",
+   "at": 38.154
+  },
+  {
+   "name": "stamp",
+   "at": 40.618
+  },
+  {
+   "name": "tick",
+   "at": 42.905
+  },
+  {
+   "name": "ding",
+   "at": 44.355
+  },
+  {
+   "name": "stamp",
+   "at": 46.724
+  },
+  {
+   "name": "rise",
+   "at": 48.628
+  },
+  {
+   "name": "tick",
+   "at": 50.553
+  },
+  {
+   "name": "pop",
+   "at": 52.953
+  },
+  {
+   "name": "ding",
+   "at": 58.573
+  },
+  {
+   "name": "swish",
+   "at": 0.903
+  },
+  {
+   "name": "swish",
+   "at": 3.353
+  },
+  {
+   "name": "swish",
+   "at": 4.453
+  },
+  {
+   "name": "swish",
+   "at": 10.452
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 15.108
+  },
+  {
+   "name": "swish",
+   "at": 21.169
+  },
+  {
+   "name": "swish",
+   "at": 27.394
+  },
+  {
+   "name": "swish",
+   "at": 32.239
+  },
+  {
+   "name": "swish",
+   "at": 36.39
+  },
+  {
+   "name": "swish",
+   "at": 41.47
+  },
+  {
+   "name": "swish",
+   "at": 44.97
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 49.308
+  },
+  {
+   "name": "swish",
+   "at": 54.713
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [
+  {
+   "section": "e01",
+   "id": "shield",
+   "t": 16.76,
+   "sfx": "pop"
+  },
+  {
+   "section": "e01",
+   "id": "faces",
+   "t": 19.403,
+   "sfx": "tick"
+  },
+  {
+   "section": "e02",
+   "id": "count",
+   "t": 21.701,
+   "sfx": "rise"
+  },
+  {
+   "section": "e02",
+   "id": "bars",
+   "t": 25.808,
+   "sfx": "ding"
+  },
+  {
+   "section": "e03",
+   "id": "tip",
+   "t": 30.446,
+   "sfx": "snap"
+  },
+  {
+   "section": "e03",
+   "id": "win",
+   "t": 31.634,
+   "sfx": "ding"
+  },
+  {
+   "section": "e04",
+   "id": "q",
+   "t": 34.612,
+   "sfx": "pop"
+  },
+  {
+   "section": "e05",
+   "id": "bullets",
+   "t": 38.154,
+   "sfx": "pen"
+  },
+  {
+   "section": "e05",
+   "id": "draft",
+   "t": 40.618,
+   "sfx": "stamp"
+  },
+  {
+   "section": "e06",
+   "id": "timer",
+   "t": 42.905,
+   "sfx": "tick"
+  },
+  {
+   "section": "e06",
+   "id": "ring",
+   "t": 44.355,
+   "sfx": "ding"
+  },
+  {
+   "section": "e07",
+   "id": "stamp",
+   "t": 46.724,
+   "sfx": "stamp"
+  },
+  {
+   "section": "e07",
+   "id": "worse",
+   "t": 48.628,
+   "sfx": "rise"
+  }
+ ],
+ "partStarts": [
+  0.0,
+  15.053,
+  49.253
  ]
 }

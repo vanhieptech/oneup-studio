@@ -21,6 +21,8 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
 .sub{font-size:38px;font-weight:400;opacity:.65;white-space:nowrap}
 .tag{font-size:56px;font-weight:700;background:#111;color:#F7F7F5;border-radius:24px;padding:4px 28px 12px}
 /* clip-02 (rule-51/52 fx table) */
+.stampbox{position:absolute;border:9px solid #D64545;color:#D64545;font-weight:700;border-radius:18px;padding:6px 28px 14px;letter-spacing:2px;transform:rotate(-8deg);white-space:nowrap}
+.tag{font-size:56px;font-weight:700;background:#111;color:#F7F7F5;border-radius:24px;padding:4px 28px 12px}
 .acc{color:#FF5A36}
 .task{position:absolute;width:420px;height:200px;flex-direction:column;justify-content:center;align-items:flex-start;gap:4px}
 #t1{left:330px;top:820px}
@@ -49,7 +51,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
 .fixrow .p{font-size:40px;font-weight:600;opacity:.6}
 .fixrow .s{font-size:60px;font-weight:700;letter-spacing:-1px;display:flex;gap:18px;align-items:center}
 #bul{display:flex;flex-direction:column;gap:4px;font-size:40px;font-weight:600}
-#draft{left:600px;top:1010px;font-size:46px}
+#draft{left:520px;top:1180px;font-size:46px}
 #ring{position:absolute;left:240px;top:560px;width:600px;height:600px}
 #tnum{position:absolute;left:240px;top:760px;width:600px;text-align:center;font-size:150px;font-weight:700;letter-spacing:-6px}
 #stopok{position:absolute;left:300px;top:1220px;font-size:70px;font-weight:700;background:#1F9D55;color:#F7F7F5;border-radius:30px;padding:6px 40px 18px}

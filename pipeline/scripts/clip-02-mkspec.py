@@ -24,7 +24,7 @@ A=[SC("b01","b01","hook","desk","cut",H(0.74,act="idle",ex="sad"),[L("Tính năn
       props=[{"kind":"calendar","x":360,"y":1010,"s":0.8,"rot":-4,"pages":["HÔM NAY","MAI","TUẦN SAU","THÁNG SAU"],"tearAt":[0.0,0.76,1.5]}]),
    SC("b01c","b01","hook","desk","cut",H(0.5,act="idle",ex="sad"),[L("Toang thật rồi.","It's over.",["over."],["Toang thật rồi."],"sad")],
       ("Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TOANG! đập xuống rung","Toang"),[{"name":"stamp","atLine":0,"offset":0.0,"word":"Toang"}],framing="medium",push=0.12,
-      props=[{"kind":"vignette","at":0.0,"dark":0.6},{"kind":"words","x":540,"y":430,"words":["TOANG!"],"dropAt":[0.0]}]),
+      props=[{"kind":"vignette","at":0.0,"dark":0.6},{"kind":"words","x":540,"y":300,"s":1.45,"words":["TOANG!"],"dropAt":[0.0]}]),
    SC("b02","b02","struggle","desk","cut",H(0.42,act="typing",ex="sad"),[L("Mở code ra, năm giây sau đã lướt TikTok.","Open the code… five seconds later: TikTok.",["TikTok."],["Mở code ra,","năm giây sau đã lướt TikTok."],"sad",{"action":"idle","expression":"sad"}),
        L("Chán nản, tội lỗi, rồi tự mắng: mình lười quá.","Drained, guilty: “I'm so lazy.”",["guilty:","lazy."],["Chán nản, tội lỗi,","rồi tự mắng: {ừm} mình lười quá."],"sad")],
       ("Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash)","tội lỗi"),[{"name":"pop","atLine":0,"offset":1.6,"word":"TikTok"},{"name":"stamp","atLine":1,"offset":2.5,"word":"lười"}],
@@ -48,7 +48,7 @@ E=[SE("e01","b04","label-reveal",[L("Trì hoãn là né cảm giác khó chịu:
       [("stamp",0.35,"stamp","mắng mình"),("worse",0.85,"rise","càng khó chịu")],("Bong bóng 'Mình lười quá!' bị dấu đỏ '✕ KHÔNG GIÚP' đè lên; gai trên thẻ 'Báo cáo' dài thêm ra","mắng mình"))]
 B=[SC("b11","b11","payoff","paper","cut",H(0.66,pose="standing",act="talking",ex="focused"),[L("Lưu ý: nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra.","Note: correlational, a pattern only. Save this for the next time you stall.",["correlational,","Save"],["Lưu ý:","nghiên cứu này là tương quan,","chỉ cho thấy hướng.","Lưu lại, lần sau hoãn thì mở ra."])],
       ("Comic: Hiệp giơ ngón tay, bảng nhỏ 'tương quan khác nhân quả'; icon bookmark nảy lên ở chữ 'lưu lại'","tương quan"),[{"name":"tick","atLine":0,"offset":1.0,"word":"tương quan"},{"name":"pop","atLine":0,"offset":3.4,"word":"Lưu lại"}],
-      props=[{"kind":"sign","x":290,"y":930,"s":0.9,"rot":-5,"text":"CHỈ LÀ TƯƠNG QUAN","at":1.0}]),
+      props=[{"kind":"sign","x":400,"y":930,"s":0.72,"rot":-5,"text":"CHỈ LÀ TƯƠNG QUAN","at":1.0}]),
    SC("b12","b12","cta","grid","slide",H(0.5,pose="standing",act="talking",ex="happy"),[L("Việc bạn đang hoãn khó chịu chỗ nào? Comment một chữ.","What feels bad about the task you're avoiding? One word in the comments.",["bad","One"],["Việc bạn đang hoãn","khó chịu chỗ nào?","Comment một chữ."],"happy"),
       L("Còn tính năng Omi? Mình đi hỏi câu đó đây.","And the Omi feature? Asking myself right now.",["Omi"],["Còn tính năng Omi?","Mình đi hỏi câu đó đây."],"happy",{"action":"reacting"})],
       ("Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại màn hình 'Omi feature' như hook (loop), Hiệp mở laptop","Omi"),[{"name":"ding","atLine":1,"offset":0.1,"word":"hỏi câu đó"}])]
