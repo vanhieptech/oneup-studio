@@ -10,8 +10,8 @@ tags: [clip-02, post, tiktok, week-1]
 
 ## 1. File video
 ```
-Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4 (chưa render)
-Thời lượng: dự kiến 55–60s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4
+Thời lượng: 60.7s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
 ```
 
 ## 2. Chữ trên cover (≤ 40 ký tự)

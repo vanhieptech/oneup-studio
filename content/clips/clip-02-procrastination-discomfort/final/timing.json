@@ -1,5 +1,5 @@
 {
- "total": 61.206,
+ "total": 60.746,
  "parts": [
   {
    "id": "A",
@@ -20,7 +20,7 @@
    "id": "E",
    "engine": "hyperframes",
    "dir": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer",
-   "dur": 34.3,
+   "dur": 33.84,
    "mp4": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4",
    "fx": "circleopen",
    "scene_starts": [
@@ -28,8 +28,8 @@
     12.408999999999999,
     17.253999999999998,
     21.404999999999998,
-    26.215,
-    29.794999999999998
+    26.425,
+    29.335
    ],
    "_off": 15.021
   },
@@ -43,7 +43,7 @@
    "scene_starts": [
     5.58
    ],
-   "_off": 48.971
+   "_off": 48.511
   }
  ],
  "lines": [
@@ -171,25 +171,37 @@
    "beat": "clip-02.b08",
    "scene": "e05",
    "speaker": "hiep",
-   "say": "Không biết bắt đầu thì viết ba gạch đầu dòng, sợ dở thì cho phép nháp xấu.",
-   "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
+   "say": "Không biết bắt đầu thì viết ba gạch đầu dòng.",
+   "en": "No clear start? Write 3 bullets.",
    "emotion": "focused",
-   "key": "f5-7d0e3c4641ec",
+   "key": "f5-6d0718186688",
    "local": 21.705,
-   "dur": 3.96,
+   "dur": 2.38,
    "t": 36.726
+  },
+  {
+   "beat": "clip-02.b08",
+   "scene": "e05",
+   "speaker": "hiep",
+   "say": "Sợ dở thì cho phép nháp xấu.",
+   "en": "Afraid it'll be bad? Allow an ugly draft.",
+   "emotion": "focused",
+   "key": "f5-7235cf806b85",
+   "local": 24.335,
+   "dur": 1.54,
+   "t": 39.356
   },
   {
    "beat": "clip-02.b09",
    "scene": "e06",
    "speaker": "hiep",
-   "say": "Thấy chán thì hẹn mười phút, hết giờ là được dừng.",
-   "en": "Bored? Set 10 minutes. When it rings, you may stop.",
+   "say": "Thấy chán thì hẹn mười phút rồi được dừng.",
+   "en": "Bored? Set 10 minutes, then you may stop.",
    "emotion": "focused",
-   "key": "f5-1eda90f9886a",
-   "local": 26.515,
-   "dur": 2.73,
-   "t": 41.536
+   "key": "f5-c1e2911a848d",
+   "local": 26.725,
+   "dur": 2.06,
+   "t": 41.746
   },
   {
    "beat": "clip-02.b10",
@@ -199,9 +211,9 @@
    "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
    "emotion": "focused",
    "key": "f5-ec90053679ba",
-   "local": 30.095,
+   "local": 29.635,
    "dur": 3.56,
-   "t": 45.116
+   "t": 44.656
   },
   {
    "beat": "clip-02.b11",
@@ -213,7 +225,7 @@
    "key": "f5-5e41f5a3ecac",
    "local": 0.3,
    "dur": 4.83,
-   "t": 49.271
+   "t": 48.811
   },
   {
    "beat": "clip-02.b12",
@@ -225,7 +237,7 @@
    "key": "f5-ea4c76dacef9",
    "local": 0.55,
    "dur": 2.89,
-   "t": 55.101
+   "t": 54.641
   },
   {
    "beat": "clip-02.b12",
@@ -237,7 +249,7 @@
    "key": "f5-08542e06141e",
    "local": 3.64,
    "dur": 2.556,
-   "t": 58.191
+   "t": 57.731
   }
  ],
  "transitions": [
@@ -287,22 +299,22 @@
    "sfx": "swish"
   },
   {
-   "at": 41.268,
+   "at": 41.478,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 44.848,
+   "at": 44.388,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 49.178,
+   "at": 48.718,
    "kind": "part",
    "sfx": "whoosh-soft"
   },
   {
-   "at": 54.583,
+   "at": 54.123,
    "kind": "scene",
    "sfx": "swish"
   }
@@ -370,39 +382,39 @@
   },
   {
    "name": "pen",
-   "at": 38.021
+   "at": 38.084
   },
   {
    "name": "stamp",
-   "at": 40.337
+   "at": 40.515
   },
   {
    "name": "tick",
-   "at": 42.611
+   "at": 42.587
   },
   {
    "name": "ding",
-   "at": 44.101
+   "at": 43.742
   },
   {
    "name": "stamp",
-   "at": 46.481
+   "at": 46.022
   },
   {
    "name": "rise",
-   "at": 48.387
+   "at": 47.926
   },
   {
    "name": "tick",
-   "at": 50.303
+   "at": 49.843
   },
   {
    "name": "pop",
-   "at": 52.703
+   "at": 52.243
   },
   {
    "name": "ding",
-   "at": 58.323
+   "at": 57.863
   },
   {
    "name": "swish",
@@ -442,19 +454,19 @@
   },
   {
    "name": "swish",
-   "at": 41.148
+   "at": 41.358
   },
   {
    "name": "swish",
-   "at": 44.728
+   "at": 44.268
   },
   {
    "name": "whoosh-soft",
-   "at": 49.058
+   "at": 48.598
   },
   {
    "name": "swish",
-   "at": 54.463
+   "at": 54.003
   },
   {
    "name": "ambience",
@@ -507,43 +519,43 @@
   {
    "section": "e05",
    "id": "bullets",
-   "t": 38.021,
+   "t": 38.084,
    "sfx": "pen"
   },
   {
    "section": "e05",
    "id": "draft",
-   "t": 40.337,
+   "t": 40.515,
    "sfx": "stamp"
   },
   {
    "section": "e06",
    "id": "timer",
-   "t": 42.611,
+   "t": 42.587,
    "sfx": "tick"
   },
   {
    "section": "e06",
    "id": "ring",
-   "t": 44.101,
+   "t": 43.742,
    "sfx": "ding"
   },
   {
    "section": "e07",
    "id": "stamp",
-   "t": 46.481,
+   "t": 46.022,
    "sfx": "stamp"
   },
   {
    "section": "e07",
    "id": "worse",
-   "t": 48.387,
+   "t": 47.926,
    "sfx": "rise"
   }
  ],
  "partStarts": [
   0.0,
   15.053,
-  49.003
+  48.543
  ]
 }
