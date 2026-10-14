@@ -1,0 +1,73 @@
+⚠ rule-4   no timing.json yet; estimated 62s from word count
+⚠ rule-7   181 VI words (target ~150–170)
+✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
+✔ rule-8   last beat b12 part='cta' (CTA question expected)
+✔ rule-11  no Omi
+✔ rule-17  theme dark vs theme-map DARK
+✔ rule-15  video-engine fonts.ts uses Be Vietnam Pro
+✔ rule-21  no music
+⚠ rule-41  Southern particles in 1/13 lines
+✔ rule-41  addresses viewer as “bạn”
+✔ rule-41  English mix words: ['deadline'] (profile: 1–3 per clip; proper nouns exempt)
+⚠ rule-41  content/clips/clip-02-procrastination-discomfort/final/script-final.md: has unconfirmed story items → Hiệp must confirm before posting
+✔ rule-46  AI voices: Hiệp=F5 · Thái Sơn
+✔ rule-46  hiep voice = F5 · Thái Sơn (F5-TTS, CC-BY-NC-SA risk accepted DL-035)
+✔ rule-13  post.md credit HowToLiveBetter
+✔ rule-13  post.md license name
+✔ rule-13  post.md license link
+✔ rule-13  post.md 'đã chuyển thể / adapted'
+✔ rule-46  post.md: TikTok 'AI-generated content' toggle
+✔ rule-46  post.md: AI-voice disclosure line in caption
+✔ rule-46  post.md: disclosure names the engine (F5-TTS, DL-035)
+✔ rule-32  post.md hashtags
+✔ rule-52  transition_sfx planned: {'part': 'whoosh-soft', 'scene': 'swish'}
+✔ rule-52  b01: motion/visual described
+✔ rule-52  b01: effect tied to spoken word “TikTok”
+✔ rule-52  b02: motion/visual described
+✔ rule-52  b02: effect tied to spoken word “lười”
+✔ rule-52  b03: motion/visual described
+✔ rule-52  b03: effect tied to spoken word “né một cảm giác”
+✔ rule-52  e01: motion/visual described
+✔ rule-52  e01: effect tied to spoken word “khó chịu”
+✔ rule-52  e01: explainer has ≥1 planned hit + SFX
+✔ rule-52  e02: motion/visual described
+✔ rule-52  e02: effect tied to spoken word “sáu trăm chín mươi mốt”
+✔ rule-52  e02: explainer has ≥1 planned hit + SFX
+✔ rule-52  e03: motion/visual described
+✔ rule-52  e03: effect tied to spoken word “ở xa”
+✔ rule-52  e03: explainer has ≥1 planned hit + SFX
+✔ rule-52  e04: motion/visual described
+✔ rule-52  e04: effect tied to spoken word “hỏi một câu”
+✔ rule-52  e04: explainer has ≥1 planned hit + SFX
+✔ rule-52  e05: motion/visual described
+✔ rule-52  e05: effect tied to spoken word “gạch đầu dòng”
+✔ rule-52  e05: explainer has ≥1 planned hit + SFX
+✔ rule-52  e06: motion/visual described
+✔ rule-52  e06: effect tied to spoken word “mười phút”
+✔ rule-52  e06: explainer has ≥1 planned hit + SFX
+✔ rule-52  e07: motion/visual described
+✔ rule-52  e07: effect tied to spoken word “mắng mình”
+✔ rule-52  e07: explainer has ≥1 planned hit + SFX
+✔ rule-52  b11: motion/visual described
+✔ rule-52  b11: effect tied to spoken word “tương quan”
+✔ rule-52  b12: motion/visual described
+✔ rule-52  b12: effect tied to spoken word “một chữ”
+✔ rule-52  script-final.md effects table covers every beat
+✔ rule-52  effects table has no **THIẾU** cells
+✔ rule-49  lessons.md: 19 lessons loaded
+⚠ L-001    contact-sheet.png present for self-review
+✔ L-004    highlight indexes within EN caption
+✔ L-005    no [tags] in spoken text
+✔ L-006    phrase tempos within 0.85–1.15
+✔ L-010    key terms use phonetic spelling
+✔ L-017    voice markup valid
+✔ L-017    bank fillers available
+✔ L-018    {kéo:} used 0× (plain particles preferred by Hiệp; ≤ 1/clip)
+✔ L-017    fillers 1/clip (cap 3), per line ≤ 1
+✔ L-017    no markup in on-screen text
+✔ L-011    Omi/week consistent
+✔ L-003    caption segments never overlap
+⚠ L-014    hf-check.txt missing (run build-final lint gate)
+⚠ L-013    23 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+
+71 checks · 0 error(s) · 7 warning(s) → PASS
