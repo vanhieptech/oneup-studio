@@ -1,12 +1,11 @@
 {
   "id": "clip-01-final",
   "clip": "clip-01",
-  "title": "Mai học → nếu… thì… (implementation intention)",
-  "week": 5,
-  "weekNote": "DEMO / week-5 template: Omi appears (rule-11 allows Omi only from week 5). Cannot be posted as week-1 clip as-is.",
+  "title": "Mai học → nếu… thì… (implementation intention), full-info v2",
+  "week": 1,
   "theme": "light",
   "pillar": "1 Làm ít, xong nhiều",
-  "trend": "ingest: 'mai làm' / 'dự án ma' (generic jab, DL-019: no real ghost-project example)",
+  "trend": "ingest: 'mai làm' / 'để mai tính' procrastination jab (generic, DL-019)",
   "revisions": [
     {
       "date": "2026-10-13",
@@ -27,6 +26,11 @@
       "date": "2026-10-13",
       "dl": "DL-030",
       "note": "review r3: b03 EN highlight 'ghost … exam.' (was 'a'); grain alls 4 + CRF 20/maxrate 14M (431 MB → ~30 MB)"
+    },
+    {
+      "date": "2026-10-14",
+      "dl": "DL-041",
+      "note": "v2 full-information rewrite for week 1: no Omi, F5 Thái Sơn per-clause voice; adds name, mechanism, 2 examples, spoken stat+effect size, 3 uses, common mistake, cost 1–2 min, caveat, do-it-now CTA"
     }
   ],
   "parts": [
@@ -48,21 +52,10 @@
             {
               "id": "hiep",
               "x": 0.5,
+              "facing": "right",
               "pose": "sitting",
               "action": "idle",
               "expression": "sad"
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "neutral",
-              "text": "Kế hoạch học TOEIC của mình là… **mai học**.",
-              "say": "Kế hoạch học tô ích của mình là, mai học.",
-              "en": "My TOEIC study plan: “tomorrow.”",
-              "hl": [
-                4
-              ]
             }
           ],
           "sfx": [
@@ -70,6 +63,25 @@
               "name": "pop",
               "atLine": 0,
               "offset": 0.0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Kế hoạch học TOEIC của mình là… **mai học**.",
+              "en": "My TOEIC study plan: “tomorrow.”",
+              "hl": [
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "Kế hoạch học tô ích của mình là..."
+                },
+                {
+                  "t": "mai học."
+                }
+              ]
             }
           ]
         },
@@ -85,6 +97,7 @@
             {
               "id": "hiep",
               "x": 0.42,
+              "facing": "right",
               "pose": "sitting",
               "action": "typing",
               "expression": "focused"
@@ -93,92 +106,35 @@
           "lines": [
             {
               "speaker": "hiep",
-              "emotion": "neutral",
-              "text": "Tối nào cũng vậy á: code xong, mệt, rồi…",
-              "en": "Every night: code, tired, then…",
+              "emotion": "sad",
+              "text": "Tối nào cũng vậy: code xong, mệt, rồi… “thôi, **mai học**.”",
+              "en": "Every night: code, tired, then… “eh, tomorrow.”",
               "hl": [
-                2
+                6
+              ],
+              "phrases": [
+                {
+                  "t": "Tối nào cũng vậy:"
+                },
+                {
+                  "t": "code xong, mệt, rồi {ừm}"
+                },
+                {
+                  "t": "thôi, mai học."
+                }
               ],
               "set": {
                 "hiep": {
                   "action": "idle",
-                  "expression": "neutral"
-                }
-              }
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "sad",
-              "text": "“Thôi, **mai học**.” Mai của mình dài cả tuần luôn.",
-              "en": "“Eh, tomorrow.” My tomorrow lasts all week.",
-              "hl": [
-                1,
-                4
-              ],
-              "set": {
-                "hiep": {
                   "expression": "sad"
                 }
-              },
-              "take": 2
+              }
             }
           ]
         },
         {
           "id": "b03",
           "beat": "clip-01.b03",
-          "part": "story",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.3,
-              "pose": "sitting",
-              "action": "idle",
-              "expression": "sad"
-            },
-            {
-              "id": "omi",
-              "x": 0.74,
-              "pose": "standing",
-              "action": "idle",
-              "expression": "happy",
-              "facing": "left",
-              "enter": "pop"
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "omi",
-              "emotion": "teasing",
-              "text": "Nhóm chat nào cũng có **dự án ma**. Còn bạn có hẳn **kỳ thi ma** á nha.",
-              "en": "Everyone has a ghost project. You have a ghost exam.",
-              "hl": [
-                3,
-                9
-              ],
-              "set": {
-                "hiep": {
-                  "expression": "surprised",
-                  "action": "reacting"
-                }
-              }
-            }
-          ],
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": -0.3
-            }
-          ]
-        },
-        {
-          "id": "b04",
-          "beat": "clip-01.b04",
           "part": "turn",
           "background": "paper",
           "framing": "medium",
@@ -187,48 +143,40 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.3,
-              "pose": "standing",
-              "action": "idle",
-              "expression": "confused",
-              "facing": "right"
-            },
-            {
-              "id": "omi",
-              "x": 0.72,
+              "x": 0.5,
+              "facing": "right",
               "pose": "standing",
               "action": "talking",
-              "expression": "focused",
-              "facing": "left"
+              "expression": "confused"
             }
           ],
           "lines": [
             {
-              "speaker": "omi",
-              "emotion": "focused",
-              "text": "Nè, sửa đúng một câu thôi: **nếu…** thì…",
-              "en": "Change one sentence: IF… THEN…",
-              "hl": [
-                3,
-                4
-              ]
-            },
-            {
               "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Nếu… thì? Nghe giống **code** ghê á.",
-              "en": "If-then? Sounds like code.",
+              "emotion": "focused",
+              "text": "Hoá ra mình đâu thiếu động lực. Mình thiếu **một câu**: nếu… thì…",
+              "en": "Not missing motivation. Missing one sentence: IF… THEN…",
               "hl": [
-                3
+                4,
+                5,
+                6,
+                7
+              ],
+              "phrases": [
+                {
+                  "t": "Hoá ra mình đâu có thiếu động lực."
+                },
+                {
+                  "t": "Mình thiếu một câu:"
+                },
+                {
+                  "t": "nếu... thì..."
+                }
               ],
               "set": {
                 "hiep": {
                   "expression": "happy",
                   "action": "reacting"
-                },
-                "omi": {
-                  "expression": "happy",
-                  "action": "idle"
                 }
               }
             }
@@ -244,23 +192,62 @@
       "sections": [
         {
           "id": "e01",
-          "beat": "clip-01.b05",
+          "beat": "clip-01.b04",
           "part": "explain",
           "motion": "stagger",
           "lines": [
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Công thức nè: mấy giờ, ở đâu, gặp gì, thì làm gì.",
-              "en": "When, where, what cue, THEN what.",
+              "text": "Tâm lý học gọi nó là ý định thực hiện: viết sẵn mấy giờ, ở đâu, gặp gì, thì làm gì.",
+              "en": "It's called an implementation intention: when, where, what cue, THEN what.",
               "hl": [
-                4
+                3,
+                4,
+                9
+              ],
+              "phrases": [
+                {
+                  "t": "Tâm lý học gọi nó là ý định thực hiện:"
+                },
+                {
+                  "t": "viết sẵn mấy giờ, ở đâu, gặp gì,"
+                },
+                {
+                  "t": "thì làm gì."
+                }
               ]
             }
           ]
         },
         {
           "id": "e02",
+          "beat": "clip-01.b05",
+          "part": "explain",
+          "motion": "split-compare",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Vì mình quyết sẵn lúc còn tỉnh táo. Tới lúc mệt thì khỏi phải cãi với bản thân.",
+              "en": "Decide while fresh. When the cue shows up, no debate with tired you.",
+              "hl": [
+                0,
+                5
+              ],
+              "phrases": [
+                {
+                  "t": "Vì mình quyết sẵn lúc còn tỉnh táo."
+                },
+                {
+                  "t": "Tới lúc mệt thì khỏi phải cãi với bản thân."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e03",
           "beat": "clip-01.b06",
           "part": "explain",
           "motion": "strikethrough-replace",
@@ -268,47 +255,137 @@
             {
               "speaker": "hiep",
               "emotion": "neutral",
-              "text": "Ví dụ: chín giờ tối, gập laptop lại, thì mở một bài listening.",
-              "en": "9 PM, laptop closed: one listening lesson.",
+              "text": "Ví dụ: chín giờ tối, gập laptop, thì mở một bài listening.",
+              "en": "Example: 9 PM, laptop closed, THEN one listening lesson.",
               "hl": [
-                6
-              ]
-            }
-          ]
-        },
-        {
-          "id": "e03",
-          "beat": "clip-01.b07",
-          "part": "evidence",
-          "motion": "count-up",
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Gộp chín mươi tư kiểm nghiệm độc lập: ai viết nếu–thì, làm xong mục tiêu nhiều hơn hẳn.",
-              "en": "94 independent tests: if-then planners reached goals more often.",
-              "hl": [
-                0,
-                3
+                5,
+                7
+              ],
+              "phrases": [
+                {
+                  "t": "Ví dụ: chín giờ tối, gập laptop,"
+                },
+                {
+                  "t": "thì mở một bài listening."
+                }
               ]
             }
           ]
         },
         {
           "id": "e04",
+          "beat": "clip-01.b07",
+          "part": "explain",
+          "motion": "card-flip",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "neutral",
+              "text": "Hoặc: sáng thứ ba tám giờ ngồi vào bàn, thì viết phần mở đầu trước.",
+              "en": "Or: Tuesday 8 AM, at my desk, THEN write the intro first.",
+              "hl": [
+                7,
+                10
+              ],
+              "phrases": [
+                {
+                  "t": "Hoặc: sáng thứ ba tám giờ ngồi vào bàn,"
+                },
+                {
+                  "t": "thì viết phần mở đầu trước."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e05",
           "beat": "clip-01.b08",
+          "part": "evidence",
+          "motion": "count-up",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Gộp chín mươi tư kiểm nghiệm độc lập: người viết kiểu này đạt mục tiêu nhiều hơn rõ, hiệu ứng vừa tới lớn.",
+              "en": "94 independent tests: if-then planners hit goals more often. Medium-to-large effect.",
+              "hl": [
+                0,
+                3,
+                9
+              ],
+              "phrases": [
+                {
+                  "t": "Gộp chín mươi tư kiểm nghiệm độc lập:"
+                },
+                {
+                  "t": "người viết kiểu này đạt mục tiêu nhiều hơn rõ,"
+                },
+                {
+                  "t": "hiệu ứng vừa tới lớn."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e06",
+          "beat": "clip-01.b09",
           "part": "explain",
           "motion": "underline-draw",
           "lines": [
             {
               "speaker": "hiep",
               "emotion": "neutral",
-              "text": "Nó giúp lúc bắt đầu, lúc Messenger réo, và lúc nên bỏ việc chắc chắn không thành.",
-              "en": "It helps you start, hold on when Messenger pings, and quit what can't work.",
+              "text": "Nó giúp bạn bắt tay làm, đứng vững khi bị chen ngang, và dừng việc chắc chắn không thành.",
+              "en": "It helps you start, hold on when interrupted, and quit what can't work.",
               "hl": [
                 3,
+                4,
+                9
+              ],
+              "phrases": [
+                {
+                  "t": "Nó giúp bạn bắt tay làm,"
+                },
+                {
+                  "t": "đứng vững khi bị chen ngang,"
+                },
+                {
+                  "t": "và dừng việc chắc chắn không thành."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e07",
+          "beat": "clip-01.b10",
+          "part": "explain",
+          "motion": "strikethrough-replace",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Lỗi hay gặp: “rảnh thì học”. Rảnh đâu phải tín hiệu. Phải là một giờ, một chỗ, hay một việc vừa xong.",
+              "en": "Common mistake: “when I'm free.” Use a time, a place, or a finished task.",
+              "hl": [
+                0,
+                1,
                 7,
-                10
+                9,
+                13
+              ],
+              "phrases": [
+                {
+                  "t": "Lỗi hay gặp: rảnh thì học."
+                },
+                {
+                  "t": "Rảnh đâu phải tín hiệu."
+                },
+                {
+                  "t": "Phải là một giờ, một chỗ, hay một việc vừa xong."
+                }
               ]
             }
           ]
@@ -320,8 +397,8 @@
       "engine": "remotion",
       "scenes": [
         {
-          "id": "b09",
-          "beat": "clip-01.b09",
+          "id": "b11",
+          "beat": "clip-01.b11",
           "part": "payoff",
           "background": "paper",
           "framing": "medium",
@@ -330,64 +407,37 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.3,
-              "pose": "standing",
-              "action": "idle",
-              "expression": "neutral",
-              "facing": "right"
-            },
-            {
-              "id": "omi",
-              "x": 0.72,
+              "x": 0.5,
+              "facing": "right",
               "pose": "standing",
               "action": "talking",
-              "expression": "focused",
-              "facing": "left"
+              "expression": "focused"
             }
           ],
           "lines": [
             {
-              "speaker": "omi",
+              "speaker": "hiep",
               "emotion": "focused",
-              "text": "Mà nhớ nha: việc **hông thật sự muốn** thì viết cỡ nào cũng vậy.",
-              "en": "Only works for goals you actually want.",
+              "text": "Mà nhớ: chỉ hiệu quả với việc bạn **thật sự muốn**. Viết mất một, hai phút thôi.",
+              "en": "Only works for goals you actually want. Takes 1–2 minutes.",
               "hl": [
                 5,
                 6
-              ]
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Okay. Chín giờ tối nay, mình có hẹn với **TOEIC**.",
-              "en": "Okay. 9 PM tonight: date with TOEIC.",
-              "hl": [
-                6
               ],
-              "set": {
-                "hiep": {
-                  "expression": "happy",
-                  "action": "reacting"
+              "phrases": [
+                {
+                  "t": "Mà nhớ nha: chỉ hiệu quả với việc bạn thật sự muốn."
                 },
-                "omi": {
-                  "expression": "happy",
-                  "action": "idle"
+                {
+                  "t": "Viết mất một, hai phút thôi."
                 }
-              },
-              "say": "Ô kê. Chín giờ tối nay, mình có hẹn với tô ích."
-            }
-          ],
-          "sfx": [
-            {
-              "name": "ding",
-              "atLine": 1,
-              "offset": 0.2
+              ]
             }
           ]
         },
         {
-          "id": "b10",
-          "beat": "clip-01.b10",
+          "id": "b12",
+          "beat": "clip-01.b12",
           "part": "cta",
           "background": "grid",
           "framing": "medium",
@@ -396,53 +446,64 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.3,
+              "x": 0.5,
+              "facing": "right",
               "pose": "standing",
               "action": "talking",
-              "expression": "happy",
-              "facing": "right"
-            },
+              "expression": "happy"
+            }
+          ],
+          "sfx": [
             {
-              "id": "omi",
-              "x": 0.72,
-              "pose": "standing",
-              "action": "idle",
-              "expression": "happy",
-              "facing": "left"
+              "name": "ding",
+              "atLine": 1,
+              "offset": 0.1
             }
           ],
           "lines": [
             {
               "speaker": "hiep",
               "emotion": "happy",
-              "text": "Còn bạn? Viết một câu **nếu–thì** cho cái “mai” của bạn, rồi comment nha.",
-              "en": "Your turn: one if-then line. Drop it in the comments.",
+              "text": "Thử luôn đi: viết một câu **nếu–thì** cho cái “mai” của bạn, rồi comment.",
+              "en": "Try it now: one if-then line for your “tomorrow”. Comment it.",
               "hl": [
-                3,
                 4
+              ],
+              "phrases": [
+                {
+                  "t": "Thử luôn đi:"
+                },
+                {
+                  "t": "viết một câu nếu thì cho cái mai của bạn,"
+                },
+                {
+                  "t": "rồi comment nha."
+                }
               ]
             },
             {
-              "speaker": "omi",
+              "speaker": "hiep",
               "emotion": "happy",
-              "text": "Cái “mai” hết đường trốn rồi nha.",
+              "text": "Cái “mai” hết đường trốn rồi.",
               "en": "“Tomorrow” has nowhere to hide.",
               "hl": [
                 0
               ],
+              "phrases": [
+                {
+                  "t": "Cái mai hết đường trốn rồi."
+                }
+              ],
               "set": {
                 "hiep": {
-                  "action": "idle"
-                },
-                "omi": {
                   "action": "reacting"
                 }
-              },
-              "take": 2
+              }
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "length_exception": "DL-041 (info-dense, ≤70s, Hiệp allowed 2026-10-14)"
 }

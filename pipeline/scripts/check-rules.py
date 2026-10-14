@@ -69,7 +69,8 @@ def main():
     tpath = os.path.join(fdir, "timing.json")
     if os.path.exists(tpath):
         t = json.load(open(tpath)); total = t.get("total", 0)
-        (ok if 55 <= total <= 60.5 else err)("rule-4", f"planned length {total:.1f}s (target 55–60s)")
+        LX = spec.get("length_exception")  # DL-041: Hiệp-approved info-dense exception, ≤70s, flagged as warning
+        (ok if 55 <= total <= 60.5 else (warn if LX and total <= 70 else err))("rule-4", f"planned length {total:.1f}s (target 55–60s)" + (f" · exception {LX}" if LX and total > 60.5 else ""))
         bt = {}
         for l in t["lines"]: bt.setdefault(l["scene"], []).append(l)
         for sid, ls in bt.items():
@@ -204,7 +205,8 @@ def main():
         else:
             j = ffprobe(mp4); v = [s for s in j["streams"] if s["codec_type"] == "video"][0]; au = [s for s in j["streams"] if s["codec_type"] == "audio"]
             d = float(j["format"]["duration"])
-            (ok if 55 <= d <= 60.5 else err)("rule-4", f"MP4 {d:.2f}s")
+            LX = spec.get("length_exception")
+            (ok if 55 <= d <= 60.5 else (warn if LX and d <= 70 else err))("rule-4", f"MP4 {d:.2f}s" + (f" · exception {LX}" if LX and d > 60.5 else ""))
             spec_ok = v["width"] == 1080 and v["height"] == 1920 and v["r_frame_rate"] == "30/1" and v["codec_name"] == "h264" and v.get("profile") == "High" and v["pix_fmt"] == "yuv420p" and v.get("color_space") == "bt709"
             (ok if spec_ok else err)("rule-4", f"video {v['width']}×{v['height']} {v['r_frame_rate']} {v['codec_name']} {v.get('profile')} {v['pix_fmt']} {v.get('color_space')}")
             if not au: err("rule-46", "MP4 has no audio track")
