@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-hop-khong-agenda",
+ "title": "[STUB] Vào họp nói đại cho có? Họp không agenda thì đừng mở",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "meeting-speak-up-nothing",
+  "bridge_id": "B-meeting-01",
+  "lesson": "4.5 Gửi agenda trước, không agenda thì không họp, họp đứng được thì đứng (Leach 2009; Bluedorn 1999: họp ngồi dài hơn 34%, chất lượng quyết định như nhau; chỉ là thí nghiệm nhóm 5 người) + 4.6 bớt họp, việc nhắn được thì nhắn",
+  "angle": "humor / data",
+  "pattern": "P11 + P04",
+  "differentiation": "Mọi người đang nói: phe 'cứ nói cho sếp thấy' vs phe 'lời khuyên tệ, giả mất mic để chuồn' (https://x.com/i/trending/2110082413669781821). Góc của mình: cả hai phe đều coi cuộc họp là chuyện đương nhiên; sách hỏi câu trước đó: họp này có agenda chưa, có cần ngồi không. Chuyện họp ở chỗ làm của Hiệp chỉ dùng khi Hiệp xác nhận."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "hop-khong-agenda.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lời khuyên đang gây bão nè: vào họp thì cứ nói, nói đại cũng được, miễn sếp thấy bạn có mặt.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Viral tip: talk in meetings, even if it's nothing.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "hop-khong-agenda.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Phe bên kia thì rủ nhau giả mất mic, để chuồn cho lẹ.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "The other side: fake a mic issue and dip.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "hop-khong-agenda.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ừm… hai phe cãi nhau, mà hông ai hỏi: cuộc họp này có cần hông?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Nobody asks: do we need this meeting?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "hop-khong-agenda.b04",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện một cuộc họp ở chỗ làm mà Hiệp ngồi cả tiếng, nói được một câu.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder]",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "hop-khong-agenda.b05",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách kể một thí nghiệm nè: họp ngồi kéo dài hơn họp đứng ba mươi bốn phần trăm. Quyết định thì tốt y chang.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Sit-down meetings ran 34% longer. Same decisions.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "hop-khong-agenda.b06",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Họp có gửi agenda trước, người ta thấy đáng họp hơn. Hông có agenda, thì đừng mở họp.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "No agenda, no meeting.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "hop-khong-agenda.b07",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Việc gì nhắn được thì nhắn. Bớt một cuộc họp, là lời nguyên một cuộc họp.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "If a message works, skip the meeting.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "hop-khong-agenda.b08",
+   "duration": 5,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cuộc họp tiếp theo của bạn có agenda chưa? Viết ba dòng thôi nha.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Next meeting: write a 3-line agenda.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{"ideas":[
+{"id":"hop-khong-agenda","title":"Vào họp nói đại cho có? Họp không agenda thì đừng mở","trend_id":"meeting-speak-up-nothing","bridge_id":"B-meeting-01",
+ "lesson":"4.5 Gửi agenda trước, không agenda thì không họp, họp đứng được thì đứng (Leach 2009; Bluedorn 1999: họp ngồi dài hơn 34%, chất lượng quyết định như nhau; chỉ là thí nghiệm nhóm 5 người) + 4.6 bớt họp, việc nhắn được thì nhắn",
+ "angle":"humor / data","pattern":"P11 + P04",
+ "differentiation":"Mọi người đang nói: phe 'cứ nói cho sếp thấy' vs phe 'lời khuyên tệ, giả mất mic để chuồn' (https://x.com/i/trending/2110082413669781821). Góc của mình: cả hai phe đều coi cuộc họp là chuyện đương nhiên; sách hỏi câu trước đó: họp này có agenda chưa, có cần ngồi không. Chuyện họp ở chỗ làm của Hiệp chỉ dùng khi Hiệp xác nhận.",
+ "theme":"dark","week":2,"target":"ý tưởng mới (trụ 2, gần clip-09 3.7)",
+ "hook_vi":"Lời khuyên đang gây bão nè: vào họp thì cứ nói, nói đại cũng được, miễn sếp thấy bạn có mặt.",
+ "moment_vi":"Ngồi họp cả tiếng, nói một câu cho có.","turn_vi":"Không agenda thì không họp.","hook_en":"Talk in meetings, even if it's nothing?",
+ "explainer":"HyperFrames: hai thanh thời gian 'họp ngồi' dài hơn 34% so với 'họp đứng', dấu = ở ô 'chất lượng quyết định'; ghi chú nhỏ 'thí nghiệm nhóm 5 người'.",
+ "beats":[
+  {"text":"Lời khuyên đang gây bão nè: vào họp thì cứ nói, nói đại cũng được, miễn sếp thấy bạn có mặt.","expression":"surprised","action":"talking","pose":"standing","background":"grid","duration":6,"caption_en":"Viral tip: talk in meetings, even if it's nothing."},
+  {"text":"Phe bên kia thì rủ nhau giả mất mic, để chuồn cho lẹ.","expression":"confused","action":"idle","pose":"standing","background":"grid","duration":5,"caption_en":"The other side: fake a mic issue and dip."},
+  {"text":"Ừm… hai phe cãi nhau, mà hông ai hỏi: cuộc họp này có cần hông?","expression":"confused","action":"thinking","pose":"standing","background":"grid","duration":6,"caption_en":"Nobody asks: do we need this meeting?"},
+  {"text":"[CẦN HIỆP XÁC NHẬN] Chuyện một cuộc họp ở chỗ làm mà Hiệp ngồi cả tiếng, nói được một câu.","expression":"sad","action":"idle","pose":"sitting","background":"desk","duration":7,"caption_en":"[story placeholder]"},
+  {"text":"Sách kể một thí nghiệm nè: họp ngồi kéo dài hơn họp đứng ba mươi bốn phần trăm. Quyết định thì tốt y chang.","expression":"focused","action":"talking","pose":"standing","background":"paper","duration":7,"caption_en":"Sit-down meetings ran 34% longer. Same decisions."},
+  {"text":"Họp có gửi agenda trước, người ta thấy đáng họp hơn. Hông có agenda, thì đừng mở họp.","expression":"focused","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"No agenda, no meeting."},
+  {"text":"Việc gì nhắn được thì nhắn. Bớt một cuộc họp, là lời nguyên một cuộc họp.","expression":"neutral","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"If a message works, skip the meeting."},
+  {"text":"Cuộc họp tiếp theo của bạn có agenda chưa? Viết ba dòng thôi nha.","expression":"happy","action":"talking","pose":"standing","background":"paper","duration":5,"caption_en":"Next meeting: write a 3-line agenda."}
+ ]},
+{"id":"ky-luat-thieu-mot-dong","title":"Kỷ luật thắng động lực, mà còn thiếu một dòng: điều kiện dừng","trend_id":"process-over-motivation","bridge_id":"B-exit-01",
+ "lesson":"4.2 Trước khi bắt đầu, viết điều kiện dừng: tới ngày X chưa đạt chỉ số Y thì dừng (Gollwitzer & Sheeran 2006, bằng chứng B; sách ghi chưa ai tính riêng tiết kiệm bao nhiêu thời gian) + liên hệ 4.3 chỉ nhìn đầu tư và lợi ích tương lai",
+ "angle":"contrarian / story","pattern":"P03",
+ "differentiation":"Mọi người đang nói: động lực thì hết, kỷ luật và quy trình mới bền (https://x.com/i/trending/2110056148217041263, https://x.com/i/trending/2109288556262821898). Góc của mình: kỷ luật mà không có điều kiện dừng thì dễ thành cắn răng đẩy tiếp một việc đã hỏng; sách thêm một dòng viết lúc còn tỉnh. Chuyện side project OneUp của Hiệp (S-02) chỉ dùng khi Hiệp xác nhận. Không nói về trading, không khuyên đầu tư.",
+ "theme":"light","week":1,"target":"ý tưởng mới (trụ 1, gần clip-06 4.12)",
+ "hook_vi":"Mấy hôm nay ai cũng nói: động lực thì hết, kỷ luật mới ở lại.","moment_vi":"Cắn răng làm tiếp một việc đã hỏng.","turn_vi":"Viết sẵn điều kiện dừng trước khi bắt đầu.","hook_en":"Discipline beats motivation. One line is missing.",
+ "explainer":"HyperFrames: thẻ giấy 'Điều kiện dừng: tới ngày __, chưa đạt __ thì dừng' được viết từng chữ.",
+ "beats":[
+  {"text":"Mấy hôm nay ai cũng nói: động lực thì hết, kỷ luật mới ở lại.","expression":"surprised","action":"talking","pose":"standing","background":"grid","duration":5,"caption_en":"Everyone says: discipline beats motivation."},
+  {"text":"Đúng á. Mà kỷ luật kiểu cắn răng làm tiếp hoài, nhiều khi là đang đẩy tiếp một việc đã hỏng.","expression":"confused","action":"thinking","pose":"standing","background":"grid","duration":7,"caption_en":"Sometimes 'discipline' is pushing a dead plan."},
+  {"text":"[CẦN HIỆP XÁC NHẬN] Chuyện một feature hay side project mà Hiệp đã cố quá lâu.","expression":"sad","action":"typing","pose":"sitting","background":"desk","duration":7,"caption_en":"[story placeholder]"},
+  {"text":"Sách chỉ thêm một dòng thôi: trước khi bắt đầu, viết sẵn điều kiện dừng.","expression":"focused","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"Before you start, write your exit condition."},
+  {"text":"Kiểu vầy nè: tới ngày này, mà chưa đạt con số này, thì mình dừng.","expression":"focused","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"By this date, below this number, I stop."},
+  {"text":"Viết lúc còn tỉnh, chưa bỏ công vô. Để sau mới viết, là bị tiếc công kéo đi liền.","expression":"neutral","action":"talking","pose":"standing","background":"paper","duration":7,"caption_en":"Write it calm, before sunk cost kicks in."},
+  {"text":"Việc bạn đang cố nhất bây giờ, điều kiện dừng của nó là gì? Viết một dòng nha.","expression":"happy","action":"talking","pose":"standing","background":"paper","duration":6,"caption_en":"Your exit condition: one line."}
+ ]}
+]}

@@ -23,6 +23,8 @@ tags: [index, retrieval]
 | clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
 | clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
+| sample-f5 | sample | None | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
+| sample-f5n | sample | None | `content/samples/sample-f5n/README.md` | sample-f5n (DL-039): F5 v5 naturalness markup |
 | sample-full-w5 | sample | internal (không đăng) | `content/samples/sample-full-w5/README.md` | Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer |
 | sample-natural | sample | None | `content/samples/sample-natural/README.md` | sample-natural (DL-033): natural-prosody voice + lint-clean HyperFrames explainer |
 | story-bank | plan | needs-confirmation | `content/story-bank.md` | Story bank: chuyện thật của Hiệp (rule-41) |
@@ -31,6 +33,7 @@ tags: [index, retrieval]
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | hyperframes-audit-2026-10-13 | audit | partial (sample fixed, clip-01 port pending) | `logs/hyperframes-audit-2026-10-13.md` | Audit: clip-01 explainer vs HyperFrames skills (DL-032) |
+| lessons | log | None | `logs/lessons.md` | Lessons: lỗi đã gặp → kiểm tra tự động (rule-49) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
 | refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
@@ -46,9 +49,11 @@ tags: [index, retrieval]
 | trends-2026-10-13 | trend-digest | done | `research/trends/2026-10-13/digest.md` | Trend digest: 2026-10-13 (skill v2, chạy tự động 08:05–08:30 giờ VN) |
 | trends-2026-10-13-idea-bank-additions | plan | pending-merge | `research/trends/2026-10-13/idea-bank-additions.md` | Dòng mới cho content/idea-bank.md (sync-trends.sh chưa tự gộp file này) |
 | trends-patterns | pattern-library | living | `research/trends/2026-10-13/patterns.md` | Hook & format pattern library (rule-47) |
+| trends-2026-10-14 | trend-digest | draft-needs-review | `research/trends/2026-10-14/digest.md` | Trend digest 2026-10-14 |
+| trends-patterns | pattern-library | living | `research/trends/2026-10-14/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
-| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026) |
+| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.6, 14/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
 | skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
 | skills-hyperframes | vendored-skills | None | `skills/hyperframes/README.md` | HyperFrames official skills (vendored) |
@@ -151,7 +156,7 @@ tags: [index, retrieval]
 | id | title |
 |---|---|
 | rule-1 | Ngôn ngữ |
-| rule-2 | Giọng (DL-030) |
+| rule-2 | Giọng (DL-035) |
 | rule-3 | Lên hình |
 | rule-4 | Độ dài |
 | rule-5 | Phong cách (xoay vòng trong khuôn comic) |
@@ -195,9 +200,10 @@ tags: [index, retrieval]
 | rule-43 | Cách điệu mạnh |
 | rule-44 | AI image local chỉ để phác ý tưởng |
 | rule-45 | Engine video comic (`video-engine/`, vai trò xem luật 25) |
-| rule-46 | Giọng AI nhân vật (VieNeu-TTS) |
+| rule-46 | Giọng AI nhân vật (F5-TTS, DL-035) |
 | rule-47 | Trend job biết học (DL-029) |
 | rule-48 | Một quy trình duy nhất cho mọi clip (DL-031) |
+| rule-49 | Cổng bài học, tự học từ lỗi (lessons gate) |
 
 ## Clips
 | id | theme | path | files |

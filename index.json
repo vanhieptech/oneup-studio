@@ -114,6 +114,22 @@
    "title": "Idea bank"
   },
   {
+   "id": "sample-f5",
+   "type": "sample",
+   "status": null,
+   "updated": "2026-10-13",
+   "path": "content/samples/sample-f5/README.md",
+   "title": "sample-f5 (DL-035): same as sample-natural, voices = F5-TTS"
+  },
+  {
+   "id": "sample-f5n",
+   "type": "sample",
+   "status": null,
+   "updated": "2026-10-14",
+   "path": "content/samples/sample-f5n/README.md",
+   "title": "sample-f5n (DL-039): F5 v5 naturalness markup"
+  },
+  {
    "id": "sample-full-w5",
    "type": "sample",
    "status": "internal (không đăng)",
@@ -176,6 +192,14 @@
    "updated": "2026-10-13",
    "path": "logs/hyperframes-audit-2026-10-13.md",
    "title": "Audit: clip-01 explainer vs HyperFrames skills (DL-032)"
+  },
+  {
+   "id": "lessons",
+   "type": "log",
+   "status": null,
+   "updated": "2026-10-13",
+   "path": "logs/lessons.md",
+   "title": "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
   },
   {
    "id": "rules-audit-2026-10-13",
@@ -298,10 +322,26 @@
    "title": "Hook & format pattern library (rule-47)"
   },
   {
+   "id": "trends-2026-10-14",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-14",
+   "path": "research/trends/2026-10-14/digest.md",
+   "title": "Trend digest 2026-10-14"
+  },
+  {
+   "id": "trends-patterns",
+   "type": "pattern-library",
+   "status": "living",
+   "updated": "2026-10-14",
+   "path": "research/trends/2026-10-14/patterns.md",
+   "title": "Hook & format pattern library (rule-47)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-12",
+   "updated": "2026-10-14",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -309,7 +349,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-13",
+   "updated": "2026-10-14",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -319,7 +359,7 @@
    "status": "active",
    "updated": "2026-10-13",
    "path": "rules/video-rules.md",
-   "title": "@hi.oneup: Bộ luật sản xuất video (v3.2, 13/10/2026)"
+   "title": "@hi.oneup: Bộ luật sản xuất video (v3.6, 14/10/2026)"
   },
   {
    "id": "skill.humanizer",
@@ -1012,7 +1052,7 @@
   },
   {
    "id": "rule-2",
-   "title": "Giọng (DL-030)",
+   "title": "Giọng (DL-035)",
    "path": "rules/video-rules.md"
   },
   {
@@ -1232,7 +1272,7 @@
   },
   {
    "id": "rule-46",
-   "title": "Giọng AI nhân vật (VieNeu-TTS)",
+   "title": "Giọng AI nhân vật (F5-TTS, DL-035)",
    "path": "rules/video-rules.md"
   },
   {
@@ -1243,6 +1283,11 @@
   {
    "id": "rule-48",
    "title": "Một quy trình duy nhất cho mọi clip (DL-031)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-49",
+   "title": "Cổng bài học, tự học từ lỗi (lessons gate)",
    "path": "rules/video-rules.md"
   }
  ],

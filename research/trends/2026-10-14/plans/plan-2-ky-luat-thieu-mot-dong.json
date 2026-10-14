@@ -1,0 +1,282 @@
+{
+ "version": 1,
+ "id": "trend-ky-luat-thieu-mot-dong",
+ "title": "[STUB] Kỷ luật thắng động lực, mà còn thiếu một dòng: điều kiện dừng",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "process-over-motivation",
+  "bridge_id": "B-exit-01",
+  "lesson": "4.2 Trước khi bắt đầu, viết điều kiện dừng: tới ngày X chưa đạt chỉ số Y thì dừng (Gollwitzer & Sheeran 2006, bằng chứng B; sách ghi chưa ai tính riêng tiết kiệm bao nhiêu thời gian) + liên hệ 4.3 chỉ nhìn đầu tư và lợi ích tương lai",
+  "angle": "contrarian / story",
+  "pattern": "P03",
+  "differentiation": "Mọi người đang nói: động lực thì hết, kỷ luật và quy trình mới bền (https://x.com/i/trending/2110056148217041263, https://x.com/i/trending/2109288556262821898). Góc của mình: kỷ luật mà không có điều kiện dừng thì dễ thành cắn răng đẩy tiếp một việc đã hỏng; sách thêm một dòng viết lúc còn tỉnh. Chuyện side project OneUp của Hiệp (S-02) chỉ dùng khi Hiệp xác nhận. Không nói về trading, không khuyên đầu tư."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ky-luat-thieu-mot-dong.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy hôm nay ai cũng nói: động lực thì hết, kỷ luật mới ở lại.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Everyone says: discipline beats motivation.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ky-luat-thieu-mot-dong.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đúng á. Mà kỷ luật kiểu cắn răng làm tiếp hoài, nhiều khi là đang đẩy tiếp một việc đã hỏng.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Sometimes 'discipline' is pushing a dead plan.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ky-luat-thieu-mot-dong.b03",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện một feature hay side project mà Hiệp đã cố quá lâu.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder]",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ky-luat-thieu-mot-dong.b04",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách chỉ thêm một dòng thôi: trước khi bắt đầu, viết sẵn điều kiện dừng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Before you start, write your exit condition.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ky-luat-thieu-mot-dong.b05",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kiểu vầy nè: tới ngày này, mà chưa đạt con số này, thì mình dừng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "By this date, below this number, I stop.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ky-luat-thieu-mot-dong.b06",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Viết lúc còn tỉnh, chưa bỏ công vô. Để sau mới viết, là bị tiếc công kéo đi liền.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Write it calm, before sunk cost kicks in.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ky-luat-thieu-mot-dong.b07",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Việc bạn đang cố nhất bây giờ, điều kiện dừng của nó là gì? Viết một dòng nha.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Your exit condition: one line.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
