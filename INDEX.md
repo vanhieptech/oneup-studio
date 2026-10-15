@@ -64,6 +64,7 @@ tags: [index, retrieval]
 | research.scriptwriting-2026-10-15 | research | chờ Hiệp duyệt trước khi viết lại clip-02 | `docs/research/scriptwriting-research-2026-10-15.md` | Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup) |
 | per-video-pipeline | workflow | active | `docs/workflow/per-video-pipeline.md` | Quy trình một video, từ ý tưởng tới sẵn sàng đăng |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
+| logs.dup-scan-2026-10-15 | log | ready | `logs/dup-scan-2026-10-15.md` | Dup scan (chỉ báo, không xoá) |
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | hyperframes-audit-2026-10-13 | audit | partial (sample fixed, clip-01 port pending) | `logs/hyperframes-audit-2026-10-13.md` | Audit: clip-01 explainer vs HyperFrames skills (DL-032) |
 | lessons | log | ready | `logs/lessons.md` | Lessons: lỗi đã gặp → kiểm tra tự động (rule-49) |

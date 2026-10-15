@@ -418,6 +418,14 @@
    "title": "Nhật ký quyết định: @hi.oneup (luật 33)"
   },
   {
+   "id": "logs.dup-scan-2026-10-15",
+   "type": "log",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "logs/dup-scan-2026-10-15.md",
+   "title": "Dup scan (chỉ báo, không xoá)"
+  },
+  {
    "id": "effects-log",
    "type": "log",
    "status": "living",
