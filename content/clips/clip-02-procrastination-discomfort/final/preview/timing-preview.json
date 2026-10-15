@@ -1,17 +1,17 @@
 {
- "total": 9.15,
+ "total": 8.94,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/preview/plan-A-preview.voiced.json",
-   "dur": 9.155,
+   "dur": 8.937999999999999,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A-preview.mp4",
    "fx": null,
    "scene_starts": [
     1.059,
     2.34,
-    3.9109999999999996
+    3.71
    ],
    "_off": 0.0
   }
@@ -24,7 +24,7 @@
    "say": "Tính năng Ô mi nè!",
    "en": "The Omi feature, see.",
    "emotion": "sad",
-   "key": "f5-b0f4b45fc7fe",
+   "key": "f5-e2830f1e7d33",
    "local": 0.12,
    "dur": 0.879,
    "t": 0.12
@@ -36,7 +36,7 @@
    "say": "Hôm nay dời! Mai lại dời!",
    "en": "Pushed today. Pushed again tomorrow.",
    "emotion": "sad",
-   "key": "f5-219f881b0f1d",
+   "key": "f5-479fae2baa86",
    "local": 0.02,
    "dur": 1.201,
    "t": 1.079
@@ -45,12 +45,12 @@
    "beat": "clip-02.b01",
    "scene": "b01c",
    "speaker": "hiep",
-   "say": "Trời ơiii... thành dự án ma luôn!",
+   "say": "Trời ơi... thành dự án ma luôn!",
    "en": "Oh god, it's a ghost project now.",
    "emotion": "sad",
-   "key": "f5-0853d8d8cc22",
+   "key": "f5-d22e536a4d5a",
    "local": 0.02,
-   "dur": 1.491,
+   "dur": 1.29,
    "t": 2.36
   },
   {
@@ -60,34 +60,34 @@
    "say": "Hầy... mở cốt. Gõ hai dòng…",
    "en": "Sigh. Open the code. Two lines…",
    "emotion": "sad",
-   "key": "f5-34efe4a7e622",
+   "key": "f5-2676362ec96f",
    "local": 0.02,
    "dur": 1.383,
-   "t": 3.931
+   "t": 3.73
   },
   {
    "beat": "clip-02.b02",
    "scene": "b02",
    "speaker": "hiep",
-   "say": "Ủa?! Sao lướt Tíc Tóc tới khuya rồi?!",
+   "say": "Ủa? Sao lướt Tíc Tóc tới khuya rồi?!",
    "en": "wait, how is it midnight on TikTok?",
    "emotion": "surprised",
-   "key": "f5-7fa292316ffe",
+   "key": "f5-3f83a41f6b83",
    "local": 1.483,
-   "dur": 1.787,
-   "t": 5.394
+   "dur": 1.685,
+   "t": 5.193
   },
   {
    "beat": "clip-02.b02",
    "scene": "b02",
    "speaker": "hiep",
-   "say": "Xong tội lỗi, ghét bản thân: đồ lười!",
-   "en": "Then guilt, self-hate: “lazy bum!”",
+   "say": "Tội lỗi! Ghét bản thân! Đồ lười!",
+   "en": "Guilt! Self-hate! “LAZY BUM!”",
    "emotion": "sad",
-   "key": "f5-57833ee05b62",
-   "local": 3.35,
-   "dur": 1.834,
-   "t": 7.261
+   "key": "f5-c6a4ec74021a",
+   "local": 3.248,
+   "dur": 1.92,
+   "t": 6.958
   }
  ]
 }

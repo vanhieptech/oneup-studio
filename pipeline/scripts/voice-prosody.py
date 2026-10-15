@@ -39,7 +39,8 @@ BASE_TEMPO = {"Đức Trí": 1.12, "Kim Thanh": 1.04}   # gentle; pacing comes f
 PUNCT_GAP = {",": 0.18, ":": 0.26, "…": 0.38, "...": 0.38, ".": 0.32, "?": 0.34, "!": 0.3}
 ALIAS = {"toeic": "tô ích", "tô ít": "tô ích", "ok": "ô kê", "okay": "ô kê",
          # L-025: Whisper writes respelled English/brand words back in Latin; same word, not a misread
-         "pov": "pi ô vi", "omi": "ô mi", "tiktok": "tíc tóc", "tích tóc": "tíc tóc", "code": "cốt"}
+         "pov": "pi ô vi", "omi": "ô mi", "tiktok": "tíc tóc", "tích tóc": "tíc tóc", "code": "cốt",
+         "ôm mì": "ô mi", "âu mì": "ô mi"}  # Whisper heard-forms of the brand Omi (no Vietnamese word); human ear confirms (L-025)
 DIGITS = {"0": "không", "1": "một", "2": "hai", "3": "ba", "4": "bốn", "5": "năm", "6": "sáu", "7": "bảy", "8": "tám", "9": "chín", "10": "mười"}
 
 def parse_dsl(text):
@@ -288,6 +289,11 @@ def f5_line(j, d, sil_db=-32.0, search=0.25, fade=0.012):
         elif c is not None:
             nat = (c[1] - c[0]) / sr; gap = max(0.12, j["phrases"][pi].get("gap", 0.2), min(nat, 0.5))
             emit(c[0], gap); start = c[1]; group = []
+    if j.get("emph_tail"):  # L-028: harsh emphasis on the key word at the end of a self-blame line: +dB ramp + soft saturation
+        n = int(float(j["emph_tail"]) * SR); last = segs[-1] if len(segs[-1]) else segs[-2]
+        k = min(n, len(last)); g = 10 ** (float(j.get("emph_db", 3.5)) / 20); ramp = np.linspace(1, g, min(k, int(0.06 * SR)))
+        env = np.concatenate([ramp, np.full(k - len(ramp), g)]).astype(np.float32); seg = last[-k:] * env
+        last[-k:] = (np.tanh(seg * 1.6) / np.tanh(1.6)).astype(np.float32) * 0.7 + seg * 0.3
     segs.append(np.zeros(int(0.08 * SR), np.float32)); y = np.concatenate(segs); y = y + room_tone(len(y))
     out = []  # one meta entry per spec phrase (captions zip phrases 1:1); merged groups split by syllable share
     for g in meta:
@@ -304,7 +310,7 @@ def f5_line(j, d, sil_db=-32.0, search=0.25, fade=0.012):
 sys.path.insert(0, os.path.join(REPO, "pipeline/tts"))
 import markup as MK   # DL-039: fillers / particles / punctuation markup
 F5_UNIT_SEEDS = [11, 23, 37]
-F5_EXTRA_SEEDS = [53, 71, 89]   # same seed grid + speed 1.0 for every unit of a character → consistent timbre
+F5_EXTRA_SEEDS = [53, 71, 89, 101, 131, 157, 199]   # same seed grid + speed 1.0 for every unit of a character → consistent timbre
 SPLIT = r"[.,?!…;:—)”\"]"
 
 def split_units(txt, min_syl=4):
@@ -366,6 +372,10 @@ def f5_units(j, d):
     ref = j["ref"] if os.path.isabs(j["ref"]) else os.path.join(REPO, j["ref"])
     seeds = (F5_UNIT_SEEDS + F5_EXTRA_SEEDS)[:max(3, int(j.get("takes") or 3))]  # L-025: up to 6 takes for hard (respelled) lines
     items = [{"t": f5_text(u, ch), "seed": sd, "speed": float(j.get("speed") or 1.0), "out": os.path.join(d, f"u{ui}s{si}.wav")} for ui, u in enumerate(units) for si, sd in enumerate(seeds)]
+    if j.get("alts") and len(units) == 1:  # L-025: alternate spellings of one whole line, takes spread over them
+        tk = int(j.get("takes") or 3); al = [units[0]] + list(j["alts"]); grid = [(a, (F5_UNIT_SEEDS + F5_EXTRA_SEEDS)[k // len(al)]) for k, a in zip(range(tk), (al * tk))]
+        seeds = [g[1] for g in grid]
+        items = [{"t": f5_text(a, ch), "seed": sd, "speed": float(j.get("speed") or 1.0), "out": os.path.join(d, f"u0s{si}.wav")} for si, (a, sd) in enumerate(grid)]
     bf = os.path.join(d, "f5-batch.json"); json.dump({"ref": ref, "ref_text": j["ref_text"], "items": items}, open(bf, "w"), ensure_ascii=False)
     subprocess.run([F5_PY, os.path.join(REPO, "pipeline/tts/f5tts_gen.py"), bf], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     tx = stt([it["out"] for it in items]); cand = {}
@@ -377,14 +387,14 @@ def f5_units(j, d):
         y, lead, tail = _trim_unit(x, sr); h = tx[it["out"]]; t = it["t"]
         hn, rn = len(norm(h)), max(1, len(norm(t))); drop = max(0, rn - hn) / rn
         sc = sim(h, t, toneless=True) + 0.5 * sim(h, t) - 2 * _rep_penalty(h, t) - 2 * max(0, drop - 0.1)
-        cand.setdefault(ui, []).append({"seed": seeds[si], "y": y, "stt": h, "score": round(sc, 3), "sim": round(sim(h, t), 3), "f0": f0_stats(y, sr)["f0_med_hz"], "trim": [round(lead, 3), round(tail, 3)]})
+        cand.setdefault(ui, []).append({"t": t, "seed": seeds[si], "y": y, "stt": h, "score": round(sc, 3), "sim": round(sim(h, t), 3), "drop": round(drop, 3), "f0": f0_stats(y, sr)["f0_med_hz"], "trim": [round(lead, 3), round(tail, 3)]})
     if j.get("energetic"):  # hook: among takes passing STT (sim ≥ 0.8 toneless-aware score), prefer the most energetic (F0 range + loudness)
         for c in cand.values():
             for r in c: r["energy"] = float(np.sqrt(np.mean(r["y"] ** 2))); r["f0r"] = f0_stats(r["y"], SR).get("f0_range_st", 0) or 0
     pick = {ui: max(c, key=lambda r: r["score"]) for ui, c in cand.items()}
     if j.get("energetic"):
         for ui, c in cand.items():
-            ok_ = [r for r in c if r["score"] >= max(1.2, pick[ui]["score"] - 0.2)] or [pick[ui]]
+            ok_ = [r for r in c if r["sim"] >= 0.8 and r["drop"] <= 0.05] or [pick[ui]]  # L-025: STT 0.8 is a hard minimum; energy only among passing takes
             pick[ui] = max(ok_, key=lambda r: r["f0r"] + 40 * r["energy"])
     if len(units) > 1:
         med = float(np.median([p["f0"] for p in pick.values() if p["f0"]] or [0])); dom = max(set(p["seed"] for p in pick.values()), key=lambda s: sum(p["seed"] == s for p in pick.values()))
@@ -404,9 +414,14 @@ def f5_units(j, d):
         gap = 0 if last else max(MK.PAUSE.get(end_mark(val), 0.16), 0.2 if nxt.lstrip().startswith("(") else 0)
         if j.get("gap_max") is not None: gap = min(gap, float(j["gap_max"]))  # rule-55 hook: tight clause gaps
         segs += [y, np.zeros(int(gap * SR), np.float32)]
-        um.append({"kind": "unit", "text": val, "f5_text": f5_text(val, ch), "aside": aside, "start": round(t, 3), "end": round(t + len(y) / SR, 3), "seed": pick[ui]["seed"], "score": pick[ui]["score"],
+        um.append({"kind": "unit", "text": val, "f5_text": pick[ui].get("t") or f5_text(val, ch), "aside": aside, "start": round(t, 3), "end": round(t + len(y) / SR, 3), "seed": pick[ui]["seed"], "score": pick[ui]["score"],
                    "stt": pick[ui]["stt"], "f0": pick[ui]["f0"], "trim": pick[ui]["trim"], "gap_after": gap, "alts": [{"seed": r["seed"], "score": r["score"], "sim": r["sim"], "stt": r["stt"], "f0": r["f0"]} for r in cand[ui]]})
         t += len(y) / SR + gap; ui += 1
+    if j.get("emph_tail"):  # L-028: harsh emphasis on the key word at the end of a self-blame line: +dB ramp + soft saturation
+        n = int(float(j["emph_tail"]) * SR); last = segs[-1] if len(segs[-1]) else segs[-2]
+        k = min(n, len(last)); g = 10 ** (float(j.get("emph_db", 3.5)) / 20); ramp = np.linspace(1, g, min(k, int(0.06 * SR)))
+        env = np.concatenate([ramp, np.full(k - len(ramp), g)]).astype(np.float32); seg = last[-k:] * env
+        last[-k:] = (np.tanh(seg * 1.6) / np.tanh(1.6)).astype(np.float32) * 0.7 + seg * 0.3
     segs.append(np.zeros(int(0.08 * SR), np.float32)); y = np.concatenate(segs); y = y + room_tone(len(y))
     # caption chunks: spec phrases spread over spoken units by cumulative syllables (no audio is cut)
     sp = [(u, max(1, len(norm(u["f5_text"])))) for u in um if u["kind"] == "unit"]; tot = sum(n for _, n in sp)
@@ -419,7 +434,7 @@ def f5_units(j, d):
     vis = [max(1, len(norm(MK.visible(ph["t"])))) for ph in j["phrases"]]; vt = sum(vis); acc = 0; meta = []
     for ph, n in zip(j["phrases"], vis):
         meta.append({"text": MK.visible(ph["t"]), "start": round(at(acc / vt), 3), "end": round(at((acc + n) / vt), 3), "emph": ph.get("emph", False), "take": None, "sim": 1.0, "merged": True}); acc += n
-    tmp = os.path.join(d, "line.wav"); write(tmp, y); lt = stt([tmp])[tmp]; ref_sp = MK.spoken(raw, ch)
+    tmp = os.path.join(d, "line.wav"); write(tmp, y); lt = stt([tmp])[tmp]; ref_sp = pick[0]["t"] if j.get("alts") and len(units) == 1 else MK.spoken(raw, ch)
     j["_units"] = [u for u in um if u["kind"] == "unit"]; j["_bank"] = [u for u in um if u["kind"] == "bank"]; j["_spoken"] = ref_sp; j["_take_stt"] = {}; j["_leak"] = {}; j["_cuts"] = None
     return tmp, meta, lt, sim(lt, ref_sp), sim(lt, ref_sp, toneless=True)
 

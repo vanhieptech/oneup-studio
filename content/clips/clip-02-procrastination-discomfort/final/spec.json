@@ -137,11 +137,15 @@
                   "t": "Tính năng Ô mi nè!"
                 }
               ],
-              "takes": 6,
+              "takes": 10,
               "speed": 1.2,
               "gap_max": 0.1,
               "energetic": true,
-              "whole": true
+              "whole": true,
+              "alts": [
+                "Tính năng Âu mi nè!",
+                "Tính năng Ô-mi nè!"
+              ]
             }
           ],
           "fx": {
@@ -277,7 +281,7 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Trời ơiii, thành dự án ma luôn.",
+              "text": "Trời ơi… thành dự án ma luôn.",
               "en": "Oh god, it's a ghost project now.",
               "hl": [
                 4,
@@ -285,7 +289,7 @@
               ],
               "phrases": [
                 {
-                  "t": "Trời ơiii... thành dự án ma luôn!"
+                  "t": "Trời ơi... thành dự án ma luôn!"
                 }
               ],
               "set": {
@@ -293,11 +297,15 @@
                   "expression": "despair"
                 }
               },
-              "takes": 6,
+              "takes": 10,
               "speed": 1.2,
               "gap_max": 0.1,
               "energetic": true,
-              "whole": true
+              "whole": true,
+              "alts": [
+                "Trời ơiii... thành dự án ma luôn!",
+                "Trời ơi, thành dự án ma luôn!"
+              ]
             }
           ],
           "fx": {
@@ -384,7 +392,7 @@
             {
               "speaker": "hiep",
               "emotion": "surprised",
-              "text": "Ủa?! Sao lướt TikTok tới khuya rồi?",
+              "text": "Ủa? Sao lướt TikTok tới khuya rồi?",
               "en": "wait, how is it midnight on TikTok?",
               "hl": [
                 4,
@@ -392,7 +400,7 @@
               ],
               "phrases": [
                 {
-                  "t": "Ủa?! Sao lướt Tíc Tóc tới khuya rồi?!"
+                  "t": "Ủa? Sao lướt Tíc Tóc tới khuya rồi?!"
                 }
               ],
               "set": {
@@ -401,24 +409,27 @@
                   "expression": "surprised"
                 }
               },
-              "takes": 6,
+              "takes": 10,
               "speed": 1.2,
               "gap_max": 0.1,
               "energetic": true,
-              "whole": true
+              "whole": true,
+              "alts": [
+                "Ủa, sao lướt Tíc Tóc tới khuya rồi?!"
+              ]
             },
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Xong tội lỗi, ghét bản thân: đồ lười!",
-              "en": "Then guilt, self-hate: “lazy bum!”",
+              "text": "Tội lỗi! Ghét bản thân! ĐỒ LƯỜI!",
+              "en": "Guilt! Self-hate! “LAZY BUM!”",
               "hl": [
-                1,
-                2
+                0,
+                3
               ],
               "phrases": [
                 {
-                  "t": "Xong tội lỗi, ghét bản thân: đồ lười!"
+                  "t": "Tội lỗi! Ghét bản thân! Đồ lười!"
                 }
               ],
               "set": {
@@ -427,11 +438,16 @@
                   "expression": "sad"
                 }
               },
-              "takes": 6,
-              "speed": 1.2,
+              "takes": 10,
+              "speed": 1.0,
               "gap_max": 0.1,
               "energetic": true,
-              "whole": true
+              "whole": true,
+              "alts": [
+                "Tội lỗi! Ghét bản thân! Đồ lười này!"
+              ],
+              "emph_tail": 0.6,
+              "emph_db": 3.5
             }
           ],
           "fx": {

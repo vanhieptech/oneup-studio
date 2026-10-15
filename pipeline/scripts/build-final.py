@@ -60,8 +60,8 @@ def stage_voice(spec):
         if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
             v = pv["preset"]; ph = [{k: x for k, x in p.items() if k != "en"} for p in l["phrases"]]
             if pv.get("engine") == "f5-tts":  # DL-035
-                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp5"] + ([l["takes"]] if l.get("takes") else []) + ([l.get("speed"), l.get("gap_max"), l.get("energetic"), l.get("whole")] if any(l.get(k) is not None for k in ("speed", "gap_max", "energetic", "whole")) else []), ensure_ascii=False).encode()).hexdigest()[:12]
-                pjobs.append({"engine": "f5-tts", "speaker": l["speaker"], "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "takes": l.get("takes"), "speed": l.get("speed"), "gap_max": l.get("gap_max"), "energetic": l.get("energetic"), "whole": l.get("whole"), "out": os.path.join(VE, "public/voice", l["_key"])})
+                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp5"] + ([l["takes"]] if l.get("takes") else []) + ([l.get("speed"), l.get("gap_max"), l.get("energetic"), l.get("whole"), l.get("alts")] + ([l.get("emph_tail"), l.get("emph_db")] if l.get("emph_tail") else []) if any(l.get(k) is not None for k in ("speed", "gap_max", "energetic", "whole", "alts")) else []), ensure_ascii=False).encode()).hexdigest()[:12]
+                pjobs.append({"engine": "f5-tts", "speaker": l["speaker"], "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "takes": l.get("takes"), "speed": l.get("speed"), "gap_max": l.get("gap_max"), "energetic": l.get("energetic"), "whole": l.get("whole"), "alts": l.get("alts"), "emph_tail": l.get("emph_tail"), "emph_db": l.get("emph_db"), "out": os.path.join(VE, "public/voice", l["_key"])})
             else:
                 l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, ph, "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
                 pjobs.append({"voice": v, "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
