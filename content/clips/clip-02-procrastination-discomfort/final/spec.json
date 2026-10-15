@@ -51,6 +51,12 @@
       "v": 14,
       "date": "2026-10-15",
       "note": "v14 script Hiệp duyệt (t151): stem bản chất/Thứ nhất/Thứ hai/Và cuối cùng, cảm giác khó chịu, wording fixes; pre-voiced F5 STT-picked"
+    },
+    {
+      "v": 15,
+      "date": "2026-10-16",
+      "dl": "L-036",
+      "note": "v15 draft: Day 2 takeaway (4.9) at b08 + CTA echo, Thứ hai shortened, per-clause phrases + {nhấn:}/{kéo:} (chưa voice)"
     }
   ],
   "transition_sfx": {
@@ -196,11 +202,17 @@
               ],
               "phrases": [
                 {
-                  "t": "Thì cái bản chất của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?",
-                  "en": "So what's the essence of opening your laptop… then scrolling TikTok?"
+                  "t": "Thì cái {nhấn: bản chất}",
+                  "emph": true
+                },
+                {
+                  "t": "của cái việc mở láp tóp rồi lướt Tíc Tóc..."
+                },
+                {
+                  "t": "là gì?"
                 }
               ],
-              "voice_file": "voice/v14-b01.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
             }
           ],
@@ -272,11 +284,14 @@
               ],
               "phrases": [
                 {
-                  "t": "Ờ... coi clíp xíu thôi đã chứ, bạn ơi!",
-                  "en": "Uh… just a few clips first, buddy!"
+                  "t": "Ờ... coi clíp {nhấn: xíu thôi}",
+                  "emph": true
+                },
+                {
+                  "t": "đã chứ, bạn ơi!"
                 }
               ],
-              "voice_file": "voice/v14-b02.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -346,15 +361,25 @@
               "en": "First: scroll nonstop in bed, thumb running like a sewing machine, over and over.",
               "hl": [
                 1,
-                9
+                11
               ],
               "phrases": [
                 {
-                  "t": "Thứ nhất là các bạn phải lướt liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.",
-                  "en": "First: scroll nonstop in bed, thumb running like a sewing machine, over and over."
+                  "t": "Thứ nhất là"
+                },
+                {
+                  "t": "các bạn phải {nhấn: lướt} liên tục ở trên giường,",
+                  "emph": true
+                },
+                {
+                  "t": "ngón cái chạy như máy may,"
+                },
+                {
+                  "t": "một cách {kéo: lặp đi lặp lại}.",
+                  "emph": true
                 }
               ],
-              "voice_file": "voice/v14-b03.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
             }
           ]
@@ -430,11 +455,14 @@
               ],
               "phrases": [
                 {
-                  "t": "Clíp nữa thôi... clíp nữa thôi...",
-                  "en": "One more clip… just one more…"
+                  "t": "Clíp nữa thôi..."
+                },
+                {
+                  "t": "clíp {nhấn: nữa thôi}...",
+                  "emph": true
                 }
               ],
-              "voice_file": "voice/v14-b04.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -500,20 +528,30 @@
             {
               "speaker": "hiep",
               "emotion": "confused",
-              "text": "Thứ hai là khi nào xuất hiện cái **cảm giác khó chịu** khi mở file để làm việc… thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi review đồ ăn.",
-              "say": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi ri viu đồ ăn.",
-              "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast: tidy the desk, watch food reviews.",
+              "text": "Thứ hai là khi nào xuất hiện **cái cảm giác khó chịu** khi mở file để làm việc… thì phải đổi việc liền.",
+              "say": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì phải đổi việc liền.",
+              "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
               "hl": [
                 4,
                 14
               ],
               "phrases": [
                 {
-                  "t": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi ri viu đồ ăn.",
-                  "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast: tidy the desk, watch food reviews."
+                  "t": "Thứ hai là {nhấn: khi nào}",
+                  "emph": true
+                },
+                {
+                  "t": "xuất hiện {kéo: cái cảm giác khó chịu}",
+                  "emph": true
+                },
+                {
+                  "t": "khi mở phai để làm việc..."
+                },
+                {
+                  "t": "thì phải đổi việc liền."
                 }
               ],
-              "voice_file": "voice/v14-b05.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
             }
           ]
@@ -601,11 +639,17 @@
               ],
               "phrases": [
                 {
-                  "t": "Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã, rồi mai lại né.",
-                  "en": "And finally: curse yourself out properly, then dodge again tomorrow."
+                  "t": "Và cuối cùng là"
+                },
+                {
+                  "t": "các bạn phải tự {nhấn: chửi} bản thân mình cho đã,",
+                  "emph": true
+                },
+                {
+                  "t": "rồi mai lại né."
                 }
               ],
-              "voice_file": "voice/v14-b06a.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
             },
             {
@@ -619,11 +663,14 @@
               ],
               "phrases": [
                 {
-                  "t": "Đồ lười! Thôi để mai...",
-                  "en": "Lazy bum! Eh… tomorrow then…"
+                  "t": "Đồ lười!"
+                },
+                {
+                  "t": "Thôi {nhấn: để mai}...",
+                  "emph": true
                 }
               ],
-              "voice_file": "voice/v14-b06b.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -689,21 +736,30 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả — việc càng khó chịu, càng bị dời. Mình đang né **cái cảm giác khó chịu**, không phải vì lười.",
-              "say": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, việc càng khó chịu, càng bị dời. Mình đang né cái cảm giác khó chịu, không phải vì lười.",
-              "en": "Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed. You're dodging the bad feeling, not being lazy.",
+              "text": "Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả — việc càng khó chịu, càng bị dời.",
+              "say": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, việc càng khó chịu, càng bị dời.",
+              "en": "Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed.",
               "hl": [
                 1,
                 7,
-                19
+                17
               ],
               "phrases": [
                 {
-                  "t": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, việc càng khó chịu, càng bị dời. Mình đang né cái cảm giác khó chịu, không phải vì lười.",
-                  "en": "Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed. You're dodging the bad feeling, not being lazy."
+                  "t": "Nghe quen hông?"
+                },
+                {
+                  "t": "Mà các nhà khoa học nói:"
+                },
+                {
+                  "t": "Xtiu gom {nhấn: sáu trăm chín mươi mốt} kết quả,",
+                  "emph": true
+                },
+                {
+                  "t": "việc càng khó chịu, càng bị dời."
                 }
               ],
-              "voice_file": "voice/v14-b07.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
             }
           ]
@@ -728,15 +784,21 @@
             }
           ],
           "fx": {
-            "visual": "Bong bóng chửi mình bị gạch đỏ; lịch MAI xám đi",
-            "word": "ngán"
+            "visual": "Takeaway: chữ LƯỜI bị gạch, thay bằng NÉ KHÓ CHỊU; bậc thang đầu tiên thu nhỏ còn 1 bậc tí xíu",
+            "word": "không phải vì lười"
           },
           "sfx": [
             {
               "name": "stamp",
               "atLine": 0,
               "offset": 1.2,
-              "word": "ngán"
+              "word": "không phải vì lười"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 6.0,
+              "word": "nhỏ"
             }
           ],
           "props": [
@@ -746,28 +808,61 @@
               "y": 420,
               "s": 0.7,
               "rot": -4,
-              "text": "CHỬI → MAI NGÁN",
+              "text": "KHÔNG LƯỜI · ĐANG NÉ",
               "at": 0.8
             }
           ],
           "lines": [
             {
               "speaker": "hiep",
-              "emotion": "sad",
-              "text": "Càng chửi, mai càng **ngán** hơn.",
-              "say": "Càng chửi, mai càng ngán hơn.",
-              "en": "The more you scold, the more you dread tomorrow.",
+              "emotion": "focused",
+              "text": "Bạn trì hoãn **không phải vì lười**, mà vì đang né cái cảm giác khó chịu — nên đừng chửi mình, hãy làm bước đầu nhỏ tới mức hết khó chịu.",
+              "say": "Bạn trì hoãn không phải vì lười, mà vì đang né cái cảm giác khó chịu. Nên đừng chửi mình, hãy làm bước đầu nhỏ tới mức hết khó chịu.",
+              "en": "You don't procrastinate because you're lazy. You're dodging a bad feeling. So don't scold yourself. Make the first step so small it stops feeling bad.",
               "hl": [
-                7
+                5,
+                7,
+                20
               ],
               "phrases": [
                 {
-                  "t": "Càng chửi, mai càng ngán hơn.",
-                  "en": "The more you scold, the more you dread tomorrow."
+                  "t": "Bạn trì hoãn {nhấn: không phải vì lười},",
+                  "emph": true
+                },
+                {
+                  "t": "mà vì đang né cái cảm giác khó chịu."
+                },
+                {
+                  "t": "Nên đừng chửi mình,"
+                },
+                {
+                  "t": "hãy làm bước đầu {kéo: nhỏ} tới mức hết khó chịu.",
+                  "emph": true
                 }
               ],
-              "voice_file": "voice/v14-b08.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "surprised",
+              "text": "À… mình đang **né** thiệt.",
+              "say": "À... mình đang né thiệt.",
+              "en": "Oh… I really am dodging.",
+              "hl": [
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "À..."
+                },
+                {
+                  "t": "mình đang {nhấn: né} thiệt.",
+                  "emph": true
+                }
+              ],
+              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_role": "Hiệp-né"
             }
           ]
         },
@@ -832,20 +927,23 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Thu nhỏ giây đầu: sửa đúng **một dòng** thôi.",
-              "say": "Thu nhỏ giây đầu: sửa đúng một dòng thôi.",
-              "en": "Shrink the first second: fix just one line.",
+              "text": "Như vầy nè: sửa đúng **một dòng** thôi.",
+              "say": "Như vầy nè: sửa đúng một dòng thôi.",
+              "en": "Like this: fix just one line.",
               "hl": [
-                6,
-                7
+                4,
+                5
               ],
               "phrases": [
                 {
-                  "t": "Thu nhỏ giây đầu: sửa đúng một dòng thôi.",
-                  "en": "Shrink the first second: fix just one line."
+                  "t": "Như vầy nè:"
+                },
+                {
+                  "t": "sửa đúng {nhấn: một dòng} thôi.",
+                  "emph": true
                 }
               ],
-              "voice_file": "voice/v14-b09a.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Thầy"
             },
             {
@@ -859,11 +957,14 @@
               ],
               "phrases": [
                 {
-                  "t": "À... hết đường né luôn á.",
-                  "en": "Oh… no way to dodge now."
+                  "t": "À..."
+                },
+                {
+                  "t": "hết {nhấn: đường né} luôn á.",
+                  "emph": true
                 }
               ],
-              "voice_file": "voice/v14-b09b.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -922,20 +1023,30 @@
             {
               "speaker": "hiep",
               "emotion": "happy",
-              "text": "Việc bạn đang né là gì? **Comment** một chữ nha!",
-              "say": "Việc bạn đang né là gì? Com men một chữ nha!",
-              "en": "What are you dodging? Comment one word!",
+              "text": "Không lười, chỉ đang **né**. Việc bạn đang né là gì? Comment một chữ nha!",
+              "say": "Không lười, chỉ đang né. Việc bạn đang né là gì? Com men một chữ nha!",
+              "en": "Not lazy, just dodging. What are you dodging? Comment one word!",
               "hl": [
-                3,
-                5
+                1,
+                7,
+                9
               ],
               "phrases": [
                 {
-                  "t": "Việc bạn đang né là gì? Com men một chữ nha!",
-                  "en": "What are you dodging? Comment one word!"
+                  "t": "Không lười,"
+                },
+                {
+                  "t": "chỉ đang {nhấn: né}.",
+                  "emph": true
+                },
+                {
+                  "t": "Việc bạn đang né là gì?"
+                },
+                {
+                  "t": "Com men một chữ nha!"
                 }
               ],
-              "voice_file": "voice/v14-b10.wav",
+              "voice_pending": "v15 (L-036 per-clause F5)",
               "voice_role": "Hiệp-né"
             }
           ]

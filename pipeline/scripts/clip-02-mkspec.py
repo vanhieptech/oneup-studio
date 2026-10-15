@@ -3,19 +3,20 @@ Loads the existing spec (keeps cover/meta), replaces parts/hook/engagement, appe
 import json, re, sys
 D = '/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/'
 # key, role, display text, spoken(say), en, hl words
-RAW=[
-("b01","thay","Thì cái **bản chất** của cái việc mở laptop rồi lướt TikTok… là gì?","Thì cái bản chất của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?","So what's the essence of opening your laptop… then scrolling TikTok?",["essence"]),
-("b02","ne","Ờ… coi clip **xíu thôi** đã chứ, bạn ơi!","Ờ... coi clíp xíu thôi đã chứ, bạn ơi!","Uh… just a few clips first, buddy!",["few"]),
-("b03","thay","Thứ nhất là các bạn phải **lướt** liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.","Thứ nhất là các bạn phải lướt liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.","First: scroll nonstop in bed, thumb running like a sewing machine, over and over.",["scroll","sewing"]),
-("b04","ne","Clip nữa thôi… **clip nữa thôi**…","Clíp nữa thôi... clíp nữa thôi...","One more clip… just one more…",["more"]),
-("b05","thay","Thứ hai là khi nào xuất hiện cái **cảm giác khó chịu** khi mở file để làm việc… thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi review đồ ăn.","Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi ri viu đồ ăn.","Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast: tidy the desk, watch food reviews.",["uncomfortable","switch"]),
-("b06a","thay","Và cuối cùng là các bạn phải tự **chửi** bản thân mình cho đã — rồi mai lại né.","Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã, rồi mai lại né.","And finally: curse yourself out properly, then dodge again tomorrow.",["curse","tomorrow."]),
-("b06b","ne","Đồ lười! Thôi **để mai**…","Đồ lười! Thôi để mai...","Lazy bum! Eh… tomorrow then…",["tomorrow"]),
-("b07","thay","Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả — việc càng khó chịu, càng bị dời. Mình đang né **cái cảm giác khó chịu**, không phải vì lười.","Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, việc càng khó chịu, càng bị dời. Mình đang né cái cảm giác khó chịu, không phải vì lười.","Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed. You're dodging the bad feeling, not being lazy.",["familiar?","691","dodging"]),
-("b08","thay","Càng chửi, mai càng **ngán** hơn.","Càng chửi, mai càng ngán hơn.","The more you scold, the more you dread tomorrow.",["dread"]),
-("b09a","thay","Thu nhỏ giây đầu: sửa đúng **một dòng** thôi.","Thu nhỏ giây đầu: sửa đúng một dòng thôi.","Shrink the first second: fix just one line.",["one","line."]),
-("b09b","ne","À… hết **đường né** luôn á.","À... hết đường né luôn á.","Oh… no way to dodge now.",["dodge"]),
-("b10","ne","Việc bạn đang né là gì? **Comment** một chữ nha!","Việc bạn đang né là gì? Com men một chữ nha!","What are you dodging? Comment one word!",["dodging?","one"]),
+RAW=[  # v15: say uses '|' = phrase split (L-036), {nhấn:}/{kéo:} = emphasis on the payload word
+("b01","thay","Thì cái **bản chất** của cái việc mở laptop rồi lướt TikTok… là gì?","Thì cái {nhấn: bản chất}|của cái việc mở láp tóp rồi lướt Tíc Tóc...|là gì?","So what's the essence of opening your laptop… then scrolling TikTok?",["essence"]),
+("b02","ne","Ờ… coi clip **xíu thôi** đã chứ, bạn ơi!","Ờ... coi clíp {nhấn: xíu thôi}|đã chứ, bạn ơi!","Uh… just a few clips first, buddy!",["few"]),
+("b03","thay","Thứ nhất là các bạn phải **lướt** liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.","Thứ nhất là|các bạn phải {nhấn: lướt} liên tục ở trên giường,|ngón cái chạy như máy may,|một cách {kéo: lặp đi lặp lại}.","First: scroll nonstop in bed, thumb running like a sewing machine, over and over.",["scroll","over"]),
+("b04","ne","Clip nữa thôi… **clip nữa thôi**…","Clíp nữa thôi...|clíp {nhấn: nữa thôi}...","One more clip… just one more…",["more"]),
+("b05","thay","Thứ hai là khi nào xuất hiện **cái cảm giác khó chịu** khi mở file để làm việc… thì phải đổi việc liền.","Thứ hai là {nhấn: khi nào}|xuất hiện {kéo: cái cảm giác khó chịu}|khi mở phai để làm việc...|thì phải đổi việc liền.","Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",["uncomfortable","switch"]),
+("b06a","thay","Và cuối cùng là các bạn phải tự **chửi** bản thân mình cho đã — rồi mai lại né.","Và cuối cùng là|các bạn phải tự {nhấn: chửi} bản thân mình cho đã,|rồi mai lại né.","And finally: curse yourself out properly, then dodge again tomorrow.",["curse","tomorrow."]),
+("b06b","ne","Đồ lười! Thôi **để mai**…","Đồ lười!|Thôi {nhấn: để mai}...","Lazy bum! Eh… tomorrow then…",["tomorrow"]),
+("b07","thay","Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả — việc càng khó chịu, càng bị dời.","Nghe quen hông?|Mà các nhà khoa học nói:|Xtiu gom {nhấn: sáu trăm chín mươi mốt} kết quả,|việc càng khó chịu, càng bị dời.","Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed.",["familiar?","691","delayed."]),
+("b08a","thay","Bạn trì hoãn **không phải vì lười**, mà vì đang né cái cảm giác khó chịu — nên đừng chửi mình, hãy làm bước đầu nhỏ tới mức hết khó chịu.","Bạn trì hoãn {nhấn: không phải vì lười},|mà vì đang né cái cảm giác khó chịu.|Nên đừng chửi mình,|hãy làm bước đầu {kéo: nhỏ} tới mức hết khó chịu.","You don't procrastinate because you're lazy. You're dodging a bad feeling. So don't scold yourself. Make the first step so small it stops feeling bad.",["lazy.","dodging","small"]),
+("b08b","ne","À… mình đang **né** thiệt.","À...|mình đang {nhấn: né} thiệt.","Oh… I really am dodging.",["dodging."]),
+("b09a","thay","Như vầy nè: sửa đúng **một dòng** thôi.","Như vầy nè:|sửa đúng {nhấn: một dòng} thôi.","Like this: fix just one line.",["one","line."]),
+("b09b","ne","À… hết **đường né** luôn á.","À...|hết {nhấn: đường né} luôn á.","Oh… no way to dodge now.",["dodge"]),
+("b10","ne","Không lười, chỉ đang **né**. Việc bạn đang né là gì? Comment một chữ nha!","Không lười,|chỉ đang {nhấn: né}.|Việc bạn đang né là gì?|Com men một chữ nha!","Not lazy, just dodging. What are you dodging? Comment one word!",["lazy,","dodging?","one"]),
 ]
 
 LN = {k: (r, t, s, en, hw) for k, r, t, s, en, hw in RAW}
@@ -23,8 +24,8 @@ def line(k, emo):
     r, t, s, en, hw = LN[k]; ws = en.split(); hl = []
     for w in hw:
         i = [j for j, x in enumerate(ws) if x.lower() == w.lower() and j not in hl]; assert i, (w, en); hl.append(i[0])
-    return {"speaker": "hiep", "emotion": emo, "text": t, "say": s, "en": en, "hl": hl,
-            "phrases": [{"t": p.strip(), "en": en} for p in [s]], "voice_file": f"voice/v14-{k}.wav",
+    return {"speaker": "hiep", "emotion": emo, "text": t, "say": re.sub(r"\{(?:nhấn|kéo): ([^}]*)\}", r"\1", s.replace("|", " ")), "en": en, "hl": hl,
+            "phrases": [dict({"t": p.strip()}, **({"emph": True} if "{nhấn:" in p or "{kéo:" in p else {})) for p in s.split("|")], "voice_pending": "v15 (L-036 per-clause F5)",
             "voice_role": "Thầy" if r == "thay" else "Hiệp-né"}
 def C(x, facing, pose, act, ex): return {"id": "hiep", "x": x, "facing": facing, "pose": pose, "action": act, "expression": ex}
 def SC(id, part, bg, tr, cast, lines, fx, sfx, props, narr=None, push=0.06):
@@ -63,9 +64,9 @@ A = [
     ("Thầy tháo kính; bảng STEEL 2007 · 691 KẾT QUẢ; rồi bảng NÉ KHÓ CHỊU ≠ LƯỜI", "691"),
     [S("ding", 0, 3.0, "691"), S("stamp", 0, 8.0, "cảm giác khó chịu")],
     [{"kind": "sign", "x": 300, "y": 1150, "s": 0.6, "rot": -3, "text": "STEEL 2007 · 691 KẾT QUẢ", "at": 2.8}, {"kind": "sign", "x": 300, "y": 1330, "s": 0.6, "rot": 2, "text": "NÉ KHÓ CHỊU ≠ LƯỜI", "at": 7.8}]),
- SC("b08", "payoff", "desk", "cut", C(0.6, "left", "standing", "talking", "sad"), [line("b08", "sad")],
-    ("Bong bóng chửi mình bị gạch đỏ; lịch MAI xám đi", "ngán"),
-    [S("stamp", 0, 1.2, "ngán")], [{"kind": "sign", "x": 330, "y": 420, "s": 0.7, "rot": -4, "text": "CHỬI → MAI NGÁN", "at": 0.8}]),
+ SC("b08", "payoff", "desk", "cut", C(0.6, "left", "standing", "talking", "sad"), [line("b08a", "focused"), line("b08b", "surprised")],
+    ("Takeaway: chữ LƯỜI bị gạch, thay bằng NÉ KHÓ CHỊU; bậc thang đầu tiên thu nhỏ còn 1 bậc tí xíu", "không phải vì lười"),
+    [S("stamp", 0, 1.2, "không phải vì lười"), S("pop", 0, 6.0, "nhỏ")], [{"kind": "sign", "x": 330, "y": 420, "s": 0.7, "rot": -4, "text": "KHÔNG LƯỜI · ĐANG NÉ", "at": 0.8}]),
  SC("b09", "payoff", "desk", "slide", C(0.66, "left", "sitting", "typing", "happy"), [line("b09a", "focused"), line("b09b", "surprised")],
     ("Một dòng code sáng lên, dấu ✓ đóng xuống; Hiệp-né ngồi dậy", "một dòng"),
     [S("pop", 0, 1.8, "một dòng"), S("stamp", 1, 0.4, "đường né")],
@@ -81,6 +82,6 @@ s.update({"title": "Bản chất của việc mở laptop rồi lướt TikTok: 
                  {"type": "loop", "beat": "b10", "text": "né", "hook_word": "bản chất"}],
   "voices": {"Thầy": "F5 · Thái Sơn speed 0.9", "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone", "Omi": "không nói (đèn)"},
   "parts": [{"id": "A", "engine": "remotion", "scenes": A}]})
-s["revisions"].append({"v": 14, "date": "2026-10-15", "note": "v14 script Hiệp duyệt (t151): stem bản chất/Thứ nhất/Thứ hai/Và cuối cùng, cảm giác khó chịu, wording fixes; pre-voiced F5 STT-picked"})
+s["revisions"].append({"v": 15, "date": "2026-10-16", "dl": "L-036", "note": "v15 draft: Day 2 takeaway (4.9) at b08 + CTA echo, Thứ hai shortened, per-clause phrases + {nhấn:}/{kéo:} (chưa voice)"})
 json.dump(s, open(D + 'spec.json', 'w'), ensure_ascii=False, indent=2)
 n = sum(len(re.sub(r"\{[^}]*\}|\*", "", l["text"]).split()) for sc in A for l in sc["lines"]); print("VI words", n)

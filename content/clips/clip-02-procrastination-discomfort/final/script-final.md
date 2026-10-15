@@ -1,139 +1,44 @@
 ---
-title: "Clip 02 v14: Bản chất của việc mở laptop rồi lướt TikTok"
-date: 2026-10-15
+title: "Clip 02 v15: Bản chất của việc mở laptop rồi lướt TikTok (Day 2 · 4.9)"
+date: 2026-10-16
 type: script
-tags: [clip-02, script, procrastination, howtolivebetter-4.9, comic, meme-ban-chat, thay, hiep-ne]
+tags: [clip-02, script, procrastination, howtolivebetter-4.9, comic, meme-ban-chat, thay, hiep-ne, L-036]
 status: draft
-source: "Hiệp stem lock 15/10 (voice+chat); HowToLiveBetter 4.9 · Steel 2007 · Wohl 2010; luật 67; trend signals research/trends/2026-10-15 + eval-skills/apify-test (đã có sẵn)"
+source: "v14 (Hiệp duyệt 15/10) + HowToLiveBetter 4.9 (Steel 2007, A) + delivery-analysis.md (L-036); feedback Hiệp 16/10: thông điệp không rõ, nhấn giọng chưa giống audio trend"
 id: clip-02.script-final
-version: v14
-supersedes: archive/script-v13.md (v13)
-note: "stem meme EXACT fill từ Hiệp; wording fixes Hiệp (mở file để làm việc / tự chửi bản thân mình / các nhà khoa học nói / đang né); chưa thu giọng, chưa render"
+version: v15
+supersedes: archive/script-v14.md (v14)
+note: "chưa thu giọng, chưa render; spec.json v15 (phrases tách clause, voice_pending)"
 ---
-# Clip 02 v14: Bản chất của việc mở laptop rồi lướt TikTok
+# Clip 02 v15: Bản chất của việc mở laptop rồi lướt TikTok
 
-**Throughline (ABT):** Mình mở laptop định làm OneUp, VÀ lại lướt TikTok / dọn bàn / chửi mình, NHƯNG bản chất là né cái cảm giác khó chịu giây đầu (Steel 691 kết quả; càng chửi mai càng ngán — Wohl nói nhẹ), NÊN thu nhỏ giây đầu: sửa đúng một dòng.
-**Hook hỏi/đáp:** Hỏi (cảnh 1) "Thì cái bản chất của cái việc mở laptop rồi lướt TikTok… là gì?" → Đáp (cảnh 8–9) "Né cái cảm giác khó chịu thôi — sửa đúng một dòng."
-**Nhân vật:** Thầy (chibi Hiệp đeo kính) + Hiệp-né (chibi lười). Omi đèn đỏ/xanh. **Độ dài:** ~50–55 giây. **Theme:** DARK.
-**Nối HowToLiveBetter / OneUp:** 4.9 chính; 4.7 → **một hành động** (sửa một dòng). Trụ OneUp 1 "Làm ít, xong nhiều".
-**Stem lock (Hiệp):** Thì cái bản chất… / Thứ nhất… / Thứ hai… / Và cuối cùng… — giữ nguyên chữ đã chốt, chỉ chen demo + flip.
+**Day 2 = mục 4.9:** "Coi trì hoãn là né cảm giác khó chịu, không phải thiếu cố gắng." Cách gỡ: làm việc bớt khó chịu, thu nhỏ bước đầu, không chửi mình rồi gồng.
+**Takeaway (nói ở b08, lặp ở CTA b10):** «Bạn trì hoãn không phải vì lười, mà vì đang né cảm giác khó chịu — nên đừng chửi mình, hãy làm bước đầu nhỏ tới mức hết khó chịu.»
+**Ký hiệu:** `|` = tách phrase (một lần F5 mỗi phrase, pause 0,2–0,3s sau stem); `{nhấn: …}` = chữ stem/ruột nhấn cao + to; `{kéo: …}` = kéo dài ~2× (speed ~0.8), đuôi câu rơi giọng (L-036). Thầy = F5 Thái Sơn 0.9; Hiệp-né = F5 Thái Sơn 0.95, +2 semitone.
 
-## Cấu trúc (HTB + stem)
-| Phần | Cảnh | Stem / beat |
-|---|---|---|
-| Hook 0–3s peak | 1 | Thì cái bản chất của cái việc mở laptop rồi lướt TikTok… là gì? |
-| Problem | 2–6 | Thứ nhất → Thứ hai → Và cuối cùng (+ demo) |
-| Evidence + cost/benefit | 7–8 | Steel 691 kết quả; Wohl nhẹ (càng chửi → mai ngán) |
-| The one action | 9 | Thu nhỏ giây đầu — sửa đúng một dòng |
-| CTA | 10 | Comment một chữ |
+## Kịch bản (~58–60s, 187 chữ)
+| Beat | Time | Speaker | Lời thoại (nhấn) | Hình / caption EN |
+|---|---|---|---|---|
+| b01 Hook | 0–3s | Thầy | Thì cái {nhấn: bản chất} \| của cái việc mở laptop rồi lướt TikTok… \| là gì? | Chữ BẢN CHẤT LÀ GÌ? đập frame 0, Thầy gõ thước, điện thoại TikTok bật lên ở 1.6s · *So what's the essence of opening your laptop… then scrolling TikTok?* |
+| b02 | 3–5s | Hiệp-né | Ờ… coi clip {nhấn: xíu thôi} \| đã chứ, bạn ơi! | Hiệp-né thò đầu ôm điện thoại, chữ XÍU THÔI? · *Uh… just a few clips first, buddy!* |
+| b03 Thứ nhất | 5–12s | Thầy | Thứ nhất là \| các bạn phải {nhấn: lướt} liên tục ở trên giường, \| ngón cái chạy như máy may, \| một cách {kéo: lặp đi lặp lại}. | Thước chỉ điện thoại trên gối, ngón cái lặp như máy may; THỨ NHẤT · LƯỚT LẶP · *First: scroll nonstop in bed, thumb running like a sewing machine, over and over.* |
+| b04 | 12–14s | Hiệp-né | Clip nữa thôi… \| clip {nhấn: nữa thôi}… | Close-up ngón cái quẹt lia, mặt đờ · *One more clip… just one more…* |
+| b05 Thứ hai | 14–20s | Thầy | Thứ hai là {nhấn: khi nào} \| xuất hiện {kéo: cái cảm giác khó chịu} \| khi mở file để làm việc… \| thì phải đổi việc liền. | File mở → sóng đỏ; Thầy chỉ chổi + app review đồ ăn; THỨ HAI · ĐỔI VIỆC · *Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.* |
+| b06 Và cuối cùng | 20–27s | Thầy / Hiệp-né | Thầy: Và cuối cùng là \| các bạn phải tự {nhấn: chửi} bản thân mình cho đã, \| rồi mai lại né. — Hiệp-né: Đồ lười! \| Thôi {nhấn: để mai}… | Chữ LƯỜI! rơi đè (rung), lịch xé HÔM NAY → MAI · *And finally: curse yourself out properly, then dodge again tomorrow.* / *Lazy bum! Eh… tomorrow then…* |
+| b07 Evidence | 27–35s | Thầy | Nghe quen hông? \| Mà các nhà khoa học nói: \| Steel gom {nhấn: 691} kết quả, \| việc càng khó chịu, càng bị dời. | Thầy tháo kính; bảng STEEL 2007 · 691 KẾT QUẢ; chú thích nhỏ "tương quan" · *Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed.* |
+| b08 Takeaway | 35–45s | Thầy / Hiệp-né | Thầy: Bạn trì hoãn {nhấn: không phải vì lười}, \| mà vì đang né cái cảm giác khó chịu. \| Nên đừng chửi mình, \| hãy làm bước đầu {kéo: nhỏ} tới mức hết khó chịu. — Hiệp-né: À… \| mình đang {nhấn: né} thiệt. | Chữ LƯỜI bị gạch → NÉ KHÓ CHỊU; bậc thang đầu thu nhỏ còn 1 bậc tí xíu; bảng KHÔNG LƯỜI · ĐANG NÉ · *You don't procrastinate because you're lazy. You're dodging a bad feeling. So don't scold yourself. Make the first step so small it stops feeling bad.* / *Oh… I really am dodging.* |
+| b09 One action | 45–51s | Thầy / Hiệp-né | Thầy: Như vầy nè: \| sửa đúng {nhấn: một dòng} thôi. — Hiệp-né: À… \| hết {nhấn: đường né} luôn á. | Laptop oneup.swift, một dòng sáng lên + dấu ✓; 1 DÒNG · HẾT ĐƯỜNG NÉ · *Like this: fix just one line.* / *Oh… no way to dodge now.* |
+| b10 CTA (echo) | 51–58s | Hiệp-né | Không lười, \| chỉ đang {nhấn: né}. \| Việc bạn đang né là gì? \| Comment một chữ nha! | Quay thẳng camera; chữ COMMENT 1 CHỮ (loop về hook) · *Not lazy, just dodging. What are you dodging? Comment one word!* |
 
-## Kịch bản (~52s)
-| # | Phần | Thời lượng | Hình/cảnh | Lời thoại (người nói) | Text overlay | Sound |
-|---|---|---|---|---|---|---|
-| 1 | Hook | 0–3s | **Smash cut:** 0.0 Hiệp mở laptop OneUp cười → 0.8 đã nằm ườn, ngón cái quẹt TikTok 21:00; Thầy đeo kính; chữ BẢN CHẤT đập giữa khung | Thì cái {nhấn: bản chất} của cái việc mở laptop rồi lướt TikTok… là gì? (Thầy) | BẢN CHẤT LÀ GÌ? | smash + record scratch |
-| 2 | Problem | 3–5s | Hiệp-né thò đầu, ôm điện thoại, mắt lim dim | Ờ… coi clip xíu thôi đã chứ, bạn ơi! (Hiệp-né) | XÍU THÔI? | sip + boing |
-| 3 | Problem · Thứ nhất | 5–12s | Thầy chỉ thước vào điện thoại trên gối; vòng lặp ngón cái như máy may | Thứ nhất là các bạn phải {nhấn: lướt} liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại. (Thầy) | THỨ NHẤT · LƯỚT LẶP | tick nhanh |
-| 4 | Problem · demo | 12–15s | Close-up ngón cái quẹt lia; mặt Hiệp-né đờ | Clip nữa thôi… clip nữa thôi… (Hiệp-né) | CLIP NỮA THÔI | whoosh lặp |
-| 5 | Problem · Thứ hai | 15–23s | File OneUp mở → cảm giác khó chịu (sóng đỏ); Thầy chỉ sang chổi + app review đồ ăn | Thứ hai là khi nào xuất hiện cái {nhấn: cảm giác khó chịu} khi mở file để làm việc… thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi review đồ ăn. (Thầy) | THỨ HAI · ĐỔI VIỆC | glitch + whoosh |
-| 6 | Problem · Và cuối cùng | 23–30s | Chữ LƯỜI rơi đè Hiệp-né; lịch xé MAI | Và cuối cùng là các bạn phải tự {nhấn: chửi} bản thân mình cho đã — rồi mai lại né. (Thầy) / Đồ lười! Thôi để mai… (Hiệp-né) | VÀ CUỐI CÙNG · MAI LẠI NÉ | thud (tdev-shake) |
-| 7 | Evidence | 30–38s | Thầy tháo kính; bảng "Steel 2007 · 691 kết quả"; Omi đèn xanh | Nghe quen hông? Mà các nhà khoa học nói: Steel gom {nhấn: 691} kết quả — việc càng khó chịu, càng bị dời. Mình đang né cái {nhấn: cảm giác khó chịu}, không phải vì lười. (Thầy) | 691 KẾT QUẢ · NÉ CẢM GIÁC KHÓ CHỊU | ding + stamp |
-| 8 | Cost/benefit | 38–42s | Icon chửi mình gạch đỏ; lịch MAI xám đi | Càng chửi, mai càng {nhấn: ngán} hơn. (Thầy) | CHỬI → MAI NGÁN | soft thud |
-| 9 | One action | 42–49s | Hiệp-né ngồi dậy; một dòng code/text sáng lên; Omi ✓ | Thu nhỏ giây đầu: sửa đúng {nhấn: một dòng} thôi. (Thầy) / À… hết đường né luôn á. (Hiệp-né) | 1 DÒNG · HẾT ĐƯỜNG NÉ | pop + stamp ✓ |
-| 10 | CTA | 49–52s | Cả hai quay camera; bảng trống | Việc bạn đang né là gì? {nhấn: Comment} một chữ nha! (Hiệp-né) | COMMENT 1 CHỮ 👇 | pop |
-
-`{nhấn: …}` = từ nhấn (luật 63), bỏ khi hiện chữ. Transition `tdev-*` từ catalog.
-
-## Caption + hashtag
-Caption: "Thì cái bản chất của cái việc mở laptop rồi lướt TikTok… là gì? 😮‍💨 Spoiler: né cái cảm giác khó chịu giây đầu — không phải lười. Thử sửa đúng một dòng rồi comment một chữ."
-Hashtag: #trihoan #nangsuat #phattrienbanthan #hoctap #productivity #oneup #fyp (lượt dùng: chưa xác minh).
+## Thay đổi so với v14
+- Thêm takeaway Day 2 ở b08 (thay "Càng chửi, mai càng ngán hơn" — gộp vào "đừng chửi mình"); CTA b10 lặp "Không lười, chỉ đang né".
+- b05 Thứ hai: bỏ "dọn bàn, coi review đồ ăn" khỏi lời (giữ ở hình) → 22 chữ. Không xuống được 13–15 chữ nếu giữ đủ stem + «cái cảm giác khó chịu» + «khi mở file để làm việc» (riêng các phần bắt buộc đã 19 chữ).
+- «Mình đang né…» chuyển thành câu Hiệp-né b08 «mình đang né thiệt» (để không lặp takeaway).
+- Mọi dòng tách phrase + nhấn theo `research/trends/2026-10-15/audio/delivery-analysis.md`; check-rules L-036 ✔.
 
 ## Fact lock
-- Steel 2007, Psychological Bulletin 133(1): 65–94: meta-analysis **691 hệ số tương quan** (nói "691 kết quả", **không** nói "691 nghiên cứu"); task aversiveness ↔ trì hoãn. (HowToLiveBetter 4.9)
-- Wohl, Pychyl & Bennett 2010, Personality and Individual Differences 48: 803–808: tự tha thứ sau lần dời → lần sau bớt dời. Câu "Càng chửi, mai càng ngán hơn" nói nhẹ theo hướng ngược; không gắn số n trong lời.
-- **Một hành động (4.7):** thu nhỏ giây đầu — sửa đúng một dòng. (Không nhét 3 mẹo trong lời chính.)
+- Steel 2007, Psychological Bulletin 133(1): 65–94: 691 **hệ số tương quan** (nói "691 kết quả", không nói "691 nghiên cứu"); tương quan, không chứng minh nhân quả. Bằng chứng A.
+- Hành động "thu nhỏ bước đầu" = 4.9 + 4.7 (chia nhỏ). Không có số liệu mới.
 
-## Bản review đầy đủ (duyệt lời + hình + âm)
-
-Dùng mục này để Hiệp duyệt từng câu trước khi thu giọng. `{nhấn: …}` trong bảng = từ nhấn; khi đọc/hiện chữ thì bỏ marker.
-
-### Cảnh 1 — Hook (0–3s)
-- **Hình:** Smash cut. 0.0s: Hiệp mở laptop OneUp, cười. 0.8s: đã nằm ườn, ngón cái quẹt TikTok, đồng hồ 21:00. Thầy (chibi đeo kính). Chữ **BẢN CHẤT** đập giữa khung.
-- **Lời (Thầy):** «Thì cái bản chất của cái việc mở laptop rồi lướt TikTok… là gì?»
-- **Overlay:** BẢN CHẤT LÀ GÌ?
-- **Sound:** smash + record scratch
-- **Cảm xúc:** hỏi thẳng, peak ngay giây đầu.
-
-### Cảnh 2 — Problem / chen ngang (3–5s)
-- **Hình:** Hiệp-né thò đầu, ôm điện thoại, mắt lim dim.
-- **Lời (Hiệp-né):** «Ờ… coi clip xíu thôi đã chứ, bạn ơi!»
-- **Overlay:** XÍU THÔI?
-- **Sound:** sip + boing
-- **Cảm xúc:** muốn trì hoãn thêm vài giây.
-
-### Cảnh 3 — Thứ nhất (5–12s)
-- **Hình:** Thầy chỉ thước vào điện thoại trên gối; vòng lặp ngón cái như máy may.
-- **Lời (Thầy):** «Thứ nhất là các bạn phải lướt liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.»
-- **Overlay:** THỨ NHẤT · LƯỚT LẶP
-- **Sound:** tick nhanh
-- **Cảm xúc:** liệt kê “công thức sai”, hơi mỉa.
-
-### Cảnh 4 — Demo (12–15s)
-- **Hình:** Close-up ngón cái quẹt lia; mặt Hiệp-né đờ.
-- **Lời (Hiệp-né):** «Clip nữa thôi… clip nữa thôi…»
-- **Overlay:** CLIP NỮA THÔI
-- **Sound:** whoosh lặp
-- **Cảm xúc:** tự lừa mình, vòng lặp.
-
-### Cảnh 5 — Thứ hai (15–23s)
-- **Hình:** File OneUp mở → sóng đỏ (cảm giác khó chịu); Thầy chỉ sang chổi + app review đồ ăn.
-- **Lời (Thầy):** «Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở file để làm việc… thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi review đồ ăn.»
-- **Overlay:** THỨ HAI · ĐỔI VIỆC
-- **Sound:** glitch + whoosh
-- **Cảm xúc:** chỉ đúng trigger — mở file để làm việc thì né sang việc “có ích giả”.
-
-### Cảnh 6 — Và cuối cùng (23–30s)
-- **Hình:** Chữ LƯỜI rơi đè Hiệp-né; lịch xé MAI.
-- **Lời (Thầy):** «Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã — rồi mai lại né.»
-- **Lời (Hiệp-né):** «Đồ lười! Thôi để mai…»
-- **Overlay:** VÀ CUỐI CÙNG · MAI LẠI NÉ
-- **Sound:** thud (tdev-shake)
-- **Cảm xúc:** tự phạt rồi dời — vòng luẩn quẩn.
-
-### Cảnh 7 — Evidence (30–38s)
-- **Hình:** Thầy tháo kính; bảng "Steel 2007 · 691 kết quả"; Omi đèn xanh.
-- **Lời (Thầy):** «Nghe quen hông? Mà các nhà khoa học nói: Steel gom 691 kết quả — việc càng khó chịu, càng bị dời. Mình đang né cái cảm giác khó chịu, không phải vì lười.»
-- **Overlay:** 691 KẾT QUẢ · NÉ CẢM GIÁC KHÓ CHỊU
-- **Sound:** ding + stamp
-- **Cảm xúc:** flip nghiêm túc; nguồn trung thực (691 kết quả, không nói “691 nghiên cứu”).
-
-### Cảnh 8 — Cost / benefit (38–42s)
-- **Hình:** Icon chửi mình gạch đỏ; lịch MAI xám đi.
-- **Lời (Thầy):** «Càng chửi, mai càng ngán hơn.»
-- **Overlay:** CHỬI → MAI NGÁN
-- **Sound:** soft thud
-- **Cảm xúc:** cảnh báo nhẹ (Wohl: tự tha thứ → bớt né).
-
-### Cảnh 9 — Một hành động (42–49s)
-- **Hình:** Hiệp-né ngồi dậy; một dòng code/text sáng lên; Omi ✓.
-- **Lời (Thầy):** «Thu nhỏ giây đầu: sửa đúng một dòng thôi.»
-- **Lời (Hiệp-né):** «À… hết đường né luôn á.»
-- **Overlay:** 1 DÒNG · HẾT ĐƯỜNG NÉ
-- **Sound:** pop + stamp ✓
-- **Cảm xúc:** giải pháp nhỏ, làm được ngay.
-
-### Cảnh 10 — CTA (49–52s)
-- **Hình:** Cả hai quay camera; bảng trống.
-- **Lời (Hiệp-né):** «Việc bạn đang né là gì? Comment một chữ nha!»
-- **Overlay:** COMMENT 1 CHỮ 👇
-- **Sound:** pop
-- **Cảm xúc:** mời tương tác, ngắn.
-
-### Caption (đăng)
-Thì cái bản chất của cái việc mở laptop rồi lướt TikTok… là gì? 😮‍💨 Spoiler: né cái cảm giác khó chịu giây đầu — không phải lười. Thử sửa đúng một dòng rồi comment một chữ.
-
-### Chốt wording Hiệp (bản này)
-1. Cảnh 5: «khi mở file để làm việc»
-2. Cảnh 6: «tự chửi bản thân mình»
-3. Cảnh 7: «Mà các nhà khoa học nói»
-4. Cảnh 7: «Mình đang né cái cảm giác khó chịu»
-
+## Caption
+Thì cái bản chất của cái việc mở laptop rồi lướt TikTok… là gì? 😮‍💨 Không phải lười — bạn đang né cái cảm giác khó chịu. Đừng chửi mình, làm bước đầu nhỏ thôi: sửa đúng một dòng. Việc bạn đang né là gì? Comment một chữ.
