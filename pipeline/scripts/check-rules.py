@@ -67,10 +67,18 @@ def main():
 
     # rule-4 / rule-9 length + pacing
     tpath = os.path.join(fdir, "timing.json")
-    if os.path.exists(tpath):
+    _en = {l.get("en") for _, _, l in L}
+    def _fresh(tp):  # DL-062: timing from an older script version is stale → skip its audio checks
+        if not (tp and os.path.exists(tp)): return False
+        st_ = [x.get("en") for x in json.load(open(tp)).get("lines", []) if x.get("en") not in _en]
+        if st_: warn("timing", f"{os.path.relpath(tp, REPO)} is stale ({len(st_)} lines not in current spec) → re-voice; audio checks skipped")
+        return not st_
+    LT = spec.get("length_target") or [55, 60.5]
+    if not _fresh(tpath): tpath = None
+    if tpath and os.path.exists(tpath):
         t = json.load(open(tpath)); total = t.get("total", 0)
         LX = spec.get("length_exception")  # DL-041: Hiệp-approved info-dense exception, ≤70s, flagged as warning
-        (ok if 55 <= total <= 60.5 else (warn if LX and total <= 70 else err))("rule-4", f"planned length {total:.1f}s (target 55–60s)" + (f" · exception {LX}" if LX and total > 60.5 else ""))
+        (ok if LT[0] <= total <= LT[1] else (warn if LX and total <= 70 else err))("rule-4", f"planned length {total:.1f}s (target {LT[0]}–{LT[1]}s)" + (f" · exception {LX}" if LX and total > 60.5 else ""))
         bt = {}
         for l in t["lines"]: bt.setdefault(l["scene"], []).append(l)
         for sid, ls in bt.items():
@@ -78,9 +86,10 @@ def main():
             if span > 8.5: warn("rule-9", f"{sid}: voice spans {span:.1f}s in one shot (max ~8s per scene)")
     else:
         est = sum(len(l["text"].split()) for _, _, l in L) / 2.9
-        (ok if 52 <= est <= 62 else warn)("rule-4", f"no timing.json yet; estimated {est:.0f}s from word count")
+        (ok if LT[0] - 3 <= est <= LT[1] + 2 else warn)("rule-4", f"no fresh timing.json; estimated {est:.0f}s from word count (target {LT[0]}–{LT[1]}s)")
     words = sum(len((l.get("say") or l["text"]).split()) for _, _, l in L)
-    (ok if 140 <= words <= 175 else warn)("rule-7", f"{words} VI words (target ~150–170)")
+    WT = spec.get("word_target") or [140, 175]
+    (ok if WT[0] <= words <= WT[1] else warn)("rule-7", f"{words} VI words (target {WT[0]}–{WT[1]})")
     # hook in 0-3s: first line starts < 1s and the first beat is tagged hook
     first = spec["parts"][0].get("scenes", spec["parts"][0].get("sections"))[0]
     (ok if first.get("part") == "hook" else warn)("rule-7", f"first beat {first['id']} part='{first.get('part')}' (hook expected in 0–3s)")
@@ -216,7 +225,7 @@ def main():
                 (ok if abs(li + 14) <= 1.0 and pk <= -0.5 else err)("rule-4", f"audio {au[0]['codec_name']} {au[0]['sample_rate']} Hz, {li} LUFS, peak {pk} dBFS (target −14 ±1, peak ≤ −0.5)")
             (ok if os.path.exists(os.path.join(fdir, "contact-sheet.png")) else err)("rule-34", "contact-sheet.png for frame review")
     # STT
-    if do_stt and os.path.exists(tpath):
+    if do_stt and tpath and os.path.exists(tpath):
         t = json.load(open(tpath)); wavs = [os.path.join(REPO, "video-engine/public/voice", l["key"] + ".wav") for l in t["lines"]]
         r = subprocess.run([ASR_PY, os.path.join(REPO, "pipeline/tts/stt_check.py"), *wavs], capture_output=True, text=True)
         got = {x.split(" | ")[0]: x.split(" | ", 1)[1] for x in r.stdout.splitlines() if " | " in x}
@@ -224,7 +233,7 @@ def main():
             hyp = got.get(l["key"] + ".wav", ""); sim = difflib.SequenceMatcher(None, norm(l["say"]), norm(hyp)).ratio()
             (ok if sim >= 0.75 else warn if sim >= 0.55 else err)("rule-46", f"STT {l['scene']} {sim:.2f}: “{hyp}”")
     # rule-50 (DL-042): every transition has an SFX + continuous ambience bed
-    if final and os.path.exists(tpath):
+    if final and tpath and os.path.exists(tpath):
         tj = json.load(open(tpath)); tr = tj.get("transitions"); mixs = tj.get("sfx_mix", [])
         if not tr: err("rule-50", "timing.json has no transitions list (build-final ≥ DL-042 writes it)")
         else:
@@ -278,7 +287,7 @@ def main():
         (ok if fw <= 6 else e55)("rule-55", f"first spoken clause {fw} words (≤ 6, punchy)")
         t = 0.12; ev = []; first_sp = 0.12
         tl_ = {}
-        if os.path.exists(tpath):
+        if tpath and os.path.exists(tpath):
             for l in json.load(open(tpath)).get("lines", []): tl_.setdefault(l["scene"], []).append(l)
         for k, x in enumerate(hsc):
             if k: ev.append(("cut", t)); t += 0.06
@@ -291,7 +300,7 @@ def main():
         (ok if first_sp <= 0.3 else e55)("rule-55", f"first spoken word at {first_sp:.2f}s (≤ 0.3)")
         (ok if fv <= 1.0 else e55)("rule-55", f"first visual change/hit at {fv:.2f}s (≤ 1.0)")
         nc = sum(1 for e in in3 if e[0] == "cut")
-        (ok if len(in3) >= 2 and nc >= 1 else e55)("rule-55", f"0–3s: {nc} cut(s) + {len(in3) - nc} hit(s) (need ≥ 2 total, ≥ 1 cut)" + ("" if os.path.exists(tpath) else " · estimated"))
+        (ok if len(in3) >= 2 and nc >= 1 else e55)("rule-55", f"0–3s: {nc} cut(s) + {len(in3) - nc} hit(s) (need ≥ 2 total, ≥ 1 cut)" + ("" if tpath and os.path.exists(tpath) else " · estimated"))
         emo = [l["emotion"] for x in hsc for l in x["lines"]]
         (ok if any(e in ("sad", "surprised", "angry", "scared", "confused") for e in emo) else warn)("rule-55", f"hook voice emotions {emo} (dramatic)")
     else: e55("rule-55", "spec.hook.scenes missing")
@@ -320,7 +329,7 @@ def main():
     hookset = set((spec.get("hook") or {}).get("scenes", []))
     vg = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in VAGUE for m in [re.search(pat, re.sub(r"\{[^}]*\}", "", l["text"]).lower())] if m]
     (e55 if False else (warn if "clip-01" in clip_dir else err))("rule-58", "no vague phrases" + (f": {vg}" if vg else "")) if vg else ok("rule-58", "no vague phrases (‘X thắng’, ‘điều gì đó’, ‘mọi thứ’…)")
-    nc_ = [x["id"] for i_, x in enumerate(beats_) if i_ and x["id"] not in hookset and not re.search(CONN, re.sub(r"\{[^}]*\}|[\"“”]", "", x["lines"][0]["text"]).strip().lower())]
+    nc_ = [x["id"] for i_, x in enumerate(beats_) if i_ and x["id"] not in hookset and sum(len(l["text"].split()) for l in x["lines"]) > 4 and not re.search(CONN, re.sub(r"\{[^}]*\}|[\"“”]", "", x["lines"][0]["text"]).strip().lower())]
     ((warn if "clip-01" in clip_dir else err) if nc_ else ok)("rule-58", "every non-hook beat opens with a connector/callback" + (f"; missing: {nc_}" if nc_ else ""))
     lw = [x["id"] for x in beats_ for l in x["lines"] if max(len(c.split()) for c in re.split(r"[.,?!:;]", re.sub(r"\{[^}]*\}", "", l["text"])) if c.strip()) > 12]
     (warn if lw else ok)("rule-58", "clauses ≤ 12 words (punchy)" + (f"; long: {lw}" if lw else ""))
@@ -336,6 +345,17 @@ def main():
     ((warn if lax else err) if ne else ok)("rule-60", "every beat has an emotion cue (interjection in line or stage.react)" + (f"; missing: {ne}" if ne else ""))
     ni = [x["id"] for x in beats_ if not re.search(INTERJ, " ".join(l["text"] for l in x["lines"]).lower())]
     (warn if len(ni) > len(beats_) // 2 else ok)("rule-60", f"spoken interjections/particles in {len(beats_) - len(ni)}/{len(beats_)} beats (≥ half)")
+    # rule-61 (DL-062, L-029): dialogue never narrates what the visual/action shows; no filler; tight word budget
+    def _bg(t): w = re.findall(r"\w+", t.lower()); return {" ".join(w[i:i + 2]) for i in range(len(w) - 1)}
+    nar = [(x["id"], sorted(_bg(l["text"]) & _bg(" | ".join(w for w in re.sub(r"'[^']*'|‘[^’]*’|“[^”]*”", " | ", (x.get("stage") or {}).get("action", "")).split() if not (w.isupper() and len(w) > 1))))) for x in beats_ for l in x["lines"]]
+    nar = [(i, o) for i, o in nar if len(o) >= 2]
+    ((warn if lax else err) if nar else ok)("rule-61", "dialogue does not narrate the stage action" + (f": {nar}" if nar else ""))
+    FILL = [r"\bmở code\b", r"\bgõ (được )?hai dòng\b", r"\bthôi thì\b", r"\bnói chung\b", r"\bthật ra thì\b", r"\bcái việc\b", r"\bkiểu vậy\b", r"\bnhư mình đã nói\b", r"\bnhìn nè\b", r"\bnhư bạn thấy\b", r"\bđây là\b"]
+    fl = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in FILL for m in [re.search(pat, l["text"].lower())] if m]
+    ((warn if lax else err) if fl else ok)("rule-61", "no filler / visual-describing phrases" + (f": {fl}" if fl else ""))
+    if spec.get("word_target"):
+        bw = [x["id"] for x in beats_ if sum(len(l["text"].split()) for l in x["lines"]) > 20]
+        (err if bw else ok)("rule-61", "every beat ≤ 20 words" + (f"; over: {bw}" if bw else ""))
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
@@ -357,7 +377,7 @@ def main():
     (ok if tab and not miss else err)("rule-52", "script-final.md effects table covers every beat" + (f" — missing {miss or 'table'} (run pipeline/scripts/fx-table.py --write)" if (miss or not tab) else ""))
     (ok if not tab or "**THIẾU**" not in tab else err)("rule-52", "effects table has no **THIẾU** cells")
     # rule-51 (DL-043): every explainer section has ≥1 marked hit with an accent SFX, mixed at the hit time
-    if final and os.path.exists(tpath):
+    if final and tpath and os.path.exists(tpath):
         tj = json.load(open(tpath)); hits = tj.get("hits", []); mixs = tj.get("sfx_mix", [])
         for p_ in spec["parts"]:
             for sec in p_.get("sections", []):
@@ -435,7 +455,9 @@ def lessons(spec, fdir, L, final, tpath):
     br = [f"{s['id']}: '{m}'" for _, s, l in L for m in re.findall(r"(?<!\w)(POV|Omi|TikTok|Haizz|code)(?!\w)", " ".join(p.get("t", "") for p in l.get("phrases", [])), re.I)]
     (warn if br else ok)("L-025", f"raw English/brand words in spoken text (respell: POV→Pi ô vi, Omi→Ô mi, TikTok→Tíc Tóc, Haizz→Hầy..., code→cốt): {br}" if br else "spoken text respelled")
     vd = os.path.join(REPO, "video-engine/public/voice"); tl = []
-    for tp_ in [tpath, os.path.join(fdir, "preview", "timing-preview.json")]:
+    _en = {l.get("en") for _, _, l in L}
+    _tps = [tp for tp in [tpath, os.path.join(fdir, "preview", "timing-preview.json")] if tp and os.path.exists(tp) and all(x.get("en") in _en for x in json.load(open(tp)).get("lines", []))]
+    for tp_ in _tps:
         if tp_ and os.path.exists(tp_):
             for x in json.load(open(tp_)).get("lines", []):
                 vj = os.path.join(vd, x["key"] + ".json")
@@ -445,7 +467,7 @@ def lessons(spec, fdir, L, final, tpath):
     (err if tl else ok)("L-025", f"line STT < 0.8: {tl}" if tl else "all rendered lines STT ≥ 0.8")
     # L-027 hook voice gaps (choppy): clause gaps inside a line + line-to-line gaps in hook scenes ≤ 0.1 s
     hg = []
-    for tp_ in [tpath, os.path.join(fdir, "preview", "timing-preview.json")]:
+    for tp_ in _tps:
         if not (tp_ and os.path.exists(tp_)): continue
         hook_ids = {s["id"] for _, s, _ in L if s.get("part") == "hook"}
         ls_ = [x for x in json.load(open(tp_)).get("lines", []) if x["scene"] in hook_ids]
@@ -500,7 +522,7 @@ def lessons(spec, fdir, L, final, tpath):
         hf = os.path.join(fdir, "hf-check.txt"); txt = open(hf).read() if os.path.exists(hf) else ""
         (ok if re.search(r"\b0 errors?\b", txt) else (err if final else warn))("L-014", "hf-check.txt shows hyperframes lint 0 errors" if txt else "hf-check.txt missing (run build-final lint gate)")
     # L-007/L-008/L-009 voice audio per line
-    if os.path.exists(tpath):
+    if tpath and os.path.exists(tpath):
         vd = os.path.join(REPO, "video-engine/public/voice")
         for l in json.load(open(tpath))["lines"]:
             jp = os.path.join(vd, l["key"] + ".json"); wp = os.path.join(vd, l["key"] + ".wav")

@@ -210,8 +210,15 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Mỗi beat có `stage.action` (nhân vật làm gì: thở dài, gục đầu, gõ phím rồi buông, liếc điện thoại…) + `stage.react` (cảm xúc) và ≥ một nửa số beat có tiếng cảm thán/tiểu từ trong lời (trời ơi, haizz, ủa, hả, nè…). Kịch bản trình bày dạng bảng Cảnh | Hành động | Cảm xúc | Lời thoại.
     - check-rules: `rule-60` (✖ từ văn viết, ✖ thiếu stage.action, ✖ thiếu cảm xúc, ⚠ < nửa beat có cảm thán).
 
+61. **Lời thoại không kể lại cái hình đã cho thấy, không độn chữ (DL-062, L-029):**
+    - Hành động (mở code, gõ phím, chộp điện thoại, đồng hồ nhảy, chữ rơi) nằm ở cột hành động/hình, không nói lại bằng lời. Lời chỉ giữ thứ hình không nói được: cảm xúc, câu hỏi, fact (Steel 2007, chỉ là đi chung), cách gỡ, CTA.
+    - Không độn: "mở code", "gõ hai dòng", "thôi thì", "nói chung", "cái việc", "kiểu vậy", "như bạn thấy", "đây là"… Beat chỉ cần 3 chữ thì để 3 chữ (beat ≤ 4 chữ khỏi cần từ nối của luật 58).
+    - Ngân sách: mỗi beat ≤ 20 chữ; clip dạng gọn đặt `word_target` (vd 100–120) + `length_target` (vd 40–46s) trong spec.
+    - check-rules: `rule-61` (✖ lời trùng ≥ 2 cụm 2 chữ với stage.action, bỏ qua nhãn IN HOA/nằm trong nháy; ✖ cụm độn; ✖ beat > 20 chữ khi có word_target). Timing/giọng của bản kịch bản cũ bị coi là lỗi thời và bỏ qua.
+
 ## Changelog
 59. **Mọi asset dự án nằm tập trung trong repo (DL-060, L-023):** kịch bản, trend, ý tưởng, mẫu giọng, sfx, ảnh bìa, storyboard, log, plan đều nằm trong `oneup-studio/`. Không lưu ở thư mục riêng trên box. Media >5MB vào `media/` + `media/MANIFEST.json`. `pipeline/scripts/check-assets.py` chặn khi thấy file dự án ngoài repo.
+- **v3.17, 15/10/2026:** luật 61, lời không kể lại hình, không độn, ngân sách chữ (DL-062, L-029).
 - **v3.16, 15/10/2026:** luật 60, văn nói + hành động/cảm xúc/thoại xen kẽ mỗi beat (DL-061, L-024).
 - **v3.15, 15/10/2026:** luật 59, asset tập trung một repo, bỏ thư mục sync (DL-060, L-023).
 - **v3.14, 15/10/2026:** luật 58, kịch bản liền mạch có từ nối, từ sắc tra từ điển, cấm cụm mơ hồ (DL-059, L-022).
