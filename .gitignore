@@ -17,3 +17,8 @@ __pycache__/
 content/samples/**/out/
 content/samples/**/explainer/snapshots/
 video-engine/public/voice/_prosody-job.json
+
+# large media (no git-lfs on Mac): kept locally, tracked via media/MANIFEST.json
+media/**
+!media/MANIFEST.json
+!media/README.md

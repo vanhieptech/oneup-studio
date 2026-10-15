@@ -1,0 +1,74 @@
+{
+ "ab/L1-new.wav": {
+  "dur": 3.05,
+  "f0_std_st": 4.45,
+  "f0_range_st": 14.67,
+  "f0_med_hz": 90.7,
+  "pauses": 1,
+  "pause_mean_ms": 420,
+  "pause_total_ms": 420
+ },
+ "ab/L1-old.wav": {
+  "dur": 2.28,
+  "f0_std_st": 4.52,
+  "f0_range_st": 14.83,
+  "f0_med_hz": 90.9,
+  "pauses": 2,
+  "pause_mean_ms": 145,
+  "pause_total_ms": 290
+ },
+ "ab/L2-new.wav": {
+  "dur": 6.45,
+  "f0_std_st": 3.67,
+  "f0_range_st": 11.79,
+  "f0_med_hz": 252.8,
+  "pauses": 5,
+  "pause_mean_ms": 198,
+  "pause_total_ms": 990
+ },
+ "ab/L2-old.wav": {
+  "dur": 5.17,
+  "f0_std_st": 2.76,
+  "f0_range_st": 9.1,
+  "f0_med_hz": 230.5,
+  "pauses": 2,
+  "pause_mean_ms": 380,
+  "pause_total_ms": 760
+ },
+ "ab/L3-new.wav": {
+  "dur": 3.47,
+  "f0_std_st": 3.24,
+  "f0_range_st": 10.62,
+  "f0_med_hz": 223.9,
+  "pauses": 3,
+  "pause_mean_ms": 280,
+  "pause_total_ms": 840
+ },
+ "ab/L3-old.wav": {
+  "dur": 2.66,
+  "f0_std_st": 3.08,
+  "f0_range_st": 11.29,
+  "f0_med_hz": 242.8,
+  "pauses": 2,
+  "pause_mean_ms": 235,
+  "pause_total_ms": 470
+ },
+ "ab/L4-new.wav": {
+  "dur": 4.27,
+  "f0_std_st": 3.77,
+  "f0_range_st": 13.14,
+  "f0_med_hz": 96.6,
+  "pauses": 4,
+  "pause_mean_ms": 232,
+  "pause_total_ms": 930
+ },
+ "ab/L4-old.wav": {
+  "dur": 3.33,
+  "f0_std_st": 3.32,
+  "f0_range_st": 10.6,
+  "f0_med_hz": 94.2,
+  "pauses": 3,
+  "pause_mean_ms": 233,
+  "pause_total_ms": 700
+ }
+}

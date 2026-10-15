@@ -2,7 +2,7 @@
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-14
+updated: 2026-10-15
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -21,7 +21,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | dragon-ball-super-beerus | Anime "Dragon Ball Super: Beerus" ra mắt gây sốt | pop culture | ok | 2026-10-13 | 2026-10-13 | 1 | [tuoitre](https://tuoitre.vn/dragon-ball-super-beerus-vua-ra-mat-da-gay-sot-100261013001914802.htm) |
 | no-mans-sky-ios | No Man's Sky lên iPhone sau "redemption arc" 10 năm | tech/gaming | ok | 2026-10-13 | 2026-10-13 | 1 | [ars](https://arstechnica.com/gaming/2026/10/after-a-10-year-redemption-arc-no-mans-sky-is-coming-to-the-iphone-and-ipad/) |
 | claude-bullying-ban | Anthropic cấm "bắt nạt" chatbot Claude | tech/AI | ok | 2026-10-13 | 2026-10-13 | 1 | [vnexpress](https://vnexpress.net/anthropic-cam-nguoi-dung-bat-nat-chatbot-claude-5131204.html) |
-| halloween-2026 | Halloween 31/10, #halloween hạng 1 TikTok (+262%/7 ngày) | seasonal | ok | 2026-10-13 | 2026-10-14 | 2 | [trendsmcp](https://www.trendsmcp.ai/trending/tiktok-hashtags-trending-october-12-2026) |
+| halloween-2026 | Halloween 31/10, #halloween hạng 1 TikTok (+262%/7 ngày) | seasonal | ok | 2026-10-13 | 2026-10-15 | 3 | [trendsmcp](https://www.trendsmcp.ai/trending/tiktok-hashtags-trending-october-12-2026) |
 | ngay-doanh-nhan-13-10 | Ngày Doanh nhân VN 13/10 | seasonal | caution | 2026-10-13 | 2026-10-13 | 1 | [dantri](https://dantri.com.vn/kinh-doanh/chap-canh-nhung-doanh-nhan-dan-toc-20261012193345541.htm) |
 | dieu-hoa-26-do | Bật điều hòa 26 độ ban đêm (sách không có mục) | lifestyle | ok | 2026-10-13 | 2026-10-13 | 1 | [kenh14](https://kenh14.vn/loi-khuyen-cho-nhung-gia-dinh-hay-bat-dieu-hoa-26-do-vao-ban-dem-215261012225044575.chn) |
 | scam-xem-phim-ngan | Chiêu lừa "xem phim ngắn kiếm tiền triệu" | tech/security | caution | 2026-10-13 | 2026-10-13 | 1 | [vnexpress](https://vnexpress.net/chieu-lua-xem-phim-ngan-kiem-tien-trieu-5130435.html) |
@@ -34,12 +34,26 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | google-code-comprehension-interview | Google thử vòng phỏng vấn đọc code lạ có Gemini (theo X News, cần kiểm) | tech/career | ok | 2026-10-14 | 2026-10-14 | 1 | [X News](https://x.com/i/trending/2109399914962694292) |
 | microsoft-layoff-vn | Microsoft được cho là cắt nhóm R&D tại Việt Nam | tech/work | caution | 2026-10-14 | 2026-10-14 | 1 | [vnexpress](https://vnexpress.net/microsoft-sa-thai-nhan-su-tai-viet-nam-5131896.html), cafebiz, genk |
 | iphone-18-hype | Tranh cãi iPhone 18 Pro mất dần sức hút; "iphone 18" lên Google Trends VN | tech/money | ok | 2026-10-14 | 2026-10-14 | 1 | [vnexpress](https://vnexpress.net/tranh-cai-iphone-18-pro-mat-dan-suc-hut-5131460.html) |
-| 10k-steps-debate | 10.000 bước/ngày có thực tế? (gốc quảng cáo 1965) | health/habits | ok | 2026-10-13 | 2026-10-14 | 2 | [X News](https://x.com/i/trending/2109372046493003926) |
-| productivity-tricks-adult | "Năng suất tuổi trưởng thành = thử mẹo tâm lý mới liên tục" | meme/productivity | ok | 2026-10-13 | 2026-10-14 | 2 | [bluesky](https://bsky.app/profile/astrokatie.com/post/3mxh6wwsuku27) |
-| sep-om-viec-ai | Sếp ôm thêm việc vì cấp dưới lạm dụng AI | tech/work | ok | 2026-10-13 | 2026-10-14 | 2 | [vnexpress](https://vnexpress.net/sep-om-them-viec-vi-cap-duoi-lam-dung-ai-5130995.html) |
+| 10k-steps-debate | 10.000 bước/ngày có thực tế? (gốc quảng cáo 1965) | health/habits | ok | 2026-10-13 | 2026-10-15 | 3 | [X News](https://x.com/i/trending/2109372046493003926) |
+| productivity-tricks-adult | "Năng suất tuổi trưởng thành = thử mẹo tâm lý mới liên tục" | meme/productivity | ok | 2026-10-13 | 2026-10-15 | 3 | [bluesky](https://bsky.app/profile/astrokatie.com/post/3mxh6wwsuku27) |
+| sep-om-viec-ai | Sếp ôm thêm việc vì cấp dưới lạm dụng AI | tech/work | ok | 2026-10-13 | 2026-10-15 | 3 | [vnexpress](https://vnexpress.net/sep-om-them-viec-vi-cap-duoi-lam-dung-ai-5130995.html) |
 | room-makeover-19tr | Nhân viên lương 19 triệu chi 9 triệu "lột xác" phòng ngủ | lifestyle/money | caution | 2026-10-14 | 2026-10-14 | 1 | [kenh14](https://kenh14.vn/nhan-vien-van-phong-luong-19-trieu-chi-9-trieu-lot-xac-phong-ngu-215261013114816225.chn) |
 | shipper-6935-ngay | Shipper giao hàng liên tục 6.935 ngày | lifestyle | ok | 2026-10-14 | 2026-10-14 | 1 | [kenh14](https://kenh14.vn/tai-san-o-que-cua-shipper-sn-1973-giao-hang-lien-tuc-suot-6935-ngay-215261013223224713.chn) |
 
+
+| post-lunch-slump | Người lớn than mệt sau cơm trưa + wind-down tối | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110418790723006851) |
+| early-risers-5am | Dân dậy 5h khoe gym / pre-workout | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110448654192431562) |
+| realistic-goals-debate | Tranh luận mục tiêu sức khoẻ/năng suất hàng ngày có thực tế? | social debates | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109762860901454314) |
+| dong-nghiep-viec-rieng | Đồng nghiệp nhờ việc riêng ngoài giờ | niche/work | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/dong-nghiep-nho-viec-rieng-ngoai-gio-lam-viec-tu-choi-the-nao-215261014112324973.chn) |
+| floor-time-tiktok | TikTok Floor Time (nằm sàn reset) | memes/wellness | ok | 2026-10-15 | 2026-10-15 | 1 | [verywell](https://www.verywellmind.com/floor-time-11917599) |
+| sleep-struggles-late | Thức khuya + kiệt sức | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109971172024860764) |
+| paper-writing-habits | Người vẫn viết giấy giữa đời màn hình | niche | ok | 2026-10-15 | 2026-10-15 | 1 | [gnews](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2tlbk0zc0RkU3czQzU5UmloNjFMbHRqZTdQakxqOFVZbzIyZU9Db1dYMHJ1dGFuTnl) |
+| us-alcohol-lowest | Mỹ uống rượu thấp nhất từ 1939 | news/health | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110230256925778352) |
+| di-lam-stress | Đi làm stress việc / thất nghiệp stress tiền | lifestyle | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/di-lam-thi-stress-vi-cong-viec-that-nghiep-thi-stress-vi-tien-bac-215261010091120065.chn) |
+| millennials-staying-home | Millennials thích ở nhà lúc này | social debates | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109768961726316947) |
+| iphone-duo-coc-30tr | Người Việt đặt iPhone Duo cọc 30 triệu | tech/money | ok | 2026-10-15 | 2026-10-15 | 1 | [vnexpress](https://vnexpress.net/nguoi-viet-dat-mua-iphone-duo-phai-coc-30-trieu-dong-5132370.html) |
+| character-ai-bankruptcy | Character.AI xin phá sản | tech/AI | caution | 2026-10-15 | 2026-10-15 | 1 | [vnexpress](https://vnexpress.net/startup-character-ai-nop-don-xin-pha-san-5132194.html) |
+| genz-diem-tua | Gen Z điểm tựa an toàn khi tẩy chay / kiệt sức | social debates | caution | 2026-10-15 | 2026-10-15 | 1 | [tiền phong via gnews](https://news.google.com/rss/articles/CBMimgFBVV95cUxQSjFUV28wVEdwelI5SnpuMFBoRllzUjA3Z3lGSVBPbEl3UldYdVVsZmxTdEk4cW5ud2x) |
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
 |---|---|---|---|---|---|---|---|---|---|
@@ -50,6 +64,8 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | chup-tran-nha-thong-diep | Chụp ảnh trần nhà, TikTok ghép nhạc "thông điệp vũ trụ" | format | VI · gen Z | 2026-10-13 | 2026-10-14 | 2 | [kenh14](https://kenh14.vn/mot-chiec-trend-dang-viral-chup-anh-tran-nha-de-nhan-thong-diep-tu-vu-tru-ban-bi-cuoc-doi-di-toi-muc-nay-roi-sao-215261013063429553.chn) | Đảo trend: "vũ trụ hông gửi deadline" → 4.8 | đề xuất clip-04 · trụ 1 |
 | this-is-your-sign | "This is your sign to…" | format | EN · mọi nhóm | 2026-10-13 | 2026-10-13 | 1 | [postdom](https://postdom.com/blog/tiktok-trends) | P07, chỉ dùng bản đảo ngược | trụ 1 |
 | vali-so-7-content | "Làm content cả năm không ai hay, chọn vali số 7 cả nước biết" | meme | VI · creator / gen Z | 2026-10-13 | 2026-10-13 | 1 | [35express](https://35express.org/trend-lam-content-ca-nam-khong-ai-hay-chon-vali-so-7-ca-nuoc-biet/) | P09, tự giễu hành trình kênh (cần S-04) | ý tưởng mới |
+
+| floor-time | Floor Time (nằm sàn reset) | format | EN · wellness / gen Z | 2026-10-15 | 2026-10-15 | 1 | [verywell](https://www.verywellmind.com/floor-time-11917599) | Đảo: nghỉ được, không phải trị liệu → 22.8 | B-floor-01 |
 
 ## Cụm từ / slang hay xuất hiện trong comment
 | id | Cụm từ | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip |
@@ -95,6 +111,14 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-iphone-01 | iphone-18-hype | muốn đổi máy vì tin đồn | 5.23 / 6.24 | "iPhone 18 chưa ra, mà bạn đã muốn đổi máy chưa?" (P01) | humor | ý tưởng mới | đề xuất | 2026-10-14 |
 | B-interview-01 | google-code-comprehension-interview | luyện thuật toán mà đi làm toàn đọc code người khác | 23.19 | "Google thử phỏng vấn bằng đọc code lạ. Bạn đang luyện đúng thứ sẽ phải làm chưa?" (P04) | data | ý tưởng mới (cần kiểm nguồn gốc) | đề xuất | 2026-10-14 |
 
+| B-nap-01 | post-lunch-slump | 2h chiều mắt díp, cà phê thứ 3 | 3.11 | "Feed đang đầy dân than mệt sau cơm trưa. Cà phê thêm một ly nữa hả?" (P12+P03) | humor / data | ý tưởng mới (trụ 3) | stub, chờ duyệt | 2026-10-15 |
+| B-5am-01 | early-risers-5am | đặt 5h / cuối tuần ngủ bù | 3.2 + 3.3 | "Mấy hôm nay feed đầy dân dậy năm giờ sáng. Pre-workout, gym, rồi flex." (P12+P11+P03) | contrarian / data | ý tưởng mới (trụ 3) | stub, chờ duyệt | 2026-10-15 |
+| B-goals-01 | realistic-goals-debate | checklist ngày quá tham | 4.12 | "Mục tiêu mỗi ngày phải X đang gây bão. Sách hỏi: bạn tính theo tháng chưa?" (P11+P03) | contrarian | ý tưởng mới | đề xuất | 2026-10-15 |
+| B-refuse-01 | dong-nghiep-viec-rieng | nhắn nhờ việc riêng 9h tối | 3.16 | "Đồng nghiệp nhắn ngoài giờ nhờ việc riêng. Bạn trả lời thế nào?" (P01) | empathy / humor | ý tưởng mới (trụ 2) | đề xuất | 2026-10-15 |
+| B-paper-01 | paper-writing-habits | trước ngủ cầm điện thoại | 3.8 | "Mọi người khoe sổ giấy. Mình hỏi giờ ngủ của bạn." (P06) | data | ý tưởng mới | đề xuất | 2026-10-15 |
+| B-stress-01 | di-lam-stress | kẹt stress việc / stress tiền | 3.13 + 5.27 | "Đi làm cũng stress, thất nghiệp cũng stress. Còn một lớp đệm." (P10) | empathy / data | ý tưởng mới | đề xuất | 2026-10-15 |
+| B-home-01 | millennials-staying-home | chọn ở nhà thay vì đi ra | 22.9 | "Millennials bảo ở nhà là nhất. Sách không cãi — chỉ nhắc một khoản chi." (P03) | empathy | ý tưởng mới | đề xuất | 2026-10-15 |
+| B-floor-01 | floor-time-tiktok | nằm sàn theo trend | 22.8 / 3.18 | "Nằm sàn đang viral. Được. Mà nếu bạn cần công cụ có số liệu…" (P07→P03) | contrarian / data | ý tưởng mới | đề xuất | 2026-10-15 |
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
 |---|---|---|---|---|---|

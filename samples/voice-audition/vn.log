@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+vn-Đức Trí: 6.181s takes=[0, 1, 2, 0, 2, 2] sims=[0.08, 0.5, 0.5, 0.75, 0.67, 0.0]
+vn-Adam: 5.991s takes=[1, 2, 0, 2, 0, 0] sims=[0.0, 0.0, 0.0, 0.75, 0.33, 0.0]
+vn-Thái Sơn: 6.142s takes=[1, 2, 0, 0, 0, 0] sims=[0.0, 0.0, 0.0, 0.75, 0.67, 0.0]
+vn-Minh Triết: 5.266s takes=[1, 2, 2, 1, 0, 0] sims=[0.0, 0.0, 0.25, 0.25, 0.0, 0.0]
+vn-Kim Thanh: 8.686s takes=[1, 0, 0, 2, 2, 1, 1] sims=[0.0, 1.0, 1.0, 0.25, 1.0, 0.0, 0.6]
+vn-Thục Đoan: 7.432s takes=[2, 0, 1, 1, 2, 0, 1] sims=[0.0, 1.0, 0.8, 0.5, 1.0, 0.02, 0.6]
+vn-Mỹ Duyên: 8.423s takes=[0, 0, 1, 0, 0, 1, 2] sims=[0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.8]
+vn-Thùy Dung: 6.601s takes=[2, 1, 2, 1, 2, 1, 1] sims=[0.0, 0.4, 0.44, 0.5, 0.0, 1.0, 0.4]
+[{"out": "/workspace/hi-oneup/voice-audition/work/vn-Đức Trí", "duration": 6.181}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Adam", "duration": 5.991}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Thái Sơn", "duration": 6.142}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Minh Triết", "duration": 5.266}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Kim Thanh", "duration": 8.686}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Thục Đoan", "duration": 7.432}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Mỹ Duyên", "duration": 8.423}, {"out": "/workspace/hi-oneup/voice-audition/work/vn-Thùy Dung", "duration": 6.601}]
+0

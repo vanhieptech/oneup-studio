@@ -1,0 +1,389 @@
+voice: 13 lines (13 prosody), 13 cached
++ /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json
+warn: f5-6aeefa7b1dc0 line STT sim 0.833: Tối nào cũng vậy, cô xong mệt rồi ưm thôi, mai học!
+warn: f5-b0a363fd47f6 line STT sim 0.75: Ví dụ 9 giờ tối, gặp laptop thì mở một bay listening.
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/public/voice/f5-c933e99c9f43.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-71b25d2f960e.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-b0a363fd47f6.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-515cc3ec38b9.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-d6c887561754.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-09f500e70cd4.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-211d8c922d22.wav -filter_complex [0:a]aresample=48000,adelay=650:all=1[a0];[1:a]aresample=48000,adelay=6392:all=1[a1];[2:a]aresample=48000,adelay=11982:all=1[a2];[3:a]aresample=48000,adelay=15967:all=1[a3];[4:a]aresample=48000,adelay=20696:all=1[a4];[5:a]aresample=48000,adelay=27136:all=1[a5];[6:a]aresample=48000,adelay=33072:all=1[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0,apad,atrim=0:39.53[o] -map [o] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-voice.wav
+plans: total ≈ 62.01s
++ npx tsx src/cli.ts validate /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json
+✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json: 3 scenes, 11.61s
+✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json: 2 scenes, 11.56s
++ npx tsx src/cli.ts render /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json --out-dir out
+✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json: 3 scenes, 11.61s
+✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json: 2 scenes, 11.56s
+bundle: building…
+render clip-01-final-A: 0%
+render clip-01-final-A: 10%
+render clip-01-final-A: 20%
+render clip-01-final-A: 30%
+render clip-01-final-A: 40%
+render clip-01-final-A: 50%
+render clip-01-final-A: 60%
+render clip-01-final-A: 70%
+render clip-01-final-A: 80%
+render clip-01-final-A: 90%
+render clip-01-final-A: 100%
+✔ out/clip-01-final-A.mp4: 1080x1920 30fps 348 frames in 35.0s
+render clip-01-final-B: 0%
+render clip-01-final-B: 10%
+render clip-01-final-B: 20%
+render clip-01-final-B: 30%
+render clip-01-final-B: 40%
+render clip-01-final-B: 50%
+render clip-01-final-B: 60%
+render clip-01-final-B: 70%
+render clip-01-final-B: 80%
+render clip-01-final-B: 90%
+render clip-01-final-B: 100%
+✔ out/clip-01-final-B.mp4: 1080x1920 30fps 347 frames in 33.0s
++ npx --yes hyperframes@0.8.150 lint
+◆  Linting explainer/index.html
+
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:71:3] nested_structure_needs_subcomposition [e01]: <div id="e01"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e01"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:79:3] nested_structure_needs_subcomposition [e02]: <div id="e02"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e02"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:85:3] nested_structure_needs_subcomposition [e03]: <div id="e03"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e03"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:92:3] nested_structure_needs_subcomposition [e04]: <div id="e04"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e04"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:99:3] nested_structure_needs_subcomposition [e05]: <div id="e05"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e05"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:110:3] nested_structure_needs_subcomposition [e06]: <div id="e06"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e06"> and its contents into a sub-composition file and mount it with data-composition-src.
+  ⚠ [/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer/index.html:116:3] nested_structure_needs_subcomposition [e07]: <div id="e07"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    Fix: Move <div id="e07"> and its contents into a sub-composition file and mount it with data-composition-src.
+
+◇  0 error(s), 7 warning(s)
++ npx --yes hyperframes@0.8.150 render . -o /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-silent.mp4 -f 30 --quality delivery
+
+◆  Rendering explainer → /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-silent.mp4
+   30fps · high · auto workers (8 cores detected)
+   GPU: browser GPU (auto-detect)
+
+[?25l│
+◒  Checking browser[1G[J◇  Browser: cache
+[?25h
+  Lint: 0 error(s), 7 warning(s) — run with --lint-verbose for full output.
+  Continuing render despite lint issues. Use --strict to block errors.
+
+[INFO] [Render] Pipeline started {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","platform":"linux","arch":"x64","nodeVersion":"v22.20.0","fps":{"num":30,"den":1},"format":"mp4","quality":"high","browserGpuMode":"auto","forceScreenshot":false,"protocolTimeout":300000,"browserTimeout":120000,"pageNavigationTimeout":60000,"playerReadyTimeout":45000}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"pipeline","status":"checkpoint","elapsedMs":3,"message":"started","format":"mp4","quality":"high","browserGpuMode":"auto","forceScreenshot":false,"protocolTimeoutMs":300000,"pageNavigationTimeoutMs":60000,"playerReadyTimeoutMs":45000,"requestedWorkers":"auto"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"compile","status":"start","elapsedMs":4,"needsAlpha":false}
+  █░░░░░░░░░░░░░░░░░░░░░░░░  5%  Compiling composition
+@hf-progress {"code":"compile","pct":5}
+[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-Bold.ttf (136 KB → data URI)
+[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-SemiBold.ttf (132 KB → data URI)
+[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-Regular.ttf (129 KB → data URI)
+[INFO] Compiled composition metadata {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","entryFile":"index.html","staticDuration":39.53,"width":1080,"height":1920,"videoCount":0,"audioCount":0,"renderModeHints":{"recommendScreenshot":false,"reasons":[]}}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"compile","status":"end","elapsedMs":204,"durationMs":199,"needsAlpha":false}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"compile","status":"checkpoint","elapsedMs":205,"message":"composition metadata resolved","width":1080,"height":1920,"videoCount":0,"audioCount":0,"imageCount":1,"deviceScaleFactor":1,"forceScreenshot":false,"compositionHash":"debfc3d1e9bdce7a"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"browser_probe","status":"start","elapsedMs":205,"forceScreenshot":false,"stagePhase":"calibrating"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"browser_probe","status":"end","elapsedMs":283,"durationMs":77,"forceScreenshot":false,"stagePhase":"calibrating"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"browser_probe","status":"checkpoint","elapsedMs":284,"message":"duration resolved","durationSeconds":39.53,"totalFrames":1186,"compositionHash":"debfc3d1e9bdce7a","beginFrameStalled":false}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"video_extract","status":"start","elapsedMs":284,"videoCount":0}
+  ██░░░░░░░░░░░░░░░░░░░░░░░  10%  Extracting video frames
+@hf-progress {"code":"extract_video","pct":10}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"video_extract","status":"end","elapsedMs":286,"durationMs":2,"videoCount":0}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"video_extract","status":"checkpoint","elapsedMs":288,"message":"frames resolved","videoCount":0,"extractedVideoCount":0,"totalFramesExtracted":0,"maxFramesPerVideo":0,"avgFramesPerExtractedVideo":null,"vfrPreflightCount":null,"vfrPreflightMs":null,"cacheHits":null,"cacheMisses":null,"transientRetries":null,"minVideoFrameCoverageRatio":null,"authoredTimedClipCount":9}
+[INFO] [Render] No HDR sources detected, rendering SDR {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"hdr_detection","status":"checkpoint","elapsedMs":288,"message":"resolved","requestedHdrMode":"auto","effectiveHdr":"sdr","nativeHdrVideoCount":0,"nativeHdrImageCount":0}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"audio_process","status":"start","elapsedMs":288,"audioCount":0}
+  █████░░░░░░░░░░░░░░░░░░░░  20%  Processing audio tracks
+@hf-progress {"code":"process_audio","pct":20}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"audio_process","status":"end","elapsedMs":289,"durationMs":1,"audioCount":0}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"file_server","status":"start","elapsedMs":289,"reused":false}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting frame capture
+@hf-progress {"code":"start_browsers","pct":25}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"file_server","status":"end","elapsedMs":298,"durationMs":9}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Checking browser GPU
+@hf-progress {"code":"start_browsers","pct":25}
+[hyperframes] browserGpuMode probe → software (WebGL unavailable)
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"capture_calibration","status":"start","elapsedMs":828,"stagePhase":"calibrating","forceScreenshot":false,"totalFrames":1186,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render] Calibration config {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","protocolTimeout":30000,"parentProtocolTimeout":300000,"forceScreenshot":false,"totalFrames":1186}
+[INFO] Launching browser for capture calibration... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Measuring capture speed
+@hf-progress {"code":"start_browsers","pct":25}
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[INFO] Initializing calibration session... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (0ms)
+[initSession:beginframe] page.goto complete (238ms)
+[initSession:beginframe] GSAP proxy flush complete (251ms)
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:beginframe] pollHfReady complete (410ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (412ms)
+[initSession:beginframe] applyVideoMetadataHints complete (412ms)
+[initSession:beginframe] media + fonts + tailwind ready (415ms)
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (450ms)
+[INFO] Calibration session ready, capturing test frames... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] Calibration: capturing test frame 1/5... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] Calibration: capturing test frame 2/5... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] Calibration: capturing test frame 3/5... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] Calibration: capturing test frame 4/5... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] Calibration: capturing test frame 5/5... {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] Calibration complete, estimated cost: 55ms/frame (p95) {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"capture_calibration","status":"end","elapsedMs":1889,"durationMs":1061,"stagePhase":"calibrating","forceScreenshot":false,"totalFrames":1186,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"capture_calibration","status":"checkpoint","elapsedMs":1890,"message":"resolved","forceScreenshot":false,"multiplier":1,"p95Ms":55}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"worker_resolution","status":"checkpoint","elapsedMs":1891,"message":"resolved","workerCount":3}
+[INFO] [Render] Parallel beginframe capture will stream to the encoder (interleaved, 3 workers) instead of the disk path. Set HF_CAPTURE_PARALLEL_STREAM=false to disable. {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"worker_resolution","status":"checkpoint","elapsedMs":1891,"message":"parallel beginframe capture routed to streaming"}
+[INFO] streaming-encode gate {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","enabled":true,"reason":"parallel_forced","configFlag":true,"durationCapEnabled":false,"outputFormat":"mp4","workerCount":3,"durationSeconds":39.53,"maxDurationSeconds":240}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"capture_strategy","status":"checkpoint","elapsedMs":1891,"message":"resolved","workerCount":3,"forceScreenshot":false,"captureBeyondViewport":null,"useStreamingEncode":true,"useLayeredComposite":false,"usePageSideCompositing":false,"hasHdrContent":false,"hasShaderTransitions":false,"isPngSequence":false}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"capture_streaming","status":"start","elapsedMs":1892,"stagePhase":"capturing","workerCount":3,"forceScreenshot":false,"totalFrames":1186,"framesCompleted":0,"captureMode":"beginframe","captureOperation":"beginFrame"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":0,"phase":"browser_launch","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":1,"phase":"browser_launch","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":2,"phase":"browser_launch","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (0/3 ready)
+@hf-progress {"code":"start_browsers","done":0,"total":3,"pct":25}
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":0,"phase":"browser_probe","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":0,"phase":"session_init","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (0ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":2,"phase":"browser_probe","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":2,"phase":"session_init","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (1ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":1,"phase":"browser_probe","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"unknown","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":1,"phase":"session_init","browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":"unknown","gpuBackend":"unknown"}
+[initSession:beginframe] warmup loop started (0ms)
+[initSession:beginframe] page.goto start (0ms)
+[initSession:beginframe] page.goto complete (236ms)
+[initSession:beginframe] page.goto complete (232ms)
+[initSession:beginframe] GSAP proxy flush complete (238ms)
+[initSession:beginframe] GSAP proxy flush complete (251ms)
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:beginframe] page.goto complete (205ms)
+[initSession:beginframe] GSAP proxy flush complete (208ms)
+[Browser:WARN] GSAP target #e03 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e04 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e05 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e06 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[Browser:WARN] GSAP target #e07 .title not found. https://gsap.com
+[Browser:WARN] GSAP target  not found. https://gsap.com
+[HyperFrames] render runtime fps {"canonicalFps":30,"source":"render-options","rawFpsSource":"render-options","rawFps":30}
+[initSession:beginframe] pollHfReady complete (383ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (386ms)
+[initSession:beginframe] applyVideoMetadataHints complete (386ms)
+[initSession:beginframe] media + fonts + tailwind ready (388ms)
+[initSession:beginframe] pollHfReady complete (401ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (403ms)
+[initSession:beginframe] applyVideoMetadataHints complete (403ms)
+[initSession:beginframe] media + fonts + tailwind ready (404ms)
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (410ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":0,"phase":"frame_capture","frameIndex":0,"browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":false,"gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Starting browsers (1/3 ready)
+@hf-progress {"code":"start_browsers","done":1,"total":3,"pct":25}
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (422ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":2,"phase":"frame_capture","frameIndex":2,"browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":false,"gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  25%  Streaming frame 1/1186 (3 workers)
+@hf-progress {"code":"capture","done":1,"total":1186,"pct":25}
+[initSession:beginframe] pollHfReady complete (352ms)
+[initSession:beginframe] pollSubCompositionTimelines complete (ready) (354ms)
+[initSession:beginframe] applyVideoMetadataHints complete (354ms)
+[initSession:beginframe] media + fonts + tailwind ready (355ms)
+[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (388ms)
+[INFO] [Render] Parallel capture worker phase {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","workerId":1,"phase":"frame_capture","frameIndex":1,"browserExecutable":"/home/box/.cache/hyperframes/chrome/chrome-headless-shell/linux-152.0.7977.30/chrome-headless-shell-linux64/chrome-headless-shell","browserVersion":"HeadlessChrome/152.0.7977.30","canvasDrawElement":false,"gpuBackend":"unknown"}
+  ██████░░░░░░░░░░░░░░░░░░░  26%  Streaming frame 14/1186 (3 workers)
+@hf-progress {"code":"capture","done":14,"total":1186,"pct":26}
+  ██████░░░░░░░░░░░░░░░░░░░  27%  Streaming frame 33/1186 (3 workers)
+@hf-progress {"code":"capture","done":33,"total":1186,"pct":27}
+  ██████░░░░░░░░░░░░░░░░░░░  27%  Streaming frame 46/1186 (3 workers)
+@hf-progress {"code":"capture","done":46,"total":1186,"pct":27}
+  ███████░░░░░░░░░░░░░░░░░░  28%  Streaming frame 64/1186 (3 workers)
+@hf-progress {"code":"capture","done":64,"total":1186,"pct":28}
+  ███████░░░░░░░░░░░░░░░░░░  29%  Streaming frame 81/1186 (3 workers)
+@hf-progress {"code":"capture","done":81,"total":1186,"pct":29}
+  ███████░░░░░░░░░░░░░░░░░░  30%  Streaming frame 100/1186 (3 workers)
+@hf-progress {"code":"capture","done":100,"total":1186,"pct":30}
+  ███████░░░░░░░░░░░░░░░░░░  31%  Streaming frame 120/1186 (3 workers)
+@hf-progress {"code":"capture","done":120,"total":1186,"pct":31}
+  ███████░░░░░░░░░░░░░░░░░░  31%  Streaming frame 136/1186 (3 workers)
+@hf-progress {"code":"capture","done":136,"total":1186,"pct":31}
+  ████████░░░░░░░░░░░░░░░░░  32%  Streaming frame 154/1186 (3 workers)
+@hf-progress {"code":"capture","done":154,"total":1186,"pct":32}
+  ████████░░░░░░░░░░░░░░░░░  33%  Streaming frame 171/1186 (3 workers)
+@hf-progress {"code":"capture","done":171,"total":1186,"pct":33}
+  ████████░░░░░░░░░░░░░░░░░  34%  Streaming frame 186/1186 (3 workers)
+@hf-progress {"code":"capture","done":186,"total":1186,"pct":34}
+  ████████░░░░░░░░░░░░░░░░░  34%  Streaming frame 203/1186 (3 workers)
+@hf-progress {"code":"capture","done":203,"total":1186,"pct":34}
+  ████████░░░░░░░░░░░░░░░░░  35%  Streaming frame 221/1186 (3 workers)
+@hf-progress {"code":"capture","done":221,"total":1186,"pct":35}
+  █████████░░░░░░░░░░░░░░░░  36%  Streaming frame 239/1186 (3 workers)
+@hf-progress {"code":"capture","done":239,"total":1186,"pct":36}
+  █████████░░░░░░░░░░░░░░░░  37%  Streaming frame 254/1186 (3 workers)
+@hf-progress {"code":"capture","done":254,"total":1186,"pct":37}
+  █████████░░░░░░░░░░░░░░░░  38%  Streaming frame 270/1186 (3 workers)
+@hf-progress {"code":"capture","done":270,"total":1186,"pct":38}
+  █████████░░░░░░░░░░░░░░░░  38%  Streaming frame 288/1186 (3 workers)
+@hf-progress {"code":"capture","done":288,"total":1186,"pct":38}
+  █████████░░░░░░░░░░░░░░░░  39%  Streaming frame 305/1186 (3 workers)
+@hf-progress {"code":"capture","done":305,"total":1186,"pct":39}
+  ██████████░░░░░░░░░░░░░░░  40%  Streaming frame 322/1186 (3 workers)
+@hf-progress {"code":"capture","done":322,"total":1186,"pct":40}
+  ██████████░░░░░░░░░░░░░░░  41%  Streaming frame 339/1186 (3 workers)
+@hf-progress {"code":"capture","done":339,"total":1186,"pct":41}
+  ██████████░░░░░░░░░░░░░░░  41%  Streaming frame 355/1186 (3 workers)
+@hf-progress {"code":"capture","done":355,"total":1186,"pct":41}
+  ██████████░░░░░░░░░░░░░░░  42%  Streaming frame 376/1186 (3 workers)
+@hf-progress {"code":"capture","done":376,"total":1186,"pct":42}
+  ██████████░░░░░░░░░░░░░░░  43%  Streaming frame 394/1186 (3 workers)
+@hf-progress {"code":"capture","done":394,"total":1186,"pct":43}
+  ███████████░░░░░░░░░░░░░░  44%  Streaming frame 411/1186 (3 workers)
+@hf-progress {"code":"capture","done":411,"total":1186,"pct":44}
+  ███████████░░░░░░░░░░░░░░  45%  Streaming frame 426/1186 (3 workers)
+@hf-progress {"code":"capture","done":426,"total":1186,"pct":45}
+  ███████████░░░░░░░░░░░░░░  46%  Streaming frame 445/1186 (3 workers)
+@hf-progress {"code":"capture","done":445,"total":1186,"pct":46}
+  ███████████░░░░░░░░░░░░░░  47%  Streaming frame 464/1186 (3 workers)
+@hf-progress {"code":"capture","done":464,"total":1186,"pct":47}
+  ███████████░░░░░░░░░░░░░░  47%  Streaming frame 482/1186 (3 workers)
+@hf-progress {"code":"capture","done":482,"total":1186,"pct":47}
+  ████████████░░░░░░░░░░░░░  48%  Streaming frame 500/1186 (3 workers)
+@hf-progress {"code":"capture","done":500,"total":1186,"pct":48}
+  ████████████░░░░░░░░░░░░░  49%  Streaming frame 517/1186 (3 workers)
+@hf-progress {"code":"capture","done":517,"total":1186,"pct":49}
+  ████████████░░░░░░░░░░░░░  50%  Streaming frame 532/1186 (3 workers)
+@hf-progress {"code":"capture","done":532,"total":1186,"pct":50}
+  ████████████░░░░░░░░░░░░░  51%  Streaming frame 550/1186 (3 workers)
+@hf-progress {"code":"capture","done":550,"total":1186,"pct":51}
+  ████████████░░░░░░░░░░░░░  51%  Streaming frame 567/1186 (3 workers)
+@hf-progress {"code":"capture","done":567,"total":1186,"pct":51}
+  █████████████░░░░░░░░░░░░  52%  Streaming frame 583/1186 (3 workers)
+@hf-progress {"code":"capture","done":583,"total":1186,"pct":52}
+  █████████████░░░░░░░░░░░░  53%  Streaming frame 603/1186 (3 workers)
+@hf-progress {"code":"capture","done":603,"total":1186,"pct":53}
+  █████████████░░░░░░░░░░░░  54%  Streaming frame 619/1186 (3 workers)
+@hf-progress {"code":"capture","done":619,"total":1186,"pct":54}
+  █████████████░░░░░░░░░░░░  54%  Streaming frame 636/1186 (3 workers)
+@hf-progress {"code":"capture","done":636,"total":1186,"pct":54}
+  █████████████░░░░░░░░░░░░  55%  Streaming frame 652/1186 (3 workers)
+@hf-progress {"code":"capture","done":652,"total":1186,"pct":55}
+  ██████████████░░░░░░░░░░░  56%  Streaming frame 666/1186 (3 workers)
+@hf-progress {"code":"capture","done":666,"total":1186,"pct":56}
+  ██████████████░░░░░░░░░░░  57%  Streaming frame 680/1186 (3 workers)
+@hf-progress {"code":"capture","done":680,"total":1186,"pct":57}
+  ██████████████░░░░░░░░░░░  57%  Streaming frame 695/1186 (3 workers)
+@hf-progress {"code":"capture","done":695,"total":1186,"pct":57}
+  ██████████████░░░░░░░░░░░  58%  Streaming frame 710/1186 (3 workers)
+@hf-progress {"code":"capture","done":710,"total":1186,"pct":58}
+  ██████████████░░░░░░░░░░░  59%  Streaming frame 727/1186 (3 workers)
+@hf-progress {"code":"capture","done":727,"total":1186,"pct":59}
+  ███████████████░░░░░░░░░░  60%  Streaming frame 745/1186 (3 workers)
+@hf-progress {"code":"capture","done":745,"total":1186,"pct":60}
+  ███████████████░░░░░░░░░░  60%  Streaming frame 762/1186 (3 workers)
+@hf-progress {"code":"capture","done":762,"total":1186,"pct":60}
+  ███████████████░░░░░░░░░░  61%  Streaming frame 779/1186 (3 workers)
+@hf-progress {"code":"capture","done":779,"total":1186,"pct":61}
+  ███████████████░░░░░░░░░░  62%  Streaming frame 797/1186 (3 workers)
+@hf-progress {"code":"capture","done":797,"total":1186,"pct":62}
+  ███████████████░░░░░░░░░░  63%  Streaming frame 815/1186 (3 workers)
+@hf-progress {"code":"capture","done":815,"total":1186,"pct":63}
+  ████████████████░░░░░░░░░  64%  Streaming frame 835/1186 (3 workers)
+@hf-progress {"code":"capture","done":835,"total":1186,"pct":64}
+  ████████████████░░░░░░░░░  64%  Streaming frame 851/1186 (3 workers)
+@hf-progress {"code":"capture","done":851,"total":1186,"pct":64}
+  ████████████████░░░░░░░░░  65%  Streaming frame 868/1186 (3 workers)
+@hf-progress {"code":"capture","done":868,"total":1186,"pct":65}
+  ████████████████░░░░░░░░░  66%  Streaming frame 885/1186 (3 workers)
+@hf-progress {"code":"capture","done":885,"total":1186,"pct":66}
+  ████████████████░░░░░░░░░  67%  Streaming frame 904/1186 (3 workers)
+@hf-progress {"code":"capture","done":904,"total":1186,"pct":67}
+  █████████████████░░░░░░░░  68%  Streaming frame 923/1186 (3 workers)
+@hf-progress {"code":"capture","done":923,"total":1186,"pct":68}
+  █████████████████░░░░░░░░  69%  Streaming frame 941/1186 (3 workers)
+@hf-progress {"code":"capture","done":941,"total":1186,"pct":69}
+  █████████████████░░░░░░░░  69%  Streaming frame 958/1186 (3 workers)
+@hf-progress {"code":"capture","done":958,"total":1186,"pct":69}
+  █████████████████░░░░░░░░  70%  Streaming frame 976/1186 (3 workers)
+@hf-progress {"code":"capture","done":976,"total":1186,"pct":70}
+  █████████████████░░░░░░░░  71%  Streaming frame 992/1186 (3 workers)
+@hf-progress {"code":"capture","done":992,"total":1186,"pct":71}
+  ██████████████████░░░░░░░  72%  Streaming frame 1008/1186 (3 workers)
+@hf-progress {"code":"capture","done":1008,"total":1186,"pct":72}
+  ██████████████████░░░░░░░  73%  Streaming frame 1025/1186 (3 workers)
+@hf-progress {"code":"capture","done":1025,"total":1186,"pct":73}
+  ██████████████████░░░░░░░  73%  Streaming frame 1041/1186 (3 workers)
+@hf-progress {"code":"capture","done":1041,"total":1186,"pct":73}
+  ██████████████████░░░░░░░  74%  Streaming frame 1057/1186 (3 workers)
+@hf-progress {"code":"capture","done":1057,"total":1186,"pct":74}
+  ██████████████████░░░░░░░  75%  Streaming frame 1073/1186 (3 workers)
+@hf-progress {"code":"capture","done":1073,"total":1186,"pct":75}
+  ███████████████████░░░░░░  76%  Streaming frame 1089/1186 (3 workers)
+@hf-progress {"code":"capture","done":1089,"total":1186,"pct":76}
+  ███████████████████░░░░░░  76%  Streaming frame 1106/1186 (3 workers)
+@hf-progress {"code":"capture","done":1106,"total":1186,"pct":76}
+  ███████████████████░░░░░░  77%  Streaming frame 1121/1186 (3 workers)
+@hf-progress {"code":"capture","done":1121,"total":1186,"pct":77}
+  ███████████████████░░░░░░  78%  Streaming frame 1137/1186 (3 workers)
+@hf-progress {"code":"capture","done":1137,"total":1186,"pct":78}
+  ███████████████████░░░░░░  78%  Streaming frame 1152/1186 (3 workers)
+@hf-progress {"code":"capture","done":1152,"total":1186,"pct":78}
+  ███████████████████░░░░░░  79%  Streaming frame 1168/1186 (3 workers)
+@hf-progress {"code":"capture","done":1168,"total":1186,"pct":79}
+  ████████████████████░░░░░  80%  Streaming frame 1184/1186 (3 workers)
+@hf-progress {"code":"capture","done":1184,"total":1186,"pct":80}
+  ████████████████████░░░░░  80%  Streaming frame 1186/1186 (3 workers)
+@hf-progress {"code":"capture","done":1186,"total":1186,"pct":80}
+  ██████████████████████░░░  89%  Encoding frame 1102/1186
+@hf-progress {"code":"encode","done":1102,"total":1186,"pct":89}
+  ██████████████████████░░░  90%  Encoding frame 1186/1186
+@hf-progress {"code":"encode","done":1186,"total":1186,"pct":90}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"capture_streaming","status":"end","elapsedMs":21441,"durationMs":19549,"stagePhase":"capturing","workerCount":3,"forceScreenshot":false,"totalFrames":1186,"framesCompleted":1186,"captureMode":"beginframe","captureOperation":"encode"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"assemble","status":"start","elapsedMs":21442,"stagePhase":"capturing","hasAudio":false,"workerCount":3,"forceScreenshot":false,"totalFrames":1186,"framesCompleted":1186,"captureMode":"beginframe","captureOperation":"encode"}
+  ██████████████████████░░░  90%  Assembling final video
+@hf-progress {"code":"assemble","done":0,"total":39.53,"pct":90}
+  ████████████████████████░  99%  Assembling final video
+@hf-progress {"code":"assemble","done":39.53,"total":39.53,"pct":99}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"assemble","status":"end","elapsedMs":21536,"durationMs":94,"stagePhase":"capturing","hasAudio":false,"workerCount":3,"forceScreenshot":false,"totalFrames":1186,"framesCompleted":1186,"captureMode":"beginframe","captureOperation":"encode"}
+[INFO] [Render:trace] {"renderJobId":"82151826-0d6e-407f-8c1f-261449939237","phase":"pipeline","status":"checkpoint","elapsedMs":21605,"message":"artifact validated","totalElapsedMs":21604}
+  █████████████████████████  100%  Render complete
+
+◇  /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-silent.mp4
+   7.2 MB · 39.5s video · rendered in 21.6s
+   beginframe capture · software gpu · compile 0.3s · extract 0.0s · audio 0.0s · probe 0.1s · setup 1.6s · capture 19.6s · encode (during capture) 19.5s · assemble 0.1s
+   Keep editing by chatting with Framey in the HyperFrames desktop app → https://hyperframes.dev/studio/download?os=linux
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-silent.mp4 -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-voice.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E.mp4
++ ffmpeg -loglevel error -y -f lavfi -i anoisesrc=d=120:c=brown:a=0.0025:r=48000,highpass=f=60,lowpass=f=3500 -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/sfx/roomtone.wav
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/out/clip-01-final-A.mp4 -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E.mp4 -i /workspace/oneup-studio/video-engine/out/clip-01-final-B.mp4 -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/sfx/pop.wav -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/sfx/ding.wav -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/sfx/whoosh.wav -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/sfx/whoosh.wav -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/sfx/roomtone.wav -filter_complex [0:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:11.605,asetpts=PTS-STARTPTS[a0];[1:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:39.53,asetpts=PTS-STARTPTS[a1];[2:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:11.584,asetpts=PTS-STARTPTS[a2];[a0][a1]acrossfade=d=0.35:c1=tri:c2=tri[ax1];[ax1][a2]acrossfade=d=0.35:c1=tri:c2=tri[ax2];[3:a]aresample=48000,adelay=120:all=1[s0];[4:a]aresample=48000,adelay=60104:all=1[s1];[5:a]aresample=48000,adelay=11105:all=1[s2];[6:a]aresample=48000,adelay=50285:all=1[s3];[7:a]aresample=48000,adelay=0:all=1[s4];[ax2][s0][s1][s2][s3][s4]amix=inputs=6:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,atrim=0:62.019[a] -map [a] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/mix.wav
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/mix.wav -af volume=0.9dB,alimiter=limit=0.84:level=false /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/mix-g.wav
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/out/clip-01-final-A.mp4 -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E.mp4 -i /workspace/oneup-studio/video-engine/out/clip-01-final-B.mp4 -i /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/mix.wav -filter_complex [0:v]trim=0:11.605,setpts=PTS-STARTPTS,fps=30,scale=out_range=tv,format=yuv420p,setsar=1[v0];[1:v]trim=0:39.53,setpts=PTS-STARTPTS,fps=30,scale=out_range=tv,format=yuv420p,setsar=1[v1];[2:v]trim=0:11.584,setpts=PTS-STARTPTS,fps=30,scale=out_range=tv,format=yuv420p,setsar=1[v2];[v0][v1]xfade=transition=slideleft:duration=0.35:offset=11.255[vx1];[vx1][v2]xfade=transition=circleopen:duration=0.35:offset=50.435[vx2];[vx2]noise=alls=4:allf=t,format=yuv420p[v] -map [v] -map 3:a -c:v libx264 -profile:v high -crf 20 -maxrate 14M -bufsize 28M -pix_fmt yuv420p -colorspace bt709 -color_primaries bt709 -color_trc bt709 -color_range tv -r 30 -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/clip-01-final.mp4
+final → /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/clip-01-final.mp4 (62.019s)

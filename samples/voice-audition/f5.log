@@ -1,0 +1,80 @@
+/workspace/f5-venv/lib/python3.13/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Download Vocos from huggingface charactr/vocos-mel-24khz
+
+vocab :  /workspace/f5-ckpt/vocab.txt
+token :  custom
+model :  /workspace/f5-ckpt/model_last.pt 
+
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 thôi… mai học. mai học thiệt á! nếu chín giờ tối, thì mình mở sách năm phút. dễ hông?
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:49<00:00, 49.35s/it]100%|██████████| 1/1 [00:49<00:00, 49.35s/it]
+ok Adam 4.341333333333333
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 thôi… mai học. mai học thiệt á! nếu chín giờ tối, thì mình mở sách năm phút. dễ hông?
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [01:17<00:00, 77.41s/it]100%|██████████| 1/1 [01:17<00:00, 77.41s/it]
+ok Thái Sơn 4.842666666666666
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 thôi… mai học. mai học thiệt á! nếu chín giờ tối, thì mình mở sách năm phút. dễ hông?
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:46<00:00, 46.50s/it]100%|██████████| 1/1 [00:46<00:00, 46.50s/it]
+ok Minh Triết 3.978666666666667
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ủa? lại mai học nữa hả? ba lần rồi á nha! nè, thử vầy nè: nếu… thì… nghe giống code ghê á.
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [01:32<00:00, 92.77s/it]100%|██████████| 1/1 [01:32<00:00, 92.77s/it]
+ok Kim Thanh 6.272
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ủa? lại mai học nữa hả? ba lần rồi á nha! nè, thử vầy nè: nếu… thì… nghe giống code ghê á.
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [01:36<00:00, 96.18s/it]100%|██████████| 1/1 [01:36<00:00, 96.18s/it]
+ok Thục Đoan 5.44
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ủa? lại mai học nữa hả? ba lần rồi á nha! nè, thử vầy nè: nếu… thì… nghe giống code ghê á.
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [01:05<00:00, 65.60s/it]100%|██████████| 1/1 [01:05<00:00, 65.60s/it]
+ok Mỹ Duyên 5.962666666666666
+Converting audio...
+Using custom reference text...
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ủa? lại mai học nữa hả? ba lần rồi á nha! nè, thử vầy nè: nếu… thì… nghe giống code ghê á.
+
+
+Generating audio in 1 batches...
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [01:15<00:00, 75.51s/it]100%|██████████| 1/1 [01:15<00:00, 75.51s/it]
+ok Thùy Dung 4.181333333333333
+EXIT 0

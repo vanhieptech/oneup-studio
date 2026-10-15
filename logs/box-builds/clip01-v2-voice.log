@@ -1,0 +1,22 @@
+voice: 13 lines (13 prosody), 0 cached
++ /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json
+f5-1fd3d4f9e26f: 2.22s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=Kế hoạch học tố ích của mình là Mai Học.
+f5-6aeefa7b1dc0: 3.111s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Tối nào cũng vậy, cô xong mệt rồi ưm thôi, mai học!
+f5-78856042afa0: 3.713s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Hóa ra mình đâu có thiếu động lực. Mình thiếu một câu nếu, thì...
+f5-c933e99c9f43: 4.892s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Nó là ý định thực hiện, viết sẵn mấy giờ, ở đâu gặp gì thì làm gì?
+f5-71b25d2f960e: 4.74s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=vì mình quyết sẵn lúc còn tỉnh táo, tới lúc gặp tính hiệu khỏi cái mệt nữa.
+f5-b0a363fd47f6: 3.135s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=Ví dụ 9 giờ tối, gặp laptop thì mở một bay listening.
+f5-515cc3ec38b9: 3.879s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=hoặc sáng thứ 3, 8 giờ ngồi vào bàn thì viết phần mở đầu trước.
+f5-d6c887561754: 5.59s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=gọt 94 kiểm nghiệm độc lập, người viết kiểu này đạt mục tiêu nhiều hơn rõ, hiệu ứng vừa tới lớn.
+f5-09f500e70cd4: 5.086s takes=[None, None, None, None] sims=[1.0, 1.0, 1.0, 1.0] cuts=None stt=Nó giúp ở 3 lúc bắt tay làm, đứng vững khi bị chén ngang và dừng việc chắc chắn không thành.
+f5-211d8c922d22: 5.81s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Lỗi hai gặp rảnh thì học, rảnh đâu phải tính hiệu, phải là một giờ, một chỗ hay một việc vừa xong.
+f5-ff7e30f15874: 4.48s takes=[None, None] sims=[1.0, 1.0] cuts=None stt=mà nhớ nha chỉ hiệu quả với việc bạn thật sự muốn, viết mất 1-2 phút thôi.
+f5-b9f9054b76dd: 3.58s takes=[None, None, None] sims=[1.0, 1.0, 1.0] cuts=None stt=Thử luôn đứa viết 1 câu nếu thì cho cái mai của bạn, rồi comment nha.
+f5-aa89c183bf41: 1.552s takes=[None] sims=[1.0] cuts=None stt=cái mai hết đường trốn rồi.
+warn: f5-6aeefa7b1dc0 line STT sim 0.833: Tối nào cũng vậy, cô xong mệt rồi ưm thôi, mai học!
+warn: f5-b0a363fd47f6 line STT sim 0.75: Ví dụ 9 giờ tối, gặp laptop thì mở một bay listening.
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/public/voice/f5-c933e99c9f43.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-71b25d2f960e.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-b0a363fd47f6.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-515cc3ec38b9.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-d6c887561754.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-09f500e70cd4.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-211d8c922d22.wav -filter_complex [0:a]aresample=48000,adelay=650:all=1[a0];[1:a]aresample=48000,adelay=6392:all=1[a1];[2:a]aresample=48000,adelay=11982:all=1[a2];[3:a]aresample=48000,adelay=15967:all=1[a3];[4:a]aresample=48000,adelay=20696:all=1[a4];[5:a]aresample=48000,adelay=27136:all=1[a5];[6:a]aresample=48000,adelay=33072:all=1[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0,apad,atrim=0:39.53[o] -map [o] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E-voice.wav
+plans: total ≈ 62.01s
++ npx tsx src/cli.ts validate /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json
+✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json: 3 scenes, 11.61s
+✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json: 2 scenes, 11.56s

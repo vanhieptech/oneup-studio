@@ -1,7 +1,7 @@
 ---
 id: clip-02.script-final
 type: script
-status: đã render, chờ Hiệp duyệt
+status: kịch bản v2 (DL-059), chờ Hiệp duyệt, chưa render
 updated: 2026-10-14
 tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 ---
@@ -10,7 +10,7 @@ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 - **Chủ đề (theme-map dòng 2):** HowToLiveBetter 4.9, "Coi trì hoãn là đang tránh cảm giác khó chịu, đừng coi là chưa đủ cố gắng". Trụ 1 "Làm ít, xong nhiều". **Theme DARK** (luật 17: hook là mặt trái, gỡ cái bẫy tự trách). **Tuần 1**: Omi chỉ là tính năng/việc cần làm, không xuất hiện như nhân vật (luật 11).
 - **Câu chuyện:** S-02, Hiệp cứ hoãn làm tính năng Omi trong OneUp (Hiệp xác nhận 14/10 17:37, DL-047).
 - **Giọng:** F5 Thái Sơn, sinh theo từng vế câu, tiểu từ đọc thường (DL-040). Chỉ 1 tiếng đệm `{ừm}` ở b02. Hook + b02 giọng buồn, nhiều từ cảm xúc (chán nản, tội lỗi, ghét bản thân) theo DL-048. English mix: deadline, file, comment.
-- **Số từ VI:** 195. Ước 58–62s (theo tốc độ clip-01: 200 từ = 60.7s). check-rules ước 67s từ số từ → đo lại sau khi sinh giọng, vượt 60s thì cắt e06.
+- **Số từ VI:** 177 (v2). Ước 54–58s theo tốc độ clip-02 v1.
 - **Engine:** b01–b03, b11–b12 làm comic Remotion; e01–e07 làm explainer HyperFrames.
 - **Thông tin đủ:**
   - là gì (e01)
@@ -22,78 +22,87 @@ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
   - lưu ý: nghiên cứu tương quan (b11)
   - CTA làm ngay + loop (b12)
 
-## Beat table (thời gian đo sau khi sinh giọng)
-| Beat | Engine | Hình | Lời VI | Caption EN | Cảm xúc |
-|---|---|---|---|---|---|
-| b01 | remotion | Hook cut 1: zoom mạnh vào màn hình laptop 'Omi feature · TODO', chữ hook to ngay frame 0; dấu đỏ POSTPONED đóng xuống | Tính năng Omi. | The Omi feature. | sad |
-| b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | Hoãn. Hoãn. Lại hoãn. | Postponed. Postponed. Again. | sad |
-| b01c | remotion | Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TẠI SAO?! đập xuống rung | Tại sao mình lại như vậy?! | Why am I like this?! | sad |
-| b02 | remotion | Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash) | Mở code ra, năm giây sau đã lướt TikTok. | Open the code… five seconds later: TikTok. | sad |
-| b02 | remotion | Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash) | Chán nản, tội lỗi, rồi tự mắng: mình lười quá. | Drained, guilty: “I'm so lazy.” | sad |
-| b03 | remotion | Comic: iris mở sang giấy trắng, chữ 'LƯỜI' bị bút gạch, Hiệp ngẩng lên nhận ra | Nhưng nghiên cứu nói: thường đâu phải lười. Mình đang né một cảm giác. | Research says: usually not lazy. You're dodging a feeling. | focused |
-| e01 | hyperframes | Một việc (thẻ 'Báo cáo') tỏa ra 3 'gai' cảm xúc Chán / Sợ làm dở / Không biết bắt đầu; mũi tên né cong vòng qua thẻ | Trì hoãn là né cảm giác khó chịu: chán, sợ làm dở, hay không biết bắt đầu. Nghe quen không? | Procrastination = dodging discomfort: boredom, fear of failing, no clear start. Sound familiar? | focused |
-| e02 | hyperframes | Số 691 đếm lên; 2 thanh trượt 'Task feels bad' và 'I can't do it' cùng tăng, kim 'Delay' vọt lên theo | Gộp sáu trăm chín mươi mốt hệ số tương quan: việc càng khó chịu, càng thấy mình kém, càng dễ hoãn. | 691 correlations: the nastier the task and the lower your confidence, the more you delay. | focused |
-| e03 | hyperframes | Cái cân: bên trái 'phần thưởng' nhỏ dần khi trượt xa trên trục thời gian, bên phải icon điện thoại; cân nghiêng hẳn về phía điện thoại | Vì phần thưởng ở xa, cái khó chịu ở ngay bây giờ. Nên điện thoại thắng. | Because the reward is far away, the discomfort is right now. So the phone wins. | focused |
-| e04 | hyperframes | Thẻ câu hỏi lớn '?' lật ra (card-flip), kính lúp soi vào thẻ 'Báo cáo' tìm chỗ gai | Nên trước khi làm, hỏi một câu: việc này khó chịu ở chỗ nào? | So before you start, ask: what exactly feels bad here? | focused |
-| e05 | hyperframes | Mỗi gai cảm xúc được 'gỡ' bằng một miếng vá: 3 gạch đầu dòng tự viết ra; con dấu 'DRAFT · OK' đóng lên tờ giấy nguệch ngoạc | Không biết bắt đầu? Viết ba gạch đầu dòng. Sợ dở? Cho phép nháp xấu. | No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft. | focused |
-| e06 | hyperframes | Đồng hồ hẹn giờ 10:00 quay ngược, vòng tiến độ chạy; chuông reo, biển 'STOP OK' bật lên | Thấy chán? Hẹn mười phút, hết giờ thì được dừng. | Bored? Set 10 minutes. When it rings, you may stop. | focused |
-| e07 | hyperframes | Bong bóng 'Mình lười quá!' bị dấu đỏ '✕ KHÔNG GIÚP' đè lên; gai trên thẻ 'Báo cáo' dài thêm ra | Lỗi hay gặp: mắng mình rồi gồng. Mắng xong, việc càng khó chịu. | Common mistake: scold yourself and force it. That makes the task feel worse. | focused |
-| b11 | remotion | Comic: Hiệp giơ ngón tay, bảng nhỏ 'tương quan khác nhân quả'; icon bookmark nảy lên ở chữ 'lưu lại' | Lưu ý: nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra. | Note: correlational, a pattern only. Save this for the next time you stall. | focused |
-| b12 | remotion | Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại màn hình 'Omi feature' như hook (loop), Hiệp mở laptop | Việc bạn đang hoãn khó chịu chỗ nào? Comment một chữ. | What feels bad about the task you're avoiding? One word in the comments. | happy |
-| b12 | remotion | Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại màn hình 'Omi feature' như hook (loop), Hiệp mở laptop | Còn tính năng Omi? Mình đi hỏi câu đó đây. | And the Omi feature? Asking myself right now. | happy |
+## Kịch bản v2 (DL-059, 15/10): một mạch nhân quả
+Mạch: POV dời việc → thành dự án ma → **thế là** lướt TikTok, tự xỉ vả → **nhưng** thứ né là cảm giác → **tức là** trì hoãn = né → **bằng chứng** 691 → **vì** phần thưởng xa **nên** chộp TikTok → **vậy** hỏi chỗ khó chịu → **nếu** rối / sợ hỏng / **còn** chán → **ngược lại** đừng xỉ vả → **lưu ý** tương quan → **còn bạn** comment → **phần mình** mở Omi (loop).
 
-## Hook 0–3s (luật 55), từng giây (ước tính trước khi sinh giọng)
-| Giây | Hình | Tiếng | Chữ trên màn hình |
+| Beat | Lời VI | Từ nối | Thay đổi so với bản cũ |
 |---|---|---|---|
-| 0.00 | Frame 0: cận laptop (prop mới) 0 dòng code, 'Omi feature · TODO', chữ hook to đã hiện | — | **OMI FEATURE: HOÃN. HOÃN. HOÃN.** |
-| 0.12 | Push-in mạnh 0.14, dấu đỏ POSTPONED đóng xuống | `stamp` + "Tính năng Omi." (buồn) | giữ |
-| ~1.1 | **CUT 1** → b01b lịch DEADLINE xé 3 tờ HÔM NAY→MAI→TUẦN SAU→THÁNG SAU, nhãn HOÃN x3 | `click` "Hoãn hôm nay." · `click` "Hoãn ngày mai." · `stamp` "Rồi lại hoãn." (đổi vì F5 nuốt 1 chữ "Hoãn" khi lặp) | HOÃN / HOÃN / LẠI HOÃN |
-| ~2.4 | **CUT 2** → b01c mặt Hiệp khóc, nền tối dần (vignette) | `stamp` + "Toang thật rồi." (buồn) | **TOANG!** đập xuống |
-| ~3.6 | CUT (swish) → b02 TikTok, chán nản, tội lỗi | `pop` "TikTok" | |
+| b01 | POV: tính năng Omi. | (hook, POV) | “Tính năng Omi.” → format POV |
+| b01b | Hôm nay dời. Mai lại dời. | (hook) | “Hoãn hôm nay. Hoãn ngày mai. Rồi lại hoãn.” → gọn 6 chữ, động từ “dời” |
+| b01c | Thành dự án ma luôn. | Thành (hệ quả) | “Toang thật rồi.” → meme “dự án ma” (hệ quả của việc dời) |
+| b02 | Thế là mở code, năm giây sau lướt TikTok. / Rồi chán nản, tội lỗi, tự xỉ vả: lười quá. | Thế là / Rồi | thêm “Thế là” nối hook; “tự mắng” → “tự xỉ vả” |
+| b03 | Nhưng thứ mình né đâu phải code, mà là cảm giác khó chịu. | Nhưng | bỏ “nghiên cứu nói: thường đâu phải lười” (góc bão hòa) → gọi tên thứ đang né: code vs cảm giác khó chịu |
+| e01 | Tức là trì hoãn: né chán ngán, sợ hỏng, hay rối. Nghe quen không? | Tức là | “Trì hoãn là…” → “Tức là…”; chán/sợ làm dở/không biết bắt đầu → chán ngán/sợ hỏng/rối |
+| e02 | Bằng chứng: gộp sáu trăm chín mươi mốt hệ số tương quan, việc càng khó chịu, càng thấy mình kém, càng dễ hoãn. | Bằng chứng | thêm “Bằng chứng:” làm cầu nối |
+| e03 | Vì phần thưởng tận cuối tháng, còn khó chịu ập tới ngay, nên tay chộp TikTok. | Vì… nên | “Nên điện thoại thắng” → “tay chộp TikTok”; “ở xa / ngay bây giờ” → “tận cuối tháng / ập tới ngay” |
+| e04 | Vậy trước khi gõ, hỏi: việc này khó chịu chỗ nào? | Vậy | “Nên trước khi làm, hỏi một câu” → “Vậy trước khi gõ, hỏi” |
+| e05 | Nếu rối, viết ba gạch đầu dòng. / Sợ hỏng, cho phép nháp xấu. | Nếu | “Không biết bắt đầu thì…” → “Nếu rối…”; “Sợ dở” → “Sợ hỏng” |
+| e06 | Còn chán, hẹn mười phút rồi được dừng. | Còn | “Thấy chán thì…” → “Còn chán…” (nối 3 cách gỡ) |
+| e07 | Ngược lại, mắng mình rồi gồng chỉ làm việc nặng nề hơn. | Ngược lại | “Lỗi hay gặp… việc càng khó chịu” → “Ngược lại… chỉ làm việc nặng nề hơn” |
+| b11 | Lưu ý: nghiên cứu tương quan thôi. Lưu lại, lần sau hoãn thì mở. | Lưu ý | “chỉ cho thấy hướng” gộp vào “tương quan thôi”, câu ngắn hơn |
+| b12 | Còn bạn, việc đang hoãn khó chịu chỗ nào? Comment một chữ. / Phần mình, mở Omi ra hỏi liền. | Còn bạn / Phần mình | “Việc bạn…” → “Còn bạn…”; loop “Mình đi hỏi câu đó đây” → “mở Omi ra hỏi liền” |
 
-Check (ước tính): lời đầu 0.12s ≤ 0.3 · đổi hình/hit đầu 0.12s ≤ 1.0 · 0–3s: 2 cut + 4 hit · chữ hook ở frame 0.
+177 chữ VI (ước 55–60s theo tốc độ clip-02 v1: 198 chữ = 60.7s → ~54–56s).
 
-## Câu hook b01c (DL-054), 4 phương án
-| # | Câu | Gợi từ trend | Ghi chú |
+## Cụm mơ hồ đã bỏ → thay bằng
+| Cũ | Mới |
+|---|---|
+| Nên điện thoại thắng. | nên tay chộp TikTok. |
+| phần thưởng ở xa, cái khó chịu ở ngay bây giờ | phần thưởng tận cuối tháng, còn khó chịu ập tới ngay |
+| Mình đang né một cảm giác. | thứ mình né đâu phải code, mà là cảm giác khó chịu. |
+| thường đâu phải lười (góc bão hòa) | bỏ, gọi tên thứ đang né |
+| Mắng xong, việc càng khó chịu. | mắng mình rồi gồng chỉ làm việc nặng nề hơn. |
+| chán, sợ làm dở, không biết bắt đầu | chán ngán, sợ hỏng, rối |
+| tự mắng | tự xỉ vả |
+| hỏi một câu (trước khi làm) | trước khi gõ, hỏi |
+| Hoãn. Hoãn. Lại hoãn. / Toang thật rồi. | Hôm nay dời. Mai lại dời. / Thành dự án ma luôn. |
+
+## Hook 0–3s v2 (luật 55, DL-059), 3 phương án
+| # | Hook | Trend | Số liệu |
 |---|---|---|---|
-| 1 | Tại sao mình lại như vậy?! | T6 "Tại sao mày không vào lớp vậy?" (hỏi rồi trả lời đánh úp) + meme EN "Why am I like this?!" | Câu hỏi tự vấn kịch tính, b03 trả lời ngay "thường đâu phải lười" → đúng format câu hỏi → cú lật |
-| 2 | Bị dí deadline… mà vẫn lướt. | T4 "vừa than bị dí deadline vừa lướt TikTok" | Đúng tình huống, nhưng lặp ý với b02 |
-| 3 ⭐ (Hiệp chọn, DL-057) | **Toang thật rồi.** | meme "toang" (lâu đời, chưa có số liệu 2026) | Rất ngắn, dễ meme, nhưng cũ và ít cảm xúc tự trách |
-| 4 | Mình tệ thật sự luôn á. | cách nói nhấn "thật sự luôn" của Gen Z (chưa có nguồn số liệu) | Giọng Nam, cảm xúc mạnh, nhưng có tiểu từ "á" (DL-040 đọc thường) |
+| 1 ⭐ | **“POV: tính năng Omi.” → “Hôm nay dời. Mai lại dời.” → “Thành dự án ma luôn.”** (3 cut, lịch xé, chữ DỰ ÁN MA đập xuống) | Format POV, #1 TikTok tuần 5–11/10 (postdom.com/blog/tiktok-trends) + meme “dự án ma” của giới trẻ | POV top 36,1M view; YT “Dự án ma của giới trẻ: hẹn đi Đà Lạt từ 2024…” 23k (digest 15/10, P01) |
+| 2 | “Đây là dấu hiệu nè: tính năng Omi bị dời lần nữa.” → cut lịch → “Vũ trụ hông code giùm đâu.” | “This is your sign” đảo ngược (#2 TikTok, P07) | top 8,8M; YT “this is your sign to stop scrolling” 686k |
+| 3 | “Feed đang đầy dân than deadline. Còn mình: tính năng Omi, dời lần thứ mấy rồi?” | Time-of-day pile-on (P12, X News 15/10) | 3 tin X News cùng dạng, chưa có số TikTok |
 
-## Trend (luật 57, xem trend-signals.md)
-- T1 "không phải vì lười, mà là…" (YouTube VN proxy 1,41M view, 16k comment) → cover + b03.
-- T4 "than dí deadline vừa lướt TikTok" → b02.
-- T5 POV Gen Z đi làm → caption "POV: …".
-- T6 câu trả lời đánh úp → cú lật b03.
-- Chưa có số view/comment thật từ TikTok (box bị chặn) → kiểm tra trong app trước khi đăng.
+Chọn 1: format mạnh nhất (36,1M), nhịp 3 cut sẵn, “dự án ma” là chữ của giới trẻ VN và là hệ quả trực tiếp của “dời”, không dùng góc “không phải lười” đã bão hòa (digest 14–15/10: YT VN 1,4M/833k/675k cùng góc).
 
-## Engagement (luật 56, không xin like)
+| Giây | Hình | Tiếng | Chữ |
+|---|---|---|---|
+| 0.00 | Laptop “Omi feature · 0 dòng code”, chữ hook to | — | **POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.** |
+| 0.12 | push-in, dấu DỜI đóng | `stamp` + “POV: tính năng Omi.” | |
+| ~1.0 | **CUT 1** lịch xé HÔM NAY → MAI → MAI NỮA | `click` “Hôm nay dời.” · `stamp` “Mai lại dời.” | |
+| ~2.6 | **CUT 2** mặt méo, vignette | `stamp` + “Thành dự án ma luôn.” | **DỰ ÁN MA** đập xuống |
+
+## Engagement (luật 56)
 - e01 câu hỏi đồng cảm: "Nghe quen không?"
-- b11 nhắc lưu: "Lưu lại, lần sau hoãn thì mở ra."
-- b12 thử thách comment 1 chữ: "Việc bạn đang hoãn khó chịu chỗ nào? Comment một chữ."
-- b12 loop về hook: "Còn tính năng Omi? Mình đi hỏi câu đó đây." → nối lại "Tính năng Omi."
-- Bình luận ghim nối tiếp thử thách 1 chữ.
+- b11 nhắc lưu: "Lưu lại, lần sau hoãn thì mở."
+- b12 thử thách comment 1 chữ: "Còn bạn, việc đang hoãn khó chịu chỗ nào? Comment một chữ."
+- b12 loop: "Phần mình, mở Omi ra hỏi liền." → về "POV: tính năng Omi."
+
+## Trend (luật 57)
+- Hook: format POV (#1, 36,1M) + meme "dự án ma" (YT 23k), nguồn digest 15/10 (research/trends/2026-10-15).
+- Bỏ góc "không phải lười" (bão hòa). Cover "~~LƯỜI?~~ → ĐANG NÉ!" vẫn dùng góc này: cần Hiệp quyết giữ hay đổi.
+- Chi tiết: trend-signals.md.
 
 ## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
 Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
 
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
-| b01 | remotion | Hook cut 1: zoom mạnh vào màn hình laptop 'Omi feature · TODO', chữ hook to ngay frame 0; dấu đỏ POSTPONED đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
-| b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | “hoãn” | `click` → “Hoãn”; `click` → “Hoãn”; `stamp` → “lại hoãn” | cut (`swish`) |
-| b01c | remotion | Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TOANG! đập xuống rung | “Toang” | `stamp` → “Toang” | cut (`swish`) |
-| b02 | remotion | Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash) | “tội lỗi” | `pop` → “TikTok”; `stamp` → “lười” | cut (`swish`) |
-| b03 | remotion | Comic: iris mở sang giấy trắng, chữ 'LƯỜI' bị bút gạch, Hiệp ngẩng lên nhận ra | “né một cảm giác” | `pen` → “đâu phải lười” | iris (`swish`) |
-| e01 | hyperframes | Một việc (thẻ 'Báo cáo') tỏa ra 3 'gai' cảm xúc Chán / Sợ làm dở / Không biết bắt đầu; mũi tên né cong vòng qua thẻ | “khó chịu” | `pop` → “né”; `tick` → “chán” | slideleft (`whoosh-soft`) |
-| e02 | hyperframes | Số 691 đếm lên; 2 thanh trượt 'Task feels bad' và 'I can't do it' cùng tăng, kim 'Delay' vọt lên theo | “sáu trăm chín mươi mốt” | `rise` → “sáu trăm chín mươi mốt”; `ding` → “càng dễ hoãn” | push (`swish`) |
-| e03 | hyperframes | Cái cân: bên trái 'phần thưởng' nhỏ dần khi trượt xa trên trục thời gian, bên phải icon điện thoại; cân nghiêng hẳn về phía điện thoại | “ở xa” | `snap` → “bây giờ”; `ding` → “điện thoại thắng” | push (`swish`) |
-| e04 | hyperframes | Thẻ câu hỏi lớn '?' lật ra (card-flip), kính lúp soi vào thẻ 'Báo cáo' tìm chỗ gai | “hỏi một câu” | `pop` → “khó chịu ở chỗ nào” | push (`swish`) |
-| e05 | hyperframes | Mỗi gai cảm xúc được 'gỡ' bằng một miếng vá: 3 gạch đầu dòng tự viết ra; con dấu 'DRAFT · OK' đóng lên tờ giấy nguệch ngoạc | “gạch đầu dòng” | `pen` → “ba gạch đầu dòng”; `stamp` → “nháp xấu” | push (`swish`) |
+| b01 | remotion | Hook cut 1 (format POV): push mạnh vào laptop 'Omi feature · 0 dòng code', chữ hook to ngay frame 0; dấu đỏ DỜI đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
+| b01b | remotion | Hook cut 2: lịch DEADLINE xé 2 tờ HÔM NAY → MAI → MAI NỮA theo từng chữ 'dời', camera giật nhẹ mỗi nhịp | “dời” | `click` → “Hôm nay dời”; `stamp` → “lại dời” | cut (`swish`) |
+| b01c | remotion | Hook cut 3 (meme 'dự án ma'): mặt Hiệp méo xệch, nền tối dần (vignette), chữ DỰ ÁN MA đập xuống rung | “dự án ma” | `stamp` → “dự án ma” | cut (`swish`) |
+| b02 | remotion | Comic: tay rời bàn phím chộp điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi đè lên đầu (squash) | “tội lỗi” | `pop` → “TikTok”; `stamp` → “lười” | cut (`swish`) |
+| b03 | remotion | Comic: iris mở sang giấy trắng, chữ 'CODE' bị bút gạch, mũi tên bật sang đám mây nhỏ 'KHÓ CHỊU'; Hiệp ngẩng lên nhận ra | “cảm giác khó chịu” | `pen` → “đâu phải code” | iris (`swish`) |
+| e01 | hyperframes | Thẻ 'Omi feature' mọc 3 'gai' cảm xúc Chán ngán / Sợ hỏng / Rối; mũi tên né cong vòng qua thẻ | “né” | `pop` → “né”; `tick` → “chán ngán” | slideleft (`whoosh-soft`) |
+| e02 | hyperframes | Số 691 đếm lên; 2 thanh 'Task feels bad' và 'I can't do it' cùng dâng, kim 'Delay' vọt lên theo | “sáu trăm chín mươi mốt” | `rise` → “sáu trăm chín mươi mốt”; `ding` → “càng dễ hoãn” | push (`swish`) |
+| e03 | hyperframes | Cái cân: phần thưởng teo nhỏ trôi về mốc 'cuối tháng', cục 'khó chịu' rơi bịch xuống đĩa bên kia; bàn tay chộp điện thoại | “ập tới” | `snap` → “ập tới ngay”; `ding` → “chộp TikTok” | push (`swish`) |
+| e04 | hyperframes | Thẻ câu hỏi lớn '?' lật ra (card-flip), kính lúp soi vào thẻ 'Omi feature' tìm chỗ gai | “hỏi” | `pop` → “khó chịu chỗ nào” | push (`swish`) |
+| e05 | hyperframes | Mỗi gai được 'gỡ' bằng một miếng vá: 3 gạch đầu dòng tự viết ra; con dấu 'DRAFT · OK' đóng lên tờ giấy nguệch ngoạc | “gạch đầu dòng” | `pen` → “ba gạch đầu dòng”; `stamp` → “nháp xấu” | push (`swish`) |
 | e06 | hyperframes | Đồng hồ hẹn giờ 10:00 quay ngược, vòng tiến độ chạy; chuông reo, biển 'STOP OK' bật lên | “mười phút” | `tick` → “mười phút”; `ding` → “được dừng” | push (`swish`) |
-| e07 | hyperframes | Bong bóng 'Mình lười quá!' bị dấu đỏ '✕ KHÔNG GIÚP' đè lên; gai trên thẻ 'Báo cáo' dài thêm ra | “mắng mình” | `stamp` → “mắng mình”; `rise` → “càng khó chịu” | push (`swish`) |
-| b11 | remotion | Comic: Hiệp giơ ngón tay, bảng nhỏ 'tương quan khác nhân quả'; icon bookmark nảy lên ở chữ 'lưu lại' | “tương quan” | `tick` → “tương quan”; `pop` → “Lưu lại” | circleopen (`whoosh-soft`) |
-| b12 | remotion | Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại màn hình 'Omi feature' như hook (loop), Hiệp mở laptop | “Omi” | `ding` → “hỏi câu đó” | slide (`swish`) |
+| e07 | hyperframes | Bong bóng 'Lười quá!' bị dấu đỏ '✕ NOT HELPING' đè lên; thẻ 'Omi feature' trĩu xuống, gai dài thêm | “mắng mình” | `stamp` → “mắng mình”; `rise` → “nặng nề” | push (`swish`) |
+| b11 | remotion | Comic: Hiệp giơ ngón tay, biển 'CHỈ LÀ TƯƠNG QUAN'; icon bookmark nảy lên ở chữ 'lưu lại' | “tương quan” | `tick` → “tương quan”; `pop` → “Lưu lại” | circleopen (`whoosh-soft`) |
+| b12 | remotion | Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại laptop 'Omi feature' như hook (loop), Hiệp mở laptop | “Omi” | `ding` → “hỏi liền” | slide (`swish`) |
 
 ## Motion picks
 push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial label-reveal (e01) · count-up + slider-rise (e02) · scale-tip trên trục thời gian (e03) · card-flip + magnifier (e04) · patch-fix + stamp (e05) · countdown ring (e06) · mistake-stamp + spike-grow (e07) · sign-pop (b11) · slide + loop (b12). Mỗi section một ẩn dụ khác nhau, không lặp.
@@ -119,8 +128,8 @@ push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial
 - câu "mắng xong, việc càng khó chịu" ở e07 là suy luận, không có số liệu
 
 ## [CẦN HIỆP XÁC NHẬN]
-1. Hook b01c: "Toang thật rồi." (Hiệp chọn 17:54, DL-057).
-2. Cover: ĐÃ DUYỆT "~~LƯỜI?~~ → ĐANG NÉ!" (Hiệp "Okr", DL-055).
+1. Hook v2: POV + “dự án ma” (thay “Toang thật rồi.” Hiệp chọn 14/10). Duyệt chưa?
+2. Cover: ĐÃ DUYỆT (nhưng dùng góc “không phải lười” đã bão hòa, giữ hay đổi?) "~~LƯỜI?~~ → ĐANG NÉ!" (Hiệp "Okr", DL-055).
 3. Prop comic mới (laptop, điện thoại, lịch, mây LƯỜI, biển): xem preview/preview-strip.png (DL-056). OK chưa?
 4. 3 cách gỡ ở e05–e06 là ví dụ minh hoạ (đã giữ theo "Giữ").
 6. Trend: chưa xác minh bằng số liệu TikTok thật (xem trend-signals.md). Kiểm trong app trước khi đăng?

@@ -122,6 +122,8 @@ Render a draft for gate 1 with `cd video-engine && npx remotion still src/index.
 
 **Trend layer (rule 57, DL-053).** Before gate 1, write `final/trend-signals.md`. It needs TikTok clips on the topic ranked by views plus comments (VN first), with URL, views, comments and the beat where each trend is used. Use YouTube as a labeled proxy if TikTok blocks the box. List rejected trends with the reason. Weave the trend into the hook, cover and caption. `check-rules` rule-57 warns.
 
+**Continuous story and sharp words (rule 58, DL-059).** Every non-hook beat opens with a connector or a callback (thế là / rồi / nhưng / hóa ra / tức là / bằng chứng / vì… nên / vậy / nếu / còn / ngược lại / phần mình). Never use vague shorthand ("điện thoại thắng", "một cảm giác", "mọi thứ"); write the concrete image instead. Run `python3 pipeline/scripts/vn-words.py --spec <spec>` and pick sharper words from `resources/vn-dict/thesaurus.md` (all checked against Viet74K). Keep each clause ≤ 12 words and put `hl` on the strongest word. Check saturation in today's `research/trends/*/patterns.md` before choosing the hook angle. `check-rules` rule-58 blocks.
+
 
 **Post package (rule 53, DL-045).** Copy `templates/post-package.md` to `final/post.md` and fill in all 12 sections, each in its own code block:
 - file specs;

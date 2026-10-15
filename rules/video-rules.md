@@ -6,7 +6,7 @@ updated: 2026-10-13
 version: 3.11
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.13, 14/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.14, 15/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -197,7 +197,15 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Mỗi clip có `final/trend-signals.md`: URL clip, view, comment, ngày, dùng ở beat nào. Ghi rõ trend không dùng và lý do (brand-safe, bản quyền sound, lệch tone). Số liệu proxy phải ghi là proxy.
     - check-rules: `rule-57` (cảnh báo nếu thiếu trend-signals.md hoặc không có dòng nào có số view).
 
+58. **Kịch bản là một câu chuyện liền mạch, chữ sắc và gọn (DL-059, L-022):**
+    - Mỗi beat (trừ cảnh hook) mở bằng từ nối hoặc gọi lại beat trước: thế là / rồi / nhưng / hóa ra / tức là / bằng chứng / vì… nên / vậy / nếu / còn / ngược lại / phần mình… Người xem phải thấy được quan hệ nhân quả giữa các câu.
+    - Cấm cụm từ mơ hồ, vô nghĩa: "X thắng" (điện thoại thắng), "điều gì đó", "mọi thứ", "nhiều thứ", "kiểu như", "một cảm giác" (phải gọi tên cảm giác), "rất là"… Thay bằng hình ảnh cụ thể (tay chộp TikTok, phần thưởng tận cuối tháng).
+    - Chọn từ bằng từ điển: tra `resources/vn-dict/Viet74K.txt` + kho từ sắc `resources/vn-dict/thesaurus.md` qua `pipeline/scripts/vn-words.py --spec`. Ưu tiên động từ mạnh, từ có hình ảnh.
+    - Câu gọn: mỗi vế ≤ 12 chữ, mỗi câu một ý, chữ nhấn (`hl`) rơi vào từ mạnh nhất.
+    - check-rules: `rule-58` (✖ từ mơ hồ, ✖ thiếu từ nối, ⚠ vế > 12 chữ).
+
 ## Changelog
+- **v3.14, 15/10/2026:** luật 58, kịch bản liền mạch có từ nối, từ sắc tra từ điển, cấm cụm mơ hồ (DL-059, L-022).
 - **v3.13, 14/10/2026:** luật 57, lớp trend ưu tiên tín hiệu gốc TikTok theo view/comment (DL-053).
 - **v3.12, 14/10/2026:** luật 55, hook 0–3s dồn dập; luật 56, tương tác khéo không xin (DL-051, DL-052).
 - **v3.11, 14/10/2026:** luật 54, cover render từ template A, props có trong spec từ gate 1 (DL-046).

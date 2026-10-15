@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-khong-can-day-5-gio",
+ "title": "[STUB] Hông cần dậy 5 giờ. Cần dậy cùng một giờ mỗi ngày",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "early-risers-share-5am-gym-pre-workout-fuel",
+  "bridge_id": "B-5am-01",
+  "lesson": "3.2 Cố định giờ dậy, cuối tuần cũng vậy (Phillips 2017: 1/5 sinh viên lệch nhịp nhất có nhịp sinh học muộn hơn ~2,5 giờ so với 1/5 đều nhất; càng đều điểm càng tốt r=0.37 — một nghiên cứu, n=61) + nhắc 3.3 ngủ đủ 7–8 giờ, đừng coi 6 giờ là đủ (Van Dongen 2003)",
+  "angle": "contrarian / data",
+  "pattern": "P12 + P11 + P03",
+  "differentiation": "Mọi người đang nói: dậy 5 giờ + gym + pre-workout mới là disciplined (https://x.com/i/trending/2110448654192431562). Góc của mình: sách hông khen 5 giờ — sách khen dậy cùng một giờ mỗi ngày (kể cả cuối tuần), rồi ngủ đủ 7–8 giờ. Dậy 5h mà cuối tuần ngủ tới trưa là đang sống trong jet lag giả. Giờ dậy cố định 6:30 của Hiệp [CẦN HIỆP XÁC NHẬN] (S-05)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "khong-can-day-5-gio.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy hôm nay feed đầy dân dậy năm giờ sáng. Pre-workout, gym, rồi flex.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Feed full of 5am club flexes.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "khong-can-day-5-gio.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nghe bá khí ghê. Mà sách hông hỏi bạn dậy mấy giờ.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "The book doesn't ask what time you wake.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "khong-can-day-5-gio.b03",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách hỏi: bạn dậy cùng một giờ mỗi ngày chưa? Cuối tuần cũng vậy.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Same wake time every day — weekends too.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "khong-can-day-5-gio.b04",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Hiệp chọn giờ dậy cố định sáu rưỡi — chuyện thật chỉ dùng khi Hiệp ok.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder: fixed 6:30 wake]",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "khong-can-day-5-gio.b05",
+   "duration": 8,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một nghiên cứu nhỏ: nhóm lệch nhịp nhất, đồng hồ sinh học muộn hơn nhóm đều khoảng hai tiếng rưỡi. Như đang sống trong jet lag.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Most irregular group: body clock ~2.5 hours later.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "khong-can-day-5-gio.b06",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dậy năm giờ mà cuối tuần ngủ bù tới trưa? Đó hông phải kỷ luật. Đó là lệch múi giờ tự chế.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "5am weekdays + noon weekends = DIY jet lag.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "khong-can-day-5-gio.b07",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Và ngủ sáu tiếng rồi bảo đủ? Sách ghi: sau hai tuần, não tụt ngang hai đêm trắng — mà mình cảm giác quen rồi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Six hours feels fine. Performance doesn't.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "khong-can-day-5-gio.b08",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn hông cần năm giờ. Bạn cần một giờ cố định, rồi ngủ đủ. Giờ dậy của bạn đều chưa?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Not 5am. Same time. Enough sleep.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

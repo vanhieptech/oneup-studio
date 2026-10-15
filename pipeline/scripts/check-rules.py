@@ -313,6 +313,17 @@ def main():
         ts = open(tsp, encoding="utf8").read()
         (ok if re.search(r"http\S+.*\d[\d.,]*\s*(M\s*)?view", ts) else warn)("rule-57", "trend-signals.md has clip URLs with view counts")
         if "proxy" in ts.lower() and "tiktok.com/@" not in ts: warn("rule-57", "only proxy signals, no TikTok clip URL yet → verify in app before posting")
+    # rule-58 (DL-059, L-022): one continuous story, precise words, no vague phrases
+    VAGUE = [r"\b(điện thoại|não|cảm xúc|nó|lười|việc)\s+thắng\b", r"\bthắng\s*[.!]?$", r"điều gì đó", r"cái gì đó", r"nhiều thứ", r"mọi thứ", r"kiểu như", r"theo một cách nào đó", r"vân vân", r"\bthật sự rất\b", r"\brất là\b", r"một cảm giác\b"]
+    CONN = r"^(thế là|rồi|nhưng|mà|hóa ra|tức là|nói gọn|vì|nên|vậy|bằng chứng|lý do|nếu|còn|ngược lại|lưu ý|phần mình|thành|sau đó|cuối cùng|thay vào đó|đó là|kết quả|chính vì|giờ)\b"
+    beats_ = [x for p_ in spec["parts"] for x in p_.get("scenes", p_.get("sections", []))]
+    hookset = set((spec.get("hook") or {}).get("scenes", []))
+    vg = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in VAGUE for m in [re.search(pat, re.sub(r"\{[^}]*\}", "", l["text"]).lower())] if m]
+    (e55 if False else (warn if "clip-01" in clip_dir else err))("rule-58", "no vague phrases" + (f": {vg}" if vg else "")) if vg else ok("rule-58", "no vague phrases (‘X thắng’, ‘điều gì đó’, ‘mọi thứ’…)")
+    nc_ = [x["id"] for i_, x in enumerate(beats_) if i_ and x["id"] not in hookset and not re.search(CONN, re.sub(r"\{[^}]*\}|[\"“”]", "", x["lines"][0]["text"]).strip().lower())]
+    ((warn if "clip-01" in clip_dir else err) if nc_ else ok)("rule-58", "every non-hook beat opens with a connector/callback" + (f"; missing: {nc_}" if nc_ else ""))
+    lw = [x["id"] for x in beats_ for l in x["lines"] if max(len(c.split()) for c in re.split(r"[.,?!:;]", re.sub(r"\{[^}]*\}", "", l["text"])) if c.strip()) > 12]
+    (warn if lw else ok)("rule-58", "clauses ≤ 12 words (punchy)" + (f"; long: {lw}" if lw else ""))
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}

@@ -1,0 +1,104 @@
+{
+ "jobs": [
+  {
+   "id": "L1",
+   "voice": "Đức Trí",
+   "out": "/workspace/hi-oneup/sample-natural/voice/L1",
+   "phrases": [
+    {
+     "t": "Kế hoạch học tô ích của mình là...",
+     "gap": 0.42,
+     "tempo": 0.96,
+     "semi": -0.3
+    },
+    {
+     "t": "mai học.",
+     "gap": 0,
+     "emph": true,
+     "tempo": 0.92
+    }
+   ]
+  },
+  {
+   "id": "L2",
+   "voice": "Kim Thanh",
+   "out": "/workspace/hi-oneup/sample-natural/voice/L2",
+   "phrases": [
+    {
+     "t": "Ủa?",
+     "gap": 0.22,
+     "semi": 1.2,
+     "tempo": 1.05
+    },
+    {
+     "t": "Nhóm chat nào cũng có dự án ma.",
+     "gap": 0.3
+    },
+    {
+     "t": "Còn bạn á, có hẳn",
+     "gap": 0.16,
+     "tempo": 1.04
+    },
+    {
+     "t": "kỳ thi ma",
+     "gap": 0.12,
+     "emph": true
+    },
+    {
+     "t": "luôn nha!",
+     "gap": 0,
+     "semi": 0.6,
+     "tempo": 1.06
+    }
+   ]
+  },
+  {
+   "id": "L3",
+   "voice": "Kim Thanh",
+   "out": "/workspace/hi-oneup/sample-natural/voice/L3",
+   "phrases": [
+    {
+     "t": "Nè,",
+     "gap": 0.22,
+     "semi": 0.5
+    },
+    {
+     "t": "sửa đúng một câu thôi:",
+     "gap": 0.3
+    },
+    {
+     "t": "nếu...",
+     "gap": 0.32,
+     "emph": true
+    },
+    {
+     "t": "thì...",
+     "gap": 0,
+     "emph": true
+    }
+   ]
+  },
+  {
+   "id": "L4",
+   "voice": "Đức Trí",
+   "out": "/workspace/hi-oneup/sample-natural/voice/L4",
+   "phrases": [
+    {
+     "t": "Công thức nè:",
+     "gap": 0.3,
+     "semi": 0.4
+    },
+    {
+     "t": "mấy giờ, ở đâu, gặp gì,",
+     "gap": 0.26
+    },
+    {
+     "t": "thì làm gì.",
+     "gap": 0,
+     "emph": true,
+     "emph_semi": -0.5
+    }
+   ]
+  }
+ ]
+}

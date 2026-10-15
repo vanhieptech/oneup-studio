@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-chop-10-phut-sau-com-trua",
+ "title": "[STUB] Mệt sau cơm trưa? Chợp 10 phút, đừng ngủ nửa tiếng",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "adults-share-post-lunch-slump-and-evening-wind",
+  "bridge_id": "B-nap-01",
+  "lesson": "3.11 Buồn ngủ chiều thì chợp 10 phút, đừng ngủ nửa tiếng (Brooks & Lack 2006: ngủ 10 phút tỉnh ngay, lợi ích kéo ~155 phút; ngủ 5 phút gần như không; ngủ 20 phút phải chờ ~35 phút mới thấy; ngủ 30 phút có giai đoạn sleep inertia vừa tỉnh còn tệ hơn không ngủ — chỉ một nghiên cứu lab, người trẻ khoẻ)",
+  "angle": "humor / data",
+  "pattern": "P12 + P03",
+  "differentiation": "Mọi người đang nói: than mệt sau cơm trưa, cần cà phê thêm / wind-down tối bằng scroll (https://x.com/i/trending/2110418790723006851). Góc của mình: sách không bảo 'cố tỉnh' hay 'ngủ bù nửa tiếng' — đúng 10 phút là điểm ngọt; ngủ 30 phút vừa tỉnh còn tệ hơn không ngủ. Chuyện SE của Hiệp buổi chiều [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "chop-10-phut-sau-com-trua.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Feed đang đầy dân than mệt sau cơm trưa. Cà phê thêm một ly nữa hả?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Everyone's complaining about the post-lunch slump.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "chop-10-phut-sau-com-trua.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "À… hoặc ngủ bù nửa tiếng, dậy xong còn muốn ngủ tiếp.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Or nap half an hour… and wake up worse.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "chop-10-phut-sau-com-trua.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện một buổi chiều SE của Hiệp: mắt díp mà vẫn cố cày.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder]",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "chop-10-phut-sau-com-trua.b04",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách chỉ một con số thôi: chợp mười phút. Tỉnh ngay. Lợi ích kéo khoảng hai tiếng rưỡi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Book fact: a 10-minute nap. Alert now. ~2.5 hours of benefit.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "chop-10-phut-sau-com-trua.b05",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngủ năm phút? Gần như hông ăn thua. Ngủ hai mươi phút? Phải chờ thêm mới tỉnh.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "5 minutes barely helps. 20 minutes takes time to kick in.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "chop-10-phut-sau-com-trua.b06",
+   "duration": 7,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngủ ba mươi phút thì vừa dậy, bạn còn tệ hơn lúc chưa ngủ. Nghe vô lý mà lab ghi vậy đó.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "30 minutes: sleep inertia. Worse right after waking.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "chop-10-phut-sau-com-trua.b07",
+   "duration": 6,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chỉ một nghiên cứu lab, người trẻ khoẻ. Ngủ hông được cũng đừng cố. Nằm nhắm mắt mười phút đủ rồi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One lab study. Can't sleep? Just rest your eyes.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "chop-10-phut-sau-com-trua.b08",
+   "duration": 5,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chiều nay bạn mệt: mười phút, hay thêm một ly cà phê?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Today: 10 minutes, or another coffee?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

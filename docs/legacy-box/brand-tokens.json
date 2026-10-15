@@ -1,0 +1,353 @@
+{
+  "source": "/Users/macbook/work/oneup/design-system/oneup (MASTER.md, brand/COLOR.md, brand/LOGO.md)",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "safeZone": {
+      "top": 220,
+      "bottom": 380,
+      "left": 56,
+      "right": 140
+    }
+  },
+  "colors": {
+    "light": {
+      "bg": "#F7F7F5",
+      "surface": "#FFFFFF",
+      "ink": "#111111",
+      "muted": "#6B6B6B",
+      "border": "#E8E8E6",
+      "primary": "#111111",
+      "onPrimary": "#FFFFFF",
+      "primaryPress": "#2A2A2A",
+      "coachTint": "#F4F4F2",
+      "soft": "#F0F0EE",
+      "success": "#1A7F4B",
+      "momentum": "#B45309",
+      "danger": "#B91C1C"
+    },
+    "dark": {
+      "bg": "#111111",
+      "surface": "#1C1C1A",
+      "ink": "#F7F7F5",
+      "muted": "#A3A3A0",
+      "border": "#2E2E2C",
+      "primary": "#F7F7F5",
+      "onPrimary": "#111111",
+      "primaryPress": "#E8E8E6",
+      "coachTint": "#1A1A18",
+      "soft": "#242422",
+      "success": "#2F9E66",
+      "momentum": "#D97706",
+      "danger": "#DC2626"
+    },
+    "ratio": {
+      "neutral": 0.9,
+      "cta": 0.08,
+      "semantic": 0.02
+    },
+    "semanticUse": {
+      "success": "done/complete beats only",
+      "momentum": "at-risk insight + label",
+      "danger": "errors only"
+    },
+    "banned": [
+      "purple/violet AI",
+      "neon/glow",
+      "cream #F4F1EA + terracotta",
+      "teal-as-brand",
+      "rainbow",
+      "pure #000/#FFF pair",
+      "confetti",
+      "emoji icons",
+      "multi-layer shadows"
+    ]
+  },
+  "fonts": {
+    "video": {
+      "family": "Be Vietnam Pro",
+      "appliesTo": "ALL on-screen text (EN + VI)",
+      "decidedBy": "Hiệp, 2026-10-12",
+      "cssStack": "'Be Vietnam Pro', sans-serif",
+      "files": {
+        "400": "/workspace/hi-oneup/brand/fonts/BeVietnamPro-Regular.ttf",
+        "500": "/workspace/hi-oneup/brand/fonts/BeVietnamPro-Medium.ttf",
+        "600": "/workspace/hi-oneup/brand/fonts/BeVietnamPro-SemiBold.ttf",
+        "700": "/workspace/hi-oneup/brand/fonts/BeVietnamPro-Bold.ttf"
+      },
+      "version": "1.002",
+      "license": "SIL OFL 1.1 (/workspace/hi-oneup/brand/fonts/OFL-BeVietnamPro.txt)",
+      "sizes": {
+        "wordmark": [
+          44,
+          700
+        ],
+        "eyebrow": [
+          28,
+          600
+        ],
+        "hero": [
+          104,
+          700,
+          "-0.035em",
+          1.02
+        ],
+        "sub": [
+          36,
+          400
+        ],
+        "caption": [
+          76,
+          600,
+          "-0.02em"
+        ],
+        "captionActive": [
+          76,
+          700,
+          "underline 6px offset 14px"
+        ],
+        "meta": [
+          26,
+          500
+        ]
+      },
+      "letterSpacing": {
+        "wordmark": "-0.03em",
+        "bootWordmark": "-0.045em",
+        "title": "-0.02em",
+        "eyebrow": "0.14em uppercase 600"
+      },
+      "wordmark": {
+        "text": "OneUp.",
+        "weight": 700,
+        "letterSpacing": "-0.03em",
+        "periodOpacity": 0.35
+      }
+    },
+    "app": {
+      "family": "DM Sans",
+      "version": "4.004 (static TTF, bundled in app)",
+      "files": {
+        "400": "/workspace/hi-oneup/brand/fonts/DMSans-Regular.ttf",
+        "500": "/workspace/hi-oneup/brand/fonts/DMSans-Medium.ttf",
+        "600": "/workspace/hi-oneup/brand/fonts/DMSans-SemiBold.ttf",
+        "700": "/workspace/hi-oneup/brand/fonts/DMSans-Bold.ttf"
+      },
+      "macSource": "/Users/macbook/work/oneup/OneUpShared/Resources/Fonts/",
+      "evidence": [
+        "MASTER.md §3 'DM Sans only'",
+        "OUTypography.swift familyName='DM Sans', faces DMSans-Regular/Medium/SemiBold/Bold",
+        "OneUp/Info.plist + OneUpWidget/Info.plist UIAppFonts list the 4 TTFs",
+        "prototype CSS font-family 'DM Sans', system-ui, sans-serif"
+      ],
+      "appScale": {
+        "brand": [
+          28,
+          700
+        ],
+        "title": [
+          22,
+          600
+        ],
+        "heading": [
+          20,
+          600
+        ],
+        "focusTitle": [
+          18,
+          600
+        ],
+        "countdownTitle": [
+          17,
+          600
+        ],
+        "body": [
+          16,
+          400
+        ],
+        "bodySemibold": [
+          16,
+          600
+        ],
+        "muted": [
+          14,
+          400
+        ],
+        "chip": [
+          14,
+          500
+        ],
+        "greet": [
+          13,
+          400
+        ],
+        "meta": [
+          13,
+          400
+        ],
+        "caption": [
+          12,
+          400
+        ],
+        "micro": [
+          11,
+          600
+        ],
+        "countdownDigit": [
+          72,
+          700
+        ],
+        "countdownGo": [
+          56,
+          700
+        ],
+        "focusTimer": [
+          40,
+          700
+        ]
+      },
+      "showcaseOnly": "Instrument Serif — used only for h1 + wordmark in prototype/oneup-brand showcase pages, NOT in app/journey; not used in video",
+      "numeric": "no mono/tabular font defined; numbers use DM Sans"
+    },
+    "note": "App UI font is DM Sans (not used in video for now; lacks Vietnamese stacked diacritics)."
+  },
+  "caption": {
+    "plate": {
+      "dark": "rgba(28,28,26,.78)",
+      "light": "rgba(255,255,255,.86)",
+      "radius": 40,
+      "padding": [
+        48,
+        52,
+        44
+      ],
+      "border": "1.5px border token",
+      "bottomOffset": 420
+    },
+    "spoken": "ink",
+    "active": "ink 700 + underline",
+    "upcoming": "muted @55%",
+    "chunk": "3–5 words"
+  },
+  "logo": {
+    "hero": "/workspace/hi-oneup/brand/brand/logos/05-pair-plus.svg",
+    "png1024": "/workspace/hi-oneup/brand/brand/logos/05-pair-plus-1024.png (on Mac only)",
+    "appIconLight": "/workspace/hi-oneup/brand/brand/logos/app-icon-pair-bond-light.svg",
+    "appIconDark": "/workspace/hi-oneup/brand/brand/logos/app-icon-pair-bond-dark.svg",
+    "loader": "/workspace/hi-oneup/brand/brand/logos/omi-load.svg",
+    "placement": {
+      "x": 72,
+      "y": 236,
+      "size": 60,
+      "withWordmark": true
+    },
+    "colorOnDark": "#F7F7F5",
+    "colorOnLight": "#111111",
+    "strokeDrawOutro": {
+      "durationSec": 3.2,
+      "beats": [
+        "Listen: arc",
+        "Understand: pair dots",
+        "Your +1: plus/1 stem",
+        "wordmark"
+      ],
+      "optional": true
+    }
+  },
+  "timing": {
+    "appScreensFromWeek": 3,
+    "omiFromWeek": 5
+  },
+  "omi": {
+    "forms": [
+      "seed",
+      "companion",
+      "guide",
+      "anchor"
+    ],
+    "moods": [
+      "idle",
+      "wave",
+      "think",
+      "quiet",
+      "listen",
+      "celebrate",
+      "sleep",
+      "proud",
+      "spark",
+      "blush",
+      "worry",
+      "cheer"
+    ],
+    "svgRoot": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg",
+    "svg": {
+      "seed": {
+        "idle": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/idle.svg",
+        "wave": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/wave.svg",
+        "think": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/think.svg",
+        "quiet": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/quiet.svg",
+        "listen": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/listen.svg",
+        "celebrate": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/celebrate.svg",
+        "sleep": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/sleep.svg",
+        "proud": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/proud.svg",
+        "spark": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/spark.svg",
+        "blush": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/blush.svg",
+        "worry": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/worry.svg",
+        "cheer": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/seed/cheer.svg"
+      },
+      "companion": {
+        "idle": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/idle.svg",
+        "wave": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/wave.svg",
+        "think": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/think.svg",
+        "quiet": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/quiet.svg",
+        "listen": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/listen.svg",
+        "celebrate": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/celebrate.svg",
+        "sleep": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/sleep.svg",
+        "proud": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/proud.svg",
+        "spark": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/spark.svg",
+        "blush": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/blush.svg",
+        "worry": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/worry.svg",
+        "cheer": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/companion/cheer.svg"
+      },
+      "guide": {
+        "idle": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/idle.svg",
+        "wave": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/wave.svg",
+        "think": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/think.svg",
+        "quiet": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/quiet.svg",
+        "listen": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/listen.svg",
+        "celebrate": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/celebrate.svg",
+        "sleep": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/sleep.svg",
+        "proud": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/proud.svg",
+        "spark": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/spark.svg",
+        "blush": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/blush.svg",
+        "worry": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/worry.svg",
+        "cheer": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/guide/cheer.svg"
+      },
+      "anchor": {
+        "idle": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/idle.svg",
+        "wave": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/wave.svg",
+        "think": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/think.svg",
+        "quiet": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/quiet.svg",
+        "listen": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/listen.svg",
+        "celebrate": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/celebrate.svg",
+        "sleep": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/sleep.svg",
+        "proud": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/proud.svg",
+        "spark": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/spark.svg",
+        "blush": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/blush.svg",
+        "worry": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/worry.svg",
+        "cheer": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/svg/anchor/cheer.svg"
+      }
+    },
+    "pngPattern": "/Users/macbook/work/oneup/design-system/oneup/brand/omi-exports/png/{form}/{mood}/{mood}-{48|96|144|256}.png",
+    "ink": "#111111 (template; recolor to #F7F7F5 on dark)"
+  },
+  "previews": [
+    "/workspace/hi-oneup/brand-preview-dark.png",
+    "/workspace/hi-oneup/brand-preview-light.png"
+  ],
+  "theme": {
+    "rule": "LIGHT = positive/uplifting; DARK = downsides/pitfalls; max 2 same theme in a row",
+    "map": "/workspace/hi-oneup/theme-map.md",
+    "clip01": "light"
+  }
+}

@@ -10,8 +10,8 @@ tags: [clip-02, post, tiktok, week-1]
 
 ## 1. File video
 ```
-Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4
-Thời lượng: 60.7s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4 (bản v1 60.7s, cần render lại theo kịch bản v2)
+Thời lượng: dự kiến 54–58s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
 ```
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
@@ -22,9 +22,9 @@ Cover: **template A** (luật 54), props trong `spec.json → cover`. File: `fin
 
 ## 3. Caption / tiêu đề TikTok (VI)
 ```
-POV: tính năng Omi. Hoãn hôm nay, hoãn ngày mai, rồi lại hoãn. Toang thật rồi. Mở code ra, 5 giây sau đã lướt TikTok… chán nản, tội lỗi, rồi tự mắng "mình lười quá". Nghe quen không?
-Nghiên cứu nói: trì hoãn thường không phải lười, mà là né cảm giác khó chịu (chán, sợ làm dở, không biết bắt đầu).
-Gộp 691 hệ số tương quan (Steel, 2007): việc càng khó chịu, càng thấy mình kém thì càng dễ hoãn. Phần thưởng thì ở xa, cái khó chịu ở ngay bây giờ.
+POV: tính năng Omi. Hôm nay dời, mai lại dời, thành dự án ma luôn. Thế là mở code, 5 giây sau lướt TikTok… rồi chán nản, tội lỗi, tự xỉ vả "lười quá". Nghe quen không?
+Thứ bạn né đâu phải công việc, mà là cảm giác khó chịu nó gây ra: chán ngán, sợ hỏng, rối.
+Gộp 691 hệ số tương quan (Steel, 2007): việc càng khó chịu, càng thấy mình kém thì càng dễ hoãn. Phần thưởng tận cuối tháng, còn khó chịu ập tới ngay, nên tay chộp TikTok.
 Cách gỡ: trước khi làm, hỏi "việc này khó chịu ở chỗ nào?". Không biết bắt đầu thì viết 3 gạch đầu dòng. Sợ làm dở thì cho phép nháp xấu. Thấy chán thì hẹn 10 phút.
 Lỗi hay gặp: mắng mình rồi gồng.
 Lưu ý: đây là nghiên cứu tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra.
