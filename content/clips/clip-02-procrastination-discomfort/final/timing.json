@@ -1,23 +1,24 @@
 {
- "total": 52.94,
+ "total": 65.36,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json",
-   "dur": 52.935,
+   "dur": 65.359,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A.mp4",
    "fx": null,
    "scene_starts": [
-    4.042,
-    6.311,
-    13.157,
-    15.600999999999999,
-    25.069,
-    31.613999999999997,
-    42.727,
-    45.032999999999994,
-    49.815
+    1.097,
+    4.34,
+    6.647,
+    12.062000000000001,
+    19.269000000000002,
+    26.163000000000004,
+    37.894000000000005,
+    46.083000000000006,
+    52.97200000000001,
+    59.92800000000001
    ],
    "_off": 0.0
   }
@@ -27,13 +28,25 @@
    "beat": "clip-02.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "Thì cái bản chất của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?",
-   "en": "So what's the essence of opening your laptop… then scrolling TikTok?",
+   "say": "Thì cái bản chất...",
+   "en": "So what's the essence…",
    "emotion": "focused",
-   "key": "v14-b01",
+   "key": "v17-b01",
    "local": 0.12,
-   "dur": 3.862,
+   "dur": 0.917,
    "t": 0.12
+  },
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?",
+   "en": "…of opening your laptop, then scrolling TikTok?",
+   "emotion": "focused",
+   "key": "v17-b01b",
+   "local": 0.02,
+   "dur": 3.163,
+   "t": 1.117
   },
   {
    "beat": "clip-02.b02",
@@ -42,46 +55,34 @@
    "say": "Ờ... coi clíp xíu thôi đã chứ, bạn ơi!",
    "en": "Uh… just a few clips first, buddy!",
    "emotion": "happy",
-   "key": "v14-b02",
+   "key": "v17-b02",
    "local": 0.02,
-   "dur": 2.189,
-   "t": 4.062
+   "dur": 2.227,
+   "t": 4.36
   },
   {
    "beat": "clip-02.b03",
    "scene": "b03",
    "speaker": "hiep",
-   "say": "Thứ nhất là các bạn phải lướt liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.",
-   "en": "First: scroll nonstop in bed, thumb running like a sewing machine, over and over.",
+   "say": "Thứ nhất là các bạn phải lướt liên tục ở trên giường, một cách lặp đi lặp lại.",
+   "en": "First: scroll nonstop in bed, over and over.",
    "emotion": "focused",
-   "key": "v14-b03",
+   "key": "v17-b03",
    "local": 0.3,
-   "dur": 6.096,
-   "t": 6.611
-  },
-  {
-   "beat": "clip-02.b04",
-   "scene": "b04",
-   "speaker": "hiep",
-   "say": "Clíp nữa thôi... clíp nữa thôi...",
-   "en": "One more clip… just one more…",
-   "emotion": "neutral",
-   "key": "v14-b04",
-   "local": 0.3,
-   "dur": 1.694,
-   "t": 13.457
+   "dur": 4.665,
+   "t": 6.947
   },
   {
    "beat": "clip-02.b05",
    "scene": "b05",
    "speaker": "hiep",
-   "say": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi ri viu đồ ăn.",
-   "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast: tidy the desk, watch food reviews.",
+   "say": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì phải đổi việc liền.",
+   "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
    "emotion": "confused",
-   "key": "v14-b05",
+   "key": "v17-b05",
    "local": 0.55,
-   "dur": 8.468,
-   "t": 16.151
+   "dur": 6.207,
+   "t": 12.612
   },
   {
    "beat": "clip-02.b06",
@@ -90,10 +91,10 @@
    "say": "Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã, rồi mai lại né.",
    "en": "And finally: curse yourself out properly, then dodge again tomorrow.",
    "emotion": "focused",
-   "key": "v14-b06a",
+   "key": "v17-b06a",
    "local": 0.3,
-   "dur": 4.274,
-   "t": 25.369
+   "dur": 4.451,
+   "t": 19.569
   },
   {
    "beat": "clip-02.b06",
@@ -102,70 +103,82 @@
    "say": "Đồ lười! Thôi để mai...",
    "en": "Lazy bum! Eh… tomorrow then…",
    "emotion": "sad",
-   "key": "v14-b06b",
-   "local": 4.774,
-   "dur": 1.321,
-   "t": 29.843
+   "key": "v17-b06b",
+   "local": 4.951,
+   "dur": 1.493,
+   "t": 24.22
   },
   {
    "beat": "clip-02.b07",
    "scene": "b07",
    "speaker": "hiep",
-   "say": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, việc càng khó chịu, càng bị dời. Mình đang né cái cảm giác khó chịu, không phải vì lười.",
-   "en": "Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed. You're dodging the bad feeling, not being lazy.",
+   "say": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, hoãn vì ba thứ: việc khó chịu cỡ nào, mình thấy làm được không, và thứ trước mắt cuốn cỡ nào.",
+   "en": "Sound familiar? But scientists say: Steel pooled 691 results. Delay tracks three things: how unpleasant the task is, whether you think you can do it, how hard distractions pull.",
    "emotion": "focused",
-   "key": "v14-b07",
+   "key": "v17-b07",
    "local": 0.55,
-   "dur": 10.113,
-   "t": 32.164
+   "dur": 10.731,
+   "t": 26.713
   },
   {
    "beat": "clip-02.b08",
    "scene": "b08",
    "speaker": "hiep",
-   "say": "Càng chửi, mai càng ngán hơn.",
-   "en": "The more you scold, the more you dread tomorrow.",
-   "emotion": "sad",
-   "key": "v14-b08",
-   "local": 0.3,
-   "dur": 1.556,
-   "t": 43.027
-  },
-  {
-   "beat": "clip-02.b09",
-   "scene": "b09",
-   "speaker": "hiep",
-   "say": "Thu nhỏ giây đầu: sửa đúng một dòng thôi.",
-   "en": "Shrink the first second: fix just one line.",
+   "say": "Vậy trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng. Mới thấy đi chung thôi.",
+   "en": "So procrastination is avoiding a bad feeling, not a lack of effort. Only a link so far.",
    "emotion": "focused",
-   "key": "v14-b09a",
-   "local": 0.55,
-   "dur": 2.126,
-   "t": 45.583
+   "key": "v17-b08a",
+   "local": 0.3,
+   "dur": 5.907,
+   "t": 38.194
+  },
+  {
+   "beat": "clip-02.b08",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "À... mình đang né thiệt.",
+   "en": "Oh… I really am dodging.",
+   "emotion": "surprised",
+   "key": "v17-b08b",
+   "local": 6.407,
+   "dur": 1.332,
+   "t": 44.301
   },
   {
    "beat": "clip-02.b09",
    "scene": "b09",
    "speaker": "hiep",
-   "say": "À... hết đường né luôn á.",
-   "en": "Oh… no way to dodge now.",
-   "emotion": "surprised",
-   "key": "v14-b09b",
-   "local": 2.876,
-   "dur": 1.456,
-   "t": 47.909
+   "say": "Nên đừng mắng mình. Hỏi: khó chịu chỗ nào? Rối thì chia việc nhỏ, ngán thì chỉ sửa một dòng.",
+   "en": "So don't scold yourself. Ask: what exactly feels bad? Messy? Split it small. Dreading it? Fix just one line.",
+   "emotion": "focused",
+   "key": "v17-b09a",
+   "local": 0.55,
+   "dur": 5.889,
+   "t": 46.633
+  },
+  {
+   "beat": "clip-02.b09",
+   "scene": "b09c",
+   "speaker": "hiep",
+   "say": "Như clíp trước: chín giờ tối, ngồi vào bàn, mở phai thì gõ một dòng. Không ai hối? Tự đặt ngày xong.",
+   "en": "Like last clip: 9 p.m., at the desk, open the file, type one line. No one pushing? Set your own due date.",
+   "emotion": "focused",
+   "key": "v17-b09c",
+   "local": 0.3,
+   "dur": 6.206,
+   "t": 53.272
   },
   {
    "beat": "clip-02.b10",
    "scene": "b10",
    "speaker": "hiep",
-   "say": "Việc bạn đang né là gì? Com men một chữ nha!",
-   "en": "What are you dodging? Comment one word!",
+   "say": "Không lười, chỉ đang né. Việc bạn né khó chịu chỗ nào? Com men một chữ nha!",
+   "en": "Not lazy, just dodging. What feels bad about the task you're dodging? Comment one word!",
    "emotion": "happy",
-   "key": "v14-b10",
+   "key": "v17-b10",
    "local": 0.3,
-   "dur": 2.37,
-   "t": 50.115
+   "dur": 4.681,
+   "t": 60.228
   }
  ]
 }

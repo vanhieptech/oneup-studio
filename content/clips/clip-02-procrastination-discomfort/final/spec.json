@@ -69,6 +69,12 @@
       "date": "2026-10-16",
       "dl": "L-036",
       "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"
+    },
+    {
+      "v": 17,
+      "date": "2026-10-16",
+      "dl": "L-036",
+      "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"
     }
   ],
   "transition_sfx": {
@@ -207,7 +213,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b01.wav",
               "voice_role": "Thầy"
             }
           ],
@@ -292,7 +298,7 @@
                   "t": "là gì?"
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b01b.wav",
               "voice_role": "Thầy"
             }
           ]
@@ -370,7 +376,7 @@
                   "t": "đã chứ, bạn ơi!"
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b02.wav",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -455,7 +461,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b03.wav",
               "voice_role": "Thầy"
             }
           ]
@@ -544,7 +550,7 @@
                   "t": "thì phải đổi việc liền."
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b05.wav",
               "voice_role": "Thầy"
             }
           ]
@@ -642,7 +648,7 @@
                   "t": "rồi mai lại né."
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b06a.wav",
               "voice_role": "Thầy"
             },
             {
@@ -663,7 +669,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b06b.wav",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -782,7 +788,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b07.wav",
               "voice_role": "Thầy"
             }
           ]
@@ -862,7 +868,7 @@
                   "t": "Mới thấy đi chung thôi."
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b08a.wav",
               "voice_role": "Thầy"
             },
             {
@@ -883,7 +889,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b08b.wav",
               "voice_role": "Hiệp-né"
             }
           ]
@@ -974,7 +980,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b09a.wav",
               "voice_role": "Thầy"
             }
           ]
@@ -1068,7 +1074,7 @@
                   "emph": true
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b09c.wav",
               "voice_role": "Thầy"
             }
           ]
@@ -1150,7 +1156,7 @@
                   "t": "Com men một chữ nha!"
                 }
               ],
-              "voice_pending": "v15 (L-036 per-clause F5)",
+              "voice_file": "voice/v17-b10.wav",
               "voice_role": "Hiệp-né"
             }
           ]

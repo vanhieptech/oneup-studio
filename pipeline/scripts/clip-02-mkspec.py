@@ -27,7 +27,7 @@ def line(k, emo):
     for w in hw:
         i = [j for j, x in enumerate(ws) if x.lower() == w.lower() and j not in hl]; assert i, (w, en); hl.append(i[0])
     return {"speaker": "hiep", "emotion": emo, "text": t, "say": re.sub(r"\{(?:nhấn|kéo): ([^}]*)\}", r"\1", s.replace("|", " ")), "en": en, "hl": hl,
-            "phrases": [dict({"t": p.strip()}, **({"emph": True} if "{nhấn:" in p or "{kéo:" in p else {})) for p in s.split("|")], "voice_pending": "v15 (L-036 per-clause F5)",
+            "phrases": [dict({"t": p.strip()}, **({"emph": True} if "{nhấn:" in p or "{kéo:" in p else {})) for p in s.split("|")], "voice_file": f"voice/v17-{k}.wav",
             "voice_role": "Thầy" if r == "thay" else "Hiệp-né"}
 def C(x, facing, pose, act, ex): return {"id": "hiep", "x": x, "facing": facing, "pose": pose, "action": act, "expression": ex}
 def SC(id, part, bg, tr, cast, lines, fx, sfx, props, narr=None, push=0.06):
