@@ -1,3 +1,10 @@
+---
+id: storage
+type: convention
+status: active
+updated: 2026-10-15
+tags: [storage, rule-65, rule-66, source-of-truth]
+---
 # Quy ước lưu trữ (luật 65, L-034)
 
 Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `pipeline/paths.py`; mọi script sinh file phải import từ đó. `pipeline/scripts/check-assets.py` chặn (FAIL) khi sai.
@@ -14,7 +21,8 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Voice takes đã chọn | `video-engine/public/voice/` (key hash, hoặc `v<n>-<scene>`) | file `.json` kèm stt/stt_sim |
 | Take thô, thử nghiệm giọng | ngoài repo (`/workspace/<job>/`) hoặc `media/` + `MANIFEST.json` | không commit take thô |
 | Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác |
-| Render clip | `content/clips/<clip>/final/out/` (gitignored), part render ở `video-engine/out/` | bản gửi Hiệp: 720p faststart < 10 MB |
+| Render clip | làm việc: `final/out/` (gitignored), part render `video-engine/out/`; **bản giữ lại**: `media/clips/<clip>/clip-NN-final.mp4` + `-720.mp4` (manifest) | bản gửi Hiệp: 720p faststart < 10 MB |
+| Clip đã duyệt | `content/archive/<clip>/` (cùng layout, thêm `final/approved.json`) | luật 66 |
 | Media lớn (mp4 sample, footage) | `media/` (gitignored) + `media/MANIFEST.json` | `media/footage/inbox/` cho video quay |
 | Test | `tests/` | |
 | Script, tool | `pipeline/scripts/`, `pipeline/tts/`, `video-engine/src/` | |
@@ -27,3 +35,23 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 Thư mục gốc hợp lệ (`TOP_ALLOWED`): assets, brand, content, docs, logs, media, pipeline, research, resources, rules, skills, templates, tests, video-engine. Đã bỏ: `footage/` → `media/footage/`, `renders/` → `final/out/` của clip, `refs/` → `resources/refs/`, `samples/` → `content/samples/lab/`. `templates/` giữ vì là thư viện chung (scaffold HyperFrames, mẫu post-package).
 
 Cấm: font/logo/giọng mẫu trong `content/`; hai file cùng nội dung (sha256) ngoài các vùng miễn trừ (skills vendored, voice cache, template `.tpl`, bản snapshot `/vN/`, `final/cover.png` theo L-020); thư mục cấp gốc ngoài danh sách `TOP_ALLOWED`.
+
+## Vòng đời clip (luật 66)
+`content/clips/<clip>/` (đang làm, được thiếu) → đủ gói đăng + Hiệp nói "duyệt" → `git mv` sang `content/archive/<clip>/`, ghi `final/approved.json`, video full + 720p ở `media/clips/<clip>/` + `MANIFEST.json`.
+
+## File gitignored và nơi giữ trên Mac
+Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (cùng đường dẫn tương đối như box `/workspace/oneup-studio`).
+
+| Gitignored | Là gì | Trên Mac | Cách có |
+|---|---|---|---|
+| `media/**` (trừ MANIFEST/README) | video final full + 720p, sample mp4, footage thô | **phải có** | `pipeline/scripts/media-sync.py pack` (box) → CopyFromBox từng `part.NN` vào `.git/media-sync/` → `media-sync.py unpack` (Mac) → tự `verify` sha256 |
+| `content/clips/**/final/out/`, `final/*.mp4` | render làm việc, mix, sfx sinh | sinh lại | `build-final.py`; bản giữ lại copy vào `media/clips/` |
+| `video-engine/out/` | part render Remotion | sinh lại | `build-final.py` |
+| `video-engine/public/fonts/`, `public/brand/`, `**/explainer/fonts/`, `**/explainer/logo.svg`, `templates/hyperframes-base/{fonts,logo.svg}` | bản chép thư viện chung | sinh lại | `sync-shared.py` (build-final tự chạy) |
+| `node_modules/`, `.bundle-cache/` | thư viện npm, cache bundle | sinh lại | `npm ci` trong `video-engine/` |
+| `video-engine/public/voice/_prosody-job.json` | file job tạm | không cần | — |
+| `resources/refs/awesome-ai-motion/` | clone tài liệu ngoài | tuỳ chọn | `git clone` lại |
+| `.env`, `__pycache__/`, `.DS_Store` | bí mật/cache | không chép | — |
+
+Voice take (`video-engine/public/voice/*.wav|json`) **được commit** nên Mac có qua git. Chạy `python3 pipeline/scripts/media-sync.py verify` trên Mac sau mỗi lần sync; exit ≠ 0 = thiếu.
+

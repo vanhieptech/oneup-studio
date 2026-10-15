@@ -25,3 +25,4 @@ tags: [workflow, pipeline, rule-65]
 15. **Ghi bài học** — mọi lỗi/góp ý mới vào `logs/lessons.md` (+ check tự động), quyết định vào `logs/decision-log.md`.
 16. **Commit + push** — commit trong repo; push qua Mac bằng bundle tăng dần trong `.git/` (≤ 5 MB/mảnh), `git push origin main` không force, kiểm `origin/main` = HEAD. **[Hiệp]** duyệt lệnh trên Mac.
 17. **Bộ đăng bài** — `post-checklist.md`: video full, caption, hashtag, cover, giờ đăng. **[Hiệp]** tự đăng (agent không đăng thay).
+18. **Lưu trữ (luật 66)** — khi đủ gói đăng và **[Hiệp]** nói "duyệt": copy video full + 720p vào `media/clips/<clip>/` (+ MANIFEST), `git mv content/clips/<clip> content/archive/<clip>`, ghi `final/approved.json`, chạy `check-assets.py`, `media-sync.py` sang Mac, commit + push.

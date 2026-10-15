@@ -8,7 +8,10 @@ VE = ROOT / "video-engine"; CHARACTERS = VE / "src/characters"; PROPS_SRC = VE /
 VOICE_CACHE = VE / "public/voice"          # all voice takes (content-hash keys / v8-<scene>), committed
 ENGINE_OUT = VE / "out"                    # Remotion part renders (gitignored)
 # per clip
-CLIPS = ROOT / "content/clips"
+CLIPS = ROOT / "content/clips"          # active clips
+ARCHIVE = ROOT / "content/archive"     # rule-66: approved ("duyệt") clips with a complete post package
+MEDIA_CLIPS = ROOT / "media/clips"     # final renders per clip (full + 720p), gitignored, manifested
+POST_PACKAGE = ("final/post.md", "final/cover.png", "final/approved.json")
 def clip_dir(clip: str) -> Path: return CLIPS / clip
 def final_dir(clip: str) -> Path: return CLIPS / clip / "final"   # script, spec, plans, timing, cover, preview/
 def out_dir(clip: str) -> Path: return final_dir(clip) / "out"     # final mp4, mix, generated sfx (gitignored)

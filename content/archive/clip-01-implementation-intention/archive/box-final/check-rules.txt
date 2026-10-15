@@ -11,7 +11,7 @@
 ✔ rule-41  Southern particles in 9/14 lines
 ✔ rule-41  addresses viewer as “bạn”
 ✔ rule-41  English mix words: ['code', 'listening'] (profile: 1–3 per clip; proper nouns exempt)
-⚠ rule-41  content/clips/clip-01-implementation-intention/final/script-final.md: has unconfirmed story items → Hiệp must confirm before posting
+⚠ rule-41  content/archive/clip-01-implementation-intention/final/script-final.md: has unconfirmed story items → Hiệp must confirm before posting
 ✔ rule-46  AI voices: Hiệp=Đức Trí, Omi=Kim Thanh
 ✔ rule-13  post.md credit HowToLiveBetter
 ✔ rule-13  post.md license name
@@ -20,7 +20,7 @@
 ✔ rule-46  post.md: TikTok 'AI-generated content' toggle
 ✔ rule-46  post.md: AI-voice disclosure line in caption
 ✔ rule-32  post.md hashtags
-✔ rule-45  video-engine validate: ✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json: 4 scenes, 22.27s | ✔ /workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json: 2 scenes, 15.98s
+✔ rule-45  video-engine validate: ✔ /workspace/oneup-studio/content/archive/clip-01-implementation-intention/final/plan-A.voiced.json: 4 scenes, 22.27s | ✔ /workspace/oneup-studio/content/archive/clip-01-implementation-intention/final/plan-B.voiced.json: 2 scenes, 15.98s
 ✔ rule-4   MP4 57.22s
 ✔ rule-4   video 1080×1920 30/1 h264 High yuv420p bt709
 ✔ rule-4   audio aac 48000 Hz, -14.3 LUFS, peak -0.9 dBFS (target −14 ±1, peak ≤ −0.5)

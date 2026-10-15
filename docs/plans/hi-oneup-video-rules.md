@@ -24,7 +24,7 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 9. **Nhịp đổi hình:** theo nội dung, mỗi cảnh tối đa 8s. Không cắt đều tăm tắp.
 10. **Chủ đề:** không giới hạn (bỏ các mục chỉ áp dụng cho luật / thủ tục Trung Quốc). Nguồn: HowToLiveBetter.
 11. **Lịch đưa app:** tuần 1–2 không có app · tuần 3–4 có màn hình app ngắn · từ tuần 5 có Omi.
-12. **Clip đầu tiên:** trụ 1 "Làm ít, xong nhiều", clip 1 (`content/clips/clip-01-implementation-intention/`).
+12. **Clip đầu tiên:** trụ 1 "Làm ít, xong nhiều", clip 1 (`content/archive/clip-01-implementation-intention/`).
 13. **Ghi nguồn:** HowToLiveBetter (CC BY 4.0, kèm link giấy phép, ghi "đã chuyển thể") chỉ đặt trong caption bài đăng.
 
 ## C. Hình ảnh & brand

@@ -58,6 +58,8 @@ def main():
     specp = os.path.join(clip_dir, "final", "spec.json")
     if not os.path.exists(specp) and os.path.exists(os.path.join(clip_dir, "spec.json")): specp = os.path.join(clip_dir, "spec.json")  # samples
     if not os.path.exists(specp): err("rule-48", f"missing {os.path.relpath(specp, REPO)} (source of truth for the clip)"); return report(outp)
+    if "/content/archive/" in os.path.abspath(specp).replace(os.sep, "/") + "/":
+        print(f"skip: {specp} is archived (rule-66); check-assets verifies its post package"); sys.exit(0)
     spec = json.load(open(specp)); fdir = os.path.dirname(specp)
     prof = {}
     for f in glob.glob(os.path.join(REPO, "video-engine/src/characters/profiles/*.json")):

@@ -7,7 +7,7 @@ tags: [clip-01, light, pillar-1, story:S-01, ai-voice, f5, final, week-1]
 ---
 # Clip 01 FINAL v2: "Mai học" → nếu… thì… (bản đủ thông tin)
 
-- **Nguồn chuẩn:** `final/spec.json` (bản cũ để ở `spec-v1-demo-w5.json`). Build: `python3 pipeline/scripts/build-final.py content/clips/clip-01-implementation-intention/final/spec.json`.
+- **Nguồn chuẩn:** `final/spec.json` (bản cũ để ở `spec-v1-demo-w5.json`). Build: `python3 pipeline/scripts/build-final.py content/archive/clip-01-implementation-intention/final/spec.json`.
 - **Thời lượng:** 60.7s ⚠ hơi quá mốc 55–60s của luật 4, nhưng trong mức ~70s Hiệp cho phép khi cần thêm thông tin (DL-041). 1080×1920 · 30fps · −14 LUFS · không nhạc.
 - **Giọng:** F5-TTS Thái Sơn (DL-035), voice-prosody v5, sinh theo từng vế câu, tiểu từ đọc thường (DL-040). Chỉ có 1 tiếng đệm `{ừm}` ở b02. Không có Omi, nên là tuần 1.
 - **Số từ VI:** 200, nhiều hơn mốc 170 của luật 7 vì thêm thông tin (DL-041).

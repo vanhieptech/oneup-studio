@@ -10,7 +10,7 @@ description: >-
 # Make video (one workflow, rule-48)
 
 Repo: `oneup-studio` (box clone `/workspace/oneup-studio`, Mac `/Users/macbook/me/projects/oneup-studio`).
-Reference implementation: `content/clips/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
+Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
 
 ## 0. How Hiệp asks (intake)
 | Hiệp writes | Agent does |

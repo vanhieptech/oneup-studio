@@ -7,7 +7,7 @@ tags: [clip-01, light, pillar-1, storytelling, story:S-01, omi, ai-voice, final]
 ---
 # Clip 01 FINAL (demo / template tuần 5): "Mai học" → nếu… thì…
 
-- **Nguồn chuẩn:** `final/spec.json` (sửa ở đây, không sửa file sinh ra). Build: `python3 pipeline/scripts/build-final.py content/clips/clip-01-implementation-intention/final/spec.json`.
+- **Nguồn chuẩn:** `final/spec.json` (sửa ở đây, không sửa file sinh ra). Build: `python3 pipeline/scripts/build-final.py content/archive/clip-01-implementation-intention/final/spec.json`.
 - **Thời lượng:** 57.3s · 1080×1920 · 30fps · H.264 High yuv420p bt709 (tv range) · AAC 48 kHz mono · −14 LUFS · không nhạc · grain nhẹ.
 - **Theme:** LIGHT (theme-map clip 1). Trụ 1 "Làm ít, xong nhiều". Trend: "mai làm" / "dự án ma" (câu chung, không phải chuyện thật của Hiệp).
 - **Giọng (DL-030):** Hiệp = VieNeu-TTS preset **Đức Trí** (nam, miền Nam, trầm ấm, F0 ≈ 91 Hz, tempo 1.3×). Omi = preset **Kim Thanh** (nữ, miền Nam, tempo 1.12×). Không clone, chạy local.

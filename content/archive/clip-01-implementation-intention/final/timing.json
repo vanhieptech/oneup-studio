@@ -4,7 +4,7 @@
   {
    "id": "A",
    "engine": "remotion",
-   "plan": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-A.voiced.json",
+   "plan": "/workspace/oneup-studio/content/archive/clip-01-implementation-intention/final/plan-A.voiced.json",
    "dur": 11.614,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-01-final-A.mp4",
    "fx": "slideleft",
@@ -17,9 +17,9 @@
   {
    "id": "E",
    "engine": "hyperframes",
-   "dir": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/explainer",
+   "dir": "/workspace/oneup-studio/content/archive/clip-01-implementation-intention/final/explainer",
    "dur": 38.24,
-   "mp4": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/out/E.mp4",
+   "mp4": "/workspace/oneup-studio/content/archive/clip-01-implementation-intention/final/out/E.mp4",
    "fx": "circleopen",
    "scene_starts": [
     6.0920000000000005,
@@ -34,7 +34,7 @@
   {
    "id": "B",
    "engine": "remotion",
-   "plan": "/workspace/oneup-studio/content/clips/clip-01-implementation-intention/final/plan-B.voiced.json",
+   "plan": "/workspace/oneup-studio/content/archive/clip-01-implementation-intention/final/plan-B.voiced.json",
    "dur": 11.562000000000001,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-01-final-B.mp4",
    "fx": null,

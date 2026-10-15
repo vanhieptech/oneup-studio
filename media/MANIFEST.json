@@ -24,15 +24,33 @@
   "source": "/workspace/hi-oneup/sample-f5/sample-v4.mp4"
  },
  {
-  "path": "media/content/clips/clip-01-implementation-intention/archive/box-final/clip-01-final.mp4",
-  "size": 30497896,
-  "sha256": "2e8d5173487071c1e2babeeddb0e24ad10164c2014f2c8bc33a9c71921b84723",
-  "source": "/workspace/hi-oneup/clip-01-final/clip-01-final.mp4"
- },
- {
   "path": "media/samples/sample-natural/sample.mp4",
   "size": 10365079,
   "sha256": "20f36b850dfd63cdd2304666005287320075f1b220e9002e0063bc316cf579f9",
   "source": "/workspace/hi-oneup/sample-natural/sample.mp4"
+ },
+ {
+  "path": "media/clips/clip-01-implementation-intention/clip-01-final.mp4",
+  "size": 30497896,
+  "sha256": "2e8d5173487071c1e2babeeddb0e24ad10164c2014f2c8bc33a9c71921b84723",
+  "source": "render (build-final) / 720p faststart"
+ },
+ {
+  "path": "media/clips/clip-01-implementation-intention/clip-01-final-720.mp4",
+  "size": 2171449,
+  "sha256": "7c0954ce6c73a1aadceab2ebe1425b511d61da372ba409411ea5c8e38b096f39",
+  "source": "render (build-final) / 720p faststart"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/clip-02-final.mp4",
+  "size": 39415923,
+  "sha256": "b2167e93eb52d8f5a4b1ba8a7e3bff12ea9d793574c8ae967a9a07fb813dac61",
+  "source": "render (build-final) / 720p faststart"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/clip-02-final-720.mp4",
+  "size": 2982231,
+  "sha256": "20c9f1b82ecd5005ed8103736272ae0c1c8d3c2f1eb6cd2fde21666e375615b6",
+  "source": "render (build-final) / 720p faststart"
  }
 ]

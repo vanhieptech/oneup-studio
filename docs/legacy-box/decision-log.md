@@ -13,7 +13,7 @@
 | 12/10/2026 | Video khoảng 1 phút, có giải thích và minh hoạ trực quan, nghiên cứu hệ thống chặt chẽ, hỏi trước khi quyết | Research production system, 20 câu hỏi quyết định | research/production-system-research-vi.md |
 | 12/10/2026 | Duyệt cả 20 đề xuất | Rules v2 (55–60s, render nháp trên box + final trên Mac, 3 clip/tuần trong 2 tuần đầu, SFX CC0…) | rules/video-rules.md v2 |
 | 12/10/2026 | Lưu toàn bộ dữ liệu vào repo oneup-studio | Dựng cấu trúc repo, commit | README.md |
-| 12/10/2026 | Viết lại script clip 01 cho 55–60s | Script v2, chờ duyệt | content/clips/clip-01-implementation-intention/archive/drafts/script.md |
+| 12/10/2026 | Viết lại script clip 01 cho 55–60s | Script v2, chờ duyệt | content/archive/clip-01-implementation-intention/archive/drafts/script.md |
 | 12/10/2026 | Làm storyboard từng beat | Storyboard 10 frame + contact sheet. Thêm bước storyboard trước khi duyệt script | luật 35, pipeline/pipeline.md |
 | 12/10/2026 | Ghi lại mọi quyết định để cải tiến liên tục | Tạo file này + retro tuần | luật 33 |
 | 12/10/2026 | Tìm hiểu microsoft/skillopt | Đánh giá, chưa áp dụng (xem research/skillopt-eval-vi.md) | research/skillopt-eval-vi.md |

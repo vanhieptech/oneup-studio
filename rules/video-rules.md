@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.20
+version: 3.21
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.20, 15/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -25,7 +25,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 9. **Nhịp đổi hình:** theo nội dung, mỗi cảnh tối đa 8s. Không cắt đều tăm tắp.
 10. **Chủ đề:** không giới hạn (bỏ các mục chỉ áp dụng cho luật / thủ tục Trung Quốc). Nguồn: HowToLiveBetter.
 11. **Lịch đưa app:** tuần 1–2 không có app · tuần 3–4 có màn hình app ngắn · từ tuần 5 có Omi (nhân vật comic + giọng luật 46). Validator `video-engine` chặn Omi khi `meta.week < 5`. Bản mẫu nội bộ phải ghi `week ≥ 5` và không đăng.
-12. **Clip đầu tiên:** trụ 1 "Làm ít, xong nhiều", clip 1 (`content/clips/clip-01-implementation-intention/`).
+12. **Clip đầu tiên:** trụ 1 "Làm ít, xong nhiều", clip 1 (`content/archive/clip-01-implementation-intention/`).
 13. **Ghi nguồn:** HowToLiveBetter (CC BY 4.0, kèm link giấy phép, ghi "đã chuyển thể") chỉ đặt trong caption bài đăng.
 
 ## C. Hình ảnh & brand
@@ -230,7 +230,10 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 
 65. **Lưu trữ theo một quy ước duy nhất (L-034):** mọi file sinh ra nằm đúng chỗ trong `docs/conventions/storage.md`; tài nguyên dùng chung (font, logo, sfx, giọng mẫu, nhân vật, props) chỉ có **một bản** trong `brand/` hoặc `assets/` hoặc `video-engine/src/`; thư mục clip chỉ chứa thứ riêng của clip. Đường dẫn lấy từ `pipeline/paths.py`; bản chép runtime do `pipeline/scripts/sync-shared.py` sinh và gitignore. `check-assets.py` chặn khi có file dùng chung trong clip, file trùng nội dung, hoặc thư mục gốc lạ. Đọc `storage.md` + `logs/lessons.md` trước mỗi clip.
 
+66. **Vòng đời clip: đang làm → lưu trữ (L-035):** clip đang làm nằm ở `content/clips/<clip>/`. Chỉ khi có **đủ gói đăng** (tiêu đề, caption, hashtag, cover/thumbnail, video full + 720p trong `media/clips/<clip>/` có trong `MANIFEST.json`, `final/post.md`) **và Hiệp nói rõ "duyệt"**, mới chuyển nguyên thư mục sang `content/archive/<clip>/` kèm `final/approved.json` (`"approved": "duyệt"`, người/giờ duyệt, title, video_full, video_720). `check-assets.py` chặn clip lưu trữ thiếu gói đăng; clip đang làm được phép chưa đủ; `check-rules.py` bỏ qua clip lưu trữ.
+
 ## Changelog
+- v3.21 (15/10): luật 66 vòng đời clip (content/archive, approved.json, media/clips); clip-01 lưu trữ.
 - v3.20 (15/10): luật 65 lưu trữ (storage.md, paths.py, sync-shared.py, check-assets rule-65); L-033 layout bubble.
 - **v3.19, 15/10/2026:** luật 64, cấu trúc hook→intro→body→tóm tắt→1 CTA + giọng người thật (DL-065, L-032).
 - **v3.18, 15/10/2026:** luật 62, throughline ABT + link theo ngữ cảnh + callback clip trước (DL-063, L-030).

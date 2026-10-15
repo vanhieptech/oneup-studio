@@ -6,7 +6,7 @@ updated: 2026-10-13
 tags: [hyperframes, explainer, clip-01]
 ---
 # Audit: clip-01 explainer vs HyperFrames skills (DL-032)
-Scope: `content/clips/clip-01-implementation-intention/final/explainer/index.html.tpl`, `pipeline/scripts/build-final.py`, `templates/hyperframes-base`, `content/samples/sample-full-w5/explainer`.
+Scope: `content/archive/clip-01-implementation-intention/final/explainer/index.html.tpl`, `pipeline/scripts/build-final.py`, `templates/hyperframes-base`, `content/samples/sample-full-w5/explainer`.
 
 OK: standalone root `data-composition-id="main"` + `data-width/height/duration`; one `gsap.timeline({paused:true})` registered at `window.__timelines["main"]`; GSAP local; fonts local (`@font-face`); no Math.random / setTimeout / network.
 

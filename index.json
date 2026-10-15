@@ -21,7 +21,7 @@
    "id": "repo-readme",
    "type": "readme",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-15",
    "path": "README.md",
    "title": "oneup-studio: hệ thống nội dung @hi.oneup"
   },
@@ -54,7 +54,7 @@
    "type": "post-package",
    "status": "review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1",
    "updated": "2026-10-13",
-   "path": "content/clips/clip-01-implementation-intention/archive/box-final/post.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/box-final/post.md",
    "title": "Gói đăng clip 01 (final demo)"
   },
   {
@@ -62,7 +62,7 @@
    "type": "script",
    "status": "review (gate 2) · DEMO tuần 5",
    "updated": "2026-10-13",
-   "path": "content/clips/clip-01-implementation-intention/archive/box-final/script-final.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/box-final/script-final.md",
    "title": "Clip 01 FINAL (demo / template tuần 5): \"Mai học\" → nếu… thì…"
   },
   {
@@ -70,7 +70,7 @@
    "type": "beat-sheet",
    "status": "draft",
    "updated": "2026-10-12",
-   "path": "content/clips/clip-01-implementation-intention/archive/drafts/beat-sheet.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/drafts/beat-sheet.md",
    "title": "Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md"
   },
   {
@@ -78,7 +78,7 @@
    "type": "script",
    "status": "draft",
    "updated": "2026-10-12",
-   "path": "content/clips/clip-01-implementation-intention/archive/drafts/script-v2.1-draft.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/drafts/script-v2.1-draft.md",
    "title": "Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2"
   },
   {
@@ -86,7 +86,7 @@
    "type": "script",
    "status": "draft",
    "updated": "2026-10-12",
-   "path": "content/clips/clip-01-implementation-intention/archive/drafts/script-v3-draft.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/drafts/script-v3-draft.md",
    "title": "Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1"
   },
   {
@@ -94,7 +94,7 @@
    "type": "script",
    "status": "awaiting-approval",
    "updated": "2026-10-12",
-   "path": "content/clips/clip-01-implementation-intention/archive/drafts/script.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/drafts/script.md",
    "title": "@hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt"
   },
   {
@@ -102,7 +102,7 @@
    "type": "shot-list",
    "status": "draft",
    "updated": "2026-10-12",
-   "path": "content/clips/clip-01-implementation-intention/archive/drafts/shot-list.md",
+   "path": "content/archive/clip-01-implementation-intention/archive/drafts/shot-list.md",
    "title": "Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md"
   },
   {
@@ -110,7 +110,7 @@
    "type": "post-package",
    "status": "sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md",
    "updated": "2026-10-14",
-   "path": "content/clips/clip-01-implementation-intention/final/post.md",
+   "path": "content/archive/clip-01-implementation-intention/final/post.md",
    "title": "Gói đăng TikTok: clip 01 \"Mai học → nếu… thì…\""
   },
   {
@@ -118,7 +118,7 @@
    "type": "script",
    "status": "review (gate 1+2 gộp, DL-041) · tuần 1, không Omi",
    "updated": "2026-10-14",
-   "path": "content/clips/clip-01-implementation-intention/final/script-final.md",
+   "path": "content/archive/clip-01-implementation-intention/final/script-final.md",
    "title": "Clip 01 FINAL v2: \"Mai học\" → nếu… thì… (bản đủ thông tin)"
   },
   {
@@ -208,6 +208,14 @@
    "updated": "2026-10-12",
    "path": "content/voice-profile.md",
    "title": "Voice profile: Hiệp (@hi.oneup)"
+  },
+  {
+   "id": "storage",
+   "type": "convention",
+   "status": "active",
+   "updated": "2026-10-15",
+   "path": "docs/conventions/storage.md",
+   "title": "Quy ước lưu trữ (luật 65, L-034)"
   },
   {
    "id": "rules",
@@ -492,7 +500,7 @@
    "status": "active",
    "updated": "2026-10-13",
    "path": "rules/video-rules.md",
-   "title": "@hi.oneup: Bộ luật sản xuất video (v3.20, 15/10/2026)"
+   "title": "@hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026)"
   },
   {
    "id": "skill.humanizer",
@@ -1502,21 +1510,17 @@
    "path": "rules/video-rules.md"
   },
   {
+   "id": "rule-66",
+   "title": "Vòng đời clip: đang làm → lưu trữ (L-035)",
+   "path": "rules/video-rules.md"
+  },
+  {
    "id": "rule-59",
    "title": "Mọi asset dự án nằm tập trung trong repo (DL-060, L-023)",
    "path": "rules/video-rules.md"
   }
  ],
  "clips": [
-  {
-   "id": "clip-01",
-   "path": "content/clips/clip-01-implementation-intention",
-   "theme": null,
-   "files": [
-    "archive",
-    "final"
-   ]
-  },
   {
    "id": "clip-02",
    "path": "content/clips/clip-02-procrastination-discomfort",

@@ -15,15 +15,15 @@ tags: [index, retrieval]
 | sfx-sources | log | living | `assets/sfx/SOURCES.md` | Nguồn SFX (chỉ dùng CC0 hoặc Mixkit, theo luật 22) |
 | brand-index | brand | active | `brand/brand-index.md` | @hi.oneup — Brand index cho video |
 | characters | brand | prototype | `brand/characters/README.md` | Characters (prototype v0.1) |
-| clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/clips/clip-01-implementation-intention/archive/box-final/post.md` | Gói đăng clip 01 (final demo) |
-| clip-01.script-final | script | review (gate 2) · DEMO tuần 5 | `content/clips/clip-01-implementation-intention/archive/box-final/script-final.md` | Clip 01 FINAL (demo / template tuần 5): "Mai học" → nếu… thì… |
-| clip-01.beat-sheet | beat-sheet | draft | `content/clips/clip-01-implementation-intention/archive/drafts/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
-| clip-01.script-v2.1-draft | script | draft | `content/clips/clip-01-implementation-intention/archive/drafts/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
-| clip-01.script-v3-draft | script | draft | `content/clips/clip-01-implementation-intention/archive/drafts/script-v3-draft.md` | Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1 |
-| clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/archive/drafts/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
-| clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/archive/drafts/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
-| clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `content/clips/clip-01-implementation-intention/final/post.md` | Gói đăng TikTok: clip 01 "Mai học → nếu… thì…" |
-| clip-01.script-final | script | review (gate 1+2 gộp, DL-041) · tuần 1, không Omi | `content/clips/clip-01-implementation-intention/final/script-final.md` | Clip 01 FINAL v2: "Mai học" → nếu… thì… (bản đủ thông tin) |
+| clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/archive/clip-01-implementation-intention/archive/box-final/post.md` | Gói đăng clip 01 (final demo) |
+| clip-01.script-final | script | review (gate 2) · DEMO tuần 5 | `content/archive/clip-01-implementation-intention/archive/box-final/script-final.md` | Clip 01 FINAL (demo / template tuần 5): "Mai học" → nếu… thì… |
+| clip-01.beat-sheet | beat-sheet | draft | `content/archive/clip-01-implementation-intention/archive/drafts/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
+| clip-01.script-v2.1-draft | script | draft | `content/archive/clip-01-implementation-intention/archive/drafts/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
+| clip-01.script-v3-draft | script | draft | `content/archive/clip-01-implementation-intention/archive/drafts/script-v3-draft.md` | Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1 |
+| clip-01.script | script | awaiting-approval | `content/archive/clip-01-implementation-intention/archive/drafts/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
+| clip-01.shot-list | shot-list | draft | `content/archive/clip-01-implementation-intention/archive/drafts/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
+| clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `content/archive/clip-01-implementation-intention/final/post.md` | Gói đăng TikTok: clip 01 "Mai học → nếu… thì…" |
+| clip-01.script-final | script | review (gate 1+2 gộp, DL-041) · tuần 1, không Omi | `content/archive/clip-01-implementation-intention/final/script-final.md` | Clip 01 FINAL v2: "Mai học" → nếu… thì… (bản đủ thông tin) |
 | clip-02.post | post-package | NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build) | `content/clips/clip-02-procrastination-discomfort/final/post.md` | Gói đăng TikTok: clip 02 "Lười? Không, đang né" |
 | clip-02.script-final | script | kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 · GATE 1: "Mình lười quá" → trì hoãn là né cảm giác khó chịu |
 | clip-02.trend-signals | research | None | `content/clips/clip-02-procrastination-discomfort/final/trend-signals.md` | Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7) |
@@ -35,6 +35,7 @@ tags: [index, retrieval]
 | story-bank | plan | needs-confirmation | `content/story-bank.md` | Story bank: chuyện thật của Hiệp (rule-41) |
 | theme-map | plan | active | `content/theme-map.md` | Theme map — @hi.oneup (LIGHT / DARK theo tone) |
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
+| storage | convention | active | `docs/conventions/storage.md` | Quy ước lưu trữ (luật 65, L-034) |
 | rules | rules | active | `docs/plans/hi-oneup-video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026) |
 | skill.plans | skill | active | `docs/plans/make-video-skill.md` | Make video (@hi.oneup end-to-end) |
 | skill.plans | skill | active | `docs/plans/trend-digest-skill-v2.md` | Trend digest |
@@ -70,7 +71,7 @@ tags: [index, retrieval]
 | vn-thesaurus | resource | None | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-spoken | resource | None | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | None | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |
-| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.20, 15/10/2026) |
+| rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
 | skill.humanizer.upstream | vendor-note | active | `skills/humanizer/UPSTREAM.md` | Humanizer (vendored, MIT) |
 | skills-hyperframes | vendored-skills | None | `skills/hyperframes/README.md` | HyperFrames official skills (vendored) |
@@ -236,12 +237,12 @@ tags: [index, retrieval]
 | rule-62 | Một mạch ABT xuyên suốt, nối theo ngữ cảnh, callback clip trước (DL-063, L-030) |
 | rule-64 | Cấu trúc + giọng người thật theo prompt scriptwriter (DL-065, L-032) |
 | rule-65 | Lưu trữ theo một quy ước duy nhất (L-034) |
+| rule-66 | Vòng đời clip: đang làm → lưu trữ (L-035) |
 | rule-59 | Mọi asset dự án nằm tập trung trong repo (DL-060, L-023) |
 
 ## Clips
 | id | theme | path | files |
 |---|---|---|---|
-| clip-01 | None | `content/clips/clip-01-implementation-intention` | archive, final |
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | final |
 
 ## Assets & tools

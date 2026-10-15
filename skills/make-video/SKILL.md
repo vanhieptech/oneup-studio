@@ -10,7 +10,7 @@ description: >-
 # Make video (one workflow, rule-48)
 
 Repo: `oneup-studio` (box clone `/workspace/oneup-studio`, Mac `/Users/macbook/me/projects/oneup-studio`).
-Reference implementation: `content/clips/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
+Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
 
 ## 0. How Hiệp asks (intake)
 | Hiệp writes | Agent does |
@@ -22,7 +22,7 @@ Reference implementation: `content/clips/clip-01-implementation-intention/final/
 Ask only what blocks a decision (rule: ask before deciding). Never invent a personal story; unknown details stay generic and go to the confirm list.
 
 ## 1. Read before writing (always, in this order)
--1. **`docs/conventions/storage.md` (rule-65) + `logs/lessons.md`** before ANY clip work: write every file to its canonical path (`pipeline/paths.py`); shared fonts/logo/sfx/voice-refs/characters/props live once in `brand/`, `assets/`, `video-engine/src/` (runtime copies via `pipeline/scripts/sync-shared.py`, gitignored); clip folder = script, spec, plans, timing, cover, preview only. `check-assets.py` must PASS. Step-by-step order: `docs/workflow/per-video-pipeline.md`.
+-1. **`docs/conventions/storage.md` (rule-65) + `logs/lessons.md`** before ANY clip work: write every file to its canonical path (`pipeline/paths.py`); shared fonts/logo/sfx/voice-refs/characters/props live once in `brand/`, `assets/`, `video-engine/src/` (runtime copies via `pipeline/scripts/sync-shared.py`, gitignored); clip folder = script, spec, plans, timing, cover, preview only. `check-assets.py` must PASS. Step-by-step order: `docs/workflow/per-video-pipeline.md`. Lifecycle (rule-66): active clips in `content/clips/<clip>/`; after full post package + Hiệp says "duyệt" → `content/archive/<clip>/` + `final/approved.json`, renders in `media/clips/<clip>/` (full + 720p), then `media-sync.py` to the Mac.
 0. **`logs/lessons.md` (rule-49)**: read every lesson; avoid each known failure in this clip. On ANY correction from Hiệp: first add/update the lesson (symptom in his words, root cause, fix, detection) and, if measurable, a `L-NNN` check in `pipeline/scripts/check-rules.py`; then fix; then re-run check-rules (✖ blocks review).
 1. `AGENTS.md` → `rules/video-rules.md` (current version) → `logs/decision-log.md` (all DL, rule-33).
 2. `content/voice-profile.md`, `content/story-bank.md`, `content/theme-map.md` (theme + week; Omi only week ≥ 5, rule-11).

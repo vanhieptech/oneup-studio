@@ -45,7 +45,7 @@ for f in tracked:
     if top not in P.TOP_ALLOWED and not top.startswith("."): errs.append(f"outside allowed top-level dirs: {f}")
     name = f.rsplit("/", 1)[-1]
     parts = f.split("/")
-    if f.startswith("content/clips/") and len(parts) >= 4 and parts[3] not in P.CLIP_TOP_ALLOWED:
+    if f.startswith(("content/clips/", "content/archive/")) and len(parts) >= 4 and parts[3] not in P.CLIP_TOP_ALLOWED:
         errs.append(f"clip layout: only final/, archive/, README.md allowed in {parts[2]}/ (drafts → archive/): {f}")
     if f.startswith("content/clips/") and len(parts) == 3:
         errs.append(f"stray file directly in content/clips/: {f}")
@@ -59,6 +59,24 @@ for f in tracked:
     by.setdefault(sha(ROOT / f), []).append(f)
 for h, fs in by.items():
     if len(fs) > 1: errs.append(f"duplicate content ({h[:10]}): {', '.join(fs)}")
+# rule-66: archived clips must carry a complete post package; active clips may be incomplete
+man = {e["path"]: e for e in json.loads((ROOT / "media/MANIFEST.json").read_text())}
+for cd in sorted(P.ARCHIVE.glob("*/")) if P.ARCHIVE.exists() else []:
+    rel = cd.relative_to(ROOT).as_posix()
+    for need in P.POST_PACKAGE:
+        if not (cd / need).is_file(): errs.append(f"rule-66 archived {rel}: missing {need}")
+    ap = cd / "final/approved.json"
+    if ap.is_file():
+        a = json.loads(ap.read_text())
+        if a.get("approved") != "duyệt": errs.append(f"rule-66 archived {rel}: approved.json needs \"approved\": \"duyệt\" (Hiệp's word)")
+        for k in ("title", "video_full", "video_720"):
+            if not a.get(k): errs.append(f"rule-66 archived {rel}: approved.json missing {k}")
+        for k in ("video_full", "video_720"):
+            if a.get(k) and a[k] not in man: errs.append(f"rule-66 archived {rel}: {k} {a[k]} not in media/MANIFEST.json")
+    post = cd / "final/post.md"
+    if post.is_file():
+        t = post.read_text()
+        if "caption" not in t.lower() or not re.search(r"#\w", t): errs.append(f"rule-66 archived {rel}: post.md needs caption + hashtags")
 if errs:
     print(f"FAIL rule-65: {len(errs)} storage violation(s):"); [print("  ", e) for e in errs[: (None if "--list" in sys.argv else 40)]]; sys.exit(1)
 print(f"PASS rule-65: {len(tracked)} tracked files follow docs/conventions/storage.md (no shared files in clips, no duplicates)")
