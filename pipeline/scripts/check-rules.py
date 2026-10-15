@@ -493,8 +493,8 @@ def lessons(spec, fdir, L, final, tpath):
             if g > 0.1: hg.append(f"{a['scene']}→{b['scene']}: line gap {g}s")
     (err if hg else ok)("L-027", f"hook gaps > 0.1s: {hg[:8]}" if hg else "hook voice gaps ≤ 0.1s")
     # L-028 self-blame lines must be punchy (!) with post emphasis on the key word
-    sb = [s["id"] for _, s, l in L if re.search(r"đồ lười|ghét bản thân|tội lỗi", " ".join(p.get("t", "") for p in l.get("phrases", [])).lower()) and s.get("part") == "hook" and not ("!" in " ".join(p.get("t", "") for p in l["phrases"]) and l.get("emph_tail"))]
-    (err if sb else ok)("L-028", f"self-blame hook line without '!' + emph_tail: {sb}" if sb else "self-blame lines punchy + emphasized")
+    sb = [s["id"] for _, s, l in L if re.search(r"đồ lười|ghét bản thân|tội lỗi", " ".join(p.get("t", "") for p in l.get("phrases", [])).lower()) and s.get("part") == "hook" and not ("!" in " ".join(p.get("t", "") for p in l["phrases"]) and (l.get("emph_tail") or l.get("emph_head")))]
+    (err if sb else ok)("L-028", f"self-blame hook line without '!' + emph_tail/emph_head: {sb}" if sb else "self-blame lines punchy + emphasized")
     # L-026 despair lines must not use a smiling/neutral face
     dz = [s["id"] for _, s, l in L if re.search(r"trời ơi|tuyệt vọng", (l.get("text") or "").lower()) and ((l.get("set") or {}).get(l["speaker"], {}).get("expression") or next((c.get("expression") for c in s.get("cast", []) if c["id"] == l["speaker"]), "")) not in ("sad", "despair")]
     (err if dz else ok)("L-026", f"despair line without sad/despair face: {dz}" if dz else "despair lines use sad/despair face")

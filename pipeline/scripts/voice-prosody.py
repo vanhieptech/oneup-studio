@@ -294,6 +294,10 @@ def f5_line(j, d, sil_db=-32.0, search=0.25, fade=0.012):
         k = min(n, len(last)); g = 10 ** (float(j.get("emph_db", 3.5)) / 20); ramp = np.linspace(1, g, min(k, int(0.06 * SR)))
         env = np.concatenate([ramp, np.full(k - len(ramp), g)]).astype(np.float32); seg = last[-k:] * env
         last[-k:] = (np.tanh(seg * 1.6) / np.tanh(1.6)).astype(np.float32) * 0.7 + seg * 0.3
+    if j.get("emph_head"):  # L-028: harsh emphasis on the opening words (e.g. "Đồ lười! Ghét bản thân mình ghê!")
+        first = next(sg for sg in segs if len(sg) > int(0.1 * SR)); k = min(len(first), int(float(j["emph_head"]) * SR)); g = 10 ** (float(j.get("emph_db", 3.5)) / 20)
+        env = np.concatenate([np.full(k - int(0.08 * SR), g), np.linspace(g, 1, int(0.08 * SR))]).astype(np.float32); seg = first[:k] * env
+        first[:k] = (np.tanh(seg * 1.6) / np.tanh(1.6)).astype(np.float32) * 0.7 + seg * 0.3
     segs.append(np.zeros(int(0.08 * SR), np.float32)); y = np.concatenate(segs); y = y + room_tone(len(y))
     out = []  # one meta entry per spec phrase (captions zip phrases 1:1); merged groups split by syllable share
     for g in meta:
@@ -422,6 +426,10 @@ def f5_units(j, d):
         k = min(n, len(last)); g = 10 ** (float(j.get("emph_db", 3.5)) / 20); ramp = np.linspace(1, g, min(k, int(0.06 * SR)))
         env = np.concatenate([ramp, np.full(k - len(ramp), g)]).astype(np.float32); seg = last[-k:] * env
         last[-k:] = (np.tanh(seg * 1.6) / np.tanh(1.6)).astype(np.float32) * 0.7 + seg * 0.3
+    if j.get("emph_head"):  # L-028: harsh emphasis on the opening words (e.g. "Đồ lười! Ghét bản thân mình ghê!")
+        first = next(sg for sg in segs if len(sg) > int(0.1 * SR)); k = min(len(first), int(float(j["emph_head"]) * SR)); g = 10 ** (float(j.get("emph_db", 3.5)) / 20)
+        env = np.concatenate([np.full(k - int(0.08 * SR), g), np.linspace(g, 1, int(0.08 * SR))]).astype(np.float32); seg = first[:k] * env
+        first[:k] = (np.tanh(seg * 1.6) / np.tanh(1.6)).astype(np.float32) * 0.7 + seg * 0.3
     segs.append(np.zeros(int(0.08 * SR), np.float32)); y = np.concatenate(segs); y = y + room_tone(len(y))
     # caption chunks: spec phrases spread over spoken units by cumulative syllables (no audio is cut)
     sp = [(u, max(1, len(norm(u["f5_text"])))) for u in um if u["kind"] == "unit"]; tot = sum(n for _, n in sp)

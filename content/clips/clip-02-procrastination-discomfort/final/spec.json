@@ -143,8 +143,8 @@
                   "t": "Mê Ô mi nhất, mà dời hoài!"
                 }
               ],
-              "takes": 10,
-              "speed": 1.2,
+              "takes": 6,
+              "speed": 1.18,
               "gap_max": 0.1,
               "energetic": true,
               "whole": true
@@ -236,8 +236,8 @@
                   "t": "Sao việc mê nhất lại dời lâu nhất?"
                 }
               ],
-              "takes": 10,
-              "speed": 1.2,
+              "takes": 6,
+              "speed": 1.18,
               "gap_max": 0.1,
               "energetic": true,
               "whole": true,
@@ -318,8 +318,8 @@
                   "t": "Như clíp trước nói, có câu nếu thì rồi. Chín giờ tới, vẫn né."
                 }
               ],
-              "takes": 10,
-              "speed": 1.1,
+              "takes": 6,
+              "speed": 1.15,
               "gap_max": 0.1,
               "energetic": true,
               "whole": true
@@ -411,13 +411,13 @@
                   "t": "Đồ lười! Ghét bản thân mình ghê! Chửi xong, mai càng ngại."
                 }
               ],
-              "takes": 10,
-              "speed": 1.2,
+              "takes": 6,
+              "speed": 1.18,
               "gap_max": 0.1,
               "energetic": true,
               "whole": true,
-              "emph_tail": 0.6,
-              "emph_db": 3.5
+              "emph_db": 3.5,
+              "emph_head": 1.9
             }
           ],
           "fx": {

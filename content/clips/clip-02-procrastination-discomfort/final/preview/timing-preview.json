@@ -1,17 +1,17 @@
 {
- "total": 8.94,
+ "total": 8.93,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/preview/plan-A-preview.voiced.json",
-   "dur": 8.937999999999999,
+   "dur": 8.927,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A-preview.mp4",
    "fx": null,
    "scene_starts": [
-    1.059,
-    2.34,
-    3.71
+    1.497,
+    3.237,
+    6.247
    ],
    "_off": 0.0
   }
@@ -21,73 +21,49 @@
    "beat": "clip-02.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "Tính năng Ô mi nè!",
-   "en": "The Omi feature, see.",
+   "say": "Mê Ô mi nhất, mà dời hoài!",
+   "en": "My favourite feature, and I keep pushing it!",
    "emotion": "sad",
-   "key": "f5-e2830f1e7d33",
+   "key": "f5-d5d6285aa7c2",
    "local": 0.12,
-   "dur": 0.879,
+   "dur": 1.317,
    "t": 0.12
   },
   {
    "beat": "clip-02.b01",
    "scene": "b01b",
    "speaker": "hiep",
-   "say": "Hôm nay dời! Mai lại dời!",
-   "en": "Pushed today. Pushed again tomorrow.",
+   "say": "Sao việc mê nhất lại dời lâu nhất?",
+   "en": "Why is the thing I love most the one I delay longest?",
    "emotion": "sad",
-   "key": "f5-479fae2baa86",
+   "key": "f5-0cb4510e91af",
    "local": 0.02,
-   "dur": 1.201,
-   "t": 1.079
+   "dur": 1.66,
+   "t": 1.517
   },
   {
    "beat": "clip-02.b01",
    "scene": "b01c",
    "speaker": "hiep",
-   "say": "Trời ơi... thành dự án ma luôn!",
-   "en": "Oh god, it's a ghost project now.",
-   "emotion": "sad",
-   "key": "f5-d22e536a4d5a",
+   "say": "Như clíp trước nói, có câu nếu thì rồi. Chín giờ tới, vẫn né.",
+   "en": "Like last clip: I have my if-then. 9 PM comes, I still dodge.",
+   "emotion": "confused",
+   "key": "f5-a99ac3cfe9df",
    "local": 0.02,
-   "dur": 1.29,
-   "t": 2.36
+   "dur": 2.93,
+   "t": 3.257
   },
   {
    "beat": "clip-02.b02",
    "scene": "b02",
    "speaker": "hiep",
-   "say": "Hầy... mở cốt. Gõ hai dòng…",
-   "en": "Sigh. Open the code. Two lines…",
-   "emotion": "sad",
-   "key": "f5-2676362ec96f",
+   "say": "Đồ lười! Ghét bản thân mình ghê! Chửi xong, mai càng ngại.",
+   "en": "Lazy bum! I hate myself! And after that, tomorrow feels even heavier.",
+   "emotion": "angry",
+   "key": "f5-8c9c5e792f53",
    "local": 0.02,
-   "dur": 1.383,
-   "t": 3.73
-  },
-  {
-   "beat": "clip-02.b02",
-   "scene": "b02",
-   "speaker": "hiep",
-   "say": "Ủa? Sao lướt Tíc Tóc tới khuya rồi?!",
-   "en": "wait, how is it midnight on TikTok?",
-   "emotion": "surprised",
-   "key": "f5-3f83a41f6b83",
-   "local": 1.483,
-   "dur": 1.685,
-   "t": 5.193
-  },
-  {
-   "beat": "clip-02.b02",
-   "scene": "b02",
-   "speaker": "hiep",
-   "say": "Tội lỗi! Ghét bản thân! Đồ lười!",
-   "en": "Guilt! Self-hate! “LAZY BUM!”",
-   "emotion": "sad",
-   "key": "f5-c6a4ec74021a",
-   "local": 3.248,
-   "dur": 1.92,
-   "t": 6.958
+   "dur": 2.6,
+   "t": 6.267
   }
  ]
 }
