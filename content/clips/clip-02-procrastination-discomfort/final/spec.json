@@ -132,22 +132,23 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Mê Omi nhất, mà dời hoài!",
-              "en": "My favourite feature, and I keep pushing it!",
+              "text": "Thích Omi nhất, mà dời hoài luôn á!",
+              "en": "My favorite feature, and I keep pushing it!",
               "hl": [
-                5,
+                1,
                 6
               ],
               "phrases": [
                 {
-                  "t": "Mê Ô mi nhất, mà dời hoài!"
+                  "t": "Thích Ô mi nhất, mà dời {nhấn: hoài} luôn á!"
                 }
               ],
               "takes": 6,
               "speed": 1.18,
               "gap_max": 0.1,
               "energetic": true,
-              "whole": true
+              "whole": true,
+              "emph": "markup"
             }
           ],
           "fx": {
@@ -159,7 +160,7 @@
               "name": "click",
               "atLine": 0,
               "offset": 0.0,
-              "word": "Mê Omi"
+              "word": "Thích Omi"
             },
             {
               "name": "stamp",
@@ -225,15 +226,15 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Sao việc mê nhất lại dời lâu nhất?",
-              "en": "Why is the thing I love most the one I delay longest?",
+              "text": "Sao việc thích nhất lại dời lâu nhất vậy nhỉ?",
+              "en": "Why does the thing I love most get delayed the longest?",
               "hl": [
-                10,
-                11
+                5,
+                10
               ],
               "phrases": [
                 {
-                  "t": "Sao việc mê nhất lại dời lâu nhất?"
+                  "t": "Sao việc thích nhất lại dời {nhấn: lâu nhất} vậy nhỉ?"
                 }
               ],
               "takes": 6,
@@ -245,7 +246,8 @@
                 "hiep": {
                   "expression": "despair"
                 }
-              }
+              },
+              "emph": "markup"
             }
           ],
           "fx": {
@@ -307,22 +309,23 @@
             {
               "speaker": "hiep",
               "emotion": "confused",
-              "text": "Như clip trước nói, có câu nếu–thì rồi. Chín giờ tới, vẫn né.",
+              "text": "Như clip trước nói nha, có câu nếu–thì rồi. Chín giờ tới… vẫn né luôn.",
               "en": "Like last clip: I have my if-then. 9 PM comes, I still dodge.",
               "hl": [
                 6,
-                6
+                12
               ],
               "phrases": [
                 {
-                  "t": "Như clíp trước nói, có câu nếu thì rồi. Chín giờ tới, vẫn né."
+                  "t": "Như clíp trước nói nha, có câu {nhấn: nếu thì} rồi. Chín giờ tới… vẫn {nhấn: né} luôn."
                 }
               ],
               "takes": 6,
               "speed": 1.15,
               "gap_max": 0.1,
               "energetic": true,
-              "whole": true
+              "whole": true,
+              "emph": "markup"
             }
           ],
           "fx": {
@@ -400,7 +403,7 @@
             {
               "speaker": "hiep",
               "emotion": "angry",
-              "text": "Đồ lười! Ghét bản thân mình ghê! Chửi xong, mai càng ngại.",
+              "text": "Haizzz… Đồ lười! Ghét bản thân mình ghê á! Chửi xong, mai càng ngại.",
               "en": "Lazy bum! I hate myself! And after that, tomorrow feels even heavier.",
               "hl": [
                 0,
@@ -408,7 +411,7 @@
               ],
               "phrases": [
                 {
-                  "t": "Đồ lười! Ghét bản thân mình ghê! Chửi xong, mai càng ngại."
+                  "t": "{haizz} Đồ {nhấn: lười}! Ghét bản thân mình {nhấn: ghê} á! Chửi xong, mai càng {nhấn: ngại}."
                 }
               ],
               "takes": 6,
@@ -417,7 +420,7 @@
               "energetic": true,
               "whole": true,
               "emph_db": 3.5,
-              "emph_head": 1.9
+              "emph": "markup"
             }
           ],
           "fx": {

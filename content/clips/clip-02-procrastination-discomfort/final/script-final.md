@@ -222,3 +222,13 @@ push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial
 - Bỏ hẳn POV (lời + chữ). b01: “Tính năng Omi nè!”; chữ hook: **TÍNH NĂNG OMI · DỜI. DỜI. DỜI.**
 - Hook đọc nhanh hơn (F5 speed 1.2), khoảng lặng ≤ 0,15s, nhấn bằng dấu (!, ?!, …): “Hôm nay dời! Mai lại dời!”, “Trời ơiii… thành dự án ma luôn!”, “Hầy… mở code” + SFX thở dài thật, “Ủa?! Sao lướt TikTok tới khuya rồi?!”.
 - Phần đọc phiên âm (L-025): Omi → Ô mi, TikTok → Tíc Tóc, code → cốt, Haizz → Hầy…
+
+## Hook v6 (15/10, chờ Hiệp duyệt chữ, chưa voice)
+Thêm tiểu từ/từ đệm Nam Bộ + 1 từ nhấn (ngân, `{nhấn: …}`) mỗi câu. "Mê" → "Thích".
+
+| Cảnh | Lời (hiển thị) | Phần đọc (F5) | Từ nhấn |
+|---|---|---|---|
+| b01 | Thích Omi nhất, mà dời hoài luôn á! | Thích Ô mi nhất, mà dời {nhấn: hoài} luôn á! | hoài |
+| b01b | Sao việc thích nhất lại dời lâu nhất vậy nhỉ? | Sao việc thích nhất lại dời {nhấn: lâu nhất} vậy nhỉ? | lâu nhất |
+| b01c | Như clip trước nói nha, có câu nếu–thì rồi. Chín giờ tới… vẫn né luôn. | Như clíp trước nói nha, có câu {nhấn: nếu thì} rồi. Chín giờ tới… vẫn {nhấn: né} luôn. | nếu–thì · né |
+| b02 | Haizzz… Đồ lười! Ghét bản thân mình ghê á! Chửi xong, mai càng ngại. | {haizz} Đồ {nhấn: lười}! Ghét bản thân mình {nhấn: ghê} á! Chửi xong, mai càng {nhấn: ngại}. | lười · ghê · ngại |

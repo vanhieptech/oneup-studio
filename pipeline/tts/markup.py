@@ -12,8 +12,8 @@ Punctuation that also shapes delivery: , ; : . ? ! … — ( ) “ ” (pause pe
 import json, os, re, unicodedata, hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FILLERS = {"ừm": "ừm...", "um": "ừm...", "ờ": "ờ...", "à": "à,", "ơ": "ơ...", "hừm": "hừm...", "hmm": "hừm...", "ủa": "ủa?", "trời ơi": "trời ơi!", "thì là": "thì là..."}
-PARTICLES = ["nha", "á", "hông", "nè", "ha", "luôn", "ta", "đó", "hả", "nghen"]
+FILLERS = {"ừm": "ừm...", "um": "ừm...", "ờ": "ờ...", "à": "à,", "ơ": "ơ...", "hừm": "hừm...", "hmm": "hừm...", "ủa": "ủa?", "trời ơi": "trời ơi!", "thì là": "thì là...", "haizz": "hầy..."}
+PARTICLES = ["nha", "á", "hông", "nè", "ha", "luôn", "ta", "đó", "hả", "nghen", "nhỉ"]
 PAUSE = {",": 0.18, ";": 0.26, ":": 0.28, ".": 0.35, "?": 0.42, "!": 0.38, "…": 0.52, "...": 0.52, "—": 0.12, "(": 0.20, ")": 0.20, "“": 0.15, "”": 0.15, '"': 0.15}
 HES = "\u22ef"      # in-unit hesitation placeholder (not a split mark) → "..." for F5
 ASIDE_DB = -4.0
@@ -34,6 +34,7 @@ def validate(text):
         if kl.startswith("bank:") and kl[5:].strip() in FILLERS: continue
         if kl.startswith("kéo:") and kl[4:].strip() in PARTICLES: continue
         if kl.startswith("nhỏ:") and kl[4:].strip(): continue
+        if kl.startswith("nhấn:") and kl[5:].strip(): continue  # L-031: melodic emphasis word (stretch + gain in post, F5 text unchanged)
         bad.append(m.group(0))
     if text.count("{") != text.count("}"): bad.append("unbalanced braces")
     return bad
@@ -52,6 +53,7 @@ def expand(text, character=None):
         if kl.startswith("kéo:"):
             p = kl[4:].strip(); return st.get(p, {}).get("long", p)
         if kl.startswith("nhỏ:"): return " (" + k[4:].strip() + ") "
+        if kl.startswith("nhấn:"): return k[5:].strip()
         return m.group(0)
     t = MARK_RE.sub(rep, text)
     return re.sub(r"\s+", " ", t).strip(), bank
@@ -71,7 +73,7 @@ def spoken(text, character=None):
 
 def visible(text):
     """Caption/bubble-safe text: markup removed (fillers dropped, asides kept)."""
-    t = MARK_RE.sub(lambda m: (m.group(1).split(":", 1)[1].strip() if m.group(1).lower().startswith(("kéo:", "nhỏ:")) else ""), text)
+    t = MARK_RE.sub(lambda m: (m.group(1).split(":", 1)[1].strip() if m.group(1).lower().startswith(("kéo:", "nhỏ:", "nhấn:")) else ""), text)
     return re.sub(r"\s+", " ", t).strip()
 
 def bank_pick(character, filler, key, n):

@@ -464,7 +464,7 @@ def lessons(spec, fdir, L, final, tpath):
             if re.search(rf"(?<!\w){term}(?!\w)", spoken): kt.append(f"{s['id']}: '{term}' spoken raw (use '{ph}')")
     (err if kt else ok)("L-010", "; ".join(kt) if kt else "key terms use phonetic spelling")
     # L-025 English/brand words must be respelled in the spoken part (display text keeps the real word)
-    br = [f"{s['id']}: '{m}'" for _, s, l in L for m in re.findall(r"(?<!\w)(POV|Omi|TikTok|Haizz|code)(?!\w)", " ".join(p.get("t", "") for p in l.get("phrases", [])), re.I)]
+    br = [f"{s['id']}: '{m}'" for _, s, l in L for m in re.findall(r"(?<!\w)(POV|Omi|TikTok|Haizz|code)(?!\w)", re.sub(r"\{[^}]*\}", "", " ".join(p.get("t", "") for p in l.get("phrases", []))), re.I)]
     (warn if br else ok)("L-025", f"raw English/brand words in spoken text (respell: POV→Pi ô vi, Omi→Ô mi, TikTok→Tíc Tóc, Haizz→Hầy..., code→cốt): {br}" if br else "spoken text respelled")
     vd = os.path.join(REPO, "video-engine/public/voice"); tl = []
     _en = {l.get("en") for _, _, l in L}
@@ -493,8 +493,19 @@ def lessons(spec, fdir, L, final, tpath):
             if g > 0.1: hg.append(f"{a['scene']}→{b['scene']}: line gap {g}s")
     (err if hg else ok)("L-027", f"hook gaps > 0.1s: {hg[:8]}" if hg else "hook voice gaps ≤ 0.1s")
     # L-028 self-blame lines must be punchy (!) with post emphasis on the key word
-    sb = [s["id"] for _, s, l in L if re.search(r"đồ lười|ghét bản thân|tội lỗi", " ".join(p.get("t", "") for p in l.get("phrases", [])).lower()) and s.get("part") == "hook" and not ("!" in " ".join(p.get("t", "") for p in l["phrases"]) and (l.get("emph_tail") or l.get("emph_head")))]
+    sb = [s["id"] for _, s, l in L if re.search(r"đồ lười|ghét bản thân|tội lỗi", " ".join(p.get("t", "") for p in l.get("phrases", [])).lower()) and s.get("part") == "hook" and not ("!" in " ".join(p.get("t", "") for p in l["phrases"]) and (l.get("emph_tail") or l.get("emph_head") or "{nhấn:" in " ".join(p.get("t", "") for p in l["phrases"])))]
     (err if sb else ok)("L-028", f"self-blame hook line without '!' + emph_tail/emph_head: {sb}" if sb else "self-blame lines punchy + emphasized")
+    # L-031 / rule-63: every hook sentence has one {nhấn: …} word; hook should carry Southern particles
+    import re as _re
+    ne = []; npart = True
+    for _, s_, l in L:
+        if s_.get("part") != "hook": continue
+        sp_ = " ".join(p.get("t", "") for p in l.get("phrases", []))
+        for sent in [x for x in _re.split(r"(?<=[.!?])\s+", sp_) if _re.search(r"\w", _re.sub(r"\{[^}]*\}", "", x)) and len(_re.sub(r"\{[^}]*\}", "", x).split()) > 3]:
+            if "{nhấn:" not in sent: ne.append(f"{s_['id']}: {sent[:40]}")
+        if _re.search(r"(?<!\w)(luôn|á|nhỉ|nha|nè|hông|ha|đó)(?!\w)", sp_.lower()): npart = False
+    (err if ne else ok)("L-031", f"hook sentence without {{nhấn:}} word: {ne}" if ne else "each hook sentence has an emphasis word")
+    if npart: warn("L-031", "hook has no Southern sentence-final particle")
     # L-026 despair lines must not use a smiling/neutral face
     dz = [s["id"] for _, s, l in L if re.search(r"trời ơi|tuyệt vọng", (l.get("text") or "").lower()) and ((l.get("set") or {}).get(l["speaker"], {}).get("expression") or next((c.get("expression") for c in s.get("cast", []) if c["id"] == l["speaker"]), "")) not in ("sad", "despair")]
     (err if dz else ok)("L-026", f"despair line without sad/despair face: {dz}" if dz else "despair lines use sad/despair face")

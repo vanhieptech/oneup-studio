@@ -261,3 +261,5 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 - **v1.2, 12/10/2026:** font Be Vietnam Pro cho mọi chữ (luật 20 cũ).
 - **v1.1, 12/10/2026:** motion chọn theo từng script (luật 19 cũ).
 - **v1.0, 12/10/2026:** 18 quyết định đầu tiên.
+
+**Luật 63 (L-031, 15/10):** Mỗi câu thoại hook/comic có đúng 1 từ nhấn đánh dấu `{nhấn: …}` (ngân nga: giãn + 2–3 dB khi hậu kỳ) và tiểu từ/từ đệm Nam Bộ cuối câu khi tự nhiên (luôn á, nhỉ, nha, haizzz). `{kéo: …}` chỉ dùng cho tiểu từ (DL-040).
