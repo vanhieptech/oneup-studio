@@ -1,0 +1,276 @@
+{
+  "actor": "clockworks/tiktok-scraper",
+  "run_id": "au2F9eFcWhzuaXWnz",
+  "item_count": 3,
+  "fields_coverage": {
+    "url": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "caption": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "author": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "play_count": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "like_count": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "share_count": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "comment_count": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "duration_s": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "music": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "hashtags": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "subtitle_or_transcript": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    },
+    "top_comments": {
+      "present": 3,
+      "of": 3,
+      "pct": 100.0
+    }
+  },
+  "clips": [
+    {
+      "url": "https://www.tiktok.com/@giaimatrend.vn/video/7694889719036923154",
+      "caption": "“Vậy thì bản chất của dao động điều hoà” là trend gì? Gốc là một câu giảng Vật lí 11 của Thầy Kiêu Vật Lí (@thaykieuvatli), trong clip 20 giây đăng ngày 19/7/2026. Ngày 25/9, Kiệt Hà Tịnh nhại lại, Mai Trí Thức diễn tiếp, rồi câu nói thành khuôn “bản chất của… lặp đi lặp lại… thế thôi”: mối quan hệ mập mờ, dự án ma, người lương 5 triệu… Ngày 5/10, chính thầy còn xuất hiện trong clip của @d.dragon1712.\n\nVà thầy nói có đúng không? Đúng: vật chạy về giữa thì nhanh dần, ra biên thì chậm dần, lặp đi lặp lại. Chỉ có điều, đó không phải nhanh dần đều.\n\nBạn sẽ điền gì vào “bản chất của…”?\n\nNguồn clip: @thaykieuvatli (Thầy Kiêu Vật Lí) · @tuankiet.2000 · @maitrithuc2020 · @d.dragon1712 · @nvanw.04 · @g.minhtrg · @haihe23\nSố liệu và bình luận TikTok ghi ngày 10/10/2026 · minh hoạ lò xo do kênh vẽ\n\n#daodongdieuhoa #banchatcua #thaykieuvatli #kiethatinh #giaimatrend",
+      "author": {
+        "id": "7680556925205431303",
+        "name": "giaimatrend.vn",
+        "nick": "GIẢI MÃ TREND",
+        "profile": "https://www.tiktok.com/@giaimatrend.vn",
+        "fans": 2338
+      },
+      "play_count": 72200,
+      "like_count": 3076,
+      "share_count": 661,
+      "comment_count": 32,
+      "duration_s": 120,
+      "music": {
+        "id": "7179679214566639618",
+        "name": "vlog, chill out, calm daily life(1370843)",
+        "author": "SUNNY HOOD STUDIO",
+        "original": false
+      },
+      "hashtags": [
+        "daodongdieuhoa",
+        "banchatcua",
+        "thaykieuvatli",
+        "kiethatinh",
+        "giaimatrend"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.600 --> 00:00:02.200\nvậy thì bản chất của dao động điều hòa\n\n00:00:02.400 --> 00:00:04.400\nvậy thì bản chất của mối quan hệ mập mờ\n\n00:00:04.520 --> 00:00:06.040\nvậy thì bản chất của dự án mạng\n\n00:00:06.080 --> 00:00:08.640\nvậy thì bản chất của người lương 5.000.000 thế thôi\n\n00:00:09.240 --> 00:00:12.160\ntất cả đang nhại một câu giảng vật lý 11 của thầy kiêu\n\n00:00:12.400 --> 00:00:14.080\nthầy dạy luyện thi vật lý ở Đà Nẵng\n\n00:00:14.240 --> 00:00:17.960\nclip 20 giây đăng ngày 19 tháng 7 giờ hơn 5.000.000 lượt xem\n\n00:00:18.640 --> 00:00:20.240\nvậy thì bản chất của dao động điều hòa\n\n00:00:20.241 --> 00:00:21.321\nnó gồm 2 chuyển động\n\n00:00:21.360 --> 00:00:23.880\nlà chuyển động nhanh dần và chuyển động chậm dần\n\n00:00:24.280 --> 00:00:26.000\nlặp đi lặp lại\n\n00:00:26.280 --> 00:00:28.840\nthầy giảng bằng cả người nhún xoay\n\n00:00:29.120 --> 00:00:31.280\ndang Tay bình luận nhiều Tim nhất là\n\n00:00:31.560 --> 00:00:33.120\nthầy dạy một tuần giảm 2 cân\n\n00:00:33.400 --> 00:00:35.600\nTheo cành nhịp diễn thấy rất dễ bắt chước\n\n00:00:36.040 --> 00:00:40.000\n25/9 kiệt Hà Tĩnh đóng cả vai thầy lẫn vai học trò\n\n00:00:40.240 --> 00:00:41.560\n5.000.000 rưỡi lượt xem\n\n00:00:41.800 --> 00:00:42.600\n2 ngày sau\n\n00:00:42.760 --> 00:00:47.200\nmai trí thức diễn lại trước một tấm bảng y hệt của thầy 5/10\n\n00:00:47.360 --> 00:00:48.680\nchính thầy kiêu xuất hiện\n\n00:00:48.760 --> 00:00:50.320\nmột nhà sáng tạo đứng cạnh thầy\n\n00:00:50.480 --> 00:00:52.640\ngiảng phản ứng oxy hóa khử đúng giọng ấy\n\n00:00:52.800 --> 00:00:54.040\nrồi quay sang hỏi thầy\n\n00:00:54.160 --> 00:00:56.480\nà phong cách là như thế là được chưa ạ\n\n00:00:56.640 --> 00:00:58.640\nô kê văn phong như vậy là cuốn rồi\n\n00:00:58.880 --> 00:01:00.960\ntừ đó câu nói thành một cái khuôn\n\n00:01:01.240 --> 00:01:04.040\nđiền một thứ bất kỳ vào chỗ bản chất của\n\n00:01:04.160 --> 00:01:06.440\nkể vài việc lặp đi lặp lại rồi chốt\n\n00:01:06.680 --> 00:01:08.720\nthế thôi bản mối quan hệ mập mờ\n\n00:01:08.920 --> 00:01:11.520\nlên 600.000 lượt chia sẻ bản dự án\n\n00:01:11.521 --> 00:01:14.601\nma lên kèo bàn kèo không bao giờ đi\n\n00:01:15.120 --> 00:01:17.120\nvậy thầy nói có đúng không đúng\n\n00:01:17.240 --> 00:01:20.080\nlấy ví dụ thầy dùng một vật gắn lò XO\n\n00:01:20.200 --> 00:01:21.760\nchạy qua lại giữa 2 biên\n\n00:01:21.920 --> 00:01:22.840\nchạy về chính giữa\n\n00:01:23.080 --> 00:01:24.920\nnó nhanh dần chạy Ra biên\n\n00:01:25.080 --> 00:01:29.560\nnó chậm dần dừng lại rồi quay đầu cứ thế lặp đi lặp lại\n\n00:01:29.960 --> 00:01:33.120\ncòn X bằng a cốt Omega T cộng phi\n\n00:01:33.360 --> 00:01:35.760\nchỉ là cách ghi vật đang ở đâu tại mỗi lúc\n\n00:01:36.040 --> 00:01:38.200\na là quãng xa nhất nó Ra khỏi chính giữa\n\n00:01:38.400 --> 00:01:40.360\nhàm cốt làm X tăng rồi giảm\n\n00:01:40.600 --> 00:01:41.440\nlặp đi lặp lại\n\n00:01:41.880 --> 00:01:44.880\nmột ý nhỏ đây là nhanh dần nhưng không đều\n\n00:01:45.000 --> 00:01:48.360\nlực lò XO mạnh nhất ở biên và bằng không ở chính giữa\n\n00:01:48.560 --> 00:01:50.160\nnên tốc độ tăng vọt lúc đầu\n\n00:01:50.320 --> 00:01:52.280\nrồi tăng chậm dần khi gần tới giữa\n\n00:01:52.760 --> 00:01:55.880\ncòn bạn sẽ điền gì vào chỗ bản chết của\n\n00:01:57.600 --> 00:01:59.160\nđây là giải mã trend\n",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-giaimatren-20261010042214-7694889719036923154-vie-VN.vtt"
+        ],
+        "file": "subtitle-giaimatren-20261010042214-7694889719036923154-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "vậy bản chất của quá trình oxh khử ?",
+          "likes": 51,
+          "author": "ateez_209"
+        },
+        {
+          "text": "v thì bản chất của lốp ?",
+          "likes": 9,
+          "author": "lehailuan.09"
+        },
+        {
+          "text": "tus edit kiểu gì mà đơn giản mà hay",
+          "likes": 3,
+          "author": "gnam9b6v"
+        },
+        {
+          "text": "vậy bản chất của thiếu dame là thiếu dame hoặc hết chiêu lặpđi lặp lại . thế thô",
+          "likes": 3,
+          "author": "minh.nguyt9423"
+        },
+        {
+          "text": "Lặp đi lặp lại",
+          "likes": 1,
+          "author": "vietbinh70"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7694889719036923154",
+      "create_time": "2026-10-10T04:22:14.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@blvmaxstory/video/7696733116483800340",
+      "caption": "AE đêm qua đúng chuẩn bài chưaaaaa #fyp #realmadrid #viral #xuhuong #xuhuong ",
+      "author": {
+        "id": "7580349316338942994",
+        "name": "blvmaxstory",
+        "nick": "LÝ LÀNG LÁ",
+        "profile": "https://www.tiktok.com/@blvmaxstory",
+        "fans": 26600
+      },
+      "play_count": 62100,
+      "like_count": 5534,
+      "share_count": 1713,
+      "comment_count": 101,
+      "duration_s": 30,
+      "music": {
+        "id": "7696733175087418133",
+        "name": "âm thanh gốc - LÝ LÀNG LÁ",
+        "author": "LÝ LÀNG LÁ",
+        "original": true
+      },
+      "hashtags": [
+        "fyp",
+        "realmadrid",
+        "viral",
+        "xuhuong",
+        "xuhuong"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.320 --> 00:00:01.840\nReal Madrid lội ngược dòng\n\n00:00:01.960 --> 00:00:04.640\nvậy thì bản chất của pha real đêm qua chỉ có BA công việc\n\n00:00:04.641 --> 00:00:08.881\nchính hiệp một thì cay cú bực tức vì đội đá ngu vãi lò\n\n00:00:09.200 --> 00:00:10.120\nthở dốc liên tục\n\n00:00:10.600 --> 00:00:12.640\ngiữa hiệp 2 vẫn cay cú bực tức\n\n00:00:12.840 --> 00:00:14.800\nvì mấy thằng đá như đấm vào mắt người xem\n\n00:00:15.200 --> 00:00:16.840\ncuối hiệp thì đứt cái mẹ nó hơi\n\n00:00:17.000 --> 00:00:19.560\nvẫn đéo tin là đội bóng của mình có màn remontada\n\n00:00:20.400 --> 00:00:24.720\ngiờ thì mang ngay bác xa tới đây mang ngay bác xa tới đây\n",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-blvmaxstor-20261015033530-7696733116483800340-vie-VN.vtt"
+        ],
+        "file": "subtitle-blvmaxstor-20261015033530-7696733116483800340-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Ae Madridrista đâu , Real là vua c1 Hala Madrid",
+          "likes": 53,
+          "author": "quyettaamdodh209"
+        },
+        {
+          "text": "Phan real Madrid đâu barca tuổi",
+          "likes": 27,
+          "author": "b.hiu161"
+        },
+        {
+          "text": "Gỡ 1 bàn ăn may lật 3 bàn đẳng cấp",
+          "likes": 10,
+          "author": "thch.tim.cho.mn"
+        },
+        {
+          "text": "đã đến lúc muorinho vứt vini ra dự bị và cho mbappe về cánh trái sở trường rồi...",
+          "likes": 2,
+          "author": "condimemay9714"
+        },
+        {
+          "text": "Real Madrid lọc fan kkk",
+          "likes": 1,
+          "author": "wanhh299"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7696733116483800340",
+      "create_time": "2026-10-15T03:35:30.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@thaykieuvatli/video/7664254913454574869",
+      "caption": "VẬT LÍ 11: BẢN CHẤT CỦA DAO ĐỘNG ĐIỀU HOÀ LÀ GÌ??\nHọc chắc lý thuyết khi hiểu đúng bản chất vật lý.\n#2k10 \n#Thầy_Kiêu_Vật_Lí\n#Trung_tâm_luyện_thi_Quốc_Gia\n#Lớp_học_Vật_Lí_Online_10_11_12\n#đà_nẵng ",
+      "author": {
+        "id": "6877023219463914497",
+        "name": "thaykieuvatli",
+        "nick": "Thầy Kiêu Vật Lí",
+        "profile": "https://www.tiktok.com/@thaykieuvatli",
+        "fans": 168200
+      },
+      "play_count": 5400000,
+      "like_count": 446300,
+      "share_count": 468600,
+      "comment_count": 7270,
+      "duration_s": 20,
+      "music": {
+        "id": "7664254973472197396",
+        "name": "âm thanh gốc - Thầy Kiêu Vật Lí",
+        "author": "Thầy Kiêu Vật Lí",
+        "original": true
+      },
+      "hashtags": [
+        "2k10",
+        "thầy_kiêu_vật_lí",
+        "trung_tâm_luyện_thi_quốc_gia",
+        "lớp_học_vật_lí_online_10_11_12",
+        "đà_nẵng",
+        "Thầy_Kiêu_Vật_Lí",
+        "Trung_tâm_luyện_thi_Quốc_Gia",
+        "Lớp_học_Vật_Lí_Online_10_11_12"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.280 --> 00:00:03.000\nvậy thì bản chất của dao động điều hòa nó gồm 2 chuyển động\n\n00:00:03.040 --> 00:00:05.600\nlà chuyển động nhanh dần và chuyển động chậm dần\n\n00:00:06.000 --> 00:00:07.680\nlặp đi lặp lại\n\n00:00:08.400 --> 00:00:10.680\nnếu một vật mà dao động điều hòa\n\n00:00:10.760 --> 00:00:12.720\nthì nó sẽ có một phương trình\n\n00:00:12.960 --> 00:00:15.240\nX bằng a nhân cốt\n\n00:00:15.760 --> 00:00:17.360\nOmega T cộng phịt\n\n00:00:17.560 --> 00:00:20.200\nđấy là bản chất của dao động điều hòa thế thôi\n",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-thaykieuva-20260719150332-7664254913454574869-vie-VN.vtt"
+        ],
+        "file": "subtitle-thaykieuva-20260719150332-7664254913454574869-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Thầy dạy 1 tuần giảm 2 cân 😭",
+          "likes": 84599,
+          "author": "nina_7892"
+        },
+        {
+          "text": "body language",
+          "likes": 44735,
+          "author": "caycalem_2m"
+        },
+        {
+          "text": "lặp đi lặp lại",
+          "likes": 38776,
+          "author": "kap_520"
+        },
+        {
+          "text": "sợ thầy nhảy ra khỏi màn hình 😭",
+          "likes": 30070,
+          "author": "himybestt.10"
+        },
+        {
+          "text": "thầy cx dao động điều hoà",
+          "likes": 10939,
+          "author": "nwhii__"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7664254913454574869",
+      "create_time": "2026-07-19T15:03:32.000Z",
+      "is_slideshow": false
+    }
+  ]
+}

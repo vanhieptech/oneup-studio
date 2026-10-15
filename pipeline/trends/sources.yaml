@@ -4,6 +4,7 @@
 #   reddit.com json/rss (403 datacenter IP, needs OAuth) · rsshub.app public (403) · TikTok Creative Center
 #   (SPA + creative_radar_api returns 40101 "no permission" without browser-signed headers) · threads.net (login/JS)
 #   znews.vn/rss/tin-moi.rss, vietcetera feeds, kenh14.vn/home.rss, genk.vn/home.rss (404) · tuoitre RSS (0 items, use gnews site:)
+# TikTok-native Apify actors live in pipeline/trends/apify.yaml (NOT here; agent/MCP). Do not add Creative Center / trends-scraper / lexis-without-cookie / parseforge-diacritic-keywords.
 {"sources": [
  {"id":"gtrends-vn","type":"gtrends","geo":"VN","cat":"hot","lang":"vi"},
  {"id":"gtrends-us","type":"gtrends","geo":"US","cat":"hot","lang":"en"},

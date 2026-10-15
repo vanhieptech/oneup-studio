@@ -1,0 +1,81 @@
+# Apify TikTok sources for @hi.oneup daily trend crawl (verified 2026-10-16 ICT).
+# Agent runs these via MCP namespace user-Apify (call-actor / get-dataset-items / get-key-value-store-record).
+# Free plan: keep daily spend << $5/mo. Prefer tiny resultsPerPage / maxItems. Never put APIFY_TOKEN in repo.
+#
+# DO NOT use (fail / cookie / ads-only as of 2026-10-16):
+#   - clockworks/tiktok-trends-scraper          # Creative Center → 0 items VN+US
+#   - lexis-solutions/tiktok-trending-hashtags-scraper  # needs ads.tiktok.com cookie
+#   - lexis-solutions trending-videos without cookie    # ~4 brand ads only
+#   - parseforge/tiktok-scraper with Vietnamese-diacritic keywords  # "no public video page"
+#
+# PRIMARY (in order):
+#   1) clockworks/tiktok-scraper — hashtags + searchQueries (ASCII or no-diacritic preferred for search),
+#      downloadSubtitlesOptions=DOWNLOAD_SUBTITLES (VTT lands in run KV store; free vs paid TRANSCRIBE),
+#      proxyCountryCode=VN only when geo-blocked (add-on cost).
+#   2) parseforge/tiktok-scraper — specific videoUrls only; includeTranscript + includeComments
+#      (slideshow/edit often lack transcript → fall back to caption + comments).
+#   3) clockworks/tiktok-comments-scraper — top comments / caption pain points for shortlisted clips.
+#
+# Required fields per clip (normalize with pipeline/scripts/trend-apify-normalize.py):
+#   url, caption, author, play/like/share/comment counts, duration, music, hashtags,
+#   subtitle_or_transcript (VTT text or caption fallback), top_comments[].
+{"version":1,
+ "budget":{"plan":"free","daily_usd_cap":0.50,"sample_usd_cap":0.50,"note":"Apify MCP rejects maxTotalChargeUsd < 0.50; keep resultsPerPage tiny so actual spend stays << free $5/mo"},
+ "blocked_actors":[
+   {"id":"clockworks/tiktok-trends-scraper","reason":"Creative Center 0 items VN+US (2026-10-15/16)"},
+   {"id":"lexis-solutions/tiktok-trending-hashtags-scraper","reason":"needs ads.tiktok.com cookie for full list"},
+   {"id":"lexis-solutions/tiktok-trending-videos-scraper","reason":"without cookie ~4 brand ads only"},
+   {"id":"parseforge/tiktok-scraper#keywords-diacritic","reason":"Vietnamese diacritic keywords → no public video page"}
+ ],
+ "actors":{
+   "clockworks_search":{
+     "actor":"clockworks/tiktok-scraper",
+     "role":"primary_discovery",
+     "default_input":{
+       "hashtags":["trihoan","hoctap","phattrienbanthan"],
+       "searchQueries":["Vay thi ban chat cua","cach het tri hoan"],
+       "searchSection":"/video",
+       "resultsPerPage":8,
+       "downloadSubtitlesOptions":"DOWNLOAD_SUBTITLES",
+       "commentsPerPost":0,
+       "shouldDownloadVideos":false,
+       "shouldDownloadCovers":false,
+       "proxyCountryCode":"None"
+     },
+     "notes":"Use ASCII / no-diacritic searchQueries. Raise resultsPerPage only when budget allows. Set proxyCountryCode=VN only if needed. commentsPerPost=0 here; pull comments via comments actor for shortlist only."
+   },
+   "parseforge_urls":{
+     "actor":"parseforge/tiktok-scraper",
+     "role":"enrich_specific_urls",
+     "default_input":{
+       "videoUrls":[],
+       "maxItems":5,
+       "includeTranscript":true,
+       "includeComments":true,
+       "maxCommentsPerVideo":10,
+       "includeVideoDetail":true
+     },
+     "notes":"Pass concrete videoUrls from clockworks shortlist. Do NOT pass Vietnamese-diacritic keywords. Slideshow/edit: transcript may be empty → keep caption+comments."
+   },
+   "clockworks_comments":{
+     "actor":"clockworks/tiktok-comments-scraper",
+     "role":"pain_points",
+     "default_input":{
+       "postURLs":[],
+       "commentsPerPost":20,
+       "maxRepliesPerComment":0
+     },
+     "notes":"Run only on 1–5 shortlisted clip URLs to learn hook/pain phrases from captions' comment sections."
+   }
+ },
+ "daily_job":{
+   "steps":[
+     "Discover via clockworks_search (hashtags + ASCII searchQueries, DOWNLOAD_SUBTITLES).",
+     "Normalize dataset → research/trends/DATE/apify/clips.json (required fields).",
+     "Fetch VTT keys from run defaultDataset's paired KV store when subtitleLinks/transcriptionLink present; else caption fallback.",
+     "Shortlist 3–8 brand-safe clips; optionally enrich 1–3 via parseforge_urls; pull comments via clockworks_comments.",
+     "Merge into raw.json TikTok-native section + digest.md 'TikTok signals' table.",
+     "Commit research/trends paths only; push via Mac git-bundle (AGENTS.md Trend sync)."
+   ]
+ }
+}

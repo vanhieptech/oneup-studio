@@ -434,12 +434,28 @@
    "title": "Routine: @hi.oneup trend digest v4"
   },
   {
+   "id": "docs.plans.trend-routine-prompt-v5",
+   "type": "plan",
+   "status": "ready",
+   "updated": "2026-10-16",
+   "path": "docs/plans/trend-routine-prompt-v5.md",
+   "title": "Routine: @hi.oneup trend digest v5"
+  },
+  {
    "id": "prompt.content-bot",
    "type": "prompt",
    "status": "ready",
    "updated": "2026-10-15",
    "path": "docs/prompts/content-bot-prompt.md",
    "title": "Prompt bot nội dung OneUp (Hiệp gửi)"
+  },
+  {
+   "id": "prompt.hi-oneup-daily-trend-digest",
+   "type": "prompt",
+   "status": "ready",
+   "updated": "2026-10-16",
+   "path": "docs/prompts/hi-oneup-daily-trend-digest.md",
+   "title": "Routine: @hi.oneup trend digest v5"
   },
   {
    "id": "research.script-prompt-principles",
@@ -501,7 +517,7 @@
    "id": "lessons",
    "type": "log",
    "status": "ready",
-   "updated": "2026-10-13",
+   "updated": "2026-10-16",
    "path": "logs/lessons.md",
    "title": "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
   },
@@ -696,6 +712,14 @@
    "updated": "2026-10-15",
    "path": "research/trends/2026-10-15/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
+  },
+  {
+   "id": "trends-2026-10-16.apify-sample",
+   "type": "research-trends",
+   "status": "ready",
+   "updated": "2026-10-16",
+   "path": "research/trends/2026-10-16/apify/README.md",
+   "title": "Apify sample 2026-10-16"
   },
   {
    "id": "trends-ingest",
@@ -1777,7 +1801,7 @@
   },
   {
    "id": "rule-57",
-   "title": "Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053)",
+   "title": "Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053, L-037)",
    "path": "rules/video-rules.md"
   },
   {

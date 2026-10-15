@@ -66,7 +66,9 @@ tags: [index, retrieval]
 | docs.plans.trend-routine-prompt-v2 | plan | draft | `docs/plans/trend-routine-prompt-v2.md` | Routine: @hi.oneup trend digest v2 |
 | docs.plans.trend-routine-prompt-v3 | plan | draft | `docs/plans/trend-routine-prompt-v3.md` | Routine: @hi.oneup trend digest v3 |
 | docs.plans.trend-routine-prompt-v4 | plan | draft | `docs/plans/trend-routine-prompt-v4.md` | Routine: @hi.oneup trend digest v4 |
+| docs.plans.trend-routine-prompt-v5 | plan | ready | `docs/plans/trend-routine-prompt-v5.md` | Routine: @hi.oneup trend digest v5 |
 | prompt.content-bot | prompt | ready | `docs/prompts/content-bot-prompt.md` | Prompt bot nội dung OneUp (Hiệp gửi) |
+| prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
 | research.script-prompt-principles | research | Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7 | `docs/research/script-prompt-principles.md` | Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s |
 | research.scriptwriting-2026-10-15 | research | chờ Hiệp duyệt trước khi viết lại clip-02 | `docs/research/scriptwriting-research-2026-10-15.md` | Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup) |
 | per-video-pipeline | workflow | active | `docs/workflow/per-video-pipeline.md` | Quy trình một video, từ ý tưởng tới sẵn sàng đăng |
@@ -99,6 +101,7 @@ tags: [index, retrieval]
 | trends-2026-10-15.clip-02-v11 | research | ready | `research/trends/2026-10-15/clip-02-v11-trend-check.md` | Trend check cho clip-02 v11 (né việc mình mê) |
 | trends-2026-10-15 | trend-digest | draft-needs-review | `research/trends/2026-10-15/digest.md` | Trend digest 2026-10-15 |
 | trends-patterns | pattern-library | living | `research/trends/2026-10-15/patterns.md` | Hook & format pattern library (rule-47) |
+| trends-2026-10-16.apify-sample | research-trends | ready | `research/trends/2026-10-16/apify/README.md` | Apify sample 2026-10-16 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
@@ -271,7 +274,7 @@ tags: [index, retrieval]
 | rule-54 | Cover luôn render từ template A (DL-046, L-020) |
 | rule-55 | Hook 0–3s dồn dập, kịch tính, đậm cảm xúc (DL-051) |
 | rule-56 | Tương tác khéo, không xin (DL-052) |
-| rule-57 | Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053) |
+| rule-57 | Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053, L-037) |
 | rule-58 | Kịch bản là một câu chuyện liền mạch, chữ sắc và gọn (DL-059, L-022) |
 | rule-60 | Văn nói + mỗi cảnh xen hành động, cảm xúc, thoại (DL-061, L-024) |
 | rule-61 | Lời thoại không kể lại cái hình đã cho thấy, không độn chữ (DL-062, L-029) |

@@ -1,6 +1,6 @@
 ---
 name: Trend digest
-version: 3
+version: 4
 description: >-
   Daily (and Sunday weekly-synthesis) trend scan for a "how to live" short-form comic channel.
   Collect ANY hot trends + niche trends from free public sources, brand-safety filter, score
@@ -9,7 +9,7 @@ description: >-
   angle), bridge to a source-book lesson, grow a hook-pattern library, and emit validated
   scene-plan stubs for the top 1-2 ideas so trend -> script -> comic render is seamless.
 ---
-# Trend digest v3 (multi-source collector + learning loop)
+# Trend digest v4 (Apify TikTok-native + multi-source collector)
 
 ## Inputs (from the channel repo's AGENTS.md)
 - Source book index (@hi.oneup: HowToLiveBetter, "phần.mục" ids), `content/theme-map.md`, `content/idea-bank.md`, `content/story-bank.md`, `content/voice-profile.md`.
@@ -21,15 +21,22 @@ description: >-
 Config: `pipeline/trends/sources.yaml` (33 sources verified 2026-10-13). Collector: `pipeline/scripts/trend-collect.py` (stdlib + yt-dlp; parallel, 15 s timeout per source, per-source status, cross-source clustering, keyword safety pre-filter, heuristic heat/fit/bridgeability). Expect 400+ raw items/day.
 1. **Script sources** (run by the collector): Google Trends RSS VN+US (approx_traffic) · VnExpress (tin-noi-bat, tin-moi-nhat, so-hoa, giai-tri, doi-song) · Kenh14 (`/rss/home.rss`, `/star.rss`, `/doi-song.rss`) · Thanh Niên · Dân Trí · Genk (`/rss/home.rss`) · CafeBiz · Tinh tế · Tuổi Trẻ via Google News `site:tuoitre.vn` · Google News RSS (VN top, "trend TikTok", "gen Z", US productivity, US TikTok trend) · HN front page (Algolia, points) · Product Hunt · The Verge · Ars · Know Your Meme · Wikipedia top pageviews vi/en · Bluesky trending + top search · Spotify VN daily (kworb) · YouTube niche search (yt-dlp, view counts → saturation/pattern evidence only).
 2. **X (MCP only, the agent calls it, a script cannot):** `GetDynamicTools {namespace:"x"}` first, then `get_trends_by_woeid` (23424984 VN, 1 worldwide), `search_news` (2–4 niche queries, max_age_hours 72), optional `search_posts_all`. Save as a JSON list `research/trends/DATE/x-extra.json` with keys source (x-trends-vn / x-trends-ww / x-news), title, url, cat, lang, rank; pass with `--extra`. If the x namespace is missing or errors, retry discovery once, then record `x: unavailable (<exact error>)`. Budget: 30 reads/min, 1000/day.
-3. **Known blocked (do not retry daily):** TikTok Creative Center (SPA; `creative_radar_api` answers `40101 no permission` without browser-signed headers) → use Google News "trend TikTok", Kenh14, X News instead · reddit.com JSON/RSS (403 from the box IP; needs OAuth) · rsshub.app public (403) · Threads (login/JS). Retest monthly; to add a source, test it and append to sources.yaml.
+3. **Known blocked (do not retry daily):** TikTok Creative Center / `clockworks/tiktok-trends-scraper` (0 items) · lexis trending-hashtags (ads cookie) · lexis trending-videos without cookie · parseforge keyword+diacritics · reddit.com JSON/RSS (403) · rsshub.app (403) · Threads (login/JS). Use Apify primary actors in `pipeline/trends/apify.yaml` + Google News "trend TikTok", Kenh14, X News. Retest monthly.
 
-## TikTok-native signals (rule 57, DL-053)
-Collect these every day, ahead of the general sources:
-- Public TikTok search/tag pages for the channel keywords (VN first: trì hoãn, lười, dí deadline, học tập, thói quen). Take the top clips by views and comments, then record the URL, views, comments, date, the hook line and the comment phrases that repeat.
-- News/blog trend roundups about VN TikTok (e.g. 35express "TREND:" posts, kenh14, thethao247). Record the phrase, the format and the sound.
-- When TikTok blocks the box (client-rendered pages, yt-dlp fails), use YouTube Shorts/VN videos as a proxy with `yt-dlp --flat-playlist -j "ytsearch8:<kw>"`, then run `yt-dlp -j <url>` for the comment count. Mark these rows as proxy.
-- Never use TikTok Creative Center. Never log in. Never use cookies.
-Output section "TikTok signals" in the digest has a table: keyword · clip URL · views · comments · trend phrase/format/sound · brand-safe? · bridge idea. Rank by comments/views first and views second.
+## TikTok-native signals (rule 57, DL-053, L-037) — Apify primary (2026-10-16)
+Config: `pipeline/trends/apify.yaml`. Normalize: `pipeline/scripts/trend-apify-normalize.py`. Agent calls Apify via MCP `user-Apify` (free plan; keep daily spend tiny, never put tokens in repo).
+
+**Do NOT use** (failed 2026-10-15/16): `clockworks/tiktok-trends-scraper` (Creative Center → 0 items VN+US) · `lexis-solutions/tiktok-trending-hashtags-scraper` (needs ads.tiktok.com cookie) · lexis trending-videos without cookie (~4 brand ads) · `parseforge/tiktok-scraper` with Vietnamese-diacritic **keywords** ("no public video page").
+
+**Primary sources (in order):**
+1. **`clockworks/tiktok-scraper`** — `hashtags` + `searchQueries` (prefer ASCII / no-diacritic queries). Set `downloadSubtitlesOptions=DOWNLOAD_SUBTITLES` (VTT in run KV store; prefer this over paid `TRANSCRIBE_*`). `proxyCountryCode=VN` only when geo-blocked (add-on cost). Typical daily: `resultsPerPage` 5–10, `commentsPerPost=0` (comments via #3 on shortlist).
+2. **`parseforge/tiktok-scraper`** — **specific `videoUrls` only**; `includeTranscript=true` + `includeComments=true`. Slideshow/edit often lack transcript → fall back to caption + comments. Never diacritic keywords.
+3. **`clockworks/tiktok-comments-scraper`** — top comments / caption pain points for 1–5 shortlisted clip URLs.
+
+**Required fields per clip** (fail the day if shortlist rows miss these): `url`, `caption`, `author`, play/like/share/comment counts, `duration`, `music`, `hashtags`, `subtitle_or_transcript` (VTT text or caption fallback), `top_comments[]`. Save under `research/trends/DATE/apify/` (`raw-*.json`, `clips.json`, optional `vtt/`, `comments-*.json`).
+
+Also keep news/blog roundups (kenh14, GNews "trend TikTok") and YouTube Shorts proxy only when Apify returns nothing usable; mark proxy rows. Never Creative Center, never login cookies for discovery.
+Output digest section "TikTok signals": keyword · clip URL · views · comments · hook/transcript snippet · sound · brand-safe? · bridge idea. Rank by comments/views then views.
 
 ## Collect
 `python3 pipeline/scripts/trend-collect.py --date YYYY-MM-DD --out research/trends/YYYY-MM-DD --extra research/trends/YYYY-MM-DD/x-extra.json` → `collect.json`. Then build `raw.json` = collect items (+ any web-search finds) and **override scores by hand for the shortlist (15–25 items)**: heat_score, fit_score, bridgeability, saturation_signal, patterns, safety_reason. Items of kind `pattern-evidence` (YT niche) feed patterns/saturation, never the top list.
@@ -60,7 +67,7 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 
 ## Daily steps
 1. Read ingest.md, patterns.md, theme map (next 6–8 clips), idea bank, last digest.
-2. X via MCP → x-extra.json; run trend-collect.py. 3. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
+2. X via MCP → x-extra.json. 2b. Apify TikTok-native (see section above) → `research/trends/DATE/apify/clips.json`. 3. Run trend-collect.py. 4. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
 6. Bridges (top 5–8) with differentiation. 7. Ideas + plan stubs for top 1–2, validate.
 8. Write `digest.md`: front-matter, sources line, top trends (with rank_score/novelty/saturation), **Learning** (new patterns, saturated topics to avoid), **Bridges** table, **Differentiation**, **Plan stubs** (paths + validate result), **Script hooks** (3–5, mark approval needed), safety notes.
 9. Update ingest.md (rows, counts, Bridges with pattern+status) and idea-bank for new ideas.

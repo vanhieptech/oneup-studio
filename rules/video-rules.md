@@ -194,10 +194,10 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Cấm xin: "like đi", "follow nha", "nhớ like", "xin follow", "thả tim đi"…
     - check-rules: `rule-56` (chặn).
 
-57. **Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053):**
+57. **Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053, L-037):**
     - Lớp trend của mỗi clip lấy từ clip TikTok về cùng chủ đề, xếp theo view + comment (VN trước). Chép lại cả câu nói/format/sound/meme lặp lại trong comment.
-    - Thứ tự nguồn: trang tìm kiếm/tag TikTok công khai → báo/blog về trend TikTok VN → YouTube Shorts/video VN làm proxy (khi TikTok chặn). Không dùng TikTok Creative Center.
-    - Mỗi clip có `final/trend-signals.md`: URL clip, view, comment, ngày, dùng ở beat nào. Ghi rõ trend không dùng và lý do (brand-safe, bản quyền sound, lệch tone). Số liệu proxy phải ghi là proxy.
+    - Thứ tự nguồn: **Apify PRIMARY** (`pipeline/trends/apify.yaml`: clockworks/tiktok-scraper hashtags+ASCII search + DOWNLOAD_SUBTITLES → parseforge videoUrls → clockworks comments) → báo/blog trend TikTok VN → YouTube Shorts/video VN làm proxy. **Cấm:** Creative Center / clockworks trends-scraper / lexis hashtags (cookie) / lexis videos không cookie / parseforge keyword có dấu.
+    - Mỗi clip có `final/trend-signals.md`: URL clip, view, comment, ngày, dùng ở beat nào; ưu tiên có phụ đề/VTT hoặc caption + top comments. Ghi rõ trend không dùng và lý do. Số liệu proxy phải ghi là proxy.
     - check-rules: `rule-57` (cảnh báo nếu thiếu trend-signals.md hoặc không có dòng nào có số view).
 
 58. **Kịch bản là một câu chuyện liền mạch, chữ sắc và gọn (DL-059, L-022):**
