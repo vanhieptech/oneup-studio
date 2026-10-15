@@ -1,69 +1,86 @@
-import json
-D='/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/'
-def L(text,en,hlw,phr,emo="focused",sset=None):
-    ws=en.split(); hl=[]
-    for w in hlw:
-        idx=[i for i,x in enumerate(ws) if x.strip('.,:;!?“”"').lower()==w.strip('.,:;!?“”"').lower() and i not in hl]
-        assert idx,(w,en); hl.append(idx[0])
-    d={"speaker":"hiep","emotion":emo,"text":text,"en":en,"hl":hl,"phrases":[{"t":p} for p in phr]}
-    if sset: d["set"]={"hiep":sset}
+"""clip-02 v14 spec generator (meme 'bản chất' stem, Thầy + Hiệp-né). Lines/voice keys from v14 voice batch.
+Loads the existing spec (keeps cover/meta), replaces parts/hook/engagement, appends a revision."""
+import json, re, sys
+D = '/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/'
+# key, role, display text, spoken(say), en, hl words
+RAW=[
+("b01","thay","Thì cái **bản chất** của cái việc mở laptop rồi lướt TikTok… là gì?","Thì cái bản chất của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?","So what's the essence of opening your laptop… then scrolling TikTok?",["essence"]),
+("b02","ne","Ờ… coi clip **xíu thôi** đã chứ, bạn ơi!","Ờ... coi clíp xíu thôi đã chứ, bạn ơi!","Uh… just a few clips first, buddy!",["few"]),
+("b03","thay","Thứ nhất là các bạn phải **lướt** liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.","Thứ nhất là các bạn phải lướt liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.","First: scroll nonstop in bed, thumb running like a sewing machine, over and over.",["scroll","sewing"]),
+("b04","ne","Clip nữa thôi… **clip nữa thôi**…","Clíp nữa thôi... clíp nữa thôi...","One more clip… just one more…",["more"]),
+("b05","thay","Thứ hai là khi nào xuất hiện cái **cảm giác khó chịu** khi mở file để làm việc… thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi review đồ ăn.","Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì chúng ta phải đổi sang việc khác liền: dọn bàn, coi ri viu đồ ăn.","Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast: tidy the desk, watch food reviews.",["uncomfortable","switch"]),
+("b06a","thay","Và cuối cùng là các bạn phải tự **chửi** bản thân mình cho đã — rồi mai lại né.","Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã, rồi mai lại né.","And finally: curse yourself out properly, then dodge again tomorrow.",["curse","tomorrow."]),
+("b06b","ne","Đồ lười! Thôi **để mai**…","Đồ lười! Thôi để mai...","Lazy bum! Eh… tomorrow then…",["tomorrow"]),
+("b07","thay","Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả — việc càng khó chịu, càng bị dời. Mình đang né **cái cảm giác khó chịu**, không phải vì lười.","Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, việc càng khó chịu, càng bị dời. Mình đang né cái cảm giác khó chịu, không phải vì lười.","Sound familiar? But scientists say: Steel pooled 691 results. The nastier the task, the more it gets delayed. You're dodging the bad feeling, not being lazy.",["familiar?","691","dodging"]),
+("b08","thay","Càng chửi, mai càng **ngán** hơn.","Càng chửi, mai càng ngán hơn.","The more you scold, the more you dread tomorrow.",["dread"]),
+("b09a","thay","Thu nhỏ giây đầu: sửa đúng **một dòng** thôi.","Thu nhỏ giây đầu: sửa đúng một dòng thôi.","Shrink the first second: fix just one line.",["one","line."]),
+("b09b","ne","À… hết **đường né** luôn á.","À... hết đường né luôn á.","Oh… no way to dodge now.",["dodge"]),
+("b10","ne","Việc bạn đang né là gì? **Comment** một chữ nha!","Việc bạn đang né là gì? Com men một chữ nha!","What are you dodging? Comment one word!",["dodging?","one"]),
+]
+
+LN = {k: (r, t, s, en, hw) for k, r, t, s, en, hw in RAW}
+def line(k, emo):
+    r, t, s, en, hw = LN[k]; ws = en.split(); hl = []
+    for w in hw:
+        i = [j for j, x in enumerate(ws) if x.lower() == w.lower() and j not in hl]; assert i, (w, en); hl.append(i[0])
+    return {"speaker": "hiep", "emotion": emo, "text": t, "say": s, "en": en, "hl": hl,
+            "phrases": [{"t": p.strip(), "en": en} for p in [s]], "voice_file": f"voice/v14-{k}.wav",
+            "voice_role": "Thầy" if r == "thay" else "Hiệp-né"}
+def C(x, facing, pose, act, ex): return {"id": "hiep", "x": x, "facing": facing, "pose": pose, "action": act, "expression": ex}
+def SC(id, part, bg, tr, cast, lines, fx, sfx, props, narr=None, push=0.06):
+    d = {"id": id, "beat": f"clip-02.{id}", "part": part, "role": lines[0]["voice_role"], "background": bg, "framing": "medium", "push": push,
+         "transition": tr, "cast": [cast], "fx": {"visual": fx[0], "word": fx[1]}, "sfx": sfx, "props": props, "lines": lines}
+    if narr: d["narration"] = narr
     return d
-def SC(id,beat,part,bg,tr,cast,lines,fx,sfx,framing="medium",push=0.04,narr=None,props=None):
-    d={"id":id,"beat":f"clip-02.{beat}","part":part,"background":bg,"framing":framing,"push":push,"transition":tr,"cast":[cast],"lines":lines,"fx":{"visual":fx[0],"word":fx[1]},"sfx":sfx}
-    if narr: d["narration"]=narr
-    if props: d["props"]=props
-    return d
-def SE(id,beat,motion,lines,hits,fx):
-    return {"id":id,"beat":f"clip-02.{beat}","part":"explain","motion":motion,"lines":lines,"hits":[{"id":a,"f":b,"sfx":c,"word":w} for a,b,c,w in hits],"fx":{"visual":fx[0],"word":fx[1]}}
-H=lambda x,pose="sitting",act="typing",ex="focused":{"id":"hiep","x":x,"facing":"right","pose":pose,"action":act,"expression":ex}
-A=[SC("b01","b01","hook","desk","cut",H(0.74,act="idle",ex="sad"),[L("POV: tính năng Omi.","POV: the Omi feature.",["Omi."],["POV: tính năng Omi."],"sad")],
-      ("Hook cut 1 (format POV): push mạnh vào laptop 'Omi feature · 0 dòng code', chữ hook to ngay frame 0; dấu đỏ DỜI đóng xuống","Omi"),[{"name":"stamp","atLine":0,"offset":0.0,"word":"Omi"}],framing="medium",push=0.16,narr="POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.",
-      props=[{"kind":"laptop","x":330,"y":1330,"s":0.8,"text":"Omi feature","sub":"0 dòng code","stamp":"DỜI","at":0.0}]),
-   SC("b01b","b01","hook","desk","cut",H(0.86,act="idle",ex="confused"),[L("Hôm nay dời. Mai lại dời.","Pushed today. Pushed again tomorrow.",["again"],["Hôm nay dời.","Mai lại dời."],"sad")],
-      ("Hook cut 2: lịch DEADLINE xé 2 tờ HÔM NAY → MAI → MAI NỮA theo từng chữ 'dời', camera giật nhẹ mỗi nhịp","dời"),[{"name":"click","atLine":0,"offset":0.0,"word":"Hôm nay dời"},{"name":"stamp","atLine":0,"offset":0.8,"word":"lại dời"}],framing="medium",push=0.12,
-      props=[{"kind":"calendar","x":360,"y":1010,"s":0.8,"rot":-4,"pages":["HÔM NAY","MAI","MAI NỮA"],"tearAt":[0.0,0.8]}]),
-   SC("b01c","b01","hook","desk","cut",H(0.5,act="idle",ex="sad"),[L("Thành dự án ma luôn.","Now it's a ghost project.",["ghost"],["Thành dự án ma luôn."],"sad")],
-      ("Hook cut 3 (meme 'dự án ma'): mặt Hiệp méo xệch, nền tối dần (vignette), chữ DỰ ÁN MA đập xuống rung","dự án ma"),[{"name":"stamp","atLine":0,"offset":0.25,"word":"dự án ma"}],framing="medium",push=0.12,
-      props=[{"kind":"vignette","at":0.0,"dark":0.6},{"kind":"words","x":540,"y":300,"s":1.3,"words":["DỰ ÁN MA"],"dropAt":[0.25]}]),
-   SC("b02","b02","struggle","desk","cut",H(0.42,act="typing",ex="sad"),[L("Thế là mở code, năm giây sau lướt TikTok.","So I open the code… five seconds later: TikTok.",["TikTok."],["Thế là mở code,","năm giây sau lướt TikTok."],"sad",{"action":"idle","expression":"sad"}),
-       L("Rồi chán nản, tội lỗi, tự xỉ vả: lười quá.","Then drained, guilty, beating myself up: “so lazy.”",["guilty,","lazy."],["Rồi chán nản, tội lỗi,","tự xỉ vả: {ừm} lười quá."],"sad")],
-      ("Comic: tay rời bàn phím chộp điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi đè lên đầu (squash)","tội lỗi"),[{"name":"pop","atLine":0,"offset":1.5,"word":"TikTok"},{"name":"stamp","atLine":1,"offset":2.1,"word":"lười"}],
-      props=[{"kind":"laptop","x":300,"y":1330,"s":0.62,"text":"Omi feature","sub":"đang mở…"},{"kind":"phone","x":800,"y":1120,"s":0.95,"rot":8,"at":1.3,"text":"TikTok"},
-             {"kind":"cloud","x":360,"y":300,"s":0.7,"at":2.0,"words":["CHÁN NẢN","TỘI LỖI","LƯỜI"],"dropAt":[2.25,2.8,4.1]}]),
-   SC("b03","b03","turn","paper","iris",H(0.5,pose="standing",act="thinking",ex="surprised"),[L("Nhưng thứ mình né đâu phải code, mà là cảm giác khó chịu.","But what I'm dodging isn't the code. It's the bad feeling.",["dodging","feeling."],["Nhưng thứ mình né đâu phải code,","mà là cảm giác khó chịu."],"focused",{"action":"reacting"})],
-      ("Comic: iris mở sang giấy trắng, chữ 'CODE' bị bút gạch, mũi tên bật sang đám mây nhỏ 'KHÓ CHỊU'; Hiệp ngẩng lên nhận ra","cảm giác khó chịu"),[{"name":"pen","atLine":0,"offset":1.2,"word":"đâu phải code"}],
-      props=[{"kind":"sign","x":300,"y":930,"s":0.72,"rot":-5,"text":"KHÓ CHỊU","at":1.6}])]
-E=[SE("e01","b04","label-reveal",[L("Tức là trì hoãn: né chán ngán, sợ hỏng, hay rối. Nghe quen không?","So procrastination = dodging boredom, fear of messing up, or confusion. Sound familiar?",["dodging","familiar?"],["Tức là trì hoãn:","né chán ngán, sợ hỏng, hay rối.","Nghe quen không?"])],
-      [("shield",0.25,"pop","né"),("faces",0.6,"tick","chán ngán")],("Thẻ 'Omi feature' mọc 3 'gai' cảm xúc Chán ngán / Sợ hỏng / Rối; mũi tên né cong vòng qua thẻ","né")),
-   SE("e02","b05","count-up",[L("Bằng chứng: gộp sáu trăm chín mươi mốt hệ số tương quan, việc càng khó chịu, càng thấy mình kém, càng dễ hoãn.","Proof: 691 pooled correlations. The nastier the task and the lower your confidence, the more you delay.",["691","nastier","confidence,"],["Bằng chứng:","gộp sáu trăm chín mươi mốt hệ số tương quan,","việc càng khó chịu,","càng thấy mình kém,","càng dễ hoãn."])],
-      [("count",0.12,"rise","sáu trăm chín mươi mốt"),("bars",0.8,"ding","càng dễ hoãn")],("Số 691 đếm lên; 2 thanh 'Task feels bad' và 'I can't do it' cùng dâng, kim 'Delay' vọt lên theo","sáu trăm chín mươi mốt")),
-   SE("e03","b06","scale-tip",[L("Vì phần thưởng tận cuối tháng, còn khó chịu ập tới ngay, nên tay chộp TikTok.","The reward is weeks away, the discomfort hits now, so your hand grabs TikTok.",["weeks","now,","grabs"],["Vì phần thưởng tận cuối tháng,","còn khó chịu ập tới ngay,","nên tay chộp TikTok."])],
-      [("tip",0.55,"snap","ập tới ngay"),("win",0.9,"ding","chộp TikTok")],("Cái cân: phần thưởng teo nhỏ trôi về mốc 'cuối tháng', cục 'khó chịu' rơi bịch xuống đĩa bên kia; bàn tay chộp điện thoại","ập tới")),
-   SE("e04","b07","question-card",[L("Vậy trước khi gõ, hỏi: việc này khó chịu chỗ nào?","So before you start, ask: what exactly feels bad here?",["ask:","bad"],["Vậy trước khi gõ, hỏi:","việc này khó chịu chỗ nào?"])],
-      [("q",0.55,"pop","khó chịu chỗ nào")],("Thẻ câu hỏi lớn '?' lật ra (card-flip), kính lúp soi vào thẻ 'Omi feature' tìm chỗ gai","hỏi")),
-   SE("e05","b08","match-fix",[L("Nếu rối, viết ba gạch đầu dòng.","Lost? Write 3 bullets.",["3","bullets."],["Nếu rối, viết ba gạch đầu dòng."]),L("Sợ hỏng, cho phép nháp xấu.","Afraid of messing up? Allow an ugly draft.",["ugly"],["Sợ hỏng, cho phép nháp xấu."])],
-      [("bullets",0.3,"pen","ba gạch đầu dòng"),("draft",0.85,"stamp","nháp xấu")],("Mỗi gai được 'gỡ' bằng một miếng vá: 3 gạch đầu dòng tự viết ra; con dấu 'DRAFT · OK' đóng lên tờ giấy nguệch ngoạc","gạch đầu dòng")),
-   SE("e06","b09","timer",[L("Còn chán, hẹn mười phút rồi được dừng.","Bored? Set 10 minutes, then you may stop.",["10","stop."],["Còn chán, hẹn mười phút rồi được dừng."])],
-      [("timer",0.35,"tick","mười phút"),("ring",0.85,"ding","được dừng")],("Đồng hồ hẹn giờ 10:00 quay ngược, vòng tiến độ chạy; chuông reo, biển 'STOP OK' bật lên","mười phút")),
-   SE("e07","b10","mistake-stamp",[L("Ngược lại, mắng mình rồi gồng chỉ làm việc nặng nề hơn.","The trap: scolding yourself and forcing it only makes the task heavier.",["scolding","heavier."],["Ngược lại,","mắng mình rồi gồng","chỉ làm việc nặng nề hơn."])],
-      [("stamp",0.35,"stamp","mắng mình"),("worse",0.85,"rise","nặng nề")],("Bong bóng 'Lười quá!' bị dấu đỏ '✕ NOT HELPING' đè lên; thẻ 'Omi feature' trĩu xuống, gai dài thêm","mắng mình"))]
-B=[SC("b11","b11","payoff","paper","cut",H(0.66,pose="standing",act="talking",ex="focused"),[L("Lưu ý: nghiên cứu tương quan thôi. Lưu lại, lần sau hoãn thì mở.","Note: correlational only. Save this for the next time you stall.",["correlational","Save"],["Lưu ý: nghiên cứu tương quan thôi.","Lưu lại, lần sau hoãn thì mở."])],
-      ("Comic: Hiệp giơ ngón tay, biển 'CHỈ LÀ TƯƠNG QUAN'; icon bookmark nảy lên ở chữ 'lưu lại'","tương quan"),[{"name":"tick","atLine":0,"offset":0.9,"word":"tương quan"},{"name":"pop","atLine":0,"offset":2.4,"word":"Lưu lại"}],
-      props=[{"kind":"sign","x":400,"y":930,"s":0.72,"rot":-5,"text":"CHỈ LÀ TƯƠNG QUAN","at":0.9}]),
-   SC("b12","b12","cta","grid","slide",H(0.5,pose="standing",act="talking",ex="happy"),[L("Còn bạn, việc đang hoãn khó chịu chỗ nào? Comment một chữ.","And you? What feels bad about the task you're avoiding? One word in the comments.",["bad","One"],["Còn bạn, việc đang hoãn","khó chịu chỗ nào?","Comment một chữ."],"happy"),
-      L("Phần mình, mở Omi ra hỏi liền.","Me? Opening Omi and asking right now.",["Omi"],["Phần mình,","mở Omi ra hỏi liền."],"happy",{"action":"reacting"})],
-      ("Comic: slide sang lưới, Hiệp chỉ vào người xem; câu cuối quay lại laptop 'Omi feature' như hook (loop), Hiệp mở laptop","Omi"),[{"name":"ding","atLine":1,"offset":0.1,"word":"hỏi liền"}],
-      props=[{"kind":"laptop","x":300,"y":1330,"s":0.62,"text":"Omi feature","sub":"bắt đầu…"}])]
-s={"id":"clip-02-final","clip":"clip-02","title":"Trì hoãn = né cảm giác khó chịu, không phải lười (Steel 2007)","week":1,"theme":"dark","pillar":"1 Làm ít, xong nhiều",
- "length_exception":"DL-058: Hiệp 14/10 17:54 chỉ cắt e06 nếu > 62s (cho phép ≤ 62s)","story":"S-02 Omi feature (Hiệp xác nhận 14/10, DL-047)","trend":"POV (TikTok #1 format tuần 5–11/10, top 36,1M, postdom) + meme ‘dự án ma’ (YT 23k); bỏ góc ‘không phải lười’ (bão hòa, digest 14–15/10)",
- "revisions":[{"date":"2026-10-15","dl":"DL-059","note":"rewrite: one continuous story with connectors, precise vocabulary, POV hook"},{"date":"2026-10-14","dl":"DL-044","note":"gate-1 draft: info-complete script + rule-52 effects table + template-A cover (rule 54)"}],
- "transition_sfx":{"part":"whoosh-soft","scene":"swish"},
- "cover":{"direction":"a","theme":"dark","series":"Làm ít, xong nhiều","ep":2,"hero":["LƯỜI?","ĐANG NÉ!"],"accent":1,"strike":0,"expression":"sad","action":"reacting","emote":"!","tilt":-5},
- "cover_options":[{"hero":["LƯỜI?","ĐANG NÉ!"],"picked":True},{"hero":["HOÃN MÃI","VÌ SỢ"]},{"hero":["TỰ MẮNG","VÔ ÍCH"]}],
- "hook":{"text":"POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.","scenes":["b01","b01b","b01c"],"format":"POV + meme dự án ma (DL-059)"},
- "engagement":[{"type":"relatable-question","beat":"e01","text":"Nghe quen không?"},{"type":"save-prompt","beat":"b11","text":"Lưu lại, lần sau hoãn thì mở."},{"type":"comment-challenge","beat":"b12","text":"Comment một chữ."},{"type":"loop","beat":"b12","text":"mở Omi ra","hook_word":"Omi"}],
- "parts":[{"id":"A","engine":"remotion","transitionOut":"slideleft","scenes":A},{"id":"E","engine":"hyperframes","dir":"explainer","transitionOut":"circleopen","sections":E},{"id":"B","engine":"remotion","scenes":B}]}
-json.dump(s,open(D+'spec.json','w'),ensure_ascii=False,indent=2)
-import re
-n=sum(len(re.sub(r"\{[^}]*\}|\*","",l["text"]).split()) for p in s["parts"] for x in p.get("scenes",p.get("sections",[])) for l in x["lines"])
-print("VI words",n)
+S = lambda n, li, off, w: {"name": n, "atLine": li, "offset": off, "word": w}
+A = [
+ SC("b01", "hook", "grid", "cut", C(0.72, "left", "standing", "talking", "focused"), [line("b01", "focused")],
+    ("Smash: chữ BẢN CHẤT đập giữa khung, Thầy gõ thước; điện thoại TikTok bật lên", "bản chất"),
+    [S("stamp", 0, 0.0, "bản chất"), S("pop", 0, 2.2, "TikTok")],
+    [{"kind": "words", "x": 540, "y": 330, "s": 1.25, "words": ["BẢN CHẤT LÀ GÌ?"], "dropAt": [0.0]}, {"kind": "phone", "x": 300, "y": 1250, "s": 0.75, "at": 1.6, "text": "TikTok"}],
+    narr="BẢN CHẤT LÀ GÌ?", push=0.14),
+ SC("b02", "hook", "bed", "cut", C(0.5, "right", "sitting", "idle", "happy"), [line("b02", "happy")],
+    ("Hiệp-né thò đầu ôm điện thoại, mắt lim dim; chữ XÍU THÔI? nảy", "xíu thôi"),
+    [S("pop", 0, 0.6, "xíu thôi")], [{"kind": "phone", "x": 860, "y": 1250, "s": 0.7, "rot": 8, "at": 0.0, "text": "TikTok"}, {"kind": "words", "x": 540, "y": 330, "s": 1.0, "words": ["XÍU THÔI?"], "dropAt": [0.5]}]),
+ SC("b03", "struggle", "bed", "cut", C(0.7, "left", "standing", "talking", "focused"), [line("b03", "focused")],
+    ("Thầy chỉ thước vào điện thoại trên gối; ngón cái lặp như máy may", "lướt"),
+    [S("tick", 0, 1.0, "lướt"), S("tick", 0, 3.4, "máy may")],
+    [{"kind": "phone", "x": 300, "y": 1250, "s": 0.8, "at": 0.3, "text": "TikTok"}, {"kind": "sign", "x": 330, "y": 420, "s": 0.7, "rot": -3, "text": "THỨ NHẤT · LƯỚT LẶP", "at": 0.0}]),
+ SC("b04", "struggle", "bed", "cut", C(0.5, "right", "sitting", "idle", "neutral"), [line("b04", "neutral")],
+    ("Close-up ngón cái quẹt lia; mặt Hiệp-né đờ ra", "clip nữa thôi"),
+    [S("swish", 0, 0.1, "Clip nữa thôi"), S("swish", 0, 1.3, "clip nữa thôi")],
+    [{"kind": "phone", "x": 860, "y": 1250, "s": 0.8, "at": 0.0, "text": "TikTok"}, {"kind": "words", "x": 540, "y": 330, "s": 1.0, "words": ["CLIP NỮA THÔI"], "dropAt": [0.2]}]),
+ SC("b05", "struggle", "desk", "slide", C(0.72, "left", "standing", "talking", "confused"), [line("b05", "confused")],
+    ("File mở ra → sóng đỏ cảm giác khó chịu; Thầy chỉ sang chổi + app review đồ ăn", "cảm giác khó chịu"),
+    [S("snap", 0, 1.8, "cảm giác khó chịu"), S("swish", 0, 5.0, "đổi sang việc khác")],
+    [{"kind": "laptop", "x": 290, "y": 1330, "s": 0.7, "text": "oneup.swift", "sub": "KHÓ CHỊU", "at": 0.0}, {"kind": "sign", "x": 330, "y": 420, "s": 0.7, "rot": 3, "text": "THỨ HAI · ĐỔI VIỆC", "at": 4.8}]),
+ SC("b06", "struggle", "bed", "cut", C(0.5, "right", "sitting", "idle", "despair"), [line("b06a", "focused"), line("b06b", "sad")],
+    ("Chữ LƯỜI rơi đè Hiệp-né (rung); lịch xé sang MAI", "chửi"),
+    [S("stamp", 0, 1.6, "chửi"), S("stamp", 1, 0.0, "Đồ lười")],
+    [{"kind": "vignette", "at": 0.0, "dark": 0.5}, {"kind": "cloud", "x": 540, "y": 270, "s": 0.65, "at": 0.0, "words": ["LƯỜI!"], "dropAt": [1.6]},
+     {"kind": "calendar", "x": 800, "y": 520, "s": 0.6, "pages": ["HÔM NAY", "MAI"], "tearAt": [3.2]}]),
+ SC("b07", "evidence", "paper", "iris", C(0.7, "left", "standing", "talking", "surprised"), [line("b07", "focused")],
+    ("Thầy tháo kính; bảng STEEL 2007 · 691 KẾT QUẢ; rồi bảng NÉ KHÓ CHỊU ≠ LƯỜI", "691"),
+    [S("ding", 0, 3.0, "691"), S("stamp", 0, 8.0, "cảm giác khó chịu")],
+    [{"kind": "sign", "x": 300, "y": 1150, "s": 0.6, "rot": -3, "text": "STEEL 2007 · 691 KẾT QUẢ", "at": 2.8}, {"kind": "sign", "x": 300, "y": 1330, "s": 0.6, "rot": 2, "text": "NÉ KHÓ CHỊU ≠ LƯỜI", "at": 7.8}]),
+ SC("b08", "payoff", "desk", "cut", C(0.6, "left", "standing", "talking", "sad"), [line("b08", "sad")],
+    ("Bong bóng chửi mình bị gạch đỏ; lịch MAI xám đi", "ngán"),
+    [S("stamp", 0, 1.2, "ngán")], [{"kind": "sign", "x": 330, "y": 420, "s": 0.7, "rot": -4, "text": "CHỬI → MAI NGÁN", "at": 0.8}]),
+ SC("b09", "payoff", "desk", "slide", C(0.66, "left", "sitting", "typing", "happy"), [line("b09a", "focused"), line("b09b", "surprised")],
+    ("Một dòng code sáng lên, dấu ✓ đóng xuống; Hiệp-né ngồi dậy", "một dòng"),
+    [S("pop", 0, 1.8, "một dòng"), S("stamp", 1, 0.4, "đường né")],
+    [{"kind": "laptop", "x": 280, "y": 1330, "s": 0.6, "text": "oneup.swift", "sub": "dòng 1 ✓", "at": 0.0}, {"kind": "sign", "x": 330, "y": 420, "s": 0.7, "rot": 3, "text": "1 DÒNG · HẾT ĐƯỜNG NÉ", "at": 1.6}]),
+ SC("b10", "cta", "grid", "cut", C(0.5, "right", "standing", "talking", "happy"), [line("b10", "happy")],
+    ("Hiệp-né quay thẳng camera; chữ BẠN ĐANG NÉ GÌ? (loop về hook 'né')", "Comment"),
+    [S("pop", 0, 1.6, "Comment")], [{"kind": "vignette", "at": 0.0, "dark": 0.5}, {"kind": "words", "x": 540, "y": 360, "s": 1.1, "words": ["COMMENT 1 CHỮ"], "dropAt": [1.5]}]),
+]
+s = json.load(open(D + 'spec.json'))
+s.update({"title": "Bản chất của việc mở laptop rồi lướt TikTok: né cảm giác khó chịu (Steel 2007)",
+  "hook": {"text": "BẢN CHẤT LÀ GÌ?", "scenes": ["b01", "b02"], "format": "meme 'Thì cái bản chất của cái việc… là gì?' + chen ngang (v14)"},
+  "engagement": [{"type": "relatable-question", "beat": "b07", "text": "Nghe quen hông?"}, {"type": "comment-challenge", "beat": "b10", "text": "Comment một chữ nha!"},
+                 {"type": "loop", "beat": "b10", "text": "né", "hook_word": "bản chất"}],
+  "voices": {"Thầy": "F5 · Thái Sơn speed 0.9", "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone", "Omi": "không nói (đèn)"},
+  "parts": [{"id": "A", "engine": "remotion", "scenes": A}]})
+s["revisions"].append({"v": 14, "date": "2026-10-15", "note": "v14 script Hiệp duyệt (t151): stem bản chất/Thứ nhất/Thứ hai/Và cuối cùng, cảm giác khó chịu, wording fixes; pre-voiced F5 STT-picked"})
+json.dump(s, open(D + 'spec.json', 'w'), ensure_ascii=False, indent=2)
+n = sum(len(re.sub(r"\{[^}]*\}|\*", "", l["text"]).split()) for sc in A for l in sc["lines"]); print("VI words", n)
