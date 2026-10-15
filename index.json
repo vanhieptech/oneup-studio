@@ -196,6 +196,30 @@
   {
    "id": "clip-02.script-final",
    "type": "script",
+   "status": "superseded",
+   "updated": "2026-10-15",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v14.md",
+   "title": "Clip 02 v14: Bản chất của việc mở laptop rồi lướt TikTok"
+  },
+  {
+   "id": "clip-02.script-final",
+   "type": "script",
+   "status": "superseded",
+   "updated": "2026-10-16",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v15.md",
+   "title": "Clip 02 v15: Bản chất của việc mở laptop rồi lướt TikTok"
+  },
+  {
+   "id": "clip-02.script-final",
+   "type": "script",
+   "status": "superseded",
+   "updated": "2026-10-16",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v16.md",
+   "title": "Clip 02 v16: Trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng"
+  },
+  {
+   "id": "clip-02.script-final",
+   "type": "script",
    "status": "kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng",
    "updated": "2026-10-15",
    "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v7.md",
@@ -229,9 +253,9 @@
    "id": "clip-02.script-final",
    "type": "script",
    "status": "draft",
-   "updated": "2026-10-15",
+   "updated": "2026-10-16",
    "path": "content/clips/clip-02-procrastination-discomfort/final/script-final.md",
-   "title": "Clip 02 v14: Bản chất của việc mở laptop rồi lướt TikTok"
+   "title": "Clip 02 v17: Trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng"
   },
   {
    "id": "clip-02.trend-signals",
@@ -632,6 +656,14 @@
    "updated": "2026-10-14",
    "path": "research/trends/2026-10-14/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
+  },
+  {
+   "id": "research.trends.2026-10-15.audio.delivery-analysis",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-16",
+   "path": "research/trends/2026-10-15/audio/delivery-analysis.md",
+   "title": "Delivery analysis (L-036)"
   },
   {
    "id": "research.trends.2026-10-15.audio.notes",

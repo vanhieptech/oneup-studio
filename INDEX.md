@@ -36,11 +36,14 @@ tags: [index, retrieval]
 | clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/archive/script-v11.md` | Clip 02 v11: Mê OneUp vậy mà né?! |
 | clip-02.script-v12 | script | archived | `content/clips/clip-02-procrastination-discomfort/archive/script-v12.md` | Clip 02 v12: Mê OneUp nhất đời… tôi né! (archived) |
 | clip-02.script-v13 | script | archived | `content/clips/clip-02-procrastination-discomfort/archive/script-v13.md` | Clip 02 v13: Bản chất của việc mở OneUp rồi… lướt review đồ ăn |
+| clip-02.script-final | script | superseded | `content/clips/clip-02-procrastination-discomfort/archive/script-v14.md` | Clip 02 v14: Bản chất của việc mở laptop rồi lướt TikTok |
+| clip-02.script-final | script | superseded | `content/clips/clip-02-procrastination-discomfort/archive/script-v15.md` | Clip 02 v15: Bản chất của việc mở laptop rồi lướt TikTok |
+| clip-02.script-final | script | superseded | `content/clips/clip-02-procrastination-discomfort/archive/script-v16.md` | Clip 02 v16: Trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng |
 | clip-02.script-final | script | kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng | `content/clips/clip-02-procrastination-discomfort/archive/script-v7.md` | Clip 02 · GATE 1: "Mình lười quá" → trì hoãn là né cảm giác khó chịu |
 | content.clips.clip-02-procrastination-discomfort.archive.script-v8-meme | script | draft | `content/clips/clip-02-procrastination-discomfort/archive/script-v8-meme.md` | Clip 02 — biến thể meme "bản chất" v8 (Hiệp duyệt 2026-10-15) |
 | content.clips.clip-02-procrastination-discomfort.final.post-checklist | doc | ready | `content/clips/clip-02-procrastination-discomfort/final/post-checklist.md` | Checklist đăng clip 02 (đánh dấu khi xong) |
 | clip-02.post | post-package | NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build) | `content/clips/clip-02-procrastination-discomfort/final/post.md` | Gói đăng TikTok: clip 02 "Lười? Không, đang né" |
-| clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 v14: Bản chất của việc mở laptop rồi lướt TikTok |
+| clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 v17: Trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng |
 | clip-02.trend-signals | research | ready | `content/clips/clip-02-procrastination-discomfort/final/trend-signals.md` | Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
@@ -91,6 +94,7 @@ tags: [index, retrieval]
 | trends-patterns | pattern-library | living | `research/trends/2026-10-13/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-2026-10-14 | trend-digest | draft-needs-review | `research/trends/2026-10-14/digest.md` | Trend digest 2026-10-14 |
 | trends-patterns | pattern-library | living | `research/trends/2026-10-14/patterns.md` | Hook & format pattern library (rule-47) |
+| research.trends.2026-10-15.audio.delivery-analysis | research | draft | `research/trends/2026-10-15/audio/delivery-analysis.md` | Delivery analysis (L-036) |
 | research.trends.2026-10-15.audio.notes | research | draft | `research/trends/2026-10-15/audio/notes.md` | Trend audio "Bản chất của …" (Hiệp gửi 15/10, 40,15s) |
 | trends-2026-10-15.clip-02-v11 | research | ready | `research/trends/2026-10-15/clip-02-v11-trend-check.md` | Trend check cho clip-02 v11 (né việc mình mê) |
 | trends-2026-10-15 | trend-digest | draft-needs-review | `research/trends/2026-10-15/digest.md` | Trend digest 2026-10-15 |
