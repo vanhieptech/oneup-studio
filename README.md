@@ -14,26 +14,30 @@ Nguồn chuẩn về cấu trúc: **`docs/conventions/storage.md`** (luật 65, 
 
 ## Cấu trúc repo
 ```
-AGENTS.md  INDEX.md(sinh)  README.md  index.json(sinh)
+AGENTS.md  GUIDE.md(con trỏ)  INDEX.md(sinh)  README.md  index.json(sinh)
 assets/            thư viện chung: sfx/ (CC0 + SOURCES.md), voice-refs/ (giọng mẫu F5)
 brand/             font (fonts/), logo (logos/), màu + token, Omi, app icon, preview, MASTER.md
 content/
   clips/<clip>/    clip ĐANG LÀM (được thiếu gói đăng)
   archive/<clip>/  clip ĐÃ DUYỆT (đủ gói đăng + final/approved.json)
   samples/         clip mẫu; samples/lab/ = thí nghiệm giọng, spike, audition
+  published/       log clip đã ĐĂNG (ngày, link, số liệu)
   theme-map.md idea-bank.md story-bank.md voice-profile.md
-docs/              conventions/storage.md (cấu trúc), workflow/per-video-pipeline.md (quy trình), research/, plans/
+docs/              conventions/storage.md (cấu trúc), workflow/per-video-pipeline.md (quy trình), prompts/ (prompt Hiệp gửi), research/, plans/
 logs/              lessons.md, decision-log.md, effects-log.md, runs/
 media/             (gitignored) clips/<clip>/ video full + 720p, samples/, footage/inbox/ · MANIFEST.json (commit)
 pipeline/          paths.py, scripts/ (build-final, check-rules, check-assets, sync-shared, media-sync…), tts/
-research/          trends/<ngày>/, motion, production research
+research/          trends/<ngày>/, references/ (creator/hook/format), motion, production research
 resources/         vn-dict/, vn-spoken/, refs/ (clone ngoài, gitignored)
 rules/             video-rules.md (luật hiện hành)
 skills/            mirror của skill (bản chạy: /home/box/agent-data/workflows/)
-templates/         hyperframes-base (scaffold), post-package.md
+templates/         hyperframes-base (scaffold), post-package.md, script.md (mẫu kịch bản)
 tests/             test
 video-engine/      Remotion: src/characters (rig, profile, biểu cảm), src/composition (props, layout, motion), public/voice (voice take, commit)
 ```
+
+## Ánh xạ prompt bot nội dung
+Prompt `docs/prompts/content-bot-prompt.md` có "cấu trúc mặc định" (scripts/, prompts/, published/…). Repo đã có guide nên giữ cấu trúc trên; bảng ánh xạ ở `docs/conventions/storage.md`. Front-matter bắt buộc: `title, date, type, tags, status, source`. Commit: `<loại>: <mô tả>`.
 
 ## Layout một clip
 ```

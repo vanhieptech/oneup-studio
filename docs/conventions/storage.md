@@ -32,9 +32,27 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Luật | `rules/video-rules.md` | |
 | Quy trình | `docs/workflow/per-video-pipeline.md` | |
 
-Thư mục gốc hợp lệ (`TOP_ALLOWED`): assets, brand, content, docs, logs, media, pipeline, research, resources, rules, skills, templates, tests, video-engine. Đã bỏ: `footage/` → `media/footage/`, `renders/` → `final/out/` của clip, `refs/` → `resources/refs/`, `samples/` → `content/samples/lab/`. `templates/` giữ vì là thư viện chung (scaffold HyperFrames, mẫu post-package).
+Thư mục gốc hợp lệ (`TOP_ALLOWED`): GUIDE.md, assets, brand, content, docs, logs, media, pipeline, research, resources, rules, skills, templates, tests, video-engine. Đã bỏ: `footage/` → `media/footage/`, `renders/` → `final/out/` của clip, `refs/` → `resources/refs/`, `samples/` → `content/samples/lab/`. `templates/` giữ vì là thư viện chung (scaffold HyperFrames, mẫu post-package).
 
 Cấm: font/logo/giọng mẫu trong `content/`; hai file cùng nội dung (sha256) ngoài các vùng miễn trừ (skills vendored, voice cache, template `.tpl`, bản snapshot `/vN/`, `final/cover.png` theo L-020); thư mục cấp gốc ngoài danh sách `TOP_ALLOWED`.
+
+## Ánh xạ prompt bot nội dung (`docs/prompts/content-bot-prompt.md`)
+Repo đã có guide nên giữ cấu trúc hiện tại; cấu trúc mặc định của prompt ánh xạ như sau.
+
+| Prompt (mặc định) | Ở repo này | Ghi chú |
+|---|---|---|
+| `/GUIDE.md` | `GUIDE.md` (con trỏ ngắn) → file này | không chép nội dung |
+| `/INDEX.md` | `INDEX.md` + `index.json` | sinh bằng `build-index.py`; `check-assets.py` FAIL nếu lỗi thời |
+| `/research/trends/YYYY-MM-DD_<nguồn>.md` | `research/trends/<YYYY-MM-DD>/` (`digest.md`, `raw.json`, ghi chú theo chủ đề) | giữ thư mục theo ngày (rule-38) |
+| `/research/references/` | `research/references/` (mới) | phân tích creator/hook/format; mẫu hook vẫn ở `research/trends/patterns.md` |
+| `/scripts/YYYY-MM-DD_<slug>.md` | `content/clips/<clip>/final/script-final.md` (bản hiện hành), bản cũ `archive/script-vN.md` | không tạo `scripts/` |
+| `/scripts/_templates/` | `templates/script.md` (mới), `templates/post-package.md` | |
+| `/assets/` + metadata | `assets/` (`sfx/SOURCES.md`), `brand/`, media lớn `media/` + `MANIFEST.json`; tài liệu ngoài `resources/refs/README.md` | |
+| `/prompts/` | `docs/prompts/` (mới) | prompt routine trend cũ vẫn ở `docs/plans/trend-routine-prompt-v*.md` (đề xuất gộp vào đây) |
+| `/published/` | `content/published/README.md` (mới, log đăng) | clip đã duyệt vẫn `content/archive/` (luật 66) |
+| `/archive/` | `content/archive/` (clip) + `archive/` trong mỗi clip | |
+
+Front-matter bắt buộc cho `.md` nội dung (mọi file trừ `skills/`, `video-engine/`, `templates/hyperframes-base/`, `docs/legacy-box/`, `resources/refs/<clone>/`): `title, date, type, tags, status, source`. `status` của file mới trong `docs/prompts/`, `research/references/`, `content/published/`, `final/script-final.md`: `draft | ready | published`. Kiểm bằng `check-assets.py` (rule-65 FM). Commit: `<loại>: <mô tả>`.
 
 ## Vòng đời clip (luật 66)
 `content/clips/<clip>/` (đang làm, được thiếu) → đủ gói đăng + Hiệp nói "duyệt" → `git mv` sang `content/archive/<clip>/`, ghi `final/approved.json`, video full + 720p ở `media/clips/<clip>/` + `MANIFEST.json`.
