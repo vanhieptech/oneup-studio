@@ -6,7 +6,7 @@ updated: 2026-10-13
 version: 3.11
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.14, 15/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.18, 15/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -216,7 +216,14 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Ngân sách: mỗi beat ≤ 20 chữ; clip dạng gọn đặt `word_target` (vd 100–120) + `length_target` (vd 40–46s) trong spec.
     - check-rules: `rule-61` (✖ lời trùng ≥ 2 cụm 2 chữ với stage.action, bỏ qua nhãn IN HOA/nằm trong nháy; ✖ cụm độn; ✖ beat > 20 chữ khi có word_target). Timing/giọng của bản kịch bản cũ bị coi là lỗi thời và bỏ qua.
 
+62. **Một mạch ABT xuyên suốt, nối theo ngữ cảnh, callback clip trước (DL-063, L-030):**
+    - Viết `throughline` trước (1 câu "… VÀ … NHƯNG … VÌ VẬY …") + `hook_question` (hỏi ở hook, trả lời ở cuối) trong spec. Clip 5–7 nhịp; cảnh nào không phục vụ throughline thì cắt.
+    - Mỗi cảnh sau cảnh đầu có trường `link`: vì sao cảnh này phải đến sau cảnh trước (hệ quả hoặc bẻ lái). Liên kết nằm trong nội dung, không nằm ở chữ nối: thoại dùng "nhưng/nên" theo nghĩa đen ≤ 2 lần/clip; thay bằng bẻ lái tự nhiên ("Khoan.", "Vậy đó:", "Mình hả?").
+    - Nội dung đã có ở clip trước thì callback tự nhiên ("Như clip trước nói…") và khai trong `callbacks` (để `[]` nếu không trùng). Nguồn văn nói: `resources/vn-spoken/`.
+    - check-rules: `rule-62` (✖ thiếu throughline dạng ABT, thiếu `link`, > 2 "nhưng/nên", hook_question không được trả lời, clip ≥ 02 không khai callbacks).
+
 ## Changelog
+- **v3.18, 15/10/2026:** luật 62, throughline ABT + link theo ngữ cảnh + callback clip trước (DL-063, L-030).
 59. **Mọi asset dự án nằm tập trung trong repo (DL-060, L-023):** kịch bản, trend, ý tưởng, mẫu giọng, sfx, ảnh bìa, storyboard, log, plan đều nằm trong `oneup-studio/`. Không lưu ở thư mục riêng trên box. Media >5MB vào `media/` + `media/MANIFEST.json`. `pipeline/scripts/check-assets.py` chặn khi thấy file dự án ngoài repo.
 - **v3.17, 15/10/2026:** luật 61, lời không kể lại hình, không độn, ngân sách chữ (DL-062, L-029).
 - **v3.16, 15/10/2026:** luật 60, văn nói + hành động/cảm xúc/thoại xen kẽ mỗi beat (DL-061, L-024).

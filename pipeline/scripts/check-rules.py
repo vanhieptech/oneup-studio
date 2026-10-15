@@ -329,7 +329,7 @@ def main():
     hookset = set((spec.get("hook") or {}).get("scenes", []))
     vg = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in VAGUE for m in [re.search(pat, re.sub(r"\{[^}]*\}", "", l["text"]).lower())] if m]
     (e55 if False else (warn if "clip-01" in clip_dir else err))("rule-58", "no vague phrases" + (f": {vg}" if vg else "")) if vg else ok("rule-58", "no vague phrases (‘X thắng’, ‘điều gì đó’, ‘mọi thứ’…)")
-    nc_ = [x["id"] for i_, x in enumerate(beats_) if i_ and x["id"] not in hookset and sum(len(l["text"].split()) for l in x["lines"]) > 4 and not re.search(CONN, re.sub(r"\{[^}]*\}|[\"“”]", "", x["lines"][0]["text"]).strip().lower())]
+    nc_ = [x["id"] for i_, x in enumerate(beats_) if i_ and x["id"] not in hookset and not x.get("link") and sum(len(l["text"].split()) for l in x["lines"]) > 4 and not re.search(CONN, re.sub(r"\{[^}]*\}|[\"“”]", "", x["lines"][0]["text"]).strip().lower())]
     ((warn if "clip-01" in clip_dir else err) if nc_ else ok)("rule-58", "every non-hook beat opens with a connector/callback" + (f"; missing: {nc_}" if nc_ else ""))
     lw = [x["id"] for x in beats_ for l in x["lines"] if max(len(c.split()) for c in re.split(r"[.,?!:;]", re.sub(r"\{[^}]*\}", "", l["text"])) if c.strip()) > 12]
     (warn if lw else ok)("rule-58", "clauses ≤ 12 words (punchy)" + (f"; long: {lw}" if lw else ""))
@@ -356,6 +356,18 @@ def main():
     if spec.get("word_target"):
         bw = [x["id"] for x in beats_ if sum(len(l["text"].split()) for l in x["lines"]) > 20]
         (err if bw else ok)("rule-61", "every beat ≤ 20 words" + (f"; over: {bw}" if bw else ""))
+    # rule-62 (DL-063, L-030): one ABT throughline, every beat states its contextual link, callbacks to prior clips, ≤2 literal nhưng/nên
+    e62 = warn if lax else err
+    tl = spec.get("throughline", "")
+    (ok if tl and re.search(r"NHƯNG", tl) and re.search(r"VÌ VẬY|NÊN", tl) else e62)("rule-62", "spec.throughline present in ABT form (… VÀ … NHƯNG … VÌ VẬY …)" if tl else "spec.throughline MISSING")
+    nl = [x["id"] for i_, x in enumerate(beats_) if i_ and len(x.get("link", "")) < 8]
+    (e62 if nl else ok)("rule-62", "every beat after the first has a contextual `link` (why it follows)" + (f"; missing: {nl}" if nl else ""))
+    lit = sum(len(re.findall(r"(?<!\w)(nhưng|nên)(?!\w)", re.sub(r"\{[^}]*\}", "", l["text"]).lower())) for x in beats_ for l in x["lines"])
+    (e62 if lit > 2 else ok)("rule-62", f"literal ‘nhưng/nên’ in dialogue: {lit} (≤ 2; links come from context)")
+    hq = spec.get("hook_question") or {}
+    (ok if hq.get("asked") and hq.get("answered") and hq.get("answered") != hq.get("asked") else e62)("rule-62", "hook_question asked + answered later (open loop closed)")
+    cno = int(re.search(r"clip-(\d+)", clip_dir).group(1)) if re.search(r"clip-(\d+)", clip_dir) else 1
+    if cno > 1: ((ok if spec.get("callbacks") is not None else e62))("rule-62", f"callbacks to prior clips declared ({len(spec.get('callbacks') or [])}); use [] if none overlap")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
