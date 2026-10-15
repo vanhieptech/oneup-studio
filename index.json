@@ -164,6 +164,14 @@
   {
    "id": "clip-02.script-final",
    "type": "script",
+   "status": "draft, chờ Hiệp duyệt (chưa lồng tiếng, chưa render)",
+   "updated": "2026-10-15",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v10.md",
+   "title": "clip-02 v10: Mê mà vẫn né (meme \"bản chất\")"
+  },
+  {
+   "id": "clip-02.script-final",
+   "type": "script",
    "status": "kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng",
    "updated": "2026-10-15",
    "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v7.md",
@@ -196,10 +204,10 @@
   {
    "id": "clip-02.script-final",
    "type": "script",
-   "status": "draft, chờ Hiệp duyệt (chưa lồng tiếng, chưa render)",
+   "status": "draft",
    "updated": "2026-10-15",
    "path": "content/clips/clip-02-procrastination-discomfort/final/script-final.md",
-   "title": "clip-02 v10: Mê mà vẫn né (meme \"bản chất\")"
+   "title": "Clip 02 v11: Mê OneUp vậy mà né?!"
   },
   {
    "id": "clip-02.trend-signals",
@@ -608,6 +616,14 @@
    "updated": "2026-10-15",
    "path": "research/trends/2026-10-15/audio/notes.md",
    "title": "Trend audio \"Bản chất của …\" (Hiệp gửi 15/10, 40,15s)"
+  },
+  {
+   "id": "trends-2026-10-15.clip-02-v11",
+   "type": "research",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "research/trends/2026-10-15/clip-02-v11-trend-check.md",
+   "title": "Trend check cho clip-02 v11 (né việc mình mê)"
   },
   {
    "id": "trends-2026-10-15",
