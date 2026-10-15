@@ -67,6 +67,11 @@ Write the script directly as the spec (format below). Structure rule-41: hook 0�
 Explainer visuals: copy **`content/samples/sample-natural/explainer/`** (the lint-clean reference, DL-033: host `index.html.tpl` + one sub-composition per section in `compositions/<eNN>.html.tpl` + `compositions/captions.html.tpl`). Every `*.tpl` receives `__TIMING__`, `__DUR__` and per section `__START_<id>__` / `__DUR_<id>__`, used as the section host's real `data-start`/`data-duration` (the runtime hides it outside its window; never fake visibility with opacity). Inside a section: animate children with `fromTo` (never the clip, no CSS transform on tweened nodes, no exit tweens except the last scene), convert times with `t - __START_<id>__`. Captions = brand-styled adaptation of registry `caption-pill-karaoke` (group ≤4 words, karaoke step, hard-kill at group end), host carries `data-track-kind="captions"`. Section-to-section transitions: `hyperframes-animation/transitions/catalog.md` (push slide primary). Gate: `npx hyperframes lint` **and** `npx hyperframes check` must both report 0 errors / 0 warnings (build-final runs lint before rendering). GSAP local, Be Vietnam Pro.
 Motion: run `skills/motion-picks-per-script` → one main effect per beat (`motion` field + table in script-final.md) → append to `logs/effects-log.md`.
 
+### 2a. Script voice + structure (rule 64, read docs/research/script-prompt-principles.md)
+- Structure in `spec.structure`: Hook (≤2 sentences, opens an info gap) → Intro (why keep watching, open loop, callback prior clip) → Body (problem → exploration w/ real study + caveat → climax/how-to) → 1-sentence summary answering the hook → ONE CTA shorter than a sentence.
+- Hook type: direct (name the specific thing), controversy ("điều không ai nói về…", back it up), or negative ("Đừng…"). Never generic. Always add `hook_alt` of another type.
+- Voice: Hiệp telling a friend a real story; Southern particles; idioms/metaphors/anecdote; words a 12-year-old gets; one `{nhấn: …}` per sentence; visuals stay in the action column. Read aloud: anything you'd never say to a friend gets rewritten (anti "giả trân").
+
 ## 3. Polish
 Run `skills/script-polish` (humanizer + voice profile) on `text`/`en`. Fact lock unchanged. Unconfirmed personal details → generic wording + listed under `[CẦN HIỆP XÁC NHẬN]`.
 

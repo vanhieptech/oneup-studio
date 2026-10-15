@@ -6,7 +6,7 @@ updated: 2026-10-13
 version: 3.11
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.18, 15/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.19, 15/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -222,7 +222,14 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Nội dung đã có ở clip trước thì callback tự nhiên ("Như clip trước nói…") và khai trong `callbacks` (để `[]` nếu không trùng). Nguồn văn nói: `resources/vn-spoken/`.
     - check-rules: `rule-62` (✖ thiếu throughline dạng ABT, thiếu `link`, > 2 "nhưng/nên", hook_question không được trả lời, clip ≥ 02 không khai callbacks).
 
+64. **Cấu trúc + giọng người thật theo prompt scriptwriter (DL-065, L-032):**
+    - Cấu trúc khai trong `spec.structure`: Hook (≤ 2 câu, mở khoảng trống thông tin) → Intro (vì sao coi tiếp, open loop) → Body (vấn đề → khám phá → cao trào) → Tóm tắt 1 câu (trả lời hook) → **một** CTA ngắn hơn 1 câu.
+    - Hook thuộc 1 trong 3 kiểu: trực tiếp (gọi tên việc/người cụ thể), gây tranh cãi ("điều không ai nói về…", có bằng chứng ngay sau), phủ định ("Đừng…"). Cấm mở chung chung ("Hôm nay mình sẽ…", "Bạn có biết…").
+    - Giọng: kể với bạn, đồng cảm, đôi khi hài; thành ngữ, ẩn dụ, giai thoại; chữ đứa 12 tuổi hiểu; có số liệu thật kèm giới hạn. Đề xuất luôn kèm 1 hook thay thế kiểu khác (`hook_alt`).
+    - Chi tiết: `docs/research/script-prompt-principles.md`. check-rules: `rule-64`.
+
 ## Changelog
+- **v3.19, 15/10/2026:** luật 64, cấu trúc hook→intro→body→tóm tắt→1 CTA + giọng người thật (DL-065, L-032).
 - **v3.18, 15/10/2026:** luật 62, throughline ABT + link theo ngữ cảnh + callback clip trước (DL-063, L-030).
 59. **Mọi asset dự án nằm tập trung trong repo (DL-060, L-023):** kịch bản, trend, ý tưởng, mẫu giọng, sfx, ảnh bìa, storyboard, log, plan đều nằm trong `oneup-studio/`. Không lưu ở thư mục riêng trên box. Media >5MB vào `media/` + `media/MANIFEST.json`. `pipeline/scripts/check-assets.py` chặn khi thấy file dự án ngoài repo.
 - **v3.17, 15/10/2026:** luật 61, lời không kể lại hình, không độn, ngân sách chữ (DL-062, L-029).

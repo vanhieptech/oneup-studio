@@ -1,6 +1,6 @@
 ⚠ timing   content/clips/clip-02-procrastination-discomfort/final/timing.json is stale (17 lines not in current spec) → re-voice; audio checks skipped
-✔ rule-4   no fresh timing.json; estimated 45s from word count (target 40–48s)
-✔ rule-7   130 VI words (target 110–130)
+✔ rule-4   no fresh timing.json; estimated 44s from word count (target 40–48s)
+✔ rule-7   127 VI words (target 110–130)
 ✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
 ✔ rule-8   last beat b12 part='cta' (CTA question expected)
 ✔ rule-11  no Omi
@@ -46,18 +46,23 @@
 ✔ rule-61  every beat ≤ 20 words
 ✔ rule-62  spec.throughline present in ABT form (… VÀ … NHƯNG … VÌ VẬY …)
 ✔ rule-62  every beat after the first has a contextual `link` (why it follows)
-✔ rule-62  literal ‘nhưng/nên’ in dialogue: 0 (≤ 2; links come from context)
+✔ rule-62  literal ‘nhưng/nên’ in dialogue: 1 (≤ 2; links come from context)
 ✔ rule-62  hook_question asked + answered later (open loop closed)
 ✔ rule-62  callbacks to prior clips declared (2); use [] if none overlap
+✔ rule-64  spec.structure has hook/intro/body/summary/cta
+✔ rule-64  hook 2 sentence(s) (≤ 2)
+✔ rule-64  hook is not a generic opener
+✔ rule-64  exactly one CTA (1)
+✔ rule-64  hook_alt of another type proposed
 ✔ rule-52  transition_sfx planned: {'part': 'whoosh-soft', 'scene': 'swish'}
 ✔ rule-52  b01: motion/visual described
 ✔ rule-52  b01: effect tied to spoken word “dời”
 ✔ rule-52  b01b: motion/visual described
-✔ rule-52  b01b: effect tied to spoken word “lâu nhất”
+✔ rule-52  b01b: effect tied to spoken word “né hoài”
 ✔ rule-52  b01c: motion/visual described
 ✔ rule-52  b01c: effect tied to spoken word “nếu–thì”
 ✔ rule-52  b02: motion/visual described
-✔ rule-52  b02: effect tied to spoken word “càng ngại”
+✔ rule-52  b02: effect tied to spoken word “ngán”
 ✔ rule-52  b03: motion/visual described
 ✔ rule-52  b03: effect tied to spoken word “rối nùi”
 ✔ rule-52  e01: motion/visual described
@@ -67,21 +72,21 @@
 ✔ rule-52  e02: effect tied to spoken word “sáu trăm”
 ✔ rule-52  e02: explainer has ≥1 planned hit + SFX
 ✔ rule-52  e04: motion/visual described
-✔ rule-52  e04: effect tied to spoken word “nếu thấy rối”
+✔ rule-52  e04: effect tied to spoken word “ba gạch”
 ✔ rule-52  e04: explainer has ≥1 planned hit + SFX
 ✔ rule-52  e05: motion/visual described
-✔ rule-52  e05: effect tied to spoken word “nháp xấu hoắc”
+✔ rule-52  e05: effect tied to spoken word “xấu trước”
 ✔ rule-52  e05: explainer has ≥1 planned hit + SFX
 ✔ rule-52  e06: motion/visual described
 ✔ rule-52  e06: effect tied to spoken word “mười phút”
 ✔ rule-52  e06: explainer has ≥1 planned hit + SFX
 ✔ rule-52  b11: motion/visual described
-✔ rule-52  b11: effect tied to spoken word “vì né”
+✔ rule-52  b11: effect tied to spoken word “cái rối”
 ✔ rule-52  b12: motion/visual described
 ✔ rule-52  b12: effect tied to spoken word “Omi”
 ✔ rule-52  script-final.md effects table covers every beat
 ✔ rule-52  effects table has no **THIẾU** cells
-✔ rule-49  lessons.md: 29 lessons loaded
+✔ rule-49  lessons.md: 31 lessons loaded
 ✔ L-001    contact-sheet.png present for self-review
 ✔ L-004    highlight indexes within EN caption
 ✔ L-005    no [tags] in spoken text
@@ -91,6 +96,7 @@
 ✔ L-025    all rendered lines STT ≥ 0.8
 ✔ L-027    hook voice gaps ≤ 0.1s
 ✔ L-028    self-blame lines punchy + emphasized
+✔ L-031    each hook sentence has an emphasis word
 ✔ L-026    despair lines use sad/despair face
 ✔ L-017    voice markup valid
 ✔ L-017    bank fillers available
@@ -100,6 +106,6 @@
 ✔ L-011    Omi/week consistent
 ✔ L-003    caption segments never overlap
 ✔ L-014    hf-check.txt shows hyperframes lint 0 errors
-⚠ L-013    13 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+⚠ L-013    16 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
-103 checks · 0 error(s) · 5 warning(s) → PASS
+109 checks · 0 error(s) · 5 warning(s) → PASS

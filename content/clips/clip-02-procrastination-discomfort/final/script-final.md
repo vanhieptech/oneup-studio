@@ -1,7 +1,7 @@
 ---
 id: clip-02.script-final
 type: script
-status: kịch bản v5 (DL-063), chờ Hiệp duyệt, chưa render
+status: kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng
 updated: 2026-10-15
 tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
 ---
@@ -22,7 +22,30 @@ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
   - lưu ý: nghiên cứu tương quan (b11)
   - CTA làm ngay + loop (b12)
 
-## Kịch bản v5 (DL-063, 15/10 16:2x): một mạch ABT, 6 nhịp, callback clip-01
+## Kịch bản v7 (DL-065, 15/10 17:5x): giọng kể chuyện với bạn, luật 64
+
+**Throughline:** Hiệp mê tính năng Omi VÀ đã có câu nếu–thì (clip-01) mà vẫn dời, còn tự chửi; NHƯNG càng chửi càng ngại, vì thứ né là cái rối + sợ code xấu lúc mở file; VÌ VẬY gọi tên gai, sửa câu nếu–thì cho từng gai, hẹn 10 phút, và mở Omi.
+
+**Hook (trực tiếp):** b01+b01b, câu hỏi “Thích nhất, mà sao né hoài vậy?” → trả lời ở b11. **Hook thay thế (phủ định):** “Đừng chửi mình lười nữa. Coi cái này trước nè.”
+
+| Phần | Cảnh | Hành động | Cảm xúc | Lời thoại (đọc, có {nhấn:}) |
+|---|---|---|---|---|
+| Hook | b01 | Laptop 'Omi · 0 dòng code'; lịch HÔM NAY → MAI xé phăng; dấu đỏ DỜI đóng xuống | ngán ngẩm | Ô mi á, mình dời {nhấn: hoài} luôn! |
+| Hook | b01b | Hiệp đập trán xuống bàn cái bịch, nền tối dần, dấu ? khổng lồ rơi rung | tuyệt vọng, hỏi trời | Thích {nhấn: nhất}, mà sao né hoài vậy? |
+| Intro | b01c | Giấy nhớ 'NẾU 9h → THÌ OMI' dán mép laptop; kim chạm 9:00 PM; ngón cái quẹt màn hình TikTok | cười trừ, chột dạ | Clíp trước có câu {nhấn: nếu thì} rồi. Vậy mà chín giờ, vẫn {nhấn: lướt}. |
+| Body: vấn đề | b02 | Úp mặt, chữ TỘI LỖI rồi LƯỜI rơi đè đầu; sáng hôm sau laptop hoá cục đá, đẩy không nhích | giận mình, rồi nặng nề | Đồ {nhấn: lười}! Ghét bản thân mình {nhấn: ghê}! Chửi xong, mai còn {nhấn: ngán} hơn. |
+| Body: khám phá | b03 | Quay chậm: editor bật lên thành cuộn dây rối; bàn tay tự trườn khỏi bàn phím; Hiệp chụp cổ tay mình lại | ngộ ra, bắt quả tang | Bữa nọ mới {nhấn: bắt được}: mở phai thấy rối nùi, là tay đi kiếm điện thoại. |
+| Body: khám phá | e01 | Thẻ Omi mọc 2 gai RỐI / SỢ XẤU, mũi tên vòng qua | khều người xem | Nghe {nhấn: quen} hông? |
+| Body: khám phá | e02 | Nhãn 'Steel 2007', số 691 đếm lên; thanh NGÁN dâng kéo kim DỜI vọt; dấu nhỏ ĐI CHUNG ≠ GÂY RA | bất ngờ, rồi thật thà | Ông Sờ tiu gom hơn {nhấn: sáu trăm} kết quả: càng ngán, càng dời. / {nhấn: Đi chung} thôi nha. |
+| Body: cao trào | e04 | Giấy nhớ clip-01 lật mặt sau: NẾU RỐI → THÌ 3 BULLET; 3 gạch tự viết, gai RỐI rụng | ranh mãnh, nhẹ nhõm | Nên mình sửa câu nếu thì: rối thì ghi {nhấn: ba gạch} đầu dòng. |
+| Body: cao trào | e05 | Dấu DRAFT · OK đóng lên tờ nháp nguệch ngoạc; gai SỢ XẤU rụng | trêu, nhẹ nhõm | Sợ cốt xấu? Cho xấu {nhấn: trước}, sửa sau. |
+| Body: cao trào | e06 | Hẹn giờ 10:00 quay ngược, vòng tiến độ chạy, biển STOP OK bật | xuề xòa | Ngán quá thì hẹn {nhấn: mười phút}, chuông reo là nghỉ. |
+| Tóm tắt | b11 | Dấu ? của hook bay lại, bật thành ✓; Hiệp gật gù chống cằm | thấm, thật thà | Tóm lại: thích mà dời, là đang né {nhấn: cái rối}. |
+| CTA | b12 | Chỉ thẳng người xem; cắt về khung hook 9:00 PM, dán giấy nhớ mới, xắn tay áo gõ phím | ranh mãnh → quyết tâm | Bạn đang {nhấn: né} gì? Com men một chữ. / Còn mình hả? Mở Ô mi {nhấn: liền} nè. |
+
+**127 chữ VI**, 1 CTA (comment), loop “Mở Omi”. Chưa thu giọng.
+
+## Lưu trữ: kịch bản v5 (DL-063, 15/10 16:2x): một mạch ABT, 6 nhịp, callback clip-01
 
 **Throughline:** Hiệp mê tính năng Omi VÀ đã có câu nếu–thì (clip-01) mà vẫn dời, còn tự chửi; NHƯNG càng chửi càng ngại, vì thứ né là cái rối + sợ code xấu lúc mở file; VÌ VẬY gọi tên gai, sửa câu nếu–thì cho từng gai, hẹn 10 phút, và mở Omi.
 
@@ -174,18 +197,18 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
-| b01 | remotion | Hook cut 1: push mạnh vào laptop 'Omi · 0 dòng code', lịch xé HÔM NAY → MAI, dấu đỏ DỜI đóng | “dời” | `click` → “Mê Omi”; `stamp` → “dời hoài” | mở đầu |
-| b01b | remotion | Hook cut 2: Hiệp đập trán xuống bàn, vignette tối, chữ DỜI LẦN 5 đập xuống rung | “lâu nhất” | `stamp` → “lâu nhất” | cut (`swish`) |
-| b01c | remotion | Callback clip-01: giấy nhớ 'NẾU 9h → THÌ OMI' dán trên laptop; kim đồng hồ chạm 9:00, mắt Hiệp liếc sang điện thoại, tay vươn ra | “nếu–thì” | `pop` → “nếu–thì”; `tick` → “Chín giờ” | cut (`swish`) |
-| b02 | remotion | Comic: úp mặt, chữ TỘI LỖI / LƯỜI rơi đè đầu (squash); cắt sáng hôm sau, laptop nặng như cục đá, Hiệp đẩy không nổi | “càng ngại” | `stamp` → “Đồ lười”; `rise` → “càng ngại” | cut (`swish`) |
-| b03 | remotion | Comic slow-mo: màn hình bung ra cuộn dây rối, chữ đỏ gạch chân; Hiệp khựng tay giữa không trung, ngón tay gõ trán | “rối nùi” | `pen` → “Khoan”; `stamp` → “rối nùi” | iris (`swish`) |
-| e01 | hyperframes | Thẻ 'Omi feature' mọc 2 gai RỐI / SỢ XẤU; mũi tên né cong vòng qua thẻ | “quen” | `pop` → “Nghe quen”; `tick` → “hông” | slideleft (`whoosh-soft`) |
-| e02 | hyperframes | Số 691 đếm lên, nhãn 'Steel 2007'; thanh 'Ngán' dâng kéo kim 'Dời' vọt; chú thích nhỏ 'ĐI CHUNG ≠ GÂY RA' | “sáu trăm” | `rise` → “sáu trăm”; `ding` → “càng dễ dời”; `tick` → “đi chung” | push (`swish`) |
-| e04 | hyperframes | Giấy nhớ clip-01 'NẾU 9h → THÌ OMI' lật mặt sau thành 'NẾU RỐI → THÌ 3 BULLET'; 3 gạch tự viết ra gỡ gai RỐI | “nếu thấy rối” | `pop` → “nếu thấy rối”; `pen` → “ba gạch đầu dòng” | push (`swish`) |
-| e05 | hyperframes | Con dấu 'DRAFT · OK' đóng lên tờ code nguệch ngoạc; gai SỢ XẤU rụng | “nháp xấu hoắc” | `stamp` → “nháp xấu hoắc” | push (`swish`) |
-| e06 | hyperframes | Đồng hồ hẹn giờ 10:00 quay ngược, vòng tiến độ chạy; biển 'STOP OK' bật lên | “mười phút” | `tick` → “mười phút”; `ding` → “chuông reo” | push (`swish`) |
-| b11 | remotion | Comic: chữ hook 'SAO MÊ NHẤT LẠI DỜI LÂU NHẤT?' bay lại, dấu hỏi bật thành dấu ✓; biển 'MÊ ≠ HẾT NGÁN' | “vì né” | `tick` → “vì né” | circleopen (`whoosh-soft`) |
-| b12 | remotion | Comic: Hiệp chỉ vào người xem; cắt về đúng khung hook lúc 9:00 PM, lần này giấy nhớ mới dán lên, Hiệp xắn tay áo gõ (loop) | “Omi” | `ding` → “Mở Omi” | slide (`swish`) |
+| b01 | remotion | Hook cut 1: push mạnh vào laptop, lịch xé 2 tờ, dấu đỏ DỜI đóng | “dời” | `click` → “Omi”; `stamp` → “dời hoài” | mở đầu |
+| b01b | remotion | Hook cut 2: vignette tối, dấu hỏi to đập xuống rung | “né hoài” | `stamp` → “né hoài” | cut (`swish`) |
+| b01c | remotion | Callback clip-01: giấy nhớ nếu–thì, kim chạm 9:00, ngón cái quẹt TikTok | “nếu–thì” | `pop` → “nếu–thì”; `tick` → “chín giờ” | cut (`swish`) |
+| b02 | remotion | Comic: chữ TỘI LỖI / LƯỜI rơi đè đầu; laptop hoá cục đá | “ngán” | `stamp` → “Đồ lười”; `rise` → “ngán hơn” | cut (`swish`) |
+| b03 | remotion | Comic slow-mo: cuộn dây rối bung ra, Hiệp chụp cổ tay chính mình, vòng tròn đỏ khoanh lại | “rối nùi” | `pen` → “bắt được”; `stamp` → “rối nùi” | iris (`swish`) |
+| e01 | hyperframes | Thẻ 'Omi feature' mọc 2 gai RỐI / SỢ XẤU; mũi tên cong vòng qua thẻ | “quen” | `pop` → “Nghe quen”; `tick` → “hông” | slideleft (`whoosh-soft`) |
+| e02 | hyperframes | Số 691 đếm lên, nhãn Steel 2007; thanh Ngán kéo kim Dời; chú thích ĐI CHUNG ≠ GÂY RA | “sáu trăm” | `rise` → “sáu trăm”; `ding` → “càng dời”; `tick` → “Đi chung” | push (`swish`) |
+| e04 | hyperframes | Giấy nhớ lật mặt sau thành NẾU RỐI → THÌ 3 BULLET; 3 gạch tự viết, gai RỐI rụng | “ba gạch” | `pop` → “sửa câu”; `pen` → “ba gạch” | push (`swish`) |
+| e05 | hyperframes | Con dấu 'DRAFT · OK' đóng lên tờ code nguệch ngoạc; gai SỢ XẤU rụng | “xấu trước” | `stamp` → “xấu trước” | push (`swish`) |
+| e06 | hyperframes | Đồng hồ 10:00 quay ngược, vòng tiến độ chạy; biển STOP OK bật | “mười phút” | `tick` → “mười phút”; `ding` → “chuông reo” | push (`swish`) |
+| b11 | remotion | Comic: dấu hỏi từ hook bay lại, bật thành dấu ✓ | “cái rối” | `tick` → “né cái rối” | circleopen (`whoosh-soft`) |
+| b12 | remotion | Comic: Hiệp chỉ vào người xem; cắt về khung hook lúc 9:00 PM, xắn tay áo gõ (loop) | “Omi” | `ding` → “Mở Omi” | slide (`swish`) |
 
 ## Motion picks
 push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial label-reveal (e01) · count-up + slider-rise (e02) · scale-tip trên trục thời gian (e03) · card-flip + magnifier (e04) · patch-fix + stamp (e05) · countdown ring (e06) · mistake-stamp + spike-grow (e07) · sign-pop (b11) · slide + loop (b12). Mỗi section một ẩn dụ khác nhau, không lặp.

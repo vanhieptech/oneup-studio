@@ -368,6 +368,22 @@ def main():
     (ok if hq.get("asked") and hq.get("answered") and hq.get("answered") != hq.get("asked") else e62)("rule-62", "hook_question asked + answered later (open loop closed)")
     cno = int(re.search(r"clip-(\d+)", clip_dir).group(1)) if re.search(r"clip-(\d+)", clip_dir) else 1
     if cno > 1: ((ok if spec.get("callbacks") is not None else e62))("rule-62", f"callbacks to prior clips declared ({len(spec.get('callbacks') or [])}); use [] if none overlap")
+    # rule-64 (DL-065, L-032): hook→intro→body→summary→one CTA; typed hook ≤ 2 sentences; no generic opener; alt hook
+    e64 = warn if lax else err
+    stc = spec.get("structure") or {}
+    need = ["hook", "intro", "body", "summary", "cta"]
+    (ok if all(stc.get(k) for k in need) else e64)("rule-64", "spec.structure has hook/intro/body/summary/cta" + ("" if all(stc.get(k) for k in need) else f"; missing {[k for k in need if not stc.get(k)]}"))
+    if stc.get("hook"):
+        ht = " ".join(l["text"] for x in beats_ if x["id"] in stc["hook"] for l in x["lines"])
+        ns = len([z for z in re.split(r"(?<=[.!?])\s+", ht) if z.strip()])
+        (ok if ns <= 2 else e64)("rule-64", f"hook {ns} sentence(s) (≤ 2)")
+        gen = re.search(r"^(hôm nay mình sẽ|bạn có biết|xin chào|chào các bạn|trong video này)", ht.strip().lower())
+        (e64 if gen else ok)("rule-64", "hook is not a generic opener")
+    if stc.get("cta"):
+        ct = " ".join(l["text"] for x in beats_ if x["id"] in stc["cta"] for l in x["lines"]).lower()
+        nct = len(re.findall(r"comment|follow|lưu lại|share|bấm|theo dõi", ct))
+        (ok if nct == 1 else e64)("rule-64", f"exactly one CTA ({nct})")
+    (ok if (spec.get("hook_alt") or {}).get("type") in ("direct", "controversy", "negative") else warn)("rule-64", "hook_alt of another type proposed")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
