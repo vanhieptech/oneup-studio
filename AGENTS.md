@@ -38,11 +38,13 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 ## Series format (DL-027)
 Series @hi.oneup hiện tại **chỉ comic + motion graphics** (Remotion `video-engine/` + HyperFrames). Không shot list, không b-roll tự quay; Hiệp chỉ thu giọng. Không nhắc đăng (DL-028).
 
-## Trend sync (rule-38, rule-47: skill v2, `research/trends/patterns.md`, `pipeline/scripts/trend-learn.py`)
-Job chạy tự động hằng ngày trên box không xin được quyền trên Mac, nên:
-1. Job chạy `skills/trend-digest`. Repo public nên box có thể `git clone` / `pull` để đọc `ingest.md` mới nhất. Job ghi vào box `/workspace/oneup-studio-sync/research/trends/{YYYY-MM-DD/,ingest.md}`.
-2. Khi agent có quyền truy cập Mac: chạy `tar czf /workspace/oneup-studio-sync.tgz -C /workspace/oneup-studio-sync research` → CopyFromBox tới `/Users/macbook/me/projects/.oneup-sync/trends.tgz` → chạy trên Mac `pipeline/scripts/sync-trends.sh`. Script chỉ thêm các ngày mới, ghi đè `ingest.md` bằng bản trên box, rồi commit và push.
-3. Nếu chưa sync được thì dữ liệu vẫn nằm an toàn trên box. Lần sync sau sẽ gom hết các ngày còn thiếu.
+## Trend sync (rule-38, rule-47, rule-59: một nguồn duy nhất)
+Mọi asset của @hi.oneup chỉ nằm trong repo này (DL-060, L-023). Không còn thư mục sync riêng.
+1. Job hằng ngày chạy `skills/trend-digest` ngay trong `/workspace/oneup-studio` (box). Ghi thẳng vào `research/trends/{YYYY-MM-DD/,ingest.md,patterns.md}` và `content/idea-bank.md`, rồi `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"` (chỉ commit các path này).
+2. Box không có quyền ghi GitHub: commit nằm trên box cho tới khi agent có Mac, rồi đẩy bằng bundle (`git bundle` → `split -b 9m` → CopyFromBox → trên Mac `git pull --ff-only <bundle> HEAD && git push origin main`).
+3. Media lớn (>5MB audio/video) để ở `media/` (gitignored, không có git-lfs), liệt kê trong `media/MANIFEST.json` (path, size, sha256).
+4. `python3 pipeline/scripts/check-assets.py` chặn khi còn file dự án nằm ngoài repo (`/workspace/oneup-studio-sync`, `/workspace/hi-oneup`, `/workspace/*.md` của dự án).
+`/workspace/oneup-studio-sync` và `pipeline/scripts/sync-trends.sh` đã bỏ (deprecated).
 
 ## Đường dẫn máy
-Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (machine I-Am-Focused). Bản clone trên box (chỉ đọc / nháp): `/workspace/oneup-studio`.
+Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (machine I-Am-Focused). Bản clone trên box (nơi làm việc duy nhất, commit tại đây rồi đẩy qua Mac): `/workspace/oneup-studio`.

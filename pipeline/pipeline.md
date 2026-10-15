@@ -41,4 +41,4 @@ Công tay của Hiệp: khoảng 30–45' mỗi clip. Máy và agent chạy: kho
 Hiệp góp ý → ghi vào `logs/decision-log.md` (DL-0xx) → sửa nguồn (`spec.json`, `script.md`, renderer) → render lại → tự xem lại (rule-34) → commit `fix(clip-NN): ... (DL-0xx)` → push.
 
 ## Trend hằng ngày (rule-38)
-Job trên box chạy skill trend-digest và ghi vào `/workspace/oneup-studio-sync/research/trends/` → agent đóng gói, gửi sang `../.oneup-sync/trends.tgz` → `pipeline/scripts/sync-trends.sh` → commit và push.
+Job trên box chạy skill trend-digest trong `/workspace/oneup-studio`, ghi thẳng vào `research/trends/` → commit trên box → agent đẩy bundle qua Mac → push. `check-assets.py` chặn asset nằm ngoài repo.

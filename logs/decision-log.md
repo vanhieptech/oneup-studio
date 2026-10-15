@@ -79,3 +79,4 @@ tags: [decisions, feedback]
 - Điều cần sửa:
 - Chỉ số (view, tỉ lệ xem hết, follow):
 - Luật / skill đã đổi:
+| DL-060 | 2026-10-15 | Hiệp (12:41): "Tại sao lưu chỗ riêng, kiểm tra lại tất cả resource asset đảm bảo lưu tất cả centralize ở một folder và push git" | Audit asset ngoài repo (oneup-studio-sync, hi-oneup, *.md plan ở /workspace). Gộp vào repo: trend 2026-10-15 + ingest/patterns/idea-bank, samples/, docs/legacy-box/, docs/plans/, logs/box-builds/, content/clips/clip-01-box-final/. Media >5MB → media/ (gitignored, Mac không có git-lfs) + MANIFEST.json. Trend job ghi thẳng vào repo, bỏ sync-trends.sh. Thêm check-assets.py | rule-59, L-023, AGENTS.md, skills/trend-digest |

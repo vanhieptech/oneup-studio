@@ -84,7 +84,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Không sao chép nội dung của người khác.
 38. **Trend digest hằng ngày (v2, học hỏi, luật 47):**
     - Chạy theo `skills/trend-digest/SKILL.md`, chỉ dùng nguồn miễn phí, công khai, có trích link.
-    - Job chạy tự động ghi vào box `/workspace/oneup-studio-sync/research/trends/`. Agent đồng bộ vào repo bằng `pipeline/scripts/sync-trends.sh` mỗi khi có quyền truy cập Mac (xem AGENTS.md).
+    - Job chạy tự động ghi thẳng vào repo box `/workspace/oneup-studio/research/trends/` và commit; đẩy lên GitHub qua Mac (xem AGENTS.md "Trend sync", luật 59).
 
 39. **Bridge từ trend sang bài học:**
     - Khi lên ý tưởng hook, dùng mọi trend nóng (không chỉ trend ngách) qua bảng Bridges (trend → khoảnh khắc → bài học HowToLiveBetter phần.mục → hook VI → góc → clip).
@@ -205,6 +205,8 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - check-rules: `rule-58` (✖ từ mơ hồ, ✖ thiếu từ nối, ⚠ vế > 12 chữ).
 
 ## Changelog
+59. **Mọi asset dự án nằm tập trung trong repo (DL-060, L-023):** kịch bản, trend, ý tưởng, mẫu giọng, sfx, ảnh bìa, storyboard, log, plan đều nằm trong `oneup-studio/`. Không lưu ở thư mục riêng trên box. Media >5MB vào `media/` + `media/MANIFEST.json`. `pipeline/scripts/check-assets.py` chặn khi thấy file dự án ngoài repo.
+- **v3.15, 15/10/2026:** luật 59, asset tập trung một repo, bỏ thư mục sync (DL-060, L-023).
 - **v3.14, 15/10/2026:** luật 58, kịch bản liền mạch có từ nối, từ sắc tra từ điển, cấm cụm mơ hồ (DL-059, L-022).
 - **v3.13, 14/10/2026:** luật 57, lớp trend ưu tiên tín hiệu gốc TikTok theo view/comment (DL-053).
 - **v3.12, 14/10/2026:** luật 55, hook 0–3s dồn dập; luật 56, tương tác khéo không xin (DL-051, DL-052).
