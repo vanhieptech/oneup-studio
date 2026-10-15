@@ -1,3 +1,26 @@
+# Clip 02 — biến thể meme "bản chất" v8 (Hiệp duyệt 2026-10-15)
+Khuôn: research/trends/2026-10-15/audio/notes.md. Thầy Hiệp giảng (nghiêm, chậm), Hiệp-né chen ngang (lười, nhõng nhẽo). Nhại "hướng dẫn trì hoãn chuẩn bài" → cảnh 11–13 trả lời hook. 1 CTA. ~50s.
+
+| Cảnh | Vai | Hành động | Lời thoại |
+|---|---|---|---|
+| 1 | Thầy | Kính, thước, bảng "TRÌ HOÃN 101" | **Thì cái bản chất của cái việc** trì hoãn… là gì? Hôm nay thầy chỉ bạn làm cho chuẩn bài luôn á. |
+| 2 | Hiệp-né | Nằm ườn, gác chân lên gối | Deadline còn một ngày lận mà… gấp gì, bạn tôi? |
+| 3 | Thầy | Chỉ thước vô điện thoại | **Thứ nhất là các bạn phải** lướt **liên tục ở** trên giường, ngón cái chạy như máy may, **một cách lặp đi lặp lại.** |
+| 4 | Hiệp-né | Lướt lia lịa, mắt đờ đẫn | Clip nữa thôi… clip nữa thôi… |
+| 5 | Thầy | Giật điện thoại | No, we don't do that. |
+| 6 | Hiệp-né | Móc điện thoại thứ hai | Clip nữa thôi… |
+| 7 | Thầy | Laptop file chi chít như mạng nhện | **Thứ hai là khi nào xuất hiện** cái việc rối như canh hẹ, **thì chúng ta phải** kiếm việc khác làm liền: dọn bàn, tưới cây, xếp lại dép. |
+| 8 | Hiệp-né | Lau bàn bóng lộn | Ủa… bàn sạch bong rồi. Giờ né cái gì nữa ta? |
+| 9 | Thầy | Gằn giọng, đập bàn | **Và cuối cùng là các bạn phải** tự chửi mình cho thật đã: Đồ lười! Đồ vô dụng! |
+| 10 | Hiệp-né | Cúi gằm, dồn ba câu | Ghét bản thân mình ghê… Mai làm nha… Thôi, để thứ Hai cho tròn tuần. |
+| 11 | Thầy | Tháo kính, giọng bình thường | Nghe quen hông? Mà khoa học nói vầy nè: ông Steel gom hơn sáu trăm nghiên cứu, thấy mình né việc vì nó khó chịu chứ không phải vì lười. Càng chửi mình thì càng né thêm. |
+| 12 | Hiệp-né | Ghi 3 gạch, hẹn đồng hồ 10 phút | Vậy thì chia nhỏ ra ba gạch, hẹn mười phút thôi. Chuông reo là được nghỉ. |
+| 13 | Hiệp-né | Chuông reo, file có dòng đầu, cười | Hết đường né luôn á. |
+| 14 | text | Chữ trên nền đen | Bạn đang né việc gì? Comment một chữ thôi nha. |
+
+---
+## Archive v7 (meme variant cũ)
+
 # Clip 02 — biến thể meme "Thì cái bản chất của cái việc…" (~40s)
 Nguồn khuôn: research/trends/2026-10-15/audio/notes.md. Chưa thu giọng, chưa render.
 Hai giọng: **Thầy Hiệp** (giảng nghiêm túc, chậm) và **Hiệp-né** (Hiệp chibi lười, chen ngang, giọng nhõng nhẽo, thay vai "người Nga").
