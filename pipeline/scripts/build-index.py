@@ -8,14 +8,14 @@ def fm(p):
     d = {}
     for l in s.split('\n---', 1)[0].splitlines()[1:]:
         if ':' in l and not l.startswith(' '): k, v = l.split(':', 1); d[k.strip()] = v.strip()
-    h = re.search(r'^# (.+)$', s, re.M); d['title'] = h.group(1) if h else p.stem
+    h = re.search(r'^# (.+)$', s, re.M); d['title'] = h.group(1) if h else d.get('title', p.stem).strip('"')
     return d
 docs = []
 for p in sorted(R.rglob('*.md')):
     rel = p.relative_to(R).as_posix()
     if any(x in rel for x in ('node_modules', 'brand/omi-exports', '/.build/')) or rel.startswith(('brand/scripts',)): continue
     d = fm(p)
-    if d and 'id' in d: docs.append({'id': d['id'], 'type': d.get('type'), 'status': d.get('status'), 'updated': d.get('updated'), 'path': rel, 'title': d['title']})
+    if d and ('id' in d or 'date' in d): docs.append({'id': d.get('id') or rel[:-3].replace('/', '.'), 'type': d.get('type'), 'status': d.get('status'), 'updated': d.get('updated') or d.get('date'), 'path': rel, 'title': d['title']})
     elif d and 'name' in d: docs.append({'id': 'skill.' + p.parent.name, 'type': 'skill', 'status': 'active', 'path': rel, 'title': d['name']})
 rules = []
 for m in re.finditer(r'^(\d+)\. \*\*([^*]+)\*\*', (R/'rules/video-rules.md').read_text(), re.M):
@@ -43,10 +43,15 @@ assets = [
  {'id': 'dir.renders', 'path': 'content/clips/<clip>/final/out/', 'desc': 'Ready-to-post packages (media gitignored)'},
 ]
 idx = {'generated_by': 'pipeline/scripts/build-index.py', 'docs': docs, 'rules': rules, 'clips': clips, 'assets': assets}
-(R/'index.json').write_text(json.dumps(idx, ensure_ascii=False, indent=1))
+import sys
+J = json.dumps(idx, ensure_ascii=False, indent=1)
 L = ['---', 'id: index', 'type: index', 'status: generated', 'tags: [index, retrieval]', '---', '# INDEX (generated, do not hand-edit; run `python3 pipeline/scripts/build-index.py`)', '', '## Docs', '| id | type | status | path | title |', '|---|---|---|---|---|']
 L += [f"| {d['id']} | {d['type']} | {d['status']} | `{d['path']}` | {d['title']} |" for d in docs]
 L += ['', '## Rules (source: `rules/video-rules.md`)', '| id | title |', '|---|---|'] + [f"| {r['id']} | {r['title']} |" for r in rules]
 L += ['', '## Clips', '| id | theme | path | files |', '|---|---|---|---|'] + [f"| {c['id']} | {c['theme']} | `{c['path']}` | {', '.join(c['files'])} |" for c in clips]
 L += ['', '## Assets & tools', '| id | path | description |', '|---|---|---|'] + [f"| {a['id']} | `{a['path']}` | {a['desc']} |" for a in assets]
-(R/'INDEX.md').write_text('\n'.join(L) + '\n'); print(len(docs), 'docs', len(rules), 'rules', len(clips), 'clips')
+T = '\n'.join(L) + '\n'
+if '--check' in sys.argv:
+    ok = (R/'INDEX.md').exists() and (R/'INDEX.md').read_text() == T and (R/'index.json').exists() and (R/'index.json').read_text() == J
+    print('INDEX up to date' if ok else 'INDEX.md/index.json stale: run python3 pipeline/scripts/build-index.py'); sys.exit(0 if ok else 1)
+(R/'index.json').write_text(J); (R/'INDEX.md').write_text(T); print(len(docs), 'docs', len(rules), 'rules', len(clips), 'clips')
