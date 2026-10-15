@@ -51,6 +51,7 @@ Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (cùng đường dẫn
 | `node_modules/`, `.bundle-cache/` | thư viện npm, cache bundle | sinh lại | `npm ci` trong `video-engine/` |
 | `video-engine/public/voice/_prosody-job.json` | file job tạm | không cần | — |
 | `resources/refs/awesome-ai-motion/` | clone tài liệu ngoài | tuỳ chọn | `git clone` lại |
+| `resources/refs/transitions.dev/` | clone tài liệu ngoài (Transitions.dev License, @8c92530) | tuỳ chọn | `git clone` lại; bản port nằm ở `video-engine/src/composition/transitions/` |
 | `.env`, `__pycache__/`, `.DS_Store` | bí mật/cache | không chép | — |
 
 Voice take (`video-engine/public/voice/*.wav|json`) **được commit** nên Mac có qua git. Chạy `python3 pipeline/scripts/media-sync.py verify` trên Mac sau mỗi lần sync; exit ≠ 0 = thiếu.

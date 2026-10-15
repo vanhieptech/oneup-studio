@@ -12,3 +12,5 @@ tags: [links]
 - HyperFrames: https://github.com/heygen-com/hyperframes · tài liệu: https://hyperframes.heygen.com
 - GSAP (free, Standard License): https://gsap.com/llms-full.txt
 - Remotion (phương án thay thế): https://www.remotion.dev/docs/license/faq
+- **transitions.dev** (Transitions.dev License: free transitions may be used/modified in commercial projects; no redistributing the collection as a library; tooling MIT): https://github.com/Jakubantalik/transitions.dev @ 8c92530c75b291affdcd39eb0db1df98a40acfef (2026-10-15)
+  Clone: `git clone https://github.com/Jakubantalik/transitions.dev resources/refs/transitions.dev` (gitignored). Ported (8, frame-driven) in `video-engine/src/composition/transitions/tdev.ts` + `catalog.json`; only ported values are in git, not the library.

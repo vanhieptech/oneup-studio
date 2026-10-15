@@ -1,5 +1,6 @@
 import type React from "react";
 import { easeInOutCubic } from "../animation/timing";
+import { tdevStyle, TDEV_NAMES, type TdevName } from "./transitions/tdev";
 
 /** Style for the INCOMING scene during its first transitionFrames. p: 0→1. Deterministic, CSS-only. */
 export function transitionStyle(type: string, p: number, w: number, h: number): React.CSSProperties {
@@ -9,7 +10,7 @@ export function transitionStyle(type: string, p: number, w: number, h: number): 
     case "slide": return { transform: `translateX(${(1 - e) * w}px)`, boxShadow: "-20px 0 0 #111111" };
     case "wipe": return { clipPath: `inset(0 ${(1 - e) * 100}% 0 0 round 0 60px 60px 0)` };
     case "iris": return { clipPath: `circle(${e * Math.hypot(w, h) * 0.6}px at 50% 45%)` };
-    default: return {};
+    default: return type.startsWith("tdev-") ? tdevStyle(type as TdevName, p) : {};
   }
 }
-export const TRANSITION_TYPES = ["cut", "fade", "slide", "wipe", "iris"] as const;
+export const TRANSITION_TYPES = ["cut", "fade", "slide", "wipe", "iris", ...TDEV_NAMES] as const;

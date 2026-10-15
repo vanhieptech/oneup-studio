@@ -1,0 +1,14 @@
+{
+ "source": {"name": "transitions.dev", "url": "https://github.com/Jakubantalik/transitions.dev", "commit": "8c92530c75b291affdcd39eb0db1df98a40acfef", "license": "Transitions.dev License (free transitions: commercial use + modify OK; no redistribution as a library)"},
+ "usage": "spec scene `transition: \"tdev-…\"` (scene entrance via transitionStyle) or tdevStyle(name, p) for an element entrance/accent",
+ "effects": [
+  {"slug": "tdev-modal", "en": "Modal open (scale 0.96 + fade)", "purposes": ["전환", "주목 끌기"], "use": "card/board/popup appears; calm scene change", "dur_s": 0.4, "orig": "06-modal"},
+  {"slug": "tdev-page", "en": "Page side-by-side (slide 8px + blur)", "purposes": ["전환", "순서·흐름"], "use": "next step / forward-back between beats", "dur_s": 0.45, "orig": "08-page-side-by-side"},
+  {"slug": "tdev-panel", "en": "Panel reveal (rise + blur)", "purposes": ["설명", "전환"], "use": "explanation panel, research label slides in", "dur_s": 0.5, "orig": "07-panel-reveal"},
+  {"slug": "tdev-text-swap", "en": "Text states swap (y + blur)", "purposes": ["강조", "비교"], "use": "word/label changes (MAI → NAY, before/after)", "dur_s": 0.3, "orig": "04-text-states-swap"},
+  {"slug": "tdev-icon-swap", "en": "Icon swap (scale 0.25 + blur)", "purposes": ["강조"], "use": "prop/icon pops in or replaces another", "dur_s": 0.35, "orig": "09-icon-swap"},
+  {"slug": "tdev-stagger", "en": "Texts reveal stagger (40ms)", "purposes": ["순서·흐름", "설명"], "use": "3 bullets / list items in sequence", "dur_s": 0.5, "orig": "18-texts-reveal"},
+  {"slug": "tdev-badge", "en": "Notification badge (diagonal slide + spring pop)", "purposes": ["주목 끌기", "브랜딩"], "use": "sticker, counter, CTA badge", "dur_s": 0.5, "orig": "03-notification-badge"},
+  {"slug": "tdev-shake", "en": "Error state shake", "purposes": ["강조", "분위기"], "use": "'No, we don't do that', wrong move, self-blame hit", "dur_s": 0.35, "orig": "12-error-state-shake"}
+ ]
+}

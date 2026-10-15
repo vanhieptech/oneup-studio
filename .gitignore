@@ -5,6 +5,7 @@ media/footage/**/*.mp4
 media/footage/**/*.m4a
 media/footage/**/*.wav
 resources/refs/awesome-ai-motion/
+resources/refs/transitions.dev/
 .env
 content/samples/**/explainer/renders/
 content/clips/**/final/out/

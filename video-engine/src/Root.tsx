@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { TdevDemo } from "./composition/transitions/TdevDemo";
 import { ComicComposition, type ComicProps } from "./composition/ComicComposition";
 import { CharacterSheet } from "./composition/CharacterSheet";
 import { Cover, type CoverProps } from "./composition/Cover";
@@ -26,6 +27,7 @@ export const RemotionRoot: React.FC = () => (
     />
     <Composition id="Cover" component={Cover as React.FC<CoverProps>} durationInFrames={1} fps={30} width={1080} height={1920}
       defaultProps={{ direction: "a", theme: "light", series: "Làm ít, xong nhiều", ep: 1, hero: ["MAI HỌC", "NẾU–THÌ"], accent: 1, strike: 0, expression: "surprised", emote: "!" } as CoverProps} />
+    <Composition id="TdevDemo" component={TdevDemo} durationInFrames={90} fps={30} width={1080} height={1920} />
     <Composition id="CharacterSheet" component={CharacterSheet} durationInFrames={90} fps={30} width={1080} height={1920} />
   </>
 );

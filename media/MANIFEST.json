@@ -544,5 +544,17 @@
   "size": 14478,
   "sha256": "ae2c659dd0b7dcdfbd91df008e77b3dbdc37e6d6762cbe0148132f7b0b6d186d",
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/transitions-demo/transitions-demo.mp4",
+  "size": 74136,
+  "sha256": "d68adcab1f7a1d7ebba67e9037d54302a016a4f45044d97182bf5957c41bfa35",
+  "source": "TdevDemo render 2026-10-15 (transitions.dev ports)"
+ },
+ {
+  "path": "media/samples/lab/transitions-demo/transitions-demo.png",
+  "size": 97383,
+  "sha256": "71a58fcf3fd86e93d77b472bff4e4f0416d24b3c04e5b918d0649d932a578d64",
+  "source": "TdevDemo render 2026-10-15 (transitions.dev ports)"
  }
 ]
