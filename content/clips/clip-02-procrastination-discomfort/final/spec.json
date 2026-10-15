@@ -174,20 +174,7 @@
               "word": "bản chất"
             }
           ],
-          "props": [
-            {
-              "kind": "words",
-              "x": 540,
-              "y": 330,
-              "s": 1.25,
-              "words": [
-                "BẢN CHẤT LÀ GÌ?"
-              ],
-              "dropAt": [
-                0.0
-              ]
-            }
-          ],
+          "props": [],
           "lines": [
             {
               "speaker": "hiep",
@@ -254,7 +241,7 @@
             {
               "kind": "laptop",
               "x": 260,
-              "y": 1500,
+              "y": 1300,
               "s": 0.55,
               "text": "OneUp",
               "sub": "mở…",
@@ -263,7 +250,7 @@
             {
               "kind": "phone",
               "x": 260,
-              "y": 1050,
+              "y": 950,
               "s": 0.7,
               "rot": 8,
               "at": 0.9,
@@ -332,7 +319,7 @@
             {
               "kind": "phone",
               "x": 260,
-              "y": 1300,
+              "y": 1250,
               "s": 0.7,
               "rot": 8,
               "at": 0.0,
@@ -509,9 +496,9 @@
             },
             {
               "kind": "sign",
-              "x": 300,
-              "y": 1650,
-              "s": 0.65,
+              "x": 280,
+              "y": 1200,
+              "s": 0.6,
               "rot": 3,
               "text": "THỨ HAI · ĐỔI VIỆC",
               "at": 4.8
@@ -561,8 +548,8 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.5,
-              "facing": "right",
+              "x": 0.72,
+              "facing": "left",
               "pose": "sitting",
               "action": "idle",
               "expression": "despair"
@@ -608,7 +595,7 @@
             {
               "kind": "calendar",
               "x": 220,
-              "y": 1600,
+              "y": 1150,
               "s": 0.55,
               "pages": [
                 "HÔM NAY",
@@ -680,7 +667,7 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.7,
+              "x": 0.76,
               "facing": "left",
               "pose": "standing",
               "action": "talking",
@@ -708,18 +695,18 @@
           "props": [
             {
               "kind": "sign",
-              "x": 270,
-              "y": 1450,
-              "s": 0.55,
+              "x": 250,
+              "y": 1000,
+              "s": 0.45,
               "rot": -3,
               "text": "STEEL 2007 · 691 KẾT QUẢ",
               "at": 2.8
             },
             {
               "kind": "words",
-              "x": 540,
-              "y": 1780,
-              "s": 0.6,
+              "x": 260,
+              "y": 1220,
+              "s": 0.5,
               "words": [
                 "KHÓ CHỊU?",
                 "LÀM ĐƯỢC?",
@@ -733,8 +720,8 @@
             },
             {
               "kind": "sign",
-              "x": 270,
-              "y": 1600,
+              "x": 260,
+              "y": 1380,
               "s": 0.5,
               "rot": 2,
               "text": "TƯƠNG QUAN",
@@ -799,7 +786,7 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.6,
+              "x": 0.74,
               "facing": "left",
               "pose": "standing",
               "action": "talking",
@@ -827,9 +814,9 @@
           "props": [
             {
               "kind": "sign",
-              "x": 330,
-              "y": 1650,
-              "s": 0.62,
+              "x": 270,
+              "y": 1150,
+              "s": 0.45,
               "rot": -4,
               "text": "TRÁNH KHÓ CHỊU ≠ CHƯA CỐ GẮNG",
               "at": 0.8
@@ -929,7 +916,7 @@
             {
               "kind": "laptop",
               "x": 230,
-              "y": 1450,
+              "y": 1300,
               "s": 0.55,
               "text": "oneup.swift",
               "sub": "dòng 1 ✓",
@@ -1029,7 +1016,7 @@
             {
               "kind": "calendar",
               "x": 230,
-              "y": 1700,
+              "y": 1200,
               "s": 0.55,
               "pages": [
                 "NGÀY XONG: T6"

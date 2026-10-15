@@ -40,7 +40,7 @@ A = [
  SC("b01", "hook", "grid", "cut", C(0.72, "left", "standing", "talking", "focused"), [line("b01", "focused")],
     ("Smash: chữ BẢN CHẤT đập giữa khung, Thầy gõ thước (frame 0)", "bản chất"),
     [S("stamp", 0, 0.0, "bản chất")],
-    [{"kind": "words", "x": 540, "y": 330, "s": 1.25, "words": ["BẢN CHẤT LÀ GÌ?"], "dropAt": [0.0]}],
+    [],
     narr="BẢN CHẤT LÀ GÌ?", push=0.14),
  SC("b01b", "hook", "bed", "cut", C(0.5, "right", "sitting", "idle", "happy"), [line("b01b", "focused")],
     ("Smash cut: Hiệp mở laptop OneUp → giây sau đã nằm quẹt TikTok 21:00", "TikTok"),
@@ -83,10 +83,10 @@ A = [
 ]
 
 # L-033 layout fixes (v17 render): character x + prop positions so props stay off heads and bubbles
-LAYOUT = {"b01b": {"x": 0.72, "props": [(260, 1500, 0.55), (260, 1050, 0.7)]}, "b02": {"x": 0.72, "props": [(260, 1300, 0.7), None]},
-          "b05": {"props": [None, (300, 1650, 0.65)]}, "b06": {"props": [None, None, (220, 1600, 0.55)]},
-          "b07": {"props": [(270, 1450, 0.55), (540, 1780, 0.6), (270, 1600, 0.5)]}, "b08": {"props": [(330, 1650, 0.62)]},
-          "b09": {"props": [(230, 1450, 0.55), (540, 330, 0.6)]}, "b09c": {"props": [(540, 330, 0.6), (230, 1700, 0.55)]}, "b03": {"props": [None, (540, 330, 0.65)]}}
+LAYOUT = {"b01b": {"x": 0.72, "props": [(260, 1300, 0.55), (260, 950, 0.7)]}, "b02": {"x": 0.72, "props": [(260, 1250, 0.7), None]},
+          "b05": {"props": [None, (280, 1200, 0.6)]}, "b06": {"x": 0.72, "props": [None, None, (220, 1150, 0.55)]},
+          "b07": {"x": 0.76, "props": [(250, 1000, 0.45), (260, 1220, 0.5), (260, 1380, 0.5)]}, "b08": {"x": 0.74, "props": [(270, 1150, 0.45)]},
+          "b09": {"props": [(230, 1300, 0.55), (540, 330, 0.6)]}, "b09c": {"props": [(540, 330, 0.6), (230, 1200, 0.55)]}, "b03": {"props": [None, (540, 330, 0.65)]}}
 for sc in A:
     L = LAYOUT.get(sc["id"])
     if not L: continue

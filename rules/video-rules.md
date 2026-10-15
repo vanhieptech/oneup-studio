@@ -18,7 +18,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 1. **Ngôn ngữ:** giọng nói tiếng Việt. Caption tiếng Anh highlight từng từ.
 2. **Giọng (DL-035):** cả hai nhân vật dùng **giọng AI F5-TTS** theo luật 46: nhân vật chibi **Hiệp** = "F5 · Thái Sơn" (nam, miền Nam), **Omi** = "F5 · Mỹ Duyên" (nữ, miền Nam). Giọng mẫu (reference) là câu tổng hợp bằng preset VieNeu, không clone giọng thật của ai (kể cả Hiệp). Hiệp vẫn có thể tự thu giọng thật cho một clip (thì clip đó không dùng giọng AI cho Hiệp); khi đó giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s.
 3. **Lên hình:** series này **chỉ dùng comic + motion graphics**, không quay mặt/cảnh thật (DL-027). Hiệp lên hình bằng nhân vật chibi (luật 43).
-4. **Độ dài:** 55–60s, 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
+4. **Độ dài:** mục tiêu 55–60s; dài hơn 60s được phép khi nội dung cần (DL-067, check-rules chỉ cảnh báo), không ngắn hơn 55s; 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
 5. **Phong cách (xoay vòng trong khuôn comic):** beat kể chuyện comic (Remotion, luật 42) · beat giải thích motion graphics (HyperFrames) · màn hình app OneUp dựng lại bằng vector/mockup trong motion beat (từ tuần 3). Không talking head, không b-roll tự quay trong series này.
 6. **Tỉ lệ hình:** 100% hình dựng (comic + motion graphics) để đồng nhất. **Không** yêu cầu cảnh tự quay, không trộn cảnh quay thật (DL-027). Cảnh quay thật để dành cho giai đoạn sau hoặc series khác (sẽ có bộ luật riêng).
 
