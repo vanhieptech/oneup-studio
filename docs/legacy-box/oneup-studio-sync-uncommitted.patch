@@ -1,0 +1,1030 @@
+diff --git a/content/clips/clip-02-procrastination-discomfort/final/check-rules.txt b/content/clips/clip-02-procrastination-discomfort/final/check-rules.txt
+index f4148d4..0409f0c 100644
+--- a/content/clips/clip-02-procrastination-discomfort/final/check-rules.txt
++++ b/content/clips/clip-02-procrastination-discomfort/final/check-rules.txt
+@@ -1,9 +1,11 @@
+-⚠ rule-4   no timing.json yet; estimated 68s from word count
+-⚠ rule-7   196 VI words (target ~150–170)
++⚠ rule-4   planned length 61.3s (target 55–60s) · exception DL-058: Hiệp 14/10 17:54 chỉ cắt e06 nếu > 62s (cho phép ≤ 62s)
++⚠ rule-7   198 VI words (target ~150–170)
+ ✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
+ ✔ rule-8   last beat b12 part='cta' (CTA question expected)
+ ✔ rule-11  no Omi
+ ✔ rule-17  theme dark vs theme-map DARK
++✔ rule-15  explainer/index.html: Be Vietnam Pro embedded
++✔ rule-15  explainer/index.html.tpl: Be Vietnam Pro embedded
+ ✔ rule-15  video-engine fonts.ts uses Be Vietnam Pro
+ ✔ rule-21  no music
+ ⚠ rule-41  Southern particles in 1/16 lines
+@@ -20,11 +22,49 @@
+ ✔ rule-46  post.md: AI-voice disclosure line in caption
+ ✔ rule-46  post.md: disclosure names the engine (F5-TTS, DL-035)
+ ✔ rule-32  post.md hashtags
++✖ rule-45  video-engine validate: npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:13222)
++    at resolve (file:///home/box/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:15453)
++    at nextResolve (node:internal/modules/esm/hooks:748:28) {
++  code: 'ERR_MODULE_NOT_FOUND'
++}
++
++Node.js v22.20.0
++
++✖ rule-4   missing content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4
++⚠ rule-46  STT b01 0.57: “tính năng ôm ý”
++⚠ rule-46  STT b01b 0.67: “Hoảng hôm nay, hoảng ngày mai, rồi lại hoảng.”
++✔ rule-46  STT b01c 1.00: “toang thật rồi.”
++⚠ rule-46  STT b02 0.63: “Mở có ra 5 giây sau đã lướt tiết tốc.”
++✔ rule-46  STT b02 0.82: “Chán nãn tội lỗi. Rồi tự mắng ngựa mình lùi quá.”
++✔ rule-46  STT b03 0.93: “Nhưng nghiên cứu nói, thường đâu phải lười. Mình đang nếm một cảm giác.”
++✔ rule-46  STT e01 0.80: “Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ hay không biết bắt đầu, nghe quen không.”
++⚠ rule-46  STT e02 0.72: “g積 690 mốt hệ số tương quan, vì càng khó chịu, càng thấy mình kém, càng dễ hoảng.”
++✔ rule-46  STT e03 1.00: “Vì phân thưởng ở xa, cái khó chịu ở ngay bây giờ nên điện thoại thắng.”
++✔ rule-46  STT e04 0.88: “nên trước khi làm, hỏi một câu việc này khó chịu”
++✔ rule-46  STT e05 0.93: “không biết bắt đầu, viết ba gạch đầu dòng, sợ giỡ cho phép nháp xấu.”
++✔ rule-46  STT e06 0.80: “Thấy tráng hẹn 10 phút, hết giờ thì được dừng.”
++✔ rule-46  STT e07 0.85: “Lỗi hay gặp mắn mình rồi gồng, mắn xong việc càng khó chịu.”
++✔ rule-46  STT b11 0.95: “Lưu ý nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại lần sau hoảng thì mở ra.”
++✔ rule-46  STT b12 1.00: “Việc bạn đang hoãn khó chịu chỗ nào, comment một chữ.”
++✔ rule-46  STT b12 1.00: “Còn tính năng Omi, mình đi hỏi câu đó đây.”
++✖ rule-50  timing.json has no transitions list (build-final ≥ DL-042 writes it)
++✔ rule-53  post.md has all 12 fields with code blocks
++✔ rule-53  cover text 16 chars (≤ 40)
++✔ rule-53  cover.png exported
++✔ rule-53  cover frame timestamp given
++✔ rule-53  caption 947 chars (≤ 2200)
++✔ rule-53  5 hashtags (3–5)
++✔ rule-53  no spammy hashtags
++✔ rule-53  hashtags appended to caption
++✔ rule-53  settings checklist: AI toggle, duet/stitch, location
++✔ rule-53  post-checklist.md present
++✔ rule-54  spec.cover props (template A) present
++✔ L-020    cover.png rendered from Cover template (props json present)
+ ✔ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
+ ✔ rule-55  first spoken clause 3 words (≤ 6, punchy)
+ ✔ rule-55  first spoken word at 0.12s (≤ 0.3)
+ ✔ rule-55  first visual change/hit at 0.12s (≤ 1.0)
+-✔ rule-55  0–3s: 2 cut(s) + 4 hit(s) (need ≥ 2 total, ≥ 1 cut) · estimated
++✔ rule-55  0–3s: 1 cut(s) + 4 hit(s) (need ≥ 2 total, ≥ 1 cut)
+ ✔ rule-55  hook voice emotions ['sad', 'sad', 'sad'] (dramatic)
+ ✔ rule-56  engagement devices ['comment-challenge', 'loop', 'relatable-question', 'save-prompt'] (≥3 incl. comment-challenge + loop)
+ ✔ rule-56  no begging for likes/follows
+@@ -36,7 +76,7 @@
+ ✔ rule-52  b01b: motion/visual described
+ ✔ rule-52  b01b: effect tied to spoken word “hoãn”
+ ✔ rule-52  b01c: motion/visual described
+-✔ rule-52  b01c: effect tied to spoken word “như vậy”
++✔ rule-52  b01c: effect tied to spoken word “Toang”
+ ✔ rule-52  b02: motion/visual described
+ ✔ rule-52  b02: effect tied to spoken word “tội lỗi”
+ ✔ rule-52  b03: motion/visual described
+@@ -68,8 +108,16 @@
+ ✔ rule-52  b12: effect tied to spoken word “Omi”
+ ✔ rule-52  script-final.md effects table covers every beat
+ ✔ rule-52  effects table has no **THIẾU** cells
++✖ rule-51  e01: 0 accent hit(s) — none
++✖ rule-51  e02: 0 accent hit(s) — none
++✖ rule-51  e03: 0 accent hit(s) — none
++✖ rule-51  e04: 0 accent hit(s) — none
++✖ rule-51  e05: 0 accent hit(s) — none
++✖ rule-51  e06: 0 accent hit(s) — none
++✖ rule-51  e07: 0 accent hit(s) — none
++✔ rule-51  0 accent SFX, spacing ≥ 0.25s
+ ✔ rule-49  lessons.md: 20 lessons loaded
+-⚠ L-001    contact-sheet.png present for self-review
++✔ L-001    contact-sheet.png present for self-review
+ ✔ L-004    highlight indexes within EN caption
+ ✔ L-005    no [tags] in spoken text
+ ✔ L-006    phrase tempos within 0.85–1.15
+@@ -81,7 +129,98 @@
+ ✔ L-017    no markup in on-screen text
+ ✔ L-011    Omi/week consistent
+ ✔ L-003    caption segments never overlap
+-⚠ L-014    hf-check.txt missing (run build-final lint gate)
+-⚠ L-013    25 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
++✔ L-014    hf-check.txt shows hyperframes lint 0 errors
++✔ L-016    b01/f5-326c41246390: sentence/clause units, no cut inside any F5 output
++✔ L-007    b01/f5-326c41246390: F5 per-unit generation (whole clause per call)
++✔ L-016    b01/f5-326c41246390: 1 unit(s)
++✔ L-008    b01/f5-326c41246390: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b01/f5-326c41246390: STT 4 vs 4 syllables
++✔ L-016    b01b/f5-4095f70a2567: sentence/clause units, no cut inside any F5 output
++✔ L-007    b01b/f5-4095f70a2567: F5 per-unit generation (whole clause per call)
++✔ L-016    b01b/f5-4095f70a2567: 1 unit(s)
++✔ L-008    b01b/f5-4095f70a2567: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b01b/f5-4095f70a2567: STT 9 vs 9 syllables
++✔ L-016    b01c/f5-f79fbf5a67cf: sentence/clause units, no cut inside any F5 output
++✔ L-007    b01c/f5-f79fbf5a67cf: F5 per-unit generation (whole clause per call)
++✔ L-016    b01c/f5-f79fbf5a67cf: 1 unit(s)
++✔ L-008    b01c/f5-f79fbf5a67cf: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b01c/f5-f79fbf5a67cf: STT 3 vs 3 syllables
++✔ L-016    b02/f5-2ec9b28a5ba0: sentence/clause units, no cut inside any F5 output
++✔ L-007    b02/f5-2ec9b28a5ba0: F5 per-unit generation (whole clause per call)
++✔ L-016    b02/f5-2ec9b28a5ba0: 1 unit(s)
++✔ L-008    b02/f5-2ec9b28a5ba0: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b02/f5-2ec9b28a5ba0: STT 10 vs 9 syllables
++✔ L-016    b02/f5-14547a444848: sentence/clause units, no cut inside any F5 output
++✔ L-007    b02/f5-14547a444848: F5 per-unit generation (whole clause per call)
++✔ L-016    b02/f5-14547a444848: 2 unit(s)
++✔ L-008    b02/f5-14547a444848: timbre/F0 spread across units 1.1 st (≤ 2.5)
++✔ L-008    b02/f5-14547a444848: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b02/f5-14547a444848: STT 11 vs 11 syllables
++✔ L-016    b03/f5-0271eb2054b8: sentence/clause units, no cut inside any F5 output
++✔ L-007    b03/f5-0271eb2054b8: F5 per-unit generation (whole clause per call)
++✔ L-016    b03/f5-0271eb2054b8: 3 unit(s)
++✔ L-008    b03/f5-0271eb2054b8: timbre/F0 spread across units 2.0 st (≤ 2.5)
++✔ L-008    b03/f5-0271eb2054b8: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b03/f5-0271eb2054b8: STT 14 vs 14 syllables
++✔ L-016    e01/f5-fd1d2dfea83a: sentence/clause units, no cut inside any F5 output
++✔ L-007    e01/f5-fd1d2dfea83a: F5 per-unit generation (whole clause per call)
++✔ L-016    e01/f5-fd1d2dfea83a: 3 unit(s)
++✔ L-008    e01/f5-fd1d2dfea83a: timbre/F0 spread across units 1.4 st (≤ 2.5)
++✔ L-008    e01/f5-fd1d2dfea83a: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e01/f5-fd1d2dfea83a: STT 20 vs 20 syllables
++✔ L-016    e02/f5-00112fb8fae8: sentence/clause units, no cut inside any F5 output
++✔ L-007    e02/f5-00112fb8fae8: F5 per-unit generation (whole clause per call)
++✔ L-016    e02/f5-00112fb8fae8: 3 unit(s)
++✔ L-008    e02/f5-00112fb8fae8: timbre/F0 spread across units 2.1 st (≤ 2.5)
++✔ L-008    e02/f5-00112fb8fae8: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e02/f5-00112fb8fae8: STT 17 vs 21 syllables
++✔ L-016    e03/f5-ba77a972a011: sentence/clause units, no cut inside any F5 output
++✔ L-007    e03/f5-ba77a972a011: F5 per-unit generation (whole clause per call)
++✔ L-016    e03/f5-ba77a972a011: 3 unit(s)
++✔ L-008    e03/f5-ba77a972a011: timbre/F0 spread across units 0.9 st (≤ 2.5)
++✔ L-008    e03/f5-ba77a972a011: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e03/f5-ba77a972a011: STT 16 vs 16 syllables
++✔ L-016    e04/f5-6505e5807de7: sentence/clause units, no cut inside any F5 output
++✔ L-007    e04/f5-6505e5807de7: F5 per-unit generation (whole clause per call)
++✔ L-016    e04/f5-6505e5807de7: 2 unit(s)
++✔ L-008    e04/f5-6505e5807de7: timbre/F0 spread across units 1.3 st (≤ 2.5)
++✔ L-008    e04/f5-6505e5807de7: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e04/f5-6505e5807de7: STT 14 vs 14 syllables
++✔ L-016    e05/f5-bf146a0cd99f: sentence/clause units, no cut inside any F5 output
++✔ L-007    e05/f5-bf146a0cd99f: F5 per-unit generation (whole clause per call)
++✔ L-016    e05/f5-bf146a0cd99f: 3 unit(s)
++✖ L-008    e05/f5-bf146a0cd99f: timbre/F0 spread across units 5.8 st (≤ 2.5)
++✔ L-008    e05/f5-bf146a0cd99f: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e05/f5-bf146a0cd99f: STT 15 vs 15 syllables
++✔ L-016    e06/f5-fba3f5ca09cc: sentence/clause units, no cut inside any F5 output
++✔ L-007    e06/f5-fba3f5ca09cc: F5 per-unit generation (whole clause per call)
++✔ L-016    e06/f5-fba3f5ca09cc: 2 unit(s)
++✖ L-008    e06/f5-fba3f5ca09cc: timbre/F0 spread across units 5.4 st (≤ 2.5)
++✔ L-008    e06/f5-fba3f5ca09cc: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e06/f5-fba3f5ca09cc: STT 10 vs 10 syllables
++✔ L-016    e07/f5-ec90053679ba: sentence/clause units, no cut inside any F5 output
++✔ L-007    e07/f5-ec90053679ba: F5 per-unit generation (whole clause per call)
++✔ L-016    e07/f5-ec90053679ba: 2 unit(s)
++✔ L-008    e07/f5-ec90053679ba: timbre/F0 spread across units 0.8 st (≤ 2.5)
++✔ L-008    e07/f5-ec90053679ba: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    e07/f5-ec90053679ba: STT 13 vs 13 syllables
++✔ L-016    b11/f5-5e41f5a3ecac: sentence/clause units, no cut inside any F5 output
++✔ L-007    b11/f5-5e41f5a3ecac: F5 per-unit generation (whole clause per call)
++✔ L-016    b11/f5-5e41f5a3ecac: 3 unit(s)
++✔ L-008    b11/f5-5e41f5a3ecac: timbre/F0 spread across units 1.5 st (≤ 2.5)
++✔ L-008    b11/f5-5e41f5a3ecac: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b11/f5-5e41f5a3ecac: STT 20 vs 20 syllables
++✔ L-016    b12/f5-ea4c76dacef9: sentence/clause units, no cut inside any F5 output
++✔ L-007    b12/f5-ea4c76dacef9: F5 per-unit generation (whole clause per call)
++✔ L-016    b12/f5-ea4c76dacef9: 1 unit(s)
++✔ L-008    b12/f5-ea4c76dacef9: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b12/f5-ea4c76dacef9: STT 11 vs 11 syllables
++✔ L-016    b12/f5-08542e06141e: sentence/clause units, no cut inside any F5 output
++✔ L-007    b12/f5-08542e06141e: F5 per-unit generation (whole clause per call)
++✔ L-016    b12/f5-08542e06141e: 2 unit(s)
++✔ L-008    b12/f5-08542e06141e: timbre/F0 spread across units 0.6 st (≤ 2.5)
++✔ L-008    b12/f5-08542e06141e: edit points clean (no loud/mid-syllable cuts)
++✔ L-009    b12/f5-08542e06141e: STT 10 vs 11 syllables
++✔ L-013    nothing pending push
+ 
+-85 checks · 0 error(s) · 8 warning(s) → PASS
++217 checks · 12 error(s) · 9 warning(s) → FAIL
+diff --git a/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html b/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html
+index 40c218a..6767452 100644
+--- a/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html
++++ b/content/clips/clip-02-procrastination-discomfort/final/explainer/index.html
+@@ -51,7 +51,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
+ .fixrow .p{font-size:40px;font-weight:600;opacity:.6}
+ .fixrow .s{font-size:60px;font-weight:700;letter-spacing:-1px;display:flex;gap:18px;align-items:center}
+ #bul{display:flex;flex-direction:column;gap:4px;font-size:40px;font-weight:600}
+-#draft{left:600px;top:1010px;font-size:46px}
++#draft{left:520px;top:1180px;font-size:46px}
+ #ring{position:absolute;left:240px;top:560px;width:600px;height:600px}
+ #tnum{position:absolute;left:240px;top:760px;width:600px;text-align:center;font-size:150px;font-weight:700;letter-spacing:-6px}
+ #stopok{position:absolute;left:300px;top:1220px;font-size:70px;font-weight:700;background:#1F9D55;color:#F7F7F5;border-radius:30px;padding:6px 40px 18px}
+@@ -67,10 +67,10 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
+ </style>
+ </head>
+ <body>
+-<div id="root" data-composition-id="main" data-start="0" data-duration="34.55" data-width="1080" data-height="1920">
++<div id="root" data-composition-id="main" data-start="0" data-duration="33.84" data-width="1080" data-height="1920">
+   <div id="grain"></div>
+   <img id="logo" src="logo.svg" />
+-  <div id="e01" class="sec clip" data-start="0" data-duration="34.55" data-track-index="0">
++  <div id="e01" class="sec clip" data-start="0" data-duration="33.84" data-track-index="0">
+     <div class="kicker">Procrastination =</div>
+     <div class="title">Né cảm giác</div>
+     <svg id="dodge" width="960" height="780" viewBox="0 0 960 780"><path class="dp" d="M120 700 C 40 420, 120 200, 480 190 C 840 200, 940 420, 860 700" fill="none" stroke="#111" stroke-width="12" stroke-dasharray="2 26" stroke-linecap="round"/><path class="dh" d="M830 660 L862 706 L900 660" fill="none" stroke="#111" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+@@ -78,7 +78,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
+     <div id="s1" class="spike">Chán</div><div id="s2" class="spike">Sợ làm dở</div><div id="s3" class="spike">Không biết bắt đầu</div>
+     <div id="q2">Nghe quen không?</div>
+   </div>
+-  <div id="e02" class="sec clip" data-start="0" data-duration="34.55" data-track-index="1">
++  <div id="e02" class="sec clip" data-start="0" data-duration="33.84" data-track-index="1">
+     <div class="kicker">Meta-analysis</div>
+     <div id="num">0</div>
+     <div id="numsub">correlations</div>
+@@ -87,7 +87,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
+     <div id="b3" class="bar"><div class="lab">Delay</div><div class="track"><div class="fill"></div></div></div>
+     <div id="cite">Steel (2007) · correlational</div>
+   </div>
+-  <div id="e03" class="sec clip" data-start="0" data-duration="34.55" data-track-index="2">
++  <div id="e03" class="sec clip" data-start="0" data-duration="33.84" data-track-index="2">
+     <div class="kicker">Why the phone wins</div>
+     <svg id="scale" viewBox="0 0 900 700">
+       <path d="M450 260 L450 620 M330 640 h240" stroke="#111" stroke-width="14" stroke-linecap="round"/>
+@@ -98,33 +98,33 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#F7F7F5}
+     </svg>
+     <div id="axis">now ─────────── later</div>
+   </div>
+-  <div id="e04" class="sec clip" data-start="0" data-duration="34.55" data-track-index="3">
++  <div id="e04" class="sec clip" data-start="0" data-duration="33.84" data-track-index="3">
+     <div class="kicker">Before you start, ask</div>
+     <div id="qcard" class="card"><div class="qm">?</div><div class="qt">What exactly<br/>feels bad here?</div></div>
+     <svg id="lens" viewBox="0 0 100 100"><circle cx="42" cy="42" r="28" fill="#F7F7F5" fill-opacity=".6" stroke="#111" stroke-width="9"/><path d="M62 62 L90 90" stroke="#111" stroke-width="12" stroke-linecap="round"/></svg>
+   </div>
+-  <div id="e05" class="sec clip" data-start="0" data-duration="34.55" data-track-index="4">
++  <div id="e05" class="sec clip" data-start="0" data-duration="33.84" data-track-index="4">
+     <div class="kicker">Make it feel smaller</div>
+     <div id="r1" class="card fixrow"><div class="p">No clear start?</div><div class="s"><span class="tag">3</span><div id="bul"><span>– bullet</span><span>– bullet</span><span>– bullet</span></div></div></div>
+     <div id="r2" class="card fixrow"><div class="p">Afraid it'll be bad?</div><div class="s">Ugly draft = OK</div></div>
+     <div id="draft" class="stampbox">DRAFT · OK</div>
+   </div>
+-  <div id="e06" class="sec clip" data-start="0" data-duration="34.55" data-track-index="5">
++  <div id="e06" class="sec clip" data-start="0" data-duration="33.84" data-track-index="5">
+     <div class="kicker">Bored? Set a timer</div>
+     <svg id="ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="none" stroke="#E4E2DD" stroke-width="18"/><circle id="arc" cx="100" cy="100" r="84" fill="none" stroke="#111" stroke-width="18" stroke-linecap="round" transform="rotate(-90 100 100)"/></svg>
+     <div id="tnum">10:00</div>
+     <div id="stopok">STOP · OK</div>
+   </div>
+-  <div id="e07" class="sec clip" data-start="0" data-duration="34.55" data-track-index="6">
++  <div id="e07" class="sec clip" data-start="0" data-duration="33.84" data-track-index="6">
+     <div class="kicker">Common mistake</div>
+     <div id="bad">“Mình lười quá!”</div>
+     <div id="stampx" class="stampbox">✕ NOT HELPING</div>
+     <div id="t7" class="card task"><div class="sub">// TODO</div><div class="lbl">Omi feature</div><div class="spk">feels worse</div></div>
+   </div>
+-  <div id="cap" class="clip" data-start="0" data-duration="34.55" data-track-index="9"></div>
++  <div id="cap" class="clip" data-start="0" data-duration="33.84" data-track-index="9"></div>
+ </div>
+ <script>
+-const T = {"sections": [{"id": "e01", "start": 0.35, "end": 6.236, "lines": [{"start": 0.65, "end": 5.686, "capEnd": 5.936, "words": [{"w": "Trì", "start": 0.71}, {"w": "hoãn", "start": 0.903}, {"w": "là", "start": 1.136}, {"w": "né", "start": 1.29}, {"w": "cảm", "start": 1.445}, {"w": "giác", "start": 1.639}, {"w": "khó", "start": 1.871}, {"w": "chịu:", "start": 2.064}, {"w": "chán,", "start": 2.335}, {"w": "sợ", "start": 2.725}, {"w": "làm", "start": 2.947}, {"w": "dở,", "start": 3.226}, {"w": "hay", "start": 3.504}, {"w": "không", "start": 3.742}, {"w": "biết", "start": 4.075}, {"w": "bắt", "start": 4.361}, {"w": "đầu.", "start": 4.599}, {"w": "Nghe", "start": 4.885}, {"w": "quen", "start": 5.101}, {"w": "không?", "start": 5.318}], "hl": [2, 3, 12], "cap": [{"word": "Procrastination", "start": 0.7}, {"word": "=", "start": 1.462}, {"word": "dodging", "start": 1.597}, {"word": "discomfort:", "start": 2.0}, {"word": "boredom,", "start": 2.583}, {"word": "fear", "start": 3.031}, {"word": "of", "start": 3.3}, {"word": "failing,", "start": 3.479}, {"word": "no", "start": 3.927}, {"word": "clear", "start": 4.107}, {"word": "start.", "start": 4.421}, {"word": "Sound", "start": 4.779}, {"word": "familiar?", "start": 5.093}]}], "hits": [{"id": "shield", "t": 1.707, "sfx": "pop"}, {"id": "faces", "t": 4.35, "sfx": "tick"}]}, {"id": "e02", "start": 6.236, "end": 12.461, "lines": [{"start": 6.536, "end": 11.911, "capEnd": 12.161, "words": [{"w": "Gộp", "start": 6.596}, {"w": "sáu", "start": 6.8}, {"w": "trăm", "start": 7.003}, {"w": "chín", "start": 7.247}, {"w": "mươi", "start": 7.492}, {"w": "mốt", "start": 7.736}, {"w": "hệ", "start": 7.939}, {"w": "số", "start": 8.102}, {"w": "tương", "start": 8.265}, {"w": "quan:", "start": 8.55}, {"w": "việc", "start": 8.835}, {"w": "càng", "start": 9.124}, {"w": "khó", "start": 9.413}, {"w": "chịu,", "start": 9.654}, {"w": "càng", "start": 9.991}, {"w": "thấy", "start": 10.273}, {"w": "mình", "start": 10.555}, {"w": "kém,", "start": 10.838}, {"w": "càng", "start": 11.12}, {"w": "dễ", "start": 11.371}, {"w": "hoãn.", "start": 11.538}], "hl": [0, 3, 10], "cap": [{"word": "691", "start": 6.586}, {"word": "correlations:", "start": 6.835}, {"word": "the", "start": 7.581}, {"word": "nastier", "start": 7.83}, {"word": "the", "start": 8.278}, {"word": "task", "start": 8.527}, {"word": "and", "start": 8.825}, {"word": "the", "start": 9.074}, {"word": "lower", "start": 9.323}, {"word": "your", "start": 9.671}, {"word": "confidence,", "start": 9.97}, {"word": "the", "start": 10.617}, {"word": "more", "start": 10.866}, {"word": "you", "start": 11.164}, {"word": "delay.", "start": 11.413}]}], "hits": [{"id": "count", "t": 6.648, "sfx": "rise"}, {"id": "bars", "t": 10.755, "sfx": "ding"}]}, {"id": "e03", "start": 12.461, "end": 17.306, "lines": [{"start": 12.761, "end": 16.756, "capEnd": 17.006, "words": [{"w": "Vì", "start": 12.821}, {"w": "phần", "start": 12.973}, {"w": "thưởng", "start": 13.2}, {"w": "ở", "start": 13.503}, {"w": "xa,", "start": 13.617}, {"w": "cái", "start": 13.806}, {"w": "khó", "start": 14.02}, {"w": "chịu", "start": 14.234}, {"w": "ở", "start": 14.49}, {"w": "ngay", "start": 14.619}, {"w": "bây", "start": 14.875}, {"w": "giờ.", "start": 15.089}, {"w": "Nên", "start": 15.346}, {"w": "điện", "start": 15.602}, {"w": "thoại", "start": 15.909}, {"w": "thắng.", "start": 16.267}], "hl": [4, 10, 13], "cap": [{"word": "Because", "start": 12.811}, {"word": "the", "start": 13.175}, {"word": "reward", "start": 13.378}, {"word": "is", "start": 13.701}, {"word": "far", "start": 13.863}, {"word": "away,", "start": 14.066}, {"word": "the", "start": 14.349}, {"word": "discomfort", "start": 14.551}, {"word": "is", "start": 15.037}, {"word": "right", "start": 15.199}, {"word": "now.", "start": 15.482}, {"word": "So", "start": 15.725}, {"word": "the", "start": 15.887}, {"word": "phone", "start": 16.089}, {"word": "wins.", "start": 16.373}]}], "hits": [{"id": "tip", "t": 15.393, "sfx": "snap"}, {"id": "win", "t": 16.581, "sfx": "ding"}]}, {"id": "e04", "start": 17.306, "end": 21.457, "lines": [{"start": 17.606, "end": 20.907, "capEnd": 21.157, "words": [{"w": "Nên", "start": 17.666}, {"w": "trước", "start": 17.866}, {"w": "khi", "start": 18.147}, {"w": "làm,", "start": 18.347}, {"w": "hỏi", "start": 18.587}, {"w": "một", "start": 18.836}, {"w": "câu:", "start": 19.086}, {"w": "việc", "start": 19.385}, {"w": "này", "start": 19.625}, {"w": "khó", "start": 19.826}, {"w": "chịu", "start": 20.026}, {"w": "ở", "start": 20.266}, {"w": "chỗ", "start": 20.386}, {"w": "nào?", "start": 20.587}], "hl": [4, 8], "cap": [{"word": "So", "start": 17.656}, {"word": "before", "start": 17.85}, {"word": "you", "start": 18.238}, {"word": "start,", "start": 18.48}, {"word": "ask:", "start": 18.868}, {"word": "what", "start": 19.159}, {"word": "exactly", "start": 19.45}, {"word": "feels", "start": 19.886}, {"word": "bad", "start": 20.225}, {"word": "here?", "start": 20.468}]}], "hits": [{"id": "q", "t": 19.559, "sfx": "pop"}]}, {"id": "e05", "start": 21.457, "end": 26.537, "lines": [{"start": 21.757, "end": 25.987, "capEnd": 26.237, "words": [{"w": "Không", "start": 21.817}, {"w": "biết", "start": 22.077}, {"w": "bắt", "start": 22.299}, {"w": "đầu?", "start": 22.484}, {"w": "Viết", "start": 22.707}, {"w": "ba", "start": 23.043}, {"w": "gạch", "start": 23.268}, {"w": "đầu", "start": 23.604}, {"w": "dòng.", "start": 23.884}, {"w": "Sợ", "start": 24.277}, {"w": "dở?", "start": 24.622}, {"w": "Cho", "start": 25.054}, {"w": "phép", "start": 25.239}, {"w": "nháp", "start": 25.462}, {"w": "xấu.", "start": 25.684}], "hl": [4, 5, 12], "cap": [{"word": "No", "start": 21.807}, {"word": "clear", "start": 21.99}, {"word": "start?", "start": 22.311}, {"word": "Write", "start": 22.678}, {"word": "3", "start": 22.999}, {"word": "bullets.", "start": 23.136}, {"word": "Afraid", "start": 23.595}, {"word": "it'll", "start": 23.962}, {"word": "be", "start": 24.283}, {"word": "bad?", "start": 24.466}, {"word": "Allow", "start": 24.741}, {"word": "an", "start": 25.062}, {"word": "ugly", "start": 25.245}, {"word": "draft.", "start": 25.52}]}], "hits": [{"id": "bullets", "t": 23.101, "sfx": "pen"}, {"id": "draft", "t": 25.565, "sfx": "stamp"}]}, {"id": "e06", "start": 26.537, "end": 30.037, "lines": [{"start": 26.837, "end": 29.487, "capEnd": 29.737, "words": [{"w": "Thấy", "start": 26.897}, {"w": "chán?", "start": 27.122}, {"w": "Hẹn", "start": 27.385}, {"w": "mười", "start": 27.588}, {"w": "phút,", "start": 27.832}, {"w": "hết", "start": 28.117}, {"w": "giờ", "start": 28.347}, {"w": "thì", "start": 28.578}, {"w": "được", "start": 28.808}, {"w": "dừng.", "start": 29.085}], "hl": [2, 9], "cap": [{"word": "Bored?", "start": 26.887}, {"word": "Set", "start": 27.21}, {"word": "10", "start": 27.411}, {"word": "minutes.", "start": 27.572}, {"word": "When", "start": 27.976}, {"word": "it", "start": 28.218}, {"word": "rings,", "start": 28.379}, {"word": "you", "start": 28.702}, {"word": "may", "start": 28.903}, {"word": "stop.", "start": 29.105}]}], "hits": [{"id": "timer", "t": 27.852, "sfx": "tick"}, {"id": "ring", "t": 29.302, "sfx": "ding"}]}, {"id": "e07", "start": 30.037, "end": 34.447, "lines": [{"start": 30.337, "end": 33.897, "capEnd": 34.147, "words": [{"w": "Lỗi", "start": 30.397}, {"w": "hay", "start": 30.606}, {"w": "gặp:", "start": 30.815}, {"w": "mắng", "start": 31.066}, {"w": "mình", "start": 31.289}, {"w": "rồi", "start": 31.512}, {"w": "gồng.", "start": 31.697}, {"w": "Mắng", "start": 31.957}, {"w": "xong,", "start": 32.259}, {"w": "việc", "start": 32.611}, {"w": "càng", "start": 32.912}, {"w": "khó", "start": 33.214}, {"w": "chịu.", "start": 33.465}], "hl": [0, 1, 12], "cap": [{"word": "Common", "start": 30.387}, {"word": "mistake:", "start": 30.69}, {"word": "scold", "start": 31.069}, {"word": "yourself", "start": 31.334}, {"word": "and", "start": 31.713}, {"word": "force", "start": 31.903}, {"word": "it.", "start": 32.168}, {"word": "That", "start": 32.357}, {"word": "makes", "start": 32.585}, {"word": "the", "start": 32.85}, {"word": "task", "start": 33.039}, {"word": "feel", "start": 33.267}, {"word": "worse.", "start": 33.494}]}], "hits": [{"id": "stamp", "t": 31.671, "sfx": "stamp"}, {"id": "worse", "t": 33.575, "sfx": "rise"}]}]};
++const T = {"sections": [{"id": "e01", "start": 0.35, "end": 6.184, "lines": [{"start": 0.65, "end": 5.634, "capEnd": 5.884, "words": [{"w": "Trì", "start": 0.71}, {"w": "hoãn", "start": 0.903}, {"w": "là", "start": 1.136}, {"w": "né", "start": 1.29}, {"w": "cảm", "start": 1.445}, {"w": "giác", "start": 1.639}, {"w": "khó", "start": 1.871}, {"w": "chịu:", "start": 2.064}, {"w": "chán,", "start": 2.335}, {"w": "sợ", "start": 2.725}, {"w": "làm", "start": 2.947}, {"w": "dở,", "start": 3.226}, {"w": "hay", "start": 3.504}, {"w": "không", "start": 3.737}, {"w": "biết", "start": 4.062}, {"w": "bắt", "start": 4.341}, {"w": "đầu.", "start": 4.574}, {"w": "Nghe", "start": 4.853}, {"w": "quen", "start": 5.063}, {"w": "không?", "start": 5.274}], "hl": [2, 3, 12], "cap": [{"word": "Procrastination", "start": 0.7}, {"word": "=", "start": 1.454}, {"word": "dodging", "start": 1.587}, {"word": "discomfort:", "start": 1.986}, {"word": "boredom,", "start": 2.563}, {"word": "fear", "start": 3.006}, {"word": "of", "start": 3.272}, {"word": "failing,", "start": 3.45}, {"word": "no", "start": 3.893}, {"word": "clear", "start": 4.07}, {"word": "start.", "start": 4.381}, {"word": "Sound", "start": 4.736}, {"word": "familiar?", "start": 5.046}]}], "hits": [{"id": "shield", "t": 1.697, "sfx": "pop"}, {"id": "faces", "t": 4.314, "sfx": "tick"}]}, {"id": "e02", "start": 6.184, "end": 12.409, "lines": [{"start": 6.484, "end": 11.859, "capEnd": 12.109, "words": [{"w": "Gộp", "start": 6.544}, {"w": "sáu", "start": 6.748}, {"w": "trăm", "start": 6.951}, {"w": "chín", "start": 7.195}, {"w": "mươi", "start": 7.44}, {"w": "mốt", "start": 7.684}, {"w": "hệ", "start": 7.887}, {"w": "số", "start": 8.05}, {"w": "tương", "start": 8.213}, {"w": "quan:", "start": 8.498}, {"w": "việc", "start": 8.783}, {"w": "càng", "start": 9.072}, {"w": "khó", "start": 9.361}, {"w": "chịu,", "start": 9.602}, {"w": "càng", "start": 9.939}, {"w": "thấy", "start": 10.221}, {"w": "mình", "start": 10.503}, {"w": "kém,", "start": 10.786}, {"w": "càng", "start": 11.068}, {"w": "dễ", "start": 11.319}, {"w": "hoãn.", "start": 11.486}], "hl": [0, 3, 10], "cap": [{"word": "691", "start": 6.534}, {"word": "correlations:", "start": 6.783}, {"word": "the", "start": 7.529}, {"word": "nastier", "start": 7.778}, {"word": "the", "start": 8.226}, {"word": "task", "start": 8.475}, {"word": "and", "start": 8.773}, {"word": "the", "start": 9.022}, {"word": "lower", "start": 9.271}, {"word": "your", "start": 9.619}, {"word": "confidence,", "start": 9.918}, {"word": "the", "start": 10.565}, {"word": "more", "start": 10.814}, {"word": "you", "start": 11.112}, {"word": "delay.", "start": 11.361}]}], "hits": [{"id": "count", "t": 6.596, "sfx": "rise"}, {"id": "bars", "t": 10.703, "sfx": "ding"}]}, {"id": "e03", "start": 12.409, "end": 17.254, "lines": [{"start": 12.709, "end": 16.704, "capEnd": 16.954, "words": [{"w": "Vì", "start": 12.769}, {"w": "phần", "start": 12.921}, {"w": "thưởng", "start": 13.148}, {"w": "ở", "start": 13.451}, {"w": "xa,", "start": 13.565}, {"w": "cái", "start": 13.754}, {"w": "khó", "start": 13.968}, {"w": "chịu", "start": 14.182}, {"w": "ở", "start": 14.438}, {"w": "ngay", "start": 14.567}, {"w": "bây", "start": 14.823}, {"w": "giờ.", "start": 15.037}, {"w": "Nên", "start": 15.294}, {"w": "điện", "start": 15.55}, {"w": "thoại", "start": 15.857}, {"w": "thắng.", "start": 16.215}], "hl": [4, 10, 13], "cap": [{"word": "Because", "start": 12.759}, {"word": "the", "start": 13.123}, {"word": "reward", "start": 13.326}, {"word": "is", "start": 13.649}, {"word": "far", "start": 13.811}, {"word": "away,", "start": 14.014}, {"word": "the", "start": 14.297}, {"word": "discomfort", "start": 14.499}, {"word": "is", "start": 14.985}, {"word": "right", "start": 15.147}, {"word": "now.", "start": 15.43}, {"word": "So", "start": 15.673}, {"word": "the", "start": 15.835}, {"word": "phone", "start": 16.037}, {"word": "wins.", "start": 16.321}]}], "hits": [{"id": "tip", "t": 15.341, "sfx": "snap"}, {"id": "win", "t": 16.529, "sfx": "ding"}]}, {"id": "e04", "start": 17.254, "end": 21.405, "lines": [{"start": 17.554, "end": 20.855, "capEnd": 21.105, "words": [{"w": "Nên", "start": 17.614}, {"w": "trước", "start": 17.814}, {"w": "khi", "start": 18.095}, {"w": "làm,", "start": 18.295}, {"w": "hỏi", "start": 18.535}, {"w": "một", "start": 18.784}, {"w": "câu:", "start": 19.034}, {"w": "việc", "start": 19.333}, {"w": "này", "start": 19.573}, {"w": "khó", "start": 19.774}, {"w": "chịu", "start": 19.974}, {"w": "ở", "start": 20.214}, {"w": "chỗ", "start": 20.334}, {"w": "nào?", "start": 20.535}], "hl": [4, 8], "cap": [{"word": "So", "start": 17.604}, {"word": "before", "start": 17.798}, {"word": "you", "start": 18.186}, {"word": "start,", "start": 18.428}, {"word": "ask:", "start": 18.816}, {"word": "what", "start": 19.107}, {"word": "exactly", "start": 19.398}, {"word": "feels", "start": 19.834}, {"word": "bad", "start": 20.173}, {"word": "here?", "start": 20.416}]}], "hits": [{"id": "q", "t": 19.507, "sfx": "pop"}]}, {"id": "e05", "start": 21.405, "end": 26.425, "lines": [{"start": 21.705, "end": 24.085, "capEnd": 24.335, "words": [{"w": "Không", "start": 21.765}, {"w": "biết", "start": 22.045}, {"w": "bắt", "start": 22.285}, {"w": "đầu", "start": 22.485}, {"w": "thì", "start": 22.685}, {"w": "viết", "start": 22.885}, {"w": "ba", "start": 23.125}, {"w": "gạch", "start": 23.285}, {"w": "đầu", "start": 23.525}, {"w": "dòng.", "start": 23.725}], "hl": [4, 5], "cap": [{"word": "No", "start": 21.755}, {"word": "clear", "start": 21.984}, {"word": "start?", "start": 22.384}, {"word": "Write", "start": 22.841}, {"word": "3", "start": 23.242}, {"word": "bullets.", "start": 23.413}]}, {"start": 24.335, "end": 25.875, "capEnd": 26.125, "words": [{"w": "Sợ", "start": 24.395}, {"w": "dở", "start": 24.551}, {"w": "thì", "start": 24.706}, {"w": "cho", "start": 24.901}, {"w": "phép", "start": 25.095}, {"w": "nháp", "start": 25.328}, {"w": "xấu.", "start": 25.562}], "hl": [6], "cap": [{"word": "Afraid", "start": 24.385}, {"word": "it'll", "start": 24.607}, {"word": "be", "start": 24.802}, {"word": "bad?", "start": 24.913}, {"word": "Allow", "start": 25.08}, {"word": "an", "start": 25.275}, {"word": "ugly", "start": 25.386}, {"word": "draft.", "start": 25.553}]}], "hits": [{"id": "bullets", "t": 23.031, "sfx": "pen"}, {"id": "draft", "t": 25.462, "sfx": "stamp"}]}, {"id": "e06", "start": 26.425, "end": 29.335, "lines": [{"start": 26.725, "end": 28.785, "capEnd": 29.035, "words": [{"w": "Thấy", "start": 26.785}, {"w": "chán", "start": 27.007}, {"w": "thì", "start": 27.228}, {"w": "hẹn", "start": 27.413}, {"w": "mười", "start": 27.597}, {"w": "phút", "start": 27.819}, {"w": "rồi", "start": 28.04}, {"w": "được", "start": 28.225}, {"w": "dừng.", "start": 28.447}], "hl": [2, 7], "cap": [{"word": "Bored?", "start": 26.775}, {"word": "Set", "start": 27.081}, {"word": "10", "start": 27.272}, {"word": "minutes,", "start": 27.424}, {"word": "then", "start": 27.806}, {"word": "you", "start": 28.036}, {"word": "may", "start": 28.227}, {"word": "stop.", "start": 28.418}]}], "hits": [{"id": "timer", "t": 27.534, "sfx": "tick"}, {"id": "ring", "t": 28.689, "sfx": "ding"}]}, {"id": "e07", "start": 29.335, "end": 33.745, "lines": [{"start": 29.635, "end": 33.195, "capEnd": 33.445, "words": [{"w": "Lỗi", "start": 29.695}, {"w": "hay", "start": 29.904}, {"w": "gặp:", "start": 30.113}, {"w": "mắng", "start": 30.364}, {"w": "mình", "start": 30.587}, {"w": "rồi", "start": 30.81}, {"w": "gồng.", "start": 30.995}, {"w": "Mắng", "start": 31.255}, {"w": "xong,", "start": 31.557}, {"w": "việc", "start": 31.909}, {"w": "càng", "start": 32.21}, {"w": "khó", "start": 32.512}, {"w": "chịu.", "start": 32.763}], "hl": [0, 1, 12], "cap": [{"word": "Common", "start": 29.685}, {"word": "mistake:", "start": 29.988}, {"word": "scold", "start": 30.367}, {"word": "yourself", "start": 30.632}, {"word": "and", "start": 31.011}, {"word": "force", "start": 31.201}, {"word": "it.", "start": 31.466}, {"word": "That", "start": 31.655}, {"word": "makes", "start": 31.883}, {"word": "the", "start": 32.148}, {"word": "task", "start": 32.337}, {"word": "feel", "start": 32.565}, {"word": "worse.", "start": 32.792}]}], "hits": [{"id": "stamp", "t": 30.969, "sfx": "stamp"}, {"id": "worse", "t": 32.873, "sfx": "rise"}]}]};
+ const tl = gsap.timeline({ paused: true });
+ const S = Object.fromEntries(T.sections.map(s => [s.id, s]));
+ const A = (id, f) => { const s = S[id], l0 = s.lines[0], ln = s.lines[s.lines.length - 1]; return l0.start + f * (ln.capEnd - l0.start); };
+@@ -190,7 +190,7 @@ T.sections.forEach(s => s.lines.forEach(l => {
+     tl.fromTo(sp, { opacity: .16, y: 18 }, { opacity: 1, y: 0, duration: .22, ease: "back.out(2)" }, cw.start); });
+   tl.fromTo(d, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .2, ease: "power3.out" }, l.start - .05).to(d, { opacity: 0, duration: .15 }, l.capEnd - .15);
+ }));
+-tl.to("#root", { scale: 1.015, duration: 34.55, ease: "none", transformOrigin: "50% 40%" }, 0);
++tl.to("#root", { scale: 1.015, duration: 33.84, ease: "none", transformOrigin: "50% 40%" }, 0);
+ window.__timelines = window.__timelines || {}; window.__timelines["main"] = tl; tl.seek(0);
+ </script>
+ </body></html>
+diff --git a/content/clips/clip-02-procrastination-discomfort/final/post.md b/content/clips/clip-02-procrastination-discomfort/final/post.md
+index 0503edd..05690be 100644
+--- a/content/clips/clip-02-procrastination-discomfort/final/post.md
++++ b/content/clips/clip-02-procrastination-discomfort/final/post.md
+@@ -10,8 +10,8 @@ tags: [clip-02, post, tiktok, week-1]
+ 
+ ## 1. File video
+ ```
+-Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4 (chưa render)
+-Thời lượng: dự kiến 55–60s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
++Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4
++Thời lượng: 60.7s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+ ```
+ 
+ ## 2. Chữ trên cover (≤ 40 ký tự)
+@@ -22,7 +22,7 @@ Cover: **template A** (luật 54), props trong `spec.json → cover`. File: `fin
+ 
+ ## 3. Caption / tiêu đề TikTok (VI)
+ ```
+-POV: tính năng Omi bị hoãn lần thứ n. Hoãn, hoãn, lại hoãn. Mở code ra, 5 giây sau đã lướt TikTok… chán nản, tội lỗi, rồi tự mắng "mình lười quá". Nghe quen không?
++POV: tính năng Omi. Hoãn hôm nay, hoãn ngày mai, rồi lại hoãn. Toang thật rồi. Mở code ra, 5 giây sau đã lướt TikTok… chán nản, tội lỗi, rồi tự mắng "mình lười quá". Nghe quen không?
+ Nghiên cứu nói: trì hoãn thường không phải lười, mà là né cảm giác khó chịu (chán, sợ làm dở, không biết bắt đầu).
+ Gộp 691 hệ số tương quan (Steel, 2007): việc càng khó chịu, càng thấy mình kém thì càng dễ hoãn. Phần thưởng thì ở xa, cái khó chịu ở ngay bây giờ.
+ Cách gỡ: trước khi làm, hỏi "việc này khó chịu ở chỗ nào?". Không biết bắt đầu thì viết 3 gạch đầu dòng. Sợ làm dở thì cho phép nháp xấu. Thấy chán thì hẹn 10 phút.
+diff --git a/content/clips/clip-02-procrastination-discomfort/final/script-final.md b/content/clips/clip-02-procrastination-discomfort/final/script-final.md
+index 0d5b58c..f82bbfc 100644
+--- a/content/clips/clip-02-procrastination-discomfort/final/script-final.md
++++ b/content/clips/clip-02-procrastination-discomfort/final/script-final.md
+@@ -1,7 +1,7 @@
+ ---
+ id: clip-02.script-final
+ type: script
+-status: gate 1 duyệt 17:54, đang build
++status: đã render, chờ Hiệp duyệt
+ updated: 2026-10-14
+ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
+ ---
+@@ -47,7 +47,7 @@ tags: [clip-02, dark, pillar-1, ai-voice, f5, week-1, gate-1]
+ |---|---|---|---|
+ | 0.00 | Frame 0: cận laptop (prop mới) 0 dòng code, 'Omi feature · TODO', chữ hook to đã hiện | — | **OMI FEATURE: HOÃN. HOÃN. HOÃN.** |
+ | 0.12 | Push-in mạnh 0.14, dấu đỏ POSTPONED đóng xuống | `stamp` + "Tính năng Omi." (buồn) | giữ |
+-| ~1.1 | **CUT 1** → b01b lịch DEADLINE xé 3 tờ HÔM NAY→MAI→TUẦN SAU→THÁNG SAU, nhãn HOÃN x3 | `click` "Hoãn." · `click` "Hoãn." · `stamp` "Lại hoãn." | HOÃN / HOÃN / LẠI HOÃN |
++| ~1.1 | **CUT 1** → b01b lịch DEADLINE xé 3 tờ HÔM NAY→MAI→TUẦN SAU→THÁNG SAU, nhãn HOÃN x3 | `click` "Hoãn hôm nay." · `click` "Hoãn ngày mai." · `stamp` "Rồi lại hoãn." (đổi vì F5 nuốt 1 chữ "Hoãn" khi lặp) | HOÃN / HOÃN / LẠI HOÃN |
+ | ~2.4 | **CUT 2** → b01c mặt Hiệp khóc, nền tối dần (vignette) | `stamp` + "Toang thật rồi." (buồn) | **TOANG!** đập xuống |
+ | ~3.6 | CUT (swish) → b02 TikTok, chán nản, tội lỗi | `pop` "TikTok" | |
+ 
+@@ -81,7 +81,7 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
+ | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
+ |---|---|---|---|---|---|
+ | b01 | remotion | Hook cut 1: zoom mạnh vào màn hình laptop 'Omi feature · TODO', chữ hook to ngay frame 0; dấu đỏ POSTPONED đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
+-| b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | “hoãn” | `click` → “Hoãn”; `click` → “Hoãn”; `stamp` → “Lại hoãn” | cut (`swish`) |
++| b01b | remotion | Hook cut 2: 3 tờ lịch HÔM QUA / HÔM NAY / MAI xé liên tiếp theo từng chữ 'hoãn', camera giật nhẹ mỗi nhịp | “hoãn” | `click` → “Hoãn”; `click` → “Hoãn”; `stamp` → “lại hoãn” | cut (`swish`) |
+ | b01c | remotion | Hook cut 3: cận mặt Hiệp, giọt nước mắt, nền tối dần (vignette), chữ TOANG! đập xuống rung | “Toang” | `stamp` → “Toang” | cut (`swish`) |
+ | b02 | remotion | Comic: tay rời bàn phím sang điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi xuống đè lên đầu (squash) | “tội lỗi” | `pop` → “TikTok”; `stamp` → “lười” | cut (`swish`) |
+ | b03 | remotion | Comic: iris mở sang giấy trắng, chữ 'LƯỜI' bị bút gạch, Hiệp ngẩng lên nhận ra | “né một cảm giác” | `pen` → “đâu phải lười” | iris (`swish`) |
+diff --git a/content/clips/clip-02-procrastination-discomfort/final/spec.json b/content/clips/clip-02-procrastination-discomfort/final/spec.json
+index 3ebfccb..f090812 100644
+--- a/content/clips/clip-02-procrastination-discomfort/final/spec.json
++++ b/content/clips/clip-02-procrastination-discomfort/final/spec.json
+@@ -5,6 +5,7 @@
+   "week": 1,
+   "theme": "dark",
+   "pillar": "1 Làm ít, xong nhiều",
++  "length_exception": "DL-058: Hiệp 14/10 17:54 chỉ cắt e06 nếu > 62s (cho phép ≤ 62s)",
+   "story": "S-02 Omi feature (Hiệp xác nhận 14/10, DL-047)",
+   "trend": "‘vừa than bị dí deadline vừa lướt TikTok’ (vtcnews.vn; câu chung, không phải chuyện thật của Hiệp)",
+   "revisions": [
+@@ -686,25 +687,29 @@
+             {
+               "speaker": "hiep",
+               "emotion": "focused",
+-              "text": "Không biết bắt đầu? Viết ba gạch đầu dòng. Sợ dở? Cho phép nháp xấu.",
+-              "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
++              "text": "Không biết bắt đầu thì viết ba gạch đầu dòng.",
++              "en": "No clear start? Write 3 bullets.",
+               "hl": [
+                 4,
+-                5,
+-                12
++                5
+               ],
+               "phrases": [
+                 {
+-                  "t": "Không biết bắt đầu?"
+-                },
+-                {
+-                  "t": "Viết ba gạch đầu dòng."
+-                },
+-                {
+-                  "t": "Sợ dở?"
+-                },
++                  "t": "Không biết bắt đầu thì viết ba gạch đầu dòng."
++                }
++              ]
++            },
++            {
++              "speaker": "hiep",
++              "emotion": "focused",
++              "text": "Sợ dở thì cho phép nháp xấu.",
++              "en": "Afraid it'll be bad? Allow an ugly draft.",
++              "hl": [
++                6
++              ],
++              "phrases": [
+                 {
+-                  "t": "Cho phép nháp xấu."
++                  "t": "Sợ dở thì cho phép nháp xấu."
+                 }
+               ]
+             }
+@@ -737,21 +742,15 @@
+             {
+               "speaker": "hiep",
+               "emotion": "focused",
+-              "text": "Thấy chán? Hẹn mười phút, hết giờ thì được dừng.",
+-              "en": "Bored? Set 10 minutes. When it rings, you may stop.",
++              "text": "Thấy chán thì hẹn mười phút rồi được dừng.",
++              "en": "Bored? Set 10 minutes, then you may stop.",
+               "hl": [
+                 2,
+-                9
++                7
+               ],
+               "phrases": [
+                 {
+-                  "t": "Thấy chán?"
+-                },
+-                {
+-                  "t": "Hẹn mười phút,"
+-                },
+-                {
+-                  "t": "hết giờ thì được dừng."
++                  "t": "Thấy chán thì hẹn mười phút rồi được dừng."
+                 }
+               ]
+             }
+diff --git a/content/clips/clip-02-procrastination-discomfort/final/timing.json b/content/clips/clip-02-procrastination-discomfort/final/timing.json
+index ee27c63..7cd75cf 100644
+--- a/content/clips/clip-02-procrastination-discomfort/final/timing.json
++++ b/content/clips/clip-02-procrastination-discomfort/final/timing.json
+@@ -1,5 +1,5 @@
+ {
+- "total": 61.456,
++ "total": 60.746,
+  "parts": [
+   {
+    "id": "A",
+@@ -20,16 +20,16 @@
+    "id": "E",
+    "engine": "hyperframes",
+    "dir": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer",
+-   "dur": 34.55,
++   "dur": 33.84,
+    "mp4": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4",
+    "fx": "circleopen",
+    "scene_starts": [
+-    6.236,
+-    12.460999999999999,
+-    17.306,
+-    21.457,
+-    26.537,
+-    30.037
++    6.184,
++    12.408999999999999,
++    17.253999999999998,
++    21.404999999999998,
++    26.425,
++    29.335
+    ],
+    "_off": 15.021
+   },
+@@ -43,7 +43,7 @@
+    "scene_starts": [
+     5.58
+    ],
+-   "_off": 49.221
++   "_off": 48.511
+   }
+  ],
+  "lines": [
+@@ -128,7 +128,7 @@
+    "emotion": "focused",
+    "key": "f5-fd1d2dfea83a",
+    "local": 0.65,
+-   "dur": 5.036,
++   "dur": 4.984,
+    "t": 15.671
+   },
+   {
+@@ -139,9 +139,9 @@
+    "en": "691 correlations: the nastier the task and the lower your confidence, the more you delay.",
+    "emotion": "focused",
+    "key": "f5-00112fb8fae8",
+-   "local": 6.536,
++   "local": 6.484,
+    "dur": 5.375,
+-   "t": 21.557
++   "t": 21.505
+   },
+   {
+    "beat": "clip-02.b06",
+@@ -151,9 +151,9 @@
+    "en": "Because the reward is far away, the discomfort is right now. So the phone wins.",
+    "emotion": "focused",
+    "key": "f5-ba77a972a011",
+-   "local": 12.761,
++   "local": 12.709,
+    "dur": 3.995,
+-   "t": 27.782
++   "t": 27.73
+   },
+   {
+    "beat": "clip-02.b07",
+@@ -163,33 +163,45 @@
+    "en": "So before you start, ask: what exactly feels bad here?",
+    "emotion": "focused",
+    "key": "f5-6505e5807de7",
+-   "local": 17.606,
++   "local": 17.554,
+    "dur": 3.301,
+-   "t": 32.627
++   "t": 32.575
+   },
+   {
+    "beat": "clip-02.b08",
+    "scene": "e05",
+    "speaker": "hiep",
+-   "say": "Không biết bắt đầu? Viết ba gạch đầu dòng. Sợ dở? Cho phép nháp xấu.",
+-   "en": "No clear start? Write 3 bullets. Afraid it'll be bad? Allow an ugly draft.",
++   "say": "Không biết bắt đầu thì viết ba gạch đầu dòng.",
++   "en": "No clear start? Write 3 bullets.",
+    "emotion": "focused",
+-   "key": "f5-bf146a0cd99f",
+-   "local": 21.757,
+-   "dur": 4.23,
+-   "t": 36.778
++   "key": "f5-6d0718186688",
++   "local": 21.705,
++   "dur": 2.38,
++   "t": 36.726
++  },
++  {
++   "beat": "clip-02.b08",
++   "scene": "e05",
++   "speaker": "hiep",
++   "say": "Sợ dở thì cho phép nháp xấu.",
++   "en": "Afraid it'll be bad? Allow an ugly draft.",
++   "emotion": "focused",
++   "key": "f5-7235cf806b85",
++   "local": 24.335,
++   "dur": 1.54,
++   "t": 39.356
+   },
+   {
+    "beat": "clip-02.b09",
+    "scene": "e06",
+    "speaker": "hiep",
+-   "say": "Thấy chán? Hẹn mười phút, hết giờ thì được dừng.",
+-   "en": "Bored? Set 10 minutes. When it rings, you may stop.",
++   "say": "Thấy chán thì hẹn mười phút rồi được dừng.",
++   "en": "Bored? Set 10 minutes, then you may stop.",
+    "emotion": "focused",
+-   "key": "f5-fba3f5ca09cc",
+-   "local": 26.837,
+-   "dur": 2.65,
+-   "t": 41.858
++   "key": "f5-c1e2911a848d",
++   "local": 26.725,
++   "dur": 2.06,
++   "t": 41.746
+   },
+   {
+    "beat": "clip-02.b10",
+@@ -199,9 +211,9 @@
+    "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
+    "emotion": "focused",
+    "key": "f5-ec90053679ba",
+-   "local": 30.337,
++   "local": 29.635,
+    "dur": 3.56,
+-   "t": 45.358
++   "t": 44.656
+   },
+   {
+    "beat": "clip-02.b11",
+@@ -213,7 +225,7 @@
+    "key": "f5-5e41f5a3ecac",
+    "local": 0.3,
+    "dur": 4.83,
+-   "t": 49.521
++   "t": 48.811
+   },
+   {
+    "beat": "clip-02.b12",
+@@ -225,7 +237,7 @@
+    "key": "f5-ea4c76dacef9",
+    "local": 0.55,
+    "dur": 2.89,
+-   "t": 55.351
++   "t": 54.641
+   },
+   {
+    "beat": "clip-02.b12",
+@@ -237,7 +249,7 @@
+    "key": "f5-08542e06141e",
+    "local": 3.64,
+    "dur": 2.556,
+-   "t": 58.441
++   "t": 57.731
+   }
+  ],
+  "transitions": [
+@@ -267,42 +279,42 @@
+    "sfx": "whoosh-soft"
+   },
+   {
+-   "at": 21.289,
++   "at": 21.237,
+    "kind": "scene",
+    "sfx": "swish"
+   },
+   {
+-   "at": 27.514,
++   "at": 27.462,
+    "kind": "scene",
+    "sfx": "swish"
+   },
+   {
+-   "at": 32.359,
++   "at": 32.307,
+    "kind": "scene",
+    "sfx": "swish"
+   },
+   {
+-   "at": 36.51,
++   "at": 36.458,
+    "kind": "scene",
+    "sfx": "swish"
+   },
+   {
+-   "at": 41.59,
++   "at": 41.478,
+    "kind": "scene",
+    "sfx": "swish"
+   },
+   {
+-   "at": 45.09,
++   "at": 44.388,
+    "kind": "scene",
+    "sfx": "swish"
+   },
+   {
+-   "at": 49.428,
++   "at": 48.718,
+    "kind": "part",
+    "sfx": "whoosh-soft"
+   },
+   {
+-   "at": 54.833,
++   "at": 54.123,
+    "kind": "scene",
+    "sfx": "swish"
+   }
+@@ -342,67 +354,67 @@
+   },
+   {
+    "name": "pop",
+-   "at": 16.76
++   "at": 16.75
+   },
+   {
+    "name": "tick",
+-   "at": 19.403
++   "at": 19.367
+   },
+   {
+    "name": "rise",
+-   "at": 21.701
++   "at": 21.649
+   },
+   {
+    "name": "ding",
+-   "at": 25.808
++   "at": 25.756
+   },
+   {
+    "name": "snap",
+-   "at": 30.446
++   "at": 30.394
+   },
+   {
+    "name": "ding",
+-   "at": 31.634
++   "at": 31.582
+   },
+   {
+    "name": "pop",
+-   "at": 34.612
++   "at": 34.56
+   },
+   {
+    "name": "pen",
+-   "at": 38.154
++   "at": 38.084
+   },
+   {
+    "name": "stamp",
+-   "at": 40.618
++   "at": 40.515
+   },
+   {
+    "name": "tick",
+-   "at": 42.905
++   "at": 42.587
+   },
+   {
+    "name": "ding",
+-   "at": 44.355
++   "at": 43.742
+   },
+   {
+    "name": "stamp",
+-   "at": 46.724
++   "at": 46.022
+   },
+   {
+    "name": "rise",
+-   "at": 48.628
++   "at": 47.926
+   },
+   {
+    "name": "tick",
+-   "at": 50.553
++   "at": 49.843
+   },
+   {
+    "name": "pop",
+-   "at": 52.953
++   "at": 52.243
+   },
+   {
+    "name": "ding",
+-   "at": 58.573
++   "at": 57.863
+   },
+   {
+    "name": "swish",
+@@ -426,35 +438,35 @@
+   },
+   {
+    "name": "swish",
+-   "at": 21.169
++   "at": 21.117
+   },
+   {
+    "name": "swish",
+-   "at": 27.394
++   "at": 27.342
+   },
+   {
+    "name": "swish",
+-   "at": 32.239
++   "at": 32.187
+   },
+   {
+    "name": "swish",
+-   "at": 36.39
++   "at": 36.338
+   },
+   {
+    "name": "swish",
+-   "at": 41.47
++   "at": 41.358
+   },
+   {
+    "name": "swish",
+-   "at": 44.97
++   "at": 44.268
+   },
+   {
+    "name": "whoosh-soft",
+-   "at": 49.308
++   "at": 48.598
+   },
+   {
+    "name": "swish",
+-   "at": 54.713
++   "at": 54.003
+   },
+   {
+    "name": "ambience",
+@@ -465,85 +477,85 @@
+   {
+    "section": "e01",
+    "id": "shield",
+-   "t": 16.76,
++   "t": 16.75,
+    "sfx": "pop"
+   },
+   {
+    "section": "e01",
+    "id": "faces",
+-   "t": 19.403,
++   "t": 19.367,
+    "sfx": "tick"
+   },
+   {
+    "section": "e02",
+    "id": "count",
+-   "t": 21.701,
++   "t": 21.649,
+    "sfx": "rise"
+   },
+   {
+    "section": "e02",
+    "id": "bars",
+-   "t": 25.808,
++   "t": 25.756,
+    "sfx": "ding"
+   },
+   {
+    "section": "e03",
+    "id": "tip",
+-   "t": 30.446,
++   "t": 30.394,
+    "sfx": "snap"
+   },
+   {
+    "section": "e03",
+    "id": "win",
+-   "t": 31.634,
++   "t": 31.582,
+    "sfx": "ding"
+   },
+   {
+    "section": "e04",
+    "id": "q",
+-   "t": 34.612,
++   "t": 34.56,
+    "sfx": "pop"
+   },
+   {
+    "section": "e05",
+    "id": "bullets",
+-   "t": 38.154,
++   "t": 38.084,
+    "sfx": "pen"
+   },
+   {
+    "section": "e05",
+    "id": "draft",
+-   "t": 40.618,
++   "t": 40.515,
+    "sfx": "stamp"
+   },
+   {
+    "section": "e06",
+    "id": "timer",
+-   "t": 42.905,
++   "t": 42.587,
+    "sfx": "tick"
+   },
+   {
+    "section": "e06",
+    "id": "ring",
+-   "t": 44.355,
++   "t": 43.742,
+    "sfx": "ding"
+   },
+   {
+    "section": "e07",
+    "id": "stamp",
+-   "t": 46.724,
++   "t": 46.022,
+    "sfx": "stamp"
+   },
+   {
+    "section": "e07",
+    "id": "worse",
+-   "t": 48.628,
++   "t": 47.926,
+    "sfx": "rise"
+   }
+  ],
+  "partStarts": [
+   0.0,
+   15.053,
+-  49.253
++  48.543
+  ]
+ }
+\ No newline at end of file
+diff --git a/content/idea-bank.md b/content/idea-bank.md
+index bdfc719..6a4e34d 100644
+--- a/content/idea-bank.md
++++ b/content/idea-bank.md
+@@ -2,7 +2,7 @@
+ id: idea-bank
+ type: plan
+ status: active
+-updated: 2026-10-12
++updated: 2026-10-15
+ tags: [ideas]
+ ---
+ # Idea bank
+@@ -13,3 +13,10 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
+ | Ngủ bù sau đêm xem C1 (bridge B-c1-01) | 2.38 | trụ sức khoẻ / năng lượng | "Thức xem C1 tới 2h? Tối nay mới là trận quan trọng." | LIGHT | ý tưởng (2026-10-12) |
+ | "Một trận nữa thôi": game và giờ ngủ (B-gamepass-01) | 3.9 | trụ 2 giữ tập trung | "Battlefield 6 vừa vào Game Pass. Giờ ngủ của bạn thì chưa chắc." | DARK | ý tưởng (2026-10-12) |
+ | Xổ số và kỳ vọng (B-vietlott-01) | 5.5 (cần số liệu VN) | tiền | "Chúc mừng chị ấy. Còn mình thì tính kiểu khác." | DARK | caution: cần fact Vietlott chính thức |
++| Họp không agenda (B-meeting-01) | 4.5 + 4.6 | trụ 2 | "Lời khuyên đang gây bão nè: vào họp thì cứ nói, nói đại cũng được…" | DARK | stub 2026-10-14, chờ duyệt |
++| Kỷ luật thiếu điều kiện dừng (B-exit-01) | 4.2 | trụ 1 | "Mấy hôm nay ai cũng nói: động lực thì hết, kỷ luật mới ở lại." | LIGHT | stub 2026-10-14, chờ duyệt |
++| Chợp 10 phút sau cơm trưa (B-nap-01) | 3.11 | trụ 3 năng lượng | "Feed đang đầy dân than mệt sau cơm trưa. Cà phê thêm một ly nữa hả?" | LIGHT | stub 2026-10-15, chờ duyệt |
++| Hông cần dậy 5 giờ (B-5am-01) | 3.2 + 3.3 | trụ 3 năng lượng | "Mấy hôm nay feed đầy dân dậy năm giờ sáng. Pre-workout, gym, rồi flex." | DARK | stub 2026-10-15, chờ duyệt |
++| Mục tiêu ngày quá tham (B-goals-01) | 4.12 | trụ 1 | "Mục tiêu mỗi ngày phải X đang gây bão. Sách hỏi: bạn tính theo tháng chưa?" | DARK | ý tưởng (2026-10-15) |
++| Từ chối việc riêng ngoài giờ (B-refuse-01) | 3.16 | trụ 2 | "Đồng nghiệp nhắn ngoài giờ nhờ việc riêng. Bạn trả lời thế nào?" | DARK | ý tưởng (2026-10-15) |
++| Floor Time ≠ trị liệu (B-floor-01) | 22.8 / 3.18 | trụ 4 | "Nằm sàn đang viral. Được. Mà nếu bạn cần công cụ có số liệu…" | LIGHT | ý tưởng (2026-10-15) |
+diff --git a/research/trends/ingest.md b/research/trends/ingest.md
+index 7d7c347..da50d5e 100644
+--- a/research/trends/ingest.md
++++ b/research/trends/ingest.md
+@@ -2,7 +2,7 @@
+ id: trends-ingest
+ type: trend-library
+ status: living
+-updated: 2026-10-14
++updated: 2026-10-15
+ tags: [trends, memes, slang, hashtags, topics]
+ ---
+ # Trend ingest: thư viện sống (rule-37, rule-39)
+@@ -21,7 +21,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen ·
+ | dragon-ball-super-beerus | Anime "Dragon Ball Super: Beerus" ra mắt gây sốt | pop culture | ok | 2026-10-13 | 2026-10-13 | 1 | [tuoitre](https://tuoitre.vn/dragon-ball-super-beerus-vua-ra-mat-da-gay-sot-100261013001914802.htm) |
+ | no-mans-sky-ios | No Man's Sky lên iPhone sau "redemption arc" 10 năm | tech/gaming | ok | 2026-10-13 | 2026-10-13 | 1 | [ars](https://arstechnica.com/gaming/2026/10/after-a-10-year-redemption-arc-no-mans-sky-is-coming-to-the-iphone-and-ipad/) |
+ | claude-bullying-ban | Anthropic cấm "bắt nạt" chatbot Claude | tech/AI | ok | 2026-10-13 | 2026-10-13 | 1 | [vnexpress](https://vnexpress.net/anthropic-cam-nguoi-dung-bat-nat-chatbot-claude-5131204.html) |
+-| halloween-2026 | Halloween 31/10, #halloween hạng 1 TikTok (+262%/7 ngày) | seasonal | ok | 2026-10-13 | 2026-10-14 | 2 | [trendsmcp](https://www.trendsmcp.ai/trending/tiktok-hashtags-trending-october-12-2026) |
++| halloween-2026 | Halloween 31/10, #halloween hạng 1 TikTok (+262%/7 ngày) | seasonal | ok | 2026-10-13 | 2026-10-15 | 3 | [trendsmcp](https://www.trendsmcp.ai/trending/tiktok-hashtags-trending-october-12-2026) |
+ | ngay-doanh-nhan-13-10 | Ngày Doanh nhân VN 13/10 | seasonal | caution | 2026-10-13 | 2026-10-13 | 1 | [dantri](https://dantri.com.vn/kinh-doanh/chap-canh-nhung-doanh-nhan-dan-toc-20261012193345541.htm) |
+ | dieu-hoa-26-do | Bật điều hòa 26 độ ban đêm (sách không có mục) | lifestyle | ok | 2026-10-13 | 2026-10-13 | 1 | [kenh14](https://kenh14.vn/loi-khuyen-cho-nhung-gia-dinh-hay-bat-dieu-hoa-26-do-vao-ban-dem-215261012225044575.chn) |
+ | scam-xem-phim-ngan | Chiêu lừa "xem phim ngắn kiếm tiền triệu" | tech/security | caution | 2026-10-13 | 2026-10-13 | 1 | [vnexpress](https://vnexpress.net/chieu-lua-xem-phim-ngan-kiem-tien-trieu-5130435.html) |
+@@ -34,12 +34,26 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen ·
+ | google-code-comprehension-interview | Google thử vòng phỏng vấn đọc code lạ có Gemini (theo X News, cần kiểm) | tech/career | ok | 2026-10-14 | 2026-10-14 | 1 | [X News](https://x.com/i/trending/2109399914962694292) |
+ | microsoft-layoff-vn | Microsoft được cho là cắt nhóm R&D tại Việt Nam | tech/work | caution | 2026-10-14 | 2026-10-14 | 1 | [vnexpress](https://vnexpress.net/microsoft-sa-thai-nhan-su-tai-viet-nam-5131896.html), cafebiz, genk |
+ | iphone-18-hype | Tranh cãi iPhone 18 Pro mất dần sức hút; "iphone 18" lên Google Trends VN | tech/money | ok | 2026-10-14 | 2026-10-14 | 1 | [vnexpress](https://vnexpress.net/tranh-cai-iphone-18-pro-mat-dan-suc-hut-5131460.html) |
+-| 10k-steps-debate | 10.000 bước/ngày có thực tế? (gốc quảng cáo 1965) | health/habits | ok | 2026-10-13 | 2026-10-14 | 2 | [X News](https://x.com/i/trending/2109372046493003926) |
+-| productivity-tricks-adult | "Năng suất tuổi trưởng thành = thử mẹo tâm lý mới liên tục" | meme/productivity | ok | 2026-10-13 | 2026-10-14 | 2 | [bluesky](https://bsky.app/profile/astrokatie.com/post/3mxh6wwsuku27) |
+-| sep-om-viec-ai | Sếp ôm thêm việc vì cấp dưới lạm dụng AI | tech/work | ok | 2026-10-13 | 2026-10-14 | 2 | [vnexpress](https://vnexpress.net/sep-om-them-viec-vi-cap-duoi-lam-dung-ai-5130995.html) |
++| 10k-steps-debate | 10.000 bước/ngày có thực tế? (gốc quảng cáo 1965) | health/habits | ok | 2026-10-13 | 2026-10-15 | 3 | [X News](https://x.com/i/trending/2109372046493003926) |
++| productivity-tricks-adult | "Năng suất tuổi trưởng thành = thử mẹo tâm lý mới liên tục" | meme/productivity | ok | 2026-10-13 | 2026-10-15 | 3 | [bluesky](https://bsky.app/profile/astrokatie.com/post/3mxh6wwsuku27) |
++| sep-om-viec-ai | Sếp ôm thêm việc vì cấp dưới lạm dụng AI | tech/work | ok | 2026-10-13 | 2026-10-15 | 3 | [vnexpress](https://vnexpress.net/sep-om-them-viec-vi-cap-duoi-lam-dung-ai-5130995.html) |
+ | room-makeover-19tr | Nhân viên lương 19 triệu chi 9 triệu "lột xác" phòng ngủ | lifestyle/money | caution | 2026-10-14 | 2026-10-14 | 1 | [kenh14](https://kenh14.vn/nhan-vien-van-phong-luong-19-trieu-chi-9-trieu-lot-xac-phong-ngu-215261013114816225.chn) |
+ | shipper-6935-ngay | Shipper giao hàng liên tục 6.935 ngày | lifestyle | ok | 2026-10-14 | 2026-10-14 | 1 | [kenh14](https://kenh14.vn/tai-san-o-que-cua-shipper-sn-1973-giao-hang-lien-tuc-suot-6935-ngay-215261013223224713.chn) |
+ 
++
++| post-lunch-slump | Người lớn than mệt sau cơm trưa + wind-down tối | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110418790723006851) |
++| early-risers-5am | Dân dậy 5h khoe gym / pre-workout | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110448654192431562) |
++| realistic-goals-debate | Tranh luận mục tiêu sức khoẻ/năng suất hàng ngày có thực tế? | social debates | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109762860901454314) |
++| dong-nghiep-viec-rieng | Đồng nghiệp nhờ việc riêng ngoài giờ | niche/work | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/dong-nghiep-nho-viec-rieng-ngoai-gio-lam-viec-tu-choi-the-nao-215261014112324973.chn) |
++| floor-time-tiktok | TikTok Floor Time (nằm sàn reset) | memes/wellness | ok | 2026-10-15 | 2026-10-15 | 1 | [verywell](https://www.verywellmind.com/floor-time-11917599) |
++| sleep-struggles-late | Thức khuya + kiệt sức | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109971172024860764) |
++| paper-writing-habits | Người vẫn viết giấy giữa đời màn hình | niche | ok | 2026-10-15 | 2026-10-15 | 1 | [gnews](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2tlbk0zc0RkU3czQzU5UmloNjFMbHRqZTdQakxqOFVZbzIyZU9Db1dYMHJ1dGFuTnl) |
++| us-alcohol-lowest | Mỹ uống rượu thấp nhất từ 1939 | news/health | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110230256925778352) |
++| di-lam-stress | Đi làm stress việc / thất nghiệp stress tiền | lifestyle | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/di-lam-thi-stress-vi-cong-viec-that-nghiep-thi-stress-vi-tien-bac-215261010091120065.chn) |
++| millennials-staying-home | Millennials thích ở nhà lúc này | social debates | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109768961726316947) |
++| iphone-duo-coc-30tr | Người Việt đặt iPhone Duo cọc 30 triệu | tech/money | ok | 2026-10-15 | 2026-10-15 | 1 | [vnexpress](https://vnexpress.net/nguoi-viet-dat-mua-iphone-duo-phai-coc-30-trieu-dong-5132370.html) |
++| character-ai-bankruptcy | Character.AI xin phá sản | tech/AI | caution | 2026-10-15 | 2026-10-15 | 1 | [vnexpress](https://vnexpress.net/startup-character-ai-nop-don-xin-pha-san-5132194.html) |
++| genz-diem-tua | Gen Z điểm tựa an toàn khi tẩy chay / kiệt sức | social debates | caution | 2026-10-15 | 2026-10-15 | 1 | [tiền phong via gnews](https://news.google.com/rss/articles/CBMimgFBVV95cUxQSjFUV28wVEdwelI5SnpuMFBoRllzUjA3Z3lGSVBPbEl3UldYdVVsZmxTdEk4cW5ud2x) |
+ ## Memes & formats
+ | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
+ |---|---|---|---|---|---|---|---|---|---|
+@@ -51,6 +65,8 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen ·
+ | this-is-your-sign | "This is your sign to…" | format | EN · mọi nhóm | 2026-10-13 | 2026-10-13 | 1 | [postdom](https://postdom.com/blog/tiktok-trends) | P07, chỉ dùng bản đảo ngược | trụ 1 |
+ | vali-so-7-content | "Làm content cả năm không ai hay, chọn vali số 7 cả nước biết" | meme | VI · creator / gen Z | 2026-10-13 | 2026-10-13 | 1 | [35express](https://35express.org/trend-lam-content-ca-nam-khong-ai-hay-chon-vali-so-7-ca-nuoc-biet/) | P09, tự giễu hành trình kênh (cần S-04) | ý tưởng mới |
+ 
++| floor-time | Floor Time (nằm sàn reset) | format | EN · wellness / gen Z | 2026-10-15 | 2026-10-15 | 1 | [verywell](https://www.verywellmind.com/floor-time-11917599) | Đảo: nghỉ được, không phải trị liệu → 22.8 | B-floor-01 |
++
+ ## Cụm từ / slang hay xuất hiện trong comment
+ | id | Cụm từ | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip |
+ |---|---|---|---|---|---|---|---|---|
+@@ -95,6 +111,14 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen ·
+ | B-iphone-01 | iphone-18-hype | muốn đổi máy vì tin đồn | 5.23 / 6.24 | "iPhone 18 chưa ra, mà bạn đã muốn đổi máy chưa?" (P01) | humor | ý tưởng mới | đề xuất | 2026-10-14 |
+ | B-interview-01 | google-code-comprehension-interview | luyện thuật toán mà đi làm toàn đọc code người khác | 23.19 | "Google thử phỏng vấn bằng đọc code lạ. Bạn đang luyện đúng thứ sẽ phải làm chưa?" (P04) | data | ý tưởng mới (cần kiểm nguồn gốc) | đề xuất | 2026-10-14 |
+ 
++| B-nap-01 | post-lunch-slump | 2h chiều mắt díp, cà phê thứ 3 | 3.11 | "Feed đang đầy dân than mệt sau cơm trưa. Cà phê thêm một ly nữa hả?" (P12+P03) | humor / data | ý tưởng mới (trụ 3) | stub, chờ duyệt | 2026-10-15 |
++| B-5am-01 | early-risers-5am | đặt 5h / cuối tuần ngủ bù | 3.2 + 3.3 | "Mấy hôm nay feed đầy dân dậy năm giờ sáng. Pre-workout, gym, rồi flex." (P12+P11+P03) | contrarian / data | ý tưởng mới (trụ 3) | stub, chờ duyệt | 2026-10-15 |
++| B-goals-01 | realistic-goals-debate | checklist ngày quá tham | 4.12 | "Mục tiêu mỗi ngày phải X đang gây bão. Sách hỏi: bạn tính theo tháng chưa?" (P11+P03) | contrarian | ý tưởng mới | đề xuất | 2026-10-15 |
++| B-refuse-01 | dong-nghiep-viec-rieng | nhắn nhờ việc riêng 9h tối | 3.16 | "Đồng nghiệp nhắn ngoài giờ nhờ việc riêng. Bạn trả lời thế nào?" (P01) | empathy / humor | ý tưởng mới (trụ 2) | đề xuất | 2026-10-15 |
++| B-paper-01 | paper-writing-habits | trước ngủ cầm điện thoại | 3.8 | "Mọi người khoe sổ giấy. Mình hỏi giờ ngủ của bạn." (P06) | data | ý tưởng mới | đề xuất | 2026-10-15 |
++| B-stress-01 | di-lam-stress | kẹt stress việc / stress tiền | 3.13 + 5.27 | "Đi làm cũng stress, thất nghiệp cũng stress. Còn một lớp đệm." (P10) | empathy / data | ý tưởng mới | đề xuất | 2026-10-15 |
++| B-home-01 | millennials-staying-home | chọn ở nhà thay vì đi ra | 22.9 | "Millennials bảo ở nhà là nhất. Sách không cãi — chỉ nhắc một khoản chi." (P03) | empathy | ý tưởng mới | đề xuất | 2026-10-15 |
++| B-floor-01 | floor-time-tiktok | nằm sàn theo trend | 22.8 / 3.18 | "Nằm sàn đang viral. Được. Mà nếu bạn cần công cụ có số liệu…" (P07→P03) | contrarian / data | ý tưởng mới | đề xuất | 2026-10-15 |
+ ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
+ | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
+ |---|---|---|---|---|---|
+diff --git a/research/trends/patterns.md b/research/trends/patterns.md
+index 57e2a45..77f2bfb 100644
+--- a/research/trends/patterns.md
++++ b/research/trends/patterns.md
+@@ -2,7 +2,7 @@
+ id: trends-patterns
+ type: pattern-library
+ status: living
+-updated: 2026-10-14
++updated: 2026-10-15
+ tags: [trends, hooks, patterns, formats, learning]
+ ---
+ # Hook & format pattern library (rule-47)
+@@ -10,17 +10,19 @@ Grows daily via `skills/trend-digest` (v2). One row per pattern. `uses` = times
+ 
+ | id | Pattern | Template (VI) | Why it works | Best angle | seen | uses | wins | first | last | status | evidence |
+ |---|---|---|---|---|---|---|---|---|---|---|---|
+-| P01 | Trend-as-mirror | "Bạn thức coi {trend} tới 2h, rồi hứa mai…" | viewer sees own habit in a hot moment | humor | 2 | 0 | 0 | 2026-10-13 | 2026-10-13 | active | seed; YT "Dự án ma của giới trẻ: hẹn đi Đà Lạt từ 2024…" (23k) |
++| P01 | Trend-as-mirror | "Bạn thức coi {trend} tới 2h, rồi hứa mai…" | viewer sees own habit in a hot moment | humor | 3 | 0 | 0 | 2026-10-13 | 2026-10-15 | active | seed; YT "Dự án ma của giới trẻ: hẹn đi Đà Lạt từ 2024…" (23k); 2026-10-15: đồng nghiệp nhờ việc; sleep struggles |
+ | P02 | Omi calls it out | Omi: "Ủa, lại {excuse} nữa hả?" | comic jab, character-driven, not preachy | humor | 0 | 0 | 0 | 2026-10-13 | 2026-10-13 | active | seed (sample-full-w5) |
+-| P03 | Everyone says X, book says Y | "Ai cũng nói {X}. Sách nói ngược lại." | contrarian, differentiation built in | contrarian | 5 | 0 | 0 | 2026-10-13 | 2026-10-14 | active | seed; Forkast "AI agents write 30% more code – and resolve zero additional issues"; 2026-10-14: X News 'discipline over motivation', 'anger boosts performance', 'social media breaks' debates |
++| P03 | Everyone says X, book says Y | "Ai cũng nói {X}. Sách nói ngược lại." | contrarian, differentiation built in | contrarian | 7 | 0 | 0 | 2026-10-13 | 2026-10-15 | active | seed; Forkast "AI agents write 30% more code – and resolve zero additional issues"; 2026-10-14: X News 'discipline over motivation', 'anger boosts performance', 'social media breaks' debates; 2026-10-15: 5am vs fixed wake; realistic goals |
+ | P04 | Number shock | "{số} người … chỉ vì …" | data hook, needs verified VN-valid fact | data | 3 | 0 | 0 | 2026-10-13 | 2026-10-14 | active | Ars/Forkast 30% more code vs no more issues (2026-10); 2026-10-14: IMF 'AI chạm 40% việc làm', call center −4%/năm (X News) |
+ | P05 | Seasonal arc | "Còn {n} ngày là hết năm. {arc} của bạn tới đâu rồi?" | ties to Winter Arc / Great Lock In timers | empathy | 3 | 0 | 0 | 2026-10-13 | 2026-10-14 | active | great-lock-in, winter-arc; YT "become unrecognizable before 2026 ends" (790k), "change your life in 90 days" (418k); 2026-10-14: YT 'How to stop procrastinating in 2026/2027' |
+-| P06 | Actually-method | "Cách *thật sự* {làm X}, hông phải cách bạn đang làm" | promises a correction of a common way; pairs with a book fact | contrarian / data | 5 | 0 | 0 | 2026-10-13 | 2026-10-14 | active | YT "The secret to actually lock in" (1.36M), "how to *ACTUALLY* stay productive" (514k), "how to ACTUALLY lock in" (299k), "how to Actually Lock In for the Last 90 Days"; 2026-10-14: YT 'How to REALLY Stop Procrastinating' |
+-| P07 | This is your sign (subverted) | "Đây là dấu hiệu nè: {vũ trụ hông làm giùm bạn}. {hành động nhỏ}" | rides a top format but flips 'wait for a sign' into a concrete action | contrarian / humor | 3 | 0 | 0 | 2026-10-13 | 2026-10-13 | active | postdom format #2 (top 8.8M), YT "this is your sign to go all in" (1.7M), "…to stop scrolling" (686k); VN "chụp trần nhà nhận thông điệp" |
++| P06 | Actually-method | "Cách *thật sự* {làm X}, hông phải cách bạn đang làm" | promises a correction of a common way; pairs with a book fact | contrarian / data | 6 | 0 | 0 | 2026-10-13 | 2026-10-15 | active | YT "The secret to actually lock in" (1.36M), "how to *ACTUALLY* stay productive" (514k), "how to ACTUALLY lock in" (299k), "how to Actually Lock In for the Last 90 Days"; 2026-10-14: YT 'How to REALLY Stop Procrastinating'; 2026-10-15: YT niche still ACTUALLY/REALLY stop procrastinating |
++| P07 | This is your sign (subverted) | "Đây là dấu hiệu nè: {vũ trụ hông làm giùm bạn}. {hành động nhỏ}" | rides a top format but flips 'wait for a sign' into a concrete action | contrarian / humor | 4 | 0 | 0 | 2026-10-13 | 2026-10-15 | active | postdom format #2 (top 8.8M), YT "this is your sign to go all in" (1.7M), "…to stop scrolling" (686k); VN "chụp trần nhà nhận thông điệp"; 2026-10-15: Floor Time + trần nhà day 3 |
+ | P08 | N-day experiment | "Mình thử {X} {n} ngày. Ngày {k} thì…" | progress story, built-in curiosity; fits real Hiệp logs only | story | 2 | 0 | 0 | 2026-10-13 | 2026-10-13 | active | YT "I tracked my habits for 300 days…" (1.26M), "THE GREAT LOCK IN | DAY 12 of 90" |
+ | P09 | Effort vs random win | "Làm {X} cả năm hông ai hay, {chuyện vô tri} cái cả nước biết" | self-deprecating contrast, very relatable for creators/devs | humor / empathy | 2 | 0 | 0 | 2026-10-13 | 2026-10-13 | active | VN meme "vali số 7" (35express 06/10), postdom "Expectation vs reality" (747k) |
+-| P10 | Picture-this effort paradox | "Tưởng tượng: bạn {cố hết sức X} mà vẫn {kết quả tệ}." | cold-open scenario puts viewer inside the paradox before the fact | story / empathy | 3 | 0 | 0 | 2026-10-14 | 2026-10-14 | active | X News hooks 2026-10-14: "Picture studying charts 12 hours a day yet staying unprofitable", "Imagine diving into a stranger's codebase…", "Imagine working hard, facing sky-high rent…" |
+-| P11 | Bad-advice callout | "Lời khuyên '{X}' đang gây bão. Hai phe cãi nhau, mà hông ai hỏi {câu gốc}." | rides a live debate, then steps outside both camps | contrarian / humor | 3 | 0 | 0 | 2026-10-14 | 2026-10-14 | active | X News 2026-10-14: meeting tip "talk even if saying nothing", 10k steps called "propaganda", Gen Z stare pushback |
++| P10 | Picture-this effort paradox | "Tưởng tượng: bạn {cố hết sức X} mà vẫn {kết quả tệ}." | cold-open scenario puts viewer inside the paradox before the fact | story / empathy | 4 | 0 | 0 | 2026-10-14 | 2026-10-15 | active | X News hooks 2026-10-14: "Picture studying charts 12 hours a day yet staying unprofitable", "Imagine diving into a stranger's codebase…", "Imagine working hard, facing sky-high rent…"; 2026-10-15: đi làm stress / thất nghiệp stress |
++| P11 | Bad-advice callout | "Lời khuyên '{X}' đang gây bão. Hai phe cãi nhau, mà hông ai hỏi {câu gốc}." | rides a live debate, then steps outside both camps | contrarian / humor | 5 | 0 | 0 | 2026-10-14 | 2026-10-15 | active | X News 2026-10-14: meeting tip "talk even if saying nothing", 10k steps called "propaganda", Gen Z stare pushback; 2026-10-15: 5am club as bad advice; realistic goals debate |
++
++| P12 | Time-of-day pile-on | "Feed đang đầy dân than {khung giờ}. Mà câu hỏi đúng là…" | viewers dump the same daily pain point; we name the hour then flip to a book fix | humor / contrarian | 3 | 0 | 0 | 2026-10-15 | 2026-10-15 | active | X News 2026-10-15: post-lunch slump, 5am club flex, late-night sleep struggles (3 stories) |
+ 
+ ## Formats observed (external)
+ | id | Format | Platform | seen | Our comic equivalent | notes |
+@@ -32,6 +34,7 @@ Grows daily via `skills/trend-digest` (v2). One row per pattern. `uses` = times
+ | F05 | Two-camp reply thread | X/TikTok comments | 1 | split-panel comic: hai phe (chibi phụ không tên) giơ bảng, Hiệp đứng giữa hỏi câu gốc | never quote real replies; 2026-10-14 meeting-tip thread |
+ 
+ ## Learnings log (weekly synthesis appends here, newest first)
++- 2026-10-15: added P12 (time-of-day pile-on) from 3 X News day-part dumps (post-lunch, 5am, late night). P03/P11 still strong. Saturated: trì hoãn góc thẳng (YT VN 1,4M/833k/675k ngày 3), 10k bước ngày 3, productivity-tricks-adult ngày 3, trần nhà ngày 3, AI-jobs angles. Stubs today: nap 10 phút (LIGHT) + không cần dậy 5h (DARK) — đổi góc khỏi AI/họp của 13–14/10. No performance data yet.
+ - 2026-10-14: added P10 (picture-this paradox) and P11 (bad-advice callout) from X News hooks; P03 strongest again (5 seen). Saturated: 'trì hoãn không phải lười' (YT VN 1,4M/833k/675k cùng góc, ngày thứ 2), 10k bước (ngày 2), 'AI lấy việc' nói chung. No performance data yet.
+ - 2026-10-13: daily run added P06–P09 and F02–F04; Great Lock In / Winter Arc / study-with-me are saturated (sat ≥0.55) — only use with a contrarian book fact. No performance data yet.
+ - 2026-10-13: library seeded from 2026-10-12 digest + sample-full-w5. No performance data yet.
