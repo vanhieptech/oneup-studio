@@ -11,6 +11,7 @@ import { DialogueBubble } from "./DialogueBubble";
 import { BRAND, DESIGN_W, FRAMING } from "./theme";
 import { transitionStyle } from "./transitions";
 import { easeInOutCubic } from "../animation/timing";
+import { sceneObstacles, placeBubble } from "./layout";
 
 export const SceneRenderer: React.FC<{
   scene: Scene; video: VideoConfig; registry: ProfileRegistry; transitionFrames: number; durationInFrames: number;
@@ -52,12 +53,13 @@ export const SceneRenderer: React.FC<{
           <rect x={28} y={28} width={DESIGN_W - 56} height={H - 56} rx={56} fill="none" stroke={BRAND.ink} strokeWidth={12} />
         </svg>
         {scene.dialogue.map((d, i) => {
+          const obstacles = sceneObstacles(scene.props as never, states.map(({ state, profile }) => ({ x: state.x * DESIGN_W, headY: groundY + (RIG_HEAD_TOP[profile.rig]?.[state.pose] ?? -480) * fr.scale * (RIG_SIZE[profile.rig] ?? 1), id: profile.id })), groundY, fr.scale);
           const s = states.find((x) => x.cue.characterId === d.speaker);
           const headTop = s ? RIG_HEAD_TOP[s.profile.rig]?.[s.state.pose] ?? -480 : -480;
           const ax = s ? s.state.x * DESIGN_W : 540;
           const ay = s ? groundY + (s.state.offsetY + headTop) * fr.scale * (RIG_SIZE[s.profile.rig] ?? 1) : H * 0.35;
           const p = proj(ax, Math.max(ay, 420));
-          return <DialogueBubble key={i} text={d.text} style={d.style} start={d.start} end={d.end} t={t} anchorX={p.x} anchorY={p.y} side={ax > 540 ? -1 : 1} />;
+          return <DialogueBubble key={i} text={d.text} style={d.style} start={d.start} end={d.end} t={t} anchorX={p.x} anchorY={p.y} side={ax > 540 ? -1 : 1} layout={placeBubble(d.text, p.x, p.y, ax > 540 ? -1 : 1, obstacles)} />;
         })}
         {scene.dialogue.map((d, i) => d.audio ? (
           <Sequence key={`a${i}`} from={Math.round(d.start * fps)} durationInFrames={Math.ceil(d.audio.duration * fps) + 2} layout="none">

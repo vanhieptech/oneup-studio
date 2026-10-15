@@ -207,6 +207,12 @@ def main():
         r = subprocess.run(["npx", "tsx", "src/cli.ts", "validate", *plans], cwd=os.path.join(REPO, "video-engine"), capture_output=True, text=True, env=env)
         (ok if r.returncode == 0 else err)("rule-45", "video-engine validate: " + (" | ".join(x.strip() for x in (r.stdout + r.stderr).splitlines() if x.strip().startswith(("✔", "✖", "error", "⚠")))[:400] or r.stderr[-300:]))
     elif final: err("rule-45", "no plan-*.voiced.json")
+    # L-033 layout collisions: bubble ∩ prop/sign/character, prop over a character's head
+    plans_main = [x for x in plans if "-preview" not in x]
+    if plans_main:
+        r = subprocess.run(["npx", "tsx", "src/layoutCheck.ts", *plans_main], cwd=os.path.join(REPO, "video-engine"), capture_output=True, text=True, env=dict(os.environ, PATH=NODE_BIN + ":" + os.environ["PATH"]))
+        bad = [x.strip() for x in r.stdout.splitlines() if x.strip().startswith("✖")]
+        (ok if r.returncode == 0 else err)("L-033", "layout collisions: " + ("none" if not bad else " | ".join(bad))[:500])
     # final MP4
     mp4 = os.path.join(fdir, "out", spec["id"] + ".mp4")
     if final:

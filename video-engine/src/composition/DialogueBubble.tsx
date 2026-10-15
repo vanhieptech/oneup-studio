@@ -9,14 +9,16 @@ import { clamp, springAt } from "../animation/timing";
  */
 export const DialogueBubble: React.FC<{
   text: string; style: "speech" | "thought" | "shout"; start: number; end: number; t: number;
-  anchorX: number; anchorY: number; side: -1 | 1;
-}> = ({ text, style, start, end, t, anchorX, anchorY, side }) => {
+  anchorX: number; anchorY: number; side: -1 | 1; layout?: { left: number; bottom: number; W: number; font: number };
+}> = ({ text, style, start, end, t, anchorX, anchorY, side, layout }) => {
   if (t < start || t > end) return null;
   const k = springAt(t - start, 17, 8);
   const out = clamp((end - t) / 0.18);
-  const W = Math.min(800, 170 + text.replace(/\*\*/g, "").length * 26);
-  const left = clamp(anchorX - W / 2 + side * 90, 60, 1080 - 60 - W);
-  const bottom = anchorY - 70;
+  // L-033: position comes from layout.placeBubble (collision-aware); fallback = legacy above-head placement
+  const W = layout?.W ?? Math.min(800, 170 + text.replace(/\*\*/g, "").length * 26);
+  const left = layout?.left ?? clamp(anchorX - W / 2 + side * 90, 60, 1080 - 60 - W);
+  const bottom = layout?.bottom ?? anchorY - 70;
+  const fs = layout?.font ?? 56;
   const border = style === "shout" ? 12 : 8;
   const parts = text.split(/(\*\*[^*]+\*\*)/g).filter(Boolean);
   const tailX = clamp(anchorX - left, 70, W - 70);
@@ -24,7 +26,7 @@ export const DialogueBubble: React.FC<{
     <div style={{ position: "absolute", left, top: bottom, width: W, transform: `translateY(-100%) scale(${0.6 + 0.4 * k})`, transformOrigin: `${tailX}px 100%`, opacity: out * clamp((t - start) / 0.08) }}>
       <div style={{
         background: BRAND.paper, border: `${border}px solid ${BRAND.ink}`, borderRadius: style === "thought" ? 90 : 48,
-        padding: "30px 40px 36px", fontFamily: FONT_FAMILY, fontSize: style === "shout" ? 64 : 56, fontWeight: 600,
+        padding: "30px 40px 36px", fontFamily: FONT_FAMILY, fontSize: style === "shout" ? fs + 8 : fs, fontWeight: 600,
         lineHeight: 1.22, textWrap: "balance" as React.CSSProperties["textWrap"], color: BRAND.ink, textAlign: "center", boxShadow: `10px 12px 0 ${BRAND.ink}`, letterSpacing: -0.5,
         fontStyle: style === "thought" ? "italic" : "normal",
       }}>
