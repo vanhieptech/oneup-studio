@@ -33,11 +33,12 @@ tags: [index, retrieval]
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `content/archive/clip-01-implementation-intention/final/post.md` | Gói đăng TikTok: clip 01 "Mai học → nếu… thì…" |
 | clip-01.script-final | script | review (gate 1+2 gộp, DL-041) · tuần 1, không Omi | `content/archive/clip-01-implementation-intention/final/script-final.md` | Clip 01 FINAL v2: "Mai học" → nếu… thì… (bản đủ thông tin) |
 | clip-02.script-final | script | draft, chờ Hiệp duyệt (chưa lồng tiếng, chưa render) | `content/clips/clip-02-procrastination-discomfort/archive/script-v10.md` | clip-02 v10: Mê mà vẫn né (meme "bản chất") |
+| clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/archive/script-v11.md` | Clip 02 v11: Mê OneUp vậy mà né?! |
 | clip-02.script-final | script | kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng | `content/clips/clip-02-procrastination-discomfort/archive/script-v7.md` | Clip 02 · GATE 1: "Mình lười quá" → trì hoãn là né cảm giác khó chịu |
 | content.clips.clip-02-procrastination-discomfort.archive.script-v8-meme | script | draft | `content/clips/clip-02-procrastination-discomfort/archive/script-v8-meme.md` | Clip 02 — biến thể meme "bản chất" v8 (Hiệp duyệt 2026-10-15) |
 | content.clips.clip-02-procrastination-discomfort.final.post-checklist | doc | ready | `content/clips/clip-02-procrastination-discomfort/final/post-checklist.md` | Checklist đăng clip 02 (đánh dấu khi xong) |
 | clip-02.post | post-package | NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build) | `content/clips/clip-02-procrastination-discomfort/final/post.md` | Gói đăng TikTok: clip 02 "Lười? Không, đang né" |
-| clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 v11: Mê OneUp vậy mà né?! |
+| clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 v12: Mê OneUp nhất đời… tôi né! |
 | clip-02.trend-signals | research | ready | `content/clips/clip-02-procrastination-discomfort/final/trend-signals.md` | Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
@@ -273,6 +274,7 @@ tags: [index, retrieval]
 | rule-65 | Lưu trữ theo một quy ước duy nhất (L-034) |
 | rule-66 | Vòng đời clip: đang làm → lưu trữ (L-035) |
 | rule-59 | Mọi asset dự án nằm tập trung trong repo (DL-060, L-023) |
+| rule-67 | Không hỏi Hiệp xác nhận chuyện; hook phải đỉnh trong 3 giây (Hiệp, 15/10 22:19) |
 
 ## Clips
 | id | theme | path | files |

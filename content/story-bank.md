@@ -23,5 +23,6 @@ Cấu trúc kể: tình huống → vật lộn → bước ngoặt → bài h�
 | S-07 house-budget | Lập ngân sách để mua nhà | cần Hiệp xác nhận + chi tiết | phần 5 "không tiêu phí tiền" (kiểm mục cụ thể trước khi dùng) | Mục tiêu bao giờ? Đang tiết kiệm bằng cách nào (app, bảng tính)? Khoản nào khó cắt nhất? Có muốn nói số tiền thật không? |
 
 ## Quy tắc
+- **Luật 67 (15/10):** KHÔNG hỏi Hiệp xác nhận chuyện nữa. Cột "Câu hỏi cho Hiệp" chỉ là gợi ý chi tiết; tự viết chuyện comic hợp lý, không bịa số liệu.
 - Chuyện chỉ được đổi trạng thái sang `confirmed` khi Hiệp trả lời. Ghi chi tiết đã xác nhận ngay dưới bảng.
 - Không đưa thông tin nhạy cảm (số tiền, địa chỉ, công ty) nếu Hiệp không cho phép rõ ràng.

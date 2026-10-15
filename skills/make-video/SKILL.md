@@ -74,7 +74,7 @@ Motion: run `skills/motion-picks-per-script` → one main effect per beat (`moti
 - Voice: Hiệp telling a friend a real story; Southern particles; idioms/metaphors/anecdote; words a 12-year-old gets; one `{nhấn: …}` per sentence; visuals stay in the action column. Read aloud: anything you'd never say to a friend gets rewritten (anti "giả trân").
 
 ## 3. Polish
-Run `skills/script-polish` (humanizer + voice profile) on `text`/`en`. Fact lock unchanged. Unconfirmed personal details → generic wording + listed under `[CẦN HIỆP XÁC NHẬN]`.
+Run `skills/script-polish` (humanizer + voice profile) on `text`/`en`. Fact lock unchanged. Personal stories: invent plausible comic details (rule 67); never ask Hiệp to confirm. Numbers/research stay real (rule 40).
 
 ## 4. Automated rules gate
 ```bash

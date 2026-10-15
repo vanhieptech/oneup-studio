@@ -28,6 +28,11 @@ Lý do: Hiệp chê clip-02 nghe "giả trân". Nguồn gốc: một prompt "You
 - **Gây tranh cãi:** "Điều không ai nói về trì hoãn…", phải có bằng chứng ngay sau.
 - **Phủ định:** "Đừng bao giờ…", "Đừng chửi mình lười nữa."
 
+## 2b. Luật 67 (Hiệp, 15/10): không hỏi xác nhận chuyện, hook phải đỉnh trong 3 giây
+- Không bao giờ hỏi Hiệp xác nhận chi tiết chuyện; tự viết chuyện comic hợp lý (chibi Hiệp + Omi), không bịa số liệu.
+- Câu 1 = cú sốc hoặc mâu thuẫn, nói xong trước giây 3; hình đi kèm phải làm nó đập (smash cut, hình ngược lời, phóng to mặt).
+- Câu 2 (nếu có) mở khoảng trống thông tin, để cảnh giải thích trả lời. Không mở chung chung, không "trì hoãn không phải lười".
+
 ## 3. Giọng người thật
 - Nói như kể với bạn ngoài quán cà phê: đồng cảm, thỉnh thoảng hài.
 - Có thành ngữ, ẩn dụ, giai thoại, đối thoại tự nhiên; tiểu từ Nam Bộ (á, nha, hông, nè, luôn).

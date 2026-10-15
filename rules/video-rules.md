@@ -236,6 +236,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 66. **Vòng đời clip: đang làm → lưu trữ (L-035):** clip đang làm nằm ở `content/clips/<clip>/`. Chỉ khi có **đủ gói đăng** (tiêu đề, caption, hashtag, cover/thumbnail, video full + 720p trong `media/clips/<clip>/` có trong `MANIFEST.json`, `final/post.md`) **và Hiệp nói rõ "duyệt"**, mới chuyển nguyên thư mục sang `content/archive/<clip>/` kèm `final/approved.json` (`"approved": "duyệt"`, người/giờ duyệt, title, video_full, video_720). `check-assets.py` chặn clip lưu trữ thiếu gói đăng; clip đang làm được phép chưa đủ; `check-rules.py` bỏ qua clip lưu trữ.
 
 ## Changelog
+- v3.22 (15/10): luật 67 không hỏi Hiệp xác nhận chuyện; hook phải đỉnh trong 3 giây
 - v3.21 (15/10): luật 66 vòng đời clip (content/archive, approved.json, media/clips); clip-01 lưu trữ.
 - v3.20 (15/10): luật 65 lưu trữ (storage.md, paths.py, sync-shared.py, check-assets rule-65); L-033 layout bubble.
 - **v3.19, 15/10/2026:** luật 64, cấu trúc hook→intro→body→tóm tắt→1 CTA + giọng người thật (DL-065, L-032).
@@ -279,3 +280,4 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 - **v1.0, 12/10/2026:** 18 quyết định đầu tiên.
 
 **Luật 63 (L-031, 15/10):** Mỗi câu thoại hook/comic có đúng 1 từ nhấn đánh dấu `{nhấn: …}` (ngân nga: giãn + 2–3 dB khi hậu kỳ) và tiểu từ/từ đệm Nam Bộ cuối câu khi tự nhiên (luôn á, nhỉ, nha, haizzz). `{kéo: …}` chỉ dùng cho tiểu từ (DL-040).
+67. **Không hỏi Hiệp xác nhận chuyện; hook phải đỉnh trong 3 giây (Hiệp, 15/10 22:19):** KHÔNG BAO GIỜ hỏi Hiệp xác nhận chi tiết chuyện (story-bank, [CẦN HIỆP XÁC NHẬN] cho chuyện kể). Viết chuyện ở dạng comic chibi, tự chọn chi tiết hợp lý, không gắn số liệu bịa; số liệu/nghiên cứu vẫn phải thật (luật 40). Mọi nội dung phải đỉnh, kịch tính: câu đầu tiên tung cú sốc/mâu thuẫn trong 0–3s, kèm hình làm nó "đập" (smash cut, đối lập hình–lời), mở khoảng trống thông tin; không mở chung chung; không dùng câu bão hoà "trì hoãn không phải lười". Luật này thay phần "cần Hiệp xác nhận" của luật 41/story-bank cho chuyện kể.

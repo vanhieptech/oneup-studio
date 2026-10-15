@@ -172,6 +172,14 @@
   {
    "id": "clip-02.script-final",
    "type": "script",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v11.md",
+   "title": "Clip 02 v11: Mê OneUp vậy mà né?!"
+  },
+  {
+   "id": "clip-02.script-final",
+   "type": "script",
    "status": "kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng",
    "updated": "2026-10-15",
    "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v7.md",
@@ -207,7 +215,7 @@
    "status": "draft",
    "updated": "2026-10-15",
    "path": "content/clips/clip-02-procrastination-discomfort/final/script-final.md",
-   "title": "Clip 02 v11: Mê OneUp vậy mà né?!"
+   "title": "Clip 02 v12: Mê OneUp nhất đời… tôi né!"
   },
   {
    "id": "clip-02.trend-signals",
@@ -1762,6 +1770,11 @@
   {
    "id": "rule-59",
    "title": "Mọi asset dự án nằm tập trung trong repo (DL-060, L-023)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-67",
+   "title": "Không hỏi Hiệp xác nhận chuyện; hook phải đỉnh trong 3 giây (Hiệp, 15/10 22:19)",
    "path": "rules/video-rules.md"
   }
  ],
