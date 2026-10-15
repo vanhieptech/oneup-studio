@@ -7,7 +7,7 @@ description: >-
 ---
 # Motion picks per script
 
-Catalog: https://github.com/gongnyang/awesome-ai-motion (MIT). Clone to `refs/awesome-ai-motion (clone, xem refs/README.md)` if missing. Machine-readable index: `index.json` (`effects`[637], `recipes`[11], `routes`[7], `glossary`). Cards are mostly Korean with `en` names; read the per-effect folder under `effects/` for full params and demo mp4.
+Catalog: https://github.com/gongnyang/awesome-ai-motion (MIT). Clone to `resources/refs/awesome-ai-motion (clone, xem resources/refs/README.md)` if missing. Machine-readable index: `index.json` (`effects`[637], `recipes`[11], `routes`[7], `glossary`). Cards are mostly Korean with `en` names; read the per-effect folder under `effects/` for full params and demo mp4.
 
 ## Steps
 1. **Read the inputs:** the script (beats with timestamps and spoken lines), the channel's video rules file (format, caption style, brand, banned effects, free/real-footage limits), and the route guide for the format (shorts: `routes/쇼츠.md` — 9:16, hook in 1–3s, bottom ~20% safe area, contrast, no flashes, one main effect per beat).

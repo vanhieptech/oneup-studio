@@ -39,7 +39,7 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
     - Mỗi clip là LIGHT (tích cực) hoặc DARK (mặt trái), xét theo hook. Không quá 2 clip cùng theme liên tiếp. Một clip chỉ một theme.
     - Bảng phân theme: `content/theme-map.md` (clip 1 = LIGHT).
 18. **Minh hoạ:** diagram dùng nét vẽ tay (rough.js / Open Peeps), icon dùng Phosphor (đơn sắc).
-19. **Motion:** chọn theo từng script, mỗi beat một hiệu ứng chính, lấy từ catalog awesome-ai-motion (637 effect, xem `refs/README.md`) bằng skill `skills/motion-picks-per-script/SKILL.md`. Ghi vào `logs/effects-log.md` để không lặp.
+19. **Motion:** chọn theo từng script, mỗi beat một hiệu ứng chính, lấy từ catalog awesome-ai-motion (637 effect, xem `resources/refs/README.md`) bằng skill `skills/motion-picks-per-script/SKILL.md`. Ghi vào `logs/effects-log.md` để không lặp.
 20. **Hậu kỳ:** grain phim nhẹ toàn clip. Bố cục lệch, căn trái. Theo checklist anti-AI-look (`research/production-system-research-vi.md` §6).
 
 ## D. Âm thanh & tài sản
@@ -56,12 +56,12 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 26. **Transcribe:** whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
 27. **Nơi render:** bản nháp render trên box ảo, bản final render trên Mac I-Am-Focused.
 28. **Mức tự động:** agent làm toàn bộ, Hiệp duyệt 2 lần (script trước khi thu, final trước khi đăng). Duyệt beat sheet là tuỳ chọn.
-29. **Quay:** agent gửi shot list cùng script. Hiệp AirDrop giọng và b-roll vào `footage/inbox/` trên Mac. File footage và render không commit lên git.
+29. **Quay:** agent gửi shot list cùng script. Hiệp AirDrop giọng và b-roll vào `media/footage/inbox/` trên Mac. File footage và render không commit lên git.
 30. **Cover:** frame hook kèm chữ to.
 
 ## F. Lịch & đăng
 31. **Tần suất:** 3 clip/tuần trong 2 tuần đầu, sau đó đánh giá lại (mục tiêu 3–4 clip/tuần).
-32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover) trong `renders/ready/`, rồi nhắc Hiệp lúc 19:00 thứ Hai, Tư, Sáu, Chủ nhật. Hiệp tự đăng.
+32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover) trong `content/clips/<clip>/final/out/`, rồi nhắc Hiệp lúc 19:00 thứ Hai, Tư, Sáu, Chủ nhật. Hiệp tự đăng.
 
 ## G. Cải tiến liên tục
 33. **Nhật ký quyết định** (`logs/decision-log.md`):

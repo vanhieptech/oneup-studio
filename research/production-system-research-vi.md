@@ -46,7 +46,7 @@ tags: [stack, pipeline, anti-ai]
 ## 3. Skill pack, agent skill, caption
 - **HyperFrames skills** [đã xác minh]: `npx hyperframes skills`, `/hyperframes-core`. Lệnh `init` tự cài.
 - **Remotion skills** [đã xác minh]: `npx skills add remotion-dev/skills` (`/remotion-best-practices`).
-- **awesome-ai-motion** (MIT, đã có ở `refs/awesome-ai-motion (clone, xem refs/README.md)`) kèm skill `motion-picks-per-script` của mình: tiếp tục dùng để chọn motion theo từng beat.
+- **awesome-ai-motion** (MIT, đã có ở `resources/refs/awesome-ai-motion (clone, xem resources/refs/README.md)`) kèm skill `motion-picks-per-script` của mình: tiếp tục dùng để chọn motion theo từng beat.
 - **GSAP llms-full.txt** (https://gsap.com/llms-full.txt): bộ hướng dẫn chính thức để agent viết GSAP đúng.
 - **Caption và căn thời gian:**
   - **whisper.cpp** (MIT) chạy Metal trên Mac, model `large-v3` hoặc `large-v3-turbo`, nhận tiếng Việt tốt (`-l vi`), có timestamp từng từ (`-ml 1` / `--output-json-full`).

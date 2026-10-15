@@ -15,15 +15,15 @@ tags: [index, retrieval]
 | sfx-sources | log | living | `assets/sfx/SOURCES.md` | Nguồn SFX (chỉ dùng CC0 hoặc Mixkit, theo luật 22) |
 | brand-index | brand | active | `brand/brand-index.md` | @hi.oneup — Brand index cho video |
 | characters | brand | prototype | `brand/characters/README.md` | Characters (prototype v0.1) |
-| clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/clips/clip-01-box-final/post.md` | Gói đăng clip 01 (final demo) |
-| clip-01.script-final | script | review (gate 2) · DEMO tuần 5 | `content/clips/clip-01-box-final/script-final.md` | Clip 01 FINAL (demo / template tuần 5): "Mai học" → nếu… thì… |
-| clip-01.beat-sheet | beat-sheet | draft | `content/clips/clip-01-implementation-intention/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
+| clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/clips/clip-01-implementation-intention/archive/box-final/post.md` | Gói đăng clip 01 (final demo) |
+| clip-01.script-final | script | review (gate 2) · DEMO tuần 5 | `content/clips/clip-01-implementation-intention/archive/box-final/script-final.md` | Clip 01 FINAL (demo / template tuần 5): "Mai học" → nếu… thì… |
+| clip-01.beat-sheet | beat-sheet | draft | `content/clips/clip-01-implementation-intention/archive/drafts/beat-sheet.md` | Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md |
+| clip-01.script-v2.1-draft | script | draft | `content/clips/clip-01-implementation-intention/archive/drafts/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
+| clip-01.script-v3-draft | script | draft | `content/clips/clip-01-implementation-intention/archive/drafts/script-v3-draft.md` | Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1 |
+| clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/archive/drafts/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
+| clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/archive/drafts/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `content/clips/clip-01-implementation-intention/final/post.md` | Gói đăng TikTok: clip 01 "Mai học → nếu… thì…" |
 | clip-01.script-final | script | review (gate 1+2 gộp, DL-041) · tuần 1, không Omi | `content/clips/clip-01-implementation-intention/final/script-final.md` | Clip 01 FINAL v2: "Mai học" → nếu… thì… (bản đủ thông tin) |
-| clip-01.script-v2.1-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v2.1-draft.md` | Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2 |
-| clip-01.script-v3-draft | script | draft | `content/clips/clip-01-implementation-intention/script-v3-draft.md` | Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1 |
-| clip-01.script | script | awaiting-approval | `content/clips/clip-01-implementation-intention/script.md` | @hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt |
-| clip-01.shot-list | shot-list | draft | `content/clips/clip-01-implementation-intention/shot-list.md` | Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md |
 | clip-02.post | post-package | NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build) | `content/clips/clip-02-procrastination-discomfort/final/post.md` | Gói đăng TikTok: clip 02 "Lười? Không, đang né" |
 | clip-02.script-final | script | kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 · GATE 1: "Mình lười quá" → trì hoãn là né cảm giác khó chịu |
 | clip-02.trend-signals | research | None | `content/clips/clip-02-procrastination-discomfort/final/trend-signals.md` | Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7) |
@@ -48,7 +48,6 @@ tags: [index, retrieval]
 | lessons | log | None | `logs/lessons.md` | Lessons: lỗi đã gặp → kiểm tra tự động (rule-49) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
-| refs | reference | active | `refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | research-character-animation | None | None | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.motion-layer | research | reference | `research/motion-layer.md` | @hi.oneup motion layer, based on gongnyang/awesome-ai-motion |
@@ -67,6 +66,7 @@ tags: [index, retrieval]
 | trends-patterns | pattern-library | living | `research/trends/2026-10-15/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
+| refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | vn-thesaurus | resource | None | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-spoken | resource | None | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | None | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |
@@ -241,8 +241,7 @@ tags: [index, retrieval]
 ## Clips
 | id | theme | path | files |
 |---|---|---|---|
-| clip-01 | None | `content/clips/clip-01-box-final` | check-rules.txt, contact-sheet.png, post.md, script-final.md |
-| clip-01 | LIGHT | `content/clips/clip-01-implementation-intention` | beat-sheet.md, comic, final, script-v2.1-draft.md, script-v3-draft.md, script.md, shot-list.md, storyboard |
+| clip-01 | None | `content/clips/clip-01-implementation-intention` | archive, final |
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | final |
 
 ## Assets & tools
@@ -261,5 +260,5 @@ tags: [index, retrieval]
 | tool.sync-trends | `pipeline/scripts/sync-trends.sh` | Box -> repo trend sync, commit, push |
 | tool.build-index | `pipeline/scripts/build-index.py` | Regenerates this index |
 | data.trends | `research/trends/` | Daily digests YYYY-MM-DD/{digest.md,raw.json} + ingest.md |
-| dir.footage | `footage/inbox/` | AirDrop inbox (media gitignored) |
-| dir.renders | `renders/ready/` | Ready-to-post packages (media gitignored) |
+| dir.footage | `media/footage/inbox/` | AirDrop inbox (media gitignored) |
+| dir.renders | `content/clips/<clip>/final/out/` | Ready-to-post packages (media gitignored) |

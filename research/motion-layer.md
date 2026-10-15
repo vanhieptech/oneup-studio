@@ -7,7 +7,7 @@ tags: [motion]
 ---
 # @hi.oneup motion layer, based on gongnyang/awesome-ai-motion
 
-Local clone: `refs/awesome-ai-motion (clone, xem refs/README.md)` (shallow clone, 2026-10-12)
+Local clone: `resources/refs/awesome-ai-motion (clone, xem resources/refs/README.md)` (shallow clone, 2026-10-12)
 
 ## 1. What the repo actually contains
 - **What it is:** a motion-technique *field guide* (a reference library), not a video generator and not an AI video model. It contains no generative AI video at all. Every clip is a deterministic HTML/CSS/GSAP/SVG/canvas/WebGL animation that Playwright captures and ffmpeg encodes.

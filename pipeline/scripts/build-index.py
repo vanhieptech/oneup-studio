@@ -39,8 +39,8 @@ assets = [
  {'id': 'tool.sync-trends', 'path': 'pipeline/scripts/sync-trends.sh', 'desc': 'Box -> repo trend sync, commit, push'},
  {'id': 'tool.build-index', 'path': 'pipeline/scripts/build-index.py', 'desc': 'Regenerates this index'},
  {'id': 'data.trends', 'path': 'research/trends/', 'desc': 'Daily digests YYYY-MM-DD/{digest.md,raw.json} + ingest.md'},
- {'id': 'dir.footage', 'path': 'footage/inbox/', 'desc': 'AirDrop inbox (media gitignored)'},
- {'id': 'dir.renders', 'path': 'renders/ready/', 'desc': 'Ready-to-post packages (media gitignored)'},
+ {'id': 'dir.footage', 'path': 'media/footage/inbox/', 'desc': 'AirDrop inbox (media gitignored)'},
+ {'id': 'dir.renders', 'path': 'content/clips/<clip>/final/out/', 'desc': 'Ready-to-post packages (media gitignored)'},
 ]
 idx = {'generated_by': 'pipeline/scripts/build-index.py', 'docs': docs, 'rules': rules, 'clips': clips, 'assets': assets}
 (R/'index.json').write_text(json.dumps(idx, ensure_ascii=False, indent=1))

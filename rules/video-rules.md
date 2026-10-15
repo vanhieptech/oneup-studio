@@ -40,7 +40,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Mỗi clip là LIGHT (tích cực) hoặc DARK (mặt trái), xét theo hook. Không quá 2 clip cùng theme liên tiếp. Một clip chỉ một theme.
     - Bảng phân theme: `content/theme-map.md` (clip 1 = LIGHT).
 18. **Minh hoạ:** diagram dùng nét vẽ tay (rough.js), icon dùng Phosphor (đơn sắc). Người/nhân vật chỉ dùng rig Hiệp/Omi (luật 43), không dùng Open Peeps cho nhân vật chính.
-19. **Motion:** chọn theo từng script, mỗi beat một hiệu ứng chính, lấy từ catalog awesome-ai-motion (637 effect, xem `refs/README.md`) bằng skill `skills/motion-picks-per-script/SKILL.md`. Ghi vào `logs/effects-log.md` để không lặp.
+19. **Motion:** chọn theo từng script, mỗi beat một hiệu ứng chính, lấy từ catalog awesome-ai-motion (637 effect, xem `resources/refs/README.md`) bằng skill `skills/motion-picks-per-script/SKILL.md`. Ghi vào `logs/effects-log.md` để không lặp.
 20. **Hậu kỳ:** grain phim nhẹ toàn clip. Bố cục lệch, căn trái. Theo checklist anti-AI-look (`research/production-system-research-vi.md` §6).
 
 ## D. Âm thanh & tài sản
@@ -59,12 +59,12 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 26. **Transcribe:** câu TTS (Hiệp, Omi) lấy thời lượng + envelope từ file TTS, kiểm lại bằng ASR (`pipeline/tts/stt_check.py`, faster-whisper). Nếu Hiệp tự thu giọng thật: whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
 27. **Nơi render:** bản nháp render trên box ảo, bản final render trên Mac I-Am-Focused.
 28. **Mức tự động:** agent làm toàn bộ theo skill `skills/make-video/SKILL.md`, Hiệp duyệt 2 lần (gate 1: script + beat table + storyboard; gate 2: MP4 final + post.md). Góp ý theo id beat (`b03: …`), agent sửa spec, không làm lại từ đầu.
-29. **Thu giọng:** mặc định không cần (giọng AI preset, DL-030). Nếu Hiệp muốn tự thu: thu bằng iPhone, AirDrop vào `footage/inbox/` trên Mac. File âm thanh và render không commit lên git.
+29. **Thu giọng:** mặc định không cần (giọng AI preset, DL-030). Nếu Hiệp muốn tự thu: thu bằng iPhone, AirDrop vào `media/footage/inbox/` trên Mac. File âm thanh và render không commit lên git.
 30. **Cover:** frame hook kèm chữ to.
 
 ## F. Lịch & đăng
 31. **Tần suất:** 3 clip/tuần trong 2 tuần đầu, sau đó đánh giá lại (mục tiêu 3–4 clip/tuần).
-32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover, và dòng nhãn AI khi có giọng AI) trong `renders/ready/`. **Không có nhắc đăng** (routine nhắc đã xoá, DL-028): Hiệp tự đăng theo lịch của mình, gợi ý thứ Hai, Tư, Sáu trong 2 tuần đầu.
+32. **Đăng:** agent chuẩn bị gói sẵn đăng (mp4, caption, hashtag, credit, cover, và dòng nhãn AI khi có giọng AI) trong `content/clips/<clip>/final/out/`. **Không có nhắc đăng** (routine nhắc đã xoá, DL-028): Hiệp tự đăng theo lịch của mình, gợi ý thứ Hai, Tư, Sáu trong 2 tuần đầu.
 
 ## G. Cải tiến liên tục
 33. **Nhật ký quyết định** (`logs/decision-log.md`):

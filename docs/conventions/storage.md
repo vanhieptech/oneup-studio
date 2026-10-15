@@ -13,9 +13,9 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Template HyperFrames | `templates/hyperframes-base/` | |
 | Voice takes đã chọn | `video-engine/public/voice/` (key hash, hoặc `v<n>-<scene>`) | file `.json` kèm stt/stt_sim |
 | Take thô, thử nghiệm giọng | ngoài repo (`/workspace/<job>/`) hoặc `media/` + `MANIFEST.json` | không commit take thô |
-| Mỗi clip | `content/clips/<clip>/final/`: `script-*.md`, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/` | chỉ thứ riêng của clip |
+| Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác |
 | Render clip | `content/clips/<clip>/final/out/` (gitignored), part render ở `video-engine/out/` | bản gửi Hiệp: 720p faststart < 10 MB |
-| Media lớn (mp4 sample, footage) | `media/` (gitignored) + `media/MANIFEST.json` | `footage/inbox/` cho video quay |
+| Media lớn (mp4 sample, footage) | `media/` (gitignored) + `media/MANIFEST.json` | `media/footage/inbox/` cho video quay |
 | Test | `tests/` | |
 | Script, tool | `pipeline/scripts/`, `pipeline/tts/`, `video-engine/src/` | |
 | Research, trend | `research/` (`trends/<date>/`), `docs/research/`, `resources/` (từ điển, văn nói) | |
@@ -24,4 +24,6 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Luật | `rules/video-rules.md` | |
 | Quy trình | `docs/workflow/per-video-pipeline.md` | |
 
-Cấm: font/logo/giọng mẫu trong `content/` hoặc `samples/`; hai file cùng nội dung (sha256) ngoài các vùng miễn trừ (skills vendored, voice cache, template `.tpl`, bản snapshot `/vN/`, `final/cover.png` theo L-020); thư mục cấp gốc ngoài danh sách `TOP_ALLOWED`.
+Thư mục gốc hợp lệ (`TOP_ALLOWED`): assets, brand, content, docs, logs, media, pipeline, research, resources, rules, skills, templates, tests, video-engine. Đã bỏ: `footage/` → `media/footage/`, `renders/` → `final/out/` của clip, `refs/` → `resources/refs/`, `samples/` → `content/samples/lab/`. `templates/` giữ vì là thư viện chung (scaffold HyperFrames, mẫu post-package).
+
+Cấm: font/logo/giọng mẫu trong `content/`; hai file cùng nội dung (sha256) ngoài các vùng miễn trừ (skills vendored, voice cache, template `.tpl`, bản snapshot `/vN/`, `final/cover.png` theo L-020); thư mục cấp gốc ngoài danh sách `TOP_ALLOWED`.

@@ -2,7 +2,7 @@
 """rule-59 / L-023: fail if @hi.oneup project files live outside the repo.
 Scans known external dirs on the box; a file passes only if an identical copy (sha256)
 is tracked in the repo or listed in media/MANIFEST.json. Usage: check-assets.py [--list]"""
-import hashlib, json, subprocess, sys
+import hashlib, json, re, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 EXTERNAL = [Path("/workspace/oneup-studio-sync"), Path("/workspace/hi-oneup")]
@@ -44,6 +44,13 @@ for f in tracked:
     top = f.split("/")[0]
     if top not in P.TOP_ALLOWED and not top.startswith("."): errs.append(f"outside allowed top-level dirs: {f}")
     name = f.rsplit("/", 1)[-1]
+    parts = f.split("/")
+    if f.startswith("content/clips/") and len(parts) >= 4 and parts[3] not in P.CLIP_TOP_ALLOWED:
+        errs.append(f"clip layout: only final/, archive/, README.md allowed in {parts[2]}/ (drafts → archive/): {f}")
+    if f.startswith("content/clips/") and len(parts) == 3:
+        errs.append(f"stray file directly in content/clips/: {f}")
+    if f.startswith("content/clips/") and "/final/" in f and re.search(r"(-draft|-v\d+(\.\d+)?-draft)\.md$", name):
+        errs.append(f"draft inside final/ (move to archive/): {f}")
     if f.startswith(("content/", "samples/")) and (Path(f).suffix.lower() in P.SHARED_EXT or name in P.SHARED_NAMES):
         errs.append(f"shared-type file inside a clip/sample folder (use brand/ or assets/, synced by sync-shared.py): {f}")
 by = {}

@@ -18,12 +18,9 @@ Kênh TikTok https://www.tiktok.com/@hi.oneup: video productivity/motivation 55�
 | `content/` | `theme-map.md`, `idea-bank.md`, `clips/NN-slug/` (script, beat sheet, comic plan, caption, comp) |
 | `templates/` | `hyperframes-base` (1080×1920, Be Vietnam Pro, GSAP local). Chạy `npm i` rồi `npm run render` |
 | `skills/` | `motion-picks-per-script` |
-| `refs/` | link tài liệu ngoài (awesome-ai-motion clone local, không commit) |
 | `pipeline/` | `pipeline.md` + `scripts/` (placeholder) |
 | `logs/` | `effects-log.md` |
 | `assets/` | sfx (CC0, kèm SOURCES.md), stock, icon |
-| `footage/` | `inbox/` nhận AirDrop giọng thu (file âm thanh không commit) |
-| `renders/` | `ready/` gói sẵn đăng (file mp4 không commit) |
 
 ## Quy ước thư mục (luật 65)
 Chi tiết: `docs/conventions/storage.md` · đường dẫn: `pipeline/paths.py` · chặn: `pipeline/scripts/check-assets.py`.

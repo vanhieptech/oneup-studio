@@ -28,7 +28,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 ## Quy ước
 - Mọi file `.md` (trừ SKILL.md và tài liệu brand gốc) có front-matter `id, type, status, updated, tags`. Khi tạo hoặc đổi tên file, chạy `python3 pipeline/scripts/build-index.py`.
 - Id ổn định: `rule-N`, `DL-NNN`, `clip-NN`, `clip-NN.bNN` (beat), `trends-YYYY-MM-DD`, `skill.<id>`. Không đổi id đã dùng.
-- Không đưa media vào git (`footage/`, `renders/` đã có trong .gitignore). Không vendor repo ngoài (xem `refs/README.md`).
+- Không đưa media vào git (`footage/`, `renders/` đã có trong .gitignore). Không vendor repo ngoài (xem `resources/refs/README.md`).
 
 ## Workflow
 1. **Clip mới:** theo `skills/make-video/SKILL.md` (intake → đọc nguồn → spec → humanizer → check-rules → gate 1 → render → check-rules --final → gate 2 → DL).
