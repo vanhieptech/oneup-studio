@@ -1,0 +1,47 @@
+voice: 16 lines (16 prosody), 16 cached
++ /workspace/tts-venv/bin/python /workspace/oneup-studio/pipeline/scripts/voice-prosody.py /workspace/oneup-studio/video-engine/public/voice/_prosody-job.json
+warn: f5-326c41246390 line STT sim 0.571: tính năng ôm ý
+warn: f5-4095f70a2567 line STT sim 0.667: Hoảng hôm nay, hoảng ngày mai, rồi lại hoảng.
+warn: f5-2ec9b28a5ba0 line STT sim 0.632: Mở có ra 5 giây sau đã lướt tiết tóc.
+warn: f5-14547a444848 line STT sim 0.727: chán nãn tội lỗi, rồi tự mắng ngựa mình lùi quá.
+warn: f5-fd1d2dfea83a line STT sim 0.8: Trì hoảng là nét cảm giác khó chịu, chẳng sợ làm giỡ, hay không biết bắt đầu, nghe quen không.
+warn: f5-00112fb8fae8 line STT sim 0.737: Gọt 691 hệ số tương quan, việc càng khó chịu, càng thấy mình kém càng dễ hoảng.
+warn: f5-bf146a0cd99f line STT sim 0.733: không biết bắt đầu, viết 3 gạch đầu dòng, sở dỡ cho phép nháp 6.
+warn: f5-fba3f5ca09cc line STT sim 0.8: Thấy tráng hẹn 10 phút, hết giờ thì được dừng.
+warn: f5-ec90053679ba line STT sim 0.846: Lỗi hay gặp mắn mình rồi gồng, mắn xong việc càng khó chịu.
++ ffmpeg -loglevel error -y -i /workspace/oneup-studio/video-engine/public/voice/f5-fd1d2dfea83a.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-00112fb8fae8.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ba77a972a011.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-6505e5807de7.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-bf146a0cd99f.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-fba3f5ca09cc.wav -i /workspace/oneup-studio/video-engine/public/voice/f5-ec90053679ba.wav -filter_complex [0:a]aresample=48000,adelay=650:all=1[a0];[1:a]aresample=48000,adelay=6484:all=1[a1];[2:a]aresample=48000,adelay=12709:all=1[a2];[3:a]aresample=48000,adelay=17554:all=1[a3];[4:a]aresample=48000,adelay=21705:all=1[a4];[5:a]aresample=48000,adelay=26675:all=1[a5];[6:a]aresample=48000,adelay=30226:all=1[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0,apad,atrim=0:34.44[o] -map [o] -ac 1 -ar 48000 /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E-voice.wav
+plans: total ≈ 61.34s
++ npx tsx src/cli.ts validate /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json /workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json
+
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'zod' imported from /workspace/oneup-studio/video-engine/src/validation/validate.ts
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:266:9)
+    at packageResolve (node:internal/modules/esm/resolve:767:81)
+    at moduleResolve (node:internal/modules/esm/resolve:853:18)
+    at defaultResolve (node:internal/modules/esm/resolve:983:11)
+    at nextResolve (node:internal/modules/esm/hooks:748:28)
+    at resolveBase (file:///home/box/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:10494)
+    at resolveDirectory (file:///home/box/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:11581)
+    at resolveTsPaths (file:///home/box/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:13222)
+    at resolve (file:///home/box/.npm/_npx/fd45a72a545557e9/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:15453)
+    at nextResolve (node:internal/modules/esm/hooks:748:28) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.20.0
+Traceback (most recent call last):
+  File "/workspace/oneup-studio/pipeline/scripts/build-final.py", line 287, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/oneup-studio/pipeline/scripts/build-final.py", line 228, in main
+    sh(["npx", "tsx", "src/cli.ts", "validate", *[q["plan"] for q in parts if q["engine"] == "remotion"]], cwd=VE)
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/oneup-studio/pipeline/scripts/build-final.py", line 30, in sh
+    subprocess.run(cmd, shell=isinstance(cmd, str), check=True, env=env, **kw)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['npx', 'tsx', 'src/cli.ts', 'validate', '/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json', '/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json']' returned non-zero exit status 1.

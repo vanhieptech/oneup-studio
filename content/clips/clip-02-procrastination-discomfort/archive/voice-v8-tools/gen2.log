@@ -1,0 +1,43 @@
+/workspace/f5-venv/lib/python3.13/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Download Vocos from huggingface charactr/vocos-mel-24khz
+
+vocab :  /workspace/f5-ckpt/vocab.txt
+token :  custom
+model :  /workspace/f5-ckpt/model_last.pt 
+
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nâu, uy đôn đu đét.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:24<00:00, 24.54s/it]100%|██████████| 1/1 [00:24<00:00, 24.54s/it]
+ok b05-11.wav 1.18
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nâu, uy đôn đu đét.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:22<00:00, 22.83s/it]100%|██████████| 1/1 [00:22<00:00, 22.83s/it]
+ok b05-23.wav 1.18
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nâu, uy đôn đu đét.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:28<00:00, 28.87s/it]100%|██████████| 1/1 [00:28<00:00, 28.87s/it]
+ok b05-37.wav 1.18
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nâu, uy đôn đu đét.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:25<00:00, 25.12s/it]100%|██████████| 1/1 [00:25<00:00, 25.13s/it]
+ok b05-53.wav 1.18
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nâu, uy đôn đu đét.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]

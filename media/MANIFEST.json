@@ -52,5 +52,497 @@
   "size": 2982231,
   "sha256": "20c9f1b82ecd5005ed8103736272ae0c1c8d3c2f1eb6cd2fde21666e375615b6",
   "source": "render (build-final) / 720p faststart"
+ },
+ {
+  "path": "media/samples/lab/voicetest-presets/f0.py",
+  "size": 563,
+  "sha256": "be79b1fd091cc82ca399f28d5608129e24bb194334001f770d11dbff3387ed31",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/voicetest-presets/Minh_Triết.wav",
+  "size": 368684,
+  "sha256": "e80ed629277bbc1f6c3398363ef1639b420e5ffc60d1ce431fc396dc04f49813",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/voicetest-presets/Adam.wav",
+  "size": 345644,
+  "sha256": "57d3445c61de2f6a48e67280b175f81d09d02460499b83b384b1d1e71bfad0c0",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/voicetest-presets/Thái_Sơn.wav",
+  "size": 445484,
+  "sha256": "903e7f868787796482f4a36bf42a1aab6d0ccac1d6618f9bb4a164f47b8b75e2",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/voicetest-presets/aud.py",
+  "size": 284,
+  "sha256": "b84cee2ef9d659f8589437c3a553431f1f8f195288344a84ffe87c0c5a55943e",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/voicetest-presets/Đức_Trí.wav",
+  "size": 514604,
+  "sha256": "9664d2ad7740d288a65898024dea32488c958da78c069caa8ef4a76c700da8f0",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/job.json",
+  "size": 2741,
+  "sha256": "3af308e652c749d429dcf856e16213935f4a6ca72a5732ad2d1b414c5107a60c",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/log",
+  "size": 1052,
+  "sha256": "c8f93fde224a43617afe607504f3b0734e57ba53ea740ce40b4ffe4a69554524",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v0.wav",
+  "size": 121486,
+  "sha256": "cf9df14498b3717d580717b9fcea9ca8a1dac57acebef98a5a75bc0331a7066e",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v0.json",
+  "size": 2489,
+  "sha256": "33e0b5b244a38ad2b73b166539d1c661f769ac6502f8877d3e4e0480a42904bd",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v1.wav",
+  "size": 121486,
+  "sha256": "b7b1e61e018a3832d5d1f8af7cf77767021fce3d3ec8795c15c022c2588fbbd4",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v1.json",
+  "size": 1811,
+  "sha256": "688ceb8b422685e312043835261d40898bfc2a6bdf7d4c17f2c0815ca9316f99",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v2.wav",
+  "size": 117902,
+  "sha256": "c4d1c5f191bacc4662d1f0c8597bca6b761d2dac9fec819ace0bcbeaf200c023",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v2.json",
+  "size": 1807,
+  "sha256": "367e2d94e782a97952f079350784781c4ef59acc81db63a12ecf0db0320565d2",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v3.wav",
+  "size": 159374,
+  "sha256": "855ad11caa5a7a9b10da06b91c446b4bd5239182625e3e27cf5c254c1f5f6e62",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v3.json",
+  "size": 1949,
+  "sha256": "72db9883e35df590ac5eb7f6d7fae7290b5e5a2027f65b8a07c335ff44c41ce7",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v4.wav",
+  "size": 159374,
+  "sha256": "1d48f81b2258a043979d6184e288efb7ef061f26a9c82b9dd7755deb0c875b1c",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v4.json",
+  "size": 1969,
+  "sha256": "f74fcd0b54686dfa0b85e39288498279838dae890691952a0a9554e7a41bd51b",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v5.wav",
+  "size": 131598,
+  "sha256": "1e7eee4736dab1b65652e214b5c8a63bf9156a59ef479e3c9fb776fa74ebccdc",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v5.json",
+  "size": 1858,
+  "sha256": "2b64d9d86118351da74b28619f5dd8240d17b3bd12c85e7254980b89603b4701",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v6.wav",
+  "size": 173838,
+  "sha256": "cc624e33e2225e9750026c1a941fb158d8f17ab998fcce5a4ca8a9d193022229",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v6.json",
+  "size": 2119,
+  "sha256": "a28d835fcdafde8c37fafdaf9a3c57b7074004c2f8d64d8f389566fec6516efe",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v7.wav",
+  "size": 187278,
+  "sha256": "29fa91716d572f6c9aabf995e542418b49ab0fcee95adc851e8daf5a5c148148",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vtest-prosody/v7.json",
+  "size": 2186,
+  "sha256": "3cbc907e2a3c5eabe6ab06368b133dd92b2ab6bca26dc3cc105b45737e15a6fd",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/samples/lab/vp/t1.wav",
+  "size": 222764,
+  "sha256": "6af80b0dde4be3397f2bb6fb37e71093f1195ea477d2612d390983b096e9fa9c",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-samples/clip-02-hook-voice-v2.mp3",
+  "size": 219500,
+  "sha256": "049a83747b711dcf8ad7099f43b23b54179d99ed72262e4297e8463ea036af77",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-samples/clip-02-hook-voice-v3.mp3",
+  "size": 214316,
+  "sha256": "c0288394d5bc03b7e9d1c832b8c8197390e0802e7281f5870cf6bafc52bcb3d3",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-samples/clip-02-hook-voice-v5.mp3",
+  "size": 214316,
+  "sha256": "c474ec0cb73627b071745851cdefe54e380458a6edb22c5eef16b952fdd60c96",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-samples/clip-02-hook-voice.mp3",
+  "size": 95938,
+  "sha256": "d04beb525a739b7932cc669ff40886f4db0fe8b1f6f69ee2b403e32c3b5c1009",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-samples/clip-02-meme-voice-4scenes.mp3",
+  "size": 406299,
+  "sha256": "9669e0681c99d979e73df8df67def44f446abc2d90fa43e8803eae1547721314",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/versions/clip-02-v8.mp4",
+  "size": 39130494,
+  "sha256": "7ca44a6ab474138a99f2c0bb7f1f466c19e4f84ed7d69fb5e4dd791df306a483",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/versions/clip-02-v8-720.mp4",
+  "size": 3957403,
+  "sha256": "b910b175ad89707f322bef7961cda3183658817397545ef202a88e681900c0d2",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b05-11.wav",
+  "size": 56876,
+  "sha256": "05a690a3e2a422af63e66445edcfa17a98299d79966a15a28344f95e51ccd610",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b05-23.wav",
+  "size": 56876,
+  "sha256": "bfc7de8ac4f42fc1c65d3d4710c8662fc2e2265d739020b5e8ee771d5f06e453",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b05-37.wav",
+  "size": 56876,
+  "sha256": "097d0403a5d15ad5b54f32d5645c124ab343438108c6530e7c5f0fdc88efa9e2",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b05-53.wav",
+  "size": 56876,
+  "sha256": "f7e4619da185ccbaeb949cb67aa33f8a5f7f8da42fd46611652b9995121b901d",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b06-11.wav",
+  "size": 43052,
+  "sha256": "f612d8fdc3c41c08d0c31735997419ac3b57a58889eff0d20a1f0333d2a703d4",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b06-23.wav",
+  "size": 43052,
+  "sha256": "5ce8ca1ab7ff644e04181c95a228f3cf54ffc75848038b968332de8f79cb0c72",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b07-11.wav",
+  "size": 392236,
+  "sha256": "be449f1b3f803788fb3d50505bad4caa078b3a21810d305c060164aaa3e3bb59",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b07-23.wav",
+  "size": 392236,
+  "sha256": "cb338f2862b946d7205550e92e2da63ec5a332f754d1a30094c6bd35860dfe67",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b07-37.wav",
+  "size": 392236,
+  "sha256": "99d30e7dc7b416b77475316009e2ea47cc54fb00f9173eac338b23f9bcb570d4",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b07-53.wav",
+  "size": 392236,
+  "sha256": "08ecda9c7337daef18a8f1862dbfbdfccd15d30c975df3d7e9c0733a7053e843",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b08-11.wav",
+  "size": 126508,
+  "sha256": "5443d7d5bf8b0d57d8d1c4c9ff1279af14d0968d60cfc69c095eb9e93c60f74e",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b08-23.wav",
+  "size": 126508,
+  "sha256": "4c29100830e61d59b4ff1dcb10a2a3c3be1bcff9555653b3d0a27f30647ab5da",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b08-37.wav",
+  "size": 126508,
+  "sha256": "76f32029c8a01fd66238eec85c548fc3b881ad96ceb676a8a3e50ad61dde6709",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b08-53.wav",
+  "size": 126508,
+  "sha256": "e3cba7160b23bed592e5e8f0b26080a90f20f3e8309f37bab4121961928f98a8",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b09-11.wav",
+  "size": 221740,
+  "sha256": "92c0496409738b23e8a788c79d88e01ef07a6389801e203439e68542f13439ab",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b09-23.wav",
+  "size": 221740,
+  "sha256": "f5573764ab0fb416761ed035a66668bd2d8aa329098e6fa42601a581323afa0e",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b09-37.wav",
+  "size": 221740,
+  "sha256": "5d518a0d5823c11bb5a44bc303463a92463727531505db85c641aa486f12e4b3",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b09-53.wav",
+  "size": 221740,
+  "sha256": "4c90b4e353481a09de6f45619187d76aeddafa094cb53056a541f9e24662f551",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b1-11.wav",
+  "size": 290348,
+  "sha256": "a35ec353c087a172a273776ec397f263e4017fe0bc656849b5027b4c276821ce",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b1-23.wav",
+  "size": 290348,
+  "sha256": "1f645ebce49628c5494a6fba85ce449a2fa83228a1f6168b334a9903fe846e6c",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b1-37.wav",
+  "size": 290348,
+  "sha256": "ce8d1031559ebb2e0023b7823f060e2b722f8d9459854daa0ea0bea08f608965",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b1-53.wav",
+  "size": 290348,
+  "sha256": "cad4126f5219ecdddc27ee0af1b2f6ab734a967156836333dadc7e9e7c6cbf14",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b10-11.wav",
+  "size": 192044,
+  "sha256": "0096389944b665930661bd662d45ceab7519c34e7d8cb9a954e724f8de392545",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b10-23.wav",
+  "size": 192044,
+  "sha256": "e3c2fde403f43ddb8045bdec3c9912d1d375c5605016a658f17a71c1705a6777",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b11-11.wav",
+  "size": 498732,
+  "sha256": "6c309f369b06124bfe66992561ed6494f4384ea4028f0cdddc29361c5183b669",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b11-23.wav",
+  "size": 498732,
+  "sha256": "99585a7893e0066671f4195b3475c37d187a2df6314c4d6442a370ada1b56a8d",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b12-11.wav",
+  "size": 207404,
+  "sha256": "a2ceadbd66a3bc7a7fc7bd6771b1de9cfd662783f87ee2b29cedc088872bfc30",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b12-23.wav",
+  "size": 207404,
+  "sha256": "8fdd4d8af99cedcc72fbd21fa9a992e9335fc2231abfcb480ec78c54b8261db7",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b13-11.wav",
+  "size": 63020,
+  "sha256": "dbcdbf00a3b6f7abab08430650fca19be6e411d1bf81e91271a4802f4332a0c0",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b13-23.wav",
+  "size": 63020,
+  "sha256": "9541c67cb087ca2825f96f5c70167642a395d5f329d621ab83f7565fdbd962bc",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b14-11.wav",
+  "size": 133164,
+  "sha256": "7db1542e3ffcb6aa61f8d6ec3a00fd1ed543ec6ee9c5f50b35fa7213c3156fc1",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b14-23.wav",
+  "size": 133164,
+  "sha256": "9a9a5da68cc4e4d16e114c48057798db6d15ec1f82b28b21789c0ecac01333a1",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b2-11.wav",
+  "size": 135212,
+  "sha256": "85862214dc5d6f9d212148a564cad3a87ffd53bf54d1304dc9481a4af51366a3",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b2-23.wav",
+  "size": 135212,
+  "sha256": "b66c013c20ec132995a53aa2795cc675fee01a8edfe1c019f77d53cec362022b",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b2-37.wav",
+  "size": 135212,
+  "sha256": "6a55c2d6e8403f63479e73e86421f9d64283aa2d27111834bd11627eff7c0ab7",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b2-53.wav",
+  "size": 135212,
+  "sha256": "f26bd0c27a2b3cd1b1cec7c42661e485e1cdf9b4c7d68207c14f3adc37daf58f",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b3-11.wav",
+  "size": 332332,
+  "sha256": "4acf7f57dad5294b376594655fbc66252ab66590da5aeede015e84cf9c82029b",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b3-23.wav",
+  "size": 332332,
+  "sha256": "4dc8137b9ba637f18a3d2a192d0fcd52cad88e52b1fcfebae935d99ad880b99c",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b3-37.wav",
+  "size": 332332,
+  "sha256": "4b35ee389c856c1552ffe19bbf32ac40234decda89cf4d8684881824ace2ac27",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b3-53.wav",
+  "size": 332332,
+  "sha256": "28a1f0f8e82c095bee687902a4fb8127d19e6d3e67882a4021509ce17a4ae5ab",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b4-11.wav",
+  "size": 89132,
+  "sha256": "7e23ed4df8e0038feb37a8943a5c6df54a9277960442806e555e80a626ffc3eb",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b4-23.wav",
+  "size": 89132,
+  "sha256": "83e8321c1c10345da768108b0246a99c4b624ca019cee6947eff81b50e71fcd1",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b4-37.wav",
+  "size": 89132,
+  "sha256": "d6d09e5a8460b286e2b50cd65c8b854c5dd7c45b3fdb57b4c4d96da503bf8556",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/b4-53.wav",
+  "size": 89132,
+  "sha256": "f89ffadfc17093dd22b09335a152b1207c9e18b08e347e00049dc93a7d088847",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/c-b1-11.wav",
+  "size": 265642,
+  "sha256": "a788e3bbd413e2a8d85454b50973728969032e06a9baa19783bb2047461546ac",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/c-b2-23.wav",
+  "size": 122994,
+  "sha256": "41c4a52f3a876bcd22088b44f12f865f0205cdac2274ca7584c75444ca7a85c0",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/c-b3-37.wav",
+  "size": 293490,
+  "sha256": "bc0f3fbfbb12151aec9c62382ecafe06e5e18ac6e8dccc6d320e02ed379adb27",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/c-b4-11.wav",
+  "size": 79054,
+  "sha256": "b15b3860940c996fc50849c3db21302465bfafad2b685b537f23912550c21c43",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/g1.wav",
+  "size": 16878,
+  "sha256": "b9375335bd9012548b010c1d8800026a006bfe82912e5bac07d03f325da864f1",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/voice-takes-v8/g2.wav",
+  "size": 14478,
+  "sha256": "ae2c659dd0b7dcdfbd91df008e77b3dbdc37e6d6762cbe0148132f7b0b6d186d",
+  "source": "leftover audit 2026-10-15 (moved from /workspace)"
  }
 ]

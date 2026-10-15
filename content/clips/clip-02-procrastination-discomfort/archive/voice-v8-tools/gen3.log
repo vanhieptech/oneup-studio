@@ -1,0 +1,135 @@
+/workspace/f5-venv/lib/python3.13/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Download Vocos from huggingface charactr/vocos-mel-24khz
+
+vocab :  /workspace/f5-ckpt/vocab.txt
+token :  custom
+model :  /workspace/f5-ckpt/model_last.pt 
+
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 clíp nữa thôi...
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:16<00:00, 16.44s/it]100%|██████████| 1/1 [00:16<00:00, 16.44s/it]
+ok b06-11.wav 0.9
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 thứ hai, là khi nào xuất hiện cái việc rối như canh hẹ, thì chúng ta phải kiếm việc khác làm liền: dọn bàn, tưới cây, xếp lại dép.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:39<00:00, 39.55s/it]100%|██████████| 1/1 [00:39<00:00, 39.55s/it]
+ok b07-11.wav 8.17
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ủa? bàn sạch bong rồi. giờ né cái gì nữa ta?
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:25<00:00, 26.00s/it]100%|██████████| 1/1 [00:25<00:00, 26.00s/it]
+ok b08-11.wav 2.63
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 và cuối cùng, là các bạn phải tự chửi mình cho thật đã! đồ lười! đồ vô dụng!
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:26<00:00, 26.67s/it]100%|██████████| 1/1 [00:26<00:00, 26.68s/it]
+ok b09-11.wav 4.62
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ghét bản thân mình ghê... mai làm nha... thôi, để thứ hai cho tròn tuần.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:23<00:00, 23.32s/it]100%|██████████| 1/1 [00:23<00:00, 23.32s/it]
+ok b10-11.wav 4.0
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nghe quen hông? mà khoa học nói vầy nè: ông sờ tiu gom hơn sáu trăm nghiên cứu, thấy mình né việc vì nó khó chịu, chứ không phải vì lười. càng chửi mình, thì càng né thêm.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:47<00:00, 47.40s/it]100%|██████████| 1/1 [00:47<00:00, 47.40s/it]
+ok b11-11.wav 10.39
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 vậy thì chia nhỏ ra ba gạch, hẹn mười phút thôi. chuông reo là được nghỉ.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:21<00:00, 21.86s/it]100%|██████████| 1/1 [00:21<00:00, 21.86s/it]
+ok b12-11.wav 4.32
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 hết đường né luôn á.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:17<00:00, 17.13s/it]100%|██████████| 1/1 [00:17<00:00, 17.13s/it]
+ok b13-11.wav 1.31
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 bạn đang né việc gì? com men một chữ thôi nha.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:23<00:00, 23.24s/it]100%|██████████| 1/1 [00:23<00:00, 23.24s/it]
+ok b14-11.wav 2.77
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 clíp nữa thôi...
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:14<00:00, 14.58s/it]100%|██████████| 1/1 [00:14<00:00, 14.58s/it]
+ok b06-23.wav 0.9
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 thứ hai, là khi nào xuất hiện cái việc rối như canh hẹ, thì chúng ta phải kiếm việc khác làm liền: dọn bàn, tưới cây, xếp lại dép.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:28<00:00, 28.99s/it]100%|██████████| 1/1 [00:28<00:00, 28.99s/it]
+ok b07-23.wav 8.17
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ủa? bàn sạch bong rồi. giờ né cái gì nữa ta?
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [01:01<00:00, 61.83s/it]100%|██████████| 1/1 [01:01<00:00, 61.83s/it]
+ok b08-23.wav 2.63
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 và cuối cùng, là các bạn phải tự chửi mình cho thật đã! đồ lười! đồ vô dụng!
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:27<00:00, 27.35s/it]100%|██████████| 1/1 [00:27<00:00, 27.35s/it]
+ok b09-23.wav 4.62
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 ghét bản thân mình ghê... mai làm nha... thôi, để thứ hai cho tròn tuần.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:22<00:00, 22.19s/it]100%|██████████| 1/1 [00:22<00:00, 22.19s/it]
+ok b10-23.wav 4.0
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 nghe quen hông? mà khoa học nói vầy nè: ông sờ tiu gom hơn sáu trăm nghiên cứu, thấy mình né việc vì nó khó chịu, chứ không phải vì lười. càng chửi mình, thì càng né thêm.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:39<00:00, 39.09s/it]100%|██████████| 1/1 [00:39<00:00, 39.09s/it]
+ok b11-23.wav 10.39
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 vậy thì chia nhỏ ra ba gạch, hẹn mười phút thôi. chuông reo là được nghỉ.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:23<00:00, 23.20s/it]100%|██████████| 1/1 [00:23<00:00, 23.20s/it]
+ok b12-23.wav 4.32
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 hết đường né luôn á.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:15<00:00, 15.83s/it]100%|██████████| 1/1 [00:15<00:00, 15.83s/it]
+ok b13-23.wav 1.31
+
+ref_text   hôm nay trời sài gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha. 
+gen_text 0 bạn đang né việc gì? com men một chữ thôi nha.
+
+
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:25<00:00, 25.35s/it]100%|██████████| 1/1 [00:25<00:00, 25.35s/it]
+ok b14-23.wav 2.77
