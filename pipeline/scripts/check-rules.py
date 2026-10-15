@@ -521,6 +521,11 @@ def lessons(spec, fdir, L, final, tpath):
     # L-028 self-blame lines must be punchy (!) with post emphasis on the key word
     sb = [s["id"] for _, s, l in L if re.search(r"đồ lười|ghét bản thân|tội lỗi", " ".join(p.get("t", "") for p in l.get("phrases", [])).lower()) and s.get("part") == "hook" and not ("!" in " ".join(p.get("t", "") for p in l["phrases"]) and (l.get("emph_tail") or l.get("emph_head") or "{nhấn:" in " ".join(p.get("t", "") for p in l["phrases"])))]
     (err if sb else ok)("L-028", f"self-blame hook line without '!' + emph_tail/emph_head: {sb}" if sb else "self-blame lines punchy + emphasized")
+    # L-036 meme-stem delivery: a line using the 'bản chất / Thứ nhất / Thứ hai / Và cuối cùng' stem must not be one flat
+    # whole-line F5 take: needs ≥2 clause phrases (stem | payload) and a {nhấn:}/{kéo:}/emph mark on the payload slot
+    ms = [s["id"] for _, s, l in L if re.match(r"\s*(thì cái bản chất|thứ nhất là|thứ hai là|và cuối cùng là)", re.sub(r"\*", "", l.get("text", "")).lower())
+          and not (len(l.get("phrases", [])) >= 2 and any(p.get("emph") or "{nhấn:" in p.get("t", "") or "{kéo:" in p.get("t", "") for p in l["phrases"]))]
+    (err if ms else ok)("L-036", f"meme-stem lines voiced flat (need stem|payload phrases + payload emphasis): {ms}" if ms else "meme-stem lines split + payload emphasized")
     # L-031 / rule-63: every hook sentence has one {nhấn: …} word; hook should carry Southern particles
     import re as _re
     ne = []; npart = True
