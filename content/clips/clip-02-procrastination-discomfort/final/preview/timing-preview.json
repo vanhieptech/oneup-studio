@@ -1,0 +1,156 @@
+{
+ "total": 11.115,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/preview/plan-A-preview.voiced.json",
+   "dur": 11.086,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A-preview.mp4",
+   "fx": null,
+   "scene_starts": [
+    1.256,
+    2.866,
+    4.665
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "POV: tính năng Omi.",
+   "en": "POV: the Omi feature.",
+   "emotion": "sad",
+   "key": "f5-bc14ea7cdc1f",
+   "local": 0.12,
+   "dur": 0.986,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "Hôm nay dời. Mai lại dời.",
+   "en": "Pushed today. Pushed again tomorrow.",
+   "emotion": "sad",
+   "key": "f5-92ec74bcee9b",
+   "local": 0.06,
+   "dur": 1.4,
+   "t": 1.316
+  },
+  {
+   "beat": "clip-02.b01",
+   "scene": "b01c",
+   "speaker": "hiep",
+   "say": "Trời ơi, thành dự án ma luôn.",
+   "en": "Oh god, it's a ghost project now.",
+   "emotion": "sad",
+   "key": "f5-50b13eeb21dd",
+   "local": 0.06,
+   "dur": 1.589,
+   "t": 2.926
+  },
+  {
+   "beat": "clip-02.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Haizz, mở code. Gõ hai dòng…",
+   "en": "Sigh. Open the code. Two lines…",
+   "emotion": "sad",
+   "key": "f5-ed736ebd8a33",
+   "local": 0.3,
+   "dur": 1.441,
+   "t": 4.965
+  },
+  {
+   "beat": "clip-02.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "ủa, sao lướt TikTok tới khuya rồi?",
+   "en": "wait, how is it midnight on TikTok?",
+   "emotion": "surprised",
+   "key": "f5-d698bac7d73e",
+   "local": 1.941,
+   "dur": 1.81,
+   "t": 6.606
+  },
+  {
+   "beat": "clip-02.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Xong tội lỗi, ghét bản thân: đồ lười!",
+   "en": "Then guilt, self-hate: “lazy bum!”",
+   "emotion": "sad",
+   "key": "f5-01e002e679c6",
+   "local": 3.951,
+   "dur": 2.02,
+   "t": 8.616
+  }
+ ],
+ "transitions": [
+  {
+   "at": 1.256,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 2.866,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 4.665,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "click",
+   "at": 1.316
+  },
+  {
+   "name": "stamp",
+   "at": 2.116
+  },
+  {
+   "name": "stamp",
+   "at": 3.176
+  },
+  {
+   "name": "pop",
+   "at": 7.106
+  },
+  {
+   "name": "stamp",
+   "at": 10.216
+  },
+  {
+   "name": "swish",
+   "at": 1.136
+  },
+  {
+   "name": "swish",
+   "at": 2.746
+  },
+  {
+   "name": "swish",
+   "at": 4.545
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

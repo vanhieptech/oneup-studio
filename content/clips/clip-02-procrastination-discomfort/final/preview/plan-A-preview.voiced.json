@@ -1,0 +1,732 @@
+{
+ "version": 1,
+ "id": "clip-02-final-A-preview",
+ "title": "Trì hoãn = né cảm giác khó chịu, không phải lười (Steel 2007)",
+ "meta": {
+  "clip": "clip-02",
+  "week": 1,
+  "source": "final/spec.json"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "b01",
+   "beat": "clip-02.b01",
+   "duration": 1.256,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.16
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.74,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "sad",
+     "facing": "right",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "POV: tính năng Omi.",
+     "start": 0.12,
+     "end": 1.256,
+     "emotion": "sad",
+     "audio": {
+      "src": "voice/f5-bc14ea7cdc1f.wav",
+      "duration": 0.986,
+      "envelope": [
+       0.003,
+       0.003,
+       0.006,
+       0.934,
+       1.0,
+       0.585,
+       0.07,
+       0.026,
+       0.795,
+       0.873,
+       0.781,
+       0.812,
+       0.837,
+       0.786,
+       0.601,
+       0.585,
+       0.296,
+       0.304,
+       0.919,
+       0.927,
+       0.804,
+       0.804,
+       0.967,
+       1.0,
+       0.867,
+       0.81,
+       0.533,
+       0.007,
+       0.004,
+       0.002
+      ],
+      "engine": "F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)"
+     }
+    }
+   ],
+   "caption": {
+    "text": "POV: the Omi feature.",
+    "start": 0.17,
+    "segments": [
+     {
+      "text": "POV: the Omi feature.",
+      "start": 0.17,
+      "end": 1.206,
+      "highlight": [
+       0,
+       3
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "stamp",
+     "at": 0.12
+    }
+   ],
+   "props": [
+    {
+     "kind": "laptop",
+     "x": 330,
+     "y": 1330,
+     "s": 0.8,
+     "text": "Omi feature",
+     "sub": "0 dòng code",
+     "stamp": "DỜI",
+     "at": 0.12
+    }
+   ],
+   "narration": {
+    "text": "POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.",
+    "start": 0.0
+   }
+  },
+  {
+   "id": "b01b",
+   "beat": "clip-02.b01",
+   "duration": 1.61,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.12
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.86,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "confused",
+     "facing": "right",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay dời. Mai lại dời.",
+     "start": 0.06,
+     "end": 1.61,
+     "emotion": "sad",
+     "audio": {
+      "src": "voice/f5-92ec74bcee9b.wav",
+      "duration": 1.4,
+      "envelope": [
+       0.004,
+       0.003,
+       0.006,
+       0.562,
+       1.0,
+       0.707,
+       0.802,
+       0.776,
+       0.871,
+       0.793,
+       0.803,
+       0.506,
+       0.414,
+       1.0,
+       0.84,
+       0.711,
+       0.702,
+       0.645,
+       0.582,
+       0.543,
+       0.772,
+       0.72,
+       0.707,
+       0.638,
+       0.719,
+       0.636,
+       0.633,
+       0.571,
+       0.43,
+       0.262,
+       0.815,
+       0.91,
+       0.682,
+       0.704,
+       0.741,
+       0.617,
+       0.575,
+       0.298,
+       0.021,
+       0.004,
+       0.004,
+       0.003,
+       1.0
+      ],
+      "engine": "F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Pushed today. Pushed again tomorrow.",
+    "start": 0.11,
+    "segments": [
+     {
+      "text": "Pushed today. Pushed again tomorrow.",
+      "start": 0.11,
+      "end": 1.56,
+      "highlight": [
+       0,
+       4
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "click",
+     "at": 0.06
+    },
+    {
+     "name": "stamp",
+     "at": 0.86
+    }
+   ],
+   "props": [
+    {
+     "kind": "calendar",
+     "x": 360,
+     "y": 1010,
+     "s": 0.8,
+     "rot": -4,
+     "pages": [
+      "HÔM NAY",
+      "MAI",
+      "MAI NỮA"
+     ],
+     "tearAt": [
+      0.06,
+      0.86
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b01c",
+   "beat": "clip-02.b01",
+   "duration": 1.799,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.12
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.5,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "sad",
+     "facing": "right",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trời ơi, thành dự án ma luôn.",
+     "start": 0.06,
+     "end": 1.799,
+     "emotion": "sad",
+     "audio": {
+      "src": "voice/f5-50b13eeb21dd.wav",
+      "duration": 1.589,
+      "envelope": [
+       0.004,
+       0.003,
+       0.006,
+       0.73,
+       1.0,
+       0.814,
+       0.846,
+       0.842,
+       0.859,
+       0.781,
+       0.737,
+       0.711,
+       0.579,
+       0.223,
+       0.126,
+       0.698,
+       0.548,
+       0.641,
+       0.614,
+       0.425,
+       0.78,
+       0.623,
+       0.654,
+       0.601,
+       0.52,
+       0.553,
+       0.492,
+       0.484,
+       0.524,
+       0.617,
+       0.74,
+       0.698,
+       0.664,
+       0.62,
+       0.607,
+       0.705,
+       0.747,
+       1.0,
+       1.0,
+       0.758,
+       0.606,
+       0.578,
+       0.574,
+       0.292,
+       0.021,
+       0.003,
+       0.002,
+       0.003
+      ],
+      "engine": "F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Oh god, it's a ghost project now.",
+    "start": 0.11,
+    "segments": [
+     {
+      "text": "Oh god, it's a ghost project now.",
+      "start": 0.11,
+      "end": 1.749,
+      "highlight": [
+       4,
+       5
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "stamp",
+     "at": 0.31
+    }
+   ],
+   "props": [
+    {
+     "kind": "vignette",
+     "at": 0.06,
+     "dark": 0.6
+    },
+    {
+     "kind": "words",
+     "x": 540,
+     "y": 300,
+     "s": 1.3,
+     "words": [
+      "DỰ ÁN MA"
+     ],
+     "dropAt": [
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b02",
+   "beat": "clip-02.b02",
+   "duration": 6.421,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.42,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "sad",
+     "facing": "right",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 0.3,
+       "value": "sad"
+      },
+      {
+       "at": 1.941,
+       "value": "surprised"
+      },
+      {
+       "at": 3.951,
+       "value": "sad"
+      }
+     ],
+     "actionChanges": [
+      {
+       "at": 0.3,
+       "value": "typing"
+      },
+      {
+       "at": 1.941,
+       "value": "idle"
+      },
+      {
+       "at": 3.951,
+       "value": "idle"
+      }
+     ]
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Haizz, mở code. Gõ hai dòng…",
+     "start": 0.3,
+     "end": 1.991,
+     "emotion": "sad",
+     "audio": {
+      "src": "voice/f5-ed736ebd8a33.wav",
+      "duration": 1.441,
+      "envelope": [
+       0.004,
+       0.004,
+       0.01,
+       0.793,
+       1.0,
+       1.0,
+       0.934,
+       0.891,
+       0.359,
+       0.024,
+       0.484,
+       0.956,
+       0.889,
+       0.797,
+       0.556,
+       0.029,
+       0.057,
+       0.168,
+       0.14,
+       0.682,
+       1.0,
+       0.913,
+       0.767,
+       0.633,
+       0.596,
+       0.654,
+       0.725,
+       0.845,
+       0.845,
+       0.83,
+       0.606,
+       0.623,
+       0.972,
+       0.919,
+       0.832,
+       0.713,
+       0.664,
+       0.559,
+       0.747,
+       0.688,
+       0.315,
+       0.003,
+       0.003,
+       0.002
+      ],
+      "engine": "F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "ủa, sao lướt TikTok tới khuya rồi?",
+     "start": 1.941,
+     "end": 4.001,
+     "emotion": "surprised",
+     "audio": {
+      "src": "voice/f5-d698bac7d73e.wav",
+      "duration": 1.81,
+      "envelope": [
+       0.004,
+       0.003,
+       0.008,
+       0.655,
+       1.0,
+       0.808,
+       0.843,
+       0.964,
+       0.746,
+       0.562,
+       0.437,
+       0.385,
+       0.386,
+       0.803,
+       0.744,
+       0.862,
+       0.752,
+       0.917,
+       0.497,
+       0.04,
+       0.019,
+       0.471,
+       0.754,
+       0.114,
+       0.016,
+       0.414,
+       0.908,
+       0.655,
+       0.215,
+       0.027,
+       0.016,
+       0.583,
+       0.834,
+       0.625,
+       0.077,
+       0.098,
+       0.211,
+       1.0,
+       0.963,
+       1.0,
+       0.849,
+       0.405,
+       0.78,
+       0.909,
+       0.86,
+       0.889,
+       0.805,
+       0.735,
+       0.602,
+       0.427,
+       0.119,
+       0.017,
+       0.004,
+       0.003,
+       0.003
+      ],
+      "engine": "F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Xong tội lỗi, ghét bản thân: đồ lười!",
+     "start": 3.951,
+     "end": 6.221,
+     "emotion": "sad",
+     "audio": {
+      "src": "voice/f5-01e002e679c6.wav",
+      "duration": 2.02,
+      "envelope": [
+       0.004,
+       0.004,
+       0.007,
+       0.102,
+       0.349,
+       0.685,
+       0.919,
+       0.727,
+       0.798,
+       0.675,
+       0.132,
+       0.161,
+       1.0,
+       0.9,
+       0.742,
+       0.797,
+       0.79,
+       0.837,
+       0.807,
+       0.889,
+       0.764,
+       0.849,
+       0.764,
+       0.518,
+       0.136,
+       0.917,
+       0.871,
+       0.501,
+       0.033,
+       0.059,
+       0.764,
+       0.725,
+       0.614,
+       0.63,
+       0.728,
+       0.235,
+       0.491,
+       0.96,
+       0.796,
+       0.814,
+       0.887,
+       0.765,
+       0.758,
+       1.0,
+       1.0,
+       0.799,
+       0.784,
+       0.917,
+       0.799,
+       1.0,
+       0.983,
+       0.99,
+       0.891,
+       0.867,
+       0.653,
+       0.482,
+       0.088,
+       0.018,
+       0.004,
+       0.004,
+       0.004
+      ],
+      "engine": "F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Sigh. Open the code. Two lines… wait, how is it midnight on TikTok? Then guilt, self-hate: “lazy bum!”",
+    "start": 0.35,
+    "segments": [
+     {
+      "text": "Sigh. Open the code. Two lines…",
+      "start": 0.35,
+      "end": 1.941,
+      "highlight": [
+       0,
+       5
+      ]
+     },
+     {
+      "text": "wait, how is it midnight on TikTok?",
+      "start": 1.991,
+      "end": 3.951,
+      "highlight": [
+       4,
+       6
+      ]
+     },
+     {
+      "text": "Then guilt, self-hate: “lazy bum!”",
+      "start": 4.001,
+      "end": 6.171,
+      "highlight": [
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 2.441
+    },
+    {
+     "name": "stamp",
+     "at": 5.551
+    }
+   ],
+   "props": [
+    {
+     "kind": "laptop",
+     "x": 300,
+     "y": 1330,
+     "s": 0.62,
+     "text": "Omi feature",
+     "sub": "đang mở…"
+    },
+    {
+     "kind": "phone",
+     "x": 800,
+     "y": 1120,
+     "s": 0.95,
+     "rot": 8,
+     "at": 1.6,
+     "text": "TikTok"
+    },
+    {
+     "kind": "cloud",
+     "x": 360,
+     "y": 300,
+     "s": 0.7,
+     "at": 2.3,
+     "words": [
+      "CHÁN NẢN",
+      "TỘI LỖI",
+      "LƯỜI"
+     ],
+     "dropAt": [
+      2.55,
+      3.1,
+      4.4
+     ]
+    }
+   ]
+  }
+ ]
+}

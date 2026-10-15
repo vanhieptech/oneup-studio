@@ -2,6 +2,8 @@
 """Build a final clip from ONE source spec (content/clips/<clip>/final/spec.json).
 
   build-final.py <spec.json> [--stage voice|plans|render|assemble|all]   (default all)
+                [--scenes b01,b01b,...]  partial preview: only these scene/section ids (parts left empty are dropped);
+                                         outputs go to <final>/preview/ (plan-*-preview, timing-preview.json, <id>-preview.mp4)
 
 Stages (each reuses cached output; edit the spec, never the generated files):
   voice    : every line -> the speaker profile's voice (rule-46). Default since DL-035: F5-TTS (hynt ViVoice, CC-BY-NC-SA,
@@ -198,11 +200,21 @@ SFX_LEAD = 0.12  # SFX starts slightly before the cut so it overlaps across it
 def main():
     specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
     fdir = os.path.dirname(specp); spec = json.load(open(specp)); os.makedirs(os.path.join(fdir, "out"), exist_ok=True)
+    sel = sys.argv[sys.argv.index("--scenes") + 1].split(",") if "--scenes" in sys.argv else None
+    sfxn = "-preview" if sel else ""; odir = os.path.join(fdir, "preview") if sel else os.path.join(fdir, "out"); os.makedirs(odir, exist_ok=True)
+    tj = os.path.join(odir, "timing-preview.json") if sel else os.path.join(fdir, "timing.json")
+    if sel:
+        for p in spec["parts"]:
+            for k in ("scenes", "sections"):
+                if k in p: p[k] = [x for x in p[k] if x["id"] in sel]
+        spec["parts"] = [p for p in spec["parts"] if p.get("scenes") or p.get("sections")]
+        spec["parts"][-1]["transitionOut"] = None
+        print("preview scenes:", sel, "parts:", [p["id"] for p in spec["parts"]])
     stage_voice(spec)
     parts = []; timing = []; offset = 0.0
     for p in spec["parts"]:
         if p["engine"] == "remotion":
-            plan, tm, dur = remotion_plan(spec, p); pp = os.path.join(fdir, f"plan-{p['id']}.voiced.json")
+            plan, tm, dur = remotion_plan(spec, p); pp = os.path.join(odir if sel else fdir, f"plan-{p['id']}{sfxn}.voiced.json"); plan["id"] += sfxn
             json.dump(plan, open(pp, "w"), ensure_ascii=False, indent=1)
             # absolute times: Remotion scene starts are cumulative
             starts = {}; acc = 0
@@ -223,7 +235,7 @@ def main():
         parts[-1]["_off"] = offset
         offset += parts[-1]["dur"] - XF
     total = round(offset + XF, 2)
-    json.dump({"total": total, "parts": [{k: v for k, v in q.items() if k not in ("sfx", "hits")} for q in parts], "lines": timing}, open(os.path.join(fdir, "timing.json"), "w"), ensure_ascii=False, indent=1)
+    json.dump({"total": total, "parts": [{k: v for k, v in q.items() if k not in ("sfx", "hits")} for q in parts], "lines": timing}, open(tj, "w"), ensure_ascii=False, indent=1)
     print(f"plans: total ≈ {total}s")
     sh(["npx", "tsx", "src/cli.ts", "validate", *[q["plan"] for q in parts if q["engine"] == "remotion"]], cwd=VE)
     if stage in ("voice", "plans"): return
@@ -257,7 +269,7 @@ def main():
         trans += [{"at": round(st + t0, 3), "kind": "scene", "sfx": TRANS_SFX["scene"]} for t0 in q.get("scene_starts", [])]
     trans.sort(key=lambda x: x["at"])
     sfx = [(n, round(a - q["_off"] + st, 3)) for q, st in zip(parts, starts) for n, a in q["sfx"]] + [(t["sfx"], round(t["at"] - SFX_LEAD, 3)) for t in trans] + [("ambience", 0.0)]
-    tj = os.path.join(fdir, "timing.json"); tjd = json.load(open(tj)); tjd["transitions"] = trans; tjd["sfx_mix"] = [{"name": n, "at": a} for n, a in sfx]
+    tjd = json.load(open(tj)); tjd["transitions"] = trans; tjd["sfx_mix"] = [{"name": n, "at": a} for n, a in sfx]
     # absolute (clip-time) hits; part offsets shift by xfade, so re-base on assembled starts
     tjd["hits"] = [dict(h, t=round(h["t"] - q["_off"] + st, 3)) for q, st in zip(parts, starts) for h in q.get("hits", [])]
     json.dump(tjd, open(tj, "w"), ensure_ascii=False, indent=1)
@@ -268,7 +280,7 @@ def main():
         ins_a = len(parts) + j; af.append(f"[{ins_a}:a]aresample=48000,adelay={int(max(0, at)*1000)}:all=1[s{j}]"); mixl.append(f"[s{j}]")
     af.append("".join(mixl) + f"amix=inputs={len(mixl)}:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,atrim=0:{total}[a]")
     sfx_in = [x for (name, _) in sfx for x in ("-i", os.path.join(tmp, name + ".wav"))]
-    wav = os.path.join(fdir, "out", "mix.wav")
+    wav = os.path.join(fdir, "out", f"mix{sfxn}.wav")
     sh(["ffmpeg", "-loglevel", "error", "-y", *ins, *sfx_in, "-filter_complex", ";".join(af), "-map", "[a]", "-ac", "1", "-ar", "48000", wav])
     # 2nd loudness pass: single-pass loudnorm lands ~1 LU low on short clips; correct with a linear gain to -14 LUFS (rule-4)
     m = subprocess.run(["ffmpeg", "-hide_banner", "-i", wav, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
@@ -276,11 +288,11 @@ def main():
     if abs(gain) > 0.2:
         sh(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-af", f"volume={gain}dB,alimiter=limit=0.84:level=false", wav.replace(".wav", "-g.wav")]); os.replace(wav.replace(".wav", "-g.wav"), wav)
     vf.append(f"[{vprev}]noise=alls=4:allf=t,format=yuv420p[v]")  # light film grain over the whole clip (rule-20)
-    out = os.path.join(fdir, "out", spec["id"] + ".mp4")
+    out = os.path.join(odir, spec["id"] + sfxn + ".mp4")
     sh(["ffmpeg", "-loglevel", "error", "-y", *ins, "-i", wav, "-filter_complex", ";".join(vf), "-map", "[v]", "-map", f"{len(parts)}:a", "-c:v", "libx264", "-profile:v", "high", "-crf", "20", "-maxrate", "14M", "-bufsize", "28M",
         "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv", "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", out])
-    t2 = json.load(open(os.path.join(fdir, "timing.json"))); t2["total"] = total; t2["partStarts"] = starts
-    json.dump(t2, open(os.path.join(fdir, "timing.json"), "w"), ensure_ascii=False, indent=1)
+    t2 = json.load(open(tj)); t2["total"] = total; t2["partStarts"] = starts
+    json.dump(t2, open(tj, "w"), ensure_ascii=False, indent=1)
     print("final →", out, f"({total}s)")
 
 if __name__ == "__main__":
