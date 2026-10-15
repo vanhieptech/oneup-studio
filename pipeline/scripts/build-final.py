@@ -102,7 +102,8 @@ def remotion_plan(spec, part):
     for si, sc in enumerate(part["scenes"]):
         tr = sc.get("transition", "cut"); trd = 0.0 if tr == "cut" else 0.4
         hook = sc.get("part") == "hook"  # rule-55: rapid hook, near-zero lead + short tail on cut scenes
-        t = 0.12 if (si == 0 and part is spec["parts"][0]) else (0.02 if hook and tr == "cut" else max(0.3, trd + 0.15))
+        pc = spec.get("pacing") or {}  # optional per-clip pacing (clip-02 v17: match the approved listen file)
+        t = 0.12 if (si == 0 and part is spec["parts"][0]) else (0.02 if hook and tr == "cut" else max(pc.get("lead", 0.3), trd + pc.get("lead_tr", 0.15)))
         cast = {c["id"]: {"characterId": c["id"], "x": c["x"], "pose": c.get("pose", "standing"), "action": c.get("action", "idle"),
                           "expression": c.get("expression", "neutral"), "facing": c.get("facing", "right"), "enter": c.get("enter", "none"),
                           "expressionChanges": [], "actionChanges": []} for c in sc["cast"]}
@@ -117,7 +118,7 @@ def remotion_plan(spec, part):
             segs.append({"text": l["en"], "start": 0.0 if (si == 0 and li == 0 and part is spec["parts"][0]) else round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})  # rule-55/L-021: caption on frame 0
             timing.append({"beat": sc["beat"], "scene": sc["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": l["_dur"]})
             t = en + ((0.08 if hook else 0.2) if li < len(sc["lines"]) - 1 else 0)
-        dur = round(t + (0.06 if hook else 0.45), 3)
+        dur = round(t + (0.06 if hook else pc.get("tail", 0.45)), 3)
         dlg[-1]["end"] = min(dlg[-1]["end"], dur); segs[-1]["end"] = min(segs[-1]["end"], round(dur - 0.05, 3))
         for i in range(len(segs) - 1): segs[i]["end"] = min(segs[i]["end"], segs[i + 1]["start"])
         scene = {"id": sc["id"], "beat": sc["beat"], "duration": dur, "background": {"kind": sc["background"]},

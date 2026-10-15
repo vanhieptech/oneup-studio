@@ -81,13 +81,25 @@ A = [
     ("Hiệp-né quay thẳng camera; chữ COMMENT 1 CHỮ (loop về hook 'né')", "Comment"),
     [S("pop", 0, 1.6, "Comment")], [{"kind": "vignette", "at": 0.0, "dark": 0.5}, {"kind": "words", "x": 540, "y": 360, "s": 1.1, "words": ["COMMENT 1 CHỮ"], "dropAt": [1.5]}]),
 ]
+
+# L-033 layout fixes (v17 render): character x + prop positions so props stay off heads and bubbles
+LAYOUT = {"b01b": {"x": 0.72, "props": [(260, 1500, 0.55), (260, 1050, 0.7)]}, "b02": {"x": 0.72, "props": [(260, 1300, 0.7), None]},
+          "b05": {"props": [None, (300, 1650, 0.65)]}, "b06": {"props": [None, None, (220, 1600, 0.55)]},
+          "b07": {"props": [(270, 1450, 0.55), (540, 1780, 0.6), (270, 1600, 0.5)]}, "b08": {"props": [(330, 1650, 0.62)]},
+          "b09": {"props": [(230, 1450, 0.55), None]}, "b09c": {"props": [None, (230, 1700, 0.55)]}}
+for sc in A:
+    L = LAYOUT.get(sc["id"])
+    if not L: continue
+    if "x" in L: sc["cast"][0]["x"] = L["x"]; sc["cast"][0]["facing"] = "left"
+    for pr, pos in zip(sc["props"], L.get("props", [])):
+        if pos: pr["x"], pr["y"], pr["s"] = pos
 s = json.load(open(D + 'spec.json'))
 s.update({"title": "Bản chất của việc mở laptop rồi lướt TikTok: né cảm giác khó chịu (Steel 2007)",
   "hook": {"text": "BẢN CHẤT LÀ GÌ?", "scenes": ["b01", "b01b"], "format": "meme 'Thì cái bản chất của cái việc… là gì?' + chen ngang (v14)"},
   "engagement": [{"type": "relatable-question", "beat": "b07", "text": "Nghe quen hông?"}, {"type": "comment-challenge", "beat": "b10", "text": "Comment một chữ nha!"},
                  {"type": "loop", "beat": "b10", "text": "né", "hook_word": "bản chất"}],
-  "voices": {"Thầy": "F5 · Thái Sơn speed 0.9", "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone", "Omi": "không nói (đèn)"},
+  "pacing": {"lead": 0.15, "lead_tr": 0.05, "tail": 0.25}, "voices": {"Thầy": "F5 · Thái Sơn speed 0.9", "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone", "Omi": "không nói (đèn)"},
   "parts": [{"id": "A", "engine": "remotion", "scenes": A}]})
-s["revisions"].append({"v": 17, "date": "2026-10-16", "dl": "L-036", "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"})
+s["revisions"] = [r for r in s["revisions"] if r.get("v") != 17]; s["revisions"].append({"v": 17, "date": "2026-10-16", "dl": "L-036", "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"})
 json.dump(s, open(D + 'spec.json', 'w'), ensure_ascii=False, indent=2)
 n = sum(len(re.sub(r"\{[^}]*\}|\*", "", l["text"]).split()) for sc in A for l in sc["lines"]); print("VI words", n)

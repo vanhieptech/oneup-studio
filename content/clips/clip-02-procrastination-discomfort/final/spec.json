@@ -69,12 +69,6 @@
       "date": "2026-10-16",
       "dl": "L-036",
       "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"
-    },
-    {
-      "v": 17,
-      "date": "2026-10-16",
-      "dl": "L-036",
-      "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"
     }
   ],
   "transition_sfx": {
@@ -231,8 +225,8 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.5,
-              "facing": "right",
+              "x": 0.72,
+              "facing": "left",
               "pose": "sitting",
               "action": "idle",
               "expression": "happy"
@@ -259,18 +253,18 @@
           "props": [
             {
               "kind": "laptop",
-              "x": 300,
-              "y": 1330,
-              "s": 0.6,
+              "x": 260,
+              "y": 1500,
+              "s": 0.55,
               "text": "OneUp",
               "sub": "mở…",
               "at": 0.0
             },
             {
               "kind": "phone",
-              "x": 860,
-              "y": 1250,
-              "s": 0.75,
+              "x": 260,
+              "y": 1050,
+              "s": 0.7,
               "rot": 8,
               "at": 0.9,
               "text": "TikTok"
@@ -315,8 +309,8 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.5,
-              "facing": "right",
+              "x": 0.72,
+              "facing": "left",
               "pose": "sitting",
               "action": "idle",
               "expression": "happy"
@@ -337,8 +331,8 @@
           "props": [
             {
               "kind": "phone",
-              "x": 860,
-              "y": 1250,
+              "x": 260,
+              "y": 1300,
               "s": 0.7,
               "rot": 8,
               "at": 0.0,
@@ -515,9 +509,9 @@
             },
             {
               "kind": "sign",
-              "x": 330,
-              "y": 420,
-              "s": 0.7,
+              "x": 300,
+              "y": 1650,
+              "s": 0.65,
               "rot": 3,
               "text": "THỨ HAI · ĐỔI VIỆC",
               "at": 4.8
@@ -613,9 +607,9 @@
             },
             {
               "kind": "calendar",
-              "x": 800,
-              "y": 520,
-              "s": 0.6,
+              "x": 220,
+              "y": 1600,
+              "s": 0.55,
               "pages": [
                 "HÔM NAY",
                 "MAI"
@@ -714,9 +708,9 @@
           "props": [
             {
               "kind": "sign",
-              "x": 300,
-              "y": 1150,
-              "s": 0.6,
+              "x": 270,
+              "y": 1450,
+              "s": 0.55,
               "rot": -3,
               "text": "STEEL 2007 · 691 KẾT QUẢ",
               "at": 2.8
@@ -724,8 +718,8 @@
             {
               "kind": "words",
               "x": 540,
-              "y": 330,
-              "s": 0.8,
+              "y": 1780,
+              "s": 0.6,
               "words": [
                 "KHÓ CHỊU?",
                 "LÀM ĐƯỢC?",
@@ -739,9 +733,9 @@
             },
             {
               "kind": "sign",
-              "x": 300,
-              "y": 1330,
-              "s": 0.6,
+              "x": 270,
+              "y": 1600,
+              "s": 0.5,
               "rot": 2,
               "text": "TƯƠNG QUAN",
               "at": 0.5
@@ -834,8 +828,8 @@
             {
               "kind": "sign",
               "x": 330,
-              "y": 420,
-              "s": 0.7,
+              "y": 1650,
+              "s": 0.62,
               "rot": -4,
               "text": "TRÁNH KHÓ CHỊU ≠ CHƯA CỐ GẮNG",
               "at": 0.8
@@ -934,9 +928,9 @@
           "props": [
             {
               "kind": "laptop",
-              "x": 280,
-              "y": 1330,
-              "s": 0.6,
+              "x": 230,
+              "y": 1450,
+              "s": 0.55,
               "text": "oneup.swift",
               "sub": "dòng 1 ✓",
               "at": 0.0
@@ -1034,9 +1028,9 @@
             },
             {
               "kind": "calendar",
-              "x": 800,
-              "y": 1100,
-              "s": 0.6,
+              "x": 230,
+              "y": 1700,
+              "s": 0.55,
               "pages": [
                 "NGÀY XONG: T6"
               ],
@@ -1219,5 +1213,10 @@
     "Thầy": "F5 · Thái Sơn speed 0.9",
     "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone",
     "Omi": "không nói (đèn)"
+  },
+  "pacing": {
+    "lead": 0.15,
+    "lead_tr": 0.05,
+    "tail": 0.25
   }
 }

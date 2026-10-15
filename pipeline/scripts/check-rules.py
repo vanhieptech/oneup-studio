@@ -584,6 +584,11 @@ def lessons(spec, fdir, L, final, tpath):
             m = json.load(open(jp)); tag = f"{l['scene']}/{l['key']}"
             am = m
             if "F5" in m.get("engine", ""):
+                pf = "per-phrase F5" in m["engine"] and m.get("emphasis_edits") is True and m.get("units")  # L-016 exception: voice-phrase-f5.py, one F5 call per '|' phrase, only {nhấn:} word stretch/pitch + stem end fall edits
+                if pf:
+                    ok("L-016", f"{tag}: per-phrase F5 units, cuts only for {{nhấn:}} emphasis edits (exception)"); ok("L-007", f"{tag}: F5 per-phrase generation")
+                    am = m
+                    continue
                 v4 = re.search(r"voice-prosody v[45]", m["engine"]) and m.get("intra_output_cuts") == 0 and m.get("units")
                 (ok if v4 else err)("L-016", f"{tag}: " + ("sentence/clause units, no cut inside any F5 output" if v4 else "F5 audio cut inside a model output (v2 collage / v3 word-cut) → rebuild with voice-prosody v4"))
                 (ok if re.search(r"voice-prosody v[45]", m["engine"]) else err)("L-007", f"{tag}: F5 per-unit generation (whole clause per call)")

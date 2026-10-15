@@ -1,24 +1,24 @@
 {
- "total": 65.36,
+ "total": 62.71,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json",
-   "dur": 65.359,
+   "dur": 62.709,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A.mp4",
    "fx": null,
    "scene_starts": [
     1.097,
     4.34,
     6.647,
-    12.062000000000001,
-    19.269000000000002,
-    26.163000000000004,
-    37.894000000000005,
-    46.083000000000006,
-    52.97200000000001,
-    59.92800000000001
+    11.712,
+    18.619,
+    25.163,
+    36.594,
+    44.433,
+    51.022,
+    57.628
    ],
    "_off": 0.0
   }
@@ -68,9 +68,9 @@
    "en": "First: scroll nonstop in bed, over and over.",
    "emotion": "focused",
    "key": "v17-b03",
-   "local": 0.3,
+   "local": 0.15,
    "dur": 4.665,
-   "t": 6.947
+   "t": 6.797
   },
   {
    "beat": "clip-02.b05",
@@ -80,9 +80,9 @@
    "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
    "emotion": "confused",
    "key": "v17-b05",
-   "local": 0.55,
+   "local": 0.45,
    "dur": 6.207,
-   "t": 12.612
+   "t": 12.162
   },
   {
    "beat": "clip-02.b06",
@@ -92,9 +92,9 @@
    "en": "And finally: curse yourself out properly, then dodge again tomorrow.",
    "emotion": "focused",
    "key": "v17-b06a",
-   "local": 0.3,
+   "local": 0.15,
    "dur": 4.451,
-   "t": 19.569
+   "t": 18.769
   },
   {
    "beat": "clip-02.b06",
@@ -104,9 +104,9 @@
    "en": "Lazy bum! Eh… tomorrow then…",
    "emotion": "sad",
    "key": "v17-b06b",
-   "local": 4.951,
+   "local": 4.801,
    "dur": 1.493,
-   "t": 24.22
+   "t": 23.42
   },
   {
    "beat": "clip-02.b07",
@@ -116,9 +116,9 @@
    "en": "Sound familiar? But scientists say: Steel pooled 691 results. Delay tracks three things: how unpleasant the task is, whether you think you can do it, how hard distractions pull.",
    "emotion": "focused",
    "key": "v17-b07",
-   "local": 0.55,
+   "local": 0.45,
    "dur": 10.731,
-   "t": 26.713
+   "t": 25.613
   },
   {
    "beat": "clip-02.b08",
@@ -128,9 +128,9 @@
    "en": "So procrastination is avoiding a bad feeling, not a lack of effort. Only a link so far.",
    "emotion": "focused",
    "key": "v17-b08a",
-   "local": 0.3,
+   "local": 0.15,
    "dur": 5.907,
-   "t": 38.194
+   "t": 36.744
   },
   {
    "beat": "clip-02.b08",
@@ -140,9 +140,9 @@
    "en": "Oh… I really am dodging.",
    "emotion": "surprised",
    "key": "v17-b08b",
-   "local": 6.407,
+   "local": 6.257,
    "dur": 1.332,
-   "t": 44.301
+   "t": 42.851
   },
   {
    "beat": "clip-02.b09",
@@ -152,9 +152,9 @@
    "en": "So don't scold yourself. Ask: what exactly feels bad? Messy? Split it small. Dreading it? Fix just one line.",
    "emotion": "focused",
    "key": "v17-b09a",
-   "local": 0.55,
+   "local": 0.45,
    "dur": 5.889,
-   "t": 46.633
+   "t": 44.883
   },
   {
    "beat": "clip-02.b09",
@@ -164,9 +164,9 @@
    "en": "Like last clip: 9 p.m., at the desk, open the file, type one line. No one pushing? Set your own due date.",
    "emotion": "focused",
    "key": "v17-b09c",
-   "local": 0.3,
+   "local": 0.15,
    "dur": 6.206,
-   "t": 53.272
+   "t": 51.172
   },
   {
    "beat": "clip-02.b10",
@@ -176,9 +176,9 @@
    "en": "Not lazy, just dodging. What feels bad about the task you're dodging? Comment one word!",
    "emotion": "happy",
    "key": "v17-b10",
-   "local": 0.3,
+   "local": 0.15,
    "dur": 4.681,
-   "t": 60.228
+   "t": 57.778
   }
  ]
 }

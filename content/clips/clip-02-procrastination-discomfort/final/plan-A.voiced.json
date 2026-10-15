@@ -82,7 +82,7 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
@@ -143,11 +143,11 @@
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.5,
+     "x": 0.72,
      "pose": "sitting",
      "action": "idle",
      "expression": "happy",
-     "facing": "right",
+     "facing": "left",
      "enter": "none",
      "expressionChanges": [],
      "actionChanges": []
@@ -260,7 +260,7 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
@@ -291,18 +291,18 @@
    "props": [
     {
      "kind": "laptop",
-     "x": 300,
-     "y": 1330,
-     "s": 0.6,
+     "x": 260,
+     "y": 1500,
+     "s": 0.55,
      "text": "OneUp",
      "sub": "mở…",
      "at": 0.02
     },
     {
      "kind": "phone",
-     "x": 860,
-     "y": 1250,
-     "s": 0.75,
+     "x": 260,
+     "y": 1050,
+     "s": 0.7,
      "rot": 8,
      "at": 0.92,
      "text": "TikTok"
@@ -327,11 +327,11 @@
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.5,
+     "x": 0.72,
      "pose": "sitting",
      "action": "idle",
      "expression": "happy",
-     "facing": "right",
+     "facing": "left",
      "enter": "none",
      "expressionChanges": [],
      "actionChanges": []
@@ -416,7 +416,7 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
      }
     }
    ],
@@ -443,8 +443,8 @@
    "props": [
     {
      "kind": "phone",
-     "x": 860,
-     "y": 1250,
+     "x": 260,
+     "y": 1300,
      "s": 0.7,
      "rot": 8,
      "at": 0.02,
@@ -467,7 +467,7 @@
   {
    "id": "b03",
    "beat": "clip-02.b03",
-   "duration": 5.415,
+   "duration": 5.065,
    "background": {
     "kind": "bed"
    },
@@ -496,8 +496,8 @@
     {
      "speaker": "hiep",
      "text": "Thứ nhất là các bạn phải **lướt** liên tục ở trên giường, một cách lặp đi lặp lại.",
-     "start": 0.3,
-     "end": 5.215,
+     "start": 0.15,
+     "end": 5.065,
      "emotion": "focused",
      "audio": {
       "src": "voice/v17-b03.wav",
@@ -644,18 +644,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
    "caption": {
     "text": "First: scroll nonstop in bed, over and over.",
-    "start": 0.35,
+    "start": 0.2,
     "segments": [
      {
       "text": "First: scroll nonstop in bed, over and over.",
-      "start": 0.35,
-      "end": 5.165,
+      "start": 0.2,
+      "end": 5.015,
       "highlight": [
        1,
        5
@@ -666,11 +666,11 @@
    "sfx": [
     {
      "name": "tick",
-     "at": 1.3
+     "at": 1.15
     },
     {
      "name": "tick",
-     "at": 3.7
+     "at": 3.55
     }
    ],
    "props": [
@@ -679,7 +679,7 @@
      "x": 300,
      "y": 1250,
      "s": 0.8,
-     "at": 0.6,
+     "at": 0.45,
      "text": "TikTok"
     },
     {
@@ -689,14 +689,14 @@
      "s": 0.7,
      "rot": -3,
      "text": "THỨ NHẤT · LƯỚT LẶP",
-     "at": 0.3
+     "at": 0.15
     }
    ]
   },
   {
    "id": "b05",
    "beat": "clip-02.b05",
-   "duration": 7.207,
+   "duration": 6.907,
    "background": {
     "kind": "desk"
    },
@@ -725,8 +725,8 @@
     {
      "speaker": "hiep",
      "text": "Thứ hai là khi nào xuất hiện **cái cảm giác khó chịu** khi mở file để làm việc… thì phải đổi việc liền.",
-     "start": 0.55,
-     "end": 7.007,
+     "start": 0.45,
+     "end": 6.907,
      "emotion": "confused",
      "audio": {
       "src": "voice/v17-b05.wav",
@@ -920,18 +920,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
    "caption": {
     "text": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
-    "start": 0.6,
+    "start": 0.5,
     "segments": [
      {
       "text": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
-      "start": 0.6,
-      "end": 6.957,
+      "start": 0.5,
+      "end": 6.857,
       "highlight": [
        4,
        14
@@ -942,11 +942,11 @@
    "sfx": [
     {
      "name": "snap",
-     "at": 2.35
+     "at": 2.25
     },
     {
      "name": "swish",
-     "at": 5.55
+     "at": 5.45
     }
    ],
    "props": [
@@ -957,23 +957,23 @@
      "s": 0.7,
      "text": "oneup.swift",
      "sub": "KHÓ CHỊU",
-     "at": 0.55
+     "at": 0.45
     },
     {
      "kind": "sign",
-     "x": 330,
-     "y": 420,
-     "s": 0.7,
+     "x": 300,
+     "y": 1650,
+     "s": 0.65,
      "rot": 3,
      "text": "THỨ HAI · ĐỔI VIỆC",
-     "at": 5.35
+     "at": 5.25
     }
    ]
   },
   {
    "id": "b06",
    "beat": "clip-02.b06",
-   "duration": 6.894,
+   "duration": 6.544,
    "background": {
     "kind": "bed"
    },
@@ -1002,8 +1002,8 @@
     {
      "speaker": "hiep",
      "text": "Và cuối cùng là các bạn phải tự **chửi** bản thân mình cho đã — rồi mai lại né.",
-     "start": 0.3,
-     "end": 5.001,
+     "start": 0.15,
+     "end": 4.851,
      "emotion": "focused",
      "audio": {
       "src": "voice/v17-b06a.wav",
@@ -1144,14 +1144,14 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     },
     {
      "speaker": "hiep",
      "text": "Đồ lười! Thôi **để mai**…",
-     "start": 4.951,
-     "end": 6.694,
+     "start": 4.801,
+     "end": 6.544,
      "emotion": "sad",
      "audio": {
       "src": "voice/v17-b06b.wav",
@@ -1203,18 +1203,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
      }
     }
    ],
    "caption": {
     "text": "And finally: curse yourself out properly, then dodge again tomorrow. Lazy bum! Eh… tomorrow then…",
-    "start": 0.35,
+    "start": 0.2,
     "segments": [
      {
       "text": "And finally: curse yourself out properly, then dodge again tomorrow.",
-      "start": 0.35,
-      "end": 4.951,
+      "start": 0.2,
+      "end": 4.801,
       "highlight": [
        2,
        9
@@ -1222,8 +1222,8 @@
      },
      {
       "text": "Lazy bum! Eh… tomorrow then…",
-      "start": 5.001,
-      "end": 6.644,
+      "start": 4.851,
+      "end": 6.494,
       "highlight": [
        3
       ]
@@ -1233,17 +1233,17 @@
    "sfx": [
     {
      "name": "stamp",
-     "at": 1.9
+     "at": 1.75
     },
     {
      "name": "stamp",
-     "at": 4.951
+     "at": 4.801
     }
    ],
    "props": [
     {
      "kind": "vignette",
-     "at": 0.3,
+     "at": 0.15,
      "dark": 0.5
     },
     {
@@ -1251,25 +1251,25 @@
      "x": 540,
      "y": 270,
      "s": 0.65,
-     "at": 0.3,
+     "at": 0.15,
      "words": [
       "LƯỜI!"
      ],
      "dropAt": [
-      1.9
+      1.75
      ]
     },
     {
      "kind": "calendar",
-     "x": 800,
-     "y": 520,
-     "s": 0.6,
+     "x": 220,
+     "y": 1600,
+     "s": 0.55,
      "pages": [
       "HÔM NAY",
       "MAI"
      ],
      "tearAt": [
-      3.5
+      3.35
      ]
     }
    ]
@@ -1277,7 +1277,7 @@
   {
    "id": "b07",
    "beat": "clip-02.b07",
-   "duration": 11.731,
+   "duration": 11.431,
    "background": {
     "kind": "paper"
    },
@@ -1306,8 +1306,8 @@
     {
      "speaker": "hiep",
      "text": "Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả, hoãn vì ba thứ: việc khó chịu cỡ nào, mình thấy làm được không, và thứ trước mắt cuốn cỡ nào.",
-     "start": 0.55,
-     "end": 11.531,
+     "start": 0.45,
+     "end": 11.431,
      "emotion": "focused",
      "audio": {
       "src": "voice/v17-b07.wav",
@@ -1636,18 +1636,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
    "caption": {
     "text": "Sound familiar? But scientists say: Steel pooled 691 results. Delay tracks three things: how unpleasant the task is, whether you think you can do it, how hard distractions pull.",
-    "start": 0.6,
+    "start": 0.5,
     "segments": [
      {
       "text": "Sound familiar? But scientists say: Steel pooled 691 results. Delay tracks three things: how unpleasant the task is, whether you think you can do it, how hard distractions pull.",
-      "start": 0.6,
-      "end": 11.481,
+      "start": 0.5,
+      "end": 11.381,
       "highlight": [
        1,
        7,
@@ -1661,54 +1661,54 @@
    "sfx": [
     {
      "name": "ding",
-     "at": 3.55
+     "at": 3.45
     },
     {
      "name": "stamp",
-     "at": 9.05
+     "at": 8.95
     }
    ],
    "props": [
     {
      "kind": "sign",
-     "x": 300,
-     "y": 1150,
-     "s": 0.6,
+     "x": 270,
+     "y": 1450,
+     "s": 0.55,
      "rot": -3,
      "text": "STEEL 2007 · 691 KẾT QUẢ",
-     "at": 3.35
+     "at": 3.25
     },
     {
      "kind": "words",
      "x": 540,
-     "y": 330,
-     "s": 0.8,
+     "y": 1780,
+     "s": 0.6,
      "words": [
       "KHÓ CHỊU?",
       "LÀM ĐƯỢC?",
       "BỊ CUỐN?"
      ],
      "dropAt": [
-      6.05,
-      7.55,
-      9.05
+      5.95,
+      7.45,
+      8.95
      ]
     },
     {
      "kind": "sign",
-     "x": 300,
-     "y": 1330,
-     "s": 0.6,
+     "x": 270,
+     "y": 1600,
+     "s": 0.5,
      "rot": 2,
      "text": "TƯƠNG QUAN",
-     "at": 1.05
+     "at": 0.95
     }
    ]
   },
   {
    "id": "b08",
    "beat": "clip-02.b08",
-   "duration": 8.189,
+   "duration": 7.839,
    "background": {
     "kind": "desk"
    },
@@ -1737,8 +1737,8 @@
     {
      "speaker": "hiep",
      "text": "Vậy trì hoãn là đang **tránh cảm giác khó chịu**, không phải chưa đủ cố gắng. Mới thấy đi chung thôi.",
-     "start": 0.3,
-     "end": 6.457,
+     "start": 0.15,
+     "end": 6.307,
      "emotion": "focused",
      "audio": {
       "src": "voice/v17-b08a.wav",
@@ -1923,14 +1923,14 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     },
     {
      "speaker": "hiep",
      "text": "À… mình đang **né** thiệt.",
-     "start": 6.407,
-     "end": 7.989,
+     "start": 6.257,
+     "end": 7.839,
      "emotion": "surprised",
      "audio": {
       "src": "voice/v17-b08b.wav",
@@ -1977,18 +1977,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
      }
     }
    ],
    "caption": {
     "text": "So procrastination is avoiding a bad feeling, not a lack of effort. Only a link so far. Oh… I really am dodging.",
-    "start": 0.35,
+    "start": 0.2,
     "segments": [
      {
       "text": "So procrastination is avoiding a bad feeling, not a lack of effort. Only a link so far.",
-      "start": 0.35,
-      "end": 6.407,
+      "start": 0.2,
+      "end": 6.257,
       "highlight": [
        3,
        11,
@@ -1997,8 +1997,8 @@
      },
      {
       "text": "Oh… I really am dodging.",
-      "start": 6.457,
-      "end": 7.939,
+      "start": 6.307,
+      "end": 7.789,
       "highlight": [
        4
       ]
@@ -2008,29 +2008,29 @@
    "sfx": [
     {
      "name": "stamp",
-     "at": 1.5
+     "at": 1.35
     },
     {
      "name": "pop",
-     "at": 5.3
+     "at": 5.15
     }
    ],
    "props": [
     {
      "kind": "sign",
      "x": 330,
-     "y": 420,
-     "s": 0.7,
+     "y": 1650,
+     "s": 0.62,
      "rot": -4,
      "text": "TRÁNH KHÓ CHỊU ≠ CHƯA CỐ GẮNG",
-     "at": 1.1
+     "at": 0.95
     }
    ]
   },
   {
    "id": "b09",
    "beat": "clip-02.b09",
-   "duration": 6.889,
+   "duration": 6.589,
    "background": {
     "kind": "desk"
    },
@@ -2059,8 +2059,8 @@
     {
      "speaker": "hiep",
      "text": "Nên đừng mắng mình. Hỏi: **khó chịu chỗ nào?** Rối thì chia việc nhỏ, ngán thì chỉ sửa **một dòng**.",
-     "start": 0.55,
-     "end": 6.689,
+     "start": 0.45,
+     "end": 6.589,
      "emotion": "focused",
      "audio": {
       "src": "voice/v17-b09a.wav",
@@ -2244,18 +2244,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
    "caption": {
     "text": "So don't scold yourself. Ask: what exactly feels bad? Messy? Split it small. Dreading it? Fix just one line.",
-    "start": 0.6,
+    "start": 0.5,
     "segments": [
      {
       "text": "So don't scold yourself. Ask: what exactly feels bad? Messy? Split it small. Dreading it? Fix just one line.",
-      "start": 0.6,
-      "end": 6.639,
+      "start": 0.5,
+      "end": 6.539,
       "highlight": [
        2,
        8,
@@ -2268,22 +2268,22 @@
    "sfx": [
     {
      "name": "pop",
-     "at": 2.35
+     "at": 2.25
     },
     {
      "name": "stamp",
-     "at": 5.55
+     "at": 5.45
     }
    ],
    "props": [
     {
      "kind": "laptop",
-     "x": 280,
-     "y": 1330,
-     "s": 0.6,
+     "x": 230,
+     "y": 1450,
+     "s": 0.55,
      "text": "oneup.swift",
      "sub": "dòng 1 ✓",
-     "at": 0.55
+     "at": 0.45
     },
     {
      "kind": "sign",
@@ -2292,14 +2292,14 @@
      "s": 0.7,
      "rot": 3,
      "text": "KHÓ CHỊU CHỖ NÀO? → CHIA NHỎ / 1 DÒNG",
-     "at": 2.15
+     "at": 2.05
     }
    ]
   },
   {
    "id": "b09c",
    "beat": "clip-02.b09",
-   "duration": 6.956,
+   "duration": 6.606,
    "background": {
     "kind": "desk"
    },
@@ -2328,8 +2328,8 @@
     {
      "speaker": "hiep",
      "text": "Như clip trước: chín giờ tối, ngồi vào bàn, mở file thì gõ một dòng. Không ai hối? Tự đặt ngày xong.",
-     "start": 0.3,
-     "end": 6.756,
+     "start": 0.15,
+     "end": 6.606,
      "emotion": "focused",
      "audio": {
       "src": "voice/v17-b09c.wav",
@@ -2523,18 +2523,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
      }
     }
    ],
    "caption": {
     "text": "Like last clip: 9 p.m., at the desk, open the file, type one line. No one pushing? Set your own due date.",
-    "start": 0.35,
+    "start": 0.2,
     "segments": [
      {
       "text": "Like last clip: 9 p.m., at the desk, open the file, type one line. No one pushing? Set your own due date.",
-      "start": 0.35,
-      "end": 6.706,
+      "start": 0.2,
+      "end": 6.556,
       "highlight": [
        3,
        12,
@@ -2546,11 +2546,11 @@
    "sfx": [
     {
      "name": "tick",
-     "at": 1.3
+     "at": 1.15
     },
     {
      "name": "stamp",
-     "at": 4.8
+     "at": 4.65
     }
    ],
    "props": [
@@ -2561,13 +2561,13 @@
      "s": 0.7,
      "rot": -3,
      "text": "NẾU 21:00 · BÀN → GÕ 1 DÒNG",
-     "at": 0.9
+     "at": 0.75
     },
     {
      "kind": "calendar",
-     "x": 800,
-     "y": 1100,
-     "s": 0.6,
+     "x": 230,
+     "y": 1700,
+     "s": 0.55,
      "pages": [
       "NGÀY XONG: T6"
      ],
@@ -2578,7 +2578,7 @@
   {
    "id": "b10",
    "beat": "clip-02.b10",
-   "duration": 5.431,
+   "duration": 5.081,
    "background": {
     "kind": "grid"
    },
@@ -2607,8 +2607,8 @@
     {
      "speaker": "hiep",
      "text": "Không lười, chỉ đang **né**. Việc bạn né khó chịu chỗ nào? Comment một chữ nha!",
-     "start": 0.3,
-     "end": 5.231,
+     "start": 0.15,
+     "end": 5.081,
      "emotion": "happy",
      "audio": {
       "src": "voice/v17-b10.wav",
@@ -2756,18 +2756,18 @@
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall, +2 semi"
      }
     }
    ],
    "caption": {
     "text": "Not lazy, just dodging. What feels bad about the task you're dodging? Comment one word!",
-    "start": 0.35,
+    "start": 0.2,
     "segments": [
      {
       "text": "Not lazy, just dodging. What feels bad about the task you're dodging? Comment one word!",
-      "start": 0.35,
-      "end": 5.181,
+      "start": 0.2,
+      "end": 5.031,
       "highlight": [
        1,
        6,
@@ -2779,13 +2779,13 @@
    "sfx": [
     {
      "name": "pop",
-     "at": 1.9
+     "at": 1.75
     }
    ],
    "props": [
     {
      "kind": "vignette",
-     "at": 0.3,
+     "at": 0.15,
      "dark": 0.5
     },
     {
@@ -2797,7 +2797,7 @@
       "COMMENT 1 CHỮ"
      ],
      "dropAt": [
-      1.8
+      1.65
      ]
     }
    ]
