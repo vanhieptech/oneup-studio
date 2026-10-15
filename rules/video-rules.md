@@ -204,8 +204,15 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Câu gọn: mỗi vế ≤ 12 chữ, mỗi câu một ý, chữ nhấn (`hl`) rơi vào từ mạnh nhất.
     - check-rules: `rule-58` (✖ từ mơ hồ, ✖ thiếu từ nối, ⚠ vế > 12 chữ).
 
+60. **Văn nói + mỗi cảnh xen hành động, cảm xúc, thoại (DL-061, L-024):**
+    - Viết như đang kể cho bạn nghe bằng giọng miền Nam: xưng mình/bạn, câu ngắn, tiểu từ (nè, nha, hà, hông, lận), trêu nhẹ, chêm tiếng Anh vừa phải.
+    - Cấm từ nối văn viết/học thuật: tức là, ngược lại, bằng chứng, lưu ý, do đó, vì vậy, tuy nhiên, bởi vì, điều này, hơn nữa, mặt khác, hệ số, tương quan, phân tích gộp, cơ chế… Dùng từ nối nói: mà khoan, kiểu, rồi sao, nói thiệt, tại vì, vậy là, xong, ủa, X hả?
+    - Mỗi beat có `stage.action` (nhân vật làm gì: thở dài, gục đầu, gõ phím rồi buông, liếc điện thoại…) + `stage.react` (cảm xúc) và ≥ một nửa số beat có tiếng cảm thán/tiểu từ trong lời (trời ơi, haizz, ủa, hả, nè…). Kịch bản trình bày dạng bảng Cảnh | Hành động | Cảm xúc | Lời thoại.
+    - check-rules: `rule-60` (✖ từ văn viết, ✖ thiếu stage.action, ✖ thiếu cảm xúc, ⚠ < nửa beat có cảm thán).
+
 ## Changelog
 59. **Mọi asset dự án nằm tập trung trong repo (DL-060, L-023):** kịch bản, trend, ý tưởng, mẫu giọng, sfx, ảnh bìa, storyboard, log, plan đều nằm trong `oneup-studio/`. Không lưu ở thư mục riêng trên box. Media >5MB vào `media/` + `media/MANIFEST.json`. `pipeline/scripts/check-assets.py` chặn khi thấy file dự án ngoài repo.
+- **v3.16, 15/10/2026:** luật 60, văn nói + hành động/cảm xúc/thoại xen kẽ mỗi beat (DL-061, L-024).
 - **v3.15, 15/10/2026:** luật 59, asset tập trung một repo, bỏ thư mục sync (DL-060, L-023).
 - **v3.14, 15/10/2026:** luật 58, kịch bản liền mạch có từ nối, từ sắc tra từ điển, cấm cụm mơ hồ (DL-059, L-022).
 - **v3.13, 14/10/2026:** luật 57, lớp trend ưu tiên tín hiệu gốc TikTok theo view/comment (DL-053).

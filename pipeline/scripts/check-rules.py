@@ -315,7 +315,7 @@ def main():
         if "proxy" in ts.lower() and "tiktok.com/@" not in ts: warn("rule-57", "only proxy signals, no TikTok clip URL yet → verify in app before posting")
     # rule-58 (DL-059, L-022): one continuous story, precise words, no vague phrases
     VAGUE = [r"\b(điện thoại|não|cảm xúc|nó|lười|việc)\s+thắng\b", r"\bthắng\s*[.!]?$", r"điều gì đó", r"cái gì đó", r"nhiều thứ", r"mọi thứ", r"kiểu như", r"theo một cách nào đó", r"vân vân", r"\bthật sự rất\b", r"\brất là\b", r"một cảm giác\b"]
-    CONN = r"^(thế là|rồi|nhưng|mà|hóa ra|tức là|nói gọn|vì|nên|vậy|bằng chứng|lý do|nếu|còn|ngược lại|lưu ý|phần mình|thành|sau đó|cuối cùng|thay vào đó|đó là|kết quả|chính vì|giờ)\b"
+    CONN = r"^(thế là|rồi|nhưng|mà|hóa ra|tức là|nói gọn|vì|tại vì|nên|vậy|bằng chứng|lý do|nếu|còn|ngược lại|lưu ý|phần mình|thành|sau đó|cuối cùng|thay vào đó|đó là|kết quả|chính vì|giờ|kiểu|nói thiệt|xong|haizz|ủa|trời ơi|thôi|hả|ê|khoan)\b|^\S+( \S+)? hả\?"
     beats_ = [x for p_ in spec["parts"] for x in p_.get("scenes", p_.get("sections", []))]
     hookset = set((spec.get("hook") or {}).get("scenes", []))
     vg = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in VAGUE for m in [re.search(pat, re.sub(r"\{[^}]*\}", "", l["text"]).lower())] if m]
@@ -324,6 +324,18 @@ def main():
     ((warn if "clip-01" in clip_dir else err) if nc_ else ok)("rule-58", "every non-hook beat opens with a connector/callback" + (f"; missing: {nc_}" if nc_ else ""))
     lw = [x["id"] for x in beats_ for l in x["lines"] if max(len(c.split()) for c in re.split(r"[.,?!:;]", re.sub(r"\{[^}]*\}", "", l["text"])) if c.strip()) > 12]
     (warn if lw else ok)("rule-58", "clauses ≤ 12 words (punchy)" + (f"; long: {lw}" if lw else ""))
+    # rule-60 (DL-061, L-024): spoken Southern style + every beat interleaves action + emotion + dialogue
+    WRITTEN = [r"\btức là\b", r"\bngược lại\b", r"\bbằng chứng\b", r"hệ số", r"tương quan", r"\blưu ý\b", r"\bdo đó\b", r"\bvì vậy\b", r"\btuy nhiên\b", r"\bbởi vì\b", r"\bnhằm\b", r"\bđiều này\b", r"\bhơn nữa\b", r"\bmặt khác\b", r"\bđồng thời\b", r"\bcụ thể là\b", r"\bkết quả là\b", r"\bnói gọn\b", r"phân tích gộp", r"\bcơ chế\b", r"\bnhư vậy\b"]
+    INTERJ = r"(?<!\w)(trời ơi|trời|haizz|hả|ủa|thôi xong|ê|khoan|nè|nha|hà|hông|lận|á|ơ|ồ|thiệt)(?!\w)"
+    lax = "clip-01" in clip_dir
+    wr = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in WRITTEN for m in [re.search(pat, re.sub(r"\{[^}]*\}", "", l["text"]).lower())] if m]
+    ((warn if lax else err) if wr else ok)("rule-60", "spoken style, no written/academic connectors" + (f": {wr}" if wr else ""))
+    na = [x["id"] for x in beats_ if len(((x.get("stage") or {}).get("action") or "")) < 8]
+    ((warn if lax else err) if na else ok)("rule-60", "every beat has a stage action (stage.action)" + (f"; missing: {na}" if na else ""))
+    ne = [x["id"] for x in beats_ if not (x.get("stage") or {}).get("react") and not re.search(INTERJ, " ".join(l["text"] for l in x["lines"]).lower())]
+    ((warn if lax else err) if ne else ok)("rule-60", "every beat has an emotion cue (interjection in line or stage.react)" + (f"; missing: {ne}" if ne else ""))
+    ni = [x["id"] for x in beats_ if not re.search(INTERJ, " ".join(l["text"] for l in x["lines"]).lower())]
+    (warn if len(ni) > len(beats_) // 2 else ok)("rule-60", f"spoken interjections/particles in {len(beats_) - len(ni)}/{len(beats_)} beats (≥ half)")
     # rule-52 / L-019 (DL-044): effects planned at script stage (gate 1) — blocks pre-render too
     ts = spec.get("transition_sfx") or {}
     TRN = {"whoosh-soft", "swish", "whoosh"}
