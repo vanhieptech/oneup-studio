@@ -208,7 +208,8 @@ def main():
         (ok if r.returncode == 0 else err)("rule-45", "video-engine validate: " + (" | ".join(x.strip() for x in (r.stdout + r.stderr).splitlines() if x.strip().startswith(("✔", "✖", "error", "⚠")))[:400] or r.stderr[-300:]))
     elif final: err("rule-45", "no plan-*.voiced.json")
     # L-033 layout collisions: bubble ∩ prop/sign/character, prop over a character's head
-    plans_main = [x for x in plans if "-preview" not in x]
+    _ids = {p_["id"] for p_ in (spec.get("parts") or []) if p_.get("engine") == "remotion"} if isinstance(spec, dict) else set()
+    plans_main = [x for x in plans if "-preview" not in x and (not _ids or os.path.basename(x)[5:-12] in _ids)]
     if plans_main:
         r = subprocess.run(["npx", "tsx", "src/layoutCheck.ts", *plans_main], cwd=os.path.join(REPO, "video-engine"), capture_output=True, text=True, env=dict(os.environ, PATH=NODE_BIN + ":" + os.environ["PATH"]))
         bad = [x.strip() for x in r.stdout.splitlines() if x.strip().startswith("✖")]
