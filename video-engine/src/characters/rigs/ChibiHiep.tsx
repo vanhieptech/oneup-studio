@@ -56,7 +56,8 @@ export const ChibiHiep: React.FC<{ state: CharacterState; profile: CharacterProf
   );
 
   const showCur = s.expressionBlend >= 0.5;
-  const expr: Expression = showCur ? s.expression : s.prevExpression;
+  const exprRaw: Expression = showCur ? s.expression : s.prevExpression;
+  const despair = exprRaw === "despair"; const expr = (despair ? "sad" : exprRaw) as Expression;  // despair = sad + squeezed eyes, frown-open mouth, 2 tears
   const hy = -300 + drop;
 
   return (
@@ -92,6 +93,7 @@ const Laptop: React.FC<{ s: CharacterState; INK: string; PAPER: string; drop: nu
 );
 
 const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: string; PAPER: string; SOFT: string }> = ({ expr, s, uid, INK, PAPER, SOFT }) => {
+  const despair = (s.expression as string) === "despair";
   const R = 168;
   const blink = s.blink;
   const look = s.look * 10;
@@ -100,6 +102,10 @@ const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: st
     const x = side * 58 + look, y = 30;
     if (expr === "happy") {
       eyes.push(<path key={side} d={`M${x - 21},${y + 8} Q${x},${y - 20} ${x + 21},${y + 8}`} fill="none" stroke={INK} strokeWidth={12} strokeLinecap="round" />);
+      continue;
+    }
+    if (despair) {  // squeezed shut eyes (> <)
+      eyes.push(<path key={side} d={`M${x - 20 * side},${y - 14} L${x + 16 * side},${y} L${x - 20 * side},${y + 14}`} fill="none" stroke={INK} strokeWidth={11} strokeLinecap="round" strokeLinejoin="round" />);
       continue;
     }
     let big = 1, ry = 26, rx = 19;
@@ -120,7 +126,8 @@ const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: st
   let brows: React.ReactNode = null;
   if (expr === "focused") brows = <path d="M-86,-20 L-36,-6 M86,-20 L36,-6" stroke={INK} strokeWidth={11} strokeLinecap="round" />;
   if (expr === "surprised") brows = <path d="M-82,-38 Q-58,-56 -34,-38 M82,-38 Q58,-56 34,-38" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" />;
-  if (expr === "sad") brows = <path d="M-84,-6 Q-62,-12 -38,-26 M84,-6 Q62,-12 38,-26" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" />;
+  if (despair) brows = <path d="M-86,0 Q-64,-10 -36,-34 M86,0 Q64,-10 36,-34" fill="none" stroke={INK} strokeWidth={10} strokeLinecap="round" />;
+  else if (expr === "sad") brows = <path d="M-84,-6 Q-62,-12 -38,-26 M84,-6 Q62,-12 38,-26" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" />;
   if (expr === "confused") brows = <path d="M-84,-26 Q-60,-44 -36,-30 M36,-8 L84,-10" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" />;
 
   const m = s.mouthOpen;
@@ -128,7 +135,9 @@ const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: st
   if (m > 0.06) {
     const w = expr === "happy" ? 30 : expr === "sad" ? 18 : 22;
     const h = 6 + 22 * m;
-    mouth = (
+    mouth = expr === "sad" ? (  // sad/despair talking: frown-shaped opening (corners down) — never a D-smile (L-026)
+      <path d={`M${-w - 4},${104 + h * 0.5} Q0,${92 - h * 0.5} ${w + 4},${104 + h * 0.5} Q0,${100 + h * 0.2} ${-w - 4},${104 + h * 0.5}Z`} fill={INK} />
+    ) : (
       <g>
         <path d={`M${-w},96 Q${-w},${96 + h * 1.6} 0,${96 + h * 1.6} Q${w},${96 + h * 1.6} ${w},96 Q0,${expr === "sad" ? 104 : 90} ${-w},96Z`} fill={INK} />
         <ellipse cx={0} cy={96 + h * 1.2} rx={w * 0.5} ry={Math.max(2, h * 0.35)} fill="#E86A5A" opacity={0.9} />
@@ -156,6 +165,7 @@ const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: st
       <path d="M-40,-150 Q-20,-204 12,-180" fill="none" stroke={INK} strokeWidth={13} strokeLinecap="round" />
       <path d="M-150,-60 Q-120,-110 -80,-120" fill="none" stroke={PAPER} strokeWidth={7} strokeLinecap="round" opacity={0.35} />
       {brows}{eyes}{mouth}
+      {despair && <path d="M-86,62 Q-94,80 -86,88 Q-78,80 -86,62Z" fill="#7FB3E8" stroke={INK} strokeWidth={4} />}
       {expr === "sad" && <path d="M86,62 Q78,80 86,88 Q94,80 86,62Z" fill="#7FB3E8" stroke={INK} strokeWidth={4} />}
       {expr === "surprised" && <g stroke={INK} strokeWidth={9} strokeLinecap="round"><path d="M-150,-190 L-170,-226" /><path d="M-110,-214 L-116,-252" /><path d="M150,-190 L170,-226" /></g>}
       {expr === "confused" && <text x={150} y={-150} fontSize={110} fontWeight={700} fill={INK} fontFamily="Be Vietnam Pro" transform={`rotate(14 150 -150)`}>?</text>}

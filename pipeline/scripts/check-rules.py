@@ -431,6 +431,36 @@ def lessons(spec, fdir, L, final, tpath):
         for term, ph in KEY_TERMS.items():
             if re.search(rf"(?<!\w){term}(?!\w)", spoken): kt.append(f"{s['id']}: '{term}' spoken raw (use '{ph}')")
     (err if kt else ok)("L-010", "; ".join(kt) if kt else "key terms use phonetic spelling")
+    # L-025 English/brand words must be respelled in the spoken part (display text keeps the real word)
+    br = [f"{s['id']}: '{m}'" for _, s, l in L for m in re.findall(r"(?<!\w)(POV|Omi|TikTok|Haizz|code)(?!\w)", " ".join(p.get("t", "") for p in l.get("phrases", [])), re.I)]
+    (warn if br else ok)("L-025", f"raw English/brand words in spoken text (respell: POV→Pi ô vi, Omi→Ô mi, TikTok→Tíc Tóc, Haizz→Hầy..., code→cốt): {br}" if br else "spoken text respelled")
+    vd = os.path.join(REPO, "video-engine/public/voice"); tl = []
+    for tp_ in [tpath, os.path.join(fdir, "preview", "timing-preview.json")]:
+        if tp_ and os.path.exists(tp_):
+            for x in json.load(open(tp_)).get("lines", []):
+                vj = os.path.join(vd, x["key"] + ".json")
+                if os.path.exists(vj):
+                    sm = json.load(open(vj)).get("stt_sim", 1)
+                    if sm < 0.8: tl.append(f"{x['scene']}:{x['key']} {sm}")
+    (err if tl else ok)("L-025", f"line STT < 0.8: {tl}" if tl else "all rendered lines STT ≥ 0.8")
+    # L-027 hook voice gaps (choppy): clause gaps inside a line + line-to-line gaps in hook scenes ≤ 0.1 s
+    hg = []
+    for tp_ in [tpath, os.path.join(fdir, "preview", "timing-preview.json")]:
+        if not (tp_ and os.path.exists(tp_)): continue
+        hook_ids = {s["id"] for _, s, _ in L if s.get("part") == "hook"}
+        ls_ = [x for x in json.load(open(tp_)).get("lines", []) if x["scene"] in hook_ids]
+        for x in ls_:
+            vj = os.path.join(vd, x["key"] + ".json")
+            if os.path.exists(vj):
+                for u in json.load(open(vj)).get("units", [])[:-1]:
+                    if u.get("gap_after", 0) > 0.1: hg.append(f"{x['scene']}: clause gap {u['gap_after']}s")
+        for a, b in zip(ls_, ls_[1:]):
+            g = round(b["t"] - (a["t"] + a["dur"]), 3)
+            if g > 0.1: hg.append(f"{a['scene']}→{b['scene']}: line gap {g}s")
+    (err if hg else ok)("L-027", f"hook gaps > 0.1s: {hg[:8]}" if hg else "hook voice gaps ≤ 0.1s")
+    # L-026 despair lines must not use a smiling/neutral face
+    dz = [s["id"] for _, s, l in L if re.search(r"trời ơi|tuyệt vọng", (l.get("text") or "").lower()) and ((l.get("set") or {}).get(l["speaker"], {}).get("expression") or next((c.get("expression") for c in s.get("cast", []) if c["id"] == l["speaker"]), "")) not in ("sad", "despair")]
+    (err if dz else ok)("L-026", f"despair line without sad/despair face: {dz}" if dz else "despair lines use sad/despair face")
     # L-017 voice markup (fillers / particles / hesitation) valid + density caps (voice-profile §3c)
     sys.path.insert(0, os.path.join(REPO, "pipeline/tts")); import markup as MK
     srcs = [(s["id"], " ".join(p.get("t", "") for p in l.get("phrases", [])) or l.get("say") or "") for _, s, l in L]

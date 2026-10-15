@@ -68,13 +68,13 @@
     }
   ],
   "hook": {
-    "text": "POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.",
+    "text": "TÍNH NĂNG OMI · DỜI. DỜI. DỜI.",
     "scenes": [
       "b01",
       "b01b",
       "b01c"
     ],
-    "format": "POV + meme dự án ma (DL-059)"
+    "format": "meme dự án ma, no POV (Hiệp 15/10)"
   },
   "engagement": [
     {
@@ -127,17 +127,21 @@
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "POV: tính năng Omi.",
-              "en": "POV: the Omi feature.",
+              "text": "Tính năng Omi nè.",
+              "en": "The Omi feature, see.",
               "hl": [
-                0,
-                3
+                1
               ],
               "phrases": [
                 {
-                  "t": "POV: tính năng Omi."
+                  "t": "Tính năng Ô mi nè!"
                 }
-              ]
+              ],
+              "takes": 6,
+              "speed": 1.2,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true
             }
           ],
           "fx": {
@@ -152,7 +156,7 @@
               "word": "Omi"
             }
           ],
-          "narration": "POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.",
+          "narration": "TÍNH NĂNG OMI · DỜI. DỜI. DỜI.",
           "props": [
             {
               "kind": "laptop",
@@ -200,12 +204,14 @@
               ],
               "phrases": [
                 {
-                  "t": "Hôm nay dời."
-                },
-                {
-                  "t": "Mai lại dời."
+                  "t": "Hôm nay dời! Mai lại dời!"
                 }
-              ]
+              ],
+              "takes": 6,
+              "speed": 1.2,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true
             }
           ],
           "fx": {
@@ -264,14 +270,14 @@
               "facing": "right",
               "pose": "sitting",
               "action": "idle",
-              "expression": "sad"
+              "expression": "despair"
             }
           ],
           "lines": [
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "Trời ơi, thành dự án ma luôn.",
+              "text": "Trời ơiii, thành dự án ma luôn.",
               "en": "Oh god, it's a ghost project now.",
               "hl": [
                 4,
@@ -279,9 +285,19 @@
               ],
               "phrases": [
                 {
-                  "t": "Trời ơi, thành dự án ma luôn."
+                  "t": "Trời ơiii... thành dự án ma luôn!"
                 }
-              ]
+              ],
+              "set": {
+                "hiep": {
+                  "expression": "despair"
+                }
+              },
+              "takes": 6,
+              "speed": 1.2,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true
             }
           ],
           "fx": {
@@ -311,7 +327,7 @@
                 "DỰ ÁN MA"
               ],
               "dropAt": [
-                0.25
+                -0.06
               ]
             }
           ],
@@ -323,7 +339,7 @@
         {
           "id": "b02",
           "beat": "clip-02.b02",
-          "part": "struggle",
+          "part": "hook",
           "background": "desk",
           "framing": "medium",
           "push": 0.04,
@@ -350,10 +366,7 @@
               ],
               "phrases": [
                 {
-                  "t": "Haizz, mở code."
-                },
-                {
-                  "t": "Gõ hai dòng…"
+                  "t": "Hầy... mở cốt. Gõ hai dòng…"
                 }
               ],
               "set": {
@@ -361,12 +374,17 @@
                   "action": "typing",
                   "expression": "sad"
                 }
-              }
+              },
+              "takes": 6,
+              "speed": 1.2,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true
             },
             {
               "speaker": "hiep",
               "emotion": "surprised",
-              "text": "ủa, sao lướt TikTok tới khuya rồi?",
+              "text": "Ủa?! Sao lướt TikTok tới khuya rồi?",
               "en": "wait, how is it midnight on TikTok?",
               "hl": [
                 4,
@@ -374,7 +392,7 @@
               ],
               "phrases": [
                 {
-                  "t": "ủa, sao lướt TikTok tới khuya rồi?"
+                  "t": "Ủa?! Sao lướt Tíc Tóc tới khuya rồi?!"
                 }
               ],
               "set": {
@@ -382,7 +400,12 @@
                   "action": "idle",
                   "expression": "surprised"
                 }
-              }
+              },
+              "takes": 6,
+              "speed": 1.2,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true
             },
             {
               "speaker": "hiep",
@@ -395,10 +418,7 @@
               ],
               "phrases": [
                 {
-                  "t": "Xong tội lỗi,"
-                },
-                {
-                  "t": "ghét bản thân: đồ lười!"
+                  "t": "Xong tội lỗi, ghét bản thân: đồ lười!"
                 }
               ],
               "set": {
@@ -406,7 +426,12 @@
                   "action": "idle",
                   "expression": "sad"
                 }
-              }
+              },
+              "takes": 6,
+              "speed": 1.2,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true
             }
           ],
           "fx": {
@@ -414,6 +439,12 @@
             "word": "tội lỗi"
           },
           "sfx": [
+            {
+              "name": "sigh",
+              "atLine": 0,
+              "offset": -0.05,
+              "word": "Haizz"
+            },
             {
               "name": "pop",
               "atLine": 1,
@@ -1138,7 +1169,7 @@
                   "t": "Mình hả?"
                 },
                 {
-                  "t": "Mở Omi liền nè."
+                  "t": "Mở Ô mi liền nè."
                 }
               ],
               "set": {

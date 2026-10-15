@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 /** Canonical vocabularies. Profiles declare which subset each character supports. */
-export const EXPRESSIONS = ["neutral", "happy", "sad", "surprised", "confused", "focused"] as const;
+export const EXPRESSIONS = ["neutral", "happy", "sad", "surprised", "confused", "focused", "despair"] as const;
 export const ACTIONS = ["idle", "talking", "thinking", "typing", "walking", "reacting"] as const;
 export const POSES = ["standing", "sitting"] as const;
 export const TRANSITIONS = ["cut", "fade", "slide", "wipe", "iris"] as const;

@@ -69,7 +69,7 @@ const Calendar: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
   return <g>
     <rect x={-202} y={-218} width={420} height={440} rx={34} fill={ink} />
     {card(pages[cur], "cur")}
-    {idx > 0 && fly < 1 && card(pages[idx - 1], "fly", `translate(${-fly * 560} ${-fly * 220}) rotate(${-fly * 38})`)}
+    {idx > 0 && fly < 1 && card(pages[idx - 1], "fly", `translate(${fly * 150} ${-fly * 260}) rotate(${fly * 22}) scale(${1 - 0.25 * fly})`)}
     {idx > 0 && <g transform="translate(150 150) rotate(-14)"><rect x={-110} y={-40} width={220} height={80} rx={16} fill={ink} />
       <T x={0} y={16} size={44} fill={paper} w={800}>{`HOÃN x${idx}`}</T></g>}
   </g>;

@@ -27,7 +27,7 @@ Mạch: dời Omi → dự án ma → mở code → trượt sang TikTok → t�
 
 | Cảnh | Hành động (diễn) | Cảm xúc | Lời thoại |
 |---|---|---|---|
-| b01 | Hiệp ngồi đơ trước laptop 'Omi feature · 0 dòng code', mắt trợn, dấu DỜI đóng xuống | đơ người, ngán ngẩm | POV: tính năng Omi. |
+| b01 | Hiệp ngồi đơ trước laptop 'Omi feature · 0 dòng code', mắt trợn, dấu DỜI đóng xuống | đơ người, ngán ngẩm | Tính năng Omi nè! |
 | b01b | Hiệp xé lịch HÔM NAY rồi MAI, liếc ra chỗ khác | né tránh, chột dạ | Hôm nay dời. Mai lại dời. |
 | b01c | Hiệp gục đầu xuống bàn cái bịch, nền tối dần | Trời ơi — tuyệt vọng | Trời ơi, thành dự án ma luôn. |
 | b02 | Hiệp thở dài, gõ hai phím rồi buông, liếc điện thoại, tay tự chộp lấy; tới khuya nằm úp mặt, chữ TỘI LỖI / GHÉT BẢN THÂN / LƯỜI rơi đè lên đầu | Haizz → ủa?! → tội lỗi, ghét bản thân | Haizz, mở code. Gõ hai dòng… / ủa, sao lướt TikTok tới khuya rồi? / Xong tội lỗi, ghét bản thân: đồ lười! |
@@ -61,11 +61,11 @@ Mạch: dời Omi → dự án ma → mở code → trượt sang TikTok → t�
 3. “Ủa, cả feed than deadline hả?” → “Mình nè: tính năng Omi, dời lần thứ mấy rồi?” (time-of-day pile-on)
 
 ## Lưu trữ: kịch bản v2 (DL-059, đã thay bằng v3)
-Mạch: POV dời việc → thành dự án ma → **thế là** lướt TikTok, tự xỉ vả → **nhưng** thứ né là cảm giác → **tức là** trì hoãn = né → **bằng chứng** 691 → **vì** phần thưởng xa **nên** chộp TikTok → **vậy** hỏi chỗ khó chịu → **nếu** rối / sợ hỏng / **còn** chán → **ngược lại** đừng xỉ vả → **lưu ý** tương quan → **còn bạn** comment → **phần mình** mở Omi (loop).
+Mạch: dời việc → thành dự án ma → **thế là** lướt TikTok, tự xỉ vả → **nhưng** thứ né là cảm giác → **tức là** trì hoãn = né → **bằng chứng** 691 → **vì** phần thưởng xa **nên** chộp TikTok → **vậy** hỏi chỗ khó chịu → **nếu** rối / sợ hỏng / **còn** chán → **ngược lại** đừng xỉ vả → **lưu ý** tương quan → **còn bạn** comment → **phần mình** mở Omi (loop).
 
 | Beat | Lời VI | Từ nối | Thay đổi so với bản cũ |
 |---|---|---|---|
-| b01 | POV: tính năng Omi. | (hook, POV) | “Tính năng Omi.” → format POV |
+| b01 | Tính năng Omi nè! | (hook, POV) | “Tính năng Omi.” → format POV |
 | b01b | Hôm nay dời. Mai lại dời. | (hook) | “Hoãn hôm nay. Hoãn ngày mai. Rồi lại hoãn.” → gọn 6 chữ, động từ “dời” |
 | b01c | Thành dự án ma luôn. | Thành (hệ quả) | “Toang thật rồi.” → meme “dự án ma” (hệ quả của việc dời) |
 | b02 | Thế là mở code, năm giây sau lướt TikTok. / Rồi chán nản, tội lỗi, tự xỉ vả: lười quá. | Thế là / Rồi | thêm “Thế là” nối hook; “tự mắng” → “tự xỉ vả” |
@@ -106,8 +106,8 @@ Chọn 1: format mạnh nhất (36,1M), nhịp 3 cut sẵn, “dự án ma” l�
 
 | Giây | Hình | Tiếng | Chữ |
 |---|---|---|---|
-| 0.00 | Laptop “Omi feature · 0 dòng code”, chữ hook to | — | **POV: TÍNH NĂNG OMI · DỜI. DỜI. DỜI.** |
-| 0.12 | push-in, dấu DỜI đóng | `stamp` + “POV: tính năng Omi.” | |
+| 0.00 | Laptop “Omi feature · 0 dòng code”, chữ hook to | — | **TÍNH NĂNG OMI · DỜI. DỜI. DỜI.** |
+| 0.12 | push-in, dấu DỜI đóng | `stamp` + “Tính năng Omi nè!” | |
 | ~1.0 | **CUT 1** lịch xé HÔM NAY → MAI → MAI NỮA | `click` “Hôm nay dời.” · `stamp` “Mai lại dời.” | |
 | ~2.6 | **CUT 2** mặt méo, vignette | `stamp` + “Thành dự án ma luôn.” | **DỰ ÁN MA** đập xuống |
 
@@ -115,7 +115,7 @@ Chọn 1: format mạnh nhất (36,1M), nhịp 3 cut sẵn, “dự án ma” l�
 - e01 câu hỏi đồng cảm: "Nghe quen hông?"
 - b11 nhắc lưu: "Lưu lại, lần sau muốn hoãn thì mở coi."
 - b12 thử thách comment 1 chữ: "Còn bạn, việc đang né khó chịu chỗ nào? Comment một chữ."
-- b12 loop: "Mình hả? Mở Omi liền nè." → về "POV: tính năng Omi."
+- b12 loop: "Mình hả? Mở Omi liền nè." → về "Tính năng Omi nè!"
 
 ## Trend (luật 57)
 - Hook: format POV (#1, 36,1M) + meme "dự án ma" (YT 23k), nguồn digest 15/10 (research/trends/2026-10-15).
@@ -127,7 +127,7 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
-| b01 | remotion | Hook cut 1 (format POV): push mạnh vào laptop 'Omi feature · 0 dòng code', chữ hook to ngay frame 0; dấu đỏ DỜI đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
+| b01 | remotion | Hook cut 1: push mạnh vào laptop 'Omi feature · 0 dòng code', chữ hook to ngay frame 0; dấu đỏ DỜI đóng xuống | “Omi” | `stamp` → “Omi” | mở đầu |
 | b01b | remotion | Hook cut 2: lịch DEADLINE xé 2 tờ HÔM NAY → MAI → MAI NỮA theo từng chữ 'dời', camera giật nhẹ mỗi nhịp | “dời” | `click` → “Hôm nay dời”; `stamp` → “lại dời” | cut (`swish`) |
 | b01c | remotion | Hook cut 3 (meme 'dự án ma'): mặt Hiệp méo xệch, nền tối dần (vignette), chữ DỰ ÁN MA đập xuống rung | “dự án ma” | `stamp` → “dự án ma” | cut (`swish`) |
 | b02 | remotion | Comic: tay rời bàn phím chộp điện thoại (màn hình sáng), rồi Hiệp gục xuống; 3 chữ CHÁN NẢN / TỘI LỖI / LƯỜI rơi đè lên đầu (squash) | “tội lỗi” | `pop` → “TikTok”; `stamp` → “đồ lười” | cut (`swish`) |
@@ -172,3 +172,8 @@ push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial
 4. 3 cách gỡ ở e05–e06 là ví dụ minh hoạ (đã giữ theo "Giữ").
 6. Trend: chưa xác minh bằng số liệu TikTok thật (xem trend-signals.md). Kiểm trong app trước khi đăng?
 5. 195 từ, có thể vượt 60s. Nếu vượt sẽ cắt e06.
+
+## Sửa 15/10 (Hiệp)
+- Bỏ hẳn POV (lời + chữ). b01: “Tính năng Omi nè!”; chữ hook: **TÍNH NĂNG OMI · DỜI. DỜI. DỜI.**
+- Hook đọc nhanh hơn (F5 speed 1.2), khoảng lặng ≤ 0,15s, nhấn bằng dấu (!, ?!, …): “Hôm nay dời! Mai lại dời!”, “Trời ơiii… thành dự án ma luôn!”, “Hầy… mở code” + SFX thở dài thật, “Ủa?! Sao lướt TikTok tới khuya rồi?!”.
+- Phần đọc phiên âm (L-025): Omi → Ô mi, TikTok → Tíc Tóc, code → cốt, Haizz → Hầy…

@@ -1,17 +1,17 @@
 {
- "total": 11.115,
+ "total": 9.15,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/preview/plan-A-preview.voiced.json",
-   "dur": 11.086,
+   "dur": 9.155,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A-preview.mp4",
    "fx": null,
    "scene_starts": [
-    1.256,
-    2.866,
-    4.665
+    1.059,
+    2.34,
+    3.9109999999999996
    ],
    "_off": 0.0
   }
@@ -21,61 +21,61 @@
    "beat": "clip-02.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "POV: tính năng Omi.",
-   "en": "POV: the Omi feature.",
+   "say": "Tính năng Ô mi nè!",
+   "en": "The Omi feature, see.",
    "emotion": "sad",
-   "key": "f5-bc14ea7cdc1f",
+   "key": "f5-b0f4b45fc7fe",
    "local": 0.12,
-   "dur": 0.986,
+   "dur": 0.879,
    "t": 0.12
   },
   {
    "beat": "clip-02.b01",
    "scene": "b01b",
    "speaker": "hiep",
-   "say": "Hôm nay dời. Mai lại dời.",
+   "say": "Hôm nay dời! Mai lại dời!",
    "en": "Pushed today. Pushed again tomorrow.",
    "emotion": "sad",
-   "key": "f5-92ec74bcee9b",
-   "local": 0.06,
-   "dur": 1.4,
-   "t": 1.316
+   "key": "f5-219f881b0f1d",
+   "local": 0.02,
+   "dur": 1.201,
+   "t": 1.079
   },
   {
    "beat": "clip-02.b01",
    "scene": "b01c",
    "speaker": "hiep",
-   "say": "Trời ơi, thành dự án ma luôn.",
+   "say": "Trời ơiii... thành dự án ma luôn!",
    "en": "Oh god, it's a ghost project now.",
    "emotion": "sad",
-   "key": "f5-50b13eeb21dd",
-   "local": 0.06,
-   "dur": 1.589,
-   "t": 2.926
+   "key": "f5-0853d8d8cc22",
+   "local": 0.02,
+   "dur": 1.491,
+   "t": 2.36
   },
   {
    "beat": "clip-02.b02",
    "scene": "b02",
    "speaker": "hiep",
-   "say": "Haizz, mở code. Gõ hai dòng…",
+   "say": "Hầy... mở cốt. Gõ hai dòng…",
    "en": "Sigh. Open the code. Two lines…",
    "emotion": "sad",
-   "key": "f5-ed736ebd8a33",
-   "local": 0.3,
-   "dur": 1.441,
-   "t": 4.965
+   "key": "f5-34efe4a7e622",
+   "local": 0.02,
+   "dur": 1.383,
+   "t": 3.931
   },
   {
    "beat": "clip-02.b02",
    "scene": "b02",
    "speaker": "hiep",
-   "say": "ủa, sao lướt TikTok tới khuya rồi?",
+   "say": "Ủa?! Sao lướt Tíc Tóc tới khuya rồi?!",
    "en": "wait, how is it midnight on TikTok?",
    "emotion": "surprised",
-   "key": "f5-d698bac7d73e",
-   "local": 1.941,
-   "dur": 1.81,
-   "t": 6.606
+   "key": "f5-7fa292316ffe",
+   "local": 1.483,
+   "dur": 1.787,
+   "t": 5.394
   },
   {
    "beat": "clip-02.b02",
@@ -84,73 +84,10 @@
    "say": "Xong tội lỗi, ghét bản thân: đồ lười!",
    "en": "Then guilt, self-hate: “lazy bum!”",
    "emotion": "sad",
-   "key": "f5-01e002e679c6",
-   "local": 3.951,
-   "dur": 2.02,
-   "t": 8.616
+   "key": "f5-57833ee05b62",
+   "local": 3.35,
+   "dur": 1.834,
+   "t": 7.261
   }
- ],
- "transitions": [
-  {
-   "at": 1.256,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 2.866,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 4.665,
-   "kind": "scene",
-   "sfx": "swish"
-  }
- ],
- "sfx_mix": [
-  {
-   "name": "stamp",
-   "at": 0.12
-  },
-  {
-   "name": "click",
-   "at": 1.316
-  },
-  {
-   "name": "stamp",
-   "at": 2.116
-  },
-  {
-   "name": "stamp",
-   "at": 3.176
-  },
-  {
-   "name": "pop",
-   "at": 7.106
-  },
-  {
-   "name": "stamp",
-   "at": 10.216
-  },
-  {
-   "name": "swish",
-   "at": 1.136
-  },
-  {
-   "name": "swish",
-   "at": 2.746
-  },
-  {
-   "name": "swish",
-   "at": 4.545
-  },
-  {
-   "name": "ambience",
-   "at": 0.0
-  }
- ],
- "hits": [],
- "partStarts": [
-  0.0
  ]
 }

@@ -60,8 +60,8 @@ def stage_voice(spec):
         if l.get("phrases"):  # DL-033: phrase-level prosody path (voice-prosody.py), preferred for all new lines
             v = pv["preset"]; ph = [{k: x for k, x in p.items() if k != "en"} for p in l["phrases"]]
             if pv.get("engine") == "f5-tts":  # DL-035
-                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp5"], ensure_ascii=False).encode()).hexdigest()[:12]
-                pjobs.append({"engine": "f5-tts", "speaker": l["speaker"], "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
+                l["_key"] = "f5-" + hashlib.sha1(json.dumps([v, pv["ref"], ph, "vp5"] + ([l["takes"]] if l.get("takes") else []) + ([l.get("speed"), l.get("gap_max"), l.get("energetic"), l.get("whole")] if any(l.get(k) is not None for k in ("speed", "gap_max", "energetic", "whole")) else []), ensure_ascii=False).encode()).hexdigest()[:12]
+                pjobs.append({"engine": "f5-tts", "speaker": l["speaker"], "voice": v, "ref": pv["ref"], "ref_text": pv["refText"], "phrases": l["phrases"], "takes": l.get("takes"), "speed": l.get("speed"), "gap_max": l.get("gap_max"), "energetic": l.get("energetic"), "whole": l.get("whole"), "out": os.path.join(VE, "public/voice", l["_key"])})
             else:
                 l["_key"] = "vp-" + hashlib.sha1(json.dumps([v, ph, "vp1"], ensure_ascii=False).encode()).hexdigest()[:12]
                 pjobs.append({"voice": v, "phrases": l["phrases"], "out": os.path.join(VE, "public/voice", l["_key"])})
@@ -93,7 +93,7 @@ def remotion_plan(spec, part):
     for si, sc in enumerate(part["scenes"]):
         tr = sc.get("transition", "cut"); trd = 0.0 if tr == "cut" else 0.4
         hook = sc.get("part") == "hook"  # rule-55: rapid hook, near-zero lead + short tail on cut scenes
-        t = 0.12 if (si == 0 and part is spec["parts"][0]) else (0.06 if hook and tr == "cut" else max(0.3, trd + 0.15))
+        t = 0.12 if (si == 0 and part is spec["parts"][0]) else (0.02 if hook and tr == "cut" else max(0.3, trd + 0.15))
         cast = {c["id"]: {"characterId": c["id"], "x": c["x"], "pose": c.get("pose", "standing"), "action": c.get("action", "idle"),
                           "expression": c.get("expression", "neutral"), "facing": c.get("facing", "right"), "enter": c.get("enter", "none"),
                           "expressionChanges": [], "actionChanges": []} for c in sc["cast"]}
@@ -105,10 +105,10 @@ def remotion_plan(spec, part):
                 if "action" in ch: cast[cid]["actionChanges"].append({"at": st, "value": ch["action"]})
             dlg.append({"speaker": l["speaker"], "text": l["text"], "start": st, "end": round(en + 0.25, 3), "emotion": l["emotion"],
                         "audio": {"src": f"voice/{l['_key']}.wav", "duration": l["_dur"], "envelope": l["_env"], "engine": l["_engine"]}})
-            segs.append({"text": l["en"], "start": round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})
+            segs.append({"text": l["en"], "start": 0.0 if (si == 0 and li == 0 and part is spec["parts"][0]) else round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})  # rule-55/L-021: caption on frame 0
             timing.append({"beat": sc["beat"], "scene": sc["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": l["_dur"]})
-            t = en + (0.2 if li < len(sc["lines"]) - 1 else 0)
-        dur = round(t + (0.15 if hook else 0.45), 3)
+            t = en + ((0.08 if hook else 0.2) if li < len(sc["lines"]) - 1 else 0)
+        dur = round(t + (0.06 if hook else 0.45), 3)
         dlg[-1]["end"] = min(dlg[-1]["end"], dur); segs[-1]["end"] = min(segs[-1]["end"], round(dur - 0.05, 3))
         for i in range(len(segs) - 1): segs[i]["end"] = min(segs[i]["end"], segs[i + 1]["start"])
         scene = {"id": sc["id"], "beat": sc["beat"], "duration": dur, "background": {"kind": sc["background"]},
@@ -192,6 +192,7 @@ SFX.update({
     "snap": "sine=f=180:d=0.08:r=48000,afade=t=out:st=0.01:d=0.07,volume=0.4",
     "pen": "anoisesrc=d=0.4:c=pink:a=0.5:r=48000,highpass=f=1800,lowpass=f=5000,tremolo=f=14:d=0.8,afade=t=in:d=0.05,afade=t=out:st=0.25:d=0.15",
     "stamp": "aevalsrc='0.08*sin(2*PI*95*t)*exp(-14*t)+0.02*(random(0)*2-1)*exp(-40*t)':d=0.2:s=48000",
+    "sigh": "anoisesrc=d=0.75:c=pink:a=0.35:r=48000,highpass=f=250,lowpass=f=1800,afade=t=in:d=0.12,afade=t=out:st=0.2:d=0.55,volume=0.9",  # L-025: audible exhale on Haizz
     "rise": "aevalsrc='0.03*sin(2*PI*(300*t+500*t*t))':d=0.6:s=48000,afade=t=in:d=0.35,afade=t=out:st=0.45:d=0.15",
 })
 TRANS_SFX = {"part": "whoosh-soft", "scene": "swish"}

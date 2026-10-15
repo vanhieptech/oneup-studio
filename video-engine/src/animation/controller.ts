@@ -134,6 +134,7 @@ export function getCharacterState(args: {
 
   // emotion body language
   const e = ex.cur;
+  if (e === "despair") { offsetY += 16; headTilt -= 10; scaleY -= 0.04; armSwing -= 8; }
   if (e === "sad") { offsetY += 10; headTilt -= 6; scaleY -= 0.02; armSwing -= 6; }
   if (e === "surprised") { const k = clamp(sinceEx / 0.35); scaleY += 0.06 * (1 - k) * (sinceEx >= 0 ? 1 : 0); }
 
