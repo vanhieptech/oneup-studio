@@ -3,10 +3,10 @@ id: rules
 type: rules
 status: active
 updated: 2026-10-13
-version: 3.11
+version: 3.20
 tags: [rules, source-of-truth]
 ---
-# @hi.oneup: Bộ luật sản xuất video (v3.19, 15/10/2026)
+# @hi.oneup: Bộ luật sản xuất video (v3.20, 15/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
 Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xem `logs/rules-audit-2026-10-13.md`). Khi có mâu thuẫn, bản này là chuẩn. Luật đánh số cao hơn **không** tự động ghi đè luật thấp hơn: mỗi luật đã được sửa để không còn mâu thuẫn.
@@ -117,7 +117,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 46. **Giọng AI nhân vật (F5-TTS, DL-035):**
     - Chỉ nhân vật có `voice` trong profile mới có giọng AI: **Hiệp chibi** = **"F5 · Thái Sơn"** (nam, miền Nam; nghe thử 8 giọng, chọn số 6), **Omi** = **"F5 · Mỹ Duyên"** (nữ, miền Nam; số 6). Hiệp chọn 13/10/2026 (DL-035), thay Đức Trí / Kim Thanh (DL-030). Khai báo ở `video-engine/src/characters/profiles/{hiep,omi}.json` → `voice` (`engine: f5-tts`, `ref`, `refText`). Engine: F5-TTS + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice`, chạy **local** trên CPU (`/workspace/f5-venv`, `pipeline/tts/f5tts_gen.py`), không gọi API. Đổi giọng/giọng mẫu phải ghi DL.
     - ⚠ **Giấy phép:** checkpoint là **CC-BY-NC-SA-4.0 (không thương mại)**. Kênh có quảng bá app OneUp nên dùng trong clip đăng là **rủi ro vi phạm giấy phép**; Hiệp đã xác nhận chấp nhận rủi ro này (13/10/2026, DL-035). Nếu bị khiếu nại hoặc kênh bắt đầu kiếm tiền trực tiếp thì quay về VieNeu (Apache-2.0, `engine: vieneu-tts`, profile còn ghi `previous`) và ghi DL.
-    - **Giọng mẫu (reference):** chỉ dùng câu trung tính do preset VieNeu tổng hợp (`pipeline/tts/f5-refs/`, câu "Hôm nay trời Sài Gòn mát mẻ…"). **Cấm clone giọng người thật** (kể cả Hiệp), cấm `ref_audio` lấy từ bản thu người thật.
+    - **Giọng mẫu (reference):** chỉ dùng câu trung tính do preset VieNeu tổng hợp (`assets/voice-refs/`, câu "Hôm nay trời Sài Gòn mát mẻ…"). **Cấm clone giọng người thật** (kể cả Hiệp), cấm `ref_audio` lấy từ bản thu người thật.
     - **Prosody:** mọi câu đi qua `voice-prosody.py` theo từng cụm hơi (`phrases`: khoảng nghỉ, nhấn = chậm + lên giọng + to hơn), với F5 (DL-038, L-016): **không bao giờ cắt bên trong một output F5**. Tách câu theo dấu câu (. , ? ! … ; :) thành đơn vị câu/mệnh đề (gộp đơn vị < 4 âm tiết), mỗi đơn vị một lần gọi F5 riêng, 3 seed cố định cho mỗi nhân vật (speed 1.0, NFE 32), chọn take bằng STT trừ lặp/mất âm tiết + khớp F0 với các đơn vị khác; chỉ gọt lặng đầu/cuối (−50 dB, đệm 40 ms, fade 15 ms); nối bằng khoảng nghỉ theo dấu câu (phẩy 180 ms, chấm 350, ?/! 400, … 500) có room tone. Muốn ngắt/nhấn thì sửa dấu câu, không cắt audio. Nhấn nhá thêm bằng markup giọng (từ đệm, ngập ngừng, kéo tiểu từ, câu chen, ngắt ngang; bảng ở `content/voice-profile.md` §3c, DL-039), tối đa 1 từ đệm/câu và max(2, số câu ÷ 4)/clip (check L-017). Thời gian beat/caption theo audio; tự cắt phần **rò giọng mẫu** (chữ của câu mẫu lọt vào đầu take) bằng timestamp từng từ của faster-whisper. Câu không có `phrases` được tính là một cụm. Lời theo voice profile: gọi người xem là "bạn", miền Nam, nha/á/hông, cà khịa nhẹ, 1–3 từ tiếng Anh. Không dùng tag [cười]/[thở dài].
     - Audio cache theo hash (engine + giọng + giọng mẫu + cụm), chuẩn loudness rồi ghép −14 LUFS. Không nhạc (luật 21). Kiểm bằng ffprobe (có track audio) và ASR (đúng chữ) trước khi gửi Hiệp.
     - **Nhãn AI trên TikTok:** TikTok bắt buộc gắn nhãn cho nội dung AI có hình, **âm thanh** hoặc video trông/nghe như thật (Community Guidelines, mục Edited Media & AIGC). Giọng nhân vật là giọng tổng hợp nghe như người thật → **mọi clip có giọng AI** (Hiệp và/hoặc Omi): **bật nút "AI-generated content"** khi đăng, và ghi trong caption: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." (chỉ nêu nhân vật thật sự nói). Clip không có giọng AI thì không bật (gắn nhãn sai cho nội dung không AI cũng vi phạm điều khoản). Nguồn: support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content (kiểm 13/10/2026).
@@ -228,7 +228,10 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Giọng: kể với bạn, đồng cảm, đôi khi hài; thành ngữ, ẩn dụ, giai thoại; chữ đứa 12 tuổi hiểu; có số liệu thật kèm giới hạn. Đề xuất luôn kèm 1 hook thay thế kiểu khác (`hook_alt`).
     - Chi tiết: `docs/research/script-prompt-principles.md`. check-rules: `rule-64`.
 
+65. **Lưu trữ theo một quy ước duy nhất (L-034):** mọi file sinh ra nằm đúng chỗ trong `docs/conventions/storage.md`; tài nguyên dùng chung (font, logo, sfx, giọng mẫu, nhân vật, props) chỉ có **một bản** trong `brand/` hoặc `assets/` hoặc `video-engine/src/`; thư mục clip chỉ chứa thứ riêng của clip. Đường dẫn lấy từ `pipeline/paths.py`; bản chép runtime do `pipeline/scripts/sync-shared.py` sinh và gitignore. `check-assets.py` chặn khi có file dùng chung trong clip, file trùng nội dung, hoặc thư mục gốc lạ. Đọc `storage.md` + `logs/lessons.md` trước mỗi clip.
+
 ## Changelog
+- v3.20 (15/10): luật 65 lưu trữ (storage.md, paths.py, sync-shared.py, check-assets rule-65); L-033 layout bubble.
 - **v3.19, 15/10/2026:** luật 64, cấu trúc hook→intro→body→tóm tắt→1 CTA + giọng người thật (DL-065, L-032).
 - **v3.18, 15/10/2026:** luật 62, throughline ABT + link theo ngữ cảnh + callback clip trước (DL-063, L-030).
 59. **Mọi asset dự án nằm tập trung trong repo (DL-060, L-023):** kịch bản, trend, ý tưởng, mẫu giọng, sfx, ảnh bìa, storyboard, log, plan đều nằm trong `oneup-studio/`. Không lưu ở thư mục riêng trên box. Media >5MB vào `media/` + `media/MANIFEST.json`. `pipeline/scripts/check-assets.py` chặn khi thấy file dự án ngoài repo.

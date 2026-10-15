@@ -111,7 +111,7 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 `LLM_BASE_URL=http://localhost:11434/v1 LLM_MODEL=qwen2.5 npm run plan -- script.txt --llm`. Kết quả LLM phải qua cùng validator. Nếu lỗi mạng, JSON hỏng hoặc plan không hợp lệ thì tự quay về rule-based và ghi rõ trong log. Không cài SDK của hãng nào.
 
 ## Giọng nhân vật (luật 46, DL-035: Hiệp = "F5 · Thái Sơn", Omi = "F5 · Mỹ Duyên") <a name="voice"></a>
-**Mặc định (DL-035): F5-TTS** + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice` (⚠ CC-BY-NC-SA-4.0, không thương mại; Hiệp chấp nhận rủi ro). Profile: `voice.engine = "f5-tts"`, `ref` (giọng mẫu tổng hợp bằng VieNeu, `pipeline/tts/f5-refs/`), `refText`.
+**Mặc định (DL-035): F5-TTS** + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice` (⚠ CC-BY-NC-SA-4.0, không thương mại; Hiệp chấp nhận rủi ro). Profile: `voice.engine = "f5-tts"`, `ref` (giọng mẫu tổng hợp bằng VieNeu, `assets/voice-refs/`), `refText`.
 ```bash
 python3 -m venv /workspace/f5-venv && /workspace/f5-venv/bin/pip install f5-tts      # CPU
 # checkpoint: tải model_last.pt + vocab.txt của hynt/F5-TTS-Vietnamese-ViVoice vào /workspace/f5-ckpt (F5_CKPT_DIR)

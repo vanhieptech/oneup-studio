@@ -50,6 +50,22 @@
    "title": "Characters (prototype v0.1)"
   },
   {
+   "id": "clip-01.post",
+   "type": "post-package",
+   "status": "review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1",
+   "updated": "2026-10-13",
+   "path": "content/clips/clip-01-box-final/post.md",
+   "title": "Gói đăng clip 01 (final demo)"
+  },
+  {
+   "id": "clip-01.script-final",
+   "type": "script",
+   "status": "review (gate 2) · DEMO tuần 5",
+   "updated": "2026-10-13",
+   "path": "content/clips/clip-01-box-final/script-final.md",
+   "title": "Clip 01 FINAL (demo / template tuần 5): \"Mai học\" → nếu… thì…"
+  },
+  {
    "id": "clip-01.beat-sheet",
    "type": "beat-sheet",
    "status": "draft",
@@ -60,18 +76,18 @@
   {
    "id": "clip-01.post",
    "type": "post-package",
-   "status": "review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1",
-   "updated": "2026-10-13",
+   "status": "sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md",
+   "updated": "2026-10-14",
    "path": "content/clips/clip-01-implementation-intention/final/post.md",
-   "title": "Gói đăng clip 01 (final demo)"
+   "title": "Gói đăng TikTok: clip 01 \"Mai học → nếu… thì…\""
   },
   {
    "id": "clip-01.script-final",
    "type": "script",
-   "status": "review (gate 2) · DEMO tuần 5",
-   "updated": "2026-10-13",
+   "status": "review (gate 1+2 gộp, DL-041) · tuần 1, không Omi",
+   "updated": "2026-10-14",
    "path": "content/clips/clip-01-implementation-intention/final/script-final.md",
-   "title": "Clip 01 FINAL (demo / template tuần 5): \"Mai học\" → nếu… thì…"
+   "title": "Clip 01 FINAL v2: \"Mai học\" → nếu… thì… (bản đủ thông tin)"
   },
   {
    "id": "clip-01.script-v2.1-draft",
@@ -106,10 +122,34 @@
    "title": "Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md"
   },
   {
+   "id": "clip-02.post",
+   "type": "post-package",
+   "status": "NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build)",
+   "updated": "2026-10-14",
+   "path": "content/clips/clip-02-procrastination-discomfort/final/post.md",
+   "title": "Gói đăng TikTok: clip 02 \"Lười? Không, đang né\""
+  },
+  {
+   "id": "clip-02.script-final",
+   "type": "script",
+   "status": "kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng",
+   "updated": "2026-10-15",
+   "path": "content/clips/clip-02-procrastination-discomfort/final/script-final.md",
+   "title": "Clip 02 · GATE 1: \"Mình lười quá\" → trì hoãn là né cảm giác khó chịu"
+  },
+  {
+   "id": "clip-02.trend-signals",
+   "type": "research",
+   "status": null,
+   "updated": "2026-10-14",
+   "path": "content/clips/clip-02-procrastination-discomfort/final/trend-signals.md",
+   "title": "Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7)"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-15",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -168,6 +208,59 @@
    "updated": "2026-10-12",
    "path": "content/voice-profile.md",
    "title": "Voice profile: Hiệp (@hi.oneup)"
+  },
+  {
+   "id": "rules",
+   "type": "rules",
+   "status": "active",
+   "updated": "2026-10-12",
+   "path": "docs/plans/hi-oneup-video-rules.md",
+   "title": "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
+  },
+  {
+   "id": "skill.plans",
+   "type": "skill",
+   "status": "active",
+   "path": "docs/plans/make-video-skill.md",
+   "title": "Make video (@hi.oneup end-to-end)"
+  },
+  {
+   "id": "skill.plans",
+   "type": "skill",
+   "status": "active",
+   "path": "docs/plans/trend-digest-skill-v2.md",
+   "title": "Trend digest"
+  },
+  {
+   "id": "skill.plans",
+   "type": "skill",
+   "status": "active",
+   "path": "docs/plans/trend-digest-skill-v3.md",
+   "title": "Trend digest"
+  },
+  {
+   "id": "research.script-prompt-principles",
+   "type": "research",
+   "status": "Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7",
+   "updated": "2026-10-15",
+   "path": "docs/research/script-prompt-principles.md",
+   "title": "Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s"
+  },
+  {
+   "id": "research.scriptwriting-2026-10-15",
+   "type": "research",
+   "status": "chờ Hiệp duyệt trước khi viết lại clip-02",
+   "updated": "2026-10-15",
+   "path": "docs/research/scriptwriting-research-2026-10-15.md",
+   "title": "Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup)"
+  },
+  {
+   "id": "per-video-pipeline",
+   "type": "workflow",
+   "status": "active",
+   "updated": null,
+   "path": "docs/workflow/per-video-pipeline.md",
+   "title": "Quy trình một video, từ ý tưởng tới sẵn sàng đăng"
   },
   {
    "id": "decision-log",
@@ -338,10 +431,26 @@
    "title": "Hook & format pattern library (rule-47)"
   },
   {
+   "id": "trends-2026-10-15",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-15",
+   "path": "research/trends/2026-10-15/digest.md",
+   "title": "Trend digest 2026-10-15"
+  },
+  {
+   "id": "trends-patterns",
+   "type": "pattern-library",
+   "status": "living",
+   "updated": "2026-10-15",
+   "path": "research/trends/2026-10-15/patterns.md",
+   "title": "Hook & format pattern library (rule-47)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-14",
+   "updated": "2026-10-15",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -349,9 +458,33 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-14",
+   "updated": "2026-10-15",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
+  },
+  {
+   "id": "vn-thesaurus",
+   "type": "resource",
+   "status": null,
+   "updated": "2026-10-15",
+   "path": "resources/vn-dict/thesaurus.md",
+   "title": "Kho từ sắc (rule 58, DL-059)"
+  },
+  {
+   "id": "resources.vn-spoken",
+   "type": "resource",
+   "status": null,
+   "updated": "2026-10-15",
+   "path": "resources/vn-spoken/README.md",
+   "title": "Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup"
+  },
+  {
+   "id": "resources.vn-spoken.phrase-bank",
+   "type": "resource",
+   "status": null,
+   "updated": "2026-10-15",
+   "path": "resources/vn-spoken/phrase-bank.md",
+   "title": "Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi"
   },
   {
    "id": "rules",
@@ -359,7 +492,7 @@
    "status": "active",
    "updated": "2026-10-13",
    "path": "rules/video-rules.md",
-   "title": "@hi.oneup: Bộ luật sản xuất video (v3.6, 14/10/2026)"
+   "title": "@hi.oneup: Bộ luật sản xuất video (v3.20, 15/10/2026)"
   },
   {
    "id": "skill.humanizer",
@@ -1036,6 +1169,14 @@
    "title": "Trend digest"
   },
   {
+   "id": "clip-01.post",
+   "type": "post-package",
+   "status": "sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md",
+   "updated": "2026-10-14",
+   "path": "templates/post-package.md",
+   "title": "Gói đăng TikTok: <clip-NN \"<tên>\">"
+  },
+  {
    "id": "video-engine",
    "type": "guide",
    "status": "active",
@@ -1289,9 +1430,95 @@
    "id": "rule-49",
    "title": "Cổng bài học, tự học từ lỗi (lessons gate)",
    "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-50",
+   "title": "Mỗi lần chuyển cảnh đều có SFX, luôn có lớp nền ambience (DL-042)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-51",
+   "title": "Motion phải gắn với nội dung; mỗi điểm animation trọng tâm có SFX nhấn (DL-043)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-52",
+   "title": "Lên kế hoạch hiệu ứng ngay ở bước kịch bản, duyệt ở gate 1 trước khi render (DL-044, L-019)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-53",
+   "title": "Gói đăng TikTok đầy đủ, có hệ thống (DL-045)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-54",
+   "title": "Cover luôn render từ template A (DL-046, L-020)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-55",
+   "title": "Hook 0–3s dồn dập, kịch tính, đậm cảm xúc (DL-051)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-56",
+   "title": "Tương tác khéo, không xin (DL-052)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-57",
+   "title": "Lớp trend ưu tiên tín hiệu gốc TikTok (DL-053)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-58",
+   "title": "Kịch bản là một câu chuyện liền mạch, chữ sắc và gọn (DL-059, L-022)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-60",
+   "title": "Văn nói + mỗi cảnh xen hành động, cảm xúc, thoại (DL-061, L-024)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-61",
+   "title": "Lời thoại không kể lại cái hình đã cho thấy, không độn chữ (DL-062, L-029)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-62",
+   "title": "Một mạch ABT xuyên suốt, nối theo ngữ cảnh, callback clip trước (DL-063, L-030)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-64",
+   "title": "Cấu trúc + giọng người thật theo prompt scriptwriter (DL-065, L-032)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-65",
+   "title": "Lưu trữ theo một quy ước duy nhất (L-034)",
+   "path": "rules/video-rules.md"
+  },
+  {
+   "id": "rule-59",
+   "title": "Mọi asset dự án nằm tập trung trong repo (DL-060, L-023)",
+   "path": "rules/video-rules.md"
   }
  ],
  "clips": [
+  {
+   "id": "clip-01",
+   "path": "content/clips/clip-01-box-final",
+   "theme": null,
+   "files": [
+    "check-rules.txt",
+    "contact-sheet.png",
+    "post.md",
+    "script-final.md"
+   ]
+  },
   {
    "id": "clip-01",
    "path": "content/clips/clip-01-implementation-intention",
@@ -1305,6 +1532,14 @@
     "script.md",
     "shot-list.md",
     "storyboard"
+   ]
+  },
+  {
+   "id": "clip-02",
+   "path": "content/clips/clip-02-procrastination-discomfort",
+   "theme": null,
+   "files": [
+    "final"
    ]
   }
  ],

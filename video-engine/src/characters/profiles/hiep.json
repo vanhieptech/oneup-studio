@@ -53,7 +53,7 @@
     "engine": "f5-tts",
     "preset": "F5 · Thái Sơn",
     "synthetic": true,
-    "ref": "pipeline/tts/f5-refs/thai-son.wav",
+    "ref": "assets/voice-refs/thai-son.wav",
     "refText": "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha.",
     "refSource": "VieNeu-TTS preset 'Thái Sơn' neutral sentence (synthetic, no real person cloned)",
     "model": "hynt/F5-TTS-Vietnamese-ViVoice",

@@ -22,3 +22,10 @@ video-engine/public/voice/_prosody-job.json
 media/**
 !media/MANIFEST.json
 !media/README.md
+
+# rule-65: derived copies of the shared library (pipeline/scripts/sync-shared.py); canonical = brand/fonts, brand/logos
+video-engine/public/fonts/
+video-engine/public/brand/
+content/**/explainer/fonts/
+content/**/explainer/logo.svg
+templates/hyperframes-base/fonts/

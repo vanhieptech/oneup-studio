@@ -19,8 +19,10 @@ Outputs: <final>/out/*.mp4 (gitignored) and <final>/<id>.mp4, timing.json (for S
 """
 import hashlib, json, os, re, subprocess, sys, math, wave, struct
 
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-VE = os.path.join(REPO, "video-engine")
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+import paths as P  # rule-65 canonical paths
+REPO = str(P.ROOT)
+VE = str(P.VE)
 NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x64/bin")
 PY = os.environ.get("VIENEU_PYTHON", "/workspace/tts-venv/bin/python")
 FPS = 30
@@ -50,6 +52,9 @@ def all_lines(spec):
 
 def voice_key(preset, emotion, text, take=1):
     return hashlib.sha1(json.dumps(["vieneu-tts", preset, emotion, text, 4] + ([take] if take != 1 else []), ensure_ascii=False).encode()).hexdigest()[:12]
+
+def sync_shared():
+    subprocess.run([sys.executable, str(P.SCRIPTS / "sync-shared.py")], check=True)
 
 def stage_voice(spec):
     prof = profiles(); jobs = []; pjobs = []
@@ -204,6 +209,7 @@ SFX_LEAD = 0.12  # SFX starts slightly before the cut so it overlaps across it
 
 def main():
     specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
+    sync_shared()  # rule-65: fonts/logo copies from brand/ (gitignored)
     fdir = os.path.dirname(specp); spec = json.load(open(specp)); os.makedirs(os.path.join(fdir, "out"), exist_ok=True)
     sel = sys.argv[sys.argv.index("--scenes") + 1].split(",") if "--scenes" in sys.argv else None
     sfxn = "-preview" if sel else ""; odir = os.path.join(fdir, "preview") if sel else os.path.join(fdir, "out"); os.makedirs(odir, exist_ok=True)

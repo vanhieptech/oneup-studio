@@ -10,7 +10,8 @@ Source: <clip>/final/spec.json (format: see skills/make-video/SKILL.md). Exit 1 
 """
 import json, os, re, subprocess, sys, difflib, unicodedata, glob, math
 
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+REPO = str(P.ROOT)
 NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x64/bin")
 ASR_PY = os.environ.get("ASR_PYTHON", "/workspace/asr-venv/bin/python")
 res = []
@@ -179,7 +180,7 @@ def main():
         if "ref_audio" in json.dumps(l): err("rule-46", "ref_audio (voice cloning) is forbidden")
     if voiced: ok("rule-46", "AI voices: " + ", ".join(sorted(voiced)))
     # DL-035: F5-TTS voices with synthetic VieNeu references
-    VOICES = {"omi": ("f5-tts", "F5 · Mỹ Duyên", "pipeline/tts/f5-refs/my-duyen.wav"), "hiep": ("f5-tts", "F5 · Thái Sơn", "pipeline/tts/f5-refs/thai-son.wav")}
+    VOICES = {"omi": ("f5-tts", "F5 · Mỹ Duyên", "assets/voice-refs/my-duyen.wav"), "hiep": ("f5-tts", "F5 · Thái Sơn", "assets/voice-refs/thai-son.wav")}
     for cid, (eng, pre, ref) in VOICES.items():
         pv = prof.get(cid, {}).get("voice", {})
         if cid == "omi" and not omi_used: continue

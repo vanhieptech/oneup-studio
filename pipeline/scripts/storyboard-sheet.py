@@ -1,7 +1,8 @@
 import json,textwrap,sys
 from PIL import Image,ImageDraw,ImageFont
 s=json.load(open('spec.json'))
-B='/workspace/oneup-studio/brand/fonts/BeVietnamPro-'
+import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+B=str(P.FONTS / 'BeVietnamPro-')
 f=lambda w,z:ImageFont.truetype(B+w+'.ttf',z)
 fix=lambda t:t.replace('→',' > ').replace('✕','X').replace('≠','khác')
 items=[(p['engine'],x) for p in s['parts'] for x in p.get('scenes',p.get('sections',[]))]

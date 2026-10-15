@@ -24,3 +24,19 @@ Kênh TikTok https://www.tiktok.com/@hi.oneup: video productivity/motivation 55�
 | `assets/` | sfx (CC0, kèm SOURCES.md), stock, icon |
 | `footage/` | `inbox/` nhận AirDrop giọng thu (file âm thanh không commit) |
 | `renders/` | `ready/` gói sẵn đăng (file mp4 không commit) |
+
+## Quy ước thư mục (luật 65)
+Chi tiết: `docs/conventions/storage.md` · đường dẫn: `pipeline/paths.py` · chặn: `pipeline/scripts/check-assets.py`.
+```
+brand/            font, logo, màu, token (một bản duy nhất)
+assets/           sfx/, voice-refs/ (giọng mẫu F5)
+video-engine/src/ characters/ (rig, profile, biểu cảm), composition/ (props, layout, motion)
+video-engine/public/voice/  voice take đã chọn (fonts/, brand/ là bản sinh, gitignored)
+templates/        hyperframes-base
+content/clips/<clip>/final/  script, spec, plan, timing, cover/, preview/, out/ (render, gitignored)
+media/            file lớn (gitignored) + MANIFEST.json
+pipeline/         scripts/, tts/, paths.py
+research/ docs/ resources/  nghiên cứu, quy ước, quy trình (docs/workflow/per-video-pipeline.md)
+logs/ rules/ skills/ tests/
+```
+

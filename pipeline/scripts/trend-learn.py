@@ -10,7 +10,8 @@ Repo root is inferred from this file's location. Trend dirs: research/trends/YYY
 import json, re, sys, datetime as dt
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+ROOT = P.ROOT
 TRENDS = ROOT / "research" / "trends"
 
 def norm(s):

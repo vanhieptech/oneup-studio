@@ -50,7 +50,7 @@
     "engine": "f5-tts",
     "preset": "F5 · Mỹ Duyên",
     "synthetic": true,
-    "ref": "pipeline/tts/f5-refs/my-duyen.wav",
+    "ref": "assets/voice-refs/my-duyen.wav",
     "refText": "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha.",
     "refSource": "VieNeu-TTS preset 'Mỹ Duyên' neutral sentence (synthetic, no real person cloned)",
     "model": "hynt/F5-TTS-Vietnamese-ViVoice",

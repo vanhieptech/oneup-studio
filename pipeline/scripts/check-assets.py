@@ -29,4 +29,29 @@ if bad:
     print(f"FAIL rule-59: {len(bad)} project file(s) outside repo {ROOT} not committed/manifested:")
     for p in bad[: (None if "--list" in sys.argv else 20)]: print("  ", p)
     sys.exit(1)
-print(f"PASS rule-59: {len(cands)} external file(s) all mirrored in repo")
+else:
+    print(f"PASS rule-59: {len(cands)} external file(s) all mirrored in repo")
+
+# ---- rule-65 / L-034: storage convention (docs/conventions/storage.md) ----
+sys.path.insert(0, str(ROOT / "pipeline")); import paths as P
+DUP_EXEMPT = ("skills/", "video-engine/public/voice/", "brand/omi-exports/", "refs/")
+DUP_EXEMPT_NAMES = {"package.json", "package-lock.json", "hyperframes.json", ".gitignore", "README.md", "AGENTS.md", "CLAUDE.md"}
+import re as _re
+DUP_EXEMPT_RE = _re.compile(r"(\.tpl$|^logs/runs/|/final/cover\.png$|/v\d+/)")  # templates, run logs, L-020 cover = template render, versioned snapshots
+tracked = [f for f in subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, text=True).stdout.split("\0") if f and (ROOT / f).is_file()]
+errs = []
+for f in tracked:
+    top = f.split("/")[0]
+    if top not in P.TOP_ALLOWED and not top.startswith("."): errs.append(f"outside allowed top-level dirs: {f}")
+    name = f.rsplit("/", 1)[-1]
+    if f.startswith(("content/", "samples/")) and (Path(f).suffix.lower() in P.SHARED_EXT or name in P.SHARED_NAMES):
+        errs.append(f"shared-type file inside a clip/sample folder (use brand/ or assets/, synced by sync-shared.py): {f}")
+by = {}
+for f in tracked:
+    if f.startswith(DUP_EXEMPT) or f.rsplit("/", 1)[-1] in DUP_EXEMPT_NAMES or DUP_EXEMPT_RE.search(f) or (ROOT / f).stat().st_size < 64: continue
+    by.setdefault(sha(ROOT / f), []).append(f)
+for h, fs in by.items():
+    if len(fs) > 1: errs.append(f"duplicate content ({h[:10]}): {', '.join(fs)}")
+if errs:
+    print(f"FAIL rule-65: {len(errs)} storage violation(s):"); [print("  ", e) for e in errs[: (None if "--list" in sys.argv else 40)]]; sys.exit(1)
+print(f"PASS rule-65: {len(tracked)} tracked files follow docs/conventions/storage.md (no shared files in clips, no duplicates)")

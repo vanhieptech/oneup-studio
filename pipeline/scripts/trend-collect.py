@@ -15,7 +15,8 @@ import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+ROOT = P.ROOT
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
 DROP = r"chết|tử vong|thiệt mạng|tai nạn|án mạng|giết|cướp|ma túy|khởi tố|bắt giữ|xét xử|lừa đảo|bão|lũ|động đất|cháy|chiến tranh|tấn công|quân đội|đảng|quốc hội|chính phủ|bầu cử|tôn giáo|cờ bạc|cá độ|xổ số|vé số|jackpot|độc đắc|sex|tình dục|buôn người|xhamster|khiêu dâm|tô lâm|thủ tướng|chủ tịch nước|killed|dead|death|shooting|murder|war|attack|military|election|trump|senate|congress|lawsuit|court|arrest|hurricane|flood|earthquake|gambling|porn|israel|gaza|ukraine|russia|iran"
 CAUTION = r"ca sĩ|diễn viên|hoa hậu|celebrity|singer|actor|tỷ phú|billionaire|giá vàng|crypto|bitcoin|stock"

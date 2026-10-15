@@ -1,0 +1,28 @@
+"""rule-65: single source of canonical paths (docs/conventions/storage.md). Every generator imports from here."""
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+# shared library (one copy, never per clip)
+BRAND = ROOT / "brand"; FONTS = BRAND / "fonts"; LOGOS = BRAND / "logos"; BRAND_TOKENS = BRAND / "brand-tokens.json"
+ASSETS = ROOT / "assets"; SFX = ASSETS / "sfx"; VOICE_REFS = ASSETS / "voice-refs"
+VE = ROOT / "video-engine"; CHARACTERS = VE / "src/characters"; PROPS_SRC = VE / "src/composition/Props.tsx"
+VOICE_CACHE = VE / "public/voice"          # all voice takes (content-hash keys / v8-<scene>), committed
+ENGINE_OUT = VE / "out"                    # Remotion part renders (gitignored)
+# per clip
+CLIPS = ROOT / "content/clips"
+def clip_dir(clip: str) -> Path: return CLIPS / clip
+def final_dir(clip: str) -> Path: return CLIPS / clip / "final"   # script, spec, plans, timing, cover, preview/
+def out_dir(clip: str) -> Path: return final_dir(clip) / "out"     # final mp4, mix, generated sfx (gitignored)
+def preview_dir(clip: str) -> Path: return final_dir(clip) / "preview"
+# other
+MEDIA = ROOT / "media"; MANIFEST = MEDIA / "MANIFEST.json"        # large binaries (gitignored, manifested)
+RESEARCH = ROOT / "research"; TRENDS = RESEARCH / "trends"
+LOGS = ROOT / "logs"; LESSONS = LOGS / "lessons.md"; DECISIONS = LOGS / "decision-log.md"
+RULES = ROOT / "rules/video-rules.md"; DOCS = ROOT / "docs"; TESTS = ROOT / "tests"
+SCRIPTS = ROOT / "pipeline/scripts"; TTS = ROOT / "pipeline/tts"; SKILLS_MIRROR = ROOT / "skills"
+SKILLS_LIVE = Path("/home/box/agent-data/workflows")
+# allowed top-level dirs/files (check-assets.py enforces)
+TOP_ALLOWED = {"AGENTS.md", "INDEX.md", "README.md", "index.json", ".gitignore", "assets", "brand", "content", "docs", "footage", "logs", "media",
+               "pipeline", "refs", "renders", "research", "resources", "rules", "samples", "skills", "templates", "tests", "video-engine"}
+# shared-type files that must NOT live inside content/ (derived copies are gitignored, see sync-shared.py)
+SHARED_EXT = {".ttf", ".otf", ".woff", ".woff2"}
+SHARED_NAMES = {"logo.svg", "thai-son.wav", "my-duyen.wav"}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """F5-TTS Vietnamese batch synthesis (DL-035). Run with the F5 venv:
   /workspace/f5-venv/bin/python pipeline/tts/f5tts_gen.py batch.json
-batch = {"ref": "pipeline/tts/f5-refs/thai-son.wav", "ref_text": "…", "items": [{"t": "…", "seed": 7, "speed": 1.0, "out": "/tmp/x.wav"}]}
+batch = {"ref": "assets/voice-refs/thai-son.wav", "ref_text": "…", "items": [{"t": "…", "seed": 7, "speed": 1.0, "out": "/tmp/x.wav"}]}
 Model: hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0, NON-COMMERCIAL; risk accepted by Hiệp, DL-035).
 Reference clips are neutral sentences synthesized by VieNeu presets (no real person cloned).
 Text is lower-cased (the checkpoint is trained on lower-case ViVoice). Raw output only: trimming,
