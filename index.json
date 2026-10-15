@@ -605,9 +605,17 @@
    "id": "references",
    "type": "reference-index",
    "status": "ready",
-   "updated": "2026-10-15",
+   "updated": "2026-10-16",
    "path": "research/references/README.md",
    "title": "References: phân tích creator, hook, format"
+  },
+  {
+   "id": "research.motionmaxxing",
+   "type": "reference",
+   "status": "ready",
+   "updated": "2026-10-16",
+   "path": "research/references/motionmaxxing-notes.md",
+   "title": "motionmaxxing → Remotion mapping (comic shorts)"
   },
   {
    "id": "research.skillopt",
@@ -722,6 +730,14 @@
    "title": "Apify sample 2026-10-16"
   },
   {
+   "id": "trends-2026-10-16.apify-verify",
+   "type": "research-trends",
+   "status": "ready",
+   "updated": "2026-10-16",
+   "path": "research/trends/2026-10-16/apify-verify.md",
+   "title": "Apify verify 2026-10-16"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
@@ -741,7 +757,7 @@
    "id": "refs",
    "type": "reference",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-16",
    "path": "resources/refs/README.md",
    "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
   },
@@ -751,6 +767,13 @@
    "status": "active",
    "path": "resources/refs/awesome-ai-motion/SKILL.md",
    "title": "awesome-ai-motion"
+  },
+  {
+   "id": "skill.motionmaxxing",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/motionmaxxing/SKILL.md",
+   "title": "motionmaxxing"
   },
   {
    "id": "skill.skill",

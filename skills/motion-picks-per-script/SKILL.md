@@ -3,7 +3,7 @@ name: Motion picks per script
 description: >-
   Use when a short-form video script is approved (or drafted) and you need to
   choose motion/animation effects that fit THAT script's content, beat by beat,
-  from the awesome-ai-motion catalog, instead of reusing a fixed effect set.
+  from the awesome-ai-motion catalog, transitions.dev ports, and motionmaxxing measured eases — instead of reusing a fixed effect set.
 ---
 # Motion picks per script
 
@@ -31,3 +31,15 @@ Catalog: https://github.com/gongnyang/awesome-ai-motion (MIT). Clone to `resourc
 6. **Write the motion spec** to the clip folder as `motion-spec.md`: table of time | footage | intent | effect (slug + en name) | params | implementation note (e.g. Remotion `interpolate`/`spring`, FFmpeg). Note timings get re-snapped to the real voice recording.
 7. **Rule check** before handing off: one main effect per beat, nothing in unsafe areas, text on screen >= 1s, no flashes, brand elements present, license OK. Append the effects used to the effects log.
 8. Show the spec with the script for approval when the rules require it.
+
+## motionmaxxing craft + eases (Remotion ports — pick for timing / comic punch)
+Source: https://github.com/Tejashmakwana/motionmaxxing (Apache-2.0) @ 8c8ec0f. Clone: `resources/refs/motionmaxxing/` (gitignored; see `resources/refs/README.md`). Notes: `research/references/motionmaxxing-notes.md`.
+
+In-house: `video-engine/src/composition/motionmaxxing/catalog.json` + `mmx.ts` — 12 measured eases (`mmx-soft-land`, `mmx-snap-settle`, `mmx-glide`, `mmx-cruise`, `mmx-whip`, `mmx-accel-exit`, `mmx-crash-out`, `mmx-crash-in`, `mmx-pop-over`, `mmx-soft-inout`, `mmx-gentle-in`, `mmx-bounce-hard`) and presets `mmx-oversize-land`, `mmx-cut-on-motion`, `mmx-no-dead-frame`. Call `mmxEase(name, p)` or `mmxStyle(name, p)`. In motion-spec.md write the slug with `(motionmaxxing)`.
+
+**When to prefer mmx vs existing:**
+- Scene/card transitions already covered → keep `tdev-*` (transitions.dev).
+- Captions / count-up / strike / push-in → keep awesome-ai-motion cards.
+- Entry/exit **timing curves**, hook oversize land, cut-on-motion seams, one film spring, living holds → use `mmx-*`.
+- Craft laws (always): land decelerates / leave accelerates; almost no scene fades; ≤1 visible spring per film; words at speech rhythm (2–12 f); end mid-motion or hold ≤1.4 s.
+- Skip: GSAP runtime, 3D hero, HUD/page chrome, heavy particles/glitch (banned by channel rules + mmx "Never ship").

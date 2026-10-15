@@ -88,6 +88,7 @@ tags: [index, retrieval]
 | research.video-gen | research | reference | `research/oneup-video-gen-research-vi.md` | Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup |
 | research.production-system | research | reference | `research/production-system-research-vi.md` | Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất |
 | references | reference-index | ready | `research/references/README.md` | References: phân tích creator, hook, format |
+| research.motionmaxxing | reference | ready | `research/references/motionmaxxing-notes.md` | motionmaxxing → Remotion mapping (comic shorts) |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
 | trends-2026-10-13-v2 | research | draft | `research/trends/2026-10-13/digest-v2.md` | Trend digest 2026-10-13 · v2 (chạy lại, nhiều nguồn) |
@@ -102,10 +103,12 @@ tags: [index, retrieval]
 | trends-2026-10-15 | trend-digest | draft-needs-review | `research/trends/2026-10-15/digest.md` | Trend digest 2026-10-15 |
 | trends-patterns | pattern-library | living | `research/trends/2026-10-15/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-2026-10-16.apify-sample | research-trends | ready | `research/trends/2026-10-16/apify/README.md` | Apify sample 2026-10-16 |
+| trends-2026-10-16.apify-verify | research-trends | ready | `research/trends/2026-10-16/apify-verify.md` | Apify verify 2026-10-16 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | skill.awesome-ai-motion | skill | active | `resources/refs/awesome-ai-motion/SKILL.md` | awesome-ai-motion |
+| skill.motionmaxxing | skill | active | `resources/refs/motionmaxxing/SKILL.md` | motionmaxxing |
 | skill.skill | skill | active | `resources/refs/transitions.dev/agent/skill/SKILL.md` | transitions-agent |
 | skill.refine-live | skill | active | `resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md` | refine-live |
 | skill.transitions-dev | skill | active | `resources/refs/transitions.dev/skills/transitions-dev/SKILL.md` | transitions-dev |

@@ -1,6 +1,7 @@
 ---
 title: "References: phân tích creator, hook, format"
 date: 2026-10-15
+updated: 2026-10-16
 type: reference-index
 tags: [references, hooks, creators]
 status: ready
@@ -15,3 +16,4 @@ Mỗi file: `YYYY-MM-DD_<nguon>.md` (chữ thường, gạch ngang, không dấu
 - Meme "bản chất": `research/trends/2026-10-15/audio/notes.md`.
 - Nghiên cứu viết kịch bản: `docs/research/scriptwriting-research-2026-10-15.md`, `docs/research/script-prompt-principles.md`.
 - Văn nói: `resources/vn-spoken/`.
+- Motion craft (motionmaxxing → Remotion): `research/references/motionmaxxing-notes.md`.

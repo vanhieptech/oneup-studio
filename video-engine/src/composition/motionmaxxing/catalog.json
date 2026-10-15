@@ -1,0 +1,28 @@
+{
+  "source": {
+    "name": "motionmaxxing",
+    "url": "https://github.com/Tejashmakwana/motionmaxxing",
+    "commit": "8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c",
+    "license": "Apache-2.0 (craft/docs/library). GSAP in upstream runtime is GreenSock Standard License — NOT redistributed here. Eases re-implemented as pure functions from measured curves in references/motion.md."
+  },
+  "usage": "import { mmxEase, mmxStyle } from '../composition/motionmaxxing/mmx'; use ease name on interpolate, or mmxStyle(slug, p) for element CSS. Tag motion-spec with (motionmaxxing). Prefer tdev-* for scene transitions when they already cover the beat.",
+  "eases": [
+    {"slug": "mmx-cruise", "en": "Linear cruise", "purposes": ["분위기", "데이터 증명"], "use": "drift, ken-burns creep, counters, ambient", "dur_f": 26, "curve": "linear"},
+    {"slug": "mmx-glide", "en": "Glide land (power~1.7)", "purposes": ["전환", "설명"], "use": "default x/y/scale/blur land", "dur_f": 10, "curve": "power1.7 out"},
+    {"slug": "mmx-soft-inout", "en": "Soft S-curve", "purposes": ["분위기"], "use": "opacity/blur/colour ramps", "dur_f": 9, "curve": "in-out"},
+    {"slug": "mmx-soft-land", "en": "Soft land (expo-ish)", "purposes": ["설명", "강조"], "use": "text rise, panel/board slide-in", "dur_f": 12, "curve": "power3 out"},
+    {"slug": "mmx-gentle-in", "en": "Gentle ease-in", "purposes": ["전환"], "use": "exit starts, fade-out lead", "dur_f": 9, "curve": "power2 in"},
+    {"slug": "mmx-snap-settle", "en": "Snap settle", "purposes": ["주목 끌기", "브랜딩"], "use": "hero/CTA entry; fast snap + soft tail", "dur_f": 11, "curve": "snap+tail"},
+    {"slug": "mmx-whip", "en": "Whip", "purposes": ["주목 끌기"], "use": "big fast move; ≤1 accent/clip", "dur_f": 13, "curve": "power2.5 out"},
+    {"slug": "mmx-accel-exit", "en": "Accel exit", "purposes": ["전환"], "use": "leave off-frame / thrown away", "dur_f": 13, "curve": "power2.6 in"},
+    {"slug": "mmx-crash-out", "en": "Crash out into cut", "purposes": ["전환"], "use": "exit ending at peak speed into hard cut", "dur_f": 17, "curve": "power4 in"},
+    {"slug": "mmx-pop-over", "en": "Late lean spring", "purposes": ["강조", "브랜딩"], "use": "ONE visible spring per film; peak 1.08 @ t0.72", "dur_f": 15, "curve": "overshoot late"},
+    {"slug": "mmx-crash-in", "en": "Crash-in overshoot", "purposes": ["주목 끌기"], "use": "hook word/logo from ~3.5x; punch past then settle", "dur_f": 10, "curve": "early overshoot"},
+    {"slug": "mmx-bounce-hard", "en": "Hard bounce (rare)", "purposes": ["강조"], "use": "meme slam only; <1% of pro moves", "dur_f": 22, "curve": "big overshoot"}
+  ],
+  "presets": [
+    {"slug": "mmx-oversize-land", "en": "Oversize arrival → 1", "purposes": ["주목 끌기", "강조"], "use": "hook stamp / thesis word from 2–3.5×", "ease": "mmx-crash-in|mmx-soft-land", "dur_f": 18},
+    {"slug": "mmx-cut-on-motion", "en": "Cut mid-move", "purposes": ["전환"], "use": "scene seam; next beat already travelling; no fade", "ease": null, "dur_f": 0},
+    {"slug": "mmx-no-dead-frame", "en": "Living hold", "purposes": ["분위기"], "use": "hold >3f with 1–3px/f drift or scale creep", "ease": "mmx-cruise", "dur_f": 26}
+  ]
+}
