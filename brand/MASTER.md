@@ -1,3 +1,12 @@
+---
+title: "OneUp Design System — MASTER"
+date: 2026-10-12
+type: brand
+tags: [brand]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # OneUp Design System — MASTER
 
 > Source of truth for all OneUp iOS UI. Phase UI-SPECs and `pages/*.md` may override per-screen.

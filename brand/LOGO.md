@@ -1,3 +1,12 @@
+---
+title: "OneUp Logo — source of truth"
+date: 2026-10-12
+type: brand
+tags: [brand]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # OneUp Logo — source of truth
 
 > Simple mark. Story: **listen · understand · +1 growth**.  

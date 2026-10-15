@@ -1,4 +1,7 @@
 ---
+title: "Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.shot-list
 type: shot-list
 status: draft

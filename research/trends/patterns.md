@@ -1,4 +1,7 @@
 ---
+title: "Hook & format pattern library (rule-47)"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: trends-patterns
 type: pattern-library
 status: living

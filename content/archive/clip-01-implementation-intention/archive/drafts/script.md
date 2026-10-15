@@ -1,4 +1,7 @@
 ---
+title: "@hi.oneup: Clip 01 script v2 (55–60s), chờ Hiệp duyệt"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.script
 type: script
 status: awaiting-approval

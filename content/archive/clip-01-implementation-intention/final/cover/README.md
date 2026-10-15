@@ -1,3 +1,12 @@
+---
+title: "clip-01 cover (DL-046, bản nháp, chờ Hiệp chọn)"
+date: 2026-10-14
+type: readme
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # clip-01 cover (DL-046, bản nháp, chờ Hiệp chọn)
 Template: `video-engine/src/composition/Cover.tsx` (Remotion still 1080×1920). Render:
 `npx remotion still src/index.ts Cover out.png --props="$(cat cover-a.props.json)"`

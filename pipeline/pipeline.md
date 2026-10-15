@@ -1,4 +1,7 @@
 ---
+title: "Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: pipeline
 type: workflow
 status: active

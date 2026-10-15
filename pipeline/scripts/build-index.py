@@ -13,7 +13,7 @@ def fm(p):
 docs = []
 for p in sorted(R.rglob('*.md')):
     rel = p.relative_to(R).as_posix()
-    if any(x in rel for x in ('node_modules', 'brand/omi-exports', '/.build/')) or rel.startswith(('brand/scripts',)): continue
+    if rel == 'INDEX.md' or any(x in rel for x in ('node_modules', 'brand/omi-exports', '/.build/')) or rel.startswith(('brand/scripts',)): continue
     d = fm(p)
     if d and ('id' in d or 'date' in d): docs.append({'id': d.get('id') or rel[:-3].replace('/', '.'), 'type': d.get('type'), 'status': d.get('status'), 'updated': d.get('updated') or d.get('date'), 'path': rel, 'title': d['title']})
     elif d and 'name' in d: docs.append({'id': 'skill.' + p.parent.name, 'type': 'skill', 'status': 'active', 'path': rel, 'title': d['name']})
@@ -45,7 +45,7 @@ assets = [
 idx = {'generated_by': 'pipeline/scripts/build-index.py', 'docs': docs, 'rules': rules, 'clips': clips, 'assets': assets}
 import sys
 J = json.dumps(idx, ensure_ascii=False, indent=1)
-L = ['---', 'id: index', 'type: index', 'status: generated', 'tags: [index, retrieval]', '---', '# INDEX (generated, do not hand-edit; run `python3 pipeline/scripts/build-index.py`)', '', '## Docs', '| id | type | status | path | title |', '|---|---|---|---|---|']
+L = ['---', 'title: "INDEX"', 'date: 2026-10-15', 'source: "pipeline/scripts/build-index.py"', 'id: index', 'type: index', 'status: generated', 'tags: [index, retrieval]', '---', '# INDEX (generated, do not hand-edit; run `python3 pipeline/scripts/build-index.py`)', '', '## Docs', '| id | type | status | path | title |', '|---|---|---|---|---|']
 L += [f"| {d['id']} | {d['type']} | {d['status']} | `{d['path']}` | {d['title']} |" for d in docs]
 L += ['', '## Rules (source: `rules/video-rules.md`)', '| id | title |', '|---|---|'] + [f"| {r['id']} | {r['title']} |" for r in rules]
 L += ['', '## Clips', '| id | theme | path | files |', '|---|---|---|---|'] + [f"| {c['id']} | {c['theme']} | `{c['path']}` | {', '.join(c['files'])} |" for c in clips]

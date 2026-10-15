@@ -1,4 +1,8 @@
 ---
+title: "sample-f5 (DL-035): same as sample-natural, voices = F5-TTS"
+date: 2026-10-13
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: sample-f5
 type: sample
 updated: 2026-10-13

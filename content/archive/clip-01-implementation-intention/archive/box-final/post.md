@@ -1,4 +1,7 @@
 ---
+title: "Gói đăng clip 01 (final demo)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.post
 type: post-package
 status: review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1

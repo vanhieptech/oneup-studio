@@ -1,4 +1,7 @@
 ---
+title: "Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: rules-audit-2026-10-13
 type: log
 status: done

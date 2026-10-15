@@ -1,4 +1,9 @@
 ---
+title: "Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7)"
+date: 2026-10-14
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: clip-02.trend-signals
 type: research
 updated: 2026-10-14

@@ -1,3 +1,12 @@
+---
+title: "Clip 02 — biến thể meme \"bản chất\" v8 (Hiệp duyệt 2026-10-15)"
+date: 2026-10-15
+type: script
+tags: [content]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip 02 — biến thể meme "bản chất" v8 (Hiệp duyệt 2026-10-15)
 Khuôn: research/trends/2026-10-15/audio/notes.md. Thầy Hiệp giảng (nghiêm, chậm), Hiệp-né chen ngang (lười, nhõng nhẽo). Nhại "hướng dẫn trì hoãn chuẩn bài" → cảnh 11–13 trả lời hook. 1 CTA. ~50s.
 

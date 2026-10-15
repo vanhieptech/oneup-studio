@@ -1,3 +1,12 @@
+---
+title: "Checklist đăng clip 02 (đánh dấu khi xong)"
+date: 2026-10-14
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Checklist đăng clip 02 (đánh dấu khi xong)
 - [ ] Hiệp đã xác nhận mục [CẦN HIỆP XÁC NHẬN] (script-final.md)
 - [ ] Upload `out/clip-02-final.mp4`, ảnh bìa `cover.png`

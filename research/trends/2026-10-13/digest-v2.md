@@ -1,4 +1,9 @@
 ---
+title: "Trend digest 2026-10-13 · v2 (chạy lại, nhiều nguồn)"
+type: research
+tags: [research]
+status: draft
+source: "pipeline/scripts/trend-collect.py v1 + X MCP extra"
 id: trends-2026-10-13-v2
 date: 2026-10-13
 version: 2

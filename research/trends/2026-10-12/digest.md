@@ -1,4 +1,7 @@
 ---
+title: "Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: trends-2026-10-12
 type: trend-digest
 status: done

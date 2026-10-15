@@ -1,4 +1,7 @@
 ---
+title: "Nguồn SFX (chỉ dùng CC0 hoặc Mixkit, theo luật 22)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: sfx-sources
 type: log
 status: living

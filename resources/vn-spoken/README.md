@@ -1,4 +1,9 @@
 ---
+title: "Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup"
+date: 2026-10-15
+tags: [resources]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: resources.vn-spoken
 type: resource
 updated: 2026-10-15

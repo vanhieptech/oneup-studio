@@ -1,4 +1,7 @@
 ---
+title: "Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: research.production-system
 type: research
 status: reference

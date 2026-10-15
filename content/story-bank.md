@@ -1,4 +1,7 @@
 ---
+title: "Story bank: chuyện thật của Hiệp (rule-41)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: story-bank
 type: plan
 status: needs-confirmation

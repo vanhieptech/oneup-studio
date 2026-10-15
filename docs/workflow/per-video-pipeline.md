@@ -1,4 +1,7 @@
 ---
+title: "Quy trình một video, từ ý tưởng tới sẵn sàng đăng"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: per-video-pipeline
 type: workflow
 status: active

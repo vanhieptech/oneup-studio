@@ -1,4 +1,7 @@
 ---
+title: "Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: research.video-gen
 type: research
 status: reference

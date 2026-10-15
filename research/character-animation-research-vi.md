@@ -1,4 +1,8 @@
 ---
+title: "Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026)"
+type: research
+status: draft
+source: "oneup-studio (soạn trong repo)"
 id: research-character-animation
 date: 2026-10-13
 tags: [character, animation, gsap, liquid]

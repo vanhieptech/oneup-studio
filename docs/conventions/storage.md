@@ -1,4 +1,7 @@
 ---
+title: "Quy ước lưu trữ (luật 65, L-034)"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: storage
 type: convention
 status: active

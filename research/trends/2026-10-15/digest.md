@@ -1,4 +1,6 @@
 ---
+title: "Trend digest 2026-10-15"
+source: "pipeline/scripts/trend-collect.py + X MCP extra"
 id: trends-2026-10-15
 type: trend-digest
 status: draft-needs-review

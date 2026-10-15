@@ -1,4 +1,7 @@
 ---
+title: "Clip 01 FINAL (demo / template tuần 5): \"Mai học\" → nếu… thì…"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.script-final
 type: script
 status: review (gate 2) · DEMO tuần 5

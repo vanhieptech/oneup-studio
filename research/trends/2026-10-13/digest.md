@@ -1,4 +1,7 @@
 ---
+title: "Trend digest: 2026-10-13 (skill v2, chạy tự động 08:05–08:30 giờ VN)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: trends-2026-10-13
 type: trend-digest
 status: done

@@ -1,4 +1,7 @@
 ---
+title: "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: refs
 type: reference
 status: active

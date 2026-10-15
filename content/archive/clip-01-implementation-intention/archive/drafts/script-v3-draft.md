@@ -1,4 +1,7 @@
 ---
+title: "Clip 01: script v3 DRAFT (kể chuyện, giọng Hiệp), đặt cạnh v2 và v2.1"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.script-v3-draft
 type: script
 status: draft

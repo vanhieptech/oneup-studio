@@ -1,4 +1,7 @@
 ---
+title: "Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: sample-full-w5
 type: sample
 status: internal (không đăng)

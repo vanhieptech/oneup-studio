@@ -1,4 +1,9 @@
 ---
+title: "clip-02 v10: Mê mà vẫn né (meme \"bản chất\")"
+date: 2026-10-15
+type: script
+tags: [content]
+source: "oneup-studio (soạn trong repo)"
 id: clip-02.script-final
 version: v10
 status: draft, chờ Hiệp duyệt (chưa lồng tiếng, chưa render)

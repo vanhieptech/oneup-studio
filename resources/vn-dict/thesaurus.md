@@ -1,4 +1,9 @@
 ---
+title: "Kho từ sắc (rule 58, DL-059)"
+date: 2026-10-15
+tags: [resources]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: vn-thesaurus
 type: resource
 updated: 2026-10-15

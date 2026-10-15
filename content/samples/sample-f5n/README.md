@@ -1,4 +1,8 @@
 ---
+title: "sample-f5n (DL-039): F5 v5 naturalness markup"
+date: 2026-10-14
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: sample-f5n
 type: sample
 updated: 2026-10-14

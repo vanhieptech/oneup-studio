@@ -1,4 +1,10 @@
 ---
+title: "Trend digest v3 (multi-source collector + learning loop)"
+date: 2026-10-12
+type: plan
+tags: [docs]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 name: Trend digest
 version: 3
 description: >-

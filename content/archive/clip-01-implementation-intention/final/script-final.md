@@ -1,4 +1,7 @@
 ---
+title: "Clip 01 FINAL v2: \"Mai học\" → nếu… thì… (bản đủ thông tin)"
+date: 2026-10-14
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.script-final
 type: script
 status: review (gate 1+2 gộp, DL-041) · tuần 1, không Omi

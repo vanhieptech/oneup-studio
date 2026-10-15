@@ -1,4 +1,7 @@
 ---
+title: "Characters (prototype v0.1)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: characters
 type: brand
 status: prototype

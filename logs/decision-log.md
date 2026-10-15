@@ -1,4 +1,7 @@
 ---
+title: "Nhật ký quyết định: @hi.oneup (luật 33)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: decision-log
 type: log
 status: living

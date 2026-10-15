@@ -1,4 +1,7 @@
 ---
+title: "@hi.oneup motion layer, based on gongnyang/awesome-ai-motion"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: research.motion-layer
 type: research
 status: reference

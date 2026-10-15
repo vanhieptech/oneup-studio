@@ -1,4 +1,7 @@
 ---
+title: "AGENTS.md: cách AI làm việc trong repo này"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active

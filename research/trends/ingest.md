@@ -1,4 +1,7 @@
 ---
+title: "Trend ingest: thư viện sống (rule-37, rule-39)"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living

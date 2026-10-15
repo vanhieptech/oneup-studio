@@ -1,4 +1,8 @@
 ---
+title: "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
+date: 2026-10-13
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: lessons
 type: log
 updated: 2026-10-13

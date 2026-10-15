@@ -1,3 +1,12 @@
+---
+title: "@hi.oneup — Video rules (v1, 2026-10-12)"
+date: 2026-10-15
+type: plan
+tags: [docs]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # @hi.oneup — Video rules (v1, 2026-10-12)
 
 Channel: https://www.tiktok.com/@hi.oneup

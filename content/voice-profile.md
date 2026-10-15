@@ -1,4 +1,7 @@
 ---
+title: "Voice profile: Hiệp (@hi.oneup)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: voice-profile
 type: profile
 status: confirmed

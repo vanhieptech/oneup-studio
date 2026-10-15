@@ -1,4 +1,7 @@
 ---
+title: "Gói đăng TikTok: clip 02 \"Lười? Không, đang né\""
+date: 2026-10-14
+source: "oneup-studio (soạn trong repo)"
 id: clip-02.post
 type: post-package
 template: post-package v1 (rule-53)

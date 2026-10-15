@@ -1,3 +1,12 @@
+---
+title: "OneUp Color — source of truth"
+date: 2026-10-12
+type: brand
+tags: [brand]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # OneUp Color — source of truth
 
 > **File này là nguồn màu.** `MASTER.md` §2 chỉ trỏ về đây.  

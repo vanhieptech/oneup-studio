@@ -1,4 +1,7 @@
 ---
+title: "Clip 01: Beat sheet v2 (55–60s, LIGHT), khớp với script.md"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.beat-sheet
 type: beat-sheet
 status: draft

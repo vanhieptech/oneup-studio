@@ -1,3 +1,12 @@
+---
+title: "Routine: @hi.oneup trend digest v3"
+date: 2026-10-15
+type: plan
+tags: [docs]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Routine: @hi.oneup trend digest v3
 Schedule: daily 07:55 (Asia/Saigon). On Sundays, after the daily run, also run the weekly synthesis.
 

@@ -1,4 +1,8 @@
 ---
+title: "Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup)"
+date: 2026-10-15
+tags: [docs]
+source: "oneup-studio (soạn trong repo)"
 id: research.scriptwriting-2026-10-15
 type: research
 status: chờ Hiệp duyệt trước khi viết lại clip-02

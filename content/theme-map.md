@@ -1,4 +1,7 @@
 ---
+title: "Theme map — @hi.oneup (LIGHT / DARK theo tone)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: theme-map
 type: plan
 status: active

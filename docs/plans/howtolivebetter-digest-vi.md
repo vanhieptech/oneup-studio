@@ -1,3 +1,12 @@
+---
+title: "Digest vận hành: HowToLiveBetter → trợ lý phát triển cá nhân cho Văn Hiệp Lê"
+date: 2026-10-15
+type: plan
+tags: [docs]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Digest vận hành: HowToLiveBetter → trợ lý phát triển cá nhân cho Văn Hiệp Lê
 
 > **Nguồn:** 《高性价比人生指南》 / HowToLiveBetter  

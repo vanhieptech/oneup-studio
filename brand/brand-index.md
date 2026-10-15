@@ -1,4 +1,7 @@
 ---
+title: "@hi.oneup — Brand index cho video"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: brand-index
 type: brand
 status: active

@@ -1,4 +1,7 @@
 ---
+title: "Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: research.comic-system
 type: research
 status: reference

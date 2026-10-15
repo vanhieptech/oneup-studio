@@ -1,4 +1,7 @@
 ---
+title: "Audit: clip-01 explainer vs HyperFrames skills (DL-032)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: hyperframes-audit-2026-10-13
 type: audit
 status: partial (sample fixed, clip-01 port pending)

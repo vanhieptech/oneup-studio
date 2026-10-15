@@ -1,4 +1,7 @@
 ---
+title: "Đánh giá microsoft/skillopt (12/10/2026)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: research.skillopt
 type: research
 status: reference

@@ -1,4 +1,9 @@
 ---
+title: "Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi"
+date: 2026-10-15
+tags: [resources]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: resources.vn-spoken.phrase-bank
 type: resource
 updated: 2026-10-15

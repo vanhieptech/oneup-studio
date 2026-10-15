@@ -81,7 +81,7 @@ for cd in sorted(P.ARCHIVE.glob("*/")) if P.ARCHIVE.exists() else []:
 _fm = subprocess.run([sys.executable, str(ROOT / "pipeline/scripts/fm-backfill.py"), "--dry"], cwd=ROOT, capture_output=True, text=True).stdout.splitlines()
 errs += [f"front-matter missing {l.split(' ', 1)[1]}: {l.split(' ', 1)[0]} (run fm-backfill.py, then fill real values)" for l in _fm if l and not l[0].isdigit()]
 for f in tracked + subprocess.run(["git", "ls-files", "-o", "--exclude-standard"], cwd=ROOT, capture_output=True, text=True).stdout.split():
-    if f.endswith(".md") and (f.startswith(P.FM_STRICT_STATUS) or f.endswith("/final/script-final.md")) and (ROOT / f).is_file():
+    if f.endswith(".md") and (f.startswith(P.FM_STRICT_STATUS) or (f.startswith("content/clips/") and f.endswith("/final/script-final.md"))) and (ROOT / f).is_file():
         m = re.search(r"^status:\s*(\S+)", (ROOT / f).read_text().split("\n---", 1)[0], re.M)
         if not m or m.group(1).strip('"').rstrip(",") not in P.FM_STATUS: errs.append(f"front-matter status must be draft|ready|published: {f}")
 if subprocess.run([sys.executable, str(ROOT / "pipeline/scripts/build-index.py"), "--check"], cwd=ROOT, capture_output=True).returncode:

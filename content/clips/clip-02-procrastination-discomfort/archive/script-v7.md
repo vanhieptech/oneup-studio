@@ -1,4 +1,7 @@
 ---
+title: "Clip 02 · GATE 1: \"Mình lười quá\" → trì hoãn là né cảm giác khó chịu"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: clip-02.script-final
 type: script
 status: kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng

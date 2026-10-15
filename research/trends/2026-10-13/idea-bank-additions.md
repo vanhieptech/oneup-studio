@@ -1,4 +1,7 @@
 ---
+title: "Dòng mới cho content/idea-bank.md (sync-trends.sh chưa tự gộp file này)"
+date: 2026-10-13
+source: "oneup-studio (soạn trong repo)"
 id: trends-2026-10-13-idea-bank-additions
 type: plan
 status: pending-merge

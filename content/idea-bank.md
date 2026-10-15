@@ -1,4 +1,7 @@
 ---
+title: "Idea bank"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active

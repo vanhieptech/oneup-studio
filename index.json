@@ -10,12 +10,12 @@
    "title": "AGENTS.md: cách AI làm việc trong repo này"
   },
   {
-   "id": "index",
-   "type": "index",
-   "status": "generated",
-   "updated": null,
-   "path": "INDEX.md",
-   "title": "INDEX (generated, do not hand-edit; run `python3 pipeline/scripts/build-index.py`)"
+   "id": "guide",
+   "type": "guide",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "GUIDE.md",
+   "title": "GUIDE: đọc gì trước khi làm"
   },
   {
    "id": "repo-readme",
@@ -32,6 +32,30 @@
    "updated": "2026-10-12",
    "path": "assets/sfx/SOURCES.md",
    "title": "Nguồn SFX (chỉ dùng CC0 hoặc Mixkit, theo luật 22)"
+  },
+  {
+   "id": "brand.COLOR",
+   "type": "brand",
+   "status": "ready",
+   "updated": "2026-10-12",
+   "path": "brand/COLOR.md",
+   "title": "OneUp Color — source of truth"
+  },
+  {
+   "id": "brand.LOGO",
+   "type": "brand",
+   "status": "ready",
+   "updated": "2026-10-12",
+   "path": "brand/LOGO.md",
+   "title": "OneUp Logo — source of truth"
+  },
+  {
+   "id": "brand.MASTER",
+   "type": "brand",
+   "status": "ready",
+   "updated": "2026-10-12",
+   "path": "brand/MASTER.md",
+   "title": "OneUp Design System — MASTER"
   },
   {
    "id": "brand-index",
@@ -106,6 +130,22 @@
    "title": "Clip 01: Shot list v2 (LIGHT, 55–60s), khớp với script.md"
   },
   {
+   "id": "content.archive.clip-01-implementation-intention.final.cover.README",
+   "type": "readme",
+   "status": "ready",
+   "updated": "2026-10-14",
+   "path": "content/archive/clip-01-implementation-intention/final/cover/README.md",
+   "title": "clip-01 cover (DL-046, bản nháp, chờ Hiệp chọn)"
+  },
+  {
+   "id": "content.archive.clip-01-implementation-intention.final.post-checklist",
+   "type": "doc",
+   "status": "ready",
+   "updated": "2026-10-14",
+   "path": "content/archive/clip-01-implementation-intention/final/post-checklist.md",
+   "title": "Checklist đăng clip 01 (đánh dấu khi xong)"
+  },
+  {
    "id": "clip-01.post",
    "type": "post-package",
    "status": "sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md",
@@ -122,6 +162,30 @@
    "title": "Clip 01 FINAL v2: \"Mai học\" → nếu… thì… (bản đủ thông tin)"
   },
   {
+   "id": "clip-02.script-final",
+   "type": "script",
+   "status": "kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng",
+   "updated": "2026-10-15",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v7.md",
+   "title": "Clip 02 · GATE 1: \"Mình lười quá\" → trì hoãn là né cảm giác khó chịu"
+  },
+  {
+   "id": "content.clips.clip-02-procrastination-discomfort.archive.script-v8-meme",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "content/clips/clip-02-procrastination-discomfort/archive/script-v8-meme.md",
+   "title": "Clip 02 — biến thể meme \"bản chất\" v8 (Hiệp duyệt 2026-10-15)"
+  },
+  {
+   "id": "content.clips.clip-02-procrastination-discomfort.final.post-checklist",
+   "type": "doc",
+   "status": "ready",
+   "updated": "2026-10-14",
+   "path": "content/clips/clip-02-procrastination-discomfort/final/post-checklist.md",
+   "title": "Checklist đăng clip 02 (đánh dấu khi xong)"
+  },
+  {
    "id": "clip-02.post",
    "type": "post-package",
    "status": "NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build)",
@@ -132,15 +196,15 @@
   {
    "id": "clip-02.script-final",
    "type": "script",
-   "status": "kịch bản v7 (DL-065), chờ Hiệp duyệt, chưa thu giọng",
+   "status": "draft, chờ Hiệp duyệt (chưa lồng tiếng, chưa render)",
    "updated": "2026-10-15",
    "path": "content/clips/clip-02-procrastination-discomfort/final/script-final.md",
-   "title": "Clip 02 · GATE 1: \"Mình lười quá\" → trì hoãn là né cảm giác khó chịu"
+   "title": "clip-02 v10: Mê mà vẫn né (meme \"bản chất\")"
   },
   {
    "id": "clip-02.trend-signals",
    "type": "research",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-14",
    "path": "content/clips/clip-02-procrastination-discomfort/final/trend-signals.md",
    "title": "Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7)"
@@ -154,9 +218,17 @@
    "title": "Idea bank"
   },
   {
+   "id": "published-log",
+   "type": "log",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "content/published/README.md",
+   "title": "Published log: clip đã đăng"
+  },
+  {
    "id": "sample-f5",
    "type": "sample",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-13",
    "path": "content/samples/sample-f5/README.md",
    "title": "sample-f5 (DL-035): same as sample-natural, voices = F5-TTS"
@@ -164,7 +236,7 @@
   {
    "id": "sample-f5n",
    "type": "sample",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-14",
    "path": "content/samples/sample-f5n/README.md",
    "title": "sample-f5n (DL-039): F5 v5 naturalness markup"
@@ -180,10 +252,18 @@
   {
    "id": "sample-natural",
    "type": "sample",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-13",
    "path": "content/samples/sample-natural/README.md",
    "title": "sample-natural (DL-033): natural-prosody voice + lint-clean HyperFrames explainer"
+  },
+  {
+   "id": "content.samples.sample-natural.voice-ab-metrics",
+   "type": "doc",
+   "status": "ready",
+   "updated": "2026-10-13",
+   "path": "content/samples/sample-natural/voice-ab-metrics.md",
+   "title": "voice-ab-metrics"
   },
   {
    "id": "story-bank",
@@ -226,25 +306,84 @@
    "title": "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
   },
   {
-   "id": "skill.plans",
-   "type": "skill",
-   "status": "active",
+   "id": "docs.plans.hi-oneup-video-rules.v1.bak",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "docs/plans/hi-oneup-video-rules.v1.bak.md",
+   "title": "@hi.oneup — Video rules (v1, 2026-10-12)"
+  },
+  {
+   "id": "docs.plans.howtolivebetter-digest-vi",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "docs/plans/howtolivebetter-digest-vi.md",
+   "title": "Digest vận hành: HowToLiveBetter → trợ lý phát triển cá nhân cho Văn Hiệp Lê"
+  },
+  {
+   "id": "docs.plans.make-video-skill",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-15",
    "path": "docs/plans/make-video-skill.md",
-   "title": "Make video (@hi.oneup end-to-end)"
+   "title": "Make video (one workflow, rule-48)"
   },
   {
-   "id": "skill.plans",
-   "type": "skill",
-   "status": "active",
+   "id": "docs.plans.oneup-video-gen-research-vi",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-12",
+   "path": "docs/plans/oneup-video-gen-research-vi.md",
+   "title": "Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup"
+  },
+  {
+   "id": "docs.plans.trend-digest-skill-v2",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-12",
    "path": "docs/plans/trend-digest-skill-v2.md",
-   "title": "Trend digest"
+   "title": "Trend digest v2 (learning loop)"
   },
   {
-   "id": "skill.plans",
-   "type": "skill",
-   "status": "active",
+   "id": "docs.plans.trend-digest-skill-v3",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-12",
    "path": "docs/plans/trend-digest-skill-v3.md",
-   "title": "Trend digest"
+   "title": "Trend digest v3 (multi-source collector + learning loop)"
+  },
+  {
+   "id": "docs.plans.trend-routine-prompt-v2",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "docs/plans/trend-routine-prompt-v2.md",
+   "title": "Routine: @hi.oneup trend digest v2"
+  },
+  {
+   "id": "docs.plans.trend-routine-prompt-v3",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "docs/plans/trend-routine-prompt-v3.md",
+   "title": "Routine: @hi.oneup trend digest v3"
+  },
+  {
+   "id": "docs.plans.trend-routine-prompt-v4",
+   "type": "plan",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "docs/plans/trend-routine-prompt-v4.md",
+   "title": "Routine: @hi.oneup trend digest v4"
+  },
+  {
+   "id": "prompt.content-bot",
+   "type": "prompt",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "docs/prompts/content-bot-prompt.md",
+   "title": "Prompt bot nội dung OneUp (Hiệp gửi)"
   },
   {
    "id": "research.script-prompt-principles",
@@ -266,7 +405,7 @@
    "id": "per-video-pipeline",
    "type": "workflow",
    "status": "active",
-   "updated": null,
+   "updated": "2026-10-15",
    "path": "docs/workflow/per-video-pipeline.md",
    "title": "Quy trình một video, từ ý tưởng tới sẵn sàng đăng"
   },
@@ -297,7 +436,7 @@
   {
    "id": "lessons",
    "type": "log",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-13",
    "path": "logs/lessons.md",
    "title": "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
@@ -311,6 +450,22 @@
    "title": "Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0)"
   },
   {
+   "id": "media.README",
+   "type": "readme",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "media/README.md",
+   "title": "README"
+  },
+  {
+   "id": "pipeline.characters-v2.README",
+   "type": "readme",
+   "status": "ready",
+   "updated": "2026-10-13",
+   "path": "pipeline/characters-v2/README.md",
+   "title": "Character rig v2 (chibi, liquid)"
+  },
+  {
    "id": "pipeline",
    "type": "workflow",
    "status": "active",
@@ -320,9 +475,9 @@
   },
   {
    "id": "research-character-animation",
-   "type": null,
-   "status": null,
-   "updated": null,
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-13",
    "path": "research/character-animation-research-vi.md",
    "title": "Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026)"
   },
@@ -344,9 +499,9 @@
   },
   {
    "id": "research-omi-voice-tts",
-   "type": null,
+   "type": "research",
    "status": "decided (Hiệp chọn A ngày 13/10/2026, DL-025, rule-46)",
-   "updated": null,
+   "updated": "2026-10-13",
    "path": "research/omi-voice-tts-research-vi.md",
    "title": "Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026)"
   },
@@ -367,6 +522,14 @@
    "title": "Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất"
   },
   {
+   "id": "references",
+   "type": "reference-index",
+   "status": "ready",
+   "updated": "2026-10-15",
+   "path": "research/references/README.md",
+   "title": "References: phân tích creator, hook, format"
+  },
+  {
    "id": "research.skillopt",
    "type": "research",
    "status": "reference",
@@ -384,9 +547,9 @@
   },
   {
    "id": "trends-2026-10-13-v2",
-   "type": null,
-   "status": null,
-   "updated": null,
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-13",
    "path": "research/trends/2026-10-13/digest-v2.md",
    "title": "Trend digest 2026-10-13 · v2 (chạy lại, nhiều nguồn)"
   },
@@ -431,6 +594,14 @@
    "title": "Hook & format pattern library (rule-47)"
   },
   {
+   "id": "research.trends.2026-10-15.audio.notes",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-15",
+   "path": "research/trends/2026-10-15/audio/notes.md",
+   "title": "Trend audio \"Bản chất của …\" (Hiệp gửi 15/10, 40,15s)"
+  },
+  {
    "id": "trends-2026-10-15",
    "type": "trend-digest",
    "status": "draft-needs-review",
@@ -471,9 +642,51 @@
    "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
   },
   {
+   "id": "skill.awesome-ai-motion",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/awesome-ai-motion/SKILL.md",
+   "title": "awesome-ai-motion"
+  },
+  {
+   "id": "skill.skill",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/agent/skill/SKILL.md",
+   "title": "transitions-agent"
+  },
+  {
+   "id": "skill.refine-live",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md",
+   "title": "refine-live"
+  },
+  {
+   "id": "skill.transitions-dev",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-dev/SKILL.md",
+   "title": "transitions-dev"
+  },
+  {
+   "id": "skill.transitions-polish",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-polish/SKILL.md",
+   "title": "transitions-polish"
+  },
+  {
+   "id": "skill.transitions-ui-generation",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md",
+   "title": "transitions-ui-generation"
+  },
+  {
    "id": "vn-thesaurus",
    "type": "resource",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-15",
    "path": "resources/vn-dict/thesaurus.md",
    "title": "Kho từ sắc (rule 58, DL-059)"
@@ -481,7 +694,7 @@
   {
    "id": "resources.vn-spoken",
    "type": "resource",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-15",
    "path": "resources/vn-spoken/README.md",
    "title": "Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup"
@@ -489,7 +702,7 @@
   {
    "id": "resources.vn-spoken.phrase-bank",
    "type": "resource",
-   "status": null,
+   "status": "ready",
    "updated": "2026-10-15",
    "path": "resources/vn-spoken/phrase-bank.md",
    "title": "Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi"
@@ -1185,6 +1398,14 @@
    "title": "Gói đăng TikTok: <clip-NN \"<tên>\">"
   },
   {
+   "id": "clip-NN.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "YYYY-MM-DD",
+   "path": "templates/script.md",
+   "title": "<Clip NN vX: tiêu đề>"
+  },
+  {
    "id": "video-engine",
    "type": "guide",
    "status": "active",
@@ -1526,6 +1747,7 @@
    "path": "content/clips/clip-02-procrastination-discomfort",
    "theme": null,
    "files": [
+    "archive",
     "final"
    ]
   }

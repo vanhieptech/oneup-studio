@@ -1,4 +1,8 @@
 ---
+title: "sample-natural (DL-033): natural-prosody voice + lint-clean HyperFrames explainer"
+date: 2026-10-13
+status: ready
+source: "oneup-studio (soạn trong repo)"
 id: sample-natural
 type: sample
 updated: 2026-10-13

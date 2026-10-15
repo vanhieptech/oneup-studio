@@ -1,4 +1,10 @@
 ---
+title: "Make video (one workflow, rule-48)"
+date: 2026-10-15
+type: plan
+tags: [docs]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 name: Make video (@hi.oneup end-to-end)
 description: >-
   Use whenever Hiệp asks for a clip ("Làm clip tiếp theo", "Làm clip về <chủ đề/trend>",

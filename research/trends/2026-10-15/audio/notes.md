@@ -1,3 +1,12 @@
+---
+title: "Trend audio \"Bản chất của …\" (Hiệp gửi 15/10, 40,15s)"
+date: 2026-10-15
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Trend audio "Bản chất của …" (Hiệp gửi 15/10, 40,15s)
 File: `ban-chat-dao-dong-dieu-hoa.mp3`. STT: faster-whisper medium, vi, word timestamps → `transcript-medium.txt`.
 Chưa nghe tai người; chỗ STT nghi ngờ đánh dấu (?).

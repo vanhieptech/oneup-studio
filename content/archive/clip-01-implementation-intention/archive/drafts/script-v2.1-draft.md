@@ -1,4 +1,7 @@
 ---
+title: "Clip 01: script v2.1 DRAFT (humanizer + voice profile), đặt cạnh v2"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: clip-01.script-v2.1-draft
 type: script
 status: draft

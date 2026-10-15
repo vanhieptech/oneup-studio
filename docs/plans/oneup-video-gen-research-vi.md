@@ -1,3 +1,12 @@
+---
+title: "Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup"
+date: 2026-10-12
+type: plan
+tags: [docs]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup
 
 > Kênh TikTok: [@hi.oneup](https://www.tiktok.com/@hi.oneup)

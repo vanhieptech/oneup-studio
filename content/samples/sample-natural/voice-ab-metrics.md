@@ -1,3 +1,12 @@
+---
+title: "voice-ab-metrics"
+date: 2026-10-13
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 | line | ver | dur s | syl/s | F0 std (st) | F0 range p5–p95 (st) | pauses ≥120ms | mean pause ms | STT sim | STT sim toneless |
 |--|--|--|--|--|--|--|--|--|--|
 | L1 | old | 2.28 | 4.39 | 4.52 | 14.83 | 2 | 145 | 0.9 | 0.9 |

@@ -1,4 +1,7 @@
 ---
+title: "oneup-studio: hệ thống nội dung @hi.oneup"
+date: 2026-10-15
+source: "oneup-studio (soạn trong repo)"
 id: repo-readme
 type: readme
 status: active

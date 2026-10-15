@@ -1,4 +1,7 @@
 ---
+title: "Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026)"
+type: research
+source: "oneup-studio (soạn trong repo)"
 id: research-omi-voice-tts
 date: 2026-10-13
 tags: [omi, voice, tts]

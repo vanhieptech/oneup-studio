@@ -1,4 +1,7 @@
 ---
+title: "Effects log"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: effects-log
 type: log
 status: living

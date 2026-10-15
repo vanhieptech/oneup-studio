@@ -1,4 +1,6 @@
 ---
+title: "Trend digest 2026-10-14"
+source: "pipeline/scripts/trend-collect.py + X MCP extra + Wikipedia fallback (ngày 12/10)"
 id: trends-2026-10-14
 type: trend-digest
 status: draft-needs-review

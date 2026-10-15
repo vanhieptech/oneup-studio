@@ -1,4 +1,8 @@
 ---
+title: "Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s"
+date: 2026-10-15
+tags: [docs]
+source: "oneup-studio (soạn trong repo)"
 id: research.script-prompt-principles
 type: research
 status: Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7

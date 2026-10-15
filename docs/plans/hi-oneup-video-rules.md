@@ -1,4 +1,7 @@
 ---
+title: "@hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)"
+date: 2026-10-12
+source: "oneup-studio (soạn trong repo)"
 id: rules
 type: rules
 status: active
