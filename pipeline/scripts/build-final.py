@@ -54,6 +54,10 @@ def voice_key(preset, emotion, text, take=1):
 def stage_voice(spec):
     prof = profiles(); jobs = []; pjobs = []
     for _, _, l in all_lines(spec):
+        if l.get("voice_file"):  # pre-voiced take (picked by STT outside the pipeline); <key>.wav/.json under public/voice
+            l["_key"] = os.path.splitext(os.path.basename(l["voice_file"]))[0]
+            if not os.path.exists(os.path.join(VE, "public/voice", l["_key"] + ".wav")): raise SystemExit(f"missing voice_file {l['voice_file']} (see media/MANIFEST.json)")
+            continue
         pv = prof[l["speaker"]].get("voice") or {}
         if pv.get("engine") == "f5-tts" and not l.get("phrases"):
             l["phrases"] = [{"t": spoken(l), "gap": 0}]

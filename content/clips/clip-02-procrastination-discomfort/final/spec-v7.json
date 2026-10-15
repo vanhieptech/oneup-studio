@@ -1,0 +1,1019 @@
+{
+  "id": "clip-02-final",
+  "clip": "clip-02",
+  "title": "Trì hoãn = né cảm giác khó chịu, không phải lười (Steel 2007)",
+  "week": 1,
+  "theme": "dark",
+  "pillar": "1 Làm ít, xong nhiều",
+  "story": "S-02 Omi feature (Hiệp xác nhận 14/10, DL-047)",
+  "trend": "POV (TikTok #1 format tuần 5–11/10, top 36,1M, postdom) + meme ‘dự án ma’ (YT 23k); bỏ góc ‘không phải lười’ (bão hòa, digest 14–15/10)",
+  "revisions": [
+    {
+      "date": "2026-10-15",
+      "dl": "DL-059",
+      "note": "rewrite: one continuous story with connectors, precise vocabulary, POV hook"
+    },
+    {
+      "date": "2026-10-14",
+      "dl": "DL-044",
+      "note": "gate-1 draft: info-complete script + rule-52 effects table + template-A cover (rule 54)"
+    },
+    {
+      "v": 3,
+      "date": "2026-10-15",
+      "dl": "DL-061",
+      "note": "văn nói, xen hành động + cảm xúc + thoại mỗi beat (luật 60, L-024)"
+    },
+    {
+      "v": 4,
+      "date": "2026-10-15",
+      "dl": "DL-062",
+      "note": "hook mới do Hiệp đưa; thoại không kể lại hình (luật 61, L-025), ≤120 chữ"
+    },
+    {
+      "v": 5,
+      "date": "2026-10-15",
+      "dl": "DL-063",
+      "note": "v5: throughline ABT, 6 nhịp, callback clip-01 (nếu–thì), nối theo ngữ cảnh, 'Ghét bản thân mình ghê' (luật 62, L-030)"
+    },
+    {
+      "v": 7,
+      "date": "2026-10-15",
+      "dl": "DL-065",
+      "note": "v7 giọng kể chuyện với bạn (rule 64): direct hook, hook→intro→body→summary→1 CTA, {nhấn:} mỗi câu"
+    }
+  ],
+  "transition_sfx": {
+    "part": "whoosh-soft",
+    "scene": "swish"
+  },
+  "cover": {
+    "direction": "a",
+    "theme": "dark",
+    "series": "Làm ít, xong nhiều",
+    "ep": 2,
+    "hero": [
+      "LƯỜI?",
+      "ĐANG NÉ!"
+    ],
+    "accent": 1,
+    "strike": 0,
+    "expression": "sad",
+    "action": "reacting",
+    "emote": "!",
+    "tilt": -5
+  },
+  "cover_options": [
+    {
+      "hero": [
+        "LƯỜI?",
+        "ĐANG NÉ!"
+      ],
+      "picked": true
+    },
+    {
+      "hero": [
+        "HOÃN MÃI",
+        "VÌ SỢ"
+      ]
+    },
+    {
+      "hero": [
+        "TỰ MẮNG",
+        "VÔ ÍCH"
+      ]
+    }
+  ],
+  "hook": {
+    "text": "OMI · DỜI. DỜI. DỜI.",
+    "scenes": [
+      "b01",
+      "b01b"
+    ],
+    "format": "direct hook: tên việc cụ thể (Omi) + mâu thuẫn thích↔né (rule 64, DL-065)"
+  },
+  "engagement": [
+    {
+      "type": "relatable-question",
+      "beat": "e01",
+      "text": "Nghe quen hông?"
+    },
+    {
+      "type": "comment-challenge",
+      "beat": "b12",
+      "text": "Comment một chữ."
+    },
+    {
+      "type": "loop",
+      "beat": "b12",
+      "text": "Mở Omi",
+      "hook_word": "Omi"
+    }
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "engine": "remotion",
+      "transitionOut": "slideleft",
+      "scenes": [
+        {
+          "id": "b01",
+          "beat": "clip-02.b01",
+          "part": "hook",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.16,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.74,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "sad"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Omi á, mình dời hoài luôn!",
+              "en": "Omi? I keep pushing it back!",
+              "hl": [
+                2,
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Ô mi á, mình dời {nhấn: hoài} luôn!"
+                }
+              ],
+              "takes": 6,
+              "speed": 1.18,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true,
+              "emph": "markup"
+            }
+          ],
+          "fx": {
+            "visual": "Hook cut 1: push mạnh vào laptop, lịch xé 2 tờ, dấu đỏ DỜI đóng",
+            "word": "dời"
+          },
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "Omi"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.7,
+              "word": "dời hoài"
+            }
+          ],
+          "narration": "OMI · DỜI. DỜI. DỜI.",
+          "props": [
+            {
+              "kind": "laptop",
+              "x": 330,
+              "y": 1330,
+              "s": 0.8,
+              "text": "Omi",
+              "sub": "0 dòng code",
+              "stamp": "DỜI",
+              "at": 0.0
+            },
+            {
+              "kind": "calendar",
+              "x": 360,
+              "y": 1010,
+              "s": 0.8,
+              "rot": -4,
+              "pages": [
+                "HÔM NAY",
+                "MAI",
+                "MAI NỮA"
+              ],
+              "tearAt": [
+                0.0,
+                0.8
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Laptop 'Omi · 0 dòng code'; lịch HÔM NAY → MAI xé phăng; dấu đỏ DỜI đóng xuống",
+            "react": "ngán ngẩm"
+          },
+          "link": "hook: mâu thuẫn mê ↔ dời (open loop)"
+        },
+        {
+          "id": "b01b",
+          "beat": "clip-02.b01",
+          "part": "hook",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.12,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.86,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "sad"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Thích nhất, mà sao né hoài vậy?",
+              "en": "My favourite thing, so why do I keep dodging it?",
+              "hl": [
+                7,
+                8
+              ],
+              "phrases": [
+                {
+                  "t": "Thích {nhấn: nhất}, mà sao né hoài vậy?"
+                }
+              ],
+              "takes": 6,
+              "speed": 1.18,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true,
+              "set": {
+                "hiep": {
+                  "expression": "despair"
+                }
+              },
+              "emph": "markup"
+            }
+          ],
+          "fx": {
+            "visual": "Hook cut 2: vignette tối, dấu hỏi to đập xuống rung",
+            "word": "né hoài"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.4,
+              "word": "né hoài"
+            }
+          ],
+          "props": [
+            {
+              "kind": "vignette",
+              "at": 0.0,
+              "dark": 0.6
+            },
+            {
+              "kind": "words",
+              "x": 540,
+              "y": 300,
+              "s": 1.3,
+              "words": [
+                "DỜI LẦN 5"
+              ],
+              "dropAt": [
+                -0.06
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Hiệp đập trán xuống bàn cái bịch, nền tối dần, dấu ? khổng lồ rơi rung",
+            "react": "tuyệt vọng, hỏi trời"
+          },
+          "link": "câu hỏi hook, trả lời ở b11"
+        },
+        {
+          "id": "b01c",
+          "beat": "clip-02.b01",
+          "part": "hook",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.12,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "typing",
+              "expression": "surprised"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "confused",
+              "text": "Clip trước có câu nếu–thì rồi. Vậy mà chín giờ, vẫn lướt.",
+              "en": "Last clip I had my if-then. Still, 9 PM, I'm scrolling.",
+              "hl": [
+                9,
+                9
+              ],
+              "phrases": [
+                {
+                  "t": "Clíp trước có câu {nhấn: nếu thì} rồi. Vậy mà chín giờ, vẫn {nhấn: lướt}."
+                }
+              ],
+              "takes": 6,
+              "speed": 1.15,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true,
+              "emph": "markup"
+            }
+          ],
+          "fx": {
+            "visual": "Callback clip-01: giấy nhớ nếu–thì, kim chạm 9:00, ngón cái quẹt TikTok",
+            "word": "nếu–thì"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 0.3,
+              "word": "nếu–thì"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 1.6,
+              "word": "chín giờ"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 760,
+              "y": 420,
+              "s": 0.8,
+              "rot": 4,
+              "text": "9:00 PM",
+              "at": 0.0
+            },
+            {
+              "kind": "sign",
+              "x": 330,
+              "y": 930,
+              "s": 0.7,
+              "rot": -4,
+              "text": "NẾU 9h → THÌ OMI",
+              "at": 0.2
+            },
+            {
+              "kind": "phone",
+              "x": 800,
+              "y": 1120,
+              "s": 0.95,
+              "rot": 8,
+              "at": 1.6,
+              "text": "TikTok"
+            }
+          ],
+          "stage": {
+            "action": "Giấy nhớ 'NẾU 9h → THÌ OMI' dán mép laptop; kim chạm 9:00 PM; ngón cái quẹt màn hình TikTok",
+            "react": "cười trừ, chột dạ"
+          },
+          "link": "callback clip-01: công cụ đã có mà vẫn hỏng → leo thang mâu thuẫn"
+        },
+        {
+          "id": "b02",
+          "beat": "clip-02.b02",
+          "part": "hook",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.42,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "sad"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "angry",
+              "text": "Đồ lười! Ghét bản thân mình ghê! Chửi xong, mai còn ngán hơn.",
+              "en": "Lazy bum! I hate myself! And tomorrow I dread it even more.",
+              "hl": [
+                0,
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "Đồ {nhấn: lười}! Ghét bản thân mình {nhấn: ghê}! Chửi xong, mai còn {nhấn: ngán} hơn."
+                }
+              ],
+              "takes": 6,
+              "speed": 1.18,
+              "gap_max": 0.1,
+              "energetic": true,
+              "whole": true,
+              "emph_db": 3.5,
+              "emph": "markup"
+            }
+          ],
+          "fx": {
+            "visual": "Comic: chữ TỘI LỖI / LƯỜI rơi đè đầu; laptop hoá cục đá",
+            "word": "ngán"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "Đồ lười"
+            },
+            {
+              "name": "rise",
+              "atLine": 0,
+              "offset": 2.2,
+              "word": "ngán hơn"
+            }
+          ],
+          "props": [
+            {
+              "kind": "vignette",
+              "at": 0.0,
+              "dark": 0.4
+            },
+            {
+              "kind": "cloud",
+              "x": 360,
+              "y": 300,
+              "s": 0.7,
+              "at": 0.0,
+              "words": [
+                "TỘI LỖI",
+                "LƯỜI"
+              ],
+              "dropAt": [
+                0.2,
+                0.9
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Úp mặt, chữ TỘI LỖI rồi LƯỜI rơi đè đầu; sáng hôm sau laptop hoá cục đá, đẩy không nhích",
+            "react": "giận mình, rồi nặng nề"
+          },
+          "link": "tự chửi = cách sửa sai, phản tác dụng → buộc phải tìm nguyên nhân thật"
+        },
+        {
+          "id": "b03",
+          "beat": "clip-02.b03",
+          "part": "turn",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "iris",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "thinking",
+              "expression": "surprised"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "surprised",
+              "text": "Bữa nọ mới bắt được: mở file thấy rối nùi, là tay đi kiếm điện thoại.",
+              "en": "Then I caught it: file opens, it's a mess, and my hand goes for the phone.",
+              "hl": [
+                2,
+                2
+              ],
+              "phrases": [
+                {
+                  "t": "Bữa nọ mới {nhấn: bắt được}: mở phai thấy rối nùi, là tay đi kiếm điện thoại."
+                }
+              ],
+              "set": {
+                "hiep": {
+                  "action": "reacting"
+                }
+              }
+            }
+          ],
+          "fx": {
+            "visual": "Comic slow-mo: cuộn dây rối bung ra, Hiệp chụp cổ tay chính mình, vòng tròn đỏ khoanh lại",
+            "word": "rối nùi"
+          },
+          "sfx": [
+            {
+              "name": "pen",
+              "atLine": 0,
+              "offset": 0.4,
+              "word": "bắt được"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 1.4,
+              "word": "rối nùi"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 300,
+              "y": 930,
+              "s": 0.72,
+              "rot": -5,
+              "text": "RỐI + SỢ XẤU",
+              "at": 1.4
+            }
+          ],
+          "stage": {
+            "action": "Quay chậm: editor bật lên thành cuộn dây rối; bàn tay tự trườn khỏi bàn phím; Hiệp chụp cổ tay mình lại",
+            "react": "ngộ ra, bắt quả tang"
+          },
+          "link": "trả lời 'vì sao tự chửi không ăn thua': cái né là cảm giác, gọi tên cụ thể"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "engine": "hyperframes",
+      "dir": "explainer",
+      "transitionOut": "circleopen",
+      "sections": [
+        {
+          "id": "e01",
+          "beat": "clip-02.b04",
+          "part": "explain",
+          "motion": "label-reveal",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Nghe quen hông?",
+              "en": "Sound familiar?",
+              "hl": [
+                0,
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "Nghe {nhấn: quen} hông?"
+                }
+              ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "h0",
+              "f": 0.2,
+              "sfx": "pop",
+              "word": "Nghe quen"
+            },
+            {
+              "id": "h1",
+              "f": 0.7,
+              "sfx": "tick",
+              "word": "hông"
+            }
+          ],
+          "fx": {
+            "visual": "Thẻ 'Omi feature' mọc 2 gai RỐI / SỢ XẤU; mũi tên cong vòng qua thẻ",
+            "word": "quen"
+          },
+          "stage": {
+            "action": "Thẻ Omi mọc 2 gai RỐI / SỢ XẤU, mũi tên vòng qua",
+            "react": "khều người xem"
+          },
+          "link": "kéo người xem vào: chuyện của Hiệp → chuyện của họ"
+        },
+        {
+          "id": "e02",
+          "beat": "clip-02.b05",
+          "part": "explain",
+          "motion": "count-up",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Ông Steel gom hơn sáu trăm kết quả: càng ngán, càng dời.",
+              "en": "Steel pooled 691 results: the more you dread it, the more you delay.",
+              "hl": [
+                2,
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Ông Sờ tiu gom hơn {nhấn: sáu trăm} kết quả: càng ngán, càng dời."
+                }
+              ]
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Đi chung thôi nha.",
+              "en": "Correlation only, though.",
+              "hl": [
+                0,
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "{nhấn: Đi chung} thôi nha."
+                }
+              ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "h0",
+              "f": 0.2,
+              "sfx": "rise",
+              "word": "sáu trăm"
+            },
+            {
+              "id": "h1",
+              "f": 0.6,
+              "sfx": "ding",
+              "word": "càng dời"
+            },
+            {
+              "id": "h2",
+              "f": 0.9,
+              "sfx": "tick",
+              "word": "Đi chung"
+            }
+          ],
+          "fx": {
+            "visual": "Số 691 đếm lên, nhãn Steel 2007; thanh Ngán kéo kim Dời; chú thích ĐI CHUNG ≠ GÂY RA",
+            "word": "sáu trăm"
+          },
+          "stage": {
+            "action": "Nhãn 'Steel 2007', số 691 đếm lên; thanh NGÁN dâng kéo kim DỜI vọt; dấu nhỏ ĐI CHUNG ≠ GÂY RA",
+            "react": "bất ngờ, rồi thật thà"
+          },
+          "link": "bằng chứng cho phát hiện ở b03 (không phải chỉ mình Hiệp)"
+        },
+        {
+          "id": "e04",
+          "beat": "clip-02.b07",
+          "part": "explain",
+          "motion": "question-card",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Nên mình sửa câu nếu–thì: rối thì ghi ba gạch đầu dòng.",
+              "en": "So I upgraded the if-then: tangled? Write three bullets.",
+              "hl": [
+                7,
+                8
+              ],
+              "phrases": [
+                {
+                  "t": "Nên mình sửa câu nếu thì: rối thì ghi {nhấn: ba gạch} đầu dòng."
+                }
+              ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "h0",
+              "f": 0.25,
+              "sfx": "pop",
+              "word": "sửa câu"
+            },
+            {
+              "id": "h1",
+              "f": 0.8,
+              "sfx": "pen",
+              "word": "ba gạch"
+            }
+          ],
+          "fx": {
+            "visual": "Giấy nhớ lật mặt sau thành NẾU RỐI → THÌ 3 BULLET; 3 gạch tự viết, gai RỐI rụng",
+            "word": "ba gạch"
+          },
+          "stage": {
+            "action": "Giấy nhớ clip-01 lật mặt sau: NẾU RỐI → THÌ 3 BULLET; 3 gạch tự viết, gai RỐI rụng",
+            "react": "ranh mãnh, nhẹ nhõm"
+          },
+          "link": "callback clip-01: nâng cấp chính công cụ đã hỏng ở b01c, nhắm vào gai thứ nhất"
+        },
+        {
+          "id": "e05",
+          "beat": "clip-02.b08",
+          "part": "explain",
+          "motion": "match-fix",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Sợ code xấu? Cho xấu trước, sửa sau.",
+              "en": "Scared of ugly code? Ugly first, fix later.",
+              "hl": [
+                5,
+                5
+              ],
+              "phrases": [
+                {
+                  "t": "Sợ cốt xấu? Cho xấu {nhấn: trước}, sửa sau."
+                }
+              ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "h0",
+              "f": 0.6,
+              "sfx": "stamp",
+              "word": "xấu trước"
+            }
+          ],
+          "fx": {
+            "visual": "Con dấu 'DRAFT · OK' đóng lên tờ code nguệch ngoạc; gai SỢ XẤU rụng",
+            "word": "xấu trước"
+          },
+          "stage": {
+            "action": "Dấu DRAFT · OK đóng lên tờ nháp nguệch ngoạc; gai SỢ XẤU rụng",
+            "react": "trêu, nhẹ nhõm"
+          },
+          "link": "gai thứ hai, cùng khung nếu–thì"
+        },
+        {
+          "id": "e06",
+          "beat": "clip-02.b09",
+          "part": "explain",
+          "motion": "timer",
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Ngán quá thì hẹn mười phút, chuông reo là nghỉ.",
+              "en": "Still dreading it? Ten minutes, stop when it rings.",
+              "hl": [
+                3,
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "Ngán quá thì hẹn {nhấn: mười phút}, chuông reo là nghỉ."
+                }
+              ]
+            }
+          ],
+          "hits": [
+            {
+              "id": "h0",
+              "f": 0.4,
+              "sfx": "tick",
+              "word": "mười phút"
+            },
+            {
+              "id": "h1",
+              "f": 0.9,
+              "sfx": "ding",
+              "word": "chuông reo"
+            }
+          ],
+          "fx": {
+            "visual": "Đồng hồ 10:00 quay ngược, vòng tiến độ chạy; biển STOP OK bật",
+            "word": "mười phút"
+          },
+          "stage": {
+            "action": "Hẹn giờ 10:00 quay ngược, vòng tiến độ chạy, biển STOP OK bật",
+            "react": "xuề xòa"
+          },
+          "link": "lưới an toàn khi gai còn sót: hạ giá vào cửa"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "engine": "remotion",
+      "scenes": [
+        {
+          "id": "b11",
+          "beat": "clip-02.b11",
+          "part": "payoff",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.66,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Tóm lại: thích mà dời, là đang né cái rối.",
+              "en": "Bottom line: love it, delay it, you're dodging mess.",
+              "hl": [
+                7,
+                8
+              ],
+              "phrases": [
+                {
+                  "t": "Tóm lại: thích mà dời, là đang né {nhấn: cái rối}."
+                }
+              ]
+            }
+          ],
+          "fx": {
+            "visual": "Comic: dấu hỏi từ hook bay lại, bật thành dấu ✓",
+            "word": "cái rối"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 1.0,
+              "word": "né cái rối"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 400,
+              "y": 930,
+              "s": 0.72,
+              "rot": -5,
+              "text": "MÊ ≠ HẾT NGÁN",
+              "at": 0.9
+            }
+          ],
+          "stage": {
+            "action": "Dấu ? của hook bay lại, bật thành ✓; Hiệp gật gù chống cằm",
+            "react": "thấm, thật thà"
+          },
+          "link": "đóng open loop: trả lời câu hỏi b01b"
+        },
+        {
+          "id": "b12",
+          "beat": "clip-02.b12",
+          "part": "cta",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Bạn đang né gì? Comment một chữ.",
+              "en": "What are you dodging? One word in the comments.",
+              "hl": [
+                3,
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Bạn đang {nhấn: né} gì? Com men một chữ."
+                }
+              ]
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Còn mình hả? Mở Omi liền nè.",
+              "en": "Me? Opening Omi right now.",
+              "hl": [
+                1,
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Còn mình hả? Mở Ô mi {nhấn: liền} nè."
+                }
+              ]
+            }
+          ],
+          "fx": {
+            "visual": "Comic: Hiệp chỉ vào người xem; cắt về khung hook lúc 9:00 PM, xắn tay áo gõ (loop)",
+            "word": "Omi"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 0.4,
+              "word": "Mở Omi"
+            }
+          ],
+          "props": [
+            {
+              "kind": "laptop",
+              "x": 300,
+              "y": 1330,
+              "s": 0.62,
+              "text": "Omi feature",
+              "sub": "bắt đầu…"
+            }
+          ],
+          "stage": {
+            "action": "Chỉ thẳng người xem; cắt về khung hook 9:00 PM, dán giấy nhớ mới, xắn tay áo gõ phím",
+            "react": "ranh mãnh → quyết tâm"
+          },
+          "link": "CTA + loop về hook 'dời'"
+        }
+      ]
+    }
+  ],
+  "length_target": [
+    40,
+    48
+  ],
+  "word_target": [
+    110,
+    130
+  ],
+  "throughline": "Hiệp mê tính năng Omi VÀ đã có câu nếu–thì (clip-01) mà vẫn dời, còn tự chửi; NHƯNG càng chửi càng ngại, vì thứ né là cái rối + sợ code xấu lúc mở file; VÌ VẬY gọi tên gai, sửa câu nếu–thì cho từng gai, hẹn 10 phút, và mở Omi.",
+  "hook_question": {
+    "text": "Thích nhất, mà sao né hoài vậy?",
+    "asked": "b01b",
+    "answered": "b11"
+  },
+  "callbacks": [
+    {
+      "clip": "clip-01",
+      "beat": "b01c",
+      "ref": "câu nếu–thì (implementation intention)",
+      "text": "Như clip trước nói, có câu nếu–thì rồi."
+    },
+    {
+      "clip": "clip-01",
+      "beat": "e04",
+      "ref": "nâng cấp câu nếu–thì theo gai cảm xúc",
+      "text": "Giờ sửa câu nếu–thì"
+    }
+  ],
+  "structure": {
+    "hook": [
+      "b01",
+      "b01b"
+    ],
+    "intro": [
+      "b01c"
+    ],
+    "body": {
+      "problem": [
+        "b02"
+      ],
+      "exploration": [
+        "b03",
+        "e01",
+        "e02"
+      ],
+      "climax": [
+        "e04",
+        "e05",
+        "e06"
+      ]
+    },
+    "summary": [
+      "b11"
+    ],
+    "cta": [
+      "b12"
+    ]
+  },
+  "hook_alt": {
+    "type": "negative",
+    "text": "Đừng chửi mình lười nữa. Coi cái này trước nè."
+  }
+}

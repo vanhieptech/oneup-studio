@@ -1,49 +1,29 @@
 {
- "total": 60.746,
+ "total": 62.91,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-A.voiced.json",
-   "dur": 15.371,
+   "dur": 62.909,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-A.mp4",
-   "fx": "slideleft",
-   "scene_starts": [
-    1.023,
-    3.473,
-    4.573,
-    10.572
-   ],
-   "_off": 0.0
-  },
-  {
-   "id": "E",
-   "engine": "hyperframes",
-   "dir": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/explainer",
-   "dur": 33.84,
-   "mp4": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/out/E.mp4",
-   "fx": "circleopen",
-   "scene_starts": [
-    6.184,
-    12.408999999999999,
-    17.253999999999998,
-    21.404999999999998,
-    26.425,
-    29.335
-   ],
-   "_off": 15.021
-  },
-  {
-   "id": "B",
-   "engine": "remotion",
-   "plan": "/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/plan-B.voiced.json",
-   "dur": 12.225999999999999,
-   "mp4": "/workspace/oneup-studio/video-engine/out/clip-02-final-B.mp4",
    "fx": null,
    "scene_starts": [
-    5.58
+    5.713,
+    8.354,
+    15.216999999999999,
+    17.612,
+    19.355999999999998,
+    20.764,
+    29.378999999999998,
+    32.571999999999996,
+    37.62199999999999,
+    42.00299999999999,
+    52.870999999999995,
+    57.574999999999996,
+    59.376999999999995
    ],
-   "_off": 48.511
+   "_off": 0.0
   }
  ],
  "lines": [
@@ -51,511 +31,169 @@
    "beat": "clip-02.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "Tính năng Omi.",
-   "en": "The Omi feature.",
-   "emotion": "sad",
-   "key": "f5-326c41246390",
+   "say": "Thì cái bản chất của cái việc trì hoãn, là gì? Hôm nay thầy chỉ bạn làm cho chuẩn bài luôn á.",
+   "en": "So what's the essence of procrastinating? Today I'll teach you to do it properly.",
+   "emotion": "focused",
+   "key": "v8-b01",
    "local": 0.12,
-   "dur": 0.753,
+   "dur": 5.533,
    "t": 0.12
   },
   {
-   "beat": "clip-02.b01",
-   "scene": "b01b",
-   "speaker": "hiep",
-   "say": "Hoãn hôm nay. Hoãn ngày mai. Rồi lại hoãn.",
-   "en": "Not today. Not tomorrow. Again.",
-   "emotion": "sad",
-   "key": "f5-4095f70a2567",
-   "local": 0.06,
-   "dur": 2.24,
-   "t": 1.083
-  },
-  {
-   "beat": "clip-02.b01",
-   "scene": "b01c",
-   "speaker": "hiep",
-   "say": "Toang thật rồi.",
-   "en": "It's over.",
-   "emotion": "sad",
-   "key": "f5-f79fbf5a67cf",
-   "local": 0.06,
-   "dur": 0.89,
-   "t": 3.533
-  },
-  {
    "beat": "clip-02.b02",
    "scene": "b02",
    "speaker": "hiep",
-   "say": "Mở code ra, năm giây sau đã lướt TikTok.",
-   "en": "Open the code… five seconds later: TikTok.",
-   "emotion": "sad",
-   "key": "f5-2ec9b28a5ba0",
-   "local": 0.3,
-   "dur": 2.072,
-   "t": 4.873
-  },
-  {
-   "beat": "clip-02.b02",
-   "scene": "b02",
-   "speaker": "hiep",
-   "say": "Chán nản, tội lỗi, rồi tự mắng: ừm... mình lười quá.",
-   "en": "Drained, guilty: “I'm so lazy.”",
-   "emotion": "sad",
-   "key": "f5-14547a444848",
-   "local": 2.572,
-   "dur": 2.977,
-   "t": 7.145
+   "say": "Deadline còn một ngày lận mà, gấp gì, bạn tôi?",
+   "en": "Deadline's a whole day away… what's the rush, my friend?",
+   "emotion": "happy",
+   "key": "v8-b02",
+   "local": 0.02,
+   "dur": 2.561,
+   "t": 5.733
   },
   {
    "beat": "clip-02.b03",
    "scene": "b03",
    "speaker": "hiep",
-   "say": "Nhưng nghiên cứu nói: thường đâu phải lười. Mình đang né một cảm giác.",
-   "en": "Research says: usually not lazy. You're dodging a feeling.",
+   "say": "Thứ nhất là các bạn phải lướt liên tục ở trên giường, ngón cái chạy như máy may, một cách lặp đi lặp lại.",
+   "en": "Step one: scroll nonstop in bed, thumb going like a sewing machine, over and over.",
    "emotion": "focused",
-   "key": "f5-0271eb2054b8",
-   "local": 0.55,
-   "dur": 3.799,
-   "t": 11.122
+   "key": "v8-b03",
+   "local": 0.3,
+   "dur": 6.113,
+   "t": 8.654
   },
   {
    "beat": "clip-02.b04",
-   "scene": "e01",
+   "scene": "b04",
    "speaker": "hiep",
-   "say": "Trì hoãn là né cảm giác khó chịu: chán, sợ làm dở, hay không biết bắt đầu. Nghe quen không?",
-   "en": "Procrastination = dodging discomfort: boredom, fear of failing, no clear start. Sound familiar?",
-   "emotion": "focused",
-   "key": "f5-fd1d2dfea83a",
-   "local": 0.65,
-   "dur": 4.984,
-   "t": 15.671
+   "say": "Clip nữa thôi, clip nữa thôi,",
+   "en": "Just one more clip… one more…",
+   "emotion": "neutral",
+   "key": "v8-b04",
+   "local": 0.3,
+   "dur": 1.645,
+   "t": 15.517
   },
   {
    "beat": "clip-02.b05",
-   "scene": "e02",
+   "scene": "b05",
    "speaker": "hiep",
-   "say": "Gộp sáu trăm chín mươi mốt hệ số tương quan: việc càng khó chịu, càng thấy mình kém, càng dễ hoãn.",
-   "en": "691 correlations: the nastier the task and the lower your confidence, the more you delay.",
-   "emotion": "focused",
-   "key": "f5-00112fb8fae8",
-   "local": 6.484,
-   "dur": 5.375,
-   "t": 21.505
+   "say": "No, we don't do that.",
+   "en": "No, we don't do that.",
+   "emotion": "angry",
+   "key": "v8-b05",
+   "local": 0.3,
+   "dur": 0.994,
+   "t": 17.912
   },
   {
    "beat": "clip-02.b06",
-   "scene": "e03",
+   "scene": "b06",
    "speaker": "hiep",
-   "say": "Vì phần thưởng ở xa, cái khó chịu ở ngay bây giờ. Nên điện thoại thắng.",
-   "en": "Because the reward is far away, the discomfort is right now. So the phone wins.",
-   "emotion": "focused",
-   "key": "f5-ba77a972a011",
-   "local": 12.709,
-   "dur": 3.995,
-   "t": 27.73
+   "say": "Clip nữa thôi,",
+   "en": "One more clip…",
+   "emotion": "happy",
+   "key": "v8-b06",
+   "local": 0.3,
+   "dur": 0.658,
+   "t": 19.656
   },
   {
    "beat": "clip-02.b07",
-   "scene": "e04",
+   "scene": "b07",
    "speaker": "hiep",
-   "say": "Nên trước khi làm, hỏi một câu: việc này khó chịu ở chỗ nào?",
-   "en": "So before you start, ask: what exactly feels bad here?",
+   "say": "Thứ hai là khi nào xuất hiện cái việc rối như canh hẹ, thì chúng ta phải kiếm việc khác làm liền: dọn bàn, tưới cây, xếp lại dép.",
+   "en": "Step two: the moment a messy task shows up, find something else, wipe the desk, water plants, line up the slippers.",
    "emotion": "focused",
-   "key": "f5-6505e5807de7",
-   "local": 17.554,
-   "dur": 3.301,
-   "t": 32.575
+   "key": "v8-b07",
+   "local": 0.55,
+   "dur": 7.615,
+   "t": 21.314
   },
   {
    "beat": "clip-02.b08",
-   "scene": "e05",
+   "scene": "b08",
    "speaker": "hiep",
-   "say": "Không biết bắt đầu thì viết ba gạch đầu dòng.",
-   "en": "No clear start? Write 3 bullets.",
-   "emotion": "focused",
-   "key": "f5-6d0718186688",
-   "local": 21.705,
-   "dur": 2.38,
-   "t": 36.726
-  },
-  {
-   "beat": "clip-02.b08",
-   "scene": "e05",
-   "speaker": "hiep",
-   "say": "Sợ dở thì cho phép nháp xấu.",
-   "en": "Afraid it'll be bad? Allow an ugly draft.",
-   "emotion": "focused",
-   "key": "f5-7235cf806b85",
-   "local": 24.335,
-   "dur": 1.54,
-   "t": 39.356
+   "say": "Ủa, bàn sạch bong rồi. Giờ né cái gì nữa ta?",
+   "en": "Huh… desk's spotless. What do I dodge now?",
+   "emotion": "surprised",
+   "key": "v8-b08",
+   "local": 0.3,
+   "dur": 2.443,
+   "t": 29.679
   },
   {
    "beat": "clip-02.b09",
-   "scene": "e06",
+   "scene": "b09",
    "speaker": "hiep",
-   "say": "Thấy chán thì hẹn mười phút rồi được dừng.",
-   "en": "Bored? Set 10 minutes, then you may stop.",
-   "emotion": "focused",
-   "key": "f5-c1e2911a848d",
-   "local": 26.725,
-   "dur": 2.06,
-   "t": 41.746
+   "say": "Và cuối cùng là các bạn phải tự chửi mình cho thật đã: Đồ lười! Đồ vô dụng!",
+   "en": "And finally: yell at yourself good. Lazy! Useless!",
+   "emotion": "angry",
+   "key": "v8-b09",
+   "local": 0.3,
+   "dur": 4.3,
+   "t": 32.872
   },
   {
    "beat": "clip-02.b10",
-   "scene": "e07",
+   "scene": "b10",
    "speaker": "hiep",
-   "say": "Lỗi hay gặp: mắng mình rồi gồng. Mắng xong, việc càng khó chịu.",
-   "en": "Common mistake: scold yourself and force it. That makes the task feel worse.",
-   "emotion": "focused",
-   "key": "f5-ec90053679ba",
-   "local": 29.635,
-   "dur": 3.56,
-   "t": 44.656
+   "say": "Ghét bản thân mình ghê, Mai làm nha, Thôi, để thứ Hai cho tròn tuần.",
+   "en": "I hate myself so much… Tomorrow… Nah, Monday, fresh week.",
+   "emotion": "sad",
+   "key": "v8-b10",
+   "local": 0.3,
+   "dur": 3.631,
+   "t": 37.922
   },
   {
    "beat": "clip-02.b11",
    "scene": "b11",
    "speaker": "hiep",
-   "say": "Lưu ý: nghiên cứu này là tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra.",
-   "en": "Note: correlational, a pattern only. Save this for the next time you stall.",
+   "say": "Nghe quen hông? Mà khoa học nói vầy nè: ông Steel gom hơn sáu trăm nghiên cứu, thấy mình né việc vì nó khó chịu chứ không phải vì lười. Càng chửi mình thì càng né thêm.",
+   "en": "Sound familiar? Science says: Steel pooled 600+ studies, we dodge because it feels bad, not because we're lazy. Scolding yourself makes it worse.",
    "emotion": "focused",
-   "key": "f5-5e41f5a3ecac",
-   "local": 0.3,
-   "dur": 4.83,
-   "t": 48.811
-  },
-  {
-   "beat": "clip-02.b12",
-   "scene": "b12",
-   "speaker": "hiep",
-   "say": "Việc bạn đang hoãn khó chịu chỗ nào? Comment một chữ.",
-   "en": "What feels bad about the task you're avoiding? One word in the comments.",
-   "emotion": "happy",
-   "key": "f5-ea4c76dacef9",
+   "key": "v8-b11",
    "local": 0.55,
-   "dur": 2.89,
-   "t": 54.641
+   "dur": 9.868,
+   "t": 42.553
   },
   {
    "beat": "clip-02.b12",
    "scene": "b12",
    "speaker": "hiep",
-   "say": "Còn tính năng Omi? Mình đi hỏi câu đó đây.",
-   "en": "And the Omi feature? Asking myself right now.",
+   "say": "Vậy thì chia nhỏ ra ba gạch, hẹn mười phút thôi. Chuông reo là được nghỉ.",
+   "en": "So split it into three bullets, set ten minutes. Bell rings, you rest.",
+   "emotion": "focused",
+   "key": "v8-b12",
+   "local": 0.3,
+   "dur": 3.954,
+   "t": 53.171
+  },
+  {
+   "beat": "clip-02.b13",
+   "scene": "b13",
+   "speaker": "hiep",
+   "say": "Hết đường né luôn á.",
+   "en": "No way to dodge now.",
    "emotion": "happy",
-   "key": "f5-08542e06141e",
-   "local": 3.64,
-   "dur": 2.556,
-   "t": 57.731
+   "key": "v8-b13",
+   "local": 0.3,
+   "dur": 1.052,
+   "t": 57.875
+  },
+  {
+   "beat": "clip-02.b14",
+   "scene": "b14",
+   "speaker": "hiep",
+   "say": "Bạn đang né việc gì? Comment một chữ thôi nha.",
+   "en": "What are you dodging? One word in the comments.",
+   "emotion": "happy",
+   "key": "v8-b14",
+   "local": 0.55,
+   "dur": 2.532,
+   "t": 59.927
   }
- ],
- "transitions": [
-  {
-   "at": 1.023,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 3.473,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 4.573,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 10.572,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 15.228,
-   "kind": "part",
-   "sfx": "whoosh-soft"
-  },
-  {
-   "at": 21.237,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 27.462,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 32.307,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 36.458,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 41.478,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 44.388,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 48.718,
-   "kind": "part",
-   "sfx": "whoosh-soft"
-  },
-  {
-   "at": 54.123,
-   "kind": "scene",
-   "sfx": "swish"
-  }
- ],
- "sfx_mix": [
-  {
-   "name": "stamp",
-   "at": 0.12
-  },
-  {
-   "name": "click",
-   "at": 1.083
-  },
-  {
-   "name": "click",
-   "at": 1.843
-  },
-  {
-   "name": "stamp",
-   "at": 2.583
-  },
-  {
-   "name": "stamp",
-   "at": 3.533
-  },
-  {
-   "name": "pop",
-   "at": 6.473
-  },
-  {
-   "name": "stamp",
-   "at": 9.645
-  },
-  {
-   "name": "pen",
-   "at": 12.722
-  },
-  {
-   "name": "pop",
-   "at": 16.75
-  },
-  {
-   "name": "tick",
-   "at": 19.367
-  },
-  {
-   "name": "rise",
-   "at": 21.649
-  },
-  {
-   "name": "ding",
-   "at": 25.756
-  },
-  {
-   "name": "snap",
-   "at": 30.394
-  },
-  {
-   "name": "ding",
-   "at": 31.582
-  },
-  {
-   "name": "pop",
-   "at": 34.56
-  },
-  {
-   "name": "pen",
-   "at": 38.084
-  },
-  {
-   "name": "stamp",
-   "at": 40.515
-  },
-  {
-   "name": "tick",
-   "at": 42.587
-  },
-  {
-   "name": "ding",
-   "at": 43.742
-  },
-  {
-   "name": "stamp",
-   "at": 46.022
-  },
-  {
-   "name": "rise",
-   "at": 47.926
-  },
-  {
-   "name": "tick",
-   "at": 49.843
-  },
-  {
-   "name": "pop",
-   "at": 52.243
-  },
-  {
-   "name": "ding",
-   "at": 57.863
-  },
-  {
-   "name": "swish",
-   "at": 0.903
-  },
-  {
-   "name": "swish",
-   "at": 3.353
-  },
-  {
-   "name": "swish",
-   "at": 4.453
-  },
-  {
-   "name": "swish",
-   "at": 10.452
-  },
-  {
-   "name": "whoosh-soft",
-   "at": 15.108
-  },
-  {
-   "name": "swish",
-   "at": 21.117
-  },
-  {
-   "name": "swish",
-   "at": 27.342
-  },
-  {
-   "name": "swish",
-   "at": 32.187
-  },
-  {
-   "name": "swish",
-   "at": 36.338
-  },
-  {
-   "name": "swish",
-   "at": 41.358
-  },
-  {
-   "name": "swish",
-   "at": 44.268
-  },
-  {
-   "name": "whoosh-soft",
-   "at": 48.598
-  },
-  {
-   "name": "swish",
-   "at": 54.003
-  },
-  {
-   "name": "ambience",
-   "at": 0.0
-  }
- ],
- "hits": [
-  {
-   "section": "e01",
-   "id": "shield",
-   "t": 16.75,
-   "sfx": "pop"
-  },
-  {
-   "section": "e01",
-   "id": "faces",
-   "t": 19.367,
-   "sfx": "tick"
-  },
-  {
-   "section": "e02",
-   "id": "count",
-   "t": 21.649,
-   "sfx": "rise"
-  },
-  {
-   "section": "e02",
-   "id": "bars",
-   "t": 25.756,
-   "sfx": "ding"
-  },
-  {
-   "section": "e03",
-   "id": "tip",
-   "t": 30.394,
-   "sfx": "snap"
-  },
-  {
-   "section": "e03",
-   "id": "win",
-   "t": 31.582,
-   "sfx": "ding"
-  },
-  {
-   "section": "e04",
-   "id": "q",
-   "t": 34.56,
-   "sfx": "pop"
-  },
-  {
-   "section": "e05",
-   "id": "bullets",
-   "t": 38.084,
-   "sfx": "pen"
-  },
-  {
-   "section": "e05",
-   "id": "draft",
-   "t": 40.515,
-   "sfx": "stamp"
-  },
-  {
-   "section": "e06",
-   "id": "timer",
-   "t": 42.587,
-   "sfx": "tick"
-  },
-  {
-   "section": "e06",
-   "id": "ring",
-   "t": 43.742,
-   "sfx": "ding"
-  },
-  {
-   "section": "e07",
-   "id": "stamp",
-   "t": 46.022,
-   "sfx": "stamp"
-  },
-  {
-   "section": "e07",
-   "id": "worse",
-   "t": 47.926,
-   "sfx": "rise"
-  }
- ],
- "partStarts": [
-  0.0,
-  15.053,
-  48.543
  ]
 }

@@ -197,18 +197,20 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
-| b01 | remotion | Hook cut 1: push mạnh vào laptop, lịch xé 2 tờ, dấu đỏ DỜI đóng | “dời” | `click` → “Omi”; `stamp` → “dời hoài” | mở đầu |
-| b01b | remotion | Hook cut 2: vignette tối, dấu hỏi to đập xuống rung | “né hoài” | `stamp` → “né hoài” | cut (`swish`) |
-| b01c | remotion | Callback clip-01: giấy nhớ nếu–thì, kim chạm 9:00, ngón cái quẹt TikTok | “nếu–thì” | `pop` → “nếu–thì”; `tick` → “chín giờ” | cut (`swish`) |
-| b02 | remotion | Comic: chữ TỘI LỖI / LƯỜI rơi đè đầu; laptop hoá cục đá | “ngán” | `stamp` → “Đồ lười”; `rise` → “ngán hơn” | cut (`swish`) |
-| b03 | remotion | Comic slow-mo: cuộn dây rối bung ra, Hiệp chụp cổ tay chính mình, vòng tròn đỏ khoanh lại | “rối nùi” | `pen` → “bắt được”; `stamp` → “rối nùi” | iris (`swish`) |
-| e01 | hyperframes | Thẻ 'Omi feature' mọc 2 gai RỐI / SỢ XẤU; mũi tên cong vòng qua thẻ | “quen” | `pop` → “Nghe quen”; `tick` → “hông” | slideleft (`whoosh-soft`) |
-| e02 | hyperframes | Số 691 đếm lên, nhãn Steel 2007; thanh Ngán kéo kim Dời; chú thích ĐI CHUNG ≠ GÂY RA | “sáu trăm” | `rise` → “sáu trăm”; `ding` → “càng dời”; `tick` → “Đi chung” | push (`swish`) |
-| e04 | hyperframes | Giấy nhớ lật mặt sau thành NẾU RỐI → THÌ 3 BULLET; 3 gạch tự viết, gai RỐI rụng | “ba gạch” | `pop` → “sửa câu”; `pen` → “ba gạch” | push (`swish`) |
-| e05 | hyperframes | Con dấu 'DRAFT · OK' đóng lên tờ code nguệch ngoạc; gai SỢ XẤU rụng | “xấu trước” | `stamp` → “xấu trước” | push (`swish`) |
-| e06 | hyperframes | Đồng hồ 10:00 quay ngược, vòng tiến độ chạy; biển STOP OK bật | “mười phút” | `tick` → “mười phút”; `ding` → “chuông reo” | push (`swish`) |
-| b11 | remotion | Comic: dấu hỏi từ hook bay lại, bật thành dấu ✓ | “cái rối” | `tick` → “né cái rối” | circleopen (`whoosh-soft`) |
-| b12 | remotion | Comic: Hiệp chỉ vào người xem; cắt về khung hook lúc 9:00 PM, xắn tay áo gõ (loop) | “Omi” | `ding` → “Mở Omi” | slide (`swish`) |
+| b01 | remotion | Thầy Hiệp cầm thước gõ bảng TRÌ HOÃN 101 | “bản chất” | `tick` → “bản chất” | mở đầu |
+| b02 | remotion | Hiệp-né nằm ườn, gác chân lên gối | “Deadline” | `pop` → “Deadline” | cut (`swish`) |
+| b03 | remotion | Thầy chỉ thước vô cái điện thoại | “lướt” | `swish` → “lướt” | cut (`swish`) |
+| b04 | remotion | Hiệp-né lướt lia lịa, mắt đờ đẫn | “clip” | `swish` → “clip” | cut (`swish`) |
+| b05 | remotion | Thầy giật cái điện thoại | “No” | `stamp` → “No” | cut (`swish`) |
+| b06 | remotion | Hiệp-né móc cái điện thoại thứ hai ra | “clip” | `pop` → “clip” | cut (`swish`) |
+| b07 | remotion | Laptop mở file chi chít như mạng nhện | “rối như canh hẹ” | `pop` → “rối như canh hẹ” | slide (`swish`) |
+| b08 | remotion | Hiệp-né lau bàn bóng lộn, soi được mặt | “sạch bong” | `ding` → “sạch bong” | cut (`swish`) |
+| b09 | remotion | Thầy gằn giọng, đập bàn cái rầm | “Đồ lười” | `stamp` → “Đồ lười”; `stamp` → “Đồ vô dụng” | cut (`swish`) |
+| b10 | remotion | Hiệp-né cúi gằm, dồn liền ba câu | “Ghét bản thân” | `rise` → “Ghét bản thân” | cut (`swish`) |
+| b11 | remotion | Thầy tháo kính, nói giọng bình thường | “sáu trăm” | `rise` → “sáu trăm”; `tick` → “khó chịu” | iris (`swish`) |
+| b12 | remotion | Hiệp-né ghi ba gạch đầu dòng, hẹn đồng hồ 10 phút | “ba gạch” | `pen` → “ba gạch”; `tick` → “mười phút” | cut (`swish`) |
+| b13 | remotion | Chuông reo, file có dòng đầu tiên, Hiệp-né cười | “Hết đường né” | `ding` → “Hết đường né” | cut (`swish`) |
+| b14 | remotion | Chữ trên nền tối, Thầy chỉ thẳng người xem | “né” | `pop` → “né” | slide (`swish`) |
 
 ## Motion picks
 push-in + pop (b01) · squash + stamp (b02) · iris + pen strike (b03) · radial label-reveal (e01) · count-up + slider-rise (e02) · scale-tip trên trục thời gian (e03) · card-flip + magnifier (e04) · patch-fix + stamp (e05) · countdown ring (e06) · mistake-stamp + spike-grow (e07) · sign-pop (b11) · slide + loop (b12). Mỗi section một ẩn dụ khác nhau, không lặp.
