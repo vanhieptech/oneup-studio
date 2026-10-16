@@ -24,10 +24,10 @@ Thời lượng: 62,65s (DL-067: >60s được phép) · 1080×1920 (9:16) · 30
 
 ## 2. Chữ trên cover (≤ 40 ký tự) + tiêu đề TikTok (≤ 70 ký tự)
 ```
-Cover: BẢN CHẤT LÀ GÌ? · LƯỜI? → ĐANG NÉ!
+Cover: LƯỜI? (gạch) → ĐANG NÉ!
 Tiêu đề: Lười hay đang né? Bản chất của việc mở laptop rồi lướt TikTok
 ```
-Cover: **template A** (luật 54), props trong `spec.json → cover` (bản sao `final/cover/cover-v17.props.json`). File: `final/cover.png` (1080×1920). Tải ảnh bìa lên riêng. Nếu chỉ chọn được frame trong video thì dùng **58,2s** (b10: Hiệp nhìn camera, «Không lười, chỉ đang né»).
+Cover: **template A** (luật 54), props trong `spec.json → cover` (bản sao `final/cover/cover-v17.props.json`). File: `final/cover.png` (1080×1920). Tải ảnh bìa lên riêng. Nếu chỉ chọn được frame trong video thì dùng **58,2s** (b10: Hiệp cười nhìn camera, bong bóng «Không lười, chỉ đang né.»).
 
 ## 3. Caption / mô tả TikTok (VI)
 ```
