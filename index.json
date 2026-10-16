@@ -274,12 +274,20 @@
    "title": "clip-03: Chia việc lớn thành việc con (HTB 4.7)"
   },
   {
+   "id": "clip-03.script-v1",
+   "type": "script",
+   "status": "archived",
+   "updated": "2026-10-16",
+   "path": "content/clips/clip-03-big-task-chunking/archive/script-v1.md",
+   "title": "Clip 03 v1: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay"
+  },
+  {
    "id": "clip-03.script-final",
    "type": "script",
    "status": "draft",
    "updated": "2026-10-16",
    "path": "content/clips/clip-03-big-task-chunking/final/script-final.md",
-   "title": "Clip 03 v1: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay"
+   "title": "Clip 03 v2: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay"
   },
   {
    "id": "clip-03.trend-signals",
@@ -1929,6 +1937,7 @@
    "theme": null,
    "files": [
     "README.md",
+    "archive",
     "final"
    ]
   }

@@ -29,6 +29,12 @@ Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt bu�
 | b09c Cách làm 2 | 51–57 | mục liên kết (nếu-thì giờ/chỗ, chia nhỏ, tự đặt ngày…) + callback clip trước nếu tự nhiên | ≤ 25 chữ |
 | b10 CTA | 57–60 | lặp thông điệp 1 vế + câu hỏi + "Comment một chữ" | loop về hook, 1 CTA |
 
+## Biến thể: Độc thoại chia sẻ (clip concept meme «bản chất», L-039)
+- **Một người nói** từ b01 tới b10 (mặc định Thầy; cột «Người nói» chỉ một tên). Không đối thoại, không nhân vật phụ chen ngang.
+- Bỏ beat chen ngang (b02, b05); phản ứng ở b08 thành một câu của chính người nói («Mà … hóa ra là …»); CTA cũng do người đó nói.
+- Nhân vật khác (chibi Hiệp…) chỉ diễn trong cột Hình: dán, ôm đầu, gật, tròn mắt.
+- Giữ nguyên stem «Thì cái bản chất… / Thứ nhất / Thứ hai / Và cuối cùng» + `{nhấn:}` (L-036).
+
 ## Kịch bản
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
