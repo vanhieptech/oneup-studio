@@ -3,7 +3,7 @@ title: "Clip 03 v3: Chia việc lớn thành việc con rồi mới ước thờ
 date: 2026-10-16
 type: script
 tags: [clip-03, script, chunking, howtolivebetter-4.7, howtolivebetter-4.9, howtolivebetter-4.1, monologue, meme-ban-chat, L-036, L-039, L-040]
-status: draft
+status: ready
 source: "HowToLiveBetter 4.7 (Kruger & Evans 2004; Steel 2007; mức B) · callback clip-02 (4.9) + clip-01 (4.1) · trend F06 bản chất · nỗi đau thật từ comment Apify 16/10 (@hoaquynh0000 «phòng chất đầy đồ» 1.918 like; @thnguyen.y «Muốn học mà mắc lười» 904 like) · L-039 độc thoại · L-040 ví dụ phổ thông"
 id: clip-03.script-final
 version: v3
@@ -36,6 +36,22 @@ note: "gate 1, chưa có spec.json, chưa voice, chưa render; ≈215 chữ ≈ 
 - Bỏ «làm app»/AI (quá ngách dev, L-040). Ví dụ chính: **dọn phòng**; ví dụ phụ: **ôn thi** — cả hai lấy từ comment thật trong Apify 16/10.
 - Stem «Thứ hai» đổi từ «giao AI làm hết» sang «nằm xuống lướt điện thoại».
 - Chuẩn chia «một lần ngồi» → «một lần làm» (hợp việc nhà).
+
+## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
+Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
+
+| Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
+|---|---|---|---|---|---|
+| b01 | remotion | mmx-oversize-land: Thầy gõ thước, chữ hook đập frame 0 | “bản chất” | `stamp` → “bản chất” | mở đầu |
+| b01b | remotion | Cắt cứng: phòng ngập đồ, lịch lật 3 cuối tuần (tdev-text-swap) | “cuối tuần” | `swish` → “của cái việc”; `pop` → “cuối tuần” | cut (`swish`) |
+| b03 | remotion | mmx-snap-settle: sticky DỌN PHÒNG to tướng | “gọn” | `stamp` → “gọn”; `tick` → “không” | cut (`swish`) |
+| b04 | remotion | Chibi nhìn núi đồ rồi nằm lướt điện thoại (mmx-glide + mmx-cruise) | “lướt” | `snap` → “không biết”; `swish` → “lướt” | cut (`swish`) |
+| b06 | remotion | mmx-accel-exit: tờ lịch bay T10 → T1, ghế vẫn chất áo | “tủ đồ” | `tick` → “cuối tuần”; `stamp` → “tủ đồ” | cut (`swish`) |
+| b07 | remotion | bar-grow + mmx-soft-land: bảng KRUGER & EVANS 2004 → STEEL 2007 | “liệt kê” | `ding` → “liệt kê”; `stamp` → “đẩy” | mmx-soft-land (`swish`) |
+| b08 | remotion | tdev-stagger: DỌN PHÒNG nổ thành hàng thẻ nhỏ; nhãn CHỈ THẤY HƯỚNG | “chia thành việc con” | `stamp` → “chia thành việc con”; `pop` → “cả chục việc” | tdev-stagger (`swish`) |
+| b09 | remotion | step-recap: 3 thẻ ghế trống · bàn sạch · túi rác ✓, mỗi thẻ 20' | “một lần làm” | `tick` → “gom áo”; `tick` → “dọn mặt bàn”; `tick` → “bỏ rác”; `ding` → “hạn thật” | mmx-snap-settle (`swish`) |
+| b09c | remotion | tdev-text-swap ÔN THI → ĐỀ CHƯƠNG 2; tdev-modal thẻ NẾU 21:00 (callback clip-01) | “chia nhỏ” | `pop` → “làm một đề”; `tick` → “chín giờ tối” | tdev-modal (`swish`) |
+| b10 | remotion | mmx-pop-over (spring duy nhất): COMMENT 1 CHỮ, xé sticky DỌN PHÒNG (loop hook) | “Comment” | `pop` → “Comment” | cut (`swish`) |
 
 ## Motion picks (1 hiệu ứng chính/beat)
 | Beat | Ý đồ | Hiệu ứng chính (nguồn) | Tham số |

@@ -43,7 +43,7 @@ def helpers():
     from faster_whisper import WhisperModel
     m=WhisperModel("small",device="cpu",compute_type="int8")
     U=json.load(open(W+'/units.json')); OUT=REPO+"/video-engine/public/voice"; SR=48000; FPS=30
-    AL=[("tik tok","tíc tóc"),("tiktok","tíc tóc"),("tích tóc","tíc tóc"),("tiết tóc","tíc tóc"),("thứ 2","thứ hai"),("laptop","láp tóp"),("clip","clíp"),("file","phai"),("comment","com men"),("steel","xtiu"),("691","sáu trăm chín mươi mốt"),("9 giờ","chín giờ"),("1 dòng","một dòng"),("3 thứ","ba thứ")]
+    AL=[("tik tok","tíc tóc"),("tiktok","tíc tóc"),("tích tóc","tíc tóc"),("tiết tóc","tíc tóc"),("thứ 2","thứ hai"),("laptop","láp tóp"),("clip","clíp"),("file","phai"),("comment","com men"),("steel","xtiu"),("691","sáu trăm chín mươi mốt"),("9 giờ","chín giờ"),("1 dòng","một dòng"),("3 thứ","ba thứ"),("kruger","cru gơ"),("krugo","cru gơ"),("evans","ê vần"),("evan","ê vần"),("10","mười"),("2","hai"),("3","ba"),("1","một")]
     LEAK=set("hôm nay trời sài gòn mát mẻ mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha".split())
     def n(s):
       s=unicodedata.normalize("NFC",s.lower()); s=re.sub(r"[^\w ]"," ",s); s=" ".join(s.split())

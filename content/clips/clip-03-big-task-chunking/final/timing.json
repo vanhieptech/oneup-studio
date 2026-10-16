@@ -1,0 +1,320 @@
+{
+ "total": 70.016,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-03-big-task-chunking/final/plan-A.voiced.json",
+   "dur": 70.003,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-03-final-A.mp4",
+   "fx": null,
+   "scene_starts": [
+    1.081,
+    4.122999999999999,
+    8.791999999999998,
+    14.460999999999999,
+    20.947,
+    31.899,
+    42.046,
+    53.766999999999996,
+    63.791
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-03.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Thì cái bản chất...",
+   "en": "So what's the essence…",
+   "emotion": "focused",
+   "key": "c03v3-b01",
+   "local": 0.12,
+   "dur": 0.901,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-03.b02",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "của cái việc hứa cuối tuần dọn phòng... là gì?",
+   "en": "…of promising \"I'll clean my room this weekend\"?",
+   "emotion": "focused",
+   "key": "c03v3-b01b",
+   "local": 0.02,
+   "dur": 2.962,
+   "t": 1.101
+  },
+  {
+   "beat": "clip-03.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Thứ nhất là các bạn phải ghi gọn một chữ: dọn phòng, không chia gì hết.",
+   "en": "First: write just \"clean room\", no breakdown at all.",
+   "emotion": "focused",
+   "key": "c03v3-b03",
+   "local": 0.15,
+   "dur": 4.269,
+   "t": 4.273
+  },
+  {
+   "beat": "clip-03.b04",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Thứ hai là đứng giữa phòng mà không biết bắt đầu từ đâu... thì nằm xuống lướt điện thoại.",
+   "en": "Second: no idea where to start… so lie down and scroll.",
+   "emotion": "confused",
+   "key": "c03v3-b04",
+   "local": 0.15,
+   "dur": 5.269,
+   "t": 8.942
+  },
+  {
+   "beat": "clip-03.b05",
+   "scene": "b06",
+   "speaker": "hiep",
+   "say": "Và cuối cùng là các bạn phải tự hứa cuối tuần sau, rồi ba tháng sau... cái ghế vẫn là tủ đồ.",
+   "en": "And finally: promise \"next weekend\"… three months later, the chair is still the closet.",
+   "emotion": "focused",
+   "key": "c03v3-b06",
+   "local": 0.15,
+   "dur": 6.086,
+   "t": 14.611
+  },
+  {
+   "beat": "clip-03.b06",
+   "scene": "b07",
+   "speaker": "hiep",
+   "say": "Nghe quen hông? Mà các nhà khoa học nói: Cru gơ và Ê vần thấy liệt kê việc con ra trước rồi mới ước giờ thì ước bớt hụt. Còn Xtiu thấy việc càng ngán càng bị đẩy về sau.",
+   "en": "Sound familiar? List subtasks first, then estimate: you underestimate less. And the more you dread it, the more it's pushed back.",
+   "emotion": "focused",
+   "key": "c03v3-b07",
+   "local": 0.45,
+   "dur": 10.252,
+   "t": 21.397
+  },
+  {
+   "beat": "clip-03.b07",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Vậy việc lớn phải chia thành việc con rồi mới ước giờ, mới bắt tay. Nghiên cứu mới thấy hướng thôi, chưa có con số. Mà dọn phòng hóa ra là cả chục việc đó.",
+   "en": "Split big work into subtasks, then estimate, then start. Only the direction is known. \"Clean room\" is really a dozen tasks.",
+   "emotion": "focused",
+   "key": "c03v3-b08",
+   "local": 0.45,
+   "dur": 9.447,
+   "t": 32.349
+  },
+  {
+   "beat": "clip-03.b08",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Chuẩn chia: mỗi việc con xong trong một lần làm. Gom áo trên ghế. Dọn mặt bàn. Bỏ rác dưới gầm giường. Cộng giờ từng phần mới ra hạn thật. Chia vừa thôi, chia vụn quá cũng mệt.",
+   "en": "Each subtask fits one go: clear the chair, clean the desk, bag the trash. Add up the parts for a real deadline.",
+   "emotion": "focused",
+   "key": "c03v3-b09",
+   "local": 0.45,
+   "dur": 11.021,
+   "t": 42.496
+  },
+  {
+   "beat": "clip-03.b09",
+   "scene": "b09c",
+   "speaker": "hiep",
+   "say": "Ôn thi cũng vậy: không ghi ôn thi, mà ghi làm một đề chương hai. Như clíp trước: rối thì chia nhỏ; clíp đầu: chín giờ tối, ở đâu, làm thẻ đầu tiên.",
+   "en": "Not \"study\", but \"one practice test, chapter 2\". Messy? Split it. 9 p.m., a set place, card one.",
+   "emotion": "focused",
+   "key": "c03v3-b09c",
+   "local": 0.45,
+   "dur": 9.324,
+   "t": 54.217
+  },
+  {
+   "beat": "clip-03.b10",
+   "scene": "b10",
+   "speaker": "hiep",
+   "say": "Vậy đó, không phải lười, việc to quá thôi. Việc to nhất bạn đang treo tên gì? Com men một chữ nha!",
+   "en": "Not lazy, the task's just too big. Comment one word!",
+   "emotion": "happy",
+   "key": "c03v3-b10",
+   "local": 0.15,
+   "dur": 5.812,
+   "t": 63.941
+  }
+ ],
+ "transitions": [
+  {
+   "at": 1.081,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 4.123,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 8.792,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 14.461,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 20.947,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 31.899,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 42.046,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 53.767,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 63.791,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "swish",
+   "at": 1.101
+  },
+  {
+   "name": "pop",
+   "at": 2.101
+  },
+  {
+   "name": "stamp",
+   "at": 5.473
+  },
+  {
+   "name": "tick",
+   "at": 7.873
+  },
+  {
+   "name": "snap",
+   "at": 10.542
+  },
+  {
+   "name": "swish",
+   "at": 12.742
+  },
+  {
+   "name": "tick",
+   "at": 16.011
+  },
+  {
+   "name": "stamp",
+   "at": 19.611
+  },
+  {
+   "name": "ding",
+   "at": 24.397
+  },
+  {
+   "name": "stamp",
+   "at": 30.397
+  },
+  {
+   "name": "stamp",
+   "at": 33.549
+  },
+  {
+   "name": "pop",
+   "at": 39.849
+  },
+  {
+   "name": "tick",
+   "at": 45.996
+  },
+  {
+   "name": "tick",
+   "at": 47.296
+  },
+  {
+   "name": "tick",
+   "at": 48.496
+  },
+  {
+   "name": "ding",
+   "at": 50.996
+  },
+  {
+   "name": "pop",
+   "at": 56.617
+  },
+  {
+   "name": "tick",
+   "at": 59.717
+  },
+  {
+   "name": "pop",
+   "at": 67.941
+  },
+  {
+   "name": "swish",
+   "at": 0.961
+  },
+  {
+   "name": "swish",
+   "at": 4.003
+  },
+  {
+   "name": "swish",
+   "at": 8.672
+  },
+  {
+   "name": "swish",
+   "at": 14.341
+  },
+  {
+   "name": "swish",
+   "at": 20.827
+  },
+  {
+   "name": "swish",
+   "at": 31.779
+  },
+  {
+   "name": "swish",
+   "at": 41.926
+  },
+  {
+   "name": "swish",
+   "at": 53.647
+  },
+  {
+   "name": "swish",
+   "at": 63.671
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

@@ -1,0 +1,1081 @@
+{
+  "transition_sfx": {
+    "part": "whoosh-soft",
+    "scene": "swish"
+  },
+  "pacing": {
+    "lead": 0.15,
+    "lead_tr": 0.05,
+    "tail": 0.25
+  },
+  "id": "clip-03-final",
+  "clip": "clip-03",
+  "title": "Bản chất của việc hứa cuối tuần dọn phòng: chia việc lớn thành việc con (HTB 4.7)",
+  "week": 1,
+  "theme": "dark",
+  "pillar": "1 Làm ít, xong nhiều",
+  "story": "monologue Thầy (L-039), ví dụ dọn phòng + ôn thi (L-040)",
+  "trend": "F06 'bản chất' meme + comment Apify 16/10 (final/trend-signals.md)",
+  "voice_prefix": "c03v3",
+  "revisions": [
+    {
+      "v": 3,
+      "date": "2026-10-16",
+      "note": "script v3 Hiệp duyệt (14:00): độc thoại Thầy, dọn phòng/ôn thi"
+    }
+  ],
+  "cover": {
+    "direction": "a",
+    "theme": "dark",
+    "series": "Làm ít, xong nhiều",
+    "ep": 3,
+    "hero": [
+      "DỌN PHÒNG?",
+      "CHIA NHỎ!"
+    ],
+    "accent": 1,
+    "strike": 0,
+    "expression": "despair",
+    "action": "reacting",
+    "emote": "!",
+    "tilt": -5
+  },
+  "hook": {
+    "text": "BẢN CHẤT LÀ GÌ?",
+    "scenes": [
+      "b01",
+      "b01b"
+    ],
+    "format": "meme 'Thì cái bản chất của cái việc… là gì?' monologue"
+  },
+  "engagement": [
+    {
+      "type": "relatable-question",
+      "beat": "b07",
+      "text": "Nghe quen hông?"
+    },
+    {
+      "type": "comment-challenge",
+      "beat": "b10",
+      "text": "Comment một chữ nha!"
+    },
+    {
+      "type": "loop",
+      "beat": "b10",
+      "text": "to quá",
+      "hook_word": "bản chất"
+    }
+  ],
+  "voices": {
+    "Thầy": "F5 · Thái Sơn speed 0.9"
+  },
+  "throughline": "Ai cũng hứa dọn phòng VÀ ghi gọn một chữ, NHƯNG việc to quá nên né mãi, VÌ VẬY chia thành việc con xong trong một lần làm rồi mới ước giờ",
+  "hook_question": {
+    "asked": "bản chất của việc hứa cuối tuần dọn phòng là gì?",
+    "answered": "không phải lười, việc to quá: chia thành việc con"
+  },
+  "structure": {
+    "hook": [
+      "b01",
+      "b01b"
+    ],
+    "intro": [
+      "b03",
+      "b04",
+      "b06"
+    ],
+    "body": [
+      "b07",
+      "b08",
+      "b09",
+      "b09c"
+    ],
+    "summary": [
+      "b10"
+    ],
+    "cta": [
+      "b10"
+    ]
+  },
+  "hook_alt": {
+    "type": "direct",
+    "text": "Dọn phòng không xong không phải vì lười."
+  },
+  "callbacks": [
+    "clip-01 (4.1 nếu-thì 21:00)",
+    "clip-02 (4.9 rối thì chia nhỏ)"
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "engine": "remotion",
+      "scenes": [
+        {
+          "id": "b01",
+          "beat": "clip-03.b01",
+          "part": "hook",
+          "role": "Thầy",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.14,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused"
+            }
+          ],
+          "fx": {
+            "visual": "mmx-oversize-land: Thầy gõ thước, chữ hook đập frame 0",
+            "word": "bản chất"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "bản chất"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Thì cái **bản chất**…",
+              "say": "Thì cái bản chất...",
+              "en": "So what's the essence…",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Thì cái"
+                },
+                {
+                  "t": "{nhấn: bản chất}...",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b01.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "narration": "BẢN CHẤT LÀ GÌ?",
+          "stage": {
+            "action": "Thầy gõ thước xuống bàn, nheo mắt nhìn khán giả",
+            "react": "nghiêm giả bộ"
+          }
+        },
+        {
+          "id": "b01b",
+          "beat": "clip-03.b02",
+          "part": "hook",
+          "role": "Thầy",
+          "background": "bed",
+          "framing": "medium",
+          "push": 0.14,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "despair"
+            }
+          ],
+          "fx": {
+            "visual": "Cắt cứng: phòng ngập đồ, lịch lật 3 cuối tuần (tdev-text-swap)",
+            "word": "cuối tuần"
+          },
+          "sfx": [
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "của cái việc"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 1.0,
+              "word": "cuối tuần"
+            }
+          ],
+          "props": [
+            {
+              "kind": "calendar",
+              "x": 260,
+              "y": 1000,
+              "s": 0.6,
+              "pages": [
+                "T7",
+                "T7 SAU",
+                "T7 NỮA"
+              ],
+              "tearAt": [
+                1.2,
+                2.0
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "…của cái việc hứa «**cuối tuần** dọn phòng»… là gì?",
+              "say": "của cái việc hứa cuối tuần dọn phòng... là gì?",
+              "en": "…of promising \"I'll clean my room this weekend\"?",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "của cái việc hứa"
+                },
+                {
+                  "t": "{nhấn: cuối tuần} dọn phòng...",
+                  "emph": true
+                },
+                {
+                  "t": "là gì?"
+                }
+              ],
+              "voice_file": "voice/c03v3-b01b.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiệp ngồi giữa núi áo, lịch lật ba trang",
+            "react": "ngán ngẩm"
+          },
+          "link": "nói tiếp vế meme: đề bài cụ thể"
+        },
+        {
+          "id": "b03",
+          "beat": "clip-03.b03",
+          "part": "struggle",
+          "role": "Thầy",
+          "background": "bed",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused"
+            }
+          ],
+          "fx": {
+            "visual": "mmx-snap-settle: sticky DỌN PHÒNG to tướng",
+            "word": "gọn"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 1.2,
+              "word": "gọn"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 3.6,
+              "word": "không"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 540,
+              "y": 340,
+              "s": 0.75,
+              "rot": -3,
+              "text": "DỌN PHÒNG",
+              "at": 1.0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Thứ nhất là các bạn phải ghi **gọn** một chữ: «dọn phòng», **không** chia gì hết.",
+              "say": "Thứ nhất là các bạn phải ghi gọn một chữ: dọn phòng, không chia gì hết.",
+              "en": "First: write just \"clean room\", no breakdown at all.",
+              "hl": [
+                5
+              ],
+              "phrases": [
+                {
+                  "t": "Thứ nhất là"
+                },
+                {
+                  "t": "các bạn phải ghi {nhấn: gọn} một chữ:",
+                  "emph": true
+                },
+                {
+                  "t": "dọn phòng,"
+                },
+                {
+                  "t": "{nhấn: không} chia gì hết.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b03.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Thầy dán sticky to tướng lên tường",
+            "react": "mỉa mai"
+          },
+          "link": "Thứ nhất của meme: lỗi ghi việc to"
+        },
+        {
+          "id": "b04",
+          "beat": "clip-03.b04",
+          "part": "struggle",
+          "role": "Thầy",
+          "background": "bed",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "confused"
+            }
+          ],
+          "fx": {
+            "visual": "Chibi nhìn núi đồ rồi nằm lướt điện thoại (mmx-glide + mmx-cruise)",
+            "word": "lướt"
+          },
+          "sfx": [
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 1.6,
+              "word": "không biết"
+            },
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 3.8,
+              "word": "lướt"
+            }
+          ],
+          "props": [
+            {
+              "kind": "phone",
+              "x": 260,
+              "y": 1200,
+              "s": 0.7,
+              "rot": 8,
+              "at": 3.6,
+              "text": "TikTok"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "confused",
+              "text": "Thứ hai là đứng giữa phòng mà **không biết** bắt đầu từ đâu… thì nằm xuống **lướt** điện thoại.",
+              "say": "Thứ hai là đứng giữa phòng mà không biết bắt đầu từ đâu... thì nằm xuống lướt điện thoại.",
+              "en": "Second: no idea where to start… so lie down and scroll.",
+              "hl": [
+                10
+              ],
+              "phrases": [
+                {
+                  "t": "Thứ hai là"
+                },
+                {
+                  "t": "đứng giữa phòng"
+                },
+                {
+                  "t": "mà {nhấn: không biết} bắt đầu từ đâu...",
+                  "emph": true
+                },
+                {
+                  "t": "thì nằm xuống {nhấn: lướt} điện thoại.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b04.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiệp đứng xoay vòng rồi đổ người xuống nệm",
+            "react": "bối rối"
+          },
+          "link": "Thứ hai: hậu quả của việc không chia"
+        },
+        {
+          "id": "b06",
+          "beat": "clip-03.b05",
+          "part": "struggle",
+          "role": "Thầy",
+          "background": "bed",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "despair"
+            }
+          ],
+          "fx": {
+            "visual": "mmx-accel-exit: tờ lịch bay T10 → T1, ghế vẫn chất áo",
+            "word": "tủ đồ"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 1.4,
+              "word": "cuối tuần"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 5.0,
+              "word": "tủ đồ"
+            }
+          ],
+          "props": [
+            {
+              "kind": "vignette",
+              "at": 0.0,
+              "dark": 0.45
+            },
+            {
+              "kind": "calendar",
+              "x": 260,
+              "y": 1000,
+              "s": 0.6,
+              "pages": [
+                "T10",
+                "T11",
+                "T12",
+                "T1"
+              ],
+              "tearAt": [
+                2.6,
+                3.1,
+                3.6
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Và cuối cùng là các bạn phải tự hứa «**cuối tuần** sau», rồi ba tháng sau… cái ghế vẫn là **tủ đồ**.",
+              "say": "Và cuối cùng là các bạn phải tự hứa cuối tuần sau, rồi ba tháng sau... cái ghế vẫn là tủ đồ.",
+              "en": "And finally: promise \"next weekend\"… three months later, the chair is still the closet.",
+              "hl": [
+                13
+              ],
+              "phrases": [
+                {
+                  "t": "Và cuối cùng là"
+                },
+                {
+                  "t": "các bạn phải tự hứa"
+                },
+                {
+                  "t": "{nhấn: cuối tuần} sau,",
+                  "emph": true
+                },
+                {
+                  "t": "rồi ba tháng sau..."
+                },
+                {
+                  "t": "cái ghế vẫn là {nhấn: tủ đồ}.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b06.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Tờ lịch bay vèo vèo qua bốn tháng",
+            "react": "chán chường"
+          },
+          "link": "Và cuối cùng: vòng lặp hứa hẹn"
+        },
+        {
+          "id": "b07",
+          "beat": "clip-03.b06",
+          "part": "evidence",
+          "role": "Thầy",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "mmx-soft-land",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.76,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "surprised"
+            }
+          ],
+          "fx": {
+            "visual": "bar-grow + mmx-soft-land: bảng KRUGER & EVANS 2004 → STEEL 2007",
+            "word": "liệt kê"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 3.0,
+              "word": "liệt kê"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 9.0,
+              "word": "đẩy"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 280,
+              "y": 900,
+              "s": 0.5,
+              "rot": -3,
+              "text": "KRUGER & EVANS 2004",
+              "at": 2.0
+            },
+            {
+              "kind": "words",
+              "x": 280,
+              "y": 1180,
+              "s": 0.55,
+              "words": [
+                "LIỆT KÊ → ƯỚC",
+                "NGÁN → ĐẨY LÙI"
+              ],
+              "dropAt": [
+                3.0,
+                8.0
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Nghe quen hông? Mà các nhà khoa học nói: Kruger và Evans thấy **liệt kê** việc con ra trước rồi mới ước giờ thì ước **bớt hụt**. Còn Steel thấy việc càng ngán càng bị **đẩy** về sau.",
+              "say": "Nghe quen hông? Mà các nhà khoa học nói: Cru gơ và Ê vần thấy liệt kê việc con ra trước rồi mới ước giờ thì ước bớt hụt. Còn Xtiu thấy việc càng ngán càng bị đẩy về sau.",
+              "en": "Sound familiar? List subtasks first, then estimate: you underestimate less. And the more you dread it, the more it's pushed back.",
+              "hl": [
+                2,
+                19
+              ],
+              "phrases": [
+                {
+                  "t": "Nghe quen hông?"
+                },
+                {
+                  "t": "Mà các nhà khoa học nói:"
+                },
+                {
+                  "t": "Cru gơ và Ê vần thấy"
+                },
+                {
+                  "t": "{nhấn: liệt kê} việc con ra trước",
+                  "emph": true
+                },
+                {
+                  "t": "rồi mới ước giờ"
+                },
+                {
+                  "t": "thì ước {nhấn: bớt hụt}.",
+                  "emph": true
+                },
+                {
+                  "t": "Còn Xtiu thấy"
+                },
+                {
+                  "t": "việc càng ngán"
+                },
+                {
+                  "t": "càng bị {nhấn: đẩy} về sau.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b07.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Thầy tháo kính, chỉ thước vào bảng nghiên cứu",
+            "react": "ngạc nhiên"
+          },
+          "link": "đổi giọng sang bằng chứng"
+        },
+        {
+          "id": "b08",
+          "beat": "clip-03.b07",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "tdev-stagger",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.74,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "tdev-stagger: DỌN PHÒNG nổ thành hàng thẻ nhỏ; nhãn CHỈ THẤY HƯỚNG",
+            "word": "chia thành việc con"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 1.2,
+              "word": "chia thành việc con"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 7.5,
+              "word": "cả chục việc"
+            }
+          ],
+          "props": [
+            {
+              "kind": "words",
+              "x": 280,
+              "y": 900,
+              "s": 0.55,
+              "words": [
+                "ÁO",
+                "BÀN",
+                "RÁC",
+                "SÀN"
+              ],
+              "dropAt": [
+                1.2,
+                1.4,
+                1.6,
+                1.8
+              ]
+            },
+            {
+              "kind": "sign",
+              "x": 280,
+              "y": 1250,
+              "s": 0.45,
+              "rot": 2,
+              "text": "CHỈ THẤY HƯỚNG",
+              "at": 4.5
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Vậy việc lớn phải **chia thành việc con** rồi mới ước giờ, mới bắt tay. Nghiên cứu mới thấy hướng thôi, chưa có con số. Mà «dọn phòng» hóa ra là **cả chục việc** đó.",
+              "say": "Vậy việc lớn phải chia thành việc con rồi mới ước giờ, mới bắt tay. Nghiên cứu mới thấy hướng thôi, chưa có con số. Mà dọn phòng hóa ra là cả chục việc đó.",
+              "en": "Split big work into subtasks, then estimate, then start. Only the direction is known. \"Clean room\" is really a dozen tasks.",
+              "hl": [
+                4,
+                19
+              ],
+              "phrases": [
+                {
+                  "t": "Vậy việc lớn"
+                },
+                {
+                  "t": "phải {nhấn: chia thành việc con}",
+                  "emph": true
+                },
+                {
+                  "t": "rồi mới ước giờ,"
+                },
+                {
+                  "t": "mới bắt tay."
+                },
+                {
+                  "t": "Nghiên cứu mới thấy hướng thôi,"
+                },
+                {
+                  "t": "chưa có con số."
+                },
+                {
+                  "t": "Mà dọn phòng"
+                },
+                {
+                  "t": "hóa ra là {nhấn: cả chục việc} đó.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b08.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Sticky lớn vỡ thành hàng thẻ nhỏ",
+            "react": "vỡ lẽ"
+          },
+          "link": "rút ra thông điệp HTB 4.7 từ bằng chứng"
+        },
+        {
+          "id": "b09",
+          "beat": "clip-03.b08",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "bed",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "mmx-snap-settle",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.74,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "step-recap: 3 thẻ ghế trống · bàn sạch · túi rác ✓, mỗi thẻ 20'",
+            "word": "một lần làm"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 3.5,
+              "word": "gom áo"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 4.8,
+              "word": "dọn mặt bàn"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 6.0,
+              "word": "bỏ rác"
+            },
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 8.5,
+              "word": "hạn thật"
+            }
+          ],
+          "props": [
+            {
+              "kind": "words",
+              "x": 280,
+              "y": 880,
+              "s": 0.55,
+              "words": [
+                "GOM ÁO ✓",
+                "DỌN BÀN ✓",
+                "BỎ RÁC ✓"
+              ],
+              "dropAt": [
+                3.4,
+                4.7,
+                5.9
+              ]
+            },
+            {
+              "kind": "calendar",
+              "x": 280,
+              "y": 1260,
+              "s": 0.5,
+              "pages": [
+                "TỐI T5"
+              ],
+              "tearAt": []
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Chuẩn chia: mỗi việc con xong trong **một lần làm**. Gom áo trên ghế. Dọn mặt bàn. Bỏ rác dưới gầm giường. Cộng giờ từng phần mới ra **hạn thật**. Chia vừa thôi, chia vụn quá cũng mệt.",
+              "say": "Chuẩn chia: mỗi việc con xong trong một lần làm. Gom áo trên ghế. Dọn mặt bàn. Bỏ rác dưới gầm giường. Cộng giờ từng phần mới ra hạn thật. Chia vừa thôi, chia vụn quá cũng mệt.",
+              "en": "Each subtask fits one go: clear the chair, clean the desk, bag the trash. Add up the parts for a real deadline.",
+              "hl": [
+                3,
+                20
+              ],
+              "phrases": [
+                {
+                  "t": "Chuẩn chia:"
+                },
+                {
+                  "t": "mỗi việc con xong"
+                },
+                {
+                  "t": "trong {nhấn: một lần làm}.",
+                  "emph": true
+                },
+                {
+                  "t": "Gom áo trên ghế."
+                },
+                {
+                  "t": "Dọn mặt bàn."
+                },
+                {
+                  "t": "Bỏ rác dưới gầm giường."
+                },
+                {
+                  "t": "Cộng giờ từng phần"
+                },
+                {
+                  "t": "mới ra {nhấn: hạn thật}.",
+                  "emph": true
+                },
+                {
+                  "t": "Chia vừa thôi,"
+                },
+                {
+                  "t": "chia vụn quá cũng mệt."
+                }
+              ],
+              "voice_file": "voice/c03v3-b09.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Thầy tick từng thẻ, ghế trống dần",
+            "react": "hào hứng"
+          },
+          "link": "cách làm cụ thể cho ví dụ dọn phòng"
+        },
+        {
+          "id": "b09c",
+          "beat": "clip-03.b09",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "tdev-modal",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.74,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "typing",
+              "expression": "focused"
+            }
+          ],
+          "fx": {
+            "visual": "tdev-text-swap ÔN THI → ĐỀ CHƯƠNG 2; tdev-modal thẻ NẾU 21:00 (callback clip-01)",
+            "word": "chia nhỏ"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 2.4,
+              "word": "làm một đề"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 5.5,
+              "word": "chín giờ tối"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sign",
+              "x": 280,
+              "y": 900,
+              "s": 0.5,
+              "rot": -2,
+              "text": "ĐỀ CHƯƠNG 2",
+              "at": 2.2
+            },
+            {
+              "kind": "sign",
+              "x": 280,
+              "y": 1200,
+              "s": 0.45,
+              "rot": 3,
+              "text": "NẾU 21:00 → THẺ 1",
+              "at": 5.2
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Ôn thi cũng vậy: không ghi «ôn thi», mà ghi «**làm một đề chương hai**». Như clip trước: rối thì **chia nhỏ**; clip đầu: chín giờ tối, ở đâu, làm **thẻ đầu tiên**.",
+              "say": "Ôn thi cũng vậy: không ghi ôn thi, mà ghi làm một đề chương hai. Như clíp trước: rối thì chia nhỏ; clíp đầu: chín giờ tối, ở đâu, làm thẻ đầu tiên.",
+              "en": "Not \"study\", but \"one practice test, chapter 2\". Messy? Split it. 9 p.m., a set place, card one.",
+              "hl": [
+                9,
+                17
+              ],
+              "phrases": [
+                {
+                  "t": "Ôn thi cũng vậy:"
+                },
+                {
+                  "t": "không ghi ôn thi,"
+                },
+                {
+                  "t": "mà ghi {nhấn: làm một đề chương hai}.",
+                  "emph": true
+                },
+                {
+                  "t": "Như clíp trước: rối thì {nhấn: chia nhỏ};",
+                  "emph": true
+                },
+                {
+                  "t": "clíp đầu: chín giờ tối, ở đâu,"
+                },
+                {
+                  "t": "làm {nhấn: thẻ đầu tiên}.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c03v3-b09c.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Thẻ ôn thi lật mặt, thẻ nếu-thì bật ra",
+            "react": "tự tin"
+          },
+          "link": "áp sang ví dụ thứ hai + callback clip 1-2"
+        },
+        {
+          "id": "b10",
+          "beat": "clip-03.b10",
+          "part": "cta",
+          "role": "Thầy",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "mmx-pop-over (spring duy nhất): COMMENT 1 CHỮ, xé sticky DỌN PHÒNG (loop hook)",
+            "word": "Comment"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 4.0,
+              "word": "Comment"
+            }
+          ],
+          "props": [
+            {
+              "kind": "words",
+              "x": 540,
+              "y": 360,
+              "s": 1.0,
+              "words": [
+                "COMMENT 1 CHỮ"
+              ],
+              "dropAt": [
+                3.8
+              ]
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Vậy đó, không phải lười, việc **to quá** thôi. Việc to nhất bạn đang treo tên gì? Comment một chữ nha!",
+              "say": "Vậy đó, không phải lười, việc to quá thôi. Việc to nhất bạn đang treo tên gì? Com men một chữ nha!",
+              "en": "Not lazy, the task's just too big. Comment one word!",
+              "hl": [
+                6,
+                7
+              ],
+              "phrases": [
+                {
+                  "t": "Vậy đó,"
+                },
+                {
+                  "t": "không phải lười,"
+                },
+                {
+                  "t": "việc {nhấn: to quá} thôi.",
+                  "emph": true
+                },
+                {
+                  "t": "Việc to nhất bạn đang treo"
+                },
+                {
+                  "t": "tên gì?"
+                },
+                {
+                  "t": "Com men một chữ nha!"
+                }
+              ],
+              "voice_file": "voice/c03v3-b10.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Thầy quay thẳng ống kính, chìa tay mời",
+            "react": "thân thiện"
+          },
+          "link": "chốt và mời comment, loop về hook"
+        }
+      ]
+    }
+  ]
+}

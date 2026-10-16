@@ -1,3 +1,4 @@
+import { TRANSITION_TYPES } from "../composition/transitions"; // L-041: accept tdev-*/mmx-* too
 import { ZodError } from "zod";
 import {
   ACTIONS, BACKGROUNDS, EXPRESSIONS, FRAMINGS, POSES, TRANSITIONS,
@@ -38,7 +39,7 @@ export function validatePlan(input: unknown, registry: ProfileRegistry = default
     if (Math.round(s.duration * fps) < 1) err(`${p}.duration`, `duration ${s.duration}s is shorter than one frame at ${fps}fps`);
     if (!(BACKGROUNDS as readonly string[]).includes(s.background.kind)) err(`${p}.background.kind`, `unsupported background "${s.background.kind}". Use one of: ${list(BACKGROUNDS)}`);
     if (!(FRAMINGS as readonly string[]).includes(s.camera.framing)) err(`${p}.camera.framing`, `unsupported framing "${s.camera.framing}". Use one of: ${list(FRAMINGS)}`);
-    if (!(TRANSITIONS as readonly string[]).includes(s.transition.type)) err(`${p}.transition.type`, `unsupported transition "${s.transition.type}". Use one of: ${list(TRANSITIONS)}`);
+    if (!(TRANSITION_TYPES as readonly string[]).includes(s.transition.type)) err(`${p}.transition.type`, `unsupported transition "${s.transition.type}". Use one of: ${list(TRANSITIONS) + " (+ tdev-*/mmx-*)"}`);
     if (s.transition.type !== "cut" && s.transition.duration > s.duration / 2) err(`${p}.transition.duration`, `transition ${s.transition.duration}s is longer than half the scene (${s.duration}s)`);
     if (si === 0 && s.transition.type !== "cut") warn(`${p}.transition`, "first scene transitions in from blank paper");
 

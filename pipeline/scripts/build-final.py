@@ -218,9 +218,12 @@ def stage_voice_phrase(specp, spec, force=False):
     vp = os.path.join(REPO, "pipeline/scripts/voice-phrase-f5.py"); work = f"/workspace/voice-work/{spec.get('clip', 'clip')}-{prefix}"
     f5py = os.environ.get("F5_PY", "/workspace/f5-venv/bin/python"); asrpy = os.environ.get("ASR_PY", "/workspace/asr-venv/bin/python")
     sh([PY, vp, "gen", specp, "--work", work])
-    env = dict(os.environ, F5_THREADS=os.environ.get("F5_THREADS", "4"))
-    procs = [subprocess.Popen([f5py, os.path.join(REPO, "pipeline/tts/f5tts_gen.py"), os.path.join(work, f"batch{i}.json")], env=env) for i in (0, 1)]
-    if any(pr.wait() for pr in procs): sys.exit("voice-phrase: F5 batch failed")
+    # L-041: two F5 processes ≈ 2×6.5 GB → OOM-kill on the 15 GB box; run batches one after another (F5_PARALLEL=1 to opt back in)
+    par = os.environ.get("F5_PARALLEL") == "1"
+    env = dict(os.environ, F5_THREADS=os.environ.get("F5_THREADS", "4" if par else str(os.cpu_count() or 8)))
+    cmds = [[f5py, os.path.join(REPO, "pipeline/tts/f5tts_gen.py"), os.path.join(work, f"batch{i}.json")] for i in (0, 1)]
+    rcs = [pr.wait() for pr in [subprocess.Popen(c, env=env) for c in cmds]] if par else [subprocess.run(c, env=env).returncode for c in cmds]
+    if any(rcs): sys.exit(f"voice-phrase: F5 batch failed rc={rcs} (outputs kept; re-run resumes)")
     sh([asrpy, vp, "pick", specp, "--work", work])
     sh([asrpy, vp, "stitch", specp, "--work", work, "--prefix", prefix, "--listen", os.path.join(work, "listen.mp3")])
     return True

@@ -361,7 +361,7 @@ def main():
     nar = [(i, o) for i, o in nar if len(o) >= 2]
     ((warn if lax else err) if nar else ok)("rule-61", "dialogue does not narrate the stage action" + (f": {nar}" if nar else ""))
     FILL = [r"\bmở code\b", r"\bgõ (được )?hai dòng\b", r"\bthôi thì\b", r"\bnói chung\b", r"\bthật ra thì\b", r"\bcái việc\b", r"\bkiểu vậy\b", r"\bnhư mình đã nói\b", r"\bnhìn nè\b", r"\bnhư bạn thấy\b", r"\bđây là\b"]
-    fl = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in FILL for m in [re.search(pat, l["text"].lower())] if m]
+    fl = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in FILL for m in [re.search(pat, l["text"].lower())] if m and not (x["id"] in hookset and "của cái việc" in l["text"].lower())]  # L-036 meme stem exempt in hook
     ((warn if lax else err) if fl else ok)("rule-61", "no filler / visual-describing phrases" + (f": {fl}" if fl else ""))
     if spec.get("word_target"):
         bw = [x["id"] for x in beats_ if sum(len(l["text"].split()) for l in x["lines"]) > 20]
