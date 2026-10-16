@@ -22,12 +22,15 @@ tags: [clip-02, post, tiktok, week-1]
 Thời lượng: 62,65s (DL-067: >60s được phép) · 1080×1920 (9:16) · 30fps · H.264 High + AAC 48 kHz · −14,7 LUFS · 40,5 MB
 ```
 
-## 2. Chữ trên cover (≤ 40 ký tự) + tiêu đề TikTok (≤ 70 ký tự)
+## 2. Chữ trên cover (≤ 40 ký tự)
 ```
-Cover: LƯỜI? (gạch) → ĐANG NÉ!
-Tiêu đề: Lười hay đang né? Bản chất của việc mở laptop rồi lướt TikTok
+LƯỜI? → ĐANG NÉ!
 ```
-Cover: **template A** (luật 54), props trong `spec.json → cover` (bản sao `final/cover/cover-v17.props.json`). File: `final/cover.png` (1080×1920). Tải ảnh bìa lên riêng. Nếu chỉ chọn được frame trong video thì dùng **58,2s** (b10: Hiệp cười nhìn camera, bong bóng «Không lười, chỉ đang né.»).
+Tiêu đề TikTok (≤ 70 ký tự, 61):
+```
+Lười hay đang né? Bản chất của việc mở laptop rồi lướt TikTok
+```
+Cover: **template A** (luật 54; LƯỜI? bị gạch, ĐANG NÉ! nằm trong khung sáng), props trong `spec.json → cover` (bản sao `final/cover/cover-v17.props.json`). File: `final/cover.png` (1080×1920). Tải ảnh bìa lên riêng. Frame cover: **58.2s** (dự phòng nếu chỉ chọn được frame trong video: b10, Hiệp cười nhìn camera, bong bóng «Không lười, chỉ đang né.»).
 
 ## 3. Caption / mô tả TikTok (VI)
 ```
