@@ -1,1209 +1,1210 @@
 {
-  "id": "clip-02-final",
-  "clip": "clip-02",
-  "title": "Bản chất của việc mở laptop rồi lướt TikTok: né cảm giác khó chịu (Steel 2007)",
-  "week": 1,
-  "theme": "dark",
-  "pillar": "1 Làm ít, xong nhiều",
-  "story": "meme variant v8 (Hiệp duyệt 15/10)",
-  "trend": "F06 'bản chất' meme audio (research/trends/2026-10-15/audio)",
-  "revisions": [
-    {
-      "date": "2026-10-15",
-      "dl": "DL-059",
-      "note": "rewrite: one continuous story with connectors, precise vocabulary, POV hook"
-    },
-    {
-      "date": "2026-10-14",
-      "dl": "DL-044",
-      "note": "gate-1 draft: info-complete script + rule-52 effects table + template-A cover (rule 54)"
-    },
-    {
-      "v": 3,
-      "date": "2026-10-15",
-      "dl": "DL-061",
-      "note": "văn nói, xen hành động + cảm xúc + thoại mỗi beat (luật 60, L-024)"
-    },
-    {
-      "v": 4,
-      "date": "2026-10-15",
-      "dl": "DL-062",
-      "note": "hook mới do Hiệp đưa; thoại không kể lại hình (luật 61, L-025), ≤120 chữ"
-    },
-    {
-      "v": 5,
-      "date": "2026-10-15",
-      "dl": "DL-063",
-      "note": "v5: throughline ABT, 6 nhịp, callback clip-01 (nếu–thì), nối theo ngữ cảnh, 'Ghét bản thân mình ghê' (luật 62, L-030)"
-    },
-    {
-      "v": 7,
-      "date": "2026-10-15",
-      "dl": "DL-065",
-      "note": "v7 giọng kể chuyện với bạn (rule 64): direct hook, hook→intro→body→summary→1 CTA, {nhấn:} mỗi câu"
-    },
-    {
-      "v": 8,
-      "date": "2026-10-15",
-      "note": "meme variant v8: Thầy Hiệp + Hiệp-né, 14 cảnh, pre-voiced F5 (voice_file)"
-    },
-    {
-      "v": 14,
-      "date": "2026-10-15",
-      "note": "v14 script Hiệp duyệt (t151): stem bản chất/Thứ nhất/Thứ hai/Và cuối cùng, cảm giác khó chịu, wording fixes; pre-voiced F5 STT-picked"
-    },
-    {
-      "v": 15,
-      "date": "2026-10-16",
-      "dl": "L-036",
-      "note": "v15 draft: Day 2 takeaway (4.9) at b08 + CTA echo, Thứ hai shortened, per-clause phrases + {nhấn:}/{kéo:} (chưa voice)"
-    },
-    {
-      "v": 16,
-      "date": "2026-10-16",
-      "dl": "L-036",
-      "note": "v16 draft: HTB 4.9 message spoken (title, 3 signs, hỏi khó chịu chỗ nào → bớt khó chịu + bước đầu nhỏ, tương quan), hook split into 2 cut scenes (chưa voice)"
-    },
-    {
-      "v": 17,
-      "date": "2026-10-16",
-      "dl": "L-036",
-      "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"
-    }
-  ],
-  "transition_sfx": {
-    "part": "whoosh-soft",
-    "scene": "swish"
+ "id": "clip-02-final",
+ "clip": "clip-02",
+ "title": "Bản chất của việc mở laptop rồi lướt TikTok: né cảm giác khó chịu (Steel 2007)",
+ "week": 1,
+ "theme": "dark",
+ "pillar": "1 Làm ít, xong nhiều",
+ "story": "meme variant v8 (Hiệp duyệt 15/10)",
+ "trend": "F06 'bản chất' meme audio (research/trends/2026-10-15/audio)",
+ "revisions": [
+  {
+   "date": "2026-10-15",
+   "dl": "DL-059",
+   "note": "rewrite: one continuous story with connectors, precise vocabulary, POV hook"
   },
-  "cover": {
-    "direction": "a",
-    "theme": "dark",
-    "series": "Làm ít, xong nhiều",
-    "ep": 2,
-    "hero": [
-      "LƯỜI?",
-      "ĐANG NÉ!"
-    ],
-    "accent": 1,
-    "strike": 0,
-    "expression": "sad",
-    "action": "reacting",
-    "emote": "!",
-    "tilt": -5
+  {
+   "date": "2026-10-14",
+   "dl": "DL-044",
+   "note": "gate-1 draft: info-complete script + rule-52 effects table + template-A cover (rule 54)"
   },
-  "cover_options": [
-    {
-      "hero": [
-        "LƯỜI?",
-        "ĐANG NÉ!"
-      ],
-      "picked": true
-    },
-    {
-      "hero": [
-        "HOÃN MÃI",
-        "VÌ SỢ"
-      ]
-    },
-    {
-      "hero": [
-        "TỰ MẮNG",
-        "VÔ ÍCH"
-      ]
-    }
-  ],
-  "hook": {
-    "text": "BẢN CHẤT LÀ GÌ?",
-    "scenes": [
-      "b01",
-      "b01b"
-    ],
-    "format": "meme 'Thì cái bản chất của cái việc… là gì?' + chen ngang (v14)"
+  {
+   "v": 3,
+   "date": "2026-10-15",
+   "dl": "DL-061",
+   "note": "văn nói, xen hành động + cảm xúc + thoại mỗi beat (luật 60, L-024)"
   },
-  "engagement": [
-    {
-      "type": "relatable-question",
-      "beat": "b07",
-      "text": "Nghe quen hông?"
-    },
-    {
-      "type": "comment-challenge",
-      "beat": "b10",
-      "text": "Comment một chữ nha!"
-    },
-    {
-      "type": "loop",
-      "beat": "b10",
-      "text": "né",
-      "hook_word": "bản chất"
-    }
-  ],
-  "parts": [
-    {
-      "id": "A",
-      "engine": "remotion",
-      "scenes": [
-        {
-          "id": "b01",
-          "beat": "clip-02.b01",
-          "part": "hook",
-          "role": "Thầy",
-          "background": "grid",
-          "framing": "medium",
-          "push": 0.14,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "focused"
-            }
-          ],
-          "fx": {
-            "visual": "Smash: chữ BẢN CHẤT đập giữa khung, Thầy gõ thước (frame 0)",
-            "word": "bản chất"
-          },
-          "sfx": [
-            {
-              "name": "stamp",
-              "atLine": 0,
-              "offset": 0.0,
-              "word": "bản chất"
-            }
-          ],
-          "props": [],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Thì cái **bản chất**…",
-              "say": "Thì cái bản chất...",
-              "en": "So what's the essence…",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Thì cái"
-                },
-                {
-                  "t": "{nhấn: bản chất}...",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b01.wav",
-              "voice_role": "Thầy"
-            }
-          ],
-          "narration": "BẢN CHẤT LÀ GÌ?"
-        },
-        {
-          "id": "b01b",
-          "beat": "clip-02.b01",
-          "part": "hook",
-          "role": "Thầy",
-          "background": "bed",
-          "framing": "medium",
-          "push": 0.14,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "idle",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "Smash cut: Hiệp mở laptop OneUp → giây sau đã nằm quẹt TikTok 21:00",
-            "word": "TikTok"
-          },
-          "sfx": [
-            {
-              "name": "swish",
-              "atLine": 0,
-              "offset": 0.0,
-              "word": "của cái việc"
-            },
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 1.2,
-              "word": "TikTok"
-            }
-          ],
-          "props": [
-            {
-              "kind": "laptop",
-              "x": 260,
-              "y": 1300,
-              "s": 0.55,
-              "text": "OneUp",
-              "sub": "mở…",
-              "at": 0.0
-            },
-            {
-              "kind": "phone",
-              "x": 260,
-              "y": 950,
-              "s": 0.7,
-              "rot": 8,
-              "at": 0.9,
-              "text": "TikTok"
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "…của cái việc mở laptop rồi lướt TikTok… là gì?",
-              "say": "của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?",
-              "en": "…of opening your laptop, then scrolling TikTok?",
-              "hl": [
-                6
-              ],
-              "phrases": [
-                {
-                  "t": "của cái việc mở láp tóp"
-                },
-                {
-                  "t": "rồi lướt {nhấn: Tíc Tóc}...",
-                  "emph": true
-                },
-                {
-                  "t": "là gì?"
-                }
-              ],
-              "voice_file": "voice/v17-b01b.wav",
-              "voice_role": "Thầy"
-            }
-          ]
-        },
-        {
-          "id": "b02",
-          "beat": "clip-02.b02",
-          "part": "hook",
-          "role": "Hiệp-né",
-          "background": "bed",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "idle",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "Hiệp-né thò đầu ôm điện thoại, mắt lim dim; chữ XÍU THÔI? nảy",
-            "word": "xíu thôi"
-          },
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 0.6,
-              "word": "xíu thôi"
-            }
-          ],
-          "props": [
-            {
-              "kind": "phone",
-              "x": 260,
-              "y": 1250,
-              "s": 0.7,
-              "rot": 8,
-              "at": 0.0,
-              "text": "TikTok"
-            },
-            {
-              "kind": "words",
-              "x": 540,
-              "y": 330,
-              "s": 1.0,
-              "words": [
-                "XÍU THÔI?"
-              ],
-              "dropAt": [
-                0.5
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Ờ… coi clip **xíu thôi** đã chứ, bạn ơi!",
-              "say": "Ờ... coi clíp xíu thôi đã chứ, bạn ơi!",
-              "en": "Uh… just a few clips first, buddy!",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Ờ... coi clíp {nhấn: xíu thôi}",
-                  "emph": true
-                },
-                {
-                  "t": "đã chứ, bạn ơi!"
-                }
-              ],
-              "voice_file": "voice/v17-b02.wav",
-              "voice_role": "Hiệp-né"
-            }
-          ]
-        },
-        {
-          "id": "b03",
-          "beat": "clip-02.b03",
-          "part": "struggle",
-          "role": "Thầy",
-          "background": "bed",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.7,
-              "facing": "left",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "focused"
-            }
-          ],
-          "fx": {
-            "visual": "Thầy chỉ thước vào điện thoại trên gối; ngón cái quẹt lặp lặp lại",
-            "word": "lướt"
-          },
-          "sfx": [
-            {
-              "name": "tick",
-              "atLine": 0,
-              "offset": 1.0,
-              "word": "lướt"
-            },
-            {
-              "name": "tick",
-              "atLine": 0,
-              "offset": 3.4,
-              "word": "lặp đi lặp lại"
-            }
-          ],
-          "props": [
-            {
-              "kind": "phone",
-              "x": 300,
-              "y": 1250,
-              "s": 0.8,
-              "at": 0.3,
-              "text": "TikTok"
-            },
-            {
-              "kind": "sign",
-              "x": 540,
-              "y": 330,
-              "s": 0.65,
-              "rot": -3,
-              "text": "THỨ NHẤT · LƯỚT LẶP",
-              "at": 0.0
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Thứ nhất là các bạn phải **lướt** liên tục ở trên giường, một cách lặp đi lặp lại.",
-              "say": "Thứ nhất là các bạn phải lướt liên tục ở trên giường, một cách lặp đi lặp lại.",
-              "en": "First: scroll nonstop in bed, over and over.",
-              "hl": [
-                1,
-                5
-              ],
-              "phrases": [
-                {
-                  "t": "Thứ nhất là"
-                },
-                {
-                  "t": "các bạn phải {nhấn: lướt} liên tục ở trên giường,",
-                  "emph": true
-                },
-                {
-                  "t": "một cách {nhấn: lặp đi lặp lại}.",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b03.wav",
-              "voice_role": "Thầy"
-            }
-          ]
-        },
-        {
-          "id": "b05",
-          "beat": "clip-02.b05",
-          "part": "struggle",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "slide",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "confused"
-            }
-          ],
-          "fx": {
-            "visual": "File mở ra → sóng đỏ cảm giác khó chịu; Thầy chỉ sang chổi + app review đồ ăn",
-            "word": "cảm giác khó chịu"
-          },
-          "sfx": [
-            {
-              "name": "snap",
-              "atLine": 0,
-              "offset": 1.8,
-              "word": "cảm giác khó chịu"
-            },
-            {
-              "name": "swish",
-              "atLine": 0,
-              "offset": 5.0,
-              "word": "đổi việc"
-            }
-          ],
-          "props": [
-            {
-              "kind": "laptop",
-              "x": 290,
-              "y": 1330,
-              "s": 0.7,
-              "text": "oneup.swift",
-              "sub": "KHÓ CHỊU",
-              "at": 0.0
-            },
-            {
-              "kind": "sign",
-              "x": 280,
-              "y": 1200,
-              "s": 0.6,
-              "rot": 3,
-              "text": "THỨ HAI · ĐỔI VIỆC",
-              "at": 4.8
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "confused",
-              "text": "Thứ hai là khi nào xuất hiện **cái cảm giác khó chịu** khi mở file để làm việc… thì phải đổi việc liền.",
-              "say": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì phải đổi việc liền.",
-              "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
-              "hl": [
-                4,
-                14
-              ],
-              "phrases": [
-                {
-                  "t": "Thứ hai là {nhấn: khi nào}",
-                  "emph": true
-                },
-                {
-                  "t": "xuất hiện {nhấn: cái cảm giác khó chịu}",
-                  "emph": true
-                },
-                {
-                  "t": "khi mở phai để làm việc..."
-                },
-                {
-                  "t": "thì phải đổi việc liền."
-                }
-              ],
-              "voice_file": "voice/v17-b05.wav",
-              "voice_role": "Thầy"
-            }
-          ]
-        },
-        {
-          "id": "b06",
-          "beat": "clip-02.b06",
-          "part": "struggle",
-          "role": "Thầy",
-          "background": "bed",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "idle",
-              "expression": "despair"
-            }
-          ],
-          "fx": {
-            "visual": "Chữ LƯỜI rơi đè Hiệp-né (rung); lịch xé sang MAI",
-            "word": "chửi"
-          },
-          "sfx": [
-            {
-              "name": "stamp",
-              "atLine": 0,
-              "offset": 1.6,
-              "word": "chửi"
-            },
-            {
-              "name": "stamp",
-              "atLine": 1,
-              "offset": 0.0,
-              "word": "Đồ lười"
-            }
-          ],
-          "props": [
-            {
-              "kind": "vignette",
-              "at": 0.0,
-              "dark": 0.5
-            },
-            {
-              "kind": "cloud",
-              "x": 540,
-              "y": 270,
-              "s": 0.65,
-              "at": 0.0,
-              "words": [
-                "LƯỜI!"
-              ],
-              "dropAt": [
-                1.6
-              ]
-            },
-            {
-              "kind": "calendar",
-              "x": 220,
-              "y": 1150,
-              "s": 0.55,
-              "pages": [
-                "HÔM NAY",
-                "MAI"
-              ],
-              "tearAt": [
-                3.2
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Và cuối cùng là các bạn phải tự **chửi** bản thân mình cho đã — rồi mai lại né.",
-              "say": "Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã, rồi mai lại né.",
-              "en": "And finally: curse yourself out properly, then dodge again tomorrow.",
-              "hl": [
-                2,
-                9
-              ],
-              "phrases": [
-                {
-                  "t": "Và cuối cùng là"
-                },
-                {
-                  "t": "các bạn phải tự {nhấn: chửi} bản thân mình cho đã,",
-                  "emph": true
-                },
-                {
-                  "t": "rồi mai lại né."
-                }
-              ],
-              "voice_file": "voice/v17-b06a.wav",
-              "voice_role": "Thầy"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "sad",
-              "text": "Đồ lười! Thôi **để mai**…",
-              "say": "Đồ lười! Thôi để mai...",
-              "en": "Lazy bum! Eh… tomorrow then…",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Đồ lười!"
-                },
-                {
-                  "t": "Thôi {nhấn: để mai}...",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b06b.wav",
-              "voice_role": "Hiệp-né"
-            }
-          ]
-        },
-        {
-          "id": "b07",
-          "beat": "clip-02.b07",
-          "part": "evidence",
-          "role": "Thầy",
-          "background": "paper",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "iris",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.76,
-              "facing": "left",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "surprised"
-            }
-          ],
-          "fx": {
-            "visual": "Thầy tháo kính; bảng STEEL 2007 · 691 KẾT QUẢ; 3 dấu hỏi KHÓ CHỊU? / LÀM ĐƯỢC? / BỊ CUỐN? rơi theo từng chữ; nhãn nhỏ TƯƠNG QUAN",
-            "word": "691"
-          },
-          "sfx": [
-            {
-              "name": "ding",
-              "atLine": 0,
-              "offset": 3.0,
-              "word": "691"
-            },
-            {
-              "name": "stamp",
-              "atLine": 0,
-              "offset": 8.5,
-              "word": "cuốn"
-            }
-          ],
-          "props": [
-            {
-              "kind": "sign",
-              "x": 250,
-              "y": 1000,
-              "s": 0.45,
-              "rot": -3,
-              "text": "STEEL 2007 · 691 KẾT QUẢ",
-              "at": 2.8
-            },
-            {
-              "kind": "words",
-              "x": 260,
-              "y": 1220,
-              "s": 0.5,
-              "words": [
-                "KHÓ CHỊU?",
-                "LÀM ĐƯỢC?",
-                "BỊ CUỐN?"
-              ],
-              "dropAt": [
-                5.5,
-                7.0,
-                8.5
-              ]
-            },
-            {
-              "kind": "sign",
-              "x": 260,
-              "y": 1380,
-              "s": 0.5,
-              "rot": 2,
-              "text": "TƯƠNG QUAN",
-              "at": 0.5
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả, hoãn vì ba thứ: việc khó chịu cỡ nào, mình thấy làm được không, và thứ trước mắt cuốn cỡ nào.",
-              "say": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, hoãn vì ba thứ: việc khó chịu cỡ nào, mình thấy làm được không, và thứ trước mắt cuốn cỡ nào.",
-              "en": "Sound familiar? But scientists say: Steel pooled 691 results. Delay tracks three things: how unpleasant the task is, whether you think you can do it, how hard distractions pull.",
-              "hl": [
-                1,
-                7,
-                14,
-                22,
-                28
-              ],
-              "phrases": [
-                {
-                  "t": "Nghe quen hông?"
-                },
-                {
-                  "t": "Mà các nhà khoa học nói:"
-                },
-                {
-                  "t": "Xtiu gom {nhấn: sáu trăm chín mươi mốt} kết quả,",
-                  "emph": true
-                },
-                {
-                  "t": "hoãn vì ba thứ:"
-                },
-                {
-                  "t": "việc {nhấn: khó chịu} cỡ nào,",
-                  "emph": true
-                },
-                {
-                  "t": "mình thấy {nhấn: làm được} không,",
-                  "emph": true
-                },
-                {
-                  "t": "và thứ trước mắt {nhấn: cuốn} cỡ nào.",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b07.wav",
-              "voice_role": "Thầy"
-            }
-          ]
-        },
-        {
-          "id": "b08",
-          "beat": "clip-02.b08",
-          "part": "payoff",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.74,
-              "facing": "left",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "sad"
-            }
-          ],
-          "fx": {
-            "visual": "Takeaway: chữ LƯỜI bị gạch, thay bằng NÉ KHÓ CHỊU; bậc thang đầu tiên thu nhỏ còn 1 bậc tí xíu",
-            "word": "tránh cảm giác khó chịu"
-          },
-          "sfx": [
-            {
-              "name": "stamp",
-              "atLine": 0,
-              "offset": 1.2,
-              "word": "tránh cảm giác khó chịu"
-            },
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 5.0,
-              "word": "đi chung"
-            }
-          ],
-          "props": [
-            {
-              "kind": "sign",
-              "x": 270,
-              "y": 1150,
-              "s": 0.45,
-              "rot": -4,
-              "text": "TRÁNH KHÓ CHỊU ≠ CHƯA CỐ GẮNG",
-              "at": 0.8
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Vậy trì hoãn là đang **tránh cảm giác khó chịu**, không phải chưa đủ cố gắng. Mới thấy đi chung thôi.",
-              "say": "Vậy trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng. Mới thấy đi chung thôi.",
-              "en": "So procrastination is avoiding a bad feeling, not a lack of effort. Only a link so far.",
-              "hl": [
-                3,
-                11,
-                14
-              ],
-              "phrases": [
-                {
-                  "t": "Vậy trì hoãn"
-                },
-                {
-                  "t": "là đang {nhấn: tránh cảm giác khó chịu},",
-                  "emph": true
-                },
-                {
-                  "t": "không phải chưa đủ cố gắng."
-                },
-                {
-                  "t": "Mới thấy đi chung thôi."
-                }
-              ],
-              "voice_file": "voice/v17-b08a.wav",
-              "voice_role": "Thầy"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "surprised",
-              "text": "À… mình đang **né** thiệt.",
-              "say": "À... mình đang né thiệt.",
-              "en": "Oh… I really am dodging.",
-              "hl": [
-                4
-              ],
-              "phrases": [
-                {
-                  "t": "À..."
-                },
-                {
-                  "t": "mình đang {nhấn: né} thiệt.",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b08b.wav",
-              "voice_role": "Hiệp-né"
-            }
-          ]
-        },
-        {
-          "id": "b09",
-          "beat": "clip-02.b09",
-          "part": "payoff",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "slide",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.66,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "typing",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "Một dòng code sáng lên, dấu ✓ đóng xuống; Thầy cầm kính lúp soi «khó chịu chỗ nào?»",
-            "word": "một dòng"
-          },
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 1.8,
-              "word": "một dòng"
-            },
-            {
-              "name": "stamp",
-              "atLine": 0,
-              "offset": 5.0,
-              "word": "một dòng"
-            }
-          ],
-          "props": [
-            {
-              "kind": "laptop",
-              "x": 230,
-              "y": 1300,
-              "s": 0.55,
-              "text": "oneup.swift",
-              "sub": "dòng 1 ✓",
-              "at": 0.0
-            },
-            {
-              "kind": "sign",
-              "x": 540,
-              "y": 330,
-              "s": 0.6,
-              "rot": 3,
-              "text": "KHÓ CHỊU CHỖ NÀO? → CHIA NHỎ / 1 DÒNG",
-              "at": 1.6
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Nên đừng mắng mình. Hỏi: **khó chịu chỗ nào?** Rối thì chia việc nhỏ, ngán thì chỉ sửa **một dòng**.",
-              "say": "Nên đừng mắng mình. Hỏi: khó chịu chỗ nào? Rối thì chia việc nhỏ, ngán thì chỉ sửa một dòng.",
-              "en": "So don't scold yourself. Ask: what exactly feels bad? Messy? Split it small. Dreading it? Fix just one line.",
-              "hl": [
-                2,
-                8,
-                10,
-                17
-              ],
-              "phrases": [
-                {
-                  "t": "Nên đừng mắng mình."
-                },
-                {
-                  "t": "Hỏi: {nhấn: khó chịu chỗ nào}?",
-                  "emph": true
-                },
-                {
-                  "t": "Rối thì chia việc nhỏ,"
-                },
-                {
-                  "t": "ngán thì chỉ sửa {nhấn: một dòng}.",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b09a.wav",
-              "voice_role": "Thầy"
-            }
-          ]
-        },
-        {
-          "id": "b09c",
-          "beat": "clip-02.b09",
-          "part": "payoff",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.66,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "typing",
-              "expression": "focused"
-            }
-          ],
-          "fx": {
-            "visual": "Callback clip 01: thẻ NẾU… THÌ… lật ra '21:00 · bàn · mở file → gõ 1 dòng'; lịch tự khoanh NGÀY XONG",
-            "word": "chín giờ tối"
-          },
-          "sfx": [
-            {
-              "name": "tick",
-              "atLine": 0,
-              "offset": 1.0,
-              "word": "chín giờ tối"
-            },
-            {
-              "name": "stamp",
-              "atLine": 0,
-              "offset": 4.5,
-              "word": "ngày xong"
-            }
-          ],
-          "props": [
-            {
-              "kind": "sign",
-              "x": 540,
-              "y": 330,
-              "s": 0.6,
-              "rot": -3,
-              "text": "NẾU 21:00 · BÀN → GÕ 1 DÒNG",
-              "at": 0.6
-            },
-            {
-              "kind": "calendar",
-              "x": 230,
-              "y": 1200,
-              "s": 0.55,
-              "pages": [
-                "NGÀY XONG: T6"
-              ],
-              "tearAt": []
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Như clip trước: chín giờ tối, ngồi vào bàn, mở file thì gõ một dòng. Không ai hối? Tự đặt ngày xong.",
-              "say": "Như clíp trước: chín giờ tối, ngồi vào bàn, mở phai thì gõ một dòng. Không ai hối? Tự đặt ngày xong.",
-              "en": "Like last clip: 9 p.m., at the desk, open the file, type one line. No one pushing? Set your own due date.",
-              "hl": [
-                3,
-                12,
-                20
-              ],
-              "phrases": [
-                {
-                  "t": "Như clíp trước:"
-                },
-                {
-                  "t": "{nhấn: chín giờ tối}, ngồi vào bàn,",
-                  "emph": true
-                },
-                {
-                  "t": "mở phai thì gõ một dòng."
-                },
-                {
-                  "t": "Không ai hối?"
-                },
-                {
-                  "t": "Tự đặt {nhấn: ngày xong}.",
-                  "emph": true
-                }
-              ],
-              "voice_file": "voice/v17-b09c.wav",
-              "voice_role": "Thầy"
-            }
-          ]
-        },
-        {
-          "id": "b10",
-          "beat": "clip-02.b10",
-          "part": "cta",
-          "role": "Hiệp-né",
-          "background": "grid",
-          "framing": "medium",
-          "push": 0.06,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.5,
-              "facing": "right",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "Hiệp-né quay thẳng camera; chữ COMMENT 1 CHỮ (loop về hook 'né')",
-            "word": "Comment"
-          },
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 1.6,
-              "word": "Comment"
-            }
-          ],
-          "props": [
-            {
-              "kind": "vignette",
-              "at": 0.0,
-              "dark": 0.5
-            },
-            {
-              "kind": "words",
-              "x": 540,
-              "y": 360,
-              "s": 1.1,
-              "words": [
-                "COMMENT 1 CHỮ"
-              ],
-              "dropAt": [
-                1.5
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Không lười, chỉ đang **né**. Việc bạn né khó chịu chỗ nào? Comment một chữ nha!",
-              "say": "Không lười, chỉ đang né. Việc bạn né khó chịu chỗ nào? Com men một chữ nha!",
-              "en": "Not lazy, just dodging. What feels bad about the task you're dodging? Comment one word!",
-              "hl": [
-                1,
-                6,
-                13
-              ],
-              "phrases": [
-                {
-                  "t": "Không lười,"
-                },
-                {
-                  "t": "chỉ đang {nhấn: né}.",
-                  "emph": true
-                },
-                {
-                  "t": "Việc bạn né khó chịu chỗ nào?"
-                },
-                {
-                  "t": "Com men một chữ nha!"
-                }
-              ],
-              "voice_file": "voice/v17-b10.wav",
-              "voice_role": "Hiệp-né"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "length_target": [
-    45,
-    60
-  ],
-  "word_target": [
-    150,
-    190
-  ],
-  "throughline": "Thầy Hiệp nhại 'hướng dẫn trì hoãn chuẩn bài' VÀ Hiệp-né làm theo từng bước; NHƯNG tự chửi chỉ làm né thêm; VÌ VẬY chia ba gạch, hẹn mười phút.",
-  "hook_question": {
-    "text": "Thì cái bản chất của cái việc trì hoãn… là gì?",
-    "asked": "b01",
-    "answered": "b11"
+  {
+   "v": 4,
+   "date": "2026-10-15",
+   "dl": "DL-062",
+   "note": "hook mới do Hiệp đưa; thoại không kể lại hình (luật 61, L-025), ≤120 chữ"
   },
-  "callbacks": [],
-  "structure": {
-    "hook": [
-      "b01",
-      "b02"
-    ],
-    "intro": [
-      "b03",
-      "b04",
-      "b05",
-      "b06"
-    ],
-    "body": {
-      "problem": [
-        "b07",
-        "b08",
-        "b09",
-        "b10"
-      ],
-      "exploration": [
-        "b11"
-      ],
-      "climax": [
-        "b12"
-      ]
-    },
-    "summary": [
-      "b13"
-    ],
-    "cta": [
-      "b14"
-    ]
+  {
+   "v": 5,
+   "date": "2026-10-15",
+   "dl": "DL-063",
+   "note": "v5: throughline ABT, 6 nhịp, callback clip-01 (nếu–thì), nối theo ngữ cảnh, 'Ghét bản thân mình ghê' (luật 62, L-030)"
   },
-  "hook_alt": {
-    "type": "negative",
-    "text": "Đừng chửi mình lười nữa. Coi thầy dạy trì hoãn nè."
+  {
+   "v": 7,
+   "date": "2026-10-15",
+   "dl": "DL-065",
+   "note": "v7 giọng kể chuyện với bạn (rule 64): direct hook, hook→intro→body→summary→1 CTA, {nhấn:} mỗi câu"
   },
-  "voices": {
-    "Thầy": "F5 · Thái Sơn speed 0.9",
-    "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone",
-    "Omi": "không nói (đèn)"
+  {
+   "v": 8,
+   "date": "2026-10-15",
+   "note": "meme variant v8: Thầy Hiệp + Hiệp-né, 14 cảnh, pre-voiced F5 (voice_file)"
   },
-  "pacing": {
-    "lead": 0.15,
-    "lead_tr": 0.05,
-    "tail": 0.25
+  {
+   "v": 14,
+   "date": "2026-10-15",
+   "note": "v14 script Hiệp duyệt (t151): stem bản chất/Thứ nhất/Thứ hai/Và cuối cùng, cảm giác khó chịu, wording fixes; pre-voiced F5 STT-picked"
+  },
+  {
+   "v": 15,
+   "date": "2026-10-16",
+   "dl": "L-036",
+   "note": "v15 draft: Day 2 takeaway (4.9) at b08 + CTA echo, Thứ hai shortened, per-clause phrases + {nhấn:}/{kéo:} (chưa voice)"
+  },
+  {
+   "v": 16,
+   "date": "2026-10-16",
+   "dl": "L-036",
+   "note": "v16 draft: HTB 4.9 message spoken (title, 3 signs, hỏi khó chịu chỗ nào → bớt khó chịu + bước đầu nhỏ, tương quan), hook split into 2 cut scenes (chưa voice)"
+  },
+  {
+   "v": 17,
+   "date": "2026-10-16",
+   "dl": "L-036",
+   "note": "v17 draft: concrete fixes 4.9 + 4.1 (callback clip 01 nếu-thì) + 4.7 chia nhỏ + 4.8 tự đặt ngày; b04 dropped for length (chưa voice)"
   }
+ ],
+ "transition_sfx": {
+  "part": "whoosh-soft",
+  "scene": "swish"
+ },
+ "cover": {
+  "direction": "a",
+  "theme": "dark",
+  "series": "Làm ít, xong nhiều",
+  "ep": 2,
+  "hero": [
+   "LƯỜI?",
+   "ĐANG NÉ!"
+  ],
+  "accent": 1,
+  "strike": 0,
+  "sub": "BẢN CHẤT LÀ GÌ?",
+  "expression": "sad",
+  "action": "reacting",
+  "emote": "!",
+  "tilt": -5
+ },
+ "cover_options": [
+  {
+   "hero": [
+    "LƯỜI?",
+    "ĐANG NÉ!"
+   ],
+   "picked": true
+  },
+  {
+   "hero": [
+    "HOÃN MÃI",
+    "VÌ SỢ"
+   ]
+  },
+  {
+   "hero": [
+    "TỰ MẮNG",
+    "VÔ ÍCH"
+   ]
+  }
+ ],
+ "hook": {
+  "text": "BẢN CHẤT LÀ GÌ?",
+  "scenes": [
+   "b01",
+   "b01b"
+  ],
+  "format": "meme 'Thì cái bản chất của cái việc… là gì?' + chen ngang (v14)"
+ },
+ "engagement": [
+  {
+   "type": "relatable-question",
+   "beat": "b07",
+   "text": "Nghe quen hông?"
+  },
+  {
+   "type": "comment-challenge",
+   "beat": "b10",
+   "text": "Comment một chữ nha!"
+  },
+  {
+   "type": "loop",
+   "beat": "b10",
+   "text": "né",
+   "hook_word": "bản chất"
+  }
+ ],
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "scenes": [
+    {
+     "id": "b01",
+     "beat": "clip-02.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.14,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.72,
+       "facing": "left",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "Smash: chữ BẢN CHẤT đập giữa khung, Thầy gõ thước (frame 0)",
+      "word": "bản chất"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 0.0,
+       "word": "bản chất"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Thì cái **bản chất**…",
+       "say": "Thì cái bản chất...",
+       "en": "So what's the essence…",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Thì cái"
+        },
+        {
+         "t": "{nhấn: bản chất}...",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b01.wav",
+       "voice_role": "Thầy"
+      }
+     ],
+     "narration": "BẢN CHẤT LÀ GÌ?"
+    },
+    {
+     "id": "b01b",
+     "beat": "clip-02.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "bed",
+     "framing": "medium",
+     "push": 0.14,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.72,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "Smash cut: Hiệp mở laptop OneUp → giây sau đã nằm quẹt TikTok 21:00",
+      "word": "TikTok"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 0.0,
+       "word": "của cái việc"
+      },
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.2,
+       "word": "TikTok"
+      }
+     ],
+     "props": [
+      {
+       "kind": "laptop",
+       "x": 260,
+       "y": 1300,
+       "s": 0.55,
+       "text": "OneUp",
+       "sub": "mở…",
+       "at": 0.0
+      },
+      {
+       "kind": "phone",
+       "x": 260,
+       "y": 950,
+       "s": 0.7,
+       "rot": 8,
+       "at": 0.9,
+       "text": "TikTok"
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "…của cái việc mở laptop rồi lướt TikTok… là gì?",
+       "say": "của cái việc mở láp tóp rồi lướt Tíc Tóc... là gì?",
+       "en": "…of opening your laptop, then scrolling TikTok?",
+       "hl": [
+        6
+       ],
+       "phrases": [
+        {
+         "t": "của cái việc mở láp tóp"
+        },
+        {
+         "t": "rồi lướt {nhấn: Tíc Tóc}...",
+         "emph": true
+        },
+        {
+         "t": "là gì?"
+        }
+       ],
+       "voice_file": "voice/v17-b01b.wav",
+       "voice_role": "Thầy"
+      }
+     ]
+    },
+    {
+     "id": "b02",
+     "beat": "clip-02.b02",
+     "part": "hook",
+     "role": "Hiệp-né",
+     "background": "bed",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.72,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp-né thò đầu ôm điện thoại, mắt lim dim; chữ XÍU THÔI? nảy",
+      "word": "xíu thôi"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.6,
+       "word": "xíu thôi"
+      }
+     ],
+     "props": [
+      {
+       "kind": "phone",
+       "x": 260,
+       "y": 1250,
+       "s": 0.7,
+       "rot": 8,
+       "at": 0.0,
+       "text": "TikTok"
+      },
+      {
+       "kind": "words",
+       "x": 540,
+       "y": 330,
+       "s": 1.0,
+       "words": [
+        "XÍU THÔI?"
+       ],
+       "dropAt": [
+        0.5
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Ờ… coi clip **xíu thôi** đã chứ, bạn ơi!",
+       "say": "Ờ... coi clíp xíu thôi đã chứ, bạn ơi!",
+       "en": "Uh… just a few clips first, buddy!",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Ờ... coi clíp {nhấn: xíu thôi}",
+         "emph": true
+        },
+        {
+         "t": "đã chứ, bạn ơi!"
+        }
+       ],
+       "voice_file": "voice/v17-b02.wav",
+       "voice_role": "Hiệp-né"
+      }
+     ]
+    },
+    {
+     "id": "b03",
+     "beat": "clip-02.b03",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "bed",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.7,
+       "facing": "left",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "Thầy chỉ thước vào điện thoại trên gối; ngón cái quẹt lặp lặp lại",
+      "word": "lướt"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 1.0,
+       "word": "lướt"
+      },
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 3.4,
+       "word": "lặp đi lặp lại"
+      }
+     ],
+     "props": [
+      {
+       "kind": "phone",
+       "x": 300,
+       "y": 1250,
+       "s": 0.8,
+       "at": 0.3,
+       "text": "TikTok"
+      },
+      {
+       "kind": "sign",
+       "x": 540,
+       "y": 330,
+       "s": 0.65,
+       "rot": -3,
+       "text": "THỨ NHẤT · LƯỚT LẶP",
+       "at": 0.0
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Thứ nhất là các bạn phải **lướt** liên tục ở trên giường, một cách lặp đi lặp lại.",
+       "say": "Thứ nhất là các bạn phải lướt liên tục ở trên giường, một cách lặp đi lặp lại.",
+       "en": "First: scroll nonstop in bed, over and over.",
+       "hl": [
+        1,
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Thứ nhất là"
+        },
+        {
+         "t": "các bạn phải {nhấn: lướt} liên tục ở trên giường,",
+         "emph": true
+        },
+        {
+         "t": "một cách {nhấn: lặp đi lặp lại}.",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b03.wav",
+       "voice_role": "Thầy"
+      }
+     ]
+    },
+    {
+     "id": "b05",
+     "beat": "clip-02.b05",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.72,
+       "facing": "left",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "confused"
+      }
+     ],
+     "fx": {
+      "visual": "File mở ra → sóng đỏ cảm giác khó chịu; Thầy chỉ sang chổi + app review đồ ăn",
+      "word": "cảm giác khó chịu"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 1.8,
+       "word": "cảm giác khó chịu"
+      },
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 5.0,
+       "word": "đổi việc"
+      }
+     ],
+     "props": [
+      {
+       "kind": "laptop",
+       "x": 290,
+       "y": 1330,
+       "s": 0.7,
+       "text": "oneup.swift",
+       "sub": "KHÓ CHỊU",
+       "at": 0.0
+      },
+      {
+       "kind": "sign",
+       "x": 280,
+       "y": 1200,
+       "s": 0.6,
+       "rot": 3,
+       "text": "THỨ HAI · ĐỔI VIỆC",
+       "at": 4.8
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Thứ hai là khi nào xuất hiện **cái cảm giác khó chịu** khi mở file để làm việc… thì phải đổi việc liền.",
+       "say": "Thứ hai là khi nào xuất hiện cái cảm giác khó chịu khi mở phai để làm việc... thì phải đổi việc liền.",
+       "en": "Second: the moment that uncomfortable feeling shows up when you open the work file… switch tasks fast.",
+       "hl": [
+        4,
+        14
+       ],
+       "phrases": [
+        {
+         "t": "Thứ hai là {nhấn: khi nào}",
+         "emph": true
+        },
+        {
+         "t": "xuất hiện {nhấn: cái cảm giác khó chịu}",
+         "emph": true
+        },
+        {
+         "t": "khi mở phai để làm việc..."
+        },
+        {
+         "t": "thì phải đổi việc liền."
+        }
+       ],
+       "voice_file": "voice/v17-b05.wav",
+       "voice_role": "Thầy"
+      }
+     ]
+    },
+    {
+     "id": "b06",
+     "beat": "clip-02.b06",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "bed",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.72,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "despair"
+      }
+     ],
+     "fx": {
+      "visual": "Chữ LƯỜI rơi đè Hiệp-né (rung); lịch xé sang MAI",
+      "word": "chửi"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 1.6,
+       "word": "chửi"
+      },
+      {
+       "name": "stamp",
+       "atLine": 1,
+       "offset": 0.0,
+       "word": "Đồ lười"
+      }
+     ],
+     "props": [
+      {
+       "kind": "vignette",
+       "at": 0.0,
+       "dark": 0.5
+      },
+      {
+       "kind": "cloud",
+       "x": 540,
+       "y": 270,
+       "s": 0.65,
+       "at": 0.0,
+       "words": [
+        "LƯỜI!"
+       ],
+       "dropAt": [
+        1.6
+       ]
+      },
+      {
+       "kind": "calendar",
+       "x": 220,
+       "y": 1150,
+       "s": 0.55,
+       "pages": [
+        "HÔM NAY",
+        "MAI"
+       ],
+       "tearAt": [
+        3.2
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Và cuối cùng là các bạn phải tự **chửi** bản thân mình cho đã — rồi mai lại né.",
+       "say": "Và cuối cùng là các bạn phải tự chửi bản thân mình cho đã, rồi mai lại né.",
+       "en": "And finally: curse yourself out properly, then dodge again tomorrow.",
+       "hl": [
+        2,
+        9
+       ],
+       "phrases": [
+        {
+         "t": "Và cuối cùng là"
+        },
+        {
+         "t": "các bạn phải tự {nhấn: chửi} bản thân mình cho đã,",
+         "emph": true
+        },
+        {
+         "t": "rồi mai lại né."
+        }
+       ],
+       "voice_file": "voice/v17-b06a.wav",
+       "voice_role": "Thầy"
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "text": "Đồ lười! Thôi **để mai**…",
+       "say": "Đồ lười! Thôi để mai...",
+       "en": "Lazy bum! Eh… tomorrow then…",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Đồ lười!"
+        },
+        {
+         "t": "Thôi {nhấn: để mai}...",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b06b.wav",
+       "voice_role": "Hiệp-né"
+      }
+     ]
+    },
+    {
+     "id": "b07",
+     "beat": "clip-02.b07",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "iris",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "surprised"
+      }
+     ],
+     "fx": {
+      "visual": "Thầy tháo kính; bảng STEEL 2007 · 691 KẾT QUẢ; 3 dấu hỏi KHÓ CHỊU? / LÀM ĐƯỢC? / BỊ CUỐN? rơi theo từng chữ; nhãn nhỏ TƯƠNG QUAN",
+      "word": "691"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 3.0,
+       "word": "691"
+      },
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 8.5,
+       "word": "cuốn"
+      }
+     ],
+     "props": [
+      {
+       "kind": "sign",
+       "x": 250,
+       "y": 1000,
+       "s": 0.45,
+       "rot": -3,
+       "text": "STEEL 2007 · 691 KẾT QUẢ",
+       "at": 2.8
+      },
+      {
+       "kind": "words",
+       "x": 260,
+       "y": 1220,
+       "s": 0.5,
+       "words": [
+        "KHÓ CHỊU?",
+        "LÀM ĐƯỢC?",
+        "BỊ CUỐN?"
+       ],
+       "dropAt": [
+        5.5,
+        7.0,
+        8.5
+       ]
+      },
+      {
+       "kind": "sign",
+       "x": 260,
+       "y": 1380,
+       "s": 0.5,
+       "rot": 2,
+       "text": "TƯƠNG QUAN",
+       "at": 0.5
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Nghe quen hông? Mà các nhà khoa học nói: Steel gom **691** kết quả, hoãn vì ba thứ: việc khó chịu cỡ nào, mình thấy làm được không, và thứ trước mắt cuốn cỡ nào.",
+       "say": "Nghe quen hông? Mà các nhà khoa học nói: Xtiu gom sáu trăm chín mươi mốt kết quả, hoãn vì ba thứ: việc khó chịu cỡ nào, mình thấy làm được không, và thứ trước mắt cuốn cỡ nào.",
+       "en": "Sound familiar? But scientists say: Steel pooled 691 results. Delay tracks three things: how unpleasant the task is, whether you think you can do it, how hard distractions pull.",
+       "hl": [
+        1,
+        7,
+        14,
+        22,
+        28
+       ],
+       "phrases": [
+        {
+         "t": "Nghe quen hông?"
+        },
+        {
+         "t": "Mà các nhà khoa học nói:"
+        },
+        {
+         "t": "Xtiu gom {nhấn: sáu trăm chín mươi mốt} kết quả,",
+         "emph": true
+        },
+        {
+         "t": "hoãn vì ba thứ:"
+        },
+        {
+         "t": "việc {nhấn: khó chịu} cỡ nào,",
+         "emph": true
+        },
+        {
+         "t": "mình thấy {nhấn: làm được} không,",
+         "emph": true
+        },
+        {
+         "t": "và thứ trước mắt {nhấn: cuốn} cỡ nào.",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b07.wav",
+       "voice_role": "Thầy"
+      }
+     ]
+    },
+    {
+     "id": "b08",
+     "beat": "clip-02.b08",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.74,
+       "facing": "left",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "sad"
+      }
+     ],
+     "fx": {
+      "visual": "Takeaway: chữ LƯỜI bị gạch, thay bằng NÉ KHÓ CHỊU; bậc thang đầu tiên thu nhỏ còn 1 bậc tí xíu",
+      "word": "tránh cảm giác khó chịu"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 1.2,
+       "word": "tránh cảm giác khó chịu"
+      },
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 5.0,
+       "word": "đi chung"
+      }
+     ],
+     "props": [
+      {
+       "kind": "sign",
+       "x": 270,
+       "y": 1150,
+       "s": 0.45,
+       "rot": -4,
+       "text": "TRÁNH KHÓ CHỊU ≠ CHƯA CỐ GẮNG",
+       "at": 0.8
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Vậy trì hoãn là đang **tránh cảm giác khó chịu**, không phải chưa đủ cố gắng. Mới thấy đi chung thôi.",
+       "say": "Vậy trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng. Mới thấy đi chung thôi.",
+       "en": "So procrastination is avoiding a bad feeling, not a lack of effort. Only a link so far.",
+       "hl": [
+        3,
+        11,
+        14
+       ],
+       "phrases": [
+        {
+         "t": "Vậy trì hoãn"
+        },
+        {
+         "t": "là đang {nhấn: tránh cảm giác khó chịu},",
+         "emph": true
+        },
+        {
+         "t": "không phải chưa đủ cố gắng."
+        },
+        {
+         "t": "Mới thấy đi chung thôi."
+        }
+       ],
+       "voice_file": "voice/v17-b08a.wav",
+       "voice_role": "Thầy"
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "À… mình đang **né** thiệt.",
+       "say": "À... mình đang né thiệt.",
+       "en": "Oh… I really am dodging.",
+       "hl": [
+        4
+       ],
+       "phrases": [
+        {
+         "t": "À..."
+        },
+        {
+         "t": "mình đang {nhấn: né} thiệt.",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b08b.wav",
+       "voice_role": "Hiệp-né"
+      }
+     ]
+    },
+    {
+     "id": "b09",
+     "beat": "clip-02.b09",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.66,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "typing",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "Một dòng code sáng lên, dấu ✓ đóng xuống; Thầy cầm kính lúp soi «khó chịu chỗ nào?»",
+      "word": "một dòng"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.8,
+       "word": "một dòng"
+      },
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 5.0,
+       "word": "một dòng"
+      }
+     ],
+     "props": [
+      {
+       "kind": "laptop",
+       "x": 230,
+       "y": 1300,
+       "s": 0.55,
+       "text": "oneup.swift",
+       "sub": "dòng 1 ✓",
+       "at": 0.0
+      },
+      {
+       "kind": "sign",
+       "x": 540,
+       "y": 330,
+       "s": 0.6,
+       "rot": 3,
+       "text": "KHÓ CHỊU CHỖ NÀO? → CHIA NHỎ / 1 DÒNG",
+       "at": 1.6
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Nên đừng mắng mình. Hỏi: **khó chịu chỗ nào?** Rối thì chia việc nhỏ, ngán thì chỉ sửa **một dòng**.",
+       "say": "Nên đừng mắng mình. Hỏi: khó chịu chỗ nào? Rối thì chia việc nhỏ, ngán thì chỉ sửa một dòng.",
+       "en": "So don't scold yourself. Ask: what exactly feels bad? Messy? Split it small. Dreading it? Fix just one line.",
+       "hl": [
+        2,
+        8,
+        10,
+        17
+       ],
+       "phrases": [
+        {
+         "t": "Nên đừng mắng mình."
+        },
+        {
+         "t": "Hỏi: {nhấn: khó chịu chỗ nào}?",
+         "emph": true
+        },
+        {
+         "t": "Rối thì chia việc nhỏ,"
+        },
+        {
+         "t": "ngán thì chỉ sửa {nhấn: một dòng}.",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b09a.wav",
+       "voice_role": "Thầy"
+      }
+     ]
+    },
+    {
+     "id": "b09c",
+     "beat": "clip-02.b09",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.66,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "typing",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "Callback clip 01: thẻ NẾU… THÌ… lật ra '21:00 · bàn · mở file → gõ 1 dòng'; lịch tự khoanh NGÀY XONG",
+      "word": "chín giờ tối"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 1.0,
+       "word": "chín giờ tối"
+      },
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 4.5,
+       "word": "ngày xong"
+      }
+     ],
+     "props": [
+      {
+       "kind": "sign",
+       "x": 540,
+       "y": 330,
+       "s": 0.6,
+       "rot": -3,
+       "text": "NẾU 21:00 · BÀN → GÕ 1 DÒNG",
+       "at": 0.6
+      },
+      {
+       "kind": "calendar",
+       "x": 230,
+       "y": 1200,
+       "s": 0.55,
+       "pages": [
+        "NGÀY XONG: T6"
+       ],
+       "tearAt": []
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Như clip trước: chín giờ tối, ngồi vào bàn, mở file thì gõ một dòng. Không ai hối? Tự đặt ngày xong.",
+       "say": "Như clíp trước: chín giờ tối, ngồi vào bàn, mở phai thì gõ một dòng. Không ai hối? Tự đặt ngày xong.",
+       "en": "Like last clip: 9 p.m., at the desk, open the file, type one line. No one pushing? Set your own due date.",
+       "hl": [
+        3,
+        12,
+        20
+       ],
+       "phrases": [
+        {
+         "t": "Như clíp trước:"
+        },
+        {
+         "t": "{nhấn: chín giờ tối}, ngồi vào bàn,",
+         "emph": true
+        },
+        {
+         "t": "mở phai thì gõ một dòng."
+        },
+        {
+         "t": "Không ai hối?"
+        },
+        {
+         "t": "Tự đặt {nhấn: ngày xong}.",
+         "emph": true
+        }
+       ],
+       "voice_file": "voice/v17-b09c.wav",
+       "voice_role": "Thầy"
+      }
+     ]
+    },
+    {
+     "id": "b10",
+     "beat": "clip-02.b10",
+     "part": "cta",
+     "role": "Hiệp-né",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp-né quay thẳng camera; chữ COMMENT 1 CHỮ (loop về hook 'né')",
+      "word": "Comment"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.6,
+       "word": "Comment"
+      }
+     ],
+     "props": [
+      {
+       "kind": "vignette",
+       "at": 0.0,
+       "dark": 0.5
+      },
+      {
+       "kind": "words",
+       "x": 540,
+       "y": 360,
+       "s": 1.1,
+       "words": [
+        "COMMENT 1 CHỮ"
+       ],
+       "dropAt": [
+        1.5
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Không lười, chỉ đang **né**. Việc bạn né khó chịu chỗ nào? Comment một chữ nha!",
+       "say": "Không lười, chỉ đang né. Việc bạn né khó chịu chỗ nào? Com men một chữ nha!",
+       "en": "Not lazy, just dodging. What feels bad about the task you're dodging? Comment one word!",
+       "hl": [
+        1,
+        6,
+        13
+       ],
+       "phrases": [
+        {
+         "t": "Không lười,"
+        },
+        {
+         "t": "chỉ đang {nhấn: né}.",
+         "emph": true
+        },
+        {
+         "t": "Việc bạn né khó chịu chỗ nào?"
+        },
+        {
+         "t": "Com men một chữ nha!"
+        }
+       ],
+       "voice_file": "voice/v17-b10.wav",
+       "voice_role": "Hiệp-né"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "length_target": [
+  45,
+  60
+ ],
+ "word_target": [
+  150,
+  190
+ ],
+ "throughline": "Thầy Hiệp nhại 'hướng dẫn trì hoãn chuẩn bài' VÀ Hiệp-né làm theo từng bước; NHƯNG tự chửi chỉ làm né thêm; VÌ VẬY chia ba gạch, hẹn mười phút.",
+ "hook_question": {
+  "text": "Thì cái bản chất của cái việc trì hoãn… là gì?",
+  "asked": "b01",
+  "answered": "b11"
+ },
+ "callbacks": [],
+ "structure": {
+  "hook": [
+   "b01",
+   "b02"
+  ],
+  "intro": [
+   "b03",
+   "b04",
+   "b05",
+   "b06"
+  ],
+  "body": {
+   "problem": [
+    "b07",
+    "b08",
+    "b09",
+    "b10"
+   ],
+   "exploration": [
+    "b11"
+   ],
+   "climax": [
+    "b12"
+   ]
+  },
+  "summary": [
+   "b13"
+  ],
+  "cta": [
+   "b14"
+  ]
+ },
+ "hook_alt": {
+  "type": "negative",
+  "text": "Đừng chửi mình lười nữa. Coi thầy dạy trì hoãn nè."
+ },
+ "voices": {
+  "Thầy": "F5 · Thái Sơn speed 0.9",
+  "Hiệp-né": "F5 · Thái Sơn speed 0.95, +2 semitone",
+  "Omi": "không nói (đèn)"
+ },
+ "pacing": {
+  "lead": 0.15,
+  "lead_tr": 0.05,
+  "tail": 0.25
+ }
 }

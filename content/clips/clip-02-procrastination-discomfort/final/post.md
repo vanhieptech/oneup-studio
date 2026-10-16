@@ -1,84 +1,89 @@
 ---
-title: "Gói đăng TikTok: clip 02 \"Lười? Không, đang né\""
-date: 2026-10-14
+title: "Gói đăng TikTok: clip 02 v17 \"Lười? Không, đang né\""
+date: 2026-10-16
 source: "oneup-studio (soạn trong repo)"
 id: clip-02.post
 type: post-package
 template: post-package v1 (rule-53)
-status: NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build)
-updated: 2026-10-14
+status: sẵn sàng đăng (Hiệp duyệt bản v17 final 16/10); chưa lưu trữ, chờ Hiệp duyệt gói đăng
+updated: 2026-10-16
+video: final/out/clip-02-v17-final.mp4
+cover: final/cover.png
+cover_frame_s: 58.2
+tiktok_title: "Lười hay đang né? Bản chất của việc mở laptop rồi lướt TikTok"
+hashtags: ["#trihoan", "#khongphailuoi", "#tamlyhoc", "#studytok", "#learnontiktok"]
 tags: [clip-02, post, tiktok, week-1]
 ---
-# Gói đăng TikTok: clip 02 "Lười? Không, đang né"
+# Gói đăng TikTok: clip 02 v17 "Lười? Không, đang né"
 
 ## 1. File video
 ```
-Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-final.mp4 (bản v1 60.7s, cần render lại theo kịch bản v2)
-Thời lượng: dự kiến 54–58s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+Đường dẫn: content/clips/clip-02-procrastination-discomfort/final/out/clip-02-v17-final.mp4
+Thời lượng: 62,65s (DL-067: >60s được phép) · 1080×1920 (9:16) · 30fps · H.264 High + AAC 48 kHz · −14,7 LUFS · 40,5 MB
 ```
 
-## 2. Chữ trên cover (≤ 40 ký tự)
+## 2. Chữ trên cover (≤ 40 ký tự) + tiêu đề TikTok (≤ 70 ký tự)
 ```
-LƯỜI? → ĐANG NÉ!
+Cover: BẢN CHẤT LÀ GÌ? · LƯỜI? → ĐANG NÉ!
+Tiêu đề: Lười hay đang né? Bản chất của việc mở laptop rồi lướt TikTok
 ```
-Cover: **template A** (luật 54), props trong `spec.json → cover`. File: `final/cover.png`. Frame cover: **0s** (tải ảnh bìa lên riêng).
+Cover: **template A** (luật 54), props trong `spec.json → cover` (bản sao `final/cover/cover-v17.props.json`). File: `final/cover.png` (1080×1920). Tải ảnh bìa lên riêng. Nếu chỉ chọn được frame trong video thì dùng **58,2s** (b10: Hiệp nhìn camera, «Không lười, chỉ đang né»).
 
-## 3. Caption / tiêu đề TikTok (VI)
+## 3. Caption / mô tả TikTok (VI)
 ```
-POV: tính năng Omi. Hôm nay dời, mai lại dời, thành dự án ma luôn. Thế là mở code, 5 giây sau lướt TikTok… rồi chán nản, tội lỗi, tự xỉ vả "lười quá". Nghe quen không?
-Thứ bạn né đâu phải công việc, mà là cảm giác khó chịu nó gây ra: chán ngán, sợ hỏng, rối.
-Gộp 691 hệ số tương quan (Steel, 2007): việc càng khó chịu, càng thấy mình kém thì càng dễ hoãn. Phần thưởng tận cuối tháng, còn khó chịu ập tới ngay, nên tay chộp TikTok.
-Cách gỡ: trước khi làm, hỏi "việc này khó chịu ở chỗ nào?". Không biết bắt đầu thì viết 3 gạch đầu dòng. Sợ làm dở thì cho phép nháp xấu. Thấy chán thì hẹn 10 phút.
-Lỗi hay gặp: mắng mình rồi gồng.
-Lưu ý: đây là nghiên cứu tương quan, chỉ cho thấy hướng. Lưu lại, lần sau hoãn thì mở ra.
-Việc bạn đang hoãn khó chịu ở chỗ nào? Comment một chữ 👇
-Giọng nhân vật là giọng AI tổng hợp (F5-TTS). Nội dung chuyển thể từ HowToLiveBetter (CC BY 4.0).
-#learnontiktok #hoctap #trihoan #khongphailuoi #dideadline
+Thì cái bản chất của việc mở laptop rồi lướt TikTok… là gì? 😮‍💨
+Bạn không lười đâu. Trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng.
+Steel (2007) gom 691 kết quả nghiên cứu: mình hoãn nhiều hơn khi việc càng khó chịu, khi thấy mình khó làm được, và khi thứ trước mắt càng cuốn. Đây là nghiên cứu tương quan, chỉ cho thấy chúng đi chung với nhau.
+Cách gỡ: đừng mắng mình. Hỏi "việc này khó chịu chỗ nào?". Rối thì chia việc nhỏ. Ngán thì chỉ sửa một dòng. Như clip trước: 9h tối, ngồi vào bàn, mở file thì gõ một dòng. Không ai hối thì tự đặt ngày xong.
+Việc bạn đang né khó chịu chỗ nào? Comment một chữ 👇
+Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS).
+Nội dung chuyển thể từ HowToLiveBetter (CC BY 4.0, đã chuyển thể): https://github.com/chuanman2707/HowToLiveBetter · Giấy phép: https://creativecommons.org/licenses/by/4.0/
+#trihoan #khongphailuoi #tamlyhoc #studytok #learnontiktok
 ```
 
-## 4. Hashtag (5: rộng / ngách / VN)
+## 4. Hashtag (5: ngách / ngách / chủ đề / rộng EN / rộng)
 ```
-#learnontiktok #hoctap #trihoan #khongphailuoi #dideadline
+#trihoan #khongphailuoi #tamlyhoc #studytok #learnontiktok
 ```
-Nguồn: danh sách hashtag học tập/năng suất TikTok VN 2026 (fptshop.com.vn, mktsoftware.vn). Thẻ `#trihoan` là thẻ ngách đúng chủ đề; cần kiểm tra lượt xem trong app lúc đăng. Không dùng thẻ spam.
+Nguồn: research/trends/2026-10-16 (apify clockworks + raw.json): `#learnontiktok` (10 lần), `#trihoan` (7), `#studytok` (2). `#tamlyhoc` và `#khongphailuoi` là thẻ đúng thông điệp (chưa có số liệu, cần kiểm tra lượt xem trong app lúc đăng). So với clip-01 (`#learnontiktok #hoctap #hoctienganh #quanlythoigian #phattrienbanthan`) chỉ trùng 1 thẻ rộng `#learnontiktok`. Thẻ ngách là thẻ mới cho chủ đề trì hoãn. Bỏ `#fyp #xuhuong #viral #xuhuongtiktok` (spam) và `#hoctap #phattrienbanthan` (đã dùng ở clip-01). Luật 53: tối đa 5 thẻ.
 
 ## 5. Từ khoá SEO
 ```
-trì hoãn, lười, né cảm giác khó chịu, chống trì hoãn, deadline, cách bắt đầu làm việc, tâm lý học
+trì hoãn, không phải lười, né cảm giác khó chịu, chống trì hoãn, lướt TikTok, bắt đầu làm việc, tâm lý học, Steel 2007
 ```
 
 ## 6. Bình luận ghim
 ```
-Của mình: tính năng Omi → "rối" (không biết bắt đầu từ đâu). Còn bạn? Comment đúng 1 chữ: chán / sợ / rối / … 👇 Mình sẽ trả lời từng chữ một cách gỡ.
+Của mình: mở file code thấy "rối" là đi lướt liền 😅 Còn bạn? Comment đúng 1 chữ: chán / sợ / rối / … 👇 Mình trả lời từng chữ một cách gỡ.
 ```
 
 ## 7. Giờ đăng đề xuất (giờ VN)
 ```
-Theo lịch tuần 1 (sau clip-01), đăng lúc 18:45 (khung 19:00–21:00)
+18:45, đúng khung 19:00–21:00 (giờ mặc định của lịch tuần 1, sau clip-01)
 ```
-Lý do: cùng dữ liệu như clip-01 (ecomobi.com, multilogin.com, postify.tech, taki.vn). Đây là giờ mặc định cho tới khi có Analytics.
+Lý do: dùng chung dữ liệu với clip-01 (ecomobi.com, multilogin.com, postify.tech, taki.vn). Đây là giờ mặc định cho tới khi có Analytics.
 
 ## 8. Âm thanh
 ```
-Thêm nhạc từ TikTok Commercial Music Library. Mood: lo-fi trầm, chậm (theme dark), không lời. Âm lượng: giọng gốc 100%, nhạc 5–10%. Trong file không có nhạc; SFX + ambience đã mix sẵn.
+Thêm nhạc từ TikTok Commercial Music Library. Mood: lo-fi vui, nhẹ, không lời. Âm lượng: giọng gốc 100%, nhạc 5–10%. Trong file không có nhạc; SFX + ambience đã mix sẵn.
 ```
 
 ## 9. Checklist cài đặt khi đăng
 ```
 [ ] Bật "Nội dung do AI tạo" (AI-generated content): ON
-[ ] Dòng công bố trong caption: "Giọng nhân vật là giọng AI tổng hợp (F5-TTS)."
+[ ] Dòng công bố trong caption: "Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS)."
 [ ] Cho phép bình luận: ON · Duet: ON · Stitch: ON
 [ ] Ai có thể xem: Mọi người (Everyone)
 [ ] Vị trí: không gắn
 [ ] Nội dung thương mại / quảng cáo: OFF (DL-035)
 [ ] Playlist: "Làm ít, xong nhiều"
-[ ] Ảnh bìa: cover.png
+[ ] Ảnh bìa: cover.png (dự phòng: frame 58,2s)
 [ ] Ghim bình luận ở mục 6
 ```
 
 ## 10. Ghi nguồn (luật 13)
 ```
-Nội dung chuyển thể từ "Cẩm nang sống đáng giá" / HowToLiveBetter (https://github.com/chuanman2707/HowToLiveBetter), CC BY 4.0, đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/ · Nghiên cứu: Steel (2007), Psychological Bulletin 133(1), 65–94.
+Nội dung chuyển thể từ "Cẩm nang sống đáng giá" / HowToLiveBetter mục 4.9 (+ 4.1, 4.7, 4.8) (https://github.com/chuanman2707/HowToLiveBetter), CC BY 4.0, đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/ · Nghiên cứu: Steel (2007), Psychological Bulletin 133(1), 65–94.
 ```
 
 ## 11. Series / playlist
