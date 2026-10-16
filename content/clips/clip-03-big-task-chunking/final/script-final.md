@@ -31,3 +31,21 @@ note: "Hiệp chốt 16/10 (t194). voice_prefix c03v8; Thầy F5 Thái Sơn 0.9;
 | b08 | Ôn thi cũng vậy: \| đừng ghi «ôn thi», \| ghi «làm {nhấn: một đề} chương hai». \| Cộng thời gian từng việc lại \| là biết {nhấn: chừng nào xong} thật. | Chibi Hiệp: ÔN THI → ĐỀ CHƯƠNG 2, cộng lên lịch |
 | b09 | Như clip trước mình nói, \| rối thì {nhấn: chia nhỏ}. \| Còn clip đầu tiên: \| chín giờ tối, ngồi vào bàn, \| làm {nhấn: việc nhỏ đầu tiên}. | Callback clip-02 / clip-01 (NẾU 21:00) |
 | b10 | Bạn thấy đó, \| không phải mình lười, \| mà là việc {nhấn: to quá} thôi. \| Việc bạn để {nhấn: cả năm} chưa làm là gì? \| Comment một chữ cho mình biết nha! | Sticky «CUỐI TUẦN LÀM» rớt khỏi móc (loop hook); COMMENT 1 CHỮ |
+
+## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
+Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
+
+| Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
+|---|---|---|---|---|---|
+| b01 | remotion | mmx-oversize-land: sticky CUỐI TUẦN LÀM treo móc đập frame 0 | “cuối tuần” | `stamp` → “cuối tuần”; `pop` → “cuối tuần” | mở đầu |
+| b01b | remotion | Cắt cứng: lịch lật T1→T12 (mmx-accel-exit), sticky vẫn treo | “cả năm” | `swish` → “mà để”; `stamp` → “cả năm” | cut (`swish`) |
+| b02 | remotion | mmx-glide: 2 thẻ treo DỌN PHÒNG · ÔN THI đung đưa | “cuối tuần làm” | `pop` → “dọn cái phòng”; `tick` → “cuối tuần làm” | cut (`swish`) |
+| b03 | remotion | mmx-snap-settle: thẻ DỌN PHÒNG phình to đùng, Hiệp lùi lại | “ngợp” | `stamp` → “to đùng”; `snap` → “ngợp” | cut (`swish`) |
+| b04 | remotion | motion graphic: KRUGER & EVANS 2004; tên việc bung ra danh sách bước (tdev-stagger), không số | “ghi ra từng bước nhỏ” | `ding` → “Kruger”; `pop` → “ghi ra”; `stamp` → “đâu có ít” | mmx-soft-land (`swish`) |
+| b05 | remotion | motion graphic: STEEL 2007 · TỔNG HỢP NGHIÊN CỨU; NGẠI ↑ → ĐỂ MAI; không số | “để mai tính” | `ding` → “Steel”; `tick` → “để mai tính”; `stamp` → “cả năm” | tdev-panel (`swish`) |
+| b06 | remotion | Thầy cắt sợi dây treo, thẻ to vỡ thành thẻ nhỏ (tdev-stagger) | “chia nhỏ ra” | `snap` → “chia nhỏ ra”; `pop` → “chia nhỏ ra” | tdev-stagger (`swish`) |
+| b07 | remotion | chibi Hiệp làm mẫu: tick 3 thẻ, mỗi thẻ 15' | “dọn đống đồ” | `tick` → “dọn đống đồ”; `tick` → “lau cái bàn”; `tick` → “đổ sọt rác” | mmx-snap-settle (`swish`) |
+| b08 | remotion | chibi Hiệp: tdev-text-swap ÔN THI → ĐỀ CHƯƠNG 2, cộng lên lịch | “một đề” | `pop` → “một đề”; `ding` → “chừng nào xong” | tdev-text-swap (`swish`) |
+| b09 | remotion | tdev-modal: callback clip-02 RỐI → CHIA NHỎ, clip-01 NẾU 21:00 | “chia nhỏ” | `pop` → “chia nhỏ”; `tick` → “chín giờ tối” | tdev-modal (`swish`) |
+| b10 | remotion | mmx-pop-over (spring duy nhất): sticky CUỐI TUẦN LÀM rớt khỏi móc (loop hook), COMMENT 1 CHỮ | “Comment” | `swish` → “Bạn thấy đó”; `pop` → “Comment” | cut (`swish`) |
+

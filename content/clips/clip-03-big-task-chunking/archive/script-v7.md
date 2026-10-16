@@ -5,9 +5,9 @@ type: script
 tags: [clip-03, script, chunking, howtolivebetter-4.7, howtolivebetter-4.9, howtolivebetter-4.1, monologue, open-question-hook, L-039, L-040, L-043, L-044, L-045]
 status: archived
 source: "HowToLiveBetter 4.7 (Kruger & Evans 2004; Steel 2007; mức B) · callback clip-02 (4.9) + clip-01 (4.1) · nỗi đau thật từ comment Apify 16/10 (@hoaquynh0000 «phòng chất đầy đồ» 1.918 like; @thnguyen.y «Muốn học mà mắc lười» 904 like)"
-id: clip-03.script-final
+id: clip-03.script-v7
 version: v7
-supersedes: archive/script-v6.md
+supersedes: script-v6.md
 template: templates/script.md (biến thể độc thoại + hook câu hỏi mở L-043)
 note: "gate 1, chưa voice; ≈252 chữ ≈ 68–73s (Hiệp cho phép > 60s); b03/b04/b05 cắt 2 shot; nha/nè 3 lần"
 ---

@@ -52,7 +52,8 @@ tags: [index, retrieval]
 | clip-03.script-v4 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v4.md` | Clip 03 v4: Sao hứa dọn phòng hoài không xong? → chia việc lớn thành việc con |
 | clip-03.script-v5 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v5.md` | Clip 03 v5: Việc treo cả năm → chia thành việc con |
 | clip-03.script-v6 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v6.md` | Clip 03 v6: Việc treo cả năm → chia thành việc con |
-| clip-03.script-final | script | draft | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v7: Việc treo cả năm → chia thành việc con |
+| clip-03.script-v7 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v7.md` | Clip 03 v7: Việc treo cả năm → chia thành việc con |
+| clip-03.script-final | script | locked | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v8 (CHỐT): Việc để cả năm → chia thành việc con |
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
