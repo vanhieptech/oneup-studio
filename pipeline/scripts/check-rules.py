@@ -414,6 +414,14 @@ def main():
     miss = [i for i in ids if f"| {i} |" not in tab]
     (ok if tab and not miss else err)("rule-52", "script-final.md effects table covers every beat" + (f" — missing {miss or 'table'} (run pipeline/scripts/fx-table.py --write)" if (miss or not tab) else ""))
     (ok if not tab or "**THIẾU**" not in tab else err)("rule-52", "effects table has no **THIẾU** cells")
+    # L-044: script lines flow as connected speech — ≤ 5 phrases per beat, ≤ 1 fragment under 3 words
+    chop = []
+    for row in stx.split("## Kịch bản", 1)[-1].split("\n") if "## Kịch bản" in stx else []:
+        cc = row.split(" | ")
+        if not row.startswith("| b") or len(cc) < 5: continue
+        ph = [re.sub(r"\{nhấn: |\{kéo: |\}|[«»…:;,.?!]", " ", x).split() for x in cc[3].split("\\|")]
+        if len(ph) > 5 or sum(1 for x in ph if 0 < len(x) < 3) >= 2 or (len(ph) >= 4 and sum(map(len, ph)) / len(ph) < 4.5): chop.append(f"{cc[0][2:].split()[0]}:{len(ph)}ph")
+    (warn if chop else ok)("L-044", "script beats flow (≤ 5 phrases, ≤ 1 fragment < 3 words, ≥ 4 phrases need avg ≥ 4.5 words)" + (f"; choppy: {chop}" if chop else ""))
     # rule-51 (DL-043): every explainer section has ≥1 marked hit with an accent SFX, mixed at the hit time
     if final and tpath and os.path.exists(tpath):
         tj = json.load(open(tpath)); hits = tj.get("hits", []); mixs = tj.get("sfx_mix", [])

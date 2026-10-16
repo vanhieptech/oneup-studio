@@ -54,3 +54,9 @@ Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt bu�
 - Sau hook là **diễn giải**: nguyên nhân (người xem nhận ra mình) → bằng chứng (motion graphics, không bịa số) → thông điệp HTB nói thành lời → 2 ví dụ đời thường → callback → 1 CTA (loop về hook).
 - Stem meme («bản chất»…) chỉ dùng khi tự nhiên với câu hỏi; nếu làm chậm vào nỗi đau thì bỏ.
 - Ghi 2 hook câu hỏi dự phòng. Mục tiêu ~50–60s, mỗi beat ≤ 20 chữ (≤ 8s/shot), xen 1–3 từ tiếng Anh quen (task, deadline).
+
+## Nói liền mạch, không chặt vụn (L-044)
+- Mỗi beat là 1–2 câu nói tự nhiên, tách `|` thành **2–4 phrase** (tối đa 5), mỗi phrase ≥ 3 chữ; không chặt thành chuỗi mảnh 2–3 chữ.
+- Beat sau mở bằng từ nối với beat trước (Vì…, Mà khoa học cũng thấy…, Còn…, Vậy thì…, Lấy … làm thử nha, … cũng vậy, Giống clip trước…, Thấy chưa…).
+- Beat dài > ~25 chữ (> 8s) thì cắt 2 shot giữa câu, không cắt câu.
+- check-rules `L-044` cảnh báo khi bảng script vi phạm.
