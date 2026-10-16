@@ -1,70 +1,986 @@
 {
   "actor": "clockworks/tiktok-scraper",
-  "run_id": "au2F9eFcWhzuaXWnz",
-  "item_count": 3,
+  "run_id": "GjDxjHOvo7LWub0CA",
+  "item_count": 9,
   "fields_coverage": {
     "url": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "caption": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "author": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "play_count": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "like_count": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "share_count": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "comment_count": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "duration_s": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "music": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "hashtags": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "subtitle_or_transcript": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     },
     "top_comments": {
-      "present": 3,
-      "of": 3,
+      "present": 9,
+      "of": 9,
       "pct": 100.0
     }
   },
   "clips": [
+    {
+      "url": "https://www.tiktok.com/@thnguyen.y/video/7663776976519384340",
+      "caption": "hy vọng kiên trì học đến những bậc cao hơn để có thể tiếp tục chia sẻ đến mọi người 🥹 \n#TiengTrung #chinese #study #hoctap #fyp ",
+      "author": {
+        "id": "7419559215855354900",
+        "name": "thnguyen.y",
+        "nick": "Thảo Nguyên đây",
+        "profile": "https://www.tiktok.com/@thnguyen.y",
+        "fans": 13300
+      },
+      "play_count": 1500000,
+      "like_count": 105700,
+      "share_count": 8465,
+      "comment_count": 567,
+      "duration_s": 66,
+      "music": {
+        "id": "7462934988850203393",
+        "name": "suara asli",
+        "author": "CapybaraBersaudara",
+        "original": null
+      },
+      "hashtags": [
+        "TiengTrung",
+        "chinese",
+        "study",
+        "hoctap",
+        "fyp"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "caption_fallback",
+        "text": "hy vọng kiên trì học đến những bậc cao hơn để có thể tiếp tục chia sẻ đến mọi người 🥹 \n#TiengTrung #chinese #study #hoctap #fyp ",
+        "links": []
+      },
+      "top_comments": [
+        {
+          "text": "ui e cũng đg học thầy yangdexin dễ hiểu cực 🥰",
+          "likes": 555,
+          "author": "nongtai.07"
+        },
+        {
+          "text": "Tui cũng học series này trên ytb. 2 tháng xong hsk3🥰",
+          "likes": 50,
+          "author": "iamsawako"
+        },
+        {
+          "text": "Muốn học mà mắc lười 🤣",
+          "likes": 904,
+          "author": "ho.phng.ng.th"
+        },
+        {
+          "text": "các bạn học qua app hanbeego nha, tự học tốt",
+          "likes": 32,
+          "author": "hellothanhloc"
+        },
+        {
+          "text": "Làm sao để thi hsk",
+          "likes": 16,
+          "author": "chi30886"
+        },
+        {
+          "text": "Thiệt siêu thích cách dạy của thầy yangdexin, cảm giác ielts có anh Huy Forum thì hsk có yangdexin",
+          "likes": 45,
+          "author": "i.love.tiktok0051"
+        },
+        {
+          "text": "B ơi tự học bắt đầu từ đâu vậy b",
+          "likes": 19,
+          "author": "hiizanggne"
+        },
+        {
+          "text": "Một đứa có niềm đam mê với tiếng Trung như mình lại có lúc từng từ bỏ nó. Mình nghĩ hay là đây chỉ là cảm xúc nhất thời, nếu thực sự đam mê thì tại sao nó lại khiến mình thấy mệt, thấy khó như vậy. Mình cũng đã đi rất nhiều trung tâm, cho đến khi gần tốt nghiệp mới có cơ hội nhìn thấy sự thật. Thì ra quan trọng không phải quyết tâm bao nhiêu, mà là kiểm tra động cơ, mục đích ban đầu, phải thôi thúc, phải tìm được cách học hiệu quả. Mình đã đúc rút được kinh nghiệm và sẵn sàng chia sẻ cho những ai từng mông lung về tiếng Trung và hoài nghi về bản thân giống mình. Mình ít online nhưng nếu cậu cần cách học hiệu quả thì mình sẵn sàng chia sẻ, cứ nhắn mình nhen, không chắc sẽ rep nhanh nhưng chắc chắn sẽ rep ạ✅",
+          "likes": 9,
+          "author": "thaomhyqlq7"
+        },
+        {
+          "text": "Mình cũng tự học nhưng học qua app, 3 tháng cũng đang ở hsk3",
+          "likes": 7,
+          "author": "minhloi0493"
+        },
+        {
+          "text": "học trên youtube của thầy là theo giáo trình nào b?",
+          "likes": 70,
+          "author": "nd.thuyt"
+        },
+        {
+          "text": "Tìm bạn học chung chứ 1 mình lười quá huhu",
+          "likes": 10,
+          "author": "tiin_nie"
+        },
+        {
+          "text": "chị học trong khoảng bao nhiêu lâu ạ, mỗi ngày chị dành khoảng mấy tiếng để tự học thế ạ. huhu em cũng muốn tự học mà chưa biết bắt đầu từ đâu",
+          "likes": 24,
+          "author": "bh.19thg8"
+        },
+        {
+          "text": "HSK3 có việc làm tiếng Trung ko bạn",
+          "likes": 6,
+          "author": "meme.zang"
+        },
+        {
+          "text": "Mới đầu mình tự học nhưng thực sự không theo nổi sau này được mọi người giới thiệu vào zhongruan mình khá hài lòng với lộ trình đọc hiện tại mình thấy khá dễ theo Á",
+          "likes": 5,
+          "author": "www.tiktok.comcoca3"
+        },
+        {
+          "text": "Mình cung tự học mà mình học bị mất động lực ấy bạn , có cách nào cải thiện k ạ",
+          "likes": 9,
+          "author": "tuwrtees04"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7663776976519384340",
+      "create_time": "2026-07-18T08:08:55.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@dodaihoccungvetaedu/video/7609936851717180692",
+      "caption": "Vài tips nhor giúp học tập tốt hơn\n#hoctap #studytok #dongluchoctap #studymotivation #manifestation ",
+      "author": {
+        "id": "7538260293345035285",
+        "name": "dodaihoccungvetaedu",
+        "nick": "Đỗ ĐH cùng Veta Edu",
+        "profile": "https://www.tiktok.com/@dodaihoccungvetaedu",
+        "fans": 4713
+      },
+      "play_count": 1200000,
+      "like_count": 142900,
+      "share_count": 10900,
+      "comment_count": 462,
+      "duration_s": 20,
+      "music": {
+        "id": "7601405179095370503",
+        "name": "original sound - chíp.",
+        "author": "chíp",
+        "original": null
+      },
+      "hashtags": [
+        "hoctap",
+        "studytok",
+        "dongluchoctap",
+        "studymotivation",
+        "manifestation"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "caption_fallback",
+        "text": "Vài tips nhor giúp học tập tốt hơn\n#hoctap #studytok #dongluchoctap #studymotivation #manifestation ",
+        "links": []
+      },
+      "top_comments": [
+        {
+          "text": "Thiệt sự, áp dụng phương pháp pomodoro rất ổn luôn 🤭",
+          "likes": 669,
+          "author": "tuilatnd"
+        },
+        {
+          "text": "Chúc mấy bạn đọc đc cmt sẽ đc HSXS,đạt giải kì thi HSG và điểm cao trong các kì thi quan trọng nha🌷✨️",
+          "likes": 1654,
+          "author": "_khang.tkn_"
+        },
+        {
+          "text": "manifest: vượt qua được B2+ đỗ nv1 trong năm 2026",
+          "likes": 36,
+          "author": "__2410_nbt"
+        },
+        {
+          "text": "Tuyệt vời 🥰 mnf năm nay đỗ nv1",
+          "likes": 80,
+          "author": "chuotcutedangiuu"
+        },
+        {
+          "text": "Mnf năm nay 7.0 ielts và 1480+ SAT",
+          "likes": 49,
+          "author": "nhatann_k9"
+        },
+        {
+          "text": "chatgpt đã giúp tui tìm hướng ,phần còn lại tui loo☺️",
+          "likes": 10,
+          "author": "gialongg40"
+        },
+        {
+          "text": "Đỗ cấp 3 NV1 🍀🍀🍀",
+          "likes": 72,
+          "author": "trwongf030111"
+        },
+        {
+          "text": "manifest :năm 2026 lấy gốc tiếng anh và vượt quá A2, vững kiến thức toán nâng cao ,đạt Học Sinh Xuất Sắc",
+          "likes": 9,
+          "author": "nobilot125m"
+        },
+        {
+          "text": "đỗ NV1 ạ 🍀🍀🍀🥰",
+          "likes": 10,
+          "author": "thaolee961"
+        },
+        {
+          "text": "Đậu THPT Chuyên Đại học Sư phạm",
+          "likes": 6,
+          "author": "nh_bnam"
+        },
+        {
+          "text": "đạt học sinh giỏi lớp 11 🍀🍀🍀🥰",
+          "likes": 10,
+          "author": "umok066"
+        },
+        {
+          "text": "năm nay đạt giải nhất cấp cụm,các môn trên 8, trở thành phiên bản tốt hơn của bản thân từng ngày,mỗi ngày đều có 1 món quà nhỏ từ vũ trụ🪷",
+          "likes": 4,
+          "author": "trangthu95533"
+        },
+        {
+          "text": "Chắc chắn ph đỗ nv1",
+          "likes": 5,
+          "author": "khmeo0"
+        },
+        {
+          "text": "nhất định đỗ nv1 nhé 211🍀🍀🍀🍀🍀🍀🍀",
+          "likes": 10,
+          "author": "yiyin00x"
+        },
+        {
+          "text": "Phương pháp pomodo đỉnh thiệt 🥰 học cũng k bị mệt lun",
+          "likes": 6,
+          "author": "hochomnaygiaungaymai"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7609936851717180692",
+      "create_time": "2026-02-23T06:01:52.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@gonaox/video/7694997202954915079",
+      "caption": "7 thói quen học tập của học sinh giỏi nhất lớp \n#gonao #hoctap #phattrienbanthan ",
+      "author": {
+        "id": "7411801384426963974",
+        "name": "gonaox",
+        "nick": "GÕ NÃO!",
+        "profile": "https://www.tiktok.com/@gonaox",
+        "fans": 104900
+      },
+      "play_count": 331700,
+      "like_count": 31200,
+      "share_count": 9210,
+      "comment_count": 151,
+      "duration_s": 143,
+      "music": {
+        "id": "7694997902100040468",
+        "name": "âm thanh gốc - GÕ NÃO!",
+        "author": "GÕ NÃO!",
+        "original": null
+      },
+      "hashtags": [
+        "gonao",
+        "hoctap",
+        "phattrienbanthan"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:02.160\n7 thói quen học tập của học sinh giỏi nhất lớp\n\n00:00:02.600 --> 00:00:05.000\ntôi đã dành BA tháng quan sát một bạn học luôn đứng đầu lớp\n\n00:00:05.280 --> 00:00:08.040\ncô ấy không phải thiên tài không học 12 tiếng mỗi ngày\n\n00:00:08.320 --> 00:00:09.800\nthậm chí còn có thời gian chơi game\n\n00:00:10.040 --> 00:00:13.360\nbí quyết nằm ở 7 thói quen nhỏ mà 95% học sinh không biết\n\n00:00:14.120 --> 00:00:16.240\nthói quen thứ nhất quy tắc 2 phút đầu tiên\n\n00:00:16.520 --> 00:00:18.600\nhọc sinh giỏi không mở sách ngay khi ngồi vào bàn\n\n00:00:18.760 --> 00:00:20.440\nhọ dành 2 phút đầu để hít thở sâu\n\n00:00:20.640 --> 00:00:22.920\nvà tự hỏi hôm nay mình muốn đạt được điều gì\n\n00:00:23.200 --> 00:00:23.960\nđiều này giúp não\n\n00:00:23.961 --> 00:00:26.201\nbộ chuyển từ chế độ giải trí sang chế độ tập trung\n\n00:00:26.440 --> 00:00:28.800\ncó thể tăng hiệu quả học tập lên đến 300%\n\n00:00:29.640 --> 00:00:31.800\nthói quen thứ 2 Pomodoro cải tiến\n\n00:00:32.120 --> 00:00:33.320\nthay vì học liên tục nhiều giờ\n\n00:00:33.440 --> 00:00:36.440\nhọ học 25 phút tập trung tuyệt đối rồi nghỉ năm phút\n\n00:00:36.720 --> 00:00:38.240\nđiểm đặc biệt là trong năm phút nghỉ\n\n00:00:38.400 --> 00:00:39.440\nhọ không xem điện thoại\n\n00:00:39.720 --> 00:00:42.920\nhọ đứng dậy uống nước nhìn Ra cửa sổ hoặc vận động nhẹ\n\n00:00:43.400 --> 00:00:44.440\nnhờ vậy họ duy\n\n00:00:44.480 --> 00:00:46.760\ntrì sự tập trung Cao trong nhiều giờ mà không kiệt sức\n\n00:00:47.160 --> 00:00:47.960\nthói quen thứ BA\n\n00:00:48.080 --> 00:00:50.720\nhọc trước khi nghe giảng họ luôn đọc trước bài ở nhà\n\n00:00:50.920 --> 00:00:52.840\ndù chỉ 15 phút khi đến lớp\n\n00:00:53.040 --> 00:00:54.440\nnão bộ đã có sẵn khung kiến thức\n\n00:00:54.600 --> 00:00:56.080\nnên chỉ cần điền vào chỗ trống\n\n00:00:56.400 --> 00:00:58.000\nnhờ đó họ hiểu nhanh hơn\n\n00:00:58.160 --> 00:01:00.480\nnhớ lâu hơn và đặt được câu hỏi thông Minh hơn\n\n00:01:01.000 --> 00:01:01.840\nthói quen thứ tư\n\n00:01:02.120 --> 00:01:03.520\nviết Tay thay vì đánh máy\n\n00:01:03.800 --> 00:01:04.880\nkhoa học đã chứng Minh viết\n\n00:01:04.920 --> 00:01:06.280\nTay kích hoạt nhiều vùng não hơn\n\n00:01:06.440 --> 00:01:08.280\nkhi viết Tay bạn buộc phải xử lý\n\n00:01:08.600 --> 00:01:10.920\ntóm tắt và diễn đạt lại bằng ngôn ngữ của riêng mình\n\n00:01:11.080 --> 00:01:12.600\ngiúp hiểu sâu và nhớ lâu hơn\n\n00:01:13.280 --> 00:01:14.080\nthói quen thứ năm\n\n00:01:14.280 --> 00:01:15.920\ndạy lại Cho người khác họ luôn\n\n00:01:15.960 --> 00:01:17.960\ntìm cách giải thích lại kiến thức vừa học Cho bạn bè\n\n00:01:18.200 --> 00:01:19.680\nngười thân hoặc ghi âm lại\n\n00:01:19.960 --> 00:01:22.240\nkhi dạy người khác bạn buộc phải sắp xếp kiến thức\n\n00:01:22.440 --> 00:01:24.600\nlogic và rõ ràng vừa củng cố trí nhớ\n\n00:01:24.800 --> 00:01:26.320\nvừa phát hiện lỗ hổng trong hiểu biết\n\n00:01:27.120 --> 00:01:28.040\nthói quen thứ 6\n\n00:01:28.320 --> 00:01:30.880\nnghỉ ngơi thông Minh họ lên kế hoạch nghỉ ngơi có ý thức\n\n00:01:31.320 --> 00:01:32.600\nthay vì lướt mạng xã hội vô thức\n\n00:01:32.840 --> 00:01:35.560\nhọ nghe nhạc cổ điển đi dạo trong công viên hoặc vẽ vời\n\n00:01:35.840 --> 00:01:38.160\nnhững hoạt động này giúp não bộ chuyển sang chế độ mặc định\n\n00:01:38.320 --> 00:01:40.640\nđể tiềm thức xử lý và sắp xếp lại thông tin đã học\n\n00:01:41.480 --> 00:01:42.280\nthói quen thứ 7\n\n00:01:42.480 --> 00:01:45.760\nchuẩn bị từ tối hôm trước họ sắp xếp sách vở quần áo\n\n00:01:46.040 --> 00:01:48.680\nthậm chí cả bữa sáng từ tối hôm trước sáng hôm sau\n\n00:01:48.840 --> 00:01:50.640\nhọ không phải suy nghĩ hay quyết định gì cả\n\n00:01:50.800 --> 00:01:52.080\nchỉ cần thực hiện Theo kế hoạch\n\n00:01:52.200 --> 00:01:54.120\nđiều này tiết kiệm năng lượng quyết định của não bộ\n\n00:01:54.280 --> 00:01:55.800\nđể dành Cho việc học tập quan trọng\n\n00:01:56.240 --> 00:01:57.640\nsau khi áp dụng 7 thói quen này\n\n00:01:57.760 --> 00:01:59.360\nđiểm số của tôi cải thiện đáng kể\n\n00:01:59.760 --> 00:02:00.560\nquan trọng hơn\n\n00:02:00.640 --> 00:02:02.760\nviệc học trở nên thú vị và không còn căng thẳng\n\n00:02:03.200 --> 00:02:05.480\ntôi có nhiều thời gian hơn Cho bạn bè và sở thích cá nhân\n\n00:02:05.640 --> 00:02:06.800\nmà vẫn đạt kết quả tốt\n\n00:02:07.040 --> 00:02:09.720\nnhiều bạn bè tôi cũng đạt kết quả tương tự có bạn\n\n00:02:09.800 --> 00:02:13.000\ntăng điểm trung bình từ 7,2 lên 8,6 chỉ sau một học kỳ\n\n00:02:13.480 --> 00:02:15.440\nthành công không đến từ những thay đổi lớn đột ngột\n\n00:02:15.680 --> 00:02:18.120\nmà từ những thói quen nhỏ được thực hiện đều đặn mỗi ngày\n\n00:02:18.400 --> 00:02:19.920\nhãy bắt đầu với thói quen dễ nhất\n\n00:02:20.120 --> 00:02:21.800\nlà chuẩn bị mọi thứ từ tối hôm trước\n\n00:02:22.040 --> 00:02:23.480\nrồi thêm dần những thói quen khác\n",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-gonaox-20261010115000-7694997202954915079-vie-VN.vtt"
+        ],
+        "file": "subtitle-gonaox-20261010115000-7694997202954915079-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Tao xem dc video muộn quá r 😭",
+          "likes": 63,
+          "author": "user840766957"
+        },
+        {
+          "text": "cố làm video hay như này nha",
+          "likes": 86,
+          "author": "cho3lodungdichmatnhan"
+        },
+        {
+          "text": "có cách của học sinh giỏi nhất thế giới kh",
+          "likes": 51,
+          "author": "ngaquocthuan"
+        },
+        {
+          "text": "Học thì nên học h nào ạ",
+          "likes": 0,
+          "author": "hoang_ngoc_diep12"
+        },
+        {
+          "text": "làm sao bạn theo dõi cô ấy tới nhà",
+          "likes": 2,
+          "author": "duydeptrai770"
+        },
+        {
+          "text": "Ông thích nó hay sao để ý nó 👀",
+          "likes": 7,
+          "author": "mvii_5569"
+        },
+        {
+          "text": "Tao ngồi suy nghĩ hết 2 tiếng",
+          "likes": 1,
+          "author": "li.l.tui.y328"
+        },
+        {
+          "text": "cx hơi giống thói quen của mik",
+          "likes": 11,
+          "author": "trung.hong202"
+        },
+        {
+          "text": "không xem thoại làm sao thấy video",
+          "likes": 7,
+          "author": "lm.siquysi.xinh"
+        },
+        {
+          "text": "t học giỏi nhưng cú học một tí là lại nghịch",
+          "likes": 13,
+          "author": "kaban5614"
+        },
+        {
+          "text": "vậy tôi đang làm gì",
+          "likes": 5,
+          "author": "ghuy9871"
+        },
+        {
+          "text": "đã thử và ko thành công",
+          "likes": 1,
+          "author": "eclispe_dw"
+        },
+        {
+          "text": "đứa giỏi nhất lớp t học bằng free fire",
+          "likes": 1,
+          "author": "hoang367abc"
+        },
+        {
+          "text": "Tôi học giỏi tóp 5 của lớp",
+          "likes": 3,
+          "author": "comay9494"
+        },
+        {
+          "text": "thay vì xem thói quen của hsg hãy trở thành hsg",
+          "likes": 1,
+          "author": "cuongnguyen.090"
+        },
+        {
+          "text": "Ước lên xu hướng để ra clip tiếp theo 🥲",
+          "likes": 6,
+          "author": "gonaox"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7694997202954915079",
+      "create_time": "2026-10-10T11:50:00.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@nhile_n/video/7269745529582603526",
+      "caption": "Bí mật giúp cho bạn hết TRÌ HOÃN! #nhile #nhileteam #language #vietnam #tiktok #like #learnontiktok #trending #fyp @Nhi Le @NhiLe_anne @Podcast_Nhile ",
+      "author": {
+        "id": "6981390245653349381",
+        "name": "nhile_n",
+        "nick": "user54018533873",
+        "profile": "https://www.tiktok.com/@nhile_n",
+        "fans": 81800
+      },
+      "play_count": 740300,
+      "like_count": 53000,
+      "share_count": 1543,
+      "comment_count": 265,
+      "duration_s": 114,
+      "music": {
+        "id": "7269745813379156741",
+        "name": "nhạc nền - Tiêu diệt anti chị Nhi",
+        "author": "user54018533873",
+        "original": null
+      },
+      "hashtags": [
+        "nhile",
+        "nhileteam",
+        "language",
+        "vietnam",
+        "tiktok",
+        "like",
+        "learnontiktok",
+        "trending",
+        "fyp"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.806 --> 00:00:02.036\nnhớ nhấn like share subscribe\n\n00:00:02.606 --> 00:00:05.073\nem cố gắng đứng lên Cho chị coi coi\n\n00:00:05.446 --> 00:00:06.673\ncố gắng đứng lên coi coi\n\n00:00:07.566 --> 00:00:08.416\ncái đó là đứng\n\n00:00:09.446 --> 00:00:10.246\ncái đó là đứng\n\n00:00:10.886 --> 00:00:11.893\ncái đó là ngồi\n\n00:00:12.526 --> 00:00:14.300\nchị biểu em cố gắng đứng lên\n\n00:00:14.300 --> 00:00:16.301\nchị không biểu em đứng hay chị không biểu em ngồi\n\n00:00:16.301 --> 00:00:17.313\nmày cố gắng được hông vậy\n\n00:00:19.197 --> 00:00:20.660\nđược hông được hông được hả\n\n00:00:20.660 --> 00:00:25.282\nrồi tiếp cố gắng uống nước Cho chị coi coi nè\n\n00:00:28.280 --> 00:00:31.240\nnhư vầy là uống nước nè như vầy là không uống nước nè\n\n00:00:32.040 --> 00:00:33.240\ncố gắng uống nước là SAO\n\n00:00:34.770 --> 00:00:38.029\nlà SAO là ơ ơ\n\n00:00:38.850 --> 00:00:41.914\nkhi em dùng những cái từ vô nghĩa\n\n00:00:42.270 --> 00:00:45.469\nnão bộ của em không Cho phép em hành động\n\n00:00:45.810 --> 00:00:47.840\ntại vì em dùng những cái từ liên quan là a\n\n00:00:47.840 --> 00:00:49.080\nem sẽ cố gắng làm\n\n00:00:49.080 --> 00:00:50.589\ntức là em không có ý định làm\n\n00:00:51.240 --> 00:00:53.080\ntại vì cái người làm là một là họ làm\n\n00:00:53.080 --> 00:00:54.271\n2 là họ không làm\n\n00:00:54.288 --> 00:00:55.511\nlàm hay không làm\n\n00:00:56.208 --> 00:00:58.991\năn hay là không ăn uống hay là không uống\n\n00:00:59.400 --> 00:01:01.200\ntrả tiền hay là không trả tiền\n\n00:01:01.200 --> 00:01:03.060\nem sẽ cố gắng trả tiền là cái gì\n\n00:01:03.060 --> 00:01:04.840\nem sẽ cố gắng thức dậy tập thể dục\n\n00:01:04.840 --> 00:01:06.285\nmày dậy hay mày không dậy\n\n00:01:06.594 --> 00:01:08.800\nmày dậy tập thể dục hay mày không tập thể dục\n\n00:01:08.800 --> 00:01:09.805\ncố gắng là SAO\n\n00:01:10.320 --> 00:01:11.450\ntụi mày dùng những từ vô nghĩa\n\n00:01:11.450 --> 00:01:12.756\ntụi mày không bao giờ hành động\n\n00:01:12.883 --> 00:01:14.636\ntỉnh thức xây dựng tiềm thức\n\n00:01:14.843 --> 00:01:16.540\nnhững cái từ em nói mỗi ngày\n\n00:01:16.540 --> 00:01:18.860\nnó là cái làm Cho não bộ của em\n\n00:01:18.860 --> 00:01:19.660\nlưu trữ\n\n00:01:19.763 --> 00:01:22.276\nđể mà xác định được là em muốn làm hay không muốn làm\n\n00:01:22.563 --> 00:01:23.320\nvà nó có lý do\n\n00:01:23.320 --> 00:01:25.516\ntại SAO chị Nhi đặt cái luật đó ở trong Tim của chị Nhi\n\n00:01:25.843 --> 00:01:28.476\ntại vì chị Nhi biết rất rõ là\n\n00:01:29.120 --> 00:01:33.140\nwhat of imformation tức là ngôn ngữ nó làm Cho em\n\n00:01:33.140 --> 00:01:35.626\nví dụ như chị Cao nhớ nhấn like share subscribe\n\n00:01:36.360 --> 00:01:39.536\ncó tụi mày mới làm chứ giờ chị mà nói ơ tụi em a\n\n00:01:39.663 --> 00:01:41.320\ncố gắng nhấn like\n\n00:01:41.320 --> 00:01:42.520\nshare và subscribe Cho chị\n\n00:01:42.520 --> 00:01:43.320\ncố gắng nhấn like\n\n00:01:43.320 --> 00:01:46.096\nshare subscribe là SAO mày làm hay mày không làm\n\n00:01:46.103 --> 00:01:48.160\nhãy học thêm những kiến thức này bằng cách\n\n00:01:48.160 --> 00:01:49.080\nqua kênh YouTube\n\n00:01:49.080 --> 00:01:51.728\nNhi Lê bấm subscribe và nhấn cái chuông\n\n00:01:51.943 --> 00:01:53.976\nkiến thức là miễn phí hành động là ở bạn\n",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-nhile_n-20230821120534-7269745529582603526-vie-VN.vtt"
+        ],
+        "file": "subtitle-nhile_n-20230821120534-7269745529582603526-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "tui sẽ cố gắng nâng được mức tạ 50kg. Nâng lần 1 ko được, tập luyện dần dần rồi nâng được. Đó là cố gắng.",
+          "likes": 19,
+          "author": "kidokidcat"
+        },
+        {
+          "text": ":vậy từ cố gắng là đồ thừa hả cj",
+          "likes": 0,
+          "author": "ghetvosan1199366"
+        },
+        {
+          "text": "Kiến thức đã đc tiếp thu =))",
+          "likes": 1,
+          "author": "nlan_1005"
+        },
+        {
+          "text": "Giống như mình đi bán cf lúc dậy mình nghĩ có đi bán hay không thôi 😭 chứ k bao h có chữ cố gắng đi bán",
+          "likes": 67,
+          "author": "leedhu579"
+        },
+        {
+          "text": "Cố gắng Xem Video 🤪🤪😂😂😂😂😂",
+          "likes": 1,
+          "author": "richkim.mentor"
+        },
+        {
+          "text": "Hay vãi",
+          "likes": 0,
+          "author": "pmhuong979"
+        },
+        {
+          "text": "💯 Hảo tên kênh😂",
+          "likes": 0,
+          "author": "tuyetkha888"
+        },
+        {
+          "text": "hay 😆 rất hay chị ơi",
+          "likes": 0,
+          "author": "loanthoitrang88"
+        },
+        {
+          "text": "Dạ c",
+          "likes": 0,
+          "author": "deeeekuuu"
+        },
+        {
+          "text": "1 thứ đã vào đầu",
+          "likes": 1,
+          "author": "yukimaru2207"
+        },
+        {
+          "text": "Vân e hiểu rồi",
+          "likes": 0,
+          "author": "thanhpadam"
+        },
+        {
+          "text": "Đúng",
+          "likes": 0,
+          "author": "mitu1808"
+        },
+        {
+          "text": "@Khèng",
+          "likes": 1,
+          "author": "dnk.121"
+        },
+        {
+          "text": "@My My🧿",
+          "likes": 0,
+          "author": "nathu_562"
+        },
+        {
+          "text": "Làm hay không chỉ thế thôi , không có từ cố gắng , từ từ ...",
+          "likes": 341,
+          "author": "henrynguyen156"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7269745529582603526",
+      "create_time": "2023-08-21T12:05:34.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@hoaquynh0000/video/7680893073684958482",
+      "caption": "Còn tư duy nào nữa không mn? Comment đề học hỏi nào? #xuhuongtiktok #learnontiktok #tuduy #phattrienbanthan #taichinh ",
+      "author": {
+        "id": "16395636",
+        "name": "hoaquynh0000",
+        "nick": "Hoa Quỳnh Nở 00.00",
+        "profile": "https://www.tiktok.com/@hoaquynh0000",
+        "fans": 0
+      },
+      "play_count": 1400000,
+      "like_count": 127700,
+      "share_count": 18400,
+      "comment_count": 538,
+      "duration_s": 345,
+      "music": {
+        "id": "7680893623328279314",
+        "name": "âm thanh gốc - Hoa Quỳnh Nở 00.00",
+        "author": "Hoa Quỳnh Nở 00.00",
+        "original": null
+      },
+      "hashtags": [
+        "xuhuongtiktok",
+        "learnontiktok",
+        "tuduy",
+        "phattrienbanthan",
+        "taichinh"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.360 --> 00:00:01.240\ntop Ba Tư duy\n\n00:00:01.320 --> 00:00:03.080\nnếu các bạn vẫn tiếp tục duy trì cái điều này\n\n00:00:03.120 --> 00:00:03.680\nthì mình Xin lỗi\n\n00:00:03.681 --> 00:00:05.161\ncuộc đời của bạn mãi nghèo nha\n\n00:00:05.200 --> 00:00:06.640\nvà khi các bạn nghe xong cái clip này\n\n00:00:06.641 --> 00:00:08.121\ncác bạn phải thay đổi cuộc sống của các bạn\n\n00:00:08.480 --> 00:00:10.480\nmình đảm bảo trong vài năm sau\n\n00:00:10.520 --> 00:00:12.120\ncuộc đời của bạn nó sẽ sang trang mới\n\n00:00:12.520 --> 00:00:13.440\ncái tư duy đầu tiên\n\n00:00:13.560 --> 00:00:15.840\nlà mua đồ nhiều chất đồ đóng ở trong một cái phòng\n\n00:00:15.960 --> 00:00:16.760\nnhỏ ơi là nhỏ\n\n00:00:16.960 --> 00:00:18.560\ntôi đã từng và như vậy luôn\n\n00:00:18.760 --> 00:00:20.320\nthứ nhất là mình cứ cảm thấy là\n\n00:00:20.400 --> 00:00:22.040\nê mình bỏ mấy cái đồ đó bị tiếc\n\n00:00:22.160 --> 00:00:24.200\nđúng hông tiền mình Ra mình cứ cộng Ra\n\n00:00:24.440 --> 00:00:26.640\ntrời cái này trăm ngàn triệu vài triệu\n\n00:00:27.000 --> 00:00:29.400\nmình đã tiêu xài mấy 10.000.000 thôi mình phải giữ giữ giữ\n\n00:00:29.840 --> 00:00:31.720\ncàng giữ càng nghèo lý do vì SAO vậy\n\n00:00:31.920 --> 00:00:34.840\ncác bạn phải hiểu những cái đồ mà chất đóng đồ cũ trong xài\n\n00:00:34.960 --> 00:00:36.960\nthậm chí các bạn còn mua cỡ khuyến mãi này nọ\n\n00:00:36.961 --> 00:00:37.841\ncác bạn có xài không\n\n00:00:38.240 --> 00:00:39.640\nkhông và vài vài\n\n00:00:39.800 --> 00:00:41.600\nvài năm vài tháng nữa những cái đồ đó\n\n00:00:41.760 --> 00:00:44.560\nkhông tái sử dụng được và thậm chí là các bạn vứt vô một xó\n\n00:00:44.600 --> 00:00:46.520\nnó là tài sản hông nó có tăng giá hông\n\n00:00:46.760 --> 00:00:47.960\nkhông bao giờ tăng giá\n\n00:00:48.200 --> 00:00:49.000\nnhưng cái tư duy\n\n00:00:49.040 --> 00:00:51.480\nthiếu an toàn và lúc nào cũng cảm thấy là mình thiếu thốn\n\n00:00:51.680 --> 00:00:53.640\nthì các bạn chất đầy đống đầy nhà\n\n00:00:53.800 --> 00:00:55.240\ncòn người giàu thì SAO nói thẳng với\n\n00:00:55.241 --> 00:00:56.641\ncác bạn nhà người ta thoáng lắm\n\n00:00:57.000 --> 00:00:59.160\nnhà người ta không có cái gì trơn á tôi nói thiệt\n\n00:00:59.320 --> 00:01:01.360\nvô một cái phòng ngủ chỉ có cái giường để ngủ thôi\n\n00:01:01.600 --> 00:01:02.600\nvà cái vận khí\n\n00:01:02.640 --> 00:01:03.880\nđối với gia đình người giàu\n\n00:01:03.881 --> 00:01:05.961\nngười ta rất quan trọng đến vận khí và phong thủy\n\n00:01:06.320 --> 00:01:08.720\ncái nguồn sống của họ là cái hơi thở\n\n00:01:08.920 --> 00:01:10.720\ncác bạn vô nhà người ta các bạn thấy thoáng\n\n00:01:10.721 --> 00:01:12.921\ncác bạn thấy đầu óc người ta thoáng hông\n\n00:01:13.120 --> 00:01:14.280\nthì người ta làm việc rất là nhanh\n\n00:01:14.281 --> 00:01:15.521\nrất gọn và rất là thông thái\n\n00:01:15.840 --> 00:01:16.680\ncòn các bạn để ý\n\n00:01:16.800 --> 00:01:18.160\ntrong cái phòng mà đầy đồ\n\n00:01:18.200 --> 00:01:20.280\nđầy chất đóng thì đầu óc của bạn rối Ren lắm\n\n00:01:20.520 --> 00:01:22.080\nmở mắt dậy là thấy nguyên cái phòng rối\n\n00:01:22.081 --> 00:01:24.081\nlà kiểu như cái đầu của bạn nó rối rối rối xong nó bật\n\n00:01:24.120 --> 00:01:25.480\nđã từng chưa đã từng\n\n00:01:25.640 --> 00:01:27.560\nxong người ta nói là ủa SAO phòng mày chật vậy\n\n00:01:27.920 --> 00:01:30.240\nnó nói trời ơi nhà Tao hông có điều kiện mày ơi\n\n00:01:30.280 --> 00:01:31.200\nkhông phải đâu các bạn\n\n00:01:31.320 --> 00:01:32.520\nchúng ta dư sức\n\n00:01:33.000 --> 00:01:35.720\nbỏ tiền mua rất nhiều món nhưng chúng ta không chịu bỏ\n\n00:01:35.800 --> 00:01:37.440\ntiền đầu tư vào không gian sống\n\n00:01:37.840 --> 00:01:40.680\nnói xong cái clip này làm ơn ngày mai nha có tiền\n\n00:01:40.960 --> 00:01:44.160\nmình lên một cái lệnh một cái đồ án về tài chính đi\n\n00:01:44.400 --> 00:01:45.760\nxong sửa cái phòng Cho tui\n\n00:01:46.040 --> 00:01:49.360\ncái nơi mà các bạn ngủ nó chiếm tới 60 đến 70%\n\n00:01:49.361 --> 00:01:50.241\nvì SAO tôi nói điều đó\n\n00:01:50.400 --> 00:01:51.360\nmột ngày các bạn ngủ\n\n00:01:51.361 --> 00:01:52.361\nđến 6 đến 8 tiếng\n\n00:01:52.362 --> 00:01:54.121\nvà trong khi cái phòng của bạn ngộp ơi là ngộp\n\n00:01:54.520 --> 00:01:55.600\nthì tại SAO bạn không thay đổi\n\n00:01:55.880 --> 00:01:58.360\nbạn thay đổi cái hoàn cảnh sống của các bạn\n\n00:01:58.800 --> 00:02:00.680\nbạn thay đổi cái cách xài tiền của các bạn\n\n00:02:00.681 --> 00:02:01.881\ncuộc đời của bạn nó khác\n\n00:02:02.120 --> 00:02:04.080\nvà khi bạn không còn cảm thấy là\n\n00:02:04.640 --> 00:02:06.600\nmình phải giữ những cái thứ mà không cần thiết nữa\n\n00:02:06.840 --> 00:02:09.360\nbạn bắt đầu bạn tìm kiếm những thứ giá trị bạn để ý hông\n\n00:02:09.800 --> 00:02:11.560\nchúng ta hay mua nhiều đồ rẻ\n\n00:02:11.640 --> 00:02:13.440\nnhưng cuối cùng nó lại hạn sử dụng rất ngắn\n\n00:02:13.680 --> 00:02:15.200\nnhưng người giàu họ mua đồ xịn\n\n00:02:15.240 --> 00:02:17.360\nnhưng mà xài đi xài lại bao nhiêu năm nó vẫn tốt\n\n00:02:17.400 --> 00:02:18.280\nthì cái nào tiết kiệm hơn\n\n00:02:18.640 --> 00:02:20.720\nngười giàu người ta tiết kiệm hơn mình mà mình hông biết\n\n00:02:20.960 --> 00:02:22.240\ntôi trùm đi mua đồ lặt vặt\n\n00:02:22.440 --> 00:02:25.040\nđể đến khi tôi thấy ủa cũng là số tiền đó bỏ Ra\n\n00:02:25.160 --> 00:02:26.200\nnhưng mà tôi ngược lại\n\n00:02:26.240 --> 00:02:28.720\ntôi lại không đầu tư Cho những cái món xịn sò để xây kinh\n\n00:02:29.280 --> 00:02:31.640\nvậy đó mấy bà nên tôi phải thay đổi tư duy\n\n00:02:32.200 --> 00:02:33.200\ntôi phải đầu tư những cái mấy\n\n00:02:33.320 --> 00:02:35.200\nmấy cái đồ mà thiết yếu Cho cuộc sống của tôi\n\n00:02:35.201 --> 00:02:36.241\nđể nâng cấp cái giá trị\n\n00:02:36.242 --> 00:02:37.401\nvà đầu tư Cho bản thân mình\n\n00:02:37.560 --> 00:02:39.120\nvà đầu tư những cái thứ kiếm Ra tiền\n\n00:02:39.240 --> 00:02:40.720\ntại SAO chúng ta không làm tiếp\n\n00:02:41.280 --> 00:02:43.120\ntư duy thứ 2 các bạn để ý đi\n\n00:02:43.480 --> 00:02:45.400\nnhững người nghèo là những người lúc nào\n\n00:02:45.401 --> 00:02:46.761\ncũng tần tiện tiết kiệm thôi\n\n00:02:46.762 --> 00:02:48.121\nngày mai chắc gì kiếm được cục đó\n\n00:02:48.680 --> 00:02:49.920\nđể cái đồng tiền nó đứng im\n\n00:02:50.120 --> 00:02:51.680\nvà thậm chí keo kiệt không xài tiền\n\n00:02:51.720 --> 00:02:53.600\nkhông xài tiền thì đồng tiền nó làm SAO xoay vòng\n\n00:02:53.760 --> 00:02:54.520\nđược các bạn\n\n00:02:54.521 --> 00:02:56.601\ncác bạn tin hông về một cái luật mà không mình hông biết\n\n00:02:56.602 --> 00:02:58.241\ngọi là phong thủy hay là tâm linh\n\n00:02:58.360 --> 00:02:59.880\nmình dùng cái từ phong thủy Cho nó hay\n\n00:03:00.280 --> 00:03:02.720\ncác bạn đẩy cái đồng tiền Ra có nghĩa là bạn xài tiền á\n\n00:03:03.040 --> 00:03:04.200\nđồng tiền là nó quay xoay tròn\n\n00:03:04.480 --> 00:03:06.640\nbạn kiếm được người này thì bạn phải đẩy Cho người khác\n\n00:03:06.641 --> 00:03:08.161\nnó sẽ xoay vòng thì nó sẽ\n\n00:03:08.520 --> 00:03:10.400\nkhuất tán cái lượng tiền của các bạn\n\n00:03:10.401 --> 00:03:11.841\ncác bạn càng xài tiền nó càng tới\n\n00:03:12.000 --> 00:03:12.760\ncác bạn tin hông\n\n00:03:12.761 --> 00:03:13.721\nkhi các bạn Chi tiền\n\n00:03:13.760 --> 00:03:15.720\ntuy nhiên tiền nó tới thiệt và thậm chí nhiều hơn\n\n00:03:15.721 --> 00:03:16.841\ncòn các bạn keo kiệt bạn giữ\n\n00:03:17.200 --> 00:03:18.480\nđồng tiền nó chỉ đứng im là\n\n00:03:18.760 --> 00:03:20.360\nTheo một cái khí vận của đồng tiền luôn\n\n00:03:20.480 --> 00:03:21.720\ncái này tôi thử rồi nha mấy bà\n\n00:03:21.920 --> 00:03:23.720\nngày nào có keo kiệt ngày đó tiền nó vẫn đứng im\n\n00:03:23.800 --> 00:03:25.120\nthậm chí là nó không bị xuống nữa\n\n00:03:25.400 --> 00:03:27.200\nnên mình phải xởi lởi thì trời mới Cho\n\n00:03:27.760 --> 00:03:29.080\ncâu này đúng đúng hông\n\n00:03:29.320 --> 00:03:30.960\nngười giàu người ta sợ lỗi lắm nha mấy bà\n\n00:03:31.040 --> 00:03:33.520\nngười ta sợ lỗi đúng người đúng mối quan hệ đúng hoàn cảnh\n\n00:03:33.720 --> 00:03:36.160\nvà chúng ta cứ giữ khư khư là chúng ta mãi nghèo ô\n\n00:03:36.161 --> 00:03:39.241\nkê chưa cái tư duy thứ BA là dùng đồng tiền của mình\n\n00:03:39.600 --> 00:03:40.720\nlàm đồng 7 để đầu tư\n\n00:03:40.960 --> 0",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-hoaquynh00-20260902110802-7680893073684958482-vie-VN.vtt"
+        ],
+        "file": "subtitle-hoaquynh00-20260902110802-7680893073684958482-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "sởi lởi thì trời cho - so đo thì trời lấy 🤣",
+          "likes": 7578,
+          "author": "nhatquadat123"
+        },
+        {
+          "text": "muốn bỏ lắm á chứ , bỏ là ba mẹ tìm",
+          "likes": 314,
+          "author": "ntuyet.12"
+        },
+        {
+          "text": "chị nói đúng rất đúng nha",
+          "likes": 680,
+          "author": "giangpham2214"
+        },
+        {
+          "text": "C ơi giải quyết đống quần áo cũ sao đây . Nhất là đồ con nít",
+          "likes": 22,
+          "author": "han_aichi_86"
+        },
+        {
+          "text": "Đúng rùi. Đợt trc e kinh doanh, hôm nào ế khách. Em chán là em đi mua sắm, mà mua sắm về cái có khách ngay. Đợt ý cx thấy thắc mắc , không hiểu sao lạ vậy 😂",
+          "likes": 215,
+          "author": "giangthanh116"
+        },
+        {
+          "text": "em hoàn toàn đồng tình với ý kiến của chị, em có 1 thắc mắc là chị sẽ đáp trả thế nào nếu 1 người nào đó trả lời video này 1 câu \"bạn đã giàu chưa mà dạy người ta\", em ko có ý nói móc chị gì hết, em chỉ muốn tiếp thu cách đáp trả những câu hỏi xéo xắt như vậy vì trong cuộc sống em gặp nhiều người như vậy lắm và ko biết phải xử lý như thế nào cho đáng",
+          "likes": 395,
+          "author": "tann.ati"
+        },
+        {
+          "text": "Biết ơn chị đã chia sẻ những điều ý nghĩa 🥰",
+          "likes": 170,
+          "author": "npb195"
+        },
+        {
+          "text": "Bạn nói đúng đó😁, mua ít mà chất lượng và nhà cửa gọn gàng sạch sẽ tâm trí sẽ thoải mái hanh thông, vượng khí sẽ tốt",
+          "likes": 313,
+          "author": "v.h343"
+        },
+        {
+          "text": "Cảm ơn c, e lại có động lực tiêu tiền tiếp rồi😅",
+          "likes": 125,
+          "author": "mihan99__"
+        },
+        {
+          "text": "thế sao n giàu nta keo thế mà vẫn giàu",
+          "likes": 16,
+          "author": "nobinobita.meo"
+        },
+        {
+          "text": "3 điều video này là",
+          "likes": 12,
+          "author": "im.2mihn_90"
+        },
+        {
+          "text": "chị nói đúng quá.",
+          "likes": 34,
+          "author": "theminh0600"
+        },
+        {
+          "text": "đúng quá em đang gặp tình trạng như thế. phòng ngủ thì nhỏ mà phòng chất đầy đồ mà bỉ thì tiếc.",
+          "likes": 1918,
+          "author": "toilamuaxuan"
+        },
+        {
+          "text": "Mình tin sởi lởi trời cho thật. Có đợt mình tiết kiệm tiền lắm ko dám chi tiêu, sau đó bị phạt giao thông vì lỗi mình thì rất tiếc, kiểu nó sẽ phải ra bằng 1 cách nào đó 😅",
+          "likes": 31,
+          "author": "haha_hihihe"
+        },
+        {
+          "text": "ê thật",
+          "likes": 9,
+          "author": "beiuoiww_"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7680893073684958482",
+      "create_time": "2026-09-02T11:08:02.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@iamuyenvu/video/7594481801305885973",
+      "caption": "Cách để bạn có thể thay đổi số phận của chính mình\n\n#uyenvu #tưduy\n#phattrienbanthan\n#nangluongtichcuc #dcgr ",
+      "author": {
+        "id": "6897961378339554305",
+        "name": "iamuyenvu",
+        "nick": "Uyên Vũ",
+        "profile": "https://www.tiktok.com/@iamuyenvu",
+        "fans": 0
+      },
+      "play_count": 208500,
+      "like_count": 13400,
+      "share_count": 915,
+      "comment_count": 263,
+      "duration_s": 256,
+      "music": {
+        "id": "7594482353706289928",
+        "name": "nhạc nền - Uyên Vũ",
+        "author": "Uyên Vũ",
+        "original": null
+      },
+      "hashtags": [
+        "uyenvu",
+        "tưduy",
+        "phattrienbanthan",
+        "nangluongtichcuc",
+        "dcgr"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:01.920\nVI đê ô này Uyên gửi đến những bạn nào\n\n00:00:02.000 --> 00:00:03.920\nmà đang cảm thấy là cực kỳ khó khăn\n\n00:00:04.120 --> 00:00:04.960\ncực kỳ bế tắc\n\n00:00:05.680 --> 00:00:07.520\nkhông biết ngày mai tôi sẽ sống như thế nào\n\n00:00:08.400 --> 00:00:10.960\nđang cảm thấy là ở dưới đáy của cuộc đời\n\n00:00:11.280 --> 00:00:13.800\ncó thể là dưới đáy của sức khỏe của tinh thần\n\n00:00:14.200 --> 00:00:15.680\ncủa sự nghiệp\n\n00:00:16.200 --> 00:00:17.000\ncủa những mối quan hệ\n\n00:00:17.160 --> 00:00:18.440\ncủa tất cả mọi thứ trong cuộc sống luôn\n\n00:00:18.480 --> 00:00:20.040\nvà mọi người không có một cái hướng nào Ra hết\n\n00:00:20.360 --> 00:00:21.800\nvà thậm chí là những người tích cực á\n\n00:00:22.080 --> 00:00:23.640\nthì tôi không đủ level để tôi chạm được họ\n\n00:00:23.720 --> 00:00:24.320\ntôi không\n\n00:00:24.321 --> 00:00:26.961\nđủ tầm để có thể chơi được với họ để Cho tôi tích cực hơn\n\n00:00:27.320 --> 00:00:28.840\ncòn cuộc sống của tôi xung quanh á nhìn đâu\n\n00:00:28.841 --> 00:00:29.641\nnó thấy tiêu cực hết\n\n00:00:29.642 --> 00:00:30.161\nvậy thì bây giờ\n\n00:00:30.162 --> 00:00:31.801\ntôi phải làm SAO để vượt qua được cái điều này\n\n00:00:31.802 --> 00:00:33.441\nvà trước khi mà Uyên nói đến vấn đề\n\n00:00:33.442 --> 00:00:34.401\nlàm SAO mọi người có thể vượt qua\n\n00:00:34.402 --> 00:00:35.801\ná Uyên muốn mọi người\n\n00:00:36.160 --> 00:00:37.920\nphải hoàn toàn nhận Ra một điều\n\n00:00:38.080 --> 00:00:40.840\nđó là sẽ không có AI đến để cứu mọi người hết\n\n00:00:41.600 --> 00:00:43.520\nkhông có gia đình không có bạn bè\n\n00:00:43.840 --> 00:00:44.880\nkhông có người yêu\n\n00:00:44.920 --> 00:00:47.280\nhay là không có bất kỳ AI có thể cứu được mình hết\n\n00:00:47.440 --> 00:00:48.240\nngoại trừ chính mình\n\n00:00:48.280 --> 00:00:50.960\nCho nên việc đầu tiên đó là mọi người phải ngưng cái việc\n\n00:00:50.961 --> 00:00:53.201\nlà chờ đợi AI đó đến cứu cuộc đời tôi\n\n00:00:53.800 --> 00:00:55.480\nmà bây giờ chính tôi phải là người thay\n\n00:00:55.481 --> 00:00:57.721\nđổi số phận cuộc đời tôi bao giờ tôi thay đổi như thế nào\n\n00:00:57.760 --> 00:00:58.760\nvà cái cách duy nhất\n\n00:00:59.240 --> 00:01:00.040\ncách duy nhất luôn\n\n00:01:00.160 --> 00:01:02.160\nmà mọi người có thể thay đổi được số phận của chính mình á\n\n00:01:02.480 --> 00:01:03.040\ntừ một cái người\n\n00:01:03.041 --> 00:01:04.681\nmà ở dưới đáy của cuộc đời của chính mình á\n\n00:01:04.720 --> 00:01:05.640\nmà mọi người đi lên được á\n\n00:01:06.280 --> 00:01:08.800\ncái cách duy nhất đó là mọi người mỗi ngày\n\n00:01:09.120 --> 00:01:10.880\nmọi người phải tăng thêm một cái điều\n\n00:01:11.080 --> 00:01:12.280\ntích cực trong cuộc đời của mình\n\n00:01:12.400 --> 00:01:13.560\nvà giảm bớt đi\n\n00:01:13.720 --> 00:01:15.240\nmột cái điều tiêu cực trong cuộc đời của mình\n\n00:01:15.560 --> 00:01:17.680\nmột điều cũng được mỗi ngày một chút một chút\n\n00:01:17.760 --> 00:01:18.920\nhoặc là một cái thói quen\n\n00:01:19.080 --> 00:01:21.040\nhoặc là một cái hành VI nhỏ\n\n00:01:21.160 --> 00:01:22.600\nhoặc là một cái dòng suy nghĩ nhỏ\n\n00:01:22.800 --> 00:01:26.440\nmỗi ngày cắt đứt đi những thứ nhỏ nhất thuộc về tiêu cực\n\n00:01:26.640 --> 00:01:29.120\nvà tăng thêm những thứ nhỏ nhất thuộc về tích cực\n\n00:01:29.440 --> 00:01:31.480\nvà mỗi ngày một như vậy á mọi người sẽ tích lũy dần\n\n00:01:31.640 --> 00:01:32.840\nvà mọi người sẽ chuyển xoa dần\n\n00:01:33.240 --> 00:01:35.440\ntừ một cái người rất là nhiều những cái điều tiêu cực\n\n00:01:35.640 --> 00:01:36.760\nchuyển sang một cái người\n\n00:01:36.840 --> 00:01:37.880\ncó rất là nhiều những cái điều tích cực\n\n00:01:38.200 --> 00:01:40.720\nví dụ như là tôi sẽ bớt lo lắng\n\n00:01:41.040 --> 00:01:43.200\ntôi sẽ bớt overthink tôi sẽ bớt than thở\n\n00:01:43.720 --> 00:01:46.120\ntôi sẽ bớt nói chuyện với những người bạn tiêu cực\n\n00:01:46.400 --> 00:01:47.760\ntôi sẽ bớt nghe những cái câu chuyện\n\n00:01:47.800 --> 00:01:49.120\ntình cảm rắc rối của người khác\n\n00:01:49.360 --> 00:01:50.920\ntôi sẽ bớt ngồi Chung với những\n\n00:01:50.921 --> 00:01:52.161\ncái người mà hay nói xấu người khác\n\n00:01:52.560 --> 00:01:54.520\ntôi sẽ bớt nghe nhạc buồn\n\n00:01:54.680 --> 00:01:55.600\ntôi sẽ block bớt\n\n00:01:55.640 --> 00:01:57.600\nnhững cái người mà ở trên mạng xã hội mà hay đăng những cái\n\n00:01:57.640 --> 00:01:58.120\nthứ tiêu cực\n\n00:01:58.121 --> 00:01:59.641\nnhững cái thứ mà bóc phốt người thứ BA\n\n00:01:59.800 --> 00:02:01.400\nnhững cái thứ mà kể lại chuyện cũ\n\n00:02:01.401 --> 00:02:03.121\nyêu đương rồi đau khổ các kiểu\n\n00:02:03.600 --> 00:02:05.320\nvà mọi người tăng thêm một cái điều tích cực mỗi ngày\n\n00:02:05.400 --> 00:02:08.120\nví dụ như ngày hôm nay tôi sẽ đi bộ vòng vòng 15 phút\n\n00:02:08.680 --> 00:02:12.320\nngày hôm nay tôi sẽ đi Ra ngoài tối thở không khí trời\n\n00:02:12.520 --> 00:02:14.040\nngày hôm nay tôi sẽ đọc thêm một trang sách\n\n00:02:14.320 --> 00:02:16.080\nngày hôm nay tôi sẽ nghe thêm một video YouTube\n\n00:02:16.200 --> 00:02:17.840\nđể tăng thêm cái mindset của tôi\n\n00:02:18.000 --> 00:02:20.200\nhoặc là tăng thêm cái kinh nghiệm trong nghề nghiệp của tôi\n\n00:02:20.400 --> 00:02:22.480\nngày hôm nay tôi sẽ ngồi lại để tôi nói chuyện với bản thân\n\n00:02:22.720 --> 00:02:24.120\ntôi nhận Ra là tôi cần gì tôi thiếu gì\n\n00:02:24.240 --> 00:02:25.360\nhoặc là ngày hôm nay\n\n00:02:25.640 --> 00:02:26.920\ntôi sẽ ngủ sớm hơn một chút\n\n00:02:27.040 --> 00:02:28.880\nví dụ như ngày hôm qua tôi ngủ 3 giờ sáng\n\n00:02:28.920 --> 00:02:30.200\nthì ngày hôm nay 2 giờ sáng tôi ngủ\n\n00:02:30.440 --> 00:02:32.760\n1 giờ sáng tôi ngủ rút xuống còn 12 giờ khuya tôi ngủ\n\n00:02:32.920 --> 00:02:33.640\nrồi rút xuống rút xuống\n\n00:02:33.641 --> 00:02:35.001\nmỗi ngày mọi người\n\n00:02:35.360 --> 00:02:37.600\nphải nhận diện được đâu là những điều đúng đắn\n\n00:02:37.640 --> 00:02:38.440\ntrong cuộc đời của mình\n\n00:02:38.441 --> 00:02:40.161\nvà đâu là những cái điều đang không đúng đắn\n\n00:02:40.200 --> 00:02:41.000\ntrong cuộc đời của mình\n\n00:02:41.360 --> 00:02:43.240\nvà khi mà mọi người muốn thay đổi cái\n\n00:02:43.241 --> 00:02:44.361\nhoàn cảnh của mọi người hiện tại á\n\n00:02:44.480 --> 00:02:46.120\nmọi người phải tập trung vào những điều đúng đắn\n\n00:02:46.480 --> 00:02:47.960\nvà loại bỏ những cái điều không đúng đắn\n\n00:02:47.961 --> 00:02:48.761\nRa khỏi cuộc đời của mình\n\n00:02:49.400 --> 00:02:51.760\nvà Yến nói với mọi người á không có một cái cách nào khác\n\n00:02:52.000 --> 00:02:54.040\nkhông có một cái cách nào khác luôn ngoại trừ mọi người\n\n00:02:54.240 --> 00:02:55.320\nmọi người làm được những việc này\n\n00:02:56.440 --> 00:02:57.680\nvà nói lại một lần nữa\n\n00:02:58.000 --> 00:03:00.000\nlà chính mình phải chịu trách nhiệm 100%\n\n00:03:00.040 --> 00:03:00.840\ntrong cuộc đời của mình\n\n00:03:01.160 --> 00:03:03.240\nkhông AI luôn mọi người ở dưới đấy đi lên hết\n\n00:03:03.400 --> 00:03:04.680\ncùng lắm á là mọi người\n\n00:03:04.681 --> 00:03:06.161\nnhững người mà yêu thương mọi người thật sự á\n\n00:03:06.520 --> 00:03:08.640\nngười ta người ta đỡ chứ một đoạn thôi\n\n00:03:08.760 --> 00:03:10.960\nhoặc là người ta kêu cố lên thôi\n\n00:03:11.240 --> 00:03:12.800\nchứ không AI thật sự mà có thể là\n\n00:03:13.000 --> 00:03:14.800\nsống cuộc đời của mình và hành động được Cho mọi người hết\n\n00:03:15.080 --> 00:03:15.640\nCho nên bây giờ\n\n00:03:15.641 --> 00:03:17.521\nnếu như bạn đang ở dưới đáy cuộc đời của mình\n\n00:03:18.280 --> 00:03:19.720\nchỉ có chính bạn mới cứu được bạn thôi\n\n00:03:19.920 --> 00:03:21.760\nvà chính bạn có dám quyết định\n\n00:03:21.840 --> 00:03:23.560\nlà tôi cắt đứt những cái điều tiêu cực Ra khỏi cuộc đời\n\n00:03:23.640 --> 00:03:25.200\ntôi không tôi có dám cắt đứt những con người\n\n00:03:25.280 --> 00:03:26.440\ntiêu cực Ra khỏi cuộc đời tôi không\n\n00:03:26.760 --> 00:03:28.280\ntôi có dám cắt đứt chính tôi\n\n00:03:28.520 --> 00:03:29.760\nnhững cái điều tiêu cực của chính tôi\n\n00:03:29.840 --> 00:03:31.480\nphiên bản cũ của tôi Ra khỏi cuộc đời tôi không\n\n00:03:31.600 --> 00:03:35.000\nvà bạn ơi không có người thành công nào á chưa\n\n00:03:35.040 --> 00:03:36.120\ntừng như chúng ta bây",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-iamuyenvu-20260112142820-7594481801305885973-vie-VN.vtt"
+        ],
+        "file": "subtitle-iamuyenvu-20260112142820-7594481801305885973-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Đã làm được (từng điều một từ những thứ nhỏ nhặt nhất). Tự mình tự nhiên sáng tỏ luôn. Hôm nay xem được clip của chị em thấy như được đồng cảm và được công nhận vậy. Cảm ơn ch Uyên!🙆‍♀️",
+          "likes": 65,
+          "author": "mynameisnhu_howareyou"
+        },
+        {
+          "text": "đọc sách, đọc sách...mình đợt này bị mất nl n nhờ đọc sách đỡ hơn n lắm",
+          "likes": 55,
+          "author": "robinnico2862"
+        },
+        {
+          "text": "cố gắng ko nghĩ tiêu cực nhưng trước mắt mọi thứ đều bế tắc thì làm sao thoát ra đc 😭",
+          "likes": 20,
+          "author": "maymannhe029"
+        },
+        {
+          "text": "E cảm ơn chị nhiều lắm ạ. Lúc bế tắt e đã nghe đc lời khuyên của chị 🥰🥰",
+          "likes": 5,
+          "author": "babi_chanh31"
+        },
+        {
+          "text": "cảm ơn chị đang nợ 500 triệu bị bồ bỏ",
+          "likes": 39,
+          "author": "meoly12_a_a"
+        },
+        {
+          "text": "nghe pháp thoại của thầy Minh Niệm và thầy Thích Pháp Hoà, nghe podcast chữa lành đi mọi người sẽ thấy như đc an ủi và bớt tiêu cực đó",
+          "likes": 12,
+          "author": "juli_nguyen"
+        },
+        {
+          "text": "Đúng mà . Chỉ có mình mới là người cứu mình",
+          "likes": 5,
+          "author": "be1.22"
+        },
+        {
+          "text": "Em mất định hướng về cv sự nghiệp, ko có bằng đh hay cd, ko biết làm gì tiếp theo thì làm gì ạ? Có nên đi định hướng lại ko ạ chị",
+          "likes": 6,
+          "author": "truc20255"
+        },
+        {
+          "text": "🥰 Cảm ơn chị nhiều ạ. Em từng thấy bế tắc như vậy, em thần số học số 7, kiểu luôn mất mát sao, bao giờ mới tới hồi kết hạnh phúc. Nhưng mỗi lần được sống, học được một điều tích cực, em biết ơn thế mình lại thêm quyết tâm sống tốt hơn, cố gắng hơn, hiểu bản thân mình hơn và cho đi nhiều hơn vì đến và đi thế gian này chẳng mang được gì ^^ Nhóm em đang coaching tập sự nhận tư vấn free cho các bạn về quản lý cảm xúc - thói quen và hiểu điểm mạnh yếu, nếu bạn cần có thể đến ạ, vì sống là cho đâu chỉ nhận riêng mình.",
+          "likes": 5,
+          "author": ".hc808"
+        },
+        {
+          "text": "cả nhà thử xem video cún mèo em bé v.v thề luôn mọi người sẽ thấy yêu cuộc đời lắm",
+          "likes": 14,
+          "author": "vieowai"
+        },
+        {
+          "text": "Em đã làm như lời chị nói, em đở tress hơn, lúc buon a trò chuyện cùng AI hihi",
+          "likes": 1,
+          "author": "nguyenthingochuyen071090"
+        },
+        {
+          "text": "Cảm ơn chị dã chia sẻ",
+          "likes": 1,
+          "author": "hoangnguyen86854"
+        },
+        {
+          "text": "Khi cảm thấy k ai cứu đc mình mới có ng khác đến mng ạ. Chứ cứ kì vọng k bh ai đến",
+          "likes": 1,
+          "author": "kittiecat2606"
+        },
+        {
+          "text": "Đáy của tất cả mọi thứ trong cs luôn chị ạ",
+          "likes": 2,
+          "author": "bezy909"
+        },
+        {
+          "text": "Em ước gì em đã xem clip này từ năm trước",
+          "likes": 1,
+          "author": "saurieng0711"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7594481801305885973",
+      "create_time": "2026-01-12T14:28:20.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@hoaquynh0000/video/7692007076716956946",
+      "caption": "Đừng bao giờ đánh cược vào bản chất con người! #xuhuongtiktok #learnontiktok #phattrienbanthan #chualanhtamhon #connguoi ",
+      "author": {
+        "id": "16395636",
+        "name": "hoaquynh0000",
+        "nick": "Hoa Quỳnh Nở 00.00",
+        "profile": "https://www.tiktok.com/@hoaquynh0000",
+        "fans": 0
+      },
+      "play_count": 465400,
+      "like_count": 20600,
+      "share_count": 3338,
+      "comment_count": 561,
+      "duration_s": 360,
+      "music": {
+        "id": "7692007387419790101",
+        "name": "âm thanh gốc - Hoa Quỳnh Nở 00.00",
+        "author": "Hoa Quỳnh Nở 00.00",
+        "original": null
+      },
+      "hashtags": [
+        "xuhuongtiktok",
+        "learnontiktok",
+        "phattrienbanthan",
+        "chualanhtamhon",
+        "connguoi"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.160 --> 00:00:02.760\ncác bạn đã nghe câu nói này chưa vật hợp\n\n00:00:02.840 --> 00:00:04.800\nTheo loài người phân Theo nhóm\n\n00:00:04.880 --> 00:00:06.880\nvà đây là một kỹ năng sống rất hay\n\n00:00:07.160 --> 00:00:10.840\nvà nếu các bạn nghe hết cái video này cuộc đời của các bạn sẽ biết bạn ở vị\n\n00:00:10.920 --> 00:00:12.080\ntrí nào và bạn cần\n\n00:00:12.480 --> 00:00:15.440\ntập trung bạn ở điểm nào và đi chơi cùng AI\n\n00:00:16.080 --> 00:00:17.640\ntop đầu tiên trong một mối quan hệ\n\n00:00:18.200 --> 00:00:21.200\nkhi các bạn phát hiện Ra một người có thế giới quan\n\n00:00:21.600 --> 00:00:23.080\ncó cách suy nghĩ có cách\n\n00:00:23.120 --> 00:00:25.600\nhành động có cách động cơ sau lưng bạn\n\n00:00:25.760 --> 00:00:28.080\nnó đang chống phá lại bạn nó đang sân si\n\n00:00:28.160 --> 00:00:30.760\nlại bạn nó đang làm tổn thương bạn dừng lại\n\n00:00:31.120 --> 00:00:32.480\nvà thực sự suy nghĩ nha\n\n00:00:32.760 --> 00:00:37.520\nchấm dứt ngay khi có thể bấm nút xong finish vì SAO\n\n00:00:37.920 --> 00:00:40.480\ntrong cuộc sống này rắn á loại rắn độc á\n\n00:00:40.600 --> 00:00:43.480\nthì nó Theo bầy đàn nha chuột ha\n\n00:00:43.640 --> 00:00:47.360\nmũi ha rắn dán nó Theo bầy đàn là những cái từng ở thấp\n\n00:00:47.520 --> 00:00:48.800\nnó sẽ Theo bầy đàn\n\n00:00:49.040 --> 00:00:50.240\nvà vì SAO tôi có cái câu đó\n\n00:00:50.480 --> 00:00:52.520\nlà những người chơi Chung với người đó\n\n00:00:52.600 --> 00:00:54.080\nthì họ cùng cái hệ số\n\n00:00:54.240 --> 00:00:55.640\nvà cùng với từng số\n\n00:00:55.880 --> 00:00:58.840\nnếu các bạn không đặt họ làm trung tâm giống như là cái\n\n00:00:58.960 --> 00:01:02.480\ncombo họ trung tâm xoay từ cái combo đó vẽ một vòng\n\n00:01:02.520 --> 00:01:04.760\ntròn đứng đường kính nha và các bạn sẽ phải cắt hết\n\n00:01:04.840 --> 00:01:06.000\ntoàn bộ cái mối quan hệ đó\n\n00:01:06.200 --> 00:01:08.720\nvì SAO nó kinh khủng đến như vậy tại vì á\n\n00:01:08.840 --> 00:01:10.560\ntất cả những người chơi Chung với nhau họ\n\n00:01:10.600 --> 00:01:11.880\ncùng một hệ điều hành với nhau\n\n00:01:12.080 --> 00:01:13.400\ncác bạn phải hiểu một quy luật\n\n00:01:13.640 --> 00:01:15.640\nnhững con người đi chơi Chung là nó cùng hệ\n\n00:01:15.760 --> 00:01:17.440\ntừ trường với nhau ô kê chưa\n\n00:01:17.800 --> 00:01:19.560\nđừng có bao giờ nói là ờ bạn này\n\n00:01:19.600 --> 00:01:22.120\ntốt thì bạn này hổng phải như vậy nó cùng một cái hệ\n\n00:01:22.520 --> 00:01:24.880\nnếu đã tách được một người thì tách nguyên nhóm người đó để\n\n00:01:24.960 --> 00:01:26.880\nChi để hạn chế được rủi ro\n\n00:01:27.120 --> 00:01:28.200\nnó qua nó lại\n\n00:01:28.240 --> 00:01:30.640\ndùng câu chuyện này dùng câu chuyện Kia bạn chỉ mệt lòng\n\n00:01:30.880 --> 00:01:35.120\nđã có những con rắn 2 mặt nó chơi 2 đầu và nó cắn 2 đầu nha\n\n00:01:35.320 --> 00:01:36.000\nlà cũng trùng\n\n00:01:36.001 --> 00:01:39.601\ntrong cái đường kính như vậy nên phải cẩn trọng đời này á ao\n\n00:01:39.680 --> 00:01:40.440\ncá thì có nước\n\n00:01:40.441 --> 00:01:42.721\ntrong người ta mới nuôi cá chứ nước đục thì làm gì có cá\n\n00:01:43.160 --> 00:01:45.320\nvà nước đục thì không nuôi cá được nha\n\n00:01:45.600 --> 00:01:47.360\nnên á những cái người mà sống mà\n\n00:01:47.880 --> 00:01:48.680\ncoi như là nguyên cái\n\n00:01:48.720 --> 00:01:51.000\nổ của nó như vậy á nó chỉ thu hút những cái linh hồn\n\n00:01:51.320 --> 00:01:53.720\ncoi như là xấu xí thôi nó cắn đứt bạn thôi\n\n00:01:53.840 --> 00:01:56.360\nbạn phát hàng Ra lược á thì bạn cắt ngay từ đầu\n\n00:01:56.600 --> 00:01:57.800\ncác bạn thấy những cái con mồi\n\n00:01:57.960 --> 00:02:00.360\nnhững con động vật mà nó đi săn hông nó đi một mình\n\n00:02:00.800 --> 00:02:02.640\nnó săn một mình chứ nó hông đi bày đàn\n\n00:02:02.920 --> 00:02:05.560\nnhưng mà những cái người những cái người mà ở tầng thấp á\n\n00:02:06.000 --> 00:02:08.440\nnhững cái người mà tạo Ra Cho khiến Cho các bạn\n\n00:02:08.880 --> 00:02:11.960\nlo sợ về cái cuộc đời của bạn hoài nghi về con người bạn\n\n00:02:12.240 --> 00:02:16.320\ntổn thương sâu sắc hết lần này lần Kia bị coi thường bị trơ\n\n00:02:16.440 --> 00:02:17.920\ntrẽn bị lừa dối bị\n\n00:02:18.000 --> 00:02:21.160\ngiật dây bị động cơ bị nói xấu thì Xin lỗi cắt ngay lập tức\n\n00:02:21.560 --> 00:02:24.920\nmột mà bạn Chung hệ với nó nó sẽ kéo các bạn xuống mà thôi\n\n00:02:25.120 --> 00:02:26.680\nđể bạn phải lúc nào cũng under\n\n00:02:26.880 --> 00:02:29.560\ncái nhóm hội đó còn 2 bạn cắt Ra\n\n00:02:29.680 --> 00:02:32.440\nchừng nào càng sớm càng tốt bạn có một cuộc sống riêng\n\n00:02:32.880 --> 00:02:35.560\ncuộc sống đó mới là cuộc sống thú vị nên tôi nói rồi\n\n00:02:35.840 --> 00:02:37.040\nđừng bao giờ nghĩ\n\n00:02:37.080 --> 00:02:40.520\nmình đi chơi bày đàn là mình có nhiều sức mạnh hông có đâu\n\n00:02:41.040 --> 00:02:43.560\nsức mạnh là sức mạnh tự bản thân mình tạo Ra\n\n00:02:43.840 --> 00:02:45.120\ngiá trị mình tạo Ra\n\n00:02:45.320 --> 00:02:47.680\nnha và các bạn phải hiểu một quy luật như thế này nè\n\n00:02:47.960 --> 00:02:49.840\ntôi nói thẳng thời gian\n\n00:02:49.960 --> 00:02:52.480\nnăng lượng chức xám sự chú ý của các bạn\n\n00:02:52.600 --> 00:02:54.480\ntất cả nó rất là giá trị\n\n00:02:54.920 --> 00:02:57.480\ncác bạn trải qua bằng cái tuổi của tôi các bạn sẽ thấy nè\n\n00:02:57.960 --> 00:03:00.280\nthời gian là vàng là bạc năng lượng mình là vàng là\n\n00:03:00.440 --> 00:03:04.400\nsự chú ý sự Cho đi mình là vàng là bạc không dễ dãi\n\n00:03:04.480 --> 00:03:05.800\nđể Cho bất cứ một AI có\n\n00:03:05.840 --> 00:03:07.560\nthể bước vô cuộc sống của mình để phá\n\n00:03:07.600 --> 00:03:10.040\nhoại cái trường năng lượng đó ha nên\n\n00:03:10.200 --> 00:03:12.080\ncác bạn phải thận trọng khi các bạn cắt đứt\n\n00:03:12.240 --> 00:03:13.160\ncái con rắn độc đầu\n\n00:03:13.200 --> 00:03:15.600\ntiên thì các bạn phải cắt hết toàn bộ Cho tôi để Chi\n\n00:03:16.080 --> 00:03:17.600\nđỡ dây dư đỡ mệt\n\n00:03:17.800 --> 00:03:22.080\nvà thêm nữa nè nói một cái chiều nó nhẹ nhàng hơn 0đ nhất về\n\n00:03:22.120 --> 00:03:23.720\ntư duy 0đ nhất về từng số\n\n00:03:23.760 --> 00:03:25.760\nthì không chơi với nhau được còn những người đó họ đồng\n\n00:03:25.800 --> 00:03:26.560\nnhất với nhau\n\n00:03:26.561 --> 00:03:27.681\nthì họ vẫn là một tụ\n\n00:03:27.960 --> 00:03:30.240\ncác bạn không thể bay vô các bạn phá cái tụ đó được\n\n00:03:30.760 --> 00:03:34.400\nbạn chỉ bị đâm chọt và giết thôi nên tốt nhất\n\n00:03:34.440 --> 00:03:36.920\nkhi mà bạn phát hiện Ra điều đó nó không cùng với cái\n\n00:03:36.960 --> 00:03:37.960\ntừ trường cảm ứng\n\n00:03:38.080 --> 00:03:38.920\ntừ của các bạn\n\n00:03:39.080 --> 00:03:40.680\nmọi thứ năng lượng suy sụp\n\n00:03:41.040 --> 00:03:43.160\nlàm ơn một cách nhẹ nhàng bước đi\n\n00:03:43.520 --> 00:03:45.920\nngày nào mà bạn cắt đứt những cái điều đó nó càng sớm\n\n00:03:45.960 --> 00:03:47.600\nthì cuộc đời của bạn nó càng mênh mông\n\n00:03:47.840 --> 00:03:48.640\ncác bạn cứ để\n\n00:03:48.760 --> 00:03:50.640\nchắc hông SAO đâu quan sát nữa đi\n\n00:03:50.760 --> 00:03:52.920\nhổng chừng phải người ta như vậy đâu ờ người\n\n00:03:53.000 --> 00:03:54.280\nta dạy chứ con người bạn bè\n\n00:03:54.360 --> 00:03:56.240\nta xung quanh nó hông phải dạy đâu mình quan sát thêm\n\n00:03:56.520 --> 00:03:58.840\nquan sát đi mình Cho các bạn quan sát\n\n00:03:59.760 --> 00:04:02.960\nđến một ngày cái người tổn thương nhất vẫn là bạn nha\n\n00:04:03.280 --> 00:04:06.600\nvì ngay từ đầu bạn bị đè cổ bạn bị cưỡi cổ bạn bị trách\n\n00:04:06.720 --> 00:04:08.200\nmóc bạn bị bêu xéo\n\n00:04:08.720 --> 00:04:09.520\nthì bạn vẫn chịu\n\n00:04:09.560 --> 00:04:12.160\nchấp nhận trong cái vòng bè bạn như vậy thì cả cuộc đời\n\n00:04:12.440 --> 00:04:15.160\nXin lỗi người tổn thương đau nhất vẫn là bạn\n\n00:04:15.440 --> 00:04:18.000\nbạn làm đúng cũng là Sai bạn làm Sai cũng là Sai\n\n00:04:18.160 --> 00:04:19.880\nmọi thứ là do bạn ha\n\n00:04:20.240 --> 00:04:22.160\nmọi tất cả mọi do bạn đương nhiên\n\n00:04:22.400 --> 00:04:25.400\nbạn cũng có khả năng chơi với tần số khác nhưng\n\n00:04:25.720 --> 00:04:28.080\ntần số đó mình khuyên bạn một cách chân thành\n\n00:04:28.440 --> 00:04:30.680\nsau khi bạn rời Ra rồi thì bạn phải tập trung\n\n00:04:30.760 --> 00:0",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-hoaquynh00-20261002095603-7692007076716956946-vie-VN.vtt"
+        ],
+        "file": "subtitle-hoaquynh00-20261002095603-7692007076716956946-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Đồng nghiệp!! Sao tách đc",
+          "likes": 83,
+          "author": "hungne833"
+        },
+        {
+          "text": "Nghĩ chơi với 1 người thấy trong lành hẵn🤣. Ko cần tần số thì tự động rời nhóm🤣",
+          "likes": 167,
+          "author": "kimkim.ngoanxinhyeu"
+        },
+        {
+          "text": "Đã là vua thì ở đâu củng là ngai vàng",
+          "likes": 464,
+          "author": "no.n.i.tn80"
+        },
+        {
+          "text": "Chị này nói đúng nè, thiệt sự muốn biết một người có tam quan ntn hãy nhìn bạn bè của người đó. Người tam quan chỉnh tề đứng đắn chả ai chơi với bạn bè tào lao cả",
+          "likes": 116,
+          "author": "cakhongbietboi99"
+        },
+        {
+          "text": "Thuộc tầng lớp ko chơi với ai thì sao ta",
+          "likes": 53,
+          "author": "b.him62"
+        },
+        {
+          "text": "Bả nói đúng đó. tui trải rồi. đính chính luôn",
+          "likes": 15,
+          "author": "phucdieungon"
+        },
+        {
+          "text": "Chơi mà k ảnh hưởng mới là đỉnh cao, yếu thì bị dắt thôi, bị dắt nhiều thì phải tự tỉnh mới đỉnh dk 😂",
+          "likes": 64,
+          "author": "angelababy92"
+        },
+        {
+          "text": "chuẩn đó. m đã tách ra hết thấy nhẹ nhàng hẳn",
+          "likes": 16,
+          "author": "tubilinhungdien"
+        },
+        {
+          "text": "Giờ t Choi 1mk ko thich Choi voi ai😏",
+          "likes": 8,
+          "author": "h91_lan"
+        },
+        {
+          "text": "chính xác vì tụi nó là một loài nên mới thân thiết đến vậy 😁 thời buổi giờ người tốt đếm trên đầu ngón tay, nếu mình chưa tìm được người tốt chơi cùng thì tốt nhất chơi 1 mình 1 hệ 😁",
+          "likes": 19,
+          "author": "montuyettrinh"
+        },
+        {
+          "text": "Rõ ràng . Mình luôn chọn lọc bạn mà chơi . Đừng vì thiếu bạn mà cố gắng đu theo ( ngay cả tình yêu ) .",
+          "likes": 20,
+          "author": "thachsanh90"
+        },
+        {
+          "text": "Tui k chơi cùng ai,nói chuyện xã giao thì ok còn thân thì k có",
+          "likes": 15,
+          "author": "nnh_6_8"
+        },
+        {
+          "text": "t thuộc k tầng t k chơi với ai kkkk",
+          "likes": 10,
+          "author": "dungly815"
+        },
+        {
+          "text": "đr, dây dưa hao tâm tổn sức",
+          "likes": 5,
+          "author": "user93153415721161"
+        },
+        {
+          "text": "Nhưng trạng thái hông thích chơi hoặc thân thiết với ai thì là trạng thái gì ạ. Mình kiểu không thân với ai. Có chơi với nhau thì cũng hạn chế kể chuyện cá nhân, 1 năm gặp 1-2 lần cũng được. Không gặp không sao. 😂",
+          "likes": 5,
+          "author": "eiq_98"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7692007076716956946",
+      "create_time": "2026-10-02T09:56:03.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@liminalspvce.io/video/7645271586156580116",
+      "caption": "bạn không hề tuột lại !! \n#phattrienbanthan ",
+      "author": {
+        "id": "7259011731815924742",
+        "name": "liminalspvce.io",
+        "nick": "Yến Vy - Liminal Spvce",
+        "profile": "https://www.tiktok.com/@liminalspvce.io",
+        "fans": 0
+      },
+      "play_count": 495900,
+      "like_count": 60100,
+      "share_count": 7101,
+      "comment_count": 266,
+      "duration_s": 81,
+      "music": {
+        "id": "7551746793815100216",
+        "name": "nhạc nền - .",
+        "author": ".",
+        "original": null
+      },
+      "hashtags": [
+        "phattrienbanthan"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:01.760\nmình không biết AI còn nghe cái này nhưng mà\n\n00:00:02.000 --> 00:00:04.360\ncuộc đời bạn sẽ thay đổi nếu bạn ngừng việc\n\n00:00:04.400 --> 00:00:05.960\nquan sát cuộc sống của người khác\n\n00:00:06.720 --> 00:00:08.600\ncuộc đời bạn sẽ thay đổi\n\n00:00:08.920 --> 00:00:12.000\nnếu mà bạn ngừng việc quan sát cuộc sống của người khác\n\n00:00:13.080 --> 00:00:14.720\nbạn không hề thuộc lại phía sau\n\n00:00:15.560 --> 00:00:17.920\nbạn không hề thuộc lại phía sau trong cái đường đua đó\n\n00:00:17.921 --> 00:00:19.921\nbởi vì không có đường đua nào cả\n\n00:00:20.320 --> 00:00:22.480\nđừng có quan tâm về thời gian hay là bạn bao nhiêu tuổi\n\n00:00:22.560 --> 00:00:25.120\nđừng có nói với mình là bạn trễ rồi bạn không trễ\n\n00:00:25.800 --> 00:00:28.000\ncái việc mà chúng ta cứ lên mạng xơi mồi\n\n00:00:28.040 --> 00:00:30.600\nso sánh cuộc sống của mình với người khác và nghĩ là\n\n00:00:30.960 --> 00:00:32.320\ntại SAO chúng ta lại tệ quá\n\n00:00:32.600 --> 00:00:34.640\nmình cảm thấy điều này thật sự không công bằng với bạn\n\n00:00:35.000 --> 00:00:36.960\nbạn đâu biết người đó là AI đâu bạn đâu có biết\n\n00:00:37.280 --> 00:00:38.600\nkể cả đó là bạn của bạn\n\n00:00:38.680 --> 00:00:40.400\nthì bạn cũng không biết những khó khăn\n\n00:00:40.520 --> 00:00:41.760\nvà những cái cảnh kiểu như là\n\n00:00:42.040 --> 00:00:42.840\nbehind the scenes\n\n00:00:43.440 --> 00:00:45.520\nmình rất là thích một câu là đừng bao giờ so sánh\n\n00:00:45.920 --> 00:00:47.720\nbehind the scenes của bạn với cái\n\n00:00:47.920 --> 00:00:49.280\nhighlight story của người khác\n\n00:00:49.760 --> 00:00:52.040\ncái điều duy nhất có thể thay đổi cuộc sống của bạn\n\n00:00:52.041 --> 00:00:53.281\nđó chính là ngừng quan sát\n\n00:00:53.600 --> 00:00:55.760\nvà thật sự tập trung vào cuộc sống của bạn\n\n00:00:56.080 --> 00:00:57.520\nđừng quan sát cuộc sống của họ\n\n00:00:57.521 --> 00:00:58.921\nmà quan sát cuộc sống của bạn\n\n00:00:59.320 --> 00:01:01.760\nbởi vì bạn sẽ 30 tuổi thôi bạn sẽ\n\n00:01:01.800 --> 00:01:03.440\n40 tuổi bạn sẽ 50 tuổi thôi\n\n00:01:03.640 --> 00:01:06.120\nnên là bây giờ bạn có chọn làm việc đó hay không\n\n00:01:06.440 --> 00:01:09.560\nthì bạn cũng sẽ tới số tuổi đó thôi và bạn sẽ\n\n00:01:10.560 --> 00:01:11.360\nbạn sẽ\n\n00:01:12.840 --> 00:01:15.520\nmình không nói quá một ngày nào đó bạn sẽ\n\n00:01:16.960 --> 00:01:21.400\nCho nên là tập trung vào cuộc sống của mình please please\n",
+        "links": [
+          "research/trends/2026-10-16/apify/vtt/subtitle-liminalspv-20260529111828-7645271586156580116-vie-VN.vtt"
+        ],
+        "file": "subtitle-liminalspv-20260529111828-7645271586156580116-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "ko thèm qtam ai luôn á, cảm thấy mình quá vô tư 😭",
+          "likes": 580,
+          "author": "koda_myt203"
+        },
+        {
+          "text": "Nhưng mà cs của họ đẹp thật 🥺",
+          "likes": 7,
+          "author": "ntpd12345"
+        },
+        {
+          "text": "T bị nghĩ quá nhiều í. Rất khó chịu cái tính này của t. T bị mệt tụt mood rất nhiều🙂",
+          "likes": 2393,
+          "author": "muonmattroi"
+        },
+        {
+          "text": "Để nhạc tưởng đâu nghe truyện maa",
+          "likes": 190,
+          "author": "foolish688"
+        },
+        {
+          "text": "Trừ khi bạn là người làm việc trong lĩnh vực cần quan sát rõ cuộc sống người khác, còn ko hãy quan sát cuộc sống chính mình. \"Đừng nhìn ai khác, hãy nhìn chính mình\"",
+          "likes": 666,
+          "author": "vyhocxahoihoc"
+        },
+        {
+          "text": "Nghe cái nhẹ đầu liền",
+          "likes": 73,
+          "author": "chikenegggg"
+        },
+        {
+          "text": "Tập trung vào bản thân và làm thật tốt.. trong thầm lặng",
+          "likes": 32,
+          "author": "nhimnhim2408"
+        },
+        {
+          "text": "hay quá 🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🥰🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀🍀",
+          "likes": 14,
+          "author": "vinh.thch.n"
+        },
+        {
+          "text": "tại sao t lại phải nhìn người khác trong khi họ mới phải nhìn toi,toi 18 tuổi đã mua được nhà riêng đứng tên sổ đỏ,đỗ hsk 4 năm 17 tuổi thông dụng tiếng anh và trung,cùng hàng chục giải thưởng ngôn ngữ dịch thuật khác, bắt đầu ở 1 mình không gia đình nơi đất khách từ năm 13 tuổi,14 tuổi đã bước chân ra xã hội đời t giống như chỉ có trên chuyện nhưng nó là thật đó trải qua hàng tỷ thứ mới có được nên t trả cần phải nhìn ai cả họ mới phải nhìn t",
+          "likes": 9,
+          "author": "kocoten53847"
+        },
+        {
+          "text": "Mỗi người có 70 năm đếm ngược , trãi nghiệm thôi ...bớt tiêu cực",
+          "likes": 1,
+          "author": "chunhat09"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7645271586156580116",
+      "create_time": "2026-05-29T11:18:28.000Z",
+      "is_slideshow": false
+    },
     {
       "url": "https://www.tiktok.com/@giaimatrend.vn/video/7694889719036923154",
       "caption": "“Vậy thì bản chất của dao động điều hoà” là trend gì? Gốc là một câu giảng Vật lí 11 của Thầy Kiêu Vật Lí (@thaykieuvatli), trong clip 20 giây đăng ngày 19/7/2026. Ngày 25/9, Kiệt Hà Tịnh nhại lại, Mai Trí Thức diễn tiếp, rồi câu nói thành khuôn “bản chất của… lặp đi lặp lại… thế thôi”: mối quan hệ mập mờ, dự án ma, người lương 5 triệu… Ngày 5/10, chính thầy còn xuất hiện trong clip của @d.dragon1712.\n\nVà thầy nói có đúng không? Đúng: vật chạy về giữa thì nhanh dần, ra biên thì chậm dần, lặp đi lặp lại. Chỉ có điều, đó không phải nhanh dần đều.\n\nBạn sẽ điền gì vào “bản chất của…”?\n\nNguồn clip: @thaykieuvatli (Thầy Kiêu Vật Lí) · @tuankiet.2000 · @maitrithuc2020 · @d.dragon1712 · @nvanw.04 · @g.minhtrg · @haihe23\nSố liệu và bình luận TikTok ghi ngày 10/10/2026 · minh hoạ lò xo do kênh vẽ\n\n#daodongdieuhoa #banchatcua #thaykieuvatli #kiethatinh #giaimatrend",
@@ -73,18 +989,18 @@
         "name": "giaimatrend.vn",
         "nick": "GIẢI MÃ TREND",
         "profile": "https://www.tiktok.com/@giaimatrend.vn",
-        "fans": 2338
+        "fans": 2341
       },
-      "play_count": 72200,
-      "like_count": 3076,
+      "play_count": 72300,
+      "like_count": 3079,
       "share_count": 661,
-      "comment_count": 32,
+      "comment_count": 33,
       "duration_s": 120,
       "music": {
         "id": "7179679214566639618",
         "name": "vlog, chill out, calm daily life(1370843)",
         "author": "SUNNY HOOD STUDIO",
-        "original": false
+        "original": null
       },
       "hashtags": [
         "daodongdieuhoa",
@@ -103,19 +1019,29 @@
       },
       "top_comments": [
         {
-          "text": "vậy bản chất của quá trình oxh khử ?",
-          "likes": 51,
-          "author": "ateez_209"
-        },
-        {
           "text": "v thì bản chất của lốp ?",
           "likes": 9,
           "author": "lehailuan.09"
         },
         {
+          "text": "vậy bản chất của quá trình oxh khử ?",
+          "likes": 50,
+          "author": "ateez_209"
+        },
+        {
+          "text": "Đỉnh, Thầy quá cao tay",
+          "likes": 0,
+          "author": "thaythanhtagt"
+        },
+        {
           "text": "tus edit kiểu gì mà đơn giản mà hay",
           "likes": 3,
           "author": "gnam9b6v"
+        },
+        {
+          "text": "Bản chất của Lốp...🗿",
+          "likes": 1,
+          "author": "yeuchangdangtin_42"
         },
         {
           "text": "vậy bản chất của thiếu dame là thiếu dame hoặc hết chiêu lặpđi lặp lại . thế thô",
@@ -126,151 +1052,52 @@
           "text": "Lặp đi lặp lại",
           "likes": 1,
           "author": "vietbinh70"
+        },
+        {
+          "text": "Nghe thầy lặp đi lặp lại, thuộc bài luôn",
+          "likes": 1,
+          "author": "thanhphuong5917"
+        },
+        {
+          "text": "bản chất của rắn độc",
+          "likes": 1,
+          "author": "hocsinhlop6a6"
+        },
+        {
+          "text": "cảnh báo có lí",
+          "likes": 3,
+          "author": "nguyn.nghip003"
+        },
+        {
+          "text": "Pro👍🏿",
+          "likes": 2,
+          "author": "anliqi1"
+        },
+        {
+          "text": "Quá OK",
+          "likes": 1,
+          "author": "quanglong291982"
+        },
+        {
+          "text": "chào",
+          "likes": 0,
+          "author": "hinyne1"
+        },
+        {
+          "text": "bl đầu nhs",
+          "likes": 1,
+          "author": "huwng_htb"
         }
       ],
       "source_actor": "clockworks/tiktok-scraper",
       "raw_id": "7694889719036923154",
       "create_time": "2026-10-10T04:22:14.000Z",
       "is_slideshow": false
-    },
-    {
-      "url": "https://www.tiktok.com/@blvmaxstory/video/7696733116483800340",
-      "caption": "AE đêm qua đúng chuẩn bài chưaaaaa #fyp #realmadrid #viral #xuhuong #xuhuong ",
-      "author": {
-        "id": "7580349316338942994",
-        "name": "blvmaxstory",
-        "nick": "LÝ LÀNG LÁ",
-        "profile": "https://www.tiktok.com/@blvmaxstory",
-        "fans": 26600
-      },
-      "play_count": 62100,
-      "like_count": 5534,
-      "share_count": 1713,
-      "comment_count": 101,
-      "duration_s": 30,
-      "music": {
-        "id": "7696733175087418133",
-        "name": "âm thanh gốc - LÝ LÀNG LÁ",
-        "author": "LÝ LÀNG LÁ",
-        "original": true
-      },
-      "hashtags": [
-        "fyp",
-        "realmadrid",
-        "viral",
-        "xuhuong",
-        "xuhuong"
-      ],
-      "subtitle_or_transcript": {
-        "kind": "vtt",
-        "text": "WEBVTT\n\n\n00:00:00.320 --> 00:00:01.840\nReal Madrid lội ngược dòng\n\n00:00:01.960 --> 00:00:04.640\nvậy thì bản chất của pha real đêm qua chỉ có BA công việc\n\n00:00:04.641 --> 00:00:08.881\nchính hiệp một thì cay cú bực tức vì đội đá ngu vãi lò\n\n00:00:09.200 --> 00:00:10.120\nthở dốc liên tục\n\n00:00:10.600 --> 00:00:12.640\ngiữa hiệp 2 vẫn cay cú bực tức\n\n00:00:12.840 --> 00:00:14.800\nvì mấy thằng đá như đấm vào mắt người xem\n\n00:00:15.200 --> 00:00:16.840\ncuối hiệp thì đứt cái mẹ nó hơi\n\n00:00:17.000 --> 00:00:19.560\nvẫn đéo tin là đội bóng của mình có màn remontada\n\n00:00:20.400 --> 00:00:24.720\ngiờ thì mang ngay bác xa tới đây mang ngay bác xa tới đây\n",
-        "links": [
-          "research/trends/2026-10-16/apify/vtt/subtitle-blvmaxstor-20261015033530-7696733116483800340-vie-VN.vtt"
-        ],
-        "file": "subtitle-blvmaxstor-20261015033530-7696733116483800340-vie-VN.vtt"
-      },
-      "top_comments": [
-        {
-          "text": "Ae Madridrista đâu , Real là vua c1 Hala Madrid",
-          "likes": 53,
-          "author": "quyettaamdodh209"
-        },
-        {
-          "text": "Phan real Madrid đâu barca tuổi",
-          "likes": 27,
-          "author": "b.hiu161"
-        },
-        {
-          "text": "Gỡ 1 bàn ăn may lật 3 bàn đẳng cấp",
-          "likes": 10,
-          "author": "thch.tim.cho.mn"
-        },
-        {
-          "text": "đã đến lúc muorinho vứt vini ra dự bị và cho mbappe về cánh trái sở trường rồi...",
-          "likes": 2,
-          "author": "condimemay9714"
-        },
-        {
-          "text": "Real Madrid lọc fan kkk",
-          "likes": 1,
-          "author": "wanhh299"
-        }
-      ],
-      "source_actor": "clockworks/tiktok-scraper",
-      "raw_id": "7696733116483800340",
-      "create_time": "2026-10-15T03:35:30.000Z",
-      "is_slideshow": false
-    },
-    {
-      "url": "https://www.tiktok.com/@thaykieuvatli/video/7664254913454574869",
-      "caption": "VẬT LÍ 11: BẢN CHẤT CỦA DAO ĐỘNG ĐIỀU HOÀ LÀ GÌ??\nHọc chắc lý thuyết khi hiểu đúng bản chất vật lý.\n#2k10 \n#Thầy_Kiêu_Vật_Lí\n#Trung_tâm_luyện_thi_Quốc_Gia\n#Lớp_học_Vật_Lí_Online_10_11_12\n#đà_nẵng ",
-      "author": {
-        "id": "6877023219463914497",
-        "name": "thaykieuvatli",
-        "nick": "Thầy Kiêu Vật Lí",
-        "profile": "https://www.tiktok.com/@thaykieuvatli",
-        "fans": 168200
-      },
-      "play_count": 5400000,
-      "like_count": 446300,
-      "share_count": 468600,
-      "comment_count": 7270,
-      "duration_s": 20,
-      "music": {
-        "id": "7664254973472197396",
-        "name": "âm thanh gốc - Thầy Kiêu Vật Lí",
-        "author": "Thầy Kiêu Vật Lí",
-        "original": true
-      },
-      "hashtags": [
-        "2k10",
-        "thầy_kiêu_vật_lí",
-        "trung_tâm_luyện_thi_quốc_gia",
-        "lớp_học_vật_lí_online_10_11_12",
-        "đà_nẵng",
-        "Thầy_Kiêu_Vật_Lí",
-        "Trung_tâm_luyện_thi_Quốc_Gia",
-        "Lớp_học_Vật_Lí_Online_10_11_12"
-      ],
-      "subtitle_or_transcript": {
-        "kind": "vtt",
-        "text": "WEBVTT\n\n\n00:00:00.280 --> 00:00:03.000\nvậy thì bản chất của dao động điều hòa nó gồm 2 chuyển động\n\n00:00:03.040 --> 00:00:05.600\nlà chuyển động nhanh dần và chuyển động chậm dần\n\n00:00:06.000 --> 00:00:07.680\nlặp đi lặp lại\n\n00:00:08.400 --> 00:00:10.680\nnếu một vật mà dao động điều hòa\n\n00:00:10.760 --> 00:00:12.720\nthì nó sẽ có một phương trình\n\n00:00:12.960 --> 00:00:15.240\nX bằng a nhân cốt\n\n00:00:15.760 --> 00:00:17.360\nOmega T cộng phịt\n\n00:00:17.560 --> 00:00:20.200\nđấy là bản chất của dao động điều hòa thế thôi\n",
-        "links": [
-          "research/trends/2026-10-16/apify/vtt/subtitle-thaykieuva-20260719150332-7664254913454574869-vie-VN.vtt"
-        ],
-        "file": "subtitle-thaykieuva-20260719150332-7664254913454574869-vie-VN.vtt"
-      },
-      "top_comments": [
-        {
-          "text": "Thầy dạy 1 tuần giảm 2 cân 😭",
-          "likes": 84599,
-          "author": "nina_7892"
-        },
-        {
-          "text": "body language",
-          "likes": 44735,
-          "author": "caycalem_2m"
-        },
-        {
-          "text": "lặp đi lặp lại",
-          "likes": 38776,
-          "author": "kap_520"
-        },
-        {
-          "text": "sợ thầy nhảy ra khỏi màn hình 😭",
-          "likes": 30070,
-          "author": "himybestt.10"
-        },
-        {
-          "text": "thầy cx dao động điều hoà",
-          "likes": 10939,
-          "author": "nwhii__"
-        }
-      ],
-      "source_actor": "clockworks/tiktok-scraper",
-      "raw_id": "7664254913454574869",
-      "create_time": "2026-07-19T15:03:32.000Z",
-      "is_slideshow": false
     }
-  ]
+  ],
+  "comments_run_ids": [
+    "cQUZFOipRLSyacl6P",
+    "cYjVzTmCJDLGnzhVr"
+  ],
+  "parseforge_run_id": "SYCeL4YpNBeK1NNuP"
 }

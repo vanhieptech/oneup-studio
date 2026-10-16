@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-khong-dang-van-luot",
+ "title": "[STUB] Không còn đăng MXH — mà vẫn lướt đời người khác?",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "vi-sao-ngay-cang-nhieu-nguoi-khong-con",
+  "bridge_id": "B-nopost-01",
+  "lesson": "3.20 Giới hạn thời gian xem đời người khác trên mạng (thử nghiệm 10 phút/app trong 3 tuần → cô đơn và trầm cảm giảm; 143 sinh viên, chỉ một nghiên cứu). Không đăng ≠ hết so sánh nếu vẫn lướt.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 + P06",
+  "differentiation": "Mọi người đang nói: bỏ đăng ảnh / ẩn mình trên MXH = detox, sống chậm (https://kenh14.vn/vi-sao-ngay-cang-nhieu-nguoi-khong-con-dang-anh-hay-cap-nhat-thong-tin-tren-mang-xa-hoi-215261015192701748.chn). Góc của mình: không đăng là được — nhưng nếu vẫn lướt đời người khác trước khi ngủ thì bẫy so sánh vẫn còn. Khác B-scroll-01 (giới hạn 10 phút): hôm nay nhấn 'lurk ≠ healed'."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "khong-dang-van-luot.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngày càng nhiều người không còn đăng ảnh. Nghe healthy ghê.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "More people stopped posting. Sounds healthy.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "khong-dang-van-luot.b02",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ẩn mình, không up story, không flex. Detox.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "No stories. No flex. Detox mode.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "khong-dang-van-luot.b03",
+   "duration": 6,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi tối đến… ngón tay vẫn lướt đời người khác trước khi ngủ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Then at night… still scrolling other people's lives.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "khong-dang-van-luot.b04",
+   "duration": 5,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện mình: bỏ đăng vài tuần mà vẫn 'xem xíu thôi'.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[story placeholder]",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "khong-dang-van-luot.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách không bắt bạn bỏ mạng. Nó hỏi: bạn xem đời người khác bao lâu?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The book doesn't ban apps. It asks how long you watch others.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "khong-dang-van-luot.b06",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Không đăng ≠ hết so sánh. Cái đắt là phút lướt.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Not posting ≠ done comparing. The cost is scroll minutes.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "khong-dang-van-luot.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thử 10 phút mỗi app, 3 tuần. Một nghiên cứu nhỏ, mà hướng rõ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Try 10 minutes per app, 3 weeks. Small study, clear direction.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "khong-dang-van-luot.b08",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn ẩn được nút đăng chưa? Còn nút lướt thì sao?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "You hid the post button. What about the scroll?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

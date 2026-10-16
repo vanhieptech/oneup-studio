@@ -104,6 +104,7 @@ tags: [index, retrieval]
 | trends-patterns | pattern-library | living | `research/trends/2026-10-15/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-2026-10-16.apify-sample | research-trends | ready | `research/trends/2026-10-16/apify/README.md` | Apify sample 2026-10-16 |
 | trends-2026-10-16.apify-verify | research-trends | ready | `research/trends/2026-10-16/apify-verify.md` | Apify verify 2026-10-16 |
+| trends-2026-10-16 | trend-digest | draft-needs-review | `research/trends/2026-10-16/digest.md` | Trend digest 2026-10-16 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |

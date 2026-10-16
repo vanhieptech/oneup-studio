@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-ai-slop-chia-nho-viec",
+ "title": "[STUB] Công ty thu hẹp AI vì lỗi — việc 'AI làm hết' cũng là dự án ma",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "companies-worldwide-scale-back-ai-tools-after-errors",
+  "bridge_id": "B-aislop-01",
+  "lesson": "4.7 Task quá lớn ('làm app' / 'để AI làm') không bao giờ xong → chia nhỏ tới mức mỗi phần xong trong một lần ngồi rồi mới ước giờ (Kruger & Evans 2004; sách chỉ kiểm được hướng, không có %). Cùng họ hàng với Harvard/Ars: AI agent +30% code mà việc xong không tăng.",
+  "angle": "contrarian / data",
+  "pattern": "P11 + P03",
+  "differentiation": "Mọi người đang nói: AI hype chết / công ty bỏ AI vì lỗi và chi phí (https://x.com/i/trending/2110850870489252305). Góc của mình: không kêu bỏ AI — 'để AI làm hết' chính là task quá lớn giống 'làm app'; AI tạo thêm việc sửa (slop), nên chia nhỏ phần người thật sự review được. Khác góc 'AI lấy việc' đã bão hoà."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ai-slop-chia-nho-viec.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Công ty đang thu hẹp AI vì lỗi và chi phí. Nghe quen hông?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Companies are scaling back AI after errors.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ai-slop-chia-nho-viec.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Feed đầy tranh luận: AI tạo việc mới hay AI lấy việc. Hai phe cãi nhau.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Everyone's arguing: new jobs or lost jobs?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ai-slop-chia-nho-viec.b03",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình hỏi câu khác: bạn đang giao cho AI một việc… lớn cỡ nào?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Different question: how big is the task you gave AI?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ai-slop-chia-nho-viec.b04",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Prompt một phát. Nhận về đống phải sửa cả buổi. Đó gọi là AI slop.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One prompt. An afternoon of cleanup. That's AI slop.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ai-slop-chia-nho-viec.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách nói: task 'làm app' không bao giờ xong. Phải chia nhỏ tới mức một lần ngồi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Book: huge tasks never finish. Split to one-sitting chunks.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ai-slop-chia-nho-viec.b06",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "'Để AI làm hết' cũng y chang. Đó là dự án ma đội lốt năng suất.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "'Let AI do it all' is just another ghost project.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ai-slop-chia-nho-viec.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chia nhỏ phần bạn thật sự review được. AI hỗ trợ — hông phải ship giùm bạn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Split what you can actually review. AI assists — you ship.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "ai-slop-chia-nho-viec.b08",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Clip sau mình kể cách chia. Còn hôm nay: đừng giao cả quả núi cho một prompt.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Don't hand a whole mountain to one prompt.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

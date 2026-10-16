@@ -269,7 +269,7 @@
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-15",
+   "updated": "2026-10-16",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -349,7 +349,7 @@
    "id": "storage",
    "type": "convention",
    "status": "active",
-   "updated": "2026-10-15",
+   "updated": "2026-10-16",
    "path": "docs/conventions/storage.md",
    "title": "Quy ước lưu trữ (luật 65, L-034)"
   },
@@ -738,10 +738,18 @@
    "title": "Apify verify 2026-10-16"
   },
   {
+   "id": "trends-2026-10-16",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-16",
+   "path": "research/trends/2026-10-16/digest.md",
+   "title": "Trend digest 2026-10-16"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-15",
+   "updated": "2026-10-16",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -749,7 +757,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-15",
+   "updated": "2026-10-16",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },

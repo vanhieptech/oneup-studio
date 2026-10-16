@@ -1,11 +1,11 @@
 ---
 title: "Idea bank"
-date: 2026-10-15
+date: 2026-10-16
 source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-15
+updated: 2026-10-16
 tags: [ideas]
 ---
 # Idea bank
@@ -23,3 +23,7 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Mục tiêu ngày quá tham (B-goals-01) | 4.12 | trụ 1 | "Mục tiêu mỗi ngày phải X đang gây bão. Sách hỏi: bạn tính theo tháng chưa?" | DARK | ý tưởng (2026-10-15) |
 | Từ chối việc riêng ngoài giờ (B-refuse-01) | 3.16 | trụ 2 | "Đồng nghiệp nhắn ngoài giờ nhờ việc riêng. Bạn trả lời thế nào?" | DARK | ý tưởng (2026-10-15) |
 | Floor Time ≠ trị liệu (B-floor-01) | 22.8 / 3.18 | trụ 4 | "Nằm sàn đang viral. Được. Mà nếu bạn cần công cụ có số liệu…" | LIGHT | ý tưởng (2026-10-15) |
+| AI slop / thu hẹp AI → chia nhỏ (B-aislop-01) | 4.7 | trụ 1 | "Công ty đang thu hẹp AI vì lỗi và chi phí. Nghe quen hông?" | DARK | stub 2026-10-16, chờ duyệt |
+| Không đăng MXH vẫn lướt (B-nopost-01) | 3.20 | trụ 4 | "Ngày càng nhiều người không còn đăng ảnh. Nghe healthy ghê." | DARK | stub 2026-10-16, chờ duyệt |
+| Outdoor hustle vs đi bộ (B-outdoor-01) | 22.6 | trụ 4 | "Feed dạy bạn năng suất hoá cả lúc ra ngoài…" | LIGHT | ý tưởng (2026-10-16) |
+| Không tuột lại / không đường đua (B-liminal-01) | 4.12 + 3.20 | trụ 1/4 | "Bạn không hề tuột lại. Vì hông có đường đua nào cả." | LIGHT | ý tưởng (2026-10-16) |

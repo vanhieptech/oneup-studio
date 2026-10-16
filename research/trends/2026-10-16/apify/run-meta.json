@@ -1,28 +1,43 @@
 {
   "date": "2026-10-16",
   "timezone": "Asia/Saigon",
-  "actor": "clockworks/tiktok-scraper",
-  "run_id": "au2F9eFcWhzuaXWnz",
-  "dataset_id": "R44nZy4llNJeBXoP8",
-  "comments_dataset_id": "c1gtxsKxhJKsssZJb",
-  "kv_store_id": "XVyunFSbkllzZYCim",
-  "input": {
-    "searchQueries": ["Vay thi ban chat cua"],
-    "searchSection": "/video",
-    "resultsPerPage": 3,
-    "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
-    "commentsPerPost": 5,
-    "proxyCountryCode": "None"
+  "primary": {
+    "actor": "clockworks/tiktok-scraper",
+    "run_id": "GjDxjHOvo7LWub0CA",
+    "dataset_id": "vvGiyPdGods02mzta",
+    "kv_store_id": "VOzLRhj3U8P0YL9id",
+    "item_count": 40,
+    "input": {
+      "hashtags": [
+        "trihoan",
+        "hoctap",
+        "phattrienbanthan"
+      ],
+      "searchQueries": [
+        "Vay thi ban chat cua",
+        "cach het tri hoan"
+      ],
+      "searchSection": "/video",
+      "resultsPerPage": 8,
+      "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
+      "commentsPerPost": 0,
+      "proxyCountryCode": "None"
+    }
   },
-  "status": "SUCCEEDED",
-  "item_count": 3,
-  "comments_count": 15,
-  "vtt_keys": [
-    "subtitle-blvmaxstor-20261015033530-7696733116483800340-vie-VN.vtt",
-    "subtitle-giaimatren-20261010042214-7694889719036923154-vie-VN.vtt",
-    "subtitle-thaykieuva-20260719150332-7664254913454574869-eng-US.vtt",
-    "subtitle-thaykieuva-20260719150332-7664254913454574869-vie-VN.vtt"
-  ],
-  "run_time_secs": 25.922,
-  "note": "ASCII search query (no diacritics). VTT via DOWNLOAD_SUBTITLES in KV store. Comments via commentsPerPost → separate comments dataset."
+  "comments": {
+    "actor": "clockworks/tiktok-comments-scraper",
+    "run_id": "cQUZFOipRLSyacl6P",
+    "dataset_id": "X5wLDaNuptZExajtP",
+    "item_count": 45
+  },
+  "parseforge_enrich": {
+    "actor": "parseforge/tiktok-scraper",
+    "run_id": "SYCeL4YpNBeK1NNuP",
+    "dataset_id": "r6FgNqhdsEWHBE8DS",
+    "item_count": 3
+  },
+  "verify_sample_kept": {
+    "run_id": "au2F9eFcWhzuaXWnz",
+    "note": "earlier sample verify; digest uses fresh GjDxjHOvo7LWub0CA"
+  }
 }

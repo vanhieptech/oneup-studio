@@ -1,0 +1,188 @@
+{
+  "ideas": [
+    {
+      "id": "ai-slop-chia-nho-viec",
+      "title": "Công ty thu hẹp AI vì lỗi — việc 'AI làm hết' cũng là dự án ma",
+      "trend_id": "companies-worldwide-scale-back-ai-tools-after-errors",
+      "bridge_id": "B-aislop-01",
+      "lesson": "4.7 Task quá lớn ('làm app' / 'để AI làm') không bao giờ xong → chia nhỏ tới mức mỗi phần xong trong một lần ngồi rồi mới ước giờ (Kruger & Evans 2004; sách chỉ kiểm được hướng, không có %). Cùng họ hàng với Harvard/Ars: AI agent +30% code mà việc xong không tăng.",
+      "angle": "contrarian / data",
+      "pattern": "P11 + P03",
+      "differentiation": "Mọi người đang nói: AI hype chết / công ty bỏ AI vì lỗi và chi phí (https://x.com/i/trending/2110850870489252305). Góc của mình: không kêu bỏ AI — 'để AI làm hết' chính là task quá lớn giống 'làm app'; AI tạo thêm việc sửa (slop), nên chia nhỏ phần người thật sự review được. Khác góc 'AI lấy việc' đã bão hoà.",
+      "theme": "dark",
+      "week": 1,
+      "target": "clip-03 (4.7) hook thay thế",
+      "hook_vi": "Công ty đang thu hẹp AI vì lỗi và chi phí. Nghe quen hông?",
+      "moment_vi": "Prompt một phát, nhận về đống phải sửa cả buổi.",
+      "turn_vi": "Việc 'để AI làm hết' cũng là dự án ma. Chia nhỏ phần bạn review được.",
+      "hook_en": "Companies are scaling back AI. Sound familiar?",
+      "explainer": "HyperFrames: thanh 'AI làm hết' phình ra thành đống bug/sửa; bên cạnh stack thẻ nhỏ '1 lần ngồi = 1 phần review được'.",
+      "beats": [
+        {
+          "text": "Công ty đang thu hẹp AI vì lỗi và chi phí. Nghe quen hông?",
+          "expression": "surprised",
+          "action": "talking",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "Companies are scaling back AI after errors."
+        },
+        {
+          "text": "Feed đầy tranh luận: AI tạo việc mới hay AI lấy việc. Hai phe cãi nhau.",
+          "expression": "confused",
+          "action": "thinking",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "Everyone's arguing: new jobs or lost jobs?"
+        },
+        {
+          "text": "Mình hỏi câu khác: bạn đang giao cho AI một việc… lớn cỡ nào?",
+          "expression": "neutral",
+          "action": "talking",
+          "pose": "standing",
+          "background": "desk",
+          "duration": 5,
+          "caption_en": "Different question: how big is the task you gave AI?"
+        },
+        {
+          "text": "Prompt một phát. Nhận về đống phải sửa cả buổi. Đó gọi là AI slop.",
+          "expression": "sad",
+          "action": "typing",
+          "pose": "sitting",
+          "background": "desk",
+          "duration": 6,
+          "caption_en": "One prompt. An afternoon of cleanup. That's AI slop."
+        },
+        {
+          "text": "Sách nói: task 'làm app' không bao giờ xong. Phải chia nhỏ tới mức một lần ngồi.",
+          "expression": "happy",
+          "action": "talking",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 6,
+          "caption_en": "Book: huge tasks never finish. Split to one-sitting chunks."
+        },
+        {
+          "text": "'Để AI làm hết' cũng y chang. Đó là dự án ma đội lốt năng suất.",
+          "expression": "surprised",
+          "action": "talking",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "'Let AI do it all' is just another ghost project."
+        },
+        {
+          "text": "Chia nhỏ phần bạn thật sự review được. AI hỗ trợ — hông phải ship giùm bạn.",
+          "expression": "happy",
+          "action": "reacting",
+          "pose": "standing",
+          "background": "desk",
+          "duration": 6,
+          "caption_en": "Split what you can actually review. AI assists — you ship."
+        },
+        {
+          "text": "Clip sau mình kể cách chia. Còn hôm nay: đừng giao cả quả núi cho một prompt.",
+          "expression": "happy",
+          "action": "reacting",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "Don't hand a whole mountain to one prompt."
+        }
+      ]
+    },
+    {
+      "id": "khong-dang-van-luot",
+      "title": "Không còn đăng MXH — mà vẫn lướt đời người khác?",
+      "trend_id": "vi-sao-ngay-cang-nhieu-nguoi-khong-con",
+      "bridge_id": "B-nopost-01",
+      "lesson": "3.20 Giới hạn thời gian xem đời người khác trên mạng (thử nghiệm 10 phút/app trong 3 tuần → cô đơn và trầm cảm giảm; 143 sinh viên, chỉ một nghiên cứu). Không đăng ≠ hết so sánh nếu vẫn lướt.",
+      "angle": "contrarian / empathy",
+      "pattern": "P03 + P06",
+      "differentiation": "Mọi người đang nói: bỏ đăng ảnh / ẩn mình trên MXH = detox, sống chậm (https://kenh14.vn/vi-sao-ngay-cang-nhieu-nguoi-khong-con-dang-anh-hay-cap-nhat-thong-tin-tren-mang-xa-hoi-215261015192701748.chn). Góc của mình: không đăng là được — nhưng nếu vẫn lướt đời người khác trước khi ngủ thì bẫy so sánh vẫn còn. Khác B-scroll-01 (giới hạn 10 phút): hôm nay nhấn 'lurk ≠ healed'.",
+      "theme": "dark",
+      "week": 1,
+      "target": "ý tưởng mới (gần clip-22 / 3.20)",
+      "hook_vi": "Ngày càng nhiều người không còn đăng ảnh. Nghe healthy ghê.",
+      "moment_vi": "Story trống, mà ngón tay vẫn lướt feed người khác trước khi ngủ.",
+      "turn_vi": "Không đăng ≠ hết so sánh. Cái đắt là phút xem đời người khác.",
+      "hook_en": "More people stopped posting. Still scrolling others?",
+      "explainer": "HyperFrames: icon 'đăng' gạch ngang (✓) vs thanh thời gian 'lướt đời người khác' vẫn đỏ; sau đó thanh rút còn 10 phút/app.",
+      "beats": [
+        {
+          "text": "Ngày càng nhiều người không còn đăng ảnh. Nghe healthy ghê.",
+          "expression": "surprised",
+          "action": "talking",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "More people stopped posting. Sounds healthy."
+        },
+        {
+          "text": "Ẩn mình, không up story, không flex. Detox.",
+          "expression": "happy",
+          "action": "idle",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 4,
+          "caption_en": "No stories. No flex. Detox mode."
+        },
+        {
+          "text": "Rồi tối đến… ngón tay vẫn lướt đời người khác trước khi ngủ.",
+          "expression": "sad",
+          "action": "idle",
+          "pose": "sitting",
+          "background": "bed",
+          "duration": 6,
+          "caption_en": "Then at night… still scrolling other people's lives."
+        },
+        {
+          "text": "[CẦN HIỆP XÁC NHẬN] Chuyện mình: bỏ đăng vài tuần mà vẫn 'xem xíu thôi'.",
+          "expression": "confused",
+          "action": "thinking",
+          "pose": "sitting",
+          "background": "bed",
+          "duration": 5,
+          "caption_en": "[story placeholder]"
+        },
+        {
+          "text": "Sách không bắt bạn bỏ mạng. Nó hỏi: bạn xem đời người khác bao lâu?",
+          "expression": "neutral",
+          "action": "talking",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 6,
+          "caption_en": "The book doesn't ban apps. It asks how long you watch others."
+        },
+        {
+          "text": "Không đăng ≠ hết so sánh. Cái đắt là phút lướt.",
+          "expression": "surprised",
+          "action": "reacting",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "Not posting ≠ done comparing. The cost is scroll minutes."
+        },
+        {
+          "text": "Thử 10 phút mỗi app, 3 tuần. Một nghiên cứu nhỏ, mà hướng rõ.",
+          "expression": "happy",
+          "action": "talking",
+          "pose": "standing",
+          "background": "desk",
+          "duration": 6,
+          "caption_en": "Try 10 minutes per app, 3 weeks. Small study, clear direction."
+        },
+        {
+          "text": "Bạn ẩn được nút đăng chưa? Còn nút lướt thì sao?",
+          "expression": "happy",
+          "action": "reacting",
+          "pose": "standing",
+          "background": "grid",
+          "duration": 5,
+          "caption_en": "You hid the post button. What about the scroll?"
+        }
+      ]
+    }
+  ]
+}
