@@ -34,7 +34,7 @@ else:
 
 # ---- rule-65 / L-034: storage convention (docs/conventions/storage.md) ----
 sys.path.insert(0, str(ROOT / "pipeline")); import paths as P
-DUP_EXEMPT = ("skills/", "video-engine/public/voice/", "brand/omi-exports/", "refs/")
+DUP_EXEMPT = ("skills/", "video-engine/public/voice/", "brand/omi-exports/", "refs/", "resources/refs/")
 DUP_EXEMPT_NAMES = {"package.json", "package-lock.json", "hyperframes.json", ".gitignore", "README.md", "AGENTS.md", "CLAUDE.md"}
 import re as _re
 DUP_EXEMPT_RE = _re.compile(r"(\.tpl$|^logs/runs/|/final/cover\.png$|/v\d+/)")  # templates, run logs, L-020 cover = template render, versioned snapshots
