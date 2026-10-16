@@ -60,3 +60,9 @@ Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt bu�
 - Beat sau mở bằng từ nối với beat trước (Vì…, Mà khoa học cũng thấy…, Còn…, Vậy thì…, Lấy … làm thử nha, … cũng vậy, Giống clip trước…, Thấy chưa…).
 - Beat dài > ~25 chữ (> 8s) thì cắt 2 shot giữa câu, không cắt câu.
 - check-rules `L-044` cảnh báo khi bảng script vi phạm.
+
+## Bằng chứng cụ thể, ít tiểu từ, ví dụ ngôi «mình» (L-045)
+- Beat bằng chứng nói đủ 3 ý: **ai** (tác giả/loại nghiên cứu) · **làm gì** (cho người ta làm gì, so nhóm nào, tổng hợp bao nhiêu loại nghiên cứu) · **thấy gì**. Đối chiếu với nguồn HTB (`book/` + `docs/核实记录/`): chỉ nói tới mức đã xác minh, bỏ «hơn hẳn», «chứng minh» nếu nguồn chỉ có hướng/tương quan.
+- Suy luận của người nói (vd «việc to thường là việc mình ngán nhất») nói thành ý của mình, không gán cho nghiên cứu.
+- Tiểu từ nha/nè/á: tối đa ~1 lần mỗi 2–3 beat; CTA được 1 «nha».
+- Beat ví dụ nói ngôi «mình» làm mẫu («Như mình nè, «dọn phòng» mình chia ra…»), không ra lệnh cho người xem.
