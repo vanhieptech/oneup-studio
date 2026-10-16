@@ -15,3 +15,5 @@ tags: [motion]
 | clip-01 final (2026-10-13) | push-in (b01), squash-stretch/overlapping-action (rig), scale-pop (Omi b03), iris-mask (b04, E→B), push-transition (A→E), stagger (e01), strikethrough-replace (e02), count-up + bar-grow (e03), underline-draw (e04), hard-shadow-pop (bubble/caption) |
 
 - 2026-10-14 clip-01 v2 (DL-041): e01 stagger · e02 two-column compare · e03/e04 strikethrough-replace · e05 count-up+bar-grow · e06 underline-draw · e07 scale-pop ✕ + stagger fix cards. Mốc thời gian theo phần trăm thời lượng mỗi section (không phụ thuộc chỉ số từ). Vòng review 1 thấy dấu ✕ đè lên chữ "học" → đã sửa.
+
+- 2026-10-16 clip-03 v1 (gate 1, kế hoạch): b01 mmx-oversize-land · b01b mmx-cut-on-motion + tdev-text-swap · b02 tdev-badge · b03 mmx-snap-settle · b04 tdev-panel + mmx-cruise · b05 tdev-shake · b06 mmx-accel-exit · b07 bar-grow + mmx-soft-land · b08 tdev-stagger · b09 step-recap + count-up · b09c tdev-modal · b10 mmx-pop-over (spring duy nhất).

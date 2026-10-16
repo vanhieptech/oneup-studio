@@ -45,6 +45,9 @@ tags: [index, retrieval]
 | clip-02.post | post-package | sẵn sàng đăng (Hiệp duyệt bản v17 final 16/10); chưa lưu trữ, chờ Hiệp duyệt gói đăng | `content/clips/clip-02-procrastination-discomfort/final/post.md` | Gói đăng TikTok: clip 02 v17 "Lười? Không, đang né" |
 | clip-02.script-final | script | draft | `content/clips/clip-02-procrastination-discomfort/final/script-final.md` | Clip 02 v17: Trì hoãn là đang tránh cảm giác khó chịu, không phải chưa đủ cố gắng |
 | clip-02.trend-signals | research | ready | `content/clips/clip-02-procrastination-discomfort/final/trend-signals.md` | Tín hiệu trend cho clip-02 (luật 57, DL-053). Thu thập 14/10 ~17:45 (UTC+7) |
+| clip-03.readme | readme | ready | `content/clips/clip-03-big-task-chunking/README.md` | clip-03: Chia việc lớn thành việc con (HTB 4.7) |
+| clip-03.script-final | script | draft | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v1: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay |
+| clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -294,6 +297,7 @@ tags: [index, retrieval]
 | id | theme | path | files |
 |---|---|---|---|
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | archive, final |
+| clip-03 | None | `content/clips/clip-03-big-task-chunking` | README.md, final |
 
 ## Assets & tools
 | id | path | description |
