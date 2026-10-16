@@ -237,17 +237,17 @@
    "id": "content.clips.clip-02-procrastination-discomfort.final.post-checklist",
    "type": "doc",
    "status": "ready",
-   "updated": "2026-10-14",
+   "updated": "2026-10-16",
    "path": "content/clips/clip-02-procrastination-discomfort/final/post-checklist.md",
    "title": "Checklist đăng clip 02 (đánh dấu khi xong)"
   },
   {
    "id": "clip-02.post",
    "type": "post-package",
-   "status": "NHÁP gate 1 (chưa render; số liệu file sẽ cập nhật sau khi build)",
-   "updated": "2026-10-14",
+   "status": "sẵn sàng đăng (Hiệp duyệt bản v17 final 16/10); chưa lưu trữ, chờ Hiệp duyệt gói đăng",
+   "updated": "2026-10-16",
    "path": "content/clips/clip-02-procrastination-discomfort/final/post.md",
-   "title": "Gói đăng TikTok: clip 02 \"Lười? Không, đang né\""
+   "title": "Gói đăng TikTok: clip 02 v17 \"Lười? Không, đang né\""
   },
   {
    "id": "clip-02.script-final",
@@ -728,6 +728,14 @@
    "updated": "2026-10-16",
    "path": "research/trends/2026-10-16/apify/README.md",
    "title": "Apify sample 2026-10-16"
+  },
+  {
+   "id": "research.trends.2026-10-16.apify.top-clips",
+   "type": "trend-top-clips",
+   "status": "ready",
+   "updated": "2026-10-16",
+   "path": "research/trends/2026-10-16/apify/top-clips.md",
+   "title": "Top 5 clip TikTok — 16/10/2026"
   },
   {
    "id": "trends-2026-10-16.apify-verify",

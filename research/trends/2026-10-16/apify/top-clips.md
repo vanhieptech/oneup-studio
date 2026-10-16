@@ -1,4 +1,7 @@
 ---
+title: "Top TikTok clips 2026-10-16 (Apify)"
+tags: [trends, apify, tiktok]
+status: ready
 date: 2026-10-16
 type: trend-top-clips
 source: apify (saved data from 07:55 ICT run — no new Apify run)
