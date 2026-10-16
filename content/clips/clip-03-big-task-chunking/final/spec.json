@@ -1076,8 +1076,8 @@
           "cast": [
             {
               "id": "hiep",
-              "x": 0.5,
-              "facing": "right",
+              "x": 0.74,
+              "facing": "left",
               "pose": "standing",
               "action": "talking",
               "expression": "happy"
@@ -1104,9 +1104,9 @@
           "props": [
             {
               "kind": "words",
-              "x": 540,
-              "y": 360,
-              "s": 1.0,
+              "x": 280,
+              "y": 900,
+              "s": 0.6,
               "words": [
                 "COMMENT 1 CHỮ"
               ],

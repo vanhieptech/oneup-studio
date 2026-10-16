@@ -1,23 +1,24 @@
 {
- "total": 70.016,
+ "total": 85.248,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-03-big-task-chunking/final/plan-A.voiced.json",
-   "dur": 70.003,
+   "dur": 85.279,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-03-final-A.mp4",
    "fx": null,
    "scene_starts": [
-    1.081,
-    4.122999999999999,
-    8.791999999999998,
-    14.460999999999999,
-    20.947,
-    31.899,
-    42.046,
-    53.766999999999996,
-    63.791
+    2.199,
+    4.427,
+    11.568999999999999,
+    18.817,
+    30.933,
+    44.116,
+    51.134,
+    61.171,
+    69.038,
+    77.13799999999999
    ],
    "_off": 0.0
   }
@@ -27,166 +28,183 @@
    "beat": "clip-03.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "Thì cái bản chất...",
-   "en": "So what's the essence…",
-   "emotion": "focused",
-   "key": "c03v3-b01",
+   "say": "Có việc gì bạn hứa cuối tuần làm...",
+   "en": "Got a task you promised for \"this weekend\"…",
+   "emotion": "surprised",
+   "key": "c03v8-b01",
    "local": 0.12,
-   "dur": 0.901,
+   "dur": 2.019,
    "t": 0.12
   },
   {
    "beat": "clip-03.b02",
    "scene": "b01b",
    "speaker": "hiep",
-   "say": "của cái việc hứa cuối tuần dọn phòng... là gì?",
-   "en": "…of promising \"I'll clean my room this weekend\"?",
-   "emotion": "focused",
-   "key": "c03v3-b01b",
+   "say": "mà để cả năm rồi chưa đụng tới không?",
+   "en": "…that's sat untouched for a year?",
+   "emotion": "sad",
+   "key": "c03v8-b01b",
    "local": 0.02,
-   "dur": 2.962,
-   "t": 1.101
+   "dur": 2.148,
+   "t": 2.219
   },
   {
    "beat": "clip-03.b03",
-   "scene": "b03",
+   "scene": "b02",
    "speaker": "hiep",
-   "say": "Thứ nhất là các bạn phải ghi gọn một chữ: dọn phòng, không chia gì hết.",
-   "en": "First: write just \"clean room\", no breakdown at all.",
+   "say": "Như dọn cái phòng, hay ôn thi chẳng hạn. Tuần nào cũng tự nhủ cuối tuần làm, rồi một năm trôi qua lúc nào không hay.",
+   "en": "Cleaning your room, studying for exams. \"This weekend\" every week… and a year slips by.",
    "emotion": "focused",
-   "key": "c03v3-b03",
+   "key": "c03v8-b02",
    "local": 0.15,
-   "dur": 4.269,
-   "t": 4.273
+   "dur": 6.742,
+   "t": 4.577
   },
   {
    "beat": "clip-03.b04",
-   "scene": "b04",
+   "scene": "b03",
    "speaker": "hiep",
-   "say": "Thứ hai là đứng giữa phòng mà không biết bắt đầu từ đâu... thì nằm xuống lướt điện thoại.",
-   "en": "Second: no idea where to start… so lie down and scroll.",
+   "say": "Lý do là việc đó chỉ có một cái tên to đùng. Nhìn vô là ngợp, không biết bắt đầu từ đâu, thế là cứ để đó.",
+   "en": "Because it's just one huge name. Overwhelming, no idea where to start, so it sits.",
    "emotion": "confused",
-   "key": "c03v3-b04",
+   "key": "c03v8-b03",
    "local": 0.15,
-   "dur": 5.269,
-   "t": 8.942
+   "dur": 6.848,
+   "t": 11.719
   },
   {
    "beat": "clip-03.b05",
-   "scene": "b06",
+   "scene": "b04",
    "speaker": "hiep",
-   "say": "Và cuối cùng là các bạn phải tự hứa cuối tuần sau, rồi ba tháng sau... cái ghế vẫn là tủ đồ.",
-   "en": "And finally: promise \"next weekend\"… three months later, the chair is still the closet.",
+   "say": "Chuyện này có nghiên cứu hẳn hoi. Hai nhà tâm lý học Cru gơ và Ê vần thấy: nhìn mỗi cái tên việc, mình hay nghĩ chút xíu là xong. Phải ghi ra từng bước nhỏ, mình mới thấy nó đâu có ít.",
+   "en": "Psychologists Kruger & Evans found: from the name alone we think it's quick. List the small steps, and it's not so little.",
    "emotion": "focused",
-   "key": "c03v3-b06",
-   "local": 0.15,
-   "dur": 6.086,
-   "t": 14.611
+   "key": "c03v8-b04",
+   "local": 0.45,
+   "dur": 11.416,
+   "t": 19.267
   },
   {
    "beat": "clip-03.b06",
-   "scene": "b07",
+   "scene": "b05",
    "speaker": "hiep",
-   "say": "Nghe quen hông? Mà các nhà khoa học nói: Cru gơ và Ê vần thấy liệt kê việc con ra trước rồi mới ước giờ thì ước bớt hụt. Còn Xtiu thấy việc càng ngán càng bị đẩy về sau.",
-   "en": "Sound familiar? List subtasks first, then estimate: you underestimate less. And the more you dread it, the more it's pushed back.",
+   "say": "Còn giáo sư Xtiu thì gom rất nhiều nghiên cứu về chuyện trì hoãn lại và thấy một điều: việc nào mình càng ngại đụng vô, mình càng dễ để mai tính. Mà việc càng to thì mình càng ngại, nên nó mới nằm đó cả năm.",
+   "en": "Professor Steel pooled many procrastination studies: the more we dread a task, the more we put it off. Big tasks feel worse, so they sit all year.",
    "emotion": "focused",
-   "key": "c03v3-b07",
+   "key": "c03v8-b05",
    "local": 0.45,
-   "dur": 10.252,
-   "t": 21.397
+   "dur": 12.483,
+   "t": 31.383
   },
   {
    "beat": "clip-03.b07",
-   "scene": "b08",
+   "scene": "b06",
    "speaker": "hiep",
-   "say": "Vậy việc lớn phải chia thành việc con rồi mới ước giờ, mới bắt tay. Nghiên cứu mới thấy hướng thôi, chưa có con số. Mà dọn phòng hóa ra là cả chục việc đó.",
-   "en": "Split big work into subtasks, then estimate, then start. Only the direction is known. \"Clean room\" is really a dozen tasks.",
+   "say": "Nói gọn lại là: việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
+   "en": "In short: split big tasks first, then estimate, then start.",
    "emotion": "focused",
-   "key": "c03v3-b08",
+   "key": "c03v8-b06",
    "local": 0.45,
-   "dur": 9.447,
-   "t": 32.349
+   "dur": 6.318,
+   "t": 44.566
   },
   {
    "beat": "clip-03.b08",
-   "scene": "b09",
+   "scene": "b07",
    "speaker": "hiep",
-   "say": "Chuẩn chia: mỗi việc con xong trong một lần làm. Gom áo trên ghế. Dọn mặt bàn. Bỏ rác dưới gầm giường. Cộng giờ từng phần mới ra hạn thật. Chia vừa thôi, chia vụn quá cũng mệt.",
-   "en": "Each subtask fits one go: clear the chair, clean the desk, bag the trash. Add up the parts for a real deadline.",
+   "say": "Như mình đây, thay vì ghi dọn phòng, mình ghi ra ba việc: dọn đống đồ trên ghế, lau cái bàn, đổ sọt rác. Mỗi việc chừng mười lăm phút, tối nay làm một việc là xong.",
+   "en": "Me: not \"clean room\" but three tasks: clear the chair, wipe the desk, empty the trash. About 15 minutes each, one tonight.",
    "emotion": "focused",
-   "key": "c03v3-b09",
+   "key": "c03v8-b07",
    "local": 0.45,
-   "dur": 11.021,
-   "t": 42.496
+   "dur": 9.337,
+   "t": 51.584
   },
   {
    "beat": "clip-03.b09",
-   "scene": "b09c",
+   "scene": "b08",
    "speaker": "hiep",
-   "say": "Ôn thi cũng vậy: không ghi ôn thi, mà ghi làm một đề chương hai. Như clíp trước: rối thì chia nhỏ; clíp đầu: chín giờ tối, ở đâu, làm thẻ đầu tiên.",
-   "en": "Not \"study\", but \"one practice test, chapter 2\". Messy? Split it. 9 p.m., a set place, card one.",
+   "say": "Ôn thi cũng vậy: đừng ghi ôn thi, ghi làm một đề chương hai. Cộng thời gian từng việc lại là biết chừng nào xong thật.",
+   "en": "Same for exams: not \"study\" but \"one practice test, chapter 2\". Add them up: a real finish date.",
    "emotion": "focused",
-   "key": "c03v3-b09c",
+   "key": "c03v8-b08",
    "local": 0.45,
-   "dur": 9.324,
-   "t": 54.217
+   "dur": 7.167,
+   "t": 61.621
   },
   {
    "beat": "clip-03.b10",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Như clíp trước mình nói, rối thì chia nhỏ. Còn clíp đầu tiên: chín giờ tối, ngồi vào bàn, làm việc nhỏ đầu tiên.",
+   "en": "Last clip: messy? Split it. First clip: 9 p.m., at the desk, do the first small task.",
+   "emotion": "focused",
+   "key": "c03v8-b09",
+   "local": 0.45,
+   "dur": 7.4,
+   "t": 69.488
+  },
+  {
+   "beat": "clip-03.b11",
    "scene": "b10",
    "speaker": "hiep",
-   "say": "Vậy đó, không phải lười, việc to quá thôi. Việc to nhất bạn đang treo tên gì? Com men một chữ nha!",
-   "en": "Not lazy, the task's just too big. Comment one word!",
+   "say": "Bạn thấy đó, không phải mình lười, mà là việc to quá thôi. Việc bạn để cả năm chưa làm là gì? Com men một chữ cho mình biết nha!",
+   "en": "Not lazy, the task's just too big. What's yours? Comment one word!",
    "emotion": "happy",
-   "key": "c03v3-b10",
+   "key": "c03v8-b10",
    "local": 0.15,
-   "dur": 5.812,
-   "t": 63.941
+   "dur": 7.741,
+   "t": 77.288
   }
  ],
  "transitions": [
   {
-   "at": 1.081,
+   "at": 2.199,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 4.123,
+   "at": 4.427,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 8.792,
+   "at": 11.569,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 14.461,
+   "at": 18.817,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 20.947,
+   "at": 30.933,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 31.899,
+   "at": 44.116,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 42.046,
+   "at": 51.134,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 53.767,
+   "at": 61.171,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 63.791,
+   "at": 69.038,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 77.138,
    "kind": "scene",
    "sfx": "swish"
   }
@@ -197,116 +215,140 @@
    "at": 0.12
   },
   {
-   "name": "swish",
-   "at": 1.101
+   "name": "pop",
+   "at": 1.02
   },
   {
-   "name": "pop",
-   "at": 2.101
+   "name": "swish",
+   "at": 2.219
   },
   {
    "name": "stamp",
-   "at": 5.473
+   "at": 2.819
+  },
+  {
+   "name": "pop",
+   "at": 5.177
   },
   {
    "name": "tick",
-   "at": 7.873
+   "at": 7.577
+  },
+  {
+   "name": "stamp",
+   "at": 13.119
   },
   {
    "name": "snap",
-   "at": 10.542
-  },
-  {
-   "name": "swish",
-   "at": 12.742
-  },
-  {
-   "name": "tick",
-   "at": 16.011
-  },
-  {
-   "name": "stamp",
-   "at": 19.611
+   "at": 14.919
   },
   {
    "name": "ding",
-   "at": 24.397
-  },
-  {
-   "name": "stamp",
-   "at": 30.397
-  },
-  {
-   "name": "stamp",
-   "at": 33.549
+   "at": 21.267
   },
   {
    "name": "pop",
-   "at": 39.849
+   "at": 26.767
   },
   {
-   "name": "tick",
-   "at": 45.996
-  },
-  {
-   "name": "tick",
-   "at": 47.296
-  },
-  {
-   "name": "tick",
-   "at": 48.496
+   "name": "stamp",
+   "at": 28.767
   },
   {
    "name": "ding",
-   "at": 50.996
-  },
-  {
-   "name": "pop",
-   "at": 56.617
+   "at": 32.383
   },
   {
    "name": "tick",
-   "at": 59.717
+   "at": 38.383
+  },
+  {
+   "name": "stamp",
+   "at": 42.383
+  },
+  {
+   "name": "snap",
+   "at": 45.766
   },
   {
    "name": "pop",
-   "at": 67.941
+   "at": 46.566
+  },
+  {
+   "name": "tick",
+   "at": 55.184
+  },
+  {
+   "name": "tick",
+   "at": 56.584
+  },
+  {
+   "name": "tick",
+   "at": 57.784
+  },
+  {
+   "name": "pop",
+   "at": 64.021
+  },
+  {
+   "name": "ding",
+   "at": 67.121
+  },
+  {
+   "name": "pop",
+   "at": 70.888
+  },
+  {
+   "name": "tick",
+   "at": 73.088
   },
   {
    "name": "swish",
-   "at": 0.961
+   "at": 77.688
+  },
+  {
+   "name": "pop",
+   "at": 83.288
   },
   {
    "name": "swish",
-   "at": 4.003
+   "at": 2.079
   },
   {
    "name": "swish",
-   "at": 8.672
+   "at": 4.307
   },
   {
    "name": "swish",
-   "at": 14.341
+   "at": 11.449
   },
   {
    "name": "swish",
-   "at": 20.827
+   "at": 18.697
   },
   {
    "name": "swish",
-   "at": 31.779
+   "at": 30.813
   },
   {
    "name": "swish",
-   "at": 41.926
+   "at": 43.996
   },
   {
    "name": "swish",
-   "at": 53.647
+   "at": 51.014
   },
   {
    "name": "swish",
-   "at": 63.671
+   "at": 61.051
+  },
+  {
+   "name": "swish",
+   "at": 68.918
+  },
+  {
+   "name": "swish",
+   "at": 77.018
   },
   {
    "name": "ambience",

@@ -1,0 +1,124 @@
+{
+ "b01": {
+  "line_sim": 1.0,
+  "units": {
+   "b01-0": 1.0
+  },
+  "stt": "Có việc gì bạn hứa cuối tuần làm?",
+  "dur": 2.02
+ },
+ "b01b": {
+  "line_sim": 1.0,
+  "units": {
+   "b01b-0": 1.0
+  },
+  "stt": "Mà để cả năm rồi chưa đụng tới không?",
+  "dur": 2.15
+ },
+ "b02": {
+  "line_sim": 1.0,
+  "units": {
+   "b02-0": 0.778,
+   "b02-1": 0.938,
+   "b02-2": 1.0
+  },
+  "stt": "Như dọn cái phòng, hay ôn thi chẳng hạn, tuần nào cũng tự nhủ cuối tuần làm, rồi một năm trôi qua lúc nào không hay.",
+  "dur": 6.74
+ },
+ "b03": {
+  "line_sim": 0.963,
+  "units": {
+   "b03-0": 1.0,
+   "b03-1": 1.0,
+   "b03-2": 1.0,
+   "b03-3": 1.0,
+   "b03-4": 1.0
+  },
+  "stt": "Lý do là việc đó chỉ có một cái tên to đồng, nhìn vô là ngợp, không biết bắt đầu từ đâu, thế là cứ để đó.",
+  "dur": 6.85
+ },
+ "b04": {
+  "line_sim": 0.965,
+  "units": {
+   "b04-0": 0.857,
+   "b04-1": 1.0,
+   "b04-2": 1.0,
+   "b04-3": 0.929,
+   "b04-4": 1.0,
+   "b04-5": 1.0
+  },
+  "stt": "Chuyện này có nghiên cứu hẳn hoài, hai nhà tâm lý học Kruger và Evan thấy, nhìn mỗi cái tên việc mình hãy nghĩ chút xíu là xong, phải ghi ra từng bước nhỏ, mình mới thấy nó đâu có ít.",
+  "dur": 11.42
+ },
+ "b05": {
+  "line_sim": 0.894,
+  "units": {
+   "b05-0": 0.933,
+   "b05-1": 0.75,
+   "b05-2": 0.857,
+   "b05-3": 1.0,
+   "b05-4": 0.938,
+   "b05-5": 1.0
+  },
+  "stt": "Còn giáo sư Steele thì con rất nhiều nghiên cứu về chuyện trì hoãng lại và thấy mục điều việc nào mình càng ngại đồng vô, mình càng dễ để mai tính, mà việc càng to thì mình càng ngại, nên nó mới nằm đó cả năm.",
+  "dur": 12.48
+ },
+ "b06": {
+  "line_sim": 1.0,
+  "units": {
+   "b06-0": 0.75,
+   "b06-1": 1.0,
+   "b06-2": 1.0,
+   "b06-3": 1.0
+  },
+  "stt": "Nói gọn lại là, việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
+  "dur": 6.32
+ },
+ "b07": {
+  "line_sim": 0.849,
+  "units": {
+   "b07-0": 0.875,
+   "b07-1": 1.0,
+   "b07-2": 0.864,
+   "b07-3": 0.727,
+   "b07-4": 0.857
+  },
+  "stt": "Nhưng mình đây, thay vị ghi dọn phòng. Mình ghi ra ba việc, dọn đóng đồ trên ghế, lau cái bàn, đổ sọc rác, mỗi việc chừng 15 phút, tối nay là một việc là xong.",
+  "dur": 9.34
+ },
+ "b08": {
+  "line_sim": 0.846,
+  "units": {
+   "b08-0": 0.75,
+   "b08-1": 1.0,
+   "b08-2": 0.833,
+   "b08-3": 1.0,
+   "b08-4": 1.0
+  },
+  "stt": "Ông Thi cũng vậy, đừng ghi Ông Thi ghi là mục đề chương 2, cộng thời gian từng việc lại là biết chừng nào xong thật.",
+  "dur": 7.17
+ },
+ "b09": {
+  "line_sim": 0.958,
+  "units": {
+   "b09-0": 1.0,
+   "b09-1": 1.0,
+   "b09-2": 1.0,
+   "b09-3": 0.833,
+   "b09-4": 1.0
+  },
+  "stt": "Như clip trước mình nói, rối thì chia nhỏ, còn clip đầu tiên, chính giờ tối ngồi vào bàn, làm việc nhỏ đầu tiên.",
+  "dur": 7.4
+ },
+ "b10": {
+  "line_sim": 1.0,
+  "units": {
+   "b10-0": 1.0,
+   "b10-1": 1.0,
+   "b10-2": 1.0,
+   "b10-3": 1.0
+  },
+  "stt": "Bạn thấy đó không phải mình lười, mà là việc to quá thôi, việc bạn để cả năm chưa làm là gì? Comment một chữ cho mình biết nha!",
+  "dur": 7.74
+ }
+}

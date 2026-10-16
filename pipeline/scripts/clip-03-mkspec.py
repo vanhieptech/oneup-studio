@@ -68,9 +68,9 @@ A = [
     ("tdev-modal: callback clip-02 RỐI → CHIA NHỎ, clip-01 NẾU 21:00", "chia nhỏ"), [S("pop", 1.4, "chia nhỏ"), S("tick", 3.6, "chín giờ tối")],
     [{"kind": "sign", "x": 280, "y": 900, "s": 0.5, "rot": -2, "text": "RỐI → CHIA NHỎ", "at": 1.2},
      {"kind": "sign", "x": 280, "y": 1200, "s": 0.45, "rot": 3, "text": "21:00 → VIỆC 1", "at": 3.4}]),
- SC("b10", "cta", "grid", "cut", C(0.5, "right", "standing", "talking", "happy"), line("b10", "happy"),
+ SC("b10", "cta", "grid", "cut", C(0.74, "left", "standing", "talking", "happy"), line("b10", "happy"),
     ("mmx-pop-over (spring duy nhất): sticky CUỐI TUẦN LÀM rớt khỏi móc (loop hook), COMMENT 1 CHỮ", "Comment"), [S("swish", 0.4, "Bạn thấy đó"), S("pop", 6.0, "Comment")],
-    [{"kind": "words", "x": 540, "y": 360, "s": 1.0, "words": ["COMMENT 1 CHỮ"], "dropAt": [5.8]}]),
+    [{"kind": "words", "x": 280, "y": 900, "s": 0.6, "words": ["COMMENT 1 CHỮ"], "dropAt": [5.8]}]),
 ]
 ST = {
  "b01": ("Sticky CUỐI TUẦN LÀM treo lủng lẳng trên móc", "nhướng mày", None),
