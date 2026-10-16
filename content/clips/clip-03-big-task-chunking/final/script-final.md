@@ -1,82 +1,45 @@
 ---
-title: "Clip 03 v3: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay (HTB 4.7)"
+title: "Clip 03 v4: Câu hỏi mở «sao hứa dọn phòng hoài không xong?» → chia việc lớn thành việc con (HTB 4.7)"
 date: 2026-10-16
 type: script
-tags: [clip-03, script, chunking, howtolivebetter-4.7, howtolivebetter-4.9, howtolivebetter-4.1, monologue, meme-ban-chat, L-036, L-039, L-040]
-status: ready
-source: "HowToLiveBetter 4.7 (Kruger & Evans 2004; Steel 2007; mức B) · callback clip-02 (4.9) + clip-01 (4.1) · trend F06 bản chất · nỗi đau thật từ comment Apify 16/10 (@hoaquynh0000 «phòng chất đầy đồ» 1.918 like; @thnguyen.y «Muốn học mà mắc lười» 904 like) · L-039 độc thoại · L-040 ví dụ phổ thông"
+tags: [clip-03, script, chunking, howtolivebetter-4.7, howtolivebetter-4.9, howtolivebetter-4.1, monologue, open-question-hook, L-039, L-040, L-043]
+status: draft
+source: "HowToLiveBetter 4.7 (Kruger & Evans 2004; Steel 2007; mức B) · callback clip-02 (4.9) + clip-01 (4.1) · nỗi đau thật từ comment Apify 16/10 (@hoaquynh0000 «phòng chất đầy đồ» 1.918 like; @thnguyen.y «Muốn học mà mắc lười» 904 like)"
 id: clip-03.script-final
-version: v3
-supersedes: archive/script-v2.md
-template: templates/script.md (biến thể độc thoại)
-note: "gate 1, chưa có spec.json, chưa voice, chưa render; ≈215 chữ ≈ 62–67s"
+version: v4
+supersedes: archive/script-v3.md
+template: templates/script.md (biến thể độc thoại + hook câu hỏi mở L-043)
+note: "gate 1, chưa voice; ≈184 chữ ≈ 52–56s (nhịp v3 3,4 chữ/s); mỗi beat ≤ 23 chữ ≈ ≤ 7s/shot"
 ---
-# Clip 03 v3: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay
+# Clip 03 v4: Sao hứa dọn phòng hoài không xong? → chia việc lớn thành việc con
 
-**Thông điệp (b08):** chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay. **Cơ chế (b07):** liệt kê việc con trước rồi mới ước thì ước bớt hụt (Kruger & Evans 2004); việc bị ngán thì bị đẩy về sau (Steel 2007). **Cách làm (b09–b09c):** mỗi việc con xong trong một lần ngồi, chia vừa thôi; cộng giờ từng phần mới ra hạn thật; ví dụ dọn phòng (chính) + ôn thi (phụ); phần đầu làm lúc 21:00 tại chỗ cố định (clip-01), rối thì chia nhỏ (clip-02).
-**Ví dụ (L-040):** «dọn phòng» là nỗi đau phổ thông, lấy từ comment thật 1.918 like «phòng ngủ thì nhỏ mà phòng chất đầy đồ…» (@hoaquynh0000); ví dụ phụ «ôn thi» từ comment «Muốn học mà mắc lười» (904 like, @thnguyen.y).
-**Người nói:** chỉ **Thầy** (L-039). Chibi Hiệp chỉ diễn hình. F5 Thái Sơn 0.9; câu stem rơi giọng cuối (L-036). `voice_prefix`: `c03v3`. **Theme:** DARK. Không Omi.
-**Ký hiệu:** `|` tách phrase · `{nhấn: …}` chữ nhấn cao, to, kéo dài.
+**Vì sao viết lại:** Hiệp xem v3: «Không hay». v4 bỏ stem meme «bản chất» (hook dài 2 cảnh, chậm vào nỗi đau). Hook giờ là **câu hỏi mở về nỗi đau nhức nhối** (L-043), rồi giải thích: nguyên nhân → bằng chứng → thông điệp → ví dụ → callback → CTA.
+**Thông điệp HTB 4.7 (b05, nói thành lời):** việc lớn phải chia thành việc con, rồi mới ước giờ, mới bắt tay. Nghiên cứu mới cho thấy hướng (mức B), không có con số.
+**Bằng chứng:** Kruger & Evans 2004: liệt kê việc con trước khi ước giờ thì ước bớt hụt. Steel 2007: việc càng ngán càng bị hoãn. Không dùng con số nào.
+**Ví dụ (L-040):** dọn phòng (comment 1.918 like «phòng chất đầy đồ…») + ôn thi (comment 904 like «Muốn học mà mắc lười»).
+**Người nói:** chỉ **Thầy** (L-039), F5 Thái Sơn 0.9. Chibi Hiệp chỉ diễn. **Theme:** DARK. `voice_prefix` dự kiến: `c03v4`.
+**Đã xử lý cảnh báo v3:** 239 → ≈184 chữ; không beat nào > 23 chữ (≈ ≤ 7s); bằng chứng b03–b04 là motion graphics (không comic); tiếng Anh xen: *task*, *deadline*, *comment*; hook có cảm xúc (bực, nhăn mặt) + tiểu từ Nam Bộ (*ta, hà, nè, á, nha, đâu*).
+**Ký hiệu:** `|` tách phrase · `{nhấn: …}` chữ nhấn.
 
-## Kịch bản (≈215 chữ, ~62–67s; giây là ước, snap lại theo voice)
+## Kịch bản (≈184 chữ, ~52–56s; giây là ước, snap theo voice)
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
-| b01 Hook | 0–1 | Thầy | Thì cái \| {nhấn: bản chất}… | Thầy gõ thước lên bảng đen ngay frame 0 · *So what's the essence…* |
-| b01b Hook (cut) | 1–4 | Thầy | của cái việc hứa \| «{nhấn: cuối tuần} dọn phòng»… \| là gì? | Cắt cứng: phòng chibi Hiệp ngập đồ, ghế chất áo thành núi; lịch lật 3 cuối tuần · *…of promising "I'll clean my room this weekend"?* |
-| b03 Thứ nhất | 4–9 | Thầy | Thứ nhất là \| các bạn phải ghi {nhấn: gọn} một chữ: \| «dọn phòng», \| {nhấn: không} chia gì hết. | Sticky DỌN PHÒNG to tướng dán lên cửa · *First: write just "clean room", no breakdown at all.* |
-| b04 Thứ hai | 9–15 | Thầy | Thứ hai là \| đứng giữa phòng \| mà {nhấn: không biết} bắt đầu từ đâu… \| thì nằm xuống {nhấn: lướt} điện thoại. | Chibi Hiệp nhìn núi đồ, tròn mắt → nằm lên đống áo lướt điện thoại · *Second: stand in the mess, no idea where to start… so lie down and scroll.* |
-| b06 Và cuối cùng | 15–22 | Thầy | Và cuối cùng là \| các bạn phải tự hứa \| «{nhấn: cuối tuần} sau», \| rồi ba tháng sau… \| cái ghế vẫn là {nhấn: tủ đồ}. | Lịch lật T10 → T1, ghế chất áo cao dần, thêm mạng nhện · *And finally: promise "next weekend"… three months later, the chair is still the closet.* |
-| b07 Bằng chứng | 22–34 | Thầy | Nghe quen hông? \| Mà các nhà khoa học nói: \| Kruger và Evans thấy \| {nhấn: liệt kê} việc con ra trước \| rồi mới ước giờ \| thì ước {nhấn: bớt hụt}. \| Còn Steel thấy \| việc càng ngán \| càng bị {nhấn: đẩy} về sau. | Bảng KRUGER & EVANS 2004 · LIỆT KÊ → ƯỚC (thanh ước dài ra gần thanh thực tế); STEEL 2007 · NGÁN → ĐẨY LÙI · *Sound familiar? List subtasks first, then estimate: you underestimate less. And the more you dread it, the more it's pushed back.* |
-| b08 Thông điệp | 34–42 | Thầy | Vậy việc lớn \| phải {nhấn: chia thành việc con} \| rồi mới ước giờ, \| mới bắt tay. \| Nghiên cứu mới thấy hướng thôi, \| chưa có con số. \| Mà «dọn phòng» \| hóa ra là {nhấn: cả chục việc} đó. | Sticky DỌN PHÒNG nổ thành hàng thẻ nhỏ; nhãn nhỏ CHỈ THẤY HƯỚNG · *So split big work into subtasks, then estimate, then start. Only the direction is known, no exact numbers. "Clean room" is really a dozen tasks.* |
-| b09 Cách làm 1 (4.7) | 42–52 | Thầy | Chuẩn chia: \| mỗi việc con xong \| trong {nhấn: một lần làm}. \| Gom áo trên ghế. \| Dọn mặt bàn. \| Bỏ rác dưới gầm giường. \| Cộng giờ từng phần \| mới ra {nhấn: hạn thật}. \| Chia vừa thôi, \| chia vụn quá cũng mệt. | 3 thẻ sáng lần lượt: ghế trống · bàn sạch · túi rác buộc ✓; mỗi thẻ gắn đồng hồ 20', cộng thành một buổi tối trên lịch · *Each subtask fits one go. Clear the chair. Clean the desk. Bag the trash under the bed. Add up the parts for a real deadline. Don't over-split.* |
-| b09c Cách làm 2 + callback | 52–61 | Thầy | Ôn thi cũng vậy: \| không ghi «ôn thi», \| mà ghi {nhấn: «làm 1 đề chương 2»}. \| Như clip trước: rối thì {nhấn: chia nhỏ}; \| clip đầu: chín giờ tối, ở đâu, \| làm {nhấn: thẻ đầu tiên}. | Sticky ÔN THI tách thành ĐỀ CHƯƠNG 2 ✓; thẻ NẾU 21:00 · GHẾ → GOM ÁO (callback clip 01) · *Same with exams: not "study", but "one practice test, chapter 2". Like last clip: messy? Split it. And clip one: 9 p.m., a set place, card one.* |
-| b10 CTA | 61–66 | Thầy | Vậy đó, \| không phải lười, \| việc {nhấn: to quá} thôi. \| Việc to nhất bạn đang treo \| tên gì? \| Comment một chữ nha! | Thầy nhìn camera, xé đôi sticky DỌN PHÒNG (loop về hook) · *Not lazy, the task's just too big. What's the biggest task you've left hanging? Comment one word!* |
+| b01 Hook (câu hỏi mở) | 0–3 | Thầy (giọng bực, thở ra) | Sao cái phòng mình \| hứa {nhấn: dọn hoài}… \| mà ba tháng rồi {nhấn: vẫn y chang} vậy ta? | Frame 0 cắt cứng: phòng chibi Hiệp ngập đồ, ghế chất áo thành núi, Hiệp ôm đầu; lịch lật vèo 3 tháng · *Why is my room STILL a mess after 3 months of "I'll clean it"?* |
+| b02 Nguyên nhân | 3–9 | Thầy | Tại mình ghi gọn một chữ: \| «dọn phòng». \| Đứng giữa đống đồ, \| không biết {nhấn: bắt đầu từ đâu}… \| là nằm lướt liền hà. | Sticky DỌN PHÒNG to tướng dán tường; Hiệp xoay một vòng rồi đổ xuống nệm, điện thoại sáng · *We write just "clean room"… no idea where to start, so we scroll.* |
+| b03 Bằng chứng 1 (motion graphics) | 9–16 | Thầy (VO) | Mà khoa học nói rồi nè: \| Kruger và Evans thấy \| {nhấn: liệt kê việc con} trước, \| rồi mới ước giờ, \| thì ước {nhấn: bớt hụt}. | Full-screen graphic: thẻ KRUGER & EVANS 2004; 1 thanh «ước giờ» ngắn → 3 thẻ việc con xếp ra → thanh dài ra sát thanh «thực tế» (không số, chỉ hình) · *List the subtasks first, then estimate: you underestimate less.* |
+| b04 Bằng chứng 2 (motion graphics) | 16–21 | Thầy (VO) | Còn Steel thấy: \| việc càng {nhấn: ngán}, \| càng bị đẩy về sau. \| Việc to quá là ngán nhất á. | Graphic: thẻ STEEL 2007; thanh NGÁN dâng lên, mũi tên lịch trượt lùi; khối DỌN PHÒNG to phình ra · *The more you dread it, the more it slips. Big tasks = most dread.* |
+| b05 Thông điệp HTB 4.7 | 21–27 | Thầy | Nên việc lớn \| phải {nhấn: chia thành việc con}, \| rồi mới ước giờ, \| mới bắt tay. \| Nghiên cứu mới thấy hướng thôi nha. | Sticky DỌN PHÒNG vỡ thành hàng thẻ nhỏ; nhãn nhỏ CHỈ THẤY HƯỚNG · *Split big work into subtasks. Then estimate. Then start.* |
+| b06 Ví dụ 1: dọn phòng | 27–33 | Thầy | Vậy «dọn phòng» \| thành ba cái task: \| {nhấn: gom áo} trên ghế, \| dọn mặt bàn, \| bỏ rác. \| Mỗi cái xong {nhấn: một lần làm}. | 3 thẻ GOM ÁO · DỌN BÀN · BỎ RÁC tick ✓ lần lượt, ghế trống dần · *"Clean room" = 3 tasks: clear the chair, clear the desk, take out trash. Each in one go.* |
+| b07 Ví dụ 2: ôn thi | 33–39 | Thầy | Ôn thi cũng vậy: \| đừng ghi «ôn thi», \| ghi «làm {nhấn: một đề} chương hai». \| Cộng giờ lại \| mới ra {nhấn: deadline thật}. | Thẻ ÔN THI lật thành ĐỀ CHƯƠNG 2; các thẻ cộng dồn thành 1 vạch trên lịch · *Not "study", but "one practice test, chapter 2". Add them up: a real deadline.* |
+| b08 Callback clip 1–2 | 39–45 | Thầy | Như clip trước: \| rối thì {nhấn: chia nhỏ}. \| Clip đầu: \| chín giờ tối, ngồi vào bàn, \| làm {nhấn: cái đầu tiên}. | Mini-thumbnail clip-02 («rối → chia nhỏ») + clip-01 (thẻ NẾU 21:00 → THẺ 1) bật ra · *Last clip: messy? split it. Clip 1: 9 p.m., at the desk, do the first one.* |
+| b09 CTA | 45–52 | Thầy (ấm, cười) | Không phải lười đâu, \| việc {nhấn: to quá} thôi. \| Việc to nhất bạn đang né là gì? \| Comment một chữ nha! | Hiệp đứng giữa phòng gọn, xé sticky DỌN PHÒNG (loop về hook); chữ COMMENT 1 CHỮ · *Not lazy. Too big. What's your biggest task? Comment one word!* |
 
-## Thay đổi so với v2
-- Bỏ «làm app»/AI (quá ngách dev, L-040). Ví dụ chính: **dọn phòng**; ví dụ phụ: **ôn thi** — cả hai lấy từ comment thật trong Apify 16/10.
-- Stem «Thứ hai» đổi từ «giao AI làm hết» sang «nằm xuống lướt điện thoại».
-- Chuẩn chia «một lần ngồi» → «một lần làm» (hợp việc nhà).
+## Hook dự phòng (câu hỏi mở, cùng nỗi đau)
+1. **Alt A (việc treo cả năm):** «Có cái việc nào bạn hứa {nhấn: cuối tuần} làm… mà treo {nhấn: cả năm} luôn không?» · *Got a task you've promised "this weekend"… for a whole year?*
+2. **Alt B (ôn thi):** «Sao mở sách ôn thi ra là {nhấn: ngợp}… rồi gập lại liền vậy ta?» · *Why does opening your study notes make you shut them right away?*
 
-## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
-Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
-
-| Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
-|---|---|---|---|---|---|
-| b01 | remotion | mmx-oversize-land: Thầy gõ thước, chữ hook đập frame 0 | “bản chất” | `stamp` → “bản chất” | mở đầu |
-| b01b | remotion | Cắt cứng: phòng ngập đồ, lịch lật 3 cuối tuần (tdev-text-swap) | “cuối tuần” | `swish` → “của cái việc”; `pop` → “cuối tuần” | cut (`swish`) |
-| b03 | remotion | mmx-snap-settle: sticky DỌN PHÒNG to tướng | “gọn” | `stamp` → “gọn”; `tick` → “không” | cut (`swish`) |
-| b04 | remotion | Chibi nhìn núi đồ rồi nằm lướt điện thoại (mmx-glide + mmx-cruise) | “lướt” | `snap` → “không biết”; `swish` → “lướt” | cut (`swish`) |
-| b06 | remotion | mmx-accel-exit: tờ lịch bay T10 → T1, ghế vẫn chất áo | “tủ đồ” | `tick` → “cuối tuần”; `stamp` → “tủ đồ” | cut (`swish`) |
-| b07 | remotion | bar-grow + mmx-soft-land: bảng KRUGER & EVANS 2004 → STEEL 2007 | “liệt kê” | `ding` → “liệt kê”; `stamp` → “đẩy” | mmx-soft-land (`swish`) |
-| b08 | remotion | tdev-stagger: DỌN PHÒNG nổ thành hàng thẻ nhỏ; nhãn CHỈ THẤY HƯỚNG | “chia thành việc con” | `stamp` → “chia thành việc con”; `pop` → “cả chục việc” | tdev-stagger (`swish`) |
-| b09 | remotion | step-recap: 3 thẻ ghế trống · bàn sạch · túi rác ✓, mỗi thẻ 20' | “một lần làm” | `tick` → “gom áo”; `tick` → “dọn mặt bàn”; `tick` → “bỏ rác”; `ding` → “hạn thật” | mmx-snap-settle (`swish`) |
-| b09c | remotion | tdev-text-swap ÔN THI → ĐỀ CHƯƠNG 2; tdev-modal thẻ NẾU 21:00 (callback clip-01) | “chia nhỏ” | `pop` → “làm một đề”; `tick` → “chín giờ tối” | tdev-modal (`swish`) |
-| b10 | remotion | mmx-pop-over (spring duy nhất): COMMENT 1 CHỮ, xé sticky DỌN PHÒNG (loop hook) | “Comment” | `pop` → “Comment” | cut (`swish`) |
-
-## Motion picks (1 hiệu ứng chính/beat)
-| Beat | Ý đồ | Hiệu ứng chính (nguồn) | Tham số |
-|---|---|---|---|
-| b01 | hook | `mmx-oversize-land` (motionmaxxing) | thước + bảng 3,2× → 1, 18f; hit `stamp` frame 0 |
-| b01b | hook cut | `mmx-cut-on-motion` + `tdev-text-swap` (lịch) | cut lúc lịch đang lật, 0,8s |
-| b03 | stem | `mmx-snap-settle` | sticky vào 11f |
-| b04 | vấn đề | `mmx-glide` (chibi ngả xuống) + `mmx-cruise` (ngón cái lướt) | 10f / drift |
-| b06 | stem cuối | `mmx-accel-exit` | tờ lịch bay 13f ×3 |
-| b07 | dữ liệu | `bar-grow` (awesome-ai-motion) + `mmx-soft-land` | 1,2s, không số % |
-| b08 | thông điệp | `tdev-stagger` (transitions.dev) | thẻ nhỏ gap 2–3f |
-| b09 | các bước | `step-recap` (awesome-ai-motion) + `mmx-no-dead-frame` | mỗi thẻ ≥1s |
-| b09c | ví dụ 2 + callback | `tdev-text-swap` (ÔN THI → ĐỀ CHƯƠNG 2) + `tdev-modal` (thẻ NẾU) | 0,3s / 0,4s |
-| b10 | CTA / loop | `mmx-pop-over` (spring duy nhất của clip) | 15f |
-
-## Fact lock
-- 4.7 (HTB, mức B): Kruger & Evans 2004, *J Exp Soc Psychol* 40(5):586–598: liệt kê việc con trước rồi ước thì bớt ước thiếu (planning fallacy). Sách chỉ kiểm được hướng, không có % → không nói số.
-- Steel 2007, *Psych Bull* 133(1): chán ghét việc và việc bị đẩy về sau báo trước trì hoãn.
-- Chuẩn: mỗi việc con xong trong một lần ngồi xuống làm; chia quá mịn cũng tốn thời gian.
-- Callback: 4.9 (clip-02), 4.1 (clip-01). Ví dụ dọn phòng/ôn thi, «cả chục việc», 20' là minh hoạ, không phải dữ kiện.
-
-## Lệch luật cần biết (gate 1)
-- rule-58: b03, b04, b06 giữ nguyên stem meme (L-036), giống clip-02.
-- Chưa có `spec.json` / `fx-table.py`, nên chưa chạy `check-rules`; bảng motion tạm thay bảng rule-52.
-
-## Caption + hashtag
-Thì cái bản chất của cái việc hứa «cuối tuần dọn phòng»… là gì? 😮‍💨 Việc lớn thì chia thành việc con: gom áo trên ghế, dọn bàn, bỏ rác. Cộng giờ từng phần rồi mới ước hạn, mới bắt tay. Ôn thi cũng vậy. Việc to nhất bạn đang treo tên gì? Comment một chữ.
-#chianhoviec #trihoan #donphong #banchat #hioneup
+## Motion picks (dự kiến)
+- b01 `cut` + `mmx-oversize-land` (phòng ngập đồ đập vào frame 0), lịch `mmx-accel-exit`.
+- b02 `mmx-snap-settle` (sticky), `mmx-glide` (Hiệp đổ xuống nệm).
+- b03–b04 explainer motion graphics (bar-grow, `mmx-soft-land` cho thẻ nghiên cứu, `tdev-stagger` cho 3 thẻ việc con) — rule-42.
+- b05 `tdev-stagger` (sticky vỡ thành thẻ). b06 step-recap tick. b07 `tdev-text-swap` ÔN THI → ĐỀ CHƯƠNG 2. b08 `tdev-modal` (mini-thumbnail callback). b09 `mmx-pop-over` (spring duy nhất).

@@ -48,7 +48,8 @@ tags: [index, retrieval]
 | clip-03.readme | readme | ready | `content/clips/clip-03-big-task-chunking/README.md` | clip-03: Chia việc lớn thành việc con (HTB 4.7) |
 | clip-03.script-v1 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v1.md` | Clip 03 v1: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay |
 | clip-03.script-v2 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v2.md` | Clip 03 v2: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay |
-| clip-03.script-final | script | ready | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v3: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay |
+| clip-03.script-v3 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v3.md` | Clip 03 v3: Chia việc lớn thành việc con rồi mới ước thời gian, mới bắt tay |
+| clip-03.script-final | script | draft | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v4: Sao hứa dọn phòng hoài không xong? → chia việc lớn thành việc con |
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |

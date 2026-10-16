@@ -47,3 +47,10 @@ Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt bu�
 ## Thay đổi so với bản trước
 ## Fact lock
 ## Caption + hashtag
+
+## Hook câu hỏi mở về nỗi đau nhức nhối (L-043)
+- Câu đầu tiên (≤ 3s) là **câu hỏi mở** về một nỗi đau ai cũng có, lặp đi lặp lại, dai dẳng (lấy từ comment thật, L-040). Ví dụ: «Sao cái phòng mình hứa dọn hoài… mà ba tháng rồi vẫn y chang vậy ta?»
+- Có cảm xúc (bực, thở dài) + tiểu từ Nam Bộ (*ta, hả, hà*). Hình frame 0 cho thấy nỗi đau, không chữ tiêu đề.
+- Sau hook là **diễn giải**: nguyên nhân (người xem nhận ra mình) → bằng chứng (motion graphics, không bịa số) → thông điệp HTB nói thành lời → 2 ví dụ đời thường → callback → 1 CTA (loop về hook).
+- Stem meme («bản chất»…) chỉ dùng khi tự nhiên với câu hỏi; nếu làm chậm vào nỗi đau thì bỏ.
+- Ghi 2 hook câu hỏi dự phòng. Mục tiêu ~50–60s, mỗi beat ≤ 20 chữ (≤ 8s/shot), xen 1–3 từ tiếng Anh quen (task, deadline).
