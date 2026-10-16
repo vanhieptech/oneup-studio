@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build a final clip from ONE source spec (content/clips/<clip>/final/spec.json).
 
-  build-final.py <spec.json> [--stage voice|plans|render|assemble|all]   (default all)
+  build-final.py <spec.json> [--stage voice-phrase|voice|plans|render|assemble|all]   (default all)
+  voice-phrase: lines with {nhấn:} → voice-phrase-f5.py gen → F5 batches → pick → stitch (L-036); cached by final/voice-stt-<prefix>.json
                 [--scenes b01,b01b,...]  partial preview: only these scene/section ids (parts left empty are dropped);
                                          outputs go to <final>/preview/ (plan-*-preview, timing-preview.json, <id>-preview.mp4)
 
@@ -208,6 +209,22 @@ SFX.update({
 TRANS_SFX = {"part": "whoosh-soft", "scene": "swish"}
 SFX_LEAD = 0.12  # SFX starts slightly before the cut so it overlaps across it
 
+def stage_voice_phrase(specp, spec, force=False):
+    """L-036: spec text with {nhấn:} → per-phrase F5 (voice-phrase-f5.py gen/F5/pick/stitch). Skips when cached unless force."""
+    if "{nhấn:" not in json.dumps(spec, ensure_ascii=False): return False
+    prefix = spec.get("voice_prefix", "vp"); fdir = os.path.dirname(specp)
+    if not force and os.path.exists(os.path.join(fdir, f"voice-stt-{prefix}.json")):
+        print(f"voice-phrase: cached (final/voice-stt-{prefix}.json)"); return True
+    vp = os.path.join(REPO, "pipeline/scripts/voice-phrase-f5.py"); work = f"/workspace/voice-work/{spec.get('clip', 'clip')}-{prefix}"
+    f5py = os.environ.get("F5_PY", "/workspace/f5-venv/bin/python"); asrpy = os.environ.get("ASR_PY", "/workspace/asr-venv/bin/python")
+    sh([PY, vp, "gen", specp, "--work", work])
+    env = dict(os.environ, F5_THREADS=os.environ.get("F5_THREADS", "4"))
+    procs = [subprocess.Popen([f5py, os.path.join(REPO, "pipeline/tts/f5tts_gen.py"), os.path.join(work, f"batch{i}.json")], env=env) for i in (0, 1)]
+    if any(pr.wait() for pr in procs): sys.exit("voice-phrase: F5 batch failed")
+    sh([asrpy, vp, "pick", specp, "--work", work])
+    sh([asrpy, vp, "stitch", specp, "--work", work, "--prefix", prefix, "--listen", os.path.join(work, "listen.mp3")])
+    return True
+
 def main():
     specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
     sync_shared()  # rule-65: fonts/logo copies from brand/ (gitignored)
@@ -222,6 +239,8 @@ def main():
         spec["parts"] = [p for p in spec["parts"] if p.get("scenes") or p.get("sections")]
         spec["parts"][-1]["transitionOut"] = None
         print("preview scenes:", sel, "parts:", [p["id"] for p in spec["parts"]])
+    if stage in ("voice-phrase", "all", "voice"): stage_voice_phrase(specp, spec, force=stage == "voice-phrase")
+    if stage == "voice-phrase": return
     stage_voice(spec)
     parts = []; timing = []; offset = 0.0
     for p in spec["parts"]:
