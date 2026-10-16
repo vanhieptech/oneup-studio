@@ -36,5 +36,5 @@ SHARED_NAMES = {"logo.svg", "thai-son.wav", "my-duyen.wav"}
 PROMPTS = DOCS / "prompts"; REFERENCES = RESEARCH / "references"; PUBLISHED = ROOT / "content/published"; SCRIPT_TEMPLATE = ROOT / "templates/script.md"
 FM_REQUIRED = ("title", "date", "type", "tags", "status", "source")
 FM_STATUS = {"draft", "ready", "published"}
-FM_EXEMPT = ("skills/", "video-engine/", "templates/hyperframes-base/", "docs/legacy-box/", "resources/refs/awesome-ai-motion/", "resources/refs/transitions.dev/", "brand/omi-exports/")
+FM_EXEMPT = ("skills/", "video-engine/", "templates/hyperframes-base/", "docs/legacy-box/", "resources/refs/awesome-ai-motion/", "resources/refs/transitions.dev/", "resources/refs/motionmaxxing/", "brand/omi-exports/")
 FM_STRICT_STATUS = ("docs/prompts/", "research/references/", "content/published/", "templates/script.md")

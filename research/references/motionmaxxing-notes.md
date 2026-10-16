@@ -10,8 +10,8 @@ updated: 2026-10-16
 ---
 # motionmaxxing → Remotion mapping (comic shorts)
 
-Local clone (gitignored): `resources/refs/motionmaxxing/`  
-`git clone https://github.com/Tejashmakwana/motionmaxxing resources/refs/motionmaxxing`  
+Vendored full tree (in git): `resources/refs/motionmaxxing/`  
+Upstream: https://github.com/Tejashmakwana/motionmaxxing — vendored at commit below (nested `.git` removed).  
 Commit studied: `8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c` (2026-10-16 shallow).
 
 Remotion ports (in git): `video-engine/src/composition/motionmaxxing/` (`catalog.json`, `mmx.ts`).  
@@ -24,7 +24,7 @@ Agent skill + craft library for kinetic-type / product-promo films. Not a Remoti
 | Piece | License | Action |
 |---|---|---|
 | SKILL, references/, library/, taste/, templates/, docs text, `runtime/motion.js` (ideas) | **Apache-2.0** | OK to study; keep NOTICE attribution; port numbers into our code |
-| `runtime/vendor/gsap.min.js` | GreenSock **Standard "No Charge"** (NOT open source) | **Do not commit or redistribute**; Remotion eases replace it |
+| `runtime/vendor/gsap.min.js` | GreenSock **Standard "No Charge"** (NOT open source) | **Vendored in-tree at Hiệp’s request**; see `THIRD_PARTY.md`. Remotion ports still avoid calling GSAP |
 | three.js / opentype / Inter fonts in hero3d | MIT / OFL | Only in gitignored clone; we don't ship them |
 | Showcase brands in docs/media | trademarks | Demo only; not for OneUp output |
 
@@ -98,7 +98,7 @@ Attribution: Tejas Makwana / motionmaxxing · github.com/Tejashmakwana/motionmax
 7. One hero per frame; no page chrome / HUD.
 
 ## 7. Files touched in oneup-studio
-- Clone: `resources/refs/motionmaxxing/` (gitignored)
+- Vendored: `resources/refs/motionmaxxing/` (full tree in git; `THIRD_PARTY.md`)
 - Ports: `video-engine/src/composition/motionmaxxing/{catalog.json,mmx.ts}`
 - Notes: this file
 - Skill: `skills/motion-picks-per-script/SKILL.md` + `/home/box/agent-data/workflows/motion-picks-per-script/SKILL.md`

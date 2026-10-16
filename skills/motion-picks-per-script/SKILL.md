@@ -33,7 +33,7 @@ Catalog: https://github.com/gongnyang/awesome-ai-motion (MIT). Clone to `resourc
 8. Show the spec with the script for approval when the rules require it.
 
 ## motionmaxxing craft + eases (Remotion ports — pick for timing / comic punch)
-Source: https://github.com/Tejashmakwana/motionmaxxing (Apache-2.0) @ 8c8ec0f. Clone: `resources/refs/motionmaxxing/` (gitignored; see `resources/refs/README.md`). Notes: `research/references/motionmaxxing-notes.md`.
+Source: https://github.com/Tejashmakwana/motionmaxxing (Apache-2.0) @ 8c8ec0f. Vendored: `resources/refs/motionmaxxing/` (full tree in git @ 8c8ec0f; see `resources/refs/README.md` + `THIRD_PARTY.md`). Notes: `research/references/motionmaxxing-notes.md`.
 
 In-house: `video-engine/src/composition/motionmaxxing/catalog.json` + `mmx.ts` — 12 measured eases (`mmx-soft-land`, `mmx-snap-settle`, `mmx-glide`, `mmx-cruise`, `mmx-whip`, `mmx-accel-exit`, `mmx-crash-out`, `mmx-crash-in`, `mmx-pop-over`, `mmx-soft-inout`, `mmx-gentle-in`, `mmx-bounce-hard`) and presets `mmx-oversize-land`, `mmx-cut-on-motion`, `mmx-no-dead-frame`. Call `mmxEase(name, p)` or `mmxStyle(name, p)`. In motion-spec.md write the slug with `(motionmaxxing)`.
 
