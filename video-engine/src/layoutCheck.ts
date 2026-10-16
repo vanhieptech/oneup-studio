@@ -26,7 +26,7 @@ for (const f of process.argv.slice(2)) {
       chars.forEach((c: { x: number; headY: number; id: string }) => { const cb: Box = charBox(c.x, c.headY, fr.groundY, fr.scale, c.id); const a = area(b, cb);
         // head zone only (top 55% of body) — props at the feet/desk are fine
         const head: Box = { ...cb, y1: cb.y0 + (cb.y1 - cb.y0) * 0.55 }; if (area(b, head) > 2500) msgs.push(`${b.label} covers ${c.id} head (${Math.round(area(b, head))} px²)`); void a; }); });
-    // L-037: text props (sign/words/cloud/calendar) must stay above the caption band (Caption top = 0.775·H) and must not repeat the narration
+    // L-038: text props (sign/words/cloud/calendar) must stay above the caption band (Caption top = 0.775·H) and must not repeat the narration
     const CAP_Y = 1920 * 0.775 - 20;
     (sc.props ?? []).forEach((p: { kind?: string; text?: string; words?: string[] }, i: number) => { const b = propBox(p as never, i); if (!b || !["sign", "words", "cloud", "calendar"].includes(p.kind ?? "")) return;
       const hid = Math.max(0, b.y1 - Math.max(b.y0, CAP_Y)) * Math.max(0, b.x1 - b.x0); const tot = (b.y1 - b.y0) * (b.x1 - b.x0);
