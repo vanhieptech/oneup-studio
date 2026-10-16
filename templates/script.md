@@ -35,6 +35,11 @@ Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt bu�
 - Nhân vật khác (chibi Hiệp…) chỉ diễn trong cột Hình: dán, ôm đầu, gật, tròn mắt.
 - Giữ nguyên stem «Thì cái bản chất… / Thứ nhất / Thứ hai / Và cuối cùng» + `{nhấn:}` (L-036).
 
+## Ví dụ phải phổ thông (L-040)
+- Hook và ví dụ chính lấy từ nỗi đau đa số người xem có: dọn nhà/phòng bừa, ôn thi/học tiếng Anh, làm báo cáo/luận văn, tập gym/giảm cân, tiền cuối tháng…
+- Ưu tiên nỗi đau có thật trong comment/trend (`research/trends/<date>/apify/top-clips.md`, `final/trend-signals.md`), ghi nguồn + số like ở front-matter `source`.
+- Không lấy ví dụ ngách của creator/dev (làm app, code, AI, deploy) trừ khi chủ đề clip là chính việc đó.
+
 ## Kịch bản
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|

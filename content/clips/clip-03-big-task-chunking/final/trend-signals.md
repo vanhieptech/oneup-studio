@@ -18,4 +18,8 @@ Nguồn chính: Apify `clockworks/tiktok-scraper` run `GjDxjHOvo7LWub0CA`, comme
 | T3 | Comment «Muốn học mà mắc lười 🤣» | [@thnguyen.y](https://www.tiktok.com/@thnguyen.y/video/7663776976519384340) | 1,5M view · 567 comment · comment 904 like | b10 (không phải lười, việc to quá) |
 | T4 | «Không có từ cố gắng» (comment @nhile_n, 341 like) | [@nhile_n](https://www.tiktok.com/@nhile_n/video/7269745529582603526) | 740k view · 265 comment | b06 (hứa «hai ngày xong» thay cho bước cụ thể) |
 
+| T5 | Comment «phòng ngủ thì nhỏ mà phòng chất đầy đồ mà bỉ thì tiếc» (1.918 like) | [@hoaquynh0000](https://www.tiktok.com/@hoaquynh0000/video/7680893073684958482) | 1,4M view · 538 comment | v3: ví dụ chính «dọn phòng» (b01b–b09) |
+
+**v3:** bỏ ví dụ «làm app»/AI (T2 không còn dùng, L-040); T3 dùng cho ví dụ phụ «ôn thi» (b09c).
+
 **Không dùng:** StudyTok Pomodoro (lệch mục 4.7), «không tuột lại» (mục 3.20), góc «AI lấy việc» (bão hoà, digest). Trend AI là số liệu X News, không phải TikTok, ghi rõ.
