@@ -54,6 +54,8 @@ tags: [index, retrieval]
 | clip-03.script-v6 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v6.md` | Clip 03 v6: Việc treo cả năm → chia thành việc con |
 | clip-03.script-v7 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v7.md` | Clip 03 v7: Việc treo cả năm → chia thành việc con |
 | clip-03.script-v8 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v8.md` | Clip 03 v8 (lưu trữ): Việc để cả năm → chia thành việc con |
+| clip-03.post-checklist | doc | ready | `content/clips/clip-03-big-task-chunking/final/post-checklist.md` | Checklist đăng clip 03 (đánh dấu khi xong) |
+| clip-03.post | post-package | sẵn sàng đăng (Hiệp duyệt clip v9 final 17/10); chờ Hiệp duyệt gói đăng | `content/clips/clip-03-big-task-chunking/final/post.md` | Gói đăng TikTok: clip 03 v9 "Để cả năm? Chia nhỏ!" |
 | clip-03.script-final | script | locked | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v9 (CHỐT): Việc để cả năm → chia thành việc con |
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
