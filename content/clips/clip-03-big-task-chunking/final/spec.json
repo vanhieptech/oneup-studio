@@ -27,6 +27,11 @@
       "v": 8,
       "date": "2026-10-16",
       "note": "script v8 Hiệp chốt: hook câu hỏi mở, bằng chứng cụ thể, b04 «nó đâu có ít», b05 «để mai tính»"
+    },
+    {
+      "v": 9,
+      "date": "2026-10-17",
+      "note": "script v9: chỉ đổi b06 «Nói gọn lại là:» → «Vậy nên:» (rule-60); hook b01 giữ nguyên (rule-55 waived by Hiệp)"
     }
   ],
   "cover": {
@@ -724,8 +729,8 @@
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Nói gọn lại là: việc gì to quá thì **chia nhỏ ra** trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
-              "say": "Nói gọn lại là: việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
+              "text": "Vậy nên: việc gì to quá thì **chia nhỏ ra** trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
+              "say": "Vậy nên: việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
               "en": "In short: split big tasks first, then estimate, then start.",
               "hl": [
                 2,
@@ -733,7 +738,7 @@
               ],
               "phrases": [
                 {
-                  "t": "Nói gọn lại là:"
+                  "t": "Vậy nên:"
                 },
                 {
                   "t": "việc gì to quá thì {nhấn: chia nhỏ ra} trước,",

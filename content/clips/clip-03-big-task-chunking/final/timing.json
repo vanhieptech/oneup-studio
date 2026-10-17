@@ -1,11 +1,11 @@
 {
- "total": 85.248,
+ "total": 84.651,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-03-big-task-chunking/final/plan-A.voiced.json",
-   "dur": 85.279,
+   "dur": 84.68,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-03-final-A.mp4",
    "fx": null,
    "scene_starts": [
@@ -15,10 +15,10 @@
     18.817,
     30.933,
     44.116,
-    51.134,
-    61.171,
-    69.038,
-    77.13799999999999
+    50.535,
+    60.571999999999996,
+    68.439,
+    76.53899999999999
    ],
    "_off": 0.0
   }
@@ -100,12 +100,12 @@
    "beat": "clip-03.b07",
    "scene": "b06",
    "speaker": "hiep",
-   "say": "Nói gọn lại là: việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
+   "say": "Vậy nên: việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
    "en": "In short: split big tasks first, then estimate, then start.",
    "emotion": "focused",
    "key": "c03v8-b06",
    "local": 0.45,
-   "dur": 6.318,
+   "dur": 5.719,
    "t": 44.566
   },
   {
@@ -118,7 +118,7 @@
    "key": "c03v8-b07",
    "local": 0.45,
    "dur": 9.337,
-   "t": 51.584
+   "t": 50.985
   },
   {
    "beat": "clip-03.b09",
@@ -130,7 +130,7 @@
    "key": "c03v8-b08",
    "local": 0.45,
    "dur": 7.167,
-   "t": 61.621
+   "t": 61.022
   },
   {
    "beat": "clip-03.b10",
@@ -142,7 +142,7 @@
    "key": "c03v8-b09",
    "local": 0.45,
    "dur": 7.4,
-   "t": 69.488
+   "t": 68.889
   },
   {
    "beat": "clip-03.b11",
@@ -154,7 +154,7 @@
    "key": "c03v8-b10",
    "local": 0.15,
    "dur": 7.741,
-   "t": 77.288
+   "t": 76.689
   }
  ],
  "transitions": [
@@ -189,22 +189,22 @@
    "sfx": "swish"
   },
   {
-   "at": 51.134,
+   "at": 50.535,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 61.171,
+   "at": 60.572,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 69.038,
+   "at": 68.439,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 77.138,
+   "at": 76.539,
    "kind": "scene",
    "sfx": "swish"
   }
@@ -276,39 +276,39 @@
   },
   {
    "name": "tick",
-   "at": 55.184
+   "at": 54.585
   },
   {
    "name": "tick",
-   "at": 56.584
+   "at": 55.985
   },
   {
    "name": "tick",
-   "at": 57.784
+   "at": 57.185
   },
   {
    "name": "pop",
-   "at": 64.021
+   "at": 63.422
   },
   {
    "name": "ding",
-   "at": 67.121
+   "at": 66.522
   },
   {
    "name": "pop",
-   "at": 70.888
+   "at": 70.289
   },
   {
    "name": "tick",
-   "at": 73.088
+   "at": 72.489
   },
   {
    "name": "swish",
-   "at": 77.688
+   "at": 77.089
   },
   {
    "name": "pop",
-   "at": 83.288
+   "at": 82.689
   },
   {
    "name": "swish",
@@ -336,19 +336,19 @@
   },
   {
    "name": "swish",
-   "at": 51.014
+   "at": 50.415
   },
   {
    "name": "swish",
-   "at": 61.051
+   "at": 60.452
   },
   {
    "name": "swish",
-   "at": 68.918
+   "at": 68.319
   },
   {
    "name": "swish",
-   "at": 77.018
+   "at": 76.419
   },
   {
    "name": "ambience",

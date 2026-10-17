@@ -53,7 +53,8 @@ tags: [index, retrieval]
 | clip-03.script-v5 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v5.md` | Clip 03 v5: Việc treo cả năm → chia thành việc con |
 | clip-03.script-v6 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v6.md` | Clip 03 v6: Việc treo cả năm → chia thành việc con |
 | clip-03.script-v7 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v7.md` | Clip 03 v7: Việc treo cả năm → chia thành việc con |
-| clip-03.script-final | script | locked | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v8 (CHỐT): Việc để cả năm → chia thành việc con |
+| clip-03.script-v8 | script | archived | `content/clips/clip-03-big-task-chunking/archive/script-v8.md` | Clip 03 v8 (lưu trữ): Việc để cả năm → chia thành việc con |
+| clip-03.script-final | script | locked | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v9 (CHỐT): Việc để cả năm → chia thành việc con |
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
@@ -116,6 +117,8 @@ tags: [index, retrieval]
 | research.trends.2026-10-16.apify.top-clips | trend-top-clips | ready | `research/trends/2026-10-16/apify/top-clips.md` | Top 5 clip TikTok — 16/10/2026 |
 | trends-2026-10-16.apify-verify | research-trends | ready | `research/trends/2026-10-16/apify-verify.md` | Apify verify 2026-10-16 |
 | trends-2026-10-16 | trend-digest | draft-needs-review | `research/trends/2026-10-16/digest.md` | Trend digest 2026-10-16 |
+| trends-2026-10-17.apify | research-trends | ready | `research/trends/2026-10-17/apify/README.md` | Apify 2026-10-17 |
+| trends-2026-10-17 | trend-digest | draft-needs-review | `research/trends/2026-10-17/digest.md` | Trend digest 2026-10-17 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |

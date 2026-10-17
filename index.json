@@ -330,12 +330,20 @@
    "title": "Clip 03 v7: Việc treo cả năm → chia thành việc con"
   },
   {
+   "id": "clip-03.script-v8",
+   "type": "script",
+   "status": "archived",
+   "updated": "2026-10-16",
+   "path": "content/clips/clip-03-big-task-chunking/archive/script-v8.md",
+   "title": "Clip 03 v8 (lưu trữ): Việc để cả năm → chia thành việc con"
+  },
+  {
    "id": "clip-03.script-final",
    "type": "script",
    "status": "locked",
    "updated": "2026-10-16",
    "path": "content/clips/clip-03-big-task-chunking/final/script-final.md",
-   "title": "Clip 03 v8 (CHỐT): Việc để cả năm → chia thành việc con"
+   "title": "Clip 03 v9 (CHỐT): Việc để cả năm → chia thành việc con"
   },
   {
    "id": "clip-03.trend-signals",
@@ -834,10 +842,26 @@
    "title": "Trend digest 2026-10-16"
   },
   {
+   "id": "trends-2026-10-17.apify",
+   "type": "research-trends",
+   "status": "ready",
+   "updated": "2026-10-17",
+   "path": "research/trends/2026-10-17/apify/README.md",
+   "title": "Apify 2026-10-17"
+  },
+  {
+   "id": "trends-2026-10-17",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-17",
+   "path": "research/trends/2026-10-17/digest.md",
+   "title": "Trend digest 2026-10-17"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-16",
+   "updated": "2026-10-17",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -845,7 +869,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-16",
+   "updated": "2026-10-17",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },

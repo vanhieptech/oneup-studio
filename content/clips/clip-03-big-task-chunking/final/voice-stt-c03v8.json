@@ -66,13 +66,12 @@
  "b06": {
   "line_sim": 1.0,
   "units": {
-   "b06-0": 0.75,
+   "b06-0": 1.0,
    "b06-1": 1.0,
-   "b06-2": 1.0,
-   "b06-3": 1.0
+   "b06-2": 1.0
   },
-  "stt": "Nói gọn lại là, việc gì to quá thì chia nhỏ ra trước, rồi mới tính coi mất bao lâu, xong mới bắt tay vô làm.",
-  "dur": 6.32
+  "stt": "Vậy nên việc gì to quá thì chia nhỏ ra trước rồi mới tính coi mất bao lâu xong mới bắt tay vô làm.",
+  "dur": 5.72
  },
  "b07": {
   "line_sim": 0.849,
