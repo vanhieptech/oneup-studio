@@ -1,11 +1,11 @@
 ---
 title: "Trend ingest: thư viện sống (rule-37, rule-39)"
-date: 2026-10-16
+date: 2026-10-17
 source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-16
+updated: 2026-10-17
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -44,11 +44,11 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | shipper-6935-ngay | Shipper giao hàng liên tục 6.935 ngày | lifestyle | ok | 2026-10-14 | 2026-10-14 | 1 | [kenh14](https://kenh14.vn/tai-san-o-que-cua-shipper-sn-1973-giao-hang-lien-tuc-suot-6935-ngay-215261013223224713.chn) |
 
 
-| post-lunch-slump | Người lớn than mệt sau cơm trưa + wind-down tối | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110418790723006851) |
+| post-lunch-slump | Người lớn than mệt sau cơm trưa + wind-down tối | habits | ok | 2026-10-15 | 2026-10-17 | 2 | [X News](https://x.com/i/trending/2110418790723006851) |
 | early-risers-5am | Dân dậy 5h khoe gym / pre-workout | habits | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110448654192431562) |
 | realistic-goals-debate | Tranh luận mục tiêu sức khoẻ/năng suất hàng ngày có thực tế? | social debates | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109762860901454314) |
 | dong-nghiep-viec-rieng | Đồng nghiệp nhờ việc riêng ngoài giờ | niche/work | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/dong-nghiep-nho-viec-rieng-ngoai-gio-lam-viec-tu-choi-the-nao-215261014112324973.chn) |
-| floor-time-tiktok | TikTok Floor Time (nằm sàn reset) | memes/wellness | ok | 2026-10-15 | 2026-10-15 | 1 | [verywell](https://www.verywellmind.com/floor-time-11917599) |
+| floor-time-tiktok | TikTok Floor Time (nằm sàn reset) | memes/wellness | ok | 2026-10-15 | 2026-10-17 | 2 | [verywell](https://www.verywellmind.com/floor-time-11917599) |
 | sleep-struggles-late | Thức khuya + kiệt sức | habits | ok | 2026-10-15 | 2026-10-16 | 2 | [X News](https://x.com/i/trending/2109971172024860764) |
 | paper-writing-habits | Người vẫn viết giấy giữa đời màn hình | niche | ok | 2026-10-15 | 2026-10-15 | 1 | [gnews](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2tlbk0zc0RkU3czQzU5UmloNjFMbHRqZTdQakxqOFVZbzIyZU9Db1dYMHJ1dGFuTnl) |
 | us-alcohol-lowest | Mỹ uống rượu thấp nhất từ 1939 | news/health | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110230256925778352) |
@@ -59,12 +59,23 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | genz-diem-tua | Gen Z điểm tựa an toàn khi tẩy chay / kiệt sức | social debates | caution | 2026-10-15 | 2026-10-15 | 1 | [tiền phong via gnews](https://news.google.com/rss/articles/CBMimgFBVV95cUxQSjFUV28wVEdwelI5SnpuMFBoRllzUjA3Z3lGSVBPbEl3UldYdVVsZmxTdEk4cW5ud2x) |
 
 | khong-dang-mxh | Ngày càng nhiều người không còn đăng ảnh MXH | social debates | ok | 2026-10-16 | 2026-10-16 | 1 | [kenh14](https://kenh14.vn/vi-sao-ngay-cang-nhieu-nguoi-khong-con-dang-anh-hay-cap-nhat-thong-tin-tren-mang-xa-hoi-215261015192701748.chn) |
-| ai-slop-scaleback | Công ty thu hẹp AI vì lỗi / AI slop | tech/AI | ok | 2026-10-16 | 2026-10-16 | 1 | [X News](https://x.com/i/trending/2110850870489252305) |
-| outdoor-productivity-pressure | Áp lực năng suất hoá cả lúc ra ngoài trời | niche | ok | 2026-10-16 | 2026-10-16 | 1 | [Outside Mag](https://news.google.com/rss/articles/CBMikAFBVV95cUxPSWdnYllnOHdZZUJyS09xVUpJYnFlT3RtTy1WYWlqR2dGZnpydXIxbGhwbktUeWhzZjUzbHFvMEE3TGY1VW1KV2FJSFlpVkdXRDEwQzRqcWZYaHVYOHlXMkluMExsODhla2JlUEczdTBwdFFzSERmSXBVYVFCMDFyRHNyeGREb0dfNDcya21tQXA) |
+| ai-slop-scaleback | Công ty thu hẹp AI vì lỗi / AI slop | tech/AI | ok | 2026-10-16 | 2026-10-17 | 2 | [X News](https://x.com/i/trending/2110850870489252305) |
+| outdoor-productivity-pressure | Áp lực năng suất hoá cả lúc ra ngoài trời | niche | ok | 2026-10-16 | 2026-10-17 | 2 | [Outside Mag](https://news.google.com/rss/articles/CBMikAFBVV95cUxPSWdnYllnOHdZZUJyS09xVUpJYnFlT3RtTy1WYWlqR2dGZnpydXIxbGhwbktUeWhzZjUzbHFvMEE3TGY1VW1KV2FJSFlpVkdXRDEwQzRqcWZYaHVYOHlXMkluMExsODhla2JlUEczdTBwdFFzSERmSXBVYVFCMDFyRHNyeGREb0dfNDcya21tQXA) |
 | liminal-khong-tuot | TikTok “bạn không hề tuột lại” / ngừng soi đời người | memes/wellness | ok | 2026-10-16 | 2026-10-16 | 1 | [TikTok liminal](https://www.tiktok.com/@liminalspvce.io/video/7645271586156580116) |
 | paycheck-300k | 36% lương ≥$300k vẫn paycheck-to-paycheck | money | caution | 2026-10-16 | 2026-10-16 | 1 | [X News](https://x.com/i/trending/2109441779850260730) |
 | mckinsey-ai-interview | McKinsey thử phỏng vấn avatar AI | tech/career | ok | 2026-10-16 | 2026-10-16 | 1 | [X News](https://x.com/i/trending/2110395763201388639) |
 | music-rest-coping | Music + nghỉ đối phó stress | habits | ok | 2026-10-16 | 2026-10-16 | 1 | [X News](https://x.com/i/trending/2109994700174512302) |
+| ai-jevons-longer-hours | AI giúp làm nhanh hơn mà giờ làm dài hơn (Jevons paradox) | tech/work | ok | 2026-10-17 | 2026-10-17 | 1 | [X News](https://x.com/i/trending/2111099938876833853) |
+| traders-biet-ma-khong-lam | Traders: biết luật mà không theo được; kỷ luật > chiến lược (5 story 14–16/10) | money/habits | caution | 2026-10-17 | 2026-10-17 | 1 | [X News](https://x.com/i/trending/2111053129383030813) |
+| genz-earns-more | Gen Z thu nhập +20–40% so millennials cùng tuổi, sở hữu nhà 27% vs 55% (số liệu Mỹ) | money | caution | 2026-10-17 | 2026-10-17 | 1 | [X News](https://x.com/i/trending/2111213837856948466) |
+| genz-fitness | Gen Z mê gym/wellness (thẻ gym ×8 trong 3 năm) | health/habits | ok | 2026-10-17 | 2026-10-17 | 1 | [X News](https://x.com/i/trending/2111113227270508658) |
+| iphone-duo-coc | Cọc 30 triệu, canh 19h vẫn lỡ đợt iPhone Duo đầu tiên | tech/money | ok | 2026-10-17 | 2026-10-17 | 1 | [genk](https://genk.vn/coc-30-trieu-dong-canh-dung-19h-de-bam-dat-nhieu-nguoi-viet-van-lo-chuyen-iphone-duo-dau-tien-) |
+| food-preferences-habits | Sở thích ăn uống mạnh khiến đổi thói quen ăn khó (Medical Xpress) | health/habits | ok | 2026-10-17 | 2026-10-17 | 1 | GNews US productivity |
+| hoa-sua-20-10 | Trend hoa sữa 20/10 xin hoa về cắm | seasonal | ok | 2026-10-17 | 2026-10-17 | 1 | kenh14 |
+| tt-feynman-hoc-tap | TikTok “phương pháp học” (lặp lại ngắt quãng, Feynman, mindmap, active recall); comment top Feynman 2.860 like | niche/study | ok | 2026-10-17 | 2026-10-17 | 1 | [TikTok @phamthuykieuhuong](https://www.tiktok.com/@phamthuykieuhuong/video/7665937572925066516) |
+| tt-nhay-day-sang | TikTok dậy sớm nhảy dây vài phút (676k, 899 comment) | viral/habits | ok | 2026-10-17 | 2026-10-17 | 1 | [TikTok @dacvubanana](https://www.tiktok.com/@dacvubanana/video/7696748426293169415) |
+| tt-ban-ron-khong-thanh-cong | TikTok “40 tuổi khuyên người trẻ”: bận rộn ≠ thành công, tập từ chối | niche | ok | 2026-10-17 | 2026-10-17 | 1 | [TikTok @hoaquynh0000](https://www.tiktok.com/@hoaquynh0000/video/7696719796678774034) |
+| tt-it-tien-van-phat-trien | TikTok phát triển bản thân khi nguồn lực hạn chế (không bóng bẩy, gym rẻ hơn ăn ngoài) | niche/money | ok | 2026-10-17 | 2026-10-17 | 1 | [TikTok @iamuyenvu](https://www.tiktok.com/@iamuyenvu/video/7635280411198901520) |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -77,9 +88,9 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | this-is-your-sign | "This is your sign to…" | format | EN · mọi nhóm | 2026-10-13 | 2026-10-13 | 1 | [postdom](https://postdom.com/blog/tiktok-trends) | P07, chỉ dùng bản đảo ngược | trụ 1 |
 | vali-so-7-content | "Làm content cả năm không ai hay, chọn vali số 7 cả nước biết" | meme | VI · creator / gen Z | 2026-10-13 | 2026-10-13 | 1 | [35express](https://35express.org/trend-lam-content-ca-nam-khong-ai-hay-chon-vali-so-7-ca-nuoc-biet/) | P09, tự giễu hành trình kênh (cần S-04) | ý tưởng mới |
 
-| floor-time | Floor Time (nằm sàn reset) | format | EN · wellness / gen Z | 2026-10-15 | 2026-10-15 | 1 | [verywell](https://www.verywellmind.com/floor-time-11917599) | Đảo: nghỉ được, không phải trị liệu → 22.8 | B-floor-01 |
+| floor-time | Floor Time (nằm sàn reset) | format | EN · wellness / gen Z | 2026-10-15 | 2026-10-17 | 2 | [verywell](https://www.verywellmind.com/floor-time-11917599) | Đảo: nghỉ được, không phải trị liệu → 22.8 | B-floor-01 |
 
-| ban-chat-cua | “Vậy thì bản chất của…” (F06) — giảng Vật lí → meme điền khuyết | format | VI · gen Z | 2026-10-15 | 2026-10-16 | 2 | [giaimatrend](https://www.tiktok.com/@giaimatrend.vn/video/7694889719036923154) · Apify | Stem clip-02/03; không copy audio | clip-02 · trụ 1 |
+| ban-chat-cua | “Vậy thì bản chất của…” (F06) — giảng Vật lí → meme điền khuyết | format | VI · gen Z | 2026-10-15 | 2026-10-17 | 3 | [giaimatrend](https://www.tiktok.com/@giaimatrend.vn/video/7694889719036923154) · Apify | Stem clip-02/03; không copy audio | clip-02 · trụ 1 |
 
 ## Cụm từ / slang hay xuất hiện trong comment
 | id | Cụm từ | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip |
@@ -140,6 +151,14 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-liminal-01 | liminal-khong-tuot | sợ tuột lại so với người khác | 4.12 + 3.20 | "Bạn không hề tuột lại. Vì hông có đường đua nào cả." (P03) | empathy | ý tưởng mới | đề xuất | 2026-10-16 |
 | B-paycheck-01 | paycheck-300k | lương cao vẫn hết tháng | 5.27 | "Lương cao vẫn sống tháng này sang tháng kia. Sách hỏi: bạn có lớp đệm chưa?" (P04+P10) | data / empathy | ý tưởng mới | caution | 2026-10-16 |
 | B-mckinsey-01 | mckinsey-ai-interview | luyện thuật toán, phỏng vấn hỏi lắng nghe | 23.19 | "McKinsey thử phỏng vấn bằng avatar AI…" (P04) | data | ý tưởng mới | đề xuất | 2026-10-16 |
+
+| B-feynman-01 | tt-feynman-hoc-tap | học xong thấy thuộc, sáng mai trống trơn | 23.14 (+23.16) | "Học cả tối thấy thuộc làu. Sáng mai gấp sách lại… trống trơn?" (P10+P03) | contrarian / data | clip-25 kéo sớm / ý tưởng mới | stub, chờ duyệt | 2026-10-17 |
+| B-vilpa-01 | tt-nhay-day-sang + genz-fitness | không có thời gian tập | 2.15 | "Không có thời gian tập thể dục? Vậy bạn có bốn phút không?" (P01+P04) | data / empathy | clip-18 hook thay thế / ý tưởng mới | stub, chờ duyệt (sức khoẻ: cần Hiệp duyệt) | 2026-10-17 |
+| B-jevons-01 | ai-jevons-longer-hours | làm xong sớm thì bị giao thêm việc | 3.13 | "Làm xong sớm thì được về sớm? Hông. Được giao thêm việc." (P10+P03) | contrarian / data | clip-12 (3.13) hook thay thế | đề xuất | 2026-10-17 |
+| B-cooloff-01 | iphone-duo-coc + tt-it-tien-van-phat-trien | canh giờ cọc máy mới | 5.23 | "Cọc 30 triệu canh đúng 19h. Bạn đã ngủ một đêm với quyết định đó chưa?" (P01) | humor / data | ý tưởng mới | đề xuất (bỏ phần luật đổi trả 7 ngày của TQ) | 2026-10-17 |
+| B-gym-01 | tt-it-tien-van-phat-trien + genz-fitness | mua thẻ gym năm cho rẻ | 5.21 | "Mua thẻ gym cả năm cho rẻ? Có người trả hơn 17 đô một buổi mà không biết." (P04+P03) | data / contrarian | ý tưởng mới | đề xuất | 2026-10-17 |
+| B-knowdo-01 | traders-biet-ma-khong-lam | biết hết mà tới lúc làm thì quên | 4.1 (callback clip-01) | "Biết hết luật mà tới lúc làm thì quên sạch?" (P11) | callback / data | ý tưởng mới (callback clip-01) | caution (không nhắc trading) | 2026-10-17 |
+| B-food-01 | food-preferences-habits | ăn kiêng mà nhà đầy bánh | 4.10 | "Muốn ăn ít lại mà bánh để ngay đầu giường?" (P03) | data | ý tưởng mới (cần S-06) | đề xuất | 2026-10-17 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |

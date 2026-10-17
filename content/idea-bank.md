@@ -27,3 +27,8 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Không đăng MXH vẫn lướt (B-nopost-01) | 3.20 | trụ 4 | "Ngày càng nhiều người không còn đăng ảnh. Nghe healthy ghê." | DARK | stub 2026-10-16, chờ duyệt |
 | Outdoor hustle vs đi bộ (B-outdoor-01) | 22.6 | trụ 4 | "Feed dạy bạn năng suất hoá cả lúc ra ngoài…" | LIGHT | ý tưởng (2026-10-16) |
 | Không tuột lại / không đường đua (B-liminal-01) | 4.12 + 3.20 | trụ 1/4 | "Bạn không hề tuột lại. Vì hông có đường đua nào cả." | LIGHT | ý tưởng (2026-10-16) |
+| Gấp sách tự kiểm thay vì đọc lại (B-feynman-01) | 23.14 (+23.16) | trụ 5 học | "Học cả tối thấy thuộc làu. Sáng mai gấp sách lại… trống trơn?" | DARK | stub 2026-10-17, chờ duyệt |
+| Bốn phút vận động mạnh mỗi ngày (B-vilpa-01) | 2.15 | trụ 3 năng lượng | "Không có thời gian tập thể dục? Vậy bạn có bốn phút không?" | LIGHT | stub 2026-10-17, chờ duyệt (sức khoẻ) |
+| Làm nhanh hơn thì bị giao thêm việc (B-jevons-01) | 3.13 | trụ 2 | "Làm xong sớm thì được về sớm? Hông. Được giao thêm việc." | DARK | ý tưởng (2026-10-17) |
+| Cọc máy mới: ngủ một đêm đã (B-cooloff-01) | 5.23 | tiền | "Cọc 30 triệu canh đúng 19h. Bạn đã ngủ một đêm với quyết định đó chưa?" | DARK | ý tưởng (2026-10-17) |
+| Thẻ gym năm hay trả theo buổi (B-gym-01) | 5.21 | tiền | "Mua thẻ gym cả năm cho rẻ?…" | DARK | ý tưởng (2026-10-17) |

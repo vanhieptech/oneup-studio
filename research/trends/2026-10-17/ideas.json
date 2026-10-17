@@ -1,0 +1,188 @@
+{
+ "ideas": [
+  {
+   "id": "gap-sach-tu-kiem",
+   "title": "Học xong thấy thuộc, sáng mai trống trơn — Feynman hiệu quả vì gấp sách tự nói lại",
+   "trend_id": "tt-phamthuykieuhuong-7665937572925066516",
+   "bridge_id": "B-feynman-01",
+   "lesson": "23.14 Học xong gấp sách tự kiểm, đừng đọc lại (Yang et al. 2021: 222 nghiên cứu, 48.478 học sinh, kiểm tra nhỏ trong lớp nâng điểm mức trung bình g=0,499; Dunlosky 2013: tự kiểm + dàn đều = nhóm hiệu quả cao nhất; bằng chứng A). Phụ: 23.16 đọc lại/gạch chân/tóm tắt ở nhóm thấp nhất.",
+   "angle": "contrarian / data",
+   "pattern": "P10 + P03",
+   "differentiation": "Mọi người đang nói: Feynman/mindmap/lặp lại ngắt quãng là phương pháp 'đỉnh nhất' (TikTok @phamthuykieuhuong 995k view, comment top 2.860 like 'Feynman… không cần thuộc chỉ cần hiểu'). Góc của mình: tên phương pháp không quan trọng; cái làm nó hiệu quả là gấp sách rồi tự lôi ra từ đầu — đó là tự kiểm, nhóm cao nhất trong 10 cách học; còn đọc lại/gạch chân ở nhóm thấp nhất. Không nói mindmap vô dụng (sách không xếp hạng mindmap).",
+   "theme": "dark",
+   "week": 1,
+   "target": "clip-25 (23.14) kéo lên sớm / ý tưởng mới",
+   "hook_vi": "Học cả tối thấy thuộc làu. Sáng mai gấp sách lại… trống trơn?",
+   "moment_vi": "Đọc lại lần ba, gạch chân vàng cả trang, vẫn quên.",
+   "turn_vi": "Gấp sách, tự viết ra những gì còn nhớ, rồi mới mở ra so.",
+   "hook_en": "Studied all night. Next morning? Blank.",
+   "explainer": "HyperFrames: bảng 10 cách học hai tầng — tự kiểm + dàn đều sáng ở tầng trên; đọc lại, gạch chân, tóm tắt mờ ở tầng dưới. Số 222 nghiên cứu / 48.478 học sinh đếm lên.",
+   "beats": [
+    {
+     "text": "Học cả tối thấy thuộc làu. Sáng mai gấp sách lại… trống trơn?",
+     "expression": "surprised",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 5,
+     "caption_en": "Studied all night. Next morning? Blank."
+    },
+    {
+     "text": "Feed đang khen Feynman, mindmap, lặp lại ngắt quãng. Ai cũng có một cách đỉnh nhất.",
+     "expression": "confused",
+     "action": "thinking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 5,
+     "caption_en": "Feynman, mind maps, spaced repetition…"
+    },
+    {
+     "text": "Mà Feynman hiệu quả đâu phải nhờ cái tên. Mà nhờ bạn gấp sách lại rồi tự nói ra.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "desk",
+     "duration": 6,
+     "caption_en": "It's not the name. It's closing the book."
+    },
+    {
+     "text": "Một tổng hợp 222 nghiên cứu, gần 48.500 học sinh: lớp có kiểm tra nhỏ thì điểm cao hơn, mức trung bình.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 7,
+     "caption_en": "222 studies: quizzes raised grades."
+    },
+    {
+     "text": "Còn đọc lại với gạch chân? Bảng xếp hạng 10 cách học để hai cách này ở nhóm thấp nhất.",
+     "expression": "sad",
+     "action": "reacting",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "Rereading, highlighting: bottom tier."
+    },
+    {
+     "text": "Giờ mình học xong một phần là gấp sách, ghi ra giấy những gì còn nhớ, rồi mới mở ra so.",
+     "expression": "happy",
+     "action": "typing",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 6,
+     "caption_en": "Close it. Write what you remember. Check."
+    },
+    {
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật S-01: mình ôn TOEIC kiểu này ra sao.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 5,
+     "caption_en": "[Hiệp to confirm] My TOEIC prep."
+    },
+    {
+     "text": "Tối nay thử gấp sách năm phút. Nhớ được mấy ý, comment cho mình biết.",
+     "expression": "happy",
+     "action": "reacting",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 5,
+     "caption_en": "Tonight: close the book for 5 minutes."
+    }
+   ]
+  },
+  {
+   "id": "bon-phut-van-dong-manh",
+   "title": "Không có thời gian tập? Ba lần một, hai phút leo cầu thang mỗi ngày",
+   "trend_id": "tt-dacvubanana-7696748426293169415",
+   "bridge_id": "B-vilpa-01",
+   "lesson": "2.15 Gom các đợt vận động mạnh ngắn (leo cầu thang, đi bộ thật nhanh) đủ 4–5 phút/ngày (Stamatakis et al. 2022, Nature Medicine: 25.200 người không tập thể dục, đo bằng thiết bị đeo, theo dõi trung bình 6,9 năm; 3 đợt 1–2 phút/ngày liên quan nguy cơ tử vong thấp hơn 38–40%, tim mạch 48–49%; bằng chứng A, nghiên cứu quan sát). Mục sức khoẻ → câu 'Thông tin tham khảo, không thay thế tư vấn chuyên gia' + Hiệp duyệt trước khi xuất.",
+   "angle": "data / empathy",
+   "pattern": "P01 + P04",
+   "differentiation": "Mọi người đang nói: dậy sớm nhảy dây mỗi sáng (TikTok @dacvubanana 676k view, 899 comment), Gen Z đi gym gấp 8 lần (X News), '10 thói quen dưới 5 phút'. Góc của mình: cho người không tập gì hết — không cần gym hay đồ tập, chỉ cần 3 lần 1–2 phút vận động mạnh trong việc hằng ngày; nói rõ đây là nghiên cứu quan sát, không thay gym.",
+   "theme": "light",
+   "week": 1,
+   "target": "clip-18 (2.17/2.11) hook thay thế / ý tưởng mới trụ 3",
+   "hook_vi": "Không có thời gian tập thể dục? Vậy bạn có bốn phút không?",
+   "moment_vi": "Ngồi máy cả ngày, nhìn feed người ta nhảy dây mà thấy mệt.",
+   "turn_vi": "Đi thang bộ, đi thật nhanh ba lần một ngày.",
+   "hook_en": "No time to work out? Got 4 minutes?",
+   "explainer": "HyperFrames: thanh thời gian một ngày với 3 vạch nhỏ 1–2 phút sáng lên; số 25.200 người / 6,9 năm; cột nguy cơ hạ 38–40%, ghi chú 'nghiên cứu quan sát'.",
+   "beats": [
+    {
+     "text": "Không có thời gian tập thể dục? Vậy bạn có bốn phút không?",
+     "expression": "surprised",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 5,
+     "caption_en": "No time to work out? Got 4 minutes?"
+    },
+    {
+     "text": "Feed toàn người dậy sớm nhảy dây, rủ nhau đi gym. Nhìn thôi đã thấy mệt.",
+     "expression": "confused",
+     "action": "thinking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 5,
+     "caption_en": "Jump rope at dawn, packed gyms…"
+    },
+    {
+     "text": "[CẦN HIỆP XÁC NHẬN] Mình ngồi máy cả ngày, gần như không vận động.",
+     "expression": "sad",
+     "action": "typing",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 5,
+     "caption_en": "[Hiệp to confirm] I sit all day."
+    },
+    {
+     "text": "Một nghiên cứu theo dõi 25.200 người không hề tập thể dục, gần bảy năm, bằng thiết bị đeo tay.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "25,200 non-exercisers, ~7 years."
+    },
+    {
+     "text": "Ai có ba lần một, hai phút vận động mạnh mỗi ngày, như leo cầu thang, đi thật nhanh, thì nguy cơ tử vong thấp hơn khoảng 38 tới 40%.",
+     "expression": "surprised",
+     "action": "reacting",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 8,
+     "caption_en": "3 bursts a day: ~38–40% lower risk."
+    },
+    {
+     "text": "Giờ mình đi thang bộ thay thang máy, ra ngoài lấy đồ thì đi thật nhanh. Không cần đồ tập.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "desk",
+     "duration": 6,
+     "caption_en": "Stairs, not the lift. Walk fast."
+    },
+    {
+     "text": "Đây là nghiên cứu quan sát, không thay được gym. Là cái mức tối thiểu cho ngày chưa vận động gì.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "Observational. A floor, not a gym."
+    },
+    {
+     "text": "Hôm nay leo cầu thang ba lần. Comment số tầng của bạn. Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+     "expression": "happy",
+     "action": "reacting",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "Reference only, not medical advice."
+    }
+   ]
+  }
+ ]
+}

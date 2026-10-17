@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-17",
+  "timezone": "Asia/Saigon",
+  "primary": {
+    "actor": "clockworks/tiktok-scraper",
+    "run_id": "6f00WAYhM2omOROJp",
+    "dataset_id": "whPems9LCMqRvw8mk",
+    "kv_store_id": "yW69XbYt7qjmDxUbj",
+    "item_count": 48,
+    "compute_units": 0.0373,
+    "input": {
+      "hashtags": ["trihoan", "hoctap", "phattrienbanthan", "quanlythoigian"],
+      "searchQueries": ["Vay thi ban chat cua", "thoi quen tot moi ngay"],
+      "searchSection": "/video",
+      "resultsPerPage": 8,
+      "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
+      "commentsPerPost": 0,
+      "proxyCountryCode": "None"
+    }
+  },
+  "comments": {
+    "actor": "clockworks/tiktok-comments-scraper",
+    "run_id": "RdJOWKZREExh1hsQh",
+    "dataset_id": "sX1pwEoIoMZBXuSar",
+    "item_count": 120,
+    "compute_units": 0.0368
+  },
+  "parseforge_enrich": {
+    "actor": "parseforge/tiktok-scraper",
+    "run_id": "3d0OlhTPWqvvxkkDx",
+    "dataset_id": "Y3M2jJe4OTDFiYPz0",
+    "item_count": 3,
+    "compute_units": 0.0457,
+    "note": "dacvubanana 15s jump-rope clip has no speech -> caption fallback; sepcuongnieu transcript from parseforge"
+  },
+  "shortlist": 6,
+  "vtt_saved": 4
+}

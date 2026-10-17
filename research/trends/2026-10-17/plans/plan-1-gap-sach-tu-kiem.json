@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-gap-sach-tu-kiem",
+ "title": "[STUB] Học xong thấy thuộc, sáng mai trống trơn — Feynman hiệu quả vì gấp sách tự nói lại",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-phamthuykieuhuong-7665937572925066516",
+  "bridge_id": "B-feynman-01",
+  "lesson": "23.14 Học xong gấp sách tự kiểm, đừng đọc lại (Yang et al. 2021: 222 nghiên cứu, 48.478 học sinh, kiểm tra nhỏ trong lớp nâng điểm mức trung bình g=0,499; Dunlosky 2013: tự kiểm + dàn đều = nhóm hiệu quả cao nhất; bằng chứng A). Phụ: 23.16 đọc lại/gạch chân/tóm tắt ở nhóm thấp nhất.",
+  "angle": "contrarian / data",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: Feynman/mindmap/lặp lại ngắt quãng là phương pháp 'đỉnh nhất' (TikTok @phamthuykieuhuong 995k view, comment top 2.860 like 'Feynman… không cần thuộc chỉ cần hiểu'). Góc của mình: tên phương pháp không quan trọng; cái làm nó hiệu quả là gấp sách rồi tự lôi ra từ đầu — đó là tự kiểm, nhóm cao nhất trong 10 cách học; còn đọc lại/gạch chân ở nhóm thấp nhất. Không nói mindmap vô dụng (sách không xếp hạng mindmap)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "gap-sach-tu-kiem.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Học cả tối thấy thuộc làu. Sáng mai gấp sách lại… trống trơn?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Studied all night. Next morning? Blank.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "gap-sach-tu-kiem.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Feed đang khen Feynman, mindmap, lặp lại ngắt quãng. Ai cũng có một cách đỉnh nhất.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Feynman, mind maps, spaced repetition…",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "gap-sach-tu-kiem.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà Feynman hiệu quả đâu phải nhờ cái tên. Mà nhờ bạn gấp sách lại rồi tự nói ra.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "It's not the name. It's closing the book.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "gap-sach-tu-kiem.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một tổng hợp 222 nghiên cứu, gần 48.500 học sinh: lớp có kiểm tra nhỏ thì điểm cao hơn, mức trung bình.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "222 studies: quizzes raised grades.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "gap-sach-tu-kiem.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn đọc lại với gạch chân? Bảng xếp hạng 10 cách học để hai cách này ở nhóm thấp nhất.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Rereading, highlighting: bottom tier.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "gap-sach-tu-kiem.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Giờ mình học xong một phần là gấp sách, ghi ra giấy những gì còn nhớ, rồi mới mở ra so.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Close it. Write what you remember. Check.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "gap-sach-tu-kiem.b07",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật S-01: mình ôn TOEIC kiểu này ra sao.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My TOEIC prep.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "gap-sach-tu-kiem.b08",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay thử gấp sách năm phút. Nhớ được mấy ý, comment cho mình biết.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Tonight: close the book for 5 minutes.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

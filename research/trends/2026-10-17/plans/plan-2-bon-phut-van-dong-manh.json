@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-bon-phut-van-dong-manh",
+ "title": "[STUB] Không có thời gian tập? Ba lần một, hai phút leo cầu thang mỗi ngày",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-dacvubanana-7696748426293169415",
+  "bridge_id": "B-vilpa-01",
+  "lesson": "2.15 Gom các đợt vận động mạnh ngắn (leo cầu thang, đi bộ thật nhanh) đủ 4–5 phút/ngày (Stamatakis et al. 2022, Nature Medicine: 25.200 người không tập thể dục, đo bằng thiết bị đeo, theo dõi trung bình 6,9 năm; 3 đợt 1–2 phút/ngày liên quan nguy cơ tử vong thấp hơn 38–40%, tim mạch 48–49%; bằng chứng A, nghiên cứu quan sát). Mục sức khoẻ → câu 'Thông tin tham khảo, không thay thế tư vấn chuyên gia' + Hiệp duyệt trước khi xuất.",
+  "angle": "data / empathy",
+  "pattern": "P01 + P04",
+  "differentiation": "Mọi người đang nói: dậy sớm nhảy dây mỗi sáng (TikTok @dacvubanana 676k view, 899 comment), Gen Z đi gym gấp 8 lần (X News), '10 thói quen dưới 5 phút'. Góc của mình: cho người không tập gì hết — không cần gym hay đồ tập, chỉ cần 3 lần 1–2 phút vận động mạnh trong việc hằng ngày; nói rõ đây là nghiên cứu quan sát, không thay gym."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "bon-phut-van-dong-manh.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Không có thời gian tập thể dục? Vậy bạn có bốn phút không?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "No time to work out? Got 4 minutes?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "bon-phut-van-dong-manh.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Feed toàn người dậy sớm nhảy dây, rủ nhau đi gym. Nhìn thôi đã thấy mệt.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Jump rope at dawn, packed gyms…",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "bon-phut-van-dong-manh.b03",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Mình ngồi máy cả ngày, gần như không vận động.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] I sit all day.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "bon-phut-van-dong-manh.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một nghiên cứu theo dõi 25.200 người không hề tập thể dục, gần bảy năm, bằng thiết bị đeo tay.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "25,200 non-exercisers, ~7 years.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "bon-phut-van-dong-manh.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ai có ba lần một, hai phút vận động mạnh mỗi ngày, như leo cầu thang, đi thật nhanh, thì nguy cơ tử vong thấp hơn khoảng 38 tới 40%.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "3 bursts a day: ~38–40% lower risk.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "bon-phut-van-dong-manh.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Giờ mình đi thang bộ thay thang máy, ra ngoài lấy đồ thì đi thật nhanh. Không cần đồ tập.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Stairs, not the lift. Walk fast.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "bon-phut-van-dong-manh.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đây là nghiên cứu quan sát, không thay được gym. Là cái mức tối thiểu cho ngày chưa vận động gì.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Observational. A floor, not a gym.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "bon-phut-van-dong-manh.b08",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay leo cầu thang ba lần. Comment số tầng của bạn. Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Reference only, not medical advice.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
