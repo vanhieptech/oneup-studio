@@ -58,6 +58,8 @@ tags: [index, retrieval]
 | clip-03.post | post-package | sẵn sàng đăng (Hiệp duyệt clip v9 final 17/10); chờ Hiệp duyệt gói đăng | `content/clips/clip-03-big-task-chunking/final/post.md` | Gói đăng TikTok: clip 03 v9 "Để cả năm? Chia nhỏ!" |
 | clip-03.script-final | script | locked | `content/clips/clip-03-big-task-chunking/final/script-final.md` | Clip 03 v9 (CHỐT): Việc để cả năm → chia thành việc con |
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
+| clip-04.readme | readme | draft | `content/clips/clip-04-gap-sach-tu-kiem/README.md` | clip-04: Gấp sách tự kiểm (HTB 23.14) |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 v1 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -318,6 +320,7 @@ tags: [index, retrieval]
 |---|---|---|---|
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | archive, final |
 | clip-03 | None | `content/clips/clip-03-big-task-chunking` | README.md, archive, final |
+| clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, final |
 
 ## Assets & tools
 | id | path | description |

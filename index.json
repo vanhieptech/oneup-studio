@@ -370,6 +370,22 @@
    "title": "Tín hiệu trend cho clip-03 (rule-57)"
   },
   {
+   "id": "clip-04.readme",
+   "type": "readme",
+   "status": "draft",
+   "updated": "2026-10-18",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/README.md",
+   "title": "clip-04: Gấp sách tự kiểm (HTB 23.14)"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-18",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md",
+   "title": "Clip 04 v1 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
@@ -2088,6 +2104,15 @@
    "files": [
     "README.md",
     "archive",
+    "final"
+   ]
+  },
+  {
+   "id": "clip-04",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem",
+   "theme": null,
+   "files": [
+    "README.md",
     "final"
    ]
   }
