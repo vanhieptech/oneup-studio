@@ -7,7 +7,8 @@ export interface DoodleCue {
   at?: number; duration?: number; color?: string; seed?: number; width?: number; points?: Pt[];
 }
 
-/** One hand-drawn mark drawing itself on over `duration`s starting at `at` (scene time).
+/** Brand-fit (L-047): thin refined accent stroke (default 7px @1080, opacity .92), low jitter in doodle.ts — designed, not sketchy.
+ *  One hand-drawn mark drawing itself on over `duration`s starting at `at` (scene time).
  *  Deterministic: same cue + frame = same pixels (anidoodle contract, L-047). */
 export const Doodle: React.FC<{ cue: DoodleCue; t: number }> = ({ cue, t }) => {
   const at = cue.at ?? 0, dur = cue.duration ?? 0.6;
@@ -17,7 +18,7 @@ export const Doodle: React.FC<{ cue: DoodleCue; t: number }> = ({ cue, t }) => {
   const total = subs.reduce((a, s) => a + pathLength(s), 0) || 1;
   let spent = 0;
   return (
-    <g fill="none" stroke={cue.color ?? BRAND.accent} strokeWidth={cue.width ?? 10} strokeLinecap="round" strokeLinejoin="round" opacity={0.96}>
+    <g fill="none" stroke={cue.color ?? BRAND.accent} strokeWidth={cue.width ?? 7} strokeLinecap="round" strokeLinejoin="round" opacity={0.92}>
       {subs.map((pts, i) => {
         const len = pathLength(pts), local = Math.max(0, Math.min(1, (p * total - spent) / (len || 1))); spent += len;
         if (local <= 0) return null;

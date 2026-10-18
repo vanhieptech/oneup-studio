@@ -85,7 +85,7 @@ export const SceneSchema = z.object({
     w: z.number().positive(), h: z.number().positive(),
     at: seconds.default(0), duration: z.number().finite().positive().default(0.6),
     color: z.string().optional(), seed: z.number().int().default(7),
-    width: z.number().positive().default(10),
+    width: z.number().positive().default(7),
     points: z.array(z.tuple([z.number(), z.number()])).optional(),
   })).default([]),
   beat: z.string().optional().describe("repo beat id, e.g. clip-01.b02"),

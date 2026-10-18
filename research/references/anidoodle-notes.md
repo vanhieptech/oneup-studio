@@ -40,7 +40,9 @@ Apache-2.0 (`LICENSE`, Copyright 2026 Alex Greenshpun) + `NOTICE`. Third-party i
 | `doodle-sketch-box` | sketch-box | khung sticky-note tự vẽ ra thay vì pop-in |
 | `doodle-path` | path | đường tự do (sợi dây, lộ trình) bằng `points[]` |
 
-Schema/validate: `scene.doodles[]` in `validation/schema.ts` (`DOODLE_KINDS`, shared list — L-042), semantic checks in `validate.ts` (draw-on must end inside the scene, `path` needs points, caption-band warning y>1400). Rendered by `SceneRenderer` inside the comic SVG. Stroke defaults: `BRAND.accent`, width 10, design px 1080-wide, seed cố định/cue.
+Schema/validate: `scene.doodles[]` in `validation/schema.ts` (`DOODLE_KINDS`, shared list — L-042), semantic checks in `validate.ts` (draw-on must end inside the scene, `path` needs points, caption-band warning y>1400). Rendered by `SceneRenderer` inside the comic SVG. Stroke defaults: `BRAND.accent` (#FF5A36), width **7** (đổi từ 10 ngày 18/10), opacity .92, jitter 1.2–1.4px, design px 1080-wide, seed cố định/cue.
+
+**Brand-fit (L-047, Hiệp chê demo đầu «Quá xấu»):** demo đầu (`doodle-demo2.json`, 7 nét dồn trên giấy trơn, không nhân vật/bảng/caption) bị loại vì rời design system. Bản chuẩn `video-engine/examples/doodle-demo-brand.json` (10,5s, 2 cảnh theo grammar clip-03 b03/b07: nền grid/bed, Thầy chibi, sign `DỌN PHÒNG`/`~15' / VIỆC`, words, bong bóng thoại, caption plate, logo) chỉ dùng 2 nét: circle quanh sign + underline dưới sign. Quy trình bắt buộc: render still frames → tự nhìn so với contact-sheet clip thật → mới render video.
 
 ## 5. Not adopted (duplicates / out of scope)
 - 32 full art styles + canvas engine: comic look của kênh đã có rig/brand riêng; port nguyên engine sẽ trùng và nặng.

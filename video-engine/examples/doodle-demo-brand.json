@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "id": "doodle-demo-brand",
+  "title": "Doodle brand-fit demo — clip-03 grammar (L-047)",
+  "meta": {
+    "clip": "clip-03",
+    "source": "examples/doodle-demo-brand.json"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "theme": "dark"
+  },
+  "scenes": [
+    {
+      "id": "d1",
+      "beat": "clip-03.b03",
+      "duration": 5,
+      "background": {
+        "kind": "grid"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0.06
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.4
+      },
+      "characters": [
+        {
+          "characterId": "hiep",
+          "x": 0.74,
+          "pose": "standing",
+          "action": "talking",
+          "expression": "confused",
+          "facing": "left",
+          "enter": "none",
+          "expressionChanges": [],
+          "actionChanges": []
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "hiep",
+          "text": "Việc đó chỉ có **một cái tên to đùng** thôi.",
+          "start": 0.2,
+          "end": 4.8,
+          "emotion": "confused"
+        }
+      ],
+      "caption": {
+        "text": "It's just one huge name.",
+        "start": 0.2,
+        "segments": [
+          {
+            "text": "It's just one huge name.",
+            "start": 0.2,
+            "end": 4.8,
+            "highlight": [
+              3
+            ]
+          }
+        ]
+      },
+      "props": [
+        {
+          "kind": "sign",
+          "x": 540,
+          "y": 340,
+          "s": 0.75,
+          "rot": -3,
+          "text": "DỌN PHÒNG",
+          "at": 0.3
+        }
+      ],
+      "doodles": [
+        {
+          "kind": "circle",
+          "x": 350,
+          "y": 262,
+          "w": 380,
+          "h": 150,
+          "at": 1.4,
+          "duration": 0.7,
+          "seed": 11,
+          "width": 7
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "beat": "clip-03.b07",
+      "duration": 5.5,
+      "background": {
+        "kind": "bed"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0.06
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.4
+      },
+      "characters": [
+        {
+          "characterId": "hiep",
+          "x": 0.74,
+          "pose": "standing",
+          "action": "talking",
+          "expression": "happy",
+          "facing": "left",
+          "enter": "none",
+          "expressionChanges": [],
+          "actionChanges": []
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "hiep",
+          "text": "Mình ghi ra ba việc nhỏ, mỗi việc chừng **mười lăm phút**.",
+          "start": 0.2,
+          "end": 5.3,
+          "emotion": "happy"
+        }
+      ],
+      "caption": {
+        "text": "I write three small tasks, about 15 minutes each.",
+        "start": 0.2,
+        "segments": [
+          {
+            "text": "I write three small tasks, about 15 minutes each.",
+            "start": 0.2,
+            "end": 5.3,
+            "highlight": [
+              8
+            ]
+          }
+        ]
+      },
+      "props": [
+        {
+          "kind": "words",
+          "x": 280,
+          "y": 880,
+          "s": 0.5,
+          "words": [
+            "DỌN GHẾ",
+            "LAU BÀN",
+            "ĐỔ RÁC"
+          ],
+          "dropAt": [
+            1.0,
+            2.0,
+            3.0
+          ]
+        },
+        {
+          "kind": "sign",
+          "x": 280,
+          "y": 1190,
+          "s": 0.45,
+          "rot": 2,
+          "text": "~15' / VIỆC",
+          "at": 3.6
+        }
+      ],
+      "doodles": [
+        {
+          "kind": "underline",
+          "x": 185,
+          "y": 1232,
+          "w": 190,
+          "h": 24,
+          "at": 3.9,
+          "duration": 0.5,
+          "seed": 5,
+          "width": 7
+        }
+      ]
+    }
+  ]
+}

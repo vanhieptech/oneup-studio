@@ -47,23 +47,23 @@ export function doodlePaths(kind: DoodleKind, x: number, y: number, w: number, h
   switch (kind) {
     case "circle": {
       const ctrl: Pt[] = Array.from({ length: 12 }, (_, i) => { const a = -1.9 + (i / 12) * Math.PI * 2; return [cx + Math.cos(a) * w / 2, cy + Math.sin(a) * h / 2] as Pt; });
-      return [samplePts(jitterPts(ctrl, 3, seed), true, 6)];
+      return [samplePts(jitterPts(ctrl, 1.4, seed), true, 6)];
     }
-    case "underline": return [samplePts(jitterPts([[x, cy], [cx, cy + h * 0.35], [x + w, cy]] as Pt[], 2.5, seed), false, 8)];
+    case "underline": return [samplePts(jitterPts([[x, cy], [cx, cy + h * 0.35], [x + w, cy]] as Pt[], 1.2, seed), false, 8)];
     case "arrow": {
-      const shaft = samplePts(jitterPts([[x, cy], [cx, cy - h * 0.3], [x + w, cy]] as Pt[], 2.5, seed), false, 8);
+      const shaft = samplePts(jitterPts([[x, cy], [cx, cy - h * 0.3], [x + w, cy]] as Pt[], 1.2, seed), false, 8);
       const tip: Pt = [x + w, cy], head = Math.max(18, Math.min(w, h) * 0.45);
       return [shaft, [[tip[0] - head, tip[1] - head * 0.55], tip] as Pt[], [[tip[0] - head * 0.9, tip[1] + head * 0.6], tip] as Pt[]];
     }
-    case "check": return [samplePts(jitterPts([[x, cy], [x + w * 0.38, y + h], [x + w, y]] as Pt[], 2.5, seed), false, 6)];
+    case "check": return [samplePts(jitterPts([[x, cy], [x + w * 0.38, y + h], [x + w, y]] as Pt[], 1.2, seed), false, 6)];
     case "cross": return [
-      samplePts(jitterPts([[x, y], [x + w, y + h]] as Pt[], 2.5, seed), false, 6),
-      samplePts(jitterPts([[x + w, y], [x, y + h]] as Pt[], 2.5, seed + 3), false, 6),
+      samplePts(jitterPts([[x, y], [x + w, y + h]] as Pt[], 1.2, seed), false, 6),
+      samplePts(jitterPts([[x + w, y], [x, y + h]] as Pt[], 1.2, seed + 3), false, 6),
     ];
     case "sketch-box": {
       const r = Math.min(28, w / 4, h / 4), ctrl: Pt[] = [[x + r, y], [x + w - r, y], [x + w, y + r], [x + w, y + h - r], [x + w - r, y + h], [x + r, y + h], [x, y + h - r], [x, y + r]];
-      return [samplePts(jitterPts(ctrl, 3, seed), true, 5)];
+      return [samplePts(jitterPts(ctrl, 1.4, seed), true, 5)];
     }
-    case "path": return points && points.length > 1 ? [samplePts(jitterPts(points, 2, seed), false, 6)] : [];
+    case "path": return points && points.length > 1 ? [samplePts(jitterPts(points, 1, seed), false, 6)] : [];
   }
 }
