@@ -1,0 +1,874 @@
+{
+  "actor": "clockworks/tiktok-scraper",
+  "run_id": "N2Peq658RINF7MURa",
+  "item_count": 6,
+  "fields_coverage": {
+    "url": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "caption": {
+      "present": 5,
+      "of": 6,
+      "pct": 83.3
+    },
+    "author": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "play_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "like_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "share_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "comment_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "duration_s": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "music": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "hashtags": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "subtitle_or_transcript": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "top_comments": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    }
+  },
+  "clips": [
+    {
+      "url": "https://www.tiktok.com/@hoang_hao209/video/7654547690730114322",
+      "caption": "",
+      "author": {
+        "id": "7049163032937759746",
+        "name": "hoang_hao209",
+        "nick": "Hào Móm Cuti",
+        "profile": "https://www.tiktok.com/@hoang_hao209",
+        "fans": 43200
+      },
+      "play_count": 1400000,
+      "like_count": 82800,
+      "share_count": 268000,
+      "comment_count": 1833,
+      "duration_s": 14,
+      "music": {
+        "id": "7289403842511604482",
+        "name": "nhạc nền",
+        "author": "Nhìn Một Ra Mười",
+        "original": true
+      },
+      "hashtags": [],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.000 --> 00:00:02.600\ntop những dấu hiệu nhận biết những đứa đang bị nghiện điện\n\n00:00:02.640 --> 00:00:05.600\nthoại top một là mày đó\n\n00:00:06.160 --> 00:00:08.320\nơi là trời mày đợi Tao nói mấy cái dấu hiệu nữa hả\n\n00:00:08.600 --> 00:00:09.400\nmày hông biết hả\n\n00:00:10.040 --> 00:00:12.200\nơi là trời suốt ngày mày ôm cái điện thoại đó\n\n00:00:12.600 --> 00:00:13.440\nmày hông biết hay gì\n",
+        "links": [
+          "research/trends/2026-10-18/apify/vtt/subtitle-hoang_hao2-20260623111437-7654547690730114322-vie-VN.vtt"
+        ],
+        "file": "subtitle-hoang_hao2-20260623111437-7654547690730114322-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "đời bố,bố quản",
+          "likes": 2429,
+          "author": "anhnguyet_xiu"
+        },
+        {
+          "text": "sáng: dth\ntrưa: dth\nchiều: dth\ntối: dth",
+          "likes": 421,
+          "author": "_yeu352"
+        },
+        {
+          "text": "vừa ăn vừa xem:))",
+          "likes": 89,
+          "author": "tranthithu_1303"
+        },
+        {
+          "text": "ai còn thức ko",
+          "likes": 39,
+          "author": "danhthiminhthu161"
+        },
+        {
+          "text": ":đời bố bố,quản ok",
+          "likes": 12,
+          "author": "phc.phm.vn050"
+        },
+        {
+          "text": "ai còn thức ôn",
+          "likes": 12,
+          "author": "piusociu0"
+        },
+        {
+          "text": "đời bố bố quản",
+          "likes": 11,
+          "author": "tin.v.hong.thanh"
+        },
+        {
+          "text": "ko cho mình dùng Ipad",
+          "likes": 10,
+          "author": "qnw_.nhu"
+        },
+        {
+          "text": "Kệ kaooo kệ m kệ m kệ kaoo",
+          "likes": 10,
+          "author": "phuonganh.91097"
+        },
+        {
+          "text": "chứ có ai đâu mà chơi 😊😊",
+          "likes": 7,
+          "author": "honghuy6960"
+        },
+        {
+          "text": "Ai còn thức k",
+          "likes": 7,
+          "author": "bolam314"
+        },
+        {
+          "text": "đời tao , tao quản",
+          "likes": 6,
+          "author": "vntinng94"
+        },
+        {
+          "text": "đời bố,bố quản",
+          "likes": 6,
+          "author": "emnhoah62"
+        },
+        {
+          "text": "sáng: đth\ntrưa: tivi\nchiều: đth\ntối: đth",
+          "likes": 5,
+          "author": "kimtran5130"
+        },
+        {
+          "text": "bt r",
+          "likes": 5,
+          "author": "tara.z20"
+        },
+        {
+          "text": "sáng dth,trưa dt,chiều dth,tối dth,khuya dth,nghiện chỗ nào vậy",
+          "likes": 5,
+          "author": "trucmoinoi"
+        },
+        {
+          "text": "đời bố, bố quản",
+          "likes": 5,
+          "author": "thuybui1121"
+        },
+        {
+          "text": "đời bố,bố quản",
+          "likes": 3,
+          "author": "khahanne46"
+        },
+        {
+          "text": "còn ông đang cầm cái gì",
+          "likes": 2,
+          "author": "huyminh8382"
+        },
+        {
+          "text": "Laura Cà Phê của chị Nhật Kim Anh là một thương hiệu cà phê được xây dựng với mong muốn mang đến cho khách hàng những sản phẩm chất lượng, hương vị thơm ngon và trải nghiệm thưởng thức trọn vẹn. Thương hiệu luôn chú trọng từ khâu lựa chọn nguyên liệu, quy trình rang xay đến đóng gói nhằm giữ được hương thơm tự nhiên và vị cà phê đậm đà. Mỗi ly cà phê không chỉ là một thức uống quen thuộc mà còn thể hiện sự tâm huyết, chỉn chu và trách nhiệm trong từng công đoạn sản xuất, góp phần mang đến những trải nghiệm đáng nhớ cho người thưởng thức.\nCà phê từ lâu đã trở thành một phần không thể thiếu trong đời sống của người Việt Nam. Một ly cà phê vào buổi sáng giúp khởi đầu ngày mới với nguồn năng lượng tích cực, trong khi một tách cà phê vào buổi chiều lại mang đến cảm giác thư giãn sau những giờ học tập và làm việc căng thẳng. Không chỉ là thức uống, cà phê còn là cầu nối cho những buổi gặp gỡ, trò chuyện và sẻ chia giữa gia đình, bạn bè và đồng nghiệp. Hiểu được những giá trị đó, Laura Cà Phê luôn mong muốn mang đến những sản phẩm chất lượng, phù hợp với nhiều đối tượng khách hàng và góp phần lan tỏa văn hóa thưởng thức cà phê Việt Nam.\nBên cạnh việc chú trọng đến chất lượng sản phẩm, Laura Cà Phê của chị Nhật Kim Anh còn hướng đến việc xây dựng niềm tin với khách hàng bằng sự tận tâm và không ngừng cải tiến. Thương hiệu luôn lắng nghe những ý kiến đóng góp để hoàn thiện sản phẩm, nâng cao chất lượng và mang đến trải nghiệm tốt hơn cho người tiêu dùng. Với định hướng phát triển bền vững, Laura Cà Phê mong muốn trở thành một thương hiệu được nhiều người yêu thích và lựa chọn. Mỗi sản phẩm đều chứa đựng sự chăm chút, niềm đam mê và mong muốn mang đến những giá trị tích cực cho cuộc sống. Trong tương lai, Laura Cà Phê hy vọng sẽ tiếp tục phát triển, đưa hương vị cà phê Việt Nam đến gần hơn với nhiều khách hàng trong và ngoài nước, đồng thời khẳng định chất lượng và uy tín của thương hiệu trên thị trường.",
+          "likes": 1,
+          "author": "antiwibu164"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7654547690730114322",
+      "create_time": "2026-06-23T11:14:37.000Z",
+      "is_slideshow": false,
+      "caption_note": "TikTok gốc không có caption (trường rỗng ở nguồn); nội dung xem subtitle_or_transcript (VTT)"
+    },
+    {
+      "url": "https://www.tiktok.com/@code.3.1/video/7664080768288738591",
+      "caption": "Dấu hiệu cho thấy bạn đã nghiện điện thoại #shorts",
+      "author": {
+        "id": "7491246408000848939",
+        "name": "code.3.1",
+        "nick": "Code 3",
+        "profile": "https://www.tiktok.com/@code.3.1",
+        "fans": 8456
+      },
+      "play_count": 315200,
+      "like_count": 6476,
+      "share_count": 3362,
+      "comment_count": 158,
+      "duration_s": 22,
+      "music": {
+        "id": "7664080771979758366",
+        "name": "original sound - Code 3",
+        "author": "Code 3",
+        "original": true
+      },
+      "hashtags": [
+        "shorts"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:00.960\nđây là những dấu hiệu Cho\n\n00:00:01.000 --> 00:00:02.240\nthấy bạn đã nghiện điện thoại quá nặng\n\n00:00:02.360 --> 00:00:03.960\nđầu tiên là vừa mở mắt Ra một cái\n\n00:00:04.080 --> 00:00:05.640\nchưa kịp đánh răng rửa mặt hay gì cả\n\n00:00:05.800 --> 00:00:08.040\nviệc đầu tiên bạn làm là đưa Tay tìm điện thoại cái đã\n\n00:00:08.200 --> 00:00:09.560\ntiếp Theo là dùng điện thoại cả ngày\n\n00:00:09.760 --> 00:00:11.280\ntừ lúc nằm nghỉ Cho đến lúc ăn cơm\n\n00:00:11.400 --> 00:00:13.000\nthậm trí đi ẻ cũng phải mang điện thoại Theo\n\n00:00:13.160 --> 00:00:13.520\nkhông cầm\n\n00:00:13.521 --> 00:00:15.641\nvài phút thôi là cảm giác như thiếu thiếu cái gì đó\n\n00:00:15.800 --> 00:00:17.240\nvà cuối cùng là buồn ngủ lắm rồi\n\n00:00:17.241 --> 00:00:19.641\nnhưng không hiểu vì SAO bạn vẫn cố mở mắt xem Cho bằng được\n\n00:00:19.800 --> 00:00:21.120\nthậm chí Tay vẫn đang cầm điện thoại\n\n00:00:21.160 --> 00:00:22.600\nmà mắt đã nhắm từ lúc nào không hay\n",
+        "links": [
+          "research/trends/2026-10-18/apify/vtt/subtitle-code31-20260719034751-7664080768288738591-vie-VN.vtt"
+        ],
+        "file": "subtitle-code31-20260719034751-7664080768288738591-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "y trang luôn",
+          "likes": 115,
+          "author": "ngc.tute7"
+        },
+        {
+          "text": "ko nghiện sao xem đc cái này",
+          "likes": 16,
+          "author": "bao_____213"
+        },
+        {
+          "text": "đt tao t dùng",
+          "likes": 10,
+          "author": "tolaqanh36"
+        },
+        {
+          "text": "Đời bố, bố quản",
+          "likes": 4,
+          "author": "vutrongthanh06"
+        },
+        {
+          "text": "đời bố bố quản",
+          "likes": 4,
+          "author": "fan.khanhlinh5"
+        },
+        {
+          "text": "lấy đt buổi sang lúc mới đấy để cứu lấy mình đó tránh đột quỵ á có 10 ca đột quỵ thì 9 ca bị buổi sáng r á",
+          "likes": 2,
+          "author": "anhxicola39"
+        },
+        {
+          "text": "đời t, t quản",
+          "likes": 2,
+          "author": "kimchi.3690"
+        },
+        {
+          "text": "nói câu nào nhộn câu đó🥰",
+          "likes": 1,
+          "author": "nqocmaii_17"
+        },
+        {
+          "text": "ê tao cg thế",
+          "likes": 1,
+          "author": "bobidien13"
+        },
+        {
+          "text": "y trang luôn á",
+          "likes": 1,
+          "author": "b.n16748"
+        },
+        {
+          "text": "ủa ê saoo miuu tả y changg tuii v 😭",
+          "likes": 0,
+          "author": "tukuda695"
+        },
+        {
+          "text": "giong t",
+          "likes": 0,
+          "author": "vtpthaover01"
+        },
+        {
+          "text": "ko mẹ tao lâu lâu mới cho coi hihi",
+          "likes": 0,
+          "author": "c.t.t.cam2016"
+        },
+        {
+          "text": "đời bố bố quản",
+          "likes": 0,
+          "author": "xauvatoiday"
+        },
+        {
+          "text": "không phãi",
+          "likes": 0,
+          "author": "chiu.thu27"
+        },
+        {
+          "text": "doi bo bo quan",
+          "likes": 0,
+          "author": "kahmiiiuu"
+        },
+        {
+          "text": "Đời Bố Bố Quản",
+          "likes": 0,
+          "author": "thanhlan_768"
+        },
+        {
+          "text": "ê t nhột",
+          "likes": 0,
+          "author": "cocucbibaothoicungkocho"
+        },
+        {
+          "text": "bố mẹ tao mà coi được thôi xong tao luôn",
+          "likes": 0,
+          "author": "lmtp38"
+        },
+        {
+          "text": "Tui : xem điện thoại mỗi ngày✘,đi học mỗi ngày ✔",
+          "likes": 0,
+          "author": "mutsumiyozakuza"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7664080768288738591",
+      "create_time": "2026-07-19T03:47:51.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@naobatmode/video/7584985930407169298",
+      "caption": "7 bài tập rèn luyện trí não giúp khả năng tập trung tăng vọt chỉ với vài phút mỗi ngày\n#LearnOnTikTok #studywithme #naobatmode #videoviral #viralsvideo #tiktok #xuhuongtiktok #rentrinao",
+      "author": {
+        "id": "6874506922662691841",
+        "name": "naobatmode",
+        "nick": "Não Bật Mode",
+        "profile": "https://www.tiktok.com/@naobatmode",
+        "fans": 60700
+      },
+      "play_count": 558900,
+      "like_count": 42600,
+      "share_count": 5406,
+      "comment_count": 490,
+      "duration_s": 605,
+      "music": {
+        "id": "7584986116453960466",
+        "name": "nhạc nền - Não Bật Mode",
+        "author": "Não Bật Mode",
+        "original": true
+      },
+      "hashtags": [
+        "LearnOnTikTok",
+        "studywithme",
+        "naobatmode",
+        "videoviral",
+        "viralsvideo",
+        "tiktok",
+        "xuhuongtiktok",
+        "rentrinao"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:02.720\nhôm nay tôi muốn mời bạn bước vào một hành trình cực thú vị\n\n00:00:02.880 --> 00:00:04.640\n7 bài tập đặc biệt dành Cho não bộ\n\n00:00:04.720 --> 00:00:06.640\nnhững bài tập không phải dạng lý thuyết nhàm chán\n\n00:00:06.840 --> 00:00:07.640\nkhông phải thiền\n\n00:00:07.680 --> 00:00:10.040\nkhông phải hít thở mà là những hoạt động vui lạ\n\n00:00:10.280 --> 00:00:12.600\nkích thích và thực sự giúp não bạn sắc bén từng ngày\n\n00:00:13.160 --> 00:00:15.560\nnếu bạn đã từng cảm thấy mình mất tập trung hay quên\n\n00:00:15.720 --> 00:00:18.160\ndễ SAO nhãng hoặc đôi khi đầu óc như lắc nhẹ\n\n00:00:18.480 --> 00:00:19.920\nthì video này đúng là dành Cho bạn\n\n00:00:20.200 --> 00:00:22.640\ncòn nếu bạn tự tin rằng não mình đã đủ nhanh nhạy\n\n00:00:22.880 --> 00:00:25.720\ntuyệt vậy chúng ta hãy thử đọ sức với 7 thử thách này\n\n00:00:25.721 --> 00:00:28.361\nxem trí não của bạn đang ở cấp độ nào và quan trọng hơn\n\n00:00:28.480 --> 00:00:30.760\nxem bạn có thể nâng cấp nó lên một tầm mới hay không\n\n00:00:32.200 --> 00:00:33.360\nbạn biết điều thú vị không\n\n00:00:33.680 --> 00:00:36.000\ncon người thường dành cả đời để chăm chút Cho cơ thể\n\n00:00:36.120 --> 00:00:37.080\ntập gym ăn kiêng\n\n00:00:37.360 --> 00:00:37.960\nskincare\n\n00:00:37.961 --> 00:00:40.121\nnhưng lại quên mất một trong những bộ phận quan trọng nhất\n\n00:00:40.240 --> 00:00:43.440\nbộ não trong khi đó não bộ cũng giống như cơ bắp\n\n00:00:43.680 --> 00:00:44.680\nkhông luyện tập chậm chạp\n\n00:00:45.200 --> 00:00:46.840\nluyện tập đúng cách bén như dao cạo\n\n00:00:47.360 --> 00:00:48.280\nvà điều tuyệt vời là\n\n00:00:48.281 --> 00:00:50.281\nnhững bài tập trong video này không hề phức tạp\n\n00:00:50.400 --> 00:00:52.080\ncũng không cần dụng cụ nào đặc biệt\n\n00:00:52.360 --> 00:00:54.520\nbạn có thể làm ngay tại nhà bất cứ lúc nào\n\n00:00:54.800 --> 00:00:56.400\nthậm chí khi đang rảnh Tay năm phút\n\n00:00:56.960 --> 00:00:58.800\nnào chúng ta cùng bắt đầu thử thách đầu tiên\n\n00:00:59.160 --> 00:01:02.880\nmột bài tập bảng số sô ti bùng nổ tốc độ xử lý thông tin\n\n00:01:03.200 --> 00:01:04.360\nhãy tưởng tượng ngay lúc này\n\n00:01:04.520 --> 00:01:07.040\ntrước mắt bạn xuất hiện một bảng số 136\n\n00:01:07.280 --> 00:01:09.000\nnhưng không hề xếp Theo trật tự quen thuộc\n\n00:01:09.480 --> 00:01:11.040\ntất cả đều bị xáo trộn hoàn toàn\n\n00:01:11.240 --> 00:01:12.600\nrối như một mê cung thị giác\n\n00:01:13.120 --> 00:01:14.920\nnhiệm vụ của bạn nghe thì cực kỳ đơn giản\n\n00:01:15.040 --> 00:01:16.800\nnhưng thực tế lại căng não đến nghẹt thở\n\n00:01:17.200 --> 00:01:19.080\ntìm tất cả các số Theo thứ tự tăng dần\n\n00:01:19.160 --> 00:01:20.280\nchỉ trong vòng 40 giây\n\n00:01:20.840 --> 00:01:21.880\nchỉ 40 giây thôi\n\n00:01:22.280 --> 00:01:23.520\nkhi đồng hồ bắt đầu đếm ngược\n\n00:01:23.680 --> 00:01:25.920\nbạn sẽ cảm nhận rõ ràng não mình bị kéo căng\n\n00:01:26.280 --> 00:01:27.520\nánh mắt lướt nhanh không ngừng\n\n00:01:27.880 --> 00:01:29.800\nnão liên tục sàng lọc và xử lý thông tin\n\n00:01:30.120 --> 00:01:31.920\nsự tập trung được đẩy lên mức tối đa\n\n00:01:32.240 --> 00:01:33.000\nvà đặc biệt\n\n00:01:33.001 --> 00:01:34.961\nthị giác ngoại VI bắt đầu được kích hoạt mạnh mẽ\n\n00:01:35.240 --> 00:01:36.560\nđây không chỉ là một trò chơi\n\n00:01:37.160 --> 00:01:39.040\nđây là bài tập tăng tốc độ xử lý thông tin\n\n00:01:39.240 --> 00:01:40.200\nthứ mà người bận rộn\n\n00:01:40.360 --> 00:01:41.160\nngười học nhiều\n\n00:01:41.161 --> 00:01:43.761\nngười làm việc áp lực Cao cần không khác gì oxy để thở\n\n00:01:44.320 --> 00:01:46.000\ncác nghiên cứu khoa học đã chỉ Ra rằng\n\n00:01:46.040 --> 00:01:48.440\nnhững bài tập buộc não nhận diện mẫu nhanh và phản ứng\n\n00:01:48.520 --> 00:01:49.320\ntức thì sẽ giúp\n\n00:01:49.640 --> 00:01:51.040\ntăng tốc truyền tín hiệu thần kinh\n\n00:01:51.400 --> 00:01:52.720\ncải thiện khả năng tập trung sâu\n\n00:01:53.040 --> 00:01:54.840\nvà nâng Cao độ nhạy bén của tư duy\n\n00:01:55.160 --> 00:01:58.440\nnếu bạn chưa kịp tìm hết các con số trong 40 giây đừng lo\n\n00:01:58.760 --> 00:01:59.960\nđiều đó hoàn toàn bình thường\n\n00:02:00.560 --> 00:02:02.360\ntin tốt là não bộ học rất nhanh\n\n00:02:02.640 --> 00:02:03.840\nchỉ cần luyện tập đều đặn\n\n00:02:03.960 --> 00:02:04.920\nbạn sẽ thấy tốc độ\n\n00:02:04.960 --> 00:02:07.000\nvà độ chính xác cải thiện rõ rệt sau từng ngày\n\n00:02:07.640 --> 00:02:09.880\ngợi ý nhỏ lên Google và gõ story table\n\n00:02:10.160 --> 00:02:12.800\nbạn sẽ tìm thấy hàng loạt phiên bản từ cơ bản đến nâng Cao\n\n00:02:12.920 --> 00:02:14.480\nđể thử thách não bộ của mình mỗi ngày\n\n00:02:14.760 --> 00:02:15.800\n2 bài tập chữ màu\n\n00:02:16.000 --> 00:02:17.800\nthách thức tư duy và tăng khả năng đa nhiệm\n\n00:02:18.160 --> 00:02:19.600\nđây là một bài tập cực kỳ thú vị\n\n00:02:19.680 --> 00:02:21.800\nđược xây dựng dựa trên hiệu ứng group nổi tiếng\n\n00:02:21.920 --> 00:02:23.320\nmột hiện tượng khiến não bộ vấp\n\n00:02:23.360 --> 00:02:25.120\nngay cả khi bạn nghĩ mình đang rất tỉnh táo\n\n00:02:25.720 --> 00:02:28.360\ntrước mắt bạn sẽ xuất hiện những từ quen thuộc như đỏ xanh\n\n00:02:28.440 --> 00:02:29.840\nvàng nhưng khoan đã\n\n00:02:30.240 --> 00:02:31.960\nchúng không hề được viết bằng đúng màu của mình\n\n00:02:32.240 --> 00:02:34.320\nví dụ là chữ đỏ lại mang màu xanh\n\n00:02:34.880 --> 00:02:36.160\nchữ vàng lại mang màu tím\n\n00:02:36.720 --> 00:02:38.200\nvà nhiệm vụ của bạn chỉ có một\n\n00:02:38.440 --> 00:02:39.440\nnói Ra màu của chữ\n\n00:02:39.680 --> 00:02:42.200\ntuyệt đối không đọc nội Dũng nghe thì đơn giản\n\n00:02:42.320 --> 00:02:43.160\nnhưng ngay khi bắt đầu\n\n00:02:43.200 --> 00:02:45.240\nnão bạn sẽ lập tức rơi vào một cuộc rằng co\n\n00:02:45.680 --> 00:02:46.600\nmắt thì nhìn thấy chữ\n\n00:02:46.960 --> 00:02:48.200\nnão thì tự động đọc nghĩa\n\n00:02:48.480 --> 00:02:50.720\nnhưng miệng lại bị buộc phải nói màu chính\n\n00:02:50.721 --> 00:02:52.001\nsự xung đột thông tin này khiến não\n\n00:02:52.080 --> 00:02:53.240\nkhông thể chạy Theo thói quen cũ\n\n00:02:53.241 --> 00:02:54.761\nnó buộc phải chậm lại\n\n00:02:54.880 --> 00:02:55.960\nphân tách thông tin và tập\n\n00:02:56.000 --> 00:02:57.400\ntrung thật sự vào nhiệm vụ đang làm\n\n00:02:57.960 --> 00:02:59.560\nđây là lúc não được rèn luyện sâu\n\n00:02:59.720 --> 00:03:01.920\ngiúp tăng mạnh khả năng tập trung có chủ đích\n\n00:03:02.240 --> 00:03:03.040\nthì nhớ làm việc\n\n00:03:03.320 --> 00:03:05.240\nnăng lực xử lý đa nhiệm và phản xạ\n\n00:03:05.320 --> 00:03:07.040\ntư duy linh hoạt trong tình huống nhiễu loạn\n\n00:03:07.400 --> 00:03:09.360\nhầu hết mọi người khi làm bài này lần đầu đều\n\n00:03:09.480 --> 00:03:10.280\nnói Sai liên tục\n\n00:03:10.720 --> 00:03:11.520\nnhưng đừng nản\n\n00:03:11.521 --> 00:03:13.201\nđó không phải dấu hiệu của sự yếu kém\n\n00:03:13.400 --> 00:03:14.520\nmà là dấu hiệu Cho thấy não\n\n00:03:14.800 --> 00:03:17.320\nbạn đang bị đẩy Ra khỏi vùng an toàn và bắt đầu phát triển\n\n00:03:17.880 --> 00:03:20.760\ncàng luyện tập bạn sẽ càng nhận Ra não mình nhanh hơn\n\n00:03:21.000 --> 00:03:23.200\ntỉnh hơn và kiểm soát suy nghĩ tốt hơn từng ngày\n\n00:03:23.760 --> 00:03:25.080\nphải làm việc bằng Tay không thuận\n\n00:03:25.200 --> 00:03:26.440\ntạo đường dẫn thần kinh mới\n\n00:03:26.720 --> 00:03:29.120\nnếu bạn thật sự muốn làm não mình giật mình tỉnh giấc\n\n00:03:29.440 --> 00:03:31.120\nthì đây chính là bài tập không nên bỏ qua\n\n00:03:31.680 --> 00:03:33.440\nhãy bắt đầu bằng một việc rất đơn giản\n\n00:03:33.680 --> 00:03:35.720\nlàm những điều quen thuộc bằng Tay không thuận\n\n00:03:36.200 --> 00:03:40.560\nví dụ như là bạn đánh răng mở cửa ăn uống viết vài chữ\n\n00:03:41.640 --> 00:03:45.400\nngay khoảnh khắc đó bạn sẽ cảm nhận rõ sự khó chịu nho nhỏ\n\n00:03:45.960 --> 00:03:48.840\nvà tin tôi đi đó chính là dấu hiệu não bộ đang bị đánh thức\n\n00:03:49.400 --> 00:03:52.240\nbởi vì khi đổi Tay não không thể dùng chế độ tự động nữa\n\n00:03:52.800 --> 00:03:54.840\nnó buộc phải phá bỏ những đường dẫn thần kinh cũ\n\n00:03:54.841 --> 00:03:56.761\nđã quen thuộc suốt nhiều năm rồi\n\n00:03:56.762 --> 00:03:57.281\nxây dựng những\n\n00:03:57.282 --> 00:03:58.241\nkết nối hoàn toàn mới\n\n00:03:58.760 --> 00:04:0",
+        "links": [
+          "research/trends/2026-10-18/apify/vtt/subtitle-naobatmode-20251219110000-7584985930407169298-vie-VN.vtt"
+        ],
+        "file": "subtitle-naobatmode-20251219110000-7584985930407169298-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "1 bài tập bảng số shalty\n2 bài tập chữ màu\n3 lm vc = tay ko thuận\n4 bịt mắt\n5 phối hợp tay\n6 giảm phụ thuộc công nghệ\n7 trò chơi luyện não",
+          "likes": 268,
+          "author": "th.juon"
+        },
+        {
+          "text": "Gem play together có hết luon",
+          "likes": 222,
+          "author": "luciandra_"
+        },
+        {
+          "text": "1 , lên google gõ shalty table\n2, bài tập chữ màu\n3, làm mọi thứ bằng tay trái\n4, nhắm mắt\n5, phối hợp tay\n6, tránh cnghe\n7,game logic",
+          "likes": 21,
+          "author": "t_la_khanh_linh"
+        },
+        {
+          "text": "có ai thấy 1,2 giống mấy trò trg Playtoghet ko:)))",
+          "likes": 15,
+          "author": "ngcanhbi4137"
+        },
+        {
+          "text": "Tôi rất thích video này",
+          "likes": 13,
+          "author": "tranthai150206"
+        },
+        {
+          "text": "lướt điện thoại mà tay ko thuận 😆",
+          "likes": 10,
+          "author": "s.a.thien"
+        },
+        {
+          "text": "Sudoku thì sao :)) mk hay chơi",
+          "likes": 6,
+          "author": "likecloudandtomato_61.28"
+        },
+        {
+          "text": "Dạo trc mình hay chơi xếp hình thế là buổi tối cứ đên lúc nhắm mắt đi ngủ là trong đầu lại tự động ghép hình trong đầu luôn 🥰",
+          "likes": 5,
+          "author": "m.m.mng.mng8"
+        },
+        {
+          "text": "Khi buộc tóc, thắt tóc hoặc cài dây áo sau lưng. Tôi đều nhắm mắt mới làm được? Lí do là gì…",
+          "likes": 5,
+          "author": "mina_2201"
+        },
+        {
+          "text": "Cài lumosity luyện não đã lắm nè",
+          "likes": 4,
+          "author": "queen_anne19"
+        },
+        {
+          "text": "cảm ơn bạn🍀",
+          "likes": 3,
+          "author": "cosonnu"
+        },
+        {
+          "text": "hay",
+          "likes": 2,
+          "author": "quan.minh5212"
+        },
+        {
+          "text": "I like this video, it’s so useful with me!",
+          "likes": 1,
+          "author": "ichivn68"
+        },
+        {
+          "text": "sợ hãi",
+          "likes": 1,
+          "author": "anhthubui_20"
+        },
+        {
+          "text": "có hiệu quả",
+          "likes": 1,
+          "author": "toibidao_4"
+        },
+        {
+          "text": "Tôi đang thử",
+          "likes": 1,
+          "author": "saucontim099"
+        },
+        {
+          "text": "hay",
+          "likes": 1,
+          "author": "phuc.yeager5"
+        },
+        {
+          "text": "hello",
+          "likes": 1,
+          "author": "tuan16261"
+        },
+        {
+          "text": "xinchao",
+          "likes": 1,
+          "author": "gia.tng342"
+        },
+        {
+          "text": "Cố gắng nt bằng tay",
+          "likes": 0,
+          "author": "trm.anh.l37"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7584985930407169298",
+      "create_time": "2025-12-19T11:00:00.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@biquyetdodaihoc/video/7620113093401627924",
+      "caption": "lười học quá thì làm sao #LearnOnTikTok #hoccungtiktok #biquyetdodaihoc #lười #học ",
+      "author": {
+        "id": "6938321316936467457",
+        "name": "biquyetdodaihoc",
+        "nick": "Bí quyết đỗ Đại Học Tạ Duy Hải",
+        "profile": "https://www.tiktok.com/@biquyetdodaihoc",
+        "fans": 1500000
+      },
+      "play_count": 110800,
+      "like_count": 9542,
+      "share_count": 2103,
+      "comment_count": 45,
+      "duration_s": 45,
+      "music": {
+        "id": "7620113159667419911",
+        "name": "âm thanh gốc - Bí quyết đỗ Đại Học Tạ Duy Hải",
+        "author": "Bí quyết đỗ Đại Học Tạ Duy Hải",
+        "original": true
+      },
+      "hashtags": [
+        "learnontiktok",
+        "hoccungtiktok",
+        "biquyetdodaihoc",
+        "lười",
+        "học",
+        "LearnOnTikTok"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:02.080\nlười học quá bây giờ làm SAO anh giồi ôi\n\n00:00:02.240 --> 00:00:05.320\nlười cái gì mày biết mà còn bao thời gian không cay đấy\n\n00:00:05.440 --> 00:00:08.280\nđối thủ nó đang cay nó nhảy lên đầu lên cổ nó ngồi Kia kìa\n\n00:00:08.440 --> 00:00:09.800\nbây giờ phải chịu khó lên\n\n00:00:09.920 --> 00:00:11.000\nmuốn đỗ thì về học\n\n00:00:11.080 --> 00:00:14.000\nmuốn chăm thì phải cố gắng chứ không thể nghĩ chán nản\n\n00:00:14.080 --> 00:00:14.680\nlười biếng\n\n00:00:14.681 --> 00:00:16.961\nbây giờ đã không phải là lúc để mình lười nữa rồi\n\n00:00:17.040 --> 00:00:18.840\nvà đừng có bao giờ nghĩ ngày mai mình làm\n\n00:00:19.000 --> 00:00:20.920\nhãy cố gắng làm luôn nghĩ Ra là làm\n\n00:00:21.080 --> 00:00:22.320\ngiờ không phải lúc để chúng ta lười\n\n00:00:22.400 --> 00:00:23.840\nmà cái lúc chúng ta phải cày\n\n00:00:23.920 --> 00:00:24.720\nphải ôn phải luyện\n\n00:00:24.721 --> 00:00:26.041\nthiếu chỗ nào bù vào chỗ đấy\n\n00:00:26.080 --> 00:00:27.560\nkhông được bỏ qua bất cứ cái gì\n\n00:00:27.640 --> 00:00:29.200\nđây là thời gian các bạn phải chịu khó\n\n00:00:29.280 --> 00:00:31.920\nnỗ lực bạn sẽ được đền đáp cái mà mình em xứng đáng\n\n00:00:32.040 --> 00:00:33.040\nchịu khó lên các bạn ơi\n\n00:00:33.160 --> 00:00:36.360\ncó công mài sắt có ngày nên Kim không có gì là không thể cả\n\n00:00:36.600 --> 00:00:37.760\nanh em cố gắng nỗ lực\n\n00:00:37.840 --> 00:00:40.160\ntất cả mọi thứ nó dành Cho các bạn không dành Cho AI đâu\n\n00:00:40.240 --> 00:00:42.240\nhãy cố gắng lên nào bây giờ các bạn làm được\n\n00:00:42.320 --> 00:00:43.240\ncác bạn nghĩ Cho mình\n\n00:00:43.280 --> 00:00:45.320\nchúng nó làm được mình cũng phải làm được anh em nhá\n",
+        "links": [
+          "research/trends/2026-10-18/apify/vtt/subtitle-biquyetdod-20260322161045-7620113093401627924-vie-VN.vtt"
+        ],
+        "file": "subtitle-biquyetdod-20260322161045-7620113093401627924-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "lúc đầu :🥹😭📚📒📝\n5p sau:📱😁😆📱",
+          "likes": 336,
+          "author": "leanhdao0108"
+        },
+        {
+          "text": "chúc ae học tốt nhé bạn",
+          "likes": 78,
+          "author": "biquyetdodaihoc"
+        },
+        {
+          "text": "+1 báo thức😂😂",
+          "likes": 9,
+          "author": "qswujan.011"
+        },
+        {
+          "text": "Anh ơi anh cho em hỏi là em thấy trên mạng có một số trang ghi có thể dùng điểm HSA đổi ra điểm THPT rồi xét vào Thuỷ Lợi cả Xây Dựng được . Nhưng em tra thì thông tin tuyển sinh của trường lại không có HSA . Anh cho em hỏi là như nào mới đúng ạ",
+          "likes": 5,
+          "author": "linhhnhat08"
+        },
+        {
+          "text": "em thi thử 15,5đ mà nv1 23đ còn 2 tháng thì kịp ko amh",
+          "likes": 5,
+          "author": "tungvu.haha"
+        },
+        {
+          "text": "trên titok môn vật lý thầy nào dạy dể hiểu vậy b",
+          "likes": 1,
+          "author": "hai_quan_5"
+        },
+        {
+          "text": "ơ anh đỗ thì thì toán văn anh mà",
+          "likes": 0,
+          "author": "qunh3684"
+        },
+        {
+          "text": "mỗi giỏi tiếng Anh thì chọn nghành thế nào b",
+          "likes": 0,
+          "author": "me_bi_un"
+        },
+        {
+          "text": "a oi , con e di khám sk , 1 chỗ điện tim sức khoẻ loại 2 , có dc thi trường top 1 k ạ",
+          "likes": 0,
+          "author": "luatran345"
+        },
+        {
+          "text": "ok anh🥰",
+          "likes": 0,
+          "author": "doanhongson2k12"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7620113093401627924",
+      "create_time": "2026-03-22T16:10:45.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@kyluat.1/video/7631923883968580885",
+      "caption": "LỘ TRÌNH 30 NGÀY BIẾN MẤT #kyluat1 #phattrienbanthan #xuhuong #kyluatbanthan #dongluc ",
+      "author": {
+        "id": "7624793212490417168",
+        "name": "kyluat.1",
+        "nick": "Kỷ Luật 1%",
+        "profile": "https://www.tiktok.com/@kyluat.1",
+        "fans": 50700
+      },
+      "play_count": 101900,
+      "like_count": 6160,
+      "share_count": 750,
+      "comment_count": 94,
+      "duration_s": 54,
+      "music": {
+        "id": "7631923922016930580",
+        "name": "âm thanh gốc - Kỷ Luật 1%",
+        "author": "Kỷ Luật 1%",
+        "original": false
+      },
+      "hashtags": [
+        "kyluat1",
+        "phattrienbanthan",
+        "xuhuong",
+        "kyluatbanthan",
+        "dongluc"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:02.520\nbạn không cần một năm để thay đổi cuộc đời\n\n00:00:03.000 --> 00:00:05.760\nbạn chỉ cần 30 ngày biến mất\n\n00:00:06.120 --> 00:00:08.360\nđây là lộ trình kỷ luật thép\n\n00:00:08.600 --> 00:00:09.520\nđể bạn trở lại\n\n00:00:09.680 --> 00:00:12.000\nvới một phiên bản khiến AI cũng phải kinh ngạc\n\n00:00:12.360 --> 00:00:13.160\nthứ nhất\n\n00:00:13.280 --> 00:00:16.000\ntuyệt đối không chạm vào điện thoại trong 1 giờ đầu tiên\n\n00:00:16.240 --> 00:00:17.160\nsau khi thức dậy\n\n00:00:17.400 --> 00:00:19.640\nhãy dành thời gian đó để sắp xếp tư duy\n\n00:00:20.160 --> 00:00:22.680\nthứ 2 làm việc sâu trong 4 tiếng\n\n00:00:23.080 --> 00:00:26.440\ntập trung Cao độ không đa nhiệm không thông báo mạng xã hội\n\n00:00:26.800 --> 00:00:28.880\nthứ BA đọc ít nhất\n\n00:00:29.240 --> 00:00:32.640\n20 trang sách mỗi ngày về kỹ năng bạn đang Theo đuổi\n\n00:00:32.880 --> 00:00:33.920\nvà quan trọng nhất\n\n00:00:34.480 --> 00:00:36.160\nngừng giải thích kế hoạch của mình\n\n00:00:36.280 --> 00:00:37.960\nCho những người không cùng chí hướng\n\n00:00:38.240 --> 00:00:40.440\n30 ngày tới sẽ rất cô độc\n\n00:00:40.840 --> 00:00:44.720\nnhưng đó là cái giá phải trả để bước chân vào nhóm 1%\n\n00:00:44.721 --> 00:00:45.521\nnhững người dẫn đầu\n\n00:00:46.000 --> 00:00:48.120\ntôi sẽ đồng hành cùng bạn trong hành trình này\n\n00:00:48.600 --> 00:00:52.400\nnhấn follow để bắt đầu ngày một của quá trình lột xác\n",
+        "links": [
+          "research/trends/2026-10-18/apify/vtt/subtitle-kyluat1-20260424044800-7631923883968580885-vie-VN.vtt"
+        ],
+        "file": "subtitle-kyluat1-20260424044800-7631923883968580885-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Hôm nay ngày 27/4 tôi bắt đầu hành trình 30 ngày này",
+          "likes": 7,
+          "author": "user527173244"
+        },
+        {
+          "text": "tôi đồng ý , bắt đầu ngày hôm nay 27/4/2026",
+          "likes": 2,
+          "author": "dyl387uhyqm3"
+        },
+        {
+          "text": "tôi đồng ý. khởi đầu ngày 27/4/2026",
+          "likes": 2,
+          "author": "ngohuuduy1992"
+        },
+        {
+          "text": "👍👍👍686868",
+          "likes": 1,
+          "author": "thangluong373"
+        },
+        {
+          "text": "E đang xắp xếp nốt hôm nay sẽ off để sắp xép lại kế hoạch của mình thì bắt gặp video nay. Hữu duyên quá ah",
+          "likes": 1,
+          "author": "dolynhatki"
+        },
+        {
+          "text": "29/4-11/6",
+          "likes": 1,
+          "author": "chabitloigi"
+        },
+        {
+          "text": "tào lao",
+          "likes": 1,
+          "author": "hayeu2026"
+        },
+        {
+          "text": "có thật không a",
+          "likes": 1,
+          "author": "user3215784736725"
+        },
+        {
+          "text": "Tôi sẽ làm được và quay trở lại vào ngày 26/5/2026 để bạn thay đổi",
+          "likes": 1,
+          "author": "babyvtc_bry"
+        },
+        {
+          "text": "tôi theo đuổi và kỷ luật bản thân 30 ngày",
+          "likes": 1,
+          "author": "van2602k"
+        },
+        {
+          "text": "",
+          "likes": 0,
+          "author": "bao..rua"
+        },
+        {
+          "text": "Biet on ạ",
+          "likes": 0,
+          "author": "trinhngale"
+        },
+        {
+          "text": "ngày 13/7 bắt đầu",
+          "likes": 0,
+          "author": "lanvit10"
+        },
+        {
+          "text": "ok",
+          "likes": 0,
+          "author": "7thuy2"
+        },
+        {
+          "text": "4 tiếng mà k cầm điện thoại thì chủ nợ họ lo lắng cho mình lắm 😅",
+          "likes": 0,
+          "author": "nh.p.betahome"
+        },
+        {
+          "text": "Lets go!",
+          "likes": 0,
+          "author": "xuhy56"
+        },
+        {
+          "text": "Ok",
+          "likes": 0,
+          "author": "soi83868"
+        },
+        {
+          "text": "ngày 1",
+          "likes": 0,
+          "author": "cuongdoctrau"
+        },
+        {
+          "text": "Chúc bạn nhiều sức khỏe thành công trên các công việc mình muốn mình",
+          "likes": 0,
+          "author": "nguyenngoclong944"
+        },
+        {
+          "text": "30ngay ntn",
+          "likes": 0,
+          "author": "tranphi291988"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7631923883968580885",
+      "create_time": "2026-04-24T04:48:00.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@nycuataodau_22/video/7695633230262734100",
+      "caption": "Ngán lắm….\n#xuhuongtiktok #sinhvien \n#xuhuong #fyp ",
+      "author": {
+        "id": "7185476092727444506",
+        "name": "nycuataodau_22",
+        "nick": "Nấu ngon nhưng dở🥦",
+        "profile": "https://www.tiktok.com/@nycuataodau_22",
+        "fans": 5296
+      },
+      "play_count": 274900,
+      "like_count": 21400,
+      "share_count": 18400,
+      "comment_count": 387,
+      "duration_s": 18,
+      "music": {
+        "id": "7544635967357995777",
+        "name": "nhạc nền - Mây Nè🧝‍♀️",
+        "author": "Mây Thúi☹️💗",
+        "original": true
+      },
+      "hashtags": [
+        "xuhuongtiktok",
+        "sinhvien",
+        "xuhuong",
+        "fyp"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "caption_fallback",
+        "text": "Ngán lắm….\n#xuhuongtiktok #sinhvien \n#xuhuong #fyp ",
+        "links": []
+      },
+      "top_comments": [
+        {
+          "text": "Ngon vl,t còn k có mà ăn",
+          "likes": 541,
+          "author": "ry_huang"
+        },
+        {
+          "text": "tháng đầu full trứng + 1 ít thịt tháng sau full thịt + 1 ít trứng 😞",
+          "likes": 164,
+          "author": "zell_tt"
+        },
+        {
+          "text": "hãy cho t trứng",
+          "likes": 59,
+          "author": "vuquanghuy149"
+        },
+        {
+          "text": "Có tủ lạnh luôn hở thích vậy",
+          "likes": 52,
+          "author": ".thy.dung935"
+        },
+        {
+          "text": "trứng luộc,trứng tráng,trứng ốp,trứng hấp,.....",
+          "likes": 14,
+          "author": "truthigdhj2347"
+        },
+        {
+          "text": "Mỳ thôi[Cười chảy nước mắt]",
+          "likes": 13,
+          "author": "minhquannnn08"
+        },
+        {
+          "text": "tôm thịt, trứng , rau có đủ😁",
+          "likes": 8,
+          "author": "sangvn358"
+        },
+        {
+          "text": "t ko có tủ lạnh 🤡",
+          "likes": 4,
+          "author": "hs.love.3"
+        },
+        {
+          "text": "tsv chưa ăn quả trứng nào💔",
+          "likes": 3,
+          "author": "xi.purt"
+        },
+        {
+          "text": "Mỗi ngày luộc một cấp độ:))) t thật sự có thể ăn trứng cả tuần",
+          "likes": 2,
+          "author": "tnguyen_rab_070608"
+        },
+        {
+          "text": "t ăn ké với",
+          "likes": 2,
+          "author": "nminh744"
+        },
+        {
+          "text": "1 tuần 5 bữa gà tính cả trứng chắc là 7",
+          "likes": 2,
+          "author": "zhaowy.1706"
+        },
+        {
+          "text": "chạy thận",
+          "likes": 1,
+          "author": "dk.khoa5208"
+        },
+        {
+          "text": "nhiều tới nỗi t sợ trứng luôn mn ơi-))",
+          "likes": 1,
+          "author": "_n.mink_"
+        },
+        {
+          "text": "Có thể ở 1 mình ăn nửa tháng chưa hết",
+          "likes": 1,
+          "author": "pttl.ln"
+        },
+        {
+          "text": "K có tủ lạnh:)",
+          "likes": 1,
+          "author": "zibxzfnv"
+        },
+        {
+          "text": "cho mình xin code phim của bạn áo đen với ạ",
+          "likes": 1,
+          "author": "ng.tr.nhan0603"
+        },
+        {
+          "text": "K có tủ lạnh",
+          "likes": 1,
+          "author": "doduc19128"
+        },
+        {
+          "text": "giàu thế còn j ngày nào cx mì tôm 2 trứng😆",
+          "likes": 1,
+          "author": "yuu702552"
+        },
+        {
+          "text": "Đủ chx bạn",
+          "likes": 1,
+          "author": "m.quan978"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7695633230262734100",
+      "create_time": "2026-10-12T04:27:29.000Z",
+      "is_slideshow": false
+    }
+  ],
+  "run_ids": {
+    "clockworks_search": "N2Peq658RINF7MURa",
+    "comments": "QoeNaQ18A27icJKuy",
+    "parseforge_enrich": "pwwOMApu0ChyPSWO8"
+  },
+  "coverage_note": "11/12 trường 100%; caption 5/6 (83,3%) vì @hoang_hao209 đăng không caption. Tổng 71/72 ô = 98,6%. top_comments: 5 clip từ clockworks comments, @biquyetdodaihoc từ parseforge."
+}

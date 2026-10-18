@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-16
+updated: 2026-10-18
 tags: [ideas]
 ---
 # Idea bank
@@ -32,3 +32,8 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Làm nhanh hơn thì bị giao thêm việc (B-jevons-01) | 3.13 | trụ 2 | "Làm xong sớm thì được về sớm? Hông. Được giao thêm việc." | DARK | ý tưởng (2026-10-17) |
 | Cọc máy mới: ngủ một đêm đã (B-cooloff-01) | 5.23 | tiền | "Cọc 30 triệu canh đúng 19h. Bạn đã ngủ một đêm với quyết định đó chưa?" | DARK | ý tưởng (2026-10-17) |
 | Thẻ gym năm hay trả theo buổi (B-gym-01) | 5.21 | tiền | "Mua thẻ gym cả năm cho rẻ?…" | DARK | ý tưởng (2026-10-17) |
+| Điện thoại ra khỏi tầm mắt lúc học (B-phone-01) | 3.1 (+4.10) | trụ 3 tập trung | "Học được năm phút là tay tự mò điện thoại?" | DARK | stub 2026-10-18, chờ duyệt (clip-08 hook thay thế; `research/trends/2026-10-18/plans/plan-1-dien-thoai-ngoai-tam-mat.json`) |
+| Thói quen tính theo tháng, lỡ 1 ngày không về 0 (B-30ngay-01) | 4.12 (callback clip-01 4.1) | trụ 1 | "Bạn từng thử “lột xác 30 ngày” chưa? Tới ngày thứ mấy thì bỏ?" | DARK | stub 2026-10-18, chờ duyệt (clip-06 hook thay thế B-winterarc-01; `research/trends/2026-10-18/plans/plan-2-thoi-quen-tinh-theo-thang.json`) |
+| Gói bảo hành / bảo hiểm màn hình (B-baohanh-01) | 5.11 + 5.39 | tiền | "Sửa màn hình 40 triệu. Vậy có nên mua thêm gói bảo hành không?" | DARK | ý tưởng (2026-10-18) |
+| Ngủ bù cuối tuần làm thứ Hai mệt hơn (B-weekend-01) | 3.2 (+2.38) | trụ 3 năng lượng | "Chủ nhật tính ngủ tới trưa, vậy sao thứ Hai mệt hơn?" | DARK | ý tưởng (2026-10-18; clip-14 hook thay thế) |
+| Đọc sách giấy trước khi ngủ (B-reading-01) | 3.8 | trụ 3 năng lượng | "Hồi xưa đọc sách cả buổi, giờ mở được hai trang là cầm điện thoại?" | LIGHT | ý tưởng (2026-10-18) |

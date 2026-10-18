@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-18",
+  "timezone": "Asia/Saigon",
+  "primary": {
+    "actor": "clockworks/tiktok-scraper",
+    "run_id": "N2Peq658RINF7MURa",
+    "dataset_id": "kLKVCzCIjYTsfxHqv",
+    "kv_store_id": "geaTq9ficLF2fAOrd",
+    "item_count": 43,
+    "valid_clips": 42,
+    "compute_units": 0.0436,
+    "input": {
+      "hashtags": [
+        "kyluatbanthan",
+        "sinhvien",
+        "divlam",
+        "songtichcuc"
+      ],
+      "searchQueries": [
+        "luoi qua phai lam sao",
+        "cach tap trung hoc bai",
+        "nghien dien thoai"
+      ],
+      "searchSection": "/video",
+      "resultsPerPage": 7,
+      "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
+      "commentsPerPost": 0,
+      "proxyCountryCode": "None"
+    },
+    "note": "hashtag 'divlam' là lỗi gõ (định gõ 'dilam') → NOT_FOUND, 1 item lỗi; 6 input còn lại OK"
+  },
+  "comments": {
+    "actor": "clockworks/tiktok-comments-scraper",
+    "run_id": "QoeNaQ18A27icJKuy",
+    "dataset_id": "aAKfF6XbruBGDvFaY",
+    "item_count": 100,
+    "compute_units": 0.0503
+  },
+  "parseforge_enrich": {
+    "actor": "parseforge/tiktok-scraper",
+    "run_id": "pwwOMApu0ChyPSWO8",
+    "dataset_id": "QfgswZhU2batzQC6N",
+    "item_count": 3,
+    "compute_units": 0.0303,
+    "note": "@nycuataodau_22 không lời → caption fallback; transcript parseforge của 2 clip còn lại là bản dịch EN, dùng VTT vie-VN thay"
+  },
+  "shortlist": 6,
+  "vtt_saved": 23,
+  "fields_coverage_pct": 98.6
+}

@@ -1,0 +1,4479 @@
+[
+ {
+  "error": "This profile/hashtag does not exist.",
+  "errorCode": "NOT_FOUND",
+  "url": "https://www.tiktok.com/tag/divlam",
+  "input": "divlam"
+ },
+ {
+  "id": "7448707017981676807",
+  "text": "Sống tích cực là gì? #podcasts #hanhtrinhvevoinang #chualanhtamhon #podcast #phattrienbanthan #quotes #tinhyeu #songtichcuc #positivevibes #xh #christmas #tet #divenha",
+  "textLanguage": "vi",
+  "createTime": 1734287259,
+  "createTimeISO": "2024-12-15T18:27:39.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7400655445969765397",
+   "name": "hanhtrinhvevoinang67",
+   "profileUrl": "https://www.tiktok.com/@hanhtrinhvevoinang67",
+   "nickName": "Hành Trình Về Với Nắng",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 16,
+   "friends": 0,
+   "fans": 116100,
+   "heart": 4200000,
+   "video": 910,
+   "digg": 2121,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Hành Trình Về Với Nắng",
+   "musicAuthor": "Hành Trình Về Với Nắng",
+   "musicOriginal": true,
+   "musicId": "7448707098407406352"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@hanhtrinhvevoinang67/video/7448707017981676807",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 26,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-hanhtrinhv-20241215182739-7448707017981676807-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/8972e665c185bed0261787cd12e41e90/6ad6bd3c/video/tos/alisg/tos-alisg-pv-0037/22212a8be874428da23e4dbe2cbb2271/?a=1988&bti=ODszNWYuMDE6&&bt=1675&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=andvM3E5cnJrdzMzODczNEBpandvM3E5cnJrdzMzODczNEBeL2tvMmRrcmNgLS1kMTFzYSNeL2tvMmRrcmNgLS1kMTFzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00078000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-hanhtrinhv-20241215182739-7448707017981676807-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/def8da9c72fcbb1c5a45fa0722bc10d4/6ad6bd3c/video/tos/alisg/tos-alisg-pv-0037/c747870f0a6b49118f48f0090817c11b/?a=1988&bti=ODszNWYuMDE6&&bt=1675&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=andvM3E5cnJrdzMzODczNEBpandvM3E5cnJrdzMzODczNEBeL2tvMmRrcmNgLS1kMTFzYSNeL2tvMmRrcmNgLS1kMTFzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00078000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 41800,
+  "shareCount": 3027,
+  "playCount": 604100,
+  "collectCount": 5585,
+  "commentCount": 375,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "podcasts",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "hanhtrinhvevoinang",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "chualanhtamhon",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "podcast",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "phattrienbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "quotes",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tinhyeu",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songtichcuc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "positivevibes",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "xh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "christmas",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tet",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "divenha",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7666810472330579220",
+  "text": "Sống tích cực #xuhuong #sachhay #phunu ",
+  "textLanguage": "vi",
+  "createTime": 1785068424,
+  "createTimeISO": "2026-07-26T12:20:24.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7472357008052110344",
+   "name": "nhung.dailyy",
+   "profileUrl": "https://www.tiktok.com/@nhung.dailyy",
+   "nickName": "Đọc để HIỂU mình",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 17,
+   "friends": 0,
+   "fans": 88900,
+   "heart": 1800000,
+   "video": 342,
+   "digg": 117,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Đọc để HIỂU mình",
+   "musicAuthor": "Đọc để HIỂU mình",
+   "musicOriginal": true,
+   "musicId": "7666810522281085704"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@nhung.dailyy/video/7666810472330579220",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 28,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-nhungdaily-20260726122024-7666810472330579220-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/35d79008382aa0292672274da9889ef0/6ad6bd3e/video/tos/alisg/tos-alisg-pv-0037/000194675e9442c791c03e93b59b498e/?a=1988&bti=ODszNWYuMDE6&&bt=693&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=cnF8b2hsc2d3SkBwaHIxaDFybndmajZ4eG05cnR5PDMzODczNEBpajZ4eG05cnR5PDMzODczNEBjRl5Nc3FePmJKYSNvYF90aHFmOiNvazNmMmQ0amZhLS1kMWBzYSNvazNmMmQ0amZhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00078000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-nhungdaily-20260726122024-7666810472330579220-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/1e55c91385fbe80808ed5d570e2afe87/6ad6bd3e/video/tos/alisg/tos-alisg-pv-0037/05204ba601be4ed7808a0a8035453c5b/?a=1988&bti=ODszNWYuMDE6&&bt=693&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=cnF8b2hsc2d3SkBwaHIxaDFybndmajZ4eG05cnR5PDMzODczNEBpajZ4eG05cnR5PDMzODczNEBjRl5Nc3FePmJKYSNvYF90aHFmOiNvazNmMmQ0amZhLS1kMWBzYSNvazNmMmQ0amZhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00078000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 2602,
+  "shareCount": 605,
+  "playCount": 107100,
+  "collectCount": 411,
+  "commentCount": 92,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "sachhay",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "phunu",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7697502217489747208",
+  "text": "Điều gì giúp bạn giữ được tâm thái tích cực mỗi ngày? \n#tamthaitot #nangluongtichcuc #suynghitichcuc #songtichcuc #xuhuong ",
+  "textLanguage": "vi",
+  "createTime": 1792214402,
+  "createTimeISO": "2026-10-17T05:20:02.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7249953447864452102",
+   "name": "hoclamnguoi.official",
+   "profileUrl": "https://www.tiktok.com/@hoclamnguoi.official",
+   "nickName": "Học làm người",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 3,
+   "friends": 0,
+   "fans": 7037,
+   "heart": 80400,
+   "video": 122,
+   "digg": 170,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Học làm người",
+   "musicAuthor": "Học làm người",
+   "musicOriginal": true,
+   "musicId": "7697502267357121332"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@hoclamnguoi.official/video/7697502217489747208",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 24,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-hoclamnguo-20261017052002-7697502217489747208-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/207fb31d8798b9a240353711fbeb099a/6ad6bd3a/video/tos/alisg/tos-alisg-pv-0037/8d61566dc0c84309adcbf6e3fa3dc731/?a=1988&bti=ODszNWYuMDE6&&bt=4369&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=MzN1dXg5cnZqZTMzODczNEBpMzN1dXg5cnZqZTMzODczNEAta2ZwMmRjXjZhLS1kMWBzYSMta2ZwMmRjXjZhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00078000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 118,
+  "shareCount": 3,
+  "playCount": 1502,
+  "collectCount": 19,
+  "commentCount": 3,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "tamthaitot",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "nangluongtichcuc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "suynghitichcuc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songtichcuc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7694047208626277646",
+  "text": "HƯƠNG VỊ CUỘC ĐỜI ❤️🎶\n\nCó những lần vấp ngã để ta học cách trưởng thành.\nCó những tổn thương để ta biết trân trọng bình yên.\n\nCuộc đời có ngọt, có đắng, có những lần tưởng chừng không thể bước tiếp… Nhưng chính những thăng trầm ấy đã tạo nên hương vị của cuộc đời.\n\nĐừng bỏ cuộc, vì hạnh phúc có thể đang chờ bạn ở cuối con đường. ❤️\n\n🎵 Renae Nguyen Music | Pop R&B Soul\n\n#HuongViCuocDoi #RenaeNguyenMusic #NhacViet #PopRnB #SongTichCuc",
+  "textLanguage": "vi",
+  "createTime": 1791409978,
+  "createTimeISO": "2026-10-07T21:52:58.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7477761409510753322",
+   "name": "dm91665",
+   "profileUrl": "https://www.tiktok.com/@dm91665",
+   "nickName": "dm",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 2,
+   "friends": 0,
+   "fans": 575,
+   "heart": 69500,
+   "video": 25,
+   "digg": 13,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc",
+   "musicAuthor": "dm",
+   "musicOriginal": true,
+   "musicId": "7694047250061871886"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@dm91665/video/7694047208626277646",
+  "videoMeta": {
+   "height": 720,
+   "width": 1280,
+   "duration": 93,
+   "definition": "720p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 3224,
+  "shareCount": 145,
+  "playCount": 9706,
+  "collectCount": 289,
+  "commentCount": 58,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "huongvicuocdoi",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "renaenguyenmusic",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "nhacviet",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "poprnb",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songtichcuc",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7660716886413380872",
+  "text": "Dành cho ai đang FA 😊#nhaleceo #songdepmoingay #songtichcuc ",
+  "textLanguage": "vi",
+  "createTime": 1783649655,
+  "createTimeISO": "2026-07-10T02:14:15.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "6681018824332428290",
+   "name": "nhalee.ceo",
+   "profileUrl": "https://www.tiktok.com/@nhalee.ceo",
+   "nickName": "Nhã Lê CEO",
+   "verified": true,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 468,
+   "friends": 0,
+   "fans": 1000000,
+   "heart": 24300000,
+   "video": 3604,
+   "digg": 5383,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - 1 Phút Tu Tâm",
+   "musicAuthor": "1 Phút Tu Tâm",
+   "musicOriginal": true,
+   "musicId": "7651769080550738709"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@nhalee.ceo/video/7660716886413380872",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 36,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-nhaleeceo-20260710021415-7660716886413380872-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/04897862caa97a47589ace51fb48aeac/6ad6bd46/video/tos/alisg/tos-alisg-pv-0037/d04053d8e8eb4459902373bbe6f7d60d/?a=1988&bti=ODszNWYuMDE6&&bt=862&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=M2lzeHM5cnk4PDMzODczNEBpM2lzeHM5cnk4PDMzODczNEAybmQ0MmRjNTVhLS1kMWBzYSMybmQ0MmRjNTVhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-nhaleeceo-20260710021415-7660716886413380872-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/1c7e527c9e09cc691fd5685619be3034/6ad6bd46/video/tos/alisg/tos-alisg-pv-0037/eceec24e2b7e49d8a0b8f9485cb2c00f/?a=1988&bti=ODszNWYuMDE6&&bt=862&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=M2lzeHM5cnk4PDMzODczNEBpM2lzeHM5cnk4PDMzODczNEAybmQ0MmRjNTVhLS1kMWBzYSMybmQ0MmRjNTVhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 5888,
+  "shareCount": 284,
+  "playCount": 210800,
+  "collectCount": 728,
+  "commentCount": 422,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "nhaleceo",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songdepmoingay",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songtichcuc",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7567992428473502996",
+  "text": "bỏ lọ đi.\n#bỏlọ \n#tamtrung #kyluat #songtichcuc ",
+  "textLanguage": "vi",
+  "createTime": 1762060554,
+  "createTimeISO": "2025-11-02T05:15:54.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7549740214487991317",
+   "name": "diepquy1512",
+   "profileUrl": "https://www.tiktok.com/@diepquy1512",
+   "nickName": "ĐIÊP QUY Q.A",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 105,
+   "friends": 0,
+   "fans": 27000,
+   "heart": 1200000,
+   "video": 136,
+   "digg": 986,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Motivation",
+   "musicAuthor": "ĐIÊP QUY Q.A",
+   "musicOriginal": true,
+   "musicId": "7567992463685405458"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@diepquy1512/video/7567992428473502996",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 58,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-diepquy151-20251102051554-7567992428473502996-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/2a1ec0dfd44267f45688b55e5154ce6e/6ad6bd5c/video/tos/alisg/tos-alisg-pv-0037/33782266d820486589cb5bc1fc9c9512/?a=1988&bti=ODszNWYuMDE6&&bt=772&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=amtnZHM5cmloNzMzODczNEBpamtnZHM5cmloNzMzODczNEBoaWlmMmRrZTBhLS1kMWBzYSNoaWlmMmRrZTBhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-diepquy151-20251102051554-7567992428473502996-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/3563d88720602dcecbfe89ed4256fa94/6ad6bd5c/video/tos/alisg/tos-alisg-pv-0037/fba87f467f2e42388e78450848434893/?a=1988&bti=ODszNWYuMDE6&&bt=772&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=amtnZHM5cmloNzMzODczNEBpamtnZHM5cmloNzMzODczNEBoaWlmMmRrZTBhLS1kMWBzYSNoaWlmMmRrZTBhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 189200,
+  "shareCount": 141600,
+  "playCount": 3600000,
+  "collectCount": 23869,
+  "commentCount": 4950,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "bỏlọ",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tamtrung",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluat",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songtichcuc",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7696819837049294088",
+  "text": "@THÁI 💙 #zukinguyen #chiase #lgbt #tinhyeu #songtichcuc ",
+  "textLanguage": "un",
+  "createTime": 1792055523,
+  "createTimeISO": "2026-10-15T09:12:03.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "6808240675507782658",
+   "name": "zukinguyen",
+   "profileUrl": "https://www.tiktok.com/@zukinguyen",
+   "nickName": "Zuki Nguyen",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 304,
+   "friends": 0,
+   "fans": 45700,
+   "heart": 1200000,
+   "video": 1287,
+   "digg": 69100,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Zuki Nguyen",
+   "musicAuthor": "Zuki Nguyen",
+   "musicOriginal": true,
+   "musicId": "7696819889676503829"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@zukinguyen/video/7696819837049294088",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 74,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-zukinguyen-20261015091203-7696819837049294088-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/8f06a9a0140257168070d0bf4f11edbc/6ad6bd6c/video/tos/alisg/tos-alisg-pv-0037/242fe74beb644c47a9270b3dd4e5f6ea/?a=1988&bti=ODszNWYuMDE6&&bt=7058&ft=4KLMeMzm8Zmo09ge7a4jVD3hQpWrKsd.&mime_type=video_mp4&rc=am9yOng5cjY8ZTMzODczNEBpam9yOng5cjY8ZTMzODczNEBmNHFvMmRjZTVhLS1kMWBzYSNmNHFvMmRjZTVhLS1kMWBzcw%3D%3D&l=202610180100173B46B98D48C3784FFB63&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 423,
+  "shareCount": 34,
+  "playCount": 12100,
+  "collectCount": 38,
+  "commentCount": 25,
+  "repostCount": 0,
+  "mentions": [
+   "@THÁI 💙"
+  ],
+  "detailedMentions": [
+   {
+    "id": "7508054966894363666",
+    "name": "zukithainguyen",
+    "nickName": "THÁI 💙",
+    "profileUrl": "https://www.tiktok.com/@7508054966894363666"
+   }
+  ],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "zukinguyen",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "chiase",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "lgbt",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tinhyeu",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "songtichcuc",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [
+   {
+    "ID": "3248376396",
+    "name": "4K",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "4705740125",
+    "name": "Bao Đẹp",
+    "stickerStats": {
+     "useCount": 0
+    }
+   },
+   {
+    "ID": "3653596822",
+    "name": "красота",
+    "stickerStats": {
+     "useCount": 0
+    }
+   }
+  ],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "songtichcuc",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "songtichcuc",
+   "views": 1800000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7663124795139034375",
+  "text": "7 cuốn sách hay về kỷ luật bản thân \n#sachhay #booktokvietnam #reviewsach #vuilenreview #kyluatbanthan ",
+  "textLanguage": "vi",
+  "createTime": 1784210283,
+  "createTimeISO": "2026-07-16T13:58:03.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7064773164585010178",
+   "name": "vuilenreview",
+   "profileUrl": "https://www.tiktok.com/@vuilenreview",
+   "nickName": "Vui Lên",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 14,
+   "friends": 0,
+   "fans": 105600,
+   "heart": 1600000,
+   "video": 1370,
+   "digg": 898,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Vui Lên",
+   "musicAuthor": "Vui Lên",
+   "musicOriginal": true,
+   "musicId": "7663124896523864833"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@vuilenreview/video/7663124795139034375",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 229,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-vuilenrevi-20260716135803-7663124795139034375-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/f4b475a849613028fe42ffec6e137553/6ad6be07/video/tos/alisg/tos-alisg-pv-0037/06e6b6eb52e642debc60546848f46a30/?a=1988&bti=ODszNWYuMDE6&&bt=2983&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=amtyNHI5cmVoPDMzODczNEBpamtyNHI5cmVoPDMzODczNEAtYTNyMmQ0M2BhLS1kMTFzYSMtYTNyMmQ0M2BhLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-vuilenrevi-20260716135803-7663124795139034375-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/ec0661b90387baf2c40ae4a2e7f583de/6ad6be07/video/tos/alisg/tos-alisg-pv-0037/44fcb911cbee48e9bc8b2ef5b87b0e93/?a=1988&bti=ODszNWYuMDE6&&bt=2983&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=amtyNHI5cmVoPDMzODczNEBpamtyNHI5cmVoPDMzODczNEAtYTNyMmQ0M2BhLS1kMTFzYSMtYTNyMmQ0M2BhLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 643,
+  "shareCount": 55,
+  "playCount": 12800,
+  "collectCount": 396,
+  "commentCount": 6,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "sachhay",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "booktokvietnam",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "reviewsach",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "vuilenreview",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluatbanthan",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7662579202675297544",
+  "text": "Thay đổi 1 điều để bạn có thể kỷ luật bản thân hơn\n#sachhay #booktokvietnam #reviewsach #vuilenreview #kyluatbanthantheotritueconhan ",
+  "textLanguage": "vi",
+  "createTime": 1784083259,
+  "createTimeISO": "2026-07-15T02:40:59.000Z",
+  "isAd": true,
+  "hasTikTokShopProduct": true,
+  "authorMeta": {
+   "id": "7064773164585010178",
+   "name": "vuilenreview",
+   "profileUrl": "https://www.tiktok.com/@vuilenreview",
+   "nickName": "Vui Lên",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 14,
+   "friends": 0,
+   "fans": 105600,
+   "heart": 1600000,
+   "video": 1370,
+   "digg": 898,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Vui Lên",
+   "musicAuthor": "Vui Lên",
+   "musicOriginal": true,
+   "musicId": "7662579313354492690"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@vuilenreview/video/7662579202675297544",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 185,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-vuilenrevi-20260715024059-7662579202675297544-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/737be1350fa4d0edd5cae4d65c87806f/6ad6bddb/video/tos/alisg/tos-alisg-pv-0037/887249429ad9409ab108b4d0dbebed58/?a=1988&bti=ODszNWYuMDE6&&bt=1022&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=am07O285cjlpPDMzODczNEBpam07O285cjlpPDMzODczNEBzaWpeMmRjMl9hLS1kMTFzYSNzaWpeMmRjMl9hLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-vuilenrevi-20260715024059-7662579202675297544-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/7b6f0cb7e2fb2a1eab1abfad4c297664/6ad6bddb/video/tos/alisg/tos-alisg-pv-0037/a7e050bf72ad49bfb197cc85585c0fae/?a=1988&bti=ODszNWYuMDE6&&bt=1022&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=am07O285cjlpPDMzODczNEBpam07O285cjlpPDMzODczNEBzaWpeMmRjMl9hLS1kMTFzYSNzaWpeMmRjMl9hLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 158,
+  "shareCount": 15,
+  "playCount": 11100,
+  "collectCount": 61,
+  "commentCount": 1,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "sachhay",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "booktokvietnam",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "reviewsach",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "vuilenreview",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluatbanthantheotritueconhan",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7667433211219234068",
+  "text": "Sự thật về kỷ luật #motivation #kyluat #kyluatbanthan #truyendongluc #tothonmoingay ",
+  "textLanguage": "vi",
+  "createTime": 1785213417,
+  "createTimeISO": "2026-07-28T04:36:57.000Z",
+  "isAd": true,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "6700553372564767746",
+   "name": "tthanhtichcuc",
+   "profileUrl": "https://www.tiktok.com/@tthanhtichcuc",
+   "nickName": "Thành Tích Cực",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 3,
+   "friends": 0,
+   "fans": 5192,
+   "heart": 192200,
+   "video": 43,
+   "digg": 3429,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "Waiting for Love",
+   "musicAuthor": "1",
+   "musicOriginal": false,
+   "musicId": "7654812956652505138"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@tthanhtichcuc/video/7667433211219234068",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 88,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-tthanhtich-20260728043657-7667433211219234068-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/7298583d74f85f4fece651f4952a08ee/6ad6bd7a/video/tos/alisg/tos-alisg-pv-0037/472339bafd94447aa3072d4ede5a2c43/?a=1988&bti=ODszNWYuMDE6&&bt=1433&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=ajVmd3I5cms2PDMzODczNEBpajVmd3I5cms2PDMzODczNEBpazVvMmRzL2hhLS1kMWBzYSNpazVvMmRzL2hhLS1kMWBzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-tthanhtich-20260728043657-7667433211219234068-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/8c96797e5a342188c9d5996f5c9b6794/6ad6bd7a/video/tos/alisg/tos-alisg-pv-0037/bc1b9df5126646a486057af4d950ab9a/?a=1988&bti=ODszNWYuMDE6&&bt=1433&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=ajVmd3I5cms2PDMzODczNEBpajVmd3I5cms2PDMzODczNEBpazVvMmRzL2hhLS1kMWBzYSNpazVvMmRzL2hhLS1kMWBzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 51800,
+  "shareCount": 4340,
+  "playCount": 728600,
+  "collectCount": 8213,
+  "commentCount": 410,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "motivation",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluat",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluatbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "truyendongluc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tothonmoingay",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7681134559286660359",
+  "text": "#kyluatbanthan #conhanchilo #tudotaichinh #tuduykhacbiet #khoinghiep ",
+  "textLanguage": "un",
+  "createTime": 1788403512,
+  "createTimeISO": "2026-09-03T02:45:12.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7622824760594498580",
+   "name": "t.duy.khc.bit4",
+   "profileUrl": "https://www.tiktok.com/@t.duy.khc.bit4",
+   "nickName": "TƯ DUY KHÁC BIỆT",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 49,
+   "friends": 0,
+   "fans": 16100,
+   "heart": 74800,
+   "video": 142,
+   "digg": 1813,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - TĨNH ĐAO",
+   "musicAuthor": "TĨNH ĐAO",
+   "musicOriginal": true,
+   "musicId": "7676765317586995988"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@t.duy.khc.bit4/video/7681134559286660359",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 258,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-tduykhcbit-20260903024512-7681134559286660359-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/bea45689070e83c11cb6b6d7196615f2/6ad6be24/video/tos/alisg/tos-alisg-pv-0037/5a13d3bc7c6546f08573779b0de5a64d/?a=1988&bti=ODszNWYuMDE6&&bt=568&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=ampkNWs5cmZnZDMzODczNEBpampkNWs5cmZnZDMzODczNEA0cm9uMmRzcGBhLS1kMWBzYSM0cm9uMmRzcGBhLS1kMWBzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-tduykhcbit-20260903024512-7681134559286660359-vie-VN.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "8:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/0d7e7c1854ea5645663f5df1fd58e728/6ad6be24/video/tos/alisg/tos-alisg-pv-0037/626b62b6e1214a60a84b910f87828486/?a=1988&bti=ODszNWYuMDE6&&bt=568&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=ampkNWs5cmZnZDMzODczNEBpampkNWs5cmZnZDMzODczNEA0cm9uMmRzcGBhLS1kMWBzYSM0cm9uMmRzcGBhLS1kMWBzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 6779,
+  "shareCount": 881,
+  "playCount": 174200,
+  "collectCount": 1749,
+  "commentCount": 127,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "kyluatbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "conhanchilo",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tudotaichinh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tuduykhacbiet",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "khoinghiep",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7093493386975399194",
+  "text": "Bí quyết giúp bạn kỉ luật bản thân. #huynhduykhuong #learnontiktok #hoccungtiktok #giaotiep",
+  "textLanguage": "vi",
+  "createTime": 1651582631,
+  "createTimeISO": "2022-05-03T12:57:11.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "6774503666692113410",
+   "name": "huynhduykhuongofficial",
+   "profileUrl": "https://www.tiktok.com/@huynhduykhuongofficial",
+   "nickName": "Huỳnh Duy Khương",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 10,
+   "friends": 0,
+   "fans": 1400000,
+   "heart": 41600000,
+   "video": 1711,
+   "digg": 3290,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "original sound - Huỳnh Duy Khương",
+   "musicAuthor": "Huỳnh Duy Khương",
+   "musicOriginal": true,
+   "musicId": "7093493397532592922"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@huynhduykhuongofficial/video/7093493386975399194",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 48,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 45300,
+  "shareCount": 270,
+  "playCount": 494300,
+  "collectCount": 2042,
+  "commentCount": 106,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "huynhduykhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "learnontiktok",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "hoccungtiktok",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "giaotiep",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7631923883968580885",
+  "text": "LỘ TRÌNH 30 NGÀY BIẾN MẤT #kyluat1 #phattrienbanthan #xuhuong #kyluatbanthan #dongluc ",
+  "textLanguage": "vi",
+  "createTime": 1777006080,
+  "createTimeISO": "2026-04-24T04:48:00.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7624793212490417168",
+   "name": "kyluat.1",
+   "profileUrl": "https://www.tiktok.com/@kyluat.1",
+   "nickName": "Kỷ Luật 1%",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 3,
+   "friends": 0,
+   "fans": 50700,
+   "heart": 655600,
+   "video": 354,
+   "digg": 234,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Kỷ Luật 1%",
+   "musicAuthor": "Kỷ Luật 1%",
+   "musicOriginal": false,
+   "musicId": "7631923922016930580"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@kyluat.1/video/7631923883968580885",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 54,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-kyluat1-20260424044800-7631923883968580885-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/5d194d1387b38f065d35f4799f6f1354/6ad6bd58/video/tos/alisg/tos-alisg-pv-0037/a5bdd722efa14a278c387215facbbf53/?a=1988&bti=ODszNWYuMDE6&&bt=1994&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=anBqdW85cnkzOjMzODczNEBpanBqdW85cnkzOjMzODczNEBjY2hjMmRrZ2lhLS1kMTFzYSNjY2hjMmRrZ2lhLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-kyluat1-20260424044800-7631923883968580885-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/bcb027adddce38f5b2bdc0fdb6f26bcc/6ad6bd58/video/tos/alisg/tos-alisg-pv-0037/e3d6a4c06554426e8808c0d9fe9011bb/?a=1988&bti=ODszNWYuMDE6&&bt=1994&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=anBqdW85cnkzOjMzODczNEBpanBqdW85cnkzOjMzODczNEBjY2hjMmRrZ2lhLS1kMTFzYSNjY2hjMmRrZ2lhLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 6160,
+  "shareCount": 750,
+  "playCount": 101900,
+  "collectCount": 1266,
+  "commentCount": 94,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "kyluat1",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "phattrienbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluatbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "dongluc",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7632503470372719893",
+  "text": "BẠN KHÔNG THIẾU TÀI NĂNG, CÁI BẠN THIẾU LÀ SỰ TÀN NHẪN VỚI CHÍNH BẢN THÂN MÌNH #kyluat1 #phattrienbanthan #xuhuong #kyluatbanthan #dongluc ",
+  "textLanguage": "vi",
+  "createTime": 1777092480,
+  "createTimeISO": "2026-04-25T04:48:00.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7624793212490417168",
+   "name": "kyluat.1",
+   "profileUrl": "https://www.tiktok.com/@kyluat.1",
+   "nickName": "Kỷ Luật 1%",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 3,
+   "friends": 0,
+   "fans": 50700,
+   "heart": 655600,
+   "video": 354,
+   "digg": 234,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Kỷ Luật 1%",
+   "musicAuthor": "Kỷ Luật 1%",
+   "musicOriginal": false,
+   "musicId": "7632503528242400008"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@kyluat.1/video/7632503470372719893",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 54,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-kyluat1-20260425044800-7632503470372719893-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/6d2f547d8911adb9b7f1287e2bde9a14/6ad6bd58/video/tos/alisg/tos-alisg-pv-0037/d8197f53f57040dc87bade6d6e64b132/?a=1988&bti=ODszNWYuMDE6&&bt=859&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=M3M5ZXk5cmY0OjMzODczNEBpM3M5ZXk5cmY0OjMzODczNEAyMDBmMmQ0ZmphLS1kMTFzYSMyMDBmMmQ0ZmphLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-kyluat1-20260425044800-7632503470372719893-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/386b809b4f191e15ecfd3d75d038a321/6ad6bd58/video/tos/alisg/tos-alisg-pv-0037/ea79bb3f77f04545bdc8605cb09c64ec/?a=1988&bti=ODszNWYuMDE6&&bt=859&ft=aEKq_qT0mIoPD12RnkHI3wUdEgAbMeF~O5&mime_type=video_mp4&rc=M3M5ZXk5cmY0OjMzODczNEBpM3M5ZXk5cmY0OjMzODczNEAyMDBmMmQ0ZmphLS1kMTFzYSMyMDBmMmQ0ZmphLS1kMTFzcw%3D%3D&l=20261018010017778E2C9138F76A759DCF&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 4068,
+  "shareCount": 425,
+  "playCount": 62500,
+  "collectCount": 673,
+  "commentCount": 24,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "kyluat1",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "phattrienbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "kyluatbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "dongluc",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "kyluatbanthan",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "kyluatbanthan",
+   "views": 1200000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7664780808539884821",
+  "text": "Con bị “nghiện” điện thoại\n#yenqualua #daycon #chamethongthai #daycondungcach #nuoidaycon ",
+  "textLanguage": "vi",
+  "createTime": 1784595857,
+  "createTimeISO": "2026-07-21T01:04:17.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7196552817456645121",
+   "name": "yenqualua",
+   "profileUrl": "https://www.tiktok.com/@yenqualua",
+   "nickName": "Yến Quá Lứa",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 238,
+   "friends": 0,
+   "fans": 47400,
+   "heart": 1200000,
+   "video": 136,
+   "digg": 582,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Yến quá lứa",
+   "musicAuthor": "Yến Quá Lứa",
+   "musicOriginal": true,
+   "musicId": "7664780889896913672"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@yenqualua/video/7664780808539884821",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 48,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-yenqualua-20260721010417-7664780808539884821-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/588ef11e5bb67bebe97991e92eef6644/6ad6bd52/video/tos/alisg/tos-alisg-pv-0037/efcf060ddb914142a73c84c45d1fedb7/?a=1988&bti=ODszNWYuMDE6&&bt=3018&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=anhwOnI5cm9mPDMzODczNEBpanhwOnI5cm9mPDMzODczNEBncXEtMmRzXmNhLS1kMWBzYSNncXEtMmRzXmNhLS1kMWBzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-yenqualua-20260721010417-7664780808539884821-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/d46dda83143d916c3e4ce103453a60de/6ad6bd52/video/tos/alisg/tos-alisg-pv-0037/51100042bdf74eaca5b20f750e21abae/?a=1988&bti=ODszNWYuMDE6&&bt=3018&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=anhwOnI5cm9mPDMzODczNEBpanhwOnI5cm9mPDMzODczNEBncXEtMmRzXmNhLS1kMWBzYSNncXEtMmRzXmNhLS1kMWBzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 3093,
+  "shareCount": 4629,
+  "playCount": 337600,
+  "collectCount": 843,
+  "commentCount": 76,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "7613371790127988757",
+    "name": "yenqualua",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "674427",
+    "name": "daycon",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1662052492406785",
+    "name": "chamethongthai",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1662688657096706",
+    "name": "daycondungcach",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1658675317879810",
+    "name": "nuoidaycon",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7664080768288738591",
+  "text": "Dấu hiệu cho thấy bạn đã nghiện điện thoại #shorts",
+  "textLanguage": "vi",
+  "createTime": 1784432871,
+  "createTimeISO": "2026-07-19T03:47:51.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7491246408000848939",
+   "name": "code.3.1",
+   "profileUrl": "https://www.tiktok.com/@code.3.1",
+   "nickName": "Code 3",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 1,
+   "friends": 0,
+   "fans": 8456,
+   "heart": 595100,
+   "video": 605,
+   "digg": 3,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "original sound - Code 3",
+   "musicAuthor": "Code 3",
+   "musicOriginal": true,
+   "musicId": "7664080771979758366"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@code.3.1/video/7664080768288738591",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 22,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-code31-20260719034751-7664080768288738591-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/d3939d3995537760b91c22887299c56d/6ad6bd38/video/tos/useast8/tos-useast8-v-0068-tx2/a786298acd904f26aa15107373c4e740/?a=1988&bti=ODszNWYuMDE6&&bt=1842&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=ajU8ZnU5cnI3PDMzaTgzNEBpajU8ZnU5cnI3PDMzaTgzNEAxYWo2MmRzZWJhLS1kLzJzYSMxYWo2MmRzZWJhLS1kLzJzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00078000"
+    },
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-code31-20260719034751-7664080768288738591-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/11b48c82ea34dee022604cb26d48068e/6ad6bd38/video/tos/useast8/tos-useast8-v-0068-tx2/a73a2a5a0a624fbfa0d1cf0a4e36adde/?a=1988&bti=ODszNWYuMDE6&&bt=1842&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=ajU8ZnU5cnI3PDMzaTgzNEBpajU8ZnU5cnI3PDMzaTgzNEAxYWo2MmRzZWJhLS1kLzJzYSMxYWo2MmRzZWJhLS1kLzJzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00078000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 6476,
+  "shareCount": 3362,
+  "playCount": 315200,
+  "collectCount": 452,
+  "commentCount": 158,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7590644440314744072",
+  "text": "Chân chị ông bố nghiện điện thoại #aphongnauan ",
+  "textLanguage": "vi",
+  "createTime": 1767334637,
+  "createTimeISO": "2026-01-02T06:17:17.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7097543270679348226",
+   "name": "aphongnauan_88",
+   "profileUrl": "https://www.tiktok.com/@aphongnauan_88",
+   "nickName": "Anh Phong Thích Nấu Ăn 😬😬",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 8,
+   "friends": 0,
+   "fans": 737100,
+   "heart": 49100000,
+   "video": 2505,
+   "digg": 36400,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "Thay Đổi Bắt Đầu Từ Bên Trong",
+   "musicAuthor": "Tiệm Sách Cũ",
+   "musicOriginal": false,
+   "musicAlbum": "Đừng Sợ Bước Chậm, Chỉ Sợ Dừng Lại",
+   "musicId": "7540550191395686417"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@aphongnauan_88/video/7590644440314744072",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 48,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-aphongnaua-20260102061717-7590644440314744072-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/a17555ad05a92adf8b0112b4fefca86d/6ad6bd52/video/tos/alisg/tos-alisg-pv-0037/a61503c00a0546a5bacd56903f78992c/?a=1988&bti=ODszNWYuMDE6&&bt=3628&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=M3RuOG85cnBwODMzODczNEBpM3RuOG85cnBwODMzODczNEBma25nMmRzMl9hLS1kMWBzYSNma25nMmRzMl9hLS1kMWBzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-aphongnaua-20260102061717-7590644440314744072-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/f99ce1870208c58a3960fa954e2617c7/6ad6bd52/video/tos/alisg/tos-alisg-pv-0037/2438232b297143fab2965db558998922/?a=1988&bti=ODszNWYuMDE6&&bt=3628&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=M3RuOG85cnBwODMzODczNEBpM3RuOG85cnBwODMzODczNEBma25nMmRzMl9hLS1kMWBzYSNma25nMmRzMl9hLS1kMWBzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 255,
+  "shareCount": 15,
+  "playCount": 34200,
+  "collectCount": 13,
+  "commentCount": 21,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "7556976531726139400",
+    "name": "aphongnauan",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7535070301361589512",
+  "text": "Khi cơn nghiện điện thoại khiến cả nhóm Báo Thủ lâm nguy 🤯📱\nTập 194: Thành Ca phải làm gì để giải cứu hội bạn khỏi chiếc smartphone!?\nGhim bạn thân vào đây để cùng cai nghiện nha 😆\n#fyp #viral #foryou #duet #shorts #tiktok #sangkhampha #tudaibaothu",
+  "textLanguage": "vi",
+  "createTime": 1754395271,
+  "createTimeISO": "2025-08-05T12:01:11.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7252194666731701250",
+   "name": "sangkhampha",
+   "profileUrl": "https://www.tiktok.com/@sangkhampha",
+   "nickName": "Sang Khám Phá",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 15,
+   "friends": 0,
+   "fans": 18700,
+   "heart": 145600,
+   "video": 585,
+   "digg": 12700,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Sang Khám Phá",
+   "musicAuthor": "Sang Khám Phá",
+   "musicOriginal": true,
+   "musicId": "7535070346609740545"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@sangkhampha/video/7535070301361589512",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 42,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 372,
+  "shareCount": 10,
+  "playCount": 14500,
+  "collectCount": 19,
+  "commentCount": 17,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "229207",
+    "name": "fyp",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "20884",
+    "name": "viral",
+    "title": "¡descubre las canciones en tendencia! 🔥➡️ https://bit.ly/TendenciasTikTok_LATAM",
+    "cover": "https://p19-common-sign.tiktokcdn-us.com/musically-maliva-obj/8e4d8102460a60717c89acc2d6367a16.png~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=RKQ%2BryIIzSuF5MqIMm2SOcuBUC4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast5"
+   },
+   {
+    "id": "42164",
+    "name": "foryou",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "30496",
+    "name": "duet",
+    "title": "Two is always better than one, so show us your perfect #Duet.",
+    "cover": "https://p16-common-sign.tiktokcdn-us.com/musically-maliva-obj/dff7a84f4a6523e32f92b9a79b1e4d34~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=S6%2BfNOYA45tFFC7TgohcSwrznN4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast5"
+   },
+   {
+    "id": "15667",
+    "name": "shorts",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "23428",
+    "name": "tiktok",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7495735273771237377",
+    "name": "sangkhampha",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7155718690598551578",
+    "name": "tudaibaothu",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7647726788025666824",
+  "text": "Hậu quả của việc nghiện điện thoại #daycon #bomethongthai ",
+  "textLanguage": "vi",
+  "createTime": 1780625164,
+  "createTimeISO": "2026-06-05T02:06:04.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7121969449057600538",
+   "name": ".senastore",
+   "profileUrl": "https://www.tiktok.com/@.senastore",
+   "nickName": ".senastore",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 48,
+   "friends": 0,
+   "fans": 2393,
+   "heart": 110600,
+   "video": 455,
+   "digg": 115,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Bố Mẹ Thông Thái",
+   "musicAuthor": ".senastore",
+   "musicOriginal": true,
+   "musicId": "7647726870432959253"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@.senastore/video/7647726788025666824",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 42,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-senastore-20260605020604-7647726788025666824-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/6ad5cfa8a5a7c688ab79cac5d19ca41c/6ad6bd4c/video/tos/alisg/tos-alisg-pv-0037/6efebef652c4424bbbfcb5e91a1b4103/?a=1988&bti=ODszNWYuMDE6&&bt=1749&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=MzQ5aW45cnE1OzMzODczNEBpMzQ5aW45cnE1OzMzODczNEAuaGNeMmRzcWVhLS1kMWBzYSMuaGNeMmRzcWVhLS1kMWBzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-senastore-20260605020604-7647726788025666824-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/1f28afc6f37c98a23207d212f8b8eeb6/6ad6bd4c/video/tos/alisg/tos-alisg-pv-0037/01aaecc4f57046f79b5194da75ba5177/?a=1988&bti=ODszNWYuMDE6&&bt=1749&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=MzQ5aW45cnE1OzMzODczNEBpMzQ5aW45cnE1OzMzODczNEAuaGNeMmRzcWVhLS1kMWBzYSMuaGNeMmRzcWVhLS1kMWBzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 164,
+  "shareCount": 682,
+  "playCount": 4452,
+  "collectCount": 5,
+  "commentCount": 21,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "674427",
+    "name": "daycon",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1709418234511370",
+    "name": "bomethongthai",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7600055413865843988",
+  "text": "♥️♥️♥️ #CoQuynhKetNoiGiaDinh #HieuConDungCach #KetNoiVoiCon #YeuThuongKhongDieuKien #HanhTrinhChuaLanh ",
+  "textLanguage": "un",
+  "createTime": 1769525805,
+  "createTimeISO": "2026-01-27T14:56:45.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7494958083992732688",
+   "name": "coquynhketnoigiadinh",
+   "profileUrl": "https://www.tiktok.com/@coquynhketnoigiadinh",
+   "nickName": "Cô Quỳnh - Kết Nối Gia Đình ♥️",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 0,
+   "friends": 0,
+   "fans": 15800,
+   "heart": 587900,
+   "video": 218,
+   "digg": 322,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Cô Quỳnh - Kết Nối Gia Đình ♥️",
+   "musicAuthor": "Cô Quỳnh - Kết Nối Gia Đình ♥️",
+   "musicOriginal": true,
+   "musicId": "7600055529641102098"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@coquynhketnoigiadinh/video/7600055413865843988",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 90,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-coquynhket-20260127145645-7600055413865843988-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/a1c49dbb85f03ac981a78d772a49272d/6ad6bd7c/video/tos/alisg/tos-alisg-pv-0037/dc1e2abb3abd4994a8c5788ed99ae564/?a=1988&bti=ODszNWYuMDE6&&bt=9736&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=Mzl5M2s5cjZnODMzODczNEBpMzl5M2s5cjZnODMzODczNEBfY2cwMmRrMXBhLS1kMTFzYSNfY2cwMmRrMXBhLS1kMTFzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-coquynhket-20260127145645-7600055413865843988-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/8820bb9dd5676c1022fee08b367e1ada/6ad6bd7c/video/tos/alisg/tos-alisg-pv-0037/ad1355dd064f415db601461bcd765fb3/?a=1988&bti=ODszNWYuMDE6&&bt=9736&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=Mzl5M2s5cjZnODMzODczNEBpMzl5M2s5cjZnODMzODczNEBfY2cwMmRrMXBhLS1kMTFzYSNfY2cwMmRrMXBhLS1kMTFzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00048000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 1620,
+  "shareCount": 676,
+  "playCount": 36100,
+  "collectCount": 308,
+  "commentCount": 29,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "7495305592282710017",
+    "name": "coquynhketnoigiadinh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7213053051303624730",
+    "name": "hieucondungcach",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7160987739599405082",
+    "name": "ketnoivoicon",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7342103058614222850",
+    "name": "yeuthuongkhongdieukien",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1655081474406401",
+    "name": "hanhtrinhchualanh",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7654547690730114322",
+  "text": "",
+  "textLanguage": "un",
+  "createTime": 1782213277,
+  "createTimeISO": "2026-06-23T11:14:37.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7049163032937759746",
+   "name": "hoang_hao209",
+   "profileUrl": "https://www.tiktok.com/@hoang_hao209",
+   "nickName": "Hào Móm Cuti",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 36,
+   "friends": 0,
+   "fans": 43200,
+   "heart": 8300000,
+   "video": 422,
+   "digg": 14900,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền",
+   "musicAuthor": "Nhìn Một Ra Mười",
+   "musicOriginal": true,
+   "musicId": "7289403842511604482"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@hoang_hao209/video/7654547690730114322",
+  "videoMeta": {
+   "height": 768,
+   "width": 576,
+   "duration": 14,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-hoang_hao2-20260623111437-7654547690730114322-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/3b56181a69532be6b0bfe4051e5bcd77/6ad6bd30/video/tos/alisg/tos-alisg-pv-0037/9c577c725b64423288e80b4327adb4e5/?a=1988&bti=ODszNWYuMDE6&&bt=1509&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=cnF8b2hsc2d3SkBwaHIxaDFybndmMzkzbmo5cjk5OzMzODczNEBpMzkzbmo5cjk5OzMzODczNEBjRl5Nc3FePmJKYSNvYF90aHFmOiNrZm1fMmRzaXFhLS1kMTFzYSNrZm1fMmRzaXFhLS1kMTFzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00070000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-hoang_hao2-20260623111437-7654547690730114322-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/82832e631bddaab67ba8761f1863189b/6ad6bd30/video/tos/alisg/tos-alisg-pv-0037/c695c769ff0f407bb2b0304f6f170bfd/?a=1988&bti=ODszNWYuMDE6&&bt=1509&ft=aEKq_qT0mIoPD12RnkHI3wUhGLAbMeF~O5&mime_type=video_mp4&rc=cnF8b2hsc2d3SkBwaHIxaDFybndmMzkzbmo5cjk5OzMzODczNEBpMzkzbmo5cjk5OzMzODczNEBjRl5Nc3FePmJKYSNvYF90aHFmOiNrZm1fMmRzaXFhLS1kMTFzYSNrZm1fMmRzaXFhLS1kMTFzcw%3D%3D&l=20261018010017DEB5EF9C3796EE69E449&btag=e00070000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 82800,
+  "shareCount": 268000,
+  "playCount": 1400000,
+  "collectCount": 4407,
+  "commentCount": 1833,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "nghien dien thoai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7074069721720704299",
+  "text": "cách tập trung 100% trong học tập #xuhuong #fallingseeds #ellastudy #studyvlog #studytips #hoccungtiktok #learnontiktok #fyp #foryou",
+  "textLanguage": "vi",
+  "createTime": 1647060207,
+  "createTimeISO": "2022-03-12T04:43:27.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6970634041486427142",
+   "name": "_falling.seeds_",
+   "profileUrl": "https://www.tiktok.com/@_falling.seeds_",
+   "nickName": "Hạt Rơi, PharmD 💊",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 81,
+   "friends": 0,
+   "fans": 178200,
+   "heart": 5700000,
+   "video": 413,
+   "digg": 7792,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Hạt",
+   "musicAuthor": "Hạt Rơi, PharmD 💊",
+   "musicOriginal": true,
+   "musicId": "7074069697095912235"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@_falling.seeds_/video/7074069721720704299",
+  "videoMeta": {
+   "height": 1028,
+   "width": 576,
+   "duration": 59,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 142100,
+  "shareCount": 609,
+  "playCount": 1300000,
+  "collectCount": 12806,
+  "commentCount": 270,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1604496473403393",
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7010593535648858113",
+    "name": "fallingseeds",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1674268802504706",
+    "name": "ellastudy",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "56077108",
+    "name": "studyvlog",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1427617",
+    "name": "studytips",
+    "title": "Do you have the best study tips, hacks, methods or techniques?! From Aug. 19th to Sept 16th, join the #StudyTips Post Contest for a chance to win up to $2000 in cash prizes! Click the link for official rules and how to enter: https://vt.tiktok.com/ZMA2Fe4Et/",
+    "cover": null
+   },
+   {
+    "id": "1640748237792257",
+    "name": "hoccungtiktok",
+    "title": "🎉 #LearnOnTikTok đã chính thức quay trở lại bằng hoạt động kỷ niệm sinh nhật 3 năm hoành tráng. Hãy tiếp tục mang đến những video chất lượng và hữu ích ở các mảng nội dung khác nhau với những hướng khai thác như sau:\n- #HocCungTikTok: Giáo dục, nhà cửa, vườn tược, khoa học,...\n- #AnCungTikTok: Nấu ăn, review đồ ăn, đồ uống, mukbang, du lịch,...\n- #GocLamDep: Chăm sóc da mặt, makeup, mix-match đồ, review sản phẩm,...\n- #GocSangTao: Nội dung nghệ thuật, DIY, grafiti,...\n- #ThanhCongNghe: Chụp ảnh, cách tạo dáng, chỉnh sửa ảnh, dựng video,....\n- #SongKhoe247: Kiến thức thông tin về sức khoẻ, fitness, yoga,...\n- #BookTok: các nội dung về sách như review sách, sự thật thú vị.\n\n📍 Thời gian: 15/07-18/08.\n\n🎁 Đăng tải nội dung ngay để có cơ hội giành giải thưởng siêu hấp dẫn với tổng giá trị lên đến 3 tỷ đồng từ nhiều đường đua khác nhau:\nĐường đua Chính: 07 Giải Nhất + 14 Giải Khuyến Khích cho 7 nhóm hashtag cộng đồng.\nĐường đua Ngôi Sao Mới: Top 03 Ngôi Sao Mới + Top 9 Ngôi Sao Tiềm Năng.\nĐường đua Cống Hiến: 02 Giải Cống Hiến cho #LearnOnTikTok + 02 Giải Cống Hiến cho #BookTok.\n\n👉 Chi tiết thể lệ cuộc thi tìm hiểu thêm ở đây: LINK\n\n📍 Ngoài ra, hoàn thành các nhiệm vụ thú vị trong suốt khoảng thời gian diễn ra chiến dịch để đổi ngay những phần quà giá trị và hàng trăm voucher mua sắm hấp dẫn.\n\n🔥 Còn chần chờ gì nữa? Cùng TikTok kỷ niệm #LearnOnTikTok 3 năm ngay thuiiiii.",
+    "cover": "https://p19-common-sign.tiktokcdn-us.com/tiktok-obj/d9f7d06033542bc541ec1010055ff7e3.png~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=9nSJFoz9Wf0ruGO40FNb5i4N8ag%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8"
+   },
+   {
+    "id": "1636483010861062",
+    "name": "learnontiktok",
+    "title": "Discover something new and learn on TikTok 🧐🧐",
+    "cover": null
+   },
+   {
+    "id": "229207",
+    "name": "fyp",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "42164",
+    "name": "foryou",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7584985930407169298",
+  "text": "7 bài tập rèn luyện trí não giúp khả năng tập trung tăng vọt chỉ với vài phút mỗi ngày\n#LearnOnTikTok #studywithme #naobatmode #videoviral #viralsvideo #tiktok #xuhuongtiktok #rentrinao",
+  "textLanguage": "vi",
+  "createTime": 1766142000,
+  "createTimeISO": "2025-12-19T11:00:00.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6874506922662691841",
+   "name": "naobatmode",
+   "profileUrl": "https://www.tiktok.com/@naobatmode",
+   "nickName": "Não Bật Mode",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 1,
+   "friends": 0,
+   "fans": 60700,
+   "heart": 582200,
+   "video": 133,
+   "digg": 223,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Não Bật Mode",
+   "musicAuthor": "Não Bật Mode",
+   "musicOriginal": true,
+   "musicId": "7584986116453960466"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@naobatmode/video/7584985930407169298",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 605,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-naobatmode-20251219110000-7584985930407169298-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/1b2dbc74f1bc939abf9400a960c90f2a/6ad6bf7f/video/tos/alisg/tos-alisg-pv-0037/c50574150ee0449e9b46eea499fe4b8a/?a=1988&bti=ODszNWYuMDE6&&bt=1318&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=ajpyZWw5cjVuODMzODgzNUBpajpyZWw5cjVuODMzODgzNUBhbWdkMmQ0Yy5hLS1kLzZzYSNhbWdkMmQ0Yy5hLS1kLzZzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00068000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-naobatmode-20251219110000-7584985930407169298-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/ca4a80846de9f5e891b3ab15f37eb665/6ad6bf7f/video/tos/alisg/tos-alisg-pv-0037/f9e5f5fefc0344f4b75886770e02fe91/?a=1988&bti=ODszNWYuMDE6&&bt=1318&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=ajpyZWw5cjVuODMzODgzNUBpajpyZWw5cjVuODMzODgzNUBhbWdkMmQ0Yy5hLS1kLzZzYSNhbWdkMmQ0Yy5hLS1kLzZzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00068000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 42600,
+  "shareCount": 5406,
+  "playCount": 558900,
+  "collectCount": 18494,
+  "commentCount": 490,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7620416606761536789",
+  "text": "Làm thế nào để lấy lại sự tập trung khi học tập? Nếu bạn chưa biết cách thì hãy xem video sau nha\n\n#study #studytok #studytips #studywithme #studyhack #studymotivation #hoctap",
+  "textLanguage": "vi",
+  "createTime": 1774440000,
+  "createTimeISO": "2026-03-25T12:00:00.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6800168785271030786",
+   "name": "laclac_kuaile",
+   "profileUrl": "https://www.tiktok.com/@laclac_kuaile",
+   "nickName": "Học cùng Lạc",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 109,
+   "friends": 0,
+   "fans": 32000,
+   "heart": 1400000,
+   "video": 126,
+   "digg": 3331,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Học cùng Lạc",
+   "musicAuthor": "Học cùng Lạc",
+   "musicOriginal": true,
+   "musicId": "7620416655973272338"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@laclac_kuaile/video/7620416606761536789",
+  "videoMeta": {
+   "height": 1280,
+   "width": 720,
+   "duration": 92,
+   "definition": "720p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-laclac_kua-20260325120000-7620416606761536789-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/06a82ed75bed22106907979a3aa316f2/6ad6bd7e/video/tos/alisg/tos-alisg-pv-0037/c6f38cecc0bc4bb2bee971b9bacc7c45/?a=1988&bti=ODszNWYuMDE6&&bt=5855&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=M2psdWs5cmxsOjMzODgzNUBpM2psdWs5cmxsOjMzODgzNUAvZmgwMmRjZC1hLS1kLzZzYSMvZmgwMmRjZC1hLS1kLzZzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00068000"
+    },
+    {
+     "language": "cmn-Hans-CN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-laclac_kua-20260325120000-7620416606761536789-cmn-Hans-CN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/d1de7c61d57fb804404afae1237c01ac/6ad6bd7e/video/tos/alisg/tos-alisg-pv-0037/09f9fb0cf7704b58ba9cfc21f90ed1e6/?a=1988&bti=ODszNWYuMDE6&&bt=5855&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=M2psdWs5cmxsOjMzODgzNUBpM2psdWs5cmxsOjMzODgzNUAvZmgwMmRjZC1hLS1kLzZzYSMvZmgwMmRjZC1hLS1kLzZzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00068000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 3516,
+  "shareCount": 262,
+  "playCount": 42900,
+  "collectCount": 1355,
+  "commentCount": 8,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "73549",
+    "name": "study",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1621382854945957",
+    "name": "studytok",
+    "title": "Take a seat and study with TikTok.",
+    "cover": null
+   },
+   {
+    "id": "1427617",
+    "name": "studytips",
+    "title": "Do you have the best study tips, hacks, methods or techniques?! From Aug. 19th to Sept 16th, join the #StudyTips Post Contest for a chance to win up to $2000 in cash prizes! Click the link for official rules and how to enter: https://vt.tiktok.com/ZMA2Fe4Et/",
+    "cover": null
+   },
+   {
+    "id": "9752702",
+    "name": "studywithme",
+    "title": "Who says studying can't be fun? Hit the books with us and share your study routine, best study tips or exam advice!",
+    "cover": null
+   },
+   {
+    "id": "24359095",
+    "name": "studyhack",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1623160852753413",
+    "name": "studymotivation",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1604768053494785",
+    "name": "hoctap",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7335270761805909256",
+  "text": "Dạo này mê dự tính zữ lắm rồi đó #studywithme #studygram #studywithhuyen2009 #studytips #studymotivation #tiphoctapmoingay #tiphochieuqua #xuhuong",
+  "textLanguage": "vi",
+  "createTime": 1707875820,
+  "createTimeISO": "2024-02-14T01:57:00.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6979945239583458306",
+   "name": "vieunbox23",
+   "profileUrl": "https://www.tiktok.com/@vieunbox23",
+   "nickName": "Vie Unbox",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 291,
+   "friends": 0,
+   "fans": 33800,
+   "heart": 1800000,
+   "video": 1034,
+   "digg": 104300,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "พี่ชอบหนูที่สุดเลย (I Like You The Most) (Speed Up)",
+   "musicAuthor": "PONCHET",
+   "musicOriginal": false,
+   "musicAlbum": "พี่ชอบหนูที่สุดเลย",
+   "musicId": "7296136277207730178"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@vieunbox23/video/7335270761805909256",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 36,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 13800,
+  "shareCount": 47,
+  "playCount": 109700,
+  "collectCount": 1546,
+  "commentCount": 135,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "9752702",
+    "name": "studywithme",
+    "title": "Who says studying can't be fun? Hit the books with us and share your study routine, best study tips or exam advice!",
+    "cover": null
+   },
+   {
+    "id": "33873418",
+    "name": "studygram",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7133052281187991553",
+    "name": "studywithhuyen2009",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1427617",
+    "name": "studytips",
+    "title": "Do you have the best study tips, hacks, methods or techniques?! From Aug. 19th to Sept 16th, join the #StudyTips Post Contest for a chance to win up to $2000 in cash prizes! Click the link for official rules and how to enter: https://vt.tiktok.com/ZMA2Fe4Et/",
+    "cover": null
+   },
+   {
+    "id": "1623160852753413",
+    "name": "studymotivation",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7126391828739751962",
+    "name": "tiphoctapmoingay",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7158810232699748378",
+    "name": "tiphochieuqua",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1604496473403393",
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7453424897654623509",
+  "text": "Một tip đáng bay cám dỗ củ thiết bị điện tử khiến bạn tập trung học kì hiệu quả 🤫 không phải ai cũng biết ",
+  "textLanguage": "vi",
+  "createTime": 1735385724,
+  "createTimeISO": "2024-12-28T11:35:24.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7419220244500431878",
+   "name": "edu.true",
+   "profileUrl": "https://www.tiktok.com/@edu.true",
+   "nickName": "True Education",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 0,
+   "friends": 0,
+   "fans": 14100,
+   "heart": 272100,
+   "video": 61,
+   "digg": 24,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Global Chinsese Academy",
+   "musicAuthor": "True Education",
+   "musicOriginal": true,
+   "musicId": "7453425020472396561"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@edu.true/video/7453424897654623509",
+  "videoMeta": {
+   "height": 576,
+   "width": 1024,
+   "duration": 149,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-edutrue-20241228113524-7453424897654623509-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/679f7393f451eaa6d8ad599c3b4e5d4b/6ad6bdb7/video/tos/alisg/tos-alisg-pv-0037/3676e6591bc64e298b6c649a708c3b62/?a=1988&bti=ODszNWYuMDE6&&bt=631&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=ajN4ZXE5cjV4dzMzODczNEBpajN4ZXE5cjV4dzMzODczNEBjXnFjMmQ0MWtgLS1kMTFzYSNjXnFjMmQ0MWtgLS1kMTFzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00050000"
+    },
+    {
+     "language": "cmn-Hans-CN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-edutrue-20241228113524-7453424897654623509-cmn-Hans-CN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/f77cd4b9eae8903399c2ab566b95c11a/6ad6bdb7/video/tos/alisg/tos-alisg-pv-0037/d42f83c0f92d40ee84f6c7de032d3a4e/?a=1988&bti=ODszNWYuMDE6&&bt=631&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=ajN4ZXE5cjV4dzMzODczNEBpajN4ZXE5cjV4dzMzODczNEBjXnFjMmQ0MWtgLS1kMTFzYSNjXnFjMmQ0MWtgLS1kMTFzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 20000,
+  "shareCount": 945,
+  "playCount": 182600,
+  "collectCount": 6116,
+  "commentCount": 45,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7438228867069857044",
+  "text": "Làm theo cách này đảm bảo 100% tập trung học liên tục 12 tiếng/ ngày luôn. Quay lại cảm ơn mình sau nhé #learnontiktok #studytok #vulaci #education #tips #hoccungtiktok #whitenoise #focus #university ",
+  "textLanguage": "vi",
+  "createTime": 1731847622,
+  "createTimeISO": "2024-11-17T12:47:02.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7012616758508274715",
+   "name": "ngocanh.buii",
+   "profileUrl": "https://www.tiktok.com/@ngocanh.buii",
+   "nickName": "Hope It Helps ✨",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 227,
+   "friends": 0,
+   "fans": 1100000,
+   "heart": 16500000,
+   "video": 323,
+   "digg": 4431,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Hope It Helps ✨",
+   "musicAuthor": "Hope It Helps ✨",
+   "musicOriginal": true,
+   "musicId": "7438229897761966865"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@ngocanh.buii/video/7438228867069857044",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 101,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-ngocanhbui-20241117124702-7438228867069857044-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/b394644bc96266dbbb2214734cc2bdb0/6ad6bd87/video/tos/alisg/tos-alisg-pv-0037/449ec19cdb0e40b89715a6ae41a6524c/?a=1988&bti=ODszNWYuMDE6&&bt=1810&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=ajl2ang5cjp4djMzODczNEBpajl2ang5cjp4djMzODczNEBpYGU1MmRzX3BgLS1kMTFzYSNpYGU1MmRzX3BgLS1kMTFzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-ngocanhbui-20241117124702-7438228867069857044-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/ddc2a70121a91bc2ca3fd6b27821b7d1/6ad6bd87/video/tos/alisg/tos-alisg-pv-0037/8865720b06bf46c9b021f08b911e06a1/?a=1988&bti=ODszNWYuMDE6&&bt=1810&ft=4KLMeMzm8Zmo09ge7a4jVaKkQpWrKsd.&mime_type=video_mp4&rc=ajl2ang5cjp4djMzODczNEBpajl2ang5cjp4djMzODczNEBpYGU1MmRzX3BgLS1kMTFzYSNpYGU1MmRzX3BgLS1kMTFzcw%3D%3D&l=20261018010017DF18242142A87D482292&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 3691,
+  "shareCount": 191,
+  "playCount": 62800,
+  "collectCount": 1302,
+  "commentCount": 21,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1636483010861062",
+    "name": "learnontiktok",
+    "title": "Discover something new and learn on TikTok 🧐🧐",
+    "cover": null
+   },
+   {
+    "id": "1621382854945957",
+    "name": "studytok",
+    "title": "Take a seat and study with TikTok.",
+    "cover": null
+   },
+   {
+    "id": "1620839697387686",
+    "name": "vulaci",
+    "title": "VULACI NETWORK - MCN, TikTok Official Partner \n\n🔹 Mạng lưới sáng tạo nội dung đa chủ đề, đa nền tảng \n\n🔹 Một thương hiệu chiến lược, nổi bật trực thuộc hệ sinh truyền thông VULACI GROUP\n\n🔹 Một trong những đối tác nội dung hàng đầu của TikTok tại Việt Nam; hỗ trợ các nhà sáng tạo từ chuyên nghiệp hóa hình ảnh, thương hiệu cá nhân tới nâng cao thu nhập từ việc hợp tác với những nhãn hàng uy tín\n\n🔹 Một cộng đồng với thế mạnh trong mảng giáo dục, đời sống; ưu tiên những nội dung chất lượng, mang nhiều thông tin hữu ích, có giá trị tích cực và bền vững với xã hội \n\n🔹 VULACI NETWORK không định hướng nhà sáng tạo theo cách mà chúng mình muốn, VULACI NETWORK chỉ tập trung lắng nghe, thấu hiểu và nỗ lực giúp đỡ đối tác nhận ra bản thân muốn gì, có gì, phải làm gì... trên hành trình sáng tạo nội dung đầy cơ hội cùng thách thức \n\nNiềm tin và sự phù hợp sẽ kết nối chúng ta lại với nhau. Đội ngũ VULACI NETWORK luôn ở đây và chào đón bạn ❤️",
+    "cover": null
+   },
+   {
+    "id": "97277",
+    "name": "education",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "79189",
+    "name": "tips",
+    "title": "Show us your pro #Tips.",
+    "cover": null
+   },
+   {
+    "id": "1640748237792257",
+    "name": "hoccungtiktok",
+    "title": "🎉 #LearnOnTikTok đã chính thức quay trở lại bằng hoạt động kỷ niệm sinh nhật 3 năm hoành tráng. Hãy tiếp tục mang đến những video chất lượng và hữu ích ở các mảng nội dung khác nhau với những hướng khai thác như sau:\n- #HocCungTikTok: Giáo dục, nhà cửa, vườn tược, khoa học,...\n- #AnCungTikTok: Nấu ăn, review đồ ăn, đồ uống, mukbang, du lịch,...\n- #GocLamDep: Chăm sóc da mặt, makeup, mix-match đồ, review sản phẩm,...\n- #GocSangTao: Nội dung nghệ thuật, DIY, grafiti,...\n- #ThanhCongNghe: Chụp ảnh, cách tạo dáng, chỉnh sửa ảnh, dựng video,....\n- #SongKhoe247: Kiến thức thông tin về sức khoẻ, fitness, yoga,...\n- #BookTok: các nội dung về sách như review sách, sự thật thú vị.\n\n📍 Thời gian: 15/07-18/08.\n\n🎁 Đăng tải nội dung ngay để có cơ hội giành giải thưởng siêu hấp dẫn với tổng giá trị lên đến 3 tỷ đồng từ nhiều đường đua khác nhau:\nĐường đua Chính: 07 Giải Nhất + 14 Giải Khuyến Khích cho 7 nhóm hashtag cộng đồng.\nĐường đua Ngôi Sao Mới: Top 03 Ngôi Sao Mới + Top 9 Ngôi Sao Tiềm Năng.\nĐường đua Cống Hiến: 02 Giải Cống Hiến cho #LearnOnTikTok + 02 Giải Cống Hiến cho #BookTok.\n\n👉 Chi tiết thể lệ cuộc thi tìm hiểu thêm ở đây: LINK\n\n📍 Ngoài ra, hoàn thành các nhiệm vụ thú vị trong suốt khoảng thời gian diễn ra chiến dịch để đổi ngay những phần quà giá trị và hàng trăm voucher mua sắm hấp dẫn.\n\n🔥 Còn chần chờ gì nữa? Cùng TikTok kỷ niệm #LearnOnTikTok 3 năm ngay thuiiiii.",
+    "cover": "https://p19-common-sign.tiktokcdn-us.com/tiktok-obj/d9f7d06033542bc541ec1010055ff7e3.png~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=9nSJFoz9Wf0ruGO40FNb5i4N8ag%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8"
+   },
+   {
+    "id": "101899",
+    "name": "whitenoise",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "10059",
+    "name": "focus",
+    "title": "When you try to focus but you can't",
+    "cover": "https://p16-common-sign.tiktokcdn-us.com/tiktok-obj/e792834658d1cfc7ecc0f6252064b601.png~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=psPokFX1Mv2vuo1GLwmU3E4aqZc%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8"
+   },
+   {
+    "id": "21125",
+    "name": "university",
+    "title": "Feeling overwhelmed by which course and university to choose, or anxious about transitioning to university life? Let's hear from experienced seniors and professors to help you make your choice!",
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7662223685020912914",
+  "text": "4 CÁCH GIÚP BẠN TẬP TRUNG TỐI ĐA KHI HỌC 📚\n\n1. Quay timelapse khi học 🎥\n\nChỉ cần bấm quay là bạn sẽ có cảm giác như đang có người \"giám sát\", từ đó tự giác và nghiêm túc hơn. Tự nhiên cũng bớt ngáp ngắn ngáp dài, bớt ngồi siêu vẹo và ít cầm điện thoại hơn. 😆\n\n2. Bật chế độ \"Không làm phiền\" và tắt mạng xã hội 📵\n\nKhi học, mình không mở các tab mạng xã hội và cũng tắt thông báo trên điện thoại. Chỉ cần một chiếc notification hiện lên thôi là rất dễ tò mò bấm vào xem, rồi mất luôn mạch tập trung.\n\n3. Đổi không gian, ra quán cà phê học ☕\n\nThỉnh thoảng đổi không khí sẽ giúp mình tỉnh táo hơn. Ngồi ở nơi có mọi người học tập, làm việc cũng tạo động lực để mình tập trung và duy trì năng lượng tốt hơn.\n\n4. Tham gia challenge và đặt thời gian học cụ thể ⏰\n\nGần đây mình tạo challenge 21 ngày học cùng mọi người. Mình học tiếng Trung, các bạn học tiếng Anh. Điều thú vị là từ mục tiêu chỉ học 15-30 phút, nhiều hôm mình học gần 1 tiếng vì phần có động lực, phần còn lại là mê học. Nếu chưa có challenge, bạn có thể rủ bạn bè học cùng, mỗi ngày cập nhật kết quả cho nhau. Ai bỏ cuộc thì... phạt nhẹ một chút nhé. 😂\n\nBạn đã thử cách nào rồi? Hay bạn còn có \"mẹo\" nào giúp tập trung hơn khi học? Chia sẻ bên dưới để mọi người cùng áp dụng nha! 💙\n\n#cogiao #tienganh ",
+  "textLanguage": "vi",
+  "createTime": 1784000484,
+  "createTimeISO": "2026-07-14T03:41:24.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7165720573149856770",
+   "name": "sang.chloe",
+   "profileUrl": "https://www.tiktok.com/@sang.chloe",
+   "nickName": "Cô Sang dạy Tiếng Anh",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 86,
+   "friends": 0,
+   "fans": 215500,
+   "heart": 2200000,
+   "video": 700,
+   "digg": 325,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "original sound - Cô Sang dạy Tiếng Anh",
+   "musicAuthor": "Cô Sang dạy Tiếng Anh",
+   "musicOriginal": true,
+   "musicId": "7662223737135827733"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@sang.chloe/video/7662223685020912914",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 14,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 101,
+  "shareCount": 0,
+  "playCount": 3161,
+  "collectCount": 7,
+  "commentCount": 0,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "44600485",
+    "name": "cogiao",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1609208779167745",
+    "name": "tienganh",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "cach tap trung hoc bai",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7696757165662457096",
+  "text": "Nhìn vậy chớ toàn bị dối lừa #xh #sinhvien #uth ",
+  "textLanguage": "vi",
+  "createTime": 1792040931,
+  "createTimeISO": "2026-10-15T05:08:51.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "6902424651835851777",
+   "name": "tui_la_sudo_ne",
+   "profileUrl": "https://www.tiktok.com/@tui_la_sudo_ne",
+   "nickName": "Nhan Phan",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 143,
+   "friends": 0,
+   "fans": 721,
+   "heart": 18600,
+   "video": 8,
+   "digg": 99100,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - 24h miss anh 💞💞",
+   "musicAuthor": "24h miss anh 💞💞",
+   "musicOriginal": true,
+   "musicId": "7616733326463798034"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@tui_la_sudo_ne/video/7696757165662457096",
+  "videoMeta": {
+   "height": 1022,
+   "width": 576,
+   "duration": 22,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 11300,
+  "shareCount": 2858,
+  "playCount": 108900,
+  "collectCount": 573,
+  "commentCount": 128,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "xh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "sinhvien",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "uth",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7686318121350614292",
+  "text": "Sg hoa lệ #ship #sinhvien #xuhuong #fyp ",
+  "textLanguage": "vi",
+  "createTime": 1789610403,
+  "createTimeISO": "2026-09-17T02:00:03.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7015955669123875842",
+   "name": "changg_chip",
+   "profileUrl": "https://www.tiktok.com/@changg_chip",
+   "nickName": "Trieuu Trang 🌼",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 210,
+   "friends": 0,
+   "fans": 8535,
+   "heart": 253300,
+   "video": 87,
+   "digg": 7290,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - maiyeuem",
+   "musicAuthor": "maiyeuem",
+   "musicOriginal": true,
+   "musicId": "7682287221341784839"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@changg_chip/video/7686318121350614292",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 13,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 15400,
+  "shareCount": 1743,
+  "playCount": 228600,
+  "collectCount": 496,
+  "commentCount": 183,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "ship",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "sinhvien",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "fyp",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7695633230262734100",
+  "text": "Ngán lắm….\n#xuhuongtiktok #sinhvien \n#xuhuong #fyp ",
+  "textLanguage": "vi",
+  "createTime": 1791779249,
+  "createTimeISO": "2026-10-12T04:27:29.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7185476092727444506",
+   "name": "nycuataodau_22",
+   "profileUrl": "https://www.tiktok.com/@nycuataodau_22",
+   "nickName": "Nấu ngon nhưng dở🥦",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 73,
+   "friends": 0,
+   "fans": 5296,
+   "heart": 475300,
+   "video": 18,
+   "digg": 7966,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Mây Nè🧝‍♀️",
+   "musicAuthor": "Mây Thúi☹️💗",
+   "musicOriginal": true,
+   "musicId": "7544635967357995777"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@nycuataodau_22/video/7695633230262734100",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 18,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 21400,
+  "shareCount": 18400,
+  "playCount": 274900,
+  "collectCount": 311,
+  "commentCount": 387,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "xuhuongtiktok",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "sinhvien",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "xuhuong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "fyp",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7574271222339489032",
+  "text": "Dạ sinh viên Viện Đèo... #uth ",
+  "textLanguage": "vi",
+  "createTime": 1763522449,
+  "createTimeISO": "2025-11-19T03:20:49.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "6777360819539280897",
+   "name": "hnnltc58",
+   "profileUrl": "https://www.tiktok.com/@hnnltc58",
+   "nickName": "Ăn chua ún ngọt",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 17,
+   "friends": 0,
+   "fans": 1226,
+   "heart": 48900,
+   "video": 42,
+   "digg": 1484,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Ngô Trần Bảo Anh",
+   "musicAuthor": "Ngô Trần Bảo Anh",
+   "musicOriginal": true,
+   "musicId": "7556996020501039873"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@hnnltc58/video/7574271222339489032",
+  "videoMeta": {
+   "height": 768,
+   "width": 576,
+   "duration": 14,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 8445,
+  "shareCount": 1185,
+  "playCount": 150400,
+  "collectCount": 270,
+  "commentCount": 108,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "uth",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7687187186097147143",
+  "text": "Một ngày của sinh viên CSSĐ✨#vlog #sinhvien #tiktok ",
+  "textLanguage": "vi",
+  "createTime": 1789812747,
+  "createTimeISO": "2026-09-19T10:12:27.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7098118223183086593",
+   "name": "ngdiew08",
+   "profileUrl": "https://www.tiktok.com/@ngdiew08",
+   "nickName": "Diew🌷",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 73,
+   "friends": 0,
+   "fans": 21100,
+   "heart": 744800,
+   "video": 96,
+   "digg": 62200,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc",
+   "musicAuthor": "Diew🌷",
+   "musicOriginal": true,
+   "musicId": "7687188898748926727"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@ngdiew08/video/7687187186097147143",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 122,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-ngdiew08-20260919101227-7687187186097147143-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/dfa2bb949bfef3d7e273bf3e75aa01bb/6ad6bd9f/video/tos/alisg/tos-alisg-pv-0037/30d1be21b7e44eb8b467a5bec2d6e38e/?a=1988&bti=ODszNWYuMDE6&&bt=2725&ft=4KLMeMzm8Zmo0vge7a4jV~3bQpWrKsd.&mime_type=video_mp4&rc=amZ3M285cnE4ZDMzODczNEBpamZ3M285cnE4ZDMzODczNEBsbjBzMmRzcGthLS1kMTFzYSNsbjBzMmRzcGthLS1kMTFzcw%3D%3D&l=20261018010019AB06A0B5E5D2C4475181&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-ngdiew08-20260919101227-7687187186097147143-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:big_caption",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/1ce8aa4ca918296508b327c62f4fd2a9/6ad6bd9f/video/tos/alisg/tos-alisg-pv-0037/18476c5ad72246c985d20e52883c2b9c/?a=1988&bti=ODszNWYuMDE6&&bt=2725&ft=4KLMeMzm8Zmo0vge7a4jV~3bQpWrKsd.&mime_type=video_mp4&rc=amZ3M285cnE4ZDMzODczNEBpamZ3M285cnE4ZDMzODczNEBsbjBzMmRzcGthLS1kMTFzYSNsbjBzMmRzcGthLS1kMTFzcw%3D%3D&l=20261018010019AB06A0B5E5D2C4475181&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 247,
+  "shareCount": 144,
+  "playCount": 7304,
+  "collectCount": 15,
+  "commentCount": 19,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "vlog",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "sinhvien",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "tiktok",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7697606821262920981",
+  "text": "Huanji hạng mục nào cũng có, mấy bạn sinh viên cũng rất khét 💪\n#xh #thehinh #sinhvien #gymtok #college ",
+  "textLanguage": "vi",
+  "createTime": 1792238755,
+  "createTimeISO": "2026-10-17T12:05:55.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7636222005771944981",
+   "name": "douyinfitness",
+   "profileUrl": "https://www.tiktok.com/@douyinfitness",
+   "nickName": "Mít Tờ Ô ⭕",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 25,
+   "friends": 0,
+   "fans": 8976,
+   "heart": 739300,
+   "video": 377,
+   "digg": 4186,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Mít Tờ Ô ⭕",
+   "musicAuthor": "Mít Tờ Ô ⭕",
+   "musicOriginal": true,
+   "musicId": "7697606883879832372"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@douyinfitness/video/7697606821262920981",
+  "videoMeta": {
+   "height": 1022,
+   "width": 576,
+   "duration": 112,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 437,
+  "shareCount": 173,
+  "playCount": 10100,
+  "collectCount": 20,
+  "commentCount": 18,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "xh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "thehinh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "sinhvien",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "gymtok",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": null,
+    "name": "college",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7678898999247572245",
+  "text": "Xe sinh viên nè cả nhà ơi 😁 🖤📸\n\n#xsr155 ",
+  "textLanguage": "vi",
+  "createTime": 1787883002,
+  "createTimeISO": "2026-08-28T02:10:02.000Z",
+  "isAd": false,
+  "hasTikTokShopProduct": false,
+  "authorMeta": {
+   "id": "7051095109522457601",
+   "name": "yang.motor",
+   "profileUrl": "https://www.tiktok.com/@yang.motor",
+   "nickName": "yang.motor",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 23,
+   "friends": 0,
+   "fans": 385600,
+   "heart": 7300000,
+   "video": 312,
+   "digg": 2916,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "FREAKED OUT",
+   "musicAuthor": "Fat Papi & prodshushy",
+   "musicOriginal": false,
+   "musicAlbum": "FREAKED OUT",
+   "musicId": "7644346595656730640"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@yang.motor/video/7678898999247572245",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 22,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 28700,
+  "shareCount": 1867,
+  "playCount": 678800,
+  "collectCount": 2519,
+  "commentCount": 224,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": null,
+    "name": "xsr155",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "input": "sinhvien",
+  "isStory": false,
+  "searchHashtag": {
+   "name": "sinhvien",
+   "views": 18400000000
+  },
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7620113093401627924",
+  "text": "lười học quá thì làm sao #LearnOnTikTok #hoccungtiktok #biquyetdodaihoc #lười #học ",
+  "textLanguage": "vi",
+  "createTime": 1774195845,
+  "createTimeISO": "2026-03-22T16:10:45.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6938321316936467457",
+   "name": "biquyetdodaihoc",
+   "profileUrl": "https://www.tiktok.com/@biquyetdodaihoc",
+   "nickName": "Bí quyết đỗ Đại Học Tạ Duy Hải",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 88,
+   "friends": 0,
+   "fans": 1500000,
+   "heart": 84500000,
+   "video": 9882,
+   "digg": 87400,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "âm thanh gốc - Bí quyết đỗ Đại Học Tạ Duy Hải",
+   "musicAuthor": "Bí quyết đỗ Đại Học Tạ Duy Hải",
+   "musicOriginal": true,
+   "musicId": "7620113159667419911"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@biquyetdodaihoc/video/7620113093401627924",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 45,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-biquyetdod-20260322161045-7620113093401627924-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/4bdceac69cce3ec7a9292e88e010d91a/6ad6bd51/video/tos/alisg/tos-alisg-pv-0037/9a7970bba40a451188b569bd8431a3d2/?a=1988&bti=ODszNWYuMDE6&&bt=6001&ft=4KLMeMzm8Zmo0Sge7a4jVxb.dpWrKsd.&mime_type=video_mp4&rc=M2Zta3k5cnA0OjMzODczNEBpM2Zta3k5cnA0OjMzODczNEAvZzFeMmRzNS1hLS1kMWBzYSMvZzFeMmRzNS1hLS1kMWBzcw%3D%3D&l=202610180100190406FAFEF48BFD61037C&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-biquyetdod-20260322161045-7620113093401627924-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:whisper_lid",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/3d70eada61ea6eaff4f8821dc0c803ba/6ad6bd51/video/tos/alisg/tos-alisg-pv-0037/1055ed4102ed4e0eaa60e3a9aea4c746/?a=1988&bti=ODszNWYuMDE6&&bt=6001&ft=4KLMeMzm8Zmo0Sge7a4jVxb.dpWrKsd.&mime_type=video_mp4&rc=M2Zta3k5cnA0OjMzODczNEBpM2Zta3k5cnA0OjMzODczNEAvZzFeMmRzNS1hLS1kMWBzYSMvZzFeMmRzNS1hLS1kMWBzcw%3D%3D&l=202610180100190406FAFEF48BFD61037C&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 9542,
+  "shareCount": 2103,
+  "playCount": 110800,
+  "collectCount": 921,
+  "commentCount": 45,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1636483010861062",
+    "name": "learnontiktok",
+    "title": "Discover something new and learn on TikTok 🧐🧐",
+    "cover": null
+   },
+   {
+    "id": "1640748237792257",
+    "name": "hoccungtiktok",
+    "title": "🎉 #LearnOnTikTok đã chính thức quay trở lại bằng hoạt động kỷ niệm sinh nhật 3 năm hoành tráng. Hãy tiếp tục mang đến những video chất lượng và hữu ích ở các mảng nội dung khác nhau với những hướng khai thác như sau:\n- #HocCungTikTok: Giáo dục, nhà cửa, vườn tược, khoa học,...\n- #AnCungTikTok: Nấu ăn, review đồ ăn, đồ uống, mukbang, du lịch,...\n- #GocLamDep: Chăm sóc da mặt, makeup, mix-match đồ, review sản phẩm,...\n- #GocSangTao: Nội dung nghệ thuật, DIY, grafiti,...\n- #ThanhCongNghe: Chụp ảnh, cách tạo dáng, chỉnh sửa ảnh, dựng video,....\n- #SongKhoe247: Kiến thức thông tin về sức khoẻ, fitness, yoga,...\n- #BookTok: các nội dung về sách như review sách, sự thật thú vị.\n\n📍 Thời gian: 15/07-18/08.\n\n🎁 Đăng tải nội dung ngay để có cơ hội giành giải thưởng siêu hấp dẫn với tổng giá trị lên đến 3 tỷ đồng từ nhiều đường đua khác nhau:\nĐường đua Chính: 07 Giải Nhất + 14 Giải Khuyến Khích cho 7 nhóm hashtag cộng đồng.\nĐường đua Ngôi Sao Mới: Top 03 Ngôi Sao Mới + Top 9 Ngôi Sao Tiềm Năng.\nĐường đua Cống Hiến: 02 Giải Cống Hiến cho #LearnOnTikTok + 02 Giải Cống Hiến cho #BookTok.\n\n👉 Chi tiết thể lệ cuộc thi tìm hiểu thêm ở đây: LINK\n\n📍 Ngoài ra, hoàn thành các nhiệm vụ thú vị trong suốt khoảng thời gian diễn ra chiến dịch để đổi ngay những phần quà giá trị và hàng trăm voucher mua sắm hấp dẫn.\n\n🔥 Còn chần chờ gì nữa? Cùng TikTok kỷ niệm #LearnOnTikTok 3 năm ngay thuiiiii.",
+    "cover": "https://p16-common-sign.tiktokcdn-us.com/tiktok-obj/d9f7d06033542bc541ec1010055ff7e3.png~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=d0XAlg3xlxvb3aMhYgsUr0JrYz4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast5"
+   },
+   {
+    "id": "1694393151017986",
+    "name": "biquyetdodaihoc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "84469520",
+    "name": "lười",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1586833635400705",
+    "name": "học",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7338025258953248018",
+  "text": "Tip dành cho ai đang uể oải, ì, lười hậu Tết nè! Vượt lười nào! #tetngonlanh #tetthanhthoi #dinhduong #giaudam #myumminess #myngonlanh #meocuocsong #productivitytips #ancungtiktok #tryitwithtiktok ",
+  "textLanguage": "vi",
+  "createTime": 1708517149,
+  "createTimeISO": "2024-02-21T12:05:49.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6632554998683320321",
+   "name": "myumminess",
+   "profileUrl": "https://www.tiktok.com/@myumminess",
+   "nickName": "Nguyễn Hồ Trà My",
+   "verified": true,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 368,
+   "friends": 0,
+   "fans": 1400000,
+   "heart": 77400000,
+   "video": 1803,
+   "digg": 10700,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "original sound - Nguyễn Hồ Trà My",
+   "musicAuthor": "Nguyễn Hồ Trà My",
+   "musicOriginal": true,
+   "musicId": "7338025318516656897"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@myumminess/video/7338025258953248018",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 75,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": [
+    {
+     "language": "eng-US",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-myumminess-20240221120549-7338025258953248018-eng-US.vtt",
+     "source": "MT",
+     "sourceUnabbreviated": "machine translation",
+     "version": "4",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/4f8ea07a38b8d21a0167b3adadf349ec/6ad6bd6f/video/tos/alisg/tos-alisg-pv-0037/356ffe27d3bc482db792846324346a55/?a=1988&bti=ODszNWYuMDE6&&bt=1507&ft=4KLMeMzm8Zmo0Sge7a4jVxb.dpWrKsd.&mime_type=video_mp4&rc=ajZ3bXY5cjZ4cTMzODczNEBpajZ3bXY5cjZ4cTMzODczNEByLmMwMmQ0YV5gLS1kMTFzYSNyLmMwMmQ0YV5gLS1kMTFzcw%3D%3D&l=202610180100190406FAFEF48BFD61037C&btag=e00050000"
+    },
+    {
+     "language": "vie-VN",
+     "downloadLink": "https://api.apify.com/v2/key-value-stores/geaTq9ficLF2fAOrd/records/subtitle-myumminess-20240221120549-7338025258953248018-vie-VN.vtt",
+     "source": "ASR",
+     "sourceUnabbreviated": "automatic speech recognition",
+     "version": "1:llm",
+     "tiktokLink": "https://v16m-webapp.tiktokcdn-us.com/2e654da690afec0bdc5ed28acd433fac/6ad6bd6f/video/tos/alisg/tos-alisg-pv-0037/88642d1c3b7c4141bd69383094a38978/?a=1988&bti=ODszNWYuMDE6&&bt=1507&ft=4KLMeMzm8Zmo0Sge7a4jVxb.dpWrKsd.&mime_type=video_mp4&rc=ajZ3bXY5cjZ4cTMzODczNEBpajZ3bXY5cjZ4cTMzODczNEByLmMwMmQ0YV5gLS1kMTFzYSNyLmMwMmQ0YV5gLS1kMTFzcw%3D%3D&l=202610180100190406FAFEF48BFD61037C&btag=e00050000"
+    }
+   ],
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 1742,
+  "shareCount": 6,
+  "playCount": 35200,
+  "collectCount": 68,
+  "commentCount": 11,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1687746253791234",
+    "name": "tetngonlanh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7058972264649195547",
+    "name": "tetthanhthoi",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1612225997583362",
+    "name": "dinhduong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1698795361620993",
+    "name": "giaudam",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1698100805056514",
+    "name": "myumminess",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7021876482716729371",
+    "name": "myngonlanh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1645470593123329",
+    "name": "meocuocsong",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1643090268871686",
+    "name": "productivitytips",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1636101895050242",
+    "name": "ancungtiktok",
+    "title": "Tham gia #AnCungTikTok cùng cộng đồng yêu ẩm thực bằng cách:\n- Nhấn “Tham gia ngay” tại https://vt.tiktok.com/ZS4Yuu6mA/\n- Đăng tối thiểu 2 video\n- Đầu tư nội dung chất lượng cao, hấp dẫn và được sản xuất chỉn chu\n- Chia sẻ những nội dung về món ăn, trải nghiệm ẩm thực và cách bạn thưởng thức chúng\n\n📅 Thời gian diễn ra: từ ngày 22 tháng 9 đến hết ngày 22 tháng 10 năm 2026",
+    "cover": null
+   },
+   {
+    "id": "1687135226267649",
+    "name": "tryitwithtiktok",
+    "title": "Xem đã vui, thử làm lại càng thích! Vì rất nhiều điều hay ho hữu ích đều có trên TikTok. Đã thích thì duet hoặc stitch ngay với video cực cuốn từ các nhà sáng tạo nội dung. Có đến 6 chủ đề để bạn thỏa sức lựa chọn. \n\nMẹo thời trang: ​https://www.tiktok.com/@tetelinh/video/7234128468118670598\nMẹo nấu ăn: ​https://www.tiktok.com/@genjadao/video/7233725329695673606\nMẹo khéo tay: ​https://www.tiktok.com/@chaukha.../video/7233741874002054405\nMẹp làm đẹp: ​https://www.tiktok.com/@vanmiu.../video/7233761912952048902\nMẹo du lịch/trải nghiệm: ​https://www.tiktok.com/@travip/video/7233731281895345413\nMẹo tập luyện: ​https://www.tiktok.com/@vananh.../video/7233779942847302918\n Hoặc là tự mình chia sẻ những mẹo hay mà bạn biết cùng hashtag #TryItWithTikTok nhé! \n\nỞ mỗi chủ đề, TikTok sẽ chọn ra 02 bạn xuất sắc nhất để trao phần quà vô cùng đặc biệt là hộp quà thời thượng từ TikTok, bao gồm nón, áo hoodie và nhiều phụ kiện xinh xắn khác. Thời gian tham gia: Từ 19/5 đến 31/5 \n\nCơ hội trổ tài, ngại gì không thử? Trăm Xem Không Bằng Một Thử #TryItWithTikTok Khám phá chi tiết chiến dịch tại: https://snssdk1180.onelink.me/BAuo/i2drox3x",
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7509041950813850898",
+  "text": "Tình cờ xem được một video của anh Duy Muối về cách chữa lười trong công việc, mình nghĩ ngay đến việc áp dụng nó vào trong chăm sóc sức khoẻ - Thứ mình và bất cứ ai cũng nên dành nhiều sự ưu tiên #onganh #onganhhealthy ",
+  "textLanguage": "vi",
+  "createTime": 1748335076,
+  "createTimeISO": "2025-05-27T08:37:56.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7488833575925122056",
+   "name": "onganhhealthy",
+   "profileUrl": "https://www.tiktok.com/@onganhhealthy",
+   "nickName": "Óng Ánh",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 21,
+   "friends": 0,
+   "fans": 5482,
+   "heart": 111200,
+   "video": 171,
+   "digg": 446,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "Messy",
+   "musicAuthor": "Lola Young",
+   "musicOriginal": false,
+   "musicAlbum": "Messy",
+   "musicId": "7364506549686257665"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@onganhhealthy/video/7509041950813850898",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 40,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 145,
+  "shareCount": 13,
+  "playCount": 8713,
+  "collectCount": 45,
+  "commentCount": 7,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1616913600824321",
+    "name": "onganh",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7496369357807681552",
+    "name": "onganhhealthy",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7143144921371790594",
+  "text": "7 tips đơn giản giúp bạn vượt qua sự lười biếng! #noluc #cogang #phattrienbanthan #luoibieng",
+  "textLanguage": "vi",
+  "createTime": 1663143037,
+  "createTimeISO": "2022-09-14T08:10:37.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "7104562649153618950",
+   "name": "tri_gakhomongmo",
+   "profileUrl": "https://www.tiktok.com/@tri_gakhomongmo",
+   "nickName": "Góc chữa lành của Trí",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 51,
+   "friends": 0,
+   "fans": 5830,
+   "heart": 79300,
+   "video": 72,
+   "digg": 70,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Góc của Biz 💬",
+   "musicAuthor": "Góc chữa lành của Trí",
+   "musicOriginal": true,
+   "musicId": "7143144928745409282"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@tri_gakhomongmo/video/7143144921371790594",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 37,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 561,
+  "shareCount": 10,
+  "playCount": 7330,
+  "collectCount": 81,
+  "commentCount": 1,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1626818823225345",
+    "name": "noluc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "408411",
+    "name": "cogang",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1635856972365825",
+    "name": "phattrienbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1602406082862085",
+    "name": "luoibieng",
+    "title": null,
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "6972530116371025154",
+  "text": "6 cách vượt qua lười biếng #Learnontiktok #phattrienbanthan #kienthuc #hoc #tip #ONhaGiaiTri",
+  "textLanguage": "vi",
+  "createTime": 1623418677,
+  "createTimeISO": "2021-06-11T13:37:57.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6895763928980063233",
+   "name": "abbeytri",
+   "profileUrl": "https://www.tiktok.com/@abbeytri",
+   "nickName": "Tri Abbey",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 128,
+   "friends": 0,
+   "fans": 10600,
+   "heart": 148800,
+   "video": 549,
+   "digg": 5623,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "Windy Hill",
+   "musicAuthor": "羽肿",
+   "musicOriginal": false,
+   "musicAlbum": "Windy Hill",
+   "musicId": "6750503222315583489"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@abbeytri/video/6972530116371025154",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 42,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 25900,
+  "shareCount": 1480,
+  "playCount": 324000,
+  "collectCount": 920,
+  "commentCount": 222,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1636483010861062",
+    "name": "learnontiktok",
+    "title": "Discover something new and learn on TikTok 🧐🧐",
+    "cover": null
+   },
+   {
+    "id": "1635856972365825",
+    "name": "phattrienbanthan",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1598272724914178",
+    "name": "kienthuc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "94493",
+    "name": "hoc",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "23020",
+    "name": "tip",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1662043039936518",
+    "name": "onhagiaitri",
+    "title": "Ở Nhà Giải Trí suốt mùa dịch này cùng TikTok nhé cả nhà ơi 🤩🤩🤩\nChưa bao giờ khán giả lại có cơ hội gần gũi và ôn lại kỷ niệm cùng Nghệ sĩ đến thế 🤩🤩🤩  \nVới các Nghệ Sĩ, đây chính là cơ hội để đưa tới khán giả MV, Phim, TV Show, các Ca khúc, màn trình diễn tượng của mình trong suốt thời gian qua. Chắc chắn sẽ mang tới cho khán giả sự gần gũi và thân thương hơn.\nCòn với các Fans, đây chính là cơ hội để coi những &quot;Siêu phẩm&quot; của thần tượng mình đó 😍\nHãy cùng TikTok #ONhaGiaiTri và kết nối cùng Thần tượng của bạn nhé !!!",
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "7529815106868251922",
+  "text": "Bạn có mắc phải các kiểu \"lười\" này không? Nếu có thì xem video để tìm cách khắc phục nhé\n\n#study #studytok #studywithme #studygram #studymotivation #studying #hoctap📚 #hoccungtiktok",
+  "textLanguage": "vi",
+  "createTime": 1753272000,
+  "createTimeISO": "2025-07-23T12:00:00.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6800168785271030786",
+   "name": "laclac_kuaile",
+   "profileUrl": "https://www.tiktok.com/@laclac_kuaile",
+   "nickName": "Học cùng Lạc",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 109,
+   "friends": 0,
+   "fans": 32000,
+   "heart": 1400000,
+   "video": 126,
+   "digg": 3331,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "nhạc nền - Học cùng Lạc",
+   "musicAuthor": "Học cùng Lạc",
+   "musicOriginal": true,
+   "musicId": "7529815130150882049"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@laclac_kuaile/video/7529815106868251922",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 26,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 1077,
+  "shareCount": 118,
+  "playCount": 11700,
+  "collectCount": 389,
+  "commentCount": 10,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "73549",
+    "name": "study",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1621382854945957",
+    "name": "studytok",
+    "title": "Take a seat and study with TikTok.",
+    "cover": null
+   },
+   {
+    "id": "9752702",
+    "name": "studywithme",
+    "title": "Who says studying can't be fun? Hit the books with us and share your study routine, best study tips or exam advice!",
+    "cover": null
+   },
+   {
+    "id": "33873418",
+    "name": "studygram",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1623160852753413",
+    "name": "studymotivation",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "173990",
+    "name": "studying",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "7012917378421882907",
+    "name": "hoctap📚",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1640748237792257",
+    "name": "hoccungtiktok",
+    "title": "🎉 #LearnOnTikTok đã chính thức quay trở lại bằng hoạt động kỷ niệm sinh nhật 3 năm hoành tráng. Hãy tiếp tục mang đến những video chất lượng và hữu ích ở các mảng nội dung khác nhau với những hướng khai thác như sau:\n- #HocCungTikTok: Giáo dục, nhà cửa, vườn tược, khoa học,...\n- #AnCungTikTok: Nấu ăn, review đồ ăn, đồ uống, mukbang, du lịch,...\n- #GocLamDep: Chăm sóc da mặt, makeup, mix-match đồ, review sản phẩm,...\n- #GocSangTao: Nội dung nghệ thuật, DIY, grafiti,...\n- #ThanhCongNghe: Chụp ảnh, cách tạo dáng, chỉnh sửa ảnh, dựng video,....\n- #SongKhoe247: Kiến thức thông tin về sức khoẻ, fitness, yoga,...\n- #BookTok: các nội dung về sách như review sách, sự thật thú vị.\n\n📍 Thời gian: 15/07-18/08.\n\n🎁 Đăng tải nội dung ngay để có cơ hội giành giải thưởng siêu hấp dẫn với tổng giá trị lên đến 3 tỷ đồng từ nhiều đường đua khác nhau:\nĐường đua Chính: 07 Giải Nhất + 14 Giải Khuyến Khích cho 7 nhóm hashtag cộng đồng.\nĐường đua Ngôi Sao Mới: Top 03 Ngôi Sao Mới + Top 9 Ngôi Sao Tiềm Năng.\nĐường đua Cống Hiến: 02 Giải Cống Hiến cho #LearnOnTikTok + 02 Giải Cống Hiến cho #BookTok.\n\n👉 Chi tiết thể lệ cuộc thi tìm hiểu thêm ở đây: LINK\n\n📍 Ngoài ra, hoàn thành các nhiệm vụ thú vị trong suốt khoảng thời gian diễn ra chiến dịch để đổi ngay những phần quà giá trị và hàng trăm voucher mua sắm hấp dẫn.\n\n🔥 Còn chần chờ gì nữa? Cùng TikTok kỷ niệm #LearnOnTikTok 3 năm ngay thuiiiii.",
+    "cover": "https://p16-common-sign.tiktokcdn-us.com/tiktok-obj/d9f7d06033542bc541ec1010055ff7e3.png~tplv-tiktokx-origin.image?dr=9627&x-expires=1792306800&x-signature=d0XAlg3xlxvb3aMhYgsUr0JrYz4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast5"
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ },
+ {
+  "id": "6972903801233673473",
+  "text": "Nghe đi thấm lắm #Learnontiktok #ongqueo #tamtrang #edutok #lazy #ONhaGiaiTri #ONhaXemTin",
+  "textLanguage": "en",
+  "createTime": 1623505682,
+  "createTimeISO": "2021-06-12T13:48:02.000Z",
+  "isAd": false,
+  "authorMeta": {
+   "id": "6924909538215724034",
+   "name": "thayqueo",
+   "profileUrl": "https://www.tiktok.com/@thayqueo",
+   "nickName": "Thầy Quéo (Nguyễn Hữu Trí)",
+   "verified": false,
+   "bioLink": null,
+   "privateAccount": false,
+   "createTime": null,
+   "hasActiveStory": false,
+   "following": 8,
+   "friends": 0,
+   "fans": 2500000,
+   "heart": 72800000,
+   "video": 1079,
+   "digg": 5022,
+   "followDatasetUrl": null
+  },
+  "musicMeta": {
+   "musicName": "As Long As You Love Me(Remix)",
+   "musicAuthor": "南辰Music",
+   "musicOriginal": false,
+   "musicAlbum": "陪你度过漫长岁月",
+   "musicId": "6876298232394156046"
+  },
+  "webVideoUrl": "https://www.tiktok.com/@thayqueo/video/6972903801233673473",
+  "videoMeta": {
+   "height": 1024,
+   "width": 576,
+   "duration": 133,
+   "definition": "540p",
+   "format": "mp4",
+   "subtitleLinks": null,
+   "transcriptionLink": null,
+   "aiVideoDescription": null,
+   "aiVideoSummary": null
+  },
+  "diggCount": 164400,
+  "shareCount": 2516,
+  "playCount": 1600000,
+  "collectCount": 5656,
+  "commentCount": 775,
+  "repostCount": 0,
+  "mentions": [],
+  "detailedMentions": [],
+  "hashtags": [
+   {
+    "id": "1636483010861062",
+    "name": "learnontiktok",
+    "title": "Discover something new and learn on TikTok 🧐🧐",
+    "cover": null
+   },
+   {
+    "id": "1699557874626562",
+    "name": "ongqueo",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "32277607",
+    "name": "tamtrang",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1633589250197509",
+    "name": "edutok",
+    "title": "Thanks to all who participated in the #EduTok Post Contest! Winner showcase coming soon!",
+    "cover": null
+   },
+   {
+    "id": "10880",
+    "name": "lazy",
+    "title": null,
+    "cover": null
+   },
+   {
+    "id": "1662043039936518",
+    "name": "onhagiaitri",
+    "title": "Ở Nhà Giải Trí suốt mùa dịch này cùng TikTok nhé cả nhà ơi 🤩🤩🤩\nChưa bao giờ khán giả lại có cơ hội gần gũi và ôn lại kỷ niệm cùng Nghệ sĩ đến thế 🤩🤩🤩  \nVới các Nghệ Sĩ, đây chính là cơ hội để đưa tới khán giả MV, Phim, TV Show, các Ca khúc, màn trình diễn tượng của mình trong suốt thời gian qua. Chắc chắn sẽ mang tới cho khán giả sự gần gũi và thân thương hơn.\nCòn với các Fans, đây chính là cơ hội để coi những &quot;Siêu phẩm&quot; của thần tượng mình đó 😍\nHãy cùng TikTok #ONhaGiaiTri và kết nối cùng Thần tượng của bạn nhé !!!",
+    "cover": null
+   },
+   {
+    "id": "1701002128524290",
+    "name": "onhaxemtin",
+    "title": "Cập nhật tin tức nhanh nhất tại #ONhaXemTin bạn nhé ❤️",
+    "cover": null
+   }
+  ],
+  "effectStickers": [],
+  "isSlideshow": false,
+  "isPinned": false,
+  "isSponsored": false,
+  "shortDramaSeriesInfo": null,
+  "mediaUrls": [],
+  "isStory": false,
+  "searchQuery": "luoi qua phai lam sao",
+  "commentsDatasetUrl": null
+ }
+]

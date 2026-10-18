@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-dien-thoai-ngoai-tam-mat",
+ "title": "[STUB] Học năm phút là mò điện thoại — đời bạn bạn quản, chỉ cần dời nó ra khỏi tầm mắt",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-hoang_hao209-7654547690730114322",
+  "bridge_id": "B-phone-01",
+  "lesson": "3.1 Tắt thông báo không cần thiết, lúc làm việc để điện thoại ra khỏi tầm mắt (Ward, Duke, Gneezy & Bos 2017: hai thí nghiệm — điện thoại của chính mình để cạnh, dù nhịn không xem, vẫn làm giảm dung lượng nhận thức còn trống; người càng phụ thuộc điện thoại giảm càng nhiều. Stothart, Mitchum & Yehnert 2015: chỉ nhận một thông báo, không xem không chạm, điểm bài chú ý giảm tương đương lúc nghe gọi/nhắn tin; thí nghiệm lab, sinh viên; bằng chứng B, chưa ai đo tác động cộng dồn hằng ngày). Phụ: 4.10 để thứ không muốn đụng ra xa.",
+  "angle": "empathy / humor",
+  "pattern": "P14 + P01",
+  "differentiation": "Mọi người đang nói: 'top 1 dấu hiệu nghiện điện thoại là mày đó' (TikTok @hoang_hao209 1,4M view, 1.833 comment, 268k share; @code.3.1 315k) — và người xem phản pháo 'đời bố, bố quản' (comment top 2.429 like); comment @biquyetdodaihoc 'lúc đầu 📚 5p sau 📱' (336 like). Góc của mình: đứng về phía người xem — hông cần cai, hông chửi 'nghiện'; chỉ một việc có thí nghiệm: lúc cần tập trung, điện thoại ra khỏi tầm mắt và tắt thông báo. Không phải chuyện ý chí."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "dien-thoai-ngoai-tam-mat.b01",
+   "duration": 4,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Học được năm phút là tay tự mò điện thoại?",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Five minutes in… and you grab your phone?",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "dien-thoai-ngoai-tam-mat.b02",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà ai nói mình nghiện là mình cãi liền: đời mình, mình quản.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "\"My life, my rules.\"",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "dien-thoai-ngoai-tam-mat.b03",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ừ, đúng. Mình hông cần bỏ điện thoại. Có điều có một chuyện ít ai để ý.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Fair. You don't have to quit.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "dien-thoai-ngoai-tam-mat.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hai thí nghiệm cho thấy: chỉ cần điện thoại của bạn nằm bên cạnh, dù nhịn hông xem, đầu óc còn trống để làm bài cũng ít đi. Ai càng khó rời điện thoại thì tụt càng nhiều.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Phone nearby = less brain space.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "dien-thoai-ngoai-tam-mat.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn một thí nghiệm khác: điện thoại chỉ báo một tin, hông xem, hông chạm, điểm bài tập trung đã tụt gần bằng lúc nghe máy hay nhắn tin.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One ping ≈ answering a call.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "dien-thoai-ngoai-tam-mat.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy thí nghiệm này làm trong phòng lab, với sinh viên. Vậy thì chuyện hông nằm ở ý chí: lúc cần focus, để điện thoại ra khỏi tầm mắt và tắt thông báo hông cần thiết.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Out of sight. Notifications off.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "dien-thoai-ngoai-tam-mat.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Giờ ngồi vô bàn học là mình để điện thoại ngoài phòng khách, chỉ để thông báo cho vài người cần gọi gấp.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Phone in the other room.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "dien-thoai-ngoai-tam-mat.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật S-05: điện thoại trên giường và sáng hôm sau ra sao.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My phone-in-bed story.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "dien-thoai-ngoai-tam-mat.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Viết luôn kiểu clip đầu: nếu ngồi vô bàn học, thì điện thoại ra phòng khách. Bạn chịu được mấy phút hông có nó? Comment một con số.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "If I sit down to study, the phone leaves.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

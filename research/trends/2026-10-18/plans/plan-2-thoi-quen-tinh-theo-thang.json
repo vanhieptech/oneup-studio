@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-thoi-quen-tinh-theo-thang",
+ "title": "[STUB] Lột xác 30 ngày, tới ngày mấy thì bỏ? Thói quen tính theo tháng, lỡ một ngày không về số 0",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-kyluat.1-7631923883968580885",
+  "bridge_id": "B-30ngay-01",
+  "lesson": "4.12 Thói quen mới tính theo tháng, không theo '21 ngày' (Lally, van Jaarsveld, Potts & Wardle 2010: 96 tình nguyện viên tự chọn một việc ăn/uống/vận động, làm mỗi ngày trong bối cảnh cố định suốt 12 tuần, tự chấm mức tự động; 82 người đủ dữ liệu, mô hình khớp ở 62 người; số ngày đạt 95% mức tự động từ 18 đến 254 ngày; lỡ một lần không ảnh hưởng đáng kể; bằng chứng B, chỉ một nghiên cứu, việc đơn giản — việc khó như chạy 3 buổi/tuần chưa ai đo).",
+  "angle": "data / contrarian",
+  "pattern": "P08 + P03",
+  "differentiation": "Mọi người đang nói: '30 ngày biến mất', lộ trình kỷ luật thép (TikTok @kyluat.1 102k view; comment 'hôm nay 27/4 tôi bắt đầu hành trình 30 ngày'), cùng dòng Winter Arc / Great Lock In và '100 thói quen' (17/10). Góc của mình: không có con số 21 hay 30 ngày; cái làm người ta bỏ thường là lỡ một ngày rồi nghĩ phải làm lại từ đầu — mà nghiên cứu thấy lỡ một lần không làm mất tiến độ. Callback clip-01: gắn việc mới vào một bối cảnh cố định."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "thoi-quen-tinh-theo-thang.b01",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn từng thử “lột xác 30 ngày” chưa? Tới ngày thứ mấy thì bỏ?",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "30-day glow-up… which day did you quit?",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "thoi-quen-tinh-theo-thang.b02",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Feed đang đầy lộ trình 30 ngày: một tiếng đầu hông đụng điện thoại, bốn tiếng làm việc sâu, hai chục trang sách mỗi ngày.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "30-day plans everywhere.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "thoi-quen-tinh-theo-thang.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "reacting",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi tới ngày thứ năm lỡ mất một ngày. Mình nghĩ: vậy là hỏng, phải làm lại từ đầu. Rồi bỏ luôn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Miss one day → \"start over\" → quit.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "thoi-quen-tinh-theo-thang.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nghiên cứu cho 96 người tự chọn một việc nhỏ, như ăn trái cây sau bữa sáng, làm mỗi ngày suốt 12 tuần và tự chấm coi nó tự động tới đâu.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "96 people. One small habit. 12 weeks.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "thoi-quen-tinh-theo-thang.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kết quả: người nhanh mất 18 ngày, người chậm mất 254 ngày. Còn lỡ một lần thì gần như hông ảnh hưởng gì.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "18 to 254 days. One miss didn't matter.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "thoi-quen-tinh-theo-thang.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà đó là việc đơn giản thôi, việc khó hơn thì chưa ai đo. Vậy thì thói quen mới tính theo tháng, hai ba tuần còn thấy khó là bình thường.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Count habits in months.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "thoi-quen-tinh-theo-thang.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Giống clip đầu, giờ mình gắn việc mới vào một chuyện cố định: ăn sáng xong thì đọc hai trang. Lỡ một bữa thì mai đọc tiếp, hông đếm lại từ số 0.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "After breakfast → 2 pages. Missed? Tomorrow.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "thoi-quen-tinh-theo-thang.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật S-04: kênh này mới mấy tuần, mình tính theo tháng.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] This channel, month by month.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "thoi-quen-tinh-theo-thang.b09",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thói quen bạn đang tập tới ngày thứ mấy rồi? Comment một con số.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "What day are you on? Drop a number.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}
