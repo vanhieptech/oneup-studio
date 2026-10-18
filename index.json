@@ -382,8 +382,16 @@
    "type": "script",
    "status": "draft",
    "updated": "2026-10-18",
-   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/archive/script-v1.md",
    "title": "Clip 04 v1 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-18",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md",
+   "title": "Clip 04 v2 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn"
   },
   {
    "id": "idea-bank",
@@ -2113,6 +2121,7 @@
    "theme": null,
    "files": [
     "README.md",
+    "archive",
     "final"
    ]
   }
