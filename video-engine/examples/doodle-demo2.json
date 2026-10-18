@@ -1,0 +1,158 @@
+{
+  "id": "doodle-demo",
+  "title": "Doodle draw-on demo 2 - all 7 marks (anidoodle port, L-047)",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "theme": "light"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "duration": 9,
+      "background": {
+        "kind": "paper"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      },
+      "characters": [],
+      "dialogue": [],
+      "narration": {
+        "text": "Việc to thì chia nhỏ ra",
+        "start": 0,
+        "end": 9
+      },
+      "props": [
+        {
+          "kind": "sign",
+          "x": 540,
+          "y": 360,
+          "text": "CHIA NHỎ!",
+          "at": 0.9
+        },
+        {
+          "kind": "sign",
+          "x": 540,
+          "y": 640,
+          "text": "mỗi việc 15 phút",
+          "at": 2.3
+        },
+        {
+          "kind": "sign",
+          "x": 380,
+          "y": 1010,
+          "text": "xong 1 việc",
+          "at": 4.5
+        },
+        {
+          "kind": "sign",
+          "x": 380,
+          "y": 1210,
+          "text": "để mai tính",
+          "at": 5.4
+        }
+      ],
+      "doodles": [
+        {
+          "kind": "sketch-box",
+          "x": 150,
+          "y": 230,
+          "w": 780,
+          "h": 240,
+          "at": 0.2,
+          "duration": 0.7,
+          "seed": 7
+        },
+        {
+          "kind": "circle",
+          "x": 270,
+          "y": 285,
+          "w": 540,
+          "h": 150,
+          "at": 1.5,
+          "duration": 0.6,
+          "seed": 11
+        },
+        {
+          "kind": "underline",
+          "x": 220,
+          "y": 678,
+          "w": 640,
+          "h": 36,
+          "at": 3.0,
+          "duration": 0.5,
+          "seed": 5
+        },
+        {
+          "kind": "arrow",
+          "x": 300,
+          "y": 760,
+          "w": 480,
+          "h": 120,
+          "at": 3.7,
+          "duration": 0.6,
+          "seed": 3
+        },
+        {
+          "kind": "check",
+          "x": 700,
+          "y": 945,
+          "w": 160,
+          "h": 130,
+          "at": 5.0,
+          "duration": 0.4,
+          "seed": 13
+        },
+        {
+          "kind": "cross",
+          "x": 240,
+          "y": 1140,
+          "w": 280,
+          "h": 140,
+          "at": 6.0,
+          "duration": 0.5,
+          "seed": 17
+        },
+        {
+          "kind": "path",
+          "x": 150,
+          "y": 1270,
+          "w": 780,
+          "h": 100,
+          "at": 6.8,
+          "duration": 0.8,
+          "seed": 19,
+          "points": [
+            [
+              150,
+              1320
+            ],
+            [
+              350,
+              1275
+            ],
+            [
+              540,
+              1355
+            ],
+            [
+              730,
+              1275
+            ],
+            [
+              930,
+              1320
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
