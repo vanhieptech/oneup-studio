@@ -103,6 +103,7 @@ tags: [index, retrieval]
 | references | reference-index | ready | `research/references/README.md` | References: phân tích creator, hook, format |
 | research.anidoodle | reference | ready | `research/references/anidoodle-notes.md` | anidoodle → Remotion doodle draw-on (comic shorts) |
 | example.doodle-assets | example | ready | `video-engine/examples/doodle-assets-demo.json` | Assets-first doodle demo (L-048): clip-03 b07 assets + connect/tick/progress draw-on |
+| example.doodle-morph | example | ready | `video-engine/examples/doodle-morph-demo.json` | Morph + one-line-one-drawing demo (L-049): clip-03 b06–b07, giọng c03v8 thật, DỌN PHÒNG nứt → 3 việc + đồng hồ 15 phút |
 | research.motionmaxxing | reference | ready | `research/references/motionmaxxing-notes.md` | motionmaxxing → Remotion mapping (comic shorts) |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
