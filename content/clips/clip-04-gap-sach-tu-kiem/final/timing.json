@@ -1,0 +1,382 @@
+{
+ "total": 83.669,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-A.voiced.json",
+   "dur": 83.701,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-04-final-A.mp4",
+   "fx": null,
+   "scene_starts": [
+    1.852,
+    6.514,
+    13.725999999999999,
+    22.304,
+    32.379,
+    42.602999999999994,
+    50.910999999999994,
+    58.852,
+    67.203,
+    74.519
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-04.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Bạn tưởng mình hay quên hả?",
+   "en": "You think you just forget easily?",
+   "emotion": "surprised",
+   "key": "c04v1-b01",
+   "local": 0.12,
+   "dur": 1.672,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-04.b02",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "Không đâu, bạn đọc cả tối mà đầu vẫn trống — vì bạn có nhớ gì đâu mà quên.",
+   "en": "No — you read all night and your head is still empty, because you never actually remembered it in the first place.",
+   "emotion": "sad",
+   "key": "c04v1-b01b",
+   "local": 0.02,
+   "dur": 4.582,
+   "t": 1.872
+  },
+  {
+   "beat": "clip-04.b03",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Nghe vậy có tức không? Như ôn thi hay học tiếng Anh, mình đọc đi đọc lại, gạch chi chít, mà chữ vẫn chưa vô đầu.",
+   "en": "Stings to hear that, doesn't it? Exam prep, English — rereading and highlighting everything, and it still won't stick.",
+   "emotion": "focused",
+   "key": "c04v1-b02",
+   "local": 0.15,
+   "dur": 6.812,
+   "t": 6.664
+  },
+  {
+   "beat": "clip-04.b04",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Vậy tại mình đọc chưa đủ hả? Không hẳn đâu. Đọc lại chỉ làm mắt quen mặt chữ, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.",
+   "en": "Is it because you didn't read enough? Not really — rereading only makes your eyes recognise the page. Familiar feels like learned, but you never had to recall it.",
+   "emotion": "confused",
+   "key": "c04v1-b03",
+   "local": 0.15,
+   "dur": 8.178,
+   "t": 13.876
+  },
+  {
+   "beat": "clip-04.b05",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Vậy sao biết mình thuộc thiệt? Yang và cộng sự gom hai trăm hai mươi hai nghiên cứu, hơn bốn mươi tám ngàn học sinh: có kiểm tra nhỏ thì điểm cao hơn, ở mức vừa.",
+   "en": "So how do you know you really learned it? Yang et al. pooled 222 studies, over 48,000 students: classes with small quizzes scored higher — a medium effect.",
+   "emotion": "focused",
+   "key": "c04v1-b04",
+   "local": 0.15,
+   "dur": 9.675,
+   "t": 22.454
+  },
+  {
+   "beat": "clip-04.b06",
+   "scene": "b05",
+   "speaker": "hiep",
+   "say": "Nghe kiểm tra, bạn nghĩ bài thi hả? Không, đó là tự kiểm lúc học. Đun lốt ki xếp mười cách học, cách này ở nhóm cao nhất, đọc lại, gạch chân ở nhóm thấp nhất.",
+   "en": "Tests sound like exams, right? No — this is testing yourself while studying. Dunlosky ranked ten methods: self-testing in the top tier; rereading and highlighting in the bottom tier.",
+   "emotion": "focused",
+   "key": "c04v1-b05",
+   "local": 0.45,
+   "dur": 9.524,
+   "t": 32.829
+  },
+  {
+   "beat": "clip-04.b07",
+   "scene": "b06",
+   "speaker": "hiep",
+   "say": "Vậy đọc lại bỏ luôn hả? Không hẳn, tác dụng nó hẹp hơn thôi. Học xong, gấp sách lại tự kiểm trước, đừng quay đầu đọc lại ngay.",
+   "en": "So rereading is useless? Not quite — its effect is just narrower. Finish a section, close the book and test yourself first, instead of turning straight back to reread.",
+   "emotion": "focused",
+   "key": "c04v1-b06",
+   "local": 0.15,
+   "dur": 7.908,
+   "t": 42.753
+  },
+  {
+   "beat": "clip-04.b08",
+   "scene": "b07",
+   "speaker": "hiep",
+   "say": "Tự kiểm làm sao đây? Như mình nè: học xong một phần, mình gấp sách lại, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ nào.",
+   "en": "How do you self-test? Like me: finish a section, close the book, write down what I remember, then open it to check where I went wrong.",
+   "emotion": "focused",
+   "key": "c04v1-b07",
+   "local": 0.15,
+   "dur": 7.541,
+   "t": 51.061
+  },
+  {
+   "beat": "clip-04.b09",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Còn ôn thi, tiếng Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại, tự nói chương này nói gì. Bí chỗ nào là chưa thuộc chỗ đó.",
+   "en": "What about exams or English? Instead of rereading a chapter three times, close it and say what it was about. Where you get stuck is what you haven't learned.",
+   "emotion": "focused",
+   "key": "c04v1-b08",
+   "local": 0.15,
+   "dur": 7.951,
+   "t": 59.002
+  },
+  {
+   "beat": "clip-04.b10",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Bài dài quá, kiểm sao hết? Nhớ clíp trước không, bài dài thì chia nhỏ ra trước. Học xong phần nào, kiểm ngay phần đó.",
+   "en": "But what if it's long? Remember last clip: split the big pile first. Finish one small bundle, then test yourself on just that bundle.",
+   "emotion": "focused",
+   "key": "c04v1-b09",
+   "local": 0.15,
+   "dur": 6.916,
+   "t": 67.353
+  },
+  {
+   "beat": "clip-04.b11",
+   "scene": "b10",
+   "speaker": "hiep",
+   "say": "Quay lại sáng mai coi, đâu phải mình học dở. Mắt quen chữ thôi, đầu chưa tự nhớ lần nào. Tối nay bạn nhớ được mấy ý? Com men một con số nha!",
+   "en": "Back to that next-morning moment: see, you're not bad at studying — your eyes got familiar, your brain never recalled. Tonight, how many ideas can you remember? Comment a number!",
+   "emotion": "happy",
+   "key": "c04v1-b10",
+   "local": 0.15,
+   "dur": 8.782,
+   "t": 74.669
+  }
+ ],
+ "transitions": [
+  {
+   "at": 1.852,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 6.514,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 13.726,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 22.304,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 32.379,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 42.603,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 50.911,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 58.852,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 67.203,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 74.519,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "swish",
+   "at": 0.32
+  },
+  {
+   "name": "snap",
+   "at": 1.872
+  },
+  {
+   "name": "stamp",
+   "at": 3.772
+  },
+  {
+   "name": "swish",
+   "at": 9.964
+  },
+  {
+   "name": "pop",
+   "at": 11.264
+  },
+  {
+   "name": "tick",
+   "at": 12.864
+  },
+  {
+   "name": "swish",
+   "at": 17.276
+  },
+  {
+   "name": "snap",
+   "at": 20.776
+  },
+  {
+   "name": "ding",
+   "at": 24.654
+  },
+  {
+   "name": "pop",
+   "at": 24.854
+  },
+  {
+   "name": "rise",
+   "at": 29.754
+  },
+  {
+   "name": "pop",
+   "at": 33.329
+  },
+  {
+   "name": "tick",
+   "at": 37.229
+  },
+  {
+   "name": "ding",
+   "at": 38.929
+  },
+  {
+   "name": "tick",
+   "at": 40.429
+  },
+  {
+   "name": "snap",
+   "at": 47.053
+  },
+  {
+   "name": "pen",
+   "at": 47.953
+  },
+  {
+   "name": "pen",
+   "at": 54.661
+  },
+  {
+   "name": "swish",
+   "at": 57.361
+  },
+  {
+   "name": "tick",
+   "at": 58.161
+  },
+  {
+   "name": "swish",
+   "at": 61.202
+  },
+  {
+   "name": "snap",
+   "at": 62.902
+  },
+  {
+   "name": "pop",
+   "at": 66.202
+  },
+  {
+   "name": "pop",
+   "at": 70.553
+  },
+  {
+   "name": "snap",
+   "at": 72.553
+  },
+  {
+   "name": "pen",
+   "at": 72.753
+  },
+  {
+   "name": "tick",
+   "at": 73.553
+  },
+  {
+   "name": "swish",
+   "at": 74.969
+  },
+  {
+   "name": "pop",
+   "at": 80.469
+  },
+  {
+   "name": "tick",
+   "at": 82.369
+  },
+  {
+   "name": "swish",
+   "at": 1.732
+  },
+  {
+   "name": "swish",
+   "at": 6.394
+  },
+  {
+   "name": "swish",
+   "at": 13.606
+  },
+  {
+   "name": "swish",
+   "at": 22.184
+  },
+  {
+   "name": "swish",
+   "at": 32.259
+  },
+  {
+   "name": "swish",
+   "at": 42.483
+  },
+  {
+   "name": "swish",
+   "at": 50.791
+  },
+  {
+   "name": "swish",
+   "at": 58.732
+  },
+  {
+   "name": "swish",
+   "at": 67.083
+  },
+  {
+   "name": "swish",
+   "at": 74.399
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

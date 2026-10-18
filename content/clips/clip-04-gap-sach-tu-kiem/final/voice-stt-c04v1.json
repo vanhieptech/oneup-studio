@@ -1,0 +1,120 @@
+{
+ "b01": {
+  "line_sim": 1.0,
+  "units": {
+   "b01-0": 1.0
+  },
+  "stt": "Bạn tưởng mình hay quên hả?",
+  "dur": 1.67
+ },
+ "b01b": {
+  "line_sim": 1.0,
+  "units": {
+   "b01b-0": 1.0,
+   "b01b-1": 1.0
+  },
+  "stt": "Không đâu, bạn đọc cả tối mà đầu vẫn trống, vì bạn có nhớ gì đâu mà quên.",
+  "dur": 4.58
+ },
+ "b02": {
+  "line_sim": 0.904,
+  "units": {
+   "b02-0": 1.0,
+   "b02-1": 0.857,
+   "b02-2": 0.875,
+   "b02-3": 1.0
+  },
+  "stt": "Nghe vậy có tức không? Như ôm thì hay học tiếng Anh, mình đọc đi đọc lại gạch chi chết mà chữ vẫn chưa vô đầu.",
+  "dur": 6.81
+ },
+ "b03": {
+  "line_sim": 0.95,
+  "units": {
+   "b03-0": 0.929,
+   "b03-1": 0.909,
+   "b03-2": 1.0,
+   "b03-3": 1.0
+  },
+  "stt": "Vậy tại mình đọc chưa đủ hả? Không hẳn đâu. Đọc lại chỉ là mắt quen mặt chử, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.",
+  "dur": 8.18
+ },
+ "b04": {
+  "line_sim": 0.917,
+  "units": {
+   "b04-0": 0.833,
+   "b04-1": 1.0,
+   "b04-2": 0.857,
+   "b04-3": 1.0
+  },
+  "stt": "Vậy sao biết mình thuộc thiệt, nhanh và cộng sự gom 222 .000 cứu, hơn 48 .000 học sinh, có kiểm tra nhỏ thì điểm cao hơn ở mức vừa.",
+  "dur": 9.67
+ },
+ "b05": {
+  "line_sim": 0.917,
+  "units": {
+   "b05-0": 0.875,
+   "b05-1": 1.0,
+   "b05-2": 1.0,
+   "b05-3": 1.0,
+   "b05-4": 1.0
+  },
+  "stt": "Nghe kiểm tra và nghĩ bài thi hã, không đó là tự kiểm lúc học, đùa lúc kỳ xếp 10 cánh học, cách này ở nhóm cao nhất, độc lại, gạch chân ở nhóm thấp nhất.",
+  "dur": 9.52
+ },
+ "b06": {
+  "line_sim": 0.982,
+  "units": {
+   "b06-0": 1.0,
+   "b06-1": 1.0,
+   "b06-2": 0.938,
+   "b06-3": 1.0
+  },
+  "stt": "Vậy đọc lại bỏ luôn hả, không hẳn tác dụng nó hẹp hơn thôi, học xong, gấp sách lại từ kiểm trước, đừng quay đầu đọc lại ngay.",
+  "dur": 7.91
+ },
+ "b07": {
+  "line_sim": 0.966,
+  "units": {
+   "b07-0": 0.9,
+   "b07-1": 1.0,
+   "b07-2": 1.0,
+   "b07-3": 1.0
+  },
+  "stt": "Tự kiểm làm sao đây? Như mình nào học xong một phần, mình gấp sách lại, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ nào.",
+  "dur": 7.54
+ },
+ "b08": {
+  "line_sim": 0.871,
+  "units": {
+   "b08-0": 0.857,
+   "b08-1": 1.0,
+   "b08-2": 0.944,
+   "b08-3": 1.0
+  },
+  "stt": "Còn Ông Thi Tiến Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại tự nói chương này, nói về, biết chỗ nào là chưa thuộc chỗ đó.",
+  "dur": 7.95
+ },
+ "b09": {
+  "line_sim": 0.96,
+  "units": {
+   "b09-0": 0.833,
+   "b09-1": 1.0,
+   "b09-2": 1.0,
+   "b09-3": 1.0
+  },
+  "stt": "Bài dài quá kiểm soo hết. Nhớ clip trước không? Bài dài thì chia nhỏ ra trước. Học xong phần nào kiểm ngay phần đó.",
+  "dur": 6.92
+ },
+ "b10": {
+  "line_sim": 0.924,
+  "units": {
+   "b10-0": 1.0,
+   "b10-1": 1.0,
+   "b10-2": 1.0,
+   "b10-3": 1.0,
+   "b10-4": 1.0
+  },
+  "stt": "Quay lại sáng mai coi, đâu phải mình học giỡ, mắc quen chữ thôi, đầu chưa tự nhớ lần nào, tối nay bạn nhớ được máy ý, comment một con số nha.",
+  "dur": 8.78
+ }
+}

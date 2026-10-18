@@ -5,12 +5,13 @@ import { FONT_FAMILY } from "./fonts";
 /** DL-056: comic props in brand style (ink on paper, round corners, 8px stroke, hard offset shadow, one accent).
  *  All times are scene seconds (build-final shifts them by the first line start). Drawn inside the camera group. */
 export type PropCue = {
-  kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty";
+  kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty" | "book" | "sheet";
   count?: number;
   x?: number; y?: number; s?: number; rot?: number;
   text?: string; sub?: string; stamp?: string; at?: number; until?: number;
   pages?: string[]; tearAt?: number[]; words?: string[]; dropAt?: number[]; dark?: number;
   settle?: boolean; liftAt?: number; moveAt?: number; moveDur?: number; moveX?: number; moveY?: number;
+  state?: "open" | "closed"; closeAt?: number; openAt?: number; inkLines?: number; inkAt?: number; inkStagger?: number; flipAt?: number;
 };
 const { ink, paper, soft, accent, muted } = BRAND;
 const pop = (t: number, at = 0, d = 0.18) => { const k = Math.max(0, Math.min(1, (t - at) / d)); return k <= 0 ? 0 : k >= 1 ? 1 : 1 + 0.25 * Math.sin(k * Math.PI) * (1 - k) + (k - 1) * 0; };
@@ -217,12 +218,55 @@ const Dusty: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => { const at = p.
     <ellipse cx={130} cy={318} rx={230} ry={18} fill={soft} stroke={ink} strokeWidth={6} opacity={0.25 + 0.65 * dustK} />
   </g> ); };
 
+
+/** clip-04 (L-050): book open<->closed + self-test sheet blank->ink lines. No readable text on pages (scribbles only). */
+const Scribble: React.FC<{x:number;y:number;w:number;dim?:boolean}> = ({x,y,w,dim}) => <path d={`M${x},${y} q${w*0.25},-7 ${w*0.5},0 t${w*0.5},0`} fill="none" stroke={dim?muted:ink} strokeWidth={6} strokeLinecap="round" opacity={dim?0.55:0.75} />;
+const Book: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
+  // state machine: start state, closeAt flips to closed, openAt flips back to open (0.32s squash swap)
+  let closed = p.state === "closed"; let anim = 0; // 0 settled, >0 mid-flip (scaleX dip)
+  const flips: [number, boolean][] = [];
+  if (p.closeAt != null) flips.push([p.closeAt, true]);
+  if (p.openAt != null) flips.push([p.openAt, false]);
+  if (p.flipAt != null) flips.push([p.flipAt, !closed]);
+  flips.sort((a,b)=>a[0]-b[0]);
+  for (const [at, toClosed] of flips) { if (t >= at + 0.32) closed = toClosed; else if (t >= at) { anim = Math.sin(((t-at)/0.32)*Math.PI); if ((t-at) >= 0.16) closed = toClosed; } }
+  const sx = 1 - anim*0.78;
+  const flipPage = p.flipAt != null && t >= p.flipAt && t < p.flipAt+0.45 ? Math.sin(((t-p.flipAt)/0.45)*Math.PI) : 0;
+  return <g transform={`scale(${sx} 1)`}>
+    <rect x={-218} y={-158} width={452} height={352} rx={26} fill={ink} />
+    {!closed ? <g>
+      <path d="M0,-172 C-70,-196 -150,-196 -226,-178 L-226,178 C-150,160 -70,160 0,184 Z" fill={paper} stroke={ink} strokeWidth={10} strokeLinejoin="round" />
+      <path d="M0,-172 C70,-196 150,-196 226,-178 L226,178 C150,160 70,160 0,184 Z" fill={paper} stroke={ink} strokeWidth={10} strokeLinejoin="round" />
+      <path d="M0,-172 V184" stroke={ink} strokeWidth={8} />
+      {[-105,-55,-5,45].map((y,i)=><Scribble key={'l'+i} x={-200} y={y-60} w={150} dim={i%2===1} />)}
+      {[ -105,-55,-5,45].map((y,i)=><Scribble key={'r'+i} x={28} y={y-60} w={150} dim={i%2===0} />)}
+      {flipPage>0 && <path d={`M0,-172 C${70*flipPage},-196 ${150*flipPage},-196 226,-178 L226,178 C${150*flipPage},160 ${70*flipPage},160 0,184 Z`} fill={soft} stroke={ink} strokeWidth={8} opacity={0.9} transform={`scale(${1-flipPage*0.9} 1)`} />}
+    </g> : <g>
+      <rect x={-226} y={-178} width={452} height={356} rx={26} fill={accent} stroke={ink} strokeWidth={10} />
+      <rect x={-226} y={-178} width={52} height={356} rx={20} fill={ink} />
+      <rect x={-140} y={-92} width={250} height={120} rx={16} fill={paper} stroke={ink} strokeWidth={8} />
+      <Scribble x={-110} y={-48} w={190} /><Scribble x={-110} y={-2} w={140} dim />
+      <path d="M-226,142 H226" stroke={ink} strokeWidth={7} opacity={0.5} />
+    </g>}
+  </g>;
+};
+const Sheet: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
+  const lines = p.inkLines ?? 0; const inkAt = p.inkAt ?? 999; const stag = p.inkStagger ?? 0.55;
+  return <g transform={`rotate(${p.rot ?? -2})`}>
+    <rect x={-158} y={-198} width={332} height={412} rx={18} fill={ink} />
+    <rect x={-166} y={-206} width={332} height={412} rx={18} fill={paper} stroke={ink} strokeWidth={10} />
+    <path d="M-166,-142 H166" stroke={soft} strokeWidth={12} />
+    {Array.from({length: 6}, (_,i)=>{ const y=-92+i*52; const on = i < lines && t >= inkAt + i*stag; const k = on ? ease(t, inkAt+i*stag, 0.4) : 0;
+      return <g key={i}>{on && <path d={`M-128,${y} q55,-8 110,0 t110,0`} fill="none" stroke={ink} strokeWidth={7} strokeLinecap="round" opacity={0.8} strokeDasharray={230} strokeDashoffset={230*(1-k)} />}</g>; })}
+  </g>;
+};
+
 export const Props: React.FC<{ props: PropCue[]; t: number; h: number }> = ({ props, t, h }) => <g>
   {props.map((p, i) => {
     if (p.until != null && t > p.until) return null;
     if (p.kind === "vignette") { const k = ease(t, p.at ?? 0, 0.6) * (p.dark ?? 0.55);
       return <g key={i}><defs><radialGradient id={`vg${i}`} cx="50%" cy="45%" r="70%"><stop offset="45%" stopColor={ink} stopOpacity={0} /><stop offset="100%" stopColor={ink} stopOpacity={k} /></radialGradient></defs><rect width={1080} height={h} fill={`url(#vg${i})`} /></g>; }
-    const C = { laptop: Laptop, phone: Phone, calendar: Calendar, cloud: Cloud, sign: Sign, words: Words, pile: Pile, bundles: Bundles, bundle: Bundle, clock: Clock, dusty: Dusty }[p.kind];
+    const C = { laptop: Laptop, phone: Phone, calendar: Calendar, cloud: Cloud, sign: Sign, words: Words, pile: Pile, bundles: Bundles, bundle: Bundle, clock: Clock, dusty: Dusty, book: Book, sheet: Sheet }[p.kind];
     return <g key={i} transform={`translate(${p.x ?? 540} ${p.y ?? 900}) rotate(${p.rot ?? 0}) scale(${p.s ?? 1})`}><C p={p} t={t} /></g>;
   })}
 </g>;

@@ -3,15 +3,15 @@ title: "Clip 04 v3: Bạn có nhớ gì đâu mà quên → gấp sách tự ki�
 date: 2026-10-18
 type: script
 tags: [clip-04, script, retrieval-practice, howtolivebetter-23.14, howtolivebetter-23.16, monologue, conversational, open-question-hook, L-043, L-044, L-045, L-050]
-status: draft
+status: locked
 source: "HowToLiveBetter 23.14 (Yang et al. 2021; Dunlosky et al. 2013; mức A) + 23.16 (đọc lại/gạch chân nhóm thấp nhất) · đối chiếu nguyên văn book/23-hoc-ky-nang-gi-dang.md mục 14+16 (fetch 2026-10-18) · trend research/trends/2026-10-17/plans/plan-1-gap-sach-tu-kiem.json (TikTok @phamthuykieuhuong 995k view, comment top Feynman 2.860 like) · callback clip-03 (chia nhỏ 4.7)"
 id: clip-04.script-final
 version: v3.1
 supersedes: archive/script-v2.md
 template: templates/script.md (biến thể độc thoại + hook câu hỏi mở L-043)
-note: "DRAFT v3.1 (v3 + chỉ đạo sản xuất từng cảnh theo yêu cầu Hiệp 18/10: concept/quay/animation/hiệu ứng từng cảnh; lời thoại v3 giữ nguyên 100%, hook C1 Hiệp chốt) chờ Hiệp duyệt gate 1: chưa voice, chưa render, chưa làm spec.json. Viết lại theo góp ý 18/10: liền mạch như Thầy đang hỏi và nói chuyện với viewer — mỗi beat mở bằng câu hỏi/câu viewer có thể đang nghĩ, Thầy tự trả lời rồi nối sang beat sau (L-044). Beat chuyện thật S-01 (ôn TOEIC của Hiệp) trong plan gốc vẫn BỎ; ví dụ nói ngôi «mình» làm mẫu chung. Hình theo L-050: vật + hành động + tỉ lệ thể hiện nghĩa, không vẽ chữ, không khoanh/gạch trang trí."
+note: "LOCKED v3.1 by Hiệp 18/10 (Chốt, làm voice và render luôn): lời thoại giữ nguyên 100%, hook C1. Spec/voice/render đang thực hiện theo chỉ đạo này. Viết lại theo góp ý 18/10: liền mạch như Thầy đang hỏi và nói chuyện với viewer — mỗi beat mở bằng câu hỏi/câu viewer có thể đang nghĩ, Thầy tự trả lời rồi nối sang beat sau (L-044). Beat chuyện thật S-01 (ôn TOEIC của Hiệp) trong plan gốc vẫn BỎ; ví dụ nói ngôi «mình» làm mẫu chung. Hình theo L-050: vật + hành động + tỉ lệ thể hiện nghĩa, không vẽ chữ, không khoanh/gạch trang trí."
 ---
-# Clip 04 v3.1 (DRAFT): Bạn có nhớ gì đâu mà quên
+# Clip 04 v3.1 (LOCKED): Bạn có nhớ gì đâu mà quên
 
 **Người nói:** chỉ **Thầy** (L-039), F5 Thái Sơn speed 0.9 (dự kiến, chốt khi làm spec). Chibi Hiệp chỉ diễn. **Theme:** DARK.
 
@@ -62,6 +62,7 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
 | b01 | remotion | Cut cứng trong beat: sách đang mở lật nhanh → gấp lại + giấy trắng + ôm đầu (hook C1) | “trống” | `swish` → “đọc cả tối”; `snap` → “Không đâu”; `stamp` → “trống” | mở đầu |
+| b01b | remotion | Cut cứng ngay «Không đâu»: sách đã gấp, giấy vẫn trắng, Hiệp ôm đầu nhìn camera (nửa sau hook C1, cùng beat b01 trong kịch bản) | “trống” | `snap` → “Không đâu”; `stamp` → “trống” | cut (`swish`) |
 | b02 | remotion | Trang lật lại 3 vòng, chồng trang đã đọc cao dần, Hiệp ngáp | “chưa vô đầu” | `swish` → “đọc đi đọc lại”; `pop` → “gạch chi chít”; `tick` → “chưa vô đầu” | cut (`swish`) |
 | b03 | remotion | Một trang trôi qua mắt 3 lần như băng chuyền (`mmx-cruise`), sách gấp, bút dừng trên giấy trắng | “quen mặt chữ” | `swish` → “quen mặt chữ”; `snap` → “chưa tự nhớ lại” | cut (`swish`) |
 | b04 | remotion | Thẻ nghiên cứu không chữ xếp chồng cao (`tdev-stagger`), tờ kiểm nhỏ, chồng nhô lên vừa | “cao hơn” | `ding` → “Yang”; `pop` → “222 nghiên cứu”; `rise` → “cao hơn” | cut (`swish`) |

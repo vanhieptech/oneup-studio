@@ -1,0 +1,1193 @@
+{
+  "transition_sfx": {
+    "part": "whoosh-soft",
+    "scene": "swish"
+  },
+  "pacing": {
+    "lead": 0.15,
+    "lead_tr": 0.05,
+    "tail": 0.25
+  },
+  "id": "clip-04-final",
+  "clip": "clip-04",
+  "title": "Ban co nho gi dau ma quen: gap sach tu kiem (HTB 23.14)",
+  "week": 1,
+  "theme": "dark",
+  "pillar": "Hoc dung cach",
+  "story": "monologue Thay (L-039), on thi + tieng Anh (L-040), hook cau hoi mo C1 (L-043), L-050 meaning-by-objects zero-doodle",
+  "trend": "trend 2026-10-17 plan-1 (final/trend-signals ref in script)",
+  "voice_prefix": "c04v1",
+  "revisions": [
+    {
+      "v": "3.1",
+      "date": "2026-10-18",
+      "note": "script v3.1 LOCKED by Hiep 18/10: hook C1, dialogue exact, per-scene production direction; book/sheet new props"
+    }
+  ],
+  "cover": {
+    "direction": "a",
+    "theme": "dark",
+    "series": "Hoc dung cach",
+    "ep": 4,
+    "hero": [
+      "CO NHO GI DAU?",
+      "GAP SACH!"
+    ],
+    "accent": 1,
+    "strike": 0,
+    "expression": "despair",
+    "action": "reacting",
+    "emote": "!",
+    "tilt": -5
+  },
+  "hook": {
+    "text": "CO NHO GI DAU MA QUEN",
+    "scenes": [
+      "b01",
+      "b01b"
+    ],
+    "format": "hook C1 che thang (L-043); no on-screen hook text per L-050 direction v3.1 (rule-55 narration waiver)"
+  },
+  "engagement": [
+    {
+      "type": "relatable-question",
+      "beat": "b01",
+      "text": "Bạn tưởng mình hay quên hả?"
+    },
+    {
+      "type": "comment-challenge",
+      "beat": "b10",
+      "text": "Comment một con số nha!"
+    },
+    {
+      "type": "loop",
+      "beat": "b10",
+      "text": "Quay lại sáng mai coi",
+      "hook_word": "trống"
+    }
+  ],
+  "voices": {
+    "Thầy": "F5 · Thái Sơn speed 0.9"
+  },
+  "throughline": "Bạn đọc cả tối mà đầu vẫn trống VÀ tưởng mình hay quên, NHƯNG đọc lại chỉ làm mắt quen mặt chữ chưa tự nhớ lần nào, VÌ VẬY học xong gấp sách tự kiểm trước rồi mới mở ra đối chiếu",
+  "hook_question": {
+    "asked": "ban tuong minh hay quen ha?",
+    "answered": "khong phai quen: chua nho lan nao; gap sach tu kiem"
+  },
+  "structure": {
+    "hook": [
+      "b01",
+      "b01b"
+    ],
+    "intro": [
+      "b02",
+      "b03"
+    ],
+    "body": [
+      "b04",
+      "b05",
+      "b06",
+      "b07",
+      "b08",
+      "b09"
+    ],
+    "summary": [
+      "b10"
+    ],
+    "cta": [
+      "b10"
+    ]
+  },
+  "hook_alt": {
+    "type": "direct",
+    "text": "Doc den lan thu ba van thay quen. Gap sach lai moi biet: quen mat chu thoi, dau thi trong rong."
+  },
+  "callbacks": [
+    "clip-03 (chia nho ra truoc)"
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "engine": "remotion",
+      "scenes": [
+        {
+          "id": "b01",
+          "beat": "clip-04.b01",
+          "part": "hook",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.14,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "Sach mo day, Hiep gat gu tu tin doc (mmx-glide lat trang)",
+            "word": "hay quên"
+          },
+          "sfx": [
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 0.2,
+              "word": "hay quên"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "open"
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "surprised",
+              "text": "Bạn tưởng mình **hay quên** hả?",
+              "say": "Bạn tưởng mình hay quên hả?",
+              "en": "You think you just forget easily?",
+              "hl": [
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "Bạn tưởng mình {nhấn: hay quên} hả?",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c04v1-b01.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep ngoi doc sach day, gat gu tu tin",
+            "react": "tu tin"
+          }
+        },
+        {
+          "id": "b01b",
+          "beat": "clip-04.b02",
+          "part": "hook",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.14,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "idle",
+              "expression": "despair"
+            }
+          ],
+          "fx": {
+            "visual": "Cut cung ngay 'Khong dau': sach gap lai, giay van trang, Hiep om dau",
+            "word": "trống"
+          },
+          "sfx": [
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "Không đâu"
+            },
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 1.9,
+              "word": "trống"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "closed"
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Không đâu, bạn đọc cả tối mà đầu vẫn **trống** — vì bạn có **nhớ gì đâu** mà quên.",
+              "say": "Không đâu, bạn đọc cả tối mà đầu vẫn trống — vì bạn có nhớ gì đâu mà quên.",
+              "en": "No — you read all night and your head is still empty, because you never actually remembered it in the first place.",
+              "hl": [
+                11,
+                16
+              ],
+              "phrases": [
+                {
+                  "t": "Không đâu, bạn đọc cả tối mà đầu vẫn {nhấn: trống} —",
+                  "emph": true
+                },
+                {
+                  "t": "vì bạn có {nhấn: nhớ gì đâu} mà quên.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c04v1-b01b.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Sach gap lai, Hiep om dau nhin camera, giay van trang",
+            "react": "tuyet vong"
+          },
+          "link": "cut cung tu hook: tu tin sup thanh trong rong"
+        },
+        {
+          "id": "b02",
+          "beat": "clip-04.b03",
+          "part": "struggle",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "confused"
+            }
+          ],
+          "fx": {
+            "visual": "Sach mo lai lat lai nhieu vong (mmx-accel-exit), Hiep ngap",
+            "word": "chưa vô đầu"
+          },
+          "sfx": [
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 3.3,
+              "word": "đọc đi đọc lại"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 4.6,
+              "word": "gạch chi chít"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 6.2,
+              "word": "chưa vô đầu"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "open",
+              "flipAt": 3.3
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Nghe vậy có tức không? Như ôn thi hay học tiếng Anh, mình đọc đi đọc lại, gạch chi chít, mà chữ vẫn **chưa vô đầu**.",
+              "say": "Nghe vậy có tức không? Như ôn thi hay học tiếng Anh, mình đọc đi đọc lại, gạch chi chít, mà chữ vẫn chưa vô đầu.",
+              "en": "Stings to hear that, doesn't it? Exam prep, English — rereading and highlighting everything, and it still won't stick.",
+              "hl": [
+                0,
+                18
+              ],
+              "phrases": [
+                {
+                  "t": "Nghe vậy có tức không?"
+                },
+                {
+                  "t": "Như ôn thi hay học tiếng Anh,"
+                },
+                {
+                  "t": "mình đọc đi đọc lại, gạch chi chít,"
+                },
+                {
+                  "t": "mà chữ vẫn {nhấn: chưa vô đầu}.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c04v1-b02.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep lat sach lai lan hai, lan ba, ngap",
+            "react": "buc minh"
+          },
+          "link": "bat phan ung tuc sau cau che o b01"
+        },
+        {
+          "id": "b03",
+          "beat": "clip-04.b04",
+          "part": "struggle",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "confused"
+            }
+          ],
+          "fx": {
+            "visual": "Trang sach troi qua mat nhu bang chuyen (mmx-cruise), sach gap, but dung tren giay trang",
+            "word": "quen mặt chữ"
+          },
+          "sfx": [
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 3.4,
+              "word": "quen mặt chữ"
+            },
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 6.9,
+              "word": "chưa tự nhớ lại"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "open",
+              "flipAt": 3.4,
+              "closeAt": 6.9
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "confused",
+              "text": "Vậy tại mình đọc chưa đủ hả? Không hẳn đâu. Đọc lại chỉ làm mắt **quen mặt chữ**, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.",
+              "say": "Vậy tại mình đọc chưa đủ hả? Không hẳn đâu. Đọc lại chỉ làm mắt quen mặt chữ, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.",
+              "en": "Is it because you didn't read enough? Not really — rereading only makes your eyes recognise the page. Familiar feels like learned, but you never had to recall it.",
+              "hl": [
+                6,
+                15,
+                27
+              ],
+              "phrases": [
+                {
+                  "t": "Vậy tại mình đọc chưa đủ hả?"
+                },
+                {
+                  "t": "Không hẳn đâu."
+                },
+                {
+                  "t": "Đọc lại chỉ làm mắt {nhấn: quen mặt chữ},",
+                  "emph": true
+                },
+                {
+                  "t": "thấy quen nên tưởng thuộc,"
+                },
+                {
+                  "t": "chứ chưa tự nhớ lại lần nào."
+                }
+              ],
+              "voice_file": "voice/c04v1-b03.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Trang troi qua mat ba lan, but dung tren giay trang",
+            "react": "bo roi"
+          },
+          "link": "chua vo dau -> tai doc chua du?"
+        },
+        {
+          "id": "b04",
+          "beat": "clip-04.b05",
+          "part": "evidence",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "surprised"
+            }
+          ],
+          "fx": {
+            "visual": "The nghien cuu khong chu xep chong cao (tdev-stagger), to kiem nho, chong nho len vua",
+            "word": "cao hơn"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 2.2,
+              "word": "Yang"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 2.4,
+              "word": "222 nghiên cứu"
+            },
+            {
+              "name": "rise",
+              "atLine": 0,
+              "offset": 7.3,
+              "word": "cao hơn"
+            }
+          ],
+          "props": [
+            {
+              "kind": "sheet",
+              "x": 260,
+              "y": 1130,
+              "s": 0.65,
+              "inkLines": 0
+            },
+            {
+              "kind": "sheet",
+              "x": 290,
+              "y": 990,
+              "s": 0.65,
+              "inkLines": 0
+            },
+            {
+              "kind": "sheet",
+              "x": 265,
+              "y": 850,
+              "s": 0.65,
+              "inkLines": 0
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 2,
+              "inkAt": 7.3
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Vậy sao biết mình **thuộc thiệt**? Yang và cộng sự gom **222 nghiên cứu**, hơn **48 ngàn** học sinh: có kiểm tra nhỏ thì điểm **cao hơn**, ở mức vừa.",
+              "say": "Vậy sao biết mình thuộc thiệt? Yang và cộng sự gom hai trăm hai mươi hai nghiên cứu, hơn bốn mươi tám ngàn học sinh: có kiểm tra nhỏ thì điểm cao hơn, ở mức vừa.",
+              "en": "So how do you know you really learned it? Yang et al. pooled 222 studies, over 48,000 students: classes with small quizzes scored higher — a medium effect.",
+              "hl": [
+                6,
+                13,
+                16,
+                23
+              ],
+              "phrases": [
+                {
+                  "t": "Vậy sao biết mình {nhấn: thuộc thiệt}?",
+                  "emph": true
+                },
+                {
+                  "t": "Yang và cộng sự gom {nhấn: hai trăm hai mươi hai nghiên cứu},",
+                  "emph": true
+                },
+                {
+                  "t": "hơn {nhấn: bốn mươi tám ngàn} học sinh:",
+                  "emph": true
+                },
+                {
+                  "t": "có kiểm tra nhỏ thì điểm {nhấn: cao hơn}, ở mức vừa.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c04v1-b04.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep chi vao chong the nghien cuu cao, to kiem nho tren ban",
+            "react": "ngac nhien"
+          },
+          "link": "lam sao biet thuoc thiet -> bang chung Yang"
+        },
+        {
+          "id": "b05",
+          "beat": "clip-04.b06",
+          "part": "evidence",
+          "role": "Thầy",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0,
+          "transition": "tdev-panel",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.74,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused"
+            }
+          ],
+          "fx": {
+            "visual": "Bo tu kiem o chong cao, chong sach doc lai o thap (ti le cao/thap, tdev-stagger)",
+            "word": "cao nhất"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 0.5,
+              "word": "bài thi"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 4.4,
+              "word": "mười cách học"
+            },
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 6.1,
+              "word": "cao nhất"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 7.6,
+              "word": "thấp nhất"
+            }
+          ],
+          "props": [
+            {
+              "kind": "bundles",
+              "x": 270,
+              "y": 800,
+              "s": 0.6,
+              "count": 1,
+              "at": 1.5
+            },
+            {
+              "kind": "book",
+              "x": 270,
+              "y": 1270,
+              "s": 0.6,
+              "state": "closed"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Nghe kiểm tra, bạn nghĩ bài thi hả? Không, đó là tự kiểm lúc học. Dunlosky xếp **mười cách học**, cách này ở nhóm **cao nhất**, đọc lại, gạch chân ở nhóm **thấp nhất**.",
+              "say": "Nghe kiểm tra, bạn nghĩ bài thi hả? Không, đó là tự kiểm lúc học. Đun lốt ki xếp mười cách học, cách này ở nhóm cao nhất, đọc lại, gạch chân ở nhóm thấp nhất.",
+              "en": "Tests sound like exams, right? No — this is testing yourself while studying. Dunlosky ranked ten methods: self-testing in the top tier; rereading and highlighting in the bottom tier.",
+              "hl": [
+                3,
+                15,
+                20,
+                27
+              ],
+              "phrases": [
+                {
+                  "t": "Nghe kiểm tra, bạn nghĩ bài thi hả?"
+                },
+                {
+                  "t": "Không, đó là tự kiểm lúc học."
+                },
+                {
+                  "t": "Đun lốt ki xếp {nhấn: mười cách học},",
+                  "emph": true
+                },
+                {
+                  "t": "cách này ở nhóm {nhấn: cao nhất},",
+                  "emph": true
+                },
+                {
+                  "t": "đọc lại, gạch chân ở nhóm {nhấn: thấp nhất}.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c04v1-b05.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep nhin hai chong cao/thap, lac dau go so bai thi",
+            "react": "nghiêm tuc"
+          },
+          "link": "kiem tra nghe nhu bai thi -> Dunlosky xep hang"
+        },
+        {
+          "id": "b06",
+          "beat": "clip-04.b07",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.1,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused"
+            }
+          ],
+          "fx": {
+            "visual": "Sach tu gap lai dung chu 'gap sach lai' (prop book bien doi trong canh, push-in 0.10)",
+            "word": "gấp sách lại"
+          },
+          "sfx": [
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 4.3,
+              "word": "gấp sách lại"
+            },
+            {
+              "name": "pen",
+              "atLine": 0,
+              "offset": 5.2,
+              "word": "tự kiểm trước"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "open",
+              "closeAt": 4.3
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 0
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Vậy đọc lại bỏ luôn hả? Không hẳn, tác dụng nó hẹp hơn thôi. Học xong, **gấp sách lại** tự kiểm trước, đừng quay đầu **đọc lại** ngay.",
+              "say": "Vậy đọc lại bỏ luôn hả? Không hẳn, tác dụng nó hẹp hơn thôi. Học xong, gấp sách lại tự kiểm trước, đừng quay đầu đọc lại ngay.",
+              "en": "So rereading is useless? Not quite — its effect is just narrower. Finish a section, close the book and test yourself first, instead of turning straight back to reread.",
+              "hl": [
+                3,
+                11,
+                15,
+                28
+              ],
+              "phrases": [
+                {
+                  "t": "Vậy đọc lại bỏ luôn hả?"
+                },
+                {
+                  "t": "Không hẳn, tác dụng nó hẹp hơn thôi."
+                },
+                {
+                  "t": "Học xong, {nhấn: gấp sách lại} tự kiểm trước,",
+                  "emph": true
+                },
+                {
+                  "t": "đừng quay đầu {nhấn: đọc lại} ngay.",
+                  "emph": true
+                }
+              ],
+              "voice_file": "voice/c04v1-b06.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep dinh mo sach lai thi dung, sach tu gap lai",
+            "react": "dut khoat"
+          },
+          "link": "doc lai bo luon? -> khong han, gap sach truoc"
+        },
+        {
+          "id": "b07",
+          "beat": "clip-04.b08",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "Giay trang day dan dong muc khong doc duoc, mo sach doi chieu chi cho thieu",
+            "word": "ghi ra những gì còn nhớ"
+          },
+          "sfx": [
+            {
+              "name": "pen",
+              "atLine": 0,
+              "offset": 3.6,
+              "word": "ghi ra những gì còn nhớ"
+            },
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 6.3,
+              "word": "mở sách"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 7.1,
+              "word": "sai chỗ nào"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "closed",
+              "openAt": 6.3
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 6,
+              "inkAt": 3.6,
+              "inkStagger": 0.5
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Tự kiểm làm sao đây? Như mình nè: học xong một phần, mình **gấp sách lại**, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ nào.",
+              "say": "Tự kiểm làm sao đây? Như mình nè: học xong một phần, mình gấp sách lại, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ nào.",
+              "en": "How do you self-test? Like me: finish a section, close the book, write down what I remember, then open it to check where I went wrong.",
+              "hl": [
+                3,
+                9,
+                16,
+                25
+              ],
+              "phrases": [
+                {
+                  "t": "Tự kiểm làm sao đây?"
+                },
+                {
+                  "t": "Như mình nè: học xong một phần,"
+                },
+                {
+                  "t": "mình {nhấn: gấp sách lại}, ghi ra những gì còn nhớ,",
+                  "emph": true
+                },
+                {
+                  "t": "rồi mở sách coi sai chỗ nào."
+                }
+              ],
+              "voice_file": "voice/c04v1-b07.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep gap sach, ghi ra giay, mo sach doi chieu chi cho thieu",
+            "react": "hao hung"
+          },
+          "link": "tu kiem lam sao -> lam mau ghi ra doi chieu"
+        },
+        {
+          "id": "b08",
+          "beat": "clip-04.b09",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused"
+            }
+          ],
+          "fx": {
+            "visual": "Lat chuong nhanh bi chan, gap sach tu noi roi khung that 0.4s, mo dung trang bi",
+            "word": "chương này nói gì"
+          },
+          "sfx": [
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 2.2,
+              "word": "ba lần"
+            },
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 3.9,
+              "word": "gấp lại"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 7.2,
+              "word": "chưa thuộc chỗ đó"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 290,
+              "y": 1020,
+              "s": 0.95,
+              "state": "open",
+              "flipAt": 2.2,
+              "closeAt": 3.9,
+              "openAt": 7.2
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 3,
+              "inkAt": -9
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Còn ôn thi, tiếng Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại, tự nói **chương này nói gì**. Bí chỗ nào là chưa thuộc chỗ đó.",
+              "say": "Còn ôn thi, tiếng Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại, tự nói chương này nói gì. Bí chỗ nào là chưa thuộc chỗ đó.",
+              "en": "What about exams or English? Instead of rereading a chapter three times, close it and say what it was about. Where you get stuck is what you haven't learned.",
+              "hl": [
+                2,
+                10,
+                19,
+                23
+              ],
+              "phrases": [
+                {
+                  "t": "Còn ôn thi, tiếng Anh thì sao?"
+                },
+                {
+                  "t": "Thay vì đọc một chương ba lần,"
+                },
+                {
+                  "t": "mình gấp lại, tự nói {nhấn: chương này nói gì}.",
+                  "emph": true
+                },
+                {
+                  "t": "Bí chỗ nào là chưa thuộc chỗ đó."
+                }
+              ],
+              "voice_file": "voice/c04v1-b08.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep gap sach chuong day tu noi, khung lai roi mo dung trang",
+            "react": "tu tin roi bo roi"
+          },
+          "link": "on thi/tieng Anh thi sao -> bi o dau la chua thuoc o do"
+        },
+        {
+          "id": "b09",
+          "beat": "clip-04.b10",
+          "part": "payoff",
+          "role": "Thầy",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.74,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "Callback L-050: pile cao tach thanh 3 bundles trong canh, om 1 bo gap + ghi kiem bo do",
+            "word": "chia nhỏ ra"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 3.2,
+              "word": "chia nhỏ ra"
+            },
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": 5.2,
+              "word": "Học xong phần nào"
+            },
+            {
+              "name": "pen",
+              "atLine": 0,
+              "offset": 5.4,
+              "word": "kiểm ngay phần đó"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 6.2,
+              "word": "kiểm ngay phần đó"
+            }
+          ],
+          "props": [
+            {
+              "kind": "pile",
+              "x": 320,
+              "y": 900,
+              "s": 0.75,
+              "until": 3.4
+            },
+            {
+              "kind": "bundles",
+              "x": 300,
+              "y": 1080,
+              "s": 0.62,
+              "at": 3.2
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 2,
+              "inkAt": 5.4
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Bài dài quá, kiểm sao hết? Nhớ clip trước không, bài dài thì **chia nhỏ ra** trước. Học xong phần nào, kiểm ngay phần đó.",
+              "say": "Bài dài quá, kiểm sao hết? Nhớ clíp trước không, bài dài thì chia nhỏ ra trước. Học xong phần nào, kiểm ngay phần đó.",
+              "en": "But what if it's long? Remember last clip: split the big pile first. Finish one small bundle, then test yourself on just that bundle.",
+              "hl": [
+                4,
+                8,
+                16
+              ],
+              "phrases": [
+                {
+                  "t": "Bài dài quá, kiểm sao hết?"
+                },
+                {
+                  "t": "Nhớ clíp trước không,"
+                },
+                {
+                  "t": "bài dài thì {nhấn: chia nhỏ ra} trước.",
+                  "emph": true
+                },
+                {
+                  "t": "Học xong phần nào, kiểm ngay phần đó."
+                }
+              ],
+              "voice_file": "voice/c04v1-b09.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep chia chong bai day thanh ba bo gon, om mot bo ghi kiem",
+            "react": "nhe nhom"
+          },
+          "link": "bai dai kiem sao het -> callback chia nho clip-03"
+        },
+        {
+          "id": "b10",
+          "beat": "clip-04.b11",
+          "part": "cta",
+          "role": "Thầy",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.72,
+              "facing": "left",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy"
+            }
+          ],
+          "fx": {
+            "visual": "Loop b01: cung bo cuc sach gap, giay gio co dong; Hiep chi xuong cho con so",
+            "word": "mấy ý"
+          },
+          "sfx": [
+            {
+              "name": "swish",
+              "atLine": 0,
+              "offset": 0.3,
+              "word": "sáng mai"
+            },
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 5.8,
+              "word": "mấy ý"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 7.7,
+              "word": "một con số"
+            }
+          ],
+          "props": [
+            {
+              "kind": "book",
+              "x": 300,
+              "y": 1020,
+              "s": 0.85,
+              "state": "closed"
+            },
+            {
+              "kind": "sheet",
+              "x": 470,
+              "y": 1250,
+              "s": 0.48,
+              "inkLines": 4,
+              "inkAt": -9
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "Quay lại sáng mai coi, đâu phải mình học dở. Mắt quen chữ thôi, đầu chưa **tự nhớ** lần nào. Tối nay bạn nhớ được **mấy ý**? Comment một con số nha!",
+              "say": "Quay lại sáng mai coi, đâu phải mình học dở. Mắt quen chữ thôi, đầu chưa tự nhớ lần nào. Tối nay bạn nhớ được mấy ý? Com men một con số nha!",
+              "en": "Back to that next-morning moment: see, you're not bad at studying — your eyes got familiar, your brain never recalled. Tonight, how many ideas can you remember? Comment a number!",
+              "hl": [
+                8,
+                19,
+                22,
+                29
+              ],
+              "phrases": [
+                {
+                  "t": "Quay lại sáng mai coi,"
+                },
+                {
+                  "t": "đâu phải mình học dở."
+                },
+                {
+                  "t": "Mắt quen chữ thôi, đầu chưa {nhấn: tự nhớ} lần nào.",
+                  "emph": true
+                },
+                {
+                  "t": "Tối nay bạn nhớ được {nhấn: mấy ý}?",
+                  "emph": true
+                },
+                {
+                  "t": "Com men một con số nha!"
+                }
+              ],
+              "voice_file": "voice/c04v1-b10.wav",
+              "voice_role": "Thầy"
+            }
+          ],
+          "stage": {
+            "action": "Hiep ha tay, nhin camera cho con so, giay da co dong",
+            "react": "am ap"
+          },
+          "link": "quay lai sang mai o b01 nhung giay da khac"
+        }
+      ]
+    }
+  ]
+}

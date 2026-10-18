@@ -15,6 +15,13 @@ const local = (p: PropLike): [number, number, number, number] | null => {
     case "cloud": return [-240, -230, 240, 70 + Math.max(0, (p.words?.length ?? 1) - 1) * 104 + 40];
     case "sign": { const w = Math.max(320, (p.text ?? "?").length * 40 + 80); return [-w / 2, -100, w / 2, 40]; } // board only (post is thin)
     case "words": { const ws = p.words ?? []; const m = Math.max(1, ...ws.map((w) => w.length)); return [-m * 30 - 30, -58, m * 30 + 30, (ws.length - 1) * 120 + 42]; }
+    case "book": return [-240, -210, 240, 210];
+    case "sheet": return [-175, -215, 175, 215];
+    case "pile": return [-330, -360, 330, 400];
+    case "bundles": return [-430, -90, 430, 110];
+    case "bundle": return [-100, -90, 100, 90];
+    case "clock": return [-185, -185, 185, 185];
+    case "dusty": return [-340, -340, 430, 340];
     default: return null; // vignette: full-screen tint, not an obstacle
   }
 };
