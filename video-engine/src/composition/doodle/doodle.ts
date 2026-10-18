@@ -39,7 +39,45 @@ export const toPathD = (pts: Pt[]): string => pts.map((p, i) => `${i ? "L" : "M"
 /** Hand-drawn ease: fast nib start, gentle lift at the end. Pure, frame-driven. */
 export const doodleEase = (p: number): number => { const c = Math.max(0, Math.min(1, p)); return 1 - Math.pow(1 - c, 2.2); };
 
-export type DoodleKind = "circle" | "underline" | "arrow" | "check" | "cross" | "sketch-box" | "path";
+export type DoodleKind = "circle" | "underline" | "arrow" | "check" | "cross" | "sketch-box" | "path" | "drawing";
+
+/** One stroke of a purposeful multi-stroke drawing (creative mode, L-047 amended).
+ *  offset/duration are relative to the parent cue's `at`; fill fades in after the stroke completes. */
+export interface DoodleStroke {
+  points: Pt[]; closed?: boolean; offset?: number; duration?: number;
+  color?: string; width?: number; seed?: number; fill?: string; fillOpacity?: number; smooth?: boolean;
+}
+export interface TranslateKeyframe { at: number; x: number; y: number }
+
+/** Stroke geometry: sampled (+seeded jitter), closed strokes wrap around. Pure/deterministic. */
+export function strokePaths(stroke: DoodleStroke, fallbackSeed = 7): Pt[] {
+  const j = jitterPts(stroke.points, 1, stroke.seed ?? fallbackSeed);
+  return stroke.smooth === false ? (stroke.closed ? [...j, j[0]] : j) : samplePts(j, !!stroke.closed, 6);
+}
+/** Absolute [start,end] window of a stroke inside its cue. */
+export const strokeWindow = (cueAt: number, stroke: DoodleStroke, i = 0): [number, number] => {
+  const start = cueAt + (stroke.offset ?? i * 0.15);
+  return [start, start + (stroke.duration ?? 0.5)];
+};
+/** Piecewise-linear translate from keyframes (sorted by at); hop adds a small arc lift mid-segment. Pure. */
+export function interpTranslate(keys: TranslateKeyframe[] | undefined, t: number, hop = 0): { x: number; y: number } {
+  if (!keys?.length) return { x: 0, y: 0 };
+  const ks = [...keys].sort((a, b) => a.at - b.at);
+  if (t <= ks[0].at) return { x: ks[0].x, y: ks[0].y };
+  for (let i = 1; i < ks.length; i++) {
+    if (t <= ks[i].at) {
+      const a = ks[i - 1], b = ks[i], span = Math.max(1e-6, b.at - a.at), p = (t - a.at) / span;
+      const e = p * p * (3 - 2 * p); // smoothstep, brand ease
+      return { x: a.x + (b.x - a.x) * e, y: a.y + (b.y - a.y) * e - hop * Math.sin(Math.PI * p) };
+    }
+  }
+  const last = ks[ks.length - 1];
+  return { x: last.x, y: last.y };
+}
+/** Fade-out factor: 1 before fadeOutAt, ->0 over fadeOutDuration. */
+export const fadeFactor = (t: number, fadeOutAt?: number, fadeOutDuration = 0.4): number =>
+  fadeOutAt === undefined ? 1 : Math.max(0, Math.min(1, 1 - (t - fadeOutAt) / Math.max(0.01, fadeOutDuration)));
+
 
 /** Build the sub-paths (sampled points) for one doodle cue, in design px (1080-wide). */
 export function doodlePaths(kind: DoodleKind, x: number, y: number, w: number, h: number, seed = 7, points?: Pt[]): Pt[][] {
@@ -65,5 +103,6 @@ export function doodlePaths(kind: DoodleKind, x: number, y: number, w: number, h
       return [samplePts(jitterPts(ctrl, 1.4, seed), true, 5)];
     }
     case "path": return points && points.length > 1 ? [samplePts(jitterPts(points, 1, seed), false, 6)] : [];
+    case "drawing": return []; // multi-stroke geometry lives in strokePaths(); see Doodle.tsx
   }
 }

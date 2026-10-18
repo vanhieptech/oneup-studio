@@ -26,3 +26,30 @@ describe("doodle draw-on (anidoodle port)", () => {
     expect(bad.ok).toBe(false);
   });
 });
+
+describe("doodle drawing (creative multi-stroke, L-047)", () => {
+  it("sequences strokes by offset and is deterministic", async () => {
+    const { strokePaths, strokeWindow, interpTranslate, fadeFactor } = await import("../src/composition/doodle/doodle");
+    const s = { points: [[0, 0], [100, 0]] as [number, number][], offset: 0.4, duration: 0.5 };
+    expect(strokeWindow(2, s)).toEqual([2.4, 2.9]);
+    expect(strokePaths(s, 7)).toEqual(strokePaths(s, 7));
+    expect(strokePaths({ points: [[0, 0], [10, 0], [10, 10]], closed: true }, 7).length).toBeGreaterThan(3);
+  });
+  it("interpolates translate keyframes with hop and fades out", async () => {
+    const { interpTranslate, fadeFactor } = await import("../src/composition/doodle/doodle");
+    const keys = [{ at: 0, x: 100, y: 0 }, { at: 2, x: 0, y: -100 }];
+    expect(interpTranslate(keys, 0)).toEqual({ x: 100, y: 0 });
+    expect(interpTranslate(keys, 5)).toEqual({ x: 0, y: -100 });
+    const mid = interpTranslate(keys, 1, 20);
+    expect(mid.x).toBeCloseTo(50); expect(mid.y).toBeLessThan(-50); // hop lifts above the straight line
+    expect(fadeFactor(1, 2, 0.4)).toBe(1); expect(fadeFactor(2.4, 2, 0.4)).toBeCloseTo(0);
+  });
+  it("validate requires strokes for drawing and rejects stroke overrun", () => {
+    const bad1 = validatePlan({ id: "d", scenes: [{ id: "s", duration: 3, doodles: [{ kind: "drawing", x: 0, y: 0, w: 10, h: 10 }] }] });
+    expect(bad1.ok).toBe(false);
+    const bad2 = validatePlan({ id: "d", scenes: [{ id: "s", duration: 3, doodles: [{ kind: "drawing", x: 0, y: 0, w: 10, h: 10, strokes: [{ points: [[0, 0], [10, 10]], offset: 2.8, duration: 0.5 }] }] }] });
+    expect(bad2.ok).toBe(false);
+    const ok = validatePlan({ id: "d", scenes: [{ id: "s", duration: 3, doodles: [{ kind: "drawing", x: 0, y: 0, w: 10, h: 10, strokes: [{ points: [[0, 0], [10, 10]], offset: 0, duration: 0.5 }] }] }] });
+    expect(ok.ok).toBe(true);
+  });
+});

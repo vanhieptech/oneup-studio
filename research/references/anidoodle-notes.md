@@ -53,3 +53,13 @@ Schema/validate: `scene.doodles[]` in `validation/schema.ts` (`DOODLE_KINDS`, sh
 ## 6. Strengths / weaknesses for us
 Strengths: draw-on đúng thứ tự tay vẽ làm motion graphics trông "người vẽ" hơn pop/fade; deterministic seeded nên Remotion frame-pure, render lại giống hệt; geometry helpers nhỏ, port rẻ.
 Weaknesses: upstream là canvas raster (ribbon/tooth/wash) — port SVG chỉ giữ được nét bút, không giữ texture giấy/rửa màu; 32 styles cần plate riêng từng style, không hợp brand Be Vietnam Pro/DM Sans + chibi rig hiện tại; engine lớn (162 file canvas-core) nếu bê nguyên sẽ thành hệ render thứ hai phải bảo trì.
+
+## 7. Creative drawing mode (2026-10-18, Hiệp: overlay "Không liên quan")
+
+Hiệp rejected overlay-only doodles as decoration on existing frames. Two modes now:
+- **Overlay marks** (`circle/underline/arrow/check/cross/sketch-box/path`): accent only, on a real comic scene, ≤1/beat. Never the hero of a demo.
+- **Purposeful drawing — PREFERRED for metaphors** (`kind:"drawing"` in `catalog.json: doodle-drawing`): an ordered multi-stroke picture that *is* the content. Each stroke: `points, closed, offset, duration, color, width, seed, fill(+fillOpacity), smooth`. Cue extras: `label` (≤1–2 short Be Vietnam Pro labels), `fadeOutAt/fadeOutDuration` (replace a drawn object), `translateKeyframes + hop` (blocks/figure move with a small arc). Helpers `strokePaths/strokeWindow/interpTranslate/fadeFactor` in `doodle.ts` are pure/seeded; validation requires strokes, rejects stroke/ keyframe overruns (shared `DOODLE_KINDS`, L-042).
+
+Reference demo: `video-engine/examples/doodle-creative-demo.json` (13s, 1080×1920, no character/dialogue/caption): ground → jagged big block labelled VIỆC TO (soft fill + inner crack) → accent cut lines → block fades, 4 separate cubes draw in a cluster → cubes slide into ascending steps → simple line figure draws and hops up step-by-step → flag (accent fill) + accent check on the top cube. Stills were read and iterated twice (rock read as tombstone → widened/jagged + label moved below; cubes merged as a window → 12px gaps + soft fill; flag collided with figure → figure stops left, pole at right edge).
+
+Honest quality read: clean, designed, minimal whiteboard-metaphor — reads instantly. Limits: the "rock" is an irregular block (not a literal rock texture), the figure is a stick figure (intentional, not the chibi rig), and the drawing sits in the middle band with generous whitespace; scale the whole drawing up if a real beat needs more presence. Use creative drawing when the *metaphor itself* should be seen being built; use overlay marks only to accent a word in an existing comic scene.

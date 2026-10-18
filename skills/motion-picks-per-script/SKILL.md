@@ -50,7 +50,8 @@ Source: https://github.com/alexgreensh/anidoodle (Apache-2.0) @ 4db6964. Vendore
 In-house: `video-engine/src/composition/doodle/catalog.json` + `doodle.ts`/`Doodle.tsx` — 7 seeded SVG draw-on marks (`doodle-circle`, `doodle-underline`, `doodle-arrow`, `doodle-check`, `doodle-cross`, `doodle-sketch-box`, `doodle-path`). Add `scene.doodles[]` `{kind, x, y, w, h, at, duration, seed}`; validated in `validate.ts` (shared `DOODLE_KINDS`, L-042/L-047).
 
 **When to prefer doodle vs existing:**
-- Keyword emphasis on a note/board, cause→effect arrows, checklist ticks, crossing a wrong belief, sticky-note sketch reveal → use `doodle-*` (lands on the spoken word).
+- Metaphor/explanation that should be *seen being built* (task→steps, before→after, process) → use `doodle-drawing` (creative multi-stroke, PREFERRED over decorating frames; see catalog + `examples/doodle-creative-demo.json`).
+- Keyword emphasis on a note/board, cause→effect arrows, checklist ticks, crossing a wrong belief, sticky-note sketch reveal → use overlay `doodle-*` (lands on the spoken word, accent only).
 - Scene timing/eases → keep `mmx-*`; UI transitions → keep `tdev-*`; caption/count-up/strike → keep awesome-ai-motion cards.
 - Craft laws (always): ≤1 doodle accent per beat, draw-on 0.4–0.8s (never fade/pop a finished mark in), fixed seed per cue, box above caption band (y+h ≤ 1400), brand accent stroke only.
 - Skip: anidoodle canvas engine/32 styles at runtime, its music/sound pack, interactive web component (off-format; see notes §5).

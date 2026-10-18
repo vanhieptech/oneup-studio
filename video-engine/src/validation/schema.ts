@@ -8,7 +8,7 @@ export const TRANSITIONS = ["cut", "fade", "slide", "wipe", "iris"] as const;
 export const FRAMINGS = ["wide", "medium", "closeup"] as const;
 export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid"] as const;
 /** Doodle draw-on marks (anidoodle port, L-047). Shared by schema + validate (L-042: one list). */
-export const DOODLE_KINDS = ["circle", "underline", "arrow", "check", "cross", "sketch-box", "path"] as const;
+export const DOODLE_KINDS = ["circle", "underline", "arrow", "check", "cross", "sketch-box", "path", "drawing"] as const;
 export const ENTERS = ["none", "pop", "slide-left", "slide-right", "rise"] as const;
 
 export type Expression = (typeof EXPRESSIONS)[number];
@@ -87,6 +87,16 @@ export const SceneSchema = z.object({
     color: z.string().optional(), seed: z.number().int().default(7),
     width: z.number().positive().default(7),
     points: z.array(z.tuple([z.number(), z.number()])).optional(),
+    strokes: z.array(z.object({
+      points: z.array(z.tuple([z.number(), z.number()])).min(2), closed: z.boolean().default(false),
+      offset: seconds.default(0), duration: z.number().finite().positive().default(0.5),
+      color: z.string().optional(), width: z.number().positive().optional(), seed: z.number().int().optional(),
+      fill: z.string().optional(), fillOpacity: z.number().min(0).max(1).optional(), smooth: z.boolean().optional(),
+    })).optional(),
+    label: z.object({ text: nonEmpty, x: z.number().finite(), y: z.number().finite(), at: seconds.optional(), size: z.number().positive().optional(), color: z.string().optional() }).optional(),
+    fadeOutAt: seconds.optional(), fadeOutDuration: z.number().finite().positive().default(0.4),
+    translateKeyframes: z.array(z.object({ at: seconds, x: z.number().finite(), y: z.number().finite() })).optional(),
+    hop: z.number().finite().nonnegative().optional(),
   })).default([]),
   beat: z.string().optional().describe("repo beat id, e.g. clip-01.b02"),
 });

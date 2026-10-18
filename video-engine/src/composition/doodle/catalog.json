@@ -7,18 +7,98 @@
   },
   "usage": "Add scene.doodles[] in a video-engine plan: {kind, x, y, w, h, at, duration, color?, seed?, width?}. Coordinates are design px (1080 x 1920). Rendered by src/composition/doodle/Doodle.tsx inside SceneRenderer. Tag motion-spec rows with (anidoodle).",
   "kinds": [
-    {"slug": "doodle-circle", "kind": "circle", "en": "Hand circle around a keyword/prop", "purposes": ["강조", "설명"], "use": "circle the thesis word, a sticky-note line or a prop at the spoken word; 0.45-0.7s draw-on", "dur_s": 0.6},
-    {"slug": "doodle-underline", "kind": "underline", "en": "Hand underline", "purposes": ["강조"], "use": "underline a caption keyword or note line as it is spoken; keep clear of the caption band (y < 1400)", "dur_s": 0.45},
-    {"slug": "doodle-arrow", "kind": "arrow", "en": "Hand arrow", "purposes": ["설명", "순서·흐름"], "use": "point from cause to effect, or from a big task to its first small step", "dur_s": 0.6},
-    {"slug": "doodle-check", "kind": "check", "en": "Hand tick", "purposes": ["강조", "순서·흐름"], "use": "tick a finished small step in a checklist beat", "dur_s": 0.4},
-    {"slug": "doodle-cross", "kind": "cross", "en": "Hand cross-out", "purposes": ["비교", "강조"], "use": "cross the wrong belief / the big-name task before the reframe", "dur_s": 0.5},
-    {"slug": "doodle-sketch-box", "kind": "sketch-box", "en": "Sketch box reveal", "purposes": ["설명", "브랜딩"], "use": "draw the sticky-note / card outline itself (sketch reveal) instead of popping a finished box in", "dur_s": 0.7},
-    {"slug": "doodle-path", "kind": "path", "en": "Free hand path", "purposes": ["설명"], "use": "custom points[] path (thread, route, string being cut); points in design px", "dur_s": 0.8}
+    {
+      "slug": "doodle-circle",
+      "kind": "circle",
+      "en": "Hand circle around a keyword/prop",
+      "purposes": [
+        "강조",
+        "설명"
+      ],
+      "use": "circle the thesis word, a sticky-note line or a prop at the spoken word; 0.45-0.7s draw-on",
+      "dur_s": 0.6
+    },
+    {
+      "slug": "doodle-underline",
+      "kind": "underline",
+      "en": "Hand underline",
+      "purposes": [
+        "강조"
+      ],
+      "use": "underline a caption keyword or note line as it is spoken; keep clear of the caption band (y < 1400)",
+      "dur_s": 0.45
+    },
+    {
+      "slug": "doodle-arrow",
+      "kind": "arrow",
+      "en": "Hand arrow",
+      "purposes": [
+        "설명",
+        "순서·흐름"
+      ],
+      "use": "point from cause to effect, or from a big task to its first small step",
+      "dur_s": 0.6
+    },
+    {
+      "slug": "doodle-check",
+      "kind": "check",
+      "en": "Hand tick",
+      "purposes": [
+        "강조",
+        "순서·흐름"
+      ],
+      "use": "tick a finished small step in a checklist beat",
+      "dur_s": 0.4
+    },
+    {
+      "slug": "doodle-cross",
+      "kind": "cross",
+      "en": "Hand cross-out",
+      "purposes": [
+        "비교",
+        "강조"
+      ],
+      "use": "cross the wrong belief / the big-name task before the reframe",
+      "dur_s": 0.5
+    },
+    {
+      "slug": "doodle-sketch-box",
+      "kind": "sketch-box",
+      "en": "Sketch box reveal",
+      "purposes": [
+        "설명",
+        "브랜딩"
+      ],
+      "use": "draw the sticky-note / card outline itself (sketch reveal) instead of popping a finished box in",
+      "dur_s": 0.7
+    },
+    {
+      "slug": "doodle-path",
+      "kind": "path",
+      "en": "Free hand path",
+      "purposes": [
+        "설명"
+      ],
+      "use": "custom points[] path (thread, route, string being cut); points in design px",
+      "dur_s": 0.8
+    },
+    {
+      "slug": "doodle-drawing",
+      "kind": "drawing",
+      "en": "Purposeful multi-stroke drawing (creative)",
+      "purposes": [
+        "설명",
+        "강조"
+      ],
+      "use": "draw the metaphor itself stroke-by-stroke (big rock -> cut -> cubes -> stairs -> figure+flag); strokes[] ordered, optional fill/translateKeyframes/fadeOutAt; the picture IS the content, not a mark over a sign",
+      "dur_s": 3.0
+    }
   ],
   "rules": [
     "Max 1 doodle accent per beat; it lands ON the spoken keyword (cue.at = word time), never as decoration.",
     "Keep doodle boxes above the caption band (bottom < ~1400 design px) and clear of faces (L-033/L-038).",
     "Brand only: stroke defaults to BRAND.accent, width 8-12, Be Vietnam Pro text stays in captions/props (rule-15).",
-    "Deterministic: fixed seed per cue (default 7); never Math.random/Date in a doodle."
+    "Deterministic: fixed seed per cue (default 7); never Math.random/Date in a doodle.",
+    "Creative mode preferred for metaphors (L-047 amended): draw the picture that tells the story; overlay marks (circle/underline) only accent existing comic scenes, max 1/beat."
   ]
 }

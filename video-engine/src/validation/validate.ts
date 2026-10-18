@@ -98,6 +98,15 @@ export function validatePlan(input: unknown, registry: ProfileRegistry = default
       if (d.kind === "path" && (!d.points || d.points.length < 2)) err(`${dp}.points`, "doodle kind \"path\" needs points[] with at least 2 design-px points");
       if (d.x < 0 || d.y < 0 || d.x + d.w > 1080) warn(dp, "doodle box runs outside the 1080-wide design frame");
       if (d.y + d.h > 1400) warn(dp, "doodle box enters the caption band (design y > 1400, L-038): keep marks above captions");
+      if (d.kind === "drawing") {
+        if (!d.strokes?.length) err(`${dp}.strokes`, "doodle kind \"drawing\" needs strokes[] with at least 1 stroke");
+        (d.strokes ?? []).forEach((st, si) => {
+          if (st.points.length < 2) err(`${dp}.strokes[${si}].points`, "drawing stroke needs at least 2 points");
+          if (d.at + (st.offset ?? 0) + (st.duration ?? 0.5) > s.duration + 1e-9) err(`${dp}.strokes[${si}]`, `drawing stroke ends at ${(d.at + (st.offset ?? 0) + (st.duration ?? 0.5)).toFixed(2)}s but scene is only ${s.duration}s`);
+        });
+        if (d.fadeOutAt !== undefined && d.fadeOutAt > s.duration) err(`${dp}.fadeOutAt`, "fadeOutAt is after scene end");
+        (d.translateKeyframes ?? []).forEach((kf, ki) => { if (kf.at > s.duration) err(`${dp}.translateKeyframes[${ki}].at`, "translate keyframe is after scene end"); });
+      }
     });
   });
 
