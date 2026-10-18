@@ -330,6 +330,7 @@ tags: [index, retrieval]
 | asset.sfx | `assets/sfx/` | CC0/Mixkit SFX + SOURCES.md |
 | asset.template | `templates/hyperframes-base/` | HyperFrames 1080x1920 scaffold, local GSAP |
 | asset.characters | `brand/characters/` | Hiệp rig + model sheets, Omi sheet (prototype v0.1) |
+| research.doodle-meaning | `research/references/doodle-meaning-frame1..4.png` + `video-engine/examples/doodle-meaning-stills.json` | Meaning-by-objects stills (no words), pending Hiệp approval (L-050) |
 | tool.comic | `pipeline/comic/render.py` | Comic strip renderer (comic/spec.json -> strip.png) |
 | tool.storyboard | `pipeline/storyboard/render.py` | Shared storyboard renderer (spec.json -> PNGs + contact sheet) |
 | tool.sync-trends | `pipeline/scripts/sync-trends.sh` | Box -> repo trend sync, commit, push |

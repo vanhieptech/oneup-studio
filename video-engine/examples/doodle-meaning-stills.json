@@ -1,0 +1,184 @@
+{
+ "version": 1,
+ "id": "doodle-meaning-stills",
+ "title": "Meaning-by-objects stills (no words): pile / bundles / clock / dusty — Hiệp duyệt mắt, chưa render video",
+ "meta": {
+  "clip": "clip-03",
+  "source": "Hiệp 18/10: thay vì viết chữ, vẽ khung cảnh đồ vật hành động thể hiện ý nghĩa"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "f1-pile",
+   "duration": 2,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "surprised",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [],
+   "props": [
+    {
+     "kind": "pile",
+     "x": 360,
+     "y": 920,
+     "s": 1.02,
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "f2-bundles",
+   "duration": 2,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [],
+   "props": [
+    {
+     "kind": "bundles",
+     "x": 355,
+     "y": 1060,
+     "s": 0.82,
+     "count": 3,
+     "at": 0
+    },
+    {
+     "kind": "bundle",
+     "x": 680,
+     "y": 1180,
+     "s": 0.78,
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "f3-clock",
+   "duration": 2,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.62,
+     "pose": "standing",
+     "action": "walking",
+     "expression": "happy",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [],
+   "props": [
+    {
+     "kind": "clock",
+     "x": 295,
+     "y": 580,
+     "s": 1.4,
+     "at": 0
+    },
+    {
+     "kind": "bundle",
+     "x": 500,
+     "y": 1200,
+     "s": 0.92,
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "f4-dusty",
+   "duration": 2,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "sad",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [],
+   "props": [
+    {
+     "kind": "dusty",
+     "x": 370,
+     "y": 940,
+     "s": 1.02,
+     "at": 0
+    }
+   ]
+  }
+ ]
+}

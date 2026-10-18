@@ -78,7 +78,7 @@ export const SceneSchema = z.object({
   narration: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional() }).optional(),
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
   /** DL-056 comic props (laptop/phone/calendar/cloud/sign/words/vignette), see composition/Props.tsx */
-  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words"]) }).passthrough()).default([]),
+  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty"]) }).passthrough()).default([]),
   /** Doodle draw-on marks (anidoodle, Apache-2.0; src/composition/doodle/). Design px, 1080-wide. */
   doodles: z.array(z.object({
     kind: z.enum(DOODLE_KINDS), x: z.number().finite(), y: z.number().finite(),
