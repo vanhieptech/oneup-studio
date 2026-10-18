@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "id": "doodle-assets-demo",
+  "title": "Doodle assets-first demo — clip-03 b07: assets có sẵn + vẽ nối/tick/tiến triển (L-048)",
+  "meta": {
+    "clip": "clip-03",
+    "source": "examples/doodle-assets-demo.json"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "theme": "light"
+  },
+  "scenes": [
+    {
+      "id": "a1",
+      "beat": "clip-03.b07",
+      "duration": 7.5,
+      "background": {
+        "kind": "desk"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0.05
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.4
+      },
+      "characters": [
+        {
+          "characterId": "hiep",
+          "x": 0.76,
+          "pose": "standing",
+          "action": "talking",
+          "expression": "happy",
+          "facing": "left",
+          "enter": "none",
+          "expressionChanges": [],
+          "actionChanges": []
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "hiep",
+          "text": "Thay vì ghi «dọn phòng», mình ghi ra **ba việc nhỏ** này.",
+          "start": 0.2,
+          "end": 7.2,
+          "emotion": "happy"
+        }
+      ],
+      "caption": {
+        "text": "Instead of 'clean the room', I write three small tasks.",
+        "start": 0.2,
+        "segments": [
+          {
+            "text": "Instead of 'clean the room', I write three small tasks.",
+            "start": 0.2,
+            "end": 7.2,
+            "highlight": [
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      "props": [
+        {
+          "kind": "sign",
+          "x": 300,
+          "y": 350,
+          "s": 0.7,
+          "rot": -3,
+          "text": "DỌN PHÒNG",
+          "at": 0.4
+        },
+        {
+          "kind": "words",
+          "x": 280,
+          "y": 860,
+          "s": 0.5,
+          "words": [
+            "DỌN GHẾ",
+            "LAU BÀN",
+            "ĐỔ RÁC"
+          ],
+          "dropAt": [
+            1.4,
+            2.8,
+            4.2
+          ]
+        }
+      ],
+      "doodles": [
+        {
+          "kind": "path",
+          "x": 130,
+          "y": 860,
+          "w": 10,
+          "h": 240,
+          "at": 1.5,
+          "duration": 4.1,
+          "seed": 21,
+          "width": 7,
+          "color": "#FF5A36",
+          "points": [
+            [
+              132,
+              860
+            ],
+            [
+              132,
+              980
+            ],
+            [
+              132,
+              1100
+            ]
+          ]
+        },
+        {
+          "kind": "check",
+          "x": 425,
+          "y": 825,
+          "w": 52,
+          "h": 52,
+          "at": 2.0,
+          "duration": 0.4,
+          "seed": 31,
+          "width": 8
+        },
+        {
+          "kind": "check",
+          "x": 425,
+          "y": 885,
+          "w": 52,
+          "h": 52,
+          "at": 3.4,
+          "duration": 0.4,
+          "seed": 32,
+          "width": 8
+        },
+        {
+          "kind": "check",
+          "x": 425,
+          "y": 945,
+          "w": 52,
+          "h": 52,
+          "at": 4.8,
+          "duration": 0.4,
+          "seed": 33,
+          "width": 8
+        },
+        {
+          "kind": "cross",
+          "x": 445,
+          "y": 300,
+          "w": 56,
+          "h": 56,
+          "at": 0.9,
+          "duration": 0.45,
+          "seed": 41,
+          "width": 8
+        }
+      ]
+    },
+    {
+      "id": "a2",
+      "beat": "clip-03.b07.progress",
+      "duration": 7,
+      "background": {
+        "kind": "grid"
+      },
+      "camera": {
+        "framing": "medium",
+        "push": 0.05
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.4
+      },
+      "characters": [
+        {
+          "characterId": "hiep",
+          "x": 0.76,
+          "pose": "standing",
+          "action": "talking",
+          "expression": "happy",
+          "facing": "left",
+          "enter": "none",
+          "expressionChanges": [],
+          "actionChanges": []
+        }
+      ],
+      "dialogue": [
+        {
+          "speaker": "hiep",
+          "text": "Mỗi việc chừng **mười lăm phút**. Làm xong một việc, đường này lại lên một bậc.",
+          "start": 0.2,
+          "end": 6.8,
+          "emotion": "happy"
+        }
+      ],
+      "caption": {
+        "text": "About 15 minutes each. Finish one, the line climbs a step.",
+        "start": 0.2,
+        "segments": [
+          {
+            "text": "About 15 minutes each. Finish one, the line climbs a step.",
+            "start": 0.2,
+            "end": 6.8,
+            "highlight": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "props": [
+        {
+          "kind": "words",
+          "x": 280,
+          "y": 700,
+          "s": 0.5,
+          "words": [
+            "DỌN GHẾ",
+            "LAU BÀN",
+            "ĐỔ RÁC"
+          ],
+          "dropAt": [
+            0.3,
+            0.5,
+            0.7
+          ]
+        },
+        {
+          "kind": "sign",
+          "x": 260,
+          "y": 1250,
+          "s": 0.45,
+          "rot": 2,
+          "text": "~15' / VIỆC",
+          "at": 1.0
+        }
+      ],
+      "doodles": [
+        {
+          "kind": "drawing",
+          "x": 100,
+          "y": 970,
+          "w": 390,
+          "h": 180,
+          "at": 1.6,
+          "duration": 3.6,
+          "seed": 51,
+          "strokes": [
+            {
+              "points": [
+                [
+                  100,
+                  1150
+                ],
+                [
+                  230,
+                  1150
+                ],
+                [
+                  230,
+                  1060
+                ],
+                [
+                  360,
+                  1060
+                ],
+                [
+                  360,
+                  970
+                ],
+                [
+                  490,
+                  970
+                ]
+              ],
+              "offset": 0,
+              "duration": 3.6,
+              "color": "#FF5A36",
+              "width": 8,
+              "smooth": false
+            }
+          ]
+        },
+        {
+          "kind": "check",
+          "x": 425,
+          "y": 665,
+          "w": 52,
+          "h": 52,
+          "at": 2.2,
+          "duration": 0.4,
+          "seed": 61,
+          "width": 8
+        },
+        {
+          "kind": "check",
+          "x": 425,
+          "y": 725,
+          "w": 52,
+          "h": 52,
+          "at": 3.6,
+          "duration": 0.4,
+          "seed": 62,
+          "width": 8
+        },
+        {
+          "kind": "check",
+          "x": 425,
+          "y": 785,
+          "w": 52,
+          "h": 52,
+          "at": 5.0,
+          "duration": 0.4,
+          "seed": 63,
+          "width": 8
+        }
+      ]
+    }
+  ]
+}
