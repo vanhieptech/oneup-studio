@@ -10,6 +10,7 @@ export type PropCue = {
   x?: number; y?: number; s?: number; rot?: number;
   text?: string; sub?: string; stamp?: string; at?: number; until?: number;
   pages?: string[]; tearAt?: number[]; words?: string[]; dropAt?: number[]; dark?: number;
+  settle?: boolean; liftAt?: number; moveAt?: number; moveDur?: number; moveX?: number; moveY?: number;
 };
 const { ink, paper, soft, accent, muted } = BRAND;
 const pop = (t: number, at = 0, d = 0.18) => { const k = Math.max(0, Math.min(1, (t - at) / d)); return k <= 0 ? 0 : k >= 1 ? 1 : 1 + 0.25 * Math.sin(k * Math.PI) * (1 - k) + (k - 1) * 0; };
@@ -111,77 +112,86 @@ const Words: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
 
 /** Meaning-by-objects props (Hiệp 18/10: draw scenes/objects/actions, never words).
  *  Same finished grammar as old props: flat fill, ink 9-10px, hard offset shadow, one accent. Local: centre (0,0), +y down. */
-const Pile: React.FC<{ p: PropCue; t: number }> = () => (
-  <g>
+const Pile: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
+  const still = p.settle === false;
+  const drop = (at: number) => still ? { transform: undefined, opacity: 1 } : (() => { const e = ease(t, at, 0.38); const land = Math.max(0, t - at - 0.38); const sq = land < 0.3 ? Math.sin((land / 0.3) * Math.PI) * 0.05 : 0; return { transform: `translate(0 ${-(1 - e) * 190}) scale(1 ${1 - sq})`, opacity: e }; })();
+  const ex = p.until != null ? ease(t, p.until - 0.45, 0.45) : 0;
+  return (
+  <g transform={`translate(0 ${ex * 70}) scale(${1 - ex * 0.88})`} opacity={1 - ex}>
     <ellipse cx={0} cy={392} rx={330} ry={24} fill={ink} opacity={0.12} />
-    {/* tall back mound */}
+    <g {...drop(0.15)}>
     <path d="M-290,390 C-310,150 -250,60 -175,35 C-150,-95 -55,-150 15,-105 C85,-185 235,-150 260,-35 C315,25 305,230 285,390 Z" fill={soft} stroke={ink} strokeWidth={10} strokeLinejoin="round" />
-    {/* bottom box */}
     <rect x={-270} y={215} width={540} height={185} rx={22} fill={paper} stroke={ink} strokeWidth={10} />
     <path d="M-270,215 L-185,145 L260,145 L270,215Z" fill={soft} stroke={ink} strokeWidth={8} strokeLinejoin="round" />
-    {/* books leaning left, mid */}
+    </g>
+    <g {...drop(0.5)}>
     <g transform="rotate(-8 -185 105)">
       <rect x={-300} y={78} width={230} height={50} rx={14} fill={ink} stroke={ink} strokeWidth={8} />
       <rect x={-288} y={28} width={205} height={50} rx={14} fill={paper} stroke={ink} strokeWidth={8} />
     </g>
-    {/* small tilted box right, mid */}
+    </g>
+    <g {...drop(0.8)}>
     <g transform="rotate(6 165 55)">
       <rect x={55} y={-5} width={220} height={125} rx={18} fill={paper} stroke={ink} strokeWidth={9} />
       <path d="M55,35 H275" stroke={soft} strokeWidth={14} />
     </g>
-    {/* clothes mounds */}
+    </g>
+    <g {...drop(1.1)}>
     <ellipse cx={-95} cy={155} rx={165} ry={88} fill={paper} stroke={ink} strokeWidth={10} />
     <ellipse cx={125} cy={165} rx={150} ry={80} fill={soft} stroke={ink} strokeWidth={9} />
     <path d="M-215,130 Q-130,82 -35,118 M35,140 Q115,102 205,132" fill="none" stroke={ink} strokeWidth={7} strokeLinecap="round" opacity={0.45} />
-    {/* one leaning paper sheet, right */}
+    </g>
+    <g {...drop(1.4)}>
     <g transform="rotate(14 255 250)">
       <rect x={185} y={165} width={135} height={175} rx={10} fill={paper} stroke={ink} strokeWidth={8} />
       <path d="M208,205 H295 M208,242 H295 M208,279 H272" stroke={muted} strokeWidth={7} strokeLinecap="round" />
     </g>
-    {/* accent T-shirt draped over the peak (overlaps mound, not floating) */}
+    </g>
+    <g {...drop(1.7)}>
     <path d="M-82,-302 L-30,-335 Q0,-318 30,-335 L82,-302 L118,-238 L66,-216 L66,-118 L-66,-118 L-66,-216 L-118,-238Z" fill={accent} stroke={ink} strokeWidth={10} strokeLinejoin="round" />
     <path d="M-30,-335 Q0,-318 30,-335 Q24,-296 0,-294 Q-24,-296 -30,-335Z" fill={paper} stroke={ink} strokeWidth={7} />
     <path d="M-66,-150 Q0,-132 66,-150" fill="none" stroke={ink} strokeWidth={6} opacity={0.4} />
-    {/* crumpled ball + shoe pair at base front */}
+    </g>
+    <g {...drop(2.0)}>
     <circle cx={-195} cy={335} r={38} fill={paper} stroke={ink} strokeWidth={8} />
     <path d="M-216,318 L-176,352 M-176,318 L-216,352" stroke={muted} strokeWidth={6} strokeLinecap="round" />
     <path d="M92,352 L168,352 Q196,352 196,330 Q196,312 172,306 L128,292 Q104,308 92,330Z" fill={ink} stroke={paper} strokeWidth={5} strokeLinejoin="round" />
+    </g>
   </g>
-);
+  );
+};
 
-const BundleBox: React.FC<{ x: number; accentTie?: boolean }> = ({ x, accentTie }) => (
-  <g transform={`translate(${x} 0)`}>
+const BundleBox: React.FC<{ x: number; accentTie?: boolean; t?: number; at?: number }> = ({ x, accentTie, t = 99, at = 0 }) => { const k = pop(t, at, 0.3); if (k <= 0) return null; return (
+  <g transform={`translate(${x} ${(1 - Math.min(1, k)) * 46}) scale(${k})`}>
     <rect x={-80} y={-58} width={180} height={148} rx={18} fill={ink} />
     <rect x={-90} y={-68} width={180} height={148} rx={18} fill={paper} stroke={ink} strokeWidth={10} />
     <path d="M-90,-28 H90" stroke={ink} strokeWidth={7} />
     <path d="M0,-68 V80" stroke={soft} strokeWidth={15} />
     <path d="M-28,-86 Q-52,-108 -68,-88 Q-54,-68 -26,-74 M28,-86 Q52,-108 68,-88 Q54,-68 26,-74" fill={accentTie ? accent : paper} stroke={ink} strokeWidth={7} strokeLinejoin="round" />
     <circle cx={0} cy={-78} r={10} fill={ink} />
-  </g>
-);
-const Bundles: React.FC<{ p: PropCue; t: number }> = ({ p }) => {
+  </g> ); };
+const Bundles: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
   const n = p.count ?? 3; const xs = n === 1 ? [0] : n === 2 ? [-150, 150] : [-265, 0, 265];
-  return <g><ellipse cx={0} cy={102} rx={n === 1 ? 150 : 430} ry={20} fill={ink} opacity={0.12} />{xs.map((x, i) => <BundleBox key={x} x={x} accentTie={i === 1} />)}</g>;
+  return <g><ellipse cx={0} cy={102} rx={n === 1 ? 150 : 430} ry={20} fill={ink} opacity={0.12} />{xs.map((x, i) => <BundleBox key={x} x={x} accentTie={i === 1} t={t} at={(p.at ?? 0) + i * 0.22} />)}</g>;
 };
-const Bundle: React.FC<{ p: PropCue; t: number }> = () => <g><BundleBox x={0} accentTie /></g>;
+const Bundle: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => { const lift = p.liftAt != null ? ease(t, p.liftAt, 0.35) : 0; const bob = p.liftAt != null && t > p.liftAt + 0.35 ? 5 * Math.sin((t - p.liftAt) * 3.2) : 0; return <g transform={`translate(0 ${-34 * lift + bob})`}><BundleBox x={0} accentTie t={t} at={p.at ?? 0} /></g>; };
 
-const Clock: React.FC<{ p: PropCue; t: number }> = () => (
+const Clock: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => { const sweep = ease(t, (p.at ?? 0) + 0.35, 1.7); return (
   <g>
     <circle cx={10} cy={12} r={172} fill={ink} />
     <circle cx={0} cy={0} r={172} fill={paper} stroke={ink} strokeWidth={12} />
     {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2, big = i % 3 === 0; const r1 = big ? 128 : 140, r2 = 152; return <path key={i} d={`M${Math.cos(a) * r1},${Math.sin(a) * r1} L${Math.cos(a) * r2},${Math.sin(a) * r2}`} stroke={ink} strokeWidth={big ? 11 : 7} strokeLinecap="round" />; })}
-    <path d="M0,0 L0,-92" stroke={ink} strokeWidth={13} strokeLinecap="round" />
-    <path d="M0,0 L72,42" stroke={accent} strokeWidth={13} strokeLinecap="round" />
+    <g transform={`rotate(${sweep * 90} 0 0)`}><path d="M0,0 L0,-92" stroke={ink} strokeWidth={13} strokeLinecap="round" /></g>
+    <g transform={`rotate(${sweep * 7.5} 0 0)`}><path d="M0,0 L72,42" stroke={accent} strokeWidth={13} strokeLinecap="round" /></g>
     <circle cx={0} cy={0} r={17} fill={ink} stroke={paper} strokeWidth={5} />
-  </g>
-);
+  </g> ); };
 
-const Dusty: React.FC<{ p: PropCue; t: number }> = () => (
+const Dusty: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => { const at = p.at ?? 0; const dustK = ease(t, at + 1.1, 1.8); return (
   <g>
     <ellipse cx={0} cy={330} rx={400} ry={24} fill={ink} opacity={0.12} />
     {/* thick stack of blank calendar pages, left */}
     <g transform="rotate(-3 -190 60)">
-      {Array.from({ length: 7 }, (_, i) => <rect key={i} x={-330 + i * 5} y={-150 + i * 13} width={300} height={360} rx={22} fill={i % 2 ? soft : paper} stroke={ink} strokeWidth={7} />)}
+      {Array.from({ length: 7 }, (_, i) => { const e = ease(t, at + 0.25 + i * 0.2, 0.32); return <rect key={i} x={-330 + i * 5} y={-150 + i * 13} width={300} height={360} rx={22} fill={i % 2 ? soft : paper} stroke={ink} strokeWidth={7} opacity={e} transform={`translate(${(1 - e) * -46} ${(1 - e) * -34})`} />; })}
       <rect x={-302} y={-178} width={300} height={360} rx={22} fill={paper} stroke={ink} strokeWidth={10} />
       <path d="M-302,-128 a22,22 0 0 1 22,-22 h256 a22,22 0 0 1 22,22 v48 h-300Z" fill={accent} stroke={ink} strokeWidth={8} />
       {[-240, -90].map((cx) => <rect key={cx} x={cx - 13} y={-205} width={26} height={58} rx={13} fill={ink} />)}
@@ -199,14 +209,13 @@ const Dusty: React.FC<{ p: PropCue; t: number }> = () => (
       <path d="M-90,-24 Q0,-38 90,-24 L90,-12 Q0,-20 -90,-12Z" fill={soft} opacity={0.9} />
     </g>
     {/* cobweb top-right corner + dust motes */}
-    <g stroke={muted} strokeWidth={6} strokeLinecap="round" opacity={0.9}>
+    <g stroke={muted} strokeWidth={6} strokeLinecap="round" opacity={0.25 + 0.65 * dustK}>
       <path d="M400,-330 L400,-190 M400,-330 L270,-330 M400,-330 L292,-222" />
       <path d="M400,-262 Q350,-268 322,-300 M400,-215 Q362,-218 338,-245 M348,-330 Q352,-285 322,-262" fill="none" />
     </g>
-    {[-40, 90, 300].map((x, i) => <circle key={x} cx={x} cy={-190 + i * 55} r={8} fill={muted} opacity={0.55} />)}
-    <ellipse cx={130} cy={318} rx={230} ry={18} fill={soft} stroke={ink} strokeWidth={6} opacity={0.9} />
-  </g>
-);
+    {[-40, 90, 300].map((x, i) => <circle key={x} cx={x} cy={-190 + i * 55 + dustK * (46 + i * 14)} r={8} fill={muted} opacity={0.2 + 0.4 * dustK} />)}
+    <ellipse cx={130} cy={318} rx={230} ry={18} fill={soft} stroke={ink} strokeWidth={6} opacity={0.25 + 0.65 * dustK} />
+  </g> ); };
 
 export const Props: React.FC<{ props: PropCue[]; t: number; h: number }> = ({ props, t, h }) => <g>
   {props.map((p, i) => {

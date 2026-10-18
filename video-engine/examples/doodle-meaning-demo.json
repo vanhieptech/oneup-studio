@@ -1,0 +1,639 @@
+{
+ "version": 1,
+ "id": "doodle-meaning-demo",
+ "title": "Meaning-by-objects animated demo — pile/bundles/clock/dusty with clip-03 trimmed voice (no words drawn)",
+ "meta": {
+  "clip": "clip-03",
+  "source": "Hiệp 18/10: làm thử video đoạn ngắn from doodle-meaning stills; voice trimmed from c03v8 phrases"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "m1-pile",
+   "duration": 4.6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 3.1,
+       "value": "confused"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhìn vô là **ngợp**, không biết bắt đầu từ đâu,",
+     "start": 0.45,
+     "end": 2.92,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/demo-meaning-1.wav",
+      "duration": 2.47,
+      "envelope": [
+       0.002,
+       0.256,
+       0.601,
+       0.996,
+       0.801,
+       0.773,
+       0.627,
+       0.402,
+       0.173,
+       0.606,
+       0.921,
+       0.831,
+       0.782,
+       0.582,
+       0.53,
+       0.45,
+       0.293,
+       0.419,
+       0.414,
+       0.466,
+       0.601,
+       0.664,
+       0.704,
+       0.707,
+       0.449,
+       0.059,
+       0.011,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.003,
+       0.023,
+       0.181,
+       0.591,
+       0.575,
+       0.382,
+       0.381,
+       0.301,
+       0.671,
+       0.703,
+       0.367,
+       0.013,
+       0.006,
+       0.082,
+       0.376,
+       0.471,
+       0.156,
+       0.012,
+       0.007,
+       0.096,
+       0.357,
+       0.611,
+       0.599,
+       0.511,
+       0.436,
+       0.305,
+       0.183,
+       0.016,
+       0.198,
+       0.581,
+       0.501,
+       0.484,
+       0.337,
+       0.157,
+       0.678,
+       0.636,
+       0.757,
+       0.739,
+       0.606,
+       0.348,
+       0.125,
+       0.013,
+       0.003
+      ]
+     }
+    }
+   ],
+   "caption": {
+    "text": "Look at it: overwhelming, no idea where to start.",
+    "start": 0.5,
+    "segments": [
+     {
+      "text": "Look at it: overwhelming, no idea where to start.",
+      "start": 0.5,
+      "end": 3.0,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "props": [
+    {
+     "kind": "pile",
+     "x": 360,
+     "y": 920,
+     "s": 1.05,
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "m2-bundles",
+   "duration": 5.2,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "fade",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 2.9,
+       "value": "happy"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy nên: việc gì to quá thì **chia nhỏ ra** trước,",
+     "start": 0.45,
+     "end": 3.05,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/demo-meaning-2.wav",
+      "duration": 2.6,
+      "envelope": [
+       0.0,
+       0.0,
+       0.066,
+       0.142,
+       0.589,
+       0.642,
+       0.522,
+       0.378,
+       0.356,
+       0.393,
+       0.552,
+       0.505,
+       0.413,
+       0.4,
+       0.204,
+       0.29,
+       0.615,
+       0.351,
+       0.051,
+       0.01,
+       0.006,
+       0.194,
+       0.502,
+       0.541,
+       0.473,
+       0.339,
+       0.029,
+       0.007,
+       0.347,
+       0.459,
+       0.441,
+       0.255,
+       0.015,
+       0.007,
+       0.155,
+       0.486,
+       0.487,
+       0.378,
+       0.292,
+       0.292,
+       0.288,
+       0.045,
+       0.032,
+       0.33,
+       0.363,
+       0.165,
+       0.027,
+       0.009,
+       0.035,
+       0.269,
+       0.316,
+       0.452,
+       0.366,
+       0.24,
+       0.2,
+       0.308,
+       0.433,
+       0.305,
+       0.325,
+       0.312,
+       0.332,
+       0.339,
+       0.193,
+       0.101,
+       0.28,
+       0.308,
+       0.302,
+       0.283,
+       0.19,
+       0.025,
+       0.006,
+       0.201,
+       0.525,
+       0.531,
+       0.612,
+       0.29,
+       0.015,
+       0.004,
+       0
+      ]
+     }
+    }
+   ],
+   "caption": {
+    "text": "So: a task that's too big, split it small first.",
+    "start": 0.5,
+    "segments": [
+     {
+      "text": "So: a task that's too big, split it small first.",
+      "start": 0.5,
+      "end": 3.1,
+      "highlight": [
+       7
+      ]
+     }
+    ]
+   },
+   "props": [
+    {
+     "kind": "pile",
+     "x": 360,
+     "y": 920,
+     "s": 1.05,
+     "at": 0,
+     "settle": false,
+     "until": 2.45
+    },
+    {
+     "kind": "bundles",
+     "x": 355,
+     "y": 1060,
+     "s": 0.82,
+     "count": 3,
+     "at": 2.35
+    },
+    {
+     "kind": "bundle",
+     "x": 680,
+     "y": 1180,
+     "s": 0.78,
+     "at": 3.05,
+     "liftAt": 3.35
+    }
+   ]
+  },
+  {
+   "id": "m3-clock",
+   "duration": 4.8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.8,
+     "pose": "standing",
+     "action": "walking",
+     "expression": "happy",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": [
+      {
+       "at": 2.6,
+       "value": "talking"
+      }
+     ],
+     "toX": 0.6
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mỗi việc chừng **mười lăm phút**, tối nay làm một việc là xong.",
+     "start": 0.45,
+     "end": 3.53,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/demo-meaning-3.wav",
+      "duration": 3.08,
+      "envelope": [
+       0.003,
+       0.076,
+       0.298,
+       0.524,
+       0.562,
+       0.497,
+       0.126,
+       0.023,
+       0.26,
+       0.306,
+       0.136,
+       0.317,
+       0.348,
+       0.352,
+       0.323,
+       0.3,
+       0.237,
+       0.166,
+       0.126,
+       0.068,
+       0.018,
+       0.206,
+       0.327,
+       0.327,
+       0.264,
+       0.154,
+       0.184,
+       0.222,
+       0.31,
+       0.138,
+       0.019,
+       0.029,
+       0.066,
+       0.234,
+       0.27,
+       0.273,
+       0.236,
+       0.05,
+       0.005,
+       0.002,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.001,
+       0.063,
+       0.353,
+       0.546,
+       0.577,
+       0.507,
+       0.277,
+       0.109,
+       0.57,
+       0.6,
+       0.276,
+       0.02,
+       0.007,
+       0.004,
+       0.045,
+       0.561,
+       0.445,
+       0.346,
+       0.363,
+       0.354,
+       0.353,
+       0.373,
+       0.424,
+       0.471,
+       0.45,
+       0.456,
+       0.434,
+       0.325,
+       0.338,
+       0.411,
+       0.288,
+       0.29,
+       0.217,
+       0.035,
+       0.032,
+       0.419,
+       0.528,
+       0.278,
+       0.014,
+       0.006,
+       0.002,
+       0.006,
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   ],
+   "caption": {
+    "text": "About 15 minutes each, one done tonight.",
+    "start": 0.5,
+    "segments": [
+     {
+      "text": "About 15 minutes each, one done tonight.",
+      "start": 0.5,
+      "end": 3.6,
+      "highlight": [
+       1,
+       2
+      ]
+     }
+    ]
+   },
+   "props": [
+    {
+     "kind": "clock",
+     "x": 255,
+     "y": 850,
+     "s": 1.25,
+     "at": 0.25
+    },
+    {
+     "kind": "bundle",
+     "x": 720,
+     "y": 1200,
+     "s": 0.92,
+     "at": 0,
+     "moveAt": 0.3,
+     "moveDur": 2.3,
+     "moveX": -230,
+     "moveY": 0
+    }
+   ]
+  },
+  {
+   "id": "m4-dusty",
+   "duration": 4.4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "…mà để **cả năm** rồi chưa đụng tới không?",
+     "start": 0.45,
+     "end": 2.598,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/demo-meaning-4.wav",
+      "duration": 2.148,
+      "envelope": [
+       0.0,
+       0.001,
+       0.084,
+       0.412,
+       0.796,
+       0.711,
+       0.265,
+       0.801,
+       0.794,
+       0.791,
+       0.272,
+       0.02,
+       0.009,
+       0.129,
+       0.427,
+       0.521,
+       0.508,
+       0.424,
+       0.365,
+       0.345,
+       0.28,
+       0.326,
+       0.332,
+       0.401,
+       0.454,
+       0.342,
+       0.301,
+       0.375,
+       0.381,
+       0.116,
+       0.535,
+       0.644,
+       0.751,
+       0.773,
+       0.707,
+       0.579,
+       0.305,
+       0.024,
+       0.063,
+       0.654,
+       0.845,
+       0.486,
+       0.571,
+       0.684,
+       0.38,
+       0.325,
+       0.284,
+       0.089,
+       0.321,
+       0.471,
+       0.513,
+       0.299,
+       0.033,
+       0.058,
+       0.395,
+       0.453,
+       0.437,
+       0.318,
+       0.233,
+       0.05,
+       0.004,
+       0.001,
+       0.0,
+       0.0,
+       0.0
+      ]
+     }
+    }
+   ],
+   "caption": {
+    "text": "…left untouched for a whole year?",
+    "start": 0.5,
+    "segments": [
+     {
+      "text": "…left untouched for a whole year?",
+      "start": 0.5,
+      "end": 2.7,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "props": [
+    {
+     "kind": "dusty",
+     "x": 370,
+     "y": 940,
+     "s": 1.02,
+     "at": 0
+    }
+   ]
+  }
+ ]
+}
