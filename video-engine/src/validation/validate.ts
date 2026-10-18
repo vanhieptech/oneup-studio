@@ -1,7 +1,7 @@
 import { TRANSITION_TYPES } from "../composition/transitions"; // L-041: accept tdev-*/mmx-* too
 import { ZodError } from "zod";
 import {
-  ACTIONS, BACKGROUNDS, EXPRESSIONS, FRAMINGS, POSES, TRANSITIONS,
+  ACTIONS, BACKGROUNDS, DOODLE_KINDS, EXPRESSIONS, FRAMINGS, POSES, TRANSITIONS,
   VideoPlanSchema, type VideoPlan,
 } from "./schema";
 import { defaultRegistry, type ProfileRegistry } from "../characters/registry";
@@ -91,6 +91,14 @@ export function validatePlan(input: unknown, registry: ProfileRegistry = default
       if (t && t.start >= (t.end ?? s.duration)) err(`${p}.${k}.start`, `${k} start ${t.start}s is not before its end`);
     }
     s.sfx.forEach((x, k) => { if (x.at > s.duration) err(`${p}.sfx[${k}].at`, `sfx at ${x.at}s is after scene end`); });
+    s.doodles.forEach((d, k) => {
+      const dp = `${p}.doodles[${k}]`;
+      if (!(DOODLE_KINDS as readonly string[]).includes(d.kind)) err(`${dp}.kind`, `unsupported doodle "${d.kind}". Use one of: ${list(DOODLE_KINDS)}`);
+      if (d.at + d.duration > s.duration + 1e-9) err(`${dp}`, `doodle draw-on ends at ${(d.at + d.duration).toFixed(2)}s but scene is only ${s.duration}s`);
+      if (d.kind === "path" && (!d.points || d.points.length < 2)) err(`${dp}.points`, "doodle kind \"path\" needs points[] with at least 2 design-px points");
+      if (d.x < 0 || d.y < 0 || d.x + d.w > 1080) warn(dp, "doodle box runs outside the 1080-wide design frame");
+      if (d.y + d.h > 1400) warn(dp, "doodle box enters the caption band (design y > 1400, L-038): keep marks above captions");
+    });
   });
 
   const errors = issues.filter((i) => i.severity === "error");

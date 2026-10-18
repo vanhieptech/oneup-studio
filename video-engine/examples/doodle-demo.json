@@ -1,0 +1,19 @@
+{
+  "id": "doodle-demo",
+  "title": "Doodle draw-on demo (anidoodle port, L-047)",
+  "video": { "width": 1080, "height": 1920, "fps": 30, "theme": "light" },
+  "scenes": [
+    {
+      "id": "s1", "duration": 4, "background": { "kind": "paper" }, "camera": { "framing": "medium" },
+      "transition": { "type": "cut", "duration": 0 },
+      "characters": [], "dialogue": [],
+      "narration": { "text": "Việc to thì chia nhỏ ra", "start": 0, "end": 4 },
+      "doodles": [
+        { "kind": "sketch-box", "x": 190, "y": 420, "w": 700, "h": 260, "at": 0.2, "duration": 0.7, "seed": 7 },
+        { "kind": "circle", "x": 240, "y": 470, "w": 600, "h": 160, "at": 1.2, "duration": 0.6, "seed": 11 },
+        { "kind": "arrow", "x": 300, "y": 820, "w": 480, "h": 140, "at": 2.0, "duration": 0.6, "seed": 5 },
+        { "kind": "check", "x": 430, "y": 1040, "w": 220, "h": 180, "at": 2.8, "duration": 0.4, "seed": 3 }
+      ]
+    }
+  ]
+}

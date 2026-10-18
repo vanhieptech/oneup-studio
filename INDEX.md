@@ -101,6 +101,7 @@ tags: [index, retrieval]
 | research.video-gen | research | reference | `research/oneup-video-gen-research-vi.md` | Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup |
 | research.production-system | research | reference | `research/production-system-research-vi.md` | Hệ thống sản xuất video 60s cho @hi.oneup: research & đề xuất |
 | references | reference-index | ready | `research/references/README.md` | References: phân tích creator, hook, format |
+| research.anidoodle | reference | ready | `research/references/anidoodle-notes.md` | anidoodle → Remotion doodle draw-on (comic shorts) |
 | research.motionmaxxing | reference | ready | `research/references/motionmaxxing-notes.md` | motionmaxxing → Remotion mapping (comic shorts) |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
@@ -121,9 +122,14 @@ tags: [index, retrieval]
 | trends-2026-10-16 | trend-digest | draft-needs-review | `research/trends/2026-10-16/digest.md` | Trend digest 2026-10-16 |
 | trends-2026-10-17.apify | research-trends | ready | `research/trends/2026-10-17/apify/README.md` | Apify 2026-10-17 |
 | trends-2026-10-17 | trend-digest | draft-needs-review | `research/trends/2026-10-17/digest.md` | Trend digest 2026-10-17 |
+| trends-2026-10-18.apify | research-trends | ready | `research/trends/2026-10-18/apify/README.md` | Apify 2026-10-18 |
+| trends-2026-10-18 | trend-digest | draft-needs-review | `research/trends/2026-10-18/digest.md` | Trend digest 2026-10-18 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
+| trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
+| skill.anidoodle | skill | active | `resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
+| skill.anidoodle | skill | active | `resources/refs/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
 | skill.awesome-ai-motion | skill | active | `resources/refs/awesome-ai-motion/SKILL.md` | awesome-ai-motion |
 | skill.motionmaxxing | skill | active | `resources/refs/motionmaxxing/SKILL.md` | motionmaxxing |
 | skill.skill | skill | active | `resources/refs/transitions.dev/agent/skill/SKILL.md` | transitions-agent |

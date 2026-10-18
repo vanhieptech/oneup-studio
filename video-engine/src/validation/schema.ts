@@ -7,6 +7,8 @@ export const POSES = ["standing", "sitting"] as const;
 export const TRANSITIONS = ["cut", "fade", "slide", "wipe", "iris"] as const;
 export const FRAMINGS = ["wide", "medium", "closeup"] as const;
 export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid"] as const;
+/** Doodle draw-on marks (anidoodle port, L-047). Shared by schema + validate (L-042: one list). */
+export const DOODLE_KINDS = ["circle", "underline", "arrow", "check", "cross", "sketch-box", "path"] as const;
 export const ENTERS = ["none", "pop", "slide-left", "slide-right", "rise"] as const;
 
 export type Expression = (typeof EXPRESSIONS)[number];
@@ -77,6 +79,15 @@ export const SceneSchema = z.object({
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
   /** DL-056 comic props (laptop/phone/calendar/cloud/sign/words/vignette), see composition/Props.tsx */
   props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words"]) }).passthrough()).default([]),
+  /** Doodle draw-on marks (anidoodle, Apache-2.0; src/composition/doodle/). Design px, 1080-wide. */
+  doodles: z.array(z.object({
+    kind: z.enum(DOODLE_KINDS), x: z.number().finite(), y: z.number().finite(),
+    w: z.number().positive(), h: z.number().positive(),
+    at: seconds.default(0), duration: z.number().finite().positive().default(0.6),
+    color: z.string().optional(), seed: z.number().int().default(7),
+    width: z.number().positive().default(10),
+    points: z.array(z.tuple([z.number(), z.number()])).optional(),
+  })).default([]),
   beat: z.string().optional().describe("repo beat id, e.g. clip-01.b02"),
 });
 

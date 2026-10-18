@@ -43,3 +43,14 @@ In-house: `video-engine/src/composition/motionmaxxing/catalog.json` + `mmx.ts` �
 - Entry/exit **timing curves**, hook oversize land, cut-on-motion seams, one film spring, living holds → use `mmx-*`.
 - Craft laws (always): land decelerates / leave accelerates; almost no scene fades; ≤1 visible spring per film; words at speech rhythm (2–12 f); end mid-motion or hold ≤1.4 s.
 - Skip: GSAP runtime, 3D hero, HUD/page chrome, heavy particles/glitch (banned by channel rules + mmx "Never ship").
+
+## anidoodle doodle draw-on (Remotion ports — pick for hand-drawn emphasis)
+Source: https://github.com/alexgreensh/anidoodle (Apache-2.0) @ 4db6964. Vendored: `resources/refs/anidoodle/` (full tree in git; see `INTEGRATION.md` + `research/references/anidoodle-notes.md`).
+
+In-house: `video-engine/src/composition/doodle/catalog.json` + `doodle.ts`/`Doodle.tsx` — 7 seeded SVG draw-on marks (`doodle-circle`, `doodle-underline`, `doodle-arrow`, `doodle-check`, `doodle-cross`, `doodle-sketch-box`, `doodle-path`). Add `scene.doodles[]` `{kind, x, y, w, h, at, duration, seed}`; validated in `validate.ts` (shared `DOODLE_KINDS`, L-042/L-047).
+
+**When to prefer doodle vs existing:**
+- Keyword emphasis on a note/board, cause→effect arrows, checklist ticks, crossing a wrong belief, sticky-note sketch reveal → use `doodle-*` (lands on the spoken word).
+- Scene timing/eases → keep `mmx-*`; UI transitions → keep `tdev-*`; caption/count-up/strike → keep awesome-ai-motion cards.
+- Craft laws (always): ≤1 doodle accent per beat, draw-on 0.4–0.8s (never fade/pop a finished mark in), fixed seed per cue, box above caption band (y+h ≤ 1400), brand accent stroke only.
+- Skip: anidoodle canvas engine/32 styles at runtime, its music/sound pack, interactive web component (off-format; see notes §5).
