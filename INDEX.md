@@ -60,7 +60,8 @@ tags: [index, retrieval]
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | clip-04.readme | readme | draft | `content/clips/clip-04-gap-sach-tu-kiem/README.md` | clip-04: Gấp sách tự kiểm (HTB 23.14) |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v1.md` | Clip 04 v1 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn |
-| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 v2 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v2.md` | Clip 04 v2 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 v3 (DRAFT): Bạn có nhớ gì đâu mà quên |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |

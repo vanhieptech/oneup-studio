@@ -1,17 +1,17 @@
 ---
-title: "Clip 04 v2: Học cả tối thấy thuộc, sáng mai trống trơn → gấp sách tự kiểm (HTB 23.14)"
+title: "Clip 04 v3: Bạn có nhớ gì đâu mà quên → gấp sách tự kiểm (HTB 23.14)"
 date: 2026-10-18
 type: script
 tags: [clip-04, script, retrieval-practice, howtolivebetter-23.14, howtolivebetter-23.16, monologue, conversational, open-question-hook, L-043, L-044, L-045, L-050]
 status: draft
 source: "HowToLiveBetter 23.14 (Yang et al. 2021; Dunlosky et al. 2013; mức A) + 23.16 (đọc lại/gạch chân nhóm thấp nhất) · đối chiếu nguyên văn book/23-hoc-ky-nang-gi-dang.md mục 14+16 (fetch 2026-10-18) · trend research/trends/2026-10-17/plans/plan-1-gap-sach-tu-kiem.json (TikTok @phamthuykieuhuong 995k view, comment top Feynman 2.860 like) · callback clip-03 (chia nhỏ 4.7)"
 id: clip-04.script-final
-version: v2
-supersedes: archive/script-v1.md
+version: v3
+supersedes: archive/script-v2.md
 template: templates/script.md (biến thể độc thoại + hook câu hỏi mở L-043)
-note: "DRAFT v2 chờ Hiệp chốt gate 1: chưa voice, chưa render, chưa làm spec.json. Viết lại theo góp ý 18/10: liền mạch như Thầy đang hỏi và nói chuyện với viewer — mỗi beat mở bằng câu hỏi/câu viewer có thể đang nghĩ, Thầy tự trả lời rồi nối sang beat sau (L-044). Beat chuyện thật S-01 (ôn TOEIC của Hiệp) trong plan gốc vẫn BỎ; ví dụ nói ngôi «mình» làm mẫu chung. Hình theo L-050: vật + hành động + tỉ lệ thể hiện nghĩa, không vẽ chữ, không khoanh/gạch trang trí."
+note: "DRAFT v3 (hook C1 Hiệp chốt 18/10) chờ Hiệp duyệt gate 1: chưa voice, chưa render, chưa làm spec.json. Viết lại theo góp ý 18/10: liền mạch như Thầy đang hỏi và nói chuyện với viewer — mỗi beat mở bằng câu hỏi/câu viewer có thể đang nghĩ, Thầy tự trả lời rồi nối sang beat sau (L-044). Beat chuyện thật S-01 (ôn TOEIC của Hiệp) trong plan gốc vẫn BỎ; ví dụ nói ngôi «mình» làm mẫu chung. Hình theo L-050: vật + hành động + tỉ lệ thể hiện nghĩa, không vẽ chữ, không khoanh/gạch trang trí."
 ---
-# Clip 04 v2 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn
+# Clip 04 v3 (DRAFT): Bạn có nhớ gì đâu mà quên
 
 **Người nói:** chỉ **Thầy** (L-039), F5 Thái Sơn speed 0.9 (dự kiến, chốt khi làm spec). Chibi Hiệp chỉ diễn. **Theme:** DARK.
 **Thông điệp HTB 23.14 (b06):** học xong gấp sách tự kiểm một lần, đừng quay đầu đọc lại.
@@ -21,8 +21,8 @@ note: "DRAFT v2 chờ Hiệp chốt gate 1: chưa voice, chưa render, chưa là
 
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
-| b01 | 0–7 | Thầy | Bạn học cả tối, thấy {nhấn: thuộc làu} rồi đúng không? \| Sáng mai gấp sách lại, còn nhớ gì không, \| hay đầu óc {nhấn: trống trơn} luôn? \| Có quen không? | Sách dày mở trên bàn, chibi Hiệp đọc gật gù; cut cứng: sách gấp lại, giấy ghi vẫn trắng, Hiệp ôm đầu nhìn camera như chờ viewer đáp · *You studied all night and felt solid, right? Next morning, close the book — remember anything, or totally blank? Sound familiar?* |
-| b02 | 7–14 | Thầy | Quen đúng không? \| Như ôn thi hay học tiếng Anh, \| mình đọc đi đọc lại, gạch chi chít, \| mà chữ vẫn {nhấn: chưa vô đầu}. | Hiệp lật sách lại từ đầu lần hai, lần ba; chồng trang đã đọc cao dần bên cạnh, Hiệp ngáp · *Familiar, right? Exam prep, English — rereading and highlighting everything, and it still won't stick.* |
+| b01 | 0–7 | Thầy | Bạn tưởng mình {nhấn: hay quên} hả? \| Không đâu, bạn đọc cả tối mà đầu vẫn {nhấn: trống} — \| vì bạn có {nhấn: nhớ gì đâu} mà quên. | Frame 0 (0–3s, cut cứng): chibi Hiệp đọc gật gù tự tin bên sách dày → cut cứng ngay «Không đâu.»: sách gấp lại, giấy ghi vẫn trắng, Hiệp ôm đầu nhìn camera (hook C1 Hiệp chốt 18/10; chữ hook không vẽ lên hình theo L-050) · *You think you just forget easily? No — you read all night and your head is still empty, because you never actually remembered it in the first place.* |
+| b02 | 7–14 | Thầy | Nghe vậy có tức không? \| Như ôn thi hay học tiếng Anh, \| mình đọc đi đọc lại, gạch chi chít, \| mà chữ vẫn {nhấn: chưa vô đầu}. | Hiệp lật sách lại từ đầu lần hai, lần ba; chồng trang đã đọc cao dần bên cạnh, Hiệp ngáp · *Stings to hear that, doesn't it? Exam prep, English — rereading and highlighting everything, and it still won't stick.* |
 | b03 | 14–23 | Thầy | Vậy tại mình đọc chưa đủ hả? \| Không hẳn đâu. \| Đọc lại chỉ làm mắt {nhấn: quen mặt chữ}, \| thấy quen nên tưởng thuộc, \| chứ chưa tự nhớ lại lần nào. | Một trang sách trôi qua trước mắt Hiệp ba lần như băng chuyền, Hiệp gật theo nhịp quen; sách vừa gấp, bút dừng giữa không trung, giấy vẫn trắng · *Is it because you didn't read enough? Not really — rereading only makes your eyes recognise the page. Familiar feels like learned, but you never had to recall it.* |
 | b04 | 23–32 | Thầy | Vậy sao biết mình {nhấn: thuộc thiệt}? \| Yang và cộng sự gom {nhấn: 222 nghiên cứu}, \| hơn {nhấn: 48 ngàn} học sinh: \| có kiểm tra nhỏ thì điểm {nhấn: cao hơn}, ở mức vừa. | 222 thẻ nghiên cứu xếp thành chồng cao, hàng chấm học sinh kéo dài; một lớp có tờ kiểm tra nhỏ trên bàn, cột điểm nhô lên vừa · *So how do you know you really learned it? Yang et al. pooled 222 studies, over 48,000 students: classes with small quizzes scored higher — a medium effect.* |
 | b05 | 32–42 | Thầy | Nghe kiểm tra, bạn nghĩ bài thi hả? \| Không, đó là tự kiểm lúc học. \| Dunlosky xếp {nhấn: mười cách học}, \| cách này ở nhóm {nhấn: cao nhất}, \| đọc lại, gạch chân ở nhóm {nhấn: thấp nhất}. | Hai bục cao/thấp có sẵn: chồng thẻ tự kiểm đặt lên bục cao, chồng thẻ đọc lại và gạch chân ở bục thấp (thẻ prop có sẵn, không nét vẽ tay đè lên chữ) · *Tests sound like exams, right? No — this is testing yourself while studying. Dunlosky ranked ten methods: self-testing in the top tier; rereading and highlighting in the bottom tier.* |
@@ -32,7 +32,12 @@ note: "DRAFT v2 chờ Hiệp chốt gate 1: chưa voice, chưa render, chưa là
 | b09 | 67–75 | Thầy | Bài dài quá, kiểm sao hết? \| Nhớ clip trước không, \| bài dài thì {nhấn: chia nhỏ ra} trước. \| Học xong phần nào, kiểm ngay phần đó. | Callback clip-03 bằng vật có sẵn: một chồng bài dày (prop `pile`) được Hiệp chia thành ba bó gọn (prop `bundles`); học xong bó nào, Hiệp gấp bó đó lại và ghi ra giấy — vật ở lại và biến đổi trong cảnh · *But what if it's long? Remember last clip: split the big pile first. Finish one small bundle, then test yourself on just that bundle.* |
 | b10 | 75–86 | Thầy | Quay lại sáng mai coi, \| đâu phải mình học dở. \| Mắt quen chữ thôi, đầu chưa {nhấn: tự nhớ} lần nào. \| Tối nay bạn nhớ được {nhấn: mấy ý}? \| Comment một con số nha! | Loop về b01: sách gấp trên bàn, nhưng tờ giấy cạnh đó giờ đã có mấy dòng ghi được; chibi Hiệp nhìn camera chờ con số của viewer · *Back to that next-morning moment: see, you're not bad at studying — your eyes got familiar, your brain never recalled. Tonight, how many ideas can you remember? Comment a number!* |
 
-## Thay đổi so với v1 (góp ý Hiệp 18/10: «các câu cảnh vẫn còn rời rạc, viết liền mạch hơn như đang hỏi viewer»)
+## Thay đổi so với v2 (Hiệp chốt hook C1 18/10)
+- **b01 thay bằng hook C1 nguyên văn Hiệp chọn:** «Bạn tưởng mình hay quên hả? Không đâu. Bạn đọc cả tối mà đầu vẫn trống — vì bạn có nhớ gì đâu mà quên.» — tách 3 phrase theo L-044 (mỗi phrase ≥ 3 chữ, phrase đầu 6 chữ), nhấn ở «hay quên / trống / nhớ gì đâu»; hình giữ cut cứng trong 0–3s đầu (tự tin đọc → sách gấp + giấy trắng) theo khung hook của template, không vẽ chữ lên hình (L-050).
+- **b02 mở lại cho nối mạch:** «Quen đúng không?» → «Nghe vậy có tức không?» để bắt đúng phản ứng của viewer sau câu chê ở b01, rồi mới vào tình huống ôn thi/tiếng Anh như cũ.
+- **Giữ nguyên 100% các beat còn lại (b03–b10), fact lock và thứ tự nội dung của v2** (Yang 222/48 ngàn/mức vừa, Dunlosky cao nhất vs thấp nhất + tác dụng hẹp hơn, gấp sách → ghi ra → mở đối chiếu, ôn thi/tiếng Anh, callback chia nhỏ clip-03, CTA comment một con số).
+
+## Thay đổi so với v1 (lịch sử v2) (góp ý Hiệp 18/10: «các câu cảnh vẫn còn rời rạc, viết liền mạch hơn như đang hỏi viewer»)
 - **Thêm mạch hỏi–đáp xuyên suốt:** v1 chỉ hỏi ở hook (b01) và CTA (b10); v2 mỗi beat đều có câu hỏi/thắc mắc của viewer («Quen đúng không?», «Vậy tại mình đọc chưa đủ hả?», «Vậy sao biết mình thuộc thiệt?», «Nghe kiểm tra, bạn nghĩ bài thi hả?», «Vậy đọc lại bỏ luôn hả?», «Tự kiểm làm sao đây?», «Còn ôn thi, tiếng Anh thì sao?», «Bài dài quá, kiểm sao hết?»), Thầy tự trả lời ngay trong cùng beat.
 - **Mỗi beat mở bằng cầu nối từ ý cuối beat trước:** chưa vô đầu → tại đọc chưa đủ? → quen mặt chữ/chưa tự nhớ → làm sao biết thuộc thiệt → kiểm tra ≠ bài thi → đọc lại bỏ luôn? (không hẳn, tác dụng hẹp) → tự kiểm là làm sao → áp vào ôn thi → bài dài thì chia nhỏ → quay lại cảnh sáng mai. Xoá bất kỳ beat nào cũng gãy mạch.
 - **Giữ nguyên 100% fact lock và thứ tự nội dung của v1** (HTB 23.14, Yang 222/48 ngàn/mức vừa, Dunlosky cao nhất vs thấp nhất, gấp sách → ghi ra → mở đối chiếu, ôn thi/tiếng Anh, callback chia nhỏ clip-03, CTA comment một con số); chỉ viết lại lời thoại và giây (82s → ~86s). Hình giữ nguyên hướng L-050 của v1.
@@ -58,7 +63,7 @@ Học cả tối thấy thuộc làu, sáng mai gấp sách lại… trống tr�
 #studytok #cachhoc #onThi #learnontiktok #tamlyhoc
 
 ## Trạng thái kiểm tra (18/10)
-- `check-rules.py content/clips/clip-04-gap-sach-tu-kiem/` (18/10, sau khi viết v2): 1 ✖ duy nhất — `rule-48 missing final/spec.json`. Đây là lỗi đúng dự kiến ở bước draft: spec chỉ làm sau khi Hiệp chốt script (gate 1), nên chưa có gì để máy kiểm tiếp. Không phải lỗi nội dung bị bỏ qua.
+- `check-rules.py content/clips/clip-04-gap-sach-tu-kiem/` (18/10, sau khi viết v2 (cập nhật v3: hook C1)): 1 ✖ duy nhất — `rule-48 missing final/spec.json`. Đây là lỗi đúng dự kiến ở bước draft: spec chỉ làm sau khi Hiệp chốt script (gate 1), nên chưa có gì để máy kiểm tiếp. Không phải lỗi nội dung bị bỏ qua.
 - Ước lượng nhịp nói: ~291 chữ thoại, ~87 giây theo nhịp 0,30s/chữ của clip-03 đã chốt (bảng giây để 0–86s).
-- Kiểm tay theo L-044: đọc liền một mạch như một cuộc trò chuyện — hook hỏi «có quen không» → b02 nhận «quen đúng không» → từng beat mở bằng thắc mắc nảy ra từ beat trước, Thầy tự trả lời; không beat nào xoá được mà không gãy mạch. Nha/nè: «nè» 1 lần (b07) + «nha» 1 lần ở CTA (b10).
+- Kiểm tay theo L-044: đọc liền một mạch như một cuộc trò chuyện — hook C1 chê thẳng «có nhớ gì đâu mà quên» → b02 bắt phản ứng «Nghe vậy có tức không?» → từng beat mở bằng thắc mắc nảy ra từ beat trước, Thầy tự trả lời; không beat nào xoá được mà không gãy mạch. Nha/nè: «nè» 1 lần (b07) + «nha» 1 lần ở CTA (b10).
 - Chờ Hiệp: duyệt/chê từng beat; nếu chốt mới làm spec + bảng hiệu ứng rule-52 + voice + render.
