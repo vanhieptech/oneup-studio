@@ -389,6 +389,14 @@
    "id": "clip-04.script-final",
    "type": "script",
    "status": "draft",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/archive/script-v05.md",
+   "title": "Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
    "updated": "2026-10-18",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/archive/script-v1.md",
    "title": "Clip 04 v1 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn"
@@ -431,7 +439,7 @@
    "status": "draft",
    "updated": "2026-10-19",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md",
-   "title": "Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
+   "title": "Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
   },
   {
    "id": "clip-04.script-final",
@@ -442,10 +450,18 @@
    "title": "Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
   },
   {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v06.md",
+   "title": "Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-18",
+   "updated": "2026-10-19",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -986,10 +1002,26 @@
    "title": "Trend digest 2026-10-18"
   },
   {
+   "id": "trends-2026-10-19.apify",
+   "type": "research-trends",
+   "status": "ready",
+   "updated": "2026-10-19",
+   "path": "research/trends/2026-10-19/apify/README.md",
+   "title": "Apify 2026-10-19"
+  },
+  {
+   "id": "trends-2026-10-19",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-19",
+   "path": "research/trends/2026-10-19/digest.md",
+   "title": "Trend digest 2026-10-19"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-18",
+   "updated": "2026-10-19",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -997,7 +1029,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-18",
+   "updated": "2026-10-19",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },

@@ -60,13 +60,15 @@ tags: [index, retrieval]
 | clip-03.trend-signals | research | ready | `content/clips/clip-03-big-task-chunking/final/trend-signals.md` | Tín hiệu trend cho clip-03 (rule-57) |
 | clip-04.readme | readme | draft | `content/clips/clip-04-gap-sach-tu-kiem/README.md` | clip-04: Gấp sách tự kiểm (HTB 23.14) |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v04-call.md` | Clip 04 script-v04 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v05.md` | Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v1.md` | Clip 04 v1 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v2.md` | Clip 04 v2 (DRAFT): Học cả tối thấy thuộc, sáng mai trống trơn |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v3.1-locked.md` | Clip 04 v3.1 (LOCKED, RENDERED — archived): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v4.md` | Clip 04 v4 (ARCHIVED — superseded by v5 draft): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v5.md` | Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
-| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v05.md` | Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v06.md` | Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -135,6 +137,8 @@ tags: [index, retrieval]
 | trends-2026-10-17 | trend-digest | draft-needs-review | `research/trends/2026-10-17/digest.md` | Trend digest 2026-10-17 |
 | trends-2026-10-18.apify | research-trends | ready | `research/trends/2026-10-18/apify/README.md` | Apify 2026-10-18 |
 | trends-2026-10-18 | trend-digest | draft-needs-review | `research/trends/2026-10-18/digest.md` | Trend digest 2026-10-18 |
+| trends-2026-10-19.apify | research-trends | ready | `research/trends/2026-10-19/apify/README.md` | Apify 2026-10-19 |
+| trends-2026-10-19 | trend-digest | draft-needs-review | `research/trends/2026-10-19/digest.md` | Trend digest 2026-10-19 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
