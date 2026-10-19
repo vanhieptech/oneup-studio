@@ -107,24 +107,21 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 
 **Đã cắt từ v05→v06 (giữ nguyên ở v07):** «gấp sách lại» trong lời chỉ ở b06; ví dụ 30→4 từ chỉ ở b02; «tưởng thuộc» chỉ ở hook b01; câu chốt cảm giác mơ hồ («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được.
 
-## Bảng hiệu ứng (rule-52 — nháp theo lời v07; bản chốt sinh bằng fx-table.py khi làm spec sau gate 1)
+## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
+Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
 
-Transition SFX mặc định: chuyển scene = `swish`; lớp nền `ambience` suốt clip (rule-50).
-
-| Beat | Animation chính (theo cụm lời) | SFX |
-|---|---|---|
-| b01 | Hiệp nói thẳng camera: trang đọc lại lúc khuya → cut cứng sáng giấy trắng; punch «quên sạch» giữ 1 nhịp rồi hỏi thẳng «mấy ý» | `swish` → đọc lại lúc khuya; `snap` → «quên sạch» |
-| b01b | (gộp vào b01 ở v07) Nửa sau hook của spec cũ: sách đã gấp, giấy trắng, Hiệp dịu xuống ở câu hỏi | `snap` → «quên sạch»; `pop` nhẹ → câu hỏi |
-| b02 | 30 thẻ xếp cao → sáng còn 4 thẻ trong tay, phần còn lại xẹp; Hiệp cúi lặng | `pop` từng lớp thẻ; `tick` hụt → «bốn từ» |
-| b03 | Một trang trôi qua đều → bút nằm yên, giấy vẫn trắng chưa viết | `swish` lặp đều; `tick` hụt → «lần nào» |
-| b04 | Thẻ nghiên cứu xếp chồng cao; tờ kiểm nhỏ đặt lên bàn, chồng điểm nhô vừa rồi dừng | `ding` → «Yang»; `pop` → «222 nghiên cứu»; `rise` ngắn → «cao hơn» |
-| b05 | Hiệp xua tay «không phải thi»; 10 thẻ thành hàng, bó tự kiểm lên cao, chồng đọc lại ở thấp | `tick` từng thẻ; `ding` → «cao nhất» |
-| b06 | Sách gấp đúng chữ «gấp sách lại» (push-in cận nhất clip); tay viết 3 dòng lên giấy | `snap` → «gấp sách lại» (duy nhất); `pen` → viết 3 ý |
-| b07 | Giấy có dòng và chỗ trắng; mở sách đối chiếu, tay dừng ở chỗ trắng | `pen` suốt cụm ghi; `tick` → chỗ trắng |
-| b08 | Vòng lật trang bị chặn → tự nói → khựng thật 0,4s → mở đúng trang bí | `swish` cắt cụt; lặng 0,4s ở chỗ khựng; `pop` → mở trang |
-| b09 | `pile` tách thành 3 `bundles` trong cảnh; ôm 1 bó, viết kiểm bó đó | `pop` từng bó → «chia nhỏ ra»; `pen` → viết kiểm |
-| b10 | Loop framing b01, giấy có dòng và thêm 1 dòng mới; Hiệp chỉ xuống chờ con số | `swish` nhẹ → «Sáng mai»; `pop` → «một ý»; `tick` → «con số đó» |
-| end | Tĩnh 2s, fade-in hai dòng chữ end card | lặng, `ambience` tắt dần |
+| Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
+|---|---|---|---|---|---|
+| b01 | remotion | mmx-cut-on-motion: but dung tren giay trang dung nhip cau hoi, sach gap day sang ben (frame 0) | “quên sạch” | `snap` → “quên sạch” | mở đầu |
+| b02 | remotion | mmx-cruise: mot trang lat deu lap lai, chong the giu nguyen | “thuộc làu” | `swish` → “đọc đi đọc lại” | cut (`swish`) |
+| b03 | remotion | mmx-glide: tay glide doc giay, but dung o cho trang sau 4 vet dong | “Bút dừng” | `pen` → “viết lại” | cut (`swish`) |
+| b04 | remotion | mmx-cruise cham: sach VAN GAP, but nam yen canh giay trang | “Giấy trắng” | `swish` → “quen mắt” | cut (`swish`) |
+| b05 | remotion | mmx-snap-settle: sach MO dung mot lan o cho bi roi gap lai, tay settle tren giay | “mở sách” | `pop` → “mở sách”; `pen` → “viết tiếp” | cut (`swish`) |
+| e06 | hyperframes | tdev-stagger: 2 chong bai kiem khong chu + 2 thanh diem khong chu, thanh co kiem nho cao hon mot doan vua | “222 nghiên cứu” | `ding` → “Yang”; `rise` → “cao hơn” | fade (`whoosh-soft`) |
+| e07 | hyperframes | tdev-stagger: 10 the trang thanh hang, bo tu kiem chong cao, chong doc lai/gach chan o thap van dung yen | “nhóm cao nhất” | `tick` → “mười cách”; `ding` → “cao nhất” | push (`swish`) |
+| b08 | remotion | tdev-stagger: pile tach 3 bundles, om chong dau viet lai | “ba chồng” | `pop` → “ba chồng”; `pen` → “viết lại” | fade (`whoosh-soft`) |
+| b09 | remotion | mmx-soft-land: quay ve giay cu, them dung 1 vet dong moi o cho trang | “luggage” | `swish` → “Sáng hôm sau”; `pop` → “luggage” | cut (`swish`) |
+| b10 | remotion | mmx-soft-land: giu khung giay da co them dong, chi nhe xuong duoi | “Luggage” | `pop` → “Luggage”; `tick` → “con số” | cut (`swish`) |
 
 ## Fact lock
 

@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="UTF-8" /></head>
+<body>
+<template>
+<!-- EN captions (rule-1/16). Adapted from registry component caption-pill-karaoke (hyperframes add caption-pill-karaoke):
+     groups ≤4 words split at punctuation/pauses, karaoke colour step per word, deterministic hard-kill at group end. Brand: BVP, ink/paper. -->
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+#cap-root{position:absolute;inset:0;pointer-events:none;font-family:"BVP"}
+#cap-root .grp{position:absolute;left:70px;right:70px;top:1500px;display:flex;justify-content:center;opacity:0}
+#cap-root .pill{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;max-width:940px;background:#F7F7F5;border:6px solid #111;border-radius:36px;padding:20px 34px 26px;box-shadow:8px 10px 0 #111}
+#cap-root .w{font-size:58px;font-weight:700;line-height:1.18;letter-spacing:-.5px;color:#8C8C8A;display:block;padding:2px 0 6px}
+#cap-root .w.hl{border-radius:18px;padding:2px 16px 6px}
+</style>
+<div id="cap-root" data-composition-id="captions" data-width="1080" data-height="1920"></div>
+<script>
+(function () {
+  const T = {"sections": [{"id": "e06", "start": 0.35, "end": 8.717, "lines": [{"start": 0.65, "end": 3.265, "capEnd": 3.515, "words": [{"w": "Giang", "start": 0.65}, {"w": "gộp", "start": 0.995}, {"w": "hai", "start": 1.242}, {"w": "trăm", "start": 1.489}, {"w": "hai", "start": 1.785}, {"w": "mươi", "start": 2.032}, {"w": "hai", "start": 2.328}, {"w": "nghiên", "start": 2.574}, {"w": "cứu.", "start": 2.969}], "hl": [2], "cap": [{"word": "Yang", "start": 0.7}, {"word": "pooled", "start": 1.228}, {"word": "222", "start": 1.933}, {"word": "studies", "start": 2.373}]}, {"start": 3.515, "end": 5.188, "capEnd": 5.438, "words": [{"w": "Hơn", "start": 3.515}, {"w": "bốn", "start": 3.729}, {"w": "mươi", "start": 3.944}, {"w": "tám", "start": 4.201}, {"w": "ngàn", "start": 4.416}, {"w": "học", "start": 4.673}, {"w": "sinh.", "start": 4.888}], "hl": [1], "cap": [{"word": "Over", "start": 3.565}, {"word": "48,000", "start": 3.86}, {"word": "students", "start": 4.253}, {"word": "total", "start": 4.744}]}, {"start": 5.438, "end": 6.613, "capEnd": 6.863, "words": [{"w": "Lớp", "start": 5.438}, {"w": "có", "start": 5.718}, {"w": "kiểm", "start": 5.942}, {"w": "nhỏ.", "start": 6.277}], "hl": [1], "cap": [{"word": "Small", "start": 5.488}, {"word": "quizzes", "start": 5.754}, {"word": "in", "start": 6.095}, {"word": "class", "start": 6.247}]}, {"start": 6.863, "end": 8.167, "capEnd": 8.417, "words": [{"w": "Điểm", "start": 6.863}, {"w": "cao", "start": 7.153}, {"w": "hơn", "start": 7.394}, {"w": "mức", "start": 7.636}, {"w": "vừa.", "start": 7.877}], "hl": [1], "cap": [{"word": "Modestly", "start": 6.913}, {"word": "higher", "start": 7.243}, {"word": "scores", "start": 7.506}, {"word": "overall", "start": 7.77}]}], "hits": [{"id": "papers", "t": 1.815, "sfx": "ding"}, {"id": "bars", "t": 4.922, "sfx": "rise"}]}, {"id": "e07", "start": 8.717, "end": 17.145, "lines": [{"start": 9.017, "end": 10.376, "capEnd": 10.626, "words": [{"w": "Đun", "start": 9.017}, {"w": "lốt", "start": 9.229}, {"w": "ki", "start": 9.442}, {"w": "xếp", "start": 9.612}, {"w": "mười", "start": 9.824}, {"w": "cách.", "start": 10.079}], "hl": [1], "cap": [{"word": "Dunlosky", "start": 9.067}, {"word": "ranked", "start": 9.445}, {"word": "ten", "start": 9.747}, {"word": "methods", "start": 9.936}]}, {"start": 10.626, "end": 12.251, "capEnd": 12.501, "words": [{"w": "Tự", "start": 10.626}, {"w": "kiểm", "start": 10.823}, {"w": "nằm", "start": 11.118}, {"w": "nhóm", "start": 11.365}, {"w": "cao", "start": 11.66}, {"w": "nhất.", "start": 11.906}], "hl": [2], "cap": [{"word": "Self-testing", "start": 10.676}, {"word": "in", "start": 11.283}, {"word": "highest", "start": 11.457}, {"word": "group", "start": 11.847}]}, {"start": 12.501, "end": 14.753, "capEnd": 15.003, "words": [{"w": "Đọc", "start": 12.501}, {"w": "lại,", "start": 12.741}, {"w": "gạch", "start": 13.028}, {"w": "chân", "start": 13.316}, {"w": "nằm", "start": 13.603}, {"w": "nhóm", "start": 13.843}, {"w": "thấp", "start": 14.13}, {"w": "nhất.", "start": 14.418}], "hl": [3], "cap": [{"word": "Rereading,", "start": 12.551}, {"word": "highlighting", "start": 13.112}, {"word": "in", "start": 13.765}, {"word": "lowest", "start": 13.952}, {"word": "group", "start": 14.326}]}, {"start": 15.003, "end": 16.595, "capEnd": 16.845, "words": [{"w": "Vẫn", "start": 15.003}, {"w": "có", "start": 15.252}, {"w": "ích.", "start": 15.451}, {"w": "Tác", "start": 15.749}, {"w": "dụng", "start": 15.998}, {"w": "hẹp.", "start": 16.296}], "hl": [1], "cap": [{"word": "Still", "start": 15.053}, {"word": "helps,", "start": 15.389}, {"word": "but", "start": 15.774}, {"word": "narrowly", "start": 16.014}]}], "hits": [{"id": "cards", "t": 10.583, "sfx": "tick"}, {"id": "high", "t": 12.931, "sfx": "ding"}]}]}, root = document.getElementById("cap-root"), tl = gsap.timeline({ paused: true });
+  const MAXW = 4, BUF = 0.25;
+  const words = []; T.sections.forEach(s => s.lines.forEach(l => l.cap.forEach((c, i) => words.push({ text: c.word, start: c.start, hl: l.hl.includes(i), lineEnd: l.capEnd, last: i === l.cap.length - 1 }))));
+  const groups = []; let cur = [];
+  words.forEach(w => { cur.push(w); if (cur.length >= MAXW || /[,.:!?…]$/.test(w.text) || w.last) { groups.push(cur); cur = []; } });
+  if (cur.length) groups.push(cur);
+  groups.forEach((g, gi) => {
+    const el = document.createElement("div"); el.className = "grp"; el.id = "cg" + gi;
+    const pill = document.createElement("div"); pill.className = "pill"; el.appendChild(pill);
+    g.forEach((w, wi) => { const s = document.createElement("span"); s.className = "w" + (w.hl ? " hl" : ""); s.id = "cw" + gi + "_" + wi; s.textContent = w.text; pill.appendChild(s); });
+    root.appendChild(el);
+    const start = g[0].start, nxt = groups[gi + 1];
+    const end = nxt ? Math.min(nxt[0].start, g[g.length - 1].last ? g[g.length - 1].lineEnd : g[g.length - 1].start + 0.9 + BUF) : g[g.length - 1].lineEnd;
+    tl.fromTo(el, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" }, start - 0.05);
+    g.forEach((w, wi) => tl.set("#cw" + gi + "_" + wi, w.hl ? { color: "#F7F7F5", backgroundColor: "#111" } : { color: "#111" }, Math.max(start - 0.05, w.start - 0.04)));
+    tl.set(el, { opacity: 0, visibility: "hidden" }, end);   // caption hard-kill (non-clip child)
+  });
+  window.__timelines["captions"] = tl;
+})();
+</script>
+</template>
+</body></html>

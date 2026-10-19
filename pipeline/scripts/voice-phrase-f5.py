@@ -19,9 +19,9 @@ def gen():
     import json,re
     S=json.load(open(SPEC))
     units=[]
-    for sc in S['parts'][0]['scenes']:
+    for sc in [s for part in S['parts'] for s in part.get('scenes',[])+part.get('sections',[])]:
       for li,l in enumerate(sc['lines']):
-        key=sc['id']+('ab'[li] if len(sc['lines'])>1 else '')
+        key=sc['id']+('abcd'[li] if len(sc['lines'])>1 else '')
         ph=[p['t'] for p in l['phrases']]; m=[]
         for p in ph:  # merge <4 syllables into next
           if m and len(re.sub(r"\{[^:]*: |\}","",m[-1]).split())<4: m[-1]=m[-1]+' '+p

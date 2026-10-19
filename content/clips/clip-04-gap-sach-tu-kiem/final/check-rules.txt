@@ -1,59 +1,102 @@
-⚠ rule-4   planned length 83.7s (target 55–60.5s)
-⚠ rule-9   b04: voice spans 9.7s in one shot (max ~8s per scene)
-⚠ rule-9   b05: voice spans 9.5s in one shot (max ~8s per scene)
-⚠ rule-9   b10: voice spans 8.8s in one shot (max ~8s per scene)
-⚠ rule-7   299 VI words (target 140–175)
+⚠ rule-4   planned length 69.0s (target 55–60.5s)
+⚠ rule-7   219 VI words (target 140–175)
 ✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
 ✔ rule-8   last beat b10 part='cta' (CTA question expected)
 ✔ rule-11  no Omi
 ✖ rule-17  theme dark vs theme-map LIGHT
-⚠ rule-42  b04: evidence beat in comic; should be motion graphics
-⚠ rule-42  b05: evidence beat in comic; should be motion graphics
+✔ rule-15  explainer/index.html: Be Vietnam Pro embedded
+✔ rule-15  explainer/index.html.tpl: Be Vietnam Pro embedded
 ✔ rule-15  video-engine fonts.ts uses Be Vietnam Pro
 ✔ rule-21  no music
-✔ rule-41  Southern particles in 6/11 lines
+✔ rule-41  Southern particles in 4/32 lines
 ✔ rule-41  addresses viewer as “bạn”
 ⚠ rule-41  English mix words: none (profile: 1–3 per clip; proper nouns exempt)
 ✔ rule-41  content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md: no unconfirmed story items
 ✔ rule-46  AI voices: Hiệp=F5 · Thái Sơn
 ✔ rule-46  hiep voice = F5 · Thái Sơn (F5-TTS, CC-BY-NC-SA risk accepted DL-035)
-⚠ rule-32  post.md missing
-✔ rule-45  video-engine validate: ✔ /workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-A.voiced.json: 11 scenes, 83.70s
+✔ rule-13  post.md credit HowToLiveBetter
+✔ rule-13  post.md license name
+✔ rule-13  post.md license link
+✔ rule-13  post.md 'đã chuyển thể / adapted'
+✔ rule-46  post.md: TikTok 'AI-generated content' toggle
+✔ rule-46  post.md: AI-voice disclosure line in caption
+✔ rule-46  post.md: disclosure names the engine (F5-TTS, DL-035)
+✔ rule-32  post.md hashtags
+✔ rule-45  video-engine validate: ✔ /workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-A.voiced.json: 5 scenes, 31.25s | ✔ /workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-B.voiced.json: 3 scenes, 21.16s
 ✔ L-033    layout collisions: none
-✔ rule-46  STT b01 1.00: “Bạn tưởng mình hay quên hả?”
-✔ rule-46  STT b01b 1.00: “Không đâu, bạn đọc cả tối mà đầu vấn trống, vì bạn có nhớ gì đâu mà quên.”
-✔ rule-46  STT b02 0.92: “Nghe vậy có tức không? Như ôm thì hay học tiếng Anh, mình đọc đi đọc lại gạch chi chết mà chữ vẫn chưa vô đầu.”
-✔ rule-46  STT b03 0.97: “Vậy tại mình đọc chưa đủ hả? Không hẳn đâu, đọc lại chỉ là mắt quen mặt chữ, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.”
-✔ rule-46  STT b04 0.76: “Vậy sao biết mình thuộc thiệt? Nhàn và cộng sự gom 222.000 cứu, hơn 48.000 học sinh, có kiểm tra nhỏ thì điểm cao hơn ở mức vừa.”
-✔ rule-46  STT b05 0.83: “Nghe kiểm tra và nghĩ bài thi hã, không đó là tự kiểm lúc học, đụng lúc kỳ xếp 10 cánh học, cách này ở nhóm cao nhất, độc lại, gạch chân ở nhóm thấp nhất.”
-✔ rule-46  STT b06 1.00: “Vậy đọc lại bỏ luôn hả, không hẳn tác dụng nó hẹp hơn thôi. Học xong, gấp sách lại từ kiểm trước, đừng quay đầu đọc lại ngay.”
-✔ rule-46  STT b07 0.98: “Tự kiểm làm sao đây? Như mình nè học xong một phần, mình gấp sách lại, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ.”
-✔ rule-46  STT b08 0.90: “Còn Ông Thi Tiến Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại tự nói chương này, nói dì. Bí chỗ nào là chưa thuộc chỗ đó?”
-✔ rule-46  STT b09 0.96: “Bài dài quá kiểm so hết, nhớ clip trước không, bài dài thì chia nhỏ ra trước, học xong phần nào kiểm ngay phần đó.”
-✔ rule-46  STT b10 0.89: “Quay lại sáng mai coi, đâu phải mình học giỡ. Mắc quen chữ thôi, đầu chưa tự nhớ lần nào. Tối nay bạn nhớ được máy ý. Comment một con số nha.”
-✖ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
-✔ rule-55  first spoken clause 6 words (≤ 6, punchy)
+⚠ rule-4   MP4 68.97s
+✔ rule-4   video 1080×1920 30/1 h264 High yuv420p bt709
+✔ rule-4   audio aac 48000 Hz, -14.6 LUFS, peak -1.3 dBFS (target −14 ±1, peak ≤ −0.5)
+✔ rule-34  contact-sheet.png for frame review
+✔ rule-46  STT b01 1.00: “Học thuộc tối qua sáng dạy quên sạch.”
+✔ rule-46  STT b01 1.00: “Không nhìn sách, bạn có thể nhớ được những gì.”
+✔ rule-46  STT b02 0.90: “với dụ học từ tiếng Anh để đi du lịch.”
+✔ rule-46  STT b02 0.76: “Tối đọc đi đọc lại 30 từ tới thuộc lao.”
+✔ rule-46  STT b02 1.00: “Tưởng mai nhớ hết”
+✔ rule-46  STT b03 1.00: “Sáng dày gấp sách viết lại.”
+✖ rule-46  STT b03 0.00: “À POT, hôm nay thích bắt POT”
+✔ rule-46  STT b03 0.85: “tới từ thứ Nam Hành Lý, bước dừng không nhớ từ Tiến Anh.”
+✔ rule-46  STT b04 0.83: “Mình chục dạ, hay tối qua chỉ nhìn chữ đến quanh mắt.”
+✔ rule-46  STT b04 1.00: “Giây trắng sau passport dừng ở đó.”
+✔ rule-46  STT b05 0.83: “Viết không ra mình mở sắp.”
+✔ rule-46  STT b05 0.83: “xem đúng chỗ bí lắc kịch.”
+✔ rule-46  STT b05 1.00: “Gặp lại, viết tiếp!”
+✖ rule-46  STT e06 0.29: “Giang gọt 222.000 cứu”
+✖ rule-46  STT e06 0.50: “hơn 48.000 học sinh.”
+✔ rule-46  STT e06 0.75: “Lấp có kiểm nhỏ.”
+✔ rule-46  STT e06 1.00: “Điếm cao hơn mức vừa.”
+✖ rule-46  STT e07 0.33: “Đùng lốc ký xếp 10 cách.”
+✔ rule-46  STT e07 1.00: “từ kiểm nằm nhóm cao nhất.”
+✔ rule-46  STT e07 1.00: “Đọc lại gạch chân nằm nhóm thấp nhất”
+✔ rule-46  STT e07 0.83: “vẫn có ít tác dụng hẹp.”
+✖ rule-46  STT b08 0.53: “Mình chia 30 thể thành 3 trồng.”
+✔ rule-46  STT b08 0.75: “Mỗi chồng 10 thẻ.”
+✔ rule-46  STT b08 0.75: “Học sóng chồng đầu”
+✔ rule-46  STT b08 1.00: “gấp sách, viết lại đúng chồng đó.”
+✖ rule-46  STT b09 0.33: “Sáng hôm xongscreen Amanda Yung”
+✔ rule-46  STT b09 1.00: “Sách vẫn gấp viết trước.”
+✔ rule-46  STT b09 0.86: “Lần này viết thêm được lắc ghệt.”
+⚠ rule-46  STT b10 0.67: “Lát ghệt bí sáng hôm trước.”
+✔ rule-46  STT b10 1.00: “Sáng hôm sau tự viết được, không cần sách.”
+✔ rule-46  STT b10 0.83: “bạn viết lại được máy tờ.”
+⚠ rule-46  STT b10 0.67: “Còn bên còn số đó nha.”
+✔ rule-50  9 transitions, 9 with SFX
+✔ rule-50  ambience bed under whole clip
+✔ rule-53  post.md has all 12 fields with code blocks
+✔ rule-53  cover text 34 chars (≤ 40)
+✔ rule-53  cover.png exported
+✔ rule-53  cover frame timestamp given
+✔ rule-53  caption 1069 chars (≤ 2200)
+✔ rule-53  5 hashtags (3–5)
+✔ rule-53  no spammy hashtags
+✔ rule-53  hashtags appended to caption
+✔ rule-53  settings checklist: AI toggle, duet/stitch, location
+✔ rule-53  post-checklist.md present
+✔ rule-54  spec.cover props (template A) present
+✔ L-020    cover.png rendered from Cover template (props json present)
+✔ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
+✖ rule-55  first spoken clause 8 words (≤ 6, punchy)
 ✔ rule-55  first spoken word at 0.12s (≤ 0.3)
-✔ rule-55  first visual change/hit at 0.32s (≤ 1.0)
-✔ rule-55  0–3s: 1 cut(s) + 2 hit(s) (need ≥ 2 total, ≥ 1 cut)
-✔ rule-55  hook voice emotions ['surprised', 'sad'] (dramatic)
+✔ rule-55  first visual change/hit at 0.12s (≤ 1.0)
+✖ rule-55  0–3s: 0 cut(s) + 1 hit(s) (need ≥ 2 total, ≥ 1 cut)
+✔ rule-55  hook voice emotions ['surprised', 'focused'] (dramatic)
 ✔ rule-56  engagement devices ['comment-challenge', 'loop', 'relatable-question'] (≥3 incl. comment-challenge + loop)
 ✔ rule-56  no begging for likes/follows
-⚠ rule-57  final/trend-signals.md missing
+⚠ rule-57  trend-signals.md has clip URLs with view counts
 ✔ rule-58  no vague phrases (‘X thắng’, ‘điều gì đó’, ‘mọi thứ’…)
 ✔ rule-58  every non-hook beat opens with a connector/callback
-⚠ rule-58  clauses ≤ 12 words (punchy); long: ['b01b']
+✔ rule-58  clauses ≤ 12 words (punchy)
 ✔ rule-60  spoken style, no written/academic connectors
 ✔ rule-60  every beat has a stage action (stage.action)
 ✔ rule-60  every beat has an emotion cue (interjection in line or stage.react)
-✔ rule-60  spoken interjections/particles in 7/11 beats (≥ half)
+⚠ rule-60  spoken interjections/particles in 1/10 beats (≥ half)
 ✔ rule-61  dialogue does not narrate the stage action
 ✔ rule-61  no filler / visual-describing phrases
 ✔ rule-62  spec.throughline present in ABT form (… VÀ … NHƯNG … VÌ VẬY …)
 ✔ rule-62  every beat after the first has a contextual `link` (why it follows)
-✔ rule-62  literal ‘nhưng/nên’ in dialogue: 1 (≤ 2; links come from context)
+✔ rule-62  literal ‘nhưng/nên’ in dialogue: 0 (≤ 2; links come from context)
 ✔ rule-62  hook_question asked + answered later (open loop closed)
-✔ rule-62  callbacks to prior clips declared (1); use [] if none overlap
+✔ rule-62  callbacks to prior clips declared (0); use [] if none overlap
 ✔ rule-64  spec.structure has hook/intro/body/summary/cta
 ✔ rule-64  hook 2 sentence(s) (≤ 2)
 ✔ rule-64  hook is not a generic opener
@@ -61,38 +104,41 @@
 ✔ rule-64  hook_alt of another type proposed
 ✔ rule-52  transition_sfx planned: {'part': 'whoosh-soft', 'scene': 'swish'}
 ✔ rule-52  b01: motion/visual described
-✔ rule-52  b01: effect tied to spoken word “hay quên”
-✔ rule-52  b01b: motion/visual described
-✔ rule-52  b01b: effect tied to spoken word “trống”
+✔ rule-52  b01: effect tied to spoken word “quên sạch”
 ✔ rule-52  b02: motion/visual described
-✔ rule-52  b02: effect tied to spoken word “chưa vô đầu”
+✔ rule-52  b02: effect tied to spoken word “thuộc làu”
 ✔ rule-52  b03: motion/visual described
-✔ rule-52  b03: effect tied to spoken word “quen mặt chữ”
+✔ rule-52  b03: effect tied to spoken word “Bút dừng”
 ✔ rule-52  b04: motion/visual described
-✔ rule-52  b04: effect tied to spoken word “cao hơn”
+✔ rule-52  b04: effect tied to spoken word “Giấy trắng”
 ✔ rule-52  b05: motion/visual described
-✔ rule-52  b05: effect tied to spoken word “cao nhất”
-✔ rule-52  b06: motion/visual described
-✔ rule-52  b06: effect tied to spoken word “gấp sách lại”
-✔ rule-52  b07: motion/visual described
-✔ rule-52  b07: effect tied to spoken word “ghi ra những gì còn nhớ”
+✔ rule-52  b05: effect tied to spoken word “mở sách”
+✔ rule-52  e06: motion/visual described
+✔ rule-52  e06: effect tied to spoken word “222 nghiên cứu”
+✔ rule-52  e06: explainer has ≥1 planned hit + SFX
+✔ rule-52  e07: motion/visual described
+✔ rule-52  e07: effect tied to spoken word “nhóm cao nhất”
+✔ rule-52  e07: explainer has ≥1 planned hit + SFX
 ✔ rule-52  b08: motion/visual described
-✔ rule-52  b08: effect tied to spoken word “chương này nói gì”
+✔ rule-52  b08: effect tied to spoken word “ba chồng”
 ✔ rule-52  b09: motion/visual described
-✔ rule-52  b09: effect tied to spoken word “chia nhỏ ra”
+✔ rule-52  b09: effect tied to spoken word “luggage”
 ✔ rule-52  b10: motion/visual described
-✔ rule-52  b10: effect tied to spoken word “mấy ý”
+✔ rule-52  b10: effect tied to spoken word “Luggage”
 ✔ rule-52  script-final.md effects table covers every beat
 ✔ rule-52  effects table has no **THIẾU** cells
 ✔ L-044    script beats flow (≤ 5 phrases, ≤ 1 fragment < 3 words, ≥ 4 phrases need avg ≥ 4.5 words)
-✔ rule-49  lessons.md: 57 lessons loaded
+✔ rule-51  e06: 2 accent hit(s) [ding, rise]
+✔ rule-51  e07: 2 accent hit(s) [tick, ding]
+✔ rule-51  13 accent SFX, spacing ≥ 0.25s
+✔ rule-49  lessons.md: 63 lessons loaded
 ✔ L-001    contact-sheet.png present for self-review
 ✔ L-004    highlight indexes within EN caption
 ✔ L-005    no [tags] in spoken text
 ✔ L-006    phrase tempos within 0.85–1.15
 ✔ L-010    key terms use phonetic spelling
 ✔ L-025    spoken text respelled
-✔ L-025    all rendered lines STT ≥ 0.8
+✖ L-025    line STT < 0.8: ['b03:c04v14-b03b 0.0', 'e06:c04v14-b06a 0.778', 'e06:c04v14-b06c 0.75', 'e07:c04v14-b07a 0.5', 'b08:c04v14-b08a 0.6', 'b08:c04v14-b08b 0.75', 'b08:c04v14-b08c 0.75', 'b09:c04v14-b09b 0.7', 'b10:c04v14-b10a 0.667', 'b10:c04v14-b10d 0.667']
 ✔ L-027    hook voice gaps ≤ 0.1s
 ✔ L-028    self-blame lines punchy + emphasized
 ✔ L-036    meme-stem lines split + payload emphasized
@@ -102,32 +148,75 @@
 ✔ L-017    voice markup valid
 ✔ L-017    bank fillers available
 ✔ L-018    {kéo:} used 0× (plain particles preferred by Hiệp; ≤ 1/clip)
-✔ L-017    fillers 0/clip (cap 2), per line ≤ 1
+✔ L-017    fillers 0/clip (cap 8), per line ≤ 1
 ✔ L-017    no markup in on-screen text
 ✔ L-011    Omi/week consistent
 ✔ L-003    caption segments never overlap
-✔ L-016    b01/c04v1-b01: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b01/c04v1-b01: F5 per-phrase generation
-✔ L-016    b01b/c04v1-b01b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b01b/c04v1-b01b: F5 per-phrase generation
-✔ L-016    b02/c04v1-b02: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b02/c04v1-b02: F5 per-phrase generation
-✔ L-016    b03/c04v1-b03: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b03/c04v1-b03: F5 per-phrase generation
-✔ L-016    b04/c04v1-b04: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b04/c04v1-b04: F5 per-phrase generation
-✔ L-016    b05/c04v1-b05: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b05/c04v1-b05: F5 per-phrase generation
-✔ L-016    b06/c04v1-b06: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b06/c04v1-b06: F5 per-phrase generation
-✔ L-016    b07/c04v1-b07: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b07/c04v1-b07: F5 per-phrase generation
-✔ L-016    b08/c04v1-b08: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b08/c04v1-b08: F5 per-phrase generation
-✔ L-016    b09/c04v1-b09: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b09/c04v1-b09: F5 per-phrase generation
-✔ L-016    b10/c04v1-b10: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b10/c04v1-b10: F5 per-phrase generation
-⚠ L-013    31 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+✔ L-014    hf-check.txt shows hyperframes lint 0 errors
+✔ L-016    b01/c04v14-b01a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b01/c04v14-b01a: F5 per-phrase generation
+✔ L-016    b01/c04v14-b01b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b01/c04v14-b01b: F5 per-phrase generation
+✔ L-016    b02/c04v14-b02a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b02/c04v14-b02a: F5 per-phrase generation
+✔ L-016    b02/c04v14-b02b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b02/c04v14-b02b: F5 per-phrase generation
+✔ L-016    b02/c04v14-b02c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b02/c04v14-b02c: F5 per-phrase generation
+✔ L-016    b03/c04v14-b03a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b03/c04v14-b03a: F5 per-phrase generation
+✔ L-016    b03/c04v14-b03b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b03/c04v14-b03b: F5 per-phrase generation
+✔ L-016    b03/c04v14-b03c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b03/c04v14-b03c: F5 per-phrase generation
+✔ L-016    b04/c04v14-b04a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b04/c04v14-b04a: F5 per-phrase generation
+✔ L-016    b04/c04v14-b04b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b04/c04v14-b04b: F5 per-phrase generation
+✔ L-016    b05/c04v14-b05a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b05/c04v14-b05a: F5 per-phrase generation
+✔ L-016    b05/c04v14-b05b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b05/c04v14-b05b: F5 per-phrase generation
+✔ L-016    b05/c04v14-b05c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b05/c04v14-b05c: F5 per-phrase generation
+✔ L-016    e06/c04v14-b06a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e06/c04v14-b06a: F5 per-phrase generation
+✔ L-016    e06/c04v14-b06b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e06/c04v14-b06b: F5 per-phrase generation
+✔ L-016    e06/c04v14-b06c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e06/c04v14-b06c: F5 per-phrase generation
+✔ L-016    e06/c04v14-b06d: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e06/c04v14-b06d: F5 per-phrase generation
+✔ L-016    e07/c04v14-b07a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e07/c04v14-b07a: F5 per-phrase generation
+✔ L-016    e07/c04v14-b07b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e07/c04v14-b07b: F5 per-phrase generation
+✔ L-016    e07/c04v14-b07c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e07/c04v14-b07c: F5 per-phrase generation
+✔ L-016    e07/c04v14-b07d: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    e07/c04v14-b07d: F5 per-phrase generation
+✔ L-016    b08/c04v14-b08a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b08/c04v14-b08a: F5 per-phrase generation
+✔ L-016    b08/c04v14-b08b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b08/c04v14-b08b: F5 per-phrase generation
+✔ L-016    b08/c04v14-b08c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b08/c04v14-b08c: F5 per-phrase generation
+✔ L-016    b08/c04v14-b08d: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b08/c04v14-b08d: F5 per-phrase generation
+✔ L-016    b09/c04v14-b09a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b09/c04v14-b09a: F5 per-phrase generation
+✔ L-016    b09/c04v14-b09b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b09/c04v14-b09b: F5 per-phrase generation
+✔ L-016    b09/c04v14-b09c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b09/c04v14-b09c: F5 per-phrase generation
+✔ L-016    b10/c04v14-b10a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b10/c04v14-b10a: F5 per-phrase generation
+✔ L-016    b10/c04v14-b10b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b10/c04v14-b10b: F5 per-phrase generation
+✔ L-016    b10/c04v14-b10c: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b10/c04v14-b10c: F5 per-phrase generation
+✔ L-016    b10/c04v14-b10d: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b10/c04v14-b10d: F5 per-phrase generation
+⚠ L-013    35 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
-131 checks · 2 error(s) · 13 warning(s) → FAIL
+220 checks · 10 error(s) · 10 warning(s) → FAIL

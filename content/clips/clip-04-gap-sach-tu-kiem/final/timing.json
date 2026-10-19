@@ -1,26 +1,45 @@
 {
- "total": 83.669,
+ "total": 68.987,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-A.voiced.json",
-   "dur": 83.701,
+   "dur": 31.25,
    "mp4": "/workspace/oneup-studio/video-engine/out/clip-04-final-A.mp4",
-   "fx": null,
+   "fx": "fade",
    "scene_starts": [
-    1.852,
-    6.514,
-    13.725999999999999,
-    22.304,
-    32.379,
-    42.602999999999994,
-    50.910999999999994,
-    58.852,
-    67.203,
-    74.519
+    5.227,
+    12.308,
+    20.044,
+    26.035
    ],
    "_off": 0.0
+  },
+  {
+   "id": "E",
+   "engine": "hyperframes",
+   "dir": "/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/explainer",
+   "dur": 17.25,
+   "mp4": "/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/out/E.mp4",
+   "fx": "fade",
+   "scene_starts": [
+    8.716999999999999
+   ],
+   "_off": 30.9
+  },
+  {
+   "id": "B",
+   "engine": "remotion",
+   "plan": "/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-B.voiced.json",
+   "dur": 21.162,
+   "mp4": "/workspace/oneup-studio/video-engine/out/clip-04-final-B.mp4",
+   "fx": null,
+   "scene_starts": [
+    7.305,
+    13.39
+   ],
+   "_off": 47.8
   }
  ],
  "lines": [
@@ -28,355 +47,569 @@
    "beat": "clip-04.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "Bạn tưởng mình hay quên hả?",
-   "en": "You think you just forget easily?",
+   "say": "Học thuộc tối qua, sáng dậy quên sạch?",
+   "en": "Memorized last night, forgotten this morning?",
    "emotion": "surprised",
-   "key": "c04v1-b01",
+   "key": "c04v14-b01a",
    "local": 0.12,
-   "dur": 1.672,
+   "dur": 2.199,
    "t": 0.12
   },
   {
-   "beat": "clip-04.b02",
-   "scene": "b01b",
+   "beat": "clip-04.b01",
+   "scene": "b01",
    "speaker": "hiep",
-   "say": "Không đâu, bạn đọc cả tối mà đầu vẫn trống — vì bạn có nhớ gì đâu mà quên.",
-   "en": "No — you read all night and your head is still empty, because you never actually remembered it in the first place.",
-   "emotion": "sad",
-   "key": "c04v1-b01b",
-   "local": 0.02,
-   "dur": 4.582,
-   "t": 1.872
+   "say": "Không nhìn sách, bạn có thể nhớ được những gì?",
+   "en": "Without looking, what can you recall?",
+   "emotion": "focused",
+   "key": "c04v14-b01b",
+   "local": 2.399,
+   "dur": 2.768,
+   "t": 2.399
+  },
+  {
+   "beat": "clip-04.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Ví dụ học từ tiếng Anh để đi du lịch.",
+   "en": "Example: thirty English travel words",
+   "emotion": "neutral",
+   "key": "c04v14-b02a",
+   "local": 0.15,
+   "dur": 2.264,
+   "t": 5.377
+  },
+  {
+   "beat": "clip-04.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Tối đọc đi đọc lại. Ba mươi từ, tới thuộc làu.",
+   "en": "Reread them again that night",
+   "emotion": "focused",
+   "key": "c04v14-b02b",
+   "local": 2.614,
+   "dur": 3.026,
+   "t": 7.841
+  },
+  {
+   "beat": "clip-04.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Tưởng mai nhớ hết.",
+   "en": "Thought I'd remember everything tomorrow",
+   "emotion": "happy",
+   "key": "c04v14-b02c",
+   "local": 5.84,
+   "dur": 0.991,
+   "t": 11.067
   },
   {
    "beat": "clip-04.b03",
-   "scene": "b02",
+   "scene": "b03",
    "speaker": "hiep",
-   "say": "Nghe vậy có tức không? Như ôn thi hay học tiếng Anh, mình đọc đi đọc lại, gạch chi chít, mà chữ vẫn chưa vô đầu.",
-   "en": "Stings to hear that, doesn't it? Exam prep, English — rereading and highlighting everything, and it still won't stick.",
+   "say": "Sáng dậy, gấp sách viết lại.",
+   "en": "Morning: closed book, wrote back",
    "emotion": "focused",
-   "key": "c04v1-b02",
+   "key": "c04v14-b03a",
    "local": 0.15,
-   "dur": 6.812,
-   "t": 6.664
+   "dur": 1.709,
+   "t": 12.458
+  },
+  {
+   "beat": "clip-04.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "airport, hotel, ticket, passport.",
+   "en": "airport, hotel, ticket, passport",
+   "emotion": "focused",
+   "key": "c04v14-b03b",
+   "local": 2.059,
+   "dur": 1.587,
+   "t": 14.367
+  },
+  {
+   "beat": "clip-04.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Tới từ thứ năm, hành lý. Bút dừng. Không nhớ từ tiếng Anh.",
+   "en": "At fifth word, pen stopped",
+   "emotion": "surprised",
+   "key": "c04v14-b03c",
+   "local": 3.846,
+   "dur": 3.64,
+   "t": 16.154
   },
   {
    "beat": "clip-04.b04",
-   "scene": "b03",
+   "scene": "b04",
    "speaker": "hiep",
-   "say": "Vậy tại mình đọc chưa đủ hả? Không hẳn đâu. Đọc lại chỉ làm mắt quen mặt chữ, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.",
-   "en": "Is it because you didn't read enough? Not really — rereading only makes your eyes recognise the page. Familiar feels like learned, but you never had to recall it.",
+   "say": "Mình chột dạ. Hay tối qua chỉ nhìn chữ đến quen mắt?",
+   "en": "Had I only looked until familiar?",
    "emotion": "confused",
-   "key": "c04v1-b03",
+   "key": "c04v14-b04a",
    "local": 0.15,
-   "dur": 8.178,
-   "t": 13.876
+   "dur": 3.11,
+   "t": 20.194
+  },
+  {
+   "beat": "clip-04.b04",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Giấy trắng sau passport. Dừng ở đó.",
+   "en": "Blank after passport on paper",
+   "emotion": "sad",
+   "key": "c04v14-b04b",
+   "local": 3.46,
+   "dur": 2.281,
+   "t": 23.504
   },
   {
    "beat": "clip-04.b05",
-   "scene": "b04",
+   "scene": "b05",
    "speaker": "hiep",
-   "say": "Vậy sao biết mình thuộc thiệt? Yang và cộng sự gom hai trăm hai mươi hai nghiên cứu, hơn bốn mươi tám ngàn học sinh: có kiểm tra nhỏ thì điểm cao hơn, ở mức vừa.",
-   "en": "So how do you know you really learned it? Yang et al. pooled 222 studies, over 48,000 students: classes with small quizzes scored higher — a medium effect.",
+   "say": "Viết không ra, mình mở sách.",
+   "en": "When stuck, open book",
    "emotion": "focused",
-   "key": "c04v1-b04",
+   "key": "c04v14-b05a",
    "local": 0.15,
-   "dur": 9.675,
-   "t": 22.454
+   "dur": 1.597,
+   "t": 26.185
+  },
+  {
+   "beat": "clip-04.b05",
+   "scene": "b05",
+   "speaker": "hiep",
+   "say": "Xem đúng chỗ bí: lắc ghịt.",
+   "en": "Check stuck spot: luggage",
+   "emotion": "focused",
+   "key": "c04v14-b05b",
+   "local": 1.947,
+   "dur": 1.662,
+   "t": 27.982
+  },
+  {
+   "beat": "clip-04.b05",
+   "scene": "b05",
+   "speaker": "hiep",
+   "say": "Gấp lại, viết tiếp.",
+   "en": "Close book, keep writing",
+   "emotion": "happy",
+   "key": "c04v14-b05c",
+   "local": 3.809,
+   "dur": 1.156,
+   "t": 29.844
   },
   {
    "beat": "clip-04.b06",
-   "scene": "b05",
+   "scene": "e06",
    "speaker": "hiep",
-   "say": "Nghe kiểm tra, bạn nghĩ bài thi hả? Không, đó là tự kiểm lúc học. Đun lốt ki xếp mười cách học, cách này ở nhóm cao nhất, đọc lại, gạch chân ở nhóm thấp nhất.",
-   "en": "Tests sound like exams, right? No — this is testing yourself while studying. Dunlosky ranked ten methods: self-testing in the top tier; rereading and highlighting in the bottom tier.",
+   "say": "Giang gộp hai trăm hai mươi hai nghiên cứu.",
+   "en": "Yang pooled 222 studies",
    "emotion": "focused",
-   "key": "c04v1-b05",
-   "local": 0.45,
-   "dur": 9.524,
-   "t": 32.829
+   "key": "c04v14-b06a",
+   "local": 0.65,
+   "dur": 2.615,
+   "t": 31.55
+  },
+  {
+   "beat": "clip-04.b06",
+   "scene": "e06",
+   "speaker": "hiep",
+   "say": "Hơn bốn mươi tám ngàn học sinh.",
+   "en": "Over 48,000 students total",
+   "emotion": "focused",
+   "key": "c04v14-b06b",
+   "local": 3.515,
+   "dur": 1.673,
+   "t": 34.415
+  },
+  {
+   "beat": "clip-04.b06",
+   "scene": "e06",
+   "speaker": "hiep",
+   "say": "Lớp có kiểm nhỏ.",
+   "en": "Small quizzes in class",
+   "emotion": "focused",
+   "key": "c04v14-b06c",
+   "local": 5.438,
+   "dur": 1.175,
+   "t": 36.338
+  },
+  {
+   "beat": "clip-04.b06",
+   "scene": "e06",
+   "speaker": "hiep",
+   "say": "Điểm cao hơn mức vừa.",
+   "en": "Modestly higher scores overall",
+   "emotion": "focused",
+   "key": "c04v14-b06d",
+   "local": 6.863,
+   "dur": 1.304,
+   "t": 37.763
   },
   {
    "beat": "clip-04.b07",
-   "scene": "b06",
+   "scene": "e07",
    "speaker": "hiep",
-   "say": "Vậy đọc lại bỏ luôn hả? Không hẳn, tác dụng nó hẹp hơn thôi. Học xong, gấp sách lại tự kiểm trước, đừng quay đầu đọc lại ngay.",
-   "en": "So rereading is useless? Not quite — its effect is just narrower. Finish a section, close the book and test yourself first, instead of turning straight back to reread.",
+   "say": "Đun lốt ki xếp mười cách.",
+   "en": "Dunlosky ranked ten methods",
    "emotion": "focused",
-   "key": "c04v1-b06",
-   "local": 0.15,
-   "dur": 7.908,
-   "t": 42.753
+   "key": "c04v14-b07a",
+   "local": 9.017,
+   "dur": 1.359,
+   "t": 39.917
+  },
+  {
+   "beat": "clip-04.b07",
+   "scene": "e07",
+   "speaker": "hiep",
+   "say": "Tự kiểm nằm nhóm cao nhất.",
+   "en": "Self-testing in highest group",
+   "emotion": "focused",
+   "key": "c04v14-b07b",
+   "local": 10.626,
+   "dur": 1.625,
+   "t": 41.526
+  },
+  {
+   "beat": "clip-04.b07",
+   "scene": "e07",
+   "speaker": "hiep",
+   "say": "Đọc lại, gạch chân nằm nhóm thấp nhất.",
+   "en": "Rereading, highlighting in lowest group",
+   "emotion": "focused",
+   "key": "c04v14-b07c",
+   "local": 12.501,
+   "dur": 2.252,
+   "t": 43.401
+  },
+  {
+   "beat": "clip-04.b07",
+   "scene": "e07",
+   "speaker": "hiep",
+   "say": "Vẫn có ích. Tác dụng hẹp.",
+   "en": "Still helps, but narrowly",
+   "emotion": "neutral",
+   "key": "c04v14-b07d",
+   "local": 15.003,
+   "dur": 1.592,
+   "t": 45.903
   },
   {
    "beat": "clip-04.b08",
-   "scene": "b07",
+   "scene": "b08",
    "speaker": "hiep",
-   "say": "Tự kiểm làm sao đây? Như mình nè: học xong một phần, mình gấp sách lại, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ nào.",
-   "en": "How do you self-test? Like me: finish a section, close the book, write down what I remember, then open it to check where I went wrong.",
+   "say": "Mình chia ba mươi thẻ thành ba chồng.",
+   "en": "Thirty cards in three piles",
    "emotion": "focused",
-   "key": "c04v1-b07",
+   "key": "c04v14-b08a",
    "local": 0.15,
-   "dur": 7.541,
-   "t": 51.061
+   "dur": 1.933,
+   "t": 47.95
+  },
+  {
+   "beat": "clip-04.b08",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Mỗi chồng mười thẻ.",
+   "en": "Ten cards in each pile",
+   "emotion": "focused",
+   "key": "c04v14-b08b",
+   "local": 2.283,
+   "dur": 1.168,
+   "t": 50.083
+  },
+  {
+   "beat": "clip-04.b08",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Học xong chồng đầu.",
+   "en": "Finish first pile, close book",
+   "emotion": "happy",
+   "key": "c04v14-b08c",
+   "local": 3.651,
+   "dur": 1.166,
+   "t": 51.451
+  },
+  {
+   "beat": "clip-04.b08",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Gấp sách, viết lại đúng chồng đó.",
+   "en": "Write that pile back",
+   "emotion": "happy",
+   "key": "c04v14-b08d",
+   "local": 5.017,
+   "dur": 2.038,
+   "t": 52.817
   },
   {
    "beat": "clip-04.b09",
-   "scene": "b08",
+   "scene": "b09",
    "speaker": "hiep",
-   "say": "Còn ôn thi, tiếng Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại, tự nói chương này nói gì. Bí chỗ nào là chưa thuộc chỗ đó.",
-   "en": "What about exams or English? Instead of rereading a chapter three times, close it and say what it was about. Where you get stuck is what you haven't learned.",
-   "emotion": "focused",
-   "key": "c04v1-b08",
+   "say": "Sáng hôm sau, quay lại giấy đó.",
+   "en": "Next morning, same paper again",
+   "emotion": "happy",
+   "key": "c04v14-b09a",
    "local": 0.15,
-   "dur": 7.951,
-   "t": 59.002
+   "dur": 1.778,
+   "t": 55.255
+  },
+  {
+   "beat": "clip-04.b09",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Sách vẫn gấp. Viết trước.",
+   "en": "Book still closed, wrote first",
+   "emotion": "focused",
+   "key": "c04v14-b09b",
+   "local": 2.128,
+   "dur": 1.707,
+   "t": 57.233
+  },
+  {
+   "beat": "clip-04.b09",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Lần này viết thêm được lắc ghịt.",
+   "en": "Added luggage this time",
+   "emotion": "happy",
+   "key": "c04v14-b09c",
+   "local": 4.035,
+   "dur": 1.8,
+   "t": 59.14
   },
   {
    "beat": "clip-04.b10",
-   "scene": "b09",
-   "speaker": "hiep",
-   "say": "Bài dài quá, kiểm sao hết? Nhớ clíp trước không, bài dài thì chia nhỏ ra trước. Học xong phần nào, kiểm ngay phần đó.",
-   "en": "But what if it's long? Remember last clip: split the big pile first. Finish one small bundle, then test yourself on just that bundle.",
-   "emotion": "focused",
-   "key": "c04v1-b09",
-   "local": 0.15,
-   "dur": 6.916,
-   "t": 67.353
-  },
-  {
-   "beat": "clip-04.b11",
    "scene": "b10",
    "speaker": "hiep",
-   "say": "Quay lại sáng mai coi, đâu phải mình học dở. Mắt quen chữ thôi, đầu chưa tự nhớ lần nào. Tối nay bạn nhớ được mấy ý? Com men một con số nha!",
-   "en": "Back to that next-morning moment: see, you're not bad at studying — your eyes got familiar, your brain never recalled. Tonight, how many ideas can you remember? Comment a number!",
-   "emotion": "happy",
-   "key": "c04v1-b10",
+   "say": "Lắc ghịt bí sáng hôm trước.",
+   "en": "Luggage stuck previous morning",
+   "emotion": "focused",
+   "key": "c04v14-b10a",
    "local": 0.15,
-   "dur": 8.782,
-   "t": 74.669
+   "dur": 1.636,
+   "t": 61.34
+  },
+  {
+   "beat": "clip-04.b10",
+   "scene": "b10",
+   "speaker": "hiep",
+   "say": "Sáng hôm sau tự viết được, không cần sách.",
+   "en": "Next morning wrote it myself",
+   "emotion": "happy",
+   "key": "c04v14-b10b",
+   "local": 1.986,
+   "dur": 2.241,
+   "t": 63.176
+  },
+  {
+   "beat": "clip-04.b10",
+   "scene": "b10",
+   "speaker": "hiep",
+   "say": "Bạn viết lại được mấy từ?",
+   "en": "How many words for you?",
+   "emotion": "focused",
+   "key": "c04v14-b10c",
+   "local": 4.427,
+   "dur": 1.554,
+   "t": 65.617
+  },
+  {
+   "beat": "clip-04.b10",
+   "scene": "b10",
+   "speaker": "hiep",
+   "say": "Com men con số đó nha.",
+   "en": "Comment that number below",
+   "emotion": "happy",
+   "key": "c04v14-b10d",
+   "local": 6.181,
+   "dur": 1.341,
+   "t": 67.371
   }
  ],
  "transitions": [
   {
-   "at": 1.852,
+   "at": 5.227,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 6.514,
+   "at": 12.308,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 13.726,
+   "at": 20.044,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 22.304,
+   "at": 26.035,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 32.379,
+   "at": 31.078,
+   "kind": "part",
+   "sfx": "whoosh-soft"
+  },
+  {
+   "at": 39.62,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 42.603,
+   "at": 47.978,
+   "kind": "part",
+   "sfx": "whoosh-soft"
+  },
+  {
+   "at": 55.108,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 50.911,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 58.852,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 67.203,
-   "kind": "scene",
-   "sfx": "swish"
-  },
-  {
-   "at": 74.519,
+   "at": 61.193,
    "kind": "scene",
    "sfx": "swish"
   }
  ],
  "sfx_mix": [
   {
-   "name": "swish",
-   "at": 0.32
-  },
-  {
    "name": "snap",
-   "at": 1.872
-  },
-  {
-   "name": "stamp",
-   "at": 3.772
+   "at": 0.12
   },
   {
    "name": "swish",
-   "at": 9.964
+   "at": 5.877
+  },
+  {
+   "name": "pen",
+   "at": 12.958
+  },
+  {
+   "name": "swish",
+   "at": 20.694
   },
   {
    "name": "pop",
-   "at": 11.264
+   "at": 26.485
   },
   {
-   "name": "tick",
-   "at": 12.864
-  },
-  {
-   "name": "swish",
-   "at": 17.276
-  },
-  {
-   "name": "snap",
-   "at": 20.776
+   "name": "pen",
+   "at": 28.185
   },
   {
    "name": "ding",
-   "at": 24.654
-  },
-  {
-   "name": "pop",
-   "at": 24.854
+   "at": 32.718
   },
   {
    "name": "rise",
-   "at": 29.754
-  },
-  {
-   "name": "pop",
-   "at": 33.329
+   "at": 35.825
   },
   {
    "name": "tick",
-   "at": 37.229
+   "at": 41.486
   },
   {
    "name": "ding",
-   "at": 38.929
-  },
-  {
-   "name": "tick",
-   "at": 40.429
-  },
-  {
-   "name": "snap",
-   "at": 47.053
-  },
-  {
-   "name": "pen",
-   "at": 47.953
-  },
-  {
-   "name": "pen",
-   "at": 54.661
-  },
-  {
-   "name": "swish",
-   "at": 57.361
-  },
-  {
-   "name": "tick",
-   "at": 58.161
-  },
-  {
-   "name": "swish",
-   "at": 61.202
-  },
-  {
-   "name": "snap",
-   "at": 62.902
+   "at": 43.834
   },
   {
    "name": "pop",
-   "at": 66.202
-  },
-  {
-   "name": "pop",
-   "at": 70.553
-  },
-  {
-   "name": "snap",
-   "at": 72.553
+   "at": 48.353
   },
   {
    "name": "pen",
-   "at": 72.753
-  },
-  {
-   "name": "tick",
-   "at": 73.553
+   "at": 50.453
   },
   {
    "name": "swish",
-   "at": 74.969
+   "at": 55.458
   },
   {
    "name": "pop",
-   "at": 80.469
+   "at": 58.258
+  },
+  {
+   "name": "pop",
+   "at": 61.543
   },
   {
    "name": "tick",
-   "at": 82.369
+   "at": 64.843
   },
   {
    "name": "swish",
-   "at": 1.732
+   "at": 5.107
   },
   {
    "name": "swish",
-   "at": 6.394
+   "at": 12.188
   },
   {
    "name": "swish",
-   "at": 13.606
+   "at": 19.924
   },
   {
    "name": "swish",
-   "at": 22.184
+   "at": 25.915
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 30.958
   },
   {
    "name": "swish",
-   "at": 32.259
+   "at": 39.5
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 47.858
   },
   {
    "name": "swish",
-   "at": 42.483
+   "at": 54.988
   },
   {
    "name": "swish",
-   "at": 50.791
-  },
-  {
-   "name": "swish",
-   "at": 58.732
-  },
-  {
-   "name": "swish",
-   "at": 67.083
-  },
-  {
-   "name": "swish",
-   "at": 74.399
+   "at": 61.073
   },
   {
    "name": "ambience",
    "at": 0.0
   }
  ],
- "hits": [],
+ "hits": [
+  {
+   "section": "e06",
+   "id": "papers",
+   "t": 32.718,
+   "sfx": "ding"
+  },
+  {
+   "section": "e06",
+   "id": "bars",
+   "t": 35.825,
+   "sfx": "rise"
+  },
+  {
+   "section": "e07",
+   "id": "cards",
+   "t": 41.486,
+   "sfx": "tick"
+  },
+  {
+   "section": "e07",
+   "id": "high",
+   "t": 43.834,
+   "sfx": "ding"
+  }
+ ],
  "partStarts": [
-  0.0
+  0.0,
+  30.903,
+  47.803
  ]
 }

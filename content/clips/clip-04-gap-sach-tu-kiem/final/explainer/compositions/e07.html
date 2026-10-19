@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="UTF-8" /></head>
+<body>
+<template>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+#e07-root{position:absolute;inset:0;font-family:"BVP";color:#111}
+#e07-root .sched{position:absolute;left:70px;top:180px;width:200px;height:260px;background:#F7F7F5;border:7px solid #111;border-radius:16px;transform:rotate(6deg);padding:26px 20px}
+#e07-root .sched i{display:block;height:10px;background:#111;opacity:.55;border-radius:6px;margin-bottom:22px}
+#e07-root .card{position:absolute;width:82px;height:120px;background:#F7F7F5;border:6px solid #111;border-radius:12px;box-shadow:6px 6px 0 #111}
+#e07-root .stack{position:absolute;bottom:420px}
+#e07-root .stack i{display:block;width:300px;height:56px;background:#F7F7F5;border:7px solid #111;border-radius:14px;margin-top:-12px;box-shadow:8px 8px 0 #111}
+#e07-root .stack.acc i{background:#FF5A36}
+</style>
+<div id="e07-root" data-composition-id="e07" data-width="1080" data-height="1920">
+  <div class="sched"><i></i><i></i><i></i></div>
+  <div id="row"></div>
+  <div class="stack acc" id="high" style="left:110px"><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="stack" id="low" style="left:620px"><i></i><i></i></div>
+</div>
+<script>
+(function(){const T={"sections": [{"id": "e06", "start": 0.35, "end": 8.717, "lines": [{"start": 0.65, "end": 3.265, "capEnd": 3.515, "words": [{"w": "Giang", "start": 0.65}, {"w": "gộp", "start": 0.995}, {"w": "hai", "start": 1.242}, {"w": "trăm", "start": 1.489}, {"w": "hai", "start": 1.785}, {"w": "mươi", "start": 2.032}, {"w": "hai", "start": 2.328}, {"w": "nghiên", "start": 2.574}, {"w": "cứu.", "start": 2.969}], "hl": [2], "cap": [{"word": "Yang", "start": 0.7}, {"word": "pooled", "start": 1.228}, {"word": "222", "start": 1.933}, {"word": "studies", "start": 2.373}]}, {"start": 3.515, "end": 5.188, "capEnd": 5.438, "words": [{"w": "Hơn", "start": 3.515}, {"w": "bốn", "start": 3.729}, {"w": "mươi", "start": 3.944}, {"w": "tám", "start": 4.201}, {"w": "ngàn", "start": 4.416}, {"w": "học", "start": 4.673}, {"w": "sinh.", "start": 4.888}], "hl": [1], "cap": [{"word": "Over", "start": 3.565}, {"word": "48,000", "start": 3.86}, {"word": "students", "start": 4.253}, {"word": "total", "start": 4.744}]}, {"start": 5.438, "end": 6.613, "capEnd": 6.863, "words": [{"w": "Lớp", "start": 5.438}, {"w": "có", "start": 5.718}, {"w": "kiểm", "start": 5.942}, {"w": "nhỏ.", "start": 6.277}], "hl": [1], "cap": [{"word": "Small", "start": 5.488}, {"word": "quizzes", "start": 5.754}, {"word": "in", "start": 6.095}, {"word": "class", "start": 6.247}]}, {"start": 6.863, "end": 8.167, "capEnd": 8.417, "words": [{"w": "Điểm", "start": 6.863}, {"w": "cao", "start": 7.153}, {"w": "hơn", "start": 7.394}, {"w": "mức", "start": 7.636}, {"w": "vừa.", "start": 7.877}], "hl": [1], "cap": [{"word": "Modestly", "start": 6.913}, {"word": "higher", "start": 7.243}, {"word": "scores", "start": 7.506}, {"word": "overall", "start": 7.77}]}], "hits": [{"id": "papers", "t": 1.815, "sfx": "ding"}, {"id": "bars", "t": 4.922, "sfx": "rise"}]}, {"id": "e07", "start": 8.717, "end": 17.145, "lines": [{"start": 9.017, "end": 10.376, "capEnd": 10.626, "words": [{"w": "Đun", "start": 9.017}, {"w": "lốt", "start": 9.229}, {"w": "ki", "start": 9.442}, {"w": "xếp", "start": 9.612}, {"w": "mười", "start": 9.824}, {"w": "cách.", "start": 10.079}], "hl": [1], "cap": [{"word": "Dunlosky", "start": 9.067}, {"word": "ranked", "start": 9.445}, {"word": "ten", "start": 9.747}, {"word": "methods", "start": 9.936}]}, {"start": 10.626, "end": 12.251, "capEnd": 12.501, "words": [{"w": "Tự", "start": 10.626}, {"w": "kiểm", "start": 10.823}, {"w": "nằm", "start": 11.118}, {"w": "nhóm", "start": 11.365}, {"w": "cao", "start": 11.66}, {"w": "nhất.", "start": 11.906}], "hl": [2], "cap": [{"word": "Self-testing", "start": 10.676}, {"word": "in", "start": 11.283}, {"word": "highest", "start": 11.457}, {"word": "group", "start": 11.847}]}, {"start": 12.501, "end": 14.753, "capEnd": 15.003, "words": [{"w": "Đọc", "start": 12.501}, {"w": "lại,", "start": 12.741}, {"w": "gạch", "start": 13.028}, {"w": "chân", "start": 13.316}, {"w": "nằm", "start": 13.603}, {"w": "nhóm", "start": 13.843}, {"w": "thấp", "start": 14.13}, {"w": "nhất.", "start": 14.418}], "hl": [3], "cap": [{"word": "Rereading,", "start": 12.551}, {"word": "highlighting", "start": 13.112}, {"word": "in", "start": 13.765}, {"word": "lowest", "start": 13.952}, {"word": "group", "start": 14.326}]}, {"start": 15.003, "end": 16.595, "capEnd": 16.845, "words": [{"w": "Vẫn", "start": 15.003}, {"w": "có", "start": 15.252}, {"w": "ích.", "start": 15.451}, {"w": "Tác", "start": 15.749}, {"w": "dụng", "start": 15.998}, {"w": "hẹp.", "start": 16.296}], "hl": [1], "cap": [{"word": "Still", "start": 15.053}, {"word": "helps,", "start": 15.389}, {"word": "but", "start": 15.774}, {"word": "narrowly", "start": 16.014}]}], "hits": [{"id": "cards", "t": 10.583, "sfx": "tick"}, {"id": "high", "t": 12.931, "sfx": "ding"}]}]},S0=8.717;const sec=T.sections.find(s=>s.id==="e07");const w=sec.lines.flatMap(l=>l.words);const at=i=>Math.max(.05,w[Math.min(i,w.length-1)].start-S0);const tl=gsap.timeline({paused:true});
+const row=document.getElementById("row");for(let i=0;i<10;i++){const c=document.createElement("div");c.className="card";c.id="cd"+i;c.style.left=(70+i*96)+"px";c.style.top="620px";row.appendChild(c);}
+tl.fromTo("#e07-root .sched",{opacity:0},{opacity:1,duration:.3},0.05);
+for(let i=0;i<10;i++)tl.fromTo("#cd"+i,{opacity:0,y:-70},{opacity:1,y:0,duration:.3,ease:"back.out(1.7)"},at(2)+i*.12);
+tl.fromTo("#high i",{opacity:0,y:-50},{opacity:1,y:0,duration:.3,stagger:.08,ease:"back.out(1.6)"},at(7));
+tl.fromTo("#low i",{opacity:0,y:-50},{opacity:1,y:0,duration:.3,stagger:.1,ease:"back.out(1.6)"},at(14));
+window.__timelines["e07"]=tl;})();
+</script>
+</template>
+</body></html>

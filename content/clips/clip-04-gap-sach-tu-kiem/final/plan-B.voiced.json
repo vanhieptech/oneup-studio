@@ -1,0 +1,1036 @@
+{
+ "version": 1,
+ "id": "clip-04-final-B",
+ "title": "Gap sach tu kiem (HTB 23.14) - script v14 locked",
+ "meta": {
+  "clip": "clip-04",
+  "week": 1,
+  "source": "final/spec.json"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "b08",
+   "beat": "clip-04.b08",
+   "duration": 7.305,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.05
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.72,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "focused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình chia ba mươi thẻ thành **ba chồng**.",
+     "start": 0.15,
+     "end": 2.333,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/c04v14-b08a.wav",
+      "duration": 1.933,
+      "envelope": [
+       0.0,
+       0.001,
+       0.125,
+       0.624,
+       1,
+       1,
+       0.815,
+       0.448,
+       0.066,
+       0.061,
+       0.483,
+       0.906,
+       1,
+       0.651,
+       0.208,
+       0.68,
+       0.759,
+       0.618,
+       0.578,
+       0.463,
+       0.552,
+       0.726,
+       0.776,
+       0.555,
+       0.028,
+       0.106,
+       0.477,
+       0.54,
+       0.54,
+       0.509,
+       0.453,
+       0.284,
+       0.017,
+       0.172,
+       0.479,
+       0.408,
+       0.448,
+       0.388,
+       0.26,
+       0.656,
+       0.604,
+       0.545,
+       0.155,
+       0.011,
+       0.048,
+       0.561,
+       0.785,
+       0.713,
+       0.579,
+       0.516,
+       0.419,
+       0.372,
+       0.225,
+       0.031,
+       0.007,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Mỗi chồng mười thẻ.",
+     "start": 2.283,
+     "end": 3.701,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/c04v14-b08b.wav",
+      "duration": 1.168,
+      "envelope": [
+       0.0,
+       0.0,
+       0.146,
+       0.487,
+       0.986,
+       1,
+       1,
+       0.535,
+       0.026,
+       0.084,
+       0.889,
+       0.856,
+       0.623,
+       0.492,
+       0.579,
+       0.598,
+       0.616,
+       0.692,
+       0.568,
+       0.222,
+       0.062,
+       0.457,
+       0.455,
+       0.535,
+       0.493,
+       0.454,
+       0.365,
+       0.377,
+       0.386,
+       0.231,
+       0.02,
+       0.003,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Học xong chồng đầu.",
+     "start": 3.651,
+     "end": 5.067,
+     "emotion": "happy",
+     "audio": {
+      "src": "voice/c04v14-b08c.wav",
+      "duration": 1.166,
+      "envelope": [
+       0.0,
+       0.0,
+       0.031,
+       0.515,
+       1,
+       0.55,
+       0.052,
+       0.06,
+       0.142,
+       0.29,
+       0.476,
+       0.72,
+       0.545,
+       0.668,
+       0.557,
+       0.074,
+       0.123,
+       1,
+       0.843,
+       0.589,
+       0.564,
+       0.562,
+       0.366,
+       0.879,
+       0.96,
+       0.913,
+       0.879,
+       0.613,
+       0.43,
+       0.207,
+       0.028,
+       0.005,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Gấp sách, viết lại đúng chồng đó.",
+     "start": 5.017,
+     "end": 7.305,
+     "emotion": "happy",
+     "audio": {
+      "src": "voice/c04v14-b08d.wav",
+      "duration": 2.038,
+      "envelope": [
+       0.0,
+       0.001,
+       0.082,
+       0.921,
+       1,
+       0.5,
+       0.036,
+       0.077,
+       0.275,
+       0.311,
+       0.565,
+       0.767,
+       0.557,
+       0.026,
+       0.009,
+       0.004,
+       0.002,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.001,
+       0.033,
+       0.479,
+       1,
+       0.608,
+       0.042,
+       0.195,
+       0.722,
+       0.941,
+       0.747,
+       0.765,
+       0.629,
+       0.364,
+       0.944,
+       0.79,
+       0.579,
+       0.628,
+       0.217,
+       0.134,
+       1,
+       0.96,
+       0.595,
+       0.517,
+       0.523,
+       0.393,
+       0.891,
+       1,
+       0.887,
+       0.672,
+       0.604,
+       0.545,
+       0.479,
+       0.302,
+       0.075,
+       0.008,
+       0.002,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Thirty cards in three piles Ten cards in each pile Finish first pile, close book Write that pile back",
+    "start": 0.2,
+    "segments": [
+     {
+      "text": "Thirty cards in three piles",
+      "start": 0.2,
+      "end": 2.283,
+      "highlight": [
+       3
+      ]
+     },
+     {
+      "text": "Ten cards in each pile",
+      "start": 2.333,
+      "end": 3.651,
+      "highlight": [
+       0
+      ]
+     },
+     {
+      "text": "Finish first pile, close book",
+      "start": 3.701,
+      "end": 5.017,
+      "highlight": [
+       0
+      ]
+     },
+     {
+      "text": "Write that pile back",
+      "start": 5.067,
+      "end": 7.255,
+      "highlight": [
+       0
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.55
+    },
+    {
+     "name": "pen",
+     "at": 2.65
+    }
+   ],
+   "props": [
+    {
+     "kind": "book",
+     "x": 300,
+     "y": 1020,
+     "s": 0.85,
+     "state": "closed"
+    },
+    {
+     "kind": "sheet",
+     "x": 185,
+     "y": 620,
+     "s": 0.3,
+     "rot": 7,
+     "inkLines": 3,
+     "inkAt": 0
+    },
+    {
+     "kind": "bundles",
+     "x": 255,
+     "y": 990,
+     "s": 0.5,
+     "count": 3
+    }
+   ]
+  },
+  {
+   "id": "b09",
+   "beat": "clip-04.b09",
+   "duration": 6.085,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.05
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.72,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "happy",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sáng hôm sau, quay lại giấy đó.",
+     "start": 0.15,
+     "end": 2.178,
+     "emotion": "happy",
+     "audio": {
+      "src": "voice/c04v14-b09a.wav",
+      "duration": 1.778,
+      "envelope": [
+       0.0,
+       0.001,
+       0.032,
+       0.13,
+       0.252,
+       0.673,
+       1,
+       0.758,
+       0.447,
+       0.476,
+       0.603,
+       0.798,
+       0.864,
+       0.691,
+       0.601,
+       0.308,
+       0.329,
+       0.473,
+       0.755,
+       0.877,
+       0.886,
+       0.69,
+       0.421,
+       0.136,
+       0.011,
+       0.005,
+       0.019,
+       0.497,
+       1,
+       1,
+       0.849,
+       0.742,
+       0.751,
+       0.616,
+       0.503,
+       0.271,
+       0.701,
+       0.924,
+       0.78,
+       0.767,
+       0.485,
+       0.974,
+       0.897,
+       0.837,
+       0.59,
+       0.517,
+       0.582,
+       0.329,
+       0.03,
+       0.009,
+       0.004,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Sách vẫn gấp. **Viết trước**.",
+     "start": 2.128,
+     "end": 4.085,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/c04v14-b09b.wav",
+      "duration": 1.707,
+      "envelope": [
+       0.0,
+       0.0,
+       0.018,
+       0.107,
+       0.199,
+       0.591,
+       0.509,
+       0.031,
+       0.009,
+       0.006,
+       0.135,
+       0.517,
+       0.777,
+       0.416,
+       0.441,
+       0.454,
+       0.358,
+       0.401,
+       0.772,
+       0.659,
+       0.072,
+       0.012,
+       0.006,
+       0.004,
+       0.002,
+       0.001,
+       0.001,
+       0.002,
+       0.119,
+       0.176,
+       0.335,
+       1,
+       1,
+       0.35,
+       0.029,
+       0.009,
+       0.004,
+       0.004,
+       0.005,
+       0.147,
+       0.6,
+       0.724,
+       0.868,
+       1,
+       0.816,
+       0.375,
+       0.026,
+       0.01,
+       0.002,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Lần này viết thêm được **luggage**.",
+     "start": 4.035,
+     "end": 6.085,
+     "emotion": "happy",
+     "audio": {
+      "src": "voice/c04v14-b09c.wav",
+      "duration": 1.8,
+      "envelope": [
+       0.0,
+       0.001,
+       0.179,
+       0.736,
+       1,
+       1,
+       0.944,
+       0.821,
+       0.8,
+       0.734,
+       0.922,
+       0.962,
+       0.93,
+       0.859,
+       0.763,
+       0.674,
+       0.364,
+       0.119,
+       0.787,
+       0.894,
+       0.418,
+       0.026,
+       0.01,
+       0.07,
+       0.478,
+       0.779,
+       0.828,
+       0.784,
+       0.587,
+       0.859,
+       0.967,
+       0.577,
+       0.046,
+       0.171,
+       0.252,
+       0.472,
+       0.682,
+       0.562,
+       0.121,
+       0.014,
+       0.006,
+       0.005,
+       0.134,
+       0.338,
+       0.857,
+       1,
+       0.826,
+       0.642,
+       0.169,
+       0.031,
+       0.009,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Next morning, same paper again Book still closed, wrote first Added luggage this time",
+    "start": 0.2,
+    "segments": [
+     {
+      "text": "Next morning, same paper again",
+      "start": 0.2,
+      "end": 2.128,
+      "highlight": [
+       0
+      ]
+     },
+     {
+      "text": "Book still closed, wrote first",
+      "start": 2.178,
+      "end": 4.035,
+      "highlight": [
+       2
+      ]
+     },
+     {
+      "text": "Added luggage this time",
+      "start": 4.085,
+      "end": 6.035,
+      "highlight": [
+       1
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 0.35
+    },
+    {
+     "name": "pop",
+     "at": 3.15
+    }
+   ],
+   "props": [
+    {
+     "kind": "book",
+     "x": 300,
+     "y": 1020,
+     "s": 0.85,
+     "state": "closed"
+    },
+    {
+     "kind": "sheet",
+     "x": 185,
+     "y": 620,
+     "s": 0.3,
+     "rot": 7,
+     "inkLines": 3,
+     "inkAt": 0
+    },
+    {
+     "kind": "sheet",
+     "x": 470,
+     "y": 1250,
+     "s": 0.48,
+     "inkLines": 5,
+     "inkAt": -1.4,
+     "inkStagger": 0.9
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "beat": "clip-04.b10",
+   "duration": 7.772,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.05
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.72,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "happy",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "**Luggage** bí sáng hôm trước.",
+     "start": 0.15,
+     "end": 2.036,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/c04v14-b10a.wav",
+      "duration": 1.636,
+      "envelope": [
+       0.0,
+       0.003,
+       0.157,
+       0.821,
+       0.687,
+       0.6,
+       0.286,
+       0.069,
+       0.01,
+       0.006,
+       0.005,
+       0.203,
+       0.572,
+       0.589,
+       0.488,
+       0.224,
+       0.031,
+       0.016,
+       0.072,
+       0.297,
+       1,
+       0.996,
+       0.528,
+       0.265,
+       0.287,
+       0.211,
+       0.484,
+       0.492,
+       0.506,
+       0.418,
+       0.383,
+       0.455,
+       0.548,
+       0.64,
+       0.545,
+       0.455,
+       0.395,
+       0.063,
+       0.062,
+       0.589,
+       1,
+       1,
+       0.984,
+       0.414,
+       0.021,
+       0.007,
+       0.001,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Sáng hôm sau tự viết được, không cần sách.",
+     "start": 1.986,
+     "end": 4.477,
+     "emotion": "happy",
+     "audio": {
+      "src": "voice/c04v14-b10b.wav",
+      "duration": 2.241,
+      "envelope": [
+       0.0,
+       0.001,
+       0.029,
+       0.111,
+       0.23,
+       0.438,
+       0.962,
+       0.734,
+       0.537,
+       0.582,
+       0.592,
+       0.723,
+       0.955,
+       0.944,
+       0.551,
+       0.283,
+       0.253,
+       0.47,
+       0.671,
+       0.503,
+       0.021,
+       0.102,
+       0.873,
+       0.789,
+       0.713,
+       0.367,
+       0.229,
+       1,
+       0.655,
+       0.057,
+       0.011,
+       0.077,
+       0.952,
+       0.992,
+       1,
+       1,
+       0.356,
+       0.024,
+       0.009,
+       0.005,
+       0.004,
+       0.002,
+       0.001,
+       0.002,
+       0.016,
+       0.082,
+       0.657,
+       1,
+       0.712,
+       0.521,
+       0.122,
+       0.226,
+       0.758,
+       0.729,
+       0.445,
+       0.412,
+       0.271,
+       0.161,
+       0.22,
+       0.336,
+       0.624,
+       0.515,
+       0.047,
+       0.008,
+       0.004,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Bạn viết lại được mấy từ?",
+     "start": 4.427,
+     "end": 6.231,
+     "emotion": "focused",
+     "audio": {
+      "src": "voice/c04v14-b10c.wav",
+      "duration": 1.554,
+      "envelope": [
+       0.0,
+       0.001,
+       0.068,
+       0.435,
+       0.714,
+       0.592,
+       0.477,
+       0.426,
+       0.235,
+       0.22,
+       0.75,
+       0.63,
+       0.125,
+       0.015,
+       0.059,
+       0.413,
+       0.473,
+       0.543,
+       0.518,
+       0.459,
+       0.531,
+       0.307,
+       0.41,
+       0.563,
+       0.235,
+       0.021,
+       0.133,
+       0.419,
+       0.547,
+       0.532,
+       0.467,
+       0.022,
+       0.009,
+       0.459,
+       1,
+       1,
+       1,
+       0.841,
+       0.686,
+       0.428,
+       0.164,
+       0.031,
+       0.012,
+       0.003,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "Comment con số đó nha.",
+     "start": 6.181,
+     "end": 7.772,
+     "emotion": "happy",
+     "audio": {
+      "src": "voice/c04v14-b10d.wav",
+      "duration": 1.341,
+      "envelope": [
+       0.0,
+       0.0,
+       0.144,
+       1,
+       1,
+       0.785,
+       0.808,
+       0.93,
+       0.965,
+       0.8,
+       0.579,
+       0.175,
+       0.378,
+       0.884,
+       0.677,
+       0.586,
+       0.279,
+       0.274,
+       0.679,
+       0.819,
+       0.73,
+       0.579,
+       0.931,
+       1,
+       0.842,
+       0.682,
+       0.519,
+       0.606,
+       0.598,
+       0.665,
+       0.773,
+       0.903,
+       0.906,
+       0.853,
+       0.693,
+       0.342,
+       0.025,
+       0.015,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Luggage stuck previous morning Next morning wrote it myself How many words for you? Comment that number below",
+    "start": 0.2,
+    "segments": [
+     {
+      "text": "Luggage stuck previous morning",
+      "start": 0.2,
+      "end": 1.986,
+      "highlight": [
+       1
+      ]
+     },
+     {
+      "text": "Next morning wrote it myself",
+      "start": 2.036,
+      "end": 4.427,
+      "highlight": [
+       4
+      ]
+     },
+     {
+      "text": "How many words for you?",
+      "start": 4.477,
+      "end": 6.181,
+      "highlight": [
+       1
+      ]
+     },
+     {
+      "text": "Comment that number below",
+      "start": 6.231,
+      "end": 7.722,
+      "highlight": [
+       0
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.35
+    },
+    {
+     "name": "tick",
+     "at": 3.65
+    }
+   ],
+   "props": [
+    {
+     "kind": "book",
+     "x": 300,
+     "y": 1020,
+     "s": 0.85,
+     "state": "closed"
+    },
+    {
+     "kind": "sheet",
+     "x": 185,
+     "y": 620,
+     "s": 0.3,
+     "rot": 7,
+     "inkLines": 3,
+     "inkAt": 0
+    },
+    {
+     "kind": "sheet",
+     "x": 470,
+     "y": 1250,
+     "s": 0.48,
+     "inkLines": 5,
+     "inkAt": 0
+    }
+   ]
+  }
+ ]
+}
