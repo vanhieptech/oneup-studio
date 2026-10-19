@@ -16,10 +16,10 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 
 ## Đã sửa gì ở bản này (so với v05)
 
-- **Đếm từ:** v05 **225 từ / ~63s thoại** → v06 **197 từ / ~56s thoại + 2s end card (~58s)**. Đếm bằng script trên đúng phần lời thoại (bỏ markup `{nhấn:}`, dấu `|`, dấu câu). Giảm 28 từ (−12%).
+- **Đếm từ:** v05 **225 từ / ~63s thoại** → v06 **205 từ / ~59s thoại + 2s end card (~61s)** (bản v06 đầu 197 từ; patch b01 L-055 +8 từ). Đếm bằng script trên đúng phần lời thoại (bỏ markup `{nhấn:}`, dấu `|`, dấu câu). Giảm 20 từ so với v05 (−9%).
 - **Mỗi câu đủ ý:** mọi câu đều có chủ thể/việc + kết quả hoặc việc cần làm tiếp theo (bảng kiểm ở dưới). Không câu cụt để người nghe tự đoán, trừ câu hỏi CTA cố ý ở b10 («Nhớ được mấy ý?»).
 - **Truyền cảm hứng bằng thắng nhỏ, nói thật:** buồn vì chỉ nhớ 4 từ (b02) → hiểu mắt quen chưa phải đầu nhớ (b03) → tối nay gấp sách, viết 3 ý (b06) → sáng mai thêm 1 ý hơn hôm qua là tiến bộ (b10). Không hứa nhớ hết, không thổi phồng mức «vừa» của Yang.
-- **Câu ngắn, văn nói, mềm:** 2–3 phrase/beat, mỗi phrase ≥3 chữ, nhấn 1–2/beat. Không cụm chê năng lực người học (L-053); «Không phải tại bạn đâu» giữ ở b01.
+- **Câu ngắn, văn nói, mềm:** 2–3 phrase/beat, mỗi phrase ≥3 chữ, nhấn 1–2/beat. Không cụm chê năng lực người học (L-053); b01 nói rõ không-phải-gì + là-gì: «Không phải bạn nhớ kém. Bạn chỉ nhìn chữ, chưa tự nhớ lại» (L-055).
 - **Chưa làm:** voice, render, spec mới. Hiệp chốt bản này mới làm spec từ lời này.
 
 **Người nói:** chỉ **Thầy** (L-039). Chibi Hiệp chỉ diễn. **Khung:** dọc 9:16, 1080×1920. **Theme:** giữ như bản render v3.1 (rule-17 theme-map đang báo khác — lỗi đã biết của spec cũ, giữ nguyên để Hiệp quyết).
@@ -33,7 +33,7 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 
 | Bỏ (v05) | Thay (v06) | Beat |
 |---|---|---|
-| «sai cách» | «Không phải tại bạn đâu» + nguyên nhân nói ở b03: nhìn 3 lần, mắt quen mà đầu chưa nhớ vì chưa viết lại | b01, b03 |
+| «sai cách» / «Không phải tại bạn đâu» (chung chung, L-055) | «Không phải bạn nhớ kém. Bạn chỉ nhìn chữ, chưa tự nhớ lại» ở b01 — không-phải trí nhớ kém, là chỉ nhìn mà chưa tự nhớ lại; b03 kể chi tiết: nhìn 3 lần, mắt quen mà đầu chưa nhớ | b01, b03 |
 | «hiệu quả hơn mình tưởng / ít hiệu quả hơn mình tưởng» | «vẫn có ích, nhưng nhớ ít ý hơn tự kiểm» — so thẳng hai cách bằng số ý nhớ được | b06 |
 | «lộ ngay chỗ hổng / lộ chỗ hổng» | «Giấy trắng chỗ nào là chưa thuộc chỗ đó» — nhìn chỗ trắng trên giấy là biết | b07 |
 | «cho nhẹ đầu» | bỏ hẳn lời hứa cảm giác; chỉ nói việc: «Học xong một phần, viết ngay phần đó» | b09 |
@@ -46,7 +46,8 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 | Beat | Câu | Đủ ý vì |
 |---|---|---|
 | b01 | Học tới khuya, sáng ra quên sạch. | việc (học tới khuya) + kết quả (sáng quên sạch) |
-| b01 | Không phải tại bạn đâu. | gỡ trách người học, mở đường sang nguyên nhân ở b03 |
+| b01 | Không phải bạn nhớ kém. | nói rõ cái KHÔNG phải: không phải trí nhớ của người học (L-055) |
+| b01 | Bạn chỉ nhìn chữ, chưa tự nhớ lại. | nói rõ cái LÀ: việc đã làm (chỉ nhìn chữ) + việc chưa làm (tự nhớ lại) |
 | b02 | Mình học ba mươi từ tiếng Anh. | người + việc + số lượng cụ thể (30 từ) |
 | b02 | Sáng dậy mình chỉ nhớ được bốn từ. | thời điểm + kết quả đếm được (4 từ) |
 | b02 | Mình buồn lắm. | người + cảm xúc — chỗ buồn của mạch cảm xúc |
@@ -77,7 +78,7 @@ Một cuốn sách và một tờ giấy trắng trên cùng một bàn: đầu 
 
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
-| b01 | 0–6 | Thầy | Học tới khuya, sáng ra {nhấn: quên sạch}. \| Không phải tại bạn đâu. | Sách mở dày, Hiệp gật gù tới khuya → cut cứng ở «quên sạch»: sách gấp, giấy trắng, Hiệp khựng rồi dịu xuống nhìn camera · EN: (1) Study late, forget by morning (2) It is not your fault |
+| b01 | 0–6 | Thầy | Học tới khuya, sáng ra {nhấn: quên sạch}. \| Không phải bạn nhớ kém. \| Bạn chỉ nhìn chữ, chưa tự nhớ lại. | Sách mở dày, Hiệp gật gù tới khuya → cut cứng ở «quên sạch»: sách gấp, giấy trắng, Hiệp khựng rồi dịu xuống nhìn camera · EN: (1) Study late, forget by morning (2) It is not poor memory (3) You only looked, never recalled |
 | b02 | 6–12 | Thầy | Mình học ba mươi từ tiếng Anh. \| Sáng dậy mình chỉ nhớ được {nhấn: bốn từ}. \| Mình buồn lắm. | 30 thẻ nhỏ (không chữ) chồng cao lúc học; sáng ra Hiệp cầm đúng 4 thẻ, phần còn lại xẹp xuống, Hiệp cúi nhìn lặng · EN: (1) I learned thirty English words (2) Next morning, only four remained (3) I felt really sad |
 | b03 | 12–18 | Thầy | Nhìn ba lần, mắt quen chữ mà đầu chưa nhớ. \| Vì mình chưa tự viết lại lần nào. | Cùng một trang trôi qua trước mắt 3 lần, Hiệp gật theo; bút dừng trên giấy vẫn trắng · EN: (1) Eyes knew words after looking (2) My head remembered nothing yet (3) I never wrote from memory |
 | b04 | 18–24 | Thầy | Yang gộp {nhấn: 222 nghiên cứu}, hơn {nhấn: 48 ngàn} học sinh. \| Lớp kiểm nhỏ lúc học, điểm cao hơn mức vừa. | Thẻ nghiên cứu trắng xếp chồng cao; một tờ kiểm nhỏ đặt lên bàn, chồng điểm nhô lên vừa rồi dừng · EN: (1) Yang pooled 222 studies (2) Over 48,000 students total (3) Small quizzes raised scores modestly |
@@ -103,7 +104,7 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 - «thấp nhất» (b05 xếp hạng → đầu b06): b06 bắt chữ cuối b05 để đính chính thấp nhất ≠ vô dụng, là cầu nối duy nhất được lặp chữ.
 - «sáng mai» (b10): mốc mới của người xem để đóng vòng CTA, đi cùng việc viết lại và đếm +1 ý.
 
-**Đã cắt so với v05:** «gấp sách lại» chỉ ở b06 (b08 dùng ở hình, lời nói «nói chương này»); ví dụ 30→4 từ chỉ ở b02; «không phải tại bạn» chỉ ở b01; câu chốt cảm giác mơ hồ ở cuối beat («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được ở bảng trên.
+**Đã cắt so với v05:** «gấp sách lại» chỉ ở b06 (b08 dùng ở hình, lời nói «nói chương này»); ví dụ 30→4 từ chỉ ở b02; «Không phải bạn nhớ kém» chỉ ở b01 (nguyên nhân «chỉ nhìn chữ, chưa tự nhớ lại» nói gọn ở b01 để kết luận, b03 kể chi tiết nhìn 3 lần làm bằng chứng — hai vai trò khác nhau); câu chốt cảm giác mơ hồ ở cuối beat («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được ở bảng trên.
 
 ## Bảng hiệu ứng (rule-52 — nháp theo lời v06; bản chốt sinh bằng fx-table.py khi làm spec sau gate 1)
 
@@ -146,13 +147,14 @@ Học tới khuya, sáng ra quên sạch? Không phải tại bạn đâu. Mình
 ## Trạng thái kiểm tra (19/10, script-v06 draft)
 
 - Chờ Hiệp duyệt ở gate 1. **Chưa voice, chưa render, chưa làm spec mới** — `final/spec.json`, `plan-A.voiced.json`, `timing.json`, `contact-sheet.png` hiện tại đều là của v3.1 đã render, sẽ stale nếu bản này được chốt.
-- Đếm lời thoại bằng script: **197 từ** (v05: 225 từ; v04: 345 từ) → v05→v06 giảm 28 từ. Ước lượng ~56s thoại ở nhịp ~3,5 từ/giây + 2s end card ≈ 58s.
+- Đếm lời thoại bằng script: **205 từ** (v05: 225 từ; v04: 345 từ; v06 đầu: 197 từ, patch b01 +8 từ) → v05→v06 giảm 20 từ. Ước lượng ~59s thoại ở nhịp ~3,5 từ/giây + 2s end card ≈ 61s. Riêng b01: 20 từ ≈ 5,7s, vừa khung 0–6s.
 - Kiểm tay theo L-044/L-051/L-053/L-054: mỗi beat 2–3 phrase, mỗi phrase ≥3 chữ; nhấn 1–2/beat; «nè/nha» 0 lần; quét toàn bản không có cụm chê người học. Bảng đủ ý và bảng thay từ chung chung ở trên.
-- Kiểm caption EN: 35 chunk (33 chunk thoại b01–b10 + 2 chunk end card), chunk dài nhất 5 từ — tất cả ≤8 từ.
-- `check-rules.py` (19/10, làm mới `final/check-rules.txt`): 120 checks, **2 lỗi — cả hai thuộc spec v3.1 cũ đã render, không thuộc lời v06**: `rule-17 theme dark vs theme-map LIGHT` và `rule-55 on-screen hook text on frame 0` (đã báo Hiệp ở vòng render v3.1, giữ nguyên có lý do: tông tối theo chủ đề + không vẽ chữ hook theo L-050). Cảnh báo rule-4/rule-7/rule-9 cũng đo trên spec/voice cũ 83,7s/299 từ — spec mới theo v06 (~58s/197 từ) sẽ hết khi làm spec sau gate 1.
+- Kiểm caption EN: 36 chunk (34 chunk thoại b01–b10 + 2 chunk end card; b01 tăng 2→3 chunk sau patch), chunk dài nhất 5 từ — tất cả ≤8 từ.
+- `check-rules.py` (19/10, làm mới `final/check-rules.txt`): 120 checks, **2 lỗi — cả hai thuộc spec v3.1 cũ đã render, không thuộc lời v06**: `rule-17 theme dark vs theme-map LIGHT` và `rule-55 on-screen hook text on frame 0` (đã báo Hiệp ở vòng render v3.1, giữ nguyên có lý do: tông tối theo chủ đề + không vẽ chữ hook theo L-050). Cảnh báo rule-4/rule-7/rule-9 cũng đo trên spec/voice cũ 83,7s/299 từ — spec mới theo v06 (~61s/205 từ) sẽ hết khi làm spec sau gate 1.
 
 ## Lịch sử bản
 
+- script-v06 patch b01 (19/10, L-055): Hiệp chê «Không phải tại bạn đâu» chung chung, không rõ nghĩa → «Không phải bạn nhớ kém. | Bạn chỉ nhìn chữ, chưa tự nhớ lại.» (13 từ thay thế, b01 20 từ ≈5,7s); chỉ sửa b01 + EN chunk b01 + đếm từ/ghi chú liên quan, còn lại giữ nguyên.
 - script-v06 (bản này, DRAFT): Hiệp chê v05 «Câu nói chưa đủ truyền cảm hứng/động lực, hơi dài dòng, có câu thiếu ý, dùng quá nhiều từ chung chung» → cắt 225→197 từ (~65s→~58s), mỗi câu đủ ý, thay từ chung chung bằng hành động/dấu hiệu cụ thể, thắng nhỏ +1 ý sáng mai.
 - script-v05 (lưu `archive/script-v05.md`): Hiệp chê v04 «Dài dòng, lặp từ quá nhiều» → cắt 345→225 từ, mỗi ý một lần, thêm audit lặp (L-054).
 - script-v04 (lưu `archive/script-v04-call.md`): viết lại theo voice-call 18/10 — hook B1 với câu đỡ «Không phải tại bạn đâu», bỏ cụm chê người học (L-053), end card có dòng tham khảo + credit.
