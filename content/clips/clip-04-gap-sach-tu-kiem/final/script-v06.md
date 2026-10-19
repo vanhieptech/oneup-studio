@@ -16,10 +16,10 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 
 ## Đã sửa gì ở bản này (so với v05)
 
-- **Đếm từ:** v05 **225 từ / ~63s thoại** → v06 **212 từ / ~61s thoại + 2s end card (~62–63s)** (bản v06 đầu 197 từ; patch L-055 +8 từ; patch L-056 ròng 0; patch hook L-057: b01 23→30 từ, b03 giữ 15 từ nhưng đổi ý, ròng +7). Đếm bằng script trên đúng phần lời thoại (bỏ markup `{nhấn:}`, dấu `|`, dấu câu). Giảm 13 từ so với v05 (−6%).
+- **Đếm từ:** v05 **225 từ / ~63s thoại** → v06 **208 từ / ~59s thoại + 2s end card (~61s)** (bản v06 đầu 197 từ; patch L-055 +8 từ; patch L-056 ròng 0; patch hook kể chuyện L-057 +7; patch hook pain-point tối 19/10 sửa L-057: b01 30→26 từ, ròng −4). Đếm bằng script trên đúng phần lời thoại (bỏ markup `{nhấn:}`, dấu `|`, dấu câu). Giảm 17 từ so với v05 (−8%).
 - **Mỗi câu đủ ý:** mọi câu đều có chủ thể/việc + kết quả hoặc việc cần làm tiếp theo (bảng kiểm ở dưới). Không câu cụt để người nghe tự đoán, trừ câu hỏi CTA cố ý ở b10 («Nhớ được mấy ý?»).
-- **Truyền cảm hứng bằng thắng nhỏ, nói thật:** tưởng thuộc tối qua, sáng không nói ra được ý nào (b01) → buồn vì chỉ nhớ 4 từ (b02) → đêm đó chỉ đọc lại, chưa viết thử (b03) → tối nay gấp sách, viết 3 ý (b06) → sáng mai thêm 1 ý hơn hôm qua là tiến bộ (b10). Không hứa nhớ hết, không thổi phồng mức «vừa» của Yang.
-- **Câu ngắn, văn nói, mềm:** 2–3 phrase/beat, mỗi phrase ≥3 chữ, nhấn 1–2/beat. Không cụm chê năng lực người học (L-053); b01 là cảnh kể chuyện có điểm nhấn tương phản «tưởng thuộc hết rồi ↔ không nói ra được ý nào», không tóm tắt trừu tượng, không an ủi chung chung (L-057, thay hook L-056).
+- **Truyền cảm hứng bằng thắng nhỏ, nói thật:** bạn học tới khuya tưởng thuộc, sáng ra quên sạch, tự hỏi nói ra được mấy ý (b01) → buồn vì chỉ nhớ 4 từ (b02) → đêm đó chỉ đọc lại, chưa viết thử (b03) → tối nay gấp sách, viết 3 ý (b06) → sáng mai thêm 1 ý hơn hôm qua là tiến bộ (b10). Không hứa nhớ hết, không thổi phồng mức «vừa» của Yang.
+- **Câu ngắn, văn nói, mềm:** 2–3 phrase/beat, mỗi phrase ≥3 chữ, nhấn 1–2/beat. Không cụm chê năng lực người học (L-053); b01 nói thẳng pain point với «bạn» ở hiện tại rồi đặt đúng một câu hỏi để người xem tự trả lời trong đầu, không kể lể ngôi «mình», không dựng cảnh chuyện, không an ủi chung chung (L-057 đã sửa tối 19/10, thay hook kể chuyện).
 - **Chưa làm:** voice, render, spec mới. Hiệp chốt bản này mới làm spec từ lời này.
 
 **Người nói:** chỉ **Thầy** (L-039). Chibi Hiệp chỉ diễn. **Khung:** dọc 9:16, 1080×1920. **Theme:** giữ như bản render v3.1 (rule-17 theme-map đang báo khác — lỗi đã biết của spec cũ, giữ nguyên để Hiệp quyết).
@@ -27,13 +27,13 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 **Thông điệp HTB 23.14 (b06):** học xong gấp sách tự kiểm một lần, đừng quay đầu đọc lại.
 **Nguồn:** Yang và cộng sự (2021) gộp 222 nghiên cứu, 48.478 học sinh: kiểm tra nhỏ trong lúc học giúp điểm cao hơn, mức vừa (g = 0,499, mức A). Dunlosky và cộng sự (2013) xếp 10 cách học: tự kiểm tra ở nhóm cao nhất; đọc lại và gạch chân ở nhóm thấp nhất (23.16: nhóm thấp không có nghĩa là vô dụng, chỉ là tác dụng hẹp — b06 nói «vẫn có ích, nhưng nhớ ít ý hơn tự kiểm»).
 **Ký hiệu:** `|` tách phrase · `{nhấn: …}` chữ nhấn · EN chunks đánh số (1)(2)… theo thứ tự hiển thị, mỗi chunk ≤ 8 từ.
-**Mạch nói:** hook kể chuyện tối trước ngày thi tưởng thuộc, sáng hỏi lại không nói ra được ý nào → b02 Thầy học 30 từ còn 4, buồn lắm → b03 đêm đó chỉ đọc đi đọc lại, chưa viết thử ra giấy → b04 Yang → b05 gỡ sợ «kiểm tra» + Dunlosky → b06 thấp nhất vẫn có ích + tối nay gấp sách viết 3 ý → b07 giấy trắng = chưa thuộc, mở sách đọc đúng chỗ đó → b08 ôn thi nói lại thay vì đọc 3 lần → b09 bài dài chia nhỏ (callback clip-03) → b10 sáng mai viết lại trước, thêm 1 ý là tiến bộ + CTA → end card.
+**Mạch nói:** hook pain point: bạn học tới khuya, đọc đi đọc lại tưởng thuộc, sáng ra quên sạch → hỏi nói ra được mấy ý → b02 Thầy học 30 từ còn 4, buồn lắm → b03 đêm đó chỉ đọc đi đọc lại, chưa viết thử ra giấy → b04 Yang → b05 gỡ sợ «kiểm tra» + Dunlosky → b06 thấp nhất vẫn có ích + tối nay gấp sách viết 3 ý → b07 giấy trắng = chưa thuộc, mở sách đọc đúng chỗ đó → b08 ôn thi nói lại thay vì đọc 3 lần → b09 bài dài chia nhỏ (callback clip-03) → b10 sáng mai viết lại trước, thêm 1 ý là tiến bộ + CTA → end card.
 
 ## Từ chung chung đã bỏ → thay bằng cụ thể
 
 | Bỏ (v05) | Thay (v06) | Beat |
 |---|---|---|
-| «sai cách» / «Không phải tại bạn đâu» / «Không phải bạn nhớ kém» / hook tóm tắt «học khuya, sáng quên sạch» (chung chung, mông lung, L-055/L-056/L-057) | b01 kể một cảnh: «Tối trước ngày thi, mười giờ mình gấp sách, tưởng thuộc hết rồi. Sáng vào lớp, bạn hỏi lại bài cũ. Mình khựng luôn: không nói ra được ý nào»; b03 tiến lên nguyên nhân: chỉ đọc đi đọc lại, chưa viết thử ra giấy | b01, b03 |
+| «sai cách» / «Không phải tại bạn đâu» / «Không phải bạn nhớ kém» / hook tóm tắt «học khuya, sáng quên sạch» (chung chung, mông lung, L-055/L-056/L-057) | b01 nói thẳng với «bạn»: «Bạn học tới khuya, đọc đi đọc lại tưởng thuộc hết rồi, sáng ra quên sạch. Nếu giờ hỏi lại, bạn nói ra được mấy ý?»; b03 tiến lên nguyên nhân: chỉ đọc đi đọc lại, chưa viết thử ra giấy | b01, b03 |
 | «hiệu quả hơn mình tưởng / ít hiệu quả hơn mình tưởng» | «vẫn có ích, nhưng nhớ ít ý hơn tự kiểm» — so thẳng hai cách bằng số ý nhớ được | b06 |
 | «lộ ngay chỗ hổng / lộ chỗ hổng» | «Giấy trắng chỗ nào là chưa thuộc chỗ đó» — nhìn chỗ trắng trên giấy là biết | b07 |
 | «cho nhẹ đầu» | bỏ hẳn lời hứa cảm giác; chỉ nói việc: «Học xong một phần, viết ngay phần đó» | b09 |
@@ -45,9 +45,8 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 
 | Beat | Câu | Đủ ý vì |
 |---|---|---|
-| b01 | Tối trước ngày thi, mười giờ mình gấp sách, tưởng thuộc hết rồi. | cảnh tối cụ thể: thời gian (tối trước ngày thi, mười giờ) + hành động (gấp sách) + tưởng đã thuộc — vế «tưởng» của điểm nhấn |
-| b01 | Sáng vào lớp, bạn hỏi lại bài cũ. | cảnh sáng cụ thể: nơi (vào lớp) + người hỏi (bạn) + việc bị hỏi lại bài cũ |
-| b01 | Mình khựng luôn: không nói ra được ý nào. | phản ứng nhìn thấy (khựng) + vế ngược của điểm nhấn: không nói ra được ý nào — vấn đề nói rõ trong 3 giây đầu của cảnh sáng |
+| b01 | Bạn học tới khuya, đọc đi đọc lại tưởng thuộc hết rồi, sáng ra quên sạch. | gọi thẳng «bạn» + việc phổ thông (học khuya, đọc đi đọc lại) + tưởng thuộc → hệ quả sáng quên sạch — pain point nghe ra trong 3 giây đầu |
+| b01 | Nếu giờ hỏi lại, bạn nói ra được mấy ý? | đúng một câu hỏi để người xem tự đếm ý trong đầu; «mấy ý» là từ khoá của câu hỏi |
 | b02 | Mình học ba mươi từ tiếng Anh. | người + việc + số lượng cụ thể (30 từ) |
 | b02 | Sáng dậy mình chỉ nhớ được bốn từ. | thời điểm + kết quả đếm được (4 từ) |
 | b02 | Mình buồn lắm. | người + cảm xúc — chỗ buồn của mạch cảm xúc |
@@ -78,7 +77,7 @@ Một cuốn sách và một tờ giấy trắng trên cùng một bàn: đầu 
 
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
-| b01 | 0–8 | Thầy | Tối trước ngày thi, mười giờ mình gấp sách, tưởng thuộc hết rồi. \| Sáng vào lớp, bạn hỏi lại bài cũ. \| Mình khựng luôn: {nhấn: không nói ra được ý nào}. | Tối: bàn học trước ngày thi, Hiệp gấp sách tự tin → cut cứng sáng vào lớp: bạn hỏi lại, Hiệp khựng, giấy trắng · EN: (1) Night before the exam, ten o'clock (2) Closed book, thought I knew everything (3) Morning class, friend asked it again (4) I froze, said not one idea |
+| b01 | 0–8 | Thầy | Bạn học tới khuya, đọc đi đọc lại tưởng thuộc hết rồi, sáng ra {nhấn: quên sạch}. | Nếu giờ hỏi lại, bạn nói ra được {nhấn: mấy ý}? | Hiệp nói thẳng vào camera: sách mở, trang đọc lại lúc khuya → cut sáng: sách gấp, giấy trắng; Hiệp hỏi thẳng người xem · EN: (1) Up late rereading, sure you know it (2) Morning comes, all forgotten (3) Asked now, how many ideas return |
 | b02 | 8–13 | Thầy | Mình học ba mươi từ tiếng Anh. \| Sáng dậy mình chỉ nhớ được {nhấn: bốn từ}. \| Mình buồn lắm. | 30 thẻ nhỏ (không chữ) chồng cao lúc học; sáng ra Hiệp cầm đúng 4 thẻ, phần còn lại xẹp xuống, Hiệp cúi nhìn lặng · EN: (1) I learned thirty English words (2) Next morning, only four remained (3) I felt really sad |
 | b03 | 13–18 | Thầy | Mình chỉ đọc đi đọc lại thôi. \| Mình chưa viết thử ra giấy lần nào. | Cùng một trang lật đi lật lại; bút nằm yên cạnh giấy trắng chưa viết dòng nào · EN: (1) I only reread again and again (2) Never tried writing on paper once |
 | b04 | 18–24 | Thầy | Yang gộp {nhấn: 222 nghiên cứu}, hơn {nhấn: 48 ngàn} học sinh. \| Lớp kiểm nhỏ lúc học, điểm cao hơn mức vừa. | Thẻ nghiên cứu trắng xếp chồng cao; một tờ kiểm nhỏ đặt lên bàn, chồng điểm nhô lên vừa rồi dừng · EN: (1) Yang pooled 222 studies (2) Over 48,000 students total (3) Small quizzes raised scores modestly |
@@ -95,7 +94,7 @@ Một cuốn sách và một tờ giấy trắng trên cùng một bàn: đầu 
 
 | Beat | Khẳng định trong lời | Cơ sở trong nguồn (không nói quá nguồn) |
 |---|---|---|
-| b01 | «Tối trước ngày thi… tưởng thuộc hết rồi → Sáng vào lớp, bạn hỏi lại… không nói ra được ý nào» | Đây là **cảnh minh hoạ phổ thông** (ôn bài tối hôm trước ngày thi, sáng bị hỏi lại), không phải dữ kiện nghiên cứu và không gắn số liệu vào Yang/Dunlosky. Điểm nhấn là tương phản tưởng thuộc ↔ không nói ra được ý nào. Nền được nguồn đỡ ở mức vừa đủ: HTB 23.14 «Đọc lại chỉ tạo cảm giác quen mắt chứ không nhớ chắc»; tự kiểm là gấp sách tự viết/nói ý chính rồi đối chiếu. Hook không bịa cơ chế não ngoài hai ý này. |
+| b01 | «Bạn học tới khuya, đọc đi đọc lại tưởng thuộc hết rồi, sáng ra quên sạch. Nếu giờ hỏi lại, bạn nói ra được mấy ý?» | Đây là **pain point phổ thông nói thẳng với người xem** (không kể chuyện ngôi «mình», không dựng cảnh), không phải dữ kiện nghiên cứu và không gắn số liệu vào Yang/Dunlosky. Chuỗi đủ ý: việc đã làm (học khuya, đọc đi đọc lại) → tưởng thuộc → hệ quả sáng quên sạch → một câu hỏi tự kiểm ngay trong đầu. Nền được nguồn đỡ ở mức vừa đủ: HTB 23.14 «Đọc lại chỉ tạo cảm giác quen mắt chứ không nhớ chắc»; tự kiểm là gấp sách tự viết/nói ý chính rồi đối chiếu. Hook không bịa cơ chế não ngoài hai ý này. |
 | b03 | «Mình chỉ đọc đi đọc lại thôi. Mình chưa viết thử ra giấy lần nào» | Bước tiến sau hook + b02, là minh hoạ cá nhân như ví dụ 30→4 từ: việc đã làm (chỉ đọc lại) và việc chưa làm (chưa viết thử ra giấy). Đúng cách làm của 23.14 (gấp sách, tự viết ý chính trước, rồi đối chiếu), không nhắc lại «tưởng thuộc» của hook. |
 
 ## End card (61–63s, chữ tĩnh, không thoại)
@@ -108,11 +107,11 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 
 **Giữ lại có chủ đích (mỗi cái ≤2 lần, lần sau đổi vai trò):**
 
-- «tối / sáng» (b01 hook → b02 «Sáng dậy»): lần hai là bằng chứng đời thường (30→4 từ) cho hook, không nhắc lại lời hook; «tưởng thuộc» chỉ ở b01.
+- «tối / sáng» (b01 hook → b02 «Sáng dậy»): lần hai là chuyện cá nhân của Thầy làm bằng chứng đời thường (30→4 từ) cho hook, không nhắc lại lời hook; «tưởng thuộc» và «quên sạch» trong lời chỉ ở b01; câu hỏi hook «nói ra được mấy ý» khác việc CTA b10 «nhớ được mấy ý? comment con số» (một cái tự trả lời trong đầu, một cái comment ra).
 - «thấp nhất» (b05 xếp hạng → đầu b06): b06 bắt chữ cuối b05 để đính chính thấp nhất ≠ vô dụng, là cầu nối duy nhất được lặp chữ.
 - «sáng mai» (b10): mốc mới của người xem để đóng vòng CTA, đi cùng việc viết lại và đếm +1 ý.
 
-**Đã cắt so với v05:** «gấp sách lại» trong lời chỉ ở hành động tối b01 (gấp sách đi ngủ, chưa phải tự kiểm) và việc tự kiểm ở b06; ví dụ 30→4 từ chỉ ở b02; «tưởng thuộc» chỉ ở hook b01; b03 không nhắc lại điểm nhấn, chỉ tiến lên nguyên nhân «chỉ đọc lại, chưa viết thử ra giấy»; câu chốt cảm giác mơ hồ ở cuối beat («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được ở bảng trên.
+**Đã cắt so với v05:** «gấp sách lại» trong lời chỉ ở việc tự kiểm ở b06; ví dụ 30→4 từ chỉ ở b02; «tưởng thuộc» chỉ ở hook b01; b03 không nhắc lại điểm nhấn, chỉ tiến lên nguyên nhân «chỉ đọc lại, chưa viết thử ra giấy»; câu chốt cảm giác mơ hồ ở cuối beat («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được ở bảng trên.
 
 ## Bảng hiệu ứng (rule-52 — nháp theo lời v06; bản chốt sinh bằng fx-table.py khi làm spec sau gate 1)
 
@@ -120,7 +119,7 @@ Transition SFX mặc định: chuyển scene = `swish`; lớp nền `ambience` s
 
 | Beat | Animation chính (theo cụm lời) | SFX |
 |---|---|---|
-| b01 | Tối gấp sách tự tin → cut cứng sáng vào lớp, bạn hỏi lại, Hiệp khựng trên giấy trắng; punch giữ 1 nhịp | `swish` → gấp sách tối; `snap` → «không nói ra được ý nào» |
+| b01 | Hiệp nói thẳng camera: trang đọc lại lúc khuya → cut cứng sáng giấy trắng; punch «quên sạch» giữ 1 nhịp rồi hỏi thẳng «mấy ý» | `swish` → đọc lại lúc khuya; `snap` → «quên sạch» |
 | b01b | (gộp vào b01 ở v06) Nửa sau hook của spec cũ: sách đã gấp, giấy trắng, Hiệp dịu xuống ở câu đỡ | `snap` → «quên sạch»; `pop` nhẹ → câu đỡ |
 | b02 | 30 thẻ xếp cao → sáng còn 4 thẻ trong tay, phần còn lại xẹp; Hiệp cúi lặng | `pop` từng lớp thẻ; `tick` hụt → «bốn từ» |
 | b03 | Một trang trôi qua 3 lần đều → bút nằm yên, giấy vẫn trắng chưa viết | `swish` lặp đều; `tick` hụt → «lần nào» |
@@ -138,13 +137,13 @@ Transition SFX mặc định: chuyển scene = `swish`; lớp nền `ambience` s
 - HTB 23.14 nguyên văn: «Học xong gấp sách tự kiểm một lần, đừng quay đầu đọc lại» — chi phí 0 tiền, đổi thời gian đọc lại thành gấp sách nhớ lại/làm bài; «tự chép lại ý chính rồi mới mở ra đối chiếu»; phản hồi sửa sai giúp tăng hiệu quả. Mức chứng cứ **A**.
 - Yang C, Luo L, Vadillo MA, Yu R, Shanks DR (2021), *Psychological Bulletin* 147(4): phân tích gộp 222 nghiên cứu độc lập, 48.478 học sinh, kiểm tra trên lớp nâng thành tích, g = 0,499 (mức trung bình/vừa). Script chỉ nói «điểm cao hơn mức vừa» — không phóng đại.
 - Dunlosky J et al. (2013), *Psychological Science in the Public Interest* 14(1): đánh giá 10 cách học; «kiểm tra luyện tập» + «luyện tập giãn cách» bậc cao nhất; đọc lại, gạch chân, tóm tắt, mẹo từ khoá, tưởng tượng hình ảnh ở bậc thấp nhất. HTB 23.16 ghi rõ bậc thấp ≠ vô dụng (tác dụng hẹp) — b06 nói «vẫn có ích, nhưng nhớ ít ý hơn tự kiểm».
-- **Ví dụ đời thường, không phải dữ kiện nghiên cứu:** cảnh hook b01 (tối trước ngày thi tưởng thuộc, sáng hỏi lại không nói ra được ý nào), «học 30 từ tiếng Anh, sáng dậy còn 4 từ» (b02) và «đọc một chương ba lần» (b08) là minh hoạ ngôi «mình». Không viết lại thành số liệu, không gắn vào Yang/Dunlosky ở bất kỳ khâu nào (spec, caption, post).
+- **Ví dụ đời thường, không phải dữ kiện nghiên cứu:** pain point hook b01 (bạn học khuya, đọc đi đọc lại tưởng thuộc, sáng quên sạch, hỏi nói ra được mấy ý), «học 30 từ tiếng Anh, sáng dậy còn 4 từ» (b02) và «đọc một chương ba lần» (b08) là minh hoạ ngôi «mình». Không viết lại thành số liệu, không gắn vào Yang/Dunlosky ở bất kỳ khâu nào (spec, caption, post).
 - Không dùng: tên «Feynman» như một phương pháp được sách xếp hạng; không số % nhớ quên bịa thêm.
 - Dòng «Thông tin tham khảo, không thay thế tư vấn chuyên gia» hiện ở beat end + mục End card.
 
 ## Caption + hashtag (nháp, chốt ở gói đăng)
 
-Tối trước ngày thi, mười giờ mình gấp sách, tưởng thuộc hết rồi. Sáng vào lớp, bạn hỏi lại bài cũ, mình khựng luôn: không nói ra được ý nào. Mình học 30 từ tiếng Anh, sáng dậy chỉ nhớ được 4 từ, buồn lắm — mình chỉ đọc đi đọc lại thôi, chưa viết thử ra giấy lần nào. Yang et al. (2021) gộp 222 nghiên cứu, hơn 48.000 học sinh: lớp kiểm nhỏ lúc học thì điểm cao hơn, mức vừa. Dunlosky (2013): tự kiểm cao nhất, đọc lại và gạch chân thấp nhất — thấp nhất vẫn có ích, chỉ nhớ ít ý hơn tự kiểm. Tối nay học xong, gấp sách lại, viết ba ý còn nhớ; giấy trắng chỗ nào là chưa thuộc chỗ đó. Sáng mai viết lại trước: thêm một ý hơn hôm qua là tiến bộ. Bạn nhớ được mấy ý? Comment con số đó 👇
+Bạn học tới khuya, đọc đi đọc lại tưởng thuộc hết rồi, sáng ra quên sạch. Nếu giờ hỏi lại, bạn nói ra được mấy ý? Mình học 30 từ tiếng Anh, sáng dậy chỉ nhớ được 4 từ, buồn lắm — mình chỉ đọc đi đọc lại thôi, chưa viết thử ra giấy lần nào. Yang et al. (2021) gộp 222 nghiên cứu, hơn 48.000 học sinh: lớp kiểm nhỏ lúc học thì điểm cao hơn, mức vừa. Dunlosky (2013): tự kiểm cao nhất, đọc lại và gạch chân thấp nhất — thấp nhất vẫn có ích, chỉ nhớ ít ý hơn tự kiểm. Tối nay học xong, gấp sách lại, viết ba ý còn nhớ; giấy trắng chỗ nào là chưa thuộc chỗ đó. Sáng mai viết lại trước: thêm một ý hơn hôm qua là tiến bộ. Bạn nhớ được mấy ý? Comment con số đó 👇
 #studytok #cachhoc #onThi #learnontiktok #tamlyhoc
 
 ## Hook dự phòng (L-043)
@@ -155,12 +154,14 @@ Tối trước ngày thi, mười giờ mình gấp sách, tưởng thuộc hế
 ## Trạng thái kiểm tra (19/10, script-v06 draft)
 
 - Chờ Hiệp duyệt ở gate 1. **Chưa voice, chưa render, chưa làm spec mới** — `final/spec.json`, `plan-A.voiced.json`, `timing.json`, `contact-sheet.png` hiện tại đều là của v3.1 đã render, sẽ stale nếu bản này được chốt.
-- Đếm lời thoại bằng script: **212 từ** (v05: 225 từ; v04: 345 từ; v06 đầu: 197 từ; patch L-055 +8; patch L-056 ròng 0; patch hook L-057 +7) → v05→v06 giảm 13 từ. Ước lượng ~61s thoại ở nhịp ~3,5 từ/giây + 2s end card ≈ 62–63s. Riêng b01: 30 từ ≈ 8s ở nhịp hook, để khung 0–8s; b02 dời 8–13s, b03 rút 13–18s, các beat sau giữ nguyên.
-- Kiểm tay theo L-044/L-051/L-053/L-054/L-057 (hook có cảnh cụ thể, 1 punch tương phản, nhấn đúng punch, beat sau không nhắc lại punch): mỗi beat 2–3 phrase, mỗi phrase ≥3 chữ; nhấn 1–2/beat; «nè/nha» 0 lần; quét toàn bản không có cụm chê người học. Bảng đủ ý và bảng thay từ chung chung ở trên.
-- Kiểm caption EN: 36 chunk (34 chunk thoại b01–b10 + 2 chunk end card; sau L-057: b01 4 chunk, b03 2 chunk), chunk dài nhất 6 từ — tất cả ≤8 từ.
+- Đếm lời thoại bằng script: **208 từ** (v05: 225 từ; v04: 345 từ; v06 đầu: 197 từ; patch L-055 +8; patch L-056 ròng 0; patch hook kể chuyện L-057 +7; patch hook pain-point tối 19/10 sửa L-057 −4) → v05→v06 giảm 17 từ. Ước lượng ~59s thoại ở nhịp ~3,5 từ/giây + 2s end card ≈ 61s. Riêng b01: 26 từ ≈ 7s ở nhịp hook, giữ khung 0–8s (dư 1 nhịp punch); b02 giữ nguyên 8–13s, b03 giữ nguyên 13–18s, các beat sau giữ nguyên — không cần dời timing.
+- Kiểm tay theo L-044/L-051/L-053/L-054/L-057 đã sửa (hook = pain point nói thẳng với «bạn» + đúng một câu hỏi tự trả lời, không kể lể ngôi «mình», nhấn ở «quên sạch»/«mấy ý», beat sau không nhắc lại punch): mỗi beat 2–3 phrase, mỗi phrase ≥3 chữ; nhấn 1–2/beat; «nè/nha» 0 lần; quét toàn bản không có cụm chê người học. Bảng đủ ý và bảng thay từ chung chung ở trên.
+- Kiểm caption EN: 35 chunk (33 chunk thoại b01–b10 + 2 chunk end card; sau sửa L-057 tối 19/10: b01 3 chunk, b03 2 chunk), chunk dài nhất 7 từ — tất cả ≤8 từ.
 - `check-rules.py` (19/10, làm mới `final/check-rules.txt`): 120 checks, **2 lỗi — cả hai thuộc spec v3.1 cũ đã render, không thuộc lời v06**: `rule-17 theme dark vs theme-map LIGHT` và `rule-55 on-screen hook text on frame 0` (đã báo Hiệp ở vòng render v3.1, giữ nguyên có lý do: tông tối theo chủ đề + không vẽ chữ hook theo L-050). Cảnh báo rule-4/rule-7/rule-9 cũng đo trên spec/voice cũ 83,7s/299 từ — spec mới theo v06 (~61s/212 từ) sẽ hết khi làm spec sau gate 1.
 
 ## Lịch sử bản
+
+- script-v06 patch hook b01 (19/10 tối, L-057 ĐÃ SỬA): Hiệp chê hook kể chuyện «Không phải kể như này — phải nói pain point, đặt câu hỏi, chứ không phải kể lể» → b01 bỏ hẳn cảnh ngôi «mình» tối trước ngày thi/sáng vào lớp, nói thẳng với «bạn»: học tới khuya, đọc đi đọc lại tưởng thuộc, sáng ra quên sạch, rồi hỏi «nói ra được mấy ý?» (26 từ, giữ khung 0–8s, b02 giữ nguyên 8–13s làm chuyện cá nhân sau hook); ròng −4 từ (208 từ). L-057 sửa lại tại chỗ: hook = pain point trực tiếp + một câu hỏi, không còn «văn kể chuyện».
 
 - script-v06 patch hook b01+b03 (19/10, L-057): Hiệp chê hook «phải có điểm nhấn, nói rõ được vấn đề hay gặp phải, như văn kể chuyện — câu hiện tại không rõ, mông lung» → b01 thành cảnh tối trước ngày thi (mười giờ gấp sách, tưởng thuộc) ↔ sáng vào lớp bị hỏi lại (khựng, không nói ra được ý nào), nhấn duy nhất ở punch; b03 bỏ «tưởng thuộc» trùng hook, tiến lên nguyên nhân «chỉ đọc đi đọc lại, chưa viết thử ra giấy» (15 từ, giữ nguyên số từ); ròng +7 từ (212 từ), b01 0–8s, b02 8–13s, b03 13–18s.
 - script-v06 patch b01+b03 (19/10, L-056): Hiệp chê b01 «Nói không rõ nghĩa — miêu tả chính xác, logic có cơ sở» → b01 thành chuỗi đọc lại → mắt quen khi thấy chữ → chưa gấp sách tự nói thì sáng nói không ra (23 từ, 0–7s; cơ sở ở mục «Cơ sở logic»); b03 bỏ nhắc lại cơ chế, tiến lên «tưởng thuộc → cứ đọc tiếp, không viết thử»; ròng 0 từ (205 từ).
