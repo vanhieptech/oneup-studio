@@ -2,7 +2,7 @@
 title: "Clip 04 script-v06 (DRAFT): Học tới khuya, sáng ra quên sạch → gấp sách tự kiểm (HTB 23.14)"
 date: 2026-10-19
 type: script
-tags: [clip-04, script, retrieval-practice, howtolivebetter-23.14, howtolivebetter-23.16, monologue, conversational, hook-B1, L-050, L-051, L-053, L-054]
+tags: [clip-04, script, retrieval-practice, howtolivebetter-23.14, howtolivebetter-23.16, monologue, conversational, hook-B1, L-050, L-051, L-053, L-054, L-055, L-056]
 status: draft
 source: "HowToLiveBetter 23.14 (Yang et al. 2021; Dunlosky et al. 2013; mức A) + 23.16 (đọc lại/gạch chân nhóm thấp nhất) · callback clip-03 (chia nhỏ)"
 id: clip-04.script-final
@@ -16,10 +16,10 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 
 ## Đã sửa gì ở bản này (so với v05)
 
-- **Đếm từ:** v05 **225 từ / ~63s thoại** → v06 **205 từ / ~59s thoại + 2s end card (~61s)** (bản v06 đầu 197 từ; patch b01 L-055 +8 từ). Đếm bằng script trên đúng phần lời thoại (bỏ markup `{nhấn:}`, dấu `|`, dấu câu). Giảm 20 từ so với v05 (−9%).
+- **Đếm từ:** v05 **225 từ / ~63s thoại** → v06 **205 từ / ~59s thoại + 2s end card (~61s)** (bản v06 đầu 197 từ; patch b01 L-055 +8 từ; patch b01+b03 L-056 ròng 0 từ: b01 +3, b03 −3). Đếm bằng script trên đúng phần lời thoại (bỏ markup `{nhấn:}`, dấu `|`, dấu câu). Giảm 20 từ so với v05 (−9%).
 - **Mỗi câu đủ ý:** mọi câu đều có chủ thể/việc + kết quả hoặc việc cần làm tiếp theo (bảng kiểm ở dưới). Không câu cụt để người nghe tự đoán, trừ câu hỏi CTA cố ý ở b10 («Nhớ được mấy ý?»).
-- **Truyền cảm hứng bằng thắng nhỏ, nói thật:** buồn vì chỉ nhớ 4 từ (b02) → hiểu mắt quen chưa phải đầu nhớ (b03) → tối nay gấp sách, viết 3 ý (b06) → sáng mai thêm 1 ý hơn hôm qua là tiến bộ (b10). Không hứa nhớ hết, không thổi phồng mức «vừa» của Yang.
-- **Câu ngắn, văn nói, mềm:** 2–3 phrase/beat, mỗi phrase ≥3 chữ, nhấn 1–2/beat. Không cụm chê năng lực người học (L-053); b01 nói rõ không-phải-gì + là-gì: «Không phải bạn nhớ kém. Bạn chỉ nhìn chữ, chưa tự nhớ lại» (L-055).
+- **Truyền cảm hứng bằng thắng nhỏ, nói thật:** buồn vì chỉ nhớ 4 từ (b02) → tối qua tưởng thuộc mà chưa thuộc (b03) → tối nay gấp sách, viết 3 ý (b06) → sáng mai thêm 1 ý hơn hôm qua là tiến bộ (b10). Không hứa nhớ hết, không thổi phồng mức «vừa» của Yang.
+- **Câu ngắn, văn nói, mềm:** 2–3 phrase/beat, mỗi phrase ≥3 chữ, nhấn 1–2/beat. Không cụm chê năng lực người học (L-053); b01 nói chuỗi nhân-quả có cơ sở, không an ủi chung chung: đọc lại → mắt quen khi thấy chữ → chưa gấp sách tự nói thì sáng nói không ra (L-056, thay câu L-055).
 - **Chưa làm:** voice, render, spec mới. Hiệp chốt bản này mới làm spec từ lời này.
 
 **Người nói:** chỉ **Thầy** (L-039). Chibi Hiệp chỉ diễn. **Khung:** dọc 9:16, 1080×1920. **Theme:** giữ như bản render v3.1 (rule-17 theme-map đang báo khác — lỗi đã biết của spec cũ, giữ nguyên để Hiệp quyết).
@@ -27,17 +27,17 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 **Thông điệp HTB 23.14 (b06):** học xong gấp sách tự kiểm một lần, đừng quay đầu đọc lại.
 **Nguồn:** Yang và cộng sự (2021) gộp 222 nghiên cứu, 48.478 học sinh: kiểm tra nhỏ trong lúc học giúp điểm cao hơn, mức vừa (g = 0,499, mức A). Dunlosky và cộng sự (2013) xếp 10 cách học: tự kiểm tra ở nhóm cao nhất; đọc lại và gạch chân ở nhóm thấp nhất (23.16: nhóm thấp không có nghĩa là vô dụng, chỉ là tác dụng hẹp — b06 nói «vẫn có ích, nhưng nhớ ít ý hơn tự kiểm»).
 **Ký hiệu:** `|` tách phrase · `{nhấn: …}` chữ nhấn · EN chunks đánh số (1)(2)… theo thứ tự hiển thị, mỗi chunk ≤ 8 từ.
-**Mạch nói:** hook B1 → b02 Thầy học 30 từ còn 4, buồn lắm → b03 mắt quen, đầu chưa nhớ vì chưa viết lại → b04 Yang → b05 gỡ sợ «kiểm tra» + Dunlosky → b06 thấp nhất vẫn có ích + tối nay gấp sách viết 3 ý → b07 giấy trắng = chưa thuộc, mở sách đọc đúng chỗ đó → b08 ôn thi nói lại thay vì đọc 3 lần → b09 bài dài chia nhỏ (callback clip-03) → b10 sáng mai viết lại trước, thêm 1 ý là tiến bộ + CTA → end card.
+**Mạch nói:** hook B1 → b02 Thầy học 30 từ còn 4, buồn lắm → b03 tối qua tưởng thuộc, cứ đọc tiếp, không viết thử → b04 Yang → b05 gỡ sợ «kiểm tra» + Dunlosky → b06 thấp nhất vẫn có ích + tối nay gấp sách viết 3 ý → b07 giấy trắng = chưa thuộc, mở sách đọc đúng chỗ đó → b08 ôn thi nói lại thay vì đọc 3 lần → b09 bài dài chia nhỏ (callback clip-03) → b10 sáng mai viết lại trước, thêm 1 ý là tiến bộ + CTA → end card.
 
 ## Từ chung chung đã bỏ → thay bằng cụ thể
 
 | Bỏ (v05) | Thay (v06) | Beat |
 |---|---|---|
-| «sai cách» / «Không phải tại bạn đâu» (chung chung, L-055) | «Không phải bạn nhớ kém. Bạn chỉ nhìn chữ, chưa tự nhớ lại» ở b01 — không-phải trí nhớ kém, là chỉ nhìn mà chưa tự nhớ lại; b03 kể chi tiết: nhìn 3 lần, mắt quen mà đầu chưa nhớ | b01, b03 |
+| «sai cách» / «Không phải tại bạn đâu» / «Không phải bạn nhớ kém» (chung chung, L-055/L-056) | b01 nói chuỗi có cơ sở: «Học khuya, cứ đọc lại, sáng ra quên sạch. Mắt quen khi thấy chữ. Chưa gấp sách tự nói, sáng nói không ra»; b03 tiến lên: tưởng thuộc nên cứ đọc tiếp, không viết thử | b01, b03 |
 | «hiệu quả hơn mình tưởng / ít hiệu quả hơn mình tưởng» | «vẫn có ích, nhưng nhớ ít ý hơn tự kiểm» — so thẳng hai cách bằng số ý nhớ được | b06 |
 | «lộ ngay chỗ hổng / lộ chỗ hổng» | «Giấy trắng chỗ nào là chưa thuộc chỗ đó» — nhìn chỗ trắng trên giấy là biết | b07 |
 | «cho nhẹ đầu» | bỏ hẳn lời hứa cảm giác; chỉ nói việc: «Học xong một phần, viết ngay phần đó» | b09 |
-| «quen mặt chữ» (giữ chữ, đổi cách nói) | «mắt quen chữ mà đầu chưa nhớ» + «chưa tự viết lại lần nào» — tách mắt/đầu và việc chưa làm | b03 |
+| «quen mặt chữ» lặp ở b03 | Bỏ hẳn ở b03: b03 chỉ nói hệ quả «tưởng thuộc → cứ đọc tiếp, không viết thử», cơ chế quen-mắt chỉ nói một lần ở b01 | b03 |
 | «tự tìm lại trong đầu» (mơ hồ) | «Viết lại trước, thêm một ý hơn hôm qua là tiến bộ» — viết ra giấy, đếm ý, so hôm qua | b10 |
 | «khựng ở đâu, chưa thuộc ở đó» (giữ ý, nói gọn hơn) | «Khựng ở ý nào, học lại ý đó» — khựng ở đâu thì làm gì tiếp ở đó | b08 |
 
@@ -45,14 +45,14 @@ note: "DRAFT script-v06 chờ Hiệp duyệt gate 1 — CHƯA voice, CHƯA rende
 
 | Beat | Câu | Đủ ý vì |
 |---|---|---|
-| b01 | Học tới khuya, sáng ra quên sạch. | việc (học tới khuya) + kết quả (sáng quên sạch) |
-| b01 | Không phải bạn nhớ kém. | nói rõ cái KHÔNG phải: không phải trí nhớ của người học (L-055) |
-| b01 | Bạn chỉ nhìn chữ, chưa tự nhớ lại. | nói rõ cái LÀ: việc đã làm (chỉ nhìn chữ) + việc chưa làm (tự nhớ lại) |
+| b01 | Học khuya, cứ đọc lại, sáng ra quên sạch. | việc đã làm (đọc lại tới khuya) + kết quả (sáng quên sạch) |
+| b01 | Mắt quen khi thấy chữ. | cơ chế theo nguồn 23.14: đọc lại chỉ tạo quen mắt khi nhìn thấy, chưa phải nhớ chắc |
+| b01 | Chưa gấp sách tự nói, sáng nói không ra. | việc chưa làm (gấp sách tự nói = tự kiểm) + hệ quả: không có chữ trước mặt thì nói không ra |
 | b02 | Mình học ba mươi từ tiếng Anh. | người + việc + số lượng cụ thể (30 từ) |
 | b02 | Sáng dậy mình chỉ nhớ được bốn từ. | thời điểm + kết quả đếm được (4 từ) |
 | b02 | Mình buồn lắm. | người + cảm xúc — chỗ buồn của mạch cảm xúc |
-| b03 | Nhìn ba lần, mắt quen chữ mà đầu chưa nhớ. | số lần nhìn + hai vế đối nhau mắt quen / đầu chưa nhớ |
-| b03 | Vì mình chưa tự viết lại lần nào. | nguyên nhân: việc chưa từng làm (viết lại từ trí nhớ) |
+| b03 | Tối qua mình tưởng thuộc hết rồi. | niềm tin sai lúc học tối qua — bước tiến mới, không nhắc lại cơ chế ở b01 |
+| b03 | Cứ đọc tiếp thôi, không thử viết lại. | hệ quả của tưởng thuộc: cứ đọc lại, chưa từng dùng viết lại để kiểm |
 | b04 | Yang gộp 222 nghiên cứu, hơn 48 ngàn học sinh. | ai + làm gì + quy mô (L-045) |
 | b04 | Lớp kiểm nhỏ lúc học, điểm cao hơn mức vừa. | điều kiện (kiểm nhỏ lúc học) + kết quả + mức thật (vừa) |
 | b05 | Đừng sợ, đây không phải bài thi. | gỡ sợ + nói rõ kiểm nhỏ không phải thi |
@@ -78,9 +78,9 @@ Một cuốn sách và một tờ giấy trắng trên cùng một bàn: đầu 
 
 | Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
-| b01 | 0–6 | Thầy | Học tới khuya, sáng ra {nhấn: quên sạch}. \| Không phải bạn nhớ kém. \| Bạn chỉ nhìn chữ, chưa tự nhớ lại. | Sách mở dày, Hiệp gật gù tới khuya → cut cứng ở «quên sạch»: sách gấp, giấy trắng, Hiệp khựng rồi dịu xuống nhìn camera · EN: (1) Study late, forget by morning (2) It is not poor memory (3) You only looked, never recalled |
-| b02 | 6–12 | Thầy | Mình học ba mươi từ tiếng Anh. \| Sáng dậy mình chỉ nhớ được {nhấn: bốn từ}. \| Mình buồn lắm. | 30 thẻ nhỏ (không chữ) chồng cao lúc học; sáng ra Hiệp cầm đúng 4 thẻ, phần còn lại xẹp xuống, Hiệp cúi nhìn lặng · EN: (1) I learned thirty English words (2) Next morning, only four remained (3) I felt really sad |
-| b03 | 12–18 | Thầy | Nhìn ba lần, mắt quen chữ mà đầu chưa nhớ. \| Vì mình chưa tự viết lại lần nào. | Cùng một trang trôi qua trước mắt 3 lần, Hiệp gật theo; bút dừng trên giấy vẫn trắng · EN: (1) Eyes knew words after looking (2) My head remembered nothing yet (3) I never wrote from memory |
+| b01 | 0–7 | Thầy | Học khuya, cứ đọc lại, sáng ra {nhấn: quên sạch}. \| Mắt quen khi thấy chữ. \| Chưa gấp sách tự nói, sáng nói không ra. | Sách mở dày, Hiệp đọc lại tới khuya → cut cứng ở «quên sạch»: sách gấp, giấy trắng, Hiệp tự nói rồi khựng · EN: (1) Study late, reread repeatedly (2) Forget everything by morning (3) Eyes familiar only when seeing (4) Never recalled closed-book, cannot answer |
+| b02 | 7–12 | Thầy | Mình học ba mươi từ tiếng Anh. \| Sáng dậy mình chỉ nhớ được {nhấn: bốn từ}. \| Mình buồn lắm. | 30 thẻ nhỏ (không chữ) chồng cao lúc học; sáng ra Hiệp cầm đúng 4 thẻ, phần còn lại xẹp xuống, Hiệp cúi nhìn lặng · EN: (1) I learned thirty English words (2) Next morning, only four remained (3) I felt really sad |
+| b03 | 12–18 | Thầy | Tối qua mình tưởng thuộc hết rồi. \| Cứ đọc tiếp thôi, không thử viết lại. | Tối qua Hiệp gật đầu tự tin bên trang quen; sáng ra bút dừng trên giấy vẫn trắng · EN: (1) I thought I knew everything (2) Kept rereading, never tried writing |
 | b04 | 18–24 | Thầy | Yang gộp {nhấn: 222 nghiên cứu}, hơn {nhấn: 48 ngàn} học sinh. \| Lớp kiểm nhỏ lúc học, điểm cao hơn mức vừa. | Thẻ nghiên cứu trắng xếp chồng cao; một tờ kiểm nhỏ đặt lên bàn, chồng điểm nhô lên vừa rồi dừng · EN: (1) Yang pooled 222 studies (2) Over 48,000 students total (3) Small quizzes raised scores modestly |
 | b05 | 24–30 | Thầy | Đừng sợ, đây không phải bài thi. \| Dunlosky xếp mười cách: tự kiểm {nhấn: cao nhất}, đọc lại và gạch chân {nhấn: thấp nhất}. | Hiệp giật mình nhẹ rồi lắc đầu xua tay; mười thẻ hiện thành hàng, bó tự kiểm nâng lên chồng cao, chồng đọc lại ở thấp · EN: (1) This is not an exam (2) Please do not fear it (3) Dunlosky ranked ten study methods (4) Self-testing ranked highest (5) Rereading, highlighting ranked lowest |
 | b06 | 30–37 | Thầy | Thấp nhất vẫn có ích, nhưng nhớ ít ý hơn tự kiểm. \| Tối nay học xong, {nhấn: gấp sách lại}, viết ba ý còn nhớ. | Hiệp cầm sách định mở, hạ xuống; sách gấp đúng chữ «gấp sách lại», tay chuyển sang giấy viết 3 dòng mực · EN: (1) Lowest still helps a little (2) It recalls fewer ideas though (3) Tonight, close your book (4) Write three ideas you remember |
@@ -89,6 +89,15 @@ Một cuốn sách và một tờ giấy trắng trên cùng một bàn: đầu 
 | b09 | 50–55 | Thầy | Bài dài, {nhấn: chia nhỏ ra} như clip trước. \| Học xong một phần, viết ngay phần đó. | Chồng bài dày (`pile`) tách thành ba bó gọn (`bundles`); Hiệp ôm một bó, viết kiểm bó đó, hai bó chờ nguyên · EN: (1) Long lessons, split them small (2) Like the previous clip showed (3) Finish one part, write it |
 | b10 | 55–61 | Thầy | Sáng mai đừng mở sách vội. \| Viết lại trước, thêm {nhấn: một ý} hơn hôm qua là tiến bộ. \| Nhớ được mấy ý? Comment con số đó. | Quay về framing b01: sách gấp, giấy đã có dòng và thêm 1 dòng mới; Hiệp nhìn camera, chỉ nhẹ xuống dưới chờ con số · EN: (1) Tomorrow morning, wait first (2) Write before opening your book (3) One more idea means progress (4) How many ideas returned today (5) Comment that number below |
 | end | 61–63 | — (end card, không thoại) | Thông tin tham khảo, không thay thế tư vấn chuyên gia | End card tĩnh trên nền bàn học: sách đã gấp + tờ giấy có dòng ghi được. Credit nguyên văn ở mục End card · EN: (1) For reference only, not (2) professional advice; credits below |
+
+
+## Cơ sở logic của beat vừa sửa (L-056 — Hiệp soát tay ở gate 1)
+
+| Beat | Khẳng định trong lời | Cơ sở trong nguồn (không nói quá nguồn) |
+|---|---|---|
+| b01 | «Mắt quen khi thấy chữ» (sau khi đã đọc lại ở câu trước) | HTB 23.14, phần Nói dễ hiểu, nguyên văn: «Đọc lại chỉ tạo cảm giác quen mắt chứ không nhớ chắc». HTB 23.16 / Dunlosky (2013): đọc lại ở bậc thấp nhất trong 10 cách học. Lời chỉ nói «quen khi thấy chữ», không khẳng định thêm cơ chế não nào khác. |
+| b01 | «Chưa gấp sách tự nói, sáng nói không ra» | HTB 23.14, Ghi chú nguyên văn: tự kiểm «nhằm buộc não bạn chủ động truy xuất kiến thức ra ngoài, chứ không nhằm chấm điểm. Cách làm: sau khi đọc xong một bài, bạn hãy gấp sách lại và tự viết ra các ý chính trước, rồi mới mở sách đối chiếu lại». Yang et al. (2021, nói ở b04): kiểm tra trong lớp nâng thành tích, mức vừa. «Sáng nói không ra» là tình huống hook/minh hoạ của clip (sáng hỏi lại mà không tự nói được), không phải một kết quả riêng do Yang đo. |
+| b03 | «Tối qua mình tưởng thuộc hết rồi. Cứ đọc tiếp thôi, không thử viết lại» | Đây là bước tiến của chuyện «mình» ở b02, ghi rõ là minh hoạ cá nhân như ví dụ 30→4 từ, không gắn số liệu vào Yang/Dunlosky. Nền được nguồn đỡ: cảm giác quen mắt khi đọc lại dễ bị tưởng là đã nhớ chắc (23.14); hệ quả kể chuyện là vì tưởng thuộc nên cứ đọc tiếp và chưa từng viết lại để kiểm. B03 không nhắc lại cơ chế quen-mắt của b01. |
 
 ## End card (61–63s, chữ tĩnh, không thoại)
 
@@ -104,7 +113,7 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 - «thấp nhất» (b05 xếp hạng → đầu b06): b06 bắt chữ cuối b05 để đính chính thấp nhất ≠ vô dụng, là cầu nối duy nhất được lặp chữ.
 - «sáng mai» (b10): mốc mới của người xem để đóng vòng CTA, đi cùng việc viết lại và đếm +1 ý.
 
-**Đã cắt so với v05:** «gấp sách lại» chỉ ở b06 (b08 dùng ở hình, lời nói «nói chương này»); ví dụ 30→4 từ chỉ ở b02; «Không phải bạn nhớ kém» chỉ ở b01 (nguyên nhân «chỉ nhìn chữ, chưa tự nhớ lại» nói gọn ở b01 để kết luận, b03 kể chi tiết nhìn 3 lần làm bằng chứng — hai vai trò khác nhau); câu chốt cảm giác mơ hồ ở cuối beat («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được ở bảng trên.
+**Đã cắt so với v05:** «gấp sách lại» chỉ ở b06 (b08 dùng ở hình, lời nói «nói chương này»); ví dụ 30→4 từ chỉ ở b02; cơ chế «mắt quen khi thấy chữ / chưa gấp sách tự nói» chỉ ở b01; b03 không nhắc lại cơ chế, chỉ tiến lên hệ quả «tưởng thuộc → cứ đọc tiếp, không viết thử»; câu chốt cảm giác mơ hồ ở cuối beat («cho nhẹ đầu», «lộ chỗ hổng») đã thay bằng việc/dấu hiệu nhìn thấy được ở bảng trên.
 
 ## Bảng hiệu ứng (rule-52 — nháp theo lời v06; bản chốt sinh bằng fx-table.py khi làm spec sau gate 1)
 
@@ -136,7 +145,7 @@ Transition SFX mặc định: chuyển scene = `swish`; lớp nền `ambience` s
 
 ## Caption + hashtag (nháp, chốt ở gói đăng)
 
-Học tới khuya, sáng ra quên sạch? Không phải tại bạn đâu. Mình học 30 từ tiếng Anh, sáng dậy chỉ nhớ được 4 từ, buồn lắm — nhìn ba lần mắt quen chữ mà đầu chưa nhớ, vì mình chưa tự viết lại lần nào. Yang et al. (2021) gộp 222 nghiên cứu, hơn 48.000 học sinh: lớp kiểm nhỏ lúc học thì điểm cao hơn, mức vừa. Dunlosky (2013): tự kiểm cao nhất, đọc lại và gạch chân thấp nhất — thấp nhất vẫn có ích, chỉ nhớ ít ý hơn tự kiểm. Tối nay học xong, gấp sách lại, viết ba ý còn nhớ; giấy trắng chỗ nào là chưa thuộc chỗ đó. Sáng mai viết lại trước: thêm một ý hơn hôm qua là tiến bộ. Bạn nhớ được mấy ý? Comment con số đó 👇
+Học tới khuya, sáng ra quên sạch? Đọc lại mắt quen khi thấy chữ, chưa gấp sách tự nói thì sáng nói không ra. Mình học 30 từ tiếng Anh, sáng dậy chỉ nhớ được 4 từ, buồn lắm — tối qua tưởng thuộc hết, cứ đọc tiếp, không viết thử lần nào. Yang et al. (2021) gộp 222 nghiên cứu, hơn 48.000 học sinh: lớp kiểm nhỏ lúc học thì điểm cao hơn, mức vừa. Dunlosky (2013): tự kiểm cao nhất, đọc lại và gạch chân thấp nhất — thấp nhất vẫn có ích, chỉ nhớ ít ý hơn tự kiểm. Tối nay học xong, gấp sách lại, viết ba ý còn nhớ; giấy trắng chỗ nào là chưa thuộc chỗ đó. Sáng mai viết lại trước: thêm một ý hơn hôm qua là tiến bộ. Bạn nhớ được mấy ý? Comment con số đó 👇
 #studytok #cachhoc #onThi #learnontiktok #tamlyhoc
 
 ## Hook dự phòng (L-043)
@@ -147,13 +156,14 @@ Học tới khuya, sáng ra quên sạch? Không phải tại bạn đâu. Mình
 ## Trạng thái kiểm tra (19/10, script-v06 draft)
 
 - Chờ Hiệp duyệt ở gate 1. **Chưa voice, chưa render, chưa làm spec mới** — `final/spec.json`, `plan-A.voiced.json`, `timing.json`, `contact-sheet.png` hiện tại đều là của v3.1 đã render, sẽ stale nếu bản này được chốt.
-- Đếm lời thoại bằng script: **205 từ** (v05: 225 từ; v04: 345 từ; v06 đầu: 197 từ, patch b01 +8 từ) → v05→v06 giảm 20 từ. Ước lượng ~59s thoại ở nhịp ~3,5 từ/giây + 2s end card ≈ 61s. Riêng b01: 20 từ ≈ 5,7s, vừa khung 0–6s.
+- Đếm lời thoại bằng script: **205 từ** (v05: 225 từ; v04: 345 từ; v06 đầu: 197 từ; patch L-055 +8 từ; patch L-056 ròng 0) → v05→v06 giảm 20 từ. Ước lượng ~59s thoại ở nhịp ~3,5 từ/giây + 2s end card ≈ 61s. Riêng b01: 23 từ ≈ 6,6s, để khung 0–7s; b02 rút còn 7–12s, các beat sau giữ nguyên.
 - Kiểm tay theo L-044/L-051/L-053/L-054: mỗi beat 2–3 phrase, mỗi phrase ≥3 chữ; nhấn 1–2/beat; «nè/nha» 0 lần; quét toàn bản không có cụm chê người học. Bảng đủ ý và bảng thay từ chung chung ở trên.
-- Kiểm caption EN: 36 chunk (34 chunk thoại b01–b10 + 2 chunk end card; b01 tăng 2→3 chunk sau patch), chunk dài nhất 5 từ — tất cả ≤8 từ.
+- Kiểm caption EN: 36 chunk (34 chunk thoại b01–b10 + 2 chunk end card; sau L-056: b01 4 chunk, b03 2 chunk), chunk dài nhất 5 từ — tất cả ≤8 từ.
 - `check-rules.py` (19/10, làm mới `final/check-rules.txt`): 120 checks, **2 lỗi — cả hai thuộc spec v3.1 cũ đã render, không thuộc lời v06**: `rule-17 theme dark vs theme-map LIGHT` và `rule-55 on-screen hook text on frame 0` (đã báo Hiệp ở vòng render v3.1, giữ nguyên có lý do: tông tối theo chủ đề + không vẽ chữ hook theo L-050). Cảnh báo rule-4/rule-7/rule-9 cũng đo trên spec/voice cũ 83,7s/299 từ — spec mới theo v06 (~61s/205 từ) sẽ hết khi làm spec sau gate 1.
 
 ## Lịch sử bản
 
+- script-v06 patch b01+b03 (19/10, L-056): Hiệp chê b01 «Nói không rõ nghĩa — miêu tả chính xác, logic có cơ sở» → b01 thành chuỗi đọc lại → mắt quen khi thấy chữ → chưa gấp sách tự nói thì sáng nói không ra (23 từ, 0–7s; cơ sở ở mục «Cơ sở logic»); b03 bỏ nhắc lại cơ chế, tiến lên «tưởng thuộc → cứ đọc tiếp, không viết thử»; ròng 0 từ (205 từ).
 - script-v06 patch b01 (19/10, L-055): Hiệp chê «Không phải tại bạn đâu» chung chung, không rõ nghĩa → «Không phải bạn nhớ kém. | Bạn chỉ nhìn chữ, chưa tự nhớ lại.» (13 từ thay thế, b01 20 từ ≈5,7s); chỉ sửa b01 + EN chunk b01 + đếm từ/ghi chú liên quan, còn lại giữ nguyên.
 - script-v06 (bản này, DRAFT): Hiệp chê v05 «Câu nói chưa đủ truyền cảm hứng/động lực, hơi dài dòng, có câu thiếu ý, dùng quá nhiều từ chung chung» → cắt 225→197 từ (~65s→~58s), mỗi câu đủ ý, thay từ chung chung bằng hành động/dấu hiệu cụ thể, thắng nhỏ +1 ý sáng mai.
 - script-v05 (lưu `archive/script-v05.md`): Hiệp chê v04 «Dài dòng, lặp từ quá nhiều» → cắt 345→225 từ, mỗi ý một lần, thêm audit lặp (L-054).
