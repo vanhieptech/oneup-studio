@@ -25,6 +25,8 @@ Cập nhật: 19/10/2026 (Asia/Saigon). Từ nay mỗi agent giữ một workflo
 - kokoro-vs-f5tts-initial-research-vi.md — Kokoro Voice
 - short-factory-research-vi.md — Short Factory
 - social-poster-research.md — Social Poster
+- podcastfy-audio-research-vi.md — Podcastfy Audio (từ báo cáo group 19/10)
+- ace-music-research-vi.md — ACE Music (từ báo cáo group 19/10)
 - Chưa có file riêng: OpenCreator Studio và FLUX Visual (kết quả nghiên cứu mới ở chat 19/10, đã tóm tắt trong mục nguồn của workflow từng agent; cần viết file khi làm sâu hơn).
 
 ## Trạng thái lưu repo

@@ -770,6 +770,14 @@
    "title": "Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only)"
   },
   {
+   "id": "research.ace-music",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/ace-music-research-vi.md",
+   "title": "Nghiên cứu: ACE-Step 1.5 (ace-step/ACE-Step-1.5)"
+  },
+  {
    "id": "research.kokoro-vs-f5tts",
    "type": "research",
    "status": "reference",
@@ -784,6 +792,14 @@
    "updated": "2026-10-19",
    "path": "research/agents/local-deep-research-review-vi.md",
    "title": "Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup"
+  },
+  {
+   "id": "research.podcastfy-audio",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/podcastfy-audio-research-vi.md",
+   "title": "Nghiên cứu: Podcastfy (souzatharsis/podcastfy)"
   },
   {
    "id": "research.short-factory",

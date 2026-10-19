@@ -108,8 +108,10 @@ tags: [index, retrieval]
 | media.README | readme | ready | `media/README.md` | README |
 | pipeline.characters-v2.README | readme | ready | `pipeline/characters-v2/README.md` | Character rig v2 (chibi, liquid) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
+| research.ace-music | research | reference | `research/agents/ace-music-research-vi.md` | Nghiên cứu: ACE-Step 1.5 (ace-step/ACE-Step-1.5) |
 | research.kokoro-vs-f5tts | research | reference | `research/agents/kokoro-vs-f5tts-initial-research-vi.md` | Kokoro vs F5-TTS — Nghiên cứu ban đầu cho pipeline giọng @hi.oneup |
 | research.local-deep-research | research | reference | `research/agents/local-deep-research-review-vi.md` | Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup |
+| research.podcastfy-audio | research | reference | `research/agents/podcastfy-audio-research-vi.md` | Nghiên cứu: Podcastfy (souzatharsis/podcastfy) |
 | research.short-factory | research | research-only | `research/agents/short-factory-research-vi.md` | Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio |
 | research.social-poster | research | reference | `research/agents/social-poster-research.md` | Social Poster — Nghiên cứu repo langchain-ai/social-media-agent (draft-only cho OneUp) |
 | research.social-research-audit | research | reference | `research/agents/social-research-repo-audit-vi.md` | Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp) |
