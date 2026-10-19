@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-18
+updated: 2026-10-19
 tags: [ideas]
 ---
 # Idea bank
@@ -37,3 +37,8 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Gói bảo hành / bảo hiểm màn hình (B-baohanh-01) | 5.11 + 5.39 | tiền | "Sửa màn hình 40 triệu. Vậy có nên mua thêm gói bảo hành không?" | DARK | ý tưởng (2026-10-18) |
 | Ngủ bù cuối tuần làm thứ Hai mệt hơn (B-weekend-01) | 3.2 (+2.38) | trụ 3 năng lượng | "Chủ nhật tính ngủ tới trưa, vậy sao thứ Hai mệt hơn?" | DARK | ý tưởng (2026-10-18; clip-14 hook thay thế) |
 | Đọc sách giấy trước khi ngủ (B-reading-01) | 3.8 | trụ 3 năng lượng | "Hồi xưa đọc sách cả buổi, giờ mở được hai trang là cầm điện thoại?" | LIGHT | ý tưởng (2026-10-18) |
+| Pin 98% lúc tan làm: ngày tập trung chứ không phải ngày kinh hoàng (B-98pin-01) | 3.6 (+3.5, 3.1) | trụ 2 tập trung | "Tan làm mở điện thoại ra, pin còn 98%. Hôm đó với bạn là kinh hoàng, hay đã đời?" | DARK | stub 2026-10-19, chờ duyệt (clip-10 hook thay thế; `research/trends/2026-10-19/plans/plan-1-pin-98-phan-tram.json`) |
+| Check tin nhắn 3 khung giờ, việc gấp thì gọi (B-msg-02) | 3.5 | trụ 2 tập trung | "Sếp nhắn đúng hai chữ “em ơi” rồi im luôn. Bạn mở điện thoại ra coi lại mấy lần?" | LIGHT | stub 2026-10-19, chờ duyệt (clip-08 hook thay thế; `research/trends/2026-10-19/plans/plan-2-check-tin-nhan-3-lan.json`) |
+| Tự nhận mình cũng cầm điện thoại, rồi đặt giới hạn cứng cho app video ngắn (B-phone-02) | 4.15 (+3.1) | trụ 2 tập trung | "Bị chửi “dẹp điện thoại đi”, mà người chửi cũng đang cầm điện thoại?" | LIGHT | ý tưởng (2026-10-19; clip-12 hook thay thế; bỏ số Trung Quốc) |
+| Vừa họp vừa rep là hai việc dở (B-multitask-01) | 3.7 | trụ 2 tập trung | "Vừa họp vừa rep tin nhắn, hết buổi bạn nhớ được gì?" | DARK | ý tưởng (2026-10-19; clip-09) |
+| Chấm công nửa đêm không ra thêm việc (B-49h-01) | 3.13 | trụ 2 | "Chấm công lúc nửa đêm thì có làm được nhiều hơn không?" | DARK | ý tưởng (2026-10-19; clip-11 hook thay thế) |

@@ -1,0 +1,831 @@
+{
+  "actor": "clockworks/tiktok-scraper",
+  "run_id": "MUd3jqleOKKbk36dK",
+  "item_count": 6,
+  "fields_coverage": {
+    "url": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "caption": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "author": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "play_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "like_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "share_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "comment_count": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "duration_s": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "music": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "hashtags": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "subtitle_or_transcript": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    },
+    "top_comments": {
+      "present": 6,
+      "of": 6,
+      "pct": 100.0
+    }
+  },
+  "clips": [
+    {
+      "url": "https://www.tiktok.com/@kbhoanganh/video/7534286009832393991",
+      "caption": "Mày Dẹp Điện Thoại Đi  ( suốt ngày cầm điện thoại lướt tik/tok hoài )@KB Hoàng Anh @KB Hoàng Anh @KB Hoàng Anh #maydep #dienthoai #suotngay #maycam #dienthoai #luottiktok #luottiktokmoingay #xuhuongtiktok #xuhuong #thinhhanh #thinhhanhtiktok ",
+      "author": {
+        "id": "7322433479751664647",
+        "name": "kbhoanganh",
+        "nick": "KB Hoàng Anh",
+        "profile": "https://www.tiktok.com/@kbhoanganh",
+        "fans": 238900
+      },
+      "play_count": 3700000,
+      "like_count": 173700,
+      "share_count": 559100,
+      "comment_count": 8139,
+      "duration_s": 18,
+      "music": {
+        "id": "7534286049087261456",
+        "name": "nhạc nền - KB Hoàng Anh",
+        "author": "KB Hoàng Anh",
+        "original": true
+      },
+      "hashtags": [
+        "maydep",
+        "dienthoai",
+        "suotngay",
+        "maycam",
+        "dienthoai",
+        "luottiktok",
+        "luottiktokmoingay",
+        "xuhuongtiktok",
+        "xuhuong",
+        "thinhhanh",
+        "thinhhanhtiktok"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:01.360\nmày dẹp điện thoại đi\n\n00:00:01.400 --> 00:00:03.760\nsuốt ngày mày cầm điện thoại lướt TikTok hoài\n\n00:00:04.040 --> 00:00:06.160\nTao nói mày đó mày nhìn cái gì\n\n00:00:06.640 --> 00:00:09.560\ntrời ơi con em nó lì lắm luôn quý anh chị ơi\n\n00:00:10.120 --> 00:00:11.640\ntrong khi em làm mệt muốn chết\n\n00:00:11.641 --> 00:00:14.881\nmà suốt ngày nó cứ cầm điện thoại lướt TikTok hoài\n\n00:00:15.040 --> 00:00:16.880\ntrời ơi con ơi là con\n",
+        "links": [
+          "research/trends/2026-10-19/apify/vtt/subtitle-kbhoanganh-20250803091745-7534286009832393991-vie-VN.vtt"
+        ],
+        "file": "subtitle-kbhoanganh-20250803091745-7534286009832393991-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Vậy ông đang cầm j 😔",
+          "likes": 19519,
+          "author": "userdungx210"
+        },
+        {
+          "text": "Mẹ con thuê chú bnhieu tiền?",
+          "likes": 3406,
+          "author": "ngocdautroc"
+        },
+        {
+          "text": "ủa chú nói con mà chú nhìn ai vậy",
+          "likes": 1258,
+          "author": "_ttthaf_1601"
+        },
+        {
+          "text": "ông nhìn thẳng mặt tui nè",
+          "likes": 1196,
+          "author": "vanphat3456"
+        },
+        {
+          "text": "Hụ hụ hụ ha ha",
+          "likes": 299,
+          "author": "_nezk07_"
+        },
+        {
+          "text": "cháu đang coi phim ng lớn mà",
+          "likes": 225,
+          "author": "baoquoc660"
+        },
+        {
+          "text": "chú nhắc con mà chú nhìn ai á 😭",
+          "likes": 94,
+          "author": "chiptoo"
+        },
+        {
+          "text": "một vỡ kịch buồn e diễn chọn cả 2 vai",
+          "likes": 92,
+          "author": "hungngocne"
+        },
+        {
+          "text": "chú cầm gì vậy",
+          "likes": 67,
+          "author": "_thowr.thnah"
+        },
+        {
+          "text": "nhìn cái nách con chi z chú",
+          "likes": 53,
+          "author": "szji_n"
+        },
+        {
+          "text": "chú nhận tiền của mẹ con đúng không😭",
+          "likes": 51,
+          "author": "ln.bayy"
+        },
+        {
+          "text": "mẹ con đưa chú bnh tiền?",
+          "likes": 16,
+          "author": "02_06_201_"
+        },
+        {
+          "text": "giận lé cả mắt",
+          "likes": 15,
+          "author": "khanh.phan430"
+        },
+        {
+          "text": "chú cầm đôi dép hả",
+          "likes": 14,
+          "author": "uyencr7"
+        },
+        {
+          "text": "ko cầm điện thoại sao thấy đc video này",
+          "likes": 14,
+          "author": "hw_2307"
+        },
+        {
+          "text": "mẹ t thuê ông bnhieu🥰",
+          "likes": 10,
+          "author": "nghan_445"
+        },
+        {
+          "text": "nhìn lượt share hiểu lòng người",
+          "likes": 7,
+          "author": "biinh20_"
+        },
+        {
+          "text": "cho con hỏi mẹ con thuê chú hết bnh tiền v^^",
+          "likes": 6,
+          "author": "swt.namii"
+        },
+        {
+          "text": "Vậy ông đang cầm gi😔",
+          "likes": 5,
+          "author": "bhanndths1"
+        },
+        {
+          "text": "t lướt bằng máy tính",
+          "likes": 5,
+          "author": "buithinhphat.183"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7534286009832393991",
+      "create_time": "2025-08-03T09:17:45.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@colo.vn/video/7693555573517782278",
+      "caption": "1 ngày làm việc năng suất kiểu 🫣 #colo #dilamcogivui #vanphong #officelife #genzdilam ",
+      "author": {
+        "id": "7538256301660161031",
+        "name": "colo.vn",
+        "nick": "Cò Lõ",
+        "profile": "https://www.tiktok.com/@colo.vn",
+        "fans": 270400
+      },
+      "play_count": 288500,
+      "like_count": 16200,
+      "share_count": 15500,
+      "comment_count": 162,
+      "duration_s": 20,
+      "music": {
+        "id": "7693555709975890740",
+        "name": "âm thanh gốc - Cò Lõ",
+        "author": "Cò Lõ",
+        "original": true
+      },
+      "hashtags": [
+        "colo",
+        "dilamcogivui",
+        "vanphong",
+        "officelife",
+        "genzdilam"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:03.680\ntop BA dấu hiệu Cho thấy hôm nay là một ngày làm việc\n\n00:00:03.760 --> 00:00:05.440\nkinh hoàng top một\n\n00:00:05.720 --> 00:00:09.240\ntin nhắn kể chuyện drama của nhỏ cốt vẫn chưa được Xin\n\n00:00:09.720 --> 00:00:12.680\ntop 2 ly matcha còn y thinh\n\n00:00:13.240 --> 00:00:19.120\ntop BA 05:30 đi về mở điện thoại lên thấy còn 98% pin\n",
+        "links": [
+          "research/trends/2026-10-19/apify/vtt/subtitle-colovn-20261006140526-7693555573517782278-vie-VN.vtt"
+        ],
+        "file": "subtitle-colovn-20261006140526-7693555573517782278-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Kinh hoàng là dt reo cả ngày sao còn 98 nổi dị 😨",
+          "likes": 88,
+          "author": "lomons.ua.d"
+        },
+        {
+          "text": "Đúng thực tế là lúc về mở tiktok lên đang là đoạn clip coi dở dang tối qua…chứ đt réo gọi inh ỏi cả ngày sao còn 98% pin đc",
+          "likes": 40,
+          "author": "kimtu.dinny"
+        },
+        {
+          "text": "rất là ớn mấy dấu hiệu này luôn 🥺",
+          "likes": 6,
+          "author": "anhnguyet5241"
+        },
+        {
+          "text": "cơm t còn k ăn được đi toilet cũng k",
+          "likes": 3,
+          "author": "ken8594"
+        },
+        {
+          "text": "@ DL VO TINH DL. Top #4 chưa đi tè🤣",
+          "likes": 2,
+          "author": "silentce5444"
+        },
+        {
+          "text": "Sai, ly matcha phải là tan hết đá và phân tầng",
+          "likes": 2,
+          "author": "masterorca52hzzz"
+        },
+        {
+          "text": "Hehe",
+          "likes": 2,
+          "author": "_seonghyeonie_2"
+        },
+        {
+          "text": "sớm nè cò",
+          "likes": 1,
+          "author": "thanhlekhac265"
+        },
+        {
+          "text": "top đặc biệt: để quên điện thoại ở nhà",
+          "likes": 1,
+          "author": "hr.ve.so"
+        },
+        {
+          "text": "ngày nào t cũng dị",
+          "likes": 1,
+          "author": "karolnguyen911"
+        },
+        {
+          "text": "đi tè đặc kẹo kaka. dấu hiệu nín",
+          "likes": 1,
+          "author": "kenxuka23021806"
+        },
+        {
+          "text": "sáng hôm sau dậy trễ 😳",
+          "likes": 1,
+          "author": "myluckystar88"
+        },
+        {
+          "text": "Ko hiểu",
+          "likes": 0,
+          "author": "5nguoiban26"
+        },
+        {
+          "text": "19h tối về mở điện thoại lên thấy còn 80% pin😅🤣🤣",
+          "likes": 0,
+          "author": "tht2k01"
+        },
+        {
+          "text": "Tóp đặc biệt ngồi trong 1 căn phòng ko được phép lm gì ngoài làm việc suốt 2 tiếng rưỡi đồng hồ cụ thể là kiểm tra khảo sát😭",
+          "likes": 0,
+          "author": "dipql1"
+        },
+        {
+          "text": "trường hợp này hiếm à",
+          "likes": 0,
+          "author": "emmuontudoo"
+        },
+        {
+          "text": "Điện thoại tuy không bấm lướt mạng, nhưng reo liên tọi🥺",
+          "likes": 0,
+          "author": "tuongan312"
+        },
+        {
+          "text": "Bữa trc đúng 6h chiều tôi mở đt lên 100% dù k cắm sạc anh em ạ 🥺",
+          "likes": 0,
+          "author": "pennie1507"
+        },
+        {
+          "text": "vậy đó mà duii",
+          "likes": 0,
+          "author": "legiahan270214"
+        },
+        {
+          "text": "Dấu hiệu năng suất làm việc của mấy em kế toán chứ đâu 🤣",
+          "likes": 0,
+          "author": "mixu0202"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7693555573517782278",
+      "create_time": "2026-10-06T14:05:26.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@vtv24news/video/7696488195638316308",
+      "caption": "Theo khảo sát của Cơ quan An toàn và Sức khỏe Nghề nghiệp Hàn Quốc, hơn 1/4 nhân viên văn phòng được khảo sát có nguy cơ rối loạn giấc ngủ khi thường xuyên xử lý công việc sau giờ hành chính. Các chuyên gia cảnh báo tình trạng này có thể kéo theo chứng lo âu, trầm cảm. Vì vậy doanh nghiệp cần hạn chế liên lạc công việc ngoài giờ để người lao động có thời gian nghỉ ngơi. #vtv24 #thoisuvtv #lamviecngoaigio #nhantinngoaigio #lamthemgio #roiloangiacngu",
+      "author": {
+        "id": "6802456532350485506",
+        "name": "vtv24news",
+        "nick": "VTV24",
+        "profile": "https://www.tiktok.com/@vtv24news",
+        "fans": 9200000
+      },
+      "play_count": 1300000,
+      "like_count": 13600,
+      "share_count": 16700,
+      "comment_count": 0,
+      "duration_s": 39,
+      "music": {
+        "id": "7696488250059934482",
+        "name": "original sound - VTV24",
+        "author": "VTV24",
+        "original": true
+      },
+      "hashtags": [
+        "vtv24",
+        "thoisuvtv",
+        "lamviecngoaigio",
+        "nhantinngoaigio",
+        "lamthemgio",
+        "roiloangiacngu"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.560 --> 00:00:02.600\nmột thông tin đáng chú ý liên quan đến sức khỏe\n\n00:00:02.920 --> 00:00:03.920\nngười Lao động Hàn Quốc\n\n00:00:03.960 --> 00:00:06.520\ncó thể tăng gấp đôi nguy cơ rối loạn giấc ngủ\n\n00:00:06.720 --> 00:00:09.000\nnếu thường xuyên phải trả lời tin nhắn công việc\n\n00:00:09.160 --> 00:00:11.560\nhoặc là làm việc trên máy tính sau giờ hành chính\n\n00:00:12.040 --> 00:00:13.400\nTheo khảo sát của cơ quan\n\n00:00:13.480 --> 00:00:15.320\nan toàn và sức khỏe nghề nghiệp Hàn Quốc\n\n00:00:15.600 --> 00:00:20.480\nhơn 1/4 số nhân viên văn phòng được khảo sát có nguy cơ này\n\n00:00:21.720 --> 00:00:23.760\ntình trạng xảy Ra phổ biến nhất ở nhóm làm\n\n00:00:23.800 --> 00:00:24.800\ntiếp thị và bán hàng\n\n00:00:25.080 --> 00:00:26.120\ncác chuyên gia cảnh báo\n\n00:00:26.320 --> 00:00:28.960\nlàm việc kéo dài ngoài giờ không chỉ ảnh hưởng đến giấc ngủ\n\n00:00:29.080 --> 00:00:30.760\nmà còn có thể dẫn đến lo âu\n\n00:00:30.920 --> 00:00:34.360\ntrầm cảm vì vậy doanh nghiệp cần bố trí công việc hợp lý\n\n00:00:34.520 --> 00:00:36.160\nhạn chế liên lạc công việc ngoài giờ\n\n00:00:36.320 --> 00:00:38.040\nđể người Lao động có thời gian nghỉ ngơi\n",
+        "links": [
+          "research/trends/2026-10-19/apify/vtt/subtitle-vtv24news-20261014114507-7696488195638316308-vie-VN.vtt"
+        ],
+        "file": "subtitle-vtv24news-20261014114507-7696488195638316308-vie-VN.vtt"
+      },
+      "top_comments": [],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7696488195638316308",
+      "create_time": "2026-10-14T11:45:07.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@nhacomeo.mut/video/7690545961994587412",
+      "caption": "#cortis #fypシ゚viral #xuhuongtiktok #j4f #vanphong ",
+      "author": {
+        "id": "7583710581963408400",
+        "name": "nhacomeo.mut",
+        "nick": "Nhà có con mèo tên là Mứt",
+        "profile": "https://www.tiktok.com/@nhacomeo.mut",
+        "fans": 55500
+      },
+      "play_count": 268100,
+      "like_count": 75800,
+      "share_count": 9302,
+      "comment_count": 323,
+      "duration_s": 80,
+      "music": {
+        "id": "7690546011768490760",
+        "name": "âm thanh gốc - Nhà có con mèo tên là Mứt",
+        "author": "Nhà có con mèo tên là Mứt",
+        "original": true
+      },
+      "hashtags": [
+        "cortis",
+        "fypシ゚viral",
+        "xuhuongtiktok",
+        "j4f",
+        "vanphong",
+        "fypシ"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:01.640\na lô tin ơi ơi em nghe\n\n00:00:01.680 --> 00:00:04.080\ngửi gấp Cho anh cái báo cáo nha có chưa Bống ơi đây đây\n\n00:00:04.360 --> 00:00:06.240\ntài liệu anh cần đây chanh đường chanh đường\n\n00:00:06.320 --> 00:00:07.240\nnước sôi bà con\n\n00:00:08.800 --> 00:00:12.480\nUI UI da có SAO hông Bi Bi hỏng\n\n00:00:12.920 --> 00:00:16.560\nhỏng SAO thiệt hả AI vậy trời Chíp hả ồ hỏng\n\n00:00:16.880 --> 00:00:17.680\nhỏng SAO thiệt\n\n00:00:17.800 --> 00:00:20.480\nkhỏe re à thế làm thêm cái báo cáo Cho anh nha\n\n00:00:21.560 --> 00:00:22.920\ncứu tui trời ơi\n\n00:00:24.760 --> 00:00:26.360\ntí nữa tầm 10 giờ họp nha mít\n\n00:00:26.440 --> 00:00:27.800\nvui họp đến đây là kết thúc cảm\n\n00:00:27.880 --> 00:00:29.320\nơn mọi người đã lắng nghe yeah\n\n00:00:29.640 --> 00:00:32.000\ncuối cùng cũng giải quyết xong mất công việc rồi\n\n00:00:32.080 --> 00:00:33.160\nvui quá ăn mít\n\n00:00:34.600 --> 00:00:35.880\nAI AI đó\n\n00:00:36.200 --> 00:00:41.760\nlà chip đây a sếp nhờ chip gửi quà Cho anh nè ủa quà gì ê\n\n00:00:47.320 --> 00:00:48.120\nTao nghỉ việc\n\n00:00:49.240 --> 00:00:51.120\nmệt người ghê á đói nữa chứ\n\n00:00:51.200 --> 00:00:54.600\nđi lẹ lẹ hông thôi hết chỗ hé lô Bi nha hé lô các anh\n\n00:00:54.720 --> 00:00:55.560\nđang coi gì á\n\n00:00:55.760 --> 00:00:59.560\ncoi hình con cái gì cơ có con rồi hả con chó\n\n00:01:00.920 --> 00:01:01.720\ntrời ơi cứu tôi với\n\n00:01:02.040 --> 00:01:04.480\ncứu cuộc đời tôi với đứng lại AI Cho chạy hả\n\n00:01:08.080 --> 00:01:10.560\nYe Ye về tới nhà rồi ờ he\n\n00:01:11.200 --> 00:01:14.600\nnãy Bi đưa này Cho mình còn bảo là về tới nhà mới được đọc\n\n00:01:14.920 --> 00:01:16.280\nhông biết là gì đấy ta\n\n00:01:18.240 --> 00:01:20.040\nchuyện đúng team chết lặng\n",
+        "links": [
+          "research/trends/2026-10-19/apify/vtt/subtitle-nhacomeomu-20260928112616-7690545961994587412-vie-VN.vtt"
+        ],
+        "file": "subtitle-nhacomeomu-20260928112616-7690545961994587412-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "\"nãy anh quên chấm công\" má t cừ khùng=)))",
+          "likes": 3798,
+          "author": "hnghi_2612"
+        },
+        {
+          "text": "xin meme này đk , cute xỉu",
+          "likes": 777,
+          "author": "_ech_0"
+        },
+        {
+          "text": "dm content đỉnh vl😭",
+          "likes": 706,
+          "author": "_biiyeuchipp"
+        },
+        {
+          "text": "tr đất cơi hai cha con rồi có khác nhau chỗ nào ko[Ấm lòng]",
+          "likes": 638,
+          "author": "_mmhhcc"
+        },
+        {
+          "text": "\"nãy anh quên chấm công\":)))",
+          "likes": 420,
+          "author": "leeheyan"
+        },
+        {
+          "text": "tus cho xin meme này đko ạ😞",
+          "likes": 81,
+          "author": "conbodangbay"
+        },
+        {
+          "text": "Bà nội lặn lâu vclll😭",
+          "likes": 56,
+          "author": "_seo.yunn_1314"
+        },
+        {
+          "text": "này có tính là sớm hog😭",
+          "likes": 54,
+          "author": "vkseonghyeon009"
+        },
+        {
+          "text": "\" nãy anh quên chấm công\" cười nổ nhà",
+          "likes": 10,
+          "author": "tduongbcc"
+        },
+        {
+          "text": "cú hoon cú cuộc đời hoon với:))",
+          "likes": 8,
+          "author": "nshh.0913"
+        },
+        {
+          "text": "Nấc thang lên thiên đường ha gì :)))",
+          "likes": 6,
+          "author": "comeoutas_loveeomsean"
+        },
+        {
+          "text": "bà làm content đỉnh vãi, bà làm nhìu nhìu nha, iu iu (ko hối, ko to6, hay quá mún coi nhìu thui)",
+          "likes": 6,
+          "author": "euijun920"
+        },
+        {
+          "text": "Sớm",
+          "likes": 5,
+          "author": "yeuseonghyeon3"
+        },
+        {
+          "text": "lâu lắm ms thấy bả đăng vid á\nchoo tui xin meme này nhee",
+          "likes": 4,
+          "author": "lh.kh.2"
+        },
+        {
+          "text": "đẹp!",
+          "likes": 3,
+          "author": "lyandayneeee"
+        },
+        {
+          "text": "Bà ui tui xin ảnh này được hong, ảnh ghép hồ sơ luôn áa",
+          "likes": 3,
+          "author": "iu.vo.dumi"
+        },
+        {
+          "text": "cho tui đăng NK đko dợ",
+          "likes": 2,
+          "author": "ke.sitinh12.11"
+        },
+        {
+          "text": "Sao ác vs anh Bống vậy Bi oii =))",
+          "likes": 1,
+          "author": "anh.tran4813"
+        },
+        {
+          "text": "ủa chấm công là j z bà:D",
+          "likes": 0,
+          "author": "deadguy._0"
+        },
+        {
+          "text": "lên tv r kìa",
+          "likes": 0,
+          "author": "2310_diep"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7690545961994587412",
+      "create_time": "2026-09-28T11:26:16.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@vanphongsono/video/7696386489659280647",
+      "caption": "Ai chấm công lúc 12 rưỡi đêm vậy? #vanphongsono #dilamcogivui #dilam #office #giaitri ",
+      "author": {
+        "id": "7668971361074758657",
+        "name": "vanphongsono",
+        "nick": "Văn phòng Sờ Nờ",
+        "profile": "https://www.tiktok.com/@vanphongsono",
+        "fans": 16700
+      },
+      "play_count": 196200,
+      "like_count": 4010,
+      "share_count": 191,
+      "comment_count": 28,
+      "duration_s": 47,
+      "music": {
+        "id": "7696842885911694098",
+        "name": "âm thanh gốc - Văn phòng Sờ Nờ",
+        "author": "Văn phòng Sờ Nờ",
+        "original": true
+      },
+      "hashtags": [
+        "vanphongsono",
+        "dilamcogivui",
+        "dilam",
+        "office",
+        "giaitri"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "caption_fallback",
+        "text": "Ai chấm công lúc 12 rưỡi đêm vậy? #vanphongsono #dilamcogivui #dilam #office #giaitri ",
+        "links": []
+      },
+      "top_comments": [
+        {
+          "text": "Cái t quan tâm là chấm công lúc về hôm nào cũng 17:00 😂",
+          "likes": 13,
+          "author": "hoanganh.8882"
+        },
+        {
+          "text": "Hồi làm cty gần nhà, hnao quên chấm công là i rằng 9-10h tối lên cty chấm công xong về =))",
+          "likes": 7,
+          "author": "ngocleng93"
+        },
+        {
+          "text": "Không lệch 1 giây",
+          "likes": 2,
+          "author": "minh8119"
+        },
+        {
+          "text": "Say vào là gì cũng có thể làm đc luôn🤣🤣",
+          "likes": 2,
+          "author": "nongbichha"
+        },
+        {
+          "text": "Có bằng chứng để kêu nay con bị sếp bắt tăng ca đêm <(\")",
+          "likes": 1,
+          "author": "tobyfox47"
+        },
+        {
+          "text": "ơ trang có chấm đâu, bia chấm mà 🤣🤣🤣",
+          "likes": 1,
+          "author": "gaibinhphuoc_93"
+        },
+        {
+          "text": "sớm ạ",
+          "likes": 1,
+          "author": "ht37365"
+        },
+        {
+          "text": "😂😂😂",
+          "likes": 1,
+          "author": "lieudinhluan0"
+        },
+        {
+          "text": "😂😂😂",
+          "likes": 1,
+          "author": "nguyn.nguyn4882"
+        },
+        {
+          "text": "V nếu có đi làm trễ chắc k bị la 😅😅",
+          "likes": 0,
+          "author": "phucthinh20003"
+        },
+        {
+          "text": "Sự thật là vậy. Càng say càng ko cản được nó. 😂😂😂",
+          "likes": 0,
+          "author": "tuancaoqb"
+        },
+        {
+          "text": "Bảng chấm công hiển thị tên mà. Này như tự ghi ra luôn á",
+          "likes": 0,
+          "author": "shopdotreemgiare"
+        },
+        {
+          "text": "Cháy khen ho quá",
+          "likes": 0,
+          "author": "hiew535"
+        },
+        {
+          "text": "😂😂😂",
+          "likes": 0,
+          "author": "sad_06th2"
+        },
+        {
+          "text": "🥰🥰🥰",
+          "likes": 0,
+          "author": "tranmg18"
+        },
+        {
+          "text": "😂😂😂",
+          "likes": 0,
+          "author": "_lik_milk_"
+        },
+        {
+          "text": "🤣🤣🤣",
+          "likes": 0,
+          "author": "thien1998a"
+        },
+        {
+          "text": "🤣🤣🤣",
+          "likes": 0,
+          "author": "tratran2312"
+        },
+        {
+          "text": "🤣🤣🤣",
+          "likes": 0,
+          "author": "muadonglanhgianha"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7696386489659280647",
+      "create_time": "2026-10-14T05:10:25.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@kieu06011993/video/7361063393723288840",
+      "caption": "Trả lời tin nhắn ngoài giờ - Sống sót nơi công sở #LearnOnTikTok #songsotnoicongso #xuhuongtiktok #longervideos #chuyencongso #fyp #dilamcogivui #cuocsongcongso #vanphong ",
+      "author": {
+        "id": "7197748740379034651",
+        "name": "kieu06011993",
+        "nick": "Kiều nói chuyện",
+        "profile": "https://www.tiktok.com/@kieu06011993",
+        "fans": 18200
+      },
+      "play_count": 53700,
+      "like_count": 1277,
+      "share_count": 23,
+      "comment_count": 50,
+      "duration_s": 145,
+      "music": {
+        "id": "6860515009819052033",
+        "name": "Vlog Video work Fashionable BGM(847726)",
+        "author": "Tsuyoshi_san",
+        "original": false
+      },
+      "hashtags": [
+        "learnontiktok",
+        "songsotnoicongso",
+        "xuhuongtiktok",
+        "longervideos",
+        "chuyencongso",
+        "fyp",
+        "dilamcogivui",
+        "cuocsongcongso",
+        "vanphong",
+        "LearnOnTikTok"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.000 --> 00:00:00.760\nthành thật nha\n\n00:00:00.761 --> 00:00:03.481\ncó phải là cứ sếp mà nhắn tin ngoài giờ là các bạn sẽ\n\n00:00:03.560 --> 00:00:04.720\nưu tiên L đi hông\n\n00:00:05.160 --> 00:00:07.160\nchào các bạn hay là vui chứ ờ\n\n00:00:07.440 --> 00:00:08.080\nthật Ra cái việc mà lời\n\n00:00:08.081 --> 00:00:09.441\ntin nhắn của sếp ngoài giờ nó chả có gì Sai\n\n00:00:09.480 --> 00:00:10.280\nthậm chí nó còn đúng ấy\n\n00:00:10.480 --> 00:00:11.640\ntại vì là ngoài giờ mà các bạn\n\n00:00:11.720 --> 00:00:12.560\nchúng ta chỉ làm việc trong rừng\n\n00:00:12.561 --> 00:00:13.921\nlàm việc quy định 8 tiếng một ngày thôi\n\n00:00:13.922 --> 00:00:15.641\ncòn ngoài giờ rồi thì chúng ta được quyền reject\n\n00:00:16.159 --> 00:00:16.640\nbất kỳ một cái\n\n00:00:16.641 --> 00:00:17.761\ntin nhắn hay bất kỳ một cái công việc nào\n\n00:00:17.762 --> 00:00:18.961\nnếu như mà không phải là do cái sự chậm muộn\n\n00:00:19.000 --> 00:00:19.800\ntại vì chúng ta\n\n00:00:20.040 --> 00:00:21.720\nthế nhưng mà đó chỉ là cái lý lẽ kiểu à\n\n00:00:23.400 --> 00:00:24.200\nđơn thuần thôi\n\n00:00:24.201 --> 00:00:25.761\nvì đi làm thì nó không thể nào mà cứ một là một\n\n00:00:25.762 --> 00:00:27.801\n2 là 2 được không thể nào mà cứ Ra khỏi công ty\n\n00:00:27.840 --> 00:00:28.760\nthì chúng ta gọi là cấp sách\n\n00:00:28.761 --> 00:00:29.481\nđi về cái là thôi\n\n00:00:29.482 --> 00:00:30.441\nkệ mà kệ tất cả\n\n00:00:30.480 --> 00:00:31.295\nđúng là\n\n00:00:31.360 --> 00:00:32.200\nnói Chung là về cơ bản\n\n00:00:32.240 --> 00:00:33.200\nthì mình sẽ có một số cái nguyên lý\n\n00:00:33.240 --> 00:00:34.280\nsau để mà mình quyết định cái việc là\n\n00:00:34.281 --> 00:00:35.241\nmình có làm việc ngoài giờ hay không\n\n00:00:35.242 --> 00:00:36.321\nhay là tương tác Cho xét hay không\n\n00:00:36.720 --> 00:00:38.080\nthứ nhất là đối với những cái việc gấp\n\n00:00:38.480 --> 00:00:39.320\nmình sẽ trả lời ngay\n\n00:00:39.640 --> 00:00:40.640\nhoặc là không\n\n00:00:40.641 --> 00:00:42.281\nngay thì cũng trong cái phạm VI thời gian mà gần nhất\n\n00:00:42.400 --> 00:00:43.440\ncái buổi ngoài giờ đó\n\n00:00:44.160 --> 00:00:44.960\nthế như nào là gấp\n\n00:00:45.120 --> 00:00:45.520\nđối với mình\n\n00:00:45.521 --> 00:00:46.801\ngấp là những cái việc mà nó liên quan đến tiền\n\n00:00:47.080 --> 00:00:48.760\nví dụ liên quan đến doanh thu khách hàng\n\n00:00:48.920 --> 00:00:50.000\nliên quan đến những cái mà gọi là\n\n00:00:50.200 --> 00:00:51.560\ncó thể ảnh hưởng được cái việc là công ty\n\n00:00:51.600 --> 00:00:52.240\nhay là phòng ban\n\n00:00:52.241 --> 00:00:53.841\nhay đồng nghiệp của bạn hay là cá nhân của bạn\n\n00:00:53.842 --> 00:00:54.881\ncó chốt được cái điêu đấy hay không\n\n00:00:54.920 --> 00:00:55.720\nkhông vâng lời mình gọi là gấp\n\n00:00:55.760 --> 00:00:56.760\ncác sếp thường là họ sẽ không\n\n00:00:56.800 --> 00:00:57.920\nthể nào mà họ ngồi ở hệ thống lại\n\n00:00:57.960 --> 00:00:59.360\nhôm nay anh chị có những câu hỏi này Cho các em\n\n00:00:59.640 --> 00:01:01.360\nvà anh chị sẽ hỏi trước hay là trong giờ làm việc đâu\n\n00:01:01.560 --> 00:01:03.640\nmà họ sẽ thường là nghĩ Ra vào cái lúc đó và họ sẽ hỏi\n\n00:01:03.880 --> 00:01:05.240\nthường biết là vì lúc đấy họ đang nghĩ Ra\n\n00:01:05.400 --> 00:01:06.280\nhoặc là họ cần thông tin để\n\n00:01:06.400 --> 00:01:07.920\nupdate ngay để họ hiểu cái vấn đề đó ngay\n\n00:01:08.080 --> 00:01:09.440\nCho nên mình sẽ coi đó là cái việc gấp\n\n00:01:09.760 --> 00:01:12.200\nvới những cái người sếp mà mình đánh giá là không có\n\n00:01:12.240 --> 00:01:14.240\ntính quản trị Cao hay là không có cái tính gọi là\n\n00:01:14.440 --> 00:01:15.400\nnắm bắt về đầu việc Cao ấy\n\n00:01:15.680 --> 00:01:16.480\nthì cái câu hỏi của họ\n\n00:01:16.481 --> 00:01:17.841\nnó sẽ kiểu là nó không có sự liên kết với nhau\n\n00:01:17.920 --> 00:01:19.320\ntrong những cái luồng câu hỏi mà họ đang hỏi mình\n\n00:01:19.600 --> 00:01:20.480\nCho nên câu hỏi và ngoài giờ\n\n00:01:20.481 --> 00:01:21.401\nnó cũng sẽ chả liên quan gì câu hỏi\n\n00:01:21.440 --> 00:01:22.520\ntrong giờ cả nên là mình\n\n00:01:22.521 --> 00:01:23.361\nsẽ không có nói về việc gấp\n\n00:01:23.680 --> 00:01:25.920\ncái thứ 2 nữa là mình sẽ ưu tiên trả lời sếp\n\n00:01:26.080 --> 00:01:27.840\nkhi mà mình đang có những cái mục đích\n\n00:01:28.280 --> 00:01:30.520\nCao trong cái việc phát triển hay là\n\n00:01:30.920 --> 00:01:31.720\nthăng tiến trong công việc\n\n00:01:31.840 --> 00:01:33.520\nthì khi mà mình đã có mục tiêu Cao trong công việc ấy\n\n00:01:33.560 --> 00:01:34.920\nthì cái động lực làm việc của mình nó rất là nhiều\n\n00:01:35.400 --> 00:01:36.200\nngoài giờ hay là\n\n00:01:36.280 --> 00:01:36.880\ntối hay khuya\n\n00:01:36.881 --> 00:01:38.761\nmà xếp chat những cái yêu cầu về công việc hay là kiểu\n\n00:01:38.920 --> 00:01:40.000\nthì mình sẽ luôn coi đó là cơ hội\n\n00:01:40.280 --> 00:01:41.400\nchứ mình sẽ không coi đó là một cái\n\n00:01:41.520 --> 00:01:43.440\náp lực hay là cái gì đè mình bắt là phải làm ngoài giờ\n\n00:01:43.441 --> 00:01:45.201\nvân vân thì mình sẽ hay tương tác ngay và luôn\n\n00:01:45.280 --> 00:01:45.840\nthì cái này mình nghĩ là\n\n00:01:45.841 --> 00:01:47.001\nnó vừa là mục đích và vừa là động lực\n\n00:01:47.400 --> 00:01:48.520\nnếu như mà nó không thuộc 2 cái đó\n\n00:01:48.521 --> 00:01:49.281\nnhưng mà mình vẫn lăn tăn\n\n00:01:49.282 --> 00:01:50.441\ntrong cái câu chuyện là muốn trả lời í\n\n00:01:50.760 --> 00:01:51.960\nthì thường thường mình cũng sẽ phải\n\n00:01:52.120 --> 00:01:52.920\nwarning sếp một chút\n\n00:01:53.360 --> 00:01:54.160\nthì cách thức của mình là\n\n00:01:54.161 --> 00:01:55.561\nlà mình hay kiểu là mình không trả lời ngay\n\n00:01:56.120 --> 00:01:58.160\nà mặc dù mình có đọc nhá cái này Xin lỗi các sếp\n\n00:01:58.320 --> 00:01:59.520\nnhưng mà mình thấy thật là mình không trả lời ngay\n\n00:01:59.800 --> 00:02:01.200\nmình thường để một quãng thời gian Ra để trả lời\n\n00:02:01.400 --> 00:02:02.200\nhoặc là mình sẽ không\n\n00:02:02.201 --> 00:02:03.921\ntrả lời vào những cái giờ mà người ta biết chắc là à\n\n00:02:04.240 --> 00:02:05.480\nmột người bình thường sẽ phải nấu cơm\n\n00:02:05.960 --> 00:02:07.840\năn cơm dọn dẹp vào thời điểm đó\n\n00:02:07.880 --> 00:02:09.320\nmà mình sẽ trả lời vào lúc người ta sẽ nghĩ là à\n\n00:02:09.321 --> 00:02:09.961\nvào cái CA tối\n\n00:02:09.962 --> 00:02:10.761\nkhi người ta đã đi nghỉ\n\n00:02:10.880 --> 00:02:11.880\nhoặc chuẩn bị đi nghỉ rồi\n\n00:02:12.240 --> 00:02:13.160\nthì mình sẽ trả lời vào lúc đó\n\n00:02:13.320 --> 00:02:14.440\nđể các sếp maybe là AI mà\n\n00:02:14.560 --> 00:02:15.400\nsensitive hay AI mà kiểu\n\n00:02:15.480 --> 00:02:17.600\nnghĩ Cho nhân viên một chút thì họ sẽ biết là ô kê\n\n00:02:17.601 --> 00:02:19.001\nnhững lần sau họ sẽ hỏi tránh cái giờ đấy Ra\n\n00:02:19.360 --> 00:02:20.000\ncái gì đáng phát sinh\n\n00:02:20.001 --> 00:02:21.041\nđáng ngoài giờ thì mình không có tiếc\n\n00:02:21.440 --> 00:02:22.360\nnhưng nếu thật sự nó không đáng\n\n00:02:22.560 --> 00:02:23.880\nnó hoàn toàn có thể xử lý ở trong giờ\n\n00:02:24.400 --> 00:02:25.200\nphải xem lại nha\n",
+        "links": [
+          "research/trends/2026-10-19/apify/vtt/subtitle-kieu060119-20240423140532-7361063393723288840-vie-VN.vtt"
+        ],
+        "file": "subtitle-kieu060119-20240423140532-7361063393723288840-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "hi em, alo em, em ơi...nhắn vậy để đó, muốn gì nhắn 1 lần luôn đi 😂😂😂",
+          "likes": 34,
+          "author": "nguyenxxix"
+        },
+        {
+          "text": "nhưng chị ơi, có những sếp toàn nhắn kiểu \"em ơi\" xong để đấy. lúc đấy em chẳng biết có nên rep hay không nữa???",
+          "likes": 21,
+          "author": "con_meo_quyt"
+        },
+        {
+          "text": "E làm trên tele. Chỉ cài tele trên lap làm việc. Nào làm thì mở lên check tn 🤣",
+          "likes": 7,
+          "author": "chi2chanh2"
+        },
+        {
+          "text": "Nếu đang rảnh có thể trả lời luôn. Nhg Sếp nhắn lúc dg nấu cơm, hay đi thể dục thì chịu. Có hôm sếp 11h nhắn lúc đó đã ngủ. Sg hôm sau đọc được mới trả lời .",
+          "likes": 6,
+          "author": "nga_nao_nhiet"
+        },
+        {
+          "text": "Sếp mà có năng lực thì đã không nhắn lúc ngoài giờ. Sếp yêu cầu nhân viên chuyên nghiệp thì đầu tiên sếp phải chuyên nghiệp trước đã",
+          "likes": 5,
+          "author": "nam_bes_xius"
+        },
+        {
+          "text": "Mình đi làm thì trong giờ ko nhắn gì nhưng cứ đến lúc tan làm trên đường về thì nhắn tin kịp rep thì bị nói là thiếu trách nhiệm công việc mà trong khi đó đang phải đi ngoài đường từ chỗ làm về nhà",
+          "likes": 4,
+          "author": "vitngoc127"
+        },
+        {
+          "text": "Em theo dõi chị cũng được 1 thời gian rồi, em muốn xin lời khuyên từ chị được không ạ. Chuyện là em đang thử vc ở công ty này được 1 tháng nhưng ngày",
+          "likes": 2,
+          "author": "aixiongmao8"
+        },
+        {
+          "text": "Ngày nghỉ là e tắt hết tt nhóm làm việc luôn😌 nào đi làm giải quyết sau",
+          "likes": 2,
+          "author": "selenanguyn308"
+        },
+        {
+          "text": "lúc đầu nhiệt tình trả lời vì e nghỉ lich sự. sau này riết họ nghỉ việc rep tn vào ngày nghỉ, ngoài giờ như là nghĩa vụ vậy á c🤨",
+          "likes": 2,
+          "author": "hanyhany.33"
+        },
+        {
+          "text": "trước khi NV phân loại cv gấp hay ko gấp để trả lời thì Sếp nên biết phân loại cv gấp hay ko gấp mà nt cho NV ngoài giờ 😏",
+          "likes": 1,
+          "author": "dhn109"
+        },
+        {
+          "text": "Nếu đã xin nghỉ phép vì ốm, mà sếp vẫn gọi điện hỏi về những thứ không gấp thì sao ạ 🥺",
+          "likes": 1,
+          "author": "chloe_vtth"
+        },
+        {
+          "text": "Sếp mà mình quý thì k lờ, sếp nhắn phát lựa để trả lời luôn, còn sếp mà mình k ưa thì trong giờ làm việc cũng cứ từ từ",
+          "likes": 1,
+          "author": "thynt258"
+        },
+        {
+          "text": "Thật mà:))",
+          "likes": 0,
+          "author": "bng.iu137"
+        },
+        {
+          "text": "ko ạ em vẫn trả lời nhưng mai em đến cty kiểm tra và xử lý ạ",
+          "likes": 0,
+          "author": "thuyds90"
+        },
+        {
+          "text": "mình lamd sale mà, lúc nào tắt điện thoại đi xong bật lại là thấy 99+ tn khách gọi bà cố lên luôn🥺",
+          "likes": 0,
+          "author": "tha0_tha0"
+        },
+        {
+          "text": "Tắt chức năng đã seen đi an toàn nhất, lúc đó sẽ có nhiều opt để lựa chọn hơn",
+          "likes": 0,
+          "author": "miu.min.max"
+        },
+        {
+          "text": "😁 chuẩn. ngoài giờ rủ đi ăn thì ok kkk",
+          "likes": 0,
+          "author": "ilive.9986"
+        },
+        {
+          "text": "sếp t nhắn ngoài giờ toàn rủ đi nhậu hoặc xem bóng 😂😂😂 nể luôn 😂😂",
+          "likes": 0,
+          "author": "wilson91tth"
+        },
+        {
+          "text": "Chắc em thuộc team hiếm, 24/24 đều là giờ làm 😬😬😬😬😬.",
+          "likes": 0,
+          "author": "aaaa33077"
+        },
+        {
+          "text": "Chính xác luôn 🤣🤣🤣",
+          "likes": 0,
+          "author": "phamcuong_guitarist"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7361063393723288840",
+      "create_time": "2024-04-23T14:05:32.000Z",
+      "is_slideshow": false
+    }
+  ]
+}
