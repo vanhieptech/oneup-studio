@@ -20,6 +20,17 @@
 ⚠ rule-32  post.md missing
 ✔ rule-45  video-engine validate: ✔ /workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/plan-A.voiced.json: 11 scenes, 83.70s
 ✔ L-033    layout collisions: none
+✔ rule-46  STT b01 1.00: “Bạn tưởng mình hay quên hả?”
+✔ rule-46  STT b01b 1.00: “Không đâu, bạn đọc cả tối mà đầu vấn trống, vì bạn có nhớ gì đâu mà quên.”
+✔ rule-46  STT b02 0.92: “Nghe vậy có tức không? Như ôm thì hay học tiếng Anh, mình đọc đi đọc lại gạch chi chết mà chữ vẫn chưa vô đầu.”
+✔ rule-46  STT b03 0.97: “Vậy tại mình đọc chưa đủ hả? Không hẳn đâu, đọc lại chỉ là mắt quen mặt chữ, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.”
+✔ rule-46  STT b04 0.76: “Vậy sao biết mình thuộc thiệt? Nhàn và cộng sự gom 222.000 cứu, hơn 48.000 học sinh, có kiểm tra nhỏ thì điểm cao hơn ở mức vừa.”
+✔ rule-46  STT b05 0.83: “Nghe kiểm tra và nghĩ bài thi hã, không đó là tự kiểm lúc học, đụng lúc kỳ xếp 10 cánh học, cách này ở nhóm cao nhất, độc lại, gạch chân ở nhóm thấp nhất.”
+✔ rule-46  STT b06 1.00: “Vậy đọc lại bỏ luôn hả, không hẳn tác dụng nó hẹp hơn thôi. Học xong, gấp sách lại từ kiểm trước, đừng quay đầu đọc lại ngay.”
+✔ rule-46  STT b07 0.98: “Tự kiểm làm sao đây? Như mình nè học xong một phần, mình gấp sách lại, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ.”
+✔ rule-46  STT b08 0.90: “Còn Ông Thi Tiến Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại tự nói chương này, nói dì. Bí chỗ nào là chưa thuộc chỗ đó?”
+✔ rule-46  STT b09 0.96: “Bài dài quá kiểm so hết, nhớ clip trước không, bài dài thì chia nhỏ ra trước, học xong phần nào kiểm ngay phần đó.”
+✔ rule-46  STT b10 0.89: “Quay lại sáng mai coi, đâu phải mình học giỡ. Mắc quen chữ thôi, đầu chưa tự nhớ lần nào. Tối nay bạn nhớ được máy ý. Comment một con số nha.”
 ✖ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
 ✔ rule-55  first spoken clause 6 words (≤ 6, punchy)
 ✔ rule-55  first spoken word at 0.12s (≤ 0.3)
@@ -117,6 +128,6 @@
 ✔ L-007    b09/c04v1-b09: F5 per-phrase generation
 ✔ L-016    b10/c04v1-b10: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
 ✔ L-007    b10/c04v1-b10: F5 per-phrase generation
-⚠ L-013    29 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+⚠ L-013    31 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
-120 checks · 2 error(s) · 13 warning(s) → FAIL
+131 checks · 2 error(s) · 13 warning(s) → FAIL
