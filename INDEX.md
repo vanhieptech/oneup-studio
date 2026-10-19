@@ -66,9 +66,10 @@ tags: [index, retrieval]
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v3.1-locked.md` | Clip 04 v3.1 (LOCKED, RENDERED — archived): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v4.md` | Clip 04 v4 (ARCHIVED — superseded by v5 draft): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v5.md` | Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
-| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v05.md` | Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v06.md` | Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v07.md` | Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -101,10 +102,17 @@ tags: [index, retrieval]
 | effects-log | log | living | `logs/effects-log.md` | Effects log |
 | hyperframes-audit-2026-10-13 | audit | partial (sample fixed, clip-01 port pending) | `logs/hyperframes-audit-2026-10-13.md` | Audit: clip-01 explainer vs HyperFrames skills (DL-032) |
 | lessons | log | ready | `logs/lessons.md` | Lessons: lỗi đã gặp → kiểm tra tự động (rule-49) |
+| rule-checklist | checklist | active | `logs/rule-checklist.md` | Rule checklist hợp nhất — OneUp / @hi.oneup |
+| rule-scoring-rubric | rubric | proposal-awaiting-hiep | `logs/rule-scoring-rubric.md` | Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
 | media.README | readme | ready | `media/README.md` | README |
 | pipeline.characters-v2.README | readme | ready | `pipeline/characters-v2/README.md` | Character rig v2 (chibi, liquid) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
+| research.kokoro-vs-f5tts | research | reference | `research/agents/kokoro-vs-f5tts-initial-research-vi.md` | Kokoro vs F5-TTS — Nghiên cứu ban đầu cho pipeline giọng @hi.oneup |
+| research.local-deep-research | research | reference | `research/agents/local-deep-research-review-vi.md` | Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup |
+| research.short-factory | research | research-only | `research/agents/short-factory-research-vi.md` | Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio |
+| research.social-poster | research | reference | `research/agents/social-poster-research.md` | Social Poster — Nghiên cứu repo langchain-ai/social-media-agent (draft-only cho OneUp) |
+| research.social-research-audit | research | reference | `research/agents/social-research-repo-audit-vi.md` | Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp) |
 | research-character-animation | research | draft | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.motion-layer | research | reference | `research/motion-layer.md` | @hi.oneup motion layer, based on gongnyang/awesome-ai-motion |
@@ -255,6 +263,15 @@ tags: [index, retrieval]
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |
 | video-engine | guide | active | `video-engine/README.md` | video-engine: comic character video từ scene plan (Remotion + React + TS) |
+| workflows.agents.ace-music | None | ready | `workflows/agents/ace-music.md` | ACE Music — Workflow |
+| workflow-deep-research | workflow | draft-awaiting-hiep | `workflows/agents/deep-research.md` | Workflow Deep Research — kiểm chứng fact cho @hi.oneup |
+| kokoro-voice | workflow | draft | `workflows/agents/kokoro-voice.md` | Kokoro Voice — Workflow riêng |
+| workflow.opencreator-studio | workflow | draft-awaiting-hiep | `workflows/agents/opencreator-studio.md` | Workflow — OpenCreator Studio |
+| workflow.agent.rule-reviewer | workflow | active | `workflows/agents/rule-reviewer.md` | Rule Reviewer — Workflow |
+| workflow.agent.short-factory | workflow | active | `workflows/agents/short-factory.md` | Workflow agent: Short Factory |
+| workflow.agent.shorts-cutter | workflow | ready-for-first-input | `workflows/agents/shorts-cutter.md` | Shorts Cutter — workflow riêng |
+| workflow.agent.social-poster | workflow | active | `workflows/agents/social-poster.md` | Workflow Social Poster: link → bản nháp X/LinkedIn cho OneUp |
+| workflow-social-research | workflow | draft | `workflows/agents/social-research.md` | Workflow: Social Research |
 
 ## Rules (source: `rules/video-rules.md`)
 | id | title |

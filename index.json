@@ -439,7 +439,7 @@
    "status": "draft",
    "updated": "2026-10-19",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md",
-   "title": "Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
+   "title": "Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch"
   },
   {
    "id": "clip-04.script-final",
@@ -456,6 +456,14 @@
    "updated": "2026-10-19",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v06.md",
    "title": "Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v07.md",
+   "title": "Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch"
   },
   {
    "id": "idea-bank",
@@ -714,6 +722,22 @@
    "title": "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
   },
   {
+   "id": "rule-checklist",
+   "type": "checklist",
+   "status": "active",
+   "updated": "2026-10-19",
+   "path": "logs/rule-checklist.md",
+   "title": "Rule checklist hợp nhất — OneUp / @hi.oneup"
+  },
+  {
+   "id": "rule-scoring-rubric",
+   "type": "rubric",
+   "status": "proposal-awaiting-hiep",
+   "updated": "2026-10-19",
+   "path": "logs/rule-scoring-rubric.md",
+   "title": "Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt)"
+  },
+  {
    "id": "rules-audit-2026-10-13",
    "type": "log",
    "status": "done",
@@ -744,6 +768,46 @@
    "updated": "2026-10-13",
    "path": "pipeline/pipeline.md",
    "title": "Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only)"
+  },
+  {
+   "id": "research.kokoro-vs-f5tts",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/kokoro-vs-f5tts-initial-research-vi.md",
+   "title": "Kokoro vs F5-TTS — Nghiên cứu ban đầu cho pipeline giọng @hi.oneup"
+  },
+  {
+   "id": "research.local-deep-research",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/local-deep-research-review-vi.md",
+   "title": "Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup"
+  },
+  {
+   "id": "research.short-factory",
+   "type": "research",
+   "status": "research-only",
+   "updated": "2026-10-19",
+   "path": "research/agents/short-factory-research-vi.md",
+   "title": "Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio"
+  },
+  {
+   "id": "research.social-poster",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/social-poster-research.md",
+   "title": "Social Poster — Nghiên cứu repo langchain-ai/social-media-agent (draft-only cho OneUp)"
+  },
+  {
+   "id": "research.social-research-audit",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/social-research-repo-audit-vi.md",
+   "title": "Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp)"
   },
   {
    "id": "research-character-animation",
@@ -1841,6 +1905,78 @@
    "updated": "2026-10-13",
    "path": "video-engine/README.md",
    "title": "video-engine: comic character video từ scene plan (Remotion + React + TS)"
+  },
+  {
+   "id": "workflows.agents.ace-music",
+   "type": null,
+   "status": "ready",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/ace-music.md",
+   "title": "ACE Music — Workflow"
+  },
+  {
+   "id": "workflow-deep-research",
+   "type": "workflow",
+   "status": "draft-awaiting-hiep",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/deep-research.md",
+   "title": "Workflow Deep Research — kiểm chứng fact cho @hi.oneup"
+  },
+  {
+   "id": "kokoro-voice",
+   "type": "workflow",
+   "status": "draft",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/kokoro-voice.md",
+   "title": "Kokoro Voice — Workflow riêng"
+  },
+  {
+   "id": "workflow.opencreator-studio",
+   "type": "workflow",
+   "status": "draft-awaiting-hiep",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/opencreator-studio.md",
+   "title": "Workflow — OpenCreator Studio"
+  },
+  {
+   "id": "workflow.agent.rule-reviewer",
+   "type": "workflow",
+   "status": "active",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/rule-reviewer.md",
+   "title": "Rule Reviewer — Workflow"
+  },
+  {
+   "id": "workflow.agent.short-factory",
+   "type": "workflow",
+   "status": "active",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/short-factory.md",
+   "title": "Workflow agent: Short Factory"
+  },
+  {
+   "id": "workflow.agent.shorts-cutter",
+   "type": "workflow",
+   "status": "ready-for-first-input",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/shorts-cutter.md",
+   "title": "Shorts Cutter — workflow riêng"
+  },
+  {
+   "id": "workflow.agent.social-poster",
+   "type": "workflow",
+   "status": "active",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/social-poster.md",
+   "title": "Workflow Social Poster: link → bản nháp X/LinkedIn cho OneUp"
+  },
+  {
+   "id": "workflow-social-research",
+   "type": "workflow",
+   "status": "draft",
+   "updated": "2026-10-19",
+   "path": "workflows/agents/social-research.md",
+   "title": "Workflow: Social Research"
   }
  ],
  "rules": [
