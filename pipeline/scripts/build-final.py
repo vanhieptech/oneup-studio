@@ -328,6 +328,10 @@ def main():
     t2 = json.load(open(tj)); t2["total"] = total; t2["partStarts"] = starts
     json.dump(t2, open(tj, "w"), ensure_ascii=False, indent=1)
     print("final →", out, f"({total}s)")
+    
+    # Generate SRT sidecar (English captions synced to TTS timing)
+    if not sel:  # only for full clips, not preview scenes
+        sh([sys.executable, os.path.join(REPO, "pipeline/scripts/generate_srt.py"), tj])
 
 if __name__ == "__main__":
     main()
