@@ -1,0 +1,107 @@
+{
+ "date": "2026-10-20",
+ "timezone": "Asia/Saigon",
+ "collected_at_ict": "2026-10-20 23:21–23:27",
+ "agent": "Social Poster (executor)",
+ "runs": [
+  {
+   "platform": "tiktok",
+   "actor": "clockworks/tiktok-scraper",
+   "run_id": "ZjK5AyEIbn4zPDGu7",
+   "dataset_id": "XdFjTTVrTQSxoZQxP",
+   "items": 30,
+   "compute_units": 0.0614,
+   "input": {
+    "hashtags": [
+     "hoctap",
+     "studytok",
+     "phattrienbanthan",
+     "hoctienganh"
+    ],
+    "searchQueries": [
+     "meo hoc bai nho lau",
+     "cach hoc thuoc nhanh"
+    ],
+    "searchSection": "/video",
+    "resultsPerPage": 5,
+    "commentsPerPost": 0,
+    "proxyCountryCode": "None"
+   },
+   "price_free_tier": "$0.0037/result + $0.001 start",
+   "est_usd": 0.112,
+   "hashtag_counters": {
+    "studytok": 100000000000,
+    "phattrienbanthan": 21900000000,
+    "hoctienganh": 13000000000,
+    "hoctap": 5500000000
+   },
+   "hashtag_counters_note": "searchHashtag.views do actor trả về (bộ đếm view cả đời của trang hashtag), lấy 20/10/2026; #studytok = 100.000.000.000 có thể là số làm tròn/trần"
+  },
+  {
+   "platform": "instagram",
+   "actor": "apify/instagram-hashtag-scraper",
+   "run_id": "aSVxUBYfin9YUNzLF",
+   "dataset_id": "yk1gbh7EWLC8x4RL5",
+   "items": 24,
+   "input": {
+    "hashtags": [
+     "hoctap",
+     "phattrienbanthan",
+     "studygram",
+     "hoctienganh"
+    ],
+    "resultsType": "reels",
+    "resultsLimit": 6
+   },
+   "price_free_tier": "$0.0026/result",
+   "est_usd": 0.062
+  },
+  {
+   "platform": "youtube_shorts",
+   "actor": "streamers/youtube-scraper",
+   "run_id": "hJqK4fwPr74nPIvmv",
+   "dataset_id": "dgDfXNZ77pF4BNz8t",
+   "items": 24,
+   "input": {
+    "searchQueries": [
+     "mẹo học bài nhớ lâu",
+     "cách học thuộc nhanh",
+     "phát triển bản thân"
+    ],
+    "maxResults": 0,
+    "maxResultsShorts": 8
+   },
+   "price_free_tier": "$0.004/video",
+   "est_usd": 0.096,
+   "note": "MCP báo timeout ở lần gọi, nhưng chỉ có 1 run được tạo (đã kiểm run id)"
+  },
+  {
+   "platform": "threads",
+   "actor": "scraping_solutions/threads-search-scraper",
+   "run_id": "Kd2HaljaXJ8girANh",
+   "dataset_id": "klgGk9tC2UX2Y98XI",
+   "items": 17,
+   "charged_events": 20,
+   "input": {
+    "mode": "keyword",
+    "keywords": [
+     "cách học"
+    ],
+    "maxResultsPerInput": 20,
+    "sort": "top"
+   },
+   "price_free_tier": "$0.002/post",
+   "est_usd": 0.04,
+   "note": "actor báo 20 post saved, dataset có 17 item; scraper không trả topic tag (trường riêng của Threads)"
+  },
+  {
+   "platform": "x",
+   "tool": "x.get_trends_by_woeid",
+   "woeid": 23424984,
+   "items": 30,
+   "note": "Trend X Việt Nam lúc 23:23 ICT: fandom Thái, crypto, 'Thứ Ba' — không có gì về học tập/năng suất; không dùng"
+  }
+ ],
+ "est_total_usd": 0.31,
+ "est_note": "Ước theo bảng giá FREE tier của từng actor; MCP không trả số USD thực. CU tổng ≈ 0.12"
+}
