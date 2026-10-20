@@ -119,14 +119,18 @@ BK=lambda **kw: dict({"kind":"book","x":300,"y":1020,"s":0.85},**kw)
 SH=lambda **kw: dict({"kind":"sheet","x":470,"y":1250,"s":0.48},**kw)
 SCHED={"kind":"sheet","x":185,"y":620,"s":0.30,"rot":7,"inkLines":3,"inkAt":0}
 PILE={"kind":"pile","x":300,"y":900,"s":0.55}
+# pen prop (FLUX QA 20/10): tip position keys [t_scene, x, y] in frame px; stops = motionless. Butt under chibi hand (~619,1378).
+PEN=lambda keys,rot=22: {"kind":"pen","x":0,"y":0,"s":1,"rot":rot,"len":200,"keys":keys}
+PEN_STOP=[[0,434,1306]]
+B03_KEYS=[[0,409,1206],[2.1,409,1206],[2.48,514,1206],[2.55,409,1231],[2.93,514,1231],[3.0,409,1256],[3.38,514,1256],[3.45,409,1281],[3.83,514,1281],[4.2,409,1306],[4.4,409,1306],[5.05,434,1306]]
 def SC(id,part,bg,tr,cast,fx,sfx,props,push=0.05,trans="cut"):
     return {"id":id,"beat":f"clip-04.{id}","part":part,"role":"Thầy","background":bg,"framing":"medium","push":push,"transition":trans,"cast":[cast],"fx":{"visual":fx[0],"word":fx[1]},"sfx":sfx,"props":props,"lines":lines_by[id]}
 A=[
- SC("b01","hook","desk","cut",C(act="idle",ex="surprised"),("mmx-cut-on-motion: but dung tren giay trang dung nhip cau hoi, sach gap day sang ben (frame 0)","quên sạch"),[SFX("snap",0.0,"quên sạch")],[BK(state="closed"),SH(inkLines=0)],push=0.14),
+ SC("b01","hook","desk","cut",C(act="idle",ex="surprised"),("mmx-cut-on-motion: but dung tren giay trang dung nhip cau hoi, sach gap day sang ben (frame 0)","quên sạch"),[SFX("snap",0.0,"quên sạch")],[BK(state="closed"),SH(inkLines=0),PEN([[0,430,1228],[0.15,430,1228],[0.75,472,1246]],rot=38)],push=0.14),
  SC("b02","struggle","desk","cut",C(ex="happy"),("mmx-cruise: mot trang lat deu lap lai, chong the giu nguyen","thuộc làu"),[SFX("swish",0.5,"đọc đi đọc lại")],[BK(state="open",flipAt=1.2),dict(SCHED),PILE]),
- SC("b03","struggle","desk","cut",C(act="talking",ex="focused"),("mmx-glide: tay glide doc giay, but dung o cho trang sau 4 vet dong","Bút dừng"),[SFX("pen",0.5,"viết lại")],[BK(state="closed"),dict(SCHED),SH(inkLines=4,inkAt=1.0,inkStagger=0.5)]),
- SC("b04","struggle","desk","cut",C(act="idle",ex="confused"),("mmx-cruise cham: sach VAN GAP, but nam yen canh giay trang","Giấy trắng"),[SFX("swish",0.5,"quen mắt")],[BK(state="closed"),dict(SCHED),SH(inkLines=4,inkAt=-3)]),
- SC("b05","payoff","desk","cut",C(ex="focused"),("mmx-snap-settle: sach MO dung mot lan o cho bi roi gap lai, tay settle tren giay","mở sách"),[SFX("pop",0.3,"mở sách"),SFX("pen",2.0,"viết tiếp")],[BK(state="closed",openAt=0.8),dict(SCHED),SH(inkLines=4,inkAt=-3)]),
+ SC("b03","struggle","desk","cut",C(act="talking",ex="focused"),("mmx-glide: tay glide doc giay, but dung o cho trang sau 4 vet dong","Bút dừng"),[SFX("pen",0.5,"viết lại")],[BK(state="closed"),dict(SCHED),SH(inkLines=4,inkAt=2.1,inkStagger=0.45),PEN(B03_KEYS)]),
+ SC("b04","struggle","desk","cut",C(act="idle",ex="confused"),("mmx-cruise cham: sach VAN GAP, but nam yen canh giay trang","Giấy trắng"),[SFX("swish",0.5,"quen mắt")],[BK(state="closed"),dict(SCHED),SH(inkLines=4,inkAt=-3),PEN(PEN_STOP)]),
+ SC("b05","payoff","desk","cut",C(ex="focused"),("mmx-snap-settle: sach MO dung mot lan o cho bi roi gap lai, tay settle tren giay","mở sách"),[SFX("pop",0.3,"mở sách"),SFX("pen",2.0,"viết tiếp")],[BK(state="closed",openAt=0.8),dict(SCHED),SH(inkLines=4,inkAt=-3),PEN(PEN_STOP)]),
 ]
 B=[
  SC("b08","payoff","desk","cut",C(pose="standing",ex="focused"),("tdev-stagger: pile tach 3 bundles, om chong dau viet lai","ba chồng"),[SFX("pop",0.4,"ba chồng"),SFX("pen",2.5,"viết lại")],[BK(state="closed"),dict(SCHED),{"kind":"bundles","x":255,"y":990,"s":0.5,"count":3}]),

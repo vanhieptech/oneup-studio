@@ -5,7 +5,8 @@ import { FONT_FAMILY } from "./fonts";
 /** DL-056: comic props in brand style (ink on paper, round corners, 8px stroke, hard offset shadow, one accent).
  *  All times are scene seconds (build-final shifts them by the first line start). Drawn inside the camera group. */
 export type PropCue = {
-  kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty" | "book" | "sheet";
+  kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty" | "book" | "sheet" | "pen";
+  keys?: [number, number, number][]; len?: number;
   count?: number;
   x?: number; y?: number; s?: number; rot?: number;
   text?: string; sub?: string; stamp?: string; at?: number; until?: number;
@@ -261,12 +262,31 @@ const Sheet: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
   </g>;
 };
 
+
+/** clip-04 v14 (FLUX QA): pen whose TIP is at the key position (scene-absolute [t, x, y], eased, land decelerates).
+ *  Small writing wiggle only while moving; motionless once the last key is reached = "bút dừng". No text. */
+const Pen: React.FC<{ p: PropCue; t: number }> = ({ p, t }) => {
+  const k = p.keys ?? [[0, 0, 0]]; let x = k[0][1], y = k[0][2], moving = false;
+  for (let i = 1; i < k.length; i++) { const [t0, x0, y0] = k[i - 1], [t1, x1, y1] = k[i];
+    if (t >= t1) { x = x1; y = y1; continue; }
+    if (t > t0) { const u = (t - t0) / Math.max(1e-3, t1 - t0); const e = 1 - Math.pow(1 - u, 3); x = x0 + (x1 - x0) * e; y = y0 + (y1 - y0) * e; moving = (x1 !== x0 || y1 !== y0); }
+    break; }
+  const wig = moving ? 3 * Math.sin(t * 42) : 0; const L = p.len ?? 200;
+  return <g transform={`translate(${x} ${y + wig}) rotate(${p.rot ?? 20})`}>
+    <g transform="translate(7 7)"><rect x={30} y={-15} width={L - 30} height={30} rx={14} fill={ink} /></g>
+    <path d={`M0,0 L34,-14 L34,14 Z`} fill={paper} stroke={ink} strokeWidth={6} strokeLinejoin="round" />
+    <circle cx={3} cy={0} r={4} fill={ink} />
+    <rect x={32} y={-15} width={L - 32} height={30} rx={14} fill={ink} stroke={ink} strokeWidth={4} />
+    <rect x={52} y={-8} width={L - 92} height={6} rx={3} fill={paper} opacity={0.35} />
+  </g>;
+};
+
 export const Props: React.FC<{ props: PropCue[]; t: number; h: number }> = ({ props, t, h }) => <g>
   {props.map((p, i) => {
     if (p.until != null && t > p.until) return null;
     if (p.kind === "vignette") { const k = ease(t, p.at ?? 0, 0.6) * (p.dark ?? 0.55);
       return <g key={i}><defs><radialGradient id={`vg${i}`} cx="50%" cy="45%" r="70%"><stop offset="45%" stopColor={ink} stopOpacity={0} /><stop offset="100%" stopColor={ink} stopOpacity={k} /></radialGradient></defs><rect width={1080} height={h} fill={`url(#vg${i})`} /></g>; }
-    const C = { laptop: Laptop, phone: Phone, calendar: Calendar, cloud: Cloud, sign: Sign, words: Words, pile: Pile, bundles: Bundles, bundle: Bundle, clock: Clock, dusty: Dusty, book: Book, sheet: Sheet }[p.kind];
-    return <g key={i} transform={`translate(${p.x ?? 540} ${p.y ?? 900}) rotate(${p.rot ?? 0}) scale(${p.s ?? 1})`}><C p={p} t={t} /></g>;
+    const C = { laptop: Laptop, phone: Phone, calendar: Calendar, cloud: Cloud, sign: Sign, words: Words, pile: Pile, bundles: Bundles, bundle: Bundle, clock: Clock, dusty: Dusty, book: Book, sheet: Sheet, pen: Pen }[p.kind];
+    return <g key={i} transform={`translate(${p.x ?? 540} ${p.y ?? 900}) rotate(${p.kind === "pen" ? 0 : p.rot ?? 0}) scale(${p.s ?? 1})`}><C p={p} t={t} /></g>;
   })}
 </g>;
