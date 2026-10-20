@@ -101,3 +101,8 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 ## L-078 (2026-10-20 23:11) — Hiệp chốt v18 + yêu cầu giao hàng đầy đủ
 - Hiệp: «Oke duyệt» v18 (sha256 c2425f2a551d, bản khoá: final/script-v18-LOCKED.md). Không đổi chữ nào sau chốt (L-072); đề xuất câu 3 của Deep Research («nhớ hơn») KHÔNG áp vì DR đã xác nhận bản hiện tại đúng ý nguồn.
 - Yêu cầu mới → rule W-17..W-21.
+
+## L-079 (2026-10-20 23:25, News) — STT faster-whisper int8 bắt đầu nghe sai hoàn toàn
+- Hiện tượng: cùng một file (v16c s01-53, trước đó STT khớp 1.0), whisper small `compute_type=int8` ra «Cảm ơn các bạn», «Dạy dạy dạy», hoặc trống. Thử bản giọng v16c đã giao cũng ra trống. Cùng lúc F5 chậm từ ~30s lên ~70s mỗi take.
+- Nguyên nhân: chưa rõ. Thư viện và model không đổi; nghi đường int8 của ctranslate2 trên máy hiện tại. `float32` trên cùng file ra đúng «Học thuật tối qua sáng dậy quên sạch».
+- Sửa: `voice-delivery-f5.py` dùng `compute_type=float32` mặc định (biến `ASR_COMPUTE` để đổi). Trước mỗi lượt chấm STT, chạy thử một file chuẩn đã biết kết quả. Nếu ra trống hoặc lặp chữ thì dừng, không chọn take theo số đó.
