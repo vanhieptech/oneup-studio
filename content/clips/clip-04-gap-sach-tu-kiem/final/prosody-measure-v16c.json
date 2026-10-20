@@ -1,0 +1,1214 @@
+{
+ "voice_prefix": "c04v16c",
+ "plan": "A",
+ "plan_pauses": {
+  "/": 0.18,
+  "//": 0.35,
+  "//beat": 0.4,
+  "///": 0.4
+ },
+ "total_s": 55.497,
+ "speech_s": 45.72,
+ "pause_at_marks_s": 9.46,
+ "pure_speech_pre_s": 45.72,
+ "lufs": -14.2,
+ "limit_s": 58.0,
+ "over_s": 0,
+ "pauses": [
+  {
+   "sid": "s01",
+   "after": "qua",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s01",
+   "after": "sạch",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.33,
+   "status": "ok"
+  },
+  {
+   "sid": "s02",
+   "after": "sách",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s02",
+   "after": "gì",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "s03",
+   "after": "dụ",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s03",
+   "after": "lịch",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.34,
+   "status": "ok"
+  },
+  {
+   "sid": "s04",
+   "after": "làu",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "s05",
+   "after": "dậy",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s05",
+   "after": "lại",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s05",
+   "after": "airport",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s05",
+   "after": "hotel",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s05",
+   "after": "ticket",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.19,
+   "status": "ok"
+  },
+  {
+   "sid": "s05",
+   "after": "passport",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.35,
+   "status": "ok"
+  },
+  {
+   "sid": "s06",
+   "after": "khựng",
+   "mark": "///",
+   "kind": "lặng có chủ ý",
+   "plan": 0.4,
+   "pause": 0.37,
+   "status": "ok"
+  },
+  {
+   "sid": "s06",
+   "after": "gì",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.4,
+   "status": "ok"
+  },
+  {
+   "sid": "s07",
+   "after": "hỏi",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s07",
+   "after": "mắt",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.4,
+   "status": "ok"
+  },
+  {
+   "sid": "s08",
+   "after": "luggage",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.14,
+   "status": "✖ phẩy <0.15s"
+  },
+  {
+   "sid": "s08",
+   "after": "tiếp",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "s09",
+   "after": "học",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s09",
+   "after": "nhỏ",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s09",
+   "after": "vừa",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.4,
+   "status": "ok"
+  },
+  {
+   "sid": "s10",
+   "after": "học",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s10",
+   "after": "nhất",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.34,
+   "status": "ok"
+  },
+  {
+   "sid": "s11",
+   "after": "lại",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s11",
+   "after": "nhất",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s11",
+   "after": "hẹp",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "s12",
+   "after": "thẻ",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.34,
+   "status": "ok"
+  },
+  {
+   "sid": "s13",
+   "after": "nào",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.19,
+   "status": "ok"
+  },
+  {
+   "sid": "s13",
+   "after": "đó",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "s14",
+   "after": "sau",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "s14",
+   "after": "gấp",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s14",
+   "after": "luggage",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s14",
+   "after": "bí",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.4,
+   "status": "ok"
+  },
+  {
+   "sid": "s15",
+   "after": "bạn",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "s15",
+   "after": "từ",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.35,
+   "status": "ok"
+  }
+ ],
+ "sentences": [
+  {
+   "id": "s01",
+   "beat": "b01",
+   "text": "Học thuộc tối qua, sáng dậy quên sạch?",
+   "start": 0.03,
+   "end": 1.89,
+   "mid_breaks": [],
+   "stress": {
+    "words": "quên sạch",
+    "vs_rest_db": 2.3,
+    "vs_neighbours_db": 3.9,
+    "gain_applied_db": 10.3
+   },
+   "rise_st": 0.67,
+   "stt": "Tối qua, sáng dậy quên sạch!",
+   "stt_sim": 0.857,
+   "syll_per_s": 5.59,
+   "speech_s": 1.68,
+   "take": "s01-37.wav",
+   "candidates": [
+    [
+     "s01-37.wav",
+     1.0,
+     5.71,
+     -2.2
+    ]
+   ]
+  },
+  {
+   "id": "s02",
+   "beat": "b01",
+   "text": "Giả sử bây giờ không nhìn sách, bạn còn nhớ được những gì?",
+   "start": 2.24,
+   "end": 5.07,
+   "mid_breaks": [],
+   "stress": {
+    "words": "không nhìn sách",
+    "vs_rest_db": 3.1,
+    "vs_neighbours_db": 2.4,
+    "gain_applied_db": 6.6
+   },
+   "rise_st": 4.14,
+   "stt": "Giả sử bây giờ không nhìn sách bạn còn nhớ được những gì.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.06,
+   "speech_s": 2.65,
+   "take": "s02-11.wav",
+   "candidates": [
+    [
+     "s02-11.wav",
+     1.0,
+     5.24,
+     2.1
+    ],
+    [
+     "s02-37.wav",
+     1.0,
+     5.68,
+     1.68
+    ],
+    [
+     "s02-53.wav",
+     0.917,
+     6.05,
+     -3.49
+    ],
+    [
+     "s02-71.wav",
+     0.636,
+     8.23,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s03",
+   "beat": "b02",
+   "text": "Ví dụ, mình học ba mươi từ tiếng Anh để đi du lịch.",
+   "start": 5.47,
+   "end": 8.07,
+   "mid_breaks": [],
+   "stress": {
+    "words": "ba mươi từ",
+    "vs_rest_db": 2.4,
+    "vs_neighbours_db": 3.5,
+    "gain_applied_db": 4.0
+   },
+   "rise_st": null,
+   "stt": "Ví dụ mình học 30 từ tiếng Anh để đi du lịch.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.94,
+   "speech_s": 2.42,
+   "take": "s03-53.wav",
+   "candidates": [
+    [
+     "s03-11.wav",
+     1.0,
+     6.1,
+     null
+    ],
+    [
+     "s03-37.wav",
+     1.0,
+     5.96,
+     null
+    ],
+    [
+     "s03-53.wav",
+     1.0,
+     5.91,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s04",
+   "beat": "b02",
+   "text": "Tối đó mình đọc đi đọc lại tới thuộc làu.",
+   "start": 8.42,
+   "end": 10.4,
+   "mid_breaks": [],
+   "stress": {
+    "words": "thuộc làu",
+    "vs_rest_db": 2.0,
+    "vs_neighbours_db": 2.6,
+    "gain_applied_db": 10.4
+   },
+   "rise_st": null,
+   "stt": "Tối đó mình đọc đi đọc lại tới thuộc lau.",
+   "stt_sim": 0.95,
+   "syll_per_s": 5.85,
+   "speech_s": 1.98,
+   "take": "s04-89.wav",
+   "candidates": [
+    [
+     "s04-11.wav",
+     0.95,
+     6.62,
+     null
+    ],
+    [
+     "s04-37.wav",
+     0.95,
+     6.37,
+     null
+    ],
+    [
+     "s04-53.wav",
+     0.95,
+     6.33,
+     null
+    ],
+    [
+     "s04-71.wav",
+     0.9,
+     6.49,
+     null
+    ],
+    [
+     "s04-89.wav",
+     0.95,
+     6.17,
+     null
+    ],
+    [
+     "s04-97.wav",
+     0.95,
+     6.25,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s05",
+   "beat": "b03",
+   "text": "Sáng dậy, mình gấp sách viết lại: airport, hotel, ticket, passport.",
+   "start": 10.8,
+   "end": 14.5,
+   "mid_breaks": [],
+   "stress": {
+    "words": "gấp sách",
+    "vs_rest_db": 2.4,
+    "vs_neighbours_db": 2.0,
+    "gain_applied_db": 9.6
+   },
+   "rise_st": null,
+   "stt": "Sáng dậy mình gấp sách viết lại app bọt hotel, tích kịch, bác bọt.",
+   "stt_sim": 0.667,
+   "syll_per_s": 6.64,
+   "speech_s": 2.8,
+   "take": "s05-53.wav",
+   "candidates": [
+    [
+     "s05-11.wav",
+     0.69,
+     6.88,
+     null
+    ],
+    [
+     "s05-37.wav",
+     0.733,
+     6.91,
+     null
+    ],
+    [
+     "s05-53.wav",
+     0.8,
+     6.85,
+     null
+    ],
+    [
+     "s05-71.wav",
+     0.714,
+     6.52,
+     null
+    ],
+    [
+     "s05-89.wav",
+     0.69,
+     6.55,
+     null
+    ],
+    [
+     "s05-97.wav",
+     0.679,
+     6.94,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s06",
+   "beat": "b03",
+   "text": "Tới từ thứ năm là hành lý thì mình khựng, không nhớ tiếng Anh là gì.",
+   "start": 14.85,
+   "end": 18.39,
+   "mid_breaks": [],
+   "stress": {
+    "words": "khựng",
+    "vs_rest_db": 2.8,
+    "vs_neighbours_db": 2.0,
+    "gain_applied_db": 10.3
+   },
+   "rise_st": null,
+   "stt": "Tới từ thứ 5 là hành lý thì mình khẩn, không nhớ tiếng Anh là gì.",
+   "stt_sim": 0.938,
+   "syll_per_s": 5.33,
+   "speech_s": 3.14,
+   "take": "s06-97.wav",
+   "candidates": [
+    [
+     "s06-11.wav",
+     0.938,
+     5.8,
+     null
+    ],
+    [
+     "s06-37.wav",
+     0.938,
+     5.86,
+     null
+    ],
+    [
+     "s06-53.wav",
+     0.906,
+     5.84,
+     null
+    ],
+    [
+     "s06-71.wav",
+     0.938,
+     5.9,
+     null
+    ],
+    [
+     "s06-89.wav",
+     0.938,
+     5.9,
+     null
+    ],
+    [
+     "s06-97.wav",
+     0.938,
+     5.71,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s07",
+   "beat": "b04",
+   "text": "Mình tự hỏi: hay tối qua mình chỉ nhìn chữ đến quen mắt?",
+   "start": 18.79,
+   "end": 21.54,
+   "mid_breaks": [],
+   "stress": {
+    "words": "quen mắt",
+    "vs_rest_db": 2.4,
+    "vs_neighbours_db": 3.8,
+    "gain_applied_db": 7.0
+   },
+   "rise_st": 4.79,
+   "stt": "Mình tự hỏi, hay tối qua mình chỉ nhìn chữ đến quen lát.",
+   "stt_sim": 0.923,
+   "syll_per_s": 5.58,
+   "speech_s": 2.57,
+   "take": "s07-37.wav",
+   "candidates": [
+    [
+     "s07-11.wav",
+     0.923,
+     5.51,
+     -0.51
+    ],
+    [
+     "s07-37.wav",
+     1.0,
+     5.58,
+     2.33
+    ],
+    [
+     "s07-53.wav",
+     1.0,
+     5.8,
+     1.98
+    ]
+   ]
+  },
+  {
+   "id": "s08",
+   "beat": "b05",
+   "text": "Mình mở sách xem chỗ bí là chữ luggage, rồi gấp lại viết tiếp.",
+   "start": 21.94,
+   "end": 25.13,
+   "mid_breaks": [],
+   "stress": {
+    "words": "chữ luggage",
+    "vs_rest_db": 2.3,
+    "vs_neighbours_db": 1.8,
+    "gain_applied_db": 9.4
+   },
+   "rise_st": null,
+   "stt": "Mình mở sách xem chỗ bí là chữ lác ghịch rồi gấp lại viết tiếp.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.75,
+   "speech_s": 3.01,
+   "take": "s08-97.wav",
+   "candidates": [
+    [
+     "s08-11.wav",
+     1.0,
+     6.61,
+     null
+    ],
+    [
+     "s08-37.wav",
+     1.0,
+     6.55,
+     null
+    ],
+    [
+     "s08-53.wav",
+     1.0,
+     6.61,
+     null
+    ],
+    [
+     "s08-71.wav",
+     1.0,
+     6.2,
+     null
+    ],
+    [
+     "s08-89.wav",
+     1.0,
+     6.79,
+     null
+    ],
+    [
+     "s08-97.wav",
+     1.0,
+     6.07,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s09",
+   "beat": "b06",
+   "text": "Yang gộp 222 nghiên cứu với hơn 48 ngàn học sinh: lớp có kiểm tra nhỏ thì điểm cao hơn lớp không làm kiểm tra nhỏ, ở mức vừa.",
+   "start": 25.53,
+   "end": 33.73,
+   "mid_breaks": [
+    "«nhỏ thì» 0.29s"
+   ],
+   "stress": {
+    "words": "cao hơn",
+    "vs_rest_db": 3.9,
+    "vs_neighbours_db": 2.2,
+    "gain_applied_db": 7.6
+   },
+   "rise_st": null,
+   "stt": "Giang gột 222 nghiên cứu với hơn 48 .000 học sinh lớp có kiểm tra nhỏ, thì điểm cao hơn lớp không làm kiểm tra nhỏ ở mức vừa.",
+   "stt_sim": 0.943,
+   "syll_per_s": 5.28,
+   "speech_s": 7.84,
+   "take": "s09-89.wav",
+   "candidates": [
+    [
+     "s09-89.wav",
+     0.943,
+     5.27,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s10",
+   "beat": "b07",
+   "text": "Dunlosky xếp các cách học: tự kiểm tra nằm nhóm cao nhất.",
+   "start": 34.13,
+   "end": 36.97,
+   "mid_breaks": [],
+   "stress": {
+    "words": "nhóm cao nhất",
+    "vs_rest_db": 2.3,
+    "vs_neighbours_db": 3.4,
+    "gain_applied_db": 6.0
+   },
+   "rise_st": null,
+   "stt": "Đung lốt kỳ xếp các cách học từ kiểm tra nằm nhóm cao nhất.",
+   "stt_sim": 0.821,
+   "syll_per_s": 6.28,
+   "speech_s": 2.66,
+   "take": "s10-97.wav",
+   "candidates": [
+    [
+     "s10-11.wav",
+     0.75,
+     6.42,
+     null
+    ],
+    [
+     "s10-37.wav",
+     0.786,
+     6.45,
+     null
+    ],
+    [
+     "s10-53.wav",
+     0.786,
+     6.6,
+     null
+    ],
+    [
+     "s10-71.wav",
+     0.75,
+     6.73,
+     null
+    ],
+    [
+     "s10-89.wav",
+     0.821,
+     6.76,
+     null
+    ],
+    [
+     "s10-97.wav",
+     0.821,
+     6.45,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s11",
+   "beat": "b07",
+   "text": "Đọc lại, gạch chân nằm nhóm thấp nhất, tuy vẫn có ích nhưng tác dụng hẹp.",
+   "start": 37.32,
+   "end": 40.87,
+   "mid_breaks": [],
+   "stress": {
+    "words": "nhóm thấp nhất",
+    "vs_rest_db": 3.8,
+    "vs_neighbours_db": 2.4,
+    "gain_applied_db": 7.7
+   },
+   "rise_st": null,
+   "stt": "Đọc lại, cạch chân nằm nhóm thấp nhất tuy vẫn có ít nhưng tác dụng hẹp.",
+   "stt_sim": 0.875,
+   "syll_per_s": 6.11,
+   "speech_s": 3.19,
+   "take": "s11-89.wav",
+   "candidates": [
+    [
+     "s11-11.wav",
+     0.875,
+     6.67,
+     null
+    ],
+    [
+     "s11-37.wav",
+     0.938,
+     6.27,
+     null
+    ],
+    [
+     "s11-53.wav",
+     0.938,
+     6.81,
+     null
+    ],
+    [
+     "s11-71.wav",
+     0.938,
+     6.48,
+     null
+    ],
+    [
+     "s11-89.wav",
+     0.938,
+     6.08,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s12",
+   "beat": "b08",
+   "text": "Nên mình chia ba mươi thẻ thành ba chồng mười thẻ.",
+   "start": 41.27,
+   "end": 43.59,
+   "mid_breaks": [],
+   "stress": {
+    "words": "ba chồng",
+    "vs_rest_db": 2.1,
+    "vs_neighbours_db": 4.5,
+    "gain_applied_db": 9.9
+   },
+   "rise_st": null,
+   "stt": "nên mình chia 30 thẻ thành 3 trọng 10 thẻ",
+   "stt_sim": 0.909,
+   "syll_per_s": 5.12,
+   "speech_s": 2.32,
+   "take": "s12-11.wav",
+   "candidates": [
+    [
+     "s12-11.wav",
+     0.909,
+     5.39,
+     null
+    ],
+    [
+     "s12-37.wav",
+     0.909,
+     5.47,
+     null
+    ],
+    [
+     "s12-53.wav",
+     0.909,
+     5.73,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s13",
+   "beat": "b08",
+   "text": "Học hết chồng nào, mình gấp sách viết lại chồng đó.",
+   "start": 43.94,
+   "end": 46.514,
+   "mid_breaks": [],
+   "stress": {
+    "words": "viết lại",
+    "vs_rest_db": 2.1,
+    "vs_neighbours_db": 3.1,
+    "gain_applied_db": 6.7
+   },
+   "rise_st": null,
+   "stt": "Học hết trồng nào mình gấp sách viết lại trồng đó.",
+   "stt_sim": 0.818,
+   "syll_per_s": 5.53,
+   "speech_s": 2.37,
+   "take": "s13-53.wav",
+   "candidates": [
+    [
+     "s13-11.wav",
+     0.818,
+     6.25,
+     null
+    ],
+    [
+     "s13-37.wav",
+     0.818,
+     6.47,
+     null
+    ],
+    [
+     "s13-53.wav",
+     0.818,
+     5.95,
+     null
+    ],
+    [
+     "s13-71.wav",
+     0.818,
+     6.36,
+     null
+    ],
+    [
+     "s13-89.wav",
+     0.818,
+     6.32,
+     null
+    ],
+    [
+     "s13-97.wav",
+     0.818,
+     6.08,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s14",
+   "beat": "b09",
+   "text": "Sáng hôm sau, sách vẫn gấp, mình tự viết được luggage, đúng chữ hôm trước mình bí.",
+   "start": 46.914,
+   "end": 51.114,
+   "mid_breaks": [],
+   "stress": {
+    "words": "tự viết được",
+    "vs_rest_db": 2.5,
+    "vs_neighbours_db": 2.3,
+    "gain_applied_db": 5.1
+   },
+   "rise_st": null,
+   "stt": "Sáng hôm sau, sách vẫn gấp mình tự viết được lác ghịch đúng chữ hôm trước mình bí.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.61,
+   "speech_s": 3.66,
+   "take": "s14-53.wav",
+   "candidates": [
+    [
+     "s14-11.wav",
+     1.0,
+     6.08,
+     null
+    ],
+    [
+     "s14-37.wav",
+     1.0,
+     5.92,
+     null
+    ],
+    [
+     "s14-53.wav",
+     1.0,
+     5.84,
+     null
+    ],
+    [
+     "s14-71.wav",
+     1.0,
+     6.14,
+     null
+    ],
+    [
+     "s14-89.wav",
+     1.0,
+     5.92,
+     null
+    ],
+    [
+     "s14-97.wav",
+     1.0,
+     6.12,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "s15",
+   "beat": "b10",
+   "text": "Còn bạn, thử gấp sách lại thì viết được mấy từ?",
+   "start": 51.514,
+   "end": 54.034,
+   "mid_breaks": [],
+   "stress": {
+    "words": "mấy từ",
+    "vs_rest_db": 2.6,
+    "vs_neighbours_db": 2.5,
+    "gain_applied_db": 2.9
+   },
+   "rise_st": 1.5,
+   "stt": "Còn bạn, thử gấp sắt lại thì viết được mấy tờ.",
+   "stt_sim": 0.818,
+   "syll_per_s": 5.61,
+   "speech_s": 2.34,
+   "take": "s15-71.wav",
+   "candidates": [
+    [
+     "s15-11b.wav",
+     0.864,
+     6.47,
+     -2.69
+    ],
+    [
+     "s15-37.wav",
+     0.864,
+     6.18,
+     -4.26
+    ],
+    [
+     "s15-37b.wav",
+     0.864,
+     6.47,
+     -3.19
+    ],
+    [
+     "s15-53.wav",
+     0.818,
+     5.64,
+     -3.74
+    ],
+    [
+     "s15-53b.wav",
+     0.864,
+     6.18,
+     -2.37
+    ],
+    [
+     "s15-71.wav",
+     0.864,
+     5.91,
+     -1.22
+    ],
+    [
+     "s15-71b.wav",
+     0.864,
+     6.11,
+     -3.61
+    ]
+   ]
+  },
+  {
+   "id": "s16",
+   "beat": "b10",
+   "text": "Comment con số nha.",
+   "start": 54.384,
+   "end": 55.474,
+   "mid_breaks": [],
+   "stress": {
+    "words": "con số",
+    "vs_rest_db": 2.0,
+    "vs_neighbours_db": 2.6,
+    "gain_applied_db": 9.8
+   },
+   "rise_st": null,
+   "stt": "Còn bên còn số nha",
+   "stt_sim": 0.5,
+   "syll_per_s": 4.63,
+   "speech_s": 1.09,
+   "take": "s16-53b.wav",
+   "candidates": [
+    [
+     "s16-11b.wav",
+     0.5,
+     5.62,
+     null
+    ],
+    [
+     "s16-53b.wav",
+     0.5,
+     5.05,
+     null
+    ]
+   ]
+  }
+ ],
+ "english": [
+  {
+   "sid": "s05",
+   "word": "airport",
+   "said": "e pọt",
+   "t": 12.52,
+   "en_stt": "Epoch"
+  },
+  {
+   "sid": "s05",
+   "word": "hotel",
+   "said": "hô ten",
+   "t": 12.97,
+   "en_stt": "Park Hotel"
+  },
+  {
+   "sid": "s05",
+   "word": "ticket",
+   "said": "tích kịt",
+   "t": 13.74,
+   "en_stt": "That's good"
+  },
+  {
+   "sid": "s05",
+   "word": "passport",
+   "said": "pát pọt",
+   "t": 14.05,
+   "en_stt": "Backpack!"
+  },
+  {
+   "sid": "s08",
+   "word": "luggage",
+   "said": "lắc ghịt",
+   "t": 23.6,
+   "en_stt": "You look good"
+  },
+  {
+   "sid": "s09",
+   "word": "Yang",
+   "said": "Giang",
+   "t": 25.07,
+   "en_stt": "Next, Django."
+  },
+  {
+   "sid": "s10",
+   "word": "Dunlosky",
+   "said": "Đun lốt ki",
+   "t": 33.87,
+   "en_stt": "Don't look kiss"
+  },
+  {
+   "sid": "s14",
+   "word": "luggage",
+   "said": "lắc ghịt",
+   "t": 49.27,
+   "en_stt": ""
+  },
+  {
+   "sid": "s16",
+   "word": "Comment",
+   "said": "Com men",
+   "t": 54.25,
+   "en_stt": "comment"
+  }
+ ],
+ "flags": [
+  "s08: nghỉ sau «luggage» (phẩy/hai chấm) 0.14s, plan 0.18s (✖ phẩy <0.15s)",
+  "s05: STT khớp 0.667 (<0.8): «Sáng dậy mình gấp sách viết lại app bọt hotel, tích kịch, bác bọt.»",
+  "s08: nhấn «chữ luggage» chỉ 2.3 dB so câu / 1.8 dB so chữ kề (<2 dB)",
+  "s09: ngắt giữa cụm «nhỏ thì» 0.29s",
+  "s16: STT khớp 0.5 (<0.8): «Còn bên còn số nha»"
+ ],
+ "warnings": [
+  "s01: 5.59 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 1 seed)",
+  "s02: 5.06 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 4 seed)",
+  "s03: 5.94 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 3 seed)",
+  "s04: 5.85 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s05: 6.64 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s06: 5.33 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s07: 5.58 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 3 seed)",
+  "s08: 5.75 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s09: 5.28 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 1 seed)",
+  "s10: 6.28 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s11: 6.11 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 5 seed)",
+  "s12: 5.12 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 3 seed)",
+  "s13: 5.53 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s14: 5.61 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 6 seed)",
+  "s15: 5.61 âm tiết/s (>5; đã chọn take chậm nhất đạt STT trong 7 seed)"
+ ]
+}
