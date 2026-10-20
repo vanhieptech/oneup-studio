@@ -5,7 +5,8 @@ type: sound-note
 clip: clip-04-gap-sach-tu-kiem
 based_on: "final/script-v18-LOCKED.md, final/script-v18-delivery.md, final/script-v18-table.md (đọc, không sửa)"
 research: "research/agents/ace-music-tiktok-sound-trends-2026-10-20.md"
-status: đề xuất — Hiệp chọn bài lúc đăng; News chép vào mục 8 gói đăng nếu dùng
+status: đề xuất — Hiệp chọn bài lúc đăng; Social Poster chép mục 1 vào mục 8 gói đăng
+updated: 2026-10-21 — đổi sang theme LIGHT (bản render v18 commit f1cd4fd, spec.json "theme": "light")
 ---
 # Clip-04 v18 — Sound note
 
@@ -14,8 +15,8 @@ File này không sửa script đã khoá, không sửa `post.md` / `publish/post
 
 ## 1. Bản copy cho mục 8 gói đăng
 ```
-Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds). Mood: lofi piano/Rhodes trầm, ấm, không lời, 70–90 BPM, không drop, không giọng hát. Âm lượng: giọng gốc 100%, nhạc 5% (tối đa 8%). Bắt đầu track ở đoạn mở mỏng (pad/piano), tránh intro trống. Trong file không có nhạc (luật 21); SFX + ambience đã mix sẵn.
-Ưu tiên tìm tên: "Calm Lofi/Cafe/Study/Vlog(1492712)" – Tana Music · "Study Routine (Lofi)" – The Machinist Beats · "vlog, chill out, calm daily life(1370843)" – SUNNY HOOD STUDIO. Không thấy trong Commercial Sounds thì tìm: lofi study / calm piano / late night study.
+Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds). Mood: chill acoustic / cafe lofi sáng, major key, guitar mộc + Rhodes, không lời, 85–95 BPM, không drop, không giọng hát. Âm lượng: giọng gốc 100%, nhạc 5% (tối đa 8%). Bắt đầu track ở đoạn mở mỏng (guitar/piano), tránh intro trống. Trong file không có nhạc (luật 21); SFX + ambience đã mix sẵn.
+Ưu tiên tìm tên: "vlog, chill out, calm daily life(1370843)" – SUNNY HOOD STUDIO · "Coffee and Daydreams" – Tokyo.Beats · "Calm Lofi/Cafe/Study/Vlog(1492712)" – Tana Music. Không thấy trong Commercial Sounds thì tìm: chill acoustic / cafe lofi / vlog daily life.
 ```
 
 ## 2. Đường năng lượng clip-04 (giây theo `script-v18-table.md`, ước tính; giọng thật ≈ 50,7s + end card 2s theo delivery)
@@ -31,7 +32,7 @@ TikTok chỉ gắn **một** track cho cả clip, nên chọn track có năng l�
 | Kết quả + CTA (b07–b08) | 38–47 | Nhẹ nhõm, ấm, rủ nhẹ | Ấm/sáng dần là tốt nhất; nếu track phẳng thì vẫn được | 5–8% |
 | End card | 47–49 (≈51–53 khi có giọng thật) | Tĩnh, `ambience` tắt dần | Để TikTok tự cắt theo độ dài video | — |
 
-Theme: `spec.json` hiện ghi `"theme": "dark"` → hướng **lofi đêm/học khuya** (Rhodes, pad, vinyl crackle, ít percussion). Nếu bản v18 đổi sang light thì chuyển sang chill acoustic sáng 85–95 BPM (xem file nghiên cứu mục 4). [Cần News xác nhận theme v18 khi render.]
+Theme: bản render v18 là **light** (commit f1cd4fd, `spec.json` `"theme": "light"`, cover light) → hướng **chill acoustic / cafe lofi sáng**, major key, 85–95 BPM, guitar mộc + Rhodes, percussion nhẹ (xem file nghiên cứu mục 4). Các tiêu chí theo chặng ở bảng trên giữ nguyên. (Bản 2026-10-20 ghi dark theo spec cũ — đã thay.)
 
 Lý do để 5% thay vì 10%: clip dày chữ (187 chữ / ~50s), có số và tên riêng (2006, 222, Yang, luggage) đã là rủi ro nghe sai ở F5 (R1–R5 trong delivery) — nhạc to dễ che thêm. [ĐỀ XUẤT]
 
@@ -46,12 +47,12 @@ Không bài nào dưới đây đã được xác minh có trong CML khu vực V
 | 4 | `Cool Nights (Lofi)` – The Machinist Beats | Lofi đêm, hợp theme dark | Toklytics: 81 video, 2,5M view — https://toklytics.app/sound/7430887976304674833 |
 | 5 | `Coffee and Daydreams` – Tokyo.Beats & Tokyo.BeatsCreation | Lofi cafe học bài, có trong data VN 20/10 | Apify 20/10/2026: https://www.tiktok.com/@sam.siu.gap/video/7628203838675094802 (89,6K view) |
 
-Ưu tiên cho clip-04 (dark, dày chữ): #1 → #4 → #2. #3 hơi "vlog ban ngày", hợp light hơn. [ĐỀ XUẤT]
+Ưu tiên cho clip-04 (light, dày chữ): #3 → #5 → #1. #4 `Cool Nights` là lofi đêm, không hợp light — bỏ. #2 dự phòng nếu ba bài trên không có trong CML. [ĐỀ XUẤT]
 Không dùng: `Windy Hill` – 羽肿 và mọi nhạc V-pop/remix trending (kworb VN) — nhạc phát hành thương mại, không chắc có trong CML.
 
 ## 4. Nếu không tìm thấy bài nào ở trên — từ khoá trong Commercial Sounds
-`lofi study` · `late night study` · `calm piano` · `lofi night` · `focus` · `chill vlog`
-Lọc mood (nếu dùng web CML): calm / chill; thể loại: lo-fi / ambient / piano. Chọn bài không lời, không drop trong 60s đầu.
+`chill acoustic` · `cafe lofi` · `vlog daily life` · `warm acoustic` · `positive vlog` · `lofi study`
+Lọc mood (nếu dùng web CML): calm / chill / happy; thể loại: acoustic / lo-fi. Chọn bài không lời, không drop trong 60s đầu.
 
 ## 5. Checklist nghe thử lúc đăng (30 giây)
 - [ ] Bài lấy từ tab **Commercial Sounds** (không phải "Dành cho bạn"/trend).
