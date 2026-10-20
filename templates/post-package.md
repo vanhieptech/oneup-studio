@@ -42,7 +42,7 @@ Khoảng 800 ký tự (giới hạn 2200). Viết theo ngôi "bạn", không kh�
 ```
 #learnontiktok #hoctap #hoctienganh #quanlythoigian #phattrienbanthan
 ```
-- `#learnontiktok`: thẻ rộng, TikTok đẩy cho nội dung giáo dục.
+- `#learnontiktok`: thẻ rộng mảng học trên TikTok (chưa có nguồn chính thức nói TikTok ưu tiên thẻ này).
 - `#hoctap`, `#phattrienbanthan`: thẻ VN rộng cho học tập và phát triển bản thân.
 - `#hoctienganh`: thẻ ngách, đúng ví dụ listening.
 - `#quanlythoigian`: thẻ ngách về chống trì hoãn.
