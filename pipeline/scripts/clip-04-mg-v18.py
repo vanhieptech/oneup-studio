@@ -119,7 +119,7 @@ def b03():
     set1 = rise1 + 0.36            # sunset
     rise2 = set1 + 0.36            # 2nd sunrise = the «+2 ngày» moment; bars swap here
     BASE, LX, RX, BW = 980, 200, 680, 200
-    L1, R1, L2, R2 = 280, 200, 130, 310
+    L1, R1, L2, R2 = 280, 200, 160, 310  # after +2 ngày: re-read keeps ~57% (study: self-test clearly better, not "forgot all")
     svg = window(390, 170, 300, 230, "w") + book(300, 540, "b") + sheet(780, 540, "s")
     svg += f'<path id="div" d="M540,470 V{BASE}" stroke="{INK}" stroke-width="6" stroke-dasharray="18 16" opacity="0.55"/>'
     svg += bar("barL", LX, BW, BASE, SOFT) + bar("barR", RX, BW, BASE, INK, stroke=False)
