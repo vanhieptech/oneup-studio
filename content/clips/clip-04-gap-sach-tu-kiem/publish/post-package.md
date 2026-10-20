@@ -1,20 +1,20 @@
 ---
-title: "Bộ nháp đăng clip-04 v18 «Gấp sách tự kiểm» (TikTok · Threads · Instagram Reels · YouTube Shorts)"
+title: "Bộ final đăng clip-04 v18 «Gấp sách tự kiểm» (TikTok · Threads · Instagram Reels · YouTube Shorts)"
 date: 2026-10-20
 source: "oneup-studio (Social Poster soạn trong repo) · lời khoá final/script-v18-LOCKED.md · HowToLiveBetter phần 23 mục 14"
 id: clip-04.publish.post-package
 type: post-package
 template: post-package v1 (rule-53, DL-045) + bản đa nền tảng (W-20)
-status: đã sửa theo Rule Reviewer, chờ soát lại
-updated: 2026-10-20
-video: "CHỜ video cuối v18 từ News"
-cover: "CHỜ — đề xuất ở mục 2, chưa render"
+status: bộ final, chờ Rule Reviewer soát
+updated: 2026-10-21
+video: "final/clip-04-v18-tiktok.mp4 (TikTok) · final/clip-04-v18-reels.mp4 (Reels, YouTube Shorts, Threads)"
+cover: "final/cover.png (1080×1920) · final/cover-1080x1350.png (IG feed, Threads) — FLUX b7d1bba, Rule Reviewer duyệt"
 hashtags: ["#hoctap", "#hoctienganh", "#tuvungtienganh", "#studytok", "#studymethod"]
-tags: [clip-04, post, publish, tiktok, threads, instagram, youtube-shorts, w-20, draft]
+tags: [clip-04, post, publish, tiktok, threads, instagram, youtube-shorts, w-20, final]
 ---
-# Bộ nháp đăng clip-04 v18 «Gấp sách tự kiểm»
+# Bộ final đăng clip-04 v18 «Gấp sách tự kiểm»
 
-> **Chỉ là nháp.** Không đăng, không lên lịch, không đăng nhập tài khoản nào. Hiệp tự đăng tay sau khi Rule Reviewer soát đạt và Hiệp duyệt.
+> **Bộ final, chưa đăng.** Không đăng, không lên lịch, không đăng nhập tài khoản nào. Hiệp tự đăng tay sau khi Rule Reviewer soát đạt và Hiệp duyệt.
 > Lời bám đúng `final/script-v18-LOCKED.md` (Hiệp «Oke duyệt», L-078). Claim chỉ lấy từ script khoá + `final/script-v18-table.md` (mục Claim → nguồn) + `final/fact-package-redo-2026-10-19.md` + HowToLiveBetter phần 23 mục 14.
 > Bộ xu hướng `research/tiktok-trend-pack-study-2026-10-20.md` **chưa có trong repo** lúc soạn (20/10/2026, 23:2x giờ VN) → **chưa áp bộ xu hướng**. Hashtag lấy từ hệ thẻ đã dùng ở clip-01..04 + `final/trend-signals.md` (Apify 17/10/2026).
 
@@ -22,18 +22,25 @@ Mục 1–12 là gói TikTok theo `templates/post-package.md` (giữ đúng tên
 
 ## 1. File video
 ```
-CHỜ video cuối v18 từ News (chưa có).
-Đích dự kiến: content/clips/clip-04-gap-sach-tu-kiem/final/out/clip-04-final.mp4 · ~49s (ước tính trong script-v18-table: ~42s lời + nghỉ, gồm 2s end card) · 1080×1920 (9:16) · 30fps · H.264 High + AAC 48 kHz · −14 LUFS
+TikTok:          content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-tiktok.mp4 · 48,90s · 1080×1920 (9:16) · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 26,6 MB
+Instagram Reels: content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-reels.mp4 · 48,90s · 1080×1920 · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 27,0 MB (phụ đề đặt cao, tránh vùng UI Reels)
+YouTube Shorts:  clip-04-v18-reels.mp4 (cùng file với Reels)
+Threads:         clip-04-v18-reels.mp4 (cùng file với Reels)
+Bản xem nhanh:   clip-04-v18-light.mp4 · 48,90s · 540×960 · 30fps · −14,7 LUFS · 1,75 MB — chỉ để xem, không đăng
 ```
-Lưu ý: file `final/out/clip-04-final.mp4` đang có (68,97s, tạo 20/10 lúc 11:25 giờ VN) là bản dựng **v14**, trước khi v18 được chốt (23:11) → **không dùng**. Khi News giao file v18 thì điền lại thời lượng/độ phân giải thật bằng ffprobe.
-Mỗi nền tảng tải lên **file gốc sạch** (không dùng bản tải về từ TikTok có logo), vì Instagram ưu tiên nội dung gốc (`research/platform-recommendation-facts-2026-10-20.md`).
+- Số đo bằng ffprobe + ebur128 trên box (21/10/2026, 03:3x giờ VN). `final/out/clip-04-final.mp4` trùng md5 với `clip-04-v18-tiktok.mp4` (ee514a7b…).
+- File nào cũng **không có nhạc** (luật 21), nên cả hai bản đều là «file sạch». Nhạc CML chỉ thêm trong app TikTok. Shorts và Threads dùng bản reels vì phụ đề nằm cao hơn và hai bản cùng nội dung. Phụ đề chỉ được đặt tránh UI của Reels, **chưa đo riêng** vùng UI của Shorts.
+- Bản tiktok/reels không có trong git (chỉ bản light đã commit). Hiệp lấy file trên Mac ở cùng đường dẫn.
+- Không file nào có logo TikTok (render gốc, không phải bản tải về từ TikTok).
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
 ```
 HỌC THUỘC TỐI QUA? SÁNG QUÊN SẠCH!
 ```
-Ba phương án để Hiệp chọn (đều ≤ 40 ký tự, render bằng template A `Cover.tsx`, không lấy frame video — luật 54, L-020):
-- **A (đề xuất, 34 ký tự):** `HỌC THUỘC TỐI QUA?` (gạch) → `SÁNG QUÊN SẠCH!` (pill). Khớp nguyên văn hook b01. Props sẵn trong `final/spec.json → cover` (bản render v14 ở `final/cover/cover-a.png` đã đủ dấu, có thể dùng lại nếu Hiệp chọn A).
+**Đã render phương án A** (FLUX, commit b7d1bba, Rule Reviewer duyệt). Chữ đọc trên ảnh `final/cover.png`: tag `#04 HỌC ĐÚNG CÁCH` · hàng 1 `HỌC THUỘC TỐI QUA?` (chữ thường, không gạch, strike −1) · hàng 2 `SÁNG QUÊN SẠCH!` (pill đen) · logo `OneUp.` · chibi buồn có dấu «!!». Theme LIGHT, khớp video. B và C không render.
+
+Ba phương án ban đầu (đều ≤ 40 ký tự, render bằng template A `Cover.tsx`, không lấy frame video — luật 54, L-020):
+- **A (đã render, 34 ký tự):** `HỌC THUỘC TỐI QUA?` → `SÁNG QUÊN SẠCH!` (pill). Khớp hook b01. Props trong `final/spec.json → cover` = `final/cover/cover-a.props.json` (theme light, strike −1).
 - **B (21 ký tự):** `TỐI THUỘC,` → `SÁNG QUÊN?` — đề xuất của FLUX Visual trong `final/visual-plan-v18.md`.
 - **C (35 ký tự):** `GẤP SÁCH LẠI,` → `CÒN VIẾT ĐƯỢC MẤY TỪ?` — nối thẳng với CTA b08; không dùng bản «~~ĐỌC LẠI~~ → GẤP SÁCH» vì gạch chữ «đọc lại» dễ hiểu thành «đọc lại vô dụng» (claim bị chặn trong fact package).
 
@@ -71,8 +78,9 @@ học thuộc, quên sạch, gấp sách, tự viết lại, mở sách, học t
 
 ## 6. Bình luận ghim
 ```
-Gấp sách lại, bạn viết được mấy từ? Comment con số thật của bạn nha.
+Thử gấp sách lại, bạn viết được mấy từ? Comment con số thật của bạn nha.
 ```
+Thêm «Thử» ở đầu câu (21/10/2026) theo L-073: câu nói với người xem không mở bằng cụm động từ trơ «Gấp sách lại,».
 
 ## 7. Giờ đăng đề xuất (giờ VN)
 ```
@@ -87,7 +95,9 @@ Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds
 
 - Nguồn: `final/sound-note-v18.md` mục 1 (ACE Music, 20/10/2026). News đã xác nhận theme dark, nên thứ tự ưu tiên là `Calm Lofi/Cafe/Study/Vlog(1492712)` (Tana Music) → `Cool Nights (Lofi)` → `Study Routine (Lofi)` (cả hai của The Machinist Beats), theo mục 3 của sound note.
 - **Chưa xác minh** bài nào có trong Commercial Music Library ở VN. Hiệp kiểm trong app: Sounds → Commercial Sounds → gõ tên; có trong đó mới dùng.
-- Quyền nhạc CML **chỉ áp dụng trong TikTok**. Reels và YouTube Shorts dùng file sạch không nhạc (News đang xuất bản này).
+- Quyền nhạc CML **chỉ áp dụng trong TikTok**. Reels, YouTube Shorts và Threads đăng `clip-04-v18-reels.mp4`, không thêm nhạc.
+- **Kiểm file (21/10/2026):** check-rules `rule-21 no music` ✔. Trong file có 29 hit SFX (swish 9, tick 4, pen 4, pop 4, snap 3, rise 3, ding 2, theo `final/timing.json → sfx_mix`) + 1 lớp `ambience` chạy suốt clip; `rule-50`: 8/8 chuyển cảnh có SFX. Đo tay: đoạn 42,3–43,2s giọng im hẳn (−91 dB trong voice track) nhưng file mp4 vẫn có tiếng (trung bình −57 dB, đỉnh −32 dB, có swish ở 43,15s); end card 47,8–48,8s trung bình −63 dB (ambience); không có đoạn lặng hẳn < −70 dB nào ≥ 0,3s.
+- **Lệch theme:** sound note chọn bài theo theme dark, nhưng bản render v18 là theme **LIGHT** (`spec.json → theme`, commit f1cd4fd, cover cũng light). Sound note mục 2 ghi: nếu light thì nên chuyển sang chill acoustic sáng 85–95 BPM. Danh sách bài ở trên giữ nguyên, chờ ACE Music hoặc Hiệp quyết.
 
 ## 9. Checklist cài đặt khi đăng
 ```
@@ -98,7 +108,7 @@ Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds
 [ ] Vị trí: không gắn
 [ ] Nội dung thương mại / quảng cáo: OFF (giọng F5 CC-BY-NC-SA, DL-035)
 [ ] Thêm vào danh sách phát (playlist): "Học đúng cách"
-[ ] Ảnh bìa: cover.png (template A, tải lên riêng)
+[ ] Ảnh bìa: final/cover.png (1080×1920, template A, «Tải ảnh bìa lên», không chọn frame video)
 [ ] Ghim bình luận ở mục 6 ngay sau khi đăng
 ```
 
@@ -117,8 +127,11 @@ Học đúng cách (#4)
 
 ## 12. Nhãn AI (luật 46)
 ```
-Giọng nhân vật trong video là giọng AI tổng hợp (F5-TTS). Hình ảnh: CHỜ kiểm khi có video v18.
+Giọng nhân vật trong video là giọng AI tổng hợp (F5-TTS). Hình: nhân vật và cảnh vẽ bằng code (video-engine + 2 tấm motion HyperFrames b03/b06), không dùng ảnh/video AI.
 ```
+- Kiểm 21/10/2026: check-rules `rule-46` ✔ (Hiệp = F5 · Thái Sơn); `rule-42` ✔ tấm b03/b06 là HyperFrames. Phần «không ảnh/video AI» dựa trên spec + check-rules, mình không kiểm nguồn từng hình.
+- Frame tự trích (1,5s · 18s · 40,4s · 48,5s ở cả 2 bản): end card có câu an toàn, nguồn «Roediger & Karpicke 2006 · Yang et al. 2021» và credit đủ chữ, link `https://chuanman2707.github.io/HowToLiveBetter/`. End card để dấu nháy cong ‘…’, caption để nháy thẳng '…' (không đổi nghĩa). Chữ và phụ đề nằm trong khung, không chạm mép. Bản reels: phụ đề lên khoảng giữa màn hình (y ≈ 45–55%), bản tiktok để phụ đề ở khoảng 78–88%. Không bản nào có logo TikTok, chỉ có logo OneUp ở góc trên trái.
+- Bật nhãn AI trên cả 4 nền tảng (TikTok mục 9, Reels mục 14, YouTube mục 15, Threads mục 13).
 
 ## 13. Threads (bài text kèm video, ngắn)
 ```
@@ -133,7 +146,7 @@ Bạn thử gấp sách lại thì viết được mấy từ?
 Thông tin tham khảo, không thay thế tư vấn chuyên gia
 Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/
 ```
-- Đính kèm file video gốc v18. Chủ đề (topic) gợi ý chọn trong app: «Học tập». Không hashtag trong thân bài.
+- Đính kèm `final/clip-04-v18-reels.mp4`. Ảnh: `final/cover-1080x1350.png` (4:5) nếu đăng kèm ảnh bìa; app Threads có cho đặt ảnh bìa riêng cho video hay không thì mình chưa xác minh. Chủ đề (topic) gợi ý chọn trong app: «Học tập» (1 topic tag, rule-53b). Không hashtag trong thân bài.
 - Độ dài: 452 ký tự (giới hạn Threads 500). Chỉ 1 câu hỏi (ở cuối), cũng là CTA duy nhất.
 - Câu Roediger chép đúng lời khoá b03 nhưng bỏ chữ «lại» theo Rule Reviewer: «Nhưng hai ngày sau, nhóm tự kiểm tra nhớ hơn hẳn.» (bản lời khoá không sửa).
 - Repo chưa có tài liệu chính thức nào của Threads về video (`research/platform-recommendation-facts-2026-10-20.md`) → không tối ưu theo «thuật toán Threads».
@@ -157,7 +170,8 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 ```
 - Đã bỏ câu «Gửi cho đứa bạn…» (CTA thứ hai, W-14). Còn 1 CTA, 1 câu hỏi.
 - Hashtag: Instagram chưa có dữ liệu trend trong repo → chọn theo đúng chủ đề (5 thẻ); `#activerecall` theo phụ đề clip @phamthuykieuhuong trong `final/trend-signals.md`.
-- Ảnh bìa: cover 1080×1920; lưới hồ sơ Instagram cắt giữa (FLUX đề xuất bản 1080×1350 giữ tờ giấy + nhân vật ở giữa) — chờ video v18 + Hiệp chọn cover.
+- Video: `final/clip-04-v18-reels.mp4` (không logo TikTok, không nhạc).
+- Ảnh bìa Reels: `final/cover.png` (1080×1920), tải lên riêng. Ô lưới hồ sơ / feed 4:5: `final/cover-1080x1350.png`. Bản này cắt y 265–1615 từ cover, vẫn còn đủ tag `#04 HỌC ĐÚNG CÁCH`, hai hàng hero, logo và nhân vật (chỉ mất một chút bóng dưới chân). Nếu app chỉ cho kéo khung cắt trên ảnh 9:16 thì kéo sao cho khớp bản 1350.
 - Nhãn AI: bật «AI info / nhãn AI» nếu app hỏi.
 
 ## 15. YouTube Shorts
@@ -188,40 +202,54 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 - Hashtag: 3 thẻ ở cuối mô tả (`#Shorts #hoctap #hoctienganh`), tiêu đề không có hashtag (rule-53b, Rule Reviewer 20/10/2026).
 - Được giữ thêm câu Yang + link PubMed (Rule Reviewer cho phép riêng YouTube).
 - **Khi tải lên: BẬT nhãn «Nội dung bị biến đổi hoặc tổng hợp» (altered or synthetic content)** — Rule Reviewer đã chốt (giọng là AI tổng hợp).
+- Video: `final/clip-04-v18-reels.mp4`. Ảnh bìa: `final/cover.png` nếu app YouTube cho tải ảnh bìa Shorts; không thì chọn frame 0s (chữ hook). Mình chưa xác minh app có cho tải ảnh riêng hay không.
 - Playlist: «Học đúng cách».
 
 ## 16. Thumbnail
 ```
-Thumbnail = CHỜ video cuối v18 (chưa render, không tạo ảnh nào trong publish/).
-Cách làm khi Hiệp chọn chữ cover: render template A Cover.tsx (1080×1920) từ spec.json → cover, xuất final/cover.png; không lấy frame video (luật 54, L-020).
+TikTok · Reels · YouTube Shorts: content/clips/clip-04-gap-sach-tu-kiem/final/cover.png        1080×1920 · md5 8d13787f… = final/cover/cover-a.png (render template A Cover.tsx, props cover-a.props.json)
+IG feed/lưới hồ sơ · Threads:   content/clips/clip-04-gap-sach-tu-kiem/final/cover-1080x1350.png 1080×1350 · cắt 4:5 từ cover.png (y 265–1615)
 ```
-- Cảnh đề xuất (theo `final/visual-plan-v18.md`): tờ giấy 10 dòng, dòng 5 trống + bóng vali mờ, sách gấp, bút dừng; nhân vật bên phải, sững. Không chữ trong hình — chữ lớn do slot hero của template A.
-- Chữ cover: 3 phương án ở mục 2 (A đề xuất).
-- Nếu Hiệp muốn xem thêm frame để đối chiếu với cover khi có video: lấy b01 (~1s, giấy trắng + bút dừng) và b07 (~40s, dòng 5 được viết + vali hiện rõ) — chỉ để tham khảo, **không** dùng làm cover.
+- Nguồn: FLUX Visual, commit b7d1bba (21/10/2026, 03:37 giờ VN), Rule Reviewer đã duyệt. Render từ template A, không lấy frame video (luật 54, L-020). check-rules lượt trước của News (trước b7d1bba): `rule-54` ✔, `L-020` ✔.
+- Chữ trên ảnh (đọc trực tiếp từ file): `#04 HỌC ĐÚNG CÁCH` · `HỌC THUỘC TỐI QUA?` · `SÁNG QUÊN SẠCH!` · `OneUp.`. Đúng phương án A ở mục 2, đủ dấu tiếng Việt.
+- Bản 1080×1350: không mất chữ nào. Tag, hai hàng hero và logo nằm trọn trong khung, nhân vật chỉ mất phần bóng dưới chân.
+- Theme LIGHT, khớp video v18.
 
-## 17. Tự soát (Social Poster, sau khi sửa theo Rule Reviewer)
-Quyết định Rule Reviewer đã chốt (20/10/2026):
-- **C-1:** giữ như hiện tại (caption dùng credit nguyên văn; dòng «đã chuyển thể» + link giấy phép ở mục 10 và cuối mô tả YouTube).
-- **TikTok 5 hashtag:** đạt.
-- **YouTube:** bật nhãn nội dung tổng hợp (altered/synthetic) — đã ghi ở mục 15 và `post-checklist.md`.
-- **Câu công bố giọng AI:** giữ trung tính «Giọng trong video là giọng AI tổng hợp (F5-TTS).».
-- **Cover A/B/C và thumbnail:** chờ video v18.
+## 17. Tự soát (Social Poster, bộ final 21/10/2026, chờ Rule Reviewer soát)
+Quyết định Rule Reviewer đã chốt (20/10/2026): C-1 giữ credit nguyên văn trong caption, dòng «đã chuyển thể» + link giấy phép ở mục 10 và cuối mô tả YouTube; YouTube bật nhãn altered/synthetic; câu công bố giọng AI trung tính; rule-53b (hashtag theo nền tảng, commit 680d4b6). Cover A: Rule Reviewer duyệt (b7d1bba).
 
+### Tiêu chí Rule Reviewer sẽ soát (tự kiểm trước)
+| # | Tiêu chí | Kết quả |
+|---|---|---|
+| T1 | Tiêu đề ≤ 70 ký tự | Đạt. YouTube 59/70 (chỉ từ khoá, không hashtag). Dòng tiêu đề chung TikTok/Reels «Học thuộc tối qua, sáng dậy quên sạch.» 38 ký tự |
+| T2 | Hashtag đúng rule-53b | Đạt. TikTok 5 thẻ (trong 3–5; rule-53b khuyên 3–4 thẻ ngách, Rule Reviewer đã cho giữ 5 cho clip-04), `#hoctienganh` dùng được vì clip lấy ví dụ 30 từ tiếng Anh. Reels 5/5, không #reels. YouTube 3 thẻ ở cuối mô tả (`#Shorts #hoctap #hoctienganh`), tiêu đề 0 thẻ. Threads 0 hashtag trong thân bài, 1 topic «Học tập», 452/500 ký tự |
+| T3 | Credit CC BY 4.0 nguyên văn + câu an toàn ở cả 4 bản | Đạt. Script so chuỗi nguyên văn trong code block mục 3, 13, 14, 15 (mô tả): 4/4 có credit, 4/4 có câu an toàn. End card trong video cũng có cả hai câu (xem frame 48,5s) |
+| T4 | Không câu nào ám chỉ tác giả xác nhận/bảo trợ | Đạt. Không có chữ «xác nhận / bảo trợ / ủng hộ / chứng thực / tài trợ / endorse» trong 4 bản. Credit chỉ ghi «Nội dung dựa trên…» |
+| T5 | Chữ cover + caption chỉ nói điều script v18 đã nói | Đạt, đối chiếu từng câu với `final/script-v18-LOCKED.md`: hook ← câu 1 (đổi «?» thành «.»); «Cách thử: học hết phần nào, gấp sách tự viết lại phần đó, chỗ nào bí mới mở sách» ← câu 5; CTA ← câu 8; Threads «Một thí nghiệm năm 2006…nhớ hơn hẳn» ← câu 3 (bỏ chữ «lại» theo Rule Reviewer); Threads «học mười từ» ← câu 5 «mỗi phần mười từ» (voice plan v18 còn đúng «mười từ»); YouTube câu Yang ← câu 6 (giữ «222», «ở mức vừa»); tiêu đề YouTube «thử gấp sách tự kiểm» ← tên mục HTB 23.14. Cover `HỌC THUỘC TỐI QUA? / SÁNG QUÊN SẠCH!` ← câu 1. Ngoài năm của nguồn, ID PubMed, 222 và «mười từ», không có số nào khác; không %; không hứa kết quả |
+| T6 | Bản 1080×1350 không mất chữ | Đạt. Đã xem ảnh: tag `#04 HỌC ĐÚNG CÁCH`, 2 hàng hero và logo `OneUp.` còn đủ; chỉ mất bóng dưới chân nhân vật |
+
+### Các mục khác
 | # | Kiểm | Kết quả |
 |---|---|---|
-| 1 | Credit nguyên văn ở TikTok (3), Threads (13), Reels (14), YouTube (15) | Đạt — so chuỗi nguyên văn bằng script ở cả 4 code block |
-| 2 | Câu an toàn nguyên văn ở cả 4 nền tảng | Đạt |
-| 3 | Mỗi bản 1 CTA, 1 câu hỏi | Đạt — đếm dấu «?» trong mỗi bản = 1 (YouTube tính cả tiêu đề) |
-| 4 | Caption rút gọn: hook + ý chính + CTA + nguồn + công bố AI + an toàn + credit | Đạt — TikTok, Reels, YouTube (YouTube thêm câu Yang + PubMed) |
-| 5 | Ý Roediger ghi đúng «Nhưng hai ngày sau, nhóm tự kiểm tra nhớ hơn hẳn.» | Đạt — chỉ còn ở Threads |
-| 6 | Số chỉ từ script/nguồn: 2006, 2021 (năm nguồn), 222 + «mức vừa» (Yang, chỉ YouTube), «mười từ» (script b05, Threads), ID PubMed | Đạt — không %, không 48.478, không g |
-| 7 | Không nói tác giả sách ủng hộ/chứng thực kênh | Đạt |
-| 8 | Văn nói, xưng «bạn», không từ hiếm, không chê năng lực (P-07), không hứa lố | Đạt |
-| 9 | Không lên lịch/đăng tự động | Đạt — Hiệp tự đăng tay |
-| 10 | Độ dài | TikTok 528/2200 · Threads 452/500 · Reels 538/2200 · YouTube mô tả 854/5000, tiêu đề 59/70 |
-| 11 | Cover ≤ 40 ký tự | Đạt (A 34 · B 21 · C 35) — chờ video v18 |
+| 1 | Mỗi bản 1 CTA, 1 câu hỏi | Đạt. Đếm «?»: TikTok 1 · Threads 1 · Reels 1 · YouTube tiêu đề 0 + mô tả 1 |
+| 2 | Văn nói, xưng «bạn», không từ hiếm, không chê năng lực (P-07) | Đạt. Bình luận ghim thêm «Thử» ở đầu câu theo L-073 (sửa 21/10, Rule Reviewer soát lại giúp) |
+| 3 | Không lên lịch / đăng tự động | Đạt. Hiệp tự đăng tay |
+| 4 | Video thật (ffprobe) | 48,90s · 1080×1920 · 30fps · H.264 High · AAC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS (tiktok + reels) |
+| 5 | Không nhạc, có SFX + ambience (luật 21/50) | Đạt (mục 8) |
+| 6 | End card credit, vùng an toàn, Reels không logo TikTok | Đạt (mục 12) |
+| 7 | Cover từ template A, không frame video (luật 54, L-020) | Đạt (mục 16) |
 
-Còn mở: video v18 chưa có; cover/thumbnail chờ video v18; mục 12 phần hình chờ kiểm; bộ xu hướng chưa có.
+### Độ dài thật (đếm bằng script, 21/10/2026)
+| Bản | Độ dài | Giới hạn |
+|---|---|---|
+| TikTok caption (mục 3) | 529 ký tự | 2200 |
+| Threads (mục 13) | 452 ký tự | 500 |
+| Reels caption (mục 14) | 538 ký tự | 2200 |
+| YouTube tiêu đề / mô tả (mục 15) | 59 / 854 ký tự | 100 (OneUp ≤ 70) / 5000 |
+| Video | 48,90s, cả 3 file | L-080: độ dài theo nội dung |
 
-### Kết quả check máy (20/10/2026, sau khi sửa)
-`check-rules.py` chỉ đọc `final/post.md` khi chạy `--final` (cần video cuối) nên chưa chạy thẳng cho `publish/`. Đã chạy lại đúng logic rule-13 / rule-46 / rule-53 trên file này: **15/16 đạt**. Lỗi duy nhất: `cover.png` chưa có (chủ ý — cover chờ video v18). `final/post.md` vẫn là gói v14 cũ, chưa ghi đè.
+### Còn mở, cần Rule Reviewer hoặc Hiệp quyết
+- **Nhạc:** sound note chọn bài theo theme dark, nhưng v18 render theme light (mục 8). Chờ ACE Music hoặc Hiệp chọn lại mood.
+- **`final/post.md` lệch với bộ này:** ngoài dòng cover mới thì post.md vẫn là nội dung v14: 71,0s, file `clip-04-v14-final.mp4`, caption có «48.000 học sinh» + Dunlosky, «Giọng Thầy», hashtag `#tamlyhoc #learnontiktok #tienganh`, tiêu đề «…không nhìn sách bạn nhớ được gì?» (dính L-073). `check-rules --final` đọc post.md nên đang chấm trên bản v14. Social Poster không ghi đè (theo yêu cầu). Đề xuất: News chép mục 1–12 của file này sang post.md sau khi Rule Reviewer duyệt.
+- **Shorts/Threads dùng bản reels:** phụ đề chỉ được đặt tránh UI của Reels, chưa đo riêng UI Shorts. App Threads/YouTube có cho tải ảnh bìa riêng hay không thì mình chưa xác minh.
+- **CML ở VN:** chưa xác minh bài nào có sẵn, Hiệp kiểm trong app.

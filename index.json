@@ -627,8 +627,8 @@
   },
   {
    "id": "content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18",
-   "type": null,
-   "status": "draft cho News dựng; áp dụng sau khi script v18 chốt bản cuối",
+   "type": "visual-plan",
+   "status": "ready",
    "updated": "2026-10-20",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md",
    "title": "Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual)"
@@ -636,18 +636,18 @@
   {
    "id": "clip-04.publish.post-checklist",
    "type": "doc",
-   "status": "đã sửa theo Rule Reviewer, chờ soát lại",
-   "updated": "2026-10-20",
+   "status": "bộ final, chờ Rule Reviewer soát",
+   "updated": "2026-10-21",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md",
    "title": "Checklist đăng clip-04 v18 (đánh dấu khi xong)"
   },
   {
    "id": "clip-04.publish.post-package",
    "type": "post-package",
-   "status": "đã sửa theo Rule Reviewer, chờ soát lại",
-   "updated": "2026-10-20",
+   "status": "bộ final, chờ Rule Reviewer soát",
+   "updated": "2026-10-21",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md",
-   "title": "Bộ nháp đăng clip-04 v18 «Gấp sách tự kiểm»"
+   "title": "Bộ final đăng clip-04 v18 «Gấp sách tự kiểm»"
   },
   {
    "id": "idea-bank",
@@ -717,7 +717,7 @@
    "id": "theme-map",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-21",
    "path": "content/theme-map.md",
    "title": "Theme map — @hi.oneup (LIGHT / DARK theo tone)"
   },

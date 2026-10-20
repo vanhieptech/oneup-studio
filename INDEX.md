@@ -90,9 +90,9 @@ tags: [index, retrieval]
 | content.clips.clip-04-gap-sach-tu-kiem.final.script-v18-table | script | draft — chờ Hiệp «Chốt»; chưa voice, chưa render | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-table.md` | Clip 04 script-v18 (DRAFT): Học thuộc tối qua, sáng dậy quên sạch? (HTB 23.14) |
 | content.clips.clip-04-gap-sach-tu-kiem.final.sound-note-v18 | sound-note | đề xuất — Hiệp chọn bài lúc đăng; News chép vào mục 8 gói đăng nếu dùng | `content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md` | Clip-04 v18 — Sound note |
 | clip-04.trend-signals | trend-signals | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/trend-signals.md` | clip-04 — Trend signals (bản làm lại, Social Research) |
-| content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18 | None | draft cho News dựng; áp dụng sau khi script v18 chốt bản cuối | `content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md` | Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual) |
-| clip-04.publish.post-checklist | doc | đã sửa theo Rule Reviewer, chờ soát lại | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
-| clip-04.publish.post-package | post-package | đã sửa theo Rule Reviewer, chờ soát lại | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md` | Bộ nháp đăng clip-04 v18 «Gấp sách tự kiểm» |
+| content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18 | visual-plan | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md` | Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual) |
+| clip-04.publish.post-checklist | doc | bộ final, chờ Rule Reviewer soát | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
+| clip-04.publish.post-package | post-package | bộ final, chờ Rule Reviewer soát | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md` | Bộ final đăng clip-04 v18 «Gấp sách tự kiểm» |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
