@@ -22,11 +22,11 @@ Dựa trên `final/script-v18-LOCKED.md` (Hiệp đã duyệt lời; 187 chữ, 
 | | c05 | tới từ thứ năm là hành lý thì mình **bí** | — | 0,4 `//\|` | «bí» cuối chunk, +2 dB, rơi giọng | Khựng, hụt. Hình có «lặng ở bí»: dùng đúng 0,4s cuối beat, không kéo thêm |
 | b03 Nguyên nhân | c06 | Một thí nghiệm năm 2006 thấy / | Một thí nghiệm năm hai nghìn lẻ sáu thấy, | 0,18 `/` | — | Chuyển sang kể bằng chứng, chắc giọng, không giảng |
 | | c07 | nếu **kiểm tra ngay** thì nhóm đọc lại làm tốt hơn | — | 0,35 `//` | «kiểm tra ngay» giữa chunk, +2 dB | Trung tính, thừa nhận đọc lại có lợi lúc đầu |
-| | c08 | Nhưng **hai ngày sau** / nhóm tự kiểm tra lại nhớ **hơn hẳn** | — | 0,4 `//\|` | Bảng ghi 2 chỗ: «hai ngày sau», «hơn hẳn» (xem rủi ro R3) | Bất ngờ, đảo chiều: «Nhưng» mở chunk, có lực |
+| | c08 | Nhưng **hai ngày sau** / nhóm tự kiểm tra lại nhớ hơn hẳn | — | 0,4 `//\|` | Bảng ghi 2 chỗ: «hai ngày sau», «hơn hẳn» (xem rủi ro R3) | Bất ngờ, đảo chiều: «Nhưng» mở chunk, có lực |
 | b04 Mục tiêu | c09 | Mình cần là **sáng hôm sau** / gấp sách lại mình vẫn viết ra được | — | 0,4 `//\|` | «sáng hôm sau» +2 dB | Chắc, nói kiểu mục tiêu cá nhân, bình tĩnh |
 | b05 Cách làm | c10 | Nên mình chia ba mươi từ thành **ba phần** / mỗi phần mười từ | — | 0,35 `//` | «ba phần» +2 dB | Hướng dẫn, đều nhịp |
 | | c11 | Học hết phần nào / mình **gấp sách** viết lại phần đó / | — | 0,18 `/` | «gấp sách» giữa chunk, +2 dB | Đều |
-| | c12 | chỗ nào bí mình mới **mở sách** | — | 0,4 `//\|` | «mở sách» cuối chunk, +2 dB (bảng có 2 nhấn trong câu này, xem R3) | Nhẹ, chốt cách làm |
+| | c12 | chỗ nào bí mình mới mở sách | — | 0,4 `//\|` | «mở sách» cuối chunk, +2 dB (bảng có 2 nhấn trong câu này, xem R3) | Nhẹ, chốt cách làm |
 | b06 Bằng chứng | c13 | Nhóm của Yang tổng hợp 222 nghiên cứu / | Nhóm của Giang tổng hợp hai trăm hai mươi hai nghiên cứu, | 0,18 `/` | — | Chắc, đúng mức, không cường điệu |
 | | c14 | thấy lớp có kiểm tra nhỏ thì điểm **cao hơn** lớp không làm kiểm tra nhỏ / ở mức vừa | — | 0,4 `//\|` | «cao hơn» giữa chunk, +2 dB | «ở mức vừa» hạ giọng nhẹ. Gộp «ở mức vừa» (3 âm tiết) vào chunk này |
 | b07 Kết quả | c15 | Sáng hôm sau / sách vẫn gấp / | — | 0,18 `/` | — | Ấm, chậm vừa |
@@ -63,3 +63,10 @@ Dựa trên `final/script-v18-LOCKED.md` (Hiệp đã duyệt lời; 187 chữ, 
 6. 2006, 222, Yang, luggage, comment nghe rõ (STT tiếng Việt và tiếng Anh như ghi ở R1–R6). Chỗ nào STT nghi ngờ thì ghi «cần nghe tai».
 7. Tổng giọng ≤ 58s (ước tính ≈ 50,7s), tổng gồm end card ≤ 60s. Loudness −14 LUFS ±1.
 8. Một take cho mỗi chunk, không cắt bên trong output F5 (`intra_output_cuts = 0`, L-016). Chạy `check-rules.py` L-070 trên `prosody-measure` của bản này.
+
+## Quyết định Rule Reviewer (2026-10-20 23:17)
+- R3: P-08 cho tối đa 2 nhấn/beat; b03 và b05 đang 3. Bỏ nhấn «hơn hẳn» (giữ «hai ngày sau» là chữ đảo chiều) và «mở sách» (giữ «gấp sách» là bước chính). Đã sửa bảng + file này; lời không đổi.
+- R4: đồng ý — chỉ nhận take đọc liền «lại nhớ hơn hẳn», không lặng giữa «kiểm tra» và «lại».
+- «nhóm» 2 nghĩa: ghi nhận cho clip sau, không sửa bản khoá.
+- Đề xuất 8–10 take cho c07/c14: đồng ý.
+- Diff từng chữ chunk vs LOCKED: 187/187 khớp.
