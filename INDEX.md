@@ -67,8 +67,8 @@ tags: [index, retrieval]
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v4.md` | Clip 04 v4 (ARCHIVED — superseded by v5 draft): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v5.md` | Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.fact-package-redo | fact-package | verified-awaiting-script-rewrite | `content/clips/clip-04-gap-sach-tu-kiem/final/fact-package-redo-2026-10-19.md` | Clip 04 làm lại — gói fact (Deep Research) |
-| clip-04.post-checklist | doc | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md` | Checklist đăng clip 04 v14 (đánh dấu khi xong) |
-| clip-04.post | post-package | chờ Hiệp duyệt gói đăng sau khi xem video | `content/clips/clip-04-gap-sach-tu-kiem/final/post.md` | Gói đăng TikTok: clip 04 v14 "Gấp sách tự kiểm" |
+| clip-04.post-checklist | doc | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
+| clip-04.post | post-package | bộ final v18, Rule Reviewer đã soát phần chữ (23c82a7), chờ --final + Hiệp duyệt | `content/clips/clip-04-gap-sach-tu-kiem/final/post.md` | Bộ final đăng clip-04 v18 «Gấp sách tự kiểm» |
 | content.clips.clip-04-gap-sach-tu-kiem.final.production-v14 | production | locked-script-in-production | `content/clips/clip-04-gap-sach-tu-kiem/final/production-v14.md` | Clip 04 v14 — production |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v05.md` | Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
@@ -91,8 +91,6 @@ tags: [index, retrieval]
 | content.clips.clip-04-gap-sach-tu-kiem.final.sound-note-v18 | sound-note | đề xuất — Hiệp chọn bài lúc đăng; Social Poster chép mục 1 vào mục 8 gói đăng | `content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md` | Clip-04 v18 — Sound note |
 | clip-04.trend-signals | trend-signals | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/trend-signals.md` | clip-04 — Trend signals (bản làm lại, Social Research) |
 | content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18 | visual-plan | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md` | Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual) |
-| clip-04.publish.post-checklist | doc | bộ final, chờ Rule Reviewer soát | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
-| clip-04.publish.post-package | post-package | bộ final, chờ Rule Reviewer soát | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md` | Bộ final đăng clip-04 v18 «Gấp sách tự kiểm» |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -387,7 +385,7 @@ tags: [index, retrieval]
 |---|---|---|---|
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | archive, final |
 | clip-03 | None | `content/clips/clip-03-big-task-chunking` | README.md, archive, final |
-| clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, archive, final, publish |
+| clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, archive, final |
 
 ## Assets & tools
 | id | path | description |

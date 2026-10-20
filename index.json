@@ -445,17 +445,17 @@
    "id": "clip-04.post-checklist",
    "type": "doc",
    "status": "ready",
-   "updated": "2026-10-20",
+   "updated": "2026-10-21",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md",
-   "title": "Checklist đăng clip 04 v14 (đánh dấu khi xong)"
+   "title": "Checklist đăng clip-04 v18 (đánh dấu khi xong)"
   },
   {
    "id": "clip-04.post",
    "type": "post-package",
-   "status": "chờ Hiệp duyệt gói đăng sau khi xem video",
-   "updated": "2026-10-20",
+   "status": "bộ final v18, Rule Reviewer đã soát phần chữ (23c82a7), chờ --final + Hiệp duyệt",
+   "updated": "2026-10-21",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/post.md",
-   "title": "Gói đăng TikTok: clip 04 v14 \"Gấp sách tự kiểm\""
+   "title": "Bộ final đăng clip-04 v18 «Gấp sách tự kiểm»"
   },
   {
    "id": "content.clips.clip-04-gap-sach-tu-kiem.final.production-v14",
@@ -632,22 +632,6 @@
    "updated": "2026-10-20",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md",
    "title": "Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual)"
-  },
-  {
-   "id": "clip-04.publish.post-checklist",
-   "type": "doc",
-   "status": "bộ final, chờ Rule Reviewer soát",
-   "updated": "2026-10-21",
-   "path": "content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md",
-   "title": "Checklist đăng clip-04 v18 (đánh dấu khi xong)"
-  },
-  {
-   "id": "clip-04.publish.post-package",
-   "type": "post-package",
-   "status": "bộ final, chờ Rule Reviewer soát",
-   "updated": "2026-10-21",
-   "path": "content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md",
-   "title": "Bộ final đăng clip-04 v18 «Gấp sách tự kiểm»"
   },
   {
    "id": "idea-bank",
@@ -2650,8 +2634,7 @@
    "files": [
     "README.md",
     "archive",
-    "final",
-    "publish"
+    "final"
    ]
   }
  ],
