@@ -89,15 +89,14 @@ Mặc định 19:00 (giờ VN), theo gợi ý luật 32 (thứ Hai/Tư/Sáu, kê
 
 ## 8. Âm thanh
 ```
-Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds). Mood: lofi piano/Rhodes trầm, ấm, không lời, 70–90 BPM, không drop, không giọng hát. Âm lượng: giọng gốc 100%, nhạc 5% (tối đa 8%). Bắt đầu track ở đoạn mở mỏng (pad/piano), tránh intro trống. Trong file không có nhạc (luật 21); SFX + ambience đã mix sẵn.
-Ưu tiên tìm tên: "Calm Lofi/Cafe/Study/Vlog(1492712)" – Tana Music · "Study Routine (Lofi)" – The Machinist Beats · "vlog, chill out, calm daily life(1370843)" – SUNNY HOOD STUDIO. Không thấy trong Commercial Sounds thì tìm: lofi study / calm piano / late night study.
+Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds). Mood: chill acoustic / cafe lofi sáng, major key, guitar mộc + Rhodes, không lời, 85–95 BPM, không drop, không giọng hát. Âm lượng: giọng gốc 100%, nhạc 5% (tối đa 8%). Bắt đầu track ở đoạn mở mỏng (guitar/piano), tránh intro trống. Trong file không có nhạc (luật 21); SFX + ambience đã mix sẵn.
+Ưu tiên tìm tên: "vlog, chill out, calm daily life(1370843)" – SUNNY HOOD STUDIO · "Coffee and Daydreams" – Tokyo.Beats · "Calm Lofi/Cafe/Study/Vlog(1492712)" – Tana Music. Không thấy trong Commercial Sounds thì tìm: chill acoustic / cafe lofi / vlog daily life.
 ```
 
-- Nguồn: `final/sound-note-v18.md` mục 1 (ACE Music, 20/10/2026). News đã xác nhận theme dark, nên thứ tự ưu tiên là `Calm Lofi/Cafe/Study/Vlog(1492712)` (Tana Music) → `Cool Nights (Lofi)` → `Study Routine (Lofi)` (cả hai của The Machinist Beats), theo mục 3 của sound note.
+- Nguồn: `final/sound-note-v18.md` mục 1 (ACE Music, bản theme light, commit 913ccdc, 21/10/2026). Bản v18 render theme light (`spec.json`, f1cd4fd), nên ưu tiên lần lượt là `vlog, chill out, calm daily life(1370843)` (SUNNY HOOD STUDIO), `Coffee and Daydreams` (Tokyo.Beats), rồi `Calm Lofi/Cafe/Study/Vlog(1492712)` (Tana Music). Đã bỏ `Cool Nights` vì là lofi đêm.
 - **Chưa xác minh** bài nào có trong Commercial Music Library ở VN. Hiệp kiểm trong app: Sounds → Commercial Sounds → gõ tên; có trong đó mới dùng.
 - Quyền nhạc CML **chỉ áp dụng trong TikTok**. Reels, YouTube Shorts và Threads đăng `clip-04-v18-reels.mp4`, không thêm nhạc.
 - **Kiểm file (21/10/2026):** check-rules `rule-21 no music` ✔. Trong file có 29 hit SFX (swish 9, tick 4, pen 4, pop 4, snap 3, rise 3, ding 2, theo `final/timing.json → sfx_mix`) + 1 lớp `ambience` chạy suốt clip; `rule-50`: 8/8 chuyển cảnh có SFX. Đo tay: đoạn 42,3–43,2s giọng im hẳn (−91 dB trong voice track) nhưng file mp4 vẫn có tiếng (trung bình −57 dB, đỉnh −32 dB, có swish ở 43,15s); end card 47,8–48,8s trung bình −63 dB (ambience); không có đoạn lặng hẳn < −70 dB nào ≥ 0,3s.
-- **Lệch theme:** sound note chọn bài theo theme dark, nhưng bản render v18 là theme **LIGHT** (`spec.json → theme`, commit f1cd4fd, cover cũng light). Sound note mục 2 ghi: nếu light thì nên chuyển sang chill acoustic sáng 85–95 BPM. Danh sách bài ở trên giữ nguyên, chờ ACE Music hoặc Hiệp quyết.
 
 ## 9. Checklist cài đặt khi đăng
 ```
