@@ -95,7 +95,7 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 ### 3.1 Quy tắc hiện hành
 - **[BC dẫn lời IG] Tối đa 5 hashtag mỗi post/reel**, áp dần từ 18/12/2025. Instagram nói: "using fewer (up to 5) more targeted hashtags, rather than many generic ones, can improve both your content's performance and people's experience". Mosseri nói hashtag giúp tìm kiếm nhưng "don't increase your reach". Nguồn: Social Media Today 18/12/2025 https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/, The Verge https://www.theverge.com/news/847739/instagram-hashtag-spam-limit, Indian Express 21/12/2025. Indian Express dẫn @creators: thẻ chung chung như #reels, #explore "may negatively impact" hiệu quả bài.
 - **[DL] Xác nhận gián tiếp:** cả 14/14 reel đăng từ 2026 trong mẫu có ≤ 5 thẻ. Reel đăng trước 2026 có tới 14–19 thẻ.
-- **[BC dẫn Instagram Help] Nhãn AI:** bắt buộc với video giống thật hoặc **âm thanh AI nghe như thật**, "a reel with a realistic AI voiceover" là ví dụ cần nhãn. Bật bằng nút "Add AI label" trước khi chia sẻ (chỉ trong app). Nguồn: Zolyp 15/10/2026 dẫn *Instagram Help Centre: Label AI content on Instagram* https://www.zolyp.com/blog/how-to-label-ai-content-on-instagram. Trang help.instagram.com trả 403 khi fetch nên chưa mở được bản gốc.
+- **[BC dẫn Instagram Help] Nhãn AI:** bắt buộc với video giống thật hoặc **âm thanh AI nghe như thật**, "a reel with a realistic AI voiceover" là ví dụ cần nhãn. Bật bằng nút "Add AI label" trước khi chia sẻ (chỉ trong app). Nguồn: Zolyp 15/10/2026 dẫn *Instagram Help Centre: Label AI content on Instagram* https://www.zolyp.com/blog/how-to-label-ai-content-on-instagram. **Chưa xác nhận từ nguồn gốc** (help.instagram.com trả 403).
 - **Caption tối đa 2.200 ký tự.** Trong tab Reels chỉ hiện khoảng 55–60 ký tự trước nút "more" [BC: https://bundle.social/blog/instagram-character-limits-guide].
 - Tín hiệu đề xuất (lượt gửi bạn bè, thời gian xem): xem `research/platform-recommendation-facts-2026-10-20.md`.
 
@@ -171,7 +171,7 @@ Studio: AI use = Yes.
 ## 5. Threads
 
 ### 5.1 Quy tắc [CT qua tài liệu Meta, dẫn lại]
-- **Một topic tag mỗi bài**, dài 1–50 ký tự, được có dấu cách, dấu # không bắt buộc. Thêm bằng "Tag" hoặc gõ #. Hashtag thứ hai trở đi chỉ là chữ thường [BC dẫn Threads Help]: https://www.zolyp.com/blog/how-to-use-topic-tags-on-threads. Bản API ghi "Only one topic tag is allowed per post" [BC dẫn developer docs]: https://adaptlypost.com/blog/threads-api-500-character-limit-topic-tag. developers.facebook.com trả 403 nên chưa mở bản gốc.
+- **Một topic tag mỗi bài**, dài 1–50 ký tự, được có dấu cách, dấu # không bắt buộc. Thêm bằng "Tag" hoặc gõ #. Hashtag thứ hai trở đi chỉ là chữ thường [BC dẫn Threads Help]: https://www.zolyp.com/blog/how-to-use-topic-tags-on-threads. Bản API ghi "Only one topic tag is allowed per post" [BC dẫn developer docs]: https://adaptlypost.com/blog/threads-api-500-character-limit-topic-tag. **Chưa xác nhận từ nguồn gốc** (developers.facebook.com trả 403).
 - **Text tối đa 500 ký tự.** Hashtag viết trong text cũng tính vào giới hạn này (nguồn như trên).
 - **[CT] "Trending" (tóm tắt chủ đề nóng) có ở Việt Nam từ 05/2026.** Connor Hayes (trưởng Threads) viết: "now live in Japan, Vietnam, Taiwan, and Brazil": https://www.threads.com/@conno_r/post/DX7RQFskeSO. SMT cũng đưa tin: https://www.socialmediatoday.com/news/threads-expands-trending-topic-summaries-to-more-regions/819276/.
 - **Nhãn AI:** Threads có nút "Add AI label" trong composer [BC]: https://www.zolyp.com/blog/how-to-label-ai-content-on-threads. Mosseri: thẻ trên Threads nhắm "communities … less on engagement hacking" (dẫn qua The Verge, link ở §3.1).
@@ -217,4 +217,4 @@ Topic: {1 tag}
 ## 7. Việc tiếp theo
 - Khi `research/tiktok-trend-pack-study-2026-10-20.md` của Social Research có, đối chiếu lại bảng hashtag §2.3 và chỉ trỏ tới file đó.
 - Sau 14 ngày có Analytics của kênh: so thẻ/caption theo lượt xem của chính kênh, cập nhật file này (rule-47).
-- Chưa kiểm được: trang gốc Instagram/Threads Help và Meta developer docs (403 khi fetch). Cần mở bằng trình duyệt để nâng các mục [BC dẫn] lên [CT].
+- Chưa kiểm được: trang gốc Instagram/Threads Help và Meta developer docs (403 khi fetch). Các mục [BC dẫn] từ Meta ghi là «chưa xác nhận từ nguồn gốc»; nhờ Deep Research kiểm lại khi cần để nâng lên [CT].
