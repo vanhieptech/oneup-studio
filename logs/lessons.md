@@ -117,3 +117,9 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Whisper small (float32) nghe sai ổn định: «Comment» → «Còn mình/Con mê», «học thuộc» → «học thuật», «gấp sách» → «gấp sắt», «mấy từ» → «máy từ». Whisper medium float32 nghe đúng cả. Sửa: `voice-delivery-f5.py` có biến `ASR_MODEL` (mặc định small, dùng `ASR_MODEL=medium` cho lượt `measure` cuối, chậm khoảng gấp 3).
 - Nâng giọng chữ cuối câu hỏi +2,5 st trở lên làm thanh nặng/huyền nghe thành sắc/ngang: «sạch» → «xác», «từ» → «tư/tờ» (medium). Sửa: nâng từ +1 st, mỗi bước +0,5 st, dừng khi đo ≥ +0,6 st. Ưu tiên take tự rơi giọng ít ở chữ cuối. Câu kết thúc bằng thanh huyền vẫn cần +4 st, nên ghi «cần nghe tai» và hỏi Rule Reviewer.
 - Đo lặng: mép chữ do STT trả về thường lấn vào chỗ lặng (âm tắc, chỗ ghép). Lặng phải được gán vào ranh giới chữ theo điểm giữa của đoạn lặng, và cắt mép chữ theo mép đoạn ghép. Cửa sổ «hết chữ trước − 0,03s → đầu chữ sau + 0,03s» bỏ sót, ví dụ 0,24s ở «nhỏ | thì» c14-113.
+
+## L-082 (2026-10-21 01:25, Rule Reviewer) — Thanh điệu thắng luật lên giọng câu hỏi
+- Lỗi: c17a v18 nâng «từ» (thanh huyền) +0,92 st để đạt luật lên giọng câu hỏi, STT medium nghe thành «mấy tư»; nâng +1,5…4 st ra «tờ/tư». Sai chữ là lỗi nặng hơn thiếu lên giọng.
+- Gốc: luật L-070/W-08 «câu hỏi ≥+0,5 st» không tính thanh huyền/nặng ở âm tiết cuối.
+- Fix: âm tiết cuối thanh huyền/nặng → miễn luật lên giọng, cấm nâng pitch nhân tạo; câu hỏi nhận qua từ hỏi («mấy, gì, nào…») + «?» trên phụ đề. Chỉ cần STT đọc đúng chữ cuối.
+- Phát hiện: bảng đo phải ghi thanh của âm tiết cuối; câu hỏi có thanh huyền/nặng mà gain pitch >0 = lỗi.
