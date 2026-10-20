@@ -1,7 +1,7 @@
 """clip-04 v18 scenes → final/spec.json (imported by clip-04-mkspec-v18.py spec). Follows final/script-v18-table.md,
 final/visual-plan-v18.md (FLUX 6770a3f) and research/agents/short-factory-clip04-v18-review-vi.md. Times are scene-local seconds,
 taken from the measured word times of the approved voice (slices.json)."""
-import json, re, importlib
+import json, os, re, importlib
 MK = importlib.import_module("clip-04-mkspec-v18")
 D, WORK, P = MK.D, MK.WORK, MK.P
 S = json.load(open(WORK + "slices.json")); LN = {L[0]: L for L in MK.LINES}
@@ -48,7 +48,7 @@ def ROWX(cu=False): return (437, 760) if cu else (413, 540)
 def PEN(keys, rot=24, cu=False): return {"kind": "pen", "x": 0, "y": 0, "s": 1, "rot": rot, "len": 230 if cu else 150, "keys": keys}
 PEN_REST = PEN([[0, 585, 1420]], rot=8)
 PEN_REST_CU = PEN([[0, 790, 1330]], rot=28, cu=True)
-def CARD(**kw): return dict({"kind": "card", "x": 905, "y": ROWY(4, True), "s": 0.6, "shadow": 0.18}, **kw)
+def CARD(**kw): return dict({"kind": "card", "x": 905, "y": ROWY(4, True), "s": 0.6, "shadow": 0.3}, **kw)  # light theme: suitcase shadow boosted for contrast
 def C(ex="focused", act="talking", facing="left"): return {"id": "hiep", "x": 0.76, "facing": facing, "pose": "sitting", "action": act, "expression": ex}
 def SFX(n, lid, word, sc, nn=1, off=0.0):
     li = sc.lids.index(lid); return {"name": n, "atLine": li, "offset": round(sc.W(lid, word, nn) - sc.L0(lid) + off, 3), "word": WORDS.get((lid, word), word)}
@@ -58,7 +58,7 @@ CU_ANCHOR = [600, 560]
 
 def build():
     out = []
-    def add(sc, cast, props, sfx, fx, stage, link=None, push=0.04, narration=None):
+    def add(sc, cast, props, sfx, fx, stage, link=None, push=0.04, narration=None, mg=None):
         lines = [line(l, CU_ANCHOR if (not cast and LN[l][7]) else None) for l in sc.lids]
         if cast:
             for l in lines: l["set"] = {"hiep": {"expression": {"neutral": "neutral"}.get(l["emotion"], l["emotion"])}}
@@ -66,6 +66,7 @@ def build():
              "cast": cast, "fx": {"visual": fx[0], "word": fx[1]}, "sfx": sfx, "props": props, "lines": lines, "stage": {"action": stage[0], "react": stage[1]}, "dur": sc.dur}
         if link: d["link"] = link
         if narration: d["narration"] = narration
+        if mg: d["mg"] = mg; d["push"] = 0
         out.append(d)
 
     # b01 hook, shot 1: close-up blank sheet, night→sun, faint rows of last night evaporate, pen drops + snap
@@ -110,34 +111,29 @@ def build():
         ("mmx-snap-settle: close-up, pen stops dead on empty row 5; a face-down card with a faded suitcase shadow appears, shakes at 'bí'", "bí"),
         ("Pen stops at row 5; face-down card shows only a faint suitcase shadow", "stuck, deflated"), push=0.06, link="the exact word where that morning test broke")
 
-    # b03 cause + evidence: two desk halves (reread | self-test), paper-stack bars
-    H = {"kind": "halves", "x": 0, "y": 0, "top": 1180}
-    WH = lambda sky: WIN(sky, wx=390, wy=210, ww=300, wh=230)
-    LB = {"kind": "tome", "x": 290, "y": 760, "s": 0.6, "keys": [[0, "open"]]}
-    RS = {"kind": "paper", "x": 790, "y": 760, "s": 0.44, "rows": [[0, -1], [1, -1]], "tilt": 3}
-    RP = PEN([[0, 905, 840]], rot=30)
+    # b03 cause + evidence → HyperFrames motion-graphic plate (rule-42): final/mg-b03 (pipeline/scripts/clip-04-mg-v18.py),
+    # rendered to video-engine/public/mg/c04v18-b03.mp4; Remotion only overlays captions + the study credit + «+2 ngày» tag.
+    MG = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../content/clips/clip-04-gap-sach-tu-kiem/final/mg-v18.json")))
+    PL = lambda name, frm: {"kind": "plate", "x": 0, "y": 0, "src": f"mg/c04v18-{name}.mp4", "from": round(frm, 4)}
     CR = lambda at: TAG("Roediger & Karpicke 2006", 540, 1330, at)
-    s = Scene("b03a", "b03", "evidence", ["c06"], "paper")
-    add(s, [], [H, WH([[0, "day"]]), dict(LB, at=0), RS, RP, CR(s.W("c06", "thí"))],
+    s = Scene("b03a", "b03", "evidence", ["c06"], "plate"); t3 = 0.0
+    add(s, [], [PL("b03", t3), CR(s.W("c06", "thí"))],
         [SFX("ding", "c06", "năm", s, 1)],
-        ("tdev-split: frame splits into two desk halves, reread book left vs closed-book sheet right; study credit tag", "2006"),
-        ("Two desks side by side: open book vs closed-book sheet", "curious"), link="why the morning test broke: a 2006 experiment")
-    s = Scene("b03b", "b03", "evidence", ["c07"], "paper")
-    tb = s.W("c07", "tốt")
-    add(s, [], [H, WH([[0, "day"]]), LB, RS, RP, CR(-1),
-                {"kind": "stack", "x": 290, "y": 1190, "keys": [[0, 4], [tb, 7]], "seed": 1, "at": 0}, {"kind": "stack", "x": 790, "y": 1190, "keys": [[0, 4], [tb, 5]], "seed": 2, "at": 0},
-                {"kind": "icon", "name": "thumbs", "x": 440, "y": 980, "size": 96, "at": tb + 0.1, "plate": True}],
+        ("hf-motion-graphic: split frame, reread book left vs closed-book sheet right, baseline draws; study credit tag", "2006"),
+        ("Two columns: open book vs closed-book sheet", "curious"), link="why the morning test broke: a 2006 experiment", mg="mg-b03")
+    t3 += s.dur
+    s = Scene("b03b", "b03", "evidence", ["c07"], "plate")
+    add(s, [], [PL("b03", t3), CR(-1)],
         [SFX("pop", "c07", "tốt", s)],
-        ("tdev-stagger: paper-stack bars rise, reread stack taller right after study, thumbs-up pops at 'tốt hơn'", "kiểm tra ngay"),
-        ("Stacks of remembered sheets: reread side taller when tested at once", "fair, admits rereading helps first"), link="the experiment's first result")
-    s = Scene("b03c", "b03", "evidence", ["c08"], "paper")
-    hd = s.W("c08", "hai"); hh = s.W("c08", "hơn", 1)
-    add(s, [], [H, WH([[0, "day"], [hd, "night"], [hd + 0.45, "day"], [hd + 0.9, "night"], [hd + 1.35, "day"]]), LB, RS, RP, CR(-1),
-                {"kind": "stack", "x": 290, "y": 1190, "keys": [[0, 7], [hh, 3]], "seed": 1}, {"kind": "stack", "x": 790, "y": 1190, "keys": [[0, 5], [hh, 8]], "seed": 2},
-                {"kind": "icon", "name": "thumbs", "x": 440, "y": 980, "size": 96, "plate": True, "droopAt": hd}],
-        [SFX("rise", "c08", "hơn", s, 1, -0.1)],
-        ("mmx-snap-settle: sun rises twice in the window, thumbs-up droops at 'hai ngày sau', stacks swap with snap-settle at 'hơn hẳn'", "hai ngày sau"),
-        ("Two sunrises; reread stack shrinks, self-test stack grows past it", "surprised reversal"), link="but two days later the result flips")
+        ("hf-motion-graphic: two bars rise at 'kiểm tra ngay', reread bar a bit taller, thumbs-up pops on it at 'tốt hơn'", "kiểm tra ngay"),
+        ("Bars: reread a bit taller when tested at once", "fair, admits rereading helps first"), link="the experiment's first result", mg="mg-b03")
+    t3 += s.dur
+    s = Scene("b03c", "b03", "evidence", ["c08"], "plate")
+    r2 = MG["mg-b03"]["rise2"] - t3
+    add(s, [], [PL("b03", t3), CR(-1), TAG("+2 ngày", 830, 300, r2, style="word", size=52)],
+        [SFX("rise", "c08", "tự", s, 1, -0.17)],
+        ("hf-motion-graphic: window moon → sunrise → sunset → 2nd sunrise; at the 2nd sunrise «+2 ngày» tag and the bars swap (self-test clearly taller), thumbs-up droops", "hai ngày sau"),
+        ("Two sunrises; reread bar shrinks, self-test bar grows past it; no numbers", "surprised reversal"), link="but two days later the result flips", mg="mg-b03")
 
     # b04 goal: back to the sheet, push into empty row 5 with a dotted suitcase outline
     s = Scene("b04", "b04", "intro", ["c09"], "paper", "closeup")
@@ -171,20 +167,19 @@ def build():
         ("mmx-snap-settle: book opens once at 'mở sách' for a glance, then shuts again", "mở sách"),
         ("Opens the book once only where stuck, closes it again", "small doubt, then sure"), link="the only moment the book opens")
 
-    # b06 evidence: growing pile of studies, then two score bars (moderate gap)
-    s = Scene("b06a", "b06", "evidence", ["c13"], "paper")
+    # b06 evidence → HyperFrames motion-graphic plate (rule-42): final/mg-b06 → public/mg/c04v18-b06.mp4
     YC = lambda at: TAG("Yang et al. 2021", 540, 1330, at)
-    add(s, [], [WIN([[0, "day"]], wx=380, wy=230, ww=320, wh=230), {"kind": "table", "x": 0, "y": 0, "top": 1180}, {"kind": "papers", "x": 540, "y": 1110, "n": 16, "at": 0.1, "stagger": 0.13}, YC(s.W("c13", "giang"))],
+    s = Scene("b06a", "b06", "evidence", ["c13"], "plate"); t6 = 0.0
+    add(s, [], [PL("b06", t6), YC(s.W("c13", "giang"))],
         [SFX("ding", "c13", "giang", s)],
-        ("tdev-stagger: a pile of research papers grows sheet by sheet on the desk, study credit at 'Yang'", "222 nghiên cứu"),
-        ("Research papers pile up on the desk", "solid, sure"), link="bigger evidence for the same closed-book habit")
-    s = Scene("b06b", "b06", "evidence", ["c14"], "paper")
-    add(s, [], [WIN([[0, "day"]], wx=380, wy=230, ww=320, wh=230), {"kind": "table", "x": 0, "y": 0, "top": 1180}, YC(-1),
-                {"kind": "bars", "x": 540, "y": 1150, "a": 330, "b": 262, "base": 0.25, "riseAt": s.W("c14", "điểm"), "badgeAt": s.W("c14", "kiểm", 1), "gapAt": s.W("c14", "mức")},
-                {"kind": "icon", "name": "hand", "x": 905, "y": 860, "size": 130, "rot": -95, "at": s.W("c14", "cao"), "bob": True}],
+        ("hf-motion-graphic: research papers drop one by one into a pile, squared up at 'nghiên cứu'; study credit at 'Yang'", "222 nghiên cứu"),
+        ("Research papers pile up and merge", "solid, sure"), link="bigger evidence for the same closed-book habit", mg="mg-b06")
+    t6 += s.dur
+    s = Scene("b06b", "b06", "evidence", ["c14"], "plate")
+    add(s, [], [PL("b06", t6), YC(-1)],
         [SFX("rise", "c14", "cao", s, 1, -0.05)],
-        ("tdev-stagger: two score bars rise, quiz sheet + tick on the taller one, hand points, dashed line marks a moderate gap", "cao hơn"),
-        ("Two score bars, the quiz class a moderate step higher", "measured, not hyped"), link="what those studies found")
+        ("hf-motion-graphic: two class bars, quiz sheet + tick on the quiz class, bars rise at 'điểm cao hơn', hand points at the TALL bar, dashed line + bracket marks a moderate gap at 'ở mức vừa'", "cao hơn"),
+        ("Two class bars, the quiz class a moderate step higher; no numbers", "measured, not hyped"), link="what those studies found", mg="mg-b06")
 
     # b07 result: same frames as b02, card flips to a clear suitcase + tick; hold ~1s
     s = Scene("b07a", "b07", "payoff", ["c15"], "room")
@@ -225,7 +220,7 @@ def write():
         for l in x["lines"]:
             if l["voice_file"].endswith(f"{MK.HOLD_AFTER}.wav"): l["cap"] = [l["cap"][0], S[MK.HOLD_AFTER]["dur"]]
     base = json.load(open(D + "spec.json"))
-    spec = {"id": "clip-04-final", "clip": "clip-04", "title": "Gấp sách tự kiểm (HTB 23.14) - script v18 locked", "week": 1, "theme": "dark", "pillar": "Học đúng cách",
+    spec = {"id": "clip-04-final", "clip": "clip-04", "title": "Gấp sách tự kiểm (HTB 23.14) - script v18 locked", "week": 1, "theme": "light", "pillar": "Học đúng cách",
         "story": "monologue Thầy (L-039); ví dụ 30 từ tiếng Anh (luggage); L-050 nghĩa bằng vật + hành động, không chữ trong hình; visual-plan-v18 (FLUX 6770a3f) + short-factory review",
         "trend": base.get("trend"), "voice_prefix": P, "voice_track": "voice-track-c04v18.wav", "mix": "linear", "layout": "tiktok",
         "length_target": [40, 60.5], "length_note": "L-080 (Hiệp 21/10 00:33): độ dài theo nội dung, không ép 55s; giọng 46.1s + giữ b07 1s + đuôi 0.3s + end card 1.5s",

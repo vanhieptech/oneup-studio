@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import type { Scene, VideoConfig } from "../validation/schema";
 import type { ProfileRegistry } from "../characters/registry";
 import { getCharacterState } from "../animation/controller";
@@ -41,10 +41,12 @@ export const SceneRenderer: React.FC<{
   const reels = video.layout === "reels"; // Reels/Shorts: captions y≈1000–1240, title y≥300
   const capTop = reels ? 1000 : H * 0.775;
   const ec = (scene.props as PropCue[] | undefined)?.find((p) => p.kind === "endcard");
+  const plate = (scene.props as PropCue[] | undefined)?.find((p) => p.kind === "plate") as (PropCue & { src: string; from?: number }) | undefined; // rule-42: HyperFrames MG beat
 
   return (
     <AbsoluteFill style={{ ...tStyle, overflow: "hidden" }}>
       <div style={{ position: "absolute", width: DESIGN_W, height: H, transform: `scale(${k})`, transformOrigin: "0 0" }}>
+        {plate && <OffthreadVideo src={staticFile(plate.src)} startFrom={Math.round((plate.from ?? 0) * fps)} muted style={{ position: "absolute", left: 0, top: 0, width: DESIGN_W, height: H }} />}
         <svg width={DESIGN_W} height={H} viewBox={`0 0 ${DESIGN_W} ${H}`} style={{ position: "absolute", inset: 0 }}>
           {ec && <defs><filter id={`ecb-${scene.id}`} x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation={14} /></filter></defs>}
           <g transform={camT} filter={ec ? `url(#ecb-${scene.id})` : undefined}>

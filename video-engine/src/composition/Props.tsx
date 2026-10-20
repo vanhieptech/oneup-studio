@@ -7,7 +7,7 @@ import { V18_KINDS, V18_ABS } from "./PropsV18";
  *  All times are scene seconds (build-final shifts them by the first line start). Drawn inside the camera group. */
 export type PropCue = {
   kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty" | "book" | "sheet" | "pen"
-    | "window" | "table" | "tome" | "paper" | "card" | "icon" | "stack" | "deck" | "papers" | "bars" | "halves" | "tag" | "endcard";
+    | "window" | "table" | "tome" | "paper" | "card" | "icon" | "stack" | "deck" | "papers" | "bars" | "halves" | "tag" | "endcard" | "plate";
   [extra: string]: unknown;
   keys?: [number, number, number][]; len?: number;
   count?: number;
@@ -289,7 +289,7 @@ export const Props: React.FC<{ props: PropCue[]; t: number; h: number }> = ({ pr
     if (p.until != null && t > p.until) return null;
     if (p.kind === "vignette") { const k = ease(t, p.at ?? 0, 0.6) * (p.dark ?? 0.55);
       return <g key={i}><defs><radialGradient id={`vg${i}`} cx="50%" cy="45%" r="70%"><stop offset="45%" stopColor={ink} stopOpacity={0} /><stop offset="100%" stopColor={ink} stopOpacity={k} /></radialGradient></defs><rect width={1080} height={h} fill={`url(#vg${i})`} /></g>; }
-    if (p.kind === "tag" || p.kind === "endcard") return null; // HTML layer (SceneRenderer)
+    if (p.kind === "tag" || p.kind === "endcard" || p.kind === "plate") return null; // HTML layer (SceneRenderer)
     if (p.from != null && t < (p.from as number)) return null; // v18: prop appears at `from` (scene s)
     if (V18_KINDS[p.kind]) { const V = V18_KINDS[p.kind];
       let px = p.x ?? 540, py = p.y ?? 900; const mv = p.mv as [number, number, number][] | undefined; // mv: position keys [t, x, y] (eased)

@@ -3,7 +3,7 @@
 Reels safe zone: captions y≈1000–1240 (engine: video.layout=reels → narrow left caption box x 60–640),
 title y≥300. Props that would sit under the caption band are moved above it:
   closeup: paper/card/pen/tag −200 · halves: everything but window −200, window wy 150
-  b06 (table 1180): −200, window wy 150 · room: small paper s.36 @y1300 (pen remapped), chat/hand icons lifted.
+  plates (b03/b06 HyperFrames) untouched · room: small paper s.36 @y1300 (pen remapped), chat/hand icons lifted.
 Usage: python3 pipeline/scripts/clip-04-reels-plan-v18.py"""
 import json, os
 D = os.path.join(os.path.dirname(__file__), "../../content/clips/clip-04-gap-sach-tu-kiem/final")
@@ -19,6 +19,7 @@ def shift(pr, dy):
 for s in p["scenes"]:
     fr, props = s["camera"]["framing"], s.get("props", [])
     kinds = {pr["kind"] for pr in props}
+    if "plate" in kinds: continue  # HyperFrames MG plates (b03/b06) are laid out above y 1000 already (bars baseline 980)
     if fr == "closeup":
         for pr in props:
             if pr["kind"] in ("paper", "card", "pen"): shift(pr, -200)

@@ -3,12 +3,12 @@
 ✔ rule-7   first beat b01a part='hook' (hook expected in 0–3s)
 ✔ rule-8   last beat b08b part='cta' (CTA question expected)
 ✔ rule-11  no Omi
-✖ rule-17  theme dark vs theme-map LIGHT
-⚠ rule-42  b03a: evidence beat in comic; should be motion graphics
-⚠ rule-42  b03b: evidence beat in comic; should be motion graphics
-⚠ rule-42  b03c: evidence beat in comic; should be motion graphics
-⚠ rule-42  b06a: evidence beat in comic; should be motion graphics
-⚠ rule-42  b06b: evidence beat in comic; should be motion graphics
+✔ rule-17  theme light vs theme-map LIGHT
+✔ rule-42  b03a: HyperFrames plate mg-b03 → mg/c04v18-b03.mp4
+✔ rule-42  b03b: HyperFrames plate mg-b03 → mg/c04v18-b03.mp4
+✔ rule-42  b03c: HyperFrames plate mg-b03 → mg/c04v18-b03.mp4
+✔ rule-42  b06a: HyperFrames plate mg-b06 → mg/c04v18-b06.mp4
+✔ rule-42  b06b: HyperFrames plate mg-b06 → mg/c04v18-b06.mp4
 ✔ rule-15  video-engine fonts.ts uses Be Vietnam Pro
 ✔ rule-21  no music
 ⚠ rule-41  Southern particles in 2/20 lines
@@ -46,8 +46,8 @@
 ✔ rule-54  spec.cover props (template A) present
 ✔ L-020    cover.png rendered from Cover template (props json present)
 ✔ L-067    on-screen Vietnamese text keeps diacritics vs locked script
-✔ L-070    delivery/prosody plan present (script-v14-delivery.md)
-✔ L-070    prosody: 0 lines measured, 0 blocking pause/phrasing flags
+✔ L-070    delivery/prosody plan present (script-v18-delivery.md)
+✔ L-070    prosody: 18 sentences measured (voice c04v18, script-v18-delivery.md), 0 blocking pause/phrasing flags
 ✔ E1       mid-phrase pauses — prosody-measure-v18.json: 73 silences (silences), clusters ['ngay thì', 'nhỏ thì', 'kiểm tra lại nhớ', 'cần là sáng', 'gấp sách lại thì'] (script-v18-delivery.md); thresholds provisional
 ✔ L-027    voice-only prosody-measure-v18.json: hook ['c01', 'c02'], 3 join(s) all ≤ 0.1s
 ✔ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
@@ -181,6 +181,6 @@
 ✔ L-007    b08a/c04v18-c17a: F5 per-phrase generation
 ✔ L-016    b08b/c04v18-c17b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
 ✔ L-007    b08b/c04v18-c17b: F5 per-phrase generation
-⚠ L-013    1 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+⚠ L-013    2 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
-184 checks · 1 error(s) · 14 warning(s) → FAIL
+184 checks · 0 error(s) · 9 warning(s) → PASS

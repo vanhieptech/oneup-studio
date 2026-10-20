@@ -6,7 +6,7 @@ export const ACTIONS = ["idle", "talking", "thinking", "typing", "walking", "rea
 export const POSES = ["standing", "sitting"] as const;
 export const TRANSITIONS = ["cut", "fade", "slide", "wipe", "iris"] as const;
 export const FRAMINGS = ["wide", "medium", "closeup"] as const;
-export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid", "room"] as const;
+export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid", "room", "plate"] as const;
 /** Doodle draw-on marks (anidoodle port, L-047). Shared by schema + validate (L-042: one list). */
 export const DOODLE_KINDS = ["circle", "underline", "arrow", "check", "cross", "sketch-box", "path", "drawing"] as const;
 export const ENTERS = ["none", "pop", "slide-left", "slide-right", "rise"] as const;
@@ -84,7 +84,7 @@ export const SceneSchema = z.object({
   narration: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional() }).optional(),
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
   /** DL-056 comic props (laptop/phone/calendar/cloud/sign/words/vignette), see composition/Props.tsx */
-  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty", "book", "sheet", "pen", "window", "table", "tome", "paper", "card", "icon", "stack", "deck", "papers", "bars", "halves", "tag", "endcard"]) }).passthrough()).default([]),
+  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty", "book", "sheet", "pen", "window", "table", "tome", "paper", "card", "icon", "stack", "deck", "papers", "bars", "halves", "tag", "endcard", "plate"]) }).passthrough()).default([]),
   /** Doodle draw-on marks (anidoodle, Apache-2.0; src/composition/doodle/). Design px, 1080-wide. */
   doodles: z.array(z.object({
     kind: z.enum(DOODLE_KINDS), x: z.number().finite(), y: z.number().finite(),

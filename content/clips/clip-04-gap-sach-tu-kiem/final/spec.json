@@ -3,7 +3,7 @@
  "clip": "clip-04",
  "title": "Gấp sách tự kiểm (HTB 23.14) - script v18 locked",
  "week": 1,
- "theme": "dark",
+ "theme": "light",
  "pillar": "Học đúng cách",
  "story": "monologue Thầy (L-039); ví dụ 30 từ tiếng Anh (luggage); L-050 nghĩa bằng vật + hành động, không chữ trong hình; visual-plan-v18 (FLUX 6770a3f) + short-factory review",
  "trend": "supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)",
@@ -816,7 +816,7 @@
        "x": 905,
        "y": 1034.8,
        "s": 0.6,
-       "shadow": 0.18,
+       "shadow": 0.3,
        "at": 0.916,
        "shakeAt": 1.636
       },
@@ -882,13 +882,13 @@
      "beat": "clip-04.b03",
      "part": "evidence",
      "role": "Thầy",
-     "background": "paper",
+     "background": "plate",
      "framing": "medium",
-     "push": 0.04,
+     "push": 0,
      "transition": "cut",
      "cast": [],
      "fx": {
-      "visual": "tdev-split: frame splits into two desk halves, reread book left vs closed-book sheet right; study credit tag",
+      "visual": "hf-motion-graphic: split frame, reread book left vs closed-book sheet right, baseline draws; study credit tag",
       "word": "2006"
      },
      "sfx": [
@@ -901,70 +901,11 @@
      ],
      "props": [
       {
-       "kind": "halves",
+       "kind": "plate",
        "x": 0,
        "y": 0,
-       "top": 1180
-      },
-      {
-       "kind": "window",
-       "x": 0,
-       "y": 0,
-       "sky": [
-        [
-         0,
-         "day"
-        ]
-       ],
-       "wx": 390,
-       "wy": 210,
-       "ww": 300,
-       "wh": 230
-      },
-      {
-       "kind": "tome",
-       "x": 290,
-       "y": 760,
-       "s": 0.6,
-       "keys": [
-        [
-         0,
-         "open"
-        ]
-       ],
-       "at": 0
-      },
-      {
-       "kind": "paper",
-       "x": 790,
-       "y": 760,
-       "s": 0.44,
-       "rows": [
-        [
-         0,
-         -1
-        ],
-        [
-         1,
-         -1
-        ]
-       ],
-       "tilt": 3
-      },
-      {
-       "kind": "pen",
-       "x": 0,
-       "y": 0,
-       "s": 1,
-       "rot": 30,
-       "len": 150,
-       "keys": [
-        [
-         0,
-         905,
-         840
-        ]
-       ]
+       "src": "mg/c04v18-b03.mp4",
+       "from": 0.0
       },
       {
        "kind": "tag",
@@ -1000,24 +941,25 @@
       }
      ],
      "stage": {
-      "action": "Two desks side by side: open book vs closed-book sheet",
+      "action": "Two columns: open book vs closed-book sheet",
       "react": "curious"
      },
      "dur": 2.1,
-     "link": "why the morning test broke: a 2006 experiment"
+     "link": "why the morning test broke: a 2006 experiment",
+     "mg": "mg-b03"
     },
     {
      "id": "b03b",
      "beat": "clip-04.b03",
      "part": "evidence",
      "role": "Thầy",
-     "background": "paper",
+     "background": "plate",
      "framing": "medium",
-     "push": 0.04,
+     "push": 0,
      "transition": "cut",
      "cast": [],
      "fx": {
-      "visual": "tdev-stagger: paper-stack bars rise, reread stack taller right after study, thumbs-up pops at 'tốt hơn'",
+      "visual": "hf-motion-graphic: two bars rise at 'kiểm tra ngay', reread bar a bit taller, thumbs-up pops on it at 'tốt hơn'",
       "word": "kiểm tra ngay"
      },
      "sfx": [
@@ -1030,69 +972,11 @@
      ],
      "props": [
       {
-       "kind": "halves",
+       "kind": "plate",
        "x": 0,
        "y": 0,
-       "top": 1180
-      },
-      {
-       "kind": "window",
-       "x": 0,
-       "y": 0,
-       "sky": [
-        [
-         0,
-         "day"
-        ]
-       ],
-       "wx": 390,
-       "wy": 210,
-       "ww": 300,
-       "wh": 230
-      },
-      {
-       "kind": "tome",
-       "x": 290,
-       "y": 760,
-       "s": 0.6,
-       "keys": [
-        [
-         0,
-         "open"
-        ]
-       ]
-      },
-      {
-       "kind": "paper",
-       "x": 790,
-       "y": 760,
-       "s": 0.44,
-       "rows": [
-        [
-         0,
-         -1
-        ],
-        [
-         1,
-         -1
-        ]
-       ],
-       "tilt": 3
-      },
-      {
-       "kind": "pen",
-       "x": 0,
-       "y": 0,
-       "s": 1,
-       "rot": 30,
-       "len": 150,
-       "keys": [
-        [
-         0,
-         905,
-         840
-        ]
-       ]
+       "src": "mg/c04v18-b03.mp4",
+       "from": 2.1
       },
       {
        "kind": "tag",
@@ -1100,49 +984,6 @@
        "x": 540,
        "y": 1330,
        "at": -1
-      },
-      {
-       "kind": "stack",
-       "x": 290,
-       "y": 1190,
-       "keys": [
-        [
-         0,
-         4
-        ],
-        [
-         1.793,
-         7
-        ]
-       ],
-       "seed": 1,
-       "at": 0
-      },
-      {
-       "kind": "stack",
-       "x": 790,
-       "y": 1190,
-       "keys": [
-        [
-         0,
-         4
-        ],
-        [
-         1.793,
-         5
-        ]
-       ],
-       "seed": 2,
-       "at": 0
-      },
-      {
-       "kind": "icon",
-       "name": "thumbs",
-       "x": 440,
-       "y": 980,
-       "size": 96,
-       "at": 1.893,
-       "plate": true
       }
      ],
      "lines": [
@@ -1171,115 +1012,42 @@
       }
      ],
      "stage": {
-      "action": "Stacks of remembered sheets: reread side taller when tested at once",
+      "action": "Bars: reread a bit taller when tested at once",
       "react": "fair, admits rereading helps first"
      },
      "dur": 2.5333,
-     "link": "the experiment's first result"
+     "link": "the experiment's first result",
+     "mg": "mg-b03"
     },
     {
      "id": "b03c",
      "beat": "clip-04.b03",
      "part": "evidence",
      "role": "Thầy",
-     "background": "paper",
+     "background": "plate",
      "framing": "medium",
-     "push": 0.04,
+     "push": 0,
      "transition": "cut",
      "cast": [],
      "fx": {
-      "visual": "mmx-snap-settle: sun rises twice in the window, thumbs-up droops at 'hai ngày sau', stacks swap with snap-settle at 'hơn hẳn'",
+      "visual": "hf-motion-graphic: window moon → sunrise → sunset → 2nd sunrise; at the 2nd sunrise «+2 ngày» tag and the bars swap (self-test clearly taller), thumbs-up droops",
       "word": "hai ngày sau"
      },
      "sfx": [
       {
        "name": "rise",
        "atLine": 0,
-       "offset": 2.108,
-       "word": "hơn"
+       "offset": 1.058,
+       "word": "tự"
       }
      ],
      "props": [
       {
-       "kind": "halves",
+       "kind": "plate",
        "x": 0,
        "y": 0,
-       "top": 1180
-      },
-      {
-       "kind": "window",
-       "x": 0,
-       "y": 0,
-       "sky": [
-        [
-         0,
-         "day"
-        ],
-        [
-         0.308,
-         "night"
-        ],
-        [
-         0.758,
-         "day"
-        ],
-        [
-         1.208,
-         "night"
-        ],
-        [
-         1.6580000000000001,
-         "day"
-        ]
-       ],
-       "wx": 390,
-       "wy": 210,
-       "ww": 300,
-       "wh": 230
-      },
-      {
-       "kind": "tome",
-       "x": 290,
-       "y": 760,
-       "s": 0.6,
-       "keys": [
-        [
-         0,
-         "open"
-        ]
-       ]
-      },
-      {
-       "kind": "paper",
-       "x": 790,
-       "y": 760,
-       "s": 0.44,
-       "rows": [
-        [
-         0,
-         -1
-        ],
-        [
-         1,
-         -1
-        ]
-       ],
-       "tilt": 3
-      },
-      {
-       "kind": "pen",
-       "x": 0,
-       "y": 0,
-       "s": 1,
-       "rot": 30,
-       "len": 150,
-       "keys": [
-        [
-         0,
-         905,
-         840
-        ]
-       ]
+       "src": "mg/c04v18-b03.mp4",
+       "from": 4.6333
       },
       {
        "kind": "tag",
@@ -1289,45 +1057,13 @@
        "at": -1
       },
       {
-       "kind": "stack",
-       "x": 290,
-       "y": 1190,
-       "keys": [
-        [
-         0,
-         7
-        ],
-        [
-         2.208,
-         3
-        ]
-       ],
-       "seed": 1
-      },
-      {
-       "kind": "stack",
-       "x": 790,
-       "y": 1190,
-       "keys": [
-        [
-         0,
-         5
-        ],
-        [
-         2.208,
-         8
-        ]
-       ],
-       "seed": 2
-      },
-      {
-       "kind": "icon",
-       "name": "thumbs",
-       "x": 440,
-       "y": 980,
-       "size": 96,
-       "plate": true,
-       "droopAt": 0.308
+       "kind": "tag",
+       "text": "+2 ngày",
+       "x": 830,
+       "y": 300,
+       "at": 1.0276999999999994,
+       "style": "word",
+       "size": 52
       }
      ],
      "lines": [
@@ -1356,11 +1092,12 @@
       }
      ],
      "stage": {
-      "action": "Two sunrises; reread stack shrinks, self-test stack grows past it",
+      "action": "Two sunrises; reread bar shrinks, self-test bar grows past it; no numbers",
       "react": "surprised reversal"
      },
      "dur": 2.9333,
-     "link": "but two days later the result flips"
+     "link": "but two days later the result flips",
+     "mg": "mg-b03"
     },
     {
      "id": "b04",
@@ -1921,13 +1658,13 @@
      "beat": "clip-04.b06",
      "part": "evidence",
      "role": "Thầy",
-     "background": "paper",
+     "background": "plate",
      "framing": "medium",
-     "push": 0.04,
+     "push": 0,
      "transition": "cut",
      "cast": [],
      "fx": {
-      "visual": "tdev-stagger: a pile of research papers grows sheet by sheet on the desk, study credit at 'Yang'",
+      "visual": "hf-motion-graphic: research papers drop one by one into a pile, squared up at 'nghiên cứu'; study credit at 'Yang'",
       "word": "222 nghiên cứu"
      },
      "sfx": [
@@ -1940,33 +1677,11 @@
      ],
      "props": [
       {
-       "kind": "window",
+       "kind": "plate",
        "x": 0,
        "y": 0,
-       "sky": [
-        [
-         0,
-         "day"
-        ]
-       ],
-       "wx": 380,
-       "wy": 230,
-       "ww": 320,
-       "wh": 230
-      },
-      {
-       "kind": "table",
-       "x": 0,
-       "y": 0,
-       "top": 1180
-      },
-      {
-       "kind": "papers",
-       "x": 540,
-       "y": 1110,
-       "n": 16,
-       "at": 0.1,
-       "stagger": 0.13
+       "src": "mg/c04v18-b06.mp4",
+       "from": 0.0
       },
       {
        "kind": "tag",
@@ -2002,24 +1717,25 @@
       }
      ],
      "stage": {
-      "action": "Research papers pile up on the desk",
+      "action": "Research papers pile up and merge",
       "react": "solid, sure"
      },
      "dur": 2.8,
-     "link": "bigger evidence for the same closed-book habit"
+     "link": "bigger evidence for the same closed-book habit",
+     "mg": "mg-b06"
     },
     {
      "id": "b06b",
      "beat": "clip-04.b06",
      "part": "evidence",
      "role": "Thầy",
-     "background": "paper",
+     "background": "plate",
      "framing": "medium",
-     "push": 0.04,
+     "push": 0,
      "transition": "cut",
      "cast": [],
      "fx": {
-      "visual": "tdev-stagger: two score bars rise, quiz sheet + tick on the taller one, hand points, dashed line marks a moderate gap",
+      "visual": "hf-motion-graphic: two class bars, quiz sheet + tick on the quiz class, bars rise at 'điểm cao hơn', hand points at the TALL bar, dashed line + bracket marks a moderate gap at 'ở mức vừa'",
       "word": "cao hơn"
      },
      "sfx": [
@@ -2032,25 +1748,11 @@
      ],
      "props": [
       {
-       "kind": "window",
+       "kind": "plate",
        "x": 0,
        "y": 0,
-       "sky": [
-        [
-         0,
-         "day"
-        ]
-       ],
-       "wx": 380,
-       "wy": 230,
-       "ww": 320,
-       "wh": 230
-      },
-      {
-       "kind": "table",
-       "x": 0,
-       "y": 0,
-       "top": 1180
+       "src": "mg/c04v18-b06.mp4",
+       "from": 2.8
       },
       {
        "kind": "tag",
@@ -2058,27 +1760,6 @@
        "x": 540,
        "y": 1330,
        "at": -1
-      },
-      {
-       "kind": "bars",
-       "x": 540,
-       "y": 1150,
-       "a": 330,
-       "b": 262,
-       "base": 0.25,
-       "riseAt": 1.543,
-       "badgeAt": 0.583,
-       "gapAt": 3.793
-      },
-      {
-       "kind": "icon",
-       "name": "hand",
-       "x": 905,
-       "y": 860,
-       "size": 130,
-       "rot": -95,
-       "at": 1.763,
-       "bob": true
       }
      ],
      "lines": [
@@ -2107,11 +1788,12 @@
       }
      ],
      "stage": {
-      "action": "Two score bars, the quiz class a moderate step higher",
+      "action": "Two class bars, the quiz class a moderate step higher; no numbers",
       "react": "measured, not hyped"
      },
      "dur": 4.5667,
-     "link": "what those studies found"
+     "link": "what those studies found",
+     "mg": "mg-b06"
     },
     {
      "id": "b07a",
@@ -2332,7 +2014,7 @@
        "x": 905,
        "y": 1034.8,
        "s": 0.6,
-       "shadow": 0.18,
+       "shadow": 0.3,
        "flipAt": 0.83
       },
       {

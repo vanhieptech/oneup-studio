@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: theme-map
 type: plan
 status: active
-updated: 2026-10-12
+updated: 2026-10-21
 tags: [theme, schedule]
 ---
 # Theme map — @hi.oneup (LIGHT / DARK theo tone)
@@ -30,7 +30,7 @@ Tổng 30 clip: **13 LIGHT · 17 DARK**. Chuỗi đăng (đã kiểm max chạy 
 | 1 | 1 | 1 | 4.1 | 1 Làm ít, xong nhiều | Viết “nếu… thì…” (mấy giờ, ở đâu, làm gì) — 94 nghiên cứu | Hành động nên làm, tăng tỷ lệ làm được | **LIGHT** |
 | 2 | 2 | 1 | 4.9 | 1 Làm ít, xong nhiều | Trì hoãn = né cảm giác khó chịu, không phải lười | Gỡ cái bẫy tự trách / chẩn đoán sai | **DARK** |
 | 3 | 3 | 1 | 4.7 | 1 Làm ít, xong nhiều | Task “làm app” không bao giờ xong → chia nhỏ | Mở bằng bẫy việc quá lớn | **DARK** |
-| 4 | 5 | 1 | 4.8 | 1 Làm ít, xong nhiều | Việc không deadline thì tự đặt ngày | Hành động nên làm | **LIGHT** |
+| 4 | 5 | 1 | 23.14 | Học đúng cách | Gấp sách tự kiểm (retrieval practice): gấp sách, viết lại từ trí nhớ (clip-04, đổi chủ đề 21/10) | Hành động nên làm, kết quả tích cực (Rule Reviewer 2026-10-21) | **LIGHT** |
 | 5 | 4 | 1 | 4.4 | 1 Làm ít, xong nhiều | Estimate sai x2 → ước theo dữ liệu quá khứ | Lỗi phổ biến (planning fallacy) | **DARK** |
 | 6 | 6 | 1 | 4.12 | 1 Làm ít, xong nhiều | “21 ngày tạo thói quen” là myth | Gỡ myth / kỳ vọng sai | **DARK** |
 | 7 | 8 | 2 | 3.5 | 2 Giữ tập trung | Check tin nhắn theo đợt 3 lần/ngày | Hành động nên làm, kết quả nhẹ nhõm | **LIGHT** |

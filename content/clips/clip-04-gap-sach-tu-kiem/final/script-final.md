@@ -117,15 +117,15 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 | b02a | remotion | mmx-cruise: at night (moon) the open book flips back and forth twice, confident nod | “thuộc làu” | `swish` → “đọc” | cut (`swish`) |
 | b02b | remotion | mmx-cut-on-motion: sun rises, book snaps shut at 'gấp sách', pen writes four rows on the sheet | “viết thử” | `pen` → “viết” | cut (`swish`) |
 | b02c | remotion | mmx-snap-settle: close-up, pen stops dead on empty row 5; a face-down card with a faded suitcase shadow appears, shakes at 'bí' | “bí” | `pen` → “tới”; `tick` → “bí” | cut (`swish`) |
-| b03a | remotion | tdev-split: frame splits into two desk halves, reread book left vs closed-book sheet right; study credit tag | “2006” | `ding` → “năm” | cut (`swish`) |
-| b03b | remotion | tdev-stagger: paper-stack bars rise, reread stack taller right after study, thumbs-up pops at 'tốt hơn' | “kiểm tra ngay” | `pop` → “tốt” | cut (`swish`) |
-| b03c | remotion | mmx-snap-settle: sun rises twice in the window, thumbs-up droops at 'hai ngày sau', stacks swap with snap-settle at 'hơn hẳn' | “hai ngày sau” | `rise` → “hơn” | cut (`swish`) |
+| b03a | hyperframes plate mg-b03 | hf-motion-graphic: split frame, reread book left vs closed-book sheet right, baseline draws; study credit tag | “2006” | `ding` → “năm” | cut (`swish`) |
+| b03b | hyperframes plate mg-b03 | hf-motion-graphic: two bars rise at 'kiểm tra ngay', reread bar a bit taller, thumbs-up pops on it at 'tốt hơn' | “kiểm tra ngay” | `pop` → “tốt” | cut (`swish`) |
+| b03c | hyperframes plate mg-b03 | hf-motion-graphic: window moon → sunrise → sunset → 2nd sunrise; at the 2nd sunrise «+2 ngày» tag and the bars swap (self-test clearly taller), thumbs-up droops | “hai ngày sau” | `rise` → “tự” | cut (`swish`) |
 | b04 | remotion | mmx-push-in: slow push into empty row 5 of the same sheet; sun rises; dotted suitcase outline appears at 'viết ra được' | “sáng hôm sau” | `tick` → “viết” | cut (`swish`) |
 | b05a | remotion | tdev-stagger: 30 blank cards spill as one pile, then pop into three neat stacks of ten (no bow) | “ba phần” | `pop` → “ba” | cut (`swish`) |
 | b05b | remotion | mmx-snap: book snaps shut at 'gấp sách', pen writes the part on the sheet, tick on the first stack at 'phần đó' | “gấp sách” | `snap` → “gấp”; `pen` → “viết” | cut (`swish`) |
 | b05c | remotion | mmx-snap-settle: book opens once at 'mở sách' for a glance, then shuts again | “mở sách” | `pop` → “mở” | cut (`swish`) |
-| b06a | remotion | tdev-stagger: a pile of research papers grows sheet by sheet on the desk, study credit at 'Yang' | “222 nghiên cứu” | `ding` → “Yang” | cut (`swish`) |
-| b06b | remotion | tdev-stagger: two score bars rise, quiz sheet + tick on the taller one, hand points, dashed line marks a moderate gap | “cao hơn” | `rise` → “cao” | cut (`swish`) |
+| b06a | hyperframes plate mg-b06 | hf-motion-graphic: research papers drop one by one into a pile, squared up at 'nghiên cứu'; study credit at 'Yang' | “222 nghiên cứu” | `ding` → “Yang” | cut (`swish`) |
+| b06b | hyperframes plate mg-b06 | hf-motion-graphic: two class bars, quiz sheet + tick on the quiz class, bars rise at 'điểm cao hơn', hand points at the TALL bar, dashed line + bracket marks a moderate gap at 'ở mức vừa' | “cao hơn” | `rise` → “cao” | cut (`swish`) |
 | b07a | remotion | mmx-cruise: same desk as b02, sun rises again, the book stays closed | “sách vẫn gấp” | `rise` → “sáng” | cut (`swish`) |
 | b07b | remotion | mmx-soft-land: same close-up as b02, pen fills row 5, the face-down card flips to a clear suitcase + tick, word tag 'luggage', hold 1s | “luggage” | `pen` → “tự”; `pop` → “luggage” | cut (`swish`) |
 | b08a | remotion | mmx-cut-on-motion: turns to the viewer and snaps the book shut at 'gấp sách lại' | “mấy từ” | `snap` → “gấp” | cut (`swish`) |

@@ -14,7 +14,7 @@ for p in s["parts"]:
         if first: tr = "mở đầu"
         elif i == 0: tr = f"{prev_fx or 'fade'} (`{ts.get('part', '?')}`)"
         else: tr = f"{x.get('transition', 'push')} (`{ts.get('scene', '?')}`)"
-        rows.append(f"| {x['id']} | {p['engine']} | {fx.get('visual', '**THIẾU**')} | “{fx.get('word', '?')}” | {'; '.join(acc) or '—'} | {tr} |"); first = False
+        rows.append(f"| {x['id']} | {('hyperframes plate ' + x['mg']) if x.get('mg') else p['engine']} | {fx.get('visual', '**THIẾU**')} | “{fx.get('word', '?')}” | {'; '.join(acc) or '—'} | {tr} |"); first = False
     prev_fx = p.get("transitionOut")
 table = "\n".join(rows) + "\n"
 if "--write" in sys.argv:

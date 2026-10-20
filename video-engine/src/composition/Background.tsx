@@ -62,6 +62,7 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
         </g>
       );
     }
+    case "plate": return null; // pre-rendered HyperFrames motion-graphic plate (SceneRenderer <OffthreadVideo>)
     case "room": {
       // clip-04 v18: desk room without the fixed window (window/time marker = "window" prop, y 250–550, clear of bubbles/title).
       return (

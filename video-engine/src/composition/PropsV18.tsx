@@ -50,7 +50,7 @@ const Window: React.FC<{ p: P; t: number }> = ({ p, t }) => {
       <rect x={x} y={y} width={w} height={h} fill={soft} opacity={d} />
       {[[0.18, 0.2], [0.62, 0.14], [0.8, 0.42], [0.42, 0.62]].map(([a, b], i) => <circle key={i} cx={x + w * a} cy={y + h * b} r={6} fill={paper} opacity={(1 - d) * (0.6 + 0.4 * Math.sin(t * 3 + i))} />)}
       <g transform={`translate(${x + w * 0.3} ${moonY})`} opacity={1 - d}><Icon name="moon" size={104} fill={paper} /></g>
-      <g transform={`translate(${x + w * 0.3} ${sunY}) rotate(${t * 12})`}><Icon name="sun" size={128} fill={accent} /></g>
+      <g transform={`translate(${x + w * 0.3} ${sunY}) rotate(${t * 12})`}><Icon name="sun" size={128} fill={accent} stroke={ink} sw={7} /></g>
     </g>
     <rect x={x} y={y} width={w} height={h} rx={36} fill="none" stroke={ink} strokeWidth={10} />
     <path d={`M${x + w / 2},${y} V${y + h} M${x},${y + h / 2} H${x + w}`} stroke={ink} strokeWidth={8} />

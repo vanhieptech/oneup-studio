@@ -241,10 +241,12 @@ def check_prosody(spec, fdir, final):
         (err if final else warn)("L-070", "prosody-measure.json missing (run prosody-check.py voice + measure after generating the voice)"); return
     j = json.load(open(pm))
     if j.get("voice_prefix") != spec.get("voice_prefix"): err("L-070", f"prosody-measure.json is for voice {j.get('voice_prefix')}, spec uses {spec.get('voice_prefix')} → re-measure"); return
-    dl = glob.glob(os.path.join(fdir, "script-*-delivery.md"))  # the approved delivery plan (/, //, //|, ///, **nhấn**) is the prosody plan
-    (ok if (dl or os.path.exists(pp)) else err)("L-070", "delivery/prosody plan present (" + (os.path.basename(dl[0]) if dl else "prosody-plan.md") + ")")
-    fl = j.get("flags", [])
-    (ok if not fl else err)("L-070", f"prosody: {len(j.get('lines', []))} lines measured, {len(fl)} blocking pause/phrasing flags" + (": " + "; ".join(fl[:8]) if fl else ""))
+    dl = sorted(glob.glob(os.path.join(fdir, "script-*-delivery.md")))  # the approved delivery plan (/, //, //|, ///, **nhấn**) is the prosody plan
+    vm = re.search(r"(v\d+\w*)$", spec.get("voice_prefix") or "")  # pick the plan of THIS voice (c04v18 → script-v18-delivery.md), not the first glob hit
+    dv = [d for d in dl if vm and os.path.basename(d) == f"script-{vm.group(1)}-delivery.md"]
+    (ok if (dv or os.path.exists(pp)) else err)("L-070", "delivery/prosody plan present (" + (os.path.basename(dv[0]) if dv else "prosody-plan.md" if os.path.exists(pp) else f"none for voice {spec.get('voice_prefix')}") + ")")
+    fl = j.get("flags", []); n = len(j.get("lines") or j.get("sentences") or [])
+    (ok if not fl else err)("L-070", f"prosody: {n} sentences measured (voice {j.get('voice_prefix')}, {os.path.basename(dv[0]) if dv else 'plan'}), {len(fl)} blocking pause/phrasing flags" + (": " + "; ".join(fl[:8]) if fl else ""))
 
 def main():
     a = sys.argv[1:]; clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
@@ -318,7 +320,11 @@ def main():
     for p in spec["parts"]:
         if p["engine"] == "remotion":
             for s in p["scenes"]:
-                if s.get("part") in ("evidence",): warn("rule-42", f"{s['id']}: evidence beat in comic; should be motion graphics")
+                if s.get("mg"):  # clip-04 v18: evidence beat = HyperFrames motion-graphic plate (final/<mg>/index.html) composited under the Remotion caption layer
+                    hp = os.path.join(fdir, s["mg"], "index.html"); pl = [x for x in s.get("props", []) if x.get("kind") == "plate"]
+                    mp = os.path.join(REPO, "video-engine/public", pl[0]["src"]) if pl else ""
+                    (ok if os.path.exists(hp) and pl and os.path.exists(mp) else err)("rule-42", f"{s['id']}: HyperFrames plate {s['mg']} → {pl[0]['src'] if pl else 'NO plate prop'}")
+                elif s.get("part") in ("evidence",): warn("rule-42", f"{s['id']}: evidence beat in comic; should be motion graphics")
         elif p["engine"] != "hyperframes": err("rule-25", f"part {p['id']}: unknown engine {p['engine']}")
     # rule-16 / rule-1 captions EN, bubbles VI, no emoji
     for _, s, l in L:
