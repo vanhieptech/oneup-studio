@@ -81,7 +81,7 @@ Chỉ khi có đủ các mục "bắt buộc" dưới đây mới được sang 
 
 ### Pha A — Nghiên cứu / chuẩn bị (được làm bất cứ lúc nào được giao, không tạo giọng)
 
-1. Đọc theo thứ tự bắt buộc: `logs/lessons.md` → báo cáo nghiên cứu Kokoro (đường dẫn ở mục 8) → `content/voice-profile.md` → skill make-video (`skills/make-video/SKILL.md`) phần giọng (§2 "Voices (DL-035)" + "Voice prosody") → `pipeline/scripts/voice-prosody.py` (docstring + job schema).
+1. Đọc theo thứ tự bắt buộc: `logs/lessons.md` → báo cáo nghiên cứu Kokoro (đường dẫn ở mục 8) → `research/agents/kokoro-voice-tiktok-prosody-vi.md` (nhấn/ngắt cho TikTok, checklist khi làm giọng F5) → `content/voice-profile.md` → skill make-video (`skills/make-video/SKILL.md`) phần giọng (§2 "Voices (DL-035)" + "Voice prosody") → `pipeline/scripts/voice-prosody.py` (docstring + job schema).
 2. Tách bạch ba đối tượng, không trộn: **(i)** Kokoro chính thức, **(ii)** Kokoro-Vietnamese cộng đồng, **(iii)** F5-TTS đang sản xuất. Mọi khẳng định phải ghi thuộc đối tượng nào, kèm link nguồn (mục 7).
 3. Kiểm tra trạng thái trigger: đã có script Hiệp chốt chưa? Chưa → dừng ở pha A, báo cáo trạng thái, không sang pha B.
 4. Nếu sắp thử: soạn trước bảng tiêu chí A/B + pass/fail (mục 6) và cặp voice dự thử (mục 3 #4) để Hiệp/News duyệt *trước khi* nghe bất kỳ audio nào. Tiêu chí chốt sau khi nghe = không tính.
@@ -179,6 +179,10 @@ Theo Agency Production: audio/kết luận thử nghiệm bàn giao cho **Short 
 |---|---|
 | `workflows/agents/kokoro-voice.md` (file này) | Workflow riêng của Kokoro Voice; slug: `kokoro-voice` |
 | `/workspace/kokoro-vs-f5tts-initial-research-vi.md` (ngoài repo, đường dẫn tuyệt đối trên box) | Báo cáo nghiên cứu Kokoro vs F5-TTS ngày 2026-10-19: kết luận tiếng Việt/license, inventory box, thiết kế A/B và pass/fail gốc. Chỉ tham chiếu, không copy vào repo |
+| `research/agents/kokoro-vs-f5tts-initial-research-vi.md` | Bản sao trong repo của báo cáo trên (do News thêm). Hai bản phải giống nhau; trong repo thì đọc bản này |
+| `research/agents/kokoro-voice-tiktok-prosody-vi.md` (2026-10-20, W-19/W-17) | Nghiên cứu nhấn/ngắt giọng cho TikTok tiếng Việt: nguồn ngữ âm (nhấn giọng Nam = kéo dài, ngắt cụm = lặng + kéo dài âm tiết trước), đối chiếu L-xxx/W-08 với ba script giọng, mâu thuẫn X1–X5 chờ quyết, checklist T1–T7/C1–C7 khi làm giọng F5 clip-04 v18, đề xuất check E1–E6 cho `check-rules.py` (chưa viết code). Đọc trước mỗi việc giọng |
+| `logs/rule-checklist.md` (W-08, W-17) | Luật nhấn/ngắt hiện hành: chỉ ngắt ở dấu câu, phẩy < chấm, chữ nhấn ≥ +2 dB và không bị chẻ; W-17 = yêu cầu của Hiệp «nhấn đúng chữ, ngắt theo cụm, không ngắt giữa câu» |
+| `pipeline/scripts/voice-delivery-f5.py` | Đường giọng mới nhất (plan đọc `/ // //\| ///`, nhấn bằng gain, đo `prosody-measure-*.md`). Chỉ tham chiếu, không sửa |
 | `logs/lessons.md` (rule-49) | Đọc trước mỗi việc giọng/clip. Các rule kênh liên quan giọng/TTS đã rút (xem danh sách ngay dưới bảng này): L-005, L-006, L-007→L-016, L-009, L-010, L-011, L-012, L-017, L-018, L-023, L-025, L-027, L-028, L-031, L-036, L-041, L-046 |
 | `skills/make-video/SKILL.md` (`/home/box/agent-data/workflows/make-video/SKILL.md` là bản workflow đọc khi soạn file này) | Quy trình mẹ: gate 1 Hiệp chốt script (§5), đoạn Voices DL-035 + Voice prosody (§2), render/QC/gate 2 (§6–7), disclosure giọng AI ở post package |
 | `docs/workflow/per-video-pipeline.md` | Thứ tự từng bước một video; bước 5–7 là nếp duyệt giọng mẫu/toàn bộ + STT ≥ 0,8 đang dùng |

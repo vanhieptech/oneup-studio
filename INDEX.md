@@ -66,10 +66,33 @@ tags: [index, retrieval]
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v3.1-locked.md` | Clip 04 v3.1 (LOCKED, RENDERED — archived): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v4.md` | Clip 04 v4 (ARCHIVED — superseded by v5 draft): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v5.md` | Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
+| clip-04.fact-package-redo | fact-package | verified-awaiting-script-rewrite | `content/clips/clip-04-gap-sach-tu-kiem/final/fact-package-redo-2026-10-19.md` | Clip 04 làm lại — gói fact (Deep Research) |
+| clip-04.post-checklist | doc | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md` | Checklist đăng clip 04 v14 (đánh dấu khi xong) |
+| clip-04.post | post-package | chờ Hiệp duyệt gói đăng sau khi xem video | `content/clips/clip-04-gap-sach-tu-kiem/final/post.md` | Gói đăng TikTok: clip 04 v14 "Gấp sách tự kiểm" |
+| content.clips.clip-04-gap-sach-tu-kiem.final.production-v14 | production | locked-script-in-production | `content/clips/clip-04-gap-sach-tu-kiem/final/production-v14.md` | Clip 04 v14 — production |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-final.md` | Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v05.md` | Clip 04 script-v05 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v06.md` | Clip 04 script-v06 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v07.md` | Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v08.md` | Clip 04 script-v08 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v09.md` | Clip 04 script-v09 (DRAFT, chờ Rule Reviewer chấm): Sáng dậy chỉ còn bốn từ |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v10.md` | Clip 04 script-v10 (DRAFT, chờ Rule Reviewer chấm lại + Deep Research đóng fact): Ba mươi từ tối qua, sáng dậy chỉ còn bốn từ |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v11.md` | Clip 04 script-v11 (DRAFT, chờ Rule Reviewer chấm + Deep Research kiểm fact): Ba mươi từ phỏng vấn tối qua, sáng dậy chỉ còn bốn từ |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v12.md` | Clip 04 script-v12 (DRAFT, chờ Rule Reviewer chấm + Deep Research kiểm fact): Ba mươi từ đi du lịch tối qua, sáng dậy chỉ còn bốn từ |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v13.md` | Clip 04 script-v13 (DRAFT, chờ Deep Research / Rule Reviewer / FLUX kiểm lại): Học thuộc tối qua, sáng dậy quên sạch? |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v14.md` | Clip 04 script-v14 (DRAFT, chờ Rule Reviewer chấm lại): Học thuộc tối qua, sáng dậy quên sạch? |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v16.md` | Clip 04 script-v16 (DRAFT, chờ Rule Reviewer chấm): Học thuộc tối qua, sáng dậy quên sạch? |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v16b.md` | Clip 04 script-v16b (DRAFT, chờ Rule Reviewer chấm): Học thuộc tối qua, sáng dậy quên sạch? |
+| clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v16c.md` | Clip 04 script-v16c (DRAFT, chờ Rule Reviewer chấm): Học thuộc tối qua, sáng dậy quên sạch? |
+| content.clips.clip-04-gap-sach-tu-kiem.final.script-v17 | script | draft — chờ Hiệp «Chốt»; chưa voice, chưa render | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v17.md` | Clip 04 v17: viết lại theo khung Hook → Hứa → Vấn đề → Một bước → Bằng chứng ngắn → Đóng vòng → CTA |
+| content.clips.clip-04-gap-sach-tu-kiem.final.script-v17b | script | draft — chờ Hiệp «Chốt»; chưa voice, chưa render | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v17b.md` | Clip 04 v17: viết lại theo khung Hook → Hứa → Vấn đề → Một bước → Bằng chứng ngắn → Đóng vòng → CTA |
+| content.clips.clip-04-gap-sach-tu-kiem.final.script-v17c | script | draft — chờ Hiệp «Chốt»; chưa voice, chưa render | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v17c.md` | Clip 04 v17: viết lại theo khung Hook → Hứa → Vấn đề → Một bước → Bằng chứng ngắn → Đóng vòng → CTA |
+| content.clips.clip-04-gap-sach-tu-kiem.final.script-v18-table | script | draft — chờ Hiệp «Chốt»; chưa voice, chưa render | `content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-table.md` | Clip 04 script-v18 (DRAFT): Học thuộc tối qua, sáng dậy quên sạch? (HTB 23.14) |
+| content.clips.clip-04-gap-sach-tu-kiem.final.sound-note-v18 | sound-note | đề xuất — Hiệp chọn bài lúc đăng; News chép vào mục 8 gói đăng nếu dùng | `content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md` | Clip-04 v18 — Sound note |
+| clip-04.trend-signals | trend-signals | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/trend-signals.md` | clip-04 — Trend signals (bản làm lại, Social Research) |
+| content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18 | None | draft cho News dựng; áp dụng sau khi script v18 chốt bản cuối | `content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md` | Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual) |
+| clip-04.publish.post-checklist | doc | đã sửa theo Rule Reviewer, chờ soát lại | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
+| clip-04.publish.post-package | post-package | đã sửa theo Rule Reviewer, chờ soát lại | `content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md` | Bộ nháp đăng clip-04 v18 «Gấp sách tự kiểm» |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -109,10 +132,19 @@ tags: [index, retrieval]
 | pipeline.characters-v2.README | readme | ready | `pipeline/characters-v2/README.md` | Character rig v2 (chibi, liquid) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
 | research.ace-music | research | reference | `research/agents/ace-music-research-vi.md` | Nghiên cứu: ACE-Step 1.5 (ace-step/ACE-Step-1.5) |
+| research.ace-music.tiktok-sound-trends | research | reference | `research/agents/ace-music-tiktok-sound-trends-2026-10-20.md` | Nhạc/âm thanh TikTok cho @hi.oneup (20/10/2026) |
+| kokoro-voice-tiktok-prosody | research | draft | `research/agents/kokoro-voice-tiktok-prosody-vi.md` | Nhấn và ngắt giọng cho TikTok/Shorts tiếng Việt — nghiên cứu cho khâu giọng |
 | research.kokoro-vs-f5tts | research | reference | `research/agents/kokoro-vs-f5tts-initial-research-vi.md` | Kokoro vs F5-TTS — Nghiên cứu ban đầu cho pipeline giọng @hi.oneup |
 | research.local-deep-research | research | reference | `research/agents/local-deep-research-review-vi.md` | Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup |
+| research.opencreator | research | reference | `research/agents/opencreator-research-vi.md` | Nghiên cứu: OpenCreator (krillinai/OpenCreator) |
+| research.podcastfy-audio-formats-2026-10-20 | research | draft — chờ Hiệp xem; News gom commit | `research/agents/podcastfy-audio-formats-2026-10-20.md` | Định dạng audio/hội thoại cho nội dung cẩm nang + cách làm TikTok dễ lên xu hướng |
 | research.podcastfy-audio | research | reference | `research/agents/podcastfy-audio-research-vi.md` | Nghiên cứu: Podcastfy (souzatharsis/podcastfy) |
+| research.podcastfy-sample-transcript-2026-10-20 | research | draft — chờ Hiệp duyệt (CHƯA chốt, chưa làm giọng, chưa render) | `research/agents/podcastfy-sample-transcript-2026-10-20.md` | Transcript mẫu Thầy–Omi — mục 4.5 (để Hiệp duyệt) |
+| research.short-factory-clip04-v18-review | research | draft | `research/agents/short-factory-clip04-v18-review-vi.md` | Short Factory soát clip-04 v18: phụ đề, chuyển cảnh, hình minh hoạ |
 | research.short-factory | research | research-only | `research/agents/short-factory-research-vi.md` | Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio |
+| research.shorts-cutter.pacing-hook-2026-10-20 | research | draft-for-review | `research/agents/shorts-cutter-pacing-hook-research-2026-10-20.md` | Shorts Cutter: nhịp cắt, hook 3 giây và chuyển bản sang Reels/Shorts |
+| shorts-cutter-readme-vi | guide | ready-for-first-input | `research/agents/shorts-cutter-repo-notes-vi.md` | Shorts Cutter — Vận hành cho @hi.oneup |
+| research.social-poster.caption-hashtag-2026-10-20 | research | draft | `research/agents/social-poster-caption-hashtag-trends-2026-10-20.md` | Caption + hashtag theo nền tảng: nghiên cứu ngày 20/10/2026 (Social Poster) |
 | research.social-poster | research | reference | `research/agents/social-poster-research.md` | Social Poster — Nghiên cứu repo langchain-ai/social-media-agent (draft-only cho OneUp) |
 | research.social-research-audit | research | reference | `research/agents/social-research-repo-audit-vi.md` | Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp) |
 | research-character-animation | research | draft | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
@@ -126,7 +158,10 @@ tags: [index, retrieval]
 | research.doodle-audit | audit | "kết luận: zero-doodle cho b06; cổng doodle đề xuất, CHƯA áp vào lessons/SKILL — chờ Hiệp duyệt" | `research/references/doodle-audit.md` | Doodle audit — animation cũ vẫn đẹp hơn |
 | research.doodle-style | reference | awaiting-hiep-pick | `research/references/doodle-style-research.md` | Doodle style research — đưa ý tưởng trước, Hiệp chọn mới làm |
 | research.motionmaxxing | reference | ready | `research/references/motionmaxxing-notes.md` | motionmaxxing → Remotion mapping (comic shorts) |
+| research.script-craft-opencreator-2026-10-20 | research | draft | `research/script-craft-opencreator-2026-10-20.md` | Viết script TikTok — phần bổ sung (OpenCreator) |
+| research.script-writer-prompt | procedure | draft — chờ Rule Reviewer soát, chưa thay templates/script.md | `research/script-writer-prompt.md` | Prompt viết script @hi.oneup |
 | research.skillopt | research | reference | `research/skillopt-eval-vi.md` | Đánh giá microsoft/skillopt (12/10/2026) |
+| tiktok-trend-pack-study-2026-10-20 | trend-pack | done | `research/tiktok-trend-pack-study-2026-10-20.md` | Gói trend TikTok mảng học tập, 20/10/2026 |
 | trends-2026-10-12 | trend-digest | done | `research/trends/2026-10-12/digest.md` | Trend digest: 2026-10-12 (chạy lại theo chế độ rộng, 23:30 giờ VN) |
 | trends-2026-10-13-v2 | research | draft | `research/trends/2026-10-13/digest-v2.md` | Trend digest 2026-10-13 · v2 (chạy lại, nhiều nguồn) |
 | trends-2026-10-13 | trend-digest | done | `research/trends/2026-10-13/digest.md` | Trend digest: 2026-10-13 (skill v2, chạy tự động 08:05–08:30 giờ VN) |
@@ -149,6 +184,8 @@ tags: [index, retrieval]
 | trends-2026-10-18 | trend-digest | draft-needs-review | `research/trends/2026-10-18/digest.md` | Trend digest 2026-10-18 |
 | trends-2026-10-19.apify | research-trends | ready | `research/trends/2026-10-19/apify/README.md` | Apify 2026-10-19 |
 | trends-2026-10-19 | trend-digest | draft-needs-review | `research/trends/2026-10-19/digest.md` | Trend digest 2026-10-19 |
+| trends-2026-10-20.apify | research-trends | ready | `research/trends/2026-10-20/apify/README.md` | Apify 2026-10-20 |
+| trends-2026-10-20 | trend-digest | draft-needs-review | `research/trends/2026-10-20/digest.md` | Trend digest 2026-10-20 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
@@ -350,7 +387,7 @@ tags: [index, retrieval]
 |---|---|---|---|
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | archive, final |
 | clip-03 | None | `content/clips/clip-03-big-task-chunking` | README.md, archive, final |
-| clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, archive, final |
+| clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, archive, final, publish |
 
 ## Assets & tools
 | id | path | description |

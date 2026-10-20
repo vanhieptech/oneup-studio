@@ -434,6 +434,38 @@
    "title": "Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch"
   },
   {
+   "id": "clip-04.fact-package-redo",
+   "type": "fact-package",
+   "status": "verified-awaiting-script-rewrite",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/fact-package-redo-2026-10-19.md",
+   "title": "Clip 04 làm lại — gói fact (Deep Research)"
+  },
+  {
+   "id": "clip-04.post-checklist",
+   "type": "doc",
+   "status": "ready",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md",
+   "title": "Checklist đăng clip 04 v14 (đánh dấu khi xong)"
+  },
+  {
+   "id": "clip-04.post",
+   "type": "post-package",
+   "status": "chờ Hiệp duyệt gói đăng sau khi xem video",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/post.md",
+   "title": "Gói đăng TikTok: clip 04 v14 \"Gấp sách tự kiểm\""
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.production-v14",
+   "type": "production",
+   "status": "locked-script-in-production",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/production-v14.md",
+   "title": "Clip 04 v14 — production"
+  },
+  {
    "id": "clip-04.script-final",
    "type": "script",
    "status": "draft",
@@ -466,10 +498,162 @@
    "title": "Clip 04 script-v07 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch"
   },
   {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v08.md",
+   "title": "Clip 04 script-v08 (DRAFT, chờ Rule Reviewer re-check): Học tới khuya, sáng ra quên sạch"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v09.md",
+   "title": "Clip 04 script-v09 (DRAFT, chờ Rule Reviewer chấm): Sáng dậy chỉ còn bốn từ"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v10.md",
+   "title": "Clip 04 script-v10 (DRAFT, chờ Rule Reviewer chấm lại + Deep Research đóng fact): Ba mươi từ tối qua, sáng dậy chỉ còn bốn từ"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v11.md",
+   "title": "Clip 04 script-v11 (DRAFT, chờ Rule Reviewer chấm + Deep Research kiểm fact): Ba mươi từ phỏng vấn tối qua, sáng dậy chỉ còn bốn từ"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v12.md",
+   "title": "Clip 04 script-v12 (DRAFT, chờ Rule Reviewer chấm + Deep Research kiểm fact): Ba mươi từ đi du lịch tối qua, sáng dậy chỉ còn bốn từ"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v13.md",
+   "title": "Clip 04 script-v13 (DRAFT, chờ Deep Research / Rule Reviewer / FLUX kiểm lại): Học thuộc tối qua, sáng dậy quên sạch?"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v14.md",
+   "title": "Clip 04 script-v14 (DRAFT, chờ Rule Reviewer chấm lại): Học thuộc tối qua, sáng dậy quên sạch?"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v16.md",
+   "title": "Clip 04 script-v16 (DRAFT, chờ Rule Reviewer chấm): Học thuộc tối qua, sáng dậy quên sạch?"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v16b.md",
+   "title": "Clip 04 script-v16b (DRAFT, chờ Rule Reviewer chấm): Học thuộc tối qua, sáng dậy quên sạch?"
+  },
+  {
+   "id": "clip-04.script-final",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v16c.md",
+   "title": "Clip 04 script-v16c (DRAFT, chờ Rule Reviewer chấm): Học thuộc tối qua, sáng dậy quên sạch?"
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.script-v17",
+   "type": "script",
+   "status": "draft — chờ Hiệp «Chốt»; chưa voice, chưa render",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v17.md",
+   "title": "Clip 04 v17: viết lại theo khung Hook → Hứa → Vấn đề → Một bước → Bằng chứng ngắn → Đóng vòng → CTA"
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.script-v17b",
+   "type": "script",
+   "status": "draft — chờ Hiệp «Chốt»; chưa voice, chưa render",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v17b.md",
+   "title": "Clip 04 v17: viết lại theo khung Hook → Hứa → Vấn đề → Một bước → Bằng chứng ngắn → Đóng vòng → CTA"
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.script-v17c",
+   "type": "script",
+   "status": "draft — chờ Hiệp «Chốt»; chưa voice, chưa render",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v17c.md",
+   "title": "Clip 04 v17: viết lại theo khung Hook → Hứa → Vấn đề → Một bước → Bằng chứng ngắn → Đóng vòng → CTA"
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.script-v18-table",
+   "type": "script",
+   "status": "draft — chờ Hiệp «Chốt»; chưa voice, chưa render",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-table.md",
+   "title": "Clip 04 script-v18 (DRAFT): Học thuộc tối qua, sáng dậy quên sạch? (HTB 23.14)"
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.sound-note-v18",
+   "type": "sound-note",
+   "status": "đề xuất — Hiệp chọn bài lúc đăng; News chép vào mục 8 gói đăng nếu dùng",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md",
+   "title": "Clip-04 v18 — Sound note"
+  },
+  {
+   "id": "clip-04.trend-signals",
+   "type": "trend-signals",
+   "status": "draft",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/trend-signals.md",
+   "title": "clip-04 — Trend signals (bản làm lại, Social Research)"
+  },
+  {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18",
+   "type": null,
+   "status": "draft cho News dựng; áp dụng sau khi script v18 chốt bản cuối",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md",
+   "title": "Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual)"
+  },
+  {
+   "id": "clip-04.publish.post-checklist",
+   "type": "doc",
+   "status": "đã sửa theo Rule Reviewer, chờ soát lại",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/publish/post-checklist.md",
+   "title": "Checklist đăng clip-04 v18 (đánh dấu khi xong)"
+  },
+  {
+   "id": "clip-04.publish.post-package",
+   "type": "post-package",
+   "status": "đã sửa theo Rule Reviewer, chờ soát lại",
+   "updated": "2026-10-20",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/publish/post-package.md",
+   "title": "Bộ nháp đăng clip-04 v18 «Gấp sách tự kiểm»"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-19",
+   "updated": "2026-10-20",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -717,7 +901,7 @@
    "id": "lessons",
    "type": "log",
    "status": "ready",
-   "updated": "2026-10-19",
+   "updated": "2026-10-20",
    "path": "logs/lessons.md",
    "title": "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
   },
@@ -725,7 +909,7 @@
    "id": "rule-checklist",
    "type": "checklist",
    "status": "active",
-   "updated": "2026-10-19",
+   "updated": "2026-10-20",
    "path": "logs/rule-checklist.md",
    "title": "Rule checklist hợp nhất — OneUp / @hi.oneup"
   },
@@ -778,6 +962,22 @@
    "title": "Nghiên cứu: ACE-Step 1.5 (ace-step/ACE-Step-1.5)"
   },
   {
+   "id": "research.ace-music.tiktok-sound-trends",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-20",
+   "path": "research/agents/ace-music-tiktok-sound-trends-2026-10-20.md",
+   "title": "Nhạc/âm thanh TikTok cho @hi.oneup (20/10/2026)"
+  },
+  {
+   "id": "kokoro-voice-tiktok-prosody",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "research/agents/kokoro-voice-tiktok-prosody-vi.md",
+   "title": "Nhấn và ngắt giọng cho TikTok/Shorts tiếng Việt — nghiên cứu cho khâu giọng"
+  },
+  {
    "id": "research.kokoro-vs-f5tts",
    "type": "research",
    "status": "reference",
@@ -794,6 +994,22 @@
    "title": "Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup"
   },
   {
+   "id": "research.opencreator",
+   "type": "research",
+   "status": "reference",
+   "updated": "2026-10-19",
+   "path": "research/agents/opencreator-research-vi.md",
+   "title": "Nghiên cứu: OpenCreator (krillinai/OpenCreator)"
+  },
+  {
+   "id": "research.podcastfy-audio-formats-2026-10-20",
+   "type": "research",
+   "status": "draft — chờ Hiệp xem; News gom commit",
+   "updated": "2026-10-20",
+   "path": "research/agents/podcastfy-audio-formats-2026-10-20.md",
+   "title": "Định dạng audio/hội thoại cho nội dung cẩm nang + cách làm TikTok dễ lên xu hướng"
+  },
+  {
    "id": "research.podcastfy-audio",
    "type": "research",
    "status": "reference",
@@ -802,12 +1018,52 @@
    "title": "Nghiên cứu: Podcastfy (souzatharsis/podcastfy)"
   },
   {
+   "id": "research.podcastfy-sample-transcript-2026-10-20",
+   "type": "research",
+   "status": "draft — chờ Hiệp duyệt (CHƯA chốt, chưa làm giọng, chưa render)",
+   "updated": "2026-10-20",
+   "path": "research/agents/podcastfy-sample-transcript-2026-10-20.md",
+   "title": "Transcript mẫu Thầy–Omi — mục 4.5 (để Hiệp duyệt)"
+  },
+  {
+   "id": "research.short-factory-clip04-v18-review",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "research/agents/short-factory-clip04-v18-review-vi.md",
+   "title": "Short Factory soát clip-04 v18: phụ đề, chuyển cảnh, hình minh hoạ"
+  },
+  {
    "id": "research.short-factory",
    "type": "research",
    "status": "research-only",
    "updated": "2026-10-19",
    "path": "research/agents/short-factory-research-vi.md",
    "title": "Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio"
+  },
+  {
+   "id": "research.shorts-cutter.pacing-hook-2026-10-20",
+   "type": "research",
+   "status": "draft-for-review",
+   "updated": "2026-10-20",
+   "path": "research/agents/shorts-cutter-pacing-hook-research-2026-10-20.md",
+   "title": "Shorts Cutter: nhịp cắt, hook 3 giây và chuyển bản sang Reels/Shorts"
+  },
+  {
+   "id": "shorts-cutter-readme-vi",
+   "type": "guide",
+   "status": "ready-for-first-input",
+   "updated": "2026-10-19",
+   "path": "research/agents/shorts-cutter-repo-notes-vi.md",
+   "title": "Shorts Cutter — Vận hành cho @hi.oneup"
+  },
+  {
+   "id": "research.social-poster.caption-hashtag-2026-10-20",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "research/agents/social-poster-caption-hashtag-trends-2026-10-20.md",
+   "title": "Caption + hashtag theo nền tảng: nghiên cứu ngày 20/10/2026 (Social Poster)"
   },
   {
    "id": "research.social-poster",
@@ -914,12 +1170,36 @@
    "title": "motionmaxxing → Remotion mapping (comic shorts)"
   },
   {
+   "id": "research.script-craft-opencreator-2026-10-20",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-10-20",
+   "path": "research/script-craft-opencreator-2026-10-20.md",
+   "title": "Viết script TikTok — phần bổ sung (OpenCreator)"
+  },
+  {
+   "id": "research.script-writer-prompt",
+   "type": "procedure",
+   "status": "draft — chờ Rule Reviewer soát, chưa thay templates/script.md",
+   "updated": "2026-10-20",
+   "path": "research/script-writer-prompt.md",
+   "title": "Prompt viết script @hi.oneup"
+  },
+  {
    "id": "research.skillopt",
    "type": "research",
    "status": "reference",
    "updated": "2026-10-12",
    "path": "research/skillopt-eval-vi.md",
    "title": "Đánh giá microsoft/skillopt (12/10/2026)"
+  },
+  {
+   "id": "tiktok-trend-pack-study-2026-10-20",
+   "type": "trend-pack",
+   "status": "done",
+   "updated": "2026-10-20",
+   "path": "research/tiktok-trend-pack-study-2026-10-20.md",
+   "title": "Gói trend TikTok mảng học tập, 20/10/2026"
   },
   {
    "id": "trends-2026-10-12",
@@ -1098,10 +1378,26 @@
    "title": "Trend digest 2026-10-19"
   },
   {
+   "id": "trends-2026-10-20.apify",
+   "type": "research-trends",
+   "status": "ready",
+   "updated": "2026-10-20",
+   "path": "research/trends/2026-10-20/apify/README.md",
+   "title": "Apify 2026-10-20"
+  },
+  {
+   "id": "trends-2026-10-20",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-20",
+   "path": "research/trends/2026-10-20/digest.md",
+   "title": "Trend digest 2026-10-20"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-19",
+   "updated": "2026-10-20",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -1109,7 +1405,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-19",
+   "updated": "2026-10-20",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -2354,7 +2650,8 @@
    "files": [
     "README.md",
     "archive",
-    "final"
+    "final",
+    "publish"
    ]
   }
  ],

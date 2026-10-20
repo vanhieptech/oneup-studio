@@ -5,7 +5,7 @@ slug: podcastfy-audio
 repo: https://github.com/souzatharsis/podcastfy
 license: Apache-2.0
 status: research-done, chờ Hiệp duyệt thí nghiệm đầu tiên
-updated: 2026-10-19
+updated: 2026-10-20
 ---
 
 # Podcastfy Audio — workflow
@@ -77,5 +77,8 @@ Lỗi cứng — trả lại, không làm tiếp:
 
 - Skill: `skills/make-video/SKILL.md` (bước đọc nguồn, fact-lock, gate duyệt script trước giọng/render), `/home/box/agent-data/workflows/make-video/SKILL.md`.
 - Rule kênh: `logs/lessons.md` (đọc trước mỗi việc; lỗi Hiệp bắt được phải thêm lesson + check đo được), `rules/video-rules.md`, `AGENTS.md` trong repo oneup-studio.
-- Repo nghiên cứu: `/workspace/podcastfy-check` (clone chỉ-đọc, chưa cài/chạy). Báo cáo nghiên cứu Podcastfy đã gửi tại nhóm Agency Production ngày 2026-10-19; chưa có file báo cáo riêng trong repo — News gom từ tin nhắn nhóm nếu cần lưu trữ.
+- Repo nghiên cứu: `/workspace/podcastfy-check` (clone chỉ-đọc, chưa cài/chạy). Báo cáo nghiên cứu Podcastfy đã gửi tại nhóm Agency Production ngày 2026-10-19 (đã gom vào repo, xem dòng dưới).
+- Nghiên cứu định dạng audio/hội thoại + trend TikTok (20/10/2026): `research/agents/podcastfy-audio-formats-2026-10-20.md` (6 định dạng, bảng clip có URL/số liệu Apify, đề xuất thử D1 hỏi–đáp Thầy–Omi). Dữ liệu thô: `research/agents/data/podcastfy-formats-2026-10-20/`.
+- Transcript mẫu chờ Hiệp duyệt: `research/agents/podcastfy-sample-transcript-2026-10-20.md` (mục 4.5, fact-lock F1–F10). Chưa chốt → chưa làm giọng.
+- Báo cáo repo Podcastfy: `research/agents/podcastfy-audio-research-vi.md`.
 - File workflow này: `workflows/agents/podcastfy-audio.md`. Chưa commit riêng lẻ, chờ News gom.

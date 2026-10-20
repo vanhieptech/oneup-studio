@@ -64,7 +64,7 @@ source_repo: "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator"
 - Repo nguồn: [AI-Youtube-Shorts-Generator](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator) của Anil-matcha, **MIT License** (đọc từ `LICENSE` trong bản clone, commit `3d11f2e`, 2026-10-19) — dùng/sửa/phân phối lại code được với điều kiện giữ copyright notice; giấy phép này **không** cấp quyền dùng video nguồn của người khác (bản quyền video vẫn là cổng riêng ở mục 4).
 - Pipeline của repo: download (MuAPI hoặc yt-dlp/file local) → transcribe (MuAPI Whisper hoặc faster-whisper local) → LLM phân loại + chunk video >30 phút → chấm highlight → dedupe → cắt dọc (MuAPI autocrop hoặc ffmpeg + OpenCV Haar).
 - Khoảng trống đã kiểm chứng: repo **không burn phụ đề** (chỉ cache `.srt`), prompt highlight thiên tiếng Anh (cần chỉnh cho nội dung tiếng Việt), tracking Haar chỉ trượt ngang nên phải soát frame khi chuyển cảnh.
-- Bản clone nghiên cứu đang ở `/workspace/AI-Youtube-Shorts-Generator` (ngoài repo, không vendor vào oneup-studio — theo AGENTS.md "không vendor repo ngoài"); tài liệu nghiên cứu đầy đủ đang ở `/workspace/shorts-cutter/README-VI.md` (**ngoài repo**, chờ News gom vào repo nếu cần).
+- Bản clone nghiên cứu đang ở `/workspace/AI-Youtube-Shorts-Generator` (ngoài repo, không vendor vào oneup-studio — theo AGENTS.md "không vendor repo ngoài"); tài liệu nghiên cứu đầy đủ đang ở `research/agents/shorts-cutter-repo-notes-vi.md` (**ngoài repo**, chờ News gom vào repo nếu cần).
 
 ## 8. File / skill liên quan
 

@@ -92,3 +92,4 @@ Lỗi cứng — trả lại, không bàn giao:
 - Rule kênh: `rules/video-rules.md` (rule-21 không nhạc trong file, rule-50/51 SFX + ambience, rule-53 post package), `logs/lessons.md` (rule-49, đọc trước mỗi clip).
 - File trong repo oneup-studio liên quan: `content/clips/clip-NN-*/final/spec.json`, `final/script-final.md`, `final/post.md` (mẫu `templates/post-package.md`), `pipeline/scripts/check-rules.py` (kiểm no-music, -14 LUFS), `pipeline/scripts/build-final.py` (khâu assembly không nhạc).
 - Workflow agent liên quan: News/agent script (trước, chốt script gate 1), Kokoro Voice (giọng, chạy song song độc lập), Short Factory (sau, assembly khi rule đổi), Rule Reviewer (soát gate).
+- Nghiên cứu nhạc/âm thanh TikTok (CML, trend niche học tập VN 16–20/10, bộ mood theo beat + theme): `research/agents/ace-music-tiktok-sound-trends-2026-10-20.md` (20/10/2026). Sound note mẫu áp dụng: `content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md`.
