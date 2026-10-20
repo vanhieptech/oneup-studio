@@ -104,3 +104,23 @@ Agent trước mình: **Hiệp / News** (giao chủ đề, clip id, hoặc câu 
 | Đường dữ liệu B (chưa kích hoạt) | Repo ngoài ScrapeCreators (mục 7); cần `SCRAPECREATORS_API_KEY` để trong `.env`, không commit key |
 
 **Trạng thái kích hoạt:** Đường A chạy được ngay. Đường B mới ở mức audit + workflow này — chưa cài skill ScrapeCreators vào máy chạy, chưa có API key, chưa chạy scrape thật lần nào.
+
+## 9. Bài học / quy trình
+
+### 2026-10-20: gói trend mảng học tập (clip-04)
+
+Kết quả: `research/tiktok-trend-pack-study-2026-10-20.md`. Cách làm lặp lại được, không tốn tiền:
+
+1. **Dùng lại dữ liệu đã có trước khi kéo mới:** quét `research/trends/*/apify/raw-clockworks.json` + `comments-merged.json` + `vtt/` lọc theo từ khoá niche (học, nhớ, tiếng Anh, từ vựng, study). Đã có sẵn bài + bình luận + phụ đề thì không chạy Apify lại.
+2. **Tìm bài mới miễn phí:** dùng WebSearch, rồi lấy danh sách video top theo hashtag trên Toklytics (`curl https://toklytics.app/hashtag/<tag>` có JSON nhúng: tiktokUrl, views, likes, shares, saves). Đây là bên thứ ba, chỉ dùng để **tìm URL**, số thì đọc lại từ trang TikTok.
+3. **Đọc số thật từ trang TikTok:** `curl -A "<UA trình duyệt>" <url bài>`, parse `__UNIVERSAL_DATA_FOR_REHYDRATION__` → `webapp.video-detail.itemInfo.itemStruct`: stats (playCount, diggCount, commentCount, shareCount, collectCount), desc, duration, createTime, authorStats.followerCount, `video.subtitleInfos` (tải VTT `vie-VN` để lấy dòng nói đầu). Mỗi bài cách nhau 1 giây. oEmbed của TikTok **không** trả caption, đừng dùng.
+4. **Đo nhịp hình:** `yt-dlp -f worst` tải bản nhỏ vào `/tmp` (không đưa vào repo). Đếm cảnh bằng `ffmpeg -vf "select='gt(scene,0.15)',showinfo"`, chụp lưới `fps=1/2,tile=4x3` rồi xem ảnh để mô tả chữ trên hình / vật thể. Thẻ quiz chỉ đổi chữ thì ffmpeg đếm 0 → đo bằng ảnh lưới.
+5. **Bảng hook:** ghi rõ loại nguồn (nói / chữ / caption), chấm theo luật hook của anh Hiệp (nỗi đau + câu hỏi, giọng mềm, không chê người học), tách riêng kiểu **cấm** (khan hiếm giả, chê người học, mắng, xưng mày/tao).
+6. **Nền tảng:** chỉ lấy quy định định dạng từ trang chính thức (YouTube Help, Meta for Developers Threads, bài Threads của Mosseri/@creators). Phần cơ chế đề xuất thì link sang file của Deep Research, không làm lại.
+7. **Đóng gói:** tóm tắt 5–7 việc ở đầu, mỗi việc ghi rõ ai dùng (OpenCreator / FLUX / publisher). Có mục "Giới hạn dữ liệu" ghi rõ phần không đọc được. Lưu dữ liệu thô ở `research/trends/<ngày>/social-research/` (không commit nếu không được giao).
+
+Bài học:
+- Bình luận mới cần API có chữ ký → dùng bình luận từ Apify có sẵn, ghi rõ ngày chạy.
+- `creators.instagram.com` và Help Center Instagram chặn hoặc trả trang rỗng với curl → dùng bài Threads chính thức của @mosseri và @creators.
+- Không ghi "outlier ×N" khi chưa có median 20 bài của kênh, chỉ ghi follower để tham khảo.
+- Phụ đề tự sinh tiếng Việt sai thuật ngữ (Feynman → "fame"): trích nguyên văn, ghi chú bên cạnh, không tự sửa thành lời thoại.
