@@ -106,3 +106,9 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Hiện tượng: cùng một file (v16c s01-53, trước đó STT khớp 1.0), whisper small `compute_type=int8` ra «Cảm ơn các bạn», «Dạy dạy dạy», hoặc trống. Thử bản giọng v16c đã giao cũng ra trống. Cùng lúc F5 chậm từ ~30s lên ~70s mỗi take.
 - Nguyên nhân: chưa rõ. Thư viện và model không đổi; nghi đường int8 của ctranslate2 trên máy hiện tại. `float32` trên cùng file ra đúng «Học thuật tối qua sáng dậy quên sạch».
 - Sửa: `voice-delivery-f5.py` dùng `compute_type=float32` mặc định (biến `ASR_COMPUTE` để đổi). Trước mỗi lượt chấm STT, chạy thử một file chuẩn đã biết kết quả. Nếu ra trống hoặc lặp chữ thì dừng, không chọn take theo số đó.
+
+## L-080 (2026-10-21 00:33) — Độ dài clip theo nội dung, không ép 55–60s
+- Bối cảnh: v18 đọc 46,5s (+thẻ cuối ~49s), xung đột rule-4 (55–60s).
+- Quyết định Hiệp: «bnhiu giây cũng được miễn chất lượng tốt».
+- Fix: rule-4 thành cảnh báo; không thêm chữ/khoảng lặng để kéo dài. Clip-04: giữ b07 thêm ~1s, end card thêm 1–2s (FLUX), không đổi wording nên Chốt v18 giữ nguyên.
+- Phát hiện: check-rules `rule-4` chỉ warn; review thủ công đoạn chỉ có hình >2s.
