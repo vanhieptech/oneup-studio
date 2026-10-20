@@ -5,6 +5,8 @@
   check-rules.py content/clips/<clip>/ --final    # gate 2: also the rendered MP4 (ffprobe, loudness) + post.md required
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
+  check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
+  (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
 Source: <clip>/final/spec.json (format: see skills/make-video/SKILL.md). Exit 1 if any ✖ error. Also runs the lessons gate (rule-49, logs/lessons.md): checks named L-NNN.
 """
@@ -18,6 +20,7 @@ res = []
 def ok(rule, msg): res.append(("✔", rule, msg))
 def warn(rule, msg): res.append(("⚠", rule, msg))
 def err(rule, msg): res.append(("✖", rule, msg))
+def info(rule, msg): res.append(("ℹ", rule, msg))  # not counted as error/warning (skips, coverage notes)
 
 VI_CHARS = re.compile(r"[ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]", re.I)
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
@@ -95,6 +98,140 @@ def check_diacritics(spec, fdir, L):
         if viet and lost: bad.append(f"{src} “{s.strip()[:60]}” (mất dấu: {', '.join(sorted(set(lost))[:6])})")
     (ok if not bad else err)("L-067", "on-screen Vietnamese text keeps diacritics vs locked script" + (": " + "; ".join(bad) if bad else ""))
 
+def check_prosody_file(pm, fdir):
+    """L-070 on an explicit measure json (voice-only previews, e.g. final/prosody-measure-v16b.json from voice-delivery-f5.py measure):
+    no spec voice_prefix to match; every flag (pause vs delivery mark, comma ≥0.15 and < sentence pause, >0.5s, break inside a phrase,
+    stress <2 dB vs sentence or neighbours, question not rising ≥0.5 st, STT <0.8, total >58s) blocks; warnings (>5 syll/s, pause off plan) only listed."""
+    if not os.path.exists(pm): err("L-070", f"{os.path.relpath(pm, REPO)} missing"); return
+    j = json.load(open(pm)); fl = j.get("flags", []); wn = j.get("warnings", [])
+    dl = glob.glob(os.path.join(fdir, "script-*-delivery.md"))
+    (ok if dl else err)("L-070", "delivery plan present (" + ", ".join(sorted(os.path.basename(d) for d in dl)) + ")")
+    info = f"voice {j.get('voice_prefix')} plan {j.get('plan')}: {j.get('total_s')}s total, {len(j.get('sentences', []))} sentences, {len(j.get('pauses', []))} marks measured"
+    (ok if not fl else err)("L-070", info + f", {len(fl)} blocking flags" + (": " + "; ".join(fl[:12]) if fl else ""))
+    if wn: warn("L-070", f"{len(wn)} warnings: " + "; ".join(wn[:12]))
+
+# ---- voice-only checks on prosody-measure-*.json (E1, L-027) ------------------------------------------------------------
+# E1 mid-phrase-pause (Kokoro Voice, research/agents/kokoro-voice-tiktok-prosody-vi.md §E1; Rule Reviewer R8 20/10/2026, W-17).
+# PROVISIONAL thresholds: taken from Northern-voice / slow-reading TTS research (~0.14s already heard as a phrase boundary);
+# to be recalibrated on the F5 · Thái Sơn voice with the v18 measure data. Change them only here.
+E1_WARN_S = 0.12      # silence ≥ this where there is no delivery mark → ⚠
+E1_BLOCK_S = 0.25     # silence ≥ this where there is no delivery mark → ✖
+E1_CLUSTER_S = 0.12   # silence ≥ this inside a forbidden cluster (cụm cấm ngắt) → ✖
+L027_GAP_S = 0.1      # L-027: joins between clauses/lines inside the hook must be ≤ this
+E1_DEFAULT_CLUSTERS = {"clip-04": ["ngay thì", "nhỏ thì", "kiểm tra lại nhớ", "cần là sáng", "gấp sách lại thì"]}  # script-v18-delivery.md R4/R9 + R8
+MARK_AT = {"/": "comma", "//": "sentence", "//beat": "beat", "///": "beat"}  # voice-delivery-f5.py marks → at_mark ("///" = deliberate pause, counted as a mark)
+"""Silence schema read by E1 (optional top-level key `silences` in prosody-measure-*.json, one entry per measured silence ≥ ~0.05s
+between two spoken words, whole voice-only file):
+  {"chunk_id": "c07",            # chunk / sentence id the silence sits in (or after)
+   "t_start": 12.41, "t_end": 12.60, "dur_s": 0.19,   # seconds in the delivered wav
+   "at_mark": "none",            # none | comma | sentence | beat  (delivery mark at that word boundary; none = no mark)
+   "context_before": "nếu kiểm tra ngay",   # a few words before the silence (≥ 2 recommended)
+   "context_after": "thì nhớ được"}         # a few words after the silence
+Until voice-delivery-f5.py measure writes `silences`, E1 derives them from the existing keys: `pauses[]` (sid, after, mark, pause →
+at_mark from MARK_AT, no context_after) and `sentences[].mid_breaks` ("«a b» 0.27s" → at_mark none). The current measure only records
+mid_breaks > 0.25s, so in derived mode 0.12–0.25s mid-phrase silences are invisible (E1 says so with a ⚠ coverage line)."""
+
+def _vkey(path):
+    m = re.search(r"v(\d+)([a-z]*)", os.path.basename(path))
+    return (int(m.group(1)), m.group(2), os.path.getmtime(path)) if m else (-1, "", os.path.getmtime(path))
+
+def latest_measure(fdir):
+    ms = glob.glob(os.path.join(fdir, "prosody-measure-*.json"))
+    return max(ms, key=_vkey) if ms else None
+
+def _words(s): return re.sub(r"[^\w\s]", " ", unicodedata.normalize("NFC", (s or "").lower())).split()
+
+def measure_silences(j):
+    """→ (silences in the E1 schema, 'silences' | 'derived')."""
+    if isinstance(j.get("silences"), list):
+        return [dict(x, dur_s=float(x.get("dur_s", x.get("t_end", 0) - x.get("t_start", 0)))) for x in j["silences"]], "silences"
+    out = []
+    for p in j.get("pauses", []):
+        out.append({"chunk_id": p.get("sid"), "t_start": None, "t_end": None, "dur_s": float(p.get("pause", 0)), "at_mark": MARK_AT.get(p.get("mark"), "none" if not p.get("mark") else "beat"),
+                    "context_before": p.get("after", ""), "context_after": ""})
+    for s in j.get("sentences", []):
+        for mb in s.get("mid_breaks") or []:
+            m = re.match(r"«(.+?)\s+(\S+)»\s*([\d.]+)s", mb)
+            if m: out.append({"chunk_id": s.get("id"), "t_start": None, "t_end": None, "dur_s": float(m.group(3)), "at_mark": "none", "context_before": m.group(1), "context_after": m.group(2)})
+    return out, "derived"
+
+def delivery_clusters(fdir, clip):
+    """Forbidden clusters: «…» items after 'cụm cấm ngắt' (up to the sentence end) in the newest script-v*-delivery.md; else the clip default."""
+    dl = sorted(glob.glob(os.path.join(fdir, "script-v*-delivery.md")), key=_vkey)
+    if dl:
+        for ln in open(dl[-1], encoding="utf8").read().splitlines():
+            i = ln.lower().find("cụm cấm ngắt")
+            if i < 0: continue
+            seg = re.split(r"\.(?:\s|$)", ln[i:], maxsplit=1)[0]
+            cl = [c.strip() for c in re.findall(r"«([^»]+)»", seg) if len(_words(c)) >= 2]
+            if cl: return cl, os.path.basename(dl[-1])
+    for k, v in E1_DEFAULT_CLUSTERS.items():
+        if k in clip: return v, f"default {k} list"
+    return [], None
+
+def cluster_hit(before, after, cluster):
+    """True when the silence splits `cluster`: context_before ends with its first part and context_after starts with the rest.
+    Contexts shorter than the part are compared on the words available (≥ 1 word each side)."""
+    bw, aw, cw = _words(before), _words(after), _words(cluster)
+    if not bw or not aw: return False
+    for k in range(1, len(cw)):
+        left, right = cw[:k], cw[k:]; n1 = min(len(bw), len(left)); n2 = min(len(aw), len(right))
+        if bw[-n1:] == left[-n1:] and aw[:n2] == right[:n2]: return True
+    return False
+
+def check_e1(j, fdir, clip, src, soft=False):
+    """E1 mid-phrase-pause. ✖ silence ≥ E1_CLUSTER_S inside a forbidden cluster; at_mark none: ⚠ ≥ E1_WARN_S, ✖ ≥ E1_BLOCK_S.
+    soft=True (measure is not for the spec's voice) turns ✖ into ⚠."""
+    E = warn if soft else err
+    sil, mode = measure_silences(j); cl, csrc = delivery_clusters(fdir, clip)
+    blk, wrn = [], []
+    for x in sil:
+        d = x["dur_s"]; where = f"{x.get('chunk_id')} «{' '.join(_words(x.get('context_before'))[-3:])} | {' '.join(_words(x.get('context_after'))[:3])}» {d:.2f}s"
+        hit = next((c for c in cl if cluster_hit(x.get("context_before"), x.get("context_after"), c)), None)
+        if hit and d >= E1_CLUSTER_S: blk.append(f"{where} trong cụm cấm ngắt «{hit}»")
+        elif x.get("at_mark", "none") == "none":
+            if d >= E1_BLOCK_S: blk.append(f"{where} không có ký hiệu ngắt (≥{E1_BLOCK_S}s)")
+            elif d >= E1_WARN_S: wrn.append(f"{where} không có ký hiệu ngắt (≥{E1_WARN_S}s)")
+    tag = f"{src}: {len(sil)} silences ({mode}), clusters {cl or 'none'} ({csrc or 'no list'}); thresholds provisional"
+    (E if blk else ok)("E1", f"mid-phrase pauses — {tag}" + (f"; {len(blk)} blocking: " + "; ".join(blk[:10]) if blk else ""))
+    if wrn: warn("E1", f"{len(wrn)} silence(s) ≥{E1_WARN_S}s at no mark: " + "; ".join(wrn[:10]))
+    if mode == "derived": warn("E1", f"{src} has no `silences` list → only mid_breaks >0.25s are visible; 0.12–0.25s mid-phrase silences unmeasured (measure must write `silences`)")
+    if not cl: info("E1", "no forbidden-cluster list in the delivery plan and no default for this clip → cluster check skipped")
+
+def hook_beats(spec):
+    if not spec: return {"b01"}
+    ids = set((spec.get("hook") or {}).get("scenes") or (spec.get("structure") or {}).get("hook") or [])
+    bt = {s["id"]: s.get("beat", "").split(".")[-1] for p in spec.get("parts", []) for s in p.get("scenes", []) + p.get("sections", [])}
+    return {bt.get(i) or i for i in ids} or {"b01"}
+
+def check_l027_voice(j, spec, src, soft=False):
+    """L-027 on a voice-only measure: every measured join (pauses[], i.e. the gap at each delivery mark between assembled pieces/chunks)
+    whose both sides are hook sentences must be ≤ L027_GAP_S. Hook = sentences with part=='hook' or beat in the spec's hook beats
+    (default b01). The hook→body join is not counted. Natural silences inside one F5 chunk are not joins and are left to E1."""
+    E = warn if soft else err
+    ss = j.get("sentences", []); hb = hook_beats(spec)
+    hook = [s["id"] for s in ss if s.get("part") == "hook" or s.get("beat") in hb]
+    if not hook: info("L-027", f"{src}: no hook sentences found (hook beats {sorted(hb)}) → voice-only hook-gap check skipped"); return
+    order = [s["id"] for s in ss]; hs = set(hook); gaps = []
+    for p in j.get("pauses", []):
+        sid = p.get("sid")
+        if sid not in hs: continue
+        if p.get("mark") == "/": nxt = sid
+        else: k = order.index(sid) if sid in order else -1; nxt = order[k + 1] if 0 <= k < len(order) - 1 else None
+        if nxt in hs: gaps.append((sid, nxt, p.get("after"), float(p.get("pause", 0))))
+    bad = [f"{a if a == b else a + '→' + b} sau «{w}» {g:.2f}s" for a, b, w, g in gaps if g > L027_GAP_S]
+    (E if bad else ok)("L-027", f"voice-only {src}: hook {hook}, {len(gaps)} join(s)" + (f", gaps > {L027_GAP_S}s: {bad[:8]}" if bad else f" all ≤ {L027_GAP_S}s"))
+
+def voice_only_checks(pm, fdir, clip, spec, explicit):
+    """E1 + L-027 on a measure json. explicit = --prosody mode (full severity). In spec mode a measure for another voice than
+    spec.voice_prefix is a preview: findings are reported as ⚠, not ✖."""
+    if not pm or not os.path.exists(pm):
+        info("E1", "no final/prosody-measure-*.json → E1 mid-phrase-pause skipped"); info("L-027", "no prosody-measure json → voice-only hook gaps skipped"); return
+    j = json.load(open(pm, encoding="utf8")); src = os.path.basename(pm)
+    soft = (not explicit) and spec is not None and j.get("voice_prefix") != spec.get("voice_prefix")
+    if soft: info("E1", f"{src} is voice {j.get('voice_prefix')}, spec uses {spec.get('voice_prefix')} → preview: E1/L-027 findings reported as ⚠ (run --prosody for the gate)")
+    check_e1(j, fdir, clip, src, soft); check_l027_voice(j, spec, src, soft)
+
 def check_prosody(spec, fdir, final):
     """L-070: pauses/phrasing measured on the real voice (pipeline/scripts/prosody-check.py measure → final/prosody-measure.json).
     Blocks: pause >0.8s inside/between lines (beat change allows +0.35s), pause <0.1s at a period, break >0.25s at a word boundary
@@ -117,6 +254,12 @@ def main():
     if not os.path.exists(specp): err("rule-48", f"missing {os.path.relpath(specp, REPO)} (source of truth for the clip)"); return report(outp)
     if "/content/archive/" in os.path.abspath(specp).replace(os.sep, "/") + "/":
         print(f"skip: {specp} is archived (rule-66); check-assets verifies its post package"); sys.exit(0)
+    if "--prosody" in a:  # L-070 only, on an explicit measure json (voice-only preview; no render/spec involved)
+        pmp = a[a.index("--prosody") + 1]; pmp = pmp if os.path.exists(pmp) else os.path.join(clip_dir, pmp)
+        check_prosody_file(os.path.abspath(pmp), os.path.dirname(specp))
+        try: spec_ = json.load(open(specp))
+        except Exception: spec_ = None
+        voice_only_checks(os.path.abspath(pmp), os.path.dirname(specp), clip_dir, spec_, True); return report(outp)
     spec = json.load(open(specp)); fdir = os.path.dirname(specp)
     prof = {}
     for f in glob.glob(os.path.join(REPO, "video-engine/src/characters/profiles/*.json")):
@@ -346,6 +489,7 @@ def main():
             f"cover.png is not a Cover-template render ({len(props)} template direction(s) in cover/ — render cover from template A: npx remotion still src/index.ts Cover final/cover.png --props=spec.cover)")
     check_diacritics(spec, fdir, L)
     check_prosody(spec, fdir, final)
+    voice_only_checks(latest_measure(fdir), fdir, clip_dir, spec, False)  # E1 + L-027 on the newest voice-only measure, if any
     # rule-55 (DL-051): hook 0–3s rapid, dramatic, emotion-dense (clips before 02 are legacy → warn)
     e55 = warn if "clip-01" in clip_dir else err
     hk = spec.get("hook") or {}; A0 = spec["parts"][0]; scs = A0.get("scenes", [])
