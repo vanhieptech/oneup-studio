@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Saigon",
+  "primary": {
+    "actor": "clockworks/tiktok-scraper",
+    "run_id": "jRLleUhL5eClvRAgR",
+    "dataset_id": "GvdmHQdlZ0rvdhKJC",
+    "kv_store_id": "XGBbJMuxEBXmLYZp0",
+    "item_count": 36,
+    "valid_clips": 36,
+    "compute_units": 0.0260,
+    "input": {
+      "hashtags": ["congso", "onthi"],
+      "searchQueries": ["hoc bai xong quen het", "thuc khuya chay deadline", "uong ca phe buoi chieu mat ngu", "ngoi lam viec ca ngay"],
+      "searchSection": "/video",
+      "resultsPerPage": 6,
+      "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
+      "commentsPerPost": 0,
+      "proxyCountryCode": "None"
+    },
+    "note": "6/6 input OK, không cần proxy VN. '#congso' lẫn thời trang công sở (1 isAd) và drama; 'uong ca phe buoi chieu mat ngu' ra cả clip tiếng Anh; 'ngoi lam viec ca ngay' ra cafe học bài và yoga."
+  },
+  "comments": {
+    "actor": "clockworks/tiktok-comments-scraper",
+    "run_id": "gm8VC17Ft1iCBacpv",
+    "dataset_id": "E4pSd33gGDEwBW0VM",
+    "item_count": 82,
+    "compute_units": 0.0327,
+    "note": "5/5 post; @motionlab.fit chỉ có 2 comment (clip mới đăng 19/10)."
+  },
+  "parseforge_enrich": {
+    "actor": "parseforge/tiktok-scraper",
+    "run_id": "9wLv8eZmFNuHpN1Fk",
+    "dataset_id": "WNgLOnS5VsJ1zxvu5",
+    "item_count": 3,
+    "compute_units": 0.0336,
+    "note": "Lần gọi đầu (waitSecs 45) bị MCP timeout -32001 phía client, không trả run id; gọi lại 1 lần với waitSecs 0 rồi poll get-actor-run → SUCCEEDED. Nếu lần đầu cũng đã chạy thì tốn thêm ~0,03 CU. @ng__phanh và @camreadwonder không lời (transcript rỗng) → caption fallback; @hoc.di.roi.biet transcript vie-VN khớp VTT. 3 comment mới (không trùng clockworks) gộp vào comments-merged.json."
+  },
+  "shortlist": 5,
+  "vtt_saved": 16,
+  "fields_coverage_pct": 100.0,
+  "fields_coverage_note": "60/60 ô (12 trường × 5 clip), tất cả không rỗng; 2 clip caption fallback (@ng__phanh, @camreadwonder không lời).",
+  "compute_units_total": 0.0923
+}

@@ -1,0 +1,63 @@
+{
+ "ideas": [
+  {
+   "id": "hoc-1-dem-ca-ky",
+   "title": "Học một đêm thuộc cả kỳ: sáng mai vẫn làm được bài, cái giá là quên nhanh. Cùng số giờ, chia ra nhiều tối",
+   "trend_id": "tt-ng__phanh-7532553338664045831",
+   "bridge_id": "B-hoc1dem-01",
+   "lesson": "23.15 Cùng một lượng thời gian, chia ra mấy ngày, đừng học một lèo (Cepeda, Pashler, Vul, Wixted & Rohrer 2006: tổng hợp 184 bài, 317 thí nghiệm, 839 lần đánh giá; khoảng giãn ôn tập và việc cần nhớ tới bao lâu cùng quyết định mức nhớ; muốn nhớ càng lâu thì khoảng giãn tốt nhất càng dài. Dunlosky et al. 2013 xếp học giãn cách vào nhóm cao nhất trong 10 cách học. Bằng chứng A. Ghi chú sách: vấn đề của học dồn đêm trước thi không phải là hôm sau vô dụng, mà là quên nhanh; tài liệu trong Cepeda chủ yếu là học thuộc danh sách từ, chưa có số ngày chung cho nội dung phức tạp; ví dụ của sách: 3 tiếng chia 3 ngày mỗi ngày 1 tiếng; kết hợp với 23.14 gấp sách tự kiểm là tốt nhất). Chi phí: không tốn tiền, tổng giờ không đổi, chỉ phải bắt đầu sớm vài ngày.",
+   "angle": "contrarian / data",
+   "pattern": "P01 + P10",
+   "differentiation": "Mọi người đang nói: học một đêm cả kỳ là chuyện vừa khổ vừa ngầu, đằng nào cũng qua môn (TikTok @ng__phanh 1,1M view, 55,3k share: “Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ”; comment “nhét ba môn cả kì trước 3 tiếng thi 🥰” 132 like). Góc của mình: không chê học dồn là vô dụng — chính sách nói hôm sau vẫn làm được bài; cái giá là quên nhanh sau kỳ thi. Đưa một việc cụ thể: cùng ba tiếng đó, chia ra ba tối mỗi tối một tiếng, tối nào cũng gấp sách tự kiểm (callback clip-04). Book fact consensus bỏ qua + contrarian turn; chuyện TOEIC của Hiệp để [CẦN HIỆP XÁC NHẬN].",
+   "theme": "light",
+   "week": 2,
+   "target": "clip-27 (23.15) kéo sớm làm clip nối tiếp clip-04 (23.14) / hook thay thế",
+   "hook_vi": "Học một đêm thuộc hết bài cả kỳ, thi xong một tuần, bạn còn nhớ được câu nào?",
+   "moment_vi": "Đêm trước ngày thi ôm nguyên đề cương cả kỳ, sáng làm được bài, một tuần sau hỏi lại thì trống trơn.",
+   "turn_vi": "Ba tiếng định thức trắng một đêm, chia ra ba tối mỗi tối một tiếng, bắt đầu từ ba hôm trước.",
+   "hook_en": "Crammed all night. Remember anything a week later?",
+   "explainer": "HyperFrames: hai thanh thời gian cùng dài 3 tiếng — thanh A là một khối đêm trước thi, thanh B tách thành ba khối nhỏ ở ba tối. Sau ngày thi, đường 'còn nhớ' của A rơi nhanh, của B giữ lâu hơn (vẽ định tính, không có số %, vì sách không cho số). Nhãn nguồn nhỏ: Cepeda et al. 2006 · 317 thí nghiệm · chủ yếu học thuộc từ.",
+   "beats": [
+    {"text": "Học một đêm thuộc hết bài cả kỳ, thi xong một tuần, bạn còn nhớ được câu nào?", "expression": "confused", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Crammed all night. Remember anything a week later?"},
+    {"text": "Trên TikTok có câu được share hơn năm mươi ngàn lần: “Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ”. Nghe quen hông?", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "One night to learn a whole semester."},
+    {"text": "Chắc bạn đang nghĩ: học dồn vậy mà sáng ra vẫn làm được bài, vẫn qua môn đó thôi.", "expression": "neutral", "action": "thinking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "But cramming still gets you through."},
+    {"text": "Ừ, đúng. Học dồn không vô dụng: đêm đó nhồi vô thì sáng mai vẫn làm được bài. Cái giá là sau kỳ thi quên rất nhanh.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "It works tomorrow. Then it fades fast."},
+    {"text": "Một nghiên cứu gom 317 thí nghiệm: cùng số giờ học, chia ra nhiều buổi thì nhớ lâu hơn học một lèo. Muốn nhớ càng lâu, khoảng cách giữa các lần ôn càng phải dài.", "expression": "surprised", "action": "reacting", "pose": "standing", "background": "grid", "duration": 8, "caption_en": "317 experiments: spread it out, remember longer."},
+    {"text": "Vậy ba tiếng định thức trắng đêm trước ngày thi, chia ra ba tối, mỗi tối một tiếng, bắt đầu từ ba hôm trước. Tối nào cũng gấp sách lại, tự viết ra những gì còn nhớ.", "expression": "happy", "action": "typing", "pose": "sitting", "background": "desk", "duration": 8, "caption_en": "Three hours? Split into three evenings."},
+    {"text": "Nghiên cứu này chủ yếu đo việc học thuộc từ, nên chưa có con số mấy ngày là chuẩn cho môn khó. Chỉ chắc một chiều: thi càng xa thì giãn càng dài.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "No magic gap. Farther exam, longer gap."},
+    {"text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: ôn TOEIC dồn một buổi cuối tuần, so với chia mỗi tối một ít.", "expression": "neutral", "action": "talking", "pose": "sitting", "background": "desk", "duration": 5, "caption_en": "[Hiệp to confirm] My TOEIC study split."},
+    {"text": "Môn sắp thi của bạn còn mấy ngày nữa? Comment số ngày nha.", "expression": "happy", "action": "reacting", "pose": "standing", "background": "grid", "duration": 4, "caption_en": "Days until your exam? Comment below."}
+   ]
+  },
+  {
+   "id": "ca-phe-6-tieng",
+   "title": "“Ngưng cà phê trước giờ ngủ 6 tiếng” chưa đủ: một ly cần gần 9 tiếng, mà bạn không thấy mình ngủ ít đi",
+   "trend_id": "tt-sabito_0668-7670995147995237640",
+   "bridge_id": "B-cafe6h-01",
+   "lesson": "3.4 Sau 2 giờ chiều không đụng caffeine (Drake, Roehrs, Shambroom & Roth 2013: viên 400 mg caffeine, cỡ ba bốn ly cà phê, uống 6 tiếng trước giờ ngủ → máy đo tổng thời gian ngủ ít hơn 1,1–1,2 tiếng so với giả dược, nhưng nhật ký ngủ người tham gia tự ghi không thấy khác. Gardiner et al. 2023, tổng hợp nhiều nghiên cứu: caffeine làm tổng thời gian ngủ giảm trung bình 45 phút, hiệu suất giấc ngủ giảm 7%; một ly 250 ml (107 mg) phải uống xong trước giờ ngủ hơn 8,8 tiếng mới không ảnh hưởng. Bằng chứng A. Ghi chú sách: nghiên cứu Drake chỉ một phòng lab, liều 400 mg khá cao; người chuyển hoá caffeine chậm thì mốc còn sớm hơn; ngủ 11 giờ thì mốc là 2 giờ chiều). Chi phí: không tốn tiền, tốn chút ý chí bỏ ly cà phê chiều.",
+   "angle": "contrarian / data",
+   "pattern": "P10 + P03",
+   "differentiation": "Mọi người đang nói: thức khuya chạy deadline thì cứ cà phê, chỉ cần “ngưng cà phê trước giờ định đi ngủ ít nhất 6 tiếng” (TikTok @sabito_0668 606k view, 14,2k share, câu trích nguyên văn VTT); “ly cà phê 3 giờ chiều có thể lấy mất 1 tiếng ngủ” (@motionlab.fit, 19/10). Góc của mình: con số 6 tiếng chính là mốc trong thí nghiệm mà người ta vẫn mất hơn một tiếng ngủ — sách tính một ly cần hơn 8,8 tiếng. Điểm consensus bỏ qua: người uống không hề thấy (nhật ký ngủ không khác), nên 'tối vẫn ngủ được' không chứng minh gì. Hành động: sau 2 giờ chiều buồn ngủ thì chợp 10 phút (3.11) thay vì thêm ly. Chuyện thật của Hiệp để [CẦN HIỆP XÁC NHẬN].",
+   "theme": "dark",
+   "week": 2,
+   "target": "clip-17 (3.4) hook thay thế / bản nháp sớm",
+   "hook_vi": "Sáng dậy vẫn mệt dù tối qua ngủ được? Ly cà phê lúc 4 giờ chiều hôm qua, bạn có tính tới nó không?",
+   "moment_vi": "4 giờ chiều mắt díp lại, xuống quán gọi ly cà phê sữa đá; 11 giờ vẫn ngủ được; sáng ra dậy như chưa ngủ.",
+   "turn_vi": "Sau 2 giờ chiều không thêm ly cà phê; buồn ngủ thì chợp mắt 10 phút.",
+   "hook_en": "Tired despite sleeping? Counted that 4pm coffee?",
+   "explainer": "HyperFrames: trục giờ từ 14:00 tới 23:00; ly cà phê thả ở 17:00 (6 tiếng trước ngủ) → khối giấc ngủ bị gặm mất hơn 1 tiếng, trong khi icon cuốn sổ nhật ký vẫn ghi 'ngủ ngon'. Sau đó mốc 8,8 tiếng kéo ngược từ 23:00 về 14:00. Nhãn nguồn nhỏ: Drake et al. 2013 (1 phòng lab, 400 mg) · Gardiner et al. 2023 (tổng hợp).",
+   "beats": [
+    {"text": "Sáng dậy vẫn mệt dù tối qua ngủ được? Ly cà phê lúc 4 giờ chiều hôm qua, bạn có tính tới nó không?", "expression": "confused", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Tired despite sleeping? Counted that 4pm coffee?"},
+    {"text": "Một clip mẹo thức khuya hơn 600 ngàn view dặn: “ngưng cà phê trước giờ định đi ngủ ít nhất 6 tiếng”.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "“Stop coffee six hours before bed.”"},
+    {"text": "Vậy uống lúc 4 giờ, 11 giờ mới ngủ, là dư 7 tiếng rồi, đúng hông?", "expression": "happy", "action": "thinking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "4pm coffee, 11pm bed. Seven hours. Fine?"},
+    {"text": "Có một thí nghiệm cho người ta uống caffeine cỡ ba bốn ly cà phê, đúng 6 tiếng trước giờ ngủ. Máy đo cho thấy họ ngủ ít đi hơn một tiếng.", "expression": "surprised", "action": "reacting", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Six hours before bed: an hour lost."},
+    {"text": "Mà sổ nhật ký ngủ họ tự ghi thì không thấy khác gì. Tức là tối bạn vẫn ngủ được, chỉ là ngủ ít hơn mình tưởng, và mình không hề hay.", "expression": "confused", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "You still sleep. Just less, unnoticed."},
+    {"text": "Gộp nhiều nghiên cứu lại thì tính ra: một ly cà phê 250 ml phải uống xong trước giờ ngủ hơn 8,8 tiếng. Ngủ lúc 11 giờ đêm thì mốc là 2 giờ chiều.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 8, "caption_en": "One cup: finish 8.8 hours before bed."},
+    {"text": "Thí nghiệm 6 tiếng kia chỉ một phòng lab làm, liều lại khá cao. Còn ai chuyển hoá caffeine chậm thì mốc phải sớm hơn nữa.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "One lab, high dose. Slow metabolizers: earlier."},
+    {"text": "Nên sau 2 giờ chiều mà buồn ngủ, đừng gọi thêm ly. Chợp mắt 10 phút thôi.", "expression": "happy", "action": "talking", "pose": "sitting", "background": "desk", "duration": 5, "caption_en": "After 2pm: skip coffee, nap ten minutes."},
+    {"text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: ly cà phê chiều lúc code, và sáng hôm sau ra sao.", "expression": "neutral", "action": "talking", "pose": "sitting", "background": "desk", "duration": 5, "caption_en": "[Hiệp to confirm] My afternoon coffee."},
+    {"text": "Ly cà phê cuối của bạn hôm qua là mấy giờ? Comment giờ nha.", "expression": "happy", "action": "reacting", "pose": "standing", "background": "grid", "duration": 4, "caption_en": "Your last coffee yesterday? What time?"}
+   ]
+  }
+ ]
+}

@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-19
+updated: 2026-10-20
 tags: [ideas]
 ---
 # Idea bank
@@ -42,3 +42,9 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Tự nhận mình cũng cầm điện thoại, rồi đặt giới hạn cứng cho app video ngắn (B-phone-02) | 4.15 (+3.1) | trụ 2 tập trung | "Bị chửi “dẹp điện thoại đi”, mà người chửi cũng đang cầm điện thoại?" | LIGHT | ý tưởng (2026-10-19; clip-12 hook thay thế; bỏ số Trung Quốc) |
 | Vừa họp vừa rep là hai việc dở (B-multitask-01) | 3.7 | trụ 2 tập trung | "Vừa họp vừa rep tin nhắn, hết buổi bạn nhớ được gì?" | DARK | ý tưởng (2026-10-19; clip-09) |
 | Chấm công nửa đêm không ra thêm việc (B-49h-01) | 3.13 | trụ 2 | "Chấm công lúc nửa đêm thì có làm được nhiều hơn không?" | DARK | ý tưởng (2026-10-19; clip-11 hook thay thế) |
+| Học một đêm vẫn qua, cái giá là quên nhanh: cùng số giờ chia ra nhiều tối (B-hoc1dem-01) | 23.15 (+23.14) | trụ 5 học | "Học một đêm thuộc hết bài cả kỳ, thi xong một tuần, bạn còn nhớ được câu nào?" | LIGHT | stub 2026-10-20, chờ duyệt (clip-27 kéo sớm, nối clip-04; `research/trends/2026-10-20/plans/plan-1-hoc-1-dem-ca-ky.json`) |
+| “Ngưng cà phê trước ngủ 6 tiếng” chưa đủ: một ly cần hơn 8,8 tiếng (B-cafe6h-01) | 3.4 (+3.11) | trụ 3 năng lượng | "Sáng dậy vẫn mệt dù tối qua ngủ được? Ly cà phê lúc 4 giờ chiều hôm qua, bạn có tính tới nó không?" | DARK | stub 2026-10-20, chờ duyệt (clip-17 hook thay thế; `research/trends/2026-10-20/plans/plan-2-ca-phe-6-tieng.json`) |
+| Tóm tắt đề cương không phải cách nhớ, phần quiz mới là (B-tomtat-01) | 23.16 (+23.14) | trụ 5 học | "Tóm tắt cả đề cương gọn một trang, vậy mà vô phòng thi vẫn trống trơn?" | DARK | ý tưởng (2026-10-20; callback clip-04; caution: không nêu tên công cụ AI) |
+| Ngủ 6 tiếng mà thấy vẫn tỉnh thì cảm giác đó không đáng tin (B-6h-01) | 3.3 | trụ 3 năng lượng | "Tuần này đêm nào cũng ngủ sáu tiếng, mà bạn vẫn thấy mình tỉnh, đúng không?" | DARK | ý tưởng (2026-10-20; clip-15 hook thay thế) |
+| Quãng đường đi làm: bớt 30 phút một chiều là 5 tiếng/tuần (B-commute-01) | 4.18 | trụ 1 | "Mỗi ngày bạn ngồi xe đi làm bao lâu? Cộng cả tuần là mấy tiếng?" | LIGHT | ý tưởng (2026-10-20; sách ghi tranh cãi) |
+| AI ước dư, người ước thiếu: ước theo lần trước (B-estimate-02) | 4.4 | trụ 1 | "AI ước hai tuần mà làm hai tiếng. Còn bạn, lần gần nhất ước ba ngày thì mất mấy ngày?" | DARK | ý tưởng (2026-10-20; clip-05 hook thay thế) |

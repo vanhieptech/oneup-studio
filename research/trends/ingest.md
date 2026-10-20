@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-19
+updated: 2026-10-20
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -49,7 +49,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | realistic-goals-debate | Tranh luận mục tiêu sức khoẻ/năng suất hàng ngày có thực tế? | social debates | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2109762860901454314) |
 | dong-nghiep-viec-rieng | Đồng nghiệp nhờ việc riêng ngoài giờ | niche/work | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/dong-nghiep-nho-viec-rieng-ngoai-gio-lam-viec-tu-choi-the-nao-215261014112324973.chn) |
 | floor-time-tiktok | TikTok Floor Time (nằm sàn reset) | memes/wellness | ok | 2026-10-15 | 2026-10-18 | 3 | [verywell](https://www.verywellmind.com/floor-time-11917599) |
-| sleep-struggles-late | Thức khuya + kiệt sức | habits | ok | 2026-10-15 | 2026-10-18 | 3 | [X News](https://x.com/i/trending/2109971172024860764) |
+| sleep-struggles-late | Thức khuya + kiệt sức | habits | ok | 2026-10-15 | 2026-10-20 | 4 | [X News](https://x.com/i/trending/2109971172024860764), [TikTok @sabito_0668](https://www.tiktok.com/@sabito_0668/video/7670995147995237640) |
 | paper-writing-habits | Người vẫn viết giấy giữa đời màn hình | niche | ok | 2026-10-15 | 2026-10-15 | 1 | [gnews](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd2tlbk0zc0RkU3czQzU5UmloNjFMbHRqZTdQakxqOFVZbzIyZU9Db1dYMHJ1dGFuTnl) |
 | us-alcohol-lowest | Mỹ uống rượu thấp nhất từ 1939 | news/health | ok | 2026-10-15 | 2026-10-15 | 1 | [X News](https://x.com/i/trending/2110230256925778352) |
 | di-lam-stress | Đi làm stress việc / thất nghiệp stress tiền | lifestyle | ok | 2026-10-15 | 2026-10-15 | 1 | [kenh14](https://kenh14.vn/di-lam-thi-stress-vi-cong-viec-that-nghiep-thi-stress-vi-tien-bac-215261010091120065.chn) |
@@ -66,7 +66,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | mckinsey-ai-interview | McKinsey thử phỏng vấn avatar AI | tech/career | ok | 2026-10-16 | 2026-10-16 | 1 | [X News](https://x.com/i/trending/2110395763201388639) |
 | music-rest-coping | Music + nghỉ đối phó stress | habits | ok | 2026-10-16 | 2026-10-16 | 1 | [X News](https://x.com/i/trending/2109994700174512302) |
 | ai-jevons-longer-hours | AI giúp làm nhanh hơn mà giờ làm dài hơn (Jevons paradox) | tech/work | ok | 2026-10-17 | 2026-10-18 | 2 | [X News](https://x.com/i/trending/2111099938876833853) |
-| traders-biet-ma-khong-lam | Traders: biết luật mà không theo được; kỷ luật > chiến lược (5 story 14–16/10) | money/habits | caution | 2026-10-17 | 2026-10-18 | 2 | [X News](https://x.com/i/trending/2111053129383030813) |
+| traders-biet-ma-khong-lam | Traders: biết luật mà không theo được; kỷ luật > chiến lược (5 story 14–16/10) | money/habits | caution | 2026-10-17 | 2026-10-20 | 3 | [X News](https://x.com/i/trending/2111053129383030813), [X News](https://x.com/i/trending/2112266059528966383) |
 | genz-earns-more | Gen Z thu nhập +20–40% so millennials cùng tuổi, sở hữu nhà 27% vs 55% (số liệu Mỹ) | money | caution | 2026-10-17 | 2026-10-18 | 2 | [X News](https://x.com/i/trending/2111213837856948466) |
 | genz-fitness | Gen Z mê gym/wellness (thẻ gym ×8 trong 3 năm) | health/habits | ok | 2026-10-17 | 2026-10-18 | 2 | [X News](https://x.com/i/trending/2111113227270508658) |
 | iphone-duo-coc | Cọc 30 triệu, canh 19h vẫn lỡ đợt iPhone Duo đầu tiên | tech/money | ok | 2026-10-17 | 2026-10-18 | 2 | [genk](https://genk.vn/coc-30-trieu-dong-canh-dung-19h-de-bam-dat-nhieu-nguoi-viet-van-lo-chuyen-iphone-duo-dau-tien-) |
@@ -86,8 +86,8 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | tt-luoi-hoc | TikTok “lười học quá thì làm sao” (111k; comment top “lúc đầu 📚 5p sau 📱” 336 like) | niche/study | ok | 2026-10-18 | 2026-10-18 | 1 | [TikTok @biquyetdodaihoc](https://www.tiktok.com/@biquyetdodaihoc/video/7620113093401627924) |
 | sleep-tracker-anxiety | Kiệt sức + lo vì chỉ số giấc ngủ, “trả thù” bằng thức khuya | habits/sleep | ok | 2026-10-18 | 2026-10-18 | 1 | [X News](https://x.com/i/trending/2110810708971786264) |
 | boss-talk-less | Khoa học: sếp nên nói ít hơn trong họp | work | ok | 2026-10-18 | 2026-10-19 | 2 | [arstechnica](https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/) |
-| ai-agents-drained | AI agents hứa nhẹ việc mà dev mệt đầu hơn | tech/work | ok | 2026-10-18 | 2026-10-19 | 2 | [X News](https://x.com/i/trending/2110403760484913493) |
-| napping-dementia | Ngủ ngày nhiều liên quan nguy cơ sa sút trí nhớ ở người lớn tuổi (nghiên cứu quan sát) | health | caution | 2026-10-18 | 2026-10-18 | 1 | [X News](https://x.com/i/trending/2111157205487481021) |
+| ai-agents-drained | AI agents hứa nhẹ việc mà dev mệt đầu hơn | tech/work | ok | 2026-10-18 | 2026-10-20 | 3 | [X News](https://x.com/i/trending/2110403760484913493), [HN Ask](https://news.ycombinator.com/item?id=50151036) “shipping AI-written code you don’t understand” 245/385 |
+| napping-dementia | Ngủ ngày nhiều liên quan nguy cơ sa sút trí nhớ ở người lớn tuổi (nghiên cứu quan sát) | health | caution | 2026-10-18 | 2026-10-20 | 2 | [X News](https://x.com/i/trending/2111157205487481021) |
 | tt-sinh-vien-trung | TikTok sinh viên tủ lạnh toàn trứng “ngán lắm” (275k, 18,4k share; đăng 12/10) | viral/food | caution | 2026-10-18 | 2026-10-18 | 1 | [TikTok @nycuataodau_22](https://www.tiktok.com/@nycuataodau_22/video/7695633230262734100) |
 | tt-bai-tap-tri-nao | TikTok “7 bài tập rèn trí não giúp tập trung tăng vọt” (559k; không nguồn) | niche/study | caution | 2026-10-18 | 2026-10-18 | 1 | [TikTok @naobatmode](https://www.tiktok.com/@naobatmode/video/7584985930407169298) |
 | tan-lam-don-con | Áp lực 30 phút giữa giờ tan làm và đón con | work/family | ok | 2026-10-18 | 2026-10-18 | 1 | [vnexpress](https://vnexpress.net/ap-luc-30-phut-chay-dua-giua-gio-tan-lam-va-don-con-5133494.html) |
@@ -97,11 +97,24 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | tt-meo-cong-so | TikTok skit công sở mèo: báo cáo gấp, họp 10 giờ, “nghỉ việc mệt người” (268k, 9.302 share) | work/meme | ok | 2026-10-19 | 2026-10-19 | 1 | [TikTok @nhacomeo.mut](https://www.tiktok.com/@nhacomeo.mut/video/7690545961994587412) |
 | tt-cham-cong-dem | TikTok “Ai chấm công lúc 12 rưỡi đêm vậy?” (196k; 14/10) | work/meme | ok | 2026-10-19 | 2026-10-19 | 1 | [TikTok @vanphongsono](https://www.tiktok.com/@vanphongsono/video/7696386489659280647) |
 | tt-tin-nhan-sep-ngoai-gio | TikTok “trả lời tin nhắn ngoài giờ – sống sót nơi công sở” (53,7k; comment “em ơi… nhắn 1 lần luôn đi”) | work | ok | 2026-10-19 | 2026-10-19 | 1 | [TikTok @kieu06011993](https://www.tiktok.com/@kieu06011993/video/7361063393723288840) |
-| smartphone-overuse-pew | Nghiện điện thoại: screen time >3 giờ/ngày; Pew 53% người lớn Mỹ, 70% dưới 30 thấy mình dùng quá mức | habits/tech | ok | 2026-10-19 | 2026-10-19 | 1 | [X News](https://x.com/i/trending/2111565362709836179) |
-| imperfect-days-reminder | Tối Chủ nhật: lời nhắc ngày không hoàn hảo cũng được | mental health | ok | 2026-10-19 | 2026-10-19 | 1 | [X News](https://x.com/i/trending/2111941079637672420) |
+| smartphone-overuse-pew | Nghiện điện thoại: screen time >3 giờ/ngày; Pew 53% người lớn Mỹ, 70% dưới 30 thấy mình dùng quá mức | habits/tech | ok | 2026-10-19 | 2026-10-20 | 2 | [X News](https://x.com/i/trending/2111565362709836179) |
+| imperfect-days-reminder | Tối Chủ nhật: lời nhắc ngày không hoàn hảo cũng được | mental health | ok | 2026-10-19 | 2026-10-20 | 2 | [X News](https://x.com/i/trending/2111941079637672420) |
 | productivity-measurement | Người lao động bị chê năng suất thấp, mà có thể cách đo mới là vấn đề | work | ok | 2026-10-19 | 2026-10-19 | 1 | [ABC qua Google News](https://news.google.com/rss/articles/CBMihwFBVV95cUxNVGRkRzVYZlFjUTBPWUFCM1pjcUlCbnlKYTROVFJMX1g0MnROMWFPSUNNVXVSdTNZMHZ) |
 | block-blast-ad-mechanics | Phân tích cho rằng Block Blast! chỉnh độ khó để đẩy quảng cáo (chưa kiểm) | tech/gaming | caution | 2026-10-19 | 2026-10-19 | 1 | [X News](https://x.com/i/trending/2111532263389188255) |
-| travel-vs-house | Tranh luận người trẻ chọn du lịch thay vì tiết kiệm mua nhà | money/social debate | caution | 2026-10-19 | 2026-10-19 | 1 | [X News](https://x.com/i/trending/2111870900467359905) |
+| travel-vs-house | Tranh luận người trẻ chọn du lịch thay vì tiết kiệm mua nhà | money/social debate | caution | 2026-10-19 | 2026-10-20 | 2 | [X News](https://x.com/i/trending/2111870900467359905) |
+| tt-hoc-1-dem | TikTok “Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ” (1,1M view, 695 comment, 55,3k share; 07/2025 evergreen); comment top “Sách mới tinh kh vết gấp mà😭” 3.269 like, “nhét ba môn cả kì trước 3 tiếng thi” 132 | viral/study | ok | 2026-10-20 | 2026-10-20 | 1 | [TikTok @ng__phanh](https://www.tiktok.com/@ng__phanh/video/7532553338664045831) |
+| tt-ai-tom-tat-de-cuong | TikTok “4 năm đại học, vẫn đống đề cương đó mà giờ mới biết dùng kiểu này 💀” — upload tài liệu cho AI tóm tắt + flashcard + quiz; hook “xoá video sau 24 tiếng” (390k, 5,5k share; 11/10); comment top “ổng quảng cáo và ổng sẽ k xoá vid đâu:)” 1.078 like | niche/study | caution | 2026-10-20 | 2026-10-20 | 1 | [TikTok @hoc.di.roi.biet](https://www.tiktok.com/@hoc.di.roi.biet/video/7695270625660652820) |
+| tt-sieu-tom-tat | TikTok “Em học em không nhớ thì làm sao?” — siêu tóm tắt + ghi chữ cái đầu; nêu “quên hơn 70% trong 24h” (không nguồn) (287k; 03/2026); comment top “ghi tắt vậy là em quên mà ghi nguyên câu rõ ràng là lại nhớ” 796 | niche/study | caution | 2026-10-20 | 2026-10-20 | 1 | [TikTok @camreadwonder](https://www.tiktok.com/@camreadwonder/video/7614813783201975573) |
+| tt-thuc-khuya-giam-tac-hai | TikTok podcast “phải thức khuya thì thức thôi… giảm tối đa tác hại”: ngủ trước 20–90 phút, cà phê rồi chợp 20 phút, “ngưng cà phê trước giờ định đi ngủ ít nhất 6 tiếng” (606k, 14,2k share; 08/2026); comment “cả tuần nay toàn 6,7h sáng mới bngu” 342 | viral/sleep | caution | 2026-10-20 | 2026-10-20 | 1 | [TikTok @sabito_0668](https://www.tiktok.com/@sabito_0668/video/7670995147995237640) |
+| tt-ca-phe-3h-chieu | TikTok “Ly cà phê 3 giờ chiều có thể lấy mất 1 tiếng ngủ mà bạn không hề biết” (5k; đăng 19/10) | niche/sleep | ok | 2026-10-20 | 2026-10-20 | 1 | [TikTok @motionlab.fit](https://www.tiktok.com/@motionlab.fit/video/7698336587259661586) |
+| tt-no-luc-ao | Báo Thanh Niên “Chạy deadline xuyên đêm: ‘Nỗ lực ảo’ trong những đêm thức trắng” (66,9k; 1.975 share; 05/2026) | news/sleep | ok | 2026-10-20 | 2026-10-20 | 1 | [TikTok @baothanhnien.official](https://www.tiktok.com/@baothanhnien.official/video/7641864119628385556) |
+| tt-30-ngay-on-thi | TikTok “Day 8 – Hành trình 30 ngày ôn thi tốt nghiệp THPT” (461k, 7,5k share; 05/2026) | niche/study | ok | 2026-10-20 | 2026-10-20 | 1 | [TikTok @xuanhoi_08](https://www.tiktok.com/@xuanhoi_08/video/7641426024869219605) |
+| tt-trum-cuoi-cong-so | TikTok “Trùm cuối của công sở là… con cá, hai mang” (1,6M, 79,8k share; 15/10) — dán nhãn đồng nghiệp, không dùng | viral/work | caution | 2026-10-20 | 2026-10-20 | 1 | [TikTok @linh.85.bondauxanhdo](https://www.tiktok.com/@linh.85.bondauxanhdo/video/7696868382028893461) |
+| commute-paradox | X News: biểu đồ Stutzer & Frey 2008 — trúng số hay mất mát lớn rồi hạnh phúc hồi lại, đi làm xa thì không; kèm tranh luận làm từ xa (Yglesias) | work/life | ok | 2026-10-20 | 2026-10-20 | 1 | [X News](https://x.com/i/trending/2112324176858001594), [remote](https://x.com/i/trending/2111846809857659108) |
+| founder-26h-ai | Founder kể thức 26 giờ canh AI agent viết code (Fortune) | tech/work | caution | 2026-10-20 | 2026-10-20 | 1 | [X News](https://x.com/i/trending/2112039912476164605) |
+| ai-agents-overestimate | AI coding agent ước 2 tuần mà làm xong 2 giờ (ước dư 3–10 lần, vì học từ quy trình chậm của người) | tech/work | ok | 2026-10-20 | 2026-10-20 | 1 | [X News](https://x.com/i/trending/2111450373017722907) |
+| ngay-phu-nu-20-10 | Ngày Phụ nữ Việt Nam 20/10 (Google Trends VN 500+, X VN “Chúc”, Dân Trí) | seasonal | ok | 2026-10-20 | 2026-10-20 | 1 | [Google Trends VN](https://trends.google.com/trends/explore?geo=VN&q=ng%C3%A0y%20ph%E1%BB%A5%20n%E1%BB%AF%20vi%E1%BB%87t%20nam) |
+| hn-enjoy-programming | HN “It's still ok to enjoy programming” (427 điểm, 405 comment) — dev mệt vì AI | tech/work | ok | 2026-10-20 | 2026-10-20 | 1 | [HN](https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming) |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -117,8 +130,10 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | floor-time | Floor Time (nằm sàn reset) | format | EN · wellness / gen Z | 2026-10-15 | 2026-10-17 | 2 | [verywell](https://www.verywellmind.com/floor-time-11917599) | Đảo: nghỉ được, không phải trị liệu → 22.8 | B-floor-01 |
 
 | ban-chat-cua | “Vậy thì bản chất của…” (F06) — giảng Vật lí → meme điền khuyết | format | VI · gen Z | 2026-10-15 | 2026-10-17 | 3 | [giaimatrend](https://www.tiktok.com/@giaimatrend.vn/video/7694889719036923154) · Apify | Stem clip-02/03; không copy audio | clip-02 · trụ 1 |
-| callout-list-skit | “Top những dấu hiệu… top 1 là mày đó” / “dấu hiệu bạn đã nghiện…” (F07) | format | VI · gen Z / student | 2026-10-18 | 2026-10-19 | 3 | [TikTok @colo.vn](https://www.tiktok.com/@colo.vn/video/7693555573517782278), [TikTok @hoang_hao209](https://www.tiktok.com/@hoang_hao209/video/7654547690730114322), [TikTok @code.3.1](https://www.tiktok.com/@code.3.1/video/7664080768288738591) | Hiệp chibi chỉ camera, checklist 3 dấu hiệu; chỉ trêu thói quen, không gắn nhãn “nghiện” | clip-08 (3.1) |
-| lot-xac-30-ngay | “Lộ trình 30 ngày biến mất / lột xác” | format | VI · gen Z | 2026-10-18 | 2026-10-18 | 1 | [TikTok @kyluat.1](https://www.tiktok.com/@kyluat.1/video/7631923883968580885) | Đảo ngược bằng 4.12 (18–254 ngày, lỡ 1 ngày không về 0) | clip-06 (4.12) |
+| callout-list-skit | “Top những dấu hiệu… top 1 là mày đó” / “dấu hiệu bạn đã nghiện…” (F07) | format | VI · gen Z / student | 2026-10-18 | 2026-10-20 | 4 | [TikTok @colo.vn](https://www.tiktok.com/@colo.vn/video/7693555573517782278), [TikTok @hoang_hao209](https://www.tiktok.com/@hoang_hao209/video/7654547690730114322), [TikTok @code.3.1](https://www.tiktok.com/@code.3.1/video/7664080768288738591) | Hiệp chibi chỉ camera, checklist 3 dấu hiệu; chỉ trêu thói quen, không gắn nhãn “nghiện” | clip-08 (3.1) |
+| lot-xac-30-ngay | “Lộ trình 30 ngày biến mất / lột xác” | format | VI · gen Z | 2026-10-18 | 2026-10-20 | 2 | [TikTok @kyluat.1](https://www.tiktok.com/@kyluat.1/video/7631923883968580885) | Đảo ngược bằng 4.12 (18–254 ngày, lỡ 1 ngày không về 0) | clip-06 (4.12) |
+| fake-xoa-24h | “Mình sẽ xoá video này sau 24 tiếng” (giả khan hiếm để quảng cáo) | format | VI · student | 2026-10-20 | 2026-10-20 | 1 | [TikTok @hoc.di.roi.biet](https://www.tiktok.com/@hoc.di.roi.biet/video/7695270625660652820) | Anti-pattern: người xem bóc ngay (“ổng quảng cáo…” 1.078 like) — không dùng | — |
+| phai-thuc-thi-thuc | “Phải thức khuya thì thức thôi, nhưng giảm tác hại thế này” (harm-reduction tips) | format | VI · student / office | 2026-10-20 | 2026-10-20 | 1 | [TikTok @sabito_0668](https://www.tiktok.com/@sabito_0668/video/7670995147995237640) | Mượn khung nhượng bộ, rồi sửa con số sai bằng sách (3.4) | B-cafe6h-01 |
 
 ## Cụm từ / slang hay xuất hiện trong comment
 | id | Cụm từ | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip |
@@ -130,6 +145,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | doi-bo-bo-quan | đời bố, bố quản / đời t, t quản | VI · gen Z | 2026-10-18 | 2026-10-18 | 1 | [TikTok @hoang_hao209](https://www.tiktok.com/@hoang_hao209/video/7654547690730114322) (comment 2.429 like), @code.3.1 | P14: đồng ý trước rồi đưa 1 thay đổi nhỏ; không trích nguyên văn, dùng bản “đời mình, mình quản” | clip-08 |
 | vay-ong-dang-cam-gi | “Vậy ông đang cầm j 😔” / “chú nói con mà chú nhìn ai vậy” | VI · gen Z | 2026-10-19 | 2026-10-19 | 1 | [TikTok @kbhoanganh](https://www.tiktok.com/@kbhoanganh/video/7534286009832393991) (19.519 + 1.258 like) | P15: người nói tự nhận mình cũng cầm điện thoại trước; không trích nguyên văn | clip-12 (4.15) |
 | nhan-1-lan-luon-di | “em ơi… muốn gì nhắn 1 lần luôn đi” (sếp nhắn “em ơi” rồi để đó) | VI · office | 2026-10-19 | 2026-10-19 | 1 | [TikTok @kieu06011993](https://www.tiktok.com/@kieu06011993/video/7361063393723288840) (34 + 21 like) | Hook B-msg-02 | clip-08 (3.5) |
+| sach-moi-tinh | “Sách mới tinh kh vết gấp mà😭” / “gặp giáo trình lần đầu tại quán photo trước 2 tiếng vào thi” | VI · student | 2026-10-20 | 2026-10-20 | 1 | [TikTok @ng__phanh](https://www.tiktok.com/@ng__phanh/video/7532553338664045831) (3.269 + 213 like) | P15: người xem tự nhận học dồn trước; không trích nguyên văn vào clip | B-hoc1dem-01 |
 
 ## Hashtags
 | Hashtag | Khán giả | first | last | count | Ghi chú |
@@ -138,6 +154,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | #TheGreatLockIn #lockin #winterarc | EN gen Z | 2026-10-12 | 2026-10-13 | 2 | chỉ dùng khi clip thật sự nói về chủ đề này |
 | #kyluatbanthan #sinhvien #songtichcuc | VI student / gen Z | 2026-10-18 | 2026-10-18 | 1 | Apify input 18/10; #kyluatbanthan 1,2 tỷ view, #sinhvien 18,4 tỷ view (bộ đếm hashtag TikTok, cả đời) |
 | #vanphong #dilam #dilamcogivui #officelife | VI office | 2026-10-19 | 2026-10-19 | 1 | Apify input 19/10 (#vanphong, #dilam); `#dilam` lẫn clip nước ngoài, ưu tiên `#vanphong`/`#dilamcogivui`; `#genz` chủ yếu clip EN |
+| #onthi #congso #deadline #studytok | VI student / office | 2026-10-20 | 2026-10-20 | 1 | Apify input 20/10 (#congso, #onthi + 4 search ASCII); `#congso` lẫn thời trang công sở (1 isAd) và drama; `#onthi` ra cả quảng cáo luyện thi y khoa |
 
 ## Chủ đề nóng & tình huống
 | id | Tình huống | first | last | count | Nguồn | Clip |
@@ -147,6 +164,9 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | phone-during-study | Ngồi học vài phút là mò điện thoại (TikTok @hoang_hao209 1,4M, @code.3.1 315k, comment @biquyetdodaihoc)  + @kbhoanganh “dẹp điện thoại đi” 3,7M | 2026-10-18 | 2026-10-19 | 2 | TikTok (Apify) | clip-08 (3.1) |
 | after-hours-messages | Tin nhắn công việc ngoài giờ / sếp nhắn “em ơi” rồi im (VTV24 1,3M, @kieu06011993) | 2026-10-19 | 2026-10-19 | 1 | TikTok (Apify) | clip-08 (3.5) |
 | interrupted-all-day | Điện thoại reo cả ngày, tối về chẳng nhớ làm xong gì (@colo.vn “98% pin”) | 2026-10-19 | 2026-10-19 | 1 | TikTok (Apify) | clip-10 (3.6) |
+| cram-one-night | Học dồn một đêm cho cả kỳ, thi xong quên (@ng__phanh 1,1M, @_study.muij 7 tiếng tới 1 giờ sáng) | 2026-10-20 | 2026-10-20 | 1 | TikTok (Apify) | clip-27 (23.15) |
+| late-coffee-deadline | Thức khuya chạy deadline + cà phê chiều/tối (@sabito_0668 606k, @motionlab.fit, Thanh Niên “nỗ lực ảo”) | 2026-10-20 | 2026-10-20 | 1 | TikTok (Apify) | clip-17 (3.4), clip-15 (3.3) |
+| summary-not-memory | Tóm tắt đề cương / ghi chữ cái đầu mà vẫn không nhớ (@hoc.di.roi.biet, @camreadwonder) | 2026-10-20 | 2026-10-20 | 1 | TikTok (Apify) | 23.16 (callback clip-04) |
 
 ## Bridges (trend → khoảnh khắc → bài học → hook)
 | id | Trend | Khoảnh khắc | Bài học (phần.mục) | Hook VI | Góc | Đích | Trạng thái | first |
@@ -209,6 +229,12 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-49h-01 | tt-cham-cong-dem + productivity-measurement + ai-agents-drained | chấm công nửa đêm, ở lại cho thấy chăm | 3.13 | "Chấm công lúc nửa đêm thì có làm được nhiều hơn không?" (P03+P10) | data / contrarian | clip-11 (3.13) hook thay thế; củng cố B-jevons-01 | đề xuất | 2026-10-19 |
 | B-imperfect-01 | imperfect-days-reminder | lỡ một ngày tập rồi thấy tội lỗi | 4.12 | (hook B-30ngay-01) | empathy | củng cố B-30ngay-01 | đề xuất | 2026-10-19 |
 | B-blockblast-01 | block-blast-ad-mechanics | “một ván nữa thôi” | 4.15 | "Bạn mở game định chơi một ván, rồi mấy ván?" (P01) | humor | ý tưởng mới | caution (cáo buộc chưa kiểm, không nêu tên game) | 2026-10-19 |
+| B-hoc1dem-01 | tt-hoc-1-dem + tt-30-ngay-on-thi + tt-sieu-tom-tat | học một đêm cả kỳ, thi xong một tuần trống trơn | 23.15 (+23.14) | "Học một đêm thuộc hết bài cả kỳ, thi xong một tuần, bạn còn nhớ được câu nào?" (P01+P10) | contrarian / data | clip-27 (23.15) kéo sớm, nối clip-04 | stub, chờ duyệt | 2026-10-20 |
+| B-cafe6h-01 | tt-thuc-khuya-giam-tac-hai + tt-ca-phe-3h-chieu | uống cà phê 4 giờ chiều, tối vẫn ngủ được, sáng vẫn mệt | 3.4 (+3.11) | "Sáng dậy vẫn mệt dù tối qua ngủ được? Ly cà phê lúc 4 giờ chiều hôm qua, bạn có tính tới nó không?" (P10+P03) | contrarian / data | clip-17 (3.4) hook thay thế | stub, chờ duyệt | 2026-10-20 |
+| B-tomtat-01 | tt-ai-tom-tat-de-cuong + tt-sieu-tom-tat | tóm tắt cả đề cương gọn một trang mà vào phòng thi vẫn trống | 23.16 (+23.14) | "Tóm tắt cả đề cương gọn một trang, vậy mà vô phòng thi vẫn trống trơn?" (P06+P03) | contrarian / data | ý tưởng mới (callback clip-04) | caution (quảng cáo ngầm, không nêu tên công cụ) | 2026-10-20 |
+| B-6h-01 | tt-no-luc-ao + founder-26h-ai + tt-thuc-khuya-giam-tac-hai | tuần nào cũng ngủ 6 tiếng mà thấy mình vẫn ổn | 3.3 | "Tuần này đêm nào cũng ngủ sáu tiếng, mà bạn vẫn thấy mình tỉnh, đúng không?" (P10+P03) | data | clip-15 (3.3) hook thay thế | đề xuất (không nêu tên founder) | 2026-10-20 |
+| B-commute-01 | commute-paradox | ngồi xe đi làm mỗi ngày, tưởng rồi sẽ quen | 4.18 | "Mỗi ngày bạn ngồi xe đi làm bao lâu? Cộng cả tuần là mấy tiếng?" (P04+P01) | data / empathy | ý tưởng mới (trụ 1) | đề xuất (sách ghi tranh cãi; bỏ số Trung Quốc) | 2026-10-20 |
+| B-estimate-02 | ai-agents-overestimate | AI ước dư mà mình thì ước thiếu | 4.4 | "AI ước hai tuần mà làm hai tiếng. Còn bạn, lần gần nhất ước ba ngày thì mất mấy ngày?" (P03) | humor / data | clip-05 (4.4) hook thay thế | đề xuất | 2026-10-20 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
