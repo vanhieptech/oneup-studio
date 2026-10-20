@@ -45,3 +45,7 @@ Chủ đề giữ nguyên v07: học tới khuya, đọc đi đọc lại tưở
 **ĐẠT — đủ fact để viết bản mới**, với 3 sửa bắt buộc ở trên. Chủ đề học tập thông thường, không phải tư vấn y tế/pháp lý; vẫn giữ dòng end card "Thông tin tham khảo, không thay thế tư vấn chuyên gia" + credit CC BY 4.0 nguyên văn Hiệp đã chốt (xung đột C-1 giữ nguyên, chờ Hiệp quyết riêng).
 
 Dữ liệu: chỉ dùng nguồn công khai (PubMed/DOI/HTB), không gửi tài liệu nội bộ lên cloud.
+
+## Bổ sung 20/10/2026, dẫn chứng cho phần nêu vấn đề (đã đọc abstract qua NCBI efetch)
+- Roediger & Karpicke 2006, Psychol Sci 17(3):249-55, PMID 16507066, DOI 10.1111/j.1467-9280.2006.01693.x. Khi kiểm tra sau 5 phút, nhóm đọc lại nhớ tốt hơn nhóm tự kiểm tra. Khi kiểm tra sau 2 ngày và 1 tuần, nhóm tự kiểm tra nhớ tốt hơn hẳn. Đọc lại làm người học tự tin hơn, dù về sau họ nhớ kém hơn. Abstract không ghi tỉ lệ phần trăm, nên script không được nói con số.
+- Karpicke & Roediger 2008, Science 319(5865):966-8, PMID 18276894, DOI 10.1126/science.1152408. Thí nghiệm học từ vựng ngoại ngữ. Sau khi đã nhớ được một từ, đọc lại thêm không giúp nhớ lâu hơn, còn tự kiểm tra lại giúp nhớ lâu hơn rất nhiều. Sinh viên đoán sai việc mình sẽ nhớ được bao nhiêu.
