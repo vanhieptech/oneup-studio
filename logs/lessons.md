@@ -112,3 +112,8 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Quyết định Hiệp: «bnhiu giây cũng được miễn chất lượng tốt».
 - Fix: rule-4 thành cảnh báo; không thêm chữ/khoảng lặng để kéo dài. Clip-04: giữ b07 thêm ~1s, end card thêm 1–2s (FLUX), không đổi wording nên Chốt v18 giữ nguyên.
 - Phát hiện: check-rules `rule-4` chỉ warn; review thủ công đoạn chỉ có hình >2s.
+
+## L-080 (2026-10-21 01:20, News) — clip-04 v18 voice: STT nhỏ nghe sai, lên giọng câu hỏi làm đổi thanh
+- Whisper small (float32) nghe sai ổn định: «Comment» → «Còn mình/Con mê», «học thuộc» → «học thuật», «gấp sách» → «gấp sắt», «mấy từ» → «máy từ». Whisper medium float32 nghe đúng cả. Sửa: `voice-delivery-f5.py` có biến `ASR_MODEL` (mặc định small, dùng `ASR_MODEL=medium` cho lượt `measure` cuối, chậm khoảng gấp 3).
+- Nâng giọng chữ cuối câu hỏi +2,5 st trở lên làm thanh nặng/huyền nghe thành sắc/ngang: «sạch» → «xác», «từ» → «tư/tờ» (medium). Sửa: nâng từ +1 st, mỗi bước +0,5 st, dừng khi đo ≥ +0,6 st. Ưu tiên take tự rơi giọng ít ở chữ cuối. Câu kết thúc bằng thanh huyền vẫn cần +4 st, nên ghi «cần nghe tai» và hỏi Rule Reviewer.
+- Đo lặng: mép chữ do STT trả về thường lấn vào chỗ lặng (âm tắc, chỗ ghép). Lặng phải được gán vào ranh giới chữ theo điểm giữa của đoạn lặng, và cắt mép chữ theo mép đoạn ghép. Cửa sổ «hết chữ trước − 0,03s → đầu chữ sau + 0,03s» bỏ sót, ví dụ 0,24s ở «nhỏ | thì» c14-113.

@@ -12,9 +12,9 @@ syllable raised and proven by F0; takes picked by STT match minus a penalty abov
 """
 import json, os, re, sys, subprocess, difflib, unicodedata, glob
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
-PLANS = {"A": {"/": 0.18, "//": 0.35, "//beat": 0.4, "///": 0.4}, "B": {"/": 0.15, "//": 0.3, "//beat": 0.4, "///": 0.4}}  # plan C forbidden (W-08)
+PLANS = {"A": {"/": 0.18, "//": 0.35, "//beat": 0.4, "///": 0.4, "//hook": 0.08}, "B": {"/": 0.15, "//": 0.3, "//beat": 0.4, "///": 0.4, "//hook": 0.08}}  # //hook: L-027 splice ≤0.1s inside the hook (v18 R8)  # plan C forbidden (W-08)
 RESP = {"airport": "e pọt", "hotel": "hô ten", "ticket": "tích kịt", "passport": "pát pọt", "luggage": "lắc ghịt", "dunlosky": "Đun lốt ki",
-        "yang": "Giang", "comment": "Com men", "222": "hai trăm hai mươi hai", "48": "bốn mươi tám"}
+        "yang": "Giang", "comment": "Com men", "222": "hai trăm hai mươi hai", "48": "bốn mươi tám", "2006": "hai ngàn lẻ sáu"}
 REF = os.path.join(REPO, "assets/voice-refs/thai-son.wav")
 REF_TEXT = "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha."
 def arg(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
@@ -65,7 +65,7 @@ def batch(fd):
 # ---------------------------------------------------------------- DSP (asr-venv: numpy + faster-whisper + ffmpeg rubberband)
 SR = 48000
 LEAK = set("hôm nay trời sài gòn mát mẻ mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha".split())
-EN_ALIAS = [(k, v.lower()) for k, v in RESP.items() if not k.isdigit()] + [("nghìn", "ngàn"), ("ghịch", "ghịt"), ("lác", "lắc")]
+EN_ALIAS = [(k, v.lower()) for k, v in RESP.items() if not k.isdigit()] + [("nghìn", "ngàn"), ("ghịch", "ghịt"), ("lác", "lắc"), ("ngàn không trăm lẻ", "ngàn lẻ")]
 DIG = "không một hai ba bốn năm sáu bảy tám chín".split()
 def num_vi(n):
     n = int(n)
@@ -75,7 +75,8 @@ def num_vi(n):
         return s + ("" if u == 0 else " " + ("mốt" if u == 1 and t > 1 else "lăm" if u == 5 else DIG[u]))
     if n < 1000:
         h, r = divmod(n, 100); return DIG[h] + " trăm" + ("" if r == 0 else (" lẻ " + DIG[r] if r < 10 else " " + num_vi(r)))
-    th, r = divmod(n, 1000); return num_vi(th) + " ngàn" + ("" if r == 0 else " " + num_vi(r))
+    th, r = divmod(n, 1000)
+    return num_vi(th) + " ngàn" + ("" if r == 0 else " " + (("không trăm " + ("lẻ " if r < 10 else "")) if r < 100 else "") + num_vi(r))
 def norm(s):
     s = unicodedata.normalize("NFC", s.lower()); s = re.sub(r"(\d)[.,](\d{3})", r"\1\2", s)
     s = re.sub(r"\d+", lambda m_: " " + num_vi(m_.group(0)) + " ", s); s = re.sub(r"[^\w ]", " ", s); s = " " + " ".join(s.split()) + " "
@@ -87,7 +88,7 @@ _M = None
 def model():
     global _M
     if _M is None:
-        from faster_whisper import WhisperModel; _M = WhisperModel("small", device="cpu", compute_type="int8")
+        from faster_whisper import WhisperModel; _M = WhisperModel(os.environ.get("ASR_MODEL", "small"), device="cpu", compute_type=os.environ.get("ASR_COMPUTE", "float32"), cpu_threads=int(os.environ.get("ASR_THREADS", "0")))  # L-078: int8 hallucinates on this box since 20/10 ~23:00
     return _M
 def pcm(f, sr=SR):
     import numpy as np
@@ -195,9 +196,11 @@ def pick(fd):
     for s in S:
         if only and s["id"] not in only: continue
         T = targets(s); cands = []
+        EVF = arg("--evals"); EVJ = json.load(open(EVF)) if EVF else None  # v18 R8: evals.json from a gate script; takes with ok=false are rejected
         for f in sorted(glob.glob(f"{W}/{s['id']}-[0-9]*.wav")):
+            if EVJ is not None and not EVJ.get(os.path.basename(f), {}).get("ok"): continue
             st = take_stats(f, s, T); st["take"] = os.path.basename(f)
-            st["score"] = st["sim"] - (0.15 if st["rate"] > 5.0 else 0) - 0.02 * max(0, st["rate"] - 5.0) + (0.05 if s["q"] and (st["rise"] or -9) > 0 else 0) + (0.01 * max(-5.0, min(3.0, st["rise"] or -5.0)) if s["q"] else 0)
+            st["score"] = st["sim"] + (0.05 if s["q"] and (st["rise"] or -9) > 0 else 0) + (0.01 * max(-5.0, min(3.0, st["rise"] or -5.0)) if s["q"] else 0)
             cands.append(st)
         if not cands: print(s["id"], "no takes"); continue
         b = max(cands, key=lambda c: c["score"]); x = b["x"].copy(); tt = b["tt"]; thr = b["thr"]
@@ -205,11 +208,11 @@ def pick(fd):
         semi = None
         if s["q"]:
             # nặng/huyền/hỏi endings fall several st on their own: raise until the delivered last syllable measures ≥ +1 st (cap 8 st)
-            lw = int(tt[-1][0] * SR); semi = 2.5; x0 = x  # smallest shift that proves the rise
+            lw = int(tt[-1][0] * SR); semi = 1.0; x0 = x  # smallest shift that proves the rise (v18: start gentle, Kokoro note: no big push on huyền/nặng)
             while True:
                 x = np.concatenate([x0[:lw], rb_pitch(x0[lw:], semi)]); r_ = rise_st(x, tt[-1][0], tt[max(0, len(tt) - 3)][0], tt[-1][1] + 0.05)
-                if (r_ is not None and r_ >= 1.0) or semi >= 8.0: break
-                semi = min(8.0, semi + 1.5)
+                if (r_ is not None and r_ >= 0.6) or semi >= 6.0: break  # v18: +3–4 st on a nặng/huyền ending turns the tone into sắc («sạch»→«xác», «từ»→«tờ», whisper medium)
+                semi = min(6.0, semi + 0.5)
         # stress: gain on the bold chunk, ≥2 dB (target 2.5) over the rest of the sentence AND over its 2 neighbour syllables each side; no tempo
         bk = [k for k, (_, wi) in enumerate(T) if s["words"][wi]["bold"]]; emph = None
         if bk:
@@ -275,12 +278,19 @@ def voice(fd):
     for s in S:
         sr_ = {"id": s["id"], "beat": s["beat"], "text": s["text"], "pieces": []}
         for p in P[s["id"]]["pieces"]:
-            x = PCS[p["file"]]; lead, tail = edges(x); pad = 0.0
+            x = PCS[p["file"]]; lead, tail = edges(x); pad = 0.0; sh_ = 0.0
             if prev is not None:
-                pad = max(0.0, G[prev[0]] - prev[1] - lead); out.append(np.zeros(int(round(pad * SR)), "float32")); t += int(round(pad * SR)) / SR
+                pad = max(0.0, G[prev[0]] - prev[1] - lead)
+                if prev[0] == "//hook" and prev[1] + lead > G["//hook"]:  # L-027: the hook join must measure ≤0.1s → shave the quiet tail/lead (no speech removed)
+                    ex = prev[1] + lead - G["//hook"]; cut_t = min(ex, max(0.0, prev[1] - 0.01)); n_ = int(round(cut_t * SR))
+                    if n_ > 0: out[-1] = out[-1][:-n_].copy(); fo_ = min(len(out[-1]), int(0.006 * SR)); out[-1][-fo_:] *= np.linspace(1, 0, fo_); t -= n_ / SR; sr_prev = rows[-1] if rows and not sr_["pieces"] else sr_; sr_prev["pieces"][-1]["tail_shaved_s"] = round(cut_t, 3)
+                    ex -= cut_t; cut_l = min(ex, max(0.0, lead - 0.01)); n2 = int(round(cut_l * SR))
+                    if n2 > 0: x = x[n2:]; lead -= n2 / SR; sh_ = n2 / SR
+                    fl_ = min(len(x), int(0.006 * SR)); x = x.copy(); x[:fl_] *= np.linspace(0, 1, fl_)
+                out.append(np.zeros(int(round(pad * SR)), "float32")); t += int(round(pad * SR)) / SR
             st = t; out.append(x); t += len(x) / SR; prev = (p["mark_after"], tail)
             sr_["pieces"].append({"start": round(st + lead, 3), "end": round(t - tail, 3), "file_start": round(st, 3), "mark_after": p["mark_after"], "plan_pause": G[p["mark_after"]],
-                                  "tokens": [[k[0], round(st + k[1], 3), round(st + k[2], 3), k[3]] for k in p["tokens"]]})
+                                  "tokens": [[k[0], round(st + k[1] - sh_, 3), round(st + k[2] - sh_, 3), k[3]] for k in p["tokens"]]})
         sr_["start"] = sr_["pieces"][0]["start"]; sr_["end"] = sr_["pieces"][-1]["end"]; rows.append(sr_)
     y = np.concatenate(out); raw = os.path.join(W, f"voice-only-{pre}-raw.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", raw], input=y.astype("float32").tobytes(), check=True)
@@ -301,9 +311,9 @@ def voice(fd):
             if abs(I1 + 14.0) <= 0.3: break
             gdb += -14.0 - I1
         return pcm(wav)
-    for rnd in range(4):
+    for rnd in range(6):  # v18: up to 5 boost rounds (limiter keeps shaving the loudest words)
         z = render(y); thr_z = sil_thr(frames(z)); todo = 0
-        if rnd == 3: break
+        if rnd == 5: break
         for r_ in rows:
             toks = [k for p_ in r_["pieces"] for k in p_["tokens"]]; so = stress_of(z, toks, Sd[r_["id"]], thr_z)
             if not so: continue
@@ -331,8 +341,8 @@ def measure(fd):
         a, b = max(0, int(a * 100)), min(len(sil), int(np.ceil(b * 100))); best = cur = 0
         for v in sil[a:b]: cur = cur + 1 if v else 0; best = max(best, cur)
         return best / 100
-    TGT = {"/": (0.15, 0.2), "//": (G["//"] - 0.03, G["//"] + 0.05), "//beat": (G["//beat"] - 0.03, G["//beat"] + 0.05), "///": (G["///"] - 0.03, G["///"] + 0.05)}
-    NAME = {"/": "phẩy/hai chấm", "//": "hết câu", "//beat": "hết beat", "///": "lặng có chủ ý"}
+    TGT = {"/": (0.15, 0.2), "//": (G["//"] - 0.03, G["//"] + 0.05), "//beat": (G["//beat"] - 0.03, G["//beat"] + 0.05), "///": (G["///"] - 0.03, G["///"] + 0.05), "//hook": (0.0, 0.1)}
+    NAME = {"/": "phẩy/hai chấm", "//": "hết câu", "//beat": "hết beat", "///": "lặng có chủ ý", "//hook": "ghép hook (L-027 ≤0,1s)"}
     rows = []; flags = []; warns = []; allp = []; comma_max = 0; period_min = 9
     flat = [(s, j, p) for s in TJ["sentences"] for j, p in enumerate(s["pieces"])]
     for n_, (s, j, p) in enumerate(flat[:-1]):
@@ -342,13 +352,52 @@ def measure(fd):
         if pz > 0.8: stt_ = "✖ >0.8s"
         elif pz > 0.5: stt_ = "✖ >0.5s"
         elif mk == "/" and pz < 0.15: stt_ = "✖ phẩy <0.15s"
-        elif mk != "/" and pz < 0.1: stt_ = "✖ hết câu <0.1s"
+        elif mk == "//hook" and pz > 0.1: stt_ = "✖ hook >0.1s (L-027)"
+        elif mk not in ("/", "//hook") and pz < 0.1: stt_ = "✖ hết câu <0.1s"
         elif not (lo - 0.005 <= pz <= hi + 0.005): stt_ = "⚠ lệch plan"
         allp.append({"sid": s["id"], "after": last_w, "mark": mk, "kind": NAME[mk], "plan": G[mk], "pause": round(pz, 3), "status": stt_})
         if mk == "/": comma_max = max(comma_max, pz)
-        else: period_min = min(period_min, pz)
+        elif mk != "//hook": period_min = min(period_min, pz)
         if stt_.startswith("✖"): flags.append(f"{s['id']}: nghỉ sau «{last_w}» ({NAME[mk]}) {pz:.2f}s, plan {G[mk]}s ({stt_})")
         elif stt_.startswith("⚠"): warns.append(f"{s['id']}: nghỉ sau «{last_w}» {pz:.2f}s, plan {G[mk]}s")
+    # silences (E1 schema, check-rules.py) + inner commas. Every silence run ≥0.05s between the first and last spoken word is attributed by its
+    # midpoint to the word boundary k with mid(word k) ≤ run-mid < mid(word k+1) (STT word edges often swallow pauses, e.g. stop closures).
+    HOOKB = set((arg("--hook-beats", "b01") or "").split(","))
+    MARKAT = {"/": "comma", "//": "sentence", "//hook": "sentence", "//beat": "beat", "///": "beat"}
+    wl = []  # word-level: [chunk_id, word_idx, word, start, end, mark_after (piece end) or None]
+    for s in TJ["sentences"]:
+        sd = S[s["id"]]
+        for p in s["pieces"]:
+            for i, k in enumerate(p["tokens"]):
+                k0, k1 = min(max(k[1], p["start"]), p["end"]), min(max(k[2], p["start"]), p["end"])  # STT edges can spill into the join silence
+                if wl and wl[-1][0] == s["id"] and wl[-1][1] == k[3]: wl[-1][4] = k1
+                else: wl.append([s["id"], k[3], sd["words"][k[3]]["w"] if 0 <= k[3] < len(sd["words"]) else k[0], k0, k1, None])
+            wl[-1][5] = p["mark_after"]
+    mids = [(w[3] + w[4]) / 2 for w in wl]
+    def at_mark(k):
+        A, B = wl[k], wl[k + 1]
+        if A[0] != B[0] or (A[5] and A[5] != "/"): return MARKAT.get(A[5], "beat")
+        if A[1] + 1 in (S[A[0]].get("inner_commas") or []) or A[5] == "/": return "comma"  # inner_commas = index of the word AFTER the comma
+        return "none"
+    silences = []; bmax = {}; cur = None
+    for j_, v in enumerate(list(sil) + [False]):
+        if v and cur is None: cur = j_
+        if not v and cur is not None:
+            d = (j_ - cur) / 100; c_ = (cur + j_) / 200
+            if d >= 0.05 and mids[0] < c_ < mids[-1]:
+                k = max(i for i in range(len(wl) - 1) if mids[i] <= c_); bmax[k] = max(bmax.get(k, 0), d)
+                silences.append({"chunk_id": wl[k][0] if wl[k][0] == wl[k + 1][0] else f"{wl[k][0]}→{wl[k + 1][0]}", "t_start": round(cur / 100, 2), "t_end": round(j_ / 100, 2), "dur_s": round(d, 2),
+                                 "at_mark": at_mark(k), "context_before": " ".join(w[2] for w in wl[max(0, k - 2):k + 1]), "context_after": " ".join(w[2] for w in wl[k + 1:k + 4])})
+            cur = None
+    # inner commas (inside one F5 output, not a join) as pauses too. Hook beat (L-027, v18 R8): ≤0.1s; elsewhere 0.12–0.22s.
+    for k in range(len(wl) - 1):
+        A = wl[k]
+        if A[0] != wl[k + 1][0] or A[1] + 1 not in (S[A[0]].get("inner_commas") or []): continue
+        pz = bmax.get(k, 0.0); hook = S[A[0]]["beat"] in HOOKB
+        stt_ = ("✖ phẩy trong hook >0.1s (L-027)" if pz > 0.1 else "ok") if hook else ("ok" if 0.12 <= pz <= 0.22 else "✖ phẩy trong chunk ngoài 0.12–0.22s")
+        allp.append({"sid": A[0], "after": A[2], "mark": "/", "inner": True, "kind": "phẩy trong chunk" + (" (hook ≤0,1s)" if hook else ""), "plan": 0.1 if hook else 0.18, "pause": round(pz, 3), "status": stt_})
+        if not hook: comma_max = max(comma_max, pz)
+        if stt_.startswith("✖"): flags.append(f"{A[0]}: phẩy sau «{A[2]}» {pz:.2f}s ({stt_})")
     if comma_max >= period_min: flags.append(f"thứ bậc nghỉ: phẩy dài nhất {comma_max:.2f}s ≥ hết câu ngắn nhất {period_min:.2f}s")
     total_pause = 0.0
     for s in TJ["sentences"]:
@@ -394,11 +443,11 @@ def measure(fd):
     I = re.findall(r"I:\s+(-?[\d.]+) LUFS", lufs)[-1]
     tot = TJ["total_s"]; pause_sum = round(sum(p["pause"] for p in allp), 2); speech = round(sum(r["speech_s"] for r in rows), 2)
     res = {"voice_prefix": pre, "plan": TJ["plan"], "plan_pauses": G, "total_s": tot, "speech_s": speech, "pause_at_marks_s": pause_sum, "pure_speech_pre_s": TJ["pure_speech_s"], "lufs": float(I),
-           "limit_s": 58.0, "over_s": round(max(0, tot - 58.0), 2), "pauses": allp, "sentences": rows, "english": en, "flags": flags, "warnings": warns}
+           "limit_s": 58.0, "over_s": round(max(0, tot - 58.0), 2), "pauses": allp, "silences": silences, "sentences": rows, "english": en, "flags": flags, "warnings": warns}
     if tot > 58.0: flags.append(f"tổng giọng {tot:.2f}s > 58s (dư {tot - 58:.2f}s)")
     out = arg("--out", os.path.join(fd, f"prosody-measure-{pre}.md")); json.dump(res, open(out[:-3] + ".json", "w"), ensure_ascii=False, indent=1)
-    md = [f"# Đo prosody bản giọng nháp — {pre} (script-v16c, F5 Thái Sơn speed 1.0, plan {TJ['plan']})", "",
-          f"File: `{TJ['m4a']}` + `{TJ['wav']}`. Đo trên chính file giao (sau loudnorm). Nghỉ = đoạn lặng dài nhất (năng lượng, khung 10ms) tại chỗ nối hai cụm; nhấn = độ to (chỉ tính khung có tiếng) của cụm đậm so phần còn lại của câu (bỏ âm tiết cuối) và so 2 âm tiết kề mỗi bên; lên giọng = trung vị F0 âm tiết cuối so 2 âm tiết ngay trước (semitone); STT = faster-whisper small (vi) trên đoạn câu, so với lời (số/từ EN quy về cách đọc).", "",
+    md = [f"# Đo prosody bản giọng nháp — {pre} ({arg('--script-name', 'script-v16c')}, F5 Thái Sơn speed 1.0, plan {TJ['plan']})", "",
+          f"File: `{TJ['m4a']}` + `{TJ['wav']}`. Đo trên chính file giao (sau loudnorm). Nghỉ = đoạn lặng dài nhất (năng lượng, khung 10ms) tại chỗ nối hai cụm; nhấn = độ to (chỉ tính khung có tiếng) của cụm đậm so phần còn lại của câu (bỏ âm tiết cuối) và so 2 âm tiết kề mỗi bên; lên giọng = trung vị F0 âm tiết cuối so 2 âm tiết ngay trước (semitone); STT = faster-whisper {os.environ.get('ASR_MODEL', 'small')} float32 (vi) trên đoạn câu, so với lời (số/từ EN quy về cách đọc).", "",
           "## Tổng", "",
           f"- **Tổng thời lượng giọng: {tot:.2f}s** (giới hạn 58s → {'ĐẠT' if tot <= 58 else f'DƯ {tot - 58:.2f}s'}); loudness {I} LUFS.",
           f"- Nói thuần (tổng các cụm, bỏ lặng hai đầu): {TJ['pure_speech_s']:.2f}s → plan {TJ['plan']} ({'≤' if TJ['pure_speech_s'] <= 47.9 else '>'} 47,9s). Tổng nghỉ đo tại {len(allp)} chỗ ngắt: {pause_sum:.2f}s.",
