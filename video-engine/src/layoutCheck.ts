@@ -18,7 +18,8 @@ for (const f of process.argv.slice(2)) {
     const obs = sceneObstacles(sc.props, chars, fr.groundY, fr.scale);
     const msgs: string[] = [];
     for (const d of sc.dialogue ?? []) {
-      const c = chars.find((x: { id: string }) => x.id === d.speaker); const ax = c ? c.x : 540; const ay = Math.max(c ? c.headY : 672, 420);
+      if (d.bubble === false) continue; // v18: no bubble drawn
+      const c = chars.find((x: { id: string }) => x.id === d.speaker); const ax = c ? c.x : d.anchor ? d.anchor[0] : 540; const ay = Math.max(c ? c.headY : d.anchor ? d.anchor[1] : 672, 420);
       const L = placeBubble(d.text, ax, ay, ax > 540 ? -1 : 1, obs);
       if (L.overlap > 0) msgs.push(`bubble ∩ ${L.hits.join(", ")} (${Math.round(L.overlap)} px²)`);
     }

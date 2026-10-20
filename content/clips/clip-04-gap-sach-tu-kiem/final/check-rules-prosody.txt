@@ -1,0 +1,6 @@
+✔ L-070    delivery plan present (script-v14-delivery.md, script-v16b-delivery.md, script-v16c-delivery.md, script-v18-delivery.md)
+✔ L-070    voice c04v18 plan A: 46.096s total, 18 sentences, 28 marks measured, 0 blocking flags
+✔ E1       mid-phrase pauses — prosody-measure-v18.json: 73 silences (silences), clusters ['ngay thì', 'nhỏ thì', 'kiểm tra lại nhớ', 'cần là sáng', 'gấp sách lại thì'] (script-v18-delivery.md); thresholds provisional
+✔ L-027    voice-only prosody-measure-v18.json: hook ['c01', 'c02'], 3 join(s) all ≤ 0.1s
+
+4 checks · 0 error(s) · 0 warning(s) → PASS

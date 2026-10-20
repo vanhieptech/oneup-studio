@@ -1,1496 +1,2720 @@
 {
-  "transition_sfx": {
-    "part": "whoosh-soft",
-    "scene": "swish"
-  },
-  "pacing": {
-    "lead": 0.15,
-    "lead_tr": 0.05,
-    "tail": 0.25
-  },
-  "id": "clip-04-final",
-  "clip": "clip-04",
-  "title": "Gấp sách tự kiểm (HTB 23.14) - script v14 locked",
-  "week": 1,
+ "id": "clip-04-final",
+ "clip": "clip-04",
+ "title": "Gấp sách tự kiểm (HTB 23.14) - script v18 locked",
+ "week": 1,
+ "theme": "dark",
+ "pillar": "Học đúng cách",
+ "story": "monologue Thầy (L-039); ví dụ 30 từ tiếng Anh (luggage); L-050 nghĩa bằng vật + hành động, không chữ trong hình; visual-plan-v18 (FLUX 6770a3f) + short-factory review",
+ "trend": "supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)",
+ "voice_prefix": "c04v18",
+ "voice_track": "voice-track-c04v18.wav",
+ "mix": "linear",
+ "layout": "tiktok",
+ "length_target": [
+  40,
+  60.5
+ ],
+ "length_note": "L-080 (Hiệp 21/10 00:33): độ dài theo nội dung, không ép 55s; giọng 46.1s + giữ b07 1s + đuôi 0.3s + end card 1.5s",
+ "pacing": {
+  "exact": true,
+  "swish": "beat"
+ },
+ "transition_sfx": {
+  "part": "whoosh-soft",
+  "scene": "swish"
+ },
+ "endcard": {
+  "duration": 1.5,
+  "y": 560,
+  "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+  "sources": "Roediger & Karpicke 2006 · Yang et al. 2021",
+  "credit": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/"
+ },
+ "revisions": [
+  {
+   "v": "v18",
+   "date": "2026-10-21",
+   "note": "Stage 2 render: approved voice c0ec507 (Rule Reviewer PASS), script-v18-LOCKED, visual-plan-v18 + short-factory review; one Remotion part, lines = frame-aligned slices of the approved wav"
+  }
+ ],
+ "cover": {
+  "direction": "a",
   "theme": "dark",
-  "pillar": "Học đúng cách",
-  "story": "monologue Thay (L-039), vi du 30 tu tieng Anh di du lich (minh hoa), L-050 meaning-by-objects zero-doodle, L-059 bang canh 9 cot trong script-v14.md",
-  "trend": "supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)",
-  "voice_prefix": "c04v14b",
-  "revisions": [
-    {
-      "v": "v14",
-      "date": "2026-10-20",
-      "note": "Hiep 'chot' script-v14: loi nguyen van v14 khong sua chu; spec moi c04v14, F5 Thai Son 0.9, Remotion b01-b05/b08-b10 + HyperFrames b06-b07, end card 2s credit CC BY 4.0"
-    }
+  "series": "Học đúng cách",
+  "ep": 4,
+  "hero": [
+   "HỌC THUỘC TỐI QUA?",
+   "SÁNG QUÊN SẠCH!"
   ],
-  "cover": {
-    "direction": "a",
-    "theme": "dark",
-    "series": "Học đúng cách",
-    "ep": 4,
-    "hero": [
-      "HỌC THUỘC TỐI QUA?",
-      "SÁNG QUÊN SẠCH!"
-    ],
-    "accent": 1,
-    "strike": 0,
-    "expression": "despair",
-    "action": "reacting",
-    "emote": "!",
-    "tilt": -5
-  },
-  "hook": {
-    "text": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?",
-    "scenes": [
-      "b01"
-    ],
-    "format": "pain point truc tiep + cau hoi gan pain (Hiep chot nguyen van b01); hinh frame 0: sach gap, giay trang, but dung"
-  },
-  "engagement": [
-    {
-      "type": "relatable-question",
-      "beat": "b01",
-      "text": "Không nhìn sách, bạn có thể nhớ được những gì?"
-    },
-    {
-      "type": "comment-challenge",
-      "beat": "b10",
-      "text": "Comment con số đó nha."
-    },
-    {
-      "type": "loop",
-      "beat": "b10",
-      "text": "Luggage bí sáng hôm trước",
-      "hook_word": "quên sạch"
-    }
+  "accent": 1,
+  "strike": 0,
+  "expression": "despair",
+  "action": "reacting",
+  "emote": "!",
+  "tilt": -5
+ },
+ "hook": {
+  "text": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?",
+  "scenes": [
+   "b01a",
+   "b01b"
   ],
-  "voices": {
-    "Thầy": "F5 · Thái Sơn speed 0.9"
+  "format": "pain point + câu hỏi (Hiệp chốt v18); 2 shot, cắt ở ~1.8s"
+ },
+ "engagement": [
+  {
+   "type": "relatable-question",
+   "beat": "b01b",
+   "text": "bạn còn nhớ được những gì?"
   },
-  "throughline": "Học thuộc tối qua VÀ sáng dậy quên sạch, NHƯNG chỉ nhìn chữ thì quen mắt chưa tự nhớ lần nào, VÌ VẬY gấp sách tự viết lại, chia nhỏ thẻ và sáng hôm sau viết trước khi mở sách",
-  "hook_question": {
-    "asked": "Không nhìn sách, bạn có thể nhớ được những gì?",
-    "answered": "viet lai duoc may tu; luggage bi sang hom truoc, sang hom sau tu viet duoc"
+  {
+   "type": "comment-challenge",
+   "beat": "b08b",
+   "text": "Comment con số nha."
   },
-  "structure": {
-    "hook": [
-      "b01"
-    ],
-    "intro": [
-      "b02",
-      "b03",
-      "b04"
-    ],
-    "body": [
-      "b05",
-      "b06",
-      "b07",
-      "b08"
-    ],
-    "summary": [
-      "b09"
-    ],
-    "cta": [
-      "b10"
-    ]
-  },
-  "hook_alt": {
-    "type": "direct",
-    "text": "(giu nguyen hook Hiep chot o b01, khong dung hook_alt)"
-  },
-  "callbacks": [],
-  "parts": [
-    {
-      "id": "A",
-      "engine": "remotion",
-      "transitionOut": "fade",
-      "scenes": [
-        {
-          "id": "b01",
-          "beat": "clip-04.b01",
-          "part": "hook",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.14,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "idle",
-              "expression": "surprised"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-cut-on-motion: but dung tren giay trang dung nhip cau hoi, sach gap day sang ben (frame 0)",
-            "word": "quên sạch"
-          },
-          "sfx": [
-            {
-              "name": "snap",
-              "atLine": 0,
-              "offset": 0.0,
-              "word": "quên sạch"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed"
-            },
-            {
-              "kind": "sheet",
-              "x": 470,
-              "y": 1250,
-              "s": 0.48,
-              "inkLines": 0
-            },
-            {
-              "kind": "pen",
-              "x": 0,
-              "y": 0,
-              "s": 1,
-              "rot": 38,
-              "len": 200,
-              "keys": [
-                [
-                  0,
-                  430,
-                  1228
-                ],
-                [
-                  0.15,
-                  430,
-                  1228
-                ],
-                [
-                  0.75,
-                  472,
-                  1246
-                ]
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "surprised",
-              "text": "Học thuộc tối qua, sáng dậy **quên sạch**?",
-              "say": "Học thuộc tối qua, sáng dậy quên sạch?",
-              "en": "Memorized last night, forgotten this morning?",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Học thuộc tối qua, sáng dậy {nhấn: quên sạch}?"
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b01a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "**Không nhìn sách**, bạn có thể nhớ được những gì?",
-              "say": "Không nhìn sách, bạn có thể nhớ được những gì?",
-              "en": "Without looking, what can you recall?",
-              "hl": [
-                5
-              ],
-              "phrases": [
-                {
-                  "t": "{nhấn: Không nhìn sách},"
-                },
-                {
-                  "t": "bạn có thể nhớ được những gì?"
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b01b.wav"
-            }
-          ],
-          "stage": {
-            "action": "Sach gap day sang ben, giay trang, but dung ngay frame dau",
-            "react": "sung, dau cu the"
-          },
-          "narration": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?"
-        },
-        {
-          "id": "b02",
-          "beat": "clip-04.b02",
-          "part": "struggle",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "talking",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-cruise: mot trang lat deu lap lai, chong the giu nguyen",
-            "word": "thuộc làu"
-          },
-          "sfx": [
-            {
-              "name": "swish",
-              "atLine": 0,
-              "offset": 0.5,
-              "word": "đọc đi đọc lại"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "open",
-              "flipAt": 1.2
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "pile",
-              "x": 300,
-              "y": 900,
-              "s": 0.55
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "neutral",
-              "text": "Ví dụ học từ tiếng Anh để đi du lịch.",
-              "say": "Ví dụ học từ tiếng Anh để đi du lịch.",
-              "en": "Example: thirty English travel words",
-              "hl": [
-                2
-              ],
-              "phrases": [
-                {
-                  "t": "Ví dụ học từ tiếng Anh để đi du lịch."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b02a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Tối đọc đi đọc lại.",
-              "say": "Tối đọc đi đọc lại.",
-              "en": "Reread them again that night",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "Tối đọc đi đọc lại."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b02b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Ba mươi từ, tới **thuộc làu**.",
-              "say": "Ba mươi từ, tới thuộc làu.",
-              "en": "Until they felt fluent",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Ba mươi từ, tới {nhấn: thuộc làu}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b02c.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Tưởng mai nhớ hết.",
-              "say": "Tưởng mai nhớ hết.",
-              "en": "Thought I'd remember everything tomorrow",
-              "hl": [
-                2
-              ],
-              "phrases": [
-                {
-                  "t": "Tưởng mai nhớ hết."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b02d.wav"
-            }
-          ],
-          "stage": {
-            "action": "Lat trang deu toi khuya, chong 30 the con du",
-            "react": "tu tin sai"
-          },
-          "link": "callback hook: toi hom truoc cua cau quen sach"
-        },
-        {
-          "id": "b03",
-          "beat": "clip-04.b03",
-          "part": "struggle",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "talking",
-              "expression": "focused"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-glide: tay glide doc giay, but dung o cho trang sau 4 vet dong",
-            "word": "Bút dừng"
-          },
-          "sfx": [
-            {
-              "name": "pen",
-              "atLine": 0,
-              "offset": 0.5,
-              "word": "viết lại"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed"
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "sheet",
-              "x": 470,
-              "y": 1250,
-              "s": 0.48,
-              "inkLines": 4,
-              "inkAt": 2.1,
-              "inkStagger": 0.45
-            },
-            {
-              "kind": "pen",
-              "x": 0,
-              "y": 0,
-              "s": 1,
-              "rot": 22,
-              "len": 200,
-              "keys": [
-                [
-                  0,
-                  409,
-                  1206
-                ],
-                [
-                  2.1,
-                  409,
-                  1206
-                ],
-                [
-                  2.48,
-                  514,
-                  1206
-                ],
-                [
-                  2.55,
-                  409,
-                  1231
-                ],
-                [
-                  2.93,
-                  514,
-                  1231
-                ],
-                [
-                  3.0,
-                  409,
-                  1256
-                ],
-                [
-                  3.38,
-                  514,
-                  1256
-                ],
-                [
-                  3.45,
-                  409,
-                  1281
-                ],
-                [
-                  3.83,
-                  514,
-                  1281
-                ],
-                [
-                  4.2,
-                  409,
-                  1306
-                ],
-                [
-                  4.4,
-                  409,
-                  1306
-                ],
-                [
-                  5.05,
-                  434,
-                  1306
-                ]
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Sáng dậy, gấp sách viết lại.",
-              "say": "Sáng dậy, gấp sách viết lại.",
-              "en": "Morning: closed book, wrote back",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Sáng dậy, gấp sách viết lại."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b03a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "airport, hotel, ticket, passport.",
-              "say": "e pọt, hô ten, tích kịt, pát pọt.",
-              "en": "airport, hotel, ticket, passport",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "e pọt,",
-                  "keep": true
-                },
-                {
-                  "t": "hô ten,",
-                  "keep": true
-                },
-                {
-                  "t": "tích kịt,",
-                  "keep": true
-                },
-                {
-                  "t": "pát pọt.",
-                  "keep": true
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b03b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "surprised",
-              "text": "Tới từ thứ năm, hành lý. **Bút dừng**.",
-              "say": "Tới từ thứ năm, hành lý. Bút dừng.",
-              "en": "At fifth word, pen stopped",
-              "hl": [
-                4
-              ],
-              "phrases": [
-                {
-                  "t": "Tới từ thứ năm, hành lý.",
-                  "keep": true
-                },
-                {
-                  "t": "{nhấn: Bút dừng}.",
-                  "keep": true
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b03c.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "sad",
-              "text": "Không nhớ từ tiếng Anh.",
-              "say": "Không nhớ từ tiếng Anh.",
-              "en": "Couldn't recall English word",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Không nhớ từ tiếng Anh."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b03d.wav"
-            }
-          ],
-          "stage": {
-            "action": "Viet 4 vet dong roi but dung o cho trang",
-            "react": "sung, khung that"
-          },
-          "link": "sang day cua toi b02, phep thu gap sach"
-        },
-        {
-          "id": "b04",
-          "beat": "clip-04.b04",
-          "part": "struggle",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "idle",
-              "expression": "confused"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-cruise cham: sach VAN GAP, but nam yen canh giay trang",
-            "word": "Giấy trắng"
-          },
-          "sfx": [
-            {
-              "name": "swish",
-              "atLine": 0,
-              "offset": 0.5,
-              "word": "quen mắt"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed"
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "sheet",
-              "x": 470,
-              "y": 1250,
-              "s": 0.48,
-              "inkLines": 4,
-              "inkAt": -3
-            },
-            {
-              "kind": "pen",
-              "x": 0,
-              "y": 0,
-              "s": 1,
-              "rot": 22,
-              "len": 200,
-              "keys": [
-                [
-                  0,
-                  434,
-                  1306
-                ]
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "confused",
-              "text": "Mình chột dạ. Hay tối qua chỉ nhìn chữ đến **quen mắt**?",
-              "say": "Mình chột dạ. Hay tối qua chỉ nhìn chữ đến quen mắt?",
-              "en": "Had I only looked until familiar?",
-              "hl": [
-                5
-              ],
-              "phrases": [
-                {
-                  "t": "Mình chột dạ.",
-                  "keep": true
-                },
-                {
-                  "t": "Hay tối qua chỉ nhìn chữ đến {nhấn: quen mắt}?",
-                  "keep": true
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b04a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "sad",
-              "text": "**Giấy trắng** sau passport.",
-              "say": "Giấy trắng sau pát pọt.",
-              "en": "Blank after passport on paper",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "{nhấn: Giấy trắng} sau passport."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b04b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "sad",
-              "text": "Dừng ở đó.",
-              "say": "Dừng ở đó.",
-              "en": "I stopped right there",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Dừng ở đó."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b04c.wav"
-            }
-          ],
-          "stage": {
-            "action": "But nam yen canh giay trang, sach van gap",
-            "react": "chot da, tu hoi"
-          },
-          "link": "chot da ngay tai cho trang cua b03"
-        },
-        {
-          "id": "b05",
-          "beat": "clip-04.b05",
-          "part": "payoff",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "talking",
-              "expression": "focused"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-snap-settle: sach MO dung mot lan o cho bi roi gap lai, tay settle tren giay",
-            "word": "mở sách"
-          },
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 0.3,
-              "word": "mở sách"
-            },
-            {
-              "name": "pen",
-              "atLine": 0,
-              "offset": 2.0,
-              "word": "viết tiếp"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed",
-              "openAt": 0.8
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "sheet",
-              "x": 470,
-              "y": 1250,
-              "s": 0.48,
-              "inkLines": 4,
-              "inkAt": -3
-            },
-            {
-              "kind": "pen",
-              "x": 0,
-              "y": 0,
-              "s": 1,
-              "rot": 22,
-              "len": 200,
-              "keys": [
-                [
-                  0,
-                  434,
-                  1306
-                ]
-              ]
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Viết không ra, mình **mở sách**.",
-              "say": "Viết không ra, mình mở sách.",
-              "en": "When stuck, open book",
-              "hl": [
-                2
-              ],
-              "phrases": [
-                {
-                  "t": "Viết không ra, mình {nhấn: mở sách}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b05a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Xem đúng chỗ bí: **luggage**.",
-              "say": "Xem đúng chỗ bí: lắc ghịt.",
-              "en": "Check stuck spot: luggage",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Xem đúng chỗ bí: {nhấn: lắc ghịt}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b05b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Gấp lại, viết tiếp.",
-              "say": "Gấp lại, viết tiếp.",
-              "en": "Close book, keep writing",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Gấp lại, viết tiếp."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b05c.wav"
-            }
-          ],
-          "stage": {
-            "action": "Mo sach dung cho bi mot lan, gap lai viet tiep",
-            "react": "quyet tam nhe"
-          },
-          "link": "xu ly dung cho bi vua dung o b04"
-        }
-      ]
-    },
-    {
-      "id": "E",
-      "engine": "hyperframes",
-      "dir": "explainer",
-      "transitionOut": "fade",
-      "sections": [
-        {
-          "id": "e06",
-          "beat": "clip-04.b06",
-          "part": "evidence",
-          "motion": "tdev-stagger",
-          "fx": {
-            "visual": "tdev-stagger: 2 chong bai kiem khong chu + 2 thanh diem khong chu, thanh co kiem nho cao hon mot doan vua",
-            "word": "222 nghiên cứu"
-          },
-          "hits": [
-            {
-              "id": "papers",
-              "f": 0.15,
-              "sfx": "ding",
-              "word": "Yang"
-            },
-            {
-              "id": "bars",
-              "f": 0.55,
-              "sfx": "rise",
-              "word": "cao hơn"
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Yang gộp **222 nghiên cứu**.",
-              "say": "Giang gộp 222 nghiên cứu.",
-              "en": "Yang pooled 222 studies",
-              "hl": [
-                2
-              ],
-              "phrases": [
-                {
-                  "t": "Giang gộp {nhấn: hai trăm hai mươi hai nghiên cứu}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b06a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Hơn 48 ngàn học sinh.",
-              "say": "Hơn 48 ngàn học sinh.",
-              "en": "Over 48,000 students total",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Hơn bốn mươi tám ngàn học sinh."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b06b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Lớp có kiểm nhỏ.",
-              "say": "Lớp có kiểm nhỏ.",
-              "en": "Small quizzes in class",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Lớp có kiểm nhỏ."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b06c.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Điểm cao hơn mức vừa.",
-              "say": "Điểm cao hơn mức vừa.",
-              "en": "Modestly higher scores overall",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Điểm cao hơn mức vừa."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b06d.wav"
-            }
-          ],
-          "stage": {
-            "action": "2 chong bai kiem + thanh diem tren cung ban hoc",
-            "react": "chac chan, muc vua"
-          },
-          "link": "bang chung cho viec vua lam o b05"
-        },
-        {
-          "id": "e07",
-          "beat": "clip-04.b07",
-          "part": "evidence",
-          "motion": "tdev-stagger",
-          "fx": {
-            "visual": "tdev-stagger: 10 the trang thanh hang, bo tu kiem chong cao, chong doc lai/gach chan o thap van dung yen",
-            "word": "nhóm cao nhất"
-          },
-          "hits": [
-            {
-              "id": "cards",
-              "f": 0.2,
-              "sfx": "tick",
-              "word": "mười cách"
-            },
-            {
-              "id": "high",
-              "f": 0.5,
-              "sfx": "ding",
-              "word": "cao nhất"
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Dunlosky xếp mười cách.",
-              "say": "Đun lốt ki xếp mười cách.",
-              "en": "Dunlosky ranked ten methods",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Đun lốt ki xếp mười cách."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b07a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Tự kiểm nằm **nhóm cao nhất**.",
-              "say": "Tự kiểm nằm nhóm cao nhất.",
-              "en": "Self-testing in highest group",
-              "hl": [
-                2
-              ],
-              "phrases": [
-                {
-                  "t": "Tự kiểm nằm {nhấn: nhóm cao nhất}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b07b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Đọc lại, gạch chân nằm nhóm thấp nhất.",
-              "say": "Đọc lại, gạch chân nằm nhóm thấp nhất.",
-              "en": "Rereading, highlighting in lowest group",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Đọc lại, gạch chân nằm nhóm thấp nhất."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b07c.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "neutral",
-              "text": "Vẫn có ích. Tác dụng hẹp.",
-              "say": "Vẫn có ích. Tác dụng hẹp.",
-              "en": "Still helps, but narrowly",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Vẫn có ích.",
-                  "keep": true
-                },
-                {
-                  "t": "Tác dụng hẹp.",
-                  "keep": true
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b07d.wav"
-            }
-          ],
-          "stage": {
-            "action": "10 the trang, chong cao/thap canh sach giay",
-            "react": "ro rang, tran an"
-          },
-          "link": "xep hang bo sung cho bang chung b06"
-        }
-      ]
-    },
-    {
-      "id": "B",
-      "engine": "remotion",
-      "scenes": [
-        {
-          "id": "b08",
-          "beat": "clip-04.b08",
-          "part": "payoff",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "standing",
-              "action": "talking",
-              "expression": "focused"
-            }
-          ],
-          "fx": {
-            "visual": "tdev-stagger: pile tach 3 bundles, om chong dau viet lai",
-            "word": "ba chồng"
-          },
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 0.4,
-              "word": "ba chồng"
-            },
-            {
-              "name": "pen",
-              "atLine": 0,
-              "offset": 2.5,
-              "word": "viết lại"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed"
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "bundles",
-              "x": 255,
-              "y": 990,
-              "s": 0.5,
-              "count": 3
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Mình chia ba mươi thẻ thành **ba chồng**.",
-              "say": "Mình chia ba mươi thẻ thành ba chồng.",
-              "en": "Thirty cards in three piles",
-              "hl": [
-                3
-              ],
-              "phrases": [
-                {
-                  "t": "Mình chia ba mươi thẻ thành {nhấn: ba chồng}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b08a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Mỗi chồng mười thẻ.",
-              "say": "Mỗi chồng mười thẻ.",
-              "en": "Ten cards in each pile",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "Mỗi chồng mười thẻ."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b08b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Học xong chồng đầu.",
-              "say": "Học xong chồng đầu.",
-              "en": "Finish first pile, close book",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "Học xong chồng đầu."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b08c.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Gấp sách, viết lại đúng chồng đó.",
-              "say": "Gấp sách, viết lại đúng chồng đó.",
-              "en": "Write that pile back",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "Gấp sách, viết lại đúng chồng đó."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b08d.wav"
-            }
-          ],
-          "stage": {
-            "action": "Pile tach 3 bundles, om chong dau",
-            "react": "nhe dau, viec nho lai"
-          },
-          "link": "ap cach tu kiem vao chong the cua b02"
-        },
-        {
-          "id": "b09",
-          "beat": "clip-04.b09",
-          "part": "payoff",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "talking",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-soft-land: quay ve giay cu, them dung 1 vet dong moi o cho trang",
-            "word": "luggage"
-          },
-          "sfx": [
-            {
-              "name": "swish",
-              "atLine": 0,
-              "offset": 0.2,
-              "word": "Sáng hôm sau"
-            },
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 3.0,
-              "word": "luggage"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed"
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "sheet",
-              "x": 470,
-              "y": 1250,
-              "s": 0.48,
-              "inkLines": 5,
-              "inkAt": -1.4,
-              "inkStagger": 0.9
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Sáng hôm sau, quay lại giấy đó.",
-              "say": "Sáng hôm sau, quay lại giấy đó.",
-              "en": "Next morning, same paper again",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "Sáng hôm sau, quay lại giấy đó."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b09a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Sách vẫn gấp. **Viết trước**.",
-              "say": "Sách vẫn gấp. Viết trước.",
-              "en": "Book still closed, wrote first",
-              "hl": [
-                2
-              ],
-              "phrases": [
-                {
-                  "t": "Sách vẫn gấp.",
-                  "keep": true
-                },
-                {
-                  "t": "{nhấn: Viết trước}.",
-                  "keep": true
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b09b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Lần này viết thêm được **luggage**.",
-              "say": "Lần này viết thêm được lắc ghịt.",
-              "en": "Added luggage this time",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Lần này viết thêm được {nhấn: lắc ghịt}."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b09c.wav"
-            }
-          ],
-          "stage": {
-            "action": "Cung to giay cu, them 1 vet dong o cho trang",
-            "react": "am, thang nho"
-          },
-          "link": "sang hom sau quay lai dung to giay b03"
-        },
-        {
-          "id": "b10",
-          "beat": "clip-04.b10",
-          "part": "cta",
-          "role": "Thầy",
-          "background": "desk",
-          "framing": "medium",
-          "push": 0.05,
-          "transition": "cut",
-          "cast": [
-            {
-              "id": "hiep",
-              "x": 0.72,
-              "facing": "left",
-              "pose": "sitting",
-              "action": "talking",
-              "expression": "happy"
-            }
-          ],
-          "fx": {
-            "visual": "mmx-soft-land: giu khung giay da co them dong, chi nhe xuong duoi",
-            "word": "Luggage"
-          },
-          "sfx": [
-            {
-              "name": "pop",
-              "atLine": 0,
-              "offset": 0.2,
-              "word": "Luggage"
-            },
-            {
-              "name": "tick",
-              "atLine": 0,
-              "offset": 3.5,
-              "word": "con số"
-            }
-          ],
-          "props": [
-            {
-              "kind": "book",
-              "x": 300,
-              "y": 1020,
-              "s": 0.85,
-              "state": "closed"
-            },
-            {
-              "kind": "sheet",
-              "x": 185,
-              "y": 620,
-              "s": 0.3,
-              "rot": 7,
-              "inkLines": 3,
-              "inkAt": 0
-            },
-            {
-              "kind": "sheet",
-              "x": 470,
-              "y": 1250,
-              "s": 0.48,
-              "inkLines": 5,
-              "inkAt": 0
-            }
-          ],
-          "lines": [
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "**Luggage** bí sáng hôm trước.",
-              "say": "Luggage bí sáng hôm trước.",
-              "en": "Luggage stuck previous morning",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "{nhấn: Lắc ghịt} bí sáng hôm trước."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b10a.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Sáng hôm sau tự viết được,",
-              "say": "Sáng hôm sau tự viết được,",
-              "en": "Next morning wrote it myself",
-              "hl": [
-                4
-              ],
-              "phrases": [
-                {
-                  "t": "Sáng hôm sau tự viết được,"
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b10b.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "không cần sách.",
-              "say": "không cần sách.",
-              "en": "Without opening the book",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "không cần sách."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b10c.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "focused",
-              "text": "Bạn viết lại được mấy từ?",
-              "say": "Bạn viết lại được mấy từ?",
-              "en": "How many words for you?",
-              "hl": [
-                1
-              ],
-              "phrases": [
-                {
-                  "t": "Bạn viết lại được mấy từ?"
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b10d.wav"
-            },
-            {
-              "speaker": "hiep",
-              "emotion": "happy",
-              "text": "Comment con số đó nha.",
-              "say": "Com men con số đó nha.",
-              "en": "Comment that number below",
-              "hl": [
-                0
-              ],
-              "phrases": [
-                {
-                  "t": "Com men con số đó nha."
-                }
-              ],
-              "voice_role": "Thầy",
-              "voice_file": "voice/c04v14b-b10e.wav"
-            }
-          ],
-          "stage": {
-            "action": "Nhin camera, chi nhe xuong duoi",
-            "react": "am, dut"
-          },
-          "link": "payoff dung tu luggage o b05/b09, callback cau hoi hook"
-        }
-      ]
-    }
+  {
+   "type": "loop",
+   "beat": "b08a",
+   "text": "thử gấp sách lại",
+   "hook_word": "sách"
+  }
+ ],
+ "voices": {
+  "Thầy": "F5 · Thái Sơn speed 1.0 (approved voice-only-c04v18.wav)"
+ },
+ "throughline": "Học thuộc tối qua VÀ sáng dậy quên sạch, NHƯNG đọc lại chỉ thắng lúc kiểm tra ngay, còn hai ngày sau nhóm tự kiểm tra nhớ hơn, VÌ VẬY chia 30 từ thành 3 phần và gấp sách viết lại từng phần",
+ "hook_question": {
+  "asked": "Giả sử bây giờ không nhìn sách, bạn còn nhớ được những gì?",
+  "answered": "b07: sáng hôm sau sách vẫn gấp, tự viết được luggage"
+ },
+ "structure": {
+  "hook": [
+   "b01a",
+   "b01b"
+  ],
+  "intro": [
+   "b02a",
+   "b02b",
+   "b02c",
+   "b03a",
+   "b03b",
+   "b03c",
+   "b04"
+  ],
+  "body": [
+   "b05a",
+   "b05b",
+   "b05c",
+   "b06a",
+   "b06b"
+  ],
+  "summary": [
+   "b07a",
+   "b07b"
+  ],
+  "cta": [
+   "b08a",
+   "b08b"
   ]
+ },
+ "hook_alt": {
+  "type": "direct",
+  "text": "(giữ nguyên hook Hiệp chốt, không dùng hook_alt)"
+ },
+ "callbacks": [],
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "scenes": [
+    {
+     "id": "b01a",
+     "beat": "clip-04.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "closeup",
+     "push": 0.08,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-cut-on-motion: pen drops onto the blank sheet + snap; last night's faint rows evaporate at 'quên sạch'; window moon→sun",
+      "word": "quên sạch"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.34,
+       "word": "Học thuộc"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ],
+        [
+         0.9,
+         "day"
+        ]
+       ],
+       "wx": 70,
+       "wy": 560,
+       "ww": 220,
+       "wh": 200
+      },
+      {
+       "kind": "tome",
+       "x": 200,
+       "y": 1405,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 600,
+       "y": 1070,
+       "s": 1.1,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ],
+        [
+         2,
+         -1
+        ]
+       ],
+       "dimRows": true,
+       "fadeAt": 1.337
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 28,
+       "len": 230,
+       "keys": [
+        [
+         0,
+         760,
+         520
+        ],
+        [
+         0.08,
+         760,
+         520
+        ],
+        [
+         0.34,
+         772,
+         1300
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "Học thuộc tối qua,",
+       "say": "Học thuộc tối qua,",
+       "en": "Memorized last night,",
+       "hl": [
+        0
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c01a.wav",
+       "cap": [
+        0.0,
+        0.9
+       ],
+       "chunk": "c01"
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "sáng dậy **quên sạch**?",
+       "say": "sáng dậy quên sạch?",
+       "en": "gone by morning?",
+       "hl": [
+        0
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c01b.wav",
+       "cap": [
+        0.0,
+        0.867
+       ],
+       "chunk": "c01",
+       "phrases": [
+        {
+         "t": "sáng dậy {nhấn: quên sạch}?"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Pen drops on a blank 10-row sheet; faint rows fade; moon in the window becomes a rising sun",
+      "react": "shock, direct pain"
+     },
+     "dur": 1.7667,
+     "narration": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?"
+    },
+    {
+     "id": "b01b",
+     "beat": "clip-04.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "reacting",
+       "expression": "surprised"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-snap: closed book slides away from the blank sheet at 'không nhìn sách', face turns to the camera asking",
+      "word": "không nhìn sách"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.772,
+       "word": "không"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 205,
+       "y": 1300,
+       "s": 0.55,
+       "closedDy": 160,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ],
+       "mv": [
+        [
+         0,
+         205,
+         1300
+        ],
+        [
+         0.772,
+         205,
+         1300
+        ],
+        [
+         1.1219999999999999,
+         140,
+         1312
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 480,
+       "y": 1265,
+       "s": 0.45,
+       "rows": []
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 8,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         585,
+         1420
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Giả sử bây giờ **không nhìn sách**, bạn còn nhớ được những gì?",
+       "say": "Giả sử bây giờ không nhìn sách, bạn còn nhớ được những gì?",
+       "en": "Book closed: what do you still remember?",
+       "hl": [
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c02.wav",
+       "cap": [
+        0.003,
+        2.967
+       ],
+       "chunk": "c02",
+       "phrases": [
+        {
+         "t": "Giả sử bây giờ {nhấn: không nhìn sách}, bạn còn nhớ được những gì?"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "confused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Book pushed aside, blank sheet in front, morning sun in window",
+      "react": "unsure, asking the viewer"
+     },
+     "dur": 2.9667,
+     "link": "hook question right after the pain line (same morning)"
+    },
+    {
+     "id": "b02a",
+     "beat": "clip-04.b02",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cruise: at night (moon) the open book flips back and forth twice, confident nod",
+      "word": "thuộc làu"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 1.496,
+       "word": "đọc"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 205,
+       "y": 1300,
+       "s": 0.55,
+       "closedDy": 160,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ],
+       "flips": [
+        1.516,
+        1.976
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Mình học **ba mươi từ** tiếng Anh, đọc đi đọc lại tới thuộc làu.",
+       "say": "Mình học ba mươi từ tiếng Anh, đọc đi đọc lại tới thuộc làu.",
+       "en": "I reread thirty English words until fluent",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c03.wav",
+       "cap": [
+        0.137,
+        3.233
+       ],
+       "chunk": "c03",
+       "phrases": [
+        {
+         "t": "Mình học {nhấn: ba mươi từ} tiếng Anh, đọc đi đọc lại tới thuộc làu."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Rereads the open book at night, pages flip twice",
+      "react": "confident"
+     },
+     "dur": 3.2333,
+     "link": "the hook's 'last night' told as my own example"
+    },
+    {
+     "id": "b02b",
+     "beat": "clip-04.b02",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "typing",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cut-on-motion: sun rises, book snaps shut at 'gấp sách', pen writes four rows on the sheet",
+      "word": "viết thử"
+     },
+     "sfx": [
+      {
+       "name": "pen",
+       "atLine": 0,
+       "offset": 1.098,
+       "word": "viết"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ],
+        [
+         0.05,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 205,
+       "y": 1300,
+       "s": 0.55,
+       "closedDy": 160,
+       "keys": [
+        [
+         0,
+         "open"
+        ],
+        [
+         0.698,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 480,
+       "y": 1265,
+       "s": 0.45,
+       "rows": [
+        [
+         0,
+         1.098
+        ],
+        [
+         1,
+         1.268
+        ],
+        [
+         2,
+         1.4380000000000002
+        ],
+        [
+         3,
+         1.608
+        ]
+       ]
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 20,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         585,
+         1420
+        ],
+        [
+         0.8480000000000001,
+         585,
+         1420
+        ],
+        [
+         1.098,
+         413,
+         1160.6
+        ],
+        [
+         1.248,
+         540,
+         1160.6
+        ],
+        [
+         1.268,
+         413,
+         1183.1
+        ],
+        [
+         1.418,
+         540,
+         1183.1
+        ],
+        [
+         1.438,
+         413,
+         1205.6
+        ],
+        [
+         1.588,
+         540,
+         1205.6
+        ],
+        [
+         1.608,
+         413,
+         1228.1
+        ],
+        [
+         1.758,
+         540,
+         1228.1
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Sáng dậy mình gấp sách viết thử,",
+       "say": "Sáng dậy mình gấp sách viết thử,",
+       "en": "Next morning, book closed, I wrote",
+       "hl": [
+        3
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c04.wav",
+       "cap": [
+        0.113,
+        1.767
+       ],
+       "chunk": "c04",
+       "phrases": [
+        {
+         "t": "Sáng dậy mình gấp sách viết thử,"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Closes the book and writes from memory",
+      "react": "focused"
+     },
+     "dur": 1.7667,
+     "link": "next morning of the same night, the closed-book test"
+    },
+    {
+     "id": "b02c",
+     "beat": "clip-04.b02",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "closeup",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-snap-settle: close-up, pen stops dead on empty row 5; a face-down card with a faded suitcase shadow appears, shakes at 'bí'",
+      "word": "bí"
+     },
+     "sfx": [
+      {
+       "name": "pen",
+       "atLine": 0,
+       "offset": 0.05,
+       "word": "tới"
+      },
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 1.636,
+       "word": "bí"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 70,
+       "wy": 560,
+       "ww": 220,
+       "wh": 200
+      },
+      {
+       "kind": "tome",
+       "x": 200,
+       "y": 1405,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 600,
+       "y": 1070,
+       "s": 1.1,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ],
+        [
+         2,
+         -1
+        ],
+        [
+         3,
+         -1
+        ]
+       ],
+       "focus": {
+        "row": 4,
+        "at": 0.356
+       }
+      },
+      {
+       "kind": "card",
+       "x": 905,
+       "y": 1034.8,
+       "s": 0.6,
+       "shadow": 0.18,
+       "at": 0.916,
+       "shakeAt": 1.636
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 26,
+       "len": 230,
+       "keys": [
+        [
+         0,
+         760,
+         999.8
+        ],
+        [
+         0.356,
+         445,
+         1038.8
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "tới từ thứ năm là hành lý thì mình **bí**.",
+       "say": "tới từ thứ năm là hành lý thì mình bí.",
+       "en": "Stuck at word five",
+       "hl": [
+        0
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c05.wav",
+       "cap": [
+        0.037,
+        2.167
+       ],
+       "chunk": "c05",
+       "phrases": [
+        {
+         "t": "tới từ thứ năm là hành lý thì mình {nhấn: bí}."
+        }
+       ],
+       "anchor": [
+        600,
+        560
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Pen stops at row 5; face-down card shows only a faint suitcase shadow",
+      "react": "stuck, deflated"
+     },
+     "dur": 2.1667,
+     "link": "the exact word where that morning test broke"
+    },
+    {
+     "id": "b03a",
+     "beat": "clip-04.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "tdev-split: frame splits into two desk halves, reread book left vs closed-book sheet right; study credit tag",
+      "word": "2006"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.778,
+       "word": "năm"
+      }
+     ],
+     "props": [
+      {
+       "kind": "halves",
+       "x": 0,
+       "y": 0,
+       "top": 1180
+      },
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 390,
+       "wy": 210,
+       "ww": 300,
+       "wh": 230
+      },
+      {
+       "kind": "tome",
+       "x": 290,
+       "y": 760,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ],
+       "at": 0
+      },
+      {
+       "kind": "paper",
+       "x": 790,
+       "y": 760,
+       "s": 0.44,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ]
+       ],
+       "tilt": 3
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 30,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         905,
+         840
+        ]
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "Roediger & Karpicke 2006",
+       "x": 540,
+       "y": 1330,
+       "at": 0.378
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Một thí nghiệm năm 2006 thấy,",
+       "say": "Một thí nghiệm năm 2006 thấy,",
+       "en": "A 2006 study found:",
+       "hl": [
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c06.wav",
+       "cap": [
+        0.16,
+        2.1
+       ],
+       "chunk": "c06",
+       "phrases": [
+        {
+         "t": "Một thí nghiệm năm 2006 thấy,"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Two desks side by side: open book vs closed-book sheet",
+      "react": "curious"
+     },
+     "dur": 2.1,
+     "link": "why the morning test broke: a 2006 experiment"
+    },
+    {
+     "id": "b03b",
+     "beat": "clip-04.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "tdev-stagger: paper-stack bars rise, reread stack taller right after study, thumbs-up pops at 'tốt hơn'",
+      "word": "kiểm tra ngay"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.793,
+       "word": "tốt"
+      }
+     ],
+     "props": [
+      {
+       "kind": "halves",
+       "x": 0,
+       "y": 0,
+       "top": 1180
+      },
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 390,
+       "wy": 210,
+       "ww": 300,
+       "wh": 230
+      },
+      {
+       "kind": "tome",
+       "x": 290,
+       "y": 760,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 790,
+       "y": 760,
+       "s": 0.44,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ]
+       ],
+       "tilt": 3
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 30,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         905,
+         840
+        ]
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "Roediger & Karpicke 2006",
+       "x": 540,
+       "y": 1330,
+       "at": -1
+      },
+      {
+       "kind": "stack",
+       "x": 290,
+       "y": 1190,
+       "keys": [
+        [
+         0,
+         4
+        ],
+        [
+         1.793,
+         7
+        ]
+       ],
+       "seed": 1,
+       "at": 0
+      },
+      {
+       "kind": "stack",
+       "x": 790,
+       "y": 1190,
+       "keys": [
+        [
+         0,
+         4
+        ],
+        [
+         1.793,
+         5
+        ]
+       ],
+       "seed": 2,
+       "at": 0
+      },
+      {
+       "kind": "icon",
+       "name": "thumbs",
+       "x": 440,
+       "y": 980,
+       "size": 96,
+       "at": 1.893,
+       "plate": true
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "nếu **kiểm tra ngay** thì nhóm đọc lại làm tốt hơn.",
+       "say": "nếu kiểm tra ngay thì nhóm đọc lại làm tốt hơn.",
+       "en": "Tested at once, rereaders did better",
+       "hl": [
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c07.wav",
+       "cap": [
+        0.041,
+        2.533
+       ],
+       "chunk": "c07",
+       "phrases": [
+        {
+         "t": "nếu {nhấn: kiểm tra ngay} thì nhóm đọc lại làm tốt hơn."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Stacks of remembered sheets: reread side taller when tested at once",
+      "react": "fair, admits rereading helps first"
+     },
+     "dur": 2.5333,
+     "link": "the experiment's first result"
+    },
+    {
+     "id": "b03c",
+     "beat": "clip-04.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-snap-settle: sun rises twice in the window, thumbs-up droops at 'hai ngày sau', stacks swap with snap-settle at 'hơn hẳn'",
+      "word": "hai ngày sau"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 2.108,
+       "word": "hơn"
+      }
+     ],
+     "props": [
+      {
+       "kind": "halves",
+       "x": 0,
+       "y": 0,
+       "top": 1180
+      },
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ],
+        [
+         0.308,
+         "night"
+        ],
+        [
+         0.758,
+         "day"
+        ],
+        [
+         1.208,
+         "night"
+        ],
+        [
+         1.6580000000000001,
+         "day"
+        ]
+       ],
+       "wx": 390,
+       "wy": 210,
+       "ww": 300,
+       "wh": 230
+      },
+      {
+       "kind": "tome",
+       "x": 290,
+       "y": 760,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 790,
+       "y": 760,
+       "s": 0.44,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ]
+       ],
+       "tilt": 3
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 30,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         905,
+         840
+        ]
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "Roediger & Karpicke 2006",
+       "x": 540,
+       "y": 1330,
+       "at": -1
+      },
+      {
+       "kind": "stack",
+       "x": 290,
+       "y": 1190,
+       "keys": [
+        [
+         0,
+         7
+        ],
+        [
+         2.208,
+         3
+        ]
+       ],
+       "seed": 1
+      },
+      {
+       "kind": "stack",
+       "x": 790,
+       "y": 1190,
+       "keys": [
+        [
+         0,
+         5
+        ],
+        [
+         2.208,
+         8
+        ]
+       ],
+       "seed": 2
+      },
+      {
+       "kind": "icon",
+       "name": "thumbs",
+       "x": 440,
+       "y": 980,
+       "size": 96,
+       "plate": true,
+       "droopAt": 0.308
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "Nhưng **hai ngày sau**, nhóm tự kiểm tra lại nhớ hơn hẳn.",
+       "say": "Nhưng hai ngày sau, nhóm tự kiểm tra lại nhớ hơn hẳn.",
+       "en": "Two days later, self-testing remembered more",
+       "hl": [
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c08.wav",
+       "cap": [
+        0.128,
+        2.933
+       ],
+       "chunk": "c08",
+       "phrases": [
+        {
+         "t": "Nhưng {nhấn: hai ngày sau}, nhóm tự kiểm tra lại nhớ hơn hẳn."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Two sunrises; reread stack shrinks, self-test stack grows past it",
+      "react": "surprised reversal"
+     },
+     "dur": 2.9333,
+     "link": "but two days later the result flips"
+    },
+    {
+     "id": "b04",
+     "beat": "clip-04.b04",
+     "part": "intro",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "closeup",
+     "push": 0.18,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-push-in: slow push into empty row 5 of the same sheet; sun rises; dotted suitcase outline appears at 'viết ra được'",
+      "word": "sáng hôm sau"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 2.512,
+       "word": "viết"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ],
+        [
+         0.712,
+         "day"
+        ]
+       ],
+       "wx": 70,
+       "wy": 560,
+       "ww": 220,
+       "wh": 200
+      },
+      {
+       "kind": "tome",
+       "x": 200,
+       "y": 1405,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 600,
+       "y": 1070,
+       "s": 1.1,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ],
+        [
+         2,
+         -1
+        ],
+        [
+         3,
+         -1
+        ]
+       ],
+       "focus": {
+        "row": 4,
+        "at": 0.712
+       },
+       "ghost": {
+        "row": 4,
+        "at": 2.512
+       }
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 28,
+       "len": 230,
+       "keys": [
+        [
+         0,
+         790,
+         1330
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Mình cần là **sáng hôm sau**, gấp sách lại mình vẫn viết ra được.",
+       "say": "Mình cần là sáng hôm sau, gấp sách lại mình vẫn viết ra được.",
+       "en": "Goal: book closed next morning, still recall",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c09.wav",
+       "cap": [
+        0.134,
+        3.3
+       ],
+       "chunk": "c09",
+       "phrases": [
+        {
+         "t": "Mình cần là {nhấn: sáng hôm sau}, gấp sách lại mình vẫn viết ra được."
+        }
+       ],
+       "anchor": [
+        600,
+        560
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Same sheet, empty row 5 gets a dotted suitcase outline",
+      "react": "calm, clear goal"
+     },
+     "dur": 3.3,
+     "link": "goal set right on the empty row that broke"
+    },
+    {
+     "id": "b05a",
+     "beat": "clip-04.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "tdev-stagger: 30 blank cards spill as one pile, then pop into three neat stacks of ten (no bow)",
+      "word": "ba phần"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.385,
+       "word": "ba"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 140,
+       "y": 1362,
+       "s": 0.45,
+       "closedDy": 84,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "deck",
+       "x": 390,
+       "y": 1350,
+       "s": 0.5,
+       "spillAt": 0.705,
+       "splitAt": 1.385
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Nên mình chia ba mươi từ thành **ba phần**, mỗi phần mười từ.",
+       "say": "Nên mình chia ba mươi từ thành ba phần, mỗi phần mười từ.",
+       "en": "Thirty words, three parts of ten",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c10.wav",
+       "cap": [
+        0.154,
+        3.133
+       ],
+       "chunk": "c10",
+       "phrases": [
+        {
+         "t": "Nên mình chia ba mươi từ thành {nhấn: ba phần}, mỗi phần mười từ."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Splits 30 blank cards into 3 stacks",
+      "react": "methodical"
+     },
+     "dur": 3.1333,
+     "link": "so the fix starts from the same 30 words"
+    },
+    {
+     "id": "b05b",
+     "beat": "clip-04.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "typing",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-snap: book snaps shut at 'gấp sách', pen writes the part on the sheet, tick on the first stack at 'phần đó'",
+      "word": "gấp sách"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 1.245,
+       "word": "gấp"
+      },
+      {
+       "name": "pen",
+       "atLine": 0,
+       "offset": 1.645,
+       "word": "viết"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 140,
+       "y": 1362,
+       "s": 0.45,
+       "closedDy": 84,
+       "keys": [
+        [
+         0,
+         "open"
+        ],
+        [
+         1.245,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "deck",
+       "x": 390,
+       "y": 1350,
+       "s": 0.5,
+       "spillAt": -5,
+       "splitAt": -2,
+       "tickAt": 2.285
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 18,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         560,
+         1420
+        ],
+        [
+         1.645,
+         238,
+         1300
+        ],
+        [
+         1.845,
+         292,
+         1300
+        ],
+        [
+         1.945,
+         238,
+         1306
+        ],
+        [
+         2.145,
+         292,
+         1306
+        ],
+        [
+         2.245,
+         238,
+         1312
+        ],
+        [
+         2.4450000000000003,
+         290,
+         1312
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Học hết phần nào, mình **gấp sách** viết lại phần đó,",
+       "say": "Học hết phần nào, mình gấp sách viết lại phần đó,",
+       "en": "Finish a part, close the book, write",
+       "hl": [
+        3
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c11.wav",
+       "cap": [
+        0.111,
+        2.667
+       ],
+       "chunk": "c11",
+       "phrases": [
+        {
+         "t": "Học hết phần nào, mình {nhấn: gấp sách} viết lại phần đó,"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Closes the book, writes one stack from memory, ticks it",
+      "react": "steady"
+     },
+     "dur": 2.6667,
+     "link": "what to do with each stack"
+    },
+    {
+     "id": "b05c",
+     "beat": "clip-04.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "confused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-snap-settle: book opens once at 'mở sách' for a glance, then shuts again",
+      "word": "mở sách"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.935,
+       "word": "mở"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 140,
+       "y": 1362,
+       "s": 0.45,
+       "closedDy": 84,
+       "keys": [
+        [
+         0,
+         "closed"
+        ],
+        [
+         0.935,
+         "open"
+        ],
+        [
+         1.685,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "deck",
+       "x": 390,
+       "y": 1350,
+       "s": 0.5,
+       "spillAt": -5,
+       "splitAt": -2,
+       "tickAt": -1
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 12,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         560,
+         1420
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "chỗ nào bí mình mới **mở sách**.",
+       "say": "chỗ nào bí mình mới mở sách.",
+       "en": "Stuck? Only then open the book",
+       "hl": [
+        3
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c12.wav",
+       "cap": [
+        0.054,
+        1.533
+       ],
+       "chunk": "c12",
+       "phrases": [
+        {
+         "t": "chỗ nào bí mình mới {nhấn: mở sách}."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "confused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Opens the book once only where stuck, closes it again",
+      "react": "small doubt, then sure"
+     },
+     "dur": 1.5333,
+     "link": "the only moment the book opens"
+    },
+    {
+     "id": "b06a",
+     "beat": "clip-04.b06",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "tdev-stagger: a pile of research papers grows sheet by sheet on the desk, study credit at 'Yang'",
+      "word": "222 nghiên cứu"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.584,
+       "word": "Yang"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 380,
+       "wy": 230,
+       "ww": 320,
+       "wh": 230
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1180
+      },
+      {
+       "kind": "papers",
+       "x": 540,
+       "y": 1110,
+       "n": 16,
+       "at": 0.1,
+       "stagger": 0.13
+      },
+      {
+       "kind": "tag",
+       "text": "Yang et al. 2021",
+       "x": 540,
+       "y": 1330,
+       "at": 0.584
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Nhóm của Yang tổng hợp 222 nghiên cứu,",
+       "say": "Nhóm của Yang tổng hợp 222 nghiên cứu,",
+       "en": "Yang 2021: 222 studies combined",
+       "hl": [
+        2
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c13.wav",
+       "cap": [
+        0.161,
+        2.8
+       ],
+       "chunk": "c13",
+       "phrases": [
+        {
+         "t": "Nhóm của Yang tổng hợp 222 nghiên cứu,"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Research papers pile up on the desk",
+      "react": "solid, sure"
+     },
+     "dur": 2.8,
+     "link": "bigger evidence for the same closed-book habit"
+    },
+    {
+     "id": "b06b",
+     "beat": "clip-04.b06",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "tdev-stagger: two score bars rise, quiz sheet + tick on the taller one, hand points, dashed line marks a moderate gap",
+      "word": "cao hơn"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 1.713,
+       "word": "cao"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 380,
+       "wy": 230,
+       "ww": 320,
+       "wh": 230
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1180
+      },
+      {
+       "kind": "tag",
+       "text": "Yang et al. 2021",
+       "x": 540,
+       "y": 1330,
+       "at": -1
+      },
+      {
+       "kind": "bars",
+       "x": 540,
+       "y": 1150,
+       "a": 330,
+       "b": 262,
+       "base": 0.25,
+       "riseAt": 1.543,
+       "badgeAt": 0.583,
+       "gapAt": 3.793
+      },
+      {
+       "kind": "icon",
+       "name": "hand",
+       "x": 905,
+       "y": 860,
+       "size": 130,
+       "rot": -95,
+       "at": 1.763,
+       "bob": true
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "thấy lớp có kiểm tra nhỏ thì điểm **cao hơn** lớp không làm kiểm tra nhỏ, ở mức vừa.",
+       "say": "thấy lớp có kiểm tra nhỏ thì điểm cao hơn lớp không làm kiểm tra nhỏ, ở mức vừa.",
+       "en": "Quizzed classes scored moderately higher",
+       "hl": [
+        4
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c14.wav",
+       "cap": [
+        0.062,
+        4.567
+       ],
+       "chunk": "c14",
+       "phrases": [
+        {
+         "t": "thấy lớp có kiểm tra nhỏ thì điểm {nhấn: cao hơn} lớp không làm kiểm tra nhỏ, ở mức vừa."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Two score bars, the quiz class a moderate step higher",
+      "react": "measured, not hyped"
+     },
+     "dur": 4.5667,
+     "link": "what those studies found"
+    },
+    {
+     "id": "b07a",
+     "beat": "clip-04.b07",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "neutral"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cruise: same desk as b02, sun rises again, the book stays closed",
+      "word": "sách vẫn gấp"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": -0.05,
+       "word": "sáng"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ],
+        [
+         0.0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 205,
+       "y": 1300,
+       "s": 0.55,
+       "closedDy": 160,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 480,
+       "y": 1265,
+       "s": 0.45,
+       "rows": []
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 8,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         585,
+         1420
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "Sáng hôm sau, sách vẫn gấp,",
+       "say": "Sáng hôm sau, sách vẫn gấp,",
+       "en": "Next morning, book still closed",
+       "hl": [
+        4
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c15.wav",
+       "cap": [
+        0.135,
+        1.5
+       ],
+       "chunk": "c15",
+       "phrases": [
+        {
+         "t": "Sáng hôm sau, sách vẫn gấp,"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "neutral"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Next morning, book still closed beside the blank sheet",
+      "react": "calm"
+     },
+     "dur": 1.5,
+     "link": "the next morning after doing the method"
+    },
+    {
+     "id": "b07b",
+     "beat": "clip-04.b07",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "closeup",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-soft-land: same close-up as b02, pen fills row 5, the face-down card flips to a clear suitcase + tick, word tag 'luggage', hold 1s",
+      "word": "luggage"
+     },
+     "sfx": [
+      {
+       "name": "pen",
+       "atLine": 0,
+       "offset": 0.27,
+       "word": "tự"
+      },
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.13,
+       "word": "luggage"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 70,
+       "wy": 560,
+       "ww": 220,
+       "wh": 200
+      },
+      {
+       "kind": "tome",
+       "x": 200,
+       "y": 1405,
+       "s": 0.6,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 600,
+       "y": 1070,
+       "s": 1.1,
+       "rows": [
+        [
+         0,
+         -1
+        ],
+        [
+         1,
+         -1
+        ],
+        [
+         2,
+         -1
+        ],
+        [
+         3,
+         -1
+        ],
+        [
+         4,
+         0.27
+        ]
+       ]
+      },
+      {
+       "kind": "card",
+       "x": 905,
+       "y": 1034.8,
+       "s": 0.6,
+       "shadow": 0.18,
+       "flipAt": 0.83
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 26,
+       "len": 230,
+       "keys": [
+        [
+         0,
+         437,
+         1034.8
+        ],
+        [
+         0.27,
+         437,
+         1034.8
+        ],
+        [
+         0.62,
+         720,
+         1038.8
+        ],
+        [
+         0.77,
+         740,
+         1094.8
+        ]
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "luggage",
+       "x": 790,
+       "y": 880,
+       "at": 1.13,
+       "style": "word",
+       "font": "en",
+       "tick": true
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "mình **tự viết được** luggage,",
+       "say": "mình tự viết được luggage,",
+       "en": "I wrote luggage on my own",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c16a.wav",
+       "cap": [
+        0.055,
+        1.4
+       ],
+       "chunk": "c16",
+       "phrases": [
+        {
+         "t": "mình {nhấn: tự viết được} luggage,"
+        }
+       ],
+       "anchor": [
+        600,
+        560
+       ]
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "đúng chữ hành lý hôm trước mình bí.",
+       "say": "đúng chữ hành lý hôm trước mình bí.",
+       "en": "The very word I got stuck on",
+       "hl": [
+        5
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c16b.wav",
+       "cap": [
+        0.04,
+        2.9
+       ],
+       "chunk": "c16",
+       "phrases": [
+        {
+         "t": "đúng chữ hành lý hôm trước mình bí."
+        }
+       ],
+       "anchor": [
+        600,
+        560
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Writes row 5; the stuck card flips to a clear suitcase with a tick",
+      "react": "relieved smile"
+     },
+     "dur": 4.3,
+     "link": "payoff on the exact word stuck in b02"
+    },
+    {
+     "id": "b08a",
+     "beat": "clip-04.b08",
+     "part": "cta",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cut-on-motion: turns to the viewer and snaps the book shut at 'gấp sách lại'",
+      "word": "mấy từ"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.977,
+       "word": "gấp"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 205,
+       "y": 1300,
+       "s": 0.55,
+       "closedDy": 160,
+       "keys": [
+        [
+         0,
+         "open"
+        ],
+        [
+         0.977,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 480,
+       "y": 1265,
+       "s": 0.45,
+       "rows": []
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 8,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         585,
+         1420
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Còn bạn, thử gấp sách lại thì viết được **mấy từ**?",
+       "say": "Còn bạn, thử gấp sách lại thì viết được mấy từ?",
+       "en": "Your turn: book closed, how many words?",
+       "hl": [
+        5
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c17a.wav",
+       "cap": [
+        0.135,
+        2.867
+       ],
+       "chunk": "c17a",
+       "phrases": [
+        {
+         "t": "Còn bạn, thử gấp sách lại thì viết được {nhấn: mấy từ}?"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Turns to the camera and shuts the book",
+      "react": "warm, inviting"
+     },
+     "dur": 2.8667,
+     "link": "hands the same closed-book test to the viewer"
+    },
+    {
+     "id": "b08b",
+     "beat": "clip-04.b08",
+     "part": "cta",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-soft-land: comment bubble icon pops, hand points down; frame returns to the frame-0 set (closed book, blank sheet, pen)",
+      "word": "con số"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.606,
+       "word": "số"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 205,
+       "y": 1300,
+       "s": 0.55,
+       "closedDy": 160,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 480,
+       "y": 1265,
+       "s": 0.45,
+       "rows": []
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 8,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         585,
+         1420
+        ]
+       ]
+      },
+      {
+       "kind": "icon",
+       "name": "chat",
+       "x": 205,
+       "y": 1010,
+       "size": 120,
+       "at": 0.066,
+       "plate": true
+      },
+      {
+       "kind": "icon",
+       "name": "hand",
+       "x": 205,
+       "y": 1190,
+       "size": 92,
+       "rot": 180,
+       "at": 0.186,
+       "bob": true
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Comment **con số** nha.",
+       "say": "Comment con số nha.",
+       "en": "Comment your number below",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c04v18-c17b.wav",
+       "cap": [
+        0.119,
+        1.249
+       ],
+       "chunk": "c17b",
+       "phrases": [
+        {
+         "t": "Comment {nhấn: con số} nha."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Points down to the comments; desk looks like frame 0 again",
+      "react": "warm"
+     },
+     "dur": 1.2667,
+     "link": "the reply the viewer leaves"
+    }
+   ]
+  }
+ ]
 }

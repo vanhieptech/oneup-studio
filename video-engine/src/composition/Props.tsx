@@ -1,11 +1,14 @@
 import React from "react";
 import { BRAND } from "./theme";
 import { FONT_FAMILY } from "./fonts";
+import { V18_KINDS, V18_ABS } from "./PropsV18";
 
 /** DL-056: comic props in brand style (ink on paper, round corners, 8px stroke, hard offset shadow, one accent).
  *  All times are scene seconds (build-final shifts them by the first line start). Drawn inside the camera group. */
 export type PropCue = {
-  kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty" | "book" | "sheet" | "pen";
+  kind: "laptop" | "phone" | "calendar" | "cloud" | "sign" | "vignette" | "words" | "pile" | "bundles" | "bundle" | "clock" | "dusty" | "book" | "sheet" | "pen"
+    | "window" | "table" | "tome" | "paper" | "card" | "icon" | "stack" | "deck" | "papers" | "bars" | "halves" | "tag" | "endcard";
+  [extra: string]: unknown;
   keys?: [number, number, number][]; len?: number;
   count?: number;
   x?: number; y?: number; s?: number; rot?: number;
@@ -286,7 +289,13 @@ export const Props: React.FC<{ props: PropCue[]; t: number; h: number }> = ({ pr
     if (p.until != null && t > p.until) return null;
     if (p.kind === "vignette") { const k = ease(t, p.at ?? 0, 0.6) * (p.dark ?? 0.55);
       return <g key={i}><defs><radialGradient id={`vg${i}`} cx="50%" cy="45%" r="70%"><stop offset="45%" stopColor={ink} stopOpacity={0} /><stop offset="100%" stopColor={ink} stopOpacity={k} /></radialGradient></defs><rect width={1080} height={h} fill={`url(#vg${i})`} /></g>; }
-    const C = { laptop: Laptop, phone: Phone, calendar: Calendar, cloud: Cloud, sign: Sign, words: Words, pile: Pile, bundles: Bundles, bundle: Bundle, clock: Clock, dusty: Dusty, book: Book, sheet: Sheet, pen: Pen }[p.kind];
+    if (p.kind === "tag" || p.kind === "endcard") return null; // HTML layer (SceneRenderer)
+    if (p.from != null && t < (p.from as number)) return null; // v18: prop appears at `from` (scene s)
+    if (V18_KINDS[p.kind]) { const V = V18_KINDS[p.kind];
+      let px = p.x ?? 540, py = p.y ?? 900; const mv = p.mv as [number, number, number][] | undefined; // mv: position keys [t, x, y] (eased)
+      if (mv?.length) { px = mv[0][1]; py = mv[0][2]; for (let j = 1; j < mv.length; j++) { const [t0, x0, y0] = mv[j - 1], [t1, x1, y1] = mv[j]; if (t >= t1) { px = x1; py = y1; continue; } if (t > t0) { const u = 1 - Math.pow(1 - (t - t0) / Math.max(1e-3, t1 - t0), 3); px = x0 + (x1 - x0) * u; py = y0 + (y1 - y0) * u; } break; } }
+      return V18_ABS.has(p.kind) ? <g key={i}><V p={p} t={t} /></g> : <g key={i} transform={`translate(${px} ${py}) rotate(${p.rot ?? 0}) scale(${p.s ?? 1})`}><V p={p} t={t} /></g>; }
+    const C = ({ laptop: Laptop, phone: Phone, calendar: Calendar, cloud: Cloud, sign: Sign, words: Words, pile: Pile, bundles: Bundles, bundle: Bundle, clock: Clock, dusty: Dusty, book: Book, sheet: Sheet, pen: Pen } as Record<string, React.FC<{ p: PropCue; t: number }>>)[p.kind];
     return <g key={i} transform={`translate(${p.x ?? 540} ${p.y ?? 900}) rotate(${p.kind === "pen" ? 0 : p.rot ?? 0}) scale(${p.s ?? 1})`}><C p={p} t={t} /></g>;
   })}
 </g>;

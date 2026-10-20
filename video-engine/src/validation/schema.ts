@@ -6,7 +6,7 @@ export const ACTIONS = ["idle", "talking", "thinking", "typing", "walking", "rea
 export const POSES = ["standing", "sitting"] as const;
 export const TRANSITIONS = ["cut", "fade", "slide", "wipe", "iris"] as const;
 export const FRAMINGS = ["wide", "medium", "closeup"] as const;
-export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid"] as const;
+export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid", "room"] as const;
 /** Doodle draw-on marks (anidoodle port, L-047). Shared by schema + validate (L-042: one list). */
 export const DOODLE_KINDS = ["circle", "underline", "arrow", "check", "cross", "sketch-box", "path", "drawing"] as const;
 export const ENTERS = ["none", "pop", "slide-left", "slide-right", "rise"] as const;
@@ -23,6 +23,8 @@ export const VideoConfigSchema = z.object({
   height: z.number().int().min(16).max(4096).default(1920),
   fps: z.number().int().min(1).max(120).default(30),
   theme: z.enum(["light", "dark"]).default("light"),
+  /** clip-04 v18: "reels" moves captions to y≈1000–1240 and the title to y≥300 (Reels/Shorts UI safe zones). */
+  layout: z.enum(["tiktok", "reels"]).default("tiktok"),
 });
 
 export const TimedChange = <T extends z.ZodTypeAny>(value: T) => z.object({ at: seconds, value });
@@ -48,6 +50,10 @@ export const DialogueSchema = z.object({
   start: seconds,
   end: seconds,
   style: z.enum(["speech", "thought", "shout"]).default("speech"),
+  /** false = voice + caption only, no VI speech bubble (clip-04 v18: hook/b03/b06). */
+  bubble: z.boolean().default(true),
+  /** bubble tail anchor (design px) when the speaker is off-screen (close-ups) */
+  anchor: z.tuple([z.number(), z.number()]).optional(),
   /** Voice emotion for the TTS step (rule-46). Defaults to the speaker's current expression. */
   emotion: z.string().optional(),
   /** Filled by `npm run voice` (F5-TTS / VieNeu-TTS, characters with a voice preset). src is relative to public/. */
@@ -78,7 +84,7 @@ export const SceneSchema = z.object({
   narration: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional() }).optional(),
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
   /** DL-056 comic props (laptop/phone/calendar/cloud/sign/words/vignette), see composition/Props.tsx */
-  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty", "book", "sheet", "pen"]) }).passthrough()).default([]),
+  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty", "book", "sheet", "pen", "window", "table", "tome", "paper", "card", "icon", "stack", "deck", "papers", "bars", "halves", "tag", "endcard"]) }).passthrough()).default([]),
   /** Doodle draw-on marks (anidoodle, Apache-2.0; src/composition/doodle/). Design px, 1080-wide. */
   doodles: z.array(z.object({
     kind: z.enum(DOODLE_KINDS), x: z.number().finite(), y: z.number().finite(),

@@ -105,6 +105,8 @@ def remotion_plan(spec, part):
         hook = sc.get("part") == "hook"  # rule-55: rapid hook, near-zero lead + short tail on cut scenes
         pc = spec.get("pacing") or {}  # optional per-clip pacing (clip-02 v17: match the approved listen file)
         t = 0.12 if (si == 0 and part is spec["parts"][0]) else (0.02 if hook and tr == "cut" else max(pc.get("lead", 0.3), trd + pc.get("lead_tr", 0.15)))
+        ex = pc.get("exact")  # clip-04 v18: lines are frame-aligned slices of one approved voice file → no lead/gap/tail, scenes butt-joined
+        if ex: t = 0.0
         cast = {c["id"]: {"characterId": c["id"], "x": c["x"], "pose": c.get("pose", "standing"), "action": c.get("action", "idle"),
                           "expression": c.get("expression", "neutral"), "facing": c.get("facing", "right"), "enter": c.get("enter", "none"),
                           "expressionChanges": [], "actionChanges": []} for c in sc["cast"]}
@@ -114,12 +116,13 @@ def remotion_plan(spec, part):
             for cid, ch in (l.get("set") or {}).items():
                 if "expression" in ch: cast[cid]["expressionChanges"].append({"at": st, "value": ch["expression"]})
                 if "action" in ch: cast[cid]["actionChanges"].append({"at": st, "value": ch["action"]})
-            dlg.append({"speaker": l["speaker"], "text": l["text"], "start": st, "end": round(en + 0.25, 3), "emotion": l["emotion"],
+            dlg.append({"speaker": l["speaker"], "text": l["text"], "start": st, "end": round(en if ex else en + 0.25, 3), "emotion": l["emotion"], "bubble": l.get("bubble", True), **({"anchor": l["anchor"]} if l.get("anchor") else {}),
                         "audio": {"src": f"voice/{l['_key']}.wav", "duration": l["_dur"], "envelope": l["_env"], "engine": l["_engine"]}})
-            segs.append({"text": l["en"], "start": 0.0 if (si == 0 and li == 0 and part is spec["parts"][0]) else round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})  # rule-55/L-021: caption on frame 0
+            c0, c1 = (l["cap"] if ex and l.get("cap") else (0.05, l["_dur"] + 0.2))  # v18: caption window = speech span inside the slice (word-synced)
+            segs.append({"text": l["en"], "start": 0.0 if (si == 0 and li == 0 and part is spec["parts"][0]) else round(st + c0, 3), "end": round(st + c1, 3), "highlight": l.get("hl", [])})  # rule-55/L-021: caption on frame 0
             timing.append({"beat": sc["beat"], "scene": sc["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": l["_dur"]})
-            t = en + ((0.08 if hook else pc.get("gap", 0.2)) if li < len(sc["lines"]) - 1 else 0)  # clip-04 v14b: pacing.gap
-        dur = round(t + (0.06 if hook else pc.get("tail", 0.45)), 3)
+            t = en + ((0.08 if hook else pc.get("gap", 0.2)) if li < len(sc["lines"]) - 1 and not ex else 0)  # clip-04 v14b: pacing.gap
+        dur = round(t + (0 if ex else 0.06 if hook else pc.get("tail", 0.45)), 3)
         dlg[-1]["end"] = min(dlg[-1]["end"], dur); segs[-1]["end"] = min(segs[-1]["end"], round(dur - 0.05, 3))
         for i in range(len(segs) - 1): segs[i]["end"] = min(segs[i]["end"], segs[i + 1]["start"])
         scene = {"id": sc["id"], "beat": sc["beat"], "duration": dur, "background": {"kind": sc["background"]},
@@ -132,8 +135,14 @@ def remotion_plan(spec, part):
             scene["props"] = [{**p_, **{k: (sh(p_[k]) if not isinstance(p_[k], list) else [sh(v) for v in p_[k]]) for k in ("at", "until", "tearAt", "dropAt") if k in p_}} for p_ in sc["props"]]
         if sc.get("narration"): scene["narration"] = {"text": sc["narration"], "start": 0.0 if (si == 0 and part is spec["parts"][0]) else 0.05}  # rule-55: hook text on frame 0
         scenes.append(scene)
+    ec = spec.get("endcard")
+    if ec and part is spec["parts"][-1]:  # clip-04 v18: end card scene (hard cut + swish, blurred last set, soft-land 0.3s); not a spec beat
+        last = scenes[-1]
+        scenes.append({"id": "endcard", "beat": last["beat"], "duration": ec["duration"], "background": last["background"], "camera": {"framing": last["camera"]["framing"], "push": 0},
+                       "transition": {"type": "cut", "duration": 0.4}, "characters": [dict(c, expressionChanges=[], actionChanges=[], action="idle") for c in last["characters"]], "dialogue": [],
+                       "sfx": [], "props": [p_ for p_ in last.get("props", []) if p_.get("kind") not in ("tag",)] + [{"kind": "endcard", "at": 0, "y": ec.get("y", 560), "text": ec["safety"], "sub": ec["sources"], "stamp": ec["credit"]}]})
     plan = {"version": 1, "id": f"{spec['id']}-{part['id']}", "title": spec["title"], "meta": {"clip": spec["clip"], "week": spec["week"], "source": "final/spec.json"},
-            "video": {"width": 1080, "height": 1920, "fps": FPS, "theme": spec["theme"]}, "scenes": scenes}
+            "video": {"width": 1080, "height": 1920, "fps": FPS, "theme": spec["theme"], "layout": spec.get("layout", "tiktok")}, "scenes": scenes}
     return plan, timing, sum(s["duration"] for s in scenes)
 
 def explainer(spec, part, fdir):
@@ -255,8 +264,10 @@ def main():
             starts = {}; acc = 0
             for s in plan["scenes"]: starts[s["id"]] = acc; acc += s["duration"]
             sfx = [(x["name"], offset + starts[s["id"]] + x["at"]) for s in plan["scenes"] for x in s["sfx"]]
+            beat_only = (spec.get("pacing") or {}).get("swish") == "beat"  # v18: swish only where the beat changes (+ end card), not on every in-beat cut
+            ss = [starts[s["id"]] for k, s in enumerate(plan["scenes"]) if k and (not beat_only or s["beat"] != plan["scenes"][k - 1]["beat"] or s["id"] == "endcard")]
             parts.append({"id": p["id"], "engine": "remotion", "plan": pp, "dur": dur, "mp4": os.path.join(VE, "out", plan["id"] + ".mp4"), "sfx": sfx, "fx": p.get("transitionOut"),
-                          "scene_starts": [starts[s["id"]] for s in plan["scenes"]][1:]})
+                          "scene_starts": ss})
             for x in tm: x["t"] = round(offset + starts[x["scene"]] + x["local"], 3); timing.append(x)
         else:
             tm, dur = explainer(spec, p, fdir)
@@ -292,7 +303,7 @@ def main():
     for i, q in enumerate(parts):
         ins += ["-i", q["mp4"]]
         vf.append(f"[{i}:v]trim=0:{q['dur']},setpts=PTS-STARTPTS,fps={FPS},scale=out_range=tv,format=yuv420p,setsar=1[v{i}]")
-        af.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:{q['dur']},asetpts=PTS-STARTPTS[a{i}]")
+        af.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:{q['dur']},asetpts=PTS-STARTPTS[a{i}]" if not spec.get("voice_track") else f"anullsrc=r=48000:cl=mono,atrim=0:{q['dur']}[a{i}]")
     vprev, aprev, acc = "v0", "a0", parts[0]["dur"]; starts = [0.0]
     for i in range(1, len(parts)):
         off = round(acc - XF, 3); fx = parts[i - 1]["fx"] or "fade"; starts.append(off)
@@ -313,8 +324,13 @@ def main():
         w = os.path.join(tmp, name + ".wav")
         if not os.path.exists(w): sh(["ffmpeg", "-loglevel", "error", "-y", "-f", "lavfi", "-i", SFX[name], "-ac", "1", "-ar", "48000", w])
         ins_a = len(parts) + j; af.append(f"[{ins_a}:a]aresample=48000,adelay={int(max(0, at)*1000)}:all=1[s{j}]"); mixl.append(f"[s{j}]")
-    af.append("".join(mixl) + f"amix=inputs={len(mixl)}:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,atrim=0:{total}[a]")
     sfx_in = [x for (name, _) in sfx for x in ("-i", os.path.join(tmp, name + ".wav"))]
+    vt = spec.get("voice_track")  # clip-04 v18: the approved voice file itself (sample-exact) replaces the per-line part audio
+    if vt:
+        vi = len(parts) + len(sfx); sfx_in += ["-i", os.path.join(fdir, vt)]
+        af.append(f"[{vi}:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:{total},asetpts=PTS-STARTPTS[vt]"); mixl.insert(0, "[vt]")
+    lin = spec.get("mix") == "linear"  # v18: no dynamic loudnorm over the approved voice; linear gain to −14 LUFS below (+ true-peak limiter)
+    af.append("".join(mixl) + f"amix=inputs={len(mixl)}:normalize=0:duration=first" + ("" if lin else ",loudnorm=I=-14:TP=-1.5:LRA=11") + f",aresample=48000,atrim=0:{total}[a]")
     wav = os.path.join(fdir, "out", f"mix{sfxn}.wav")
     sh(["ffmpeg", "-loglevel", "error", "-y", *ins, *sfx_in, "-filter_complex", ";".join(af), "-map", "[a]", "-ac", "1", "-ar", "48000", wav])
     # 2nd loudness pass: single-pass loudnorm lands ~1 LU low on short clips; correct with a linear gain to -14 LUFS (rule-4)

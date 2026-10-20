@@ -62,6 +62,18 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
         </g>
       );
     }
+    case "room": {
+      // clip-04 v18: desk room without the fixed window (window/time marker = "window" prop, y 250–550, clear of bubbles/title).
+      return (
+        <g>
+          <defs>{dots}</defs>
+          <rect width={1080} height={h} fill={paper} />{halftoneCorner}
+          <rect x={110} y={600} width={300} height={22} rx={11} fill={ink} />
+          {[0, 1, 2, 3].map((i) => <rect key={i} x={140 + i * 52} y={490 - (i % 2) * 18} width={40} height={110 + (i % 2) * 18} rx={12} fill={i === 2 ? soft : ink} stroke={ink} strokeWidth={6} />)}
+          {floor}
+        </g>
+      );
+    }
     case "bed": {
       const twinkle = 0.6 + 0.4 * Math.sin(t * 3);
       return (

@@ -112,16 +112,24 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
-| b01 | remotion | mmx-cut-on-motion: but dung tren giay trang dung nhip cau hoi, sach gap day sang ben (frame 0) | “quên sạch” | `snap` → “quên sạch” | mở đầu |
-| b02 | remotion | mmx-cruise: mot trang lat deu lap lai, chong the giu nguyen | “thuộc làu” | `swish` → “đọc đi đọc lại” | cut (`swish`) |
-| b03 | remotion | mmx-glide: tay glide doc giay, but dung o cho trang sau 4 vet dong | “Bút dừng” | `pen` → “viết lại” | cut (`swish`) |
-| b04 | remotion | mmx-cruise cham: sach VAN GAP, but nam yen canh giay trang | “Giấy trắng” | `swish` → “quen mắt” | cut (`swish`) |
-| b05 | remotion | mmx-snap-settle: sach MO dung mot lan o cho bi roi gap lai, tay settle tren giay | “mở sách” | `pop` → “mở sách”; `pen` → “viết tiếp” | cut (`swish`) |
-| e06 | hyperframes | tdev-stagger: 2 chong bai kiem khong chu + 2 thanh diem khong chu, thanh co kiem nho cao hon mot doan vua | “222 nghiên cứu” | `ding` → “Yang”; `rise` → “cao hơn” | fade (`whoosh-soft`) |
-| e07 | hyperframes | tdev-stagger: 10 the trang thanh hang, bo tu kiem chong cao, chong doc lai/gach chan o thap van dung yen | “nhóm cao nhất” | `tick` → “mười cách”; `ding` → “cao nhất” | push (`swish`) |
-| b08 | remotion | tdev-stagger: pile tach 3 bundles, om chong dau viet lai | “ba chồng” | `pop` → “ba chồng”; `pen` → “viết lại” | fade (`whoosh-soft`) |
-| b09 | remotion | mmx-soft-land: quay ve giay cu, them dung 1 vet dong moi o cho trang | “luggage” | `swish` → “Sáng hôm sau”; `pop` → “luggage” | cut (`swish`) |
-| b10 | remotion | mmx-soft-land: giu khung giay da co them dong, chi nhe xuong duoi | “Luggage” | `pop` → “Luggage”; `tick` → “con số” | cut (`swish`) |
+| b01a | remotion | mmx-cut-on-motion: pen drops onto the blank sheet + snap; last night's faint rows evaporate at 'quên sạch'; window moon→sun | “quên sạch” | `snap` → “Học thuộc” | mở đầu |
+| b01b | remotion | mmx-snap: closed book slides away from the blank sheet at 'không nhìn sách', face turns to the camera asking | “không nhìn sách” | `tick` → “không” | cut (`swish`) |
+| b02a | remotion | mmx-cruise: at night (moon) the open book flips back and forth twice, confident nod | “thuộc làu” | `swish` → “đọc” | cut (`swish`) |
+| b02b | remotion | mmx-cut-on-motion: sun rises, book snaps shut at 'gấp sách', pen writes four rows on the sheet | “viết thử” | `pen` → “viết” | cut (`swish`) |
+| b02c | remotion | mmx-snap-settle: close-up, pen stops dead on empty row 5; a face-down card with a faded suitcase shadow appears, shakes at 'bí' | “bí” | `pen` → “tới”; `tick` → “bí” | cut (`swish`) |
+| b03a | remotion | tdev-split: frame splits into two desk halves, reread book left vs closed-book sheet right; study credit tag | “2006” | `ding` → “năm” | cut (`swish`) |
+| b03b | remotion | tdev-stagger: paper-stack bars rise, reread stack taller right after study, thumbs-up pops at 'tốt hơn' | “kiểm tra ngay” | `pop` → “tốt” | cut (`swish`) |
+| b03c | remotion | mmx-snap-settle: sun rises twice in the window, thumbs-up droops at 'hai ngày sau', stacks swap with snap-settle at 'hơn hẳn' | “hai ngày sau” | `rise` → “hơn” | cut (`swish`) |
+| b04 | remotion | mmx-push-in: slow push into empty row 5 of the same sheet; sun rises; dotted suitcase outline appears at 'viết ra được' | “sáng hôm sau” | `tick` → “viết” | cut (`swish`) |
+| b05a | remotion | tdev-stagger: 30 blank cards spill as one pile, then pop into three neat stacks of ten (no bow) | “ba phần” | `pop` → “ba” | cut (`swish`) |
+| b05b | remotion | mmx-snap: book snaps shut at 'gấp sách', pen writes the part on the sheet, tick on the first stack at 'phần đó' | “gấp sách” | `snap` → “gấp”; `pen` → “viết” | cut (`swish`) |
+| b05c | remotion | mmx-snap-settle: book opens once at 'mở sách' for a glance, then shuts again | “mở sách” | `pop` → “mở” | cut (`swish`) |
+| b06a | remotion | tdev-stagger: a pile of research papers grows sheet by sheet on the desk, study credit at 'Yang' | “222 nghiên cứu” | `ding` → “Yang” | cut (`swish`) |
+| b06b | remotion | tdev-stagger: two score bars rise, quiz sheet + tick on the taller one, hand points, dashed line marks a moderate gap | “cao hơn” | `rise` → “cao” | cut (`swish`) |
+| b07a | remotion | mmx-cruise: same desk as b02, sun rises again, the book stays closed | “sách vẫn gấp” | `rise` → “sáng” | cut (`swish`) |
+| b07b | remotion | mmx-soft-land: same close-up as b02, pen fills row 5, the face-down card flips to a clear suitcase + tick, word tag 'luggage', hold 1s | “luggage” | `pen` → “tự”; `pop` → “luggage” | cut (`swish`) |
+| b08a | remotion | mmx-cut-on-motion: turns to the viewer and snaps the book shut at 'gấp sách lại' | “mấy từ” | `snap` → “gấp” | cut (`swish`) |
+| b08b | remotion | mmx-soft-land: comment bubble icon pops, hand points down; frame returns to the frame-0 set (closed book, blank sheet, pen) | “con số” | `tick` → “số” | cut (`swish`) |
 
 ## Fact lock
 

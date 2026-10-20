@@ -1,0 +1,63 @@
+{
+ "duration": 0.9,
+ "envelope": [
+  0.04,
+  0.608,
+  0.672,
+  0.191,
+  0.023,
+  0.014,
+  0.285,
+  0.893,
+  0.629,
+  0.073,
+  0.024,
+  0.008,
+  0.421,
+  1,
+  0.689,
+  0.67,
+  0.165,
+  0.011,
+  0.076,
+  0.736,
+  0.788,
+  0.708,
+  0.668,
+  0.615,
+  0.54,
+  0.371,
+  0.165
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences",
+ "role": "Thầy",
+ "stt": "Học thuộc tối qua,",
+ "stt_sim": 1.0,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "Học thuộc tới qua",
+   "sim": 0.75
+  },
+  "in_chunk": {
+   "text": "Học thuộc tối qua,",
+   "sim": 1.0
+  }
+ },
+ "intra_output_cuts": 1,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "Học thuộc tối qua, sáng dậy quên sạch?",
+   "take": "c01-37.wav",
+   "chunk": "c01"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c04v18.wav",
+  "start_s": 0.0,
+  "end_s": 0.9,
+  "hold_s": 0,
+  "tail_s": 0
+ }
+}

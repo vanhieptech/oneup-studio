@@ -1,0 +1,1735 @@
+{
+ "voice_prefix": "c04v18",
+ "plan": "A",
+ "plan_pauses": {
+  "/": 0.18,
+  "//": 0.35,
+  "//beat": 0.4,
+  "///": 0.4,
+  "//hook": 0.08
+ },
+ "total_s": 46.096,
+ "speech_s": 40.84,
+ "pause_at_marks_s": 6.76,
+ "pure_speech_pre_s": 40.84,
+ "lufs": -14.2,
+ "limit_s": 58.0,
+ "over_s": 0,
+ "pauses": [
+  {
+   "sid": "c01",
+   "after": "sạch",
+   "mark": "//hook",
+   "kind": "ghép hook (L-027 ≤0,1s)",
+   "plan": 0.08,
+   "pause": 0.07,
+   "status": "ok"
+  },
+  {
+   "sid": "c02",
+   "after": "gì",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.4,
+   "status": "ok"
+  },
+  {
+   "sid": "c03",
+   "after": "làu",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.35,
+   "status": "ok"
+  },
+  {
+   "sid": "c04",
+   "after": "thử",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.19,
+   "status": "ok"
+  },
+  {
+   "sid": "c05",
+   "after": "bí",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.4,
+   "status": "ok"
+  },
+  {
+   "sid": "c06",
+   "after": "thấy",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.19,
+   "status": "ok"
+  },
+  {
+   "sid": "c07",
+   "after": "hơn",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.35,
+   "status": "ok"
+  },
+  {
+   "sid": "c08",
+   "after": "hẳn",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "c09",
+   "after": "được",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.41,
+   "status": "ok"
+  },
+  {
+   "sid": "c10",
+   "after": "từ",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.34,
+   "status": "ok"
+  },
+  {
+   "sid": "c11",
+   "after": "đó",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.16,
+   "status": "ok"
+  },
+  {
+   "sid": "c12",
+   "after": "sách",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "c13",
+   "after": "cứu",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.2,
+   "status": "ok"
+  },
+  {
+   "sid": "c14",
+   "after": "vừa",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "c15",
+   "after": "gấp",
+   "mark": "/",
+   "kind": "phẩy/hai chấm",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "c16",
+   "after": "bí",
+   "mark": "//beat",
+   "kind": "hết beat",
+   "plan": 0.4,
+   "pause": 0.39,
+   "status": "ok"
+  },
+  {
+   "sid": "c17a",
+   "after": "từ",
+   "mark": "//",
+   "kind": "hết câu",
+   "plan": 0.35,
+   "pause": 0.34,
+   "status": "ok"
+  },
+  {
+   "sid": "c01",
+   "after": "qua",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk (hook ≤0,1s)",
+   "plan": 0.1,
+   "pause": 0.0,
+   "status": "ok"
+  },
+  {
+   "sid": "c02",
+   "after": "sách",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk (hook ≤0,1s)",
+   "plan": 0.1,
+   "pause": 0.08,
+   "status": "ok"
+  },
+  {
+   "sid": "c03",
+   "after": "Anh",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "c08",
+   "after": "sau",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "c09",
+   "after": "sau",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.14,
+   "status": "ok"
+  },
+  {
+   "sid": "c10",
+   "after": "phần",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "c11",
+   "after": "nào",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.18,
+   "status": "ok"
+  },
+  {
+   "sid": "c14",
+   "after": "nhỏ",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.19,
+   "status": "ok"
+  },
+  {
+   "sid": "c15",
+   "after": "sau",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "c16",
+   "after": "luggage",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  },
+  {
+   "sid": "c17a",
+   "after": "bạn",
+   "mark": "/",
+   "inner": true,
+   "kind": "phẩy trong chunk",
+   "plan": 0.18,
+   "pause": 0.17,
+   "status": "ok"
+  }
+ ],
+ "silences": [
+  {
+   "chunk_id": "c01",
+   "t_start": 0.13,
+   "t_end": 0.2,
+   "dur_s": 0.07,
+   "at_mark": "none",
+   "context_before": "Học",
+   "context_after": "thuộc tối qua"
+  },
+  {
+   "chunk_id": "c01",
+   "t_start": 0.32,
+   "t_end": 0.41,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "Học thuộc",
+   "context_after": "tối qua sáng"
+  },
+  {
+   "chunk_id": "c01",
+   "t_start": 0.55,
+   "t_end": 0.61,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "Học thuộc tối",
+   "context_after": "qua sáng dậy"
+  },
+  {
+   "chunk_id": "c01",
+   "t_start": 1.35,
+   "t_end": 1.4,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "qua sáng dậy",
+   "context_after": "quên sạch Giả"
+  },
+  {
+   "chunk_id": "c01→c02",
+   "t_start": 1.75,
+   "t_end": 1.82,
+   "dur_s": 0.07,
+   "at_mark": "sentence",
+   "context_before": "dậy quên sạch",
+   "context_after": "Giả sử bây"
+  },
+  {
+   "chunk_id": "c02",
+   "t_start": 3.14,
+   "t_end": 3.22,
+   "dur_s": 0.08,
+   "at_mark": "comma",
+   "context_before": "không nhìn sách",
+   "context_after": "bạn còn nhớ"
+  },
+  {
+   "chunk_id": "c02",
+   "t_start": 4.0,
+   "t_end": 4.05,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "còn nhớ được",
+   "context_after": "những gì Mình"
+  },
+  {
+   "chunk_id": "c02→c03",
+   "t_start": 4.52,
+   "t_end": 4.92,
+   "dur_s": 0.4,
+   "at_mark": "beat",
+   "context_before": "được những gì",
+   "context_after": "Mình học ba"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 5.19,
+   "t_end": 5.27,
+   "dur_s": 0.08,
+   "at_mark": "none",
+   "context_before": "gì Mình học",
+   "context_after": "ba mươi từ"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 5.82,
+   "t_end": 5.87,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "ba mươi từ",
+   "context_after": "tiếng Anh đọc"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 6.26,
+   "t_end": 6.43,
+   "dur_s": 0.17,
+   "at_mark": "comma",
+   "context_before": "từ tiếng Anh",
+   "context_after": "đọc đi đọc"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 6.54,
+   "t_end": 6.61,
+   "dur_s": 0.07,
+   "at_mark": "none",
+   "context_before": "tiếng Anh đọc",
+   "context_after": "đi đọc lại"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 6.85,
+   "t_end": 6.91,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "đọc đi đọc",
+   "context_after": "lại tới thuộc"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 7.14,
+   "t_end": 7.19,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "đi đọc lại",
+   "context_after": "tới thuộc làu"
+  },
+  {
+   "chunk_id": "c03",
+   "t_start": 7.4,
+   "t_end": 7.47,
+   "dur_s": 0.07,
+   "at_mark": "none",
+   "context_before": "lại tới thuộc",
+   "context_after": "làu Sáng dậy"
+  },
+  {
+   "chunk_id": "c03→c04",
+   "t_start": 7.78,
+   "t_end": 8.13,
+   "dur_s": 0.35,
+   "at_mark": "sentence",
+   "context_before": "tới thuộc làu",
+   "context_after": "Sáng dậy mình"
+  },
+  {
+   "chunk_id": "c04",
+   "t_start": 8.83,
+   "t_end": 8.88,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "dậy mình gấp",
+   "context_after": "sách viết thử"
+  },
+  {
+   "chunk_id": "c04",
+   "t_start": 9.01,
+   "t_end": 9.12,
+   "dur_s": 0.11,
+   "at_mark": "none",
+   "context_before": "mình gấp sách",
+   "context_after": "viết thử tới"
+  },
+  {
+   "chunk_id": "c04",
+   "t_start": 9.22,
+   "t_end": 9.31,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "gấp sách viết",
+   "context_after": "thử tới từ"
+  },
+  {
+   "chunk_id": "c04→c05",
+   "t_start": 9.64,
+   "t_end": 9.83,
+   "dur_s": 0.19,
+   "at_mark": "comma",
+   "context_before": "sách viết thử",
+   "context_after": "tới từ thứ"
+  },
+  {
+   "chunk_id": "c05",
+   "t_start": 9.95,
+   "t_end": 10.0,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "viết thử tới",
+   "context_after": "từ thứ năm"
+  },
+  {
+   "chunk_id": "c05→c06",
+   "t_start": 11.71,
+   "t_end": 12.11,
+   "dur_s": 0.4,
+   "at_mark": "beat",
+   "context_before": "thì mình bí",
+   "context_after": "Một thí nghiệm"
+  },
+  {
+   "chunk_id": "c06",
+   "t_start": 12.24,
+   "t_end": 12.3,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "mình bí Một",
+   "context_after": "thí nghiệm năm"
+  },
+  {
+   "chunk_id": "c06→c07",
+   "t_start": 13.91,
+   "t_end": 14.1,
+   "dur_s": 0.19,
+   "at_mark": "comma",
+   "context_before": "năm 2006 thấy",
+   "context_after": "nếu kiểm tra"
+  },
+  {
+   "chunk_id": "c07",
+   "t_start": 15.35,
+   "t_end": 15.44,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "thì nhóm đọc",
+   "context_after": "lại làm tốt"
+  },
+  {
+   "chunk_id": "c07",
+   "t_start": 15.84,
+   "t_end": 15.92,
+   "dur_s": 0.08,
+   "at_mark": "none",
+   "context_before": "đọc lại làm",
+   "context_after": "tốt hơn Nhưng"
+  },
+  {
+   "chunk_id": "c07",
+   "t_start": 16.02,
+   "t_end": 16.11,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "lại làm tốt",
+   "context_after": "hơn Nhưng hai"
+  },
+  {
+   "chunk_id": "c07→c08",
+   "t_start": 16.36,
+   "t_end": 16.71,
+   "dur_s": 0.35,
+   "at_mark": "sentence",
+   "context_before": "làm tốt hơn",
+   "context_after": "Nhưng hai ngày"
+  },
+  {
+   "chunk_id": "c08",
+   "t_start": 17.44,
+   "t_end": 17.61,
+   "dur_s": 0.17,
+   "at_mark": "comma",
+   "context_before": "hai ngày sau",
+   "context_after": "nhóm tự kiểm"
+  },
+  {
+   "chunk_id": "c08",
+   "t_start": 17.79,
+   "t_end": 17.84,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "ngày sau nhóm",
+   "context_after": "tự kiểm tra"
+  },
+  {
+   "chunk_id": "c08→c09",
+   "t_start": 19.26,
+   "t_end": 19.65,
+   "dur_s": 0.39,
+   "at_mark": "beat",
+   "context_before": "nhớ hơn hẳn",
+   "context_after": "Mình cần là"
+  },
+  {
+   "chunk_id": "c09",
+   "t_start": 20.98,
+   "t_end": 21.12,
+   "dur_s": 0.14,
+   "at_mark": "comma",
+   "context_before": "sáng hôm sau",
+   "context_after": "gấp sách lại"
+  },
+  {
+   "chunk_id": "c09",
+   "t_start": 21.23,
+   "t_end": 21.28,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "hôm sau gấp",
+   "context_after": "sách lại mình"
+  },
+  {
+   "chunk_id": "c09",
+   "t_start": 21.44,
+   "t_end": 21.53,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "sau gấp sách",
+   "context_after": "lại mình vẫn"
+  },
+  {
+   "chunk_id": "c09",
+   "t_start": 22.18,
+   "t_end": 22.26,
+   "dur_s": 0.08,
+   "at_mark": "none",
+   "context_before": "mình vẫn viết",
+   "context_after": "ra được Nên"
+  },
+  {
+   "chunk_id": "c09→c10",
+   "t_start": 22.57,
+   "t_end": 22.98,
+   "dur_s": 0.41,
+   "at_mark": "beat",
+   "context_before": "viết ra được",
+   "context_after": "Nên mình chia"
+  },
+  {
+   "chunk_id": "c10",
+   "t_start": 23.34,
+   "t_end": 23.39,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "Nên mình chia",
+   "context_after": "ba mươi từ"
+  },
+  {
+   "chunk_id": "c10",
+   "t_start": 23.9,
+   "t_end": 23.95,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "ba mươi từ",
+   "context_after": "thành ba phần"
+  },
+  {
+   "chunk_id": "c10",
+   "t_start": 24.69,
+   "t_end": 24.87,
+   "dur_s": 0.18,
+   "at_mark": "comma",
+   "context_before": "thành ba phần",
+   "context_after": "mỗi phần mười"
+  },
+  {
+   "chunk_id": "c10",
+   "t_start": 25.43,
+   "t_end": 25.49,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "mỗi phần mười",
+   "context_after": "từ Học hết"
+  },
+  {
+   "chunk_id": "c10→c11",
+   "t_start": 25.72,
+   "t_end": 26.06,
+   "dur_s": 0.34,
+   "at_mark": "sentence",
+   "context_before": "phần mười từ",
+   "context_after": "Học hết phần"
+  },
+  {
+   "chunk_id": "c11",
+   "t_start": 26.18,
+   "t_end": 26.24,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "mười từ Học",
+   "context_after": "hết phần nào"
+  },
+  {
+   "chunk_id": "c11",
+   "t_start": 26.38,
+   "t_end": 26.46,
+   "dur_s": 0.08,
+   "at_mark": "none",
+   "context_before": "từ Học hết",
+   "context_after": "phần nào mình"
+  },
+  {
+   "chunk_id": "c11",
+   "t_start": 26.88,
+   "t_end": 27.06,
+   "dur_s": 0.18,
+   "at_mark": "comma",
+   "context_before": "hết phần nào",
+   "context_after": "mình gấp sách"
+  },
+  {
+   "chunk_id": "c11",
+   "t_start": 27.5,
+   "t_end": 27.58,
+   "dur_s": 0.08,
+   "at_mark": "none",
+   "context_before": "mình gấp sách",
+   "context_after": "viết lại phần"
+  },
+  {
+   "chunk_id": "c11",
+   "t_start": 27.69,
+   "t_end": 27.75,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "gấp sách viết",
+   "context_after": "lại phần đó"
+  },
+  {
+   "chunk_id": "c11",
+   "t_start": 27.98,
+   "t_end": 28.04,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "sách viết lại",
+   "context_after": "phần đó chỗ"
+  },
+  {
+   "chunk_id": "c11→c12",
+   "t_start": 28.5,
+   "t_end": 28.66,
+   "dur_s": 0.16,
+   "at_mark": "comma",
+   "context_before": "lại phần đó",
+   "context_after": "chỗ nào bí"
+  },
+  {
+   "chunk_id": "c12→c13",
+   "t_start": 29.92,
+   "t_end": 30.31,
+   "dur_s": 0.39,
+   "at_mark": "beat",
+   "context_before": "mới mở sách",
+   "context_after": "Nhóm của Yang"
+  },
+  {
+   "chunk_id": "c13",
+   "t_start": 30.91,
+   "t_end": 30.96,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "Nhóm của Yang",
+   "context_after": "tổng hợp 222"
+  },
+  {
+   "chunk_id": "c13",
+   "t_start": 31.3,
+   "t_end": 31.36,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "Yang tổng hợp",
+   "context_after": "222 nghiên cứu"
+  },
+  {
+   "chunk_id": "c13→c14",
+   "t_start": 32.81,
+   "t_end": 33.01,
+   "dur_s": 0.2,
+   "at_mark": "comma",
+   "context_before": "222 nghiên cứu",
+   "context_after": "thấy lớp có"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 33.31,
+   "t_end": 33.41,
+   "dur_s": 0.1,
+   "at_mark": "none",
+   "context_before": "cứu thấy lớp",
+   "context_after": "có kiểm tra"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 33.5,
+   "t_end": 33.56,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "thấy lớp có",
+   "context_after": "kiểm tra nhỏ"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 34.31,
+   "t_end": 34.4,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "tra nhỏ thì",
+   "context_after": "điểm cao hơn"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 35.21,
+   "t_end": 35.31,
+   "dur_s": 0.1,
+   "at_mark": "none",
+   "context_before": "cao hơn lớp",
+   "context_after": "không làm kiểm"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 35.67,
+   "t_end": 35.72,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "lớp không làm",
+   "context_after": "kiểm tra nhỏ"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 36.43,
+   "t_end": 36.62,
+   "dur_s": 0.19,
+   "at_mark": "comma",
+   "context_before": "kiểm tra nhỏ",
+   "context_after": "ở mức vừa"
+  },
+  {
+   "chunk_id": "c14",
+   "t_start": 36.82,
+   "t_end": 36.92,
+   "dur_s": 0.1,
+   "at_mark": "none",
+   "context_before": "nhỏ ở mức",
+   "context_after": "vừa Sáng hôm"
+  },
+  {
+   "chunk_id": "c14→c15",
+   "t_start": 37.26,
+   "t_end": 37.65,
+   "dur_s": 0.39,
+   "at_mark": "beat",
+   "context_before": "ở mức vừa",
+   "context_after": "Sáng hôm sau"
+  },
+  {
+   "chunk_id": "c15",
+   "t_start": 38.03,
+   "t_end": 38.2,
+   "dur_s": 0.17,
+   "at_mark": "comma",
+   "context_before": "Sáng hôm sau",
+   "context_after": "sách vẫn gấp"
+  },
+  {
+   "chunk_id": "c15",
+   "t_start": 38.5,
+   "t_end": 38.59,
+   "dur_s": 0.09,
+   "at_mark": "none",
+   "context_before": "hôm sau sách",
+   "context_after": "vẫn gấp mình"
+  },
+  {
+   "chunk_id": "c15→c16",
+   "t_start": 38.89,
+   "t_end": 39.07,
+   "dur_s": 0.18,
+   "at_mark": "comma",
+   "context_before": "sách vẫn gấp",
+   "context_after": "mình tự viết"
+  },
+  {
+   "chunk_id": "c16",
+   "t_start": 39.99,
+   "t_end": 40.09,
+   "dur_s": 0.1,
+   "at_mark": "none",
+   "context_before": "tự viết được",
+   "context_after": "luggage đúng chữ"
+  },
+  {
+   "chunk_id": "c16",
+   "t_start": 40.25,
+   "t_end": 40.42,
+   "dur_s": 0.17,
+   "at_mark": "comma",
+   "context_before": "viết được luggage",
+   "context_after": "đúng chữ hành"
+  },
+  {
+   "chunk_id": "c16",
+   "t_start": 41.55,
+   "t_end": 41.6,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "lý hôm trước",
+   "context_after": "mình bí Còn"
+  },
+  {
+   "chunk_id": "c16→c17a",
+   "t_start": 42.06,
+   "t_end": 42.45,
+   "dur_s": 0.39,
+   "at_mark": "beat",
+   "context_before": "trước mình bí",
+   "context_after": "Còn bạn thử"
+  },
+  {
+   "chunk_id": "c17a",
+   "t_start": 42.95,
+   "t_end": 43.12,
+   "dur_s": 0.17,
+   "at_mark": "comma",
+   "context_before": "bí Còn bạn",
+   "context_after": "thử gấp sách"
+  },
+  {
+   "chunk_id": "c17a",
+   "t_start": 43.54,
+   "t_end": 43.65,
+   "dur_s": 0.11,
+   "at_mark": "none",
+   "context_before": "thử gấp sách",
+   "context_after": "lại thì viết"
+  },
+  {
+   "chunk_id": "c17a",
+   "t_start": 44.19,
+   "t_end": 44.24,
+   "dur_s": 0.05,
+   "at_mark": "none",
+   "context_before": "lại thì viết",
+   "context_after": "được mấy từ"
+  },
+  {
+   "chunk_id": "c17a",
+   "t_start": 44.35,
+   "t_end": 44.41,
+   "dur_s": 0.06,
+   "at_mark": "none",
+   "context_before": "thì viết được",
+   "context_after": "mấy từ Comment"
+  },
+  {
+   "chunk_id": "c17a",
+   "t_start": 44.6,
+   "t_end": 44.68,
+   "dur_s": 0.08,
+   "at_mark": "none",
+   "context_before": "viết được mấy",
+   "context_after": "từ Comment con"
+  },
+  {
+   "chunk_id": "c17a→c17b",
+   "t_start": 44.96,
+   "t_end": 45.3,
+   "dur_s": 0.34,
+   "at_mark": "sentence",
+   "context_before": "được mấy từ",
+   "context_after": "Comment con số"
+  }
+ ],
+ "sentences": [
+  {
+   "id": "c01",
+   "beat": "b01",
+   "text": "Học thuộc tối qua, sáng dậy quên sạch?",
+   "start": 0.03,
+   "end": 1.74,
+   "mid_breaks": [],
+   "stress": {
+    "words": "quên sạch",
+    "vs_rest_db": 2.4,
+    "vs_neighbours_db": 4.1,
+    "gain_applied_db": 8.8
+   },
+   "rise_st": -1.57,
+   "final_tone": "nang",
+   "pitch_shift_st": 0,
+   "rise_exempt": "L-082",
+   "stt": "Học thuộc tối qua, sáng dậy quên sạch.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.59,
+   "speech_s": 1.71,
+   "take": "c01-37.wav",
+   "candidates": [
+    [
+     "c01-37.wav",
+     1.0,
+     5.71,
+     -2.2
+    ]
+   ]
+  },
+  {
+   "id": "c02",
+   "beat": "b01",
+   "text": "Giả sử bây giờ không nhìn sách, bạn còn nhớ được những gì?",
+   "start": 1.82,
+   "end": 4.52,
+   "mid_breaks": [],
+   "stress": {
+    "words": "không nhìn sách",
+    "vs_rest_db": 2.8,
+    "vs_neighbours_db": 2.4,
+    "gain_applied_db": 8.5
+   },
+   "rise_st": 4.11,
+   "final_tone": "huyen",
+   "pitch_shift_st": 0,
+   "rise_exempt": "L-082",
+   "stt": "Giả sử bây giờ không nhìn sách bạn còn nhớ được những gì?",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.12,
+   "speech_s": 2.7,
+   "take": "c02-71.wav",
+   "candidates": [
+    [
+     "c02-11.wav",
+     1.0,
+     5.24,
+     2.1
+    ],
+    [
+     "c02-37.wav",
+     1.0,
+     5.68,
+     1.68
+    ],
+    [
+     "c02-53.wav",
+     0.923,
+     5.56,
+     0.97
+    ],
+    [
+     "c02-71.wav",
+     1.0,
+     5.37,
+     3.99
+    ]
+   ]
+  },
+  {
+   "id": "c03",
+   "beat": "b02",
+   "text": "Mình học ba mươi từ tiếng Anh, đọc đi đọc lại tới thuộc làu.",
+   "start": 4.92,
+   "end": 7.78,
+   "mid_breaks": [],
+   "stress": {
+    "words": "ba mươi từ",
+    "vs_rest_db": 2.7,
+    "vs_neighbours_db": 2.6,
+    "gain_applied_db": 3.0
+   },
+   "rise_st": null,
+   "final_tone": "huyen",
+   "pitch_shift_st": 0,
+   "stt": "Mình học 30 từ tiếng Anh, đọc đi đọc lại tới thuộc Lào.",
+   "stt_sim": 0.929,
+   "syll_per_s": 6.36,
+   "speech_s": 2.86,
+   "take": "c03-37.wav",
+   "candidates": [
+    [
+     "c03-11.wav",
+     0.893,
+     6.28,
+     null
+    ],
+    [
+     "c03-37.wav",
+     0.929,
+     6.73,
+     null
+    ],
+    [
+     "c03-53.wav",
+     0.893,
+     6.42,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c04",
+   "beat": "b02",
+   "text": "Sáng dậy mình gấp sách viết thử,",
+   "start": 8.13,
+   "end": 9.64,
+   "mid_breaks": [],
+   "stress": null,
+   "rise_st": null,
+   "final_tone": "hoi",
+   "pitch_shift_st": 0,
+   "stt": "Sáng dậy mình gấp sách viết thử.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.6,
+   "speech_s": 1.51,
+   "take": "c04-11.wav",
+   "candidates": [
+    [
+     "c04-11.wav",
+     1.0,
+     5.98,
+     null
+    ],
+    [
+     "c04-37.wav",
+     1.0,
+     5.69,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c05",
+   "beat": "b02",
+   "text": "tới từ thứ năm là hành lý thì mình bí.",
+   "start": 9.82,
+   "end": 11.71,
+   "mid_breaks": [],
+   "stress": {
+    "words": "bí",
+    "vs_rest_db": 2.4,
+    "vs_neighbours_db": 3.7,
+    "gain_applied_db": 6.2
+   },
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Tới từ thứ 5 là hành lý thì mình bí.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.68,
+   "speech_s": 1.89,
+   "take": "c05-11.wav",
+   "candidates": [
+    [
+     "c05-11.wav",
+     0.95,
+     5.68,
+     null
+    ],
+    [
+     "c05-37.wav",
+     0.9,
+     6.62,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c06",
+   "beat": "b03",
+   "text": "Một thí nghiệm năm 2006 thấy,",
+   "start": 12.11,
+   "end": 13.9,
+   "mid_breaks": [],
+   "stress": null,
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Một thí nghiệm năm 2006 thấy",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.29,
+   "speech_s": 1.79,
+   "take": "c06-71n.wav",
+   "candidates": [
+    [
+     "c06-11.wav",
+     0.889,
+     5.66,
+     null
+    ],
+    [
+     "c06-37.wav",
+     0.889,
+     5.56,
+     null
+    ],
+    [
+     "c06-71n.wav",
+     1.0,
+     5.66,
+     null
+    ],
+    [
+     "c06-89n.wav",
+     1.0,
+     5.49,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c07",
+   "beat": "b03",
+   "text": "nếu kiểm tra ngay thì nhóm đọc lại làm tốt hơn.",
+   "start": 14.091,
+   "end": 16.361,
+   "mid_breaks": [],
+   "stress": {
+    "words": "kiểm tra ngay",
+    "vs_rest_db": 2.9,
+    "vs_neighbours_db": 2.5,
+    "gain_applied_db": 6.3
+   },
+   "rise_st": null,
+   "final_tone": "ngang",
+   "pitch_shift_st": 0,
+   "stt": "Nếu kiểm tra ngay thì nhóm đọc lại làm tốt hơn.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.73,
+   "speech_s": 2.27,
+   "take": "c07-113.wav",
+   "candidates": [
+    [
+     "c07-11.wav",
+     0.955,
+     6.18,
+     null
+    ],
+    [
+     "c07-113.wav",
+     1.0,
+     5.98,
+     null
+    ],
+    [
+     "c07-131.wav",
+     1.0,
+     5.85,
+     null
+    ],
+    [
+     "c07-37.wav",
+     1.0,
+     6.08,
+     null
+    ],
+    [
+     "c07-53.wav",
+     0.955,
+     6.4,
+     null
+    ],
+    [
+     "c07-71.wav",
+     1.0,
+     6.04,
+     null
+    ],
+    [
+     "c07-89.wav",
+     1.0,
+     5.98,
+     null
+    ],
+    [
+     "c07-97.wav",
+     0.955,
+     6.11,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c08",
+   "beat": "b03",
+   "text": "Nhưng hai ngày sau, nhóm tự kiểm tra lại nhớ hơn hẳn.",
+   "start": 16.711,
+   "end": 19.251,
+   "mid_breaks": [],
+   "stress": {
+    "words": "hai ngày sau",
+    "vs_rest_db": 3.6,
+    "vs_neighbours_db": 2.3,
+    "gain_applied_db": 8.5
+   },
+   "rise_st": null,
+   "final_tone": "hoi",
+   "pitch_shift_st": 0,
+   "stt": "Nhưng hai ngày sau, nhóm tự kiểm tra lại nhớ hơn hẳn.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.31,
+   "speech_s": 2.54,
+   "take": "c08-37.wav",
+   "candidates": [
+    [
+     "c08-11.wav",
+     0.917,
+     5.36,
+     null
+    ],
+    [
+     "c08-37.wav",
+     1.0,
+     5.41,
+     null
+    ],
+    [
+     "c08-53.wav",
+     0.958,
+     5.04,
+     null
+    ],
+    [
+     "c08-71.wav",
+     1.0,
+     5.5,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c09",
+   "beat": "b04",
+   "text": "Mình cần là sáng hôm sau, gấp sách lại mình vẫn viết ra được.",
+   "start": 19.651,
+   "end": 22.571,
+   "mid_breaks": [],
+   "stress": {
+    "words": "sáng hôm sau",
+    "vs_rest_db": 2.9,
+    "vs_neighbours_db": 2.5,
+    "gain_applied_db": 6.3
+   },
+   "rise_st": null,
+   "final_tone": "nang",
+   "pitch_shift_st": 0,
+   "stt": "Mình cần là sáng hôm sau, gấp sách lại mình vẫn viết ra được.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.56,
+   "speech_s": 2.92,
+   "take": "c09-11.wav",
+   "candidates": [
+    [
+     "c09-11.wav",
+     1.0,
+     5.6,
+     null
+    ],
+    [
+     "c09-37.wav",
+     1.0,
+     5.93,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c10",
+   "beat": "b05",
+   "text": "Nên mình chia ba mươi từ thành ba phần, mỗi phần mười từ.",
+   "start": 22.971,
+   "end": 25.711,
+   "mid_breaks": [],
+   "stress": {
+    "words": "ba phần",
+    "vs_rest_db": 2.3,
+    "vs_neighbours_db": 3.2,
+    "gain_applied_db": 10.0
+   },
+   "rise_st": null,
+   "final_tone": "huyen",
+   "pitch_shift_st": 0,
+   "stt": "Nên mình chia 30 từ thành 3 phần, mỗi phần 10 từ.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.53,
+   "speech_s": 2.74,
+   "take": "c10-37.wav",
+   "candidates": [
+    [
+     "c10-11.wav",
+     0.923,
+     5.96,
+     null
+    ],
+    [
+     "c10-37.wav",
+     1.0,
+     5.91,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c11",
+   "beat": "b05",
+   "text": "Học hết phần nào, mình gấp sách viết lại phần đó,",
+   "start": 26.061,
+   "end": 28.491,
+   "mid_breaks": [],
+   "stress": {
+    "words": "gấp sách",
+    "vs_rest_db": 3.1,
+    "vs_neighbours_db": 2.4,
+    "gain_applied_db": 6.6
+   },
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Học hết phần nào, mình gấp sách viết lại phần đó.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.79,
+   "speech_s": 2.43,
+   "take": "c11-11.wav",
+   "candidates": [
+    [
+     "c11-11.wav",
+     1.0,
+     6.32,
+     null
+    ],
+    [
+     "c11-37.wav",
+     1.0,
+     6.21,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c12",
+   "beat": "b05",
+   "text": "chỗ nào bí mình mới mở sách.",
+   "start": 28.671,
+   "end": 29.911,
+   "mid_breaks": [],
+   "stress": null,
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Chỗ nào bí mình mới mở sách?",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.65,
+   "speech_s": 1.24,
+   "take": "c12-11.wav",
+   "candidates": [
+    [
+     "c12-11.wav",
+     1.0,
+     5.65,
+     null
+    ],
+    [
+     "c12-37.wav",
+     1.0,
+     6.03,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c13",
+   "beat": "b06",
+   "text": "Nhóm của Yang tổng hợp 222 nghiên cứu,",
+   "start": 30.311,
+   "end": 32.811,
+   "mid_breaks": [],
+   "stress": null,
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Nhóm của Giang tổng hợp 222 nghiên cứu",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.29,
+   "speech_s": 2.5,
+   "take": "c13-11.wav",
+   "candidates": [
+    [
+     "c13-11.wav",
+     1.0,
+     5.24,
+     null
+    ],
+    [
+     "c13-37.wav",
+     1.0,
+     5.43,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c14",
+   "beat": "b06",
+   "text": "thấy lớp có kiểm tra nhỏ thì điểm cao hơn lớp không làm kiểm tra nhỏ, ở mức vừa.",
+   "start": 33.012,
+   "end": 37.252,
+   "mid_breaks": [],
+   "stress": {
+    "words": "cao hơn",
+    "vs_rest_db": 2.4,
+    "vs_neighbours_db": 2.6,
+    "gain_applied_db": 4.0
+   },
+   "rise_st": null,
+   "final_tone": "huyen",
+   "pitch_shift_st": 0,
+   "stt": "Thấy lớp có kiểm tra nhỏ thì điểm cao hơn lớp không làm kiểm tra nhỏ ở mức vừa.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.51,
+   "speech_s": 4.24,
+   "take": "c14-89.wav",
+   "candidates": [
+    [
+     "c14-89.wav",
+     1.0,
+     5.54,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c15",
+   "beat": "b07",
+   "text": "Sáng hôm sau, sách vẫn gấp,",
+   "start": 37.652,
+   "end": 38.892,
+   "mid_breaks": [],
+   "stress": null,
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Sáng hôm sau sách vẫn gấp.",
+   "stt_sim": 1.0,
+   "syll_per_s": 6.12,
+   "speech_s": 1.24,
+   "take": "c15-11.wav",
+   "candidates": [
+    [
+     "c15-11.wav",
+     1.0,
+     6.12,
+     null
+    ],
+    [
+     "c15-37.wav",
+     1.0,
+     5.56,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c16",
+   "beat": "b07",
+   "text": "mình tự viết được luggage, đúng chữ hành lý hôm trước mình bí.",
+   "start": 39.072,
+   "end": 42.052,
+   "mid_breaks": [],
+   "stress": {
+    "words": "tự viết được",
+    "vs_rest_db": 3.1,
+    "vs_neighbours_db": 2.4,
+    "gain_applied_db": 9.1
+   },
+   "rise_st": null,
+   "final_tone": "sac",
+   "pitch_shift_st": 0,
+   "stt": "Mình tự viết được lắc gịch đúng chữ hành lý hôm trước mình bí.",
+   "stt_sim": 0.929,
+   "syll_per_s": 5.56,
+   "speech_s": 2.98,
+   "take": "c16-71r.wav",
+   "candidates": [
+    [
+     "c16-11.wav",
+     0.889,
+     5.79,
+     null
+    ],
+    [
+     "c16-37.wav",
+     0.889,
+     6.19,
+     null
+    ],
+    [
+     "c16-53.wav",
+     0.821,
+     6.03,
+     null
+    ],
+    [
+     "c16-71r.wav",
+     1.0,
+     5.88,
+     null
+    ],
+    [
+     "c16-89r.wav",
+     0.964,
+     6.33,
+     null
+    ]
+   ]
+  },
+  {
+   "id": "c17a",
+   "beat": "b08",
+   "text": "Còn bạn, thử gấp sách lại thì viết được mấy từ?",
+   "start": 42.452,
+   "end": 44.952,
+   "mid_breaks": [],
+   "stress": {
+    "words": "mấy từ",
+    "vs_rest_db": 2.3,
+    "vs_neighbours_db": 2.6,
+    "gain_applied_db": 1.1
+   },
+   "rise_st": -3.68,
+   "final_tone": "huyen",
+   "pitch_shift_st": 0,
+   "rise_exempt": "L-082",
+   "stt": "Còn bạn, thử gấp sách lại thì viết được mấy từ.",
+   "stt_sim": 1.0,
+   "syll_per_s": 5.64,
+   "speech_s": 2.5,
+   "take": "c17a-113.wav",
+   "candidates": [
+    [
+     "c17a-113.wav",
+     0.909,
+     6.11,
+     -3.58
+    ]
+   ]
+  },
+  {
+   "id": "c17b",
+   "beat": "b08",
+   "text": "Comment con số nha.",
+   "start": 45.302,
+   "end": 46.082,
+   "mid_breaks": [],
+   "stress": {
+    "words": "con số",
+    "vs_rest_db": 2.3,
+    "vs_neighbours_db": 3.4,
+    "gain_applied_db": 10.0
+   },
+   "rise_st": null,
+   "final_tone": "ngang",
+   "pitch_shift_st": 0,
+   "stt": "Comment con số nha!",
+   "stt_sim": 1.0,
+   "syll_per_s": 6.49,
+   "speech_s": 0.78,
+   "take": "c17b-101o.wav",
+   "candidates": [
+    [
+     "c17b-101o.wav",
+     1.0,
+     6.67,
+     null
+    ],
+    [
+     "c17b-113.wav",
+     1.0,
+     6.33,
+     null
+    ],
+    [
+     "c17b-139o.wav",
+     1.0,
+     6.49,
+     null
+    ],
+    [
+     "c17b-151.wav",
+     1.0,
+     6.67,
+     null
+    ],
+    [
+     "c17b-71b.wav",
+     1.0,
+     5.43,
+     null
+    ]
+   ]
+  }
+ ],
+ "english": [
+  {
+   "sid": "c13",
+   "word": "Yang",
+   "said": "Giang",
+   "t": 30.68,
+   "en_stt": "Thank you. Thank you."
+  },
+  {
+   "sid": "c16",
+   "word": "luggage",
+   "said": "lắc ghịt",
+   "t": 39.8,
+   "en_stt": "Good luck, good!"
+  },
+  {
+   "sid": "c17b",
+   "word": "Comment",
+   "said": "Com men",
+   "t": 45.2,
+   "en_stt": ""
+  }
+ ],
+ "flags": [],
+ "warnings": [],
+ "listen_checks": [
+  {
+   "chunk": "c01",
+   "text": "Học thuộc tối qua, sáng dậy quên sạch?",
+   "small": "Học thuật tối qua sáng dậy quên sạch (0.875, take c01-37 trước đó)",
+   "medium": "Học thuộc tối qua, sáng dậy quên sạch. (1.0)",
+   "verdict": "ĐẠT. Theo L-082 (âm cuối «sạch» thanh nặng): không nâng pitch, dùng take tự nhiên c01-37. Medium nghe đúng «Học thuộc … quên sạch»; lên giọng đo được −1,57 st, được miễn theo L-082."
+  },
+  {
+   "chunk": "c03",
+   "text": "Mình học ba mươi từ tiếng Anh, đọc đi đọc lại tới thuộc làu.",
+   "small": "Mình học 30 từ tiếng Anh, đọc đi đọc lại tới thuộc Lào (0.929)",
+   "medium": "Mình học 30 từ tiếng Anh, đọc đi đọc lại tới thuộc Lào. (0.929)",
+   "verdict": "Cần nghe tai 1 chữ: «thuộc làu» ra «thuộc Lào» ở cả small lẫn medium (làu là từ hiếm, gần âm với Lào). Các chữ còn lại khớp. Không có take nào STT ra «làu» (7 take). Rule Reviewer chấp nhận rủi ro; phụ đề phải ghi «thuộc làu»."
+  },
+  {
+   "chunk": "c13",
+   "text": "Nhóm của Yang tổng hợp 222 nghiên cứu,",
+   "small": "(v16c s09) «220 .2»",
+   "medium": "Nhóm của Giang tổng hợp 222 nghiên cứu (1.0)",
+   "verdict": "ĐẠT. Medium ra «Nhóm của Giang tổng hợp 222 nghiên cứu»: «222» được đọc đủ «hai trăm hai mươi hai» (STT tự đổi về chữ số). «Yang» đọc theo phiên âm đã duyệt «Giang»."
+  },
+  {
+   "chunk": "c16",
+   "text": "mình tự viết được luggage, đúng chữ hành lý hôm trước mình bí.",
+   "small": "lắc ghịch (take thô, sim 1.0)",
+   "medium": "Mình tự viết được lắc gịch đúng chữ hành lý hôm trước mình bí. (0.929)",
+   "verdict": "Cần nghe tai: tiếng Việt medium ra «lắc gịch» (đúng phiên âm), STT tiếng Anh trên đúng đoạn chữ đó ra «Good luck, good!», chưa ra «luggage». Rule Reviewer: ĐẠT."
+  },
+  {
+   "chunk": "c17a",
+   "text": "Còn bạn, thử gấp sách lại thì viết được mấy từ?",
+   "small": "…gấp sắt lại thì viết được máy từ (0.818–0.864)",
+   "medium": "Còn bạn, thử gấp sách lại thì viết được mấy từ. (1.0)",
+   "verdict": "ĐẠT. Theo L-082 (âm cuối «từ» thanh huyền): bỏ nâng pitch, dùng take tự nhiên c17a-113. Medium nghe «… viết được mấy từ» (1,0). Ý hỏi do «mấy» và dấu «?» trên phụ đề."
+  },
+  {
+   "chunk": "c17b",
+   "text": "Comment con số nha.",
+   "small": "Con mê/Còn mình còn số nha (0.5–0.6)",
+   "medium": "Comment con số nha! (1.0)",
+   "verdict": "ĐẠT. Take c17b-101o (chữ nhập gốc «Comment», R6 cho phép). Whisper medium vi và en đều ra «Comment con số nha»."
+  }
+ ]
+}
