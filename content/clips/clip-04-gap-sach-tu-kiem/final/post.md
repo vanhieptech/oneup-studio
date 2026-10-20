@@ -25,6 +25,7 @@ HỌC THUỘC TỐI QUA? SÁNG QUÊN SẠCH!
 ```
 Tiêu đề TikTok: "Học thuộc tối qua, sáng dậy quên sạch — không nhìn sách bạn nhớ được gì?"
 Cover: template A (luật 54), props trong `spec.json → cover`, bản sao `final/cover/cover-a.props.json`. File: `final/cover.png` (1080×1920), tải lên riêng, không lấy frame video. Frame cover: **0s** (ảnh bìa tải lên riêng từ template).
+Bản Instagram/Threads feed: `final/cover-1080x1350.png` (cắt 4:5 từ cover, y 265–1615, giữ tag series, hero, logo, nhân vật). Theme LIGHT theo theme-map (21/10), bỏ gạch chữ hàng 1 (strike −1) vì «Học thuộc tối qua» là sự thật, không phải thói quen sai.
 
 ## 3. Caption / mô tả TikTok
 ```

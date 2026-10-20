@@ -1,6 +1,6 @@
 {
   "direction": "a",
-  "theme": "dark",
+  "theme": "light",
   "series": "Học đúng cách",
   "ep": 4,
   "hero": [
@@ -8,7 +8,7 @@
     "SÁNG QUÊN SẠCH!"
   ],
   "accent": 1,
-  "strike": 0,
+  "strike": -1,
   "expression": "despair",
   "action": "reacting",
   "emote": "!",
