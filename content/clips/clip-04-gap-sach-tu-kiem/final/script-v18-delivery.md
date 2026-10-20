@@ -70,3 +70,8 @@ Dựa trên `final/script-v18-LOCKED.md` (Hiệp đã duyệt lời; 187 chữ, 
 - «nhóm» 2 nghĩa: ghi nhận cho clip sau, không sửa bản khoá.
 - Đề xuất 8–10 take cho c07/c14: đồng ý.
 - Diff từng chữ chunk vs LOCKED: 187/187 khớp.
+
+### Quyết định Rule Reviewer R8 (20/10/2026 23:30, theo Kokoro Voice báo lệch L-027)
+- Hook b01 (c01–c02) theo **L-027**: khoảng ghép giữa c01 và c02 **≤ 0,1s** (thay cho 0,35 `//`). Không chèn thêm lặng ở dấu phẩy trong c01 hay c02: để F5 tự nghỉ, và không được chèn lên 0,18s. Sau hook (c02 → c03) vẫn nghỉ 0,4s như cũ.
+- Lý do: L-027 là lỗi Hiệp đã bắt (hook vấp, cụt). W-17 chỉ đòi nghỉ đúng ranh giới cụm, không đòi nghỉ dài, nên hai luật không mâu thuẫn. Tốc độ giữ như hiện tại (Hiệp 20/10: đọc nhanh, không chậm lại).
+- Ngắt giữa cụm (đề xuất E1 của Kokoro): ở các cụm cấm ngắt «ngay thì», «nhỏ thì», «kiểm tra lại nhớ», «cần là sáng», «gấp sách lại thì», lặng ≥ 0,12s là trả lại take. Ở chỗ khác không có ký hiệu ngắt: lặng ≥ 0,12s ghi cảnh báo vào `prosody-measure-v18.md`, lặng ≥ 0,25s là trả lại take. Ngưỡng chặn chung sẽ đo lại trên giọng F5 Thái Sơn sau v18.
