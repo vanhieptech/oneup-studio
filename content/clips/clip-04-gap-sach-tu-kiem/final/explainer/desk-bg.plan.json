@@ -1,0 +1,77 @@
+{
+ "version": 1,
+ "id": "c04-ebg",
+ "title": "bg",
+ "meta": {
+  "clip": "clip-04",
+  "week": 1,
+  "source": "final/spec.json"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "bg2",
+   "beat": "clip-04.b06",
+   "duration": 1.0,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [],
+   "props": [
+    {
+     "kind": "book",
+     "x": 300,
+     "y": 1020,
+     "s": 0.85,
+     "state": "closed"
+    },
+    {
+     "kind": "sheet",
+     "x": 185,
+     "y": 620,
+     "s": 0.3,
+     "rot": 7,
+     "inkLines": 3,
+     "inkAt": 0
+    },
+    {
+     "kind": "sheet",
+     "x": 470,
+     "y": 1250,
+     "s": 0.48,
+     "inkLines": 4,
+     "inkAt": -3
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 22,
+     "len": 200,
+     "keys": [
+      [
+       0,
+       434,
+       1306
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

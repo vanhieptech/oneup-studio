@@ -118,7 +118,7 @@ def remotion_plan(spec, part):
                         "audio": {"src": f"voice/{l['_key']}.wav", "duration": l["_dur"], "envelope": l["_env"], "engine": l["_engine"]}})
             segs.append({"text": l["en"], "start": 0.0 if (si == 0 and li == 0 and part is spec["parts"][0]) else round(st + 0.05, 3), "end": round(en + 0.2, 3), "highlight": l.get("hl", [])})  # rule-55/L-021: caption on frame 0
             timing.append({"beat": sc["beat"], "scene": sc["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": l["_dur"]})
-            t = en + ((0.08 if hook else 0.2) if li < len(sc["lines"]) - 1 else 0)
+            t = en + ((0.08 if hook else pc.get("gap", 0.2)) if li < len(sc["lines"]) - 1 else 0)  # clip-04 v14b: pacing.gap
         dur = round(t + (0.06 if hook else pc.get("tail", 0.45)), 3)
         dlg[-1]["end"] = min(dlg[-1]["end"], dur); segs[-1]["end"] = min(segs[-1]["end"], round(dur - 0.05, 3))
         for i in range(len(segs) - 1): segs[i]["end"] = min(segs[i]["end"], segs[i + 1]["start"])
@@ -137,9 +137,10 @@ def remotion_plan(spec, part):
     return plan, timing, sum(s["duration"] for s in scenes)
 
 def explainer(spec, part, fdir):
-    t = 0.35; secs = []; timing = []; mix = []
+    pc = spec.get("pacing") or {}  # clip-04 v14b: optional explainer pacing (ex_start/ex_lead/ex_gap/ex_tail), defaults = old values
+    t = pc.get("ex_start", 0.35); secs = []; timing = []; mix = []
     for sec in part["sections"]:
-        s0 = t; t += 0.3; lines = []
+        s0 = t; t += pc.get("ex_lead", 0.3); lines = []
         for li, l in enumerate(sec["lines"]):
             st = round(t, 3); d = l["_dur"]
             words = []
@@ -155,8 +156,8 @@ def explainer(spec, part, fdir):
                                   if l.get("_phr") and any(ph.get("en") for ph in l["phrases"]) else en_words(l["en"], st + 0.05, st + d - 0.1, l.get("hl", [])))})
             mix.append((l["_key"], st))
             timing.append({"beat": sec["beat"], "scene": sec["id"], "speaker": l["speaker"], "say": spoken(l), "en": l["en"], "emotion": l["emotion"], "key": l["_key"], "local": st, "dur": d})
-            t = st + d + 0.25
-        t += 0.3
+            t = st + d + pc.get("ex_gap", 0.25)
+        t += pc.get("ex_tail", 0.3)
         for i, ln in enumerate(lines[:-1]): ln["capEnd"] = min(ln["capEnd"], lines[i + 1]["start"])
         a0 = lines[0]["start"]; b0 = lines[-1]["capEnd"]  # same formula as the template's A(id, f)
         hits = [{"id": h["id"], "t": round(a0 + h["f"] * (b0 - a0), 3), "sfx": h.get("sfx")} for h in sec.get("hits", [])]

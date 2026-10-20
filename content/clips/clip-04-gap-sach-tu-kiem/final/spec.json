@@ -10,13 +10,13 @@
   },
   "id": "clip-04-final",
   "clip": "clip-04",
-  "title": "Gap sach tu kiem (HTB 23.14) - script v14 locked",
+  "title": "Gấp sách tự kiểm (HTB 23.14) - script v14 locked",
   "week": 1,
   "theme": "dark",
-  "pillar": "Hoc dung cach",
+  "pillar": "Học đúng cách",
   "story": "monologue Thay (L-039), vi du 30 tu tieng Anh di du lich (minh hoa), L-050 meaning-by-objects zero-doodle, L-059 bang canh 9 cot trong script-v14.md",
   "trend": "supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)",
-  "voice_prefix": "c04v14",
+  "voice_prefix": "c04v14b",
   "revisions": [
     {
       "v": "v14",
@@ -27,11 +27,11 @@
   "cover": {
     "direction": "a",
     "theme": "dark",
-    "series": "Hoc dung cach",
+    "series": "Học đúng cách",
     "ep": 4,
     "hero": [
-      "HOC THUOC TOI QUA?",
-      "SANG QUEN SACH!"
+      "HỌC THUỘC TỐI QUA?",
+      "SÁNG QUÊN SẠCH!"
     ],
     "accent": 1,
     "strike": 0,
@@ -41,7 +41,7 @@
     "tilt": -5
   },
   "hook": {
-    "text": "HOC THUOC TOI QUA, SANG DAY QUEN SACH?",
+    "text": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?",
     "scenes": [
       "b01"
     ],
@@ -70,7 +70,7 @@
   },
   "throughline": "Học thuộc tối qua VÀ sáng dậy quên sạch, NHƯNG chỉ nhìn chữ thì quen mắt chưa tự nhớ lần nào, VÌ VẬY gấp sách tự viết lại, chia nhỏ thẻ và sáng hôm sau viết trước khi mở sách",
   "hook_question": {
-    "asked": "Khong nhin sach, ban co the nho duoc nhung gi?",
+    "asked": "Không nhìn sách, bạn có thể nhớ được những gì?",
     "answered": "viet lai duoc may tu; luggage bi sang hom truoc, sang hom sau tu viet duoc"
   },
   "structure": {
@@ -194,7 +194,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b01a.wav"
+              "voice_file": "voice/c04v14b-b01a.wav"
             },
             {
               "speaker": "hiep",
@@ -214,14 +214,14 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b01b.wav"
+              "voice_file": "voice/c04v14b-b01b.wav"
             }
           ],
           "stage": {
             "action": "Sach gap day sang ben, giay trang, but dung ngay frame dau",
             "react": "sung, dau cu the"
           },
-          "narration": "HOC THUOC TOI QUA, SANG DAY QUEN SACH?"
+          "narration": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?"
         },
         {
           "id": "b02",
@@ -291,20 +291,17 @@
               ],
               "phrases": [
                 {
-                  "t": "Ví dụ học từ tiếng Anh"
-                },
-                {
-                  "t": "để đi du lịch."
+                  "t": "Ví dụ học từ tiếng Anh để đi du lịch."
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b02a.wav"
+              "voice_file": "voice/c04v14b-b02a.wav"
             },
             {
               "speaker": "hiep",
               "emotion": "focused",
-              "text": "Tối đọc đi đọc lại. Ba mươi từ, tới **thuộc làu**.",
-              "say": "Tối đọc đi đọc lại. Ba mươi từ, tới thuộc làu.",
+              "text": "Tối đọc đi đọc lại.",
+              "say": "Tối đọc đi đọc lại.",
               "en": "Reread them again that night",
               "hl": [
                 0
@@ -312,13 +309,27 @@
               "phrases": [
                 {
                   "t": "Tối đọc đi đọc lại."
-                },
+                }
+              ],
+              "voice_role": "Thầy",
+              "voice_file": "voice/c04v14b-b02b.wav"
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "text": "Ba mươi từ, tới **thuộc làu**.",
+              "say": "Ba mươi từ, tới thuộc làu.",
+              "en": "Until they felt fluent",
+              "hl": [
+                3
+              ],
+              "phrases": [
                 {
                   "t": "Ba mươi từ, tới {nhấn: thuộc làu}."
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b02b.wav"
+              "voice_file": "voice/c04v14b-b02c.wav"
             },
             {
               "speaker": "hiep",
@@ -335,7 +346,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b02c.wav"
+              "voice_file": "voice/c04v14b-b02d.wav"
             }
           ],
           "stage": {
@@ -488,7 +499,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b03a.wav"
+              "voice_file": "voice/c04v14b-b03a.wav"
             },
             {
               "speaker": "hiep",
@@ -501,31 +512,63 @@
               ],
               "phrases": [
                 {
-                  "t": "airport, hotel, ticket, passport."
+                  "t": "e pọt,",
+                  "keep": true
+                },
+                {
+                  "t": "hô ten,",
+                  "keep": true
+                },
+                {
+                  "t": "tích kịt,",
+                  "keep": true
+                },
+                {
+                  "t": "pát pọt.",
+                  "keep": true
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b03b.wav"
+              "voice_file": "voice/c04v14b-b03b.wav"
             },
             {
               "speaker": "hiep",
               "emotion": "surprised",
-              "text": "Tới từ thứ năm, hành lý. **Bút dừng**. Không nhớ từ tiếng Anh.",
-              "say": "Tới từ thứ năm, hành lý. Bút dừng. Không nhớ từ tiếng Anh.",
+              "text": "Tới từ thứ năm, hành lý. **Bút dừng**.",
+              "say": "Tới từ thứ năm, hành lý. Bút dừng.",
               "en": "At fifth word, pen stopped",
               "hl": [
                 4
               ],
               "phrases": [
                 {
-                  "t": "Tới từ thứ năm, hành lý."
+                  "t": "Tới từ thứ năm, hành lý.",
+                  "keep": true
                 },
                 {
-                  "t": "{nhấn: Bút dừng}. Không nhớ từ tiếng Anh."
+                  "t": "{nhấn: Bút dừng}.",
+                  "keep": true
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b03c.wav"
+              "voice_file": "voice/c04v14b-b03c.wav"
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Không nhớ từ tiếng Anh.",
+              "say": "Không nhớ từ tiếng Anh.",
+              "en": "Couldn't recall English word",
+              "hl": [
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "Không nhớ từ tiếng Anh."
+                }
+              ],
+              "voice_role": "Thầy",
+              "voice_file": "voice/c04v14b-b03d.wav"
             }
           ],
           "stage": {
@@ -618,31 +661,50 @@
               ],
               "phrases": [
                 {
-                  "t": "Mình chột dạ."
+                  "t": "Mình chột dạ.",
+                  "keep": true
                 },
                 {
-                  "t": "Hay tối qua chỉ nhìn chữ đến {nhấn: quen mắt}?"
+                  "t": "Hay tối qua chỉ nhìn chữ đến {nhấn: quen mắt}?",
+                  "keep": true
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b04a.wav"
+              "voice_file": "voice/c04v14b-b04a.wav"
             },
             {
               "speaker": "hiep",
               "emotion": "sad",
-              "text": "**Giấy trắng** sau passport. Dừng ở đó.",
-              "say": "Giấy trắng sau pát pọt. Dừng ở đó.",
+              "text": "**Giấy trắng** sau passport.",
+              "say": "Giấy trắng sau pát pọt.",
               "en": "Blank after passport on paper",
               "hl": [
                 0
               ],
               "phrases": [
                 {
-                  "t": "{nhấn: Giấy trắng} sau passport. Dừng ở đó."
+                  "t": "{nhấn: Giấy trắng} sau passport."
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b04b.wav"
+              "voice_file": "voice/c04v14b-b04b.wav"
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "text": "Dừng ở đó.",
+              "say": "Dừng ở đó.",
+              "en": "I stopped right there",
+              "hl": [
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "Dừng ở đó."
+                }
+              ],
+              "voice_role": "Thầy",
+              "voice_file": "voice/c04v14b-b04c.wav"
             }
           ],
           "stage": {
@@ -746,7 +808,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b05a.wav"
+              "voice_file": "voice/c04v14b-b05a.wav"
             },
             {
               "speaker": "hiep",
@@ -763,7 +825,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b05b.wav"
+              "voice_file": "voice/c04v14b-b05b.wav"
             },
             {
               "speaker": "hiep",
@@ -780,7 +842,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b05c.wav"
+              "voice_file": "voice/c04v14b-b05c.wav"
             }
           ],
           "stage": {
@@ -836,7 +898,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b06a.wav"
+              "voice_file": "voice/c04v14b-b06a.wav"
             },
             {
               "speaker": "hiep",
@@ -853,7 +915,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b06b.wav"
+              "voice_file": "voice/c04v14b-b06b.wav"
             },
             {
               "speaker": "hiep",
@@ -870,7 +932,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b06c.wav"
+              "voice_file": "voice/c04v14b-b06c.wav"
             },
             {
               "speaker": "hiep",
@@ -887,7 +949,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b06d.wav"
+              "voice_file": "voice/c04v14b-b06d.wav"
             }
           ],
           "stage": {
@@ -935,7 +997,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b07a.wav"
+              "voice_file": "voice/c04v14b-b07a.wav"
             },
             {
               "speaker": "hiep",
@@ -952,7 +1014,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b07b.wav"
+              "voice_file": "voice/c04v14b-b07b.wav"
             },
             {
               "speaker": "hiep",
@@ -969,7 +1031,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b07c.wav"
+              "voice_file": "voice/c04v14b-b07c.wav"
             },
             {
               "speaker": "hiep",
@@ -982,11 +1044,16 @@
               ],
               "phrases": [
                 {
-                  "t": "Vẫn có ích. Tác dụng hẹp."
+                  "t": "Vẫn có ích.",
+                  "keep": true
+                },
+                {
+                  "t": "Tác dụng hẹp.",
+                  "keep": true
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b07d.wav"
+              "voice_file": "voice/c04v14b-b07d.wav"
             }
           ],
           "stage": {
@@ -1079,7 +1146,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b08a.wav"
+              "voice_file": "voice/c04v14b-b08a.wav"
             },
             {
               "speaker": "hiep",
@@ -1096,7 +1163,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b08b.wav"
+              "voice_file": "voice/c04v14b-b08b.wav"
             },
             {
               "speaker": "hiep",
@@ -1113,7 +1180,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b08c.wav"
+              "voice_file": "voice/c04v14b-b08c.wav"
             },
             {
               "speaker": "hiep",
@@ -1130,7 +1197,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b08d.wav"
+              "voice_file": "voice/c04v14b-b08d.wav"
             }
           ],
           "stage": {
@@ -1219,7 +1286,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b09a.wav"
+              "voice_file": "voice/c04v14b-b09a.wav"
             },
             {
               "speaker": "hiep",
@@ -1232,11 +1299,16 @@
               ],
               "phrases": [
                 {
-                  "t": "Sách vẫn gấp. {nhấn: Viết trước}."
+                  "t": "Sách vẫn gấp.",
+                  "keep": true
+                },
+                {
+                  "t": "{nhấn: Viết trước}.",
+                  "keep": true
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b09b.wav"
+              "voice_file": "voice/c04v14b-b09b.wav"
             },
             {
               "speaker": "hiep",
@@ -1253,7 +1325,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b09c.wav"
+              "voice_file": "voice/c04v14b-b09c.wav"
             }
           ],
           "stage": {
@@ -1341,24 +1413,41 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b10a.wav"
+              "voice_file": "voice/c04v14b-b10a.wav"
             },
             {
               "speaker": "hiep",
               "emotion": "happy",
-              "text": "Sáng hôm sau tự viết được, không cần sách.",
-              "say": "Sáng hôm sau tự viết được, không cần sách.",
+              "text": "Sáng hôm sau tự viết được,",
+              "say": "Sáng hôm sau tự viết được,",
               "en": "Next morning wrote it myself",
               "hl": [
                 4
               ],
               "phrases": [
                 {
-                  "t": "Sáng hôm sau tự viết được, không cần sách."
+                  "t": "Sáng hôm sau tự viết được,"
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b10b.wav"
+              "voice_file": "voice/c04v14b-b10b.wav"
+            },
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "text": "không cần sách.",
+              "say": "không cần sách.",
+              "en": "Without opening the book",
+              "hl": [
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "không cần sách."
+                }
+              ],
+              "voice_role": "Thầy",
+              "voice_file": "voice/c04v14b-b10c.wav"
             },
             {
               "speaker": "hiep",
@@ -1375,7 +1464,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b10c.wav"
+              "voice_file": "voice/c04v14b-b10d.wav"
             },
             {
               "speaker": "hiep",
@@ -1392,7 +1481,7 @@
                 }
               ],
               "voice_role": "Thầy",
-              "voice_file": "voice/c04v14-b10d.wav"
+              "voice_file": "voice/c04v14b-b10e.wav"
             }
           ],
           "stage": {

@@ -3,7 +3,7 @@ DO NOT change a word. voice_prefix c04v14, Thay only F5 Thai Son speed 0.9 (voic
 Parts: A remotion b01-b05, E hyperframes b06-b07, B remotion b08-b10. End card appended at assemble stage (ffmpeg, 2s)."""
 import json, re, shutil, os
 D='/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/'
-P='c04v14'
+P='c04v14b'  # v14b 20/10: F5 speed 1.0 regen (Rule Reviewer QA), 4 EN chunks restored by splitting lines (words unchanged)
 # lines: (scene, text_with_bold, phrases_with_nhan_pipe_split_by_|_as_list, en_chunk, hl_words, emotion)
 # Each entry = ONE spec line (caption chunk <=8 words). Phrases are the | splits inside that line.
 L=[]
@@ -13,23 +13,22 @@ def add(sc, text, phrases, en, hl, emo):
 add("b01","Học thuộc tối qua, sáng dậy **quên sạch**?",["Học thuộc tối qua, sáng dậy {nhấn: quên sạch}?"],"Memorized last night, forgotten this morning?",["forgotten"],"surprised")
 add("b01","**Không nhìn sách**, bạn có thể nhớ được những gì?",["{nhấn: Không nhìn sách},","bạn có thể nhớ được những gì?"],"Without looking, what can you recall?",["recall"],"focused")
 # b02
-add("b02","Ví dụ học từ tiếng Anh để đi du lịch.",["Ví dụ học từ tiếng Anh","để đi du lịch."],"Example: thirty English travel words",["English"],"neutral")
-add("b02","Tối đọc đi đọc lại. Ba mươi từ, tới **thuộc làu**.",["Tối đọc đi đọc lại.","Ba mươi từ, tới {nhấn: thuộc làu}."],"Reread them again that night",["Reread"],"focused")
-add("b02","Tưởng mai nhớ hết.",["Tưởng mai nhớ hết."],"Until they felt fluent",["fluent"],"happy")
-# EN chunk 4 kept in order as separate line would duplicate meaning; use chunk4 for last line instead - fix below
-L[-1]["en"]="Thought I'd remember everything tomorrow"; L[-1]["hl"]=["remember"]
+add("b02","Ví dụ học từ tiếng Anh để đi du lịch.",["Ví dụ học từ tiếng Anh để đi du lịch."],"Example: thirty English travel words",["English"],"neutral")  # delivery rev3: no break «tiếng Anh / để đi»
+add("b02","Tối đọc đi đọc lại.",["Tối đọc đi đọc lại."],"Reread them again that night",["Reread"],"focused")
+add("b02","Ba mươi từ, tới **thuộc làu**.",["Ba mươi từ, tới {nhấn: thuộc làu}."],"Until they felt fluent",["fluent"],"focused")
+add("b02","Tưởng mai nhớ hết.",["Tưởng mai nhớ hết."],"Thought I'd remember everything tomorrow",["remember"],"happy")
 # b03
 add("b03","Sáng dậy, gấp sách viết lại.",["Sáng dậy, gấp sách viết lại."],"Morning: closed book, wrote back",["closed"],"focused")
-add("b03","airport, hotel, ticket, passport.",["airport, hotel, ticket, passport."],"airport, hotel, ticket, passport",["passport"],"focused")
-add("b03","Tới từ thứ năm, hành lý. **Bút dừng**. Không nhớ từ tiếng Anh.",["Tới từ thứ năm, hành lý.","{nhấn: Bút dừng}. Không nhớ từ tiếng Anh."],"At fifth word, pen stopped",["stopped"],"surprised")
+add("b03","airport, hotel, ticket, passport.",["airport,","hotel,","ticket,","passport."],"airport, hotel, ticket, passport",["passport"],"focused")
+L[-1]["keep"]=True; L[-1]["respell_en"]=True  # F5: one unit per word (no merge) -> clear break between the 4 words (QA b03b)
+add("b03","Tới từ thứ năm, hành lý. **Bút dừng**.",["Tới từ thứ năm, hành lý.","{nhấn: Bút dừng}."],"At fifth word, pen stopped",["stopped"],"surprised")
+L[-1]["keep"]=True  # prosody-plan: pause (period) before the stressed 'Bút dừng'; do not merge short units
 add("b03","Không nhớ từ tiếng Anh.",["Không nhớ từ tiếng Anh."],"Couldn't recall English word",["recall"],"sad")
-# NOTE b03 last phrase duplicated if kept - removed below
-L.pop()
 # b04
 add("b04","Mình chột dạ. Hay tối qua chỉ nhìn chữ đến **quen mắt**?",["Mình chột dạ.","Hay tối qua chỉ nhìn chữ đến {nhấn: quen mắt}?"],"Had I only looked until familiar?",["familiar"],"confused")
-add("b04","**Giấy trắng** sau passport. Dừng ở đó.",["{nhấn: Giấy trắng} sau passport. Dừng ở đó."],"Blank after passport on paper",["Blank"],"sad")
+L[-1]["keep"]=True
+add("b04","**Giấy trắng** sau passport.",["{nhấn: Giấy trắng} sau passport."],"Blank after passport on paper",["Blank"],"sad")
 add("b04","Dừng ở đó.",["Dừng ở đó."],"I stopped right there",["stopped"],"sad")
-L.pop()  # 'Dung o do' already in previous line
 # b05
 add("b05","Viết không ra, mình **mở sách**.",["Viết không ra, mình {nhấn: mở sách}."],"When stuck, open book",["open"],"focused")
 add("b05","Xem đúng chỗ bí: **luggage**.",["Xem đúng chỗ bí: {nhấn: luggage}."],"Check stuck spot: luggage",["luggage"],"focused")
@@ -43,7 +42,8 @@ add("b06","Điểm cao hơn mức vừa.",["Điểm cao hơn mức vừa."],"Mod
 add("b07","Dunlosky xếp mười cách.",["Dunlosky xếp mười cách."],"Dunlosky ranked ten methods",["ranked"],"focused")
 add("b07","Tự kiểm nằm **nhóm cao nhất**.",["Tự kiểm nằm {nhấn: nhóm cao nhất}."],"Self-testing in highest group",["highest"],"focused")
 add("b07","Đọc lại, gạch chân nằm nhóm thấp nhất.",["Đọc lại, gạch chân nằm nhóm thấp nhất."],"Rereading, highlighting in lowest group",["lowest"],"focused")
-add("b07","Vẫn có ích. Tác dụng hẹp.",["Vẫn có ích. Tác dụng hẹp."],"Still helps, but narrowly",["helps"],"neutral")
+add("b07","Vẫn có ích. Tác dụng hẹp.",["Vẫn có ích.","Tác dụng hẹp."],"Still helps, but narrowly",["helps"],"neutral")
+L[-1]["keep"]=True
 # b08
 add("b08","Mình chia ba mươi thẻ thành **ba chồng**.",["Mình chia ba mươi thẻ thành {nhấn: ba chồng}."],"Thirty cards in three piles",["three"],"focused")
 add("b08","Mỗi chồng mười thẻ.",["Mỗi chồng mười thẻ."],"Ten cards in each pile",["Ten"],"focused")
@@ -51,17 +51,15 @@ add("b08","Học xong chồng đầu.",["Học xong chồng đầu."],"Finish fi
 add("b08","Gấp sách, viết lại đúng chồng đó.",["Gấp sách, viết lại đúng chồng đó."],"Write that pile back",["Write"],"happy")
 # b09
 add("b09","Sáng hôm sau, quay lại giấy đó.",["Sáng hôm sau, quay lại giấy đó."],"Next morning, same paper again",["Next"],"happy")
-add("b09","Sách vẫn gấp. **Viết trước**.",["Sách vẫn gấp. {nhấn: Viết trước}."],"Book still closed, wrote first",["closed"],"focused")
+add("b09","Sách vẫn gấp. **Viết trước**.",["Sách vẫn gấp.","{nhấn: Viết trước}."],"Book still closed, wrote first",["closed"],"focused")
+L[-1]["keep"]=True
 add("b09","Lần này viết thêm được **luggage**.",["Lần này viết thêm được {nhấn: luggage}."],"Added luggage this time",["luggage"],"happy")
 # b10
 add("b10","**Luggage** bí sáng hôm trước.",["{nhấn: Luggage} bí sáng hôm trước."],"Luggage stuck previous morning",["stuck"],"focused")
-add("b10","Sáng hôm sau tự viết được, không cần sách.",["Sáng hôm sau tự viết được, không cần sách."],"Next morning wrote it myself",["myself"],"happy")
-# EN chunk3 for b10 is 'Without opening the book' - map next line part
-add("b10","Bạn viết lại được mấy từ?",["Bạn viết lại được mấy từ?"],"Without opening the book",["opening"],"focused")
-add("b10","Comment con số đó nha.",["Comment con số đó nha."],"How many words for you?",["many"],"happy")
+add("b10","Sáng hôm sau tự viết được,",["Sáng hôm sau tự viết được,"],"Next morning wrote it myself",["myself"],"happy")
+add("b10","không cần sách.",["không cần sách."],"Without opening the book",["opening"],"happy")
+add("b10","Bạn viết lại được mấy từ?",["Bạn viết lại được mấy từ?"],"How many words for you?",["many"],"focused")
 add("b10","Comment con số đó nha.",["Comment con số đó nha."],"Comment that number below",["Comment"],"happy")
-L.pop()  # duplicate CTA line removed; final line uses chunk5, previous uses chunk4 - fix ens:
-L[-1]["en"]="Comment that number below"; L[-1]["hl"]=["Comment"]; L[-2]["en"]="How many words for you?"; L[-2]["hl"]=["many"]
 
 # verify spoken text (strip bold) concatenated per scene equals v14 exactly (word sequence)
 V14={
@@ -91,6 +89,8 @@ def mkline(l, idx_in_scene):
     phr=[]
     for p_ in l["phrases"]:
         q=p_
+        if l.get("respell_en"):
+            for a,b in [("airport","e pọt"),("hotel","hô ten"),("ticket","tích kịt"),("passport","pát pọt")]: q=q.replace(a,b)
         for a,b in [("Yang","Giang"),("Dunlosky","Đun lốt ki"),("222","hai trăm hai mươi hai"),("48 ngàn","bốn mươi tám ngàn"),("Comment","Com men"),("luggage","lắc ghịt"),("Luggage","Lắc ghịt")]:
             q=q.replace(a,b)
         phr.append(q)
@@ -100,14 +100,14 @@ def mkline(l, idx_in_scene):
         assert i,(w,l["en"]); hl.append(i[0])
     key=l["sc"]+("ab"[idx_in_scene] if False else "")  # voice_file set after counting lines per scene
     return {"speaker":"hiep","emotion":l["emo"],"text":t,"say":say,"en":l["en"],"hl":hl,
-            "phrases":[{"t":p} for p in phr],"voice_role":"Thầy"}
+            "phrases":[dict({"t":p},**({"keep":True} if l.get("keep") else {})) for p in phr],"voice_role":"Thầy"}
 from collections import Counter
 cnt=Counter(l["sc"] for l in L); seen=Counter()
 lines_by={}
 for l in L:
     seen[l["sc"]]+=1; idx=seen[l["sc"]]-1
     ln=mkline(l,idx)
-    suffix=("abcd"[idx] if cnt[l["sc"]]>1 else "")
+    suffix=("abcdef"[idx] if cnt[l["sc"]]>1 else "")
     # voice-phrase stitch keys: scene id + a/b... only first two letters used in old code ('ab'[li]); our scenes have <=4 lines -> patch gen to use abcd
     ln["voice_file"]=f"voice/{P}-{l['sc']}{suffix}.wav"
     lines_by.setdefault(l["sc"],[]).append(ln)
@@ -149,17 +149,17 @@ for sc in A+B:
     if sc["id"] in LINKS: sc["link"]=LINKS[sc["id"]]
 for sec in E:
     bk=sec["beat"].split(".")[-1]; a,r=STAGE[bk]; sec["stage"]={"action":a,"react":r}; sec["link"]=LINKS[bk]
-A[0]["narration"]="HOC THUOC TOI QUA, SANG DAY QUEN SACH?"
+A[0]["narration"]="HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?"  # L-067: on-screen text MUST keep diacritics
 base=json.load(open('/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
 s={k:base[k] for k in ("transition_sfx","pacing")}
-s.update({"id":"clip-04-final","clip":"clip-04","title":"Gap sach tu kiem (HTB 23.14) - script v14 locked","week":1,"theme":"dark","pillar":"Hoc dung cach","story":"monologue Thay (L-039), vi du 30 tu tieng Anh di du lich (minh hoa), L-050 meaning-by-objects zero-doodle, L-059 bang canh 9 cot trong script-v14.md","trend":"supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)","voice_prefix":P,
+s.update({"id":"clip-04-final","clip":"clip-04","title":"Gấp sách tự kiểm (HTB 23.14) - script v14 locked","week":1,"theme":"dark","pillar":"Học đúng cách","story":"monologue Thay (L-039), vi du 30 tu tieng Anh di du lich (minh hoa), L-050 meaning-by-objects zero-doodle, L-059 bang canh 9 cot trong script-v14.md","trend":"supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)","voice_prefix":P,
  "revisions":[{"v":"v14","date":"2026-10-20","note":"Hiep 'chot' script-v14: loi nguyen van v14 khong sua chu; spec moi c04v14, F5 Thai Son 0.9, Remotion b01-b05/b08-b10 + HyperFrames b06-b07, end card 2s credit CC BY 4.0"}],
- "cover":{"direction":"a","theme":"dark","series":"Hoc dung cach","ep":4,"hero":["HOC THUOC TOI QUA?","SANG QUEN SACH!"],"accent":1,"strike":0,"expression":"despair","action":"reacting","emote":"!","tilt":-5},
- "hook":{"text":"HOC THUOC TOI QUA, SANG DAY QUEN SACH?","scenes":["b01"],"format":"pain point truc tiep + cau hoi gan pain (Hiep chot nguyen van b01); hinh frame 0: sach gap, giay trang, but dung"},
+ "cover":{"direction":"a","theme":"dark","series":"Học đúng cách","ep":4,"hero":["HỌC THUỘC TỐI QUA?","SÁNG QUÊN SẠCH!"],"accent":1,"strike":0,"expression":"despair","action":"reacting","emote":"!","tilt":-5},
+ "hook":{"text":"HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?","scenes":["b01"],"format":"pain point truc tiep + cau hoi gan pain (Hiep chot nguyen van b01); hinh frame 0: sach gap, giay trang, but dung"},
  "engagement":[{"type":"relatable-question","beat":"b01","text":"Không nhìn sách, bạn có thể nhớ được những gì?"},{"type":"comment-challenge","beat":"b10","text":"Comment con số đó nha."},{"type":"loop","beat":"b10","text":"Luggage bí sáng hôm trước","hook_word":"quên sạch"}],
  "voices":{"Thầy":"F5 · Thái Sơn speed 0.9"},
  "throughline":"Học thuộc tối qua VÀ sáng dậy quên sạch, NHƯNG chỉ nhìn chữ thì quen mắt chưa tự nhớ lần nào, VÌ VẬY gấp sách tự viết lại, chia nhỏ thẻ và sáng hôm sau viết trước khi mở sách",
- "hook_question":{"asked":"Khong nhin sach, ban co the nho duoc nhung gi?","answered":"viet lai duoc may tu; luggage bi sang hom truoc, sang hom sau tu viet duoc"},
+ "hook_question":{"asked":"Không nhìn sách, bạn có thể nhớ được những gì?","answered":"viet lai duoc may tu; luggage bi sang hom truoc, sang hom sau tu viet duoc"},
  "structure":{"hook":["b01"],"intro":["b02","b03","b04"],"body":["b05","b06","b07","b08"],"summary":["b09"],"cta":["b10"]},
  "hook_alt":{"type":"direct","text":"(giu nguyen hook Hiep chot o b01, khong dung hook_alt)"},
  "callbacks":[],

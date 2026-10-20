@@ -52,6 +52,63 @@ def theme_map(clip_no):
             return week, theme
     return None, None
 
+def _fold(s):  # per-char: strip Vietnamese marks (keeps length), đ→d
+    return "".join(unicodedata.normalize("NFD", c)[0] for c in s).replace("đ", "d").replace("Đ", "D")
+
+def display_texts(spec, fdir):
+    """L-067: every Vietnamese string drawn on screen (not the spoken/caption lines themselves)."""
+    out = []
+    for p in spec.get("parts", []):
+        for s in p.get("scenes", []) + p.get("sections", []):
+            if s.get("narration"): out.append((f"{s['id']}.narration", s["narration"]))
+            for i, pr in enumerate(s.get("props", [])):
+                for k in ("text", "sub", "stamp"):
+                    if pr.get(k): out.append((f"{s['id']}.props[{i}].{k}", pr[k]))
+                for k in ("words", "pages"):
+                    for w in pr.get(k) or []: out.append((f"{s['id']}.props[{i}].{k}", w))
+    if (spec.get("hook") or {}).get("text"): out.append(("hook.text", spec["hook"]["text"]))
+    covs = [("spec.cover", spec.get("cover") or {})] + [(os.path.relpath(f, fdir), json.load(open(f))) for f in sorted(glob.glob(os.path.join(fdir, "cover", "*.props.json")))]
+    for src, cv in covs:
+        for w in cv.get("hero") or []: out.append((f"{src}.hero", w))
+        if cv.get("series"): out.append((f"{src}.series", cv["series"]))
+    for f in sorted(glob.glob(os.path.join(fdir, "explainer", "compositions", "*.html.tpl")) + glob.glob(os.path.join(fdir, "explainer", "index.html.tpl"))):
+        h = re.sub(r"(?is)<(script|style)\b.*?</\1>|<!--.*?-->", " ", open(f).read())
+        for m in re.findall(r">([^<>{}]+)<", h):
+            if m.strip(): out.append((os.path.relpath(f, fdir), m.strip()))
+    for f in sorted(glob.glob(os.path.join(fdir, "endcard*.txt")) + glob.glob(os.path.join(fdir, "out", "endcard*.txt"))):
+        out.append((os.path.relpath(f, fdir), open(f).read()))
+    return out
+
+def check_diacritics(spec, fdir, L):
+    """L-067: on-screen Vietnamese text must keep its marks. Reference = locked spoken lines + latest script-vNN.md."""
+    ref = " ".join(re.sub(r"\{[^}]*\}|\*", "", l["text"]) for _, _, l in L)
+    sv = sorted(glob.glob(os.path.join(fdir, "script-v*.md")), key=lambda x: int(re.findall(r"v(\d+)", os.path.basename(x))[0]))
+    if sv: ref += " " + open(sv[-1]).read()
+    forms = {}
+    for w in re.findall(r"\w+", ref.lower()): forms.setdefault(_fold(w), set()).add(w)
+    bad = []
+    for src, s in display_texts(spec, fdir):
+        toks = [w for w in re.findall(r"\w+", s.lower()) if not w.isdigit()]
+        if not toks: continue
+        viet = VI_CHARS.search(s) or sum(_fold(w) in forms for w in toks) / len(toks) >= 0.6  # English strings (explainer labels) are not Vietnamese → skip
+        lost = [w for w in toks if _fold(w) == w and w in forms and w not in forms[w]]
+        if viet and lost: bad.append(f"{src} “{s.strip()[:60]}” (mất dấu: {', '.join(sorted(set(lost))[:6])})")
+    (ok if not bad else err)("L-067", "on-screen Vietnamese text keeps diacritics vs locked script" + (": " + "; ".join(bad) if bad else ""))
+
+def check_prosody(spec, fdir, final):
+    """L-070: pauses/phrasing measured on the real voice (pipeline/scripts/prosody-check.py measure → final/prosody-measure.json).
+    Blocks: pause >0.8s inside/between lines (beat change allows +0.35s), pause <0.1s at a period, break >0.25s at a word boundary
+    without punctuation (= ngắt giữa cụm từ), question not rising at the end."""
+    pm = os.path.join(fdir, "prosody-measure.json"); pp = os.path.join(fdir, "prosody-plan.md")
+    if not os.path.exists(pm):
+        (err if final else warn)("L-070", "prosody-measure.json missing (run prosody-check.py voice + measure after generating the voice)"); return
+    j = json.load(open(pm))
+    if j.get("voice_prefix") != spec.get("voice_prefix"): err("L-070", f"prosody-measure.json is for voice {j.get('voice_prefix')}, spec uses {spec.get('voice_prefix')} → re-measure"); return
+    dl = glob.glob(os.path.join(fdir, "script-*-delivery.md"))  # the approved delivery plan (/, //, //|, ///, **nhấn**) is the prosody plan
+    (ok if (dl or os.path.exists(pp)) else err)("L-070", "delivery/prosody plan present (" + (os.path.basename(dl[0]) if dl else "prosody-plan.md") + ")")
+    fl = j.get("flags", [])
+    (ok if not fl else err)("L-070", f"prosody: {len(j.get('lines', []))} lines measured, {len(fl)} blocking pause/phrasing flags" + (": " + "; ".join(fl[:8]) if fl else ""))
+
 def main():
     a = sys.argv[1:]; clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
     outp = a[a.index("--out") + 1] if "--out" in a else None
@@ -287,6 +344,8 @@ def main():
         (ok if cv.get("direction") == "a" and cv.get("hero") and cv.get("series") and cv.get("ep") else err)("rule-54", f"spec.cover props (template A) {'present' if cv else 'MISSING'}")
         (ok if props and okc else err)("L-020", "cover.png rendered from Cover template (props json present)" if okc else
             f"cover.png is not a Cover-template render ({len(props)} template direction(s) in cover/ — render cover from template A: npx remotion still src/index.ts Cover final/cover.png --props=spec.cover)")
+    check_diacritics(spec, fdir, L)
+    check_prosody(spec, fdir, final)
     # rule-55 (DL-051): hook 0–3s rapid, dramatic, emotion-dense (clips before 02 are legacy → warn)
     e55 = warn if "clip-01" in clip_dir else err
     hk = spec.get("hook") or {}; A0 = spec["parts"][0]; scs = A0.get("scenes", [])
