@@ -20,6 +20,13 @@ REF_TEXT = "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một ch�
 def arg(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
 def fold(s): return "".join(c for c in unicodedata.normalize("NFD", s.lower()) if unicodedata.category(c) != "Mn").replace("đ", "d")
 WRE = r"[\wÀ-ỹ]+"
+def final_tone(text):
+    """tone of the last syllable: huyen | nang | sac | hoi | nga | ngang (L-082)"""
+    ws_ = re.findall(WRE, text or "")
+    if not ws_: return "ngang"
+    d = unicodedata.normalize("NFD", ws_[-1].lower())
+    return "huyen" if "\u0300" in d else "nang" if "\u0323" in d else "sac" if "\u0301" in d else "hoi" if "\u0309" in d else "nga" if "\u0303" in d else "ngang"
+L082 = ("huyen", "nang")  # L-082: question ending on huyền/nặng → no artificial pitch lift, rise check exempt
 def resp_word(w): return RESP.get(w.lower(), w)
 def syl(w): return len(re.findall(WRE, resp_word(w)))
 
@@ -206,7 +213,8 @@ def pick(fd):
         b = max(cands, key=lambda c: c["score"]); x = b["x"].copy(); tt = b["tt"]; thr = b["thr"]
         # question: raise the last syllable (adaptive vs the take's own fall), tempo unchanged
         semi = None
-        if s["q"]:
+        if s["q"] and final_tone(s["text"]) in L082: print(s["id"], "L-082: final syllable", final_tone(s["text"]), "→ no pitch lift", flush=True)
+        elif s["q"]:
             # nặng/huyền/hỏi endings fall several st on their own: raise until the delivered last syllable measures ≥ +1 st (cap 8 st)
             lw = int(tt[-1][0] * SR); semi = 1.0; x0 = x  # smallest shift that proves the rise (v18: start gentle, Kokoro note: no big push on huyền/nặng)
             while True:
@@ -417,10 +425,13 @@ def measure(fd):
             r["stress"] = {"words": " ".join(w["w"] for w in sd["words"] if w["bold"]), "vs_rest_db": dr, "vs_neighbours_db": dn, "gain_applied_db": round((pk.get("emphasis") or {}).get("gain_db", 0) + (pk.get("extra_gain_db") or 0), 1)}
             if (dr is not None and dr < 2) or (dn is not None and dn < 2): flags.append(f"{s['id']}: nhấn «{r['stress']['words']}» chỉ {dr} dB so câu / {dn} dB so chữ kề (<2 dB)")
         # question rise (measured on the delivered audio)
-        r["rise_st"] = None
+        r["rise_st"] = None; r["final_tone"] = final_tone(sd["text"]); r["pitch_shift_st"] = pk.get("rise_shift_st") or 0
         if sd["q"]:
             rs = rise_st(x, toks[-1][1], toks[max(0, len(toks) - 3)][1], toks[-1][2] + 0.05); r["rise_st"] = None if rs is None else round(rs, 2)
-            if rs is None or rs < 0.5: flags.append(f"{s['id']}: câu hỏi cuối {r['rise_st']} st (cần lên giọng ≥ +0.5 st)")
+            if r["final_tone"] in L082:
+                r["rise_exempt"] = "L-082"
+                if r["pitch_shift_st"]: flags.append(f"{s['id']}: câu hỏi kết thúc thanh {r['final_tone']} nhưng có nâng pitch {r['pitch_shift_st']} st (L-082 cấm)")
+            elif rs is None or rs < 0.5: flags.append(f"{s['id']}: câu hỏi cuối {r['rise_st']} st (cần lên giọng ≥ +0.5 st)")
         # STT of the delivered sentence vs the text
         seg = x[int(max(0, s["start"] - 0.05) * SR):int((s["end"] + 0.08) * SR)]; ws = stt(seg, target=[t for t, _ in T]); hyp = [t for w, _, _ in ws for t in norm(w)]
         r["stt"] = " ".join(w for w, _, _ in ws); r["stt_sim"] = sim(hyp, [t for t, _ in T])
@@ -456,7 +467,7 @@ def measure(fd):
           "## Từng câu", "", "| Câu | Beat | Bắt đầu–kết thúc (s) | Nhấn: dB so câu / so chữ kề (gain đã thêm) | Cuối câu hỏi (st) | STT (khớp) | Take |", "|---|---|---|---|---|---|---|"]
     for r in rows:
         st_ = r["stress"]; em = "—" if not st_ else f"«{st_['words']}» {st_['vs_rest_db']:+} / {st_['vs_neighbours_db']:+} (+{st_['gain_applied_db']})"
-        md.append(f"| {r['id']} {r['text']} | {r['beat']} | {r['start']:.2f}–{r['end']:.2f} | {em} | {'—' if not S[r['id']]['q'] else r['rise_st']} | {r['stt']} ({r['stt_sim']}) | {r['take']} |")
+        md.append(f"| {r['id']} {r['text']} | {r['beat']} | {r['start']:.2f}–{r['end']:.2f} | {em} | {'—' if not S[r['id']]['q'] else (str(r['rise_st']) + ' · thanh ' + r['final_tone'] + (' · miễn L-082, không nâng pitch' if r.get('rise_exempt') else ' · nâng ' + str(r['pitch_shift_st']) + ' st'))} | {r['stt']} ({r['stt_sim']}) | {r['take']} |")
     md += ["", "## Nghỉ tại từng ký hiệu (đo / plan)", "", "| Câu | Sau chữ | Ký hiệu | Plan (s) | Đo (s) | Kết quả |", "|---|---|---|---|---|---|"]
     md += [f"| {p['sid']} | {p['after']} | `{p['mark'].replace('//beat', '//|').replace('|', '¦')}` {p['kind']} | {p['plan']} | {p['pause']:.2f} | {p['status']} |" for p in allp]
     md += ["", "## Từ tiếng Anh (đọc theo phiên âm, STT tiếng Anh trên đúng đoạn từ đó)", "", "| Câu | Từ | Đọc | t (s) | STT EN nghe ra |", "|---|---|---|---|---|"]
