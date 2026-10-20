@@ -167,22 +167,27 @@ def b06():
     svg += bar("barL", LX, BW, BASE, INK, stroke=False) + bar("barR", RX, BW, BASE, SOFT)
     svg += f'<g id="gL" transform="translate({LX + BW / 2} {BASE - 70})" opacity="0">{icon("users-three-fill", 120, PAPER)}</g>'
     svg += f'<g id="gR" transform="translate({RX + BW / 2} {BASE - 70})" opacity="0">{icon("users-three-fill", 120, INK)}</g>'
-    svg += f'<g id="qP" transform="translate({LX + BW / 2} {BASE - BH0 - 70})"><g id="q" opacity="0"><circle cx="5" cy="6" r="52" fill="{INK}"/><circle r="52" fill="{PAPER}" stroke="{INK}" stroke-width="7"/><rect x="-22" y="-30" width="44" height="58" rx="6" fill="{PAPER}" stroke="{INK}" stroke-width="6"/><path d="M-12,-14 H12 M-12,0 H12 M-12,14 H4" stroke="{INK}" stroke-width="5" stroke-linecap="round"/><g transform="translate(38 34)">{tick(26)}</g></g></g>'
-    hx, hy = LX + BW + 110, BASE - LH + 40
-    svg += f'<g transform="translate({hx} {hy})"><g id="hand" opacity="0"><g transform="rotate(-90)">{icon("hand-pointing-fill", 150, INK, PAPER, 4)}</g></g></g>'
+    QX = LX + 60  # quiz badge sits left on the bar top, the hand points at its right part
+    svg += f'<g id="qP" transform="translate({QX} {BASE - BH0 - 70})"><g id="q" opacity="0"><circle cx="5" cy="6" r="52" fill="{INK}"/><circle r="52" fill="{PAPER}" stroke="{INK}" stroke-width="7"/><rect x="-22" y="-30" width="44" height="58" rx="6" fill="{PAPER}" stroke="{INK}" stroke-width="6"/><path d="M-12,-14 H12 M-12,0 H12 M-12,14 H4" stroke="{INK}" stroke-width="5" stroke-linecap="round"/><g transform="translate(38 34)">{tick(26)}</g></g></g>'
+    # Phosphor hand-pointing (regular outline over a paper silhouette), rotated 180° so the index finger points DOWN;
+    # fingertip (icon 112,16 → after 180°: +0.0625S, +0.4375S from centre) lands exactly on the tall bar's top.
+    HS = 170; tipx, tipy = LX + BW - 25, BASE - LH
+    hx, hy = tipx - 0.0625 * HS, tipy - 0.4375 * HS - 4
+    svg += (f'<g transform="translate({hx:.1f} {hy:.1f})"><g id="hand" opacity="0"><g transform="rotate(180)">'
+            f'{icon("hand-pointing-fill", HS, PAPER)}{icon("hand-pointing", HS, INK)}</g></g></g>')
     svg += f'<path id="gap" d="M{LX + BW + 6},{BASE - RH} H{RX + BW}" stroke="{INK}" stroke-width="6" stroke-dasharray="16 12" opacity="0"/>'
     svg += f'<path id="br" d="M{LX + BW + 30},{BASE - LH + 4} h18 V{BASE - RH - 4} h-18" stroke="{ACC}" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>'
     js += f'tl.to("#base", {{attr: {{"stroke-dashoffset": 0}}, duration: 0.3, ease: "power2.out"}}, {tB + 0.05:.3f});\n'
     js += grow("barL", BASE, BH0, lop - 0.1, 0.4) + grow("barR", BASE, BH0, lop, 0.4)
     js += f'tl.to(["#gL", "#gR"], {{opacity: 1, duration: 0.25}}, {lop + 0.1:.3f});\n'
     js += pop("#q", kiem)
-    js += grow("barL", BASE, LH, diem, 0.6) + grow("barR", BASE, RH, diem + 0.08, 0.6)
-    js += f'tl.to("#qP", {{attr: {{transform: "translate({LX + BW / 2} {BASE - LH - 70})"}}, duration: 0.6, ease: "back.out(1.4)"}}, {diem:.3f});\n'
-    js += f'tl.fromTo("#hand", {{opacity: 0, x: 60}}, {{opacity: 1, x: 0, duration: 0.3, ease: "power2.out"}}, {cao + 0.1:.3f});\n'
-    js += f'tl.to("#hand", {{x: -14, duration: 0.35, yoyo: true, repeat: {int((total - cao - 0.5) / 0.35)}, ease: "sine.inOut"}}, {cao + 0.45:.3f});\n'
+    js += grow("barL", BASE, LH, diem, 0.55, "power3.out") + grow("barR", BASE, RH, diem + 0.08, 0.6)  # tall bar: no overshoot, the fingertip rests on it
+    js += f'tl.to("#qP", {{attr: {{transform: "translate({QX} {BASE - LH - 70})"}}, duration: 0.55, ease: "power3.out"}}, {diem:.3f});\n'
+    ht = diem + 0.2  # slides in while the tall bar finishes (power3.out), fingertip lands on its final top at ≈ diem+0.65
+    js += f'tl.fromTo("#hand", {{opacity: 0, x: 70, y: -90}}, {{opacity: 1, x: 0, y: 0, duration: 0.45, ease: "power3.out"}}, {ht:.3f});\n'
     js += f'tl.to(["#gap", "#br"], {{opacity: 1, duration: 0.25}}, {muc:.3f});\n'
     js += f'tl.fromTo("#br", {{scaleY: 0, svgOrigin: "{LX + BW + 39} {BASE - (LH + RH) / 2}"}}, {{scaleY: 1, duration: 0.35, ease: "back.out(2)"}}, {muc:.3f});\n'
-    return "mg-b06", total, svg, js, {"hand_tip": [hx - 65, hy], "barL_top": BASE - LH, "total": total}
+    return "mg-b06", total, svg, js, {"hand_tip": [tipx, tipy], "hand_in": round(ht, 3), "barL_top": BASE - LH, "total": total}
 
 def main():
     meta = {}
