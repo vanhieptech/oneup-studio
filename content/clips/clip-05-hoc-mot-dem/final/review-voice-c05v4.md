@@ -112,3 +112,28 @@ STT medium tự do trên file take:
 
 ## Kết luận vòng 2
 **CHƯA ĐẠT, chỉ còn 1 lỗi**: click ở 51,238s (c17, đầu «hôm»). c03, c12, c14 **đạt**. Giữ take **c17-11p**, chỉ nối lại đoạn nâng giọng bằng crossfade. Không cần sinh lại F5. Sửa xong chỉ cần chấm lại c17 cùng chỗ nối c16→c17 và c17→c18. Đạt thì gửi Hiệp nghe, kèm danh sách chữ cần nghe tai ở trên.
+
+---
+
+# Vòng 3: chấm `36aa0a1` (sửa click c17) + `631795e`/`5b12e22` (de-ess c18), 22/10/2026 ~02:10 (giờ VN, UTC+7)
+
+## Tổng
+- Thời lượng 52,711s ✓ (dài hơn vòng 2 đúng 10ms ở c17/c18), −14,2 LUFS ✓, true peak −1,3 dBTP ✓.
+- **Không có lỗi mới:** mẫu 0–49,6s **giống hệt từng mẫu** bản vòng 2 (`4c01ad4`). Không có chỗ tụt về 0 giữa tiếng nói ở bất kỳ đâu.
+- Bước nhảy mẫu lớn nhất cả file 0,43 đỉnh ở 43,115s (cuối c14 «dài»). Bản vòng 2 cũng y hệt (0,433), đây là âm F5 gốc, không phải chỗ nối.
+
+## c17
+- 51,1–51,4s: bước nhảy lớn nhất **0,20** đỉnh ✓. Cả câu tối đa 0,35 (50,446s, có cả ở take gốc) ✓. Không còn click.
+- STT medium tự do: «Còn bạn, **môn** sắp thi còn cách mấy **hôm**?» (môn 0,78; hôm 0,99) ✓.
+- Ngoại lệ nâng giọng 5 st (L-082) **đã ghi** trong `prosody-measure-c05v4.md` §«Ngoại lệ L-082 cho c17», có bảng thử 3/5/5,5/6/7 st ✓.
+- Nối c16→c17: bước nhảy tối đa 0,17, lặng 0,39s ✓. c17→c18: bước nhảy tối đa 0,11, nối 0,35s ✓.
+
+## c18
+- Khoảng 52,14s: bước nhảy **0,35** đỉnh (52,143s) ✓ (≤0,40).
+- Nhấn «số hôm»: **+2,34 dB** so «Comment» (cách tôi đo, chỉ tính mẫu >0,01), +4,6 dB so «nha». Ở sát ngưỡng +2,3 nhưng đạt ✓.
+- STT medium: «Comment số hôm nha» (số 0,85) ✓.
+- **Rủi ro «s» xỉn:** đoạn /s/ của «số» (52,10–52,16) có tỉ lệ năng lượng trên 4 kHz chỉ còn **−8…−19 dB** (vòng 2: −3…−8). Các /s/ khác của cùng giọng («sau» c02, «sắp» c17) ở −1…−4 dB. Mức /s/ cũng thấp hơn khoảng 6 dB. Bộ lọc thông thấp trung bình trượt 10 mẫu (cắt khoảng 4,8 kHz) đã làm mất phần lớn tiếng xì của «s». STT vẫn nghe đúng «số», nhưng nghe tai có thể thấy «s» đục, gần «x/th». **Phải nghe tai.**
+  - Nếu nghe xỉn: bỏ bộ lọc thông thấp. Thay bằng giảm **gain toàn dải** riêng đoạn /s/ (−4…−6 dB, fade 5–8ms), hoặc high-shelf nhẹ −3 dB từ 7 kHz. Mục tiêu: bước nhảy ≤0,40, tỉ lệ năng lượng trên 4 kHz trong khoảng −2…−6 dB như các «s» khác, «số hôm» vẫn ≥ +2,3 dB.
+
+## Kết luận vòng 3
+**Đạt mọi chỉ tiêu đo** (click c17 đã hết, bước nhảy c18 ≤0,40, STT đúng, không có lỗi mới, tổng thời lượng/LUFS/peak đạt). **Một điều kiện:** «s» của «số» (c18, ~52,1s) bị xỉn rõ khi đo. Nghe tai, nếu đục thì sửa lại theo cách trên (chỉ đụng c18). Không còn lỗi chặn nào khác trước khi gửi Hiệp nghe.
