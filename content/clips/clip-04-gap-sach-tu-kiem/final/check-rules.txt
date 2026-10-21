@@ -37,7 +37,7 @@
 ✔ rule-53  cover text 34 chars (≤ 40)
 ✔ rule-53  cover.png exported
 ✔ rule-53  cover frame timestamp given
-✔ rule-53  caption 1069 chars (≤ 2200)
+✔ rule-53  caption 529 chars (≤ 2200)
 ✔ rule-53  5 hashtags (3–5)
 ✔ rule-53  no spammy hashtags
 ✔ rule-53  hashtags appended to caption
@@ -181,6 +181,6 @@
 ✔ L-007    b08a/c04v18-c17a: F5 per-phrase generation
 ✔ L-016    b08b/c04v18-c17b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
 ✔ L-007    b08b/c04v18-c17b: F5 per-phrase generation
-⚠ L-013    4 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+⚠ L-013    3 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
 
 184 checks · 0 error(s) · 9 warning(s) → PASS
