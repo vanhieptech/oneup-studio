@@ -129,3 +129,9 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Hiệp quyết (21/10): (1) không chọn frame giữa video; thay vào đó gắn chính cover template A làm khung đầu của bản reels (bản dùng cho Reels/Shorts/Threads), lúc đăng chọn khung đó làm thumbnail. Bản TikTok giữ nguyên, vì TikTok cho tải `cover.png` riêng. (2) Phụ đề bản reels dùng cho Shorts: OK. (3) Nhạc lúc đăng dùng bài nào cũng được, kể cả bài có bản quyền (Hiệp nhận rủi ro); CML không còn bắt buộc.
 - Fix: bản reels = khung cover (render template A, 1080×1920) giữ ngắn nhất mà app vẫn chọn được (mục tiêu ≤0,5s), rồi vào hook ngay; giọng/phụ đề dời theo, không cắt chữ. post.md ghi rõ khung thumbnail = 0s (cover). Mục nhạc gợi ý bài hợp mood, không bắt buộc CML.
 - Phát hiện: khung 0s của bản reels phải khớp `cover.png` (so ảnh); khung cover ≤0,5s; bản TikTok không có khung cover.
+
+## L-084 (2026-10-21 22:39, Rule Reviewer) — Clip lấy từ trend nhưng lời/hình không còn trend
+- Lỗi: clip-05 v2 lấy chủ đề từ video viral của @ng__phanh («Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ»), nhưng khi rút gọn đã cắt hết câu viral/format; thư mục clip không có `trend-signals.md`. Rule Reviewer vẫn chấm đạt. Hiệp hỏi: «Sao không có trend gì hết».
+- Gốc: rule-57 chỉ là cảnh báo và chỉ chạy khi đã có spec; review script không có ô nào bắt trend phải hiện trong clip.
+- Fix: mỗi clip có `final/trend-signals.md` với link nguồn + dòng «Trend trong clip: bNN · <câu/format/hình>»; trend phải nhìn/nghe thấy được ở hook (b01–b02), bằng câu viral, format hoặc hình đặc trưng của trend. Thiếu → trượt, không gửi Hiệp.
+- Phát hiện: `check-rules.py` L-084 (error) — thiếu file, thiếu dòng «Trend trong clip», hoặc beat ngoài b01–b02. Review thủ công: đối chiếu dòng đó với lời/hình thật.
