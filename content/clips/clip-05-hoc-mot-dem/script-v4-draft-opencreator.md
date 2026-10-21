@@ -25,7 +25,7 @@ Không nói: «317 thí nghiệm đều thống nhất», tự kiểm «tăng đ
    - **Một.** Mình chia ra ba ngày, mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang.
    - **Hai.** Mỗi buổi, mình gấp sách tự giải như clip trước, rồi mở sách xem mình sai ở chỗ nào.
 6. **[Bằng chứng]** Khi gom 317 thí nghiệm lại, các nhà nghiên cứu thấy người học muốn nhớ càng lâu thì khoảng cách giữa các lần ôn càng phải dài.
-7. **[Làm lại đủ ba bước + kết quả quay về chỗ khựng]** Khi mình làm đủ hai bước đó, tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình dễ nhớ ra cách giải hơn.
+7. **[Làm lại đủ hai bước + kết quả quay về chỗ khựng]** Khi mình làm đủ hai bước đó, tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình dễ nhớ ra cách giải hơn.
 8. **[CTA]** Còn bạn, môn sắp thi còn cách mấy hôm? Comment số hôm nha.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Dunlosky et al. 2013 (+ nguồn mục 23.14, chờ Deep Research ghi tên) · Trend: @ng__phanh · TikTok. Không ghi kênh được tác giả bảo trợ.
@@ -55,6 +55,6 @@ Không nói: «317 thí nghiệm đều thống nhất», tự kiểm «tăng đ
 - W-16 đủ thứ tự; đếm số chỉ nằm trong b05, hai bước (bước 2–3 cũ gộp một câu để không lặp clip-04); không dùng câu «bản chất… là gì?» (Deep Research: không có cơ chế để trả lời); b07 là màn làm lại + quay về chỗ khựng.
 - Chủ ngữ: mọi vế có «bạn/mình/họ/các nhà nghiên cứu/người học»; «Một./Hai.» là số đếm đứng riêng, câu sau có chủ ngữ «mình».
 - F5: không «xong/thuộc làu/chột», không «:» hay «;» trong lời; câu hỏi CTA kết «hôm» như v2. Đếm «Một. Hai.» cần News cho ngắt hơi sau số.
-- «bài» một nghĩa (b03); «bước» chỉ dùng cho ba bước cách làm (đã đổi «các bước giải» → «cách giải», «sai ở bước nào» → «sai ở chỗ nào», R19).
+- «bài» một nghĩa (b03); «bước» chỉ dùng cho hai bước cách làm (đã đổi «các bước giải» → «cách giải», «sai ở bước nào» → «sai ở chỗ nào», R19).
 - Mềm: «mình» làm mẫu, không mệnh lệnh với người xem.
 - Độ dài: ~234 chữ ≈ 57s giọng + 2s end card ≈ 59s. Dài hơn v2 (~51s) vì thêm bước 2 (L-080 dài theo nội dung). Nếu cần ≤ 58s: bỏ b04 (−11 chữ) hoặc rút b03 (chờ Deep Research).
