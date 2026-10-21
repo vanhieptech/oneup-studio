@@ -23,13 +23,13 @@ Mục 1–12 là gói TikTok theo `templates/post-package.md` (giữ đúng tên
 ## 1. File video
 ```
 TikTok:          content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-tiktok.mp4 · 48,90s · 1080×1920 (9:16) · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 26,6 MB
-Instagram Reels: content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-reels.mp4 · 48,90s · 1080×1920 · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 27,0 MB (phụ đề đặt cao, tránh vùng UI Reels)
+Instagram Reels: content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-reels.mp4 · 48,90s · 1080×1920 · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 27,0 MB (phụ đề đặt cao, tránh vùng UI Reels) — số đo bản cũ; News đang render lại có khung cover ở 0s (L-083), cập nhật khi có file mới
 YouTube Shorts:  clip-04-v18-reels.mp4 (cùng file với Reels)
 Threads:         clip-04-v18-reels.mp4 (cùng file với Reels)
 Bản xem nhanh:   clip-04-v18-light.mp4 · 48,90s · 540×960 · 30fps · −14,7 LUFS · 1,75 MB — chỉ để xem, không đăng
 ```
 - Số đo bằng ffprobe + ebur128 trên box (21/10/2026, 03:3x giờ VN). `final/out/clip-04-final.mp4` trùng md5 với `clip-04-v18-tiktok.mp4` (ee514a7b…).
-- File nào cũng **không có nhạc** (luật 21), nên cả hai bản đều là «file sạch». Nhạc CML chỉ thêm trong app TikTok. Shorts và Threads dùng bản reels vì phụ đề nằm cao hơn và hai bản cùng nội dung. Phụ đề chỉ được đặt tránh UI của Reels, **chưa đo riêng** vùng UI của Shorts.
+- File nào cũng **không có nhạc** (luật 21), nên cả hai bản đều là «file sạch». Nhạc chỉ thêm trong app lúc đăng (mục 8). Shorts và Threads dùng bản reels vì phụ đề nằm cao hơn và hai bản cùng nội dung; Hiệp đã duyệt dùng phụ đề bản reels cho Shorts (21/10/2026, L-083).
 - Bản tiktok/reels không có trong git (chỉ bản light đã commit). Hiệp lấy file trên Mac ở cùng đường dẫn.
 - Không file nào có logo TikTok (render gốc, không phải bản tải về từ TikTok).
 
@@ -45,7 +45,7 @@ Ba phương án ban đầu (đều ≤ 40 ký tự, render bằng template A `Co
 - **C (35 ký tự):** `GẤP SÁCH LẠI,` → `CÒN VIẾT ĐƯỢC MẤY TỪ?` — nối thẳng với CTA b08; không dùng bản «~~ĐỌC LẠI~~ → GẤP SÁCH» vì gạch chữ «đọc lại» dễ hiểu thành «đọc lại vô dụng» (claim bị chặn trong fact package).
 
 Tiêu đề (dùng chung, dòng đầu caption TikTok/Reels/YouTube): **Học thuộc tối qua, sáng dậy quên sạch.** (câu khẳng định, để mỗi bản chỉ có 1 câu hỏi ở CTA)
-Frame cover: **0s** (trường bắt buộc của rule-53, không phải frame video: ảnh bìa là `final/cover.png` tải lên riêng từ template A; trên mọi nền tảng không chọn frame video làm ảnh bìa, luật 54).
+Frame cover: **0s**. TikTok: tải `final/cover.png` lên riêng, bản TikTok không có khung cover. Reels · YouTube Shorts · Threads: khung 0s của `clip-04-v18-reels.mp4` chính là cover template A (= `cover.png`, ≤0,5s), lúc đăng chọn khung này làm thumbnail (L-083, Hiệp 21/10/2026). Không chọn frame nào khác trong video (luật 54).
 
 ## 3. Caption / tiêu đề TikTok (VI)
 ```
@@ -89,13 +89,12 @@ Mặc định 19:00 (giờ VN), theo gợi ý luật 32 (thứ Hai/Tư/Sáu, kê
 
 ## 8. Âm thanh
 ```
-Thêm 1 track từ TikTok Commercial Music Library (Sounds → Commercial Sounds). Mood: chill acoustic / cafe lofi sáng, major key, guitar mộc + Rhodes, không lời, 85–95 BPM, không drop, không giọng hát. Âm lượng: giọng gốc 100%, nhạc 5% (tối đa 8%). Bắt đầu track ở đoạn mở mỏng (guitar/piano), tránh intro trống. Trong file không có nhạc (luật 21); SFX + ambience đã mix sẵn.
-Ưu tiên tìm tên: "vlog, chill out, calm daily life(1370843)" – SUNNY HOOD STUDIO · "Coffee and Daydreams" – Tokyo.Beats · "Calm Lofi/Cafe/Study/Vlog(1492712)" – Tana Music. Không thấy trong Commercial Sounds thì tìm: chill acoustic / cafe lofi / vlog daily life.
+Thêm 1 track trong app lúc đăng. Bài nào cũng được, kể cả bài có bản quyền, không bắt buộc Commercial Music Library (Hiệp 21/10/2026, L-083). Mood: chill acoustic / cafe lofi sáng, major key, guitar mộc + Rhodes, không lời, 85–95 BPM, không drop, không giọng hát. Âm lượng: giọng gốc 100%, nhạc 5% (tối đa 8%). Bắt đầu track ở đoạn mở mỏng (guitar/piano), tránh intro trống. Trong file không có nhạc (luật 21); SFX + ambience đã mix sẵn.
+Gợi ý tên: "vlog, chill out, calm daily life(1370843)" – SUNNY HOOD STUDIO · "Coffee and Daydreams" – Tokyo.Beats · "Calm Lofi/Cafe/Study/Vlog(1492712)" – Tana Music. Không thấy thì chọn bài khác cùng mood: chill acoustic / cafe lofi / vlog daily life.
 ```
 
 - Nguồn: `final/sound-note-v18.md` mục 1 (ACE Music, bản theme light, commit 913ccdc, 21/10/2026). Bản v18 render theme light (`spec.json`, f1cd4fd), nên ưu tiên lần lượt là `vlog, chill out, calm daily life(1370843)` (SUNNY HOOD STUDIO), `Coffee and Daydreams` (Tokyo.Beats), rồi `Calm Lofi/Cafe/Study/Vlog(1492712)` (Tana Music).
-- **Chưa xác minh** bài nào có trong Commercial Music Library ở VN. Hiệp kiểm trong app: Sounds → Commercial Sounds → gõ tên; có trong đó mới dùng.
-- Quyền nhạc CML **chỉ áp dụng trong TikTok**. Reels, YouTube Shorts và Threads đăng `clip-04-v18-reels.mp4`, không thêm nhạc.
+- Reels, YouTube Shorts và Threads đăng `clip-04-v18-reels.mp4`. Muốn thêm nhạc trong app ở các nền tảng này thì cũng chọn theo mood trên, cùng mức 5% (tối đa 8%).
 - **Kiểm file (21/10/2026):** check-rules `rule-21 no music` ✔. Trong file có 29 hit SFX (swish 9, tick 4, pen 4, pop 4, snap 3, rise 3, ding 2, theo `final/timing.json → sfx_mix`) + 1 lớp `ambience` chạy suốt clip; `rule-50`: 8/8 chuyển cảnh có SFX. Đo tay: đoạn 42,3–43,2s giọng im hẳn (−91 dB trong voice track) nhưng file mp4 vẫn có tiếng (trung bình −57 dB, đỉnh −32 dB, có swish ở 43,15s); end card 47,8–48,8s trung bình −63 dB (ambience); không có đoạn lặng hẳn < −70 dB nào ≥ 0,3s.
 
 ## 9. Checklist cài đặt khi đăng
@@ -145,7 +144,7 @@ Bạn thử gấp sách lại thì viết được mấy từ?
 Thông tin tham khảo, không thay thế tư vấn chuyên gia
 Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/
 ```
-- Đính kèm `final/clip-04-v18-reels.mp4`. Ảnh bìa: `final/cover-1080x1350.png` (4:5), tải lên riêng. App Threads có cho đặt ảnh bìa riêng cho video hay không thì mình chưa xác minh; **nếu không tải ảnh riêng được thì chờ Hiệp quyết** (rule-54). Chủ đề (topic) gợi ý chọn trong app: «Học tập» (1 topic tag, rule-53b). Không hashtag trong thân bài.
+- Đính kèm `final/clip-04-v18-reels.mp4`. Thumbnail: khung 0s của bản reels (cover template A, L-083). Chủ đề (topic) gợi ý chọn trong app: «Học tập» (1 topic tag, rule-53b). Không hashtag trong thân bài.
 - Độ dài: 452 ký tự (giới hạn Threads 500). Chỉ 1 câu hỏi (ở cuối), cũng là CTA duy nhất.
 - Câu Roediger chép đúng lời khoá b03 nhưng bỏ chữ «lại» theo Rule Reviewer: «Nhưng hai ngày sau, nhóm tự kiểm tra nhớ hơn hẳn.» (bản lời khoá không sửa).
 - Repo chưa có tài liệu chính thức nào của Threads về video (`research/platform-recommendation-facts-2026-10-20.md`) → không tối ưu theo «thuật toán Threads».
@@ -170,7 +169,7 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 - Đã bỏ câu «Gửi cho đứa bạn…» (CTA thứ hai, W-14). Còn 1 CTA, 1 câu hỏi.
 - Hashtag: Instagram chưa có dữ liệu trend trong repo → chọn theo đúng chủ đề (5 thẻ); `#activerecall` theo phụ đề clip @phamthuykieuhuong trong `final/trend-signals.md`.
 - Video: `final/clip-04-v18-reels.mp4` (không logo TikTok, không nhạc).
-- Ảnh bìa Reels: `final/cover.png` (1080×1920), tải lên riêng. Ô lưới hồ sơ / feed 4:5: `final/cover-1080x1350.png`. Bản này cắt y 265–1615 từ cover, vẫn còn đủ tag `#04 HỌC ĐÚNG CÁCH`, hai hàng hero, logo và nhân vật (chỉ mất một chút bóng dưới chân). Nếu app chỉ cho kéo khung cắt trên ảnh 9:16 thì kéo sao cho khớp bản 1350.
+- Ảnh bìa Reels: chọn khung 0s của bản reels (cover template A, L-083). Ô lưới hồ sơ / feed 4:5: `final/cover-1080x1350.png`. Bản này cắt y 265–1615 từ cover, vẫn còn đủ tag `#04 HỌC ĐÚNG CÁCH`, hai hàng hero, logo và nhân vật (chỉ mất một chút bóng dưới chân). Nếu app chỉ cho kéo khung cắt trên ảnh 9:16 thì kéo sao cho khớp bản 1350.
 - Nhãn AI: bật «AI info / nhãn AI» nếu app hỏi.
 
 ## 15. YouTube Shorts
@@ -201,13 +200,14 @@ Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4
 - Hashtag: 3 thẻ ở cuối mô tả (`#Shorts #hoctap #hoctienganh`), tiêu đề không có hashtag (rule-53b, Rule Reviewer 20/10/2026).
 - Được giữ thêm câu Yang + link PubMed (Rule Reviewer cho phép riêng YouTube).
 - **Khi tải lên: BẬT nhãn «Nội dung bị biến đổi hoặc tổng hợp» (altered or synthetic content)** — Rule Reviewer đã chốt (giọng là AI tổng hợp).
-- Video: `final/clip-04-v18-reels.mp4`. Ảnh bìa: `final/cover.png`, tải lên riêng. Mình chưa xác minh app YouTube có cho tải ảnh bìa riêng cho Shorts hay không; **nếu không tải ảnh riêng được thì chờ Hiệp quyết** (rule-54).
+- Video: `final/clip-04-v18-reels.mp4`. Thumbnail: chọn khung 0s của bản reels (cover template A, L-083).
 - Playlist: «Học đúng cách».
 
 ## 16. Thumbnail
 ```
-TikTok · Reels · YouTube Shorts: content/clips/clip-04-gap-sach-tu-kiem/final/cover.png        1080×1920 · md5 8d13787f… = final/cover/cover-a.png (render template A Cover.tsx, props cover-a.props.json)
-IG feed/lưới hồ sơ · Threads:   content/clips/clip-04-gap-sach-tu-kiem/final/cover-1080x1350.png 1080×1350 · cắt 4:5 từ cover.png (y 265–1615)
+TikTok (tải lên riêng):           content/clips/clip-04-gap-sach-tu-kiem/final/cover.png        1080×1920 · md5 8d13787f… = final/cover/cover-a.png (render template A Cover.tsx, props cover-a.props.json)
+Reels · YouTube Shorts · Threads: khung 0s của final/clip-04-v18-reels.mp4 = cover.png (≤0,5s, L-083)
+IG feed/lưới hồ sơ:              content/clips/clip-04-gap-sach-tu-kiem/final/cover-1080x1350.png 1080×1350 · cắt 4:5 từ cover.png (y 265–1615)
 ```
 - Nguồn: FLUX Visual, commit b7d1bba (21/10/2026, 03:37 giờ VN), Rule Reviewer đã duyệt. Render từ template A, không lấy frame video (luật 54, L-020). check-rules lượt trước của News (trước b7d1bba): `rule-54` ✔, `L-020` ✔.
 - Chữ trên ảnh (đọc trực tiếp từ file): `#04 HỌC ĐÚNG CÁCH` · `HỌC THUỘC TỐI QUA?` · `SÁNG QUÊN SẠCH!` · `OneUp.`. Đúng phương án A ở mục 2, đủ dấu tiếng Việt.
@@ -236,7 +236,7 @@ Quyết định Rule Reviewer đã chốt (20/10/2026): C-1 giữ credit nguyên
 | 4 | Video thật (ffprobe) | 48,90s · 1080×1920 · 30fps · H.264 High · AAC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS (tiktok + reels) |
 | 5 | Không nhạc, có SFX + ambience (luật 21/50) | Đạt (mục 8) |
 | 6 | End card credit, vùng an toàn, Reels không logo TikTok | Đạt (mục 12) |
-| 7 | Cover từ template A, không frame video (luật 54, L-020) | Đạt (mục 16) |
+| 7 | Cover từ template A (luật 54, L-020, L-083) | Đạt (mục 16). Khung 0s bản reels khớp `cover.png`: chờ News render và Rule Reviewer so ảnh |
 
 ### Độ dài thật (đếm bằng script, 21/10/2026)
 | Bản | Độ dài | Giới hạn |
@@ -247,6 +247,8 @@ Quyết định Rule Reviewer đã chốt (20/10/2026): C-1 giữ credit nguyên
 | YouTube tiêu đề / mô tả (mục 15) | 59 / 854 ký tự | 100 (OneUp ≤ 70) / 5000 |
 | Video | 48,90s, cả 3 file | L-080: độ dài theo nội dung |
 
-### Còn mở, cần Rule Reviewer hoặc Hiệp quyết
-- **Shorts/Threads dùng bản reels:** phụ đề chỉ được đặt tránh UI của Reels, chưa đo riêng UI Shorts. App Threads/YouTube có cho tải ảnh bìa riêng hay không thì mình chưa xác minh; nếu không tải ảnh riêng được thì chờ Hiệp quyết (rule-54, Rule Reviewer chuyển Hiệp).
-- **CML ở VN:** chưa xác minh bài nào có sẵn, Hiệp kiểm trong app.
+### Hiệp đã quyết (21/10/2026, L-083)
+- Thumbnail Reels/Shorts/Threads = khung 0s (cover) của bản reels; bản TikTok tải `cover.png` riêng.
+- Phụ đề bản reels dùng cho Shorts: OK.
+- Nhạc: bài nào cũng được, không bắt buộc CML.
+- Còn chờ: số đo mục 1 và dòng «Video» của bản reels cập nhật sau khi News render lại có khung cover.
