@@ -12,9 +12,9 @@ syllable raised and proven by F0; takes picked by STT match minus a penalty abov
 """
 import json, os, re, sys, subprocess, difflib, unicodedata, glob
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
-PLANS = {"A": {"/": 0.18, "//": 0.35, "//beat": 0.4, "///": 0.4, "//hook": 0.08}, "B": {"/": 0.15, "//": 0.3, "//beat": 0.4, "///": 0.4, "//hook": 0.08}}  # //hook: L-027 splice ≤0.1s inside the hook (v18 R8)  # plan C forbidden (W-08)
+PLANS = {"A": {"/": 0.18, "//breath": 0.28, "//": 0.35, "//beat": 0.4, "///": 0.4, "//hook": 0.08}, "B": {"/": 0.15, "//breath": 0.25, "//": 0.3, "//beat": 0.4, "///": 0.4, "//hook": 0.08}}  # //hook: L-027 splice ≤0.1s inside the hook (v18 R8)  # plan C forbidden (W-08)
 RESP = {"airport": "e pọt", "hotel": "hô ten", "ticket": "tích kịt", "passport": "pát pọt", "luggage": "lắc ghịt", "dunlosky": "Đun lốt ki",
-        "yang": "Giang", "comment": "Com men", "222": "hai trăm hai mươi hai", "48": "bốn mươi tám", "2006": "hai ngàn lẻ sáu"}
+        "yang": "Giang", "comment": "Com men", "317": "ba trăm mười bảy", "222": "hai trăm hai mươi hai", "48": "bốn mươi tám", "2006": "hai ngàn lẻ sáu"}
 REF = os.path.join(REPO, "assets/voice-refs/thai-son.wav")
 REF_TEXT = "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha."
 def arg(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
@@ -244,7 +244,7 @@ def pick(fd):
         kend = {}
         for k, (_, wi) in enumerate(T): kend[wi] = k
         for wi, w in enumerate(s["words"][:-1]):
-            if w["mark"] not in ("/", "///"): continue
+            if w["mark"] not in ("/", "///", "//breath"): continue  # //breath: short breath after a counted number («Một.», «Hai.», clip-05 v4)
             k1 = kend[wi]; k2 = k1 + 1; A = int(((tt[k1][0] + tt[k1][1]) / 2) * 100); B = int(((tt[k2][0] + tt[k2][1]) / 2) * 100)
             A, B = max(0, min(A, len(e) - 1)), max(1, min(B, len(e)))
             if B <= A + 1: c = int(tt[k1][1] * 100)
@@ -349,8 +349,8 @@ def measure(fd):
         a, b = max(0, int(a * 100)), min(len(sil), int(np.ceil(b * 100))); best = cur = 0
         for v in sil[a:b]: cur = cur + 1 if v else 0; best = max(best, cur)
         return best / 100
-    TGT = {"/": (0.15, 0.2), "//": (G["//"] - 0.03, G["//"] + 0.05), "//beat": (G["//beat"] - 0.03, G["//beat"] + 0.05), "///": (G["///"] - 0.03, G["///"] + 0.05), "//hook": (0.0, 0.1)}
-    NAME = {"/": "phẩy/hai chấm", "//": "hết câu", "//beat": "hết beat", "///": "lặng có chủ ý", "//hook": "ghép hook (L-027 ≤0,1s)"}
+    TGT = {"/": (0.15, 0.2), "//": (G["//"] - 0.03, G["//"] + 0.05), "//beat": (G["//beat"] - 0.03, G["//beat"] + 0.05), "///": (G["///"] - 0.03, G["///"] + 0.05), "//hook": (0.0, 0.1), "//breath": (G.get("//breath", 0.28) - 0.04, G.get("//breath", 0.28) + 0.05)}
+    NAME = {"/": "phẩy/hai chấm", "//": "hết câu", "//beat": "hết beat", "///": "lặng có chủ ý", "//hook": "ghép hook (L-027 ≤0,1s)", "//breath": "nghỉ thở sau số đếm"}
     rows = []; flags = []; warns = []; allp = []; comma_max = 0; period_min = 9
     flat = [(s, j, p) for s in TJ["sentences"] for j, p in enumerate(s["pieces"])]
     for n_, (s, j, p) in enumerate(flat[:-1]):
@@ -371,7 +371,7 @@ def measure(fd):
     # silences (E1 schema, check-rules.py) + inner commas. Every silence run ≥0.05s between the first and last spoken word is attributed by its
     # midpoint to the word boundary k with mid(word k) ≤ run-mid < mid(word k+1) (STT word edges often swallow pauses, e.g. stop closures).
     HOOKB = set((arg("--hook-beats", "b01") or "").split(","))
-    MARKAT = {"/": "comma", "//": "sentence", "//hook": "sentence", "//beat": "beat", "///": "beat"}
+    MARKAT = {"/": "comma", "//": "sentence", "//hook": "sentence", "//beat": "beat", "///": "beat", "//breath": "sentence"}
     wl = []  # word-level: [chunk_id, word_idx, word, start, end, mark_after (piece end) or None]
     for s in TJ["sentences"]:
         sd = S[s["id"]]
@@ -445,7 +445,7 @@ def measure(fd):
     for s in TJ["sentences"]:
         sd = S[s["id"]]
         for wi, w in enumerate(sd["words"]):
-            if w["w"].lower() in ("airport", "hotel", "ticket", "passport", "luggage", "comment", "dunlosky", "yang"):
+            if w["w"].lower() in ("airport", "hotel", "ticket", "passport", "luggage", "comment", "dunlosky", "yang", "clip"):
                 tk = [k for p in s["pieces"] for k in p["tokens"] if k[3] == wi]
                 if not tk: continue
                 a, b = tk[0][1] - 0.06, tk[-1][2] + 0.08; h = stt(x[int(max(0, a) * SR):int(b * SR)], lang="en", words=False)
