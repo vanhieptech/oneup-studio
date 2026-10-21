@@ -123,3 +123,9 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Gốc: luật L-070/W-08 «câu hỏi ≥+0,5 st» không tính thanh huyền/nặng ở âm tiết cuối.
 - Fix: âm tiết cuối thanh huyền/nặng → miễn luật lên giọng, cấm nâng pitch nhân tạo; câu hỏi nhận qua từ hỏi («mấy, gì, nào…») + «?» trên phụ đề. Chỉ cần STT đọc đúng chữ cuối.
 - Phát hiện: bảng đo phải ghi thanh của âm tiết cuối; câu hỏi có thanh huyền/nặng mà gain pitch >0 = lỗi.
+
+## L-083 (2026-10-21 08:09, Rule Reviewer) — Cover Shorts/Threads = khung đầu bản reels; nhạc đăng thoải mái
+- Lỗi: bộ đăng clip-04 để Shorts/Threads «không tải cover riêng được thì chọn frame 0s» — frame 0s là cảnh hook, không phải cover template A (đụng luật 54). Mục nhạc chỉ cho chọn trong Commercial Music Library.
+- Hiệp quyết (21/10): (1) không chọn frame giữa video; thay vào đó gắn chính cover template A làm khung đầu của bản reels (bản dùng cho Reels/Shorts/Threads), lúc đăng chọn khung đó làm thumbnail. Bản TikTok giữ nguyên, vì TikTok cho tải `cover.png` riêng. (2) Phụ đề bản reels dùng cho Shorts: OK. (3) Nhạc lúc đăng dùng bài nào cũng được, kể cả bài có bản quyền (Hiệp nhận rủi ro); CML không còn bắt buộc.
+- Fix: bản reels = khung cover (render template A, 1080×1920) giữ ngắn nhất mà app vẫn chọn được (mục tiêu ≤0,5s), rồi vào hook ngay; giọng/phụ đề dời theo, không cắt chữ. post.md ghi rõ khung thumbnail = 0s (cover). Mục nhạc gợi ý bài hợp mood, không bắt buộc CML.
+- Phát hiện: khung 0s của bản reels phải khớp `cover.png` (so ảnh); khung cover ≤0,5s; bản TikTok không có khung cover.
