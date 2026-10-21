@@ -139,4 +139,5 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 ## L-085 (2026-10-21 22:58, Rule Reviewer) — Một người gửi script, ít tin nhắn trong nhóm
 - Lỗi: clip-05 có quá nhiều tin qua lại trong nhóm Agency, rồi OpenCreator và Rule Reviewer cùng gửi script v4 cho Hiệp. Hiệp: «Script đâu thằng nào gửi. S chat nhiều quá d».
 - Fix: chỉ Rule Reviewer gửi script cho Hiệp, và chỉ gửi sau khi đã chấm đạt. Người viết nộp bản nháp cho Rule Reviewer (bằng tin 1:1 hoặc commit), không gửi Hiệp. Các agent trao đổi nội bộ bằng tin 1:1 hoặc file trong repo, không dùng phòng nhóm. Trong phòng nhóm chỉ đăng 3 thứ: kết quả cho Hiệp, câu hỏi Hiệp phải quyết, hoặc bước bị chặn.
-- Phát hiện: soát tay; tin gửi script cho Hiệp mà không phải của Rule Reviewer thì tính là trượt.
+- Bổ sung (23:00): khi Hiệp nhắn trong nhóm, chỉ agent đúng vai trò trả lời, các agent khác im: script và luật là Rule Reviewer, trend là Social Research, fact là Deep Research, hình là FLUX, giọng/build/push là News. Câu hỏi chung thì Rule Reviewer trả lời một lần.
+- Phát hiện: soát tay; tin gửi script cho Hiệp mà không phải của Rule Reviewer, hoặc hai agent cùng trả lời một câu của Hiệp, thì tính là trượt.
