@@ -31,6 +31,8 @@
 ✔ rule-4   video 1080×1920 30/1 h264 High yuv420p bt709
 ✔ rule-4   audio aac 48000 Hz, -14.2 LUFS, peak -0.9 dBFS (target −14 ±1, peak ≤ −0.5)
 ✔ rule-34  contact-sheet.png for frame review
+✔ L-083    clip-04-v18-reels.mp4 opens on cover.png for 15 frame(s) = 0.50s (≤0.50s)
+✔ L-083    clip-04-v18-tiktok.mp4 has no cover frame (TikTok takes cover.png separately)
 ✔ rule-50  8 transitions, 8 with SFX
 ✔ rule-50  ambience bed under whole clip
 ✔ rule-53  post.md has all 12 fields with code blocks
@@ -181,6 +183,6 @@
 ✔ L-007    b08a/c04v18-c17a: F5 per-phrase generation
 ✔ L-016    b08b/c04v18-c17b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
 ✔ L-007    b08b/c04v18-c17b: F5 per-phrase generation
-⚠ L-013    3 commit(s) not pushed to origin (tell Hiệp; push when Mac online)
+✔ L-013    nothing pending push
 
-184 checks · 0 error(s) · 9 warning(s) → PASS
+186 checks · 0 error(s) · 8 warning(s) → PASS
