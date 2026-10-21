@@ -81,6 +81,22 @@ File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-de
 
 - (không có)
 
+## Sửa theo Rule Reviewer (review-voice-c05v4.md, 2821cfc) — rev 2, 22/10/2026 ~01:35 (UTC+7)
+- STT chọn take + đo cuối: **whisper medium float32** (L-081).
+- c12: take mới c12-11 có lặng thật 0,27s giữa «Hai» và «Mỗi» (medium «2. Mỗi buổi…»); cắt tại đó, đặt nghỉ thở 0,28s. «Hai» có tiếng 33,76–34,04, nghỉ 34,04–34,32. Nối c11→c12 0,35s (33,41–33,76). Đo nghỉ sau số đếm giờ kiểm tra đoạn số có tiếng (> −30 dB).
+- c03: take c03-37 (chữ nhập gốc), medium 1,0 «ôn chương di truyền». 6 seed chữ nhập viết thường «di truyền» chỉ được 0,87–0,93.
+- c14: **ngoại lệ** — cả 9 seed đều ngắt 0,26–0,40s ở «càng lâu | thì». Giữ take c14-11, rút đoạn lặng thật từ 0,31s xuống 0,10s (41,12–41,22) theo cách fixcommas.py.
+- c17: take c17-11p (chữ nhập F5 «Còn bạn. Môn sắp thi…», chỉ đổi chữ nhập), medium 1,0 «môn»; nâng âm cuối 5,0 st (đo +0,91 st). Phương án khác: c17-11m (chữ nhập «mon», 0,944), c17-127 (bản cũ, «muốn» 0,889, nâng 2 st).
+- c18 giữ nguyên c18-11c (medium 1,0 «Comment»).
+
+## Sửa click c17 (Rule Reviewer vòng 2, 4c01ad4) — rev 3, 22/10/2026 ~01:55 (UTC+7)
+- Nguyên nhân: bước nâng giọng nối cứng (concat) đoạn gốc với đoạn rubberband, đầu ra rubberband có khởi động ~0 → click 0,72 đỉnh ở 51,238s.
+- Sửa (`voice-delivery-f5.py` pick): mép nối dời tới khung 5ms năng lượng thấp nhất trong ±30ms rồi bám điểm qua 0; rubberband chạy với pre-roll 120ms; crossfade equal-power 18ms gốc→đã nâng. Giữ take c17-11p, không sinh lại F5. Nâng 5,0 st như rev 2.
+- Bước nhảy mẫu: trong c17 tối đa 0,35 đỉnh (50,446s, giữa câu, có cả ở take gốc); vùng nối 51,18–51,32s tối đa 0,13. Nối c16→c17 lặng 0,40s (49,24–49,64), bước max 0,16; c17→c18 lặng 0,35s (51,50–51,85), bước max 0,11.
+- STT medium trên c17 bản giao: «Còn bạn, môn sắp thi còn cách mấy hôm?» (tự do và có gợi ý).
+- Cao độ «hôm»: cách của tool (autocorr, trung vị F0 âm tiết cuối so 2 âm tiết trước) +0,91 st. Cách Rule Reviewer (pyin, trung vị F0 phần có tiếng): «hôm» 169 Hz, «mấy» 190 Hz, «cách» 155 Hz → so trung vị(mấy, cách) **−0,34 st** (so «mấy» −2,0, so «cách» +1,5). Thử nâng cố định: 3 st → −2,34 (STT «hôm»); 5,5 st → −0,14 (STT «hôm»); 6 st → +0,41 và 7 st → +1,36 nhưng medium nghe thành «hông? Không» (méo thanh). Không có mức nào vừa ≥+0,5 st theo pyin vừa giữ «hôm»: «mấy» thanh sắc đứng trước nên cao sẵn. Chờ Rule Reviewer quyết (miễn kiểu L-082 cho câu hỏi có thanh sắc ngay trước, hoặc chọn 5,5 st).
+- Ghi chú: bước nhảy lớn nhất cả file 0,64 đỉnh ở 52,12s là đầu phụ âm «s» của «số» (c18, có +10 dB nhấn), có y hệt ở bản f6d7d38, không phải chỗ nối.
+
 ## Ngoại lệ L-082 cho c17 (Rule Reviewer chọn phương án a, 22/10/2026 ~01:43 UTC+7)
 - Giữ nâng **5,0 st** ở «hôm» (take c17-11p). Câu hỏi c17 **được miễn** chỉ tiêu «âm tiết cuối ≥ +0,5 st» theo tinh thần L-082: âm tiết ngay trước «hôm» là «mấy» (thanh sắc) nên cao sẵn, nâng tiếp làm méo thanh.
 - Số đo (pyin, trung vị F0 phần có tiếng): «hôm» 169 Hz · «mấy» 190 Hz · «cách» 155 Hz → «hôm» so trung vị(mấy, cách) **−0,34 st**, so «cách» **+1,5 st**, so «mấy» −2,0 st. Cách của tool (autocorr, âm tiết cuối so 2 âm tiết trước): +0,91 st.
