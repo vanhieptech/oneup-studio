@@ -17,7 +17,7 @@ Không dùng: chuyện ôn TOEIC, «gấp sách tự kiểm» (bỏ theo Rule Re
 
 1. **[Hook — nỗi đau + câu hỏi]** Bạn học dồn một đêm cho cả kỳ, sáng ra vẫn làm được đề. Nhưng giả sử một tuần sau có ai hỏi lại, bạn còn nhớ bao nhiêu?
 2. **[Ví dụ — chỗ khựng]** Ví dụ mình ôn chương Di truyền ba tiếng liền trước hôm thi giữa kỳ. Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình không nhớ cách giải.
-3. **[Nguyên nhân + dẫn chứng]** Một nghiên cứu cho sinh viên đọc một bài đọc hai lần liền. Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần, nhưng hai ngày sau họ không còn hơn nữa. Còn ai đọc lần hai cách một tuần thì hai ngày sau vẫn hơn người đọc một lần.
+3. **[Nguyên nhân + dẫn chứng]** Một nghiên cứu cho sinh viên đọc một bài hai lần liền. Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần, nhưng hai ngày sau họ không còn hơn nữa. Còn ai đọc lần hai cách một tuần thì hai ngày sau vẫn hơn người đọc một lần.
 4. **[Mục tiêu]** Mình cần là tới cuối kỳ mình vẫn nhớ chương đó, chứ không chỉ đủ cho sáng hôm thi.
 5. **[Cách làm]** Nên cùng ba tiếng đó, mình chia ra ba ngày, mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang. Tổng giờ không đổi, mình chỉ phải bắt đầu sớm vài hôm.
 6. **[Bằng chứng]** Một bài tổng hợp 317 thí nghiệm thấy, người học muốn nhớ càng lâu thì khoảng cách giữa các lần ôn càng phải dài.
