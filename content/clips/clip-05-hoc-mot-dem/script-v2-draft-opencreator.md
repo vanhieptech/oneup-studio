@@ -1,11 +1,11 @@
 ---
-title: "clip-05 «học một đêm cả kỳ» — script v1 nháp (OpenCreator)"
+title: "clip-05 «học một đêm cả kỳ» — script v2 nháp (OpenCreator)"
 date: 2026-10-21
 clip: clip-05-hoc-mot-dem
 idea: B-hoc1dem-01 (Hiệp chọn 21/10/2026)
 item: HTB 23.15 «Dàn cùng thời gian ra mấy ngày, đừng học hết một lần» (mức A)
 theme: DARK (hook mở bằng cái giá của học dồn — Rule Reviewer 21/10)
-status: nháp v1 — CHƯA Chốt; chờ Deep Research xác nhận lời + Rule Reviewer chấm. Không voice/render trước «Chốt» (L-072).
+status: nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072).
 fact_lock: content/clips/clip-05-hoc-mot-dem/fact-package.md (fd4d90d)
 ---
 
@@ -35,10 +35,10 @@ Caption: mỗi dòng `·` là một chunk riêng, ≤ 8 từ. Hình: vật/hành
 | b01 | Crammed one night for the whole term · Still passed the exam that morning · A week later, how much is left? | Nền tối. Bàn học dưới đèn bàn vàng, đồng hồ treo tường kim chỉ gần 3 giờ, chồng sách dày đổ nghiêng, ly cà phê cạn. Cut nhanh: sáng, Thầy cầm tờ đề, đặt bút xuống nhẹ nhõm. Cut 3: tờ giấy đó lật trang, lịch xé đi 7 tờ (chỉ hình tờ lịch bay, không số), Thầy nghiêng đầu nhìn trang trống. |
 | b02 | Example: three straight hours on genetics · Night before the midterm · Finals: same problem type, I'm stuck | Đồng hồ cát chảy liền một mạch cạnh quyển sách Sinh mở (hình chuỗi ADN/2 hạt đậu vẽ tay trên bìa, không chữ). Chuyển cảnh: Thầy ngồi phòng thi, trước mặt tờ đề có hình ô vuông Punnett 4×4 trống, bút khựng trên ô đầu tiên, Thầy gãi đầu. |
 | b03 | One study: students read a text twice · Back to back: beat one read, instantly · Two days later: no longer ahead · Second read a week later: still ahead | Motion graphic 3 cột (vật, không chữ): cột xám = đọc 1 cuốn (đối chứng). Làn trên 2 cuốn sách chồng sát nhau → mốc «ngay» cột cao hơn cột xám; tua lịch 2 ngày → cột tụt bằng cột xám. Làn dưới 2 cuốn đặt cách xa (7 chấm lịch = 1 tuần) → mốc 2 ngày cột cao hơn cột xám. CHỈ so với cột xám; không vẽ làn dưới cao hơn làn trên. Caption «Rawson & Kintsch 2005» góc dưới. |
-| b04 | I need it to stay till finals · Not just enough for exam morning | Thầy đặt quyển sách Sinh lên kệ; một sợi dây nối tờ đề giữa kỳ (bên trái) với tờ đề cuối kỳ (bên phải, xa hơn); quyển sách vẫn sáng lên ở đầu dây cuối kỳ. |
+| b04 | I need it to stay till finals | Thầy đặt quyển sách Sinh lên kệ; một sợi dây nối tờ đề giữa kỳ (bên trái) với tờ đề cuối kỳ (bên phải, xa hơn); quyển sách vẫn sáng lên ở đầu dây cuối kỳ. |
 | b05 | Same three hours, split into three days · One hour a day, like the book's example · Same total, just start a few days earlier | Đồng hồ cát lớn ở b02 vỡ làm 3 đồng hồ cát nhỏ bằng nhau, mỗi cái đặt lên một tờ lịch (3 tờ liền nhau, chỉ màu, không số). Thầy lật từng tờ, mỗi tờ ngồi học dưới đèn một lúc. Tờ lịch ngày thi bị đẩy ra xa hơn. |
 | b06 | Pooling 317 experiments, researchers found · Longer memory needs wider gaps between reviews | Dải lịch dài; các chấm ôn (accent #FF5A36) giãn dần khi mũi tên «nhớ tới» kéo xa hơn — thanh trượt kéo phải thì khoảng cách giữa chấm rộng ra. Caption tên «Cepeda et al. 2006» góc dưới. |
-| b07 | Finals: same problem type again · I read it and know the method | Lặp lại khung b02 (phòng thi, ô Punnett 4×4), lần này bút điền chạy qua các ô, Thầy gật đầu, tick nhỏ cạnh tờ đề (doodle accent, L-048). |
+| b07 | Finals: same problem type again · Easier to recall the method | Lặp lại khung b02 (phòng thi, ô Punnett 4×4), lần này bút điền chạy qua các ô, Thầy gật đầu, tick nhỏ cạnh tờ đề (doodle accent, L-048). |
 | b08 | How many days until your exam? · Comment the number | Thầy quay ra camera, giơ tờ lịch, chỉ tay xuống khung comment. → end card. |
 
 ## (c) Nguồn / fact từng câu
