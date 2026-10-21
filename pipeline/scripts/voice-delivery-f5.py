@@ -363,6 +363,9 @@ def measure(fd):
         elif mk == "//hook" and pz > 0.1: stt_ = "✖ hook >0.1s (L-027)"
         elif mk not in ("/", "//hook") and pz < 0.1: stt_ = "✖ hết câu <0.1s"
         elif not (lo - 0.005 <= pz <= hi + 0.005): stt_ = "⚠ lệch plan"
+        if mk == "//breath":  # Rule Reviewer 22/10: the counted word («Một», «Hai») must really be voiced in its piece, else the «pause» is a misplaced cut
+            seg_ = x[int(max(0, p["start"]) * SR):int(p["end"] * SR)]; vdb = 20 * np.log10(float(np.sqrt(np.mean(seg_ ** 2))) + 1e-9) if len(seg_) else -99.0
+            if vdb < -30: stt_ = f"✖ chữ đếm không có tiếng ({vdb:.0f} dB)"
         allp.append({"sid": s["id"], "after": last_w, "mark": mk, "kind": NAME[mk], "plan": G[mk], "pause": round(pz, 3), "status": stt_})
         if mk == "/": comma_max = max(comma_max, pz)
         elif mk != "//hook": period_min = min(period_min, pz)
