@@ -1,4 +1,4 @@
-# Đo prosody bản giọng nháp — c05v4 (script-v4-LOCKED, F5 Thái Sơn speed 1.0, plan A)
+# Đo prosody bản giọng nháp — c05v4 (script-v16c, F5 Thái Sơn speed 1.0, plan A)
 
 File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-dem/final/voice-only-c05v4.wav`. Đo trên chính file giao (sau loudnorm). Nghỉ = đoạn lặng dài nhất (năng lượng, khung 10ms) tại chỗ nối hai cụm; nhấn = độ to (chỉ tính khung có tiếng) của cụm đậm so phần còn lại của câu (bỏ âm tiết cuối) và so 2 âm tiết kề mỗi bên; lên giọng = trung vị F0 âm tiết cuối so 2 âm tiết ngay trước (semitone); STT = faster-whisper medium float32 (vi) trên đoạn câu, so với lời (số/từ EN quy về cách đọc).
 
@@ -30,7 +30,7 @@ File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-de
 | c15 Khi mình làm đủ hai bước đó, | b07 | 43.70–45.05 | — | — | Khi mình làm đủ hai bước đó, (1.0) | c15-11.wav |
 | c16 tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình dễ nhớ ra cách giải hơn. | b07 | 45.23–49.24 | «dễ nhớ ra» +2.4 / +3.0 (+2.6) | — | Tới cuối kỳ gặp lại dạng lại hai cặp tính trạng, mình dễ nhớ ra cách giải hơn. (0.972) | c16-113.wav |
 | c17 Còn bạn, môn sắp thi còn cách mấy hôm? | b08 | 49.64–51.50 | «mấy hôm» +3.3 / +4.6 (+3.6) | 0.72 · thanh ngang · nâng 5.0 st | Còn bạn, môn sắp thi còn cách mấy hôm? (1.0) | c17-11p.wav |
-| c18 Comment số hôm nha. | b08 | 51.85–52.67 | «số hôm» +2.4 / +3.4 (+11.3) | — | Comment số hôm nha (1.0) | c18-11c.wav |
+| c18 Comment số hôm nha. | b08 | 51.85–52.67 | «số hôm» +2.4 / +3.4 (+11.2) | — | comment số hôm nha (1.0) | c18-11c.wav |
 
 ## Nghỉ tại từng ký hiệu (đo / plan)
 
@@ -107,3 +107,35 @@ File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-de
 - Sửa: de-ess riêng /s/ (`voice-work/clip-05-v4/deess.py`, chạy sau fixcommas.py): lọc thông thấp trung bình trượt 10 mẫu (≈ cắt trên ~4,8 kHz) trên cửa sổ từ 30ms trước tới 100ms sau mép token «số», crossfade 8ms hai đầu. Không đổi take, không đổi tempo.
 - Sau: bước nhảy tối đa trong c18 (51,85–52,67s) **0,35 đỉnh** (52,143s) ≤ 0,40 ✓. Nhấn «số hôm» **+2,4 dB so câu / +3,4 dB so chữ kề** ✓ (tổng gain nhấn 11,3 dB, vòng bù sau limiter tự tăng thêm vì /s/ nhỏ đi; không hạ được về 5–6 dB mà vẫn giữ ≥ +2,3 dB so câu vì «số hôm» gốc thấp hơn câu 4,5 dB). STT medium c18: «Comment số hôm nha» (1,0, tự do và có gợi ý).
 - Bước nhảy lớn nhất cả file giờ là 0,43 đỉnh ở 43,115s (cuối c14 «dài»), y hệt bản 36aa0a1, không phải chỗ nối.
+
+## c18: bỏ de-ess, giảm gain toàn dải đoạn /s/ của «số» — rev 5, 22/10/2026 ~02:19 (UTC+7)
+
+Theo Rule Reviewer vòng 3 (review-voice-c05v4.md, 671070b). Chỉ sửa c18, giữ take c18-11c. Không sinh lại F5.
+
+- **Bỏ** bộ lọc trung bình trượt K=10 của rev 4. Dựng lại c18-p0.npy từ c18-p0.orig.npy (piece trước khi de-ess). Script: /workspace/voice-work/clip-05-v4/sgain.py, ghi trong picks.json c18.s_gain.
+- Đoạn /s/ dò bằng ZCR là 0,258–0,325s (giờ trong piece), tức 52,105–52,165s trong file. Cửa sổ sửa 0,256–0,326s, fade tuyến tính 6 ms.
+- **Gain toàn dải −11 dB** trên đoạn /s/, không lọc, không shelf. Cộng thêm +0,6 dB cho phần «ố hôm» sau /s/ (fade 20 ms) để «số hôm» vẫn nhấn ≥ +2,3 dB.
+- **Vì sao −11 dB chứ không phải −4…−6 dB:** «số hôm» đang được nhấn tổng +11,2 dB (7,0 + vòng bù 4,2), nên /s/ của «số» to hơn các /s/ khác 7–8 dB. Thử từng mức, đo trên file giao:
+
+| gain /s/ | bước nhảy max c18 | >4 kHz / tổng | mức >4 kHz | RMS /s/ |
+|---|---|---|---|---|
+| rev 4 (de-ess) | 0,35 | −10,7 dB | 0,5 dB | −16,5 dBFS |
+| −5 dB | 0,63 ✖ | −4,5 dB | 11,1 dB | −13,5 |
+| −7 dB | 0,56 ✖ | −4,6 | 9,4 | −15,1 |
+| −9 dB | 0,45 ✖ | −4,6 | 7,5 | −17,0 |
+| −6 dB + shelf −3/−6/−9 dB từ 7 kHz | 0,58/0,54/0,51 ✖ | −5,2…−6,0 | 9,5…8,2 | −14,5…−14,9 |
+| −10 dB | 0,405 ✖ | −4,6 | 6,6 | −17,9 |
+| **−11 dB + 0,6 dB «ố hôm» (chọn)** | **0,345 ✓** | **−4,6 dB ✓** | **5,2 dB** | **−19,3** |
+| tham chiếu «sau» c02 (3,315–3,385s) | 0,30 | −2,9 dB | 6,6 dB | −19,9 |
+| tham chiếu «sắp» c17 (50,41–50,465s) | 0,35 | −1,9 dB | 5,1 dB | −21,3 |
+
+  - Bước nhảy ở 52,143s là sóng xì thật của /s/, không phải click. Mức −11 dB đưa nó về ngang «sắp» (0,35).
+  - Với −11 dB, /s/ có RMS và mức >4 kHz gần bằng hai /s/ kia. Nhìn theo cả câu thì gần như chỉ trả lại mức trước khi nhấn.
+- **Kết quả (file giao, sau loudnorm):**
+  - Bước nhảy lớn nhất trong c18 (51,85–52,67s): **0,345 đỉnh** (52,143s) ≤ 0,40 ✓.
+  - Nhấn «số hôm» (cách của tool): **+2,39 dB so câu / +3,43 dB so chữ kề** ✓. Cách RR (mẫu >0,01): **+2,33 dB so «Comment»**, +4,78 dB so «nha» ✓.
+  - Năng lượng >4 kHz của /s/ «số»: tỉ lệ **−4,6 dB**, nằm trong khoảng −2…−6 dB. Lệch «sau» 1,7 dB, lệch «sắp» 2,7 dB. Mức tuyệt đối 5,2 dB, so với 6,6 dB («sau») và 5,1 dB («sắp»), lệch ≤ 1,4 dB. Cả hai cách tính đều **trong 6 dB** ✓.
+  - STT whisper medium float32 c18: «comment số hôm nha» **1,0** ✓. Cờ chặn 0, cảnh báo 0.
+  - Tổng 52,711s, −14,2 LUFS, peak −1,3 dBFS.
+- **Phạm vi:** so mẫu với bản rev 4 (5b12e22), chỉ đổi đoạn 52,035–52,454s (trong c18). c01–c17 giống từng mẫu, độ dài file không đổi (2 530 130 mẫu).
+  - Ghi chú: bước nhảy lớn nhất cả file là 0,433 ở 43,115s. Bước này đã có ở rev 4, RR đã chấm qua vòng 3. Không đụng tới.
