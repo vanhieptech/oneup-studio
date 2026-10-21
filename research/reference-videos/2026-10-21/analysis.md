@@ -31,7 +31,7 @@ creator: "@studypte.w.shawn (watermark TikTok); view/like không hiện trong fi
 5. **Không CTA, kết đột ngột** để video lặp vòng.
 
 ## Nhịp & hình
-- ~1 cắt cảnh mỗi 3 giây (ref-1 ~10–12 cắt/37s, ref-2 ~15 cắt/45s — ước lượng của bản phân tích video, chưa đo bằng ffmpeg).
+- Đổi hình khoảng 2–3 giây một lần: Rule Reviewer đo ffmpeg scene detect (ngưỡng 0,3 và 0,2) ref-1 16–20 cắt/37,5s (~2s), ref-2 14–17 cắt/45s (~2,6–3,2s).
 - Không khoảng lặng, không nhạc nền, chỉ giọng nói nhiều năng lượng.
 - Caption hộp vàng chữ đen ở dưới, từ khoá tô đỏ; banner tiêu đề cố định ở trên (ref-1).
 - Chèn clip minh chứng ngắn (ref-2) để đổi nhịp hình.
