@@ -31,7 +31,7 @@ Tổng 30 clip: **13 LIGHT · 17 DARK**. Chuỗi đăng (đã kiểm max chạy 
 | 2 | 2 | 1 | 4.9 | 1 Làm ít, xong nhiều | Trì hoãn = né cảm giác khó chịu, không phải lười | Gỡ cái bẫy tự trách / chẩn đoán sai | **DARK** |
 | 3 | 3 | 1 | 4.7 | 1 Làm ít, xong nhiều | Task “làm app” không bao giờ xong → chia nhỏ | Mở bằng bẫy việc quá lớn | **DARK** |
 | 4 | 5 | 1 | 23.14 | Học đúng cách | Gấp sách tự kiểm (retrieval practice): gấp sách, viết lại từ trí nhớ (clip-04, đổi chủ đề 21/10) | Hành động nên làm, kết quả tích cực (Rule Reviewer 2026-10-21) | **LIGHT** |
-| 5 | 4 | 1 | 4.4 | 1 Làm ít, xong nhiều | Estimate sai x2 → ước theo dữ liệu quá khứ | Lỗi phổ biến (planning fallacy) | **DARK** |
+| 5 | 26 | 1 | 23.15 | 5 Học & đầu tư bản thân | Học dồn một đêm cho cả kỳ: sáng thi vẫn làm được, cái giá là quên nhanh → cùng số giờ chia ra mấy ngày (clip-05, B-hoc1dem-01, Hiệp chọn 21/10) | Hook mở bằng cái giá/bẫy của học dồn (Rule Reviewer 2026-10-21) | **DARK** |
 | 6 | 6 | 1 | 4.12 | 1 Làm ít, xong nhiều | “21 ngày tạo thói quen” là myth | Gỡ myth / kỳ vọng sai | **DARK** |
 | 7 | 8 | 2 | 3.5 | 2 Giữ tập trung | Check tin nhắn theo đợt 3 lần/ngày | Hành động nên làm, kết quả nhẹ nhõm | **LIGHT** |
 | 8 | 7 | 2 | 3.1 | 2 Giữ tập trung | Điện thoại úp bàn vẫn ăn sự tập trung | Cảnh báo chi phí ẩn | **DARK** |
@@ -53,10 +53,12 @@ Tổng 30 clip: **13 LIGHT · 17 DARK**. Chuỗi đăng (đã kiểm max chạy 
 | 24 | 24 | 4 | 3.14 | 4 Tâm trí vững | Overthinking? Làm việc phải động tay | Hành động thoát vòng lặp | **LIGHT** |
 | 25 | 25 | 5 | 23.14 | 5 Học & đầu tư bản thân | Đọc lại 3 lần = cách học tệ nhất → tự kiểm | Mở bằng lỗi học phổ biến | **DARK** |
 | 26 | 27 | 5 | 4.3 | 5 Học & đầu tư bản thân | Chi phí chìm: side project 6 tháng | Bẫy ra quyết định | **DARK** |
-| 27 | 26 | 5 | 23.15 | 5 Học & đầu tư bản thân | Dàn việc học ra nhiều ngày | Cách học nên làm | **LIGHT** |
+| 27 | — | 5 | — | 5 Học & đầu tư bản thân | (trống: 23.15 đã kéo lên đăng #5 ngày 21/10; cần chọn một mục LIGHT) | Giữ LIGHT để không thành 5 DARK liền 25–29 | **LIGHT** |
 | 28 | 28 | 5 | 5.1 | 5 Học & đầu tư bản thân | Tắt mọi gia hạn tự động | Chi phí rò rỉ | **DARK** |
 | 29 | 29 | 5 | 14.10 | 5 Học & đầu tư bản thân | Đừng dán API key vào “trạm trung chuyển AI” | Cảnh báo bảo mật | **DARK** |
 | 30 | 30 | 5 | — | 5 Học & đầu tư bản thân | Tổng kết 30 thói quen + gặp Omi | Ăn mừng, growth | **LIGHT** |
+
+**Cập nhật 21/10/2026 (Rule Reviewer, clip-05):** đăng #5 đổi từ 4.4 (estimate sai x2, DARK) sang 23.15 DARK. Chuỗi theme không đổi (#5 vẫn DARK). 4.4 chưa có chỗ mới: không đặt vào slot #27 vì 25–29 sẽ thành 5 DARK liền (vi phạm quy tắc 4); 4.4 chờ xếp lại ở tuần sau, slot #27 chờ một mục LIGHT.
 
 Đổi chỗ so với plan gốc (trong cùng tuần): 4↔5 · 7↔8 · 11↔12 · 16↔17 · 20↔21↔22 · 26↔27. Plan gốc có các chuỗi DARK 3 liền (2–4, 9–11, 14–16, 27–29) và LIGHT 4 liền (21–24).
 
