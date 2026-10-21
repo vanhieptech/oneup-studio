@@ -440,6 +440,22 @@ def main():
                 li = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", m)[-1]); pk = float(re.findall(r"Peak:\s+(-?[\d.]+) dBFS", m)[-1])
                 (ok if abs(li + 14) <= 1.0 and pk <= -0.5 else err)("rule-4", f"audio {au[0]['codec_name']} {au[0]['sample_rate']} Hz, {li} LUFS, peak {pk} dBFS (target −14 ±1, peak ≤ −0.5)")
             (ok if os.path.exists(os.path.join(fdir, "contact-sheet.png")) else err)("rule-34", "contact-sheet.png for frame review")
+    # L-083 (Hiệp 21/10/2026): reels file opens on the template-A cover (frame 0 == cover.png, ≤0.5s); TikTok file has no cover frame.
+    if final:
+        cpng = os.path.join(fdir, "cover.png")
+        def _ssim(mp4, n):
+            r = subprocess.run(["ffmpeg", "-v", "error", "-i", mp4, "-i", cpng, "-filter_complex",
+                f"[0:v]trim=start_frame={n}:end_frame={n+1},setpts=PTS-STARTPTS[a];[1:v]scale=1080:1920[b];[a][b]ssim=stats_file=-", "-f", "null", "-"], capture_output=True, text=True)
+            m = re.findall(r"All:([\d.]+)", r.stdout + r.stderr); return float(m[0]) if m else 0.0
+        reels = sorted(glob.glob(os.path.join(fdir, "*-reels.mp4"))); tiks = sorted(glob.glob(os.path.join(fdir, "*-tiktok.mp4")))
+        if os.path.exists(cpng):
+            for rm in reels:
+                if _ssim(rm, 0) < 0.98: err("L-083", f"{os.path.basename(rm)} frame 0 is not cover.png (put template-A cover as first frame, ≤0.5s)"); continue
+                n = 0
+                while n < 20 and _ssim(rm, n) >= 0.98: n += 1
+                (ok if n <= 15 else err)("L-083", f"{os.path.basename(rm)} opens on cover.png for {n} frame(s) = {n/30:.2f}s (≤0.50s)")
+            for tk in tiks:
+                (ok if _ssim(tk, 0) < 0.98 else err)("L-083", f"{os.path.basename(tk)} has no cover frame (TikTok takes cover.png separately)")
     # STT
     if do_stt and tpath and os.path.exists(tpath):
         t = json.load(open(tpath)); wavs = [os.path.join(REPO, "video-engine/public/voice", l["key"] + ".wav") for l in t["lines"]]
