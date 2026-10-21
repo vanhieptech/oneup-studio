@@ -78,8 +78,8 @@ export const SceneRenderer: React.FC<{
         ) : null)}
         <Overlays props={scene.props as PropCue[] | undefined} t={t} H={H} />
         {scene.narration && <NarrationBox text={scene.narration.text} start={scene.narration.start} end={scene.narration.end ?? scene.duration} t={t} top={reels ? 300 : 66} />}
-        {scene.caption && !scene.caption.segments?.length && <Caption text={scene.caption.text} start={scene.caption.start} end={scene.caption.end ?? scene.duration} t={t} highlight={scene.caption.highlight} top={capTop} theme={theme} narrow={reels} />}
-        {scene.caption?.segments?.map((sg, i) => <Caption key={`cs${i}`} text={sg.text} start={sg.start} end={sg.end} t={t} highlight={sg.highlight} top={capTop} theme={theme} narrow={reels} />)}
+        {scene.caption && !scene.caption.segments?.length && <Caption text={scene.caption.text} start={scene.caption.start} end={scene.caption.end ?? scene.duration} t={t} highlight={scene.caption.highlight} top={capTop} theme={theme} narrow={reels} accent={video.captionAccent} />}
+        {scene.caption?.segments?.map((sg, i) => <Caption key={`cs${i}`} text={sg.text} start={sg.start} end={sg.end} t={t} highlight={sg.highlight} top={capTop} theme={theme} narrow={reels} accent={video.captionAccent} />)}
       </div>
     </AbsoluteFill>
   );

@@ -1,0 +1,77 @@
+{
+ "duration": 1.3667,
+ "envelope": [
+  0.067,
+  0.169,
+  0.205,
+  0.743,
+  0.756,
+  0.565,
+  0.521,
+  0.621,
+  0.352,
+  0.665,
+  0.943,
+  0.923,
+  0.902,
+  1,
+  0.499,
+  0.184,
+  0.824,
+  0.512,
+  0.481,
+  0.576,
+  0.744,
+  0.754,
+  0.608,
+  0.581,
+  0.653,
+  0.483,
+  0.588,
+  0.674,
+  0.206,
+  0.049,
+  0.056,
+  0.302,
+  0.862,
+  0.859,
+  0.808,
+  0.834,
+  0.818,
+  0.699,
+  0.499,
+  0.127,
+  0.01
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py c05v4 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c05v4.wav at frame boundaries",
+ "role": "Thầy",
+ "stt": "Sáng ra vẫn làm được đề.",
+ "stt_sim": 1.0,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "Sáng ra vẫn làm được đề.",
+   "sim": 1.0
+  },
+  "in_chunk": {
+   "text": "sáng ra vẫn làm được đề.",
+   "sim": 1.0
+  }
+ },
+ "intra_output_cuts": 1,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "Bạn học dồn một đêm cho cả kỳ, sáng ra vẫn làm được đề.",
+   "take": "c01-101.wav",
+   "chunk": "c01"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c05v4.wav",
+  "start_s": 1.5667,
+  "end_s": 2.9333,
+  "hold_s": 0,
+  "tail_s": 0
+ }
+}

@@ -12,7 +12,7 @@ export function wordTimes(text: string, start: number, end: number) {
   return words.map((word, i) => { const d = ((end - start) * w[i]) / total; const r = { word, start: acc, end: acc + d }; acc += d; return r; });
 }
 
-export const Caption: React.FC<{ text: string; start: number; end: number; t: number; highlight: number[]; top: number; theme: "light" | "dark"; narrow?: boolean }> = ({ text, start, end, t, highlight, top, narrow }) => {
+export const Caption: React.FC<{ text: string; start: number; end: number; t: number; highlight: number[]; top: number; theme: "light" | "dark"; narrow?: boolean; accent?: boolean }> = ({ text, start, end, t, highlight, top, narrow, accent }) => {
   if (t < start || t > end) return null;
   const words = wordTimes(text, start, end - 0.25);
   const out = clamp((end - t) / 0.15);
@@ -28,8 +28,8 @@ export const Caption: React.FC<{ text: string; start: number; end: number; t: nu
         return (
           <span key={i} style={{
             fontSize: narrow ? 46 : 54, fontWeight: 700, lineHeight: 1.18, letterSpacing: -0.5,
-            color: hl ? BRAND.paper : BRAND.ink,
-            background: hl ? BRAND.ink : "transparent", borderRadius: 18, padding: hl ? "2px 16px 6px" : "2px 0 6px",
+            color: hl ? (accent ? BRAND.ink : BRAND.paper) : BRAND.ink,
+            background: hl ? (accent ? BRAND.accent : BRAND.ink) : "transparent", borderRadius: 18, padding: hl ? "2px 16px 6px" : "2px 0 6px",
             opacity: shown ? 1 : 0.16, transform: `translateY(${(1 - Math.min(1, k)) * 18}px) scale(${shown ? 0.9 + 0.1 * Math.min(1.05, k) : 0.9})`,
             textDecoration: active && !hl ? `underline ${BRAND.ink} 6px` : "none", textUnderlineOffset: 10,
             display: "inline-block",

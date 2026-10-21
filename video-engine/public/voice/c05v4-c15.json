@@ -1,0 +1,85 @@
+{
+ "duration": 1.6333,
+ "envelope": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.008,
+  0.048,
+  0.884,
+  1,
+  0.738,
+  0.774,
+  0.756,
+  0.661,
+  0.564,
+  0.566,
+  0.537,
+  0.46,
+  0.556,
+  0.584,
+  0.442,
+  0.459,
+  0.396,
+  0.519,
+  0.707,
+  0.647,
+  0.378,
+  0.263,
+  0.413,
+  0.488,
+  0.531,
+  0.528,
+  0.265,
+  0.511,
+  0.83,
+  0.5,
+  0.035,
+  0.01,
+  0.116,
+  0.505,
+  0.685,
+  0.592,
+  0.599,
+  0.479,
+  0.428,
+  0.373,
+  0.348,
+  0.316,
+  0.109,
+  0.0,
+  0.0
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py c05v4 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c05v4.wav at frame boundaries",
+ "role": "Thầy",
+ "stt": "Khi mình làm đủ hai bước đó,",
+ "stt_sim": 1.0,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "Khi mình làm đủ hai bước đó,",
+   "sim": 1.0
+  },
+  "in_chunk": {
+   "text": "Khi mình làm đủ hai bước đó,",
+   "sim": 1.0
+  }
+ },
+ "intra_output_cuts": 0,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "Khi mình làm đủ hai bước đó,",
+   "take": "c15-11.wav",
+   "chunk": "c15"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c05v4.wav",
+  "start_s": 43.5,
+  "end_s": 45.1333,
+  "hold_s": 0,
+  "tail_s": 0
+ }
+}

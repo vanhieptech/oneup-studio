@@ -29,6 +29,13 @@ export const Overlays: React.FC<{ props?: PropCue[]; t: number; H: number }> = (
         <span>{p.text as string}</span>{p.tick ? <Check s={word ? 66 : 34} /> : null}
       </div>;
     }
+    if (p.kind === "counter") { // clip-05 v4: share counter counts up (e.g. 55,3K), Vietnamese decimal comma
+      const at = (p.at as number) ?? 0; if (t < at) return null; const u = eo(cl((t - at) / ((p.dur as number) ?? 0.7)));
+      const v = ((p.to as number) ?? 0) * u; const txt = v.toFixed((p.dec as number) ?? 1).replace(".", ",") + ((p.suffix as string) ?? "");
+      const k = Math.min(1.08, springAt(t - at, 17, 9));
+      return <div key={`ct${i}`} style={{ position: "absolute", left: (p.x as number) ?? 540, top: (p.y as number) ?? 300, transform: `translate(-50%, -50%) scale(${k})`, fontFamily: FONT_FAMILY, fontWeight: 700,
+        fontSize: (p.size as number) ?? 34, color: BRAND.paper, background: BRAND.ink, borderRadius: 16, padding: "4px 14px 8px", whiteSpace: "nowrap", fontVariantNumeric: "tabular-nums" }}>{txt}</div>;
+    }
     if (p.kind === "endcard") {
       const u = eo(cl((t - ((p.at as number) ?? 0)) / 0.3)); // soft-land 0.3s
       return <div key={`ec${i}`} style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920 }}>

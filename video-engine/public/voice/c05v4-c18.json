@@ -1,0 +1,77 @@
+{
+ "duration": 1.3667,
+ "envelope": [
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.059,
+  0.712,
+  0.683,
+  0.377,
+  0.478,
+  0.597,
+  0.655,
+  0.652,
+  0.171,
+  0.202,
+  0.814,
+  0.846,
+  0.866,
+  1,
+  0.839,
+  0.864,
+  0.775,
+  0.811,
+  0.376,
+  0.391,
+  0.492,
+  0.484,
+  0.488,
+  0.427,
+  0.263,
+  0.028,
+  0.005,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py c05v4 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c05v4.wav at frame boundaries",
+ "role": "Thầy",
+ "stt": "comment số hôm nha",
+ "stt_sim": 1.0,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "comment số hôm nha",
+   "sim": 1.0
+  },
+  "in_chunk": {
+   "text": "comment số hôm nha",
+   "sim": 1.0
+  }
+ },
+ "intra_output_cuts": 0,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "Comment số hôm nha.",
+   "take": "c18-11c.wav",
+   "chunk": "c18"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c05v4.wav",
+  "start_s": 51.6667,
+  "end_s": 52.7333,
+  "hold_s": 0,
+  "tail_s": 0.3
+ }
+}

@@ -25,6 +25,8 @@ export const VideoConfigSchema = z.object({
   theme: z.enum(["light", "dark"]).default("light"),
   /** clip-04 v18: "reels" moves captions to y≈1000–1240 and the title to y≥300 (Reels/Shorts UI safe zones). */
   layout: z.enum(["tiktok", "reels"]).default("tiktok"),
+  /** clip-05 v4 (open choice, Hiệp to pick): caption keyword highlight in brand accent #FF5A36 instead of ink. */
+  captionAccent: z.boolean().default(false),
 });
 
 export const TimedChange = <T extends z.ZodTypeAny>(value: T) => z.object({ at: seconds, value });
@@ -84,7 +86,7 @@ export const SceneSchema = z.object({
   narration: z.object({ text: nonEmpty, start: seconds.default(0), end: seconds.optional() }).optional(),
   sfx: z.array(z.object({ name: nonEmpty, at: seconds })).default([]),
   /** DL-056 comic props (laptop/phone/calendar/cloud/sign/words/vignette), see composition/Props.tsx */
-  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty", "book", "sheet", "pen", "window", "table", "tome", "paper", "card", "icon", "stack", "deck", "papers", "bars", "halves", "tag", "endcard", "plate"]) }).passthrough()).default([]),
+  props: z.array(z.object({ kind: z.enum(["laptop", "phone", "calendar", "cloud", "sign", "vignette", "words", "pile", "bundles", "bundle", "clock", "dusty", "book", "sheet", "pen", "window", "table", "tome", "paper", "card", "icon", "stack", "deck", "papers", "bars", "halves", "tag", "endcard", "plate", "counter", "biobook", "textbooks", "hourglass", "punnett", "qmark", "tearpad", "lamp", "wallclock", "ttframe", "rope", "exam", "groups3", "strip", "ring", "moondot"]) }).passthrough()).default([]),
   /** Doodle draw-on marks (anidoodle, Apache-2.0; src/composition/doodle/). Design px, 1080-wide. */
   doodles: z.array(z.object({
     kind: z.enum(DOODLE_KINDS), x: z.number().finite(), y: z.number().finite(),

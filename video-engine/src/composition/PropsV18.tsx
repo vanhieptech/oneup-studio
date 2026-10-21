@@ -1,6 +1,7 @@
 import React from "react";
 import { BRAND } from "./theme";
 import { springAt, hash01 } from "../animation/timing";
+import { C05_KINDS, C05_ABS } from "./PropsC05";
 
 /** clip-04 v18 props (L-050: meaning by objects, no text inside images). Scene seconds, design px (1080 wide).
  *  Icons: Phosphor Icons core 2.1.1 (MIT, https://github.com/phosphor-icons/core), paths inlined. */
@@ -27,13 +28,13 @@ export const Icon: React.FC<{ name: string; size: number; fill?: string; opacity
   </g>;
 
 /** tick badge: accent disc + paper check */
-const Tick: React.FC<{ r?: number }> = ({ r = 34 }) => <g>
+export const Tick: React.FC<{ r?: number }> = ({ r = 34 }) => <g>
   <circle cx={4} cy={5} r={r} fill={ink} /><circle r={r} fill={accent} stroke={ink} strokeWidth={6} />
   <Icon name="check" size={r * 1.25} fill={paper} />
 </g>;
 
 /** Window = time marker (night: moon + stars; day: sun rises). sky: [[t, "night"|"day"], ...]; each change blends 0.55s. */
-const Window: React.FC<{ p: P; t: number }> = ({ p, t }) => {
+export const Window: React.FC<{ p: P; t: number }> = ({ p, t }) => {
   const x = p.wx ?? 640, y = p.wy ?? 250, w = p.ww ?? 320, h = p.wh ?? 300;
   const keys: [number, string][] = p.sky ?? [[0, "day"]];
   let d = keys[0][1] === "day" ? 1 : 0, lastAt = -99;
@@ -74,7 +75,7 @@ const Scrib: React.FC<{ x: number; y: number; w: number; dim?: boolean; k?: numb
     opacity={dim ? 0.6 : 0.85} strokeDasharray={w * 1.3} strokeDashoffset={w * 1.3 * (1 - k)} />;
 
 /** Book with spine + page edges (L-050, no label). keys: [[t,"open"|"closed"]], flips: [t...] page turns (0.45s). */
-const Tome: React.FC<{ p: P; t: number }> = ({ p, t }) => {
+export const Tome: React.FC<{ p: P; t: number }> = ({ p, t }) => {
   const keys: [number, string][] = p.keys ?? [[0, "closed"]];
   let st = keys[0][1], sq = 0;
   for (let i = 1; i < keys.length; i++) { const [at, v] = keys[i]; if (t < at) break; const u = (t - at) / 0.3; if (u >= 1) st = v; else { sq = Math.sin(u * Math.PI); if (u >= 0.5) st = v; } }
@@ -107,7 +108,7 @@ const Tome: React.FC<{ p: P; t: number }> = ({ p, t }) => {
 };
 
 /** Self-test sheet, 10 ruled rows. rows: [[i, t]] = row i written (scribble draw-on 0.35s); ghost: {row, at} dotted suitcase outline; focus: {row, at} highlight. */
-const Paper: React.FC<{ p: P; t: number }> = ({ p, t }) => {
+export const Paper: React.FC<{ p: P; t: number }> = ({ p, t }) => {
   const rows: [number, number][] = p.rows ?? [];
   const RY = (i: number) => -232 + i * 50;
   const g = p.ghost, f = p.focus;
@@ -249,6 +250,6 @@ const Halves: React.FC<{ p: P; t: number }> = ({ p }) => {
   </g>;
 };
 
-export const V18_KINDS: Record<string, React.FC<{ p: P; t: number }>> = { window: Window, table: Table, tome: Tome, paper: Paper, card: Card, icon: IconProp, stack: Stack, deck: Deck, papers: Papers, bars: Bars, halves: Halves };
+export const V18_KINDS: Record<string, React.FC<{ p: P; t: number }>> = { ...C05_KINDS, window: Window, table: Table, tome: Tome, paper: Paper, card: Card, icon: IconProp, stack: Stack, deck: Deck, papers: Papers, bars: Bars, halves: Halves };
 /** absolute-coordinate props (ignore x/y translate) */
-export const V18_ABS = new Set(["window", "table", "halves"]);
+export const V18_ABS = new Set(["window", "table", "halves", ...C05_ABS]);

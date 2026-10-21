@@ -1,0 +1,3047 @@
+{
+ "id": "clip-05-final",
+ "clip": "clip-05",
+ "title": "Học dồn một đêm (HTB 23.15) - script v4 locked",
+ "week": 1,
+ "theme": "dark",
+ "pillar": "Học & đầu tư bản thân",
+ "story": "monologue Thầy; ví dụ chương Di truyền / dạng lai hai cặp tính trạng (ô Punnett 4×4 trống b02, điền b07); L-050 nghĩa bằng vật + hành động; visual-plan-v4 (FLUX 0a6738b, b03 97a50af)",
+ "trend": {
+  "source": "https://www.tiktok.com/@ng__phanh/video/7532553338664045831",
+  "where": "b01a (TikTok-style frame rebuilt from objects + overlay caption + 55,3K share counter)",
+  "file": "final/trend-signals.md"
+ },
+ "voice_prefix": "c05v4",
+ "voice_track": "voice-track-c05v4.wav",
+ "mix": "linear",
+ "layout": "tiktok",
+ "caption_accent": true,
+ "length_target": [
+  50,
+  60.5
+ ],
+ "length_note": "L-080: độ dài theo nội dung; giọng 52.7s (approved 5b12e22) + đuôi 0.3s (bỏ giữ b07c, Rule Reviewer F3) + end card 2.0s",
+ "pacing": {
+  "exact": true,
+  "swish": "beat"
+ },
+ "transition_sfx": {
+  "part": "whoosh-soft",
+  "scene": "swish"
+ },
+ "endcard": {
+  "duration": 2.0,
+  "y": 520,
+  "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+  "sources": "Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013 · Trend: @ng__phanh · TikTok",
+  "credit": "Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/"
+ },
+ "revisions": [
+  {
+   "v": "v4",
+   "date": "2026-10-21",
+   "note": "Render stage: approved voice c05v4 (Rule Reviewer PASS 5b12e22; c18 /s/ rev5 764c16d), script-v4-LOCKED (91848a3), visual-plan-v4 (97a50af); one Remotion part, lines = frame-aligned slices of the approved wav; caption keyword accent #FF5A36 = open choice for Hiệp"
+  }
+ ],
+ "cover": {
+  "direction": "a",
+  "theme": "dark",
+  "series": "Học đúng cách",
+  "ep": 5,
+  "hero": [
+   "HỌC DỒN 1 ĐÊM?",
+   "1 TUẦN SAU CÒN GÌ?"
+  ],
+  "accent": 1,
+  "strike": -1,
+  "expression": "confused",
+  "action": "thinking",
+  "tilt": -4
+ },
+ "hook": {
+  "text": "HỌC DỒN 1 ĐÊM? 1 TUẦN SAU CÒN GÌ?",
+  "scenes": [
+   "b01a",
+   "b01b",
+   "b01c"
+  ],
+  "format": "nỗi đau + câu hỏi; trend @ng__phanh chỉ ở hình/chữ b01a (L-084); 3 shot, cắt ở 1.57s và 2.93s"
+ },
+ "engagement": [
+  {
+   "type": "relatable-question",
+   "beat": "b01c",
+   "text": "bạn còn nhớ bao nhiêu?"
+  },
+  {
+   "type": "comment-challenge",
+   "beat": "b08",
+   "text": "Comment số hôm nha."
+  },
+  {
+   "type": "loop",
+   "beat": "b08",
+   "text": "Còn bạn, môn sắp thi còn cách mấy hôm?",
+   "hook_word": "bạn"
+  }
+ ],
+ "voices": {
+  "Thầy": "F5 · Thái Sơn speed 1.0 (approved voice-only-c05v4.wav, 5b12e22 + c18 rev5 764c16d)"
+ },
+ "throughline": "Học dồn một đêm VÀ sáng ra vẫn làm được đề, NHƯNG một tuần sau quên nhanh (đọc liền chỉ hơn lúc kiểm tra ngay), VÌ VẬY cùng ba tiếng đó chia ra ba ngày và mỗi buổi gấp sách tự kiểm",
+ "hook_question": {
+  "asked": "Một tuần sau, bạn còn nhớ bao nhiêu?",
+  "answered": "b07: làm đủ hai bước, tới cuối kỳ dễ nhớ ra cách giải dạng lai hai cặp tính trạng hơn"
+ },
+ "structure": {
+  "hook": [
+   "b01a",
+   "b01b",
+   "b01c"
+  ],
+  "intro": [
+   "b02a",
+   "b02b",
+   "b03a",
+   "b03b",
+   "b03c",
+   "b03d",
+   "b03e",
+   "b04"
+  ],
+  "body": [
+   "b05a",
+   "b05b",
+   "b05c",
+   "b05d",
+   "b06a",
+   "b06b",
+   "b06c"
+  ],
+  "summary": [
+   "b07a",
+   "b07b",
+   "b07c"
+  ],
+  "cta": [
+   "b08"
+  ]
+ },
+ "hook_alt": {
+  "type": "direct",
+  "text": "(giữ nguyên hook v4 đã Chốt, không dùng hook_alt)"
+ },
+ "callbacks": [
+  {
+   "clip": "clip-04",
+   "beat": "b05d",
+   "what": "gấp sách tự kiểm (bước Hai) — gọi lại, không giải thích lại"
+  }
+ ],
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "scenes": [
+    {
+     "id": "b01a",
+     "beat": "clip-05.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.05,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-cut-on-motion: TikTok-style vertical feed rebuilt from objects (brand-new textbook pile, desk lamp, moon, clock near 3), share button pulses and counts up to 55,3K",
+      "word": "một đêm"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.3,
+       "word": "một đêm"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ]
+       ],
+       "wx": 560,
+       "wy": 330,
+       "ww": 280,
+       "wh": 240
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1250
+      },
+      {
+       "kind": "wallclock",
+       "x": 220,
+       "y": 330,
+       "s": 0.8,
+       "h": 2.92
+      },
+      {
+       "kind": "textbooks",
+       "x": 380,
+       "y": 1228,
+       "s": 0.95,
+       "n": 6
+      },
+      {
+       "kind": "lamp",
+       "x": 690,
+       "y": 1236,
+       "s": 0.85
+      },
+      {
+       "kind": "ttframe",
+       "x": 0,
+       "y": 0,
+       "shareAt": 0.3,
+       "likeAt": 0.18,
+       "barDur": 14
+      },
+      {
+       "kind": "counter",
+       "x": 958,
+       "y": 1236,
+       "at": 0.3,
+       "to": 55.3,
+       "suffix": "K",
+       "dur": 0.6
+      },
+      {
+       "kind": "tag",
+       "text": "@ng__phanh · TikTok",
+       "x": 300,
+       "y": 1312,
+       "at": 0.0,
+       "font": "en",
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Học 1 đêm mới hiểu sao…",
+       "x": 380,
+       "y": 1388,
+       "at": 0.0,
+       "style": "word",
+       "size": 46
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "Bạn học dồn **một đêm**",
+       "say": "Bạn học dồn một đêm",
+       "en": "You crammed overnight",
+       "hl": [
+        2
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c01a.wav",
+       "cap": [
+        0.0,
+        0.967
+       ],
+       "chunk": "c01",
+       "phrases": [
+        {
+         "t": "Bạn học dồn {nhấn: một đêm}"
+        }
+       ]
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "cho cả kỳ,",
+       "say": "cho cả kỳ,",
+       "en": "for the whole semester,",
+       "hl": [
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c01b.wav",
+       "cap": [
+        0.0,
+        0.6
+       ],
+       "chunk": "c01"
+      }
+     ],
+     "stage": {
+      "action": "Night desk shown as a vertical feed frame: untouched textbooks, lamp on, share count climbs",
+      "react": "shock, relatable pain"
+     },
+     "dur": 1.5667,
+     "narration": "HỌC DỒN 1 ĐÊM? 1 TUẦN SAU CÒN GÌ?"
+    },
+    {
+     "id": "b01b",
+     "beat": "clip-05.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "reacting",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cut-on-motion: morning sun, pen set down beside the exam sheet, tick pops, relieved exhale",
+      "word": "làm được đề"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.795,
+       "word": "làm"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "biobook",
+       "x": 205,
+       "y": 1240,
+       "s": 0.5,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "exam",
+       "x": 470,
+       "y": 1250,
+       "s": 0.62,
+       "tilt": -4
+      },
+      {
+       "kind": "icon",
+       "name": "tick",
+       "x": 545,
+       "y": 1135,
+       "size": 70,
+       "at": 0.695
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 10,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         640,
+         1150
+        ],
+        [
+         0.5449999999999999,
+         640,
+         1150
+        ],
+        [
+         0.7949999999999999,
+         585,
+         1420
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "sáng ra vẫn làm được đề.",
+       "say": "sáng ra vẫn làm được đề.",
+       "en": "Still passed that morning",
+       "hl": [
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c01c.wav",
+       "cap": [
+        0.0,
+        1.367
+       ],
+       "chunk": "c01",
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Morning: puts the pen down next to a ticked exam sheet",
+      "react": "relieved"
+     },
+     "dur": 1.3667,
+     "link": "the morning right after the cram night"
+    },
+    {
+     "id": "b01c",
+     "beat": "clip-05.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "confused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-stagger: number-less tear-off calendar sheds 7 pages fast, a blank page left; head tilt",
+      "word": "một tuần sau"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 0.159,
+       "word": "tuần"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tearpad",
+       "x": 330,
+       "y": 1150,
+       "s": 0.85,
+       "n": 9,
+       "tears": [
+        0.159,
+        0.279,
+        0.399,
+        0.519,
+        0.639,
+        0.759,
+        0.879
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Một tuần sau, bạn còn nhớ **bao nhiêu**?",
+       "say": "Một tuần sau, bạn còn nhớ bao nhiêu?",
+       "en": "A week later, how much is left?",
+       "hl": [
+        4
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c02.wav",
+       "cap": [
+        0.0,
+        1.867
+       ],
+       "chunk": "c02",
+       "phrases": [
+        {
+         "t": "Một tuần sau, bạn còn nhớ {nhấn: bao nhiêu}?"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "confused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Seven calendar pages fly off; stares at the blank page, head tilted",
+      "react": "unsure, asks the viewer"
+     },
+     "dur": 1.8667,
+     "link": "one week after that exam"
+    },
+    {
+     "id": "b02a",
+     "beat": "clip-05.b02",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cruise: night, one big hourglass pours non-stop beside the open genetics book (DNA sticker); pages flip fast",
+      "word": "ba tiếng liền"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 0.695,
+       "word": "ôn"
+      },
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 1.975,
+       "word": "liền"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "hourglass",
+       "x": 470,
+       "y": 1210,
+       "s": 0.8,
+       "flow": [
+        0,
+        3.3667
+       ]
+      },
+      {
+       "kind": "biobook",
+       "x": 205,
+       "y": 1300,
+       "s": 0.5,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ],
+       "flips": [
+        0.695,
+        1.735,
+        2.315
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Ví dụ mình ôn chương Di truyền **ba tiếng liền** trước hôm thi giữa kỳ.",
+       "say": "Ví dụ mình ôn chương Di truyền ba tiếng liền trước hôm thi giữa kỳ.",
+       "en": "Three straight hours of genetics before midterm",
+       "hl": [
+        1,
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c03.wav",
+       "cap": [
+        0.15,
+        3.367
+       ],
+       "chunk": "c03",
+       "phrases": [
+        {
+         "t": "Ví dụ mình ôn chương Di truyền {nhấn: ba tiếng liền} trước hôm thi giữa kỳ."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Night: flips the genetics book fast while the big hourglass pours",
+      "react": "determined, cramming"
+     },
+     "dur": 3.3667,
+     "link": "my own example of that cram night"
+    },
+    {
+     "id": "b02b",
+     "beat": "clip-05.b02",
+     "part": "struggle",
+     "role": "Thầy",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "confused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-snap-settle: finals room, empty 4x4 Punnett grid, pen frozen mid-air, small '?' pops",
+      "word": "không nhớ"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 2.614,
+       "word": "không"
+      }
+     ],
+     "props": [
+      {
+       "kind": "wallclock",
+       "x": 190,
+       "y": 760,
+       "s": 0.9,
+       "h": 2.6
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "punnett",
+       "x": 330,
+       "y": 1130,
+       "s": 0.82,
+       "tilt": -3
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 30,
+       "len": 170,
+       "keys": [
+        [
+         0,
+         520,
+         1010
+        ],
+        [
+         0.4,
+         470,
+         960
+        ]
+       ]
+      },
+      {
+       "kind": "qmark",
+       "x": 680,
+       "y": 770,
+       "s": 0.8,
+       "at": 2.614
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình **không nhớ** cách giải.",
+       "say": "Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình không nhớ cách giải.",
+       "en": "Finals: same problem type, I'm stuck",
+       "hl": [
+        5
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c04.wav",
+       "cap": [
+        0.133,
+        3.733
+       ],
+       "chunk": "c04",
+       "phrases": [
+        {
+         "t": "Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình {nhấn: không nhớ} cách giải."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "confused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Finals exam: empty Punnett grid, pen frozen above it",
+      "react": "puzzled, not dumb"
+     },
+     "dur": 3.7333,
+     "link": "the same chapter comes back at finals"
+    },
+    {
+     "id": "b03a",
+     "beat": "clip-05.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-stagger: the one text page they all read sits on top; three faceless groups with their books: grey reads once, orange reads twice back-to-back, ink reads again a week later (7 sheets between books)",
+      "word": "hai lần liền"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 2.03,
+       "word": "hai"
+      }
+     ],
+     "props": [
+      {
+       "kind": "paper",
+       "x": 540,
+       "y": 560,
+       "s": 0.6,
+       "tilt": -3,
+       "rows": [
+        [
+         0,
+         0.05
+        ],
+        [
+         1,
+         0.11
+        ],
+        [
+         2,
+         0.16999999999999998
+        ],
+        [
+         3,
+         0.22999999999999998
+        ],
+        [
+         4,
+         0.29
+        ],
+        [
+         5,
+         0.35
+        ],
+        [
+         6,
+         0.41
+        ]
+       ]
+      },
+      {
+       "kind": "groups3",
+       "x": 540,
+       "y": 1000,
+       "s": 1,
+       "keys": [
+        [
+         0,
+         0,
+         0,
+         0
+        ]
+       ],
+       "focus": [
+        [
+         0,
+         [
+          0,
+          1,
+          2
+         ]
+        ]
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 1 lần",
+       "x": 210,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 2 lần liền",
+       "x": 540,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Lần 2 cách 1 tuần",
+       "x": 870,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Rawson & Kintsch 2005",
+       "x": 540,
+       "y": 1410,
+       "at": 0.37,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Một nghiên cứu cho sinh viên đọc một bài hai lần liền.",
+       "say": "Một nghiên cứu cho sinh viên đọc một bài hai lần liền.",
+       "en": "One study: students read a text twice",
+       "hl": [
+        6
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c05.wav",
+       "cap": [
+        0.16,
+        2.9
+       ],
+       "chunk": "c05",
+       "phrases": [
+        {
+         "t": "Một nghiên cứu cho sinh viên đọc một bài hai lần liền."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Three groups, one book each, the orange group has two books stacked tight",
+      "react": "curious"
+     },
+     "dur": 2.9,
+     "link": "why the cram night fades: a 2005 reading study"
+    },
+    {
+     "id": "b03b",
+     "beat": "clip-05.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-snap-settle: desk lamp = tested right away; grey bar rises, dashed grey reference line; orange bar rises above it",
+      "word": "cao hơn"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 1.522,
+       "word": "cao"
+      }
+     ],
+     "props": [
+      {
+       "kind": "groups3",
+       "x": 540,
+       "y": 1000,
+       "s": 1,
+       "keys": [
+        [
+         0,
+         0,
+         0,
+         0
+        ],
+        [
+         0.712,
+         210,
+         0,
+         0
+        ],
+        [
+         1.622,
+         210,
+         320,
+         0
+        ]
+       ],
+       "focus": [
+        [
+         0,
+         [
+          0,
+          1
+         ]
+        ]
+       ],
+       "refAt": 1.0619999999999998
+      },
+      {
+       "kind": "lamp",
+       "x": 860,
+       "y": 560,
+       "s": 0.6,
+       "flip": true
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 1 lần",
+       "x": 210,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 2 lần liền",
+       "x": 540,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Lần 2 cách 1 tuần",
+       "x": 870,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Rawson & Kintsch 2005",
+       "x": 540,
+       "y": 1410,
+       "at": 0.0,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần,",
+       "say": "Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần,",
+       "en": "Back to back: beat one read, instantly",
+       "hl": [
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c06.wav",
+       "cap": [
+        0.14,
+        3.233
+       ],
+       "chunk": "c06",
+       "phrases": [
+        {
+         "t": "Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần,"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Tested at once: orange bar taller than the grey reference",
+      "react": "fair, admits it helps first"
+     },
+     "dur": 3.2333,
+     "link": "first result of that study"
+    },
+    {
+     "id": "b03c",
+     "beat": "clip-05.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-snap-settle: window sun rises twice (+2 ngày), orange bar sinks onto the grey reference line",
+      "word": "hai ngày sau"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.624,
+       "word": "sau"
+      },
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 1.104,
+       "word": "không"
+      }
+     ],
+     "props": [
+      {
+       "kind": "groups3",
+       "x": 540,
+       "y": 1000,
+       "s": 1,
+       "keys": [
+        [
+         0,
+         210,
+         320,
+         0
+        ],
+        [
+         1.004,
+         210,
+         210,
+         0
+        ]
+       ],
+       "focus": [
+        [
+         0,
+         [
+          0,
+          1
+         ]
+        ]
+       ],
+       "refAt": -1
+      },
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ],
+        [
+         0.25,
+         "day"
+        ],
+        [
+         0.55,
+         "night"
+        ],
+        [
+         0.85,
+         "day"
+        ]
+       ],
+       "wx": 780,
+       "wy": 330,
+       "ww": 220,
+       "wh": 190
+      },
+      {
+       "kind": "tag",
+       "text": "+2 ngày",
+       "x": 890,
+       "y": 260,
+       "at": 0.624,
+       "style": "word",
+       "size": 46
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 1 lần",
+       "x": 210,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 2 lần liền",
+       "x": 540,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Lần 2 cách 1 tuần",
+       "x": 870,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Rawson & Kintsch 2005",
+       "x": 540,
+       "y": 1410,
+       "at": 0.0,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "nhưng hai ngày sau họ **không còn hơn** nữa.",
+       "say": "nhưng hai ngày sau họ không còn hơn nữa.",
+       "en": "Two days later: no longer ahead",
+       "hl": [
+        4,
+        5
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c07.wav",
+       "cap": [
+        0.037,
+        2.133
+       ],
+       "chunk": "c07",
+       "phrases": [
+        {
+         "t": "nhưng hai ngày sau họ {nhấn: không còn hơn} nữa."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Two sunrises; orange bar drops level with grey",
+      "react": "surprised reversal"
+     },
+     "dur": 2.1333,
+     "link": "but two days later that lead is gone"
+    },
+    {
+     "id": "b03d",
+     "beat": "clip-05.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-push-in: spotlight moves to the ink group, its two books separated by seven calendar sheets",
+      "word": "cách một tuần"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 1.408,
+       "word": "tuần"
+      }
+     ],
+     "props": [
+      {
+       "kind": "groups3",
+       "x": 540,
+       "y": 1000,
+       "s": 1,
+       "keys": [
+        [
+         0,
+         210,
+         210,
+         0
+        ]
+       ],
+       "focus": [
+        [
+         0,
+         [
+          0,
+          2
+         ]
+        ]
+       ],
+       "refAt": -1
+      },
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 780,
+       "wy": 330,
+       "ww": 220,
+       "wh": 190
+      },
+      {
+       "kind": "tag",
+       "text": "+2 ngày",
+       "x": 890,
+       "y": 260,
+       "at": -1,
+       "style": "word",
+       "size": 46
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 1 lần",
+       "x": 210,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 2 lần liền",
+       "x": 540,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Lần 2 cách 1 tuần",
+       "x": 870,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Rawson & Kintsch 2005",
+       "x": 540,
+       "y": 1410,
+       "at": 0.0,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Còn ai đọc lần hai **cách một tuần**",
+       "say": "Còn ai đọc lần hai cách một tuần",
+       "en": "Second read a week later",
+       "hl": [
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c08a.wav",
+       "cap": [
+        0.113,
+        1.867
+       ],
+       "chunk": "c08",
+       "phrases": [
+        {
+         "t": "Còn ai đọc lần hai {nhấn: cách một tuần}"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Focus on the group whose second read came a week later",
+      "react": "interested"
+     },
+     "dur": 1.8667,
+     "link": "the third group in the same study"
+    },
+    {
+     "id": "b03e",
+     "beat": "clip-05.b03",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-snap-settle: at +2 days the ink bar rises above the grey reference line (no numbers, orange stays level with grey)",
+      "word": "vẫn hơn"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 0.672,
+       "word": "hơn"
+      }
+     ],
+     "props": [
+      {
+       "kind": "groups3",
+       "x": 540,
+       "y": 1000,
+       "s": 1,
+       "keys": [
+        [
+         0,
+         210,
+         210,
+         0
+        ],
+        [
+         0.722,
+         210,
+         210,
+         216
+        ]
+       ],
+       "focus": [
+        [
+         0,
+         [
+          0,
+          1,
+          2
+         ]
+        ]
+       ],
+       "refAt": -1
+      },
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 780,
+       "wy": 330,
+       "ww": 220,
+       "wh": 190
+      },
+      {
+       "kind": "tag",
+       "text": "+2 ngày",
+       "x": 890,
+       "y": 260,
+       "at": -1,
+       "style": "word",
+       "size": 46
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 1 lần",
+       "x": 210,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc 2 lần liền",
+       "x": 540,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Lần 2 cách 1 tuần",
+       "x": 870,
+       "y": 1330,
+       "at": 0.0,
+       "size": 30
+      },
+      {
+       "kind": "tag",
+       "text": "Rawson & Kintsch 2005",
+       "x": 540,
+       "y": 1410,
+       "at": 0.0,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "thì hai ngày sau vẫn hơn người đọc một lần.",
+       "say": "thì hai ngày sau vẫn hơn người đọc một lần.",
+       "en": "Two days later: still ahead",
+       "hl": [
+        4
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c08b.wav",
+       "cap": [
+        0.0,
+        2.167
+       ],
+       "chunk": "c08",
+       "phrases": [
+        {
+         "t": "thì hai ngày sau vẫn hơn người đọc một lần."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Ink bar ends above the grey reference two days later",
+      "react": "convinced"
+     },
+     "dur": 2.1667,
+     "link": "what that week-apart group kept two days later"
+    },
+    {
+     "id": "b04",
+     "beat": "clip-05.b04",
+     "part": "intro",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.08,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-draw-on: a string runs from the midterm sheet to the finals sheet; the genetics book glows at the finals end",
+      "word": "vẫn nhớ"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 1.529,
+       "word": "vẫn"
+      }
+     ],
+     "props": [
+      {
+       "kind": "exam",
+       "x": 250,
+       "y": 930,
+       "s": 1.0,
+       "tilt": -5
+      },
+      {
+       "kind": "exam",
+       "x": 830,
+       "y": 930,
+       "s": 1.0,
+       "tilt": 4,
+       "head": "accent"
+      },
+      {
+       "kind": "rope",
+       "x": 0,
+       "y": 0,
+       "a": [
+        350,
+        960
+       ],
+       "b": [
+        730,
+        960
+       ],
+       "sag": 110,
+       "at": 0.789
+      },
+      {
+       "kind": "biobook",
+       "x": 830,
+       "y": 1250,
+       "s": 0.5,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ],
+       "glowAt": 1.529
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Mình cần là tới cuối kỳ mình **vẫn nhớ** chương đó.",
+       "say": "Mình cần là tới cuối kỳ mình vẫn nhớ chương đó.",
+       "en": "I need it to stay till finals",
+       "hl": [
+        4,
+        6
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c09.wav",
+       "cap": [
+        0.16,
+        2.733
+       ],
+       "chunk": "c09",
+       "phrases": [
+        {
+         "t": "Mình cần là tới cuối kỳ mình {nhấn: vẫn nhớ} chương đó."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "String from midterm sheet to finals sheet, book glowing at the finals end",
+      "react": "calm, clear goal"
+     },
+     "dur": 2.7333,
+     "link": "goal set against that finals gap"
+    },
+    {
+     "id": "b05a",
+     "beat": "clip-05.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cut-on-motion: the same big hourglass is pulled to centre, refilled",
+      "word": "ba tiếng"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 0.509,
+       "word": "ba"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "biobook",
+       "x": 205,
+       "y": 1240,
+       "s": 0.5,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ]
+      },
+      {
+       "kind": "hourglass",
+       "x": 470,
+       "y": 1210,
+       "s": 0.8,
+       "level": 0.0,
+       "mv": [
+        [
+         0,
+         470,
+         1210
+        ],
+        [
+         0.509,
+         470,
+         1210
+        ],
+        [
+         0.9590000000000001,
+         450,
+         1120
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Nên cùng ba tiếng đó, mình làm thế này.",
+       "say": "Nên cùng ba tiếng đó, mình làm thế này.",
+       "en": "Same three hours, here's how",
+       "hl": [
+        1,
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c10.wav",
+       "cap": [
+        0.147,
+        2.3
+       ],
+       "chunk": "c10",
+       "phrases": [
+        {
+         "t": "Nên cùng ba tiếng đó, mình làm thế này."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Pulls the same big hourglass to the middle of the desk",
+      "react": "planning"
+     },
+     "dur": 2.3,
+     "link": "same three hours, spent differently"
+    },
+    {
+     "id": "b05b",
+     "beat": "clip-05.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-stagger: big «1»; the big hourglass breaks into three small ones that land on three calendar pages, one moon each",
+      "word": "ba ngày"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.777,
+       "word": "chia"
+      },
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 1.237,
+       "word": "ba"
+      }
+     ],
+     "props": [
+      {
+       "kind": "tag",
+       "text": "1",
+       "x": 150,
+       "y": 300,
+       "at": 0.02,
+       "style": "word",
+       "size": 190
+      },
+      {
+       "kind": "tearpad",
+       "x": 230,
+       "y": 1190,
+       "s": 0.6,
+       "n": 4,
+       "at": 1.0270000000000001
+      },
+      {
+       "kind": "tearpad",
+       "x": 540,
+       "y": 1190,
+       "s": 0.6,
+       "n": 4,
+       "at": 1.0970000000000002
+      },
+      {
+       "kind": "tearpad",
+       "x": 850,
+       "y": 1190,
+       "s": 0.6,
+       "n": 4,
+       "at": 1.1670000000000003
+      },
+      {
+       "kind": "moondot",
+       "x": 230,
+       "y": 960,
+       "s": 0.9,
+       "at": 1.327
+      },
+      {
+       "kind": "moondot",
+       "x": 540,
+       "y": 960,
+       "s": 0.9,
+       "at": 1.427
+      },
+      {
+       "kind": "moondot",
+       "x": 850,
+       "y": 960,
+       "s": 0.9,
+       "at": 1.527
+      },
+      {
+       "kind": "hourglass",
+       "x": 540,
+       "y": 700,
+       "s": 1.0,
+       "level": 0.0,
+       "breakAt": 0.777,
+       "to": [
+        [
+         -310,
+         400
+        ],
+        [
+         0,
+         400
+        ],
+        [
+         310,
+         400
+        ]
+       ],
+       "smallSize": 0.5
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Một. Mình chia ra **ba ngày**,",
+       "say": "Một. Mình chia ra ba ngày,",
+       "en": "One: split into three days",
+       "hl": [
+        0,
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c11a.wav",
+       "cap": [
+        0.137,
+        1.733
+       ],
+       "chunk": "c11",
+       "phrases": [
+        {
+         "t": "Một. Mình chia ra {nhấn: ba ngày},"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Hourglass splits into three small ones on three calendar pages",
+      "react": "neat, decisive"
+     },
+     "dur": 1.7333,
+     "link": "step one of that plan"
+    },
+    {
+     "id": "b05c",
+     "beat": "clip-05.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "idle",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-cruise: one small hourglass runs out during one study hour, then the book snaps shut",
+      "word": "một tiếng"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 1.953,
+       "word": "cẩm"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tag",
+       "text": "1",
+       "x": 150,
+       "y": 300,
+       "at": -5,
+       "style": "word",
+       "size": 190
+      },
+      {
+       "kind": "hourglass",
+       "x": 470,
+       "y": 1280,
+       "s": 0.5,
+       "flow": [
+        0.1,
+        1.7530000000000001
+       ]
+      },
+      {
+       "kind": "biobook",
+       "x": 205,
+       "y": 1300,
+       "s": 0.5,
+       "keys": [
+        [
+         0,
+         "open"
+        ],
+        [
+         1.953,
+         "closed"
+        ]
+       ],
+       "flips": [
+        0.573
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang.",
+       "say": "mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang.",
+       "en": "One hour a day, as the guide says",
+       "hl": [
+        1
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c11b.wav",
+       "cap": [
+        0.083,
+        2.633
+       ],
+       "chunk": "c11",
+       "phrases": [
+        {
+         "t": "mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Studies one hour by a small hourglass, closes the book when it runs out",
+      "react": "steady"
+     },
+     "dur": 2.6333,
+     "link": "what one of those three days looks like"
+    },
+    {
+     "id": "b05d",
+     "beat": "clip-05.b05",
+     "part": "payoff",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-snap: big «2»; quick clip-04 callback: book shut, pen writes from memory, book opens, red ring circles one row",
+      "word": "tự kiểm"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 1.521,
+       "word": "gấp"
+      },
+      {
+       "name": "pen",
+       "atLine": 0,
+       "offset": 1.821,
+       "word": "tự"
+      },
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 2.381,
+       "word": "clip"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "night"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tag",
+       "text": "2",
+       "x": 150,
+       "y": 300,
+       "at": 0.02,
+       "style": "word",
+       "size": 190
+      },
+      {
+       "kind": "biobook",
+       "x": 205,
+       "y": 1300,
+       "s": 0.5,
+       "keys": [
+        [
+         0,
+         "open"
+        ],
+        [
+         1.521,
+         "closed"
+        ],
+        [
+         2.221,
+         "open"
+        ]
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 480,
+       "y": 1265,
+       "s": 0.45,
+       "rows": [
+        [
+         0,
+         1.771
+        ],
+        [
+         1,
+         1.9309999999999998
+        ],
+        [
+         2,
+         2.0909999999999997
+        ]
+       ]
+      },
+      {
+       "kind": "ring",
+       "x": 470,
+       "y": 1183.1,
+       "rx": 80,
+       "ry": 22,
+       "at": 2.381
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 20,
+       "len": 150,
+       "keys": [
+        [
+         0,
+         585,
+         1420
+        ],
+        [
+         1.621,
+         585,
+         1420
+        ],
+        [
+         1.771,
+         413,
+         1160.6
+        ],
+        [
+         1.911,
+         540,
+         1160.6
+        ],
+        [
+         1.9309999999999998,
+         413,
+         1183.1
+        ],
+        [
+         2.071,
+         540,
+         1183.1
+        ],
+        [
+         2.0909999999999997,
+         413,
+         1205.6
+        ],
+        [
+         2.231,
+         540,
+         1205.6
+        ],
+        [
+         2.381,
+         585,
+         1420
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Hai. Mỗi buổi, mình gấp sách **tự kiểm** như clip trước.",
+       "say": "Hai. Mỗi buổi, mình gấp sách tự kiểm như clip trước.",
+       "en": "Two: each session, self-test like last clip",
+       "hl": [
+        0,
+        3
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c12.wav",
+       "cap": [
+        0.11,
+        2.967
+       ],
+       "chunk": "c12",
+       "phrases": [
+        {
+         "t": "Hai. Mỗi buổi, mình gấp sách {nhấn: tự kiểm} như clip trước."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Closes the book, writes from memory, opens it, circles the wrong row in red",
+      "react": "focused"
+     },
+     "dur": 2.9667,
+     "link": "step two, the closed-book check from the last clip"
+    },
+    {
+     "id": "b06a",
+     "beat": "clip-05.b06",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-stagger: research papers drop one by one into a tall pile (many experiments, not counted)",
+      "word": "317 thí nghiệm"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 1.228,
+       "word": "thí"
+      }
+     ],
+     "props": [
+      {
+       "kind": "papers",
+       "x": 540,
+       "y": 1150,
+       "s": 1.25,
+       "n": 18,
+       "at": 0.05,
+       "stagger": 0.08
+      },
+      {
+       "kind": "tag",
+       "text": "Cepeda et al. 2006",
+       "x": 540,
+       "y": 1410,
+       "at": 0.288,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Khi gom 317 thí nghiệm lại,",
+       "say": "Khi gom 317 thí nghiệm lại,",
+       "en": "Pooling 317 experiments, researchers found",
+       "hl": [
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c13.wav",
+       "cap": [
+        0.153,
+        2.1
+       ],
+       "chunk": "c13",
+       "phrases": [
+        {
+         "t": "Khi gom 317 thí nghiệm lại,"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Papers pile up higher and higher",
+      "react": "solid, sure"
+     },
+     "dur": 2.1,
+     "link": "bigger evidence for spacing the hours"
+    },
+    {
+     "id": "b06b",
+     "beat": "clip-05.b06",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-drag: a long number-less calendar strip; the hand drags the 'remember until' flag far right; the accent review dots spread with it",
+      "word": "nhớ càng lâu"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 1.66,
+       "word": "nhớ"
+      }
+     ],
+     "props": [
+      {
+       "kind": "strip",
+       "x": 540,
+       "y": 960,
+       "s": 1.0,
+       "flagKeys": [
+        [
+         0,
+         0.32
+        ],
+        [
+         1.46,
+         0.62
+        ],
+        [
+         2.12,
+         0.95
+        ]
+       ],
+       "dotsAt": 0.05
+      },
+      {
+       "kind": "tag",
+       "text": "Cepeda et al. 2006",
+       "x": 540,
+       "y": 1410,
+       "at": 0.0,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "các nhà nghiên cứu thấy người học muốn nhớ càng lâu",
+       "say": "các nhà nghiên cứu thấy người học muốn nhớ càng lâu",
+       "en": "Longer memory needs",
+       "hl": [
+        0
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c14a.wav",
+       "cap": [
+        0.023,
+        2.533
+       ],
+       "chunk": "c14",
+       "phrases": [
+        {
+         "t": "các nhà nghiên cứu thấy người học muốn nhớ càng lâu"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Drags the remember-until flag further along the strip; review dots follow",
+      "react": "lightbulb"
+     },
+     "dur": 2.5333,
+     "link": "what those experiments found"
+    },
+    {
+     "id": "b06c",
+     "beat": "clip-05.b06",
+     "part": "evidence",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-push-in: close on the strip, gaps between the accent dots stay wide (longer memory = wider gaps)",
+      "word": "càng phải dài"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 1.897,
+       "word": "dài"
+      }
+     ],
+     "props": [
+      {
+       "kind": "strip",
+       "x": 540,
+       "y": 960,
+       "s": 0.9,
+       "flagKeys": [
+        [
+         0,
+         0.95
+        ]
+       ],
+       "dots": [
+        0,
+        0.16,
+        0.42,
+        0.78
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "Cepeda et al. 2006",
+       "x": 540,
+       "y": 1410,
+       "at": 0.0,
+       "font": "en",
+       "size": 26
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "thì khoảng cách giữa các lần ôn **càng phải dài**.",
+       "say": "thì khoảng cách giữa các lần ôn càng phải dài.",
+       "en": "wider gaps between reviews",
+       "hl": [
+        0
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c14b.wav",
+       "cap": [
+        0.0,
+        2.3
+       ],
+       "chunk": "c14",
+       "phrases": [
+        {
+         "t": "thì khoảng cách giữa các lần ôn {nhấn: càng phải dài}."
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "The review dots sit far apart along the strip",
+      "react": "sure"
+     },
+     "dur": 2.3,
+     "link": "the rule behind those spreading dots"
+    },
+    {
+     "id": "b07a",
+     "beat": "clip-05.b07",
+     "part": "summary",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "mmx-stagger fast-forward: three days flip in, each with a small hourglass, the closed book and a red ring",
+      "word": "hai bước"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.407,
+       "word": "làm"
+      },
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.987,
+       "word": "bước"
+      }
+     ],
+     "props": [
+      {
+       "kind": "tearpad",
+       "x": 230,
+       "y": 1160,
+       "s": 0.6,
+       "n": 3,
+       "at": 0.05
+      },
+      {
+       "kind": "hourglass",
+       "x": 160,
+       "y": 870,
+       "s": 0.32,
+       "at": 0.1,
+       "flow": [
+        0.15000000000000002,
+        0.3
+       ]
+      },
+      {
+       "kind": "biobook",
+       "x": 300,
+       "y": 880,
+       "s": 0.22,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ],
+       "from": 0.2
+      },
+      {
+       "kind": "ring",
+       "x": 230,
+       "y": 1210,
+       "rx": 70,
+       "ry": 22,
+       "at": 0.35
+      },
+      {
+       "kind": "tearpad",
+       "x": 540,
+       "y": 1160,
+       "s": 0.6,
+       "n": 3,
+       "at": 0.45
+      },
+      {
+       "kind": "hourglass",
+       "x": 470,
+       "y": 870,
+       "s": 0.32,
+       "at": 0.5,
+       "flow": [
+        0.55,
+        0.3
+       ]
+      },
+      {
+       "kind": "biobook",
+       "x": 610,
+       "y": 880,
+       "s": 0.22,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ],
+       "from": 0.6
+      },
+      {
+       "kind": "ring",
+       "x": 540,
+       "y": 1210,
+       "rx": 70,
+       "ry": 22,
+       "at": 0.75
+      },
+      {
+       "kind": "tearpad",
+       "x": 850,
+       "y": 1160,
+       "s": 0.6,
+       "n": 3,
+       "at": 0.8500000000000001
+      },
+      {
+       "kind": "hourglass",
+       "x": 780,
+       "y": 870,
+       "s": 0.32,
+       "at": 0.9000000000000001,
+       "flow": [
+        0.9500000000000001,
+        0.3
+       ]
+      },
+      {
+       "kind": "biobook",
+       "x": 920,
+       "y": 880,
+       "s": 0.22,
+       "keys": [
+        [
+         0,
+         "closed"
+        ]
+       ],
+       "from": 1.0
+      },
+      {
+       "kind": "ring",
+       "x": 850,
+       "y": 1210,
+       "rx": 70,
+       "ry": 22,
+       "at": 1.1500000000000001
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Khi mình làm đủ hai bước đó,",
+       "say": "Khi mình làm đủ hai bước đó,",
+       "en": "Both steps, done together",
+       "hl": [
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c15.wav",
+       "cap": [
+        0.15,
+        1.633
+       ],
+       "chunk": "c15",
+       "phrases": [
+        {
+         "t": "Khi mình làm đủ hai bước đó,"
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Three days in a row, each with both steps",
+      "react": "brisk"
+     },
+     "dur": 1.6333,
+     "link": "doing both steps over the same three hours"
+    },
+    {
+     "id": "b07b",
+     "beat": "clip-05.b07",
+     "part": "summary",
+     "role": "Thầy",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-match-cut: the exact b02 finals frame (same angle, same empty Punnett grid), pen moves in this time",
+      "word": "dạng lai"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 1.166,
+       "word": "lai"
+      }
+     ],
+     "props": [
+      {
+       "kind": "wallclock",
+       "x": 190,
+       "y": 760,
+       "s": 0.9,
+       "h": 2.6
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "punnett",
+       "x": 330,
+       "y": 1130,
+       "s": 0.82,
+       "tilt": -3
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 30,
+       "len": 170,
+       "keys": [
+        [
+         0,
+         520,
+         1010
+        ],
+        [
+         0.6,
+         470,
+         960
+        ],
+        [
+         1.6,
+         380,
+         1060
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "tới cuối kỳ gặp lại dạng lai hai cặp tính trạng,",
+       "say": "tới cuối kỳ gặp lại dạng lai hai cặp tính trạng,",
+       "en": "Finals: same problem type again",
+       "hl": [
+        3
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c16a.wav",
+       "cap": [
+        0.047,
+        2.467
+       ],
+       "chunk": "c16",
+       "phrases": [
+        {
+         "t": "tới cuối kỳ gặp lại dạng lai hai cặp tính trạng,"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "focused"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Back in the same finals seat facing the same empty grid; the pen moves",
+      "react": "calm"
+     },
+     "dur": 2.4667,
+     "link": "same finals problem as in b02"
+    },
+    {
+     "id": "b07c",
+     "beat": "clip-05.b07",
+     "part": "summary",
+     "role": "Thầy",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-soft-land: same angle, the Punnett grid fills with coloured dots cell by cell, small tick, light nod",
+      "word": "dễ nhớ ra"
+     },
+     "sfx": [
+      {
+       "name": "pen",
+       "atLine": 0,
+       "offset": 0.459,
+       "word": "nhớ"
+      },
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 1.339,
+       "word": "hơn"
+      }
+     ],
+     "props": [
+      {
+       "kind": "wallclock",
+       "x": 190,
+       "y": 760,
+       "s": 0.9,
+       "h": 2.6
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "punnett",
+       "x": 330,
+       "y": 1130,
+       "s": 0.82,
+       "tilt": -3,
+       "fillAt": 0.05,
+       "tickAt": 1.339
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 30,
+       "len": 170,
+       "keys": [
+        [
+         0,
+         380,
+         1060
+        ],
+        [
+         1.2,
+         300,
+         1230
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "mình **dễ nhớ ra** cách giải hơn.",
+       "say": "mình dễ nhớ ra cách giải hơn.",
+       "en": "Easier to recall the method",
+       "hl": [
+        0,
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c16b.wav",
+       "cap": [
+        0.0,
+        1.833
+       ],
+       "chunk": "c16",
+       "phrases": [
+        {
+         "t": "mình {nhấn: dễ nhớ ra} cách giải hơn."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Fills the whole grid, small nod",
+      "react": "relieved, not cheering"
+     },
+     "dur": 1.8333,
+     "link": "payoff on the exact grid that was empty in b02"
+    },
+    {
+     "id": "b08",
+     "beat": "clip-05.b08",
+     "part": "cta",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.76,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "happy"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-soft-land: lifts a number-less calendar page toward the viewer, comment bubble pops, hand points down",
+      "word": "mấy hôm"
+     },
+     "sfx": [
+      {
+       "name": "swish",
+       "atLine": 0,
+       "offset": 0.865,
+       "word": "môn"
+      },
+      {
+       "name": "tick",
+       "atLine": 1,
+       "offset": 0.405,
+       "word": "số"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 660,
+       "wy": 250,
+       "ww": 300,
+       "wh": 250
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tearpad",
+       "x": 430,
+       "y": 1050,
+       "s": 0.7,
+       "n": 6,
+       "holdUp": true,
+       "mv": [
+        [
+         0,
+         330,
+         1210
+        ],
+        [
+         0.35,
+         430,
+         1000
+        ]
+       ]
+      },
+      {
+       "kind": "icon",
+       "name": "chat",
+       "x": 190,
+       "y": 1060,
+       "size": 120,
+       "at": 2.338,
+       "plate": true
+      },
+      {
+       "kind": "icon",
+       "name": "hand",
+       "x": 190,
+       "y": 1270,
+       "size": 96,
+       "rot": 180,
+       "at": 2.458,
+       "bob": true
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Còn bạn, môn sắp thi còn cách **mấy hôm**?",
+       "say": "Còn bạn, môn sắp thi còn cách mấy hôm?",
+       "en": "How many days until your exam?",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c17.wav",
+       "cap": [
+        0.157,
+        2.233
+       ],
+       "chunk": "c17",
+       "phrases": [
+        {
+         "t": "Còn bạn, môn sắp thi còn cách {nhấn: mấy hôm}?"
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Comment **số hôm** nha.",
+       "say": "Comment số hôm nha.",
+       "en": "Comment the number",
+       "hl": [
+        2
+       ],
+       "bubble": true,
+       "voice_role": "Thầy",
+       "voice_file": "voice/c05v4-c18.wav",
+       "cap": [
+        0.133,
+        1.303
+       ],
+       "chunk": "c18",
+       "phrases": [
+        {
+         "t": "Comment {nhấn: số hôm} nha."
+        }
+       ],
+       "set": {
+        "hiep": {
+         "expression": "happy"
+        }
+       }
+      }
+     ],
+     "stage": {
+      "action": "Holds up a calendar page, points down to the comments",
+      "react": "warm, curious"
+     },
+     "dur": 3.6,
+     "link": "hands the same question to the viewer"
+    }
+   ]
+  }
+ ]
+}

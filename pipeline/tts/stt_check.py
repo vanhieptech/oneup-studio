@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """STT check for voice lines (rule-34 premium bar). Usage: stt_check.py a.wav [b.wav ...]
 Prints file | transcript. Needs faster-whisper (box: /workspace/asr-venv)."""
-import sys, subprocess, numpy as np
+import os, sys, subprocess, numpy as np
 from faster_whisper import WhisperModel
-m = WhisperModel("small", device="cpu", compute_type="int8")
+# ASR_MODEL / ASR_COMPUTE env (L-081: final STT gate uses medium float32; small kept as the default for old callers)
+m = WhisperModel(os.environ.get("ASR_MODEL", "small"), device="cpu", compute_type=os.environ.get("ASR_COMPUTE", "int8" if os.environ.get("ASR_MODEL", "small") == "small" else "float32"))
 for f in sys.argv[1:]:
     pcm = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", f, "-ac", "1", "-ar", "16000", "-f", "s16le", "-"], capture_output=True).stdout
     a = np.frombuffer(pcm, dtype=np.int16).astype("float32") / 32768
