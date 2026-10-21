@@ -21,14 +21,14 @@ Không nói: «317 thí nghiệm đều thống nhất», tự kiểm «tăng đ
 2. **[Ví dụ, chỗ khựng]** Ví dụ mình ôn chương Di truyền ba tiếng liền trước hôm thi giữa kỳ. Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình không nhớ cách giải.
 3. **[Nguyên nhân + dẫn chứng]** Một nghiên cứu cho sinh viên đọc một bài hai lần liền. Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần, nhưng hai ngày sau họ không còn hơn nữa. Còn ai đọc lần hai cách một tuần thì hai ngày sau vẫn hơn người đọc một lần.
 4. **[Mục tiêu]** Mình cần là tới cuối kỳ mình vẫn nhớ chương đó.
-5. **[Cách làm, đếm số]** Nên cùng ba tiếng đó, mình làm hai bước.
+5. **[Cách làm, đếm số]** Nên cùng ba tiếng đó, mình làm thế này.
    - **Một.** Mình chia ra ba ngày, mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang.
-   - **Hai.** Mỗi buổi, mình gấp sách tự giải như clip trước, rồi mở sách xem mình sai ở chỗ nào.
+   - **Hai.** Mỗi buổi, mình gấp sách tự kiểm như clip trước.
 6. **[Bằng chứng]** Khi gom 317 thí nghiệm lại, các nhà nghiên cứu thấy người học muốn nhớ càng lâu thì khoảng cách giữa các lần ôn càng phải dài.
 7. **[Làm lại đủ hai bước + kết quả quay về chỗ khựng]** Khi mình làm đủ hai bước đó, tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình dễ nhớ ra cách giải hơn.
 8. **[CTA]** Còn bạn, môn sắp thi còn cách mấy hôm? Comment số hôm nha.
 
-**End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Dunlosky et al. 2013 (+ nguồn mục 23.14, chờ Deep Research ghi tên) · Trend: @ng__phanh · TikTok. Không ghi kênh được tác giả bảo trợ.
+**End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013  · Trend: @ng__phanh · TikTok. Không ghi kênh được tác giả bảo trợ.
 
 ## Beat → caption EN → hình (đổi hình ~2–3s/lần theo số đo của Rule Reviewer)
 
@@ -38,7 +38,7 @@ Không nói: «317 thí nghiệm đều thống nhất», tự kiểm «tăng đ
 | b02 | Example: three straight hours on genetics · Night before the midterm · Finals: same problem type, I'm stuck | Đồng hồ cát chảy liền cạnh sách Sinh. Cut: phòng thi, ô Punnett 4×4 trống, bút khựng. |
 | b03 | One study: students read a text twice · Back to back: beat one read, instantly · Two days later: no longer ahead · Second read a week later: still ahead | 3 cột so với cột xám «đọc 1 lần» như v2. «Rawson & Kintsch 2005» góc dưới. |
 | b04 | I need it to stay till finals | Dây nối đề giữa kỳ với đề cuối kỳ, sách sáng ở đầu cuối kỳ. |
-| b05 | Same three hours, two steps · **One:** one hour a day, three days · **Two:** close the book, solve it yourself · Then check where you went wrong | Số «1 / 2» bật lớn mỗi bước (bước 1 chiếm phần lớn thời lượng), mỗi bước một vật riêng và chibi làm mẫu ngay. 1 = đồng hồ cát vỡ thành 3 cái nhỏ trên 3 tờ lịch. 2 = cảnh nhanh gọi lại clip-04: Thầy gập sách viết ra giấy, mở sách, bút đỏ khoanh một ô sai. |
+| b05 | Same three hours, here's how · **One:** one hour a day, three days · **Two:** each session, self-test like last clip | Số «1 / 2» bật lớn mỗi bước (bước 1 chiếm phần lớn thời lượng), mỗi bước một vật riêng và chibi làm mẫu ngay. 1 = đồng hồ cát vỡ thành 3 cái nhỏ trên 3 tờ lịch. 2 = cảnh nhanh gọi lại clip-04: Thầy gập sách viết ra giấy, mở sách, bút đỏ khoanh một ô sai. |
 | b06 | Pooling 317 experiments, researchers found · Longer memory needs wider gaps between reviews | Dải lịch dài, chấm ôn (#FF5A36) giãn ra khi kéo mốc «nhớ tới» xa hơn. «Cepeda et al. 2006». |
 | b07 | Both steps together · Finals: same problem type again · Easier to recall the method | **Màn làm lại tua nhanh:** 3 ngày lật liền, mỗi ngày đủ 2 vật (đồng hồ cát nhỏ, gập sách viết rồi khoanh chỗ sai), rồi về phòng thi, ô Punnett 4×4 được điền, Thầy gật đầu. |
 | b08 | How many days until your exam? · Comment the number | Thầy giơ tờ lịch, chỉ xuống khung comment. Sang end card. |
