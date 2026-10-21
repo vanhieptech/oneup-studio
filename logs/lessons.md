@@ -135,3 +135,8 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Gốc: rule-57 chỉ là cảnh báo và chỉ chạy khi đã có spec; review script không có ô nào bắt trend phải hiện trong clip.
 - Fix: mỗi clip có `final/trend-signals.md` với link nguồn + dòng «Trend trong clip: bNN · <câu/format/hình>»; trend phải nhìn/nghe thấy được ở hook (b01–b02), bằng câu viral, format hoặc hình đặc trưng của trend. Thiếu → trượt, không gửi Hiệp.
 - Phát hiện: `check-rules.py` L-084 (error) — thiếu file, thiếu dòng «Trend trong clip», hoặc beat ngoài b01–b02. Review thủ công: đối chiếu dòng đó với lời/hình thật.
+
+## L-085 (2026-10-21 22:58, Rule Reviewer) — Một người gửi script, ít tin nhắn trong nhóm
+- Lỗi: clip-05 có quá nhiều tin qua lại trong nhóm Agency, rồi OpenCreator và Rule Reviewer cùng gửi script v4 cho Hiệp. Hiệp: «Script đâu thằng nào gửi. S chat nhiều quá d».
+- Fix: chỉ Rule Reviewer gửi script cho Hiệp, và chỉ gửi sau khi đã chấm đạt. Người viết nộp bản nháp cho Rule Reviewer (bằng tin 1:1 hoặc commit), không gửi Hiệp. Các agent trao đổi nội bộ bằng tin 1:1 hoặc file trong repo, không dùng phòng nhóm. Trong phòng nhóm chỉ đăng 3 thứ: kết quả cho Hiệp, câu hỏi Hiệp phải quyết, hoặc bước bị chặn.
+- Phát hiện: soát tay; tin gửi script cho Hiệp mà không phải của Rule Reviewer thì tính là trượt.
