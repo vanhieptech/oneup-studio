@@ -217,8 +217,21 @@ def pick(fd):
         elif s["q"]:
             # nặng/huyền/hỏi endings fall several st on their own: raise until the delivered last syllable measures ≥ +1 st (cap 8 st)
             lw = int(tt[-1][0] * SR); semi = 1.0; x0 = x  # smallest shift that proves the rise (v18: start gentle, Kokoro note: no big push on huyền/nặng)
-            while True:
-                x = np.concatenate([x0[:lw], rb_pitch(x0[lw:], semi)]); r_ = rise_st(x, tt[-1][0], tt[max(0, len(tt) - 3)][0], tt[-1][1] + 0.05)
+            # clip-05 c17 (Rule Reviewer 22/10): a hard concat at the lift start clicked (0.72-of-peak step). Move the edge to the lowest-energy 5ms
+            # frame within ±30ms (onset of the last syllable's consonant), snap to a zero crossing, pitch-shift with 120ms pre-roll so rubberband's
+            # start-up transient falls outside, then 18ms equal-power crossfade raw→lifted.
+            e5 = int(0.005 * SR); lo_, hi_ = max(e5, lw - int(0.03 * SR)), min(len(x0) - e5, lw + int(0.03 * SR))
+            cand = [(float(np.mean(x0[j:j + e5] ** 2)), j) for j in range(lo_, hi_, e5)]; lw = min(cand)[1] if cand else lw
+            zc = np.where(np.diff(np.signbit(x0[lw - e5:lw + e5])))[0]; lw = lw - e5 + int(zc[np.argmin(np.abs(zc - e5))]) if len(zc) else lw
+            XF = int(0.018 * SR); PRE = int(0.12 * SR); st0 = max(0, lw - XF - PRE)
+            def lift(sm):
+                y_ = rb_pitch(x0[st0:], sm)[lw - XF - st0:]; t_ = np.linspace(0, np.pi / 2, XF)
+                mix = x0[lw - XF:lw] * np.cos(t_) + y_[:XF] * np.sin(t_)
+                return np.concatenate([x0[:lw - XF], mix, y_[XF:]]).astype("float32")
+            fx_ = os.environ.get("RISE_FIX_" + s["id"])  # fixed lift in st (Rule Reviewer pyin check), skips the adaptive loop
+            if fx_: semi = float(fx_); x = lift(semi)
+            while not fx_:
+                x = lift(semi); r_ = rise_st(x, tt[-1][0], tt[max(0, len(tt) - 3)][0], tt[-1][1] + 0.05)
                 if (r_ is not None and r_ >= 0.6) or semi >= 6.0: break  # v18: +3–4 st on a nặng/huyền ending turns the tone into sắc («sạch»→«xác», «từ»→«tờ», whisper medium)
                 semi = min(6.0, semi + 0.5)
         # stress: gain on the bold chunk, ≥2 dB (target 2.5) over the rest of the sentence AND over its 2 neighbour syllables each side; no tempo

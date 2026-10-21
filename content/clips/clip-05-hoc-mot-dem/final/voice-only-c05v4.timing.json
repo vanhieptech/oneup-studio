@@ -9,8 +9,8 @@
   "///": 0.4,
   "//hook": 0.08
  },
- "pure_speech_s": 46.57,
- "total_s": 52.701,
+ "pure_speech_s": 46.58,
+ "total_s": 52.711,
  "wav": "content/clips/clip-05-hoc-mot-dem/final/voice-only-c05v4.wav",
  "m4a": "/workspace/clip-05-v4-voice-only.m4a",
  "sentences": [
@@ -1582,7 +1582,7 @@
    "pieces": [
     {
      "start": 49.64,
-     "end": 51.49,
+     "end": 51.5,
      "file_start": 49.63,
      "mark_after": "//",
      "plan_pause": 0.35,
@@ -1645,7 +1645,7 @@
     }
    ],
    "start": 49.64,
-   "end": 51.49
+   "end": 51.5
   },
   {
    "id": "c18",
@@ -1653,47 +1653,47 @@
    "text": "Comment số hôm nha.",
    "pieces": [
     {
-     "start": 51.84,
-     "end": 52.66,
-     "file_start": 51.83,
+     "start": 51.85,
+     "end": 52.67,
+     "file_start": 51.84,
      "mark_after": "//beat",
      "plan_pause": 0.4,
      "tokens": [
       [
        "com",
-       51.762,
-       51.962,
+       51.772,
+       51.972,
        0
       ],
       [
        "men",
-       51.962,
-       52.062,
+       51.972,
+       52.072,
        0
       ],
       [
        "số",
-       52.062,
-       52.222,
+       52.072,
+       52.232,
        1
       ],
       [
        "hôm",
-       52.222,
-       52.422,
+       52.232,
+       52.432,
        2
       ],
       [
        "nha",
-       52.422,
-       52.642,
+       52.432,
+       52.652,
        3
       ]
      ]
     }
    ],
-   "start": 51.84,
-   "end": 52.66
+   "start": 51.85,
+   "end": 52.67
   }
  ]
 }

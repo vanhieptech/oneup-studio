@@ -9,10 +9,10 @@
   "///": 0.4,
   "//hook": 0.08
  },
- "total_s": 52.701,
- "speech_s": 46.57,
+ "total_s": 52.711,
+ "speech_s": 46.58,
  "pause_at_marks_s": 7.47,
- "pure_speech_pre_s": 46.57,
+ "pure_speech_pre_s": 46.58,
  "lufs": -14.2,
  "limit_s": 58.0,
  "over_s": 0,
@@ -958,8 +958,8 @@
   },
   {
    "chunk_id": "c17→c18",
-   "t_start": 51.49,
-   "t_end": 51.84,
+   "t_start": 51.5,
+   "t_end": 51.85,
    "dur_s": 0.35,
    "at_mark": "sentence",
    "context_before": "cách mấy hôm",
@@ -1574,7 +1574,7 @@
    "mid_breaks": [],
    "stress": {
     "words": "càng phải dài",
-    "vs_rest_db": 2.4,
+    "vs_rest_db": 2.3,
     "vs_neighbours_db": 3.2,
     "gain_applied_db": 8.4
    },
@@ -1703,21 +1703,21 @@
    "beat": "b08",
    "text": "Còn bạn, môn sắp thi còn cách mấy hôm?",
    "start": 49.64,
-   "end": 51.49,
+   "end": 51.5,
    "mid_breaks": [],
    "stress": {
     "words": "mấy hôm",
-    "vs_rest_db": 3.1,
+    "vs_rest_db": 3.3,
     "vs_neighbours_db": 4.6,
-    "gain_applied_db": 2.5
+    "gain_applied_db": 3.6
    },
-   "rise_st": 0.91,
+   "rise_st": 0.72,
    "final_tone": "ngang",
    "pitch_shift_st": 5.0,
    "stt": "Còn bạn, môn sắp thi còn cách mấy hôm?",
    "stt_sim": 1.0,
-   "syll_per_s": 6.04,
-   "speech_s": 1.85,
+   "syll_per_s": 6.0,
+   "speech_s": 1.86,
    "take": "c17-11p.wav",
    "candidates": [
     [
@@ -1732,8 +1732,8 @@
    "id": "c18",
    "beat": "b08",
    "text": "Comment số hôm nha.",
-   "start": 51.84,
-   "end": 52.66,
+   "start": 51.85,
+   "end": 52.67,
    "mid_breaks": [],
    "stress": {
     "words": "số hôm",
@@ -1873,7 +1873,7 @@
    "sid": "c18",
    "word": "Comment",
    "said": "Com men",
-   "t": 51.76,
+   "t": 51.77,
    "en_stt": ""
   }
  ],
