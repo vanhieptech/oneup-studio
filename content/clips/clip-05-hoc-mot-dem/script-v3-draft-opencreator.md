@@ -15,7 +15,7 @@ Một câu cả clip: *Học dồn một đêm vẫn qua được sáng hôm thi
 Việc cụ thể xuyên suốt (minh hoạ, không phải chuyện thật của Hiệp): chương Di truyền, dạng **lai hai cặp tính trạng** — khựng ở b02, giải được ở b07.
 Không dùng: chuyện ôn TOEIC, «gấp sách tự kiểm» (bỏ theo Rule Reviewer 21/10), số share viral, phần trăm, «số ngày giãn chuẩn», «học dồn vô dụng/hại não», «một tuần quên sạch».
 
-1. **[Hook — nỗi đau + câu hỏi]** «Học một đêm mới hiểu sao kiến thức được dạy trong một kỳ». Câu này trên TikTok được share hơn năm mươi nghìn lần. Bạn học dồn như vậy, sáng ra vẫn làm được đề, nhưng một tuần sau bạn còn nhớ bao nhiêu?
+1. **[Hook — nỗi đau + câu hỏi]** Một video TikTok với câu «Học một đêm mới hiểu sao kiến thức được dạy trong một kỳ» được share hơn năm mươi nghìn lần. Bạn học dồn như vậy, sáng ra vẫn làm được đề, nhưng một tuần sau bạn còn nhớ bao nhiêu?
 2. **[Ví dụ — chỗ khựng]** Ví dụ mình ôn chương Di truyền ba tiếng liền trước hôm thi giữa kỳ. Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình không nhớ cách giải.
 3. **[Nguyên nhân + dẫn chứng]** Một nghiên cứu cho sinh viên đọc một bài hai lần liền. Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần, nhưng hai ngày sau họ không còn hơn nữa. Còn ai đọc lần hai cách một tuần thì hai ngày sau vẫn hơn người đọc một lần.
 4. **[Mục tiêu]** Mình cần là tới cuối kỳ mình vẫn nhớ chương đó.
@@ -143,3 +143,4 @@ Kết: các ô chặn Đ trừ R7 (xung đột độ dài, báo để Rule Revie
 - Hình b01 dựng lại khung TikTok bằng vật thể, có ghi nguồn; không dùng footage gốc.
 - Chờ `trend-signals.md` của Social Research để khớp nhịp cắt cảnh/format; có gì lệch sẽ sửa tiếp.
 - F5 lưu ý: News chuẩn hoá «một kỳ» trong ngoặc, không đổi script.
+- Sửa theo Deep Research: cái được share là video, không phải câu nói.

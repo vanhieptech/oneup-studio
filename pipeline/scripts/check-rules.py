@@ -555,11 +555,12 @@ def main():
     elif not os.path.exists(tsp): err("L-084", "final/trend-signals.md missing (trend must be in the clip, Hiệp 21/10)")
     else:
         ts = open(tsp, encoding="utf8").read()
+        _cn = re.search(r"clip-(\d+)", clip_dir); _e84 = err if (_cn and int(_cn.group(1)) >= 5) else warn  # L-084 from clip-05 on
         m = re.search(r"Trend trong clip:\s*(b\d+[a-z]?)\s*[·|-]\s*(.+)", ts)
-        if not m: err("L-084", "trend-signals.md lacks line «Trend trong clip: bNN · <câu/format/hình>» (trend must be visible in hook/b01–b02)")
+        if not m: _e84("L-084", "trend-signals.md lacks line «Trend trong clip: bNN · <câu/format/hình>» (trend must be visible in hook/b01–b02)")
         else:
             bid = m.group(1); hook_ok = bid in ("b01", "b01a", "b01b", "b02", "b02a")
-            (ok if hook_ok else err)("L-084", f"trend shown at {bid}: {m.group(2)[:80]}" + ("" if hook_ok else " → must be in hook (b01–b02)"))
+            (ok if hook_ok else _e84)("L-084", f"trend shown at {bid}: {m.group(2)[:80]}" + ("" if hook_ok else " → must be in hook (b01–b02)"))
         (ok if re.search(r"http\S+.*\d[\d.,]*\s*(M\s*)?view", ts) else warn)("rule-57", "trend-signals.md has clip URLs with view counts")
         if "proxy" in ts.lower() and "tiktok.com/@" not in ts: warn("rule-57", "only proxy signals, no TikTok clip URL yet → verify in app before posting")
     # rule-58 (DL-059, L-022): one continuous story, precise words, no vague phrases
