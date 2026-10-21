@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-20
+updated: 2026-10-21
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -115,6 +115,16 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | ai-agents-overestimate | AI coding agent ước 2 tuần mà làm xong 2 giờ (ước dư 3–10 lần, vì học từ quy trình chậm của người) | tech/work | ok | 2026-10-20 | 2026-10-20 | 1 | [X News](https://x.com/i/trending/2111450373017722907) |
 | ngay-phu-nu-20-10 | Ngày Phụ nữ Việt Nam 20/10 (Google Trends VN 500+, X VN “Chúc”, Dân Trí) | seasonal | ok | 2026-10-20 | 2026-10-20 | 1 | [Google Trends VN](https://trends.google.com/trends/explore?geo=VN&q=ng%C3%A0y%20ph%E1%BB%A5%20n%E1%BB%AF%20vi%E1%BB%87t%20nam) |
 | hn-enjoy-programming | HN “It's still ok to enjoy programming” (427 điểm, 405 comment) — dev mệt vì AI | tech/work | ok | 2026-10-20 | 2026-10-20 | 1 | [HN](https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming) |
+| tt-giu-lai-bao-nhieu | “Không phải kiếm bao nhiêu mà giữ lại bao nhiêu”: 50tr/năm = 137k/ngày (@cuungodao 191,2k) | tiktok/money | ok | 2026-10-21 | 2026-10-21 | 1 | [TikTok](https://www.tiktok.com/@cuungodao/video/7669374863521467668) |
+| tt-12-thoi-xau-ngheo | “Người càng nghèo càng phải bỏ 12 tật xấu này” (@kesanmoi.rf 248,5k, 38,3k like, đăng 19/10) | tiktok/money | caution | 2026-10-21 | 2026-10-21 | 1 | [TikTok](https://www.tiktok.com/@kesanmoi.rf/video/7698254483419172103) |
+| tt-bhx-tiet-kiem | Bách Hoá Xanh: đừng đợi lương cao mới tiết kiệm, dư 10tr/năm (80,8k) | tiktok/money | caution | 2026-10-21 | 2026-10-21 | 1 | [TikTok](https://www.tiktok.com/@bachhoaxanh.official/video/7697485412943547655) |
+| tt-tam-nuoc-lanh-hoc | Tắm nước lạnh học nhanh gấp 10 (190,7k; y khoa không nguồn) | tiktok/health | caution | 2026-10-21 | 2026-10-21 | 1 | [TikTok](https://www.tiktok.com/@kinhnghiemhungdongy/video/7636026273407438098) |
+| tt-hom-nay-ban-co-met | “Hôm nay bạn có mệt không” (177,4k, 1.571 share) | tiktok/wellbeing | ok | 2026-10-21 | 2026-10-21 | 1 | [TikTok](https://www.tiktok.com/@loading141092/video/7641213596852161800) |
+| lai-suat-giam-2026-10 | Lãi suất tiết kiệm giảm đồng loạt; nhân viên ngân hàng săn khách gửi trước khi hạ lãi | news/money | ok | 2026-10-21 | 2026-10-21 | 1 | [VnExpress](https://vnexpress.net/lai-suat-tiet-kiem-giam-dong-loat-5134403.html) |
+| x-tight-budget-childhood | Thói quen tiết kiệm từ tuổi thơ thiếu thốn (X News) | x/money | ok | 2026-10-21 | 2026-10-21 | 1 | [X News](https://x.com/i/trending/2112284691579486271) |
+| x-gaming-to-work | Cày game 14 tiếng: sức tập trung đó dùng cho việc thật được không (X News) | x/productivity | ok | 2026-10-21 | 2026-10-21 | 1 | [X News](https://x.com/i/trending/2112259396973772892) |
+| x-travel-vs-house | Gen Z chọn du lịch thay vì để dành mua nhà (X News) | x/money | ok | 2026-10-21 | 2026-10-21 | 1 | [X News](https://x.com/i/trending/2111870900467359905) |
+| sale-1111-2026 | 11.11 còn 3 tuần (mùa sale) | seasonal | ok | 2026-10-21 | 2026-10-21 | 1 | lịch |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -235,6 +245,10 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-6h-01 | tt-no-luc-ao + founder-26h-ai + tt-thuc-khuya-giam-tac-hai | tuần nào cũng ngủ 6 tiếng mà thấy mình vẫn ổn | 3.3 | "Tuần này đêm nào cũng ngủ sáu tiếng, mà bạn vẫn thấy mình tỉnh, đúng không?" (P10+P03) | data | clip-15 (3.3) hook thay thế | đề xuất (không nêu tên founder) | 2026-10-20 |
 | B-commute-01 | commute-paradox | ngồi xe đi làm mỗi ngày, tưởng rồi sẽ quen | 4.18 | "Mỗi ngày bạn ngồi xe đi làm bao lâu? Cộng cả tuần là mấy tiếng?" (P04+P01) | data / empathy | ý tưởng mới (trụ 1) | đề xuất (sách ghi tranh cãi; bỏ số Trung Quốc) | 2026-10-20 |
 | B-estimate-02 | ai-agents-overestimate | AI ước dư mà mình thì ước thiếu | 4.4 | "AI ước hai tuần mà làm hai tiếng. Còn bạn, lần gần nhất ước ba ngày thì mất mấy ngày?" (P03) | humor / data | clip-05 (4.4) hook thay thế | đề xuất | 2026-10-20 |
+| B-gachngang-01 | tt-12-thoi-xau-ngheo + sale-1111-2026 | mở app sale thấy giá gạch 999 còn 499 là bấm đặt | 5.24 (+5.23) | "Giá gạch từ 999 ngàn xuống còn 499 ngàn, bạn thấy mình vừa lời được năm trăm ngàn, đúng không?" (P10+P05) | contrarian / data | ý tưởng mới (đăng trước 11.11) | stub, chờ duyệt (không chê người nghèo; quy định giá chuẩn là của TQ) | 2026-10-21 |
+| B-giulai-01 | tt-giu-lai-bao-nhieu + tt-bhx-tiet-kiem + lai-suat-giam-2026-10 | gom được chút thì xe hư, khoản để dành bay mất | 5.27 | "Một năm để dành được năm chục triệu, vậy là bạn đã đủ an toàn chưa?" (P04+P03) | data / empathy | ý tưởng mới (gộp với B-paycheck-01/B-stress-01, cùng 5.27) | stub, chờ duyệt (tài chính: dòng an toàn + Hiệp duyệt; mức C) | 2026-10-21 |
+| B-met-01 | tt-hom-nay-ban-co-met + x-imperfect-days | cuối ngày ngả lưng mới thấy mệt rã rời | 22.8 | "Hôm nay bạn có mệt không? Cho mình năm phút thở dài vòng thử nha." (P12) | empathy | clip-21 (22.8) hook thay thế | đề xuất (mức B, một thử nghiệm tự báo) | 2026-10-21 |
+| B-travelhouse-01 | x-travel-vs-house | để dành mua nhà hay đi du lịch | 5.27 | "Đi du lịch hay để dành mua nhà? Trước hai cái đó, bạn có quỹ mấy tháng chưa?" (P13) | contrarian | ý tưởng (phụ B-giulai-01) | đề xuất (không chê thế hệ) | 2026-10-21 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |

@@ -1,0 +1,393 @@
+{
+ "version": 1,
+ "id": "trend-giu-lai-bao-nhieu-thang",
+ "title": "[STUB] Để dành 50 triệu một năm là đủ chưa? Hãy đếm bằng số tháng chi tiêu, không phải số tiền",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-cuungodao-7669374863521467668",
+  "bridge_id": "B-giulai-01",
+  "lesson": "5.27 Trước hết gom đủ 3 đến 6 tháng sinh hoạt phí làm quỹ dự phòng, để chỗ rút ra bất cứ lúc nào (Bằng chứng C: “3 đến 6 tháng” là kinh nghiệm phổ biến, sách không tìm được nguồn học thuật; tính theo chi tiêu cố định mỗi tháng của chính bạn, không theo thu nhập; cái giá là bỏ lợi nhuận cao hơn, chỉ để ở tài khoản thanh toán, quỹ tiền tệ hoặc tiền gửi rút được ngay; số bảo hiểm tiền gửi 500.000 NDT là của TQ, không dùng cho VN). Lợi ích: lúc mất việc hay đau ốm không phải vay, không phải bán lỗ khoản đầu tư (lãi vay tiêu dùng xem 5.7). Sách ghi rõ: đây là cách tính sổ, không phải lời khuyên đầu tư.",
+  "angle": "data / empathy",
+  "pattern": "P04 + P03",
+  "differentiation": "Mọi người đang nói: cảm giác an toàn không nằm ở kiếm bao nhiêu mà ở giữ lại bao nhiêu; 50 triệu một năm là 137 ngàn mỗi ngày còn lại sau mọi khoản chi (TikTok @cuungodao 191,2k view, VTT); Bách Hoá Xanh “đừng đợi lương cao mới tiết kiệm” (80,8k); comment “cái hay ở đời là mỗi khi tích đc 1 tý thì lại có việc cần 😌” 13 like; tin VnExpress lãi suất tiết kiệm giảm đồng loạt, nhân viên ngân hàng săn khách gửi trước khi hạ lãi. Góc của mình: con số 50 triệu tự nó không nói gì; sách đổi nó ra số tháng chi tiêu cố định của chính bạn (3–6 tháng, kinh nghiệm phổ biến, mức C, sách thừa nhận không có nguồn học thuật) và để ở chỗ rút ra ngay, chấp nhận lãi thấp hơn — đúng lúc người ta đang cuống vì lãi giảm. Không khuyên kênh đầu tư nào. Chuyện quỹ dự phòng của Hiệp để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "giu-lai-bao-nhieu-thang.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một năm để dành được năm chục triệu, vậy là bạn đã đủ an toàn chưa?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Saved 50 million this year. Safe enough?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "giu-lai-bao-nhieu-thang.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một clip gần hai trăm ngàn view tính ra năm chục triệu một năm là mỗi ngày phải giữ lại một trăm ba mươi bảy ngàn, sau khi đã trả hết mọi khoản.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "50 million a year: 137k kept per day.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "giu-lai-bao-nhieu-thang.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy mà nhiều người vừa gom được một chút thì xe hư, điện thoại vỡ, và khoản để dành bay mất.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Then the bike breaks. Savings gone.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "giu-lai-bao-nhieu-thang.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lý do là con số năm chục triệu tự nó không nói được bạn trụ được bao lâu. Cùng số tiền đó, người tiêu tám triệu một tháng và người tiêu mười lăm triệu sẽ trụ được số tháng rất khác nhau.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Same money, very different months.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "giu-lai-bao-nhieu-thang.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình cần là biết quỹ của mình gánh được mấy tháng nếu mai bị mất việc hay đổ bệnh.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "How many months could you cover?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "giu-lai-bao-nhieu-thang.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy bạn cộng chi tiêu cố định một tháng của mình, nhân lên ba, rồi xem quỹ hiện có được mấy tháng. Khoản này để ở chỗ rút ra được ngay, dù lãi có thấp hơn.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Monthly costs times three. Keep it liquid.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "giu-lai-bao-nhieu-thang.b07",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có quỹ này rồi thì lúc có biến bạn không phải đi vay, cũng không phải bán lỗ thứ gì.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "No borrowing, no selling at a loss.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "giu-lai-bao-nhieu-thang.b08",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mốc ba đến sáu tháng chỉ là kinh nghiệm phổ biến, mức bằng chứng thấp. Đây là thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Rule of thumb only. Not professional advice.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "giu-lai-bao-nhieu-thang.b09",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: quỹ dự phòng của mình đủ mấy tháng.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My emergency fund.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s10",
+   "beat": "giu-lai-bao-nhieu-thang.b10",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Quỹ của bạn hiện gánh được mấy tháng? Comment số tháng nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "How many months? Comment below.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}
