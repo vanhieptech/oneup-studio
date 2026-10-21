@@ -11,7 +11,9 @@ updated: 2026-10-21
 # Trend signals — clip-05
 
 ## Trend gốc
-- Video: [TikTok @ng__phanh](https://www.tiktok.com/@ng__phanh/video/7532553338664045831), đăng 29/07/2025, dài 20s.
+Trend trong clip: b01 · lời hook đọc câu viral «Học một đêm mới hiểu sao kiến thức được dạy trong một kỳ» (video được share hơn năm mươi nghìn lần) + hình dựng khung TikTok: chồng giáo trình mới tinh, nút share 55,3K, nguồn @ng__phanh (script v3 d6c2aaa)
+
+- Video: https://www.tiktok.com/@ng__phanh/video/7532553338664045831 — 1.1M view (đo 20/10/2026), đăng 29/07/2025, dài 20s.
 - Số liệu ngày 20/10/2026: 1,1M view · 107,1k like · 55,3k share · 695 comment. Kênh 20,1k follower → view gấp ~55 lần follower (outlier).
 - Caption nguyên văn: «Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ» · hashtag #deadline #onthi #hoc #fyp.
 - Format: không lời thoại (không có VTT), chỉ có chữ caption + nhạc nền gốc «nhạc nền – ⚜️Thanh*Phong⚜️». Nhịp cắt cảnh chưa đo (không tải video), không ghi số.
