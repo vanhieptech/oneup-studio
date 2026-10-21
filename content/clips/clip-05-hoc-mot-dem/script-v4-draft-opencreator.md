@@ -6,7 +6,7 @@ idea: B-hoc1dem-01 (Hiệp chọn 21/10/2026)
 item: HTB 23.15 (mức A), bước 2–3 từ ghi chú 23.15 + mục 23.14 (Deep Research 21/10)
 theme: DARK
 format: W-16 giữ nguyên; phần cách làm theo khung đếm «Một / Hai / Ba» + màn làm lại cuối clip (tham khảo series @studypte.w.shawn, research/reference-videos/2026-10-21/analysis.md 9c58eff)
-status: nháp v4, CHƯA được Hiệp đồng ý hướng format, CHƯA Rule Reviewer chấm, CHƯA Chốt. Không voice/render trước «Chốt» (L-072).
+status: CHỐT — Hiệp «Chốt script» 21/10/2026 23:01 (bản 8ec205e, Rule Reviewer đạt). Lời không sửa thêm.
 fact_lock: content/clips/clip-05-hoc-mot-dem/fact-package.md (fd4d90d) + tin nhắn Deep Research 21/10 22:45 (bước 2–3)
 trend: b01 hình + chữ trên màn hình (@ng__phanh), lời không kể về video (Rule Reviewer 21/10)
 ---
