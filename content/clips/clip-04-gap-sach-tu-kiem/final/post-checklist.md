@@ -12,7 +12,7 @@ tags: [clip-04, post, checklist]
 Gộp từ checklist v14 cũ + `publish/post-checklist.md` (21/10/2026, rule-65). Gói đăng: `final/post.md`.
 - [ ] Rule Reviewer soát đạt `final/post.md` (phần chữ đã soát 23c82a7; chờ `check-rules.py --final` lần cuối)
 - [ ] Hiệp duyệt bộ final (cover A đã render, Rule Reviewer duyệt; C-1 giữ như hiện tại)
-- [x] News giao video cuối v18 (3e237fa); mục 1 đã điền số ffprobe (48,90s)
+- [x] News giao video cuối v18 (3e237fa); mục 1 đã điền số ffprobe (TikTok 48,90s; reels 49,40s sau khi thêm 0,5s khung cover, News 8b4eb83)
 - [x] Cover template A → `final/cover.png` 1080×1920 + `final/cover-1080x1350.png` (FLUX, b7d1bba); tải lên riêng, không dùng frame video
 - [ ] TikTok: `clip-04-v18-tiktok.mp4` + `cover.png` + tiêu đề (mục 2) + caption mục 3, kiểm 5 hashtag ở cuối và dòng credit CC BY 4.0 + bật AI-generated content + tắt nội dung thương mại + playlist «Học đúng cách»
 - [ ] TikTok: Bình luận / Duet / Stitch: ON; Mọi người; không vị trí

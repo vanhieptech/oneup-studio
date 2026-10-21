@@ -23,7 +23,7 @@ Mục 1–12 là gói TikTok theo `templates/post-package.md` (giữ đúng tên
 ## 1. File video
 ```
 TikTok:          content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-tiktok.mp4 · 48,90s · 1080×1920 (9:16) · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 26,6 MB
-Instagram Reels: content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-reels.mp4 · 48,90s · 1080×1920 · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 27,0 MB (phụ đề đặt cao, tránh vùng UI Reels) — số đo bản cũ; News đang render lại có khung cover ở 0s (L-083), cập nhật khi có file mới
+Instagram Reels: content/clips/clip-04-gap-sach-tu-kiem/final/clip-04-v18-reels.mp4 · 49,40s (1482 frame) · 1080×1920 · 30fps · H.264 High + AAC LC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS · 27,1 MB (27.068.784 B) (phụ đề đặt cao, tránh vùng UI Reels). Khung cover 0–0,500s (15 frame, frame 0 khớp `cover.png` SSIM 0,9994), giọng/phụ đề lùi +0,500s, News 8b4eb83 (L-083)
 YouTube Shorts:  clip-04-v18-reels.mp4 (cùng file với Reels)
 Threads:         clip-04-v18-reels.mp4 (cùng file với Reels)
 Bản xem nhanh:   clip-04-v18-light.mp4 · 48,90s · 540×960 · 30fps · −14,7 LUFS · 1,75 MB — chỉ để xem, không đăng
@@ -233,10 +233,10 @@ Quyết định Rule Reviewer đã chốt (20/10/2026): C-1 giữ credit nguyên
 | 1 | Mỗi bản 1 CTA, 1 câu hỏi | Đạt. Đếm «?»: TikTok 1 · Threads 1 · Reels 1 · YouTube tiêu đề 0 + mô tả 1 |
 | 2 | Văn nói, xưng «bạn», không từ hiếm, không chê năng lực (P-07) | Đạt. Bình luận ghim thêm «Thử» ở đầu câu theo L-073 (sửa 21/10, Rule Reviewer soát lại giúp) |
 | 3 | Không lên lịch / đăng tự động | Đạt. Hiệp tự đăng tay |
-| 4 | Video thật (ffprobe) | 48,90s · 1080×1920 · 30fps · H.264 High · AAC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS (tiktok + reels) |
+| 4 | Video thật (ffprobe) | TikTok 48,90s · reels 49,40s (có 0,5s khung cover) · 1080×1920 · 30fps · H.264 High · AAC 48 kHz mono · −14,2 LUFS · peak −0,9 dBFS |
 | 5 | Không nhạc, có SFX + ambience (luật 21/50) | Đạt (mục 8) |
 | 6 | End card credit, vùng an toàn, Reels không logo TikTok | Đạt (mục 12) |
-| 7 | Cover từ template A (luật 54, L-020, L-083) | Đạt (mục 16). Khung 0s bản reels khớp `cover.png`: chờ News render và Rule Reviewer so ảnh |
+| 7 | Cover từ template A (luật 54, L-020, L-083) | Đạt (mục 16). Khung 0s bản reels khớp `cover.png` (SSIM 0,9994, `final/qa-v18-render/reels/cover-prefix-qa.json`, News 8b4eb83) |
 
 ### Độ dài thật (đếm bằng script, 21/10/2026)
 | Bản | Độ dài | Giới hạn |
@@ -245,10 +245,10 @@ Quyết định Rule Reviewer đã chốt (20/10/2026): C-1 giữ credit nguyên
 | Threads (mục 13) | 452 ký tự | 500 |
 | Reels caption (mục 14) | 538 ký tự | 2200 |
 | YouTube tiêu đề / mô tả (mục 15) | 59 / 854 ký tự | 100 (OneUp ≤ 70) / 5000 |
-| Video | 48,90s, cả 3 file | L-080: độ dài theo nội dung |
+| Video | TikTok 48,90s · reels 49,40s (thêm 0,5s cover) · light 48,90s | L-080: độ dài theo nội dung |
 
 ### Hiệp đã quyết (21/10/2026, L-083)
 - Thumbnail Reels/Shorts/Threads = khung 0s (cover) của bản reels; bản TikTok tải `cover.png` riêng.
 - Phụ đề bản reels dùng cho Shorts: OK.
 - Nhạc: bài nào cũng được, không bắt buộc CML.
-- Còn chờ: số đo mục 1 và dòng «Video» của bản reels cập nhật sau khi News render lại có khung cover.
+- Bản reels có khung cover đã render (News 8b4eb83); số đo mục 1 và 17 đã cập nhật.
