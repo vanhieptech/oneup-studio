@@ -30,7 +30,7 @@ File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-de
 | c15 Khi mình làm đủ hai bước đó, | b07 | 43.70–45.05 | — | — | Khi mình làm đủ hai bước đó, (1.0) | c15-11.wav |
 | c16 tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình dễ nhớ ra cách giải hơn. | b07 | 45.23–49.24 | «dễ nhớ ra» +2.4 / +3.0 (+2.6) | — | Tới cuối kỳ gặp lại dạng lại hai cặp tính trạng, mình dễ nhớ ra cách giải hơn. (0.972) | c16-113.wav |
 | c17 Còn bạn, môn sắp thi còn cách mấy hôm? | b08 | 49.64–51.50 | «mấy hôm» +3.3 / +4.6 (+3.6) | 0.72 · thanh ngang · nâng 5.0 st | Còn bạn, môn sắp thi còn cách mấy hôm? (1.0) | c17-11p.wav |
-| c18 Comment số hôm nha. | b08 | 51.85–52.67 | «số hôm» +2.3 / +3.4 (+10.2) | — | comment số hôm nha (1.0) | c18-11c.wav |
+| c18 Comment số hôm nha. | b08 | 51.85–52.67 | «số hôm» +2.4 / +3.4 (+11.3) | — | Comment số hôm nha (1.0) | c18-11c.wav |
 
 ## Nghỉ tại từng ký hiệu (đo / plan)
 
@@ -81,10 +81,13 @@ File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-de
 
 - (không có)
 
-## Sửa click c17 (Rule Reviewer vòng 2, 4c01ad4) — rev 3, 22/10/2026 ~01:55 (UTC+7)
-- Nguyên nhân: bước nâng giọng nối cứng (concat) đoạn gốc với đoạn rubberband, đầu ra rubberband có khởi động ~0 → click 0,72 đỉnh ở 51,238s.
-- Sửa (`voice-delivery-f5.py` pick): mép nối dời tới khung 5ms năng lượng thấp nhất trong ±30ms rồi bám điểm qua 0; rubberband chạy với pre-roll 120ms; crossfade equal-power 18ms gốc→đã nâng. Giữ take c17-11p, không sinh lại F5. Nâng 5,0 st như rev 2.
-- Bước nhảy mẫu: trong c17 tối đa 0,35 đỉnh (50,446s, giữa câu, có cả ở take gốc); vùng nối 51,18–51,32s tối đa 0,13. Nối c16→c17 lặng 0,40s (49,24–49,64), bước max 0,16; c17→c18 lặng 0,35s (51,50–51,85), bước max 0,11.
-- STT medium trên c17 bản giao: «Còn bạn, môn sắp thi còn cách mấy hôm?» (tự do và có gợi ý).
-- Cao độ «hôm»: cách của tool (autocorr, trung vị F0 âm tiết cuối so 2 âm tiết trước) +0,91 st. Cách Rule Reviewer (pyin, trung vị F0 phần có tiếng): «hôm» 169 Hz, «mấy» 190 Hz, «cách» 155 Hz → so trung vị(mấy, cách) **−0,34 st** (so «mấy» −2,0, so «cách» +1,5). Thử nâng cố định: 3 st → −2,34 (STT «hôm»); 5,5 st → −0,14 (STT «hôm»); 6 st → +0,41 và 7 st → +1,36 nhưng medium nghe thành «hông? Không» (méo thanh). Không có mức nào vừa ≥+0,5 st theo pyin vừa giữ «hôm»: «mấy» thanh sắc đứng trước nên cao sẵn. Chờ Rule Reviewer quyết (miễn kiểu L-082 cho câu hỏi có thanh sắc ngay trước, hoặc chọn 5,5 st).
-- Ghi chú: bước nhảy lớn nhất cả file 0,64 đỉnh ở 52,12s là đầu phụ âm «s» của «số» (c18, có +10 dB nhấn), có y hệt ở bản f6d7d38, không phải chỗ nối.
+## Ngoại lệ L-082 cho c17 (Rule Reviewer chọn phương án a, 22/10/2026 ~01:43 UTC+7)
+- Giữ nâng **5,0 st** ở «hôm» (take c17-11p). Câu hỏi c17 **được miễn** chỉ tiêu «âm tiết cuối ≥ +0,5 st» theo tinh thần L-082: âm tiết ngay trước «hôm» là «mấy» (thanh sắc) nên cao sẵn, nâng tiếp làm méo thanh.
+- Số đo (pyin, trung vị F0 phần có tiếng): «hôm» 169 Hz · «mấy» 190 Hz · «cách» 155 Hz → «hôm» so trung vị(mấy, cách) **−0,34 st**, so «cách» **+1,5 st**, so «mấy» −2,0 st. Cách của tool (autocorr, âm tiết cuối so 2 âm tiết trước): +0,91 st.
+- Bảng thử nâng (pyin so trung vị mấy/cách · STT medium): 3 st −2,34 «hôm» · 5 st −0,34 «hôm» (chọn) · 5,5 st −0,14 «hôm» · 6 st +0,41 «hông? Không» ✖ · 7 st +1,36 «hông? Không» ✖.
+
+## c18: bỏ bước nhảy ở «s» của «số» — rev 4, 22/10/2026 ~02:00 (UTC+7)
+- Trước: bước nhảy 0,64 đỉnh ở 52,12s (đầu «s», do nhấn +10,2 dB).
+- Sửa: de-ess riêng /s/ (`voice-work/clip-05-v4/deess.py`, chạy sau fixcommas.py): lọc thông thấp trung bình trượt 10 mẫu (≈ cắt trên ~4,8 kHz) trên cửa sổ từ 30ms trước tới 100ms sau mép token «số», crossfade 8ms hai đầu. Không đổi take, không đổi tempo.
+- Sau: bước nhảy tối đa trong c18 (51,85–52,67s) **0,35 đỉnh** (52,143s) ≤ 0,40 ✓. Nhấn «số hôm» **+2,4 dB so câu / +3,4 dB so chữ kề** ✓ (tổng gain nhấn 11,3 dB, vòng bù sau limiter tự tăng thêm vì /s/ nhỏ đi; không hạ được về 5–6 dB mà vẫn giữ ≥ +2,3 dB so câu vì «số hôm» gốc thấp hơn câu 4,5 dB). STT medium c18: «Comment số hôm nha» (1,0, tự do và có gợi ý).
+- Bước nhảy lớn nhất cả file giờ là 0,43 đỉnh ở 43,115s (cuối c14 «dài»), y hệt bản 36aa0a1, không phải chỗ nối.
