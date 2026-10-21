@@ -17,7 +17,7 @@ Không dùng: chuyện ôn TOEIC, «gấp sách tự kiểm» (bỏ theo Rule Re
 
 1. **[Hook — nỗi đau + câu hỏi]** Bạn học dồn một đêm cho cả kỳ, sáng ra vẫn làm được đề. Nhưng giả sử một tuần sau có ai hỏi lại, bạn còn nhớ bao nhiêu?
 2. **[Ví dụ — chỗ khựng]** Ví dụ mình ôn chương Di truyền ba tiếng liền trước hôm thi giữa kỳ. Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình không nhớ cách giải.
-3. **[Nguyên nhân + dẫn chứng]** Một thí nghiệm thấy, sinh viên đọc một đoạn văn hai lần liền thì kiểm tra ngay điểm cao hơn, nhưng hai ngày sau không còn hơn, còn sinh viên đọc cách nhau một tuần lại nhớ hơn.
+3. **[Nguyên nhân + dẫn chứng]** Một nghiên cứu cho sinh viên đọc một bài hai lần liền. Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần, nhưng hai ngày sau họ không còn hơn nữa. Còn ai đọc lần hai cách một tuần thì hai ngày sau vẫn hơn người đọc một lần.
 4. **[Mục tiêu]** Mình cần là tới cuối kỳ mình vẫn nhớ chương đó, chứ không chỉ đủ cho sáng hôm thi.
 5. **[Cách làm]** Nên cùng ba tiếng đó, mình chia ra ba ngày, mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang. Tổng giờ không đổi, mình chỉ phải bắt đầu sớm vài hôm.
 6. **[Bằng chứng]** Một bài tổng hợp 317 thí nghiệm thấy, người học muốn nhớ càng lâu thì khoảng cách giữa các lần ôn càng phải dài.
@@ -122,3 +122,8 @@ Kết: các ô chặn Đ trừ R7 (xung đột độ dài, báo để Rule Revie
 1. Deep Research: Rawson & Kintsch 2005 dùng ở vai «nguyên nhân» (b03) có ổn không, và nói «đọc một đoạn văn» có đúng thiết kế («a text») không?
 2. Rule Reviewer: câu giới hạn «phần lớn là học thuộc từ, chưa có lịch ôn cố định cho nội dung khó» có bắt buộc vào lời không?
 3. Rule Reviewer: R7 140–160 vs brief 180–200 / L-080.
+
+
+## Sửa 2026-10-21 theo Deep Research (beat 3)
+- «Một thí nghiệm» → «Một nghiên cứu» (2 thí nghiệm, 423 sinh viên); «đoạn văn» → «một bài»; nêu rõ cả hai chữ «hơn» là so với người chỉ đọc một lần. Không nói vì sao (không có cơ chế).
+- Visual b03: cột đọc giãn một tuần chỉ cao hơn cột «đọc 1 lần», KHÔNG vẽ cao hơn cột đọc hai lần liền.
