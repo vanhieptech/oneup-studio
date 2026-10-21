@@ -69,3 +69,46 @@ Lưu ý: nếu lượt 2 đúng còn lượt 1 sai thì nhiều khả năng do S
 ## Kết luận
 
 **CHƯA ĐẠT, chưa gửi Hiệp, chưa render.** 15/18 chunk đạt. Phải làm lại c12 (mất nghỉ sau «Hai.»), c03 (STT 0,73, «chương Di truyền» không rõ) và c14 (ngắt giữa cụm 0,31s). Làm xong thì đo lại bằng medium, rồi gửi Rule Reviewer chấm lại chỉ 3 chunk này cùng chỗ nối c11→c12.
+
+---
+
+# Vòng 2: chấm commit `f6d7d38`, 22/10/2026 ~01:45 (giờ VN, UTC+7)
+
+Đo cùng cách vòng 1: whisper medium float32 từng chunk (tự do và có gợi ý), silencedetect, RMS, pyin, quét bước nhảy mẫu. Ngoài ra STT riêng các take c17 trong `/workspace/voice-work/clip-05-v4/`.
+
+## Tổng
+- Tổng 52,70s ✓, −14,2 LUFS ✓, true peak −1,2 dBTP ✓, LRA 1,7 LU.
+- Chunk không đổi (c01–c02, c04–c11, c13–c16, c18): STT medium giống hệt vòng 1, không có lỗi mới. Mọi mép ghép chunk sạch (bước nhảy mẫu ≤0,08 so với đỉnh).
+- Hàm check-rules: ✔ L-070 (0 cờ chặn), ✔ E1 (hết cờ chặn; còn ⚠ 0,12s ở c04 «cặp|tính» và c14 «cách|giữa», là chỗ ngậm của phụ âm cuối -p/-ch, bỏ qua), ✔ L-027. Còn ✖ «delivery plan present ()» do tool chưa nhận `prosody-plan.md`. Đây là lỗi tool, không phải lỗi giọng.
+- Khớp lời: STT medium tự do ≥0,889 ở mọi chunk, không chunk nào thừa hay thiếu chữ so với bản khóa (News có `assert` chuỗi 219 chữ).
+
+## Chunk đã sửa
+
+| Chunk | Đo | Kết quả |
+|---|---|---|
+| c03 (5,00–8,00) | STT tự do **1,0** «ôn chương di truyền …», có gợi ý 0,93 (vẫn «thí») | **Đạt** |
+| c12 (33,76–36,37) | «Hai» là **tiếng thật** (33,77–34,03, khoảng −10 dB). Nghỉ thở **0,25–0,28s** (34,05–34,30). Nối c11→c12 khoảng 0,33s. STT tự do 1,0 («2. Mỗi buổi …»). | **Đạt**. Lượt có gợi ý ra «ự kiểm», nên nghe tai «tự» ~35,5s. |
+| c14 (38,74–43,30) | Lặng «lâu|thì» còn **0,10s** (41,12–41,22). Nền lặng −46…−59 dB là tiếng phòng, không phải lặng số. Mép cắt không click (0,003 và 0,034). «lâu» tắt dần tự nhiên, tiếng bật của «thì» ở 41,22 còn nguyên. STT 1,0/1,0. | **Đạt** (ngoại lệ E1 đã ghi) |
+| c17 (49,64–51,49) | STT tự do 1,0 «môn». «Còn bạn.» chỉ nghỉ 0,15s và giọng «bạn» đi lên ở cuối (104→131 Hz), không rơi như hết câu, nên đây là ranh giới tự nhiên, ổn. **Lỗi: click ở 51,238s** (đầu «hôm», chỗ bắt đầu đoạn nâng giọng): mẫu tụt từ 0,61 xuống 0, rồi fade-in khoảng 8ms. Bước nhảy 0,72 so với đỉnh, mức nhảy lớn nhất của cả file (cả câu c17 bình thường ≤0,35). Take gốc c17-11p không có lỗi này (0,21), nên lỗi do bước nâng giọng ghép cứng. «hôm» trong file đi từ 206 xuống 157 Hz (bản gốc 152→118), không thấy méo âm sắc rõ, STT «hôm?» 1,0. Lên giọng đo theo cách của tôi (so trung vị «cách/mấy») khoảng 0 st, của News +0,91 st, nên ở sát ngưỡng. Nghe vẫn là câu hỏi vì «hôm» bắt đầu cao ngang đỉnh «mấy». | **Chưa đạt**: phải làm mượt chỗ click |
+
+## Chọn take c17
+STT medium tự do trên file take:
+- **c17-11p**: «môn» 0,84 ✓ (có gợi ý cũng «môn» 0,84)
+- c17-11m: «**món**» 0,36
+- c17-127: «**muốn**» 0,62
+- c17-37p: «muốn» 0,50
+- c17-37m: «món … **đi**»
+
+**Chọn c17-11p**, take duy nhất đọc rõ «môn». Dấu chấm ở chữ nhập không tạo ngắt lạ (0,15s, cỡ một dấu phẩy, giọng không rơi). Chỉ cần làm lại bước nâng giọng «hôm»:
+- Nối bằng crossfade đều năng lượng 15–20ms, đặt mép ở chỗ năng lượng thấp nhất của phụ âm /h/ đầu «hôm» (hoặc tại điểm cắt qua 0).
+- Không để mẫu tụt thẳng về 0.
+- Đo lại: bước nhảy mẫu trong c17 ≤0,35 so với đỉnh, STT «hôm» vẫn đúng, «hôm» cao hơn «mấy/cách» ≥ +0,5 st theo plan.
+- Nếu nâng làm méo thì giảm xuống khoảng +3 st. Câu vẫn nghe là câu hỏi nhờ có «mấy» và dấu «?» trên phụ đề.
+
+## Thay cho nghe tai (chỉ là ước lượng, vẫn nên nghe 1 lần)
+- **«lai» (c04 9,40–9,56; c16 46,30–46,44):** giữa «lai» và «hai» **không có chỗ ngậm của âm tắc** (c04 năng lượng liền ≥ −17 dB; c16 chỉ xuống −29 dB ở /h/ đầu «hai»). «like» cần một quãng ngậm /k/ gần như lặng, nên kết luận nghe ra «like» là do STT đoán. F2 khoảng 1,5 kHz lướt lên, đúng kiểu nguyên âm đôi /ai/. **Rủi ro thấp.**
+- **«cẩm nang» (c11 33,12–33,36):** phần nguyên âm hữu thanh dài 0,27s (cuối câu). F1/F2 (khoảng 520/2040 Hz) nằm trong vùng của «dạng/trạng» cùng clip. Ước lượng LPC kém tin cậy với âm /ă/ ngắn, nên đây chỉ là bằng chứng yếu. Lượt có gợi ý ra «nang». **Rủi ro thấp–vừa**, nghe tai 1 lần.
+- Còn lại cần nghe tai: «thí» (c13 ~37,8s; STT tự do «thuyết», 0,57), «tự» (c12 ~35,5s), «Comment» (c18 ~51,8s, STT vi 1,0).
+
+## Kết luận vòng 2
+**CHƯA ĐẠT, chỉ còn 1 lỗi**: click ở 51,238s (c17, đầu «hôm»). c03, c12, c14 **đạt**. Giữ take **c17-11p**, chỉ nối lại đoạn nâng giọng bằng crossfade. Không cần sinh lại F5. Sửa xong chỉ cần chấm lại c17 cùng chỗ nối c16→c17 và c17→c18. Đạt thì gửi Hiệp nghe, kèm danh sách chữ cần nghe tai ở trên.
