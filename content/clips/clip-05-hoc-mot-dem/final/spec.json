@@ -15,7 +15,8 @@
  "voice_track": "voice-track-c05v4.wav",
  "mix": "linear",
  "layout": "tiktok",
- "caption_accent": true,
+ "scene_bg": "#E4E4DF",
+ "floor_bg": "#D2D1CA",
  "length_target": [
   50,
   60.5
@@ -40,12 +41,13 @@
   {
    "v": "v4",
    "date": "2026-10-21",
-   "note": "Render stage: approved voice c05v4 (Rule Reviewer PASS 5b12e22; c18 /s/ rev5 764c16d), script-v4-LOCKED (91848a3), visual-plan-v4 (97a50af); one Remotion part, lines = frame-aligned slices of the approved wav; caption keyword accent #FF5A36 = open choice for Hiệp"
+   "note": "Render stage: approved voice c05v4 (Rule Reviewer PASS 5b12e22; c18 /s/ rev5 764c16d), script-v4-LOCKED (91848a3), visual-plan-v4 (97a50af); one Remotion part, lines = frame-aligned slices of the approved wav; caption keyword = ink box (Hiệp H2), scene wall grey #E4E4DF (Hiệp H1), both relayed by Rule Reviewer 22/10 08:47"
   }
  ],
  "cover": {
   "direction": "a",
   "theme": "dark",
+  "bg": "#E4E4DF",
   "series": "Học đúng cách",
   "ep": 5,
   "hero": [
@@ -55,7 +57,7 @@
   "accent": 1,
   "strike": -1,
   "expression": "confused",
-  "action": "thinking",
+  "action": "reacting",
   "tilt": -4
  },
  "hook": {

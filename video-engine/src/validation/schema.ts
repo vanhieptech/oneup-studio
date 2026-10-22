@@ -27,6 +27,8 @@ export const VideoConfigSchema = z.object({
   layout: z.enum(["tiktok", "reels"]).default("tiktok"),
   /** clip-05 v4 (open choice, Hiệp to pick): caption keyword highlight in brand accent #FF5A36 instead of ink. */
   captionAccent: z.boolean().default(false),
+  sceneBg: z.string().regex(/^#[0-9A-Fa-f]{6}$/).optional(), // scene wall colour (default BRAND.paper)
+  floorBg: z.string().regex(/^#[0-9A-Fa-f]{6}$/).optional(), // floor band colour (default BRAND.soft)
 });
 
 export const TimedChange = <T extends z.ZodTypeAny>(value: T) => z.object({ at: seconds, value });

@@ -12,6 +12,7 @@ export type CoverProps = {
   direction: "a" | "b" | "c"; theme: "light" | "dark"; series: string; ep: number;
   hero: string[]; accent: number; strike?: number; sub?: string;
   expression: string; action?: string; tilt?: number; emote?: "!" | "?" | "zzz" | "✓"; showSafe?: boolean;
+  bg?: string; // wall colour override (clip-05 v4: grey #E4E4DF = scene wall, Hiệp H1) → ink-on-grey palette
 };
 const T = {
   light: { bg: "#F7F7F5", ink: "#111111", surface: "#FFFFFF", muted: "#6B6B6B", soft: "#F0F0EE" },
@@ -54,7 +55,7 @@ const Word: React.FC<{ w: string; i: number; p: CoverProps; c: typeof T.light; s
 };
 export const Cover: React.FC<CoverProps> = (p) => {
   ensureFonts();
-  const c = T[p.theme], dark = p.theme === "dark";
+  const c = p.bg ? { ...T.light, bg: p.bg, surface: "#F7F7F5" } : T[p.theme], dark = !p.bg && p.theme === "dark";
   const safe = p.showSafe ? <div style={{ position: "absolute", left: 0, right: 0, top: 240, height: 1440, outline: "6px dashed #B45309" }} /> : null;
   if (p.direction === "a") return ( // A · Big type: struck old habit → accent new word, chibi reacts below
     <AbsoluteFill style={{ background: c.bg, fontFamily: FONT_FAMILY }}>

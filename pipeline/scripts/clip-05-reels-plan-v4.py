@@ -29,6 +29,7 @@ def penmap(pr, fn):
 for s in p["scenes"]:
     bg, props, cast = s["background"]["kind"], s.get("props", []), s.get("characters") or []
     if s["id"] == "endcard": continue
+    for c in cast: c["x"] = 0.79  # L-033: reels caption box (x 60–640) clipped the head's left edge at x .76; .79 clears it, face stays left of the right UI rail
     if bg == "paper":
         for pr in props:
             k = pr["kind"]

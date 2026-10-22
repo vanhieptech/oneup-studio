@@ -2,8 +2,10 @@ import React from "react";
 import { BRAND } from "./theme";
 
 /** Rounded, ink-on-paper comic sets. Drawn in 1080-wide design space; h = design height. */
-export const Background: React.FC<{ kind: string; h: number; t: number; theme: "light" | "dark"; floorY: number }> = ({ kind, h, t, floorY }) => {
+export const Background: React.FC<{ kind: string; h: number; t: number; theme: "light" | "dark"; floorY: number; bg?: string; floorFill?: string }> = ({ kind, h, t, floorY, bg, floorFill }) => {
   const { ink, paper, soft } = BRAND;
+  const wall = bg ?? paper; // video.sceneBg (clip-05 v4: grey #E4E4DF, Hiệp H1); props/bubbles keep BRAND.paper
+  const ground = floorFill ?? soft;
   const dots = (
     <pattern id="halftone" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="11" cy="11" r="2.4" fill={ink} opacity="0.09" />
@@ -12,7 +14,7 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
   const halftoneCorner = <path d={`M0,0 L560,0 Q300,120 0,520 Z`} fill="url(#halftone)" />;
   const floor = (
     <g>
-      <rect x={0} y={floorY} width={1080} height={h - floorY} fill={soft} />
+      <rect x={0} y={floorY} width={1080} height={h - floorY} fill={ground} />
       <path d={`M0,${floorY} L1080,${floorY}`} stroke={ink} strokeWidth={8} />
     </g>
   );
@@ -29,7 +31,7 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
       return (
         <g>
           <defs>{dots}<pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="3.2" fill={ink} opacity="0.16" /></pattern></defs>
-          <rect width={1080} height={h} fill={paper} />
+          <rect width={1080} height={h} fill={wall} />
           <rect width={1080} height={h} fill="url(#grid)" />
         </g>
       );
@@ -38,7 +40,7 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
       return (
         <g>
           <defs>{dots}</defs>
-          <rect width={1080} height={h} fill={paper} />{halftoneCorner}
+          <rect width={1080} height={h} fill={wall} />{halftoneCorner}
           {/* window */}
           <rect x={620} y={360} width={330} height={400} rx={40} fill={soft} stroke={ink} strokeWidth={10} />
           <path d="M785,360 L785,760 M620,560 L950,560" stroke={ink} strokeWidth={8} />
@@ -68,7 +70,7 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
       return (
         <g>
           <defs>{dots}</defs>
-          <rect width={1080} height={h} fill={paper} />{halftoneCorner}
+          <rect width={1080} height={h} fill={wall} />{halftoneCorner}
           <rect x={110} y={600} width={300} height={22} rx={11} fill={ink} />
           {[0, 1, 2, 3].map((i) => <rect key={i} x={140 + i * 52} y={490 - (i % 2) * 18} width={40} height={110 + (i % 2) * 18} rx={12} fill={i === 2 ? soft : ink} stroke={ink} strokeWidth={6} />)}
           {floor}
@@ -102,7 +104,7 @@ export const Background: React.FC<{ kind: string; h: number; t: number; theme: "
       return (
         <g>
           <defs>{dots}</defs>
-          <rect width={1080} height={h} fill={paper} />{halftoneCorner}
+          <rect width={1080} height={h} fill={wall} />{halftoneCorner}
           {floor}
         </g>
       );

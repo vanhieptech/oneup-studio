@@ -142,7 +142,7 @@ def remotion_plan(spec, part):
                        "transition": {"type": "cut", "duration": 0.4}, "characters": [dict(c, expressionChanges=[], actionChanges=[], action="idle") for c in last["characters"]], "dialogue": [],
                        "sfx": [], "props": [p_ for p_ in last.get("props", []) if p_.get("kind") not in ("tag",)] + [{"kind": "endcard", "at": 0, "y": ec.get("y", 560), "text": ec["safety"], "sub": ec["sources"], "stamp": ec["credit"]}]})
     plan = {"version": 1, "id": f"{spec['id']}-{part['id']}", "title": spec["title"], "meta": {"clip": spec["clip"], "week": spec["week"], "source": "final/spec.json"},
-            "video": {"width": 1080, "height": 1920, "fps": FPS, "theme": spec["theme"], "layout": spec.get("layout", "tiktok"), **({"captionAccent": True} if spec.get("caption_accent") else {})}, "scenes": scenes}
+            "video": {"width": 1080, "height": 1920, "fps": FPS, "theme": spec["theme"], "layout": spec.get("layout", "tiktok"), **({"captionAccent": True} if spec.get("caption_accent") else {}), **({"sceneBg": spec["scene_bg"]} if spec.get("scene_bg") else {}), **({"floorBg": spec["floor_bg"]} if spec.get("floor_bg") else {})}, "scenes": scenes}
     return plan, timing, sum(s["duration"] for s in scenes)
 
 def explainer(spec, part, fdir):

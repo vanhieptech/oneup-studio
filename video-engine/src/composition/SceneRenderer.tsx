@@ -50,7 +50,7 @@ export const SceneRenderer: React.FC<{
         <svg width={DESIGN_W} height={H} viewBox={`0 0 ${DESIGN_W} ${H}`} style={{ position: "absolute", inset: 0 }}>
           {ec && <defs><filter id={`ecb-${scene.id}`} x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation={14} /></filter></defs>}
           <g transform={camT} filter={ec ? `url(#ecb-${scene.id})` : undefined}>
-            <Background kind={scene.background.kind} h={H} t={t} theme={theme} floorY={H * (1390 / 1920)} />
+            <Background kind={scene.background.kind} h={H} t={t} theme={theme} floorY={H * (1390 / 1920)} bg={video.sceneBg} floorFill={video.floorBg} />
             {states.map(({ state, profile }, i) => (
               <CharacterRenderer key={profile.id} uid={`${scene.id}-${profile.id}-${i}`} state={state} profile={profile} width={DESIGN_W} groundY={groundY} scale={fr.scale} />
             ))}

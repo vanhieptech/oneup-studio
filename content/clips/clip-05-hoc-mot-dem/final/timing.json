@@ -1,5 +1,5 @@
 {
- "total": 55.03,
+ "total": 55.04,
  "parts": [
   {
    "id": "A",
@@ -310,5 +310,209 @@
    "dur": 1.3667,
    "t": 51.666
   }
+ ],
+ "transitions": [
+  {
+   "at": 4.801,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 11.901,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 24.201,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 26.934,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 36.567,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 43.5,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 49.433,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 53.033,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "pop",
+   "at": 0.3
+  },
+  {
+   "name": "snap",
+   "at": 2.362
+  },
+  {
+   "name": "swish",
+   "at": 3.093
+  },
+  {
+   "name": "swish",
+   "at": 5.496
+  },
+  {
+   "name": "tick",
+   "at": 6.776
+  },
+  {
+   "name": "tick",
+   "at": 10.782
+  },
+  {
+   "name": "pop",
+   "at": 13.931
+  },
+  {
+   "name": "rise",
+   "at": 16.323
+  },
+  {
+   "name": "tick",
+   "at": 18.658
+  },
+  {
+   "name": "snap",
+   "at": 19.138
+  },
+  {
+   "name": "swish",
+   "at": 21.575
+  },
+  {
+   "name": "rise",
+   "at": 22.706
+  },
+  {
+   "name": "rise",
+   "at": 25.73
+  },
+  {
+   "name": "swish",
+   "at": 27.443
+  },
+  {
+   "name": "snap",
+   "at": 30.011
+  },
+  {
+   "name": "pop",
+   "at": 30.471
+  },
+  {
+   "name": "snap",
+   "at": 32.92
+  },
+  {
+   "name": "snap",
+   "at": 35.121
+  },
+  {
+   "name": "pen",
+   "at": 35.421
+  },
+  {
+   "name": "tick",
+   "at": 35.981
+  },
+  {
+   "name": "ding",
+   "at": 37.795
+  },
+  {
+   "name": "swish",
+   "at": 40.327
+  },
+  {
+   "name": "tick",
+   "at": 43.097
+  },
+  {
+   "name": "pop",
+   "at": 43.907
+  },
+  {
+   "name": "pop",
+   "at": 44.487
+  },
+  {
+   "name": "swish",
+   "at": 46.299
+  },
+  {
+   "name": "pen",
+   "at": 48.059
+  },
+  {
+   "name": "ding",
+   "at": 48.939
+  },
+  {
+   "name": "swish",
+   "at": 50.298
+  },
+  {
+   "name": "tick",
+   "at": 52.071
+  },
+  {
+   "name": "swish",
+   "at": 4.681
+  },
+  {
+   "name": "swish",
+   "at": 11.781
+  },
+  {
+   "name": "swish",
+   "at": 24.081
+  },
+  {
+   "name": "swish",
+   "at": 26.814
+  },
+  {
+   "name": "swish",
+   "at": 36.447
+  },
+  {
+   "name": "swish",
+   "at": 43.38
+  },
+  {
+   "name": "swish",
+   "at": 49.313
+  },
+  {
+   "name": "swish",
+   "at": 52.913
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
  ]
 }
