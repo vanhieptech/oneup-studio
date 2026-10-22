@@ -125,6 +125,12 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | x-gaming-to-work | Cày game 14 tiếng: sức tập trung đó dùng cho việc thật được không (X News) | x/productivity | ok | 2026-10-21 | 2026-10-21 | 1 | [X News](https://x.com/i/trending/2112259396973772892) |
 | x-travel-vs-house | Gen Z chọn du lịch thay vì để dành mua nhà (X News) | x/money | ok | 2026-10-21 | 2026-10-21 | 1 | [X News](https://x.com/i/trending/2111870900467359905) |
 | sale-1111-2026 | 11.11 còn 3 tuần (mùa sale) | seasonal | ok | 2026-10-21 | 2026-10-21 | 1 | lịch |
+| kenh14-nhan-them-viec | Kenh14: “Sếp hỏi ‘Em có thể nhận thêm việc không?’, 3 cách từ chối… EQ cao” | work | ok | 2026-10-22 | 2026-10-22 | 1 | [kenh14](https://kenh14.vn/sep-hoi-em-co-the-nhan-them-viec-khong-3-cach-tu-choi-tuong-mat-long-nhung-thuc-ra-la-bieu-hien-cua-eq-cao-215261020214215741.chn) |
+| x-anger-at-work | Kìm giận nơi làm việc mệt như làm thêm một ca (X News) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112572577571115169) |
+| brain-stacking-tiktok | “Brain stacking”: trend TikTok kêu gọi bỏ điện thoại xuống (Mashable) | viral/phone | ok | 2026-10-22 | 2026-10-22 | 1 | Google News (Mashable) |
+| x-homeownership-gen | Nhà ở: boomers vs người trẻ Mỹ (X News, số Mỹ) | x/money | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112994548662317171) |
+| x-punctuality-wait | Đến sớm trả lương trước rồi ngồi chờ thợ tới trễ 3 tiếng (X News; không nêu tên/quốc gia) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112823806846783530) |
+| chatgpt-pin-lock | ChatGPT khoá cuộc trò chuyện nhạy cảm bằng PIN/Face ID (Tinh tế) | tech/security | ok | 2026-10-22 | 2026-10-22 | 1 | [Tinh tế](https://tinhte.vn/thread/chatgpt-cho-khoa-cuoc-tro-chuyen-nhay-cam-bang-ma-pin-hoac-face-id.4185675/) |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -249,6 +255,8 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-giulai-01 | tt-giu-lai-bao-nhieu + tt-bhx-tiet-kiem + lai-suat-giam-2026-10 | gom được chút thì xe hư, khoản để dành bay mất | 5.27 | "Một năm để dành được năm chục triệu, vậy là bạn đã đủ an toàn chưa?" (P04+P03) | data / empathy | ý tưởng mới (gộp với B-paycheck-01/B-stress-01, cùng 5.27) | stub, chờ duyệt (tài chính: dòng an toàn + Hiệp duyệt; mức C) | 2026-10-21 |
 | B-met-01 | tt-hom-nay-ban-co-met + x-imperfect-days | cuối ngày ngả lưng mới thấy mệt rã rời | 22.8 | "Hôm nay bạn có mệt không? Cho mình năm phút thở dài vòng thử nha." (P12) | empathy | clip-21 (22.8) hook thay thế | đề xuất (mức B, một thử nghiệm tự báo) | 2026-10-21 |
 | B-travelhouse-01 | x-travel-vs-house | để dành mua nhà hay đi du lịch | 5.27 | "Đi du lịch hay để dành mua nhà? Trước hai cái đó, bạn có quỹ mấy tháng chưa?" (P13) | contrarian | ý tưởng (phụ B-giulai-01) | đề xuất (không chê thế hệ) | 2026-10-21 |
+| B-nhanviec-01 | kenh14-nhan-them-viec | sếp hỏi nhận thêm việc, gật liền vì tưởng hai ngày là xong | 4.4 | "Sếp hỏi em nhận thêm việc này được không, bạn gật liền vì nghĩ chắc hai ngày là xong, đúng không?" (P03+P10) | contrarian / data | ý tưởng mới (gộp B-estimate-02; 4.4 chờ slot) | stub, chờ duyệt (mức B, một nghiên cứu nhỏ) | 2026-10-22 |
+| B-giandiu-01 | x-anger-at-work | đọc tin nhắn bị chê, muốn gõ trả lời liền hoặc chạy ra ngoài cho hả | 3.23 (+3.17) | "Đang tức sếp, bạn xách giày đi chạy một vòng cho hạ hoả, đúng không?" (P03+P10) | contrarian / data | ý tưởng mới (trụ 2 năng lượng) | stub, chờ duyệt (caution sức khoẻ tinh thần: dòng an toàn + Hiệp duyệt; mức A) | 2026-10-22 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |

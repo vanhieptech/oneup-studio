@@ -1,0 +1,393 @@
+{
+ "version": 1,
+ "id": "trend-gian-dung-chay-mot-vong",
+ "title": "[STUB] Tức sếp thì đi chạy một vòng cho hạ hoả? Gộp 154 nghiên cứu nói cách đó gần như không giúp",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "workplace-anger-control-feels-like-a-full-time",
+  "bridge_id": "B-giandiu-01",
+  "lesson": "3.23 Lúc giận đừng xả bằng đấm bao cát hay chạy một vòng, trước hết cho cơ thể chậm lại (Kjærvik & Bushman 2024, gộp 154 nghiên cứu, 10.189 người: cách làm cơ thể dịu xuống như thở chậm, chánh niệm, thiền giảm cơn giận và hung hăng g = −0,63; cách làm cơ thể hưng phấn hơn như đấm bao cát, chạy bộ, đạp xe gần như không tác dụng g = −0,02). Bằng chứng A. + 3.17 giận thì rời chỗ trước (Webb 2012, B). Ghi chú sách: đo cơn giận, không đo năng lượng; chạy bộ lâu dài vẫn tốt cho tâm trạng, chỉ không hợp để hạ hoả tại chỗ. Chi phí: không tốn tiền, vài phút; khó ở chỗ lúc đó chỉ muốn xả.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: kìm cơn giận ở chỗ làm mệt như làm thêm một ca, mẹo là hít thở, tự nhủ 'mình bình tĩnh được' (X News 20/10). Góc của mình: lời khuyên quen thuộc 'đi chạy một vòng cho hạ hoả' lại gần như không giúp theo bản gộp 154 nghiên cứu; cái giúp là cho cơ thể chậm lại vài phút, và rời chỗ trước khi trả lời tin nhắn. Book fact + contrarian."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "gian-dung-chay-mot-vong.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đang tức sếp, bạn xách giày đi chạy một vòng cho hạ hoả, đúng không?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Angry at your boss? Go for a run?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "gian-dung-chay-mot-vong.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình đọc xong tin nhắn bị chê là mặt nóng bừng, tay chỉ muốn gõ trả lời liền cho hả.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Face burning, fingers ready.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "gian-dung-chay-mot-vong.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một bản tổng hợp gộp một trăm năm mươi tư nghiên cứu, hơn mười ngàn người, và kết quả hơi ngược với điều mình hay nghe.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "154 studies, 10,000+ people.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "gian-dung-chay-mot-vong.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Những cách làm cơ thể hưng phấn hơn như đấm bao cát hay chạy bộ gần như không làm bớt giận.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Punching or running barely helps.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "gian-dung-chay-mot-vong.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn những cách làm cơ thể chậm lại như thở chậm hay ngồi yên vài phút thì giảm cơn giận rõ rệt.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Slowing your body down does.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "gian-dung-chay-mot-vong.b06",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình muốn là đừng gửi đi một câu mà mai mình phải hối hận.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Don't send what you'll regret.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "gian-dung-chay-mot-vong.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy lần tới đang giận, bạn úp điện thoại xuống, rời bàn, rồi thở chậm vài phút cho tim dịu lại trước khi trả lời.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Phone down. Step away. Breathe slow.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "gian-dung-chay-mot-vong.b08",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chạy bộ vẫn tốt cho tâm trạng lâu dài, chỉ là nó không hợp để hạ hoả ngay lúc đó. Mức bằng chứng ở đây là cao.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Running helps long-term, not in the moment.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "gian-dung-chay-mot-vong.b09",
+   "duration": 3,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+     "start": 0.3,
+     "end": 2.7
+    }
+   ],
+   "caption": {
+    "text": "For reference only, not professional advice.",
+    "start": 0.3,
+    "end": 2.7
+   }
+  },
+  {
+   "id": "s10",
+   "beat": "gian-dung-chay-mot-vong.b10",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lúc giận, bạn hay làm gì đầu tiên? Comment cho mình biết nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "What do you do first when angry?",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

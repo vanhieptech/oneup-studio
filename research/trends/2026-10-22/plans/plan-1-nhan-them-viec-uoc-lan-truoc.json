@@ -1,0 +1,393 @@
+{
+ "version": 1,
+ "id": "trend-nhan-them-viec-uoc-lan-truoc",
+ "title": "[STUB] Sếp hỏi nhận thêm việc không: trước khi gật, xem lần trước việc giống vậy mất bao lâu",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "sep-hoi-em-co-the-nhan-them-viec",
+  "bridge_id": "B-nhanviec-01",
+  "lesson": "4.4 Ước thời gian theo số ngày thật của lần làm việc giống vậy gần nhất, không theo kế hoạch (Buehler, Griffin & Ross 1994: sinh viên ước 33,9 ngày viết xong luận văn, thực tế 55,5 ngày; chỉ 29,7% xong đúng hạn ước. Nhóm được yêu cầu nhớ lại lần trước rồi mới ước: tỉ lệ xong đúng hạn từ 29,3% lên 60,0%). Bằng chứng B; ghi chú sách: một nghiên cứu, sinh viên Canada, mỗi nhóm khoảng 40 người. Chi phí: không tốn tiền, vài phút lật lại lần trước.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: có 3 cách từ chối khéo khi sếp hỏi nhận thêm việc, từ chối là EQ cao (Kenh14 20/10). Góc của mình: chưa cần bàn từ chối hay nhận; cái sai nằm ở câu 'chắc hai ngày là xong'. Trước khi trả lời, mở lại lần làm việc giống vậy gần nhất xem thật sự mất mấy ngày rồi mới hứa (4.4, Buehler 1994). Book fact consensus bỏ qua; chuyện thật của Hiệp để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sếp hỏi em nhận thêm việc này được không, bạn gật liền vì nghĩ chắc hai ngày là xong, đúng không?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Boss asks for one more task. Two days, right?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b02",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi tới tuần sau, việc đó vẫn còn nằm trên bàn, và bạn phải xin dời hạn lần nữa.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "A week later, still on your desk.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nghiên cứu cho thấy sinh viên ước ba mươi tư ngày viết xong luận văn, nhưng thực tế phải mất năm mươi lăm ngày rưỡi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Planned 34 days. Took 55.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lý do là mình ước theo kế hoạch đẹp trong đầu, chứ không nhìn lại lần trước mình đã làm thật mất bao lâu.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "We plan by hope, not by history.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình cần là một cái hạn mình giữ được, để khỏi phải xin lỗi sếp thêm lần nữa.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "A deadline you can actually keep.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b06",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy trước khi trả lời, bạn mở lại lần làm một việc giống vậy gần nhất, xem thật sự đã mất mấy ngày, rồi mới hứa hạn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Check how long it really took last time.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trong nghiên cứu đó, nhóm được nhắc nhớ lại lần trước rồi mới ước đã xong đúng hạn gấp đôi, từ hai mươi chín lên sáu mươi phần trăm.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "On time: 29% to 60%.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b08",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đây là một nghiên cứu nhỏ trên sinh viên Canada, nên bạn coi là mẹo tham khảo, mức bằng chứng trung bình.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "One small study. Moderate evidence.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b09",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: một lần mình hứa hai ngày mà làm cả tuần.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My 2-day promise.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s10",
+   "beat": "nhan-them-viec-uoc-lan-truoc.b10",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lần gần nhất bạn hứa mấy ngày, và thật sự mất mấy ngày? Comment cho mình biết nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Promised vs real: comment yours.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}
