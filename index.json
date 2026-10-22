@@ -634,6 +634,78 @@
    "title": "Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual)"
   },
   {
+   "id": "clip-05.post-checklist",
+   "type": "doc",
+   "status": "ready",
+   "updated": "2026-10-22",
+   "path": "content/clips/clip-05-hoc-mot-dem/final/post-checklist.md",
+   "title": "Checklist đăng clip-05 v4 (đánh dấu khi xong)"
+  },
+  {
+   "id": "clip-05.post",
+   "type": "post-package",
+   "status": "bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG.",
+   "updated": "2026-10-22",
+   "path": "content/clips/clip-05-hoc-mot-dem/final/post.md",
+   "title": "Bộ final đăng clip-05 v4 «Học dồn một đêm»"
+  },
+  {
+   "id": "clip-05.script-final",
+   "type": "script",
+   "status": "final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3)",
+   "updated": "2026-10-22",
+   "path": "content/clips/clip-05-hoc-mot-dem/final/script-final.md",
+   "title": "clip-05 «Học dồn một đêm» — script final"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.final.visual-plan-v4",
+   "type": "visual-plan",
+   "status": "ready",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/final/visual-plan-v4.md",
+   "title": "Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v1-draft-opencreator",
+   "type": null,
+   "status": "nháp v1 — CHƯA Chốt; chờ Deep Research xác nhận lời + Rule Reviewer chấm. Không voice/render trước «Chốt» (L-072).",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md",
+   "title": "clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v2-draft-opencreator",
+   "type": null,
+   "status": "nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072).",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v2-draft-opencreator.md",
+   "title": "[v2 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v3-draft-opencreator",
+   "type": null,
+   "status": "nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072).",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v3-draft-opencreator.md",
+   "title": "[v3 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v4-LOCKED",
+   "type": null,
+   "status": "«Chốt» bởi Hiệp 2026-10-21 23:01 trên bản 8ec205e. Đổi bất kỳ chữ nào thì Chốt mất hiệu lực (L-072).",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md",
+   "title": "clip-05 v4 — lời thoại theo beat"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v4-draft-opencreator",
+   "type": null,
+   "status": "CHỐT — Hiệp «Chốt script» 21/10/2026 23:01 (bản 8ec205e, Rule Reviewer đạt). Lời không sửa thêm.",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v4-draft-opencreator.md",
+   "title": "clip-05 v4 — lời thoại theo beat"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
@@ -1378,10 +1450,42 @@
    "title": "Trend digest 2026-10-20"
   },
   {
+   "id": "trends-2026-10-21.apify",
+   "type": "research-trends",
+   "status": "ready",
+   "updated": "2026-10-21",
+   "path": "research/trends/2026-10-21/apify/README.md",
+   "title": "Apify 2026-10-21"
+  },
+  {
+   "id": "trends-2026-10-21",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-21",
+   "path": "research/trends/2026-10-21/digest.md",
+   "title": "Trend digest 2026-10-21"
+  },
+  {
+   "id": "trends-2026-10-22.apify",
+   "type": "research-trends",
+   "status": "blocked",
+   "updated": "2026-10-22",
+   "path": "research/trends/2026-10-22/apify/README.md",
+   "title": "Apify 2026-10-22 — không chạy được"
+  },
+  {
+   "id": "trends-2026-10-22",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-22",
+   "path": "research/trends/2026-10-22/digest.md",
+   "title": "Trend digest 2026-10-22"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-20",
+   "updated": "2026-10-21",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -1389,7 +1493,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-20",
+   "updated": "2026-10-21",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -2635,6 +2739,20 @@
     "README.md",
     "archive",
     "final"
+   ]
+  },
+  {
+   "id": "clip-05",
+   "path": "content/clips/clip-05-hoc-mot-dem",
+   "theme": null,
+   "files": [
+    "fact-package.md",
+    "final",
+    "script-v1-draft-opencreator.md",
+    "script-v2-draft-opencreator.md",
+    "script-v3-draft-opencreator.md",
+    "script-v4-LOCKED.md",
+    "script-v4-draft-opencreator.md"
    ]
   }
  ],

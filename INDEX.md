@@ -91,6 +91,15 @@ tags: [index, retrieval]
 | content.clips.clip-04-gap-sach-tu-kiem.final.sound-note-v18 | sound-note | đề xuất — Hiệp chọn bài lúc đăng; Social Poster chép mục 1 vào mục 8 gói đăng | `content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md` | Clip-04 v18 — Sound note |
 | clip-04.trend-signals | trend-signals | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/trend-signals.md` | clip-04 — Trend signals (bản làm lại, Social Research) |
 | content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18 | visual-plan | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md` | Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual) |
+| clip-05.post-checklist | doc | ready | `content/clips/clip-05-hoc-mot-dem/final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
+| clip-05.post | post-package | bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG. | `content/clips/clip-05-hoc-mot-dem/final/post.md` | Bộ final đăng clip-05 v4 «Học dồn một đêm» |
+| clip-05.script-final | script | final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3) | `content/clips/clip-05-hoc-mot-dem/final/script-final.md` | clip-05 «Học dồn một đêm» — script final |
+| content.clips.clip-05-hoc-mot-dem.final.visual-plan-v4 | visual-plan | ready | `content/clips/clip-05-hoc-mot-dem/final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
+| content.clips.clip-05-hoc-mot-dem.script-v1-draft-opencreator | None | nháp v1 — CHƯA Chốt; chờ Deep Research xác nhận lời + Rule Reviewer chấm. Không voice/render trước «Chốt» (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md` | clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16) |
+| content.clips.clip-05-hoc-mot-dem.script-v2-draft-opencreator | None | nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v2-draft-opencreator.md` | [v2 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16) |
+| content.clips.clip-05-hoc-mot-dem.script-v3-draft-opencreator | None | nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v3-draft-opencreator.md` | [v3 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16) |
+| content.clips.clip-05-hoc-mot-dem.script-v4-LOCKED | None | «Chốt» bởi Hiệp 2026-10-21 23:01 trên bản 8ec205e. Đổi bất kỳ chữ nào thì Chốt mất hiệu lực (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md` | clip-05 v4 — lời thoại theo beat |
+| content.clips.clip-05-hoc-mot-dem.script-v4-draft-opencreator | None | CHỐT — Hiệp «Chốt script» 21/10/2026 23:01 (bản 8ec205e, Rule Reviewer đạt). Lời không sửa thêm. | `content/clips/clip-05-hoc-mot-dem/script-v4-draft-opencreator.md` | clip-05 v4 — lời thoại theo beat |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -184,6 +193,10 @@ tags: [index, retrieval]
 | trends-2026-10-19 | trend-digest | draft-needs-review | `research/trends/2026-10-19/digest.md` | Trend digest 2026-10-19 |
 | trends-2026-10-20.apify | research-trends | ready | `research/trends/2026-10-20/apify/README.md` | Apify 2026-10-20 |
 | trends-2026-10-20 | trend-digest | draft-needs-review | `research/trends/2026-10-20/digest.md` | Trend digest 2026-10-20 |
+| trends-2026-10-21.apify | research-trends | ready | `research/trends/2026-10-21/apify/README.md` | Apify 2026-10-21 |
+| trends-2026-10-21 | trend-digest | draft-needs-review | `research/trends/2026-10-21/digest.md` | Trend digest 2026-10-21 |
+| trends-2026-10-22.apify | research-trends | blocked | `research/trends/2026-10-22/apify/README.md` | Apify 2026-10-22 — không chạy được |
+| trends-2026-10-22 | trend-digest | draft-needs-review | `research/trends/2026-10-22/digest.md` | Trend digest 2026-10-22 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
@@ -386,6 +399,7 @@ tags: [index, retrieval]
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | archive, final |
 | clip-03 | None | `content/clips/clip-03-big-task-chunking` | README.md, archive, final |
 | clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, archive, final |
+| clip-05 | None | `content/clips/clip-05-hoc-mot-dem` | fact-package.md, final, script-v1-draft-opencreator.md, script-v2-draft-opencreator.md, script-v3-draft-opencreator.md, script-v4-LOCKED.md, script-v4-draft-opencreator.md |
 
 ## Assets & tools
 | id | path | description |
