@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-ban-truoc-roi-moi-lam",
+ "title": "[STUB] Muốn nghỉ việc làm riêng: trước khi bỏ tiền làm sản phẩm, xem có ai chịu trả tiền trước không",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "debate-over-quitting-job-for-entrepreneurship-grow-side",
+  "bridge_id": "B-bantruoc-01",
+  "lesson": "12.18 Bán trước rồi mới làm: dùng đặt trước và đơn nhỏ để kiểm có người mua, rồi mới bỏ tiền sản xuất (Camuffo, Cordova, Gambardella & Spina 2020, Management Science: thử nghiệm ngẫu nhiên 116 startup Ý theo dõi khoảng một năm; nhóm được dạy 'đặt giả thuyết rồi kiểm bằng phản hồi thị trường' làm ăn tốt hơn, đổi hướng kịp thời hơn và không bỏ cuộc sớm hơn). Bằng chứng B; ghi chú sách: một nghiên cứu, mẫu nhỏ, ở Ý; con số hiệu quả trong toàn văn sách chưa kiểm nên không nêu số. Chi phí: vài chục tới vài trăm nghìn cho mẫu hoặc một trang giới thiệu, chậm vài tuần.",
+  "angle": "contrarian / data",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: nuôi side project mỗi ngày một tiếng tới khi nó bằng 60% lương rồi mới nghỉ (X News 23/10, Justin Welsh). Góc của mình: câu hỏi 'chừng nào nghỉ' đến sau; trước đó phải biết có ai chịu trả tiền chưa. Làm một trang giới thiệu, xin vài chục người đặt trước hoặc mua đơn nhỏ; không ai trả thì đừng tin 'làm ra rồi sẽ có người mua' (12.18, mức B). Chuyện thật của Hiệp (app OneUp) để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ban-truoc-roi-moi-lam.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn tính nghỉ việc để làm riêng, vì tin rằng làm ra rồi thì sẽ có người mua, đúng không?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Quit to build it. Someone will buy, right?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ban-truoc-roi-moi-lam.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi bạn bỏ ra mấy tháng tối nào cũng làm, tới ngày mở bán thì chẳng có ai bấm mua.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Months of nights. Zero orders.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ban-truoc-roi-moi-lam.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lý do là mình chỉ hỏi bạn bè thấy hay không, chứ chưa hỏi ai chịu trả tiền trước.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Likes are not payments.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ban-truoc-roi-moi-lam.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một thử nghiệm với một trăm mười sáu startup ở Ý cho thấy nhóm biết kiểm bằng phản hồi thật của khách làm ăn tốt hơn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "116 startups. Testing beat guessing.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ban-truoc-roi-moi-lam.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình cần là biết sớm ý tưởng có người mua hay không, trước khi bỏ thêm tiền và thời gian.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Know before you spend more.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ban-truoc-roi-moi-lam.b06",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy bạn làm một trang giới thiệu nhỏ, rồi xin vài chục người đặt trước hoặc mua một đơn nhỏ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One page. Ask for pre-orders.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ban-truoc-roi-moi-lam.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nếu có người trả tiền, bạn làm tiếp cho chắc. Nếu không ai trả, bạn đổi hướng sớm mà chưa mất nhiều.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Paid? Build. Not paid? Pivot early.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "ban-truoc-roi-moi-lam.b08",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn đang ấp ý tưởng gì? Comment cho mình biết thử nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "What are you building? Comment.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "ban-truoc-roi-moi-lam.b09",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nội dung dựa trên Cẩm nang sống đáng giá của chuanman2707, giấy phép CC BY 4.0. Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Source: HowToLiveBetter, CC BY 4.0",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

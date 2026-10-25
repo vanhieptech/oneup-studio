@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-21
+updated: 2026-10-25
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -131,6 +131,12 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | x-homeownership-gen | Nhà ở: boomers vs người trẻ Mỹ (X News, số Mỹ) | x/money | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112994548662317171) |
 | x-punctuality-wait | Đến sớm trả lương trước rồi ngồi chờ thợ tới trễ 3 tiếng (X News; không nêu tên/quốc gia) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112823806846783530) |
 | chatgpt-pin-lock | ChatGPT khoá cuộc trò chuyện nhạy cảm bằng PIN/Face ID (Tinh tế) | tech/security | ok | 2026-10-22 | 2026-10-22 | 1 | [Tinh tế](https://tinhte.vn/thread/chatgpt-cho-khoa-cuoc-tro-chuyen-nhay-cam-bang-ma-pin-hoac-face-id.4185675/) |
+| x-side-project-60pct | Tranh luận nghỉ việc làm riêng: nuôi side project mỗi ngày 1 tiếng tới khi bằng 60% thu nhập (Justin Welsh) | work/money debate | ok | 2026-10-25 | 2026-10-25 | 1 | [X News](https://x.com/i/trending/2113685619998372109) |
+| x-sleep-days-off-13h | Dân X kể chuyện ngủ: ngày nghỉ nằm 13 tiếng, trưa ngủ bù sau đêm đứt quãng; VN X trend "Chủ Nhật" | health/habits | ok | 2026-10-25 | 2026-10-25 | 1 | [X News](https://x.com/i/trending/2114005059952324691), [X VN](https://x.com/search?q=Ch%E1%BB%A7%20Nh%E1%BA%ADt) |
+| x-consistency-6-months | "Kiên trì 6 tháng, khó thì làm ít lại" (Hormozi và nhiều người) | habits | ok | 2026-10-25 | 2026-10-25 | 1 | [X News](https://x.com/i/trending/2113963042178257128) |
+| genz-hoc-cach-noi-khong | "Tiết học Gen Z – Học cách nói không" (Hà Nội TV, qua Google News) | social/work | ok | 2026-10-25 | 2026-10-25 | 1 | Google News gen Z |
+| genz-ngai-nghe-dien-thoai | Gen Z ngại nghe điện thoại: va chạm văn hoá mới nơi công sở | work/social | ok | 2026-10-25 | 2026-10-25 | 1 | Google News gen Z (Nhân lực Nhân tài) |
+| gmail-privacy-ads | Chính sách quyền riêng tư mới của Google: Gmail có thể dùng cho quảng cáo | tech/security | caution | 2026-10-25 | 2026-10-25 | 1 | [Ars](https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/) |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -257,6 +263,10 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-travelhouse-01 | x-travel-vs-house | để dành mua nhà hay đi du lịch | 5.27 | "Đi du lịch hay để dành mua nhà? Trước hai cái đó, bạn có quỹ mấy tháng chưa?" (P13) | contrarian | ý tưởng (phụ B-giulai-01) | đề xuất (không chê thế hệ) | 2026-10-21 |
 | B-nhanviec-01 | kenh14-nhan-them-viec | sếp hỏi nhận thêm việc, gật liền vì tưởng hai ngày là xong | 4.4 | "Sếp hỏi em nhận thêm việc này được không, bạn gật liền vì nghĩ chắc hai ngày là xong, đúng không?" (P03+P10) | contrarian / data | ý tưởng mới (gộp B-estimate-02; 4.4 chờ slot) | stub, chờ duyệt (mức B, một nghiên cứu nhỏ) | 2026-10-22 |
 | B-giandiu-01 | x-anger-at-work | đọc tin nhắn bị chê, muốn gõ trả lời liền hoặc chạy ra ngoài cho hả | 3.23 (+3.17) | "Đang tức sếp, bạn xách giày đi chạy một vòng cho hạ hoả, đúng không?" (P03+P10) | contrarian / data | ý tưởng mới (trụ 2 năng lượng) | stub, chờ duyệt (caution sức khoẻ tinh thần: dòng an toàn + Hiệp duyệt; mức A) | 2026-10-22 |
+| B-bantruoc-01 | x-side-project-60pct | tính nghỉ việc làm riêng vì tin làm ra rồi sẽ có người mua | 12.18 | "Bạn tính nghỉ việc để làm riêng, vì tin rằng làm ra rồi thì sẽ có người mua, đúng không?" (P10+P03) | contrarian / data | ý tưởng mới (trụ tiền/sự nghiệp, phần 12 lần đầu) | stub, chờ duyệt (tài chính/kinh doanh: dòng an toàn + Hiệp duyệt; mức B, không nêu số %) | 2026-10-25 |
+| B-weekend-02 | x-sleep-days-off-13h + X VN "Chủ Nhật" | Chủ nhật ngủ tới trưa cho bù, thứ Hai mệt hơn | 3.2 | "Chủ nhật bạn tính ngủ tới trưa cho bù, vậy mà sao sáng thứ Hai còn mệt hơn?" (P12+P03) | data / contrarian | clip-14 (3.2) hook thay thế; củng cố B-weekend-01 | stub, chờ duyệt (mức B, một nghiên cứu 61 SV; không dùng số Mỹ của X) | 2026-10-25 |
+| B-6thang-01 | x-consistency-6-months | nghe "kiên trì 6 tháng", tuần thứ hai thấy vẫn khó là muốn bỏ | 4.12 (callback clip-06) | "Ai cũng nói kiên trì sáu tháng. Vậy tuần thứ hai thấy vẫn khó, bạn có nghĩ mình thất bại không?" (P03+P08) | data / empathy | củng cố clip-06 / B-30ngay-01 | đề xuất (Lally 2010: 18–254 ngày, lỡ một lần không về 0) | 2026-10-25 |
+| B-noikhong-01 | genz-hoc-cach-noi-khong | nhận lời mọi lời nhờ rồi tối về kiệt sức | 3.16 | "Ai nhờ gì bạn cũng gật, rồi tối về chẳng còn sức làm việc của mình?" (P10) | empathy | ý tưởng (phụ B-nhanviec-01) | đề xuất (mức C, mẫu đặc biệt: phụ nữ goá 60–89 tuổi; nói rõ khi dùng) | 2026-10-25 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
