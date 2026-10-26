@@ -10,7 +10,7 @@
 
 Source: <clip>/final/spec.json (format: see skills/make-video/SKILL.md). Exit 1 if any ✖ error. Also runs the lessons gate (rule-49, logs/lessons.md): checks named L-NNN.
 """
-import json, os, re, subprocess, sys, difflib, unicodedata, glob, math
+import json, os, re, subprocess, sys, difflib, unicodedata, glob, math, tempfile
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
 REPO = str(P.ROOT)
@@ -423,8 +423,23 @@ def main():
         r = subprocess.run(["npx", "tsx", "src/layoutCheck.ts", *plans_main], cwd=os.path.join(REPO, "video-engine"), capture_output=True, text=True, env=dict(os.environ, PATH=NODE_BIN + ":" + os.environ["PATH"]))
         bad = [x.strip() for x in r.stdout.splitlines() if x.strip().startswith("✖")]
         (ok if r.returncode == 0 else err)("L-033", "layout collisions: " + ("none" if not bad else " | ".join(bad))[:500])
+    # L-033 Reels (RR round 2, 3d8f43d): the Reels plan has its own caption box (x 60–648 incl. shadow, y 1000–1056+68·lines) + frame edge x 1046.
+    # layoutCheck boxes are estimates; the per-frame pixel scan (scan-reels-clearance.py → out/reels-clearance.txt) is the authority when present.
+    reels_plans = sorted(x for x in glob.glob(os.path.join(fdir, "out", "plan-reels*.json")) if "nocap" not in x)
+    scan = os.path.join(fdir, "out", "reels-clearance.txt"); scan_txt = open(scan).read() if os.path.exists(scan) else ""
+    scan_ok = bool(re.search(r"^PASS:", scan_txt, re.M)); rm_ = sorted(glob.glob(os.path.join(fdir, "*-reels.mp4")))
+    if scan_txt and rm_ and os.path.getmtime(scan) < max(os.path.getmtime(x) for x in rm_): scan_ok = False; err("L-033", "reels clearance scan is older than the Reels MP4 → rerun scan-reels-clearance.py")
+    if reels_plans:
+        r = subprocess.run(["npx", "tsx", "src/layoutCheck.ts", *reels_plans], cwd=os.path.join(REPO, "video-engine"), capture_output=True, text=True, env=dict(os.environ, PATH=NODE_BIN + ":" + os.environ["PATH"]))
+        bad = [x.strip() for x in r.stdout.splitlines() if x.strip().startswith("✖")]
+        (ok if not bad else warn if scan_ok else err)("L-033", "reels plan layout (estimated boxes): " + ("none" if not bad else " | ".join(bad))[:500] + (" — pixel scan passes, estimates only" if bad and scan_ok else ""))
+    elif final and rm_: err("L-033", "Reels MP4 present but no out/plan-reels*.json to check")
+    if final and rm_:
+        if not scan_txt: err("L-033", "no per-frame Reels clearance scan (out/reels-clearance.txt from scan-reels-clearance.py)")
+        else: (ok if scan_ok else err)("L-033", "reels per-frame scan: " + " · ".join(x.strip() for x in scan_txt.splitlines() if x.startswith(("caption clearance min", "right edge clearance min", "PASS", "FAIL")))[:400])
     # final MP4
     mp4 = os.path.join(fdir, "out", spec["id"] + ".mp4")
+    if not os.path.exists(mp4) and glob.glob(os.path.join(fdir, "*-tiktok.mp4")): mp4 = sorted(glob.glob(os.path.join(fdir, "*-tiktok.mp4")))[-1]  # out/ is gitignored and can vanish on resync → check the delivered TikTok file
     if final:
         if not os.path.exists(mp4): err("rule-4", f"missing {os.path.relpath(mp4, REPO)}")
         else:
@@ -459,9 +474,33 @@ def main():
     # STT
     if do_stt and tpath and os.path.exists(tpath):
         t = json.load(open(tpath)); wavs = [os.path.join(REPO, "video-engine/public/voice", l["key"] + ".wav") for l in t["lines"]]
+        # RR round 2 (3d8f43d, T2): when the clip uses an approved voice track, STT hears THAT file (what is delivered), not public/voice/*.wav
+        # (can be stale: c05v4-c18.wav was not rev5). With a voice-only timing (sentence spans) each SENTENCE is cut at its real speech span ±0.15 s
+        # and compared with the joined `say` of its lines (sub-sentence lines of 0.6 s make whisper hallucinate «đăng ký kênh»); else lines at timing ±0.2 s.
+        vt = json.load(open(os.path.join(fdir, "spec.json"))).get("voice_track") if os.path.exists(os.path.join(fdir, "spec.json")) else None
+        groups = None
+        if vt and os.path.exists(os.path.join(fdir, vt)):
+            sd = tempfile.mkdtemp(prefix="stt-slices-"); wavs = []
+            cut = lambda o, ss, du: (subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{max(0.0, ss):.3f}", "-t", f"{du:.3f}", "-i", os.path.join(fdir, vt), "-ac", "1", "-ar", "16000", o]), wavs.append(o))
+            vo = sorted(glob.glob(os.path.join(fdir, "voice-only-*.timing.json")))
+            spans = {x["id"]: (x["pieces"][0]["start"], x["pieces"][-1]["end"]) for x in json.load(open(vo[-1]))["sentences"]} if vo else {}
+            sid = lambda k: (re.search(r"-(c\d+)[a-z]?$", k) or [None, None])[1]
+            if spans and all(sid(l["key"]) in spans for l in t["lines"]):
+                groups = {}
+                for l in t["lines"]: groups.setdefault(sid(l["key"]), []).append(l)
+                for g_, ls in groups.items():
+                    st_, en_ = spans[g_]; cut(os.path.join(sd, g_ + ".wav"), st_ - 0.15, en_ - st_ + 0.3)
+                ok("rule-46", f"STT source: {vt}, {len(groups)} sentences cut at voice-only spans ±0.15s ({os.path.basename(vo[-1])})")
+            else:
+                for l in t["lines"]: cut(os.path.join(sd, l["key"] + ".wav"), l["t"] - 0.2, l["dur"] + 0.4)
+                ok("rule-46", f"STT source: {vt} sliced at timing.json ±0.2s ({len(wavs)} lines)")
         r = subprocess.run([ASR_PY, os.path.join(REPO, "pipeline/tts/stt_check.py"), *wavs], capture_output=True, text=True)
         got = {x.split(" | ")[0]: x.split(" | ", 1)[1] for x in r.stdout.splitlines() if " | " in x}
-        for l in t["lines"]:
+        if groups:
+            for g_, ls in groups.items():
+                hyp = got.get(g_ + ".wav", ""); ref = " ".join(l["say"] for l in ls); sim = difflib.SequenceMatcher(None, norm(ref), norm(hyp)).ratio()
+                (ok if sim >= 0.75 else warn if sim >= 0.55 else err)("rule-46", f"STT {g_} ({'/'.join(l['scene'] for l in ls)}) {sim:.2f}: “{hyp}”")
+        for l in ([] if groups else t["lines"]):
             hyp = got.get(l["key"] + ".wav", ""); sim = difflib.SequenceMatcher(None, norm(l["say"]), norm(hyp)).ratio()
             (ok if sim >= 0.75 else warn if sim >= 0.55 else err)("rule-46", f"STT {l['scene']} {sim:.2f}: “{hyp}”")
     # rule-50 (DL-042): every transition has an SFX + continuous ambience bed

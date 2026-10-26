@@ -5,7 +5,7 @@ export const EXPRESSIONS = ["neutral", "happy", "sad", "surprised", "confused", 
 export const ACTIONS = ["idle", "talking", "thinking", "typing", "walking", "reacting"] as const;
 export const POSES = ["standing", "sitting"] as const;
 export const TRANSITIONS = ["cut", "fade", "slide", "wipe", "iris"] as const;
-export const FRAMINGS = ["wide", "medium", "closeup"] as const;
+export const FRAMINGS = ["wide", "medium", "closeup", "reels"] as const;
 export const BACKGROUNDS = ["paper", "ink", "desk", "bed", "grid", "room", "plate"] as const;
 /** Doodle draw-on marks (anidoodle port, L-047). Shared by schema + validate (L-042: one list). */
 export const DOODLE_KINDS = ["circle", "underline", "arrow", "check", "cross", "sketch-box", "path", "drawing"] as const;
@@ -40,6 +40,8 @@ export const CharacterCueSchema = z.object({
   action: z.string().default("idle"),
   expression: z.string().default("neutral"),
   facing: z.enum(["left", "right"]).default("right"),
+  /** false hides the thought dots and the «?» glyph (clip-05 Reels: they fall under the narrow caption box, L-033). */
+  emote: z.boolean().default(true),
   enter: z.enum(ENTERS).default("none"),
   exit: z.enum(["none", "fade", "slide-left", "slide-right"]).default("none"),
   expressionChanges: z.array(TimedChange(z.string())).default([]),

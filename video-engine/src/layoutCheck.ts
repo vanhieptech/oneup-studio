@@ -33,6 +33,22 @@ for (const f of process.argv.slice(2)) {
       const hid = Math.max(0, b.y1 - Math.max(b.y0, CAP_Y)) * Math.max(0, b.x1 - b.x0); const tot = (b.y1 - b.y0) * (b.x1 - b.x0);
       if (tot > 0 && hid / tot > 0.15) msgs.push(`${b.label} behind caption box (${Math.round(100 * hid / tot)}%)`);
       const txt = (p.text ?? (p.words ?? []).join(" ")).trim(); if (sc.narration?.text && txt && txt === sc.narration.text.trim()) msgs.push(`${b.label} duplicates narration «${txt}»`); });
+    // L-033 Reels (RR round 2, 3d8f43d): layout "reels" draws the EN caption in a fixed narrow box x 60–640 (+8 px shadow → 648), top 1000,
+    // bottom = 1056 + 68·lines (border + padding + 10 px shadow). Thầy (after the camera push) and every prop need ≥16 px from it, and Thầy ≥16 px from the frame edge x 1046.
+    if (plan.video?.layout === "reels" && sc.id !== "endcard") {
+      const M = 16, push = 1 + (sc.camera?.push ?? 0), cx = 540, cy = fr.groundY - 320;
+      const proj = (b: Box): Box => ({ ...b, x0: cx + (b.x0 - cx) * push, x1: cx + (b.x1 - cx) * push, y0: cy + (b.y0 - cy) * push, y1: cy + (b.y1 - cy) * push });
+      const segs: { text: string; highlight?: number[] }[] = sc.caption ? (sc.caption.segments?.length ? sc.caption.segments : [sc.caption]) : [];
+      const lines = (txt: string, hl: number[] = []) => { let n = 1, w = 0; txt.split(/\s+/).filter(Boolean).forEach((wd, i) => { const ww = wd.length * 24.5 + (hl.includes(i) ? 32 : 0); if (w && w + 14 + ww > 516) { n++; w = ww; } else w += (w ? 14 : 0) + ww; }); return n; };
+      for (const sg of segs) {
+        const cap: Box = { x0: 60, y0: 1000, x1: 648, y1: 1056 + 68 * lines(sg.text, sg.highlight), label: "reels caption" };
+        const near = (b: Box) => !(b.x1 + M <= cap.x0 || b.x0 - M >= cap.x1 || b.y1 + M <= cap.y0 || b.y0 - M >= cap.y1);
+        chars.forEach((c: { x: number; headY: number; id: string }) => { const cb = proj(charBox(c.x, c.headY, fr.groundY, fr.scale, c.id));
+          if (near(cb)) msgs.push(`reels caption «${sg.text}» within ${M}px of ${c.id} (char x ${Math.round(cb.x0)}–${Math.round(cb.x1)})`); });
+        (sc.props ?? []).forEach((p: never, i: number) => { const b = propBox(p, i); if (b && near(proj(b)) && (p as { kind: string }).kind !== "table") msgs.push(`reels caption «${sg.text}» within ${M}px of ${b.label}`); });
+      }
+      chars.forEach((c: { x: number; headY: number; id: string }) => { const cb = proj(charBox(c.x, c.headY, fr.groundY, fr.scale, c.id)); if (cb.x1 > 1046 - M) msgs.push(`${c.id} ${Math.round(1046 - cb.x1)}px from the right frame edge (reels, need ≥${M})`); });
+    }
     if (msgs.length) { bad++; console.log(`✖ ${sc.id}: ${msgs.join(" · ")}`); } else console.log(`✔ ${sc.id}`);
   }
 }

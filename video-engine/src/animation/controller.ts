@@ -22,6 +22,7 @@ export interface CharacterState {
   walkPhase: number;       // radians
   typingPhase: number;     // 0..1 alternating hands
   facing: "left" | "right";
+  emote: boolean;          // false = no thought dots / «?» glyph (Reels: they would sit under the narrow caption box)
 }
 
 const EXPR_MORPH = 0.28; // seconds for expression blend
@@ -157,5 +158,6 @@ export function getCharacterState(args: {
     pose: cue.pose as Pose, action, expression: ex.cur, prevExpression: ex.prev, expressionBlend,
     blink: clamp(blink), mouthOpen, speaking, look, headTilt, armSwing, walkPhase, typingPhase,
     facing: cue.facing,
+    emote: (cue as { emote?: boolean }).emote !== false,
   };
 }
