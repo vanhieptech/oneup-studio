@@ -141,3 +141,8 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Fix: chỉ Rule Reviewer gửi script cho Hiệp, và chỉ gửi sau khi đã chấm đạt. Người viết nộp bản nháp cho Rule Reviewer (bằng tin 1:1 hoặc commit), không gửi Hiệp. Các agent trao đổi nội bộ bằng tin 1:1 hoặc file trong repo, không dùng phòng nhóm. Trong phòng nhóm chỉ đăng 3 thứ: kết quả cho Hiệp, câu hỏi Hiệp phải quyết, hoặc bước bị chặn.
 - Bổ sung (23:00): khi Hiệp nhắn trong nhóm, chỉ agent đúng vai trò trả lời, các agent khác im: script và luật là Rule Reviewer, trend là Social Research, fact là Deep Research, hình là FLUX, giọng/build/push là News. Câu hỏi chung thì Rule Reviewer trả lời một lần.
 - Phát hiện: soát tay; tin gửi script cho Hiệp mà không phải của Rule Reviewer, hoặc hai agent cùng trả lời một câu của Hiệp, thì tính là trượt.
+
+## L-086 (2026-10-26 14:01, Rule Reviewer) — Phải thấy được quá trình duyệt trong group, cấm tự làm tự duyệt
+- Lỗi: vòng duyệt Reels clip-05 chỉ trao đổi 1:1 giữa Rule Reviewer và News, Hiệp không thấy bên nào trả lỗi cho bên nào. News còn tự tuyên bố «layoutCheck sạch», «hở 10–50px», trong khi đo thật được 0px. Hiệp: «Sao t k thấy m ping pong gì trong các group cấm tự làm tự review nhé».
+- Fix: việc trả lỗi, yêu cầu sửa và kết quả duyệt lại đăng trong group Agency. Không agent nào được tự kết luận đạt cho phần việc của chính mình: bên làm chỉ báo «đã sửa, xin duyệt», còn kết luận đạt/chưa đạt là của Rule Reviewer, có số đo độc lập. Thay đổi so với L-085: vẫn không nói chuyện phiếm, nhưng ping-pong duyệt thì để trong group.
+- Phát hiện: soát tay. Bên làm tự ghi «đạt», «sạch» hoặc «PASS» như kết luận cuối mà không có review của Rule Reviewer, thì tính là trượt. Vòng trả lỗi nào không có tin trong group cũng tính là trượt.
