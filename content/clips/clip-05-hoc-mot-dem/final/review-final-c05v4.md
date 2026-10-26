@@ -1,3 +1,100 @@
+# Rule Reviewer: cổng final clip-05 v4, vòng 3 (Reels render lại), 26/10/2026 14:40 giờ VN (UTC+7)
+
+Chấm bản Reels render lại của News (`1a0bba2` tool, `3479ed7` plan Reels + post.md; chưa push). Tự đo bằng script riêng `rr-scan.py` (không dùng `scan-reels-clearance.py` của News).
+Frame và số đo của vòng này nằm ở `/workspace/review-c05/final2/r4/`.
+
+## Kết luận: **ĐẠT** (TikTok và Reels). Không có lỗi chặn.
+R1–R3 của vòng 2 đã hết. Còn 3 ghi chú không chặn (N3–N5). N3 là chuyện nghĩa của hình, nên để Hiệp xem.
+
+## 0. File
+- `clip-05-v4-reels.mp4`: sha256 `16812599…85642`, mtime 26/10 14:16. Dài 55,533s, 1666 frame, 1080×1920 30fps, −14,2 LUFS, peak −0,6 dBFS, 31 180 485 B. Đúng như News báo.
+- `clip-05-v4-tiktok.mp4`: md5 `7a362f54dcc0bf72797ae9a7935423c2`, giống vòng 2 (mtime 23/10 18:21). Dài 55,033s, −14,2 LUFS, −0,8 dBFS.
+- `cover.png` và file light không đổi.
+
+## 1. Ô phụ đề ↔ nhân vật/đồ vật (L-033/L-003): **ĐẠT**
+- Cách đo: lấy ô phụ đề từ pixel, gồm cả viền và bóng. Ra đúng x 60–647, y 1000–1192 (2 dòng) và tới y ≤1260 (3 dòng). Sau đó đo khoảng Euclid tới mọi pixel đặc của vật ngoài ô.
+- Quét frame 15–1665 (toàn bộ sau cover): **0 frame dưới 16 px**.
+- Nhỏ nhất 17 px ở b02a 5,47s, tới cuốn sách mở (204,1277). News đo 16 px ở cùng frame và cùng vật, lệch 1 px do cách đo.
+- Nhỏ nhất theo beat:
+
+  | Beat | Khe hở | Vật gần nhất |
+  |---|---|---|
+  | b01a | 40 | |
+  | b01b | 21 | tóc |
+  | b01c | 25,5 | |
+  | b02a | 17 | sách |
+  | b02b | 24 | |
+  | b03 | 33 | nhãn y 967 |
+  | b05a/c/d | 28 | |
+  | b06a | 36 | thẻ nguồn |
+  | b07b | 24,7 | |
+  | b07c | 28,1 | |
+  | b08 | 24 | |
+
+- b02a: đồng hồ cát nằm dưới đáy ô phụ đề khoảng 20 px (`z-b02a-5.5-plate-bottom.png`).
+- Lỗi b01a 1,0–1,5s trong `reels-clearance.txt` bản 13:57 **đã hết**. Bản 14:16 ghi PASS, và scan của mình cho b01a ≥40 px.
+- check-rules có 3 cảnh báo L-033 «reels plan layout (estimated boxes)» ở b01a lamp, b02a hourglass/biobook, b05d biobook. Đây là **báo nhầm**: tool đoán hộp theo plan, rộng hơn hình vẽ thật. Pixel thật đo được: b01a 40, b02a 17, b05d 28 px.
+
+## 2. Nhân vật ↔ viền phải: **ĐẠT**
+- Đo đầu Thầy ở hàng y 1150–1370. Bỏ b01a vì không có nhân vật, chỉ có khung TikTok mock sát mép theo thiết kế. Nhỏ nhất 29 px (b02b 8,6s), 30 px (b05). Theo beat: b01b 38, b01c 53, b02b 44, b07b 53, b07c 37 px.
+- News báo ≥23 px; mình đo vùng đầu hẹp hơn nên ra số lớn hơn. Cả hai đều ≥16.
+- Ghi chú N4 (không chặn): bong bóng thoại lúc bật (overshoot) chạm mép 0 px trong 6 frame, rồi về 15–16 px. Gặp ở 5,40 / 27,53 / 31,57 / 34,20 / 50,03 / 52,27s. Bản TikTok đã đạt cũng y hệt: 4,85–5,45s = [37,37,11,0,0,0,7,14,…,15,16]. Đây là animation bong bóng có từ trước, không phải nhân vật, không phải lỗi mới của Reels (`z-rightedge-events.png`). Chip «Lần 2 cách 1 tuần» ở b03 cũng cách mép 5 px trong 6 frame lúc vào, cùng loại.
+
+## 3. Thay đổi hình có làm hỏng nghĩa/khớp lời không
+- **Thầy ×0,78**: vẫn đọc rõ mặt và biểu cảm. Tỉ lệ với tờ Punnett và sách hợp lý. Ở b07b/c đầu nằm trên mép bàn, không bị cắt. Đạt.
+- **Bỏ chấm suy nghĩ / «?» trên đầu** (b01c, b07b): visual-plan không đòi chấm. b01c chỉ cần «nhìn trang giấy trống, nghiêng đầu», vẫn còn biểu cảm confused. Dấu «?» riêng của b02b (prop) **vẫn hiện**, vào lúc Reels 11,28s = TikTok 10,78s +0,5, khớp «không nhớ cách giải» (`z-b02b-qmark.png`). Đạt.
+- **b03**: nhãn lên 25 px vẫn nằm dưới cột, cách ô phụ đề 33 px. Cột Reels lúc 24,5s (xám/cam/mực) = 231/222/235 px; TikTok = 226/208/232. Tỉ lệ «mực ≥ xám > cam» giữ như TikTok đã đạt. Chip «+2 ngày» và thẻ nguồn «Rawson & Kintsch 2005» đọc được. Đạt.
+- **Thẻ nguồn y 1330** (b03, b06 «Cepeda et al. 2006»): nằm dưới ô phụ đề, khe 36 px, không bị cắt hay đè. Đạt.
+- **N3 (không chặn, nên Hiệp xem): đồng hồ cát b02a/b05a mất ý «lớn».** Ở s 0,33 trên bàn, đồng hồ «3 tiếng» cao khoảng 100–106 px, ngang đồng hồ «1 tiếng» ở b05c (~100 px). Bản TikTok là ~260–280 px so với ~170 px. visual-plan-v4 viết b02 «đồng hồ cát **lớn** chảy liền», b05 «Thầy **kéo** đồng hồ cát lớn **ra giữa**: «cùng ba tiếng đó»». Ở Reels, đối lập 3 tiếng / 1 tiếng gần như mất, còn lại nhờ lời và phụ đề («Three straight hours», «Same three hours»). Không vi phạm luật cứng. Nếu muốn giữ ý, cách rẻ nhất là thu nhỏ đồng hồ 1 tiếng ở b05c/b07 trong Reels (ví dụ s ~0,22) để giữ tỉ lệ lớn/nhỏ, vì chỗ trống dưới ô phụ đề (y 1260–1395) không cho đồng hồ lớn hơn. Ảnh: `z-hourglass-compare.png`, `z-hourglass-zoom.jpg`.
+
+## 4. Cover, âm thanh, độ dài, độ lệch giọng
+- L-083: frame 0–14 so với `cover.png` có mean|Δ| 0,72–0,73 (chỉ là grain). Frame 15 nhảy lên 72,0, tức đã ra khỏi cover. Cover dài đúng 15 frame = 0,50s. TikTok không có frame cover. Đạt.
+- rule-4: Reels −14,2 LUFS / −0,6 dBFS, TikTok −14,2 / −0,8. Đạt (−14 ±1, ≤−0,5).
+- Giọng (tương quan FFT với `voice-only-c05v4.wav`, `r4/vcorr.txt`): Reels c01–c18 lệch đúng **+0,500s**, corr 0,9990–0,9998. TikTok lệch +0,000, corr ≥0,9993. Khớp rev5.
+
+## 5. `check-rules.py --final --stt` (tự chạy, `r4/check-rules-final-stt.txt`)
+229 check, **0 lỗi, 17 cảnh báo → PASS**. STT nay cắt từ voice track đã duyệt: b08 c17/c18 = 1,00, nhỏ nhất c13 0,83; L-025 ≥0,8 đạt. Lỗi tool T1/T2 của vòng 2 đã sửa (rule-4 tự lấy *-tiktok.mp4, không cần symlink).
+
+Phân loại 17 cảnh báo:
+| Loại | Số | Đánh giá |
+|---|---|---|
+| rule-42 b03a–e, b06a–c «nên là motion graphics» | 8 | Đã biết, chủ ý: clip-05 làm b03/b06 dạng comic (spec đã duyệt). Không chặn. |
+| L-033 reels plan layout (ước lượng hộp b01a/b02a/b05d) | 1 dòng (3 mục) | Báo nhầm, pixel thật đạt (mục 1). |
+| rule-7 219 từ (mục tiêu 140–175) | 1 | Script đã khoá, độ dài 55s vẫn trong 50–60,5s. Không chặn. |
+| rule-41 không có từ tiếng Anh trộn | 1 | Theo profile thì ổn. Không chặn. |
+| E1 2 khoảng lặng 0,12s (c04, c14) | 1 | Đúng ngưỡng, nghe tự nhiên. Không chặn. |
+| rule-58 b02a câu dài, rule-60 thán từ 1/22, L-006 b01a/b01b không có phrases, L-031 hook không có tiểu từ Nam Bộ | 4 | Đã có từ vòng 1–2, thuộc script đã khoá. Không chặn. |
+| L-013 6 commit chưa push | 1 | Đúng: chờ Hiệp/Mac. Không chặn chất lượng. |
+
+## 6. `post.md` (`3479ed7`)
+- Dòng 24: 55,53s, 1666 frame, −14,2 LUFS, −0,6 dBFS, 31,2 MB. **Khớp số đo**.
+- Dòng 33: ô phụ đề tới x 647, y ≤1260; 1651 frame sau cover; min 16 px; đầu → viền 23 px; đồng hồ 18 px. **Khớp** (mình đo 17 / ≥29 / ~20 px, cùng chỗ, lệch do cách đo).
+  - N5 (chữ, không chặn): cùng dòng còn ghi «y ≈1000–1240», nên sửa thành 1000–1260 cho thống nhất.
+  - N5 (chữ, không chặn): dòng 32 «tắt … dấu «?» trên đầu» nên thêm «(«?» riêng của b02b vẫn giữ)».
+- Dòng 209–211: cột mực b03 và bìa sách xám đã chuyển vào «Đã chốt», «Việc còn mở» đã bỏ. Đạt.
+
+## 7. Còn lại
+- Không có việc phải sửa trước khi đăng.
+- N3 (đồng hồ cát mất ý «lớn» ở Reels): để Hiệp quyết. Giữ nguyên, hoặc thu nhỏ đồng hồ 1 tiếng trong Reels.
+- N5: sửa 2 câu chữ trong post.md khi tiện.
+- Push 6 commit khi Mac online (L-013).
+
+## Frame tiêu biểu (cho Hiệp)
+- Reels:
+  - cover: `r4/re/0.0.png`
+  - b01: `r4/re/1.3.png`
+  - b03e: `r4/re/24.5.png`
+  - end card: `r4/re/54.8.png`
+  - ảnh gộp: `r4/z-check-b01-b03-b06-end.jpg`
+  - hai trang tổng: `r4/sheet-re-0.png`, `r4/sheet-re-1.png`
+- TikTok:
+  - b01: `r3/tt/b01a-0.2.png`
+  - b03: `r3/tt/b03-24.1.png`
+  - end card: `r3/tt/end-54.3.png`
+- N3: `r4/z-hourglass-compare.png`
+
+---
+
 # Rule Reviewer: cổng final clip-05 v4, vòng 2 (bản nền xám), 26/10/2026 13:45 giờ VN (UTC+7)
 
 Chấm lại từ đầu trên bản render cuối `e9a1a5b` (index `0d9965e`). Vòng chấm ngày 22/10 bị ngắt giữa chừng nên bỏ, không dùng kết quả cũ.
