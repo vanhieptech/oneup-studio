@@ -5,6 +5,7 @@
   check-rules.py content/clips/<clip>/ --final    # gate 2: also the rendered MP4 (ffprobe, loudness) + post.md required
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
+  check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
@@ -248,9 +249,63 @@ def check_prosody(spec, fdir, final):
     fl = j.get("flags", []); n = len(j.get("lines") or j.get("sentences") or [])
     (ok if not fl else err)("L-070", f"prosody: {n} sentences measured (voice {j.get('voice_prefix')}, {os.path.basename(dv[0]) if dv else 'plan'}), {len(fl)} blocking pause/phrasing flags" + (": " + "; ".join(fl[:8]) if fl else ""))
 
+# ---- L-087 (Hiệp 26/10): ví dụ lấy từ đời thường, cấm lấy môn học (Sinh/Toán/Lý/Hóa/Sử/Địa/Văn…) làm ví dụ ----
+_SUBJ = r"(?:sinh|toán|lý|lí|hóa|hoá|sử|địa|văn|anh|gdcd|tin)"
+_SUBJ_P = r"(?:sinh|toán|lý|lí|hóa|hoá|sử|địa|văn|gdcd)"  # sau sách/bài/đề…: bỏ «anh» (đại từ), «tin» (tin nhắn)
+_SUBJ_NOT = r"(?!\s+(?:viên|hoạt|nhật|ra|con|tồn|động|mệnh|khí|sản|lý|học sinh|thuyết|do|lẽ|tưởng|trí|phòng|bản|hóa|hoá|đơn|dụng|chỉ|điểm|minh|chương|nghệ|học viên|ấy|nhắn|tức|tưởng))"
+L087_SPOKEN = [  # error: lời đọc gọi tên môn học hoặc dùng kiến thức môn học làm ví dụ
+    (r"(?<!\w)môn\s+" + _SUBJ + r"(?!\w)" + _SUBJ_NOT, "tên môn (môn + Sinh/Toán/Lý/Hóa/Sử/Địa/Văn/Anh…)"),
+    (r"(?<!\w)(?:sách|vở|bài|đề|chương|tiết|giờ|điểm|lớp|thi|ôn|học)\s+" + _SUBJ_P + r"(?!\w)" + _SUBJ_NOT, "tên môn sau sách/bài/đề/chương/thi/ôn/học…"),
+    (r"(?<!\w)(?:sinh học|hóa học|hoá học|vật lý|vật lí|toán học|ngữ văn|địa lý|địa lí|tin học|môn lịch sử|lịch sử lớp|giáo dục công dân)(?!\w)", "tên môn học"),
+    (r"(?<!\w)(?:di truyền|tính trạng|nhiễm sắc thể|gen trội|gen lặn|quang hợp|tế bào học|punnett|phương trình bậc|đạo hàm|tích phân|lượng giác|hình học|định luật newton|bảng tuần hoàn|nguyên tử khối|hóa trị|hoá trị|phản ứng hóa học|phản ứng hoá học)(?!\w)", "kiến thức môn học"),
+]
+L087_EXEMPT = [r"(?<!\w)học sinh(?!\w)", r"(?<!\w)bài toán(?!\w)", r"(?<!\w)tính toán(?!\w)"]
+L087_VISUAL = r"(?<!\w)(?:genetics|biology|chemistry|physics|math(?:s|ematics)? (?:book|textbook|class|problem)|algebra|calculus|geometry|punnett|dna|periodic table|history (?:book|class)|literature (?:book|class)|textbook|sách (?:sinh|toán|lý|lí|hóa|hoá|sử|địa|văn)|sinh học|di truyền|adn)(?!\w)"
+_L087_SPOKEN_RE = [(re.compile(pat, re.I), why) for pat, why in L087_SPOKEN]
+
+def _plain(t):  # bỏ markup **…** và {nhấn: …} trước khi soi
+    t = unicodedata.normalize("NFC", t or ""); t = re.sub(r"\{[^:{}]*:\s*([^{}]*)\}", r"\1", t); return t.replace("**", "")
+
+def subject_hits(text):
+    """L-087: [(cụm khớp, lý do)] cho một câu lời đọc. Cụm đời thường (học sinh, bài toán, tính toán) không tính."""
+    t = _plain(text); out = []
+    for ex in L087_EXEMPT: t = re.sub(ex, lambda m: "_" * len(m.group(0)), t, flags=re.I)
+    for rx, why in _L087_SPOKEN_RE:
+        for m in rx.finditer(t): out.append((m.group(0), why))
+    return out
+
+def check_l087(spec, L, fdir, clip_dir):
+    _cn = re.search(r"clip-(\d+)", clip_dir); e87 = err if (_cn and int(_cn.group(1)) >= 6) else warn  # clip-05 đã Chốt trước L-087 → cảnh báo
+    hits = []
+    for _, s, l in L:
+        seen = set()
+        for k in ("text", "say"):
+            for h, why in subject_hits(l.get(k)):
+                if h.lower() not in seen: seen.add(h.lower()); hits.append(f"{s['id']}: «{h}» ({why})")
+    (e87 if hits else ok)("L-087", ("lời đọc lấy môn học làm ví dụ (phải lấy từ đời thường): " + "; ".join(hits)) if hits else "lời đọc không lấy môn học làm ví dụ")
+    vis = []
+    for p in spec["parts"]:
+        for sc in p.get("scenes", []) + p.get("sections", []):
+            blob = json.dumps({k: v for k, v in sc.items() if k != "lines"}, ensure_ascii=False)
+            for m in sorted({m.group(0).lower() for m in re.finditer(L087_VISUAL, blob, re.I)}): vis.append(f"{sc['id']}:{m}")
+    for vp in sorted(glob.glob(os.path.join(fdir, "visual-plan*.md")))[-1:]:
+        for m in sorted({m.group(0).lower() for m in re.finditer(L087_VISUAL, open(vp, encoding="utf8").read(), re.I)}): vis.append(f"{os.path.basename(vp)}:{m}")
+    (warn if vis else ok)("L-087", ("hình/prop gắn môn học (đổi sang vật đời thường): " + ", ".join(vis[:20])) if vis else "hình/prop không gắn môn học")
+
+def check_subjects_file(path):  # --subjects FILE: soi bản nháp script (.md/.txt) trước khi có spec
+    n = 0
+    for i, ln in enumerate(open(path, encoding="utf8"), 1):
+        for h, why in subject_hits(ln): err("L-087", f"{os.path.basename(path)}:{i}: «{h}» ({why})"); n += 1
+    if not n: ok("L-087", f"{os.path.basename(path)}: không gọi tên môn học / kiến thức môn học")
+
 def main():
-    a = sys.argv[1:]; clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
+    a = sys.argv[1:]
     outp = a[a.index("--out") + 1] if "--out" in a else None
+    if a and a[0] == "--subjects":  # L-087 on draft script files
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_subjects_file(f)
+        return report(outp)
+    clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
     specp = os.path.join(clip_dir, "final", "spec.json")
     if not os.path.exists(specp) and os.path.exists(os.path.join(clip_dir, "spec.json")): specp = os.path.join(clip_dir, "spec.json")  # samples
     if not os.path.exists(specp): err("rule-48", f"missing {os.path.relpath(specp, REPO)} (source of truth for the clip)"); return report(outp)
@@ -704,6 +759,7 @@ def main():
         acc = sorted(m["at"] for m in mixs if m["name"] not in ("ambience", "whoosh-soft", "swish", "roomtone"))
         close = [round(b, 2) for a, b in zip(acc, acc[1:]) if b - a < 0.25]
         (ok if not close else warn)("rule-51", f"{len(acc)} accent SFX, spacing ≥ 0.25s" + (f"; too close at {close}" if close else ""))
+    check_l087(spec, L, fdir, clip_dir)
     lessons(spec, fdir, L, final, tpath)
     return report(outp)
 
