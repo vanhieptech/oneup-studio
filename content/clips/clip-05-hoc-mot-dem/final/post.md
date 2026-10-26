@@ -21,7 +21,7 @@ Mục 1–12 là gói TikTok (rule-53). Mục 13–15 là Threads, Instagram Ree
 ## 1. File video
 ```
 TikTok:          content/clips/clip-05-hoc-mot-dem/final/clip-05-v4-tiktok.mp4 · 55,03s (1651 frame) · 1080×1920 · 30fps · H.264 High + AAC 48 kHz mono · -14,2 LUFS · peak -0,8 dBFS · 32,2 MB
-Instagram Reels: content/clips/clip-05-hoc-mot-dem/final/clip-05-v4-reels.mp4 · 55,54s (1666 frame) · 1080×1920 · 30fps · H.264 High + AAC 48 kHz mono · -14,2 LUFS · peak -0,8 dBFS · 32,8 MB · khung cover 0–0,500s (15 frame = cover.png), giọng/phụ đề lùi +0,500s (L-083)
+Instagram Reels: content/clips/clip-05-hoc-mot-dem/final/clip-05-v4-reels.mp4 · 55,53s (1666 frame) · 1080×1920 · 30fps · H.264 High + AAC 48 kHz mono · -14,2 LUFS · peak -0,6 dBFS · 31,2 MB · khung cover 0–0,500s (15 frame = cover.png), giọng/phụ đề lùi +0,500s (L-083)
 YouTube Shorts:  clip-05-v4-reels.mp4 (cùng file với Reels)
 Threads:         clip-05-v4-reels.mp4 (cùng file với Reels)
 Bản xem nhanh:   clip-05-v4-light.mp4 · 55,03s (1651 frame) · 540×960 · 30fps · H.264 High + AAC 48 kHz mono · -14,2 LUFS · peak -0,8 dBFS · 4,0 MB — chỉ để xem, không đăng
@@ -29,8 +29,8 @@ Mac:             ~/me/projects/oneup-studio/media/clips/clip-05-hoc-mot-dem/ (3 
 ```
 - Số đo bằng ffprobe + ebur128 trên box (22/10/2026, giờ VN). File không có nhạc (luật 21), chỉ giọng + SFX + ambience.
 - MP4 không nằm trong git. Không file nào có logo TikTok.
-- Nền cảnh xám #E4E4DF, chữ khoá phụ đề ô mực (H1/H2 đã chốt). Nhân vật bản reels ở x .79.
-- Bản reels dùng layout phụ đề riêng `video.layout="reels"` (như clip-04): phụ đề ở ô hẹp bên trái x 60–640, y ≈1000–1240, tiêu đề lời kể từ y 300. Đạo cụ nằm dưới vùng đó được dời bằng `pipeline/scripts/clip-05-reels-plan-v4.py` → `final/out/plan-reels.json` (layoutCheck sạch).
+- Nền cảnh xám #E4E4DF, chữ khoá phụ đề ô mực (H1/H2 đã chốt). Bản reels: Thầy nhỏ lại ×0,78 (framing `reels`, scale 0,9) ở x .78 (.79 khi đang nghĩ), camera push ≤0,02, tắt chấm suy nghĩ và dấu «?» trên đầu (nằm dưới ô phụ đề).
+- Bản reels dùng layout phụ đề riêng `video.layout="reels"` (như clip-04): phụ đề ở ô hẹp bên trái x 60–640, y ≈1000–1240, tiêu đề lời kể từ y 300. Đạo cụ nằm dưới vùng đó được dời bằng `pipeline/scripts/clip-05-reels-plan-v4.py` → `final/out/plan-reels.json`. Đo từng frame (1651 frame sau cover) bằng `pipeline/scripts/scan-reels-clearance.py` (render có phụ đề trừ render không phụ đề = đúng ô phụ đề, gồm viền + bóng tới x 647, y ≤1260): khe hở nhỏ nhất ô phụ đề → vật gần nhất 16 px, đầu Thầy → viền phải 23 px, đồng hồ cát b02a 18 px (ngưỡng ≥16 px, 0 frame dưới ngưỡng).
 
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
@@ -202,11 +202,10 @@ IG feed/lưới hồ sơ:              content/clips/clip-05-hoc-mot-dem/final/c
 | T6 | Mỗi bản 1 CTA, 1 câu hỏi | TikTok 1 · Threads 1 · Reels 1 · YouTube mô tả 1, tiêu đề 0 |
 | T7 | Không lên lịch / đăng tự động | Hiệp tự đăng tay |
 
-### Việc còn mở (chờ Hiệp quyết)
-- b03: cột thứ ba («Lần 2 cách 1 tuần») màu mực thay vì xanh, để giữ bảng màu thương hiệu. Ràng buộc FLUX vẫn đúng: mỗi cột chỉ so với cột xám, không số.
-- Bìa sách Sinh màu xám nhạt thay vì xanh lá (giữ bảng màu thương hiệu).
 
 ### Đã chốt (Hiệp, Rule Reviewer chuyển lời 22/10/2026 08:47 giờ VN)
 - H1 nền cảnh: xám #E4E4DF như clip-03 (sàn #D2D1CA, đậm hơn một bậc), khung ngoài mực = DARK. Bìa cũng nền xám #E4E4DF.
 - H2 chữ khoá phụ đề: ô mực như clip-04 (bỏ cam #FF5A36, không còn `caption_accent`).
-- Bản reels: nhân vật dời x .76 → .79 để ô phụ đề hẹp (x 60–640) không chạm tóc (L-033).
+- b03: cột thứ ba («Lần 2 cách 1 tuần») màu mực thay vì xanh, giữ bảng màu thương hiệu (xanh chỉ dùng cho «xong/+1», rule-14). Rule Reviewer: đạt luật, không cần Hiệp. Ràng buộc FLUX vẫn đúng: mỗi cột chỉ so với cột xám, không số.
+- Bìa sách Sinh màu xám nhạt thay vì xanh lá (cùng lý do). Rule Reviewer: đạt luật, không cần Hiệp.
+- Bản reels (Rule Reviewer vòng 2, R1–R3): bản trước (x .79, cỡ cũ) ô phụ đề chạm tóc 0 px và đầu chạm viền phải 0 px. Bản này: Thầy ×0,78 ở x .78/.79, push ≤0,02, đồng hồ cát b02a/b05a s 0,33 đứng trên bàn; quét từng frame: ô phụ đề ≥16 px với mọi vật, đầu ≥23 px tới viền phải (L-033).
