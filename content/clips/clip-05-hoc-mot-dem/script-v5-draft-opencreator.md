@@ -1,5 +1,5 @@
 ---
-title: "clip-05 «học một đêm» — script v5 nháp r5 (OpenCreator)"
+title: "clip-05 «học một đêm» — script v5 nháp r5.1 (OpenCreator)"
 date: 2026-10-26
 clip: clip-05-hoc-mot-dem
 idea: B-hoc1dem-01 (Hiệp chọn 21/10/2026); làm lại theo L-087 (Hiệp 26/10 21:41) + yêu cầu Hiệp 21:44 (hook/CTA mới, dẫn chứng lồng vào chuyện, trend đang nóng)
@@ -20,14 +20,14 @@ Ngôi kể: **«bạn» xuyên suốt** (L-089), không «mình». Một chuyệ
 
 1. **[Hook, nỗi đau + câu hỏi]** Hôm họp, bạn trình bày trơn tru. Vậy mà hai hôm sau, sếp hỏi lại một ý, bạn đứng hình. Sao ý đó trôi nhanh thế?
 2. **[Ví dụ / nguyên nhân gần, nối bằng «Có thể vì»]** Có thể vì tối trước buổi họp, bạn dồn ba tiếng đọc chồng tài liệu hai lần liền.
-3. **[Nguyên nhân có nghiên cứu, đi ra từ chính chuyện đọc dồn]** Một nghiên cứu về cách đọc cũng thấy vậy. Đọc liền hai lần giúp nhớ tốt ngay sau khi đọc, nhưng hai ngày sau không còn hơn người đọc một lần. Còn nếu đọc lần hai cách một tuần, hai ngày sau cái lợi đó vẫn còn.
+3. **[Nguyên nhân có nghiên cứu, đi ra từ chính chuyện đọc dồn]** Một nghiên cứu về cách đọc cũng thấy vậy. Đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn nếu đọc lần hai cách một tuần, hai ngày sau vẫn hơn.
 4. **[Mục tiêu + cách làm, nối bằng «Vậy»]** Vậy muốn nhớ tới lúc bị hỏi lại, bạn có thể chia ba tiếng ra ba ngày, như cẩm nang gợi ý. Mỗi tối, bạn thử úp tài liệu, tự nói lại ý chính, rồi lật lên xem sót chỗ nào.
 5. **[Kết quả quay về chỗ khựng + nốt +1]** Rồi lúc sếp hỏi lại, bạn dễ nhớ ra ý đó hơn. Bạn chỉ cần mỗi ngày một buổi ngắn, nhích thêm một chút.
 6. **[CTA]** Sắp tới bạn có buổi thuyết trình nào muốn thử cách này không? Kể OneUp nghe dưới comment nha.
 
-Đọc liền một mạch (L-089): Hôm họp, bạn trình bày trơn tru. Vậy mà hai hôm sau, sếp hỏi lại một ý, bạn đứng hình. Sao ý đó trôi nhanh thế? Có thể vì tối trước buổi họp, bạn dồn ba tiếng đọc chồng tài liệu hai lần liền. Một nghiên cứu về cách đọc cũng thấy vậy. Đọc liền hai lần giúp nhớ tốt ngay sau khi đọc, nhưng hai ngày sau không còn hơn người đọc một lần. Còn nếu đọc lần hai cách một tuần, hai ngày sau cái lợi đó vẫn còn. Vậy muốn nhớ tới lúc bị hỏi lại, bạn có thể chia ba tiếng ra ba ngày, như cẩm nang gợi ý. Mỗi tối, bạn thử úp tài liệu, tự nói lại ý chính, rồi lật lên xem sót chỗ nào. Rồi lúc sếp hỏi lại, bạn dễ nhớ ra ý đó hơn. Bạn chỉ cần mỗi ngày một buổi ngắn, nhích thêm một chút. Sắp tới bạn có buổi thuyết trình nào muốn thử cách này không? Kể OneUp nghe dưới comment nha.
+Đọc liền một mạch (L-089): Hôm họp, bạn trình bày trơn tru. Vậy mà hai hôm sau, sếp hỏi lại một ý, bạn đứng hình. Sao ý đó trôi nhanh thế? Có thể vì tối trước buổi họp, bạn dồn ba tiếng đọc chồng tài liệu hai lần liền. Một nghiên cứu về cách đọc cũng thấy vậy. Đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn nếu đọc lần hai cách một tuần, hai ngày sau vẫn hơn. Vậy muốn nhớ tới lúc bị hỏi lại, bạn có thể chia ba tiếng ra ba ngày, như cẩm nang gợi ý. Mỗi tối, bạn thử úp tài liệu, tự nói lại ý chính, rồi lật lên xem sót chỗ nào. Rồi lúc sếp hỏi lại, bạn dễ nhớ ra ý đó hơn. Bạn chỉ cần mỗi ngày một buổi ngắn, nhích thêm một chút. Sắp tới bạn có buổi thuyết trình nào muốn thử cách này không? Kể OneUp nghe dưới comment nha.
 
-Chữ lời: 175.
+Chữ lời: 171.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013 · Trend: brain stacking trên TikTok (Mashable 21/10/2026, HerCampus). Không ghi kênh được tác giả bảo trợ. Không nêu tên creator nào của trend.
 
@@ -48,7 +48,7 @@ Trend trong clip: b01 · brain stacking (chồng tài liệu họp + ly cà phê
 ## Thay đổi r5 (L-089)
 - Một ngôi kể «bạn» từ hook tới CTA; bỏ «mình» (b02/b04/b05 cũ) và CTA «kể mình nghe» → «Kể OneUp nghe».
 - Câu nối câu: «Vậy mà» (hook), «Có thể vì» (nguyên nhân), «Một nghiên cứu về cách đọc cũng thấy vậy» (nghiên cứu đi ra từ chuyện đọc dồn), «Vậy muốn nhớ tới lúc bị hỏi lại» (mục tiêu), «Rồi lúc sếp hỏi lại» (kết quả), nốt +1 là câu kết của chuyện.
-- b03 vẫn kể 3 nhóm nhưng thành mạch «đọc liền → hai ngày sau → còn nếu cách một tuần»; nhóm cuối nói «cái lợi đó vẫn còn» (cái lợi = hơn người đọc một lần). **Cần Deep Research xác nhận cách rút gọn này đúng F1.**
+- b03 vẫn kể 3 nhóm nhưng thành mạch «đọc liền → hai ngày sau → còn nếu cách một tuần»; r5.1: theo Deep Research, mốc «hơn người đọc một lần» nói ngay ở vế đầu, bỏ «cái lợi đó» (dễ hiểu nhầm là nhớ tốt ngay sau khi đọc); nhóm cách một tuần «hai ngày sau vẫn hơn».
 - Bỏ câu F4 (317 thí nghiệm) khỏi lời để mạch không khựng; Cepeda 2006 ở hình b04 + end card.
 - Bỏ «mỗi ngày một tiếng», «giữ nguyên»; ý chia ngày nói một lần ở b04.
 - Giữ «nhanh thế» (H2 chờ Hiệp chọn «thế»/«vậy»); b02 không còn «Mình cũng từng vậy» / «Thường thì» — thay bằng «Có thể vì» (H1 hết cần chọn).
@@ -58,12 +58,12 @@ Trend trong clip: b01 · brain stacking (chồng tài liệu họp + ly cà phê
 |---|---|---|
 | b01 | trình bày trơn, hai hôm sau không nhớ một ý | F2 (5861e88); minh hoạ |
 | b02 | dồn ba tiếng, đọc hai lần liền | minh hoạ, điều kiện đọc liền của Rawson & Kintsch; «ba tiếng» = Chi phí 23.15 |
-| b03 | đọc liền tốt ngay sau khi đọc; hai ngày sau không hơn người đọc một lần; cách một tuần thì hai ngày sau cái lợi vẫn còn | F1 (5861e88), Rawson & Kintsch 2005 |
+| b03 | đọc liền: ngay sau đó hơn người đọc một lần, hai ngày sau không còn hơn; cách một tuần: hai ngày sau vẫn hơn | F1 (5861e88), Rawson & Kintsch 2005 |
 | b04 | ba tiếng chia ba ngày «như cẩm nang gợi ý» | F3, 23.15 dòng Chi phí |
 | b04 | úp tài liệu, tự nói lại, lật lên xem sót | F5, ghi chú 23.15 + mục 23.14 |
 | b05 | «dễ nhớ ra hơn», «mỗi ngày một buổi ngắn» | minh hoạ F3; mục Motivation +1 fact-package-v5; không hứa kết quả |
 
 ## Tự soát (kết luận là của Rule Reviewer)
 - L-087 không môn học; L-088 trend/fact/trục +1; không «:» «;» trong lời; không «xong/thuộc làu/chột»; «bài» không dùng.
-- Mọi vế có chủ ngữ («bạn/sếp/ý đó/đọc liền hai lần/cái lợi đó»).
-- 175 chữ (140–175).
+- Mọi vế có chủ ngữ («bạn/sếp/ý đó/đọc liền hai lần»).
+- 171 chữ (140–175).
