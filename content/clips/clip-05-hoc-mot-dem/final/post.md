@@ -29,8 +29,8 @@ Mac:             ~/me/projects/oneup-studio/media/clips/clip-05-hoc-mot-dem/ (3 
 ```
 - Số đo bằng ffprobe + ebur128 trên box (22/10/2026, giờ VN). File không có nhạc (luật 21), chỉ giọng + SFX + ambience.
 - MP4 không nằm trong git. Không file nào có logo TikTok.
-- Nền cảnh xám #E4E4DF, chữ khoá phụ đề ô mực (H1/H2 đã chốt). Bản reels: Thầy nhỏ lại ×0,78 (framing `reels`, scale 0,9) ở x .78 (.79 khi đang nghĩ), camera push ≤0,02, tắt chấm suy nghĩ và dấu «?» trên đầu (nằm dưới ô phụ đề).
-- Bản reels dùng layout phụ đề riêng `video.layout="reels"` (như clip-04): phụ đề ở ô hẹp bên trái x 60–640, y ≈1000–1240, tiêu đề lời kể từ y 300. Đạo cụ nằm dưới vùng đó được dời bằng `pipeline/scripts/clip-05-reels-plan-v4.py` → `final/out/plan-reels.json`. Đo từng frame (1651 frame sau cover) bằng `pipeline/scripts/scan-reels-clearance.py` (render có phụ đề trừ render không phụ đề = đúng ô phụ đề, gồm viền + bóng tới x 647, y ≤1260): khe hở nhỏ nhất ô phụ đề → vật gần nhất 16 px, đầu Thầy → viền phải 23 px, đồng hồ cát b02a 18 px (ngưỡng ≥16 px, 0 frame dưới ngưỡng).
+- Nền cảnh xám #E4E4DF, chữ khoá phụ đề ô mực (H1/H2 đã chốt). Bản reels: Thầy nhỏ lại ×0,78 (framing `reels`, scale 0,9) ở x .78 (.79 khi đang nghĩ), camera push ≤0,02, tắt chấm suy nghĩ và dấu «?» trên đầu (nằm dưới ô phụ đề); «?» riêng của b02b vẫn giữ.
+- Bản reels dùng layout phụ đề riêng `video.layout="reels"` (như clip-04): phụ đề ở ô hẹp bên trái x 60–640, y 1000–1260, tiêu đề lời kể từ y 300. Đạo cụ nằm dưới vùng đó được dời bằng `pipeline/scripts/clip-05-reels-plan-v4.py` → `final/out/plan-reels.json`. Đo từng frame (1651 frame sau cover) bằng `pipeline/scripts/scan-reels-clearance.py` (render có phụ đề trừ render không phụ đề = đúng ô phụ đề, gồm viền + bóng tới x 647, y ≤1260): khe hở nhỏ nhất ô phụ đề → vật gần nhất 16 px, đầu Thầy → viền phải 23 px, đồng hồ cát b02a 18 px (ngưỡng ≥16 px, 0 frame dưới ngưỡng).
 
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
@@ -209,3 +209,4 @@ IG feed/lưới hồ sơ:              content/clips/clip-05-hoc-mot-dem/final/c
 - b03: cột thứ ba («Lần 2 cách 1 tuần») màu mực thay vì xanh, giữ bảng màu thương hiệu (xanh chỉ dùng cho «xong/+1», rule-14). Rule Reviewer: đạt luật, không cần Hiệp. Ràng buộc FLUX vẫn đúng: mỗi cột chỉ so với cột xám, không số.
 - Bìa sách Sinh màu xám nhạt thay vì xanh lá (cùng lý do). Rule Reviewer: đạt luật, không cần Hiệp.
 - Bản reels (Rule Reviewer vòng 2, R1–R3): bản trước (x .79, cỡ cũ) ô phụ đề chạm tóc 0 px và đầu chạm viền phải 0 px. Bản này: Thầy ×0,78 ở x .78/.79, push ≤0,02, đồng hồ cát b02a/b05a s 0,33 đứng trên bàn; quét từng frame: ô phụ đề ≥16 px với mọi vật, đầu ≥23 px tới viền phải (L-033).
+- N3 đồng hồ cát bản Reels (b02a/b05a, s 0,33 đứng trên bàn): giữ nguyên cỡ, không thu nhỏ đồng hồ 1 tiếng. Hiệp quyết 26/10/2026 15:11 giờ VN.
