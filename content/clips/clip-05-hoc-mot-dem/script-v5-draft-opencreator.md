@@ -20,14 +20,14 @@ Ngôi kể: **«bạn» xuyên suốt** (L-089), không «mình». Một chuyệ
 
 1. **[Hook, nỗi đau + câu hỏi]** Hôm họp, bạn trình bày trơn tru. Vậy mà hai hôm sau, sếp hỏi lại một ý, bạn đứng hình. Sao ý đó trôi nhanh thế?
 2. **[Ví dụ / nguyên nhân gần, nối bằng «Có thể vì»]** Có thể vì tối trước buổi họp, bạn dồn ba tiếng đọc cả chồng tài liệu hai lần liền.
-3. **[Nguyên nhân có nghiên cứu, đi ra từ chính chuyện đọc dồn]** Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn nếu đọc lần hai cách một tuần, hai ngày sau vẫn hơn.
+3. **[Nguyên nhân có nghiên cứu, đi ra từ chính chuyện đọc dồn]** Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn người đọc lần hai cách một tuần thì hai ngày sau vẫn hơn.
 4. **[Mục tiêu + cách làm, nối bằng «Vậy»]** Vậy muốn nhớ tới lúc bị hỏi lại, bạn có thể chia ba tiếng ra ba ngày, như cẩm nang gợi ý. Mỗi tối, bạn thử úp tài liệu, tự nói lại ý chính, rồi lật lên xem sót chỗ nào.
 5. **[Kết quả quay về chỗ khựng + nốt +1]** Rồi lúc sếp hỏi lại, bạn dễ nhớ ra ý đó hơn, mà mỗi tối chỉ tốn chừng một tiếng.
 6. **[CTA]** Sắp tới bạn có buổi thuyết trình nào muốn thử ôn trong ba ngày không? Kể OneUp nghe dưới comment nha.
 
-Đọc liền một mạch (L-089): Hôm họp, bạn trình bày trơn tru. Vậy mà hai hôm sau, sếp hỏi lại một ý, bạn đứng hình. Sao ý đó trôi nhanh thế? Có thể vì tối trước buổi họp, bạn dồn ba tiếng đọc cả chồng tài liệu hai lần liền. Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn nếu đọc lần hai cách một tuần, hai ngày sau vẫn hơn. Vậy muốn nhớ tới lúc bị hỏi lại, bạn có thể chia ba tiếng ra ba ngày, như cẩm nang gợi ý. Mỗi tối, bạn thử úp tài liệu, tự nói lại ý chính, rồi lật lên xem sót chỗ nào. Rồi lúc sếp hỏi lại, bạn dễ nhớ ra ý đó hơn, mà mỗi tối chỉ tốn chừng một tiếng. Sắp tới bạn có buổi thuyết trình nào muốn thử ôn trong ba ngày không? Kể OneUp nghe dưới comment nha.
+Đọc liền một mạch (L-089): Hôm họp, bạn trình bày trơn tru. Vậy mà hai hôm sau, sếp hỏi lại một ý, bạn đứng hình. Sao ý đó trôi nhanh thế? Có thể vì tối trước buổi họp, bạn dồn ba tiếng đọc cả chồng tài liệu hai lần liền. Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn người đọc lần hai cách một tuần thì hai ngày sau vẫn hơn. Vậy muốn nhớ tới lúc bị hỏi lại, bạn có thể chia ba tiếng ra ba ngày, như cẩm nang gợi ý. Mỗi tối, bạn thử úp tài liệu, tự nói lại ý chính, rồi lật lên xem sót chỗ nào. Rồi lúc sếp hỏi lại, bạn dễ nhớ ra ý đó hơn, mà mỗi tối chỉ tốn chừng một tiếng. Sắp tới bạn có buổi thuyết trình nào muốn thử ôn trong ba ngày không? Kể OneUp nghe dưới comment nha.
 
-Chữ lời: 171.
+Chữ lời: 172.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013 · Trend: brain stacking trên TikTok (Mashable 21/10/2026, HerCampus). Không ghi kênh được tác giả bảo trợ. Không nêu tên creator nào của trend.
 
@@ -49,7 +49,8 @@ Trend trong clip: b01 · brain stacking (chồng tài liệu họp + ly cà phê
 - CTA «thử chia ra ba ngày» → «thử ôn trong ba ngày» (khỏi hiểu là chia buổi thuyết trình); caption b06 «Try prepping over three days».
 - b03 «Đọc liền hai lần thì…» → «Người đọc liền hai lần thì…» (so người với người).
 - b02 «đọc chồng tài liệu» → «đọc cả chồng tài liệu».
-- Caption b03 «strong right after» → «ahead of one read» (khớp lời). 171 chữ.
+- Caption b03 «strong right after» → «ahead of one read» (khớp lời).
+- b03 câu sau song song theo Deep Research: «Còn người đọc lần hai cách một tuần thì hai ngày sau vẫn hơn.» 171 chữ.
 
 ## Thay đổi r5.2 (review 659e705)
 - b05: bỏ câu khẩu hiệu «Bạn chỉ cần mỗi ngày một buổi ngắn, nhích thêm một chút», gộp vào câu đóng vòng: «…dễ nhớ ra ý đó hơn, mà mỗi tối chỉ tốn chừng một tiếng» (F3).
@@ -77,4 +78,4 @@ Trend trong clip: b01 · brain stacking (chồng tài liệu họp + ly cà phê
 ## Tự soát (kết luận là của Rule Reviewer)
 - L-087 không môn học; L-088 trend/fact/trục +1; không «:» «;» trong lời; không «xong/thuộc làu/chột»; «bài» không dùng.
 - Mọi vế có chủ ngữ («bạn/sếp/ý đó/đọc liền hai lần»).
-- 171 chữ (140–175).
+- 172 chữ (140–175).
