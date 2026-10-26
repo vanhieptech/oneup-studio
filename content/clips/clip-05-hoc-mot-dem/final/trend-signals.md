@@ -11,7 +11,7 @@ updated: 2026-10-26
 # Trend signals — clip-05 (v5)
 
 ## Trend gốc
-Trend trong clip: b01 · chỉ ở hình (lời không nhắc tên trend): cảnh tĩnh kiểu brain stacking, chồng tài liệu họp + bút highlight + ly cà phê, điện thoại úp, gần như không chữ; callback b04 (tách 3 chồng nhỏ cho 3 ngày, mỗi chồng úp lại tự kiểm) và b06 (+1 trên mỗi chồng). Nguồn: Mashable 21/10/2026 https://in.mashable.com/digital-culture/115269/what-is-brain-stacking-tiktoks-latest-trend-wants-you-to-put-down-your-phone · HerCampus https://www.hercampus.com/school/wvu/brain-stacking-is-this-what-our-minds-have-been-missing/ (script v5 r2 84c4fcc)
+Trend trong clip: b01 · chỉ ở hình (lời không nhắc tên trend): cảnh tĩnh kiểu brain stacking, chồng tài liệu họp + bút highlight + ly cà phê, điện thoại úp, gần như không chữ; callback b04 (tách 3 chồng nhỏ cho 3 ngày, mỗi chồng úp lại tự kiểm) và b05 (+1 trên mỗi chồng). Nguồn: Mashable 21/10/2026 https://in.mashable.com/digital-culture/115269/what-is-brain-stacking-tiktoks-latest-trend-wants-you-to-put-down-your-phone · HerCampus https://www.hercampus.com/school/wvu/brain-stacking-is-this-what-our-minds-have-been-missing/ (script v5 r3 774afe1)
 
 - Trend TikTok: xếp chồng sách, sudoku, sổ tay cạnh ly cà phê thay cho lướt điện thoại; video gần như không lời.
 - Nguồn phụ: Essence https://girlsunited.essence.com/shopping/lifestyle/brain-stacking/ · digest 26/10: ngày 2, 5 nguồn.
