@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-thue-nha-tinh-gio-di-lam",
+ "title": "[STUB] Chọn nhà thuê: cộng cả giờ ngồi xe vào giá, không chỉ tiền thuê và phí",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "luong-15-trieu-thang-cap-doi-o-ha",
+  "bridge_id": "B-commute-02",
+  "lesson": "4.18 Chọn chỗ ở thì đặt thời gian đi làm lên trước, rút ngắn mỗi chiều (Stutzer & Frey 2008, Scand. J. Econ.: dữ liệu theo dõi nhiều năm ở Đức, đi làm càng lâu thì tự thấy sống kém hài lòng hơn, và phần thiệt không được bù bằng lương hay nhà; Chatterjee 2020 Transport Reviews tổng quan). Bằng chứng B; sách ghi TRANH CÃI: Chatterjee thấy chưa có liên hệ ổn định giữa quãng đi làm và hài lòng cuộc sống nói chung, nhiều người bù được bằng việc hoặc nhà tốt hơn. Số của sách: mỗi chiều bớt 30 phút thì mỗi tuần dư khoảng 5 tiếng. Bỏ số thời gian đi lại của Trung Quốc. Chi phí: có thể phải trả tiền thuê cao hơn hoặc ở nhỏ hơn, tốn công chuyển nhà.",
+  "angle": "data / empathy",
+  "pattern": "P04 + P01",
+  "differentiation": "Mọi người đang nói: giá thuê niêm yết rẻ chưa chắc rẻ, phải cộng điện nước, phí dịch vụ, gửi xe (Kenh14 26/10, cặp đôi lương 15 triệu chọn căn 9 triệu thay vì 6,5 triệu). Góc của mình: còn một khoản không ai ghi vào bảng tính là giờ ngồi xe; mỗi chiều bớt 30 phút là mỗi tuần có lại khoảng 5 tiếng (4.18), nhưng nói thật đây là mục sách ghi còn tranh cãi nên chỉ là một yếu tố để cân. Chuyện thật của Hiệp (đang thuê nhà, quãng đi làm) để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "thue-nha-tinh-gio-di-lam.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn chọn căn trọ rẻ hơn một triệu, mà đã tính mỗi ngày mình ngồi xe bao lâu chưa?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Cheaper rent. How long is your ride?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "thue-nha-tinh-gio-di-lam.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Căn xa thì rẻ hơn thật, nhưng ngày nào bạn cũng ngồi xe gần cả tiếng, về tới nhà là hết sức.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Cheap room. Long ride. No energy.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "thue-nha-tinh-gio-di-lam.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lý do là mình chỉ nhìn giá thuê trên tin đăng, chứ chưa cộng thời gian đi lại vào chi phí.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Commute time is a cost too.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "thue-nha-tinh-gio-di-lam.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dữ liệu theo dõi nhiều năm ở Đức cho thấy người đi làm càng xa thì càng thấy mình sống kém hài lòng hơn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Longer commute, less satisfied.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "thue-nha-tinh-gio-di-lam.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình cần là tính đủ tiền nhà, tiền xe và cả thời gian của mình trước khi ký hợp đồng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Count rent, ride and time.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "thue-nha-tinh-gio-di-lam.b06",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy khi xem nhà, bạn chạy thử đường đi làm đúng giờ cao điểm, rồi đặt thời gian đi lại lên đầu danh sách.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Test the route at rush hour.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "thue-nha-tinh-gio-di-lam.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nếu mỗi chiều bạn bớt được ba mươi phút, thì mỗi tuần bạn có lại khoảng năm tiếng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "30 min less each way = ~5h a week.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "thue-nha-tinh-gio-di-lam.b08",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thật là có tổng hợp khác thấy nhiều người bù được bằng việc tốt hơn hay nhà rộng hơn, nên bạn cân cho hợp với mình nha.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Still debated. Weigh it for you.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "thue-nha-tinh-gio-di-lam.b09",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn comment xem mỗi ngày mình đang ngồi xe bao nhiêu phút nha. Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "How many minutes is your commute?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  }
+ ]
+}

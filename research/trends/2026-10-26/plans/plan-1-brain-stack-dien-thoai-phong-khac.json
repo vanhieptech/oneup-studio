@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-brain-stack-dien-thoai-phong-khac",
+ "title": "[STUB] Brain stacking: chồng sách đẹp chưa đủ, điện thoại phải nằm ở phòng khác",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "what-is-brain-stacking-tiktok-s-latest-trend",
+  "bridge_id": "B-brainstack-01",
+  "lesson": "3.1 Tắt thông báo không cần thiết, khi làm việc để điện thoại ra khỏi tầm mắt (Ward, Duke, Gneezy & Bos 2017, J. Assoc. Consumer Research: hai thí nghiệm, điện thoại của chính mình nằm bên cạnh dù đã nhịn không xem vẫn làm phần trí óc dùng được ít đi, người phụ thuộc điện thoại giảm nhiều nhất; Stothart 2015: chỉ nhận thông báo không xem cũng làm điểm bài tập chú ý giảm). Bằng chứng B; ghi chú sách: thí nghiệm phòng lab, một lần, sinh viên; tác động cộng dồn hằng ngày chưa ai đo. Kèm 4.10 để đồ cần gần, đồ không muốn đụng xa (Cochrane 2019 Hollands, 24 RCT về đồ ăn, mức B; áp sang điện thoại là suy ra, sách ghi rõ). Chi phí: không tốn tiền, vài phút, gần như không cần ý chí.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P15",
+  "differentiation": "Mọi người đang nói: xếp một chồng sách, sudoku, nhật ký cạnh ly cà phê để thay cho lướt điện thoại, càng đẹp càng tốt (Mashable 21/10, Essence, HerCampus; @mandyrulez). Góc của mình: chồng sách không phải phần quyết định; điện thoại nằm úp ngay cạnh vẫn ăn bớt sức tập trung dù bạn không chạm (3.1, mức B), nên tối hôm trước cắm sạc điện thoại ở phòng khác và để sẵn cuốn sách trên bàn (4.10). Không cần mua gì. Chuyện thật của Hiệp (dùng điện thoại trên giường) để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "brain-stack-dien-thoai-phong-khac.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn cũng xếp một chồng sách thật đẹp để khỏi lướt điện thoại, vậy mà ngồi năm phút là tay lại mò máy?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Cute brain stack. Still grabbing your phone?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "brain-stack-dien-thoai-phong-khac.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chồng sách nằm ngay trước mặt, còn điện thoại thì nằm úp ngay bên cạnh, cứ vài phút bạn lại liếc qua một lần.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Book in front. Phone face-down beside it.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "brain-stack-dien-thoai-phong-khac.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lý do là chỉ cần điện thoại nằm trên bàn, dù bạn không chạm vào, đầu óc vẫn phải tốn sức để kìm mình lại.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Not touching it still costs focus.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "brain-stack-dien-thoai-phong-khac.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hai thí nghiệm với sinh viên cho thấy điện thoại chỉ cần nằm bên cạnh thôi cũng làm phần trí óc dùng được ít đi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Phone nearby = less brainpower.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "brain-stack-dien-thoai-phong-khac.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình cần không phải là chồng sách đẹp hơn, mà là bớt phải gồng mình chống lại cái điện thoại.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Less fighting the phone.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "brain-stack-dien-thoai-phong-khac.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy tối hôm trước bạn để sẵn cuốn sách trên bàn, còn điện thoại thì cắm sạc ở phòng khác.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Book on desk. Phone in another room.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "brain-stack-dien-thoai-phong-khac.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đồ muốn dùng thì bạn để gần, đồ không muốn đụng thì bạn để xa, vì để xa thì mình tự lấy ít đi mà không cần cố nhịn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Near what you want. Far what you don't.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "brain-stack-dien-thoai-phong-khac.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sáng hôm sau bạn chỉ cần ngồi xuống là mở sách ra được, vì cái điện thoại đã nằm ngoài tầm mắt rồi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Sit down. Open the book.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "brain-stack-dien-thoai-phong-khac.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay bạn thử để điện thoại ở phòng khác, rồi comment cho mình biết sáng mai bạn ngồi đọc được bao lâu nha.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Try it tonight. Tell me how long.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

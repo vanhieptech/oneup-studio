@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-25
+updated: 2026-10-26
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -127,16 +127,20 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | sale-1111-2026 | 11.11 còn 3 tuần (mùa sale) | seasonal | ok | 2026-10-21 | 2026-10-21 | 1 | lịch |
 | kenh14-nhan-them-viec | Kenh14: “Sếp hỏi ‘Em có thể nhận thêm việc không?’, 3 cách từ chối… EQ cao” | work | ok | 2026-10-22 | 2026-10-22 | 1 | [kenh14](https://kenh14.vn/sep-hoi-em-co-the-nhan-them-viec-khong-3-cach-tu-choi-tuong-mat-long-nhung-thuc-ra-la-bieu-hien-cua-eq-cao-215261020214215741.chn) |
 | x-anger-at-work | Kìm giận nơi làm việc mệt như làm thêm một ca (X News) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112572577571115169) |
-| brain-stacking-tiktok | “Brain stacking”: trend TikTok kêu gọi bỏ điện thoại xuống (Mashable) | viral/phone | ok | 2026-10-22 | 2026-10-22 | 1 | Google News (Mashable) |
+| brain-stacking-tiktok | “Brain stacking”: trend TikTok kêu gọi bỏ điện thoại xuống (Mashable) | viral/phone | ok | 2026-10-22 | 2026-10-26 | 2 | Google News (Mashable), [Mashable](https://in.mashable.com/digital-culture/115269/what-is-brain-stacking-tiktoks-latest-trend-wants-you-to-put-down-your-phone), [Essence](https://girlsunited.essence.com/shopping/lifestyle/brain-stacking/), [HerCampus](https://www.hercampus.com/school/wvu/brain-stacking-is-this-what-our-minds-have-been-missing/) |
 | x-homeownership-gen | Nhà ở: boomers vs người trẻ Mỹ (X News, số Mỹ) | x/money | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112994548662317171) |
 | x-punctuality-wait | Đến sớm trả lương trước rồi ngồi chờ thợ tới trễ 3 tiếng (X News; không nêu tên/quốc gia) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112823806846783530) |
 | chatgpt-pin-lock | ChatGPT khoá cuộc trò chuyện nhạy cảm bằng PIN/Face ID (Tinh tế) | tech/security | ok | 2026-10-22 | 2026-10-22 | 1 | [Tinh tế](https://tinhte.vn/thread/chatgpt-cho-khoa-cuoc-tro-chuyen-nhay-cam-bang-ma-pin-hoac-face-id.4185675/) |
-| x-side-project-60pct | Tranh luận nghỉ việc làm riêng: nuôi side project mỗi ngày 1 tiếng tới khi bằng 60% thu nhập (Justin Welsh) | work/money debate | ok | 2026-10-25 | 2026-10-25 | 1 | [X News](https://x.com/i/trending/2113685619998372109) |
-| x-sleep-days-off-13h | Dân X kể chuyện ngủ: ngày nghỉ nằm 13 tiếng, trưa ngủ bù sau đêm đứt quãng; VN X trend "Chủ Nhật" | health/habits | ok | 2026-10-25 | 2026-10-25 | 1 | [X News](https://x.com/i/trending/2114005059952324691), [X VN](https://x.com/search?q=Ch%E1%BB%A7%20Nh%E1%BA%ADt) |
-| x-consistency-6-months | "Kiên trì 6 tháng, khó thì làm ít lại" (Hormozi và nhiều người) | habits | ok | 2026-10-25 | 2026-10-25 | 1 | [X News](https://x.com/i/trending/2113963042178257128) |
+| x-side-project-60pct | Tranh luận nghỉ việc làm riêng: nuôi side project mỗi ngày 1 tiếng tới khi bằng 60% thu nhập (Justin Welsh) | work/money debate | ok | 2026-10-25 | 2026-10-26 | 2 | [X News](https://x.com/i/trending/2113685619998372109) |
+| x-sleep-days-off-13h | Dân X kể chuyện ngủ: ngày nghỉ nằm 13 tiếng, trưa ngủ bù sau đêm đứt quãng; VN X trend "Chủ Nhật" | health/habits | ok | 2026-10-25 | 2026-10-26 | 2 | [X News](https://x.com/i/trending/2114005059952324691), [X VN](https://x.com/search?q=Ch%E1%BB%A7%20Nh%E1%BA%ADt) |
+| x-consistency-6-months | "Kiên trì 6 tháng, khó thì làm ít lại" (Hormozi và nhiều người) | habits | ok | 2026-10-25 | 2026-10-26 | 2 | [X News](https://x.com/i/trending/2113963042178257128) |
 | genz-hoc-cach-noi-khong | "Tiết học Gen Z – Học cách nói không" (Hà Nội TV, qua Google News) | social/work | ok | 2026-10-25 | 2026-10-25 | 1 | Google News gen Z |
 | genz-ngai-nghe-dien-thoai | Gen Z ngại nghe điện thoại: va chạm văn hoá mới nơi công sở | work/social | ok | 2026-10-25 | 2026-10-25 | 1 | Google News gen Z (Nhân lực Nhân tài) |
 | gmail-privacy-ads | Chính sách quyền riêng tư mới của Google: Gmail có thể dùng cho quảng cáo | tech/security | caution | 2026-10-25 | 2026-10-25 | 1 | [Ars](https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/) |
+| kenh14-thue-nha-15tr | Lương 15 triệu, cặp đôi Hà Nội chọn căn 9 triệu thay vì 6,5 triệu: cộng phí phát sinh và quãng đi làm | money/lifestyle | caution | 2026-10-26 | 2026-10-26 | 1 | [Kenh14](https://kenh14.vn/luong-15-trieu-thang-cap-doi-o-ha-noi-chon-thue-nha-9-trieu-thay-vi-can-65-trieu-dang-sau-la-mot-phep-tinh-khac-215261025112024785.chn) |
+| x-adhd-hyperfocus-chores | 4 tiếng cho sở thích, việc vặt 90 giây để mấy ngày (X News, nhãn ADHD: không chẩn đoán) | x/habits | caution | 2026-10-26 | 2026-10-26 | 1 | [X News](https://x.com/i/trending/2114205407518576998) |
+| x-vn-thu-hai | X VN trend "Thứ Hai" / "Tuần" (sáng đầu tuần) | seasonal/time | ok | 2026-10-26 | 2026-10-26 | 1 | [X VN](https://x.com/search?q=Th%E1%BB%A9%20Hai) |
+| kenh14-dong-nghiep-tranh-cong | Đồng nghiệp chèn ép, tranh công: nhịn hay ăn thua đủ | work | ok | 2026-10-26 | 2026-10-26 | 1 | [Kenh14](https://kenh14.vn/dong-nghiep-chen-ep-tranh-cong-nhin-nhuc-hay-an-thua-du-cach-xu-ly-khon-ngoan-de-khong-hao-ton-phuc-khi-su-nghiep-215261025195054466.chn) |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -267,6 +271,9 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-weekend-02 | x-sleep-days-off-13h + X VN "Chủ Nhật" | Chủ nhật ngủ tới trưa cho bù, thứ Hai mệt hơn | 3.2 | "Chủ nhật bạn tính ngủ tới trưa cho bù, vậy mà sao sáng thứ Hai còn mệt hơn?" (P12+P03) | data / contrarian | clip-14 (3.2) hook thay thế; củng cố B-weekend-01 | stub, chờ duyệt (mức B, một nghiên cứu 61 SV; không dùng số Mỹ của X) | 2026-10-25 |
 | B-6thang-01 | x-consistency-6-months | nghe "kiên trì 6 tháng", tuần thứ hai thấy vẫn khó là muốn bỏ | 4.12 (callback clip-06) | "Ai cũng nói kiên trì sáu tháng. Vậy tuần thứ hai thấy vẫn khó, bạn có nghĩ mình thất bại không?" (P03+P08) | data / empathy | củng cố clip-06 / B-30ngay-01 | đề xuất (Lally 2010: 18–254 ngày, lỡ một lần không về 0) | 2026-10-25 |
 | B-noikhong-01 | genz-hoc-cach-noi-khong | nhận lời mọi lời nhờ rồi tối về kiệt sức | 3.16 | "Ai nhờ gì bạn cũng gật, rồi tối về chẳng còn sức làm việc của mình?" (P10) | empathy | ý tưởng (phụ B-nhanviec-01) | đề xuất (mức C, mẫu đặc biệt: phụ nữ goá 60–89 tuổi; nói rõ khi dùng) | 2026-10-25 |
+| B-brainstack-01 | brain-stacking-tiktok | xếp chồng sách đẹp để khỏi lướt mà điện thoại vẫn úp ngay bên cạnh | 3.1 (+4.10) | "Bạn cũng xếp một chồng sách thật đẹp để khỏi lướt điện thoại, vậy mà ngồi năm phút là tay lại mò máy?" (P03+P15) | contrarian / data | clip-08 (3.1) hook thay thế; củng cố B-phone-01 | stub, chờ duyệt (mức B, thí nghiệm lab với SV; 4.10 áp sang điện thoại là suy ra) | 2026-10-26 |
+| B-commute-02 | kenh14-thue-nha-15tr | chọn trọ rẻ hơn một triệu mà ngày nào cũng ngồi xe gần cả tiếng | 4.18 | "Bạn chọn căn trọ rẻ hơn một triệu, mà đã tính mỗi ngày mình ngồi xe bao lâu chưa?" (P04+P01) | data / empathy | ý tưởng mới; củng cố B-commute-01 | stub, chờ duyệt (sách ghi tranh cãi; tiền nhà: dòng an toàn + Hiệp duyệt; bỏ số Trung Quốc) | 2026-10-26 |
+| B-viecvat-01 | x-adhd-hyperfocus-chores | 4 tiếng cho game mà email 90 giây để ba ngày | 4.9 (callback clip-02) | "Bạn ngồi bốn tiếng với sở thích không thấy mệt, mà một việc chín mươi giây thì để tới ba ngày?" (P10) | empathy | callback clip-02 | đề xuất (không dùng nhãn ADHD, không chẩn đoán) | 2026-10-26 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
