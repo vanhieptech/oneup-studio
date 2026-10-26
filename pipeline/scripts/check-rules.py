@@ -7,6 +7,7 @@
   check-rules.py ... --out report.txt
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
+  check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
@@ -472,6 +473,88 @@ def check_l088_file(path):  # --l088 FILE: soi bản nháp script trước khi c
     else: warn("L-088", "bản nháp không nằm trong thư mục clip → không tìm được file trend / fact của clip")
     info("L-088", L088_MANUAL)
 
+# ---- L-089 (Hiệp 27/10 02:37 «Xàm quá… đọc k thấy nó rời rạc à»): --flow <draft.md> — cờ hỗ trợ cổng đọc to liền mạch (chỉ ⚠, quyết định cuối manual)
+L089_CONN = ("vì", "tại vì", "bởi vì", "nên", "cho nên", "thế nên", "vậy", "vậy nên", "vậy là", "thế là", "mà", "nhưng", "còn", "rồi", "xong",
+             "hóa ra", "hoá ra", "thì ra", "giống", "cũng", "chính vì", "nhờ", "từ đó", "sau đó", "bởi vậy", "ủa", "mà khoan", "tức là", "nghĩa là", "đó là", "kết quả")
+L089_REF = r"(?<!\w)(đó|ấy|vậy|thế|y chang|cũng)(?!\w)"
+L089_STOP = set("mình bạn họ thì là mà và với của cho có không được một các những này đó rồi cũng nha nè á thôi luôn lại ra vào lên xuống".split())
+L089_MAXIM = r"(?<!\w)(chỉ cần|mỗi ngày một|mỗi ngày mình|nhích|một chút|từng chút|\+1|sống tốt hơn)(?!\w)"
+L089_MANUAL = ("manual gate (làm TRƯỚC khi chấm luật): đọc to b01→CTA một mạch như người nói chuyện — một ngôi kể xuyên suốt, mỗi beat mở bằng mối nối "
+               "với beat trước, không câu mồ côi/gắn thêm, dẫn chứng nảy ra từ chuyện, không đổi liền mạch lấy số chữ (bỏ ý chứ không ép câu)")
+
+def _l089_tok(t): return re.findall(r"[\wÀ-ỹ]+", t.lower())
+def _l089_sents(t): return [x.strip() for x in re.split(r"(?<=[.?!…])\s+", re.sub(r"\{[^}:]*:\s*([^}]*)\}", r"\1", t).replace("**", "")) if x.strip()]
+def _l089_starts_conn(sent):  # từ nối trong 3 chữ đầu («Có thể vì…», «Mà…», «Vậy nên…»)
+    tw = _l089_tok(sent)[:4]
+    return any(" ".join(tw[k:k + len(c.split())]) == c for c in L089_CONN for k in range(0, min(3, len(tw))))
+def _l089_person(t):
+    tw = _l089_tok(t); b = tw.count("bạn")
+    m = sum(1 for i, w in enumerate(tw) if w == "mình" and not (i and tw[i - 1] in ("kể", "cho", "với", "giúp", "hỏi", "nhắn", "chỉ")))
+    return "bạn" if b > m else "mình" if m > b else ("lẫn" if b else "-")
+def _l089_bigrams(t):
+    tw = [w for w in _l089_tok(t)]; return {(a, b) for a, b in zip(tw, tw[1:]) if a not in L089_STOP or b not in L089_STOP}
+
+def draft_beats(md):
+    items = []
+    for ln in md.splitlines():
+        m = re.match(r"^\s*(\d+)\.\s*\*\*\[([^\]]+)\]\*\*\s*(.*)$", ln)
+        if m: items.append((int(m.group(1)), m.group(2), m.group(3)))
+        elif ln.startswith("## ") and items: break
+    return items
+
+def check_flow_beats(items, where="draft"):
+    if not items: err("L-089", f"{where}: không đọc được lời theo beat (khung «N. **[Nhãn]** lời»)"); return
+    n = len(items)
+    hk = next((i for i, (_, lab, _) in enumerate(items) if re.search(r"hook", lab, re.I)), 0)
+    ct = next((i for i, (_, lab, _) in enumerate(items) if re.search(r"\bcta\b", lab, re.I)), n - 1)
+    pers = [_l089_person(t) for _, _, t in items]
+    # (1) ngôi kể
+    narr = {pers[i] for i in range(n) if i not in (hk, ct) and pers[i] in ("bạn", "mình")}
+    seq = [p for p in pers if p in ("bạn", "mình")]; sw = sum(1 for a, b in zip(seq, seq[1:]) if a != b)
+    shown = " → ".join(f"b{i+1:02d} {p}" for i, p in enumerate(pers))
+    if len(narr) > 1: warn("L-089", f"đổi ngôi kể giữa các beat thân bài ({shown}) → một người kể xuyên suốt")
+    elif sw >= 2: warn("L-089", f"ngôi kể đổi qua lại {sw} lần ({shown}) → hook/CTA chỉ gọi «bạn» khi khung chuyện tự nhiên, soát tay")
+    elif sw == 1: info("L-089", f"ngôi kể đổi 1 lần ({shown}) → soát tay khung chuyện")
+    else: ok("L-089", f"ngôi kể nhất quán ({shown})")
+    # (2) khâu lặp kiểu «X, mà càng X»
+    stitched = []
+    for i, (_, _, t) in enumerate(items):
+        for s_ in _l089_sents(t):
+            m = re.search(r"((?:[\wÀ-ỹ]+\s+){1,3}[\wÀ-ỹ]+)\s*,?\s*(?:mà|thì|nên|là)\s+(?:càng\s+)?\1(?![\wÀ-ỹ])", s_, re.I)
+            tw = _l089_tok(s_); tri = [tuple(tw[k:k + 3]) for k in range(len(tw) - 2)]
+            dup = next((g for k, g in enumerate(tri) if g in tri[k + 1:k + 11]), None)
+            if m or dup: stitched.append(f"b{i+1:02d} «{(m.group(0) if m else ' '.join(dup))}»")
+    (warn if stitched else ok)("L-089", ("khâu câu bằng cụm lặp: " + "; ".join(stitched) + " → nối bằng ý, không lặp chữ để gượng nối") if stitched else "không có cụm lặp khâu câu")
+    # (3) mở beat không có mối nối / tham chiếu beat trước
+    cold = []
+    for i in range(1, n):
+        if i in (hk, ct): continue  # CTA: mối nối kiểm ở rule-56 (loop) + đọc to
+        ss = _l089_sents(items[i][2]);
+        if not ss: continue
+        first = ss[0]; prev = _l089_sents(items[i - 1][2]); prev_last = prev[-1] if prev else ""
+        head = " ".join(_l089_tok(first)[:8])
+        linked = _l089_starts_conn(first) or re.search(L089_REF, head) or (_l089_bigrams(first) & _l089_bigrams(prev_last))
+        if not linked: cold.append(f"b{i+1:02d} «{' '.join(first.split()[:6])}…»")
+    (warn if cold else ok)("L-089", ("beat mở không nối với beat trước: " + "; ".join(cold) + " → mở bằng từ nối/chữ gọi lại ý vừa nói") if cold else "beat nào cũng mở bằng mối nối với beat trước")
+    # (4) liệt kê song song (đọc như danh sách) + câu chốt gắn thêm
+    lists, tacked = [], []
+    for i, (_, _, t) in enumerate(items):
+        ss = _l089_sents(t); heads = []
+        for s_ in ss:
+            tw = _l089_tok(s_)
+            while tw and tw[0] in ("còn", "nhưng", "mà", "rồi", "và"): tw = tw[1:]
+            heads.append(tuple(tw[:2]))
+        dup = {h for h in heads if len(h) == 2 and heads.count(h) >= 2}
+        if dup: lists.append(f"b{i+1:02d} ({', '.join('«' + ' '.join(h) + '…»' for h in dup)})")
+        if i not in (hk, ct) and len(ss) >= 2 and not _l089_starts_conn(ss[-1]) and re.search(L089_MAXIM, ss[-1].lower()) and len(_l089_tok(ss[-1])) <= 12:
+            tacked.append(f"b{i+1:02d} «{ss[-1]}»")
+    (warn if lists else ok)("L-089", ("câu cùng mở bằng một cụm, đọc như danh sách: " + "; ".join(lists) + " → kể thành chuyện, không liệt kê nhóm") if lists else "không có đoạn liệt kê song song")
+    (warn if tacked else ok)("L-089", ("câu chốt/motivation đứng trơ cuối beat: " + "; ".join(tacked) + " → nối vào ý trước hoặc bỏ") if tacked else "không có câu chốt gắn thêm")
+    info("L-089", L089_MANUAL)
+
+def check_flow_file(path):  # --flow FILE: cờ liền mạch cho bản nháp (L-089)
+    check_flow_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
+
 def main():
     a = sys.argv[1:]
     outp = a[a.index("--out") + 1] if "--out" in a else None
@@ -482,6 +565,10 @@ def main():
     if a and a[0] == "--l088":  # L-088 on draft script files (dẫn chứng + hook/CTA không rập khuôn + trend)
         for f in a[1:]:
             if f != "--out" and f != outp: check_l088_file(f)
+        return report(outp)
+    if a and a[0] == "--flow":  # L-089 on draft script files (đọc to liền mạch: ngôi kể, mối nối beat, cụm lặp khâu câu, liệt kê, câu gắn thêm)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_flow_file(f)
         return report(outp)
     clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
     specp = os.path.join(clip_dir, "final", "spec.json")

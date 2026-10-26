@@ -7,10 +7,12 @@ previous_review: review-script-v5r3.md @ 3887210
 fact_lock: fact-package-v5.md @ 5861e88
 trend: research/trends/2026-10-26/clip-05-v5-trend.md @ 30b73d3; final/trend-signals.md @ cf8f291
 reviewer: Rule Reviewer (người chấm ≠ người viết; không tự viết lại script)
-verdict: ĐẠT
+verdict: ĐẠT — HẾT HIỆU LỰC (superseded): Hiệp bác 27/10 02:37 «Xàm quá… rời rạc», xem L-089
 ---
 
-# Verdict: ĐẠT, trình được Hiệp kèm 2 việc Hiệp quyết
+> **HẾT HIỆU LỰC (27/10 02:37, L-089):** Hiệp bác bản r4 này: «Xàm quá dậy lúc review m đọc k thấy nó rời rạc à». Review dưới đây chấm luật từng ô mà không đọc to cả bài, nên bỏ sót: đổi ngôi bạn→mình→bạn, b03 thả nghiên cứu thành danh sách, b04 «Mình muốn nhớ lâu, mà càng muốn nhớ lâu» gượng, b05 «Lần này…» nhảy cóc + câu +1 gắn thêm. `check-rules.py --flow` trên 499376d cờ đủ 5 lỗi này. Giữ file để làm bằng chứng, không dùng làm verdict.
+
+# Verdict (cũ): ĐẠT, trình được Hiệp kèm 2 việc Hiệp quyết
 
 Không còn lỗi chặn. B5 và B6 đã sửa đúng. Ghi chú N2–N4 của r3 đã xử lý. Còn vài ghi chú nhỏ không chặn.
 Đây là ĐẠT ở bước script. Chưa có spec, nên các luật chạy trên spec (rule-55/56/58/60/61/62/64) sẽ chạy khi Hiệp đã Chốt và lên spec.
