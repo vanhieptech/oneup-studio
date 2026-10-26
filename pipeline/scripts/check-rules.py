@@ -6,6 +6,7 @@
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
+  check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
@@ -298,12 +299,189 @@ def check_subjects_file(path):  # --subjects FILE: soi bản nháp script (.md/.
         for h, why in subject_hits(ln): err("L-087", f"{os.path.basename(path)}:{i}: «{h}» ({why})"); n += 1
     if not n: ok("L-087", f"{os.path.basename(path)}: không gọi tên môn học / kiến thức môn học")
 
+# ---- L-088 (Hiệp 26/10 21:44): có dẫn chứng trong clip, lồng vào mạch chuyện; hook/CTA không rập khuôn; vẫn theo trend ----
+# Đo được: (a) có nguồn truy được (tác giả + năm / PMID / doi) ✖ nếu không có; lời đọc có nhắc dẫn chứng (✖ từ clip-06, ⚠ ≤05);
+# câu mở dẫn chứng kiểu chèn trích dẫn («Một nghiên cứu cho…», «các nhà nghiên cứu thấy…») ⚠ để soát tay «liền mạch».
+# (b) hook/CTA giống hook/CTA clip trước (difflib trên chữ bỏ dấu: 6 chữ đầu hoặc từng câu ≥4 chữ, > L088_SIM) ⚠; mở đầu 2 chữ trùng ≥2 clip trước ⚠.
+# (c) trend-signals.md có link nguồn ⚠. «Liền mạch» và «sáng tạo» thật sự = soát tay (manual gate).
+L088_SIM = 0.7          # ngưỡng giống nhau (difflib ratio trên token bỏ dấu); hiệu chỉnh trên clip 02–05: cặp khác clip ≤0,29 ở hook
+L088_MIN_TOK = 4        # câu ngắn hơn không so (tránh trùng giả «Comment nha»)
+_CITE_RE = re.compile(r"(?<![\w@-])(?:[A-Z][a-z'\-]+(?:\s*(?:&|và|and)\s*[A-Z][a-z'\-]+)?(?:\s+(?:et al\.?|và cộng sự|và cs\.?))?,?\s*\(?(?:19[5-9]\d|20[01]\d|202[0-5])\)?(?!\d)"
+                      r"|PMID:?\s*\d{6,}|doi\.org/\S+|(?<!\w)doi:\s*10\.\S+|pubmed\.ncbi\.nlm\.nih\.gov/\d+)")
+_CITE_STOP = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",
+              "Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec", "Clip", "Trend", "Rule", "News", "Hook", "Since", "From", "In", "The"}
+L088_EVID_SPOKEN = r"(?<!\w)(?:nghiên cứu|thí nghiệm|khảo sát|phân tích gộp|nhà tâm lý|nhà khoa học|giáo sư|tiến sĩ|các nhà|người tham gia|gộp \d[\d.,]*)(?!\w)"
+L088_DRY = r"(?<!\w)(?:một nghiên cứu (?:cho|chỉ|thấy|nói|của|ở|năm)|nghiên cứu (?:cho thấy|chỉ ra|nói rằng|nói là|đã chứng minh|chứng minh)|theo (?:một |các |nhiều )?nghiên cứu|các nhà (?:nghiên cứu|khoa học) (?:thấy|phát hiện|chỉ ra|chứng minh|kết luận)|khoa học (?:đã )?(?:chứng minh|nói)|(?:chuyện này )?có (?:một |hẳn )?nghiên cứu(?: hẳn hoi)?|bằng chứng là)(?!\w)"
+
+def citations(text):
+    """L-088: nguồn truy được trong một đoạn chữ → [chuỗi]. Tên tác giả chữ Latin + năm 1950–2025, hoặc PMID/doi/PubMed."""
+    out = []
+    for m in _CITE_RE.finditer(text or ""):
+        s = re.sub(r"\s+", " ", m.group(0)).strip()
+        if s.endswith(")") and "(" not in s: s = s[:-1].rstrip()
+        if s.split()[0].rstrip(",") in _CITE_STOP: continue
+        out.append(s)
+    return out
+
+def _l088_clean(t):  # bỏ markup {nhấn: x} → x, **, …, | (ngắt delivery) trước khi so
+    t = _plain(t); return re.sub(r"\s+", " ", t.replace("…", " ").replace("\\|", " ").replace("|", " ")).strip()
+
+def _sents(t): return [x for x in re.split(r"(?<=[.!?])\s+", _l088_clean(t)) if len(norm(x)) >= 1]
+
+def similar_to(new, olds):
+    """→ [(nhãn, chỉ số, ratio, câu cũ)] khi `new` giống một text cũ: 6 chữ đầu, hoặc một câu (≥ L088_MIN_TOK chữ) giống một câu cũ."""
+    hits = []; nn = norm(_l088_clean(new))
+    if not nn: return hits
+    for lab, old in olds:
+        on = norm(_l088_clean(old))
+        if not on: continue
+        best = (difflib.SequenceMatcher(None, nn[:6], on[:6]).ratio(), "6 chữ đầu", " ".join(on[:6]))
+        for a in _sents(new):
+            for b in _sents(old):
+                na, nb = norm(a), norm(b)
+                if len(na) < L088_MIN_TOK or len(nb) < L088_MIN_TOK: continue
+                r = difflib.SequenceMatcher(None, na, nb).ratio()
+                if r > best[0]: best = (r, f"câu «{a[:50]}»", b)
+        if best[0] > L088_SIM: hits.append((lab, best[1], best[0], best[2]))
+    return hits
+
+def opener_reuse(new, olds, k=2, n=2):
+    """→ [nhãn] khi k chữ đầu của `new` trùng k chữ đầu của ≥ n text cũ (vd CTA «Còn bạn, …» lần thứ 3)."""
+    o = norm(_l088_clean(new))[:k]
+    if len(o) < k: return []
+    labs = [lab for lab, old in olds if norm(_l088_clean(old))[:k] == o]
+    return labs if len(labs) >= n else []
+
+def _spec_beats(spec): return [x for p in spec.get("parts", []) for x in p.get("scenes", []) + p.get("sections", [])]
+
+def _spec_sel(spec, ids):
+    ids = set(ids or []); return [x for x in _spec_beats(spec) if x["id"] in ids or x.get("beat", "").split(".")[-1] in ids]
+
+def spec_hook_cta(spec):
+    """(hook text, CTA text) đọc từ spec: structure.hook / hook.scenes; structure.cta → beat part=='cta' → beat cuối."""
+    st = spec.get("structure") or {}; bs = _spec_beats(spec)
+    hk = _spec_sel(spec, st.get("hook") or (spec.get("hook") or {}).get("scenes")) or bs[:1]
+    ct = _spec_sel(spec, st.get("cta")) or [x for x in bs if x.get("part") == "cta"] or bs[-1:]
+    j = lambda xs: " ".join(l.get("text", "") for x in xs for l in x.get("lines", []))
+    return j(hk), j(ct)
+
+def draft_parts(md):
+    """Bản nháp script (.md, khung «N. **[Nhãn]** lời»): → (hook, cta, toàn bộ lời đọc). Hook = mục có nhãn «Hook» (không có thì mục 1);
+    CTA = mục có nhãn «CTA» (không có thì mục cuối). Lời đọc = các mục đánh số + gạch đầu dòng con, dừng ở «**End card» hoặc heading «## »."""
+    items = []; spoken = []; inside = False
+    for ln in md.splitlines():
+        m = re.match(r"^\s*(\d+)\.\s*\*\*\[([^\]]+)\]\*\*\s*(.*)$", ln)
+        if m: items.append((m.group(2), m.group(3))); spoken.append(m.group(3)); inside = True; continue
+        if inside and (ln.startswith("## ") or ln.lstrip().startswith("**End card")): inside = False
+        if inside and re.match(r"^\s+[-*]\s+", ln): spoken.append(re.sub(r"^\s+[-*]\s+(\*\*[^*]+\*\*\s*)?", "", ln))
+    if not items: return "", "", ""
+    hk = next((t for lab, t in items if re.search(r"hook", lab, re.I)), items[0][1])
+    ct = next((t for lab, t in items if re.search(r"\bcta\b", lab, re.I)), items[-1][1])
+    return hk, ct, " ".join(spoken)
+
+def _clip_no(path):
+    m = re.search(r"clip-(\d+)", path or ""); return int(m.group(1)) if m else None
+
+def previous_hooks_ctas(cur_clip_no, exclude_file=None, same_clip_ok=False):
+    """Hook/CTA đã khoá của các clip trước (spec.json trong content/clips + content/archive; thêm script-v*-LOCKED.md).
+    same_clip_ok=True (soi bản nháp): lấy cả spec/bản LOCKED cũ của chính clip đó (bản làm lại không được bê nguyên hook cũ)."""
+    hooks, ctas, seen = [], [], set()
+    for f in sorted(glob.glob(os.path.join(REPO, "content/clips/*/final/spec.json")) + glob.glob(os.path.join(REPO, "content/archive/*/final/spec.json"))):
+        n = _clip_no(f)
+        if n is None or (cur_clip_no is not None and (n > cur_clip_no or (n == cur_clip_no and not same_clip_ok))): continue
+        try: h, c = spec_hook_cta(json.load(open(f, encoding="utf8")))
+        except Exception: continue
+        lab = f"clip-{n:02d}" + (" (bản cũ cùng clip)" if n == cur_clip_no else "")
+        for lst, t in ((hooks, h), (ctas, c)):
+            key = (lab, tuple(norm(t)[:12]))
+            if t.strip() and key not in seen: seen.add(key); lst.append((lab, t))
+    for f in sorted(glob.glob(os.path.join(REPO, "content/clips/*/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/clips/*/final/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/archive/*/*-LOCKED.md"))):
+        n = _clip_no(f)
+        if n is None or (exclude_file and os.path.abspath(f) == os.path.abspath(exclude_file)): continue
+        if cur_clip_no is not None and (n > cur_clip_no or (n == cur_clip_no and not same_clip_ok)): continue
+        h, c, _ = draft_parts(open(f, encoding="utf8").read())
+        lab = f"clip-{n:02d} {os.path.basename(f)}"
+        for lst, t in ((hooks, h), (ctas, c)):
+            if t.strip() and not any(norm(_l088_clean(t)) == norm(_l088_clean(o)) for _, o in lst): lst.append((lab, t))
+    return hooks, ctas
+
+def _l088_novelty(hook, cta, cur_clip_no, exclude_file=None, same_clip_ok=False):
+    ph, pc = previous_hooks_ctas(cur_clip_no, exclude_file, same_clip_ok)
+    for what, new, olds in (("hook", hook, ph), ("CTA", cta, pc)):
+        if not new.strip(): warn("L-088", f"không tìm thấy {what} để so"); continue
+        sim = similar_to(new, olds); op = opener_reuse(new, olds)
+        if sim: warn("L-088", f"{what} rập khuôn, giống {what} clip trước: " + "; ".join(f"{lab} ({how} ≈ «{old[:60]}» {r:.2f})" for lab, how, r, old in sim))
+        if op: warn("L-088", f"{what} mở bằng «{' '.join(_l088_clean(new).split()[:2])}» như {len(op)} clip trước ({', '.join(op)}) → đổi cách mở")
+        if not sim and not op: ok("L-088", f"{what} không trùng mẫu {len(olds)} {what} clip trước (ngưỡng {L088_SIM})")
+
+def _l088_evidence(cites, spoken, cur_clip_no, where):
+    (ok if cites else err)("L-088", f"có nguồn truy được ({where}): " + ", ".join(sorted(set(cites))[:6]) if cites else f"không có nguồn truy được (tác giả + năm / PMID / doi) trong {where} → clip phải có dẫn chứng")
+    sur = {w for c in cites for w in re.findall(r"[A-Z][a-z'\-]{2,}", c) if w not in ("PMID",)}
+    sp = _l088_clean(spoken)
+    said = re.search(L088_EVID_SPOKEN, sp, re.I) or any(re.search(rf"(?<!\w){re.escape(s)}(?!\w)", sp) for s in sur)
+    e = err if (cur_clip_no or 0) >= 6 else warn
+    (ok if said else e)("L-088", "lời đọc có nói dẫn chứng (nghiên cứu / tên tác giả)" if said else "lời đọc không nhắc dẫn chứng nào — nguồn chỉ nằm ở end card/fact lock; dẫn chứng phải có trong clip")
+    dry = sorted({m.group(0).lower() for m in re.finditer(L088_DRY, sp, re.I)})
+    if dry: warn("L-088", "dẫn chứng mở kiểu chèn trích dẫn: " + ", ".join(f"«{d}»" for d in dry) + " → soát tay liền mạch: lồng nghiên cứu vào việc nhân vật đang làm / trả lời câu hỏi hook")
+
+def _l088_trend(clip_dir):
+    """L-088 (1) (Hiệp 21:47 qua News): clip có file trend của Social Research có link nguồn — final/trend-signals.md (hoặc ở gốc clip)
+    hoặc research/trends/<ngày>/clip-NN-*trend*.md. Thiếu: ✖ từ clip-06, ⚠ clip ≤05."""
+    n = _clip_no(clip_dir); e = err if (n or 0) >= 6 else warn
+    cands = [p for p in (os.path.join(clip_dir, "final", "trend-signals.md"), os.path.join(clip_dir, "trend-signals.md")) if os.path.exists(p)]
+    if n is not None: cands += sorted(glob.glob(os.path.join(REPO, f"research/trends/*/clip-{n:02d}-*trend*.md")))
+    linked = [p for p in cands if re.search(r"https?://\S+", open(p, encoding="utf8").read())]
+    if linked: ok("L-088", "file trend (Social Research) có link nguồn: " + ", ".join(os.path.relpath(p, REPO) for p in linked))
+    elif cands: e("L-088", "file trend không có link nguồn: " + ", ".join(os.path.relpath(p, REPO) for p in cands))
+    else: e("L-088", f"chưa có file trend của Social Research cho clip (final/trend-signals.md hoặc research/trends/<ngày>/clip-{(n or 0):02d}-*trend*.md, có link nguồn)")
+
+def _l088_facts(clip_dir, extra=()):
+    """L-088 (2) (Hiệp 21:47 qua News): clip có ràng buộc/kiểm fact của Deep Research — fact-package*/fact-check* trong thư mục clip
+    (gốc hoặc final/), research/fact-packages/*clip-NN*, hoặc file mà `fact_lock:` của bản nháp trỏ tới. Thiếu: ✖ từ clip-06, ⚠ ≤05."""
+    n = _clip_no(clip_dir); e = err if (n or 0) >= 6 else warn
+    fs = []
+    for d in (clip_dir, os.path.join(clip_dir, "final")):
+        for pat in ("fact-package*.md", "fact-check*.md", "*fact-lock*.md", "dr-*.md"): fs += glob.glob(os.path.join(d, pat))
+    if n is not None: fs += glob.glob(os.path.join(REPO, f"research/fact-packages/*clip-{n:02d}*.md"))
+    fs += [p for p in extra if os.path.exists(p)]
+    fs = sorted(set(os.path.abspath(p) for p in fs))
+    (ok if fs else e)("L-088", ("ràng buộc/kiểm fact Deep Research: " + ", ".join(os.path.relpath(p, REPO) for p in fs)) if fs else
+        "chưa có file ràng buộc/kiểm fact của Deep Research cho clip (fact-package*.md / fact-check*.md trong thư mục clip hoặc research/fact-packages/*clip-NN*)")
+
+L088_MANUAL = ("manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, "
+               "chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1")
+
+def check_l088(spec, L, fdir, clip_dir):
+    n = _clip_no(clip_dir)
+    sf = os.path.join(fdir, "script-final.md"); stx = open(sf, encoding="utf8").read() if os.path.exists(sf) else ""
+    cites = citations(stx) + citations(json.dumps(spec, ensure_ascii=False))
+    _l088_evidence(cites, " ".join((l.get("text") or "") for _, _, l in L), n, "script-final.md + spec")
+    hook, cta = spec_hook_cta(spec); _l088_novelty(hook, cta, n)
+    _l088_trend(clip_dir); _l088_facts(clip_dir)
+    info("L-088", L088_MANUAL)
+
+def check_l088_file(path):  # --l088 FILE: soi bản nháp script trước khi có spec
+    md = open(path, encoding="utf8").read(); n = _clip_no(os.path.abspath(path))
+    hook, cta, spoken = draft_parts(md)
+    if not spoken: err("L-088", f"{os.path.basename(path)}: không đọc được lời theo beat (khung «N. **[Nhãn]** lời»)"); return
+    _l088_evidence(citations(md), spoken, n, os.path.basename(path))
+    _l088_novelty(hook, cta, n, exclude_file=path, same_clip_ok=not path.endswith("-LOCKED.md"))  # bản đã khoá không so với spec của chính nó
+    m = re.search(r"content/(?:clips|archive)/[^/]+", os.path.abspath(path).replace(os.sep, "/"))
+    fl = [os.path.join(REPO, x.strip()) for x in re.findall(r"(?m)^fact_lock:\s*(\S+\.md)", md)]  # frontmatter fact_lock: <path> (…)
+    if m: cd = os.path.join(REPO, m.group(0)); _l088_trend(cd); _l088_facts(cd, fl)
+    else: warn("L-088", "bản nháp không nằm trong thư mục clip → không tìm được file trend / fact của clip")
+    info("L-088", L088_MANUAL)
+
 def main():
     a = sys.argv[1:]
     outp = a[a.index("--out") + 1] if "--out" in a else None
     if a and a[0] == "--subjects":  # L-087 on draft script files
         for f in a[1:]:
             if f != "--out" and f != outp: check_subjects_file(f)
+        return report(outp)
+    if a and a[0] == "--l088":  # L-088 on draft script files (dẫn chứng + hook/CTA không rập khuôn + trend)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_l088_file(f)
         return report(outp)
     clip_dir = os.path.abspath(a[0]); final = "--final" in a; do_stt = "--stt" in a
     specp = os.path.join(clip_dir, "final", "spec.json")
@@ -760,6 +938,7 @@ def main():
         close = [round(b, 2) for a, b in zip(acc, acc[1:]) if b - a < 0.25]
         (ok if not close else warn)("rule-51", f"{len(acc)} accent SFX, spacing ≥ 0.25s" + (f"; too close at {close}" if close else ""))
     check_l087(spec, L, fdir, clip_dir)
+    check_l088(spec, L, fdir, clip_dir)
     lessons(spec, fdir, L, final, tpath)
     return report(outp)
 
