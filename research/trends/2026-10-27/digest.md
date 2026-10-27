@@ -69,3 +69,7 @@ Không có dữ liệu Apify hôm nay. Proxy tin tức, không có view/comment/
 - B-bonghoa-01: không dùng ảnh/so sánh ngoại hình, không chê “ảnh cũ xấu”, không nêu tên người nổi tiếng đã bắt trend; số 88k tim chỉ là theo Kenh14, không đưa vào clip.
 - Concert: caution (tiền + BIGBANG), không khuyên chi tiêu/đầu tư; chỉ là ý, chưa bridge.
 - Bỏ toàn bộ story chính trị, bạo lực, bệnh tật, tôn giáo, mất việc.
+
+
+## Sửa sau digest (08:05, theo Deep Research)
+- B-bonghoa-01: đổi ví dụ «dậy sớm» thành «uống một ly nước sau bữa sáng» hoặc «đi bộ sau bữa trưa» (Lally 2010 chỉ thử ăn/uống/vận động). Bỏ «ngày 66 / trung vị 66», chỉ dùng 18–254 ngày và «lỡ một lần không ảnh hưởng đáng kể». Hook gợi ý: "Đừng bao giờ khinh thường một bông hoa chưa nở, kể cả thói quen uống một ly nước sau bữa sáng mới tới ngày thứ hai mươi mốt của bạn."
