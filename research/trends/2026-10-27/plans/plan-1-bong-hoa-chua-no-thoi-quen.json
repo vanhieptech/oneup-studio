@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-bong-hoa-chua-no-thoi-quen",
+ "title": "[STUB] “Đừng bao giờ khinh thường một bông hoa chưa nở”: thói quen nở theo lịch riêng, không phải 21 ngày",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "trend-dung-bao-gio-khinh-thuong-mot-bong",
+  "bridge_id": "B-bonghoa-01",
+  "lesson": "4.12 “21 ngày tạo thói quen” là myth (Lally và cộng sự 2010, European Journal of Social Psychology: người tham gia tự chọn một thói quen ăn/uống/vận động hằng ngày; thời gian tới mức tự động trung vị khoảng 66 ngày, dao động 18–254 ngày; lỡ một lần không làm mất tiến trình). Số liệu lấy từ ingest/theme-map, Deep Research phải kiểm lại trước khi viết script.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 + F04 (ngày ấy – bây giờ)",
+  "differentiation": "Mọi người đang nói: ghép ảnh ngày ấy – bây giờ để khoe mình đã “dậy thì thành công” (Kenh14 26/10). Góc của mình: đổi trước/sau ngoại hình thành trước/sau một thói quen nhỏ; ngày 21 chưa thấy gì chỉ là hoa chưa tới mùa, vì thói quen mất từ 18 tới 254 ngày, và lỡ một ngày không về số 0. Không chê ảnh cũ của ai."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "bong-hoa-chua-no-thoi-quen.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đừng bao giờ khinh thường một bông hoa chưa nở, kể cả thói quen dậy sớm mới tới ngày thứ hai mươi mốt của bạn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Never underestimate a flower that hasn't bloomed.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "bong-hoa-chua-no-thoi-quen.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tới ngày thứ hai mươi mốt, chuông báo thức reo mà bạn vẫn phải vật lộn mới ra khỏi giường, nên bạn nghĩ chắc mình không hợp.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Day 21. Still a struggle.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "bong-hoa-chua-no-thoi-quen.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cái bẫy nằm ở con số hai mươi mốt ngày mà ai cũng nhắc, chứ không nằm ở bạn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The trap is the 21-day number.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "bong-hoa-chua-no-thoi-quen.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Khi người ta theo dõi những người tập một thói quen mới mỗi ngày, có người mười tám ngày đã quen, có người mất hơn hai trăm ngày.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "18 days for some. 254 for others.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "bong-hoa-chua-no-thoi-quen.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Và hôm nào lỡ bỏ một buổi, thói quen của họ cũng không bị kéo về số không.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Missing one day doesn't reset you.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "bong-hoa-chua-no-thoi-quen.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy điều bạn cần không phải là nở cho kịp hạn, mà là giữ cho cái nụ đó còn sống mỗi sáng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Don't race the deadline. Keep the bud alive.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "bong-hoa-chua-no-thoi-quen.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn giữ đúng một việc nhỏ mỗi sáng, lỡ một hôm thì hôm sau làm tiếp, và để thói quen nở theo lịch của nó.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One small thing. Miss a day, keep going.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "bong-hoa-chua-no-thoi-quen.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi tới một sáng nào đó, bạn tự dậy trước chuông mà không cần nghĩ, đó mới là lúc hoa nở.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One morning it just happens.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "bong-hoa-chua-no-thoi-quen.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thói quen của bạn đang ở ngày thứ mấy? Ghi số ngày xuống bình luận, mình cùng đếm tiếp.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "What day are you on?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
