@@ -19,6 +19,8 @@ supersedes: bản brain stacking cho r5.3b (đã bị loại)
 - Trend: «Đọc nhiều có giúp viết hay hơn?» (X News, digest 26/10 dòng #10, ngày thứ 3, sat 0.30): https://x.com/i/trending/2113344436113473964 . Bản tiếng Anh «Does Reading Really Improve Writing Skills?» có trong `research/trends/2026-10-25/x-extra.json` và `2026-10-26/x-extra.json`.
 - Cầu nối về core (+1 mỗi ngày): người ta tranh luận đọc nhiều có giỏi lên không → ví dụ: đọc xong một chương hay rồi đọc lại liền cho chắc, vài hôm sau bạn bè hỏi thì không kể lại được ý nào → giãn lần đọc lại ra, mỗi ngày một chút. Trend chỉ là móc mở đầu.
 - Ràng buộc r6 (Deep Research F1, Rule Reviewer): chỉ ví dụ đọc sách, có cảnh đọc lại liền; bỏ nhánh video kỹ năng; không gắn mốc «hai hôm» cho video; không nói đọc lại vô ích, không «một tuần là tốt nhất», không phần trăm, không cơ chế não. Câu nghiên cứu dùng nguyên câu Deep Research đề xuất.
+- Deep Research (28/10 muộn): câu trend chỉ làm móc, kịch bản không trả lời «đọc có giúp viết hay hơn» và không ngầm hứa viết hay hơn; chuyển ngay sang «đọc xong có nhớ được không». Không nói «quên hết», dùng «không kể lại được ý nào» hoặc «quên gần hết». Hành động +1 theo F3/F5: chia vài buổi, mỗi buổi gấp sách tự kể lại ý chính rồi mở ra xem sót chỗ nào; không đặt lịch ngày cụ thể.
+- E1–E4 chỉ là tín hiệu xã hội, không đưa lên màn hình như kết quả; không dùng ý «dopamine», «cứu não».
 - Hướng lời b01–b02 (OpenCreator viết lại tuỳ ý): b01 P15 tự nhận trước (người nói cũng từng đọc xong rồi quên); b02 P03 lật «ai cũng nghĩ đọc lại liền một lần nữa là chắc nhớ», nhắc ý trend «đọc nhiều có giúp…» trong lời.
 
 ## Bằng chứng cho ví dụ (đọc/xem dồn rồi quên)
