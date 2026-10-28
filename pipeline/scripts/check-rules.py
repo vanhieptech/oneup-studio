@@ -7,6 +7,7 @@
   check-rules.py ... --out report.txt
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
+  check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
@@ -555,6 +556,73 @@ def check_flow_beats(items, where="draft"):
 def check_flow_file(path):  # --flow FILE: cờ liền mạch cho bản nháp (L-089)
     check_flow_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-090 (Hiệp 28/10 23:46 + 23:48): --trend <draft.md> — trend phải nằm trong LỜI hook theo nghiên cứu trend đã lưu, không chỉ ở end card/hình
+L090_MANUAL = ("manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; "
+               "(2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, "
+               "và lời khuyên làm được trong chính tình huống đó; ví dụ gượng/hiếm gặp → CHƯA ĐẠT dù luật khác đạt")
+def _l090_norm(s): return " ".join(re.findall(r"[\wÀ-ỹ]+", (s or "").lower()))
+def _frontmatter(md):
+    m = re.match(r"^---\n(.*?)\n---", md, re.S); fm = {}
+    for ln in (m.group(1).splitlines() if m else []):
+        k = re.match(r"^([A-Za-z_]+):\s*(.*)$", ln)
+        if k: fm[k.group(1)] = k.group(2).strip()
+    return fm
+def check_trend_file(path):  # --trend FILE
+    md = open(path, encoding="utf8").read(); fm = _frontmatter(md); where = os.path.basename(path)
+    items = draft_beats(md)
+    if not items: err("L-090", f"{where}: không đọc được lời theo beat"); return
+    hook_spoken = _l090_norm(" ".join(t for _, _, t in items[:2])); spoken = _l090_norm(" ".join(t for _, _, t in items))
+    tdir = os.path.join(REPO, "research", "trends")
+    days = sorted(d for d in os.listdir(tdir) if re.match(r"\d{4}-\d{2}-\d{2}$", d))
+    corpus = {}
+    for f in [os.path.join(tdir, "ingest.md")] + glob.glob(os.path.join(tdir, "*", "digest.md")) + glob.glob(os.path.join(tdir, "*", "*trend*.md")):
+        if os.path.exists(f): corpus[f] = open(f, encoding="utf8").read()
+    pat = open(os.path.join(tdir, "patterns.md"), encoding="utf8").read()
+    tid = fm.get("trend_id", "").split()[0] if fm.get("trend_id") else ""
+    if not tid: err("L-090", f"{where}: thiếu `trend_id:` (id bridge B-… / id trend trong research/trends/ingest.md hoặc digest) → script không khai trend nào từ nghiên cứu đã lưu")
+    else:
+        hits = sorted(f for f, t in corpus.items() if tid in t)
+        (ok if hits else err)("L-090", f"trend_id {tid} " + (f"có trong {len(hits)} file trend đã lưu (mới nhất {os.path.relpath(hits[-1], REPO)})" if hits else "không có trong research/trends/** → không phải trend đã nghiên cứu"))
+        seen_days = [d for d in days if any(tid in corpus.get(os.path.join(tdir, d, x), "") for x in ("digest.md",))]
+        import datetime as _dt
+        if seen_days and (_dt.date.today() - _dt.date.fromisoformat(seen_days[-1])).days > 7:
+            warn("L-090", f"trend {tid} thấy lần cuối {seen_days[-1]} (>7 ngày) → không còn nóng, hỏi Social Research trend mới")
+    hp = re.findall(r"\b([PF]\d{2})\b", fm.get("hook_pattern", ""))
+    if not hp: err("L-090", f"{where}: thiếu `hook_pattern:` (id P../F.. trong research/trends/patterns.md) → hook không theo khuôn trend đã nghiên cứu")
+    for p in hp:
+        row = re.search(rf"(?m)^\| {p} \|.*$", pat)
+        if not row: err("L-090", f"hook_pattern {p} không có trong patterns.md")
+        elif "| tired |" in row.group(0): err("L-090", f"hook_pattern {p} đã «tired» → đổi khuôn")
+        else: ok("L-090", f"hook_pattern {p} active trong patterns.md")
+    tb = re.findall(r"b\d{2}", fm.get("trend_beats", ""))
+    if not tb: err("L-090", "thiếu `trend_beats:` (beat nào dùng trend, phải có b01 hoặc b02)")
+    elif not set(tb) & {"b01", "b02"}: err("L-090", f"trend_beats {', '.join(tb)} không có b01/b02 → trend không nằm ở hook (L-084)")
+    else: ok("L-090", f"trend_beats {', '.join(tb)}")
+    ts = _l090_norm(fm.get("trend_spoken", "").strip("\"'«»"))
+    if not ts: err("L-090", "thiếu `trend_spoken:` (cụm/khoảnh khắc trend NÓI THÀNH LỜI ở b01–b02)")
+    else: (ok if ts in hook_spoken else err)("L-090", f"trend_spoken «{ts}» " + ("có trong lời b01–b02" if ts in hook_spoken else "KHÔNG có trong lời b01–b02 → trend chỉ ở hình/end card"))
+    name = _l090_norm(re.split(r"[(\[—]", fm.get("trend", ""))[0])
+    if name:
+        rest = md[md.find(items[-1][2]) + len(items[-1][2]):] if items else md
+        if name not in spoken and _l090_norm(rest).find(name) >= 0:
+            err("L-090", f"trend «{name}» chỉ xuất hiện ở end card/nguồn/ghi chú, không có trong lời → người xem không nghe/thấy trend")
+        recent = days[-3:]; sat = []
+        for d in recent:
+            for ln in corpus.get(os.path.join(tdir, d, "digest.md"), "").splitlines():
+                k = re.search(r"bão ho[àa]|saturat", ln, re.I)
+                if k and name in _l090_norm(ln[k.start():]) or (name in _l090_norm(ln) and re.search(r"bão ho[àa]\)", ln, re.I)): sat.append(d); break
+        for m_ in re.finditer(r"(?m)^- (\d{4}-\d{2}-\d{2})[^\n]*", pat):
+            ln = m_.group(0)
+            k = re.search(r"bão ho[àa] nên tránh|saturated", ln, re.I)
+            if m_.group(1) in recent and k and name in _l090_norm(ln[k.start():].split(". ")[0]) and m_.group(1) not in sat: sat.append(m_.group(1))
+        if sat: (warn if fm.get("trend_saturation_ok") else err)("L-090", f"trend «{name}» bị ghi bão hoà/nên tránh trong {', '.join(sorted(set(sat)))} → chọn trend khác" + (" (có trend_saturation_ok: Hiệp duyệt dùng kiểu lật)" if fm.get("trend_saturation_ok") else ""))
+    ev = fm.get("example_evidence", "")
+    if not ev: warn("L-090", "thiếu `example_evidence:` (link comment/trend/file chứng minh người xem kênh thật sự gặp tình huống ví dụ)")
+    else:
+        pth = ev.split()[0]
+        (ok if pth.startswith("http") or os.path.exists(os.path.join(REPO, pth)) else warn)("L-090", f"example_evidence {pth}")
+    info("L-090", L090_MANUAL)
+
 def main():
     a = sys.argv[1:]
     outp = a[a.index("--out") + 1] if "--out" in a else None
@@ -565,6 +633,10 @@ def main():
     if a and a[0] == "--l088":  # L-088 on draft script files (dẫn chứng + hook/CTA không rập khuôn + trend)
         for f in a[1:]:
             if f != "--out" and f != outp: check_l088_file(f)
+        return report(outp)
+    if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_trend_file(f)
         return report(outp)
     if a and a[0] == "--flow":  # L-089 on draft script files (đọc to liền mạch: ngôi kể, mối nối beat, cụm lặp khâu câu, liệt kê, câu gắn thêm)
         for f in a[1:]:
