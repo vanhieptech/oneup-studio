@@ -5,14 +5,14 @@ clip: clip-05-hoc-mot-dem
 item: HTB 23.15 (mức A), ghi chú 23.15 + mục 23.14
 theme: DARK
 format: W-16 (hook → ví dụ → nguyên nhân/dẫn chứng → mục tiêu → cách làm → kết quả về chỗ khựng → CTA), một ngôi kể «bạn» (L-089)
-status: DRAFT r6.3 — sửa theo review-script-v6r62.md (75c60ac). Chờ Deep Research soát «để vài hôm rồi mới đọc lại» (F3) và Rule Reviewer chấm. Chưa Chốt, không giọng/render.
+status: DRAFT r6.4 — b04 theo câu Deep Research 29/10 («xong» đổi «hết chương» vì F5 đọc sai). Chờ Rule Reviewer chấm. Chưa Chốt, không giọng/render.
 fact_lock: content/clips/clip-05-hoc-mot-dem/fact-package-v5.md (Deep Research 5861e88) — chỉ F1, F3, F5 trong lời
 trend: Đọc nhiều có giúp viết hay hơn (X News, digest 25–26/10 #10)
 trend_id: 2113344436113473964 (X News https://x.com/i/trending/2113344436113473964; research/trends/2026-10-26/digest.md #10)
 hook_pattern: P15 (self-own first, b01) + P03 (ai cũng nghĩ X, nghiên cứu thấy Y, b03)
 trend_beats: [b02]
 trend_spoken: đọc nhiều có giúp viết hay hơn không
-example_evidence: content/clips/clip-05-hoc-mot-dem/final/trend-signals.md (84c4b5a) E1 x-2108354256801796496, E2 x-2112478702873497958, E4 lichhoc-sq3r, E5 tiktok-kbhoanganh-p15 (P15). Chỉ là tín hiệu xã hội, không lên màn hình. Tín hiệu còn yếu (chưa có comment TikTok tự đo).
+example_evidence: content/clips/clip-05-hoc-mot-dem/final/trend-signals.md (84c4b5a) E1 x-2108354256801796496, E2 x-2112478702873497958, E4 lichhoc-sq3r, E5 tiktok-kbhoanganh-p15 (P15). Chỉ là tín hiệu xã hội, không lên màn hình. Tín hiệu còn yếu (chưa có comment TikTok tự đo); cảnh đọc lại liền một chương chỉ dựa trên F1, chưa có comment làm bằng chứng.
 replaces: script-v5-draft-opencreator.md (r5.3b ac691a8, Hiệp loại 28/10: ví dụ họp/sếp, không trend trong lời)
 ---
 
@@ -24,13 +24,13 @@ Ngôi kể: **«bạn» xuyên suốt**. Một chuyện duy nhất: đọc một
 1. **[Hook P15: nỗi đau nói thẳng + câu hỏi ngay đầu]** Video này chắc vài hôm nữa bạn cũng quên, y như chương sách bạn đọc lại liền cho chắc. Sao đọc hai lần vẫn trôi?
 2. **[Trend dẫn thẳng vào chuyện quên + ví dụ bạn bè hỏi]** Mà ai cũng đang bàn đọc nhiều có giúp viết hay hơn không, trong khi đọc rồi lại quên. Vài hôm sau bạn bè hỏi, bạn không kể lại được ý nào.
 3. **[Trả lời câu hỏi bằng «Vì» + F1]** Vì đọc lại liền chỉ chắc được lúc đầu. Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn người đọc lần hai cách một tuần thì hai ngày sau vẫn hơn.
-4. **[Cách làm: giãn ra vài hôm, tự kể trước khi mở sách (F3, F5)]** Vậy bạn thử để vài hôm rồi mới đọc lại. Trước khi mở sách, bạn tự kể ý chính rồi xem sót chỗ nào.
+4. **[Cách làm: giãn ra vài hôm, tự kể trước khi mở sách (F3, F5)]** Vậy đọc hết chương, bạn để vài hôm rồi mới đọc lại. Trước khi mở sách, bạn thử gấp lại tự kể ý chính, rồi mở ra xem sót gì.
 5. **[Kết quả quay về chỗ khựng + +1 (F3 cùng thời gian)]** Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ.
 6. **[CTA, chính là một lần tự kể lại]** Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
 
-Đọc liền một mạch (L-089): Video này chắc vài hôm nữa bạn cũng quên, y như chương sách bạn đọc lại liền cho chắc. Sao đọc hai lần vẫn trôi? Mà ai cũng đang bàn đọc nhiều có giúp viết hay hơn không, trong khi đọc rồi lại quên. Vài hôm sau bạn bè hỏi, bạn không kể lại được ý nào. Vì đọc lại liền chỉ chắc được lúc đầu. Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn người đọc lần hai cách một tuần thì hai ngày sau vẫn hơn. Vậy bạn thử để vài hôm rồi mới đọc lại. Trước khi mở sách, bạn tự kể ý chính rồi xem sót chỗ nào. Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ. Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
+Đọc liền một mạch (L-089): Video này chắc vài hôm nữa bạn cũng quên, y như chương sách bạn đọc lại liền cho chắc. Sao đọc hai lần vẫn trôi? Mà ai cũng đang bàn đọc nhiều có giúp viết hay hơn không, trong khi đọc rồi lại quên. Vài hôm sau bạn bè hỏi, bạn không kể lại được ý nào. Vì đọc lại liền chỉ chắc được lúc đầu. Một nghiên cứu về cách đọc cũng thấy vậy. Người đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần, nhưng hai ngày sau không còn hơn. Còn người đọc lần hai cách một tuần thì hai ngày sau vẫn hơn. Vậy đọc hết chương, bạn để vài hôm rồi mới đọc lại. Trước khi mở sách, bạn thử gấp lại tự kể ý chính, rồi mở ra xem sót gì. Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ. Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
 
-Chữ lời: 169.
+Chữ lời: 174.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013. Không ghi kênh được tác giả bảo trợ. Không nêu tên creator nào.
 
@@ -55,12 +55,12 @@ Pattern: P15 ở b01 (tự nhận chính video này cũng sẽ bị quên, nối
 | b01 | «video này chắc vài hôm nữa bạn cũng quên, y như chương sách bạn đọc lại liền cho chắc» | câu tự nhận (P15) có «chắc», không gắn mốc ngày làm dẫn chứng |
 | b02 | trend làm móc; vài hôm sau bạn bè hỏi, không kể lại được ý nào | điều kiện đọc liền của F1; không nói «quên hết»; trend chỉ làm móc, không trả lời chuyện viết |
 | b03 | đọc liền: ngay sau hơn người đọc một lần, hai ngày sau không còn hơn; cách một tuần: hai ngày sau vẫn hơn | Câu mở theo Rule Reviewer/Deep Research 28/10, F1 giữ nhóm đọc một lần làm mốc, Rawson & Kintsch 2005 |
-| b04 | để vài hôm rồi mới đọc lại; tự kể ý chính trước khi mở sách, xem sót | F3 (giãn ra, không đặt lịch cụ thể) + F5, 23.15/23.14; chờ Deep Research soát «vài hôm» |
+| b04 | để vài hôm rồi mới đọc lại; gấp lại tự kể ý chính, mở ra xem sót | lời khuyên cẩm nang 23.15 (F3) + F5, Deep Research duyệt 29/10; «vài hôm» không gắn vào nghiên cứu b03 |
 | b05 | «dễ kể lại hơn», «thời gian đọc vẫn như cũ» | F3 (cùng tổng thời gian, giãn ra thì giữ lâu hơn); không hứa kết quả |
 | b06 | hỏi người xem còn kể được ý nào | F5 áp dụng ngay trong CTA (tự kể lại) |
 
 ## Tự soát (kết luận là của Rule Reviewer)
 - Ví dụ đời thường (đọc sách, bạn bè hỏi), không môn học, không họp/sếp, không video. Không «đọc lại vô ích», không «một tuần là tốt nhất», không %, không cơ chế não.
 - Không «xong», «thuộc làu», «chột», «:» «;» trong lời. Mọi vế có chủ ngữ.
-- 169 chữ (140–175, nhắm ~160), bỏ ý chứ không ép câu.
+- 174 chữ (140–175, nhắm ~160), bỏ ý chứ không ép câu.
 - Hook và CTA mới so với clip-04, clip-05 các bản trước. CTA không «comment số».
