@@ -1,0 +1,60 @@
+{"ideas":[
+ {
+  "id": "dot-lanh-gom-tin-nhan",
+  "title": "Sáng se lạnh, nằm trong chăn lướt tin nhắn: gom tin nhắn mở ba lần một ngày",
+  "trend_id": "dot-lanh",
+  "bridge_id": "B-dotlanh-01",
+  "lesson": "3.5 Gom email và tin nhắn, xử lý vài lần cố định mỗi ngày (Kushlev & Dunn 2015: 124 người lớn, hai tuần tự so với chính mình; tuần chỉ check email 3 lần/ngày căng thẳng hằng ngày thấp hơn, số email trả lời như nhau. Bằng chứng B, một nghiên cứu; tin nhắn tức thời là suy ra). Lấy từ research/trends/2026-10-19/ideas.json; Deep Research phải kiểm lại trước khi viết script.",
+  "angle": "empathy / data",
+  "pattern": "P12 + P05 (mốc mùa)",
+  "differentiation": "Mọi người đang nói: khi nào miền Bắc chuyển lạnh, mấy độ, mặc gì (Google Trends VN 'đợt lạnh' 2000+, Tiền Phong, SK&ĐS 28/10). Góc của mình: cái lạnh làm mình nằm lì trong chăn, và việc đầu tiên tay làm là mở tin nhắn; đổi thành gom tin nhắn vào ba khung giờ, sáng ra khỏi chăn trước rồi mới mở.",
+  "theme": "light",
+  "week": 2,
+  "target": "clip-07 (3.5) hook trend",
+  "hook_vi": "Miền Bắc sắp se lạnh rồi. Sáng mai thử ra khỏi chăn trước, rồi mới mở tin nhắn, mà mở đúng ba lần trong ngày thôi.",
+  "moment_vi": "Sáng se lạnh, bạn kéo chăn lên tới cổ, tay mò điện thoại, lướt hết nhóm công việc rồi mới chịu dậy, mà dậy rồi vẫn thấy đầu đã mệt.",
+  "turn_vi": "Bạn đặt ba giờ cố định để mở tin nhắn, sáng ra khỏi chăn rồi mới mở lần đầu, việc gấp thì để người ta gọi.",
+  "hook_en": "Cold mornings are coming. Get out of bed first, then check messages. Three times a day.",
+  "explainer": "HyperFrames: nhiệt kế tụt xuống, chăn quấn Hiệp chibi; điện thoại hiện 3 khung giờ 8h · 12h · 17h, chuông thông báo gom thành 3 cụm thay vì rải cả ngày. Nhãn: Kushlev & Dunn 2015 · cần Deep Research kiểm.",
+  "beats": [
+   {"text": "Miền Bắc sắp se lạnh rồi. Sáng mai thử ra khỏi chăn trước, rồi mới mở tin nhắn, mà mở đúng ba lần trong ngày thôi.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Cold mornings are coming."},
+   {"text": "Sáng se lạnh, bạn kéo chăn lên tới cổ, tay mò điện thoại, lướt hết nhóm công việc rồi mới chịu dậy.", "expression": "neutral", "action": "thinking", "pose": "sitting", "background": "desk", "duration": 7, "caption_en": "Blanket up, phone out."},
+   {"text": "Dậy rồi mà đầu đã thấy mệt, vì cả ngày chưa bắt đầu mà mình đã trả lời cả chục chuyện của người khác.", "expression": "confused", "action": "reacting", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Tired before the day starts."},
+   {"text": "Có một nhóm người lớn được thử hai tuần: một tuần mở email thoải mái, một tuần chỉ mở ba lần mỗi ngày.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "One week unlimited. One week, three checks."},
+   {"text": "Tuần mở ba lần, họ thấy bớt căng thẳng hơn, mà số email trả lời vẫn y như cũ.", "expression": "surprised", "action": "reacting", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Less stress. Same replies."},
+   {"text": "Vậy bạn chọn ba giờ cố định, ví dụ tám giờ sáng, mười hai giờ trưa và năm giờ chiều.", "expression": "happy", "action": "talking", "pose": "standing", "background": "desk", "duration": 6, "caption_en": "Pick three times."},
+   {"text": "Sáng ra khỏi chăn, rửa mặt xong rồi mới mở lần đầu, còn việc gấp thì báo trước để người ta gọi.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Out of bed first. Urgent? They call."},
+   {"text": "Trời lạnh thì cứ quấn chăn thêm năm phút, miễn là năm phút đó không thuộc về nhóm công việc.", "expression": "happy", "action": "idle", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "Five more minutes. Just not for work chats."},
+   {"text": "Bạn chọn ba giờ nào? Ghi ba con số xuống bình luận, sáng mai mình thử cùng.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Which three times?"}
+  ]
+ },
+ {
+  "id": "tu-can-tro-nam-phut",
+  "title": "Tự cản trở bản thân: không cần giải mã nỗi sợ, mở việc ra năm phút",
+  "trend_id": "giai-ma-thoi-quen-tu-can-tro-ban",
+  "bridge_id": "B-tucantro-01",
+  "lesson": "4.9 Trì hoãn là né cảm giác khó chịu, không phải lười (callback clip-02) + 4.7 chia nhỏ việc lớn. Mẹo bắt đầu năm phút lấy từ bài VnExpress (theo Washington Post), không phải số liệu sách. Fact và mức bằng chứng do Deep Research kiểm từ spec clip-02.",
+  "angle": "contrarian / empathy",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: tự cản trở bản thân là do nỗi sợ sâu xa, phải nhận diện và quan sát suy nghĩ (VnExpress 27/10, theo Washington Post). Góc của mình: không cần đào nỗi sợ trước; mở tờ giấy ra đúng năm phút, khi việc có hình hài thì nỗi sợ tự nhỏ lại. Ví dụ đời thường: giấy tờ cần nộp, không dùng chuyện tình cảm hay bệnh.",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (callback clip-02, 4.9)",
+  "hook_vi": "Bạn biết hạn nộp giấy tờ là thứ Sáu, vậy mà tới tối thứ Năm vẫn chưa dám mở cái bìa hồ sơ ra?",
+  "moment_vi": "Bìa hồ sơ nằm trên bàn cả tuần, ngày nào đi ngang cũng thấy, mà tay cứ né, tối nào cũng tự hứa mai làm.",
+  "turn_vi": "Bạn hẹn giờ năm phút, chỉ mở bìa ra và đọc tờ đầu tiên, hết năm phút muốn dừng thì dừng.",
+  "hook_en": "Due Friday. Thursday night, the folder's still closed?",
+  "explainer": "HyperFrames: bìa hồ sơ trên bàn, lịch lật thứ Hai → thứ Năm, cái bóng 'sợ' to dần; đồng hồ 5 phút chạy, bóng co lại khi tờ đầu tiên mở ra.",
+  "beats": [
+   {"text": "Bạn biết hạn nộp giấy tờ là thứ Sáu, vậy mà tới tối thứ Năm vẫn chưa dám mở cái bìa hồ sơ ra?", "expression": "surprised", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Due Friday. Still closed Thursday night."},
+   {"text": "Bìa hồ sơ nằm trên bàn cả tuần, ngày nào đi ngang cũng thấy, mà tay cứ né, tối nào cũng tự hứa mai làm.", "expression": "confused", "action": "thinking", "pose": "sitting", "background": "desk", "duration": 7, "caption_en": "Every night: tomorrow."},
+   {"text": "Người ta gọi cái này là tự cản trở bản thân, và hay khuyên bạn đi tìm nỗi sợ nằm sâu bên dưới.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "They say: find the deep fear."},
+   {"text": "Nhưng ngồi đào nỗi sợ thêm một buổi tối thì bìa hồ sơ vẫn chưa mở, đúng không?", "expression": "neutral", "action": "reacting", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Still closed."},
+   {"text": "Cái mình né thật ra là cảm giác khó chịu lúc bắt đầu, chứ không phải bản thân việc đó.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "We dodge the start, not the task."},
+   {"text": "Vậy bạn hẹn giờ năm phút, chỉ mở bìa ra và đọc tờ đầu tiên, hết năm phút muốn dừng thì dừng.", "expression": "happy", "action": "talking", "pose": "standing", "background": "desk", "duration": 7, "caption_en": "Five minutes. First page only."},
+   {"text": "Khi việc có hình hài rồi, nó thường nhỏ hơn cái bóng bạn tưởng tượng cả tuần.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Smaller than the shadow."},
+   {"text": "Và nếu bạn làm tiếp quá năm phút, thì đó là phần thưởng, không phải nghĩa vụ.", "expression": "happy", "action": "idle", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "Going past five is a bonus."},
+   {"text": "Việc gì bạn đang né cả tuần nay? Ghi một chữ xuống bình luận, tối nay mình cùng mở năm phút.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "What are you dodging?"}
+  ]
+ }
+]}

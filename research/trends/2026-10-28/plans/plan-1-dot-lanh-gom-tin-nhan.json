@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-dot-lanh-gom-tin-nhan",
+ "title": "[STUB] Sáng se lạnh, nằm trong chăn lướt tin nhắn: gom tin nhắn mở ba lần một ngày",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "dot-lanh",
+  "bridge_id": "B-dotlanh-01",
+  "lesson": "3.5 Gom email và tin nhắn, xử lý vài lần cố định mỗi ngày (Kushlev & Dunn 2015: 124 người lớn, hai tuần tự so với chính mình; tuần chỉ check email 3 lần/ngày căng thẳng hằng ngày thấp hơn, số email trả lời như nhau. Bằng chứng B, một nghiên cứu; tin nhắn tức thời là suy ra). Lấy từ research/trends/2026-10-19/ideas.json; Deep Research phải kiểm lại trước khi viết script.",
+  "angle": "empathy / data",
+  "pattern": "P12 + P05 (mốc mùa)",
+  "differentiation": "Mọi người đang nói: khi nào miền Bắc chuyển lạnh, mấy độ, mặc gì (Google Trends VN 'đợt lạnh' 2000+, Tiền Phong, SK&ĐS 28/10). Góc của mình: cái lạnh làm mình nằm lì trong chăn, và việc đầu tiên tay làm là mở tin nhắn; đổi thành gom tin nhắn vào ba khung giờ, sáng ra khỏi chăn trước rồi mới mở."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "dot-lanh-gom-tin-nhan.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Miền Bắc sắp se lạnh rồi. Sáng mai thử ra khỏi chăn trước, rồi mới mở tin nhắn, mà mở đúng ba lần trong ngày thôi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Cold mornings are coming.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "dot-lanh-gom-tin-nhan.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sáng se lạnh, bạn kéo chăn lên tới cổ, tay mò điện thoại, lướt hết nhóm công việc rồi mới chịu dậy.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Blanket up, phone out.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "dot-lanh-gom-tin-nhan.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dậy rồi mà đầu đã thấy mệt, vì cả ngày chưa bắt đầu mà mình đã trả lời cả chục chuyện của người khác.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Tired before the day starts.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "dot-lanh-gom-tin-nhan.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nhóm người lớn được thử hai tuần: một tuần mở email thoải mái, một tuần chỉ mở ba lần mỗi ngày.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One week unlimited. One week, three checks.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "dot-lanh-gom-tin-nhan.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tuần mở ba lần, họ thấy bớt căng thẳng hơn, mà số email trả lời vẫn y như cũ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Less stress. Same replies.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "dot-lanh-gom-tin-nhan.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy bạn chọn ba giờ cố định, ví dụ tám giờ sáng, mười hai giờ trưa và năm giờ chiều.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Pick three times.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "dot-lanh-gom-tin-nhan.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sáng ra khỏi chăn, rửa mặt xong rồi mới mở lần đầu, còn việc gấp thì báo trước để người ta gọi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Out of bed first. Urgent? They call.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "dot-lanh-gom-tin-nhan.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trời lạnh thì cứ quấn chăn thêm năm phút, miễn là năm phút đó không thuộc về nhóm công việc.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Five more minutes. Just not for work chats.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "dot-lanh-gom-tin-nhan.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn chọn ba giờ nào? Ghi ba con số xuống bình luận, sáng mai mình thử cùng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Which three times?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

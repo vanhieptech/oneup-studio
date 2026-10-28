@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-20
+updated: 2026-10-28
 tags: [ideas]
 ---
 # Idea bank
@@ -56,3 +56,5 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Brain stacking: chồng sách đẹp chưa đủ, điện thoại phải nằm ở phòng khác (B-brainstack-01) | 3.1 (+4.10) | trụ 2 tập trung | "Bạn cũng xếp một chồng sách thật đẹp để khỏi lướt điện thoại, vậy mà ngồi năm phút là tay lại mò máy?" | DARK | stub 2026-10-26, chờ duyệt (clip-08 hook thay thế; `research/trends/2026-10-26/plans/plan-1-brain-stack-dien-thoai-phong-khac.json`) |
 | Chọn nhà thuê: cộng cả giờ ngồi xe vào giá (B-commute-02) | 4.18 | trụ 1 thời gian / tiền | "Bạn chọn căn trọ rẻ hơn một triệu, mà đã tính mỗi ngày mình ngồi xe bao lâu chưa?" | DARK | stub 2026-10-26, chờ duyệt (sách ghi tranh cãi; dòng an toàn + Hiệp duyệt; `research/trends/2026-10-26/plans/plan-2-thue-nha-tinh-gio-di-lam.json`) |
 | “Đừng bao giờ khinh thường một bông hoa chưa nở”: thói quen nở theo lịch riêng, không phải 21 ngày (B-bonghoa-01) | 4.12 | trụ 1 | "Đừng bao giờ khinh thường một bông hoa chưa nở, kể cả thói quen uống một ly nước sau bữa sáng mới tới ngày thứ hai mươi mốt của bạn." | DARK | stub 2026-10-27, chờ duyệt (clip-06 hook mới; `research/trends/2026-10-27/plans/plan-1-bong-hoa-chua-no-thoi-quen.json`) |
+| Sáng se lạnh: ra khỏi chăn trước, gom tin nhắn mở ba lần một ngày (B-dotlanh-01) | 3.5 | trụ 2 tập trung | "Miền Bắc sắp se lạnh rồi. Sáng mai thử ra khỏi chăn trước, rồi mới mở tin nhắn, mà mở đúng ba lần trong ngày thôi." | LIGHT | stub 2026-10-28, chờ duyệt (clip-07 hook trend; `research/trends/2026-10-28/plans/plan-1-dot-lanh-gom-tin-nhan.json`) |
+| Tự cản trở bản thân: không cần đào nỗi sợ, mở việc ra năm phút (B-tucantro-01) | 4.9 (+4.7) | trụ 1 | "Bạn biết hạn nộp giấy tờ là thứ Sáu, vậy mà tới tối thứ Năm vẫn chưa dám mở cái bìa hồ sơ ra?" | DARK | stub 2026-10-28, chờ duyệt (callback clip-02; `research/trends/2026-10-28/plans/plan-2-tu-can-tro-nam-phut.json`) |
