@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active
-updated: 2026-10-12
+updated: 2026-10-28
 tags: [agents, retrieval, workflow]
 ---
 # AGENTS.md: cách AI làm việc trong repo này
@@ -27,6 +27,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 | Storyboard | `storyboard/spec.json` là nguồn, PNG là kết quả render. Renderer: `pipeline/storyboard/render.py` |
 | Trend | `research/trends/ingest.md` (thư viện sống) + `research/trends/YYYY-MM-DD/` |
 | Quy trình | `pipeline/pipeline.md` |
+| **Tìm kiếm (mặc định XERJ)** | `docs/conventions/search-xerj.md`: `xerj search --prefix oneup "..."` (repo) · `--prefix ref` (repo tham khảo, tra **trước khi viết code pipeline mới**) · index lại `pipeline/scripts/xerj-index.sh` · dự phòng `rg`/`git grep` |
 | **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` · mẫu `content/archive/clip-01-implementation-intention/final/` |
 | Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) |
 

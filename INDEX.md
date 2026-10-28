@@ -95,11 +95,18 @@ tags: [index, retrieval]
 | clip-05.post | post-package | bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG. | `content/clips/clip-05-hoc-mot-dem/final/post.md` | Bộ final đăng clip-05 v4 «Học dồn một đêm» |
 | clip-05.script-final | script | final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3) | `content/clips/clip-05-hoc-mot-dem/final/script-final.md` | clip-05 «Học dồn một đêm» — script final |
 | content.clips.clip-05-hoc-mot-dem.final.visual-plan-v4 | visual-plan | ready | `content/clips/clip-05-hoc-mot-dem/final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
+| content.clips.clip-05-hoc-mot-dem.review-script-v5r2 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md` | Verdict: CHƯA ĐẠT (4 lỗi chặn, 9 ghi chú) |
+| content.clips.clip-05-hoc-mot-dem.review-script-v5r3 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r3.md` | Verdict: CHƯA ĐẠT (2 lỗi chặn nhỏ, sửa được mà không tăng số chữ) |
+| content.clips.clip-05-hoc-mot-dem.review-script-v5r4 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r4.md` | Verdict (cũ): ĐẠT, trình được Hiệp kèm 2 việc Hiệp quyết |
+| content.clips.clip-05-hoc-mot-dem.review-script-v5r5 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r5.md` | Verdict: CHƯA ĐẠT (1 lỗi chặn ở cổng đọc to; các luật khác đạt) |
+| content.clips.clip-05-hoc-mot-dem.review-script-v5r52 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r52.md` | Verdict: CHƯA ĐẠT (3 lỗi chặn nhỏ ở cổng đọc to; mọi luật khác đạt) |
+| content.clips.clip-05-hoc-mot-dem.review-script-v5r53 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r53.md` | Verdict: ĐẠT ở tầng script. Không còn lỗi chặn. Hiệp quyết H2 rồi Chốt. |
 | content.clips.clip-05-hoc-mot-dem.script-v1-draft-opencreator | None | nháp v1 — CHƯA Chốt; chờ Deep Research xác nhận lời + Rule Reviewer chấm. Không voice/render trước «Chốt» (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md` | clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16) |
 | content.clips.clip-05-hoc-mot-dem.script-v2-draft-opencreator | None | nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v2-draft-opencreator.md` | [v2 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16) |
 | content.clips.clip-05-hoc-mot-dem.script-v3-draft-opencreator | None | nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v3-draft-opencreator.md` | [v3 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16) |
 | content.clips.clip-05-hoc-mot-dem.script-v4-LOCKED | None | «Chốt» bởi Hiệp 2026-10-21 23:01 trên bản 8ec205e. Đổi bất kỳ chữ nào thì Chốt mất hiệu lực (L-072). | `content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md` | clip-05 v4 — lời thoại theo beat |
 | content.clips.clip-05-hoc-mot-dem.script-v4-draft-opencreator | None | CHỐT — Hiệp «Chốt script» 21/10/2026 23:01 (bản 8ec205e, Rule Reviewer đạt). Lời không sửa thêm. | `content/clips/clip-05-hoc-mot-dem/script-v4-draft-opencreator.md` | clip-05 v4 — lời thoại theo beat |
+| content.clips.clip-05-hoc-mot-dem.script-v5-draft-opencreator | None | DRAFT r5 — viết lại theo L-089 (Hiệp trượt r4 499376d vì rời rạc): một ngôi kể «bạn», câu nối câu. Chờ Deep Research soát rút gọn F1 và Rule Reviewer đọc to rồi chấm. Chưa Chốt, không giọng/render. | `content/clips/clip-05-hoc-mot-dem/script-v5-draft-opencreator.md` | clip-05 v5 r5 — lời thoại theo beat |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -110,6 +117,7 @@ tags: [index, retrieval]
 | story-bank | plan | needs-confirmation | `content/story-bank.md` | Story bank: chuyện thật của Hiệp (rule-41) |
 | theme-map | plan | active | `content/theme-map.md` | Theme map — @hi.oneup (LIGHT / DARK theo tone) |
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
+| search-xerj | convention | active | `docs/conventions/search-xerj.md` | Tìm kiếm bằng XERJ: repo + repo tham khảo |
 | storage | convention | active | `docs/conventions/storage.md` | Quy ước lưu trữ (luật 65, L-034) |
 | rules | rules | active | `docs/plans/hi-oneup-video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026) |
 | docs.plans.hi-oneup-video-rules.v1.bak | plan | draft | `docs/plans/hi-oneup-video-rules.v1.bak.md` | @hi.oneup — Video rules (v1, 2026-10-12) |
@@ -197,9 +205,17 @@ tags: [index, retrieval]
 | trends-2026-10-21 | trend-digest | draft-needs-review | `research/trends/2026-10-21/digest.md` | Trend digest 2026-10-21 |
 | trends-2026-10-22.apify | research-trends | blocked | `research/trends/2026-10-22/apify/README.md` | Apify 2026-10-22 — không chạy được |
 | trends-2026-10-22 | trend-digest | draft-needs-review | `research/trends/2026-10-22/digest.md` | Trend digest 2026-10-22 |
+| trends-2026-10-25.apify | research-trends | skipped-quota | `research/trends/2026-10-25/apify/README.md` | Apify 2026-10-25 — vẫn hết hạn mức (Hiệp chọn chờ chu kỳ mới, 2026-10-22) |
+| trends-2026-10-25 | trend-digest | draft-needs-review | `research/trends/2026-10-25/digest.md` | Trend digest 2026-10-25 (Chủ nhật) |
+| research.trends.2026-10-26.clip-05-v5-trend | None | None | `research/trends/2026-10-26/clip-05-v5-trend.md` | Trend cho clip-05 v5 |
+| trends-2026-10-26 | trend-digest | draft-needs-review | `research/trends/2026-10-26/digest.md` | Trend digest 2026-10-26 (Thứ Hai) |
+| research.trends.2026-10-27.clip-06-bong-hoa-trend | None | đề xuất, chờ Hiệp chọn | `research/trends/2026-10-27/clip-06-bong-hoa-trend.md` | Trend cho clip-06: “Đừng bao giờ khinh thường một bông hoa chưa nở” |
+| trends-2026-10-27 | trend-digest | draft-needs-review | `research/trends/2026-10-27/digest.md` | Trend digest 2026-10-27 (Thứ Ba) |
+| trends-2026-10-28 | trend-digest | draft-needs-review | `research/trends/2026-10-28/digest.md` | Trend digest 2026-10-28 (Thứ Tư) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
+| trends-weekly-2026-W43 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W43.md` | Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
@@ -399,7 +415,7 @@ tags: [index, retrieval]
 | clip-02 | None | `content/clips/clip-02-procrastination-discomfort` | archive, final |
 | clip-03 | None | `content/clips/clip-03-big-task-chunking` | README.md, archive, final |
 | clip-04 | None | `content/clips/clip-04-gap-sach-tu-kiem` | README.md, archive, final |
-| clip-05 | None | `content/clips/clip-05-hoc-mot-dem` | fact-package.md, final, script-v1-draft-opencreator.md, script-v2-draft-opencreator.md, script-v3-draft-opencreator.md, script-v4-LOCKED.md, script-v4-draft-opencreator.md |
+| clip-05 | None | `content/clips/clip-05-hoc-mot-dem` | fact-package-v5.md, fact-package.md, final, review-script-v5r2.md, review-script-v5r3.md, review-script-v5r4.md, review-script-v5r5.md, review-script-v5r52.md, review-script-v5r53.md, script-v1-draft-opencreator.md, script-v2-draft-opencreator.md, script-v3-draft-opencreator.md, script-v4-LOCKED.md, script-v4-draft-opencreator.md, script-v5-draft-opencreator.md |
 
 ## Assets & tools
 | id | path | description |

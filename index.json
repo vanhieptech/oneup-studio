@@ -5,7 +5,7 @@
    "id": "agents",
    "type": "guide",
    "status": "active",
-   "updated": "2026-10-12",
+   "updated": "2026-10-28",
    "path": "AGENTS.md",
    "title": "AGENTS.md: cách AI làm việc trong repo này"
   },
@@ -666,6 +666,54 @@
    "title": "Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual)"
   },
   {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r2",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-26",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md",
+   "title": "Verdict: CHƯA ĐẠT (4 lỗi chặn, 9 ghi chú)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r3",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-26",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r3.md",
+   "title": "Verdict: CHƯA ĐẠT (2 lỗi chặn nhỏ, sửa được mà không tăng số chữ)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r4",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-26",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r4.md",
+   "title": "Verdict (cũ): ĐẠT, trình được Hiệp kèm 2 việc Hiệp quyết"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r5",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-27",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r5.md",
+   "title": "Verdict: CHƯA ĐẠT (1 lỗi chặn ở cổng đọc to; các luật khác đạt)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r52",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-27",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r52.md",
+   "title": "Verdict: CHƯA ĐẠT (3 lỗi chặn nhỏ ở cổng đọc to; mọi luật khác đạt)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r53",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-27",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r53.md",
+   "title": "Verdict: ĐẠT ở tầng script. Không còn lỗi chặn. Hiệp quyết H2 rồi Chốt."
+  },
+  {
    "id": "content.clips.clip-05-hoc-mot-dem.script-v1-draft-opencreator",
    "type": null,
    "status": "nháp v1 — CHƯA Chốt; chờ Deep Research xác nhận lời + Rule Reviewer chấm. Không voice/render trước «Chốt» (L-072).",
@@ -706,10 +754,18 @@
    "title": "clip-05 v4 — lời thoại theo beat"
   },
   {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v5-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r5 — viết lại theo L-089 (Hiệp trượt r4 499376d vì rời rạc): một ngôi kể «bạn», câu nối câu. Chờ Deep Research soát rút gọn F1 và Rule Reviewer đọc to rồi chấm. Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-26",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v5-draft-opencreator.md",
+   "title": "clip-05 v5 r5 — lời thoại theo beat"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-20",
+   "updated": "2026-10-28",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -784,6 +840,14 @@
    "updated": "2026-10-12",
    "path": "content/voice-profile.md",
    "title": "Voice profile: Hiệp (@hi.oneup)"
+  },
+  {
+   "id": "search-xerj",
+   "type": "convention",
+   "status": "active",
+   "updated": "2026-10-28",
+   "path": "docs/conventions/search-xerj.md",
+   "title": "Tìm kiếm bằng XERJ: repo + repo tham khảo"
   },
   {
    "id": "storage",
@@ -1482,10 +1546,66 @@
    "title": "Trend digest 2026-10-22"
   },
   {
+   "id": "trends-2026-10-25.apify",
+   "type": "research-trends",
+   "status": "skipped-quota",
+   "updated": "2026-10-25",
+   "path": "research/trends/2026-10-25/apify/README.md",
+   "title": "Apify 2026-10-25 — vẫn hết hạn mức (Hiệp chọn chờ chu kỳ mới, 2026-10-22)"
+  },
+  {
+   "id": "trends-2026-10-25",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-25",
+   "path": "research/trends/2026-10-25/digest.md",
+   "title": "Trend digest 2026-10-25 (Chủ nhật)"
+  },
+  {
+   "id": "research.trends.2026-10-26.clip-05-v5-trend",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-26",
+   "path": "research/trends/2026-10-26/clip-05-v5-trend.md",
+   "title": "Trend cho clip-05 v5"
+  },
+  {
+   "id": "trends-2026-10-26",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-26",
+   "path": "research/trends/2026-10-26/digest.md",
+   "title": "Trend digest 2026-10-26 (Thứ Hai)"
+  },
+  {
+   "id": "research.trends.2026-10-27.clip-06-bong-hoa-trend",
+   "type": null,
+   "status": "đề xuất, chờ Hiệp chọn",
+   "updated": "2026-10-27",
+   "path": "research/trends/2026-10-27/clip-06-bong-hoa-trend.md",
+   "title": "Trend cho clip-06: “Đừng bao giờ khinh thường một bông hoa chưa nở”"
+  },
+  {
+   "id": "trends-2026-10-27",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-27",
+   "path": "research/trends/2026-10-27/digest.md",
+   "title": "Trend digest 2026-10-27 (Thứ Ba)"
+  },
+  {
+   "id": "trends-2026-10-28",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-28",
+   "path": "research/trends/2026-10-28/digest.md",
+   "title": "Trend digest 2026-10-28 (Thứ Tư)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-21",
+   "updated": "2026-10-28",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -1493,7 +1613,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-21",
+   "updated": "2026-10-28",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -1504,6 +1624,14 @@
    "updated": "2026-10-18",
    "path": "research/trends/weekly/2026-W42.md",
    "title": "Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10)"
+  },
+  {
+   "id": "trends-weekly-2026-W43",
+   "type": "trend-weekly",
+   "status": "draft-needs-review",
+   "updated": "2026-10-25",
+   "path": "research/trends/weekly/2026-W43.md",
+   "title": "Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10)"
   },
   {
    "id": "refs",
@@ -2746,13 +2874,21 @@
    "path": "content/clips/clip-05-hoc-mot-dem",
    "theme": null,
    "files": [
+    "fact-package-v5.md",
     "fact-package.md",
     "final",
+    "review-script-v5r2.md",
+    "review-script-v5r3.md",
+    "review-script-v5r4.md",
+    "review-script-v5r5.md",
+    "review-script-v5r52.md",
+    "review-script-v5r53.md",
     "script-v1-draft-opencreator.md",
     "script-v2-draft-opencreator.md",
     "script-v3-draft-opencreator.md",
     "script-v4-LOCKED.md",
-    "script-v4-draft-opencreator.md"
+    "script-v4-draft-opencreator.md",
+    "script-v5-draft-opencreator.md"
    ]
   }
  ],
