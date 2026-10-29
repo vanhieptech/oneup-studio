@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-ghet-viec-van-ra-thoi-quen-bo",
+ "title": "[STUB] Việc mình không thích thì ráng ba năm, thói quen mới ba tuần đã bỏ: tính thói quen theo tháng",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "why-we-endure-hated-jobs-but-ditch-new",
+  "bridge_id": "B-kiennhan-01",
+  "lesson": "4.12 Thói quen mới tính theo tháng, không theo “21 ngày” (Lally và cộng sự 2010; theo ràng buộc Deep Research 27/10: chỉ dùng 18–254 ngày và «lỡ một lần không ảnh hưởng đáng kể», không dùng «trung vị 66 ngày»; mức B, một nghiên cứu 96 người). Số 22%/một nửa doanh nghiệp đóng cửa chỉ có trong tóm tắt X, chưa tự kiểm, không dùng.",
+  "angle": "contrarian / humor",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: mình kiên nhẫn với công việc mình ghét mà bỏ việc riêng quá nhanh, nên hãy cho dự án riêng thời gian dài hơn (Justin Welsh qua X News 28/10). Góc của mình: đem chính sự kiên nhẫn đó áp vào một thói quen nhỏ, tính theo tháng; lỡ một hôm không sao, hôm nay làm lại đúng một lần."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Công việc mình không thích thì ráng được ba năm, mà thói quen mới mới ba tuần chưa thấy gì đã muốn bỏ?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Years for a job. Weeks for a habit?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sáng nào mình cũng dậy đi làm đều, đâu có ai bắt phải thấy vui rồi mới chịu đi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "We show up anyway.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn ly nước sau bữa sáng, uống đều được ba tuần, chưa thấy khác gì là bắt đầu lơ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Three weeks, then drift.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vì ai cũng nói hai mươi mốt ngày là thành, nên tới ngày hai mươi hai mà chưa tự động thì tưởng mình hỏng.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The 21-day myth.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nghiên cứu theo dõi người tập một việc nhỏ mỗi ngày: người nhanh mười tám ngày, người chậm tới hai trăm năm mươi tư ngày mới quen.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "18 to 254 days.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b06",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà lỡ một hôm cũng hông làm hỏng cả chặng đâu.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Missing one day is fine.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy cho thói quen mới chút kiên nhẫn mà bạn vẫn dành cho công việc: tính theo tháng, hông tính theo ngày.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Count in months.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chỉ cần làm lại đúng một lần thôi, một ly nước sau bữa sáng.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Just once today.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "ghet-viec-van-ra-thoi-quen-bo.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thói quen nào của bạn đang tới tuần thứ ba? Kể tên nó ra, mình cho nó thêm một tháng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Give it one more month.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

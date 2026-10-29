@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-phim-ngan-sac-phong-khach",
+ "title": "[STUB] Tập “chủ tịch giả nghèo” dừng ngay khúc gay cấn: cắm sạc điện thoại ngoài phòng khách rồi đi ngủ",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "thoi-nao-vi-nghien-phim-ngan-ai",
+  "bridge_id": "B-phimngan-01",
+  "lesson": "4.15 Đặt giới hạn cứng cho video ngắn và lướt vô định (bằng chứng C, số liệu sách là Trung Quốc, không dùng) + 3.9 Tới giờ thì ngủ, không thức vì game/video ngắn; cách đỡ tốn sức nhất là điện thoại không vào phòng ngủ (Exelmans & Van den Bulck 2016: khảo sát 844 người lớn, ai tắt đèn rồi còn dùng điện thoại thì lâu ngủ hơn, mệt hơn ban ngày; tương quan, một thời điểm. Carter 2016 là trẻ em/thiếu niên, không dùng cho người lớn; 6,97h/0:10 là số Trung Quốc, không dùng). Deep Research phải kiểm trước khi viết script.",
+  "angle": "empathy / contrarian",
+  "pattern": "P01 + P15",
+  "differentiation": "Mọi người đang nói: phim ngắn AI làm “thối não”, bào mòn trí nhớ, phải cai (VnExpress 28/10). Góc của mình: không hù chuyện não, không bắt bỏ phim; cái mất đo được là giờ ngủ, và việc nhỏ nhất làm được tối nay là đổi chỗ cắm sạc. Tập phim sáng mai vẫn còn, giấc ngủ đêm nay thì không."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "phim-ngan-sac-phong-khach.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tập “chủ tịch giả nghèo” tối nay dừng ngay khúc gay cấn? Kệ nó, cắm sạc điện thoại ngoài phòng khách rồi đi ngủ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Cliffhanger? Leave it.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "phim-ngan-sac-phong-khach.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy phim ngắn chưa tới một phút, tập nào cũng dừng đúng chỗ, nên mình hay dặn lòng xem một tập nữa thôi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Just one more episode.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "phim-ngan-sac-phong-khach.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngẩng lên thì đồng hồ đã gần ba giờ sáng, mà sáng mai vẫn phải đi làm sớm.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Almost 3 a.m.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "phim-ngan-sac-phong-khach.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một khảo sát gần chín trăm người lớn: ai tắt đèn rồi còn cầm máy thì lâu ngủ hơn, hôm sau cũng mệt hơn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Phone after lights out: slower sleep.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "phim-ngan-sac-phong-khach.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên mình hông bảo bạn bỏ phim, chỉ đổi chỗ để cái máy thôi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Don't quit. Move the phone.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "phim-ngan-sac-phong-khach.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay, mười giờ rưỡi, cắm sạc ở phòng khách, rồi mới vào phòng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "10:30. Charger in the living room.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "phim-ngan-sac-phong-khach.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tập phim vẫn nằm đó, sáng mai coi tiếp, nó hông chạy đi đâu hết.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The episode will wait.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "phim-ngan-sac-phong-khach.b08",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn giấc ngủ đêm nay mà mất thì mất luôn, hông có tập sau để coi bù.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Tonight's sleep won't.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "phim-ngan-sac-phong-khach.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đêm nay điện thoại của bạn ngủ ở đâu? Kể mình nghe chỗ bạn cắm sạc nha.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Where does your phone sleep?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-28
+updated: 2026-10-29
 tags: [ideas]
 ---
 # Idea bank
@@ -58,3 +58,8 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | “Đừng bao giờ khinh thường một bông hoa chưa nở”: thói quen nở theo lịch riêng, không phải 21 ngày (B-bonghoa-01) | 4.12 | trụ 1 | "Đừng bao giờ khinh thường một bông hoa chưa nở, kể cả thói quen uống một ly nước sau bữa sáng mới tới ngày thứ hai mươi mốt của bạn." | DARK | stub 2026-10-27, chờ duyệt (clip-06 hook mới; `research/trends/2026-10-27/plans/plan-1-bong-hoa-chua-no-thoi-quen.json`) |
 | Sáng se lạnh: ra khỏi chăn trước, gom tin nhắn mở ba lần một ngày (B-dotlanh-01) | 3.5 | trụ 2 tập trung | "Miền Bắc sắp se lạnh rồi. Sáng mai thử ra khỏi chăn trước, rồi mới mở tin nhắn, mà mở đúng ba lần trong ngày thôi." | LIGHT | stub 2026-10-28, chờ duyệt (clip-07 hook trend; `research/trends/2026-10-28/plans/plan-1-dot-lanh-gom-tin-nhan.json`) |
 | Tự cản trở bản thân: không cần đào nỗi sợ, mở việc ra năm phút (B-tucantro-01) | 4.9 (+4.7) | trụ 1 | "Bạn biết hạn nộp giấy tờ là thứ Sáu, vậy mà tới tối thứ Năm vẫn chưa dám mở cái bìa hồ sơ ra?" | DARK | stub 2026-10-28, chờ duyệt (callback clip-02; `research/trends/2026-10-28/plans/plan-2-tu-can-tro-nam-phut.json`) |
+| Phim ngắn “chủ tịch giả nghèo” dừng ở cao trào: cắm sạc ngoài phòng khách rồi ngủ (B-phimngan-01) | 4.15 (+3.9) | trụ 2 tập trung / trụ 3 năng lượng | "Tập “chủ tịch giả nghèo” tối nay dừng ngay khúc gay cấn? Kệ nó, cắm sạc điện thoại ngoài phòng khách rồi đi ngủ." | LIGHT | stub 2026-10-29, chờ duyệt (clip-10 hook trend; `research/trends/2026-10-29/plans/plan-1-phim-ngan-sac-phong-khach.json`) |
+| Kiên nhẫn với việc mình không thích, mà bỏ thói quen mới ở tuần thứ ba (B-kiennhan-01) | 4.12 | trụ 1 | "Công việc mình không thích thì ráng được ba năm, mà thói quen mới mới ba tuần chưa thấy gì đã muốn bỏ?" | DARK | stub 2026-10-29, chờ Hiệp chọn (clip-06 hook thay thế B-bonghoa-01; `research/trends/2026-10-29/plans/plan-2-ghet-viec-van-ra-thoi-quen-bo.json`) |
+| “I’m so sorry”: gỡ từng lớp góc làm việc hoàn hảo, lộ điện thoại úp cạnh laptop (B-imsorry-01) | 3.1 | trụ 2 tập trung | "Đây là góc làm việc siêu tập trung của mình… gỡ ra từng lớp nha. I’m so sorry." | DARK | ý tưởng (2026-10-29; clip-08 hook thay thế; format bão hoà ngoài, ngày 4) |
+| Overthinking = nghĩ mà không chốt: đứng dậy làm một việc phải động tay (B-overthink-01) | 3.14 | trụ 4 tâm trí | "“Overthinking không phải nghĩ nhiều, mà là nghĩ mà không chốt.” Lần tới thấy mình nghĩ vòng vòng, đứng dậy rửa cái ly trước đã." | LIGHT | ý tưởng (2026-10-29; clip-24) |
+| Cà phê sáng không phải ly đáng lo, ly 3 giờ chiều mới là (B-caphesang-01) | 3.4 | trụ 3 năng lượng | "Cả mạng đang cãi sáng dậy phải chờ chín mươi phút mới được uống cà phê. Mà ly đáng lo là ly lúc ba giờ chiều." | DARK | ý tưởng (2026-10-29; clip-17 hook thay thế) |

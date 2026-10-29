@@ -1,0 +1,60 @@
+{"ideas":[
+ {
+  "id": "phim-ngan-sac-phong-khach",
+  "title": "Tập “chủ tịch giả nghèo” dừng ngay khúc gay cấn: cắm sạc điện thoại ngoài phòng khách rồi đi ngủ",
+  "trend_id": "thoi-nao-vi-nghien-phim-ngan-ai",
+  "bridge_id": "B-phimngan-01",
+  "lesson": "4.15 Đặt giới hạn cứng cho video ngắn và lướt vô định (bằng chứng C, số liệu sách là Trung Quốc, không dùng) + 3.9 Tới giờ thì ngủ, không thức vì game/video ngắn; cách đỡ tốn sức nhất là điện thoại không vào phòng ngủ (Exelmans & Van den Bulck 2016: khảo sát 844 người lớn, ai tắt đèn rồi còn dùng điện thoại thì lâu ngủ hơn, mệt hơn ban ngày; tương quan, một thời điểm. Carter 2016 là trẻ em/thiếu niên, không dùng cho người lớn; 6,97h/0:10 là số Trung Quốc, không dùng). Deep Research phải kiểm trước khi viết script.",
+  "angle": "empathy / contrarian",
+  "pattern": "P01 + P15",
+  "differentiation": "Mọi người đang nói: phim ngắn AI làm “thối não”, bào mòn trí nhớ, phải cai (VnExpress 28/10). Góc của mình: không hù chuyện não, không bắt bỏ phim; cái mất đo được là giờ ngủ, và việc nhỏ nhất làm được tối nay là đổi chỗ cắm sạc. Tập phim sáng mai vẫn còn, giấc ngủ đêm nay thì không.",
+  "theme": "light",
+  "week": 2,
+  "target": "clip-10 (4.15, slot LIGHT) hook trend; ý phụ 3.9 (chưa có slot)",
+  "hook_vi": "Tập “chủ tịch giả nghèo” tối nay dừng ngay khúc gay cấn? Kệ nó, cắm sạc điện thoại ngoài phòng khách rồi đi ngủ.",
+  "moment_vi": "Nằm trên giường dặn lòng xem thêm một tập thôi, ngẩng lên thì đã gần ba giờ sáng, mà sáng mai vẫn phải đi làm sớm.",
+  "turn_vi": "Mười giờ rưỡi cắm sạc ở phòng khách rồi mới vào phòng; tập phim để sáng mai coi tiếp.",
+  "hook_en": "Cliffhanger tonight? Leave it. Charge your phone outside the bedroom.",
+  "explainer": "HyperFrames: màn hình điện thoại hiện thẻ tựa phim giả “Chủ tịch giả nghèo · tập 47” dừng ở khung đỏ “còn tiếp”; đồng hồ nhảy 23:00 → 02:47; cục sạc di chuyển từ đầu giường ra ổ cắm phòng khách. Nhãn: Exelmans & Van den Bulck 2016 · cần Deep Research kiểm. Không dùng hình phim thật, không logo app.",
+  "beats": [
+   {"text": "Tập “chủ tịch giả nghèo” tối nay dừng ngay khúc gay cấn? Kệ nó, cắm sạc điện thoại ngoài phòng khách rồi đi ngủ.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Cliffhanger? Leave it."},
+   {"text": "Mấy phim ngắn chưa tới một phút, tập nào cũng dừng đúng chỗ, nên mình hay dặn lòng xem một tập nữa thôi.", "expression": "neutral", "action": "thinking", "pose": "sitting", "background": "desk", "duration": 7, "caption_en": "Just one more episode."},
+   {"text": "Ngẩng lên thì đồng hồ đã gần ba giờ sáng, mà sáng mai vẫn phải đi làm sớm.", "expression": "surprised", "action": "reacting", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "Almost 3 a.m."},
+   {"text": "Có một khảo sát gần chín trăm người lớn: ai tắt đèn rồi còn cầm máy thì lâu ngủ hơn, hôm sau cũng mệt hơn.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Phone after lights out: slower sleep."},
+   {"text": "Nên mình hông bảo bạn bỏ phim, chỉ đổi chỗ để cái máy thôi.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Don't quit. Move the phone."},
+   {"text": "Tối nay, mười giờ rưỡi, cắm sạc ở phòng khách, rồi mới vào phòng.", "expression": "happy", "action": "talking", "pose": "standing", "background": "desk", "duration": 6, "caption_en": "10:30. Charger in the living room."},
+   {"text": "Tập phim vẫn nằm đó, sáng mai coi tiếp, nó hông chạy đi đâu hết.", "expression": "happy", "action": "idle", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "The episode will wait."},
+   {"text": "Còn giấc ngủ đêm nay mà mất thì mất luôn, hông có tập sau để coi bù.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Tonight's sleep won't."},
+   {"text": "Đêm nay điện thoại của bạn ngủ ở đâu? Kể mình nghe chỗ bạn cắm sạc nha.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Where does your phone sleep?"}
+  ]
+ },
+ {
+  "id": "ghet-viec-van-ra-thoi-quen-bo",
+  "title": "Việc mình không thích thì ráng ba năm, thói quen mới ba tuần đã bỏ: tính thói quen theo tháng",
+  "trend_id": "why-we-endure-hated-jobs-but-ditch-new",
+  "bridge_id": "B-kiennhan-01",
+  "lesson": "4.12 Thói quen mới tính theo tháng, không theo “21 ngày” (Lally và cộng sự 2010; theo ràng buộc Deep Research 27/10: chỉ dùng 18–254 ngày và «lỡ một lần không ảnh hưởng đáng kể», không dùng «trung vị 66 ngày»; mức B, một nghiên cứu 96 người). Số 22%/một nửa doanh nghiệp đóng cửa chỉ có trong tóm tắt X, chưa tự kiểm, không dùng.",
+  "angle": "contrarian / humor",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: mình kiên nhẫn với công việc mình ghét mà bỏ việc riêng quá nhanh, nên hãy cho dự án riêng thời gian dài hơn (Justin Welsh qua X News 28/10). Góc của mình: đem chính sự kiên nhẫn đó áp vào một thói quen nhỏ, tính theo tháng; lỡ một hôm không sao, hôm nay làm lại đúng một lần.",
+  "theme": "dark",
+  "week": 1,
+  "target": "clip-06 (4.12, DARK) hook thay thế cho B-bonghoa-01 (Hiệp chọn một)",
+  "hook_vi": "Công việc mình không thích thì ráng được ba năm, mà thói quen mới mới ba tuần chưa thấy gì đã muốn bỏ?",
+  "moment_vi": "Ly nước sau bữa sáng uống đều được ba tuần, chưa thấy khác gì nên bắt đầu lơ, trong khi sáng nào cũng vẫn dậy đi làm đều.",
+  "turn_vi": "Cho thói quen mới cùng sự kiên nhẫn mình vẫn dành cho công việc: tính theo tháng, lỡ một hôm thì hôm sau làm tiếp.",
+  "hook_en": "You stay years in a job you dislike, but quit a new habit in three weeks?",
+  "explainer": "HyperFrames: hai lịch song song, trái “đi làm” kín ba năm, phải “ly nước sau bữa sáng” mới 21 ô rồi dừng; thanh 18 → 254 ngày trải ra, một ô trống giữa chừng mà thanh vẫn chạy tiếp. Nhãn: Lally và cộng sự 2010 · theo ràng buộc Deep Research 27/10.",
+  "beats": [
+   {"text": "Công việc mình không thích thì ráng được ba năm, mà thói quen mới mới ba tuần chưa thấy gì đã muốn bỏ?", "expression": "surprised", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Years for a job. Weeks for a habit?"},
+   {"text": "Sáng nào mình cũng dậy đi làm đều, đâu có ai bắt phải thấy vui rồi mới chịu đi.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "desk", "duration": 6, "caption_en": "We show up anyway."},
+   {"text": "Còn ly nước sau bữa sáng, uống đều được ba tuần, chưa thấy khác gì là bắt đầu lơ.", "expression": "confused", "action": "thinking", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "Three weeks, then drift."},
+   {"text": "Vì ai cũng nói hai mươi mốt ngày là thành, nên tới ngày hai mươi hai mà chưa tự động thì tưởng mình hỏng.", "expression": "confused", "action": "reacting", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "The 21-day myth."},
+   {"text": "Có một nghiên cứu theo dõi người tập một việc nhỏ mỗi ngày: người nhanh mười tám ngày, người chậm tới hai trăm năm mươi tư ngày mới quen.", "expression": "surprised", "action": "talking", "pose": "standing", "background": "grid", "duration": 8, "caption_en": "18 to 254 days."},
+   {"text": "Mà lỡ một hôm cũng hông làm hỏng cả chặng đâu.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "Missing one day is fine."},
+   {"text": "Vậy cho thói quen mới chút kiên nhẫn mà bạn vẫn dành cho công việc: tính theo tháng, hông tính theo ngày.", "expression": "happy", "action": "talking", "pose": "standing", "background": "desk", "duration": 7, "caption_en": "Count in months."},
+   {"text": "Hôm nay chỉ cần làm lại đúng một lần thôi, một ly nước sau bữa sáng.", "expression": "happy", "action": "idle", "pose": "standing", "background": "desk", "duration": 5, "caption_en": "Just once today."},
+   {"text": "Thói quen nào của bạn đang tới tuần thứ ba? Kể tên nó ra, mình cho nó thêm một tháng.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Give it one more month."}
+  ]
+ }
+]}
