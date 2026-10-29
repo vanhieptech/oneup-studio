@@ -23,14 +23,14 @@ Ngôi kể: **«bạn» xuyên suốt**. Một chuyện: đọc một chương r
 
 1. **[Hook: tình huống + câu hỏi (L-091)]** Bạn đọc hết một chương sách, rồi đọc lại ngay cho chắc. Vài hôm sau có người hỏi, bạn kể không ra mấy ý. Sao đọc tới hai lần mà vẫn quên?
 2. **[Trend làm móc → vì sao liên quan chuyện nhớ (L-092)]** Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không. Mà muốn dùng được thì phải nhớ đủ lâu.
-3. **[Nguyên nhân: so sánh F1]** Trong một nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đến hai ngày sau thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn.
+3. **[Nguyên nhân: so sánh F1]** Trong một nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đợi hai ngày rồi hỏi thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn.
 4. **[Mục tiêu nhớ lâu + cách làm (cẩm nang 23.15, F5 23.14)]** Vậy muốn nhớ lâu, sau mỗi chương bạn cứ để đó vài hôm. Lúc quay lại, trước khi mở sách, bạn thử tự kể ý chính, rồi mới lật ra xem sót gì.
 5. **[Kết quả về chỗ khựng, vẫn hai lần đọc]** Lần tới có ai hỏi, ý chính thường dễ bật ra hơn, mà bạn vẫn chỉ đọc hai lần như trước.
 6. **[CTA, chính là một lần tự kể lại]** Chương gần nhất bạn đọc, giờ còn nhớ ý nào? Kể OneUp nghe nha.
 
-Đọc liền một mạch (L-089): Bạn đọc hết một chương sách, rồi đọc lại ngay cho chắc. Vài hôm sau có người hỏi, bạn kể không ra mấy ý. Sao đọc tới hai lần mà vẫn quên? Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không. Mà muốn dùng được thì phải nhớ đủ lâu. Trong một nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đến hai ngày sau thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn. Vậy muốn nhớ lâu, sau mỗi chương bạn cứ để đó vài hôm. Lúc quay lại, trước khi mở sách, bạn thử tự kể ý chính, rồi mới lật ra xem sót gì. Lần tới có ai hỏi, ý chính thường dễ bật ra hơn, mà bạn vẫn chỉ đọc hai lần như trước. Chương gần nhất bạn đọc, giờ còn nhớ ý nào? Kể OneUp nghe nha.
+Đọc liền một mạch (L-089): Bạn đọc hết một chương sách, rồi đọc lại ngay cho chắc. Vài hôm sau có người hỏi, bạn kể không ra mấy ý. Sao đọc tới hai lần mà vẫn quên? Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không. Mà muốn dùng được thì phải nhớ đủ lâu. Trong một nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đợi hai ngày rồi hỏi thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn. Vậy muốn nhớ lâu, sau mỗi chương bạn cứ để đó vài hôm. Lúc quay lại, trước khi mở sách, bạn thử tự kể ý chính, rồi mới lật ra xem sót gì. Lần tới có ai hỏi, ý chính thường dễ bật ra hơn, mà bạn vẫn chỉ đọc hai lần như trước. Chương gần nhất bạn đọc, giờ còn nhớ ý nào? Kể OneUp nghe nha.
 
-Chữ lời: 166.
+Chữ lời: 167.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013. Không ghi kênh được tác giả bảo trợ. Không nêu tên creator nào.
 
@@ -62,5 +62,5 @@ Pattern: tình huống trước rồi câu hỏi (L-091); P03 ở b03 (đọc l�
 ## Tự soát (kết luận là của Rule Reviewer)
 - Ví dụ đời thường (đọc sách, có người hỏi), không môn học, không họp/sếp, không video. Không «đọc lại vô ích», không «một tuần là tốt nhất», không %, không cơ chế não.
 - Không «xong», «thuộc làu», «chột», «:» «;» trong lời. Mọi vế có chủ ngữ.
-- 166 chữ (140–175), mỗi câu dưới 25 chữ (L-091), không từ nội dung nào quá 5% lời, không lặp cụm 3 chữ (L-093).
+- 167 chữ (140–175), mỗi câu dưới 25 chữ (L-091), không từ nội dung nào quá 5% lời, không lặp cụm 3 chữ (L-093).
 - Hook và CTA mới so với clip-04, clip-05 các bản trước. CTA không «comment số».
