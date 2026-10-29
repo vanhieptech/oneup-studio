@@ -9,6 +9,7 @@
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
+  check-rules.py --link draft.md [more.md]       # L-094 (⚠): adjacent sentence pair (within or across beats) sharing no content word and not opening with a connector / back-reference
   check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
@@ -618,6 +619,27 @@ def check_repeat_beats(items, where="draft"):
 def check_repeat_file(path):  # --repeat FILE (L-093)
     check_repeat_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-094 (Rule Reviewer 29/10 15:14, Hiệp «Quá lộn xộn các câu thiếu liên kết»): --link <draft.md> — cặp câu liền nhau không có mối nối (chỉ ⚠, cổng tay chặn)
+L094_REF = r"(?<!\w)(đó|ấy|vậy|thế|này|nó|họ|y chang|cũng|lúc đó|khi đó|chuyện này|điều này|cách này)(?!\w)"
+L094_MANUAL = ("manual gate (chặn): bảng cặp câu trong review — câu N+1 trả lời/giải thích/đối chiếu/hệ quả của câu N nhờ chữ nào; "
+               "không đưa nhân vật/nhóm/mốc/hành động chưa nhắc; câu hỏi hook được trả lời ngay sau; lời khuyên dùng đúng mốc của dẫn chứng")
+def _l094_content(sent):
+    return {w for w in _l089_tok(sent) if len(w) > 1 and w not in L089_STOP and w not in L093_STOP}
+def check_link_beats(items, where="draft"):
+    if not items: err("L-094", f"{where}: không đọc được lời theo beat"); return
+    seq = [(i + 1, s_) for i, (_, _, t) in enumerate(items) for s_ in _l089_sents(t)]
+    loose = []
+    for (ba, a), (bb, b) in zip(seq, seq[1:]):
+        head = " ".join(_l089_tok(b)[:6])
+        if _l094_content(a) & _l094_content(b) or _l089_starts_conn(b) or re.search(L094_REF, head): continue
+        loose.append(f"b{ba:02d}→b{bb:02d} «{' '.join(a.split()[-5:])}» | «{' '.join(b.split()[:6])}…»")
+    (warn if loose else ok)("L-094", (f"{len(loose)}/{max(len(seq)-1,1)} cặp câu không chung từ nội dung, không từ nối/đại từ gọi lại: " + "; ".join(loose) + " → viết câu nối hoặc gọi lại ý câu trước")
+                            if loose else f"{len(seq)-1} cặp câu liền nhau đều có từ chung, từ nối hoặc đại từ gọi lại")
+    info("L-094", L094_MANUAL)
+
+def check_link_file(path):  # --link FILE (L-094)
+    check_link_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
+
 # ---- L-090 (Hiệp 28/10 23:46 + 23:48): --trend <draft.md> — trend phải nằm trong LỜI hook theo nghiên cứu trend đã lưu, không chỉ ở end card/hình
 L090_MANUAL = ("manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; "
                "(2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, "
@@ -699,6 +721,10 @@ def main():
     if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
+        return report(outp)
+    if a and a[0] == "--link":  # L-094 on draft script files (cặp câu liền nhau có mối nối)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_link_file(f)
         return report(outp)
     if a and a[0] == "--repeat":  # L-093 on draft script files (lặp từ/cụm, từ nối mở câu)
         for f in a[1:]:
