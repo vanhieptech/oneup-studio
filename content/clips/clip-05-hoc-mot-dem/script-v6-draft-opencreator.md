@@ -5,7 +5,7 @@ clip: clip-05-hoc-mot-dem
 item: HTB 23.15 (mức A), ghi chú 23.15 + mục 23.14
 theme: DARK
 format: W-16 (hook → ví dụ → nguyên nhân/dẫn chứng → mục tiêu → cách làm → kết quả về chỗ khựng → CTA), một ngôi kể «bạn» (L-089)
-status: DRAFT r6.6 — Hiệp chưa chốt r6.5 (b01–b03 lòng vòng); viết lại b01–b03 theo L-091 (bc054a5) «nghe một lần là hiểu», giữ b04–b06. Chờ Deep Research soát b03 + Rule Reviewer chấm. Chưa Chốt, không giọng/render.
+status: DRAFT r6.7 — sửa theo review v6r66 (60c43d3): câu hỏi lên cuối b01, b02 = trend + câu nối sang b03, b03 «không còn hơn». Giữ b04–b06. Chưa Chốt, không giọng/render.
 fact_lock: content/clips/clip-05-hoc-mot-dem/fact-package-v5.md (Deep Research 5861e88) — chỉ F1, F3, F5 trong lời
 trend: Đọc nhiều có giúp viết hay hơn (X News, digest 25–26/10 #10)
 trend_id: 2113344436113473964 (X News https://x.com/i/trending/2113344436113473964; research/trends/2026-10-26/digest.md #10)
@@ -21,16 +21,16 @@ replaces: script-v5-draft-opencreator.md (r5.3b ac691a8, Hiệp loại 28/10: v�
 Một câu cả clip: *Đọc lại ngay một chương thì vài hôm sau vẫn quên; để vài hôm rồi mới đọc lại, tự kể trước khi mở sách, thì lúc được hỏi bạn dễ kể lại hơn.*
 Ngôi kể: **«bạn» xuyên suốt**. Một chuyện duy nhất: đọc một chương rồi đọc lại liền → vài hôm sau bạn bè hỏi → không kể lại được → vì sao → để vài hôm rồi đọc lại → lần sau kể được.
 
-1. **[Hook: tình huống trước (L-091)]** Bạn đọc một chương sách hay, rồi đọc lại ngay cho nhớ. Vài hôm sau bạn bè hỏi, bạn không kể lại được mấy ý.
-2. **[Trend ngắn gắn vào tình huống + câu hỏi]** Mà trên mạng đang bàn đọc nhiều có giúp viết hay hơn không, trong khi đọc rồi bạn còn quên. Vậy sao đọc tới hai lần mà vẫn quên?
+1. **[Hook: tình huống + câu hỏi (L-091)]** Bạn đọc một chương sách hay, rồi đọc lại ngay cho nhớ. Vài hôm sau bạn bè hỏi, bạn không kể lại được mấy ý. Sao đọc tới hai lần mà vẫn quên?
+2. **[Trend ngắn, nối sang lý do]** Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không. Nhưng chuyện quên này nằm ở cách bạn đọc lại.
 3. **[Trả lời: một phép so sánh F1]** Một nghiên cứu về cách đọc thấy rằng, so với đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Nhưng hai ngày sau không còn hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn.
 4. **[Cách làm: giãn ra vài hôm, tự kể trước khi mở sách (F3, F5)]** Vậy đọc hết chương, bạn để vài hôm rồi mới đọc lại. Lúc đó, trước khi mở sách, bạn thử tự kể ý chính, rồi mở ra xem sót gì.
 5. **[Kết quả quay về chỗ khựng + +1 (F3 cùng thời gian)]** Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ.
 6. **[CTA, chính là một lần tự kể lại]** Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
 
-Đọc liền một mạch (L-089): Bạn đọc một chương sách hay, rồi đọc lại ngay cho nhớ. Vài hôm sau bạn bè hỏi, bạn không kể lại được mấy ý. Mà trên mạng đang bàn đọc nhiều có giúp viết hay hơn không, trong khi đọc rồi bạn còn quên. Vậy sao đọc tới hai lần mà vẫn quên? Một nghiên cứu về cách đọc thấy rằng, so với đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Nhưng hai ngày sau không còn hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn. Vậy đọc hết chương, bạn để vài hôm rồi mới đọc lại. Lúc đó, trước khi mở sách, bạn thử tự kể ý chính, rồi mở ra xem sót gì. Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ. Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
+Đọc liền một mạch (L-089): Bạn đọc một chương sách hay, rồi đọc lại ngay cho nhớ. Vài hôm sau bạn bè hỏi, bạn không kể lại được mấy ý. Sao đọc tới hai lần mà vẫn quên? Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không. Nhưng chuyện quên này nằm ở cách bạn đọc lại. Một nghiên cứu về cách đọc thấy rằng, so với đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Nhưng hai ngày sau không còn hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn. Vậy đọc hết chương, bạn để vài hôm rồi mới đọc lại. Lúc đó, trước khi mở sách, bạn thử tự kể ý chính, rồi mở ra xem sót gì. Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ. Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
 
-Chữ lời: 161.
+Chữ lời: 162.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013. Không ghi kênh được tác giả bảo trợ. Không nêu tên creator nào.
 
@@ -38,8 +38,8 @@ Chữ lời: 161.
 
 | Beat | Caption EN (≤8 từ/chunk) | Hình |
 |---|---|---|
-| b01 | You read a great chapter · Then reread it right away · Days later, a friend asks · You can't retell many points | Thầy chibi đọc hết một chương, lật ngược về đầu chương đọc lại «×2». Cut quán cà phê vài hôm sau, bạn hỏi, bong bóng ý gần trống, Thầy khựng. |
-| b02 | People online ask: does reading help writing? · Yet you still forget what you read · So why forget after two reads? | Màn hình điện thoại lướt các bài bàn «đọc nhiều có viết hay hơn?» (chữ chung, không tên người), rồi quay về Thầy gãi đầu cạnh cuốn sách. |
+| b01 | You read a great chapter · Then reread it right away · Days later, a friend asks · You can't retell many points · So why forget after two reads? | Thầy chibi đọc hết một chương, lật ngược về đầu chương đọc lại «×2». Cut quán cà phê vài hôm sau, bạn hỏi, bong bóng ý gần trống, Thầy khựng. |
+| b02 | Online: does reading more help writing? · The forgetting comes from how you reread | Màn hình điện thoại lướt các bài bàn «đọc nhiều có viết hay hơn?» (chữ chung, không tên người), rồi quay về Thầy gãi đầu cạnh cuốn sách. |
 | b03 | A reading study found · Vs. one read, twice is better · But two days later, no longer · Reread a week later: still better | 3 cột so với cột xám «đọc 1 lần»: cột «đọc liền» cao lúc kiểm tra ngay, bằng cột xám sau 2 ngày; cột «cách 1 tuần» vẫn cao sau 2 ngày. «Rawson & Kintsch 2005» góc dưới. |
 | b04 | Finish the chapter, wait a few days · Then, before opening the book · Retell the key points, then check gaps | Lịch có khoảng trống vài ô giữa lần đọc đầu và lần đọc lại (không ghi ngày cụ thể); Thầy cầm sách còn đóng, tự kể lại, rồi mở ra, bút khoanh ý sót. «Cẩm nang 23.15» góc dưới. |
 | b05 | Next time a friend asks · Easier to retell · Same reading time as before | Quán cà phê, bong bóng ý được điền, bạn gật gù. Đồng hồ cát cạnh sách giữ nguyên cỡ, dấu «+1» bật. |
@@ -53,7 +53,7 @@ Pattern: Bỏ P15 ở r6.6 (Rule Reviewer/L-091: chỉ một hình ảnh, kể t
 | Beat | Câu | Nguồn |
 |---|---|---|
 | b01 | đọc một chương, đọc lại ngay, vài hôm sau không kể lại được mấy ý | điều kiện đọc liền của F1; «mấy ý» theo Deep Research (tránh nghe như quên hết) |
-| b02 | trend làm móc, câu hỏi «sao đọc tới hai lần mà vẫn quên» | trend chỉ làm móc, không trả lời chuyện viết |
+| b02 | trend làm móc, nối sang lý do «chuyện quên nằm ở cách đọc lại» (câu hỏi đã lên cuối b01) | trend chỉ làm móc, không trả lời chuyện viết |
 | b03 | đọc liền: ngay sau nhớ hơn người đọc một lần, hai ngày sau không còn hơn; cách một tuần: hai ngày sau vẫn nhớ hơn | F1, Rawson & Kintsch 2005, câu Deep Research soát 29/10, tách 2 câu cho dưới 25 chữ |
 | b04 | để vài hôm rồi mới đọc lại; trước khi mở sách tự kể ý chính, mở ra xem sót | lời khuyên cẩm nang 23.15 (F3) + F5, Deep Research duyệt 29/10; «vài hôm» không gắn vào nghiên cứu b03 |
 | b05 | «dễ kể lại hơn», «thời gian đọc vẫn như cũ» | F3 (cùng tổng thời gian, giãn ra thì giữ lâu hơn); không hứa kết quả |
@@ -62,5 +62,5 @@ Pattern: Bỏ P15 ở r6.6 (Rule Reviewer/L-091: chỉ một hình ảnh, kể t
 ## Tự soát (kết luận là của Rule Reviewer)
 - Ví dụ đời thường (đọc sách, bạn bè hỏi), không môn học, không họp/sếp, không video. Không «đọc lại vô ích», không «một tuần là tốt nhất», không %, không cơ chế não.
 - Không «xong», «thuộc làu», «chột», «:» «;» trong lời. Mọi vế có chủ ngữ.
-- 161 chữ (140–175), mỗi câu một ý, dưới 25 chữ (L-091), bỏ ý chứ không ép câu.
+- 162 chữ (140–175), mỗi câu một ý, dưới 25 chữ (L-091), bỏ ý chứ không ép câu.
 - Hook và CTA mới so với clip-04, clip-05 các bản trước. CTA không «comment số».
