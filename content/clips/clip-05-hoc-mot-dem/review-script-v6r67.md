@@ -20,3 +20,6 @@
 - Câu nối trend→lý do ở b02 hơi chuyển ngang (trend nói về viết, clip nói về nhớ).
 - Chưa có bằng chứng comment cho cảnh đọc lại; Apify hết quota.
 - Spec + hình v6 chưa dựng; Deep Research chưa soát lại riêng r6.7 (b03 giữ nguyên câu đã duyệt 29/10, b02 không có fact).
+
+## Bổ sung r6.7b (72b985f), 29/10 12:25: ĐẠT
+Câu 2 của b02 đổi thành «Nhưng nhớ được lâu hay không còn tùy cách bạn đọc lại.», theo Deep Research: câu cũ nói cách đọc lại là nguyên nhân của việc quên, vượt quá F1. Caption EN «How long you remember depends on rereading», 7 từ. 164 chữ. Chạy lại 5 check đều PASS, --flow vẫn còn đúng cảnh báo từ nối như trên. Rủi ro «b02 chuyển ngang» nhẹ đi vì câu mới nối thẳng vào phép so sánh ở b03. Bản để anh Hiệp chốt là r6.7b.
