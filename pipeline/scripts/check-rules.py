@@ -558,7 +558,7 @@ def check_flow_file(path):  # --flow FILE: cờ liền mạch cho bản nháp (L
     check_flow_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
 # ---- L-091 (Hiệp 29/10 11:51 «Trong 3 ý đầu hơi lòng vòng chưa rõ nghĩa và khó hiểu»): --clarity <draft.md> — cờ hỗ trợ cổng «nghe một lần là hiểu» (chỉ ⚠)
-L091_CUES = ("hỏi", "kể", "đọc", "mở", "gặp")
+L091_CUES = ("hỏi", "kể lại", "gặp")  # cảnh nỗi đau cụ thể; «đọc» quá rộng (bb480a6 bỏ sót r6.5)
 L091_VAGUE = ("trôi", "bay màu", "chắc được", "cũng thấy vậy", "lòng vòng")
 L091_MANUAL = "manual gate: đọc b01–b03 như người lần đầu nghe, tóm ý trong 1 câu; không được → CHƯA ĐẠT"
 def _l091_has(text, phrase): return re.search(r"(?<![\wÀ-ỹ])" + re.escape(phrase) + r"(?![\wÀ-ỹ])", text.lower()) is not None
