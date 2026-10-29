@@ -30,7 +30,7 @@ Ngôi kể: **«bạn» xuyên suốt**. Một chuyện duy nhất: đọc một
 
 Đọc liền một mạch (L-089): Bạn đọc một chương sách hay, rồi đọc lại ngay cho nhớ. Vài hôm sau bạn bè hỏi, bạn không kể lại được mấy ý. Mà trên mạng đang bàn đọc nhiều có giúp viết hay hơn không, trong khi đọc rồi bạn còn quên. Vậy sao đọc tới hai lần mà vẫn quên? Một nghiên cứu về cách đọc thấy rằng đọc liền hai lần thì ngay sau đó nhớ hơn người đọc một lần. Nhưng hai ngày sau là hết hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn. Vậy đọc hết chương, bạn để vài hôm rồi mới đọc lại. Lúc đó, trước khi mở sách, bạn thử tự kể ý chính, rồi mở ra xem sót gì. Rồi lần sau bạn bè hỏi, bạn dễ kể lại hơn, mà thời gian đọc vẫn như cũ. Chương sách gần nhất bạn đọc, bạn còn nhớ ý nào? Kể OneUp nghe nha.
 
-Chữ lời: 158.
+Chữ lời: 160.
 
 **End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013. Không ghi kênh được tác giả bảo trợ. Không nêu tên creator nào.
 
@@ -62,5 +62,5 @@ Pattern: Bỏ P15 ở r6.6 (Rule Reviewer/L-091: chỉ một hình ảnh, kể t
 ## Tự soát (kết luận là của Rule Reviewer)
 - Ví dụ đời thường (đọc sách, bạn bè hỏi), không môn học, không họp/sếp, không video. Không «đọc lại vô ích», không «một tuần là tốt nhất», không %, không cơ chế não.
 - Không «xong», «thuộc làu», «chột», «:» «;» trong lời. Mọi vế có chủ ngữ.
-- 158 chữ (140–175), mỗi câu một ý, dưới 25 chữ (L-091), bỏ ý chứ không ép câu.
+- 160 chữ (140–175), mỗi câu một ý, dưới 25 chữ (L-091), bỏ ý chứ không ép câu.
 - Hook và CTA mới so với clip-04, clip-05 các bản trước. CTA không «comment số».
