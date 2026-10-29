@@ -9,6 +9,7 @@
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
+  check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
@@ -592,6 +593,31 @@ def check_clarity_beats(items, where="draft"):
 def check_clarity_file(path):  # --clarity FILE (L-091)
     check_clarity_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-093 (Hiệp 29/10 14:00 «Các câu nói chưa có chiều sâu còn lủng củng lặp từ quá nhiều»): --repeat <draft.md> — lặp từ/cụm, từ nối lặp
+L093_STOP = set("bạn mình và thì là mà có không được một hai rồi cho của với trong khi lại vẫn còn những các này đó nha nghe cũng đã sẽ đang ra vào lên để như hơn sau trước".split())
+L093_CONNECT = ("nhưng", "rồi", "còn", "mà", "và", "vậy")
+L093_MANUAL = ("manual gate: (a) chiều sâu — mỗi beat cho người xem một điều mới (vì sao/cảm giác/hệ quả cụ thể), không nói lại ý cũ bằng chữ khác; "
+               "(b) đọc to nghe trơn, không câu cụt nối bằng «Nhưng/Và/Rồi» liên tiếp; (c) thay từ lặp bằng đại từ/chữ khác hoặc bỏ hẳn")
+def check_repeat_beats(items, where="draft"):
+    if not items: err("L-093", f"{where}: không đọc được lời theo beat"); return
+    sents = [s_ for _, _, t in items for s_ in _l089_sents(t)]
+    toks = [w for s_ in sents for w in _l089_tok(s_)]
+    n = max(len(toks), 1)
+    from collections import Counter
+    c = Counter(w for w in toks if w not in L093_STOP and len(w) > 1)
+    heavy = [(w, k) for w, k in c.most_common() if k / n > 0.05 and k >= 5]
+    (err if heavy else ok)("L-093", ("từ lặp dày (>5% lời): " + ", ".join(f"«{w}» ×{k}" for w, k in heavy) + " → thay chữ/đại từ hoặc bỏ ý") if heavy else "không từ nội dung nào lặp >5% lời")
+    tri = Counter(" ".join(t_[i:i+3]) for t_ in (_l089_tok(s_) for s_ in sents) for i in range(len(t_) - 2))  # per sentence, no cross-boundary trigrams
+    rep = [(g, k) for g, k in tri.items() if k >= 2 and not set(g.split()) <= L093_STOP]
+    (warn if rep else ok)("L-093", ("cụm 3 chữ lặp: " + "; ".join(f"«{g}» ×{k}" for g, k in rep[:8])) if rep else "không cụm 3 chữ nào lặp")
+    opens = Counter(_l089_tok(s_)[0] for s_ in sents if _l089_tok(s_) and _l089_tok(s_)[0] in L093_CONNECT)
+    many = [(w, k) for w, k in opens.items() if k >= 3]
+    (warn if many else ok)("L-093", ("câu mở bằng cùng từ nối: " + ", ".join(f"«{w}» ×{k}" for w, k in many) + " → câu cụt nối nhau, lủng củng") if many else "từ nối mở câu không lặp ≥3")
+    info("L-093", L093_MANUAL)
+
+def check_repeat_file(path):  # --repeat FILE (L-093)
+    check_repeat_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
+
 # ---- L-090 (Hiệp 28/10 23:46 + 23:48): --trend <draft.md> — trend phải nằm trong LỜI hook theo nghiên cứu trend đã lưu, không chỉ ở end card/hình
 L090_MANUAL = ("manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; "
                "(2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, "
@@ -673,6 +699,10 @@ def main():
     if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
+        return report(outp)
+    if a and a[0] == "--repeat":  # L-093 on draft script files (lặp từ/cụm, từ nối mở câu)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_repeat_file(f)
         return report(outp)
     if a and a[0] == "--clarity":  # L-091 on draft script files (nghe một lần là hiểu: b01–b03)
         for f in a[1:]:
