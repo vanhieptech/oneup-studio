@@ -192,3 +192,11 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - **Gốc:** L-089 chấm nối *giữa* beat; L-091 chấm nghe một lần trên 3 beat đầu. Không có ô nào bắt hai câu *trong cùng một beat* phải cùng một mạch (câu sau giải thích/đối chiếu/hệ quả của câu trước). Trend bị giữ nguyên chữ nguồn (viết) rồi vá bằng câu nhớ.
 - **Fix:** Trong mỗi beat, câu sau phải nối thẳng câu trước (giải thích, đối chiếu, hệ quả, hoặc gọi lại chữ vừa nói). Trend chỉ là móc: nếu chữ trend (vd «viết») không thuộc thông điệp clip thì phải có một câu cầu nối rõ («…nhưng với bạn, chuyện khó hơn là đọc rồi còn nhớ»), hoặc đổi cách nói trend cho khớp nỗi đau của clip. Không dùng «Nhưng/Mà» để nối hai chủ đề khác nhau.
 - **Phát hiện:** Soát tay khi đọc to từng beat: hỏi «câu 2 trả lời/đối chiếu câu 1 không?»; nếu không → CHƯA ĐẠT dù --flow/--clarity pass. ⚠ tự động (nếu đo được): trong một beat có ≥2 câu, câu sau không chia ≥1 từ nội dung (bỏ stopword) với câu trước và mở bằng «Nhưng/Mà/Thế mà».
+
+## L-093 (2026-10-29 14:00, Rule Reviewer) — Câu chưa có chiều sâu, lủng củng, lặp từ quá nhiều (clip-05 r6.8)
+- **Hiệp:** «Các câu nói chưa có chiều sâu còn lủng củng lặp từ quá nhiều».
+- **Lỗi đo được trên r6.8 (e1bf99f, 174 chữ):** «đọc» ×14 (8% lời), «bạn» ×10; cụm lặp «bạn bè hỏi» ×2, «hai ngày sau» ×2, «mới đọc lại» ×2; nhiều câu cụt nối bằng «Nhưng/Và/Rồi/Còn». Các beat nói lại cùng một ý (đọc → quên → cách đọc lại) mà không thêm điều mới cho người xem.
+- **Gốc:** không có ô nào đo mật độ lặp từ hay chiều sâu; các vòng sửa vá từng câu (L-091, L-092) nên cộng dồn chữ «đọc», «nhớ», «Nhưng».
+- **Luật:** (a) không từ nội dung nào chiếm >5% lời; không lặp cụm 3 chữ; (b) đọc to nghe trơn, không chuỗi câu cụt nối bằng cùng từ nối; (c) chiều sâu: mỗi beat cho người xem một điều mới, có nguồn (fact-package), không nói lại ý cũ bằng chữ khác.
+- **Phát hiện:** `check-rules.py --repeat <draft.md>` (✖ mật độ, ⚠ cụm/từ nối) — patch đang chờ News review (`/workspace/l093-repeat-check.patch`). Cổng tay: chiều sâu + đọc to.
+- **Vai trò (Hiệp 14:02, L-093b):** Rule Reviewer chỉ chấm và nêu lỗi kèm dòng; KHÔNG viết sẵn câu thay, không tự sửa script/code. Viết lại = OpenCreator; fact = Deep Research; code/check = News; Rule Reviewer chấm lại.
