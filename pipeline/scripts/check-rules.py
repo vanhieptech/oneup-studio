@@ -9,6 +9,7 @@
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
+  check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
@@ -556,6 +557,41 @@ def check_flow_beats(items, where="draft"):
 def check_flow_file(path):  # --flow FILE: cờ liền mạch cho bản nháp (L-089)
     check_flow_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-091 (Hiệp 29/10 11:51 «Trong 3 ý đầu hơi lòng vòng chưa rõ nghĩa và khó hiểu»): --clarity <draft.md> — cờ hỗ trợ cổng «nghe một lần là hiểu» (chỉ ⚠)
+L091_CUES = ("hỏi", "kể", "đọc", "mở", "gặp")
+L091_VAGUE = ("trôi", "bay màu", "chắc được", "cũng thấy vậy", "lòng vòng")
+L091_MANUAL = "manual gate: đọc b01–b03 như người lần đầu nghe, tóm ý trong 1 câu; không được → CHƯA ĐẠT"
+def _l091_has(text, phrase): return re.search(r"(?<![\wÀ-ỹ])" + re.escape(phrase) + r"(?![\wÀ-ỹ])", text.lower()) is not None
+def check_clarity_beats(items, where="draft"):
+    if not items: err("L-091", f"{where}: không đọc được lời theo beat (khung «N. **[Nhãn]** lời»)"); return
+    head = items[:3]
+    # (1) câu hỏi trước câu tình huống đầu tiên
+    q = sit = None
+    for i, (_, _, t) in enumerate(head):
+        for k, s_ in enumerate(_l089_sents(t)):
+            isq = s_.rstrip().endswith("?")
+            if isq and q is None: q = (i, k, s_)
+            if not isq and sit is None and any(_l091_has(s_, c) for c in L091_CUES): sit = (i, k, s_)
+    if q and (sit is None or q[:2] < sit[:2]):
+        warn("L-091", f"câu hỏi b{q[0]+1:02d} «{q[2]}» đến trước câu tình huống cụ thể" + (f" (b{sit[0]+1:02d} «{' '.join(sit[2].split()[:6])}…»)" if sit else " (b01–b03 không có câu tình huống)") + " → tình huống → câu hỏi → trả lời")
+    else: ok("L-091", "tình huống cụ thể đến trước câu hỏi (b01–b03)")
+    # (2) câu > 25 chữ (cả bài)
+    longs = [f"b{i+1:02d} ({len(_l089_tok(s_))} chữ) «{' '.join(s_.split()[:6])}…»" for i, (_, _, t) in enumerate(items) for s_ in _l089_sents(t) if len(_l089_tok(s_)) > 25]
+    (warn if longs else ok)("L-091", ("câu dài >25 chữ: " + "; ".join(longs) + " → mỗi câu một ý") if longs else "không câu nào >25 chữ")
+    # (3) chữ mơ hồ trong lời b01–b03
+    vague = [f"b{i+1:02d} «{w}»" for i, (_, _, t) in enumerate(head) for w in L091_VAGUE if _l091_has(_l088_clean(t), w)]
+    (warn if vague else ok)("L-091", ("chữ mơ hồ thay nghĩa thẳng: " + "; ".join(vague) + " → nói thẳng (vd «trôi» → «quên»)") if vague else "không chữ mơ hồ trong b01–b03")
+    # (4) b03 mở bằng câu khái quát rồi «cũng thấy vậy»
+    if len(items) >= 3:
+        ss = _l089_sents(items[2][2]); hit = next((k for k, s_ in enumerate(ss) if _l091_has(s_, "cũng thấy vậy")), None)
+        if hit is not None and hit >= 1:
+            warn("L-091", f"b03 mở bằng câu khái quát «{ss[0]}» rồi «{ss[hit]}» → nói thẳng một phép so sánh (làm A thì…, làm B thì…)")
+        else: ok("L-091", "b03 không mở bằng câu khái quát + «cũng thấy vậy»")
+    info("L-091", L091_MANUAL)
+
+def check_clarity_file(path):  # --clarity FILE (L-091)
+    check_clarity_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
+
 # ---- L-090 (Hiệp 28/10 23:46 + 23:48): --trend <draft.md> — trend phải nằm trong LỜI hook theo nghiên cứu trend đã lưu, không chỉ ở end card/hình
 L090_MANUAL = ("manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; "
                "(2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, "
@@ -637,6 +673,10 @@ def main():
     if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
+        return report(outp)
+    if a and a[0] == "--clarity":  # L-091 on draft script files (nghe một lần là hiểu: b01–b03)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_clarity_file(f)
         return report(outp)
     if a and a[0] == "--flow":  # L-089 on draft script files (đọc to liền mạch: ngôi kể, mối nối beat, cụm lặp khâu câu, liệt kê, câu gắn thêm)
         for f in a[1:]:
