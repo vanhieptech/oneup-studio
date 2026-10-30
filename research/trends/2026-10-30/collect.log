@@ -1,0 +1,37 @@
+ok       10  gtrends-vn             
+ok       10  gtrends-us             
+ok       20  vnexpress-noibat       
+ok       20  vnexpress-moi          
+ok       15  vnexpress-sohoa        
+ok       15  vnexpress-giaitri      
+ok       15  vnexpress-doisong      
+ok       20  kenh14-home            
+ok       10  kenh14-star            
+ok       10  kenh14-doisong         
+ok       15  thanhnien              
+ok       15  dantri                 
+ok       15  genk                   
+ok       10  cafebiz                
+ok       10  tinhte                 
+ok       20  gnews-vn-top           
+ok        7  gnews-vn-tiktok        
+ok       10  gnews-vn-genz          
+ok       10  gnews-vn-tuoitre       
+ok       15  gnews-us-productivity  
+ok       10  gnews-us-tiktoktrend   
+ok       20  hn-front               
+ok       10  producthunt            
+ok       10  verge                  
+ok       10  ars                    
+error     0  kym-memes              HTTPError: HTTP Error 403: Forbidden
+error     0  wiki-vi                HTTPError: HTTP Error 404: Not Found
+error     0  wiki-en                HTTPError: HTTP Error 404: Not Found
+ok       10  bsky-trending          
+ok       10  bsky-productivity      
+ok       15  spotify-vn             
+ok        8  yt-niche-vn            
+ok        8  yt-niche-en            
+ok       39  x-news                 
+ok       20  x-trends-vn            
+ok       20  x-trends-ww            
+raw=462 clusters=440 safety={'ok': 367, 'caution': 16, 'drop': 57} -> research/trends/2026-10-30/collect.json

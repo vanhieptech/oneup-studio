@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-10-29
+updated: 2026-10-30
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -147,14 +147,19 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | x-hobbies-beyond-work | “Người rất thành công có cần sở thích ngoài công việc?” (tranh luận X) | work | caution (không nêu tên) | 2026-10-28 | 2026-10-29 | 2 | [X News](https://x.com/i/trending/2115137233048985805) |
 | kenh14-phong-tro-12m2 | Phòng trọ 12m² của cô gái lương 11 triệu “không muốn sống tạm bợ” | living | caution (tiền) | 2026-10-28 | 2026-10-28 | 1 | [Kenh14](https://kenh14.vn/can-phong-tro-12m2-cua-co-gai-luong-11-trieu-thang-khong-muon-song-tam-bo-215261025211956159.chn) |
 | vne-phim-ngan-ai | Phim ngắn AI “chủ tịch giả nghèo”, “tổng tài bá đạo” dừng ở cao trào, người xem thức tới gần 3h sáng; báo gọi “thối não” (bài ghi rõ không phải chẩn đoán y khoa). Số trong bài: khảo sát VnExpress 1.000+ độc giả 29% thường bị cuốn; lượt tải app phim ngắn VN quý IV/2025 +271% (Adjust) | viral/phone | caution (không dùng phần bệnh viện, chữ “nghiện”, claim não) | 2026-10-29 | 2026-10-29 | 1 | [VnExpress 28/10](https://vnexpress.net/thoi-nao-vi-nghien-phim-ngan-ai-5136786.html) |
-| x-overthinking-deciding | “Overthinking isn’t thinking too much. It’s thinking without deciding.” (X News, trích sách lan truyền) | habits/mind | ok (không nói lo âu/trầm cảm) | 2026-10-29 | 2026-10-29 | 1 | [X News](https://x.com/i/trending/2115434315777789983) |
-| x-hated-jobs-vs-own-thing | Justin Welsh: kiên nhẫn nhiều năm với việc mình ghét, mà bỏ việc riêng sau vài tháng (số 22%/một nửa doanh nghiệp đóng cửa chỉ từ tóm tắt X, chưa tự kiểm) | work/habits | ok | 2026-10-29 | 2026-10-29 | 1 | [X News](https://x.com/i/trending/2115525365678711129) |
+| x-overthinking-deciding | “Overthinking isn’t thinking too much. It’s thinking without deciding.” (X News, trích sách lan truyền) | habits/mind | ok (không nói lo âu/trầm cảm) | 2026-10-29 | 2026-10-30 | 2 | [X News](https://x.com/i/trending/2115434315777789983) |
+| x-hated-jobs-vs-own-thing | Justin Welsh: kiên nhẫn nhiều năm với việc mình ghét, mà bỏ việc riêng sau vài tháng (số 22%/một nửa doanh nghiệp đóng cửa chỉ từ tóm tắt X, chưa tự kiểm) | work/habits | ok | 2026-10-29 | 2026-10-30 | 2 | [X News](https://x.com/i/trending/2115525365678711129) |
 | x-apple-watch-bedtime | Dữ liệu Apple Watch: giờ đi ngủ trung bình các bang Mỹ ~23:37, ngủ ~6h40 (Brigham and Women’s + AHA; số chỉ từ tóm tắt X, chưa tự kiểm) | sleep | ok | 2026-10-29 | 2026-10-29 | 1 | [X News](https://x.com/i/trending/2115476763782291480) |
 | x-coffee-delay-no | Chuyên gia tài chính Douglas Boneparth đáp “No.” với lời khuyên chờ 60–90 phút sau khi dậy mới uống cà phê; cả feed khoe ly cà phê sáng | coffee/morning | ok (không claim cortisol) | 2026-10-29 | 2026-10-29 | 1 | [X News](https://x.com/i/trending/2115105229792293192) |
 | x-pdf-unread | “Không ai đọc hết sách PDF”: người đọc thú nhận PDF/sách mua về để đó (số “hơn nửa người Mỹ” chưa tự kiểm) | reading | ok (gần chủ đề clip-04/05) | 2026-10-29 | 2026-10-29 | 1 | [X News](https://x.com/i/trending/2114973689565294784) |
 | kenh14-3-cau-quan-tam | 3 câu nghe như quan tâm mà làm bạn thấy có lỗi (“Tôi chỉ muốn tốt cho bạn”, “Tùy bạn thôi…”, “Sao nhạy cảm quá vậy?”) | relationships | caution (không gán nhãn người thân) | 2026-10-29 | 2026-10-29 | 1 | [Kenh14 28/10](https://kenh14.vn/co-3-cau-noi-nghe-nhu-quan-tam-nhung-thuc-chat-dang-khien-ban-cam-thay-co-loi-215261028071748312.chn) |
 | kenh14-tra-sua-dieu-cay | Trà sữa “điếu cày” chai dài ~700ml, ống hút ngoại cỡ, 45k–76k/ống | food/consumer | ok | 2026-10-29 | 2026-10-29 | 1 | [Kenh14 29/10](https://kenh14.vn/tra-sua-dieu-cay-dang-gay-sot-binh-cu-ruou-moi-cuoc-dua-ban-trai-nghiem-cua-nganh-do-uong-215261029000358297.chn) |
 | x-autumn-sleep-fatigue | Cụm X: mệt cuối tháng 10, lịch ngủ lộn xộn, đổi giờ mùa đông (số 30% người Mỹ ngủ <7h chưa tự kiểm) | sleep | ok (bão hoà) | 2026-10-29 | 2026-10-29 | 1 | [X News](https://x.com/i/trending/2114933643634409581), [X News](https://x.com/i/trending/2115045085448466615) |
+| maxxing-woty-2026 | “Maxxing” là Từ của năm 2026 (Dictionary.com 25–26/10): tối ưu mọi thứ, kể cả nằm không; looksmaxxing, fibermaxxing, cozymaxxing… (số 19 lần/700% chưa tự kiểm) | language/habits | ok (bỏ looksmaxxing/ngoại hình) | 2026-10-30 | 2026-10-30 | 1 | [Kenh14 29/10](https://kenh14.vn/maxxing-tu-cua-nam-2026-den-nam-khong-cung-phai-toi-uu-215261029071432772.chn), [Dictionary.com](https://www.dictionary.com/word-of-the-year), [BBC](https://www.bbc.com/news/articles/cmy4xwp22xyqo) |
+| x-hard-things-early | Sahil Bloom: làm việc khó sớm thì nhẹ đầu, việc né càng lâu càng to (nghiên cứu nhắc trong tóm tắt X chưa tự kiểm) | habits/procrastination | ok | 2026-10-30 | 2026-10-30 | 1 | [X News](https://x.com/i/trending/2115816342687510634) |
+| x-growth-over-envy | Lời nhắc “so với timeline của mình, đừng ghen tị” khi bạn bè đi nhanh hơn (claim tâm lý chưa tự kiểm) | mind/comparison | ok | 2026-10-30 | 2026-10-30 | 1 | [X News](https://x.com/i/trending/2115788633512817077) |
+| kenh14-luong-46tr-nha-thue | Lương 46 triệu, chi 15 triệu/tháng tiền nhà thuê | money/housing | caution (không so lương) | 2026-10-30 | 2026-10-30 | 1 | [Kenh14](https://kenh14.vn/luong-46-trieu-nu-nhan-vien-van-phong-chi-15-trieu-thang-de-o-nha-thue-215261029181409983.chn) |
+| dantri-phi-gui-xe-hn | Hà Nội: nhiều người đổi thói quen đi lại vì phí gửi xe tăng | commute | caution (chính sách địa phương) | 2026-10-30 | 2026-10-30 | 1 | [Dân trí](https://dantri.com.vn/o-to-xe-may/nhieu-nguoi-o-ha-noi-doi-thoi-quen-di-lai-vi-phi-gui-xe-tang-20261029162114792.htm) |
 
 ## Memes & formats
 | id | Nội dung | Loại | Ngôn ngữ / khán giả | first | last | count | Nguồn | Cách dùng | Clip / trụ |
@@ -300,6 +305,9 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-overthink-01 | x-overthinking-deciding | nằm nghĩ đi nghĩ lại một chuyện mà chưa chốt được gì | 3.14 | "“Overthinking không phải nghĩ nhiều, mà là nghĩ mà không chốt.” Lần tới thấy mình nghĩ vòng vòng, đứng dậy rửa cái ly trước đã." (P03) | contrarian / empathy | clip-24 (3.14) hook trend, LIGHT | đề xuất | 2026-10-29 |
 | B-bedtime-01 | x-apple-watch-bedtime + x-autumn-sleep-fatigue | tối nào cũng định ngủ sớm, đặt điện thoại xuống thì đã quá nửa đêm | 3.2 (+3.9) | "Tối qua mấy giờ bạn mới chịu đặt điện thoại xuống? Thử ghi lại giờ đó bảy ngày liền." (P12+P04, số Mỹ chưa tự kiểm nên không vào hook) | data / empathy | clip-14 (3.2) hook thay thế, DARK | đề xuất | 2026-10-29 |
 | B-caphesang-01 | x-coffee-delay-no | cả feed cãi chờ 90 phút mới được uống cà phê sáng, mà ly 3 giờ chiều không ai nhắc | 3.4 | "Cả mạng đang cãi sáng dậy phải chờ chín mươi phút mới được uống cà phê. Mà ly đáng lo là ly lúc ba giờ chiều." (P11+P03) | contrarian | clip-17 (3.4) hook thay thế, DARK | đề xuất (không claim cortisol) | 2026-10-29 |
+| B-maxxing-01 | maxxing-woty-2026 | đầu tháng bật cả chục thói quen, tuần thứ ba chỉ còn app nhắc nhở kêu | 4.12 | "Năm nay ai cũng đang “maxxing” một thứ gì đó. Còn bạn, đang maxxing cùng lúc mấy thứ, và tới tuần thứ ba còn giữ được mấy thứ?" (P11+P03+P15) | humor / contrarian | clip-06 (4.12), lựa chọn thứ ba cạnh B-bonghoa-01, B-kiennhan-01 | stub, chờ Hiệp chọn | 2026-10-30 |
+| B-ghenti-01 | x-growth-over-envy | lướt thấy bạn cũ khoe chìa khoá nhà mới, nhìn lại sổ tiết kiệm của mình | 3.20 | "Bạn bè người đổi xe, người mua nhà, còn kế hoạch của bạn thì cứ dời qua tháng sau?" (P03+P15) | empathy / contrarian | clip-22 (3.20) | stub, chờ fact 3.20 (Deep Research) | 2026-10-30 |
+| B-viecne-01 | x-hard-things-early | cuộc gọi cần gọi né cả tuần, gọi thật thì mười phút | 4.9 | "Cuộc gọi bạn né cả tuần nay, gọi thật chắc mất mười phút. Vậy sao nó to dữ vậy trong đầu?" (P10+P03) | empathy | callback 4.9 (clip-02 đã dùng), củng cố B-tucantro-01 | đề xuất | 2026-10-30 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |

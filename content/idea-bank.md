@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-29
+updated: 2026-10-30
 tags: [ideas]
 ---
 # Idea bank
@@ -63,3 +63,5 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | “I’m so sorry”: gỡ từng lớp góc làm việc hoàn hảo, lộ điện thoại úp cạnh laptop (B-imsorry-01) | 3.1 | trụ 2 tập trung | "Đây là góc làm việc siêu tập trung của mình… gỡ ra từng lớp nha. I’m so sorry." | DARK | ý tưởng (2026-10-29; clip-08 hook thay thế; format bão hoà ngoài, ngày 4) |
 | Overthinking = nghĩ mà không chốt: đứng dậy làm một việc phải động tay (B-overthink-01) | 3.14 | trụ 4 tâm trí | "“Overthinking không phải nghĩ nhiều, mà là nghĩ mà không chốt.” Lần tới thấy mình nghĩ vòng vòng, đứng dậy rửa cái ly trước đã." | LIGHT | ý tưởng (2026-10-29; clip-24) |
 | Cà phê sáng không phải ly đáng lo, ly 3 giờ chiều mới là (B-caphesang-01) | 3.4 | trụ 3 năng lượng | "Cả mạng đang cãi sáng dậy phải chờ chín mươi phút mới được uống cà phê. Mà ly đáng lo là ly lúc ba giờ chiều." | DARK | ý tưởng (2026-10-29; clip-17 hook thay thế) |
+| “Maxxing” (Từ của năm 2026): bật cả chục thói quen cùng lúc, tuần thứ ba còn mấy cái? Giữ một cái, tính theo tháng (B-maxxing-01) | 4.12 | trụ 1 | "Năm nay ai cũng đang “maxxing” một thứ gì đó. Còn bạn, đang maxxing cùng lúc mấy thứ, và tới tuần thứ ba còn giữ được mấy thứ?" | DARK | stub 2026-10-30 (`research/trends/2026-10-30/plans/plan-1-maxxing-mot-thoi-quen.json`), chờ Hiệp chọn hook clip-06 |
+| Bạn bè đổi xe, mua nhà, kế hoạch của mình cứ dời: so với chính mình ba tháng trước (B-ghenti-01) | 3.20 | trụ 4 tâm trí | "Bạn bè người đổi xe, người mua nhà, còn kế hoạch của bạn thì cứ dời qua tháng sau?" | DARK | stub 2026-10-30 (`research/trends/2026-10-30/plans/plan-2-ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.json`), chờ fact 3.20 |
