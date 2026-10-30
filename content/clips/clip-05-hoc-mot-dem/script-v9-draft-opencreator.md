@@ -7,7 +7,7 @@ theme: DARK
 format: W-16, một ngôi kể «bạn» (L-089), viết lại từ đầu theo L-095 (ý 1 «Hay lắm»)
 status: DRAFT r9.2 — vá 2: M1 (hook mở bằng nỗi đau «hay lắm», trend chuyển vào cảnh đồng nghiệp bàn ở b02), M2 (một chương xuyên suốt), M3 (không chữ trong hình), S2 theo Deep Research. Chưa Chốt, không giọng/render.
 fact_lock: content/clips/clip-05-hoc-mot-dem/fact-package-v5.md — chỉ F5 (23.14: Yang 2021, Dunlosky 2013). Không F1, không 23.15
-trend: Đọc nhiều có giúp viết hay hơn (X News, digest 25–26/10 #10) — trend đã nghiên cứu; trend học thuộc bỏ vì không khớp F5 (Deep Research). Nếu Social Research chọn trend khác thì thay ở S4
+trend: Đọc nhiều có giúp viết hay hơn (X News, digest 25–26/10 #10) — trend đã nghiên cứu; trend học thuộc không dùng vì F5 không trả lời «học thuộc có đáng không», chỉ dùng được làm câu hỏi (Deep Research), còn hook cần mở bằng nỗi đau «hay lắm». Nếu Social Research chọn trend khác thì thay ở S4
 trend_id: 2113344436113473964 (https://x.com/i/trending/2113344436113473964; research/trends/2026-10-26/digest.md #10)
 hook_pattern: P10 (đặt người xem vào nghịch lý: đọc hết mà chỉ nói được «hay lắm») — nỗi đau + câu hỏi ở S1, trả lời ngay S2
 trend_beats: [b02]
