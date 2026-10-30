@@ -9,6 +9,7 @@
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
+  check-rules.py --fresh draft.md [--against old.md …]  # L-095: hook / beat chain similarity ≥0.5 vs every other script-v*.md of the clip (incl. git history) → ✖
   check-rules.py --link draft.md [more.md]       # L-094 (⚠): adjacent sentence pair (within or across beats) sharing no content word and not opening with a connector / back-reference
   check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
@@ -619,6 +620,50 @@ def check_repeat_beats(items, where="draft"):
 def check_repeat_file(path):  # --repeat FILE (L-093)
     check_repeat_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-095 (Hiệp 30/10 18:00 «Tệ quá làm lại từ đầu toàn bộ script với sáng tạo hơn»): --fresh <draft.md> [--against f.md…] — bản mới không được giữ hook/khung của bản bị bác cùng clip
+L095_LIMIT = 0.5
+L095_MANUAL = ("manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; "
+               "người xem có dừng lướt ở 3 giây đầu không, có hình ảnh/khoảnh khắc đáng nhớ không")
+def _l095_words(t):
+    return [w for w in _l089_tok(" ".join(_l089_sents(t))) if len(w) > 1 and w not in L089_STOP and w not in L093_STOP]
+def _l095_sim(a, b):
+    from difflib import SequenceMatcher
+    sa, sb = set(a), set(b)
+    jac = len(sa & sb) / max(len(sa | sb), 1)
+    return max(jac, SequenceMatcher(None, a, b, autojunk=False).ratio())
+def _l095_scores(new, old):
+    hook = _l095_sim(_l095_words(new[0][2]), _l095_words(old[0][2]))
+    m = min(len(new), len(old))
+    chain = sum(_l095_sim(_l095_words(new[i][2]), _l095_words(old[i][2])) for i in range(m)) / max(len(new), len(old), 1)
+    return hook, chain
+def _l095_rejected(path, extra):
+    import subprocess, glob
+    d = os.path.dirname(os.path.abspath(path)); me = os.path.abspath(path); out = []
+    files = [f for f in sorted(glob.glob(os.path.join(d, "script-v*.md"))) if os.path.abspath(f) != me]
+    for f in files:
+        out.append((os.path.basename(f), open(f, encoding="utf8").read()))
+        try:
+            shas = subprocess.run(["git", "log", "--format=%h", "--", f], cwd=d, capture_output=True, text=True).stdout.split()
+            rel = subprocess.run(["git", "ls-files", "--full-name", f], cwd=d, capture_output=True, text=True).stdout.strip()
+            for h in shas[1:]:
+                r = subprocess.run(["git", "show", f"{h}:{rel}"], cwd=d, capture_output=True, text=True)
+                if r.returncode == 0: out.append((f"{os.path.basename(f)}@{h}", r.stdout))
+        except Exception: pass
+    for f in extra: out.append((os.path.basename(f), open(f, encoding="utf8").read()))
+    return out
+def check_fresh_file(path, extra=()):
+    new = draft_beats(open(path, encoding="utf8").read())
+    if not new: err("L-095", f"{os.path.basename(path)}: không đọc được lời theo beat"); return
+    rows = []
+    for name, md in _l095_rejected(path, extra):
+        old = draft_beats(md)
+        if old: rows.append((name,) + _l095_scores(new, old))
+    if not rows: warn("L-095", "không tìm thấy bản cũ cùng clip để so"); return
+    bh = max(rows, key=lambda r: r[1]); bc = max(rows, key=lambda r: r[2])
+    (err if bh[1] >= L095_LIMIT else ok)("L-095", f"hook giống nhất {bh[1]:.2f} với {bh[0]} (ngưỡng {L095_LIMIT}, so {len(rows)} bản)" + (" → đổi hook/tình huống mở" if bh[1] >= L095_LIMIT else ""))
+    (err if bc[2] >= L095_LIMIT else ok)("L-095", f"chuỗi beat giống nhất {bc[2]:.2f} với {bc[0]}" + (" → đổi khung dẫn dắt, không chỉ đổi chữ" if bc[2] >= L095_LIMIT else ""))
+    info("L-095", L095_MANUAL)
+
 # ---- L-094 (Rule Reviewer 29/10 15:14, Hiệp «Quá lộn xộn các câu thiếu liên kết»): --link <draft.md> — cặp câu liền nhau không có mối nối (chỉ ⚠, cổng tay chặn)
 L094_REF = r"(?<!\w)(đó|ấy|vậy|thế|này|nó|họ|y chang|cũng|lúc đó|khi đó|chuyện này|điều này|cách này)(?!\w)"
 L094_MANUAL = ("manual gate (chặn): bảng cặp câu trong review — câu N+1 trả lời/giải thích/đối chiếu/hệ quả của câu N nhờ chữ nào; "
@@ -721,6 +766,11 @@ def main():
     if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
+        return report(outp)
+    if a and a[0] == "--fresh":  # L-095: bản làm lại phải khác hook/khung các bản bị bác cùng clip
+        rest = [f for f in a[1:] if f not in ("--out", outp)]
+        extra = rest[rest.index("--against") + 1:] if "--against" in rest else []
+        for f in (rest[:rest.index("--against")] if "--against" in rest else rest): check_fresh_file(f, extra)
         return report(outp)
     if a and a[0] == "--link":  # L-094 on draft script files (cặp câu liền nhau có mối nối)
         for f in a[1:]:
