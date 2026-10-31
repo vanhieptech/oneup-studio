@@ -213,3 +213,26 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - **Gốc:** hơn 15 vòng vá và viết lại (r6→r8.2) đều giữ cùng một khung: «đọc rồi đọc lại → quên → trend → nghiên cứu 3 nhóm → chia ngày → tự kể». Mỗi vòng chỉ sửa câu cho khớp luật, nên bản cuối sạch luật nhưng nhạt và giống bài giảng. Rule Reviewer chỉ chấm luật và độ nối câu, không có cổng nào bắt sự sáng tạo.
 - **Luật (cổng tay, chặn):** khi Hiệp bác vì nhạt hoặc yêu cầu làm lại từ đầu, bản mới phải đổi ý tưởng gốc: hook, tình huống mở và cách dẫn dắt khác hẳn bản bị bác. Không được giữ khung chuỗi lý lẽ cũ rồi chỉ đổi chữ. Trước khi viết lời, OpenCreator đưa ra 3 ý tưởng (một dòng mỗi ý), cả nhóm chọn một; Rule Reviewer ghi lý do vì sao ý được chọn khác bản bị bác. Khi chấm, ngoài luật còn trả lời: người xem có dừng lướt ở 3 giây đầu không, có hình ảnh hoặc khoảnh khắc nào đáng nhớ không. Không có → CHƯA ĐẠT.
 - **Phát hiện:** cổng tay trong file review. ⚠ tự động đề xuất cho News: so hook và chuỗi beat của bản mới với các bản bị Hiệp bác cùng clip, giống ≥ 0.5 → báo lỗi.
+
+## L-096: Hook yếu, dẫn chứng mơ hồ, câu cộc lốc (clip-05 v9 r9.2)
+- **Hiệp (2026-10-31 17:26):** «Sao dở quá dậy hook đâu dẫn chứng đâu câu văn cộc lôc xàm». Hiệp nói về r9.2 (bcd8dfa, cf3d1c4). Bản này Rule Reviewer đã chấm ĐẠT ở 90184d0 và Deep Research xác nhận fact ở 531a89e.
+- **Lỗi:**
+  - (a) **Hook không có lực.** «Đọc hết một chương, bị hỏi lại, bạn chỉ nói được «hay lắm»?» chỉ là câu hỏi nhẹ: không có điều bất ngờ, không đặt cược gì, không có lý do để dừng lướt.
+  - (b) **Không có dẫn chứng thật.** «Nhiều nghiên cứu thấy … có ích hơn» không nói ai, so cái gì, kết quả cụ thể ra sao. Đây đúng là câu chung chung mà luật cấm. Deep Research cấm nói số nên câu dẫn chứng bị rút đến rỗng.
+  - (c) **Câu cộc.** Có chuỗi câu ngắn đứng rời, như «Bạn chỉ còn «hay lắm».», «Vậy thứ cần tập là kể được khi sách gấp.» và «Chỗ sót ấy là phần cần ôn lần sau.». Trần 175 chữ cộng với lệnh cắt từ lặp đã ép câu thành mẩu.
+  - (d) **«Xàm».** Cảnh đồng nghiệp bàn chuyện «đọc nhiều có giúp viết hay hơn» là dựng gượng để nhét trend vào.
+- **Gốc:**
+  - Cổng sáng tạo (L-095) Rule Reviewer chấm quá dễ, chỉ thấy có «khoảnh khắc hình» là cho qua.
+  - Không có ô nào bắt dẫn chứng phải cụ thể (nguồn, so sánh, kết quả).
+  - Không có ô nào đo độ cộc.
+  - Rule Reviewer coi «Deep Research nói fact ĐẠT» là đủ, trong khi fact đúng nhưng rỗng.
+- **Luật (cổng tay, chặn):**
+  - (1) **Hook** có cái mới hoặc bất ngờ, hay cái giá rõ ràng cho người xem, trong 3 giây đầu. Rule Reviewer phải viết ra một câu: «vì sao người lướt sẽ dừng». Không viết được thì CHƯA ĐẠT.
+  - (2) **Dẫn chứng** nói được ai hoặc nguồn nào (tác giả, năm, hoặc loại nghiên cứu), so A với B, và kết quả theo chữ của nguồn. Cấm «nhiều nghiên cứu thấy … có ích». Nếu luật «không nói số» làm dẫn chứng rỗng thì Deep Research phải đưa ra một cách nói cụ thể mà nguồn cho phép. Không có thì báo xung đột cho Hiệp, không tự bỏ qua.
+  - (3) **Câu chảy, không cộc.** Không để hai câu dưới 8 chữ liền nhau. Câu phải nối bằng quan hệ nhân quả hoặc đối chiếu thành lời nói tự nhiên, không được chặt thành mẩu để vừa trần chữ.
+  - (4) **Trend** phải là chuyện người xem thật sự gặp. Không dựng cảnh nhân vật «đang bàn» trend.
+- **Phát hiện:**
+  - Cổng tay trong file review: câu «vì sao dừng lướt» và câu dẫn chứng 3 phần (ai, so cái gì, kết quả).
+  - ⚠ tự động đề xuất cho News:
+    - `--evidence`: ✖ khi gặp «nhiều nghiên cứu» hoặc «nghiên cứu thấy» mà không có tên hay năm nguồn trong cùng câu.
+    - `--choppy`: ✖ khi có 2 câu dưới 8 chữ liền nhau, hoặc quá 30% số câu dưới 8 chữ.
