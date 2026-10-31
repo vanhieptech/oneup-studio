@@ -5,7 +5,7 @@ clip: b-tietkiem-01-musk-quy-du-phong (chưa đánh số clip)
 item: HTB 5.27 (quỹ dự phòng 3–6 tháng chi tiêu), mức C, kinh nghiệm phổ biến
 theme: DARK
 format: W-16, một ngôi kể «bạn» (L-089), theo L-095 + L-096
-status: DRAFT r1.1 (sửa S2 theo review fcf86d7). --l088 mâu thuẫn mức C, Rule Reviewer báo Hiệp. Chờ Deep Research kiểm S3. Chưa Chốt.
+status: DRAFT r2 (end card ghi mức C theo Rule Reviewer/Deep Research). --l088 mâu thuẫn mức C, Rule Reviewer báo Hiệp. Chưa Chốt.
 fact_lock: research/fact-packages/factcheck-trends-2026-10-31.md (c5d3777) mục 5.27: giữ «tương lai xa» và vế «khi AI làm mọi thứ dư dả»; mức C nói «lời khuyên phổ biến», không «nghiên cứu cho thấy»; không 18%, không 500.000; không khuyên đầu tư; không ảnh Musk, không chính trị; có câu an toàn
 trend: Elon Musk nói tiết kiệm cho tương lai xa là vô nghĩa khi siêu trí tuệ mang lại sự dư dả (VnExpress 5138848, 29/10). Chỉ là cái móc
 trend_id: vnexpress-5138848-musk-tiet-kiem (research/trends/2026-10-31/trend-5.27-musk-tiet-kiem.md)
@@ -69,7 +69,7 @@ S9: Rồi mỗi lần lương về, chuyển trước một khoản nhỏ sang t
 S10: Khi quỹ đó đủ, lỡ mất việc, bạn vẫn đóng tiền nhà mà không đi vay.
 S11: Còn tối nay, thử cộng chi tiêu của bạn, rồi kể khoản làm bạn bất ngờ nhất nha.
 
-**End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia. Không phải lời khuyên đầu tư.» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Trend: VnExpress 29/10. Không ghi kênh được tác giả bảo trợ.
+**End card (tĩnh, ~2s):** «Thông tin tham khảo, không thay thế tư vấn chuyên gia. Không phải lời khuyên đầu tư.» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Trend: VnExpress 29/10. Không ghi kênh được tác giả bảo trợ. · Kinh nghiệm phổ biến, cẩm nang mục 5.27, mức C
 
 ## Beat → caption EN → hình
 

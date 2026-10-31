@@ -1,11 +1,11 @@
 ---
-title: "Dọn liền tay — script v1 nháp r1.1 (OpenCreator)"
+title: "Dọn liền tay — script v1 nháp r2 (OpenCreator)"
 date: 2026-10-31
 clip: b-donlientay-01 (chưa đánh số clip)
 item: HTB 4.9 (trì hoãn: làm việc bớt khó chịu, thu nhỏ bước đầu), Steel 2007, mức A, tương quan
 theme: LIGHT
 format: W-16, một ngôi kể «bạn» (L-089), theo L-095 + L-096
-status: DRAFT r1.1 (sửa theo review fcf86d7: S4 «Còn», S7 nói rõ ngán việc và dời việc, thêm câu an toàn). Chưa Chốt, không giọng/render.
+status: DRAFT r2 (bảng nguồn: câu Steel ở b03, theo Deep Research b5a50b1). Chưa Chốt, không giọng/render.
 fact_lock: research/fact-packages/factcheck-trends-2026-10-31.md (c5d3777) mục 4.9: clean as you go chỉ là ví dụ cho mẹo 4.9; câu Steel 2007; tương quan nên nói «đi cùng», «hay», không «làm cho»; không nói nghiên cứu chứng minh dọn liền tay giữ bếp sạch; không Zeigarnik
 trend: Clean as you go / dọn liền tay (X News 30/10). Chỉ là cái móc
 trend_id: x-2116206747459420656 (research/trends/2026-10-31/trend-4.9-clean-as-you-go.md)
@@ -89,9 +89,9 @@ Mọi hình theo L-050: không chữ, không số, không nhãn trong hình.
 |---|---|
 | b01 | trend X News 30/10, chỉ làm móc |
 | b02 | mẹo 4.9 thu nhỏ bước đầu; ví dụ đời thường (L-087) |
-| b03 | câu tả cảm giác, không cơ chế não |
-| b04 | câu dẫn chứng Deep Research mục 4.9 (Steel 2007, mức A) |
-| b05 | cẩm nang 4.9: làm việc bớt khó chịu, thu nhỏ bước đầu |
+| b03 | câu tả cảm giác, không cơ chế não; câu dẫn chứng Deep Research mục 4.9 (Steel 2007, mức A) + câu tương quan |
+| b04 | cẩm nang 4.9: làm việc bớt khó chịu, thu nhỏ bước đầu |
+| b05 | ví dụ đời thường của mẹo 4.9 (thớt, dao lúc chờ nồi sôi), L-087 |
 | b06 | không nói nghiên cứu chứng minh bếp sạch; «thường» không hứa |
 
 ## Tự soát (kết luận là của Rule Reviewer)
