@@ -89,16 +89,16 @@ Mọi hình theo L-050: không chữ, không số, không nhãn trong hình.
 | b03 | Rereading keeps ideas on the page · When asked, you must recall · Dunlosky's team, 2013, ten study methods · Self-testing ranked highest · Rereading sat in the lowest group | Trái: Thầy lật lại trang sách đang mở. Phải: Thầy úp sách, tự nói. Hai bậc thềm không chữ, bên tự kiểm tra cao nhất, bên đọc lại thấp nhất. Không số, không tên trong hình. |
 | b04 | So practice recalling with the book closed | Cuốn sách úp xuống bàn «bộp» (tiếng động), Thầy gật đầu. |
 | b05 | At each chapter's end, flip the book · Say or write three main ideas · Then open it and check · Circle gaps to review next time | Thầy úp sách, giơ lần lượt 3 ngón tay, miệng nói; mở sách, bút đỏ khoanh hai chỗ. |
-| b06 | lần tới dễ nhớ ra hơn thay vì chỉ thấy quen; CTA úp sách kể một ý | câu Deep Research (23.14: điểm nâng mức trung bình), không hứa số ý |
+| b06 | Next time someone asks · Recall comes easier, not just familiarity · Flip your current book down · Recall one idea, then comment | Chibi bạn hỏi lại, bong bóng ý của Thầy lóe 3 ngôi sao thay cho «…», một bậc thang nhỏ nhô lên dưới chân (+1). Sang end card. |
 
 ## Nguồn từng câu
 | Beat | Câu | Nguồn |
 |---|---|---|
 | b01 | theo trend đọc sách thay cho lướt điện thoại, gấp sách chẳng kể nổi một ý | trend x-2114817316420805048; nỗi đau từ reply @phrog_lmao, E5, E6 (tín hiệu xã hội, không lên màn hình). Không nói đọc sách chữa được gì |
-| b02 | Books you want to remember and use · Maybe it's the review method · Last night you reread the best chapter · At lunch a friend asks about it · It feels familiar, but nothing comes out | tình huống đời thường (L-087) |
-| b03 | Rereading keeps ideas on the page · When asked, you must recall · Dunlosky's team, 2013, ten study methods · Self-testing ranked highest · Rereading sat in the lowest group | câu đầu tả tình huống, không cơ chế não; hai câu sau theo evidence-lines-v10.md cách A (cẩm nang 23.14, 23.16). Không nói «vô ích», không % |
+| b02 | muốn nhớ để làm theo; đọc lại chương hay nhất một lượt; bạn bè hỏi trưa nay, thấy quen mà chẳng nói được | tình huống đời thường (L-087), hướng (b): người xem thật sự đọc lại để nhớ |
+| b03 | đọc lại thì ý nằm sẵn, bị hỏi phải tự nhớ; Dunlosky 2013 xét mười cách học; tự kiểm tra cao nhất, đọc đi đọc lại nhóm thấp nhất | câu đầu tả tình huống, không cơ chế não; hai câu sau theo evidence-lines-v10 cách A (780bd6d), so đúng việc đọc lại ở S3 |
 | b04 | tập kể được ý chính khi sách đóng | rút từ F5 |
-| b05 | At each chapter's end, flip the book · Say or write three main ideas · Then open it and check · Circle gaps to review next time | F5 (nhớ ra trước, dò sau); «ba ý» là mẹo, không gắn nghiên cứu |
+| b05 | úp sách nói hoặc viết ra ba ý, mở ra dò, khoanh chỗ sót để ôn | F5 + ví dụ gốc 23.14 (tự viết ra ý chính); «ba ý» là mẹo, không gắn nghiên cứu |
 | b06 | lần tới dễ nhớ ra hơn thay vì chỉ thấy quen; CTA úp sách kể một ý | câu Deep Research (23.14: điểm nâng mức trung bình), không hứa số ý |
 
 ## Tự soát (kết luận là của Rule Reviewer)
