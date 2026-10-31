@@ -10,6 +10,8 @@
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
   check-rules.py --fresh draft.md [--against old.md …]  # L-095: hook / beat chain similarity ≥0.5 vs every other script-v*.md of the clip (incl. git history) → ✖
+  check-rules.py --evidence draft.md               # L-096: «nhiều nghiên cứu / nghiên cứu thấy» without a source name or year in the same sentence → ✖
+  check-rules.py --choppy draft.md                 # L-096: 2 adjacent sentences ≤ 10 words, or > 30% of sentences ≤ 10 words → ✖
   check-rules.py --link draft.md [more.md]       # L-094 (⚠): adjacent sentence pair (within or across beats) sharing no content word and not opening with a connector / back-reference
   check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
@@ -620,6 +622,37 @@ def check_repeat_beats(items, where="draft"):
 def check_repeat_file(path):  # --repeat FILE (L-093)
     check_repeat_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-096 (Hiệp 31/10 17:26 «hook đâu dẫn chứng đâu câu văn cộc lốc»): --evidence / --choppy <draft.md>
+L096_VAGUE = re.compile(r"nhiều nghiên cứu|nghiên cứu (?:cho )?thấy|các nghiên cứu|một số nghiên cứu|giới khoa học", re.I)
+L096_SRC = re.compile(r"\b(?:19|20)\d{2}\b|cẩm nang|[A-Z][a-z]{2,}(?:\s*(?:&|và|and|,)\s*[A-Z][a-z]{2,})*")
+L096_SHORT, L096_RATIO = 11, 0.30  # ≤10 chữ: ngưỡng <8 của RR để lọt r9.2 (Hiệp bác vì cộc), xem L-096
+def _l096_src_in(sent):  # tên nguồn (chữ Latin viết hoa, không phải chữ đầu câu) hoặc năm hoặc «cẩm nang»
+    body = sent.split(None, 1)[1] if len(sent.split()) > 1 else ""
+    return bool(re.search(r"\b(?:19|20)\d{2}\b|cẩm nang", sent, re.I) or re.search(r"\b[A-Z][a-z]{2,}\b", body) and
+                any(re.fullmatch(r"[A-Za-z]+", w) for w in re.findall(r"\b[A-Z][a-z]{2,}\b", body)))
+def _l096_draft_sents(path):
+    out = []
+    for i, (_, _, txt) in enumerate(draft_beats(open(path, encoding="utf8").read()), 1):
+        out += [(f"b{i:02d}", s) for s in _l089_sents(txt)]
+    return out
+def check_evidence_file(path):
+    ss = _l096_draft_sents(path); bad = 0
+    for b, s in ss:
+        if L096_VAGUE.search(s) and not _l096_src_in(s):
+            bad += 1; err("L-096", f"{b}: dẫn chứng không nêu nguồn (tên/năm): «{s}» → nói ai nghiên cứu, so A với B, kết quả theo đúng chữ nguồn")
+    if not bad: ok("L-096", f"dẫn chứng: không có câu «nhiều nghiên cứu/nghiên cứu thấy» thiếu tên/năm ({len(ss)} câu)")
+    info("L-096", "manual gate: câu dẫn chứng đủ 3 phần (ai làm, so A với B, kết quả đúng chữ nguồn); hook có lý do dừng lướt")
+def check_choppy_file(path):
+    ss = _l096_draft_sents(path)
+    if not ss: err("L-096", f"{os.path.basename(path)}: không đọc được câu"); return
+    n = [len(_l089_tok(s)) for _, s in ss]; short = [k for k, x in enumerate(n) if x < L096_SHORT]
+    pairs = [k for k in range(len(n) - 1) if n[k] < L096_SHORT and n[k + 1] < L096_SHORT]
+    for k in pairs:
+        err("L-096", f"{ss[k][0]}→{ss[k+1][0]}: 2 câu cộc liền nhau ({n[k]}, {n[k+1]} chữ): «{ss[k][1]}» «{ss[k+1][1]}» → nối bằng nhân quả/đối chiếu")
+    r = len(short) / len(n)
+    (err if r > L096_RATIO else ok)("L-096", f"câu ≤ {L096_SHORT - 1} chữ: {len(short)}/{len(n)} = {r:.0%} (trần {L096_RATIO:.0%})")
+    if not pairs and r <= L096_RATIO: ok("L-096", "không có 2 câu cộc liền nhau")
+
 # ---- L-095 (Hiệp 30/10 18:00 «Tệ quá làm lại từ đầu toàn bộ script với sáng tạo hơn»): --fresh <draft.md> [--against f.md…] — bản mới không được giữ hook/khung của bản bị bác cùng clip
 L095_LIMIT = 0.5
 L095_MANUAL = ("manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; "
@@ -766,6 +799,11 @@ def main():
     if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
+        return report(outp)
+    if a and a[0] in ("--evidence", "--choppy"):  # L-096
+        fn = check_evidence_file if a[0] == "--evidence" else check_choppy_file
+        for f in a[1:]:
+            if f != "--out" and f != outp: fn(f)
         return report(outp)
     if a and a[0] == "--fresh":  # L-095: bản làm lại phải khác hook/khung các bản bị bác cùng clip
         rest = [f for f in a[1:] if f not in ("--out", outp)]
