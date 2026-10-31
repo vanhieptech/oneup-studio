@@ -1,11 +1,11 @@
 ---
-title: "Dọn liền tay — script v1 nháp r1 (OpenCreator)"
+title: "Dọn liền tay — script v1 nháp r1.1 (OpenCreator)"
 date: 2026-10-31
 clip: b-donlientay-01 (chưa đánh số clip)
 item: HTB 4.9 (trì hoãn: làm việc bớt khó chịu, thu nhỏ bước đầu), Steel 2007, mức A, tương quan
 theme: LIGHT
 format: W-16, một ngôi kể «bạn» (L-089), theo L-095 + L-096
-status: DRAFT r1. Hook dựa trên bản Rule Reviewer đã đạt. Chưa Chốt, không giọng/render.
+status: DRAFT r1.1 (sửa theo review fcf86d7: S4 «Còn», S7 nói rõ ngán việc và dời việc, thêm câu an toàn). Chưa Chốt, không giọng/render.
 fact_lock: research/fact-packages/factcheck-trends-2026-10-31.md (c5d3777) mục 4.9: clean as you go chỉ là ví dụ cho mẹo 4.9; câu Steel 2007; tương quan nên nói «đi cùng», «hay», không «làm cho»; không nói nghiên cứu chứng minh dọn liền tay giữ bếp sạch; không Zeigarnik
 trend: Clean as you go / dọn liền tay (X News 30/10). Chỉ là cái móc
 trend_id: x-2116206747459420656 (research/trends/2026-10-31/trend-4.9-clean-as-you-go.md)
@@ -32,13 +32,13 @@ Chuỗi lý lẽ (dựng trước khi viết câu): bồn rửa đầy chén, c�
 ## Lời đọc
 
 1. **[Hook: cảnh bồn chén đầy + trend + câu hỏi]** Tối nào bồn rửa nhà bạn cũng đầy chén, còn có người vừa tắt bếp là bếp đã sạch. Họ làm khác bạn ở chỗ nào?
-2. **[Trả lời ngay + ví dụ đời thường]** Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa thái hành. Như tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai.
-3. **[Nguyên nhân + dẫn chứng (ai, việc chán ghét hơn so với ít hơn, kết quả) + giới hạn tương quan]** Vì rửa một con dao chẳng mấy khó chịu, còn cả bồn dầu mỡ nhìn đã ngán. Mà năm 2007, Piers Steel gộp 691 kết quả và thấy việc càng bị chán ghét thì càng hay bị dời. Hai chuyện này đi cùng nhau, chưa chắc cái này gây ra cái kia.
+2. **[Trả lời ngay + ví dụ đời thường]** Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa dùng. Còn tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai.
+3. **[Nguyên nhân + dẫn chứng (ai, việc chán ghét hơn so với ít hơn, kết quả) + giới hạn tương quan]** Vì rửa một con dao chẳng mấy khó chịu, còn cả bồn dầu mỡ nhìn đã ngán. Mà năm 2007, Piers Steel gộp 691 kết quả, thấy việc càng bị chán ghét càng hay bị dời. Nhóm này chỉ thấy ngán việc và dời việc hay đi cùng, chưa chắc cái ngán gây ra.
 4. **[Mục tiêu]** Vậy cần làm việc bớt khó chịu, bằng cách thu nhỏ bước đầu.
 5. **[Cách làm]** Nên lúc chờ nồi sôi, thử rửa luôn cái thớt và con dao.
-6. **[Kết quả + CTA]** Rồi chín giờ tối, bồn rửa thường chỉ còn vài món, chuyện để mai cũng nhẹ hơn. Còn tối nay, món nào bạn rửa liền tay trước, ghi vào bình luận nha.
+6. **[Kết quả + CTA]** Rồi chín giờ tối, bồn rửa thường chỉ còn vài món, chuyện để mai cũng nhẹ hơn. Còn tối nay, món nào bạn rửa liền tay trước, ghi bình luận nha.
 
-Đọc liền một mạch (L-089): Tối nào bồn rửa nhà bạn cũng đầy chén, còn có người vừa tắt bếp là bếp đã sạch. Họ làm khác bạn ở chỗ nào? Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa thái hành. Như tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai. Vì rửa một con dao chẳng mấy khó chịu, còn cả bồn dầu mỡ nhìn đã ngán. Mà năm 2007, Piers Steel gộp 691 kết quả và thấy việc càng bị chán ghét thì càng hay bị dời. Hai chuyện này đi cùng nhau, chưa chắc cái này gây ra cái kia. Vậy cần làm việc bớt khó chịu, bằng cách thu nhỏ bước đầu. Nên lúc chờ nồi sôi, thử rửa luôn cái thớt và con dao. Rồi chín giờ tối, bồn rửa thường chỉ còn vài món, chuyện để mai cũng nhẹ hơn. Còn tối nay, món nào bạn rửa liền tay trước, ghi vào bình luận nha.
+Đọc liền một mạch (L-089): Tối nào bồn rửa nhà bạn cũng đầy chén, còn có người vừa tắt bếp là bếp đã sạch. Họ làm khác bạn ở chỗ nào? Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa dùng. Còn tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai. Vì rửa một con dao chẳng mấy khó chịu, còn cả bồn dầu mỡ nhìn đã ngán. Mà năm 2007, Piers Steel gộp 691 kết quả, thấy việc càng bị chán ghét càng hay bị dời. Nhóm này chỉ thấy ngán việc và dời việc hay đi cùng, chưa chắc cái ngán gây ra. Vậy cần làm việc bớt khó chịu, bằng cách thu nhỏ bước đầu. Nên lúc chờ nồi sôi, thử rửa luôn cái thớt và con dao. Rồi chín giờ tối, bồn rửa thường chỉ còn vài món, chuyện để mai cũng nhẹ hơn. Còn tối nay, món nào bạn rửa liền tay trước, ghi bình luận nha.
 
 Chữ lời: 175.
 
@@ -47,29 +47,29 @@ Chữ lời: 175.
 | Cặp | Câu sau | Vì sao nối được |
 |---|---|---|
 | S1→S2 | «Họ làm khác bạn ở chỗ nào?» | «Họ» gọi lại «có người» ở S1; câu hỏi gắn ngay cảnh hook |
-| S2→S3 | «Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa thái hành.» | «Cũng» nối thẳng câu hỏi; trả lời ngay, không chê người xem, chỉ nói thời điểm rửa |
-| S3→S4 | «Như tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai.» | «Như» mở ví dụ đối lại «lúc việc còn nhỏ» |
+| S2→S3 | «Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa dùng.» | «Cũng» nối thẳng câu hỏi; trả lời ngay, không chê người xem, chỉ nói thời điểm rửa |
+| S3→S4 | «Còn tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai.» | «Còn» mở cảnh ngược lại với «rửa lúc việc còn nhỏ» (Rule Reviewer fcf86d7) |
 | S4→S5 | «Vì rửa một con dao chẳng mấy khó chịu, còn cả bồn dầu mỡ nhìn đã ngán.» | «Vì» giải thích vì sao muốn để mai; «con dao» gọi lại S3 |
-| S5→S6 | «Mà năm 2007, Piers Steel gộp 691 kết quả và thấy việc càng bị chán ghét thì càng hay bị dời.» | «Mà» nối chữ «ngán» với kết quả Steel: việc càng bị chán ghét càng hay bị dời |
-| S6→S7 | «Hai chuyện này đi cùng nhau, chưa chắc cái này gây ra cái kia.» | «Hai chuyện này» gọi lại S6; nói rõ đây là tương quan (Deep Research) |
+| S5→S6 | «Mà năm 2007, Piers Steel gộp 691 kết quả, thấy việc càng bị chán ghét càng hay bị dời.» | «Mà» nối chữ «ngán» với kết quả Steel: việc càng bị chán ghét càng hay bị dời |
+| S6→S7 | «Nhóm này chỉ thấy ngán việc và dời việc hay đi cùng, chưa chắc cái ngán gây ra.» | «Nhóm này» gọi lại Steel ở S6; nói rõ hai thứ là ngán việc và dời việc, chỉ đi cùng nhau |
 | S7→S8 | «Vậy cần làm việc bớt khó chịu, bằng cách thu nhỏ bước đầu.» | «Vậy» rút mục tiêu theo mẹo 4.9 |
 | S8→S9 | «Nên lúc chờ nồi sôi, thử rửa luôn cái thớt và con dao.» | «Nên» mở cách làm; thớt và dao là bước đầu nhỏ |
 | S9→S10 | «Rồi chín giờ tối, bồn rửa thường chỉ còn vài món, chuyện để mai cũng nhẹ hơn.» | «Rồi» là hệ quả; quay về «chín giờ» và «để mai» ở S4; «thường» không hứa |
-| S10→S11 | «Còn tối nay, món nào bạn rửa liền tay trước, ghi vào bình luận nha.» | «Còn» chuyển sang lời mời; «rửa liền tay» nối trend |
+| S10→S11 | «Còn tối nay, món nào bạn rửa liền tay trước, ghi bình luận nha.» | «Còn» chuyển sang lời mời; «rửa liền tay» nối trend |
 
 S1: Tối nào bồn rửa nhà bạn cũng đầy chén, còn có người vừa tắt bếp là bếp đã sạch.
 S2: Họ làm khác bạn ở chỗ nào?
-S3: Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa thái hành.
-S4: Như tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai.
+S3: Cũng chưa chắc họ chăm hơn, có khi họ rửa lúc việc còn nhỏ, như con dao vừa dùng.
+S4: Còn tối qua bạn định ăn rồi rửa một thể, chín giờ nhìn chồng chén là muốn để mai.
 S5: Vì rửa một con dao chẳng mấy khó chịu, còn cả bồn dầu mỡ nhìn đã ngán.
-S6: Mà năm 2007, Piers Steel gộp 691 kết quả và thấy việc càng bị chán ghét thì càng hay bị dời.
-S7: Hai chuyện này đi cùng nhau, chưa chắc cái này gây ra cái kia.
+S6: Mà năm 2007, Piers Steel gộp 691 kết quả, thấy việc càng bị chán ghét càng hay bị dời.
+S7: Nhóm này chỉ thấy ngán việc và dời việc hay đi cùng, chưa chắc cái ngán gây ra.
 S8: Vậy cần làm việc bớt khó chịu, bằng cách thu nhỏ bước đầu.
 S9: Nên lúc chờ nồi sôi, thử rửa luôn cái thớt và con dao.
 S10: Rồi chín giờ tối, bồn rửa thường chỉ còn vài món, chuyện để mai cũng nhẹ hơn.
-S11: Còn tối nay, món nào bạn rửa liền tay trước, ghi vào bình luận nha.
+S11: Còn tối nay, món nào bạn rửa liền tay trước, ghi bình luận nha.
 
-**End card (tĩnh, ~2s):** Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Steel 2007. Không ghi kênh được tác giả bảo trợ.
+**End card (tĩnh, ~2s):** Thông tin tham khảo, không thay thế tư vấn chuyên gia · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Steel 2007. Không ghi kênh được tác giả bảo trợ.
 
 ## Beat → caption EN → hình
 
@@ -98,4 +98,4 @@ Mọi hình theo L-050: không chữ, không số, không nhãn trong hình.
 - Không «làm cho» trong câu Steel; câu S7 nói rõ chỉ là đi cùng nhau.
 - Không Zeigarnik, không cơ chế não. Không nói dọn liền tay là mục 4.9, chỉ là ví dụ của mẹo thu nhỏ bước đầu.
 - Một ngôi «bạn», không «mình». Không «xong», «:» «;» trong lời.
-- 175 chữ (140–175), câu dài nhất 21 chữ, câu ≤10 chữ: 1/11.
+- 175 chữ (140–175), câu dài nhất 19 chữ, câu ≤10 chữ: 1/11.
