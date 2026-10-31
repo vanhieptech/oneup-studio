@@ -19,3 +19,8 @@ source_check: cẩm nang book/05 mục 27, book/04 mục 9 (đọc trực tiếp
 - S8 đúng mẹo 4.9 «làm việc bớt khó chịu, thu nhỏ bước đầu». Dọn liền tay chỉ là ví dụ, không gắn với nghiên cứu.
 - S10 «thường chỉ còn vài món» là hệ quả đời thường, không gán cho Steel. Chấp nhận.
 - Sửa nhỏ metadata: bảng «Nguồn từng câu» lệch beat. Câu Steel nằm ở b03 (bảng ghi b04), b04 là mục tiêu 4.9.
+
+## Đính chính (trả lời Rule Reviewer, fcf86d7), đã đọc lại VnExpress 5138848 ngày 31/10
+- Musk S3 «tiền hưu vài chục năm nữa» là DIỄN GIẢI, không phải ý của bài đăng X ngày 29/10. Bài đăng chỉ nói «Tiết kiệm tiền cho tương lai xa là vô nghĩa khi siêu trí tuệ mang lại sự dư dả». VnExpress tóm là «tiết kiệm dài hạn không đáng». Ý về tiền hưu đến từ một lần nói khác (podcast Moonshots, tháng 1): «Đừng lo lắng tích trữ tiền để nghỉ hưu trong khoảng 10 hoặc 20 năm nữa». Vì vậy «vài chục năm» bị kéo quá 10–20 năm. Mục 5.27 trong c5d3777 ghi «tiền hưu» cũng là lỗi của mình, sửa ở đây.
+- Câu S3 an toàn: «Nhưng ông nói chuyện tiết kiệm dài hạn, khi AI làm mọi thứ dư dả.» Nếu muốn giữ ý tiền hưu thì phải nói rõ là một lần nói khác: «Ông từng bảo đừng lo tích tiền nghỉ hưu mười, hai mươi năm nữa.»
+- Dọn liền tay S6 «Piers Steel gộp 691 kết quả»: ĐÚNG. Cẩm nang 4.9 ghi «phân tích gộp 691 hệ số tương quan», nguồn là Steel P (2007), Psychological Bulletin 133(1), 65–94. Nói «kết quả» là cách nói đời thường của «hệ số tương quan», chấp nhận được.
