@@ -26,3 +26,7 @@ Hook L-096 (1); dẫn chứng đủ ai, so lời đồn 21 ngày với 18–254,
 ## Rủi ro còn lại (báo Hiệp)
 - Hook câu trend vốn là trào lưu biến hình ngoại hình; cầu nối sang thói quen nằm ở «Vậy sao», người chưa xem trend có thể thấy lạ.
 - S4 «sau cơm» và S8 «sau rửa chén» là hai mốc gần nhau, cần hình cho rõ.
+
+## Kết luận cuối (2026-10-31 18:45 UTC+7, sau factcheck e4240fb)
+ĐẠT. Deep Research xác nhận S5, S6, S7, S9, S10 nằm trong mức nguồn HTB 4.12. S7 «cái cần là cùng việc, cùng lúc» là lời khuyên của cẩm nang, lời không nói «nghiên cứu chứng minh»; Rule Reviewer tự chấm dẫn chứng (L-096): có tên nhóm + năm + 96 người, so lời đồn 21 ngày với 18–254 ngày đo được, kết quả đúng chữ nguồn. Gửi Hiệp toàn bộ script. Chưa Chốt, không giọng/render.
+Rủi ro thêm: S7 «cái cần» có thể mềm thành «cái nên giữ» (Deep Research, không bắt buộc) — để Hiệp quyết.
