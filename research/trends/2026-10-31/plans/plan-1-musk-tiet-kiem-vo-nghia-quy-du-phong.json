@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-musk-tiet-kiem-vo-nghia-quy-du-phong",
+ "title": "[STUB] Elon Musk nói tiết kiệm cho tương lai là vô nghĩa. Với ông ấy có thể vậy, còn bạn mất việc tháng sau thì sống được mấy tháng?",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "elon-musk-tiet-kiem-tien-cho-tuong-lai",
+  "bridge_id": "B-tietkiem-01",
+  "lesson": "5.27 Để dành trước quỹ dự phòng 3–6 tháng chi tiêu, để ở nơi rút được ngay; tính theo chi tiêu cố định hằng tháng, không theo lương (sách ghi mức C: «3–6 tháng» là kinh nghiệm phổ biến, không có nguồn gốc học thuật; phần bảo hiểm tiền gửi 50 vạn tệ là số Trung Quốc, không dùng). Deep Research kiểm trước khi viết.",
+  "angle": "contrarian / empathy",
+  "pattern": "P11 + P03",
+  "differentiation": "Mọi người đang nói: hai phe cãi nhau dưới post của Musk, một bên tin AI làm tiền hết quan trọng, một bên bảo «ông có tiền nên mới nói vậy» (VnExpress 31/10). Góc của mình: không cãi chuyện tương lai AI. Chỉ hỏi chuyện gần hơn: nếu tháng sau mất việc, bạn sống được mấy tháng? Sách 5.27: quỹ 3–6 tháng chi tiêu, tính bằng chi tiêu chứ không bằng lương. +1 hôm nay: đặt một lệnh chuyển tự động nhỏ sang tài khoản riêng. Chuyện thật của Hiệp (S-07 house-budget): [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Elon Musk vừa nói tiết kiệm cho tương lai là vô nghĩa. Có thể đúng với ông ấy. Còn bạn, nếu tháng sau mất việc, bạn sống được mấy tháng?",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Saving is pointless?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dưới bài đó hai phe cãi nhau: phe tin tương lai dư dả, phe bảo ông có tiền nên mới nói vậy.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Two camps.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b03",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình hông cãi chuyện tương lai. Mình chỉ hỏi chuyện tháng sau thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Just next month.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b04",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lương về, trả thẻ, gửi về nhà, đóng tiền nhà, nhìn lại còn chút xíu, rồi hẹn tháng sau để dành.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Next month, again.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách gợi ý một lớp đệm: đủ ba tới sáu tháng chi tiêu, để ở chỗ rút ra được liền.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "3 to 6 months.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b06",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tính bằng tiền mình xài mỗi tháng, chứ hông phải bằng lương.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Count spending, not salary.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chỉ làm một việc: đặt lệnh chuyển tự động một khoản nhỏ, ngay ngày lương về.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One auto-transfer.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Để dành trước, xài sau. Cộng một mỗi tháng, chứ hông đợi dư.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Save first.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "musk-tiet-kiem-vo-nghia-quy-du-phong.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Quỹ của bạn đang đủ mấy tháng? Comment một con số thôi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "How many months?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
