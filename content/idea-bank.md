@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-10-31
+updated: 2026-11-01
 tags: [ideas]
 ---
 # Idea bank
@@ -67,3 +67,5 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Bạn bè đổi xe, mua nhà, kế hoạch của mình cứ dời: so với chính mình ba tháng trước (B-ghenti-01) | 3.20 | trụ 4 tâm trí | "Bạn bè người đổi xe, người mua nhà, còn kế hoạch của bạn thì cứ dời qua tháng sau?" | DARK | stub 2026-10-30 (`research/trends/2026-10-30/plans/plan-2-ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.json`), chờ fact 3.20 |
 | Musk nói tiết kiệm cho tương lai là vô nghĩa: còn bạn mất việc tháng sau thì sống được mấy tháng? Quỹ 3–6 tháng chi tiêu, đặt chuyển tự động (B-tietkiem-01) | 5.27 | tiền | "Elon Musk vừa nói tiết kiệm cho tương lai là vô nghĩa. Có thể đúng với ông ấy. Còn bạn, nếu tháng sau mất việc, bạn sống được mấy tháng?" | DARK | stub 2026-10-31, chờ duyệt (`research/trends/2026-10-31/plans/plan-1-musk-tiet-kiem-vo-nghia-quy-du-phong.json`; caution người nổi tiếng + tiền; sách mức C) |
 | Dọn liền tay: việc nhỏ làm lúc nó chưa kịp to, rửa con dao trước khi thành cả bồn chén (B-donlientay-01) | 4.9 (callback clip-02) | trụ 1 | "Có người nấu xong là bếp sạch luôn, vì thái hành xong họ rửa dao liền. Còn bồn rửa nhà bạn, tới tối đang chờ mấy cái?" | LIGHT | stub 2026-10-31, chờ duyệt (`research/trends/2026-10-31/plans/plan-2-don-lien-tay-viec-chua-kip-to.json`) |
+| Mùng 1 tháng mới: chọn đúng một việc đã dời, cho nó một ngày hạn và một câu «nếu… thì…», nói ngày đó cho một người (B-thang11-01) | 4.8 (+4.1) | trụ 1 | "Mùng một tháng mười một rồi. Bạn có muốn tháng này xong được một việc đã dời từ tháng trước không?" | LIGHT | stub 2026-11-01, chờ duyệt (ô đăng #27 LIGHT trống; mốc đầu tháng, dời sang 1/12 nếu lỡ; `research/trends/2026-11-01/plans/plan-1-thang-11-mot-viec-co-ngay-han.json`) |
+| Chọn bình yên không phải cố coi như không thấy: tắt gợi ý người quen / giới hạn 10 phút cho app hay lướt đời người khác (B-yenlang-01) | 3.20 | trụ 4 tâm trí | "Cả mạng đang rủ nhau chọn bình yên, coi như không thấy gì hết. Vậy sáng nay vừa mở mắt, bạn đã lướt qua đời bao nhiêu người rồi?" | DARK | stub 2026-11-01, chờ duyệt (clip-22 hook thay thế; `research/trends/2026-11-01/plans/plan-2-chon-binh-yen-bot-luot-doi-nguoi.json`) |

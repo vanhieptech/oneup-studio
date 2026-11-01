@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-thang-11-mot-viec-co-ngay-han",
+ "title": "[STUB] Mùng một tháng 11: chọn đúng một việc đã dời từ tháng trước, cho nó một ngày hạn và một câu «nếu… thì…»",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "thang-11",
+  "bridge_id": "B-thang11-01",
+  "lesson": "4.8 Tự đặt ngày hạn cho việc không có hạn ngoài (Buehler, Griffin & Ross 1994, mức B: có hạn người khác đặt 80,6% xong trước hạn, tự ước chỉ 38,7%; mẫu là sinh viên, không nói trong voice; hạn tự đặt chưa ai đo trực tiếp, sách ghi là suy ra; nói hạn cho người khác thì gần với hạn người khác đặt). Hành động kèm 4.1 (Gollwitzer & Sheeran 2006, mức A, 94 kiểm định, d = 0,65): viết «nếu mấy giờ, ở đâu, thì làm gì». Deep Research kiểm trước khi viết.",
+  "angle": "empathy / data",
+  "pattern": "P05 + P15",
+  "differentiation": "Mọi người đang nói: chúc nhau tháng mới vui vẻ, hứa «tháng này sẽ khác» (X VN «Tháng 11», X worldwide «Happy New Month» 01/11); Forbes 31/10 khuyên kết tháng bằng một việc nhỏ còn dở. Góc của mình: không lập danh sách tháng mới. Chỉ một việc đã dời, cho nó một ngày hạn, vì sách 4.8: người ta xong việc theo ngày hạn chứ gần như không theo lời tự hứa. +1 hôm nay: ghi đúng một dòng vào lịch điện thoại. Chuyện thật của Hiệp: [CẦN HIỆP XÁC NHẬN] (không có trong story-bank)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "thang-11-mot-viec-co-ngay-han.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mùng một tháng mười một rồi. Bạn có muốn tháng này xong được một việc đã dời từ tháng trước không?",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "New month, one thing?",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "thang-11-mot-viec-co-ngay-han.b02",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kiểu cái hộp đồ định thanh lý, nằm ở góc phòng từ tháng chín.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "The box in the corner.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "thang-11-mot-viec-co-ngay-han.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hay cuộc gọi hỏi chủ nhà chuyện tiền điện, ngày nào cũng hẹn mai gọi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The call you keep delaying.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "thang-11-mot-viec-co-ngay-han.b04",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nghiên cứu thấy: có hạn chót do người khác đặt, tám mươi phần trăm làm xong trước hạn. Tự ước lúc nào xong thì chưa tới bốn mươi phần trăm.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Deadlines beat promises.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "thang-11-mot-viec-co-ngay-han.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tức là mình xong việc theo ngày hạn, chứ gần như không theo lời tự hứa.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "We finish by deadlines.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "thang-11-mot-viec-co-ngay-han.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên tháng này chọn đúng một việc thôi. Viết một câu: nếu thứ Bảy, chín giờ sáng, ở nhà, thì mình làm việc đó.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "If Saturday 9am, then…",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "thang-11-mot-viec-co-ngay-han.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi nói cái ngày đó cho một người biết, để nó giống hạn người khác đặt hơn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Tell one person.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "thang-11-mot-viec-co-ngay-han.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chỉ cần ghi đúng một dòng đó vào lịch điện thoại. Vậy là xong phần hôm nay.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One line in your calendar.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "thang-11-mot-viec-co-ngay-han.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Việc bạn dời lâu nhất là việc gì? Comment một chữ thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "What have you delayed?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

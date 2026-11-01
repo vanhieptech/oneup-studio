@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-chon-binh-yen-bot-luot-doi-nguoi",
+ "title": "[STUB] Cả mạng rủ nhau chọn bình yên, coi như không thấy. Bình yên thật là bớt cho đời người khác hiện ra mỗi sáng",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "choosing-peace-by-tuning-out-online-noise",
+  "bridge_id": "B-yenlang-01",
+  "lesson": "3.20 Đừng coi «người khác sống thế nào» là bài đọc mỗi ngày: đặt giới hạn hoặc tắt app hay lướt đời người cùng tuổi (mức A: Lei 2026 phân tích gộp 54 mẫu, r = 0,33 giữa so sánh hướng lên trên mạng và trạng thái tâm lý kém, chỉ là tương quan; Hunt 2018: 143 người, mỗi nền tảng 10 phút/ngày, 3 tuần sau bớt cô đơn; Allcott 2020 là người dùng Mỹ). Voice không dùng nhãn bệnh (không nói «trầm cảm», «lo âu»). Deep Research kiểm trước khi viết.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 + P15",
+  "differentiation": "Mọi người đang nói: chọn bình yên bằng cách «coi như không thấy, không nghe», lo việc của mình (X News 01/11); «so sánh lấy mất bình yên, you vs you» (X News 31/10). Góc của mình: cố coi như không thấy vẫn là đã thấy. Sách 3.20: chỉnh từ chỗ nó hiện ra, tắt mục gợi ý người quen hoặc giới hạn 10 phút cho app hay lướt đời người khác. Tự nhận trước (P15): mình cũng lướt trước khi đánh răng. +1 hôm nay: tắt một mục gợi ý trên một app."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cả mạng đang rủ nhau chọn bình yên, coi như không thấy gì hết. Vậy sáng nay vừa mở mắt, bạn đã lướt qua đời bao nhiêu người rồi?",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Choosing peace?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b02",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thiệt, mình cũng vậy. Chưa đánh răng đã biết bạn cũ mới đổi xe.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Me too.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình đâu có muốn so. Mà điện thoại cứ đưa đời người ta lên trước mắt.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The feed brings it.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Gom hơn năm chục nhóm người được khảo sát, ai hay so mình với người sống tốt hơn trên mạng thì thường thấy tệ hơn về bản thân.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Looking up, feeling down.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b05",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hai cái đi cùng nhau thôi, chưa chắc cái này gây ra cái kia.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Correlation only.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn một thí nghiệm nhỏ: mỗi app chỉ mười phút một ngày, ba tuần sau người ta bớt cô đơn hơn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "10 minutes per app.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b07",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên bình yên không phải cố coi như không thấy. Là bớt cho nó hiện ra.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Let less of it in.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay vào cài đặt, tắt mục gợi ý người quen trên một app thôi. Hoặc đặt giới hạn mười phút.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Turn off one suggestion.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "chon-binh-yen-bot-luot-doi-nguoi.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "App nào làm bạn so nhiều nhất? Comment tên app.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Which app?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}
