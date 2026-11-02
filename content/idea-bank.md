@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-01
+updated: 2026-11-02
 tags: [ideas]
 ---
 # Idea bank
@@ -69,3 +69,6 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Dọn liền tay: việc nhỏ làm lúc nó chưa kịp to, rửa con dao trước khi thành cả bồn chén (B-donlientay-01) | 4.9 (callback clip-02) | trụ 1 | "Có người nấu xong là bếp sạch luôn, vì thái hành xong họ rửa dao liền. Còn bồn rửa nhà bạn, tới tối đang chờ mấy cái?" | LIGHT | stub 2026-10-31, chờ duyệt (`research/trends/2026-10-31/plans/plan-2-don-lien-tay-viec-chua-kip-to.json`) |
 | Mùng 1 tháng mới: chọn đúng một việc đã dời, cho nó một ngày hạn và một câu «nếu… thì…», nói ngày đó cho một người (B-thang11-01) | 4.8 (+4.1) | trụ 1 | "Mùng một tháng mười một rồi. Bạn có muốn tháng này xong được một việc đã dời từ tháng trước không?" | LIGHT | stub 2026-11-01, chờ duyệt (ô đăng #27 LIGHT trống; mốc đầu tháng, dời sang 1/12 nếu lỡ; `research/trends/2026-11-01/plans/plan-1-thang-11-mot-viec-co-ngay-han.json`) |
 | Chọn bình yên không phải cố coi như không thấy: tắt gợi ý người quen / giới hạn 10 phút cho app hay lướt đời người khác (B-yenlang-01) | 3.20 | trụ 4 tâm trí | "Cả mạng đang rủ nhau chọn bình yên, coi như không thấy gì hết. Vậy sáng nay vừa mở mắt, bạn đã lướt qua đời bao nhiêu người rồi?" | DARK | stub 2026-11-01, chờ duyệt (clip-22 hook thay thế; `research/trends/2026-11-01/plans/plan-2-chon-binh-yen-bot-luot-doi-nguoi.json`) |
+| Tắt thông báo không chỉ cứu pin: một tiếng rung không mở cũng làm tụt sự tập trung, tắt thông báo của đúng một app (B-thongbao-01) | 3.1 | trụ 2 tập trung | "Một thợ sửa iPhone đang khuyên mọi người tắt bớt thông báo cho đỡ hao pin. Vậy mỗi lần điện thoại rung lúc bạn đang làm việc, bạn mất gì ngoài pin?" | DARK | stub 2026-11-02, chờ duyệt (clip-08 hook thay thế; `research/trends/2026-11-02/plans/plan-1-thong-bao-hao-pin-hao-tap-trung.json`) |
+| Lương tăng thì nâng cấp gì trước: mua lại thời gian, đo bằng giờ lương của mình (B-muathoigian-01) | 4.14 | trụ 1 thời gian / tiền | "Ba mươi tuổi, lương đã tăng mấy lần mà vẫn ngại nâng cấp cuộc sống. Nếu chỉ được nâng cấp một thứ, bạn chọn mua thêm đồ hay mua lại thời gian?" | LIGHT | stub 2026-11-02, chờ duyệt (ô đăng #27 LIGHT trống; tiền: không ép ai thuê, quỹ dự phòng trước; `research/trends/2026-11-02/plans/plan-2-luong-tang-mua-lai-thoi-gian.json`) |
+| Cả TikTok khoe mình đã đi xa cỡ nào: so với chính mình ba tháng trước, không so với bạn bè (B-dixa-01) | 3.20 | trụ 4 tâm trí | "Cả TikTok đang khoe mình đã đi xa cỡ nào. Còn bạn đang so mình với ai: bạn bè, hay chính bạn ba tháng trước?" | DARK | ý tưởng (2026-11-02; clip-22 hook thay thế; caution: chỉ format, không nhạc/lời/người nổi tiếng) |
