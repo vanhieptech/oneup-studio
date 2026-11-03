@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-02
+updated: 2026-11-03
 tags: [ideas]
 ---
 # Idea bank
@@ -72,3 +72,6 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Tắt thông báo không chỉ cứu pin: một tiếng rung không mở cũng làm tụt sự tập trung, tắt thông báo của đúng một app (B-thongbao-01) | 3.1 | trụ 2 tập trung | "Một thợ sửa iPhone đang khuyên mọi người tắt bớt thông báo cho đỡ hao pin. Vậy mỗi lần điện thoại rung lúc bạn đang làm việc, bạn mất gì ngoài pin?" | DARK | stub 2026-11-02, chờ duyệt (clip-08 hook thay thế; `research/trends/2026-11-02/plans/plan-1-thong-bao-hao-pin-hao-tap-trung.json`) |
 | Lương tăng thì nâng cấp gì trước: mua lại thời gian, đo bằng giờ lương của mình (B-muathoigian-01) | 4.14 | trụ 1 thời gian / tiền | "Ba mươi tuổi, lương đã tăng mấy lần mà vẫn ngại nâng cấp cuộc sống. Nếu chỉ được nâng cấp một thứ, bạn chọn mua thêm đồ hay mua lại thời gian?" | LIGHT | stub 2026-11-02, chờ duyệt (ô đăng #27 LIGHT trống; tiền: không ép ai thuê, quỹ dự phòng trước; `research/trends/2026-11-02/plans/plan-2-luong-tang-mua-lai-thoi-gian.json`) |
 | Cả TikTok khoe mình đã đi xa cỡ nào: so với chính mình ba tháng trước, không so với bạn bè (B-dixa-01) | 3.20 | trụ 4 tâm trí | "Cả TikTok đang khoe mình đã đi xa cỡ nào. Còn bạn đang so mình với ai: bạn bè, hay chính bạn ba tháng trước?" | DARK | ý tưởng (2026-11-02; clip-22 hook thay thế; caution: chỉ format, không nhạc/lời/người nổi tiếng) |
+| «Người xung quanh đang thầm mong bạn làm tốt»: đúng một nửa, họ còn không soi bạn kỹ như bạn nghĩ; nói vấp thì chia đôi cảm giác «ai cũng thấy» (B-mongbantot-01) | 3.21 | trụ 4 tâm trí | "Cả mạng đang chia nhau một câu: người phỏng vấn mong bạn trả lời tốt, người hẹn bạn mong buổi tối vui. Vậy sao vừa nói vấp trong cuộc họp, bạn lại thấy cả phòng đang nhìn mình?" | LIGHT | stub 2026-11-03, chờ duyệt (clip-20 hook trend; `research/trends/2026-11-03/plans/plan-1-ai-cung-mong-ban-lam-tot-chia-doi.json`; mức B) |
+| Thưởng Tết về sớm: phần đầu tiên vào quỹ dự phòng tính bằng tháng chi tiêu, phần còn lại mới chia cho Tết (B-thuongtet-01) | 5.27 | tiền | "Thưởng Tết năm nay đang rục rịch về sớm, nhiều người mong nhận từ tháng mười một cho kịp mua sắm. Tiền chưa về, bạn đã chia nó cho mấy món rồi?" | DARK | stub 2026-11-03, chờ duyệt (5.27 hook thay thế không người nổi tiếng; mức C, mâu thuẫn L-096 chờ Hiệp; `research/trends/2026-11-03/plans/plan-2-thuong-tet-ve-som-quy-du-phong-truoc.json`) |
+| Mỗi ngày một mảnh nhỏ, cuối tháng ghép lại; lỡ một ngày không về 0 (B-30canh-01) | 4.12 (callback clip-06) | trụ 1 | "Có người đang rủ nhau mỗi ngày quay một cảnh ngắn, hết tháng ghép lại thành một bộ phim. Thử làm vậy với một thói quen nhỏ của bạn, lỡ một ngày cũng không sao." | LIGHT | ý tưởng (2026-11-03; format cho clip-30 tổng kết; không nêu số ngày tạo thói quen) |
