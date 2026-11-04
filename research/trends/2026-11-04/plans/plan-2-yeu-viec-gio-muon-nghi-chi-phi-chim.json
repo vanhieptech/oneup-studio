@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-yeu-viec-gio-muon-nghi-chi-phi-chim",
+ "title": "[STUB] «Đã từng rất yêu công việc, giờ chỉ muốn nghỉ». Câu hỏi đúng không phải đã bỏ vào bao nhiêu năm, mà từ giờ còn phải bỏ thêm gì và nhận lại gì",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "da-tung-rat-yeu-cong-viec-nhung-gio-chi-muon-nghi",
+  "bridge_id": "B-yeuviec-01",
+  "lesson": "4.3 Quyết định có làm tiếp hay không, chỉ nhìn phần sắp bỏ vào và phần sắp nhận lại, không tính phần đã bỏ vào (mức B: Arkes & Blumer 1985, vé cả mùa của nhà hát Đại học Ohio bán ngẫu nhiên giá gốc 15 USD, giảm 2 USD, giảm 7 USD; nửa mùa đầu nhóm giá gốc xem trung bình 4,11 vở, hai nhóm kia 3,32 và 3,29; nửa mùa sau không khác rõ; Roth, Robbert & Straus 2015 phân tích gộp 98 nhóm dữ liệu: xu hướng ổn định, nhạt dần theo thời gian, người lớn tuổi bị ít hơn). Voice nói «hơn bốn vở» và «hơn ba vở», không đọc số lẻ; không nói «sinh viên». Không phải lời khuyên nghỉ việc. Deep Research kiểm trước khi viết.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: chán việc thì đừng vội nghỉ, tìm nguyên nhân, nhớ lại lý do ban đầu, đặt mục tiêu 3 tháng (Kenh14 03/11); ở Anh tỉ lệ hài lòng với công việc xuống thấp, «quiet quitting» lan rộng (X News 04/11, số chưa tự kiểm). Góc của mình: bài báo nói «không cần mãi yêu một lựa chọn chỉ vì đã dành nhiều năm cho nó», sách 4.3 cho câu đó một thí nghiệm có số: người trả giá gốc đi xem nhiều hơn chỉ vì đã trả nhiều hơn. Nên dù ở lại hay đi, phép tính chỉ gồm phần từ giờ trở đi. Ví dụ chính là side project sáu tháng (đúng chủ đề đăng #26), công việc chỉ là cái móc. +1 hôm nay: viết câu «nếu hôm nay mới bắt đầu, mình có chọn làm việc này không»."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b01",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một bài báo đang được dân văn phòng chia nhau: đã từng rất yêu công việc, giờ sáng nào cũng chỉ muốn nghỉ. Câu làm nhiều người khựng lại là bạn không cần mãi yêu một lựa chọn chỉ vì đã dành nhiều năm cho nó.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "Loved the job, now want out?",
+    "start": 0.3,
+    "end": 9.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy cái app bạn làm mỗi tối suốt sáu tháng mà chưa ai dùng, bạn vẫn mở ra vì nó còn đáng làm, hay chỉ vì tiếc sáu tháng đã bỏ vào?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Worth it, or just sunk?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cảm giác tiếc đó có tên hẳn hoi là hiệu ứng chi phí chìm, tức là thứ đã bỏ vào càng nhiều thì mình càng muốn bỏ thêm vào nữa.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The sunk cost effect.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b04",
+   "duration": 11,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Năm 1985, hai nhà tâm lý Arkes và Blumer bán vé cả mùa của một nhà hát ở Mỹ theo ba mức giá chọn ngẫu nhiên. Nửa mùa đầu, nhóm trả nguyên giá đi xem trung bình hơn bốn vở, còn hai nhóm được giảm giá chỉ hơn ba vở.",
+     "start": 0.3,
+     "end": 10.7
+    }
+   ],
+   "caption": {
+    "text": "Arkes & Blumer, 1985.",
+    "start": 0.3,
+    "end": 10.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đến năm 2015, một phân tích gộp chín mươi tám nhóm dữ liệu cho thấy xu hướng này xuất hiện ổn định, chứ không phải chuyện riêng của ai.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "98 datasets agree.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên câu đáng hỏi không phải mình đã bỏ vào bao nhiêu, mà là từ giờ còn phải bỏ thêm bao nhiêu và sẽ nhận lại được gì.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Only count what's ahead.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình không bảo bạn nghỉ việc hay bỏ dự án, vì có khi tính lại xong, bạn thấy nó vẫn đáng để làm tiếp thêm một thời gian.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Not a quit button.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay bạn viết lên giấy một câu: nếu hôm nay mới bắt đầu, mình có chọn làm việc này không, rồi ghi ba tháng tới mình cần thấy gì để ở lại.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Would you start it today?",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "yeu-viec-gio-muon-nghi-chi-phi-chim.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có thứ gì bạn đang giữ chỉ vì tiếc thời gian đã bỏ vào không? Comment cho mình biết một chữ thôi cũng được.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "What are you keeping?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}
