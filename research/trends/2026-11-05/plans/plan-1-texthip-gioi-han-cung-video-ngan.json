@@ -1,7 +1,7 @@
 {
  "version": 1,
  "id": "trend-texthip-gioi-han-cung-video-ngan",
- "title": "[STUB] Gen Z Hàn rủ nhau gác video ngắn để đọc sách (#texthip). Không cần thắng ý chí mỗi tối: đặt cho một app video ngắn một giới hạn cứng",
+ "title": "[STUB] Gen Z Hàn rủ nhau gác video ngắn để đọc sách (#texthip). Đặt cho một app video ngắn một giới hạn cứng",
  "meta": {
   "week": 2,
   "status": "stub-needs-approval",
@@ -10,7 +10,7 @@
   "lesson": "4.15 Đặt giới hạn cứng cho video ngắn và lướt vô định (mức C). Cách làm trong sách: tắt thông báo, xoá app, hoặc đặt giới hạn giờ mỗi ngày; mất vài phút, không tốn tiền, khó ở chỗ giữ tay. Số liệu trong sách là của Trung Quốc (NBS 2024, CNNIC 2025): KHÔNG dùng trong voice. Sách tự ghi: chưa có nghiên cứu đo giới hạn xong lấy lại bao nhiêu giờ. Trend: Korea Times 04/11 + Znews/Tri thức 04/11: #texthip, câu lạc bộ đọc kín chỗ, trào lưu Phone Free; khảo sát Bộ VHTT Hàn: 38,5% người lớn đọc ít nhất một cuốn năm 2025, nhóm tuổi 20 là nhóm duy nhất tăng (74,5% lên 75,3%). Số này chỉ từ báo, chưa tự kiểm bản gốc; voice chỉ nói «nhóm duy nhất đọc nhiều lên». Deep Research kiểm trước khi viết.",
   "angle": "contrarian / empathy",
   "pattern": "P13 + P03",
-  "differentiation": "Mọi người đang nói: người trẻ Hàn «cai» video ngắn bằng sách, đọc sách thành thời thượng, mình cũng nên đọc nhiều hơn (Znews 04/11, Korea Times 04/11). Góc của mình: họ không thắng bằng ý chí; họ đọc ở chỗ điện thoại tự nằm yên trong túi. Sách 4.15 nói đúng điều đó: đừng cãi với chính mình mỗi tối, cài sẵn giới hạn cứng cho app. +1 hôm nay: đặt 30 phút/ngày cho đúng một app video ngắn."
+  "differentiation": "Mọi người đang nói: người trẻ Hàn «cai» video ngắn bằng sách, đọc sách thành thời thượng, mình cũng nên đọc nhiều hơn (Znews 04/11, Korea Times 04/11). Góc của mình: đừng chờ mình mạnh mẽ hơn, để cài đặt giới hạn làm phần khó. Sách 4.15 nói đúng điều đó: đừng cãi với chính mình mỗi tối, cài sẵn giới hạn cứng cho app. +1 hôm nay: đặt 30 phút/ngày cho đúng một app video ngắn."
  },
  "video": {
   "width": 1080,
@@ -267,13 +267,13 @@
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Người trẻ bên Hàn cũng đâu đọc nhờ ý chí, họ hẹn nhau ở câu lạc bộ đọc, nơi điện thoại tự nằm yên trong túi.",
+     "text": "Nên thay vì chờ mình mạnh mẽ hơn vào mỗi tối, cứ để cái điện thoại tự làm phần khó.",
      "start": 0.3,
      "end": 6.7
     }
    ],
    "caption": {
-    "text": "Make the phone stay put.",
+    "text": "Let the phone do the hard part.",
     "start": 0.3,
     "end": 6.7
    }
@@ -304,13 +304,13 @@
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Nên tối nay bạn mở cài đặt, chọn đúng một app video ngắn hay mở nhất, giới hạn nó ba mươi phút mỗi ngày. Hết giờ app tự khoá, khỏi phải cãi với chính mình.",
+     "text": "Nên tối nay bạn mở cài đặt, chọn đúng một app video ngắn hay mở nhất, đặt cho nó một mức giờ mỗi ngày, kênh mình gợi ý thử ba mươi phút. Hết giờ app tự khoá, khỏi phải cãi với chính mình.",
      "start": 0.3,
      "end": 8.7
     }
    ],
    "caption": {
-    "text": "30 minutes, then locked.",
+    "text": "Try 30 minutes, then locked.",
     "start": 0.3,
     "end": 8.7
    }

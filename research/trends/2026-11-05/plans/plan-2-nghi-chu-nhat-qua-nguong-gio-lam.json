@@ -1,7 +1,7 @@
 {
  "version": 1,
  "id": "trend-nghi-chu-nhat-qua-nguong-gio-lam",
- "title": "[STUB] Làm hai việc suốt mười năm, năm nay mới nghỉ hẳn Chủ nhật và thấy khỏe ra. Quá một ngưỡng giờ làm mỗi tuần, làm thêm gần như không ra thêm việc",
+ "title": "[STUB] Làm hai việc suốt mười năm, năm nay mới nghỉ hẳn Chủ nhật. Quá một ngưỡng giờ làm mỗi tuần, giờ làm thêm ra ít dần",
  "meta": {
   "week": 2,
   "status": "stub-needs-approval",
@@ -230,13 +230,13 @@
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Đó là việc tay chân trong nhà máy, nên con số chính xác chưa chắc đúng với việc văn phòng, nhưng hướng đi thì rõ.",
+     "text": "Đó là việc tay chân trong nhà máy, và cẩm nang dặn ngưỡng này chưa chắc đúng với việc dùng đầu óc.",
      "start": 0.3,
      "end": 6.7
     }
    ],
    "caption": {
-    "text": "The direction holds.",
+    "text": "Factory work, not desk work.",
     "start": 0.3,
     "end": 6.7
    }
@@ -267,13 +267,13 @@
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Nên nghỉ một ngày không phải là lười, nhiều khi nó là phần đáng giá nhất trong tuần làm việc của bạn.",
+     "text": "Làm hai việc nghĩa là rất nhiều giờ mỗi tuần, mà quá ngưỡng thì giờ làm thêm ra được ít. Nên bớt vài giờ chưa chắc đã làm bạn thiệt.",
      "start": 0.3,
      "end": 5.7
     }
    ],
    "caption": {
-    "text": "Rest is part of the work.",
+    "text": "Extra hours, less output.",
     "start": 0.3,
     "end": 5.7
    }
