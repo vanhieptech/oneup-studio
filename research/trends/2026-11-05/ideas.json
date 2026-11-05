@@ -1,0 +1,206 @@
+{
+ "ideas": [
+  {
+   "id": "texthip-gioi-han-cung-video-ngan",
+   "title": "Gen Z Hàn rủ nhau gác video ngắn để đọc sách (#texthip). Không cần thắng ý chí mỗi tối: đặt cho một app video ngắn một giới hạn cứng",
+   "trend_id": "trao-luu-nang-tam-van-hoa-doc-bo",
+   "bridge_id": "B-texthip-01",
+   "lesson": "4.15 Đặt giới hạn cứng cho video ngắn và lướt vô định (mức C). Cách làm trong sách: tắt thông báo, xoá app, hoặc đặt giới hạn giờ mỗi ngày; mất vài phút, không tốn tiền, khó ở chỗ giữ tay. Số liệu trong sách là của Trung Quốc (NBS 2024, CNNIC 2025): KHÔNG dùng trong voice. Sách tự ghi: chưa có nghiên cứu đo giới hạn xong lấy lại bao nhiêu giờ. Trend: Korea Times 04/11 + Znews/Tri thức 04/11: #texthip, câu lạc bộ đọc kín chỗ, trào lưu Phone Free; khảo sát Bộ VHTT Hàn: 38,5% người lớn đọc ít nhất một cuốn năm 2025, nhóm tuổi 20 là nhóm duy nhất tăng (74,5% lên 75,3%). Số này chỉ từ báo, chưa tự kiểm bản gốc; voice chỉ nói «nhóm duy nhất đọc nhiều lên». Deep Research kiểm trước khi viết.",
+   "angle": "contrarian / empathy",
+   "pattern": "P13 + P03",
+   "differentiation": "Mọi người đang nói: người trẻ Hàn «cai» video ngắn bằng sách, đọc sách thành thời thượng, mình cũng nên đọc nhiều hơn (Znews 04/11, Korea Times 04/11). Góc của mình: họ không thắng bằng ý chí; họ đọc ở chỗ điện thoại tự nằm yên trong túi. Sách 4.15 nói đúng điều đó: đừng cãi với chính mình mỗi tối, cài sẵn giới hạn cứng cho app. +1 hôm nay: đặt 30 phút/ngày cho đúng một app video ngắn.",
+   "theme": "light",
+   "week": 2,
+   "target": "đăng #10 (clip-12 trong plan, 4.15, LIGHT): hook thay thế cạnh B-phimngan-01 (29/10)",
+   "hook_vi": "Ở Hàn Quốc, người hai mươi mấy tuổi đang rủ nhau gác video ngắn để đọc sách, còn đặt cho nó một cái tên rất kêu là text hip.",
+   "moment_vi": "Tối qua định đọc vài trang trước khi ngủ, mở điện thoại xem giờ một chút, ngẩng lên đã mười hai giờ đêm.",
+   "turn_vi": "Không cần thắng ý chí mỗi tối. Mở cài đặt, đặt cho một app video ngắn ba mươi phút mỗi ngày, hết giờ app tự khoá.",
+   "hook_en": "Young Koreans are swapping short videos for books, and calling it text hip.",
+   "explainer": "HyperFrames: thẻ chữ «#texthip · Gen Z Hàn gác video ngắn để đọc sách · Znews 04/11» (L-084, chỉ chữ, b01). b05: màn hình cài đặt vẽ tay, thanh giới hạn kéo xuống 30 phút, ổ khoá đóng lại. Không logo báo, không hình người thật, không logo app.",
+   "beats": [
+    {
+     "text": "Ở Hàn Quốc, người hai mươi mấy tuổi đang rủ nhau gác video ngắn để đọc sách, còn đặt cho nó một cái tên rất kêu là text hip.",
+     "expression": "surprised",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 8,
+     "caption_en": "Text hip: books over shorts."
+    },
+    {
+     "text": "Báo Hàn còn ghi nhóm tuổi hai mươi là nhóm duy nhất đọc nhiều lên, trong khi người lớn cả nước thì đọc ít đi.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 7,
+     "caption_en": "The only group reading more."
+    },
+    {
+     "text": "Còn mình thì tối qua định đọc vài trang trước khi ngủ, mở điện thoại xem giờ một chút, ngẩng lên đã mười hai giờ đêm.",
+     "expression": "confused",
+     "action": "thinking",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 8,
+     "caption_en": "Just checking the time..."
+    },
+    {
+     "text": "Mình hay tự hứa lần sau cố gắng hơn, nhưng cái app được làm ra để mình lướt thêm, còn mình chỉ có mỗi lời hứa với bản thân.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 8,
+     "caption_en": "The app vs your promise."
+    },
+    {
+     "text": "Vậy nên sách mình dùng gọi cách này là giới hạn cứng: tắt thông báo, xoá app, hoặc đặt cho app một mức giờ mỗi ngày. Làm mất vài phút và không tốn đồng nào.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 9,
+     "caption_en": "Set a hard limit."
+    },
+    {
+     "text": "Sách cũng nói thật là chưa có nghiên cứu đo giới hạn xong thì lấy lại được bao nhiêu giờ, nên mình không hứa với bạn con số nào.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 7,
+     "caption_en": "No magic number."
+    },
+    {
+     "text": "Người trẻ bên Hàn cũng đâu đọc nhờ ý chí, họ hẹn nhau ở câu lạc bộ đọc, nơi điện thoại tự nằm yên trong túi.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 7,
+     "caption_en": "Make the phone stay put."
+    },
+    {
+     "text": "Nên tối nay bạn mở cài đặt, chọn đúng một app video ngắn hay mở nhất, giới hạn nó ba mươi phút mỗi ngày. Hết giờ app tự khoá, khỏi phải cãi với chính mình.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 9,
+     "caption_en": "30 minutes, then locked."
+    },
+    {
+     "text": "App nào đang ăn giờ ngủ của bạn nhiều nhất thì comment tên nó đi, để mình đặt giới hạn cùng nhau.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "Which app eats your nights?"
+    }
+   ]
+  },
+  {
+   "id": "nghi-chu-nhat-qua-nguong-gio-lam",
+   "title": "Làm hai việc suốt mười năm, năm nay mới nghỉ hẳn Chủ nhật và thấy khỏe ra. Quá một ngưỡng giờ làm mỗi tuần, làm thêm gần như không ra thêm việc",
+   "trend_id": "the-30s-talk-an-phuong-30-tuoi-quyet",
+   "bridge_id": "B-chunhat-01",
+   "lesson": "3.13 Đừng cứ cộng thêm giờ làm mỗi tuần: quá một ngưỡng, mỗi giờ thêm ra ít việc dần (mức B: Pencavel 2015, The Economic Journal, số liệu nhà máy quân khí Anh thời Thế chiến I: dưới khoảng 49 giờ/tuần sản lượng tỉ lệ với giờ làm; quá đó tăng chậm dần; 70 giờ ra gần bằng 56 giờ). Sách ghi: dữ liệu trăm năm trước, việc chân tay, công nhân chủ yếu là nữ; con số 49 không đáng tin, hướng đi thì đáng tin. Voice không nói số 49. Trend: Kenh14 05/11 The 30s Talk (KOL làm hai việc toàn thời gian, 33 tuổi lần đầu nghỉ Chủ nhật, «ngày không có thành tựu lại cho nhiều năng lượng»). Không nêu tên người trong voice; không dùng chuyện mẹ mất, bệnh, cân nặng trong bài. Deep Research kiểm trước khi viết.",
+   "angle": "data / contrarian",
+   "pattern": "P10 + P03",
+   "differentiation": "Mọi người đang nói: tuổi 30 biết chọn cho mình, cân bằng công việc là tự thưởng, nghỉ là xứng đáng (Kenh14 05/11; X News UK workers dial back extra effort 04/11). Góc của mình: nghỉ không chỉ là phần thưởng hay chuyện cảm xúc; dữ liệu Pencavel 2015 cho thấy quá một ngưỡng thì giờ làm thêm gần như không ra thêm việc, nên ngày nghỉ là một phần của năng suất. +1 hôm nay: chọn nửa ngày Chủ nhật này không mở email công việc.",
+   "theme": "dark",
+   "week": 2,
+   "target": "đăng #12 (clip-11 trong plan, 3.13, DARK): hook thay thế cạnh B-49h-01 và B-jevons-01",
+   "hook_vi": "Một người làm hai việc toàn thời gian suốt mười năm, năm nay mới lần đầu nghỉ hẳn Chủ nhật. Và chị kể chính cái ngày không làm ra gì ấy lại cho chị nhiều năng lượng nhất tuần.",
+   "moment_vi": "Chủ nhật vẫn mở laptop «làm nốt chút thôi», tối trả lời tin nhắn sếp, sáng thứ Hai ngồi vào bàn đã thấy mệt.",
+   "turn_vi": "Quá một ngưỡng thì giờ làm thêm gần như không ra thêm việc. Chủ nhật này chọn nửa ngày không mở email công việc.",
+   "hook_en": "Ten years, two full-time jobs, and her first real Sunday off gave her the most energy of the week.",
+   "explainer": "HyperFrames: thẻ chữ «30 tuổi quyết định không làm việc Chủ nhật · Kenh14 05/11» (L-084, chỉ chữ, b01). b05: biểu đồ đường vẽ tay, trục giờ làm/tuần, đường đi lên rồi gần như nằm ngang; hai cột 56 giờ và 70 giờ cao gần bằng nhau; nhãn: sách 3.13, Pencavel 2015, mức B. Không ảnh người thật, không logo báo.",
+   "beats": [
+    {
+     "text": "Một người làm hai việc toàn thời gian suốt mười năm, năm nay mới lần đầu nghỉ hẳn Chủ nhật. Và chị kể chính cái ngày không làm ra gì ấy lại cho chị nhiều năng lượng nhất tuần.",
+     "expression": "surprised",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 10,
+     "caption_en": "Her first real Sunday off."
+    },
+    {
+     "text": "Còn mình thì Chủ nhật vẫn mở laptop làm nốt chút thôi, tối trả lời tin nhắn sếp, sáng thứ Hai ngồi vào bàn đã thấy mệt.",
+     "expression": "confused",
+     "action": "thinking",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 8,
+     "caption_en": "Just a little Sunday work."
+    },
+    {
+     "text": "Mà cái bẫy là mình tưởng thêm giờ thì thêm việc, trong khi có một bộ số liệu từ trăm năm trước nói không hẳn như vậy.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 7,
+     "caption_en": "More hours, more output?"
+    },
+    {
+     "text": "Thời Thế chiến thứ nhất, các nhà máy ở Anh ghi lại sản lượng của công nhân theo số giờ làm mỗi tuần. Năm 2015, nhà kinh tế Pencavel phân tích lại số liệu đó.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 9,
+     "caption_en": "Pencavel, 2015."
+    },
+    {
+     "text": "Kết quả là dưới một ngưỡng thì làm thêm giờ nào ra thêm việc giờ đó. Quá ngưỡng ấy, mỗi giờ thêm ra được ít dần, và làm bảy mươi tiếng một tuần ra gần bằng năm mươi sáu tiếng.",
+     "expression": "surprised",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 10,
+     "caption_en": "70 hours ≈ 56 hours."
+    },
+    {
+     "text": "Đó là việc tay chân trong nhà máy, nên con số chính xác chưa chắc đúng với việc văn phòng, nhưng hướng đi thì rõ.",
+     "expression": "neutral",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 7,
+     "caption_en": "The direction holds."
+    },
+    {
+     "text": "Nên nghỉ một ngày không phải là lười, nhiều khi nó là phần đáng giá nhất trong tuần làm việc của bạn.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "Rest is part of the work."
+    },
+    {
+     "text": "Chủ nhật này bạn chọn nửa ngày không mở email công việc, tắt thông báo app chat công ty từ trưa, và dặn trước nhóm một câu nếu cần.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "sitting",
+     "background": "desk",
+     "duration": 8,
+     "caption_en": "Half a Sunday, offline."
+    },
+    {
+     "text": "Tuần này bạn đã làm bao nhiêu tiếng rồi thì comment con số đi, để xem ai đang cần nghỉ nhất.",
+     "expression": "happy",
+     "action": "talking",
+     "pose": "standing",
+     "background": "grid",
+     "duration": 6,
+     "caption_en": "How many hours this week?"
+    }
+   ]
+  }
+ ]
+}

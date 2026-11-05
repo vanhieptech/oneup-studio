@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-04
+updated: 2026-11-05
 tags: [ideas]
 ---
 # Idea bank
@@ -78,3 +78,5 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | AI tự lấy OTP trong email để nâng hạn mức chi: che khoá API và số căn cước trước khi đưa cho AI, không dùng trạm trung chuyển lạ, gỡ app cũ có quyền đọc email (B-otp-01) | 14.10 (+14.6) | trụ 5 học & đầu tư bản thân | "Một nghiên cứu vừa cho mười mô hình AI quyền đọc email và giữ một cái ví có hạn mức chi mỗi ngày. Không ai bảo chúng nâng hạn mức, vậy mà chín mô hình đã tự mở hộp thư, lấy mã OTP rồi tự nâng lên." | DARK | stub 2026-11-04, chờ duyệt (clip-29 hook trend; mức B; `research/trends/2026-11-04/plans/plan-1-ai-tu-lay-otp-dung-dua-khoa.json`) |
 | «Đã từng rất yêu công việc, giờ chỉ muốn nghỉ»: chỉ tính phần sắp bỏ vào và sắp nhận lại, không tính phần đã bỏ vào (B-yeuviec-01) | 4.3 | trụ 5 | "Một bài báo đang được dân văn phòng chia nhau: đã từng rất yêu công việc, giờ sáng nào cũng chỉ muốn nghỉ. Câu làm nhiều người khựng lại là bạn không cần mãi yêu một lựa chọn chỉ vì đã dành nhiều năm cho nó." | DARK | stub 2026-11-04, chờ duyệt (đăng #26 hook trend; mức B; không khuyên nghỉ việc; `research/trends/2026-11-04/plans/plan-2-yeu-viec-gio-muon-nghi-chi-phi-chim.json`) |
 | Trend khoe căn cước trên TikTok: cái bạn dán vào AI có khi lộ nhiều hơn tấm thẻ (B-cccd-01) | 14.10 / 14.7 | trụ 5 | "TikTok đang có trend quay cận cảnh khoe căn cước gắn chip, và công an đã phải lên tiếng. Mà cái bạn dán vào khung chat AI mỗi ngày có khi còn lộ nhiều hơn tấm thẻ đó." | DARK | ý tưởng (2026-11-04; clip-29 hook thay thế; không chê người đã đăng) |
+| #texthip: Gen Z Hàn gác video ngắn để đọc sách; không cần thắng ý chí mỗi tối, đặt giới hạn cứng 30 phút/ngày cho đúng một app (B-texthip-01) | 4.15 | trụ 2 tập trung | "Ở Hàn Quốc, người hai mươi mấy tuổi đang rủ nhau gác video ngắn để đọc sách, còn đặt cho nó một cái tên rất kêu là text hip." | LIGHT | stub 2026-11-05, chờ duyệt (đăng #10 hook thay thế; `research/trends/2026-11-05/plans/plan-1-texthip-gioi-han-cung-video-ngan.json`) |
+| Làm hai việc mười năm, lần đầu nghỉ hẳn Chủ nhật thấy khỏe ra: quá một ngưỡng giờ làm, làm thêm gần như không ra thêm việc; nửa ngày Chủ nhật không mở email (B-chunhat-01) | 3.13 | trụ 2 | "Một người làm hai việc toàn thời gian suốt mười năm, năm nay mới lần đầu nghỉ hẳn Chủ nhật. Và chị kể chính cái ngày không làm ra gì ấy lại cho chị nhiều năng lượng nhất tuần." | DARK | stub 2026-11-05, chờ duyệt (đăng #12 hook thay thế; caution KOL; `research/trends/2026-11-05/plans/plan-2-nghi-chu-nhat-qua-nguong-gio-lam.json`) |

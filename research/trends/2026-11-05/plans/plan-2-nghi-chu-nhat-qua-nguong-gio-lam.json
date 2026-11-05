@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-nghi-chu-nhat-qua-nguong-gio-lam",
+ "title": "[STUB] Làm hai việc suốt mười năm, năm nay mới nghỉ hẳn Chủ nhật và thấy khỏe ra. Quá một ngưỡng giờ làm mỗi tuần, làm thêm gần như không ra thêm việc",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "the-30s-talk-an-phuong-30-tuoi-quyet",
+  "bridge_id": "B-chunhat-01",
+  "lesson": "3.13 Đừng cứ cộng thêm giờ làm mỗi tuần: quá một ngưỡng, mỗi giờ thêm ra ít việc dần (mức B: Pencavel 2015, The Economic Journal, số liệu nhà máy quân khí Anh thời Thế chiến I: dưới khoảng 49 giờ/tuần sản lượng tỉ lệ với giờ làm; quá đó tăng chậm dần; 70 giờ ra gần bằng 56 giờ). Sách ghi: dữ liệu trăm năm trước, việc chân tay, công nhân chủ yếu là nữ; con số 49 không đáng tin, hướng đi thì đáng tin. Voice không nói số 49. Trend: Kenh14 05/11 The 30s Talk (KOL làm hai việc toàn thời gian, 33 tuổi lần đầu nghỉ Chủ nhật, «ngày không có thành tựu lại cho nhiều năng lượng»). Không nêu tên người trong voice; không dùng chuyện mẹ mất, bệnh, cân nặng trong bài. Deep Research kiểm trước khi viết.",
+  "angle": "data / contrarian",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: tuổi 30 biết chọn cho mình, cân bằng công việc là tự thưởng, nghỉ là xứng đáng (Kenh14 05/11; X News UK workers dial back extra effort 04/11). Góc của mình: nghỉ không chỉ là phần thưởng hay chuyện cảm xúc; dữ liệu Pencavel 2015 cho thấy quá một ngưỡng thì giờ làm thêm gần như không ra thêm việc, nên ngày nghỉ là một phần của năng suất. +1 hôm nay: chọn nửa ngày Chủ nhật này không mở email công việc."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b01",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một người làm hai việc toàn thời gian suốt mười năm, năm nay mới lần đầu nghỉ hẳn Chủ nhật. Và chị kể chính cái ngày không làm ra gì ấy lại cho chị nhiều năng lượng nhất tuần.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "Her first real Sunday off.",
+    "start": 0.3,
+    "end": 9.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b02",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn mình thì Chủ nhật vẫn mở laptop làm nốt chút thôi, tối trả lời tin nhắn sếp, sáng thứ Hai ngồi vào bàn đã thấy mệt.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Just a little Sunday work.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà cái bẫy là mình tưởng thêm giờ thì thêm việc, trong khi có một bộ số liệu từ trăm năm trước nói không hẳn như vậy.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "More hours, more output?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b04",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thời Thế chiến thứ nhất, các nhà máy ở Anh ghi lại sản lượng của công nhân theo số giờ làm mỗi tuần. Năm 2015, nhà kinh tế Pencavel phân tích lại số liệu đó.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Pencavel, 2015.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b05",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kết quả là dưới một ngưỡng thì làm thêm giờ nào ra thêm việc giờ đó. Quá ngưỡng ấy, mỗi giờ thêm ra được ít dần, và làm bảy mươi tiếng một tuần ra gần bằng năm mươi sáu tiếng.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "70 hours ≈ 56 hours.",
+    "start": 0.3,
+    "end": 9.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đó là việc tay chân trong nhà máy, nên con số chính xác chưa chắc đúng với việc văn phòng, nhưng hướng đi thì rõ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The direction holds.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên nghỉ một ngày không phải là lười, nhiều khi nó là phần đáng giá nhất trong tuần làm việc của bạn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Rest is part of the work.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chủ nhật này bạn chọn nửa ngày không mở email công việc, tắt thông báo app chat công ty từ trưa, và dặn trước nhóm một câu nếu cần.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Half a Sunday, offline.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "nghi-chu-nhat-qua-nguong-gio-lam.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tuần này bạn đã làm bao nhiêu tiếng rồi thì comment con số đi, để xem ai đang cần nghỉ nhất.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "How many hours this week?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
