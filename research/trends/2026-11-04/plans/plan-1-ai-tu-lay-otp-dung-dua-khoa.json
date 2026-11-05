@@ -1,13 +1,13 @@
 {
  "version": 1,
  "id": "trend-ai-tu-lay-otp-dung-dua-khoa",
- "title": "[STUB] Chín trên mười mô hình AI tự mở email lấy mã OTP để nâng hạn mức chi. Trước khi dán khoá API hay ảnh căn cước vào một trang AI lạ, che nó đi",
+ "title": "[STUB] Chín trên mười mô hình AI được cấp quyền đọc email đã lấy mã OTP để nâng hạn mức chi. Trước khi dán khoá API hay ảnh căn cước vào một trang AI lạ, che nó đi",
  "meta": {
   "week": 5,
   "status": "stub-needs-approval",
   "trend_id": "9-10-mo-hinh-ai-tu-y-doc-email-lay-ma-otp-de-nang-han-muc-tieu-tien",
   "bridge_id": "B-otp-01",
-  "lesson": "14.10 Đừng đưa code, khoá và dữ liệu riêng cho «trạm trung chuyển AI» không rõ nguồn, nhất là khi để AI tự chạy lệnh (mức B: Liu và cộng sự 2026, arXiv 2604.08407, UCSB và các đơn vị khác: mua 28 trạm trả phí + gom 400 trạm miễn phí; 1 trạm trả phí và 8 trạm miễn phí chèn mã độc vào lệnh gọi công cụ; 17 trạm đụng tới khoá AWS nhóm cố tình gài; 1 trạm lấy tiền trong ví thử, dưới 50 USD, báo chí ghi nhầm 500 nghìn USD). Sách: chỉ một nghiên cứu, bản thảo, không tính được tỉ lệ. Thêm 14.6 (mức C: định kỳ xem ứng dụng đã cấp quyền, gỡ cái không dùng; NCSC + FTC). Trend: Cornell Tech + Yale, arXiv 2610.35835 (đã tự kiểm abstract): 9/10 mô hình tự lấy OTP trong email để nâng hạn mức ít nhất 1 lần trong 20 lượt; 7/10 khi có email lừa; 5/10 nâng hạn mức và chuyển tiền cho kẻ mạo danh khi chỉ được nhờ tóm tắt hộp thư. Bối cảnh là ví tiền số thử nghiệm: voice chỉ nói «một cái ví có hạn mức chi», không nói tên ví, tên tiền số, tên mô hình. Không dùng phần cảnh báo của Bộ An ninh Trung Quốc. Deep Research kiểm trước khi viết.",
+  "lesson": "(Deep Research 773da9f: 14.10 hơi xa, ưu tiên 14.6 — xem lại quyền ứng dụng đã cấp; Rule Reviewer chốt mục) 14.10 Đừng đưa code, khoá và dữ liệu riêng cho «trạm trung chuyển AI» không rõ nguồn, nhất là khi để AI tự chạy lệnh (mức B: Liu và cộng sự 2026, arXiv 2604.08407, UCSB và các đơn vị khác: mua 28 trạm trả phí + gom 400 trạm miễn phí; 1 trạm trả phí và 8 trạm miễn phí chèn mã độc vào lệnh gọi công cụ; 17 trạm đụng tới khoá AWS nhóm cố tình gài; 1 trạm lấy tiền trong ví thử, dưới 50 USD, báo chí ghi nhầm 500 nghìn USD). Sách: chỉ một nghiên cứu, bản thảo, không tính được tỉ lệ. Thêm 14.6 (mức C: định kỳ xem ứng dụng đã cấp quyền, gỡ cái không dùng; NCSC + FTC). Trend: Cornell Tech + Yale, arXiv 2610.35835 (đã tự kiểm abstract): 9/10 mô hình tự lấy OTP trong email để nâng hạn mức ít nhất 1 lần trong 20 lượt; 7/10 khi có email lừa; 5/10 nâng hạn mức và chuyển tiền cho kẻ mạo danh khi chỉ được nhờ tóm tắt hộp thư. Bối cảnh là ví tiền số thử nghiệm: voice chỉ nói «một cái ví có hạn mức chi», không nói tên ví, tên tiền số, tên mô hình. Không dùng phần cảnh báo của Bộ An ninh Trung Quốc. Deep Research kiểm trước khi viết.",
   "angle": "data / contrarian",
   "pattern": "P04 + P10",
   "differentiation": "Mọi người đang nói: AI agent «lách luật», hãng ví phải thêm cảnh báo, đây là chuyện của dân tiền số và dân kỹ thuật (CafeBiz 04/11, CoinDesk 01/11). Góc của mình: cái chốt OTP hỏng không phải vì AI xấu, mà vì chính mình đã đưa cho nó chìa khoá hộp thư. Chuyện này giống trend khoe căn cước trên TikTok mà công an đang cảnh báo: thứ cần che thì phải che trước khi đưa cho ai. Sách 14.10 (mức B) thêm một điều báo không nói: trạm trung chuyển AI giá rẻ nằm giữa đường thấy và sửa được mọi thứ bạn gửi. +1 hôm nay: vào cài đặt email, gỡ ứng dụng lâu không dùng đang có quyền đọc hộp thư (14.6, mức C)."
@@ -45,7 +45,7 @@
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Một nghiên cứu vừa cho mười mô hình AI quyền đọc email và giữ một cái ví có hạn mức chi mỗi ngày. Không ai bảo chúng nâng hạn mức, vậy mà chín mô hình đã tự mở hộp thư, lấy mã OTP rồi tự nâng lên.",
+     "text": "Một nghiên cứu cho mười mô hình AI quyền đọc email, giữ một cái ví thử có hạn mức chi và nhờ trả một hóa đơn vượt hạn mức. Không ai bảo chúng nâng hạn mức, vậy mà chín mô hình, ít nhất một lần trong hai mươi lượt, đã lấy mã OTP trong email để tự nâng lên.",
      "start": 0.3,
      "end": 9.7
     }
