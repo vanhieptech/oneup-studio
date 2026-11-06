@@ -47,7 +47,7 @@ Dữ liệu: `collect.json`, `collect.log`, `x-extra.json`, `x-raw/`, `raw.json`
 ## Learning
 - Không thêm P-row. Tan làm hết pin khớp P10+P12. Ở nhà lâu khớp P10+P03. Trì hoãn+ĐT khớp P01+P10. P03/P10/P12 +1.
 - Apify chạy lại lần đầu từ 22/10: tín hiệu TikTok-native trở lại. Query `het tri hoan` + `gioi han thoi gian dien thoai` ra đúng trụ 1–2; `#thoiquen` / `#taptrung` bị nhạc và ads — lần sau bỏ hoặc thay hashtag.
-- Chủ đề «hết năng lượng sau giờ làm» lên từ hai phía: X News adult gamers + TikTok ở nhà lâu. Hợp trụ 3 (3.11) và trụ 4 (22.6), cả hai LIGHT — tốt cho chuỗi theme.
+- Chủ đề «hết năng lượng sau giờ làm» lên từ hai phía: X News adult gamers + TikTok ở nhà lâu. Hợp trụ 3 (3.11) và ch.2 ngồi lâu (2.17/2.11), cả hai LIGHT — tốt cho chuỗi theme.
 - 4.9 đang chờ chốt có thêm bằng chứng TikTok mạnh (849k); không cần stub mới nếu Hiệp đã nghiêng B-donlientay-01.
 - Bão hoà nên tránh: bông hoa chưa nở (ngày 11), brain stacking (ngày 12), so sánh (ngày 8), AI ở chỗ làm nói chung, UK quiet quitting (ngày 3), CCCD (ngày 3).
 
@@ -55,7 +55,7 @@ Dữ liệu: `collect.json`, `collect.log`, `x-extra.json`, `x-raw/`, `raw.json`
 | id | Trend | Khoảnh khắc | Bài học | Hook VI (pattern) | Góc | Đích | Theme |
 |---|---|---|---|---|---|---|---|
 | B-gameenergy-01 | Adult gamers post-work crash | trên xe về vẫn nghĩ tối chơi một ván, về tới nhà mở máy rồi ngủ gật | 3.11 (Brooks & Lack 2006 — Deep Research xác nhận trước khi nêu tên) | "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế." (P10+P12) | empathy / data | đăng #16 (3.11) hook trend | LIGHT |
-| B-onhalau-01 | Ở nhà lâu mất năng động | cuối tuần ở nhà từ sáng, định ra ngoài rồi lại mở điện thoại thêm một tiếng | 22.6 | "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." (P10+P03) | empathy / contrarian | đăng #23 (22.6) hook trend | LIGHT |
+| B-onhalau-01 | Ở nhà lâu mất năng động | cuối tuần ở nhà từ sáng, định ra ngoài rồi lại mở điện thoại thêm một tiếng | 2.17/2.11 | "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." (P10+P03) | empathy / contrarian | đăng #23 (22.6) hook trend | LIGHT |
 | B-trihoan-dt-01 | Nằm lướt ĐT rồi trì hoãn | định làm một việc nhỏ, nằm xuống mở TikTok «một chút» | 4.9 | "Có clip gần tám trăm năm mươi nghìn lượt xem hỏi: cách thoát trì hoãn khi đang nằm một chỗ lướt điện thoại là gì?" (P01+P10) | empathy | 4.9 bằng chứng / hook phụ (script dọn liền tay đang chờ chốt) | DARK |
 
 Cầu nối về trục kênh: trend chỉ là móc. B-gameenergy-01: về nhà đặt báo thức 10 phút trước app giải trí. B-onhalau-01: ra khỏi cửa đi bộ 10 phút, không mục tiêu. B-trihoan-dt-01: đứng dậy làm đúng một việc chín mươi giây đang để đó (callback clip-02).
@@ -72,7 +72,7 @@ Cầu nối về trục kênh: trend chỉ là móc. B-gameenergy-01: về nhà 
 
 ## Script hooks (cần Hiệp duyệt)
 1. "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế." (B-gameenergy-01, 3.11, đăng #16, LIGHT). Vì sao người lướt dừng lại: đúng cảm giác tối về hết pin.
-2. "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." (B-onhalau-01, 22.6, đăng #23, LIGHT). Vì sao dừng: tự nhận cuối tuần kẹt nhà.
+2. "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." (B-onhalau-01, 2.17/2.11, đăng #18, LIGHT). Vì sao dừng: tự nhận cuối tuần kẹt nhà.
 
 ## Trạng thái đang chờ
 - clip-06 «bông hoa chưa nở» v1 và clip-05 v10 r10.2: đã ĐẠT review, vẫn chờ Hiệp chốt.
@@ -80,7 +80,7 @@ Cầu nối về trục kênh: trend chỉ là móc. B-gameenergy-01: về nhà 
 - clip-29 (14.10): B-otp-01 + B-cccd-01.
 - Đăng #26 (4.3): B-yeuviec-01. clip-20 (3.21): B-mongbantot-01. clip-08: B-thongbao-01. Ô #27: B-thang11-01, B-muathoigian-01.
 - Đăng #10 (4.15): B-texthip-01. Đăng #12 (3.13): B-chunhat-01.
-- Mới: đăng #16 (3.11) có B-gameenergy-01; đăng #23 (22.6) có B-onhalau-01.
+- Mới: đăng #16 (3.11) có B-gameenergy-01; đăng #18 (2.17/2.11) có B-onhalau-01 (đã bỏ map 22.6 MDD).
 - Apify: đã chạy lại được 06/11 (quota hồi).
 - Commit 725d384…4014ab3 / b19afe9 / 9bf376d và hôm nay chưa push (Mac của Hiệp; News giữ bundle).
 
