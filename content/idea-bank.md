@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-05
+updated: 2026-11-06
 tags: [ideas]
 ---
 # Idea bank
@@ -80,3 +80,6 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Trend khoe căn cước trên TikTok: cái bạn dán vào AI có khi lộ nhiều hơn tấm thẻ (B-cccd-01) | 14.10 / 14.7 | trụ 5 | "TikTok đang có trend quay cận cảnh khoe căn cước gắn chip, và công an đã phải lên tiếng. Mà cái bạn dán vào khung chat AI mỗi ngày có khi còn lộ nhiều hơn tấm thẻ đó." | DARK | ý tưởng (2026-11-04; clip-29 hook thay thế; không chê người đã đăng) |
 | #texthip: Gen Z Hàn gác video ngắn để đọc sách; không cần thắng ý chí mỗi tối, đặt giới hạn cứng 30 phút/ngày cho đúng một app (B-texthip-01) | 4.15 | trụ 2 tập trung | "Ở Hàn Quốc, người hai mươi mấy tuổi đang rủ nhau gác video ngắn để đọc sách, còn đặt cho nó một cái tên rất kêu là text hip." | LIGHT | stub 2026-11-05, chờ duyệt (đăng #10 hook thay thế; `research/trends/2026-11-05/plans/plan-1-texthip-gioi-han-cung-video-ngan.json`) |
 | Làm hai việc mười năm, lần đầu nghỉ hẳn Chủ nhật thấy khỏe ra: quá một ngưỡng giờ làm, làm thêm gần như không ra thêm việc; nửa ngày Chủ nhật không mở email (B-chunhat-01) | 3.13 | trụ 2 | "Một người làm hai việc toàn thời gian suốt mười năm, năm nay mới lần đầu nghỉ hẳn Chủ nhật. Và chị kể chính cái ngày không làm ra gì ấy lại cho chị nhiều năng lượng nhất tuần." | DARK | stub 2026-11-05, chờ duyệt (đăng #12 hook thay thế; caution KOL; `research/trends/2026-11-05/plans/plan-2-nghi-chu-nhat-qua-nguong-gio-lam.json`) |
+| Tan làm hết pin, chợp 10 phút rồi mới mở game (B-gameenergy-01) | 3.11 | trụ 3 năng lượng | "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế." | LIGHT | stub 2026-11-06, chờ duyệt (đăng #16; `research/trends/2026-11-06/plans/plan-1-tan-lam-het-nang-luong-chop-muoi-phut.json`) |
+| Ở nhà lâu mất năng động: ra cửa đi bộ 10 phút, không mục tiêu (B-onhalau-01) | 22.6 | trụ 4 tâm trí | "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." | LIGHT | stub 2026-11-06, chờ duyệt (đăng #23; `research/trends/2026-11-06/plans/plan-2-o-nha-lau-mat-nang-dong-di-bo.json`) |
+| Nằm lướt điện thoại rồi trì hoãn (B-trihoan-dt-01) | 4.9 | trụ 1 | "Có clip gần tám trăm năm mươi nghìn lượt xem hỏi: cách thoát trì hoãn khi đang nằm một chỗ lướt điện thoại là gì?" | DARK | ý tưởng 2026-11-06 (bằng chứng / hook phụ cho script dọn liền tay đang chờ chốt; không stub mới) |

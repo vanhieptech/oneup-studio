@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-tan-lam-het-nang-luong-chop-muoi-phut",
+ "title": "[STUB] Tan làm chỉ còn bốn mươi bảy phút Steam rồi ngủ gật. Không phải thiếu ý chí: thiếu một lần chợp mười phút trước khi mở game",
+ "meta": {
+  "week": 3,
+  "status": "stub-needs-approval",
+  "trend_id": "x-adult-gamers-post-work-energy",
+  "bridge_id": "B-gameenergy-01",
+  "lesson": "3.11 Buồn ngủ chiều: chợp đúng khoảng 10 phút, đừng ngủ nửa tiếng (Brooks & Lack 2006; một lab). Sách ghi mức cần Deep Research xác nhận trước khi voice nêu tên nghiên cứu. Hành động: tan làm, đặt báo thức 10 phút, nằm ghế sofa chợp, rồi mới mở game/điện thoại.",
+  "angle": "empathy / data",
+  "pattern": "P10 + P12",
+  "differentiation": "Mọi người đang nói: người lớn hết pin sau giờ làm, tối muốn chơi game mà chỉ kịp mở app rồi ngủ gật (X News 05/11). Góc của mình: đó không phải thiếu kỷ luật tối. Năng lượng cả ngày đã hết; sách 3.11 nói một lần chợp khoảng mười phút lấy lại tỉnh táo tốt hơn cố gắng «cày» thêm. +1 hôm nay: về nhà đặt báo thức mười phút trước khi mở bất cứ app giải trí nào."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Post-work crash, game unplayed.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Số bốn mươi bảy phút ấy mình lấy từ một câu chuyện trên mạng, chưa tự kiểm được từng người, nhưng cảm giác thì quen lắm.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Number from a summary, not audited.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b03",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chiều nay trên xe về bạn vẫn nghĩ tối sẽ chơi một ván. Về tới nhà mở máy lên, chưa kịp hết trận tải là mắt đã díp.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Commute hope, sofa crash.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b04",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình từng tự mắng là lười, thiếu kỷ luật tối. Thật ra cả ngày đã đốt sạch năng lượng rồi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Not lazy — energy spent.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b05",
+   "duration": 9,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách mình dùng có một mục nói về buồn ngủ giữa ngày: chợp đúng khoảng mười phút thường tỉnh lại nhanh hơn là cố gắng cày tiếp.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Book 3.11: ~10-minute nap.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngủ nửa tiếng rồi dậy nhiều khi còn mệt hơn không ngủ. Nên cái cần là ngắn và có báo thức, không phải một giấc dài.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Short nap, not a long one.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Game tối nay không phải phần thưởng sau khi cố tỉnh. Nó là phần thưởng sau khi lấy lại một ít tỉnh táo.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Game after recharge.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Về nhà hôm nay, trước khi mở bất cứ app giải trí nào, bạn đặt báo thức mười phút rồi chợp một giấc ngắn trên ghế.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Set a 10-minute alarm first.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "tan-lam-het-nang-luong-chop-muoi-phut.b09",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay bạn định mở app gì ngay khi về tới nhà thì comment tên nó đi, để mình biết mọi người đang hết pin vì thứ gì.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Comment the app you open first.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  }
+ ]
+}

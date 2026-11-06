@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-o-nha-lau-mat-nang-dong-di-bo",
+ "title": "[STUB] Ở nhà lâu ngày mất năng động. Không cần kế hoạch lớn: ra khỏi cửa đi bộ mười phút",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-kiwilamdep-o-nha-lau",
+  "bridge_id": "B-onhalau-01",
+  "lesson": "22.6 Buồn / nặng đầu thì đi bộ hoặc chạy nhẹ (hành động nâng tâm trạng). Không biến thành outdoor hustle (tránh B-outdoor-01 bão). Hành động: hôm nay ra khỏi cửa đúng mười phút, không mục tiêu bước, không nghe podcast năng suất.",
+  "angle": "empathy / contrarian",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: ở nhà lâu ngày dần mất năng động và sức sống (@kiwilamdep 05/11, 168,9k play). Góc của mình: không cần «lột xác lịch trình». Sách 22.6 chỉ một việc nhỏ — buồn hoặc nặng người thì đi bộ. +1 hôm nay: ra khỏi cửa mười phút, không đeo mục tiêu."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Stay-home drain, many nod.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Clip ấy khoảng một trăm sáu mươi chín nghìn lượt xem, đăng hôm qua. Số này tự lấy từ Apify, không phải lời đồn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "168.9k plays, posted 05/11.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b03",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cuối tuần bạn ở nhà từ sáng, định ra ngoài một chút, rồi lại mở điện thoại thêm một tiếng, đến chiều chẳng muốn bước chân ra cửa.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "One more hour on the phone.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b04",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mọi người hay khuyên phải có lịch tập, phải ra quán, phải gặp bạn bè. Nghe đúng mà nặng quá thì lại chẳng làm.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Big plans feel heavy.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b05",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách mình dùng có một mục rất ngắn: buồn hoặc nặng người thì đi bộ. Không phải để đốt calo, không phải để khoe số bước.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Book 22.6: just walk.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cũng đừng biến buổi đi bộ thành buổi tối ưu năng suất. Cửa mở ra là đủ, podcast dạy làm giàu để ở nhà.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Not an outdoor hustle.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ở nhà lâu không phải tội. Chỉ là cơ thể cần một tín hiệu nhỏ là vẫn còn thế giới bên ngoài cửa.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "A small outdoor signal.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay bạn chỉ cần mang dép, ra khỏi cửa, đi bộ mười phút rồi về. Không mục tiêu bước, không phải đăng story.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Ten minutes, then home.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "o-nha-lau-mat-nang-dong-di-bo.b09",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lần gần nhất bạn ra khỏi nhà chỉ để đi bộ, không phải đi làm, là lúc nào thì comment đi, để mình xem mọi người đang kẹt cửa tới mức nào.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Comment your last walk-only day.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  }
+ ]
+}

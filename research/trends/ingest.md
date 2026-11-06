@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-11-05
+updated: 2026-11-06
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -127,7 +127,7 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | sale-1111-2026 | 11.11 còn 3 tuần (mùa sale) | seasonal | ok | 2026-10-21 | 2026-10-21 | 1 | lịch |
 | kenh14-nhan-them-viec | Kenh14: “Sếp hỏi ‘Em có thể nhận thêm việc không?’, 3 cách từ chối… EQ cao” | work | ok | 2026-10-22 | 2026-10-22 | 1 | [kenh14](https://kenh14.vn/sep-hoi-em-co-the-nhan-them-viec-khong-3-cach-tu-choi-tuong-mat-long-nhung-thuc-ra-la-bieu-hien-cua-eq-cao-215261020214215741.chn) |
 | x-anger-at-work | Kìm giận nơi làm việc mệt như làm thêm một ca (X News) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112572577571115169) |
-| brain-stacking-tiktok | “Brain stacking”: trend TikTok kêu gọi bỏ điện thoại xuống (Mashable) | viral/phone | ok | 2026-10-22 | 2026-11-03 | 7 | Google News (Mashable), [Mashable](https://in.mashable.com/digital-culture/115269/what-is-brain-stacking-tiktoks-latest-trend-wants-you-to-put-down-your-phone), [Essence](https://girlsunited.essence.com/shopping/lifestyle/brain-stacking/), [HerCampus](https://www.hercampus.com/school/wvu/brain-stacking-is-this-what-our-minds-have-been-missing/) |
+| brain-stacking-tiktok | “Brain stacking”: trend TikTok kêu gọi bỏ điện thoại xuống (Mashable) | viral/phone | ok | 2026-10-22 | 2026-11-06 | 8 | Google News (Mashable), [Mashable](https://in.mashable.com/digital-culture/115269/what-is-brain-stacking-tiktoks-latest-trend-wants-you-to-put-down-your-phone), [Essence](https://girlsunited.essence.com/shopping/lifestyle/brain-stacking/), [HerCampus](https://www.hercampus.com/school/wvu/brain-stacking-is-this-what-our-minds-have-been-missing/) |
 | x-homeownership-gen | Nhà ở: boomers vs người trẻ Mỹ (X News, số Mỹ) | x/money | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112994548662317171) |
 | x-punctuality-wait | Đến sớm trả lương trước rồi ngồi chờ thợ tới trễ 3 tiếng (X News; không nêu tên/quốc gia) | x/work | caution | 2026-10-22 | 2026-10-22 | 1 | [X News](https://x.com/i/trending/2112823806846783530) |
 | chatgpt-pin-lock | ChatGPT khoá cuộc trò chuyện nhạy cảm bằng PIN/Face ID (Tinh tế) | tech/security | ok | 2026-10-22 | 2026-10-22 | 1 | [Tinh tế](https://tinhte.vn/thread/chatgpt-cho-khoa-cuoc-tro-chuyen-nhay-cam-bang-ma-pin-hoac-face-id.4185675/) |
@@ -251,6 +251,16 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | late-coffee-deadline | Thức khuya chạy deadline + cà phê chiều/tối (@sabito_0668 606k, @motionlab.fit, Thanh Niên “nỗ lực ảo”) | 2026-10-20 | 2026-10-20 | 1 | TikTok (Apify) | clip-17 (3.4), clip-15 (3.3) |
 | summary-not-memory | Tóm tắt đề cương / ghi chữ cái đầu mà vẫn không nhớ (@hoc.di.roi.biet, @camreadwonder) | 2026-10-20 | 2026-10-20 | 1 | TikTok (Apify) | 23.16 (callback clip-04) |
 
+
+### Bổ sung 2026-11-06
+| x-adult-gamers-post-work | Adult gamers: tan làm hết pin, chỉ còn ~47 phút Steam rồi ngủ gật (số từ tóm tắt X, chưa tự kiểm) | habits/energy | ok | 2026-11-06 | 2026-11-06 | 1 | [X News](https://x.com/i/trending/2118431101891027153) |
+| tt-kiwilamdep-o-nha-lau | TikTok «ở nhà lâu ngày mất năng động» (@kiwilamdep 168,9k, 05/11) | tiktok/habits | ok | 2026-11-06 | 2026-11-06 | 1 | [TikTok](https://www.tiktok.com/@kiwilamdep/video/7704503079500139777) |
+| tt-nghemoi-tri-hoan-dt | TikTok «thoát trì hoãn khi nằm lướt điện thoại» (@nghemoi.official 849,9k / 7,2k share) | tiktok/habits | ok | 2026-11-06 | 2026-11-06 | 1 | [TikTok](https://www.tiktok.com/@nghemoi.official/video/7640877396073188629) |
+| x-people-pleasing-self-care | Ưu tiên chăm mình hơn chiều lòng mọi người | habits | ok | 2026-11-06 | 2026-11-06 | 1 | [X News](https://x.com/i/trending/2118313919379038455) |
+| x-walking-benefits-graphic | Infographic đi bộ nâng tâm trạng nhanh (số Mayo/Cambridge chưa tự kiểm) | health/habits | ok | 2026-11-06 | 2026-11-06 | 1 | [X News](https://x.com/i/trending/2118294792505278510) |
+| x-vibe-coding-productivity-trap | Vibe coding: cảm giác làm được mà chẳng ship | tech/work | ok | 2026-11-06 | 2026-11-06 | 1 | [X News](https://x.com/i/trending/2118413816937714108) |
+| vne-phim-ai-thoi-tong | Phim AI thời Tống «6 tỷ lượt xem» (số từ báo, chưa tự kiểm) | viral/phone | ok | 2026-11-06 | 2026-11-06 | 1 | [VnExpress](https://vnexpress.net/phim-ai-boi-canh-thoi-tong-gay-sot-voi-6-ty-luot-xem-5141207.html) |
+
 ## Bridges (trend → khoảnh khắc → bài học → hook)
 | id | Trend | Khoảnh khắc | Bài học (phần.mục) | Hook VI | Góc | Đích | Trạng thái | first |
 |---|---|---|---|---|---|---|---|---|
@@ -364,6 +374,9 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-cccd-01 | tiktok-khoe-cccd | quay cận cảnh căn cước cho «bắt trend», mã QR rõ từng ô | 14.10 / 14.7 | "TikTok đang có trend quay cận cảnh khoe căn cước gắn chip, và công an đã phải lên tiếng. Mà cái bạn dán vào khung chat AI mỗi ngày có khi còn lộ nhiều hơn tấm thẻ đó." (P11+P03) | contrarian | clip-29 hook thay thế (cạnh B-otp-01) | đề xuất | 2026-11-04 |
 | B-texthip-01 | korea-texthip (+ vne-phim-ngan-ai) | định đọc vài trang trước khi ngủ, mở điện thoại xem giờ, ngẩng lên đã mười hai giờ đêm | 4.15 (mức C, bỏ số Trung Quốc) | "Ở Hàn Quốc, người hai mươi mấy tuổi đang rủ nhau gác video ngắn để đọc sách, còn đặt cho nó một cái tên rất kêu là text hip." (P13+P03) | contrarian / empathy | đăng #10 (4.15, LIGHT) hook thay thế cạnh B-phimngan-01 | stub, chờ duyệt (`research/trends/2026-11-05/plans/plan-1-texthip-gioi-han-cung-video-ngan.json`) | 2026-11-05 |
 | B-chunhat-01 | kenh14-30s-nghi-chu-nhat (+ x-uk-quiet-quitting) | Chủ nhật vẫn mở laptop «làm nốt chút thôi», sáng thứ Hai đã mệt | 3.13 (Pencavel 2015, mức B; không nói số 49) | "Một người làm hai việc toàn thời gian suốt mười năm, năm nay mới lần đầu nghỉ hẳn Chủ nhật. Và chị kể chính cái ngày không làm ra gì ấy lại cho chị nhiều năng lượng nhất tuần." (P10+P03) | data / contrarian | đăng #12 (3.13, DARK) hook thay thế cạnh B-49h-01 | stub, chờ duyệt, caution KOL (`research/trends/2026-11-05/plans/plan-2-nghi-chu-nhat-qua-nguong-gio-lam.json`) | 2026-11-05 |
+| B-gameenergy-01 | x-adult-gamers-post-work | trên xe về nghĩ tối chơi một ván, về nhà mở máy rồi ngủ gật | 3.11 (Brooks & Lack 2006 — Deep Research xác nhận trước khi nêu tên) | "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế." (P10+P12) | empathy / data | đăng #16 (3.11, LIGHT) hook trend | stub, chờ duyệt (`research/trends/2026-11-06/plans/plan-1-tan-lam-het-nang-luong-chop-muoi-phut.json`) | 2026-11-06 |
+| B-onhalau-01 | tt-kiwilamdep-o-nha-lau | cuối tuần ở nhà từ sáng, định ra ngoài rồi lại mở điện thoại thêm một tiếng | 22.6 | "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." (P10+P03) | empathy / contrarian | đăng #23 (22.6, LIGHT) hook trend | stub, chờ duyệt (`research/trends/2026-11-06/plans/plan-2-o-nha-lau-mat-nang-dong-di-bo.json`) | 2026-11-06 |
+| B-trihoan-dt-01 | tt-nghemoi-tri-hoan-dt | định làm việc nhỏ, nằm xuống mở TikTok «một chút» | 4.9 | "Có clip gần tám trăm năm mươi nghìn lượt xem hỏi: cách thoát trì hoãn khi đang nằm một chỗ lướt điện thoại là gì?" (P01+P10) | empathy | 4.9 bằng chứng / hook phụ (script dọn liền tay chờ chốt) | đề xuất (không stub mới) | 2026-11-06 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
