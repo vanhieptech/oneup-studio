@@ -1,0 +1,94 @@
+script SHA256 152075696ac03458dcaa0e91e9f3290f5f9ae7293c296b15e6fccd0d49c94b4f
+spec SHA256 7fb90590cdcfc437c39a63fcf20dcd4da842d5a6cfb76f90160ffed047a000ba
+## subjects exit=0
+✔ L-087    opencreator-clip05-script-r11.2-draft-2026-11-07.md: không gọi tên môn học / kiến thức môn học
+
+1 checks · 0 error(s) · 0 warning(s) → PASS
+
+## l088 exit=0
+✔ L-088    có nguồn truy được (opencreator-clip05-script-r11.2-draft-2026-11-07.md): Dunlosky et al.(2013)
+✔ L-088    lời đọc có nói dẫn chứng (nghiên cứu / tên tác giả)
+✔ L-088    hook không trùng mẫu 5 hook clip trước (ngưỡng 0.7)
+✔ L-088    CTA không trùng mẫu 5 CTA clip trước (ngưỡng 0.7)
+⚠ L-088    bản nháp không nằm trong thư mục clip → không tìm được file trend / fact của clip
+ℹ L-088    manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1
+
+6 checks · 0 error(s) · 1 warning(s) → PASS
+
+## trend exit=1
+✖ L-090    trend_id texthip-kr-reading-lifestyle-znews-1693810 không có trong research/trends/** → không phải trend đã nghiên cứu
+✔ L-090    hook_pattern P10 active trong patterns.md
+✔ L-090    trend_beats b02
+✔ L-090    trend_spoken «text hip» có trong lời b01–b02
+⚠ L-090    example_evidence x-2115086418192089298
+ℹ L-090    manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; (2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, và lời khuyên làm được trong chính tình huống đó; ví dụ gượng/hiếm gặp → CHƯA ĐẠT dù luật khác đạt
+
+6 checks · 1 error(s) · 1 warning(s) → FAIL
+
+## flow exit=0
+✔ L-089    ngôi kể nhất quán (b01 bạn → b02 bạn → b03 - → b04 bạn → b05 bạn → b06 bạn → b07 bạn)
+✔ L-089    không có cụm lặp khâu câu
+⚠ L-089    beat mở không nối với beat trước: b04 «Bạn muốn biết chỗ nào trong…»; b06 «Lúc dò, bạn nhận ra bài…» → mở bằng từ nối/chữ gọi lại ý vừa nói
+✔ L-089    không có đoạn liệt kê song song
+✔ L-089    không có câu chốt gắn thêm
+ℹ L-089    manual gate (làm TRƯỚC khi chấm luật): đọc to b01→CTA một mạch như người nói chuyện — một ngôi kể xuyên suốt, mỗi beat mở bằng mối nối với beat trước, không câu mồ côi/gắn thêm, dẫn chứng nảy ra từ chuyện, không đổi liền mạch lấy số chữ (bỏ ý chứ không ép câu)
+
+6 checks · 0 error(s) · 1 warning(s) → PASS
+
+## clarity exit=0
+✔ L-091    tình huống cụ thể đến trước câu hỏi (b01–b03)
+✔ L-091    không câu nào >25 chữ
+✔ L-091    không chữ mơ hồ trong b01–b03
+✔ L-091    b03 không mở bằng câu khái quát + «cũng thấy vậy»
+ℹ L-091    manual gate: đọc b01–b03 như người lần đầu nghe, tóm ý trong 1 câu; không được → CHƯA ĐẠT
+
+5 checks · 0 error(s) · 0 warning(s) → PASS
+
+## link exit=0
+⚠ L-094    4/10 cặp câu không chung từ nội dung, không từ nối/đại từ gọi lại: b01→b01 «phải lật sách tìm lại.» | «Chỗ bạn kể thiếu có thể…»; b03→b04 «ích cao, đọc lại thấp.» | «Bạn muốn biết chỗ nào trong…»; b05→b05 «giá khuyên tự kiểm nè.» | «Ví dụ đọc trang chi tiêu,…»; b06→b06 «kể chỉ có tiền ăn.» | «À, bạn bổ sung khoản vừa…» → viết câu nối hoặc gọi lại ý câu trước
+ℹ L-094    manual gate (chặn): bảng cặp câu trong review — câu N+1 trả lời/giải thích/đối chiếu/hệ quả của câu N nhờ chữ nào; không đưa nhân vật/nhóm/mốc/hành động chưa nhắc; câu hỏi hook được trả lời ngay sau; lời khuyên dùng đúng mốc của dẫn chứng
+
+2 checks · 0 error(s) · 1 warning(s) → PASS
+
+## repeat exit=0
+✔ L-093    không từ nội dung nào lặp >5% lời
+✔ L-093    không cụm 3 chữ nào lặp
+✔ L-093    từ nối mở câu không lặp ≥3
+ℹ L-093    manual gate: (a) chiều sâu — mỗi beat cho người xem một điều mới (vì sao/cảm giác/hệ quả cụ thể), không nói lại ý cũ bằng chữ khác; (b) đọc to nghe trơn, không câu cụt nối bằng «Nhưng/Và/Rồi» liên tiếp; (c) thay từ lặp bằng đại từ/chữ khác hoặc bỏ hẳn
+
+4 checks · 0 error(s) · 0 warning(s) → PASS
+
+## evidence exit=0
+✔ L-096    dẫn chứng: không có câu «nhiều nghiên cứu/nghiên cứu thấy» thiếu tên/năm (11 câu)
+ℹ L-096    manual gate: câu dẫn chứng đủ 3 phần (ai làm, so A với B, kết quả đúng chữ nguồn); hook có lý do dừng lướt
+
+2 checks · 0 error(s) · 0 warning(s) → PASS
+
+## choppy exit=0
+✔ L-096    câu ≤ 10 chữ: 3/11 = 27% (trần 30%)
+✔ L-096    không có 2 câu cộc liền nhau
+
+2 checks · 0 error(s) · 0 warning(s) → PASS
+
+## fresh
+✔ L-095    hook giống nhất 0.26 với opencreator-clip05-script-r11.1-draft-2026-11-07.md (ngưỡng 0.5, so 13 bản)
+✔ L-095    chuỗi beat giống nhất 0.39 với opencreator-clip05-script-r11.1-draft-2026-11-07.md
+ℹ L-095    manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; người xem có dừng lướt ở 3 giây đầu không, có hình ảnh/khoảnh khắc đáng nhớ không
+
+3 checks · 0 error(s) · 0 warning(s) → PASS
+
+Independent counts [24, 18, 21, 11, 28, 27, 21] total=150 b02-b04=50
+b01 captions [(4, ['read']), (7, ['keep']), (4, ['left']), (5, ['become'])]
+MD==JSON True
+b02 captions [(7, ['Korea’s']), (4, ['enjoy']), (6, ['learn'])]
+MD==JSON True
+b03 captions [(4, ['learning']), (7, ['Dunlosky’s']), (4, ['Practice']), (3, ['Rereading:'])]
+MD==JSON True
+b04 captions [(5, ['part']), (6, ['remembered?'])]
+MD==JSON True
+b05 captions [(7, ['find']), (6, ['sample']), (7, ['close']), (5, ['reopen'])]
+MD==JSON True
+b06 captions [(7, ['When']), (7, ['recording']), (7, ['Ah,'])]
+MD==JSON True
+b07 captions [(8, ['Say']), (7, ['Would']), (6, ['Comment'])]
+MD==JSON True

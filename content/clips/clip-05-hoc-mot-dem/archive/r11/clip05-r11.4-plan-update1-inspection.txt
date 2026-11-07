@@ -1,0 +1,1901 @@
+{
+  "id": "clip-05-r11.4-draft",
+  "version": "r11.4",
+  "planning_only": true,
+  "renderable": false,
+  "locked": false,
+  "frame": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "bbox_format": "x,y,width,height; includes declared margins/shadow reserve; NOT DOM measured bounds",
+    "zones": {
+      "screen": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "content": [
+        60,
+        150,
+        960,
+        1310
+      ],
+      "caption": [
+        60,
+        1488,
+        960,
+        312
+      ],
+      "logo": [
+        60,
+        80,
+        100,
+        70
+      ],
+      "cover_rule": [
+        60,
+        290,
+        960,
+        1310
+      ]
+    },
+    "caption_reserved_bbox": {
+      "remotion": [
+        70,
+        1488,
+        948,
+        272
+      ],
+      "hyperframes": [
+        70,
+        1500,
+        948,
+        272
+      ]
+    },
+    "font": "Be Vietnam Pro LOCAL required for all text",
+    "logo": "brand logo05-pair-plus top-left; own overlay slot, not an exception silently applied to content",
+    "colors": [
+      "#111111",
+      "#F7F7F5",
+      "#FF5A36"
+    ],
+    "grain": "existing subtle layer; not created now",
+    "reference_geometry": [
+      {
+        "path": "video-engine/src/composition/layout.ts",
+        "lines": "6–8",
+        "observed": "content SAFE x60–1020/y150–1460; PAD36"
+      },
+      {
+        "path": "video-engine/src/composition/SceneRenderer.tsx",
+        "lines": "41–42,80–82",
+        "observed": "standard capTop=1920*.775=1488; reels=1000, NOT this standard plan; standard narration top66"
+      },
+      {
+        "path": "video-engine/src/composition/Caption.tsx",
+        "lines": "20–22,30",
+        "observed": "standard caption left/right70, shadow8/10; wrapping height dynamic; EN_FONT currently used (font compliance unresolved)"
+      },
+      {
+        "path": "content/samples/sample-natural/explainer/compositions/captions.html.tpl",
+        "lines": "10–13,19–22",
+        "observed": "HF caption top1500, max-width940 + shadow; BVP58, subgroup MAXW4; exact actual subgroup timing/overflow not validated"
+      }
+    ],
+    "limits": "caption boxes reserve at most272px including shadow, NOT observed height; actual wrap/font/glyph metrics/reels remap must be checked later. Content and caption are separate zones, not contradictory safezone claims."
+  },
+  "cover": {
+    "direction": "a",
+    "theme": "dark",
+    "series": "Read + Learn",
+    "ep": 5,
+    "hero": [
+      "REREAD",
+      "SELF-TEST"
+    ],
+    "strike": 0,
+    "accent": 1,
+    "expression": "confused",
+    "action": "thinking",
+    "emote": "!",
+    "tilt": -5,
+    "template": "video-engine/src/composition/Cover.tsx",
+    "rendered": false,
+    "note": "Native A props retained; one explicit illustration-group transform planned. Numeric bbox safe in this plan, not proof current fixed template implements override or images pass.",
+    "illustration_transform_plan": {
+      "translate_x_px": -40,
+      "translate_y_px": -70,
+      "applies_to": [
+        "halo",
+        "chibi",
+        "emote"
+      ],
+      "keep_unchanged": [
+        "direction A",
+        "dark theme",
+        "series/ep",
+        "hero/strike/accent",
+        "expression/action/tilt",
+        "text slots",
+        "logo slot"
+      ],
+      "purpose": "Fix right30/bottom60 overshoot with10px right/bottom breathing room, without redesign",
+      "native_template_support": false,
+      "status": "PLANNING override; current Cover.tsx fixed positions need adapter mapping later. No engine code/render/schema validation here."
+    }
+  },
+  "cover_plan": {
+    "preview_status": "CHƯA CHUẨN BỊ ẢNH",
+    "template": "video-engine/src/composition/Cover.tsx directiona",
+    "required_previews": [
+      "cover-a.png",
+      "cover-b.png",
+      "cover-c.png",
+      "profile-grid/contactsheet"
+    ],
+    "rule_safe_zone": [
+      60,
+      290,
+      960,
+      1310
+    ],
+    "observed_template": "Baseline Cover.tsx A fixed illustration envelope [390,1000,660,660] exceeded strict plan bounds. r11.4 translates illustration group(-40,-70); native template has no such exposed override yet, so planned mapping only, not a claim existing engine was fixed.",
+    "conservative_allocations": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ]
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ]
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          350,
+          930,
+          660,
+          660
+        ]
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ]
+      }
+    ],
+    "bounds_scope": "All r11.4 declared cover allocations map to one consistent transform and fit strict-safe numerically. Baseline kept separately for trace; no current-plan failure hidden. Not raster/glyph/rig/port validation.",
+    "target_allocations": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ]
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ]
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          350,
+          930,
+          660,
+          660
+        ]
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ]
+      }
+    ],
+    "target_status": "One unified r11.4 target, not two conflicting geometries. Native adapter/preview still OPEN; no images or engine edits.",
+    "baseline_observed_allocations_r11_3": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ]
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ]
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          390,
+          1000,
+          660,
+          660
+        ]
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ]
+      }
+    ],
+    "illustration_mapping": {
+      "before_bbox": [
+        390,
+        1000,
+        660,
+        660
+      ],
+      "translate_px": [
+        -40,
+        -70
+      ],
+      "after_bbox": [
+        350,
+        930,
+        660,
+        660
+      ],
+      "right_bottom_margins_px": [
+        10,
+        10
+      ],
+      "props_ref": "cover.illustration_transform_plan",
+      "actual_renderer_implementation": "CHƯA KIỂM/NOT IMPLEMENTED in this read-only task"
+    }
+  },
+  "end_card": {
+    "id": "end",
+    "estimate_s": [
+      42.804444,
+      45.804444
+    ],
+    "spoken": false,
+    "speaker": null,
+    "text_lines": [
+      "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+      "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+      "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+      "Dunlosky et al. (2013) · Trend context: Znews 05/11/2026"
+    ],
+    "fx": {
+      "visual": "Static source card; no doodle; one entrance only",
+      "word": null,
+      "motion": "mmx-soft-inout",
+      "duration_frames": 9
+    },
+    "transition_in": {
+      "kind": "cut",
+      "sfx": "whoosh-soft",
+      "lead_s": 0.12
+    },
+    "readability": "CHƯA KIỂM; 3s is provisional, not proof all URLs readable; keep full credit in post as well."
+  },
+  "publication_plan": {
+    "credit": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+    "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+    "license": "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+    "ai_toggle": "ON only when AI voice exists at publish",
+    "ai_disclosure": "Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS).",
+    "posted": false
+  },
+  "callbacks": [
+    {
+      "clip": "clip-04",
+      "shared_method": "23.14",
+      "spoken_callback": false,
+      "reason": "Published status unknown; no claim clip was seen/posted."
+    }
+  ],
+  "gates": {
+    "read_aloud": "CHƯA KIỂM",
+    "stranger": "CHƯA KIỂM",
+    "timing": "CHƯA KIỂM",
+    "L090": "MỞ: new independent self-report provenance supplied; no self-PASS; metadata machine registration pending",
+    "Deep_new_text": "CHƯA KIỂM actual r11.4 SHA",
+    "Social_new_wording": "CHƯA KIỂM actual r11.4 SHA",
+    "Reviewer": "CHƯA KIỂM r11.4",
+    "render": "NOT AUTHORIZED; no Chốt",
+    "preview_gate1": "CHƯA CHUẨN BỊ ẢNH",
+    "layout_arithmetic": "r11.4 dedicated numeric report; planned boxes/transform only, not actual renderer or image QA",
+    "schema": "CHƯA KIỂM production schema; explicit plan map only"
+  },
+  "layout_plans": {
+    "hook-wide": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hook-title",
+          "bbox": [
+            180,
+            170,
+            780,
+            150
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "hook-reaction": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hook-title",
+          "bbox": [
+            180,
+            170,
+            780,
+            150
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            211,
+            390,
+            648,
+            700
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              60
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "reading-context": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "context-panel",
+          "bbox": [
+            180,
+            180,
+            780,
+            130
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "reading-goal": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              18
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "reading-method": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "ranking": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "ranking-heading",
+          "bbox": [
+            100,
+            220,
+            880,
+            100
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "ranking-objects",
+          "bbox": [
+            90,
+            350,
+            900,
+            1020
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              16
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "comparison": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "comparison-heading",
+          "bbox": [
+            100,
+            220,
+            880,
+            100
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "source-retelling",
+          "bbox": [
+            90,
+            350,
+            900,
+            1020
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              8
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "cta": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "comment-options",
+          "bbox": [
+            100,
+            820,
+            760,
+            340
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              0.96,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "credit": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "credit-block",
+          "bbox": [
+            70,
+            240,
+            940,
+            1140
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    }
+  },
+  "beats_05_06": [
+    {
+      "id": "b05",
+      "label": "Giải pháp HTB / minh họa",
+      "role": "Gọi tên tự kiểm theo23.14 rồi làm đủ đóng→tự kể→mở dò trên một trang minh họa.",
+      "estimate_s": [
+        21.693333,
+        29.471111
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "remotion",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Thân thiện lúc nè, bình tĩnh làm mẫu, không ra lệnh trơ.",
+      "text": "Muốn biết, Cẩm nang sống đáng giá khuyên tự kiểm nè. Ví dụ đọc trang chi tiêu, bạn gấp lại, kể điều nhớ được, rồi mở ra dò.",
+      "marked_text": "Muốn biết, Cẩm nang sống đáng giá khuyên {nhấn: tự kiểm} nè. Ví dụ đọc trang chi tiêu, bạn gấp lại, kể điều nhớ được, rồi mở ra {nhấn: dò}.",
+      "phrases_plan": [
+        {
+          "t": "Muốn biết, Cẩm nang sống đáng giá khuyên {nhấn: tự kiểm} nè.",
+          "pause_status": "punctuation-led only; no audio"
+        },
+        {
+          "t": "Ví dụ đọc trang chi tiêu, bạn gấp lại, kể điều nhớ được, rồi mở ra {nhấn: dò}.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "To find out, the handbook recommends self-testing.",
+          "hl": [
+            6
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap01",
+          "vi_text": "Muốn biết, Cẩm nang sống đáng giá khuyên tự kiểm nè.",
+          "vi_word_range": [
+            0,
+            11
+          ],
+          "interval_estimate_s": [
+            21.693333,
+            24.748889
+          ]
+        },
+        {
+          "en": "For a sample page about spending,",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap02",
+          "vi_text": "Ví dụ đọc trang chi tiêu,",
+          "vi_word_range": [
+            11,
+            17
+          ],
+          "interval_estimate_s": [
+            24.748889,
+            26.415556
+          ]
+        },
+        {
+          "en": "close it and retell what you remember.",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap03",
+          "vi_text": "bạn gấp lại, kể điều nhớ được,",
+          "vi_word_range": [
+            17,
+            24
+          ],
+          "interval_estimate_s": [
+            26.415556,
+            28.36
+          ]
+        },
+        {
+          "en": "Then reopen it and check.",
+          "hl": [
+            4
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap04",
+          "vi_text": "rồi mở ra dò.",
+          "vi_word_range": [
+            24,
+            28
+          ],
+          "interval_estimate_s": [
+            28.36,
+            29.471111
+          ]
+        }
+      ],
+      "context": "Cuốn sách minh họa mở đúng trang chi tiêu; đây KHÔNG phải trang chụp từ cẩm nang.",
+      "shot": "Cận tay đóng sách rồi trung cảnh tự kể với bubble; cuối beat mở sách trở lại, chưa cho thấy khoản thiếu.",
+      "stage": {
+        "action": "Bìa khép bằng prop book; bubble chứa phần nhớ; sách mở cạnh bubble để bắt đầu so.",
+        "react": "Thân thiện lúc nè, bình tĩnh làm mẫu, không ra lệnh trơ."
+      },
+      "pause_plan": "Phẩy sau Muốn biết; chấm trước Ví dụ; chuỗi thao tác giữ chủ ngữ bạn. Không chẻ kể điều nhớ được.",
+      "link": "Muốn biết trả lời ngay câu hỏi b04; ví dụ minh họa thao tác, không giới thiệu nguyên nhân mới.",
+      "why_visual": "Vật book/bubble có sẵn làm rõ thao tác; chỉ đây là lời chỉ cách gỡ nên được mô tả thao tác trong thoại.",
+      "claim_source": "Deep d673dd9 dòng16–17: F5. Trang chi tiêu là mock của kênh.",
+      "fx": {
+        "visual": "Trạng thái book đóng/mở; không vẽ lại sách.",
+        "word": "tự kiểm",
+        "motion": {
+          "slug": "tdev-icon-swap",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 11
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "atLine": 0,
+          "offset": null,
+          "word": "tự kiểm",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            8,
+            10
+          ],
+          "at_estimate_s": 23.915555,
+          "frame_estimate": 717,
+          "line_offset_estimate_s": 2.222222,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "tick",
+          "atLine": 0,
+          "offset": null,
+          "word": "dò",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            27,
+            28
+          ],
+          "at_estimate_s": 29.193333,
+          "frame_estimate": 876,
+          "line_offset_estimate_s": 7.5,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "swish",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "word_count": 28,
+      "emphasis_focus": [
+        {
+          "vi": "tự kiểm",
+          "caption_targets": [
+            {
+              "id": "b05-cap01",
+              "hl": [
+                6
+              ],
+              "highlight_words": [
+                "self-testing."
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "dò",
+          "caption_targets": [
+            {
+              "id": "b05-cap04",
+              "hl": [
+                4
+              ],
+              "highlight_words": [
+                "check."
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    },
+    {
+      "id": "b06",
+      "label": "Payoff đối chiếu",
+      "role": "Đối chiếu đúng thứ vừa kể với đúng trang; chỉ bổ sung phần thiếu trong minh họa.",
+      "estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "hyperframes",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Nhận ra rồi bổ sung, không ăn mừng như giải quyết tài chính.",
+      "text": "Lúc dò, bạn nhận ra bài nhắc ghi cả tiền thuê nhà, còn phần kể chỉ có tiền ăn. À, bạn bổ sung khoản vừa sót đó.",
+      "marked_text": "Lúc dò, bạn nhận ra bài nhắc ghi cả {nhấn: tiền thuê nhà}, còn phần kể chỉ có tiền ăn. À, bạn {nhấn: bổ sung} khoản vừa sót đó.",
+      "phrases_plan": [
+        {
+          "t": "Lúc dò, bạn nhận ra bài nhắc ghi cả {nhấn: tiền thuê nhà}, còn phần kể chỉ có tiền ăn.",
+          "pause_status": "punctuation-led only; no audio"
+        },
+        {
+          "t": "À, bạn {nhấn: bổ sung} khoản vừa sót đó.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "When checking, you notice the page includes",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b06-cap01",
+          "vi_text": "Lúc dò, bạn nhận ra bài nhắc ghi cả",
+          "vi_word_range": [
+            0,
+            9
+          ],
+          "interval_estimate_s": [
+            29.471111,
+            31.971111
+          ]
+        },
+        {
+          "en": "recording rent, but you only mentioned food.",
+          "hl": [
+            1
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b06-cap02",
+          "vi_text": "tiền thuê nhà, còn phần kể chỉ có tiền ăn.",
+          "vi_word_range": [
+            9,
+            19
+          ],
+          "interval_estimate_s": [
+            31.971111,
+            34.748889
+          ]
+        },
+        {
+          "en": "Ah, you add the expense you missed.",
+          "hl": [
+            2
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b06-cap03",
+          "vi_text": "À, bạn bổ sung khoản vừa sót đó.",
+          "vi_word_range": [
+            19,
+            27
+          ],
+          "interval_estimate_s": [
+            34.748889,
+            36.971111
+          ]
+        }
+      ],
+      "context": "Hai bản: trang sách mock và phần tự kể; khoản thuê nhà chỉ được reveal lúc đối chiếu.",
+      "shot": "Top-down hai cột Source page / Your retelling. Nguồn có Food + Rent; phần kể ban đầu chỉ Food. Rent xuất hiện thêm trong phần kể ở câu2.",
+      "stage": {
+        "action": "Khối nhãn Rent ở bản gốc giữ nguyên; một bản label điền vào phần kể sau lời nhận ra, không gạch/vẽ nét.",
+        "react": "Nhận ra rồi bổ sung, không ăn mừng như giải quyết tài chính."
+      },
+      "pause_plan": "Phẩy sau Lúc dò và nhà; nghỉ chấm trước À. Không ngắt tiền thuê nhà.",
+      "link": "Lúc dò nhận bước cuối b05; phát hiện phần thiếu nhờ đặt hai bản cạnh nhau, không suy thành khó khăn thực hành.",
+      "why_visual": "Payoff là chỗ thiếu có tên trong phần kể, không kết quả người đó quản tiền tốt hơn. Không dùng disclaimer để chữa claim khác.",
+      "claim_source": "Kết quả trong mock: đối chiếu phần kể với trang; không đo/khẳng định hiệu quả ngoài đời.",
+      "fx": {
+        "visual": "Hai panel đối chiếu đã có, thêm nhãn bằng transform; không doodle.",
+        "word": "tiền thuê nhà",
+        "motion": {
+          "slug": "tdev-page",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 14,
+            "x_px": [
+              8,
+              0
+            ]
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "snap",
+          "atLine": 0,
+          "offset": null,
+          "word": "tiền thuê nhà",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            9,
+            12
+          ],
+          "at_estimate_s": 31.971111,
+          "frame_estimate": 959,
+          "line_offset_estimate_s": 2.5,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "ding",
+          "atLine": 0,
+          "offset": null,
+          "word": "bổ sung",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            21,
+            23
+          ],
+          "at_estimate_s": 35.304445,
+          "frame_estimate": 1059,
+          "line_offset_estimate_s": 5.833334,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "whoosh-soft",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "hits": [
+        {
+          "id": "b06-h1",
+          "f": null,
+          "sfx": "snap",
+          "word": "tiền thuê nhà",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 31.971111,
+          "frame_estimate": 959,
+          "word_range": [
+            9,
+            12
+          ]
+        },
+        {
+          "id": "b06-h2",
+          "f": null,
+          "sfx": "ding",
+          "word": "bổ sung",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 35.304445,
+          "frame_estimate": 1059,
+          "word_range": [
+            21,
+            23
+          ]
+        }
+      ],
+      "word_count": 27,
+      "emphasis_focus": [
+        {
+          "vi": "tiền thuê nhà",
+          "caption_targets": [
+            {
+              "id": "b06-cap02",
+              "hl": [
+                1
+              ],
+              "highlight_words": [
+                "rent,"
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "bổ sung",
+          "caption_targets": [
+            {
+              "id": "b06-cap03",
+              "hl": [
+                2
+              ],
+              "highlight_words": [
+                "add"
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    }
+  ],
+  "units_05_06_end": [
+    {
+      "id": "b05-s1",
+      "beat": "b05",
+      "part": "Giải pháp HTB / minh họa",
+      "interval_estimate_s": [
+        21.693333,
+        29.471111
+      ],
+      "voice_line_ref": "vi-b05",
+      "voice_window_local_s_estimate": [
+        0.0,
+        7.777778
+      ],
+      "narration": null,
+      "inherit_narration_from": null,
+      "caption_segment_refs": [
+        "b05-cap01",
+        "b05-cap02",
+        "b05-cap03",
+        "b05-cap04"
+      ],
+      "caption_layer": "global continuous segment layer; no restart at hook cut",
+      "layout_ref": "reading-method",
+      "transition": "cut-on-motion",
+      "fx": {
+        "visual": "Trạng thái book đóng/mở; không vẽ lại sách.",
+        "word": "tự kiểm",
+        "motion": {
+          "slug": "tdev-icon-swap",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 11
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "atLine": 0,
+          "offset": null,
+          "word": "tự kiểm",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            8,
+            10
+          ],
+          "at_estimate_s": 23.915555,
+          "frame_estimate": 717,
+          "line_offset_estimate_s": 2.222222,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "tick",
+          "atLine": 0,
+          "offset": null,
+          "word": "dò",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            27,
+            28
+          ],
+          "at_estimate_s": 29.193333,
+          "frame_estimate": 876,
+          "line_offset_estimate_s": 7.5,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "hits": [],
+      "production_target": "parts[].scenes[]",
+      "runnable": false,
+      "transition_sfx_plan": {
+        "name": "swish",
+        "at_estimate_s": 21.573333,
+        "cut_at_estimate_s": 21.693333,
+        "cue_type": "planned transition seam; not word emphasis"
+      }
+    },
+    {
+      "id": "b06-e1",
+      "beat": "b06",
+      "part": "Payoff đối chiếu",
+      "interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "voice_line_ref": "vi-b06",
+      "voice_window_local_s_estimate": [
+        0.0,
+        7.5
+      ],
+      "narration": null,
+      "inherit_narration_from": null,
+      "caption_segment_refs": [
+        "b06-cap01",
+        "b06-cap02",
+        "b06-cap03"
+      ],
+      "caption_layer": "global continuous segment layer; no restart at hook cut",
+      "layout_ref": "comparison",
+      "transition": "cut-on-motion",
+      "fx": {
+        "visual": "Hai panel đối chiếu đã có, thêm nhãn bằng transform; không doodle.",
+        "word": "tiền thuê nhà",
+        "motion": {
+          "slug": "tdev-page",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 14,
+            "x_px": [
+              8,
+              0
+            ]
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "snap",
+          "atLine": 0,
+          "offset": null,
+          "word": "tiền thuê nhà",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            9,
+            12
+          ],
+          "at_estimate_s": 31.971111,
+          "frame_estimate": 959,
+          "line_offset_estimate_s": 2.5,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "ding",
+          "atLine": 0,
+          "offset": null,
+          "word": "bổ sung",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            21,
+            23
+          ],
+          "at_estimate_s": 35.304445,
+          "frame_estimate": 1059,
+          "line_offset_estimate_s": 5.833334,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "hits": [
+        {
+          "id": "b06-h1",
+          "f": null,
+          "sfx": "snap",
+          "word": "tiền thuê nhà",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 31.971111,
+          "frame_estimate": 959,
+          "word_range": [
+            9,
+            12
+          ]
+        },
+        {
+          "id": "b06-h2",
+          "f": null,
+          "sfx": "ding",
+          "word": "bổ sung",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 35.304445,
+          "frame_estimate": 1059,
+          "word_range": [
+            21,
+            23
+          ]
+        }
+      ],
+      "production_target": "parts[].sections[]",
+      "runnable": false,
+      "transition_sfx_plan": {
+        "name": "whoosh-soft",
+        "at_estimate_s": 29.351111,
+        "cut_at_estimate_s": 29.471111,
+        "cue_type": "planned transition seam; not word emphasis"
+      }
+    },
+    {
+      "id": "end-s1",
+      "beat": "end",
+      "part": "end",
+      "interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "voice_line_ref": null,
+      "voice_window_local_s_estimate": null,
+      "narration": null,
+      "inherit_narration_from": null,
+      "caption_segment_refs": [],
+      "caption_layer": "global continuous segment layer; no restart at hook cut",
+      "layout_ref": "credit",
+      "transition": "cut-on-motion",
+      "fx": {
+        "visual": "Static source card; no doodle; one entrance only",
+        "word": null,
+        "motion": "mmx-soft-inout",
+        "duration_frames": 9
+      },
+      "sfx": [],
+      "hits": [],
+      "production_target": "parts[].scenes[]",
+      "runnable": false,
+      "transition_sfx_plan": {
+        "name": "whoosh-soft",
+        "at_estimate_s": 42.684444,
+        "cut_at_estimate_s": 42.804444,
+        "cue_type": "planned transition seam; not word emphasis"
+      }
+    }
+  ]
+}

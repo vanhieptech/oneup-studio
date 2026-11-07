@@ -1,0 +1,153 @@
+{
+  "version": "r11.4",
+  "lineage": "r11.2 full rewrite B → r11.3 patch1 → r11.4 patch2; no rewrite by suffix count",
+  "status": "DRAFT, not self-approved / not ready for Chốt",
+  "planning_only": true,
+  "renderable": false,
+  "spoken_words": 150,
+  "delta_vs_patch1": "+1 word vẫn only; b02–b07 byte-identical",
+  "pre_method_after_hook": 50,
+  "EN_max": 8,
+  "patch_delta": [
+    {
+      "issue": "L093 wording",
+      "location": "b01 canonical/marked_text/VI–EN caption slice; table/mapping",
+      "before": "Bạn đọc để học, mà quên gì cũng không biết. Bạn có thể nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "after": "Bạn đọc để học, mà quên gì cũng không biết. Bạn vẫn có thể nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "effect": "one word vẫn added to accepted hook; main150/premethod50; b02–b07 unchanged; matching ENstill/HL and VIrange/cue/windows resynced",
+      "open": "actualSocial/Deep SHA; read-aloud/stranger"
+    },
+    {
+      "issue": "L043 two hook reserves",
+      "location": "hook_alt + hook_alts[0:2] + rules audit",
+      "before": "1 negative reserve",
+      "after": "2 reserves: retained negative + question/promise; neither reserve selected; only L093vẫn added to main hook",
+      "effect": "R64 at least1 and checklist44 requires2 both represented; not part of count",
+      "open": "unselected alternatives not approved/voiced"
+    },
+    {
+      "issue": "Cover strict-safe bbox",
+      "location": "cover.illustration_transform_plan / cover_plan.illustration_mapping",
+      "before": "[390,1000,660,660]→right1050/bottom1660",
+      "after": "translation[-40,-70]→[350,930,660,660]→right1010/bottom1590",
+      "effect": "10px right/bottom margin versus strict x1020/y1600; A/theme/hero/text/logo/design unchanged",
+      "open": "native template override not implemented; actual images/schema/glyphs/rig unverified"
+    }
+  ],
+  "checks": [
+    {
+      "mode": "subjects",
+      "exit_code": 0
+    },
+    {
+      "mode": "l088",
+      "exit_code": 0
+    },
+    {
+      "mode": "trend",
+      "exit_code": 1
+    },
+    {
+      "mode": "flow",
+      "exit_code": 0
+    },
+    {
+      "mode": "clarity",
+      "exit_code": 0
+    },
+    {
+      "mode": "link",
+      "exit_code": 0
+    },
+    {
+      "mode": "repeat",
+      "exit_code": 0
+    },
+    {
+      "mode": "evidence",
+      "exit_code": 0
+    },
+    {
+      "mode": "choppy",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-prior-concepts",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-same-B-r11.2",
+      "exit_code": 1
+    },
+    {
+      "mode": "fresh-patch1-r11.3",
+      "exit_code": 1
+    }
+  ],
+  "numeric": {
+    "declared_plan_checks": 369,
+    "errors": [],
+    "cover_allocations": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          350,
+          930,
+          660,
+          660
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      }
+    ],
+    "scope": "Arithmetic on declared PLANNED allocations/time budgets, NOT render/DOM/glyph QA, NOT production schema or manual semantic approval"
+  },
+  "limitations": [
+    "Cover declared transform fits numerically; current native Cover.tsx does NOT implement illustration_transform_plan yet; images/schema/port remain unverified",
+    "Hook narration target170 vs current template default66 unresolved",
+    "EN_FONT/BVP compliance, actual caption wrapping/height, HF <=4 subgroups and timing not inspected in frames",
+    "Reels geometry not mapped; this standard1080x1920 TikTok plan only",
+    "Preview gate1 CHƯA CHUẨN BỊ ẢNH; read-aloud/stranger/timing CHƯA KIỂM; actualDeep/Social/Reviewer SHA pending"
+  ],
+  "sha256": {
+    "/workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md": "ea05530a44c8cda1e954696015e6b4fe2882831b447805dc9d5a7d9449281b36",
+    "/workspace/opencreator-clip05-spec-r11.4-draft-2026-11-07.json": "b28a401382031b613bbc0a79f7ebeda03e3e13a6e4067863cf0f21652828e9e8",
+    "/workspace/opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md": "9aae174a0be382732ab7de5e2e06cf17d4c23da0c65aea6fe3ce98d145157d56",
+    "/workspace/clip05-r11.4-checker-output-2026-11-07.txt": "0a27f5c76e76cb4d9d7ebcdab4273f4a33fa50b56f65829f416b2f8a7b026c16",
+    "/workspace/clip05-r11.4-local-validation-2026-11-07.json": "c730ebe0104cad8b5e426a7784365197572cc6a340ea8621de11556e9c7ee82d",
+    "/workspace/clip05-r11.4-validate-plan.py": "7a07759d21dc2789cce4f64d81419d667b9d9e6cabc8a86bd4af52d0f8189b7c"
+  }
+}

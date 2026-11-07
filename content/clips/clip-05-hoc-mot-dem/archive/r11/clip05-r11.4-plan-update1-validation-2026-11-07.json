@@ -1,0 +1,2394 @@
+{
+  "scope": "Declared planning arithmetic, JSON/text identity and source-record scope only. NOT image/DOM/glyph/render/production schema/audio/read-aloud/stranger/visual semantic approval.",
+  "script_sha256_before": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+  "script_sha256_after": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+  "script_unchanged": true,
+  "spoken_words": 150,
+  "pre_method_after_hook": 50,
+  "beats_unchanged": 7,
+  "caption_segments_unchanged": 23,
+  "EN_max": 8,
+  "planning_check_count": 469,
+  "errors": [],
+  "mock_state_simulation": [
+    {
+      "at_estimate_s": 31.971111,
+      "operation": "reveal_source_detail",
+      "source_content": [
+        "Record food expenses",
+        "Record rent"
+      ],
+      "retelling": [
+        "Food"
+      ]
+    },
+    {
+      "at_estimate_s": 35.304445,
+      "operation": "append_retelling",
+      "source_content": [
+        "Record food expenses",
+        "Record rent"
+      ],
+      "retelling": [
+        "Food",
+        "Rent"
+      ]
+    }
+  ],
+  "cover_plan_text_characters_including_ep": 40,
+  "source_scope": "Deep scoped main text/fact PASS per read report; Social scoped trend/pain PASS per user/Reviewer handoff, not independently read Social report. New visuals unreviewed.",
+  "open": [
+    "Read-aloud/one-listen/stranger/timing CHƯA KIỂM",
+    "Preview CHƯA CHUẨN BỊ ẢNH; new visual mapping/cover meaning/conditional disclosure not visually reviewed",
+    "Registry/storage OPEN; text checker failures retained separately",
+    "Adapters/native null-strike/cover transform, schema/fonts/glyph/wrap/HF/Reels/assets/signature/theme unverified",
+    "Endcard3s remains estimated; extra conditional disclosure readability not certified"
+  ],
+  "checks": [
+    {
+      "check": "original input unchanged: opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: opencreator-clip05-spec-r11.4-draft-2026-11-07.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: clip05-r11.4-checker-output-2026-11-07.txt",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: clip05-r11.4-local-validation-2026-11-07.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: clip05-r11.4-delivery-manifest-2026-11-07.json",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: clip05-r11.4-rule-review-2026-11-07.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "original input unchanged: clip05-r11.4-factcheck-2026-11-07.md",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "script SHA before/after exactly required",
+      "ok": true,
+      "detail": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e"
+    },
+    {
+      "check": "planning only not runnable/approved",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "all7 speech lines == frozen MD",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "150 spoken words unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "50 pre-method unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 EN<=8",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b01-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b01-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 EN<=8",
+      "ok": true,
+      "detail": 8
+    },
+    {
+      "check": "b01-cap03 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 EN<=8",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b01-cap04 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b02-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 EN<=8",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b02-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 EN<=8",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b02-cap03 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 EN<=8",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b03-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b03-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 EN<=8",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b03-cap03 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 EN<=8",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "check": "b03-cap04 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 EN<=8",
+      "ok": true,
+      "detail": 5
+    },
+    {
+      "check": "b04-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 EN<=8",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b04-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b05-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 EN<=8",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b05-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b05-cap03 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 EN<=8",
+      "ok": true,
+      "detail": 5
+    },
+    {
+      "check": "b05-cap04 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b06-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b06-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b06-cap03 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 entire beat unchanged apart from new visual refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 marked text exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 marked VI present unchanged in new storyboard",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 phrase speech exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 EN<=8",
+      "ok": true,
+      "detail": 8
+    },
+    {
+      "check": "b07-cap01 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 EN<=8",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b07-cap02 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 complete caption/range/time/hl unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 EN<=8",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b07-cap03 VI/EN in new board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 highlight indexes valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 semantic focus1–2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 semantic highlight unchanged/exact",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "throughline unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook_question unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook_alt unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook_alts unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "callbacks unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "structure unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "caption_segments_plan unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "voice_lines_plan unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "timing_model unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "duration_estimate_s unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "duration_measured unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "engagement unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "pinned_comment_plan unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "transition_sfx unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ambience unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "music unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "exactly23 main caption segments unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1/mock-label-b05 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-header within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-header within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-food within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-food within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-rent within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-rent within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 original unit properties/timing unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 valid estimated duration <=8",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 contiguous estimated scene timeline",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 captions resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 voice ref resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-1 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-2 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-3 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-4 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-5 within estimated unit",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hook-title declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hiep-rig declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/same-book declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/logo/hook-title top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/logo/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/logo/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hook-title/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hook-title/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hiep-rig/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hook-title declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hiep-rig declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/logo/hook-title top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/logo/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hook-title/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/context-panel declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/vi-bubble declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/hiep-rig declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/same-book declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/logo/context-panel top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/logo/vi-bubble top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/logo/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/logo/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/context-panel/vi-bubble top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/context-panel/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/context-panel/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/vi-bubble/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/vi-bubble/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/hiep-rig/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/vi-bubble declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/hiep-rig declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/same-book declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/logo/vi-bubble top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/logo/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/logo/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/vi-bubble/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/vi-bubble/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/hiep-rig/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/vi-bubble declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/hiep-rig declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/same-book declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/mock-label-b05 declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/logo/vi-bubble top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/logo/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/logo/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/logo/mock-label-b05 top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/vi-bubble/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/vi-bubble/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/vi-bubble/mock-label-b05 top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/hiep-rig/same-book top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/hiep-rig/mock-label-b05 top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/same-book/mock-label-b05 top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-heading declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-objects declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/logo/ranking-heading top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/logo/ranking-objects top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-heading/ranking-objects top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/comparison-heading declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/source-retelling declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/logo/comparison-heading top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/logo/source-retelling top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/comparison-heading/source-retelling top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/vi-bubble declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/hiep-rig declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/comment-options declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/logo/vi-bubble top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/logo/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/logo/comment-options top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/vi-bubble/hiep-rig top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/vi-bubble/comment-options top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/hiep-rig/comment-options top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/logo declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/credit-block declared envelope in zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/logo/credit-block top-level allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/remotion caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/hyperframes caption zone separate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock-label-b05 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock-label-b05 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock-label-b05 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison-title-text inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison-title-text inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison-title-text avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock-label-b06 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock-label-b06 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock-label-b06 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-header inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-header inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-header avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-header inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-header inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-header avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-food inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-food inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-food avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-food inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-food inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-food avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-rent inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-rent inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source-rent avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-rent inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-rent inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling-rent avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-1 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-1 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-1 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-2 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-2 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-2 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-3 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-3 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-3 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-4 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-4 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-4 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-5 inside parent allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-5 inherited motion inside content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit-row-5 avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/mock-label-b06 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/source-header leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/retelling-header leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/source-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/retelling-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/source-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/comparison-title-text/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06/source-header leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06/retelling-header leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06/source-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06/retelling-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06/source-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/mock-label-b06/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-header/retelling-header leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-header/source-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-header/retelling-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-header/source-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-header/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-header/source-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-header/retelling-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-header/source-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-header/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-food/retelling-food leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-food/source-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-food/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-food/source-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/retelling-food/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1/source-rent/retelling-rent leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-1/credit-row-2 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-1/credit-row-3 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-1/credit-row-4 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-1/credit-row-5 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-2/credit-row-3 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-2/credit-row-4 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-2/credit-row-5 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-3/credit-row-4 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-3/credit-row-5 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1/credit-row-4/credit-row-5 leaf allocations disjoint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 explicit editorial label display mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 editorial label in board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 explicit editorial label display mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 editorial label in board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock event never edits source: reveal_source_detail",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mock event never edits source: append_retelling",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "Rent append exclusively targets PHẦN KỂ",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source content unchanged across simulated plan events",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "only retelling gains Rent after comparison",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "source Rent uncovered at existing tiền thuê nhà cue",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "retelling Rent appended at existing bổ sung cue",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reveal before retelling addition",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover plan removes strike intent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover explicitly labels utility not zero/ban",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover planned text characters including ep <=40",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover strict allocations unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover -40/-70 affine mapping unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover series strict-safe declared allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover hero strict-safe declared allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover rig+circle-reserve strict-safe declared allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover logo strict-safe declared allocation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover-series text allocation in strict parent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover-reread-utility text allocation in strict parent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cover-selftest-utility text allocation in strict parent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AI disclosure literal matches frozen MD/spec/board",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AI disclosure conditional, no present speech/audio claim",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "future AI use unknown; no audio now",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "base4 safety/credit/license lines unchanged",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "AI branch includes exact disclosure",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "non-AI branch omits disclosure",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "release04 not carried as current blocker",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "no spoken release callback",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "no preview fabricated",
+      "ok": true,
+      "detail": null
+    }
+  ]
+}

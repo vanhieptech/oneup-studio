@@ -1,0 +1,163 @@
+{
+  "version": "r11.4",
+  "lineage": "r11.2 full rewrite B → r11.3 patch1 → r11.4 patch2; in-place craft correction before handoff, not another rewrite/patch suffix",
+  "status": "DRAFT, not self-approved / not ready for Chốt",
+  "planning_only": true,
+  "renderable": false,
+  "spoken_words": 150,
+  "delta_vs_patch1": "Add vẫn and replace thể with cách in b01 promise; b02–b07 byte-identical",
+  "delta_vs_initial_r11_4": "Only thể→cách in b01 spoken promise and matching question reserve; necessary EN/HL/cue/mapping/audit sync; negative reserve and entire cover plan unchanged",
+  "craft_qa": {
+    "reason": "Adding vẫn alone only broke a repeated ngram; retained có thể/promise form was still a craft defect, not resolved by checker silence.",
+    "before_promise": "Bạn vẫn có thể nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+    "after_promise": "Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+    "scope": "One word thể→cách in b01 and the matching question reserve; b02–b07, first negative reserve and cover plan unchanged. Necessary EN/HL/metadata synchronization only.",
+    "claim_limit": "Có cách offers the existing self-test/compare method; no guarantee, new method, causal explanation or research claim.",
+    "approval": "Requested wording applied; human/read-aloud/fact-owner/reviewer gates still pending."
+  },
+  "pre_method_after_hook": 50,
+  "EN_max": 8,
+  "patch_delta": [
+    {
+      "issue": "L093 wording",
+      "location": "b01 canonical/marked_text/VI–EN caption slice; table/mapping",
+      "before": "Bạn đọc để học, mà quên gì cũng không biết. Bạn có thể nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "after": "Bạn đọc để học, mà quên gì cũng không biết. Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "effect": "Compared with patch1: add vẫn and replace thể with cách; compared with initial r11.4: replace only thể with cách. Main150/pre50; b02–b07 unchanged; EN way/omissions, semantic HL and all bindings resynced. Prior ngram-only fix was insufficient; no craft pass inferred.",
+      "open": "actualSocial/Deep SHA; read-aloud/stranger"
+    },
+    {
+      "issue": "L043 two hook reserves",
+      "location": "hook_alt + hook_alts[0:2] + rules audit",
+      "before": "1 negative reserve",
+      "after": "2 reserves: retained negative + question/promise; neither reserve selected; main promise uses có cách after craft QA",
+      "effect": "R64 at least1 and checklist44 requires2 both represented; not part of count",
+      "open": "unselected alternatives not approved/voiced"
+    },
+    {
+      "issue": "Cover strict-safe bbox",
+      "location": "cover.illustration_transform_plan / cover_plan.illustration_mapping",
+      "before": "[390,1000,660,660]→right1050/bottom1660",
+      "after": "translation[-40,-70]→[350,930,660,660]→right1010/bottom1590",
+      "effect": "10px right/bottom margin versus strict x1020/y1600; A/theme/hero/text/logo/design unchanged",
+      "open": "native template override not implemented; actual images/schema/glyphs/rig unverified"
+    }
+  ],
+  "checks": [
+    {
+      "mode": "subjects",
+      "exit_code": 0
+    },
+    {
+      "mode": "l088",
+      "exit_code": 0
+    },
+    {
+      "mode": "trend",
+      "exit_code": 1
+    },
+    {
+      "mode": "flow",
+      "exit_code": 0
+    },
+    {
+      "mode": "clarity",
+      "exit_code": 0
+    },
+    {
+      "mode": "link",
+      "exit_code": 0
+    },
+    {
+      "mode": "repeat",
+      "exit_code": 0
+    },
+    {
+      "mode": "evidence",
+      "exit_code": 0
+    },
+    {
+      "mode": "choppy",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-prior-concepts",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-same-B-r11.2",
+      "exit_code": 1
+    },
+    {
+      "mode": "fresh-patch1-r11.3",
+      "exit_code": 1
+    }
+  ],
+  "numeric": {
+    "declared_plan_checks": 390,
+    "errors": [],
+    "cover_allocations": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          350,
+          930,
+          660,
+          660
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ],
+        "inside_strict_rule_safe": true,
+        "status": "allocated only; no image"
+      }
+    ],
+    "scope": "Arithmetic on declared PLANNED allocations/time budgets, NOT render/DOM/glyph QA, NOT production schema or manual semantic approval"
+  },
+  "limitations": [
+    "Cover declared transform fits numerically; current native Cover.tsx does NOT implement illustration_transform_plan yet; images/schema/port remain unverified",
+    "Hook narration target170 vs current template default66 unresolved",
+    "EN_FONT/BVP compliance, actual caption wrapping/height, HF <=4 subgroups and timing not inspected in frames",
+    "Reels geometry not mapped; this standard1080x1920 TikTok plan only",
+    "Preview gate1 CHƯA CHUẨN BỊ ẢNH; read-aloud/stranger/timing CHƯA KIỂM; actualDeep/Social/Reviewer SHA pending"
+  ],
+  "before_craft_qa_archive": "/workspace/clip05-r11.4-before-craft-qa-2026-11-07",
+  "sha256": {
+    "/workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+    "/workspace/opencreator-clip05-spec-r11.4-draft-2026-11-07.json": "62352ee26952a66898d9ba796749b867ea2897f8a3c0ea30bf939846d28ceaaa",
+    "/workspace/opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md": "dcc9e364e9d29dac8ef995f599e16573d8ae6edf6f12189ff2864a9aab7a83c6",
+    "/workspace/clip05-r11.4-checker-output-2026-11-07.txt": "242c2b1b0ca15abc4dcf6e700737ccced56075cdbd6c36703e9f847e13621c1c",
+    "/workspace/clip05-r11.4-local-validation-2026-11-07.json": "6d03126f7e59a75b0099c4cd0df0fe7d1b7c910f3db2885d37438b2f21a8cd45",
+    "/workspace/clip05-r11.4-validate-plan.py": "c41f4e5d98323a370aff85b3c3bd61f5fb6eb05156f055ec605d2ee8aede3a9c"
+  }
+}

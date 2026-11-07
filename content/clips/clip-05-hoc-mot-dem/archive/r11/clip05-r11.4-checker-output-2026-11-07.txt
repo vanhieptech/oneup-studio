@@ -1,0 +1,130 @@
+FINAL_SCRIPT_SHA256 dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e
+r11.4=patch2 of B, in-place pre-handoff craft QA. Only thể→cách in b01 promise relative to initial r11.4; existing negative reserve/cover/b02–b07 unchanged. Main150/pre50.
+Earlier thêm vẫn-only fix was insufficient; checker silence is NOT craft approval. Có cách offers the existing method, not a guarantee or research claim.
+Original checker unmodified; text-only; no production/final/STT/build.
+
+## subjects exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --subjects /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-087    opencreator-clip05-script-r11.4-draft-2026-11-07.md: không gọi tên môn học / kiến thức môn học
+
+1 checks · 0 error(s) · 0 warning(s) → PASS
+
+
+
+## l088 exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --l088 /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-088    có nguồn truy được (opencreator-clip05-script-r11.4-draft-2026-11-07.md): Dunlosky et al. (2013)
+✔ L-088    lời đọc có nói dẫn chứng (nghiên cứu / tên tác giả)
+✔ L-088    hook không trùng mẫu 5 hook clip trước (ngưỡng 0.7)
+✔ L-088    CTA không trùng mẫu 5 CTA clip trước (ngưỡng 0.7)
+⚠ L-088    bản nháp không nằm trong thư mục clip → không tìm được file trend / fact của clip
+ℹ L-088    manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1
+
+6 checks · 0 error(s) · 1 warning(s) → PASS
+
+
+
+## trend exit 1
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --trend /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✖ L-090    trend_id texthip-kr-reading-lifestyle-znews-1693810 không có trong research/trends/** → không phải trend đã nghiên cứu
+✔ L-090    hook_pattern P10 active trong patterns.md
+✔ L-090    trend_beats b02
+✔ L-090    trend_spoken «text hip» có trong lời b01–b02
+⚠ L-090    example_evidence x-2115086418192089298
+ℹ L-090    manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; (2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, và lời khuyên làm được trong chính tình huống đó; ví dụ gượng/hiếm gặp → CHƯA ĐẠT dù luật khác đạt
+
+6 checks · 1 error(s) · 1 warning(s) → FAIL
+
+
+
+## flow exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --flow /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-089    ngôi kể nhất quán (b01 bạn → b02 bạn → b03 - → b04 bạn → b05 bạn → b06 bạn → b07 bạn)
+✔ L-089    không có cụm lặp khâu câu
+⚠ L-089    beat mở không nối với beat trước: b02 «Text hip ở Hàn gắn sách…»; b04 «Bạn muốn biết chỗ nào trong…»; b06 «Lúc dò, bạn nhận ra bài…» → mở bằng từ nối/chữ gọi lại ý vừa nói
+✔ L-089    không có đoạn liệt kê song song
+✔ L-089    không có câu chốt gắn thêm
+ℹ L-089    manual gate (làm TRƯỚC khi chấm luật): đọc to b01→CTA một mạch như người nói chuyện — một ngôi kể xuyên suốt, mỗi beat mở bằng mối nối với beat trước, không câu mồ côi/gắn thêm, dẫn chứng nảy ra từ chuyện, không đổi liền mạch lấy số chữ (bỏ ý chứ không ép câu)
+
+6 checks · 0 error(s) · 1 warning(s) → PASS
+
+
+
+## clarity exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --clarity /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-091    tình huống cụ thể đến trước câu hỏi (b01–b03)
+✔ L-091    không câu nào >25 chữ
+✔ L-091    không chữ mơ hồ trong b01–b03
+✔ L-091    b03 không mở bằng câu khái quát + «cũng thấy vậy»
+ℹ L-091    manual gate: đọc b01–b03 như người lần đầu nghe, tóm ý trong 1 câu; không được → CHƯA ĐẠT
+
+5 checks · 0 error(s) · 0 warning(s) → PASS
+
+
+
+## link exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --link /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+⚠ L-094    3/10 cặp câu không chung từ nội dung, không từ nối/đại từ gọi lại: b03→b04 «ích cao, đọc lại thấp.» | «Bạn muốn biết chỗ nào trong…»; b05→b05 «giá khuyên tự kiểm nè.» | «Ví dụ đọc trang chi tiêu,…»; b06→b06 «kể chỉ có tiền ăn.» | «À, bạn bổ sung khoản vừa…» → viết câu nối hoặc gọi lại ý câu trước
+ℹ L-094    manual gate (chặn): bảng cặp câu trong review — câu N+1 trả lời/giải thích/đối chiếu/hệ quả của câu N nhờ chữ nào; không đưa nhân vật/nhóm/mốc/hành động chưa nhắc; câu hỏi hook được trả lời ngay sau; lời khuyên dùng đúng mốc của dẫn chứng
+
+2 checks · 0 error(s) · 1 warning(s) → PASS
+
+
+
+## repeat exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --repeat /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-093    không từ nội dung nào lặp >5% lời
+✔ L-093    không cụm 3 chữ nào lặp
+✔ L-093    từ nối mở câu không lặp ≥3
+ℹ L-093    manual gate: (a) chiều sâu — mỗi beat cho người xem một điều mới (vì sao/cảm giác/hệ quả cụ thể), không nói lại ý cũ bằng chữ khác; (b) đọc to nghe trơn, không câu cụt nối bằng «Nhưng/Và/Rồi» liên tiếp; (c) thay từ lặp bằng đại từ/chữ khác hoặc bỏ hẳn
+
+4 checks · 0 error(s) · 0 warning(s) → PASS
+
+
+
+## evidence exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --evidence /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-096    dẫn chứng: không có câu «nhiều nghiên cứu/nghiên cứu thấy» thiếu tên/năm (11 câu)
+ℹ L-096    manual gate: câu dẫn chứng đủ 3 phần (ai làm, so A với B, kết quả đúng chữ nguồn); hook có lý do dừng lướt
+
+2 checks · 0 error(s) · 0 warning(s) → PASS
+
+
+
+## choppy exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --choppy /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md
+✔ L-096    câu ≤ 10 chữ: 3/11 = 27% (trần 30%)
+✔ L-096    không có 2 câu cộc liền nhau
+
+2 checks · 0 error(s) · 0 warning(s) → PASS
+
+
+
+## fresh-prior-concepts exit 0
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --fresh /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md --against /workspace/opencreator-clip05-script-r11-draft-2026-11-07.md /workspace/opencreator-clip05-script-r11.1-draft-2026-11-07.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v2-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v3-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v10-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v5-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v8-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v7-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v9-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v4-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-05-hoc-mot-dem/script-v6-draft-opencreator.md /workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md
+✔ L-095    hook giống nhất 0.14 với script-v9-draft-opencreator.md (ngưỡng 0.5, so 13 bản)
+✔ L-095    chuỗi beat giống nhất 0.37 với opencreator-clip05-script-r11.1-draft-2026-11-07.md
+ℹ L-095    manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; người xem có dừng lướt ở 3 giây đầu không, có hình ảnh/khoảnh khắc đáng nhớ không
+
+3 checks · 0 error(s) · 0 warning(s) → PASS
+
+
+
+## fresh-same-B-r11.2 exit 1
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --fresh /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md --against /workspace/opencreator-clip05-script-r11.2-draft-2026-11-07.md
+✔ L-095    hook giống nhất 0.28 với opencreator-clip05-script-r11.2-draft-2026-11-07.md (ngưỡng 0.5, so 1 bản)
+✖ L-095    chuỗi beat giống nhất 0.90 với opencreator-clip05-script-r11.2-draft-2026-11-07.md → đổi khung dẫn dắt, không chỉ đổi chữ
+ℹ L-095    manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; người xem có dừng lướt ở 3 giây đầu không, có hình ảnh/khoảnh khắc đáng nhớ không
+
+3 checks · 1 error(s) · 0 warning(s) → FAIL
+
+
+
+## fresh-patch1-r11.3 exit 1
+COMMAND python3 /workspace/oneup-studio/pipeline/scripts/check-rules.py --fresh /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md --against /workspace/opencreator-clip05-script-r11.3-draft-2026-11-07.md
+✖ L-095    hook giống nhất 0.92 với opencreator-clip05-script-r11.3-draft-2026-11-07.md (ngưỡng 0.5, so 1 bản) → đổi hook/tình huống mở
+✖ L-095    chuỗi beat giống nhất 0.99 với opencreator-clip05-script-r11.3-draft-2026-11-07.md → đổi khung dẫn dắt, không chỉ đổi chữ
+ℹ L-095    manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; người xem có dừng lướt ở 3 giây đầu không, có hình ảnh/khoảnh khắc đáng nhớ không
+
+3 checks · 2 error(s) · 0 warning(s) → FAIL
+

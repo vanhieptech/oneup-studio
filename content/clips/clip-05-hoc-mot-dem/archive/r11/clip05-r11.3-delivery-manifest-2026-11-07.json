@@ -1,0 +1,88 @@
+{
+  "status": "DRAFT not approved / not ready to request Chốt",
+  "planning_only": true,
+  "renderable": false,
+  "version": "r11.3",
+  "spoken_words": 149,
+  "post_hook_pre_method_words": 50,
+  "EN_max": 8,
+  "checks": [
+    {
+      "mode": "subjects",
+      "exit_code": 0
+    },
+    {
+      "mode": "l088",
+      "exit_code": 0
+    },
+    {
+      "mode": "trend",
+      "exit_code": 1
+    },
+    {
+      "mode": "flow",
+      "exit_code": 0
+    },
+    {
+      "mode": "clarity",
+      "exit_code": 0
+    },
+    {
+      "mode": "link",
+      "exit_code": 0
+    },
+    {
+      "mode": "repeat",
+      "exit_code": 0
+    },
+    {
+      "mode": "evidence",
+      "exit_code": 0
+    },
+    {
+      "mode": "choppy",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-vs-r11.2-bounded-fix",
+      "exit_code": 1
+    }
+  ],
+  "arithmetic": {
+    "declared_plan_checks": 357,
+    "errors": [],
+    "scope": "Arithmetic on declared PLANNED allocations/time budgets, NOT render/DOM/glyph QA, NOT production schema or manual semantic approval",
+    "separate_current_cover_envelope_fail": [
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          390,
+          1000,
+          660,
+          660
+        ],
+        "inside_strict_rule_safe": false,
+        "status": "EXPECTED OPEN template envelope mismatch, not ignored"
+      }
+    ]
+  },
+  "limitations": [
+    "Actual cover reserved rig+circle fails strict x/right and y/bottom, target is a future port not current props",
+    "Hook narration target170 vs current template default66 unresolved",
+    "EN_FONT/BVP compliance, actual caption wrapping/height, HF <=4 subgroups and timing not inspected in frames",
+    "Reels geometry not mapped; this standard1080x1920 TikTok plan only",
+    "Preview gate1 CHƯA CHUẨN BỊ ẢNH; read-aloud/stranger/timing CHƯA KIỂM; actualDeep/Social/Reviewer SHA pending"
+  ],
+  "sha256": {
+    "/workspace/opencreator-clip05-script-r11.3-draft-2026-11-07.md": "b45ee2ab07366069ad74b2ed576cf792c27deaf09024f80ffdd9ee6cadd99dae",
+    "/workspace/opencreator-clip05-spec-r11.3-draft-2026-11-07.json": "676520033c50671a37846f1d0adecfd95f836dd498c7c72df512a01416913cb1",
+    "/workspace/opencreator-clip05-storyboard-r11.3-plan-2026-11-07.md": "775701afd3373b56febb163d07086370ff8db456d2f7c012b2b2f8e293a7372c",
+    "/workspace/clip05-r11.3-checker-output-2026-11-07.txt": "c6a24086d8e7c2c65dd4c92330896ba74d16ee8cfbde89cac38ba1a0b6581dac",
+    "/workspace/clip05-r11.3-local-validation-2026-11-07.json": "d0e0ab0d181570bda3cba09068a4d1c7f9c0a14f7ec5e5cb928a83680c8d1a9d",
+    "/workspace/clip05-r11.3-validate-plan.py": "bdd8ef194614d48e1efad110e23b9fff654c3ab86b85033320faf9f055f05260"
+  }
+}

@@ -1,0 +1,2346 @@
+{
+  "scope": "Arithmetic on declared PLANNED allocations/time budgets, NOT render/DOM/glyph QA, NOT production schema or manual semantic approval",
+  "script_words": 149,
+  "per_beat_words": [
+    23,
+    18,
+    21,
+    11,
+    28,
+    27,
+    21
+  ],
+  "pre_method_after_hook": 50,
+  "EN_max": 8,
+  "planning_check_count": 357,
+  "planning_arithmetic_errors": [],
+  "layout_measurements": [
+    {
+      "id": "hook-wide",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "hook-title": [
+          180.0,
+          170.0,
+          780.0,
+          150.0
+        ],
+        "hiep-rig": [
+          660.0,
+          390.0,
+          300.0,
+          350.0
+        ],
+        "same-book": [
+          140.0,
+          800.0,
+          720.0,
+          639.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "hook-reaction",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "hook-title": [
+          180.0,
+          170.0,
+          780.0,
+          150.0
+        ],
+        "hiep-rig": [
+          211.0,
+          390.0,
+          708.0,
+          700.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "reading-context",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "context-panel": [
+          180.0,
+          180.0,
+          780.0,
+          130.0
+        ],
+        "vi-bubble": [
+          100.0,
+          350.0,
+          500.0,
+          380.0
+        ],
+        "hiep-rig": [
+          660.0,
+          390.0,
+          300.0,
+          350.0
+        ],
+        "same-book": [
+          140.0,
+          800.0,
+          720.0,
+          639.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "reading-goal",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "vi-bubble": [
+          100.0,
+          350.0,
+          500.0,
+          380.0
+        ],
+        "hiep-rig": [
+          660.0,
+          390.0,
+          300.0,
+          350.0
+        ],
+        "same-book": [
+          140.0,
+          800.0,
+          738.0,
+          639.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "reading-method",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "vi-bubble": [
+          100.0,
+          350.0,
+          500.0,
+          380.0
+        ],
+        "hiep-rig": [
+          660.0,
+          390.0,
+          300.0,
+          350.0
+        ],
+        "same-book": [
+          140.0,
+          800.0,
+          720.0,
+          639.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "ranking",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "ranking-heading": [
+          100.0,
+          220.0,
+          880.0,
+          100.0
+        ],
+        "ranking-objects": [
+          90.0,
+          350.0,
+          900.0,
+          1036.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "comparison",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "comparison-heading": [
+          100.0,
+          220.0,
+          880.0,
+          100.0
+        ],
+        "source-retelling": [
+          90.0,
+          350.0,
+          908.0,
+          1020.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "cta",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "vi-bubble": [
+          100.0,
+          350.0,
+          500.0,
+          380.0
+        ],
+        "hiep-rig": [
+          660.0,
+          390.0,
+          300.0,
+          350.0
+        ],
+        "comment-options": [
+          100.0,
+          820.0,
+          760.0,
+          340.0
+        ]
+      },
+      "collisions": []
+    },
+    {
+      "id": "credit",
+      "motion_envelopes": {
+        "logo": [
+          60.0,
+          80.0,
+          100.0,
+          70.0
+        ],
+        "credit-block": [
+          70.0,
+          240.0,
+          940.0,
+          1140.0
+        ]
+      },
+      "collisions": []
+    }
+  ],
+  "cover_current_template_envelope_findings": [
+    {
+      "id": "series",
+      "bbox": [
+        72,
+        310,
+        850,
+        80
+      ],
+      "inside_strict_rule_safe": true,
+      "status": "allocated only; no image"
+    },
+    {
+      "id": "hero",
+      "bbox": [
+        66,
+        420,
+        930,
+        380
+      ],
+      "inside_strict_rule_safe": true,
+      "status": "allocated only; no image"
+    },
+    {
+      "id": "rig+circle-reserve",
+      "bbox": [
+        390,
+        1000,
+        660,
+        660
+      ],
+      "inside_strict_rule_safe": false,
+      "status": "EXPECTED OPEN template envelope mismatch, not ignored"
+    },
+    {
+      "id": "logo",
+      "bbox": [
+        72,
+        1470,
+        260,
+        70
+      ],
+      "inside_strict_rule_safe": true,
+      "status": "allocated only; no image"
+    }
+  ],
+  "open": [
+    "Actual cover reserved rig+circle fails strict x/right and y/bottom, target is a future port not current props",
+    "Hook narration target170 vs current template default66 unresolved",
+    "EN_FONT/BVP compliance, actual caption wrapping/height, HF <=4 subgroups and timing not inspected in frames",
+    "Reels geometry not mapped; this standard1080x1920 TikTok plan only",
+    "Preview gate1 CHƯA CHUẨN BỊ ẢNH; read-aloud/stranger/timing CHƯA KIỂM; actualDeep/Social/Reviewer SHA pending"
+  ],
+  "checks": [
+    {
+      "check": "spoken word range",
+      "ok": true,
+      "detail": 149
+    },
+    {
+      "check": "word metadata matches",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "pre-method <=50",
+      "ok": true,
+      "detail": 50
+    },
+    {
+      "check": "b01 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 <=8 words",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b01-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b01-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b01-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "forgot."
+      ]
+    },
+    {
+      "check": "b01-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 <=8 words",
+      "ok": true,
+      "detail": 5
+    },
+    {
+      "check": "b01-cap03 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "missing,"
+      ]
+    },
+    {
+      "check": "b01-cap03 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 <=8 words",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b01-cap04 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b01-cap04 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 SFX spoken anchor quên gì",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 SFX mapped once quên gì",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 SFX spoken anchor chỗ thiếu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 SFX mapped once chỗ thiếu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b02-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b02-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 <=8 words",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b02-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "enjoy"
+      ]
+    },
+    {
+      "check": "b02-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 <=8 words",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b02-cap03 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "learn"
+      ]
+    },
+    {
+      "check": "b02-cap03 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 SFX spoken anchor vừa đọc vui vừa học",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 SFX mapped once vừa đọc vui vừa học",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 <=8 words",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b03-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b03-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b03-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b03-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 <=8 words",
+      "ok": true,
+      "detail": 4
+    },
+    {
+      "check": "b03-cap03 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "Practice",
+        "testing:"
+      ]
+    },
+    {
+      "check": "b03-cap03 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 <=8 words",
+      "ok": true,
+      "detail": 3
+    },
+    {
+      "check": "b03-cap04 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "Rereading:",
+        "low"
+      ]
+    },
+    {
+      "check": "b03-cap04 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 SFX spoken anchor tự kiểm",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 SFX mapped once tự kiểm",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 SFX spoken anchor đọc lại thấp",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 SFX mapped once đọc lại thấp",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 <=8 words",
+      "ok": true,
+      "detail": 5
+    },
+    {
+      "check": "b04-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b04-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 <=8 words",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b04-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "haven’t",
+        "remembered?"
+      ]
+    },
+    {
+      "check": "b04-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 SFX spoken anchor chưa nhớ",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 SFX mapped once chưa nhớ",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b05-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "self-testing."
+      ]
+    },
+    {
+      "check": "b05-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 <=8 words",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b05-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b05-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b05-cap03 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b05-cap03 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 <=8 words",
+      "ok": true,
+      "detail": 5
+    },
+    {
+      "check": "b05-cap04 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "check."
+      ]
+    },
+    {
+      "check": "b05-cap04 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 SFX spoken anchor tự kiểm",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 SFX mapped once tự kiểm",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 SFX spoken anchor dò",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 SFX mapped once dò",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b06-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b06-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b06-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "rent,"
+      ]
+    },
+    {
+      "check": "b06-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b06-cap03 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "add"
+      ]
+    },
+    {
+      "check": "b06-cap03 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 SFX spoken anchor tiền thuê nhà",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 SFX mapped once tiền thuê nhà",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 SFX spoken anchor bổ sung",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 SFX mapped once bổ sung",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 markup/text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 1–2 VI stresses",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 focus exact markup",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 translation slice coverage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 <=8 words",
+      "ok": true,
+      "detail": 8
+    },
+    {
+      "check": "b07-cap01 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 no flagged function-word focus",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "b07-cap01 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 <=8 words",
+      "ok": true,
+      "detail": 7
+    },
+    {
+      "check": "b07-cap02 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "complete",
+        "missing"
+      ]
+    },
+    {
+      "check": "b07-cap02 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 <=8 words",
+      "ok": true,
+      "detail": 6
+    },
+    {
+      "check": "b07-cap03 valid highlights",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 no flagged function-word focus",
+      "ok": true,
+      "detail": [
+        "complete",
+        "missing."
+      ]
+    },
+    {
+      "check": "b07-cap03 planned display>=1s",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap03 global binding",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 SFX spoken anchor đủ hay thiếu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 SFX mapped once đủ hay thiếu",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07 doodle0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 0.8
+    },
+    {
+      "check": "b01-h1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 positive/<=8 estimate",
+      "ok": true,
+      "detail": 1.2
+    },
+    {
+      "check": "b01-h2 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h2 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 positive/<=8 estimate",
+      "ok": true,
+      "detail": 4.448889
+    },
+    {
+      "check": "b01-h3 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-h3 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 5.544444
+    },
+    {
+      "check": "b02-s1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-s1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 6.366667
+    },
+    {
+      "check": "b03-e1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-e1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 3.055556
+    },
+    {
+      "check": "b04-s1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-s1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 7.777777
+    },
+    {
+      "check": "b05-s1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-s1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 7.5
+    },
+    {
+      "check": "b06-e1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-e1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 5.833334
+    },
+    {
+      "check": "b07-s1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-s1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 positive/<=8 estimate",
+      "ok": true,
+      "detail": 3.0
+    },
+    {
+      "check": "end-s1 layout ref",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 narration-line mapping",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 caption refs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "end-s1 scene timeline contiguous",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b01-cap04 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b02-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b03-cap04 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b04-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b05-cap04 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b06-cap03 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap01 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "b07-cap02 no caption time overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "first scene narration.text == hook.text",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook ids resolve",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook >=2 cut/hit events incl cut in0–3 estimate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "hook-wide/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hook-title motion envelope inside content",
+      "ok": true,
+      "detail": [
+        180.0,
+        170.0,
+        780.0,
+        150.0
+      ]
+    },
+    {
+      "check": "hook-wide/hook-title inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hook-title avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hiep-rig motion envelope inside content",
+      "ok": true,
+      "detail": [
+        660.0,
+        390.0,
+        300.0,
+        350.0
+      ]
+    },
+    {
+      "check": "hook-wide/hiep-rig inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/hiep-rig avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/same-book matches existing prop arithmetic",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "hook-wide/same-book motion envelope inside content",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "hook-wide/same-book inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide/same-book avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-wide allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "hook-reaction/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "hook-reaction/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hook-title motion envelope inside content",
+      "ok": true,
+      "detail": [
+        180.0,
+        170.0,
+        780.0,
+        150.0
+      ]
+    },
+    {
+      "check": "hook-reaction/hook-title inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hook-title avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hiep-rig motion envelope inside content",
+      "ok": true,
+      "detail": [
+        211.0,
+        390.0,
+        708.0,
+        700.0
+      ]
+    },
+    {
+      "check": "hook-reaction/hiep-rig inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction/hiep-rig avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "hook-reaction allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "reading-context/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "reading-context/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/context-panel motion envelope inside content",
+      "ok": true,
+      "detail": [
+        180.0,
+        180.0,
+        780.0,
+        130.0
+      ]
+    },
+    {
+      "check": "reading-context/context-panel inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/context-panel avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/vi-bubble motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        350.0,
+        500.0,
+        380.0
+      ]
+    },
+    {
+      "check": "reading-context/vi-bubble inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/vi-bubble avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/hiep-rig motion envelope inside content",
+      "ok": true,
+      "detail": [
+        660.0,
+        390.0,
+        300.0,
+        350.0
+      ]
+    },
+    {
+      "check": "reading-context/hiep-rig inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/hiep-rig avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/same-book matches existing prop arithmetic",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "reading-context/same-book motion envelope inside content",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "reading-context/same-book inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context/same-book avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-context allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "reading-goal/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "reading-goal/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/vi-bubble motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        350.0,
+        500.0,
+        380.0
+      ]
+    },
+    {
+      "check": "reading-goal/vi-bubble inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/vi-bubble avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/hiep-rig motion envelope inside content",
+      "ok": true,
+      "detail": [
+        660.0,
+        390.0,
+        300.0,
+        350.0
+      ]
+    },
+    {
+      "check": "reading-goal/hiep-rig inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/hiep-rig avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/same-book matches existing prop arithmetic",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "reading-goal/same-book motion envelope inside content",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        738.0,
+        639.0
+      ]
+    },
+    {
+      "check": "reading-goal/same-book inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal/same-book avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-goal allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "reading-method/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "reading-method/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/vi-bubble motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        350.0,
+        500.0,
+        380.0
+      ]
+    },
+    {
+      "check": "reading-method/vi-bubble inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/vi-bubble avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/hiep-rig motion envelope inside content",
+      "ok": true,
+      "detail": [
+        660.0,
+        390.0,
+        300.0,
+        350.0
+      ]
+    },
+    {
+      "check": "reading-method/hiep-rig inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/hiep-rig avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/same-book matches existing prop arithmetic",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "reading-method/same-book motion envelope inside content",
+      "ok": true,
+      "detail": [
+        140.0,
+        800.0,
+        720.0,
+        639.0
+      ]
+    },
+    {
+      "check": "reading-method/same-book inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method/same-book avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "reading-method allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "ranking/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "ranking/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-heading motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        220.0,
+        880.0,
+        100.0
+      ]
+    },
+    {
+      "check": "ranking/ranking-heading inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-heading avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-objects motion envelope inside content",
+      "ok": true,
+      "detail": [
+        90.0,
+        350.0,
+        900.0,
+        1036.0
+      ]
+    },
+    {
+      "check": "ranking/ranking-objects inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking/ranking-objects avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "ranking allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "comparison/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "comparison/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/comparison-heading motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        220.0,
+        880.0,
+        100.0
+      ]
+    },
+    {
+      "check": "comparison/comparison-heading inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/comparison-heading avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/source-retelling motion envelope inside content",
+      "ok": true,
+      "detail": [
+        90.0,
+        350.0,
+        908.0,
+        1020.0
+      ]
+    },
+    {
+      "check": "comparison/source-retelling inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison/source-retelling avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "comparison allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "cta/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "cta/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/vi-bubble motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        350.0,
+        500.0,
+        380.0
+      ]
+    },
+    {
+      "check": "cta/vi-bubble inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/vi-bubble avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/hiep-rig motion envelope inside content",
+      "ok": true,
+      "detail": [
+        660.0,
+        390.0,
+        300.0,
+        350.0
+      ]
+    },
+    {
+      "check": "cta/hiep-rig inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/hiep-rig avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/comment-options motion envelope inside content",
+      "ok": true,
+      "detail": [
+        100.0,
+        820.0,
+        760.0,
+        340.0
+      ]
+    },
+    {
+      "check": "cta/comment-options inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta/comment-options avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "cta allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "credit/logo motion envelope inside logo",
+      "ok": true,
+      "detail": [
+        60.0,
+        80.0,
+        100.0,
+        70.0
+      ]
+    },
+    {
+      "check": "credit/logo inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/credit-block motion envelope inside content",
+      "ok": true,
+      "detail": [
+        70.0,
+        240.0,
+        940.0,
+        1140.0
+      ]
+    },
+    {
+      "check": "credit/credit-block inside screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit/credit-block avoids caption zone",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "credit allocated top-level envelopes disjoint",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "check": "remotion caption allocation inside caption zone",
+      "ok": true,
+      "detail": [
+        70,
+        1488,
+        948,
+        272
+      ]
+    },
+    {
+      "check": "hyperframes caption allocation inside caption zone",
+      "ok": true,
+      "detail": [
+        70,
+        1500,
+        948,
+        272
+      ]
+    },
+    {
+      "check": "cover target/series strict-safe",
+      "ok": true,
+      "detail": [
+        72,
+        310,
+        850,
+        80
+      ]
+    },
+    {
+      "check": "cover target/hero strict-safe",
+      "ok": true,
+      "detail": [
+        66,
+        420,
+        930,
+        380
+      ]
+    },
+    {
+      "check": "cover target/rig+circle-target strict-safe",
+      "ok": true,
+      "detail": [
+        360,
+        940,
+        660,
+        660
+      ]
+    },
+    {
+      "check": "cover target/logo strict-safe",
+      "ok": true,
+      "detail": [
+        72,
+        1470,
+        260,
+        70
+      ]
+    },
+    {
+      "check": "MD canonical words == JSON",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "7 recorded repo source hashes unchanged",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "trend_id": "texthip-kr-reading-lifestyle-znews-1693810",
+  "id_type": "Social Research internal source-record identifier; not a platform hashtag ID",
+  "classification": "press-reported cultural trend; current social hotness unverified",
+  "source_package": {
+    "path": "research/trends/2026-11-07-clip05-texthip-bridge-check.md",
+    "commit": "bd53fd3",
+    "sync": "not independently rechecked in this metadata handoff"
+  },
+  "source_url": "https://lifestyle.zingnews.vn/trao-luu-nang-tam-van-hoa-doc-bo-phim-ngan-cua-gen-z-han-quoc-post1693810.html",
+  "published_at": "2026-11-05T06:00:00+07:00",
+  "snapshot_at": "2026-11-07T14:07:28+07:00",
+  "example_evidence": [
+    {
+      "person": "Lee Yunjee",
+      "locator": "Tìm đến sách để giảm thời gian lướt điện thoại; archived znews.txt lines 24–26",
+      "reported_behavior": "Đang tập đọc sách và viết nhật ký để giảm lệ thuộc nội dung ngắn/thiết bị số.",
+      "scope": "Một trường hợp báo chí; không xác nhận đã giảm thời gian màn hình hay nhớ tốt hơn.",
+      "supports": "Bối cảnh muốn hình thành thói quen đọc; không phải ví dụ tự kiểm."
+    }
+  ],
+  "reading_to_follow_instructions_example_evidence": null,
+  "reading_then_forgetting_example_evidence": null,
+  "retrieval_practice_in_trend_example_evidence": null,
+  "audience_comment_evidence": null,
+  "editorial_scope": "Đọc nội dung để làm theo là tình huống/gợi ý biên tập của kênh, không phải trải nghiệm đã được nguồn trend ghi nhận. Phạm vi chứng cứ cho 23.14 thuộc Deep Research; không biến việc nhớ một chỉ dẫn thành bằng chứng thực hiện việc đó thành công.",
+  "restrictions": [
+    "Không gán đọc-quên cho người tham gia #texthip",
+    "Pilsa chép đoạn yêu thích không phải bằng chứng retrieval",
+    "Không chuyển bridge cũ B-texthip-01/4.15 thành bridge 23.14 đã duyệt",
+    "Không gọi ví dụ tự dựng là example_evidence thật"
+  ],
+  "metadata_status": "C metadata plus independent pain-evidence addendum prepared outside repository; repository archive blocked by prior sanctioned-write usage failure; no new commit/sync or new write attempt",
+  "independent_pain_evidence": {
+    "id": "x-2115086418192089298",
+    "url": "https://x.com/phrog_lmao/status/2115086418192089298",
+    "author_handle": "phrog_lmao",
+    "type": "independent_individual_self_report",
+    "original_quote": "I can't replace doomscrolling with reading though because I can't remember what I read, especially if drowsy.",
+    "published_date_as_archived": "2026-10-27",
+    "snapshot_at_as_archived": "2026-10-30T18:25:00+07:00",
+    "likes_at_snapshot": 0,
+    "provenance": {
+      "path": "research/trends/2026-10-30/clip-05-v9-trend.md",
+      "commit": "7fb1e4b",
+      "line": 17,
+      "retrieval_claim_in_archive": "tự kiểm qua X API, 30/10"
+    },
+    "current_verification": "Compared text against archived commit 7fb1e4b only; no live X recheck",
+    "raw_response_available_in_reviewed_package": false,
+    "scope": "Một tự thuật không nhớ điều đã đọc, nhất là lúc buồn ngủ; không phải phép thử nhớ/kể lại. Không chứng minh nguyên nhân hay hiệu quả phương pháp.",
+    "not_evidence_for": [
+      "channel audience identity",
+      "texthip participation",
+      "crowd prevalence",
+      "current hotness",
+      "retrieval practice efficacy"
+    ],
+    "age_warning": "Post and snapshot are more than 7 days old on 2026-11-07",
+    "source_separation": "Independent pain evidence; C remains the texthip context, not the source of this reply"
+  },
+  "updated_at": "2026-11-07T14:51:17+07:00"
+}

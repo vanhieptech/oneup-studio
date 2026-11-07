@@ -1,0 +1,4856 @@
+{
+  "id": "clip-05-r11.4-plan-update1",
+  "clip": "clip-05",
+  "version": "r11.4-plan-update1",
+  "planning_only": true,
+  "renderable": false,
+  "locked": false,
+  "status": "SOURCE-POSTCHECK VISUAL PLAN ONLY; not self-approved, not Chốt",
+  "date": "2026-11-07",
+  "timezone": "Asia/Saigon",
+  "source": {
+    "trend_id": "texthip-kr-reading-lifestyle-znews-1693810",
+    "trend_package": {
+      "path": "research/trends/2026-11-07-clip05-texthip-bridge-check.md",
+      "commit": "bd53fd3",
+      "sync": "owner/News handoff reports synced; no live recheck this turn",
+      "snapshot_at": "2026-11-07T14:07:28+07:00",
+      "published_at": "2026-11-05T06:00:00+07:00"
+    },
+    "pain": {
+      "example_evidence": "x-2115086418192089298",
+      "type": "independent_individual_self_report",
+      "url": "https://x.com/phrog_lmao/status/2115086418192089298",
+      "archive_path": "research/trends/2026-10-30/clip-05-v9-trend.md",
+      "archive_commit": "7fb1e4b",
+      "locator": "line17",
+      "reported_text": "I can't replace doomscrolling with reading though because I can't remember what I read, especially if drowsy.",
+      "post_date": "2026-10-27",
+      "snapshot": "2026-10-30 18:25 Asia/Saigon",
+      "likes_at_snapshot": 0,
+      "raw_live_recheck": false,
+      "limits": "One archived independent individual, not channel audience/texthip participant. Supports reading-memory illustration only; not proof of the hook scene, uncertainty about omissions, a retrieval test, frequency, mechanism or efficacy. Do not quote archive line18. No fresh raw/live."
+    },
+    "fact_lock": {
+      "path": "research/fact-packages/factcheck-clip05-lock-2026-11-07.md",
+      "commit": "b02dd07"
+    },
+    "fact_bridge": {
+      "path": "research/fact-packages/clip05-texthip-fact-bridge-2026-11-07.md",
+      "commit": "d673dd9"
+    },
+    "metadata_addendum": {
+      "path": "/workspace/clip05-texthip-metadata-2026-11-07.json",
+      "updated_at": "2026-11-07T14:51:17+07:00",
+      "commit": null,
+      "status": "owner addendum outside repo; archive/registry unresolved; not edited in this revision"
+    }
+  },
+  "direction": "C",
+  "concept": "B: one reading, add a memory goal; no exclusive groups",
+  "throughline": "Bạn đọc để học VÀ vẫn có thể đọc vui NHƯNG không gọi tên được phần mình chưa nhớ VÌ VẬY chọn mục tiêu nhận ra phần thiếu, tự kiểm rồi đối chiếu đúng văn bản. Đây là khung biên tập, không suy causal từ trend.",
+  "hook_question": "Có thể nhận ra phần nội dung chưa nhớ thay vì chỉ biết mình quên không? (câu hỏi ngầm; không yêu cầu kể khi chưa giới thiệu thao tác)",
+  "hook": {
+    "text": "FORGOT... WHAT?",
+    "scenes": [
+      "b01-h1",
+      "b01-h2",
+      "b01-h3"
+    ],
+    "voice_line_ref": "vi-b01",
+    "voice_onset_estimate_s": 0.06,
+    "cuts_estimate_s": [
+      0.8,
+      2.0
+    ],
+    "hits_estimate_s": [
+      1.448889,
+      4.504445
+    ],
+    "verified": false,
+    "narration_semantics": "Display EN title, NOT spoken VI text. First scene narration.text equals hook.text exactly. One continuous VI line spans all three cuts; title/captions persist as global layers.",
+    "early_event_plan": "Two cuts .8/2.0 plus first semantic hit about1.45s. Second hit after3s; not falsely counted as early hit."
+  },
+  "hook_alt": {
+    "type": "negative; not selected",
+    "text": "Bạn đọc để học, đừng để chỗ chưa nhớ chỉ mang tên “quên rồi”.",
+    "status": "Unselected reserve only; preserved negative option, not in main count",
+    "marked_text": "Bạn đọc để học, đừng để {nhấn: chỗ chưa nhớ} chỉ mang tên “quên rồi”."
+  },
+  "callbacks": [
+    {
+      "clip": "clip-04",
+      "shared_method": "23.14",
+      "spoken_callback": false,
+      "reason": "Published status unknown; no claim clip was seen/posted."
+    }
+  ],
+  "week": 1,
+  "theme": "dark",
+  "theme_verification": "Slot5 proposed; preceding release themes not independently checked",
+  "frame": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "bbox_format": "x,y,width,height; includes declared margins/shadow reserve; NOT DOM measured bounds",
+    "zones": {
+      "screen": [
+        0,
+        0,
+        1080,
+        1920
+      ],
+      "content": [
+        60,
+        150,
+        960,
+        1310
+      ],
+      "caption": [
+        60,
+        1488,
+        960,
+        312
+      ],
+      "logo": [
+        60,
+        80,
+        100,
+        70
+      ],
+      "cover_rule": [
+        60,
+        290,
+        960,
+        1310
+      ]
+    },
+    "caption_reserved_bbox": {
+      "remotion": [
+        70,
+        1488,
+        948,
+        272
+      ],
+      "hyperframes": [
+        70,
+        1500,
+        948,
+        272
+      ]
+    },
+    "font": "Be Vietnam Pro LOCAL required for all text",
+    "logo": "brand logo05-pair-plus top-left; own overlay slot, not an exception silently applied to content",
+    "colors": [
+      "#111111",
+      "#F7F7F5",
+      "#FF5A36"
+    ],
+    "grain": "existing subtle layer; not created now",
+    "reference_geometry": [
+      {
+        "path": "video-engine/src/composition/layout.ts",
+        "lines": "6–8",
+        "observed": "content SAFE x60–1020/y150–1460; PAD36"
+      },
+      {
+        "path": "video-engine/src/composition/SceneRenderer.tsx",
+        "lines": "41–42,80–82",
+        "observed": "standard capTop=1920*.775=1488; reels=1000, NOT this standard plan; standard narration top66"
+      },
+      {
+        "path": "video-engine/src/composition/Caption.tsx",
+        "lines": "20–22,30",
+        "observed": "standard caption left/right70, shadow8/10; wrapping height dynamic; EN_FONT currently used (font compliance unresolved)"
+      },
+      {
+        "path": "content/samples/sample-natural/explainer/compositions/captions.html.tpl",
+        "lines": "10–13,19–22",
+        "observed": "HF caption top1500, max-width940 + shadow; BVP58, subgroup MAXW4; exact actual subgroup timing/overflow not validated"
+      }
+    ],
+    "limits": "caption boxes reserve at most272px including shadow, NOT observed height; actual wrap/font/glyph metrics/reels remap must be checked later. Content and caption are separate zones, not contradictory safezone claims."
+  },
+  "word_count": 150,
+  "pre_method_words_after_hook": 50,
+  "duration_estimate_s": 45.804444,
+  "duration_measured": false,
+  "structure": {
+    "hook": "b01",
+    "intro": "b02",
+    "body": {
+      "problem": "b01; no invented cause",
+      "exploration": "b03",
+      "goal": "b04",
+      "method": "b05",
+      "payoff": "b06"
+    },
+    "summary": "b06 returns to missing content",
+    "cta": "b07"
+  },
+  "beats": [
+    {
+      "id": "b01",
+      "label": "Hook / pain + hứa",
+      "role": "Pain: chưa gọi tên được nội dung đã quên. Hứa: có cách nhận ra phần thiếu; cùng một đối tượng nội dung, không nói phần kể đã tồn tại.",
+      "estimate_s": [
+        0,
+        6.726667
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "remotion",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Khựng vì không gọi tên được điều đã quên, rồi tò mò; không chê người học.",
+      "text": "Bạn đọc để học, mà quên gì cũng không biết. Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "marked_text": "Bạn đọc để học, mà {nhấn: quên gì} cũng không biết. Bạn vẫn có cách nhận ra {nhấn: chỗ thiếu}, chứ không chỉ biết mình quên.",
+      "phrases_plan": [
+        {
+          "t": "Bạn đọc để học, mà {nhấn: quên gì} cũng không biết.",
+          "pause_status": "punctuation-led only; no audio"
+        },
+        {
+          "t": "Bạn vẫn có cách nhận ra {nhấn: chỗ thiếu}, chứ không chỉ biết mình quên.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "You read to learn,",
+          "hl": [],
+          "id": "b01-cap01",
+          "vi_text": "Bạn đọc để học,",
+          "vi_word_range": [
+            0,
+            4
+          ],
+          "interval_estimate_s": [
+            0.06,
+            1.171111
+          ],
+          "timing": "ESTIMATE; not real voice alignment"
+        },
+        {
+          "en": "but can’t even tell what you forgot.",
+          "hl": [
+            6
+          ],
+          "id": "b01-cap02",
+          "vi_text": "mà quên gì cũng không biết.",
+          "vi_word_range": [
+            4,
+            10
+          ],
+          "interval_estimate_s": [
+            1.171111,
+            2.837778
+          ],
+          "timing": "ESTIMATE; not real voice alignment"
+        },
+        {
+          "en": "You still have a way to spot omissions,",
+          "hl": [
+            7
+          ],
+          "id": "b01-cap03",
+          "vi_text": "Bạn vẫn có cách nhận ra chỗ thiếu,",
+          "vi_word_range": [
+            10,
+            18
+          ],
+          "interval_estimate_s": [
+            2.837778,
+            5.06
+          ],
+          "timing": "ESTIMATE; not real voice alignment"
+        },
+        {
+          "en": "instead of only knowing you forgot.",
+          "hl": [],
+          "id": "b01-cap04",
+          "vi_text": "chứ không chỉ biết mình quên.",
+          "vi_word_range": [
+            18,
+            24
+          ],
+          "interval_estimate_s": [
+            5.06,
+            6.726667
+          ],
+          "timing": "ESTIMATE; not real voice alignment"
+        }
+      ],
+      "context": "Một lần đọc ở bàn, cùng sách mock; chưa giới thiệu thao tác tự kiểm, chưa có phần kể.",
+      "shot": "h1 sách mở + người đọc; cut0.8s sang phản ứng khựng h2; cut2s về cuốn sách h3. Không lật tìm trang, không gấp sách làm test trong hook.",
+      "stage": {
+        "action": "Người đọc dừng mắt trên trang, nét mặt ngơ ngác, bàn tay mở nhẹ; rig thở/chớp mắt. Cuốn sách không đổi thành kết quả kiểm tra.",
+        "react": "Khựng vì không gọi tên được điều đã quên, rồi tò mò."
+      },
+      "pause_plan": "Phẩy sau học; câu đầu rơi ở không biết. Câu hứa liền mạch, nhấn chỗ thiếu; không chia chữ theo cut.",
+      "link": "S1 chưa gọi tên được phần quên → S2 hứa có cách nhận ra phần thiếu ấy. Không cần người nghe tự thêm hành động kể hoặc mốc ngay đó.",
+      "why_visual": "Đảo ở nội dung: không biết mình quên gì → có cách định danh chỗ thiếu; không lấy whip thay novelty. Đây là giả thuyết lực mở, chưa người lạ/nghe/timing.",
+      "claim_source": "Chi tiết comic biên tập phát triển từ pain đọc–nhớ có nguồn cá nhân; không trích source như đã có cảnh này hoặc tần suất quên. Hứa có cách: gợi ý phương pháp tự kiểm rồi đối chiếu văn bản ở b05–b06, không bảo đảm hiệu quả/nhận ra mọi phần thiếu, không phải claim nghiên cứu.",
+      "fx": {
+        "visual": "Whip vào phản ứng khựng khi không gọi tên được nội dung quên; cùng rig/sách, không tạo vật mới.",
+        "word": "quên gì",
+        "motion": {
+          "slug": "mmx-whip",
+          "source": "motionmaxxing",
+          "params": {
+            "duration_frames": 13,
+            "x_px": [
+              60,
+              0
+            ]
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "stamp",
+          "atLine": 0,
+          "offset": null,
+          "word": "quên gì",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            5,
+            7
+          ],
+          "at_estimate_s": 1.448889,
+          "frame_estimate": 43,
+          "line_offset_estimate_s": 1.448889,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "tick",
+          "atLine": 0,
+          "offset": null,
+          "word": "chỗ thiếu",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            16,
+            18
+          ],
+          "at_estimate_s": 4.504445,
+          "frame_estimate": 135,
+          "line_offset_estimate_s": 4.504445,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cold-open",
+        "sfx": null,
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "word_count": 24,
+      "emphasis_focus": [
+        {
+          "vi": "quên gì",
+          "caption_targets": [
+            {
+              "id": "b01-cap02",
+              "hl": [
+                6
+              ],
+              "highlight_words": [
+                "forgot."
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "chỗ thiếu",
+          "caption_targets": [
+            {
+              "id": "b01-cap03",
+              "hl": [
+                7
+              ],
+              "highlight_words": [
+                "omissions,"
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    },
+    {
+      "id": "b02",
+      "label": "Bối cảnh trend + thêm mục tiêu",
+      "role": "Cùng lần đọc có cả giá trị tận hưởng và mục tiêu học; trend làm bối cảnh, không làm bằng chứng quên.",
+      "estimate_s": [
+        6.726667,
+        12.271111
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "remotion",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Thoải mái, tôn trọng sở thích đọc, không chế giễu.",
+      "text": "Text hip ở Hàn gắn sách với phong cách sống; bạn có thể vừa đọc vui vừa học.",
+      "marked_text": "Text hip ở Hàn gắn sách với phong cách sống; bạn có thể {nhấn: vừa đọc vui vừa học}.",
+      "phrases_plan": [
+        {
+          "t": "Text hip ở Hàn gắn sách với phong cách sống; bạn có thể {nhấn: vừa đọc vui vừa học}.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "Korea’s text hip links books with lifestyle.",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b02-cap01",
+          "vi_text": "Text hip ở Hàn gắn sách với phong cách sống;",
+          "vi_word_range": [
+            0,
+            10
+          ],
+          "interval_estimate_s": [
+            6.726667,
+            9.504444
+          ]
+        },
+        {
+          "en": "You can enjoy reading",
+          "hl": [
+            2
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b02-cap02",
+          "vi_text": "bạn có thể vừa đọc vui",
+          "vi_word_range": [
+            10,
+            16
+          ],
+          "interval_estimate_s": [
+            9.504444,
+            11.171111
+          ]
+        },
+        {
+          "en": "and learn at the same time.",
+          "hl": [
+            1
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b02-cap03",
+          "vi_text": "vừa học.",
+          "vi_word_range": [
+            16,
+            18
+          ],
+          "interval_estimate_s": [
+            11.171111,
+            12.271111
+          ]
+        }
+      ],
+      "context": "Vẫn cùng cuốn sách và bàn; kể bối cảnh báo chí, không giả đây là người tham gia #texthip.",
+      "shot": "Trung cảnh giữ nguyên bàn và sách; panel EN Text hip / Reading as lifestyle xuất hiện bên sách, không montage Hàn hay inset hai nhóm người.",
+      "stage": {
+        "action": "Vai thả lỏng, mắt dõi sách; panel đứng cạnh sách rồi nhập vào bố cục bàn, không phân loại nhân vật.",
+        "react": "Thoải mái, tôn trọng sở thích đọc, không chế giễu."
+      },
+      "pause_plan": "Dấu chấm phẩy phân hai ý bối cảnh/mục tiêu; không ngắt text hip hay phong cách sống.",
+      "link": "Cùng cuốn sách ở hook: từ nhu cầu học mở ra giá trị khác có thể đi cùng. Cuối beat giữ rõ chữ học để dẫn lựa chọn kỹ thuật.",
+      "why_visual": "Trend ở ngay lần đọc, không cắt sang bản tin xa lạ rồi quay lại. Không dùng từ khác/Not like để chia hai nhóm.",
+      "claim_source": "Social bd53fd3 cho mô tả trend; hai mục tiêu đi cùng là lời nối biên tập, không kết quả nghiên cứu.",
+      "fx": {
+        "visual": "Panel bối cảnh bám sách hiện có, không chia người thành nhóm.",
+        "word": "vừa đọc vui vừa học",
+        "motion": {
+          "slug": "tdev-panel",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 15,
+            "rise_px": 32
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "pop",
+          "atLine": 0,
+          "offset": null,
+          "word": "vừa đọc vui vừa học",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            13,
+            18
+          ],
+          "at_estimate_s": 10.337777,
+          "frame_estimate": 310,
+          "line_offset_estimate_s": 3.61111,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "swish",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "word_count": 18,
+      "emphasis_focus": [
+        {
+          "vi": "vừa đọc vui vừa học",
+          "caption_targets": [
+            {
+              "id": "b02-cap02",
+              "hl": [
+                2
+              ],
+              "highlight_words": [
+                "enjoy"
+              ]
+            },
+            {
+              "id": "b02-cap03",
+              "hl": [
+                1
+              ],
+              "highlight_words": [
+                "learn"
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    },
+    {
+      "id": "b03",
+      "label": "Dẫn chứng chọn kỹ thuật",
+      "role": "Từ mục tiêu học, đưa lựa chọn kỹ thuật có nguồn: chỉ xếp hạng hữu ích, không kết quả đo trực tiếp.",
+      "estimate_s": [
+        12.271111,
+        18.637778
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "hyperframes",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Tập trung, tò mò về lựa chọn, không giọng công bố chiến thắng.",
+      "text": "Còn cách học, nhóm Dunlosky năm 2013 đánh giá mười kỹ thuật, xếp tự kiểm hữu ích cao, đọc lại thấp.",
+      "marked_text": "Còn cách học, nhóm Dunlosky năm 2013 đánh giá mười kỹ thuật, xếp {nhấn: tự kiểm} hữu ích cao, {nhấn: đọc lại thấp}.",
+      "phrases_plan": [
+        {
+          "t": "Còn cách học, nhóm Dunlosky năm 2013 đánh giá mười kỹ thuật, xếp {nhấn: tự kiểm} hữu ích cao, {nhấn: đọc lại thấp}.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "As for learning methods,",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b03-cap01",
+          "vi_text": "Còn cách học,",
+          "vi_word_range": [
+            0,
+            3
+          ],
+          "interval_estimate_s": [
+            12.271111,
+            13.371111
+          ]
+        },
+        {
+          "en": "Dunlosky’s team rated ten techniques in 2013.",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b03-cap02",
+          "vi_text": "nhóm Dunlosky năm 2013 đánh giá mười kỹ thuật,",
+          "vi_word_range": [
+            3,
+            12
+          ],
+          "interval_estimate_s": [
+            13.371111,
+            15.871111
+          ]
+        },
+        {
+          "en": "Practice testing: high utility.",
+          "hl": [
+            0,
+            1
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b03-cap03",
+          "vi_text": "xếp tự kiểm hữu ích cao,",
+          "vi_word_range": [
+            12,
+            18
+          ],
+          "interval_estimate_s": [
+            15.871111,
+            17.537778
+          ]
+        },
+        {
+          "en": "Rereading: low utility.",
+          "hl": [
+            0,
+            1
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b03-cap04",
+          "vi_text": "đọc lại thấp.",
+          "vi_word_range": [
+            18,
+            21
+          ],
+          "interval_estimate_s": [
+            17.537778,
+            18.637778
+          ]
+        }
+      ],
+      "context": "Chỉ bảng kỹ thuật trên mặt bàn cùng palette, không chibi trong explainer.",
+      "shot": "Top-down bảng10 thẻ trung tính; hai thẻ Practice testing / Rereading về nhóm HIGH UTILITY / LOW UTILITY. Không trục1–10/không%.",
+      "stage": {
+        "action": "Mười card cùng cỡ; hai card trượt về hai nhãn nhóm, tám card còn lại không có mức cụ thể.",
+        "react": "Tập trung, tò mò về lựa chọn, không giọng công bố chiến thắng."
+      },
+      "pause_plan": "Nhịp phẩy sau cách học và kỹ thuật; không ngắt tên tác giả/năm hay mười kỹ thuật. Không đọc thành danh sách ba nhóm.",
+      "link": "Còn cách học nhận học ở b02; xếp hạng là lý do có nguồn để cân nhắc tự kiểm, không bằng chứng trend.",
+      "why_visual": "Card nhóm giữ đúng ranking. Khung không có người diễn thí nghiệm; so sánh không biến thành tăng trí nhớ.",
+      "claim_source": "Deep b02dd07 dòng22–28.",
+      "fx": {
+        "visual": "Các thẻ hiện; dịch thẻ cùng timeline, không mô phỏng số đo.",
+        "word": "tự kiểm",
+        "motion": {
+          "slug": "tdev-stagger",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 15,
+            "stagger_ms": 40
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "ding",
+          "atLine": 0,
+          "offset": null,
+          "word": "tự kiểm",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            13,
+            15
+          ],
+          "at_estimate_s": 16.148889,
+          "frame_estimate": 484,
+          "line_offset_estimate_s": 3.877778,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "tick",
+          "atLine": 0,
+          "offset": null,
+          "word": "đọc lại thấp",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            18,
+            21
+          ],
+          "at_estimate_s": 17.537778,
+          "frame_estimate": 526,
+          "line_offset_estimate_s": 5.266667,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "whoosh-soft",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "hits": [
+        {
+          "id": "b03-h1",
+          "f": null,
+          "sfx": "ding",
+          "word": "tự kiểm",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 16.148889,
+          "frame_estimate": 484,
+          "word_range": [
+            13,
+            15
+          ]
+        },
+        {
+          "id": "b03-h2",
+          "f": null,
+          "sfx": "tick",
+          "word": "đọc lại thấp",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 17.537778,
+          "frame_estimate": 526,
+          "word_range": [
+            18,
+            21
+          ]
+        }
+      ],
+      "word_count": 21,
+      "emphasis_focus": [
+        {
+          "vi": "tự kiểm",
+          "caption_targets": [
+            {
+              "id": "b03-cap03",
+              "hl": [
+                0,
+                1
+              ],
+              "highlight_words": [
+                "Practice",
+                "testing:"
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "đọc lại thấp",
+          "caption_targets": [
+            {
+              "id": "b03-cap04",
+              "hl": [
+                0,
+                1
+              ],
+              "highlight_words": [
+                "Rereading:",
+                "low"
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    },
+    {
+      "id": "b04",
+      "label": "Mục tiêu / móc giữa",
+      "role": "Mục tiêu: nhận ra phần nội dung chưa nhớ, không nói như thể phép tự kể đã diễn ra.",
+      "estimate_s": [
+        18.637778,
+        21.693333
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "remotion",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Tò mò, rủ nhẹ với hông, không kiểm tra năng lực.",
+      "text": "Bạn muốn biết chỗ nào trong trang sách chưa nhớ hông?",
+      "marked_text": "Bạn muốn biết chỗ nào trong trang sách {nhấn: chưa nhớ} hông?",
+      "phrases_plan": [
+        {
+          "t": "Bạn muốn biết chỗ nào trong trang sách {nhấn: chưa nhớ} hông?",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "Want to know which part",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b04-cap01",
+          "vi_text": "Bạn muốn biết chỗ nào",
+          "vi_word_range": [
+            0,
+            5
+          ],
+          "interval_estimate_s": [
+            18.637778,
+            20.026667
+          ]
+        },
+        {
+          "en": "of that page you haven’t remembered?",
+          "hl": [
+            4,
+            5
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b04-cap02",
+          "vi_text": "trong trang sách chưa nhớ hông?",
+          "vi_word_range": [
+            5,
+            11
+          ],
+          "interval_estimate_s": [
+            20.026667,
+            21.693333
+          ]
+        }
+      ],
+      "context": "Quay lại cùng người đọc đang cân nhắc thêm mục tiêu học cho trang vừa thích.",
+      "shot": "Trung cảnh, sách vẫn ở vị trí cũ, Thầy nghiêng đầu rồi nhìn trang; chưa đóng sách trước lời giải pháp.",
+      "stage": {
+        "action": "Chibi nghiêng đầu, tay dừng trên bìa sách; mắt trở lại trang đang mở.",
+        "react": "Tò mò, rủ nhẹ với hông, không kiểm tra năng lực."
+      },
+      "pause_plan": "Một câu hỏi liền; hông lên nhẹ tự nhiên, chưa có đo pitch.",
+      "link": "Từ kỹ thuật tự kiểm được xếp hạng chuyển sang đích người xem muốn biết: nội dung nào chưa nhớ; b05 giải đáp ngay.",
+      "why_visual": "Giữ sách mở đến khi đã nêu mục tiêu, tránh nêu giải pháp trước dẫn chứng/mục tiêu.",
+      "claim_source": "Mục tiêu/điều kiện biên tập, không claim thí nghiệm.",
+      "fx": {
+        "visual": "Dịch framing nhẹ vào cuốn sách; không zoom vào chữ.",
+        "word": "chưa nhớ",
+        "motion": {
+          "slug": "mmx-glide",
+          "source": "motionmaxxing",
+          "params": {
+            "duration_frames": 10,
+            "x_px": [
+              18,
+              0
+            ]
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "pop",
+          "atLine": 0,
+          "offset": null,
+          "word": "chưa nhớ",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            8,
+            10
+          ],
+          "at_estimate_s": 20.86,
+          "frame_estimate": 626,
+          "line_offset_estimate_s": 2.222222,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "whoosh-soft",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "word_count": 11,
+      "emphasis_focus": [
+        {
+          "vi": "chưa nhớ",
+          "caption_targets": [
+            {
+              "id": "b04-cap02",
+              "hl": [
+                4,
+                5
+              ],
+              "highlight_words": [
+                "haven’t",
+                "remembered?"
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    },
+    {
+      "id": "b05",
+      "label": "Giải pháp HTB / minh họa",
+      "role": "Gọi tên tự kiểm theo23.14 rồi làm đủ đóng→tự kể→mở dò trên một trang minh họa.",
+      "estimate_s": [
+        21.693333,
+        29.471111
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "remotion",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Thân thiện lúc nè, bình tĩnh làm mẫu, không ra lệnh trơ.",
+      "text": "Muốn biết, Cẩm nang sống đáng giá khuyên tự kiểm nè. Ví dụ đọc trang chi tiêu, bạn gấp lại, kể điều nhớ được, rồi mở ra dò.",
+      "marked_text": "Muốn biết, Cẩm nang sống đáng giá khuyên {nhấn: tự kiểm} nè. Ví dụ đọc trang chi tiêu, bạn gấp lại, kể điều nhớ được, rồi mở ra {nhấn: dò}.",
+      "phrases_plan": [
+        {
+          "t": "Muốn biết, Cẩm nang sống đáng giá khuyên {nhấn: tự kiểm} nè.",
+          "pause_status": "punctuation-led only; no audio"
+        },
+        {
+          "t": "Ví dụ đọc trang chi tiêu, bạn gấp lại, kể điều nhớ được, rồi mở ra {nhấn: dò}.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "To find out, the handbook recommends self-testing.",
+          "hl": [
+            6
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap01",
+          "vi_text": "Muốn biết, Cẩm nang sống đáng giá khuyên tự kiểm nè.",
+          "vi_word_range": [
+            0,
+            11
+          ],
+          "interval_estimate_s": [
+            21.693333,
+            24.748889
+          ]
+        },
+        {
+          "en": "For a sample page about spending,",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap02",
+          "vi_text": "Ví dụ đọc trang chi tiêu,",
+          "vi_word_range": [
+            11,
+            17
+          ],
+          "interval_estimate_s": [
+            24.748889,
+            26.415556
+          ]
+        },
+        {
+          "en": "close it and retell what you remember.",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap03",
+          "vi_text": "bạn gấp lại, kể điều nhớ được,",
+          "vi_word_range": [
+            17,
+            24
+          ],
+          "interval_estimate_s": [
+            26.415556,
+            28.36
+          ]
+        },
+        {
+          "en": "Then reopen it and check.",
+          "hl": [
+            4
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b05-cap04",
+          "vi_text": "rồi mở ra dò.",
+          "vi_word_range": [
+            24,
+            28
+          ],
+          "interval_estimate_s": [
+            28.36,
+            29.471111
+          ]
+        }
+      ],
+      "context": "Cuốn sách minh họa mở đúng trang chi tiêu; đây KHÔNG phải trang chụp từ cẩm nang.",
+      "shot": "Cận tay đóng sách rồi trung cảnh tự kể với bubble; cuối beat mở sách trở lại, chưa cho thấy khoản thiếu.",
+      "stage": {
+        "action": "Bìa khép bằng prop book; bubble chứa phần nhớ; sách mở cạnh bubble để bắt đầu so.",
+        "react": "Thân thiện lúc nè, bình tĩnh làm mẫu, không ra lệnh trơ."
+      },
+      "pause_plan": "Phẩy sau Muốn biết; chấm trước Ví dụ; chuỗi thao tác giữ chủ ngữ bạn. Không chẻ kể điều nhớ được.",
+      "link": "Muốn biết trả lời ngay câu hỏi b04; ví dụ minh họa thao tác, không giới thiệu nguyên nhân mới.",
+      "why_visual": "Vật book/bubble có sẵn làm rõ thao tác; chỉ đây là lời chỉ cách gỡ nên được mô tả thao tác trong thoại.",
+      "claim_source": "Deep d673dd9 dòng16–17: F5. Trang chi tiêu là mock của kênh.",
+      "fx": {
+        "visual": "Trạng thái book đóng/mở; không vẽ lại sách.",
+        "word": "tự kiểm",
+        "motion": {
+          "slug": "tdev-icon-swap",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 11
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "click",
+          "atLine": 0,
+          "offset": null,
+          "word": "tự kiểm",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            8,
+            10
+          ],
+          "at_estimate_s": 23.915555,
+          "frame_estimate": 717,
+          "line_offset_estimate_s": 2.222222,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "tick",
+          "atLine": 0,
+          "offset": null,
+          "word": "dò",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            27,
+            28
+          ],
+          "at_estimate_s": 29.193333,
+          "frame_estimate": 876,
+          "line_offset_estimate_s": 7.5,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "swish",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "word_count": 28,
+      "emphasis_focus": [
+        {
+          "vi": "tự kiểm",
+          "caption_targets": [
+            {
+              "id": "b05-cap01",
+              "hl": [
+                6
+              ],
+              "highlight_words": [
+                "self-testing."
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "dò",
+          "caption_targets": [
+            {
+              "id": "b05-cap04",
+              "hl": [
+                4
+              ],
+              "highlight_words": [
+                "check."
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses.",
+      "visual_object_plan_refs": [
+        "mock-label-b05"
+      ]
+    },
+    {
+      "id": "b06",
+      "label": "Payoff đối chiếu",
+      "role": "Đối chiếu đúng thứ vừa kể với đúng trang; chỉ bổ sung phần thiếu trong minh họa.",
+      "estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "hyperframes",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Nhận ra rồi bổ sung, không ăn mừng như giải quyết tài chính.",
+      "text": "Lúc dò, bạn nhận ra bài nhắc ghi cả tiền thuê nhà, còn phần kể chỉ có tiền ăn. À, bạn bổ sung khoản vừa sót đó.",
+      "marked_text": "Lúc dò, bạn nhận ra bài nhắc ghi cả {nhấn: tiền thuê nhà}, còn phần kể chỉ có tiền ăn. À, bạn {nhấn: bổ sung} khoản vừa sót đó.",
+      "phrases_plan": [
+        {
+          "t": "Lúc dò, bạn nhận ra bài nhắc ghi cả {nhấn: tiền thuê nhà}, còn phần kể chỉ có tiền ăn.",
+          "pause_status": "punctuation-led only; no audio"
+        },
+        {
+          "t": "À, bạn {nhấn: bổ sung} khoản vừa sót đó.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "When checking, you notice the page includes",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b06-cap01",
+          "vi_text": "Lúc dò, bạn nhận ra bài nhắc ghi cả",
+          "vi_word_range": [
+            0,
+            9
+          ],
+          "interval_estimate_s": [
+            29.471111,
+            31.971111
+          ]
+        },
+        {
+          "en": "recording rent, but you only mentioned food.",
+          "hl": [
+            1
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b06-cap02",
+          "vi_text": "tiền thuê nhà, còn phần kể chỉ có tiền ăn.",
+          "vi_word_range": [
+            9,
+            19
+          ],
+          "interval_estimate_s": [
+            31.971111,
+            34.748889
+          ]
+        },
+        {
+          "en": "Ah, you add the expense you missed.",
+          "hl": [
+            2
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b06-cap03",
+          "vi_text": "À, bạn bổ sung khoản vừa sót đó.",
+          "vi_word_range": [
+            19,
+            27
+          ],
+          "interval_estimate_s": [
+            34.748889,
+            36.971111
+          ]
+        }
+      ],
+      "context": "Hai bản: trang sách mock và phần tự kể; khoản thuê nhà chỉ được reveal lúc đối chiếu.",
+      "shot": "Top-down hai cột Source page / Your retelling. Nguồn có Food + Rent; phần kể ban đầu chỉ Food. Rent xuất hiện thêm trong phần kể ở câu2.",
+      "stage": {
+        "action": "Khối nhãn Rent ở bản gốc giữ nguyên; một bản label điền vào phần kể sau lời nhận ra, không gạch/vẽ nét.",
+        "react": "Nhận ra rồi bổ sung, không ăn mừng như giải quyết tài chính."
+      },
+      "pause_plan": "Phẩy sau Lúc dò và nhà; nghỉ chấm trước À. Không ngắt tiền thuê nhà.",
+      "link": "Lúc dò nhận bước cuối b05; phát hiện phần thiếu nhờ đặt hai bản cạnh nhau, không suy thành khó khăn thực hành.",
+      "why_visual": "Payoff là chỗ thiếu có tên trong phần kể, không kết quả người đó quản tiền tốt hơn. Không dùng disclaimer để chữa claim khác.",
+      "claim_source": "Kết quả trong mock: đối chiếu phần kể với trang; không đo/khẳng định hiệu quả ngoài đời.",
+      "fx": {
+        "visual": "Hai panel đối chiếu đã có, thêm nhãn bằng transform; không doodle.",
+        "word": "tiền thuê nhà",
+        "motion": {
+          "slug": "tdev-page",
+          "source": "transitions.dev",
+          "params": {
+            "duration_frames": 14,
+            "x_px": [
+              8,
+              0
+            ]
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "snap",
+          "atLine": 0,
+          "offset": null,
+          "word": "tiền thuê nhà",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            9,
+            12
+          ],
+          "at_estimate_s": 31.971111,
+          "frame_estimate": 959,
+          "line_offset_estimate_s": 2.5,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        },
+        {
+          "name": "ding",
+          "atLine": 0,
+          "offset": null,
+          "word": "bổ sung",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            21,
+            23
+          ],
+          "at_estimate_s": 35.304445,
+          "frame_estimate": 1059,
+          "line_offset_estimate_s": 5.833334,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "whoosh-soft",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "hits": [
+        {
+          "id": "b06-h1",
+          "f": null,
+          "sfx": "snap",
+          "word": "tiền thuê nhà",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 31.971111,
+          "frame_estimate": 959,
+          "word_range": [
+            9,
+            12
+          ]
+        },
+        {
+          "id": "b06-h2",
+          "f": null,
+          "sfx": "ding",
+          "word": "bổ sung",
+          "timing_status": "ESTIMATE ONLY; not voice-aligned",
+          "at_estimate_s": 35.304445,
+          "frame_estimate": 1059,
+          "word_range": [
+            21,
+            23
+          ]
+        }
+      ],
+      "word_count": 27,
+      "emphasis_focus": [
+        {
+          "vi": "tiền thuê nhà",
+          "caption_targets": [
+            {
+              "id": "b06-cap02",
+              "hl": [
+                1
+              ],
+              "highlight_words": [
+                "rent,"
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "bổ sung",
+          "caption_targets": [
+            {
+              "id": "b06-cap03",
+              "hl": [
+                2
+              ],
+              "highlight_words": [
+                "add"
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses.",
+      "visual_object_plan_refs": [
+        "comparison-title-text",
+        "mock-label-b06",
+        "source-header",
+        "retelling-header",
+        "source-food",
+        "retelling-food",
+        "source-rent",
+        "retelling-rent"
+      ]
+    },
+    {
+      "id": "b07",
+      "label": "CTA / loop",
+      "role": "Điều kiện mềm, một yêu cầu comment một từ; nhắc thiếu để đóng vòng hook.",
+      "estimate_s": [
+        36.971111,
+        42.804444
+      ],
+      "duration_estimate_only": true,
+      "engine_plan": "remotion",
+      "speaker": "hiep",
+      "voice_plan": "F5 · Thái Sơn, speed1.0; after Chốt only",
+      "emotion": "Mời chia sẻ, không thúc ép, nha đọc thường.",
+      "text": "Giả sử kể lại trang bạn vừa đọc, bạn thấy đủ hay thiếu? Bình luận một chữ đủ hoặc thiếu nha.",
+      "marked_text": "Giả sử kể lại trang bạn vừa đọc, bạn thấy {nhấn: đủ hay thiếu}? Bình luận một chữ {nhấn: đủ hoặc thiếu} nha.",
+      "phrases_plan": [
+        {
+          "t": "Giả sử kể lại trang bạn vừa đọc, bạn thấy {nhấn: đủ hay thiếu}?",
+          "pause_status": "punctuation-led only; no audio"
+        },
+        {
+          "t": "Bình luận một chữ {nhấn: đủ hoặc thiếu} nha.",
+          "pause_status": "punctuation-led only; no audio"
+        }
+      ],
+      "captions": [
+        {
+          "en": "Say you retold the page you just read.",
+          "hl": [],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b07-cap01",
+          "vi_text": "Giả sử kể lại trang bạn vừa đọc,",
+          "vi_word_range": [
+            0,
+            8
+          ],
+          "interval_estimate_s": [
+            36.971111,
+            39.193333
+          ]
+        },
+        {
+          "en": "Would it be complete or missing something?",
+          "hl": [
+            3,
+            5
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b07-cap02",
+          "vi_text": "bạn thấy đủ hay thiếu?",
+          "vi_word_range": [
+            8,
+            13
+          ],
+          "interval_estimate_s": [
+            39.193333,
+            40.582222
+          ]
+        },
+        {
+          "en": "Comment one word: complete or missing.",
+          "hl": [
+            3,
+            5
+          ],
+          "timing": "ESTIMATE; not real voice alignment",
+          "id": "b07-cap03",
+          "vi_text": "Bình luận một chữ đủ hoặc thiếu nha.",
+          "vi_word_range": [
+            13,
+            21
+          ],
+          "interval_estimate_s": [
+            40.582222,
+            42.804444
+          ]
+        }
+      ],
+      "context": "Cùng người đọc hướng mắt về camera; không giả đã áp dụng thành công ngoài đời.",
+      "shot": "Trung cảnh Thầy và ô comment; hai lựa chọn Complete / Missing. Không thêm nút follow/like.",
+      "stage": {
+        "action": "Chibi nhìn người xem, bàn tay mở nhẹ về khung bình luận; khung trượt ra để loop.",
+        "react": "Mời chia sẻ, không thúc ép, nha đọc thường."
+      },
+      "pause_plan": "Phẩy sau đọc; nghỉ câu hỏi; nha đọc thường cuối CTA. Không tạo file delivery audio.",
+      "link": "Giả sử gọi lại phép tự kể trên một trang; đủ/thiếu nối payoff và từ thiếu của hook. Không yêu cầu làm test rồi lại comment như hai CTA.",
+      "why_visual": "EN giữ Say… và Would…; comment một trong hai từ, không đổi giả định thành lệnh kiểm tra.",
+      "claim_source": "Không claim hiệu quả hoặc phát hành clip04.",
+      "fx": {
+        "visual": "Ô comment hạ cánh, không overshoot/spring.",
+        "word": "đủ hay thiếu",
+        "motion": {
+          "slug": "mmx-snap-settle",
+          "source": "motionmaxxing",
+          "params": {
+            "duration_frames": 11,
+            "scale": [
+              0.96,
+              1
+            ]
+          }
+        },
+        "accent": null,
+        "doodles": []
+      },
+      "sfx": [
+        {
+          "name": "pop",
+          "atLine": 0,
+          "offset": null,
+          "word": "đủ hay thiếu",
+          "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+          "frame": null,
+          "word_range": [
+            10,
+            13
+          ],
+          "at_estimate_s": 39.748889,
+          "frame_estimate": 1192,
+          "line_offset_estimate_s": 2.777778,
+          "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+        }
+      ],
+      "transition_in": {
+        "kind": "cut-on-motion",
+        "sfx": "whoosh-soft",
+        "lead_s": 0.12
+      },
+      "status": "DRAFT; read-aloud/stranger/timing CHƯA KIỂM",
+      "word_count": 21,
+      "emphasis_focus": [
+        {
+          "vi": "đủ hay thiếu",
+          "caption_targets": [
+            {
+              "id": "b07-cap02",
+              "hl": [
+                3,
+                5
+              ],
+              "highlight_words": [
+                "complete",
+                "missing"
+              ]
+            }
+          ]
+        },
+        {
+          "vi": "đủ hoặc thiếu",
+          "caption_targets": [
+            {
+              "id": "b07-cap03",
+              "hl": [
+                3,
+                5
+              ],
+              "highlight_words": [
+                "complete",
+                "missing."
+              ]
+            }
+          ]
+        }
+      ],
+      "emphasis_reason": "Only meaning-bearing targets above; unaccented lead-in chunks intentionally hl=[]. Multiple indexes within one semantic focus are not extra spoken stresses."
+    }
+  ],
+  "end_card": {
+    "id": "end",
+    "estimate_s": [
+      42.804444,
+      45.804444
+    ],
+    "spoken": false,
+    "speaker": null,
+    "text_lines": [
+      "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+      "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+      "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+      "Dunlosky et al. (2013) · Trend context: Znews 05/11/2026"
+    ],
+    "fx": {
+      "visual": "Static source card; no doodle; one entrance only",
+      "word": null,
+      "motion": "mmx-soft-inout",
+      "duration_frames": 9
+    },
+    "transition_in": {
+      "kind": "cut",
+      "sfx": "whoosh-soft",
+      "lead_s": 0.12
+    },
+    "readability": "CHƯA KIỂM; existing3s estimate unchanged, including conditional extra line. Must assess true image/reading time later; keep full credit/disclosure in post when applicable. No measured timing or claim it all fits/reads in3s.",
+    "conditional_text_lines": [
+      {
+        "id": "ai-voice-disclosure",
+        "text": "Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS).",
+        "if": "publication_plan.ai_voice_used == true",
+        "include_now": false,
+        "spoken": false,
+        "activation_status": "Future conditional; no voice generated now"
+      }
+    ],
+    "text_lines_if_ai_voice_used": [
+      "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+      "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+      "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+      "Dunlosky et al. (2013) · Trend context: Znews 05/11/2026",
+      "Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS)."
+    ],
+    "text_lines_if_no_ai_voice_used": [
+      "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+      "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+      "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+      "Dunlosky et al. (2013) · Trend context: Znews 05/11/2026"
+    ],
+    "display_object_refs": [
+      "credit-row-1",
+      "credit-row-2",
+      "credit-row-3",
+      "credit-row-4",
+      "credit-row-5"
+    ]
+  },
+  "engagement": [
+    {
+      "type": "comment-challenge",
+      "beat": "b07",
+      "text": "Bình luận một chữ đủ hoặc thiếu nha.",
+      "one_request": true
+    },
+    {
+      "type": "loop",
+      "beat": "b07",
+      "text": "đủ hoặc thiếu",
+      "hook_word": "thiếu"
+    },
+    {
+      "type": "relatable-question",
+      "beat": "b04",
+      "text": "Bạn muốn biết chỗ nào trong trang sách chưa nhớ hông?"
+    }
+  ],
+  "pinned_comment_plan": "Giả sử kể lại trang vừa đọc, bạn chọn đủ hay thiếu? “Thiếu” chỉ nói phần kể so với trang sách, không đánh giá khả năng của bạn.",
+  "transition_sfx": {
+    "part": "whoosh-soft",
+    "scene": "swish"
+  },
+  "ambience": "existing synthesized brown-noise bed throughout; not created/mixed now",
+  "music": false,
+  "cover": {
+    "direction": "a",
+    "theme": "dark",
+    "series": "STUDY UTILITY",
+    "ep": 5,
+    "hero": [
+      "REREAD: LOW",
+      "SELF-TEST: HIGH"
+    ],
+    "strike": null,
+    "accent": 1,
+    "expression": "confused",
+    "action": "thinking",
+    "emote": "!",
+    "tilt": -5,
+    "template": "video-engine/src/composition/Cover.tsx",
+    "rendered": false,
+    "note": "Plan-update1: no strike/cross/X/ban on rereading; high/low STUDY UTILITY only. Existing A/dark/strict allocations/rig transform retained. Null strike intent and text sizing need adapter/schema/preview verification; NOT runnable native props.",
+    "illustration_transform_plan": {
+      "translate_x_px": -40,
+      "translate_y_px": -70,
+      "applies_to": [
+        "halo",
+        "chibi",
+        "emote"
+      ],
+      "keep_unchanged": [
+        "direction A",
+        "dark theme",
+        "ep",
+        "accent1",
+        "expression/action/tilt",
+        "text slot allocations",
+        "logo slot"
+      ],
+      "purpose": "Fix right30/bottom60 overshoot with10px right/bottom breathing room, without redesign",
+      "native_template_support": false,
+      "status": "PLANNING override; current Cover.tsx fixed positions need adapter mapping later. No engine code/render/schema validation here."
+    },
+    "semantic_plan": {
+      "meaning": "Dunlosky2013 high/low utility grouping for learning; not zero value, no ban on rereading and not a pleasure-vs-learning dichotomy.",
+      "no_strike": true,
+      "no_cross_or_red_X": true,
+      "no_zero_percent_or_rank_numbers": true,
+      "native_support_verified": false,
+      "glyph_readability": "CHƯA KIỂM; no image",
+      "cover_text_character_count_including_ep": 40
+    }
+  },
+  "assets_policy": {
+    "reuse": [
+      "book",
+      "sheet",
+      "pen",
+      "words",
+      "sign",
+      "rig hiep"
+    ],
+    "doodles": false,
+    "new_assets_created": false,
+    "sources": "assets/sfx/SOURCES.md14–16; only existing synthesis names",
+    "effects_log_updated": false
+  },
+  "publication_plan": {
+    "credit": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+    "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+    "license": "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+    "ai_toggle": "ON only when AI voice exists at publish",
+    "ai_disclosure": "Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS).",
+    "posted": false,
+    "ai_voice_used": null,
+    "current_artifact_has_audio": false,
+    "ai_disclosure_condition": "Include disclosure and AI toggle only if actual ai_voice_used == true at future publication; re-evaluate after voice production, no present audio claim."
+  },
+  "gates": {
+    "read_aloud": "CHƯA KIỂM",
+    "stranger": "CHƯA KIỂM",
+    "timing": "CHƯA KIỂM",
+    "L090": "Registry lookup FAIL remains from independent r11.4 checker; scoped Social provenance PASS does not close registry/storage.",
+    "Deep_new_text": "Scoped PASS: frozen script seven beats/23 captions per factcheck15:28:05 Asia/Saigon; not approval of new visuals or overall package",
+    "Social_new_wording": "Scoped trend/pain PASS reported15:26 Asia/Saigon via user/Reviewer handoff; not overall/craft/efficacy PASS",
+    "Reviewer": "r11.4 report: no mandatory main-wording fault; text/plan may continue, not Chốt. New plan-update1 visuals not independently reviewed",
+    "render": "NOT AUTHORIZED; no Chốt",
+    "preview_gate1": "CHƯA CHUẨN BỊ ẢNH",
+    "layout_arithmetic": "Plan-update1 numeric validation only; no actual glyph/DOM/frame/image proof",
+    "schema": "CHƯA KIỂM production schema; explicit plan map only",
+    "callback04": "NOT A BLOCKER for actual frozen script: no release/spoken/visual claim. Real release status unverified but no dependency is asserted.",
+    "storage": "OPEN: new scratch plans/registry archive require sanctioned sync; no repo edits",
+    "new_visual_plan": "OPEN: editorial label visibility, fixed source vs retelling Rent, non-strike cover and conditional disclosure need future adapter + visual review"
+  },
+  "revisions": [
+    {
+      "date": "2026-11-07",
+      "note": "Reviewer14:50 selectsB for full; clause-deletion extra criterion withdrawn. Social14:51 independent pain supplied. No new research."
+    },
+    {
+      "date": "2026-11-07",
+      "note": "r11.3 fixes Reviewer r11.2 F1/F2 hook target, F3 semantic highlight, F4 mapping/bounds and F5 preview disclosure. ContextB/method/ranking/CTA preserved; no new research/engine changes."
+    },
+    {
+      "date": "2026-11-07",
+      "note": "r11.4 = patch2 of B per Reviewer r11.3. Only3 scoped fixes; r11.3 untouched. No rewrite/research/code/image/audio/render/message."
+    },
+    {
+      "date": "2026-11-07",
+      "note": "plan-update1: post-source-check visual mapping only; original r11.4 files/script metadata unchanged. No new wording patch/research/render/audio/images/messages."
+    }
+  ],
+  "timing_model": {
+    "status": "ESTIMATE ONLY — CHƯA KIỂM timing, not word timestamps",
+    "method": "budget each VI caption slice at 3.6 whitespace words/s, minimum1.1s of planned caption time; voice onset0.06s only in b01. This is a provisional scheduling budget, NOT instructions to split/slow audio. Real voice remains one continuous line across hook cuts. Replace all estimated windows after Chốt/real voice.",
+    "caption_intervals": "half-open [start,end); global caption layer spans cuts; no two caption segments simultaneously",
+    "units": "seconds absolute from TikTok hook frame0; frame_estimate=round(seconds*30), never f measured",
+    "tts_warning": "VI slices bind translation only, NOT F5 generation units. No TTS cuts except punctuation, after Chốt."
+  },
+  "caption_segments_plan": [
+    {
+      "id": "b01-cap01",
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "caption_ref": "beats[0].captions[0]",
+      "en": "You read to learn,",
+      "hl": [],
+      "vi_word_range": [
+        0,
+        4
+      ],
+      "interval_estimate_s": [
+        0.06,
+        1.171111
+      ],
+      "scene_refs": [
+        "b01-h1",
+        "b01-h2"
+      ]
+    },
+    {
+      "id": "b01-cap02",
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "caption_ref": "beats[0].captions[1]",
+      "en": "but can’t even tell what you forgot.",
+      "hl": [
+        6
+      ],
+      "vi_word_range": [
+        4,
+        10
+      ],
+      "interval_estimate_s": [
+        1.171111,
+        2.837778
+      ],
+      "scene_refs": [
+        "b01-h2",
+        "b01-h3"
+      ]
+    },
+    {
+      "id": "b01-cap03",
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "caption_ref": "beats[0].captions[2]",
+      "en": "You still have a way to spot omissions,",
+      "hl": [
+        7
+      ],
+      "vi_word_range": [
+        10,
+        18
+      ],
+      "interval_estimate_s": [
+        2.837778,
+        5.06
+      ],
+      "scene_refs": [
+        "b01-h3"
+      ]
+    },
+    {
+      "id": "b01-cap04",
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "caption_ref": "beats[0].captions[3]",
+      "en": "instead of only knowing you forgot.",
+      "hl": [],
+      "vi_word_range": [
+        18,
+        24
+      ],
+      "interval_estimate_s": [
+        5.06,
+        6.726667
+      ],
+      "scene_refs": [
+        "b01-h3"
+      ]
+    },
+    {
+      "id": "b02-cap01",
+      "beat": "b02",
+      "voice_line_ref": "vi-b02",
+      "caption_ref": "beats[1].captions[0]",
+      "en": "Korea’s text hip links books with lifestyle.",
+      "hl": [],
+      "vi_word_range": [
+        0,
+        10
+      ],
+      "interval_estimate_s": [
+        6.726667,
+        9.504444
+      ],
+      "scene_refs": [
+        "b02-s1"
+      ]
+    },
+    {
+      "id": "b02-cap02",
+      "beat": "b02",
+      "voice_line_ref": "vi-b02",
+      "caption_ref": "beats[1].captions[1]",
+      "en": "You can enjoy reading",
+      "hl": [
+        2
+      ],
+      "vi_word_range": [
+        10,
+        16
+      ],
+      "interval_estimate_s": [
+        9.504444,
+        11.171111
+      ],
+      "scene_refs": [
+        "b02-s1"
+      ]
+    },
+    {
+      "id": "b02-cap03",
+      "beat": "b02",
+      "voice_line_ref": "vi-b02",
+      "caption_ref": "beats[1].captions[2]",
+      "en": "and learn at the same time.",
+      "hl": [
+        1
+      ],
+      "vi_word_range": [
+        16,
+        18
+      ],
+      "interval_estimate_s": [
+        11.171111,
+        12.271111
+      ],
+      "scene_refs": [
+        "b02-s1"
+      ]
+    },
+    {
+      "id": "b03-cap01",
+      "beat": "b03",
+      "voice_line_ref": "vi-b03",
+      "caption_ref": "beats[2].captions[0]",
+      "en": "As for learning methods,",
+      "hl": [],
+      "vi_word_range": [
+        0,
+        3
+      ],
+      "interval_estimate_s": [
+        12.271111,
+        13.371111
+      ],
+      "scene_refs": [
+        "b03-e1"
+      ]
+    },
+    {
+      "id": "b03-cap02",
+      "beat": "b03",
+      "voice_line_ref": "vi-b03",
+      "caption_ref": "beats[2].captions[1]",
+      "en": "Dunlosky’s team rated ten techniques in 2013.",
+      "hl": [],
+      "vi_word_range": [
+        3,
+        12
+      ],
+      "interval_estimate_s": [
+        13.371111,
+        15.871111
+      ],
+      "scene_refs": [
+        "b03-e1"
+      ]
+    },
+    {
+      "id": "b03-cap03",
+      "beat": "b03",
+      "voice_line_ref": "vi-b03",
+      "caption_ref": "beats[2].captions[2]",
+      "en": "Practice testing: high utility.",
+      "hl": [
+        0,
+        1
+      ],
+      "vi_word_range": [
+        12,
+        18
+      ],
+      "interval_estimate_s": [
+        15.871111,
+        17.537778
+      ],
+      "scene_refs": [
+        "b03-e1"
+      ]
+    },
+    {
+      "id": "b03-cap04",
+      "beat": "b03",
+      "voice_line_ref": "vi-b03",
+      "caption_ref": "beats[2].captions[3]",
+      "en": "Rereading: low utility.",
+      "hl": [
+        0,
+        1
+      ],
+      "vi_word_range": [
+        18,
+        21
+      ],
+      "interval_estimate_s": [
+        17.537778,
+        18.637778
+      ],
+      "scene_refs": [
+        "b03-e1"
+      ]
+    },
+    {
+      "id": "b04-cap01",
+      "beat": "b04",
+      "voice_line_ref": "vi-b04",
+      "caption_ref": "beats[3].captions[0]",
+      "en": "Want to know which part",
+      "hl": [],
+      "vi_word_range": [
+        0,
+        5
+      ],
+      "interval_estimate_s": [
+        18.637778,
+        20.026667
+      ],
+      "scene_refs": [
+        "b04-s1"
+      ]
+    },
+    {
+      "id": "b04-cap02",
+      "beat": "b04",
+      "voice_line_ref": "vi-b04",
+      "caption_ref": "beats[3].captions[1]",
+      "en": "of that page you haven’t remembered?",
+      "hl": [
+        4,
+        5
+      ],
+      "vi_word_range": [
+        5,
+        11
+      ],
+      "interval_estimate_s": [
+        20.026667,
+        21.693333
+      ],
+      "scene_refs": [
+        "b04-s1"
+      ]
+    },
+    {
+      "id": "b05-cap01",
+      "beat": "b05",
+      "voice_line_ref": "vi-b05",
+      "caption_ref": "beats[4].captions[0]",
+      "en": "To find out, the handbook recommends self-testing.",
+      "hl": [
+        6
+      ],
+      "vi_word_range": [
+        0,
+        11
+      ],
+      "interval_estimate_s": [
+        21.693333,
+        24.748889
+      ],
+      "scene_refs": [
+        "b05-s1"
+      ]
+    },
+    {
+      "id": "b05-cap02",
+      "beat": "b05",
+      "voice_line_ref": "vi-b05",
+      "caption_ref": "beats[4].captions[1]",
+      "en": "For a sample page about spending,",
+      "hl": [],
+      "vi_word_range": [
+        11,
+        17
+      ],
+      "interval_estimate_s": [
+        24.748889,
+        26.415556
+      ],
+      "scene_refs": [
+        "b05-s1"
+      ]
+    },
+    {
+      "id": "b05-cap03",
+      "beat": "b05",
+      "voice_line_ref": "vi-b05",
+      "caption_ref": "beats[4].captions[2]",
+      "en": "close it and retell what you remember.",
+      "hl": [],
+      "vi_word_range": [
+        17,
+        24
+      ],
+      "interval_estimate_s": [
+        26.415556,
+        28.36
+      ],
+      "scene_refs": [
+        "b05-s1"
+      ]
+    },
+    {
+      "id": "b05-cap04",
+      "beat": "b05",
+      "voice_line_ref": "vi-b05",
+      "caption_ref": "beats[4].captions[3]",
+      "en": "Then reopen it and check.",
+      "hl": [
+        4
+      ],
+      "vi_word_range": [
+        24,
+        28
+      ],
+      "interval_estimate_s": [
+        28.36,
+        29.471111
+      ],
+      "scene_refs": [
+        "b05-s1"
+      ]
+    },
+    {
+      "id": "b06-cap01",
+      "beat": "b06",
+      "voice_line_ref": "vi-b06",
+      "caption_ref": "beats[5].captions[0]",
+      "en": "When checking, you notice the page includes",
+      "hl": [],
+      "vi_word_range": [
+        0,
+        9
+      ],
+      "interval_estimate_s": [
+        29.471111,
+        31.971111
+      ],
+      "scene_refs": [
+        "b06-e1"
+      ]
+    },
+    {
+      "id": "b06-cap02",
+      "beat": "b06",
+      "voice_line_ref": "vi-b06",
+      "caption_ref": "beats[5].captions[1]",
+      "en": "recording rent, but you only mentioned food.",
+      "hl": [
+        1
+      ],
+      "vi_word_range": [
+        9,
+        19
+      ],
+      "interval_estimate_s": [
+        31.971111,
+        34.748889
+      ],
+      "scene_refs": [
+        "b06-e1"
+      ]
+    },
+    {
+      "id": "b06-cap03",
+      "beat": "b06",
+      "voice_line_ref": "vi-b06",
+      "caption_ref": "beats[5].captions[2]",
+      "en": "Ah, you add the expense you missed.",
+      "hl": [
+        2
+      ],
+      "vi_word_range": [
+        19,
+        27
+      ],
+      "interval_estimate_s": [
+        34.748889,
+        36.971111
+      ],
+      "scene_refs": [
+        "b06-e1"
+      ]
+    },
+    {
+      "id": "b07-cap01",
+      "beat": "b07",
+      "voice_line_ref": "vi-b07",
+      "caption_ref": "beats[6].captions[0]",
+      "en": "Say you retold the page you just read.",
+      "hl": [],
+      "vi_word_range": [
+        0,
+        8
+      ],
+      "interval_estimate_s": [
+        36.971111,
+        39.193333
+      ],
+      "scene_refs": [
+        "b07-s1"
+      ]
+    },
+    {
+      "id": "b07-cap02",
+      "beat": "b07",
+      "voice_line_ref": "vi-b07",
+      "caption_ref": "beats[6].captions[1]",
+      "en": "Would it be complete or missing something?",
+      "hl": [
+        3,
+        5
+      ],
+      "vi_word_range": [
+        8,
+        13
+      ],
+      "interval_estimate_s": [
+        39.193333,
+        40.582222
+      ],
+      "scene_refs": [
+        "b07-s1"
+      ]
+    },
+    {
+      "id": "b07-cap03",
+      "beat": "b07",
+      "voice_line_ref": "vi-b07",
+      "caption_ref": "beats[6].captions[2]",
+      "en": "Comment one word: complete or missing.",
+      "hl": [
+        3,
+        5
+      ],
+      "vi_word_range": [
+        13,
+        21
+      ],
+      "interval_estimate_s": [
+        40.582222,
+        42.804444
+      ],
+      "scene_refs": [
+        "b07-s1"
+      ]
+    }
+  ],
+  "voice_lines_plan": [
+    {
+      "id": "vi-b01",
+      "beat": "b01",
+      "text_ref": "beats[0].text",
+      "marked_text_ref": "beats[0].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        0,
+        6.726667
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    },
+    {
+      "id": "vi-b02",
+      "beat": "b02",
+      "text_ref": "beats[1].text",
+      "marked_text_ref": "beats[1].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        6.726667,
+        12.271111
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    },
+    {
+      "id": "vi-b03",
+      "beat": "b03",
+      "text_ref": "beats[2].text",
+      "marked_text_ref": "beats[2].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        12.271111,
+        18.637778
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    },
+    {
+      "id": "vi-b04",
+      "beat": "b04",
+      "text_ref": "beats[3].text",
+      "marked_text_ref": "beats[3].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        18.637778,
+        21.693333
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    },
+    {
+      "id": "vi-b05",
+      "beat": "b05",
+      "text_ref": "beats[4].text",
+      "marked_text_ref": "beats[4].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        21.693333,
+        29.471111
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    },
+    {
+      "id": "vi-b06",
+      "beat": "b06",
+      "text_ref": "beats[5].text",
+      "marked_text_ref": "beats[5].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    },
+    {
+      "id": "vi-b07",
+      "beat": "b07",
+      "text_ref": "beats[6].text",
+      "marked_text_ref": "beats[6].marked_text",
+      "speaker": "hiep",
+      "interval_estimate_s": [
+        36.971111,
+        42.804444
+      ],
+      "continuous_across_scenes": true,
+      "audio_created": false,
+      "word_timestamps": null
+    }
+  ],
+  "layout_plans": {
+    "hook-wide": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hook-title",
+          "bbox": [
+            180,
+            170,
+            780,
+            150
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "hook-reaction": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hook-title",
+          "bbox": [
+            180,
+            170,
+            780,
+            150
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            211,
+            390,
+            648,
+            700
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              60
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "reading-context": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "context-panel",
+          "bbox": [
+            180,
+            180,
+            780,
+            130
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "reading-goal": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              18
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "reading-method": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "same-book",
+          "bbox": [
+            140,
+            800,
+            720,
+            639
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection",
+          "existing_prop_binding_plan": {
+            "kind": "book",
+            "x": 500,
+            "y": 1119.5,
+            "s": 1.35,
+            "rot": 0,
+            "local_bounds": [
+              -240,
+              -210,
+              240,
+              210
+            ],
+            "padding": 36,
+            "source": "layout.ts18/48–50",
+            "actual_rendered": false
+          }
+        },
+        {
+          "id": "mock-label-b05",
+          "bbox": [
+            110,
+            750,
+            860,
+            44
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED label allocation only; glyph/wrap not measured"
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "ranking": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "ranking-heading",
+          "bbox": [
+            100,
+            220,
+            880,
+            100
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "ranking-objects",
+          "bbox": [
+            90,
+            350,
+            900,
+            1020
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              16
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "comparison": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "comparison-heading",
+          "bbox": [
+            100,
+            220,
+            880,
+            100
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "source-retelling",
+          "bbox": [
+            90,
+            350,
+            900,
+            1020
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              8
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "cta": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "vi-bubble",
+          "bbox": [
+            100,
+            350,
+            500,
+            380
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "hiep-rig",
+          "bbox": [
+            660,
+            390,
+            300,
+            350
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "comment-options",
+          "bbox": [
+            100,
+            820,
+            760,
+            340
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              0.96,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": true,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    },
+    "credit": {
+      "objects": [
+        {
+          "id": "logo",
+          "bbox": [
+            60,
+            80,
+            100,
+            70
+          ],
+          "zone": "logo",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        },
+        {
+          "id": "credit-block",
+          "bbox": [
+            70,
+            240,
+            940,
+            1140
+          ],
+          "zone": "content",
+          "motion_envelope": {
+            "x": [
+              0,
+              0
+            ],
+            "y": [
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1
+            ]
+          },
+          "bbox_status": "PLANNED allocation, not actual renderer projection"
+        }
+      ],
+      "bubble": false,
+      "camera_push": 0,
+      "box_scope": "Top-level non-overlapping allocations only. Props/rig strokes, bubble tail and actual camera transform MUST be measured later; not renderer layoutCheck.",
+      "bubble_policy": "Where true, VI display by punctuation-led phrase, font44 target; measured fit pending. Entire beat must not be pasted into one fixed bubble."
+    }
+  },
+  "layout_port_requirements": [
+    {
+      "item": "Hook title target y170 (inside content SAFE)",
+      "actual_default": "SceneRenderer standard narration top66; no claim target already implemented",
+      "status": "OPEN adapter/template mapping; cannot certify actual layout from plan"
+    },
+    {
+      "item": "All fonts BVP local",
+      "actual_default": "Caption.tsx uses EN_FONT; this revision does not change fonts.ts/engine",
+      "status": "OPEN production font audit; no engine changes"
+    },
+    {
+      "item": "Caption height <= declared reserve; HF may split <=4 words",
+      "actual_default": "Current wrap/HL padding/MAXW4 runtime can change real bounds/timing",
+      "status": "OPEN actual text measurement, subgroup timing and still QA; do not discard approved caption chunks"
+    },
+    {
+      "item": "Reels/Shorts layout",
+      "actual_default": "reels captions top1000/narrow; different from this standard TikTok plan",
+      "status": "NOT MAPPED/NOT VERIFIED here; separate future layout, not safe by inheritance"
+    }
+  ],
+  "scene_mapping": [
+    {
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "layout_ref": "hook-wide",
+      "interval_estimate_s": [
+        0,
+        0.8
+      ],
+      "caption_segment_refs": [
+        "b01-cap01"
+      ],
+      "unit_id": "b01-h1"
+    },
+    {
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "layout_ref": "hook-reaction",
+      "interval_estimate_s": [
+        0.8,
+        2.0
+      ],
+      "caption_segment_refs": [
+        "b01-cap01",
+        "b01-cap02"
+      ],
+      "unit_id": "b01-h2"
+    },
+    {
+      "beat": "b01",
+      "voice_line_ref": "vi-b01",
+      "layout_ref": "hook-wide",
+      "interval_estimate_s": [
+        2.0,
+        6.726667
+      ],
+      "caption_segment_refs": [
+        "b01-cap02",
+        "b01-cap03",
+        "b01-cap04"
+      ],
+      "unit_id": "b01-h3"
+    },
+    {
+      "beat": "b02",
+      "voice_line_ref": "vi-b02",
+      "layout_ref": "reading-context",
+      "interval_estimate_s": [
+        6.726667,
+        12.271111
+      ],
+      "caption_segment_refs": [
+        "b02-cap01",
+        "b02-cap02",
+        "b02-cap03"
+      ],
+      "unit_id": "b02-s1"
+    },
+    {
+      "beat": "b03",
+      "voice_line_ref": "vi-b03",
+      "layout_ref": "ranking",
+      "interval_estimate_s": [
+        12.271111,
+        18.637778
+      ],
+      "caption_segment_refs": [
+        "b03-cap01",
+        "b03-cap02",
+        "b03-cap03",
+        "b03-cap04"
+      ],
+      "unit_id": "b03-e1"
+    },
+    {
+      "beat": "b04",
+      "voice_line_ref": "vi-b04",
+      "layout_ref": "reading-goal",
+      "interval_estimate_s": [
+        18.637778,
+        21.693333
+      ],
+      "caption_segment_refs": [
+        "b04-cap01",
+        "b04-cap02"
+      ],
+      "unit_id": "b04-s1"
+    },
+    {
+      "beat": "b05",
+      "voice_line_ref": "vi-b05",
+      "layout_ref": "reading-method",
+      "interval_estimate_s": [
+        21.693333,
+        29.471111
+      ],
+      "caption_segment_refs": [
+        "b05-cap01",
+        "b05-cap02",
+        "b05-cap03",
+        "b05-cap04"
+      ],
+      "unit_id": "b05-s1",
+      "visual_object_plan_refs": [
+        "mock-label-b05"
+      ]
+    },
+    {
+      "beat": "b06",
+      "voice_line_ref": "vi-b06",
+      "layout_ref": "comparison",
+      "interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "caption_segment_refs": [
+        "b06-cap01",
+        "b06-cap02",
+        "b06-cap03"
+      ],
+      "unit_id": "b06-e1",
+      "visual_object_plan_refs": [
+        "comparison-title-text",
+        "mock-label-b06",
+        "source-header",
+        "retelling-header",
+        "source-food",
+        "retelling-food",
+        "source-rent",
+        "retelling-rent"
+      ]
+    },
+    {
+      "beat": "b07",
+      "voice_line_ref": "vi-b07",
+      "layout_ref": "cta",
+      "interval_estimate_s": [
+        36.971111,
+        42.804444
+      ],
+      "caption_segment_refs": [
+        "b07-cap01",
+        "b07-cap02",
+        "b07-cap03"
+      ],
+      "unit_id": "b07-s1"
+    },
+    {
+      "beat": "end",
+      "voice_line_ref": null,
+      "layout_ref": "credit",
+      "interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "caption_segment_refs": [],
+      "unit_id": "end-s1",
+      "visual_object_plan_refs": [
+        "credit-row-1",
+        "credit-row-2",
+        "credit-row-3",
+        "credit-row-4",
+        "credit-row-5"
+      ]
+    }
+  ],
+  "parts_plan": [
+    {
+      "id": "A",
+      "engine": "remotion",
+      "interval_estimate_s": [
+        0,
+        12.271111
+      ],
+      "scenes": [
+        {
+          "id": "b01-h1",
+          "beat": "b01",
+          "part": "hook",
+          "interval_estimate_s": [
+            0,
+            0.8
+          ],
+          "voice_line_ref": "vi-b01",
+          "voice_window_local_s_estimate": [
+            0,
+            0.8
+          ],
+          "narration": {
+            "text": "FORGOT... WHAT?",
+            "start_estimate_s": 0,
+            "end_estimate_s": 0.8
+          },
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b01-cap01"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "hook-wide",
+          "transition": "cut",
+          "fx": {
+            "visual": "Whip vào phản ứng khựng khi không gọi tên được nội dung quên; cùng rig/sách, không tạo vật mới.",
+            "word": "quên gì",
+            "motion": {
+              "slug": "mmx-whip",
+              "source": "motionmaxxing",
+              "params": {
+                "duration_frames": 13,
+                "x_px": [
+                  60,
+                  0
+                ]
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "narration_layer_ref": "hook-title"
+        },
+        {
+          "id": "b01-h2",
+          "beat": "b01",
+          "part": "hook",
+          "interval_estimate_s": [
+            0.8,
+            2.0
+          ],
+          "voice_line_ref": "vi-b01",
+          "voice_window_local_s_estimate": [
+            0.8,
+            2.0
+          ],
+          "narration": null,
+          "inherit_narration_from": "b01-h1",
+          "caption_segment_refs": [
+            "b01-cap01",
+            "b01-cap02"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "hook-reaction",
+          "transition": "cut",
+          "fx": {
+            "visual": "Whip vào phản ứng khựng khi không gọi tên được nội dung quên; cùng rig/sách, không tạo vật mới.",
+            "word": "quên gì",
+            "motion": {
+              "slug": "mmx-whip",
+              "source": "motionmaxxing",
+              "params": {
+                "duration_frames": 13,
+                "x_px": [
+                  60,
+                  0
+                ]
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": null,
+              "word": "quên gì",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                5,
+                7
+              ],
+              "at_estimate_s": 1.448889,
+              "frame_estimate": 43,
+              "line_offset_estimate_s": 1.448889,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "swish",
+            "at_estimate_s": 0.68,
+            "cut_at_estimate_s": 0.8,
+            "cue_type": "CUT; not word emphasis"
+          },
+          "narration_layer_ref": "hook-title"
+        },
+        {
+          "id": "b01-h3",
+          "beat": "b01",
+          "part": "hook",
+          "interval_estimate_s": [
+            2.0,
+            6.726667
+          ],
+          "voice_line_ref": "vi-b01",
+          "voice_window_local_s_estimate": [
+            2.0,
+            6.726667
+          ],
+          "narration": null,
+          "inherit_narration_from": "b01-h1",
+          "caption_segment_refs": [
+            "b01-cap02",
+            "b01-cap03",
+            "b01-cap04"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "hook-wide",
+          "transition": "cut",
+          "fx": {
+            "visual": "Whip vào phản ứng khựng khi không gọi tên được nội dung quên; cùng rig/sách, không tạo vật mới.",
+            "word": "quên gì",
+            "motion": {
+              "slug": "mmx-whip",
+              "source": "motionmaxxing",
+              "params": {
+                "duration_frames": 13,
+                "x_px": [
+                  60,
+                  0
+                ]
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": null,
+              "word": "chỗ thiếu",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                16,
+                18
+              ],
+              "at_estimate_s": 4.504445,
+              "frame_estimate": 135,
+              "line_offset_estimate_s": 4.504445,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "swish",
+            "at_estimate_s": 1.88,
+            "cut_at_estimate_s": 2.0,
+            "cue_type": "CUT; not word emphasis"
+          },
+          "narration_layer_ref": "hook-title"
+        },
+        {
+          "id": "b02-s1",
+          "beat": "b02",
+          "part": "Bối cảnh trend + thêm mục tiêu",
+          "interval_estimate_s": [
+            6.726667,
+            12.271111
+          ],
+          "voice_line_ref": "vi-b02",
+          "voice_window_local_s_estimate": [
+            0.0,
+            5.544444
+          ],
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b02-cap01",
+            "b02-cap02",
+            "b02-cap03"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "reading-context",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Panel bối cảnh bám sách hiện có, không chia người thành nhóm.",
+            "word": "vừa đọc vui vừa học",
+            "motion": {
+              "slug": "tdev-panel",
+              "source": "transitions.dev",
+              "params": {
+                "duration_frames": 15,
+                "rise_px": 32
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": null,
+              "word": "vừa đọc vui vừa học",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                13,
+                18
+              ],
+              "at_estimate_s": 10.337777,
+              "frame_estimate": 310,
+              "line_offset_estimate_s": 3.61111,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "swish",
+            "at_estimate_s": 6.606667,
+            "cut_at_estimate_s": 6.726667,
+            "cue_type": "planned transition seam; not word emphasis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "E1",
+      "engine": "hyperframes",
+      "interval_estimate_s": [
+        12.271111,
+        18.637778
+      ],
+      "sections": [
+        {
+          "id": "b03-e1",
+          "beat": "b03",
+          "part": "Dẫn chứng chọn kỹ thuật",
+          "interval_estimate_s": [
+            12.271111,
+            18.637778
+          ],
+          "voice_line_ref": "vi-b03",
+          "voice_window_local_s_estimate": [
+            0.0,
+            6.366667
+          ],
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b03-cap01",
+            "b03-cap02",
+            "b03-cap03",
+            "b03-cap04"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "ranking",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Các thẻ hiện; dịch thẻ cùng timeline, không mô phỏng số đo.",
+            "word": "tự kiểm",
+            "motion": {
+              "slug": "tdev-stagger",
+              "source": "transitions.dev",
+              "params": {
+                "duration_frames": 15,
+                "stagger_ms": 40
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": null,
+              "word": "tự kiểm",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                13,
+                15
+              ],
+              "at_estimate_s": 16.148889,
+              "frame_estimate": 484,
+              "line_offset_estimate_s": 3.877778,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": null,
+              "word": "đọc lại thấp",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                18,
+                21
+              ],
+              "at_estimate_s": 17.537778,
+              "frame_estimate": 526,
+              "line_offset_estimate_s": 5.266667,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [
+            {
+              "id": "b03-h1",
+              "f": null,
+              "sfx": "ding",
+              "word": "tự kiểm",
+              "timing_status": "ESTIMATE ONLY; not voice-aligned",
+              "at_estimate_s": 16.148889,
+              "frame_estimate": 484,
+              "word_range": [
+                13,
+                15
+              ]
+            },
+            {
+              "id": "b03-h2",
+              "f": null,
+              "sfx": "tick",
+              "word": "đọc lại thấp",
+              "timing_status": "ESTIMATE ONLY; not voice-aligned",
+              "at_estimate_s": 17.537778,
+              "frame_estimate": 526,
+              "word_range": [
+                18,
+                21
+              ]
+            }
+          ],
+          "production_target": "parts[].sections[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "whoosh-soft",
+            "at_estimate_s": 12.151111,
+            "cut_at_estimate_s": 12.271111,
+            "cue_type": "planned transition seam; not word emphasis"
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "engine": "remotion",
+      "interval_estimate_s": [
+        18.637778,
+        29.471111
+      ],
+      "scenes": [
+        {
+          "id": "b04-s1",
+          "beat": "b04",
+          "part": "Mục tiêu / móc giữa",
+          "interval_estimate_s": [
+            18.637778,
+            21.693333
+          ],
+          "voice_line_ref": "vi-b04",
+          "voice_window_local_s_estimate": [
+            0.0,
+            3.055555
+          ],
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b04-cap01",
+            "b04-cap02"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "reading-goal",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Dịch framing nhẹ vào cuốn sách; không zoom vào chữ.",
+            "word": "chưa nhớ",
+            "motion": {
+              "slug": "mmx-glide",
+              "source": "motionmaxxing",
+              "params": {
+                "duration_frames": 10,
+                "x_px": [
+                  18,
+                  0
+                ]
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": null,
+              "word": "chưa nhớ",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                8,
+                10
+              ],
+              "at_estimate_s": 20.86,
+              "frame_estimate": 626,
+              "line_offset_estimate_s": 2.222222,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "whoosh-soft",
+            "at_estimate_s": 18.517778,
+            "cut_at_estimate_s": 18.637778,
+            "cue_type": "planned transition seam; not word emphasis"
+          }
+        },
+        {
+          "id": "b05-s1",
+          "beat": "b05",
+          "part": "Giải pháp HTB / minh họa",
+          "interval_estimate_s": [
+            21.693333,
+            29.471111
+          ],
+          "voice_line_ref": "vi-b05",
+          "voice_window_local_s_estimate": [
+            0.0,
+            7.777778
+          ],
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b05-cap01",
+            "b05-cap02",
+            "b05-cap03",
+            "b05-cap04"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "reading-method",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Trạng thái book đóng/mở; không vẽ lại sách.",
+            "word": "tự kiểm",
+            "motion": {
+              "slug": "tdev-icon-swap",
+              "source": "transitions.dev",
+              "params": {
+                "duration_frames": 11
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": null,
+              "word": "tự kiểm",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                8,
+                10
+              ],
+              "at_estimate_s": 23.915555,
+              "frame_estimate": 717,
+              "line_offset_estimate_s": 2.222222,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            },
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": null,
+              "word": "dò",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                27,
+                28
+              ],
+              "at_estimate_s": 29.193333,
+              "frame_estimate": 876,
+              "line_offset_estimate_s": 7.5,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "swish",
+            "at_estimate_s": 21.573333,
+            "cut_at_estimate_s": 21.693333,
+            "cue_type": "planned transition seam; not word emphasis"
+          },
+          "visual_object_plan_refs": [
+            "mock-label-b05"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "engine": "hyperframes",
+      "interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "sections": [
+        {
+          "id": "b06-e1",
+          "beat": "b06",
+          "part": "Payoff đối chiếu",
+          "interval_estimate_s": [
+            29.471111,
+            36.971111
+          ],
+          "voice_line_ref": "vi-b06",
+          "voice_window_local_s_estimate": [
+            0.0,
+            7.5
+          ],
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b06-cap01",
+            "b06-cap02",
+            "b06-cap03"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "comparison",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Hai panel đối chiếu đã có, thêm nhãn bằng transform; không doodle.",
+            "word": "tiền thuê nhà",
+            "motion": {
+              "slug": "tdev-page",
+              "source": "transitions.dev",
+              "params": {
+                "duration_frames": 14,
+                "x_px": [
+                  8,
+                  0
+                ]
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "snap",
+              "atLine": 0,
+              "offset": null,
+              "word": "tiền thuê nhà",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                9,
+                12
+              ],
+              "at_estimate_s": 31.971111,
+              "frame_estimate": 959,
+              "line_offset_estimate_s": 2.5,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            },
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": null,
+              "word": "bổ sung",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                21,
+                23
+              ],
+              "at_estimate_s": 35.304445,
+              "frame_estimate": 1059,
+              "line_offset_estimate_s": 5.833334,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [
+            {
+              "id": "b06-h1",
+              "f": null,
+              "sfx": "snap",
+              "word": "tiền thuê nhà",
+              "timing_status": "ESTIMATE ONLY; not voice-aligned",
+              "at_estimate_s": 31.971111,
+              "frame_estimate": 959,
+              "word_range": [
+                9,
+                12
+              ]
+            },
+            {
+              "id": "b06-h2",
+              "f": null,
+              "sfx": "ding",
+              "word": "bổ sung",
+              "timing_status": "ESTIMATE ONLY; not voice-aligned",
+              "at_estimate_s": 35.304445,
+              "frame_estimate": 1059,
+              "word_range": [
+                21,
+                23
+              ]
+            }
+          ],
+          "production_target": "parts[].sections[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "whoosh-soft",
+            "at_estimate_s": 29.351111,
+            "cut_at_estimate_s": 29.471111,
+            "cue_type": "planned transition seam; not word emphasis"
+          },
+          "visual_object_plan_refs": [
+            "comparison-title-text",
+            "mock-label-b06",
+            "source-header",
+            "retelling-header",
+            "source-food",
+            "retelling-food",
+            "source-rent",
+            "retelling-rent"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "engine": "remotion",
+      "interval_estimate_s": [
+        36.971111,
+        45.804444
+      ],
+      "scenes": [
+        {
+          "id": "b07-s1",
+          "beat": "b07",
+          "part": "CTA / loop",
+          "interval_estimate_s": [
+            36.971111,
+            42.804444
+          ],
+          "voice_line_ref": "vi-b07",
+          "voice_window_local_s_estimate": [
+            0.0,
+            5.833333
+          ],
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [
+            "b07-cap01",
+            "b07-cap02",
+            "b07-cap03"
+          ],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "cta",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Ô comment hạ cánh, không overshoot/spring.",
+            "word": "đủ hay thiếu",
+            "motion": {
+              "slug": "mmx-snap-settle",
+              "source": "motionmaxxing",
+              "params": {
+                "duration_frames": 11,
+                "scale": [
+                  0.96,
+                  1
+                ]
+              }
+            },
+            "accent": null,
+            "doodles": []
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": null,
+              "word": "đủ hay thiếu",
+              "cue": "planned word onset inside matching caption slice; RESNAP after real voice; not measured",
+              "frame": null,
+              "word_range": [
+                10,
+                13
+              ],
+              "at_estimate_s": 39.748889,
+              "frame_estimate": 1192,
+              "line_offset_estimate_s": 2.777778,
+              "offset_status": "real line-relative offset UNSET, not offset0; estimated cue kept separately"
+            }
+          ],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "whoosh-soft",
+            "at_estimate_s": 36.851111,
+            "cut_at_estimate_s": 36.971111,
+            "cue_type": "planned transition seam; not word emphasis"
+          }
+        },
+        {
+          "id": "end-s1",
+          "beat": "end",
+          "part": "end",
+          "interval_estimate_s": [
+            42.804444,
+            45.804444
+          ],
+          "voice_line_ref": null,
+          "voice_window_local_s_estimate": null,
+          "narration": null,
+          "inherit_narration_from": null,
+          "caption_segment_refs": [],
+          "caption_layer": "global continuous segment layer; no restart at hook cut",
+          "layout_ref": "credit",
+          "transition": "cut-on-motion",
+          "fx": {
+            "visual": "Static source card; no doodle; one entrance only",
+            "word": null,
+            "motion": "mmx-soft-inout",
+            "duration_frames": 9
+          },
+          "sfx": [],
+          "hits": [],
+          "production_target": "parts[].scenes[]",
+          "runnable": false,
+          "transition_sfx_plan": {
+            "name": "whoosh-soft",
+            "at_estimate_s": 42.684444,
+            "cut_at_estimate_s": 42.804444,
+            "cue_type": "planned transition seam; not word emphasis"
+          },
+          "visual_object_plan_refs": [
+            "credit-row-1",
+            "credit-row-2",
+            "credit-row-3",
+            "credit-row-4",
+            "credit-row-5"
+          ],
+          "conditional_disclosure_ref": "end_card.conditional_text_lines[0]"
+        }
+      ]
+    }
+  ],
+  "production_schema_status": "NOT VALIDATED/NOT RUNNABLE. parts_plan is explicit mapping, not production parts; no build, no npx, no engine code. Estimated f fields are separate from measured f=null.",
+  "cover_plan": {
+    "preview_status": "CHƯA CHUẨN BỊ ẢNH",
+    "template": "video-engine/src/composition/Cover.tsx directiona",
+    "required_previews": [
+      "cover-a.png",
+      "cover-b.png",
+      "cover-c.png",
+      "profile-grid/contactsheet"
+    ],
+    "rule_safe_zone": [
+      60,
+      290,
+      960,
+      1310
+    ],
+    "observed_template": "Baseline Cover.tsx A fixed illustration envelope [390,1000,660,660] exceeded strict plan bounds. r11.4 translates illustration group(-40,-70); native template has no such exposed override yet, so planned mapping only, not a claim existing engine was fixed.",
+    "conservative_allocations": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ]
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ]
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          350,
+          930,
+          660,
+          660
+        ]
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ]
+      }
+    ],
+    "bounds_scope": "All r11.4 declared cover allocations map to one consistent transform and fit strict-safe numerically. Baseline kept separately for trace; no current-plan failure hidden. Not raster/glyph/rig/port validation.",
+    "target_allocations": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ]
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ]
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          350,
+          930,
+          660,
+          660
+        ]
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ]
+      }
+    ],
+    "target_status": "Strict allocations/translation unchanged; new non-strike/utility text and transform require future adapter/preview. CHƯA CHUẨN BỊ ẢNH.",
+    "baseline_observed_allocations_r11_3": [
+      {
+        "id": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ]
+      },
+      {
+        "id": "hero",
+        "bbox": [
+          66,
+          420,
+          930,
+          380
+        ]
+      },
+      {
+        "id": "rig+circle-reserve",
+        "bbox": [
+          390,
+          1000,
+          660,
+          660
+        ]
+      },
+      {
+        "id": "logo",
+        "bbox": [
+          72,
+          1470,
+          260,
+          70
+        ]
+      }
+    ],
+    "illustration_mapping": {
+      "before_bbox": [
+        390,
+        1000,
+        660,
+        660
+      ],
+      "translate_px": [
+        -40,
+        -70
+      ],
+      "after_bbox": [
+        350,
+        930,
+        660,
+        660
+      ],
+      "right_bottom_margins_px": [
+        10,
+        10
+      ],
+      "props_ref": "cover.illustration_transform_plan",
+      "actual_renderer_implementation": "CHƯA KIỂM/NOT IMPLEMENTED in this read-only task"
+    },
+    "text_mapping": [
+      {
+        "id": "cover-series",
+        "text": "STUDY UTILITY",
+        "parent_allocation": "series",
+        "bbox": [
+          72,
+          310,
+          850,
+          80
+        ],
+        "font_size_plan": 40,
+        "strike": false
+      },
+      {
+        "id": "cover-reread-utility",
+        "text": "REREAD: LOW",
+        "parent_allocation": "hero",
+        "bbox": [
+          90,
+          450,
+          870,
+          130
+        ],
+        "font_size_plan": 72,
+        "strike": false
+      },
+      {
+        "id": "cover-selftest-utility",
+        "text": "SELF-TEST: HIGH",
+        "parent_allocation": "hero",
+        "bbox": [
+          90,
+          620,
+          870,
+          130
+        ],
+        "font_size_plan": 72,
+        "strike": false
+      }
+    ],
+    "semantic_status": "Non-absolute meaning expressed explicitly by STUDY UTILITY + LOW/HIGH labels, no strike. This is a new plan, not reviewed image/renderer output. Original REREAD strike plan remains only in original frozen r11.4 files."
+  },
+  "preview_gate1": {
+    "status": "CHƯA CHUẨN BỊ ẢNH",
+    "storyboard_png": false,
+    "contactsheet": false,
+    "cover_previews": false,
+    "two_eye_review_rounds": false,
+    "reason": "This task authorizes text/JSON/planning arithmetic only, NO images/voice/render. Preview images are a separate missing gate before presentation; they are NOT the same as Chốt lời or final video render. No claim images must wait until script Chốt in all cases."
+  },
+  "issue_resolution": [
+    {
+      "issue": "L093 wording",
+      "location": "b01 canonical/marked_text/VI–EN caption slice; table/mapping",
+      "change": "Bạn đọc để học, mà quên gì cũng không biết. Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "open": "actualSocial/Deep SHA; read-aloud/stranger"
+    },
+    {
+      "issue": "L043 two hook reserves",
+      "location": "hook_alt + hook_alts[0:2] + rules audit",
+      "change": "2 reserves: retained negative + question/promise; neither reserve selected; main promise uses có cách after craft QA",
+      "open": "unselected alternatives not approved/voiced"
+    },
+    {
+      "issue": "Cover strict-safe bbox",
+      "location": "cover.illustration_transform_plan / cover_plan.illustration_mapping",
+      "change": "translation[-40,-70]→[350,930,660,660]→right1010/bottom1590",
+      "open": "native template override not implemented; actual images/schema/glyphs/rig unverified"
+    }
+  ],
+  "hook_title_layer_plan": {
+    "id": "hook-title",
+    "text": "FORGOT... WHAT?",
+    "interval_estimate_s": [
+      0,
+      6.726667
+    ],
+    "bbox": [
+      180,
+      170,
+      780,
+      150
+    ],
+    "scope": "global single overlay through three cuts; unit firstnarration binds it, later units inherit; no duplicate prop words"
+  },
+  "repeat_audit_note": "Craft QA rejected thêm vẫn alone: it only hid the ngram, retained có thể and the same promise form as b02. Replace b01 promise with Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên. This offers the existing method, does not guarantee effectiveness and is not a research claim. b02–b07 byte-identical; main150/pre50. Checker silence is not craft approval.",
+  "craft_qa_correction": {
+    "reason": "Adding vẫn alone only broke a repeated ngram; retained có thể/promise form was still a craft defect, not resolved by checker silence.",
+    "before_promise": "Bạn vẫn có thể nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+    "after_promise": "Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+    "scope": "One word thể→cách in b01 and the matching question reserve; b02–b07, first negative reserve and cover plan unchanged. Necessary EN/HL/metadata synchronization only.",
+    "claim_limit": "Có cách offers the existing self-test/compare method; no guarantee, new method, causal explanation or research claim.",
+    "approval": "Requested wording applied; human/read-aloud/fact-owner/reviewer gates still pending."
+  },
+  "hook_alts": [
+    {
+      "type": "negative; not selected",
+      "text": "Bạn đọc để học, đừng để chỗ chưa nhớ chỉ mang tên “quên rồi”.",
+      "status": "Unselected reserve only; preserved negative option, not in main count",
+      "marked_text": "Bạn đọc để học, đừng để {nhấn: chỗ chưa nhớ} chỉ mang tên “quên rồi”."
+    },
+    {
+      "type": "question + promise; not selected",
+      "text": "Bạn đọc để học, mà quên gì cũng không biết hả? Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "marked_text": "Bạn đọc để học, mà {nhấn: quên gì} cũng không biết hả? Bạn vẫn có cách nhận ra {nhấn: chỗ thiếu}, chứ không chỉ biết mình quên.",
+      "status": "Unselected reserve only; not in main transcript/count, not approved replacement"
+    }
+  ],
+  "hook_alts_rules_audit": {
+    "required": "checklist C44 L043 requires2 reserves; R64:231 requires at least1, not a cap. Keep hook_alt for compatibility plus explicit hook_alts[2].",
+    "options": [
+      {
+        "index": 0,
+        "type": "negative",
+        "word_count": 14,
+        "R64": "negative format, topic reading-to-learn; not a new method",
+        "P16_W16": "first clause4words; no niche/school subject/time jump; no procedure before goal",
+        "L094": "no open question to leave unanswered; editorial warning, not causal study claim",
+        "limitations": "warning is a proposal, not mandatory self-testing for pleasure reading; no listener approval"
+      },
+      {
+        "index": 1,
+        "type": "question",
+        "word_count": 25,
+        "R64": "question about the same pain followed by an offer of the existing method; <=2sentences",
+        "P16_W16": "first clause4words, learning pain before promise; hả is a soft rhetorical invitation, no method before goal",
+        "L094": "second sentence offers a way to identify missing content via b05–b06, not guaranteed effectiveness or a new research/texthip claim",
+        "limitations": "actual delivery/stranger/if selected whole-script fit pending; not counted or spoken"
+      }
+    ],
+    "selection": "Main hook retains accepted meaning/structure, promise revised to có cách after craft QA; thêm vẫn alone was insufficient for L093; neither reserve replaces it."
+  },
+  "patch_history": {
+    "base_full_rewrite": "r11.2 architecture B",
+    "patch1": "r11.3: fixed hook pain–promise, semantic HL and planning map",
+    "patch2": "r11.4: promise-form wording corrected after craft QA, missing second reserve, cover safe translation and necessary synchronization",
+    "rewrite_threshold": "Do not count suffixes. Reviewer confirms patch2 does not trigger >=3 patches of same base; no new concept/outline requested."
+  },
+  "patch_delta": [
+    {
+      "issue": "L093 wording",
+      "location": "b01 canonical/marked_text/VI–EN caption slice; table/mapping",
+      "before": "Bạn đọc để học, mà quên gì cũng không biết. Bạn có thể nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "after": "Bạn đọc để học, mà quên gì cũng không biết. Bạn vẫn có cách nhận ra chỗ thiếu, chứ không chỉ biết mình quên.",
+      "effect": "Compared with patch1: add vẫn and replace thể with cách; compared with initial r11.4: replace only thể with cách. Main150/pre50; b02–b07 unchanged; EN way/omissions, semantic HL and all bindings resynced. Prior ngram-only fix was insufficient; no craft pass inferred.",
+      "open": "actualSocial/Deep SHA; read-aloud/stranger"
+    },
+    {
+      "issue": "L043 two hook reserves",
+      "location": "hook_alt + hook_alts[0:2] + rules audit",
+      "before": "1 negative reserve",
+      "after": "2 reserves: retained negative + question/promise; neither reserve selected; main promise uses có cách after craft QA",
+      "effect": "R64 at least1 and checklist44 requires2 both represented; not part of count",
+      "open": "unselected alternatives not approved/voiced"
+    },
+    {
+      "issue": "Cover strict-safe bbox",
+      "location": "cover.illustration_transform_plan / cover_plan.illustration_mapping",
+      "before": "[390,1000,660,660]→right1050/bottom1660",
+      "after": "translation[-40,-70]→[350,930,660,660]→right1010/bottom1590",
+      "effect": "10px right/bottom margin versus strict x1020/y1600; A/theme/hero/text/logo/design unchanged",
+      "open": "native template override not implemented; actual images/schema/glyphs/rig unverified"
+    }
+  ],
+  "plan_update": {
+    "id": "plan-update1",
+    "base_spec": "/workspace/opencreator-clip05-spec-r11.4-draft-2026-11-07.json",
+    "base_spec_sha256": "62352ee26952a66898d9ba796749b867ea2897f8a3c0ea30bf939846d28ceaaa",
+    "frozen_script": "/workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+    "frozen_script_sha256": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+    "scope": "Only mock-label/two-column mapping, non-strike utility cover, conditional AI disclosure and current gate ledger. No script/caption/voice/method/source change.",
+    "script_metadata_policy": "Original MD including historical metadata/gates is frozen; this ledger supersedes stale gate status, not script bytes.",
+    "timing": "ALL times and frames are estimates, not measured/aligned audio."
+  },
+  "source_postcheck": {
+    "rule_review": {
+      "path": "/workspace/clip05-r11.4-rule-review-2026-11-07.md",
+      "sha256": "b6cf47058e35c716be2a636a227953f5a7c5f4e4a40771534071251ecb897a79",
+      "scope": "No further mandatory main-wording fault; text/plan can continue gate work, not full PASS/Chốt."
+    },
+    "Deep": {
+      "path": "/workspace/clip05-r11.4-factcheck-2026-11-07.md",
+      "sha256": "cdde77f04987bd8c765c9a58de8c8e1795023c0fb1aed1f918c50654ccccd879",
+      "checked_at": "2026-11-07T15:28:05+07:00",
+      "script_sha256": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+      "scope": "Main seven beats, phrases and23 captions match; main claims/illustrative comparison PASS within two locked fact packages. New cover/visible label/conditional disclosure still require visual/output verification."
+    },
+    "Social": {
+      "reported_at": "2026-11-07 15:26 Asia/Saigon (minute precision from handoff)",
+      "status": "Scoped trend/pain PASS reported by Reviewer via user handoff",
+      "provenance": "User steering at15:28 Asia/Saigon; no separate Social report file supplied/read in this task. No independent live/source research.",
+      "scope": "Trend lifestyle context and individual pain provenance only; not audience representativeness, efficacy, main flow, visual or overall PASS."
+    },
+    "no_blanket_inheritance": "Frozen main speech/captions retain scoped source conclusions; new visual-plan fields have not been independently re-reviewed."
+  },
+  "visual_objects_plan": {
+    "mock-label-b05": {
+      "id": "mock-label-b05",
+      "text": "MINH HỌA BIÊN TẬP CỦA KÊNH",
+      "bbox": [
+        110,
+        750,
+        860,
+        44
+      ],
+      "parent_object": null,
+      "visible_interval_estimate_s": [
+        24.748889,
+        29.471111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 34,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "comparison-title-text": {
+      "id": "comparison-title-text",
+      "text": "SO PHẦN KỂ VỚI TRANG MINH HỌA",
+      "bbox": [
+        100,
+        220,
+        880,
+        100
+      ],
+      "parent_object": "comparison-heading",
+      "visible_interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "mock-label-b06": {
+      "id": "mock-label-b06",
+      "text": "MINH HỌA BIÊN TẬP CỦA KÊNH",
+      "bbox": [
+        120,
+        375,
+        840,
+        60
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "source-header": {
+      "id": "source-header",
+      "text": "TRANG MINH HỌA",
+      "bbox": [
+        130,
+        465,
+        370,
+        70
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "retelling-header": {
+      "id": "retelling-header",
+      "text": "PHẦN KỂ",
+      "bbox": [
+        570,
+        465,
+        370,
+        70
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "source-food": {
+      "id": "source-food",
+      "text": "Record food expenses",
+      "bbox": [
+        130,
+        620,
+        370,
+        110
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "retelling-food": {
+      "id": "retelling-food",
+      "text": "Food",
+      "bbox": [
+        570,
+        620,
+        370,
+        110
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        29.471111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false
+    },
+    "source-rent": {
+      "id": "source-rent",
+      "text": "Record rent",
+      "bbox": [
+        130,
+        800,
+        370,
+        110
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        31.971111,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "content_exists_from_estimate_s": 24.748889,
+      "visibility_note": "Immutable source entry exists throughout; hide detail until tiền thuê nhà cue, then uncover. NEVER insert/edit source at bổ sung."
+    },
+    "retelling-rent": {
+      "id": "retelling-rent",
+      "text": "Rent",
+      "bbox": [
+        570,
+        800,
+        370,
+        110
+      ],
+      "parent_object": "source-retelling",
+      "visible_interval_estimate_s": [
+        35.304445,
+        36.971111
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "derived_from": "source-rent",
+      "target": "retelling",
+      "operation": "append label only to PHẦN KỂ",
+      "source_remains_visible_and_unchanged": true
+    },
+    "credit-row-1": {
+      "id": "credit-row-1",
+      "text": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+      "bbox": [
+        90,
+        300,
+        900,
+        130
+      ],
+      "parent_object": "credit-block",
+      "visible_interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "condition": "always",
+      "spoken": false
+    },
+    "credit-row-2": {
+      "id": "credit-row-2",
+      "text": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/",
+      "bbox": [
+        90,
+        470,
+        900,
+        240
+      ],
+      "parent_object": "credit-block",
+      "visible_interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "condition": "always",
+      "spoken": false
+    },
+    "credit-row-3": {
+      "id": "credit-row-3",
+      "text": "Đã chuyển thể. Giấy phép: https://creativecommons.org/licenses/by/4.0/",
+      "bbox": [
+        90,
+        750,
+        900,
+        180
+      ],
+      "parent_object": "credit-block",
+      "visible_interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "condition": "always",
+      "spoken": false
+    },
+    "credit-row-4": {
+      "id": "credit-row-4",
+      "text": "Dunlosky et al. (2013) · Trend context: Znews 05/11/2026",
+      "bbox": [
+        90,
+        970,
+        900,
+        100
+      ],
+      "parent_object": "credit-block",
+      "visible_interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "condition": "always",
+      "spoken": false
+    },
+    "credit-row-5": {
+      "id": "credit-row-5",
+      "text": "Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS).",
+      "bbox": [
+        90,
+        1120,
+        900,
+        220
+      ],
+      "parent_object": "credit-block",
+      "visible_interval_estimate_s": [
+        42.804444,
+        45.804444
+      ],
+      "layer": "visual-object text, NOT spoken/caption segment",
+      "font": "Be Vietnam Pro LOCAL",
+      "font_size_plan": 36,
+      "wrap_plan": true,
+      "actual_bounds_measured": false,
+      "condition": "publication_plan.ai_voice_used == true",
+      "spoken": false
+    }
+  },
+  "mock_comparison_plan": {
+    "label": "MINH HỌA BIÊN TẬP CỦA KÊNH",
+    "kind": "Channel editorial mock, not a photographed HTB page, observed participant or financial advice",
+    "source_document": {
+      "id": "mock-source",
+      "content": [
+        "Record food expenses",
+        "Record rent"
+      ],
+      "immutable": true,
+      "introduced_estimate_s": 24.748889,
+      "source_write_prohibited": true
+    },
+    "retelling_initial": [
+      "Food"
+    ],
+    "events": [
+      {
+        "at_estimate_s": 31.971111,
+        "cue": "tiền thuê nhà",
+        "operation": "reveal_source_detail",
+        "target_object": "source-rent",
+        "writes_document_content": false
+      },
+      {
+        "at_estimate_s": 35.304445,
+        "cue": "bổ sung",
+        "operation": "append_retelling",
+        "target_object": "retelling-rent",
+        "target_column": "PHẦN KỂ",
+        "value": "Rent",
+        "writes_document_content": false
+      }
+    ],
+    "retelling_final": [
+      "Food",
+      "Rent"
+    ],
+    "source_before_after_identical": true,
+    "reveal_policy": "No readable Rent in b01–b05; source Rent detail first shown at b06 tiền thuê nhà, appended to PHẦN KỂ at bổ sung. Distinct source/retelling instances; do not move/remove/change the original.",
+    "b05_policy": "Keep existing close/retell/reopen book action; only add persistent editorial label from Ví dụ. Do not introduce a new scene/method or pre-reveal Rent.",
+    "meaning_limit": "Compare retold content with mock source, NOT improve a budget/balance or prove financial/learning efficacy.",
+    "renderer_status": "Explicit planning map only; object bindings/adapters and visibility must later be implemented/checked in images."
+  }
+}
