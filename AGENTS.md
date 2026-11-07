@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active
-updated: 2026-10-28
+updated: 2026-11-07
 tags: [agents, retrieval, workflow]
 ---
 # AGENTS.md: cách AI làm việc trong repo này
@@ -55,3 +55,14 @@ Mọi asset của @hi.oneup chỉ nằm trong repo này (DL-060, L-023). Không 
 
 ## Đường dẫn máy
 Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (machine I-Am-Focused). Bản clone trên box (nơi làm việc duy nhất, commit tại đây rồi đẩy qua Mac): `/workspace/oneup-studio`.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in this repo's GitHub Issues (via `gh`). See `docs/agents/issue-tracker.md`.
+
+### Domain docs
+
+Single-context: root `GLOSSARY.md` + `docs/adr/`. See `docs/agents/domain.md`.
+
