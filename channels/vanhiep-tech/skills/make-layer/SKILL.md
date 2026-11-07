@@ -24,18 +24,19 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
    cp brand/fonts/BeVietnamPro-{Regular,SemiBold,Bold}.ttf channels/vanhiep-tech/clips/<clip>/layers/<layer>/fonts/
    ```
 5. `cd` layer dir → `npm i` (gsap) → `npx hyperframes@0.8.150 check`
-6. Render:
-   - Overlay alpha (preferred):  
-     `npx hyperframes@0.8.150 render --format mov -o ../../../../../../media/channels/vanhiep-tech/<clip>/<layer>.mov .`
-   - Fallback chroma: set `data-bg="chroma"` on `#main` (or body class `chroma`) then `--format mp4`
-   - Cutaway solid: opaque paper bg → `--format mp4`
+6. Render **solid MP4** (full `#282C34` bg — never transparent / never pink preview):
+   ```bash
+   npx hyperframes@0.8.150 render --format mp4 \
+     -o ../../../../../../media/channels/vanhiep-tech/<clip>/<layer>.mp4 .
+   ```
 7. Update `media/MANIFEST.json` after binary lands on disk.
 8. Point CapCut import path in `script.md` layer table.
 
 ## Design rules
 - Tokens: `channels/vanhiep-tech/brand/brand-tokens.json` (One Dark; accent `#56B6C2`)
+- **Always solid background** `#282C34` on `#main` / `html` / `body`
+- **Banned:** pink, magenta, fuchsia (bg or preview)
 - No chibi / OneUp logo / cam `#FF5A36`
-- Overlay: transparent canvas; opaque cards only
 - Always motion (fromTo children; no static PNG as final deliverable)
 - `talking-head-recut` = layout reference only — do not composite A-roll here
 

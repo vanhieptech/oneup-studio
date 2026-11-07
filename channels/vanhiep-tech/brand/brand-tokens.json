@@ -2,7 +2,7 @@
   "channel": "@vanhiep.tech",
   "forkOf": "brand/brand-tokens.json",
   "paletteName": "one-dark",
-  "note": "User-supplied One Dark swatch (2026-11-07). Safe-zone still from OneUp 9:16. No OneUp logo/chibi/cam accent.",
+  "note": "One Dark swatch (2026-11-07). Layers ALWAYS use solid bg #282C34. Banned: pink/magenta/fuchsia backgrounds or accents for preview/brand.",
   "video": {
     "width": 1080,
     "height": 1920,
@@ -24,6 +24,16 @@
       "cyan": "#56B6C2",
       "fg": "#ABB2BF"
     },
+    "banned": [
+      "pink",
+      "magenta",
+      "fuchsia",
+      "#FF00AA",
+      "#FF00FF",
+      "#FF69B4",
+      "#FF1493",
+      "hot-pink preview backgrounds"
+    ],
     "dark": {
       "bg": "#282C34",
       "surface": "#21252B",
@@ -37,12 +47,12 @@
       "ok": "#98C379",
       "danger": "#E06C75",
       "emphasis": "#C678DD",
-      "onAccent": "#282C34",
-      "chromaKey": "#00FF00"
+      "onAccent": "#282C34"
     },
-    "overlay": {
-      "transparent": true,
-      "cardBg": "#282C34",
+    "layer": {
+      "alwaysSolidBackground": true,
+      "bg": "#282C34",
+      "cardBg": "#21252B",
       "cardBorder": "#3E4451",
       "cardBorderAccent": "#56B6C2",
       "ink": "#ABB2BF",
@@ -62,8 +72,8 @@
   },
   "layerCatalog": ["ov-hook", "ov-d", "cu", "ov-l3", "ov-q"],
   "handoff": {
-    "preferredAlpha": "prores4444-mov",
-    "fallbackOverlay": "chroma-mp4",
-    "cutaway": "solid-mp4"
+    "default": "solid-mp4",
+    "cutaway": "solid-mp4",
+    "note": "No transparent/pink preview. Full-frame One Dark bg on every layer."
   }
 }

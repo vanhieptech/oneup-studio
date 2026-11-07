@@ -42,7 +42,7 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 2. Pre-render layer phức tạp bằng HyperFrames → `media/channels/vanhiep-tech/<clip-id>/`
 3. Motion đơn (fade/scale) có thể làm trong CapCut từ SVG/PNG đã animate nhẹ
 4. Ghép CapCut: A-roll + VO + layers theo marker
-5. Alpha: thử **ProRes 4444 MOV** (`hyperframes render --format mov`); fail → chroma (#00FF00) + CapCut Chroma Key; cutaway = nền solid
+5. **Luôn nền solid** `#282C34` trên mọi layer (`hyperframes render --format mp4`). **Cấm** hồng / magenta / fuchsia (kể cả nền preview).
 
 ## Media
 | Loại | Chỗ |
@@ -53,9 +53,9 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 
 ## Brand
 - Palette **One Dark** (user): bg `#282C34` · accent `#56B6C2` · blue `#61AFEF` · fg `#ABB2BF` · red `#E06C75` · green `#98C379` · yellow `#E5C07B` · purple `#C678DD`
-- Safe-zone vẫn 1080×1920 (OneUp layout)
-- Font: Be Vietnam Pro (`brand/fonts/`)
-- Không logo / chibi / cam OneUp `#FF5A36`
+- Layer **luôn** full-frame bg `#282C34` — không transparent
+- **Cấm** hồng / magenta / fuchsia
+- Safe-zone 1080×1920 · Font Be Vietnam Pro · Không logo / chibi / cam OneUp
 
 ## Cấm
 - `skills/make-video` comic cho clip kênh này

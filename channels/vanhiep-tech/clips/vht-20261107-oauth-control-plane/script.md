@@ -29,10 +29,10 @@ tags: [vanhiep-tech, oauth, oidc, keycloak, script]
 ## Layer manifest
 | Id | Loại | Path source | Output (sau render) |
 |---|---|---|---|
-| ov-d01 | diagram | `layers/ov-d01/` | `media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov` |
+| ov-d01 | diagram | `layers/ov-d01/` | `media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mp4` (solid One Dark bg) |
 | ov-l3 | lower-third | CapCut text hoặc layer sau | optional V1.1 |
 
 ## V1 DoD
 - [x] Scaffold + script + `ov-d01` HTML
-- [x] Render ProRes `media/.../ov-d01.mov` (yuva444p12le) — **smoke CapCut còn lại trên máy bạn**
+- [x] Render solid MP4 `media/.../ov-d01.mp4` — **smoke CapCut còn lại trên máy bạn**
 - [ ] Pilot quay + ghép = V1.1
