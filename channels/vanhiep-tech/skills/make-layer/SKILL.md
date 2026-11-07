@@ -33,7 +33,7 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
 8. Point CapCut import path in `script.md` layer table.
 
 ## Design rules
-- Tokens: `channels/vanhiep-tech/brand/brand-tokens.json` (accent `#0D9488`)
+- Tokens: `channels/vanhiep-tech/brand/brand-tokens.json` (One Dark; accent `#56B6C2`)
 - No chibi / OneUp logo / cam `#FF5A36`
 - Overlay: transparent canvas; opaque cards only
 - Always motion (fromTo children; no static PNG as final deliverable)

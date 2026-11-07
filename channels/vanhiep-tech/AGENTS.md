@@ -52,10 +52,10 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 | A-roll, VO, CapCut draft | **chỉ local Mac** — không lên git/box |
 
 ## Brand
-- Fork tối thiểu OneUp: paper `#F7F7F5`, ink `#111111`, safe-zone 1080×1920
-- Accent kênh: **`#0D9488`** (teal) — không dùng cam OneUp `#FF5A36` trên overlay
+- Palette **One Dark** (user): bg `#282C34` · accent `#56B6C2` · blue `#61AFEF` · fg `#ABB2BF` · red `#E06C75` · green `#98C379` · yellow `#E5C07B` · purple `#C678DD`
+- Safe-zone vẫn 1080×1920 (OneUp layout)
 - Font: Be Vietnam Pro (`brand/fonts/`)
-- Không logo / chibi OneUp
+- Không logo / chibi / cam OneUp `#FF5A36`
 
 ## Cấm
 - `skills/make-video` comic cho clip kênh này

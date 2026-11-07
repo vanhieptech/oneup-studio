@@ -1,7 +1,8 @@
 {
   "channel": "@vanhiep.tech",
   "forkOf": "brand/brand-tokens.json",
-  "note": "Minimal OneUp fork: keep paper/ink/safe-zone; accent teal. No OneUp logo/chibi. Teal-as-brand is intentional here (banned on @hi.oneup).",
+  "paletteName": "one-dark",
+  "note": "User-supplied One Dark swatch (2026-11-07). Safe-zone still from OneUp 9:16. No OneUp logo/chibi/cam accent.",
   "video": {
     "width": 1080,
     "height": 1920,
@@ -13,22 +14,41 @@
     }
   },
   "colors": {
-    "light": {
-      "bg": "#F7F7F5",
-      "surface": "#FFFFFF",
-      "ink": "#111111",
-      "muted": "#6B6B6B",
-      "border": "#E8E8E6",
-      "accent": "#0D9488",
-      "accentSoft": "#CCFBF1",
-      "onAccent": "#FFFFFF",
+    "swatches": {
+      "bg": "#282C34",
+      "red": "#E06C75",
+      "green": "#98C379",
+      "yellow": "#E5C07B",
+      "blue": "#61AFEF",
+      "purple": "#C678DD",
+      "cyan": "#56B6C2",
+      "fg": "#ABB2BF"
+    },
+    "dark": {
+      "bg": "#282C34",
+      "surface": "#21252B",
+      "ink": "#ABB2BF",
+      "inkStrong": "#FFFFFF",
+      "muted": "#5C6370",
+      "border": "#3E4451",
+      "accent": "#56B6C2",
+      "accentAlt": "#61AFEF",
+      "warn": "#E5C07B",
+      "ok": "#98C379",
+      "danger": "#E06C75",
+      "emphasis": "#C678DD",
+      "onAccent": "#282C34",
       "chromaKey": "#00FF00"
     },
     "overlay": {
       "transparent": true,
-      "cardBg": "#F7F7F5",
-      "cardBorder": "#111111",
-      "accent": "#0D9488"
+      "cardBg": "#282C34",
+      "cardBorder": "#3E4451",
+      "cardBorderAccent": "#56B6C2",
+      "ink": "#ABB2BF",
+      "title": "#FFFFFF",
+      "accent": "#56B6C2",
+      "accentAlt": "#61AFEF"
     }
   },
   "fonts": {

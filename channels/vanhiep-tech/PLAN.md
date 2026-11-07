@@ -21,7 +21,7 @@ Quyết định khóa từ grill-me (2026-11-07). Không đổi lặng lẽ — 
 6. Motion đơn → CapCut; multi-step → HyperFrames pre-render
 7. Alpha: ProRes 4444 trước → fallback chroma; cutaway solid
 8. Sống trong `channels/vanhiep-tech/`
-9. HF chỉ xuất layer; fork token OneUp + teal `#0D9488`
+9. HF chỉ xuất layer; brand **One Dark** (`#282C34` / `#56B6C2` / …) — xem `brand/brand-tokens.json`
 10. V1: script + id layer; STT-auto sau 2–3 clip
 11. `capcut-cli`: doctor/experiment only
 12. Master 9:16 · short 45–90s
@@ -48,3 +48,4 @@ Mid-form · dual ratio · talking-head-recut composite · CLI compile draft · t
 |---|---|
 | 2026-11-07 | Khóa grill-me + scaffold V1 |
 | 2026-11-07 | Render `ov-d01.mov` ProRes 4444 (yuva444p12le) trên box; chờ smoke CapCut trên Mac |
+| 2026-11-07 | Đổi palette → One Dark (user swatch); re-render `ov-d01` |
