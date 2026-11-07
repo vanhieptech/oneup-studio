@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
-<title>ov-d01 — overlay diagram (compact)</title>
+<title>ov-d01 — diagram · lower overlay zone</title>
 <link rel="stylesheet" href="tokens.css" />
 <script src="node_modules/gsap/dist/gsap.min.js"></script>
 <style>
@@ -13,72 +13,84 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html,body,#main{background:transparent}
 #main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif;color:var(--vht-ink)}
-#wrap{position:absolute;left:48px;right:48px;bottom:420px;display:flex;flex-direction:column;gap:18px}
-.kicker{font-size:24px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--vht-accent);text-align:center}
-.row{display:flex;gap:20px;align-items:stretch}
-.card{flex:1;border:4px solid var(--vht-border);border-radius:28px;background:var(--vht-surface);box-shadow:8px 10px 0 var(--vht-shadow);padding:22px 18px;display:flex;flex-direction:column;gap:14px;min-height:280px}
-.card.accent{border-color:var(--vht-accent);box-shadow:8px 10px 0 var(--vht-accent)}
-.tag{font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vht-ink)}
-.card.accent .tag{color:var(--vht-accent)}
-/* mini browser */
-.mini-browser{flex:1;border:3px solid var(--vht-border);border-radius:18px;background:var(--vht-bg);overflow:hidden;display:flex;flex-direction:column}
-.bar{height:28px;background:var(--vht-border);display:flex;align-items:center;gap:6px;padding:0 10px}
-.dot{width:8px;height:8px;border-radius:50%}
-.dot.r{background:var(--vht-danger)}.dot.y{background:var(--vht-warn)}.dot.g{background:var(--vht-ok)}
-.body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px}
-.btn{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:3px solid var(--vht-warn);background:var(--vht-surface)}
-.btn .g{width:22px;height:22px;border-radius:5px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
-.btn .t{font-size:20px;font-weight:700;color:var(--vht-title)}
-/* mini control plane */
-.flow{flex:1;display:flex;align-items:center;justify-content:center;gap:8px}
-.rack{width:52px;height:72px;border:3px solid var(--vht-accent);border-radius:10px;background:var(--vht-bg);padding:8px 6px;display:flex;flex-direction:column;gap:6px}
-.slot{flex:1;border-radius:4px;background:var(--vht-border)}
-.tok{border:3px solid var(--vht-accent-alt);border-radius:12px;background:var(--vht-bg);padding:8px 10px;display:flex;flex-direction:column;gap:6px}
-.tok .h{font-size:16px;font-weight:700;color:var(--vht-accent-alt);text-transform:uppercase}
-.chip{font-size:18px;font-weight:700;color:var(--vht-title);background:var(--vht-surface);border:2px solid var(--vht-border);border-radius:8px;padding:4px 8px}
-.chip.aud{border-color:var(--vht-accent);color:var(--vht-accent)}
-.arr{color:var(--vht-accent-alt);font-size:28px;font-weight:700}
-#vs{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 0 0 6px var(--vht-bg)}
+/* Overlay zone: lower half — face stays above */
+#board{position:absolute;left:40px;right:40px;bottom:220px;height:780px;border-radius:40px;background:color-mix(in srgb, var(--vht-bg) 90%, transparent);border:3px solid var(--vht-border);box-shadow:0 32px 90px color-mix(in srgb, var(--vht-bg) 75%, transparent);backdrop-filter:blur(16px);overflow:hidden}
+#accent-edge{position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--vht-accent)}
+#title{position:absolute;left:48px;top:36px;font-size:36px;font-weight:700;letter-spacing:-0.02em;color:var(--vht-title)}
+#sub{position:absolute;left:48px;top:86px;font-size:22px;font-weight:600;color:var(--vht-ink);opacity:0.85}
+#scene{position:absolute;left:36px;right:36px;top:140px;bottom:36px}
+#phone{position:absolute;left:0;top:40px;width:220px;height:420px;border-radius:36px;border:4px solid var(--vht-border);background:var(--vht-surface);overflow:hidden;box-shadow:0 18px 40px var(--vht-shadow)}
+#notch{position:absolute;left:50%;top:14px;transform:translateX(-50%);width:72px;height:10px;border-radius:8px;background:var(--vht-border)}
+#screen{position:absolute;inset:40px 18px 24px;border-radius:20px;background:var(--vht-bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px}
+#btn{width:100%;height:56px;border-radius:14px;border:3px solid var(--vht-warn);background:var(--vht-surface);display:flex;align-items:center;justify-content:center;gap:10px}
+#g{width:26px;height:26px;border-radius:6px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+#btn span{font-size:20px;font-weight:700;color:var(--vht-title)}
+#lbl{font-size:18px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--vht-warn)}
+#arrow1,#arrow2{position:absolute;height:6px;background:var(--vht-accent-alt);border-radius:3px;transform-origin:left center}
+#arrow1{left:236px;top:230px;width:120px}
+#arrow2{left:620px;top:230px;width:100px}
+#arrow1:after,#arrow2:after{content:"";position:absolute;right:-2px;top:50%;width:0;height:0;border:10px solid transparent;border-left-color:var(--vht-accent-alt);transform:translateY(-50%)}
+#kc{position:absolute;left:370px;top:80px;width:230px;height:340px;border-radius:28px;border:4px solid var(--vht-accent);background:var(--vht-surface);padding:22px 18px;display:flex;flex-direction:column;gap:14px;box-shadow:0 0 0 1px color-mix(in srgb,var(--vht-accent) 35%, transparent), 0 20px 50px color-mix(in srgb,var(--vht-accent) 25%, transparent)}
+#kc-h{font-size:22px;font-weight:700;color:var(--vht-title);text-align:center}
+#chip{flex:1;border-radius:16px;border:2px solid var(--vht-border);background:var(--vht-bg);padding:12px;display:flex;flex-direction:column;gap:8px}
+.row{display:flex;justify-content:space-between;font-size:18px;font-weight:600;color:var(--vht-ink)}
+.row.hot{color:var(--vht-accent);font-weight:700}
+#apis{position:absolute;right:0;top:90px;width:200px;display:flex;flex-direction:column;gap:18px}
+.api{height:88px;border-radius:20px;border:3px solid var(--vht-border);background:var(--vht-surface);display:flex;align-items:center;gap:12px;padding:0 16px}
+.api.ok{border-color:var(--vht-ok)}
+.api.bad{border-color:var(--vht-danger)}
+.dot{width:18px;height:18px;border-radius:5px}
+.api.ok .dot{background:var(--vht-ok)}
+.api.bad .dot{background:var(--vht-danger)}
+.api span{font-size:22px;font-weight:700;color:var(--vht-title)}
 </style>
 </head>
 <body>
-<div id="main" data-composition-id="main" data-start="0" data-duration="5" data-width="1080" data-height="1920" data-fps="30">
-  <div id="wrap">
-    <div class="kicker">Diagram · overlay trên A-roll</div>
-    <div class="row">
-      <div class="card" id="c-ux">
-        <div class="tag">UX</div>
-        <div class="mini-browser">
-          <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
-          <div class="body">
-            <div class="btn"><div class="g">G</div><div class="t">Sign in</div></div>
-          </div>
+<div id="main" data-composition-id="main" data-start="0" data-duration="6" data-width="1080" data-height="1920" data-fps="30">
+  <div id="board">
+    <div id="accent-edge"></div>
+    <div id="title">Control plane thật sự</div>
+    <div id="sub">Nút login chỉ là cửa — Keycloak giữ chìa</div>
+    <div id="scene">
+      <div id="phone">
+        <div id="notch"></div>
+        <div id="screen">
+          <div id="lbl">UX layer</div>
+          <div id="btn"><div id="g">G</div><span>Sign in</span></div>
         </div>
       </div>
-      <div class="card accent" id="c-cp">
-        <div class="tag">Control plane</div>
-        <div class="flow">
-          <div class="rack" id="rack"><div class="slot"></div><div class="slot"></div><div class="slot"></div></div>
-          <div class="arr">→</div>
-          <div class="tok" id="tok">
-            <div class="h">token</div>
-            <div class="chip aud">aud</div>
-          </div>
+      <div id="arrow1"></div>
+      <div id="kc">
+        <div id="kc-h">Keycloak</div>
+        <div id="chip">
+          <div class="row"><span>iss</span><span>realm</span></div>
+          <div class="row hot" id="aud"><span>aud</span><span>orders-api</span></div>
+          <div class="row"><span>exp</span><span>5m</span></div>
         </div>
+      </div>
+      <div id="arrow2"></div>
+      <div id="apis">
+        <div class="api ok" id="api1"><div class="dot"></div><span>orders</span></div>
+        <div class="api bad" id="api2"><div class="dot"></div><span>payments</span></div>
       </div>
     </div>
-    <div id="vs">vs</div>
   </div>
 </div>
 <script>
 window.__timelines = window.__timelines || {};
-const accent = getComputedStyle(document.documentElement).getPropertyValue("--vht-accent").trim();
 const tl = gsap.timeline({ paused: true });
-tl.fromTo("#wrap .kicker", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35 }, 0.05);
-tl.fromTo("#c-ux", { opacity: 0, x: -50, scale: 0.92 }, { opacity: 1, x: 0, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 0.2);
-tl.fromTo("#c-cp", { opacity: 0, x: 50, scale: 0.92, boxShadow: `8px 10px 0 ${accent}` }, { opacity: 1, x: 0, scale: 1, boxShadow: `12px 14px 0 ${accent}`, duration: 0.45, ease: "back.out(1.5)" }, 0.35);
-tl.fromTo("#vs", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 0.7);
-tl.fromTo("#tok .chip", { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut" }, 1.2);
+tl.fromTo("#board", { opacity: 0, y: 90, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "expo.out" }, 0.05);
+tl.fromTo("#accent-edge", { scaleY: 0 }, { scaleY: 1, duration: 0.45, ease: "power3.out", transformOrigin: "top" }, 0.2);
+tl.fromTo("#title", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0.3);
+tl.fromTo("#sub", { opacity: 0 }, { opacity: 0.85, duration: 0.35, ease: "power2.out" }, 0.45);
+tl.fromTo("#phone", { opacity: 0, x: -50, rotate: -4 }, { opacity: 1, x: 0, rotate: 0, duration: 0.55, ease: "back.out(1.4)" }, 0.55);
+tl.fromTo("#arrow1", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 1.05);
+tl.fromTo("#kc", { opacity: 0, scale: 0.88, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(1.5)" }, 1.3);
+tl.fromTo("#arrow2", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 1.75);
+tl.fromTo("#api1", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 2.0);
+tl.fromTo("#api2", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 2.2);
+tl.to("#aud", { scale: 1.06, duration: 0.3, yoyo: true, repeat: 3, ease: "sine.inOut", transformOrigin: "center" }, 2.7);
+tl.to("#kc", { boxShadow: "0 0 0 4px color-mix(in srgb, var(--vht-accent) 55%, transparent), 0 20px 50px color-mix(in srgb, var(--vht-accent) 30%, transparent)", duration: 0.5, yoyo: true, repeat: 1 }, 2.7);
 window.__timelines["main"] = tl;
 </script>
 </body>

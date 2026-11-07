@@ -3,41 +3,50 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
-<title>ov-hook — overlay hook card</title>
+<title>ov-hook — punch title zone</title>
 <link rel="stylesheet" href="tokens.css" />
 <script src="node_modules/gsap/dist/gsap.min.js"></script>
 <style>
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
-@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body,#main{background:transparent}
 #main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif}
-#card{position:absolute;left:64px;right:64px;top:520px;border:5px solid var(--vht-accent);border-radius:36px;background:var(--vht-surface);box-shadow:12px 14px 0 var(--vht-accent);padding:40px 36px;display:flex;flex-direction:column;gap:22px}
-.row{display:flex;align-items:center;gap:22px}
-.badge{width:88px;height:88px;border-radius:22px;background:var(--vht-bg);border:4px solid var(--vht-warn);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.badge .g{width:44px;height:44px;border-radius:10px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-weight:700;font-size:28px;display:flex;align-items:center;justify-content:center}
-.kicker{font-size:26px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--vht-accent)}
-.title{font-size:52px;font-weight:700;letter-spacing:-0.03em;line-height:1.12;color:var(--vht-title)}
-.sub{font-size:30px;font-weight:400;color:var(--vht-ink);line-height:1.35}
+/* Title-safe zone: upper third, leave center for face */
+#panel{position:absolute;left:48px;right:48px;top:280px;border-radius:36px;padding:36px 40px 40px;background:color-mix(in srgb, var(--vht-bg) 88%, transparent);border:3px solid var(--vht-accent);box-shadow:0 28px 80px color-mix(in srgb, var(--vht-bg) 70%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--vht-accent) 40%, transparent);backdrop-filter:blur(18px);overflow:hidden}
+#shine{position:absolute;left:-20%;top:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--vht-accent) 28%, transparent),transparent);pointer-events:none}
+#kicker{position:relative;font-size:24px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--vht-accent);margin-bottom:18px}
+#line1,#line2{position:relative;font-size:78px;font-weight:700;letter-spacing:-0.04em;line-height:1.02;color:var(--vht-title)}
+#line2{color:var(--vht-accent)}
+#bar{position:absolute;left:40px;bottom:0;height:6px;width:calc(100% - 80px);background:var(--vht-accent);transform-origin:left center;border-radius:3px 3px 0 0}
+#chip{position:absolute;right:72px;top:220px;width:92px;height:92px;border-radius:24px;background:var(--vht-accent);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px color-mix(in srgb,var(--vht-accent) 45%, transparent)}
+#chip svg{width:48px;height:48px;color:var(--vht-on-accent)}
 </style>
 </head>
 <body>
-<div id="main" data-composition-id="main" data-start="0" data-duration="4" data-width="1080" data-height="1920" data-fps="30">
-  <div id="card">
-    <div class="kicker">Hook</div>
-    <div class="row">
-      <div class="badge"><div class="g">G</div></div>
-      <div class="title">Nút «Sign in» xong… chưa xong bảo mật API</div>
-    </div>
-    <div class="sub">Những gì user thấy ≠ nơi quyết định token</div>
+<div id="main" data-composition-id="main" data-start="0" data-duration="3.2" data-width="1080" data-height="1920" data-fps="30">
+  <div id="chip">
+    <svg viewBox="0 0 48 48" fill="none"><path d="M10 24h28M28 14l10 10-10 10" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div id="panel">
+    <div id="shine" data-layout-allow-overflow></div>
+    <div id="kicker">Myth · OAuth</div>
+    <div id="line1">Login ≠</div>
+    <div id="line2">control plane</div>
+    <div id="bar"></div>
   </div>
 </div>
 <script>
 window.__timelines = window.__timelines || {};
-const accent = getComputedStyle(document.documentElement).getPropertyValue("--vht-accent").trim();
 const tl = gsap.timeline({ paused: true });
-tl.fromTo("#card", { opacity: 0, y: 80, scale: 0.92, boxShadow: `12px 14px 0 ${accent}` }, { opacity: 1, y: 0, scale: 1, boxShadow: `16px 18px 0 ${accent}`, duration: 0.55, ease: "back.out(1.6)" }, 0.1);
+tl.fromTo("#chip", { opacity: 0, scale: 0.5, rotate: -20 }, { opacity: 1, scale: 1, rotate: 0, duration: 0.45, ease: "back.out(2)" }, 0.05);
+tl.fromTo("#panel", { opacity: 0, y: 60, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "expo.out" }, 0.12);
+tl.fromTo("#kicker", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.28);
+tl.fromTo("#line1", { opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.5, ease: "power4.out" }, 0.4);
+tl.fromTo("#line2", { opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.5, ease: "power4.out" }, 0.55);
+tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power3.inOut" }, 0.7);
+tl.fromTo("#shine", { x: "-40%" }, { x: "280%", duration: 1.1, ease: "power2.inOut" }, 1.0);
+tl.to("#panel", { y: -8, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.4);
 window.__timelines["main"] = tl;
 </script>
 </body>

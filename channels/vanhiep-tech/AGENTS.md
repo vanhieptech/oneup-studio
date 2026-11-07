@@ -15,9 +15,13 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 ## Đọc trước khi làm
 1. File này
 2. `channels/vanhiep-tech/PLAN.md` (quyết định đã khóa)
-3. `brand/brand-tokens.json` (fork token kênh)
+3. `brand/brand-tokens.json` + `brand/tokens.css` + **`brand/frame.md`** (density / UI / zones)
 4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md` khi tạo/render layer
-5. HyperFrames: `skills/hyperframes/hyperframes/SKILL.md` → core / animation / creative / cli (xuất **layer only**)
+5. HyperFrames (bắt buộc trước HTML):
+   - Router `skills/hyperframes/hyperframes/SKILL.md`
+   - Creative `skills/hyperframes/hyperframes-creative/` (`house-style`, `video-composition`, `composition-patterns`, `motion-principles`)
+   - Motion `skills/hyperframes/hyperframes-animation/` + `skills/hyperframes/motion-graphics/` (lower-thirds)
+   - Overlay zones: `skills/hyperframes/talking-head-recut/` (**layout only**)
 
 ## Format video
 - A-roll tự quay + VO riêng, sync trong **CapCut Desktop**
@@ -54,11 +58,12 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 | Render layer (mov/webm/mp4) | `media/channels/vanhiep-tech/` (gitignore + MANIFEST) |
 | A-roll, VO, CapCut draft | **chỉ local Mac** — không lên git/box |
 
-## Brand
+## Brand + design
 - **Nguồn màu duy nhất:** `brand/brand-tokens.json` + `brand/tokens.css` (`--vht-*`)
+- **Frame / density:** `brand/frame.md` — UI thật / token / flow, depth bg+mid+fg, type video-scale, zones overlay
 - **Luôn** dùng token đã định nghĩa — **cấm** bịa hex ngoài file token
-- Cutaway: full-frame `var(--vht-bg)`. Overlay: transparent canvas + card brand (không bịa hex)
-- **Cấm** hồng / magenta / fuchsia
+- Cutaway: full-frame `var(--vht-bg)` + atmosphere. Overlay: transparent canvas + surface brand trong safe zone
+- **Cấm** hồng / magenta / fuchsia; left-stripe-only L3; empty void; equal text-card grids
 - Safe-zone 1080×1920 · Font Be Vietnam Pro · Không logo / chibi / cam OneUp
 
 ## Cấm
