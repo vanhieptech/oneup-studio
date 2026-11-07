@@ -4,6 +4,9 @@ date: 2026-11-07
 author: OpenCreator Studio
 status: Reviewer ĐÃ CHỌN concept 2 lúc 14:14 (thông tin chuyển); bản nháp hiện hành r11.1 (r11 CHƯA ĐẠT) ở /workspace/opencreator-clip05-script-r11.1-draft-2026-11-07.md. Không voice/render.
 sources: fact lock research/fact-packages/factcheck-clip05-lock-2026-11-07.md@b02dd07 (dòng 22–28, Deep chọn, Rule Reviewer chuyển 14:09) · bridge fact @d673dd9 · bridge trend @bd53fd3
+type: prep
+tags: [clip-05, r11, archive]
+source: "/workspace/opencreator-clip05-concept-prep-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
 ---
 
 

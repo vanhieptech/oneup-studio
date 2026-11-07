@@ -25,6 +25,9 @@ voice: "Thầy — F5 · Thái Sơn speed 1.0 (preset clip-04); CHƯA tạo audi
 transition_sfx: "{part: whoosh-soft, scene: swish} + ambience suốt clip"
 viewer_pronoun: bạn
 spoken_words: 173
+type: script-draft
+tags: [clip-05, r11, archive]
+source: "/workspace/opencreator-clip05-script-r11.1-draft-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
 ---
 
 # Clip-05 r11.1 — bản nháp sửa

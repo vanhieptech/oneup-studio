@@ -5,6 +5,9 @@ author: OpenCreator Studio
 status: chuẩn bị, chưa có lời thoại, chưa kiểm giọng
 revision: r2 (14:1x, 07/11, giờ VN) — sửa 10 điểm Rule Reviewer + cập nhật phạm vi Dunlosky do Reviewer chuyển 14:09
 scope: kỹ thuật viết + khung trống. Không tự nghiên cứu trend/fact, không script, không voice/render. Concept một dòng ở file riêng.
+type: prep
+tags: [clip-05, r11, archive]
+source: "/workspace/opencreator-clip05-prep-template-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
 ---
 # clip-05: bài học + mẫu trống (07/11/2026, giờ VN)
 

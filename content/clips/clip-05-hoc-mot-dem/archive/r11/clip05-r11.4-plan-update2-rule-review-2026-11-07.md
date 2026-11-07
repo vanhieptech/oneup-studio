@@ -1,3 +1,11 @@
+---
+title: "clip-05 archive: clip05-r11.4-plan-update2-rule-review-2026-11-07"
+date: 2026-11-07
+type: review
+tags: [clip-05, r11, archive]
+status: archived
+source: "/workspace/clip05-r11.4-plan-update2-rule-review-2026-11-07.md (archived as-is in commit 0d569da; author Rule Reviewer)"
+---
 # Clip05 r11.4 plan-update2 — Rule Reviewer delta
 07/11/2026, Asia/Saigon. Chỉ đọc/soát, ghi scratch; không sửa lời/spec/code/repo, tin nhắn, nghiên cứu nguồn, ảnh/audio/render.
 

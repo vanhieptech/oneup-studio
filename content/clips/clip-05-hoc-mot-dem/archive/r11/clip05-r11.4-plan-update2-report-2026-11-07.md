@@ -1,3 +1,11 @@
+---
+title: "clip-05 archive: clip05-r11.4-plan-update2-report-2026-11-07"
+date: 2026-11-07
+type: plan-report
+tags: [clip-05, r11, archive]
+status: archived
+source: "/workspace/clip05-r11.4-plan-update2-report-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
+---
 # Clip05 r11.4 plan-update2 — R16/R54/Deep mapping
 ## Phạm vi và identity
 Đã đọc FULL /workspace/clip05-r11.4-plan-update1-rule-review-2026-11-07.md và đọc lại FULL /workspace/clip05-r11.4-factcheck-2026-11-07.md; đọc nguyên văn R16/R54 hiện hành và toàn Cover.tsx để rà khả năng mapping thật. Không nghiên cứu nguồn mới.

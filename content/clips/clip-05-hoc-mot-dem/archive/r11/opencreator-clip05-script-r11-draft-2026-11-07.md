@@ -19,6 +19,9 @@ callbacks: clip-04 (23.14 gấp sách tự kiểm) ở b05
 viewer_pronoun: bạn
 speaker: Thầy (giọng kể)
 spoken_words: 173
+type: script-draft
+tags: [clip-05, r11, archive]
+source: "/workspace/opencreator-clip05-script-r11-draft-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
 ---
 
 # Clip-05 r11 — bản nháp đầy đủ

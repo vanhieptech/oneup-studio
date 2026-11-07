@@ -1,3 +1,11 @@
+---
+title: "clip-05 archive: clip05-r11.1-factcheck-2026-11-07"
+date: 2026-11-07
+type: factcheck
+tags: [clip-05, r11, archive]
+status: archived
+source: "/workspace/clip05-r11.1-factcheck-2026-11-07.md (archived as-is in commit 0d569da; author Deep Research)"
+---
 # Fact-check clip05 r11.1
 
 - Ngày: 07/11/2026 — Asia/Saigon (UTC+7).

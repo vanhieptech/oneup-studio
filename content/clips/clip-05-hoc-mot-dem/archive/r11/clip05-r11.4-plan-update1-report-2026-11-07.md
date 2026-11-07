@@ -1,3 +1,11 @@
+---
+title: "clip-05 archive: clip05-r11.4-plan-update1-report-2026-11-07"
+date: 2026-11-07
+type: plan-report
+tags: [clip-05, r11, archive]
+status: archived
+source: "/workspace/clip05-r11.4-plan-update1-report-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
+---
 # Clip05 r11.4 plan-update1 — delta / nguồn / validation
 ## Identity và phạm vi
 Script MD KHÔNG SỬA, kể cả metadata/gates lịch sử. SHA trước = sau: dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e. 7beat,150từ,50sauhooktrướcmethod;23caption/VIrange/EN/hl/estimatedtiming không đổi. Không patch lời/outline/research.

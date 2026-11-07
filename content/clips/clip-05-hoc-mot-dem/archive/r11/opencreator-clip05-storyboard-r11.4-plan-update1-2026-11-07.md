@@ -1,3 +1,11 @@
+---
+title: "clip-05 archive: opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07"
+date: 2026-11-07
+type: storyboard
+tags: [clip-05, r11, archive]
+status: archived
+source: "/workspace/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md (archived as-is in commit 0d569da; author OpenCreator Studio)"
+---
 # Clip05 r11.4 plan-update1 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN
 CHƯA CHUẨN BỊ ẢNH. planning_only=true; renderable=false; locked=false. Mọi thời gian/frame đều ƯỚC, không đo giọng/người thật. Không ảnh/voice/render.
 Script KHÓA BYTE: /workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md; SHA256 dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e. Không sửa cả metadata MD; gates hiện tại xem mục riêng dưới.
