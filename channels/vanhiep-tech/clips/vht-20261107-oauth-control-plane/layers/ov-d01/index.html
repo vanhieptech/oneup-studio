@@ -4,26 +4,31 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
 <title>ov-d01 — Login vs Control plane</title>
+<link rel="stylesheet" href="tokens.css" />
 <script src="node_modules/gsap/dist/gsap.min.js"></script>
 <style>
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
 *{margin:0;padding:0;box-sizing:border-box}
-html,body,#main{background:#282C34}
-#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif;color:#ABB2BF}
+html,body,#main{background:var(--vht-bg)}
+#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif;color:var(--vht-ink)}
 #stage{position:absolute;left:56px;right:56px;top:520px;bottom:420px;display:flex;flex-direction:column;gap:28px}
-#kicker{font-size:32px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#56B6C2}
-#title{font-size:64px;font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:#FFFFFF;max-width:920px}
+#kicker{font-size:32px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--vht-accent)}
+#title{font-size:64px;font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:var(--vht-title);max-width:920px}
 #cols{display:flex;gap:28px;flex:1;min-height:0;margin-top:12px}
-.card{flex:1;border:5px solid #3E4451;border-radius:36px;background:#21252B;box-shadow:10px 12px 0 #1B1E24;padding:36px 32px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
-.card.accent{border-color:#56B6C2;box-shadow:10px 12px 0 #56B6C2}
-.card .tag{font-size:28px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#ABB2BF}
-.card.accent .tag{color:#56B6C2}
-.card .head{font-size:48px;font-weight:700;letter-spacing:-0.02em;line-height:1.15;color:#FFFFFF}
-.card .body{font-size:34px;font-weight:400;color:#ABB2BF;line-height:1.35}
+.card{flex:1;border:5px solid var(--vht-border);border-radius:36px;background:var(--vht-surface);box-shadow:10px 12px 0 var(--vht-shadow);padding:36px 32px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.card.accent{border-color:var(--vht-accent);box-shadow:10px 12px 0 var(--vht-accent)}
+.card .tag{font-size:28px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--vht-ink)}
+.card.accent .tag{color:var(--vht-accent)}
+.card .head{font-size:48px;font-weight:700;letter-spacing:-0.02em;line-height:1.15;color:var(--vht-title)}
+.card .body{font-size:34px;font-weight:400;color:var(--vht-ink);line-height:1.35}
 .card .icon{width:72px;height:72px;margin-bottom:4px}
-#vs{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:#61AFEF;color:#282C34;font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:2;letter-spacing:-0.02em}
+.icon-warn{color:var(--vht-warn)}
+.icon-accent{color:var(--vht-accent)}
+.icon-warn [data-stroke],.icon-accent [data-stroke]{stroke:currentColor;fill:none}
+.icon-warn [data-fill],.icon-accent [data-fill]{fill:currentColor;stroke:none}
+#vs{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:2;letter-spacing:-0.02em}
 </style>
 </head>
 <body>
@@ -33,18 +38,18 @@ html,body,#main{background:#282C34}
     <div id="title">Nút login không phải kiến trúc</div>
     <div id="cols">
       <div id="c-ux" class="card">
-        <svg class="icon" viewBox="0 0 72 72" aria-hidden="true">
-          <rect x="8" y="22" width="56" height="28" rx="14" fill="none" stroke="#E5C07B" stroke-width="5"/>
-          <circle cx="48" cy="36" r="8" fill="#E5C07B"/>
+        <svg class="icon icon-warn" viewBox="0 0 72 72" aria-hidden="true">
+          <rect data-stroke x="8" y="22" width="56" height="28" rx="14" stroke-width="5"/>
+          <circle data-fill cx="48" cy="36" r="8"/>
         </svg>
         <div class="tag">UX</div>
         <div class="head">Login button</div>
         <div class="body">«Sign in with…» — trải nghiệm người dùng</div>
       </div>
       <div id="c-cp" class="card accent">
-        <svg class="icon" viewBox="0 0 72 72" aria-hidden="true">
-          <rect x="12" y="14" width="48" height="44" rx="8" fill="none" stroke="#56B6C2" stroke-width="5"/>
-          <path d="M24 30h24M24 42h16" stroke="#56B6C2" stroke-width="5" stroke-linecap="round"/>
+        <svg class="icon icon-accent" viewBox="0 0 72 72" aria-hidden="true">
+          <rect data-stroke x="12" y="14" width="48" height="44" rx="8" stroke-width="5"/>
+          <path data-stroke d="M24 30h24M24 42h16" stroke-width="5" stroke-linecap="round"/>
         </svg>
         <div class="tag">Control plane</div>
         <div class="head">Keycloak</div>
@@ -56,11 +61,13 @@ html,body,#main{background:#282C34}
 </div>
 <script>
 window.__timelines = window.__timelines || {};
+const css = getComputedStyle(document.documentElement);
+const accent = css.getPropertyValue("--vht-accent").trim();
 const tl = gsap.timeline({ paused: true });
 tl.fromTo("#kicker", { opacity: 0, y: -24 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 0.05);
 tl.fromTo("#title", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.18);
 tl.fromTo("#c-ux", { opacity: 0, x: -80, scale: 0.92 }, { opacity: 1, x: 0, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 0.45);
-tl.fromTo("#c-cp", { opacity: 0, x: 80, scale: 0.92, boxShadow: "10px 12px 0 #56B6C2" }, { opacity: 1, x: 0, scale: 1, boxShadow: "14px 16px 0 #56B6C2", duration: 0.55, ease: "back.out(1.6)" }, 0.62);
+tl.fromTo("#c-cp", { opacity: 0, x: 80, scale: 0.92, boxShadow: `10px 12px 0 ${accent}` }, { opacity: 1, x: 0, scale: 1, boxShadow: `14px 16px 0 ${accent}`, duration: 0.55, ease: "back.out(1.6)" }, 0.62);
 tl.fromTo("#vs", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.95);
 window.__timelines["main"] = tl;
 </script>

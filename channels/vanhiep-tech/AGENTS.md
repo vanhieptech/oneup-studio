@@ -52,8 +52,9 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 | A-roll, VO, CapCut draft | **chỉ local Mac** — không lên git/box |
 
 ## Brand
-- Palette **One Dark** (user): bg `#282C34` · accent `#56B6C2` · blue `#61AFEF` · fg `#ABB2BF` · red `#E06C75` · green `#98C379` · yellow `#E5C07B` · purple `#C678DD`
-- Layer **luôn** full-frame bg `#282C34` — không transparent
+- **Nguồn màu duy nhất:** `brand/brand-tokens.json` + `brand/tokens.css` (`--vht-*`)
+- **Luôn** dùng token đã định nghĩa — **cấm** bịa hex ngoài file token
+- Layer **luôn** full-frame `var(--vht-bg)` — không transparent
 - **Cấm** hồng / magenta / fuchsia
 - Safe-zone 1080×1920 · Font Be Vietnam Pro · Không logo / chibi / cam OneUp
 

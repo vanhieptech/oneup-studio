@@ -2,7 +2,8 @@
   "channel": "@vanhiep.tech",
   "forkOf": "brand/brand-tokens.json",
   "paletteName": "one-dark",
-  "note": "One Dark swatch (2026-11-07). Layers ALWAYS use solid bg #282C34. Banned: pink/magenta/fuchsia backgrounds or accents for preview/brand.",
+  "note": "Source of truth for all layer colors. CSS mirror: brand/tokens.css. Never invent hex in HTML/JS — only token names / --vht-* vars.",
+  "rule": "always-use-defined-brand-colors",
   "video": {
     "width": 1080,
     "height": 1920,
@@ -24,23 +25,11 @@
       "cyan": "#56B6C2",
       "fg": "#ABB2BF"
     },
-    "banned": [
-      "pink",
-      "magenta",
-      "fuchsia",
-      "#FF00AA",
-      "#FF00FF",
-      "#FF69B4",
-      "#FF1493",
-      "#E06C75-as-large-fill",
-      "hot-pink preview backgrounds"
-    ],
-    "noteUi": "Prefer #E5C07B / #61AFEF / #56B6C2 for icons; avoid coral #E06C75 on large UI (reads pink).",
-    "dark": {
+    "roles": {
       "bg": "#282C34",
       "surface": "#21252B",
       "ink": "#ABB2BF",
-      "inkStrong": "#FFFFFF",
+      "title": "#FFFFFF",
       "muted": "#5C6370",
       "border": "#3E4451",
       "accent": "#56B6C2",
@@ -49,19 +38,32 @@
       "ok": "#98C379",
       "danger": "#E06C75",
       "emphasis": "#C678DD",
-      "onAccent": "#282C34"
+      "onAccent": "#282C34",
+      "shadow": "#1B1E24"
     },
     "layer": {
       "alwaysSolidBackground": true,
-      "bg": "#282C34",
-      "cardBg": "#21252B",
-      "cardBorder": "#3E4451",
-      "cardBorderAccent": "#56B6C2",
-      "ink": "#ABB2BF",
-      "title": "#FFFFFF",
-      "accent": "#56B6C2",
-      "accentAlt": "#61AFEF"
-    }
+      "bg": "roles.bg",
+      "cardBg": "roles.surface",
+      "cardBorder": "roles.border",
+      "cardBorderAccent": "roles.accent",
+      "ink": "roles.ink",
+      "title": "roles.title",
+      "accent": "roles.accent",
+      "accentAlt": "roles.accentAlt",
+      "iconSecondary": "roles.warn"
+    },
+    "banned": [
+      "pink",
+      "magenta",
+      "fuchsia",
+      "#FF00AA",
+      "#FF00FF",
+      "#FF69B4",
+      "#FF1493",
+      "any hex not listed in swatches/roles",
+      "hot-pink preview backgrounds"
+    ]
   },
   "fonts": {
     "family": "Be Vietnam Pro",
@@ -76,6 +78,6 @@
   "handoff": {
     "default": "solid-mp4",
     "cutaway": "solid-mp4",
-    "note": "No transparent/pink preview. Full-frame One Dark bg on every layer."
+    "note": "Solid One Dark bg. Colors only from this file / tokens.css."
   }
 }

@@ -50,3 +50,4 @@ Mid-form · dual ratio · talking-head-recut composite · CLI compile draft · t
 | 2026-11-07 | Render `ov-d01.mov` ProRes 4444 (yuva444p12le) trên box; chờ smoke CapCut trên Mac |
 | 2026-11-07 | Đổi palette → One Dark (user swatch); re-render `ov-d01` |
 | 2026-11-07 | Layer luôn solid bg; cấm hồng/magenta; render MP4 |
+| 2026-11-07 | Bắt buộc dùng brand tokens / `--vht-*` — không bịa hex |
