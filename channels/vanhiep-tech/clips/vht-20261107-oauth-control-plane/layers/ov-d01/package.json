@@ -1,0 +1,14 @@
+{
+  "name": "vht-ov-d01-oauth-control-plane",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.150 check",
+    "lint": "npx --yes hyperframes@0.8.150 lint",
+    "render:mov": "npx --yes hyperframes@0.8.150 render --format mov -o ../../../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov .",
+    "render:chroma": "npx --yes hyperframes@0.8.150 render --format mp4 -o ../../../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01-chroma.mp4 ."
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

@@ -60,7 +60,7 @@
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
  },
  {
-  "path": "media/samples/lab/voicetest-presets/Minh_Triết.wav",
+  "path": "media/samples/lab/voicetest-presets/Minh_Tri\u1ebft.wav",
   "size": 368684,
   "sha256": "e80ed629277bbc1f6c3398363ef1639b420e5ffc60d1ce431fc396dc04f49813",
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
@@ -72,7 +72,7 @@
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
  },
  {
-  "path": "media/samples/lab/voicetest-presets/Thái_Sơn.wav",
+  "path": "media/samples/lab/voicetest-presets/Th\u00e1i_S\u01a1n.wav",
   "size": 445484,
   "sha256": "903e7f868787796482f4a36bf42a1aab6d0ccac1d6618f9bb4a164f47b8b75e2",
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
@@ -84,7 +84,7 @@
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
  },
  {
-  "path": "media/samples/lab/voicetest-presets/Đức_Trí.wav",
+  "path": "media/samples/lab/voicetest-presets/\u0110\u1ee9c_Tr\u00ed.wav",
   "size": 514604,
   "sha256": "9664d2ad7740d288a65898024dea32488c958da78c069caa8ef4a76c700da8f0",
   "source": "leftover audit 2026-10-15 (moved from /workspace)"
@@ -556,5 +556,11 @@
   "size": 97383,
   "sha256": "71a58fcf3fd86e93d77b472bff4e4f0416d24b3c04e5b918d0649d932a578d64",
   "source": "TdevDemo render 2026-10-15 (transitions.dev ports)"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov",
+  "size": 50516037,
+  "sha256": "d3be80b74f9da9916d5f1a6a64e3f245074f83d6e17974bececeaa117c1d5616",
+  "source": "channels/vanhiep-tech ov-d01 hyperframes render --format mov"
  }
 ]

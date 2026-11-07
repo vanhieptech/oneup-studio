@@ -27,4 +27,8 @@ content/**/explainer/fonts/
 content/**/explainer/logo.svg
 templates/hyperframes-base/fonts/
 templates/hyperframes-base/logo.svg
+channels/**/layers/**/fonts/
+channels/**/layers/**/node_modules/
+channels/**/layers/**/renders/
+channels/**/layers/**/package-lock.json
 research/reference-videos/**/*.mp4

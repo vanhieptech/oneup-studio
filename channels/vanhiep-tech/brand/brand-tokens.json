@@ -1,0 +1,49 @@
+{
+  "channel": "@vanhiep.tech",
+  "forkOf": "brand/brand-tokens.json",
+  "note": "Minimal OneUp fork: keep paper/ink/safe-zone; accent teal. No OneUp logo/chibi. Teal-as-brand is intentional here (banned on @hi.oneup).",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "safeZone": {
+      "top": 220,
+      "bottom": 380,
+      "left": 56,
+      "right": 140
+    }
+  },
+  "colors": {
+    "light": {
+      "bg": "#F7F7F5",
+      "surface": "#FFFFFF",
+      "ink": "#111111",
+      "muted": "#6B6B6B",
+      "border": "#E8E8E6",
+      "accent": "#0D9488",
+      "accentSoft": "#CCFBF1",
+      "onAccent": "#FFFFFF",
+      "chromaKey": "#00FF00"
+    },
+    "overlay": {
+      "transparent": true,
+      "cardBg": "#F7F7F5",
+      "cardBorder": "#111111",
+      "accent": "#0D9488"
+    }
+  },
+  "fonts": {
+    "family": "Be Vietnam Pro",
+    "cssStack": "'Be Vietnam Pro', sans-serif",
+    "files": {
+      "400": "brand/fonts/BeVietnamPro-Regular.ttf",
+      "600": "brand/fonts/BeVietnamPro-SemiBold.ttf",
+      "700": "brand/fonts/BeVietnamPro-Bold.ttf"
+    }
+  },
+  "layerCatalog": ["ov-hook", "ov-d", "cu", "ov-l3", "ov-q"],
+  "handoff": {
+    "preferredAlpha": "prores4444-mov",
+    "fallbackOverlay": "chroma-mp4",
+    "cutaway": "solid-mp4"
+  }
+}
