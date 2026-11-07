@@ -19,7 +19,7 @@ Quyết định khóa từ grill-me (2026-11-07). Không đổi lặng lẽ — 
 4. CapCut Desktop = NLE cuối
 5. Deliverable layer luôn có motion
 6. Motion đơn → CapCut; multi-step → HyperFrames pre-render
-7. **Luôn nền solid** `#282C34`; **cấm** hồng/magenta; handoff mặc định MP4 (không alpha/chroma hồng)
+7. Cutaway = solid MP4; overlay = ProRes alpha (canvas trong suốt, card brand); **cấm** hồng/magenta
 8. Sống trong `channels/vanhiep-tech/`
 9. HF chỉ xuất layer; brand **One Dark** (`#282C34` / `#56B6C2` / …) — xem `brand/brand-tokens.json`
 10. V1: script + id layer; STT-auto sau 2–3 clip
@@ -52,3 +52,4 @@ Mid-form · dual ratio · talking-head-recut composite · CLI compile draft · t
 | 2026-11-07 | Layer luôn solid bg; cấm hồng/magenta; render MP4 |
 | 2026-11-07 | Bắt buộc dùng brand tokens / `--vht-*` — không bịa hex |
 | 2026-11-07 | ov-d01 redesign: minh họa visual (browser login + Keycloak→token→API) |
+| 2026-11-08 | Đủ catalog: cu-01 B-roll + ov-hook / ov-d01 / ov-l3 / ov-q overlays |

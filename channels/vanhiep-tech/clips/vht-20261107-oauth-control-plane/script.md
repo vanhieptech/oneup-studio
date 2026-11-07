@@ -4,35 +4,42 @@ date: 2026-11-07
 id: vht-20261107-oauth-control-plane
 type: script
 status: draft
-updated: 2026-11-07
+updated: 2026-11-08
 source: "Nordic APIs + Keycloak audience docs + Phase Two aud trap (rewrite)"
 tags: [vanhiep-tech, oauth, oidc, keycloak, script]
 ---
 # vht-20261107-oauth-control-plane
 
 ## Meta
-- **Góc:** Nút login = UX; Keycloak / authorization server = control plane API security
-- **Punch:** Login OK nhưng API 401 vì `aud` (thường thấy `account`, chưa map API)
-- **Nguồn:** [Nordic APIs](https://nordicapis.com/oauth-and-oidc-beyond-the-login-button-identity-as-the-api-security-control-plane/) · [Keycloak Audience](https://github.com/keycloak/keycloak/blob/main/docs/documentation/server_admin/topics/clients/oidc/con-audience.adoc) · [Phase Two aud trap](https://phasetwo.io/tutorials/getting-started/your-first-token/)
+- **Góc:** Nút login = UX; Keycloak = control plane
+- **Punch:** Login OK / API 401 vì `aud`
+- **Nguồn:** Nordic APIs · Keycloak Audience · Phase Two aud trap
 
 ## Timeline (~60–75s)
 
 | Giây | Marker | Lời (VO — nháp) | Hình |
 |---|---|---|---|
-| 0:00 | | Nhiều team nghĩ xong OAuth khi đã có nút «Sign in with…». | A-roll |
-| 0:08 | `[0:08 ov-d01]` | Nhưng quyết định bảo mật API không nằm ở nút đó. Nó nằm ở authorization server — với mình thường là Keycloak. | Overlay diagram |
-| 0:28 | | Ai được token, token cho API nào, xác thực mạnh tới đâu, sống bao lâu, client auth thế nào — đã quyết trước khi request tới gateway. | A-roll + overlay hold |
-| 0:48 | | Ví dụ đời thường: login Keycloak thành công, API vẫn 401. Không phải API hư — access token chưa có `aud` đúng (hay gặp mặc định `account`). | A-roll |
-| 1:02 | `[1:02 ov-l3]` optional | Takeaway: coi identity như control plane, không như trang login. | A-roll + L3 |
-| 1:12 | | Bạn đang verify `aud` trên từng API chưa? | A-roll CTA |
+| 0:00 | `[0:00 ov-hook]` | Nhiều team nghĩ xong OAuth khi đã có nút «Sign in with…». | A-roll + overlay hook |
+| 0:10 | `[0:10 ov-d01]` | Nhưng quyết định bảo mật API không nằm ở nút đó — nằm ở authorization server (Keycloak). | A-roll + overlay diagram |
+| 0:28 | `[0:28 cu-01]` | Ai được token, `aud` nào, MFA, TTL, client auth — đã quyết trước khi request tới gateway. | **B-roll cutaway** full |
+| 0:48 | `[0:48 ov-q]` | Login Keycloak thành công, API vẫn 401. Không phải API hư — token thiếu `aud` đúng (hay `account`). | A-roll + quote overlay |
+| 1:05 | `[1:05 ov-l3]` | Takeaway: identity = control plane, không phải trang login. | A-roll + lower-third |
+| 1:15 | | Bạn đang verify `aud` trên từng API chưa? | A-roll CTA |
 
-## Layer manifest
-| Id | Loại | Path source | Output (sau render) |
+## Layer package (đủ catalog)
+
+| Id | Vai trò | Canvas | Output |
 |---|---|---|---|
-| ov-d01 | diagram | `layers/ov-d01/` | `media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mp4` (solid One Dark bg) |
-| ov-l3 | lower-third | CapCut text hoặc layer sau | optional V1.1 |
+| `ov-hook` | Overlay hook card | transparent + card brand | `…/ov-hook.mov` (ProRes alpha) |
+| `ov-d01` | Overlay diagram compact | transparent + cards | `…/ov-d01.mov` |
+| `cu-01` | **B-roll / cutaway** full visual | solid `--vht-bg` | `…/cu-01.mp4` |
+| `ov-q` | Overlay quote `aud` trap | transparent + card | `…/ov-q.mov` |
+| `ov-l3` | Overlay lower-third | transparent + bar | `…/ov-l3.mov` |
+
+**CapCut:** overlays = track Overlay (alpha); `cu-01` = cắt sang B-roll full frame rồi về A-roll.
 
 ## V1 DoD
-- [x] Scaffold + script + `ov-d01` HTML
-- [x] Render solid MP4 `media/.../ov-d01.mp4` — **smoke CapCut còn lại trên máy bạn**
+- [x] Đủ 5 kịch bản layer (hook · diagram overlay · cutaway · quote · L3)
+- [x] Render outputs trên box (manifest)
+- [ ] Smoke CapCut trên Mac
 - [ ] Pilot quay + ghép = V1.1

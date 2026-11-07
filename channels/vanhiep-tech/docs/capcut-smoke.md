@@ -1,33 +1,33 @@
 ---
-title: "CapCut smoke — solid One Dark layer"
-date: 2026-11-07
+title: "CapCut smoke — B-roll + overlays"
+date: 2026-11-08
 id: docs-vht-capcut-smoke
 type: guide
 status: draft
-updated: 2026-11-07
+updated: 2026-11-08
 source: "channels/vanhiep-tech PLAN"
 tags: [capcut, vanhiep-tech]
 ---
-# CapCut smoke-test (V1)
+# CapCut smoke — đủ kịch bản
 
-**Luật:** mọi layer có **nền solid** `#282C34`. **Cấm** nền / preview hồng–magenta–fuchsia.
+**Cấm** nền preview hồng/magenta. Dùng màu brand hoặc A-roll thật.
 
-## 1. Render layer mẫu (MP4 solid)
-```bash
-cd channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/layers/ov-d01
-mkdir -p fonts && cp ../../../../../../brand/fonts/BeVietnamPro-{Regular,SemiBold,Bold}.ttf fonts/
-npm i
-npx hyperframes@0.8.150 check
-mkdir -p ../../../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane
-npx hyperframes@0.8.150 render --format mp4 \
-  -o ../../../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mp4 .
-```
+## Outputs (sau sync media)
+`media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/`
 
-## 2. Import CapCut
-1. Project 1080×1920
-2. A-roll trên track chính
-3. Import `ov-d01.mp4` làm **cutaway / overlay full hoặc PiP** (đã có nền dark — không chroma, không ProRes alpha)
-4. Cắt theo marker trong `script.md`
+| File | Dùng trong CapCut |
+|---|---|
+| `cu-01.mp4` | **B-roll**: cắt full frame thay A-roll |
+| `ov-hook.mov` | Overlay track (alpha) |
+| `ov-d01.mov` | Overlay track (alpha) |
+| `ov-q.mov` | Overlay track (alpha) |
+| `ov-l3.mov` | Overlay track (alpha) |
 
-## 3. Ghi kết quả
-Thêm dòng vào `PLAN.md` Revisions sau khi ghép thử trên máy bạn.
+## Test nhanh
+1. Project 9:16 · thả A-roll (hoặc solid `--vht-bg` tạm)
+2. Import 4 file `.mov` lên Overlay — quanh card phải thấy A-roll/nền dưới
+3. Import `cu-01.mp4` trên main track đoạn `[0:28]` — full cutaway
+4. Fail alpha ProRes → báo trong `PLAN.md` Revisions; tạm scale card MP4 solid (không dùng hồng)
+
+## Render lại
+Xem `skills/make-layer/SKILL.md` — cutaway `mp4`, overlay `mov`.

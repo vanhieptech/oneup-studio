@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
-<title>ov-d01 — Login vs Control plane (visual)</title>
+<title>ov-d01 — overlay diagram (compact)</title>
 <link rel="stylesheet" href="tokens.css" />
 <script src="node_modules/gsap/dist/gsap.min.js"></script>
 <style>
@@ -11,146 +11,74 @@
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
 *{margin:0;padding:0;box-sizing:border-box}
-html,body,#main{background:var(--vht-bg)}
+html,body,#main{background:transparent}
 #main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif;color:var(--vht-ink)}
-#stage{position:absolute;left:48px;right:48px;top:280px;bottom:360px;display:flex;flex-direction:column;gap:36px}
-#kicker{font-size:28px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--vht-accent);text-align:center}
-#panels{flex:1;display:flex;flex-direction:column;gap:36px;min-height:0;position:relative}
-.panel{flex:1;border:5px solid var(--vht-border);border-radius:40px;background:var(--vht-surface);box-shadow:12px 14px 0 var(--vht-shadow);padding:28px 28px 24px;display:flex;flex-direction:column;gap:18px;min-height:0;position:relative;overflow:hidden}
-.panel.accent{border-color:var(--vht-accent);box-shadow:12px 14px 0 var(--vht-accent)}
-.panel-label{font-size:24px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vht-ink)}
-.panel.accent .panel-label{color:var(--vht-accent)}
-
-/* —— UX: browser + login button —— */
-.browser{flex:1;border:4px solid var(--vht-border);border-radius:28px;background:var(--vht-bg);overflow:hidden;display:flex;flex-direction:column;min-height:0}
-.browser-bar{height:56px;background:var(--vht-border);display:flex;align-items:center;gap:10px;padding:0 18px}
-.dot{width:14px;height:14px;border-radius:50%}
+#wrap{position:absolute;left:48px;right:48px;bottom:420px;display:flex;flex-direction:column;gap:18px}
+.kicker{font-size:24px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--vht-accent);text-align:center}
+.row{display:flex;gap:20px;align-items:stretch}
+.card{flex:1;border:4px solid var(--vht-border);border-radius:28px;background:var(--vht-surface);box-shadow:8px 10px 0 var(--vht-shadow);padding:22px 18px;display:flex;flex-direction:column;gap:14px;min-height:280px}
+.card.accent{border-color:var(--vht-accent);box-shadow:8px 10px 0 var(--vht-accent)}
+.tag{font-size:22px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--vht-ink)}
+.card.accent .tag{color:var(--vht-accent)}
+/* mini browser */
+.mini-browser{flex:1;border:3px solid var(--vht-border);border-radius:18px;background:var(--vht-bg);overflow:hidden;display:flex;flex-direction:column}
+.bar{height:28px;background:var(--vht-border);display:flex;align-items:center;gap:6px;padding:0 10px}
+.dot{width:8px;height:8px;border-radius:50%}
 .dot.r{background:var(--vht-danger)}.dot.y{background:var(--vht-warn)}.dot.g{background:var(--vht-ok)}
-.url{flex:1;height:28px;border-radius:14px;background:var(--vht-surface);margin-left:8px}
-.browser-body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:32px}
-.avatar{width:96px;height:96px;border-radius:50%;border:5px solid var(--vht-border);background:var(--vht-surface);position:relative}
-.avatar::before{content:"";position:absolute;left:28px;top:22px;width:34px;height:34px;border-radius:50%;background:var(--vht-ink)}
-.avatar::after{content:"";position:absolute;left:18px;top:58px;width:54px;height:28px;border-radius:28px 28px 0 0;background:var(--vht-ink)}
-.login-btn{display:flex;align-items:center;gap:16px;padding:18px 28px;border-radius:18px;border:4px solid var(--vht-warn);background:var(--vht-surface);box-shadow:6px 8px 0 var(--vht-shadow);position:relative}
-.login-btn .g{width:36px;height:36px;border-radius:8px;background:var(--vht-accent-alt);display:flex;align-items:center;justify-content:center;color:var(--vht-on-accent);font-weight:700;font-size:22px}
-.login-btn .txt{font-size:30px;font-weight:700;color:var(--vht-title)}
-.cursor{position:absolute;right:18px;bottom:-8px;width:36px;height:36px;color:var(--vht-title);filter:drop-shadow(2px 3px 0 var(--vht-shadow))}
-.click-ring{position:absolute;right:10px;bottom:-2px;width:28px;height:28px;border:3px solid var(--vht-warn);border-radius:50%;opacity:0}
-
-/* —— Control plane: server + token + APIs —— */
-.cp-row{flex:1;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:0}
-.server{width:150px;display:flex;flex-direction:column;align-items:center;gap:10px}
-.rack{width:120px;height:150px;border:4px solid var(--vht-accent);border-radius:18px;background:var(--vht-bg);padding:14px 12px;display:flex;flex-direction:column;gap:10px;box-shadow:6px 8px 0 var(--vht-accent)}
-.slot{flex:1;border-radius:8px;background:var(--vht-border);position:relative;overflow:hidden}
-.slot::after{content:"";position:absolute;left:10px;top:50%;width:12px;height:12px;border-radius:50%;background:var(--vht-ok);transform:translateY(-50%);box-shadow:22px 0 0 var(--vht-warn),44px 0 0 var(--vht-accent-alt)}
-.server-name{font-size:26px;font-weight:700;color:var(--vht-title)}
-.arrow{width:48px;height:48px;color:var(--vht-accent-alt);flex-shrink:0}
-.token{width:220px;border:4px solid var(--vht-accent-alt);border-radius:20px;background:var(--vht-bg);padding:14px 14px 12px;display:flex;flex-direction:column;gap:10px;box-shadow:6px 8px 0 var(--vht-accent-alt)}
-.token-head{font-size:22px;font-weight:700;color:var(--vht-accent-alt);letter-spacing:0.06em;text-transform:uppercase}
-.chip{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:12px;background:var(--vht-surface);border:2px solid var(--vht-border);font-size:22px;font-weight:600;color:var(--vht-title)}
-.chip .k{color:var(--vht-ink);font-weight:700;min-width:48px}
-.chip.aud .k{color:var(--vht-accent)}
-.apis{display:flex;flex-direction:column;gap:12px;width:160px}
-.api{border:3px solid var(--vht-border);border-radius:16px;background:var(--vht-bg);padding:14px 12px;display:flex;align-items:center;gap:10px}
-.api.ok{border-color:var(--vht-ok)}
-.api.bad{border-color:var(--vht-danger);opacity:0.55}
-.api .box{width:28px;height:28px;border-radius:6px;background:var(--vht-border)}
-.api.ok .box{background:var(--vht-ok)}
-.api.bad .box{background:var(--vht-danger)}
-.api .nm{font-size:22px;font-weight:700;color:var(--vht-title)}
-
-#badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;width:88px;height:88px;border-radius:50%;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-size:30px;font-weight:700;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px var(--vht-bg)}
+.body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:16px}
+.btn{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:3px solid var(--vht-warn);background:var(--vht-surface)}
+.btn .g{width:22px;height:22px;border-radius:5px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.btn .t{font-size:20px;font-weight:700;color:var(--vht-title)}
+/* mini control plane */
+.flow{flex:1;display:flex;align-items:center;justify-content:center;gap:8px}
+.rack{width:52px;height:72px;border:3px solid var(--vht-accent);border-radius:10px;background:var(--vht-bg);padding:8px 6px;display:flex;flex-direction:column;gap:6px}
+.slot{flex:1;border-radius:4px;background:var(--vht-border)}
+.tok{border:3px solid var(--vht-accent-alt);border-radius:12px;background:var(--vht-bg);padding:8px 10px;display:flex;flex-direction:column;gap:6px}
+.tok .h{font-size:16px;font-weight:700;color:var(--vht-accent-alt);text-transform:uppercase}
+.chip{font-size:18px;font-weight:700;color:var(--vht-title);background:var(--vht-surface);border:2px solid var(--vht-border);border-radius:8px;padding:4px 8px}
+.chip.aud{border-color:var(--vht-accent);color:var(--vht-accent)}
+.arr{color:var(--vht-accent-alt);font-size:28px;font-weight:700}
+#vs{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 0 0 6px var(--vht-bg)}
 </style>
 </head>
 <body>
-<div id="main" data-composition-id="main" data-start="0" data-duration="8" data-width="1080" data-height="1920" data-fps="30">
-  <div id="stage">
-    <div id="kicker">OAuth / OIDC · nhìn thấy chứ không chỉ đọc</div>
-    <div id="panels">
-      <div id="p-ux" class="panel">
-        <div class="panel-label">UX — những gì user thấy</div>
-        <div class="browser">
-          <div class="browser-bar">
-            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-            <div class="url"></div>
-          </div>
-          <div class="browser-body">
-            <div class="avatar" id="avatar"></div>
-            <div class="login-btn" id="login-btn">
-              <div class="g">G</div>
-              <div class="txt">Sign in with…</div>
-              <svg class="cursor" id="cursor" viewBox="0 0 36 36" aria-hidden="true">
-                <path fill="currentColor" d="M6 4 L6 30 L14 22 L20 32 L24 30 L18 20 L30 20 Z"/>
-              </svg>
-              <div class="click-ring" id="click-ring"></div>
-            </div>
+<div id="main" data-composition-id="main" data-start="0" data-duration="5" data-width="1080" data-height="1920" data-fps="30">
+  <div id="wrap">
+    <div class="kicker">Diagram · overlay trên A-roll</div>
+    <div class="row">
+      <div class="card" id="c-ux">
+        <div class="tag">UX</div>
+        <div class="mini-browser">
+          <div class="bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+          <div class="body">
+            <div class="btn"><div class="g">G</div><div class="t">Sign in</div></div>
           </div>
         </div>
       </div>
-
-      <div id="badge">vs</div>
-
-      <div id="p-cp" class="panel accent">
-        <div class="panel-label">Control plane — Keycloak quyết định</div>
-        <div class="cp-row">
-          <div class="server" id="server">
-            <div class="rack">
-              <div class="slot"></div>
-              <div class="slot"></div>
-              <div class="slot"></div>
-            </div>
-            <div class="server-name">Keycloak</div>
-          </div>
-          <svg class="arrow" id="arrow1" viewBox="0 0 48 48" aria-hidden="true">
-            <path d="M8 24 H34" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-            <path d="M28 14 L38 24 L28 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div class="token" id="token">
-            <div class="token-head">Access token</div>
-            <div class="chip" id="chip-iss"><span class="k">iss</span> realm</div>
-            <div class="chip aud" id="chip-aud"><span class="k">aud</span> orders-api</div>
-            <div class="chip" id="chip-ttl"><span class="k">exp</span> 5m</div>
-          </div>
-          <svg class="arrow" id="arrow2" viewBox="0 0 48 48" aria-hidden="true">
-            <path d="M8 24 H34" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
-            <path d="M28 14 L38 24 L28 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div class="apis" id="apis">
-            <div class="api ok" id="api-ok"><div class="box"></div><div class="nm">orders-api</div></div>
-            <div class="api bad" id="api-bad"><div class="box"></div><div class="nm">payments</div></div>
+      <div class="card accent" id="c-cp">
+        <div class="tag">Control plane</div>
+        <div class="flow">
+          <div class="rack" id="rack"><div class="slot"></div><div class="slot"></div><div class="slot"></div></div>
+          <div class="arr">→</div>
+          <div class="tok" id="tok">
+            <div class="h">token</div>
+            <div class="chip aud">aud</div>
           </div>
         </div>
       </div>
     </div>
+    <div id="vs">vs</div>
   </div>
 </div>
 <script>
 window.__timelines = window.__timelines || {};
-const css = getComputedStyle(document.documentElement);
-const accent = css.getPropertyValue("--vht-accent").trim();
+const accent = getComputedStyle(document.documentElement).getPropertyValue("--vht-accent").trim();
 const tl = gsap.timeline({ paused: true });
-
-tl.fromTo("#kicker", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
-tl.fromTo("#p-ux", { opacity: 0, y: 60, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.5)" }, 0.2);
-tl.fromTo("#avatar", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 0.45);
-tl.fromTo("#login-btn", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.6);
-tl.fromTo("#cursor", { opacity: 0, x: 40, y: 40 }, { opacity: 1, x: 0, y: 0, duration: 0.45, ease: "power2.out" }, 0.95);
-tl.fromTo("#click-ring", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1.6, duration: 0.35, ease: "power2.out" }, 1.35);
-tl.to("#click-ring", { opacity: 0, duration: 0.25, overwrite: "auto" }, 1.75);
-
-tl.fromTo("#badge", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 1.95);
-tl.fromTo("#p-cp", { opacity: 0, y: 70, scale: 0.94, boxShadow: `12px 14px 0 ${accent}` }, { opacity: 1, y: 0, scale: 1, boxShadow: `16px 18px 0 ${accent}`, duration: 0.55, ease: "back.out(1.5)" }, 2.15);
-tl.fromTo("#server", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 2.45);
-tl.fromTo("#arrow1", { opacity: 0, x: -12 }, { opacity: 1, x: 0, duration: 0.3, ease: "power2.out" }, 2.65);
-tl.fromTo("#token", { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 2.8);
-tl.fromTo("#chip-iss", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.3 }, 3.05);
-tl.fromTo("#chip-aud", { opacity: 0, x: -16, scale: 1 }, { opacity: 1, x: 0, scale: 1, duration: 0.3 }, 3.25);
-tl.fromTo("#chip-ttl", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.3 }, 3.45);
-tl.fromTo("#arrow2", { opacity: 0, x: -12 }, { opacity: 1, x: 0, duration: 0.3 }, 3.65);
-tl.fromTo("#api-ok", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 3.85);
-tl.fromTo("#api-bad", { opacity: 0, x: 24 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 4.1);
-tl.to("#chip-aud", { scale: 1.08, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut", overwrite: "auto" }, 4.4);
-
+tl.fromTo("#wrap .kicker", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35 }, 0.05);
+tl.fromTo("#c-ux", { opacity: 0, x: -50, scale: 0.92 }, { opacity: 1, x: 0, scale: 1, duration: 0.45, ease: "back.out(1.5)" }, 0.2);
+tl.fromTo("#c-cp", { opacity: 0, x: 50, scale: 0.92, boxShadow: `8px 10px 0 ${accent}` }, { opacity: 1, x: 0, scale: 1, boxShadow: `12px 14px 0 ${accent}`, duration: 0.45, ease: "back.out(1.5)" }, 0.35);
+tl.fromTo("#vs", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, 0.7);
+tl.fromTo("#tok .chip", { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power1.inOut" }, 1.2);
 window.__timelines["main"] = tl;
 </script>
 </body>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>ov-q — quote / callout aud trap</title>
+<link rel="stylesheet" href="tokens.css" />
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body,#main{background:transparent}
+#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif}
+#card{position:absolute;left:64px;right:64px;top:640px;border:5px solid var(--vht-danger);border-radius:32px;background:var(--vht-surface);box-shadow:12px 14px 0 var(--vht-danger);padding:32px 28px;display:flex;flex-direction:column;gap:20px}
+.status{display:flex;gap:14px}
+.pill{padding:10px 16px;border-radius:999px;font-size:24px;font-weight:700;border:3px solid var(--vht-border);background:var(--vht-bg);color:var(--vht-title)}
+.pill.ok{border-color:var(--vht-ok);color:var(--vht-ok)}
+.pill.bad{border-color:var(--vht-danger);color:var(--vht-danger)}
+.quote{font-size:40px;font-weight:700;color:var(--vht-title);letter-spacing:-0.02em;line-height:1.25}
+.quote .aud{color:var(--vht-accent)}
+.meta{display:flex;align-items:center;gap:12px;font-size:26px;font-weight:600;color:var(--vht-ink)}
+.chip{padding:8px 12px;border-radius:10px;background:var(--vht-bg);border:2px solid var(--vht-accent);color:var(--vht-accent);font-weight:700}
+</style>
+</head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="5" data-width="1080" data-height="1920" data-fps="30">
+  <div id="card">
+    <div class="status">
+      <div class="pill ok" id="p-ok">Login ✓</div>
+      <div class="pill bad" id="p-bad">API 401</div>
+    </div>
+    <div class="quote">Không phải API hư — token thiếu <span class="aud">aud</span> đúng</div>
+    <div class="meta">Hay gặp mặc định <span class="chip">account</span> → chưa map API</div>
+  </div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const danger = getComputedStyle(document.documentElement).getPropertyValue("--vht-danger").trim();
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#card", { opacity: 0, y: 70, scale: 0.94, boxShadow: `12px 14px 0 ${danger}` }, { opacity: 1, y: 0, scale: 1, boxShadow: `16px 18px 0 ${danger}`, duration: 0.5, ease: "back.out(1.5)" }, 0.1);
+tl.fromTo("#p-ok", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3 }, 0.4);
+tl.fromTo("#p-bad", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3 }, 0.55);
+tl.fromTo("#card .chip", { scale: 1 }, { scale: 1.1, duration: 0.25, yoyo: true, repeat: 1 }, 1.2);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

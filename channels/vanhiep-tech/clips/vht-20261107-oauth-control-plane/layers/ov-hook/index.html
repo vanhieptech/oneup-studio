@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>ov-hook — overlay hook card</title>
+<link rel="stylesheet" href="tokens.css" />
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body,#main{background:transparent}
+#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif}
+#card{position:absolute;left:64px;right:64px;top:520px;border:5px solid var(--vht-accent);border-radius:36px;background:var(--vht-surface);box-shadow:12px 14px 0 var(--vht-accent);padding:40px 36px;display:flex;flex-direction:column;gap:22px}
+.row{display:flex;align-items:center;gap:22px}
+.badge{width:88px;height:88px;border-radius:22px;background:var(--vht-bg);border:4px solid var(--vht-warn);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.badge .g{width:44px;height:44px;border-radius:10px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-weight:700;font-size:28px;display:flex;align-items:center;justify-content:center}
+.kicker{font-size:26px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--vht-accent)}
+.title{font-size:52px;font-weight:700;letter-spacing:-0.03em;line-height:1.12;color:var(--vht-title)}
+.sub{font-size:30px;font-weight:400;color:var(--vht-ink);line-height:1.35}
+</style>
+</head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="4" data-width="1080" data-height="1920" data-fps="30">
+  <div id="card">
+    <div class="kicker">Hook</div>
+    <div class="row">
+      <div class="badge"><div class="g">G</div></div>
+      <div class="title">Nút «Sign in» xong… chưa xong bảo mật API</div>
+    </div>
+    <div class="sub">Những gì user thấy ≠ nơi quyết định token</div>
+  </div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const accent = getComputedStyle(document.documentElement).getPropertyValue("--vht-accent").trim();
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#card", { opacity: 0, y: 80, scale: 0.92, boxShadow: `12px 14px 0 ${accent}` }, { opacity: 1, y: 0, scale: 1, boxShadow: `16px 18px 0 ${accent}`, duration: 0.55, ease: "back.out(1.6)" }, 0.1);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

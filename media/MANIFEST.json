@@ -558,9 +558,33 @@
   "source": "TdevDemo render 2026-10-15 (transitions.dev ports)"
  },
  {
-  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mp4",
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4",
   "size": 541614,
   "sha256": "f7f866dd3ba7bb19f0f260f91a3c855794703dfa56d40df1c69d66cfb94ca567",
-  "source": "ov-d01 visual context redesign"
+  "source": "vht layer pack 2026-11-08"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov",
+  "size": 29200922,
+  "sha256": "e056c77946cf494028da2d3be50cfb4d3779320241481c16fc7ce5271547bf75",
+  "source": "vht layer pack 2026-11-08"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-hook.mov",
+  "size": 23992143,
+  "sha256": "ee5247dc84dc36ac351ce1907245d72568c2387bccac0459486a73f23ecf2ea0",
+  "source": "vht layer pack 2026-11-08"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov",
+  "size": 17200699,
+  "sha256": "503d5edb4f557092a377d6b8a7b325260fc4db7a81235abc0abd0501d285c417",
+  "source": "vht layer pack 2026-11-08"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-q.mov",
+  "size": 27700054,
+  "sha256": "d6b7143799d45439df1dd36a969855d366256006fac863b8331d75f2f99ef1c8",
+  "source": "vht layer pack 2026-11-08"
  }
 ]

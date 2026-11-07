@@ -76,8 +76,8 @@
   },
   "layerCatalog": ["ov-hook", "ov-d", "cu", "ov-l3", "ov-q"],
   "handoff": {
-    "default": "solid-mp4",
     "cutaway": "solid-mp4",
-    "note": "Solid One Dark bg. Colors only from this file / tokens.css."
+    "overlay": "prores4444-mov-alpha",
+    "note": "cu-* = solid MP4; ov-* = ProRes alpha. Colors only from this file / tokens.css. Never pink."
   }
 }

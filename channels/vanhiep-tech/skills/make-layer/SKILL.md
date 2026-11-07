@@ -27,21 +27,24 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
    ```
 5. Colors: **only** `var(--vht-*)` / names in `brand-tokens.json`. No raw invented hex in HTML/CSS/JS (GSAP may read computed `--vht-accent`).
 6. `cd` layer dir → `npm i` (gsap) → `npx hyperframes@0.8.150 check`
-7. Render **solid MP4** (`background: var(--vht-bg)` — never transparent / never pink preview):
+7. Render by type:
+   - **`cu-*` cutaway / B-roll** — solid `var(--vht-bg)` → `--format mp4`
+   - **`ov-*` overlay** — `html,body,#main{background:transparent}` + brand cards → `--format mov`
    ```bash
-   npx hyperframes@0.8.150 render --format mp4 \
-     -o ../../../../../../media/channels/vanhiep-tech/<clip>/<layer>.mp4 .
+   # cutaway
+   npx hyperframes@0.8.150 render --format mp4 -o .../cu-01.mp4 .
+   # overlay
+   npx hyperframes@0.8.150 render --format mov -o .../ov-d01.mov .
    ```
 8. Update `media/MANIFEST.json` after binary lands on disk.
 9. Point CapCut import path in `script.md` layer table.
 
 ## Design rules
-- **Brand colors only:** `channels/vanhiep-tech/brand/brand-tokens.json` + `tokens.css`
-- **Always solid background** `var(--vht-bg)` on `#main` / `html` / `body`
-- **Banned:** pink, magenta, fuchsia; any hex not in tokens
-- No chibi / OneUp logo / cam OneUp
-- Always motion (fromTo children; no static PNG as final deliverable)
-- `talking-head-recut` = layout reference only — do not composite A-roll here
+- **Brand colors only:** `brand-tokens.json` + `tokens.css`
+- Cutaway: full solid bg. Overlay: transparent canvas + solid brand cards/bars
+- **Banned:** pink, magenta, fuchsia; invented hex
+- Always motion; no chibi / OneUp cam accent
+- `talking-head-recut` = layout reference only
 
 ## CapCut smoke
 See `channels/vanhiep-tech/docs/capcut-smoke.md`.
