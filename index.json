@@ -5,7 +5,7 @@
    "id": "agents",
    "type": "guide",
    "status": "active",
-   "updated": "2026-10-28",
+   "updated": "2026-11-07",
    "path": "AGENTS.md",
    "title": "AGENTS.md: cách AI làm việc trong repo này"
   },
@@ -160,6 +160,22 @@
    "updated": "2026-10-14",
    "path": "content/archive/clip-01-implementation-intention/final/script-final.md",
    "title": "Clip 01 FINAL v2: \"Mai học\" → nếu… thì… (bản đủ thông tin)"
+  },
+  {
+   "id": "content.clips.b-donlientay-01.script-v1-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r3 (S7 «Steel», caption b02 khớp S3, theo review 1a8bd32). Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-31",
+   "path": "content/clips/b-donlientay-01/script-v1-draft-opencreator.md",
+   "title": "Dọn liền tay v1 r1 — lời thoại theo beat"
+  },
+  {
+   "id": "content.clips.b-tietkiem-01-musk-quy-du-phong.script-v1-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r3 (S3 theo câu an toàn Deep Research ac185a6, S7 và caption b02/b04/b06 sửa theo review 1a8bd32). --l088 mâu thuẫn mức C, Rule Reviewer báo Hiệp. Chưa Chốt.",
+   "updated": "2026-10-31",
+   "path": "content/clips/b-tietkiem-01-musk-quy-du-phong/script-v1-draft-opencreator.md",
+   "title": "Musk → quỹ dự phòng, v1 r1 — lời thoại theo beat"
   },
   {
    "id": "clip-02.script-final",
@@ -634,6 +650,254 @@
    "title": "Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual)"
   },
   {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.before-craft-qa.opencreator-clip05-script-r11.4-draft-2026-11-07",
+   "type": "script",
+   "status": "draft — chưa Chốt, không tựpass",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/before-craft-qa/opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+   "title": "Actual draft B patch2 — không trình xin Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.before-craft-qa.opencreator-clip05-storyboard-r11.4-plan-2026-11-07",
+   "type": "storyboard-plan",
+   "status": "draft-planning-only-no-images",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/before-craft-qa/opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md",
+   "title": "CHƯA CHUẨN BỊ ẢNH"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11-factcheck-2026-11-07",
+   "type": "factcheck",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-factcheck-2026-11-07.md",
+   "title": "Fact-check clip05 r11 — không sửa script"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-rule-review-2026-11-07.md",
+   "title": "Rule review clip05 r11 — CHƯA ĐẠT"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.1-factcheck-2026-11-07",
+   "type": "factcheck",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.1-factcheck-2026-11-07.md",
+   "title": "Fact-check clip05 r11.1"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.1-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.1-rule-review-2026-11-07.md",
+   "title": "Rule review clip05 r11.1 — CHƯA ĐẠT"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.2-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.2-rule-review-2026-11-07.md",
+   "title": "Clip05 r11.2 — independent rule review"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.3-plan-revision-notes-2026-11-07",
+   "type": "revision-notes",
+   "status": "draft",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.3-plan-revision-notes-2026-11-07.md",
+   "title": "Clip05 r11.3 — ghi nhận lỗi trước sửa, ngoài repo theo phạm vi"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.3-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.3-rule-review-2026-11-07.md",
+   "title": "Rule Review clip05 r11.3 — review only, 07/11/2026 (Asia/Saigon)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-factcheck-2026-11-07",
+   "type": "factcheck",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-factcheck-2026-11-07.md",
+   "title": "Clip05 r11.4 — fact-check actual artifacts"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-gate-evidence-note-2026-11-07",
+   "type": "audit",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-gate-evidence-note-2026-11-07.md",
+   "title": "Clip05 r11.4 — finite READ-ONLY gate-evidence audit"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-plan-update1-report-2026-11-07",
+   "type": "plan-report",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update1-report-2026-11-07.md",
+   "title": "Clip05 r11.4 plan-update1 — delta / nguồn / validation"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-plan-update1-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update1-rule-review-2026-11-07.md",
+   "title": "Clip05 r11.4 plan-update1 — delta Rule Review"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-plan-update2-report-2026-11-07",
+   "type": "plan-report",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update2-report-2026-11-07.md",
+   "title": "Clip05 r11.4 plan-update2 — R16/R54/Deep mapping"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-plan-update2-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update2-rule-review-2026-11-07.md",
+   "title": "Clip05 r11.4 plan-update2 — Rule Reviewer delta"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11.4-rule-review-2026-11-07",
+   "type": "review",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-rule-review-2026-11-07.md",
+   "title": "Clip05 r11.4 — independent Rule Review, 07/11/2026 (Asia/Saigon)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-concept-prep-2026-11-07",
+   "type": "prep",
+   "status": "Reviewer ĐÃ CHỌN concept 2 lúc 14:14 (thông tin chuyển); bản nháp hiện hành r11.1 (r11 CHƯA ĐẠT) ở /workspace/opencreator-clip05-script-r11.1-draft-2026-11-07.md. Không voice/render.",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-concept-prep-2026-11-07.md",
+   "title": "clip-05 hướng C: điều cần tránh và 3 concept"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-outline-r11.2-2026-11-07",
+   "type": "outline",
+   "status": "blocked-at-outline-not-a-script",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-outline-r11.2-2026-11-07.md",
+   "title": "Kết quả trước khi viết lời"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-prep-template-2026-11-07",
+   "type": "prep",
+   "status": "chuẩn bị, chưa có lời thoại, chưa kiểm giọng",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-prep-template-2026-11-07.md",
+   "title": "clip-05: bài học + mẫu trống (07/11/2026, giờ VN)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-script-r11-draft-2026-11-07",
+   "type": "script-draft",
+   "status": "DRAFT — chưa review, manual gate còn mở, đọc to CHƯA KIỂM",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11-draft-2026-11-07.md",
+   "title": "Clip-05 r11 — bản nháp đầy đủ"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-script-r11.1-draft-2026-11-07",
+   "type": "script-draft",
+   "status": "DRAFT r11.1 — sửa theo review r11 CHƯA ĐẠT; chưa review lại; đọc to / nghe / giọng CHƯA KIỂM",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.1-draft-2026-11-07.md",
+   "title": "Clip-05 r11.1 — bản nháp sửa"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-script-r11.2-draft-2026-11-07",
+   "type": "script",
+   "status": "draft — chưa tự pass; chưa Chốt",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.2-draft-2026-11-07.md",
+   "title": "Bản lời để kiểm — không phải bản trình Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-script-r11.3-draft-2026-11-07",
+   "type": "script",
+   "status": "draft — chưa Chốt, không tự pass",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.3-draft-2026-11-07.md",
+   "title": "Actual draft r11.3 — không phải bản trình xin Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-script-r11.4-draft-2026-11-07",
+   "type": "script",
+   "status": "draft — chưa Chốt, không tựpass",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+   "title": "Actual draft B patch2 — không trình xin Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.2-plan-2026-11-07",
+   "type": "storyboard-plan",
+   "status": "draft-planning-only-no-images",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.2-plan-2026-11-07.md",
+   "title": "Clip05 r11.2 — storyboard FILE KẾ HOẠCH"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.3-plan-2026-11-07",
+   "type": "storyboard-plan",
+   "status": "draft-planning-only-no-images",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.3-plan-2026-11-07.md",
+   "title": "CHƯA CHUẨN BỊ ẢNH — không phải preview đã duyệt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-2026-11-07",
+   "type": "storyboard-plan",
+   "status": "draft-planning-only-no-images",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md",
+   "title": "CHƯA CHUẨN BỊ ẢNH"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07",
+   "type": "storyboard",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md",
+   "title": "Clip05 r11.4 plan-update1 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07",
+   "type": "storyboard",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md",
+   "title": "Clip05 r11.4 plan-update2 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.evidence-lines-v10",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-31",
+   "path": "content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md",
+   "title": "Câu dẫn chứng cho clip-05 v10 (Deep Research)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.factcheck-script-v9r92",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-30",
+   "path": "content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md",
+   "title": "Deep Research soát fact clip-05 v9 r9.2"
+  },
+  {
    "id": "clip-05.post-checklist",
    "type": "doc",
    "status": "ready",
@@ -714,12 +978,28 @@
    "title": "Verdict: ĐẠT ở tầng script. Không còn lỗi chặn. Hiệp quyết H2 rồi Chốt."
   },
   {
+   "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r53b-trend",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-28",
+   "path": "content/clips/clip-05-hoc-mot-dem/review-script-v5r53b-trend.md",
+   "title": "Review r5.3b theo nghiên cứu trend đã lưu (L-090)"
+  },
+  {
    "id": "content.clips.clip-05-hoc-mot-dem.script-v1-draft-opencreator",
    "type": null,
    "status": "nháp v1 — CHƯA Chốt; chờ Deep Research xác nhận lời + Rule Reviewer chấm. Không voice/render trước «Chốt» (L-072).",
    "updated": "2026-10-21",
    "path": "content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md",
    "title": "clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v10-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r10.2 — vá 2 theo review-script-v10r101 (c1df666) hướng (b) Rule Reviewer chốt: ví dụ là đọc lại chương hay nhất để nhớ, ai hỏi (bạn bè) và lúc nào (trưa nay), mục đích «muốn nhớ để làm theo», S11 theo câu Deep Research, «nói hoặc viết ra», caption b02/b03/b05/b06 khớp lời. Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-31",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v10-draft-opencreator.md",
+   "title": "clip-05 v10 r10.2 — lời thoại theo beat"
   },
   {
    "id": "content.clips.clip-05-hoc-mot-dem.script-v2-draft-opencreator",
@@ -762,10 +1042,74 @@
    "title": "clip-05 v5 r5 — lời thoại theo beat"
   },
   {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v6-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r6.12 — chỉ sửa b05 theo Deep Research: «vẫn chỉ mở sách hai lần như trước» thay «đọc hai lần». Các beat khác giữ nguyên r6.11. Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-28",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v6-draft-opencreator.md",
+   "title": "clip-05 v6 r6 — lời thoại theo beat"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v7-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r7.3 — vòng vá 3 trên r7: sửa G1–G3 (review v7r72 f5cb827) + 2 góp ý Deep Research (S9 «cũng khuyên», nhãn hình b03 «2 ngày sau lần đọc cuối»). Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-29",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v7-draft-opencreator.md",
+   "title": "clip-05 v7 r7 — lời thoại theo beat"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v8-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r8.2 — vá 1 trên r8: J1 (S4 viết lại, một lớp câu), J2 (caption b02 theo Deep Research), J3 (caption b04 bỏ «it»); giữ S7 «mới đọc lại». Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-29",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v8-draft-opencreator.md",
+   "title": "clip-05 v8 r8 — lời thoại theo beat"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.script-v9-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r9.2 — vá 2: M1 (hook mở bằng nỗi đau «hay lắm», trend chuyển vào cảnh đồng nghiệp bàn ở b02), M2 (một chương xuyên suốt), M3 (không chữ trong hình), S2 theo Deep Research. Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-30",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v9-draft-opencreator.md",
+   "title": "clip-05 v9 r9.2 — lời thoại theo beat"
+  },
+  {
+   "id": "content.clips.clip-06-bong-hoa-chua-no.review-script-v1r1",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-31 18:12 (UTC+7)",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/review-script-v1r1.md",
+   "title": "Review clip-06 v1 r1"
+  },
+  {
+   "id": "content.clips.clip-06-bong-hoa-chua-no.review-script-v1r11",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-31 18:20 (UTC+7)",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/review-script-v1r11.md",
+   "title": "Review clip-06 v1 r1.1"
+  },
+  {
+   "id": "content.clips.clip-06-bong-hoa-chua-no.review-script-v1r12",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-31 18:25 (UTC+7)",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/review-script-v1r12.md",
+   "title": "Review clip-06 v1 r1.2"
+  },
+  {
+   "id": "content.clips.clip-06-bong-hoa-chua-no.script-v1-draft-opencreator",
+   "type": null,
+   "status": "DRAFT r1.2, vá 2 theo review-script-v1r11 (9e2e273): S5 bỏ vế hỏi lửng, đưa «vào lúc cố định» vào thiết kế nghiên cứu (cẩm nang 4.12: làm mỗi ngày trong bối cảnh cố định); S7 bỏ «miễn», rút từ chính thiết kế đó; S10 «có thể» thay «sẽ có ngày». Chưa Chốt, không giọng/render.",
+   "updated": "2026-10-31",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/script-v1-draft-opencreator.md",
+   "title": "clip-06 v1 r1.2 — lời thoại theo beat"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-10-28",
+   "updated": "2026-11-07",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -853,7 +1197,7 @@
    "id": "storage",
    "type": "convention",
    "status": "active",
-   "updated": "2026-10-16",
+   "updated": "2026-11-07",
    "path": "docs/conventions/storage.md",
    "title": "Quy ước lưu trữ (luật 65, L-034)"
   },
@@ -1114,6 +1458,14 @@
    "title": "Đánh giá Local Deep Research (LDR) cho kiểm chứng fact trước khi viết script TikTok @hi.oneup"
   },
   {
+   "id": "research.agents.opencreator-clip05-learning-2026-11-07",
+   "type": null,
+   "status": "research-only, chờ Rule Reviewer kiểm",
+   "updated": "2026-11-07",
+   "path": "research/agents/opencreator-clip05-learning-2026-11-07.md",
+   "title": "clip-05 «tự kiểm khi đọc»: đã học được gì (07/11/2026, giờ VN)"
+  },
+  {
    "id": "research.opencreator",
    "type": "research",
    "status": "reference",
@@ -1218,6 +1570,46 @@
    "title": "Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi)"
   },
   {
+   "id": "research.fact-packages.clip05-texthip-fact-bridge-2026-11-07",
+   "type": null,
+   "status": "fact-scope-checked-trend-pending-social-research",
+   "updated": "2026-11-07",
+   "path": "research/fact-packages/clip05-texthip-fact-bridge-2026-11-07.md",
+   "title": "Kết luận"
+  },
+  {
+   "id": "research.fact-packages.factcheck-ai-otp-2026-11-04",
+   "type": null,
+   "status": null,
+   "updated": "2026-11-04",
+   "path": "research/fact-packages/factcheck-ai-otp-2026-11-04.md",
+   "title": "Deep Research soát fact trend AI lấy OTP (arXiv 2610.35835)"
+  },
+  {
+   "id": "research.fact-packages.factcheck-clip05-lock-2026-11-07",
+   "type": null,
+   "status": "draft-awaiting-repo-archive",
+   "updated": "2026-11-07",
+   "path": "research/fact-packages/factcheck-clip05-lock-2026-11-07.md",
+   "title": "Phạm vi hiện tại"
+  },
+  {
+   "id": "research.fact-packages.factcheck-musk-donlientay-r1",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-31",
+   "path": "research/fact-packages/factcheck-musk-donlientay-r1.md",
+   "title": "Deep Research soát fact: Musk/5.27 r1 (8e9a02c) + Dọn liền tay/4.9 r1 (12aa6ce)"
+  },
+  {
+   "id": "research.fact-packages.factcheck-trends-2026-10-31",
+   "type": null,
+   "status": null,
+   "updated": "2026-10-31",
+   "path": "research/fact-packages/factcheck-trends-2026-10-31.md",
+   "title": "Deep Research soát fact 3 trend 31/10 (5.27, 4.12, 4.9)"
+  },
+  {
    "id": "research.motion-layer",
    "type": "research",
    "status": "reference",
@@ -1285,7 +1677,7 @@
    "id": "research.motionmaxxing",
    "type": "reference",
    "status": "ready",
-   "updated": "2026-10-16",
+   "updated": "2026-11-07",
    "path": "research/references/motionmaxxing-notes.md",
    "title": "motionmaxxing → Remotion mapping (comic shorts)"
   },
@@ -1602,10 +1994,98 @@
    "title": "Trend digest 2026-10-28 (Thứ Tư)"
   },
   {
+   "id": "trends-2026-10-29",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-29",
+   "path": "research/trends/2026-10-29/digest.md",
+   "title": "Trend digest 2026-10-29 (Thứ Năm)"
+  },
+  {
+   "id": "trends-2026-10-30",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-30",
+   "path": "research/trends/2026-10-30/digest.md",
+   "title": "Trend digest 2026-10-30 (Thứ Sáu)"
+  },
+  {
+   "id": "trends-2026-10-31",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-10-31",
+   "path": "research/trends/2026-10-31/digest.md",
+   "title": "Trend digest 2026-10-31 (Thứ Bảy)"
+  },
+  {
+   "id": "trends-2026-11-01",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-01",
+   "path": "research/trends/2026-11-01/digest.md",
+   "title": "Trend digest 2026-11-01 (Chủ nhật, kèm tổng hợp tuần W44)"
+  },
+  {
+   "id": "trends-2026-11-02",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-02",
+   "path": "research/trends/2026-11-02/digest.md",
+   "title": "Trend digest 2026-11-02 (thứ Hai)"
+  },
+  {
+   "id": "trends-2026-11-03",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-03",
+   "path": "research/trends/2026-11-03/digest.md",
+   "title": "Trend digest 2026-11-03 (thứ Ba)"
+  },
+  {
+   "id": "trends-2026-11-04",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-04",
+   "path": "research/trends/2026-11-04/digest.md",
+   "title": "Trend digest 2026-11-04 (thứ Tư)"
+  },
+  {
+   "id": "trends-2026-11-05",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-05",
+   "path": "research/trends/2026-11-05/digest.md",
+   "title": "Trend digest 2026-11-05 (thứ Năm)"
+  },
+  {
+   "id": "trends-2026-11-06",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-06",
+   "path": "research/trends/2026-11-06/digest.md",
+   "title": "Trend digest 2026-11-06 (thứ Sáu)"
+  },
+  {
+   "id": "research.trends.2026-11-07.clip-05-texthip-trend",
+   "type": "trend-registry",
+   "status": "archived",
+   "updated": "2026-11-07",
+   "path": "research/trends/2026-11-07/clip-05-texthip-trend.md",
+   "title": "Registry trend texthip cho clip-05"
+  },
+  {
+   "id": "trends-2026-11-07",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-07",
+   "path": "research/trends/2026-11-07/digest.md",
+   "title": "Trend digest 2026-11-07 (thứ Bảy)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-10-28",
+   "updated": "2026-11-07",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -1613,7 +2093,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-10-28",
+   "updated": "2026-11-07",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -1634,10 +2114,18 @@
    "title": "Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10)"
   },
   {
+   "id": "trends-weekly-2026-W44",
+   "type": "trend-weekly",
+   "status": "draft-needs-review",
+   "updated": "2026-11-01",
+   "path": "research/trends/weekly/2026-W44.md",
+   "title": "Tổng hợp tuần 2026-W44 (thứ Hai 26/10 → Chủ nhật 01/11)"
+  },
+  {
    "id": "refs",
    "type": "reference",
    "status": "active",
-   "updated": "2026-10-16",
+   "updated": "2026-11-07",
    "path": "resources/refs/README.md",
    "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
   },
@@ -1656,11 +2144,12 @@
    "title": "anidoodle"
   },
   {
-   "id": "skill.awesome-ai-motion",
-   "type": "skill",
+   "id": "refs.motionmaxxing.integration",
+   "type": "vendor-note",
    "status": "active",
-   "path": "resources/refs/awesome-ai-motion/SKILL.md",
-   "title": "awesome-ai-motion"
+   "updated": "2026-11-07",
+   "path": "resources/refs/motionmaxxing/INTEGRATION.md",
+   "title": "motionmaxxing — vendored copy + OneUp integration"
   },
   {
    "id": "skill.motionmaxxing",
@@ -1668,41 +2157,6 @@
    "status": "active",
    "path": "resources/refs/motionmaxxing/SKILL.md",
    "title": "motionmaxxing"
-  },
-  {
-   "id": "skill.skill",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/agent/skill/SKILL.md",
-   "title": "transitions-agent"
-  },
-  {
-   "id": "skill.refine-live",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md",
-   "title": "refine-live"
-  },
-  {
-   "id": "skill.transitions-dev",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/skills/transitions-dev/SKILL.md",
-   "title": "transitions-dev"
-  },
-  {
-   "id": "skill.transitions-polish",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/skills/transitions-polish/SKILL.md",
-   "title": "transitions-polish"
-  },
-  {
-   "id": "skill.transitions-ui-generation",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md",
-   "title": "transitions-ui-generation"
   },
   {
    "id": "vn-thesaurus",
@@ -2841,6 +3295,28 @@
  ],
  "clips": [
   {
+   "id": "b-donlientay",
+   "path": "content/clips/b-donlientay-01",
+   "theme": null,
+   "files": [
+    "review-script-v1r1.md",
+    "review-script-v1r2.md",
+    "review-script-v1r3.md",
+    "script-v1-draft-opencreator.md"
+   ]
+  },
+  {
+   "id": "b-tietkiem",
+   "path": "content/clips/b-tietkiem-01-musk-quy-du-phong",
+   "theme": null,
+   "files": [
+    "review-script-v1r1.md",
+    "review-script-v1r2.md",
+    "review-script-v1r3.md",
+    "script-v1-draft-opencreator.md"
+   ]
+  },
+  {
    "id": "clip-02",
    "path": "content/clips/clip-02-procrastination-discomfort",
    "theme": null,
@@ -2874,21 +3350,68 @@
    "path": "content/clips/clip-05-hoc-mot-dem",
    "theme": null,
    "files": [
+    "archive",
+    "evidence-lines-v10.md",
     "fact-package-v5.md",
     "fact-package.md",
+    "factcheck-script-v9r92.md",
     "final",
+    "review-script-v10r10.md",
+    "review-script-v10r101.md",
+    "review-script-v10r102.md",
     "review-script-v5r2.md",
     "review-script-v5r3.md",
     "review-script-v5r4.md",
     "review-script-v5r5.md",
     "review-script-v5r52.md",
     "review-script-v5r53.md",
+    "review-script-v5r53b-trend.md",
+    "review-script-v6r6.md",
+    "review-script-v6r610.md",
+    "review-script-v6r611.md",
+    "review-script-v6r612.md",
+    "review-script-v6r612b.md",
+    "review-script-v6r62.md",
+    "review-script-v6r64.md",
+    "review-script-v6r65.md",
+    "review-script-v6r66.md",
+    "review-script-v6r67.md",
+    "review-script-v6r67b.md",
+    "review-script-v6r68.md",
+    "review-script-v6r68b.md",
+    "review-script-v6r69.md",
+    "review-script-v7r7.md",
+    "review-script-v7r71.md",
+    "review-script-v7r72.md",
+    "review-script-v7r73.md",
+    "review-script-v8r8.md",
+    "review-script-v8r82.md",
+    "review-script-v9r9.md",
+    "review-script-v9r91.md",
+    "review-script-v9r92.md",
     "script-v1-draft-opencreator.md",
+    "script-v10-draft-opencreator.md",
     "script-v2-draft-opencreator.md",
     "script-v3-draft-opencreator.md",
     "script-v4-LOCKED.md",
     "script-v4-draft-opencreator.md",
-    "script-v5-draft-opencreator.md"
+    "script-v5-draft-opencreator.md",
+    "script-v6-draft-opencreator.md",
+    "script-v7-draft-opencreator.md",
+    "script-v8-draft-opencreator.md",
+    "script-v9-draft-opencreator.md"
+   ]
+  },
+  {
+   "id": "clip-06",
+   "path": "content/clips/clip-06-bong-hoa-chua-no",
+   "theme": null,
+   "files": [
+    "factcheck-script-v1r12.md",
+    "review-script-v1r1.md",
+    "review-script-v1r11.md",
+    "review-script-v1r12.md",
+    "script-v1-draft-opencreator.md"
    ]
   }
  ],
