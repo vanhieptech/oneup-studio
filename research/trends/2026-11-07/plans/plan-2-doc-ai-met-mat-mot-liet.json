@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-doc-ai-met-mat-mot-liet",
+ "title": "[STUB] Dev than mệt vì phải đọc quá nhiều chữ AI mỗi ngày. Một cái liếc cũng đắt — sách 3.6",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "x-ai-reading-fatigue",
+  "bridge_id": "B-airead-01",
+  "lesson": "3.6 Một cái liếc / ngắt quãng vài giây đắt hơn bạn nghĩ (chi phí chuyển đổi chú ý). Hành động: khi nhờ AI viết, chỉ mở đúng một khung trả lời, đọc một lần có mục tiêu, rồi tắt — không để mười tab output song song. Tránh AI-jobs generic.",
+  "angle": "empathy / data",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: dùng AI xong lại mệt vì phải đọc quá nhiều chữ model ([X News](https://x.com/i/trending/2118406568739770865)). Góc của mình: không phải «AI xấu». Cái đắt là mỗi lần mắt nhảy sang một khối chữ mới — 3.6 nói ngắt quãng vài giây cũng đủ làm đứt mạch. +1 hôm nay: một câu hỏi, một khung trả lời, đọc xong đóng."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "doc-ai-met-mat-mot-liet.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có người viết đúng một câu: chán đọc output của model quá, chưa bao giờ trong đời phải đọc nhiều chữ đến vậy.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Tired of reading model output.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "doc-ai-met-mat-mot-liet.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Feed đang đầy dân code gật đầu. Mình cũng từng hỏi một câu, nhận cả trang.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One question, a wall of text.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "doc-ai-met-mat-mot-liet.b03",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi hỏi lại cho «gọn hơn», lại thêm một trang nữa. Cứ thế cả buổi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Ask again, another page.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "doc-ai-met-mat-mot-liet.b04",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dễ nghĩ: tại mình không giỏi đọc nhanh.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Easy to blame yourself.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "doc-ai-met-mat-mot-liet.b05",
+   "duration": 9,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách nói góc khác: một cái liếc vài giây cũng đủ làm đứt mạch làm việc. Càng nhiều khối chữ nhảy vào, càng nhiều lần cắt.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Book 3.6: a glance costs.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "doc-ai-met-mat-mot-liet.b06",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Không phải bảo bỏ AI. Chỉ đổi cách mở nó.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Don't quit AI — change how.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "doc-ai-met-mat-mot-liet.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một câu hỏi. Một khung trả lời. Đọc một lần có mục tiêu, rồi đóng.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "One ask, one pane, then close.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "doc-ai-met-mat-mot-liet.b08",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đừng để mười tab output song song như mười cuộc họp chen ngang.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "No ten output tabs.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "doc-ai-met-mat-mot-liet.b09",
+   "duration": 12,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một cộng một hôm nay: hỏi xong, đọc xong, đóng. Mắt bạn sẽ nhẹ hơn feed.",
+     "start": 0.3,
+     "end": 11.7
+    }
+   ],
+   "caption": {
+    "text": "+1: ask, read, close.",
+    "start": 0.3,
+    "end": 11.7
+   }
+  }
+ ]
+}

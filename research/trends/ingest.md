@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-11-06
+updated: 2026-11-07
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -261,6 +261,14 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | x-vibe-coding-productivity-trap | Vibe coding: cảm giác làm được mà chẳng ship | tech/work | ok | 2026-11-06 | 2026-11-06 | 1 | [X News](https://x.com/i/trending/2118413816937714108) |
 | vne-phim-ai-thoi-tong | Phim AI thời Tống «6 tỷ lượt xem» (số từ báo, chưa tự kiểm) | viral/phone | ok | 2026-11-06 | 2026-11-06 | 1 | [VnExpress](https://vnexpress.net/phim-ai-boi-canh-thoi-tong-gay-sot-voi-6-ty-luot-xem-5141207.html) |
 
+| bone-deep-tiredness | X: mệt mà ngủ thêm cũng không hết (~6h33 từ tóm tắt, chưa tự kiểm) | habits/sleep | ok | 2026-11-07 | 2026-11-07 | 1 | [X News](https://x.com/i/trending/2118649260149494132) |
+| ai-reading-fatigue | Dev mệt vì đọc quá nhiều output AI | tech/work | ok | 2026-11-07 | 2026-11-07 | 1 | [X News](https://x.com/i/trending/2118406568739770865) |
+| tt-hoaquynh-chon-dung | TikTok còn trẻ chọn đúng thứ đáng làm (@hoaquynh0000, 381k) | viral/habits | ok | 2026-11-07 | 2026-11-07 | 1 | [TikTok @hoaquynh0000](https://www.tiktok.com/@hoaquynh0000/video/7696719796678774034) |
+| x-nonchalance-peace | Ngừng để ý chuyện không kiểm soát được (nonchalance) | social debates | ok | 2026-11-07 | 2026-11-07 | 1 | [X News](https://x.com/i/trending/2118735323895337000) |
+| genk-den-ban-moi-mat | Genk: mỏi mắt — xem lại đèn bàn, đừng chỉ đổ lỗi máy | tech/habits | ok | 2026-11-07 | 2026-11-07 | 1 | [Genk](https://genk.vn/hay-bi-moi-mat-dung-voi-do-loi-cho-may-tinh-dien-thoai-den-ban-ban-dang-dung-co-the-moi-la-thu-can-xem-lai-165261106165921461.chn) |
+| kenh14-tien-an-9-6 | Gia đình 4 người giảm tiền ăn 9→6 triệu/tháng | money | caution | 2026-11-07 | 2026-11-07 | 1 | [Kenh14](https://kenh14.vn/tu-9-trieu-xuong-6-trieu-tien-an-moi-thang-gia-dinh-4-nguoi-tiet-kiem-them-3-trieu-nhung-phai-thay-doi-nhung-gi-215261106072524463.chn) |
+| vne-ai-phone-lock | AI lấy dữ liệu từ điện thoại đang khóa | tech/security | ok | 2026-11-07 | 2026-11-07 | 1 | [VnExpress](https://vnexpress.net/ai-lay-du-lieu-tu-dien-thoai-dang-khoa-the-nao-5141195.html) |
+
 ## Bridges (trend → khoảnh khắc → bài học → hook)
 | id | Trend | Khoảnh khắc | Bài học (phần.mục) | Hook VI | Góc | Đích | Trạng thái | first |
 |---|---|---|---|---|---|---|---|---|
@@ -377,6 +385,10 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-gameenergy-01 | x-adult-gamers-post-work | trên xe về nghĩ tối chơi một ván, về nhà mở máy rồi ngủ gật | 3.11 (Brooks & Lack 2006 — Deep Research xác nhận trước khi nêu tên) | "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế." (P10+P12) | empathy / data | đăng #16 (3.11, LIGHT) hook trend | stub, chờ duyệt (`research/trends/2026-11-06/plans/plan-1-tan-lam-het-nang-luong-chop-muoi-phut.json`) | 2026-11-06 |
 | B-onhalau-01 | tt-kiwilamdep-o-nha-lau | cuối tuần ở nhà từ sáng, định ra ngoài rồi lại mở điện thoại thêm một tiếng | 22.6 | "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." (P10+P03) | empathy / contrarian | đăng #23 (22.6, LIGHT) hook trend | stub, chờ duyệt (`research/trends/2026-11-06/plans/plan-2-o-nha-lau-mat-nang-dong-di-bo.json`) | 2026-11-06 |
 | B-trihoan-dt-01 | tt-nghemoi-tri-hoan-dt | định làm việc nhỏ, nằm xuống mở TikTok «một chút» | 4.9 | "Có clip gần tám trăm năm mươi nghìn lượt xem hỏi: cách thoát trì hoãn khi đang nằm một chỗ lướt điện thoại là gì?" (P01+P10) | empathy | 4.9 bằng chứng / hook phụ (script dọn liền tay chờ chốt) | đề xuất (không stub mới) | 2026-11-06 |
+| B-mettamsau-01 | bone-deep-tiredness | tối ngủ sớm hơn vẫn dậy nặng mắt | 3.3 | "Cả mạng đang than một kiểu mệt mà ngủ thêm cũng không hết — mệt hơn cả thể chất." (P10+P12) | empathy / data | đăng #15 (3.3, DARK) hook trend | stub, chờ duyệt (`research/trends/2026-11-07/plans/plan-1-met-sau-hon-ngu-sau-tieng.json`; không nhãn bệnh; số 6h33 = tóm tắt mạng) | 2026-11-07 |
+| B-airead-01 | ai-reading-fatigue | hỏi AI một câu nhận cả trang, hỏi lại thêm trang | 3.6 | "Có người viết đúng một câu: chán đọc output của model quá, chưa bao giờ trong đời phải đọc nhiều chữ đến vậy." (P10+P03) | empathy / data | đăng #11 (3.6, DARK) hook trend | stub, chờ duyệt (`research/trends/2026-11-07/plans/plan-2-doc-ai-met-mat-mot-liet.json`) | 2026-11-07 |
+| B-chonviec-01 | tt-hoaquynh-chon-dung | cuối tuần liệt mười việc không việc nào xong | 4.8 | "TikTok đang có clip nói: còn trẻ không phải để làm hết mọi thứ — mà để chọn đúng những thứ đáng làm." (P03+P10) | contrarian / empathy | ô #27 LIGHT / 4.8 | đề xuất (tránh góc ly hôn comment nguồn) | 2026-11-07 |
+| B-nonchal-01 | x-nonchalance-peace | mỗi thông báo group đều mở | 3.16 | "Cả mạng đang rủ nhau «ngừng để ý chuyện không kiểm soát được». Nghe nhẹ, mà khó giữ." (P03) | empathy | 3.16 ý tưởng (phụ B-noikhong-01) | đề xuất | 2026-11-07 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |

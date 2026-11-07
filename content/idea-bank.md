@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-06
+updated: 2026-11-07
 tags: [ideas]
 ---
 # Idea bank
@@ -83,3 +83,7 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Tan làm hết pin, chợp 10 phút rồi mới mở game (B-gameenergy-01) | 3.11 | trụ 3 năng lượng | "Cả mạng đang kể một chuyện giống nhau: cả ngày mong về mở game, tan làm thì chỉ còn đúng bốn mươi bảy phút Steam rồi ngủ gật trên ghế." | LIGHT | stub 2026-11-06, chờ duyệt (đăng #16; `research/trends/2026-11-06/plans/plan-1-tan-lam-het-nang-luong-chop-muoi-phut.json`) |
 | Ở nhà lâu mất năng động: ra cửa đi bộ ~10 phút / đứng dậy khi ngồi lâu (B-onhalau-01) | 2.17 | trụ 3 năng lượng (ch.2) | "TikTok đang có clip hỏi vì sao người ở nhà lâu ngày lại dần mất đi sự năng động. Comment bên dưới toàn người gật: mình cũng đang vậy." | LIGHT | stub 2026-11-06, chờ duyệt (đăng #23; `research/trends/2026-11-06/plans/plan-2-o-nha-lau-mat-nang-dong-di-bo.json`) |
 | Nằm lướt điện thoại rồi trì hoãn (B-trihoan-dt-01) | 4.9 | trụ 1 | "Có clip gần tám trăm năm mươi nghìn lượt xem hỏi: cách thoát trì hoãn khi đang nằm một chỗ lướt điện thoại là gì?" | DARK | ý tưởng 2026-11-06 (bằng chứng / hook phụ cho script dọn liền tay đang chờ chốt; không stub mới) |
+| Mệt mà ngủ không hết → ngủ sớm hơn 30 phút (B-mettamsau-01) | 3.3 | trụ 3 năng lượng | "Cả mạng đang than một kiểu mệt mà ngủ thêm cũng không hết — mệt hơn cả thể chất." | DARK | stub 2026-11-07, chờ duyệt (`research/trends/2026-11-07/plans/plan-1-met-sau-hon-ngu-sau-tieng.json`) |
+| Đọc output AI đến mệt → một khung rồi đóng (B-airead-01) | 3.6 | trụ 2 giữ tập trung | "Có người viết đúng một câu: chán đọc output của model quá…" | DARK | stub 2026-11-07, chờ duyệt (`research/trends/2026-11-07/plans/plan-2-doc-ai-met-mat-mot-liet.json`) |
+| Còn trẻ chọn đúng việc có hạn (B-chonviec-01) | 4.8 | trụ 1 | "TikTok đang có clip nói: còn trẻ không phải để làm hết mọi thứ…" | LIGHT | ý tưởng (2026-11-07); ô #27 |
+| Nonchalance / ngừng để ý hết (B-nonchal-01) | 3.16 | trụ 2 | "Cả mạng đang rủ nhau «ngừng để ý chuyện không kiểm soát được»…" | DARK | ý tưởng (2026-11-07); phụ B-noikhong-01 |
