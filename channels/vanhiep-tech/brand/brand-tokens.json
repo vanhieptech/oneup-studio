@@ -32,8 +32,10 @@
       "#FF00FF",
       "#FF69B4",
       "#FF1493",
+      "#E06C75-as-large-fill",
       "hot-pink preview backgrounds"
     ],
+    "noteUi": "Prefer #E5C07B / #61AFEF / #56B6C2 for icons; avoid coral #E06C75 on large UI (reads pink).",
     "dark": {
       "bg": "#282C34",
       "surface": "#21252B",
