@@ -1,0 +1,81 @@
+{
+  "name": "vht-20261107-oauth-control-plane",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "ratio": "9:16",
+  "tracks": [
+    {
+      "type": "video",
+      "name": "A-full",
+      "items": [
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll.mp4",
+          "start": 0,
+          "duration": 28
+        },
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll.mp4",
+          "start": 48,
+          "duration": 27,
+          "sourceStart": 48
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "cutaway",
+      "items": [
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4",
+          "start": 28,
+          "duration": 9
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "ov-hook",
+      "items": [
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-hook.mov",
+          "start": 0,
+          "duration": 3.2
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "ov-d01",
+      "items": [
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov",
+          "start": 10,
+          "duration": 6
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "ov-q",
+      "items": [
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-q.mov",
+          "start": 48,
+          "duration": 4
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "ov-l3",
+      "items": [
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov",
+          "start": 65,
+          "duration": 3.5
+        }
+      ]
+    }
+  ]
+}

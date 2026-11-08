@@ -1,5 +1,5 @@
 ---
-title: "CapCut smoke — local Mac only"
+title: "CapCut smoke — local Mac + CLI compile"
 date: 2026-11-08
 id: docs-vht-capcut-smoke
 type: guide
@@ -8,58 +8,40 @@ updated: 2026-11-08
 source: "channels/vanhiep-tech PLAN"
 tags: [capcut, vanhiep-tech, local]
 ---
-# CapCut smoke — **local Mac only**
+# CapCut smoke — local Mac + CLI compile
 
-**Không** dùng cloud agent `/opt/cursor/artifacts`, box path `/workspace/...`, hay link chat làm nguồn CapCut.
-Mọi import CapCut lấy file trên **Mac local** sau khi media đã sync về repo.
+**Không** dùng cloud `/opt/cursor/artifacts`. Skill: `skills/make-capcut-draft/SKILL.md`.
 
 ## Repo Mac
 `/Users/macbook/me/projects/oneup-studio`
 
-## CapCut import (đường dẫn tuyệt đối)
-Thư mục clip:
-
+## Media (absolute)
 `/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/`
 
-| File | Track CapCut |
+| File | Track |
 |---|---|
-| `cu-01.mp4` | Main / B-roll cutaway full |
-| `ov-hook.mov` | Overlay (ProRes alpha) |
-| `ov-d01.mov` | Overlay (ProRes alpha) |
-| `ov-l3.mov` | Overlay (ProRes alpha) |
-| `ov-q.mov` | Overlay (ProRes alpha) |
+| `a-roll.mp4` | A-full (thật hoặc placeholder) |
+| `a-roll-cutout.mov` | A-cutout (sau HF remove-background) |
+| `cu-01.mp4` | Cutaway |
+| `ov-hook.mov` / `ov-d01.mov` / `ov-l3.mov` / `ov-q.mov` | Overlay alpha |
 
-Đường dẫn đầy đủ:
+## Path A — CLI compile (V1.1)
+1. Đóng CapCut (hoặc compile ra `lab/out/` rồi import).
+2. `npx capcut-cli doctor`
+3. `npx capcut-cli compile channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/capcut-spec.json --check`
+4. Vào store:
+   ```bash
+   npx capcut-cli compile channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/capcut-spec.json \
+     --drafts "$HOME/Movies/CapCut/User Data/Projects/com.lveditor.draft" \
+     --template auto
+   ```
+5. Mở CapCut → refine → thêm VO → export.
+6. Fail → ghi `lab/capcut-cli-notes.md` → Path B.
 
-```
-/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4
-/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-hook.mov
-/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov
-/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov
-/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-q.mov
-```
+## Path B — import tay (fallback)
+1. Project 9:16 · A-roll local
+2. Import 4× `.mov` Overlay + `cu-01` cutaway
+3. Fail alpha → PLAN Revisions; tạm MP4 solid brand (không hồng)
 
-## Sync media về Mac (nếu file chưa có)
-Từ box chỉ **pack**; unpack + CapCut trên Mac:
-
-```bash
-# box (optional pack)
-python3 pipeline/scripts/media-sync.py pack
-
-# Mac — sau khi có part.* trong .git/media-sync/
-python3 pipeline/scripts/media-sync.py unpack
-python3 pipeline/scripts/media-sync.py verify
-```
-
-Ưu tiên: **render HyperFrames trực tiếp trên Mac** vào `media/channels/vanhiep-tech/<clip-id>/` — khỏi cloud.
-
-## Test nhanh (Mac + CapCut Desktop)
-1. Project 9:16 · A-roll local (không upload cloud)
-2. Import 4 file `.mov` từ đường dẫn Mac ở trên → Overlay — quanh graphic phải thấy A-roll
-3. Import `cu-01.mp4` đoạn cutaway
-4. Fail alpha → ghi `PLAN.md` Revisions; tạm MP4 solid brand (không hồng)
-
-## Alpha
-- Deliverable CapCut = `.mov` ProRes (`yuva*`) trên đĩa Mac.
-- QuickTime đen quanh graphic = viewer, không phải bake nền.
-- Cấm glass plate zone; cấm bán MP4 flatten làm overlay.
+## Cutout bake-off
+Xem `make-capcut-draft` — HF `remove-background` vs CapCut `matting`; edge thắng.

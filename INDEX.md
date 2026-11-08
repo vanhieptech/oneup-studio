@@ -22,11 +22,13 @@ tags: [index, retrieval]
 | brand-index | brand | active | `brand/brand-index.md` | @hi.oneup — Brand index cho video |
 | characters | brand | prototype | `brand/characters/README.md` | Characters (prototype v0.1) |
 | agents-vanhiep-tech | guide | active | `channels/vanhiep-tech/AGENTS.md` | AGENTS — kênh @vanhiep.tech |
-| plan-vanhiep-tech-v1 | plan | active | `channels/vanhiep-tech/PLAN.md` | PLAN — @vanhiep.tech V1 |
+| plan-vanhiep-tech-v1 | plan | active | `channels/vanhiep-tech/PLAN.md` | PLAN — @vanhiep.tech V1 / V1.1 |
 | readme-vanhiep-tech | guide | active | `channels/vanhiep-tech/README.md` | @vanhiep.tech (trong oneup-studio) |
 | channels.vanhiep-tech.brand.frame | None | None | `channels/vanhiep-tech/brand/frame.md` | Frame — layer graphics @vanhiep.tech |
 | vht-20261107-oauth-control-plane | script | draft | `channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/script.md` | vht-20261107-oauth-control-plane |
-| docs-vht-capcut-smoke | guide | active | `channels/vanhiep-tech/docs/capcut-smoke.md` | CapCut smoke — **local Mac only** |
+| docs-vht-capcut-smoke | guide | active | `channels/vanhiep-tech/docs/capcut-smoke.md` | CapCut smoke — local Mac + CLI compile |
+| lab-vht-capcut-cli | lab | active | `channels/vanhiep-tech/lab/capcut-cli-notes.md` | lab — capcut-cli / cutout bake-off |
+| skill.make-capcut-draft | skill | active | `channels/vanhiep-tech/skills/make-capcut-draft/SKILL.md` | make-capcut-draft |
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/archive/clip-01-implementation-intention/archive/box-final/post.md` | Gói đăng clip 01 (final demo) |
@@ -414,7 +416,7 @@ tags: [index, retrieval]
 | rule-1 | Ngôn ngữ |
 | rule-2 | Giọng (DL-035) |
 | rule-3 | Lên hình |
-| rule-4 | Độ dài |
+| rule-4 | Độ dài (L-099) |
 | rule-5 | Phong cách (xoay vòng trong khuôn comic) |
 | rule-6 | Tỉ lệ hình |
 | rule-7 | Cấu trúc |

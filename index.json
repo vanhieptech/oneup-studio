@@ -87,7 +87,7 @@
    "status": "active",
    "updated": "2026-11-08",
    "path": "channels/vanhiep-tech/PLAN.md",
-   "title": "PLAN — @vanhiep.tech V1"
+   "title": "PLAN — @vanhiep.tech V1 / V1.1"
   },
   {
    "id": "readme-vanhiep-tech",
@@ -119,7 +119,22 @@
    "status": "active",
    "updated": "2026-11-08",
    "path": "channels/vanhiep-tech/docs/capcut-smoke.md",
-   "title": "CapCut smoke — **local Mac only**"
+   "title": "CapCut smoke — local Mac + CLI compile"
+  },
+  {
+   "id": "lab-vht-capcut-cli",
+   "type": "lab",
+   "status": "active",
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/lab/capcut-cli-notes.md",
+   "title": "lab — capcut-cli / cutout bake-off"
+  },
+  {
+   "id": "skill.make-capcut-draft",
+   "type": "skill",
+   "status": "active",
+   "path": "channels/vanhiep-tech/skills/make-capcut-draft/SKILL.md",
+   "title": "make-capcut-draft"
   },
   {
    "id": "skill.make-layer",
@@ -1412,7 +1427,7 @@
    "id": "decision-log",
    "type": "log",
    "status": "living",
-   "updated": "2026-10-13",
+   "updated": "2026-11-08",
    "path": "logs/decision-log.md",
    "title": "Nhật ký quyết định: @hi.oneup (luật 33)"
   },
@@ -3082,7 +3097,7 @@
   },
   {
    "id": "rule-4",
-   "title": "Độ dài",
+   "title": "Độ dài (L-099)",
    "path": "rules/video-rules.md"
   },
   {

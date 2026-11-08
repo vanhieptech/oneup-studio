@@ -15,7 +15,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 | Kênh | Thư mục | Luật / skill |
 |---|---|---|
 | **@hi.oneup** (comic + motion) | `content/clips/`, `skills/make-video/` | file này + `rules/video-rules.md` + DL-027 |
-| **@vanhiep.tech** (talking-head + explainer overlay) | `channels/vanhiep-tech/` | **`channels/vanhiep-tech/AGENTS.md`** + `skills/make-layer` trong kênh đó |
+| **@vanhiep.tech** (talking-head + explainer overlay) | `channels/vanhiep-tech/` | **`channels/vanhiep-tech/AGENTS.md`** + `make-layer` + `make-capcut-draft` |
 
 Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc `vht-YYYYMMDD-*`: **không** chạy `make-video` comic / không áp DL-027 shot-list ban — đọc AGENTS kênh trước.
 

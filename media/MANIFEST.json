@@ -559,32 +559,38 @@
   },
   {
     "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4",
-    "size": 1243200,
-    "sha256": "67e2a9f24bd55b8bb1a023e97df6a917fd8b10ecac4822db022adb98b957ab4c",
-    "source": "hyperframes redesign 2026-11-08 (creative skills + frame.md)"
+    "size": 1238465,
+    "sha256": "1c60bb0b5768dd1bf304b227e8cc873dd17f1eb39629eb8ec7d2c4a42f70e4a1",
+    "source": "hyperframes local Mac render 2026-11-08"
   },
   {
     "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov",
-    "size": 119447432,
-    "sha256": "97812c0f70b64b1df2a7af08e850111593c3e0bf81e375fa09034d726814f02e",
-    "source": "hyperframes overlay no-plate alpha 2026-11-08"
+    "size": 130668768,
+    "sha256": "bbcf8fd7fd7545d8a287af35d83820387b870bb0092cc301afbd02315bed7194",
+    "source": "hyperframes local Mac render 2026-11-08"
   },
   {
     "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-hook.mov",
-    "size": 39476772,
-    "sha256": "c8556c1b7bcc02a5300b0ecf3e5e11de4bd2d7059377c1b77baa715962863836",
-    "source": "hyperframes overlay no-plate alpha 2026-11-08"
+    "size": 40850644,
+    "sha256": "c8edbaa0ea46b8cef2761ea976f375858ac82ca6d72cade729d10f2eed41e3bc",
+    "source": "hyperframes local Mac render 2026-11-08"
   },
   {
     "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov",
-    "size": 25563997,
-    "sha256": "227c05d48b40730efc3114bbb1ad721229ce88055609e907c53380585d335661",
-    "source": "hyperframes overlay no-plate alpha 2026-11-08"
+    "size": 26676180,
+    "sha256": "23606cbcecc05cf2fbe63a43f61c6e560d7e87d950c0702316472fe01fa09038",
+    "source": "hyperframes local Mac render 2026-11-08"
   },
   {
     "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-q.mov",
-    "size": 58026023,
-    "sha256": "3879406aba9b14af08744d4857aa66326da0264f890c7bd96c6389f2bff2c9a7",
-    "source": "hyperframes overlay no-plate alpha 2026-11-08"
+    "size": 60635864,
+    "sha256": "7304bf71878ab1c3f57008d0c89bfa5ec5b7b39d2f88a608580f2705678d1de3",
+    "source": "hyperframes local Mac render 2026-11-08"
+  },
+  {
+    "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll.mp4",
+    "size": 190981,
+    "sha256": "72c24d7ed4a3ba928b2a4a98260fbeef59e5cb34927a8391648ee3fcd59622bd",
+    "source": "placeholder slate until real A-roll (grill Q14B)"
   }
 ]

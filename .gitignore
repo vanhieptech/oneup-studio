@@ -32,3 +32,7 @@ channels/**/layers/**/node_modules/
 channels/**/layers/**/renders/
 channels/**/layers/**/package-lock.json
 research/reference-videos/**/*.mp4
+
+# CapCut CLI compiled drafts (local)
+channels/vanhiep-tech/lab/out/
+

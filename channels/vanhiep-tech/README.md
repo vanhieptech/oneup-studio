@@ -19,13 +19,16 @@ channels/vanhiep-tech/
   brand/brand-tokens.json
   templates/script-short.md
   skills/make-layer/SKILL.md
+  skills/make-capcut-draft/SKILL.md
   docs/capcut-smoke.md
+  lab/capcut-cli-notes.md
   clips/vht-YYYYMMDD-<slug>/
     script.md
-    layers/<layer-id>/   # HyperFrames project
-media/channels/vanhiep-tech/<clip-id>/   # renders (gitignored)
+    capcut-spec.json
+    layers/<layer-id>/
+media/channels/vanhiep-tech/<clip-id>/   # a-roll + overlays (gitignored)
 ```
 
-Pilot: `clips/vht-20261107-oauth-control-plane/` — OAuth/OIDC control plane + Keycloak `aud` punch.
+Pilot: `clips/vht-20261107-oauth-control-plane/` — OAuth/OIDC + Keycloak `aud`.
 
-**Local Mac:** CapCut + media tại `/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/…` — xem [`docs/capcut-smoke.md`](./docs/capcut-smoke.md). Không dùng cloud artifacts.
+**Local Mac:** CapCut Desktop + `capcut-cli compile` — [`docs/capcut-smoke.md`](./docs/capcut-smoke.md) · [`skills/make-capcut-draft`](./skills/make-capcut-draft/SKILL.md).

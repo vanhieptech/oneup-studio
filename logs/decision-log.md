@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: decision-log
 type: log
 status: living
-updated: 2026-10-13
+updated: 2026-11-08
 tags: [decisions, feedback]
 ---
 # Nhật ký quyết định: @hi.oneup (luật 33)
@@ -89,3 +89,4 @@ tags: [decisions, feedback]
 | DL-065 | 2026-10-15 | Hiệp (17:4x): lời clip-02 "giả trân"; gửi prompt YouTube scriptwriter | Chưng cất thành luật 64 + docs/research/script-prompt-principles.md + skill make-video. Clip-02 v7: direct hook "Omi á, mình dời hoài luôn!", cấu trúc hook→intro→body→tóm tắt→1 CTA, 127 chữ, {nhấn:} mỗi câu, hook_alt kiểu phủ định. Chưa thu giọng. |
 | DL-066 | 2026-10-16 | Assistant (News) + Hiệp: cập nhật job crawl TikTok/trend theo bài học Apify 16/10 | Cấm trends-scraper/lexis-cookie/parseforge-keyword-có-dấu. PRIMARY: clockworks/tiktok-scraper (hashtags+ASCII search, DOWNLOAD_SUBTITLES) + parseforge videoUrls + clockworks comments. Sample `au2F9eFcWhzuaXWnz` 3 clip/15 comment/VTT 100% fields. Skill trend-digest v4, apify.yaml, normalize script, routine prompt v5 (`hi-oneup-daily-trend-digest`), L-037, rule-57 | skills/trend-digest, pipeline/trends/apify.yaml, pipeline/scripts/trend-apify-normalize.py, docs/prompts/hi-oneup-daily-trend-digest.md, research/trends/2026-10-16/apify/ |
 | DL-067 | 2026-10-16 | Hiệp (01:5x): ">60s cũng được, chất lượng nội dung trước" (clip-02 v17 62,7s) | Luật 4: >60s chỉ cảnh báo, không chặn; mục tiêu vẫn 55–60s; <55s vẫn lỗi | check-rules rule-4 (plan + MP4) warn khi > 60s |
+| DL-068 | 2026-11-08 | Grill CapCut CLI: tận dụng CLI + HF tách nền + ghép layer; Desktop vẫn NLE | V1.1: `capcut-cli compile` allowed; dual A-roll; HF `remove-background` default + bake-off vs matting; VO tay; skill `make-capcut-draft`; smoke `capcut-spec.json` → `lab/out/` | channels/vanhiep-tech/PLAN.md, skills/make-capcut-draft, lab/capcut-cli-notes.md |

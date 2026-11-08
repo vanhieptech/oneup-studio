@@ -22,9 +22,10 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 1. File này
 2. `channels/vanhiep-tech/PLAN.md` (quyết định đã khóa)
 3. `brand/brand-tokens.json` + `brand/tokens.css` + **`brand/frame.md`**
-4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md`
-5. CapCut paths: `channels/vanhiep-tech/docs/capcut-smoke.md`
-6. HyperFrames: router → creative → animation / motion-graphics → talking-head-recut (**layout only**)
+4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md` (layers)
+5. Skill `channels/vanhiep-tech/skills/make-capcut-draft/SKILL.md` (CLI compile + cutout)
+6. CapCut: `channels/vanhiep-tech/docs/capcut-smoke.md`
+7. HyperFrames: router → creative → animation / motion-graphics → talking-head-recut (**layout only**) · cutout: `remove-background`
 
 ## Format video
 - A-roll tự quay + VO riêng, sync trong **CapCut Desktop (Mac)**
@@ -43,22 +44,24 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 | `ov-q` | quote / callout | optional ≤1 |
 
 ## Pipeline (local-first)
-1. Viết `clips/vht-YYYYMMDD-<slug>/script.md` + marker `[mm:ss layer-id]`
-2. Trên **Mac**: HyperFrames render → `media/channels/vanhiep-tech/<clip-id>/`
-3. CapCut: import `.mov`/`.mp4` từ path Mac tuyệt đối (xem `docs/capcut-smoke.md`)
-4. Cutaway `cu-*` → `.mp4` solid `--vht-bg`; Overlay `ov-*` → `.mov` ProRes alpha, **no plate**
-5. Cấm hồng / magenta / fuchsia
+1. Viết `clips/vht-YYYYMMDD-<slug>/script.md` + marker + cột `a_roll`
+2. Mac: HyperFrames layers → `media/channels/vanhiep-tech/<clip-id>/`
+3. Mac: đặt `a-roll.mp4`; bake-off cutout → `a-roll-cutout.mov` (`make-capcut-draft`)
+4. `capcut-cli compile` từ `capcut-spec.json` → CapCut store (hoặc `lab/out/` nếu app đang mở)
+5. CapCut Desktop: refine + VO + export
+6. Cutaway `cu-*` → `.mp4`; Overlay `ov-*` → `.mov` alpha, **no plate**
+7. Cấm hồng / magenta / fuchsia
 
 ## Media
 | Loại | Chỗ |
 |---|---|
-| Source / script / HTML | `channels/vanhiep-tech/` (git) |
-| Layer renders | `media/channels/vanhiep-tech/` trên **Mac** (gitignore + MANIFEST) |
-| A-roll, VO, CapCut project | **chỉ local Mac** — không git, không cloud |
+| Source / script / HTML / spec | `channels/vanhiep-tech/` (git) |
+| Layer + A-roll renders | `media/channels/vanhiep-tech/<clip>/` (gitignore + MANIFEST) |
+| CLI draft scratch | `channels/vanhiep-tech/lab/out/` (gitignored) |
+| CapCut app drafts | `~/Movies/CapCut/User Data/Projects/com.lveditor.draft` |
+| VO | local Mac only |
 
-Mac path mẫu:
-
-`/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/<clip-id>/`
+Mac: `/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/<clip-id>/`
 
 ## Brand + design (generate)
 - Tokens: `brand-tokens.json` + `tokens.css` + `frame.md` + generate gate trong `make-layer`
@@ -69,5 +72,5 @@ Mac path mẫu:
 - `skills/make-video` comic cho kênh này
 - Vendor footage mặt lên git/cloud
 - CapCut từ cloud artifact / box path
-- Phụ thuộc `capcut-cli` để ship V1
-- Composite full A-roll trong HyperFrames
+- Phụ thuộc CLI `render`/`export` làm bản ship (Desktop mới export)
+- Composite full talking-head-recut thay CapCut (HF cutout A-roll OK)

@@ -28,29 +28,32 @@ tags: [vanhiep-tech, oauth, oidc, keycloak, script]
 
 ## Layer package (đủ catalog)
 
-| Id | Vai trò | Canvas | Output |
-|---|---|---|---|
-| `ov-hook` | Overlay hook card | transparent + card brand | `…/ov-hook.mov` (ProRes alpha) |
-| `ov-d01` | Overlay diagram compact | transparent + cards | `…/ov-d01.mov` |
-| `cu-01` | **B-roll / cutaway** full visual | solid `--vht-bg` | `…/cu-01.mp4` |
-| `ov-q` | Overlay quote `aud` trap | transparent + card | `…/ov-q.mov` |
-| `ov-l3` | Overlay lower-third | transparent + bar | `…/ov-l3.mov` |
+| Id | Vai trò | Canvas | Output | a_roll |
+|---|---|---|---|---|
+| `ov-hook` | Overlay hook | transparent | `…/ov-hook.mov` | full |
+| `ov-d01` | Overlay diagram | transparent | `…/ov-d01.mov` | full |
+| `cu-01` | Cutaway B-roll | solid `--vht-bg` | `…/cu-01.mp4` | — (replaces A) |
+| `ov-q` | Overlay quote | transparent | `…/ov-q.mov` | full |
+| `ov-l3` | Overlay L3 | transparent | `…/ov-l3.mov` | full |
 
-**CapCut (local Mac only):**
+Marker shorthand: `[mm:ss ov-d01 cutout]` khi cần A-cutout.
+
+**CapCut (local Mac):**
 
 ```
 /Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/
+  a-roll.mp4              # full (thật hoặc placeholder)
+  a-roll-cutout.mov       # sau bake-off HF
   cu-01.mp4
-  ov-hook.mov
-  ov-d01.mov
-  ov-l3.mov
-  ov-q.mov
+  ov-*.mov
 ```
 
-Overlays = track Overlay (alpha); `cu-01` = B-roll full frame. **Không** import từ cloud/`/opt/cursor/artifacts`.
+Compile: `capcut-spec.json` + skill `make-capcut-draft`. Fallback: `docs/capcut-smoke.md` Path B.
 
-## V1 DoD
-- [x] Đủ 5 kịch bản layer (hook · diagram overlay · cutaway · quote · L3)
-- [x] Render outputs + MANIFEST (sync/`media-sync` về Mac)
-- [ ] Smoke CapCut trên Mac (path local ở trên)
-- [ ] Pilot quay + ghép = V1.1
+## V1 / V1.1 DoD
+- [x] Đủ 5 layer + MANIFEST
+- [x] `capcut-spec.json` + `compile --check` OK
+- [x] Draft compile → `lab/out/` (đóng CapCut rồi đẩy vào store)
+- [ ] A-roll thật + bake-off HF vs matting
+- [ ] Smoke mở draft trong CapCut Desktop + VO
+- [ ] Pilot quay + export = V1.1 done
