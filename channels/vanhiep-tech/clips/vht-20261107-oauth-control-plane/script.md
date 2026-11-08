@@ -36,10 +36,21 @@ tags: [vanhiep-tech, oauth, oidc, keycloak, script]
 | `ov-q` | Overlay quote `aud` trap | transparent + card | `…/ov-q.mov` |
 | `ov-l3` | Overlay lower-third | transparent + bar | `…/ov-l3.mov` |
 
-**CapCut:** overlays = track Overlay (alpha); `cu-01` = cắt sang B-roll full frame rồi về A-roll.
+**CapCut (local Mac only):**
+
+```
+/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/
+  cu-01.mp4
+  ov-hook.mov
+  ov-d01.mov
+  ov-l3.mov
+  ov-q.mov
+```
+
+Overlays = track Overlay (alpha); `cu-01` = B-roll full frame. **Không** import từ cloud/`/opt/cursor/artifacts`.
 
 ## V1 DoD
 - [x] Đủ 5 kịch bản layer (hook · diagram overlay · cutaway · quote · L3)
-- [x] Render outputs trên box (manifest)
-- [ ] Smoke CapCut trên Mac
+- [x] Render outputs + MANIFEST (sync/`media-sync` về Mac)
+- [ ] Smoke CapCut trên Mac (path local ở trên)
 - [ ] Pilot quay + ghép = V1.1

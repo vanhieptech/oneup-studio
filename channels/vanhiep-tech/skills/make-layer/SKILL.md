@@ -9,13 +9,16 @@ description: >-
 
 Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` first.
 
+**Local Mac first:** render + CapCut trên `/Users/macbook/me/projects/oneup-studio`.  
+**Banned handoff:** `/opt/cursor/artifacts`, cloud chat links, box `/workspace/...` as CapCut import source.
+
 ## When to use
 - New `ov-*` / `cu-*` for a `vht-YYYYMMDD-*` clip
 - Revise an existing layer HTML after feedback
-- Smoke-test CapCut alpha handoff
+- Smoke-test CapCut alpha handoff **on Mac**
 
 ## Steps
-1. Confirm clip id + layer id from `script.md` markers.
+1. Confirm clip id + layer id from `script.md` markers. Prefer running this skill on the Mac checkout.
 2. **Read before any HTML** (mandatory — skip = reject redesign):
    - Channel frame: `channels/vanhiep-tech/brand/frame.md`
    - Router: `skills/hyperframes/hyperframes/SKILL.md`
@@ -47,8 +50,8 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
    ```
 10. **Preview for human** (ov): export **alpha-preserving** watch file only — animated WebP/APNG (`*-alpha.webp` / `*-alpha.png`) or the ProRes `.mov` itself.  
     **Banned:** baking overlay onto One Dark / fake A-roll / checkerboard into an MP4 and calling that “the overlay video”. MP4 has no alpha → it will always look like it still has a background.
-11. Update `media/MANIFEST.json` after binary lands on disk.
-12. Point CapCut import path in `script.md` layer table (`ov-*.mov` only).
+11. Write outputs under Mac `media/channels/vanhiep-tech/<clip>/` and update `media/MANIFEST.json`.
+12. Point CapCut to **Mac absolute paths** in `docs/capcut-smoke.md` / `script.md` (`ov-*.mov` only). Never tell the user to import from cloud artifacts.
 
 ## Generate gate (fail = rewrite HTML)
 | Check | Cutaway `cu-*` | Overlay `ov-*` |
@@ -57,8 +60,9 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
 | Zone plate | N/A (full frame is the shot) | **Banned** — no full-width frosted card covering the zone |
 | Piece fills | UI mocks / surfaces OK | Only on badges, buttons, phone/server chrome — not a backdrop |
 | Outside pieces | painted brand void OK | **alpha = 0** |
-| Deliverable | `.mp4` | ProRes `.mov` (`yuva*`) |
-| User preview | `.mp4` as-is | **alpha file** (WebP/APNG/MOV) — never plate-composited MP4 |
+| Deliverable | `.mp4` on Mac `media/` | ProRes `.mov` (`yuva*`) on Mac `media/` |
+| CapCut source | local Mac path | local Mac path — **not** cloud artifacts |
+| User preview | `.mp4` as-is | alpha file on Mac (WebP/APNG/MOV) — never plate-composited MP4 |
 | Creative | real UI/flow, depth, video type scale | same + talking-head safe zones |
 
 ## Design rules

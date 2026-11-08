@@ -4,7 +4,7 @@ date: 2026-11-07
 id: plan-vanhiep-tech-v1
 type: plan
 status: active
-updated: 2026-11-07
+updated: 2026-11-08
 source: "grill-me 2026-11-07"
 tags: [plan, vanhiep-tech, v1]
 ---
@@ -30,8 +30,9 @@ Quyết định khóa từ grill-me (2026-11-07). Không đổi lặng lẽ — 
 15. DoD V1: scaffold + `ov-d01` mẫu + smoke CapCut; pilot full = V1.1
 16. VI nói + VI overlay
 17. Audio: hình + VO riêng sync CapCut
-18. Media: layer → `media/channels/...`; A-roll local Mac
+18. Media + CapCut: **local Mac only** — repo `/Users/macbook/me/projects/oneup-studio`; layer → `media/channels/...` trên Mac; A-roll/VO/CapCut project không cloud
 19. Id clip: `vht-YYYYMMDD-<slug>`
+20. Không dùng `/opt/cursor/artifacts` hay box `/workspace` làm nguồn import CapCut
 
 ## Pilot nội dung
 - Id: `vht-20261107-oauth-control-plane`
@@ -53,3 +54,4 @@ Mid-form · dual ratio · talking-head-recut composite · CLI compile draft · t
 | 2026-11-07 | Bắt buộc dùng brand tokens / `--vht-*` — không bịa hex |
 | 2026-11-07 | ov-d01 redesign: minh họa visual (browser login + Keycloak→token→API) |
 | 2026-11-08 | Đủ catalog: cu-01 B-roll + ov-hook / ov-d01 / ov-l3 / ov-q overlays |
+| 2026-11-08 | Khóa **local Mac only** cho CapCut + media; cấm cloud artifact làm deliverable |

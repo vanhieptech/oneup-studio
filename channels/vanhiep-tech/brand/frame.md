@@ -43,7 +43,7 @@ Full-frame solid `--vht-bg`. Depth: grid + radial accent glow + ghost type. Asym
 2. **No plate:** do not draw a full-width/full-zone rounded rect behind the whole graphic.
 3. Only **piece** fills (badge, button, phone chrome, token chip). Type may use text-shadow for legibility.
 4. Outside pieces → alpha **0**. Mid-frame corner pixels must be `(0,0,0,0)`.
-5. Deliverable for CapCut: ProRes `.mov` (`pix_fmt` contains `yuva`).
-6. Human watch preview: **keep alpha** (animated WebP/APNG or the `.mov`).  
+5. Deliverable for CapCut: ProRes `.mov` on **local Mac** `media/channels/vanhiep-tech/<clip>/` (`pix_fmt` contains `yuva`). Not cloud artifacts.
+6. Human watch preview: **keep alpha** (WebP/APNG/MOV) on Mac.  
    **Do not** composite onto fake A-roll / One Dark into MP4 — MP4 cannot be transparent, so that preview always “still has background”.
 7. Never ship RGB-flattened PNG/MP4 as the CapCut overlay asset.

@@ -4,71 +4,70 @@ date: 2026-11-07
 id: agents-vanhiep-tech
 type: guide
 status: active
-updated: 2026-11-07
+updated: 2026-11-08
 source: "grill-me plan 2026-11-07"
-tags: [agents, vanhiep-tech, talking-head]
+tags: [agents, vanhiep-tech, talking-head, local]
 ---
 # AGENTS — kênh @vanhiep.tech
 
 Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng luật comic `@hi.oneup` (DL-027, `make-video`, chibi, F5 voice pipeline OneUp).
 
+## Máy làm việc = **local Mac**
+- Repo Mac: `/Users/macbook/me/projects/oneup-studio`
+- HyperFrames render, CapCut assemble, A-roll/VO, xem `.mov` — **trên Mac**
+- **Cấm** lấy deliverable CapCut từ cloud agent (`/opt/cursor/artifacts`), chat link, hay coi `/workspace` box là máy edit
+- Box/cloud agent (nếu còn): chỉ sửa HTML/docs/git; **không** là nguồn import CapCut
+
 ## Đọc trước khi làm
 1. File này
 2. `channels/vanhiep-tech/PLAN.md` (quyết định đã khóa)
-3. `brand/brand-tokens.json` + `brand/tokens.css` + **`brand/frame.md`** (density / UI / zones)
-4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md` khi tạo/render layer
-5. HyperFrames (bắt buộc trước HTML):
-   - Router `skills/hyperframes/hyperframes/SKILL.md`
-   - Creative `skills/hyperframes/hyperframes-creative/` (`house-style`, `video-composition`, `composition-patterns`, `motion-principles`)
-   - Motion `skills/hyperframes/hyperframes-animation/` + `skills/hyperframes/motion-graphics/` (lower-thirds)
-   - Overlay zones: `skills/hyperframes/talking-head-recut/` (**layout only**)
+3. `brand/brand-tokens.json` + `brand/tokens.css` + **`brand/frame.md`**
+4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md`
+5. CapCut paths: `channels/vanhiep-tech/docs/capcut-smoke.md`
+6. HyperFrames: router → creative → animation / motion-graphics → talking-head-recut (**layout only**)
 
 ## Format video
-- A-roll tự quay + VO riêng, sync trong **CapCut Desktop**
-- Hybrid: overlay trên mặt khi giải thích; cutaway full khi cần thấy rõ
+- A-roll tự quay + VO riêng, sync trong **CapCut Desktop (Mac)**
+- Hybrid: overlay trên mặt; cutaway full khi cần
 - Master **9:16** · short **45–90s** (V1)
-- Không nhân vật chibi — diagram / icon / doodle trung tính
-- Mọi layer deliverable = **video có motion** (không thả PNG tĩnh làm shot cuối)
+- Không chibi — diagram trung tính
+- Layer deliverable = video có motion
 
-## Catalog layer (id trong script)
+## Catalog layer
 | Id prefix | Loại | Ghi chú V1 |
 |---|---|---|
-| `ov-hook` | title / hook card | optional ngoài budget tối thiểu |
-| `ov-dNN` | diagram explainer (overlay) | **bắt buộc 1–2** |
-| `cu-NN` | cutaway full, nền solid | optional ≤1 |
-| `ov-l3` | lower-third / label | optional ≤1 |
+| `ov-hook` | title / hook | optional |
+| `ov-dNN` | diagram explainer | **bắt buộc 1–2** |
+| `cu-NN` | cutaway solid | optional ≤1 |
+| `ov-l3` | lower-third | optional ≤1 |
 | `ov-q` | quote / callout | optional ≤1 |
 
-Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1–2 diagram**; cutaway / L3 / quote ≤1 mỗi loại.
-
-## Pipeline
-1. Viết `clips/vht-YYYYMMDD-<slug>/script.md` với marker `[mm:ss layer-id]`
-2. Pre-render layer phức tạp bằng HyperFrames → `media/channels/vanhiep-tech/<clip-id>/`
-3. Motion đơn (fade/scale) có thể làm trong CapCut từ SVG/PNG đã animate nhẹ
-4. Ghép CapCut: A-roll + VO + layers theo marker
-5. **Hai kiểu render:**
-   - **Cutaway / B-roll (`cu-*`)**: full-frame solid `var(--vht-bg)` → `--format mp4`
-   - **Overlay (`ov-*`)**: canvas **transparent**, card/bar dùng màu brand → `--format mov` (ProRes alpha)
-6. **Cấm** hồng / magenta / fuchsia (kể cả nền preview)
+## Pipeline (local-first)
+1. Viết `clips/vht-YYYYMMDD-<slug>/script.md` + marker `[mm:ss layer-id]`
+2. Trên **Mac**: HyperFrames render → `media/channels/vanhiep-tech/<clip-id>/`
+3. CapCut: import `.mov`/`.mp4` từ path Mac tuyệt đối (xem `docs/capcut-smoke.md`)
+4. Cutaway `cu-*` → `.mp4` solid `--vht-bg`; Overlay `ov-*` → `.mov` ProRes alpha, **no plate**
+5. Cấm hồng / magenta / fuchsia
 
 ## Media
 | Loại | Chỗ |
 |---|---|
-| Source / script / HTML layer | `channels/vanhiep-tech/` (git) |
-| Render layer (mov/webm/mp4) | `media/channels/vanhiep-tech/` (gitignore + MANIFEST) |
-| A-roll, VO, CapCut draft | **chỉ local Mac** — không lên git/box |
+| Source / script / HTML | `channels/vanhiep-tech/` (git) |
+| Layer renders | `media/channels/vanhiep-tech/` trên **Mac** (gitignore + MANIFEST) |
+| A-roll, VO, CapCut project | **chỉ local Mac** — không git, không cloud |
+
+Mac path mẫu:
+
+`/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/<clip-id>/`
 
 ## Brand + design (generate)
-- **Nguồn màu duy nhất:** `brand/brand-tokens.json` + `brand/tokens.css` (`--vht-*`)
-- **Frame / gate:** `brand/frame.md` + bảng **Generate gate** trong `skills/make-layer/SKILL.md`
-- Cutaway: full-frame `var(--vht-bg)` + atmosphere → `.mp4`
-- Overlay: canvas **transparent**, **cấm glass/board plate** zone; chỉ piece fill → ProRes `.mov` (`yuva*`)
-- Preview cho người xem: file **còn alpha** (WebP/APNG/MOV) — **cấm** ghép fake A-roll ra MP4 rồi gọi là overlay
-- **Cấm** hồng / magenta / fuchsia; left-stripe-only L3; equal text-card grids; bán PNG/MP4 flatten làm overlay
-- Safe-zone 1080×1920 · Font Be Vietnam Pro · Không logo / chibi / cam OneUp
+- Tokens: `brand-tokens.json` + `tokens.css` + `frame.md` + generate gate trong `make-layer`
+- Overlay: canvas transparent, cấm glass board; piece fill OK; preview giữ alpha — cấm bake MP4 plate
+- Safe-zone 1080×1920 · Be Vietnam Pro · Không logo / chibi / cam OneUp
 
 ## Cấm
-- `skills/make-video` comic cho clip kênh này
-- Vendor footage mặt vào repo
-- Phụ thuộc `capcut-cli` để ship V1 (chỉ `doctor` / experiment)
-- Composite full A-roll trong HyperFrames (`talking-head-recut` chỉ tham khảo layout)
+- `skills/make-video` comic cho kênh này
+- Vendor footage mặt lên git/cloud
+- CapCut từ cloud artifact / box path
+- Phụ thuộc `capcut-cli` để ship V1
+- Composite full A-roll trong HyperFrames
