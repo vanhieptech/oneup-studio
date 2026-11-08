@@ -29,7 +29,7 @@ Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hi�
 | Quy trình | `pipeline/pipeline.md` |
 | **Tìm kiếm (mặc định XERJ)** | `docs/conventions/search-xerj.md`: `xerj search --prefix oneup "..."` (repo) · `--prefix ref` (repo tham khảo, tra **trước khi viết code pipeline mới**) · index lại `pipeline/scripts/xerj-index.sh` · dự phòng `rg`/`git grep` |
 | **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` · mẫu `content/archive/clip-01-implementation-intention/final/` |
-| Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) |
+| Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `motionmaxxing` (symlink → `resources/refs/motionmaxxing/`, Apache-2.0 craft + measured eases; Remotion ports `video-engine/src/composition/motionmaxxing/`), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) |
 
 ## Quy ước
 - Prompt bot nội dung của Hiệp: `docs/prompts/content-bot-prompt.md` (reuse-first, front-matter, commit `<loại>: <mô tả>`); ánh xạ ở `docs/conventions/storage.md`.
