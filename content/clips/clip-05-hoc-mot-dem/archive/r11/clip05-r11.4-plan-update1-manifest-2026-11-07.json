@@ -1,0 +1,147 @@
+{
+  "id": "clip05-r11.4-plan-update1",
+  "status": "PLANNING ONLY / not overall PASS / not Chốt",
+  "planning_only": true,
+  "renderable": false,
+  "frozen_script": "/workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+  "script_sha256_before": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+  "script_sha256_after": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+  "original_inputs_unchanged": {
+    "opencreator-clip05-script-r11.4-draft-2026-11-07.md": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+    "opencreator-clip05-spec-r11.4-draft-2026-11-07.json": "62352ee26952a66898d9ba796749b867ea2897f8a3c0ea30bf939846d28ceaaa",
+    "opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md": "dcc9e364e9d29dac8ef995f599e16573d8ae6edf6f12189ff2864a9aab7a83c6",
+    "clip05-r11.4-checker-output-2026-11-07.txt": "242c2b1b0ca15abc4dcf6e700737ccced56075cdbd6c36703e9f847e13621c1c",
+    "clip05-r11.4-local-validation-2026-11-07.json": "6d03126f7e59a75b0099c4cd0df0fe7d1b7c910f3db2885d37438b2f21a8cd45",
+    "clip05-r11.4-delivery-manifest-2026-11-07.json": "1da43535f5437f55ccb3283aa47cc927b63746513d0fc58c019d1c666e1232f9",
+    "clip05-r11.4-rule-review-2026-11-07.md": "b6cf47058e35c716be2a636a227953f5a7c5f4e4a40771534071251ecb897a79",
+    "clip05-r11.4-factcheck-2026-11-07.md": "cdde77f04987bd8c765c9a58de8c8e1795023c0fb1aed1f918c50654ccccd879"
+  },
+  "source_scope": {
+    "rule_review": {
+      "path": "/workspace/clip05-r11.4-rule-review-2026-11-07.md",
+      "sha256": "b6cf47058e35c716be2a636a227953f5a7c5f4e4a40771534071251ecb897a79",
+      "scope": "No further mandatory main-wording fault; text/plan can continue gate work, not full PASS/Chốt."
+    },
+    "Deep": {
+      "path": "/workspace/clip05-r11.4-factcheck-2026-11-07.md",
+      "sha256": "cdde77f04987bd8c765c9a58de8c8e1795023c0fb1aed1f918c50654ccccd879",
+      "checked_at": "2026-11-07T15:28:05+07:00",
+      "script_sha256": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+      "scope": "Main seven beats, phrases and23 captions match; main claims/illustrative comparison PASS within two locked fact packages. New cover/visible label/conditional disclosure still require visual/output verification."
+    },
+    "Social": {
+      "reported_at": "2026-11-07 15:26 Asia/Saigon (minute precision from handoff)",
+      "status": "Scoped trend/pain PASS reported by Reviewer via user handoff",
+      "provenance": "User steering at15:28 Asia/Saigon; no separate Social report file supplied/read in this task. No independent live/source research.",
+      "scope": "Trend lifestyle context and individual pain provenance only; not audience representativeness, efficacy, main flow, visual or overall PASS."
+    },
+    "no_blanket_inheritance": "Frozen main speech/captions retain scoped source conclusions; new visual-plan fields have not been independently re-reviewed."
+  },
+  "delta": [
+    "Explicit channel editorial label + two-column display mapping; source document immutable; Rent appended only to retelling",
+    "Non-strike LOW/HIGH STUDY UTILITY cover, same strict allocations/rig transform",
+    "Conditional AI disclosure matches frozen MD and future actual AI use, no audio now"
+  ],
+  "spoken_words": 150,
+  "pre_method_after_hook": 50,
+  "speech_beats_unchanged": 7,
+  "caption_segments_unchanged": 23,
+  "EN_max": 8,
+  "validation": {
+    "checks": 469,
+    "errors": [],
+    "scope": "Declared planning arithmetic, JSON/text identity and source-record scope only. NOT image/DOM/glyph/render/production schema/audio/read-aloud/stranger/visual semantic approval."
+  },
+  "checker_on_frozen_script": [
+    {
+      "mode": "subjects",
+      "exit_code": 0
+    },
+    {
+      "mode": "l088",
+      "exit_code": 0
+    },
+    {
+      "mode": "trend",
+      "exit_code": 1
+    },
+    {
+      "mode": "flow",
+      "exit_code": 0
+    },
+    {
+      "mode": "clarity",
+      "exit_code": 0
+    },
+    {
+      "mode": "link",
+      "exit_code": 0
+    },
+    {
+      "mode": "repeat",
+      "exit_code": 0
+    },
+    {
+      "mode": "evidence",
+      "exit_code": 0
+    },
+    {
+      "mode": "choppy",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-prior-concepts",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh-same-B-r11.2",
+      "exit_code": 1
+    },
+    {
+      "mode": "fresh-patch1-r11.3",
+      "exit_code": 1
+    }
+  ],
+  "open_gates": [
+    "Read-aloud/one-listen/stranger/timing CHƯA KIỂM",
+    "Preview CHƯA CHUẨN BỊ ẢNH; new visual mapping/cover meaning/conditional disclosure not visually reviewed",
+    "Registry/storage OPEN; text checker failures retained separately",
+    "Adapters/native null-strike/cover transform, schema/fonts/glyph/wrap/HF/Reels/assets/signature/theme unverified",
+    "Endcard3s remains estimated; extra conditional disclosure readability not certified"
+  ],
+  "callback04": "Not a current blocker: actual has no release claim; release status not newly verified",
+  "artifacts": {
+    "/workspace/opencreator-clip05-spec-r11.4-plan-update1-2026-11-07.json": {
+      "sha256": "778539ad707a810cd387445a9a9c2f79e1fc2ad0f3157b65077432a93ef0788e",
+      "bytes": 147619
+    },
+    "/workspace/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md": {
+      "sha256": "819b038bfd970088c1fe8a006ab39a62999563cd90941e6d6191cecc480bcf49",
+      "bytes": 20848
+    },
+    "/workspace/clip05-r11.4-plan-update1-report-2026-11-07.md": {
+      "sha256": "92d756da88bf89f04d15969c817ac54fab8fb6711b690cd4448d5a328a0b807c",
+      "bytes": 6557
+    },
+    "/workspace/clip05-r11.4-plan-update1-validation-2026-11-07.json": {
+      "sha256": "83956cc330530db68e3dec3ab219631b095059693de073cbfd216cd477467fda",
+      "bytes": 54512
+    },
+    "/workspace/clip05-r11.4-plan-update1-checker-output-2026-11-07.txt": {
+      "sha256": "6a1cb1c8fd08b0624d5d2fca70a87b93cc6257f2d32a209b850fe86d381be340",
+      "bytes": 10449
+    },
+    "/workspace/clip05-r11.4-plan-update1-input-hashes-2026-11-07.json": {
+      "sha256": "994aa31fcf4f2409f6bb474ff2b440d0089de7dbac8e1c0d0c79f395954f078a",
+      "bytes": 958
+    },
+    "/workspace/clip05-r11.4-plan-update1-validate.py": {
+      "sha256": "c3ca6a08888b36f213f43b19cf37f9f96e2e739478c987ac7dd2a0c2a4c2d30f",
+      "bytes": 11727
+    },
+    "/workspace/clip05-r11.4-plan-update1-build.py": {
+      "sha256": "adbb99d10df9d4c628770ab75bad0e85fe007577d84a30b1a028630f41b93307",
+      "bytes": 19397
+    }
+  }
+}

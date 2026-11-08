@@ -1,0 +1,38 @@
+# run 3 of 3 (run1: 31/36 ok, 430 raw — vnexpress-noibat+sohoa SSL EOF; run2: 30/36, 415 raw — vnexpress-moi/sohoa/giaitri SSL EOF; run3 kept)
+ok       10  gtrends-vn             
+ok       10  gtrends-us             
+ok       20  vnexpress-noibat       
+ok       20  vnexpress-moi          
+error     0  vnexpress-sohoa        URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>
+ok       15  vnexpress-giaitri      
+ok       15  vnexpress-doisong      
+ok       20  kenh14-home            
+ok       10  kenh14-star            
+ok       10  kenh14-doisong         
+ok       15  thanhnien              
+ok       15  dantri                 
+ok       15  genk                   
+ok       10  cafebiz                
+ok       10  tinhte                 
+ok       20  gnews-vn-top           
+ok       10  gnews-vn-tiktok        
+ok       10  gnews-vn-genz          
+ok       10  gnews-vn-tuoitre       
+ok       15  gnews-us-productivity  
+ok       10  gnews-us-tiktoktrend   
+ok       20  hn-front               
+ok       10  producthunt            
+ok       10  verge                  
+ok       10  ars                    
+error     0  kym-memes              HTTPError: HTTP Error 403: Forbidden
+error     0  wiki-vi                HTTPError: HTTP Error 404: Not Found
+error     0  wiki-en                HTTPError: HTTP Error 404: Not Found
+ok       10  bsky-trending          
+ok       10  bsky-productivity      
+ok       15  spotify-vn             
+ok        8  yt-niche-vn            
+ok        8  yt-niche-en            
+ok       40  x-news                 
+ok       19  x-trends-vn            
+ok       20  x-trends-ww            
+raw=450 clusters=433 safety={'ok': 373, 'caution': 13, 'drop': 47} -> /tmp/c3/collect.json

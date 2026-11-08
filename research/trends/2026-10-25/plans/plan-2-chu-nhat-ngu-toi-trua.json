@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-chu-nhat-ngu-toi-trua",
+ "title": "[STUB] Chủ nhật ngủ tới trưa cho bù, vậy mà thứ Hai còn mệt hơn: giữ giờ dậy cố định cả cuối tuần",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "x-users-share-sleep-struggles-and-wins-in",
+  "bridge_id": "B-weekend-02",
+  "lesson": "3.2 Cố định giờ dậy, cuối tuần cũng vậy (Phillips et al. 2017, Scientific Reports: 61 sinh viên ghi 30 ngày; nhóm 1/5 ngủ thất thường nhất có đồng hồ sinh học trễ khoảng 2,5 tiếng so với nhóm đều nhất, melatonin bắt đầu tiết 00:08 so với 21:32; ngủ càng đều thì điểm học càng tốt, r = 0,37). Bằng chứng B; ghi chú sách: một nghiên cứu, ít người, không có nhóm đối chứng. Lỡ thức khuya thì tối hôm sau đi ngủ sớm, không ngủ tới trưa (sách dẫn mục 2.38). Chi phí: không tốn tiền, cần chút ý chí bớt ngủ nướng.",
+  "angle": "data / contrarian",
+  "pattern": "P12 + P03",
+  "differentiation": "Mọi người đang nói: ngày nghỉ thì nằm ngủ 13 tiếng cho bù, ai cũng đang nợ ngủ (X News 24/10; X VN trend 'Chủ Nhật'). Góc của mình: ngủ nướng tới trưa làm đồng hồ sinh học trễ như bị lệch múi giờ, nên thứ Hai mới mệt; giữ giờ dậy như ngày thường, muốn bù thì tối đi ngủ sớm hơn (3.2, mức B). Củng cố B-weekend-01, đăng hợp vào sáng Chủ nhật. Chuyện thật của Hiệp (giờ dậy 6:30) để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "chu-nhat-ngu-toi-trua.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chủ nhật bạn tính ngủ tới trưa cho bù, vậy mà sao sáng thứ Hai còn mệt hơn?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Slept till noon. Monday feels worse?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "chu-nhat-ngu-toi-trua.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối Chủ nhật bạn nằm trằn trọc tới khuya, sáng thứ Hai báo thức reo mà người vẫn nặng trịch.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Sunday night: wide awake.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "chu-nhat-ngu-toi-trua.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lý do là mỗi lần ngủ dậy trễ, đồng hồ sinh học của bạn bị đẩy lùi lại giống như vừa bay qua múi giờ khác.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Sleeping in = mini jet lag.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "chu-nhat-ngu-toi-trua.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một nghiên cứu với sáu mươi mốt sinh viên thấy nhóm ngủ thất thường nhất có đồng hồ sinh học trễ khoảng hai tiếng rưỡi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Irregular sleepers: ~2.5h behind.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "chu-nhat-ngu-toi-trua.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình cần là sáng thứ Hai dậy nổi mà đầu óc vẫn tỉnh.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Wake up clear on Monday.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "chu-nhat-ngu-toi-trua.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy cuối tuần bạn vẫn dậy đúng giờ như ngày thường, muốn bù thì tối đi ngủ sớm hơn một chút.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Same wake time. Bed earlier instead.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "chu-nhat-ngu-toi-trua.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trong nghiên cứu đó, ai ngủ dậy càng đều thì điểm học càng tốt hơn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Regular sleep, better grades.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "chu-nhat-ngu-toi-trua.b08",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cuối tuần này bạn thử giữ giờ dậy rồi comment cho mình biết thứ Hai thấy sao nha.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Try it this weekend. Comment.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "chu-nhat-ngu-toi-trua.b09",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nội dung dựa trên Cẩm nang sống đáng giá của chuanman2707, giấy phép CC BY 4.0.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Source: HowToLiveBetter, CC BY 4.0",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

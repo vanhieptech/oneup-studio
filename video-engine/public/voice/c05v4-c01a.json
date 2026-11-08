@@ -1,0 +1,65 @@
+{
+ "duration": 0.9667,
+ "envelope": [
+  0.171,
+  0.678,
+  0.64,
+  0.631,
+  0.508,
+  0.525,
+  0.734,
+  0.56,
+  0.08,
+  0.015,
+  0.148,
+  0.298,
+  0.882,
+  0.943,
+  0.723,
+  0.676,
+  0.767,
+  0.941,
+  0.854,
+  0.275,
+  0.029,
+  0.171,
+  0.574,
+  0.959,
+  1,
+  0.903,
+  0.916,
+  0.636,
+  0.116
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py c05v4 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c05v4.wav at frame boundaries",
+ "role": "Thầy",
+ "stt": "Bạn học dồn một đêm.",
+ "stt_sim": 1.0,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "Bạn học dồn một đêm.",
+   "sim": 1.0
+  },
+  "in_chunk": {
+   "text": "Bạn học dồn một đêm",
+   "sim": 1.0
+  }
+ },
+ "intra_output_cuts": 1,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "Bạn học dồn một đêm cho cả kỳ, sáng ra vẫn làm được đề.",
+   "take": "c01-101.wav",
+   "chunk": "c01"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c05v4.wav",
+  "start_s": 0.0,
+  "end_s": 0.9667,
+  "hold_s": 0,
+  "tail_s": 0
+ }
+}

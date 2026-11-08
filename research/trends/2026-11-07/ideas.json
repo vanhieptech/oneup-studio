@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-07",
+  "ideas": [
+    {
+      "id": "met-sau-hon-ngu-sau-tieng",
+      "title": "Cả mạng than một kiểu mệt mà ngủ thêm cũng không hết. Sách 3.3: sáu tiếng không đủ — não bạn biết",
+      "trend_id": "x-bone-deep-tiredness",
+      "bridge_id": "B-mettamsau-01",
+      "lesson": "3.3 Sáu tiếng ngủ không đủ cho hầu hết người lớn (Walker / sách ghi rõ; Deep Research xác nhận trước khi nêu tên). Hành động: đặt giờ ngủ sớm hơn đúng ba mươi phút tối nay, không thêm một «giờ bù» cuối tuần. Tránh nhãn bệnh / chẩn đoán.",
+      "angle": "empathy / data",
+      "pattern": "P10 + P12",
+      "differentiation": "Mọi người đang nói: có một kiểu mệt mà ngủ thêm cũng không hết, mệt hơn cả thể chất ([X News](https://x.com/i/trending/2118649260149494132); tóm tắt nêu trung bình 6 giờ 33 phút — chưa tự kiểm). Góc của mình: không phải bạn «yếu ý chí». 3.3 nói não cần gần đủ giấc, sáu tiếng mãi sẽ để lại dấu. +1 hôm nay: ngủ sớm hơn ba mươi phút, không cố bù cuối tuần.",
+      "theme": "dark",
+      "week": 3,
+      "target": "đăng #15 (3.3, DARK) hook trend mới; khác B-gameenergy-01 (3.11 chợp 10 phút sau tan làm)",
+      "hook_vi": "Cả mạng đang than một kiểu mệt mà ngủ thêm cũng không hết — mệt hơn cả thể chất.",
+      "moment_vi": "Tối qua bạn ngủ sớm hơn mọi khi, sáng nay vẫn mở mắt như chưa từng nghỉ.",
+      "turn_vi": "Không phải bạn lười dậy. Sáu tiếng mỗi đêm mãi thì não ghi nhận thiếu. Thử tối nay sớm hơn đúng ba mươi phút.",
+      "hook_en": "A tiredness sleep alone doesn't fix — and the feed is full of it.",
+      "explainer": "HyperFrames: thẻ chữ «mệt mà ngủ không hết · X News 06/11» (L-084, chỉ chữ, b01). Ví dụ đời thường: báo thức, giường, điện thoại úp, đồng hồ 6 tiếng. Không nhãn bệnh, không số chưa kiểm nói như đã đo.",
+      "beats": [
+        {
+          "text": "Cả mạng đang than một kiểu mệt mà ngủ thêm cũng không hết — mệt hơn cả thể chất.",
+          "expression": "surprised",
+          "action": "talking",
+          "duration": 8,
+          "caption_en": "Tiredness sleep doesn't fix.",
+          "background": "grid"
+        },
+        {
+          "text": "Có bài tóm tắt nói người lớn ngủ trung bình sáu giờ ba mươi ba phút. Số đó mình chưa tự kiểm, chỉ kể lại.",
+          "expression": "neutral",
+          "action": "talking",
+          "duration": 8,
+          "caption_en": "6h33 from a summary — unverified.",
+          "background": "desk"
+        },
+        {
+          "text": "Tối qua bạn tắt đèn sớm hơn, sáng nay vẫn mở mắt nặng như chưa từng nghỉ.",
+          "expression": "confused",
+          "action": "talking",
+          "duration": 7,
+          "caption_en": "Slept earlier, still heavy.",
+          "background": "bed"
+        },
+        {
+          "text": "Dễ tự bảo: mình yếu, mình thiếu ý chí.",
+          "expression": "sad",
+          "action": "talking",
+          "duration": 6,
+          "caption_en": "Easy to blame willpower.",
+          "background": "desk"
+        },
+        {
+          "text": "Sách có một mục ngắn: sáu tiếng ngủ không đủ với hầu hết người lớn. Não bạn biết điều đó trước cả bạn.",
+          "expression": "neutral",
+          "action": "talking",
+          "duration": 9,
+          "caption_en": "Book 3.3: six hours isn't enough.",
+          "background": "room"
+        },
+        {
+          "text": "Không phải bảo bạn ngủ chín tiếng từ đêm nay. Chỉ một việc nhỏ.",
+          "expression": "happy",
+          "action": "talking",
+          "duration": 6,
+          "caption_en": "One small shift.",
+          "background": "grid"
+        },
+        {
+          "text": "Tối nay đặt giờ ngủ sớm hơn đúng ba mươi phút. Điện thoại để ngoài tầm với trước khi nằm.",
+          "expression": "happy",
+          "action": "talking",
+          "duration": 8,
+          "caption_en": "Sleep 30 minutes earlier.",
+          "background": "bed"
+        },
+        {
+          "text": "Đừng gom thiếu ngủ cả tuần rồi «bù» Chủ nhật. Cái bù đó làm thứ Hai mệt hơn — clip khác sẽ nói.",
+          "expression": "neutral",
+          "action": "talking",
+          "duration": 8,
+          "caption_en": "Don't binge-sleep Sunday.",
+          "background": "desk"
+        },
+        {
+          "text": "Một cộng một hôm nay: sớm hơn ba mươi phút. Não bạn sẽ nhận ra trước cả feed.",
+          "expression": "happy",
+          "action": "talking",
+          "duration": 10,
+          "caption_en": "+1 tonight: thirty minutes.",
+          "background": "grid"
+        }
+      ]
+    },
+    {
+      "id": "doc-ai-met-mat-mot-liet",
+      "title": "Dev than mệt vì phải đọc quá nhiều chữ AI mỗi ngày. Một cái liếc cũng đắt — sách 3.6",
+      "trend_id": "x-ai-reading-fatigue",
+      "bridge_id": "B-airead-01",
+      "lesson": "3.6 Một cái liếc / ngắt quãng vài giây đắt hơn bạn nghĩ (chi phí chuyển đổi chú ý). Hành động: khi nhờ AI viết, chỉ mở đúng một khung trả lời, đọc một lần có mục tiêu, rồi tắt — không để mười tab output song song. Tránh AI-jobs generic.",
+      "angle": "empathy / data",
+      "pattern": "P10 + P03",
+      "differentiation": "Mọi người đang nói: dùng AI xong lại mệt vì phải đọc quá nhiều chữ model ([X News](https://x.com/i/trending/2118406568739770865)). Góc của mình: không phải «AI xấu». Cái đắt là mỗi lần mắt nhảy sang một khối chữ mới — 3.6 nói ngắt quãng vài giây cũng đủ làm đứt mạch. +1 hôm nay: một câu hỏi, một khung trả lời, đọc xong đóng.",
+      "theme": "dark",
+      "week": 2,
+      "target": "đăng #11 (3.6, DARK) hook trend mới; khác vibe-coding ảo giác tiến độ (4.7 hôm qua)",
+      "hook_vi": "Có người viết đúng một câu: chán đọc output của model quá, chưa bao giờ trong đời phải đọc nhiều chữ đến vậy.",
+      "moment_vi": "Bạn hỏi AI một việc nhỏ, nó trả về cả trang. Bạn lướt, hỏi lại, lại thêm một trang nữa.",
+      "turn_vi": "Mệt không phải vì bạn chậm. Mỗi lần mắt nhảy sang khối chữ mới là một lần cắt mạch. Thử chỉ giữ một khung trả lời.",
+      "hook_en": "Never have I read so much — AI output fatigue.",
+      "explainer": "HyperFrames: thẻ chữ «mệt vì đọc AI · X News 05/11» (L-084). Ví dụ: laptop, một cửa sổ chat, nút đóng tab. Không logo model, không số % chưa kiểm.",
+      "beats": [
+        {
+          "text": "Có người viết đúng một câu: chán đọc output của model quá, chưa bao giờ trong đời phải đọc nhiều chữ đến vậy.",
+          "expression": "surprised",
+          "action": "talking",
+          "duration": 9,
+          "caption_en": "Tired of reading model output.",
+          "background": "grid"
+        },
+        {
+          "text": "Feed đang đầy dân code gật đầu. Mình cũng từng hỏi một câu, nhận cả trang.",
+          "expression": "neutral",
+          "action": "talking",
+          "duration": 7,
+          "caption_en": "One question, a wall of text.",
+          "background": "desk"
+        },
+        {
+          "text": "Rồi hỏi lại cho «gọn hơn», lại thêm một trang nữa. Cứ thế cả buổi.",
+          "expression": "confused",
+          "action": "talking",
+          "duration": 7,
+          "caption_en": "Ask again, another page.",
+          "background": "desk"
+        },
+        {
+          "text": "Dễ nghĩ: tại mình không giỏi đọc nhanh.",
+          "expression": "sad",
+          "action": "talking",
+          "duration": 5,
+          "caption_en": "Easy to blame yourself.",
+          "background": "desk"
+        },
+        {
+          "text": "Sách nói góc khác: một cái liếc vài giây cũng đủ làm đứt mạch làm việc. Càng nhiều khối chữ nhảy vào, càng nhiều lần cắt.",
+          "expression": "neutral",
+          "action": "talking",
+          "duration": 9,
+          "caption_en": "Book 3.6: a glance costs.",
+          "background": "room"
+        },
+        {
+          "text": "Không phải bảo bỏ AI. Chỉ đổi cách mở nó.",
+          "expression": "happy",
+          "action": "talking",
+          "duration": 6,
+          "caption_en": "Don't quit AI — change how.",
+          "background": "grid"
+        },
+        {
+          "text": "Một câu hỏi. Một khung trả lời. Đọc một lần có mục tiêu, rồi đóng.",
+          "expression": "happy",
+          "action": "talking",
+          "duration": 8,
+          "caption_en": "One ask, one pane, then close.",
+          "background": "desk"
+        },
+        {
+          "text": "Đừng để mười tab output song song như mười cuộc họp chen ngang.",
+          "expression": "neutral",
+          "action": "talking",
+          "duration": 7,
+          "caption_en": "No ten output tabs.",
+          "background": "desk"
+        },
+        {
+          "text": "Một cộng một hôm nay: hỏi xong, đọc xong, đóng. Mắt bạn sẽ nhẹ hơn feed.",
+          "expression": "happy",
+          "action": "talking",
+          "duration": 12,
+          "caption_en": "+1: ask, read, close.",
+          "background": "grid"
+        }
+      ]
+    }
+  ]
+}

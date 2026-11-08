@@ -1,0 +1,165 @@
+{
+ "data": [
+  {
+   "category": "News",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Microsoft's Ryan Roslansky stared at an AI-generated document from a colleague and saw no original thought—just an 'ocean of sameness.' He's not alone in the frustration.",
+   "id": "2116046144765559242",
+   "name": "Companies Pause Aggressive AI Rollouts After Errors and Cleanup Costs",
+   "summary": "Employers worldwide are scaling back hasty AI deployments due to errors, low-quality outputs, and staff time lost on fixes rather than gains. Meta dialed back AI agent plans amid technical glitches and security issues, while Microsoft restricted tools after leaders spotted lazy AI docs; Walmart staff faced nonsensical schedules from the tech. Executives now liken rollouts to 'driving the truck while building it,' with surveys showing 90% report no productivity boosts yet and many incidents of data loss. Companies are responding with targeted training, mentorship, and slower paces to build smarter integration.",
+   "updated_at": "2026-10-30T06:01:48.000Z",
+   "url": "https://x.com/i/trending/2116046144765559242"
+  },
+  {
+   "category": "News",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "Robotics"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "At Innovation Day 2026 in Shanghai, AGIBOT proposed a fresh way to gauge what robots truly achieve in the real world, beyond just counting how many get shipped.",
+   "id": "2116124354472018104",
+   "name": "AGIBOT Unveils Worken Metric for Measuring Robot Productivity",
+   "summary": "Worken, blending 'work' and 'token,' calculates Effective Intelligent Work Hours as active robots times autonomous hours times an efficiency ratio against human benchmarks. Examples from tourist services to production lines showed thousands of Worken points, highlighting real output in deployments. Co-founder Peng Zhihui stressed that while hardware has advanced, the focus now shifts to useful work in factories and services, with observers praising it as a practical step for comparing robot fleets.",
+   "updated_at": "2026-10-30T17:18:41.000Z",
+   "url": "https://x.com/i/trending/2116124354472018104"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Technical pros feel their hard-earned skills fading, while non-tech folks scramble to learn just enough to guide AI agents effectively.",
+   "id": "2115544018507440306",
+   "name": "AI Coding Tools Reshape Tech Skills Divide",
+   "summary": "AI agents now handle complex coding from simple prompts, blurring lines between seasoned engineers and newcomers through 'vibe coding'—describing outcomes instead of writing code line by line. Data shows engineering teams holding steady or growing, with software developer jobs projected to expand through the mid-2030s, though entry-level roles face pressure and proactive adapters thrive by reinventing workflows. The real edge lies in higher-level skills like defining problems, judging quality, and directing AI, benefiting both those building basic fluency and experts shifting mindsets.",
+   "updated_at": "2026-10-29T21:45:53.000Z",
+   "url": "https://x.com/i/trending/2115544018507440306"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "Software Development"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Developers crank up AI agents, feeling a rush of constant action, but often watch projects stall as true results slip away.",
+   "id": "2116171799830450436",
+   "name": "Developers Hooked on AI Coding Agents Without Real Progress",
+   "summary": "Ex-Anthropic engineer Thariq Shihipar described a 'kind of mania' where running more AI agents creates the illusion of productivity, yet little ships—like a working feature or fixed bug. Many agreed, calling it 'performative busywork' fueled by dopamine hits similar to slot machines, with one noting 10 hours of overnight runs yielding few reviewable PRs. A key graphic contrasts 'feels like progress'—bigger diffs and longer sessions—with 'is progress': actual user value delivered. While tools aid prototyping, the warning is clear: grade success by shipped outcomes, not agent activity.",
+   "updated_at": "2026-10-30T17:22:49.000Z",
+   "url": "https://x.com/i/trending/2116171799830450436"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Designers are pushing back against calling AI work 'slop,' seeing it instead as a tool that lifts everyday design standards while sparking real worries about job shifts.",
+   "id": "2115307345664442749",
+   "name": "Designers Debate AI's Power to Elevate or Flood Creativity",
+   "summary": "On X, many argue AI boosts design by handling patterns and conventions, letting skilled creators speed up workflows without replacing human craft—much like solving tough math problems. Critics counter that it churns out generic, low-effort content, echoing concerns from Canadian graphic design students about poor hierarchy and a 'sea of sameness.' Data shows graphic design jobs declining per the World Economic Forum, yet the UK design economy grew to £136.7 billion in 2023, supporting calls to blend expertise with AI for standout results.",
+   "updated_at": "2026-10-28T05:03:27.000Z",
+   "url": "https://x.com/i/trending/2115307345664442749"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Box CEO Aaron Levie marveled at how vast the divide has grown between top AI users and the rest—just three to six months can make old processes obsolete. Elon Musk agreed simply: 'True.'",
+   "id": "2116040399991034286",
+   "name": "AI Frontier Widens Gap with Everyone Else, Leaders Warn",
+   "summary": "Levie highlighted the 'incomprehensible' distance between those at AI's cutting edge and others, with progress accelerating so fast that recent methods already feel outdated. Enterprise surveys like McKinsey's 2026 report show most organizations using AI but only 37 percent seeing earnings gains, unchanged from last year, while just 6 percent count as high performers. Experts point to IT bottlenecks, data hurdles, and legacy systems slowing larger firms, as nimble AI startups race ahead—raising the question of whether big companies can catch up.",
+   "updated_at": "2026-10-30T19:31:39.000Z",
+   "url": "https://x.com/i/trending/2116040399991034286"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "In tech, some professionals are transforming their jobs with AI experiments, while others feel stuck waiting for bosses to show the way.",
+   "id": "2115102776606732399",
+   "name": "Tech Workers Split on AI: Experimenters Gain, Others Lag",
+   "summary": "A clear divide is emerging between tech workers who independently experiment with AI tools and boost their efficiency, and those frustrated by a lack of management guidance as they watch peers pull ahead. Lists of 50 practical AI tools for writing, coding, images, and automation are helping skilled users work smarter, with data from PwC and ZipRecruiter showing faster growth in AI-exposed companies and higher productivity for proactive adopters. Optimism prevails that AI rewards those blending core skills with tools, though concerns linger about job shifts and the need for retraining.",
+   "updated_at": "2026-10-28T19:21:34.000Z",
+   "url": "https://x.com/i/trending/2115102776606732399"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "Software Development"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Software teams love how AI agents crank out code faster than ever. But with review times ballooning, engineers are scrambling to verify it all without slowing down.",
+   "id": "2115468238729388392",
+   "name": "AI Coding Agents Speed Up Output But Widen Verification Gap",
+   "summary": "A Harvard study of millions of work events shows AI coding agents boosted lines of code per worker by 30 percent and pull requests by 23 percent, yet review times jumped 49 percent with no gains in completed tasks. Engineers on X debate solutions like automating reviews with AI, generating tests and docs first, and layering human judgment on top, while keeping eyes on critical areas like payments. Tools like OVI aim to help by running reviews, tests, and reports that understand the product, signaling a shift where verification—not writing code—is now the real challenge.",
+   "updated_at": "2026-10-28T15:46:24.000Z",
+   "url": "https://x.com/i/trending/2115468238729388392"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Software Development"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Software engineers once managed code in careful drops. Now AI agents deliver it like a twisting river, forcing teams to rethink their entire workflows.",
+   "id": "2116316820030579083",
+   "name": "AI Agents Reshape Software Engineering into Continuous Code Streams",
+   "summary": "Experts like Lauren Tan describe the shift from incremental code updates to high-volume AI-driven streams, urging teams to build systems where agents with limited context can succeed. Real examples include Meta's Harris shipping features to millions via agents and Anthropic's code changes surging from 2,500 to over 30,000 daily, leading to a custom source-control system. John Carmack emphasizes solid building blocks for efficiency, while others stress redesigning development lifecycles around agent velocity and strong guardrails to guide this organic evolution.",
+   "updated_at": "2026-10-30T23:58:05.000Z",
+   "url": "https://x.com/i/trending/2116316820030579083"
+  },
+  {
+   "category": "News",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Imagine an AI that doesn't just answer questions but guides you through entire sequences of tough choices, like optimizing a data center's cooling in just 15 seconds for pennies.",
+   "id": "2115664655162982655",
+   "name": "Articul8 Launches Bivia AI for Full Decision Workflows",
+   "summary": "Articul8, an Intel spinout from early 2024, unveiled Bivia on October 28—a multimodal model that processes text, images, video, audio, and sensor data to deliver structured decisions with confidence scores. It handles complex tasks like strategy games such as Gomoku and Tetris, weighing moves several steps ahead, and supports over 50 languages based on the source material. Available now via API with pay-per-token pricing and a billion free tokens for the first 10,000 users, Bivia draws from billions of real production decisions, earning praise for knowing its limits and focusing on outcomes in startups and industrial settings.",
+   "updated_at": "2026-10-29T04:42:58.000Z",
+   "url": "https://x.com/i/trending/2115664655162982655"
+  }
+ ],
+ "meta": {
+  "result_count": 10
+ }
+}

@@ -1,0 +1,680 @@
+{
+  "actor": "clockworks/tiktok-scraper",
+  "run_id": "jRLleUhL5eClvRAgR",
+  "item_count": 5,
+  "fields_coverage": {
+    "url": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "caption": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "author": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "play_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "like_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "share_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "comment_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "duration_s": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "music": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "hashtags": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "subtitle_or_transcript": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "top_comments": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    }
+  },
+  "clips": [
+    {
+      "url": "https://www.tiktok.com/@ng__phanh/video/7532553338664045831",
+      "caption": "Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ\n#deadline #onthi #hoc #fyp ",
+      "author": {
+        "id": "70082442737",
+        "name": "ng__phanh",
+        "nick": "⋆˚✿ 𝑷𝒉𝒖̛𝒐̛𝒏𝒈 𝑬𝒎 ✿˖°",
+        "profile": "https://www.tiktok.com/@ng__phanh",
+        "fans": 20100
+      },
+      "play_count": 1100000,
+      "like_count": 107100,
+      "share_count": 55300,
+      "comment_count": 695,
+      "duration_s": 20,
+      "music": {
+        "id": "7373464601280744208",
+        "name": "nhạc nền - ⚜️Thanh*Phong⚜️",
+        "author": "⚜️Thanh*Phong⚜️",
+        "original": true
+      },
+      "hashtags": [
+        "deadline",
+        "onthi",
+        "hoc",
+        "fyp"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "caption_fallback",
+        "text": "Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ\n#deadline #onthi #hoc #fyp ",
+        "links": []
+      },
+      "top_comments": [
+        {
+          "text": "Sách mới tinh kh vết gấp mà😭",
+          "likes": 3269,
+          "author": "ttt.ist"
+        },
+        {
+          "text": "“Tôi và quyển giáo trình gặp nhau lần đầu tiên tại quán photo trước 2 tiếng vào thi”",
+          "likes": 213,
+          "author": "troitrudatdiet89"
+        },
+        {
+          "text": "Mới first date mà hôm sau phụ huynh bắt kết hôn 😭🙏🏻",
+          "likes": 144,
+          "author": "zereo06"
+        },
+        {
+          "text": "Ko sao mình nhét ba môn cả kì trước 3 tiếng thi 🥰🥰🥰",
+          "likes": 132,
+          "author": "tieuthuquangninhvelybon"
+        },
+        {
+          "text": "biết học ko hết đâu nhưng phải in full giáo trình ko sót trang nào mới chịu 😌",
+          "likes": 44,
+          "author": "dungthuvacaiket"
+        },
+        {
+          "text": "Oke giáo sư",
+          "likes": 39,
+          "author": "chuquancaphe"
+        },
+        {
+          "text": "Thực vật dược pk mom cứ cái ảnh kia quen lắm",
+          "likes": 34,
+          "author": "thichanbunca16"
+        },
+        {
+          "text": "đi học mang đc cái thi thể là mừng",
+          "likes": 26,
+          "author": "thuongthu_05"
+        },
+        {
+          "text": "có thể là gặp nhau lần đầu khi bắt đầu đọc hết tờ đề =)))",
+          "likes": 23,
+          "author": "itachi.naa"
+        },
+        {
+          "text": "Một môn của đại học có thể hc trong 12 tiếng😭",
+          "likes": 18,
+          "author": "abcdifgvteu1"
+        },
+        {
+          "text": "trước hôm thi lật lướt rồi sáng hôm sau gặp nhau khi tôi mất trí nhớ... truy thê hoả táng :)",
+          "likes": 17,
+          "author": "09_tdbn"
+        },
+        {
+          "text": "trước hôm thi mới biết tại sao nó học trong 1 kì🥰",
+          "likes": 10,
+          "author": "_lakye07"
+        },
+        {
+          "text": "ê bth học kh hiểu gì nha. Tới hồi mai thi là bài nào cũng hiểu. Mỗi tội nhiều quá kh kịp nhớ hết",
+          "likes": 10,
+          "author": "tuilafragon"
+        },
+        {
+          "text": "😭trong 1 đêm tôi đã biến thành học bá",
+          "likes": 10,
+          "author": "toiyeu_betrai"
+        },
+        {
+          "text": "t toàn học trên file, vì bít chak mua hay in ra cũng chả xem 😅",
+          "likes": 8,
+          "author": "peony_nguyen_91"
+        },
+        {
+          "text": "Nhìn đống sách vở mới thế kia là bt đang nói tht rồi😂😂😂",
+          "likes": 8,
+          "author": "nguyenhanhtrang1710"
+        },
+        {
+          "text": "chào anh kiến thức, anh và em chưa từng gặp nhau nhưng chúng ta sẽ kết hôn🥰",
+          "likes": 8,
+          "author": "hnnguyn200"
+        },
+        {
+          "text": "sách chị sạch đẹp vậy",
+          "likes": 6,
+          "author": "thuypham33367"
+        },
+        {
+          "text": "trước thi t thấy ai cũng học bù đầu, t thi THPTQG t chả học , t đi ngủ 🙂",
+          "likes": 5,
+          "author": "nq_nn7"
+        },
+        {
+          "text": "Bạn còn trước 12 tiếng, mình thì trước cửa phòng thi rồi mà mới đọc tới nửa của quyển giáo trìnhh :)) 🌝",
+          "likes": 5,
+          "author": "lenguyenthuyhang1735"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7532553338664045831",
+      "create_time": "2025-07-29T17:14:08.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@hoc.di.roi.biet/video/7695270625660652820",
+      "caption": "4 năm đại học, vẫn đống đề cương đó mà giờ mới biết dùng kiểu này 💀\n#onthi #sinhvien #studyhacks #hoctap #astraai #4153",
+      "author": {
+        "id": "7336216236508546066",
+        "name": "hoc.di.roi.biet",
+        "nick": "Học Đi Rồi Biết",
+        "profile": "https://www.tiktok.com/@hoc.di.roi.biet",
+        "fans": 2334
+      },
+      "play_count": 390700,
+      "like_count": 34900,
+      "share_count": 5505,
+      "comment_count": 389,
+      "duration_s": 48,
+      "music": {
+        "id": "7695270666957802260",
+        "name": "original sound - Học Đi Rồi Biết",
+        "author": "Học Đi Rồi Biết",
+        "original": true
+      },
+      "hashtags": [
+        "onthi",
+        "sinhvien",
+        "studyhacks",
+        "hoctap",
+        "astraai",
+        "4153"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.160 --> 00:00:00.880\nXin lỗi mọi người nhá\n\n00:00:00.881 --> 00:00:02.881\nthế nhưng chắc chắn là mình sẽ xóa video này sau 24 tiếng\n\n00:00:03.000 --> 00:00:05.240\nbởi vì mình không thể tưởng tượng được là sau 4 năm đại học\n\n00:00:05.400 --> 00:00:07.240\nhóa Ra mình hoàn toàn có thể biết trước được đề thi\n\n00:00:07.520 --> 00:00:08.880\nthật Ra là mình cũng không định chia sẻ này đâu\n\n00:00:08.881 --> 00:00:10.161\nbởi vì sợ nhiều người biết quá ấy\n\n00:00:10.320 --> 00:00:11.320\nnhưng may là thằng bạn của mình ấy\n\n00:00:11.321 --> 00:00:13.601\nnó đã đồng ý để mình chia sẻ Cho mọi người cách mà nó học\n\n00:00:13.720 --> 00:00:14.960\nnhưng mà điều khiến mình bất ngờ nhất ấy là\n\n00:00:14.961 --> 00:00:16.681\nmình hoàn toàn chỉ mất có đúng một tiếng để ôn thôi\n\n00:00:17.000 --> 00:00:18.360\nnhưng mà cũng đã dự đoán được Kha khá\n\n00:00:18.480 --> 00:00:19.800\ncác câu có thể xuất hiện trong đề thi rồi\n\n00:00:20.000 --> 00:00:20.600\nnhưng nhớ nhé\n\n00:00:20.601 --> 00:00:22.241\nmình chỉ để video này trong 24 tiếng thôi\n\n00:00:22.320 --> 00:00:23.840\nvì mình không muốn có quá nhiều người biết cách này\n\n00:00:24.160 --> 00:00:24.720\nđầu tiên ấy là\n\n00:00:24.721 --> 00:00:25.601\nmọi người gom toàn bộ note\n\n00:00:25.680 --> 00:00:27.320\nvà tài liệu đã học trong một kỳ rồi upload lên đây\n\n00:00:27.680 --> 00:00:29.680\ncó thể là five Word PDF hoặc là PowerPoint\n\n00:00:29.920 --> 00:00:30.600\ncái nào cũng được\n\n00:00:30.601 --> 00:00:32.001\nsau đó nó sẽ tự tạo Cho mình một bản\n\n00:00:32.040 --> 00:00:33.240\ntóm tắt kiến thức để chuẩn bị Cho kỳ thi\n\n00:00:33.520 --> 00:00:34.240\nkhông chỉ có note đâu\n\n00:00:34.241 --> 00:00:36.161\nnó còn có cả tính năng flashcard để gọi lại kiến thức nữa\n\n00:00:36.280 --> 00:00:37.160\nnhưng hay nhất là phần quiz\n\n00:00:37.320 --> 00:00:39.040\nnó tạo câu hỏi từ đúng tài liệu mà mình up lên luôn\n\n00:00:39.160 --> 00:00:40.880\ncâu nào Sai thì giải thích luôn là tại SAO Sai\n\n00:00:41.200 --> 00:00:41.920\nmuốn căng hơn nữa ấy\n\n00:00:41.921 --> 00:00:43.401\nthì có khả năng để thi thử với giới hạn thời gian\n\n00:00:43.560 --> 00:00:44.440\ncảm giác như thi thật luôn\n\n00:00:44.640 --> 00:00:46.120\nnói Chung ấy là thay vì phải ngồi học LAN man\n\n00:00:46.400 --> 00:00:48.200\ngiờ mình biết là mình đang yếu phần nào để ôn đúng phần ấy\n",
+        "links": [
+          "research/trends/2026-10-20/apify/vtt/subtitle-hoc.di.roi-7695270625660652820-vie-VN.vtt"
+        ],
+        "file": "subtitle-hoc.di.roi-7695270625660652820-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "ổng quảng cáo và ổng sẽ k xoá vid đâu:)",
+          "likes": 1078,
+          "author": "dangha2409"
+        },
+        {
+          "text": "Xóa đc r đó",
+          "likes": 209,
+          "author": "uzumakihimawari095"
+        },
+        {
+          "text": "cách thu hút ng xem trong 3s giây vàng ở đầu video",
+          "likes": 57,
+          "author": "hiieu.ged"
+        },
+        {
+          "text": "ông xóa hộ cái 😂😂😂\ntôi tải video về rồi 😂😂😂",
+          "likes": 30,
+          "author": "ren2k6_2006"
+        },
+        {
+          "text": "fake or fake",
+          "likes": 20,
+          "author": "__tlabocuam__"
+        },
+        {
+          "text": "notebook lm vua cái này kh ngon bằng",
+          "likes": 17,
+          "author": "vzuyy.19"
+        },
+        {
+          "text": "Xh thì chắc gì đã xoá 😂",
+          "likes": 11,
+          "author": "wooaiinyy"
+        },
+        {
+          "text": "NotebookLM🗿",
+          "likes": 10,
+          "author": "doanketmoi113"
+        },
+        {
+          "text": "qtrong là cần tiền thì ms dc nvay nhé",
+          "likes": 7,
+          "author": "pquaann2009"
+        },
+        {
+          "text": "em đã tiếp thu xóa luôn đi a",
+          "likes": 5,
+          "author": "quanmoiok"
+        },
+        {
+          "text": "nếu xoá thì t tải vid",
+          "likes": 3,
+          "author": "m3x.03"
+        },
+        {
+          "text": "1 ngày r mak đã xóa đâu🐧",
+          "likes": 3,
+          "author": "tihonhoang"
+        },
+        {
+          "text": "Tao lưu rồi h thì không phải lo rồi",
+          "likes": 2,
+          "author": "meloccanh"
+        },
+        {
+          "text": "vậy vẫn là học mà 😭✌️🥀",
+          "likes": 2,
+          "author": "pycop53"
+        },
+        {
+          "text": "23 tiếng rồi nhé",
+          "likes": 1,
+          "author": "ewai_8413"
+        },
+        {
+          "text": "đủ r xoá đi để t đăng video",
+          "likes": 1,
+          "author": "ndh_dnt"
+        },
+        {
+          "text": "nhanh trí tải về",
+          "likes": 1,
+          "author": "nguynkhang0379"
+        },
+        {
+          "text": "9 phút r xóa đi anh",
+          "likes": 1,
+          "author": "d.4uy_anhh"
+        },
+        {
+          "text": "đầu",
+          "likes": 0,
+          "author": "nmc452011dz"
+        },
+        {
+          "text": "chx xóa ad",
+          "likes": 0,
+          "author": "taikhoankotontai186"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7695270625660652820",
+      "create_time": "2026-10-11T05:00:10.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@camreadwonder/video/7614813783201975573",
+      "caption": "Em học em không nhớ thì làm sao hả chị? \n\nCác mày có biết đường cong quên lãng không? Ý là con người ta sẽ quên khoảng hơn 70% những gì mình học được trong 24h giờ và cách duy nhất để chống lại điều đó là ôn lại bài đúng thời điểm vàng. Với tao thì tao chẳng nhớ được nhiều như thế, thời điểm vàng là bao giờ? Tính toán nó mệt lắm nên tao hay làm theo cách này nè:\n\nMột, siêu tóm tắt. Bình thường chúng mày tóm kiến thức như thế nào? Từ một đoạn văn dài xuống còn 1 đoạn văn ngắn hơn? Tất nhiên tao cũng làm như thế nhưng sẽ có bước tiếp theo, ví dụ:\n\nĐoạn dài như này: Tháng 3-1919, Quốc tế Cộng sản (hay còn gọi là Quốc tế III) được thành lập. Tại đại hội II của Quốc tế Cộng sản (1920), luận cương \"Sơ thảo lần thứ nhất về vấn đề dân tộc và vấn đề thuộc địa” của Lênin được công bố. Luận cương đã chỉ ra phương hướng đấu tranh giải phóng các dân tộc trên thế giới, trong đó có Việt Nam.\n\nTao tóm thành như này: 3/1919: Thành lập Quốc tế Cộng sản (Quốc tế III). 1920: Tại Đại hội II, Lenin công bố “Sơ thảo lần thứ nhất về vấn đề dân tộc và thuộc địa”, chỉ ra con đường đấu tranh giải phóng cho các dân tộc bị áp bức, trong đó có Việt Nam.\n\nLúc này tao sẽ khoanh những yếu tố quan trọng như mốc thời gian, tên riêng, tên chủ thể,... là tao có cách ghi nhớ cuối cùng: \n\n3/1919 TL QTCS (QTII)\n1920 LC “STLT1 V VĐDT V VĐTĐ” CRCĐ ĐTGPDT CCNTĐBAB, TĐC VN\n\nVâng không cần đoán cũng biết tao thật sự lấy ra chữ cái đầu của tất cả nội dung để ghi nhớ, sau công đoạn tóm tắt tao gần như chụp mọi thứ vào đầu, từ đó ghi ra giấy những chữ cái đầu tiên (Là chụp thật ấy không phải đọc nhẩm nhẩm hay gì đâu, cách này bẩm sinh của bọn não phải nhé, tạm thời chưa biết hướng dẫn kiểu gì) Bước này vừa nhanh hơn việc viết hết nội dung học thuộc ra giấy, vừa ép bản thân phải động não nghĩ xem chữ đầu của chữ tiếp theo là gì, kiến thức cứ lặp đi lặp lại trong đầu sao mà quên được. Tất nhiên sau đó khi ôn lại tổng thể bài tao sẽ viết ra một loạt trên giấy A4 vài lần cho nhớ chắc ăn, nhai kỹ thì lo lâu mà! (Tao có tìm được một vài đoạn nháp tao học như vậy dưới cmt nhé)\n\nNhìn ảnh sẽ biết tao còn dùng phương pháp này học nội dung thuyết trình luôn, mà đấy là thuyết trình cho tiếng Trung. Có nghĩa là tao có thể áp dụng triệt để cách này cho tất cả môn cần học thuộc và nhớ bài bất kể là ngôn ngữ nào nhé. \n\nÔi hẳn sẽ có đứa thắc mắc chụp vào đầu rồi sao còn phải ghi ra giấy để nhớ, nhưng cơ chế chụp hình chỉ áp dụng được cho nội dung có thể thể hiện bằng hình ảnh thôi nhé, não tao cũng hoá đá lắm, không phải cái gì cũng tưởng tượng ra được ý.\n\nÀ nếu các mày có thể nhớ theo sơ đồ tư duy thì tốt, nhưng có nhiều môn không dùng được phương pháp này đặt biệt là nặng lý thuyết khó chi nhỏ thành các ý con, khi đó có thể sử dụng cách của tao nhé. Kể từ khi áp dụng chưa bao giờ tao đi thi dưới 8 điểm đâu, hãy tin tưởng GPA 3.8 thời chưa có Chat GPT đi.\n\nHai, thôi dài quá tiktok không cho đăng, hẹn các mày clip sau nhé hẹ hẹ.",
+      "author": {
+        "id": "7171115655499514907",
+        "name": "camreadwonder",
+        "nick": "Cam ở xứ sở thần tiên ✨",
+        "profile": "https://www.tiktok.com/@camreadwonder",
+        "fans": 26100
+      },
+      "play_count": 287700,
+      "like_count": 32800,
+      "share_count": 2707,
+      "comment_count": 58,
+      "duration_s": 34,
+      "music": {
+        "id": "7289551381256555270",
+        "name": "som original",
+        "author": "samara 🍂",
+        "original": true
+      },
+      "hashtags": [],
+      "subtitle_or_transcript": {
+        "kind": "caption_fallback",
+        "text": "Em học em không nhớ thì làm sao hả chị? \n\nCác mày có biết đường cong quên lãng không? Ý là con người ta sẽ quên khoảng hơn 70% những gì mình học được trong 24h giờ và cách duy nhất để chống lại điều đó là ôn lại bài đúng thời điểm vàng. Với tao thì tao chẳng nhớ được nhiều như thế, thời điểm vàng là bao giờ? Tính toán nó mệt lắm nên tao hay làm theo cách này nè:\n\nMột, siêu tóm tắt. Bình thường chúng mày tóm kiến thức như thế nào? Từ một đoạn văn dài xuống còn 1 đoạn văn ngắn hơn? Tất nhiên tao cũng làm như thế nhưng sẽ có bước tiếp theo, ví dụ:\n\nĐoạn dài như này: Tháng 3-1919, Quốc tế Cộng sản (hay còn gọi là Quốc tế III) được thành lập. Tại đại hội II của Quốc tế Cộng sản (1920), luận cương \"Sơ thảo lần thứ nhất về vấn đề dân tộc và vấn đề thuộc địa” của Lênin được công bố. Luận cương đã chỉ ra phương hướng đấu tranh giải phóng các dân tộc trên thế giới, trong đó có Việt Nam.\n\nTao tóm thành như này: 3/1919: Thành lập Quốc tế Cộng sản (Quốc tế III). 1920: Tại Đại hội II, Lenin công bố “Sơ thảo lần thứ nhất về vấn đề dân tộc và thuộc địa”, chỉ ra con đường đấu tranh giải phóng cho các dân tộc bị áp bức, trong đó có Việt Nam.\n\nLúc này tao sẽ khoanh những yếu tố quan trọng như mốc thời gian, tên riêng, tên chủ thể,... là tao có cách ghi nhớ cuối cùng: \n\n3/1919 TL QTCS (QTII)\n1920 LC “STLT1 V VĐDT V VĐTĐ” CRCĐ ĐTGPDT CCNTĐBAB, TĐC VN\n\nVâng không cần đoán cũng biết tao thật sự lấy ra chữ cái đầu của tất cả nội dung để ghi nhớ, sau công đoạn tóm tắt tao gần như chụp mọi thứ vào đầu, từ đó ghi ra giấy những chữ cái đầu tiên (Là chụp thật ấy không phải đọc nhẩm nhẩm hay gì đâu, cách này bẩm sinh của bọn não phải nhé, tạm thời chưa biết hướng dẫn kiểu gì) Bước này vừa nhanh hơn việc viết hết nội dung học thuộc ra giấy, vừa ép bản thân phải động não nghĩ xem chữ đầu của chữ tiếp theo là gì, kiến thức cứ lặp đi lặp lại trong đầu sao mà quên được. Tất nhiên sau đó khi ôn lại tổng thể bài tao sẽ viết ra một loạt trên giấy A4 vài lần cho nhớ chắc ăn, nhai kỹ thì lo lâu mà! (Tao có tìm được một vài đoạn nháp tao học như vậy dưới cmt nhé)\n\nNhìn ảnh sẽ biết tao còn dùng phương pháp này học nội dung thuyết trình luôn, mà đấy là thuyết trình cho tiếng Trung. Có nghĩa là tao có thể áp dụng triệt để cách này cho tất cả môn cần học thuộc và nhớ bài bất kể là ngôn ngữ nào nhé. \n\nÔi hẳn sẽ có đứa thắc mắc chụp vào đầu rồi sao còn phải ghi ra giấy để nhớ, nhưng cơ chế chụp hình chỉ áp dụng được cho nội dung có thể thể hiện bằng hình ảnh thôi nhé, não tao cũng hoá đá lắm, không phải cái gì cũng tưởng tượng ra được ý.\n\nÀ nếu các mày có thể nhớ theo sơ đồ tư duy thì tốt, nhưng có nhiều môn không dùng được phương pháp này đặt biệt là nặng lý thuyết khó chi nhỏ thành các ý con, khi đó có thể sử dụng cách của tao nhé. Kể từ khi áp dụng chưa bao giờ tao đi thi dưới 8 điểm đâu, hãy tin tưởng GPA 3.8 thời chưa có Chat GPT đi.\n\nHai, thôi dài quá tiktok không cho đăng, hẹn các mày clip sau nhé hẹ hẹ.",
+        "links": []
+      },
+      "top_comments": [
+        {
+          "text": "em hok hợp pp này cho lắm 🥰😭 đọc miệng hay khảo em thuộc nhanh lắm mà ghi tắt vậy là em quên mà ghi nguyên câu rõ ràng là lại nhớ vèo vèo 😅",
+          "likes": 796,
+          "author": "uocjgioitoan_"
+        },
+        {
+          "text": "Nhược điểm là buộc phải nhớ chữ cái phía trước thì mới lộ diện vế sau🫴🫴",
+          "likes": 196,
+          "author": "_h_thuong007"
+        },
+        {
+          "text": "nhờ các vid của chị về các cách học mà em đc giải nhất tiếng anh đó ạ ( mặc dù chỉ là cấp trường), thật sự cảm ơn chị nhiều lắm á 😭",
+          "likes": 92,
+          "author": "taekookforeverr"
+        },
+        {
+          "text": "sao tao thấy học mấy môn tự nhiên dễ hoen nhiều á",
+          "likes": 30,
+          "author": "lopduphongcuayeonskylar"
+        },
+        {
+          "text": "thà học thuộc chứ kh chịu giải toán😭",
+          "likes": 9,
+          "author": "fx.wh_"
+        },
+        {
+          "text": "Bài trói em lại😭😭",
+          "likes": 6,
+          "author": "ng_neun15"
+        },
+        {
+          "text": "tr ơi ghét học thuộc nhất luôn",
+          "likes": 6,
+          "author": "172210cnhung"
+        },
+        {
+          "text": "về phần ngôn ngữ thì mik sd pp đó sao chị ,e chưa hình dung đc ạ",
+          "likes": 4,
+          "author": "nhims0401hd"
+        },
+        {
+          "text": "mình nhận kèm toán 9 thi ts và toán 11 cần lấy gốc ạaaa",
+          "likes": 4,
+          "author": "uyn.k1"
+        },
+        {
+          "text": "=))))) oke lắm nha em toàn làm vậy và trộm vía nhớ cũng lâu đó mà lâu lâu cũng quên vài chữ",
+          "likes": 2,
+          "author": "cothamvongnhungluoihjhj"
+        },
+        {
+          "text": "cách dễ học thuộc nhất là hiểu cái đó :)) đọc to rồi viết đi viết lại cuối cùng là ngồi giảng như giáo viên giảng bài vậy",
+          "likes": 2,
+          "author": "linhpham225009"
+        },
+        {
+          "text": "Sắp khùng lun đây người đẹp😍 😳",
+          "likes": 1,
+          "author": "tr071166"
+        },
+        {
+          "text": "cho bé xin capp chị vt ạ",
+          "likes": 1,
+          "author": "thy.thy5630"
+        },
+        {
+          "text": "cách j v ạ",
+          "likes": 1,
+          "author": "dq_kyung"
+        },
+        {
+          "text": "nm lại lười",
+          "likes": 1,
+          "author": "_nguyetanhdzai"
+        },
+        {
+          "text": "học thuộc dễ mà áp dụng là một vấn đề khác ...",
+          "likes": 1,
+          "author": "hyst.119"
+        },
+        {
+          "text": "em đọc to nhiều lần học thuộc chia nhỏ từng đoạn r ghi lại ra vở cho nhớ hoặc ghi vô ghi chú",
+          "likes": 1,
+          "author": "18_03_2009_"
+        },
+        {
+          "text": "thề chứ mấy môn tự nhiên làm riết cũng thuộc cthức ,chữ học bài đuối tht sự",
+          "likes": 1,
+          "author": "pirfectino"
+        },
+        {
+          "text": "Cứ cho dạy ngkhac về nd bài học là đảm bảo khó quên, thêm combo tìm ra những mẹo dễ nhớ nữa thì còn gì đẹp hơn :))",
+          "likes": 1,
+          "author": "co_raline10"
+        },
+        {
+          "text": "ê cmt bằng hình kiểu gì ta",
+          "likes": 0,
+          "author": "camreadwonder"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7614813783201975573",
+      "create_time": "2026-03-08T09:26:48.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@sabito_0668/video/7670995147995237640",
+      "caption": "#podcast #sabito_ #viral ",
+      "author": {
+        "id": "7658959588469130260",
+        "name": "sabito_0668",
+        "nick": "sabito_",
+        "profile": "https://www.tiktok.com/@sabito_0668",
+        "fans": 1795
+      },
+      "play_count": 606000,
+      "like_count": 68800,
+      "share_count": 14200,
+      "comment_count": 194,
+      "duration_s": 100,
+      "music": {
+        "id": "7670995199254579975",
+        "name": "âm thanh gốc - sabito_",
+        "author": "sabito_",
+        "original": true
+      },
+      "hashtags": [
+        "podcast",
+        "sabito_",
+        "viral"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.000 --> 00:00:02.480\nphải thức khuya thì thức thôi nhưng để ý cơ thể một tí\n\n00:00:02.800 --> 00:00:04.600\nnếu đợt này bạn buộc phải thức khuya chạy deadline\n\n00:00:04.920 --> 00:00:06.600\nhoặc đơn giản là việc dồn quá nhiều\n\n00:00:06.800 --> 00:00:09.200\nthì để mình chia sẻ cách giảm tối đa tác hại của nó\n\n00:00:09.440 --> 00:00:11.480\nlưu lại nhé mình chia làm BA giai đoạn\n\n00:00:11.880 --> 00:00:12.680\ntrước khi thức\n\n00:00:12.800 --> 00:00:13.960\nbiết trước tối nay phải cày\n\n00:00:14.040 --> 00:00:16.440\nthì buổi chiều nên chợp mắt 20 đến 90 phút\n\n00:00:16.560 --> 00:00:18.400\nkhoa học gọi đây là gửi tiết kiệm giấc ngủ\n\n00:00:18.600 --> 00:00:20.120\nnạp sẵn để vào CA đêm đỡ gục\n\n00:00:20.520 --> 00:00:21.840\ntrước đó ăn một bữa tử tế\n\n00:00:22.080 --> 00:00:22.920\ntu tiên đạm với rau\n\n00:00:23.040 --> 00:00:25.600\nvì đói lả lúc 2 giờ sáng là lúc mình ăn bậy nhiều nhất\n\n00:00:25.640 --> 00:00:27.560\nvà khoan tu cà phê sớm quá kẻo phí\n\n00:00:27.640 --> 00:00:28.920\ncứ để dành đến giai đoạn sau\n\n00:00:29.320 --> 00:00:30.120\ntrong khi thức\n\n00:00:30.160 --> 00:00:31.080\nbật đèn Cho sáng\n\n00:00:31.200 --> 00:00:33.760\nvì khi thấy sáng thì não sẽ hiểu là chưa tới giờ ngủ\n\n00:00:34.160 --> 00:00:36.840\nđói thì ăn trứng luộc phô mai nói Chung là protein\n\n00:00:37.120 --> 00:00:38.120\ntránh bánh kẹo mì gói\n\n00:00:38.320 --> 00:00:39.120\nbởi đường lên nhanh\n\n00:00:39.121 --> 00:00:41.521\ntụt nhanh khiến cơn buồn ngủ dội ngược lại còn nặng hơn\n\n00:00:41.840 --> 00:00:42.720\nnhớ uống đủ nước\n\n00:00:42.840 --> 00:00:43.640\nvì nhiều lúc mình\n\n00:00:43.641 --> 00:00:45.681\ntưởng buồn ngủ nhưng thật Ra chỉ đang khát thôi\n\n00:00:46.040 --> 00:00:48.840\ncó một mẹo hay là uống cà phê xong chợp mắt đúng 20 phút\n\n00:00:49.000 --> 00:00:51.040\nlúc tỉnh dậy cafein vừa ngấm là tỉnh nhân đôi\n\n00:00:51.200 --> 00:00:52.320\nchỉ cần nhớ ngưng cà phê\n\n00:00:52.360 --> 00:00:54.000\ntrước giờ định đi ngủ ít nhất 6 tiếng\n\n00:00:54.320 --> 00:00:56.400\nsau khi thức phần quan trọng nhất nghe hơi ngực đời\n\n00:00:56.560 --> 00:00:58.480\nnhưng thức trắng xong nhiều khi lại rất khó ngủ\n\n00:00:58.600 --> 00:01:01.000\nvì cơ thể vẫn đang bơm cortison để kéo bạn tỉnh\n\n00:01:01.200 --> 00:01:03.360\ntạo cảm giác mệt rã rời mà đầu vẫn quay quay\n\n00:01:03.720 --> 00:01:04.880\nkiểu mệt quá hóa tỉnh\n\n00:01:05.280 --> 00:01:07.080\nnên việc cần làm lúc này là hạ nhiệt hệ\n\n00:01:07.120 --> 00:01:08.120\nthần kinh xuống từ từ\n\n00:01:08.320 --> 00:01:10.280\ntắt bớt màn hình chuyển sang đèn vàng dịu\n\n00:01:10.440 --> 00:01:11.920\nrồi đi tắm nước ấm bởi\n\n00:01:12.000 --> 00:01:13.040\nthân nhiệt hạ nhẹ sau khi\n\n00:01:13.080 --> 00:01:15.560\ntắm chính là tín hiệu báo Cho cơ thể biết nghỉ được rồi\n\n00:01:15.840 --> 00:01:17.160\nvà đây đúng là lúc để pha một\n\n00:01:17.200 --> 00:01:19.320\ntách trà đơn giản dễ ngủ kiểu như trà thảo mộc\n\n00:01:19.480 --> 00:01:21.880\nkhi mình cầm tách trà ấm Nhâm nhi từ từ thì bản\n\n00:01:21.920 --> 00:01:22.720\nthân điều đó đã là\n\n00:01:22.721 --> 00:01:25.001\ntín hiệu Cho não chuyển từ chế độ căng sang thư giãn\n\n00:01:25.360 --> 00:01:28.360\ngiúp vào giấc dễ hơn hẳn so với nằm trằn trọc nhìn chân nhà\n\n00:01:28.680 --> 00:01:30.640\nngủ bù thì nên nhưng đừng nướng cả ngày\n\n00:01:30.760 --> 00:01:32.840\ncứ một giấc phục hồi rồi dậy đón nắng sáng để\n\n00:01:32.880 --> 00:01:35.280\ntối nay đồng hồ sinh học không lệch thành thức trắng tập 2\n\n00:01:35.720 --> 00:01:37.080\nnếu bạn cũng hay phải cày đêm\n\n00:01:37.200 --> 00:01:38.840\nbấm lưu lại bài này để áp dụng nhé\n",
+        "links": [
+          "research/trends/2026-10-20/apify/vtt/subtitle-sabito_066-7670995147995237640-vie-VN.vtt"
+        ],
+        "file": "subtitle-sabito_066-7670995147995237640-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "cả tuần nay toàn 6,7h sáng mới bngu, đêm kh ngủ nổi luôn",
+          "likes": 342,
+          "author": "_tnh.van06"
+        },
+        {
+          "text": "Giờ em thì 12g30 ngủ mà 9g sáng mới dậy nổi😭 là ok ko ạ m n",
+          "likes": 179,
+          "author": "reborn_mouse_"
+        },
+        {
+          "text": "có ai đã dậy giờ này chưa 🤣?",
+          "likes": 42,
+          "author": "sabito_0668"
+        },
+        {
+          "text": "Bộ gd: 8 phút ngủ là đủ",
+          "likes": 41,
+          "author": "menoon2pro51"
+        },
+        {
+          "text": "hong chạy dealine, mà nhà có người bị vấn đề tâm thần, ngày ngủ đêm quậy, ngày nào cũng đập đồ, la làng, ngày nào mình cũng thức đến 4h30 sáng mới ngủ đc, mà tới tầm 6-7h thì tới mẹ mình lục đục làm ồn tiếp và mình thức luôn :)))",
+          "likes": 34,
+          "author": "iimiiuht"
+        },
+        {
+          "text": "Tr oi dũ trụ gửi bài này cho t hã",
+          "likes": 14,
+          "author": "nnnhuy__"
+        },
+        {
+          "text": "h ngủ kịp k:)))",
+          "likes": 13,
+          "author": "h.giao12.03"
+        },
+        {
+          "text": "tối ngủ 1 tiếng đc 1 tháng rưỡi r",
+          "likes": 9,
+          "author": "victorphm19"
+        },
+        {
+          "text": "T tắm xong là vã mồ hôi chứ giảm đc miếng nào đâu",
+          "likes": 6,
+          "author": "milo.silartsa"
+        },
+        {
+          "text": "t gặp bài này lúc ôn thi thptqg thì đã ko đến nỗi=))",
+          "likes": 5,
+          "author": "_bunchahn_"
+        },
+        {
+          "text": "ngày nào đi làm về cũng 22h, ăn uống xong cũng 23h ngồi bấm dt đến 1h mới ngủ, sáng lại 5h dậy, công nhận sống vầy mệt thật",
+          "likes": 5,
+          "author": "user395005700"
+        },
+        {
+          "text": "ngủ từ 23h-4h kh hiểu s ngủ kh dc nữa ấy",
+          "likes": 5,
+          "author": "lhwng.07"
+        },
+        {
+          "text": "Ủa ko có team thức khuya dậy sớm hả",
+          "likes": 3,
+          "author": "dohyeon191000"
+        },
+        {
+          "text": "tui ngủ trễ do đọc manga đúng đoạn hay quá😆😆😆",
+          "likes": 3,
+          "author": "kami_no_kaze39"
+        },
+        {
+          "text": "1 tuần 7 ngày thì ngủ lúc 5h cả 7 🥰",
+          "likes": 3,
+          "author": "th.qign_"
+        },
+        {
+          "text": "r coi xog vid này buồn ngủ luôn😨💔",
+          "likes": 3,
+          "author": "taobakhinhattrentg"
+        },
+        {
+          "text": "Nhgma t hc cả sáng, chiều hc b2,ôn đt,thgia hđ của lớp thì có cách nào khác không ạ vì thực sự là sáng hc trên trường, chiều kín lịch như vậy,tối cx đi hc đến tối muộn mới về thì ko còn thgian",
+          "likes": 1,
+          "author": "ngthanh_luvscj"
+        },
+        {
+          "text": "cữ nghĩ tác hại khi ko lm xong đêm ngủ có 1 tiếng vẫn tỉnh 🥰",
+          "likes": 1,
+          "author": "a.ha.he"
+        },
+        {
+          "text": "t thức khuya dậy sớm",
+          "likes": 1,
+          "author": "nho_a.05"
+        },
+        {
+          "text": "Chợp mắt buổi chiều sẽ được em gái tên bình minh sớm gọi dậy 😅",
+          "likes": 1,
+          "author": "mqnoigithe"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7670995147995237640",
+      "create_time": "2026-08-06T18:59:06.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@motionlab.fit/video/7698336587259661586",
+      "caption": "Ly cà phê 3 giờ chiều có thể lấy mất 1 tiếng ngủ mà bạn không hề biết.\n #motionlab #caphe #giacngu #caffeine #suckhoenamgioi",
+      "author": {
+        "id": "7652779343219655700",
+        "name": "motionlab.fit",
+        "nick": "Motion Lab",
+        "profile": "https://www.tiktok.com/@motionlab.fit",
+        "fans": 30900
+      },
+      "play_count": 5056,
+      "like_count": 199,
+      "share_count": 50,
+      "comment_count": 4,
+      "duration_s": 297,
+      "music": {
+        "id": "7698336796341668629",
+        "name": "âm thanh gốc - Motion Lab",
+        "author": "Motion Lab",
+        "original": true
+      },
+      "hashtags": [
+        "motionlab",
+        "caphe",
+        "giacngu",
+        "caffeine",
+        "suckhoenamgioi"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:00.840\n3 giờ chiều\n\n00:00:01.000 --> 00:00:04.040\nbạn ngồi trước màn hình mắt zip lại đầu như có sương mù\n\n00:00:04.440 --> 00:00:05.440\nbạn làm việc quen thuộc nhất\n\n00:00:05.640 --> 00:00:07.600\nxuống quán gọi một ly cà phê sữa đá\n\n00:00:08.120 --> 00:00:09.840\n15 phút sau bạn tỉnh hẳn\n\n00:00:10.200 --> 00:00:13.000\ntối đó 11 giờ bạn lên giường và vẫn ngủ được\n\n00:00:13.320 --> 00:00:15.640\nbạn nghĩ cà phê chẳng ảnh hưởng gì tới mình cả\n\n00:00:16.160 --> 00:00:16.960\nnhưng sáng hôm sau\n\n00:00:17.160 --> 00:00:20.080\nchuông báo thức reo và bạn dậy với cảm giác như chưa hề ngủ\n\n00:00:20.480 --> 00:00:21.960\nthế là bạn lại cần một ly cà phê\n\n00:00:22.400 --> 00:00:24.240\nrồi buổi chiều lại thêm một ly nữa\n\n00:00:24.800 --> 00:00:27.200\nnếu vòng lặp này nghe quen video này dành Cho bạn\n\n00:00:27.600 --> 00:00:29.280\nvì ly cà phê lúc 3 giờ chiều đó\n\n00:00:29.680 --> 00:00:31.520\ncó thể đã lấy mất của bạn hơn một tiếng ngủ\n\n00:00:31.640 --> 00:00:33.000\nmà bạn hoàn toàn không nhận Ra\n\n00:00:33.360 --> 00:00:36.360\nđể hiểu vì SAO ta cần biết cà phê thật Ra làm gì trong não\n\n00:00:36.920 --> 00:00:39.560\ncó một hiểu lầm rất phổ biến cà phê Cho ta năng lượng\n\n00:00:40.040 --> 00:00:40.880\nthật Ra không phải\n\n00:00:41.400 --> 00:00:42.920\ncafein không tạo Ra chút năng lượng nào\n\n00:00:43.240 --> 00:00:44.680\nnó chỉ che đi cảm giác mệt\n\n00:00:45.160 --> 00:00:45.960\ntừ lúc bạn thức dậy\n\n00:00:46.120 --> 00:00:47.800\ncác tế bào não liên tục đốt năng lượng\n\n00:00:47.920 --> 00:00:50.120\nvà để lại một chất tên là adenosin\n\n00:00:50.520 --> 00:00:54.520\ncàng thức lâu adenosin càng tích tụ nhiều 1997\n\n00:00:54.680 --> 00:00:57.200\nmột nhóm nhà khoa học Phần Lan công bố trên tạp chí Science\n\n00:00:57.760 --> 00:00:58.680\nadenosin trong não\n\n00:00:58.960 --> 00:01:01.160\ntăng dần suốt thời gian thức và giảm xuống khi ngủ\n\n00:01:01.680 --> 00:01:04.160\nnói đơn giản adenosin giống như một chiếc đồng hồ cát\n\n00:01:04.320 --> 00:01:05.720\nđếm xem bạn đã thức bao lâu\n\n00:01:06.080 --> 00:01:08.280\nkhi cát dồn đủ nhiều bạn thấy buồn ngủ\n\n00:01:08.680 --> 00:01:10.320\ncác nhà khoa học gọi đó là áp lực ngủ\n\n00:01:11.040 --> 00:01:13.040\ncafein có hình dạng gần giống adenosin\n\n00:01:13.440 --> 00:01:14.920\nnó chui vào đúng những thụ thể\n\n00:01:15.040 --> 00:01:17.120\nmà adenosin vẫn bám vào rồi chiếm chỗ\n\n00:01:18.000 --> 00:01:19.040\nadenosin vẫn ở đó\n\n00:01:19.200 --> 00:01:21.280\nvẫn tích tụ nhưng không còn chỗ để báo tin\n\n00:01:21.720 --> 00:01:23.840\nnão không nhận được tín hiệu mệt nên bạn thấy tỉnh\n\n00:01:24.360 --> 00:01:26.920\ngiống như bạn dán băng keo lên đèn báo xăng của xe máy\n\n00:01:27.280 --> 00:01:29.080\nđèn tắt rồi nhưng bình xăng vẫn cạn\n\n00:01:29.600 --> 00:01:30.640\nvà đây là phần quan trọng\n\n00:01:31.120 --> 00:01:32.360\ncafein rời cơ thể rất chậm\n\n00:01:32.800 --> 00:01:33.680\nthời gian bán thải của\n\n00:01:33.800 --> 00:01:36.080\ncafein ở người lớn khỏe mạnh trung bình khoảng năm tiếng\n\n00:01:36.520 --> 00:01:37.560\ncó người chỉ 2 tiếng\n\n00:01:37.800 --> 00:01:40.640\ncó người tới 90 tiếng tùy gen và thói quen\n\n00:01:41.080 --> 00:01:42.680\nnghĩa là ly cà phê lúc 3 giờ chiều\n\n00:01:42.960 --> 00:01:44.960\ntới 8 giờ tối vẫn còn khoảng một nửa trong máu\n\n00:01:45.480 --> 00:01:48.880\ntới 11 giờ đêm lúc bạn lên giường vẫn còn khoảng 1/3\n\n00:01:49.280 --> 00:01:51.640\nbạn đang đi ngủ với 1/3 ly cà phê trong người\n\n00:01:52.120 --> 00:01:53.560\ncòn một Chi tiết nữa khi\n\n00:01:53.720 --> 00:01:54.520\ncafein hết tác dụng\n\n00:01:54.680 --> 00:01:57.040\nlượng adenosin dồn ứ suốt mấy tiếng đồng hồ\n\n00:01:57.200 --> 00:01:58.360\nùa vào thụ thể cùng lúc\n\n00:01:58.800 --> 00:02:01.040\nđó là một phần lý do có lúc vừa hết cà phê\n\n00:02:01.280 --> 00:02:03.160\nbạn mệt rũ Ra còn hơn trước khi uống\n\n00:02:03.600 --> 00:02:07.640\nvậy thực tế cafein ảnh hưởng giấc ngủ nhiều cỡ nào 2013\n\n00:02:07.800 --> 00:02:10.360\nmột nhóm nghiên cứu tại bệnh viện Henry Ford ở Mỹ\n\n00:02:10.520 --> 00:02:11.720\nlàm một thí nghiệm rất rõ ràng\n\n00:02:12.240 --> 00:02:14.200\nngười tham gia uống 400mg cafein\n\n00:02:14.480 --> 00:02:17.240\ntương đương khoảng 2 đến BA ly cà phê lớn vào BA thời điểm\n\n00:02:17.480 --> 00:02:18.280\nngay trước giờ ngủ\n\n00:02:18.360 --> 00:02:20.640\nBA tiếng trước giờ ngủ và 6 tiếng trước giờ ngủ\n\n00:02:21.080 --> 00:02:22.960\ngiấc ngủ được đo bằng máy ngay tại nhà\n\n00:02:23.600 --> 00:02:26.080\nkết quả ngay cả khi uống 6 tiếng trước giờ ngủ\n\n00:02:26.320 --> 00:02:27.920\ntổng thời gian ngủ vẫn giảm hơn một tiếng\n\n00:02:28.320 --> 00:02:31.160\nđiều đáng sợ nhất là gì người tham gia không hề nhận Ra\n\n00:02:31.520 --> 00:02:34.800\nhọ tự đánh giá là mình ngủ bình thường máy đo thì nói khác\n\n00:02:35.360 --> 00:02:38.040\n2023 một nhóm nghiên cứu ở Úc\n\n00:02:38.240 --> 00:02:41.520\ngom 24 nghiên cứu lại để phân tích tổng hợp trung bình\n\n00:02:41.880 --> 00:02:44.080\ncafein làm tổng thời gian ngủ giảm khoảng 45 phút\n\n00:02:44.240 --> 00:02:45.600\nlâu vào giấc hơn khoảng chín phút\n\n00:02:45.880 --> 00:02:47.440\nthức giấc giữa đêm thêm khoảng 12 phút\n\n00:02:47.720 --> 00:02:48.560\nvà quan trọng nhất\n\n00:02:48.840 --> 00:02:51.000\ngiấc ngủ sâu bị giảm thay vào đó là giấc ngủ nông\n\n00:02:51.640 --> 00:02:54.560\ngiấc ngủ sâu là lúc cơ thể phục hồi mạnh nhất với Nam giới\n\n00:02:54.760 --> 00:02:55.520\nđây cũng là khoảng\n\n00:02:55.521 --> 00:02:57.601\nthời gian cơ thể tiết hormone tăng trưởng nhiều nhất\n\n00:02:57.800 --> 00:03:00.360\nvà ngủ đủ còn gắn với mức testosterone ổn định\n\n00:03:00.880 --> 00:03:02.960\nnên bạn có thể ngủ đủ 7 tiếng trên đồng hồ\n\n00:03:03.120 --> 00:03:04.880\nnhưng chất lượng bên trong đã bị cắt xén\n\n00:03:05.280 --> 00:03:07.320\nđó là lý do sáng dậy vẫn thấy như chưa ngủ\n\n00:03:07.760 --> 00:03:08.760\nrồi vòng lặp bắt đầu\n\n00:03:09.160 --> 00:03:12.000\nngủ kém sáng hôm sau bạn mệt bạn uống cà phê\n\n00:03:12.400 --> 00:03:14.160\nchiều lại mệt bạn uống thêm ly nữa\n\n00:03:14.680 --> 00:03:15.800\nđêm đó lại ngủ kém hơn\n\n00:03:16.120 --> 00:03:17.920\ncà phê không còn là thứ giúp bạn tỉnh\n\n00:03:18.040 --> 00:03:20.320\nmà trở thành thứ bạn cần chỉ để thấy bình thường\n\n00:03:20.920 --> 00:03:22.920\nvậy có nên bỏ cà phê không không cần\n\n00:03:23.200 --> 00:03:24.280\nvới người lớn khỏe mạnh\n\n00:03:24.520 --> 00:03:26.760\ncục quản lý thực phẩm và dược phẩm Hoa Kỳ Cho rằng\n\n00:03:26.960 --> 00:03:30.120\nkhoảng 400mg cafein mỗi ngày nhìn Chung là an toàn\n\n00:03:30.560 --> 00:03:32.120\nvấn đề không nằm ở chuyện uống hay không\n\n00:03:32.280 --> 00:03:34.640\nmà ở chỗ uống lúc nào và uống bao nhiêu\n\n00:03:34.880 --> 00:03:36.960\nđây là 4 điều bạn có thể làm từ ngày mai\n\n00:03:37.800 --> 00:03:39.760\nmột đặt giờ giới nghiêm Cho cà phê\n\n00:03:40.160 --> 00:03:42.160\ncũng trong phân tích 2023\n\n00:03:42.360 --> 00:03:44.480\ncác tác giả ước tính một ly cà phê thông thường\n\n00:03:44.680 --> 00:03:46.720\nnên uống ít nhất khoảng chín tiếng trước giờ ngủ\n\n00:03:47.200 --> 00:03:48.440\nnếu bạn ngủ lúc 11 giờ đêm\n\n00:03:48.640 --> 00:03:50.760\nly cuối cùng nên dừng trước 2 giờ chiều\n\n00:03:51.040 --> 00:03:52.080\nnếu bạn uống nước tăng lực\n\n00:03:52.160 --> 00:03:53.600\nhay đồ uống trước buổi tập liều Cao\n\n00:03:53.840 --> 00:03:56.080\nkhoảng cách còn phải xa hơn nữa 2\n\n00:03:56.440 --> 00:03:57.400\nbiết mình đang uống bao nhiêu\n\n00:03:57.720 --> 00:04:00.080\ncà phê phin Việt Nam thường pha từ hạt robusta\n\n00:04:00.320 --> 00:04:02.720\nloại hạt có lượng cafein gần gấp đôi arabika\n\n00:04:03.320 --> 00:04:05.960\nmột ly phin đậm có thể chứa nhiều cafein hơn bạn nghĩ\n\n00:04:06.360 --> 00:04:09.880\ncộng thêm trà sữa nước tăng lực trà xanh tất cả đều dồn lại\n\n00:04:10.400 --> 00:04:13.320\nBA nếu 3 giờ chiều buồn ngủ thử cách khác trước\n\n00:04:13.600 --> 00:04:16.680\nđi bộ năm phút rửa mặt bằng nước mát Ra chỗ có ánh sáng\n\n00:04:17.120 --> 00:04:18.360\ncơn buồn ngủ đầu giờ chiều\n\n00:04:18.480 --> 00:04:19.800\nphần lớn là nhịp sinh học tự nhiên\n\n00:04:20.000 --> 00:04:22.240\nvà thường sẽ qua sau một lúc 4\n\n00:04:22.640 --> 00:04:23.480\nlà một thí nghiệm nhỏ",
+        "links": [
+          "research/trends/2026-10-20/apify/vtt/subtitle-motionlab.-7698336587259661586-vie-VN.vtt"
+        ],
+        "file": "subtitle-motionlab.-7698336587259661586-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "vậy uống là mất 1 tiếng ạ",
+          "likes": 1,
+          "author": "fisnet09"
+        },
+        {
+          "text": "t uống liên tục",
+          "likes": 0,
+          "author": "lovetoan67"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7698336587259661586",
+      "create_time": "2026-10-19T11:17:53.000Z",
+      "is_slideshow": false
+    }
+  ]
+}

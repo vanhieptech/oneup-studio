@@ -15,4 +15,5 @@ Repo đã có guide, file này chỉ trỏ tới, không chép lại:
 - Quy trình một video: `docs/workflow/per-video-pipeline.md`. Luật: `rules/video-rules.md`. Bài học: `logs/lessons.md`.
 - Front-matter bắt buộc cho file `.md` nội dung: `title, date, type, tags, status, source` (`check-assets.py` chặn khi thiếu).
 - Commit: `<loại>: <mô tả>` (feat, fix, docs, chore, content, research, refactor).
-- Reuse-first: tìm (`git grep`, `INDEX.md`, `pipeline/scripts/dup-scan.py`) trước khi tạo; trùng thì đề xuất gộp, không xoá.
+- Reuse-first: tìm trước khi tạo, mặc định bằng XERJ (`xerj search --prefix oneup "..."`, xem `docs/conventions/search-xerj.md`), rồi `INDEX.md`, `pipeline/scripts/dup-scan.py`; `rg`/`git grep` là dự phòng. Trùng thì đề xuất gộp, không xoá.
+- Trước khi viết code pipeline mới: tra repo tham khảo `xerj search --prefix ref "..."`, trích `path:line`, kiểm giấy phép.

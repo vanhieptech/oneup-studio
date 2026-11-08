@@ -1,0 +1,28 @@
+{
+  "quota_check": {
+    "runId": "ske0ofAafDdl0Pf2V",
+    "datasetId": "zQBSmfwYURrr26pKa",
+    "status": "SUCCEEDED",
+    "items": 5,
+    "note": "cheap check hashtag thoiquen succeeded; quota recovered vs prior $0.13"
+  },
+  "full_search": {
+    "runId": "U4Q4IU8uOOEibxDxV",
+    "datasetId": "RVDekZrlSHVeA5Vsy",
+    "kvStoreId": "sIQXBij3ttUwrYwhT",
+    "status": "SUCCEEDED",
+    "items": 48,
+    "hashtags": [
+      "thoiquen",
+      "phattrienbanthan",
+      "taptrung"
+    ],
+    "searchQueries": [
+      "het tri hoan",
+      "gioi han thoi gian dien thoai",
+      "sach thay vi dien thoai"
+    ],
+    "runTimeSecs": 152.535,
+    "computeUnits": 0.169
+  }
+}

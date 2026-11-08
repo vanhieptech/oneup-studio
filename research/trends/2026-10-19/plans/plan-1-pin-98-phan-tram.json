@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-pin-98-phan-tram",
+ "title": "[STUB] Tan làm pin còn 98%: ngày kinh hoàng hay ngày làm được nhiều nhất? Một cái liếc vài giây đắt hơn bạn nghĩ",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-colo.vn-7693555573517782278",
+  "bridge_id": "B-98pin-01",
+  "lesson": "3.6 Lúc làm việc cần nghĩ liền mạch, chặn cả những lần cắt ngang vài giây (Altmann, Trafton & Hambrick 2014: bị cắt ngang trung bình 2,8 giây làm tỉ lệ lỗi ở bước kế tiếp của việc làm theo thứ tự tăng gấp đôi, 4,4 giây thì gấp ba, thí nghiệm lab. Mark, Gonzalez & Harris 2005: quan sát 24 nhân viên văn phòng, việc bị cắt ngang trung bình mất 25 phút 26 giây mới quay lại được, giữa chừng chen 2,26 việc khác. Mark, Gudith & Klocke 2008: 48 người, bị cắt ngang làm nhanh hơn nhưng căng thẳng, bực bội hơn. Bằng chứng B. Ghi chú sách: đóng cửa chỉ chặn được người khác tìm mình; tự mình mở ra thì phải kèm 3.1 tắt thông báo và 3.5 gom tin nhắn).",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P01",
+  "differentiation": "Mọi người đang nói: tan làm còn 98% pin là dấu hiệu một ngày làm việc kinh hoàng (TikTok @colo.vn 288k view, 06/10); comment top 'kinh hoàng là đt reo cả ngày sao còn 98 nổi' (88 like). Góc của mình: lật lại — pin 98% có khi là ngày bạn làm được nhiều nhất, vì mỗi cái liếc vài giây làm lỗi tăng gấp đôi và mất cả chục phút mới quay lại việc cũ. Không chê ai lướt điện thoại; chỉ đưa một việc: lúc cần nghĩ liền mạch thì chặn cắt ngang."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "pin-98-phan-tram.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tan làm mở điện thoại ra, pin còn 98%. Hôm đó với bạn là kinh hoàng, hay đã đời?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Phone still at 98% after work?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "pin-98-phan-tram.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trên TikTok người ta gọi đó là ngày làm việc kinh hoàng. Mà bạn nhớ thử coi: hôm điện thoại reo cả ngày, bạn làm xong được mấy việc?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Buzzing all day. How much got done?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "pin-98-phan-tram.b03",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chắc bạn đang nghĩ: liếc một cái có mấy giây đâu.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Just a few seconds, right?",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "pin-98-phan-tram.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một thí nghiệm cho thấy: bị cắt ngang chưa tới ba giây, lỗi ở bước làm kế tiếp đã tăng gấp đôi. Hơn bốn giây thì gấp ba.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Under 3 seconds: errors double.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "pin-98-phan-tram.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn ở văn phòng thật, người ta theo dõi 24 nhân viên: việc bị cắt ngang, trung bình 25 phút sau mới quay lại được.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "25 minutes to get back on task.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "pin-98-phan-tram.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một bên là phòng lab, một bên là nhóm nhỏ, nên coi như chỉ đường thôi. Có điều đường khá rõ: pin 98% có khi là ngày bạn làm được nhiều nhất.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "98% might be your best day.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "pin-98-phan-tram.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lúc cần nghĩ liền một mạch: đóng cửa, đeo tai nghe, tắt thông báo, tin nhắn gom lại trả lời một lần.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Door shut. Headphones on. Pings off.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "pin-98-phan-tram.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: một buổi code bị ping liên tục, so với một buổi tắt hết thông báo.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My ping-free coding block.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "pin-98-phan-tram.b09",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay tan làm, pin bạn còn bao nhiêu phần trăm? Comment con số nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Battery at clock-out? Drop the number.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

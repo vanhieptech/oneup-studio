@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-ai-cung-mong-ban-lam-tot-chia-doi",
+ "title": "[STUB] Cả mạng nói «người xung quanh đang thầm mong bạn làm tốt». Sách nói thêm: họ còn không soi bạn kỹ như bạn nghĩ, nên lúc nói vấp hãy chia đôi cảm giác «ai cũng thấy»",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "people-around-us-quietly-root-for-your-success",
+  "bridge_id": "B-mongbantot-01",
+  "lesson": "3.21 Khi thấy «ai cũng thấy mình quê», chia ước đoán đó cho hai (Gilovich, Medvec & Savitsky 2000, mức B: người mặc áo in hình một ca sĩ đoán 46% người trong phòng nhận ra, thực tế 23%, gấp đôi; Boothby và cộng sự 2018: sau khi trò chuyện, người ta thường đoán đối phương thích mình ít hơn thực tế, gọi là «liking gap»). Sách ghi: nghiên cứu nhỏ, trong phòng lab và trường học; không có bằng chứng trực tiếp cho chuyện bị đồng nghiệp bàn tán hay nói sai trong họp; số chỉ cho hướng và cỡ gấp đôi, không dùng như hệ số. Lúc bị chấm thật (phỏng vấn, đánh giá) thì vẫn phải chuẩn bị. Không nói tên ca sĩ, không nói «sinh viên». Deep Research kiểm trước khi viết.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: người phỏng vấn, người hẹn, khán giả đều thầm mong bạn làm tốt, nên đừng sợ (X News 02/11). Góc của mình: câu đó đúng một nửa. Sách 3.21: phần lớn lúc bạn thấy mình quê, người khác còn không để ý (áo in hình: đoán 46%, thật 23%), và sau khi nói chuyện họ thích bạn hơn bạn đoán (Boothby 2018). Nhưng sách cũng nói lúc bị chấm thật như phỏng vấn thì vẫn phải chuẩn bị. +1 hôm nay: lần tới nói vấp, chia đôi cảm giác «ai cũng thấy» rồi nói tiếp câu sau."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cả mạng đang chia nhau một câu: người phỏng vấn mong bạn trả lời tốt, người hẹn bạn mong buổi tối vui. Vậy sao vừa nói vấp trong cuộc họp, bạn lại thấy cả phòng đang nhìn mình?",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Everyone's rooting for you?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Như sáng nay, bạn báo cáo tới con số thứ ba thì đọc nhầm, và cả buổi chiều cứ nghĩ mãi về đúng giây phút đó.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One slip in the meeting.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn đoán chắc ai trong phòng cũng đã thấy, nên câu tiếp theo nói nhỏ hẳn đi và vội vàng cho xong.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Sure everyone saw.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b04",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Năm 2000, nhóm của Gilovich cho người tham gia mặc một chiếc áo in hình ca sĩ khá quê rồi bước vào một phòng đông người. Người mặc đoán gần một nửa phòng nhận ra cái áo, thật ra chỉ khoảng một phần tư.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "Gilovich, 2000: half as many noticed.",
+    "start": 0.3,
+    "end": 9.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một nghiên cứu khác năm 2018 thấy sau khi trò chuyện với người lạ, người ta thường đoán đối phương thích mình ít hơn thực tế.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "They like you more than you think.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy câu trend kia mới đúng một nửa, vì người khác không soi bạn kỹ như bạn nghĩ, mà còn dễ mến bạn hơn bạn đoán.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Less watched, more liked.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chỉ có một chỗ không được giảm: lúc người ta đang chấm thật, như buổi phỏng vấn hay kỳ đánh giá cuối năm, thì bạn cứ chuẩn bị cho kỹ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Real reviews: still prepare.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn lần tới lỡ nói vấp giữa cuộc họp, bạn chia đôi cái cảm giác ai cũng thấy đó, rồi nói tiếp câu sau thật rõ ràng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Halve it, keep talking.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "ai-cung-mong-ban-lam-tot-chia-doi.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lần gần nhất bạn thấy mình quê trước mặt mọi người là lúc nào vậy? Kể cho mình nghe một câu thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Your last awkward moment?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

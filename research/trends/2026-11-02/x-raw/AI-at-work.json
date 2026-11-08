@@ -1,0 +1,167 @@
+{
+ "data": [
+  {
+   "category": "News",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Microsoft's Ryan Roslansky stared at an AI-generated document from a colleague and saw no original thought—just an 'ocean of sameness.' He's not alone in the frustration.",
+   "id": "2116046144765559242",
+   "name": "Companies Pause Aggressive AI Rollouts After Errors and Cleanup Costs",
+   "summary": "Employers worldwide are scaling back hasty AI deployments due to errors, low-quality outputs, and staff time lost on fixes rather than gains. Meta dialed back AI agent plans amid technical glitches and security issues, while Microsoft restricted tools after leaders spotted lazy AI docs; Walmart staff faced nonsensical schedules from the tech. Executives now liken rollouts to 'driving the truck while building it,' with surveys showing 90% report no productivity boosts yet and many incidents of data loss. Companies are responding with targeted training, mentorship, and slower paces to build smarter integration.",
+   "updated_at": "2026-10-30T06:01:48.000Z",
+   "url": "https://x.com/i/trending/2116046144765559242"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "A team's output chart shows lines of code exploding past 101,000 in the latest quarter. Developers are sharing honest takes on whether AI speeds them up or just piles on fixes.",
+   "id": "2116895168570052924",
+   "name": "Developers Debate AI Coding Tools' True Productivity Gains",
+   "summary": "The graphic tracks one team's work from Q3 2023 to Q3 2026, with a sharp surge in new work and total output after shifting from solo to team efforts. Some developers report working many times faster in 2026 compared to 2024, though they still watch for AI's occasional wild errors. Skeptics like engineer Vasiliy Zukanov argue the numbers suggest needing 20x productivity to keep pace, while studies and surveys show code volume rises but review time and shipped value lag. Questions persist on whether AI delivers real gains or more activity to manage.",
+   "updated_at": "2026-11-01T14:14:25.000Z",
+   "url": "https://x.com/i/trending/2116895168570052924"
+  },
+  {
+   "category": "News",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "Robotics"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "At Innovation Day 2026 in Shanghai, AGIBOT proposed a fresh way to gauge what robots truly achieve in the real world, beyond just counting how many get shipped.",
+   "id": "2116124354472018104",
+   "name": "AGIBOT Unveils Worken Metric for Measuring Robot Productivity",
+   "summary": "Worken, blending 'work' and 'token,' calculates Effective Intelligent Work Hours as active robots times autonomous hours times an efficiency ratio against human benchmarks. Examples from tourist services to production lines showed thousands of Worken points, highlighting real output in deployments. Co-founder Peng Zhihui stressed that while hardware has advanced, the focus now shifts to useful work in factories and services, with observers praising it as a practical step for comparing robot fleets.",
+   "updated_at": "2026-10-30T17:18:41.000Z",
+   "url": "https://x.com/i/trending/2116124354472018104"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Developers crank up AI agents, feeling a rush of constant action, but often watch projects stall as true results slip away.",
+   "id": "2116171799830450436",
+   "name": "Developers Hooked on AI Coding Agents Without Real Progress",
+   "summary": "Ex-Anthropic engineer Thariq Shihipar described a 'kind of mania' where running more AI agents creates the illusion of productivity, yet little ships—like a working feature or fixed bug. Many agreed, calling it 'performative busywork' fueled by dopamine hits similar to slot machines, with one noting 10 hours of overnight runs yielding few reviewable PRs. A key graphic contrasts 'feels like progress'—bigger diffs and longer sessions—with 'is progress': actual user value delivered. While tools aid prototyping, the warning is clear: grade success by shipped outcomes, not agent activity.",
+   "updated_at": "2026-10-30T17:22:49.000Z",
+   "url": "https://x.com/i/trending/2116171799830450436"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Box CEO Aaron Levie marveled at AI's breakneck speed, calling the divide between top users and others almost incomprehensible. Elon Musk agreed with a simple 'True.'",
+   "id": "2116040399991034286",
+   "name": "AI Progress Widens Gap Between Leaders and Everyone Else",
+   "summary": "Levie highlighted how AI advances so rapidly that workflows from just months ago are outdated, leaving even recent adopters behind and giving an edge to AI-native companies. Wharton professor Ethan Mollick noted that many still underuse today's tools, while benchmarks show AI handling tasks from minutes to over 17 hours reliably. Enterprise leaders face bottlenecks from centralized IT controls, slowing adoption, as most firms lag years behind in scaling advanced systems. The discussion stresses constant adaptation over one-time efforts to keep pace.",
+   "updated_at": "2026-10-31T05:15:36.000Z",
+   "url": "https://x.com/i/trending/2116040399991034286"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Imagine handing off your repetitive daily grind to a team of AI agents that keep working even when you log off. That's the appeal drawing early users to Grok Bot.",
+   "id": "2116781246671897010",
+   "name": "Grok Bot Lets Users Build Persistent AI Teams for Daily Tasks",
+   "summary": "SpaceXAI launched Grok Bot in beta on August 11, 2026, enabling people to create named AI teammates on dedicated cloud setups with browsers, files, and terminals. These agents handle multi-step tasks like site admin or Telegram management, with one user automating a four-figure monthly workload after 10 hours of training. Creators share prompts for bots that learn patterns, build skills from past interactions, and specialize in roles from content strategists to department heads, saving hours weekly through narrow focuses and scheduled routines.",
+   "updated_at": "2026-11-01T11:25:03.000Z",
+   "url": "https://x.com/i/trending/2116781246671897010"
+  },
+  {
+   "category": "News",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "AI giants poured billions into infrastructure, but October brought a harsh reality check with plunging stocks and doubts about quick payoffs.",
+   "id": "2116627758327488569",
+   "name": "AI Stocks Tumble as Rest of Market Hits Records",
+   "summary": "AI stocks dropped over 13% in October, erasing trillions from the Nasdaq 100, while the S&P 500 excluding AI stocks climbed 8% to a record high. Earnings from Alphabet, Amazon, and Intel fueled worries about returns on massive spending, with one observer questioning if share prices fell further, would they keep investing. Yet U.S. sectors like tech and finance saw sharp productivity gains per worker since 2022, outpacing other nations, though economists warn it may not all stem from AI. Investors remain split, viewing the shift to non-AI stocks as healthy or a sign of deeper issues.",
+   "updated_at": "2026-11-01T03:57:07.000Z",
+   "url": "https://x.com/i/trending/2116627758327488569"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "A seasoned artist defends their detailed drawing, only for skeptics to call it AI after a quick glance. This comic captures the frustration many creators feel on the platform.",
+   "id": "2116560166812557495",
+   "name": "Artists Face AI Accusations Despite Proof of Human Work",
+   "summary": "Artists share proof like timelapses and old work, yet face persistent claims their art is AI-generated. Studies show even experts identify human vs. AI art correctly only 83% of the time, with general users at 59%. Creators like Jen Bartel and PLGR miss the days of posting art without scrutiny, calling the atmosphere paranoid and turning admiration into audits. Film artist Reid Southen warns against baseless witch hunts, as the skepticism chills the community's joy in sharing.",
+   "updated_at": "2026-10-31T22:29:22.000Z",
+   "url": "https://x.com/i/trending/2116560166812557495"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Google DeepMind researchers argue that AI's real economic power lies not in solo smarts, but in teams working seamlessly together.",
+   "id": "2115870739152752884",
+   "name": "DeepMind Paper: AI Coordination Drives Economic Shifts",
+   "summary": "In 'The Economics of Intelligence,' Alex Imas, Andrew Koh, and Shane Legg model how AI competence boosts individual skills like coding, leading to gradual wage changes, while coordination unlocks massive productivity as teams scale. They describe four regimes, from minimal AGI shrinking some wages to supercooperative AI shattering limits on firm size and sparking market shakeups. Practitioners already see coordination gaps in coding agents that lose sync on changing plans, and experts like Ethan Mollick praise the focus on teamwork as a key overlooked factor in AI debates.",
+   "updated_at": "2026-10-30T17:47:29.000Z",
+   "url": "https://x.com/i/trending/2115870739152752884"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Anthropic engineers released a detailed, free course showing developers how to turn Claude Opus 5.5 into smart agents that think, act, remember, and even review their own work.",
+   "id": "2116222746040357036",
+   "name": "Anthropic Shares Free Course on Building AI Agents with Claude Opus 5.5",
+   "summary": "The course covers Claude Managed Agents, a hosted platform that separates the model's reasoning from execution, letting systems handle loops, state, and resumability on their own. Developers are sharing practical setups like job descriptions as system prompts, human gates for key actions, and weekly self-reviews, treating AI like structured employees. Community guides highlight memory layers, skills, and feedback loops, with many reporting full workdays saved on repetitive tasks while keeping human oversight for high-stakes work.",
+   "updated_at": "2026-11-01T15:12:43.000Z",
+   "url": "https://x.com/i/trending/2116222746040357036"
+  }
+ ],
+ "meta": {
+  "result_count": 10
+ }
+}

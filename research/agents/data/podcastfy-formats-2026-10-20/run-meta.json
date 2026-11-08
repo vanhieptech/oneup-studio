@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-20",
+  "timezone": "Asia/Saigon",
+  "purpose": "Podcastfy Audio — tín hiệu trend định dạng hội thoại/podcast-clip/hỏi–đáp",
+  "actor": "clockworks/tiktok-scraper",
+  "run_id": "8iLSoB7NGCx3rBdfK",
+  "dataset_id": "FGze4KzZeRwr6iYno",
+  "kv_store_id": "7VLZF8qNGzabAYH3x",
+  "started": "2026-10-20 23:20:50 ICT",
+  "finished": "2026-10-20 23:21:17 ICT",
+  "input": {"searchQueries": ["podcast phat trien ban than", "hoi dap tam ly", "tra loi binh luan meo", "hoat hinh doi thoai bai hoc", "podcast clip productivity"], "searchSection": "/video", "resultsPerPage": 6, "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES", "commentsPerPost": 0, "proxyCountryCode": "None", "maxTotalChargeUsd": 0.5},
+  "item_count": 30,
+  "compute_units": 0.0300,
+  "note": "Lần gọi đầu (waitSecs 45) bị ngắt phía client trước khi trả run id; không rõ lần đó đã tạo run hay chưa — nếu có thì tốn thêm tối đa ~0,03 CU. Gọi lại 1 lần với waitSecs 0 rồi poll → SUCCEEDED. Số liệu play/like/comment/share/save là ảnh chụp lúc chạy. 12 VTT tải từ KV store (link công khai records)."
+}

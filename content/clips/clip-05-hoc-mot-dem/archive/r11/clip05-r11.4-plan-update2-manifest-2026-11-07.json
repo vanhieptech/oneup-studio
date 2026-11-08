@@ -1,0 +1,91 @@
+{
+  "id": "clip05-r11.4-plan-update2",
+  "status": "PROPOSED PLAN / not independent semantic or image PASS / not Chốt",
+  "planning_only": true,
+  "renderable": false,
+  "script_sha256_before": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+  "script_sha256_after": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+  "spoken_words": 150,
+  "pre_method_after_hook": 50,
+  "speech_beats_unchanged": 7,
+  "caption_segments_unchanged": 23,
+  "wording_patch3": false,
+  "literal_rule_mapping": {
+    "R16": {
+      "path": "/workspace/oneup-studio/rules/video-rules.md",
+      "line": 41,
+      "quote": "16. **Chữ chính trên màn hình:** caption và tiêu đề chỉ tiếng Anh, khớp với lời nói, highlight từ khoá. Ngoại lệ: bubble thoại và hộp dẫn chuyện trong beat comic là lời nhân vật nên viết tiếng Việt (giọng luật 41).",
+      "mapping": "HF title COMPARE YOUR RETELLING; columns SOURCE PAGE / YOUR RETELLING. Provenance label and safety/credits retain their distinct approved roles, not an invented exemption for HF headings."
+    },
+    "R54": {
+      "path": "/workspace/oneup-studio/rules/video-rules.md",
+      "line": 181,
+      "quote": "    - Mọi clip dùng `Cover` direction A (`video-engine/src/composition/Cover.tsx`): tag series + số tập, hero 2–4 chữ (chữ thói quen cũ bị gạch → chữ mới trong pill ink), chibi tạo dáng riêng với biểu cảm mạnh, logo +1, theme theo luật 17, mọi slot nằm trong y 290–1600 (lưới 3:4).",
+      "mapping": "A;3hero words total: old learning habit REREAD ONLY struck as ONE ENTIRE phrase (including ONLY) → SELF-TEST in ink pill; strike0/accent1. Rule permits old habit, does not require bare technique be struck. No permission invented for replacing an old habit with an abstract misconception."
+    },
+    "Deep": {
+      "path": "/workspace/clip05-r11.4-factcheck-2026-11-07.md",
+      "lines": "32–34,45–47,57,67,73–75",
+      "scope": "High/low utility of rereading/self-testing only; not zero benefit/ban, causal mechanism/guarantee or direct trial of reread-only. Existing main verdict retained; this new cover proposal has not received an independent fact/visual verdict."
+    },
+    "status": "Mapping proposal under literal rules, not a self-PASS or waiver; image interpretation remains to inspect."
+  },
+  "cover_native_core_grammar": "source-read supported strike0/accent1/whole string; hero+14x and rig−40/−70 adapters unimplemented",
+  "validation": {
+    "checks": 492,
+    "errors": [],
+    "scope": "Declared planning arithmetic, JSON/text identity and source-record scope only. NOT image/DOM/glyph/render/production schema/audio/read-aloud/stranger/visual semantic approval.",
+    "harness_notes": "Local SyntaxError then absolute-key KeyError corrected; final rerun successful, no original checker/engine edits"
+  },
+  "pre_Chot_gates": [
+    "Read-aloud/one-listen/stranger",
+    "Full gate1 staticpreviews/independent cover meaning/ONLY fit",
+    "Registry/sanctioned storage"
+  ],
+  "after_Chot_only": [
+    "Voice/STT/real timing",
+    "Video render/HF schema/mix/finalpost QA"
+  ],
+  "original_inputs_preserved": {
+    "/workspace/opencreator-clip05-script-r11.4-draft-2026-11-07.md": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+    "/workspace/opencreator-clip05-spec-r11.4-plan-update1-2026-11-07.json": "778539ad707a810cd387445a9a9c2f79e1fc2ad0f3157b65077432a93ef0788e",
+    "/workspace/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md": "819b038bfd970088c1fe8a006ab39a62999563cd90941e6d6191cecc480bcf49",
+    "/workspace/clip05-r11.4-plan-update1-report-2026-11-07.md": "92d756da88bf89f04d15969c817ac54fab8fb6711b690cd4448d5a328a0b807c",
+    "/workspace/clip05-r11.4-plan-update1-manifest-2026-11-07.json": "d67aec49ea0bc765a4ed5eaec463d40d4137732395d8fc9718c179dfd2f5edb0",
+    "/workspace/clip05-r11.4-plan-update1-validation-2026-11-07.json": "83956cc330530db68e3dec3ab219631b095059693de073cbfd216cd477467fda",
+    "/workspace/clip05-r11.4-plan-update1-rule-review-2026-11-07.md": "6931a0f0664a4028cee2fe99b1a0e396aeb33bfaa4bf44cdfdbe4a12f6676528",
+    "/workspace/clip05-r11.4-factcheck-2026-11-07.md": "cdde77f04987bd8c765c9a58de8c8e1795023c0fb1aed1f918c50654ccccd879",
+    "/workspace/oneup-studio/rules/video-rules.md": "c61914d16c2306f17070bae273ea6b3636a69378e1ca224fd7cac8713118d155",
+    "/workspace/oneup-studio/video-engine/src/composition/Cover.tsx": "5c706696ecd4a51a75800335fca72f6e25ce2d3d7448e5afe0585eff6d5f70d4"
+  },
+  "artifacts": {
+    "/workspace/opencreator-clip05-spec-r11.4-plan-update2-2026-11-07.json": {
+      "sha256": "325f53b2f114ceb3ec255f627f04018c45b3b7e45a1136f7e55540677b309182",
+      "bytes": 153468
+    },
+    "/workspace/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md": {
+      "sha256": "2d78cd305e408c10b5db580d23fbb7a48b93851524d68280c5d12f0742c9ef28",
+      "bytes": 23325
+    },
+    "/workspace/clip05-r11.4-plan-update2-report-2026-11-07.md": {
+      "sha256": "f8744c19027347ed362ba45fe55f15eccc8fe29fc23aa9037246466954e648d1",
+      "bytes": 9043
+    },
+    "/workspace/clip05-r11.4-plan-update2-validation-2026-11-07.json": {
+      "sha256": "893cc4843ecf8ec42abf069170c3b87961ad3ce0b268c81f4cb0b0461f9cbec5",
+      "bytes": 57636
+    },
+    "/workspace/clip05-r11.4-plan-update2-input-hashes-2026-11-07.json": {
+      "sha256": "1c70430bf57c2f762d92779dfb0c8140f63c31455cb40b9ba9cc69a1a3cc2898",
+      "bytes": 1343
+    },
+    "/workspace/clip05-r11.4-plan-update2-build.py": {
+      "sha256": "b868c6ce15921a6ef7fc33d9d60558e6bbcac36c77caf76995d595ba8ff418f2",
+      "bytes": 13326
+    },
+    "/workspace/clip05-r11.4-plan-update2-validate.py": {
+      "sha256": "4edb044b2e1fcec426e3d7c9ea81a6c0dfe78fccabfc128c0a05d948336e89b7",
+      "bytes": 13991
+    }
+  }
+}

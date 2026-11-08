@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-check-tin-nhan-3-lan",
+ "title": "[STUB] Sếp nhắn 'em ơi' rồi im: check tin nhắn theo ba khung giờ, bớt căng mà vẫn trả lời đủ",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-vtv24news-7696488195638316308",
+  "bridge_id": "B-msg-02",
+  "lesson": "3.5 Gom email và tin nhắn, xử lý vài lần cố định mỗi ngày (Kushlev & Dunn 2015: 124 người lớn, hai tuần, cùng một nhóm tự so với chính mình; tuần chỉ check email 3 lần/ngày căng thẳng hằng ngày thấp hơn rõ so với tuần không giới hạn, Cohen's d = 0,37; số email nhận và trả lời hai tuần như nhau; lúc không giới hạn trung bình check 15,5 lần/ngày. Bằng chứng B; chỉ một nghiên cứu, hiệu ứng vừa và nhỏ, đo căng thẳng chứ không đo kết quả công việc; tin nhắn tức thời chưa ai đo trực tiếp, chỉ suy ra). Chi phí: không tốn tiền, tốn chút thời gian báo đồng nghiệp mình trả lời theo giờ, và chút kiên nhẫn.",
+  "angle": "empathy / data",
+  "pattern": "P01 + P04",
+  "differentiation": "Mọi người đang nói: doanh nghiệp nên hạn chế nhắn việc ngoài giờ (VTV24 dẫn khảo sát Hàn Quốc: hơn 1/4 nhân viên văn phòng được hỏi có nguy cơ rối loạn giấc ngủ khi thường xử lý việc sau giờ làm, 1,3M view) và 'ngoài giờ mình có quyền không rep' (@kieu06011993; comment 'sếp nhắn em ơi xong để đấy, chẳng biết có nên rep không' 21 like, 'muốn gì nhắn 1 lần luôn đi' 34 like). Góc của mình: không ngồi chờ sếp hay công ty đổi; mình tự đổi nhịp check ngay trong giờ — ba khung cố định, báo trước, việc gấp thì gọi. Không nói chuyện bệnh, chỉ nói căng thẳng hằng ngày như nghiên cứu đo."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "check-tin-nhan-3-lan.b01",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sếp nhắn đúng hai chữ “em ơi” rồi im luôn. Bạn mở điện thoại ra coi lại mấy lần?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Boss texts “hey”… then silence.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "check-tin-nhan-3-lan.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chắc nhiều à. Mà đâu phải chỉ tin của sếp, cả ngày mình cứ mở ra, đóng vô, rồi mở ra.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Open, close, open again.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "check-tin-nhan-3-lan.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có nghiên cứu theo dõi 124 người trong hai tuần. Tuần thả cửa, trung bình mỗi người check email 15 lần rưỡi một ngày.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Free week: 15.5 checks a day.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "check-tin-nhan-3-lan.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tuần kia, cũng mấy người đó chỉ check ba lần một ngày. Căng thẳng thấp hơn rõ, mà email nhận với trả lời vẫn y như cũ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "3 checks. Less stress. Same replies.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "check-tin-nhan-3-lan.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Họ đo email chứ chưa đo tin nhắn, cũng mới có một nghiên cứu, mức khác biệt vừa phải thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "One study. Email only.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "check-tin-nhan-3-lan.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy mình thử nhỏ thôi: chọn ba giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều. Rồi nhắn team một câu: việc gấp thì gọi.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "9, 1, 4. Urgent? Call me.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "check-tin-nhan-3-lan.b07",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tốn đúng một tin nhắn báo trước, với chút kiên nhẫn mỗi lần thấy chấm đỏ.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Cost: one heads-up text.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "check-tin-nhan-3-lan.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: chat công ty và giờ mình check tin nhắn khi code.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My chat-check hours.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "check-tin-nhan-3-lan.b09",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay bạn mở tin nhắn bao nhiêu lần? Đếm thử rồi comment nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "How many checks today? Comment.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

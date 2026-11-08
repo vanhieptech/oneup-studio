@@ -1,0 +1,195 @@
+{
+  "note": "Front-matter added to 19 archived r11 MD files for rule-65. Original bytes recoverable via `git show 0d569da:<path>`. Frozen r11.4 script/spec/board untouched.",
+  "files": [
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-factcheck-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-factcheck-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11-factcheck-2026-11-07.md",
+      "old_sha256": "2b603ba8b370f7d79f1d1031d4ba4f6e23f45e0f630d47c9c3b228ef88ee0c8b",
+      "new_sha256": "b0a61dfbdda8e4ea4fc3da3fae8fd0f82ff29de61600408daee040d12bf440b3",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11-rule-review-2026-11-07.md",
+      "old_sha256": "006cba8037e5f19703d5cb5cf3895a9bb8227e1f6101f6fef89a007609f88c92",
+      "new_sha256": "ac9d21687a63e7df87d9c6f1b0b4b65922746db8e727d2e4ed0cc4738805c0d6",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.1-factcheck-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.1-factcheck-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.1-factcheck-2026-11-07.md",
+      "old_sha256": "8f555538e7a123cb93e6f77c53cbff5d064cc84c84246a0b8eee677fc7762242",
+      "new_sha256": "54180b176dfdede620accd56ce187c529f04a34e912b8da0be41b4989f20638f",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.1-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.1-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.1-rule-review-2026-11-07.md",
+      "old_sha256": "21478b600aacf4316866ae48e75fb9b668c22afdae73b684befddc2d896fb0d3",
+      "new_sha256": "0e50eb74157af6900e442c40404532d0e779151b189be22350aa0a80a6940856",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.2-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.2-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.2-rule-review-2026-11-07.md",
+      "old_sha256": "ede20fccdf8bdd92caed3de5368daa57d20faa940ead271ede9fcc4015aa6ad6",
+      "new_sha256": "04889f62129a3dd9ea0a432194458f0a757125453594b7cd4e2bd0c8327b70e7",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.3-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.3-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.3-rule-review-2026-11-07.md",
+      "old_sha256": "a2f09960ced858788c15308d622bc13f8d6121d29775162f495b9edba58da2fa",
+      "new_sha256": "5dd79364e3da99b087b4351c29909fc321674ecf25d95fb9a174f2efe6a16a06",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-factcheck-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-factcheck-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-factcheck-2026-11-07.md",
+      "old_sha256": "cdde77f04987bd8c765c9a58de8c8e1795023c0fb1aed1f918c50654ccccd879",
+      "new_sha256": "c3c2637fcfa54dbde063dac2dac94dd74a66fc4c99586550baf4569cf61ccc0a",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-gate-evidence-note-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-gate-evidence-note-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-gate-evidence-note-2026-11-07.md",
+      "old_sha256": "dc09a38e0504a14bc1b9493650f9fc884d329eb1861fe42f0533d2904c5c3463",
+      "new_sha256": "2a2f9674631b645742eb3f1aca4bc40ce14af7127d2cefd0bd05cbce1e567f60",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update1-report-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update1-report-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-plan-update1-report-2026-11-07.md",
+      "old_sha256": "92d756da88bf89f04d15969c817ac54fab8fb6711b690cd4448d5a328a0b807c",
+      "new_sha256": "5728633562f363e3f171028c0d6a67fe7be464cc647fd2d9a34d0d2c299f919c",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update1-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update1-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-plan-update1-rule-review-2026-11-07.md",
+      "old_sha256": "6931a0f0664a4028cee2fe99b1a0e396aeb33bfaa4bf44cdfdbe4a12f6676528",
+      "new_sha256": "09fd8aef968ffcd1c79f53ee4909de0f3e910275f5cbfbc252e8358908ea293f",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update2-report-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update2-report-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-plan-update2-report-2026-11-07.md",
+      "old_sha256": "f8744c19027347ed362ba45fe55f15eccc8fe29fc23aa9037246466954e648d1",
+      "new_sha256": "d9d11257bcf5e2ec5f13c8aed9ed289396227e8562d1daa50a512c3162f325e8",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update2-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-plan-update2-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-plan-update2-rule-review-2026-11-07.md",
+      "old_sha256": "487898e21ca1125c1a09b639ac438de3fd3373b53b04b5d8a92d9505bbfe2eb9",
+      "new_sha256": "91d34e4dce7a85b031981dd6ed94642a1daa85a885cbbe40faebb3d81e7f0766",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-rule-review-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11.4-rule-review-2026-11-07.md",
+      "original_scratch_path": "/workspace/clip05-r11.4-rule-review-2026-11-07.md",
+      "old_sha256": "b6cf47058e35c716be2a636a227953f5a7c5f4e4a40771534071251ecb897a79",
+      "new_sha256": "9bbdab36ddfad7f0519131a1f8d0f8cbdb71145aba3020065b742459377f96ba",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-concept-prep-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-concept-prep-2026-11-07.md",
+      "original_scratch_path": "/workspace/opencreator-clip05-concept-prep-2026-11-07.md",
+      "old_sha256": "d259a9bd7894d5e650c801098116d3f49ee6bf929055e3e1b6e286233e5ad479",
+      "new_sha256": "b7018c7b3fbd31d976d70fb7bd3851ac473da3d94ee48761bff7f670dd3cfe4f",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-prep-template-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-prep-template-2026-11-07.md",
+      "original_scratch_path": "/workspace/opencreator-clip05-prep-template-2026-11-07.md",
+      "old_sha256": "994025191e250519ede881236dcfb96d0e057eed5640aed8b7173573107fdec8",
+      "new_sha256": "10e93466dbdbbdd939374c293072fe2d5444a52c0c854383c9357f14d0c79dd1",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11-draft-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11-draft-2026-11-07.md",
+      "original_scratch_path": "/workspace/opencreator-clip05-script-r11-draft-2026-11-07.md",
+      "old_sha256": "02332154f0964bce0d55d4c051fbd48d088911b229efd01732e51bbb0557d42b",
+      "new_sha256": "c346c47706a56f9c7290e6ff8072c833c76142b1ef4a6c33f1c39e405f127e41",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.1-draft-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.1-draft-2026-11-07.md",
+      "original_scratch_path": "/workspace/opencreator-clip05-script-r11.1-draft-2026-11-07.md",
+      "old_sha256": "4479b529ae67535a4a533f360330524cdba5eed7701808e14222f451445ab486",
+      "new_sha256": "0e9c8155fdc3640c12f2ba7d3782ed01e7a57f0a29a446cb6f4c595985b84d51",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md",
+      "original_scratch_path": "/workspace/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md",
+      "old_sha256": "819b038bfd970088c1fe8a006ab39a62999563cd90941e6d6191cecc480bcf49",
+      "new_sha256": "94e5924a6f1aea8b257d51727ac088e298cb8f2607cff0dd67e601a4d399e925",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    },
+    {
+      "path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md",
+      "original_commit": "0d569da536d6b766ea0c50bb571d27b31cfe9d0b",
+      "original_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md",
+      "original_scratch_path": "/workspace/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md",
+      "old_sha256": "2d78cd305e408c10b5db580d23fbb7a48b93851524d68280c5d12f0742c9ef28",
+      "new_sha256": "a253ebffd4f79fdf5ac49ee809d53bb30ae5c97679b9cdc9974630b9390f7629",
+      "change": "front-matter only (rule-65); body bytes unchanged",
+      "body_unchanged": true
+    }
+  ]
+}

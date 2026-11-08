@@ -22,6 +22,26 @@ const local = (p: PropLike): [number, number, number, number] | null => {
     case "bundle": return [-100, -90, 100, 90];
     case "clock": return [-185, -185, 185, 185];
     case "dusty": return [-340, -340, 430, 340];
+    // clip-04 v18 kinds
+    case "tome": return [-230, -175, 236, 160];
+    case "paper": return [-215, -295, 215, 292];
+    case "card": return [-150, -95, 160, 102];
+    case "deck": return [-330, -110, 330, 60];
+    case "papers": return [-200, -230, 200, 70];
+    case "bars": return [-300, -440, 300, 10];
+    // clip-05 v4 kinds
+    case "biobook": return [-160, -200, 160, 200];
+    case "textbooks": return [-240, -440, 240, 40];
+    case "hourglass": return [-110, -180, 110, 180];
+    case "punnett": return [-220, -280, 220, 270];
+    case "tearpad": return [-140, -170, 150, 190];
+    case "lamp": return [-100, -290, 220, 50];
+    case "wallclock": return [-115, -115, 120, 120];
+    case "exam": return [-135, -165, 135, 160];
+    case "groups3": return [-500, -420, 500, 270];
+    case "strip": return [-460, -180, 460, 180];
+    case "qmark": return [-60, -60, 60, 60];
+    case "window": { const q = p as unknown as Record<string, number>; const x = q.wx ?? 640, y = q.wy ?? 250; return [x, y, x + (q.ww ?? 320), y + (q.wh ?? 300) + 20]; } // abs coords (x=y=0)
     default: return null; // vignette: full-screen tint, not an obstacle
   }
 };

@@ -1,0 +1,222 @@
+[
+ {
+  "id": "gia-gach-ngang-1111",
+  "title": "Giá gạch 999 còn 499: bạn thấy lời 500 ngàn, nhưng con số 999 có thể chưa từng bán thật",
+  "trend_id": "tt-kesanmoi.rf-7698254483419172103",
+  "bridge_id": "B-gachngang-01",
+  "lesson": "5.24 Không tích trữ vì “giá gạch ngang” và đợt khuyến mãi lớn (Tversky & Kahneman 1974, Science: phán đoán bị con số nhìn thấy đầu tiên neo lại, điều chỉnh sau thường không đủ → “giá gốc 999, giá nay 499” làm bạn tưởng rẻ hơn thực tế. Quy định TQ 2020 (chỉ tham khảo TQ, không áp cho VN): giá làm chuẩn phải là giá thấp nhất của tiệm trong 7 ngày trước khuyến mãi; giá bị gạch chưa chắc từng bán thật. Bằng chứng C. Ghi chú sách: hiệu ứng neo là kết luận phòng thí nghiệm, chưa ai tính tích trữ thực tế lỗ bao nhiêu; chỉ tích thứ thỏa cả ba: hạn dùng dài, chắc dùng hết, đơn giá thật thấp hơn giá trước đây) + 5.23 đồ đắt không cần thì chờ 24 giờ (C, kinh nghiệm, không có tài liệu trực tiếp). Chi phí: không tốn tiền, phải nhớ giá ngày thường vài món hay mua, có khi bỏ lỡ một đợt giảm thật.",
+  "angle": "contrarian / data",
+  "pattern": "P10 + P05",
+  "differentiation": "Mọi người đang nói: người nghèo phải bỏ 12 thói xấu, trong đó có “sĩ diện hão”, mua để tỏ ra có tiền (TikTok @kesanmoi.rf 248,5k view, 38,3k like, đăng 19/10; comment top “đừng dính vào cbm nx dính vào mệt lắm” 349 like). Góc của mình: không chê ai nghèo hay sĩ diện; cái bẫy nằm ở cách não đọc giá. Con số đầu tiên bạn thấy (999) neo phán đoán lại (Tversky & Kahneman 1974), nên giá 499 trông như được lời, dù giá gạch chưa chắc từng bán thật. Hợp mùa: 11.11 còn ba tuần. Hành động: ghi giá ngày thường của 3 món hay mua; đồ đắt không cần thì chờ 24 giờ. Book fact mà consensus bỏ qua + seasonal timer; chuyện thật của Hiệp để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (5.24, phần 5) — đăng trước 11.11",
+  "hook_vi": "Giá gạch từ 999 ngàn xuống còn 499 ngàn, bạn thấy mình vừa lời được năm trăm ngàn, đúng không?",
+  "moment_vi": "Mở app mua sắm đợt sale, thấy giá gạch đỏ 999k còn 499k, bấm đặt liền ba món vì sợ hết giảm.",
+  "turn_vi": "Trước đợt sale, ghi lại giá ngày thường của ba món hay mua; món đắt mà không cần thì để giỏ hàng chờ 24 giờ.",
+  "hook_en": "999 slashed to 499. Did you really save 500?",
+  "explainer": "HyperFrames: thẻ giá 999 to, đỏ, hiện trước → mũi neo cắm xuống; giá 499 hiện sau, thanh 'cảm giác rẻ' vọt lên. Sau đó lịch 7 ngày trước sale hiện giá thật 520 (ví dụ minh hoạ, ghi rõ 'ví dụ'), thanh 'rẻ thật' chỉ nhích nhẹ. Nhãn nguồn nhỏ: Tversky & Kahneman 1974 · quy định TQ 2020 (chỉ tham khảo).",
+  "beats": [
+   {
+    "text": "Giá gạch từ 999 ngàn xuống còn 499 ngàn, bạn thấy mình vừa lời được năm trăm ngàn, đúng không?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "999 slashed to 499. Did you really save 500?"
+   },
+   {
+    "text": "Đợt sale nào cũng vậy, mình mở app ra, thấy giá gạch đỏ là tay tự bấm đặt, sợ chút nữa hết giảm.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Red slash, instant add to cart."
+   },
+   {
+    "text": "Có một nghiên cứu nổi tiếng chỉ ra rằng con số đầu tiên mình nhìn thấy sẽ neo phán đoán lại, sau đó mình chỉnh mấy cũng không đủ.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "The first number anchors your judgment."
+   },
+   {
+    "text": "Nên khi con số 999 hiện ra trước, giá 499 trông rẻ hơn thực tế, dù cái giá 999 đó chưa chắc từng được bán thật.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "That 999 may never have been real."
+   },
+   {
+    "text": "Điều mình muốn là biết một món có thật sự rẻ hay không, chứ không phải cảm giác được lời.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "Know the real price, not the feeling."
+   },
+   {
+    "text": "Vậy trước 11.11, bạn ghi lại giá ngày thường của ba món mình hay mua. Còn món đắt mà không thật cần, bạn để trong giỏ hàng chờ hai mươi bốn tiếng rồi hẵng quyết.",
+    "expression": "happy",
+    "action": "typing",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 8,
+    "caption_en": "Note 3 normal prices. Wait 24 hours."
+   },
+   {
+    "text": "Món nào bạn muốn tích trữ thì nó phải hạn dùng dài, chắc chắn dùng hết, và giá thật sự thấp hơn những lần trước.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Stock up only if all three hold."
+   },
+   {
+    "text": "Nghiên cứu về con số neo làm trong phòng thí nghiệm, chưa ai tính được tích trữ lỗ bao nhiêu tiền, nên đây là mẹo tham khảo, mức bằng chứng thấp.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Lab finding. Low-evidence tip."
+   },
+   {
+    "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: một món mua vì giá gạch rồi để đó không dùng.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 5,
+    "caption_en": "[Hiệp to confirm] My slashed-price buy."
+   },
+   {
+    "text": "Giỏ hàng 11.11 của bạn đang có mấy món? Comment số món nha.",
+    "expression": "happy",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "How many items in your 11.11 cart?"
+   }
+  ]
+ },
+ {
+  "id": "giu-lai-bao-nhieu-thang",
+  "title": "Để dành 50 triệu một năm là đủ chưa? Hãy đếm bằng số tháng chi tiêu, không phải số tiền",
+  "trend_id": "tt-cuungodao-7669374863521467668",
+  "bridge_id": "B-giulai-01",
+  "lesson": "5.27 Trước hết gom đủ 3 đến 6 tháng sinh hoạt phí làm quỹ dự phòng, để chỗ rút ra bất cứ lúc nào (Bằng chứng C: “3 đến 6 tháng” là kinh nghiệm phổ biến, sách không tìm được nguồn học thuật; tính theo chi tiêu cố định mỗi tháng của chính bạn, không theo thu nhập; cái giá là bỏ lợi nhuận cao hơn, chỉ để ở tài khoản thanh toán, quỹ tiền tệ hoặc tiền gửi rút được ngay; số bảo hiểm tiền gửi 500.000 NDT là của TQ, không dùng cho VN). Lợi ích: lúc mất việc hay đau ốm không phải vay, không phải bán lỗ khoản đầu tư (lãi vay tiêu dùng xem 5.7). Sách ghi rõ: đây là cách tính sổ, không phải lời khuyên đầu tư.",
+  "angle": "data / empathy",
+  "pattern": "P04 + P03",
+  "differentiation": "Mọi người đang nói: cảm giác an toàn không nằm ở kiếm bao nhiêu mà ở giữ lại bao nhiêu; 50 triệu một năm là 137 ngàn mỗi ngày còn lại sau mọi khoản chi (TikTok @cuungodao 191,2k view, VTT); Bách Hoá Xanh “đừng đợi lương cao mới tiết kiệm” (80,8k); comment “cái hay ở đời là mỗi khi tích đc 1 tý thì lại có việc cần 😌” 13 like; tin VnExpress lãi suất tiết kiệm giảm đồng loạt, nhân viên ngân hàng săn khách gửi trước khi hạ lãi. Góc của mình: con số 50 triệu tự nó không nói gì; sách đổi nó ra số tháng chi tiêu cố định của chính bạn (3–6 tháng, kinh nghiệm phổ biến, mức C, sách thừa nhận không có nguồn học thuật) và để ở chỗ rút ra ngay, chấp nhận lãi thấp hơn — đúng lúc người ta đang cuống vì lãi giảm. Không khuyên kênh đầu tư nào. Chuyện quỹ dự phòng của Hiệp để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (5.27, phần 5); cần dòng an toàn tài chính + Hiệp duyệt trước khi xuất",
+  "hook_vi": "Một năm để dành được năm chục triệu, vậy là bạn đã đủ an toàn chưa?",
+  "moment_vi": "Mới gom được một khoản, tuần sau xe hư, điện thoại vỡ, khoản để dành bốc hơi; thấy mình để dành hoài mà vẫn chông chênh.",
+  "turn_vi": "Cộng chi tiêu cố định một tháng của mình, nhân lên ba, rồi đếm quỹ hiện có được mấy tháng; để nó ở chỗ rút được ngay.",
+  "hook_en": "Saved 50 million this year. Safe enough?",
+  "explainer": "HyperFrames: khoản 50 triệu hiện thành một cục tiền → chia cho chi tiêu cố định một tháng (hai ví dụ minh hoạ 8 triệu và 15 triệu, ghi rõ 'ví dụ') → ra 6 tháng và hơn 3 tháng trên thanh lịch. Vạch 3–6 tháng mờ với nhãn 'kinh nghiệm phổ biến, mức C'. Dòng cuối: Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+  "beats": [
+   {
+    "text": "Một năm để dành được năm chục triệu, vậy là bạn đã đủ an toàn chưa?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "Saved 50 million this year. Safe enough?"
+   },
+   {
+    "text": "Có một clip gần hai trăm ngàn view tính ra năm chục triệu một năm là mỗi ngày phải giữ lại một trăm ba mươi bảy ngàn, sau khi đã trả hết mọi khoản.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "50 million a year: 137k kept per day."
+   },
+   {
+    "text": "Vậy mà nhiều người vừa gom được một chút thì xe hư, điện thoại vỡ, và khoản để dành bay mất.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Then the bike breaks. Savings gone."
+   },
+   {
+    "text": "Lý do là con số năm chục triệu tự nó không nói được bạn trụ được bao lâu. Cùng số tiền đó, người tiêu tám triệu một tháng và người tiêu mười lăm triệu sẽ trụ được số tháng rất khác nhau.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 8,
+    "caption_en": "Same money, very different months."
+   },
+   {
+    "text": "Điều mình cần là biết quỹ của mình gánh được mấy tháng nếu mai bị mất việc hay đổ bệnh.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "How many months could you cover?"
+   },
+   {
+    "text": "Vậy bạn cộng chi tiêu cố định một tháng của mình, nhân lên ba, rồi xem quỹ hiện có được mấy tháng. Khoản này để ở chỗ rút ra được ngay, dù lãi có thấp hơn.",
+    "expression": "happy",
+    "action": "typing",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 8,
+    "caption_en": "Monthly costs times three. Keep it liquid."
+   },
+   {
+    "text": "Có quỹ này rồi thì lúc có biến bạn không phải đi vay, cũng không phải bán lỗ thứ gì.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "No borrowing, no selling at a loss."
+   },
+   {
+    "text": "Mốc ba đến sáu tháng chỉ là kinh nghiệm phổ biến, mức bằng chứng thấp. Đây là thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Rule of thumb only. Not professional advice."
+   },
+   {
+    "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: quỹ dự phòng của mình đủ mấy tháng.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 5,
+    "caption_en": "[Hiệp to confirm] My emergency fund."
+   },
+   {
+    "text": "Quỹ của bạn hiện gánh được mấy tháng? Comment số tháng nha.",
+    "expression": "happy",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "How many months? Comment below."
+   }
+  ]
+ }
+]

@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-hoc-1-dem-ca-ky",
+ "title": "[STUB] Học một đêm thuộc cả kỳ: sáng mai vẫn làm được bài, cái giá là quên nhanh. Cùng số giờ, chia ra nhiều tối",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-ng__phanh-7532553338664045831",
+  "bridge_id": "B-hoc1dem-01",
+  "lesson": "23.15 Cùng một lượng thời gian, chia ra mấy ngày, đừng học một lèo (Cepeda, Pashler, Vul, Wixted & Rohrer 2006: tổng hợp 184 bài, 317 thí nghiệm, 839 lần đánh giá; khoảng giãn ôn tập và việc cần nhớ tới bao lâu cùng quyết định mức nhớ; muốn nhớ càng lâu thì khoảng giãn tốt nhất càng dài. Dunlosky et al. 2013 xếp học giãn cách vào nhóm cao nhất trong 10 cách học. Bằng chứng A. Ghi chú sách: vấn đề của học dồn đêm trước thi không phải là hôm sau vô dụng, mà là quên nhanh; tài liệu trong Cepeda chủ yếu là học thuộc danh sách từ, chưa có số ngày chung cho nội dung phức tạp; ví dụ của sách: 3 tiếng chia 3 ngày mỗi ngày 1 tiếng; kết hợp với 23.14 gấp sách tự kiểm là tốt nhất). Chi phí: không tốn tiền, tổng giờ không đổi, chỉ phải bắt đầu sớm vài ngày.",
+  "angle": "contrarian / data",
+  "pattern": "P01 + P10",
+  "differentiation": "Mọi người đang nói: học một đêm cả kỳ là chuyện vừa khổ vừa ngầu, đằng nào cũng qua môn (TikTok @ng__phanh 1,1M view, 55,3k share: “Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ”; comment “nhét ba môn cả kì trước 3 tiếng thi 🥰” 132 like). Góc của mình: không chê học dồn là vô dụng — chính sách nói hôm sau vẫn làm được bài; cái giá là quên nhanh sau kỳ thi. Đưa một việc cụ thể: cùng ba tiếng đó, chia ra ba tối mỗi tối một tiếng, tối nào cũng gấp sách tự kiểm (callback clip-04). Book fact consensus bỏ qua + contrarian turn; chuyện TOEIC của Hiệp để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "hoc-1-dem-ca-ky.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Học một đêm thuộc hết bài cả kỳ, thi xong một tuần, bạn còn nhớ được câu nào?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Crammed all night. Remember anything a week later?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "hoc-1-dem-ca-ky.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trên TikTok có câu được share hơn năm mươi ngàn lần: “Học 1 đêm mới hiểu sao kiến thức được dạy trong 1 kỳ”. Nghe quen hông?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One night to learn a whole semester.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "hoc-1-dem-ca-ky.b03",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chắc bạn đang nghĩ: học dồn vậy mà sáng ra vẫn làm được bài, vẫn qua môn đó thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "But cramming still gets you through.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "hoc-1-dem-ca-ky.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ừ, đúng. Học dồn không vô dụng: đêm đó nhồi vô thì sáng mai vẫn làm được bài. Cái giá là sau kỳ thi quên rất nhanh.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "It works tomorrow. Then it fades fast.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "hoc-1-dem-ca-ky.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một nghiên cứu gom 317 thí nghiệm: cùng số giờ học, chia ra nhiều buổi thì nhớ lâu hơn học một lèo. Muốn nhớ càng lâu, khoảng cách giữa các lần ôn càng phải dài.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "317 experiments: spread it out, remember longer.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "hoc-1-dem-ca-ky.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy ba tiếng định thức trắng đêm trước ngày thi, chia ra ba tối, mỗi tối một tiếng, bắt đầu từ ba hôm trước. Tối nào cũng gấp sách lại, tự viết ra những gì còn nhớ.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Three hours? Split into three evenings.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "hoc-1-dem-ca-ky.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nghiên cứu này chủ yếu đo việc học thuộc từ, nên chưa có con số mấy ngày là chuẩn cho môn khó. Chỉ chắc một chiều: thi càng xa thì giãn càng dài.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "No magic gap. Farther exam, longer gap.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "hoc-1-dem-ca-ky.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: ôn TOEIC dồn một buổi cuối tuần, so với chia mỗi tối một ít.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My TOEIC study split.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "hoc-1-dem-ca-ky.b09",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Môn sắp thi của bạn còn mấy ngày nữa? Comment số ngày nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Days until your exam? Comment below.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

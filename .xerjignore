@@ -1,0 +1,37 @@
+# XERJ ignore rules for oneup-studio (gitignore syntax). .gitignore is applied too.
+# Secrets: never index
+.env
+.env.*
+**/*.key
+**/*.pem
+**/credentials*.json
+**/secrets*
+# Generated / vendored deps
+node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/dist/
+**/build/
+media/
+# Binary media and fonts (no text to search; large)
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.woff
+*.woff2
+*.ttf
+*.otf
+*.zip
+*.tar.gz
+# Subtitle timing dumps and logs (noise for code/doc search)
+*.vtt
+*.log

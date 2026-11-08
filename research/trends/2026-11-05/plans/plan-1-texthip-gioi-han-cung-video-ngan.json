@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-texthip-gioi-han-cung-video-ngan",
+ "title": "[STUB] Gen Z Hàn rủ nhau gác video ngắn để đọc sách (#texthip). Đặt cho một app video ngắn một giới hạn cứng",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "trao-luu-nang-tam-van-hoa-doc-bo",
+  "bridge_id": "B-texthip-01",
+  "lesson": "4.15 Đặt giới hạn cứng cho video ngắn và lướt vô định (mức C). Cách làm trong sách: tắt thông báo, xoá app, hoặc đặt giới hạn giờ mỗi ngày; mất vài phút, không tốn tiền, khó ở chỗ giữ tay. Số liệu trong sách là của Trung Quốc (NBS 2024, CNNIC 2025): KHÔNG dùng trong voice. Sách tự ghi: chưa có nghiên cứu đo giới hạn xong lấy lại bao nhiêu giờ. Trend: Korea Times 04/11 + Znews/Tri thức 04/11: #texthip, câu lạc bộ đọc kín chỗ, trào lưu Phone Free; khảo sát Bộ VHTT Hàn: 38,5% người lớn đọc ít nhất một cuốn năm 2025, nhóm tuổi 20 là nhóm duy nhất tăng (74,5% lên 75,3%). Số này chỉ từ báo, chưa tự kiểm bản gốc; voice chỉ nói «nhóm duy nhất đọc nhiều lên». Deep Research kiểm trước khi viết.",
+  "angle": "contrarian / empathy",
+  "pattern": "P13 + P03",
+  "differentiation": "Mọi người đang nói: người trẻ Hàn «cai» video ngắn bằng sách, đọc sách thành thời thượng, mình cũng nên đọc nhiều hơn (Znews 04/11, Korea Times 04/11). Góc của mình: đừng chờ mình mạnh mẽ hơn, để cài đặt giới hạn làm phần khó. Sách 4.15 nói đúng điều đó: đừng cãi với chính mình mỗi tối, cài sẵn giới hạn cứng cho app. +1 hôm nay: đặt 30 phút/ngày cho đúng một app video ngắn."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "texthip-gioi-han-cung-video-ngan.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ở Hàn Quốc, người hai mươi mấy tuổi đang rủ nhau gác video ngắn để đọc sách, còn đặt cho nó một cái tên rất kêu là text hip.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Text hip: books over shorts.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "texthip-gioi-han-cung-video-ngan.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Báo Hàn còn ghi nhóm tuổi hai mươi là nhóm duy nhất đọc nhiều lên, trong khi người lớn cả nước thì đọc ít đi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The only group reading more.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "texthip-gioi-han-cung-video-ngan.b03",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn mình thì tối qua định đọc vài trang trước khi ngủ, mở điện thoại xem giờ một chút, ngẩng lên đã mười hai giờ đêm.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Just checking the time...",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "texthip-gioi-han-cung-video-ngan.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình hay tự hứa lần sau cố gắng hơn, nhưng cái app được làm ra để mình lướt thêm, còn mình chỉ có mỗi lời hứa với bản thân.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "The app vs your promise.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "texthip-gioi-han-cung-video-ngan.b05",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy nên sách mình dùng gọi cách này là giới hạn cứng: tắt thông báo, xoá app, hoặc đặt cho app một mức giờ mỗi ngày. Làm mất vài phút và không tốn đồng nào.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Set a hard limit.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "texthip-gioi-han-cung-video-ngan.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách cũng nói thật là chưa có nghiên cứu đo giới hạn xong thì lấy lại được bao nhiêu giờ, nên mình không hứa với bạn con số nào.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "No magic number.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "texthip-gioi-han-cung-video-ngan.b07",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên thay vì chờ mình mạnh mẽ hơn vào mỗi tối, cứ để cái điện thoại tự làm phần khó.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Let the phone do the hard part.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "texthip-gioi-han-cung-video-ngan.b08",
+   "duration": 9,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên tối nay bạn mở cài đặt, chọn đúng một app video ngắn hay mở nhất, đặt cho nó một mức giờ mỗi ngày, kênh mình gợi ý thử ba mươi phút. Hết giờ app tự khoá, khỏi phải cãi với chính mình.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Try 30 minutes, then locked.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "texthip-gioi-han-cung-video-ngan.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "App nào đang ăn giờ ngủ của bạn nhiều nhất thì comment tên nó đi, để mình đặt giới hạn cùng nhau.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Which app eats your nights?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

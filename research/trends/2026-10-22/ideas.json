@@ -1,0 +1,222 @@
+[
+ {
+  "id": "nhan-them-viec-uoc-lan-truoc",
+  "title": "Sếp hỏi nhận thêm việc không: trước khi gật, xem lần trước việc giống vậy mất bao lâu",
+  "trend_id": "sep-hoi-em-co-the-nhan-them-viec",
+  "bridge_id": "B-nhanviec-01",
+  "lesson": "4.4 Ước thời gian theo số ngày thật của lần làm việc giống vậy gần nhất, không theo kế hoạch (Buehler, Griffin & Ross 1994: sinh viên ước 33,9 ngày viết xong luận văn, thực tế 55,5 ngày; chỉ 29,7% xong đúng hạn ước. Nhóm được yêu cầu nhớ lại lần trước rồi mới ước: tỉ lệ xong đúng hạn từ 29,3% lên 60,0%). Bằng chứng B; ghi chú sách: một nghiên cứu, sinh viên Canada, mỗi nhóm khoảng 40 người. Chi phí: không tốn tiền, vài phút lật lại lần trước.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: có 3 cách từ chối khéo khi sếp hỏi nhận thêm việc, từ chối là EQ cao (Kenh14 20/10). Góc của mình: chưa cần bàn từ chối hay nhận; cái sai nằm ở câu 'chắc hai ngày là xong'. Trước khi trả lời, mở lại lần làm việc giống vậy gần nhất xem thật sự mất mấy ngày rồi mới hứa (4.4, Buehler 1994). Book fact consensus bỏ qua; chuyện thật của Hiệp để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (4.4, trụ 1) — gộp B-estimate-02; 4.4 đang chờ slot",
+  "hook_vi": "Sếp hỏi em nhận thêm việc này được không, bạn gật liền vì nghĩ chắc hai ngày là xong, đúng không?",
+  "moment_vi": "Sếp ghé bàn hỏi nhận thêm một việc, mình gật đầu liền vì tưởng hai ngày là xong, rồi tuần sau vẫn còn ôm.",
+  "turn_vi": "Trước khi trả lời, mở lại lần làm việc giống vậy gần nhất xem thật sự mất mấy ngày, rồi mới hứa hạn.",
+  "hook_en": "Boss asks for one more task. You say 'two days', right?",
+  "explainer": "HyperFrames: hai thanh ngang 'ước 33,9 ngày' và 'thật 55,5 ngày' kéo dài ra; sau đó hai cột 29,3% → 60,0% cho nhóm nhớ lại lần trước. Nhãn nguồn nhỏ: Buehler, Griffin & Ross 1994 · mức B.",
+  "beats": [
+   {
+    "text": "Sếp hỏi em nhận thêm việc này được không, bạn gật liền vì nghĩ chắc hai ngày là xong, đúng không?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Boss asks for one more task. Two days, right?"
+   },
+   {
+    "text": "Rồi tới tuần sau, việc đó vẫn còn nằm trên bàn, và bạn phải xin dời hạn lần nữa.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 5,
+    "caption_en": "A week later, still on your desk."
+   },
+   {
+    "text": "Có một nghiên cứu cho thấy sinh viên ước ba mươi tư ngày viết xong luận văn, nhưng thực tế phải mất năm mươi lăm ngày rưỡi.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Planned 34 days. Took 55."
+   },
+   {
+    "text": "Lý do là mình ước theo kế hoạch đẹp trong đầu, chứ không nhìn lại lần trước mình đã làm thật mất bao lâu.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "We plan by hope, not by history."
+   },
+   {
+    "text": "Điều mình cần là một cái hạn mình giữ được, để khỏi phải xin lỗi sếp thêm lần nữa.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "A deadline you can actually keep."
+   },
+   {
+    "text": "Vậy trước khi trả lời, bạn mở lại lần làm một việc giống vậy gần nhất, xem thật sự đã mất mấy ngày, rồi mới hứa hạn.",
+    "expression": "happy",
+    "action": "typing",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 7,
+    "caption_en": "Check how long it really took last time."
+   },
+   {
+    "text": "Trong nghiên cứu đó, nhóm được nhắc nhớ lại lần trước rồi mới ước đã xong đúng hạn gấp đôi, từ hai mươi chín lên sáu mươi phần trăm.",
+    "expression": "happy",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "On time: 29% to 60%."
+   },
+   {
+    "text": "Đây là một nghiên cứu nhỏ trên sinh viên Canada, nên bạn coi là mẹo tham khảo, mức bằng chứng trung bình.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "One small study. Moderate evidence."
+   },
+   {
+    "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: một lần mình hứa hai ngày mà làm cả tuần.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 5,
+    "caption_en": "[Hiệp to confirm] My 2-day promise."
+   },
+   {
+    "text": "Lần gần nhất bạn hứa mấy ngày, và thật sự mất mấy ngày? Comment cho mình biết nha.",
+    "expression": "happy",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "Promised vs real: comment yours."
+   }
+  ]
+ },
+ {
+  "id": "gian-dung-chay-mot-vong",
+  "title": "Tức sếp thì đi chạy một vòng cho hạ hoả? Gộp 154 nghiên cứu nói cách đó gần như không giúp",
+  "trend_id": "workplace-anger-control-feels-like-a-full-time",
+  "bridge_id": "B-giandiu-01",
+  "lesson": "3.23 Lúc giận đừng xả bằng đấm bao cát hay chạy một vòng, trước hết cho cơ thể chậm lại (Kjærvik & Bushman 2024, gộp 154 nghiên cứu, 10.189 người: cách làm cơ thể dịu xuống như thở chậm, chánh niệm, thiền giảm cơn giận và hung hăng g = −0,63; cách làm cơ thể hưng phấn hơn như đấm bao cát, chạy bộ, đạp xe gần như không tác dụng g = −0,02). Bằng chứng A. + 3.17 giận thì rời chỗ trước (Webb 2012, B). Ghi chú sách: đo cơn giận, không đo năng lượng; chạy bộ lâu dài vẫn tốt cho tâm trạng, chỉ không hợp để hạ hoả tại chỗ. Chi phí: không tốn tiền, vài phút; khó ở chỗ lúc đó chỉ muốn xả.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P10",
+  "differentiation": "Mọi người đang nói: kìm cơn giận ở chỗ làm mệt như làm thêm một ca, mẹo là hít thở, tự nhủ 'mình bình tĩnh được' (X News 20/10). Góc của mình: lời khuyên quen thuộc 'đi chạy một vòng cho hạ hoả' lại gần như không giúp theo bản gộp 154 nghiên cứu; cái giúp là cho cơ thể chậm lại vài phút, và rời chỗ trước khi trả lời tin nhắn. Book fact + contrarian.",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (3.23 + 3.17, trụ 2 giữ năng lượng)",
+  "hook_vi": "Đang tức sếp, bạn xách giày đi chạy một vòng cho hạ hoả, đúng không?",
+  "moment_vi": "Đọc xong tin nhắn bị sếp chê, mặt nóng bừng, muốn gõ trả lời liền hoặc chạy ra ngoài cho hả.",
+  "turn_vi": "Úp điện thoại, rời bàn, thở chậm vài phút cho tim dịu lại rồi mới quyết định trả lời gì.",
+  "hook_en": "Angry at your boss? Going for a run won't fix it.",
+  "explainer": "HyperFrames: cân hai đĩa 'làm cơ thể dịu' (−0,63, thanh dài) vs 'xả cho hả' (−0,02, gần bằng 0). Nhãn: Kjærvik & Bushman 2024 · 154 nghiên cứu · mức A. Dòng nhỏ: Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+  "beats": [
+   {
+    "text": "Đang tức sếp, bạn xách giày đi chạy một vòng cho hạ hoả, đúng không?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "Angry at your boss? Go for a run?"
+   },
+   {
+    "text": "Mình đọc xong tin nhắn bị chê là mặt nóng bừng, tay chỉ muốn gõ trả lời liền cho hả.",
+    "expression": "surprised",
+    "action": "typing",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Face burning, fingers ready."
+   },
+   {
+    "text": "Có một bản tổng hợp gộp một trăm năm mươi tư nghiên cứu, hơn mười ngàn người, và kết quả hơi ngược với điều mình hay nghe.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "154 studies, 10,000+ people."
+   },
+   {
+    "text": "Những cách làm cơ thể hưng phấn hơn như đấm bao cát hay chạy bộ gần như không làm bớt giận.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Punching or running barely helps."
+   },
+   {
+    "text": "Còn những cách làm cơ thể chậm lại như thở chậm hay ngồi yên vài phút thì giảm cơn giận rõ rệt.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Slowing your body down does."
+   },
+   {
+    "text": "Điều mình muốn là đừng gửi đi một câu mà mai mình phải hối hận.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "Don't send what you'll regret."
+   },
+   {
+    "text": "Vậy lần tới đang giận, bạn úp điện thoại xuống, rời bàn, rồi thở chậm vài phút cho tim dịu lại trước khi trả lời.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Phone down. Step away. Breathe slow."
+   },
+   {
+    "text": "Chạy bộ vẫn tốt cho tâm trạng lâu dài, chỉ là nó không hợp để hạ hoả ngay lúc đó. Mức bằng chứng ở đây là cao.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Running helps long-term, not in the moment."
+   },
+   {
+    "text": "Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 3,
+    "caption_en": "For reference only, not professional advice."
+   },
+   {
+    "text": "Lúc giận, bạn hay làm gì đầu tiên? Comment cho mình biết nha.",
+    "expression": "happy",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "What do you do first when angry?"
+   }
+  ]
+ }
+]

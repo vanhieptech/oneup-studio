@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-thong-bao-hao-pin-hao-tap-trung",
+ "title": "[STUB] Thợ sửa iPhone khuyên tắt bớt thông báo cho đỡ hao pin. Thứ hao nhiều hơn pin là sự tập trung lúc đang làm việc",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "simple-iphone-settings-boost-battery-life-and-cut",
+  "bridge_id": "B-thongbao-01",
+  "lesson": "3.1 Tắt thông báo không cần thiết, lúc làm việc để điện thoại ra khỏi tầm mắt (Stothart, Mitchum & Yehnert 2015, mức B: chỉ nhận một thông báo, không xem không chạm, điểm bài tập trung đã giảm rõ, gần bằng mức nghe gọi hay nhắn tin; thí nghiệm trong phòng lab, người tham gia là sinh viên, không nói «sinh viên» trong voice; Ward 2017: điện thoại nằm cạnh dù không xem vẫn làm giảm phần trí óc dùng được). Sách ghi: chỉ là bài tập một lần, cộng dồn mỗi ngày thì chưa ai đo. Deep Research kiểm trước khi viết.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P15",
+  "differentiation": "Mọi người đang nói: tắt thông báo, giới hạn vị trí, bật Focus Mode cho đỡ hao pin và đỡ bị làm phiền, xem như mẹo chỉnh máy (X News 01/11, thợ sửa iPhone + coach năng suất). Góc của mình: pin chỉ là cái lợi phụ. Sách 3.1: chỉ cần một tiếng rung, không mở, sự tập trung đã tụt gần bằng lúc nghe máy. Tự nhận trước (P15): mình cũng để nguyên thông báo app mua sắm. +1 hôm nay: tắt thông báo của đúng một app. Chuyện thật của Hiệp: [CẦN HIỆP XÁC NHẬN] (không có trong story-bank)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một thợ sửa iPhone đang khuyên mọi người tắt bớt thông báo cho đỡ hao pin. Vậy mỗi lần điện thoại rung lúc bạn đang làm việc, bạn mất gì ngoài pin?",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "More than battery?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thiệt, máy mình cũng để nguyên thông báo của cả app mua sắm lẫn mấy nhóm chat.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Me too.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b03",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đang gõ dở email gửi sếp thì điện thoại rung một cái, chỉ là tin khuyến mãi mà mình còn không mở ra.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One buzz.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b04",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy mà quay lại màn hình, mình quên mất câu đang viết định nói gì.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Lost the sentence.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Năm 2015, nhóm của Stothart cho người ta làm một bài cần tập trung trong phòng thí nghiệm, rồi lén gửi thông báo tới điện thoại của họ.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Stothart, 2015.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chỉ một tiếng báo, không xem, không chạm, điểm đã tụt gần bằng lúc người ta nghe máy hay nhắn tin thật.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Just a ping costs focus.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b07",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên tắt thông báo không chỉ cứu pin, mà còn giữ lại cái câu bạn đang viết dở.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Save your focus too.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b08",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay vào cài đặt, tắt thông báo của đúng một app thôi, app mua sắm hoặc nhóm chat không cần trả lời liền.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Turn off one app.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "thong-bao-hao-pin-hao-tap-trung.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "App nào trong máy bạn rung nhiều nhất? Comment tên nó, mình tắt cùng.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Which app buzzes most?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

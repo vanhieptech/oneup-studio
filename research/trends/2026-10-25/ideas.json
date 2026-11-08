@@ -1,0 +1,204 @@
+[
+ {
+  "id": "ban-truoc-roi-moi-lam",
+  "title": "Muốn nghỉ việc làm riêng: trước khi bỏ tiền làm sản phẩm, xem có ai chịu trả tiền trước không",
+  "trend_id": "debate-over-quitting-job-for-entrepreneurship-grow-side",
+  "bridge_id": "B-bantruoc-01",
+  "lesson": "12.18 Bán trước rồi mới làm: dùng đặt trước và đơn nhỏ để kiểm có người mua, rồi mới bỏ tiền sản xuất (Camuffo, Cordova, Gambardella & Spina 2020, Management Science: thử nghiệm ngẫu nhiên 116 startup Ý theo dõi khoảng một năm; nhóm được dạy 'đặt giả thuyết rồi kiểm bằng phản hồi thị trường' làm ăn tốt hơn, đổi hướng kịp thời hơn và không bỏ cuộc sớm hơn). Bằng chứng B; ghi chú sách: một nghiên cứu, mẫu nhỏ, ở Ý; con số hiệu quả trong toàn văn sách chưa kiểm nên không nêu số. Chi phí: vài chục tới vài trăm nghìn cho mẫu hoặc một trang giới thiệu, chậm vài tuần.",
+  "angle": "contrarian / data",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: nuôi side project mỗi ngày một tiếng tới khi nó bằng 60% lương rồi mới nghỉ (X News 23/10, Justin Welsh). Góc của mình: câu hỏi 'chừng nào nghỉ' đến sau; trước đó phải biết có ai chịu trả tiền chưa. Làm một trang giới thiệu, xin vài chục người đặt trước hoặc mua đơn nhỏ; không ai trả thì đừng tin 'làm ra rồi sẽ có người mua' (12.18, mức B). Chuyện thật của Hiệp (app OneUp) để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (12.18, trụ tiền/sự nghiệp)",
+  "hook_vi": "Bạn tính nghỉ việc để làm riêng, vì tin rằng làm ra rồi thì sẽ có người mua, đúng không?",
+  "moment_vi": "Mình ôm ý tưởng cả năm, tối nào cũng làm thêm, nhưng chưa từng hỏi ai chịu trả tiền cho nó chưa.",
+  "turn_vi": "Trước khi bỏ thêm tiền và thời gian, bạn làm một trang giới thiệu rồi xin vài chục người đặt trước hoặc mua đơn nhỏ.",
+  "hook_en": "Quitting to build your thing? Who already paid?",
+  "explainer": "HyperFrames: hai nhánh 'làm trước rồi bán' và 'bán trước rồi làm'; nhãn thử nghiệm 116 startup Ý · Camuffo 2020 · mức B. Không có số phần trăm.",
+  "beats": [
+   {
+    "text": "Bạn tính nghỉ việc để làm riêng, vì tin rằng làm ra rồi thì sẽ có người mua, đúng không?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Quit to build it. Someone will buy, right?"
+   },
+   {
+    "text": "Rồi bạn bỏ ra mấy tháng tối nào cũng làm, tới ngày mở bán thì chẳng có ai bấm mua.",
+    "expression": "neutral",
+    "action": "typing",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Months of nights. Zero orders."
+   },
+   {
+    "text": "Lý do là mình chỉ hỏi bạn bè thấy hay không, chứ chưa hỏi ai chịu trả tiền trước.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Likes are not payments."
+   },
+   {
+    "text": "Một thử nghiệm với một trăm mười sáu startup ở Ý cho thấy nhóm biết kiểm bằng phản hồi thật của khách làm ăn tốt hơn.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "116 startups. Testing beat guessing."
+   },
+   {
+    "text": "Điều mình cần là biết sớm ý tưởng có người mua hay không, trước khi bỏ thêm tiền và thời gian.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Know before you spend more."
+   },
+   {
+    "text": "Vậy bạn làm một trang giới thiệu nhỏ, rồi xin vài chục người đặt trước hoặc mua một đơn nhỏ.",
+    "expression": "happy",
+    "action": "typing",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 7,
+    "caption_en": "One page. Ask for pre-orders."
+   },
+   {
+    "text": "Nếu có người trả tiền, bạn làm tiếp cho chắc. Nếu không ai trả, bạn đổi hướng sớm mà chưa mất nhiều.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Paid? Build. Not paid? Pivot early."
+   },
+   {
+    "text": "Bạn đang ấp ý tưởng gì? Comment cho mình biết thử nha.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "What are you building? Comment."
+   },
+   {
+    "text": "Nội dung dựa trên Cẩm nang sống đáng giá của chuanman2707, giấy phép CC BY 4.0. Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "Source: HowToLiveBetter, CC BY 4.0"
+   }
+  ]
+ },
+ {
+  "id": "chu-nhat-ngu-toi-trua",
+  "title": "Chủ nhật ngủ tới trưa cho bù, vậy mà thứ Hai còn mệt hơn: giữ giờ dậy cố định cả cuối tuần",
+  "trend_id": "x-users-share-sleep-struggles-and-wins-in",
+  "bridge_id": "B-weekend-02",
+  "lesson": "3.2 Cố định giờ dậy, cuối tuần cũng vậy (Phillips et al. 2017, Scientific Reports: 61 sinh viên ghi 30 ngày; nhóm 1/5 ngủ thất thường nhất có đồng hồ sinh học trễ khoảng 2,5 tiếng so với nhóm đều nhất, melatonin bắt đầu tiết 00:08 so với 21:32; ngủ càng đều thì điểm học càng tốt, r = 0,37). Bằng chứng B; ghi chú sách: một nghiên cứu, ít người, không có nhóm đối chứng. Lỡ thức khuya thì tối hôm sau đi ngủ sớm, không ngủ tới trưa (sách dẫn mục 2.38). Chi phí: không tốn tiền, cần chút ý chí bớt ngủ nướng.",
+  "angle": "data / contrarian",
+  "pattern": "P12 + P03",
+  "differentiation": "Mọi người đang nói: ngày nghỉ thì nằm ngủ 13 tiếng cho bù, ai cũng đang nợ ngủ (X News 24/10; X VN trend 'Chủ Nhật'). Góc của mình: ngủ nướng tới trưa làm đồng hồ sinh học trễ như bị lệch múi giờ, nên thứ Hai mới mệt; giữ giờ dậy như ngày thường, muốn bù thì tối đi ngủ sớm hơn (3.2, mức B). Củng cố B-weekend-01, đăng hợp vào sáng Chủ nhật. Chuyện thật của Hiệp (giờ dậy 6:30) để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "clip-14 (3.2) hook thay thế; củng cố B-weekend-01",
+  "hook_vi": "Chủ nhật bạn tính ngủ tới trưa cho bù, vậy mà sao sáng thứ Hai còn mệt hơn?",
+  "moment_vi": "Cả tuần dậy sớm đi làm, tới Chủ nhật nằm luôn tới mười hai giờ trưa, tối lại trằn trọc không ngủ được.",
+  "turn_vi": "Cuối tuần bạn vẫn dậy đúng giờ như ngày thường, muốn bù thì tối đi ngủ sớm hơn một chút.",
+  "hook_en": "Slept till noon Sunday. Why is Monday worse?",
+  "explainer": "HyperFrames: hai đồng hồ, 21:32 (ngủ đều) và 00:08 (ngủ thất thường), mũi tên 'trễ ~2,5 tiếng' như lệch múi giờ. Nhãn: Phillips 2017 · 61 sinh viên · mức B.",
+  "beats": [
+   {
+    "text": "Chủ nhật bạn tính ngủ tới trưa cho bù, vậy mà sao sáng thứ Hai còn mệt hơn?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Slept till noon. Monday feels worse?"
+   },
+   {
+    "text": "Tối Chủ nhật bạn nằm trằn trọc tới khuya, sáng thứ Hai báo thức reo mà người vẫn nặng trịch.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Sunday night: wide awake."
+   },
+   {
+    "text": "Lý do là mỗi lần ngủ dậy trễ, đồng hồ sinh học của bạn bị đẩy lùi lại giống như vừa bay qua múi giờ khác.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Sleeping in = mini jet lag."
+   },
+   {
+    "text": "Một nghiên cứu với sáu mươi mốt sinh viên thấy nhóm ngủ thất thường nhất có đồng hồ sinh học trễ khoảng hai tiếng rưỡi.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Irregular sleepers: ~2.5h behind."
+   },
+   {
+    "text": "Điều mình cần là sáng thứ Hai dậy nổi mà đầu óc vẫn tỉnh.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "Wake up clear on Monday."
+   },
+   {
+    "text": "Vậy cuối tuần bạn vẫn dậy đúng giờ như ngày thường, muốn bù thì tối đi ngủ sớm hơn một chút.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Same wake time. Bed earlier instead."
+   },
+   {
+    "text": "Trong nghiên cứu đó, ai ngủ dậy càng đều thì điểm học càng tốt hơn.",
+    "expression": "happy",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Regular sleep, better grades."
+   },
+   {
+    "text": "Cuối tuần này bạn thử giữ giờ dậy rồi comment cho mình biết thứ Hai thấy sao nha.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 5,
+    "caption_en": "Try it this weekend. Comment."
+   },
+   {
+    "text": "Nội dung dựa trên Cẩm nang sống đáng giá của chuanman2707, giấy phép CC BY 4.0.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 4,
+    "caption_en": "Source: HowToLiveBetter, CC BY 4.0"
+   }
+  ]
+ }
+]

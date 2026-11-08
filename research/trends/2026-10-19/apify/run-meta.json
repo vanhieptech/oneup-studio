@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Saigon",
+  "primary": {
+    "actor": "clockworks/tiktok-scraper",
+    "run_id": "MUd3jqleOKKbk36dK",
+    "dataset_id": "UcO1WLsoGu1hFd2hM",
+    "kv_store_id": "WhxYLaEbXnOubueRO",
+    "item_count": 42,
+    "valid_clips": 42,
+    "compute_units": 0.0244,
+    "input": {
+      "hashtags": ["dilam", "vanphong", "genz"],
+      "searchQueries": ["luot tiktok ca ngay", "vua lam vua luot dien thoai", "tin nhan cong viec ngoai gio"],
+      "searchSection": "/video",
+      "resultsPerPage": 7,
+      "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
+      "commentsPerPost": 0,
+      "proxyCountryCode": "None"
+    },
+    "note": "6/6 input OK. Hashtag 'dilam' lẫn nhiều clip nước ngoài (tên riêng Dilam), 'genz' chủ yếu clip tiếng Anh; search 'tin nhan cong viec ngoai gio' ra cả clip TBN/BĐN."
+  },
+  "comments": {
+    "actor": "clockworks/tiktok-comments-scraper",
+    "run_id": "qrvghHpuOWGnjjsbp",
+    "dataset_id": "eY6HGDJTxXeD8DZyv",
+    "item_count": 99,
+    "compute_units": 0.0409,
+    "note": "6/6 post; @vtv24news tắt comment (comment_count=0) nên 0 comment"
+  },
+  "parseforge_enrich": {
+    "actor": "parseforge/tiktok-scraper",
+    "run_id": "uKufN2qe3jeKSMAE0",
+    "dataset_id": "SyzebsNqVOY5uOizl",
+    "item_count": 3,
+    "compute_units": 0.0355,
+    "note": "vanphongsono không lời → transcript rỗng, caption fallback; vtv24news + colo.vn transcript vie-VN khớp VTT"
+  },
+  "shortlist": 6,
+  "vtt_saved": 12,
+  "fields_coverage_pct": 98.6,
+  "fields_coverage_note": "Script báo 100% (12 trường × 6 clip). Thực chất 71/72 ô: top_comments của @vtv24news là danh sách rỗng vì clip tắt comment."
+}

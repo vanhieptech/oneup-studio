@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-don-lien-tay-viec-chua-kip-to",
+ "title": "[STUB] Có người nấu xong bếp sạch luôn: rửa dao ngay sau khi thái. Việc nhỏ làm liền trước khi nó kịp to",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "why-some-clean-while-they-cook-a-familiar",
+  "bridge_id": "B-donlientay-01",
+  "lesson": "4.9 Trì hoãn là né cảm giác khó chịu, không phải lười (Steel 2007, phân tích gộp 691 hệ số tương quan, mức A: việc càng gây khó chịu thì càng gắn với trì hoãn; chỉ là tương quan). Hành động theo sách: làm bước đầu nhỏ lại cho bớt khó chịu. Hiệu ứng Zeigarnik chỉ có trong tóm tắt X, chưa tự kiểm, không vào voice.",
+  "angle": "empathy / humor",
+  "pattern": "P10 + P15",
+  "differentiation": "Mọi người đang nói: dọn trong lúc nấu là thói quen của người ngăn nắp, nhà ai cũng có một người dọn liền và một người để sau (X News 30/10). Góc của mình: không chia phe ngăn nắp hay bừa. Đống chén để tới tối khó chịu hơn một con dao rửa liền, và việc càng khó chịu càng dễ bị dời (sách 4.9). Nên làm việc lúc nó còn nhỏ: rửa một con dao, trả lời một tin nhắn, cất một cái áo. Callback clip-02 (4.9) bằng ví dụ việc nhà."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "don-lien-tay-viec-chua-kip-to.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có người nấu xong là bếp sạch luôn, vì thái hành xong họ rửa dao liền. Còn bồn rửa nhà bạn, tới tối đang chờ mấy cái?",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Clean as you go?",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "don-lien-tay-viec-chua-kip-to.b02",
+   "duration": 4,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thiệt, nhà mình là đội để mai rửa.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "Team tomorrow.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "don-lien-tay-viec-chua-kip-to.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà sáng ra, đống chén hôm qua nhìn còn ngán hơn tối qua.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Worse by morning.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "don-lien-tay-viec-chua-kip-to.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cái mình né hông phải là việc rửa chén, mà là cảm giác khó chịu khi nhìn cả đống.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "We dodge the feeling.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "don-lien-tay-viec-chua-kip-to.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một phân tích gộp rất lớn về trì hoãn thấy: việc càng khiến mình khó chịu thì càng hay bị dời.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Unpleasant gets delayed.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "don-lien-tay-viec-chua-kip-to.b06",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một con dao thì chưa kịp khó chịu. Cả bồn chén thì có.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "One knife vs a sink.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "don-lien-tay-viec-chua-kip-to.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên việc nào dưới một phút, làm liền lúc nó còn nhỏ: rửa con dao, cất cái áo, trả lời cái tin nhắn.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Do it while small.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "don-lien-tay-viec-chua-kip-to.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay thử đúng một lần thôi, tối nay nấu xong rửa liền cái nồi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Try once tonight.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "don-lien-tay-viec-chua-kip-to.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn là đội dọn liền hay đội để mai? Comment một chữ: liền hay mai.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Now or tomorrow?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

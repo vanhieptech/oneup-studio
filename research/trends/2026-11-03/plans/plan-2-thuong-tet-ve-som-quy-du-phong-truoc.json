@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-thuong-tet-ve-som-quy-du-phong-truoc",
+ "title": "[STUB] Thưởng Tết đang rục rịch về sớm: tiền chưa về đã chia cho Tết, còn quỹ dự phòng tính bằng tháng chi tiêu thì sao",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "ruc-rich-chuyen-thuong-tet-lao-dong-tre",
+  "bridge_id": "B-thuongtet-01",
+  "lesson": "5.27 Để dành trước quỹ khẩn cấp bằng 3 đến 6 tháng chi tiêu, để ở chỗ rút được ngay (mức C: sách ghi «3 đến 6 tháng» là kinh nghiệm phổ biến, không tìm thấy nguồn gốc chính thức hay học thuật; tính theo chi tiêu cố định hằng tháng, không theo thu nhập; mục đích: mất việc hay ốm thì không phải vay lãi cao hay bán lỗ khoản đầu tư; không phải lời khuyên đầu tư). Phần bảo hiểm tiền gửi trong sách là số Trung Quốc → không dùng. Mâu thuẫn L-096 (dẫn chứng cụ thể) với mức C vẫn đang chờ Hiệp quyết (như B-tietkiem-01). Deep Research kiểm trước khi viết.",
+  "angle": "empathy / contrarian",
+  "pattern": "P05 + P03",
+  "differentiation": "Mọi người đang nói: nhận thưởng sớm để chủ động mua sắm, chia nhỏ khoản chi, tránh dồn vào cận Tết; có người nói sẽ «dành dụm một khoản dự phòng» (Thanh Niên 03/11). Góc của mình: không phải chia sớm cho Tết, mà chia cho quỹ dự phòng trước, và đếm quỹ đó bằng số tháng chi tiêu chứ không bằng số tiền. Sách 5.27 nói thẳng mốc 3–6 tháng chỉ là kinh nghiệm chung (mức C), nên voice nói rõ như vậy thay vì gắn «nghiên cứu». +1 hôm nay: cộng ra chi tiêu cố định một tháng của mình. Không nói tên lãnh đạo/chủ trương TP.HCM."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thưởng Tết năm nay đang rục rịch về sớm, nhiều người mong nhận từ tháng mười một cho kịp mua sắm. Tiền chưa về, bạn đã chia nó cho mấy món rồi?",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Tet bonus already spent?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vé xe về quê, quà biếu ba mẹ, rồi thêm cái điện thoại mới đã nằm sẵn trong giỏ hàng từ tuần trước.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The cart is full.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn nếu ra Tết công việc có biến, bạn sống được bao nhiêu tháng mà không phải đi vay hay quẹt thẻ?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "How many months could you last?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b04",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lời khuyên phổ biến là giữ một khoản bằng ba tới sáu tháng chi tiêu, để ở chỗ rút ra được ngay. Sách ghi rõ đây là kinh nghiệm chung chứ chưa có nghiên cứu gốc, nên mình coi nó là cái mốc để bắt đầu.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "3–6 months: a rule of thumb.",
+    "start": 0.3,
+    "end": 9.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cái sách nhấn mạnh là đếm bằng tiền chi chứ không bằng tiền lương, tức là tiền nhà, ăn uống, đi lại và khoản gửi về nhà mỗi tháng cộng lại.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Count spending, not salary.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b06",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có sẵn khoản đó thì lúc mất việc hay ốm, bạn không phải vay lãi cao hay bán vội những thứ đang có.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "No high-interest loans.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên nếu quỹ chưa đủ, khi thưởng về thì phần đầu tiên đi vào quỹ dự phòng, phần còn lại mới chia cho Tết.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Fund first, then Tet.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay bạn chỉ cần cộng ra con số chi tiêu cố định một tháng của mình, rồi viết nó lên một tờ giấy.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Write down one number.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "thuong-tet-ve-som-quy-du-phong-truoc.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nếu thưởng về ngay hôm nay, việc đầu tiên bạn làm với nó là gì? Comment cho mình một câu thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "First thing you'd do with it?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

@@ -6,7 +6,7 @@ tags: [motion, remotion, motionmaxxing, comic]
 status: ready
 source: "https://github.com/Tejashmakwana/motionmaxxing @ 8c8ec0f (Apache-2.0; NOTICE: GSAP not redistributed)"
 id: research.motionmaxxing
-updated: 2026-10-16
+updated: 2026-11-07
 ---
 # motionmaxxing → Remotion mapping (comic shorts)
 
@@ -14,8 +14,9 @@ Vendored full tree (in git): `resources/refs/motionmaxxing/`
 Upstream: https://github.com/Tejashmakwana/motionmaxxing — vendored at commit below (nested `.git` removed).  
 Commit studied: `8c8ec0f2a6f6c9a0da15cd24f7b1298ab298368c` (2026-10-16 shallow).
 
+Agent skill: `skills/motionmaxxing` → symlink to the vendored tree (`INTEGRATION.md`).  
 Remotion ports (in git): `video-engine/src/composition/motionmaxxing/` (`catalog.json`, `mmx.ts`).  
-Skill: `skills/motion-picks-per-script` (+ workflow mirror). Parent catalogs: awesome-ai-motion (637 effects), transitions.dev (8 tdev-* ports).
+Beat picker: `skills/motion-picks-per-script` (+ workflow mirror). Parent catalogs: awesome-ai-motion (637 effects), transitions.dev (8 tdev-* ports).
 
 ## 1. What it is
 Agent skill + craft library for kinetic-type / product-promo films. Not a Remotion project. Evidence: 53 measured HyperFrames moments (M913–M974), ~4.3k moves, 12 fitted eases, 156 designer rules (PR-*), 507 film-decoded mechanics (PL*), HTML+GSAP runtime. Value for us: **measured timing + eases + beat grammar**, re-implemented with Remotion `interpolate` / custom ease fns. We do **not** take `runtime/vendor/gsap.min.js`, Chrome/ffmpeg renderer, or ElevenLabs scripts.

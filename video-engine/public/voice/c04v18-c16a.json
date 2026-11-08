@@ -1,0 +1,78 @@
+{
+ "duration": 1.4,
+ "envelope": [
+  0.004,
+  0.0,
+  0.004,
+  0.325,
+  0.676,
+  0.738,
+  0.789,
+  0.893,
+  0.757,
+  0.091,
+  0.627,
+  0.976,
+  0.936,
+  0.857,
+  0.786,
+  0.595,
+  0.356,
+  0.955,
+  1,
+  0.752,
+  0.078,
+  0.174,
+  0.708,
+  0.932,
+  0.712,
+  0.112,
+  0.041,
+  0.255,
+  0.425,
+  0.429,
+  0.144,
+  0.009,
+  0.005,
+  0.082,
+  0.15,
+  0.497,
+  0.725,
+  0.548,
+  0.07,
+  0.012,
+  0.008,
+  0.001
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences",
+ "role": "Thầy",
+ "stt": "Mình tự viết được lắc gịt.",
+ "stt_sim": 0.833,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "Mình tự viết được lắc gịt.",
+   "sim": 0.833
+  },
+  "in_chunk": {
+   "text": "Mình tự viết được lắc gịch",
+   "sim": 0.833
+  }
+ },
+ "intra_output_cuts": 1,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "mình tự viết được luggage, đúng chữ hành lý hôm trước mình bí.",
+   "take": "c16-71r.wav",
+   "chunk": "c16"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c04v18.wav",
+  "start_s": 38.9667,
+  "end_s": 40.3667,
+  "hold_s": 0,
+  "tail_s": 0
+ }
+}

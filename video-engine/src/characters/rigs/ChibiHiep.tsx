@@ -168,8 +168,8 @@ const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: st
       {despair && <path d="M-86,62 Q-94,80 -86,88 Q-78,80 -86,62Z" fill="#7FB3E8" stroke={INK} strokeWidth={4} />}
       {expr === "sad" && <path d="M86,62 Q78,80 86,88 Q94,80 86,62Z" fill="#7FB3E8" stroke={INK} strokeWidth={4} />}
       {expr === "surprised" && <g stroke={INK} strokeWidth={9} strokeLinecap="round"><path d="M-150,-190 L-170,-226" /><path d="M-110,-214 L-116,-252" /><path d="M150,-190 L170,-226" /></g>}
-      {expr === "confused" && <text x={150} y={-150} fontSize={110} fontWeight={700} fill={INK} fontFamily="Be Vietnam Pro" transform={`rotate(14 150 -150)`}>?</text>}
-      {s.action === "thinking" && <g fill={INK}><circle cx={170} cy={-170} r={10} /><circle cx={200} cy={-210} r={15} /><circle cx={240} cy={-260} r={20} /></g>}
+      {expr === "confused" && s.emote !== false && <text x={150} y={-150} fontSize={110} fontWeight={700} fill={INK} fontFamily="Be Vietnam Pro" transform={`rotate(14 150 -150)`}>?</text>}
+      {s.action === "thinking" && s.emote !== false && <g fill={INK}><circle cx={170} cy={-170} r={10} /><circle cx={200} cy={-210} r={15} /><circle cx={240} cy={-260} r={20} /></g>}
     </g>
   );
 };

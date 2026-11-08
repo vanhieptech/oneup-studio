@@ -1,0 +1,31 @@
+[
+ {
+  "id": "bong-hoa-chua-no-thoi-quen",
+  "title": "“Đừng bao giờ khinh thường một bông hoa chưa nở”: thói quen nở theo lịch riêng, không phải 21 ngày",
+  "trend_id": "trend-dung-bao-gio-khinh-thuong-mot-bong",
+  "bridge_id": "B-bonghoa-01",
+  "lesson": "4.12 “21 ngày tạo thói quen” là myth (Lally và cộng sự 2010, European Journal of Social Psychology: người tham gia tự chọn một thói quen ăn/uống/vận động hằng ngày; thời gian tới mức tự động trung vị khoảng 66 ngày, dao động 18–254 ngày; lỡ một lần không làm mất tiến trình). Số liệu lấy từ ingest/theme-map, Deep Research phải kiểm lại trước khi viết script.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 + F04 (ngày ấy – bây giờ)",
+  "differentiation": "Mọi người đang nói: ghép ảnh ngày ấy – bây giờ để khoe mình đã “dậy thì thành công” (Kenh14 26/10). Góc của mình: đổi trước/sau ngoại hình thành trước/sau một thói quen nhỏ; ngày 21 chưa thấy gì chỉ là hoa chưa tới mùa, vì thói quen mất từ 18 tới 254 ngày, và lỡ một ngày không về số 0. Không chê ảnh cũ của ai.",
+  "theme": "dark",
+  "week": 1,
+  "target": "clip-06 (4.12) hook mới",
+  "hook_vi": "Đừng bao giờ khinh thường một bông hoa chưa nở, kể cả thói quen dậy sớm mới tới ngày thứ hai mươi mốt của bạn.",
+  "moment_vi": "Tới ngày thứ hai mươi mốt, chuông báo thức reo mà bạn vẫn phải vật lộn mới ra khỏi giường, nên bạn nghĩ chắc mình không hợp.",
+  "turn_vi": "Bạn giữ đúng một việc nhỏ mỗi sáng, lỡ một hôm thì hôm sau làm tiếp, và để thói quen nở theo lịch của nó.",
+  "hook_en": "Never underestimate a flower that hasn't bloomed. Day 21 included.",
+  "explainer": "HyperFrames: khung ghép ‘ngày 1 – ngày 21 – ngày 66’ theo đúng format ngày ấy – bây giờ của trend; nụ hoa lớn dần qua thanh 18 → 254 ngày, chấm ‘lỡ 1 ngày’ không kéo thanh về 0. Nhãn: Lally 2010 · cần Deep Research kiểm.",
+  "beats": [
+   {"text": "Đừng bao giờ khinh thường một bông hoa chưa nở, kể cả thói quen dậy sớm mới tới ngày thứ hai mươi mốt của bạn.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Never underestimate a flower that hasn't bloomed."},
+   {"text": "Tới ngày thứ hai mươi mốt, chuông báo thức reo mà bạn vẫn phải vật lộn mới ra khỏi giường, nên bạn nghĩ chắc mình không hợp.", "expression": "confused", "action": "thinking", "pose": "sitting", "background": "desk", "duration": 7, "caption_en": "Day 21. Still a struggle."},
+   {"text": "Cái bẫy nằm ở con số hai mươi mốt ngày mà ai cũng nhắc, chứ không nằm ở bạn.", "expression": "surprised", "action": "reacting", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "The trap is the 21-day number."},
+   {"text": "Khi người ta theo dõi những người tập một thói quen mới mỗi ngày, có người mười tám ngày đã quen, có người mất hơn hai trăm ngày.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "18 days for some. 254 for others."},
+   {"text": "Và hôm nào lỡ bỏ một buổi, thói quen của họ cũng không bị kéo về số không.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "Missing one day doesn't reset you."},
+   {"text": "Vậy điều bạn cần không phải là nở cho kịp hạn, mà là giữ cho cái nụ đó còn sống mỗi sáng.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "desk", "duration": 6, "caption_en": "Don't race the deadline. Keep the bud alive."},
+   {"text": "Bạn giữ đúng một việc nhỏ mỗi sáng, lỡ một hôm thì hôm sau làm tiếp, và để thói quen nở theo lịch của nó.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "One small thing. Miss a day, keep going."},
+   {"text": "Rồi tới một sáng nào đó, bạn tự dậy trước chuông mà không cần nghĩ, đó mới là lúc hoa nở.", "expression": "happy", "action": "idle", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "One morning it just happens."},
+   {"text": "Thói quen của bạn đang ở ngày thứ mấy? Ghi số ngày xuống bình luận, mình cùng đếm tiếp.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 6, "caption_en": "What day are you on?"}
+  ]
+ }
+]

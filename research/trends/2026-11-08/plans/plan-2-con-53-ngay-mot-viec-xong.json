@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-con-53-ngay-mot-viec-xong",
+ "title": "[STUB] TikTok đếm «đúng 2 tháng nữa là hết năm 2026»: còn 53 ngày, chọn một việc xong trước 31/12 (4.8, callback 4.1)",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-hoanglongquoi-7703019605341555975",
+  "bridge_id": "B-hetnam-01",
+  "lesson": "4.8 Một việc có ngày hạn (callback 4.1 «nếu… thì…» của clip-01). Hạn 31/12 là mốc lịch, không phải fact của sách; Deep Research xác nhận câu chữ 4.8 trước khi viết.",
+  "angle": "empathy / seasonal",
+  "pattern": "P05 + P15",
+  "differentiation": "Mọi người đang nói: «đúng 2 tháng nữa là hết năm», comment kéo sang Tết ([TikTok @hoanglongquoi](https://www.tiktok.com/@hoanglongquoi/video/7703019605341555975), đăng 01/11). Góc của mình: không đợi kế hoạch năm mới; 53 ngày đủ cho đúng một việc đã dời cả năm, viết theo dạng nếu… thì…. Khác B-thang11-01 (mốc đầu tháng) và Great Lock In (EN)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "con-53-ngay-mot-viec-xong.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn năm mươi ba ngày nữa là hết năm hai không hai sáu.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "53 days left in 2026.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "con-53-ngay-mot-viec-xong.b02",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trên mạng đang có clip đếm ngược, ai cũng giật mình: mới đó mà gần Tết.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The feed is counting down.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "con-53-ngay-mot-viec-xong.b03",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn chưa cần kế hoạch năm mới. Chỉ cần một việc xong trước ba mốt tháng mười hai.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "One thing by Dec 31.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "con-53-ngay-mot-viec-xong.b04",
+   "duration": 9,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cái việc đã dời từ đầu năm: dọn cái tủ, gọi lại cho một người, sửa chiếc xe ở góc nhà.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "The thing you kept moving.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "con-53-ngay-mot-viec-xong.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Năm mươi ba ngày không đủ đổi đời. Nhưng đủ cho đúng một việc, nếu nó có ngày hạn.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Enough for one thing.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "con-53-ngay-mot-viec-xong.b06",
+   "duration": 9,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Viết ra theo kiểu nếu thì: nếu sáng thứ Bảy uống cà phê xong, thì mình dọn ngăn đầu tiên.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "If-then: when, where, what.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "con-53-ngay-mot-viec-xong.b07",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một ngăn mỗi tuần, tới cuối năm là xong cái tủ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One drawer a week.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "con-53-ngay-mot-viec-xong.b08",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chọn đúng một việc. Ghi ngày hạn lên lịch. Vậy là năm nay khép lại có thêm một dấu cộng.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Pick one. Date it. +1.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-met-sau-hon-ngu-sau-tieng",
+ "title": "[STUB] Cả mạng than một kiểu mệt mà ngủ thêm cũng không hết. Sách 3.3: sáu tiếng không đủ — não bạn biết",
+ "meta": {
+  "week": 3,
+  "status": "stub-needs-approval",
+  "trend_id": "x-bone-deep-tiredness",
+  "bridge_id": "B-mettamsau-01",
+  "lesson": "3.3 Sáu tiếng ngủ không đủ cho hầu hết người lớn (Walker / sách ghi rõ; Deep Research xác nhận trước khi nêu tên). Hành động: đặt giờ ngủ sớm hơn đúng ba mươi phút tối nay, không thêm một «giờ bù» cuối tuần. Tránh nhãn bệnh / chẩn đoán.",
+  "angle": "empathy / data",
+  "pattern": "P10 + P12",
+  "differentiation": "Mọi người đang nói: có một kiểu mệt mà ngủ thêm cũng không hết, mệt hơn cả thể chất ([X News](https://x.com/i/trending/2118649260149494132); tóm tắt nêu trung bình 6 giờ 33 phút — chưa tự kiểm). Góc của mình: không phải bạn «yếu ý chí». 3.3 nói não cần gần đủ giấc, sáu tiếng mãi sẽ để lại dấu. +1 hôm nay: ngủ sớm hơn ba mươi phút, không cố bù cuối tuần."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "met-sau-hon-ngu-sau-tieng.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cả mạng đang than một kiểu mệt mà ngủ thêm cũng không hết — mệt hơn cả thể chất.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Tiredness sleep doesn't fix.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "met-sau-hon-ngu-sau-tieng.b02",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có bài tóm tắt nói người lớn ngủ trung bình sáu giờ ba mươi ba phút. Số đó mình chưa tự kiểm, chỉ kể lại.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "6h33 from a summary — unverified.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "met-sau-hon-ngu-sau-tieng.b03",
+   "duration": 7,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối qua bạn tắt đèn sớm hơn, sáng nay vẫn mở mắt nặng như chưa từng nghỉ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Slept earlier, still heavy.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "met-sau-hon-ngu-sau-tieng.b04",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dễ tự bảo: mình yếu, mình thiếu ý chí.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Easy to blame willpower.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "met-sau-hon-ngu-sau-tieng.b05",
+   "duration": 9,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một mục ngắn: sáu tiếng ngủ không đủ với hầu hết người lớn. Não bạn biết điều đó trước cả bạn.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Book 3.3: six hours isn't enough.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "met-sau-hon-ngu-sau-tieng.b06",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Không phải bảo bạn ngủ chín tiếng từ đêm nay. Chỉ một việc nhỏ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One small shift.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "met-sau-hon-ngu-sau-tieng.b07",
+   "duration": 8,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay đặt giờ ngủ sớm hơn đúng ba mươi phút. Điện thoại để ngoài tầm với trước khi nằm.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Sleep 30 minutes earlier.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "met-sau-hon-ngu-sau-tieng.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đừng gom thiếu ngủ cả tuần rồi «bù» Chủ nhật. Cái bù đó làm thứ Hai mệt hơn — clip khác sẽ nói.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Don't binge-sleep Sunday.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "met-sau-hon-ngu-sau-tieng.b09",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một cộng một hôm nay: sớm hơn ba mươi phút. Não bạn sẽ nhận ra trước cả feed.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "+1 tonight: thirty minutes.",
+    "start": 0.3,
+    "end": 9.7
+   }
+  }
+ ]
+}

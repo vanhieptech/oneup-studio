@@ -1,0 +1,63 @@
+{
+  "planning_only": true,
+  "spoken_words": 150,
+  "post_hook_pre_method_words": 50,
+  "per_beat_words": [
+    24,
+    18,
+    21,
+    11,
+    28,
+    27,
+    21
+  ],
+  "en_max_chunk_words": 8,
+  "results": [
+    {
+      "mode": "subjects",
+      "exit_code": 0
+    },
+    {
+      "mode": "l088",
+      "exit_code": 0
+    },
+    {
+      "mode": "trend",
+      "exit_code": 1
+    },
+    {
+      "mode": "flow",
+      "exit_code": 0
+    },
+    {
+      "mode": "clarity",
+      "exit_code": 0
+    },
+    {
+      "mode": "link",
+      "exit_code": 0
+    },
+    {
+      "mode": "repeat",
+      "exit_code": 0
+    },
+    {
+      "mode": "evidence",
+      "exit_code": 0
+    },
+    {
+      "mode": "choppy",
+      "exit_code": 0
+    },
+    {
+      "mode": "fresh",
+      "exit_code": 0
+    }
+  ],
+  "gates": "L090 OPEN; Reviewer/Deep/Social/manual flow/read-aloud/stranger/timing pending; not self-approved",
+  "sha256": {
+    "/workspace/opencreator-clip05-script-r11.2-draft-2026-11-07.md": "152075696ac03458dcaa0e91e9f3290f5f9ae7293c296b15e6fccd0d49c94b4f",
+    "/workspace/opencreator-clip05-spec-r11.2-draft-2026-11-07.json": "7fb90590cdcfc437c39a63fcf20dcd4da842d5a6cfb76f90160ffed047a000ba",
+    "/workspace/opencreator-clip05-storyboard-r11.2-plan-2026-11-07.md": "7f8f81f1a9b5cb5a3c999675f66913e65432ced1c61d983f856c1c594dbf1847"
+  }
+}

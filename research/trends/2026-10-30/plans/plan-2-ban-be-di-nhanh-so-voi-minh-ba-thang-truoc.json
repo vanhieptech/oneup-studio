@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-ban-be-di-nhanh-so-voi-minh-ba-thang-truoc",
+ "title": "[STUB] Bạn bè đổi xe, mua nhà, kế hoạch của bạn cứ dời: so với chính mình ba tháng trước",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "online-reminders-to-embrace-personal-growth-over-envy",
+  "bridge_id": "B-ghenti-01",
+  "lesson": "3.20 Lướt đời người khác mỗi ngày dễ thành so sánh (fact và mức bằng chứng lấy đúng từ sách mục 3.20, Deep Research kiểm trước khi viết; claim «so với chính mình giúp bền hơn» chỉ có trong tóm tắt X, chưa tự kiểm, không dùng nếu sách không có).",
+  "angle": "empathy / contrarian",
+  "pattern": "P03 + P15",
+  "differentiation": "Mọi người đang nói: đừng ghen tị, ai cũng có timeline riêng, đừng bỏ cuộc (X News 29/10, lời nhắc kiểu quote). Góc của mình: không bảo bạn hết ghen tị, cảm giác đó tự đến khi lướt. Đổi thước đo: so với mình ba tháng trước, và ghi ra đúng một thứ đã nhích lên."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn bè người đổi xe, người mua nhà, còn kế hoạch của bạn thì cứ dời qua tháng sau?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Everyone's ahead?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nào mình cũng lướt thấy chìa khoá nhà mới của ai đó, rồi nhìn sổ tiết kiệm của mình.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Scrolling, comparing.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b03",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trên mạng ai cũng khuyên đừng ghen tị, mỗi người một timeline.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Don't be jealous, they say.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thì dễ, chứ cảm giác đó tự tới khi mình đang lướt.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Easier said.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[FACT 3.20 TỪ SÁCH, CHỜ DEEP RESEARCH KIỂM]",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "[fact pending]",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b06",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên mình hông bắt bạn hết ghen tị, chỉ đổi cái thước đo thôi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Change the ruler.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "So với chính bạn ba tháng trước: đã để dành thêm được chút nào, đã bớt được một khoản nào chưa?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "You, three months ago.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay đặt điện thoại xuống, ghi đúng một thứ mình đã nhích lên.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Write one win.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "ban-be-di-nhanh-so-voi-minh-ba-thang-truoc.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thứ bạn nhích lên được trong ba tháng qua là gì? Kể mình nghe một cái.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "What's yours?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

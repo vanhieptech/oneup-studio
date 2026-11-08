@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Saigon",
+  "primary": {
+    "actor": "clockworks/tiktok-scraper",
+    "run_id": "s5SFZKHFyY11sveqM",
+    "dataset_id": "ZeqXawtfkqdomIJRU",
+    "kv_store_id": "UN7A9zrrtFdb1LBhY",
+    "item_count": 36,
+    "valid_clips": 36,
+    "compute_units": 0.0403,
+    "input": {
+      "hashtags": [
+        "quanlythoigian",
+        "taichinhcanhan"
+      ],
+      "searchQueries": [
+        "tiet kiem tien luong",
+        "luot dien thoai truoc khi ngu",
+        "lam viec hieu qua hon",
+        "met moi sau gio trua"
+      ],
+      "searchSection": "/video",
+      "resultsPerPage": 6,
+      "downloadSubtitlesOptions": "DOWNLOAD_SUBTITLES",
+      "commentsPerPost": 0,
+      "proxyCountryCode": "None"
+    },
+    "note": "6/6 input OK, không cần proxy VN. 4 mục isAd (lepthelittlekid/JBL, emmi.hoang, nhinquanhlancuoio_o, davoslingo/RedBull) → drop. 'met moi sau gio trua' ra nhiều clip rối loạn lo âu / sức khoẻ → drop. 'luot dien thoai truoc khi ngu' ra clip bác sĩ/sức khoẻ, chủ đề điện thoại đã bão hoà."
+  },
+  "comments": {
+    "actor": "clockworks/tiktok-comments-scraper",
+    "run_id": "DAvaO6rWS82qqLZc3",
+    "dataset_id": "S9a8PUN1lSzAtt1OB",
+    "item_count": 100,
+    "compute_units": 0.0438,
+    "note": "5/5 post × 20."
+  },
+  "parseforge_enrich": {
+    "actor": "parseforge/tiktok-scraper",
+    "run_id": "jVBfRbQCjUfXzuMoC",
+    "dataset_id": "iNSaz50UcQ5Us1xVx",
+    "item_count": 3,
+    "compute_units": 0.0412,
+    "note": "3 videoUrls cụ thể; transcript trả về eng-US (bản dịch) nên giữ VTT vie-VN làm subtitle; 30 comment đều trùng clockworks (0 mới). Một lần poll get-actor-run bị MCP timeout -32001, poll lại OK, không gọi lại actor."
+  },
+  "shortlist": 5,
+  "vtt_saved": 33,
+  "fields_coverage_pct": 100.0,
+  "fields_coverage_note": "60/60 ô (12 trường × 5 clip); cả 5 clip có VTT vie-VN.",
+  "compute_units_total": 0.1253
+}

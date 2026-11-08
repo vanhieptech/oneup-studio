@@ -1,0 +1,17 @@
+{
+  "lesson": "L-083",
+  "file": "clip-04-v18-reels.mp4",
+  "built": "2026-10-21 08:13 +07:00",
+  "source": "clip-04-v18-reels-nocover.mp4 (48.90s, 1467 frames, untracked backup)",
+  "cover": {"image": "cover.png", "template": "A", "frames": 15, "seconds": 0.5, "fps": 30,
+            "frame0_vs_cover_png": {"ssim": 0.9994, "psnr_db": 43.93}},
+  "video": {"method": "cover segment encoded with source x264 params (SPS/PPS byte-identical), concat stream-copy; source frames untouched",
+            "frames": 1482, "duration_s": 49.4, "size": "1080x1920", "fps": "30/1", "codec": "h264 High L4.0 yuv420p bt709 tv",
+            "join_check": "framemd5: frames 15..1481 == source 0..1466 bit-exact; full decode 0 errors"},
+  "audio": {"method": "24000 samples (0.500s) digital silence prepended, aac LC 48 kHz mono 192k re-encode, no re-timing",
+            "sync_check": "xcorr lag +24000 samples = +0.500s; first voice onset 0.02s -> 0.52s",
+            "integrated_lufs": -14.2, "true_peak_dbfs": -0.9, "lra_lu": 2.8},
+  "frames_qa": ["00.00s-cover.jpg", "00.50s-after-cover-hook-start.jpg"],
+  "note": "other files in this folder were taken from the no-cover timeline; on the new reels file they sit +0.50s later",
+  "tiktok_light": "unchanged (clip-04-v18-tiktok.mp4, clip-04-v18-light.mp4)"
+}

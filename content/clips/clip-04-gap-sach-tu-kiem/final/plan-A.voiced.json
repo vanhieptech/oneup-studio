@@ -1,7 +1,7 @@
 {
  "version": 1,
  "id": "clip-04-final-A",
- "title": "Ban co nho gi dau ma quen: gap sach tu kiem (HTB 23.14)",
+ "title": "Gấp sách tự kiểm (HTB 23.14) - script v18 locked",
  "meta": {
   "clip": "clip-04",
   "week": 1,
@@ -11,19 +11,234 @@
   "width": 1080,
   "height": 1920,
   "fps": 30,
-  "theme": "dark"
+  "theme": "light",
+  "layout": "tiktok"
  },
  "scenes": [
   {
-   "id": "b01",
+   "id": "b01a",
    "beat": "clip-04.b01",
-   "duration": 1.852,
+   "duration": 1.767,
    "background": {
-    "kind": "desk"
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "closeup",
+    "push": 0.08
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Học thuộc tối qua,",
+     "start": 0.0,
+     "end": 0.9,
+     "emotion": "surprised",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c01a.wav",
+      "duration": 0.9,
+      "envelope": [
+       0.04,
+       0.608,
+       0.672,
+       0.191,
+       0.023,
+       0.014,
+       0.285,
+       0.893,
+       0.629,
+       0.073,
+       0.024,
+       0.008,
+       0.421,
+       1,
+       0.689,
+       0.67,
+       0.165,
+       0.011,
+       0.076,
+       0.736,
+       0.788,
+       0.708,
+       0.668,
+       0.615,
+       0.54,
+       0.371,
+       0.165
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "sáng dậy **quên sạch**?",
+     "start": 0.9,
+     "end": 1.767,
+     "emotion": "surprised",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c01b.wav",
+      "duration": 0.8667,
+      "envelope": [
+       0.073,
+       0.139,
+       0.22,
+       0.364,
+       0.505,
+       0.429,
+       0.528,
+       0.556,
+       0.32,
+       0.71,
+       0.677,
+       0.535,
+       0.419,
+       0.131,
+       0.021,
+       0.575,
+       0.895,
+       0.929,
+       0.932,
+       0.725,
+       0.564,
+       0.449,
+       1,
+       0.717,
+       0.492,
+       0.082
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Memorized last night, gone by morning?",
+    "start": 0.0,
+    "segments": [
+     {
+      "text": "Memorized last night,",
+      "start": 0.0,
+      "end": 0.9,
+      "highlight": [
+       0
+      ]
+     },
+     {
+      "text": "gone by morning?",
+      "start": 0.9,
+      "end": 1.717,
+      "highlight": [
+       0
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "snap",
+     "at": 0.34
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "night"
+      ],
+      [
+       0.9,
+       "day"
+      ]
+     ],
+     "wx": 70,
+     "wy": 560,
+     "ww": 220,
+     "wh": 200
+    },
+    {
+     "kind": "tome",
+     "x": 200,
+     "y": 1405,
+     "s": 0.6,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 600,
+     "y": 1070,
+     "s": 1.1,
+     "rows": [
+      [
+       0,
+       -1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       2,
+       -1
+      ]
+     ],
+     "dimRows": true,
+     "fadeAt": 1.337
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 28,
+     "len": 230,
+     "keys": [
+      [
+       0,
+       760,
+       520
+      ],
+      [
+       0.08,
+       760,
+       520
+      ],
+      [
+       0.34,
+       772,
+       1300
+      ]
+     ]
+    }
+   ],
+   "narration": {
+    "text": "HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?",
+    "start": 0.0
+   }
+  },
+  {
+   "id": "b01b",
+   "beat": "clip-04.b01",
+   "duration": 2.967,
+   "background": {
+    "kind": "room"
    },
    "camera": {
     "framing": "medium",
-    "push": 0.14
+    "push": 0.04
    },
    "transition": {
     "type": "cut",
@@ -32,91 +247,2554 @@
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.72,
+     "x": 0.76,
      "pose": "sitting",
-     "action": "talking",
-     "expression": "happy",
+     "action": "reacting",
+     "expression": "surprised",
      "facing": "left",
      "enter": "none",
-     "expressionChanges": [],
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "confused"
+      }
+     ],
      "actionChanges": []
     }
    ],
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Bạn tưởng mình **hay quên** hả?",
-     "start": 0.12,
-     "end": 1.852,
-     "emotion": "surprised",
+     "text": "Giả sử bây giờ **không nhìn sách**, bạn còn nhớ được những gì?",
+     "start": 0.0,
+     "end": 2.967,
+     "emotion": "confused",
+     "bubble": false,
      "audio": {
-      "src": "voice/c04v1-b01.wav",
-      "duration": 1.672,
+      "src": "voice/c04v18-c02.wav",
+      "duration": 2.9667,
       "envelope": [
-       0.0,
-       0.001,
-       0.083,
-       0.37,
-       1,
-       1,
-       0.78,
-       0.611,
-       0.465,
-       0.105,
-       0.045,
-       0.794,
-       0.918,
-       0.489,
-       0.475,
-       0.631,
-       0.943,
-       1,
-       0.541,
-       0.611,
-       0.443,
-       0.235,
-       0.214,
-       0.32,
-       0.528,
-       0.472,
-       0.15,
-       0.022,
-       0.078,
-       0.601,
-       0.782,
-       0.72,
-       0.316,
-       0.217,
-       0.496,
-       0.473,
-       0.589,
-       0.539,
-       0.505,
+       0.019,
+       0.148,
+       0.535,
+       0.668,
+       0.466,
+       0.543,
+       0.319,
+       0.266,
+       0.237,
        0.497,
-       0.464,
-       0.35,
-       0.342,
-       0.361,
-       0.234,
-       0.059,
-       0.006,
+       0.647,
+       0.602,
+       0.443,
+       0.202,
+       0.593,
+       0.624,
+       0.631,
+       0.325,
+       0.467,
+       0.794,
+       0.736,
+       0.57,
+       0.667,
+       0.768,
+       0.461,
+       0.158,
+       0.266,
+       0.811,
+       0.748,
+       0.999,
+       1,
+       0.924,
+       0.908,
+       0.831,
+       0.827,
+       0.779,
+       0.433,
+       0.517,
+       0.58,
+       0.712,
+       0.611,
+       0.051,
+       0.012,
+       0.096,
+       0.467,
+       0.644,
+       0.502,
+       0.381,
+       0.097,
+       0.285,
+       0.602,
+       0.546,
+       0.416,
+       0.474,
+       0.46,
+       0.443,
+       0.583,
+       0.595,
+       0.628,
+       0.538,
+       0.589,
+       0.588,
+       0.247,
+       0.26,
+       0.712,
+       0.565,
+       0.165,
+       0.023,
+       0.189,
+       0.325,
+       0.398,
+       0.264,
+       0.336,
+       0.465,
+       0.301,
+       0.289,
+       0.847,
+       0.791,
+       0.702,
+       0.642,
+       0.42,
+       0.225,
+       0.105,
+       0.013,
        0.002,
+       0.0,
        0.0,
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
      }
     }
    ],
    "caption": {
-    "text": "You think you just forget easily?",
-    "start": 0.0,
+    "text": "Book closed: what do you still remember?",
+    "start": 0.003,
     "segments": [
      {
-      "text": "You think you just forget easily?",
-      "start": 0.0,
-      "end": 1.802,
+      "text": "Book closed: what do you still remember?",
+      "start": 0.003,
+      "end": 2.917,
+      "highlight": [
+       1
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 0.772
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
+    },
+    {
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ],
+     "mv": [
+      [
+       0,
+       205,
+       1300
+      ],
+      [
+       0.772,
+       205,
+       1300
+      ],
+      [
+       1.1219999999999999,
+       140,
+       1312
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 480,
+     "y": 1265,
+     "s": 0.45,
+     "rows": []
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 8,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       585,
+       1420
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b02a",
+   "beat": "clip-04.b02",
+   "duration": 3.233,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "happy",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "happy"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình học **ba mươi từ** tiếng Anh, đọc đi đọc lại tới thuộc làu.",
+     "start": 0.0,
+     "end": 3.233,
+     "emotion": "happy",
+     "bubble": true,
+     "audio": {
+      "src": "voice/c04v18-c03.wav",
+      "duration": 3.2333,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.205,
+       0.719,
+       0.945,
+       0.723,
+       0.749,
+       0.676,
+       0.702,
+       0.624,
+       0.204,
+       0.02,
+       0.014,
+       0.204,
+       0.687,
+       0.727,
+       0.853,
+       0.924,
+       0.715,
+       0.85,
+       0.901,
+       1,
+       0.952,
+       0.893,
+       0.094,
+       0.063,
+       0.849,
+       0.799,
+       0.672,
+       0.082,
+       0.017,
+       0.512,
+       0.721,
+       0.365,
+       0.235,
+       0.073,
+       0.106,
+       0.497,
+       0.574,
+       0.609,
+       0.624,
+       0.443,
+       0.161,
+       0.008,
+       0.003,
+       0.002,
+       0.004,
+       0.025,
+       0.544,
+       0.905,
+       0.474,
+       0.043,
+       0.019,
+       0.198,
+       0.903,
+       0.981,
+       0.695,
+       0.486,
+       0.818,
+       0.471,
+       0.069,
+       0.018,
+       0.254,
+       0.497,
+       0.633,
+       0.581,
+       0.497,
+       0.506,
+       0.383,
+       0.04,
+       0.083,
+       0.595,
+       0.492,
+       0.065,
+       0.143,
+       0.672,
+       0.428,
+       0.035,
+       0.024,
+       0.292,
+       0.588,
+       0.681,
+       0.648,
+       0.72,
+       0.677,
+       0.613,
+       0.419,
+       0.261,
+       0.068,
+       0.01,
+       0.005,
+       0.004,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "I reread thirty English words until fluent",
+    "start": 0.137,
+    "segments": [
+     {
+      "text": "I reread thirty English words until fluent",
+      "start": 0.137,
+      "end": 3.183,
+      "highlight": [
+       2
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "swish",
+     "at": 1.496
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "night"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
+    },
+    {
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "open"
+      ]
+     ],
+     "flips": [
+      1.516,
+      1.976
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b02b",
+   "beat": "clip-04.b02",
+   "duration": 1.767,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "focused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "focused"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sáng dậy mình gấp sách viết thử,",
+     "start": 0.0,
+     "end": 1.767,
+     "emotion": "focused",
+     "bubble": true,
+     "audio": {
+      "src": "voice/c04v18-c04.wav",
+      "duration": 1.7667,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.034,
+       0.136,
+       0.263,
+       0.837,
+       0.774,
+       0.549,
+       0.705,
+       0.572,
+       0.225,
+       0.952,
+       0.844,
+       0.648,
+       0.712,
+       0.661,
+       0.646,
+       0.713,
+       0.738,
+       0.581,
+       0.52,
+       0.3,
+       0.784,
+       0.67,
+       0.038,
+       0.107,
+       0.294,
+       0.446,
+       0.637,
+       0.059,
+       0.014,
+       0.01,
+       0.07,
+       0.947,
+       1,
+       0.219,
+       0.017,
+       0.009,
+       0.122,
+       0.738,
+       0.753,
+       0.667,
+       0.613,
+       0.518,
+       0.535,
+       0.479,
+       0.405,
+       0.351,
+       0.068,
+       0.007,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Next morning, book closed, I wrote",
+    "start": 0.113,
+    "segments": [
+     {
+      "text": "Next morning, book closed, I wrote",
+      "start": 0.113,
+      "end": 1.717,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pen",
+     "at": 1.098
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "night"
+      ],
+      [
+       0.05,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
+    },
+    {
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "open"
+      ],
+      [
+       0.698,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 480,
+     "y": 1265,
+     "s": 0.45,
+     "rows": [
+      [
+       0,
+       1.098
+      ],
+      [
+       1,
+       1.268
+      ],
+      [
+       2,
+       1.4380000000000002
+      ],
+      [
+       3,
+       1.608
+      ]
+     ]
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 20,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       585,
+       1420
+      ],
+      [
+       0.8480000000000001,
+       585,
+       1420
+      ],
+      [
+       1.098,
+       413,
+       1160.6
+      ],
+      [
+       1.248,
+       540,
+       1160.6
+      ],
+      [
+       1.268,
+       413,
+       1183.1
+      ],
+      [
+       1.418,
+       540,
+       1183.1
+      ],
+      [
+       1.438,
+       413,
+       1205.6
+      ],
+      [
+       1.588,
+       540,
+       1205.6
+      ],
+      [
+       1.608,
+       413,
+       1228.1
+      ],
+      [
+       1.758,
+       540,
+       1228.1
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b02c",
+   "beat": "clip-04.b02",
+   "duration": 2.167,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "closeup",
+    "push": 0.06
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "tới từ thứ năm là hành lý thì mình **bí**.",
+     "start": 0.0,
+     "end": 2.167,
+     "emotion": "confused",
+     "bubble": true,
+     "anchor": [
+      600,
+      560
+     ],
+     "audio": {
+      "src": "voice/c04v18-c05.wav",
+      "duration": 2.1667,
+      "envelope": [
+       0.0,
+       0.0,
+       0.077,
+       0.912,
+       0.811,
+       1,
+       0.104,
+       0.037,
+       0.821,
+       0.85,
+       0.648,
+       0.093,
+       0.102,
+       0.592,
+       0.646,
+       0.625,
+       0.505,
+       0.516,
+       0.598,
+       0.759,
+       0.678,
+       0.524,
+       0.57,
+       0.539,
+       0.585,
+       0.579,
+       0.484,
+       0.431,
+       0.468,
+       0.561,
+       0.526,
+       0.515,
+       0.579,
+       0.554,
+       0.388,
+       0.597,
+       0.726,
+       0.677,
+       0.511,
+       0.454,
+       0.26,
+       0.034,
+       0.368,
+       0.645,
+       0.529,
+       0.43,
+       0.52,
+       0.542,
+       0.522,
+       0.684,
+       0.623,
+       0.769,
+       0.841,
+       0.787,
+       0.797,
+       0.917,
+       0.914,
+       0.829,
+       0.629,
+       0.11,
+       0.013,
+       0.01,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Stuck at word five",
+    "start": 0.037,
+    "segments": [
+     {
+      "text": "Stuck at word five",
+      "start": 0.037,
+      "end": 2.117,
+      "highlight": [
+       0
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pen",
+     "at": 0.05
+    },
+    {
+     "name": "tick",
+     "at": 1.636
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 70,
+     "wy": 560,
+     "ww": 220,
+     "wh": 200
+    },
+    {
+     "kind": "tome",
+     "x": 200,
+     "y": 1405,
+     "s": 0.6,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 600,
+     "y": 1070,
+     "s": 1.1,
+     "rows": [
+      [
+       0,
+       -1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       2,
+       -1
+      ],
+      [
+       3,
+       -1
+      ]
+     ],
+     "focus": {
+      "row": 4,
+      "at": 0.356
+     }
+    },
+    {
+     "kind": "card",
+     "x": 905,
+     "y": 1034.8,
+     "s": 0.6,
+     "shadow": 0.3,
+     "at": 0.916,
+     "shakeAt": 1.636
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 26,
+     "len": 230,
+     "keys": [
+      [
+       0,
+       760,
+       999.8
+      ],
+      [
+       0.356,
+       445,
+       1038.8
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b03a",
+   "beat": "clip-04.b03",
+   "duration": 2.1,
+   "background": {
+    "kind": "plate"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một thí nghiệm năm 2006 thấy,",
+     "start": 0.0,
+     "end": 2.1,
+     "emotion": "focused",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c06.wav",
+      "duration": 2.1,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.003,
+       0.389,
+       0.784,
+       0.804,
+       0.471,
+       0.062,
+       0.013,
+       0.279,
+       1,
+       0.757,
+       0.632,
+       0.67,
+       0.49,
+       0.731,
+       0.633,
+       0.582,
+       0.436,
+       0.443,
+       0.448,
+       0.394,
+       0.446,
+       0.599,
+       0.495,
+       0.475,
+       0.382,
+       0.3,
+       0.389,
+       0.497,
+       0.551,
+       0.504,
+       0.543,
+       0.553,
+       0.618,
+       0.44,
+       0.492,
+       0.472,
+       0.537,
+       0.459,
+       0.484,
+       0.464,
+       0.273,
+       0.225,
+       0.18,
+       0.379,
+       0.447,
+       0.419,
+       0.288,
+       0.035,
+       0.293,
+       0.479,
+       0.491,
+       0.526,
+       0.473,
+       0.445,
+       0.263,
+       0.04,
+       0.009,
+       0.004
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "A 2006 study found:",
+    "start": 0.16,
+    "segments": [
+     {
+      "text": "A 2006 study found:",
+      "start": 0.16,
+      "end": 2.05,
+      "highlight": [
+       1
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.778
+    }
+   ],
+   "props": [
+    {
+     "kind": "plate",
+     "x": 0,
+     "y": 0,
+     "src": "mg/c04v18-b03.mp4",
+     "from": 0.0
+    },
+    {
+     "kind": "tag",
+     "text": "Roediger & Karpicke 2006",
+     "x": 540,
+     "y": 1330,
+     "at": 0.378
+    }
+   ]
+  },
+  {
+   "id": "b03b",
+   "beat": "clip-04.b03",
+   "duration": 2.533,
+   "background": {
+    "kind": "plate"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "nếu **kiểm tra ngay** thì nhóm đọc lại làm tốt hơn.",
+     "start": 0.0,
+     "end": 2.533,
+     "emotion": "neutral",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c07.wav",
+      "duration": 2.5333,
+      "envelope": [
+       0.003,
+       0.003,
+       0.029,
+       0.625,
+       0.963,
+       0.956,
+       0.909,
+       0.159,
+       0.042,
+       0.717,
+       0.945,
+       0.845,
+       1,
+       0.92,
+       0.244,
+       0.736,
+       0.965,
+       0.674,
+       0.579,
+       0.699,
+       0.763,
+       0.652,
+       0.794,
+       0.679,
+       0.703,
+       0.59,
+       0.15,
+       0.073,
+       0.477,
+       0.491,
+       0.497,
+       0.417,
+       0.474,
+       0.568,
+       0.46,
+       0.412,
+       0.415,
+       0.503,
+       0.647,
+       0.46,
+       0.057,
+       0.016,
+       0.012,
+       0.305,
+       0.464,
+       0.534,
+       0.431,
+       0.412,
+       0.465,
+       0.442,
+       0.536,
+       0.617,
+       0.575,
+       0.468,
+       0.308,
+       0.047,
+       0.013,
+       0.367,
+       0.93,
+       0.757,
+       0.294,
+       0.018,
+       0.035,
+       0.113,
+       0.515,
+       0.694,
+       0.712,
+       0.717,
+       0.495,
+       0.385,
+       0.171,
+       0.017,
+       0.004,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Tested at once, rereaders did better",
+    "start": 0.041,
+    "segments": [
+     {
+      "text": "Tested at once, rereaders did better",
+      "start": 0.041,
+      "end": 2.483,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 1.793
+    }
+   ],
+   "props": [
+    {
+     "kind": "plate",
+     "x": 0,
+     "y": 0,
+     "src": "mg/c04v18-b03.mp4",
+     "from": 2.1
+    },
+    {
+     "kind": "tag",
+     "text": "Roediger & Karpicke 2006",
+     "x": 540,
+     "y": 1330,
+     "at": -1.0
+    }
+   ]
+  },
+  {
+   "id": "b03c",
+   "beat": "clip-04.b03",
+   "duration": 2.933,
+   "background": {
+    "kind": "plate"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhưng **hai ngày sau**, nhóm tự kiểm tra lại nhớ hơn hẳn.",
+     "start": 0.0,
+     "end": 2.933,
+     "emotion": "surprised",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c08.wav",
+      "duration": 2.9333,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.002,
+       0.261,
+       0.678,
+       0.674,
+       0.67,
+       0.906,
+       1,
+       0.904,
+       0.679,
+       0.664,
+       0.83,
+       0.686,
+       0.673,
+       0.606,
+       0.466,
+       0.372,
+       0.478,
+       0.665,
+       0.709,
+       0.668,
+       0.757,
+       0.751,
+       0.258,
+       0.037,
+       0.007,
+       0.004,
+       0.002,
+       0.003,
+       0.215,
+       0.429,
+       0.57,
+       0.523,
+       0.381,
+       0.182,
+       0.012,
+       0.516,
+       0.593,
+       0.524,
+       0.242,
+       0.039,
+       0.042,
+       0.354,
+       0.524,
+       0.37,
+       0.337,
+       0.267,
+       0.031,
+       0.392,
+       0.54,
+       0.488,
+       0.479,
+       0.415,
+       0.373,
+       0.448,
+       0.361,
+       0.343,
+       0.322,
+       0.373,
+       0.382,
+       0.493,
+       0.505,
+       0.467,
+       0.441,
+       0.482,
+       0.592,
+       0.629,
+       0.48,
+       0.344,
+       0.326,
+       0.349,
+       0.376,
+       0.339,
+       0.255,
+       0.247,
+       0.266,
+       0.247,
+       0.23,
+       0.101,
+       0.005,
+       0.001,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Two days later, self-testing remembered more",
+    "start": 0.128,
+    "segments": [
+     {
+      "text": "Two days later, self-testing remembered more",
+      "start": 0.128,
+      "end": 2.883,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "rise",
+     "at": 1.058
+    }
+   ],
+   "props": [
+    {
+     "kind": "plate",
+     "x": 0,
+     "y": 0,
+     "src": "mg/c04v18-b03.mp4",
+     "from": 4.6333
+    },
+    {
+     "kind": "tag",
+     "text": "Roediger & Karpicke 2006",
+     "x": 540,
+     "y": 1330,
+     "at": -1.0
+    },
+    {
+     "kind": "tag",
+     "text": "+2 ngày",
+     "x": 830,
+     "y": 300,
+     "at": 1.028,
+     "style": "word",
+     "size": 52
+    }
+   ]
+  },
+  {
+   "id": "b04",
+   "beat": "clip-04.b04",
+   "duration": 3.3,
+   "background": {
+    "kind": "paper"
+   },
+   "camera": {
+    "framing": "closeup",
+    "push": 0.18
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình cần là **sáng hôm sau**, gấp sách lại mình vẫn viết ra được.",
+     "start": 0.0,
+     "end": 3.3,
+     "emotion": "focused",
+     "bubble": true,
+     "anchor": [
+      600,
+      560
+     ],
+     "audio": {
+      "src": "voice/c04v18-c09.wav",
+      "duration": 3.3,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.166,
+       0.52,
+       0.731,
+       0.591,
+       0.584,
+       0.243,
+       0.029,
+       0.316,
+       0.706,
+       0.578,
+       0.572,
+       0.519,
+       0.493,
+       0.529,
+       0.521,
+       0.477,
+       0.592,
+       0.508,
+       0.314,
+       0.315,
+       0.701,
+       0.568,
+       0.688,
+       0.603,
+       0.613,
+       0.726,
+       1,
+       0.88,
+       0.667,
+       0.722,
+       0.618,
+       0.323,
+       0.44,
+       0.414,
+       0.726,
+       0.591,
+       0.652,
+       0.638,
+       0.394,
+       0.232,
+       0.038,
+       0.004,
+       0.004,
+       0.003,
+       0.07,
+       0.305,
+       0.788,
+       0.457,
+       0.027,
+       0.066,
+       0.135,
+       0.187,
+       0.414,
+       0.55,
+       0.098,
+       0.011,
+       0.026,
+       0.267,
+       0.435,
+       0.38,
+       0.386,
+       0.378,
+       0.48,
+       0.536,
+       0.49,
+       0.38,
+       0.357,
+       0.222,
+       0.295,
+       0.503,
+       0.342,
+       0.329,
+       0.27,
+       0.193,
+       0.639,
+       0.439,
+       0.086,
+       0.022,
+       0.039,
+       0.4,
+       0.57,
+       0.508,
+       0.369,
+       0.232,
+       0.571,
+       0.525,
+       0.424,
+       0.261,
+       0.027,
+       0.009,
+       0.003,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Goal: book closed next morning, still recall",
+    "start": 0.134,
+    "segments": [
+     {
+      "text": "Goal: book closed next morning, still recall",
+      "start": 0.134,
+      "end": 3.25,
+      "highlight": [
+       2
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "tick",
+     "at": 2.512
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "night"
+      ],
+      [
+       0.712,
+       "day"
+      ]
+     ],
+     "wx": 70,
+     "wy": 560,
+     "ww": 220,
+     "wh": 200
+    },
+    {
+     "kind": "tome",
+     "x": 200,
+     "y": 1405,
+     "s": 0.6,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 600,
+     "y": 1070,
+     "s": 1.1,
+     "rows": [
+      [
+       0,
+       -1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       2,
+       -1
+      ],
+      [
+       3,
+       -1
+      ]
+     ],
+     "focus": {
+      "row": 4,
+      "at": 0.712
+     },
+     "ghost": {
+      "row": 4,
+      "at": 2.512
+     }
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 28,
+     "len": 230,
+     "keys": [
+      [
+       0,
+       790,
+       1330
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b05a",
+   "beat": "clip-04.b05",
+   "duration": 3.133,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "focused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "focused"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên mình chia ba mươi từ thành **ba phần**, mỗi phần mười từ.",
+     "start": 0.0,
+     "end": 3.133,
+     "emotion": "focused",
+     "bubble": true,
+     "audio": {
+      "src": "voice/c04v18-c10.wav",
+      "duration": 3.1333,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.001,
+       0.267,
+       0.663,
+       0.862,
+       0.627,
+       0.717,
+       0.659,
+       0.638,
+       0.654,
+       0.577,
+       0.483,
+       0.324,
+       0.037,
+       0.038,
+       0.248,
+       0.708,
+       1,
+       0.416,
+       0.501,
+       0.651,
+       0.643,
+       0.557,
+       0.537,
+       0.586,
+       0.605,
+       0.684,
+       0.672,
+       0.616,
+       0.406,
+       0.024,
+       0.229,
+       0.651,
+       0.509,
+       0.101,
+       0.268,
+       0.454,
+       0.842,
+       0.801,
+       0.823,
+       0.656,
+       0.707,
+       0.75,
+       0.833,
+       0.533,
+       0.083,
+       0.125,
+       0.847,
+       0.923,
+       0.843,
+       0.913,
+       0.799,
+       0.716,
+       0.168,
+       0.021,
+       0.005,
+       0.004,
+       0.001,
+       0.007,
+       0.278,
+       0.541,
+       0.751,
+       0.808,
+       0.519,
+       0.048,
+       0.072,
+       0.599,
+       0.518,
+       0.469,
+       0.475,
+       0.475,
+       0.531,
+       0.664,
+       0.604,
+       0.487,
+       0.251,
+       0.023,
+       0.047,
+       0.589,
+       0.587,
+       0.5,
+       0.483,
+       0.415,
+       0.278,
+       0.076,
+       0.01,
+       0.004,
+       0.006,
+       0.002,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Thirty words, three parts of ten",
+    "start": 0.154,
+    "segments": [
+     {
+      "text": "Thirty words, three parts of ten",
+      "start": 0.154,
+      "end": 3.083,
+      "highlight": [
+       2
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 1.385
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
+    },
+    {
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 140,
+     "y": 1362,
+     "s": 0.45,
+     "closedDy": 84,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "deck",
+     "x": 390,
+     "y": 1350,
+     "s": 0.5,
+     "spillAt": 0.705,
+     "splitAt": 1.385
+    }
+   ]
+  },
+  {
+   "id": "b05b",
+   "beat": "clip-04.b05",
+   "duration": 2.667,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "focused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "focused"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Học hết phần nào, mình **gấp sách** viết lại phần đó,",
+     "start": 0.0,
+     "end": 2.667,
+     "emotion": "focused",
+     "bubble": true,
+     "audio": {
+      "src": "voice/c04v18-c11.wav",
+      "duration": 2.6667,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.001,
+       0.035,
+       0.424,
+       0.669,
+       0.263,
+       0.04,
+       0.026,
+       0.046,
+       0.236,
+       0.473,
+       0.644,
+       0.101,
+       0.025,
+       0.033,
+       0.449,
+       0.7,
+       0.512,
+       0.497,
+       0.532,
+       0.511,
+       0.609,
+       0.531,
+       0.456,
+       0.599,
+       0.623,
+       0.339,
+       0.068,
+       0.018,
+       0.01,
+       0.004,
+       0.002,
+       0.036,
+       0.572,
+       0.874,
+       0.906,
+       1,
+       0.903,
+       0.784,
+       0.96,
+       0.194,
+       0.098,
+       0.314,
+       0.461,
+       0.804,
+       0.596,
+       0.03,
+       0.015,
+       0.114,
+       0.535,
+       0.676,
+       0.223,
+       0.019,
+       0.17,
+       0.448,
+       0.523,
+       0.412,
+       0.412,
+       0.424,
+       0.334,
+       0.059,
+       0.028,
+       0.362,
+       0.471,
+       0.338,
+       0.34,
+       0.283,
+       0.349,
+       0.594,
+       0.503,
+       0.551,
+       0.398,
+       0.209,
+       0.314,
+       0.292,
+       0.165,
+       0.01,
+       0.006
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Finish a part, close the book, write",
+    "start": 0.111,
+    "segments": [
+     {
+      "text": "Finish a part, close the book, write",
+      "start": 0.111,
+      "end": 2.617,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "snap",
+     "at": 1.245
+    },
+    {
+     "name": "pen",
+     "at": 1.645
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
+    },
+    {
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 140,
+     "y": 1362,
+     "s": 0.45,
+     "closedDy": 84,
+     "keys": [
+      [
+       0,
+       "open"
+      ],
+      [
+       1.245,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "deck",
+     "x": 390,
+     "y": 1350,
+     "s": 0.5,
+     "spillAt": -5,
+     "splitAt": -2,
+     "tickAt": 2.285
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 18,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       560,
+       1420
+      ],
+      [
+       1.645,
+       238,
+       1300
+      ],
+      [
+       1.845,
+       292,
+       1300
+      ],
+      [
+       1.945,
+       238,
+       1306
+      ],
+      [
+       2.145,
+       292,
+       1306
+      ],
+      [
+       2.245,
+       238,
+       1312
+      ],
+      [
+       2.4450000000000003,
+       290,
+       1312
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b05c",
+   "beat": "clip-04.b05",
+   "duration": 1.533,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.76,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "confused"
+      }
+     ],
+     "actionChanges": []
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "chỗ nào bí mình mới **mở sách**.",
+     "start": 0.0,
+     "end": 1.533,
+     "emotion": "confused",
+     "bubble": true,
+     "audio": {
+      "src": "voice/c04v18-c12.wav",
+      "duration": 1.5333,
+      "envelope": [
+       0.01,
+       0.0,
+       0.011,
+       0.618,
+       1,
+       0.983,
+       0.554,
+       0.481,
+       0.685,
+       0.673,
+       0.657,
+       0.719,
+       0.655,
+       0.266,
+       0.511,
+       0.922,
+       0.594,
+       0.528,
+       0.663,
+       0.796,
+       0.679,
+       0.557,
+       0.575,
+       0.549,
+       0.591,
+       0.595,
+       0.626,
+       0.544,
+       0.594,
+       0.459,
+       0.573,
+       0.658,
+       0.584,
+       0.512,
+       0.418,
+       0.278,
+       0.232,
+       0.268,
+       0.622,
+       0.697,
+       0.155,
+       0.013,
+       0.006,
+       0.013,
+       0.006,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Stuck? Only then open the book",
+    "start": 0.054,
+    "segments": [
+     {
+      "text": "Stuck? Only then open the book",
+      "start": 0.054,
+      "end": 1.483,
+      "highlight": [
+       3
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pop",
+     "at": 0.935
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
+    },
+    {
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 140,
+     "y": 1362,
+     "s": 0.45,
+     "closedDy": 84,
+     "keys": [
+      [
+       0,
+       "closed"
+      ],
+      [
+       0.935,
+       "open"
+      ],
+      [
+       1.685,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "deck",
+     "x": 390,
+     "y": 1350,
+     "s": 0.5,
+     "spillAt": -5,
+     "splitAt": -2,
+     "tickAt": -1
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 12,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       560,
+       1420
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b06a",
+   "beat": "clip-04.b06",
+   "duration": 2.8,
+   "background": {
+    "kind": "plate"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhóm của Yang tổng hợp 222 nghiên cứu,",
+     "start": 0.0,
+     "end": 2.8,
+     "emotion": "focused",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c13.wav",
+      "duration": 2.8,
+      "envelope": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.002,
+       0.372,
+       0.689,
+       0.86,
+       0.775,
+       0.641,
+       0.541,
+       0.505,
+       0.345,
+       0.018,
+       0.389,
+       1,
+       0.707,
+       0.225,
+       0.823,
+       0.778,
+       0.641,
+       0.519,
+       0.378,
+       0.063,
+       0.062,
+       0.528,
+       0.516,
+       0.235,
+       0.394,
+       0.444,
+       0.487,
+       0.648,
+       0.619,
+       0.593,
+       0.325,
+       0.021,
+       0.046,
+       0.064,
+       0.18,
+       0.472,
+       0.625,
+       0.606,
+       0.684,
+       0.649,
+       0.132,
+       0.025,
+       0.502,
+       0.67,
+       0.443,
+       0.442,
+       0.312,
+       0.324,
+       0.451,
+       0.498,
+       0.633,
+       0.548,
+       0.511,
+       0.646,
+       0.69,
+       0.602,
+       0.513,
+       0.343,
+       0.387,
+       0.5,
+       0.549,
+       0.462,
+       0.466,
+       0.452,
+       0.609,
+       0.535,
+       0.387,
+       0.123,
+       0.094,
+       0.528,
+       0.791,
+       0.759,
+       0.674,
+       0.499,
+       0.423,
+       0.318,
+       0.058,
+       0.007,
+       0.005
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Yang 2021: 222 studies combined",
+    "start": 0.161,
+    "segments": [
+     {
+      "text": "Yang 2021: 222 studies combined",
+      "start": 0.161,
+      "end": 2.75,
+      "highlight": [
+       2
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "ding",
+     "at": 0.584
+    }
+   ],
+   "props": [
+    {
+     "kind": "plate",
+     "x": 0,
+     "y": 0,
+     "src": "mg/c04v18-b06.mp4",
+     "from": 0.0
+    },
+    {
+     "kind": "tag",
+     "text": "Yang et al. 2021",
+     "x": 540,
+     "y": 1330,
+     "at": 0.584
+    }
+   ]
+  },
+  {
+   "id": "b06b",
+   "beat": "clip-04.b06",
+   "duration": 4.567,
+   "background": {
+    "kind": "plate"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "thấy lớp có kiểm tra nhỏ thì điểm **cao hơn** lớp không làm kiểm tra nhỏ, ở mức vừa.",
+     "start": 0.0,
+     "end": 4.567,
+     "emotion": "focused",
+     "bubble": false,
+     "audio": {
+      "src": "voice/c04v18-c14.wav",
+      "duration": 4.5667,
+      "envelope": [
+       0.003,
+       0.003,
+       0.01,
+       0.167,
+       0.9,
+       0.869,
+       1,
+       0.88,
+       0.787,
+       0.938,
+       0.821,
+       0.697,
+       0.046,
+       0.015,
+       0.008,
+       0.202,
+       0.686,
+       0.451,
+       0.025,
+       0.01,
+       0.503,
+       0.702,
+       0.629,
+       0.457,
+       0.409,
+       0.239,
+       0.088,
+       0.625,
+       0.707,
+       0.618,
+       0.66,
+       0.505,
+       0.432,
+       0.646,
+       0.62,
+       0.582,
+       0.585,
+       0.521,
+       0.432,
+       0.35,
+       0.355,
+       0.24,
+       0.058,
+       0.007,
+       0.046,
+       0.551,
+       0.695,
+       0.348,
+       0.646,
+       0.79,
+       0.568,
+       0.433,
+       0.54,
+       0.388,
+       0.023,
+       0.569,
+       0.802,
+       0.675,
+       0.772,
+       0.774,
+       0.81,
+       0.984,
+       0.945,
+       0.797,
+       0.679,
+       0.535,
+       0.603,
+       0.877,
+       0.725,
+       0.058,
+       0.016,
+       0.014,
+       0.116,
+       0.409,
+       0.782,
+       0.483,
+       0.541,
+       0.421,
+       0.573,
+       0.581,
+       0.524,
+       0.429,
+       0.227,
+       0.032,
+       0.105,
+       0.655,
+       0.569,
+       0.5,
+       0.442,
+       0.101,
+       0.097,
+       0.64,
+       0.647,
+       0.59,
+       0.554,
+       0.517,
+       0.502,
+       0.668,
+       0.65,
+       0.543,
+       0.596,
+       0.609,
+       0.572,
+       0.437,
+       0.329,
+       0.143,
+       0.023,
+       0.004,
+       0.0,
+       0.003,
+       0.004,
+       0.263,
+       0.512,
+       0.598,
+       0.598,
+       0.745,
+       0.799,
+       0.275,
+       0.018,
+       0.007,
+       0.079,
+       0.191,
+       0.333,
+       0.833,
+       0.925,
+       0.917,
+       0.846,
+       0.843,
+       0.751,
+       0.523,
+       0.166,
+       0.014,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "Quizzed classes scored moderately higher",
+    "start": 0.062,
+    "segments": [
+     {
+      "text": "Quizzed classes scored moderately higher",
+      "start": 0.062,
+      "end": 4.517,
       "highlight": [
        4
       ]
@@ -125,37 +2803,37 @@
    },
    "sfx": [
     {
-     "name": "swish",
-     "at": 0.32
+     "name": "rise",
+     "at": 1.713
     }
    ],
    "props": [
     {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "open"
+     "kind": "plate",
+     "x": 0,
+     "y": 0,
+     "src": "mg/c04v18-b06.mp4",
+     "from": 2.8
     },
     {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 0
+     "kind": "tag",
+     "text": "Yang et al. 2021",
+     "x": 540,
+     "y": 1330,
+     "at": -1.0
     }
    ]
   },
   {
-   "id": "b01b",
-   "beat": "clip-04.b02",
-   "duration": 4.662,
+   "id": "b07a",
+   "beat": "clip-04.b07",
+   "duration": 1.5,
    "background": {
-    "kind": "desk"
+    "kind": "room"
    },
    "camera": {
     "framing": "medium",
-    "push": 0.14
+    "push": 0.04
    },
    "transition": {
     "type": "cut",
@@ -164,2283 +2842,718 @@
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.72,
+     "x": 0.76,
      "pose": "sitting",
      "action": "idle",
-     "expression": "despair",
+     "expression": "neutral",
      "facing": "left",
      "enter": "none",
-     "expressionChanges": [],
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "neutral"
+      }
+     ],
      "actionChanges": []
     }
    ],
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Không đâu, bạn đọc cả tối mà đầu vẫn **trống** — vì bạn có **nhớ gì đâu** mà quên.",
-     "start": 0.02,
-     "end": 4.662,
-     "emotion": "sad",
+     "text": "Sáng hôm sau, sách vẫn gấp,",
+     "start": 0.0,
+     "end": 1.5,
+     "emotion": "neutral",
+     "bubble": true,
      "audio": {
-      "src": "voice/c04v1-b01b.wav",
-      "duration": 4.582,
+      "src": "voice/c04v18-c15.wav",
+      "duration": 1.5,
       "envelope": [
        0.0,
-       0.001,
-       0.017,
-       0.08,
-       0.695,
-       0.556,
-       0.455,
-       0.434,
-       0.663,
-       1,
-       1,
-       0.984,
-       0.621,
-       0.385,
+       0.0,
+       0.0,
+       0.0,
+       0.008,
        0.085,
-       0.009,
-       0.004,
-       0.002,
-       0.002,
-       0.002,
-       0.002,
-       0.076,
-       0.684,
-       0.737,
-       0.498,
-       0.385,
-       0.233,
-       0.642,
-       0.426,
-       0.052,
-       0.013,
-       0.008,
-       0.239,
-       0.558,
-       0.442,
-       0.442,
-       0.208,
-       0.011,
-       0.049,
-       0.467,
-       0.519,
-       0.602,
-       0.546,
-       0.401,
-       0.384,
-       0.244,
-       0.166,
-       0.171,
-       0.327,
-       0.405,
-       0.541,
-       0.462,
-       0.181,
-       0.621,
-       0.63,
-       0.643,
-       0.483,
-       0.266,
-       0.121,
-       0.409,
-       0.34,
-       0.311,
-       0.496,
-       0.287,
-       0.019,
-       0.119,
-       0.478,
-       0.531,
-       0.449,
-       0.308,
-       0.24,
-       0.235,
-       0.275,
-       0.209,
-       0.089,
-       0.006,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.067,
        0.199,
-       0.721,
-       1,
-       1,
-       0.28,
-       0.661,
-       0.825,
-       0.74,
-       0.529,
-       0.421,
-       0.332,
-       0.123,
-       0.2,
-       0.507,
-       0.426,
-       0.524,
-       0.56,
-       0.552,
-       0.422,
-       0.568,
-       0.585,
-       0.253,
-       0.114,
-       0.222,
-       0.758,
-       0.535,
-       0.67,
-       0.535,
-       0.236,
-       0.683,
-       0.74,
-       0.571,
-       0.645,
-       0.512,
-       0.454,
-       0.475,
-       0.588,
-       0.441,
-       0.098,
-       0.012,
-       0.016,
-       0.504,
-       1,
-       1,
-       1,
-       0.88,
-       0.607,
-       0.474,
-       0.272,
-       0.078,
-       0.007,
-       0.004,
-       0.0,
-       0.0,
-       0.0
-      ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "No — you read all night and your head is still empty, because you never actually remembered it in the first place.",
-    "start": 0.07,
-    "segments": [
-     {
-      "text": "No — you read all night and your head is still empty, because you never actually remembered it in the first place.",
-      "start": 0.07,
-      "end": 4.612,
-      "highlight": [
-       11,
-       16
-      ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "snap",
-     "at": 0.02
-    },
-    {
-     "name": "stamp",
-     "at": 1.92
-    }
-   ],
-   "props": [
-    {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "closed"
-    },
-    {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 0
-    }
-   ]
-  },
-  {
-   "id": "b02",
-   "beat": "clip-04.b03",
-   "duration": 7.212,
-   "background": {
-    "kind": "desk"
-   },
-   "camera": {
-    "framing": "medium",
-    "push": 0.06
-   },
-   "transition": {
-    "type": "cut",
-    "duration": 0.4
-   },
-   "characters": [
-    {
-     "characterId": "hiep",
-     "x": 0.72,
-     "pose": "sitting",
-     "action": "talking",
-     "expression": "confused",
-     "facing": "left",
-     "enter": "none",
-     "expressionChanges": [],
-     "actionChanges": []
-    }
-   ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Nghe vậy có tức không? Như ôn thi hay học tiếng Anh, mình đọc đi đọc lại, gạch chi chít, mà chữ vẫn **chưa vô đầu**.",
-     "start": 0.15,
-     "end": 7.212,
-     "emotion": "focused",
-     "audio": {
-      "src": "voice/c04v1-b02.wav",
-      "duration": 6.812,
-      "envelope": [
-       0.0,
-       0.0,
-       0.11,
-       0.624,
-       1,
-       1,
-       1,
-       0.372,
-       0.181,
-       0.881,
-       0.821,
-       0.717,
-       0.762,
-       0.415,
-       0.039,
-       0.254,
-       0.624,
-       0.418,
-       0.019,
-       0.376,
-       1,
-       0.177,
-       0.015,
-       0.008,
-       0.197,
-       0.422,
-       0.704,
-       0.709,
-       0.525,
-       0.503,
-       0.31,
-       0.037,
-       0.004,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.003,
-       0.525,
-       1,
-       1,
-       0.822,
-       0.723,
-       0.702,
-       1,
-       0.788,
-       0.607,
-       0.552,
-       0.127,
-       0.26,
-       0.745,
-       0.83,
-       0.855,
-       0.667,
-       0.484,
-       0.459,
-       0.506,
-       0.49,
-       0.517,
-       0.532,
-       0.519,
-       0.625,
-       0.199,
-       0.023,
-       0.006,
-       0.005,
-       0.334,
-       0.788,
-       0.634,
-       0.368,
-       0.246,
-       0.203,
-       0.542,
-       0.76,
-       0.622,
-       0.569,
-       0.554,
-       0.457,
-       0.204,
-       0.014,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.006,
-       0.431,
-       0.924,
-       0.959,
-       0.85,
-       0.802,
-       0.39,
-       1,
-       0.979,
-       0.49,
-       0.032,
-       0.01,
-       0.171,
-       0.442,
-       1,
-       0.845,
-       0.474,
-       0.368,
-       0.941,
-       0.656,
-       0.152,
-       0.015,
-       0.057,
-       0.356,
-       0.565,
-       0.719,
-       0.597,
-       0.682,
-       0.583,
-       0.583,
-       0.508,
-       0.291,
-       0.012,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.002,
-       0.137,
-       0.592,
-       1,
-       0.666,
-       0.032,
-       0.002,
-       0.001,
-       0.002,
-       0.044,
-       0.453,
-       0.835,
-       0.681,
-       0.204,
-       0.043,
-       0.062,
-       0.527,
-       0.977,
-       0.986,
-       0.357,
-       0.022,
-       0.001,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.303,
-       0.747,
-       0.926,
-       0.589,
-       0.051,
-       0.038,
-       0.558,
-       0.743,
-       0.686,
-       0.438,
-       0.227,
-       0.741,
-       0.683,
-       0.462,
-       0.648,
-       0.607,
-       0.224,
-       0.018,
-       0.063,
-       0.397,
-       0.41,
-       0.318,
-       0.375,
-       0.406,
-       0.433,
-       0.235,
-       0.136,
-       0.304,
-       0.639,
-       0.994,
-       1,
-       0.792,
-       0.574,
-       0.444,
-       0.65,
-       0.801,
-       0.766,
-       0.703,
-       0.684,
-       0.572,
-       0.427,
-       0.24,
-       0.062,
-       0.01,
-       0.006,
-       0.0,
-       0.0,
-       0.0
-      ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "Stings to hear that, doesn't it? Exam prep, English — rereading and highlighting everything, and it still won't stick.",
-    "start": 0.2,
-    "segments": [
-     {
-      "text": "Stings to hear that, doesn't it? Exam prep, English — rereading and highlighting everything, and it still won't stick.",
-      "start": 0.2,
-      "end": 7.162,
-      "highlight": [
-       0,
-       18
-      ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "swish",
-     "at": 3.45
-    },
-    {
-     "name": "pop",
-     "at": 4.75
-    },
-    {
-     "name": "tick",
-     "at": 6.35
-    }
-   ],
-   "props": [
-    {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "open",
-     "flipAt": 3.3
-    },
-    {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 0
-    }
-   ]
-  },
-  {
-   "id": "b03",
-   "beat": "clip-04.b04",
-   "duration": 8.578,
-   "background": {
-    "kind": "desk"
-   },
-   "camera": {
-    "framing": "medium",
-    "push": 0
-   },
-   "transition": {
-    "type": "cut",
-    "duration": 0.4
-   },
-   "characters": [
-    {
-     "characterId": "hiep",
-     "x": 0.72,
-     "pose": "standing",
-     "action": "talking",
-     "expression": "confused",
-     "facing": "left",
-     "enter": "none",
-     "expressionChanges": [],
-     "actionChanges": []
-    }
-   ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Vậy tại mình đọc chưa đủ hả? Không hẳn đâu. Đọc lại chỉ làm mắt **quen mặt chữ**, thấy quen nên tưởng thuộc, chứ chưa tự nhớ lại lần nào.",
-     "start": 0.15,
-     "end": 8.578,
-     "emotion": "confused",
-     "audio": {
-      "src": "voice/c04v1-b03.wav",
-      "duration": 8.178,
-      "envelope": [
-       0.0,
-       0.002,
-       0.092,
-       0.938,
-       1,
-       0.822,
-       0.221,
-       0.02,
-       0.359,
-       0.814,
-       0.856,
-       0.742,
-       0.699,
-       0.57,
-       0.688,
-       0.821,
-       0.682,
-       0.563,
-       0.56,
-       0.442,
-       0.355,
-       1,
-       0.985,
-       0.362,
-       0.039,
-       0.01,
-       0.008,
-       0.005,
-       0.067,
-       0.78,
-       1,
-       1,
-       1,
-       0.373,
-       1,
-       0.986,
-       0.653,
-       0.691,
-       0.74,
-       0.724,
-       0.509,
-       0.596,
-       0.631,
-       0.658,
-       0.483,
-       0.432,
-       0.404,
-       0.301,
-       0.044,
-       0.006,
-       0.003,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.004,
-       0.037,
-       0.64,
-       1,
-       0.832,
-       0.568,
-       0.578,
-       0.599,
-       0.511,
-       0.446,
-       0.356,
-       0.391,
-       0.442,
-       0.439,
-       0.661,
-       0.942,
-       0.915,
-       0.768,
-       0.589,
-       0.28,
-       0.04,
-       0.006,
-       0.003,
-       0.002,
-       0.001,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.086,
-       0.803,
-       1,
-       0.556,
-       0.04,
-       0.219,
-       0.728,
-       0.935,
-       0.978,
-       0.873,
-       0.743,
-       0.432,
-       0.044,
-       0.024,
-       0.384,
-       0.709,
-       0.71,
-       0.592,
-       0.702,
-       0.855,
-       0.793,
-       0.574,
-       0.433,
-       0.414,
-       0.561,
-       0.425,
-       0.047,
-       0.008,
-       0.004,
-       0.098,
-       0.466,
-       0.604,
-       0.529,
-       0.331,
-       0.212,
-       0.198,
-       0.159,
-       0.691,
-       0.642,
-       0.219,
-       0.038,
-       0.013,
-       0.005,
-       0.006,
-       0.142,
-       0.48,
-       0.635,
-       0.614,
-       0.543,
-       0.432,
-       0.469,
-       0.479,
-       0.538,
-       0.458,
-       0.293,
-       0.06,
-       0.007,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.068,
-       0.533,
-       0.965,
-       0.725,
-       0.091,
-       0.018,
-       0.1,
-       0.985,
-       0.901,
-       0.787,
-       0.719,
-       0.603,
-       0.614,
-       0.616,
-       0.805,
-       0.804,
-       0.573,
-       0.463,
-       0.083,
-       0.013,
-       0.53,
-       0.976,
-       0.695,
-       0.493,
-       0.327,
-       0.498,
-       0.267,
-       0.093,
-       0.53,
-       0.722,
-       1,
-       0.817,
-       0.129,
-       0.031,
-       0.007,
-       0.003,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.063,
-       0.723,
-       0.88,
-       0.29,
-       0.013,
-       0.222,
-       1,
-       1,
-       0.692,
-       0.036,
-       0.121,
-       1,
-       0.811,
+       0.779,
        0.701,
-       0.638,
-       0.6,
-       0.488,
-       0.752,
-       0.829,
-       0.76,
-       0.735,
-       0.794,
-       0.716,
-       0.699,
-       0.756,
-       0.785,
-       0.782,
-       0.908,
-       1,
-       0.606,
-       0.579,
-       0.573,
-       0.522,
-       0.556,
-       0.73,
-       0.732,
-       0.72,
-       0.723,
-       0.576,
-       0.328,
-       0.135,
-       0.012,
-       0.006,
-       0.005,
-       0.01,
-       0.0,
-       0.0,
-       0.0
-      ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "Is it because you didn't read enough? Not really — rereading only makes your eyes recognise the page. Familiar feels like learned, but you never had to recall it.",
-    "start": 0.2,
-    "segments": [
-     {
-      "text": "Is it because you didn't read enough? Not really — rereading only makes your eyes recognise the page. Familiar feels like learned, but you never had to recall it.",
-      "start": 0.2,
-      "end": 8.528,
-      "highlight": [
-       6,
-       15,
-       27
-      ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "swish",
-     "at": 3.55
-    },
-    {
-     "name": "snap",
-     "at": 7.05
-    }
-   ],
-   "props": [
-    {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "open",
-     "flipAt": 3.4,
-     "closeAt": 6.9
-    },
-    {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 0
-    }
-   ]
-  },
-  {
-   "id": "b04",
-   "beat": "clip-04.b05",
-   "duration": 10.075,
-   "background": {
-    "kind": "desk"
-   },
-   "camera": {
-    "framing": "medium",
-    "push": 0.06
-   },
-   "transition": {
-    "type": "cut",
-    "duration": 0.4
-   },
-   "characters": [
-    {
-     "characterId": "hiep",
-     "x": 0.72,
-     "pose": "standing",
-     "action": "talking",
-     "expression": "surprised",
-     "facing": "left",
-     "enter": "none",
-     "expressionChanges": [],
-     "actionChanges": []
-    }
-   ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Vậy sao biết mình **thuộc thiệt**? Yang và cộng sự gom **222 nghiên cứu**, hơn **48 ngàn** học sinh: có kiểm tra nhỏ thì điểm **cao hơn**, ở mức vừa.",
-     "start": 0.15,
-     "end": 10.075,
-     "emotion": "focused",
-     "audio": {
-      "src": "voice/c04v1-b04.wav",
-      "duration": 9.675,
-      "envelope": [
-       0.0,
-       0.001,
-       0.076,
-       0.399,
-       1,
-       1,
-       0.893,
-       0.61,
-       0.311,
-       0.292,
-       0.255,
-       0.574,
-       0.618,
-       0.673,
-       0.757,
-       0.762,
-       0.588,
-       0.273,
-       0.25,
-       0.767,
-       0.632,
-       0.151,
-       0.012,
-       0.429,
-       0.824,
-       0.866,
-       0.64,
-       0.535,
-       0.25,
-       0.146,
-       0.639,
-       0.737,
-       0.435,
-       0.076,
-       0.032,
-       0.008,
-       0.054,
-       0.308,
-       0.648,
-       1,
-       1,
-       1,
-       1,
-       0.531,
-       0.045,
-       0.014,
-       0.005,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.002,
-       0.221,
-       0.708,
-       1,
-       1,
-       1,
-       0.86,
-       0.635,
-       0.587,
-       0.414,
-       0.271,
-       0.847,
-       0.773,
-       0.234,
-       0.017,
-       0.19,
-       0.617,
-       0.515,
-       0.426,
-       0.477,
-       0.217,
-       0.236,
-       0.373,
-       0.687,
-       0.593,
-       0.287,
-       0.282,
-       0.904,
-       0.964,
-       0.599,
-       0.621,
-       0.551,
-       0.414,
-       0.338,
-       0.33,
-       0.473,
-       0.609,
-       0.686,
-       0.681,
-       0.678,
-       0.561,
-       0.205,
-       0.026,
-       0.069,
-       0.524,
-       0.677,
-       0.604,
-       0.465,
-       0.492,
-       0.407,
-       0.444,
-       0.388,
-       0.445,
-       0.578,
-       0.64,
-       0.637,
-       0.571,
-       0.536,
-       0.632,
-       0.741,
-       0.728,
-       0.608,
-       0.554,
-       0.533,
-       0.487,
-       0.443,
-       0.656,
-       0.693,
-       0.619,
-       0.53,
-       0.42,
-       0.497,
-       0.69,
-       0.667,
-       0.627,
-       0.581,
-       0.472,
-       0.132,
-       0.023,
-       0.104,
-       0.48,
-       0.476,
-       0.525,
-       0.704,
-       0.558,
-       0.721,
-       0.58,
-       0.641,
-       0.608,
-       0.518,
-       0.12,
-       0.018,
-       0.006,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.008,
-       0.093,
-       0.766,
-       1,
-       0.947,
-       0.636,
-       0.625,
-       0.461,
-       0.915,
-       1,
-       0.846,
-       0.446,
-       0.573,
-       0.691,
-       0.978,
-       1,
-       1,
-       0.781,
-       0.109,
-       0.02,
-       0.241,
-       0.64,
-       0.493,
-       0.55,
-       0.457,
-       0.452,
-       0.49,
-       0.46,
-       0.409,
-       0.652,
-       0.745,
-       0.646,
-       0.461,
-       0.345,
-       0.387,
-       0.585,
-       0.475,
-       0.075,
-       0.054,
-       0.149,
-       0.236,
-       0.382,
-       0.966,
-       0.735,
-       0.765,
-       0.679,
-       0.431,
-       0.027,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.028,
-       0.553,
-       1,
-       0.524,
-       0.021,
-       0.065,
-       0.831,
-       1,
-       0.739,
-       0.606,
-       0.614,
-       0.247,
-       0.143,
-       0.699,
-       0.835,
-       0.668,
-       0.7,
-       0.577,
-       0.528,
-       0.582,
-       0.731,
-       0.678,
-       0.658,
-       0.741,
-       0.567,
-       0.486,
-       0.343,
-       0.014,
-       0.061,
-       0.532,
-       0.715,
-       0.737,
-       0.297,
-       0.445,
-       0.775,
-       0.756,
-       0.51,
-       0.439,
-       0.375,
-       0.121,
-       0.047,
-       0.303,
-       0.654,
-       0.783,
-       0.794,
-       0.789,
-       0.709,
-       0.584,
-       0.537,
-       0.702,
-       0.711,
-       0.772,
-       0.952,
-       1.0,
-       0.746,
-       0.532,
-       0.242,
-       0.198,
-       0.377,
-       0.545,
-       0.407,
-       0.576,
-       0.754,
-       0.486,
-       0.03,
-       0.009,
-       0.006,
-       0.006,
-       0.157,
-       0.594,
+       0.5,
+       0.616,
        0.872,
-       0.848,
-       0.79,
-       0.813,
-       0.605,
-       0.351,
-       0.101,
-       0.019,
-       0.002,
+       0.771,
+       0.516,
+       0.397,
+       0.259,
+       0.239,
        0.0,
        0.0,
-       0.0
+       0.0,
+       0.0,
+       0.0,
+       0.457,
+       0.687,
+       0.674,
+       0.724,
+       0.521,
+       0.283,
+       0.287,
+       0.339,
+       0.531,
+       0.034,
+       0.014,
+       0.074,
+       0.578,
+       0.618,
+       0.469,
+       0.454,
+       0.464,
+       0.278,
+       0.827,
+       1,
+       0.628,
+       0.028,
+       0.013
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
      }
     }
    ],
    "caption": {
-    "text": "So how do you know you really learned it? Yang et al. pooled 222 studies, over 48,000 students: classes with small quizzes scored higher — a medium effect.",
-    "start": 0.2,
+    "text": "Next morning, book still closed",
+    "start": 0.135,
     "segments": [
      {
-      "text": "So how do you know you really learned it? Yang et al. pooled 222 studies, over 48,000 students: classes with small quizzes scored higher — a medium effect.",
-      "start": 0.2,
-      "end": 10.025,
+      "text": "Next morning, book still closed",
+      "start": 0.135,
+      "end": 1.45,
       "highlight": [
-       6,
-       13,
-       16,
-       23
+       4
       ]
      }
     ]
    },
    "sfx": [
-    {
-     "name": "ding",
-     "at": 2.35
-    },
-    {
-     "name": "pop",
-     "at": 2.55
-    },
     {
      "name": "rise",
-     "at": 7.45
+     "at": 0
     }
    ],
    "props": [
     {
-     "kind": "sheet",
-     "x": 260,
-     "y": 1130,
-     "s": 0.65,
-     "inkLines": 0
-    },
-    {
-     "kind": "sheet",
-     "x": 290,
-     "y": 990,
-     "s": 0.65,
-     "inkLines": 0
-    },
-    {
-     "kind": "sheet",
-     "x": 265,
-     "y": 850,
-     "s": 0.65,
-     "inkLines": 0
-    },
-    {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 2,
-     "inkAt": 7.3
-    }
-   ]
-  },
-  {
-   "id": "b05",
-   "beat": "clip-04.b06",
-   "duration": 10.224,
-   "background": {
-    "kind": "grid"
-   },
-   "camera": {
-    "framing": "medium",
-    "push": 0
-   },
-   "transition": {
-    "type": "tdev-panel",
-    "duration": 0.4
-   },
-   "characters": [
-    {
-     "characterId": "hiep",
-     "x": 0.74,
-     "pose": "standing",
-     "action": "talking",
-     "expression": "focused",
-     "facing": "left",
-     "enter": "none",
-     "expressionChanges": [],
-     "actionChanges": []
-    }
-   ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Nghe kiểm tra, bạn nghĩ bài thi hả? Không, đó là tự kiểm lúc học. Dunlosky xếp **mười cách học**, cách này ở nhóm **cao nhất**, đọc lại, gạch chân ở nhóm **thấp nhất**.",
-     "start": 0.45,
-     "end": 10.224,
-     "emotion": "focused",
-     "audio": {
-      "src": "voice/c04v1-b05.wav",
-      "duration": 9.524,
-      "envelope": [
-       0.0,
-       0.001,
-       0.148,
-       0.641,
-       1,
-       1,
-       1,
-       0.1,
-       0.022,
-       0.338,
-       0.868,
-       0.519,
-       0.404,
-       0.521,
-       0.267,
-       0.118,
-       0.686,
-       0.818,
-       0.752,
-       0.76,
-       0.78,
-       0.641,
-       0.457,
-       0.138,
-       0.015,
-       0.006,
-       0.003,
-       0.007,
-       0.196,
-       0.872,
-       0.803,
-       0.636,
-       0.624,
-       0.606,
-       0.776,
-       0.799,
-       0.388,
-       0.477,
-       1,
-       0.894,
-       0.8,
-       0.447,
-       0.047,
-       0.352,
-       0.727,
-       0.796,
-       0.61,
-       0.544,
-       0.539,
-       0.559,
-       0.535,
-       0.56,
-       0.444,
-       0.365,
-       0.335,
-       0.304,
-       0.281,
-       0.064,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.012,
-       0.079,
-       0.527,
-       1,
-       1,
-       0.9,
-       0.61,
-       0.561,
-       0.454,
-       0.441,
-       0.289,
-       0.282,
-       0.841,
-       0.777,
-       0.683,
-       0.664,
-       0.841,
-       0.877,
-       0.631,
-       0.062,
-       0.015,
-       0.485,
-       0.998,
-       0.679,
-       0.197,
-       0.031,
-       0.072,
-       0.607,
-       0.89,
-       0.531,
-       0.464,
-       0.533,
-       0.735,
-       1,
-       0.797,
-       0.05,
-       0.029,
-       0.038,
-       0.422,
-       0.726,
-       1,
-       0.682,
-       0.073,
-       0.021,
-       0.012,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.121,
-       0.329,
-       1,
-       0.843,
-       0.662,
-       0.7,
-       0.842,
-       0.795,
-       0.954,
-       0.761,
-       0.258,
-       0.016,
-       0.006,
-       0.007,
-       0.338,
-       0.955,
-       1,
-       0.903,
-       0.441,
-       0.248,
-       0.319,
-       0.217,
-       0.75,
-       0.535,
-       0.058,
-       0.132,
-       0.869,
-       0.78,
-       0.776,
-       0.738,
-       0.673,
-       0.209,
-       0.026,
-       0.233,
-       0.538,
-       0.459,
-       0.127,
-       0.022,
-       0.069,
-       0.318,
-       0.382,
-       0.638,
-       0.92,
-       0.709,
-       0.19,
-       0.022,
-       0.015,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.002,
-       0.476,
-       1,
-       0.09,
-       0.024,
-       0.562,
-       0.488,
-       0.726,
-       0.864,
-       0.917,
-       0.857,
-       0.686,
-       0.392,
-       0.592,
-       0.656,
-       0.639,
-       0.509,
-       0.656,
-       0.785,
-       0.672,
-       0.455,
-       0.361,
-       0.271,
-       0.014,
-       0.011,
-       0.426,
-       0.629,
-       0.524,
-       0.513,
-       0.487,
-       0.434,
-       0.293,
-       0.273,
-       0.698,
-       0.897,
-       0.746,
-       0.706,
-       0.347,
-       0.019,
-       0.006,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.157,
-       0.703,
-       1,
-       0.54,
-       0.045,
-       0.033,
-       0.507,
-       0.707,
-       0.875,
-       0.878,
-       0.788,
-       0.681,
-       0.645,
-       0.578,
-       0.29,
-       0.053,
-       0.008,
-       0.006,
-       0.003,
-       0.002,
-       0.002,
-       0.003,
-       0.191,
-       0.839,
-       1,
-       0.497,
-       0.044,
-       0.011,
-       0.007,
-       0.066,
-       1,
-       1,
-       0.884,
-       0.656,
-       0.38,
-       0.276,
-       0.489,
-       0.747,
-       0.772,
-       0.501,
-       0.478,
-       0.622,
-       0.683,
-       0.595,
-       0.428,
-       0.549,
-       0.278,
-       0.048,
-       0.317,
-       0.601,
-       0.388,
-       0.043,
-       0.008,
-       0.031,
-       0.433,
-       0.699,
-       0.909,
-       0.657,
-       0.668,
-       0.252,
-       0.016,
-       0.008,
-       0.0,
-       0.0,
-       0.0
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "night"
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "Tests sound like exams, right? No — this is testing yourself while studying. Dunlosky ranked ten methods: self-testing in the top tier; rereading and highlighting in the bottom tier.",
-    "start": 0.5,
-    "segments": [
-     {
-      "text": "Tests sound like exams, right? No — this is testing yourself while studying. Dunlosky ranked ten methods: self-testing in the top tier; rereading and highlighting in the bottom tier.",
-      "start": 0.5,
-      "end": 10.174,
-      "highlight": [
-       3,
-       15,
-       20,
-       27
+      [
+       0.0,
+       "day"
       ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "pop",
-     "at": 0.95
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
     },
     {
-     "name": "tick",
-     "at": 4.85
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
     },
     {
-     "name": "ding",
-     "at": 6.55
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
     },
     {
-     "name": "tick",
-     "at": 8.05
-    }
-   ],
-   "props": [
-    {
-     "kind": "bundles",
-     "x": 270,
-     "y": 800,
-     "s": 0.6,
-     "count": 1,
-     "at": 1.95
+     "kind": "paper",
+     "x": 480,
+     "y": 1265,
+     "s": 0.45,
+     "rows": []
     },
     {
-     "kind": "book",
-     "x": 270,
-     "y": 1270,
-     "s": 0.6,
-     "state": "closed"
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 8,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       585,
+       1420
+      ]
+     ]
     }
    ]
   },
   {
-   "id": "b06",
+   "id": "b07b",
    "beat": "clip-04.b07",
-   "duration": 8.308,
+   "duration": 4.3,
    "background": {
-    "kind": "desk"
+    "kind": "paper"
    },
    "camera": {
-    "framing": "medium",
-    "push": 0.1
-   },
-   "transition": {
-    "type": "cut",
-    "duration": 0.4
-   },
-   "characters": [
-    {
-     "characterId": "hiep",
-     "x": 0.72,
-     "pose": "standing",
-     "action": "talking",
-     "expression": "focused",
-     "facing": "left",
-     "enter": "none",
-     "expressionChanges": [],
-     "actionChanges": []
-    }
-   ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Vậy đọc lại bỏ luôn hả? Không hẳn, tác dụng nó hẹp hơn thôi. Học xong, **gấp sách lại** tự kiểm trước, đừng quay đầu **đọc lại** ngay.",
-     "start": 0.15,
-     "end": 8.308,
-     "emotion": "focused",
-     "audio": {
-      "src": "voice/c04v1-b06.wav",
-      "duration": 7.908,
-      "envelope": [
-       0.0,
-       0.0,
-       0.111,
-       0.236,
-       1,
-       1,
-       0.773,
-       0.488,
-       1,
-       0.784,
-       0.148,
-       0.017,
-       0.151,
-       0.539,
-       0.575,
-       0.62,
-       0.576,
-       0.446,
-       0.263,
-       0.597,
-       0.936,
-       0.956,
-       0.766,
-       0.589,
-       0.504,
-       0.716,
-       0.925,
-       1,
-       0.958,
-       0.77,
-       0.632,
-       0.51,
-       0.62,
-       0.572,
-       0.556,
-       0.519,
-       0.469,
-       0.353,
-       0.38,
-       0.339,
-       0.156,
-       0.017,
-       0.008,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.01,
-       0.095,
-       0.859,
-       1,
-       0.554,
-       0.492,
-       0.33,
-       0.337,
-       0.527,
-       0.616,
-       0.538,
-       0.356,
-       0.36,
-       0.327,
-       0.323,
-       0.325,
-       0.177,
-       0.006,
-       0.004,
-       0.005,
-       0.541,
-       0.689,
-       0.347,
-       0.018,
-       0.009,
-       0.075,
-       0.765,
-       1,
-       0.484,
-       0.339,
-       0.428,
-       0.501,
-       0.602,
-       0.576,
-       0.534,
-       0.531,
-       0.602,
-       0.682,
-       0.494,
-       0.034,
-       0.034,
-       0.288,
-       0.573,
-       0.761,
-       0.603,
-       0.526,
-       0.288,
-       0.278,
-       0.586,
-       0.698,
-       0.999,
-       1,
-       0.852,
-       0.689,
-       0.415,
-       0.069,
-       0.014,
-       0.005,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.029,
-       0.484,
-       0.98,
-       0.367,
-       0.04,
-       0.052,
-       0.182,
-       0.268,
-       0.579,
-       0.772,
-       0.735,
-       0.442,
-       0.39,
-       0.285,
-       0.031,
-       0.012,
-       0.003,
-       0.003,
-       0.003,
-       0.002,
-       0.001,
-       0.003,
-       0.078,
-       0.713,
-       1,
-       0.254,
-       0.032,
-       0.08,
-       0.19,
-       0.303,
-       0.343,
-       0.497,
-       0.356,
-       0.032,
-       0.03,
-       0.118,
-       0.323,
-       0.76,
-       0.793,
-       0.778,
-       0.644,
-       0.603,
-       0.652,
-       0.326,
-       0.017,
-       0.133,
-       0.855,
-       0.621,
-       0.123,
-       0.041,
-       0.391,
-       0.74,
-       0.58,
-       0.466,
-       0.43,
-       0.223,
-       0.158,
-       0.779,
-       0.872,
-       0.784,
-       0.581,
-       0.066,
-       0.011,
-       0.005,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.002,
-       0.074,
-       0.484,
-       1,
-       1,
-       0.78,
-       0.862,
-       0.636,
-       0.147,
-       0.151,
-       0.885,
-       0.88,
-       0.782,
-       0.514,
-       0.793,
-       1,
-       1,
-       0.895,
-       0.513,
-       0.316,
-       0.593,
-       0.901,
-       0.919,
-       0.565,
-       0.145,
-       0.023,
-       0.011,
-       0.124,
-       0.331,
-       0.679,
-       0.747,
-       0.692,
-       0.526,
-       0.539,
-       0.401,
-       0.346,
-       0.409,
-       0.468,
-       0.71,
-       0.755,
-       0.811,
-       0.801,
-       0.608,
-       0.3,
-       0.039,
-       0.006,
-       0.001,
-       0.0,
-       0.0,
-       0.0
-      ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "So rereading is useless? Not quite — its effect is just narrower. Finish a section, close the book and test yourself first, instead of turning straight back to reread.",
-    "start": 0.2,
-    "segments": [
-     {
-      "text": "So rereading is useless? Not quite — its effect is just narrower. Finish a section, close the book and test yourself first, instead of turning straight back to reread.",
-      "start": 0.2,
-      "end": 8.258,
-      "highlight": [
-       3,
-       11,
-       15,
-       28
-      ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "snap",
-     "at": 4.45
-    },
-    {
-     "name": "pen",
-     "at": 5.35
-    }
-   ],
-   "props": [
-    {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "open",
-     "closeAt": 4.3
-    },
-    {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 0
-    }
-   ]
-  },
-  {
-   "id": "b07",
-   "beat": "clip-04.b08",
-   "duration": 7.941,
-   "background": {
-    "kind": "desk"
-   },
-   "camera": {
-    "framing": "medium",
+    "framing": "closeup",
     "push": 0.06
    },
    "transition": {
     "type": "cut",
     "duration": 0.4
    },
+   "characters": [],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "mình **tự viết được** luggage,",
+     "start": 0.0,
+     "end": 1.4,
+     "emotion": "happy",
+     "bubble": true,
+     "anchor": [
+      600,
+      560
+     ],
+     "audio": {
+      "src": "voice/c04v18-c16a.wav",
+      "duration": 1.4,
+      "envelope": [
+       0.004,
+       0.0,
+       0.004,
+       0.325,
+       0.676,
+       0.738,
+       0.789,
+       0.893,
+       0.757,
+       0.091,
+       0.627,
+       0.976,
+       0.936,
+       0.857,
+       0.786,
+       0.595,
+       0.356,
+       0.955,
+       1,
+       0.752,
+       0.078,
+       0.174,
+       0.708,
+       0.932,
+       0.712,
+       0.112,
+       0.041,
+       0.255,
+       0.425,
+       0.429,
+       0.144,
+       0.009,
+       0.005,
+       0.082,
+       0.15,
+       0.497,
+       0.725,
+       0.548,
+       0.07,
+       0.012,
+       0.008,
+       0.001
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    },
+    {
+     "speaker": "hiep",
+     "text": "đúng chữ hành lý hôm trước mình bí.",
+     "start": 1.4,
+     "end": 4.3,
+     "emotion": "happy",
+     "bubble": true,
+     "anchor": [
+      600,
+      560
+     ],
+     "audio": {
+      "src": "voice/c04v18-c16b.wav",
+      "duration": 2.9,
+      "envelope": [
+       0.001,
+       0.086,
+       0.632,
+       0.984,
+       0.779,
+       0.512,
+       0.709,
+       0.634,
+       0.04,
+       0.602,
+       1,
+       0.822,
+       0.679,
+       0.541,
+       0.581,
+       0.625,
+       0.669,
+       0.553,
+       0.632,
+       0.635,
+       0.642,
+       0.957,
+       0.903,
+       0.877,
+       0.696,
+       0.69,
+       0.722,
+       0.785,
+       0.741,
+       0.603,
+       0.482,
+       0.114,
+       0.159,
+       0.922,
+       0.777,
+       0.129,
+       0.027,
+       0.566,
+       0.823,
+       0.797,
+       0.594,
+       0.529,
+       0.436,
+       0.459,
+       0.966,
+       0.946,
+       0.702,
+       0.613,
+       0.521,
+       0.484,
+       0.247,
+       0.016,
+       0.005,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
+     }
+    }
+   ],
+   "caption": {
+    "text": "I wrote luggage on my own The very word I got stuck on",
+    "start": 0.055,
+    "segments": [
+     {
+      "text": "I wrote luggage on my own",
+      "start": 0.055,
+      "end": 1.4,
+      "highlight": [
+       2
+      ]
+     },
+     {
+      "text": "The very word I got stuck on",
+      "start": 1.44,
+      "end": 4.25,
+      "highlight": [
+       5
+      ]
+     }
+    ]
+   },
+   "sfx": [
+    {
+     "name": "pen",
+     "at": 0.27
+    },
+    {
+     "name": "pop",
+     "at": 1.13
+    }
+   ],
+   "props": [
+    {
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 70,
+     "wy": 560,
+     "ww": 220,
+     "wh": 200
+    },
+    {
+     "kind": "tome",
+     "x": 200,
+     "y": 1405,
+     "s": 0.6,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 600,
+     "y": 1070,
+     "s": 1.1,
+     "rows": [
+      [
+       0,
+       -1
+      ],
+      [
+       1,
+       -1
+      ],
+      [
+       2,
+       -1
+      ],
+      [
+       3,
+       -1
+      ],
+      [
+       4,
+       0.27
+      ]
+     ]
+    },
+    {
+     "kind": "card",
+     "x": 905,
+     "y": 1034.8,
+     "s": 0.6,
+     "shadow": 0.3,
+     "flipAt": 0.83
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 26,
+     "len": 230,
+     "keys": [
+      [
+       0,
+       437,
+       1034.8
+      ],
+      [
+       0.27,
+       437,
+       1034.8
+      ],
+      [
+       0.62,
+       720,
+       1038.8
+      ],
+      [
+       0.77,
+       740,
+       1094.8
+      ]
+     ]
+    },
+    {
+     "kind": "tag",
+     "text": "luggage",
+     "x": 790,
+     "y": 880,
+     "at": 1.13,
+     "style": "word",
+     "font": "en",
+     "tick": true
+    }
+   ]
+  },
+  {
+   "id": "b08a",
+   "beat": "clip-04.b08",
+   "duration": 2.867,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut",
+    "duration": 0.4
+   },
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.72,
+     "x": 0.76,
      "pose": "sitting",
      "action": "talking",
      "expression": "happy",
-     "facing": "left",
+     "facing": "right",
      "enter": "none",
-     "expressionChanges": [],
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "happy"
+      }
+     ],
      "actionChanges": []
     }
    ],
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Tự kiểm làm sao đây? Như mình nè: học xong một phần, mình **gấp sách lại**, ghi ra những gì còn nhớ, rồi mở sách coi sai chỗ nào.",
-     "start": 0.15,
-     "end": 7.941,
-     "emotion": "focused",
+     "text": "Còn bạn, thử gấp sách lại thì viết được **mấy từ**?",
+     "start": 0.0,
+     "end": 2.867,
+     "emotion": "happy",
+     "bubble": true,
      "audio": {
-      "src": "voice/c04v1-b07.wav",
-      "duration": 7.541,
+      "src": "voice/c04v18-c17a.wav",
+      "duration": 2.8667,
       "envelope": [
        0.0,
        0.0,
-       0.03,
-       0.948,
-       1,
-       0.636,
-       0.08,
-       0.064,
-       0.368,
-       0.79,
-       0.659,
-       0.432,
-       0.386,
-       0.475,
-       0.593,
-       0.581,
-       0.513,
-       0.351,
-       0.132,
-       0.209,
-       0.332,
-       0.594,
-       0.615,
-       0.679,
-       0.265,
-       0.74,
-       0.774,
-       0.884,
-       0.641,
-       0.455,
-       0.187,
-       0.008,
-       0.003,
        0.0,
        0.0,
        0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.118,
-       0.68,
-       1,
-       1,
-       0.866,
-       0.783,
-       0.944,
-       0.798,
-       0.555,
-       0.498,
-       0.516,
-       0.382,
-       0.636,
-       0.687,
-       0.634,
-       0.459,
-       0.399,
-       0.48,
-       0.711,
-       0.29,
-       0.019,
-       0.053,
-       0.137,
-       0.217,
-       0.578,
-       0.58,
-       0.46,
-       0.487,
-       0.54,
-       0.49,
-       0.302,
-       0.039,
-       0.02,
-       0.027,
-       0.089,
-       0.652,
-       0.812,
-       0.587,
-       0.489,
-       0.402,
-       0.304,
-       0.181,
-       0.035,
-       0.006,
-       0.005,
-       0.014,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.22,
+       0.152,
+       0.849,
+       0.797,
+       0.75,
+       0.538,
        0.528,
-       1,
-       0.62,
-       0.501,
-       0.643,
-       0.282,
-       0.369,
-       1,
-       0.584,
-       0.061,
-       0.031,
-       0.066,
-       0.151,
-       0.184,
-       0.233,
-       0.365,
-       0.113,
-       0.011,
-       0.026,
-       0.256,
-       0.47,
-       0.371,
-       0.396,
-       0.503,
-       0.434,
-       0.486,
-       0.43,
-       0.33,
-       0.496,
-       0.402,
-       0.198,
-       0.026,
-       0.006,
-       0.004,
-       0.004,
+       0.312,
+       0.674,
+       0.586,
+       0.608,
+       0.534,
+       0.571,
+       0.453,
+       0.435,
+       0.279,
+       0.082,
+       0.012,
+       0.007,
+       0.002,
        0.003,
-       0.002,
-       0.002,
-       0.135,
-       0.603,
-       1,
-       1,
-       1,
-       0.669,
-       0.743,
-       1,
-       0.843,
-       0.68,
-       0.605,
-       0.524,
-       0.525,
-       0.391,
-       0.441,
-       0.32,
-       0.358,
-       0.755,
-       0.658,
-       0.679,
-       0.222,
-       0.021,
-       0.239,
-       0.666,
-       0.621,
-       0.388,
-       0.368,
-       0.358,
-       0.412,
-       0.53,
-       0.518,
-       0.535,
-       0.489,
-       0.507,
-       0.389,
-       0.224,
-       0.047,
-       0.006,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.085,
-       0.659,
-       1,
-       1,
-       1,
-       0.663,
-       0.667,
-       0.84,
-       0.739,
-       0.561,
-       0.352,
-       0.298,
-       0.375,
-       0.348,
-       0.016,
-       0.023,
-       0.02,
-       0.104,
-       0.464,
-       0.764,
-       0.773,
-       0.693,
-       0.662,
-       0.353,
-       0.243,
-       0.281,
-       0.362,
-       0.559,
-       0.65,
-       0.457,
-       0.037,
-       0.157,
-       0.703,
-       0.723,
-       0.57,
-       0.489,
+       0.098,
        0.588,
-       0.672,
-       0.754,
-       0.811,
-       0.87,
-       0.701,
-       0.407,
-       0.112,
-       0.009,
+       0.77,
+       0.658,
+       0.312,
+       0.491,
+       1,
+       0.506,
+       0.03,
+       0.099,
+       0.253,
+       0.514,
+       0.684,
+       0.089,
+       0.015,
+       0.027,
+       0.314,
+       0.563,
+       0.543,
+       0.565,
+       0.45,
+       0.469,
+       0.54,
+       0.44,
+       0.133,
+       0.042,
+       0.55,
+       0.578,
+       0.457,
+       0.142,
+       0.609,
+       0.775,
+       0.177,
+       0.015,
+       0.207,
+       0.851,
+       0.568,
+       0.103,
+       0.036,
+       0.35,
+       0.674,
+       0.78,
+       0.743,
+       0.698,
+       0.592,
+       0.025,
+       0.011,
+       0.353,
+       0.893,
+       0.902,
+       0.888,
+       0.708,
+       0.685,
+       0.494,
+       0.322,
+       0.115,
+       0.016,
        0.008,
-       0.01,
        0.0,
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
      }
     }
    ],
    "caption": {
-    "text": "How do you self-test? Like me: finish a section, close the book, write down what I remember, then open it to check where I went wrong.",
-    "start": 0.2,
+    "text": "Your turn: book closed, how many words?",
+    "start": 0.135,
     "segments": [
      {
-      "text": "How do you self-test? Like me: finish a section, close the book, write down what I remember, then open it to check where I went wrong.",
-      "start": 0.2,
-      "end": 7.891,
+      "text": "Your turn: book closed, how many words?",
+      "start": 0.135,
+      "end": 2.817,
       "highlight": [
-       3,
-       9,
-       16,
-       25
+       5
       ]
      }
     ]
    },
    "sfx": [
     {
-     "name": "pen",
-     "at": 3.75
-    },
-    {
-     "name": "swish",
-     "at": 6.45
-    },
-    {
-     "name": "tick",
-     "at": 7.25
+     "name": "snap",
+     "at": 0.977
     }
    ],
    "props": [
     {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "closed",
-     "openAt": 6.3
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
     },
     {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 6,
-     "inkAt": 3.6,
-     "inkStagger": 0.5
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "open"
+      ],
+      [
+       0.977,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 480,
+     "y": 1265,
+     "s": 0.45,
+     "rows": []
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 8,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       585,
+       1420
+      ]
+     ]
     }
    ]
   },
   {
-   "id": "b08",
-   "beat": "clip-04.b09",
-   "duration": 8.351,
+   "id": "b08b",
+   "beat": "clip-04.b08",
+   "duration": 1.267,
    "background": {
-    "kind": "desk"
+    "kind": "room"
    },
    "camera": {
     "framing": "medium",
-    "push": 0.06
+    "push": 0.04
    },
    "transition": {
     "type": "cut",
@@ -2449,329 +3562,180 @@
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.72,
-     "pose": "standing",
+     "x": 0.76,
+     "pose": "sitting",
      "action": "talking",
-     "expression": "focused",
-     "facing": "left",
+     "expression": "happy",
+     "facing": "right",
      "enter": "none",
-     "expressionChanges": [],
+     "expressionChanges": [
+      {
+       "at": 0.0,
+       "value": "happy"
+      }
+     ],
      "actionChanges": []
     }
    ],
    "dialogue": [
     {
      "speaker": "hiep",
-     "text": "Còn ôn thi, tiếng Anh thì sao? Thay vì đọc một chương ba lần, mình gấp lại, tự nói **chương này nói gì**. Bí chỗ nào là chưa thuộc chỗ đó.",
-     "start": 0.15,
-     "end": 8.351,
-     "emotion": "focused",
+     "text": "Comment **con số** nha.",
+     "start": 0.0,
+     "end": 1.267,
+     "emotion": "happy",
+     "bubble": true,
      "audio": {
-      "src": "voice/c04v1-b08.wav",
-      "duration": 7.951,
+      "src": "voice/c04v18-c17b.wav",
+      "duration": 1.2667,
       "envelope": [
        0.0,
-       0.001,
-       0.086,
-       1,
-       1,
-       0.564,
-       0.334,
-       0.533,
-       0.989,
-       0.811,
-       0.601,
-       0.454,
-       0.143,
-       0.523,
-       0.847,
-       0.981,
-       1,
-       0.883,
-       0.145,
-       0.021,
-       0.045,
-       0.744,
-       0.767,
-       0.44,
-       0.342,
-       0.301,
-       0.559,
-       0.704,
-       0.633,
-       0.69,
-       0.496,
-       0.093,
-       0.576,
-       0.579,
-       0.45,
-       0.21,
-       0.176,
-       0.207,
-       0.266,
-       0.582,
-       0.712,
-       0.725,
-       0.776,
-       0.638,
-       0.431,
-       0.07,
-       0.005,
        0.0,
        0.0,
        0.0,
        0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.002,
-       0.098,
-       0.61,
-       1,
-       1,
-       0.486,
-       0.203,
-       0.744,
-       1,
-       0.98,
-       0.91,
-       0.792,
-       0.27,
-       0.446,
-       0.966,
-       0.773,
-       0.144,
-       0.018,
-       0.019,
-       0.284,
-       0.652,
-       0.547,
-       0.108,
-       0.033,
-       0.007,
-       0.27,
-       0.919,
-       0.776,
-       0.57,
-       0.498,
-       0.406,
-       0.51,
-       0.808,
-       0.783,
-       0.742,
-       0.704,
-       0.715,
-       0.931,
-       1,
-       0.888,
-       0.523,
-       0.566,
-       0.47,
-       0.324,
-       0.091,
-       0.008,
-       0.003,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.224,
-       0.785,
-       1,
-       0.843,
-       0.865,
-       0.64,
-       0.562,
-       1,
-       0.48,
-       0.024,
-       0.016,
-       0.485,
-       0.626,
-       0.735,
-       0.751,
-       0.704,
-       0.627,
-       0.608,
-       0.592,
-       0.49,
-       0.194,
-       0.02,
-       0.005,
-       0.009,
-       0.74,
-       0.974,
-       0.651,
-       0.547,
-       0.452,
-       0.505,
-       0.628,
-       0.598,
-       0.554,
-       0.27,
-       0.028,
-       0.03,
-       0.313,
-       0.721,
-       0.618,
-       0.389,
-       0.402,
-       0.47,
-       0.494,
-       0.735,
-       0.612,
-       0.586,
-       0.559,
-       0.513,
-       0.44,
-       0.355,
-       0.54,
-       0.541,
-       0.373,
-       0.431,
-       0.363,
-       0.26,
-       0.118,
-       0.194,
-       0.884,
-       0.686,
-       0.806,
-       0.734,
-       0.678,
-       0.461,
-       0.211,
-       0.031,
-       0.012,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.165,
-       0.85,
-       1,
-       0.541,
-       0.073,
-       0.079,
-       0.9,
-       1,
-       0.786,
-       0.539,
-       0.571,
-       0.74,
-       0.746,
-       0.764,
-       0.789,
-       0.785,
+       0.199,
        0.73,
-       0.717,
-       0.724,
-       0.474,
-       0.058,
-       0.01,
-       0.05,
-       0.572,
-       0.962,
+       0.53,
+       0.598,
+       0.784,
+       0.524,
+       0.771,
+       0.291,
+       0.701,
+       0.87,
+       0.945,
+       0.845,
+       0.607,
+       0.745,
+       0.92,
+       0.932,
        1,
-       0.639,
-       0.039,
-       0.367,
-       0.623,
-       0.297,
-       0.032,
-       0.022,
-       0.008,
-       0.146,
-       0.588,
-       0.51,
-       0.464,
-       0.51,
-       0.366,
-       0.574,
-       0.643,
-       0.477,
-       0.365,
-       0.438,
-       0.394,
-       0.253,
-       0.069,
-       0.008,
-       0.006,
-       0.011,
+       0.731,
+       0.433,
+       0.572,
+       0.59,
+       0.478,
+       0.315,
+       0.138,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0,
        0.0,
        0.0,
        0.0
       ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
+      "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py v18 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c04v18.wav at frame boundaries inside silences"
      }
     }
    ],
    "caption": {
-    "text": "What about exams or English? Instead of rereading a chapter three times, close it and say what it was about. Where you get stuck is what you haven't learned.",
-    "start": 0.2,
+    "text": "Comment your number below",
+    "start": 0.119,
     "segments": [
      {
-      "text": "What about exams or English? Instead of rereading a chapter three times, close it and say what it was about. Where you get stuck is what you haven't learned.",
-      "start": 0.2,
-      "end": 8.301,
+      "text": "Comment your number below",
+      "start": 0.119,
+      "end": 1.217,
       "highlight": [
-       2,
-       10,
-       19,
-       23
+       2
       ]
      }
     ]
    },
    "sfx": [
     {
-     "name": "swish",
-     "at": 2.35
-    },
-    {
-     "name": "snap",
-     "at": 4.05
-    },
-    {
-     "name": "pop",
-     "at": 7.35
+     "name": "tick",
+     "at": 0.606
     }
    ],
    "props": [
     {
-     "kind": "book",
-     "x": 290,
-     "y": 1020,
-     "s": 0.95,
-     "state": "open",
-     "flipAt": 2.2,
-     "closeAt": 3.9,
-     "openAt": 7.2
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
+      ]
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
     },
     {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 3,
-     "inkAt": -9
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
+    },
+    {
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
+    },
+    {
+     "kind": "paper",
+     "x": 480,
+     "y": 1265,
+     "s": 0.45,
+     "rows": []
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 8,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       585,
+       1420
+      ]
+     ]
+    },
+    {
+     "kind": "icon",
+     "name": "chat",
+     "x": 205,
+     "y": 1010,
+     "size": 120,
+     "at": 0.066,
+     "plate": true
+    },
+    {
+     "kind": "icon",
+     "name": "hand",
+     "x": 205,
+     "y": 1190,
+     "size": 92,
+     "rot": 180,
+     "at": 0.186,
+     "bob": true
     }
    ]
   },
   {
-   "id": "b09",
-   "beat": "clip-04.b10",
-   "duration": 7.316,
+   "id": "endcard",
+   "beat": "clip-04.b08",
+   "duration": 1.5,
    "background": {
-    "kind": "grid"
+    "kind": "room"
    },
    "camera": {
     "framing": "medium",
@@ -2784,653 +3748,101 @@
    "characters": [
     {
      "characterId": "hiep",
-     "x": 0.74,
-     "pose": "standing",
-     "action": "talking",
+     "x": 0.76,
+     "pose": "sitting",
+     "action": "idle",
      "expression": "happy",
-     "facing": "left",
+     "facing": "right",
      "enter": "none",
      "expressionChanges": [],
      "actionChanges": []
     }
    ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Bài dài quá, kiểm sao hết? Nhớ clip trước không, bài dài thì **chia nhỏ ra** trước. Học xong phần nào, kiểm ngay phần đó.",
-     "start": 0.15,
-     "end": 7.316,
-     "emotion": "focused",
-     "audio": {
-      "src": "voice/c04v1-b09.wav",
-      "duration": 6.916,
-      "envelope": [
-       0.0,
-       0.001,
-       0.117,
-       0.837,
-       0.976,
-       0.901,
-       0.771,
-       0.306,
-       0.699,
-       0.863,
-       0.756,
-       0.65,
-       0.112,
-       0.021,
-       0.148,
-       0.772,
-       0.661,
-       0.579,
-       0.503,
-       0.425,
-       0.055,
-       0.007,
-       0.052,
-       0.712,
-       0.614,
-       0.419,
-       0.287,
-       0.229,
-       0.33,
-       0.38,
-       0.627,
-       0.736,
-       0.61,
-       0.662,
-       0.715,
-       0.73,
-       0.774,
-       0.573,
-       0.023,
-       0.008,
-       0.002,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.007,
-       0.547,
-       0.908,
-       1,
-       1,
-       0.443,
-       0.026,
-       0.099,
-       0.486,
-       1,
-       0.927,
-       0.129,
-       0.011,
-       0.012,
-       0.542,
-       1,
-       1,
-       0.167,
-       0.025,
-       0.159,
-       0.408,
-       0.664,
-       0.698,
-       0.614,
-       0.538,
-       0.459,
-       0.219,
-       0.035,
-       0.003,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.003,
-       0.249,
-       1,
-       1,
-       1,
-       0.851,
-       0.445,
-       0.282,
-       0.838,
-       0.893,
-       0.881,
-       0.795,
-       0.78,
-       0.461,
-       0.05,
-       0.476,
-       0.632,
-       0.196,
-       0.061,
-       0.015,
-       0.064,
-       0.362,
-       0.547,
-       0.601,
-       0.481,
-       0.318,
-       0.392,
-       0.618,
-       0.72,
-       0.749,
-       0.631,
-       0.615,
-       0.665,
-       0.563,
-       0.378,
-       0.277,
-       0.215,
-       0.46,
-       0.588,
-       0.715,
-       0.594,
-       0.299,
-       0.016,
-       0.01,
-       0.414,
-       0.952,
-       0.987,
-       1,
-       0.731,
-       0.05,
-       0.007,
-       0.005,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.008,
-       0.193,
-       1,
-       0.8,
-       0.099,
-       0.059,
-       0.113,
-       0.281,
-       0.43,
-       0.723,
-       0.609,
-       0.564,
-       0.22,
-       0.042,
-       0.44,
-       0.847,
-       0.599,
-       0.601,
-       0.633,
-       0.639,
-       0.798,
-       0.803,
-       0.826,
-       0.903,
-       0.838,
-       0.525,
-       0.143,
-       0.025,
-       0.012,
-       0.005,
-       0.003,
-       0.003,
-       0.004,
-       0.419,
-       1,
-       0.956,
-       0.446,
-       0.554,
-       0.69,
-       0.896,
-       0.904,
-       0.545,
-       0.038,
-       0.062,
-       0.626,
-       0.605,
-       0.476,
-       0.527,
-       0.527,
-       0.422,
-       0.859,
-       0.818,
-       0.625,
-       0.545,
-       0.542,
-       0.449,
-       0.306,
-       0.107,
-       0.007,
-       0.004,
-       0.0,
-       0.0,
-       0.0
-      ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "But what if it's long? Remember last clip: split the big pile first. Finish one small bundle, then test yourself on just that bundle.",
-    "start": 0.2,
-    "segments": [
-     {
-      "text": "But what if it's long? Remember last clip: split the big pile first. Finish one small bundle, then test yourself on just that bundle.",
-      "start": 0.2,
-      "end": 7.266,
-      "highlight": [
-       4,
-       8,
-       16
-      ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "pop",
-     "at": 3.35
-    },
-    {
-     "name": "snap",
-     "at": 5.35
-    },
-    {
-     "name": "pen",
-     "at": 5.55
-    },
-    {
-     "name": "tick",
-     "at": 6.35
-    }
-   ],
+   "dialogue": [],
+   "sfx": [],
    "props": [
     {
-     "kind": "pile",
-     "x": 320,
-     "y": 900,
-     "s": 0.75,
-     "until": 3.55
-    },
-    {
-     "kind": "bundles",
-     "x": 300,
-     "y": 1080,
-     "s": 0.62,
-     "at": 3.35
-    },
-    {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 2,
-     "inkAt": 5.4
-    }
-   ]
-  },
-  {
-   "id": "b10",
-   "beat": "clip-04.b11",
-   "duration": 9.182,
-   "background": {
-    "kind": "desk"
-   },
-   "camera": {
-    "framing": "medium",
-    "push": 0.06
-   },
-   "transition": {
-    "type": "cut",
-    "duration": 0.4
-   },
-   "characters": [
-    {
-     "characterId": "hiep",
-     "x": 0.72,
-     "pose": "standing",
-     "action": "talking",
-     "expression": "happy",
-     "facing": "left",
-     "enter": "none",
-     "expressionChanges": [],
-     "actionChanges": []
-    }
-   ],
-   "dialogue": [
-    {
-     "speaker": "hiep",
-     "text": "Quay lại sáng mai coi, đâu phải mình học dở. Mắt quen chữ thôi, đầu chưa **tự nhớ** lần nào. Tối nay bạn nhớ được **mấy ý**? Comment một con số nha!",
-     "start": 0.15,
-     "end": 9.182,
-     "emotion": "happy",
-     "audio": {
-      "src": "voice/c04v1-b10.wav",
-      "duration": 8.782,
-      "envelope": [
-       0.0,
-       0.0,
-       0.024,
-       0.975,
-       1,
-       1,
-       1,
-       0.733,
-       0.798,
-       0.696,
-       0.538,
-       0.284,
-       0.19,
-       0.274,
-       0.424,
-       0.362,
-       0.378,
-       0.463,
-       0.572,
-       0.618,
-       0.586,
-       0.274,
-       0.02,
-       0.008,
-       0.271,
-       0.745,
-       0.958,
-       0.96,
-       0.854,
-       0.698,
-       0.454,
-       0.145,
-       0.007,
-       0.005,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.089,
-       0.64,
-       1,
-       1,
-       1,
-       0.913,
-       0.271,
-       0.062,
-       0.321,
-       0.542,
-       0.513,
-       0.521,
-       0.627,
-       0.789,
-       0.486,
-       0.387,
-       0.504,
-       0.524,
-       0.46,
-       0.064,
-       0.011,
-       0.025,
-       0.163,
-       0.713,
-       0.83,
-       0.545,
-       0.512,
-       0.438,
-       0.389,
-       0.419,
-       0.259,
-       0.056,
-       0.004,
-       0.001,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.001,
-       0.133,
-       0.622,
-       0.626,
-       0.078,
-       0.015,
-       0.01,
-       0.479,
-       1,
-       0.754,
-       0.619,
-       0.413,
-       0.044,
-       0.368,
-       0.652,
-       0.554,
-       0.402,
-       0.195,
-       0.153,
-       0.514,
-       0.553,
-       0.659,
-       0.763,
-       0.716,
-       0.478,
-       0.118,
-       0.009,
-       0.004,
-       0.005,
-       0.004,
-       0.003,
-       0.002,
-       0.001,
-       0.004,
-       0.201,
-       0.839,
-       1,
-       0.876,
-       0.539,
-       0.088,
-       0.075,
-       0.677,
-       1,
-       1,
-       0.129,
-       0.019,
-       0.268,
-       1,
-       0.865,
-       0.648,
-       0.507,
-       0.376,
-       0.303,
-       0.366,
-       0.341,
-       0.519,
-       0.723,
-       0.614,
-       0.557,
-       0.632,
-       0.639,
-       0.792,
-       0.873,
-       0.775,
-       0.508,
-       0.491,
-       0.499,
-       0.434,
-       0.621,
-       0.628,
-       0.603,
-       0.665,
-       0.558,
-       0.366,
-       0.079,
-       0.009,
-       0.004,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.11,
-       0.912,
-       1,
-       0.892,
-       0.582,
-       0.486,
-       0.662,
-       0.716,
-       0.731,
-       0.744,
-       0.745,
-       0.595,
-       0.202,
-       0.492,
-       0.752,
-       0.626,
-       0.457,
-       0.466,
-       0.473,
-       0.492,
-       0.59,
-       0.701,
-       0.568,
-       0.588,
-       0.607,
-       0.395,
-       0.479,
-       0.777,
-       0.355,
-       0.026,
-       0.043,
-       0.3,
-       0.542,
-       0.745,
-       0.671,
-       0.62,
-       0.476,
-       0.251,
-       0.303,
-       0.822,
-       1,
-       1,
-       0.743,
-       0.661,
-       0.473,
-       0.527,
-       0.239,
-       0.033,
-       0.006,
-       0.001,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.0,
-       0.004,
-       0.316,
-       0.826,
-       0.528,
-       0.521,
-       0.431,
-       0.673,
-       0.651,
-       0.553,
-       0.506,
-       0.521,
-       0.418,
-       0.042,
-       0.059,
-       0.379,
-       0.496,
-       0.415,
-       0.208,
-       0.215,
-       0.385,
-       0.532,
-       0.583,
-       0.454,
-       0.42,
-       0.521,
-       0.612,
-       0.683,
-       0.632,
-       0.593,
-       0.603,
-       0.53,
-       0.371,
-       0.095,
-       0.007,
-       0.006,
-       0.0,
-       0.0,
-       0.0
-      ],
-      "engine": "F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"
-     }
-    }
-   ],
-   "caption": {
-    "text": "Back to that next-morning moment: see, you're not bad at studying — your eyes got familiar, your brain never recalled. Tonight, how many ideas can you remember? Comment a number!",
-    "start": 0.2,
-    "segments": [
-     {
-      "text": "Back to that next-morning moment: see, you're not bad at studying — your eyes got familiar, your brain never recalled. Tonight, how many ideas can you remember? Comment a number!",
-      "start": 0.2,
-      "end": 9.132,
-      "highlight": [
-       8,
-       19,
-       22,
-       29
+     "kind": "window",
+     "x": 0,
+     "y": 0,
+     "sky": [
+      [
+       0,
+       "day"
       ]
-     }
-    ]
-   },
-   "sfx": [
-    {
-     "name": "swish",
-     "at": 0.45
+     ],
+     "wx": 660,
+     "wy": 250,
+     "ww": 300,
+     "wh": 250
     },
     {
-     "name": "pop",
-     "at": 5.95
+     "kind": "table",
+     "x": 0,
+     "y": 0,
+     "top": 1395
     },
     {
-     "name": "tick",
-     "at": 7.85
-    }
-   ],
-   "props": [
-    {
-     "kind": "book",
-     "x": 300,
-     "y": 1020,
-     "s": 0.85,
-     "state": "closed"
+     "kind": "tome",
+     "x": 205,
+     "y": 1300,
+     "s": 0.55,
+     "closedDy": 160,
+     "keys": [
+      [
+       0,
+       "closed"
+      ]
+     ]
     },
     {
-     "kind": "sheet",
-     "x": 470,
-     "y": 1250,
-     "s": 0.48,
-     "inkLines": 4,
-     "inkAt": -9
+     "kind": "paper",
+     "x": 480,
+     "y": 1265,
+     "s": 0.45,
+     "rows": []
+    },
+    {
+     "kind": "pen",
+     "x": 0,
+     "y": 0,
+     "s": 1,
+     "rot": 8,
+     "len": 150,
+     "keys": [
+      [
+       0,
+       585,
+       1420
+      ]
+     ]
+    },
+    {
+     "kind": "icon",
+     "name": "chat",
+     "x": 205,
+     "y": 1010,
+     "size": 120,
+     "at": 0.066,
+     "plate": true
+    },
+    {
+     "kind": "icon",
+     "name": "hand",
+     "x": 205,
+     "y": 1190,
+     "size": 92,
+     "rot": 180,
+     "at": 0.186,
+     "bob": true
+    },
+    {
+     "kind": "endcard",
+     "at": 0,
+     "y": 560,
+     "text": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+     "sub": "Roediger & Karpicke 2006 · Yang et al. 2021",
+     "stamp": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/"
     }
    ]
   }

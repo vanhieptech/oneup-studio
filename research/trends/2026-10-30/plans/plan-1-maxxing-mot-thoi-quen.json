@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-maxxing-mot-thoi-quen",
+ "title": "[STUB] Năm nay ai cũng “maxxing”: bật mười thói quen cùng lúc, tuần thứ ba còn mấy cái? Giữ một cái, tính theo tháng",
+ "meta": {
+  "week": 1,
+  "status": "stub-needs-approval",
+  "trend_id": "maxxing-tu-cua-nam-2026-den-nam-khong",
+  "bridge_id": "B-maxxing-01",
+  "lesson": "4.12 Thói quen mới tính theo tháng, không theo “21 ngày” (Lally và cộng sự 2010; theo ràng buộc Deep Research 27/10: chỉ dùng 18–254 ngày và «lỡ một lần không ảnh hưởng đáng kể», không dùng «trung vị 66 ngày»; mức B, một nghiên cứu 96 người). Ý «làm từng thói quen một» là góc của kênh, không phải số liệu sách. Số 19 lần/700% của Dictionary.com chỉ dùng làm bằng chứng trend, không đưa vào voice.",
+  "angle": "humor / contrarian",
+  "pattern": "P11 + P03 + P15",
+  "differentiation": "Mọi người đang nói: “maxxing” là Từ của năm 2026 (Dictionary.com), Gen Z tối ưu cả việc nằm không, câu hỏi là thế nào là đủ (Kenh14 29/10, BBC). Góc của mình: không chê ai tối ưu, mình cũng từng bật một lúc cả chục thói quen. Cái sai không phải muốn tốt hơn, mà là muốn tốt hơn mười thứ trong ba tuần. Giữ một thứ, tính theo tháng: đúng tinh thần +1 mỗi ngày."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "maxxing-mot-thoi-quen.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Năm nay ai cũng đang “maxxing” một thứ gì đó. Còn bạn, đang maxxing cùng lúc mấy thứ, và tới tuần thứ ba còn giữ được mấy thứ?",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Maxxing everything?",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "maxxing-mot-thoi-quen.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nói thiệt, đầu tháng mình cũng bật một lúc: dậy sớm, uống đủ nước, đi bộ, ngủ trước mười một giờ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "I did it too.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "maxxing-mot-thoi-quen.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tuần thứ ba nhìn lại, chỉ còn cái app nhắc nhở là chăm nhất.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Week three: only the app.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "maxxing-mot-thoi-quen.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vì mình tưởng hai mươi mốt ngày là thành, nên muốn ba tuần đổi luôn cả chục thứ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "The 21-day myth.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "maxxing-mot-thoi-quen.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nghiên cứu theo dõi người tập một việc nhỏ mỗi ngày: người nhanh mười tám ngày, người chậm tới hai trăm năm mươi tư ngày mới quen.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "18 to 254 days.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "maxxing-mot-thoi-quen.b06",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đó là một việc thôi nha, chưa nói mười việc cùng lúc.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "That's for one habit.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "maxxing-mot-thoi-quen.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy thử maxxing đúng một thứ: một ly nước sau bữa sáng, tính theo tháng, lỡ một hôm thì mai làm lại.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Maxx just one.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "maxxing-mot-thoi-quen.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cộng một mỗi ngày, chứ hông phải cộng mười trong ba tuần.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Plus one a day.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "maxxing-mot-thoi-quen.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn đang maxxing thứ gì? Chọn ra đúng một cái, kể mình nghe.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Pick one.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "duration": 1.8333,
+ "envelope": [
+  0.002,
+  0.14,
+  0.464,
+  0.869,
+  0.821,
+  1,
+  0.842,
+  0.849,
+  0.371,
+  0.746,
+  0.782,
+  0.777,
+  0.78,
+  0.631,
+  0.667,
+  0.795,
+  0.955,
+  0.895,
+  0.843,
+  0.919,
+  0.75,
+  0.775,
+  0.572,
+  0.128,
+  0.425,
+  0.876,
+  0.691,
+  0.48,
+  0.044,
+  0.07,
+  0.512,
+  0.203,
+  0.013,
+  0.006,
+  0.049,
+  0.41,
+  0.784,
+  0.573,
+  0.476,
+  0.466,
+  0.446,
+  0.457,
+  0.516,
+  0.513,
+  0.661,
+  0.702,
+  0.684,
+  0.552,
+  0.338,
+  0.058,
+  0.01,
+  0.006,
+  0.004,
+  0.008,
+  0.0
+ ],
+ "engine": "F5-TTS hynt ViVoice thai-son speed 1.0, per-phrase F5 (voice-delivery-f5.py c05v4 chunk take, L-016 one F5 call per chunk; {nhấn:} +dB only), sliced sample-exact from approved final/voice-only-c05v4.wav at frame boundaries",
+ "role": "Thầy",
+ "stt": "Mình dễ nhớ ra cách giải hơn.",
+ "stt_sim": 1.0,
+ "stt_model": "faster-whisper medium float32",
+ "stt_split": {
+  "fragment": {
+   "text": "Mình dễ nhớ ra cách giải hơn.",
+   "sim": 1.0
+  },
+  "in_chunk": {
+   "text": "mình dễ nhớ ra cách giải hơn.",
+   "sim": 1.0
+  }
+ },
+ "intra_output_cuts": 1,
+ "emphasis_edits": true,
+ "units": [
+  {
+   "text": "tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình dễ nhớ ra cách giải hơn.",
+   "take": "c16-113.wav",
+   "chunk": "c16"
+  }
+ ],
+ "source": {
+  "wav": "final/voice-only-c05v4.wav",
+  "start_s": 47.6,
+  "end_s": 49.4333,
+  "hold_s": 0.0,
+  "tail_s": 0
+ }
+}

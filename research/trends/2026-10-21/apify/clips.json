@@ -1,0 +1,791 @@
+{
+  "actor": "clockworks/tiktok-scraper",
+  "run_id": "s5SFZKHFyY11sveqM",
+  "item_count": 5,
+  "fields_coverage": {
+    "url": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "caption": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "author": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "play_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "like_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "share_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "comment_count": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "duration_s": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "music": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "hashtags": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "subtitle_or_transcript": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    },
+    "top_comments": {
+      "present": 5,
+      "of": 5,
+      "pct": 100.0
+    }
+  },
+  "clips": [
+    {
+      "url": "https://www.tiktok.com/@kesanmoi.rf/video/7698254483419172103",
+      "caption": "Người càng nghèo càng phải bỏ 12 tật xấu này. Mày đang dính mấy cái?\n#taichinhcanhan #thoatngheo #tuduy #kyluat #kesanmoi",
+      "author": {
+        "id": "7683564720834790420",
+        "name": "kesanmoi.rf",
+        "nick": "Kẻ Săn Mồi",
+        "profile": "https://www.tiktok.com/@kesanmoi.rf",
+        "fans": 60300
+      },
+      "play_count": 248500,
+      "like_count": 38300,
+      "share_count": 3463,
+      "comment_count": 311,
+      "duration_s": 259,
+      "music": {
+        "id": "7543179927332424465",
+        "name": "nhạc nền - Thanh Phương",
+        "author": "thanh phương",
+        "original": true
+      },
+      "hashtags": [
+        "taichinhcanhan",
+        "thoatngheo",
+        "tuduy",
+        "kyluat",
+        "kesanmoi"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:02.120\nngười càng nghèo càng phải bỏ 12 thói xấu này\n\n00:00:02.360 --> 00:00:04.720\nkhông bỏ cả đời mày có thể chẳng ngóc đầu lên nổi\n\n00:00:05.000 --> 00:00:07.360\nTao không dọa mày dù bây giờ mày bao nhiêu tuổi\n\n00:00:07.480 --> 00:00:09.160\nchỉ cần bỏ được 12 thói xấu này\n\n00:00:09.320 --> 00:00:11.200\nthì nửa năm sau nhất định sẽ đổi vận\n\n00:00:11.360 --> 00:00:12.160\ntái xuất giang hồ\n\n00:00:12.480 --> 00:00:15.360\nTao cũng nhờ bỏ chúng mà trả hết nợ mua được cả xe lận nha\n\n00:00:15.760 --> 00:00:17.680\ncả đời người AI cũng cố gắng hết mình\n\n00:00:17.880 --> 00:00:20.200\nlăn lộn vất vả mong gây dựng được tên tuổi\n\n00:00:20.360 --> 00:00:22.080\nđưa gia đình đi lên và sống tốt hơn\n\n00:00:22.240 --> 00:00:23.840\nnhưng có người càng lăn lộn càng tệ\n\n00:00:24.080 --> 00:00:26.520\nvì SAO vì họ vẫn mang 12 thói xấu này\n\n00:00:26.720 --> 00:00:28.760\nchỉ vướng một thói thôi cũng khó mà khá lên\n\n00:00:29.000 --> 00:00:30.840\nđặc biệt là thói thứ BA và thứ 11\n\n00:00:31.040 --> 00:00:33.160\nnghe kỹ rồi lưu lại xem đi xem lại nhiều lần\n\n00:00:33.600 --> 00:00:34.880\nmột bỏ thói sĩ diện\n\n00:00:34.881 --> 00:00:36.481\nhão biết mình không có tiền\n\n00:00:36.482 --> 00:00:38.321\nmà vẫn thích tỏ Ra giàu có trước bạn bè\n\n00:00:38.560 --> 00:00:39.560\nngười thân đồng nghiệp\n\n00:00:39.600 --> 00:00:41.920\nvỗ ngực khoe khoang vì sợ người khác coi thường\n\n00:00:42.080 --> 00:00:44.080\nnhưng sĩ diện không phải thứ người khác ban Cho\n\n00:00:44.360 --> 00:00:45.440\nnó do mình tự gây dựng\n\n00:00:45.720 --> 00:00:47.480\ncó bản lĩnh thân phận địa vị\n\n00:00:47.720 --> 00:00:49.760\ndanh tiếng và tiền bạc thì tự nhiên người khác nể\n\n00:00:50.040 --> 00:00:52.800\ncòn cơm ăn áo mặc chưa lo xong sĩ diện giúp được gì\n\n00:00:53.160 --> 00:00:54.360\n2 bỏ thói khoe khoang\n\n00:00:54.600 --> 00:00:56.160\ntrên đời chẳng có gì đáng để phô trương\n\n00:00:56.400 --> 00:00:58.200\nkhoe khoang phô trương sẽ mang đến Tai họa\n\n00:00:58.400 --> 00:01:00.920\nmày khoe thứ gì cuối cùng cũng mất cả người lẫn của\n\n00:01:01.240 --> 00:01:02.240\nngười thực sự hiểu đời\n\n00:01:02.241 --> 00:01:04.921\nbiết của cải trong cuộc đời mày cũng chỉ là khách qua đường\n\n00:01:05.240 --> 00:01:07.760\nbỏ lòng hư Vinh thì mới giữ chắc của cải trong Tay\n\n00:01:08.240 --> 00:01:09.960\nBA bỏ thói vay tiền sống qua ngày\n\n00:01:10.200 --> 00:01:12.320\nnhớ Cho rõ cứu cấp chứ không cứu nghèo\n\n00:01:12.560 --> 00:01:14.040\nthiếu tiền tiêu thì tiết kiệm một chút\n\n00:01:14.041 --> 00:01:15.121\nhoặc tìm cách kiếm thêm\n\n00:01:15.320 --> 00:01:16.440\nđừng vay mượn khắp nơi\n\n00:01:16.840 --> 00:01:19.120\nlàm vậy chỉ khiến người khác nghĩ mày thật vô dụng\n\n00:01:19.400 --> 00:01:21.440\ntrong khi AI cũng đang lăn lộn trong xã hội này\n\n00:01:21.800 --> 00:01:23.440\nđừng để cả thế giới biết mình túng quẫn\n\n00:01:23.640 --> 00:01:25.320\nviệc mày cần làm là âm thầm nỗ lực\n\n00:01:25.640 --> 00:01:26.760\nmuốn bỏ thói oán trách\n\n00:01:27.040 --> 00:01:28.280\nthấy người xung quanh sống sung túc\n\n00:01:28.480 --> 00:01:29.360\ncó người lại bất mãn\n\n00:01:29.480 --> 00:01:30.680\nnghĩ SAO họ không giúp mình\n\n00:01:30.760 --> 00:01:32.400\nrồi Cho rằng bạn bè không nghĩa khí\n\n00:01:32.640 --> 00:01:34.520\nnhớ Cho rõ người ta giúp là tình nghĩa\n\n00:01:34.760 --> 00:01:35.800\nkhông giúp là lẽ thường\n\n00:01:36.120 --> 00:01:38.080\noán trách chỉ khiến cả người vốn muốn giúp\n\n00:01:38.081 --> 00:01:39.081\ncũng không muốn giúp nữa\n\n00:01:39.320 --> 00:01:41.720\ndù chưa có tiền mình vẫn phải giữ lòng tự trọng\n\n00:01:42.040 --> 00:01:43.840\nnăm bỏ thói thích chiếm lợi nhỏ\n\n00:01:44.080 --> 00:01:46.680\ncàng nghèo càng muốn tiết kiệm rồi tiện đâu ăn chực một bữa\n\n00:01:46.920 --> 00:01:48.080\nlợi dụng người khác một chút\n\n00:01:48.360 --> 00:01:51.040\nlâu dần người ta sẽ nghĩ mày là kẻ thích chiếm lợi nhỏ\n\n00:01:51.080 --> 00:01:52.040\nvà chẳng muốn kết giao\n\n00:01:52.280 --> 00:01:53.440\nquý nhân cũng sẽ tránh xa\n\n00:01:53.920 --> 00:01:55.120\ncuối cùng mất nhiều hơn được\n\n00:01:55.520 --> 00:01:57.160\n6 bỏ thói thích tranh cãi đến cùng\n\n00:01:57.520 --> 00:01:58.520\ntrên đời không có đúng Sai\n\n00:01:58.560 --> 00:02:00.800\ntuyệt đối chuyện gì bỏ qua được thì bỏ qua\n\n00:02:01.040 --> 00:02:01.960\nđừng quá khắt khe\n\n00:02:02.280 --> 00:02:04.920\ngặp kẻ khó ưa hay chuyện vụn vặt thì không cần phí lời\n\n00:02:05.200 --> 00:02:06.880\nđạo bất đồng thì chẳng thể cùng mưu tính\n\n00:02:07.200 --> 00:02:08.800\nmày có thể thắng một cuộc tranh cãi\n\n00:02:08.960 --> 00:02:10.560\nnhưng lại mất quý nhân và bạn bè\n\n00:02:10.960 --> 00:02:11.880\nthắng vậy để làm gì\n\n00:02:12.320 --> 00:02:15.280\n7 bỏ thói Cao ngạo viển vông đứng núi này trông núi nọ\n\n00:02:15.600 --> 00:02:17.400\n7 bại thì đổ tại công việc này không ổn\n\n00:02:17.560 --> 00:02:19.400\nông chủ không được hay ngành nghề không hợp\n\n00:02:19.600 --> 00:02:22.080\nrồi liên tục đổi ông chủ đổi ngành đổi việc\n\n00:02:22.440 --> 00:02:24.520\nđổi một thời gian lại chê không ổn rồi bắt đầu lại\n\n00:02:24.800 --> 00:02:26.320\ncứ đào giếng được một lúc lại đổi chỗ\n\n00:02:26.321 --> 00:02:28.361\nđào lại từ đầu thì bao giờ mới gặp nước\n\n00:02:28.600 --> 00:02:30.520\nnhìn lại mày đâu có đào được giếng\n\n00:02:30.720 --> 00:02:32.160\nmày chỉ để lại 1đ hồ nông\n\n00:02:32.480 --> 00:02:33.720\ncứ đứng núi này trông núi nọ\n\n00:02:34.040 --> 00:02:34.920\nmày chỉ ngày càng tệ\n\n00:02:35.320 --> 00:02:36.880\n8 bỏ thói hay nổi nóng\n\n00:02:37.160 --> 00:02:38.640\ntức giận nhiều không giải quyết được vấn đề\n\n00:02:38.760 --> 00:02:40.320\ncòn có thể cắt đứt con đường tài lộc\n\n00:02:40.720 --> 00:02:43.120\nngười thật sự lợi hại không cần nổi nóng một ánh mắt\n\n00:02:43.240 --> 00:02:44.840\nmột hành động cũng đủ giải quyết việc\n\n00:02:45.040 --> 00:02:46.560\nchỉ người biết kiểm soát tính khí\n\n00:02:46.880 --> 00:02:48.400\nthì gia đình mới ngày càng thịnh Vượng\n\n00:02:48.760 --> 00:02:50.160\nsự nghiệp mới ngày càng thành công\n\n00:02:50.480 --> 00:02:52.160\nchín bỏ thói thẳng như ruột ngựa\n\n00:02:52.640 --> 00:02:53.920\nnhìn thấu thì đừng nói toạc\n\n00:02:54.080 --> 00:02:55.320\nhãy để lại Cho nhau chút thể\n\n00:02:55.321 --> 00:02:57.561\ndiện nhất là với người thích khoe khoang bên cạnh\n\n00:02:57.640 --> 00:02:58.520\nbiết thì đừng vạch mặt\n\n00:02:58.960 --> 00:03:00.880\nmiệng vẫn cười nhưng trong lòng phải có phòng bị\n\n00:03:01.040 --> 00:03:02.160\nngoài miệng không nói Ra\n\n00:03:02.360 --> 00:03:03.240\ntrong lòng phải hiểu rõ\n\n00:03:03.600 --> 00:03:07.240\ntrong xã hội này đôi khi biết giả vờ hồ đồ mới là Cao thủ 10\n\n00:03:07.360 --> 00:03:08.680\nbỏ thói nói năng thiếu ý tứ\n\n00:03:08.880 --> 00:03:11.040\nquan hệ còn hời hợt thì đừng nói chuyện quá sâu\n\n00:03:11.240 --> 00:03:12.080\nvới người chưa thân\n\n00:03:12.240 --> 00:03:13.800\nđừng vừa gặp đã hỏi chuyện riêng tư\n\n00:03:13.920 --> 00:03:15.760\nchuyện riêng của mình cũng đừng tùy tiện tiết lộ\n\n00:03:16.200 --> 00:03:17.520\n11 bỏ thói ganh tị\n\n00:03:17.920 --> 00:03:19.120\nngười ta ngày càng nghèo đi\n\n00:03:19.121 --> 00:03:20.761\nvì không muốn thấy người khác tốt hơn mình\n\n00:03:21.240 --> 00:03:22.960\nmải dồn hết sự chú ý vào người khác\n\n00:03:23.240 --> 00:03:24.880\nthì chẳng còn tâm trí chăm lo Cho bản thân\n\n00:03:25.280 --> 00:03:26.720\nngười thật sự bản lĩnh hiểu rằng\n\n00:03:26.840 --> 00:03:28.440\ncó thời gian ghen tị với người khác\n\n00:03:28.640 --> 00:03:30.320\nthì thà dùng nó để nâng Cao chính mình\n\n00:03:30.800 --> 00:03:34.080\n12 bỏ thói than nghèo kẻ khổ đừng gặp AI cũng tham\n\n00:03:34.120 --> 00:03:34.920\ntôi không có tiền\n\n00:03:35.120 --> 00:03:38.200\ntôi nghèo cứ nói mình nghèo rồi mày sẽ ngày càng nghèo đi\n\n00:03:38.360 --> 00:03:39.560\nđó là quy luật tâm lý\n\n00:03:39.760 --> 00:03:41.360\nmay mắn có liên quan lớn đến tâm thái\n\n00:03:41.800 --> 00:03:43.600\nngười giàu có thì trong lòng phải giàu có\n\n00:03:43.920 --> 00:03:45.080\nlời nói cũng phải giàu có\n\n00:03:45.440 --> 00:03:46.960\nmiệng mình cũng là phong thủy tốt nhất\n\n00:03:47.200 --> 00:03:49.280\ntrong lòng nghĩ gì miệng sẽ nói Ra\n\n00:03:49.440 --> 00:03:51.680\nmiệng nói điều gì điều đó",
+        "links": [
+          "research/trends/2026-10-21/apify/vtt/subtitle-kesanmoi.r-7698254483419172103-vie-VN.vtt"
+        ],
+        "file": "subtitle-kesanmoi.r-7698254483419172103-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "đừng dính vào cbm nx dính vào mệt lắm",
+          "likes": 349,
+          "author": "2_0_0_9_120"
+        },
+        {
+          "text": "văn AI",
+          "likes": 23,
+          "author": "mainang11135"
+        },
+        {
+          "text": "12 tuổi đã xem,thanks nhá",
+          "likes": 18,
+          "author": "khang.nguyen8936"
+        },
+        {
+          "text": "sắp đi rồi ung thư rồi nghèo hay giàu giờ không quan trọng",
+          "likes": 11,
+          "author": "dng.lu.m"
+        },
+        {
+          "text": "13 tuổi nhà giàu sẵn rồi có nên tiếp thu ko",
+          "likes": 9,
+          "author": "nhng.vng39"
+        },
+        {
+          "text": "15t ddang cố tiếp thu [Hoa hồng héo][Hoa hồng héo]",
+          "likes": 7,
+          "author": "dellmechanho"
+        },
+        {
+          "text": "tôi 15 tuổi",
+          "likes": 6,
+          "author": "duy_khanh096"
+        },
+        {
+          "text": "thói tự oán trách bản thân chưa đủ cố gắng trắc cũng bỏ ha",
+          "likes": 4,
+          "author": "tansky_7"
+        },
+        {
+          "text": "17t cũng không mắc thì như nào ae",
+          "likes": 4,
+          "author": "ifan.echdaygieng"
+        },
+        {
+          "text": "ê ý là…",
+          "likes": 3,
+          "author": "user6510063330471"
+        },
+        {
+          "text": "bán gì nói luôn...",
+          "likes": 2,
+          "author": "nguyn5397"
+        },
+        {
+          "text": "Nghe đúng thế",
+          "likes": 2,
+          "author": "yeubongdas10"
+        },
+        {
+          "text": "đã tiếp thu",
+          "likes": 2,
+          "author": "ahtinyeudoi"
+        },
+        {
+          "text": "16t đi lm r😔",
+          "likes": 1,
+          "author": "heloh210"
+        },
+        {
+          "text": "không phải khi nào cũng tìm ra cách kiếm thêm",
+          "likes": 1,
+          "author": "haylamnguoitot56"
+        },
+        {
+          "text": "",
+          "likes": 1,
+          "author": "trieutrunghieu09"
+        },
+        {
+          "text": "10",
+          "likes": 1,
+          "author": "quchunguyn"
+        },
+        {
+          "text": "Cuộc sống của mình, thì mình tự biết đường đi của nó dk=))",
+          "likes": 1,
+          "author": "vietmuadong"
+        },
+        {
+          "text": "Ngủ",
+          "likes": 1,
+          "author": "120hz.meta"
+        },
+        {
+          "text": "2k11 đang tiếp thu",
+          "likes": 0,
+          "author": "_.khrtran1908._"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7698254483419172103",
+      "create_time": "2026-10-19T06:01:55.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@cuungodao/video/7669374863521467668",
+      "caption": "💰 Cảm Giác An Toàn Thực Sự: Không Phải Kiếm Được Bao Nhiêu, Mà Là Giữ Lại Được Bao Nhiêu!\n\nMột người bình thường 1 năm tiết kiệm được 50 triệu đồng rốt cuộc được tính là ở mức độ nào?\nChúng ta thường dễ bị áp lực bởi những câu chuyện \"thu nhập tiền tỷ\" trên mạng, nhưng lại quên mất thực tế khắc nghiệt: Tiền lương vừa mới tinh tinh vào tài khoản đã bị hàng loạt chi phí (tiền nhà, tiền ăn, ngoại giao, ốm đau...) lấy đi từng lớp một.\nCùng là tiết kiệm 50 triệu/năm, nhưng với những mức thu nhập khác nhau, chi phí sinh hoạt khác nhau và giai đoạn cuộc đời khác nhau, ý nghĩa của nó lại hoàn toàn khác biệt. Tiết kiệm tiền không phải là tu khổ hạnh hay sống như một cỗ máy, mà là cách bạn sắp xếp lại trật tự cuộc sống của mình.\nÝ nghĩa lớn nhất của khoản tiền tiết kiệm không phải để khoe khoang, mà là một \"lớp đệm giảm xóc\" khi rủi ro ập đến. Nó giúp bạn không phải cúi đầu cầu xin ai, không hoảng loạn khi gia đình có biến cố, và quan trọng nhất: Nó cho bạn quyền được lựa chọn!\nHãy cùng xem hết video để nhìn lại bức tranh tài chính của bản thân nhé!\n👇 Mục tiêu tiết kiệm năm nay của bạn là bao nhiêu? Hãy để lại bình luận chia sẻ cùng tôi nhé!\n© Nội dung thuộc về Cừu Ngộ Đạo\n\n#CuuNgoDao #TietKiemTien #QuanLyTaiChinh #PhatTrienBanThan #TuDuyTaiChinh #TuDoTaiChinh #KienThucTaiChinh #BaiHocCuocSong #DongLuc #QuanLyChiTieu #NguoiTruongThanh",
+      "author": {
+        "id": "7048256923653882881",
+        "name": "cuungodao",
+        "nick": "𝘾ừ𝙪_𝙉𝙜ộ_Đạ𝙤 ᶻ 𝗓 𐰁",
+        "profile": "https://www.tiktok.com/@cuungodao",
+        "fans": 104600
+      },
+      "play_count": 191200,
+      "like_count": 5299,
+      "share_count": 466,
+      "comment_count": 145,
+      "duration_s": 416,
+      "music": {
+        "id": "7669375032629070600",
+        "name": "âm thanh gốc - 𝘾ừ𝙪_𝙉𝙜ộ_Đạ𝙤 ᶻ 𝗓 𐰁",
+        "author": "𝘾ừ𝙪_𝙉𝙜ộ_Đạ𝙤 ᶻ 𝗓 𐰁",
+        "original": true
+      },
+      "hashtags": [
+        "cuungodao",
+        "tietkiemtien",
+        "quanlytaichinh",
+        "phattrienbanthan",
+        "tuduytaichinh",
+        "tudotaichinh",
+        "kienthuctaichinh",
+        "baihoccuocsong",
+        "dongluc",
+        "quanlychitieu",
+        "nguoitruongthanh",
+        "CuuNgoDao",
+        "TietKiemTien",
+        "QuanLyTaiChinh",
+        "PhatTrienBanThan",
+        "TuDuyTaiChinh",
+        "TuDoTaiChinh",
+        "KienThucTaiChinh",
+        "BaiHocCuocSong",
+        "DongLuc",
+        "QuanLyChiTieu",
+        "NguoiTruongThanh"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:02.320\nngười bình thường một năm tiết kiệm được 50.000.000đ\n\n00:00:02.440 --> 00:00:03.920\nrốt cuộc được tính là mức độ nào\n\n00:00:04.320 --> 00:00:05.000\nchúng ta khoan\n\n00:00:05.001 --> 00:00:07.281\nhãy quan tâm đến biểu đồ mức lương trung bình trên mạng\n\n00:00:07.600 --> 00:00:09.280\ncũng đừng xem những lời dối trá kiểu\n\n00:00:09.320 --> 00:00:10.560\nthu nhập hàng năm một tỷ đồng\n\n00:00:10.600 --> 00:00:11.440\nmới chỉ là khởi bước\n\n00:00:11.800 --> 00:00:13.280\ntách 50.000.000đ Ra mà xem\n\n00:00:13.560 --> 00:00:16.400\nmỗi tháng phải tiết kiệm 4.167.000đ\n\n00:00:16.760 --> 00:00:19.280\ntrung bình mỗi ngày phải để lại 137.000đ\n\n00:00:19.560 --> 00:00:21.520\nlưu ý là để lại chứ không phải kiếm được\n\n00:00:21.720 --> 00:00:22.600\nkhông phải hôm nay bạn\n\n00:00:22.640 --> 00:00:25.280\nthu nhập 137.000đ là coi như hoàn thành\n\n00:00:25.600 --> 00:00:28.360\nmà là sau khi bạn ăn uống xong trả xong tiền thuê nhà\n\n00:00:28.640 --> 00:00:31.240\nthanh toán xong tiền đi lại mua xong đồ dùng hàng ngày\n\n00:00:31.520 --> 00:00:33.240\nứng phó xong các mối quan hệ xã giao\n\n00:00:33.440 --> 00:00:35.880\nrồi xử lý xong những khoản Chi tiêu đột nhiên xuất hiện\n\n00:00:36.200 --> 00:00:38.640\ntrong tài khoản vẫn còn lại 137.000đ\n\n00:00:39.000 --> 00:00:40.160\ncái khó chính là ở đây\n\n00:00:40.400 --> 00:00:42.760\ntiền lương của rất nhiều người không phải là chưa từng đến\n\n00:00:43.200 --> 00:00:44.920\nmà là vừa mới tinh tinh vào tài khoản\n\n00:00:44.921 --> 00:00:46.521\nđã bị cuộc sống lấy đi từng lớp\n\n00:00:46.600 --> 00:00:49.880\ntừng lớp một tiền thuê nhà trước tiên lấy đi một khoản lớn\n\n00:00:50.360 --> 00:00:51.880\ntiền ăn uống lại lấy đi một khoản\n\n00:00:52.200 --> 00:00:55.160\ngiao thông điện thoại điện nước quần áo\n\n00:00:55.440 --> 00:00:56.880\ntụ tập Chi tiêu gia đình\n\n00:00:57.320 --> 00:00:58.880\nmỗi chỗ thoạt nhìn thì không nhiều\n\n00:00:59.160 --> 00:01:01.240\nnhưng cộng lại với nhau thì tiền lương đã bị cắt\n\n00:01:01.241 --> 00:01:02.001\nngày càng mỏng\n\n00:01:02.002 --> 00:01:04.921\nđợi đến cuối tháng bạn nhìn lại số dư mới phát hiện\n\n00:01:04.960 --> 00:01:07.840\ntiền lương dường như chỉ đến tài khoản của bạn ở trọ một đêm\n\n00:01:08.080 --> 00:01:09.600\nngày thứ 2 đã vội rời đi\n\n00:01:09.960 --> 00:01:12.320\nCho nên một năm tiết kiệm được 50.000.000đ\n\n00:01:12.600 --> 00:01:14.360\nthực sự không thể chỉ nhìn vào con số\n\n00:01:14.760 --> 00:01:16.560\nnếu mỗi tháng bạn nhận được 8.000.000đ\n\n00:01:16.800 --> 00:01:18.720\nthu nhập một năm khoảng 96.000.000đ\n\n00:01:19.000 --> 00:01:20.480\nbạn muốn tiết kiệm 50.000.000đ\n\n00:01:20.800 --> 00:01:23.240\nthì có nghĩa là hơn một nửa số tiền không được đụng đến\n\n00:01:23.480 --> 00:01:24.280\nnói cách khác\n\n00:01:24.400 --> 00:01:27.840\nmột tháng bạn tối đa chỉ có thể tiêu khoảng 3.800.000đ\n\n00:01:28.200 --> 00:01:29.840\nnếu bạn tự thuê nhà ở thành phố lớn\n\n00:01:30.120 --> 00:01:32.760\ntiền thuê nhà có thể đã tốn 2.000.000 đến 3.000.000đ\n\n00:01:32.920 --> 00:01:35.680\nsố tiền còn lại còn phải dùng để ăn uống đi lại\n\n00:01:35.960 --> 00:01:37.000\nmua đồ dùng sinh hoạt\n\n00:01:37.040 --> 00:01:38.920\nvà đối phó với những khoản Chi tiêu đột xuất\n\n00:01:39.360 --> 00:01:41.840\nlúc này vẫn muốn mỗi tháng tiết kiệm hơn 4.000.000đ\n\n00:01:42.200 --> 00:01:44.400\nthì không chỉ dựa vào kỷ luật tự giác đơn giản\n\n00:01:44.640 --> 00:01:46.080\nmà là sự kiềm chế lâu dài\n\n00:01:46.520 --> 00:01:49.080\nkhông phải là bớt mua vài cốc trà sữa nhẹ nhàng như vậy\n\n00:01:49.280 --> 00:01:50.760\nmà là trước mỗi lần tiêu tiền\n\n00:01:50.840 --> 00:01:52.240\nđều phải tự hỏi bản thân một câu\n\n00:01:52.480 --> 00:01:54.600\nkhoản tiền này có bắt buộc phải tiêu hay không\n\n00:01:55.200 --> 00:01:57.160\nnếu mỗi tháng bạn nhận được 10.000.000đ\n\n00:01:57.360 --> 00:01:58.960\nmột năm tiết kiệm 50.000.000đ\n\n00:01:59.400 --> 00:02:01.320\nthoạt nhìn thì có vẻ dễ dàng hơn một chút\n\n00:02:01.520 --> 00:02:03.720\nnhưng cũng không hề đơn giản như nhiều người vẫn nghĩ\n\n00:02:04.160 --> 00:02:05.120\nbởi vì số tiền mỗi\n\n00:02:05.160 --> 00:02:08.040\ntháng bạn có thể tiêu là khoảng 5.800.000đ\n\n00:02:08.280 --> 00:02:10.120\nchỉ cần tiền thuê nhà Cao hơn một chút\n\n00:02:10.320 --> 00:02:12.280\ncơ thể không thoải mái đi bệnh viện một chuyến\n\n00:02:12.560 --> 00:02:13.640\nđiện thoại hỏng phải đổi\n\n00:02:13.800 --> 00:02:16.840\nbạn bè kết hôn phải mừng cưới gia đình đột nhiên cần tiền\n\n00:02:17.120 --> 00:02:19.280\nthì mức ngân sách này sẽ ngay lập tức bị chọc thủng\n\n00:02:19.760 --> 00:02:21.400\nbạn tưởng rằng mình vẫn còn đường lui\n\n00:02:21.640 --> 00:02:22.720\nnhưng cuộc sống chỉ cần\n\n00:02:23.000 --> 00:02:25.640\ntiện xảy Ra một chuyện là có thể chèn ép mất đường lui đó\n\n00:02:25.920 --> 00:02:27.920\nnếu mỗi tháng bạn nhận được 15.000.000đ\n\n00:02:28.120 --> 00:02:29.560\náp lực sẽ nhỏ hơn rất nhiều\n\n00:02:30.000 --> 00:02:32.800\ntỷ lệ tiết kiệm của 50.000.000đ là khoảng 28%\n\n00:02:33.440 --> 00:02:34.040\ngiai đoạn này\n\n00:02:34.041 --> 00:02:36.081\nthử thách không phải là có thể sống tiếp hay không\n\n00:02:36.320 --> 00:02:38.160\nmà là bạn có thể kiểm soát được dục vọng\n\n00:02:38.200 --> 00:02:39.000\ntiêu dùng hay không\n\n00:02:39.160 --> 00:02:40.960\nbạn chọn ăn thêm vài bữa thịnh soạn\n\n00:02:41.240 --> 00:02:42.600\nmua thêm vài bộ quần áo\n\n00:02:42.760 --> 00:02:44.040\nđi chơi thêm vài chuyến\n\n00:02:44.280 --> 00:02:45.880\nhay là giữ lại một phần tiền trước\n\n00:02:45.920 --> 00:02:47.400\nđể tương Lai vững chắc hơn một chút\n\n00:02:47.880 --> 00:02:50.440\nvì vậy cùng là một năm tiết kiệm 50.000.000đ\n\n00:02:50.720 --> 00:02:52.560\nđối với những người có mức thu nhập khác nhau\n\n00:02:52.680 --> 00:02:54.240\ný nghĩa hoàn toàn không giống nhau\n\n00:02:54.720 --> 00:02:57.000\nđối với người có mức lương hàng tháng 8.000.000đ\n\n00:02:57.200 --> 00:02:58.840\ncó thể là đang phải cắn răng mà sống\n\n00:02:59.040 --> 00:03:01.240\nđối với người có mức lương hàng tháng 10.000.000đ\n\n00:03:01.440 --> 00:03:03.200\nlà bắt buộc phải lập kế hoạch nghiêm túc\n\n00:03:03.720 --> 00:03:06.040\nđối với người có mức lương hàng tháng 15.000.000đ\n\n00:03:06.200 --> 00:03:07.440\nlà phải kiểm soát dục vọng\n\n00:03:07.800 --> 00:03:09.120\nđối với người có mức lương hàng\n\n00:03:09.200 --> 00:03:10.680\ntháng từ 20.000.000đ trở lên\n\n00:03:10.960 --> 00:03:13.200\ncó thể chỉ là bớt đi một chút tiêu dùng bốc đồng\n\n00:03:13.480 --> 00:03:14.600\nđây chính là thực tế\n\n00:03:14.800 --> 00:03:16.800\nđánh giá khả năng tiết kiệm tiền của một người\n\n00:03:17.000 --> 00:03:18.960\nkhông thể chỉ nhìn vào việc trong tài khoản có\n\n00:03:19.040 --> 00:03:19.840\nthêm bao nhiêu tiền\n\n00:03:19.920 --> 00:03:21.520\nmà còn phải xem xét BA điều kiện\n\n00:03:22.120 --> 00:03:23.480\nthứ nhất xem mức thu nhập\n\n00:03:24.080 --> 00:03:25.680\ncùng tiết kiệm được 50.000.000đ\n\n00:03:25.920 --> 00:03:28.480\nngười có thu nhập thấp phải cắt giảm rất nhiều sự hưởng thụ\n\n00:03:28.800 --> 00:03:30.600\nngười có thu nhập Cao có thể chỉ là bớt\n\n00:03:30.640 --> 00:03:31.800\nmua vài thứ không cần thiết\n\n00:03:31.960 --> 00:03:33.720\nbạn không thể lấy kết quả của người khác\n\n00:03:33.721 --> 00:03:35.401\nđể phủ nhận sự nỗ lực của chính mình\n\n00:03:35.680 --> 00:03:38.440\nbởi vì vạch xuất phát của các bạn có thể vốn dĩ không nằm\n\n00:03:38.480 --> 00:03:39.400\ntrên cùng một đường thẳng\n\n00:03:40.000 --> 00:03:41.680\nthứ 2 xem Chi phí sinh hoạt\n\n00:03:42.160 --> 00:03:44.760\ncó người sống cùng Cha mẹ không phải trả tiền thuê nhà\n\n00:03:45.040 --> 00:03:46.560\ncó người được công ty bao ăn ở\n\n00:03:46.760 --> 00:03:48.560\náp lực tự nhiên sẽ nhỏ hơn rất nhiều\n\n00:03:48.760 --> 00:03:51.320\ncó người ở những thành phố có Chi phí sinh hoạt thấp\n\n00:03:51.600 --> 00:03:54.040\nmột tháng 3.000.000đ cũng có thể sống rất ổn\n\n00:03:54.560 --> 00:03:55.880\nnhưng cũng có người mỗi tháng\n\n00:03:55.920 --> 00:03:58.200\nriêng tiền thuê nhà đã tốn BA đến 4.000.000đ\n\n00:03:58.680 --> 00:04:01.480\ntiền lương còn chưa bắt đầu tiêu đã vơi đi một khoản lớn\n\n00:04:01.800 --> 00:04:03.600\ncùng là mức lương hàng tháng 10.000.000đ\n\n00:04:04.000 --> 00",
+        "links": [
+          "research/trends/2026-10-21/apify/vtt/subtitle-cuungodao-7669374863521467668-vie-VN.vtt"
+        ],
+        "file": "subtitle-cuungodao-7669374863521467668-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "cái hay ở đời là mỗi khi tích đc 1 tý thì lại có việc cần 😌",
+          "likes": 13,
+          "author": "mb_electronic_lab"
+        },
+        {
+          "text": "Mấy bạn ơi , kiên trì uống 1 cốc nước ấm vào buổi sáng, không bỏ bữa sáng nha, nhớ ngủ trước 11h và ngủ đủ 8 tiếng nha , buổi trưa phải ngủ 15-30p nha , ăn uống ăn nhiều rau hơn, đừng ăn đồ ăn quá cay hoặc quá ngọt quá hay chua nha , tập thể dục 10p-20p mỗi ngày , uống ít nhất 1,5 lít nước 1 ngày , yêu thương bản thân nhiều hơn và nhớ đi xe cẩn thận.",
+          "likes": 11,
+          "author": "chu.lu.qu8"
+        },
+        {
+          "text": "Nếu 1năm 50tr đồng .thì bao giờ có nhà ở 🥺",
+          "likes": 6,
+          "author": "hongpham.222"
+        },
+        {
+          "text": "3 năm nay nuôi 4 đưa con chi tiêu các thứ vẫn để dư ra hơn 200tr /1 năm",
+          "likes": 6,
+          "author": "giahan.1988"
+        },
+        {
+          "text": "Xài tiền kỹ. Có kế hoạch tiết kiệm và phải tuân thủ cái luật do mình đặt ra mới có dư. Chứ k phải đụng đâu xài đó",
+          "likes": 6,
+          "author": "tmc2503"
+        },
+        {
+          "text": "giá như Nyc của t ngộ đc cái này thì cũng k đến nỗi phải chia tay🫣🫣",
+          "likes": 5,
+          "author": "hlcatron"
+        },
+        {
+          "text": "Thế phải làm sao thu nhập 1 tháng 200-500triệu",
+          "likes": 2,
+          "author": "honganhbaby_official"
+        },
+        {
+          "text": "1 năm t cho bame t 60tr, bame ck 50tr, trừ chi phí sinh hoạt đồ này kia còn dư 50tr/năm, ít nhưng mà thôi vậy cũng đc, ít gì cũng lo đc cho bame 2 bên, ko giàu nhưng cũng đủ sống",
+          "likes": 2,
+          "author": "nnttmmy"
+        },
+        {
+          "text": "Tiết kiệm là một đức hạnh",
+          "likes": 2,
+          "author": "fbsenlen"
+        },
+        {
+          "text": "t cũng lao vào vc để cố gắng 1 năm tk dc 50tr để tới năm 50t sẽ có 1 tỉ tiền tiết kiệm",
+          "likes": 2,
+          "author": "b.n7188"
+        },
+        {
+          "text": "Cách t tiết kiệm chính là mua bds để gánh nợ. Cứ nợ là tự nhiên có động lực tiết kiệm và tích cực trả nợ ngay 😁",
+          "likes": 1,
+          "author": "tn.i.c"
+        },
+        {
+          "text": "mình dư đc 1 tỉ mà cho vay gần hết🥺",
+          "likes": 1,
+          "author": "kijeisqshxhwo"
+        },
+        {
+          "text": "tìm cách gia tăng thu nhập thay vì tiết kiệm",
+          "likes": 1,
+          "author": "user2044265821492"
+        },
+        {
+          "text": "riêng tiền nhà+ điện+ nước: 1 năm thuê cố định đã mất gần 80tr rồi",
+          "likes": 1,
+          "author": "thaiha6990"
+        },
+        {
+          "text": "T mới hư đt, đổi đt 1 cái đứt hơn 10tr.. mới để dành dư ra cái bay vèo 😭😭",
+          "likes": 1,
+          "author": "kymmi.s"
+        },
+        {
+          "text": "Tôi độc thân chi phí xong các kiểu 1 năm tài khoản dư thêm khoản 250triệu mà sợ ko giám có gia đình sợ chi phí không đủ.",
+          "likes": 1,
+          "author": "sua_chua_dien_lanh_cong"
+        },
+        {
+          "text": "1 năm dư 50tr ai làm đc mới đĩnh",
+          "likes": 0,
+          "author": "hio8133"
+        },
+        {
+          "text": "Mạng xã hội làm giới trẻ không biết giá trị thực của đồng tiền",
+          "likes": 0,
+          "author": "realchuluan"
+        },
+        {
+          "text": "năm 2014 ra đi khi no 200tr sau 2 năm trả hết nợ từ năm thứ 3 mới có dư và vay mượn thêm đầu tư vào bds sau 12 dư được 10 tỷ từ tiền mình làm ra và bds tăng. trong 12 năm vẫn lo cho gia đình đầu tư cho con đi du học",
+          "likes": 0,
+          "author": "hong.huy1977"
+        },
+        {
+          "text": "Nhưng chưa tính đến tết. Hết tết là hết tiết kiệm luôn😂",
+          "likes": 0,
+          "author": "hoangdung781993"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7669374863521467668",
+      "create_time": "2026-08-02T13:00:00.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@bachhoaxanh.official/video/7697485412943547655",
+      "caption": "Nhiều người muốn tiết kiệm tiền nhưng cứ đợi đến lúc lương cao hơn mới bắt đầu. Trong khi đó, có những phương pháp chỉ cần xuất phát từ một khoản nhỏ và một quy tắc đơn giản để tạo thói quen tích lũy.\n\nVideo này chia sẻ 4 thử thách tiết kiệm tiền: đếm ngược 30 ngày, tích lũy 52 tuần, bảng 365 ngày và gom tiền lẻ vào tài khoản riêng.\n\nMỗi cách có mức độ khó khác nhau. Thử thách 52 tuần tăng dần theo thời gian. Bảng 365 ngày có tổng mục tiêu lớn hơn nhưng cũng đòi hỏi ngân sách cao hơn. Còn cách gom tiền lẻ phù hợp với người muốn bắt đầu nhẹ nhàng, linh hoạt theo số dư thực tế.\n\nMục tiêu không phải ép bản thân nhịn ăn, bỏ bê sức khỏe hay cắt sạch những niềm vui cần thiết. Quan trọng là chọn mức tích lũy phù hợp, duy trì đều đặn và ưu tiên để dành một khoản trước khi chi tiêu cho những thứ không thiết yếu.\n\nTôi là Đàn Ông Trung Niên. Nếu bạn cũng muốn xây dựng kỷ luật giữ tiền, hãy chọn một trong bốn phương pháp và chia sẻ cách mình sẽ thực hiện.\n\n#danongtrungnien #phattrienbanthan #trietlycuocsong #tietkiemtien #taichinhcanhan",
+      "author": {
+        "id": "6969209371403486209",
+        "name": "bachhoaxanh.official",
+        "nick": "Đàn Ông Trung Niên",
+        "profile": "https://www.tiktok.com/@bachhoaxanh.official",
+        "fans": 68200
+      },
+      "play_count": 80800,
+      "like_count": 2892,
+      "share_count": 1047,
+      "comment_count": 110,
+      "duration_s": 489,
+      "music": {
+        "id": "7697485494069775156",
+        "name": "âm thanh gốc",
+        "author": "Đàn Ông Trung Niên",
+        "original": true
+      },
+      "hashtags": [
+        "danongtrungnien",
+        "phattrienbanthan",
+        "trietlycuocsong",
+        "tietkiemtien",
+        "taichinhcanhan"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:00.680\nhôm nay\n\n00:00:00.681 --> 00:00:04.121\ntôi sẽ chỉ Cho bạn vài chiêu để mỗi năm dư Ra cả 10.000.000\n\n00:00:04.240 --> 00:00:06.000\nmà không cần phải bóp mồm bóp miệng\n\n00:00:06.160 --> 00:00:08.680\nhay sống khổ sở như một kẻ tàn tiện bủn xỉn\n\n00:00:14.280 --> 00:00:15.480\nCho dù bạn là một gã trai\n\n00:00:15.560 --> 00:00:17.320\ntrẻ mới chập chững bước chân Ra đời\n\n00:00:17.480 --> 00:00:19.200\nhay là một nhân viên văn phòng sáng đi\n\n00:00:19.240 --> 00:00:21.160\ntối về với mức lương BA cọc 3đ\n\n00:00:21.520 --> 00:00:23.480\nchỉ cần bạn tuân thủ đúng những nguyên tắc này\n\n00:00:23.720 --> 00:00:25.640\nđến cuối năm mở tài khoản Ra xem\n\n00:00:25.920 --> 00:00:27.480\ncon số tiết kiệm năm chữ số\n\n00:00:27.560 --> 00:00:29.400\nchắc chắn sẽ nằm trĩa trệ trong đó\n\n00:00:29.920 --> 00:00:32.360\nđây đều là những phương pháp tiết kiệm cực kỳ đơn giản\n\n00:00:32.480 --> 00:00:34.080\nkhông cần suy nghĩ tính toán đau đầu\n\n00:00:34.360 --> 00:00:36.800\nvà tôi sẽ để cái cách nhàn hạ nhất ở cuối cùng\n\n00:00:37.240 --> 00:00:38.600\nbạn có thể tự làm một mình\n\n00:00:38.760 --> 00:00:39.560\nhoặc tốt nhất\n\n00:00:39.640 --> 00:00:41.320\nlà kéo thêm một thằng bạn thân vào cuộc\n\n00:00:41.360 --> 00:00:42.440\nđể cùng nhau cá cược\n\n00:00:42.680 --> 00:00:44.760\nđứa nào bỏ cuộc giữa chừng thì phải chịu phạt\n\n00:00:45.400 --> 00:00:47.840\nđầu tiên là bài tập dành Cho người mới bắt đầu\n\n00:00:48.280 --> 00:00:50.040\nphương pháp đếm ngược 30 ngày\n\n00:00:50.520 --> 00:00:52.400\ncái luật chơi của nó cực kỳ dễ hiểu\n\n00:00:52.680 --> 00:00:53.960\nvào ngày đầu tiên của tháng\n\n00:00:54.120 --> 00:00:55.160\nbạn ném vào lợn đất\n\n00:00:55.200 --> 00:00:57.920\nhoặc chuyển vào tài khoản tiết kiệm đúng 32.000đ\n\n00:00:58.240 --> 00:01:01.000\nđến ngày mùng 2 bạn cất đi 29.000đ\n\n00:01:01.400 --> 00:01:05.400\ncứ thế mỗi ngày bạn lại giảm đi 3.000đ Cho đến ngày thứ 30\n\n00:01:05.760 --> 00:01:09.280\nlúc đó bạn chỉ việc bỏ vào quỹ tiết kiệm đúng 1.000đ bạc lẻ\n\n00:01:09.840 --> 00:01:12.240\nbạn thấy đấy cái áp lực nó không hề tăng lên\n\n00:01:12.280 --> 00:01:14.280\nmà nó sẽ nhẹ dần đi vào cuối tháng\n\n00:01:14.560 --> 00:01:17.200\ncái lúc mà cái ví của bạn cũng đang bắt đầu xẹp xuống\n\n00:01:17.640 --> 00:01:19.960\ncứ đều đặn mỗi tháng lặp lại cái Chu trình này\n\n00:01:20.120 --> 00:01:20.960\nđến cuối năm\n\n00:01:21.160 --> 00:01:23.960\ntính Ra bạn cũng bỏ túi được đâu đó hơn 2.000.000 rưỡi\n\n00:01:24.360 --> 00:01:25.600\nnghe có vẻ ít đúng không\n\n00:01:26.080 --> 00:01:27.960\nnếu bạn là người có máu mặt hơn một chút\n\n00:01:28.200 --> 00:01:29.320\nthu nhập khá khẩm hơn\n\n00:01:29.640 --> 00:01:32.400\nthì cứ việc nhân đôi hoặc nhân 10 cái số tiền đó lên\n\n00:01:32.800 --> 00:01:35.640\nví dụ như ngày đầu tháng quất luôn 62.000\n\n00:01:35.920 --> 00:01:37.600\nngày thứ 2 58.000\n\n00:01:37.880 --> 00:01:38.680\nđến cuối năm\n\n00:01:38.760 --> 00:01:42.160\ncái quỹ đó sẽ tự động phình to lên thành hơn 11.000.000đ\n\n00:01:42.680 --> 00:01:43.880\ntôi có một cậu em khóa dưới\n\n00:01:43.881 --> 00:01:46.681\nlương mỗi tháng lẹt đẹt chỉ có vài 3.000.000đ\n\n00:01:46.880 --> 00:01:48.080\nnhưng lại áp dụng cái chiến\n\n00:01:48.120 --> 00:01:49.480\nthuật nhân đôi này rất nghiêm ngặt\n\n00:01:49.840 --> 00:01:51.720\ncứ hễ đầu tháng tinh tinh nhận lương\n\n00:01:51.800 --> 00:01:53.880\nlà cậu ta trích ngay một khoản Ra cất đi\n\n00:01:54.200 --> 00:01:56.840\nnhắm mắt làm ngơ như chưa từng có số tiền đó tồn tại\n\n00:01:57.160 --> 00:01:59.040\nđến giáp Tết mở sổ Ra xem\n\n00:01:59.240 --> 00:02:01.880\ncậu ta giật mình vì đã dư được hơn 10.000.000đ\n\n00:02:02.240 --> 00:02:05.240\nmột con số mà trước đây cậu ta chưa bao giờ dám nghĩ tới\n\n00:02:05.760 --> 00:02:06.640\ncậu ta kể rằng\n\n00:02:06.760 --> 00:02:08.480\ntrước Kia cứ nghĩ đến chuyện tiết kiệm\n\n00:02:08.560 --> 00:02:10.840\nlà hình dung Ra viễn cảnh phải nhịn ăn sáng\n\n00:02:10.920 --> 00:02:12.600\nnhịn cà phê vô cùng vật vã\n\n00:02:13.160 --> 00:02:15.880\nnhưng áp dụng cách này những ngày cuối tháng giáp hạt\n\n00:02:16.040 --> 00:02:18.480\ncậu ta chỉ phải móc túi Ra một 2.000đ lẻ\n\n00:02:18.800 --> 00:02:21.800\ncảm giác nó nhàn tênh và nhẹ nhõm như không cấp độ\n\n00:02:21.840 --> 00:02:24.240\ntiếp Theo đòi hỏi độ bền bỉ Cao hơn một chút\n\n00:02:24.560 --> 00:02:26.600\nđó là cuộc chạy đua tiết kiệm đường dài\n\n00:02:26.680 --> 00:02:28.640\ntrong suốt 52 tuần lễ của một năm\n\n00:02:29.200 --> 00:02:32.320\nkhởi động tuần đầu tiên bạn chỉ cần trích Ra 10.000đ\n\n00:02:32.560 --> 00:02:34.120\ncoi như nhịn một cốc trà đá\n\n00:02:34.760 --> 00:02:38.440\ntuần thứ 2 tăng lên 20.000 tuần thứ BA là 30.000\n\n00:02:38.960 --> 00:02:40.120\nquy luật rất rõ ràng\n\n00:02:40.440 --> 00:02:41.400\nmỗi tuần trôi qua\n\n00:02:41.600 --> 00:02:42.680\nbạn cứ mạnh dạn cộng\n\n00:02:42.760 --> 00:02:45.000\nthêm 10.000đ vào cái mức của tuần trước đó\n\n00:02:45.480 --> 00:02:48.160\ncứ kiên trì cày ả như vậy suốt 52 tuần\n\n00:02:48.480 --> 00:02:49.360\nkết quả cuối năm\n\n00:02:49.560 --> 00:02:52.800\nbạn sẽ thu hoạch được một cục tiền trị giá gần 14.000.000đ\n\n00:02:53.160 --> 00:02:55.640\nphải nói thẳng Ra là 2 tháng cuối cùng của năm\n\n00:02:55.800 --> 00:02:58.280\ncái áp lực tài chính nó sẽ gồng lên khá gắt\n\n00:02:58.920 --> 00:03:01.160\nphương pháp này lại cực kỳ hợp với những người nhận lương\n\n00:03:01.200 --> 00:03:04.280\nTheo tuần có một anh bạn tôi làm bên hành chính nhân sự\n\n00:03:04.560 --> 00:03:06.960\nlương được trả đều đặn vào chiều thứ 2 hàng tuần\n\n00:03:07.440 --> 00:03:09.920\ncứ nhận lương xong là anh ta tự động cắt xén\n\n00:03:10.040 --> 00:03:11.520\nchuyển thẳng vào tài khoản tiết kiệm\n\n00:03:11.680 --> 00:03:13.920\ntrước khi kịp nghĩ đến chuyện mua sắm hay nhậu nhẹt\n\n00:03:14.360 --> 00:03:15.840\nđúng là vào những tuần cuối năm\n\n00:03:16.080 --> 00:03:18.920\ncon số tiết kiệm nó đội lên đến 4 500.000 mỗi tuần\n\n00:03:19.320 --> 00:03:20.320\ncũng xót ruột phết đấy\n\n00:03:20.760 --> 00:03:23.120\nnhưng vì cái thói quen thắt lưng buộc bụng nó\n\n00:03:23.121 --> 00:03:25.601\nđã được mài giũa thành nếp suốt mấy tháng trời rồi\n\n00:03:25.760 --> 00:03:27.760\nnên anh ta vẫn cắn răng vượt qua được\n\n00:03:28.240 --> 00:03:31.480\ncuối năm đó anh ta dùng chính số tiền mồ hôi nước mắt ấy\n\n00:03:31.640 --> 00:03:33.960\ntự thưởng Cho mình một chuyến du lịch lên vùng Tây Bắc\n\n00:03:34.080 --> 00:03:35.320\nnếm cái lạnh buốt xương\n\n00:03:35.920 --> 00:03:36.720\ntiết kiệm tiền\n\n00:03:36.721 --> 00:03:38.121\nchưa bao giờ đồng nghĩa với việc\n\n00:03:38.160 --> 00:03:39.440\nbạn phải đóng băng tài khoản\n\n00:03:39.480 --> 00:03:40.760\nvà mang nó Theo súng mồ\n\n00:03:41.280 --> 00:03:42.680\nmục đích tối thượng của nó\n\n00:03:42.800 --> 00:03:44.960\nlà để bạn có một khoản ngân sách rủng rỉnh\n\n00:03:45.160 --> 00:03:47.280\nném vào những trải nghiệm thực sự đáng đồng tiền\n\n00:03:47.281 --> 00:03:48.761\n8 gạo bây giờ\n\n00:03:48.840 --> 00:03:51.080\nnếu bạn đã thấy mấy trò trên quá nhàm chán\n\n00:03:51.200 --> 00:03:52.880\nvà muốn tìm một cảm giác mạnh hơn\n\n00:03:53.160 --> 00:03:56.600\nhãy thử sức với trò chơi điền số 365 ngày\n\n00:03:57.000 --> 00:03:58.040\nbạn Ra ngoài tiệm in\n\n00:03:58.160 --> 00:04:01.120\nlấy một cái bản có chứa 365 con số khác nhau\n\n00:04:01.440 --> 00:04:03.240\ntừ một Cho đến 365\n\n00:04:03.720 --> 00:04:06.000\nluật chơi là mỗi ngày trước khi đi ngủ\n\n00:04:06.240 --> 00:04:08.640\nbạn nhắm mắt chọn đại một con số trên bảng\n\n00:04:08.800 --> 00:04:11.480\nvà chuyển đúng số tiền đó vào quỹ bí mật của mình\n\n00:04:11.800 --> 00:04:13.280\ntuyệt đối không được chọn trùng lặp\n\n00:04:13.720 --> 00:04:16.600\ncái hay của trò này là bạn có thể linh hoạt tùy cơ\n\n00:04:16.760 --> 00:04:18.640\nứng biến Theo độ dày mỏng của cái ví\n\n00:04:19.080 --> 00:04:21.120\nví dụ như đầu tháng lương vừa về\n\n00:04:21.240 --> 00:04:22.320\nví còn rủng rỉnh\n\n00:04:22.560 --> 00:04:25.840\nthì mạnh dạn khoanh luôn mấy con số to bự tầm BA 400.000\n\n00:04:26.280 --> 00:04:29.520\nđến cuối tháng cạn kiệt thì rụt rè chọn mấy con số hạng\n\n00:04:29.521 --> 00:04:32.161\nlông chừng 10 mấy 20.000 Cho nó đỡ vã\n\n00:04:32.760 --> 00:04:35.040\nmỗi lầ",
+        "links": [
+          "research/trends/2026-10-21/apify/vtt/subtitle-bachhoaxan-7697485412943547655-vie-VN.vtt"
+        ],
+        "file": "subtitle-bachhoaxan-7697485412943547655-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Lương tui 10tr tui đã làm việc này hơn 10 năm và giờ tích cóp cũng hơn 5 cây vàng, cứ tích cóp đủ 5 phân vàng là tui đi mua vàng, giờ vằng tăng thìvtieenf cũng tăng theo",
+          "likes": 30,
+          "author": "phat.t921"
+        },
+        {
+          "text": "mấy cái này lúc trước tôi nói là mơ hồ. và giờ tôi làm theo hiệu quả lắm. tôi cầu chúc cho tất cả những ai đang muốn bắt đầu tiết kiệm đều sẽ thành công sau 1 năm. chúc tất cả luôn thịnh vượng .",
+          "likes": 9,
+          "author": "tn.trng.quc6"
+        },
+        {
+          "text": "Nếu theo video 30 ngày: ngày 1:32.000, ngày 2: 31.000,…. Đúng 30 ngày tổng cộng 528.000 nhân là 6tr336 ngàn cũng dễ làm.",
+          "likes": 6,
+          "author": "tomoyosuzuki756"
+        },
+        {
+          "text": "Tui có 1 cv làm thêm. Tiền tiêu hàng tháng chỉ tiêu tiền làm thêm. Tiền làm chính tôi quên luôn ko sờ đến😂 cuối năm sờ đến kiểm tra đủ 12 lần nhận lương luôn . Hiha",
+          "likes": 5,
+          "author": "bellbell320"
+        },
+        {
+          "text": "lương 9tr500 mỗi tháng để ra 4tr,😂 cố gắng mỗi tháng đều đều vẫn rất ổn,niềm vui mỗi tháng lãnh lương ít ỏi của mình",
+          "likes": 4,
+          "author": "lamkhoa1988"
+        },
+        {
+          "text": "Híc. Mình nam nay 35t. Ko biết còn kịp ko nhỉ. 🥺",
+          "likes": 3,
+          "author": "mycandy091"
+        },
+        {
+          "text": "quá hay sẽ cố gắng hoàn thành trò chơi tiết kiệm 💰💰này cố lên nào 💰💰",
+          "likes": 3,
+          "author": "lamhanh5"
+        },
+        {
+          "text": "tiết kiệm gây nghiện là có thật , tôi không thể ngừng việc tiết kiệm 🥰",
+          "likes": 3,
+          "author": "seoiudau200"
+        },
+        {
+          "text": "Tui cứ mỗi lúc lĩnh lương chuyển vào tk 3triệu. Rồi tiêu trong khoảng còn lại thui",
+          "likes": 2,
+          "author": "hoaingok93"
+        },
+        {
+          "text": "Lương tôi 10tr tháng cất 1,6tr năm tôi có 19,2tr ko cần bóp j hết",
+          "likes": 2,
+          "author": "ngasontay84"
+        },
+        {
+          "text": "Quá tuyệt vời . Cảm ơn bạn👍",
+          "likes": 2,
+          "author": "huong.nguyen3417"
+        },
+        {
+          "text": "5 chữ số hả",
+          "likes": 1,
+          "author": "loopycat.trr"
+        },
+        {
+          "text": "Ngày nào tôi cũng bỏ vào lọ thuỷ tinh 2 lần, ko quan tâm mệnh giá [Ấm lòng]",
+          "likes": 1,
+          "author": "ruby00001111"
+        },
+        {
+          "text": "Ngày đầu bỏ 32k, ngày thứ 2 bỏ 29k. Những ngày tiếp theo bỏ bớt đi mỗi ngày 3k. Mà ngày thứ 30 lại vẫn phải bỏ 1 nghìn. Mình thấy chỗ này nó hơi cấn cấn",
+          "likes": 1,
+          "author": "dytsabk7q96e"
+        },
+        {
+          "text": "Hợp lý",
+          "likes": 1,
+          "author": "chinhqio1oa"
+        },
+        {
+          "text": "Quá đỉnh",
+          "likes": 1,
+          "author": "mnh.hong844"
+        },
+        {
+          "text": "để lúc đi cấp cứu có tiền mà đi chứ sao",
+          "likes": 1,
+          "author": "no028923"
+        },
+        {
+          "text": "lương của tôi chỉ 2 triệu 1 tháng thì tiết kiệm khó quá",
+          "likes": 0,
+          "author": "bena0409"
+        },
+        {
+          "text": "bỏ heo ngày 5 chục đc k ný chứ nghe ný kể thấy chán zi😂",
+          "likes": 0,
+          "author": "huynguy8"
+        },
+        {
+          "text": "nói thì dễ đấy nhưng không dễ đâu",
+          "likes": 0,
+          "author": "xidelamgiog33"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7697485412943547655",
+      "create_time": "2026-10-17T04:14:51.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@kinhnghiemhungdongy/video/7636026273407438098",
+      "caption": "mẹo làm việc hiệu quả hơn tất cả những người còn lại.\n#hungdongy ",
+      "author": {
+        "id": "7613295695537718279",
+        "name": "kinhnghiemhungdongy",
+        "nick": "Kinh nghiệm Hưng Đông Y",
+        "profile": "https://www.tiktok.com/@kinhnghiemhungdongy",
+        "fans": 168500
+      },
+      "play_count": 190700,
+      "like_count": 14100,
+      "share_count": 1990,
+      "comment_count": 192,
+      "duration_s": 118,
+      "music": {
+        "id": "7356698795637246752",
+        "name": "432hz healing frequency music",
+        "author": "Divine Hearts 💕",
+        "original": true
+      },
+      "hashtags": [
+        "hungdongy"
+      ],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:02.240\nphòng khám của tôi có một bác sĩ làm thủ khoa\n\n00:00:02.320 --> 00:00:03.880\nvà bác sĩ này chỉ Cho tôi cái cách\n\n00:00:03.960 --> 00:00:05.400\nmọi người làm việc và học tập\n\n00:00:05.600 --> 00:00:07.120\ntốt hơn tất cả những người còn lại\n\n00:00:07.400 --> 00:00:09.480\nđó là khi mọi người có một cái vấn đề nào đó khó\n\n00:00:09.720 --> 00:00:10.640\ncần phải giải quyết á\n\n00:00:10.920 --> 00:00:11.960\nthì mọi người để yên đó\n\n00:00:12.120 --> 00:00:14.440\nvà trước đó mọi người đi tắm nước lạnh trước đi\n\n00:00:14.800 --> 00:00:16.600\nkhi mọi người đi tắm nước lạnh và mọi người Ra\n\n00:00:16.680 --> 00:00:17.480\nthì mọi người sẽ\n\n00:00:17.520 --> 00:00:19.240\ntự động giải quyết được cái vấn đề đó\n\n00:00:19.320 --> 00:00:21.880\nhoặc là mọi người sẽ học cái thứ đó nhanh hơn gấp 10 lần\n\n00:00:22.200 --> 00:00:23.800\nso với thời điểm còn lại trong ngày\n\n00:00:24.280 --> 00:00:25.560\nthì khi mọi người tắm nước lạnh á\n\n00:00:25.680 --> 00:00:27.600\ntrong não của anh chị sẽ tiết Ra một cái chất gọi là\n\n00:00:27.800 --> 00:00:28.600\nadrenalin\n\n00:00:28.840 --> 00:00:31.840\nthì cái chất này nó sẽ khiến Cho anh chị ghi nhớ vấn đề lâu\n\n00:00:32.480 --> 00:00:35.000\nxử lý vấn đề nhanh và gọn và rất là hiệu quả\n\n00:00:35.280 --> 00:00:37.320\nthì anh chị tưởng tượng khi mà anh chị chạy ở trên đường á\n\n00:00:37.360 --> 00:00:38.160\nchạy xe máy á\n\n00:00:38.440 --> 00:00:40.800\ntự nhiên có một chiếc xe tải nó chạy ẩu mém\n\n00:00:40.840 --> 00:00:43.320\nnữa là nó tông anh chị rồi còn cách một vài xăng ti mét nữa\n\n00:00:43.360 --> 00:00:43.800\nthôi\n\n00:00:43.801 --> 00:00:46.521\nthì cái khoảnh khắc mà anh chị thoát chết trong gan tất á\n\n00:00:46.920 --> 00:00:47.920\nthì cái chất\n\n00:00:48.160 --> 00:00:50.840\nadrenalin nó sẽ tiết Ra nó sẽ làm Cho đầu óc của anh chị\n\n00:00:51.080 --> 00:00:53.040\nMinh Mẫn Tay chân của anh chị nhanh nhẹn hơn\n\n00:00:53.041 --> 00:00:53.841\nđể anh chị lấp léo\n\n00:00:54.160 --> 00:00:55.720\nvà anh chị sẽ rất là tỉnh táo\n\n00:00:56.000 --> 00:00:58.200\nvà anh chị sẽ nhớ cái khoảnh khắc đó\n\n00:00:58.480 --> 00:01:00.520\nđến vài năm về sau anh chị không quên được luôn\n\n00:01:00.560 --> 00:01:01.800\ncó người là nhớ suốt đời luôn\n\n00:01:02.120 --> 00:01:04.880\nthì đó là do adrenalin nó sẽ làm Cho anh chị\n\n00:01:05.279 --> 00:01:07.640\nnhư vậy thì khi đó anh chị tận dụng\n\n00:01:07.840 --> 00:01:09.640\ntrong cái lúc mà anh chị học và cái lúc anh chị làm việc\n\n00:01:09.840 --> 00:01:11.040\nthì khi mà anh chị tắm nước lạnh á\n\n00:01:11.280 --> 00:01:12.600\nnhớ là tắm nước lạnh nghe\n\n00:01:12.720 --> 00:01:14.080\nkhông phải là tắm nước bình thường\n\n00:01:14.160 --> 00:01:15.720\ntắm nước mát nghe nhớ là phải tắm nước lạnh\n\n00:01:15.920 --> 00:01:17.840\ncó nhiều người là người ta ngâm đá luôn á nhưng mà\n\n00:01:17.880 --> 00:01:18.960\nanh chị tắm nước lạnh được rồi\n\n00:01:19.200 --> 00:01:20.200\nthì khi anh chị tắm xong\n\n00:01:20.320 --> 00:01:22.160\nRa giải quyết xử lý công việc đó liền\n\n00:01:22.400 --> 00:01:23.600\nthì trong vòng tầm 10 phút\n\n00:01:24.280 --> 00:01:27.600\nanh chị làm việc nó sẽ bằng một tiếng người khác làm việc\n\n00:01:28.040 --> 00:01:30.360\nthì Cho nên anh chị tận dụng ví dụ sáng anh chị làm\n\n00:01:30.480 --> 00:01:32.960\nrồi trưa anh chị vô anh chị tắm phát nữa anh chị làm\n\n00:01:33.080 --> 00:01:34.600\nrồi chiều anh chị tắm phát nữa anh chị làm\n\n00:01:34.720 --> 00:01:36.600\nvà tránh tắm ban đêm\n\n00:01:36.640 --> 00:01:38.640\ntrước khi đi ngủ nó sẽ làm Cho anh chị rất là tỉnh ngủ\n\n00:01:39.320 --> 00:01:40.800\nvà đôi lúc có những người mà\n\n00:01:40.840 --> 00:01:42.960\ntới phòng khám của tôi nói là áp dụng cách này không được\n\n00:01:43.200 --> 00:01:46.880\nbởi vì có nhiều người mất cái thẻ hàng có nghĩa là người họ\n\n00:01:46.960 --> 00:01:49.480\nbị lạnh người họ sợ lạnh hoặc là những người bị thận yếu\n\n00:01:49.680 --> 00:01:50.920\nhoặc là những người dương hư\n\n00:01:50.960 --> 00:01:52.400\ncó nghĩa là cái phần dương của họ này bị kém\n\n00:01:52.401 --> 00:01:53.601\ná họ sẽ rất là sợ lạnh\n\n00:01:53.920 --> 00:01:55.320\nmọi người không nên áp dụng cách này\n\n00:01:55.440 --> 00:01:57.520\ncòn những người còn lại thì mọi người nên thử liền đi\n",
+        "links": [
+          "research/trends/2026-10-21/apify/vtt/subtitle-kinhnghiem-7636026273407438098-vie-VN.vtt"
+        ],
+        "file": "subtitle-kinhnghiem-7636026273407438098-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Mấy bạn muốn tập trung học tỉnh táo khi học bài dùng cách này hữu ích lắm\n1. Uống cốc nước ấm 10p sau khi thức dậy 2. Mỗi 30p ngồi thì đứng dậy đi trong 2p 3. Vận động 10p trước khi học 4. Nhìn ra xa trong 60s",
+          "likes": 356,
+          "author": "sng.h915"
+        },
+        {
+          "text": "tắm nc lạnh chắc cũg đc 8 năm r, dc cái nhà gần sông và cũg chẳng có bình nóng lạnh j cả. Cứ 5h30 sáng vào tắm gội rửa các kiểu xog ra th. Tỉnh táo sảng khoái nguyên ngày luôn đấy chứ😂Chắc do cơ địa khỏe nên tắm mùa nào cũg rất vô tư😁",
+          "likes": 75,
+          "author": "nhim.eou02"
+        },
+        {
+          "text": "Đúng hiệu nghiệm thật 😳",
+          "likes": 49,
+          "author": "cuong.nguyen0387"
+        },
+        {
+          "text": "tui bị hàn-)) siu sợ nước lạnh",
+          "likes": 23,
+          "author": "trmanhinh1"
+        },
+        {
+          "text": "lúc đó đang ở cty thì sao anh?",
+          "likes": 10,
+          "author": "jennydang86"
+        },
+        {
+          "text": "Ngày tắm 80 lần",
+          "likes": 6,
+          "author": "toan.lvn"
+        },
+        {
+          "text": "Tắm song vậy cảm lạnh thì sao a",
+          "likes": 6,
+          "author": "dunngg0"
+        },
+        {
+          "text": "Đang học giữa chừng đi rửa mặt bằng nc lạnh thì có tốt không ạ",
+          "likes": 6,
+          "author": "hoang_tien41"
+        },
+        {
+          "text": "thời tiết này mà tôi còn tắm nước ấm mới được 🥶🥶🥶 nghe bỏ đá thêm vào để nước lạnh nghe sợ quá",
+          "likes": 5,
+          "author": "yumy_0911"
+        },
+        {
+          "text": "Tắm nhiều quá người có bị nhiễm nước hông A",
+          "likes": 3,
+          "author": "thichriviu11"
+        },
+        {
+          "text": "đúng vậy 👍",
+          "likes": 2,
+          "author": "ngcthu709"
+        },
+        {
+          "text": "okie để tui test trước",
+          "likes": 2,
+          "author": "ngocduyen_1111"
+        },
+        {
+          "text": "thấy đúng đúng",
+          "likes": 2,
+          "author": "the.world847"
+        },
+        {
+          "text": "Đã lưu video ạ🥰",
+          "likes": 1,
+          "author": "haangel012"
+        },
+        {
+          "text": "cảm ơn chia sẻ của bạn",
+          "likes": 1,
+          "author": "tuluong869"
+        },
+        {
+          "text": "Cảm ơn bạn!",
+          "likes": 1,
+          "author": "kimgiangbui15"
+        },
+        {
+          "text": "Lỡ đang trong cty thì uống nước đá được ko a?",
+          "likes": 1,
+          "author": "malumdongxu1201"
+        },
+        {
+          "text": "Cách này có tác dụng phụ k ạ",
+          "likes": 1,
+          "author": "nhodulamlamluon"
+        },
+        {
+          "text": "biết ơn thầy",
+          "likes": 1,
+          "author": "minhngo86332"
+        },
+        {
+          "text": "chắc t kêu cty xây thêm cái phòng tắm quá",
+          "likes": 1,
+          "author": "kld_304"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7636026273407438098",
+      "create_time": "2026-05-04T13:22:12.000Z",
+      "is_slideshow": false
+    },
+    {
+      "url": "https://www.tiktok.com/@loading141092/video/7641213596852161800",
+      "caption": "Hôm nay bạn có mệt không.!",
+      "author": {
+        "id": "7603746822028903444",
+        "name": "loading141092",
+        "nick": "Loading...",
+        "profile": "https://www.tiktok.com/@loading141092",
+        "fans": 112
+      },
+      "play_count": 177400,
+      "like_count": 2644,
+      "share_count": 1571,
+      "comment_count": 23,
+      "duration_s": 29,
+      "music": {
+        "id": "7641213622621948692",
+        "name": "âm thanh gốc - Loading...",
+        "author": "Loading...",
+        "original": true
+      },
+      "hashtags": [],
+      "subtitle_or_transcript": {
+        "kind": "vtt",
+        "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:02.040\nphải đến khi cuối ngày ngả lưng xuống giường\n\n00:00:02.240 --> 00:00:04.600\nbạn mới nhận Ra bản thân đã mệt đến rã rời\n\n00:00:05.120 --> 00:00:06.320\ncó đôi khi bạn không rõ\n\n00:00:06.360 --> 00:00:08.400\nmình đã vượt qua ngày hôm nay bằng cách nào\n\n00:00:08.760 --> 00:00:11.520\nmọi thứ như trôi đi trong thói quen bạn làm việc\n\n00:00:11.760 --> 00:00:14.360\ntrả lời giải quyết im lặng mỉm cười\n\n00:00:14.600 --> 00:00:17.280\nvà có những lúc bạn thấy thương mình đến lặng người\n\n00:00:17.480 --> 00:00:18.800\nvì đã cố gắng quá nhiều\n\n00:00:19.240 --> 00:00:20.520\nvì đã đi qua bao nhiêu ngày\n\n00:00:20.521 --> 00:00:22.321\nmà chẳng AI hỏi bạn có mệt không\n\n00:00:22.720 --> 00:00:25.040\nvì chính bạn cũng quên mất cách tự ôm lấy mình\n\n00:00:25.280 --> 00:00:28.520\ntự Cho phép mình yếu mềm tự thừa nhận rằng tôi mệt rồi\n",
+        "links": [
+          "research/trends/2026-10-21/apify/vtt/subtitle-loading141-7641213596852161800-vie-VN.vtt"
+        ],
+        "file": "subtitle-loading141-7641213596852161800-vie-VN.vtt"
+      },
+      "top_comments": [
+        {
+          "text": "Khác biệt giữa thành công và thất bại nhiều khi không nằm ở việc ai giỏi hơn ai đâu, mà là ai có thể bước tiếp đến cuối cùng ✨\nThực ra mỗi người đều có những điểm mạnh và tiềm năng riêng. Chỉ là sau quá nhiều lần thất bại, nhiều người dần mất niềm tin vào bản thân và chưa bao giờ thật sự nhìn thấy giá trị của mình.\nCuối tuần này t biết tới 1 workshop về bản sắc cá nhân khá hay. Kiểu được phân tích để nhìn ra thế mạnh, tiềm năng và điều khiến bản thân khác biệt, thay vì mãi loay hoay đi tìm câu trả lời ở người khác. Ai qtam nhắn t share cho nhé!!",
+          "likes": 3,
+          "author": "life_getsinteresting"
+        },
+        {
+          "text": "🥰🥰🥰",
+          "likes": 1,
+          "author": "meo_mo8"
+        },
+        {
+          "text": "Mệt chứ, nhiều lúc mệt dữ lắm, chỉ muốn ngủ thêm không muốn dậy nữa, nhiều khi trong mơ vô thức rơi nước mắt đến ướt gối, đau cũng hk dám đi bv, đói thì ăn tạm tạm qua bữa, chỉ mong cố gắng ráng thêm chút nữa, mẹ ở quê còn mong ngóng dựa vào mình. Mẹ khổ cả đời r nên bản thân khổ thêm tí cũng kệ, mệt thì khóc, buồn thì nghe nhạc. Chỉ mong mẹ luôn khoẻ mạnh, bản thân mệt 1 xíu vẫn không sao",
+          "likes": 0,
+          "author": "quy_quy.2903"
+        },
+        {
+          "text": "Stress điên 🥱🍀",
+          "likes": 0,
+          "author": "trnvnnh607"
+        },
+        {
+          "text": "Cái giá của việc đánh mất lòng tin là giờ đây bạn có làm gì cũng không có kết quả…. Tôi mệt rồi",
+          "likes": 0,
+          "author": "hipne20082020"
+        },
+        {
+          "text": "Cho mình xin video với",
+          "likes": 0,
+          "author": "tuyenngo300795"
+        },
+        {
+          "text": "Mk xin video vs ạ",
+          "likes": 0,
+          "author": "mun_mun_1211"
+        },
+        {
+          "text": "Cho mình xin video với ạ",
+          "likes": 0,
+          "author": "kim.hoa6342"
+        },
+        {
+          "text": "mệt . mệt lắm rồi",
+          "likes": 0,
+          "author": "i.m.n0112"
+        },
+        {
+          "text": "Mệt, thật sự mệt",
+          "likes": 0,
+          "author": "cuckim993"
+        },
+        {
+          "text": "cho mình xin video với ạ",
+          "likes": 0,
+          "author": "thaoquyen_utpi"
+        },
+        {
+          "text": "😔😔😔 mệt rồi",
+          "likes": 0,
+          "author": "thinh.38ht"
+        },
+        {
+          "text": "mệt",
+          "likes": 0,
+          "author": "metauhu0422"
+        },
+        {
+          "text": "Cho mình xin video với ạ",
+          "likes": 0,
+          "author": "giaydepxinhgl"
+        },
+        {
+          "text": "cho mình xin vdeo",
+          "likes": 0,
+          "author": "thanh.hoen"
+        },
+        {
+          "text": "@𝑷𝙝𝒖̛𝙤̛𝒏𝙜 𝙇𝒊𝙚̂𝒏 thương lắm",
+          "likes": 0,
+          "author": "tydat24"
+        },
+        {
+          "text": "🥲",
+          "likes": 0,
+          "author": "thuymairiview"
+        },
+        {
+          "text": "😌😌😌",
+          "likes": 0,
+          "author": "chm.nguyn5402"
+        },
+        {
+          "text": "😁😁😁",
+          "likes": 0,
+          "author": "mylo2024._"
+        },
+        {
+          "text": "mệt chết tôi rồi. tôi off hẳn dc hơm? sao mọi thứ đến vs tôi khó khăn quá dạ. tôi của những ngày ấy đâu rồi. trả lại tôi của thời điểm tôi còn là bản thân mình đi. làm ơn\nlàm ơn\nlàm ơn",
+          "likes": 0,
+          "author": "bodanhcau9595"
+        }
+      ],
+      "source_actor": "clockworks/tiktok-scraper",
+      "raw_id": "7641213596852161800",
+      "create_time": "2026-05-18T12:51:24.000Z",
+      "is_slideshow": false
+    }
+  ]
+}

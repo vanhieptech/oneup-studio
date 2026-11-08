@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: storage
 type: convention
 status: active
-updated: 2026-10-16
+updated: 2026-11-07
 tags: [storage, rule-65, rule-66, source-of-truth]
 ---
 # Quy ước lưu trữ (luật 65, L-034)
@@ -73,7 +73,7 @@ Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (cùng đường dẫn
 | `video-engine/public/voice/_prosody-job.json` | file job tạm | không cần | — |
 | `resources/refs/awesome-ai-motion/` | clone tài liệu ngoài | tuỳ chọn | `git clone` lại |
 | `resources/refs/transitions.dev/` | clone tài liệu ngoài (Transitions.dev License, @8c92530) | tuỳ chọn | `git clone` lại; bản port nằm ở `video-engine/src/composition/transitions/` |
-| `resources/refs/motionmaxxing/` | **vendored full tree in git** (Apache-2.0 + THIRD_PARTY: GSAP GreenSock Standard, three.js MIT, Inter OFL, brand trademarks; upstream @8c8ec0f; nested .git removed) | tracked | ports Remotion: `video-engine/src/composition/motionmaxxing/`; notes `research/references/motionmaxxing-notes.md`; `THIRD_PARTY.md` + upstream LICENSE/NOTICE |
+| `resources/refs/motionmaxxing/` | **vendored full tree in git** (Apache-2.0 + THIRD_PARTY: GSAP GreenSock Standard, three.js MIT, Inter OFL, brand trademarks; upstream @8c8ec0f; nested .git removed) | tracked | skill entry `skills/motionmaxxing` → symlink here (`INTEGRATION.md`); ports Remotion: `video-engine/src/composition/motionmaxxing/`; notes `research/references/motionmaxxing-notes.md`; `THIRD_PARTY.md` + upstream LICENSE/NOTICE |
 | `.env`, `__pycache__/`, `.DS_Store` | bí mật/cache | không chép | — |
 
 Voice take (`video-engine/public/voice/*.wav|json`) **được commit** nên Mac có qua git. Chạy `python3 pipeline/scripts/media-sync.py verify` trên Mac sau mỗi lần sync; exit ≠ 0 = thiếu.

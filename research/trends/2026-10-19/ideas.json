@@ -1,0 +1,62 @@
+{
+ "ideas": [
+  {
+   "id": "pin-98-phan-tram",
+   "title": "Tan làm pin còn 98%: ngày kinh hoàng hay ngày làm được nhiều nhất? Một cái liếc vài giây đắt hơn bạn nghĩ",
+   "trend_id": "tt-colo.vn-7693555573517782278",
+   "bridge_id": "B-98pin-01",
+   "lesson": "3.6 Lúc làm việc cần nghĩ liền mạch, chặn cả những lần cắt ngang vài giây (Altmann, Trafton & Hambrick 2014: bị cắt ngang trung bình 2,8 giây làm tỉ lệ lỗi ở bước kế tiếp của việc làm theo thứ tự tăng gấp đôi, 4,4 giây thì gấp ba, thí nghiệm lab. Mark, Gonzalez & Harris 2005: quan sát 24 nhân viên văn phòng, việc bị cắt ngang trung bình mất 25 phút 26 giây mới quay lại được, giữa chừng chen 2,26 việc khác. Mark, Gudith & Klocke 2008: 48 người, bị cắt ngang làm nhanh hơn nhưng căng thẳng, bực bội hơn. Bằng chứng B. Ghi chú sách: đóng cửa chỉ chặn được người khác tìm mình; tự mình mở ra thì phải kèm 3.1 tắt thông báo và 3.5 gom tin nhắn).",
+   "angle": "contrarian / data",
+   "pattern": "P03 + P01",
+   "differentiation": "Mọi người đang nói: tan làm còn 98% pin là dấu hiệu một ngày làm việc kinh hoàng (TikTok @colo.vn 288k view, 06/10); comment top 'kinh hoàng là đt reo cả ngày sao còn 98 nổi' (88 like). Góc của mình: lật lại — pin 98% có khi là ngày bạn làm được nhiều nhất, vì mỗi cái liếc vài giây làm lỗi tăng gấp đôi và mất cả chục phút mới quay lại việc cũ. Không chê ai lướt điện thoại; chỉ đưa một việc: lúc cần nghĩ liền mạch thì chặn cắt ngang.",
+   "theme": "dark",
+   "week": 2,
+   "target": "clip-10 (3.6) hook thay thế / bản nháp sớm",
+   "hook_vi": "Tan làm mở điện thoại ra, pin còn 98%. Hôm đó với bạn là kinh hoàng, hay đã đời?",
+   "moment_vi": "Cả ngày điện thoại reo, tối về chẳng nhớ mình làm xong việc gì.",
+   "turn_vi": "Lúc cần nghĩ liền mạch: đóng cửa, đeo tai nghe, tắt thông báo, gom tin nhắn trả lời một lần.",
+   "hook_en": "Phone still at 98% after work?",
+   "explainer": "HyperFrames: đồng hồ pin 98% vẽ nét; một dải 'bước làm việc' chạy ngang, mỗi lần icon chuông chen vào thì dải đứt và chấm lỗi nhân đôi (2,8 giây → ×2, 4,4 giây → ×3); sau đó đồng hồ 25 phút quay một vòng để quay lại việc cũ. Nhãn nguồn nhỏ: Altmann et al. 2014 · Mark et al. 2005 · lab + 24 nhân viên văn phòng.",
+   "beats": [
+    {"text": "Tan làm mở điện thoại ra, pin còn 98%. Hôm đó với bạn là kinh hoàng, hay đã đời?", "expression": "surprised", "action": "talking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "Phone still at 98% after work?"},
+    {"text": "Trên TikTok người ta gọi đó là ngày làm việc kinh hoàng. Mà bạn nhớ thử coi: hôm điện thoại reo cả ngày, bạn làm xong được mấy việc?", "expression": "confused", "action": "thinking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Buzzing all day. How much got done?"},
+    {"text": "Chắc bạn đang nghĩ: liếc một cái có mấy giây đâu.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 4, "caption_en": "Just a few seconds, right?"},
+    {"text": "Một thí nghiệm cho thấy: bị cắt ngang chưa tới ba giây, lỗi ở bước làm kế tiếp đã tăng gấp đôi. Hơn bốn giây thì gấp ba.", "expression": "surprised", "action": "reacting", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Under 3 seconds: errors double."},
+    {"text": "Còn ở văn phòng thật, người ta theo dõi 24 nhân viên: việc bị cắt ngang, trung bình 25 phút sau mới quay lại được.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "25 minutes to get back on task."},
+    {"text": "Một bên là phòng lab, một bên là nhóm nhỏ, nên coi như chỉ đường thôi. Có điều đường khá rõ: pin 98% có khi là ngày bạn làm được nhiều nhất.", "expression": "happy", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "98% might be your best day."},
+    {"text": "Lúc cần nghĩ liền một mạch: đóng cửa, đeo tai nghe, tắt thông báo, tin nhắn gom lại trả lời một lần.", "expression": "neutral", "action": "typing", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "Door shut. Headphones on. Pings off."},
+    {"text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: một buổi code bị ping liên tục, so với một buổi tắt hết thông báo.", "expression": "neutral", "action": "talking", "pose": "sitting", "background": "desk", "duration": 5, "caption_en": "[Hiệp to confirm] My ping-free coding block."},
+    {"text": "Tối nay tan làm, pin bạn còn bao nhiêu phần trăm? Comment con số nha.", "expression": "happy", "action": "reacting", "pose": "standing", "background": "grid", "duration": 4, "caption_en": "Battery at clock-out? Drop the number."}
+   ]
+  },
+  {
+   "id": "check-tin-nhan-3-lan",
+   "title": "Sếp nhắn 'em ơi' rồi im: check tin nhắn theo ba khung giờ, bớt căng mà vẫn trả lời đủ",
+   "trend_id": "tt-vtv24news-7696488195638316308",
+   "bridge_id": "B-msg-02",
+   "lesson": "3.5 Gom email và tin nhắn, xử lý vài lần cố định mỗi ngày (Kushlev & Dunn 2015: 124 người lớn, hai tuần, cùng một nhóm tự so với chính mình; tuần chỉ check email 3 lần/ngày căng thẳng hằng ngày thấp hơn rõ so với tuần không giới hạn, Cohen's d = 0,37; số email nhận và trả lời hai tuần như nhau; lúc không giới hạn trung bình check 15,5 lần/ngày. Bằng chứng B; chỉ một nghiên cứu, hiệu ứng vừa và nhỏ, đo căng thẳng chứ không đo kết quả công việc; tin nhắn tức thời chưa ai đo trực tiếp, chỉ suy ra). Chi phí: không tốn tiền, tốn chút thời gian báo đồng nghiệp mình trả lời theo giờ, và chút kiên nhẫn.",
+   "angle": "empathy / data",
+   "pattern": "P01 + P04",
+   "differentiation": "Mọi người đang nói: doanh nghiệp nên hạn chế nhắn việc ngoài giờ (VTV24 dẫn khảo sát Hàn Quốc: hơn 1/4 nhân viên văn phòng được hỏi có nguy cơ rối loạn giấc ngủ khi thường xử lý việc sau giờ làm, 1,3M view) và 'ngoài giờ mình có quyền không rep' (@kieu06011993; comment 'sếp nhắn em ơi xong để đấy, chẳng biết có nên rep không' 21 like, 'muốn gì nhắn 1 lần luôn đi' 34 like). Góc của mình: không ngồi chờ sếp hay công ty đổi; mình tự đổi nhịp check ngay trong giờ — ba khung cố định, báo trước, việc gấp thì gọi. Không nói chuyện bệnh, chỉ nói căng thẳng hằng ngày như nghiên cứu đo.",
+   "theme": "light",
+   "week": 2,
+   "target": "clip-08 (3.5, đăng #7) hook thay thế / bản nháp sớm",
+   "hook_vi": "Sếp nhắn đúng hai chữ “em ơi” rồi im luôn. Bạn mở điện thoại ra coi lại mấy lần?",
+   "moment_vi": "Chờ câu tiếp theo của sếp, cứ vài phút lại mở điện thoại.",
+   "turn_vi": "Chọn ba giờ check cố định, báo trước với team, việc gấp thì gọi.",
+   "hook_en": "Boss texts “hey”… then silence.",
+   "explainer": "HyperFrames: bộ đếm lượt mở điện thoại nhảy tới 15,5 rồi thu lại còn 3 dấu tick ở 9h, 13h, 16h; thanh 'căng thẳng' hạ xuống trong khi hộp thư 'đã trả lời' vẫn đầy như cũ. Nhãn: Kushlev & Dunn 2015 · 124 người · 2 tuần · đo email.",
+   "beats": [
+    {"text": "Sếp nhắn đúng hai chữ “em ơi” rồi im luôn. Bạn mở điện thoại ra coi lại mấy lần?", "expression": "surprised", "action": "talking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "Boss texts “hey”… then silence."},
+    {"text": "Chắc nhiều à. Mà đâu phải chỉ tin của sếp, cả ngày mình cứ mở ra, đóng vô, rồi mở ra.", "expression": "confused", "action": "reacting", "pose": "sitting", "background": "desk", "duration": 6, "caption_en": "Open, close, open again."},
+    {"text": "Có nghiên cứu theo dõi 124 người trong hai tuần. Tuần thả cửa, trung bình mỗi người check email 15 lần rưỡi một ngày.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "Free week: 15.5 checks a day."},
+    {"text": "Tuần kia, cũng mấy người đó chỉ check ba lần một ngày. Căng thẳng thấp hơn rõ, mà email nhận với trả lời vẫn y như cũ.", "expression": "surprised", "action": "reacting", "pose": "standing", "background": "grid", "duration": 7, "caption_en": "3 checks. Less stress. Same replies."},
+    {"text": "Họ đo email chứ chưa đo tin nhắn, cũng mới có một nghiên cứu, mức khác biệt vừa phải thôi.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "One study. Email only."},
+    {"text": "Vậy mình thử nhỏ thôi: chọn ba giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều. Rồi nhắn team một câu: việc gấp thì gọi.", "expression": "happy", "action": "typing", "pose": "sitting", "background": "desk", "duration": 8, "caption_en": "9, 1, 4. Urgent? Call me."},
+    {"text": "Tốn đúng một tin nhắn báo trước, với chút kiên nhẫn mỗi lần thấy chấm đỏ.", "expression": "neutral", "action": "talking", "pose": "standing", "background": "grid", "duration": 5, "caption_en": "Cost: one heads-up text."},
+    {"text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: chat công ty và giờ mình check tin nhắn khi code.", "expression": "neutral", "action": "talking", "pose": "sitting", "background": "desk", "duration": 5, "caption_en": "[Hiệp to confirm] My chat-check hours."},
+    {"text": "Hôm nay bạn mở tin nhắn bao nhiêu lần? Đếm thử rồi comment nha.", "expression": "happy", "action": "reacting", "pose": "standing", "background": "grid", "duration": 4, "caption_en": "How many checks today? Comment."}
+   ]
+  }
+ ]
+}

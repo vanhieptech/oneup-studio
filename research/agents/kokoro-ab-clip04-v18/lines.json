@@ -1,0 +1,12 @@
+{
+ "source": "content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md + final/script-v18-delivery.md (chunk table, Rule Reviewer 2026-10-20 23:17)",
+ "speaker": "hiep (Hiệp chibi, nam, baseline F5 · Thái Sơn) — cả 3 chunk đều là lời Hiệp; clip-04 không có Omi",
+ "lines": [
+  {"id": "c07", "beat": "b03", "text": "nếu kiểm tra ngay thì nhóm đọc lại làm tốt hơn.", "stress": "kiểm tra ngay", "risk": "R4: không lặng ≥0,25s ở «ngay thì»"},
+  {"id": "c08", "beat": "b03", "text": "Nhưng hai ngày sau, nhóm tự kiểm tra lại nhớ hơn hẳn.", "stress": "hai ngày sau", "risk": "R4: đọc liền «lại nhớ hơn hẳn», không lặng giữa «kiểm tra» và «lại»"},
+  {"id": "c14", "beat": "b06", "text": "thấy lớp có kiểm tra nhỏ thì điểm cao hơn lớp không làm kiểm tra nhỏ, ở mức vừa.", "stress": "cao hơn", "risk": "R4: không lặng ≥0,25s ở «nhỏ thì»; «ở mức vừa» hạ giọng nhẹ"}
+ ],
+ "notes": "Không có TOEIC/Omi/số/tiếng Anh trong 3 chunk nên không cần phiên âm. Không tag [cười]/[thở dài]. speed 1.0 (không tua). Mỗi chunk = 1 lần gọi model, không cắt trong output (L-016).",
+ "voicepacks_preregistered": ["manh_dung", "hung_thinh", "tuan_ngoc", "duc_an", "duc_duy", "thanh_dat", "phat_tai"],
+ "selection_rule_preregistered": "Chọn 1 voicepack cho cả 3 câu: (1) loại pack nghe ra giọng nữ hoặc có câu STT < 0,8; (2) trong số còn lại lấy STT trung bình cao nhất; (3) hoà (chênh ≤ 0,02) thì chọn pack có F0 trung vị gần Thái Sơn nhất; (4) nghe tai chỉ để loại lỗi dấu/âm cuối/lặng giữa cụm, không đổi luật sau khi nghe."
+}

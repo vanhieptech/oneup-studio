@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-tu-can-tro-nam-phut",
+ "title": "[STUB] Tự cản trở bản thân: không cần giải mã nỗi sợ, mở việc ra năm phút",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "giai-ma-thoi-quen-tu-can-tro-ban",
+  "bridge_id": "B-tucantro-01",
+  "lesson": "4.9 Trì hoãn là né cảm giác khó chịu, không phải lười (callback clip-02) + 4.7 chia nhỏ việc lớn. Mẹo bắt đầu năm phút lấy từ bài VnExpress (theo Washington Post), không phải số liệu sách. Fact và mức bằng chứng do Deep Research kiểm từ spec clip-02.",
+  "angle": "contrarian / empathy",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: tự cản trở bản thân là do nỗi sợ sâu xa, phải nhận diện và quan sát suy nghĩ (VnExpress 27/10, theo Washington Post). Góc của mình: không cần đào nỗi sợ trước; mở tờ giấy ra đúng năm phút, khi việc có hình hài thì nỗi sợ tự nhỏ lại. Ví dụ đời thường: giấy tờ cần nộp, không dùng chuyện tình cảm hay bệnh."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "tu-can-tro-nam-phut.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn biết hạn nộp giấy tờ là thứ Sáu, vậy mà tới tối thứ Năm vẫn chưa dám mở cái bìa hồ sơ ra?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Due Friday. Still closed Thursday night.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "tu-can-tro-nam-phut.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bìa hồ sơ nằm trên bàn cả tuần, ngày nào đi ngang cũng thấy, mà tay cứ né, tối nào cũng tự hứa mai làm.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Every night: tomorrow.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "tu-can-tro-nam-phut.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Người ta gọi cái này là tự cản trở bản thân, và hay khuyên bạn đi tìm nỗi sợ nằm sâu bên dưới.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "They say: find the deep fear.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "tu-can-tro-nam-phut.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhưng ngồi đào nỗi sợ thêm một buổi tối thì bìa hồ sơ vẫn chưa mở, đúng không?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Still closed.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "tu-can-tro-nam-phut.b05",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cái mình né thật ra là cảm giác khó chịu lúc bắt đầu, chứ không phải bản thân việc đó.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "We dodge the start, not the task.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "tu-can-tro-nam-phut.b06",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy bạn hẹn giờ năm phút, chỉ mở bìa ra và đọc tờ đầu tiên, hết năm phút muốn dừng thì dừng.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Five minutes. First page only.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "tu-can-tro-nam-phut.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Khi việc có hình hài rồi, nó thường nhỏ hơn cái bóng bạn tưởng tượng cả tuần.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Smaller than the shadow.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "tu-can-tro-nam-phut.b08",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "idle",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Và nếu bạn làm tiếp quá năm phút, thì đó là phần thưởng, không phải nghĩa vụ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Going past five is a bonus.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "tu-can-tro-nam-phut.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Việc gì bạn đang né cả tuần nay? Ghi một chữ xuống bình luận, tối nay mình cùng mở năm phút.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "What are you dodging?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

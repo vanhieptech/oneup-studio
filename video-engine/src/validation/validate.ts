@@ -73,7 +73,8 @@ export function validatePlan(input: unknown, registry: ProfileRegistry = default
 
     s.dialogue.forEach((d, di) => {
       const dp = `${p}.dialogue[${di}]`;
-      if (!ids.has(d.speaker) && d.speaker !== "narrator") err(`${dp}.speaker`, `speaker "${d.speaker}" is not in this scene's characters (${list([...ids]) || "none"})`);
+      if (!ids.has(d.speaker) && d.speaker !== "narrator" && d.bubble !== false && !d.anchor) // v18: off-screen voice (no bubble, or bubble with explicit anchor) is allowed
+        err(`${dp}.speaker`, `speaker "${d.speaker}" is not in this scene's characters (${list([...ids]) || "none"})`);
       if (d.end <= d.start) err(dp, `end (${d.end}s) must be after start (${d.start}s)`);
       if (d.end > s.duration + 1e-9) err(`${dp}.end`, `dialogue ends at ${d.end}s but scene is only ${s.duration}s`);
       const sp = registry.get(d.speaker);

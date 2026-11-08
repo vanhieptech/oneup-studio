@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-luong-tang-mua-lai-thoi-gian",
+ "title": "[STUB] Ba mươi tuổi lương tăng mà vẫn ngại nâng cấp cuộc sống: nâng cấp đầu tiên nên là mua lại thời gian, tính bằng giờ lương của mình",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "30s-khi-kiem-duoc-nhieu-tien-hon-nhung",
+  "bridge_id": "B-muathoigian-01",
+  "lesson": "4.14 Dùng giờ lương của mình để quyết việc nhà nào nên thuê (Whillans, Dunn, Smeets, Bekkers & Norton 2017, PNAS, mức B: mẫu 6.271 người ở bốn nước, người chi tiền mua thời gian hài lòng với cuộc sống hơn; thử thật ngoài đời: cùng một khoản tiền, mua thời gian vui hơn trong ngày so với mua đồ). Sách ghi: Whillans đo độ vui, không đo số giờ tiết kiệm; giờ lương = thu nhập sau thuế một tháng ÷ số giờ làm thật một tháng; giá thuê thấp hơn giờ lương và giờ rảnh ra dùng để nghỉ hoặc làm thật thì mới thuê. Số khảo sát Trung Quốc (1 giờ 17 phút việc nhà/ngày) không dùng. Deep Research kiểm trước khi viết.",
+  "angle": "empathy / data",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: lương tăng thì nâng cấp chất lượng sống, đừng mãi tiếc tiền cho bản thân, nhưng cũng đừng chạy theo hình ảnh (Kenh14 01/11). Góc của mình: không phải «đáng được tiêu», mà có cách đo: lấy giờ lương so với giá thuê một việc mình ghét làm. Sách 4.14: mua thời gian làm người ta vui hơn mua đồ, với điều kiện giờ rảnh ra mình nghỉ thật. +1 hôm nay: bấm máy tính ra con số giờ lương của mình. Không nói ai cũng phải thuê; ai chưa dư tiền thì giữ quỹ dự phòng trước (nối 5.27)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "luong-tang-mua-lai-thoi-gian.b01",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ba mươi tuổi, lương đã tăng mấy lần mà vẫn ngại nâng cấp cuộc sống. Nếu chỉ được nâng cấp một thứ, bạn chọn mua thêm đồ hay mua lại thời gian?",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Stuff or time?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "luong-tang-mua-lai-thoi-gian.b02",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Như sáng Chủ nhật, cả buổi quét nhà, lau nhà, phơi đồ, chỉ vì tiếc tiền thuê người dọn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Sunday chores.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "luong-tang-mua-lai-thoi-gian.b03",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "idle",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tới chiều thì nằm dài vì mệt, hẹn bạn đi cà phê cũng nhắn hủy luôn.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Too tired after.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "luong-tang-mua-lai-thoi-gian.b04",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Năm 2017, nhóm của Whillans hỏi hơn sáu nghìn người ở bốn nước, và thấy ai chịu chi tiền để bớt việc mình ghét làm thì hài lòng với cuộc sống hơn.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Whillans, 2017.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "luong-tang-mua-lai-thoi-gian.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Họ còn thử thật: cùng một khoản tiền, đem mua thời gian thì người ta vui hơn trong ngày so với đem mua đồ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Time beats stuff.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "luong-tang-mua-lai-thoi-gian.b06",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhưng thuê hay không thì phải đo, bằng giờ lương của chính mình, không phải bằng cảm giác tiếc tiền.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Measure, don't guess.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "luong-tang-mua-lai-thoi-gian.b07",
+   "duration": 9,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lấy thu nhập một tháng chia cho số giờ làm thật trong tháng, ra giờ lương. Việc nào thuê rẻ hơn con số đó mà giờ rảnh ra bạn nghỉ thật, thì đáng cân nhắc.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Your hourly rate.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "luong-tang-mua-lai-thoi-gian.b08",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chỉ cần bấm máy tính ra con số giờ lương của mình thôi, chưa cần thuê ai hết.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Just find the number.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "luong-tang-mua-lai-thoi-gian.b09",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Việc nhà nào bạn sẵn sàng trả tiền để khỏi làm nhất? Comment một việc thôi.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Which chore would you pay to skip?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

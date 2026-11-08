@@ -1,0 +1,393 @@
+{
+ "version": 1,
+ "id": "trend-gia-gach-ngang-1111",
+ "title": "[STUB] Giá gạch 999 còn 499: bạn thấy lời 500 ngàn, nhưng con số 999 có thể chưa từng bán thật",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-kesanmoi.rf-7698254483419172103",
+  "bridge_id": "B-gachngang-01",
+  "lesson": "5.24 Không tích trữ vì “giá gạch ngang” và đợt khuyến mãi lớn (Tversky & Kahneman 1974, Science: phán đoán bị con số nhìn thấy đầu tiên neo lại, điều chỉnh sau thường không đủ → “giá gốc 999, giá nay 499” làm bạn tưởng rẻ hơn thực tế. Quy định TQ 2020 (chỉ tham khảo TQ, không áp cho VN): giá làm chuẩn phải là giá thấp nhất của tiệm trong 7 ngày trước khuyến mãi; giá bị gạch chưa chắc từng bán thật. Bằng chứng C. Ghi chú sách: hiệu ứng neo là kết luận phòng thí nghiệm, chưa ai tính tích trữ thực tế lỗ bao nhiêu; chỉ tích thứ thỏa cả ba: hạn dùng dài, chắc dùng hết, đơn giá thật thấp hơn giá trước đây) + 5.23 đồ đắt không cần thì chờ 24 giờ (C, kinh nghiệm, không có tài liệu trực tiếp). Chi phí: không tốn tiền, phải nhớ giá ngày thường vài món hay mua, có khi bỏ lỡ một đợt giảm thật.",
+  "angle": "contrarian / data",
+  "pattern": "P10 + P05",
+  "differentiation": "Mọi người đang nói: người nghèo phải bỏ 12 thói xấu, trong đó có “sĩ diện hão”, mua để tỏ ra có tiền (TikTok @kesanmoi.rf 248,5k view, 38,3k like, đăng 19/10; comment top “đừng dính vào cbm nx dính vào mệt lắm” 349 like). Góc của mình: không chê ai nghèo hay sĩ diện; cái bẫy nằm ở cách não đọc giá. Con số đầu tiên bạn thấy (999) neo phán đoán lại (Tversky & Kahneman 1974), nên giá 499 trông như được lời, dù giá gạch chưa chắc từng bán thật. Hợp mùa: 11.11 còn ba tuần. Hành động: ghi giá ngày thường của 3 món hay mua; đồ đắt không cần thì chờ 24 giờ. Book fact mà consensus bỏ qua + seasonal timer; chuyện thật của Hiệp để [CẦN HIỆP XÁC NHẬN]."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "gia-gach-ngang-1111.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Giá gạch từ 999 ngàn xuống còn 499 ngàn, bạn thấy mình vừa lời được năm trăm ngàn, đúng không?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "999 slashed to 499. Did you really save 500?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "gia-gach-ngang-1111.b02",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đợt sale nào cũng vậy, mình mở app ra, thấy giá gạch đỏ là tay tự bấm đặt, sợ chút nữa hết giảm.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Red slash, instant add to cart.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "gia-gach-ngang-1111.b03",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có một nghiên cứu nổi tiếng chỉ ra rằng con số đầu tiên mình nhìn thấy sẽ neo phán đoán lại, sau đó mình chỉnh mấy cũng không đủ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The first number anchors your judgment.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "gia-gach-ngang-1111.b04",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "thinking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên khi con số 999 hiện ra trước, giá 499 trông rẻ hơn thực tế, dù cái giá 999 đó chưa chắc từng được bán thật.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "That 999 may never have been real.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "gia-gach-ngang-1111.b05",
+   "duration": 5,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Điều mình muốn là biết một món có thật sự rẻ hay không, chứ không phải cảm giác được lời.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Know the real price, not the feeling.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "gia-gach-ngang-1111.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "typing",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy trước 11.11, bạn ghi lại giá ngày thường của ba món mình hay mua. Còn món đắt mà không thật cần, bạn để trong giỏ hàng chờ hai mươi bốn tiếng rồi hẵng quyết.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Note 3 normal prices. Wait 24 hours.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "gia-gach-ngang-1111.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Món nào bạn muốn tích trữ thì nó phải hạn dùng dài, chắc chắn dùng hết, và giá thật sự thấp hơn những lần trước.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Stock up only if all three hold.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "gia-gach-ngang-1111.b08",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nghiên cứu về con số neo làm trong phòng thí nghiệm, chưa ai tính được tích trữ lỗ bao nhiêu tiền, nên đây là mẹo tham khảo, mức bằng chứng thấp.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Lab finding. Low-evidence tip.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "gia-gach-ngang-1111.b09",
+   "duration": 5,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "sitting",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "[CẦN HIỆP XÁC NHẬN] Chuyện thật: một món mua vì giá gạch rồi để đó không dùng.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "[Hiệp to confirm] My slashed-price buy.",
+    "start": 0.3,
+    "end": 4.7
+   }
+  },
+  {
+   "id": "s10",
+   "beat": "gia-gach-ngang-1111.b10",
+   "duration": 4,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "reacting",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Giỏ hàng 11.11 của bạn đang có mấy món? Comment số món nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "How many items in your 11.11 cart?",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

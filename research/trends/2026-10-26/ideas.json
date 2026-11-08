@@ -1,0 +1,204 @@
+[
+ {
+  "id": "brain-stack-dien-thoai-phong-khac",
+  "title": "Brain stacking: chồng sách đẹp chưa đủ, điện thoại phải nằm ở phòng khác",
+  "trend_id": "what-is-brain-stacking-tiktok-s-latest-trend",
+  "bridge_id": "B-brainstack-01",
+  "lesson": "3.1 Tắt thông báo không cần thiết, khi làm việc để điện thoại ra khỏi tầm mắt (Ward, Duke, Gneezy & Bos 2017, J. Assoc. Consumer Research: hai thí nghiệm, điện thoại của chính mình nằm bên cạnh dù đã nhịn không xem vẫn làm phần trí óc dùng được ít đi, người phụ thuộc điện thoại giảm nhiều nhất; Stothart 2015: chỉ nhận thông báo không xem cũng làm điểm bài tập chú ý giảm). Bằng chứng B; ghi chú sách: thí nghiệm phòng lab, một lần, sinh viên; tác động cộng dồn hằng ngày chưa ai đo. Kèm 4.10 để đồ cần gần, đồ không muốn đụng xa (Cochrane 2019 Hollands, 24 RCT về đồ ăn, mức B; áp sang điện thoại là suy ra, sách ghi rõ). Chi phí: không tốn tiền, vài phút, gần như không cần ý chí.",
+  "angle": "contrarian / data",
+  "pattern": "P03 + P15",
+  "differentiation": "Mọi người đang nói: xếp một chồng sách, sudoku, nhật ký cạnh ly cà phê để thay cho lướt điện thoại, càng đẹp càng tốt (Mashable 21/10, Essence, HerCampus; @mandyrulez). Góc của mình: chồng sách không phải phần quyết định; điện thoại nằm úp ngay cạnh vẫn ăn bớt sức tập trung dù bạn không chạm (3.1, mức B), nên tối hôm trước cắm sạc điện thoại ở phòng khác và để sẵn cuốn sách trên bàn (4.10). Không cần mua gì. Chuyện thật của Hiệp (dùng điện thoại trên giường) để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "clip-08 (3.1) hook thay thế; củng cố B-phone-01",
+  "hook_vi": "Bạn cũng xếp một chồng sách thật đẹp để khỏi lướt điện thoại, vậy mà ngồi năm phút là tay lại mò máy?",
+  "moment_vi": "Chồng sách nằm ngay trước mặt, còn điện thoại thì nằm úp ngay bên cạnh, cứ vài phút lại liếc qua một lần.",
+  "turn_vi": "Tối hôm trước bạn để sẵn cuốn sách trên bàn, còn điện thoại thì cắm sạc ở phòng khác.",
+  "hook_en": "Cute brain stack. Phone still next to it?",
+  "explainer": "HyperFrames: bàn có chồng sách + điện thoại úp, thanh 'sức tập trung còn lại' tụt xuống; điện thoại trượt sang phòng khác, thanh hồi lên. Nhãn: Ward 2017 · thí nghiệm với sinh viên · mức B. Không có số phần trăm.",
+  "beats": [
+   {
+    "text": "Bạn cũng xếp một chồng sách thật đẹp để khỏi lướt điện thoại, vậy mà ngồi năm phút là tay lại mò máy?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Cute brain stack. Still grabbing your phone?"
+   },
+   {
+    "text": "Chồng sách nằm ngay trước mặt, còn điện thoại thì nằm úp ngay bên cạnh, cứ vài phút bạn lại liếc qua một lần.",
+    "expression": "neutral",
+    "action": "idle",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Book in front. Phone face-down beside it."
+   },
+   {
+    "text": "Lý do là chỉ cần điện thoại nằm trên bàn, dù bạn không chạm vào, đầu óc vẫn phải tốn sức để kìm mình lại.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Not touching it still costs focus."
+   },
+   {
+    "text": "Hai thí nghiệm với sinh viên cho thấy điện thoại chỉ cần nằm bên cạnh thôi cũng làm phần trí óc dùng được ít đi.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Phone nearby = less brainpower."
+   },
+   {
+    "text": "Điều mình cần không phải là chồng sách đẹp hơn, mà là bớt phải gồng mình chống lại cái điện thoại.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Less fighting the phone."
+   },
+   {
+    "text": "Vậy tối hôm trước bạn để sẵn cuốn sách trên bàn, còn điện thoại thì cắm sạc ở phòng khác.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Book on desk. Phone in another room."
+   },
+   {
+    "text": "Đồ muốn dùng thì bạn để gần, đồ không muốn đụng thì bạn để xa, vì để xa thì mình tự lấy ít đi mà không cần cố nhịn.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Near what you want. Far what you don't."
+   },
+   {
+    "text": "Sáng hôm sau bạn chỉ cần ngồi xuống là mở sách ra được, vì cái điện thoại đã nằm ngoài tầm mắt rồi.",
+    "expression": "happy",
+    "action": "idle",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Sit down. Open the book."
+   },
+   {
+    "text": "Tối nay bạn thử để điện thoại ở phòng khác, rồi comment cho mình biết sáng mai bạn ngồi đọc được bao lâu nha.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Try it tonight. Tell me how long."
+   }
+  ]
+ },
+ {
+  "id": "thue-nha-tinh-gio-di-lam",
+  "title": "Chọn nhà thuê: cộng cả giờ ngồi xe vào giá, không chỉ tiền thuê và phí",
+  "trend_id": "luong-15-trieu-thang-cap-doi-o-ha",
+  "bridge_id": "B-commute-02",
+  "lesson": "4.18 Chọn chỗ ở thì đặt thời gian đi làm lên trước, rút ngắn mỗi chiều (Stutzer & Frey 2008, Scand. J. Econ.: dữ liệu theo dõi nhiều năm ở Đức, đi làm càng lâu thì tự thấy sống kém hài lòng hơn, và phần thiệt không được bù bằng lương hay nhà; Chatterjee 2020 Transport Reviews tổng quan). Bằng chứng B; sách ghi TRANH CÃI: Chatterjee thấy chưa có liên hệ ổn định giữa quãng đi làm và hài lòng cuộc sống nói chung, nhiều người bù được bằng việc hoặc nhà tốt hơn. Số của sách: mỗi chiều bớt 30 phút thì mỗi tuần dư khoảng 5 tiếng. Bỏ số thời gian đi lại của Trung Quốc. Chi phí: có thể phải trả tiền thuê cao hơn hoặc ở nhỏ hơn, tốn công chuyển nhà.",
+  "angle": "data / empathy",
+  "pattern": "P04 + P01",
+  "differentiation": "Mọi người đang nói: giá thuê niêm yết rẻ chưa chắc rẻ, phải cộng điện nước, phí dịch vụ, gửi xe (Kenh14 26/10, cặp đôi lương 15 triệu chọn căn 9 triệu thay vì 6,5 triệu). Góc của mình: còn một khoản không ai ghi vào bảng tính là giờ ngồi xe; mỗi chiều bớt 30 phút là mỗi tuần có lại khoảng 5 tiếng (4.18), nhưng nói thật đây là mục sách ghi còn tranh cãi nên chỉ là một yếu tố để cân. Chuyện thật của Hiệp (đang thuê nhà, quãng đi làm) để [CẦN HIỆP XÁC NHẬN].",
+  "theme": "dark",
+  "week": 2,
+  "target": "ý tưởng mới (trụ 1 thời gian / trụ tiền); củng cố B-commute-01",
+  "hook_vi": "Bạn chọn căn trọ rẻ hơn một triệu, mà đã tính mỗi ngày mình ngồi xe bao lâu chưa?",
+  "moment_vi": "Căn xa rẻ hơn thật, nhưng ngày nào bạn cũng ngồi xe gần cả tiếng, về tới nhà là hết sức.",
+  "turn_vi": "Khi xem nhà, bạn chạy thử đường đi làm đúng giờ cao điểm, rồi đặt thời gian đi lại lên đầu danh sách.",
+  "hook_en": "Cheaper rent. How long is your commute?",
+  "explainer": "HyperFrames: hoá đơn thuê nhà có thêm dòng 'giờ ngồi xe'; phép tính 30 phút × 2 chiều × 5 ngày = 5 tiếng/tuần. Nhãn: Stutzer & Frey 2008 · dữ liệu Đức · mức B · còn tranh cãi. Dòng 'Thông tin tham khảo, không thay thế tư vấn chuyên gia'.",
+  "beats": [
+   {
+    "text": "Bạn chọn căn trọ rẻ hơn một triệu, mà đã tính mỗi ngày mình ngồi xe bao lâu chưa?",
+    "expression": "confused",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Cheaper rent. How long is your ride?"
+   },
+   {
+    "text": "Căn xa thì rẻ hơn thật, nhưng ngày nào bạn cũng ngồi xe gần cả tiếng, về tới nhà là hết sức.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "sitting",
+    "background": "desk",
+    "duration": 6,
+    "caption_en": "Cheap room. Long ride. No energy."
+   },
+   {
+    "text": "Lý do là mình chỉ nhìn giá thuê trên tin đăng, chứ chưa cộng thời gian đi lại vào chi phí.",
+    "expression": "confused",
+    "action": "thinking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Commute time is a cost too."
+   },
+   {
+    "text": "Dữ liệu theo dõi nhiều năm ở Đức cho thấy người đi làm càng xa thì càng thấy mình sống kém hài lòng hơn.",
+    "expression": "surprised",
+    "action": "reacting",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Longer commute, less satisfied."
+   },
+   {
+    "text": "Điều mình cần là tính đủ tiền nhà, tiền xe và cả thời gian của mình trước khi ký hợp đồng.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "Count rent, ride and time."
+   },
+   {
+    "text": "Vậy khi xem nhà, bạn chạy thử đường đi làm đúng giờ cao điểm, rồi đặt thời gian đi lại lên đầu danh sách.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "desk",
+    "duration": 7,
+    "caption_en": "Test the route at rush hour."
+   },
+   {
+    "text": "Nếu mỗi chiều bạn bớt được ba mươi phút, thì mỗi tuần bạn có lại khoảng năm tiếng.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 6,
+    "caption_en": "30 min less each way = ~5h a week."
+   },
+   {
+    "text": "Nói thật là có tổng hợp khác thấy nhiều người bù được bằng việc tốt hơn hay nhà rộng hơn, nên bạn cân cho hợp với mình nha.",
+    "expression": "neutral",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "Still debated. Weigh it for you."
+   },
+   {
+    "text": "Bạn comment xem mỗi ngày mình đang ngồi xe bao nhiêu phút nha. Thông tin tham khảo, không thay thế tư vấn chuyên gia.",
+    "expression": "happy",
+    "action": "talking",
+    "pose": "standing",
+    "background": "grid",
+    "duration": 7,
+    "caption_en": "How many minutes is your commute?"
+   }
+  ]
+ }
+]
