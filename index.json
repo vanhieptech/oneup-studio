@@ -536,6 +536,14 @@
    "title": "Clip 04 làm lại — gói fact (Deep Research)"
   },
   {
+   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.out.short-factory-review.research-original-snapshot",
+   "type": null,
+   "status": "research-only",
+   "updated": "2026-10-19",
+   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/out/short-factory-review/research-original-snapshot.md",
+   "title": "Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio"
+  },
+  {
    "id": "clip-04.post-checklist",
    "type": "doc",
    "status": "ready",
@@ -726,6 +734,22 @@
    "updated": "2026-10-20",
    "path": "content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md",
    "title": "Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual)"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.concept-reset.clip05-concept-reset-after-r14.3-2026-11-08",
+   "type": "editorial-concept-reset",
+   "status": "draft-not-approved",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-after-r14.3-2026-11-08.md",
+   "title": "Quay cấp concept — chỉ cấu trúc và các đoạn thử lời"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.concept-reset.clip05-concept-reset-round2-2026-11-08",
+   "type": "editorial-concept-document",
+   "status": "proposal-not-approved",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-round2-2026-11-08.md",
+   "title": "Không full B — đổi đối tượng kể từ người quên sang kết quả thật"
   },
   {
    "id": "content.clips.clip-05-hoc-mot-dem.archive.r11.before-craft-qa.opencreator-clip05-script-r11.4-draft-2026-11-07",
@@ -966,6 +990,102 @@
    "updated": "2026-11-07",
    "path": "content/clips/clip-05-hoc-mot-dem/archive/r12/opencreator-clip05-script-r12-draft-2026-11-07.md",
    "title": "Bản thật để Rule Reviewer kiểm — CHƯA DUYỆT"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14-full-draft-2026-11-08",
+   "type": "full-script-editorial-draft",
+   "status": "draft-awaiting-independent-review",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14-full-draft-2026-11-08.md",
+   "title": "r14 — bản lời mới, chưa Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14.1-full-draft-2026-11-08",
+   "type": "full-script-editorial-draft",
+   "status": "draft-awaiting-independent-review",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-full-draft-2026-11-08.md",
+   "title": "r14.1 — cùng concept A, sửa mạch; chưa Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14.2-full-draft-2026-11-08",
+   "type": "editorial-full-draft",
+   "status": "draft-no-self-pass",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-full-draft-2026-11-08.md",
+   "title": "r14.2 — PATCH2, không reset lineage"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14.3-hook-payoff-blocker-2026-11-08",
+   "type": "editorial-blocker-report",
+   "status": "blocked-not-a-script",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.3-hook-payoff-blocker-2026-11-08.md",
+   "title": "KHÔNG CÓ FULL SCRIPT r14.3 — hồ sơ thử hook/payoff và dừng"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.README",
+   "type": "archive-index",
+   "status": "draft",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/README.md",
+   "title": "clip-05 r15 lineage archive index"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.archive-check-audit",
+   "type": "archive-audit",
+   "status": "draft",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/archive-check-audit.md",
+   "title": "clip-05 r15.2 — archive and text-only checks"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.clip-05-r12-actual-spoken-adapter",
+   "type": "checker-adapter",
+   "status": "draft",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r12-actual-spoken-adapter.md",
+   "title": "r12 actual spoken checker adapter"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.clip-05-r14.2-actual-spoken-adapter",
+   "type": "checker-adapter",
+   "status": "draft",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r14.2-actual-spoken-adapter.md",
+   "title": "r14.2 actual spoken checker adapter"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.clip-05-r15.2-trend-adapter",
+   "type": "checker-adapter",
+   "status": "draft",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md",
+   "title": "clip-05 r15.2 PATCH2 exact spoken adapter"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15-full-draft-2026-11-08",
+   "type": "full-script-draft",
+   "status": "NOT-APPROVED",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md",
+   "title": "Clip05 r15 — bản đầy đủ mới, chưa craft PASS / chưa Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.1-full-draft-2026-11-08",
+   "type": "full-script-draft",
+   "status": "NOT-APPROVED",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md",
+   "title": "Clip05 r15.1 PATCH1 — chỉ sửa K1/S01, chưa craft PASS / chưa Chốt"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.2-full-draft-2026-11-08",
+   "type": "full-script-draft",
+   "status": "NOT-APPROVED",
+   "updated": "2026-11-08",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md",
+   "title": "Clip05 r15.2 PATCH2 — chỉ sửa K2/S18, PREPARED PENDING OWNER COORDINATION APPROVAL"
   },
   {
    "id": "content.clips.clip-05-hoc-mot-dem.evidence-lines-v10",
@@ -2262,6 +2382,13 @@
    "title": "anidoodle"
   },
   {
+   "id": "skill.awesome-ai-motion",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/awesome-ai-motion/SKILL.md",
+   "title": "awesome-ai-motion"
+  },
+  {
    "id": "refs.motionmaxxing.integration",
    "type": "vendor-note",
    "status": "active",
@@ -2275,6 +2402,41 @@
    "status": "active",
    "path": "resources/refs/motionmaxxing/SKILL.md",
    "title": "motionmaxxing"
+  },
+  {
+   "id": "skill.skill",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/agent/skill/SKILL.md",
+   "title": "transitions-agent"
+  },
+  {
+   "id": "skill.refine-live",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md",
+   "title": "refine-live"
+  },
+  {
+   "id": "skill.transitions-dev",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-dev/SKILL.md",
+   "title": "transitions-dev"
+  },
+  {
+   "id": "skill.transitions-polish",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-polish/SKILL.md",
+   "title": "transitions-polish"
+  },
+  {
+   "id": "skill.transitions-ui-generation",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md",
+   "title": "transitions-ui-generation"
   },
   {
    "id": "vn-thesaurus",

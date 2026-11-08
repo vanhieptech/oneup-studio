@@ -1,0 +1,106 @@
+{
+  "orchestration_note": "Initial subjects checker succeeded (1 check, 0 errors, 0 warnings), but orchestration tried to parse --out as JSON. report() writes plain text. Corrected output extensions and reran all flags; checker code unchanged.",
+  "runs": [
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --subjects content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/subjects-output.txt",
+      "exit_code": 0,
+      "checks": 1,
+      "errors": 0,
+      "warnings": 0,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/subjects-output.txt",
+      "flags": []
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --l088 content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/l088-output.txt",
+      "exit_code": 0,
+      "checks": 7,
+      "errors": 0,
+      "warnings": 0,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/l088-output.txt",
+      "flags": []
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --trend content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/trend-output.txt",
+      "exit_code": 1,
+      "checks": 6,
+      "errors": 1,
+      "warnings": 0,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/trend-output.txt",
+      "flags": [
+        "✖ L-090    clip-05-r15.2-trend-adapter.md: thiếu `hook_pattern:` (id P../F.. trong research/trends/patterns.md) → hook không theo khuôn trend đã nghiên cứu"
+      ]
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --flow content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/flow-output.txt",
+      "exit_code": 0,
+      "checks": 6,
+      "errors": 0,
+      "warnings": 1,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/flow-output.txt",
+      "flags": [
+        "⚠ L-089    beat mở không nối với beat trước: b03 «Với chuyện nhớ sau vài ngày,…»; b08 «Với mục tiêu kể sau vài…» → mở bằng từ nối/chữ gọi lại ý vừa nói"
+      ]
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --clarity content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clarity-output.txt",
+      "exit_code": 0,
+      "checks": 5,
+      "errors": 0,
+      "warnings": 2,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clarity-output.txt",
+      "flags": [
+        "⚠ L-091    câu hỏi b01 «Sau một tuần, tự viết còn hơn đọc lại không?» đến trước câu tình huống cụ thể (b02 «Bạn sẽ có phép so cụ…») → tình huống → câu hỏi → trả lời",
+        "⚠ L-091    câu dài >25 chữ: b02 (28 chữ) «Nếu bạn thích đọc rồi chia…»; b07 (32 chữ) «Còn trong thí nghiệm với sinh…»; b07 (26 chữ) «Tự viết cho tỷ lệ ý…» → mỗi câu một ý"
+      ]
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --link content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/link-output.txt",
+      "exit_code": 0,
+      "checks": 2,
+      "errors": 0,
+      "warnings": 1,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/link-output.txt",
+      "flags": [
+        "⚠ L-094    2/20 cặp câu không chung từ nội dung, không từ nối/đại từ gọi lại: b02→b02 «thí nghiệm năm 2006 này.» | «Bạn sẽ có phép so cụ…»; b02→b03 «nối người cùng sở thích.» | «Với chuyện nhớ sau vài ngày,…» → viết câu nối hoặc gọi lại ý câu trước"
+      ]
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --repeat content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/repeat-output.txt",
+      "exit_code": 0,
+      "checks": 4,
+      "errors": 0,
+      "warnings": 1,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/repeat-output.txt",
+      "flags": [
+        "⚠ L-093    cụm 3 chữ lặp: «trong thí nghiệm» ×5; «sau một tuần» ×2; «một tuần tự» ×2; «tuần tự viết» ×2; «hơn ở mốc» ×2; «kể sau vài» ×2; «sau vài ngày» ×3; «cho tỷ lệ» ×3"
+      ]
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --evidence content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/evidence-output.txt",
+      "exit_code": 0,
+      "checks": 2,
+      "errors": 0,
+      "warnings": 0,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/evidence-output.txt",
+      "flags": []
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --choppy content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/choppy-output.txt",
+      "exit_code": 0,
+      "checks": 2,
+      "errors": 0,
+      "warnings": 0,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/choppy-output.txt",
+      "flags": []
+    },
+    {
+      "command": "python3 pipeline/scripts/check-rules.py --fresh content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md --against content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.4-draft-2026-11-07.md content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r12-actual-spoken-adapter.md content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r14.2-actual-spoken-adapter.md --out content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/fresh-output.txt",
+      "exit_code": 0,
+      "checks": 3,
+      "errors": 0,
+      "warnings": 0,
+      "output": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/fresh-output.txt",
+      "flags": []
+    }
+  ]
+}

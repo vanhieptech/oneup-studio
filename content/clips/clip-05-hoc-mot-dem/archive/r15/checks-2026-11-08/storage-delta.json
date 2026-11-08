@@ -1,0 +1,43 @@
+{
+  "before": 390,
+  "after": 419,
+  "added_violations": [
+    "   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15-checker-input.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15.1-checker-input.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15.2-checker-input.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['tags', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['tags', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['tags', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-B-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-round2-E-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.1-checker-input.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-checker-input.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-factcheck-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/social-clip05-r14.1-source-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-counts-audit-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-consolidated-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-counts-audit-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-delta-note-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-factcheck-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-source-gate-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-consolidated-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-counts-audit-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-delta-note-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-factcheck-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-r15.1-source-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-r15.2-source-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+    "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-source-confirmation-2026-11-08-1303.md (run fm-backfill.py, then fill real values)"
+  ],
+  "removed_violations": [
+    "   INDEX.md/index.json stale: run python3 pipeline/scripts/build-index.py"
+  ],
+  "command": "python3 pipeline/scripts/check-assets.py --list",
+  "exit_code_before": 1,
+  "exit_code_after": 1,
+  "cause": "30 added frontmatter violations in exact frozen originals; 1 stale INDEX failure removed. No unrelated files repaired; no original normalized."
+}

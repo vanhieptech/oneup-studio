@@ -1,0 +1,72 @@
+{
+  "version": "r14.2",
+  "concept": "A",
+  "patch": 2,
+  "file": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.2-full-draft-2026-11-08.md",
+  "file_sha256": "50a08f34e6c07400fb2c1f990723d27dd1d1994d2df01388619d665b142d07fa",
+  "spoken_sha256": "d2609ab259faf4b7e7d76c5206e71e63ca14bdc28cefab4dd75786e86a20176a",
+  "spoken_whitespace_units": 501,
+  "sentences": 20,
+  "beats": 9,
+  "exact_sentence_mapping_count": 20,
+  "consecutive_meaning_links": 19,
+  "max_caption_chunk_words": 8,
+  "caption_chunk_count": 69,
+  "timing_estimate_seconds": {
+    "reference_2_9": 208.3,
+    "slower_2_5": 235.9,
+    "pauses": 17.5,
+    "endcard": 14,
+    "transitions": 4
+  },
+  "pacing_assumed_not_measured": true,
+  "adapter_exact_beat_payload_verified": true,
+  "adapter": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-checker-input.md",
+  "extraction": "AFTER full opening marker line+LF, stop before closing marker; retain spoken final LF; no normalization",
+  "human_read_aloud": "NOT TESTED",
+  "listen_once": "NOT TESTED",
+  "actual_duration": "NOT TESTED",
+  "overall_pass": false,
+  "open_craft_risks": [
+    "B2 promise sentence may still feel introductory",
+    "B5 meaningfulness remains for independent review",
+    "S05 long trend sentence / seam to evidence",
+    "S16 long caveat sentence",
+    "Estimated total 208.3–235.9s exceeds 120–180 target; not an actual measurement or hard-cap exception"
+  ],
+  "text_checker_actual": {
+    "subjects": {
+      "errors": 0,
+      "warnings": 0,
+      "json": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-subjects-check.json"
+    },
+    "l088": {
+      "errors": 0,
+      "warnings": 1,
+      "json": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-l088-check.json"
+    }
+  },
+  "caption_check": "69 chunks, maximum 8 whitespace words; no spoken changes",
+  "frozen_sha_verified": {
+    "/workspace/opencreator-clip05-script-r12-draft-2026-11-07.md": {
+      "actual": "977ee47c9db86bd00d6f14297c94bbf977f9bb4ec2e3638629e0fe2e077c3f81",
+      "matches_expected": true
+    },
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14-full-draft-2026-11-08.md": {
+      "actual": "564c8b9eae110acd41b46aaff9e3f7a630ea386adaa06cf53d209d8b8ce1da5c",
+      "matches_expected": true
+    },
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.1-full-draft-2026-11-08.md": {
+      "actual": "020c410911f8d85163f5448e0e965a1f92371c79ccce1f3224473aaf077433f8",
+      "matches_expected": true
+    },
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-new-concepts-2026-11-08.md": {
+      "actual": "92908f216068b6d5b6962e8fbcf184bfc7a5b41ad9bc2b09ba2136cc3b99a67e",
+      "matches_expected": true
+    },
+    "/workspace/oneup-studio/research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md": {
+      "actual": "ac400b83755c2ede277b6917c47c69e16193280be3d8b8a3c55ce5a934172a64",
+      "matches_expected": true
+    }
+  }
+}

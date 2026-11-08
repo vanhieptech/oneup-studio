@@ -1,0 +1,13 @@
+{
+  "mode": "--l088",
+  "checker": "/workspace/oneup-studio/pipeline/scripts/check-rules.py",
+  "adapter": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-checker-input.md",
+  "checks": 6,
+  "errors": 0,
+  "warnings": 1,
+  "exit_code": 0,
+  "raw_report": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-l088-check.txt",
+  "raw_report_sha256": "ecd24c48fb974375c561159765d81961c556f46e88b760eb3821c071a54ffe25",
+  "output": "✔ L-088    có nguồn truy được (clip-05-r14.2-checker-input.md): doi.org/10.1111/j.1467-9280.2006.01693.x\n✔ L-088    lời đọc có nói dẫn chứng (nghiên cứu / tên tác giả)\n✔ L-088    hook không trùng mẫu 5 hook clip trước (ngưỡng 0.7)\n✔ L-088    CTA không trùng mẫu 5 CTA clip trước (ngưỡng 0.7)\n⚠ L-088    bản nháp không nằm trong thư mục clip → không tìm được file trend / fact của clip\nℹ L-088    manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1\n\n6 checks · 0 error(s) · 1 warning(s) → PASS\n",
+  "meaning_craft_or_overall_pass": false
+}

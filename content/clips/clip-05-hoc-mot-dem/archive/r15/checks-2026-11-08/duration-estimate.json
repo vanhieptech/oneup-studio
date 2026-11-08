@@ -1,0 +1,16 @@
+{
+  "method": "from pipeline.duration_policy import estimated_total,duration_status; total=estimated_total(439, endcard_seconds=14, pause_seconds=11.7, transition_seconds=4); duration_status(total)",
+  "label": "ƯỚC ONLY — not real duration",
+  "whitespace_units": 439,
+  "pauses": 11.7,
+  "endcard": 14,
+  "transitions": 4,
+  "natural_rate_default": 2.9,
+  "estimate_seconds": 181.07931034482758,
+  "policy_status": "warning",
+  "sensitivity_2_5_units_s_seconds": 205.29999999999998,
+  "sensitivity_policy_status": "warning",
+  "target_warning": "Over 180s target, warning only; not a minimum. Strict total <300s. No speedup prescription.",
+  "actual_timing": "CHƯA KIỂM",
+  "human_review": "CHƯA KIỂM"
+}

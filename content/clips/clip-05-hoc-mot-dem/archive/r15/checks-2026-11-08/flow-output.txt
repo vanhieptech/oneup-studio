@@ -1,0 +1,8 @@
+✔ L-089    ngôi kể nhất quán (b01 - → b02 bạn → b03 - → b04 - → b05 bạn → b06 bạn → b07 - → b08 bạn → b09 bạn)
+✔ L-089    không có cụm lặp khâu câu
+⚠ L-089    beat mở không nối với beat trước: b03 «Với chuyện nhớ sau vài ngày,…»; b08 «Với mục tiêu kể sau vài…» → mở bằng từ nối/chữ gọi lại ý vừa nói
+✔ L-089    không có đoạn liệt kê song song
+✔ L-089    không có câu chốt gắn thêm
+ℹ L-089    manual gate (làm TRƯỚC khi chấm luật): đọc to b01→CTA một mạch như người nói chuyện — một ngôi kể xuyên suốt, mỗi beat mở bằng mối nối với beat trước, không câu mồ côi/gắn thêm, dẫn chứng nảy ra từ chuyện, không đổi liền mạch lấy số chữ (bỏ ý chứ không ép câu)
+
+6 checks · 0 error(s) · 1 warning(s) → PASS

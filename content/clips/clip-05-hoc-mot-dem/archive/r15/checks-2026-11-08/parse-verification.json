@@ -1,0 +1,52 @@
+[
+  {
+    "version": "r15.2",
+    "draft_beats": 9,
+    "units": 439,
+    "spoken_sha256": "3a6f280daede0ea30db9d095643deb7f77868981ea22b804991b3b425cf7a78e",
+    "adapter_sha256": "af450c81d36b2b08c38480a31446e838f9c5c440c6e553dcc1088c527724fad7",
+    "exact_paragraph_equality": true
+  },
+  {
+    "version": "r11.4",
+    "actual_path": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+    "actual_sha256": "dc42247775b8fdd0d6c5a6958e074a829e899f431efcc826516f61e21c53dd0e",
+    "direct_parse_beats": 7,
+    "checker_input": "content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-script-r11.4-draft-2026-11-07.md",
+    "verified_parse_beats": 7,
+    "units": 150,
+    "hook_chain_scores": [
+      0.06060606060606061,
+      0.0712841739473455
+    ],
+    "adapter_exact_paragraphs": false
+  },
+  {
+    "version": "r12",
+    "actual_path": "content/clips/clip-05-hoc-mot-dem/archive/r12/opencreator-clip05-script-r12-draft-2026-11-07.md",
+    "actual_sha256": "977ee47c9db86bd00d6f14297c94bbf977f9bb4ec2e3638629e0fe2e077c3f81",
+    "direct_parse_beats": 0,
+    "checker_input": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r12-actual-spoken-adapter.md",
+    "verified_parse_beats": 7,
+    "units": 142,
+    "hook_chain_scores": [
+      0.1111111111111111,
+      0.08269203479931449
+    ],
+    "adapter_exact_paragraphs": true
+  },
+  {
+    "version": "r14.2",
+    "actual_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-full-draft-2026-11-08.md",
+    "actual_sha256": "50a08f34e6c07400fb2c1f990723d27dd1d1994d2df01388619d665b142d07fa",
+    "direct_parse_beats": 0,
+    "checker_input": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r14.2-actual-spoken-adapter.md",
+    "verified_parse_beats": 9,
+    "units": 501,
+    "hook_chain_scores": [
+      0.2564102564102564,
+      0.3408298002607512
+    ],
+    "adapter_exact_paragraphs": true
+  }
+]

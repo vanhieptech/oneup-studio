@@ -1,0 +1,6 @@
+✔ L-093    không từ nội dung nào lặp >5% lời
+⚠ L-093    cụm 3 chữ lặp: «trong thí nghiệm» ×5; «sau một tuần» ×2; «một tuần tự» ×2; «tuần tự viết» ×2; «hơn ở mốc» ×2; «kể sau vài» ×2; «sau vài ngày» ×3; «cho tỷ lệ» ×3
+✔ L-093    từ nối mở câu không lặp ≥3
+ℹ L-093    manual gate: (a) chiều sâu — mỗi beat cho người xem một điều mới (vì sao/cảm giác/hệ quả cụ thể), không nói lại ý cũ bằng chữ khác; (b) đọc to nghe trơn, không câu cụt nối bằng «Nhưng/Và/Rồi» liên tiếp; (c) thay từ lặp bằng đại từ/chữ khác hoặc bỏ hẳn
+
+4 checks · 0 error(s) · 1 warning(s) → PASS

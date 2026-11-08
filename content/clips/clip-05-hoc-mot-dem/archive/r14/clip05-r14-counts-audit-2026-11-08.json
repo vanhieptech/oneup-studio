@@ -1,0 +1,30 @@
+{
+  "draft": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14-full-draft-2026-11-08.md",
+  "version": "r14",
+  "spoken_sha256": "1e416f818de504b5603745f2101cedad61b1852b7b78b0b4494daa663dcc2928",
+  "spoken_whitespace_units": 610,
+  "sentences": 29,
+  "beats": 13,
+  "caption_chunks": 80,
+  "max_caption_chunk_words": 8,
+  "all_caption_chunks_at_most_8": true,
+  "exact_sentence_source_mapping_count": 29,
+  "consecutive_sentence_link_count": 28,
+  "timing_estimate_seconds": {
+    "low": 169,
+    "high": 209,
+    "nominal": 184,
+    "endcard": 14,
+    "transition_reserve": 4,
+    "assumed_units_per_second_range": [
+      3.6,
+      4.7
+    ]
+  },
+  "standard_repo_checker_run": false,
+  "human_read_aloud": "CHƯA KIỂM",
+  "listen_once": "CHƯA KIỂM",
+  "actual_duration": "CHƯA KIỂM",
+  "overall_craft": "NO SELF PASS",
+  "method": "custom read-only text counting; no repo imports or pipeline"
+}

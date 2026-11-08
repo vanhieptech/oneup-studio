@@ -1,0 +1,8 @@
+✔ L-090    trend_id texthip-kr-reading-lifestyle-znews-1693810 có trong 1 file trend đã lưu (mới nhất research/trends/2026-11-07/clip-05-texthip-trend.md)
+✖ L-090    clip-05-r15.2-trend-adapter.md: thiếu `hook_pattern:` (id P../F.. trong research/trends/patterns.md) → hook không theo khuôn trend đã nghiên cứu
+✔ L-090    trend_beats b02
+✔ L-090    trend_spoken «text hip ở hàn» có trong lời b01–b02
+✔ L-090    example_evidence research/trends/2026-11-07/clip-05-texthip-trend.md
+ℹ L-090    manual gate: (1) đối chiếu hook/format với research/trends/patterns.md (P/F active) + digest 3 ngày gần nhất + file trend của clip; (2) ví dụ chính phải là nỗi đau người xem kênh thật sự có (bằng chứng comment/trend), minh hoạ ĐÚNG điểm cốt lõi của nguồn, và lời khuyên làm được trong chính tình huống đó; ví dụ gượng/hiếm gặp → CHƯA ĐẠT dù luật khác đạt
+
+6 checks · 1 error(s) · 0 warning(s) → FAIL

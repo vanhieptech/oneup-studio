@@ -1,0 +1,9 @@
+✔ L-088    có nguồn truy được (clip-05-r15.2-trend-adapter.md): Roediger & Karpicke (2006), doi.org/10.1111/j.1467-9280.2006.01693.x
+✔ L-088    lời đọc có nói dẫn chứng (nghiên cứu / tên tác giả)
+✔ L-088    hook không trùng mẫu 5 hook clip trước (ngưỡng 0.7)
+✔ L-088    CTA không trùng mẫu 5 CTA clip trước (ngưỡng 0.7)
+✔ L-088    file trend (Social Research) có link nguồn: content/clips/clip-05-hoc-mot-dem/final/trend-signals.md, research/trends/2026-10-26/clip-05-v5-trend.md, research/trends/2026-10-30/clip-05-v9-trend.md, research/trends/2026-11-07/clip-05-texthip-trend.md
+✔ L-088    ràng buộc/kiểm fact Deep Research: content/clips/clip-05-hoc-mot-dem/fact-package-v5.md, content/clips/clip-05-hoc-mot-dem/fact-package.md, research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md
+ℹ L-088    manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1
+
+7 checks · 0 error(s) · 0 warning(s) → PASS

@@ -1,0 +1,392 @@
+PASS rule-59: 0 external file(s) all mirrored in repo
+FAIL rule-65: 390 storage violation(s):
+   outside allowed top-level dirs: SRT_VERIFICATION.md
+   clip layout: only final/, archive/, README.md allowed in b-donlientay-01/ (drafts → archive/): content/clips/b-donlientay-01/review-script-v1r1.md
+   clip layout: only final/, archive/, README.md allowed in b-donlientay-01/ (drafts → archive/): content/clips/b-donlientay-01/review-script-v1r2.md
+   clip layout: only final/, archive/, README.md allowed in b-donlientay-01/ (drafts → archive/): content/clips/b-donlientay-01/review-script-v1r3.md
+   clip layout: only final/, archive/, README.md allowed in b-donlientay-01/ (drafts → archive/): content/clips/b-donlientay-01/script-v1-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in b-tietkiem-01-musk-quy-du-phong/ (drafts → archive/): content/clips/b-tietkiem-01-musk-quy-du-phong/review-script-v1r1.md
+   clip layout: only final/, archive/, README.md allowed in b-tietkiem-01-musk-quy-du-phong/ (drafts → archive/): content/clips/b-tietkiem-01-musk-quy-du-phong/review-script-v1r2.md
+   clip layout: only final/, archive/, README.md allowed in b-tietkiem-01-musk-quy-du-phong/ (drafts → archive/): content/clips/b-tietkiem-01-musk-quy-du-phong/review-script-v1r3.md
+   clip layout: only final/, archive/, README.md allowed in b-tietkiem-01-musk-quy-du-phong/ (drafts → archive/): content/clips/b-tietkiem-01-musk-quy-du-phong/script-v1-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/fact-package-v5.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/fact-package.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v10r10.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v10r101.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v10r102.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r3.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r4.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r5.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r52.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r53.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v5r53b-trend.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r6.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r610.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r611.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r612.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r612b.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r62.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r64.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r65.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r66.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r67.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r67b.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r68.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r68b.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v6r69.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v7r7.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v7r71.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v7r72.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v7r73.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v8r8.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v8r82.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v9r9.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v9r91.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/review-script-v9r92.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v10-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v2-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v3-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v4-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v5-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v6-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v7-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v8-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-05-hoc-mot-dem/ (drafts → archive/): content/clips/clip-05-hoc-mot-dem/script-v9-draft-opencreator.md
+   clip layout: only final/, archive/, README.md allowed in clip-06-bong-hoa-chua-no/ (drafts → archive/): content/clips/clip-06-bong-hoa-chua-no/factcheck-script-v1r12.md
+   clip layout: only final/, archive/, README.md allowed in clip-06-bong-hoa-chua-no/ (drafts → archive/): content/clips/clip-06-bong-hoa-chua-no/review-script-v1r1.md
+   clip layout: only final/, archive/, README.md allowed in clip-06-bong-hoa-chua-no/ (drafts → archive/): content/clips/clip-06-bong-hoa-chua-no/review-script-v1r11.md
+   clip layout: only final/, archive/, README.md allowed in clip-06-bong-hoa-chua-no/ (drafts → archive/): content/clips/clip-06-bong-hoa-chua-no/review-script-v1r12.md
+   clip layout: only final/, archive/, README.md allowed in clip-06-bong-hoa-chua-no/ (drafts → archive/): content/clips/clip-06-bong-hoa-chua-no/script-v1-draft-opencreator.md
+   outside allowed top-level dirs: workflows/agents/README.md
+   outside allowed top-level dirs: workflows/agents/ace-music.md
+   outside allowed top-level dirs: workflows/agents/deep-research.md
+   outside allowed top-level dirs: workflows/agents/flux-visual.md
+   outside allowed top-level dirs: workflows/agents/kokoro-voice.md
+   outside allowed top-level dirs: workflows/agents/news-coordinator.md
+   outside allowed top-level dirs: workflows/agents/opencreator-studio.md
+   outside allowed top-level dirs: workflows/agents/podcastfy-audio.md
+   outside allowed top-level dirs: workflows/agents/rule-reviewer.md
+   outside allowed top-level dirs: workflows/agents/short-factory.md
+   outside allowed top-level dirs: workflows/agents/shorts-cutter.md
+   outside allowed top-level dirs: workflows/agents/social-poster.md
+   outside allowed top-level dirs: workflows/agents/social-research.md
+   duplicate content (5e54c9548b): channels/vanhiep-tech/brand/tokens.css, channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/layers/cu-01/tokens.css, channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/layers/ov-d01/tokens.css, channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/layers/ov-hook/tokens.css, channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/layers/ov-l3/tokens.css, channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/layers/ov-q/tokens.css
+   duplicate content (1646bce4b1): content/clips/clip-04-gap-sach-tu-kiem/archive/script-v05.md, content/clips/clip-04-gap-sach-tu-kiem/final/script-v05.md
+   duplicate content (2989fcbdf5): content/clips/clip-04-gap-sach-tu-kiem/final/prosody-measure-v18.json, content/clips/clip-04-gap-sach-tu-kiem/final/prosody-measure.json
+   duplicate content (e7692ae004): content/clips/clip-04-gap-sach-tu-kiem/final/qa-v14-render/at-70.50s.jpg, content/clips/clip-04-gap-sach-tu-kiem/final/qa-v14-render/at-70.95s.jpg
+   duplicate content (37a1c68890): content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/reels/18.00s-b03c-mid.jpg, content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/reels/18.00s-b03c-swapped.jpg
+   duplicate content (012f6d6a89): content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/reels/35.18s-b06b-mid.jpg, content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/reels/35.20s-b06b-hand-tall-bar.jpg
+   duplicate content (999e1ac4e6): content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/tiktok/18.00s-b03c-mid.jpg, content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/tiktok/18.00s-b03c-swapped.jpg
+   duplicate content (6a1d28e999): content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/tiktok/35.18s-b06b-mid.jpg, content/clips/clip-04-gap-sach-tu-kiem/final/qa-v18-render/tiktok/35.20s-b06b-hand-tall-bar.jpg
+   duplicate content (c2425f2a55): content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md, content/clips/clip-04-gap-sach-tu-kiem/final/script-v18.md
+   duplicate content (41793b501d): content/clips/clip-05-hoc-mot-dem/final/prosody-measure-c05v4.json, content/clips/clip-05-hoc-mot-dem/final/prosody-measure.json
+   duplicate content (b9fc46e2f6): research/trends/2026-10-19/apify/comments-merged.json, research/trends/2026-10-19/apify/raw-comments.json
+   duplicate content (ef64a73a6d): research/trends/2026-10-21/apify/comments-merged.json, research/trends/2026-10-21/apify/raw-comments.json
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: SRT_VERIFICATION.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: channels/vanhiep-tech/brand/frame.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['source']: channels/vanhiep-tech/lab/capcut-cli-notes.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/b-donlientay-01/review-script-v1r1.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/b-donlientay-01/review-script-v1r2.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/b-donlientay-01/review-script-v1r3.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/b-donlientay-01/script-v1-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/b-tietkiem-01-musk-quy-du-phong/review-script-v1r1.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/b-tietkiem-01-musk-quy-du-phong/review-script-v1r2.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/b-tietkiem-01-musk-quy-du-phong/review-script-v1r3.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/b-tietkiem-01-musk-quy-du-phong/script-v1-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/fact-package-redo-2026-10-19.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/production-v14.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/prosody-measure-v16c.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/prosody-measure-v18.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/qa-v14-render/pacing-v14.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/qa-v14-render/qa-v14-render.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v14-delivery.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v15.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v16b-delivery.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v16c-delivery.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v17.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v17b.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v17c.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-delivery.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v18-table.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/script-v18.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-04-gap-sach-tu-kiem/final/voice-duration-budget.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/fact-package-v5.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/fact-package.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/final/prosody-measure-c05v4.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/final/prosody-plan.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/final/review-final-c05v4.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/final/review-voice-c05v4.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/final/trend-signals.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v10r10.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v10r101.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v10r102.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r3.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r4.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r5.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r52.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r53.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v5r53b-trend.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r6.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r610.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r611.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r612.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r612b.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r62.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r64.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r65.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r66.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r67.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r67b.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r68.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r68b.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v6r69.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v7r7.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v7r71.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v7r72.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v7r73.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v8r8.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v8r82.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v9r9.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v9r91.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/review-script-v9r92.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v1-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v10-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v2-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v3-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v4-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v5-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v6-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v7-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v8-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-05-hoc-mot-dem/script-v9-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-06-bong-hoa-chua-no/factcheck-script-v1r12.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'type', 'tags', 'status', 'source']: content/clips/clip-06-bong-hoa-chua-no/review-script-v1r1.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'type', 'tags', 'status', 'source']: content/clips/clip-06-bong-hoa-chua-no/review-script-v1r11.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'type', 'tags', 'status', 'source']: content/clips/clip-06-bong-hoa-chua-no/review-script-v1r12.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: content/clips/clip-06-bong-hoa-chua-no/script-v1-draft-opencreator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: docs/agents/domain.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: docs/agents/issue-tracker.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: logs/rule-checklist.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: logs/rule-scoring-rubric.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/agents/flux-test/test-log.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/agents/flux-visual-research-vi.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/agents/kokoro-ab-clip04-v18/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: research/agents/opencreator-clip05-learning-2026-11-07.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/fact-packages/B-hoc1dem-01-2026-10-21.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: research/fact-packages/clip05-texthip-fact-bridge-2026-11-07.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: research/fact-packages/factcheck-ai-otp-2026-11-04.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'source']: research/fact-packages/factcheck-clip05-lock-2026-11-07.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: research/fact-packages/factcheck-musk-donlientay-r1.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: research/fact-packages/factcheck-trends-2026-10-31.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/platform-recommendation-facts-2026-10-20.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['date', 'type', 'tags', 'status']: research/reference-videos/2026-10-21/analysis.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/script-craft-2026-10-20.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: research/script-craft-opencreator-2026-10-20.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: research/script-writer-prompt.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/tiktok-script-craft-2026-10-20.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['source']: research/tiktok-trend-pack-study-2026-10-20.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-16-omi-tiktok-trend-ideas.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-26/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'tags', 'status', 'source']: research/trends/2026-10-26/clip-05-v5-trend.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-27/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type']: research/trends/2026-10-27/clip-06-bong-hoa-trend.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-28/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-29/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-30/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-30/clip-05-v9-trend.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-10-31/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status']: research/trends/2026-10-31/trend-4.9-clean-as-you-go.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status']: research/trends/2026-10-31/trend-5.27-musk-tiet-kiem.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status']: research/trends/2026-10-31/trend-clip-06-bong-hoa-chua-no.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-01/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-02/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-03/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-04/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-05/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-06/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-07-clip-05-trend-audit.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-07-clip05-texthip-bridge-check.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: research/trends/2026-11-07/apify/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/INTEGRATION.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/PRIVACY.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/README.es-ES.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/README.fr-FR.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/README.ja-JP.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/README.ko-KR.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/README.zh-CN.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/SKILL.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/engine/tools/adapters/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/example/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/example/butterfly-film-spec.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/anatomy.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/backends-and-adapters.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/camera.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/craft-bar.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/determinism-and-contract.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/formats.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/motion-grammar.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/compose.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/sound-design.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/sounds-licenses.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/styles/lofi-electronic.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/styles/music-box.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/styles/vocabularies.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/form.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/harmony.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/melody.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/mood.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/rhythm.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/music/theory/sound.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/realism-and-craft.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/storytelling.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/INDEX.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/blueprint.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/brokenColour.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/charcoalErasure.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/colouredPencil.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/dreamGlaze.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/embroidery.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/flatVector.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/folkTale.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/foxDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/halftone.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/isometric.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/koiDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/lighthouseDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/lowPoly.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/midCentury.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/moonPhasesDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/paintedOil.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/paperCraft.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/pixelArt.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/pocketWatchDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/ranunculusDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/rubberHose.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/scrapbook.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/scratchboard.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/stipple.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/storybookDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/sumiE.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/toyBrick.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/woodcut.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/styles/wrenDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/adapt-a-style.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/character-consistency.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/drawing-process.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/explainer.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/facts.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/interactive.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/launch-video-kit.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/launch-video.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/long-film.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/machines.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/review.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/site-art.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/start-here.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/workflows/teach-drawing.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/references/working-method.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/scripts/plugin-README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/SKILL.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/engine/tools/adapters/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/example/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/example/butterfly-film-spec.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/anatomy.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/backends-and-adapters.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/camera.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/craft-bar.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/determinism-and-contract.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/formats.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/motion-grammar.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/compose.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/sound-design.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/sounds-licenses.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/styles/lofi-electronic.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/styles/music-box.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/styles/vocabularies.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/form.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/harmony.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/melody.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/mood.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/rhythm.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/music/theory/sound.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/realism-and-craft.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/storytelling.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/INDEX.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/blueprint.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/brokenColour.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/charcoalErasure.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/colouredPencil.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/dreamGlaze.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/embroidery.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/flatVector.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/folkTale.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/foxDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/halftone.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/isometric.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/koiDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/lighthouseDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/lowPoly.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/midCentury.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/moonPhasesDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/paintedOil.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/paperCraft.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/pixelArt.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/pocketWatchDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/ranunculusDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/rubberHose.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/scrapbook.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/scratchboard.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/stipple.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/storybookDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/sumiE.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/toyBrick.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/woodcut.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/styles/wrenDraw.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/adapt-a-style.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/character-consistency.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/drawing-process.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/explainer.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/facts.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/interactive.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/launch-video-kit.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/launch-video.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/long-film.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/machines.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/review.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/site-art.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/start-here.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/workflows/teach-drawing.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: resources/refs/anidoodle/skills/anidoodle/references/working-method.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: workflows/agents/README.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['type', 'source']: workflows/agents/ace-music.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['tags']: workflows/agents/deep-research.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: workflows/agents/flux-visual.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: workflows/agents/news-coordinator.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['date', 'type', 'tags', 'source']: workflows/agents/podcastfy-audio.md (run fm-backfill.py, then fill real values)
+   front-matter missing ['source']: workflows/agents/shorts-cutter.md (run fm-backfill.py, then fill real values)
+   front-matter status must be draft|ready|published: content/clips/clip-03-big-task-chunking/final/script-final.md
+   front-matter status must be draft|ready|published: content/clips/clip-05-hoc-mot-dem/final/script-final.md
+   front-matter status must be draft|ready|published: research/references/doodle-audit.md
+   front-matter status must be draft|ready|published: research/references/doodle-style-research.md
+   INDEX.md/index.json stale: run python3 pipeline/scripts/build-index.py

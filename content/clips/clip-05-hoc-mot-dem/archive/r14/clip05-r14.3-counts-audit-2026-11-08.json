@@ -1,0 +1,107 @@
+{
+  "version": "r14.3",
+  "concept": "A",
+  "patch": 3,
+  "status": "BLOCKED_BEFORE_FULL",
+  "full_script_written": false,
+  "blocker": "No genuinely new, useful current payoff found that closes the chosen hook without repeating S13/body, inventing a recall error or delayed success, or shifting the promise/method.",
+  "hooks_drafted": 8,
+  "selected_hook": "H02",
+  "hook_scores_are_editorial_not_human": true,
+  "report": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.3-hook-payoff-blocker-2026-11-08.md",
+  "report_sha256": "7597e124e2ef98c8d70bcca16101bb1e746816b3e229458e4730d0e3f732167d",
+  "actualreview_read_in_full": "/workspace/clip05-r14.2-rule-review-2026-11-08.md",
+  "actualreview_sha256": "ae28f04a06ec1f8cd8c89974a2bf3a8aa94fe0d99f9e649d3c0f7f377629c8ec",
+  "reference_full_r14_2_sha256": "50a08f34e6c07400fb2c1f990723d27dd1d1994d2df01388619d665b142d07fa",
+  "preserved_body_reference": {
+    "S06": {
+      "beat": "b03",
+      "exact_text": "Với lượt luyện sau khi đọc, Roediger và Karpicke năm 2006 đã so đọc lại với tự viết từ trí nhớ trong thí nghiệm đầu của họ.",
+      "utf8_sha256": "65ca682e5d5863f0f44df341aa8e389ea831f0c013878bf2fd454f61e80c6925"
+    },
+    "S07": {
+      "beat": "b03",
+      "exact_text": "120 sinh viên học hai đoạn văn ngắn, rồi mỗi người đọc lại một đoạn và tự viết nội dung nhớ được của đoạn kia.",
+      "utf8_sha256": "9150f373a86e8f2318ee0d552994c0aae591c7fc240974e89eb758c18223f00b"
+    },
+    "S08": {
+      "beat": "b03",
+      "exact_text": "Khi tự viết, họ có tiêu đề gợi nhắc, không có nội dung đoạn văn hay đáp án để sửa.",
+      "utf8_sha256": "50de6b3df2590f98d95576bd7e1669cfe4028c533d5811a3cd3ddea5caa86d4c"
+    },
+    "S09": {
+      "beat": "b04",
+      "exact_text": "Đọc lại cho tỷ lệ ý nhớ đúng cao hơn sau năm phút; còn sau hai ngày và một tuần, tự viết từ trí nhớ cao hơn.",
+      "utf8_sha256": "2ae3477b819ee1b01d16c91a337be771b462e59aed1b55808647d63ce5cff4fd"
+    },
+    "S10": {
+      "beat": "b04",
+      "exact_text": "Riêng mốc hai ngày, tỷ lệ ý nhớ đúng trung bình là 68 phần trăm với đoạn đã tự viết, so với 54 phần trăm ở đoạn được đọc lại.",
+      "utf8_sha256": "39e3845d3176bd6484248ba8533ac21fc3c1c13a9a6b6a480f987bcd589ed2e5"
+    },
+    "S11": {
+      "beat": "b04",
+      "exact_text": "Trong thí nghiệm này, cách dùng lượt luyện sau khi đọc đã làm khác lượng nội dung còn nhớ sau vài ngày.",
+      "utf8_sha256": "3d72b48f910b95839b36c26c9a10169cf53d11edf37c42db4842559e78901dc7"
+    },
+    "S12": {
+      "beat": "b05",
+      "exact_text": "Vậy với đoạn Chưa vội khuyên, điều bạn muốn mang tới cuối tuần là kể được Lan đã đáp lại người bạn đang buồn thế nào.",
+      "utf8_sha256": "b59cfc06178592bd76c79650867b13c8cc5540f7160289c838a0dffe465b3d12"
+    },
+    "S14": {
+      "beat": "b06",
+      "exact_text": "Theo gợi ý tự kiểm của Cẩm nang sống đáng giá, bạn thử đóng đoạn ấy lại và viết điều mình nhớ bằng lời của mình.",
+      "utf8_sha256": "5934e6f2526810d9a138a7c9603da4356744425306fe412cec70f3435760589d"
+    },
+    "S15": {
+      "beat": "b06",
+      "exact_text": "Bạn mở đoạn gốc để so với bản vừa viết và sửa nếu câu chuyện chưa khớp.",
+      "utf8_sha256": "84c56fa9a72b7b9ec7e4d557f41ac29b3f1c473975728906ab86f2749edcfb8a"
+    }
+  },
+  "spoken_sha256": null,
+  "spoken_extraction": "NOT APPLICABLE: no complete r14.3 spoken payload; never hash empty bytes as a script",
+  "caption_mapping": "NOT CREATED: no full script",
+  "adapter": "NOT CREATED: no full script",
+  "subjects_checker": "NOT RUN: no full script; do not substitute hooks report",
+  "l088_checker": "NOT RUN: no full script; do not substitute hooks report",
+  "duration_estimate_seconds": null,
+  "future_estimate_assumptions": {
+    "vi_whitespace_per_second": [
+      2.9,
+      2.5
+    ],
+    "endcard_seconds": 14,
+    "pauses_and_transitions": "must be added for actual full wording"
+  },
+  "human_read_aloud": "NOT TESTED",
+  "listen_once": "NOT TESTED",
+  "actual_duration": "NOT TESTED",
+  "new_source_owner_verdict": "NOT TESTED: no new full spoken SHA",
+  "remaining_reviewer_issues": [
+    "L1/L3/B2 not closed on a full",
+    "L2 no full verification",
+    "L4 reference-safe replacement proposed, not merged into full",
+    "L5/B5 unresolved"
+  ],
+  "frozen_previous_files_sha256_verified": {
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.2-counts-audit-2026-11-08.json": "308330705344a94761e22adffcf94e39321f0a91504fd0efe16cd21ad8993aa7",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.2-full-draft-2026-11-08.md": "50a08f34e6c07400fb2c1f990723d27dd1d1994d2df01388619d665b142d07fa",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14-counts-audit-2026-11-08.json": "a2c81967b8153a3ab61bdd3af01ad8906cbdebcdebea1750cf23ad8938807d4a",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-checker-input.md": "4121deb07dceffaea494422ced86d1d3a191875fa793c8c9af869b272ce75060",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14-full-draft-2026-11-08.md": "564c8b9eae110acd41b46aaff9e3f7a630ea386adaa06cf53d209d8b8ce1da5c",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-new-concepts-2026-11-08.md": "92908f216068b6d5b6962e8fbcf184bfc7a5b41ad9bc2b09ba2136cc3b99a67e",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.1-l088-check.json": "5f7836943d9978912f54c26a322f386558b15dfd74b931747bca67f3363fe8fe",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-subjects-check.json": "3f6212ae0305afcea81dc155ae8b2b36fb41f0d9d73a9ad58d888da1625db2e9",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.1-checker-input.md": "106c26a3269e0f110dff4b204e879b385e302d52d3367258d9cbbc02f0d4169c",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-l088-check.txt": "ecd24c48fb974375c561159765d81961c556f46e88b760eb3821c071a54ffe25",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.1-counts-audit-2026-11-08.json": "6ee7fe9dd5001b22b13fbd9772827bc08f1cb6ad63c11a71662fd4a6a5e0627f",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-subjects-check.txt": "15d3321fb895ccfcdc637d0e83463c6db46e4ef365874d8693f6607fb3aeb5a8",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-l088-check.json": "4718d1a33367d029b60fc92de8623a561b5ebdeacf0b71074b17d122c3e22abf",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.1-subjects-check.json": "d5ec091fea04d00ccf84b7d2ca1bc7a8b14ffaeff1a0fd9a0ca3a08c033b0e33",
+    "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.1-full-draft-2026-11-08.md": "020c410911f8d85163f5448e0e965a1f92371c79ccce1f3224473aaf077433f8"
+  },
+  "next_step_recommendation": "Return to concept/promise-payoff; no PATCH4, reset, new concept or production launched",
+  "overall_pass": false
+}

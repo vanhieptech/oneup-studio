@@ -1,0 +1,653 @@
+{
+  "title": "clip05 r15.2 byte-preserved lineage archive",
+  "verified_at_Asia_Saigon": "2026-11-08T21:51:30.129508+07:00",
+  "entries": [
+    {
+      "sha256": "106c26a3269e0f110dff4b204e879b385e302d52d3367258d9cbbc02f0d4169c",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.1-checker-input.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.1-checker-input.md",
+      "source_mtime_ns": 1794118875359690473,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:21:15.359690+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.060800+07:00"
+    },
+    {
+      "sha256": "5f7836943d9978912f54c26a322f386558b15dfd74b931747bca67f3363fe8fe",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.1-l088-check.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.1-l088-check.json",
+      "source_mtime_ns": 1794118877587686711,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:21:17.587687+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.062547+07:00"
+    },
+    {
+      "sha256": "d5ec091fea04d00ccf84b7d2ca1bc7a8b14ffaeff1a0fd9a0ca3a08c033b0e33",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.1-subjects-check.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.1-subjects-check.json",
+      "source_mtime_ns": 1794118875415690374,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:21:15.415690+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.064033+07:00"
+    },
+    {
+      "sha256": "4121deb07dceffaea494422ced86d1d3a191875fa793c8c9af869b272ce75060",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-checker-input.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-checker-input.md",
+      "source_mtime_ns": 1794119487660389883,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:31:27.660390+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.065249+07:00"
+    },
+    {
+      "sha256": "4718d1a33367d029b60fc92de8623a561b5ebdeacf0b71074b17d122c3e22abf",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-l088-check.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-l088-check.json",
+      "source_mtime_ns": 1794119535284969724,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:32:15.284970+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.066481+07:00"
+    },
+    {
+      "sha256": "ecd24c48fb974375c561159765d81961c556f46e88b760eb3821c071a54ffe25",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-l088-check.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-l088-check.txt",
+      "source_mtime_ns": 1794119491124431670,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:31:31.124432+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.067577+07:00"
+    },
+    {
+      "sha256": "3f6212ae0305afcea81dc155ae8b2b36fb41f0d9d73a9ad58d888da1625db2e9",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-subjects-check.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-subjects-check.json",
+      "source_mtime_ns": 1794119535284969724,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:32:15.284970+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.068682+07:00"
+    },
+    {
+      "sha256": "15d3321fb895ccfcdc637d0e83463c6db46e4ef365874d8693f6607fb3aeb5a8",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-subjects-check.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-subjects-check.txt",
+      "source_mtime_ns": 1794119491136431815,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:31:31.136432+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.069703+07:00"
+    },
+    {
+      "sha256": "de88930b0bdd626ff826813a8f9ba96343d72fba1865dcffea3fce4c61388049",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r15-checker-input.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15-checker-input.md",
+      "source_mtime_ns": 1794120881459975233,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:54:41.459975+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.070979+07:00"
+    },
+    {
+      "sha256": "e82bc6db62d64839c56e042b54da998ec0a3a46a2a89b0a70316d3ccebfe5879",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r15.1-checker-input.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15.1-checker-input.md",
+      "source_mtime_ns": 1794121234786374580,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:00:34.786375+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.072043+07:00"
+    },
+    {
+      "sha256": "c18ba89d4b311f12b88b2bda613efdf44ccf416145d5e9a52d765a1ed94c3694",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r15.2-checker-input.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15.2-checker-input.md",
+      "source_mtime_ns": 1794122730084760565,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:25:30.084761+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.073101+07:00"
+    },
+    {
+      "sha256": "30c897c5194ebdd8a340782166061f149ce2f87d14b0715a9b3b7cbca3ea2c65",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-concept-reset-after-r14.3-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-after-r14.3-2026-11-08.md",
+      "source_mtime_ns": 1794120064734565758,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:41:04.734566+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.074129+07:00"
+    },
+    {
+      "sha256": "0c45999f2f9446dc1c6fbba64a0cc93681935fdc987ea428ed4984d290f9ebb1",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-concept-reset-round2-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-round2-2026-11-08.md",
+      "source_mtime_ns": 1794120404230024900,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:46:44.230025+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.075123+07:00"
+    },
+    {
+      "sha256": "a2c81967b8153a3ab61bdd3af01ad8906cbdebcdebea1750cf23ad8938807d4a",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794118594339692249,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:16:34.339692+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.077259+07:00"
+    },
+    {
+      "sha256": "564c8b9eae110acd41b46aaff9e3f7a630ea386adaa06cf53d209d8b8ce1da5c",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14-full-draft-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14-full-draft-2026-11-08.md",
+      "source_mtime_ns": 1794118594335692377,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:16:34.335692+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.080344+07:00"
+    },
+    {
+      "sha256": "6ee7fe9dd5001b22b13fbd9772827bc08f1cb6ad63c11a71662fd4a6a5e0627f",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.1-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794118829099839281,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:20:29.099839+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.082710+07:00"
+    },
+    {
+      "sha256": "020c410911f8d85163f5448e0e965a1f92371c79ccce1f3224473aaf077433f8",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.1-full-draft-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-full-draft-2026-11-08.md",
+      "source_mtime_ns": 1794118829099839281,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:20:29.099839+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.085898+07:00"
+    },
+    {
+      "sha256": "308330705344a94761e22adffcf94e39321f0a91504fd0efe16cd21ad8993aa7",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.2-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794119535284969724,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:32:15.284970+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.087209+07:00"
+    },
+    {
+      "sha256": "50a08f34e6c07400fb2c1f990723d27dd1d1994d2df01388619d665b142d07fa",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.2-full-draft-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-full-draft-2026-11-08.md",
+      "source_mtime_ns": 1794119535284969724,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:32:15.284970+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.088442+07:00"
+    },
+    {
+      "sha256": "0a34b577b33968b86ff5f8decaf5b5eab043dbf85eb5a2e14429a7d52a2f6c5a",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.3-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.3-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794119882032091216,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:38:02.032091+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.089465+07:00"
+    },
+    {
+      "sha256": "7597e124e2ef98c8d70bcca16101bb1e746816b3e229458e4730d0e3f732167d",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r14.3-hook-payoff-blocker-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.3-hook-payoff-blocker-2026-11-08.md",
+      "source_mtime_ns": 1794119882032091216,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:38:02.032091+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.090519+07:00"
+    },
+    {
+      "sha256": "3c587734796b7013b03c4a4a253089bb270db3371ee9621fc0aacb20e15bccd4",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794120920012210023,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:55:20.012210+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.091592+07:00"
+    },
+    {
+      "sha256": "d7c0cac72851a0a78fa676b286532da1da41d4b825369e2c811a30f343dd13bb",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15-counts-audit-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-counts-audit-2026-11-08.md",
+      "source_mtime_ns": 1794120957672446950,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:55:57.672447+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.092635+07:00"
+    },
+    {
+      "sha256": "8a1110ae9b715e770b27bfb29879ef969376a948cd1046bf89531c3884752aa2",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15-full-draft-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md",
+      "source_mtime_ns": 1794120920012210023,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:55:20.012210+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.093767+07:00"
+    },
+    {
+      "sha256": "6ea0f21315bce0a86c25ba2706d989f587d4f07972fddc4d7a4082e2920cb0a5",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15-l088-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-l088-2026-11-08.txt",
+      "source_mtime_ns": 1794120886128003225,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:54:46.128003+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.094812+07:00"
+    },
+    {
+      "sha256": "2249d444dfe534ac649dd350c13142dd8f9335ffcc82a83657f733e2f9b4654b",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15-sha256-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-sha256-2026-11-08.txt",
+      "source_mtime_ns": 1794120957672446950,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:55:57.672447+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.095795+07:00"
+    },
+    {
+      "sha256": "6feaba8491c77af803a6f6b01727654a4d7cae8a912b89d25bc84d501d234cb5",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15-subjects-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-subjects-2026-11-08.txt",
+      "source_mtime_ns": 1794120886164003441,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:54:46.164003+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.096807+07:00"
+    },
+    {
+      "sha256": "6692e43f5fa97bcb75892e01bdede3542e69f335c9dfd8bc50a77515f1ef1a40",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794121267798621463,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:01:07.798621+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.097875+07:00"
+    },
+    {
+      "sha256": "9f08b9cd9079461a1fe8873e6becd52fbfcf3adb0f544e1686e00065c4b4b4b9",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-counts-audit-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-counts-audit-2026-11-08.md",
+      "source_mtime_ns": 1794121267798621463,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:01:07.798621+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.098870+07:00"
+    },
+    {
+      "sha256": "d71f1414d926d395da21b4ffd0872254b210ace723307324f9d8bdf9421e6018",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-delta-note-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-delta-note-2026-11-08.md",
+      "source_mtime_ns": 1794121267798621463,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:01:07.798621+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.099878+07:00"
+    },
+    {
+      "sha256": "57322fba5e105ae0e81c290d0aefbb0d9b4ceef12449d2a01ff4d39b3c60183c",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-full-draft-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md",
+      "source_mtime_ns": 1794121267794621432,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:01:07.794621+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.100952+07:00"
+    },
+    {
+      "sha256": "2348a751b096ab464f42758a12715a598adeec5ee76a03af265f458820997694",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-l088-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-l088-2026-11-08.txt",
+      "source_mtime_ns": 1794121242826434430,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:00:42.826434+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.102015+07:00"
+    },
+    {
+      "sha256": "2dfbbc0a8ab98ec6ad4a731047d0e46b1b97df3d1e40a77a3dbeed6a4b0d2fb5",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-sha256-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-sha256-2026-11-08.txt",
+      "source_mtime_ns": 1794121267798621463,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:01:07.798621+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.103021+07:00"
+    },
+    {
+      "sha256": "fb57e75f8ff97c101da109788df41f5d8207d0caecdf4d472db2be3972377983",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-subjects-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-subjects-2026-11-08.txt",
+      "source_mtime_ns": 1794121242838434519,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:00:42.838434+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.103999+07:00"
+    },
+    {
+      "sha256": "4c256dcf911e570fc50ad5dc34ab61f48714ba8160fe6e54e85e68896fa4e43f",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-counts-audit-2026-11-08.json",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-counts-audit-2026-11-08.json",
+      "source_mtime_ns": 1794122760938832310,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:26:00.938832+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.105140+07:00"
+    },
+    {
+      "sha256": "816928361704bf02a699267b6272b822099ee7df3c3d936d5792d76230341a23",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-counts-audit-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-counts-audit-2026-11-08.md",
+      "source_mtime_ns": 1794122760938832310,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:26:00.938832+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.105949+07:00"
+    },
+    {
+      "sha256": "f1ebb8018f6fe48cf0a871467bbfdbbc68205cb6485a9aab3f4be47b4bb5cc7d",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-delta-note-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-delta-note-2026-11-08.md",
+      "source_mtime_ns": 1794122760938832310,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:26:00.938832+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.106974+07:00"
+    },
+    {
+      "sha256": "87885dd3f4e0b1d847e7971c0476878f85691e3178b55ff7cbae6f6a096f7dc2",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-full-draft-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md",
+      "source_mtime_ns": 1794122760934831509,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:26:00.934832+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.108033+07:00"
+    },
+    {
+      "sha256": "d294d50f31e9b6f7ce259699bf1a71ffaf7c3eb986de8e11ae8a863e9aa1a251",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-l088-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-l088-2026-11-08.txt",
+      "source_mtime_ns": 1794122737982291284,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:25:37.982291+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.109008+07:00"
+    },
+    {
+      "sha256": "a9e976157951e15690625545e3a94b992758e2a84c837757580d7c6e0c293428",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-sha256-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-sha256-2026-11-08.txt",
+      "source_mtime_ns": 1794122760938832310,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:26:00.938832+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.109771+07:00"
+    },
+    {
+      "sha256": "93ec2202e743ee290aaa9e6aaa40214745ff595aba511030fcafa5a3b3138628",
+      "source_path": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-subjects-2026-11-08.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-subjects-2026-11-08.txt",
+      "source_mtime_ns": 1794122737898274915,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:25:37.898275+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.110828+07:00"
+    },
+    {
+      "sha256": "b9f3b9b36bc29632ee15ac0b18b302e7a262015dd8b17691f43c486e82d0fa06",
+      "source_path": "/workspace/clip05-concept-reset-B-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-B-review-2026-11-08.md",
+      "source_mtime_ns": 1794120170494135526,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:42:50.494136+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.111864+07:00"
+    },
+    {
+      "sha256": "0b53babf26a01bb0c916c33deba71e8ba3378deff9c984b2e3e30ff61df65782",
+      "source_path": "/workspace/clip05-concept-reset-round2-E-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-round2-E-review-2026-11-08.md",
+      "source_mtime_ns": 1794120503974242226,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:48:23.974242+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.112877+07:00"
+    },
+    {
+      "sha256": "0111b182cec484ac10c319511296c95c55061f3d48fd193e4ddecc28c1ddb7bc",
+      "source_path": "/workspace/clip05-r14.1-factcheck-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-factcheck-2026-11-08.md",
+      "source_mtime_ns": 1794119003691882275,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:23:23.691882+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.114019+07:00"
+    },
+    {
+      "sha256": "e4ef5796d3e87939a742af834758af81ffc9b15e47de2c1cfd4a332785fa2f15",
+      "source_path": "/workspace/clip05-r14.1-rule-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-rule-review-2026-11-08.md",
+      "source_mtime_ns": 1794119239697637249,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:27:19.697637+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.115160+07:00"
+    },
+    {
+      "sha256": "ae28f04a06ec1f8cd8c89974a2bf3a8aa94fe0d99f9e649d3c0f7f377629c8ec",
+      "source_path": "/workspace/clip05-r14.2-rule-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-rule-review-2026-11-08.md",
+      "source_mtime_ns": 1794119657343877673,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:34:17.343878+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.116325+07:00"
+    },
+    {
+      "sha256": "191f145ca941352bfed2afa77adc8bb44fbede7fde3a78e2bddeaa9e79105979",
+      "source_path": "/workspace/clip05-r15-rule-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-rule-review-2026-11-08.md",
+      "source_mtime_ns": 1794121062281139977,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:57:42.281140+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.117429+07:00"
+    },
+    {
+      "sha256": "2e273acaedd7f9185f6d3c947ab029df3de9cb673ae51df84dc4a1067976a668",
+      "source_path": "/workspace/clip05-r15.1-consolidated-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-consolidated-review-2026-11-08.md",
+      "source_mtime_ns": 1794122578849082254,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:22:58.849082+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.118731+07:00"
+    },
+    {
+      "sha256": "e381e6bd8d232f2e2f89a9bbec71ed0b24c2bb2181d8ead999f8e91a47ce34a6",
+      "source_path": "/workspace/clip05-r15.1-factcheck-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-factcheck-2026-11-08.md",
+      "source_mtime_ns": 1794122487847632505,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:21:27.847632+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.119886+07:00"
+    },
+    {
+      "sha256": "7a97ec8dc479cd48482033be6d07b60435126bb880c983f84707862335410072",
+      "source_path": "/workspace/clip05-r15.1-rule-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-rule-review-2026-11-08.md",
+      "source_mtime_ns": 1794121325007056079,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:02:05.007056+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.120952+07:00"
+    },
+    {
+      "sha256": "5592bd0a609ffad8b6d8121d2a986865f16cb6fb100e055647492136abf80279",
+      "source_path": "/workspace/clip05-r15.1-source-gate-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-source-gate-review-2026-11-08.md",
+      "source_mtime_ns": 1794122660552502642,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:24:20.552503+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.121752+07:00"
+    },
+    {
+      "sha256": "0d3bc7504c24d252a220948515381299f32de07dde604885c0fd148ea549dda8",
+      "source_path": "/workspace/clip05-r15.2-consolidated-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-consolidated-review-2026-11-08.md",
+      "source_mtime_ns": 1794123439009552925,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:37:19.009553+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.122931+07:00"
+    },
+    {
+      "sha256": "6a72bbd77fc6f191f6d05f8384eea7ead158822e0757b3744c71c681405bfcf2",
+      "source_path": "/workspace/clip05-r15.2-factcheck-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-factcheck-2026-11-08.md",
+      "source_mtime_ns": 1794123364393667194,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:36:04.393667+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.124043+07:00"
+    },
+    {
+      "sha256": "a84679f27cd6517a4a9e8c90374e29965483e9aebb7c7f0a6abb1d6b82aca709",
+      "source_path": "/workspace/clip05-r15.2-rule-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-rule-review-2026-11-08.md",
+      "source_mtime_ns": 1794123283565576068,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:34:43.565576+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.125121+07:00"
+    },
+    {
+      "sha256": "c52f8905ef109a307d4c718113671e3ee062986885595109fbd24c048e587efc",
+      "source_path": "/workspace/social-clip05-r14.1-source-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r14/social-clip05-r14.1-source-review-2026-11-08.md",
+      "source_mtime_ns": 1794118963143741404,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:22:43.143741+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.126346+07:00"
+    },
+    {
+      "sha256": "5f03d89341b00efb8d6f06df453a4b3cafd160beca0e38165eaa0d9f52d49ae6",
+      "source_path": "/workspace/social-clip05-r15.1-source-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-r15.1-source-review-2026-11-08.md",
+      "source_mtime_ns": 1794122472171839943,
+      "source_mtime_Asia_Saigon": "2026-11-08T14:21:12.171840+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.127419+07:00"
+    },
+    {
+      "sha256": "d6c27b8092929e2b91ef414a3be1f59ee7fd6f96800ff9acca1c7f10f06bf70f",
+      "source_path": "/workspace/social-clip05-r15.2-source-review-2026-11-08.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-r15.2-source-review-2026-11-08.md",
+      "source_mtime_ns": 1794149438454589920,
+      "source_mtime_Asia_Saigon": "2026-11-08T21:50:38.454590+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.128472+07:00"
+    },
+    {
+      "sha256": "9ab48bc3327a53c108579d076155068bf933b4d96ecbe0a230d4621abf392289",
+      "source_path": "/workspace/social-clip05-source-confirmation-2026-11-08-1303.md",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-source-confirmation-2026-11-08-1303.md",
+      "source_mtime_ns": 1794117878559008454,
+      "source_mtime_Asia_Saigon": "2026-11-08T13:04:38.559008+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:51:30.129506+07:00"
+    },
+    {
+      "sha256": "34ff436b387cfd14afcdef1ba0e3668125a11d540ea028d8d2483306e2020b6b",
+      "source_path": "/workspace/clip05-r15.2-storage-before.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/storage-before-output.txt",
+      "source_mtime_ns": 1794149495974056981,
+      "source_mtime_Asia_Saigon": "2026-11-08T21:51:35.974057+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:53:22.336790+07:00",
+      "kind": "News captured storage-check output"
+    },
+    {
+      "sha256": "d88f71da220f7c2dd863141daacf1df8b83761befc30c752601b3a544e6b6328",
+      "source_path": "/workspace/clip05-r15.2-storage-after.txt",
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/storage-after-output.txt",
+      "source_mtime_ns": 1794149588702575039,
+      "source_mtime_Asia_Saigon": "2026-11-08T21:53:08.702575+07:00",
+      "verified_at_Asia_Saigon": "2026-11-08T21:53:22.338300+07:00",
+      "kind": "News captured storage-check output"
+    }
+  ],
+  "lineage": "r14 → r14.1 → r14.2 → r14.3 stopped (blocker + counts only; no full r14.3 draft supplied) → reset B → reset round2 E → r15 → r15.1 → r15.2",
+  "social_r15_2": {
+    "state": "REPORT_ARCHIVED",
+    "claim": "ĐẠT nguồn Social trong phạm vi hẹp; scope only S05 / caption S05 / storyboard b02; not overall PASS",
+    "claimed_report_time_Asia_Saigon": "2026-11-08T21:50:38+07:00",
+    "live_check": "Historical 2026-11-08 14:20:51 Asia/Saigon pinned a32f51f558ff144a8448f6a00eeb900e2ad23542; not fresh live check by Social",
+    "Mac": "CHƯA KIỂM"
+  },
+  "deep_reverification_claim": "Deep Research says reverified 21:50 Asia/Saigon; agent claim only, not inferred from report mtime 14:36:04.393667",
+  "human_review": "CHƯA KIỂM",
+  "production": "NOT_CHECKED; NO Chốt; NO media/spec generation",
+  "frozen_frontmatter": "Preserved exactly; no normalization/backfill, any storage frontmatter failures must be reported, not hidden",
+  "original_frozen_source_count": 58,
+  "storage_check": {
+    "before": 390,
+    "after": 419,
+    "added_violations": [
+      "   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15-checker-input.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15.1-checker-input.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip-05-r15.2-checker-input.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['tags', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['tags', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['tags', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-B-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-round2-E-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.1-checker-input.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip-05-r14.2-checker-input.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-factcheck-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r14/social-clip05-r14.1-source-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-counts-audit-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-consolidated-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-counts-audit-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-delta-note-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-factcheck-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-source-gate-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-consolidated-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-counts-audit-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-delta-note-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-factcheck-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-rule-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-r15.1-source-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-r15.2-source-review-2026-11-08.md (run fm-backfill.py, then fill real values)",
+      "   front-matter missing ['title', 'date', 'type', 'tags', 'status', 'source']: content/clips/clip-05-hoc-mot-dem/archive/r15/social-clip05-source-confirmation-2026-11-08-1303.md (run fm-backfill.py, then fill real values)"
+    ],
+    "removed_violations": [
+      "   INDEX.md/index.json stale: run python3 pipeline/scripts/build-index.py"
+    ],
+    "command": "python3 pipeline/scripts/check-assets.py --list",
+    "exit_code_before": 1,
+    "exit_code_after": 1,
+    "cause": "30 added frontmatter violations in exact frozen originals; 1 stale INDEX failure removed. No unrelated files repaired; no original normalized."
+  },
+  "index_note": "Normal generator discovers 7 pre-existing snapshot/reference docs as well as stream entries; no such underlying files changed or staged.",
+  "generated_artifacts": [
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/README.md",
+      "sha256": "2664a18770010465d819ad06aaef681f14c3c9ed1813aa1430d422487c867724",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/archive-check-audit.md",
+      "sha256": "7e93c1c973e47d7d37e3088327cd111d1944188e02fd716ed0006b1268c818ec",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/choppy-output.txt",
+      "sha256": "105fffa2ab0f287893e2ba4b04680fb342482be39cc9036cdd83de153e6a40b4",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clarity-output.txt",
+      "sha256": "b965e333a2ce44dc47e65e43789ec59aa44b11c8577967e6efeffc4fdc2e6b87",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r12-actual-spoken-adapter.md",
+      "sha256": "21e1779e6d06b77fdd864bcd5c56c214f8b3bc9e8fffc72496fc1a6ed078f1c6",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r14.2-actual-spoken-adapter.md",
+      "sha256": "d4fa691ef16fc3a57f54345731584c4edf1d15cb694e4ce6b9c3078dfa683fe8",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md",
+      "sha256": "af450c81d36b2b08c38480a31446e838f9c5c440c6e553dcc1088c527724fad7",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/duration-estimate.json",
+      "sha256": "88e88be68652cdfce81394f4e2eab3e4d28cebad02dbdc24e0a4559dc2444b4c",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/evidence-output.txt",
+      "sha256": "32d3853552afffaa9107ee398573d95a2af39c4900432d9688e5fbfe804fcb86",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/flow-output.txt",
+      "sha256": "b48c48e8662278c9edb23cfd2abb32eb292ad933a2ae9da49053fc5a7d05ed96",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/fresh-output.txt",
+      "sha256": "3d8f25de57cd64f5b365fd322f01c929769be813cec9b92f56b1a5ff5fc8cc6c",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/l088-output.txt",
+      "sha256": "e351c554ef1f8833761f47f3986daec0de009db1170e75c2430b7584129bb294",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/link-output.txt",
+      "sha256": "31d6e48e7394583c21c7ffe64a9dbb93f37a5a1a2409bc543045add84dbd7bf5",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/parse-verification.json",
+      "sha256": "ac5096dacfc66fb88ade83a46d2165201e952b4d60b366a98f095f43e0b81a72",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/repeat-output.txt",
+      "sha256": "7e8dc170dfac127dc5798c83430fe1be66c736c8fba12e51349a5515927c492d",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/storage-delta.json",
+      "sha256": "c500249c4e3a50bec816b956ddc141eb711bd9141abbd7ecff36aa72219e68f5",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/subjects-output.txt",
+      "sha256": "c5644283e9e3da192f1e719f503bf62d9812a73b29eda66d8e41809a819874a3",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/text-check-commands-results.json",
+      "sha256": "2f49b045f0eb4dab60eb05a96b3b6293623ce30a225299acf9f370c767c55cf3",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/trend-output.txt",
+      "sha256": "d2451ccf3bf6d2f2d6f39d467063d1a12496c68c2302eada88f64f241bef4850",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    },
+    {
+      "archived_path": "content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-source-lock-verification-2026-11-08.json",
+      "sha256": "a67a9711d9547dbd1030fffff0e2d1d5e6ee4be83a2aba56a802899b12925a24",
+      "source_path": "generated by News text-only archive/check work; see audit commands"
+    }
+  ],
+  "self_hash_note": "Manifest excludes itself; final git commit pins exact manifest bytes.",
+  "whitespace_check": {
+    "command": "git diff --cached --check",
+    "exit_code": 2,
+    "warning": "r14/clip-05-r14.1-checker-input.md:41: new blank line at EOF; exact original retained"
+  }
+}

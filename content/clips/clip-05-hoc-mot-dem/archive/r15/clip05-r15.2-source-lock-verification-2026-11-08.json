@@ -1,0 +1,23 @@
+[
+  {
+    "path": "research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md",
+    "expected_commit": "8ff76986f8b14976c3bc4eb3f2f913a03b09703c",
+    "sha256": "ac400b83755c2ede277b6917c47c69e16193280be3d8b8a3c55ce5a934172a64",
+    "matches_expected_commit_and_freshly_fetched_origin": true,
+    "verified_at_Asia_Saigon": "2026-11-08T21:51:37.929374+07:00"
+  },
+  {
+    "path": "research/fact-packages/factcheck-clip05-lock-2026-11-07.md",
+    "expected_commit": "b02dd07f35bccee493009cb38501d9943404d14f",
+    "sha256": "72872ec45dacf5b7e94660faf8f2950b3e917b4dd9e00459adb460ecf1c0972e",
+    "matches_expected_commit_and_freshly_fetched_origin": true,
+    "verified_at_Asia_Saigon": "2026-11-08T21:51:37.932273+07:00"
+  },
+  {
+    "path": "research/fact-packages/clip05-texthip-fact-bridge-2026-11-07.md",
+    "expected_commit": "d673dd9e3f0d28a2eb6d2f66548c3c9add02fda1",
+    "sha256": "c060435a99bfe33e89c4a32f149351265617a93622cb53fa6f909f994025ec3c",
+    "matches_expected_commit_and_freshly_fetched_origin": true,
+    "verified_at_Asia_Saigon": "2026-11-08T21:51:37.935124+07:00"
+  }
+]

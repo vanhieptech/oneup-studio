@@ -1,0 +1,13 @@
+{
+  "mode": "--subjects",
+  "checker": "/workspace/oneup-studio/pipeline/scripts/check-rules.py",
+  "adapter": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-checker-input.md",
+  "checks": 1,
+  "errors": 0,
+  "warnings": 0,
+  "exit_code": 0,
+  "raw_report": "/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip-05-r14.2-subjects-check.txt",
+  "raw_report_sha256": "15d3321fb895ccfcdc637d0e83463c6db46e4ef365874d8693f6607fb3aeb5a8",
+  "output": "✔ L-087    clip-05-r14.2-checker-input.md: không gọi tên môn học / kiến thức môn học\n\n1 checks · 0 error(s) · 0 warning(s) → PASS\n",
+  "meaning_craft_or_overall_pass": false
+}

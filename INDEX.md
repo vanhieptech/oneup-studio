@@ -79,6 +79,7 @@ tags: [index, retrieval]
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v4.md` | Clip 04 v4 (ARCHIVED — superseded by v5 draft): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v5.md` | Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.fact-package-redo | fact-package | verified-awaiting-script-rewrite | `content/clips/clip-04-gap-sach-tu-kiem/final/fact-package-redo-2026-10-19.md` | Clip 04 làm lại — gói fact (Deep Research) |
+| content.clips.clip-04-gap-sach-tu-kiem.final.out.short-factory-review.research-original-snapshot | None | research-only | `content/clips/clip-04-gap-sach-tu-kiem/final/out/short-factory-review/research-original-snapshot.md` | Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio |
 | clip-04.post-checklist | doc | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
 | clip-04.post | post-package | bộ final v18, Rule Reviewer đã soát phần chữ (23c82a7), chờ --final + Hiệp duyệt | `content/clips/clip-04-gap-sach-tu-kiem/final/post.md` | Bộ final đăng clip-04 v18 «Gấp sách tự kiểm» |
 | content.clips.clip-04-gap-sach-tu-kiem.final.production-v14 | production | locked-script-in-production | `content/clips/clip-04-gap-sach-tu-kiem/final/production-v14.md` | Clip 04 v14 — production |
@@ -103,6 +104,8 @@ tags: [index, retrieval]
 | content.clips.clip-04-gap-sach-tu-kiem.final.sound-note-v18 | sound-note | đề xuất — Hiệp chọn bài lúc đăng; Social Poster chép mục 1 vào mục 8 gói đăng | `content/clips/clip-04-gap-sach-tu-kiem/final/sound-note-v18.md` | Clip-04 v18 — Sound note |
 | clip-04.trend-signals | trend-signals | draft | `content/clips/clip-04-gap-sach-tu-kiem/final/trend-signals.md` | clip-04 — Trend signals (bản làm lại, Social Research) |
 | content.clips.clip-04-gap-sach-tu-kiem.final.visual-plan-v18 | visual-plan | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/visual-plan-v18.md` | Clip 04 v18 — bảng minh hoạ chi tiết (FLUX Visual) |
+| content.clips.clip-05-hoc-mot-dem.archive.concept-reset.clip05-concept-reset-after-r14.3-2026-11-08 | editorial-concept-reset | draft-not-approved | `content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-after-r14.3-2026-11-08.md` | Quay cấp concept — chỉ cấu trúc và các đoạn thử lời |
+| content.clips.clip-05-hoc-mot-dem.archive.concept-reset.clip05-concept-reset-round2-2026-11-08 | editorial-concept-document | proposal-not-approved | `content/clips/clip-05-hoc-mot-dem/archive/concept-reset/clip05-concept-reset-round2-2026-11-08.md` | Không full B — đổi đối tượng kể từ người quên sang kết quả thật |
 | content.clips.clip-05-hoc-mot-dem.archive.r11.before-craft-qa.opencreator-clip05-script-r11.4-draft-2026-11-07 | script | draft — chưa Chốt, không tựpass | `content/clips/clip-05-hoc-mot-dem/archive/r11/before-craft-qa/opencreator-clip05-script-r11.4-draft-2026-11-07.md` | Actual draft B patch2 — không trình xin Chốt |
 | content.clips.clip-05-hoc-mot-dem.archive.r11.before-craft-qa.opencreator-clip05-storyboard-r11.4-plan-2026-11-07 | storyboard-plan | draft-planning-only-no-images | `content/clips/clip-05-hoc-mot-dem/archive/r11/before-craft-qa/opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md` | CHƯA CHUẨN BỊ ẢNH |
 | content.clips.clip-05-hoc-mot-dem.archive.r11.clip05-r11-factcheck-2026-11-07 | factcheck | archived | `content/clips/clip-05-hoc-mot-dem/archive/r11/clip05-r11-factcheck-2026-11-07.md` | Fact-check clip05 r11 — không sửa script |
@@ -133,6 +136,18 @@ tags: [index, retrieval]
 | content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07 | storyboard | archived | `content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md` | Clip05 r11.4 plan-update1 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN |
 | content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07 | storyboard | archived | `content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md` | Clip05 r11.4 plan-update2 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN |
 | content.clips.clip-05-hoc-mot-dem.archive.r12.opencreator-clip05-script-r12-draft-2026-11-07 | script | draft | `content/clips/clip-05-hoc-mot-dem/archive/r12/opencreator-clip05-script-r12-draft-2026-11-07.md` | Bản thật để Rule Reviewer kiểm — CHƯA DUYỆT |
+| content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14-full-draft-2026-11-08 | full-script-editorial-draft | draft-awaiting-independent-review | `content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14-full-draft-2026-11-08.md` | r14 — bản lời mới, chưa Chốt |
+| content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14.1-full-draft-2026-11-08 | full-script-editorial-draft | draft-awaiting-independent-review | `content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.1-full-draft-2026-11-08.md` | r14.1 — cùng concept A, sửa mạch; chưa Chốt |
+| content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14.2-full-draft-2026-11-08 | editorial-full-draft | draft-no-self-pass | `content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.2-full-draft-2026-11-08.md` | r14.2 — PATCH2, không reset lineage |
+| content.clips.clip-05-hoc-mot-dem.archive.r14.clip05-r14.3-hook-payoff-blocker-2026-11-08 | editorial-blocker-report | blocked-not-a-script | `content/clips/clip-05-hoc-mot-dem/archive/r14/clip05-r14.3-hook-payoff-blocker-2026-11-08.md` | KHÔNG CÓ FULL SCRIPT r14.3 — hồ sơ thử hook/payoff và dừng |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.README | archive-index | draft | `content/clips/clip-05-hoc-mot-dem/archive/r15/README.md` | clip-05 r15 lineage archive index |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.archive-check-audit | archive-audit | draft | `content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/archive-check-audit.md` | clip-05 r15.2 — archive and text-only checks |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.clip-05-r12-actual-spoken-adapter | checker-adapter | draft | `content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r12-actual-spoken-adapter.md` | r12 actual spoken checker adapter |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.clip-05-r14.2-actual-spoken-adapter | checker-adapter | draft | `content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r14.2-actual-spoken-adapter.md` | r14.2 actual spoken checker adapter |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.checks-2026-11-08.clip-05-r15.2-trend-adapter | checker-adapter | draft | `content/clips/clip-05-hoc-mot-dem/archive/r15/checks-2026-11-08/clip-05-r15.2-trend-adapter.md` | clip-05 r15.2 PATCH2 exact spoken adapter |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md` | Clip05 r15 — bản đầy đủ mới, chưa craft PASS / chưa Chốt |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.1-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md` | Clip05 r15.1 PATCH1 — chỉ sửa K1/S01, chưa craft PASS / chưa Chốt |
+| content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.2-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md` | Clip05 r15.2 PATCH2 — chỉ sửa K2/S18, PREPARED PENDING OWNER COORDINATION APPROVAL |
 | content.clips.clip-05-hoc-mot-dem.evidence-lines-v10 | None | None | `content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md` | Câu dẫn chứng cho clip-05 v10 (Deep Research) |
 | content.clips.clip-05-hoc-mot-dem.factcheck-script-v9r92 | None | None | `content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md` | Deep Research soát fact clip-05 v9 r9.2 |
 | clip-05.post-checklist | doc | ready | `content/clips/clip-05-hoc-mot-dem/final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
@@ -295,8 +310,14 @@ tags: [index, retrieval]
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
+| skill.awesome-ai-motion | skill | active | `resources/refs/awesome-ai-motion/SKILL.md` | awesome-ai-motion |
 | refs.motionmaxxing.integration | vendor-note | active | `resources/refs/motionmaxxing/INTEGRATION.md` | motionmaxxing — vendored copy + OneUp integration |
 | skill.motionmaxxing | skill | active | `resources/refs/motionmaxxing/SKILL.md` | motionmaxxing |
+| skill.skill | skill | active | `resources/refs/transitions.dev/agent/skill/SKILL.md` | transitions-agent |
+| skill.refine-live | skill | active | `resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md` | refine-live |
+| skill.transitions-dev | skill | active | `resources/refs/transitions.dev/skills/transitions-dev/SKILL.md` | transitions-dev |
+| skill.transitions-polish | skill | active | `resources/refs/transitions.dev/skills/transitions-polish/SKILL.md` | transitions-polish |
+| skill.transitions-ui-generation | skill | active | `resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md` | transitions-ui-generation |
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | ready | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |

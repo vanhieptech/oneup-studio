@@ -1,0 +1,713 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "spoken_sha256": "375676914cb27694596cb36d73f6ee37bedda79c78cc1f21e472ca65b1f46fa7",
+  "file_sha256": "8a1110ae9b715e770b27bfb29879ef969376a948cd1046bf89531c3884752aa2",
+  "word_count_whitespace_vi": 433,
+  "sentences": 21,
+  "beats": 9,
+  "per_beat": {
+    "b01": 33,
+    "b02": 64,
+    "b03": 76,
+    "b04": 60,
+    "b05": 24,
+    "b06": 64,
+    "b07": 52,
+    "b08": 46,
+    "b09": 14
+  },
+  "caption_chunks": 61,
+  "max_caption_chunk_words": 8,
+  "pause_seconds_assumed": [
+    1.1,
+    1.7,
+    2,
+    1.5,
+    0.6,
+    1.5,
+    1.7,
+    1.2,
+    0.4
+  ],
+  "transition_seconds_assumed": 4,
+  "endcard_seconds_assumed": 14,
+  "estimate_seconds": {
+    "2.9": 179.0103448275862,
+    "2.5": 202.89999999999998
+  },
+  "promise_before_words": 48,
+  "promise_through_words": 69,
+  "adapter_exact_per_beat_and_reconstructed_payload": true,
+  "human_read_aloud": "NOT_TESTED",
+  "stranger_listen_once": "NOT_TESTED",
+  "actual_timing": "NOT_TESTED",
+  "extraction": "after entire opening marker+LF; retain payload final LF",
+  "sentences_exact": [
+    {
+      "id": "S01",
+      "beat": "b01",
+      "text": "Sinh viên đọc lại cùng đoạn, hai ngày sau vẫn nhớ ít ý hơn so với đoạn đã tự viết từ trí nhớ.",
+      "en": [
+        "Students reread the same passage,",
+        "yet recalled fewer ideas two days later",
+        "than for the passage practised through recall."
+      ],
+      "source": "RK L28–34, L41, L81–83: sinh viên; đoạn đã đọc lại so với đoạn đã tự viết; recall sau hai ngày.",
+      "emphasis": "nhớ ít ý hơn"
+    },
+    {
+      "id": "S02",
+      "beat": "b01",
+      "text": "Sau một tuần, tự viết còn hơn đọc lại không?",
+      "en": [
+        "After one week,",
+        "does recall practice still outperform rereading?"
+      ],
+      "source": "Biên tập: câu hỏi về chiều so sánh ở một tuần; RK L42.",
+      "emphasis": "một tuần"
+    },
+    {
+      "id": "S03",
+      "beat": "b02",
+      "text": "Có, tự viết vẫn hơn ở mốc một tuần trong thí nghiệm năm 2006 này.",
+      "en": [
+        "Yes, recall practice still performed better",
+        "at one week in this 2006 experiment."
+      ],
+      "source": "RK L18, L42, L81: năm 2006; tự viết hơn đọc lại ở một tuần.",
+      "emphasis": "thí nghiệm năm 2006"
+    },
+    {
+      "id": "S04",
+      "beat": "b02",
+      "text": "Bạn sẽ có phép so cụ thể và một câu hỏi dùng ngay cho bài đọc muốn kể sau vài ngày.",
+      "en": [
+        "You will get a concrete comparison",
+        "and a question you can use today",
+        "for reading you want to retell days later."
+      ],
+      "source": "Biên tập: lời hứa; hoàn tất bằng S17–20. Không hứa thành công cá nhân.",
+      "emphasis": "dùng ngay"
+    },
+    {
+      "id": "S05",
+      "beat": "b02",
+      "text": "Nếu bạn thích đọc rồi chia sẻ sách, text hip ở Hàn cũng có nét ấy, đọc sách thành gu sống và kết nối người cùng sở thích.",
+      "en": [
+        "If you enjoy reading and sharing books,",
+        "Korea’s text hip includes that aspect,",
+        "reading as a lifestyle",
+        "and connecting with fellow readers."
+      ],
+      "source": "SOC: Znews L40/50/58/60; Korea Times L33/39–41 @0d569da. Vế “Nếu bạn thích…” là điều kiện biên tập.",
+      "emphasis": "đọc rồi chia sẻ"
+    },
+    {
+      "id": "S06",
+      "beat": "b03",
+      "text": "Với chuyện nhớ sau vài ngày, phép so này bắt đầu từ 120 sinh viên học hai đoạn ngắn.",
+      "en": [
+        "For recall days later,",
+        "this comparison began with 120 students",
+        "studying two short passages."
+      ],
+      "source": "RK L28–31: N120 sinh viên; mỗi người học hai đoạn ngắn.",
+      "emphasis": "hai đoạn ngắn"
+    },
+    {
+      "id": "S07",
+      "beat": "b03",
+      "text": "Sau đó, mỗi người đọc lại một đoạn và tự viết nội dung nhớ được của đoạn kia.",
+      "en": [
+        "Each student then reread one passage",
+        "and wrote remembered content from the other."
+      ],
+      "source": "RK L30–31: trong cùng người, một đoạn thêm đọc lại; đoạn kia thêm tự viết nhớ lại; không gọi hai nhóm độc lập.",
+      "emphasis": "mỗi người"
+    },
+    {
+      "id": "S08",
+      "beat": "b03",
+      "text": "Khi tự viết, họ có tiêu đề gợi nhắc, không có nội dung đoạn văn hay đáp án để sửa.",
+      "en": [
+        "For recall, they had a title cue,",
+        "but not the passage content",
+        "or corrective answers."
+      ],
+      "source": "RK L31/33: title cue, không nội dung đoạn, không feedback.",
+      "emphasis": "tiêu đề gợi nhắc"
+    },
+    {
+      "id": "S09",
+      "beat": "b03",
+      "text": "Còn các mốc đo năm phút, hai ngày và một tuần được thực hiện ở những người khác nhau.",
+      "en": [
+        "The five-minute, two-day, and one-week final tests",
+        "were conducted with different participants."
+      ],
+      "source": "RK L30/32/46: các mốc đo giữa người, không đo dọc cùng người.",
+      "emphasis": "những người khác nhau"
+    },
+    {
+      "id": "S10",
+      "beat": "b04",
+      "text": "Ở mốc năm phút, đọc lại cho tỷ lệ ý nhớ đúng cao hơn.",
+      "en": [
+        "At five minutes, rereading yielded",
+        "a higher proportion of correctly recalled ideas."
+      ],
+      "source": "RK L40/48: 5 phút, SS81% > ST75%; lời chỉ nêu chiều.",
+      "emphasis": "năm phút"
+    },
+    {
+      "id": "S11",
+      "beat": "b04",
+      "text": "Sang mốc hai ngày, thứ tự đổi lại, đoạn đã tự viết cho tỷ lệ cao hơn đoạn được đọc lại.",
+      "en": [
+        "At two days, the ranking reversed.",
+        "Recall-practised passages yielded a higher proportion",
+        "than reread passages."
+      ],
+      "source": "RK L41/81: 2 ngày, ST68% > SS54%; lời chỉ nêu chiều.",
+      "emphasis": "thứ tự đổi lại"
+    },
+    {
+      "id": "S12",
+      "beat": "b04",
+      "text": "Trong thí nghiệm này, cách luyện sau lần đọc đầu đã làm khác lượng nội dung còn nhớ khi không có đoạn văn trước mặt.",
+      "en": [
+        "In this experiment,",
+        "the activity after initial study affected",
+        "how much content participants recalled",
+        "without the passage in front of them."
+      ],
+      "source": "RK L30–34/81–82; quyết định W16 L13–14/61–64: tác động thao tác lên recall, không unique mechanism/chẩn đoán.",
+      "emphasis": "cách luyện"
+    },
+    {
+      "id": "S13",
+      "beat": "b05",
+      "text": "Vậy nếu muốn vài ngày nữa còn kể được bài đã đọc, điều bạn cần là gọi lại nội dung khi không mở bài.",
+      "en": [
+        "If you want to retell reading days later,",
+        "your goal is to recall its content",
+        "without opening the text."
+      ],
+      "source": "Biên tập: mục tiêu có điều kiện kể lại bài đọc sau vài ngày. Không coi hoạt động chia sẻ là outcome RK đã đo.",
+      "emphasis": "khi không mở bài"
+    },
+    {
+      "id": "S14",
+      "beat": "b06",
+      "text": "Để tập việc ấy, Cẩm nang sống đáng giá gợi ý bạn đóng bài lại, tự viết điều còn nhớ bằng lời của bạn.",
+      "en": [
+        "To practise that, the handbook suggests",
+        "closing the text",
+        "and writing what you remember",
+        "in your own words."
+      ],
+      "source": "F5: fact lock L10–11; bridge L16–17, mục23.14/23.16. Hướng dẫn tự viết, không kết quả đo.",
+      "emphasis": "tự viết"
+    },
+    {
+      "id": "S15",
+      "beat": "b06",
+      "text": "Rồi bạn mở bài gốc, so với bản vừa viết và sửa nếu nội dung chưa khớp.",
+      "en": [
+        "Then reopen the original,",
+        "compare it with what you wrote,",
+        "and correct any mismatch."
+      ],
+      "source": "F5: cùng locator; mở đối chiếu/sửa. Không làm xung đột thiếu→dò→bổ sung của truyện.",
+      "emphasis": "so với bản vừa viết"
+    },
+    {
+      "id": "S16",
+      "beat": "b06",
+      "text": "Bước mở ra so và sửa thuộc hướng dẫn của cẩm nang, không phải thao tác được thử trong thí nghiệm vừa nói.",
+      "en": [
+        "Reopening, comparing, and correcting follow the handbook.",
+        "They were not the tested procedure",
+        "in the experiment just described."
+      ],
+      "source": "RK L33/84/91 + F5: bước đối chiếu/sửa không được RKExp1 thử.",
+      "emphasis": "không phải thao tác được thử"
+    },
+    {
+      "id": "S17",
+      "beat": "b07",
+      "text": "Còn trong thí nghiệm với sinh viên ấy, sau một tuần, tự viết không có đáp án cho trung bình 56 phần trăm ý nhớ đúng, đọc lại là 42 phần trăm.",
+      "en": [
+        "At one week in that student experiment,",
+        "recall practice without corrective answers yielded",
+        "56 percent of ideas correctly recalled on average,",
+        "versus 42 percent for rereading."
+      ],
+      "source": "RK L28–34/42/46/81/90–91: 1 tuần, ST56% vs SS42%, %idea units trung bình, ST không feedback; không gán cho F5.",
+      "emphasis": "56 phần trăm"
+    },
+    {
+      "id": "S18",
+      "beat": "b07",
+      "text": "Tự viết nhỉnh hơn ở mốc này, nhưng ngay cả kết quả ấy cũng không phải nhớ hết nội dung.",
+      "en": [
+        "Recall practice did better at this delay,",
+        "but even that result",
+        "did not mean remembering all the content."
+      ],
+      "source": "RK L42/46: 56% không là nhớ hết; phép diễn giải trực tiếp con số, không hứa cá nhân.",
+      "emphasis": "không phải nhớ hết"
+    },
+    {
+      "id": "S19",
+      "beat": "b08",
+      "text": "Với mục tiêu kể sau vài ngày, bạn có thể bắt đầu chuẩn bị ngay hôm nay bằng câu hỏi kênh gợi ý sau đây.",
+      "en": [
+        "For retelling a few days later,",
+        "you can start preparing today",
+        "with this question suggested by our channel."
+      ],
+      "source": "Biên tập: định danh câu hỏi của kênh, không trích dẫn RK/cẩm nang.",
+      "emphasis": "câu hỏi kênh gợi ý"
+    },
+    {
+      "id": "S20",
+      "beat": "b08",
+      "text": "Giả sử chỉ còn tiêu đề bài vừa đọc, bạn viết lại được những gì mà không mở nội dung bài?",
+      "en": [
+        "Suppose you only have the passage title.",
+        "What can you write from memory",
+        "without opening the passage?"
+      ],
+      "source": "Biên tập, GIẢ SỬ có nhãn ngay trong lời: prompt title cue lấy cảm hứng từ thiết kế và F5; chưa kiểm hiệu quả riêng.",
+      "emphasis": "chỉ còn tiêu đề"
+    },
+    {
+      "id": "S21",
+      "beat": "b09",
+      "text": "Bạn để lại một từ về chủ đề muốn nhớ để chia sẻ nha.",
+      "en": [
+        "Please leave one word about a topic",
+        "you want to remember and share."
+      ],
+      "source": "Biên tập: một CTA bình luận chủ đề muốn nhớ để chia sẻ; không yêu cầu làm thử rồi báo thành công.",
+      "emphasis": "nhớ để chia sẻ"
+    }
+  ],
+  "caption_audit": [
+    {
+      "sentence": "S01",
+      "chunk": 1,
+      "words": 5,
+      "text": "Students reread the same passage,"
+    },
+    {
+      "sentence": "S01",
+      "chunk": 2,
+      "words": 7,
+      "text": "yet recalled fewer ideas two days later"
+    },
+    {
+      "sentence": "S01",
+      "chunk": 3,
+      "words": 7,
+      "text": "than for the passage practised through recall."
+    },
+    {
+      "sentence": "S02",
+      "chunk": 1,
+      "words": 3,
+      "text": "After one week,"
+    },
+    {
+      "sentence": "S02",
+      "chunk": 2,
+      "words": 6,
+      "text": "does recall practice still outperform rereading?"
+    },
+    {
+      "sentence": "S03",
+      "chunk": 1,
+      "words": 6,
+      "text": "Yes, recall practice still performed better"
+    },
+    {
+      "sentence": "S03",
+      "chunk": 2,
+      "words": 7,
+      "text": "at one week in this 2006 experiment."
+    },
+    {
+      "sentence": "S04",
+      "chunk": 1,
+      "words": 6,
+      "text": "You will get a concrete comparison"
+    },
+    {
+      "sentence": "S04",
+      "chunk": 2,
+      "words": 7,
+      "text": "and a question you can use today"
+    },
+    {
+      "sentence": "S04",
+      "chunk": 3,
+      "words": 8,
+      "text": "for reading you want to retell days later."
+    },
+    {
+      "sentence": "S05",
+      "chunk": 1,
+      "words": 7,
+      "text": "If you enjoy reading and sharing books,"
+    },
+    {
+      "sentence": "S05",
+      "chunk": 2,
+      "words": 6,
+      "text": "Korea’s text hip includes that aspect,"
+    },
+    {
+      "sentence": "S05",
+      "chunk": 3,
+      "words": 4,
+      "text": "reading as a lifestyle"
+    },
+    {
+      "sentence": "S05",
+      "chunk": 4,
+      "words": 5,
+      "text": "and connecting with fellow readers."
+    },
+    {
+      "sentence": "S06",
+      "chunk": 1,
+      "words": 4,
+      "text": "For recall days later,"
+    },
+    {
+      "sentence": "S06",
+      "chunk": 2,
+      "words": 6,
+      "text": "this comparison began with 120 students"
+    },
+    {
+      "sentence": "S06",
+      "chunk": 3,
+      "words": 4,
+      "text": "studying two short passages."
+    },
+    {
+      "sentence": "S07",
+      "chunk": 1,
+      "words": 6,
+      "text": "Each student then reread one passage"
+    },
+    {
+      "sentence": "S07",
+      "chunk": 2,
+      "words": 7,
+      "text": "and wrote remembered content from the other."
+    },
+    {
+      "sentence": "S08",
+      "chunk": 1,
+      "words": 7,
+      "text": "For recall, they had a title cue,"
+    },
+    {
+      "sentence": "S08",
+      "chunk": 2,
+      "words": 5,
+      "text": "but not the passage content"
+    },
+    {
+      "sentence": "S08",
+      "chunk": 3,
+      "words": 3,
+      "text": "or corrective answers."
+    },
+    {
+      "sentence": "S09",
+      "chunk": 1,
+      "words": 7,
+      "text": "The five-minute, two-day, and one-week final tests"
+    },
+    {
+      "sentence": "S09",
+      "chunk": 2,
+      "words": 5,
+      "text": "were conducted with different participants."
+    },
+    {
+      "sentence": "S10",
+      "chunk": 1,
+      "words": 5,
+      "text": "At five minutes, rereading yielded"
+    },
+    {
+      "sentence": "S10",
+      "chunk": 2,
+      "words": 7,
+      "text": "a higher proportion of correctly recalled ideas."
+    },
+    {
+      "sentence": "S11",
+      "chunk": 1,
+      "words": 6,
+      "text": "At two days, the ranking reversed."
+    },
+    {
+      "sentence": "S11",
+      "chunk": 2,
+      "words": 6,
+      "text": "Recall-practised passages yielded a higher proportion"
+    },
+    {
+      "sentence": "S11",
+      "chunk": 3,
+      "words": 3,
+      "text": "than reread passages."
+    },
+    {
+      "sentence": "S12",
+      "chunk": 1,
+      "words": 3,
+      "text": "In this experiment,"
+    },
+    {
+      "sentence": "S12",
+      "chunk": 2,
+      "words": 6,
+      "text": "the activity after initial study affected"
+    },
+    {
+      "sentence": "S12",
+      "chunk": 3,
+      "words": 5,
+      "text": "how much content participants recalled"
+    },
+    {
+      "sentence": "S12",
+      "chunk": 4,
+      "words": 7,
+      "text": "without the passage in front of them."
+    },
+    {
+      "sentence": "S13",
+      "chunk": 1,
+      "words": 8,
+      "text": "If you want to retell reading days later,"
+    },
+    {
+      "sentence": "S13",
+      "chunk": 2,
+      "words": 7,
+      "text": "your goal is to recall its content"
+    },
+    {
+      "sentence": "S13",
+      "chunk": 3,
+      "words": 4,
+      "text": "without opening the text."
+    },
+    {
+      "sentence": "S14",
+      "chunk": 1,
+      "words": 6,
+      "text": "To practise that, the handbook suggests"
+    },
+    {
+      "sentence": "S14",
+      "chunk": 2,
+      "words": 3,
+      "text": "closing the text"
+    },
+    {
+      "sentence": "S14",
+      "chunk": 3,
+      "words": 5,
+      "text": "and writing what you remember"
+    },
+    {
+      "sentence": "S14",
+      "chunk": 4,
+      "words": 4,
+      "text": "in your own words."
+    },
+    {
+      "sentence": "S15",
+      "chunk": 1,
+      "words": 4,
+      "text": "Then reopen the original,"
+    },
+    {
+      "sentence": "S15",
+      "chunk": 2,
+      "words": 6,
+      "text": "compare it with what you wrote,"
+    },
+    {
+      "sentence": "S15",
+      "chunk": 3,
+      "words": 4,
+      "text": "and correct any mismatch."
+    },
+    {
+      "sentence": "S16",
+      "chunk": 1,
+      "words": 7,
+      "text": "Reopening, comparing, and correcting follow the handbook."
+    },
+    {
+      "sentence": "S16",
+      "chunk": 2,
+      "words": 6,
+      "text": "They were not the tested procedure"
+    },
+    {
+      "sentence": "S16",
+      "chunk": 3,
+      "words": 5,
+      "text": "in the experiment just described."
+    },
+    {
+      "sentence": "S17",
+      "chunk": 1,
+      "words": 7,
+      "text": "At one week in that student experiment,"
+    },
+    {
+      "sentence": "S17",
+      "chunk": 2,
+      "words": 6,
+      "text": "recall practice without corrective answers yielded"
+    },
+    {
+      "sentence": "S17",
+      "chunk": 3,
+      "words": 8,
+      "text": "56 percent of ideas correctly recalled on average,"
+    },
+    {
+      "sentence": "S17",
+      "chunk": 4,
+      "words": 5,
+      "text": "versus 42 percent for rereading."
+    },
+    {
+      "sentence": "S18",
+      "chunk": 1,
+      "words": 7,
+      "text": "Recall practice did better at this delay,"
+    },
+    {
+      "sentence": "S18",
+      "chunk": 2,
+      "words": 4,
+      "text": "but even that result"
+    },
+    {
+      "sentence": "S18",
+      "chunk": 3,
+      "words": 7,
+      "text": "did not mean remembering all the content."
+    },
+    {
+      "sentence": "S19",
+      "chunk": 1,
+      "words": 6,
+      "text": "For retelling a few days later,"
+    },
+    {
+      "sentence": "S19",
+      "chunk": 2,
+      "words": 5,
+      "text": "you can start preparing today"
+    },
+    {
+      "sentence": "S19",
+      "chunk": 3,
+      "words": 7,
+      "text": "with this question suggested by our channel."
+    },
+    {
+      "sentence": "S20",
+      "chunk": 1,
+      "words": 7,
+      "text": "Suppose you only have the passage title."
+    },
+    {
+      "sentence": "S20",
+      "chunk": 2,
+      "words": 6,
+      "text": "What can you write from memory"
+    },
+    {
+      "sentence": "S20",
+      "chunk": 3,
+      "words": 4,
+      "text": "without opening the passage?"
+    },
+    {
+      "sentence": "S21",
+      "chunk": 1,
+      "words": 7,
+      "text": "Please leave one word about a topic"
+    },
+    {
+      "sentence": "S21",
+      "chunk": 2,
+      "words": 6,
+      "text": "you want to remember and share."
+    }
+  ],
+  "adapter_sha256": "de88930b0bdd626ff826813a8f9ba96343d72fba1865dcffea3fce4c61388049",
+  "emphasis_table_exact_after_unmarking": true,
+  "keyword_counts": {
+    "đọc": {
+      "count": 12,
+      "percent_of_whitespace_units": 2.771
+    },
+    "nhớ": {
+      "count": 10,
+      "percent_of_whitespace_units": 2.309
+    },
+    "viết": {
+      "count": 11,
+      "percent_of_whitespace_units": 2.54
+    },
+    "bạn": {
+      "count": 9,
+      "percent_of_whitespace_units": 2.079
+    },
+    "tự": {
+      "count": 10,
+      "percent_of_whitespace_units": 2.309
+    },
+    "lại": {
+      "count": 11,
+      "percent_of_whitespace_units": 2.54
+    }
+  },
+  "local_locked_hashes_verified": {
+    "clip05-rk2006-exp1-supplement-lock-2026-11-08.md": "ac400b83755c2ede277b6917c47c69e16193280be3d8b8a3c55ce5a934172a64",
+    "factcheck-clip05-lock-2026-11-07.md": "72872ec45dacf5b7e94660faf8f2950b3e917b4dd9e00459adb460ecf1c0972e",
+    "clip05-texthip-fact-bridge-2026-11-07.md": "c060435a99bfe33e89c4a32f149351265617a93622cb53fa6f909f994025ec3c"
+  },
+  "checker": {
+    "subjects": {
+      "exit": 0,
+      "checks": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    "l088": {
+      "exit": 0,
+      "checks": 6,
+      "errors": 0,
+      "warnings": 1,
+      "warning": "bản nháp không nằm trong thư mục clip → không tìm được file trend / fact của clip"
+    }
+  }
+}

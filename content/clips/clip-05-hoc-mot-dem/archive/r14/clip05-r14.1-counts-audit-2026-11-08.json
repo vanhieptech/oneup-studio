@@ -1,0 +1,30 @@
+{
+  "version": "r14.1",
+  "concept": "A, same lineage revision",
+  "parent_r14_sha256": "564c8b9eae110acd41b46aaff9e3f7a630ea386adaa06cf53d209d8b8ce1da5c",
+  "spoken_sha256": "2ed4d15324ac3d3d8d7d12505498c067f87e63f942bd1d72c1a375745be05bea",
+  "whitespace_units": 462,
+  "sentences": 19,
+  "beats": 10,
+  "caption_chunks": 59,
+  "max_caption_chunk_words": 8,
+  "mapping_count": 19,
+  "consecutive_link_count": 18,
+  "timing_estimate_seconds": {
+    "low": 131,
+    "high": 161,
+    "nominal": 142,
+    "endcard": 14,
+    "transition_reserve": 4,
+    "pace_assumption": [
+      3.6,
+      4.7
+    ]
+  },
+  "standard_checker_run": false,
+  "human_read_aloud": "CHƯA KIỂM",
+  "listen_once": "CHƯA KIỂM",
+  "actual_timing": "CHƯA KIỂM",
+  "overall_pass": false,
+  "only_custom_text_counting": true
+}

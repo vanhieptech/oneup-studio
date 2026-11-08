@@ -1,0 +1,7 @@
+⚠ L-091    câu hỏi b01 «Sau một tuần, tự viết còn hơn đọc lại không?» đến trước câu tình huống cụ thể (b02 «Bạn sẽ có phép so cụ…») → tình huống → câu hỏi → trả lời
+⚠ L-091    câu dài >25 chữ: b02 (28 chữ) «Nếu bạn thích đọc rồi chia…»; b07 (32 chữ) «Còn trong thí nghiệm với sinh…»; b07 (26 chữ) «Tự viết cho tỷ lệ ý…» → mỗi câu một ý
+✔ L-091    không chữ mơ hồ trong b01–b03
+✔ L-091    b03 không mở bằng câu khái quát + «cũng thấy vậy»
+ℹ L-091    manual gate: đọc b01–b03 như người lần đầu nghe, tóm ý trong 1 câu; không được → CHƯA ĐẠT
+
+5 checks · 0 error(s) · 2 warning(s) → PASS
