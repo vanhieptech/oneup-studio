@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>ov-q — end CTA · no plate</title>
+<link rel="stylesheet" href="tokens.css" />
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body,#main{background:transparent !important}
+#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif}
+#qmark{position:absolute;left:56px;top:560px;width:100px;height:100px;border-radius:28px;background:var(--vht-accent);display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:700;color:var(--vht-on-accent);box-shadow:0 16px 40px color-mix(in srgb,var(--vht-accent) 45%, transparent)}
+#eyebrow{position:absolute;left:180px;top:580px;font-size:22px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--vht-accent);text-shadow:0 4px 16px color-mix(in srgb, var(--vht-bg) 80%, transparent)}
+#ask{position:absolute;left:56px;right:56px;top:700px;font-size:56px;font-weight:700;letter-spacing:-0.035em;line-height:1.12;color:var(--vht-title);text-shadow:0 8px 32px color-mix(in srgb, var(--vht-bg) 85%, transparent)}
+#cta{position:absolute;left:56px;top:960px;display:inline-flex;align-items:center;gap:14px;padding:18px 28px;border-radius:18px;background:var(--vht-accent);color:var(--vht-on-accent);font-size:26px;font-weight:700;box-shadow:0 16px 40px color-mix(in srgb,var(--vht-accent) 40%, transparent)}
+#cta svg{width:28px;height:28px}
+#pulse{position:absolute;left:56px;top:1060px;width:320px;height:8px;background:var(--vht-accent);transform-origin:left center;border-radius:4px}
+</style>
+</head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="4" data-width="1080" data-height="1920" data-fps="30">
+  <div id="qmark">?</div>
+  <div id="eyebrow">Câu hỏi cuối</div>
+  <div id="ask">Auth của bạn… còn nằm ở nút login?</div>
+  <div id="cta">
+    <svg viewBox="0 0 28 28" fill="none"><path d="M4 14h16M14 8l6 6-6 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Comment: Keycloak / Cognito / Auth0?
+  </div>
+  <div id="pulse"></div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#qmark", { opacity: 0, scale: 0.4, rotate: -25 }, { opacity: 1, scale: 1, rotate: 0, duration: 0.5, ease: "back.out(2.2)" }, 0.1);
+tl.fromTo("#eyebrow", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.3);
+tl.fromTo("#ask", { opacity: 0, y: 36, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.55, ease: "power4.out" }, 0.45);
+tl.fromTo("#cta", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.45, ease: "back.out(1.6)" }, 0.9);
+tl.fromTo("#pulse", { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power3.inOut" }, 1.1);
+tl.to("#qmark", { y: -10, duration: 0.9, yoyo: true, repeat: 1, ease: "sine.inOut" }, 1.6);
+tl.to("#cta", { scale: 1.03, duration: 0.45, yoyo: true, repeat: 1, ease: "sine.inOut" }, 2.2);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "vht-ov-l3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.150 check",
+    "render": "npx --yes hyperframes@0.8.150 render --format mov -o ../../../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov ."
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

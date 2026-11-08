@@ -74,6 +74,69 @@
    "title": "Characters (prototype v0.1)"
   },
   {
+   "id": "agents-vanhiep-tech",
+   "type": "guide",
+   "status": "active",
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/AGENTS.md",
+   "title": "AGENTS — kênh @vanhiep.tech"
+  },
+  {
+   "id": "plan-vanhiep-tech-v1",
+   "type": "plan",
+   "status": "active",
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/PLAN.md",
+   "title": "PLAN — @vanhiep.tech V1"
+  },
+  {
+   "id": "readme-vanhiep-tech",
+   "type": "guide",
+   "status": "active",
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/README.md",
+   "title": "@vanhiep.tech (trong oneup-studio)"
+  },
+  {
+   "id": "channels.vanhiep-tech.brand.frame",
+   "type": null,
+   "status": null,
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/brand/frame.md",
+   "title": "Frame — layer graphics @vanhiep.tech"
+  },
+  {
+   "id": "vht-20261107-oauth-control-plane",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/script.md",
+   "title": "vht-20261107-oauth-control-plane"
+  },
+  {
+   "id": "docs-vht-capcut-smoke",
+   "type": "guide",
+   "status": "active",
+   "updated": "2026-11-08",
+   "path": "channels/vanhiep-tech/docs/capcut-smoke.md",
+   "title": "CapCut smoke — **local Mac only**"
+  },
+  {
+   "id": "skill.make-layer",
+   "type": "skill",
+   "status": "active",
+   "path": "channels/vanhiep-tech/skills/make-layer/SKILL.md",
+   "title": "make-layer"
+  },
+  {
+   "id": "template-vht-script-short",
+   "type": "template",
+   "status": "draft",
+   "updated": "2026-11-07",
+   "path": "channels/vanhiep-tech/templates/script-short.md",
+   "title": "Script short (45–90s) — `vht-YYYYMMDD-<slug>`"
+  },
+  {
    "id": "clip-01.post",
    "type": "post-package",
    "status": "review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1",
@@ -882,6 +945,14 @@
    "title": "Clip05 r11.4 plan-update2 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN"
   },
   {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.r12.opencreator-clip05-script-r12-draft-2026-11-07",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-11-07",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/r12/opencreator-clip05-script-r12-draft-2026-11-07.md",
+   "title": "Bản thật để Rule Reviewer kiểm — CHƯA DUYỆT"
+  },
+  {
    "id": "content.clips.clip-05-hoc-mot-dem.evidence-lines-v10",
    "type": null,
    "status": null,
@@ -1109,7 +1180,7 @@
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-11-07",
+   "updated": "2026-11-08",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -2082,6 +2153,22 @@
    "title": "Trend digest 2026-11-07 (thứ Bảy)"
   },
   {
+   "id": "trends-2026-11-08",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-08",
+   "path": "research/trends/2026-11-08/digest.md",
+   "title": "Trend digest 2026-11-08 (Chủ nhật)"
+  },
+  {
+   "id": "trends-2026-11-08-treg",
+   "type": "trend-source",
+   "status": "raw-evidence",
+   "updated": "2026-11-08",
+   "path": "research/trends/2026-11-08/treg/README.md",
+   "title": "Treg TikTok research 2026-11-08"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
@@ -2093,7 +2180,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-11-07",
+   "updated": "2026-11-08",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -2120,6 +2207,14 @@
    "updated": "2026-11-01",
    "path": "research/trends/weekly/2026-W44.md",
    "title": "Tổng hợp tuần 2026-W44 (thứ Hai 26/10 → Chủ nhật 01/11)"
+  },
+  {
+   "id": "trends-weekly-2026-W45",
+   "type": "trend-weekly",
+   "status": "draft-needs-review",
+   "updated": "2026-11-08",
+   "path": "research/trends/weekly/2026-W45.md",
+   "title": "Tổng hợp tuần 2026-W45 (thứ Hai 02/11 → Chủ nhật 08/11)"
   },
   {
    "id": "refs",

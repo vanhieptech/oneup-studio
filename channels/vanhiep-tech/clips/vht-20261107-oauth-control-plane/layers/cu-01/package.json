@@ -1,0 +1,13 @@
+{
+  "name": "vht-cu-01-oauth-broll",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "npx --yes hyperframes@0.8.150 check",
+    "lint": "npx --yes hyperframes@0.8.150 lint",
+    "render": "npx --yes hyperframes@0.8.150 render --format mp4 -o ../../../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4 ."
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}

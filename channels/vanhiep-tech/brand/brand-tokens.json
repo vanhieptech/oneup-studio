@@ -1,0 +1,83 @@
+{
+  "channel": "@vanhiep.tech",
+  "forkOf": "brand/brand-tokens.json",
+  "paletteName": "one-dark",
+  "note": "Source of truth for all layer colors. CSS mirror: brand/tokens.css. Never invent hex in HTML/JS — only token names / --vht-* vars.",
+  "rule": "always-use-defined-brand-colors",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "safeZone": {
+      "top": 220,
+      "bottom": 380,
+      "left": 56,
+      "right": 140
+    }
+  },
+  "colors": {
+    "swatches": {
+      "bg": "#282C34",
+      "red": "#E06C75",
+      "green": "#98C379",
+      "yellow": "#E5C07B",
+      "blue": "#61AFEF",
+      "purple": "#C678DD",
+      "cyan": "#56B6C2",
+      "fg": "#ABB2BF"
+    },
+    "roles": {
+      "bg": "#282C34",
+      "surface": "#21252B",
+      "ink": "#ABB2BF",
+      "title": "#FFFFFF",
+      "muted": "#5C6370",
+      "border": "#3E4451",
+      "accent": "#56B6C2",
+      "accentAlt": "#61AFEF",
+      "warn": "#E5C07B",
+      "ok": "#98C379",
+      "danger": "#E06C75",
+      "emphasis": "#C678DD",
+      "onAccent": "#282C34",
+      "shadow": "#1B1E24"
+    },
+    "layer": {
+      "alwaysSolidBackground": true,
+      "bg": "roles.bg",
+      "cardBg": "roles.surface",
+      "cardBorder": "roles.border",
+      "cardBorderAccent": "roles.accent",
+      "ink": "roles.ink",
+      "title": "roles.title",
+      "accent": "roles.accent",
+      "accentAlt": "roles.accentAlt",
+      "iconSecondary": "roles.warn"
+    },
+    "banned": [
+      "pink",
+      "magenta",
+      "fuchsia",
+      "#FF00AA",
+      "#FF00FF",
+      "#FF69B4",
+      "#FF1493",
+      "any hex not listed in swatches/roles",
+      "hot-pink preview backgrounds"
+    ]
+  },
+  "fonts": {
+    "family": "Be Vietnam Pro",
+    "cssStack": "'Be Vietnam Pro', sans-serif",
+    "files": {
+      "400": "brand/fonts/BeVietnamPro-Regular.ttf",
+      "600": "brand/fonts/BeVietnamPro-SemiBold.ttf",
+      "700": "brand/fonts/BeVietnamPro-Bold.ttf"
+    }
+  },
+  "layerCatalog": ["ov-hook", "ov-d", "cu", "ov-l3", "ov-q"],
+  "handoff": {
+    "cutaway": "solid-mp4",
+    "overlay": "prores4444-mov-alpha",
+    "note": "cu-* = solid MP4; ov-* = ProRes alpha. Colors only from this file / tokens.css. Never pink."
+  }
+}

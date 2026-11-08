@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="vi" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>cu-01 — B-roll · identity control plane</title>
+<link rel="stylesheet" href="tokens.css" />
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body,#main{background:var(--vht-bg)}
+#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif;color:var(--vht-ink)}
+#glow{position:absolute;width:900px;height:900px;left:50%;top:22%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,var(--vht-accent) 0%,transparent 68%);opacity:0.22;pointer-events:none;z-index:0}
+#grid{position:absolute;inset:0;background-image:linear-gradient(var(--vht-border) 1px,transparent 1px),linear-gradient(90deg,var(--vht-border) 1px,transparent 1px);background-size:48px 48px;opacity:0.35;pointer-events:none;z-index:0}
+#ghost{position:absolute;left:56px;top:1680px;font-size:120px;font-weight:700;letter-spacing:-0.06em;color:var(--vht-accent);opacity:0.1;white-space:nowrap;pointer-events:none;z-index:0}
+#meta{position:absolute;left:56px;top:200px;z-index:2;font-size:22px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--vht-accent)}
+#headline{position:absolute;left:56px;right:56px;top:250px;z-index:2;font-size:72px;font-weight:700;letter-spacing:-0.035em;line-height:1.05;color:var(--vht-title)}
+#stage{position:absolute;left:56px;right:56px;top:460px;bottom:360px;z-index:2;display:flex;flex-direction:column;gap:32px}
+.block{position:relative;flex:1;border-radius:32px;overflow:hidden;min-height:0}
+.block.ux{background:var(--vht-surface);border:3px solid var(--vht-border);box-shadow:0 0 0 1px var(--vht-shadow)}
+.block.cp{background:var(--vht-surface);border:3px solid var(--vht-accent);box-shadow:0 24px 60px color-mix(in srgb, var(--vht-accent) 35%, transparent)}
+.cap{position:absolute;left:28px;top:22px;z-index:2;font-size:20px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--vht-warn)}
+.block.cp .cap{color:var(--vht-accent)}
+/* browser scene */
+.browser{position:absolute;inset:64px 40px 36px;border-radius:24px;background:var(--vht-bg);border:3px solid var(--vht-border);display:flex;flex-direction:column;overflow:hidden}
+.chrome{height:52px;background:var(--vht-border);display:flex;align-items:center;gap:10px;padding:0 18px}
+.d{width:12px;height:12px;border-radius:50%}
+.d1{background:var(--vht-danger)}.d2{background:var(--vht-warn)}.d3{background:var(--vht-ok)}
+.url{flex:1;height:26px;margin-left:12px;border-radius:13px;background:var(--vht-surface)}
+.page{flex:1;display:grid;grid-template-columns:1.1fr 0.9fr;gap:24px;padding:28px}
+.form{display:flex;flex-direction:column;justify-content:center;gap:18px}
+.field{height:44px;border-radius:12px;background:var(--vht-surface);border:2px solid var(--vht-border)}
+.signin{height:64px;border-radius:16px;border:3px solid var(--vht-warn);background:var(--vht-surface);display:flex;align-items:center;justify-content:center;gap:14px;position:relative}
+.gmark{width:32px;height:32px;border-radius:8px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center}
+.signin span{font-size:28px;font-weight:700;color:var(--vht-title)}
+.cursor{position:absolute;right:28px;bottom:-6px;width:34px;height:34px;color:var(--vht-title)}
+.aside{border-radius:20px;background:linear-gradient(160deg,var(--vht-border),var(--vht-bg));border:2px solid var(--vht-border);display:flex;align-items:center;justify-content:center}
+.avatar{width:120px;height:120px;border-radius:50%;border:4px solid var(--vht-ink);position:relative}
+.avatar:before{content:"";position:absolute;left:36px;top:28px;width:42px;height:42px;border-radius:50%;background:var(--vht-ink)}
+.avatar:after{content:"";position:absolute;left:24px;top:72px;width:66px;height:34px;border-radius:34px 34px 0 0;background:var(--vht-ink)}
+/* control plane scene */
+.flow{position:absolute;inset:70px 28px 28px;display:grid;grid-template-columns:140px 1fr 150px;gap:16px;align-items:center}
+.server{display:flex;flex-direction:column;align-items:center;gap:12px}
+.rack{width:110px;height:150px;border-radius:18px;border:3px solid var(--vht-accent);background:var(--vht-bg);padding:14px 12px;display:flex;flex-direction:column;gap:10px;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--vht-accent) 40%, transparent)}
+.slot{flex:1;border-radius:8px;background:var(--vht-border);position:relative}
+.slot:after{content:"";position:absolute;left:12px;top:50%;width:10px;height:10px;border-radius:50%;transform:translateY(-50%);background:var(--vht-ok);box-shadow:20px 0 0 var(--vht-warn),40px 0 0 var(--vht-accent-alt)}
+.sname{font-size:24px;font-weight:700;color:var(--vht-title)}
+.token{border-radius:20px;border:3px solid var(--vht-accent-alt);background:var(--vht-bg);padding:16px;display:flex;flex-direction:column;gap:10px}
+.th{font-size:18px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--vht-accent-alt)}
+.claim{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:12px;background:var(--vht-surface);border:2px solid var(--vht-border);font-size:22px;font-weight:600;color:var(--vht-title)}
+.claim b{color:var(--vht-ink);font-weight:700;min-width:44px}
+.claim.hot{border-color:var(--vht-accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--vht-accent) 35%, transparent)}
+.claim.hot b{color:var(--vht-accent)}
+.apis{display:flex;flex-direction:column;gap:14px}
+.api{display:flex;align-items:center;gap:12px;padding:16px 14px;border-radius:16px;background:var(--vht-bg);border:3px solid var(--vht-border)}
+.api.go{border-color:var(--vht-ok)}
+.api.no{border-color:var(--vht-danger);opacity:0.7}
+.led{width:22px;height:22px;border-radius:6px}
+.api.go .led{background:var(--vht-ok)}
+.api.no .led{background:var(--vht-danger)}
+.api span{font-size:22px;font-weight:700;color:var(--vht-title)}
+.path{position:absolute;left:168px;right:168px;top:50%;height:3px;background:var(--vht-accent-alt);transform:scaleX(0);transform-origin:left center;opacity:0.85}
+</style>
+</head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="9" data-width="1080" data-height="1920" data-fps="30">
+  <div id="glow" data-layout-allow-overflow></div>
+  <div id="grid"></div>
+  <div id="ghost" data-layout-allow-overflow data-layout-allow-occlusion>CONTROL</div>
+  <div id="meta">B-roll · OAuth / OIDC</div>
+  <div id="headline">Nút login không phải kiến trúc</div>
+  <div id="stage">
+    <div class="block ux" id="ux">
+      <div class="cap">01 · User chỉ thấy cái này</div>
+      <div class="browser">
+        <div class="chrome"><span class="d d1"></span><span class="d d2"></span><span class="d d3"></span><div class="url"></div></div>
+        <div class="page">
+          <div class="form">
+            <div class="field" id="f1"></div>
+            <div class="field" id="f2"></div>
+            <div class="signin" id="signin"><div class="gmark">G</div><span>Sign in with…</span>
+              <svg class="cursor" id="cursor" viewBox="0 0 36 36"><path fill="currentColor" d="M6 4 L6 30 L14 22 L20 32 L24 30 L18 20 L30 20 Z"/></svg>
+            </div>
+          </div>
+          <div class="aside"><div class="avatar"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="block cp" id="cp">
+      <div class="cap">02 · Keycloak quyết định thật</div>
+      <div class="path" id="path"></div>
+      <div class="flow">
+        <div class="server" id="server">
+          <div class="rack"><div class="slot"></div><div class="slot"></div><div class="slot"></div></div>
+          <div class="sname">Keycloak</div>
+        </div>
+        <div class="token" id="token">
+          <div class="th">Access token</div>
+          <div class="claim" id="c1"><b>iss</b><span>realm</span></div>
+          <div class="claim hot" id="c2"><b>aud</b><span>orders-api</span></div>
+          <div class="claim" id="c3"><b>exp</b><span>5 phút</span></div>
+        </div>
+        <div class="apis" id="apis">
+          <div class="api go" id="a1"><div class="led"></div><span>orders-api</span></div>
+          <div class="api no" id="a2"><div class="led"></div><span>payments</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#glow", { scale: 0.85, opacity: 0.12 }, { scale: 1.05, opacity: 0.22, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 0);
+tl.fromTo("#ghost", { x: 0 }, { x: 80, duration: 8, ease: "none" }, 0);
+tl.fromTo("#meta", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.55, ease: "power3.out" }, 0.12);
+tl.fromTo("#headline", { opacity: 0, y: 50, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.7, ease: "expo.out" }, 0.25);
+tl.fromTo("#ux", { opacity: 0, x: -70 }, { opacity: 1, x: 0, duration: 0.65, ease: "power4.out" }, 0.55);
+tl.fromTo("#f1", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.out", transformOrigin: "left" }, 0.85);
+tl.fromTo("#f2", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.out", transformOrigin: "left" }, 1.0);
+tl.fromTo("#signin", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(1.7)" }, 1.15);
+tl.fromTo("#cursor", { opacity: 0, x: 36, y: 28 }, { opacity: 1, x: 0, y: 0, duration: 0.45, ease: "power2.out" }, 1.45);
+tl.fromTo("#cp", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.7, ease: "expo.out" }, 2.0);
+tl.fromTo("#server", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, 2.35);
+tl.fromTo("#path", { scaleX: 0, opacity: 0.85 }, { scaleX: 1, duration: 0.55, ease: "power3.inOut" }, 2.55);
+tl.fromTo("#token", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 2.85);
+tl.fromTo("#c1", { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: 0.28, ease: "power2.out" }, 3.1);
+tl.fromTo("#c2", { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: 0.28, ease: "power2.out" }, 3.3);
+tl.fromTo("#c3", { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: 0.28, ease: "power2.out" }, 3.5);
+tl.fromTo("#a1", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 3.75);
+tl.fromTo("#a2", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 4.0);
+tl.to("#c2", { scale: 1.04, duration: 0.28, yoyo: true, repeat: 1, ease: "sine.inOut" }, 4.4);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

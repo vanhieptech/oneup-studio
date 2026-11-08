@@ -8,3 +8,5 @@ source: "oneup-studio (soạn trong repo)"
 ---
 
 Large media (>5MB audio/video). Not in git (no git-lfs). Box copy: /workspace/oneup-studio/media. List + sha256: MANIFEST.json
+
+`media/channels/vanhiep-tech/<vht-id>/` — rendered overlay/cutaway layers for @vanhiep.tech (ProRes/MP4). A-roll / VO / CapCut drafts stay on the Mac only.

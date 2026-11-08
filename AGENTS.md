@@ -11,6 +11,14 @@ tags: [agents, retrieval, workflow]
 # AGENTS.md: cách AI làm việc trong repo này
 Repo chứa toàn bộ hệ thống nội dung TikTok **@hi.oneup** (OneUp, Hiệp). Đọc theo thứ tự: file này → `INDEX.md` (bản đồ mọi file, id) → nguồn chuẩn liên quan.
 
+## Dual-channel
+| Kênh | Thư mục | Luật / skill |
+|---|---|---|
+| **@hi.oneup** (comic + motion) | `content/clips/`, `skills/make-video/` | file này + `rules/video-rules.md` + DL-027 |
+| **@vanhiep.tech** (talking-head + explainer overlay) | `channels/vanhiep-tech/` | **`channels/vanhiep-tech/AGENTS.md`** + `skills/make-layer` trong kênh đó |
+
+Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc `vht-YYYYMMDD-*`: **không** chạy `make-video` comic / không áp DL-027 shot-list ban — đọc AGENTS kênh trước.
+
 ## Nguồn chuẩn (không sao chép nội dung, chỉ trỏ tới)
 | Cần gì | File chuẩn |
 |---|---|

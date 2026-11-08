@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi" data-resolution="portrait">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>ov-d01 — diagram · floating UI, no board plate</title>
+<link rel="stylesheet" href="tokens.css" />
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
+@font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Regular.ttf);font-weight:400}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body,#main{background:transparent !important}
+#main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif;color:var(--vht-ink)}
+/* No full board plate — floating title + UI pieces only */
+#title{position:absolute;left:48px;right:48px;top:980px;font-size:40px;font-weight:700;letter-spacing:-0.02em;color:var(--vht-title);text-shadow:0 6px 24px color-mix(in srgb, var(--vht-bg) 85%, transparent)}
+#sub{position:absolute;left:48px;right:48px;top:1040px;font-size:24px;font-weight:600;color:var(--vht-ink);text-shadow:0 4px 16px color-mix(in srgb, var(--vht-bg) 80%, transparent)}
+#scene{position:absolute;left:40px;right:40px;top:1120px;height:520px}
+#phone{position:absolute;left:0;top:20px;width:220px;height:420px;border-radius:36px;border:4px solid var(--vht-border);background:var(--vht-surface);overflow:hidden;box-shadow:0 18px 40px var(--vht-shadow)}
+#notch{position:absolute;left:50%;top:14px;transform:translateX(-50%);width:72px;height:10px;border-radius:8px;background:var(--vht-border)}
+#screen{position:absolute;inset:40px 18px 24px;border-radius:20px;background:var(--vht-bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:20px}
+#btn{width:100%;height:56px;border-radius:14px;border:3px solid var(--vht-warn);background:var(--vht-surface);display:flex;align-items:center;justify-content:center;gap:10px}
+#g{width:26px;height:26px;border-radius:6px;background:var(--vht-accent-alt);color:var(--vht-on-accent);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center}
+#btn span{font-size:20px;font-weight:700;color:var(--vht-title)}
+#lbl{font-size:18px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--vht-warn)}
+#arrow1,#arrow2{position:absolute;height:6px;background:var(--vht-accent-alt);border-radius:3px;transform-origin:left center;box-shadow:0 0 12px color-mix(in srgb,var(--vht-accent-alt) 50%, transparent)}
+#arrow1{left:236px;top:210px;width:120px}
+#arrow2{left:620px;top:210px;width:100px}
+#arrow1:after,#arrow2:after{content:"";position:absolute;right:-2px;top:50%;width:0;height:0;border:10px solid transparent;border-left-color:var(--vht-accent-alt);transform:translateY(-50%)}
+#kc{position:absolute;left:370px;top:40px;width:230px;height:340px;border-radius:28px;border:4px solid var(--vht-accent);background:var(--vht-surface);padding:22px 18px;display:flex;flex-direction:column;gap:14px;box-shadow:0 0 0 1px color-mix(in srgb,var(--vht-accent) 35%, transparent), 0 20px 50px color-mix(in srgb,var(--vht-accent) 25%, transparent)}
+#kc-h{font-size:22px;font-weight:700;color:var(--vht-title);text-align:center}
+#chip{flex:1;border-radius:16px;border:2px solid var(--vht-border);background:var(--vht-bg);padding:12px;display:flex;flex-direction:column;gap:8px}
+.row{display:flex;justify-content:space-between;font-size:18px;font-weight:600;color:var(--vht-ink)}
+.row.hot{color:var(--vht-accent);font-weight:700}
+#apis{position:absolute;right:0;top:70px;width:200px;display:flex;flex-direction:column;gap:18px}
+.api{height:88px;border-radius:20px;border:3px solid var(--vht-border);background:var(--vht-surface);display:flex;align-items:center;gap:12px;padding:0 16px;box-shadow:0 12px 28px var(--vht-shadow)}
+.api.ok{border-color:var(--vht-ok)}
+.api.bad{border-color:var(--vht-danger)}
+.dot{width:18px;height:18px;border-radius:5px}
+.api.ok .dot{background:var(--vht-ok)}
+.api.bad .dot{background:var(--vht-danger)}
+.api span{font-size:22px;font-weight:700;color:var(--vht-title)}
+</style>
+</head>
+<body>
+<div id="main" data-composition-id="main" data-start="0" data-duration="6" data-width="1080" data-height="1920" data-fps="30">
+  <div id="title">Control plane thật sự</div>
+  <div id="sub">Nút login chỉ là cửa — Keycloak giữ chìa</div>
+  <div id="scene">
+    <div id="phone">
+      <div id="notch"></div>
+      <div id="screen">
+        <div id="lbl">UX layer</div>
+        <div id="btn"><div id="g">G</div><span>Sign in</span></div>
+      </div>
+    </div>
+    <div id="arrow1"></div>
+    <div id="kc">
+      <div id="kc-h">Keycloak</div>
+      <div id="chip">
+        <div class="row"><span>iss</span><span>realm</span></div>
+        <div class="row hot" id="aud"><span>aud</span><span>orders-api</span></div>
+        <div class="row"><span>exp</span><span>5m</span></div>
+      </div>
+    </div>
+    <div id="arrow2"></div>
+    <div id="apis">
+      <div class="api ok" id="api1"><div class="dot"></div><span>orders</span></div>
+      <div class="api bad" id="api2"><div class="dot"></div><span>payments</span></div>
+    </div>
+  </div>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#title", { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, 0.1);
+tl.fromTo("#sub", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 0.25);
+tl.fromTo("#phone", { opacity: 0, x: -50, rotate: -4 }, { opacity: 1, x: 0, rotate: 0, duration: 0.55, ease: "back.out(1.4)" }, 0.4);
+tl.fromTo("#arrow1", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 0.9);
+tl.fromTo("#kc", { opacity: 0, scale: 0.88, y: 20 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(1.5)" }, 1.15);
+tl.fromTo("#arrow2", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power2.inOut" }, 1.6);
+tl.fromTo("#api1", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 1.85);
+tl.fromTo("#api2", { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 2.05);
+tl.to("#aud", { scale: 1.06, duration: 0.3, yoyo: true, repeat: 3, ease: "sine.inOut", transformOrigin: "center" }, 2.5);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
