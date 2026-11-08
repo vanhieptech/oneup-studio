@@ -171,6 +171,7 @@ tags: [index, retrieval]
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | search-xerj | convention | active | `docs/conventions/search-xerj.md` | Tìm kiếm bằng XERJ: repo + repo tham khảo |
 | storage | convention | active | `docs/conventions/storage.md` | Quy ước lưu trữ (luật 65, L-034) |
+| feat-srt-sidecar | feature | active | `docs/features/srt-sidecar.md` | SRT Sidecar Subtitle Feature |
 | rules | rules | active | `docs/plans/hi-oneup-video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026) |
 | docs.plans.hi-oneup-video-rules.v1.bak | plan | draft | `docs/plans/hi-oneup-video-rules.v1.bak.md` | @hi.oneup — Video rules (v1, 2026-10-12) |
 | docs.plans.howtolivebetter-digest-vi | plan | draft | `docs/plans/howtolivebetter-digest-vi.md` | Digest vận hành: HowToLiveBetter → trợ lý phát triển cá nhân cho Văn Hiệp Lê |
