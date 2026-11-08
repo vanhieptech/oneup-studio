@@ -1,0 +1,62 @@
+{
+ "date": "2026-11-08",
+ "ideas": [
+  {
+   "id": "dinh-ngu-som-thanh-11-gio-dem",
+   "title": "Định về ngủ liền, rốt cuộc 11 giờ đêm mới nằm: thức khuya «đòi lại thời gian». Sách 3.9: tới giờ thì ngủ",
+   "trend_id": "tt-phantai911809-7704918939675118869",
+   "bridge_id": "B-bedtime-02",
+   "lesson": "3.9 Tới giờ thì ngủ (giờ ngủ cố định; Deep Research xác nhận câu chữ và mức bằng chứng trước khi viết). Hành động +1: tối nay đặt một giờ ngủ và một báo thức «bắt đầu tắt» trước đó. Tránh nhãn bệnh (ADHD trong tóm tắt X: bỏ).",
+   "angle": "empathy / humor",
+   "pattern": "P10 + P12 + F03",
+   "differentiation": "Mọi người đang nói: thức khuya để «đòi lại» thời gian riêng sau một ngày dài ([X News 07/11](https://x.com/i/trending/2118954260029444573)); TikTok kể đúng kịch bản «định về ngủ liền, rồi lướt, cà phê, game tới 11 giờ» ([TikTok @phantai911809](https://www.tiktok.com/@phantai911809/video/7704918939675118869), transcript thật). Góc của mình: không bảo bỏ thời gian riêng; cho nó một giờ kết thúc. Khác B-bedtime-01 (ghi giờ đặt điện thoại 7 ngày) và B-weekend-02 (ngủ bù).",
+   "theme": "dark",
+   "week": 3,
+   "target": "đăng #14 (3.2, DARK) hook thay thế, củng cố B-bedtime-01; hoặc ý tưởng mới 3.9",
+   "hook_vi": "Tan làm, trong đầu chỉ có một câu: về ngủ liền một giấc cho khỏe. Rồi mười một giờ đêm bạn vẫn đang cầm điện thoại.",
+   "moment_vi": "Về tới nhà định nằm năm phút, lướt một chút, ăn, tắm, có tin nhắn rủ ra ngoài, quay về đã gần nửa đêm.",
+   "turn_vi": "Bạn không lười ngủ. Bạn đang đòi lại chút thời gian của riêng mình. Vấn đề là khoảng thời gian đó chưa có giờ kết thúc.",
+   "hook_en": "You planned to crash right after work. It's 11pm and you're still scrolling.",
+   "explainer": "HyperFrames: thẻ chữ «thức khuya đòi lại thời gian · TikTok + X 07/11» ở b01 (L-084). F03 kỳ vọng vs thực tế: khung trái «về ngủ liền», khung phải đồng hồ chạy 8h→11h. Ví dụ đời thường: điện thoại, cơm, tắm, tin nhắn. Không thuốc lá, không nhãn bệnh, không quay lại cảnh clip nguồn.",
+   "beats": [
+    {"text": "Tan làm, trong đầu chỉ có một câu: về ngủ liền một giấc cho khỏe.", "expression": "sad", "action": "talking", "duration": 7, "caption_en": "Plan: sleep right after work.", "background": "desk"},
+    {"text": "Rồi mười một giờ đêm, bạn vẫn đang cầm điện thoại.", "expression": "surprised", "action": "talking", "duration": 6, "caption_en": "11pm. Still scrolling.", "background": "bed"},
+    {"text": "Trên mạng đang có người kể y chang: về nằm lướt một tiếng, ăn, tắm, bạn rủ đi, về tới nhà đã khuya.", "expression": "neutral", "action": "talking", "duration": 9, "caption_en": "The feed tells the same story.", "background": "room"},
+    {"text": "Bạn không lười ngủ. Bạn đang đòi lại chút thời gian của riêng mình sau một ngày dài.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "You're reclaiming your time.", "background": "room"},
+    {"text": "Chỗ hụt là khoảng thời gian đó không có giờ kết thúc, nên nó ăn luôn vào giấc ngủ.", "expression": "confused", "action": "talking", "duration": 8, "caption_en": "It just has no end time.", "background": "grid"},
+    {"text": "Sách có một mục ngắn: tới giờ thì ngủ. Giờ ngủ cố định giúp cơ thể biết khi nào nên dừng.", "expression": "neutral", "action": "talking", "duration": 9, "caption_en": "Book 3.9: fixed bedtime.", "background": "desk"},
+    {"text": "Không cần bỏ thời gian riêng. Chỉ cần đặt cho nó một cái chuông.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "Keep it. Give it an alarm.", "background": "grid"},
+    {"text": "Tối nay đặt một báo thức «bắt đầu tắt» trước giờ ngủ. Chuông reo thì úp điện thoại xuống.", "expression": "happy", "action": "talking", "duration": 9, "caption_en": "Tonight: a wind-down alarm.", "background": "bed"},
+    {"text": "Thời gian của bạn vẫn còn. Chỉ là hôm nay nó có giờ về.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "Your time, with an end.", "background": "room"}
+   ]
+  },
+  {
+   "id": "con-53-ngay-mot-viec-xong",
+   "title": "TikTok đếm «đúng 2 tháng nữa là hết năm 2026»: còn 53 ngày, chọn một việc xong trước 31/12 (4.8, callback 4.1)",
+   "trend_id": "tt-hoanglongquoi-7703019605341555975",
+   "bridge_id": "B-hetnam-01",
+   "lesson": "4.8 Một việc có ngày hạn (callback 4.1 «nếu… thì…» của clip-01). Hạn 31/12 là mốc lịch, không phải fact của sách; Deep Research xác nhận câu chữ 4.8 trước khi viết.",
+   "angle": "empathy / seasonal",
+   "pattern": "P05 + P15",
+   "differentiation": "Mọi người đang nói: «đúng 2 tháng nữa là hết năm», comment kéo sang Tết ([TikTok @hoanglongquoi](https://www.tiktok.com/@hoanglongquoi/video/7703019605341555975), đăng 01/11). Góc của mình: không đợi kế hoạch năm mới; 53 ngày đủ cho đúng một việc đã dời cả năm, viết theo dạng nếu… thì…. Khác B-thang11-01 (mốc đầu tháng) và Great Lock In (EN).",
+   "theme": "light",
+   "week": 5,
+   "target": "ô đăng #27 (LIGHT trống), cạnh B-thang11-01 / B-chonviec-01",
+   "hook_vi": "Còn năm mươi ba ngày nữa là hết năm hai không hai sáu. Bạn chưa cần kế hoạch năm mới, chỉ cần một việc xong trước ba mốt tháng mười hai.",
+   "moment_vi": "Cái việc đã dời từ hồi đầu năm: dọn tủ, gọi lại cho ai đó, sửa cái xe đạp ở góc nhà.",
+   "turn_vi": "Năm mươi ba ngày không đủ đổi đời, nhưng đủ cho đúng một việc nếu bạn viết ra mấy giờ, ở đâu, làm gì.",
+   "hook_en": "53 days left in 2026. Not a new-year plan. One thing done by Dec 31.",
+   "explainer": "HyperFrames: thẻ chữ «2 tháng nữa hết năm · TikTok 01/11» ở b01 (L-084); bộ đếm 53 → 0. Ví dụ đời thường: tủ đồ, cuộc gọi, xe đạp. Không nhạc nguồn, không ảnh clip nguồn.",
+   "beats": [
+    {"text": "Còn năm mươi ba ngày nữa là hết năm hai không hai sáu.", "expression": "surprised", "action": "talking", "duration": 6, "caption_en": "53 days left in 2026.", "background": "grid"},
+    {"text": "Trên mạng đang có clip đếm ngược, ai cũng giật mình: mới đó mà gần Tết.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "The feed is counting down.", "background": "room"},
+    {"text": "Bạn chưa cần kế hoạch năm mới. Chỉ cần một việc xong trước ba mốt tháng mười hai.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "One thing by Dec 31.", "background": "desk"},
+    {"text": "Cái việc đã dời từ đầu năm: dọn cái tủ, gọi lại cho một người, sửa chiếc xe ở góc nhà.", "expression": "neutral", "action": "talking", "duration": 9, "caption_en": "The thing you kept moving.", "background": "room"},
+    {"text": "Năm mươi ba ngày không đủ đổi đời. Nhưng đủ cho đúng một việc, nếu nó có ngày hạn.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "Enough for one thing.", "background": "grid"},
+    {"text": "Viết ra theo kiểu nếu thì: nếu sáng thứ Bảy uống cà phê xong, thì mình dọn ngăn đầu tiên.", "expression": "happy", "action": "talking", "duration": 9, "caption_en": "If-then: when, where, what.", "background": "desk"},
+    {"text": "Một ngăn mỗi tuần, tới cuối năm là xong cái tủ.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "One drawer a week.", "background": "room"},
+    {"text": "Hôm nay chọn đúng một việc. Ghi ngày hạn lên lịch. Vậy là năm nay khép lại có thêm một dấu cộng.", "expression": "happy", "action": "talking", "duration": 9, "caption_en": "Pick one. Date it. +1.", "background": "grid"}
+   ]
+  }
+ ]
+}

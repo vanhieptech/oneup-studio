@@ -41,4 +41,4 @@ Không có bằng chứng #texthip giúp nhớ tốt hơn (Deep Research, d673dd
 
 ## Pain tự thuật (tách riêng, giới hạn lưu trữ)
 
-Một tự thuật cá nhân độc lập, không thuộc trend texthip và không phải bằng chứng hiệu quả: `x-2115086418192089298` ([X](https://x.com/phrog_lmao/status/2115086418192089298), @phrog_lmao, ngày lưu 2026-10-27). Chỉ dùng làm bối cảnh nỗi đau "đọc rồi quên"; không gán cho người tham gia #texthip. ID này không phải `trend_id`.
+Một tự thuật cá nhân độc lập, không thuộc trend texthip và không phải bằng chứng hiệu quả: `x-2115086418192089298` ([X](https://x.com/phrog_lmao/status/2115086418192089298), @phrog_lmao, đăng 2026-10-27, snapshot 2026-10-30 18:25 giờ Việt Nam, đối chiếu bản lưu commit 7fb1e4b). Chỉ dùng làm bối cảnh nỗi đau "đọc rồi quên"; không gán cho người tham gia #texthip. ID này không phải `trend_id`.

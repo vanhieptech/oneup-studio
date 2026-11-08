@@ -1,0 +1,32 @@
+{
+  "status": "text-counts-only-not-semantic-pass",
+  "script_path": "/workspace/opencreator-clip05-script-r12-draft-2026-11-07.md",
+  "spoken_sha256": "ce6f02f31256bda7515d5b147d312f0b252718529f97d355254335fbd830382a",
+  "spoken_sha_convention": "UTF-8, one blank line between beats, terminal LF",
+  "file_sha256": "977ee47c9db86bd00d6f14297c94bbf977f9bb4ec2e3638629e0fe2e077c3f81",
+  "word_count_whitespace": 142,
+  "before_first_physical_step_after_hook": 49,
+  "study_word_count": 24,
+  "beat_count": 7,
+  "caption_count": 21,
+  "max_caption_words": 8,
+  "checks": {
+    "words_140_175": true,
+    "study_at_most_25": true,
+    "before_method_at_most_50": true,
+    "captions_at_most_8": true,
+    "seven_beats": true,
+    "highlight_words_exist_in_their_chunks": true
+  },
+  "human_read_aloud": "CHƯA KIỂM",
+  "stranger_hook": "CHƯA KIỂM",
+  "listen_once": "CHƯA KIỂM",
+  "repository_checker": "NOT_RUN",
+  "image_audio_video_created": false,
+  "renderable": false,
+  "committed": false,
+  "live_remote_verified_by_oc": false,
+  "mac_sync": "UNVERIFIED",
+  "source_owner_l098_status": "News reported local a5d9a53; not pushed",
+  "source_owner_registry_date_fix_status": "News reported local c480adf; not pushed"
+}

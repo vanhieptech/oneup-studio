@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-dinh-ngu-som-thanh-11-gio-dem",
+ "title": "[STUB] Định về ngủ liền, rốt cuộc 11 giờ đêm mới nằm: thức khuya «đòi lại thời gian». Sách 3.9: tới giờ thì ngủ",
+ "meta": {
+  "week": 3,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-phantai911809-7704918939675118869",
+  "bridge_id": "B-bedtime-02",
+  "lesson": "3.9 Tới giờ thì ngủ (giờ ngủ cố định; Deep Research xác nhận câu chữ và mức bằng chứng trước khi viết). Hành động +1: tối nay đặt một giờ ngủ và một báo thức «bắt đầu tắt» trước đó. Tránh nhãn bệnh (ADHD trong tóm tắt X: bỏ).",
+  "angle": "empathy / humor",
+  "pattern": "P10 + P12 + F03",
+  "differentiation": "Mọi người đang nói: thức khuya để «đòi lại» thời gian riêng sau một ngày dài ([X News 07/11](https://x.com/i/trending/2118954260029444573)); TikTok kể đúng kịch bản «định về ngủ liền, rồi lướt, cà phê, game tới 11 giờ» ([TikTok @phantai911809](https://www.tiktok.com/@phantai911809/video/7704918939675118869), transcript thật). Góc của mình: không bảo bỏ thời gian riêng; cho nó một giờ kết thúc. Khác B-bedtime-01 (ghi giờ đặt điện thoại 7 ngày) và B-weekend-02 (ngủ bù)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b01",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tan làm, trong đầu chỉ có một câu: về ngủ liền một giấc cho khỏe.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Plan: sleep right after work.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b02",
+   "duration": 6,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi mười một giờ đêm, bạn vẫn đang cầm điện thoại.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "11pm. Still scrolling.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b03",
+   "duration": 9,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trên mạng đang có người kể y chang: về nằm lướt một tiếng, ăn, tắm, bạn rủ đi, về tới nhà đã khuya.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "The feed tells the same story.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b04",
+   "duration": 8,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn không lười ngủ. Bạn đang đòi lại chút thời gian của riêng mình sau một ngày dài.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "You're reclaiming your time.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chỗ hụt là khoảng thời gian đó không có giờ kết thúc, nên nó ăn luôn vào giấc ngủ.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "It just has no end time.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b06",
+   "duration": 9,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một mục ngắn: tới giờ thì ngủ. Giờ ngủ cố định giúp cơ thể biết khi nào nên dừng.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Book 3.9: fixed bedtime.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Không cần bỏ thời gian riêng. Chỉ cần đặt cho nó một cái chuông.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Keep it. Give it an alarm.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b08",
+   "duration": 9,
+   "background": {
+    "kind": "bed"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay đặt một báo thức «bắt đầu tắt» trước giờ ngủ. Chuông reo thì úp điện thoại xuống.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Tonight: a wind-down alarm.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "dinh-ngu-som-thanh-11-gio-dem.b09",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thời gian của bạn vẫn còn. Chỉ là hôm nay nó có giờ về.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Your time, with an end.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

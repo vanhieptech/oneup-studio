@@ -236,3 +236,22 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
   - ⚠ tự động đề xuất cho News:
     - `--evidence`: ✖ khi gặp «nhiều nghiên cứu» hoặc «nghiên cứu thấy» mà không có tên hay năm nguồn trong cùng câu.
     - `--choppy`: ✖ khi có 2 câu dưới 8 chữ liền nhau, hoặc quá 30% số câu dưới 8 chữ.
+
+## L-098: Checker và nguồn đạt không chứng minh lời rõ nghĩa; hình chỉ làm sau Chốt (clip-05 r11.4, 2026-11-07)
+- **Hiệp (2026-11-07, Rule Reviewer chuyển lời trong Agency 19:18):** bác r11.4 vì hook và nội dung không rõ nghĩa, yêu cầu làm lại thực chất, không vá r11.4. Kết luận «đạt wording» của r11.4 đã rút.
+- **Hiệp (2026-11-07 15:55, Rule Reviewer chuyển lời):** «Chỉ tạo hình sau khi mình Chốt lời; hãy tách kiểm hình khỏi bước duyệt kịch bản.»
+- **Triệu chứng:**
+  - r11.4 qua `check-rules.py` (gồm `--trend` 0 error), qua kiểm fact của Deep Research và kiểm trend/nguồn của Social Research, rồi được trình như đạt lời. Hiệp đọc vẫn không hiểu hook nói vấn đề gì, hứa gì và phần sau giải quyết ra sao.
+  - Trước Chốt, quy trình còn đòi still preview/adapter/crop làm điều kiện trình lời, khiến kiểm hình chen vào bước duyệt kịch bản.
+- **Gốc:**
+  - Kết quả checker, fact và nguồn đúng phạm vi bị đọc như chứng nhận chất lượng nghĩa. Thực tế chúng chỉ chứng nhận phần chúng kiểm.
+  - Không có cổng tay riêng bắt ghi bằng lời thường: pain cụ thể của người xem → lời hứa của hook → payoff ở beat nào; quy chiếu của «chỗ thiếu», «điều đó», «cách này»; mạch nối từng cặp câu bằng chữ có trong lời.
+  - Gate sản xuất (hình) và gate lời không được tách rõ.
+- **Luật:**
+  - (1) **Cổng tay hook–pain–hứa–payoff (chặn).** Review phải ghi, với dòng cụ thể: pain người xem đang gặp; lời hứa của hook; beat nào trả lời câu hỏi hook (phải trả lời ngay, không lơ lửng); payoff thực hiện lời hứa thế nào. Thiếu một mục hoặc phải tự suy diễn hộ người xem → CHƯA ĐẠT.
+  - (2) **Cổng tay quy chiếu.** Mọi đại từ/cụm trỏ («chỗ thiếu», «điều đó», «cách này», «nó») phải chỉ được tới một cụm cụ thể đã nói trước đó trong lời. Không chỉ được → CHƯA ĐẠT.
+  - (3) **Cổng tay liên kết câu.** Bảng cặp câu (L-094) phải ghi mối nối bằng chính chữ có trong lời, kể cả câu trend → bài học. Nguồn đúng phạm vi không thay cho lời nối tự nhiên.
+  - (4) **Checker không chứng nhận nghĩa.** Cờ ✔ của `check-rules.py`, kiểm fact, kiểm trend, số chữ, caption, mapping chỉ ghi là «đạt phần máy/nguồn». Không suy ra hook hay, nội dung rõ hay script tổng đạt. Không sửa checker để giả kiểm nghĩa.
+  - (5) **Hình sau Chốt.** Không tạo hình, still preview, voice F5-TTS, render hay publish trước khi Hiệp «Chốt» đúng bản lời. Thiếu ảnh/static preview/adapter/crop/readability không chặn duyệt lời; đó là gate sản xuất sau Chốt (kiểm ảnh thật, nghĩa hình, credit readability, cover/end-card, 1080×1920).
+  - (6) Người thật đọc to/nghe một lần chưa làm thì ghi «CHƯA KIỂM», không dùng AI đọc hay text-check thay.
+- **Phát hiện:** manual gate của Rule Reviewer, chạy sau đọc to (L-089) và trước khi trình Hiệp; ghi kết quả (1)–(3) ở đầu file review. Không có check tự động cho nghĩa trong lượt này; các cờ ⚠ hiện có (`--clarity`, `--link`, `--flow`) chỉ hỗ trợ, không thay cổng tay.

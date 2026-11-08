@@ -24,8 +24,9 @@ tags: [index, retrieval]
 | agents-vanhiep-tech | guide | active | `channels/vanhiep-tech/AGENTS.md` | AGENTS — kênh @vanhiep.tech |
 | plan-vanhiep-tech-v1 | plan | active | `channels/vanhiep-tech/PLAN.md` | PLAN — @vanhiep.tech V1 |
 | readme-vanhiep-tech | guide | active | `channels/vanhiep-tech/README.md` | @vanhiep.tech (trong oneup-studio) |
+| channels.vanhiep-tech.brand.frame | None | None | `channels/vanhiep-tech/brand/frame.md` | Frame — layer graphics @vanhiep.tech |
 | vht-20261107-oauth-control-plane | script | draft | `channels/vanhiep-tech/clips/vht-20261107-oauth-control-plane/script.md` | vht-20261107-oauth-control-plane |
-| docs-vht-capcut-smoke | guide | draft | `channels/vanhiep-tech/docs/capcut-smoke.md` | CapCut smoke-test (V1) |
+| docs-vht-capcut-smoke | guide | active | `channels/vanhiep-tech/docs/capcut-smoke.md` | CapCut smoke — **local Mac only** |
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | clip-01.post | post-package | review (gate 2) · DEMO tuần 5, không đăng như clip tuần 1 | `content/archive/clip-01-implementation-intention/archive/box-final/post.md` | Gói đăng clip 01 (final demo) |
@@ -129,6 +130,7 @@ tags: [index, retrieval]
 | content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-2026-11-07 | storyboard-plan | draft-planning-only-no-images | `content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-2026-11-07.md` | CHƯA CHUẨN BỊ ẢNH |
 | content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07 | storyboard | archived | `content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update1-2026-11-07.md` | Clip05 r11.4 plan-update1 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN |
 | content.clips.clip-05-hoc-mot-dem.archive.r11.opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07 | storyboard | archived | `content/clips/clip-05-hoc-mot-dem/archive/r11/opencreator-clip05-storyboard-r11.4-plan-update2-2026-11-07.md` | Clip05 r11.4 plan-update2 — STORYBOARD KẾ HOẠCH HẬU KIỂM NGUỒN |
+| content.clips.clip-05-hoc-mot-dem.archive.r12.opencreator-clip05-script-r12-draft-2026-11-07 | script | draft | `content/clips/clip-05-hoc-mot-dem/archive/r12/opencreator-clip05-script-r12-draft-2026-11-07.md` | Bản thật để Rule Reviewer kiểm — CHƯA DUYỆT |
 | content.clips.clip-05-hoc-mot-dem.evidence-lines-v10 | None | None | `content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md` | Câu dẫn chứng cho clip-05 v10 (Deep Research) |
 | content.clips.clip-05-hoc-mot-dem.factcheck-script-v9r92 | None | None | `content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md` | Deep Research soát fact clip-05 v9 r9.2 |
 | clip-05.post-checklist | doc | ready | `content/clips/clip-05-hoc-mot-dem/final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
@@ -279,14 +281,18 @@ tags: [index, retrieval]
 | trends-2026-11-06 | trend-digest | draft-needs-review | `research/trends/2026-11-06/digest.md` | Trend digest 2026-11-06 (thứ Sáu) |
 | research.trends.2026-11-07.clip-05-texthip-trend | trend-registry | archived | `research/trends/2026-11-07/clip-05-texthip-trend.md` | Registry trend texthip cho clip-05 |
 | trends-2026-11-07 | trend-digest | draft-needs-review | `research/trends/2026-11-07/digest.md` | Trend digest 2026-11-07 (thứ Bảy) |
+| trends-2026-11-08 | trend-digest | draft-needs-review | `research/trends/2026-11-08/digest.md` | Trend digest 2026-11-08 (Chủ nhật) |
+| trends-2026-11-08-treg | trend-source | raw-evidence | `research/trends/2026-11-08/treg/README.md` | Treg TikTok research 2026-11-08 |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
 | trends-weekly-2026-W43 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W43.md` | Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10) |
 | trends-weekly-2026-W44 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W44.md` | Tổng hợp tuần 2026-W44 (thứ Hai 26/10 → Chủ nhật 01/11) |
+| trends-weekly-2026-W45 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W45.md` | Tổng hợp tuần 2026-W45 (thứ Hai 02/11 → Chủ nhật 08/11) |
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
+| refs.motionmaxxing.integration | vendor-note | active | `resources/refs/motionmaxxing/INTEGRATION.md` | motionmaxxing — vendored copy + OneUp integration |
 | skill.motionmaxxing | skill | active | `resources/refs/motionmaxxing/SKILL.md` | motionmaxxing |
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
