@@ -20,9 +20,8 @@ EMOTION = {
     "confused":  ("[hắng giọng] ", 0.97, 0.0),
 }
 
-# Per-preset base tempo (pitch kept). Both presets read in a slow storybook pace (~3 syl/s);
-# a 55-60s clip needs ~3.6-3.9 syl/s (DL-030). Checked by STT after every change.
-VOICE_TEMPO = {"Đức Trí": 1.3, "Kim Thanh": 1.12}
+# L-099: natural delivery; never accelerate a preset to fit a duration/word quota.
+VOICE_TEMPO = {"Đức Trí": 1.0, "Kim Thanh": 1.0}
 
 def envelope(path, fps):
     with wave.open(path) as w:

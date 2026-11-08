@@ -7,6 +7,8 @@ type: workflow
 status: active
 tags: [workflow, pipeline, rule-65]
 ---
+
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
 # Quy trình một video, từ ý tưởng tới sẵn sàng đăng
 
 Đánh dấu **[Hiệp]** = cần Hiệp duyệt/làm; còn lại agent tự làm và báo tiến độ liên tục. Luật: `rules/video-rules.md`; skill: `skills/make-video/SKILL.md`.

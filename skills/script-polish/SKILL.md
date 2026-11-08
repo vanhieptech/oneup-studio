@@ -37,5 +37,5 @@ description: >-
    - Use only the creator's real phrases, examples and level of humor from the profile.
    - Never invent a personal story. If a line needs one, insert `[VÍ DỤ THẬT CỦA HIỆP: ...]` as a placeholder.
 7. **Trend check (rule-37).** At least one current phrase or situation from `research/trends/ingest.md` must stay in the script, used naturally.
-8. **Diff + verify.** Output the old and new lines side by side, list the facts and confirm each is unchanged, and keep the target length (55–60s ≈ 150–170 Vietnamese words).
+8. **Diff + verify.** Output the old and new lines side by side, list the facts and confirm each is unchanged, and apply L-099: total strictly <300s INCLUDING end card, pauses and transitions; 120–180s is a warning-only target, not a minimum. No word quotas or speed-up to fit. Before Chốt label natural-reading duration ƯỚC/estimate; measure actual audio/video only after Chốt. This is not Chốt and does not waive W-16.
 9. Save as `script-vX.Y-draft.md` next to the approved version. Never overwrite the approved script until the creator approves.

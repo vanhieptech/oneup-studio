@@ -8,6 +8,8 @@ type: rubric
 updated: 2026-10-19
 ---
 
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
+
 # Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt)
 
 > **Trạng thái:** bản đề xuất để Hiệp duyệt trọng số/ngưỡng. Chưa thay `logs/rule-checklist.md`, chưa sửa skill make-video. Không dùng rubric này để tự nói "Chốt"; chỉ Hiệp nói "Chốt" mới voice/render (P-12).
@@ -27,7 +29,7 @@ updated: 2026-10-19
 
 - **Map trực tiếp:** R1/R2/R3 → P-05, P-06, L-057, L-058, L-021/rule-55 (phần lời), L-030/rule-62, rule-56 · R4 → P-09, L-044, L-051, rule-58/61 · R5 → P-08, L-024/rule-60, L-052 · R6 → P-03, P-10, L-045, L-056, rule-40.
 - **Mới hoàn toàn (chưa có trong 64 rule):** (a) thang điểm 0–100 + neo điểm từng hạng mục; (b) verdict 3 mức theo tổng điểm thay cho đạt/chưa đạt nhị phân; (c) quy tắc *cap* (lỗi nặng khoá trần điểm hạng mục dù tổng cao); (d) bảng hiệu chuẩn 4 bản v04–v07 đối chiếu verdict thật của Hiệp.
-- **Xung đột giữ nguyên, không tự waive:** X-01 ngân sách từ (luật 7: 150–170 vs L-054: ~220–250 vs thực tế v07: 199) — rubric tạm chấm theo dải 190–210đ cho clip kiểu clip-04 và ghi chờ duyệt; X-02/C-3 rule-55 frame-0 (tầng spec, không tính vào điểm lời); C-1 credit (chờ Hiệp quyết, xem §4); C-2 tiểu từ (L-045 thắng quota rule-60 ở tầng lời); C-4 trend-signals/hashtag (tầng gói đăng).
+- **L-099 đã giải quyết X-01:** không chấm/trừ theo quota từ hay ép thời lượng ngắn; tổng strict <300s gồm end card/nghỉ/chuyển cảnh, 120–180s chỉ mục tiêu/cảnh báo; X-02/C-3 rule-55 frame-0 (tầng spec, không tính vào điểm lời); C-1 credit (chờ Hiệp quyết, xem §4); C-2 tiểu từ (L-045 thắng quota rule-60 ở tầng lời); C-4 trend-signals/hashtag (tầng gói đăng).
 
 ## 3. Rubric 100 điểm (7 hạng mục)
 
@@ -39,7 +41,7 @@ Mỗi hạng mục chấm theo neo: **tối đa** = đạt hết mô tả; **gi�
 | B. Mạch giữ xem tới cuối | 15 | Mỗi ý/fact/ví dụ 1 lần ở 1 beat; beat sau tiến ý mới; hook→payoff→CTA đóng vòng; beat ≤8s | Lặp 1 ý chính sang beat khác −3/lần; beat đóng kín như gạch đầu dòng −2; không callback/đóng vòng −3 | P-01, L-030/043/051/054, rule-62 | manual; đếm từ/ngram automated một phần |
 | C. Rõ ý & chính xác logic (tiếng Việt nói) | 20 | Mọi câu đủ chủ thể+việc+kết quả/việc tiếp; chuỗi việc→kết quả→hệ quả đúng nguồn; không từ chung chung/hiếm gánh ý | Câu gỡ trách chung chung đứng một mình −5; từ mơ hồ gánh ý ("sai cách", "ít hiệu quả hơn mình tưởng", "lộ chỗ hổng") −2/cụm; câu cụt bắt đoán −2/câu | P-02/P-03/P-04, L-055/56, rule-58 | manual (không bịa automated cho nghĩa) |
 | D. Fact / evidence / không hứa lố | 15 | Mọi claim chỉ vào được claim→source; đúng mức nguồn (g=0,499 = "mức vừa"); ví dụ đời thường ghi minh hoạ; thắng nhỏ đếm được | Nói quá mức nguồn −4; gắn số minh hoạ vào nghiên cứu −5; hứa kết quả ("nhớ hết", "nhẹ đầu") −3 | P-03/P-08, L-045/056, rule-40 | manual đối chiếu nguồn |
-| E. Ngắn gọn & tải nhận thức / caption | 15 | Đúng ngân sách từ/thời lượng đã ghi trong file; 2–4 phrase/beat, phrase ≥3 chữ, vế ≤12 chữ; EN ≤8 từ/chunk, đúng thứ tự lời, hl đúng từ khoá | Vượt ngân sách >10% −4, >30% −8; phrase vụn/quá dài −2; EN chunk >8 từ hoặc lệch thứ tự −2/chunk | P-09, L-044/051/054, rule-4/7/9/58/61 | automated phần lớn (đếm từ, đếm EN, timing) |
+| E. Ngắn gọn & tải nhận thức / caption | 15 | Đủ nghĩa/nguồn, không quota từ; tổng strict <300s gồm end card/nghỉ/chuyển cảnh, 120–180s chỉ mục tiêu; phrase theo cụm nghĩa; EN ≤8 từ/chunk, đúng thứ tự lời, hl đúng từ khoá | Không trừ điểm vì số từ hay ngoài target; ≥300s chặn; phrase vụn/mất nghĩa −2; EN chunk >8 từ hoặc lệch thứ tự −2/chunk | P-09, L-044/051/054, rule-4/7/9/58/61 | automated phần lớn (đếm từ, đếm EN, timing) |
 | F. Tone mềm, nhấn, cảm xúc | 10 | Nói như kể với bạn; cảm giác/suy nghĩ thật từng chặng; nhấn 1–2/beat đúng từ gánh ý; ví dụ có chi tiết đo được | Beat 0 nhấn hoặc >2 nhấn −1/beat; beat bằng chứng khô như báo cáo −3; thiếu cảm xúc ở beat đau −2 | P-08, L-031/036/052, rule-63 | đếm `{nhấn:}` automated; tone manual đọc to |
 | G. CTA & hồ sơ gate 1 | 5 | Đúng 1 CTA đo được (comment con số), không xin like/follow; có cột Hành động/Cảm xúc, bảng hiệu ứng, end card an toàn + credit | CTA xin tương tác −3; thiếu cột Hành động/Cảm xúc −2; thiếu end card −3 (xem thêm lỗi chặn) | rule-56, L-019/024, P-10 | automated một phần trên spec/post |
 
@@ -86,6 +88,6 @@ Verdict thật (từ chính file script + lessons, không bịa): v04 — Hiệp
 1. Trọng số A20/B15/C20/D15/E15/F10/G5 có đúng ý không (hiện C+A = 40% vì Hiệp chê nhiều nhất ở rõ nghĩa + hook)?
 2. Ngưỡng 85/75/60 và việc "75–84 vẫn là CHƯA ĐẠT, chưa trình".
 3. Danh sách lỗi chặn §3, đặc biệt: hook thiếu câu hỏi = chặn (không chỉ trừ điểm).
-4. Ngân sách từ chuẩn để chấm E (X-01: 150–170 luật 7 vs ~199–250 thực tế L-054) — chọn một dải chính thức.
+4. X-01 đã đóng theo L-099 (Hiệp 08/11 13:00 Asia/Saigon): không quota từ; xem luật 4. Các neo điểm/bản clip cũ ở §4 là lịch sử, không phải budget hiện hành.
 5. C-1 credit: giữ nguyên văn đã chốt hay theo rule-13 ("đã chuyển thể" + link giấy phép).
 6. Có tạo skill `rule-review` như §5 không, hay chỉ giữ rubric trong `logs/`?

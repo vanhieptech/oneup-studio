@@ -294,7 +294,7 @@ def voice(fd):
         return (i[0] * 0.01, len(x) / SR - (i[-1] + 1) * 0.01) if len(i) else (0.0, 0.0)
     pure = sum(len(PCS[p["file"]]) / SR - sum(edges(PCS[p["file"]])) for s in S for p in P[s["id"]]["pieces"])
     plan = arg("--plan", "auto")
-    if plan == "auto": plan = "A" if pure <= 47.9 else "B"
+    if plan == "auto": plan = "A"  # L-099: never compress pauses to fit a duration quota
     G = PLANS[plan]; out = []; t = 0.0; prev = None; rows = []
     for s in S:
         sr_ = {"id": s["id"], "beat": s["beat"], "text": s["text"], "pieces": []}
@@ -470,14 +470,14 @@ def measure(fd):
     I = re.findall(r"I:\s+(-?[\d.]+) LUFS", lufs)[-1]
     tot = TJ["total_s"]; pause_sum = round(sum(p["pause"] for p in allp), 2); speech = round(sum(r["speech_s"] for r in rows), 2)
     res = {"voice_prefix": pre, "plan": TJ["plan"], "plan_pauses": G, "total_s": tot, "speech_s": speech, "pause_at_marks_s": pause_sum, "pure_speech_pre_s": TJ["pure_speech_s"], "lufs": float(I),
-           "limit_s": 58.0, "over_s": round(max(0, tot - 58.0), 2), "pauses": allp, "silences": silences, "sentences": rows, "english": en, "flags": flags, "warnings": warns}
-    if tot > 58.0: flags.append(f"tổng giọng {tot:.2f}s > 58s (dư {tot - 58:.2f}s)")
+           "duration_scope": "voice-only; final video including end card must be <300s (L-099)", "pauses": allp, "silences": silences, "sentences": rows, "english": en, "flags": flags, "warnings": warns}
+    warns.append("L-099: voice-only duration is not total video; check final timeline including end card (<300s, target 120–180s)")
     out = arg("--out", os.path.join(fd, f"prosody-measure-{pre}.md")); json.dump(res, open(out[:-3] + ".json", "w"), ensure_ascii=False, indent=1)
     md = [f"# Đo prosody bản giọng nháp — {pre} ({arg('--script-name', 'script-v16c')}, F5 Thái Sơn speed 1.0, plan {TJ['plan']})", "",
           f"File: `{TJ['m4a']}` + `{TJ['wav']}`. Đo trên chính file giao (sau loudnorm). Nghỉ = đoạn lặng dài nhất (năng lượng, khung 10ms) tại chỗ nối hai cụm; nhấn = độ to (chỉ tính khung có tiếng) của cụm đậm so phần còn lại của câu (bỏ âm tiết cuối) và so 2 âm tiết kề mỗi bên; lên giọng = trung vị F0 âm tiết cuối so 2 âm tiết ngay trước (semitone); STT = faster-whisper {os.environ.get('ASR_MODEL', 'small')} float32 (vi) trên đoạn câu, so với lời (số/từ EN quy về cách đọc).", "",
           "## Tổng", "",
-          f"- **Tổng thời lượng giọng: {tot:.2f}s** (giới hạn 58s → {'ĐẠT' if tot <= 58 else f'DƯ {tot - 58:.2f}s'}); loudness {I} LUFS.",
-          f"- Nói thuần (tổng các cụm, bỏ lặng hai đầu): {TJ['pure_speech_s']:.2f}s → plan {TJ['plan']} ({'≤' if TJ['pure_speech_s'] <= 47.9 else '>'} 47,9s). Tổng nghỉ đo tại {len(allp)} chỗ ngắt: {pause_sum:.2f}s.",
+          f"- **Thời lượng giọng đã đo sau Chốt: {tot:.2f}s**; chưa phải tổng video + end card (L-099); loudness {I} LUFS.",
+          f"- Nói thuần (tổng các cụm, bỏ lặng hai đầu): {TJ['pure_speech_s']:.2f}s → plan {TJ['plan']} (không ép quota). Tổng nghỉ đo tại {len(allp)} chỗ ngắt: {pause_sum:.2f}s.",
           f"- Thứ bậc: phẩy dài nhất {comma_max:.2f}s < hết câu ngắn nhất {period_min:.2f}s {'✓' if comma_max < period_min else '✖'}.",
           f"- Cờ chặn: **{len(flags)}** · cảnh báo: {len(warns)}.", "",
           "## Từng câu", "", "| Câu | Beat | Bắt đầu–kết thúc (s) | Nhấn: dB so câu / so chữ kề (gain đã thêm) | Cuối câu hỏi (st) | STT (khớp) | Take |", "|---|---|---|---|---|---|---|"]

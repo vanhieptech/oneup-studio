@@ -14,7 +14,7 @@ tags: [clip-01, post, tiktok, week-1]
 ## 1. File video
 ```
 Đường dẫn: content/archive/clip-01-implementation-intention/final/out/clip-01-final.mp4
-Thời lượng: 60.7s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+Thời lượng: <ƯỚC trước Chốt / đo thật sau Chốt> · tổng gồm end card/nghỉ/chuyển cảnh strict <300s; mục tiêu 120–180s chỉ cảnh báo · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
 ```
 
 ## 2. Chữ trên cover (≤ 40 ký tự)

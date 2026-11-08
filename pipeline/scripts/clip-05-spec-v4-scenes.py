@@ -238,7 +238,7 @@ def write():
         "story": "monologue Thầy; ví dụ chương Di truyền / dạng lai hai cặp tính trạng (ô Punnett 4×4 trống b02, điền b07); L-050 nghĩa bằng vật + hành động; visual-plan-v4 (FLUX 0a6738b, b03 97a50af)",
         "trend": {"source": "https://www.tiktok.com/@ng__phanh/video/7532553338664045831", "where": "b01a (TikTok-style frame rebuilt from objects + overlay caption + 55,3K share counter)", "file": "final/trend-signals.md"},
         "voice_prefix": P, "voice_track": "voice-track-c05v4.wav", "mix": "linear", "layout": "tiktok", "scene_bg": "#E4E4DF", "floor_bg": "#D2D1CA",  # Hiệp H1 (8:47 22/10): grey wall like clip-03 DARK; floor one step darker; H2: caption keyword = ink box like clip-04 (no caption_accent)
-        "length_target": [50, 60.5], "length_note": "L-080: độ dài theo nội dung; giọng 52.7s (approved 5b12e22) + đuôi 0.3s (bỏ giữ b07c, Rule Reviewer F3) + end card 2.0s",
+        "length_target": [120, 180], "length_note": "L-099: target only; total INCLUDING end card, pauses and transitions must be strictly <300s. Before Chốt label ƯỚC; no word quota or speed-up.",
         "pacing": {"exact": True, "swish": "beat"}, "transition_sfx": {"part": "whoosh-soft", "scene": "swish"},
         "endcard": {"duration": 2.0, "y": 520, "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
                     "sources": "Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013 · Trend: @ng__phanh · TikTok",

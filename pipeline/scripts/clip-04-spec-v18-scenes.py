@@ -223,7 +223,7 @@ def write():
     spec = {"id": "clip-04-final", "clip": "clip-04", "title": "Gấp sách tự kiểm (HTB 23.14) - script v18 locked", "week": 1, "theme": "light", "pillar": "Học đúng cách",
         "story": "monologue Thầy (L-039); ví dụ 30 từ tiếng Anh (luggage); L-050 nghĩa bằng vật + hành động, không chữ trong hình; visual-plan-v18 (FLUX 6770a3f) + short-factory review",
         "trend": base.get("trend"), "voice_prefix": P, "voice_track": "voice-track-c04v18.wav", "mix": "linear", "layout": "tiktok",
-        "length_target": [40, 60.5], "length_note": "L-080 (Hiệp 21/10 00:33): độ dài theo nội dung, không ép 55s; giọng 46.1s + giữ b07 1s + đuôi 0.3s + end card 1.5s",
+        "length_target": [120, 180], "length_note": "L-099: target only; total INCLUDING end card, pauses and transitions must be strictly <300s. Before Chốt label ƯỚC; no word quota or speed-up.",
         "pacing": {"exact": True, "swish": "beat"}, "transition_sfx": base["transition_sfx"],
         "endcard": {"duration": 1.5, "y": 560, "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
                     "sources": "Roediger & Karpicke 2006 · Yang et al. 2021",

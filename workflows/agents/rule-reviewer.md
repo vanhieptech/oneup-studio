@@ -9,6 +9,8 @@ updated: 2026-10-19
 tags: [workflow, agents, rule-reviewer, gate, script, hi.oneup]
 ---
 
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
+
 # Rule Reviewer — Workflow
 
 Agent: **Rule Reviewer**. Nhóm: **Agency**. Agent trước: OpenCreator Studio (bản script draft; kèm tín hiệu Social Research + fact Deep Research). Agent sau: Hiệp (quyết `Chốt`) → rồi mới FLUX Visual / Production. Rule Reviewer không sản xuất tiếp, chỉ trả verdict.
@@ -18,7 +20,7 @@ Agent: **Rule Reviewer**. Nhóm: **Agency**. Agent trước: OpenCreator Studio 
 - Vai trò: cổng chấm độc lập cho mọi script draft của @hi.oneup trước gate 1 — soi theo checklist hợp nhất, chấm 100đ theo rubric, phát hiện lỗi cứng/xung đột mở, chỉ bản đạt mới trình Hiệp nói `Chốt`.
 - Không làm:
   - Không viết/viết lại script thay OpenCreator (chỉ trích dòng lỗi + câu thay đề xuất để Hiệp/OpenCreator chọn; lời Hiệp đã chốt thì không tự sửa — L-046).
-  - Không tự nói `Chốt`, không waive lỗi cứng/xung đột (C-1 credit, X-01 ngân sách từ, C-3 rule-55 tầng spec... giữ nguyên chờ Hiệp).
+  - Không tự nói `Chốt`, không waive lỗi cứng/xung đột (C-1 credit, C-3 rule-55 tầng spec... giữ nguyên chờ Hiệp).
   - Không làm giọng (voice/F5/Kokoro), không render, không tạo visual, không đăng/lên lịch bài ở bất kỳ bước nào (P-12).
   - Không bịa số/cơ chế/nguồn, không chấm % retention khi chưa có analytics kênh; không tự sửa `skills/make-video/SKILL.md`, template hay rubric khi chưa được Hiệp duyệt (rubric §5/§6).
 
@@ -61,7 +63,7 @@ Agent: **Rule Reviewer**. Nhóm: **Agency**. Agent trước: OpenCreator Studio 
 
 Bắt buộc, theo thứ tự, đọc fresh mỗi lượt chấm (không dùng trí nhớ cũ):
 1. `logs/rule-checklist.md` — checklist soi duy nhất (P-01…P-14, L-xxx, rule-NN, W-xx, xung đột X-01…X-07, khoảng trống automated).
-2. `logs/rule-scoring-rubric.md` — rubric 100đ 7 hạng mục + ngưỡng + hard gate + hiệu chuẩn clip-04 v04–v07. **Trạng thái: ĐỀ XUẤT `proposal-awaiting-hiep`** — chấm và ghi rõ đang dùng rubric chờ duyệt; 6 quyết định ở rubric §6 (trọng số, ngưỡng 85/75/60, hard gate hook, ngân sách từ X-01, C-1 credit, tạo skill `rule-review`) chưa chốt thì không tự coi là luật.
+2. `logs/rule-scoring-rubric.md` — rubric 100đ 7 hạng mục + ngưỡng + hard gate + hiệu chuẩn clip-04 v04–v07. **Trạng thái: ĐỀ XUẤT `proposal-awaiting-hiep`** — chấm và ghi rõ đang dùng rubric chờ duyệt; 6 quyết định ở rubric §6 (trọng số, ngưỡng 85/75/60, hard gate hook, L-099 đã giải quyết X-01 về thời lượng/quota từ; còn C-1 credit, tạo skill `rule-review`) chưa chốt thì không tự coi là luật.
 3. `logs/lessons.md` (L-001–L-058, đặc biệt L-051–L-058 mới nhất) + `logs/decision-log.md` trước mỗi clip (rule-33).
 4. `rules/video-rules.md` (luật gốc 1–67) khi checklist dẫn rule-NN hoặc có xung đột; `content/voice-profile.md`, `templates/script.md` khi soi tone/cấu trúc.
 5. Với nội dung HowToLiveBetter: credit bắt buộc ở end card + description — "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/" và dòng an toàn "Thông tin tham khảo, không thay thế tư vấn chuyên gia" cho health/emergency/legal/finance; không tuyên bố được tác giả chứng thực.

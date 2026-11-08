@@ -8,7 +8,7 @@ Cập nhật: 19/10/2026 (Asia/Saigon). Từ nay mỗi agent giữ một workflo
 |---|---|---|---|---|---|
 | 1. Tín hiệu/trend | Social Research | social-research.md | News / job trend 7:55 | Deep Research | Gói trend có link nguồn, đã lọc nội dung cấm |
 | 2. Kiểm chứng fact | Deep Research | deep-research.md | Social Research | OpenCreator Studio | Bảng claim có nguồn; claim không nguồn bị chặn |
-| 3. Soạn script | OpenCreator Studio | opencreator-studio.md | Deep Research | Rule Reviewer | Nháp đúng template, ngân sách từ, caption Anh ≤8 từ |
+| 3. Soạn script | OpenCreator Studio | opencreator-studio.md | Deep Research | Rule Reviewer | Nháp đúng template; L-099: tổng strict <300s gồm end card/nghỉ/chuyển cảnh, target 120–180s chỉ cảnh báo, không quota từ; caption Anh ≤8 từ |
 | 4. Chấm điểm | Rule Reviewer | rule-reviewer.md | OpenCreator Studio | Hiệp (qua News) | ≥85/100, không lỗi cứng; rớt thì trả chặng 3 |
 | 5. Hình ảnh | FLUX Visual | flux-visual.md | Script đã chốt | Production | Assets-first, không chữ trong ảnh, đúng brand |
 | 6a. Giọng | Kokoro Voice | kokoro-voice.md | Script đã chốt | Short Factory / News | Chỉ sau "Chốt"; so sánh F5-TTS trước khi đề xuất đổi |

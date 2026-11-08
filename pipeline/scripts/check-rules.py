@@ -23,6 +23,7 @@ Source: <clip>/final/spec.json (format: see skills/make-video/SKILL.md). Exit 1 
 import json, os, re, subprocess, sys, difflib, unicodedata, glob, math, tempfile
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+from duration_policy import duration_status, estimated_total
 REPO = str(P.ROOT)
 NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x64/bin")
 ASR_PY = os.environ.get("ASR_PYTHON", "/workspace/asr-venv/bin/python")
@@ -31,6 +32,31 @@ def ok(rule, msg): res.append(("✔", rule, msg))
 def warn(rule, msg): res.append(("⚠", rule, msg))
 def err(rule, msg): res.append(("✖", rule, msg))
 def info(rule, msg): res.append(("ℹ", rule, msg))  # not counted as error/warning (skips, coverage notes)
+
+def check_duration_total(total, source, estimated=False):
+    """L-099: caller supplies the WHOLE timeline (including end card), never voice only."""
+    status = duration_status(total)
+    label = "ƯỚC/estimate" if estimated else "measured after Chốt"
+    {"ok": ok, "warning": warn, "error": err}[status](
+        "rule-4", f"{source}: {label} {float(total):.3f}s total INCLUDING end card, pauses and transitions; "
+        "target 120–180s (warning only), strict <300s; no word quota / speed-up")
+
+
+def check_spec_duration(spec, timing=None):
+    # build-final timing.total already contains the end card; do NOT add it twice.
+    if timing is not None:
+        check_duration_total(timing["total"], "cached timeline plan", estimated=True)
+    else:
+        words = sum(len((l.get("say") or l["text"]).split()) for _, _, l in lines(spec))
+        ec = (spec.get("endcard") or {}).get("duration", 0)
+        if not ec:
+            warn("rule-4", "end card duration unspecified: estimate incomplete until its timing is supplied")
+        check_duration_total(estimated_total(words, ec, spec.get("estimated_pauses_s", 0),
+                                            spec.get("estimated_transitions_s", 0)),
+                             "natural reading + end card + planned pauses/transitions", estimated=True)
+    if spec.get("length_target") or spec.get("word_target") or spec.get("length_exception"):
+        info("rule-4", "legacy per-spec length/word targets or exceptions do not override L-099")
+
 
 VI_CHARS = re.compile(r"[ăâđêôơưáàảãạấầẩẫậắằẳẵặéèẻẽẹếềểễệíìỉĩịóòỏõọốồổỗộớờởỡợúùủũụứừửữựýỳỷỹỵ]", re.I)
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
@@ -186,9 +212,11 @@ def check_diacritics(spec, fdir, L):
 def check_prosody_file(pm, fdir):
     """L-070 on an explicit measure json (voice-only previews, e.g. final/prosody-measure-v16b.json from voice-delivery-f5.py measure):
     no spec voice_prefix to match; every flag (pause vs delivery mark, comma ≥0.15 and < sentence pause, >0.5s, break inside a phrase,
-    stress <2 dB vs sentence or neighbours, question not rising ≥0.5 st, STT <0.8, total >58s) blocks; warnings (>5 syll/s, pause off plan) only listed."""
+    stress <2 dB vs sentence or neighbours, question not rising ≥0.5 st, STT <0.8) blocks; voice-only duration cannot certify video + end card (L-099)."""
     if not os.path.exists(pm): err("L-070", f"{os.path.relpath(pm, REPO)} missing"); return
     j = json.load(open(pm)); fl = j.get("flags", []); wn = j.get("warnings", [])
+    # Historical measures stay byte-identical; retire ONLY their obsolete duration flag.
+    fl = [x for x in fl if not re.fullmatch(r"tổng giọng [\d.]+s > 58s \(dư [\d.]+s\)", x)]
     dl = glob.glob(os.path.join(fdir, "script-*-delivery.md"))
     (ok if dl else err)("L-070", "delivery plan present (" + ", ".join(sorted(os.path.basename(d) for d in dl)) + ")")
     info = f"voice {j.get('voice_prefix')} plan {j.get('plan')}: {j.get('total_s')}s total, {len(j.get('sentences', []))} sentences, {len(j.get('pauses', []))} marks measured"
@@ -929,23 +957,19 @@ def main():
         st_ = [x.get("en") for x in json.load(open(tp)).get("lines", []) if x.get("en") not in _en]
         if st_: warn("timing", f"{os.path.relpath(tp, REPO)} is stale ({len(st_)} lines not in current spec) → re-voice; audio checks skipped")
         return not st_
-    LT = spec.get("length_target") or [55, 60.5]
     if not _fresh(tpath): tpath = None
     if tpath and os.path.exists(tpath):
-        t = json.load(open(tpath)); total = t.get("total", 0)
-        LX = spec.get("length_exception")  # DL-041: Hiệp-approved info-dense exception, ≤70s, flagged as warning
-        (ok if LT[0] <= total <= LT[1] else (warn if total > LT[1] else err))("rule-4", f"planned length {total:.1f}s (target {LT[0]}–{LT[1]}s)" + (f" · exception {LX}" if LX and total > 60.5 else ""))
+        t = json.load(open(tpath))
+        check_spec_duration(spec, t)
         bt = {}
         for l in t["lines"]: bt.setdefault(l["scene"], []).append(l)
         for sid, ls in bt.items():
             span = ls[-1]["local"] + ls[-1]["dur"] - ls[0]["local"]
             if span > 8.5: warn("rule-9", f"{sid}: voice spans {span:.1f}s in one shot (max ~8s per scene)")
     else:
-        est = sum(len(l["text"].split()) for _, _, l in L) / 2.9
-        (ok if LT[0] - 3 <= est <= LT[1] + 2 else warn)("rule-4", f"no fresh timing.json; estimated {est:.0f}s from word count (target {LT[0]}–{LT[1]}s)")
+        check_spec_duration(spec)
     words = sum(len((l.get("say") or l["text"]).split()) for _, _, l in L)
-    WT = spec.get("word_target") or [140, 175]
-    (ok if WT[0] <= words <= WT[1] else warn)("rule-7", f"{words} VI words (target {WT[0]}–{WT[1]})")
+    info("rule-7", f"{words} VI words (descriptive only; L-099 has no word budget)")
     # hook in 0-3s: first line starts < 1s and the first beat is tagged hook
     first = spec["parts"][0].get("scenes", spec["parts"][0].get("sections"))[0]
     (ok if first.get("part") == "hook" else warn)("rule-7", f"first beat {first['id']} part='{first.get('part')}' (hook expected in 0–3s)")
@@ -1096,8 +1120,7 @@ def main():
         else:
             j = ffprobe(mp4); v = [s for s in j["streams"] if s["codec_type"] == "video"][0]; au = [s for s in j["streams"] if s["codec_type"] == "audio"]
             d = float(j["format"]["duration"])
-            LX = spec.get("length_exception")
-            (ok if LT[0] <= d <= LT[1] else warn)("rule-4", f"MP4 {d:.2f}s (target {LT[0]}–{LT[1]}s; L-080 length is content-driven → warn only)" + (f" · exception {LX}" if LX and d > 60.5 else ""))
+            check_duration_total(d, "MP4")
             spec_ok = v["width"] == 1080 and v["height"] == 1920 and v["r_frame_rate"] == "30/1" and v["codec_name"] == "h264" and v.get("profile") == "High" and v["pix_fmt"] == "yuv420p" and v.get("color_space") == "bt709"
             (ok if spec_ok else err)("rule-4", f"video {v['width']}×{v['height']} {v['r_frame_rate']} {v['codec_name']} {v.get('profile')} {v['pix_fmt']} {v.get('color_space')}")
             if not au: err("rule-46", "MP4 has no audio track")
@@ -1114,6 +1137,8 @@ def main():
                 f"[0:v]trim=start_frame={n}:end_frame={n+1},setpts=PTS-STARTPTS[a];[1:v]scale=1080:1920[b];[a][b]ssim=stats_file=-", "-f", "null", "-"], capture_output=True, text=True)
             m = re.findall(r"All:([\d.]+)", r.stdout + r.stderr); return float(m[0]) if m else 0.0
         reels = sorted(glob.glob(os.path.join(fdir, "*-reels.mp4"))); tiks = sorted(glob.glob(os.path.join(fdir, "*-tiktok.mp4")))
+        for rm in reels:
+            check_duration_total(float(ffprobe(rm)["format"]["duration"]), "Reels MP4")
         if os.path.exists(cpng):
             for rm in reels:
                 if _ssim(rm, 0) < 0.98: err("L-083", f"{os.path.basename(rm)} frame 0 is not cover.png (put template-A cover as first frame, ≤0.5s)"); continue
@@ -1263,7 +1288,7 @@ def main():
     nc_ = [x["id"] for i_, x in enumerate(beats_) if i_ and x["id"] not in hookset and not x.get("link") and sum(len(l["text"].split()) for l in x["lines"]) > 4 and not re.search(CONN, re.sub(r"\{[^}]*\}|[\"“”]", "", x["lines"][0]["text"]).strip().lower())]
     ((warn if "clip-01" in clip_dir else err) if nc_ else ok)("rule-58", "every non-hook beat opens with a connector/callback" + (f"; missing: {nc_}" if nc_ else ""))
     lw = [x["id"] for x in beats_ for l in x["lines"] if max(len(c.split()) for c in re.split(r"[.,?!:;]", re.sub(r"\{[^}]*\}", "", l["text"])) if c.strip()) > 12]
-    (warn if lw else ok)("rule-58", "clauses ≤ 12 words (punchy)" + (f"; long: {lw}" if lw else ""))
+    (warn if lw else ok)("rule-58", "long-clause review hint only, not a word cap; preserve meaning/evidence" + (f"; long: {lw}" if lw else ""))
     # rule-60 (DL-061, L-024): spoken Southern style + every beat interleaves action + emotion + dialogue
     WRITTEN = [r"\btức là\b", r"\bngược lại\b", r"\bbằng chứng\b", r"hệ số", r"tương quan", r"\blưu ý\b", r"\bdo đó\b", r"\bvì vậy\b", r"\btuy nhiên\b", r"\bbởi vì\b", r"\bnhằm\b", r"\bđiều này\b", r"\bhơn nữa\b", r"\bmặt khác\b", r"\bđồng thời\b", r"\bcụ thể là\b", r"\bkết quả là\b", r"\bnói gọn\b", r"phân tích gộp", r"\bcơ chế\b", r"\bnhư vậy\b"]
     INTERJ = r"(?<!\w)(trời ơi|trời|haizz|hả|ủa|thôi xong|ê|khoan|nè|nha|hà|hông|lận|á|ơ|ồ|thiệt)(?!\w)"
@@ -1276,7 +1301,7 @@ def main():
     ((warn if lax else err) if ne else ok)("rule-60", "every beat has an emotion cue (interjection in line or stage.react)" + (f"; missing: {ne}" if ne else ""))
     ni = [x["id"] for x in beats_ if not re.search(INTERJ, " ".join(l["text"] for l in x["lines"]).lower())]
     (warn if len(ni) > len(beats_) // 2 else ok)("rule-60", f"spoken interjections/particles in {len(beats_) - len(ni)}/{len(beats_)} beats (≥ half)")
-    # rule-61 (DL-062, L-029): dialogue never narrates what the visual/action shows; no filler; tight word budget
+    # rule-61 (DL-062, L-029): dialogue never narrates the visual/action; no filler. L-099 removes word caps.
     def _bg(t): w = re.findall(r"\w+", t.lower()); return {" ".join(w[i:i + 2]) for i in range(len(w) - 1)}
     nar = [(x["id"], sorted(_bg(l["text"]) & _bg(" | ".join(w for w in re.sub(r"'[^']*'|‘[^’]*’|“[^”]*”", " | ", (x.get("stage") or {}).get("action", "")).split() if not (w.isupper() and len(w) > 1))))) for x in beats_ for l in x["lines"]]
     nar = [(i, o) for i, o in nar if len(o) >= 2]
@@ -1284,9 +1309,7 @@ def main():
     FILL = [r"\bmở code\b", r"\bgõ (được )?hai dòng\b", r"\bthôi thì\b", r"\bnói chung\b", r"\bthật ra thì\b", r"\bcái việc\b", r"\bkiểu vậy\b", r"\bnhư mình đã nói\b", r"\bnhìn nè\b", r"\bnhư bạn thấy\b", r"\bđây là\b"]
     fl = [(x["id"], m.group(0)) for x in beats_ for l in x["lines"] for pat in FILL for m in [re.search(pat, l["text"].lower())] if m and not (x["id"] in hookset and "của cái việc" in l["text"].lower())]  # L-036 meme stem exempt in hook
     ((warn if lax else err) if fl else ok)("rule-61", "no filler / visual-describing phrases" + (f": {fl}" if fl else ""))
-    if spec.get("word_target"):
-        bw = [x["id"] for x in beats_ if sum(len(l["text"].split()) for l in x["lines"]) > 20]
-        (err if bw else ok)("rule-61", "every beat ≤ 20 words" + (f"; over: {bw}" if bw else ""))
+    info("rule-61", "no per-beat word cap (L-099); preserve complete meaning/evidence, vary shots instead")
     # rule-62 (DL-063, L-030): one ABT throughline, every beat states its contextual link, callbacks to prior clips, ≤2 literal nhưng/nên
     e62 = warn if lax else err
     tl = spec.get("throughline", "")

@@ -10,24 +10,30 @@ version: vX
 supersedes: archive/script-v<X-1>.md
 template: templates/script.md
 ---
+
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
 # <Clip NN vX: tiêu đề>
 
 Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt buộc cho mọi script mới (make-video §2).
 
 **Thông điệp (nói thành lời ở beat Thông điệp):** <tiêu đề mục HTB, gần nguyên văn> · **Dấu hiệu/cơ chế:** <2–3 ý nguồn> · **Cách làm:** <động tác nguồn + mục liên kết, ví dụ cụ thể giờ/chỗ/việc>
+**ƯỚC thời lượng tổng:** <đọc tự nhiên + nghỉ chủ ý + chuyển cảnh + end card = …s; target 120–180s chỉ cảnh báo; strict <300s>. Spec có thể ghi `estimated_pauses_s` / `estimated_transitions_s` cho nghỉ/chuyển cảnh thêm ngoài nhịp đọc tự nhiên; số từ không là gate.
+
 **Ký hiệu:** `|` tách phrase (một lần F5/phrase) · `{nhấn: …}` chữ stem/ruột nhấn cao, to, kéo dài · câu stem rơi giọng cuối (L-036). Giọng: <nhân vật = F5 preset, speed, semitone>.
 
-## Khung beat (~60s, ≈200 chữ × 0,30s)
+## Khung beat theo mạch ý (120–180s là mục tiêu, tổng strict <300s; L-099)
+
+Cột giây bên dưới là **ƯỚC**, thay bằng đọc tự nhiên của bản lời hiện tại, gồm end card/nghỉ/chuyển cảnh; không áp nhịp mẫu cũ. Beat có thể chia nhiều shot mà giữ nguyên câu/nguồn.
 | Beat | Giây | Vai trò | Bắt buộc |
 |---|---|---|---|
-| b01 Hook | 0–1 | stem/câu hỏi ≤ 6 chữ, chữ to frame 0 | `{nhấn:}` 1 chữ, hit SFX frame 0 |
-| b01b Hook (cut) | 1–4 | vế còn lại, cut cứng hình đối lập | ≥ 1 cut + ≥ 2 hit trong 0–3s (rule-55) |
-| b02–b06 Vấn đề | 4–26 | stem meme / tình huống ×3 + chen ngang 1–2s | mỗi stem tách stem \| ruột \| đuôi, nhấn chữ ruột (L-036) |
-| b07 Bằng chứng | 26–37 | "Nghe quen hông?" + nguồn + số thật + 2–3 dấu hiệu | đúng fact lock, nói "kết quả"/"lượt" đúng loại số |
-| b08 Thông điệp | 37–45 | tiêu đề mục HTB nói thành lời + 1 câu mức chứng cứ nhẹ (tương quan…) | nhân vật phụ phản ứng 1 câu |
-| b09 Cách làm 1 | 45–51 | động tác nguồn: hỏi/đổi → ví dụ siêu nhỏ | không mắng, ví dụ cụ thể |
-| b09c Cách làm 2 | 51–57 | mục liên kết (nếu-thì giờ/chỗ, chia nhỏ, tự đặt ngày…) + callback clip trước nếu tự nhiên | ≤ 25 chữ |
-| b10 CTA | 57–60 | lặp thông điệp 1 vế + câu hỏi + "Comment một chữ" | loop về hook, 1 CTA |
+| b01 Hook | ƯỚC mở đầu | pain/câu hỏi rõ nghĩa, chữ to frame 0 | `{nhấn:}` 1 chữ, hit SFX frame 0 |
+| b01b Hook (cut) | ƯỚC tiếp hook | vế còn lại, cut cứng hình đối lập | ≥ 1 cut + ≥ 2 hit trong 0–3s (rule-55) |
+| b02–b06 Vấn đề | ƯỚC theo lời | stem meme / tình huống ×3 + chen ngang 1–2s | mỗi stem tách stem \| ruột \| đuôi, nhấn chữ ruột (L-036) |
+| b07 Bằng chứng | ƯỚC theo lời | "Nghe quen hông?" + nguồn + số thật + 2–3 dấu hiệu | đúng fact lock, nói "kết quả"/"lượt" đúng loại số |
+| b08 Thông điệp | ƯỚC theo lời | tiêu đề mục HTB nói thành lời + 1 câu mức chứng cứ nhẹ (tương quan…) | nhân vật phụ phản ứng 1 câu |
+| b09 Cách làm 1 | ƯỚC theo lời | động tác nguồn: hỏi/đổi → ví dụ siêu nhỏ | không mắng, ví dụ cụ thể |
+| b09c Cách làm 2 | ƯỚC theo lời | mục liên kết (nếu-thì giờ/chỗ, chia nhỏ, tự đặt ngày…) + callback clip trước nếu tự nhiên | đủ ngữ cảnh, không quota từ |
+| b10 CTA | ƯỚC theo lời | lặp thông điệp 1 vế + câu hỏi + "Comment một chữ" | loop về hook, 1 CTA |
 
 ## Biến thể: Độc thoại chia sẻ (clip concept meme «bản chất», L-039)
 - **Một người nói** từ b01 tới b10 (mặc định Thầy; cột «Người nói» chỉ một tên). Không đối thoại, không nhân vật phụ chen ngang.
@@ -53,12 +59,12 @@ Chuẩn từ clip-02 v16/v17 (Hiệp duyệt cấu trúc 16/10/2026). Bắt bu�
 - Có cảm xúc (bực, thở dài) + tiểu từ Nam Bộ (*ta, hả, hà*). Hình frame 0 cho thấy nỗi đau, không chữ tiêu đề.
 - Sau hook là **diễn giải**: nguyên nhân (người xem nhận ra mình) → bằng chứng (motion graphics, không bịa số) → thông điệp HTB nói thành lời → 2 ví dụ đời thường → callback → 1 CTA (loop về hook).
 - Stem meme («bản chất»…) chỉ dùng khi tự nhiên với câu hỏi; nếu làm chậm vào nỗi đau thì bỏ.
-- Ghi 2 hook câu hỏi dự phòng. Mục tiêu ~50–60s, mỗi beat ≤ 20 chữ (≤ 8s/shot), xen 1–3 từ tiếng Anh quen (task, deadline).
+- Ghi 2 hook câu hỏi dự phòng. Mục tiêu 120–180s không phải minimum; tổng gồm end card/nghỉ/chuyển cảnh strict <300s; không quota từ/beat, shot ≤8s không giới hạn câu; xen 1–3 từ tiếng Anh quen (task, deadline).
 
 ## Nói liền mạch, không chặt vụn (L-044)
 - Mỗi beat là 1–2 câu nói tự nhiên, tách `|` thành **2–4 phrase** (tối đa 5), mỗi phrase ≥ 3 chữ; không chặt thành chuỗi mảnh 2–3 chữ.
 - Beat sau mở bằng từ nối với beat trước (Vì…, Mà khoa học cũng thấy…, Còn…, Vậy thì…, Lấy … làm thử nha, … cũng vậy, Giống clip trước…, Thấy chưa…).
-- Beat dài > ~25 chữ (> 8s) thì cắt 2 shot giữa câu, không cắt câu.
+- Beat cần dài để rõ nghĩa/đủ nguồn thì chia nhiều shot (≤8s/shot), không cắt câu hay tăng tốc để nhét.
 - check-rules `L-044` cảnh báo khi bảng script vi phạm.
 
 ## Bằng chứng cụ thể, ít tiểu từ, ví dụ ngôi «mình» (L-045)

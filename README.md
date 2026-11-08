@@ -11,7 +11,7 @@ tags: [overview]
 # oneup-studio: hệ thống nội dung @hi.oneup
 Agent: đọc `AGENTS.md` trước. Bản đồ file: `INDEX.md`.
 
-Kênh TikTok https://www.tiktok.com/@hi.oneup: video productivity/motivation 55–60s, nội dung chuyển thể từ HowToLiveBetter (CC BY 4.0), dùng brand OneUp.
+Kênh TikTok https://www.tiktok.com/@hi.oneup: video productivity/motivation mục tiêu 120–180s, tổng strict <300s gồm end card/nghỉ/chuyển cảnh (L-099), nội dung chuyển thể từ HowToLiveBetter (CC BY 4.0), dùng brand OneUp.
 
 Nguồn chuẩn về cấu trúc: **`docs/conventions/storage.md`** (luật 65, 66). Đường dẫn trong code: `pipeline/paths.py`. Kiểm: `pipeline/scripts/check-assets.py`. File này chỉ tóm tắt.
 

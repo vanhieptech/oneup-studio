@@ -14,7 +14,7 @@ updated: 2026-10-20
 
 - Vai trò: biến một tài liệu nguồn đã chốt thành hội thoại podcast 2 người (Person1 hỏi/dẫn, Person2 giải thích) bằng khung Podcastfy, phục vụ thử nghiệm định dạng audio/hội thoại dài cho hệ nội dung OneUp. Sản phẩm chính của agent này là **transcript đã đối chiếu nguồn**; audio chỉ là bước sau khi transcript được duyệt.
 - Không làm gì:
-  - Không thay pipeline clip ngắn 45–60 giây chính của @hi.oneup (comic/motion, 1 mạch nói chính) — Podcastfy tối ưu podcast 2–30+ phút, không có storyboard/video/phụ đề đồng bộ.
+  - Không thay pipeline clip chính mục tiêu 120–180 giây, tổng strict <300s gồm end card/nghỉ/chuyển cảnh (L-099) của @hi.oneup (comic/motion, 1 mạch nói chính) — Podcastfy tối ưu podcast 2–30+ phút, không có storyboard/video/phụ đề đồng bộ.
   - Chưa chốt script/transcript thì chưa làm giọng, chưa render, chưa chèn nhạc (rule kênh hiện tại: không chèn nhạc trong file, Hiệp tự thêm nhạc TikTok khi đăng).
   - Không bịa fact, số liệu hay nguồn ngoài tài liệu đầu vào; tài liệu thiếu dữ kiện nào thì bỏ dữ kiện đó.
   - Không tự đăng bài, không tự gọi API trả phí hay cài/chạy code khi Hiệp chưa giao việc cụ thể.

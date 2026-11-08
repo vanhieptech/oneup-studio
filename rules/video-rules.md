@@ -9,6 +9,8 @@ updated: 2026-10-13
 version: 3.21
 tags: [rules, source-of-truth]
 ---
+
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
 # @hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
@@ -18,12 +20,12 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 1. **Ngôn ngữ:** giọng nói tiếng Việt. Caption tiếng Anh highlight từng từ.
 2. **Giọng (DL-035):** cả hai nhân vật dùng **giọng AI F5-TTS** theo luật 46: nhân vật chibi **Hiệp** = "F5 · Thái Sơn" (nam, miền Nam), **Omi** = "F5 · Mỹ Duyên" (nữ, miền Nam). Giọng mẫu (reference) là câu tổng hợp bằng preset VieNeu, không clone giọng thật của ai (kể cả Hiệp). Hiệp vẫn có thể tự thu giọng thật cho một clip (thì clip đó không dùng giọng AI cho Hiệp); khi đó giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s.
 3. **Lên hình:** series này **chỉ dùng comic + motion graphics**, không quay mặt/cảnh thật (DL-027). Hiệp lên hình bằng nhân vật chibi (luật 43).
-4. **Độ dài:** mục tiêu 55–60s; dài hơn 60s được phép khi nội dung cần (DL-067, check-rules chỉ cảnh báo), không ngắn hơn 55s; 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
+4. **Độ dài (L-099):** tổng strict <300s gồm end card, khoảng nghỉ và chuyển cảnh; 120–180s là mục tiêu/cảnh báo, không hard minimum. Trước Chốt chỉ ƯỚC theo đọc tự nhiên; đo thật sau Chốt. Không quota từ hay tăng tốc để nhét. 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
 5. **Phong cách (xoay vòng trong khuôn comic):** beat kể chuyện comic (Remotion, luật 42) · beat giải thích motion graphics (HyperFrames) · màn hình app OneUp dựng lại bằng vector/mockup trong motion beat (từ tuần 3). Không talking head, không b-roll tự quay trong series này.
 6. **Tỉ lệ hình:** 100% hình dựng (comic + motion graphics) để đồng nhất. **Không** yêu cầu cảnh tự quay, không trộn cảnh quay thật (DL-027). Cảnh quay thật để dành cho giai đoạn sau hoặc series khác (sẽ có bộ luật riêng).
 
 ## B. Script & nội dung
-7. **Cấu trúc:** mặc định là mạch kể chuyện của luật 41. Khi không có chuyện thật phù hợp thì dùng dạng giải thích: Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay. Dạng nào cũng có câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều". Script khoảng 150–170 từ tiếng Việt (cho 55–60s, luật 4).
+7. **Cấu trúc:** mặc định là mạch kể chuyện của luật 41. Khi không có chuyện thật phù hợp thì dùng dạng giải thích: Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay. Dạng nào cũng có câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều". Không ngân sách từ cứng; giữ lời rõ, dẫn chứng đủ, theo luật 4/L-099.
 8. **CTA:** câu hỏi kéo comment. Từ tuần 3 nhắc OneUp theo luật 11.
 9. **Nhịp đổi hình:** theo nội dung, mỗi cảnh tối đa 8s. Không cắt đều tăm tắp.
 10. **Chủ đề:** không giới hạn (bỏ các mục chỉ áp dụng cho luật / thủ tục Trung Quốc). Nguồn: HowToLiveBetter.
@@ -204,8 +206,8 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Mỗi beat (trừ cảnh hook) mở bằng từ nối hoặc gọi lại beat trước: thế là / rồi / nhưng / hóa ra / tức là / bằng chứng / vì… nên / vậy / nếu / còn / ngược lại / phần mình… Người xem phải thấy được quan hệ nhân quả giữa các câu.
     - Cấm cụm từ mơ hồ, vô nghĩa: "X thắng" (điện thoại thắng), "điều gì đó", "mọi thứ", "nhiều thứ", "kiểu như", "một cảm giác" (phải gọi tên cảm giác), "rất là"… Thay bằng hình ảnh cụ thể (tay chộp TikTok, phần thưởng tận cuối tháng).
     - Chọn từ bằng từ điển: tra `resources/vn-dict/Viet74K.txt` + kho từ sắc `resources/vn-dict/thesaurus.md` qua `pipeline/scripts/vn-words.py --spec`. Ưu tiên động từ mạnh, từ có hình ảnh.
-    - Câu gọn: mỗi vế ≤ 12 chữ, mỗi câu một ý, chữ nhấn (`hl`) rơi vào từ mạnh nhất.
-    - check-rules: `rule-58` (✖ từ mơ hồ, ✖ thiếu từ nối, ⚠ vế > 12 chữ).
+    - Câu rõ, đủ nghĩa, mỗi câu một ý; không cắt vế theo quota từ; chữ nhấn (`hl`) rơi vào từ mạnh nhất.
+    - check-rules: `rule-58` (✖ từ mơ hồ, ✖ thiếu từ nối, ⚠ vế dài chỉ gợi ý đọc lại, không ép cắt theo số từ).
 
 60. **Văn nói + mỗi cảnh xen hành động, cảm xúc, thoại (DL-061, L-024):**
     - Viết như đang kể cho bạn nghe bằng giọng miền Nam: xưng mình/bạn, câu ngắn, tiểu từ (nè, nha, hà, hông, lận), trêu nhẹ, chêm tiếng Anh vừa phải.
@@ -216,8 +218,8 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 61. **Lời thoại không kể lại cái hình đã cho thấy, không độn chữ (DL-062, L-029):**
     - Hành động (mở code, gõ phím, chộp điện thoại, đồng hồ nhảy, chữ rơi) nằm ở cột hành động/hình, không nói lại bằng lời. Lời chỉ giữ thứ hình không nói được: cảm xúc, câu hỏi, fact (Steel 2007, chỉ là đi chung), cách gỡ, CTA.
     - Không độn: "mở code", "gõ hai dòng", "thôi thì", "nói chung", "cái việc", "kiểu vậy", "như bạn thấy", "đây là"… Beat chỉ cần 3 chữ thì để 3 chữ (beat ≤ 4 chữ khỏi cần từ nối của luật 58).
-    - Ngân sách: mỗi beat ≤ 20 chữ; clip dạng gọn đặt `word_target` (vd 100–120) + `length_target` (vd 40–46s) trong spec.
-    - check-rules: `rule-61` (✖ lời trùng ≥ 2 cụm 2 chữ với stage.action, bỏ qua nhãn IN HOA/nằm trong nháy; ✖ cụm độn; ✖ beat > 20 chữ khi có word_target). Timing/giọng của bản kịch bản cũ bị coi là lỗi thời và bỏ qua.
+    - L-099: không quota từ mỗi beat/toàn bài, không ép đoạn trước phương pháp. Beat dài dùng nhiều shot, không chặt câu hay bỏ nguồn để ép thời gian.
+    - check-rules: `rule-61` giữ kiểm trùng lời↔stage.action và cụm độn; bỏ hard-cap từ/beat. `word_target`, `length_target`, `length_exception` cũ không override L-099; timing cũ không khớp lời bị bỏ qua.
 
 62. **Một mạch ABT xuyên suốt, nối theo ngữ cảnh, callback clip trước (DL-063, L-030):**
     - Viết `throughline` trước (1 câu "… VÀ … NHƯNG … VÌ VẬY …") + `hook_question` (hỏi ở hook, trả lời ở cuối) trong spec. Clip 5–7 nhịp; cảnh nào không phục vụ throughline thì cắt.

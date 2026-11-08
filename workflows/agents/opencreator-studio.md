@@ -9,6 +9,8 @@ updated: 2026-10-19
 tags: [workflow, agent, opencreator, script, hi-oneup]
 ---
 
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
+
 # Workflow — OpenCreator Studio
 
 ## 1. Vai trò và không làm gì
@@ -31,7 +33,7 @@ tags: [workflow, agent, opencreator, script, hi-oneup]
 
 ## 4. Các bước làm
 1. Kiểm đầu vào: thiếu fact lock, claim bị chặn, hoặc hook không nguồn → trả lại agent trước, không viết tiếp.
-2. Chốt khung trước khi viết lời: thông điệp HTB nói thành lời, 1 hành động làm được hôm nay, ngân sách từ ghi rõ trong file (xung đột X-01: luật 7 150–170 vs L-054 ~220–250 vs template ~200 — ghi dải đang dùng, không tự cắt ý để ép số), ~50–60s, mỗi beat ≤8s.
+2. Chốt khung trước khi viết lời: thông điệp HTB nói thành lời, 1 hành động làm được hôm nay, không quota từ cứng; tổng strict <300s gồm end card/nghỉ/chuyển cảnh, mục tiêu 120–180s chỉ cảnh báo (L-099). Ghi ƯỚC theo đọc tự nhiên trước Chốt, đo thật sau Chốt; shot ≤8s không phải giới hạn độ dài câu/beat.
 3. Dựng beat theo `templates/script.md`: hook pain "bạn" + đúng 1 câu hỏi bám pain (cùng mốc, cùng phép thử — L-057/L-058) → nguyên nhân → bằng chứng (ai · làm gì · thấy gì, đúng mức nguồn — L-045) → thông điệp → cách làm + ví dụ đời thường cụ thể → callback → đúng 1 CTA đo được. Kèm 2 hook dự phòng.
 4. Viết lời nói liền mạch: mỗi ý/fact/ví dụ đúng 1 beat (P-01/L-054), 2–4 phrase/beat tách `|`, phrase ≥3 chữ (L-044/L-051), mỗi câu đủ chủ thể + việc + kết quả (P-02), chuỗi việc → tạo ra → hệ quả có nguồn (P-03/L-056), không từ chung chung/hiếm (P-04), không chê năng lực người học (P-07/L-053).
 5. Gắn `{nhấn:}` 1–2/beat chỉ ở từ gánh ý; caption EN chia sẵn ≤8 từ/chunk theo thứ tự phrase (P-09); cột Hành động/Cảm xúc cho từng beat; bảng hiệu ứng phủ hết beat (L-019) chỉ ở mức đề xuất chữ — chọn effect chính thuộc khâu motion/FLUX, không tự chốt hình.
@@ -39,7 +41,7 @@ tags: [workflow, agent, opencreator, script, hi-oneup]
 7. Nếu dùng công cụ OpenCreator thật (chỉ khi Hiệp đã duyệt ở cổng riêng): clone sandbox ngoài repo `/workspace/opencreator-sandbox/`, ghim tag v3.2.8, Node 22 + pnpm 9.15.0 cô lập, đọc tĩnh script/lockfile trước, không key thật/credit cho tới khi Hiệp duyệt provider + hạn mức. Output của tool vẫn phải qua bước 6 và Rule Reviewer như bản viết tay.
 
 ## 5. Đầu ra bàn giao cho ai
-- **Cho Rule Reviewer** (không trình thẳng Hiệp): file script nháp đúng vị trí repo (`content/clips/clip-NN-<slug>/` theo `docs/conventions/storage.md`), gồm bảng beat (Beat | Giây | Người nói | Lời thoại | Hình/caption EN), bảng `claim → source`, audit lặp, 2 hook dự phòng, ghi chú ngân sách từ + xung đột mở.
+- **Cho Rule Reviewer** (không trình thẳng Hiệp): file script nháp đúng vị trí repo (`content/clips/clip-NN-<slug>/` theo `docs/conventions/storage.md`), gồm bảng beat (Beat | Giây | Người nói | Lời thoại | Hình/caption EN), bảng `claim → source`, audit lặp, 2 hook dự phòng, số từ tham khảo + ƯỚC thời lượng tổng theo L-099 + xung đột mở.
 - Rule Reviewer chấm rubric 100 điểm; trả lại thì sửa đúng dòng bị trừ, không viết lại từ đầu, rồi giao chấm lại.
 
 ## 6. Tiêu chí đạt / lỗi cứng trả lại

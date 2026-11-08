@@ -8,6 +8,8 @@ status: active
 updated: 2026-10-12
 tags: [rules, source-of-truth]
 ---
+
+**L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
 # @hi.oneup: Bộ luật sản xuất video (v2, 12/10/2026)
 
 Kênh: https://www.tiktok.com/@hi.oneup · Repo: `oneup-studio` (đường dẫn trong file là đường dẫn tương đối tính từ gốc repo)
@@ -17,12 +19,12 @@ Bản này thay thế toàn bộ v1. Khi có mâu thuẫn, bản này là chuẩ
 1. **Ngôn ngữ:** giọng nói tiếng Việt. Caption tiếng Anh highlight từng từ.
 2. **Giọng:** giọng thật của Hiệp, thu bằng iPhone. Không dùng giọng AI. Giữ hơi thở tự nhiên, chỉ cắt khoảng lặng trên 0,6s.
 3. **Lên hình:** có clip lộ mặt, có clip không lộ mặt.
-4. **Độ dài:** 55–60s, 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
+4. **Độ dài (L-099):** tổng strict <300s gồm end card, khoảng nghỉ và chuyển cảnh; 120–180s là mục tiêu/cảnh báo, không hard minimum. Trước Chốt chỉ ƯỚC theo đọc tự nhiên; đo thật sau Chốt. Không quota từ hay tăng tốc để nhét. 9:16, 1080×1920, 30fps, H.264 High yuv420p, màu bt709, âm thanh −14 LUFS.
 5. **Phong cách (xoay vòng):** talking head · chữ trên b-roll tự quay · quay màn hình app OneUp kèm lồng tiếng · POV bàn làm việc / tay.
 6. **Tỉ lệ hình:** tự quay ≥50%, stock ≤30%, phần còn lại là minh hoạ (diagram, khái niệm động, số liệu, trước/sau).
 
 ## B. Script & nội dung
-7. **Cấu trúc mặc định:** Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay → câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều" hoặc kể chuyện cá nhân để tránh lặp. Script khoảng 150–170 từ tiếng Việt.
+7. **Cấu trúc mặc định:** Hook 0–3s → Vấn đề → Giải thích kèm minh hoạ (3–4 beat) → Bằng chứng / trước-sau → Việc làm ngay → câu cuối nối lại hook để clip lặp tự nhiên. Thỉnh thoảng xen dạng "3 điều" hoặc kể chuyện cá nhân để tránh lặp. Không ngân sách từ cứng; giữ lời rõ, dẫn chứng đủ, theo luật 4/L-099.
 8. **CTA:** câu hỏi kéo comment. Từ tuần 3 nhắc OneUp theo luật 11.
 9. **Nhịp đổi hình:** theo nội dung, mỗi cảnh tối đa 8s. Không cắt đều tăm tắp.
 10. **Chủ đề:** không giới hạn (bỏ các mục chỉ áp dụng cho luật / thủ tục Trung Quốc). Nguồn: HowToLiveBetter.
