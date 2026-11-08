@@ -58,12 +58,13 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 | Render layer (mov/webm/mp4) | `media/channels/vanhiep-tech/` (gitignore + MANIFEST) |
 | A-roll, VO, CapCut draft | **chỉ local Mac** — không lên git/box |
 
-## Brand + design
+## Brand + design (generate)
 - **Nguồn màu duy nhất:** `brand/brand-tokens.json` + `brand/tokens.css` (`--vht-*`)
-- **Frame / density:** `brand/frame.md` — UI thật / token / flow, depth bg+mid+fg, type video-scale, zones overlay
-- **Luôn** dùng token đã định nghĩa — **cấm** bịa hex ngoài file token
-- Cutaway: full-frame `var(--vht-bg)` + atmosphere. Overlay: transparent canvas + surface brand trong safe zone
-- **Cấm** hồng / magenta / fuchsia; left-stripe-only L3; empty void; equal text-card grids
+- **Frame / gate:** `brand/frame.md` + bảng **Generate gate** trong `skills/make-layer/SKILL.md`
+- Cutaway: full-frame `var(--vht-bg)` + atmosphere → `.mp4`
+- Overlay: canvas **transparent**, **cấm glass/board plate** zone; chỉ piece fill → ProRes `.mov` (`yuva*`)
+- Preview cho người xem: composite overlay lên fake A-roll → `*-preview.mp4` (CapCut vẫn dùng `.mov`)
+- **Cấm** hồng / magenta / fuchsia; left-stripe-only L3; equal text-card grids; bán PNG/MP4 flatten làm overlay
 - Safe-zone 1080×1920 · Font Be Vietnam Pro · Không logo / chibi / cam OneUp
 
 ## Cấm
