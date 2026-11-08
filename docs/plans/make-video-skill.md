@@ -15,6 +15,16 @@ description: >-
 ---
 # Make video (one workflow, rule-48)
 
+## Duration and approval override — 2026-11-08
+This override applies to active rewrites and new clips; retain historical archives unchanged. Target 2–3 minutes (120–180 seconds), NOT a mandatory minimum. The HARD limit is total duration strictly below 300 seconds, including endcard, pauses and transitions; exactly 300 seconds fails.
+
+This supersedes older 45–60s/55–60s limits, total-word hard caps (including 142–175 words), per-beat word budgets and approximately 50-word quotas before the method. Preserve natural pacing and enough context, explicit subjects/referents, connected reasoning, source/comparison/finding/limits. Do not add filler or repeat ideas to fill time, truncate evidence, or accelerate speech to fit. Keep one central takeaway and all source/meaning/craft requirements, including W-16's sourced cause; extra time does not authorize extra unsupported claims.
+
+Before wording approval (Chốt), timing is ESTIMATED from natural speech only. Human read-aloud/listen-once evidence remains NOT TESTED unless genuinely performed on the exact wording. Do not generate images, TTS, render previews/video or publish before Chốt. In particular, do NOT run the legacy `build-final.py --stage plans` recipe below before Chốt: it can invoke voice. At wording review deliver the script and text-only scene/motion plans, not generated stills/contact sheets/covers; actual-image checks are a separate post-Chốt production gate. Any older instructions below requiring pre-Chốt images/cover/TTS are overridden. After Chốt, measure actual finished total duration and enforce <300 seconds including endcard; 120–180 seconds remains a target, not a hard minimum.
+
+Old 55–60s TTS runtime estimates below are historical examples only, not a runtime promise for a 2–3-minute clip. Legacy checker/template limits must be reconciled through the code/storage owner; do not call an obsolete-length failure a waiver or claim the checker has been updated without evidence. All unrelated rules below remain in force.
+
+
 Repo: `oneup-studio` (box clone `/workspace/oneup-studio`, Mac `/Users/macbook/me/projects/oneup-studio`).
 Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
 
@@ -35,7 +45,7 @@ Ask only what blocks a decision (rule: ask before deciding). Never invent a pers
 5. `logs/effects-log.md` (avoid repeating signature effects back-to-back).
 
 ## 2. Script draft → `final/spec.json` (the ONE source of truth)
-Write the script directly as the spec (format below). Structure rule-41: hook 0–3s → struggle → turn → lesson/explainer (3–4 motion beats) → evidence → payoff → CTA question, last line loops to the hook. 150–170 VI words, 55–60s.
+Write the script directly as the spec (format below). Structure rule-41: hook 0–3s → struggle → turn → lesson/explainer (3–4 motion beats) → evidence → payoff → CTA question, last line loops to the hook. Target 120–180s at natural pacing, not a hard minimum; finished total strictly <300s including endcard, pauses and transitions. No hard word quota. Before Chốt use ESTIMATED timing only.
 - Story beats = comic (`engine: remotion`); explain/evidence beats = motion graphics (`engine: hyperframes`), rule-42.
 - Voice: "bạn", Southern particles on some (not all) lines, humor 4/5 aimed at habits, 1–3 English words.
 - Every line: `speaker`, `emotion`, `text` (bubble, `**bold**` = emphasis), `en` (caption, English only), `hl` (indexes of highlighted EN words), optional `say` (phonetic spelling for TTS, e.g. TOEIC → "tô ích", numbers as read), optional `take`.
@@ -67,7 +77,7 @@ Run `skills/script-polish` (humanizer + voice profile) on `text`/`en`. Fact lock
 python3 pipeline/scripts/build-final.py <clip>/final/spec.json --stage plans   # TTS (cached) + timing.json + plans + explainer html
 python3 pipeline/scripts/check-rules.py <clip>/ --stt                          # must PASS (0 ✖) before gate 1
 ```
-`check-rules` covers: length 55–60s, word count, hook/CTA, scene ≤ 8s, Omi week (rule-11), theme vs theme-map, beat ids, comic vs motion engine, EN-only captions + highlight indexes, no emoji, Be Vietnam Pro only + no CDN, no music, SFX allowed + sourced, AI-tell phrases, particles / "bạn" / English mix, unconfirmed story items, voice presets (no cloning), STT of every line, post package (credit + license link + "đã chuyển thể", AI toggle + disclosure), video-engine validator; with `--final` also MP4 spec, −14 LUFS, contact sheet. A line failing STT: fix `say` or bump `take`, rebuild.
+`check-rules` covers: finished total <300s including endcard/pauses/transitions, 120–180s target warning only, no hard total-word quota, hook/CTA, scene ≤ 8s, Omi week (rule-11), theme vs theme-map, beat ids, comic vs motion engine, EN-only captions + highlight indexes, no emoji, Be Vietnam Pro only + no CDN, no music, SFX allowed + sourced, AI-tell phrases, particles / "bạn" / English mix, unconfirmed story items, voice presets (no cloning), STT of every line, post package (credit + license link + "đã chuyển thể", AI toggle + disclosure), video-engine validator; with `--final` also MP4 spec, −14 LUFS, contact sheet. A line failing STT: fix `say` or bump `take`, rebuild.
 
 ## 5. Review gate 1 (Hiệp): script
 Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
