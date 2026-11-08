@@ -3,23 +3,22 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
-<title>ov-hook — punch title zone</title>
+<title>ov-hook — punch title · no plate</title>
 <link rel="stylesheet" href="tokens.css" />
 <script src="node_modules/gsap/dist/gsap.min.js"></script>
 <style>
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-Bold.ttf);font-weight:700}
 @font-face{font-family:"BVP";src:url(fonts/BeVietnamPro-SemiBold.ttf);font-weight:600}
 *{margin:0;padding:0;box-sizing:border-box}
-html,body,#main{background:transparent}
+html,body,#main{background:transparent !important}
 #main{position:relative;width:100%;height:100%;overflow:hidden;font-family:"BVP",sans-serif}
-/* Title-safe zone: upper third, leave center for face */
-#panel{position:absolute;left:48px;right:48px;top:280px;border-radius:36px;padding:36px 40px 40px;background:color-mix(in srgb, var(--vht-bg) 88%, transparent);border:3px solid var(--vht-accent);box-shadow:0 28px 80px color-mix(in srgb, var(--vht-bg) 70%, transparent), inset 0 0 0 1px color-mix(in srgb, var(--vht-accent) 40%, transparent);backdrop-filter:blur(18px);overflow:hidden}
-#shine{position:absolute;left:-20%;top:0;width:40%;height:100%;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--vht-accent) 28%, transparent),transparent);pointer-events:none}
-#kicker{position:relative;font-size:24px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--vht-accent);margin-bottom:18px}
-#line1,#line2{position:relative;font-size:78px;font-weight:700;letter-spacing:-0.04em;line-height:1.02;color:var(--vht-title)}
-#line2{color:var(--vht-accent)}
-#bar{position:absolute;left:40px;bottom:0;height:6px;width:calc(100% - 80px);background:var(--vht-accent);transform-origin:left center;border-radius:3px 3px 0 0}
-#chip{position:absolute;right:72px;top:220px;width:92px;height:92px;border-radius:24px;background:var(--vht-accent);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px color-mix(in srgb,var(--vht-accent) 45%, transparent)}
+/* Floating title — no filled plate / no full-frame bg */
+#kicker{position:absolute;left:56px;top:300px;font-size:24px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--vht-accent);text-shadow:0 4px 18px color-mix(in srgb, var(--vht-bg) 80%, transparent)}
+#line1,#line2{position:absolute;left:56px;right:56px;font-size:84px;font-weight:700;letter-spacing:-0.04em;line-height:1.02;text-shadow:0 6px 28px color-mix(in srgb, var(--vht-bg) 85%, transparent)}
+#line1{top:350px;color:var(--vht-title)}
+#line2{top:450px;color:var(--vht-accent)}
+#bar{position:absolute;left:56px;top:560px;height:8px;width:280px;background:var(--vht-accent);transform-origin:left center;border-radius:4px;box-shadow:0 0 24px color-mix(in srgb, var(--vht-accent) 55%, transparent)}
+#chip{position:absolute;right:72px;top:300px;width:92px;height:92px;border-radius:24px;background:var(--vht-accent);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px color-mix(in srgb,var(--vht-accent) 45%, transparent)}
 #chip svg{width:48px;height:48px;color:var(--vht-on-accent)}
 </style>
 </head>
@@ -28,25 +27,20 @@ html,body,#main{background:transparent}
   <div id="chip">
     <svg viewBox="0 0 48 48" fill="none"><path d="M10 24h28M28 14l10 10-10 10" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </div>
-  <div id="panel">
-    <div id="shine" data-layout-allow-overflow></div>
-    <div id="kicker">Myth · OAuth</div>
-    <div id="line1">Login ≠</div>
-    <div id="line2">control plane</div>
-    <div id="bar"></div>
-  </div>
+  <div id="kicker">Myth · OAuth</div>
+  <div id="line1">Login ≠</div>
+  <div id="line2">control plane</div>
+  <div id="bar"></div>
 </div>
 <script>
 window.__timelines = window.__timelines || {};
 const tl = gsap.timeline({ paused: true });
 tl.fromTo("#chip", { opacity: 0, scale: 0.5, rotate: -20 }, { opacity: 1, scale: 1, rotate: 0, duration: 0.45, ease: "back.out(2)" }, 0.05);
-tl.fromTo("#panel", { opacity: 0, y: 60, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "expo.out" }, 0.12);
-tl.fromTo("#kicker", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.28);
-tl.fromTo("#line1", { opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.5, ease: "power4.out" }, 0.4);
-tl.fromTo("#line2", { opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.5, ease: "power4.out" }, 0.55);
+tl.fromTo("#kicker", { opacity: 0, y: -12 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.2);
+tl.fromTo("#line1", { opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.5, ease: "power4.out" }, 0.35);
+tl.fromTo("#line2", { opacity: 0, y: 40, clipPath: "inset(0 0 100% 0)" }, { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)", duration: 0.5, ease: "power4.out" }, 0.5);
 tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: 0.55, ease: "power3.inOut" }, 0.7);
-tl.fromTo("#shine", { x: "-40%" }, { x: "280%", duration: 1.1, ease: "power2.inOut" }, 1.0);
-tl.to("#panel", { y: -8, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 1 }, 1.4);
+tl.to("#chip", { y: -8, duration: 1.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, 1.3);
 window.__timelines["main"] = tl;
 </script>
 </body>

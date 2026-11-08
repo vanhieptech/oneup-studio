@@ -47,9 +47,9 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
 
 ## Design rules
 - **Brand colors only:** `brand-tokens.json` + `tokens.css` + `frame.md`
-- Cutaway: full solid bg + grid/glow/ghost depth. Overlay: transparent canvas + solid brand surfaces in a safe zone
+- Cutaway: full solid bg + grid/glow/ghost depth. Overlay: **transparent canvas only** — no zone-filling glass plate; piece fills OK
 - Interpret concept as **UI / tokens / flow**, not centered text cards
-- **Banned:** pink, magenta, fuchsia; invented hex; left-stripe-only L3; empty void; equal card grids
+- **Banned:** pink, magenta, fuchsia; invented hex; left-stripe-only L3; empty void; equal card grids; baking overlay previews onto opaque RGB backgrounds
 - Always motion with varied ease/direction; no chibi / OneUp cam accent
 - `talking-head-recut` = layout reference only
 

@@ -31,3 +31,9 @@ tags: [capcut, vanhiep-tech]
 
 ## Render lại
 Xem `skills/make-layer/SKILL.md` — cutaway `mp4`, overlay `mov`.
+
+## Alpha note
+- Overlay deliverable = `.mov` ProRes (`yuva*`). Outside graphic pieces, alpha=0.
+- QuickTime / many players composite alpha on **black** — that black is *viewer*, not baked bg.
+- CapCut: put `.mov` on a track above A-roll; do not import RGB PNG/`*-preview.mp4`.
+- Glass plate / full-zone board is banned (`brand/frame.md`).

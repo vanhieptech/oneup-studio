@@ -36,4 +36,6 @@ tokens: "brand/tokens.css"
 Full-frame solid `--vht-bg`. Depth: grid + radial accent glow + ghost type. Asymmetric split UX vs control plane. Story readable with sound off.
 
 ## Overlay (`ov-*`)
-Transparent canvas. Graphic lives in a **zone** (hook / lower-mid / lower-third / callout). Card/surface uses brand fills; soft depth via offset shadow in brand colors. Designed to sit on talking-head without looking like a website widget.
+Transparent canvas — **no full-frame plate, no glass board filling the zone**. Only the graphic pieces (type, badge, UI mocks) may have their own solid fill. Outside those pieces: alpha = 0.
+- Deliverable: ProRes `.mov` (`yuva*`) for CapCut — **never** ship RGB-baked PNG/MP4 as the overlay.
+- Preview stills for chat: export **RGBA PNG** (true alpha). Do not composite onto One Dark / checkerboard into the file the user opens as “the layer”.
