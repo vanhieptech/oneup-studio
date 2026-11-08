@@ -35,5 +35,6 @@ Xem `skills/make-layer/SKILL.md` — cutaway `mp4`, overlay `mov`.
 ## Alpha note
 - Overlay deliverable = `.mov` ProRes (`yuva*`). Outside graphic pieces, alpha=0.
 - QuickTime / many players composite alpha on **black** — that black is *viewer*, not baked bg.
-- CapCut: put `.mov` on a track above A-roll; do not import RGB PNG/`*-preview.mp4`.
+- CapCut: put `.mov` on a track above A-roll.
+- **Never** send plate-composited MP4 (fake A-roll / One Dark bake) as the overlay — MP4 has no alpha so it always “still has background”. Human preview = WebP/APNG with alpha or the `.mov`.
 - Glass plate / full-zone board is banned (`brand/frame.md`).

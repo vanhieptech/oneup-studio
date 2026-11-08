@@ -63,7 +63,7 @@ Budget short V1: **bắt buộc** hook cảm (có thể làm trong CapCut) + **1
 - **Frame / gate:** `brand/frame.md` + bảng **Generate gate** trong `skills/make-layer/SKILL.md`
 - Cutaway: full-frame `var(--vht-bg)` + atmosphere → `.mp4`
 - Overlay: canvas **transparent**, **cấm glass/board plate** zone; chỉ piece fill → ProRes `.mov` (`yuva*`)
-- Preview cho người xem: composite overlay lên fake A-roll → `*-preview.mp4` (CapCut vẫn dùng `.mov`)
+- Preview cho người xem: file **còn alpha** (WebP/APNG/MOV) — **cấm** ghép fake A-roll ra MP4 rồi gọi là overlay
 - **Cấm** hồng / magenta / fuchsia; left-stripe-only L3; equal text-card grids; bán PNG/MP4 flatten làm overlay
 - Safe-zone 1080×1920 · Font Be Vietnam Pro · Không logo / chibi / cam OneUp
 

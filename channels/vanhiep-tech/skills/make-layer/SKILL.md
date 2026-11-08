@@ -45,7 +45,8 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
    ffprobe -v error -select_streams v:0 -show_entries stream=pix_fmt -of csv=p=0 LAYER.mov
    # must contain yuva / alpha. Corners of a mid-frame PNG must be RGBA (0,0,0,0).
    ```
-10. **Preview for human** (ov): composite `.mov` over a fake A-roll plate → `*-preview.mp4` (watchable). Do **not** hand the user a raw black-on-alpha still as “the layer”.
+10. **Preview for human** (ov): export **alpha-preserving** watch file only — animated WebP/APNG (`*-alpha.webp` / `*-alpha.png`) or the ProRes `.mov` itself.  
+    **Banned:** baking overlay onto One Dark / fake A-roll / checkerboard into an MP4 and calling that “the overlay video”. MP4 has no alpha → it will always look like it still has a background.
 11. Update `media/MANIFEST.json` after binary lands on disk.
 12. Point CapCut import path in `script.md` layer table (`ov-*.mov` only).
 
@@ -57,13 +58,13 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
 | Piece fills | UI mocks / surfaces OK | Only on badges, buttons, phone/server chrome — not a backdrop |
 | Outside pieces | painted brand void OK | **alpha = 0** |
 | Deliverable | `.mp4` | ProRes `.mov` (`yuva*`) |
-| User preview | `.mp4` as-is | composite-on-A-roll `.mp4`; CapCut still uses `.mov` |
+| User preview | `.mp4` as-is | **alpha file** (WebP/APNG/MOV) — never plate-composited MP4 |
 | Creative | real UI/flow, depth, video type scale | same + talking-head safe zones |
 
 ## Design rules
 - Brand colors only: `brand-tokens.json` + `tokens.css` + `frame.md`
 - Interpret concept as **UI / tokens / flow**, not centered text cards
-- **Banned:** pink/magenta/fuchsia; invented hex; left-stripe-only L3; empty void (cutaway); equal card grids; overlay zone glass plates; RGB-baked files sold as the overlay
+- **Banned:** pink/magenta/fuchsia; invented hex; left-stripe-only L3; empty void (cutaway); equal card grids; overlay zone glass plates; RGB/MP4-baked overlays; fake-A-roll composite sold as the layer
 - Always motion with varied ease/direction; no chibi / OneUp cam accent
 - `talking-head-recut` = layout reference only
 

@@ -44,5 +44,6 @@ Full-frame solid `--vht-bg`. Depth: grid + radial accent glow + ghost type. Asym
 3. Only **piece** fills (badge, button, phone chrome, token chip). Type may use text-shadow for legibility.
 4. Outside pieces → alpha **0**. Mid-frame corner pixels must be `(0,0,0,0)`.
 5. Deliverable for CapCut: ProRes `.mov` (`pix_fmt` contains `yuva`).
-6. Human watch preview: composite `.mov` over a fake A-roll → `*-preview.mp4`. QuickTime black ≠ baked bg.
+6. Human watch preview: **keep alpha** (animated WebP/APNG or the `.mov`).  
+   **Do not** composite onto fake A-roll / One Dark into MP4 — MP4 cannot be transparent, so that preview always “still has background”.
 7. Never ship RGB-flattened PNG/MP4 as the CapCut overlay asset.
