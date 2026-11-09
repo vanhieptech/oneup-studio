@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-kim-dung-moi-ngay-mot-ky",
+ "title": "[STUB] Kim Dung viết 15 bộ truyện mà không lên kế hoạch cho cả 15: mỗi ngày chỉ lo một kỳ ~1.000 chữ. Sách 4.7: cắt việc lớn thành phần làm xong trong một lần ngồi",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "kim-dung-va-hanh-trinh-viet-17-nam",
+  "bridge_id": "B-moiky-01",
+  "lesson": "4.7 Chia việc lớn thành việc con rồi mới ước giờ, mới bắt tay (mức B; Kruger & Evans 2004 về sai lệch kế hoạch, Steel 2007 về trì hoãn; sách ghi chưa kiểm được phần trăm nên KHÔNG nêu số). Cỡ chia: mỗi phần làm xong trong một lần ngồi. Deep Research xác nhận câu chữ trước khi viết. Chi tiết Kim Dung (đơn vị 1.000–1.200 chữ, 574 kỳ Thư kiếm ân cừu lục, không biết có bộ thứ hai) là của bài Kenh14, không phải fact của sách.",
+  "angle": "contrarian / story",
+  "pattern": "P03 + P06",
+  "differentiation": "Mọi người đang nói: Kim Dung là bậc thầy kỷ luật, 17 năm không nghỉ, kèm nguyên tắc mười nghìn giờ ([Kenh14 09/11](https://kenh14.vn/kim-dung-va-hanh-trinh-viet-17-nam-khong-nghi-tu-1000-chu-moi-ngay-cho-den-3-lan-dai-tu-kiet-tac-215261108191318875.chn)). Góc của mình: thứ giữ ông viết mỗi ngày không chỉ là ý chí mà là đơn vị việc đủ nhỏ, một kỳ báo trong một lần ngồi; chính bài báo kể ông viết bộ đầu mà chưa biết có bộ thứ hai. Sách 4.7 nói đúng điểm này. Khác clip-03 (mở bằng bẫy «làm app» không bao giờ xong, DARK) và B-30canh-01 (4.12, lỡ một ngày không về 0)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "kim-dung-moi-ngay-mot-ky.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Kim Dung viết mười lăm bộ truyện, mà chưa bao giờ lên kế hoạch cho cả mười lăm bộ.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "15 novels. No master plan.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "kim-dung-moi-ngay-mot-ky.b02",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một bài báo sáng nay kể: mỗi ngày ông chỉ lo đúng một kỳ đăng báo, chừng một ngàn chữ.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "One installment a day.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "kim-dung-moi-ngay-mot-ky.b03",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn mình thì mở file báo cáo cuối năm, nhìn chữ «Tổng kết», rồi đóng lại đi pha cà phê.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "We open the report. Then close it.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "kim-dung-moi-ngay-mot-ky.b04",
+   "duration": 8,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình hay nghĩ do thiếu kỷ luật. Nhưng nhiều khi do việc đó quá to, không vừa một lần ngồi.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Not discipline. Size.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "kim-dung-moi-ngay-mot-ky.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một mục: chia việc lớn thành việc con trước khi ước giờ và trước khi bắt tay.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Book 4.7: unpack the task.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "kim-dung-moi-ngay-mot-ky.b06",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chia ra thì mình ước giờ sát hơn, và mỗi phần nhỏ thành một việc bắt đầu được ngay.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Each piece: startable now.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "kim-dung-moi-ngay-mot-ky.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cỡ chia vừa đủ: một phần làm xong trong một lần ngồi. Như một kỳ báo.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One sitting per piece.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "kim-dung-moi-ngay-mot-ky.b08",
+   "duration": 8,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chọn một việc lớn đang dời. Cắt ra phần đầu tiên, làm xong nó trong buổi tối nay.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Today: just piece one.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "kim-dung-moi-ngay-mot-ky.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mười lăm bộ truyện bắt đầu từ một kỳ. Việc của bạn cũng vậy.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "It starts with one.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

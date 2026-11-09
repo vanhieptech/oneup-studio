@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-lam-nhieu-ma-khong-du",
+ "title": "[STUB] TikTok «Lương 31 triệu, tiết kiệm 20 triệu»: dưới comment có người làm nhiều hơn mà không dư. Trước khi tự trách, tìm khoản rò âm thầm: gia hạn tự động (5.1)",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-cafef_official-7704990703348305160",
+  "bridge_id": "B-ro-tien-01",
+  "lesson": "5.1 Tắt mọi gia hạn tự động, tới hạn tự gia hạn tay (mức C). Dùng phần hành động: rà danh sách trừ tiền tự động một lần, 10–20 phút; tiền tiết kiệm = tổng các gói không còn dùng, không có con số chung. Phần quy định (SAMR 2021) là luật Trung Quốc, chưa đối chiếu luật VN: KHÔNG nói. Ghi chú sách: gói dùng thường xuyên thì trả năm có thể rẻ hơn, giữ lại.",
+  "angle": "empathy / data",
+  "pattern": "P10 + P03",
+  "differentiation": "Mọi người đang nói: «tiết kiệm trước, tiêu sau», chia 70/20/10, mang cơm nhà ([TikTok @dilamkhon](https://www.tiktok.com/@dilamkhon/video/7703802755164425490), [TikTok @dang199x.tietkiem](https://www.tiktok.com/@dang199x.tietkiem/video/7705274513352707348)); clip CafeF khen cô gái 28 tuổi để dành 20/31 triệu ([TikTok @cafef_official](https://www.tiktok.com/@cafef_official/video/7704990703348305160), transcript thật). Góc của mình: không so lương, không chê ai tiêu nhiều; trước khi tự trách, tìm cái rò không ai thấy vì nó tự trừ mỗi tháng. Khác B-gachngang-01 (5.24 giá gạch ngang mùa sale) và B-cooloff-01 (5.23 ngủ một đêm trước khi cọc)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "lam-nhieu-ma-khong-du.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trên mạng có cô gái lương ba mươi mốt triệu, để dành được hai mươi triệu.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Earns 31M, saves 20M.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "lam-nhieu-ma-khong-du.b02",
+   "duration": 8,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dưới comment có người hỏi lại: hai vợ chồng làm nhiều hơn vậy, sao cuối tháng không dư đồng nào.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Comment: we earn more, save nothing.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "lam-nhieu-ma-khong-du.b03",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Câu đầu tiên người ta nghĩ là: chắc mình tiêu hoang. Mà chưa chắc.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Not always overspending.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "lam-nhieu-ma-khong-du.b04",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngày lương về, mở app ngân hàng: phim, nhạc, lưu trữ ảnh, một app tập mở đúng một lần.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Small auto-charges, every month.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "lam-nhieu-ma-khong-du.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy khoản này nhỏ, tự trừ, nên không ai để ý. Cộng cả năm mới thấy.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Small. Silent. Yearly.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "lam-nhieu-ma-khong-du.b06",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một mục rất ngắn: tắt mọi gia hạn tự động, tới hạn thì tự gia hạn tay.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Book 5.1: no auto-renew.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "lam-nhieu-ma-khong-du.b07",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rà danh sách trừ tiền tự động một lần thôi, mười tới hai mươi phút.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "One 15-minute check.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "lam-nhieu-ma-khong-du.b08",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Gói nào ngày nào cũng dùng thì giữ. Gói nào quên mất thì tắt.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Keep what you use.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "lam-nhieu-ma-khong-du.b09",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay mở mục đăng ký trong điện thoại, tắt đúng một cái bạn không còn dùng.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Tonight: cancel one.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  }
+ ]
+}

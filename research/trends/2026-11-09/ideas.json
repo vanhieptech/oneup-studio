@@ -1,0 +1,63 @@
+{
+ "date": "2026-11-09",
+ "ideas": [
+  {
+   "id": "kim-dung-moi-ngay-mot-ky",
+   "title": "Kim Dung viết 15 bộ truyện mà không lên kế hoạch cho cả 15: mỗi ngày chỉ lo một kỳ ~1.000 chữ. Sách 4.7: cắt việc lớn thành phần làm xong trong một lần ngồi",
+   "trend_id": "kim-dung-va-hanh-trinh-viet-17-nam",
+   "bridge_id": "B-moiky-01",
+   "lesson": "4.7 Chia việc lớn thành việc con rồi mới ước giờ, mới bắt tay (mức B; Kruger & Evans 2004 về sai lệch kế hoạch, Steel 2007 về trì hoãn; sách ghi chưa kiểm được phần trăm nên KHÔNG nêu số). Cỡ chia: mỗi phần làm xong trong một lần ngồi. Deep Research xác nhận câu chữ trước khi viết. Chi tiết Kim Dung (đơn vị 1.000–1.200 chữ, 574 kỳ Thư kiếm ân cừu lục, không biết có bộ thứ hai) là của bài Kenh14, không phải fact của sách.",
+   "angle": "contrarian / story",
+   "pattern": "P03 + P06",
+   "differentiation": "Mọi người đang nói: Kim Dung là bậc thầy kỷ luật, 17 năm không nghỉ, kèm nguyên tắc mười nghìn giờ ([Kenh14 09/11](https://kenh14.vn/kim-dung-va-hanh-trinh-viet-17-nam-khong-nghi-tu-1000-chu-moi-ngay-cho-den-3-lan-dai-tu-kiet-tac-215261108191318875.chn)). Góc của mình: thứ giữ ông viết mỗi ngày không chỉ là ý chí mà là đơn vị việc đủ nhỏ, một kỳ báo trong một lần ngồi; chính bài báo kể ông viết bộ đầu mà chưa biết có bộ thứ hai. Sách 4.7 nói đúng điểm này. Khác clip-03 (mở bằng bẫy «làm app» không bao giờ xong, DARK) và B-30canh-01 (4.12, lỡ một ngày không về 0).",
+   "theme": "light",
+   "week": 5,
+   "target": "ứng viên ô đăng #27 (LIGHT trống, trụ 5 đầu tư bản thân), cạnh B-hetnam-01; hoặc ý tưởng mới 4.7 (callback clip-03)",
+   "hook_vi": "Kim Dung viết mười lăm bộ truyện, mà chưa bao giờ lên kế hoạch cho cả mười lăm bộ. Mỗi ngày ông chỉ lo đúng một kỳ báo.",
+   "moment_vi": "Bạn mở file báo cáo cuối năm, nhìn tiêu đề «Tổng kết 2026», rồi đóng lại đi pha cà phê.",
+   "turn_vi": "Việc lớn không bắt đầu được vì nó không vừa một lần ngồi. Cắt ra tới khi phần đầu tiên làm xong trong một buổi.",
+   "hook_en": "Jin Yong wrote 15 novels without planning all 15. Each day he only owed one installment.",
+   "explainer": "HyperFrames: thẻ chữ «Kim Dung · 1.000 chữ mỗi ngày · Kenh14 09/11» ở b01 (L-084, nguồn hiện rõ). Hình: một chồng báo nhỏ dồn thành kệ sách (không vẽ chân dung người thật, không ảnh bìa sách). Ví dụ đời thường: báo cáo cuối năm, cái kho, CV. Không nêu số phần trăm từ Kruger & Evans.",
+   "beats": [
+    {"text": "Kim Dung viết mười lăm bộ truyện, mà chưa bao giờ lên kế hoạch cho cả mười lăm bộ.", "expression": "surprised", "action": "talking", "duration": 7, "caption_en": "15 novels. No master plan.", "background": "grid"},
+    {"text": "Một bài báo sáng nay kể: mỗi ngày ông chỉ lo đúng một kỳ đăng báo, chừng một ngàn chữ.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "One installment a day.", "background": "desk"},
+    {"text": "Còn mình thì mở file báo cáo cuối năm, nhìn chữ «Tổng kết», rồi đóng lại đi pha cà phê.", "expression": "sad", "action": "talking", "duration": 8, "caption_en": "We open the report. Then close it.", "background": "desk"},
+    {"text": "Mình hay nghĩ do thiếu kỷ luật. Nhưng nhiều khi do việc đó quá to, không vừa một lần ngồi.", "expression": "confused", "action": "talking", "duration": 8, "caption_en": "Not discipline. Size.", "background": "room"},
+    {"text": "Sách có một mục: chia việc lớn thành việc con trước khi ước giờ và trước khi bắt tay.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "Book 4.7: unpack the task.", "background": "grid"},
+    {"text": "Chia ra thì mình ước giờ sát hơn, và mỗi phần nhỏ thành một việc bắt đầu được ngay.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Each piece: startable now.", "background": "grid"},
+    {"text": "Cỡ chia vừa đủ: một phần làm xong trong một lần ngồi. Như một kỳ báo.", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "One sitting per piece.", "background": "desk"},
+    {"text": "Hôm nay chọn một việc lớn đang dời. Cắt ra phần đầu tiên, làm xong nó trong buổi tối nay.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Today: just piece one.", "background": "room"},
+    {"text": "Mười lăm bộ truyện bắt đầu từ một kỳ. Việc của bạn cũng vậy.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "It starts with one.", "background": "grid"}
+   ]
+  },
+  {
+   "id": "lam-nhieu-ma-khong-du",
+   "title": "TikTok «Lương 31 triệu, tiết kiệm 20 triệu»: dưới comment có người làm nhiều hơn mà không dư. Trước khi tự trách, tìm khoản rò âm thầm: gia hạn tự động (5.1)",
+   "trend_id": "tt-cafef_official-7704990703348305160",
+   "bridge_id": "B-ro-tien-01",
+   "lesson": "5.1 Tắt mọi gia hạn tự động, tới hạn tự gia hạn tay (mức C). Dùng phần hành động: rà danh sách trừ tiền tự động một lần, 10–20 phút; tiền tiết kiệm = tổng các gói không còn dùng, không có con số chung. Phần quy định (SAMR 2021) là luật Trung Quốc, chưa đối chiếu luật VN: KHÔNG nói. Ghi chú sách: gói dùng thường xuyên thì trả năm có thể rẻ hơn, giữ lại.",
+   "angle": "empathy / data",
+   "pattern": "P10 + P03",
+   "differentiation": "Mọi người đang nói: «tiết kiệm trước, tiêu sau», chia 70/20/10, mang cơm nhà ([TikTok @dilamkhon](https://www.tiktok.com/@dilamkhon/video/7703802755164425490), [TikTok @dang199x.tietkiem](https://www.tiktok.com/@dang199x.tietkiem/video/7705274513352707348)); clip CafeF khen cô gái 28 tuổi để dành 20/31 triệu ([TikTok @cafef_official](https://www.tiktok.com/@cafef_official/video/7704990703348305160), transcript thật). Góc của mình: không so lương, không chê ai tiêu nhiều; trước khi tự trách, tìm cái rò không ai thấy vì nó tự trừ mỗi tháng. Khác B-gachngang-01 (5.24 giá gạch ngang mùa sale) và B-cooloff-01 (5.23 ngủ một đêm trước khi cọc).",
+   "theme": "dark",
+   "week": 5,
+   "target": "đăng #28 (5.1, DARK) — bridge đầu tiên cho ô này",
+   "hook_vi": "Trên mạng có cô gái lương ba mươi mốt triệu, để dành được hai mươi triệu. Còn bạn làm cũng không ít, mà cuối tháng không dư đồng nào?",
+   "moment_vi": "Ngày lương về, tối đó mở app ngân hàng thấy một loạt dòng trừ nhỏ: phim, nhạc, lưu trữ ảnh, một app tập thể dục mở đúng một lần.",
+   "turn_vi": "Không phải lúc nào cũng do bạn tiêu hoang. Có những khoản tự trừ mỗi tháng mà bạn quên mất là mình còn đăng ký.",
+   "hook_en": "She saves 20 of her 31 million a month. You earn decent money and nothing's left?",
+   "explainer": "HyperFrames: thẻ chữ «Lương 31tr tiết kiệm 20tr · TikTok CafeF 06/11» ở b01 (L-084). Hình: sao kê điện thoại với các dòng trừ nhỏ sáng lên lần lượt (tên gói chung chung, không logo thương hiệu). Ví dụ đời thường: phim, nhạc, lưu trữ ảnh, app tập. Không nêu số lương người xem, không chê ai, không nói luật.",
+   "beats": [
+    {"text": "Trên mạng có cô gái lương ba mươi mốt triệu, để dành được hai mươi triệu.", "expression": "surprised", "action": "talking", "duration": 7, "caption_en": "Earns 31M, saves 20M.", "background": "grid"},
+    {"text": "Dưới comment có người hỏi lại: hai vợ chồng làm nhiều hơn vậy, sao cuối tháng không dư đồng nào.", "expression": "sad", "action": "talking", "duration": 8, "caption_en": "Comment: we earn more, save nothing.", "background": "room"},
+    {"text": "Câu đầu tiên người ta nghĩ là: chắc mình tiêu hoang. Mà chưa chắc.", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "Not always overspending.", "background": "room"},
+    {"text": "Ngày lương về, mở app ngân hàng: phim, nhạc, lưu trữ ảnh, một app tập mở đúng một lần.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "Small auto-charges, every month.", "background": "desk"},
+    {"text": "Mấy khoản này nhỏ, tự trừ, nên không ai để ý. Cộng cả năm mới thấy.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Small. Silent. Yearly.", "background": "grid"},
+    {"text": "Sách có một mục rất ngắn: tắt mọi gia hạn tự động, tới hạn thì tự gia hạn tay.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "Book 5.1: no auto-renew.", "background": "grid"},
+    {"text": "Rà danh sách trừ tiền tự động một lần thôi, mười tới hai mươi phút.", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "One 15-minute check.", "background": "desk"},
+    {"text": "Gói nào ngày nào cũng dùng thì giữ. Gói nào quên mất thì tắt.", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "Keep what you use.", "background": "room"},
+    {"text": "Tối nay mở mục đăng ký trong điện thoại, tắt đúng một cái bạn không còn dùng.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Tonight: cancel one.", "background": "desk"}
+   ]
+  }
+ ]
+}

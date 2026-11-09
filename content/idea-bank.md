@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-08
+updated: 2026-11-09
 tags: [ideas]
 ---
 # Idea bank
@@ -90,3 +90,5 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Định về ngủ liền, 11 giờ đêm vẫn cầm điện thoại → thời gian riêng có giờ kết thúc (B-bedtime-02) | 3.9 (+3.2) | trụ 3 năng lượng | "Tan làm, trong đầu chỉ có một câu: về ngủ liền một giấc cho khỏe. Rồi mười một giờ đêm bạn vẫn đang cầm điện thoại." | DARK | stub 2026-11-08, chờ duyệt (đăng #14 hook thay thế; `research/trends/2026-11-08/plans/plan-1-dinh-ngu-som-thanh-11-gio-dem.json`) |
 | Còn 53 ngày hết năm → một việc có hạn trước 31/12 (B-hetnam-01) | 4.8 (+4.1) | trụ 1 | "Còn năm mươi ba ngày nữa là hết năm hai không hai sáu. Bạn chưa cần kế hoạch năm mới, chỉ cần một việc xong trước ba mốt tháng mười hai." | LIGHT | stub 2026-11-08, chờ duyệt (ô #27; `research/trends/2026-11-08/plans/plan-2-con-53-ngay-mot-viec-xong.json`) |
 | Tối Chủ nhật sợ thứ Hai → viết một việc đầu tiên rồi gấp sổ (B-chunhatoi-01) | 3.14 | trụ 4 tâm trí | "Tối Chủ nhật nào cũng hát «mai là hết Chủ nhật»? Thử viết ra đúng một việc đầu tiên của sáng thứ Hai, rồi gấp sổ lại." | LIGHT | ý tưởng (2026-11-08); đăng #24 hook thay thế |
+| Kim Dung mỗi ngày một kỳ báo: cắt việc lớn tới khi phần đầu vừa một lần ngồi (B-moiky-01) | 4.7 (callback clip-03) | trụ 1 / ô #27 | "Kim Dung viết mười lăm bộ truyện, mà chưa bao giờ lên kế hoạch cho cả mười lăm bộ. Mỗi ngày ông chỉ lo đúng một kỳ báo." | LIGHT | stub 2026-11-09, chờ duyệt (caution người thật đã mất; Deep Research kiểm 4.7) |
+| Làm không ít mà cuối tháng không dư: tìm khoản tự trừ đã quên trước khi tự trách (B-ro-tien-01) | 5.1 | tiền / đăng #28 | "Trên mạng có cô gái lương ba mươi mốt triệu, để dành được hai mươi triệu. Còn bạn làm cũng không ít, mà cuối tháng không dư đồng nào?" | DARK | stub 2026-11-09, chờ duyệt (5.1 mức C, bỏ phần luật Trung Quốc) |
