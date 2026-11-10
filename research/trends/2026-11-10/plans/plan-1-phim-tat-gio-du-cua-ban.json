@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-phim-tat-gio-du-cua-ban",
+ "title": "[STUB] Mạng cãi nhau «làm nhanh thì bị giao thêm việc» (performance punishment). Sách 4.17: học phím tắt cho đúng thao tác lặp ≥10 lần/ngày; rồi tự quyết phần giờ dư đi đâu",
+ "meta": {
+  "week": 3,
+  "status": "stub-needs-approval",
+  "trend_id": "automating-work-tasks-leads-to-performance-punishment-trap",
+  "bridge_id": "B-phimtat-01",
+  "lesson": "4.17 Dành một lần học phím tắt và tự động hoá cho phần mềm hay dùng (mức B; Lane, Napier, Peres & Sándor 2005: 251 người dùng Word có kinh nghiệm phần lớn vẫn bấm icon; thí nghiệm so sánh cho thấy phím tắt nhanh nhất trong menu/icon/phím tắt; sách ghi thí nghiệm hiệu suất chỉ 6 người, không có số giây tiết kiệm → KHÔNG nêu «1 tiếng/tuần» như fact). Ghi chú sách: chỉ học thao tác dùng ≥10 lần/ngày. Câu «tự quyết giờ dư đi đâu» là đề xuất biên tập, không phải fact sách. Deep Research xác nhận câu chữ trước khi viết.",
+  "angle": "contrarian / empathy",
+  "pattern": "P11 (+P06 ở turn)",
+  "differentiation": "Mọi người đang nói: làm nhanh/tự động hoá thì bị giao thêm việc mà không tăng lương, nên giấu mẹo hoặc cố tình làm chậm ([X News 09/11](https://x.com/i/trending/2119869962844037311); bản VN nhỏ: [@nguyen_919191](https://www.tiktok.com/@nguyen_919191/video/7703783477799390516) «Làm tốt được thưởng… thêm việc!»). Góc của mình: không giấu, không làm chậm; mẹo vẫn đáng học (4.17), chỉ học đúng thao tác lặp nhiều, và tự đặt chỗ trước cho phần giờ dư. Khác B-airead-01 (3.6) và B-otp-01 (14.10): không nói rủi ro AI, nói thời gian của mình."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "phim-tat-gio-du-cua-ban.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mạng đang cãi nhau: làm nhanh quá thì bị giao thêm việc. Vậy có nên giấu mẹo đi không?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Work fast, get more work?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "phim-tat-gio-du-cua-ban.b02",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có bài đang được chia nhiều kể một người tự động hoá xong việc báo cáo hằng tuần, rồi được thưởng… thêm việc.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Rewarded with… more work.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "phim-tat-gio-du-cua-ban.b03",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình chọn cách khác. Không giấu, cũng không làm chậm. Chỉ học đúng một phím tắt.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Don't hide. Pick one shortcut.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "phim-tat-gio-du-cua-ban.b04",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngày nào bạn cũng copy số từ email dán vào bảng tính, kéo chuột, bấm, kéo chuột, cả chục lần.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Copy. Paste. Click. Again.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "phim-tat-gio-du-cua-ban.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một mục: bỏ ra một lần để học phím tắt và tự động hoá cho phần mềm mình dùng hằng ngày.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Book 4.17: learn shortcuts once.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "phim-tat-gio-du-cua-ban.b06",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nghiên cứu người dùng lâu năm thấy phần lớn vẫn bấm icon, trong khi phím tắt nhanh nhất. Học một lần, mỗi lần bấm sau đều đang lấy lại vốn.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Most still click icons.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "phim-tat-gio-du-cua-ban.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhưng chỉ học thao tác bạn lặp từ mười lần một ngày trở lên. Học tràn lan lại là một kiểu phí.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Only what you repeat 10x a day.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "phim-tat-gio-du-cua-ban.b08",
+   "duration": 9,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay chọn đúng một thao tác đó, học phím tắt của nó. Rồi tự quyết trước: phần giờ dư là để về đúng giờ, hay mười phút đi bộ.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Decide where the saved time goes.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "phim-tat-gio-du-cua-ban.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mẹo là của bạn. Phần giờ nó trả lại cũng vậy.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Your shortcut. Your time.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

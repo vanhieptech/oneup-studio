@@ -1,0 +1,187 @@
+{
+ "date": "2026-11-10",
+ "ideas": [
+  {
+   "id": "phim-tat-gio-du-cua-ban",
+   "title": "Mạng cãi nhau «làm nhanh thì bị giao thêm việc» (performance punishment). Sách 4.17: học phím tắt cho đúng thao tác lặp ≥10 lần/ngày; rồi tự quyết phần giờ dư đi đâu",
+   "trend_id": "automating-work-tasks-leads-to-performance-punishment-trap",
+   "bridge_id": "B-phimtat-01",
+   "lesson": "4.17 Dành một lần học phím tắt và tự động hoá cho phần mềm hay dùng (mức B; Lane, Napier, Peres & Sándor 2005: 251 người dùng Word có kinh nghiệm phần lớn vẫn bấm icon; thí nghiệm so sánh cho thấy phím tắt nhanh nhất trong menu/icon/phím tắt; sách ghi thí nghiệm hiệu suất chỉ 6 người, không có số giây tiết kiệm → KHÔNG nêu «1 tiếng/tuần» như fact). Ghi chú sách: chỉ học thao tác dùng ≥10 lần/ngày. Câu «tự quyết giờ dư đi đâu» là đề xuất biên tập, không phải fact sách. Deep Research xác nhận câu chữ trước khi viết.",
+   "angle": "contrarian / empathy",
+   "pattern": "P11 (+P06 ở turn)",
+   "differentiation": "Mọi người đang nói: làm nhanh/tự động hoá thì bị giao thêm việc mà không tăng lương, nên giấu mẹo hoặc cố tình làm chậm ([X News 09/11](https://x.com/i/trending/2119869962844037311); bản VN nhỏ: [@nguyen_919191](https://www.tiktok.com/@nguyen_919191/video/7703783477799390516) «Làm tốt được thưởng… thêm việc!»). Góc của mình: không giấu, không làm chậm; mẹo vẫn đáng học (4.17), chỉ học đúng thao tác lặp nhiều, và tự đặt chỗ trước cho phần giờ dư. Khác B-airead-01 (3.6) và B-otp-01 (14.10): không nói rủi ro AI, nói thời gian của mình.",
+   "theme": "light",
+   "week": 3,
+   "target": "đăng #13 (4.17, LIGHT, tuần 3) — ô này chưa có bridge trend nào",
+   "hook_vi": "Mạng đang cãi nhau: làm nhanh quá thì bị giao thêm việc, vậy có nên giấu mẹo đi không? Mình chọn cách khác: học đúng một phím tắt, rồi tự quyết phần giờ dư đi đâu.",
+   "moment_vi": "Ngày nào bạn cũng copy số từ email dán vào bảng tính, kéo chuột, bấm, kéo chuột, cả chục lần.",
+   "turn_vi": "Không cần giấu, cũng không cần làm chậm. Học đúng thao tác bạn lặp nhiều nhất, và đặt trước chỗ cho phần giờ nó trả lại.",
+   "hook_en": "The internet says: work faster, get more work. Should you hide your shortcuts? Try this instead.",
+   "beats": [
+    {
+     "text": "Mạng đang cãi nhau: làm nhanh quá thì bị giao thêm việc. Vậy có nên giấu mẹo đi không?",
+     "expression": "surprised",
+     "action": "talking",
+     "duration": 7,
+     "caption_en": "Work fast, get more work?",
+     "background": "grid"
+    },
+    {
+     "text": "Có bài đang được chia nhiều kể một người tự động hoá xong việc báo cáo hằng tuần, rồi được thưởng… thêm việc.",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "Rewarded with… more work.",
+     "background": "desk"
+    },
+    {
+     "text": "Mình chọn cách khác. Không giấu, cũng không làm chậm. Chỉ học đúng một phím tắt.",
+     "expression": "happy",
+     "action": "talking",
+     "duration": 7,
+     "caption_en": "Don't hide. Pick one shortcut.",
+     "background": "room"
+    },
+    {
+     "text": "Ngày nào bạn cũng copy số từ email dán vào bảng tính, kéo chuột, bấm, kéo chuột, cả chục lần.",
+     "expression": "sad",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "Copy. Paste. Click. Again.",
+     "background": "desk"
+    },
+    {
+     "text": "Sách có một mục: bỏ ra một lần để học phím tắt và tự động hoá cho phần mềm mình dùng hằng ngày.",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "Book 4.17: learn shortcuts once.",
+     "background": "grid"
+    },
+    {
+     "text": "Nghiên cứu người dùng lâu năm thấy phần lớn vẫn bấm icon, trong khi phím tắt nhanh nhất. Học một lần, mỗi lần bấm sau đều đang lấy lại vốn.",
+     "expression": "confused",
+     "action": "talking",
+     "duration": 9,
+     "caption_en": "Most still click icons.",
+     "background": "grid"
+    },
+    {
+     "text": "Nhưng chỉ học thao tác bạn lặp từ mười lần một ngày trở lên. Học tràn lan lại là một kiểu phí.",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "Only what you repeat 10x a day.",
+     "background": "desk"
+    },
+    {
+     "text": "Hôm nay chọn đúng một thao tác đó, học phím tắt của nó. Rồi tự quyết trước: phần giờ dư là để về đúng giờ, hay mười phút đi bộ.",
+     "expression": "happy",
+     "action": "talking",
+     "duration": 9,
+     "caption_en": "Decide where the saved time goes.",
+     "background": "room"
+    },
+    {
+     "text": "Mẹo là của bạn. Phần giờ nó trả lại cũng vậy.",
+     "expression": "happy",
+     "action": "talking",
+     "duration": 6,
+     "caption_en": "Your shortcut. Your time.",
+     "background": "grid"
+    }
+   ]
+  },
+  {
+   "id": "khong-can-di-lam-nua-hoi-hai-cau",
+   "title": "Câu nhại «Không cần đi làm nữa» đang lan trên TikTok. Sách 12.24: trước khi trả tiền cho khoá học/gói hứa thu nhập, hỏi còn phải đóng thêm gì và thu nhập đến từ đâu; xin hợp đồng, tên công ty, điều kiện hoàn tiền",
+   "trend_id": "tt-giang.gia.doi-7704181828688579848",
+   "bridge_id": "B-khongdilam-01",
+   "lesson": "12.24 Trước khi trả tiền thuê vận hành shop, học khoá mở shop, làm «không cần nhập hàng», hỏi rõ sau đó còn phải đóng thêm không và doanh số đến từ đâu (mức B). Chỉ dùng phần hành động: hai câu hỏi + ba thứ cần có (hợp đồng, tên đầy đủ công ty, điều kiện hoàn tiền; chỉ chuyển cho công ty trên hợp đồng, không chuyển tài khoản cá nhân); dấu hiệu «không cần kinh nghiệm», «không cần vốn», «cam kết lời». ⚠ Toàn bộ vụ án, con số (7.711 nạn nhân…), luật và số điện thoại trong mục là của Trung Quốc → KHÔNG dùng. Deep Research xác nhận câu chữ trước khi viết.",
+   "angle": "empathy / contrarian",
+   "pattern": "P11 (khớp một phần; format F11)",
+   "differentiation": "Mọi người đang nói: cười nhạo người nói câu đó và người ngồi nghe («một buổi nghe mất vài củ đó», «Khen cho người ngồi để nghe»), hoặc đùa «không đi làm thì đi ăn cướp» ([@giang.gia.doi](https://www.tiktok.com/@giang.gia.doi/video/7704181828688579848), [@nguyentriduc92](https://www.tiktok.com/@nguyentriduc92/video/7704248094052912405)). Góc của mình: không chê ai, không nhắc diễn giả; câu hứa đó vẫn có sức kéo vì ai cũng mệt việc. Nên cái cần là hai câu hỏi trước khi chuyển khoản. Khác B-tietkiem-01/B-thuongtet-01 (5.27 quỹ dự phòng) và B-bantruoc-01 (12.18 bán trước rồi mới làm).",
+   "theme": "dark",
+   "week": 5,
+   "target": "ý tưởng mới 12.24 (ngoài 30 ô; trụ tiền / sự nghiệp), cạnh B-bantruoc-01",
+   "hook_vi": "Cả TikTok đang nhại câu «không cần đi làm nữa». Vậy nếu tối nay gặp một khoá học hứa đúng câu đó, bạn sẽ hỏi họ câu gì trước khi chuyển khoản?",
+   "moment_vi": "Mười một giờ đêm, lướt thấy quảng cáo khoá học: không cần kinh nghiệm, không cần vốn, thu nhập thụ động. Bạn chưa chuyển, nhưng đã lưu số tài khoản.",
+   "turn_vi": "Muốn bớt phải đi làm thì không sai. Nhưng trước khi trả tiền cho một câu hứa, hỏi đúng hai câu và xin đủ ba thứ.",
+   "hook_en": "TikTok keeps parodying 'you'll never need to work again.' What would you ask before paying for that promise?",
+   "beats": [
+    {
+     "text": "Cả TikTok đang nhại một câu: «không cần đi làm nữa».",
+     "expression": "surprised",
+     "action": "talking",
+     "duration": 6,
+     "caption_en": "\"Never work again.\"",
+     "background": "grid"
+    },
+    {
+     "text": "Có người comment rất thật: nghỉ ở nhà ba ngày là hết mì gói, lại phải đi làm.",
+     "expression": "sad",
+     "action": "talking",
+     "duration": 7,
+     "caption_en": "Three days off. No noodles left.",
+     "background": "room"
+    },
+    {
+     "text": "Rồi mười một giờ đêm, bạn lướt thấy quảng cáo: không cần kinh nghiệm, không cần vốn, thu nhập thụ động.",
+     "expression": "confused",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "No skills. No money. Passive income.",
+     "background": "desk"
+    },
+    {
+     "text": "Bạn chưa chuyển khoản. Nhưng đã lưu số tài khoản.",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 6,
+     "caption_en": "Not paid. Yet.",
+     "background": "desk"
+    },
+    {
+     "text": "Sách có một mục về các gói dạy mở shop, vận hành hộ: kiểu thường gặp là thu một khoản đầu, rồi gợi ý nâng gói, ứng tiền hàng, đóng phí mở khoá.",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 9,
+     "caption_en": "Book 12.24: first fee, then more fees.",
+     "background": "grid"
+    },
+    {
+     "text": "Trước khi chuyển đồng nào, hỏi đúng hai câu. Sau khoản này còn phải đóng thêm gì? Và đơn hàng, thu nhập đến từ đâu?",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "Two questions first.",
+     "background": "grid"
+    },
+    {
+     "text": "Rồi xin đủ ba thứ: hợp đồng giấy trắng mực đen, tên đầy đủ của công ty, điều kiện hoàn tiền. Chỉ chuyển cho công ty trên hợp đồng, không chuyển tài khoản cá nhân.",
+     "expression": "neutral",
+     "action": "talking",
+     "duration": 9,
+     "caption_en": "Contract. Company. Refund terms.",
+     "background": "desk"
+    },
+    {
+     "text": "Tối nay, nếu đang lưu một quảng cáo như vậy, chép hai câu hỏi đó vào ghi chú, gửi cho họ trước khi trả lời có hay không.",
+     "expression": "happy",
+     "action": "talking",
+     "duration": 8,
+     "caption_en": "Ask before you pay.",
+     "background": "room"
+    },
+    {
+     "text": "Muốn bớt phải đi làm thì không sai. Chỉ đừng trả tiền để mua một câu hứa.",
+     "expression": "happy",
+     "action": "talking",
+     "duration": 6,
+     "caption_en": "Don't buy a promise.",
+     "background": "grid"
+    }
+   ]
+  }
+ ]
+}

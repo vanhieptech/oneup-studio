@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-khong-can-di-lam-nua-hoi-hai-cau",
+ "title": "[STUB] Câu nhại «Không cần đi làm nữa» đang lan trên TikTok. Sách 12.24: trước khi trả tiền cho khoá học/gói hứa thu nhập, hỏi còn phải đóng thêm gì và thu nhập đến từ đâu; xin hợp đồng, tên công ty, điều kiện hoàn tiền",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-giang.gia.doi-7704181828688579848",
+  "bridge_id": "B-khongdilam-01",
+  "lesson": "12.24 Trước khi trả tiền thuê vận hành shop, học khoá mở shop, làm «không cần nhập hàng», hỏi rõ sau đó còn phải đóng thêm không và doanh số đến từ đâu (mức B). Chỉ dùng phần hành động: hai câu hỏi + ba thứ cần có (hợp đồng, tên đầy đủ công ty, điều kiện hoàn tiền; chỉ chuyển cho công ty trên hợp đồng, không chuyển tài khoản cá nhân); dấu hiệu «không cần kinh nghiệm», «không cần vốn», «cam kết lời». ⚠ Toàn bộ vụ án, con số (7.711 nạn nhân…), luật và số điện thoại trong mục là của Trung Quốc → KHÔNG dùng. Deep Research xác nhận câu chữ trước khi viết.",
+  "angle": "empathy / contrarian",
+  "pattern": "P11 (khớp một phần; format F11)",
+  "differentiation": "Mọi người đang nói: cười nhạo người nói câu đó và người ngồi nghe («một buổi nghe mất vài củ đó», «Khen cho người ngồi để nghe»), hoặc đùa «không đi làm thì đi ăn cướp» ([@giang.gia.doi](https://www.tiktok.com/@giang.gia.doi/video/7704181828688579848), [@nguyentriduc92](https://www.tiktok.com/@nguyentriduc92/video/7704248094052912405)). Góc của mình: không chê ai, không nhắc diễn giả; câu hứa đó vẫn có sức kéo vì ai cũng mệt việc. Nên cái cần là hai câu hỏi trước khi chuyển khoản. Khác B-tietkiem-01/B-thuongtet-01 (5.27 quỹ dự phòng) và B-bantruoc-01 (12.18 bán trước rồi mới làm)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cả TikTok đang nhại một câu: «không cần đi làm nữa».",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "\"Never work again.\"",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b02",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có người comment rất thật: nghỉ ở nhà ba ngày là hết mì gói, lại phải đi làm.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Three days off. No noodles left.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b03",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi mười một giờ đêm, bạn lướt thấy quảng cáo: không cần kinh nghiệm, không cần vốn, thu nhập thụ động.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "No skills. No money. Passive income.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b04",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn chưa chuyển khoản. Nhưng đã lưu số tài khoản.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Not paid. Yet.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b05",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một mục về các gói dạy mở shop, vận hành hộ: kiểu thường gặp là thu một khoản đầu, rồi gợi ý nâng gói, ứng tiền hàng, đóng phí mở khoá.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Book 12.24: first fee, then more fees.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b06",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trước khi chuyển đồng nào, hỏi đúng hai câu. Sau khoản này còn phải đóng thêm gì? Và đơn hàng, thu nhập đến từ đâu?",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Two questions first.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b07",
+   "duration": 9,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Rồi xin đủ ba thứ: hợp đồng giấy trắng mực đen, tên đầy đủ của công ty, điều kiện hoàn tiền. Chỉ chuyển cho công ty trên hợp đồng, không chuyển tài khoản cá nhân.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Contract. Company. Refund terms.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b08",
+   "duration": 8,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối nay, nếu đang lưu một quảng cáo như vậy, chép hai câu hỏi đó vào ghi chú, gửi cho họ trước khi trả lời có hay không.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Ask before you pay.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "khong-can-di-lam-nua-hoi-hai-cau.b09",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Muốn bớt phải đi làm thì không sai. Chỉ đừng trả tiền để mua một câu hứa.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Don't buy a promise.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

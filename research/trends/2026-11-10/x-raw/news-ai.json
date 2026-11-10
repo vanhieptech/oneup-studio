@@ -1,0 +1,313 @@
+{
+ "data": [
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Business & Finance",
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "A VP at a boutique investment firm shared how AI tools like Claude now handle logo tweaks and contact updates, freeing up time—only for analysts to tackle even more deals and detailed reports.",
+   "id": "2118872040262250502",
+   "name": "AI Boosts Banking Workloads Instead of Cutting Jobs",
+   "summary": "Discussions challenge fears of AI-driven job losses, highlighting how it speeds up tedious tasks in investment banking but leads to steady or higher workloads as firms chase more mandates and deeper analyses. Economist Jón Steinsson calls this commoditization, where AI simplifies skills like 'vibe coding,' expanding who can do the work without eliminating roles. Commenters point to the Jevons paradox, where efficiency sparks new demands, and academic papers back the shift toward broader labor pools and firm advantages, though some warn of intensified pressures.",
+   "updated_at": "2026-11-07T01:11:06.000Z",
+   "url": "https://x.com/i/trending/2118872040262250502"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [
+      "Brian Lovin",
+      "Aaron Levie"
+     ],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "Software Development"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Top engineers are pulling far ahead, using AI to handle most coding while they focus on smart decisions and reviews.",
+   "id": "2119208107926569136",
+   "name": "AI Boosts Top Engineers to 100x Productivity Levels",
+   "summary": "Theo from t3.gg and Box CEO Aaron Levie describe how AI creates massive gaps, turning skilled engineers into 100x powerhouses by combining expertise with AI tools for faster, better code. Real-world data from Atlassian's 2026 survey shows 87% of developers ship faster, but many now spend time managing AI outputs, with review becoming a key bottleneck. GitHub analysis confirms coding surges triple with AI, though shipped software grows more modestly at 30%, highlighting the edge for those who direct AI effectively.",
+   "updated_at": "2026-11-07T23:25:00.000Z",
+   "url": "https://x.com/i/trending/2119208107926569136"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "A company mandated 100% AI code generation a year ago, and now their codebase has tripled in size with duplicates everywhere and few humans left to review it.",
+   "id": "2119657618927202600",
+   "name": "AI Mandate Bloats Codebase and Drains Developer Expertise",
+   "summary": "A Reddit post shared on X describes how aggressive AI adoption led to a massive, unmaintainable codebase, duplicated functions, and struggling AI agents, with Node.js creator Ryan Dahl shocked at how quickly software teams accepted the shift. Developers note reviewing unfamiliar AI output is tougher than writing code, while tools like CodeRabbit step in for automated reviews amid fading human expertise. The discussion splits between productivity gains for strategic work and worries over long-term maintainability, security, and prompting skills replacing deep comprehension.",
+   "updated_at": "2026-11-09T18:15:22.000Z",
+   "url": "https://x.com/i/trending/2119657618927202600"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Artists who embrace AI call it a helpful collaborator with no ego, while others feel their unique spark slipping away.",
+   "id": "2119198394342076480",
+   "name": "AI Divide Splits Artists: Tool or Threat?",
+   "summary": "Posts highlight a sharp split over AI in creative work, reviving Nassim Taleb's 2023 view that fear of AI reveals impostor feelings in those lacking deep skill or originality. Supporters note coders and managers welcome AI without complaint, seeing it amplify true talent, while some artists report lost income and stress from generative tools. A survey of pros shows widespread dislike, but studies suggest AI reshapes art by decoupling output from traditional skill-building, rewarding those who adapt.",
+   "updated_at": "2026-11-07T22:46:59.000Z",
+   "url": "https://x.com/i/trending/2119198394342076480"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [
+      "Anthropic"
+     ],
+     "people": [
+      "Addy Osmani"
+     ],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Developers who built stunning game worlds with Claude Opus 5.5 in September now report frustrating hallucinations and ignored instructions this week.",
+   "id": "2119200785015689451",
+   "name": "Claude Opus 5.5 Performance Drops Spark Developer Concerns",
+   "summary": "Users of Anthropic's Claude Code say Opus 5.5 has declined sharply since early November, with more errors, looping decisions, and faster usage of weekly limits. Addy Osmani, a new team member from Google, warned on November 3 about over-relying on AI through stages like cognitive offloading and surrender, urging users to keep exercising their skills. While some blame prompt issues and benchmarks show normal variance, the complaints highlight tensions in trusting AI for coding tasks.",
+   "updated_at": "2026-11-07T22:57:04.000Z",
+   "url": "https://x.com/i/trending/2119200785015689451"
+  },
+  {
+   "category": "News",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [
+      "Anthropic"
+     ],
+     "people": [
+      "Dario Amodei"
+     ],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Dario Amodei sees AI stepping into junior roles in law, finance, and consulting right now. He predicts it could eliminate half those jobs in just one to five years.",
+   "id": "2119765262350377112",
+   "name": "Anthropic CEO Warns AI Could Cut Half of Entry-Level White-Collar Jobs Soon",
+   "summary": "In recent interviews, Anthropic CEO Dario Amodei said AI has advanced from smart high school level two years ago to talented college student ability today, handling tasks like document summaries and financial reports. Anthropic's own data shows junior technical hires dropping from 27% to 9% between early 2025 and 2026, with AI agents logging six times more hours than humans and boosting engineer output fivefold. While some urge learning to build AI systems for adaptation, skeptics like economist Richard Hanania point to steady GDP and jobs data, arguing no massive disruption has hit yet.",
+   "updated_at": "2026-11-09T16:16:46.000Z",
+   "url": "https://x.com/i/trending/2119765262350377112"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [
+      "Juan Pablo"
+     ],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Programmers are clashing on whether trusting AI to write code from casual descriptions builds skills or erodes them. One veteran coder from 1974 calls the output 'usually shit,' while others see a return to tinkering joy.",
+   "id": "2119102925725388906",
+   "name": "Debate Heats Up Over Vibe Coding and AI Tools",
+   "summary": "Vibe coding, popularized by AI researcher Andrej Karpathy in early 2025 and named Collins Dictionary's Word of the Year, involves prompting AI with natural language to generate software, often skipping deep code reviews. Critics like Lindsay Wright warn it dulls programming skills, comparing it to paint-by-numbers over Picasso, while supporters praise its speed and accessibility for newcomers, echoing the fun of early personal computers. The discussion weighs quick project shipping against the need for understanding logic, security, and long-term maintenance.",
+   "updated_at": "2026-11-07T16:30:51.000Z",
+   "url": "https://x.com/i/trending/2119102925725388906"
+  },
+  {
+   "category": "News",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [
+      "Meta"
+     ],
+     "people": [],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Tech stocks took a sharp hit, with the Nasdaq 100's forward P/E ratio dropping to a four-year low of 19x. Investors now question if AI's promise will deliver quick gains or just job losses.",
+   "id": "2119372505597071730",
+   "name": "Tech Stocks Slide as AI Job Fears Temper Hype",
+   "summary": "Doubts about AI-driven growth have triggered a market pullback, erasing trillions in value amid concerns over high spending, mixed productivity results, and rapid white-collar job displacement. Anthropic CEO Dario Amodei warned high schoolers that AI already handles entry-level tasks in law, finance, and consulting, urging them to harness the tools amid a faster-than-expected shift. While AI-linked layoffs total over 121,000 this year, recent months show fewer such cuts, companies rehiring for cut roles, and more balanced valuations separating infrastructure firms from overhyped plays.",
+   "updated_at": "2026-11-08T22:33:00.000Z",
+   "url": "https://x.com/i/trending/2119372505597071730"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "Software Development"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Developers are sharing laughs and warnings about 'vibe coding'—building apps by chatting ideas to AI and grabbing the code with minimal tweaks.",
+   "id": "2119876637131264388",
+   "name": "Debate Heats Up Over Vibe Coding in Software Development",
+   "summary": "Coined by AI researcher Andrej Karpathy in February 2025, vibe coding earned Collins Dictionary's Word of the Year for 2025 as using natural language prompts for AI-generated code. Fans call it a game-changer for quick prototypes and complex tasks like game modding, while critics worry about massive code debt that could force full rebuilds years later. Many see a middle ground: pair AI with testing and understanding, making it just regular coding with new tools.",
+   "updated_at": "2026-11-09T19:45:10.000Z",
+   "url": "https://x.com/i/trending/2119876637131264388"
+  },
+  {
+   "category": "Other",
+   "contexts": {
+    "entities": {
+     "events": [],
+     "organizations": [],
+     "people": [
+      "Tom Goodwin"
+     ],
+     "places": [],
+     "products": []
+    },
+    "finance": {
+     "tickers": []
+    },
+    "sports": {
+     "teams": []
+    },
+    "topics": [
+     "Technology",
+     "AI"
+    ]
+   },
+   "disclaimer": "This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs.",
+   "hook": "Imagine bots handling your groceries, work bids, dentist appointments, and even internet negotiations—all in a seamless day. Tom Goodwin wondered if anyone truly wants that level of convenience.",
+   "id": "2119635796537839811",
+   "name": "Debate Over AI's Frictionless Life Vision",
+   "summary": "Goodwin shared a scenario of AI orchestrating every detail of daily life, estimating only 10 percent of people might want even part of it. Many replies pushed back, arguing it strips away agency, learning, and meaning, with one user saying it makes them want to jump out a window. While some see benefits for tasks like laundry or for those with ADHD, a survey shows 56 percent of Americans fear autonomous AI undermines meaningful lives. Psychologists warn that removing friction risks eroding motivation and purpose.",
+   "updated_at": "2026-11-09T03:45:55.000Z",
+   "url": "https://x.com/i/trending/2119635796537839811"
+  }
+ ],
+ "meta": {
+  "result_count": 10
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "status": 200,
+ "endpoint_id": "treg.tiktok.video.detail",
+ "body": {
+  "output": {
+   "video": null
+  },
+  "raw": {
+   "code": 200,
+   "request_id": "4f61617a-7ba8-472a-bb76-5779ce10ec3b",
+   "message": "Request successful. This request will incur a charge.",
+   "message_zh": "请求成功，本次请求将被计费。",
+   "support": "Discord: https://discord.gg/aMEAS8Xsvz",
+   "time": "2026-11-09 17:08:18",
+   "time_stamp": 1794272898,
+   "time_zone": "America/Los_Angeles",
+   "docs": "https://api.tikhub.io/#/TikTok-App-V3-API/fetch_one_video_api_v1_tiktok_app_v3_fetch_one_video_get",
+   "cache_message": "This response is cached and accessible via the URL below for 24 hours at no extra cost. The cache is for request tracing only — it doesn't affect the API's data freshness and won't be returned through the API again.",
+   "cache_message_zh": "本次响应已缓存，可通过下方 URL 直接查看，有效期 24 小时，访问缓存链接无额外费用。缓存仅用于请求溯源，不影响接口数据的时效性，也不会再次通过接口返回。",
+   "cache_url": "https://cache.tikhub.io/api/v1/cache/public/4f61617a-7ba8-472a-bb76-5779ce10ec3b?sign=e3dfa449145091ce2b56c1eee604150e22dc97a1675307ec23e28119e1db4dad",
+   "router": "/api/v1/tiktok/app/v3/fetch_one_video",
+   "params": {
+    "aweme_id": "7705013968930196744"
+   },
+   "data": {
+    "extra": {
+     "fatal_item_ids": [],
+     "logid": "202611100108180BC791F7E8AC2634AE01",
+     "now": 1794272898000
+    },
+    "log_pb": {
+     "impr_id": "202611100108180BC791F7E8AC2634AE01"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "version": "v2"
+   }
+  },
+  "_treg": {
+   "served_by": "tikhub.x.tiktok-app-v3-fetch-one-video",
+   "provider": "tikhub",
+   "tier": "platform",
+   "outcome": "miss",
+   "tried": [
+    {
+     "endpoint_id": "tikhub.x.tiktok-app-v3-fetch-one-video",
+     "provider": "tikhub",
+     "outcome": "miss",
+     "status": 200,
+     "charged_micro": 1000
+    }
+   ],
+   "charged_micro": 1000,
+   "dropped": [
+    {
+     "endpoint_id": "scrapecreators.tiktok.video.detail",
+     "why": "needs {url}"
+    },
+    {
+     "endpoint_id": "tikhub.x.tiktok-app-v3-fetch-one-video-by-share-url",
+     "why": "needs {url}"
+    }
+   ]
+  }
+ },
+ "call_id": "5363dafe8a6d43f4853dba60dd8384a9",
+ "cost_usd": 0.001,
+ "_fetched_local": "2026-11-10 08:10–08:35 Asia/Saigon (UTC+7)"
+}

@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-09
+updated: 2026-11-10
 tags: [ideas]
 ---
 # Idea bank
@@ -92,3 +92,6 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Tối Chủ nhật sợ thứ Hai → viết một việc đầu tiên rồi gấp sổ (B-chunhatoi-01) | 3.14 | trụ 4 tâm trí | "Tối Chủ nhật nào cũng hát «mai là hết Chủ nhật»? Thử viết ra đúng một việc đầu tiên của sáng thứ Hai, rồi gấp sổ lại." | LIGHT | ý tưởng (2026-11-08); đăng #24 hook thay thế |
 | Kim Dung mỗi ngày một kỳ báo: cắt việc lớn tới khi phần đầu vừa một lần ngồi (B-moiky-01) | 4.7 (callback clip-03) | trụ 1 / ô #27 | "Kim Dung viết mười lăm bộ truyện, mà chưa bao giờ lên kế hoạch cho cả mười lăm bộ. Mỗi ngày ông chỉ lo đúng một kỳ báo." | LIGHT | stub 2026-11-09, chờ duyệt (caution người thật đã mất; Deep Research kiểm 4.7) |
 | Làm không ít mà cuối tháng không dư: tìm khoản tự trừ đã quên trước khi tự trách (B-ro-tien-01) | 5.1 | tiền / đăng #28 | "Trên mạng có cô gái lương ba mươi mốt triệu, để dành được hai mươi triệu. Còn bạn làm cũng không ít, mà cuối tháng không dư đồng nào?" | DARK | stub 2026-11-09, chờ duyệt (5.1 mức C, bỏ phần luật Trung Quốc) |
+| Mạng cãi «làm nhanh thì bị giao thêm việc»: không giấu, không làm chậm; học đúng một phím tắt cho thao tác lặp ≥10 lần/ngày, rồi tự quyết phần giờ dư đi đâu (B-phimtat-01) | 4.17 | trụ 3 / đăng #13 | "Mạng đang cãi nhau: làm nhanh quá thì bị giao thêm việc, vậy có nên giấu mẹo đi không? Mình chọn cách khác: học đúng một phím tắt, rồi tự quyết phần giờ dư đi đâu." | LIGHT | stub 2026-11-10, chờ duyệt (bridge đầu tiên cho ô #13; `research/trends/2026-11-10/plans/plan-1-phim-tat-gio-du-cua-ban.json`) |
+| «Không cần đi làm nữa» bị nhại khắp TikTok: trước khi trả tiền cho khoá học hứa câu đó, hỏi còn phải đóng thêm gì, thu nhập đến từ đâu; xin hợp đồng, tên công ty, điều kiện hoàn tiền (B-khongdilam-01) | 12.24 | tiền / sự nghiệp | "Cả TikTok đang nhại câu «không cần đi làm nữa». Vậy nếu tối nay gặp một khoá học hứa đúng câu đó, bạn sẽ hỏi họ câu gì trước khi chuyển khoản?" | DARK | stub 2026-11-10, chờ duyệt; caution: không nhắc/vẽ diễn giả bị nhại, bỏ toàn bộ vụ án/luật Trung Quốc (`research/trends/2026-11-10/plans/plan-2-khong-can-di-lam-nua-hoi-hai-cau.json`) |
+| Cầu thủ hít thở trước penalty: trước cuộc gọi khó, 5 phút thở dài vòng (B-penalty-01) | 22.8 | trụ 4 tâm trí / đăng #21 | "Cầu thủ đứng trước chấm phạt đền, cả sân nhìn mình, và việc đầu tiên anh làm là… thở. Trước một cuộc gọi khó, bạn có cho mình nhịp thở đó không?" | LIGHT | ý tưởng (2026-11-10; hook thay thế B-met-01; caution: link có thể đã gỡ, không dùng footage) |

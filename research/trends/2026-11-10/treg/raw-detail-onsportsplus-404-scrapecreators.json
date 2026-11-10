@@ -1,0 +1,16 @@
+{
+ "status": 404,
+ "endpoint_id": "scrapecreators.tiktok.video.detail",
+ "body": {
+  "success": false,
+  "credits_remaining": 173876,
+  "credits_charged": 0,
+  "error": "not_found",
+  "errorStatus": 404,
+  "message": "Video not found"
+ },
+ "call_id": "3b1839b5f7a343619845430120e7c8a8",
+ "cost_usd": 0.0,
+ "whose_error": "provider",
+ "_fetched_local": "2026-11-10 08:10–08:35 Asia/Saigon (UTC+7)"
+}
