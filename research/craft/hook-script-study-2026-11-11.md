@@ -10,7 +10,9 @@ source: "Treg (ScrapeCreators) 25 call, $0.047, lấy 11/11/2026 09:45–09:48 A
 
 **Lý do làm:** Hiệp bác hook r15.3 («Hook xàm», 10/11 18:40) rồi bác cả ba concept r16 (11/11 9:43), qua lời Rule Reviewer chuyển. Theo yêu cầu, OpenCreator ngừng mọi bản nháp clip-05 để học lại cách viết hook và mạch script từ video thật. **File này không có concept clip05 mới.**
 
-**Trạng thái:** bản nghiên cứu của OpenCreator, chờ Rule Reviewer kiểm. Chưa phải luật và chưa sửa skill. Phần đề xuất sửa skill nằm ở mục 7.
+**Trạng thái:** Rule Reviewer đã kiểm bản sha `51f1be5e…` (commit `ce17d54`): **ĐẠT làm nền, kèm 4 điều kiện**. Bản này (r2, 11/11/2026) sửa theo 4 điều kiện ấy và thêm mục 5b ghi quyết định của Reviewer. Chưa phải luật, chưa sửa skill. Phần đề xuất sửa skill nằm ở mục 7.
+
+> **Phạm vi của bài học (điều kiện 4 của Reviewer):** 15 video **chưa được xem hình ở giây 0–3** và **không có số liệu giữ người xem** (retention/completion). Vì vậy đây là bài học về **LỜI** (cách đặt câu, thứ tự ý, cách trả lời câu hỏi hook), **không phải bằng chứng** rằng các cách này làm video hiệu quả hơn. Lượt xem chỉ cho biết video được nhiều người thấy, không chứng minh hook hay lời là nguyên nhân.
 
 ---
 
@@ -67,8 +69,8 @@ Cột «3 giây đầu nói gì» là nguyên văn cue VTT trong khoảng 00:00 
 **V02 · @finroom2010 (216k xem). Cùng họ chủ đề với clip05, nên đọc kỹ nhất**
 - **3 giây đầu:** «bạn không học chậm [00:01] bạn đang học bằng cách AI cũng dùng mà kém hiệu quả [00:04] đọc đi đọc lại». Ảnh bìa có chữ «HỌC NHANH GẤP ĐÔI» và «Gập sách lại, NÓI TO điều bạn nhớ».
 - **Nỗi đau:** câu 1 gỡ lỗi cho người xem, câu 2 gọi tên thủ phạm là phương pháp. Từ 00:06 có ba cảnh đời thường, mỗi cảnh một dòng: «tối qua bạn ngồi với cuốn sách tô vàng gần kín cả trang», «sáng nay trước buổi họp bạn mở ghi chú Ra đọc lại thêm một lần nữa», «khóa học online mua từ đầu năm bạn đã xem lại bài một đến lần thứ BA». Điểm đau ở 00:22: «vậy mà BA hôm sau có người hỏi lại đầu bạn trống trơn».
-- **Trả lời:** 00:26 «không phải vì bạn kém mà vì cảm giác quen mặt chữ đang đánh lừa bạn». 00:30 hứa «có một thí nghiệm Cho thấy đọc ít lần hơn lại nhớ lâu hơn và cách làm đơn giản đến bất ngờ». Bằng chứng ở 00:36–01:03 kể như chuyện hai nhóm: «nhóm đọc 14 lần nhớ được 40% nhóm chỉ đọc BA lần mà tự viết Ra nhớ được 61% [01:00] trớ trêu nhất là nhóm đọc nhiều lại tự tin hơn dù nhớ kém hơn». *(Số liệu chưa kiểm. Nghe giống Roediger & Karpicke 2006 thí nghiệm 2, mà lock hiện tại của kênh để Exp2 ngoài phạm vi. Không được dùng nếu Deep chưa kiểm.)*
-- **Giữ người xem:** câu chốt cơ chế ngắn («não không nhớ thứ nó được nhìn lại [01:07] não nhớ thứ nó phải tự lôi Ra»), 3 bước, rồi mở rộng sang đời sống («học tiếng anh học Excel hay học một nghề mới») và hệ quả tiền (tăng lương). Có **callback** về hình mở đầu: «quay lại trang sách tô vàng kín mít lúc đầu [01:49] màu vàng làm bạn thấy mình đang học [01:51] còn trang giấy trắng bạn tự viết Ra [01:53] mới là thứ ở lại trong đầu». Kết bằng bài thử ngay trong video: «tắt màn hình nói to BA điều bạn vừa nhớ… ghi con số dưới bình luận».
+- **Trả lời:** 00:26 «không phải vì bạn kém mà vì cảm giác quen mặt chữ đang đánh lừa bạn» *(vế cơ chế chưa kiểm, lock clip-05 cấm «vì quen mắt», RK L88)*. 00:30 hứa «có một thí nghiệm Cho thấy đọc ít lần hơn lại nhớ lâu hơn và cách làm đơn giản đến bất ngờ». Bằng chứng ở 00:36–01:03 kể như chuyện hai nhóm: «nhóm đọc 14 lần nhớ được 40% nhóm chỉ đọc BA lần mà tự viết Ra nhớ được 61% [01:00] trớ trêu nhất là nhóm đọc nhiều lại tự tin hơn dù nhớ kém hơn». *(Số liệu chưa kiểm. Nghe giống Roediger & Karpicke 2006 thí nghiệm 2, mà lock hiện tại của kênh để Exp2 ngoài phạm vi. Không được dùng nếu Deep chưa kiểm.)*
+- **Giữ người xem:** câu chốt cơ chế ngắn *(cơ chế chưa kiểm, kênh không dùng; chỉ học dáng câu)* («não không nhớ thứ nó được nhìn lại [01:07] não nhớ thứ nó phải tự lôi Ra»), 3 bước, rồi mở rộng sang đời sống («học tiếng anh học Excel hay học một nghề mới») và hệ quả tiền (tăng lương). Có **callback** về hình mở đầu: «quay lại trang sách tô vàng kín mít lúc đầu [01:49] màu vàng làm bạn thấy mình đang học [01:51] còn trang giấy trắng bạn tự viết Ra [01:53] mới là thứ ở lại trong đầu». Kết bằng bài thử ngay trong video: «tắt màn hình nói to BA điều bạn vừa nhớ… ghi con số dưới bình luận».
 
 **V03 · @gonaox (1,56M xem)**
 - **3 giây đầu:** «ghi nhớ bất cứ thứ gì nhanh đến mức khó tin [00:02] các bạn học BA tiếng bạn của các bạn học 40 phút». Ảnh bìa có chữ «GHI NHỚ BẤT CỨ THỨ GÌ NHANH ĐẾN MỨC KHÓ TIN» cùng hình vẽ người và não.
@@ -78,13 +80,13 @@ Cột «3 giây đầu nói gì» là nguyên văn cue VTT trong khoảng 00:00 
 
 **V04 · @davoslingo (308k xem)**
 - **3 giây đầu:** «có bao giờ bạn học một cái gì đó xong [00:01] đụng một cái mấy ngày hôm sau bạn quên hết sạch luôn hông». Ảnh bìa có chữ «LÝ DO BẠN HAY QUÊN (VÀ CÁCH NHỚ LÂU)», người nói nhìn thẳng camera.
-- **Nỗi đau:** câu hỏi nỗi đau mà người xem tự trả lời «có» trong đầu, ở 00:00–00:03. Gỡ lỗi ngay ở 00:03: «não của bạn không có vấn đề gì đâu chỉ là nó được thiết kế để làm như vậy thôi».
+- **Nỗi đau:** câu hỏi nỗi đau mà người xem tự trả lời «có» trong đầu, ở 00:00–00:03. Gỡ lỗi ngay ở 00:03: «não của bạn không có vấn đề gì đâu chỉ là nó được thiết kế để làm như vậy thôi» *(claim cơ chế chưa kiểm; chỉ học dáng câu)*.
 - **Trả lời:** hứa ở 00:08 «bạn xem hết video này để biết cách khắc phục nha». Nguyên nhân bằng Ebbinghaus (số chưa kiểm). Cách làm ở 00:43–01:01.
 - **Giữ người xem:** 3 bước có mốc ngày. Ngôn ngữ nói rất đời («đánh đá Ra khỏi chuồng gà»). Không có callback và không có CTA thử ngay.
 
 **V05 · @parentlab3 (493k xem)**
 - **3 giây đầu:** «học mãi không vào thử quy tắc BA lần nhớ này». Ảnh bìa có chữ «HỌC MÃI KHÔNG VÀO? THỬ QUY TẮC "3 LẦN NHỚ" NÀY!».
-- **Nỗi đau:** gói trong 4 chữ «học mãi không vào», nằm cùng câu với lời hứa. Câu 2 nói rõ hơn: «có những kiến thức tưởng rằng đã học rất kỹ [00:04] nhưng chỉ vài ngày sau lại quên». Câu 3 gỡ lỗi cho người xem: «không hẳn vì khả năng ghi nhớ kém mà có thể vì cách học chưa tạo đủ cơ hội để não bộ ghi nhớ».
+- **Nỗi đau:** gói trong 4 chữ «học mãi không vào», nằm cùng câu với lời hứa. Câu 2 nói rõ hơn: «có những kiến thức tưởng rằng đã học rất kỹ [00:04] nhưng chỉ vài ngày sau lại quên». Câu 3 gỡ lỗi cho người xem: «không hẳn vì khả năng ghi nhớ kém mà có thể vì cách học chưa tạo đủ cơ hội để não bộ ghi nhớ» *(vế «não bộ» là cơ chế chưa kiểm; chỉ học dáng câu)*.
 - **Trả lời:** từ 00:11, mỗi lần một nhiệm vụ («học để hiểu / để nhớ / để vận dụng»).
 - **Giữ người xem:** danh sách 3 mục ngắn, kết bằng câu đảo «mục tiêu cuối cùng của việc học không phải là đã học bao nhiêu mà là có thể sử dụng được bao nhiêu».
 
@@ -160,8 +162,12 @@ Quan sát phụ: bốn video có lượt xem rất cao này đều hứa phóng 
 
 ## 3. Bảy nguyên tắc hook và mạch script (rút từ 15 video)
 
+Đây là nguyên tắc về **lời**, không phải kết quả đo hiệu quả (xem phạm vi ở đầu file). Các trích dẫn chỉ minh họa cách nói. Claim trong video chưa kiểm, và kênh không được mượn claim nào.
+
 ### NT1. Câu đầu tiên là nỗi đau người xem tự nhận ra, với chủ ngữ «bạn», nói trọn trong khoảng 3 giây, không dàn dựng trước
-Công sức và kết quả tệ nằm **trong cùng một câu ngắn**. Người xem không phải chờ vế sau mới hiểu chuyện gì hỏng.
+Công sức và kết quả tệ nằm **trong cùng một câu**. Người xem không phải chờ vế sau mới hiểu chuyện gì hỏng.
+
+**Cách hiểu «câu ngắn» (điều kiện 1 của Reviewer, khớp L-096 và L-098):** «5–12 chữ» là độ dài của **mỗi vế câu**, không phải của mỗi câu. Mỗi vế có chủ ngữ rõ (W-09). Các vế nối với nhau bằng quan hệ nhân quả hoặc đối chiếu («vậy mà», «nhưng», «nên»). **Không** chặt thành chuỗi câu cộc: không để hai câu liền nhau dưới 8 chữ (L-096(3)), và mọi câu phải rõ nghĩa khi nghe một lần (L-098). Các cue VTT ngắn trong video thật là các vế của một câu nói liền, không phải câu rời.
 - V01: «bạn đã đọc bài năm lần nhưng vẫn không nhớ nổi một nửa» (00:00–00:03)
 - V04: «có bao giờ bạn học một cái gì đó xong đụng một cái mấy ngày hôm sau bạn quên hết sạch luôn hông» (00:00–00:03)
 - V05: «học mãi không vào thử quy tắc BA lần nhớ này» (00:00–00:02)
@@ -176,6 +182,10 @@ Video tốt chọn chuyện **nhiều người gặp** (quên sau vài ngày, ti
 
 ### NT3. Ngay sau nỗi đau, gỡ lỗi cho người xem và lật một niềm tin: thủ phạm là cách làm, không phải con người
 Câu thứ hai hoặc thứ ba là một **khẳng định rõ ràng, hơi bất ngờ**, không phải «chưa chắc».
+
+**Giới hạn khi áp cho kênh (điều kiện 2 của Reviewer, W-16):** vế «mà vì…» hay «thứ tạo khác biệt là…» phải **truy được về lock nguồn**, kèm dòng. Với clip-05, lock RK2006 Exp1 chỉ cho phép nói ở cấp **thao tác và kết quả**: việc làm ngay sau lần đọc đầu (thêm một lượt đọc lại hay tự viết ra từ trí nhớ) cho kết quả khác nhau ở mốc đo (lock RK §6 mục 1–2, L81–82). Lock **cấm** «vì quen mắt», «não chưa lưu», «tự tin gây quên», cơ chế duy nhất hay chẩn đoán nguyên nhân quên của người xem (lock RK L88, b02dd07 L56). Các câu như «khoảng cách về kỹ thuật, không phải tài năng» (V03) hay «cảm giác quen mặt chữ đang đánh lừa bạn» (V02) là claim của creator. Kênh **không** được nói như vậy khi nguồn không chứng minh. Câu gỡ lỗi của kênh nên chỉ vào **bước làm**, không phán về năng lực hay bộ não người xem.
+
+*Các trích dưới đây chỉ là mẫu **dáng câu** «không phải [người] … mà là [cách làm]». Vế cơ chế trong đó (V04 «não… được thiết kế để làm như vậy», V03 «khoảng cách kỹ thuật») là claim chưa kiểm, kênh không dùng.*
 - V02: «bạn không học chậm [00:01] bạn đang học bằng cách AI cũng dùng mà kém hiệu quả [00:04] đọc đi đọc lại»
 - V03: «đây không phải là khoảng cách về tài năng [00:09] mà là khoảng cách về kỹ thuật»
 - V04: «não của bạn không có vấn đề gì đâu chỉ là nó được thiết kế để làm như vậy thôi»
@@ -184,6 +194,8 @@ Câu thứ hai hoặc thứ ba là một **khẳng định rõ ràng, hơi bất
 
 ### NT4. Trong khoảng 10 giây đầu, hứa một kết quả cụ thể và mở một vòng tò mò
 Người xem được biết họ sẽ nhận **kết quả gì** (nhớ lâu hơn, ra khỏi giường trong 20 phút), mất bao nhiêu bước hay bao lâu, và có một chi tiết treo để chờ.
+
+**Giới hạn khi áp cho kênh (điều kiện 3 của Reviewer):** lời hứa chỉ được nằm **trong phạm vi nguồn**. Với clip-05, đó là «nhớ được nhiều ý hơn ở mốc đo» (2 ngày, 1 tuần), có nhắc mốc 5 phút khi nói chiều kết quả (lock RK L48). **Không** hứa «nhớ hết», «nhớ mãi», «gấp đôi», «nhớ bất cứ thứ gì», và không hứa tỷ lệ cho cá nhân (lock RK L89–90, b02dd07 L55). Các lời hứa như V03 («ghi nhớ bất cứ thứ gì nhanh đến mức khó tin») hay V02 («HỌC NHANH GẤP ĐÔI» trên ảnh bìa) là phóng đại, kênh không chép.
 - V03: «kỹ thuật này chỉ mất năm phút để học BA bước [00:12] bước đầu tiên nghe như phí thời gian [00:14] bước cuối cùng chính là lý do các bạn quên hết mọi thứ»
 - V02: «có một thí nghiệm Cho thấy đọc ít lần hơn lại nhớ lâu hơn [00:34] và cách làm đơn giản đến bất ngờ»
 - V14: «Here are 10 out of 10 habits to build extreme discipline. But they get progressively harder.»
@@ -195,8 +207,8 @@ Số không đứng một mình. Nó luôn là **so sánh** (nhóm A vs nhóm B,
 - V06: «cộng hết 3.000.000 chín một tháng [01:59] một năm gần 47.000.000 gấp BA lần cái máy giặt nhà anh xanh»
 - V07: «5.000.000 mỗi tháng nghe có vẻ nhỏ [00:21] nhưng sau khoảng 20 tháng [00:22] chị Hương đã tích lũy được 100.000.000đ»
 
-### NT6. Giải thích cơ chế bằng một hình ảnh đời thường trong 1–2 câu
-Phải là hình người xem đã từng làm (hát theo bài hát, tập gym, nhìn bản đồ), không phải thuật ngữ. *(Ở kênh, ẩn dụ là minh họa biên tập, có nhãn, và không được nói quá điều nguồn đã chứng minh.)*
+### NT6. Một hình ảnh đời thường trong 1–2 câu cho điều nguồn đã đo
+Phải là hình người xem đã từng làm (hát theo bài hát, tập gym, nhìn bản đồ), không phải thuật ngữ. *(Ở kênh, ẩn dụ là minh họa biên tập, có nhãn. Ẩn dụ chỉ minh họa **thao tác và kết quả** nguồn đã đo, **không** giải thích cơ chế nếu lock không có nguồn cho cơ chế đó. Với clip-05, lock RK2006 Exp1 không cho cơ chế nào (RK L75, L88). Ba trích dưới đây chỉ là mẫu **dáng câu**: V01 «bản đồ» và V03 «hát theo» ngầm nói cơ chế, kênh không chép phần cơ chế.)*
 - V01: «bạn có thể đứng trước tấm bản đồ [00:24] và nhìn thấy ngôi nhà ấy hàng trăm lần [00:26] nhưng điều đó không có nghĩa bạn biết đường đến đó»
 - V03: «các bạn không ngồi đọc đi đọc lại các bạn hát Theo Sai vài từ rồi thử lại [00:51] đến lần thứ BA từ ngữ tự tuôn Ra»
 - V13: «I kind of think of it like going to the gym. You don't walk in one day and Just lift your heaviest weight.»
@@ -224,10 +236,10 @@ Văn bản đối chiếu:
 |---|---|---|
 | **NT1** nỗi đau của «bạn» trong 3 giây | **Hỏng.** Chủ ngữ là «sinh viên… trong một thí nghiệm», không phải người xem. Câu đầu là báo cáo 22 chữ với 4 lớp rào («trung bình», «số ý», «sau hai ngày», «trong một thí nghiệm»). Người lướt không thấy chuyện của mình. | **Hỏng ở thời điểm.** Cả ba mở bằng vế công sức hoặc dàn cảnh, và vế đau chỉ tới ở giây 5–8 (chính file r16 tự ước). So với V01: «bạn đã đọc bài năm lần nhưng vẫn không nhớ nổi một nửa» chứa trọn công sức và thất bại trong 3 giây. |
 | **NT2** nỗi đau phổ biến, có giá thật | **Hỏng.** Không có nỗi đau, chỉ có một tỷ lệ. | **Hỏng nặng nhất ở đây.** Ba tình huống được chọn để *khác các bản bị bác* (L-088/L-095), không phải vì người xem hay gặp. Viết giới thiệu sách (C1) là việc ít người làm. Mở ảnh (C2) và lật sách (C3) chỉ tốn vài giây, nên không có cái giá nào đáng sợ. Con đòi kể chuyện tuần trước (C3) là cảnh hẹp và hơi lạ. Video thật chọn «hỏi lại thì trống trơn», «mở sao kê», «3 giờ sáng chưa ngủ». |
-| **NT3** gỡ lỗi + lật niềm tin bằng khẳng định | **Hỏng.** S02 hỏi một câu người xem không bao giờ tự hỏi («đủ để chọn đọc lại cho mốc một tuần chưa»), tức câu về tham số kỹ thuật (L-101). S03 «Chưa» chỉ dẫn tới một thiết kế nghiên cứu, không lật niềm tin nào. | **Hỏng.** C2 và C3 trả lời bằng «Chưa chắc», C1 bằng «Một việc đáng thử». Đây là lời rào, không phải khẳng định, nên không có gì bất ngờ để người xem ở lại. C3 có ý gỡ lỗi («có phải tại bạn…»), nhưng đặt trên một tình huống hẹp, và câu trả lời không đổ rõ cho phương pháp như V02 («không phải vì bạn kém mà vì cảm giác quen mặt chữ đang đánh lừa bạn»). |
+| **NT3** gỡ lỗi + lật niềm tin bằng khẳng định | **Hỏng.** S02 hỏi một câu người xem không bao giờ tự hỏi («đủ để chọn đọc lại cho mốc một tuần chưa»), tức câu về tham số kỹ thuật (L-101). S03 «Chưa» chỉ dẫn tới một thiết kế nghiên cứu, không lật niềm tin nào. | **Hỏng.** C2 và C3 trả lời bằng «Chưa chắc», C1 bằng «Một việc đáng thử». Đây là lời rào, không phải khẳng định, nên không có gì bất ngờ để người xem ở lại. C3 có ý gỡ lỗi («có phải tại bạn…»), nhưng đặt trên một tình huống hẹp, và câu trả lời không đổ rõ cho phương pháp. V02 («không phải vì bạn kém mà vì cảm giác quen mặt chữ đang đánh lừa bạn») chỉ là mẫu **dáng câu** «không phải vì bạn…, mà vì [cách làm]…». Vế cơ chế «quen mặt chữ đánh lừa» không có nguồn trong lock (RK L88 cấm «vì quen mắt»), nên kênh không được dùng. Vế sau của kênh chỉ được là thao tác → kết quả ở mốc đo (RK L81–82). |
 | **NT4** hứa kết quả cụ thể + vòng tò mò | **Hỏng.** Lời hứa (S04 giữ nguyên) là «phép so cụ thể và một câu hỏi dùng ngay»: hứa một *phép so*, trong khi người xem muốn *nhớ được*. Không có vòng tò mò. | **Hỏng.** Cả ba câu trả lời đều hứa «năm 2006 có một thí nghiệm so…», tức lại hứa một thiết kế nghiên cứu, không hứa kết quả. 15 giây đầu không có thông tin mới nào. So với V02: «đọc ít lần hơn lại nhớ lâu hơn và cách làm đơn giản đến bất ngờ». |
 | **NT5** số = so sánh + hệ quả, đến sau khi người xem muốn biết | **Hỏng.** Con số 54% đến **trước** mọi lý do để quan tâm. Nó không được so với gì trong câu, nên người nghe không biết 54% là tốt hay xấu (thậm chí nghe khá ổn cho phía đọc lại). Đây là đúng «số không có hệ quả». | Không mở bằng số (đúng hướng). Nhưng phần bằng chứng vẫn để tận S10–S11, sau một chuỗi thiết kế (S06–S09), nên người xem nghe thiết kế trước khi biết kết quả đáng chờ. |
-| **NT6** ẩn dụ đời thường | Không có. | Không có. Cả ba dùng cảnh minh họa nhưng không giải thích *vì sao* đọc lại tạo cảm giác đã nhớ. |
+| **NT6** ẩn dụ đời thường | Không có. | Không có ẩn dụ cho điều nguồn đã đo (bước làm sau khi đọc → kết quả ở mốc đo). **Không** đòi r16 giải thích vì sao đọc lại tạo cảm giác đã nhớ: đó là cơ chế, lock cấm (RK L88; b02dd07 L56). Với clip-05, chỗ trống NT6 chỉ được lấp bằng ẩn dụ cho thao tác hoặc kết quả, hoặc bỏ trống. |
 | **NT7** bước có tên, lộ chỗ hở, callback, thử ngay | Thân bài S04–S21 có CTA và câu hỏi dùng ngay, nhưng không có bước nào để lộ chỗ hở dẫn sang bước sau. Callback về hình mở không làm được, vì phần mở không có hình. | Không áp dụng (chỉ là concept phần mở). Rủi ro: hook đổi sang sách, ảnh hay truyện thì thân bài nói «bài», nên callback bị lệch quy chiếu (file r16 đã tự ghi). |
 
 ### Tóm lại, vì sao hỏng (nói thẳng)
@@ -243,18 +255,26 @@ Văn bản đối chiếu:
 
 1. **Thử câu đầu trước khi viết tiếp:** một câu, chủ ngữ «bạn», chứa *việc người xem đã làm* và *kết quả tệ*, nói trọn trong khoảng 3 giây (ƯỚC). Hỏi: người lạ nghe một lần có tự nói «đúng là tôi» không? Không thì bỏ, đừng vá chữ.
 2. **Chấm nỗi đau theo hai câu hỏi:** (a) trong tháng qua, bao nhiêu người xem đã gặp chuyện này? (b) cái giá là gì (xấu hổ, mất tiền, mất giờ, mất ngủ)? Nỗi đau hiếm hoặc rẻ thì loại, kể cả khi nó «mới».
-3. **Câu 2–3 là khẳng định lật niềm tin, đổ cho phương pháp.** Không dùng «chưa chắc» làm câu trả lời hook. Muốn đúng luật nguồn thì thu hẹp phạm vi («trong thí nghiệm này…»), đừng rào cả câu.
-4. **Trong 10 giây đầu, hứa kết quả người xem muốn** (nhớ được, kể lại được, giữ được tiền), không hứa «phép so» hay «một thí nghiệm».
+3. **Câu 2–3 là khẳng định lật niềm tin, đổ cho phương pháp.** Không dùng «chưa chắc» làm câu trả lời hook. Muốn đúng luật nguồn thì thu hẹp phạm vi («trong thí nghiệm này…»), đừng rào cả câu. Vế «vì…» chỉ nói điều lock cho phép (thao tác → kết quả ở mốc đo), không chẩn đoán người xem (W-16).
+4. **Trong 10 giây đầu, hứa kết quả người xem muốn** (nhớ được, kể lại được, giữ được tiền), không hứa «phép so» hay «một thí nghiệm». Lời hứa nằm trong phạm vi nguồn (nhớ được nhiều hơn ở mốc đo), không «nhớ hết» hay phóng đại.
 5. **Đưa nghiên cứu vào như chuyện hai nhóm**, nói chiều kết quả trước rồi mới tới chi tiết thiết kế cần cho đúng nguồn. Con số luôn có vật so hoặc hệ quả.
-6. **Một ẩn dụ đời thường**, có nhãn minh họa, không nói quá cơ chế mà nguồn cho phép (W-16).
+6. **Một ẩn dụ đời thường** (tùy chọn), có nhãn minh họa, chỉ cho thao tác hoặc kết quả nguồn đã đo. Không giải thích cơ chế khi lock không có nguồn cho cơ chế đó (W-16; clip-05: RK L88).
 7. **Kết bằng callback về hình câu đầu và một việc thử ngay trong video**, đúng luật một CTA của kênh.
-8. **Câu nói ngắn:** mỗi mệnh đề khoảng 5–12 chữ và vẫn giữ chủ ngữ (W-09). Các video tiếng Việt thật cho thấy câu ngắn mà đủ chủ ngữ hoàn toàn làm được.
+8. **Vế câu ngắn, câu không cộc:** mỗi vế khoảng 5–12 chữ, có chủ ngữ rõ (W-09). Các vế nối bằng quan hệ nhân quả hoặc đối chiếu thành một câu nói liền. Không để hai câu liền nhau dưới 8 chữ (L-096), và câu phải rõ nghĩa khi nghe một lần (L-098).
 
-**Chỗ có thể xung đột với luật kênh. Mình không tự quyết, Rule Reviewer hoặc Hiệp quyết:**
+**Chỗ từng có thể xung đột với luật kênh** (ba ý sau đã được Rule Reviewer quyết, xem mục 5b):
 - **L-087 (không lấy ví dụ môn học):** phần lớn video VI về học là chuyện đi học. V02 cho thấy cách chuyển sang đời sống: «học tiếng anh học Excel hay học một nghề mới», hệ quả là tăng lương. Kênh cần làm đúng việc chuyển này.
 - **L-088 và L-095 (khác các bản trước):** cần làm rõ rằng «khác» là khác *lời và khung kể*, không phải bỏ nỗi đau phổ biến để chọn nỗi đau hiếm. r16 hỏng một phần vì hiểu «khác» theo nghĩa thứ hai.
 - **Khoảnh khắc «bị hỏi lại»:** V01 và V02 dùng đúng khoảnh khắc này, và nó chạy tốt. Các bản clip-05 v8–v9 có khung «bị hỏi lại» từng bị bác. Cần Reviewer xác định lúc đó bị bác vì *khung* hay vì *cách viết*, trước khi ai đó né hay dùng lại.
 - **Con số 40%/61% trong V02:** nghe giống RK 2006 Exp2, mà lock hiện tại để Exp2 ngoài phạm vi. Muốn dùng phải qua Deep Research. Mình không đề xuất dùng.
+
+## 5b. Quyết định của Rule Reviewer khi kiểm bản `51f1be5e` (11/11/2026, chuyển qua parent)
+
+- **(a) Nỗi đau «bị hỏi lại thì trống trơn»:** **được dùng lại**, nhưng phải viết mới thật, **không chép câu chữ v6–v9**. Hai lần bác trước: r8.2 bị bác vì nhạt (L-095); r9.2 bị bác vì thiếu lý do dừng, thiếu dẫn chứng và câu cộc (L-096). Dùng lại nỗi đau không miễn hai luật này.
+- **(b) L-088/L-095:** «khác» nghĩa là khác **cách nói và khung kể**. Hai luật này **không** bắt bỏ nỗi đau phổ biến. Tuy vậy, hook mới **không được trùng cách nói** của hook clip-04 «Học thuộc tối qua, sáng dậy quên sạch?».
+- **(c) Không dùng 40%/61% (RK 2006 Exp2).** Chỉ dùng số Exp1 trong lock: 5 phút SS81/ST75, 2 ngày SS54/ST68, 1 tuần SS42/ST56, mỗi mốc là những người khác nhau.
+- **Vòng kiểm 2 (11/11/2026 ~10:11 UTC+7):** Reviewer chỉ ra file còn đòi/khen cơ chế không có lock (hàng NT6 chê r16 thiếu «vì sao đọc lại tạo cảm giác đã nhớ»; hàng NT3 lấy V02 «quen mặt chữ» làm mẫu tốt). Đã sửa: hàng NT6 không đòi cơ chế; NT3, NT6, mục 2 (V02, V04, V05) ghi rõ trích chỉ là mẫu dáng câu; mục 5 ý 6 và mục 7 ý 6 đổi ẩn dụ thành tùy chọn, chỉ cho thao tác/kết quả.
+- Bốn điều kiện sửa (câu ngắn theo L-096/L-098; vế «vì…» truy lock theo W-16; lời hứa trong phạm vi nguồn; bài học về lời, không phải bằng chứng hiệu quả) đã sửa ở đầu file, NT1, NT3, NT4, mục 5 và mục 7.
 
 ---
 
@@ -272,14 +292,15 @@ Văn bản đối chiếu:
 ```markdown
 ## 2b. Hook and retention from real videos (study 2026-11-11, research/craft/hook-script-study-2026-11-11.md)
 Before scoring any rule, check the opening as a stranger hearing it once:
-1. Line 1 = the viewer's own pain, subject "bạn", effort + bad result in ONE short sentence, fully heard within ~3 s (estimated). No setup clause before the pain. A study result, percentage or other people ("sinh viên trong thí nghiệm") is never line 1.
+Scope: these are lessons about WORDING from 15 videos whose 0–3 s visuals were not watched and that have no retention data; they are not evidence that a style performs better.
+1. Line 1 = the viewer's own pain, subject "bạn", effort + bad result in ONE sentence, fully heard within ~3 s (estimated). No setup clause before the pain. A study result, percentage or other people ("sinh viên trong thí nghiệm") is never line 1.
 2. Pick a pain that many viewers had this month AND that costs something (embarrassment, money, time, sleep). Show the exposure moment. Reject rare or cheap pains even if they are "fresh"; freshness (L-088/L-095) applies to wording and frame, not to giving up a common pain.
-3. Lines 2–3 = a clear, scoped claim that clears the viewer and blames the method ("không phải vì bạn kém, mà vì…"). Never answer the hook with a hedge ("chưa chắc", "một việc đáng thử") or with a study design ("năm 2006 có một thí nghiệm so…").
-4. Within ~10 s promise the result the viewer wants (remember, retell, keep money), plus one open loop (number of steps, a surprising step). Never promise "a comparison".
+3. Lines 2–3 = a clear, scoped claim that clears the viewer and blames the method/step, not the person. Any "because…" clause must trace to a fact-lock line (W-16): operational level only (what was done after reading → result at a measured delay); no unsourced mechanism ("quen mắt", "khoảng cách kỹ thuật, không phải tài năng") and no diagnosis of the viewer's forgetting. Never answer the hook with a hedge ("chưa chắc", "một việc đáng thử") or with a study design ("năm 2006 có một thí nghiệm so…").
+4. Within ~10 s promise the result the viewer wants (remember, retell, keep money), plus one open loop (number of steps, a surprising step). Never promise "a comparison". Promise only within source scope (e.g. "remember more ideas at the measured delay"); never "remember everything", "double", "forever", or a personal percentage.
 5. Evidence = a two-group/two-person story: direction of result first, a felt consequence, then the design details needed for source accuracy. A number always has a comparator or consequence.
-6. At most one everyday metaphor for the mechanism, labelled as editorial illustration, never beyond the source (W-16).
+6. Optional: at most one everyday metaphor, labelled as editorial illustration, for the measured action/result only. Never explain a mechanism the fact lock does not source (W-16); do not criticise a draft for lacking a mechanism the lock forbids.
 7. Named steps where each exposes the gap the next one fixes; end with a callback to the line-1 image and one try-it-now action (single CTA).
-Spoken clauses ~5–12 words, each with its subject. Record for each hook: (a) the pain line and its estimated second, (b) why a stranger says "that's me", (c) whether the hook question is one the viewer would ask themselves (L-101). Checker/pattern-fit passes never substitute for this.
+Spoken CLAUSES ~5–12 words, each with its subject, joined by cause/contrast into flowing sentences; never two consecutive sentences under 8 words (L-096) and every sentence clear on one hearing (L-098). Record for each hook: (a) the pain line and its estimated second, (b) why a stranger says "that's me", (c) whether the hook question is one the viewer would ask themselves (L-101). Checker/pattern-fit passes never substitute for this.
 ```
 
 Mình cũng đề xuất thêm một dòng vào mục 5 (Critique loop): «Khi chọn 3 concept sau một lần bị bác, trước hết xếp hạng nỗi đau theo độ phổ biến và cái giá, rồi mới làm bảng fit P/F. Không chọn tình huống chỉ vì nó khác các bản bị bác.»
@@ -289,6 +310,7 @@ Mình cũng đề xuất thêm một dòng vào mục 5 (Critique loop): «Khi c
 ## 8. Giới hạn dữ liệu
 - Chưa xem video. Chỉ có ảnh bìa và transcript tự động. Nội dung hình ở giây 0–3 của cả 15 video: CHƯA XEM HÌNH.
 - Không có dữ liệu retention hay completion. «Giữ người xem» là phân tích cấu trúc lời.
+- Vì hai giới hạn trên, toàn bộ file là **bài học về lời**, không phải bằng chứng hiệu quả (điều kiện 4 của Reviewer).
 - 15 video là ứng viên lấy từ tìm kiếm (sắp theo like, không đảm bảo), không phải mẫu đại diện hay bảng trend. Lượt xem trọn đời không chứng minh video đang tăng.
 - Transcript nhận dạng tự động, có lỗi chữ. Trích nguyên văn, không sửa. Có một đoạn THIẾU (V09, 00:03–00:15).
 - Fact và cơ chế trong các video chưa kiểm. Không claim nào được chuyển thành nguồn cho kênh.
