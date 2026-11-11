@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-bieu-do-ca-phe-ly-ba-gio-chieu",
+ "title": "[STUB] Biểu đồ cà phê viral trên X (09/11): cà phê ở lại trong người lâu hơn cơn tỉnh. Sách 3.4: ly sau 2 giờ chiều lấy giấc mà mình không thấy; giao việc «đẩy cơn buồn ngủ chiều» cho 10 phút chợp mắt (3.11)",
+ "meta": {
+  "week": 3,
+  "status": "stub-needs-approval",
+  "trend_id": "caffeine-graph-reveals-lingering-effects-on-sleep",
+  "bridge_id": "B-cafe6h-02",
+  "lesson": "3.4 Sau 2 giờ chiều không đụng caffeine (mức A; Drake et al. 2013: 400 mg ≈ 3–4 ly, 6 giờ trước ngủ → máy đo ngủ ít hơn 1,1–1,2 giờ, nhật ký tự ghi không thấy khác; Gardiner et al. 2023 meta: trung bình −45 phút ngủ, một ly 250 ml/107 mg cần xong ≥8,8 giờ trước ngủ; sách ghi Drake chỉ một lab, liều cao; người chuyển hoá chậm cần mốc sớm hơn). Phụ: 3.11 chợp 10 phút, không 30 phút (mức B; Brooks & Lack 2006, một nghiên cứu lab, sau đêm ngủ thiếu). Câu «giao việc của ly cà phê cho 10 phút chợp mắt» là đề xuất biên tập. Số 67 mg / 285 mg / 5 giờ bán thải trong tóm tắt X là mô phỏng, chưa tự kiểm, không vào voice.",
+  "angle": "contrarian / data",
+  "pattern": "P10 (hook) + P03 (turn)",
+  "differentiation": "Mọi người đang nói: dừng cà phê trước trưa hoặc 8–9 tiếng trước ngủ, tuỳ gen, và «bạn sẽ không cảm thấy đâu» ([X News 09/11](https://x.com/i/trending/2119903300115943689); [@NeoHealthApp](https://x.com/NeoHealthApp/status/2120126323054231749) và [@ebubxchii_](https://x.com/ebubxchii_/status/2120184557622133231) dẫn lại Drake 2013). Góc của mình: không bắt nhịn bằng ý chí; ly 3 giờ chiều đang làm một việc (đẩy cơn buồn ngủ chiều) nên giao việc đó cho 10 phút chợp mắt (3.11, phần consensus không nhắc), và thử dời ly cuối lên trước 2 giờ một tuần. Đây là hook trend mới cho cùng ô #17 của B-cafe6h-01 (20/10, TikTok «6 tiếng» nay đã cũ 3 tuần) và B-caphesang-01 (29/10); thân bài có thể dùng lại khung plan-2-ca-phe-6-tieng, không phải góc mới hoàn toàn."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b01",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ly cà phê ba giờ chiều giúp bạn qua cơn buồn ngủ, mà tối lại nằm mãi mới ngủ được?",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "3pm coffee. Then lying awake?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b02",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mấy hôm nay có một biểu đồ cà phê lan khắp mạng: cà phê ở lại trong người lâu hơn cơn tỉnh rất nhiều. Mà nhiều người vẫn bảo: mình uống xong vẫn ngủ được mà.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "The viral coffee chart.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ba giờ chiều ở văn phòng, mắt díp lại, đồng nghiệp rủ order cà phê sữa đá, bạn gật liền.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "3pm. Iced coffee? Yes.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách có một thí nghiệm: cho người ta uống lượng caffeine cỡ ba bốn ly cà phê, sáu tiếng trước giờ ngủ. Máy đo thấy họ ngủ ít đi hơn một tiếng.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "6 hours before bed: an hour lost.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mà nhật ký ngủ họ tự ghi thì không thấy khác gì. Câu «mình vẫn ngủ được» là thật, chỉ là ngủ ít hơn mình tưởng.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "You sleep. Just less, unnoticed.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b06",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Gộp nhiều nghiên cứu lại, một ly cỡ hai trăm năm mươi mi-li-lít nên uống xong trước giờ ngủ hơn tám phẩy tám tiếng. Ngủ lúc mười một giờ đêm thì mốc là hai giờ chiều.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "One cup: done 8.8h before bed.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thí nghiệm sáu tiếng kia chỉ một phòng lab làm, liều khá cao. Ai chuyển hoá caffeine chậm thì mốc còn phải sớm hơn.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One lab. High dose.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b08",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên đừng chỉ cố nhịn ly đó. Nó đang làm một việc là đẩy cơn buồn ngủ chiều. Giao việc đó cho mười phút chợp mắt, đừng để quá ba mươi phút.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Swap the cup for a 10-min nap.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "bieu-do-ca-phe-ly-ba-gio-chieu.b09",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ly cà phê cuối của bạn hôm qua là mấy giờ? Tuần này thử dời nó lên trước hai giờ chiều xem.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Last coffee yesterday? Before 2pm this week.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

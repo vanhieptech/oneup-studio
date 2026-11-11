@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-10
+updated: 2026-11-11
 tags: [ideas]
 ---
 # Idea bank
@@ -94,4 +94,6 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Làm không ít mà cuối tháng không dư: tìm khoản tự trừ đã quên trước khi tự trách (B-ro-tien-01) | 5.1 | tiền / đăng #28 | "Trên mạng có cô gái lương ba mươi mốt triệu, để dành được hai mươi triệu. Còn bạn làm cũng không ít, mà cuối tháng không dư đồng nào?" | DARK | stub 2026-11-09, chờ duyệt (5.1 mức C, bỏ phần luật Trung Quốc) |
 | Mạng cãi «làm nhanh thì bị giao thêm việc»: không giấu, không làm chậm; học đúng một phím tắt cho thao tác lặp ≥10 lần/ngày, rồi tự quyết phần giờ dư đi đâu (B-phimtat-01) | 4.17 | trụ 3 / đăng #13 | "Mạng đang cãi nhau: làm nhanh quá thì bị giao thêm việc, vậy có nên giấu mẹo đi không? Mình chọn cách khác: học đúng một phím tắt, rồi tự quyết phần giờ dư đi đâu." | LIGHT | stub 2026-11-10, chờ duyệt (bridge đầu tiên cho ô #13; `research/trends/2026-11-10/plans/plan-1-phim-tat-gio-du-cua-ban.json`) |
 | «Không cần đi làm nữa» bị nhại khắp TikTok: trước khi trả tiền cho khoá học hứa câu đó, hỏi còn phải đóng thêm gì, thu nhập đến từ đâu; xin hợp đồng, tên công ty, điều kiện hoàn tiền (B-khongdilam-01) | 12.24 | tiền / sự nghiệp | "Cả TikTok đang nhại câu «không cần đi làm nữa». Vậy nếu tối nay gặp một khoá học hứa đúng câu đó, bạn sẽ hỏi họ câu gì trước khi chuyển khoản?" | DARK | stub 2026-11-10, chờ duyệt; caution: không nhắc/vẽ diễn giả bị nhại, bỏ toàn bộ vụ án/luật Trung Quốc (`research/trends/2026-11-10/plans/plan-2-khong-can-di-lam-nua-hoi-hai-cau.json`) |
+| Biểu đồ cà phê viral trên X: ly 3 giờ chiều lấy giấc mà mình không thấy; giao việc «đẩy cơn buồn ngủ chiều» cho 10 phút chợp mắt (B-cafe6h-02, hook trend mới cho góc B-cafe6h-01) | 3.4 (+3.11) | trụ 3 năng lượng | "Ly cà phê ba giờ chiều giúp bạn qua cơn buồn ngủ, mà tối lại nằm mãi mới ngủ được? Mấy hôm nay có một biểu đồ cà phê lan khắp mạng: cà phê ở lại trong người lâu hơn cơn tỉnh rất nhiều." | DARK | stub 2026-11-11, chờ duyệt (đăng #17; `research/trends/2026-11-11/plans/plan-1-bieu-do-ca-phe-ly-ba-gio-chieu.json`) |
+| TikTok «Dưới 30 tuổi nên xem» khuyên bớt người chỉ rủ nhậu; comment kể bỏ xong không còn bạn: cắt cuộc nhậu, đừng cắt người; gặp người đều đặn là một khoản chi cho sức khoẻ (B-gapnguoi-01) | 22.9 (+3.16) | trụ 4 tâm trí | "Một clip hơn bảy trăm nghìn lượt xem đang khuyên người dưới ba mươi: bớt thời gian cho những người chỉ rủ đi ăn chơi, nhậu nhẹt. Mà dưới comment, có người kể mình bỏ được từ năm hai mươi hai, giờ gần như chẳng còn bạn." | LIGHT | stub 2026-11-11, chờ duyệt; caution KOL thật (ý tưởng mới; `research/trends/2026-11-11/plans/plan-2-cat-cuoc-nhau-dung-cat-nguoi.json`) |
 | Cầu thủ hít thở trước penalty: trước cuộc gọi khó, 5 phút thở dài vòng (B-penalty-01) | 22.8 | trụ 4 tâm trí / đăng #21 | "Cầu thủ đứng trước chấm phạt đền, cả sân nhìn mình, và việc đầu tiên anh làm là… thở. Trước một cuộc gọi khó, bạn có cho mình nhịp thở đó không?" | LIGHT | ý tưởng (2026-11-10; hook thay thế B-met-01; caution: link có thể đã gỡ, không dùng footage) |

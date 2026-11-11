@@ -1,0 +1,61 @@
+{
+ "date": "2026-11-11",
+ "ideas": [
+  {
+   "id": "bieu-do-ca-phe-ly-ba-gio-chieu",
+   "title": "Biểu đồ cà phê viral trên X (09/11): cà phê ở lại trong người lâu hơn cơn tỉnh. Sách 3.4: ly sau 2 giờ chiều lấy giấc mà mình không thấy; giao việc «đẩy cơn buồn ngủ chiều» cho 10 phút chợp mắt (3.11)",
+   "trend_id": "caffeine-graph-reveals-lingering-effects-on-sleep",
+   "bridge_id": "B-cafe6h-02",
+   "lesson": "3.4 Sau 2 giờ chiều không đụng caffeine (mức A; Drake et al. 2013: 400 mg ≈ 3–4 ly, 6 giờ trước ngủ → máy đo ngủ ít hơn 1,1–1,2 giờ, nhật ký tự ghi không thấy khác; Gardiner et al. 2023 meta: trung bình −45 phút ngủ, một ly 250 ml/107 mg cần xong ≥8,8 giờ trước ngủ; sách ghi Drake chỉ một lab, liều cao; người chuyển hoá chậm cần mốc sớm hơn). Phụ: 3.11 chợp 10 phút, không 30 phút (mức B; Brooks & Lack 2006, một nghiên cứu lab, sau đêm ngủ thiếu). Câu «giao việc của ly cà phê cho 10 phút chợp mắt» là đề xuất biên tập. Số 67 mg / 285 mg / 5 giờ bán thải trong tóm tắt X là mô phỏng, chưa tự kiểm, không vào voice.",
+   "angle": "contrarian / data",
+   "pattern": "P10 (hook) + P03 (turn)",
+   "differentiation": "Mọi người đang nói: dừng cà phê trước trưa hoặc 8–9 tiếng trước ngủ, tuỳ gen, và «bạn sẽ không cảm thấy đâu» ([X News 09/11](https://x.com/i/trending/2119903300115943689); [@NeoHealthApp](https://x.com/NeoHealthApp/status/2120126323054231749) và [@ebubxchii_](https://x.com/ebubxchii_/status/2120184557622133231) dẫn lại Drake 2013). Góc của mình: không bắt nhịn bằng ý chí; ly 3 giờ chiều đang làm một việc (đẩy cơn buồn ngủ chiều) nên giao việc đó cho 10 phút chợp mắt (3.11, phần consensus không nhắc), và thử dời ly cuối lên trước 2 giờ một tuần. Đây là hook trend mới cho cùng ô #17 của B-cafe6h-01 (20/10, TikTok «6 tiếng» nay đã cũ 3 tuần) và B-caphesang-01 (29/10); thân bài có thể dùng lại khung plan-2-ca-phe-6-tieng, không phải góc mới hoàn toàn.",
+   "theme": "dark",
+   "week": 3,
+   "target": "đăng #17 (3.4, DARK, tuần 3) — hook trend mới thay B-cafe6h-01; nối #16 (3.11) đăng ngay trước",
+   "hook_vi": "Ly cà phê ba giờ chiều giúp bạn qua cơn buồn ngủ, mà tối lại nằm mãi mới ngủ được? Mấy hôm nay có một biểu đồ cà phê lan khắp mạng: cà phê ở lại trong người lâu hơn cơn tỉnh rất nhiều.",
+   "moment_vi": "Ba giờ chiều ở văn phòng, mắt díp lại, đồng nghiệp rủ order cà phê sữa đá, bạn gật liền.",
+   "turn_vi": "Đừng chỉ cố nhịn ly đó. Nó đang làm một việc là đẩy cơn buồn ngủ chiều, vậy giao việc đó cho mười phút chợp mắt.",
+   "hook_en": "That 3pm coffee gets you through the slump, then you lie awake at night?",
+   "beats": [
+    {"text": "Ly cà phê ba giờ chiều giúp bạn qua cơn buồn ngủ, mà tối lại nằm mãi mới ngủ được?", "expression": "confused", "action": "talking", "duration": 6, "caption_en": "3pm coffee. Then lying awake?", "background": "grid"},
+    {"text": "Mấy hôm nay có một biểu đồ cà phê lan khắp mạng: cà phê ở lại trong người lâu hơn cơn tỉnh rất nhiều. Mà nhiều người vẫn bảo: mình uống xong vẫn ngủ được mà.", "expression": "surprised", "action": "talking", "duration": 8, "caption_en": "The viral coffee chart.", "background": "grid"},
+    {"text": "Ba giờ chiều ở văn phòng, mắt díp lại, đồng nghiệp rủ order cà phê sữa đá, bạn gật liền.", "expression": "sad", "action": "talking", "duration": 6, "caption_en": "3pm. Iced coffee? Yes.", "background": "desk"},
+    {"text": "Sách có một thí nghiệm: cho người ta uống lượng caffeine cỡ ba bốn ly cà phê, sáu tiếng trước giờ ngủ. Máy đo thấy họ ngủ ít đi hơn một tiếng.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "6 hours before bed: an hour lost.", "background": "grid"},
+    {"text": "Mà nhật ký ngủ họ tự ghi thì không thấy khác gì. Câu «mình vẫn ngủ được» là thật, chỉ là ngủ ít hơn mình tưởng.", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "You sleep. Just less, unnoticed.", "background": "grid"},
+    {"text": "Gộp nhiều nghiên cứu lại, một ly cỡ hai trăm năm mươi mi-li-lít nên uống xong trước giờ ngủ hơn tám phẩy tám tiếng. Ngủ lúc mười một giờ đêm thì mốc là hai giờ chiều.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "One cup: done 8.8h before bed.", "background": "grid"},
+    {"text": "Thí nghiệm sáu tiếng kia chỉ một phòng lab làm, liều khá cao. Ai chuyển hoá caffeine chậm thì mốc còn phải sớm hơn.", "expression": "neutral", "action": "talking", "duration": 6, "caption_en": "One lab. High dose.", "background": "grid"},
+    {"text": "Nên đừng chỉ cố nhịn ly đó. Nó đang làm một việc là đẩy cơn buồn ngủ chiều. Giao việc đó cho mười phút chợp mắt, đừng để quá ba mươi phút.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Swap the cup for a 10-min nap.", "background": "desk"},
+    {"text": "Ly cà phê cuối của bạn hôm qua là mấy giờ? Tuần này thử dời nó lên trước hai giờ chiều xem.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "Last coffee yesterday? Before 2pm this week.", "background": "room"}
+   ]
+  },
+  {
+   "id": "cat-cuoc-nhau-dung-cat-nguoi",
+   "title": "TikTok «Dưới 30 tuổi nên xem» (718k xem, 06/11) khuyên bớt người chỉ rủ ăn chơi nhậu nhẹt; comment kể bỏ xong thì gần như không còn bạn. Sách 22.9: coi gặp người đều đặn là khoản chi cho sức khoẻ; sách tự ghi không mâu thuẫn với 3.16 (cắt mối làm cạn sức, giữ mối làm hồi sức)",
+   "trend_id": "tt-quocnguyenkieuvi-7705090431322787080",
+   "bridge_id": "B-gapnguoi-01",
+   "lesson": "22.9 Coi việc gặp người đều đặn là một khoản chi cho sức khoẻ, đừng chỉ tìm người khi buồn (mức A; Holt-Lunstad et al. 2015, meta 70 nghiên cứu theo dõi, 3,4 triệu người, trung bình 7 năm: cô lập xã hội OR 1,29, cô đơn 1,26, sống một mình 1,32 với tử vong, rõ hơn ở người dưới 65; quan sát, không phải thử nghiệm, chưa có RCT chứng minh tăng giao tiếp giảm tử vong). Ghi chú sách: mục này không mâu thuẫn với 3.16 (bớt quan hệ làm mình kiệt sức, mức C, Rook 1984, 120 phụ nữ goá 60–89 tuổi). Câu «cắt cuộc nhậu, đừng cắt người» là đề xuất biên tập. Có nhắc chữ «tử vong» hay không: Deep Research / Rule Reviewer / Hiệp quyết.",
+   "angle": "contrarian / empathy",
+   "pattern": "P03 (+P10 ở khoảnh khắc)",
+   "differentiation": "Mọi người đang nói: dưới 30 hãy bớt thời gian cho người chỉ rủ ăn chơi, nhậu nhẹt, tìm môi trường người kỷ luật ([TikTok 06/11](https://www.tiktok.com/@quocnguyenkieuvi/video/7705090431322787080), 718.659 xem, 9.977 share); comment đồng tình «khó, nói thiệt là khó» (2.377 like). Góc của mình: không cãi lời khuyên bớt nhậu; chỉ thêm cái clip không nói: bớt cuộc nhậu khác bớt người, và sách xếp việc gặp người đều đặn ngang một khoản chi cho sức khoẻ (book fact consensus thiếu), lấy từ chính lời tự kể «bỏ được từ năm 22 tuổi, hầu như rất ít bạn bè luôn» (242 like). Khác B-hoplop-01 (họp lớp vắng, 14/10) và B-home-01 (millennials ở nhà, 15/10): không nói họp lớp hay thích ở nhà, nói khoảnh khắc từ chối rồi mất luôn nhóm bạn; khác B-noikhong-01 (3.16, nói không với lời nhờ).",
+   "theme": "light",
+   "week": 4,
+   "target": "ý tưởng mới 22.9 (ngoài 30 ô; trụ 4 tâm trí), LIGHT",
+   "hook_vi": "Một clip hơn bảy trăm nghìn lượt xem đang khuyên người dưới ba mươi: bớt thời gian cho những người chỉ rủ đi ăn chơi, nhậu nhẹt. Mà dưới comment, có người kể mình bỏ được từ năm hai mươi hai, giờ gần như chẳng còn bạn.",
+   "moment_vi": "Tối thứ Sáu nhóm bạn rủ đi nhậu, bạn từ chối. Tháng sau nhóm thôi rủ. Cuối tuần chỉ còn bạn với cái điện thoại.",
+   "turn_vi": "Cắt cuộc nhậu, đừng cắt người. Giữ lại vài người làm mình khoẻ ra, và hẹn họ cả lúc đang vui.",
+   "hook_en": "A viral clip says: under 30, cut friends who only invite you out drinking. One reply: I did, now I barely have friends.",
+   "beats": [
+    {"text": "Một clip hơn bảy trăm nghìn lượt xem đang khuyên người dưới ba mươi: bớt thời gian cho những người chỉ rủ đi ăn chơi, nhậu nhẹt.", "expression": "surprised", "action": "talking", "duration": 7, "caption_en": "Under 30? Cut the party friends.", "background": "grid"},
+    {"text": "Dưới comment, có người kể mình bỏ được từ năm hai mươi hai tuổi, giờ gần như chẳng còn bạn bè.", "expression": "sad", "action": "talking", "duration": 6, "caption_en": "One reply: now I barely have friends.", "background": "grid"},
+    {"text": "Tối thứ Sáu nhóm bạn rủ đi nhậu, bạn từ chối. Tháng sau nhóm thôi rủ. Cuối tuần chỉ còn bạn với cái điện thoại.", "expression": "sad", "action": "talking", "duration": 7, "caption_en": "Said no once. Then no more invites.", "background": "room"},
+    {"text": "Bớt nhậu là đúng. Sách cũng có một mục: bớt những mối quan hệ làm mình kiệt sức.", "expression": "neutral", "action": "talking", "duration": 6, "caption_en": "Cutting draining ties: fair.", "background": "grid"},
+    {"text": "Nhưng ngay trong sách có một mục khác: coi việc gặp người đều đặn là một khoản chi cho sức khoẻ, đừng chỉ tìm người khi buồn.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Seeing people: a health expense.", "background": "grid"},
+    {"text": "Gộp bảy mươi nghiên cứu theo dõi hơn ba triệu người: người sống cô lập, thấy cô đơn hay ở một mình đều gắn với nguy cơ tử vong cao hơn, khoảng một phần tư tới ba phần mười. Đây là quan sát, chưa chứng minh cái nào gây ra cái nào.", "expression": "confused", "action": "talking", "duration": 10, "caption_en": "70 studies, 3.4M people. Observational.", "background": "grid"},
+    {"text": "Sách ghi rõ hai mục này không cãi nhau: cắt những mối làm mình cạn sức, giữ lại vài mối làm mình hồi sức.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "Cut the draining. Keep the restoring.", "background": "grid"},
+    {"text": "Vậy cắt cuộc nhậu, đừng cắt người. Tuần này hẹn một người bạn đi bộ hay ăn sáng, lúc đang vui chứ không đợi lúc buồn.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Cut the drinks, not the friend.", "background": "room"},
+    {"text": "Có ai bạn lâu rồi chưa gặp, chỉ vì một lần mình từ chối cuộc nhậu không?", "expression": "happy", "action": "talking", "duration": 5, "caption_en": "Who haven't you seen since that no?", "background": "room"}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-cat-cuoc-nhau-dung-cat-nguoi",
+ "title": "[STUB] TikTok «Dưới 30 tuổi nên xem» (718k xem, 06/11) khuyên bớt người chỉ rủ ăn chơi nhậu nhẹt; comment kể bỏ xong thì gần như không còn bạn. Sách 22.9: coi gặp người đều đặn là khoản chi cho sức khoẻ; sách tự ghi không mâu thuẫn với 3.16 (cắt mối làm cạn sức, giữ mối làm hồi sức)",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "tt-quocnguyenkieuvi-7705090431322787080",
+  "bridge_id": "B-gapnguoi-01",
+  "lesson": "22.9 Coi việc gặp người đều đặn là một khoản chi cho sức khoẻ, đừng chỉ tìm người khi buồn (mức A; Holt-Lunstad et al. 2015, meta 70 nghiên cứu theo dõi, 3,4 triệu người, trung bình 7 năm: cô lập xã hội OR 1,29, cô đơn 1,26, sống một mình 1,32 với tử vong, rõ hơn ở người dưới 65; quan sát, không phải thử nghiệm, chưa có RCT chứng minh tăng giao tiếp giảm tử vong). Ghi chú sách: mục này không mâu thuẫn với 3.16 (bớt quan hệ làm mình kiệt sức, mức C, Rook 1984, 120 phụ nữ goá 60–89 tuổi). Câu «cắt cuộc nhậu, đừng cắt người» là đề xuất biên tập. Có nhắc chữ «tử vong» hay không: Deep Research / Rule Reviewer / Hiệp quyết.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 (+P10 ở khoảnh khắc)",
+  "differentiation": "Mọi người đang nói: dưới 30 hãy bớt thời gian cho người chỉ rủ ăn chơi, nhậu nhẹt, tìm môi trường người kỷ luật ([TikTok 06/11](https://www.tiktok.com/@quocnguyenkieuvi/video/7705090431322787080), 718.659 xem, 9.977 share); comment đồng tình «khó, nói thiệt là khó» (2.377 like). Góc của mình: không cãi lời khuyên bớt nhậu; chỉ thêm cái clip không nói: bớt cuộc nhậu khác bớt người, và sách xếp việc gặp người đều đặn ngang một khoản chi cho sức khoẻ (book fact consensus thiếu), lấy từ chính lời tự kể «bỏ được từ năm 22 tuổi, hầu như rất ít bạn bè luôn» (242 like). Khác B-hoplop-01 (họp lớp vắng, 14/10) và B-home-01 (millennials ở nhà, 15/10): không nói họp lớp hay thích ở nhà, nói khoảnh khắc từ chối rồi mất luôn nhóm bạn; khác B-noikhong-01 (3.16, nói không với lời nhờ)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Một clip hơn bảy trăm nghìn lượt xem đang khuyên người dưới ba mươi: bớt thời gian cho những người chỉ rủ đi ăn chơi, nhậu nhẹt.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Under 30? Cut the party friends.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b02",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Dưới comment, có người kể mình bỏ được từ năm hai mươi hai tuổi, giờ gần như chẳng còn bạn bè.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "One reply: now I barely have friends.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b03",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối thứ Sáu nhóm bạn rủ đi nhậu, bạn từ chối. Tháng sau nhóm thôi rủ. Cuối tuần chỉ còn bạn với cái điện thoại.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Said no once. Then no more invites.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bớt nhậu là đúng. Sách cũng có một mục: bớt những mối quan hệ làm mình kiệt sức.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Cutting draining ties: fair.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nhưng ngay trong sách có một mục khác: coi việc gặp người đều đặn là một khoản chi cho sức khoẻ, đừng chỉ tìm người khi buồn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Seeing people: a health expense.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b06",
+   "duration": 10,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Gộp bảy mươi nghiên cứu theo dõi hơn ba triệu người: người sống cô lập, thấy cô đơn hay ở một mình đều gắn với nguy cơ tử vong cao hơn, khoảng một phần tư tới ba phần mười. Đây là quan sát, chưa chứng minh cái nào gây ra cái nào.",
+     "start": 0.3,
+     "end": 9.7
+    }
+   ],
+   "caption": {
+    "text": "70 studies, 3.4M people. Observational.",
+    "start": 0.3,
+    "end": 9.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b07",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách ghi rõ hai mục này không cãi nhau: cắt những mối làm mình cạn sức, giữ lại vài mối làm mình hồi sức.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Cut the draining. Keep the restoring.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b08",
+   "duration": 8,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Vậy cắt cuộc nhậu, đừng cắt người. Tuần này hẹn một người bạn đi bộ hay ăn sáng, lúc đang vui chứ không đợi lúc buồn.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Cut the drinks, not the friend.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "cat-cuoc-nhau-dung-cat-nguoi.b09",
+   "duration": 5,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Có ai bạn lâu rồi chưa gặp, chỉ vì một lần mình từ chối cuộc nhậu không?",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Who haven't you seen since that no?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}
