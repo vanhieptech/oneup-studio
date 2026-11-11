@@ -15,6 +15,7 @@
   check-rules.py --link draft.md [more.md]       # L-094 (⚠): adjacent sentence pair (within or across beats) sharing no content word and not opening with a connector / back-reference
   check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
+  check-rules.py --vague-hook draft.md [more.md] # L-102 (⚠): hook hides the method («việc khác», «cách kia»…) with no name in that sentence and no promise in the hook; one result per concept (C1, A …)
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
@@ -700,6 +701,65 @@ def check_clarity_beats(items, where="draft"):
 def check_clarity_file(path):  # --clarity FILE (L-091)
     check_clarity_beats(draft_beats(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-102 (Hiệp 11/11 11:50 «nghĩa rời rạc», Rule Reviewer): --vague-hook <draft.md> — hook giấu cách làm mà không hứa
+# Heuristic (bảo thủ, chỉ ⚠, không bao giờ ✖; không thay cổng tay «mỗi câu tự có nghĩa khi nghe một lần»):
+#  1. Hook = các câu đánh số «1. …» / «> **S01** …» / «> S01: …» dưới heading concept «## C1 — …», «## A — …», «## Hook A — …», «### A' — …» (mỗi concept chấm riêng).
+#     Dòng «- Câu nối …», bảng, ghi chú, mục đánh số mở bằng «**» không tính là hook. File không có concept → khung nháp
+#     «N. **[Hook]** lời» (mọi mục nhãn Hook; không có thì mục 1).
+#  2. Cụm giấu (so sánh sau khi bỏ dấu, chữ thường): «việc khác», «cách kia», «cách khác», «cách ôn khác/kia», «kết quả (đã) khác»,
+#     «một việc thay cho …» (biến thể của «một việc khác thay cho …»).
+#  3. Được gỡ trong CÙNG câu nếu ngay sau cụm có «là / chính là / mà là / :» + tên (không phải «là gì») → ✔.
+#     Tên chỉ xuất hiện ở câu SAU không gỡ: câu có cụm giấu chỉ hiểu khi nghe câu sau (đúng lỗi L-102) → vẫn ⚠.
+#  4. Hook có câu hứa (câu có «là gì / ra sao / thế nào / bao nhiêu» + «nghe tiếp / phần sau / phần tiếp / ngay sau đây / mình nói / mình kể»,
+#     hoặc «mình nói ngay») → không ⚠, chỉ ℹ MANUAL PENDING: Reviewer nghe xem thân bài có nói ra ngay không.
+L102_VAGUE = ((r"\bcach on (?:khac|kia)\b", "cách ôn khác"), (r"\bviec khac\b", "việc khác"), (r"\bcach kia\b", "cách kia"),
+              (r"\bcach khac\b", "cách khác"), (r"\bket qua (?:da )?khac\b", "kết quả đã khác"), (r"\bmot viec thay cho\b", "một việc thay cho …"))
+L102_NAMED = re.compile(r"^[\s,]*(?:(?:do|nay|ay)\s+)?(?:chinh la|ma la|la|:)\s*(?!gi\b)\w")
+L102_PROMISE_Q = re.compile(r"\b(?:la gi|ra sao|the nao|bao nhieu)\b")
+L102_PROMISE_T = re.compile(r"\b(?:nghe tiep|phan sau|phan tiep|ngay sau day|minh noi|minh ke)\b")
+L102_PROMISE_1 = re.compile(r"\b(?:minh noi ngay|noi ngay day)\b")
+L102_CONCEPT_H = re.compile(r"^#{2,4}\s+(?:Hook\s+)?([A-Z]\d*'?)\s*[—–-]\s")
+L102_MANUAL = "manual gate L-102: nghe từng câu riêng lẻ, nói lại được ai làm gì, so với cái gì; đọc to/nghe thử bằng người thật, chưa làm → CHƯA KIỂM"
+
+def _l102_fold(t): return re.sub(r"\s+", " ", _fold(t.replace("**", "")).lower())
+
+def l102_hooks(md):
+    """→ [(concept_id, [câu hook])]. Concept file: heading «C1 — / A — / A' —» + câu «1. …» hoặc «> **S01** …»; không có thì khung nháp."""
+    units, cur = [], None
+    for ln in md.splitlines():
+        if re.match(r"^#{1,6}\s", ln):
+            m = L102_CONCEPT_H.match(ln); cur = (m.group(1), []) if m else None
+            if cur: units.append(cur)
+            continue
+        if cur is None: continue
+        m = re.match(r"^>\s*(?:\*\*S\d+\*\*|S\d+\s*:)\s*(.+)$", ln) or re.match(r"^\s*\d+\.\s+(?!\*\*)(.+)$", ln)
+        if m: cur[1].extend(_l089_sents(m.group(1)))
+    units = [u for u in units if u[1]]
+    if units: return units
+    items = draft_beats(md)
+    hk = [t for _, lab, t in items if re.search(r"hook", lab, re.I)] or [t for _, _, t in items[:1]]
+    return [("hook", [x for t in hk for x in _l089_sents(t)])] if hk else []
+
+def check_vague_hook(units, where="draft"):
+    if not units: info("L-102", f"{where}: không tìm thấy hook (concept «## C1 — …» hoặc «N. **[Hook]**») → --vague-hook bỏ qua"); return
+    for cid, sents in units:
+        hid = []
+        for i, s_ in enumerate(sents, 1):
+            f = _l102_fold(s_)
+            for pat, lab in L102_VAGUE:
+                for m in re.finditer(pat, f):
+                    if not L102_NAMED.match(f[m.end():]): hid.append((i, lab))
+        prom = [i for i, s_ in enumerate(sents, 1) if L102_PROMISE_1.search(_l102_fold(s_))
+                or (L102_PROMISE_Q.search(_l102_fold(s_)) and L102_PROMISE_T.search(_l102_fold(s_)))]
+        tag = f"{where} {cid}"
+        hits = ", ".join(f"câu {i} «{lab}»" for i, lab in dict.fromkeys(hid))
+        if not hid: ok("L-102", f"{tag}: hook không giấu cách làm sau «việc khác / cách kia / kết quả đã khác»")
+        elif prom: info("L-102", f"{tag}: MANUAL PENDING — {hits}, có câu hứa (câu {', '.join(map(str, prom))}) → kiểm thân bài nói ra ngay; {L102_MANUAL}")
+        else: warn("L-102", f"{tag}: hook giấu cách làm ({hits}) mà câu đó không nêu tên và hook không có câu hứa «… là gì, nghe tiếp» → nêu tên ngay hoặc thêm lời hứa trong hook; {L102_MANUAL}")
+
+def check_vague_hook_file(path):  # --vague-hook FILE (L-102)
+    check_vague_hook(l102_hooks(open(path, encoding="utf8").read()), os.path.basename(path))
+
 # ---- L-093 (Hiệp 29/10 14:00 «Các câu nói chưa có chiều sâu còn lủng củng lặp từ quá nhiều»): --repeat <draft.md> — lặp từ/cụm, từ nối lặp
 L093_STOP = set("bạn mình và thì là mà có không được một hai rồi cho của với trong khi lại vẫn còn những các này đó nha nghe cũng đã sẽ đang ra vào lên để như hơn sau trước".split())
 L093_CONNECT = ("nhưng", "rồi", "còn", "mà", "và", "vậy")
@@ -924,6 +984,10 @@ def main():
     if a and a[0] == "--clarity":  # L-091 on draft script files (nghe một lần là hiểu: b01–b03)
         for f in a[1:]:
             if f != "--out" and f != outp: check_clarity_file(f)
+        return report(outp)
+    if a and a[0] == "--vague-hook":  # L-102 on draft/concept files (hook giấu cách làm mà không hứa)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_vague_hook_file(f)
         return report(outp)
     if a and a[0] == "--flow":  # L-089 on draft script files (đọc to liền mạch: ngôi kể, mối nối beat, cụm lặp khâu câu, liệt kê, câu gắn thêm)
         for f in a[1:]:
