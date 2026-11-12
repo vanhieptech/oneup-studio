@@ -16,6 +16,7 @@
   check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
   check-rules.py --vague-hook draft.md [more.md] # L-102 (⚠): hook hides the method («việc khác», «cách kia»…) with no name in that sentence and no promise in the hook; one result per concept (C1, A …)
+  check-rules.py --story-hook draft.md [more.md] # L-103 (⚠ hint only): «theo/trong một thí nghiệm», «trung bình», «người ta» in the first 2 hook sentences of each concept
   check-rules.py content/clips/<clip>/ --prosody final/prosody-measure-v16b.json   # voice-only mode: L-070 + E1 + L-027 on a voice-only preview measure
   (every mode also runs E1 + L-027 on the newest final/prosody-measure-*.json when one exists; see check_e1 / check_l027_voice)
 
@@ -760,6 +761,30 @@ def check_vague_hook(units, where="draft"):
 def check_vague_hook_file(path):  # --vague-hook FILE (L-102)
     check_vague_hook(l102_hooks(open(path, encoding="utf8").read()), os.path.basename(path))
 
+# ---- L-103 (Hiệp 12/11 13:10–13:11 «Phải là hook và theo hướng story telling», Rule Reviewer): --story-hook <draft.md>
+# Chỉ ⚠ gợi ý cho cổng tay (kể lại hook bằng «rồi… vì vậy… nhưng…»), không bao giờ ✖, không chứng minh có/không có mạch chuyện.
+# Hook và cách chia concept giống --vague-hook (l102_hooks). Chỉ xét 2 câu đầu của hook mỗi concept. So khớp sau NFC + chữ thường,
+# ranh giới chữ Unicode ((?<!\w) … (?!\w)) để «trung bình» khớp nhưng không khớp khi dính vào chữ khác.
+L103_PHRASES = ("theo một thí nghiệm", "trong một thí nghiệm", "trung bình", "người ta")
+L103_RX = [(ph, re.compile(r"(?<!\w)" + r"\s+".join(map(re.escape, ph.split())) + r"(?!\w)")) for ph in L103_PHRASES]
+L103_N = 2
+L103_MANUAL = ("gợi ý cho cổng tay L-103, không phải bằng chứng: kể lại cả hook bằng «rồi… vì vậy… nhưng…»; "
+               "đứt mạch hoặc câu báo cáo chèn vào → CHƯA ĐẠT; thí nghiệm phải bước vào như diễn biến của chuyện, có câu dẫn")
+
+def check_story_hook(units, where="draft"):
+    if not units: info("L-103", f"{where}: không tìm thấy hook (concept «## C1 — …» hoặc «N. **[Hook]**») → --story-hook bỏ qua"); return
+    for cid, sents in units:
+        hits = []
+        for i, s_ in enumerate(sents[:L103_N], 1):
+            t = unicodedata.normalize("NFC", s_).lower()
+            hits += [(i, ph) for ph, rx in L103_RX if rx.search(t)]
+        tag = f"{where} {cid}"
+        if hits: warn("L-103", f"{tag}: ngôn ngữ nghiên cứu trong {L103_N} câu đầu hook ({', '.join(f'câu {i} «{ph}»' for i, ph in hits)}) → {L103_MANUAL}")
+        else: ok("L-103", f"{tag}: {L103_N} câu đầu hook không có «theo/trong một thí nghiệm / trung bình / người ta» (chưa chứng minh mạch chuyện; cổng tay L-103 vẫn chạy)")
+
+def check_story_hook_file(path):  # --story-hook FILE (L-103)
+    check_story_hook(l102_hooks(open(path, encoding="utf8").read()), os.path.basename(path))
+
 # ---- L-093 (Hiệp 29/10 14:00 «Các câu nói chưa có chiều sâu còn lủng củng lặp từ quá nhiều»): --repeat <draft.md> — lặp từ/cụm, từ nối lặp
 L093_STOP = set("bạn mình và thì là mà có không được một hai rồi cho của với trong khi lại vẫn còn những các này đó nha nghe cũng đã sẽ đang ra vào lên để như hơn sau trước".split())
 L093_CONNECT = ("nhưng", "rồi", "còn", "mà", "và", "vậy")
@@ -984,6 +1009,10 @@ def main():
     if a and a[0] == "--clarity":  # L-091 on draft script files (nghe một lần là hiểu: b01–b03)
         for f in a[1:]:
             if f != "--out" and f != outp: check_clarity_file(f)
+        return report(outp)
+    if a and a[0] == "--story-hook":  # L-103 on draft/concept files (gợi ý: ngôn ngữ nghiên cứu trong 2 câu đầu hook)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_story_hook_file(f)
         return report(outp)
     if a and a[0] == "--vague-hook":  # L-102 on draft/concept files (hook giấu cách làm mà không hứa)
         for f in a[1:]:
