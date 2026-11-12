@@ -1,0 +1,150 @@
+{
+  "endpoint_id": "anyapi.tiktok.search.videos",
+  "call_id": "818af418bec5497eb2b0aaffccb6b011",
+  "cost_usd": 0.0006,
+  "fetched_at": "2026-11-12 16:24:48 (Asia/Saigon)",
+  "query": "hồi mới đi làm mới hiểu",
+  "note": "datePosted=30 sortBy=1 fields max_items=10",
+  "status": 200,
+  "body": {
+    "output": {
+      "data": {
+        "nextCursor": null,
+        "videos": [
+          {
+            "author": "readytorace___",
+            "caption": "Đến khi tự mình đi làm, lo tiền nhà, tiền ăn, tiền sinh hoạt và đủ thứ hóa đơn mỗi tháng, mới hiểu kiếm được đồng tiền vất vả thế nào. Tiền vừa vào túi đã phải chia ra đủ thứ, nghĩ lại mới thấy ngày trước bố mẹ đã cực khổ và áp lực đến nhường nào để nuôi mình khôn lớn.",
+            "comments": 16,
+            "createdUtc": 1792986042,
+            "durationSeconds": 19,
+            "id": "7700816367078886677",
+            "likes": 7933,
+            "paidPartnership": false,
+            "region": "JP",
+            "saves": 930,
+            "shares": 931,
+            "url": "https://www.tiktok.com/@readytorace___/video/7700816367078886677",
+            "views": 81315
+          },
+          {
+            "author": "ray_chdh",
+            "caption": "",
+            "comments": 8,
+            "createdUtc": 1793004272,
+            "durationSeconds": 26,
+            "id": "7700894029671664902",
+            "likes": 1676,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 185,
+            "shares": 260,
+            "url": "https://www.tiktok.com/@ray_chdh/video/7700894029671664902",
+            "views": 18862
+          },
+          {
+            "author": "caocuong25t",
+            "caption": "Đi làm rồi mới hiểu mỗi đồng tiền kiếm được đều không dễ dàng tý nào #làmđường #láixe #asphalt #xuhuong #xuhuongtiktok ",
+            "comments": 11,
+            "createdUtc": 1792648424,
+            "durationSeconds": 20,
+            "id": "7699366309150199048",
+            "likes": 116,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 5,
+            "shares": 6,
+            "url": "https://www.tiktok.com/@caocuong25t/video/7699366309150199048",
+            "views": 12261
+          },
+          {
+            "author": "uximuoi2021",
+            "caption": "Ngày đầu đi làm tưởng ở trong tù mới ra hk. Kg đc xài đt tới chiều thả ra rồi về nhà mới dám mở nguồn lên đó trời🥹#xuhuong #tamtrang #côcôngnhân #capcut",
+            "comments": 0,
+            "createdUtc": 1791892974,
+            "durationSeconds": 19,
+            "id": "7696121696612519186",
+            "likes": 95,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 3,
+            "shares": 1,
+            "url": "https://www.tiktok.com/@uximuoi2021/video/7696121696612519186",
+            "views": 627
+          },
+          {
+            "author": "yen_trinh.n",
+            "caption": "Đi làm mới hiểu ngày xưa bố mẹ nuôi mình vất vả như thế nào á",
+            "comments": 3,
+            "createdUtc": 1793109804,
+            "durationSeconds": 19,
+            "id": "7701347935383981319",
+            "likes": 77,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 9,
+            "shares": 1,
+            "url": "https://www.tiktok.com/@yen_trinh.n/video/7701347935383981319",
+            "views": 406
+          },
+          {
+            "author": "namtk981995",
+            "caption": "Chỉ khi bước chân ra đi làm bạn mới hiểu cuộc sống này vất vả cỡ nào 🙂🙂🙂@Quốc Nam Hương ",
+            "comments": 0,
+            "createdUtc": 1792522735,
+            "durationSeconds": 44,
+            "id": "7698826480834350342",
+            "likes": 30,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 1,
+            "shares": 1,
+            "url": "https://www.tiktok.com/@namtk981995/video/7698826480834350342",
+            "views": 197
+          },
+          {
+            "author": "dilammoihieu",
+            "caption": "Đừng nhầm lẫn giữa sự bận rộn và năng lực thực sự. Khi bạn dễ bị thay thế, mọi sự nỗ lực đều trở nên vô nghĩa trên bàn đàm phán. #chuyencongso #nguoidilam #dilammoihieu  #creatorsearchinsights #làmvănphòng ",
+            "comments": 2,
+            "createdUtc": 1792998202,
+            "durationSeconds": 42,
+            "id": "7700868586709044500",
+            "likes": 15,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 2,
+            "shares": 0,
+            "url": "https://www.tiktok.com/@dilammoihieu/video/7700868586709044500",
+            "views": 440
+          },
+          {
+            "author": "nguyenyen9119",
+            "caption": "Có những thứ đi làm mới hiểu #nguyenyen91 #trieuview #xuhuongtiktok #viraltiktok #videoviral #viral #video #sucmanhtiemthuc #thaydoituduy #longbieton #quyluatvutru #thunhapthudong #lamvanphong #chamsocsuckhoechudong #chamtayhoavang #kinhdoanhonline #thuhuttienbac #lamthemgio",
+            "comments": 2,
+            "createdUtc": 1792714500,
+            "durationSeconds": 24,
+            "id": "7693805579889921301",
+            "likes": 12,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 3,
+            "shares": 0,
+            "url": "https://www.tiktok.com/@nguyenyen9119/video/7693805579889921301",
+            "views": 434
+          }
+        ]
+      },
+      "found": true
+    },
+    "provider": "AnyAPI",
+    "costUsd": 0.0006,
+    "items": 8,
+    "replayed": false,
+    "source": {
+      "id": "anonymous-bison-cb2f8f3c",
+      "name": "Bison",
+      "kind": "anonymous",
+      "artworkKey": "bison"
+    },
+    "resultId": "edf31ad9-24c1-487b-b5a9-89aaf6677fd3"
+  }
+}

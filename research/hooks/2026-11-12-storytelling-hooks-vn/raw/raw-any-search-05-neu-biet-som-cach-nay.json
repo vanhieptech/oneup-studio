@@ -1,0 +1,105 @@
+{
+  "endpoint_id": "anyapi.tiktok.search.videos",
+  "call_id": "dc47a398ba8142bdbf4e40910f7c88b4",
+  "cost_usd": 0.0006,
+  "fetched_at": "2026-11-12 16:24:19 (Asia/Saigon)",
+  "query": "nếu biết sớm cách này",
+  "note": "datePosted=30 sortBy=1 fields max_items=10",
+  "status": 200,
+  "body": {
+    "output": {
+      "data": {
+        "nextCursor": null,
+        "videos": [
+          {
+            "author": "tiemspataigia.kko",
+            "caption": "mẹo hữu ích ngày mưa",
+            "comments": 63,
+            "createdUtc": 1793420446,
+            "durationSeconds": 49,
+            "id": "7702682134405729557",
+            "likes": 15804,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 746,
+            "shares": 6757,
+            "url": "https://www.tiktok.com/@tiemspataigia.kko/video/7702682134405729557",
+            "views": 542454
+          },
+          {
+            "author": "iphone_da_nang_tao_247",
+            "caption": "VỪA LÊN iOS MỚI? ĐỪNG LƯỚT QUA! Hãy kiểm tra NGAY những bước này trên iPhone  Chỉ mất 1 phút nhưng có thể giúp máy dùng ổn định hơn, tránh những lỗi khó chịu sau khi cập nhật  Ai vừa lên iOS mới thì LƯU VIDEO LẠI làm ngay nhé!  #Tao247 #iOS #iOSMoi #iPhone #MeoiPhone  ",
+            "comments": 171,
+            "createdUtc": 1793020514,
+            "durationSeconds": 70,
+            "id": "7700964448411946241",
+            "likes": 3257,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 600,
+            "shares": 491,
+            "url": "https://www.tiktok.com/@iphone_da_nang_tao_247/video/7700964448411946241",
+            "views": 189319
+          },
+          {
+            "author": "phamxuanphi",
+            "caption": "Giá mà biết sớm cách học từ hiệu quả thì đã đỡ vất vả bao nhiêu #ieltsxuanphi #ielts #vocabulary",
+            "comments": 19,
+            "createdUtc": 1792736214,
+            "durationSeconds": 119,
+            "id": "7699743362357775634",
+            "likes": 3241,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 1270,
+            "shares": 143,
+            "url": "https://www.tiktok.com/@phamxuanphi/video/7699743362357775634",
+            "views": 22298
+          },
+          {
+            "author": "anhvatrunglinh",
+            "caption": "biết sớm thì #anhvatrunglinh ",
+            "comments": 10,
+            "createdUtc": 1794302476,
+            "durationSeconds": 12,
+            "id": "7706470430747397396",
+            "likes": 1163,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 47,
+            "shares": 117,
+            "url": "https://www.tiktok.com/@anhvatrunglinh/video/7706470430747397396",
+            "views": 28923
+          },
+          {
+            "author": "bepcuagiao",
+            "caption": "nếu như biết sớm hơn khóm mà đem đi cấp đông nó ngon cỡ này ...hời ơi đỡ hết biết luôn #bepcuagiao #mukbang ",
+            "comments": 24,
+            "createdUtc": 1794037090,
+            "durationSeconds": 32,
+            "id": "7705330590530145554",
+            "likes": 949,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 101,
+            "shares": 93,
+            "url": "https://www.tiktok.com/@bepcuagiao/video/7705330590530145554",
+            "views": 50424
+          }
+        ]
+      },
+      "found": true
+    },
+    "provider": "AnyAPI",
+    "costUsd": 0.0006,
+    "items": 5,
+    "replayed": false,
+    "source": {
+      "id": "anonymous-bison-cb2f8f3c",
+      "name": "Bison",
+      "kind": "anonymous",
+      "artworkKey": "bison"
+    },
+    "resultId": "24f03bc0-879e-4fa9-bada-eeb0bd77bf96"
+  }
+}

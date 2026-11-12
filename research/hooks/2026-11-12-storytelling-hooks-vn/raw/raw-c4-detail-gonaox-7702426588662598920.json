@@ -1,0 +1,51 @@
+{
+  "endpoint_id": "crawl4ai.tiktok.video.detail",
+  "call_id": "8641a8c7e00c4ae18a62975c0df61058",
+  "cost_usd": 0.0005,
+  "fetched_at": "2026-11-12 16:26:33 (Asia/Saigon)",
+  "post_id": "7702426588662598920",
+  "row": {
+    "author": {
+      "followers": 142900,
+      "id": "7411801384426963974",
+      "name": "GÕ NÃO!",
+      "username": "gonaox",
+      "verified": false
+    },
+    "cover": "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/ogMfQwek3GADhcfWygLMGGrFvRYAuFQkQMexkI~tplv-tiktokx-origin.image?dr=9636&x-expires=1794646800&x-signature=lZP%2B4H05S%2BkV53Ovh4uuKtDwNOI%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "created_at": "2026-10-30T11:49:07Z",
+    "description": "Ghi nhớ bất cứ thứ gì nhanh đến mức khó tin  #gonao #hoctap #phattrienbanthan #tamlyhoc",
+    "duration_s": 168.0,
+    "hashtags": [
+      "gonao",
+      "hoctap",
+      "phattrienbanthan",
+      "tamlyhoc"
+    ],
+    "music": {
+      "author": "GÕ NÃO!",
+      "original": true,
+      "title": "âm thanh gốc - GÕ NÃO!"
+    },
+    "post_id": "7702426588662598920",
+    "region": "VN",
+    "stats": {
+      "comments": 737,
+      "likes": 177400,
+      "plays": 1600000,
+      "saves": 71728,
+      "shares": 27000
+    },
+    "subtitles": [
+      {
+        "language": "eng-US",
+        "url": "https://v16m-webapp.tiktokcdn-us.com/7b285f4d8c4b6af03e564cc09b83e5f2/6af829ef/video/tos/alisg/tos-alisg-pv-0037/3969525a130c458bb6f1a39e3cbc2e04/?a=1988&bti=ODszNWYuMDE6&&bt=447&ft=aEKq_qT0mIoPD12e-wZI3wUej0AbMeF~O5&mime_type=video_mp4&rc=amVma205cng7ZTMzODczNEBpamVma205cng7ZTMzODczNEBrYGwxMmRzNGZhLS1kMWBzYSNrYGwxMmRzNGZhLS1kMWBzcw%3D%3D&l=202611120926319254416B44991000A531&btag=e00050000"
+      },
+      {
+        "language": "vie-VN",
+        "url": "https://v16m-webapp.tiktokcdn-us.com/0941e9da7c7b1d5b882c3a9d179b7705/6af829ef/video/tos/alisg/tos-alisg-pv-0037/8131a7c994384b9b94ed5e5b9096b5fb/?a=1988&bti=ODszNWYuMDE6&&bt=447&ft=aEKq_qT0mIoPD12e-wZI3wUej0AbMeF~O5&mime_type=video_mp4&rc=amVma205cng7ZTMzODczNEBpamVma205cng7ZTMzODczNEBrYGwxMmRzNGZhLS1kMWBzYSNrYGwxMmRzNGZhLS1kMWBzcw%3D%3D&l=202611120926319254416B44991000A531&btag=e00050000"
+      }
+    ],
+    "url": "https://www.tiktok.com/@gonaox/video/7702426588662598920"
+  }
+}

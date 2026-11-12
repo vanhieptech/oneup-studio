@@ -1,0 +1,40 @@
+{
+  "endpoint_id": "anyapi.tiktok.search.videos",
+  "call_id": "6afdfed0382f4be5a46f7150b8ea4eaa",
+  "cost_usd": 0.0006,
+  "fetched_at": "2026-11-12 16:23:32 (Asia/Saigon)",
+  "query": "hồi đó mình cũng",
+  "note": "fields=videos.* (sai path, objects rỗng)",
+  "status": 200,
+  "body": {
+    "output": {
+      "data": {
+        "_truncated": {
+          "shown": 6,
+          "total": 9
+        },
+        "nextCursor": null,
+        "videos": [
+          {},
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "found": true
+    },
+    "provider": "AnyAPI",
+    "costUsd": 0.0006,
+    "items": 9,
+    "replayed": false,
+    "source": {
+      "id": "anonymous-bison-cb2f8f3c",
+      "name": "Bison",
+      "kind": "anonymous",
+      "artworkKey": "bison"
+    },
+    "resultId": "28391a2e-e713-48da-94bf-ae386c17df1d"
+  }
+}

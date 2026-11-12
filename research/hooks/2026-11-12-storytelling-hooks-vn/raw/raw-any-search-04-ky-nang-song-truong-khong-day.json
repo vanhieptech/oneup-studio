@@ -1,0 +1,135 @@
+{
+  "endpoint_id": "anyapi.tiktok.search.videos",
+  "call_id": "d61a13a7b827421489b3fe60e6e193f2",
+  "cost_usd": 0.0006,
+  "fetched_at": "2026-11-12 16:24:19 (Asia/Saigon)",
+  "query": "kỹ năng sống trường không dạy",
+  "note": "datePosted=30 sortBy=1 fields max_items=10",
+  "status": 200,
+  "body": {
+    "output": {
+      "data": {
+        "nextCursor": null,
+        "videos": [
+          {
+            "author": "minhcabien.263",
+            "caption": "#xuhuong #creatorsearchinsights #xuhuongtiktok ",
+            "comments": 317,
+            "createdUtc": 1792717276,
+            "durationSeconds": 86,
+            "id": "7699662020987129095",
+            "likes": 14720,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 2849,
+            "shares": 3146,
+            "url": "https://www.tiktok.com/@minhcabien.263/video/7699662020987129095",
+            "views": 120314
+          },
+          {
+            "author": "coffeebaygialai",
+            "caption": "#capcut #minhlacuongbay #vuotquakhokhan #hanhtrinhlamlaicuocdoi ",
+            "comments": 8,
+            "createdUtc": 1794304145,
+            "durationSeconds": 27,
+            "id": "7706477598049717524",
+            "likes": 241,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 7,
+            "shares": 2,
+            "url": "https://www.tiktok.com/@coffeebaygialai/video/7706477598049717524",
+            "views": 4948
+          },
+          {
+            "author": "yellow_639",
+            "caption": "Vì Sao Trường Học Không Bao Giờ Dạy Kỹ Năng Kiếm Tiền? #xuhuong ",
+            "comments": 0,
+            "createdUtc": 1791969510,
+            "durationSeconds": 652,
+            "id": "7696450403856092436",
+            "likes": 18,
+            "paidPartnership": false,
+            "region": "CI",
+            "saves": 4,
+            "shares": 0,
+            "url": "https://www.tiktok.com/@yellow_639/video/7696450403856092436",
+            "views": 499
+          },
+          {
+            "author": "trungtamico",
+            "caption": "5 kỹ năng mà du học sinh luôn đề cao.",
+            "comments": 0,
+            "createdUtc": 1793420318,
+            "durationSeconds": 35,
+            "id": "7702681566895541511",
+            "likes": 14,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 2,
+            "shares": 2,
+            "url": "https://www.tiktok.com/@trungtamico/video/7702681566895541511",
+            "views": 420
+          },
+          {
+            "author": "phm.vn.tp79",
+            "caption": "Trường học dạy kiến thức, còn cuộc sống dạy cách tích lũy, xây hệ thống và giữ quỹ dự phòng qua những bài học thực tế. Nhìn 6 hình ảnh con vật trên, bạn ấn tượng với cách nào nhất và muốn áp dụng ngay? #xuhuong #phamvantap #cachlamgiau #tuduytaichin",
+            "comments": 1,
+            "createdUtc": 1793869200,
+            "durationSeconds": 15,
+            "id": "7704314695678709013",
+            "likes": 6,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 1,
+            "shares": 0,
+            "url": "https://www.tiktok.com/@phm.vn.tp79/video/7704314695678709013",
+            "views": 651
+          },
+          {
+            "author": "tampacific",
+            "caption": "Bài học sinh tồn nơi công sở mà trường học không bao giờ dạy bạn. Nơi công sở, thứ kìm sự nghiệp lại đôi khi không phải là năng lực kém. Đó là thói quen cả nể nhưng chưa có ranh giới. Nhiều người trẻ bước chân đi làm với một niềm tin rất ngây thơ: Chỉ cần mình ngoan, mình chăm chỉ, ai nhờ gì cũng làm, sếp bảo sao nghe vậy thì rồi công sức sẽ được công nhận. Nhưng thực tế thường khiến chúng ta tỉnh ra rất nhanh: Càng cả nể, càng dễ bị xem nhẹ. Càng ngại nêu ý kiến, càng dễ bị bỏ qua. Trong môi trường làm việc, có một cái bẫy tâm lý rất lớn mang tên \"Nỗi sợ bị đánh giá\". Chúng ta ngại nói \"Không\" vì sợ mất lòng đồng nghiệp. Chúng ta ngại đặt ranh giới vì sợ bị dán nhãn \"không nhiệt tình\". Chúng ta im lặng khi bị gạch bỏ ý kiến, rồi về nhà nằm overthinking cả đêm. Nhưng hãy tự phản biện lại: Mình đang tử tế, hay thực chất mình đang chưa vững ranh giới để bảo vệ chính mình? Khi bạn gật đầu với mọi yêu cầu vô lý, người khác không kịp thấy bạn tốt bụng. Họ chỉ kịp thấy bạn là phương án chưa được ưu tiên. Khi bước vào phòng họp với dáng ngồi chưa vững, ánh mắt chưa tự tin và giọng nói còn nhỏ, bạn đã vô tình tự dán lên mình một nhãn: \"Tôi chưa tự tin vào năng lực của chính tôi\". Trong cuộc chơi chuyên nghiệp, không ai có thời gian bóc tách vẻ ngoài đó để tìm \"viên ngọc thô\" bên trong cả. Năng lực chuyên môn chỉ giúp bạn có được công việc. Chính năng lực thiết lập ranh giới mới quyết định bạn đi được bao xa và có được tôn trọng hay không. Trường học dạy chúng ta kiến thức để làm nghề, nhưng xã hội mới là nơi bắt chúng ta phải tự trả giá để học cách làm chủ vị thế của bản thân. Càng nhận ra và rèn những năng lực ngầm này sớm ngày nào, bạn càng đỡ tốn vài năm tuổi trẻ loay hoay trong mệt mỏi. P/S: Bạn thấy mình hay kẹt ở đâu nhất? Xem video trên để gỡ từng nút thắt nhé. #sinhtoncongso #damnoikhong #overthinking #giaotiepcongso #kynangmem",
+            "comments": 0,
+            "createdUtc": 1793551465,
+            "durationSeconds": 169,
+            "id": "7703244832730270984",
+            "likes": 1,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 0,
+            "shares": 0,
+            "url": "https://www.tiktok.com/@tampacific/video/7703244832730270984",
+            "views": 111
+          },
+          {
+            "author": "cs.health.linh.an",
+            "caption": "Tự nhiên đã dạy ta đâu cần phải đến trường mới học được.  Đó là những kỹ năng có dấu ẩn của bản năng. #kynangsong ",
+            "comments": 0,
+            "createdUtc": 1792910050,
+            "durationSeconds": 16,
+            "id": "7700489995521477909",
+            "likes": 1,
+            "paidPartnership": false,
+            "region": "VN",
+            "saves": 1,
+            "shares": 0,
+            "url": "https://www.tiktok.com/@cs.health.linh.an/video/7700489995521477909",
+            "views": 356
+          }
+        ]
+      },
+      "found": true
+    },
+    "provider": "AnyAPI",
+    "costUsd": 0.0006,
+    "items": 7,
+    "replayed": false,
+    "source": {
+      "id": "anonymous-bison-cb2f8f3c",
+      "name": "Bison",
+      "kind": "anonymous",
+      "artworkKey": "bison"
+    },
+    "resultId": "7fcfa760-4869-4a41-91d1-cf60b235956d"
+  }
+}
