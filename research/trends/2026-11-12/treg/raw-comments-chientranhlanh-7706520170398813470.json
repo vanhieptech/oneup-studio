@@ -1,0 +1,198 @@
+{
+ "call_id": "e42c2b8a908948809f03b1569f988534",
+ "status": 200,
+ "retry_after": null,
+ "endpoint_id": "anyapi.tiktok.video.comments",
+ "replayed": null,
+ "body": {
+  "output": {
+   "data": {
+    "comments": [
+     {
+      "author": "._520_",
+      "createdUtc": 1794330220,
+      "id": "7706589550505018130",
+      "likes": 91,
+      "replies": 6,
+      "text": "Kể từ đó 2 anh sống hạnh phúc bên nhau [Cười chảy nước mắt]"
+     },
+     {
+      "author": "canhtuanle2612",
+      "createdUtc": 1794323330,
+      "id": "7706559977296773908",
+      "likes": 96,
+      "replies": 0,
+      "text": "Giờ dịch vụ phát triển thật 🤣🤣"
+     },
+     {
+      "author": "g.k.tau",
+      "createdUtc": 1794370362,
+      "id": "7706761926412632850",
+      "likes": 5,
+      "replies": 7,
+      "text": "t lại nghĩ bà gọi ôg sip đến ngủ chung để ôg ck gen rồi tự vào phòng cơ ? [Cười lớn]"
+     },
+     {
+      "author": "traithaibinh1981",
+      "createdUtc": 1794373716,
+      "id": "7706776377731187474",
+      "likes": 2,
+      "replies": 0,
+      "text": "síp hàng sa nhất tôi từng thấy"
+     },
+     {
+      "author": "soibac1412",
+      "createdUtc": 1794373446,
+      "id": "7706775183410905857",
+      "likes": 1,
+      "replies": 0,
+      "text": "Anh bạn thông cảm tất cả là vì công việc lỡ vợ anh bạn đánh giá tôi một sao thì cũng không ổn cho lắm😂😂😂😂"
+     },
+     {
+      "author": "minhquy950",
+      "createdUtc": 1794376295,
+      "id": "7706787465977185042",
+      "likes": 1,
+      "replies": 0,
+      "text": "đơn ship này xa dữ"
+     },
+     {
+      "author": "30303395665",
+      "createdUtc": 1794349852,
+      "id": "7706673829707809544",
+      "likes": 1,
+      "replies": 0,
+      "text": "hiêu luôn kkkk hiêu luôn giôi"
+     },
+     {
+      "author": "hgpg25",
+      "createdUtc": 1794384356,
+      "id": "7706822013122593557",
+      "likes": 1,
+      "replies": 0,
+      "text": "😂dc luon"
+     },
+     {
+      "author": "kocanbietko",
+      "createdUtc": 1794362159,
+      "id": "7706726744010523400",
+      "likes": 1,
+      "replies": 0,
+      "text": "cái mặt đơ ra luôn 😂😂😂😂"
+     },
+     {
+      "author": "satboi402",
+      "createdUtc": 1794338498,
+      "id": "7706625107363857173",
+      "likes": 1,
+      "replies": 0,
+      "text": "Bảo sao ông con trai đẹp trai thế ổng"
+     },
+     {
+      "author": "gaixuanmai",
+      "createdUtc": 1794438284,
+      "id": "7707053630411342610",
+      "likes": 0,
+      "replies": 0,
+      "text": "Ship tận giường😆"
+     },
+     {
+      "author": "nthanhhueyn",
+      "createdUtc": 1794366825,
+      "id": "7706746768525116178",
+      "likes": 1,
+      "replies": 0,
+      "text": "chịu bà"
+     },
+     {
+      "author": "maithao12343",
+      "createdUtc": 1794322236,
+      "id": "7706555272441627410",
+      "likes": 0,
+      "replies": 0,
+      "text": "[Cười chảy nước mắt]"
+     },
+     {
+      "author": "quyn.phm6645",
+      "createdUtc": 1794366763,
+      "id": "7706746453172126484",
+      "likes": 0,
+      "replies": 0,
+      "text": "Haha"
+     },
+     {
+      "author": "trinhle_2007",
+      "createdUtc": 1794321934,
+      "id": "7706553976803967764",
+      "likes": 1,
+      "replies": 0,
+      "text": "😂😂😂"
+     },
+     {
+      "author": "lng.khnh518",
+      "createdUtc": 1794372075,
+      "id": "7706769301168587528",
+      "likes": 0,
+      "replies": 0,
+      "text": "🤣🤣🤣"
+     },
+     {
+      "author": "lena840826",
+      "createdUtc": 1794413926,
+      "id": "7706949029318050612",
+      "likes": 0,
+      "replies": 0,
+      "text": ""
+     },
+     {
+      "author": "l.yn285",
+      "createdUtc": 1794416157,
+      "id": "7706958667786208018",
+      "likes": 0,
+      "replies": 0,
+      "text": "😂😂😂"
+     },
+     {
+      "author": "_tran.._",
+      "createdUtc": 1794360352,
+      "id": "7706718934766355201",
+      "likes": 15,
+      "replies": 0,
+      "text": "Tưởng gọi ông đến ngủ cùng cho đỡ sợ cơ"
+     },
+     {
+      "author": "nobisata0",
+      "createdUtc": 1794323904,
+      "id": "7706562455224255252",
+      "likes": 0,
+      "replies": 0,
+      "text": "😂"
+     }
+    ],
+    "nextCursor": "cur_f179q2BQm4yzq9tj0nuDeA"
+   },
+   "found": true
+  },
+  "provider": "AnyAPI",
+  "costUsd": 0.0006,
+  "items": 20,
+  "replayed": false,
+  "source": {
+   "id": "anonymous-bison-cb2f8f3c",
+   "name": "Bison",
+   "kind": "anonymous",
+   "artworkKey": "bison"
+  },
+  "resultId": "cec045cb-79ab-42ed-aebd-43e166ad8d77"
+ },
+ "cost_usd": 0.0006,
+ "served_via": null,
+ "whose_error": null,
+ "hint": null,
+ "did_you_mean": null,
+ "routed_tool": "treg.tiktok.video.comments",
+ "suggestion": "treg.tiktok.video.comments does this job: treg picks the provider, falls back when one fails or misses, and charges only the answer. Prefer it next time unless you need options only this provider has.",
+ "upstream_failed": null,
+ "error": null,
+ "detail": null
+}

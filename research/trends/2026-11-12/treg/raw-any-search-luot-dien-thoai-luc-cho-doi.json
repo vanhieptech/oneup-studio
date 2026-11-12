@@ -1,0 +1,35 @@
+{
+ "call_id": "fb839ded085d427b962d040c0dba9a09",
+ "status": 200,
+ "retry_after": null,
+ "endpoint_id": "anyapi.tiktok.search.videos",
+ "replayed": null,
+ "body": {
+  "output": {
+   "found": false,
+   "data": null,
+   "reason": "not_found"
+  },
+  "provider": "AnyAPI",
+  "costUsd": 0.0026,
+  "items": 0,
+  "replayed": false,
+  "source": {
+   "id": "anonymous-bison-cb2f8f3c",
+   "name": "Bison",
+   "kind": "anonymous",
+   "artworkKey": "bison"
+  },
+  "resultId": "61dc6237-9c65-4795-b0fb-d35d61077570"
+ },
+ "cost_usd": 0.0026,
+ "served_via": null,
+ "whose_error": null,
+ "hint": null,
+ "did_you_mean": null,
+ "routed_tool": "treg.tiktok.search.videos",
+ "suggestion": "treg.tiktok.search.videos does this job: treg picks the provider, falls back when one fails or misses, and charges only the answer. Prefer it next time unless you need options only this provider has.",
+ "upstream_failed": null,
+ "error": null,
+ "detail": null
+}

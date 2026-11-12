@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-chien-tranh-lanh-im-de-nghi-khong-de-phat",
+ "title": "[STUB] Silent treatment / chiến tranh lạnh (Kenh14 11/11 + skit TikTok «chiến tranh lạnh mà không dám ngủ một mình» 93.700 xem). Sách 3.17: đang giận thì rời đi trước, xử lý tính sau; thí nghiệm: người đã phạt kẻ gian nghĩ về người đó lâu hơn",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "silent-treatment-khi-su-im-lang-tro-thanh",
+  "bridge_id": "B-chienlanh-01",
+  "lesson": "3.17 Đang giận thì rời đi trước, coi người kia như thời tiết chứ không phải kẻ thù (mức B). Webb, Miles & Sheeran 2012 (meta 306 so sánh thực nghiệm): nhìn lại tình huống d = 0,36; đứng vào vị trí người kia d = 0,45; đánh lạc hướng d = 0,27; giấu biểu hiện ra ngoài d = 0,32; cố nén cảm xúc bên trong d = −0,04 (vô ích); cố không nghĩ d = −0,12 (vô ích). Carlsmith, Wilson & Gilbert 2008 (3 thí nghiệm): người đã phạt kẻ chơi gian sau đó nghĩ đi nghĩ lại về người đó lâu hơn, người không phạt «cho qua» nhanh hơn; người ta đoán trước trả đũa hả dạ hơn thực tế. Sách ghi phần trả đũa chỉ một nhóm thí nghiệm nên mức B. Phụ: 10.17 cãi nhau nói chuyện, không nói người (mức B, quan sát). Nối thí nghiệm trò chơi với «chiến tranh lạnh» là suy luận biên tập, chưa có nghiên cứu trực tiếp về silent treatment trong sách → Deep Research kiểm câu chữ. Câu «nói trước: mình cần ba mươi phút, lát nói tiếp» là đề xuất biên tập (Kenh14 cũng gợi ý báo cho người kia biết mình cần thời gian).",
+  "angle": "contrarian / data",
+  "pattern": "P10 (hook) + P03 (turn)",
+  "differentiation": "Mọi người đang nói: im lặng là vũ khí làm người bị im phải đoán mò, xin lỗi; hãy tạm dừng mà đừng biến nó thành hình phạt ([Kenh14 11/11](https://kenh14.vn/silent-treatment-khi-su-im-lang-tro-thanh-mot-thu-vu-khi-215261111075058205.chn)); TikTok thì cười chuyện chiến tranh lạnh ([skit 10/11](https://www.tiktok.com/@user2906592877976/video/7706520170398813470)). Góc của mình: consensus nhìn từ phía người bị im; sách cho góc ngược: người im để phạt có khi là người nghĩ về chuyện đó lâu hơn (Carlsmith 2008), và cố nén giận thì vô ích (Webb 2012). +1: rời đi thì được, nhưng nói trước một câu có giờ quay lại."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b01",
+   "duration": 9,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chiến tranh lạnh với người yêu, bạn tưởng mình im thì người kia mới là người khổ? Trên mạng đang có clip: vợ chồng giận nhau, vợ không thèm nói một câu mà cũng không dám ngủ một mình.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Cold war. Who suffers more?",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b02",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Báo cũng vừa gọi tên kiểu này: im lặng như một thứ vũ khí, làm người kia phải đoán mò rồi xin lỗi.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Silence as a weapon.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b03",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cãi nhau xong, tin nhắn hiện đã xem, bạn để đó. Tối nằm lướt điện thoại mà đầu vẫn tua lại câu nói lúc chiều.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Seen. Ignored. Still replaying it.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b04",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách dẫn ba thí nghiệm: người được quyền phạt một người chơi gian, và đã phạt, sau đó lại nghĩ về người kia lâu hơn. Người không phạt thì cho qua nhanh hơn.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Punishers kept thinking about it longer.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Đó là thí nghiệm trò chơi, không phải chuyện yêu đương, và chỉ một nhóm nghiên cứu. Nhưng nó gợi ý: im để phạt, người nghĩ nhiều có khi lại là mình.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "A game study. Still a hint.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b06",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách không bắt bạn phải nói ngay. Đang giận thì rời đi trước. Cố nén cảm xúc, ép mình đừng nghĩ thì không có tác dụng; thử đứng vào chỗ người kia nhìn lại thì hạ cơn giận tốt hơn.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "Step away. Don't just suppress.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b07",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên lần tới cần im, nói trước một câu thôi: mình cần ba mươi phút cho bình tĩnh, lát nói tiếp. Im để nghỉ, không phải im để phạt.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Say: 30 minutes, then we talk.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "chien-tranh-lanh-im-de-nghi-khong-de-phat.b08",
+   "duration": 5,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn hay là người im, hay người bị im? Comment một chữ: im, hoặc bị.",
+     "start": 0.3,
+     "end": 4.7
+    }
+   ],
+   "caption": {
+    "text": "Silent one or silenced one?",
+    "start": 0.3,
+    "end": 4.7
+   }
+  }
+ ]
+}

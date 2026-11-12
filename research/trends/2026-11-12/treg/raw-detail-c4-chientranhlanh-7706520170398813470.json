@@ -1,0 +1,106 @@
+{
+ "call_id": "aa5e4ad439b043fc9d7867d87e21cf04",
+ "status": 200,
+ "retry_after": null,
+ "endpoint_id": "crawl4ai.tiktok.video.detail",
+ "replayed": null,
+ "body": {
+  "meta": {
+   "blocked": [],
+   "elapsed_ms": 607,
+   "from_cache": false,
+   "llm_calls": 0,
+   "pages_fetched": 1,
+   "partial": false,
+   "warnings": []
+  },
+  "recipe": "tiktok-post",
+  "rows": [
+   {
+    "author": {
+     "followers": 1190,
+     "id": "7303033699799778346",
+     "name": "user2906592877976",
+     "username": "user2906592877976",
+     "verified": false
+    },
+    "cover": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oknIGHfrILbJUNyFvmeGeQMWTFALBjfA45grQg~tplv-tiktokx-origin.image?dr=9636&x-expires=1794614400&x-signature=rV1G0OyoryScG9GsoGO8a9BPihw%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+    "created_at": "2026-11-10T12:34:39Z",
+    "description": "Khi chúng tôi vừa chiến tranh lạnh,nhưng tôi không dám ngủ một mình😌 #haihuoc #funny #giaitri",
+    "duration_s": 59,
+    "hashtags": [
+     "haihuoc",
+     "funny",
+     "giaitri"
+    ],
+    "music": {
+     "author": "user2906592877976",
+     "original": true,
+     "title": "âm thanh gốc - user2906592877976"
+    },
+    "post_id": "7706520170398813470",
+    "region": "VN",
+    "stats": {
+     "comments": 97,
+     "likes": 4349,
+     "plays": 93700,
+     "saves": 211,
+     "shares": 950
+    },
+    "subtitles": [
+     {
+      "language": "vie-VN",
+      "url": "https://v16m-webapp.tiktokcdn-us.com/59cb17ccbe82d3a8717dca3b163b989d/6af7b210/video/tos/useast8/tos-useast8-v-0068-tx2/5dc26e7e11704058b35967e3d2a08640/?a=1988&bti=ODszNWYuMDE6&&bt=1534&ft=aEKq_qT0mIoPD12BKqZI3wUIS0AbMeF~O5&mime_type=video_mp4&rc=M3E5aHA5cnJpZTMzaTgzNEBpM3E5aHA5cnJpZTMzaTgzNEBncy1tMmRraG1hLS1kLzJzYSNncy1tMmRraG1hLS1kLzJzcw%3D%3D&l=2026111200565338E2E5C22C7D7B023177&btag=e00048000"
+     }
+    ],
+    "url": "https://www.tiktok.com/@user2906592877976/video/7706520170398813470"
+   }
+  ],
+  "usage": {
+   "boxes": [
+    "gate",
+    "recipe"
+   ],
+   "cache": "miss",
+   "engine": "recipe",
+   "lines": [
+    {
+     "about": "the call",
+     "boxes": [
+      "gate"
+     ],
+     "cache": "miss",
+     "call": "recipes",
+     "engine": "gate",
+     "units": 1
+    },
+    {
+     "attempts": 1,
+     "cache": "api",
+     "call": "scrape",
+     "engine": "api",
+     "proxy": "isp",
+     "units": 1,
+     "url": "https://www.tiktok.com/…"
+    }
+   ],
+   "remaining_before": {
+    "concurrent": 1400,
+    "requests": 1448,
+    "search": 2565
+   },
+   "units": 2
+  },
+  "version": 1
+ },
+ "cost_usd": 0.0005,
+ "served_via": null,
+ "whose_error": null,
+ "hint": null,
+ "did_you_mean": null,
+ "routed_tool": "treg.tiktok.video.detail",
+ "suggestion": "treg.tiktok.video.detail does this job: treg picks the provider, falls back when one fails or misses, and charges only the answer. Prefer it next time unless you need options only this provider has.",
+ "upstream_failed": null,
+ "error": null,
+ "detail": null
+}

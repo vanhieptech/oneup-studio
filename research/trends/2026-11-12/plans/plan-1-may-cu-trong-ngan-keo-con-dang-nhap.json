@@ -1,0 +1,356 @@
+{
+ "version": 1,
+ "id": "trend-may-cu-trong-ngan-keo-con-dang-nhap",
+ "title": "[STUB] Gen Z lùng mua lại iPhone 5C để chụp ảnh retro (Thanh Niên/TechRadar 10–11/11, TikTok so ảnh 5S/5C). Sách 14.6: định kỳ mở danh sách thiết bị đăng nhập và app đã cấp quyền, máy không dùng thì cho đăng xuất",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "gen-z-lung-mua-iphone-5c-luot-tim",
+  "bridge_id": "B-5c-01",
+  "lesson": "14.6 Thỉnh thoảng xem danh sách thiết bị đăng nhập và app đã cấp quyền của tài khoản, cái không dùng thì xoá (mức C; nguồn UK NCSC «Recovering a hacked account» + US FTC; sách ghi rõ «định kỳ chủ động xem» là kinh nghiệm tác giả, hai nguồn là hướng dẫn xử lý sau khi bị hack). Thứ tự khi thấy máy lạ: đổi mật khẩu trước, rồi đăng xuất tất cả (theo NCSC). NCSC coi đăng nhập từ nơi lạ/giờ bất thường là dấu hiệu bị chiếm tài khoản; kẻ gian hay đặt luật chuyển tiếp email. Phụ (không vào voice nếu dài): 5.23 để giỏ hàng qua 24 giờ (mức C, kinh nghiệm). Số liệu trend «tìm mua iPhone 5C +40.500% trong năm qua» là của Compare and Recycle qua Thanh Niên/TechRadar: chưa tự kiểm, phạm vi toàn cầu, không phải số VN. Câu «máy cũ trong ngăn kéo còn đăng nhập» là đề xuất biên tập.",
+  "angle": "contrarian / empathy",
+  "pattern": "P13 (hook) + P01 (khoảnh khắc)",
+  "differentiation": "Mọi người đang nói: Gen Z săn 5C vì ảnh Y2K, hoặc chê «ủa mua máy này về làm gì» ([Thanh Niên 11/11](https://thanhnien.vn/gen-z-lung-mua-iphone-5c-luot-tim-kiem-tang-40500-185261111144622021.htm); [TikTok @fixi.mobile.54.tk](https://www.tiktok.com/@fixi.mobile.54.tk/video/7706845085262007558)); báo thêm cảnh báo bảo mật cho máy mua về ([TechRadar 10/11](https://www.techradar.com/phones/iphone/iphone-5c-searches-are-up-40-500-percent-as-gen-z-boards-the-retro-camera-trend-but-privacy-experts-warn-it-cant-protect-personal-data-in-the-way-more-modern-iphones-do)). Góc của mình: không chê, không rủ mua; quay camera về cái máy cũ người xem ĐANG có trong ngăn kéo: nó có thể vẫn đăng nhập tài khoản chính. +1 hôm nay: mở danh sách thiết bị, cho máy không còn cầm đăng xuất (14.6, phần báo không nói)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Gen Z đang lùng mua lại iPhone 5C, máy từ năm 2013, chỉ để chụp ảnh kiểu ngày xưa. Còn cái điện thoại cũ trong ngăn kéo nhà bạn, nó còn đăng nhập tài khoản của bạn không?",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Gen Z wants 2013 phones. Yours?",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b02",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Báo vừa đưa tin lượt tìm mua chiếc máy này tăng vọt trong một năm, theo một trang so sánh tái chế điện thoại, vì ảnh chụp ra có màu kiểu những năm hai nghìn.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Searches for it shot up.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b03",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn lục ngăn kéo, thấy cái máy cũ, cắm sạc. Màn hình sáng lên: Zalo, Facebook, email vẫn còn đăng nhập.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Old phone. Still logged in.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b04",
+   "duration": 4,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình quên nó mấy năm rồi, mà tài khoản thì chưa quên nó.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "You forgot it. Your accounts didn't.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b05",
+   "duration": 9,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách gọi chỗ này là danh sách thiết bị đăng nhập: những điện thoại, máy tính vẫn đang dùng được tài khoản của bạn. Máy lạ, hay app lâu rồi không xài mà vẫn nối với tài khoản, là dấu vết dễ thấy nhất.",
+     "start": 0.3,
+     "end": 8.7
+    }
+   ],
+   "caption": {
+    "text": "The logged-in devices list.",
+    "start": 0.3,
+    "end": 8.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b06",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thấy máy lạ thì đổi mật khẩu trước, rồi mới bấm đăng xuất tất cả. Thứ tự đó là của cơ quan an ninh mạng Anh.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Unknown device: password first, then log out all.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn nếu bạn mua máy cũ về chụp, chuyên gia trong bài báo khuyên dùng nó như một cái máy ảnh: bật chế độ máy bay, không gắn SIM, không đăng nhập tài khoản chính.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Use it as a camera only.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b08",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Hôm nay một việc thôi: mở cài đặt tài khoản, xem danh sách thiết bị. Máy nào bạn hông còn cầm thì cho nó đăng xuất.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Today: check the list, log out old phones.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s09",
+   "beat": "may-cu-trong-ngan-keo-con-dang-nhap.b09",
+   "duration": 4,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bạn đếm được mấy máy? Comment con số đó nha.",
+     "start": 0.3,
+     "end": 3.7
+    }
+   ],
+   "caption": {
+    "text": "How many devices? Comment the number.",
+    "start": 0.3,
+    "end": 3.7
+   }
+  }
+ ]
+}

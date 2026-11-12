@@ -1,0 +1,60 @@
+{
+ "date": "2026-11-12",
+ "ideas": [
+  {
+   "id": "may-cu-trong-ngan-keo-con-dang-nhap",
+   "title": "Gen Z lùng mua lại iPhone 5C để chụp ảnh retro (Thanh Niên/TechRadar 10–11/11, TikTok so ảnh 5S/5C). Sách 14.6: định kỳ mở danh sách thiết bị đăng nhập và app đã cấp quyền, máy không dùng thì cho đăng xuất",
+   "trend_id": "gen-z-lung-mua-iphone-5c-luot-tim",
+   "bridge_id": "B-5c-01",
+   "lesson": "14.6 Thỉnh thoảng xem danh sách thiết bị đăng nhập và app đã cấp quyền của tài khoản, cái không dùng thì xoá (mức C; nguồn UK NCSC «Recovering a hacked account» + US FTC; sách ghi rõ «định kỳ chủ động xem» là kinh nghiệm tác giả, hai nguồn là hướng dẫn xử lý sau khi bị hack). Thứ tự khi thấy máy lạ: đổi mật khẩu trước, rồi đăng xuất tất cả (theo NCSC). NCSC coi đăng nhập từ nơi lạ/giờ bất thường là dấu hiệu bị chiếm tài khoản; kẻ gian hay đặt luật chuyển tiếp email. Phụ (không vào voice nếu dài): 5.23 để giỏ hàng qua 24 giờ (mức C, kinh nghiệm). Số liệu trend «tìm mua iPhone 5C +40.500% trong năm qua» là của Compare and Recycle qua Thanh Niên/TechRadar: chưa tự kiểm, phạm vi toàn cầu, không phải số VN. Câu «máy cũ trong ngăn kéo còn đăng nhập» là đề xuất biên tập.",
+   "angle": "contrarian / empathy",
+   "pattern": "P13 (hook) + P01 (khoảnh khắc)",
+   "differentiation": "Mọi người đang nói: Gen Z săn 5C vì ảnh Y2K, hoặc chê «ủa mua máy này về làm gì» ([Thanh Niên 11/11](https://thanhnien.vn/gen-z-lung-mua-iphone-5c-luot-tim-kiem-tang-40500-185261111144622021.htm); [TikTok @fixi.mobile.54.tk](https://www.tiktok.com/@fixi.mobile.54.tk/video/7706845085262007558)); báo thêm cảnh báo bảo mật cho máy mua về ([TechRadar 10/11](https://www.techradar.com/phones/iphone/iphone-5c-searches-are-up-40-500-percent-as-gen-z-boards-the-retro-camera-trend-but-privacy-experts-warn-it-cant-protect-personal-data-in-the-way-more-modern-iphones-do)). Góc của mình: không chê, không rủ mua; quay camera về cái máy cũ người xem ĐANG có trong ngăn kéo: nó có thể vẫn đăng nhập tài khoản chính. +1 hôm nay: mở danh sách thiết bị, cho máy không còn cầm đăng xuất (14.6, phần báo không nói).",
+   "theme": "dark",
+   "week": 5,
+   "target": "ý tưởng mới 14.6 (trụ 5, cạnh đăng #29 14.10 DARK; B-otp-01 đã dùng 14.6 làm phụ) — Hiệp chọn ô",
+   "hook_vi": "Gen Z đang lùng mua lại iPhone 5C, máy từ năm 2013, chỉ để chụp ảnh kiểu ngày xưa. Còn cái điện thoại cũ trong ngăn kéo nhà bạn, nó còn đăng nhập tài khoản của bạn không?",
+   "moment_vi": "Lục ngăn kéo thấy máy cũ, cắm sạc, màn hình sáng lên: Zalo, Facebook, email vẫn còn đăng nhập.",
+   "turn_vi": "Mình quên cái máy, tài khoản thì chưa quên. Mở danh sách thiết bị, máy nào hông còn cầm thì cho đăng xuất.",
+   "hook_en": "Gen Z is hunting 2013 iPhones for retro photos. Is the old phone in your drawer still logged in?",
+   "beats": [
+    {"text": "Gen Z đang lùng mua lại iPhone 5C, máy từ năm 2013, chỉ để chụp ảnh kiểu ngày xưa. Còn cái điện thoại cũ trong ngăn kéo nhà bạn, nó còn đăng nhập tài khoản của bạn không?", "expression": "surprised", "action": "talking", "duration": 8, "caption_en": "Gen Z wants 2013 phones. Yours?", "background": "grid"},
+    {"text": "Báo vừa đưa tin lượt tìm mua chiếc máy này tăng vọt trong một năm, theo một trang so sánh tái chế điện thoại, vì ảnh chụp ra có màu kiểu những năm hai nghìn.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Searches for it shot up.", "background": "grid"},
+    {"text": "Bạn lục ngăn kéo, thấy cái máy cũ, cắm sạc. Màn hình sáng lên: Zalo, Facebook, email vẫn còn đăng nhập.", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "Old phone. Still logged in.", "background": "room"},
+    {"text": "Mình quên nó mấy năm rồi, mà tài khoản thì chưa quên nó.", "expression": "sad", "action": "talking", "duration": 4, "caption_en": "You forgot it. Your accounts didn't.", "background": "room"},
+    {"text": "Sách gọi chỗ này là danh sách thiết bị đăng nhập: những điện thoại, máy tính vẫn đang dùng được tài khoản của bạn. Máy lạ, hay app lâu rồi không xài mà vẫn nối với tài khoản, là dấu vết dễ thấy nhất.", "expression": "neutral", "action": "talking", "duration": 9, "caption_en": "The logged-in devices list.", "background": "grid"},
+    {"text": "Thấy máy lạ thì đổi mật khẩu trước, rồi mới bấm đăng xuất tất cả. Thứ tự đó là của cơ quan an ninh mạng Anh.", "expression": "neutral", "action": "talking", "duration": 6, "caption_en": "Unknown device: password first, then log out all.", "background": "grid"},
+    {"text": "Còn nếu bạn mua máy cũ về chụp, chuyên gia trong bài báo khuyên dùng nó như một cái máy ảnh: bật chế độ máy bay, không gắn SIM, không đăng nhập tài khoản chính.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Use it as a camera only.", "background": "desk"},
+    {"text": "Hôm nay một việc thôi: mở cài đặt tài khoản, xem danh sách thiết bị. Máy nào bạn hông còn cầm thì cho nó đăng xuất.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "Today: check the list, log out old phones.", "background": "room"},
+    {"text": "Bạn đếm được mấy máy? Comment con số đó nha.", "expression": "happy", "action": "talking", "duration": 4, "caption_en": "How many devices? Comment the number.", "background": "room"}
+   ]
+  },
+  {
+   "id": "chien-tranh-lanh-im-de-nghi-khong-de-phat",
+   "title": "Silent treatment / chiến tranh lạnh (Kenh14 11/11 + skit TikTok «chiến tranh lạnh mà không dám ngủ một mình» 93.700 xem). Sách 3.17: đang giận thì rời đi trước, xử lý tính sau; thí nghiệm: người đã phạt kẻ gian nghĩ về người đó lâu hơn",
+   "trend_id": "silent-treatment-khi-su-im-lang-tro-thanh",
+   "bridge_id": "B-chienlanh-01",
+   "lesson": "3.17 Đang giận thì rời đi trước, coi người kia như thời tiết chứ không phải kẻ thù (mức B). Webb, Miles & Sheeran 2012 (meta 306 so sánh thực nghiệm): nhìn lại tình huống d = 0,36; đứng vào vị trí người kia d = 0,45; đánh lạc hướng d = 0,27; giấu biểu hiện ra ngoài d = 0,32; cố nén cảm xúc bên trong d = −0,04 (vô ích); cố không nghĩ d = −0,12 (vô ích). Carlsmith, Wilson & Gilbert 2008 (3 thí nghiệm): người đã phạt kẻ chơi gian sau đó nghĩ đi nghĩ lại về người đó lâu hơn, người không phạt «cho qua» nhanh hơn; người ta đoán trước trả đũa hả dạ hơn thực tế. Sách ghi phần trả đũa chỉ một nhóm thí nghiệm nên mức B. Phụ: 10.17 cãi nhau nói chuyện, không nói người (mức B, quan sát). Nối thí nghiệm trò chơi với «chiến tranh lạnh» là suy luận biên tập, chưa có nghiên cứu trực tiếp về silent treatment trong sách → Deep Research kiểm câu chữ. Câu «nói trước: mình cần ba mươi phút, lát nói tiếp» là đề xuất biên tập (Kenh14 cũng gợi ý báo cho người kia biết mình cần thời gian).",
+   "angle": "contrarian / data",
+   "pattern": "P10 (hook) + P03 (turn)",
+   "differentiation": "Mọi người đang nói: im lặng là vũ khí làm người bị im phải đoán mò, xin lỗi; hãy tạm dừng mà đừng biến nó thành hình phạt ([Kenh14 11/11](https://kenh14.vn/silent-treatment-khi-su-im-lang-tro-thanh-mot-thu-vu-khi-215261111075058205.chn)); TikTok thì cười chuyện chiến tranh lạnh ([skit 10/11](https://www.tiktok.com/@user2906592877976/video/7706520170398813470)). Góc của mình: consensus nhìn từ phía người bị im; sách cho góc ngược: người im để phạt có khi là người nghĩ về chuyện đó lâu hơn (Carlsmith 2008), và cố nén giận thì vô ích (Webb 2012). +1: rời đi thì được, nhưng nói trước một câu có giờ quay lại.",
+   "theme": "dark",
+   "week": 4,
+   "target": "ý tưởng mới 3.17 (trụ 4 tâm trí vững; khác B-giandiu-01 3.23+3.17 là chuyện tức sếp đi chạy) — Hiệp chọn ô",
+   "hook_vi": "Chiến tranh lạnh với người yêu, bạn tưởng mình im thì người kia mới là người khổ? Trên mạng đang có clip: vợ chồng giận nhau, vợ không thèm nói một câu mà cũng không dám ngủ một mình.",
+   "moment_vi": "Cãi nhau xong, tin nhắn hiện «đã xem», bạn để đó. Tối nằm lướt điện thoại mà đầu vẫn tua lại câu nói lúc chiều.",
+   "turn_vi": "Im để nghỉ thì được, im để phạt thì người nghĩ nhiều có khi là mình. Rời đi, nhưng nói trước giờ quay lại.",
+   "hook_en": "Cold war with your partner: you think your silence hurts them more?",
+   "beats": [
+    {"text": "Chiến tranh lạnh với người yêu, bạn tưởng mình im thì người kia mới là người khổ? Trên mạng đang có clip: vợ chồng giận nhau, vợ không thèm nói một câu mà cũng không dám ngủ một mình.", "expression": "confused", "action": "talking", "duration": 9, "caption_en": "Cold war. Who suffers more?", "background": "room"},
+    {"text": "Báo cũng vừa gọi tên kiểu này: im lặng như một thứ vũ khí, làm người kia phải đoán mò rồi xin lỗi.", "expression": "neutral", "action": "talking", "duration": 6, "caption_en": "Silence as a weapon.", "background": "grid"},
+    {"text": "Cãi nhau xong, tin nhắn hiện đã xem, bạn để đó. Tối nằm lướt điện thoại mà đầu vẫn tua lại câu nói lúc chiều.", "expression": "sad", "action": "talking", "duration": 7, "caption_en": "Seen. Ignored. Still replaying it.", "background": "room"},
+    {"text": "Sách dẫn ba thí nghiệm: người được quyền phạt một người chơi gian, và đã phạt, sau đó lại nghĩ về người kia lâu hơn. Người không phạt thì cho qua nhanh hơn.", "expression": "surprised", "action": "talking", "duration": 8, "caption_en": "Punishers kept thinking about it longer.", "background": "grid"},
+    {"text": "Đó là thí nghiệm trò chơi, không phải chuyện yêu đương, và chỉ một nhóm nghiên cứu. Nhưng nó gợi ý: im để phạt, người nghĩ nhiều có khi lại là mình.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "A game study. Still a hint.", "background": "grid"},
+    {"text": "Sách không bắt bạn phải nói ngay. Đang giận thì rời đi trước. Cố nén cảm xúc, ép mình đừng nghĩ thì không có tác dụng; thử đứng vào chỗ người kia nhìn lại thì hạ cơn giận tốt hơn.", "expression": "neutral", "action": "talking", "duration": 9, "caption_en": "Step away. Don't just suppress.", "background": "grid"},
+    {"text": "Nên lần tới cần im, nói trước một câu thôi: mình cần ba mươi phút cho bình tĩnh, lát nói tiếp. Im để nghỉ, không phải im để phạt.", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "Say: 30 minutes, then we talk.", "background": "room"},
+    {"text": "Bạn hay là người im, hay người bị im? Comment một chữ: im, hoặc bị.", "expression": "happy", "action": "talking", "duration": 5, "caption_en": "Silent one or silenced one?", "background": "room"}
+   ]
+  }
+ ]
+}

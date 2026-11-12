@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: idea-bank
 type: plan
 status: active
-updated: 2026-11-11
+updated: 2026-11-12
 tags: [ideas]
 ---
 # Idea bank
@@ -97,3 +97,5 @@ Nguồn chính: kế hoạch 30 clip trong `research/oneup-video-gen-research-vi
 | Biểu đồ cà phê viral trên X: ly 3 giờ chiều lấy giấc mà mình không thấy; giao việc «đẩy cơn buồn ngủ chiều» cho 10 phút chợp mắt (B-cafe6h-02, hook trend mới cho góc B-cafe6h-01) | 3.4 (+3.11) | trụ 3 năng lượng | "Ly cà phê ba giờ chiều giúp bạn qua cơn buồn ngủ, mà tối lại nằm mãi mới ngủ được? Mấy hôm nay có một biểu đồ cà phê lan khắp mạng: cà phê ở lại trong người lâu hơn cơn tỉnh rất nhiều." | DARK | stub 2026-11-11, chờ duyệt (đăng #17; `research/trends/2026-11-11/plans/plan-1-bieu-do-ca-phe-ly-ba-gio-chieu.json`) |
 | TikTok «Dưới 30 tuổi nên xem» khuyên bớt người chỉ rủ nhậu; comment kể bỏ xong không còn bạn: cắt cuộc nhậu, đừng cắt người; gặp người đều đặn là một khoản chi cho sức khoẻ (B-gapnguoi-01) | 22.9 (+3.16) | trụ 4 tâm trí | "Một clip hơn bảy trăm nghìn lượt xem đang khuyên người dưới ba mươi: bớt thời gian cho những người chỉ rủ đi ăn chơi, nhậu nhẹt. Mà dưới comment, có người kể mình bỏ được từ năm hai mươi hai, giờ gần như chẳng còn bạn." | LIGHT | stub 2026-11-11, chờ duyệt; caution KOL thật (ý tưởng mới; `research/trends/2026-11-11/plans/plan-2-cat-cuoc-nhau-dung-cat-nguoi.json`) |
 | Cầu thủ hít thở trước penalty: trước cuộc gọi khó, 5 phút thở dài vòng (B-penalty-01) | 22.8 | trụ 4 tâm trí / đăng #21 | "Cầu thủ đứng trước chấm phạt đền, cả sân nhìn mình, và việc đầu tiên anh làm là… thở. Trước một cuộc gọi khó, bạn có cho mình nhịp thở đó không?" | LIGHT | ý tưởng (2026-11-10; hook thay thế B-met-01; caution: link có thể đã gỡ, không dùng footage) |
+| Gen Z săn iPhone 5C chụp ảnh retro: cái máy cũ trong ngăn kéo nhà bạn có thể vẫn đăng nhập tài khoản chính; mở danh sách thiết bị, máy không còn cầm thì cho đăng xuất (B-5c-01) | 14.6 (+5.23) | trụ 5 học & đầu tư bản thân | "Gen Z đang lùng mua lại iPhone 5C, máy từ năm 2013, chỉ để chụp ảnh kiểu ngày xưa. Còn cái điện thoại cũ trong ngăn kéo nhà bạn, nó còn đăng nhập tài khoản của bạn không?" | DARK | stub 2026-11-12, chờ duyệt (mức C; số 40.500% chưa tự kiểm, không vào voice; `research/trends/2026-11-12/plans/plan-1-may-cu-trong-ngan-keo-con-dang-nhap.json`) |
+| Chiến tranh lạnh / silent treatment: im để nghỉ thì được, im để phạt thì người nghĩ nhiều có khi là mình; rời đi nhưng nói trước giờ quay lại (B-chienlanh-01) | 3.17 (+10.17) | trụ 4 tâm trí | "Chiến tranh lạnh với người yêu, bạn tưởng mình im thì người kia mới là người khổ? Trên mạng đang có clip: vợ chồng giận nhau, vợ không thèm nói một câu mà cũng không dám ngủ một mình." | DARK | stub 2026-11-12, chờ duyệt (mức B; nối thí nghiệm trò chơi → chiến tranh lạnh cần Deep Research kiểm; `research/trends/2026-11-12/plans/plan-2-chien-tranh-lanh-im-de-nghi-khong-de-phat.json`) |

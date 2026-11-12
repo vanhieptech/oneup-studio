@@ -1,0 +1,24 @@
+{
+ "call_id": "bf3d5d37885544f1aa3cbd5168e54ef5",
+ "status": 200,
+ "retry_after": null,
+ "endpoint_id": "scrapecreators.tiktok.search.videos",
+ "replayed": null,
+ "body": {
+  "success": true,
+  "credits_remaining": 212065,
+  "credits_charged": 1,
+  "search_item_list": [],
+  "cursor": null
+ },
+ "cost_usd": 0.00188,
+ "served_via": null,
+ "whose_error": null,
+ "hint": "Rate this one call after using it: review(call_id=bf3d5d37885544f1aa3cbd5168e54ef5, usefulness=useful|partly|not_useful|not_sure, reason?); one review per invitation. Anything confusing or wrong: feedback with this call_id in call_ids. No private data. Then continue.",
+ "did_you_mean": null,
+ "routed_tool": "treg.tiktok.search.videos",
+ "suggestion": "treg.tiktok.search.videos does this job: treg picks the provider, falls back when one fails or misses, and charges only the answer. Prefer it next time unless you need options only this provider has.",
+ "upstream_failed": null,
+ "error": null,
+ "detail": null
+}
