@@ -1,11 +1,23 @@
 ---
 name: hyperframes-core
-description: The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class="clip"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.
+description: >-
+  The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class="clip"`, tracks, sub-compositions, variables, framework-owned media playback, deterministic-render rules, and validation. Read before writing composition HTML.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - composition
+    - core
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # HyperFrames Core
+
+## Purpose
+The HyperFrames composition contract — build one renderable project. Use for composition structure, the `data-*` timing attributes, `class="clip"`, tracks, sub-compositions, variables, framework-owned media playback,…
+
 
 **Agent pitfalls (read first):**
 
@@ -98,3 +110,19 @@ Use `hyperframes-cli` for command details
 - [ ] Projects with sub-compositions: `npx hyperframes snapshot --at <midpoints>` and eyeball each frame
 - [ ] `npx hyperframes preview --background` for review (the user can edit anything in Studio's timeline, and the server survives the invoking command)
 - [ ] `npx hyperframes render` only after the user approves
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `hyperframes-core` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `hyperframes-core` |

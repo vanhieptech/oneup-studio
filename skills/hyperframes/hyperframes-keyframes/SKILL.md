@@ -1,17 +1,28 @@
 ---
 name: hyperframes-keyframes
-description: >
+description: >-
   Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe,
   Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe
   2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, WAAPI, FLIP, paths,
   masks, SVG morph/draw, text trails, 3D depth, or `hyperframes keyframes` diagnostics.
   Don't use for broad scene strategy, brand design, media sourcing, captions, or
   general video planning.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - keyframes
+    - camera
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # HyperFrames Keyframes
+
+## Purpose
+Use when a HyperFrames composition needs a punch-in, punch-out, zoom, reframe, Ken Burns treatment, camera move, visual match/whip handoff, or other seek-safe 2D/3D keyframes; also for GSAP, CSS keyframes, Anime.js, W…
+
 
 Keyframes are a pose contract: visible states, continuous subject identity, seek-safe runtime, verified pixels.
 
@@ -261,3 +272,19 @@ A helper-selector shot is not proof. An onion shot over a broken full frame is n
 ## Done
 
 Run `hyperframes check` (it runs lint), `hyperframes keyframes`, one focused `--shot`, and snapshots. Confirm first frame, proof poses, final-minus-hold, exact final, subject-owned motion, and no debug overlays.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `hyperframes-keyframes` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `hyperframes-keyframes` |

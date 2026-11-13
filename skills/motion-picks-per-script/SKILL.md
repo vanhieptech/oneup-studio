@@ -1,13 +1,28 @@
 ---
-name: Motion picks per script
+name: motion-picks-per-script
 description: >-
   Use when a short-form video script is approved (or drafted) and you need to
   choose motion/animation effects that fit THAT script's content, beat by beat,
   from the awesome-ai-motion catalog, transitions.dev ports, and motionmaxxing measured eases — instead of reusing a fixed effect set.
+version: "1.0.0"
+metadata:
+  author: OneUp Studio
+  tags:
+    - motion
+    - effects
+    - script
+    - remotion
 ---
 # Motion picks per script
 
-Catalog: https://github.com/gongnyang/awesome-ai-motion (MIT). Clone to `resources/refs/awesome-ai-motion (clone, xem resources/refs/README.md)` if missing. Machine-readable index: `index.json` (`effects`[637], `recipes`[11], `routes`[7], `glossary`). Cards are mostly Korean with `en` names; read the per-effect folder under `effects/` for full params and demo mp4.
+## Purpose
+Pick beat-by-beat motion/animation effects for an approved short-form script from in-house catalogs and reference skills, instead of a fixed effect set.
+
+
+Catalog: https://github.com/gongnyang/awesome-ai-motion (MIT). Clone to `resources/refs/awesome-ai-motion` if missing (see `resources/refs/README.md`). Machine-readable index: `index.json` (`effects`[637], `recipes`[11], `routes`[7], `glossary`). Cards are mostly Korean with `en` names; read the per-effect folder under `effects/` for full params and demo mp4.
+
+**Browse 100 ready demos:** `content/samples/lab/motion-100/index.html`  
+**All generator skills (local + GitHub clones):** `research/references/motion-skills-catalog.md`
 
 ## In-house catalog (Remotion-ready, pick these first for transitions)
 `video-engine/src/composition/transitions/catalog.json`: 8 frame-driven ports of transitions.dev (source tag `transitions.dev`, commit 8c92530): tdev-modal, tdev-page, tdev-panel, tdev-text-swap, tdev-icon-swap, tdev-stagger, tdev-badge, tdev-shake. Set scene `transition: "tdev-…"` or call `tdevStyle(name, p)` for an element. Plus built-ins cut/fade/slide/wipe/iris. Demo: `media/samples/lab/transitions-demo/transitions-demo.mp4 (+ .png contact sheet)`. In motion-spec.md write the slug with `(transitions.dev)`.
@@ -55,3 +70,19 @@ In-house: `video-engine/src/composition/doodle/catalog.json` + `doodle.ts`/`Dood
 - Scene timing/eases → keep `mmx-*`; UI transitions → keep `tdev-*`; caption/count-up/strike → keep awesome-ai-motion cards.
 - Craft laws (always): ≤1 doodle accent per beat, draw-on 0.4–0.8s (never fade/pop a finished mark in), fixed seed per cue, box above caption band (y+h ≤ 1400), brand accent stroke only.
 - Skip: anidoodle canvas engine/32 styles at runtime, its music/sound pack, interactive web component (off-format; see notes §5).
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Requires an approved or drafted script with beats.
+- Catalog clones under `resources/refs/` may be missing until synced.
+- Does not render video; only chooses and documents motion picks.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Catalog path missing | Ref not cloned | Follow `resources/refs/README.md` |
+| Effect feels wrong on beat | Intent tag mismatch | Re-tag beat purpose; pick from matching `purposes` |
+| CapCut vs Remotion confusion | Wrong channel | Comic → Remotion catalogs; VHT overlays → make-layer |

@@ -1,16 +1,27 @@
 ---
 name: general-video
-description: >
+description: >-
   Author or edit a custom HyperFrames composition when no specialized workflow fits, or when
   BRIEF.md sets flow: companion. Use for longer or multi-scene pieces, brand and sizzle reels,
   montages, static loops, static title cards, footage remixes, and freeform builds. Use
   motion-graphics instead for a short unnarrated motion-first unit, including an animated title.
   Route fresh creation through hyperframes before using this skill.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - video
+    - composition
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # General video
+
+## Purpose
+Author or edit a custom HyperFrames composition when no specialized workflow fits, or when BRIEF.md sets flow: companion. Use for longer or multi-scene pieces, brand and sizzle reels, montages, static loops, static ti…
+
 
 Run `npx hyperframes usage --json` at the start unless the workflow just read it, then check again at milestones such as after drafting and before rendering. Read the available windows and reset times. If usage is unknown, say so without guessing allowance; keep scope and workflow choices with the user.
 
@@ -166,3 +177,19 @@ A run is complete only when:
 - the rendered file is verified when a render was requested.
 
 After final approval, offer once to freeze the run as a recipe, following `../hyperframes/references/review-loop.md` § 4.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `general-video` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `general-video` |

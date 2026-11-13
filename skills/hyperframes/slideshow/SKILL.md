@@ -1,12 +1,19 @@
 ---
 name: slideshow
-description: >
+description: >-
   Author a HyperFrames slideshow — a presentation, pitch deck, or interactive
   deck with discrete slides, fragment reveals, branching, hotspot navigation,
   and built-in presenter mode with speaker notes; also converts an existing
   page into a deck. Output is a navigable deck, not a rendered MP4. If the
   user didn't explicitly ask for a slideshow, confirm before authoring.
   Unclear → /hyperframes.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - slideshow
+    - deck
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
@@ -16,6 +23,10 @@ description: >
 > **figma source**: If the deck's content or storyboard comes from a figma.com URL, run `/figma` first — asset export, brand tokens, and storyboard reconstruction if the source is a strip of scene frames — then build from its output. Don't drive Figma via raw MCP tools directly: that skips SVG sanitization, `.media/manifest.jsonl` provenance, and brand-token `var()` binding, so a later brand change can't propagate without a full re-import.
 
 # Slideshow authoring contract
+
+## Purpose
+Author a HyperFrames slideshow — a presentation, pitch deck, or interactive deck with discrete slides, fragment reveals, branching, hotspot navigation, and built-in presenter mode with speaker notes; also converts an…
+
 
 A HyperFrames slideshow is a normal HyperFrames composition — scenes, clips, GSAP timelines — with one extra ingredient: a **JSON island** that declares which scenes are slides and how they connect. The player's `SlideshowController` reads the island and turns the continuous GSAP timeline into a discrete, navigable deck.
 
@@ -524,3 +535,19 @@ The slideshow lint rule checks:
 - No two main-line slides overlap in time.
 
 Fix all violations before previewing. A composition that fails lint will not parse correctly in the player.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `slideshow` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `slideshow` |

@@ -1,11 +1,23 @@
 ---
 name: hyperframes-creative
-description: Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / style decisions. For atomic motion patterns and scene blueprints, use `hyperframes-animation`.
+description: >-
+  Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / style decisions. For atomic motion patterns and scene blueprints, use `hyperframes-animation`.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - creative
+    - design
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # HyperFrames Creative
+
+## Purpose
+Non-animation creative direction for HyperFrames videos. Use for design spec (frame.md / design.md) handling, palettes, typography, narration, beat planning, audio-reactive visuals, composition patterns, and brand / s…
+
 
 Brand, pacing, style, narration, and composition direction. Use after the technical contract from `hyperframes-core` is in place.
 
@@ -71,3 +83,19 @@ Animation analysis (`animation-map.mjs`) lives in `hyperframes-animation/scripts
 - Do not require a design system for a minimal technical composition.
 - Do not add extra scenes, narration, music, captions, or transitions unless the request calls for them or you first propose the expansion.
 - Keep recipe references task-specific; do not read every reference for simple edits.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `hyperframes-creative` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `hyperframes-creative` |

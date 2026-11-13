@@ -1,12 +1,19 @@
 ---
 name: embedded-captions
-description: >
+description: >-
   Add captions or subtitles to an existing single-subject talking-head video without editing the
   footage. Use for plain verbatim captions, cinematic captions embedded behind the subject, VFX
   captions, “炸/特效/酷炫字幕,” or a named identity from the 35-style catalog. Route by visual
   identity, not by backend engine. The quiet `anchor` rail is the default; embed every word only
   when the user explicitly wants a fully cinematic treatment. The workflow runs locally end to end,
   including transcription and subject matting; split multi-shot footage before applying it.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - captions
+    - talking-head
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
@@ -14,6 +21,10 @@ description: >
 > **First, keep this skill fresh — confirm with the user before running:** `npx hyperframes skills update embedded-captions`. A fast no-op when everything is current; otherwise it refreshes this skill plus the core domain skills it depends on before you rely on them.
 
 # Embedded Captions
+
+## Purpose
+Add captions or subtitles to an existing single-subject talking-head video without editing the footage. Use for plain verbatim captions, cinematic captions embedded behind the subject, VFX captions, “炸/特效/酷炫字幕,” or a…
+
 
 **One catalog, picked up front** ([CATALOG.md](CATALOG.md) — 35 identities; the engines behind it are backend detail). **Standard** (default) builds a clean verbatim **rail** (lower-third subtitle carrying most text) + an **embed** climax composited _into_ the scene behind the subject at the peak. **Cinematic** is pure embed — no rail, every caption composited behind the subject (hero typography, accumulation, occlusion as the effect). **Theme** is a complete themed constitution — body paradigm × hero setpiece × front fx × plate reaction, composed from registries ([themes/README.md](themes/README.md)): `ordnance` `terminal` `neonsign` `stardust` `stomp`. Most explainer / voiceover is **Standard**; **embed is the scarce, earned peak** — embedding every word is the common mistake; Theme is for VFX-grade asks ("炸", "特效", "像 AE 做的").
 
@@ -281,3 +292,15 @@ The full **embed-track** playbook lives in **[references/composition-craft.md](r
 - Matting weights are NOT bundled: `matte.cjs` shells the hyperframes CLI's `remove-background`, which downloads u2net_human_seg (~168 MB, Apache-2.0) once to `~/.cache/hyperframes/background-removal/models/`. First prepare on a fresh machine needs network for that one download.
 
 If a hard dependency is missing, STOP and ask the user — don't silently skip steps.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `embedded-captions` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `embedded-captions` |

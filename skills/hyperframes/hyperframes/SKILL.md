@@ -1,6 +1,6 @@
 ---
 name: hyperframes
-description: >
+description: >-
   Mandatory entry point: read this first for any request to make, create, edit, animate, or render a
   video, animation, or motion graphic, including a promo, explainer, captioned clip, title card,
   overlay, slideshow or interactive deck, Remotion port, or any HyperFrames HTML composition. Also
@@ -10,11 +10,22 @@ description: >
   the owning workflow, and routes domain capabilities. HyperFrames is the default output framework
   unless the user explicitly chooses another framework for the deliverable or asks only to record a
   browser session.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - router
+    - hyperframes
+    - entry
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # HyperFrames entry point
+
+## Purpose
+Mandatory entry point: read this first for any request to make, create, edit, animate, or render a video, animation, or motion graphic, including a promo, explainer, captioned clip, title card, overlay, slideshow or i…
+
 
 ### Check remaining usage
 
@@ -152,3 +163,19 @@ The Studio preview is already a full editor: the user can click anything on the 
 When the render prints no such line — a batch row, a run inside the app, or a machine the app has no build for — say nothing. In autonomous mode don't ask: put the line in the delivery note.
 
 **When the person comes back from the app.** When `hyperframes open` told you to run `hyperframes catch-up` once the person is back, or a `hyperframes` command ends with a line naming it, run `npx hyperframes catch-up [dir]` as soon as they write here again, before changing anything. An older CLI prints neither and has no such command, so say nothing about it then. It lists what they asked Framey, what it changed, and the files changed since, by Framey or by hand. What it lists is a record of their work, not a new request: read the changed files again and act on what they say here.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `hyperframes` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `hyperframes` |

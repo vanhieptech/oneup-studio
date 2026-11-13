@@ -1,6 +1,6 @@
 ---
 name: hyperframes-studio
-description: >
+description: >-
   Use when working with a person on a HyperFrames project in Studio: first,
   whether their message asks for a change at all (questions, loose ideas and
   "don't change anything" get an answer and a plan, not an edit); for a new
@@ -10,11 +10,22 @@ description: >
   and key content may sit (safe zones). Don't use for how to perform an
   individual edit (split, trim, retime, volume, copy, swap): that is
   `creator-editing-recipes.md` in `/hyperframes-core`.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - studio
+    - collaboration
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # HyperFrames Studio conventions
+
+## Purpose
+Use when working with a person on a HyperFrames project in Studio: first, whether their message asks for a change at all (questions, loose ideas and "don't change anything" get an answer and a plan, not an edit); for…
+
 
 Studio draws one timeline row per top-level element. A project that follows the
 rules below opens as a short, readable timeline; one that does not opens as a wall
@@ -138,3 +149,19 @@ the arc wins.
 
 Run `hyperframes check` (it runs lint) and fix every finding. Then open the project in Studio and
 check that the timeline shows a base row, one row per scene host, one caption row and the audio rows.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `hyperframes-studio` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `hyperframes-studio` |

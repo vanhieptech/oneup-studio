@@ -1,6 +1,6 @@
 ---
 name: motion-graphics
-description: >
+description: >-
   A short, design-led motion graphic where motion is the message — kinetic
   typography, stat count-up, chart/data-viz hit, logo sting / brand lockup,
   lower-third / callout / social overlay, animated map (highlight regions,
@@ -9,6 +9,13 @@ description: >
   real image's geometry into a chart. Usually under 10s (up to ~30s), no
   narration or live-action subject; renders to MP4 or transparent overlay.
   Longer / narrated / multi-scene → /general-video. Unclear → /hyperframes.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - motion-graphics
+    - kinetic-type
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
@@ -18,6 +25,10 @@ description: >
 > **figma source**: If the logo/asset/animation to build from comes from a figma.com URL, run `/figma` first — asset export, brand tokens, and Motion→GSAP translation if the graphic is a Figma Motion import — then build from its output. Don't drive Figma via raw MCP tools directly: that skips SVG sanitization, `.media/manifest.jsonl` provenance, and brand-token `var()` binding, so a later brand change can't propagate without a full re-import.
 
 # motion-graphics — dispatch entry
+
+## Purpose
+A short, design-led motion graphic where motion is the message — kinetic typography, stat count-up, chart/data-viz hit, logo sting / brand lockup, lower-third / callout / social overlay, animated map (highlight region…
+
 
 > **The front door is `/hyperframes`.** This skill makes a **short, design-led, unnarrated motion graphic** (motion is the message; ~under 10s, no voice-over). Anything longer, narrated, or multi-scene — or any uncertainty → read `/hyperframes` first: the intent layer owns every route decision.
 
@@ -172,3 +183,15 @@ Verify the output exists, is non-empty, and has the intended duration. The final
     renders/video.mp4
   ```
 - **Registration:** in `hyperframes` router — add the "design-led short motion graphic" intent + Workflow description; carve the motion-graphics triggers out of `/general-video`; add reverse Do-NOT-use edges. See `motion-graphics-genre.md` §5-7.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `motion-graphics` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `motion-graphics` |

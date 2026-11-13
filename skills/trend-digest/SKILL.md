@@ -1,6 +1,5 @@
 ---
-name: Trend digest
-version: 4
+name: trend-digest
 description: >-
   Daily (and Sunday weekly-synthesis) trend scan for a "how to live" short-form comic channel.
   Collect ANY hot trends + niche trends from free public sources, brand-safety filter, score
@@ -8,8 +7,20 @@ description: >-
   patterns/formats are performing, write a differentiation step (what everyone says vs our
   angle), bridge to a source-book lesson, grow a hook-pattern library, and emit validated
   scene-plan stubs for the top 1-2 ideas so trend -> script -> comic render is seamless.
+version: "4.0.0"
+metadata:
+  author: OneUp Studio
+  tags:
+    - trends
+    - tiktok
+    - research
+    - ideas
 ---
 # Trend digest v4 (Apify TikTok-native + multi-source collector)
+
+## Purpose
+Run the daily (and Sunday weekly) trend digest for @hi.oneup: collect public trends, brand-safety filter, bridge to lessons, and emit scene-plan stubs.
+
 
 ## Inputs (from the channel repo's AGENTS.md)
 - Source book index (@hi.oneup: HowToLiveBetter, "phần.mục" ids), `content/theme-map.md`, `content/idea-bank.md`, `content/story-bank.md`, `content/voice-profile.md`.
@@ -80,3 +91,19 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 3. Update patterns.md: `uses`/`wins` from published clips, retire tired patterns, promote patterns with wins/uses ≥0.5.
 4. Write `research/trends/weekly/YYYY-Www.md`: what trended, what saturated, patterns rising/falling, which bridges became clips, 3 recommended angles + 2 topics to avoid next week, proposed rule/skill changes (do not edit rules; propose for Hiệp, rule-33).
 5. Append one line to patterns.md "Learnings log".
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Free/public sources only; no login/cookies/paid APIs in collector.
+- Comic-only series format — no real-event footage.
+- Writes only inside the repo `research/trends/` and `content/idea-bank.md`.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Collector empty/partial | Source timeout or YAML drift | Check `pipeline/trends/sources.yaml` + per-source status |
+| Duplicate bridges | Dedup tables stale | Compare ingest.md + last 7 raw.json |
+| Unsafe topic slipped | Filter miss | Raise brand-safety filter; drop idea |

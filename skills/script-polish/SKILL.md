@@ -1,12 +1,24 @@
 ---
-name: Script polish (VI voice)
+name: script-polish
 description: >-
   Use after a short-form video script is drafted (facts checked) and before it goes
   to the creator for approval: remove AI-writing tells with the vendored humanizer
   skill, adapt to spoken Vietnamese, and match the creator's voice profile, without
   changing any fact, number or citation.
+version: "1.0.0"
+metadata:
+  author: OneUp Studio
+  tags:
+    - script
+    - vietnamese
+    - voice
+    - humanizer
 ---
 # Script polish (VI voice)
+
+## Purpose
+Polish a fact-checked short-form script into spoken Vietnamese that matches the creator voice profile, removing AI-writing tells without changing facts.
+
 
 ## Inputs
 - Draft script (VI voice lines + EN captions).
@@ -39,3 +51,19 @@ description: >-
 7. **Trend check (rule-37).** At least one current phrase or situation from `research/trends/ingest.md` must stay in the script, used naturally.
 8. **Diff + verify.** Output the old and new lines side by side, list the facts and confirm each is unchanged, and apply L-099: total strictly <300s INCLUDING end card, pauses and transitions; 120–180s is a warning-only target, not a minimum. No word quotas or speed-up to fit. Before Chốt label natural-reading duration ƯỚC/estimate; measure actual audio/video only after Chốt. This is not Chốt and does not waive W-16.
 9. Save as `script-vX.Y-draft.md` next to the approved version. Never overwrite the approved script until the creator approves.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Must not change facts, numbers, or citations.
+- Depends on `content/voice-profile.md` and `skills/humanizer`.
+- Not a topic researcher — facts must already be checked.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Facts drifted | Over-aggressive rewrite | Diff against fact-lock list; restore numbers/citations |
+| Still sounds AI | Residual humanizer tells | Re-run humanizer pass on VI + EN captions |
+| Wrong pronouns/particles | Profile ignored | Re-read `content/voice-profile.md` samples |

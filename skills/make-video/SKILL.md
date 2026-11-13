@@ -1,13 +1,25 @@
 ---
-name: Make video (@hi.oneup end-to-end)
+name: make-video
 description: >-
-  Use whenever Hiệp asks for a clip ("Làm clip tiếp theo", "Làm clip về <chủ đề/trend>",
+  Use whenever Hiệp asks for a clip ("Làm clip tiếp theo", "Làm clip về topic/trend",
   "làm lại clip-NN", or beat feedback like "b03: đổi câu …"). The single workflow from
   intake to post package that keeps every clip consistent with rules/video-rules.md:
   read sources → script → humanizer → check-rules → review gate 1 → render → check-rules
   --final → review gate 2 → log decisions. Edits go to the spec, never a regenerate.
+version: "1.0.0"
+metadata:
+  author: OneUp Studio
+  tags:
+    - video
+    - comic
+    - hi-oneup
+    - pipeline
 ---
 # Make video (one workflow, rule-48)
+
+## Purpose
+Run the full @hi.oneup comic+motion clip workflow from intake through review gates, render, and decision logging so every clip stays consistent with `rules/video-rules.md`.
+
 
 ## Duration and approval override — 2026-11-08
 This override applies to active rewrites and new clips; retain historical archives unchanged. Target 2–3 minutes (120–180 seconds), NOT a mandatory minimum. The HARD limit is total duration strictly below 300 seconds, including endcard, pauses and transitions; exactly 300 seconds fails.
@@ -19,7 +31,7 @@ Before wording approval (Chốt), timing is ESTIMATED from natural speech only. 
 Old 55–60s TTS runtime estimates below are historical examples only, not a runtime promise for a 2–3-minute clip. Legacy checker/template limits must be reconciled through the code/storage owner; do not call an obsolete-length failure a waiver or claim the checker has been updated without evidence. All unrelated rules below remain in force.
 
 
-Repo: `oneup-studio` (box clone `/workspace/oneup-studio`, Mac `/Users/macbook/me/projects/oneup-studio`).
+Repo: `oneup-studio` (box clone `/workspace/oneup-studio`; Mac: local checkout of the same repo).
 Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
 
 ## 0. How Hiệp asks (intake)
@@ -180,3 +192,19 @@ For each: add `DL-NNN` (quote him) → edit `final/spec.json` (line text/emotion
 
 ## 9. Close out
 Copy deliverables if asked; `python3 pipeline/scripts/build-index.py`; commit; push (or bundle when the Mac is offline, AGENTS.md). Media stays out of git (`final/out/` is ignored).
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Comic/motion series only (DL-027); not for @vanhiep.tech CapCut A-roll.
+- Do not regenerate from scratch on feedback — edit `spec.json` / script and re-render.
+- Pre-Chốt: no TTS, images, or video render.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| check-rules fails | Spec/script violates a numbered rule | Read finding → edit source → re-run check |
+| Duration ≥300s | Endcard/pauses pushed total over hard limit | Trim beats or pauses; remeasure finished cut |
+| Wrong channel workflow | Request was for talking-head CapCut | Use `channels/vanhiep-tech` skills instead |

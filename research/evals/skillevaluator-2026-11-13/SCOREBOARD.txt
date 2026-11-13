@@ -1,0 +1,43 @@
+SkillEvaluator 0.9.0 — quality-check (Tier 1, no LLM)
+Scope: first-party video generate/edit skills (@hi.oneup + @vanhiep.tech + hyperframes)
+AGENTS.md files are NOT Agent Skills — not scored by quality-check.
+
+score G    ok   C   D   R   E  path
+ 88.5 B  True  85  90  85 100  channels/vanhiep-tech/skills/make-capcut-draft
+ 88.5 B  True  85  90  85 100  channels/vanhiep-tech/skills/make-layer
+ 88.5 B  True  85  90  85 100  skills/hyperframes/figma
+ 88.5 B  True  85  90  85 100  skills/hyperframes/hyperframes-animation
+ 87.2 B  True  85  85  85 100  skills/hyperframes/media-use
+ 86.2 B  True  85  90  85  85  skills/hyperframes/general-video
+ 86.2 B  True  85  90  85  85  skills/hyperframes/product-launch-video
+ 85.8 B  True  85  85  85  90  skills/hyperframes/hyperframes-registry
+ 85.0 B  True  85  85  85  85  skills/hyperframes/faceless-explainer
+ 84.8 B  True  85  90  85  75  skills/hyperframes/hyperframes-cli
+ 84.8 B  True  85  75  85 100  skills/hyperframes/hyperframes-keyframes
+ 84.8 B  True  85  90  85  75  skills/hyperframes/slideshow
+ 84.5 B  True  80  90  85  85  skills/humanizer
+ 84.0 B  True  80  85  85  90  skills/hyperframes/hyperframes-core
+ 83.5 B  True  85  85  85  75  skills/hyperframes/hyperframes
+ 83.2 B False  70  90  85 100  skills/trend-digest
+ 83.0 B  True  80  85  75 100  skills/hyperframes/hyperframes-studio
+ 82.5 B  True  85  75  85  85  skills/hyperframes/pr-to-video
+ 82.2 B  True  85  60  90 100  skills/hyperframes/motion-graphics
+ 81.5 B False  65  90  85 100  skills/motion-picks-per-script
+ 81.0 B False  70  90  85  85  skills/make-video
+ 79.5 C False  70  90  85  75  skills/hyperframes/hyperframes-audio
+ 79.2 C  True  65  90  85  85  resources/refs/motionmaxxing
+ 79.0 C False  65  90  75 100  skills/script-polish
+ 78.8 C  True  85  60  85  85  skills/hyperframes/talking-head-recut
+ 77.5 C  True  65  90  75  90  skills/hyperframes/hyperframes-creative
+ 77.5 C  True  65  80  85  90  skills/hyperframes/music-to-video
+ 77.0 C  True  65  90  85  70  skills/hyperframes/embedded-captions
+ 72.5 C  True  65  60  85  90  skills/hyperframes/remotion-to-hyperframes
+
+pass=24/29 avg=82.9
+
+FAIL blockers:
+- skills/trend-digest: Invalid name format: 'Trend digest' (lowercase/numbers/hyphens only) | Invalid name format: 'Trend digest' (lowercase/numbers/hyphens only)
+- skills/motion-picks-per-script: Invalid name format: 'Motion picks per script' (lowercase/numbers/hyphens only) | Invalid name format: 'Motion picks per script' (lowercase/numbers/hyphens only)
+- skills/make-video: Invalid name format: 'Make video (@hi.oneup end-to-end)' (lowercase/numbers/hyphens only) | Invalid name format: 'Make video (@hi.oneup end-to-end)' (lowercase/numbers/hyphens only)
+- skills/hyperframes/hyperframes-audio: Description contains XML tags | Description contains XML tags
+- skills/script-polish: Invalid name format: 'Script polish (VI voice)' (lowercase/numbers/hyphens only) | Invalid name format: 'Script polish (VI voice)' (lowercase/numbers/hyphens only)

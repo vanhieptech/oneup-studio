@@ -1,21 +1,32 @@
 ---
 name: hyperframes-audio
-description: >
+description: >-
   Use when audio already placed in a HyperFrames composition needs to be mixed:
   fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking,
   a music bed that fights a voiceover (voiceover carve), effects on a track
   (EQ, compressor, limiter, gate, saturation, delay, reverb, chorus, phaser,
   bitcrush), automation envelopes drawn on a track's volume or any effect
   parameter, or one submix bus carrying a chain, a fader and an automation clock
-  for several tracks at once (`<hf-audio-group>`).
+  for several tracks at once (`hf-audio-group`).
   Don't use for sourcing or generating audio — finding BGM, SFX, or making a
   voiceover is `/media-use`. Don't use for clip timing or track layout, which is
   `/hyperframes-core`.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - audio
+    - mix
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
 
 # HyperFrames Audio
+
+## Purpose
+Use when audio already placed in a HyperFrames composition needs to be mixed: fade-in/fade-out, crossfade, track gain or volume, volume automation, ducking, a music bed that fights a voiceover (voiceover carve), effec…
+
 
 A mix is a set of relationships, not a stack of processors. Two tracks that each
 sound right alone can be unlistenable together, and the fix is almost never "turn
@@ -484,3 +495,19 @@ should be legible without the bed sounding hollowed, and the bed
 should come back up between phrases rather than staying flat. If the bed sounds
 notched rather than simply quieter under the voice, the strength is too high —
 that is the one failure mode with an obvious sound.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `hyperframes-audio` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `hyperframes-audio` |

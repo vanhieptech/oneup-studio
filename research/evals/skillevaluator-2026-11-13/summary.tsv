@@ -1,0 +1,30 @@
+score	grade	passed	correctness	discoverability	reliability	efficiency	errors	warnings	high	medium	skill	path	skill_type	high_msgs
+88.5	B	True	85.0	90.0	85.0	100.0	0	8	0	3	make-capcut-draft	channels/vanhiep-tech/skills/make-capcut-draft	guide-only	
+88.5	B	True	85.0	90.0	85.0	100.0	0	8	0	3	make-layer	channels/vanhiep-tech/skills/make-layer	guide-only	
+88.5	B	True	85.0	90.0	85.0	100.0	0	8	0	3	figma	skills/hyperframes/figma	guide-only	
+88.5	B	True	85.0	90.0	85.0	100.0	0	8	0	3	hyperframes-animation	skills/hyperframes/hyperframes-animation	guide-only	
+87.2	B	True	85.0	85.0	85.0	100.0	0	9	0	3	media-use	skills/hyperframes/media-use	guide-only	
+86.2	B	True	85.0	90.0	85.0	85.0	0	9	0	4	general-video	skills/hyperframes/general-video	guide-only	
+86.2	B	True	85.0	90.0	85.0	85.0	0	9	0	4	product-launch-video	skills/hyperframes/product-launch-video	guide-only	
+85.8	B	True	85.0	85.0	85.0	90.0	0	10	0	4	hyperframes-registry	skills/hyperframes/hyperframes-registry	guide-only	
+85.0	B	True	85.0	85.0	85.0	85.0	0	10	0	4	faceless-explainer	skills/hyperframes/faceless-explainer	guide-only	
+84.8	B	True	85.0	90.0	85.0	75.0	0	10	0	5	hyperframes-cli	skills/hyperframes/hyperframes-cli	guide-only	
+84.8	B	True	85.0	75.0	85.0	100.0	0	9	0	4	hyperframes-keyframes	skills/hyperframes/hyperframes-keyframes	guide-only	
+84.8	B	True	85.0	90.0	85.0	75.0	0	10	0	4	slideshow	skills/hyperframes/slideshow	guide-only	
+84.5	B	True	80.0	90.0	85.0	85.0	0	10	0	4	humanizer	skills/humanizer	guide-only	
+84.0	B	True	80.0	85.0	85.0	90.0	0	11	0	4	hyperframes-core	skills/hyperframes/hyperframes-core	guide-only	
+83.5	B	True	85.0	85.0	85.0	75.0	0	11	0	5	hyperframes	skills/hyperframes/hyperframes	guide-only	
+83.2	B	False	70.0	90.0	85.0	100.0	1	8	1	2	trend-digest	skills/trend-digest	guide-only	Invalid name format: 'Trend digest' (lowercase/numbers/hyphens only) | Invalid name format: 'Trend digest' (lowercase/numbers/hyphens only)
+83.0	B	True	80.0	85.0	75.0	100.0	0	11	0	3	hyperframes-studio	skills/hyperframes/hyperframes-studio	guide-only	
+82.5	B	True	85.0	75.0	85.0	85.0	0	11	0	4	pr-to-video	skills/hyperframes/pr-to-video	guide-only	
+82.2	B	True	85.0	60.0	90.0	100.0	0	10	0	4	motion-graphics	skills/hyperframes/motion-graphics	guide-only	
+81.5	B	False	65.0	90.0	85.0	100.0	1	9	1	3	motion-picks-per-script	skills/motion-picks-per-script	guide-only	Invalid name format: 'Motion picks per script' (lowercase/numbers/hyphens only) | Invalid name format: 'Motion picks per script' (lowercase/numbers/hyphens only)
+81.0	B	False	70.0	90.0	85.0	85.0	1	9	1	4	make-video	skills/make-video	guide-only	Invalid name format: 'Make video (@hi.oneup end-to-end)' (lowercase/numbers/hyphens only) | Invalid name format: 'Make video (@hi.oneup end-to-end)' (lowercase/numbers/hyphens only)
+79.5	C	False	70.0	90.0	85.0	75.0	1	10	1	5	hyperframes-audio	skills/hyperframes/hyperframes-audio	guide-only	Description contains XML tags | Description contains XML tags
+79.2	C	True	65.0	90.0	85.0	85.0	0	11	0	6	motionmaxxing	resources/refs/motionmaxxing	hybrid	
+79.0	C	False	65.0	90.0	75.0	100.0	1	10	1	3	script-polish	skills/script-polish	guide-only	Invalid name format: 'Script polish (VI voice)' (lowercase/numbers/hyphens only) | Invalid name format: 'Script polish (VI voice)' (lowercase/numbers/hyphens only)
+78.8	C	True	85.0	60.0	85.0	85.0	0	12	0	5	talking-head-recut	skills/hyperframes/talking-head-recut	resource-based	
+77.5	C	True	65.0	90.0	75.0	90.0	0	12	0	6	hyperframes-creative	skills/hyperframes/hyperframes-creative	hybrid	
+77.5	C	True	65.0	80.0	85.0	90.0	0	12	0	6	music-to-video	skills/hyperframes/music-to-video	script-based	
+77.0	C	True	65.0	90.0	85.0	70.0	0	13	0	7	embedded-captions	skills/hyperframes/embedded-captions	hybrid	
+72.5	C	True	65.0	60.0	85.0	90.0	0	13	0	8	remotion-to-hyperframes	skills/hyperframes/remotion-to-hyperframes	hybrid	

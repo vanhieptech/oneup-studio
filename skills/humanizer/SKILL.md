@@ -1,16 +1,25 @@
 ---
 name: humanizer
-description: |
+description: >-
   Rewrite AI-sounding text so it reads like the writer without changing what it says.
   Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line
   closers, staged openers, forced triads, dashes everywhere, inflated claims, sales
   language, stock AI words, bold labels, or filler. Based on Wikipedia's "Signs of AI writing."
+version: "3.1.0"
 license: MIT
 metadata:
-  version: "3.1.0"
+  author: OneUp Studio (vendored MIT humanizer)
+  tags:
+    - writing
+    - editing
+    - ai-tells
 ---
 
 # Humanizer: remove AI writing patterns
+
+## Purpose
+Rewrite AI-sounding prose so it reads like a human writer without changing meaning or inventing facts.
+
 
 Rewrite AI-sounding text so it reads like the writer, not a chatbot. Keep what it says. Do not make anything up.
 
@@ -395,3 +404,19 @@ Keep the details that carry the writer's voice unless they hurt the meaning:
 ## Source
 
 The patterns come from Wikipedia's ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup, and from reviews of AI-generated text on Wikipedia and elsewhere.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Structural tells lead; word lists drift with model releases.
+- Fiction may keep invented detail; nonfiction must not add unsupported claims.
+- Embedded mode still requires a voice profile when used for VI scripts.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Meaning changed | Over-edit | Restore claims from source; re-edit lighter |
+| Tells remain | Only patched phrases | Rewrite whole paragraph around the point |
+| Too bland | Stripped voice | Keep allowed opinion/reaction from voice profile |

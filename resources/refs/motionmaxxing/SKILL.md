@@ -1,9 +1,22 @@
 ---
 name: motionmaxxing
-description: Direct and build professional motion-graphics films (launch videos, product promos, feature reveals, brand stings, kinetic-type pieces, social ads, CTAs) that read as made by a senior motion designer, not AI slop. Finds an idea only this brand could own (from its logo, control, material, verb, voice), builds a world for it (ground, light, depth, texture, 3D or generated image surfaces for the hero moment), then builds with a seek-safe GSAP runtime driven by curves measured frame by frame from 53 professional recreations, and reviews its own render honestly with scripted gates (look.py, lint.mjs) instead of self-certifying. Given a website URL it captures the brand (colours, fonts, official logo, copy, screenshots); with an ElevenLabs key it writes and voices the script, scores it, and cuts picture and sound together. Use for any request to make, plan, storyboard, fix or critique a motion graphic or promo video, in HyperFrames or plain HTML.
+description: >-
+  Direct and build professional motion-graphics films (launch videos, product promos, feature reveals, brand stings, kinetic-type pieces, social ads, CTAs) that read as made by a senior motion designer, not AI slop. Finds an idea only this brand could own (from its logo, control, material, verb, voice), builds a world for it (ground, light, depth, texture, 3D or generated image surfaces for the hero moment), then builds with a seek-safe GSAP runtime driven by curves measured frame by frame from 53 professional recreations, and reviews its own render honestly with scripted gates (look.py, lint.mjs) instead of self-certifying. Given a website URL it captures the brand (colours, fonts, official logo, copy, screenshots); with an ElevenLabs key it writes and voices the script, scores it, and cuts picture and sound together. Use for any request to make, plan, storyboard, fix or critique a motion graphic or promo video, in HyperFrames or plain HTML.
+version: "1.0.0"
+metadata:
+  author: motionmaxxing (vendored ref)
+  tags:
+    - motion-graphics
+    - gsap
+    - hyperframes
+    - promo
 ---
 
 # motionmaxxing
+
+## Purpose
+Direct and build professional motion-graphics films with brand-owned ideas, measured easing craft, and honest review gates — not AI-slop defaults.
+
 
 *Early release: this skill is still getting better, and more is on the way. If something feels off, say so in your note.*
 
@@ -161,3 +174,19 @@ python3 "$SKILL/scripts/look.py" film/final.mp4 --out film/look-final --expect <
 
 ## Source and ethics
 The study corpus (other companies' published films, kept outside this skill) is private study material and is not part of it: learn mechanics and timing, never ship their brand assets, copy, layouts or frames as the user's. Principles here are in our own words; the strips are original images of invented brands. Generated images are for a missing surface only, never text, logos, UI or people shown as real, and are declared in `NOTE.md`. 3D is built in the film's own renderer (hero3d), not exported from other tools. When this skill and a HyperFrames house style disagree (decoratives, ghost text, hairlines, eyebrow or progress patterns, bold headings), this skill wins.
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Early-release skill; craft files under `references/` are required reading.
+- ElevenLabs / brand-capture paths need external keys/tools when used.
+- Symlinked from `resources/refs/motionmaxxing` — upstream updates overwrite local edits.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| look.py / lint.mjs fail | Craft gate rejection | Fix flagged elements; do not self-certify |
+| Feels like AI slop | Missing brand-owned idea or world | Re-read judgment.md; rebuild hero idea |
+| Symlink confusion | Editing wrong tree | Edit `resources/refs/motionmaxxing` |

@@ -1,6 +1,14 @@
 ---
 name: remotion-to-hyperframes
-description: 'Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/convert/migrate/translate a Remotion source — one-way, Remotion-only. A passing Remotion mention, reference-only code, or "make something like my Remotion video" is a fresh build (/general-video). Unclear → /hyperframes.'
+description: >-
+  Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/convert/migrate/translate a Remotion source — one-way, Remotion-only. A passing Remotion mention, reference-only code, or "make something like my Remotion video" is a fresh build (/general-video). Unclear → /hyperframes.
+version: "1.0.0"
+metadata:
+  author: HyperFrames (vendored heygen-com/hyperframes)
+  tags:
+    - remotion
+    - migration
+    - hyperframes
 ---
 
 **Plugin installs:** Before setup or freshness commands, follow [plugin execution rules](../hyperframes/references/plugin-installation.md) when this skill is inside a HyperFrames plugin. Standalone installs keep the update instructions below.
@@ -8,6 +16,10 @@ description: 'Port an existing Remotion (React) composition''s source to HyperFr
 > **First, keep this skill fresh — confirm with the user before running:** `npx hyperframes skills update remotion-to-hyperframes`. A fast no-op when everything is current; otherwise it refreshes this skill plus the core domain skills it depends on before you rely on them.
 
 # Remotion to HyperFrames
+
+## Purpose
+Port an existing Remotion (React) composition''s source to HyperFrames HTML. Use ONLY on an explicit ask to port/convert/migrate/translate a Remotion source — one-way, Remotion-only. A passing Remotion mention, refere…
+
 
 > **The front door is `/hyperframes`.** Use this **only** to port an existing **Remotion** (React) composition's source into HyperFrames, one way. Authoring a **new** composition, re-creating from a non-Remotion source (After Effects, Framer Motion, plain React / CSS — there is no Remotion source to translate), a passing Remotion mention, or any uncertainty → read `/hyperframes` first: the intent layer owns every route decision.
 
@@ -130,3 +142,19 @@ Validated baseline (as of 2026-04-27):
 | T2   | multi-scene + spring + audio + image        | 0.985     | 0.95      |
 | T3   | data-driven, custom subcomponents, count-up | 0.953     | 0.90      |
 | T4   | escape-hatch (8 lint cases)                 | 8/8 pass  | n/a       |
+
+## Requirements
+- Read this skill before acting; follow linked channel/repo AGENTS.md when cited.
+- Use tools and paths named in the steps; do not invent alternate pipelines.
+
+## Limitations
+- Vendored HyperFrames skill; re-sync from upstream may overwrite local edits.
+- Requires a HyperFrames composition context unless the skill says otherwise.
+- Scope is `remotion-to-hyperframes` only — do not use as a substitute for sibling HyperFrames skills.
+
+## Troubleshooting
+| Error / symptom | Cause | Fix |
+|---|---|---|
+| Wrong skill engaged | Router/`description` mismatch | Re-read `/hyperframes` entry skill; switch skill |
+| Render/preview mismatch | Composition contract drift | Check `/hyperframes-core` timing and elements |
+| Missing plugin/refs | Incomplete HyperFrames install | Follow plugin install notes for `remotion-to-hyperframes` |
