@@ -3145,6 +3145,13 @@
    "title": "Trend digest"
   },
   {
+   "id": "skill.write-script",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/write-script/SKILL.md",
+   "title": "write-script"
+  },
+  {
    "id": "clip-01.post",
    "type": "post-package",
    "status": "sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md",

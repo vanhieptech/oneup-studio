@@ -54,6 +54,7 @@ Ask only what blocks a decision (rule: ask before deciding). Never invent a pers
 5. `logs/effects-log.md` (avoid repeating signature effects back-to-back).
 
 ## 2. Script draft → `final/spec.json` (the ONE source of truth)
+**Writing the words is `skills/write-script` (brief, hook gates, Omi week rule, self-audit, Rule Reviewer hand-off). Come back here only after Hiệp says "Chốt" on that exact wording.**
 **Script template (required, Hiệp 16/10, clip-02 v16/v17):** write `final/script-final.md` from `templates/script.md` — beat frame Hook (cut) → problem stems → evidence + signs → spoken HTB message → 2 concrete how-to beats (source + linked items, optional callback to the previous clip) → CTA echo; table `Beat | Giây | Người nói | Lời thoại | Hình / caption EN` with `|` phrase splits and `{nhấn:}` marks (L-036).
 Write the script directly as the spec (format below). Structure rule-41: hook 0–3s → struggle → turn → lesson/explainer (3–4 motion beats) → evidence → payoff → CTA question, last line loops to the hook. Target 120–180s at natural pacing, not a hard minimum; finished total strictly <300s including endcard, pauses and transitions. No hard word quota. Before Chốt use ESTIMATED timing only.
 - Story beats = comic (`engine: remotion`); explain/evidence beats = motion graphics (`engine: hyperframes`), rule-42.

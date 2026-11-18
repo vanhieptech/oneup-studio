@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active
-updated: 2026-11-07
+updated: 2026-11-18
 tags: [agents, retrieval, workflow]
 ---
 # AGENTS.md: cách AI làm việc trong repo này
@@ -37,7 +37,8 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 | Quy trình | `pipeline/pipeline.md` |
 | **Tìm kiếm (mặc định XERJ)** | `docs/conventions/search-xerj.md`: `xerj search --prefix oneup "..."` (repo) · `--prefix ref` (repo tham khảo, tra **trước khi viết code pipeline mới**) · index lại `pipeline/scripts/xerj-index.sh` · dự phòng `rg`/`git grep` |
 | **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` · mẫu `content/archive/clip-01-implementation-intention/final/` |
-| Skill | `skills/<id>/SKILL.md` (`make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `motionmaxxing` (symlink → `resources/refs/motionmaxxing/`, Apache-2.0 craft + measured eases; Remotion ports `video-engine/src/composition/motionmaxxing/`), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) |
+| **Viết script (bắt buộc trước Chốt)** | **`skills/write-script/SKILL.md`**: điểm vào duy nhất cho mọi agent viết/sửa lời (brief → 3 concept → cổng hook L-100..L-105 → chuỗi W-16 → Omi tuần ≥5 → L-099 → bảng tự soát → giao Rule Reviewer). Sau Chốt mới sang `make-video` |
+| Skill | `skills/<id>/SKILL.md` (`write-script`, `make-video`, `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `motionmaxxing` (symlink → `resources/refs/motionmaxxing/`, Apache-2.0 craft + measured eases; Remotion ports `video-engine/src/composition/motionmaxxing/`), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) · skill kênh `channels/vanhiep-tech/skills/` (`make-layer`, `make-capcut-draft`). Agent tự thấy skill qua symlink `.claude/skills/` + `.agents/skills/` (xem mục Agent skills) |
 
 ## Quy ước
 - Prompt bot nội dung của Hiệp: `docs/prompts/content-bot-prompt.md` (reuse-first, front-matter, commit `<loại>: <mô tả>`); ánh xạ ở `docs/conventions/storage.md`.
@@ -46,7 +47,7 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 - Không đưa media vào git: file lớn ở `media/` (gitignored, `MANIFEST.json`), giữ trên Mac bằng `pipeline/scripts/media-sync.py`. Không vendor repo ngoài (xem `resources/refs/README.md`).
 
 ## Workflow
-1. **Clip mới:** theo `skills/make-video/SKILL.md` (intake → đọc nguồn → spec → humanizer → check-rules → gate 1 → render → check-rules --final → gate 2 → DL).
+1. **Clip mới:** lời theo `skills/write-script/SKILL.md` tới khi Hiệp Chốt, rồi `skills/make-video/SKILL.md` (intake → đọc nguồn → spec → humanizer → check-rules → gate 1 → render → check-rules --final → gate 2 → DL).
 2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
 3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
 
@@ -65,6 +66,12 @@ Mọi asset của @hi.oneup chỉ nằm trong repo này (DL-060, L-023). Không 
 Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (machine I-Am-Focused). Bản clone trên box (nơi làm việc duy nhất, commit tại đây rồi đẩy qua Mac): `/workspace/oneup-studio`.
 
 ## Agent skills
+
+### Skill discovery (Claude Code, Codex, Cursor, box)
+- Nguồn duy nhất: `skills/` (+ `skills/hyperframes/*`, `channels/*/skills/*`). Mỗi `SKILL.md` có front-matter `name` (= tên thư mục, chữ thường-gạch nối) + `description` (khi nào dùng).
+- `.claude/skills/<id>` và `.agents/skills/<id>` là symlink tự sinh để Claude Code / Codex tự nạp skill. Thêm, đổi tên hoặc xoá skill → chạy `python3 pipeline/scripts/sync-agent-skills.py`, rồi commit cả link. `--check` báo link thiếu/cũ (exit 1).
+- `CLAUDE.md` ở gốc chỉ import file này (`@AGENTS.md`), không viết luật riêng ở đó.
+- Vai trò agent (Social Research → Deep Research → OpenCreator → Rule Reviewer → Hiệp) nằm ở `workflows/agents/`; khâu viết lời của mọi vai trò dùng chung `write-script`.
 
 ### Issue tracker
 

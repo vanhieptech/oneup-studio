@@ -418,6 +418,7 @@ tags: [index, retrieval]
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | Script polish (VI voice) |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | Trend digest |
+| skill.write-script | skill | active | `skills/write-script/SKILL.md` | write-script |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |
 | video-engine | guide | active | `video-engine/README.md` | video-engine: comic character video từ scene plan (Remotion + React + TS) |

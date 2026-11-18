@@ -40,6 +40,9 @@ Agent: **Rule Reviewer**. Nhóm: **Agency**. Agent trước: OpenCreator Studio 
 
 ## 4. Các bước
 
+Bản nháp phải có đủ các bảng tự soát ở bước 9 của `skills/write-script/SKILL.md`; thiếu bảng là thiếu đầu vào. Reviewer làm lại các bảng đó độc lập, không chép của người viết.
+
+
 1. **Đọc nguồn chuẩn theo đúng thứ tự** (mục 7): checklist → rubric (lưu ý trạng thái *đề xuất, chờ Hiệp duyệt*) → lessons liên quan → decision-log/video-rules khi có xung đột.
 2. **Kiểm automated trước (nếu có spec):** `python3 pipeline/scripts/check-rules.py <clip>/ --stt`; mọi `✖` chặn trình Hiệp, ghi tên check (rule-58/60/62, L-044...). Chưa có spec: tự đếm tay những gì đo được trên `.md` (từ, EN chunk ≤8 từ, `{nhấn:}`/beat, grep cụm chê năng lực) — ghi rõ đây là soát tay, không giả danh automated (checklist §Khoảng trống).
 3. **Chấm 7 hạng mục 100đ theo rubric §3** (A Hook 20 / B Mạch 15 / C Rõ ý 20 / D Fact 15 / E Ngắn gọn-caption 15 / F Tone-nhấn 10 / G CTA-hồ sơ 5): mỗi lần trừ điểm phải trích nguyên dòng lỗi, đối chiếu neo đã hiệu chuẩn v04–v07.

@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: storage
 type: convention
 status: active
-updated: 2026-11-07
+updated: 2026-11-18
 tags: [storage, rule-65, rule-66, source-of-truth]
 ---
 # Quy ước lưu trữ (luật 65, L-034)
@@ -30,12 +30,15 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Test | `tests/` | |
 | Script, tool | `pipeline/scripts/`, `pipeline/tts/`, `video-engine/src/` | |
 | Research, trend | `research/` (`trends/<date>/`), `docs/research/`, `resources/` (từ điển, văn nói) | |
-| Skill | bản chạy: `/home/box/agent-data/workflows/<skill>/`; bản mirror: `skills/<skill>/` (cập nhật cả hai) | |
+| Skill (nguồn duy nhất) | `skills/<id>/SKILL.md` (chung + @hi.oneup), `skills/hyperframes/<id>/` (vendored), `channels/<kênh>/skills/<id>/` (theo kênh). Front-matter `name` = tên thư mục + `description`. Box: bản chạy `/home/box/agent-data/workflows/<skill>/` phải đồng bộ từ đây | sửa ở đây, không sửa link |
+| Skill cho AI agent (tự sinh) | `.claude/skills/<id>` (Claude Code) và `.agents/skills/<id>` (Codex, agent khác): symlink phẳng tới nguồn ở trên. Tạo/làm mới: `python3 pipeline/scripts/sync-agent-skills.py`; kiểm: `--check` | không đặt file thật trong hai thư mục này |
+| Vai trò agent (Social/Deep/OpenCreator/Rule Reviewer/…) | `workflows/agents/<agent>.md` + bản đồ `workflows/agents/README.md` | prompt vai trò, không phải skill |
+| Hướng dẫn agent | `AGENTS.md` (gốc, mọi agent) · `CLAUDE.md` (gốc, chỉ `@AGENTS.md` để Claude Code nạp) · `channels/<kênh>/AGENTS.md` | |
 | Log, bài học, quyết định | `logs/` (`lessons.md`, `decision-log.md`, `runs/`) | |
 | Luật | `rules/video-rules.md` | |
 | Quy trình | `docs/workflow/per-video-pipeline.md` | |
 
-Thư mục gốc hợp lệ (`TOP_ALLOWED`): GUIDE.md, assets, brand, channels, content, docs, logs, media, pipeline, research, resources, rules, skills, templates, tests, video-engine. `channels/vanhiep-tech/` = kênh cá nhân @vanhiep.tech (talking-head + layer explainer; không áp luật comic @hi.oneup — xem `channels/vanhiep-tech/AGENTS.md`). Đã bỏ: `footage/` → `media/footage/`, `renders/` → `final/out/` của clip, `refs/` → `resources/refs/`, `samples/` → `content/samples/lab/`. `templates/` giữ vì là thư viện chung (scaffold HyperFrames, mẫu post-package).
+Thư mục gốc hợp lệ (`TOP_ALLOWED`): GUIDE.md, AGENTS.md, CLAUDE.md, INDEX.md, README.md, index.json, assets, brand, channels, content, docs, logs, media, pipeline, research, resources, rules, skills, templates, tests, video-engine, workflows (thư mục chấm `.claude/`, `.agents/` được phép). `channels/vanhiep-tech/` = kênh cá nhân @vanhiep.tech (talking-head + layer explainer; không áp luật comic @hi.oneup — xem `channels/vanhiep-tech/AGENTS.md`). Đã bỏ: `footage/` → `media/footage/`, `renders/` → `final/out/` của clip, `refs/` → `resources/refs/`, `samples/` → `content/samples/lab/`. `templates/` giữ vì là thư viện chung (scaffold HyperFrames, mẫu post-package).
 
 Cấm: font/logo/giọng mẫu trong `content/`; hai file cùng nội dung (sha256) ngoài các vùng miễn trừ (skills vendored, voice cache, template `.tpl`, bản snapshot `/vN/`, `final/cover.png` theo L-020); thư mục cấp gốc ngoài danh sách `TOP_ALLOWED`.
 

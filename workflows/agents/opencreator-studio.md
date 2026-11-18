@@ -29,7 +29,7 @@ tags: [workflow, agent, opencreator, script, hi-oneup]
 - Bảng claim đã kiểm chứng của Deep Research; claim không truy được nguồn = không đưa vào lời.
 - Gói hook/pain từ Social Research: pain phổ thông, câu/cách nói thật từ comment/transcript + URL; thiếu nguồn thì ghi "chưa có", không bịa.
 - Bối cảnh clip: số clip, theme, week (Omi chỉ week ≥5), nhân vật nói (độc thoại 1 người nếu concept meme "bản chất" — L-039/P-13), callback clip trước nếu có.
-- Đọc tươi trước khi viết (không dựa trí nhớ): `logs/lessons.md` (L-001→mới nhất), `logs/rule-checklist.md`, `logs/rule-scoring-rubric.md`, `skills/make-video/SKILL.md` §0–2a, `templates/script.md`, `content/voice-profile.md`.
+- **Chạy skill `skills/write-script/SKILL.md` (từ 18/11/2026: chuẩn chung cho khâu viết lời; bước 1–11 ở đó thay cho thứ tự đọc dưới đây khi hai bên lệch).** Đọc tươi trước khi viết (không dựa trí nhớ): `logs/lessons.md` (L-001→mới nhất), `logs/rule-checklist.md`, `logs/rule-scoring-rubric.md`, `skills/make-video/SKILL.md` §0–2a, `templates/script.md`, `content/voice-profile.md`.
 
 ## 4. Các bước làm
 1. Kiểm đầu vào: thiếu fact lock, claim bị chặn, hoặc hook không nguồn → trả lại agent trước, không viết tiếp.
@@ -56,7 +56,7 @@ tags: [workflow, agent, opencreator, script, hi-oneup]
 - **Báo cáo nghiên cứu OpenCreator của agent này: chưa lưu thành file trong repo** — nội dung mới báo ở chat 1:1 với Hiệp ngày 19/10/2026 (kết luận Apache-2.0, v3.2.8, sandbox ngoài repo), chưa có file ở `/workspace/*.md` hay `research/` để News gom; cần lưu thành file research trước khi cài đặt bất cứ thứ gì.
 
 ## 8. File và skill liên quan trong repo
-- Mẫu script: `templates/script.md` · Quy trình tổng: `skills/make-video/SKILL.md` · Chấm điểm: `logs/rule-scoring-rubric.md` + `logs/rule-checklist.md` · Bài học: `logs/lessons.md`
+- Skill viết lời: `skills/write-script/SKILL.md` · Mẫu script: `templates/script.md` · Quy trình tổng: `skills/make-video/SKILL.md` · Chấm điểm: `logs/rule-scoring-rubric.md` + `logs/rule-checklist.md` · Bài học: `logs/lessons.md`
 - Giọng văn: `content/voice-profile.md`, `content/story-bank.md`, `content/theme-map.md` · Luật gốc: `rules/video-rules.md` · Lưu trữ: `docs/conventions/storage.md`, `AGENTS.md`
 - Kiểm tự động sau khi có spec: `pipeline/scripts/check-rules.py` (khâu sau, không thay chấm script .md ở gate 1).
 - Workflow bạn bè: `workflows/agents/social-research.md`, `workflows/agents/deep-research.md`, `workflows/agents/rule-reviewer.md`, `workflows/agents/flux-visual.md` (khi các agent đó lưu).
