@@ -60,7 +60,7 @@
     "source": "leftover audit 2026-10-15 (moved from /workspace)"
   },
   {
-    "path": "media/samples/lab/voicetest-presets/Minh_Tri\u1ebft.wav",
+    "path": "media/samples/lab/voicetest-presets/Minh_Triết.wav",
     "size": 368684,
     "sha256": "e80ed629277bbc1f6c3398363ef1639b420e5ffc60d1ce431fc396dc04f49813",
     "source": "leftover audit 2026-10-15 (moved from /workspace)"
@@ -72,7 +72,7 @@
     "source": "leftover audit 2026-10-15 (moved from /workspace)"
   },
   {
-    "path": "media/samples/lab/voicetest-presets/Th\u00e1i_S\u01a1n.wav",
+    "path": "media/samples/lab/voicetest-presets/Thái_Sơn.wav",
     "size": 445484,
     "sha256": "903e7f868787796482f4a36bf42a1aab6d0ccac1d6618f9bb4a164f47b8b75e2",
     "source": "leftover audit 2026-10-15 (moved from /workspace)"
@@ -84,7 +84,7 @@
     "source": "leftover audit 2026-10-15 (moved from /workspace)"
   },
   {
-    "path": "media/samples/lab/voicetest-presets/\u0110\u1ee9c_Tr\u00ed.wav",
+    "path": "media/samples/lab/voicetest-presets/Đức_Trí.wav",
     "size": 514604,
     "sha256": "9664d2ad7740d288a65898024dea32488c958da78c069caa8ef4a76c700da8f0",
     "source": "leftover audit 2026-10-15 (moved from /workspace)"
@@ -592,5 +592,11 @@
     "size": 190981,
     "sha256": "72c24d7ed4a3ba928b2a4a98260fbeef59e5cb34927a8391648ee3fcd59622bd",
     "source": "placeholder slate until real A-roll (grill Q14B)"
+  },
+  {
+    "path": "media/clips/clip-05-hoc-mot-dem/clip-05-v23-hook-preview.mp4",
+    "size": 6107066,
+    "sha256": "8bdcd317b5acd06111189402b975a9f117962c1321137a9df76d3dbb4a7ddc6c",
+    "source": "content/clips/clip-05-hoc-mot-dem/final/preview/clip-05-v23-hook-preview.mp4 (build-final --scenes b01a,b01b, 2026-11-19)"
   }
 ]

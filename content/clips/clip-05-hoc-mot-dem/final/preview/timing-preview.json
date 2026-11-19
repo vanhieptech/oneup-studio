@@ -1,0 +1,112 @@
+{
+ "total": 15.104,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/home/user/oneup-studio/content/clips/clip-05-hoc-mot-dem/final/preview/plan-A-preview.voiced.json",
+   "dur": 15.094000000000001,
+   "mp4": "/home/user/oneup-studio/video-engine/out/clip-05-v23-hook-A-preview.mp4",
+   "fx": null,
+   "scene_starts": [
+    5.921
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01a",
+   "speaker": "hiep",
+   "say": "Nếu bạn muốn nhớ lâu mà cứ ngồi đọc đi đọc lại,",
+   "en": "Want to remember longer, but keep rereading?",
+   "emotion": "focused",
+   "key": "c05v23-b01aa",
+   "local": 0.12,
+   "dur": 2.766,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01a",
+   "speaker": "hiep",
+   "say": "thì bạn đang chọn cách nhớ kém hiệu quả hơn rồi đó.",
+   "en": "That's the less effective choice.",
+   "emotion": "surprised",
+   "key": "c05v23-b01ab",
+   "local": 2.966,
+   "dur": 2.895,
+   "t": 2.966
+  },
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "Đọc lại chỉ giúp bạn nhớ được nhiều hơn trong mấy phút đầu sau khi đọc xong thôi,",
+   "en": "Rereading helps only minutes after reading,",
+   "emotion": "neutral",
+   "key": "c05v23-b01ba",
+   "local": 0.02,
+   "dur": 4.078,
+   "t": 5.941
+  },
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "còn để qua vài ngày thì những người tự viết ra những gì mình nhớ",
+   "en": "days later, people who wrote it down",
+   "emotion": "focused",
+   "key": "c05v23-b01bb",
+   "local": 4.178,
+   "dur": 3.228,
+   "t": 10.099
+  },
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "sẽ nhớ được nhiều hơn bạn.",
+   "en": "remember more than you.",
+   "emotion": "focused",
+   "key": "c05v23-b01bc",
+   "local": 7.486,
+   "dur": 1.627,
+   "t": 13.407
+  }
+ ],
+ "transitions": [
+  {
+   "at": 5.921,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 4.246
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 8.141
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 10.599
+  },
+  {
+   "name": "swish",
+   "at": 5.801
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

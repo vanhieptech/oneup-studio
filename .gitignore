@@ -25,6 +25,8 @@ video-engine/public/fonts/
 video-engine/public/brand/
 content/**/explainer/fonts/
 content/**/explainer/logo.svg
+content/**/mg-*/fonts/
+content/**/mg-*/logo.svg
 templates/hyperframes-base/fonts/
 templates/hyperframes-base/logo.svg
 channels/**/layers/**/fonts/
@@ -36,3 +38,5 @@ research/reference-videos/**/*.mp4
 # CapCut CLI compiled drafts (local)
 channels/vanhiep-tech/lab/out/
 
+# preview renders are media (>5MB video → media/ + MANIFEST.json); preview json/png stay tracked
+content/clips/**/final/preview/*.mp4
