@@ -1,0 +1,435 @@
+{
+ "id": "clip-05-v23-hook",
+ "clip": "clip-05",
+ "title": "Clip 05 v23 - hook preview (b01a + b01b)",
+ "week": 1,
+ "theme": "light",
+ "voice_prefix": "c05v23",
+ "layout": "tiktok",
+ "transition_sfx": {
+  "part": "whoosh-soft",
+  "scene": "swish"
+ },
+ "mix": "linear",
+ "revisions": [
+  "2026-11-19: hook preview from final/script-v23-LOCKED.md + final/motion-spec-v23.md (b01a mmx-crash-in, b01b split-compare)"
+ ],
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "scenes": [
+    {
+     "id": "b01a",
+     "beat": "clip-05.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.03,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.74,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "focused"
+      }
+     ],
+     "fx": {
+      "visual": "mmx-crash-in: KÉM HIỆU QUẢ HƠN slams in at the word; before that Hiệp keeps flipping the open book",
+      "word": "kém hiệu quả hơn"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 1,
+       "offset": 1.28,
+       "word": "kém"
+      }
+     ],
+     "props": [
+      {
+       "kind": "window",
+       "x": 0,
+       "y": 0,
+       "sky": [
+        [
+         0,
+         "day"
+        ]
+       ],
+       "wx": 90,
+       "wy": 300,
+       "ww": 260,
+       "wh": 230
+      },
+      {
+       "kind": "table",
+       "x": 0,
+       "y": 0,
+       "top": 1395
+      },
+      {
+       "kind": "tome",
+       "x": 330,
+       "y": 1250,
+       "s": 0.72,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ],
+       "flips": [
+        0.3,
+        1.0,
+        1.74,
+        2.04
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "×3",
+       "x": 330,
+       "y": 1020,
+       "size": 44,
+       "at": 2.04,
+       "until": 99
+      },
+      {
+       "kind": "tag",
+       "text": "KÉM HIỆU QUẢ HƠN",
+       "style": "word",
+       "enter": "crash",
+       "x": 540,
+       "y": 730,
+       "size": 78,
+       "at": 4.13,
+       "until": 99
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Nếu bạn muốn nhớ lâu mà cứ ngồi đọc đi đọc lại,",
+       "say": "Nếu bạn muốn nhớ lâu mà cứ ngồi đọc đi đọc lại,",
+       "en": "Want to remember longer, but keep rereading?",
+       "hl": [
+        2,
+        6
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "phrases": [
+        {
+         "t": "Nếu bạn muốn nhớ lâu"
+        },
+        {
+         "t": "mà cứ ngồi đọc đi đọc lại,"
+        }
+       ],
+       "voice_file": "voice/c05v23-b01aa.wav"
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "thì bạn đang chọn cách nhớ **kém hiệu quả hơn** rồi đó.",
+       "say": "thì bạn đang chọn cách nhớ kém hiệu quả hơn rồi đó.",
+       "en": "That's the less effective choice.",
+       "hl": [
+        2,
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "set": {
+        "hiep": {
+         "expression": "surprised",
+         "action": "talking"
+        }
+       },
+       "phrases": [
+        {
+         "t": "thì bạn đang chọn cách nhớ {nhấn: kém hiệu quả hơn} rồi đó."
+        }
+       ],
+       "voice_file": "voice/c05v23-b01ab.wav"
+      }
+     ]
+    },
+    {
+     "id": "b01b",
+     "beat": "clip-05.b01",
+     "part": "hook",
+     "role": "Thầy",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.0,
+     "transition": "cut",
+     "cast": [],
+     "fx": {
+      "visual": "split-compare: divider 540 → 380 at 'mấy phút đầu' → 700 at 'vài ngày' → 540 hold; left (đọc lại) dims at 'vài ngày'",
+      "word": "mấy phút đầu / vài ngày"
+     },
+     "sfx": [
+      {
+       "name": "whoosh-soft",
+       "atLine": 0,
+       "offset": 2.2,
+       "word": "mấy phút đầu"
+      },
+      {
+       "name": "whoosh-soft",
+       "atLine": 1,
+       "offset": 0.5,
+       "word": "vài ngày"
+      }
+     ],
+     "props": [
+      {
+       "kind": "halves",
+       "x": 0,
+       "y": 0,
+       "top": 1180,
+       "split": [
+        [
+         0,
+         540
+        ],
+        [
+         2.2,
+         380
+        ],
+        [
+         4.66,
+         700
+        ],
+        [
+         7.47,
+         540
+        ]
+       ],
+       "dim": []
+      },
+      {
+       "kind": "tome",
+       "x": 290,
+       "y": 1060,
+       "s": 0.62,
+       "keys": [
+        [
+         0,
+         "open"
+        ]
+       ],
+       "flips": [
+        0.3,
+        1.2
+       ]
+      },
+      {
+       "kind": "paper",
+       "x": 790,
+       "y": 900,
+       "s": 0.62,
+       "tilt": -3,
+       "rows": [
+        [
+         0,
+         5.0
+        ],
+        [
+         1,
+         5.6
+        ],
+        [
+         2,
+         6.2
+        ],
+        [
+         3,
+         6.8
+        ]
+       ]
+      },
+      {
+       "kind": "pen",
+       "x": 0,
+       "y": 0,
+       "s": 1,
+       "rot": 28,
+       "len": 200,
+       "keys": [
+        [
+         0,
+         900,
+         760
+        ],
+        [
+         4.9,
+         900,
+         760
+        ],
+        [
+         5.6,
+         930,
+         820
+        ],
+        [
+         6.2,
+         900,
+         870
+        ],
+        [
+         6.8,
+         930,
+         920
+        ],
+        [
+         7.4,
+         900,
+         960
+        ]
+       ]
+      },
+      {
+       "kind": "tag",
+       "text": "Đọc lại",
+       "x": 290,
+       "y": 380,
+       "size": 44,
+       "at": 0.0,
+       "until": 99
+      },
+      {
+       "kind": "tag",
+       "text": "Tự viết ra",
+       "x": 790,
+       "y": 380,
+       "size": 44,
+       "at": 0.15,
+       "until": 99
+      },
+      {
+       "kind": "tag",
+       "text": "Mấy phút đầu",
+       "style": "word",
+       "x": 210,
+       "y": 560,
+       "size": 46,
+       "at": 2.2,
+       "until": 4.6
+      },
+      {
+       "kind": "tag",
+       "text": "Vài ngày sau",
+       "style": "word",
+       "x": 895,
+       "y": 560,
+       "size": 46,
+       "at": 4.66,
+       "until": 99
+      },
+      {
+       "kind": "halves",
+       "x": 0,
+       "y": 0,
+       "overlayOnly": true,
+       "split": [
+        [
+         0,
+         540
+        ],
+        [
+         2.2,
+         380
+        ],
+        [
+         4.66,
+         700
+        ],
+        [
+         7.47,
+         540
+        ]
+       ],
+       "dim": [
+        [
+         4.66,
+         "left"
+        ]
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "Đọc lại chỉ giúp bạn nhớ được nhiều hơn trong **mấy phút đầu** sau khi đọc xong thôi,",
+       "say": "Đọc lại chỉ giúp bạn nhớ được nhiều hơn trong mấy phút đầu sau khi đọc xong thôi,",
+       "en": "Rereading helps only minutes after reading,",
+       "hl": [
+        3
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "phrases": [
+        {
+         "t": "Đọc lại chỉ giúp bạn nhớ được nhiều hơn"
+        },
+        {
+         "t": "trong {nhấn: mấy phút đầu} sau khi đọc xong thôi,"
+        }
+       ],
+       "voice_file": "voice/c05v23-b01ba.wav"
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "còn để qua **vài ngày** thì những người tự viết ra những gì mình nhớ",
+       "say": "còn để qua vài ngày thì những người tự viết ra những gì mình nhớ",
+       "en": "days later, people who wrote it down",
+       "hl": [
+        0,
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "phrases": [
+        {
+         "t": "còn để qua {nhấn: vài ngày}"
+        },
+        {
+         "t": "thì những người tự viết ra những gì mình nhớ"
+        }
+       ],
+       "voice_file": "voice/c05v23-b01bb.wav"
+      },
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "sẽ nhớ được nhiều hơn bạn.",
+       "say": "sẽ nhớ được nhiều hơn bạn.",
+       "en": "remember more than you.",
+       "hl": [
+        1
+       ],
+       "bubble": false,
+       "voice_role": "Thầy",
+       "phrases": [
+        {
+         "t": "sẽ nhớ được nhiều hơn bạn."
+        }
+       ],
+       "voice_file": "voice/c05v23-b01bc.wav"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

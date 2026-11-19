@@ -4,6 +4,7 @@ import { FONT_FAMILY, EN_FONT } from "./fonts";
 import { springAt } from "../animation/timing";
 import type { PropCue } from "./Props";
 import { ICON } from "./PropsV18";
+import { mmxEase } from "./motionmaxxing/mmx";
 
 /** clip-04 v18 HTML overlays (real fonts, not drawn inside images): small study-credit tags, the b07 word tag, and the end card. */
 const cl = (x: number) => Math.max(0, Math.min(1, x));
@@ -19,7 +20,8 @@ export const Overlays: React.FC<{ props?: PropCue[]; t: number; H: number }> = (
     if (p.kind === "tag") {
       const at = (p.at as number) ?? 0, until = (p.until as number) ?? 999;
       if (t < at || t > until) return null;
-      const k = Math.min(1.08, springAt(t - at, 17, 9)); const out = cl((until - t) / 0.15);
+      // clip-05 v23: enter "crash" = mmx-crash-in (motionmaxxing): from ~3.5× down to 1, punch past then settle (10 f)
+      const k = p.enter === "crash" ? (() => { const e = mmxEase("mmx-crash-in", (t - at) / (10 / 30)); return e <= 1 ? 3.5 - 2.5 * e : 1 - 0.35 * (e - 1); })() : Math.min(1.08, springAt(t - at, 17, 9)); const out = cl((until - t) / 0.15);
       const word = p.style === "word";
       return <div key={`tg${i}`} style={{ position: "absolute", left: (p.x as number) ?? 540, top: (p.y as number) ?? 300, transform: `translate(-50%, -50%) scale(${k}) rotate(${(p.rot as number) ?? 0}deg)`, opacity: out,
         display: "flex", alignItems: "center", gap: 14, whiteSpace: "nowrap",

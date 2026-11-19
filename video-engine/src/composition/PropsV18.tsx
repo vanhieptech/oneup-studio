@@ -238,11 +238,18 @@ const Bars: React.FC<{ p: P; t: number }> = ({ p, t }) => {
 };
 
 /** Two desk halves (b03): divider + two tabletops. */
-const Halves: React.FC<{ p: P; t: number }> = ({ p }) => {
+const Halves: React.FC<{ p: P; t: number }> = ({ p, t }) => {
   const y = p.top ?? 1180;
+  // clip-05 v23 split-compare: optional split keys [[t, x]] move the divider (power2.inOut, 0.6 s per move); dim [[t, "left"|"right"|"none"]]
+  const sk: [number, number][] = p.split ?? [[0, 540]]; let dx = sk[0][1];
+  for (let i = 1; i < sk.length; i++) { const [at, v] = sk[i]; if (t < at) break; const u = Math.min(1, (t - at) / 0.6); const e = u < 0.5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2; dx = dx + (v - dx) * e; }
+  const dk: [number, string][] = p.dim ?? []; let dside = "none", dk0 = -9; for (const [at, v] of dk) if (t >= at) { dside = v; dk0 = at; }
+  const dop = dside === "none" ? 0 : (p.dimOpacity ?? 0.62) * Math.min(1, (t - dk0) / 0.4);
+  const dl = Math.min(dx, 540), dr = Math.max(dx, 540); // dim the side's own content area (tabletops are fixed at 60–520 / 560–1020)
+  if (p.overlayOnly) return dop > 0 ? <rect x={dside === "left" ? 40 : dr} y={190} width={dside === "left" ? dl - 40 : 1040 - dr} height={1300} fill={paper} opacity={dop} /> : null; // dim layer drawn above the side's props
   return <g>
-    <rect x={40} y={200} width={500} height={1300} fill={soft} opacity={0.45} />
-    <path d="M540,190 V1480" stroke={ink} strokeWidth={10} strokeDasharray="28 18" strokeLinecap="round" />
+    <rect x={40} y={200} width={Math.max(0, dx - 40)} height={1300} fill={soft} opacity={0.45} />
+    <path d={`M${dx},190 V${y - 14}`} stroke={ink} strokeWidth={10} strokeDasharray="28 18" strokeLinecap="round" />
     {[[60, 520], [560, 1020]].map(([a, b], i) => <g key={i}>
       <rect x={a} y={y + 6} width={b - a} height={400} fill={soft} stroke={ink} strokeWidth={8} />
       <rect x={a - 6} y={y - 12} width={b - a + 12} height={34} rx={17} fill={ink} />
