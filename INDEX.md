@@ -79,7 +79,6 @@ tags: [index, retrieval]
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v4.md` | Clip 04 v4 (ARCHIVED — superseded by v5 draft): Bạn có nhớ gì đâu mà quên |
 | clip-04.script-final | script | draft | `content/clips/clip-04-gap-sach-tu-kiem/archive/script-v5.md` | Clip 04 v5 (DRAFT, chờ Hiệp duyệt): Học tới khuya, sáng ra quên sạch |
 | clip-04.fact-package-redo | fact-package | verified-awaiting-script-rewrite | `content/clips/clip-04-gap-sach-tu-kiem/final/fact-package-redo-2026-10-19.md` | Clip 04 làm lại — gói fact (Deep Research) |
-| content.clips.clip-04-gap-sach-tu-kiem.final.out.short-factory-review.research-original-snapshot | None | research-only | `content/clips/clip-04-gap-sach-tu-kiem/final/out/short-factory-review/research-original-snapshot.md` | Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio |
 | clip-04.post-checklist | doc | ready | `content/clips/clip-04-gap-sach-tu-kiem/final/post-checklist.md` | Checklist đăng clip-04 v18 (đánh dấu khi xong) |
 | clip-04.post | post-package | bộ final v18, Rule Reviewer đã soát phần chữ (23c82a7), chờ --final + Hiệp duyệt | `content/clips/clip-04-gap-sach-tu-kiem/final/post.md` | Bộ final đăng clip-04 v18 «Gấp sách tự kiểm» |
 | content.clips.clip-04-gap-sach-tu-kiem.final.production-v14 | production | locked-script-in-production | `content/clips/clip-04-gap-sach-tu-kiem/final/production-v14.md` | Clip 04 v14 — production |
@@ -148,11 +147,14 @@ tags: [index, retrieval]
 | content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md` | Clip05 r15 — bản đầy đủ mới, chưa craft PASS / chưa Chốt |
 | content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.1-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md` | Clip05 r15.1 PATCH1 — chỉ sửa K1/S01, chưa craft PASS / chưa Chốt |
 | content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.2-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md` | Clip05 r15.2 PATCH2 — chỉ sửa K2/S18, PREPARED PENDING OWNER COORDINATION APPROVAL |
+| clip-05.script-v23-draft | script | draft | `content/clips/clip-05-hoc-mot-dem/archive/script-v23-draft-2026-11-19.md` | Clip 05 v23 (nháp): Học xong gấp sách tự kiểm một lần, đừng quay đầu đọc lại |
 | content.clips.clip-05-hoc-mot-dem.evidence-lines-v10 | None | None | `content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md` | Câu dẫn chứng cho clip-05 v10 (Deep Research) |
 | content.clips.clip-05-hoc-mot-dem.factcheck-script-v9r92 | None | None | `content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md` | Deep Research soát fact clip-05 v9 r9.2 |
+| clip-05.motion-spec-v23 | motion-spec | draft | `content/clips/clip-05-hoc-mot-dem/final/motion-spec-v23.md` | Clip 05 v23: kịch bản dựng hình + motion |
 | clip-05.post-checklist | doc | ready | `content/clips/clip-05-hoc-mot-dem/final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
 | clip-05.post | post-package | bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG. | `content/clips/clip-05-hoc-mot-dem/final/post.md` | Bộ final đăng clip-05 v4 «Học dồn một đêm» |
 | clip-05.script-final | script | final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3) | `content/clips/clip-05-hoc-mot-dem/final/script-final.md` | clip-05 «Học dồn một đêm» — script final |
+| clip-05.script-v23-locked | script | locked | `content/clips/clip-05-hoc-mot-dem/final/script-v23-LOCKED.md` | Clip 05 v23 (Chốt): Học xong gấp sách tự kiểm một lần, đừng quay đầu đọc lại |
 | content.clips.clip-05-hoc-mot-dem.final.visual-plan-v4 | visual-plan | ready | `content/clips/clip-05-hoc-mot-dem/final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
 | content.clips.clip-05-hoc-mot-dem.review-script-v5r2 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md` | Verdict: CHƯA ĐẠT (4 lỗi chặn, 9 ghi chú) |
 | content.clips.clip-05-hoc-mot-dem.review-script-v5r3 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r3.md` | Verdict: CHƯA ĐẠT (2 lỗi chặn nhỏ, sửa được mà không tăng số chữ) |
@@ -235,11 +237,13 @@ tags: [index, retrieval]
 | research.social-research-audit | research | reference | `research/agents/social-research-repo-audit-vi.md` | Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp) |
 | research-character-animation | research | draft | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
+| research.craft.hook-script-study-2026-11-11 | craft-study | draft | `research/craft/hook-script-study-2026-11-11.md` | Học lại hook và mạch script từ video thật (11/11/2026) |
 | research.fact-packages.clip05-texthip-fact-bridge-2026-11-07 | None | fact-scope-checked-trend-pending-social-research | `research/fact-packages/clip05-texthip-fact-bridge-2026-11-07.md` | Kết luận |
 | research.fact-packages.factcheck-ai-otp-2026-11-04 | None | None | `research/fact-packages/factcheck-ai-otp-2026-11-04.md` | Deep Research soát fact trend AI lấy OTP (arXiv 2610.35835) |
 | research.fact-packages.factcheck-clip05-lock-2026-11-07 | None | draft-awaiting-repo-archive | `research/fact-packages/factcheck-clip05-lock-2026-11-07.md` | Phạm vi hiện tại |
 | research.fact-packages.factcheck-musk-donlientay-r1 | None | None | `research/fact-packages/factcheck-musk-donlientay-r1.md` | Deep Research soát fact: Musk/5.27 r1 (8e9a02c) + Dọn liền tay/4.9 r1 (12aa6ce) |
 | research.fact-packages.factcheck-trends-2026-10-31 | None | None | `research/fact-packages/factcheck-trends-2026-10-31.md` | Deep Research soát fact 3 trend 31/10 (5.27, 4.12, 4.9) |
+| hooks-2026-11-12-storytelling-hooks-vn | hook-research | draft | `research/hooks/2026-11-12-storytelling-hooks-vn/README.md` | Hook kể chuyện trên TikTok tiếng Việt (12/11/2026) |
 | research.motion-layer | research | reference | `research/motion-layer.md` | @hi.oneup motion layer, based on gongnyang/awesome-ai-motion |
 | research-omi-voice-tts | research | decided (Hiệp chọn A ngày 13/10/2026, DL-025, rule-46) | `research/omi-voice-tts-research-vi.md` | Giọng Omi: TTS tiếng Việt miễn phí, chạy local (13/10/2026) |
 | research.video-gen | research | reference | `research/oneup-video-gen-research-vi.md` | Nghiên cứu: tự động hoá video ngắn productivity/motivation cho TikTok @hi.oneup |
@@ -301,6 +305,12 @@ tags: [index, retrieval]
 | trends-2026-11-07 | trend-digest | draft-needs-review | `research/trends/2026-11-07/digest.md` | Trend digest 2026-11-07 (thứ Bảy) |
 | trends-2026-11-08 | trend-digest | draft-needs-review | `research/trends/2026-11-08/digest.md` | Trend digest 2026-11-08 (Chủ nhật) |
 | trends-2026-11-08-treg | trend-source | raw-evidence | `research/trends/2026-11-08/treg/README.md` | Treg TikTok research 2026-11-08 |
+| trends-2026-11-09 | trend-digest | draft-needs-review | `research/trends/2026-11-09/digest.md` | Trend digest 2026-11-09 (thứ Hai) |
+| trends-2026-11-09-treg | trend-source | raw-evidence | `research/trends/2026-11-09/treg/README.md` | Treg TikTok research 2026-11-09 |
+| trends-2026-11-10 | trend-digest | draft-needs-review | `research/trends/2026-11-10/digest.md` | Trend digest 2026-11-10 (thứ Ba) |
+| trends-2026-11-10-treg | trend-source | raw-evidence | `research/trends/2026-11-10/treg/README.md` | Treg TikTok research 2026-11-10 |
+| trends-2026-11-11 | trend-digest | draft-needs-review | `research/trends/2026-11-11/digest.md` | Trend digest 2026-11-11 (thứ Tư, ngày 11.11) |
+| trends-2026-11-12 | trend-digest | draft-needs-review | `research/trends/2026-11-12/digest.md` | Trend digest 2026-11-12 (thứ Năm) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
@@ -313,11 +323,6 @@ tags: [index, retrieval]
 | skill.awesome-ai-motion | skill | active | `resources/refs/awesome-ai-motion/SKILL.md` | awesome-ai-motion |
 | refs.motionmaxxing.integration | vendor-note | active | `resources/refs/motionmaxxing/INTEGRATION.md` | motionmaxxing — vendored copy + OneUp integration |
 | skill.motionmaxxing | skill | active | `resources/refs/motionmaxxing/SKILL.md` | motionmaxxing |
-| skill.skill | skill | active | `resources/refs/transitions.dev/agent/skill/SKILL.md` | transitions-agent |
-| skill.refine-live | skill | active | `resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md` | refine-live |
-| skill.transitions-dev | skill | active | `resources/refs/transitions.dev/skills/transitions-dev/SKILL.md` | transitions-dev |
-| skill.transitions-polish | skill | active | `resources/refs/transitions.dev/skills/transitions-polish/SKILL.md` | transitions-polish |
-| skill.transitions-ui-generation | skill | active | `resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md` | transitions-ui-generation |
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | ready | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |
@@ -414,10 +419,10 @@ tags: [index, retrieval]
 | skill.remotion-to-hyperframes | skill | active | `skills/hyperframes/remotion-to-hyperframes/SKILL.md` | remotion-to-hyperframes |
 | skill.slideshow | skill | active | `skills/hyperframes/slideshow/SKILL.md` | slideshow |
 | skill.talking-head-recut | skill | active | `skills/hyperframes/talking-head-recut/SKILL.md` | talking-head-recut |
-| skill.make-video | skill | active | `skills/make-video/SKILL.md` | Make video (@hi.oneup end-to-end) |
-| skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | Motion picks per script |
-| skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | Script polish (VI voice) |
-| skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | Trend digest |
+| skill.make-video | skill | active | `skills/make-video/SKILL.md` | make-video |
+| skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | motion-picks-per-script |
+| skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | script-polish |
+| skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | trend-digest |
 | skill.write-script | skill | active | `skills/write-script/SKILL.md` | write-script |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |
