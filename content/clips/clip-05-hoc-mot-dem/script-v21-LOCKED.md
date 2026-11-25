@@ -36,7 +36,7 @@ format: "khung video phân tích «bản chất» (physical hook + Thứ nhất/
 | b07b | 24–31 | Hiệp | Nhóm đo sau năm phút, \| đoạn đọc lại nhớ **nhiều hơn**. \| Nhưng nhóm đo sau một tuần \| thì **lật ngược**. | Đồng hồ cát nhỏ, cột «sách mở» cao hơn → lịch lật một xấp, hai cột đổi chỗ «bụp» · *Tested after 5 minutes: \| rereading wins. \| Tested after a week: \| it flips.* |
 | b07c | 31–37 | Hiệp | Tự viết còn nhớ **56 phần trăm** ý, \| đọc lại chỉ **42**. \| Nhưng năm mấy chục cũng đâu phải nhớ hết. | Hai cột, phía trên chừa khoảng trống lớn · *Recall: 56% of ideas. \| Reread: 42%. \| Still not everything.* |
 | b08 Thông điệp | 37–41 | Hiệp | Vậy hóa ra, \| thứ đáng tập \| là **tự nhớ khi sách đóng**. | Hiệp úp sách xuống bàn, gật chắc nịch · *So the skill to train: \| recalling with the book closed.* |
-| b09 Thứ nhất | 41–48 | Hiệp | **Thứ nhất** thì clip trước nói rồi đó: \| đọc xong một chương là gấp sách lại, \| nhìn tiêu đề rồi **tự viết ra** những gì nhớ. | Lùi khung lộ bảng, ô ① sách úp; tờ giấy chỉ có vạch tiêu đề, bút chạy · *First, like last video: \| finish a chapter, close the book, \| write what you remember from the title.* |
+| b09 Thứ nhất | 41–48 | Hiệp | **Thứ nhất** thì clip trước nói rồi đó. \| Đọc xong một chương là gấp sách lại, \| nhìn tiêu đề rồi **tự viết ra** những gì nhớ. | Lùi khung lộ bảng, ô ① sách úp; tờ giấy chỉ có vạch tiêu đề, bút chạy · *First, like last video: \| finish a chapter, close the book, \| write what you remember from the title.* |
 | b09b | 48–51 | Hiệp | Như mình nè, \| nhớ được bao nhiêu \| thì viết bấy nhiêu. | Hiệp viết, tay che cuốn sách úp · *Like me: \| write whatever you can recall.* |
 | b09c Thứ hai | 51–58 | Hiệp | **Thứ hai**, viết xong rồi \| mới mở sách ra **chấm**, \| sai chỗ nào sửa chỗ đó. | Bung hai tay, ô ② bút đỏ; sách mở cạnh tờ giấy, bút đỏ khoanh · *Second: only after writing, \| open the book and check. \| Fix what's wrong.* |
 | b09d Miếng hài | 58–64 | Hiệp | Tự chấm thì yên tâm, \| hông ai **ghi sổ đầu bài** đâu. \| Bước chấm này cẩm nang gợi ý thêm, \| chứ thí nghiệm kia hông có làm. | Hiệp cười gian, cuốn sổ đầu bài đóng sập · *Self-grading: no one's writing you up. \| This step is from the handbook, \| not the study.* |
@@ -55,7 +55,7 @@ format: "khung video phân tích «bản chất» (physical hook + Thứ nhất/
 6. **[b07b]** Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn. Nhưng nhóm đo sau một tuần thì lật ngược.
 7. **[b07c]** Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42. Nhưng năm mấy chục cũng đâu phải nhớ hết.
 8. **[b08]** Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.
-9. **[b09]** Thứ nhất thì clip trước nói rồi đó: đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.
+9. **[b09]** Thứ nhất thì clip trước nói rồi đó. Đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.
 10. **[b09b]** Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.
 11. **[b09c]** Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.
 12. **[b09d]** Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu. Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.
