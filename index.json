@@ -1080,6 +1080,38 @@
    "title": "Clip05 r15.2 PATCH2 — chỉ sửa K2/S18, PREPARED PENDING OWNER COORDINATION APPROVAL"
   },
   {
+   "id": "clip-05.post-checklist",
+   "type": "doc",
+   "status": "ready",
+   "updated": "2026-10-22",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/v4-final/post-checklist.md",
+   "title": "Checklist đăng clip-05 v4 (đánh dấu khi xong)"
+  },
+  {
+   "id": "clip-05.post",
+   "type": "post-package",
+   "status": "bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG.",
+   "updated": "2026-10-22",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/v4-final/post.md",
+   "title": "Bộ final đăng clip-05 v4 «Học dồn một đêm»"
+  },
+  {
+   "id": "clip-05.script-final",
+   "type": "script",
+   "status": "final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3)",
+   "updated": "2026-10-22",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/v4-final/script-final.md",
+   "title": "clip-05 «Học dồn một đêm» — script final"
+  },
+  {
+   "id": "content.clips.clip-05-hoc-mot-dem.archive.v4-final.visual-plan-v4",
+   "type": "visual-plan",
+   "status": "ready",
+   "updated": "2026-10-21",
+   "path": "content/clips/clip-05-hoc-mot-dem/archive/v4-final/visual-plan-v4.md",
+   "title": "Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual)"
+  },
+  {
    "id": "content.clips.clip-05-hoc-mot-dem.evidence-lines-v10",
    "type": null,
    "status": null,
@@ -1096,36 +1128,20 @@
    "title": "Deep Research soát fact clip-05 v9 r9.2"
   },
   {
-   "id": "clip-05.post-checklist",
-   "type": "doc",
-   "status": "ready",
-   "updated": "2026-10-22",
-   "path": "content/clips/clip-05-hoc-mot-dem/final/post-checklist.md",
-   "title": "Checklist đăng clip-05 v4 (đánh dấu khi xong)"
-  },
-  {
-   "id": "clip-05.post",
-   "type": "post-package",
-   "status": "bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG.",
-   "updated": "2026-10-22",
-   "path": "content/clips/clip-05-hoc-mot-dem/final/post.md",
-   "title": "Bộ final đăng clip-05 v4 «Học dồn một đêm»"
-  },
-  {
    "id": "clip-05.script-final",
    "type": "script",
-   "status": "final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3)",
-   "updated": "2026-10-22",
+   "status": "locked",
+   "updated": "2026-11-25",
    "path": "content/clips/clip-05-hoc-mot-dem/final/script-final.md",
-   "title": "clip-05 «Học dồn một đêm» — script final"
+   "title": "clip-05 v21: Đọc đâu nhớ đó = tự trả bài"
   },
   {
-   "id": "content.clips.clip-05-hoc-mot-dem.final.visual-plan-v4",
-   "type": "visual-plan",
+   "id": "clip-05.trend-signals",
+   "type": "research",
    "status": "ready",
-   "updated": "2026-10-21",
-   "path": "content/clips/clip-05-hoc-mot-dem/final/visual-plan-v4.md",
-   "title": "Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual)"
+   "updated": "2026-11-25",
+   "path": "content/clips/clip-05-hoc-mot-dem/final/trend-signals.md",
+   "title": "Tín hiệu trend cho clip-05 v21"
   },
   {
    "id": "content.clips.clip-05-hoc-mot-dem.review-script-v5r2",

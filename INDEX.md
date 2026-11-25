@@ -147,12 +147,14 @@ tags: [index, retrieval]
 | content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15-full-draft-2026-11-08.md` | Clip05 r15 — bản đầy đủ mới, chưa craft PASS / chưa Chốt |
 | content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.1-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.1-full-draft-2026-11-08.md` | Clip05 r15.1 PATCH1 — chỉ sửa K1/S01, chưa craft PASS / chưa Chốt |
 | content.clips.clip-05-hoc-mot-dem.archive.r15.clip05-r15.2-full-draft-2026-11-08 | full-script-draft | NOT-APPROVED | `content/clips/clip-05-hoc-mot-dem/archive/r15/clip05-r15.2-full-draft-2026-11-08.md` | Clip05 r15.2 PATCH2 — chỉ sửa K2/S18, PREPARED PENDING OWNER COORDINATION APPROVAL |
+| clip-05.post-checklist | doc | ready | `content/clips/clip-05-hoc-mot-dem/archive/v4-final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
+| clip-05.post | post-package | bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG. | `content/clips/clip-05-hoc-mot-dem/archive/v4-final/post.md` | Bộ final đăng clip-05 v4 «Học dồn một đêm» |
+| clip-05.script-final | script | final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3) | `content/clips/clip-05-hoc-mot-dem/archive/v4-final/script-final.md` | clip-05 «Học dồn một đêm» — script final |
+| content.clips.clip-05-hoc-mot-dem.archive.v4-final.visual-plan-v4 | visual-plan | ready | `content/clips/clip-05-hoc-mot-dem/archive/v4-final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
 | content.clips.clip-05-hoc-mot-dem.evidence-lines-v10 | None | None | `content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md` | Câu dẫn chứng cho clip-05 v10 (Deep Research) |
 | content.clips.clip-05-hoc-mot-dem.factcheck-script-v9r92 | None | None | `content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md` | Deep Research soát fact clip-05 v9 r9.2 |
-| clip-05.post-checklist | doc | ready | `content/clips/clip-05-hoc-mot-dem/final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
-| clip-05.post | post-package | bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG. | `content/clips/clip-05-hoc-mot-dem/final/post.md` | Bộ final đăng clip-05 v4 «Học dồn một đêm» |
-| clip-05.script-final | script | final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3) | `content/clips/clip-05-hoc-mot-dem/final/script-final.md` | clip-05 «Học dồn một đêm» — script final |
-| content.clips.clip-05-hoc-mot-dem.final.visual-plan-v4 | visual-plan | ready | `content/clips/clip-05-hoc-mot-dem/final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
+| clip-05.script-final | script | locked | `content/clips/clip-05-hoc-mot-dem/final/script-final.md` | clip-05 v21: Đọc đâu nhớ đó = tự trả bài |
+| clip-05.trend-signals | research | ready | `content/clips/clip-05-hoc-mot-dem/final/trend-signals.md` | Tín hiệu trend cho clip-05 v21 |
 | content.clips.clip-05-hoc-mot-dem.review-script-v5r2 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md` | Verdict: CHƯA ĐẠT (4 lỗi chặn, 9 ghi chú) |
 | content.clips.clip-05-hoc-mot-dem.review-script-v5r3 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r3.md` | Verdict: CHƯA ĐẠT (2 lỗi chặn nhỏ, sửa được mà không tăng số chữ) |
 | content.clips.clip-05-hoc-mot-dem.review-script-v5r4 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r4.md` | Verdict (cũ): ĐẠT, trình được Hiệp kèm 2 việc Hiệp quyết |
