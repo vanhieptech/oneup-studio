@@ -3,6 +3,8 @@ id: clip-06.script-v3-draft
 type: script
 status: draft
 updated: 2026-11-26
+revisions:
+  - {date: 2026-11-26, lesson: L-106, note: "r2: viết lại lời cho văn nói sau góp ý Hiệp «xàm, thiếu tự nhiên»; bỏ «lý do nghe mới quê»"}
 tags: [script, clip-06, dark, week-1, howtolivebetter-4.12]
 source: "oneup-studio (soạn trong repo) · HTB 4.12 + 4.1 (book/04, đọc trực tiếp 25/11) · Lally et al. 2010 doi:10.1002/ejsp.674 · trend x-hated-jobs-vs-own-thing (X News 28/10, bridge B-kiennhan-01) · gọi lại clip-01"
 title: "clip-06 — script v3 nháp: «việc ghét ráng ba năm, thói quen ba tuần đã bỏ»"
@@ -53,46 +55,46 @@ Một câu cả clip: *Mình chịu được công việc ba năm vì không ai 
 
 ## Lời đọc
 
-Số ghi bằng chữ số trong lời; khi làm spec sau Chốt, cột `say` đọc thành chữ.
+Số ghi bằng chữ số trong lời; khi làm spec sau Chốt, cột `say` đọc thành chữ. **r2 (26/11, L-106):** viết lại từng câu cho giống văn nói sau góp ý Hiệp «xàm, thiếu tự nhiên»; giữ ý tưởng v3.
 
-1. **[Hook: tương phản + cái giá + lật lời đồn (P03)]** Công việc mình hông thích, mình ráng đi làm được ba năm. Còn hít đất mười cái mỗi sáng, ba tuần là mình bỏ. Lý do nghe mới quê, tới tuần thứ ba vẫn thấy ngại, trong khi ai cũng nói 21 ngày là quen. Mà cuốn cẩm nang mình đọc nói ngược lại, con số 21 đó không có căn cứ. Vậy bao lâu mới thật sự quen thì có người đo rồi, lát mình kể.
-2. **[Trend nói thành lời]** Cũng vì vụ bỏ hít đất đó, mình nhớ tới một câu mấy tuần trước được chia lại nhiều trên mạng. Câu đó nói mình kiên nhẫn nhiều năm với việc mình ghét, mà bỏ việc của riêng mình chỉ sau vài tháng. Đọc xong mình chột dạ, vì mình chưa tới vài tháng, mới có ba tuần.
-3. **[Vì sao đi làm chịu được, người xem nhận ra mình]** Vậy sao đi làm thì mình chịu nổi ba năm? Nghĩ kỹ thì đâu có ai hứa đi làm ba tuần thì hết mệt. Với lại ngày nào cũng cùng giờ, cùng chỗ, nên sáng ra mình cứ đi mà khỏi suy nghĩ, nghe quen hông?
-4. **[Dẫn chứng: ai, làm gì, đo thế nào]** Rồi mình tìm tới nghiên cứu mà cẩm nang dẫn, là của nhóm Phillippa Lally. Năm 2010, nhóm này theo dõi 96 người suốt 12 tuần. Mỗi người chọn một việc nhỏ về ăn, uống hoặc vận động, rồi làm mỗi ngày trong cùng một bối cảnh, kiểu sau bữa sáng. Ngày nào họ cũng tự chấm xem làm việc đó đã tự động tới đâu.
-5. **[Kết quả: mức quen riêng của mỗi người, so với ba tuần]** Hóa ra mỗi người có một mức quen tay cao nhất riêng của họ. Nhóm đo xem mỗi người mất bao nhiêu ngày mới gần chạm tới mức đó. Người nhanh nhất mất 18 ngày. Người chậm nhất mất tới 254 ngày, tức là hơn tám tháng. So với tám tháng đó, ba tuần của mình mới đứng gần vạch xuất phát thôi.
-6. **[Giới hạn của nguồn]** Mà nói cho công bằng, đây chỉ là một nghiên cứu, và ai trong đó cũng làm việc đơn giản. Việc khó hơn, như mỗi tuần chạy bộ ba buổi, thì tới giờ chưa ai đo.
-7. **[Thông điệp HTB]** Nên thói quen mới phải tính theo tháng, đừng tính 21 ngày. Hai ba tuần mà vẫn còn ngại là chuyện bình thường, chưa phải bằng chứng mình thất bại.
-8. **[Phát hiện thứ hai, ví với nghỉ phép]** Cũng trong nghiên cứu đó, có một phát hiện làm mình nhẹ người nhất. Phát hiện đó là, bỏ lỡ một lượt không ảnh hưởng gì đáng kể tới quá trình tạo thói quen. Giống đi làm thôi, nghỉ phép một bữa đâu ai đuổi việc mình.
-9. **[Cách làm 1: đối xử như đi làm, gắn vào một lúc cố định]** Nên lần này mình đối xử với mười cái hít đất y như đi làm. Nó có giờ cố định hẳn hoi, sáng đánh răng xong là chống tay xuống sàn liền.
-10. **[Cách làm 2: câu nếu… thì…, gọi lại clip-01, hợp đồng tính bằng tháng]** Giống clip đầu tiên của kênh, mình viết luôn thành câu nếu thì, nếu vừa súc miệng xong thì hít luôn mười cái. Xong mình ký với nó một cái hợp đồng tính bằng tháng, chứ không phải ba tuần thử việc.
-11. **[Kết quả, không hứa, loop về hook]** Rồi giờ mới qua tháng đầu, mình chưa dám nói là quen. Nhưng có sáng, mình hít xong rồi mới nhớ ra là hôm đó chưa phải tự nhắc. Đi làm mình còn cho nó ba năm, thì thói quen này cho vài tháng cũng đâu có sao.
-12. **[CTA]** Còn bạn, có thói quen nào mới ba tuần đã bị bạn tính cho nghỉ việc chưa? Gõ tên nó xuống bình luận, coi ai đang ở tháng thứ mấy.
+1. **[Hook: tương phản + cái giá + lật lời đồn (P03)]** Công việc mình hông thích, mình ráng làm ba năm trời. Vậy mà hít đất mười cái mỗi sáng, mình làm đúng ba tuần rồi bỏ. Tới tuần thứ ba mà sáng nào mình vẫn làm biếng y như ngày đầu, trong khi ai cũng nói 21 ngày là quen. Còn cuốn sách mình đang đọc thì nói con số 21 ngày đó không có căn cứ gì hết. Sách dẫn một nhóm nghiên cứu đã đo thật, lát mình kể kết quả.
+2. **[Trend nói thành lời]** Vụ bỏ hít đất đó làm mình nhớ tới một câu được chia sẻ nhiều trên mạng mấy tuần trước. Đại ý là mình kiên nhẫn nhiều năm với việc mình ghét, mà việc của riêng mình thì vài tháng là bỏ. Đọc câu đó mình thấy nhột ghê, vì mình còn chưa tới vài tháng, mới có ba tuần thôi.
+3. **[Vì sao đi làm chịu được, người xem nhận ra mình]** Nên mình mới ngồi nghĩ, sao đi làm thì mình chịu được ba năm? Thứ nhất, đâu có ai nói đi làm ba tuần là hết mệt, nên mệt thì mình coi là bình thường. Thứ hai, ngày nào cũng một giờ, một chỗ, sáng ra cứ vậy mà đi, khỏi nghĩ có nên đi hay không.
+4. **[Dẫn chứng: ai, làm gì, đo thế nào]** Rồi mình đi tìm cái nghiên cứu mà cuốn sách nhắc tới, là của nhóm Phillippa Lally năm 2010. Họ theo dõi 96 người suốt 12 tuần. Mỗi người chọn một việc nhỏ về ăn, uống hoặc vận động, rồi làm mỗi ngày vào cùng một lúc, kiểu sau bữa sáng. Ngày nào họ cũng tự chấm xem việc đó đã thành tự động tới đâu.
+5. **[Kết quả: mỗi người một tốc độ, so với ba tuần]** Kết quả là mỗi người quen theo một tốc độ khác nhau. Nhóm đo xem mỗi người mất bao lâu để quen gần tới mức cao nhất của chính người đó. Người nhanh nhất mất 18 ngày, còn người chậm nhất mất tới 254 ngày, tức là hơn tám tháng. Vậy là ba tuần của mình còn sớm lắm, chưa tới đâu hết.
+6. **[Giới hạn của nguồn]** Nhưng nói cho công bằng thì kết quả này mới từ một nghiên cứu, và người ta toàn làm việc đơn giản. Mấy việc khó hơn, như mỗi tuần chạy bộ ba buổi, thì tới giờ chưa ai đo.
+7. **[Thông điệp HTB]** Nên thói quen mới phải tính bằng tháng, đừng đếm 21 ngày. Tuần thứ ba mà vẫn còn làm biếng là chuyện bình thường, chưa phải là mình thất bại.
+8. **[Phát hiện thứ hai, ví với nghỉ phép]** Nghiên cứu đó còn một chi tiết làm mình nhẹ người. Lỡ bỏ một bữa thì gần như không ảnh hưởng gì tới chuyện thành thói quen. Giống đi làm thôi, xin nghỉ một bữa đâu có ai đuổi việc mình.
+9. **[Cách làm 1: làm như đi làm, gắn vào một lúc cố định]** Nên lần này mình làm mười cái hít đất giống như đi làm. Có giờ cố định hẳn hoi, đánh răng xong là nằm xuống sàn hít liền, khỏi suy nghĩ.
+10. **[Cách làm 2: câu nếu… thì…, gọi lại clip-01, hợp đồng tính bằng tháng]** Giống clip đầu tiên của kênh, mình nói rõ với bản thân, nếu đánh răng xong thì hít mười cái. Xong mình cho nó thời gian tính bằng tháng, chứ không phải ba tuần thử việc.
+11. **[Kết quả, không hứa, loop về hook]** Rồi giờ mới hết tháng đầu, mình chưa dám nói là quen. Nhưng có bữa hít xong rồi mình mới để ý, sáng đó mình đâu cần tự nhắc. Công việc mình hông thích mà mình còn cho nó ba năm, thì thói quen này cho vài tháng có sao đâu.
+12. **[CTA]** Còn bạn, có thói quen nào mới làm ba tuần là bạn cho nghỉ việc rồi không? Viết tên nó xuống bình luận, coi mọi người đang ở tháng thứ mấy.
 
-Đọc liền một mạch (L-089): Công việc mình hông thích, mình ráng đi làm được ba năm. Còn hít đất mười cái mỗi sáng, ba tuần là mình bỏ. Lý do nghe mới quê, tới tuần thứ ba vẫn thấy ngại, trong khi ai cũng nói 21 ngày là quen. Mà cuốn cẩm nang mình đọc nói ngược lại, con số 21 đó không có căn cứ. Vậy bao lâu mới thật sự quen thì có người đo rồi, lát mình kể. Cũng vì vụ bỏ hít đất đó, mình nhớ tới một câu mấy tuần trước được chia lại nhiều trên mạng. Câu đó nói mình kiên nhẫn nhiều năm với việc mình ghét, mà bỏ việc của riêng mình chỉ sau vài tháng. Đọc xong mình chột dạ, vì mình chưa tới vài tháng, mới có ba tuần. Vậy sao đi làm thì mình chịu nổi ba năm? Nghĩ kỹ thì đâu có ai hứa đi làm ba tuần thì hết mệt. Với lại ngày nào cũng cùng giờ, cùng chỗ, nên sáng ra mình cứ đi mà khỏi suy nghĩ, nghe quen hông? Rồi mình tìm tới nghiên cứu mà cẩm nang dẫn, là của nhóm Phillippa Lally. Năm 2010, nhóm này theo dõi 96 người suốt 12 tuần. Mỗi người chọn một việc nhỏ về ăn, uống hoặc vận động, rồi làm mỗi ngày trong cùng một bối cảnh, kiểu sau bữa sáng. Ngày nào họ cũng tự chấm xem làm việc đó đã tự động tới đâu. Hóa ra mỗi người có một mức quen tay cao nhất riêng của họ. Nhóm đo xem mỗi người mất bao nhiêu ngày mới gần chạm tới mức đó. Người nhanh nhất mất 18 ngày. Người chậm nhất mất tới 254 ngày, tức là hơn tám tháng. So với tám tháng đó, ba tuần của mình mới đứng gần vạch xuất phát thôi. Mà nói cho công bằng, đây chỉ là một nghiên cứu, và ai trong đó cũng làm việc đơn giản. Việc khó hơn, như mỗi tuần chạy bộ ba buổi, thì tới giờ chưa ai đo. Nên thói quen mới phải tính theo tháng, đừng tính 21 ngày. Hai ba tuần mà vẫn còn ngại là chuyện bình thường, chưa phải bằng chứng mình thất bại. Cũng trong nghiên cứu đó, có một phát hiện làm mình nhẹ người nhất. Phát hiện đó là, bỏ lỡ một lượt không ảnh hưởng gì đáng kể tới quá trình tạo thói quen. Giống đi làm thôi, nghỉ phép một bữa đâu ai đuổi việc mình. Nên lần này mình đối xử với mười cái hít đất y như đi làm. Nó có giờ cố định hẳn hoi, sáng đánh răng xong là chống tay xuống sàn liền. Giống clip đầu tiên của kênh, mình viết luôn thành câu nếu thì, nếu vừa súc miệng xong thì hít luôn mười cái. Xong mình ký với nó một cái hợp đồng tính bằng tháng, chứ không phải ba tuần thử việc. Rồi giờ mới qua tháng đầu, mình chưa dám nói là quen. Nhưng có sáng, mình hít xong rồi mới nhớ ra là hôm đó chưa phải tự nhắc. Đi làm mình còn cho nó ba năm, thì thói quen này cho vài tháng cũng đâu có sao. Còn bạn, có thói quen nào mới ba tuần đã bị bạn tính cho nghỉ việc chưa? Gõ tên nó xuống bình luận, coi ai đang ở tháng thứ mấy.
+Đọc liền một mạch (L-089): Công việc mình hông thích, mình ráng làm ba năm trời. Vậy mà hít đất mười cái mỗi sáng, mình làm đúng ba tuần rồi bỏ. Tới tuần thứ ba mà sáng nào mình vẫn làm biếng y như ngày đầu, trong khi ai cũng nói 21 ngày là quen. Còn cuốn sách mình đang đọc thì nói con số 21 ngày đó không có căn cứ gì hết. Sách dẫn một nhóm nghiên cứu đã đo thật, lát mình kể kết quả. Vụ bỏ hít đất đó làm mình nhớ tới một câu được chia sẻ nhiều trên mạng mấy tuần trước. Đại ý là mình kiên nhẫn nhiều năm với việc mình ghét, mà việc của riêng mình thì vài tháng là bỏ. Đọc câu đó mình thấy nhột ghê, vì mình còn chưa tới vài tháng, mới có ba tuần thôi. Nên mình mới ngồi nghĩ, sao đi làm thì mình chịu được ba năm? Thứ nhất, đâu có ai nói đi làm ba tuần là hết mệt, nên mệt thì mình coi là bình thường. Thứ hai, ngày nào cũng một giờ, một chỗ, sáng ra cứ vậy mà đi, khỏi nghĩ có nên đi hay không. Rồi mình đi tìm cái nghiên cứu mà cuốn sách nhắc tới, là của nhóm Phillippa Lally năm 2010. Họ theo dõi 96 người suốt 12 tuần. Mỗi người chọn một việc nhỏ về ăn, uống hoặc vận động, rồi làm mỗi ngày vào cùng một lúc, kiểu sau bữa sáng. Ngày nào họ cũng tự chấm xem việc đó đã thành tự động tới đâu. Kết quả là mỗi người quen theo một tốc độ khác nhau. Nhóm đo xem mỗi người mất bao lâu để quen gần tới mức cao nhất của chính người đó. Người nhanh nhất mất 18 ngày, còn người chậm nhất mất tới 254 ngày, tức là hơn tám tháng. Vậy là ba tuần của mình còn sớm lắm, chưa tới đâu hết. Nhưng nói cho công bằng thì kết quả này mới từ một nghiên cứu, và người ta toàn làm việc đơn giản. Mấy việc khó hơn, như mỗi tuần chạy bộ ba buổi, thì tới giờ chưa ai đo. Nên thói quen mới phải tính bằng tháng, đừng đếm 21 ngày. Tuần thứ ba mà vẫn còn làm biếng là chuyện bình thường, chưa phải là mình thất bại. Nghiên cứu đó còn một chi tiết làm mình nhẹ người. Lỡ bỏ một bữa thì gần như không ảnh hưởng gì tới chuyện thành thói quen. Giống đi làm thôi, xin nghỉ một bữa đâu có ai đuổi việc mình. Nên lần này mình làm mười cái hít đất giống như đi làm. Có giờ cố định hẳn hoi, đánh răng xong là nằm xuống sàn hít liền, khỏi suy nghĩ. Giống clip đầu tiên của kênh, mình nói rõ với bản thân, nếu đánh răng xong thì hít mười cái. Xong mình cho nó thời gian tính bằng tháng, chứ không phải ba tuần thử việc. Rồi giờ mới hết tháng đầu, mình chưa dám nói là quen. Nhưng có bữa hít xong rồi mình mới để ý, sáng đó mình đâu cần tự nhắc. Công việc mình hông thích mà mình còn cho nó ba năm, thì thói quen này cho vài tháng có sao đâu. Còn bạn, có thói quen nào mới làm ba tuần là bạn cho nghỉ việc rồi không? Viết tên nó xuống bình luận, coi mọi người đang ở tháng thứ mấy.
 
-**ƯỚC thời lượng:** 549 chữ trong lời (số đọc thành chữ dài thêm khoảng 20 âm tiết). Đọc tự nhiên khoảng 3,5 âm tiết/giây ≈ 163s, cộng nghỉ chủ ý ~4s, chuyển cảnh ~4s, end card 3s ≈ **ƯỚC 174s**. Mục tiêu 120–180s, trần 300s. Đây là ƯỚC, chưa đo. Muốn gọn thì bỏ được b06 (giới hạn) hoặc b02 (trend).
+**ƯỚC thời lượng:** 579 chữ trong lời (số đọc thành chữ dài thêm khoảng 20 âm tiết). Đọc tự nhiên khoảng 3,5 âm tiết/giây ≈ 171s, cộng nghỉ chủ ý ~4s, chuyển cảnh ~4s, end card 3s ≈ **ƯỚC 182s**. Mục tiêu 120–180s, trần 300s. Đây là ƯỚC, chưa đo.
 
 ## Bảng cặp câu (L-094, nối giữa các beat; trong beat đã qua `--flow`/`--link`)
 
 | Cặp | Câu sau mở bằng | Nối nhờ chữ nào |
 |---|---|---|
-| b01 trong beat | «Còn hít đất…» → «Lý do nghe mới quê…» → «Mà cuốn cẩm nang…» → «Vậy bao lâu mới thật sự quen…» | đối chiếu ba năm / ba tuần → lý do → lật lời đồn → hứa nói số đo thật |
-| b01→b02 | «Cũng vì vụ bỏ hít đất đó…» | gọi lại chuyện bỏ ở hook |
-| b02→b03 | «Vậy sao đi làm thì mình chịu nổi ba năm?» | câu trend «kiên nhẫn nhiều năm với việc mình ghét» → hỏi lại chính mình |
-| b03→b04 | «Rồi mình tìm tới nghiên cứu mà cẩm nang dẫn…» | thực hiện lời hứa «có người đo rồi» ở b01 |
-| b04→b05 | «Hóa ra mỗi người có một mức quen tay cao nhất…» | kết quả của việc «tự chấm đã tự động tới đâu» |
-| b05→b06 | «Mà nói cho công bằng, đây chỉ là một nghiên cứu…» | giới hạn của kết quả vừa nói |
-| b06→b07 | «Nên thói quen mới phải tính theo tháng…» | rút từ «hơn tám tháng» ở b05 |
-| b07→b08 | «Cũng trong nghiên cứu đó, có một phát hiện…» | quay lại nghiên cứu Lally, thêm ý thứ hai |
-| b08→b09 | «Nên lần này mình đối xử với mười cái hít đất y như đi làm.» | gom hai lý do đi làm chịu được (b03) + nghỉ phép (b08) thành cách làm |
-| b09→b10 | «Giống clip đầu tiên của kênh, mình viết luôn thành câu nếu thì…» | viết cái giờ cố định thành câu |
-| b10→b11 | «Rồi giờ mới qua tháng đầu…» | kết quả của «hợp đồng tính bằng tháng» |
-| b11→b12 | «Còn bạn, có thói quen nào mới ba tuần…» | chuyển từ «mình» sang người xem, gọi lại «nghỉ việc» |
+| b01 trong beat | «Vậy mà hít đất…» → «Tới tuần thứ ba…» → «Còn cuốn sách…» → «Sách dẫn một nhóm nghiên cứu…» | ba năm / ba tuần → vì sao bỏ (làm biếng như ngày đầu, trái lời đồn 21 ngày) → sách bác lời đồn → hứa kể số đo |
+| b01→b02 | «Vụ bỏ hít đất đó làm mình nhớ tới một câu…» | câu trên mạng nói đúng chuyện ráng việc ghét / bỏ việc riêng ở hook |
+| b02→b03 | «Nên mình mới ngồi nghĩ, sao đi làm thì mình chịu được ba năm?» | «nhột» → tự hỏi lại |
+| b03→b04 | «Rồi mình đi tìm cái nghiên cứu mà cuốn sách nhắc tới…» | thực hiện lời hứa ở b01 |
+| b04→b05 | «Kết quả là mỗi người quen theo một tốc độ khác nhau.» | kết quả của việc tự chấm mỗi ngày |
+| b05→b06 | «Nhưng nói cho công bằng thì kết quả này mới từ một nghiên cứu…» | giới hạn của kết quả vừa nói |
+| b06→b07 | «Nên thói quen mới phải tính bằng tháng…» | rút từ «hơn tám tháng» ở b05 |
+| b07→b08 | «Nghiên cứu đó còn một chi tiết…» | quay lại nghiên cứu Lally |
+| b08→b09 | «Nên lần này mình làm mười cái hít đất giống như đi làm.» | gom b03 (giờ cố định, mệt là bình thường) + b08 (nghỉ một bữa) |
+| b09→b10 | «Giống clip đầu tiên của kênh…» | viết giờ cố định thành câu nếu… thì… |
+| b10→b11 | «Rồi giờ mới hết tháng đầu…» | kết quả của việc cho nó tính bằng tháng |
+| b11→b12 | «Còn bạn…» | chuyển sang người xem, gọi lại «nghỉ việc» |
 
 Checker còn ⚠ L-091 «câu hỏi b03 trước câu tình huống»: câu hỏi ở b03 đứng sau tình huống hook b01 (đi làm ba năm, hít đất ba tuần); cờ heuristic, Rule Reviewer xác nhận tay.
 
 ## Quy chiếu (L-098 (2))
-«con số 21 đó» (b01) = 21 ngày · «vụ bỏ hít đất đó» (b02) = bỏ hít đất sau ba tuần · «nhóm này» (b04) = nhóm Phillippa Lally · «mức đó» (b05) = mức quen tay cao nhất của mỗi người · «tám tháng đó» (b05) = 254 ngày của người chậm nhất · «nghiên cứu đó» (b08) = nghiên cứu Lally · «Phát hiện đó» (b08) = phát hiện vừa báo ở câu trước · «nó» (b09–b11) = mười cái hít đất · «nó» (b12) = thói quen của người xem.
+«con số 21 ngày đó» (b01) = lời đồn 21 ngày · «một câu» (b02) = câu trend · «cái nghiên cứu mà cuốn sách nhắc tới» (b04) = Lally 2010 · «mức cao nhất của chính người đó» (b05) = mức tự động tối đa riêng mỗi người (HTB: 95% trần) · «Nghiên cứu đó» (b08) = Lally · «nó» (b10–b11) = mười cái hít đất · «nó» (b12) = thói quen của người xem.
 
 ## Beat → engine → caption EN → kế hoạch hình (chỉ chữ, chưa sinh hình)
 L-050: đồ vật, hành động, tỉ lệ; không chữ, không số, không nhãn trong hình. Story = `remotion`, dẫn chứng = `hyperframes`.
@@ -122,10 +124,10 @@ L-050: đồ vật, hành động, tỉ lệ; không chữ, không số, không 
 | b02 câu trend | ingest x-hated-jobs-vs-own-thing (X News 28/10, tóm tắt Justin Welsh) | không tên người, không số 22% |
 | b03 vì sao đi làm chịu được | suy luận của người nói (L-045); ý «cùng giờ cùng chỗ» khớp ghi chú 4.12 «buộc động tác vào một bối cảnh cố định» | ý của mình, không gán nghiên cứu |
 | b04 2010, 96 người, 12 tuần, ăn/uống/vận động, mỗi ngày trong bối cảnh cố định, «sau bữa sáng», tự chấm mỗi ngày | 4.12 Lợi ích | đúng chữ |
-| b05 «mức quen tay cao nhất riêng của họ… gần chạm tới mức đó», 18 / 254 ngày | 4.12 Lợi ích: «số ngày cần để đạt 95% trần tự động hóa của từng người… 18 ngày đến 254 ngày» | «gần chạm» thay cho 95% trần → **xin Deep Research xác nhận cách nói**; «hơn tám tháng» = 254/30 ≈ 8,5 (tính) |
+| b05 «quen gần tới mức cao nhất của chính người đó», 18 / 254 ngày | 4.12 Lợi ích: «số ngày cần để đạt 95% trần tự động hóa của từng người… 18 ngày đến 254 ngày» | «quen gần tới mức cao nhất» thay cho 95% trần → **xin Deep Research xác nhận cách nói**; «hơn tám tháng» = 254/30 ≈ 8,5 (tính) |
 | b06 một nghiên cứu, việc đơn giản, «mỗi tuần chạy ba lần» chưa ai đo | 4.12 Ghi chú | đúng chữ |
 | b07 tiêu đề 4.12, «hai ba tuần… bình thường», «chưa phải bằng chứng thất bại» | 4.12 tiêu đề, Nói dễ hiểu, Ghi chú | đúng chữ |
-| b08 «bỏ lỡ một lượt không ảnh hưởng gì đáng kể» | 4.12 Lợi ích: «không ảnh hưởng thực chất» | sát chữ; ví với nghỉ phép là ý của người nói |
+| b08 «lỡ bỏ một bữa thì gần như không ảnh hưởng gì» | 4.12 Lợi ích: «không ảnh hưởng thực chất» | sát chữ; ví với nghỉ phép là ý của người nói |
 | b09 giờ cố định | 4.12 Ghi chú (bối cảnh cố định) | lời khuyên cẩm nang |
 | b10 câu nếu… thì… | 4.1 (Gollwitzer & Sheeran 2006, clip-01) | chỉ gọi lại, không nêu số |
 | b10 «hợp đồng tính bằng tháng» | 4.12 Chi phí: «kéo dài vài tháng» | ẩn dụ, không nêu số tháng |
@@ -135,8 +137,8 @@ Cấm (giữ từ fact lock): «66 ngày», mọi số ngày cố định, nới
 
 ## Tự soát (bên viết tự ghi; kết luận đạt là của Rule Reviewer, L-086)
 - Một ngôi kể «mình» b01–b11, «bạn» chỉ ở CTA. Không môn học (L-087), không chê năng lực (L-053), không «:» «;» trong lời, không emoji.
-- Engagement (rule-56): «nghe quen hông?» (b03), comment-challenge «Gõ tên nó xuống bình luận» (b12), loop «ba năm / vài tháng» (b11 ↔ b01).
+- Engagement (rule-56): «nhột ghê» (b02), comment-challenge «Viết tên nó xuống bình luận» (b12), loop «ba năm / vài tháng» (b11 ↔ b01).
 - Rủi ro báo Hiệp:
   - (1) Trend Justin Welsh lần cuối thấy 31/10, đã nguội. Sau 12/11 không có digest mới để thay. Ở v3 nó chỉ nằm ở b02, bỏ đi hook vẫn đứng được.
   - (2) Slug thư mục vẫn là `bong-hoa-chua-no` dù v3 không còn dùng trend bông hoa. Đổi tên thư mục là việc riêng, chỉ làm khi Hiệp muốn.
-  - (3) b05 «gần chạm tới mức đó» là cách nói đời thường của «95% trần tự động hóa», cần Deep Research xác nhận.
+  - (3) b05 «quen gần tới mức cao nhất của chính người đó» là cách nói đời thường của «95% trần tự động hóa», cần Deep Research xác nhận.
