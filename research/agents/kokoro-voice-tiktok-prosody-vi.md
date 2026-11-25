@@ -202,7 +202,7 @@ Xếp theo giá trị / công làm. Mọi check đều đọc file đo đã có 
 1. Rule Reviewer xem X1–X5 và E1–E6; Hiệp quyết X1 (hook) và X2 (cách nhấn).
 2. Khi News làm giọng v18: áp checklist mục 4 cùng với checklist 8 mục của plan; ghi thêm số đo C1–C5 vào `final/prosody-measure-v18.md`.
 3. Nếu Hiệp đồng ý thử X2: chỉ nghe A/B 2–3 câu đã có trong v18 (cùng lời khoá), so "chọn take dài hơn + gain" với "chỉ gain". Không thêm ref mới, không đổi engine.
-4. Kokoro-Vietnamese **không** liên quan tới việc này: giọng sản xuất vẫn là F5. Đánh giá Kokoro vẫn theo `research/agents/kokoro-vs-f5tts-initial-research-vi.md` và workflow `workflows/agents/kokoro-voice.md` (chỉ A/B mù khi Hiệp chốt script; fail cổng license hoặc chất lượng thì không đổi pipeline).
+4. Kokoro-Vietnamese **không** liên quan tới việc này: giọng sản xuất vẫn là F5. Đánh giá Kokoro vẫn theo `research/agents/kokoro-vs-f5tts-initial-research-vi.md` và workflow `docs/legacy-box/workflows-agents/kokoro-voice.md` (chỉ A/B mù khi Hiệp chốt script; fail cổng license hoặc chất lượng thì không đổi pipeline).
 
 ## 7. Điều chưa chắc chắn (ghi thẳng)
 

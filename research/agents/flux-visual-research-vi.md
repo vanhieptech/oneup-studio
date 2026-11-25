@@ -48,7 +48,7 @@ Kết luận: box hiện không chạy local được bất kỳ biến thể FL
 
 - Klein 4B hỗ trợ text-to-image + sửa ảnh 1–nhiều ảnh tham chiếu trong cùng một model — đúng use-case lấy sheet nhân vật làm reference sinh biến thể. Độ nhất quán nét chibi ink phải test thật mới khẳng định, chưa có cơ sở hứa trước.
 - Assets sẵn có (đúng nguồn duy nhất, rule-65): `brand/characters/` — `hiep-model-sheet.png` (2400×1500), `hiep-poses.png` (2400×1100), `omi-sheet.png` (2400×1420), bản `v2/` dọc 1080×1920; `brand/omi-exports/` — 242 file PNG/SVG pose/biểu cảm Omi. Hình thật nằm ở `brand/`, không phải `assets/` (chỉ có sfx + voice-refs).
-- Ràng buộc kênh thắng FLUX: ảnh AI không vào final video (luật 42/43), cover final từ `Cover.tsx` (L-020/rule-54), nghĩa bằng vật/hành động không chữ (L-050), không mặt người giả chưa duyệt, Omi chỉ từ tuần ≥5 (rule-11). FLUX chỉ ở vai trò ý tưởng/tham chiếu hoặc hình bài đăng được Hiệp duyệt riêng — chi tiết ở `workflows/agents/flux-visual.md`.
+- Ràng buộc kênh thắng FLUX: ảnh AI không vào final video (luật 42/43), cover final từ `Cover.tsx` (L-020/rule-54), nghĩa bằng vật/hành động không chữ (L-050), không mặt người giả chưa duyệt, Omi chỉ từ tuần ≥5 (rule-11). FLUX chỉ ở vai trò ý tưởng/tham chiếu hoặc hình bài đăng được Hiệp duyệt riêng — chi tiết ở `docs/legacy-box/workflows-agents/flux-visual.md`.
 
 ## 4. Khuyến nghị và điều cần Hiệp duyệt
 

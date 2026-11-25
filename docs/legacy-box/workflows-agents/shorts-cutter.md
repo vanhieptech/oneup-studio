@@ -72,4 +72,4 @@ source_repo: "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator"
 - `skills/make-video/SKILL.md` — pipeline clip chính; Shorts Cutter mượn cổng duyệt 2 gate, chuẩn loudness, font và hook, nhưng không chạy các bước script/giọng/render comic của skill này.
 - `rules/video-rules.md`, `logs/decision-log.md` — luật kênh và quyết định đã chốt.
 - `docs/conventions/storage.md` + `pipeline/paths.py` — nơi lưu file chuẩn; media lớn qua `media/MANIFEST.json` + `pipeline/scripts/media-sync.py`.
-- File workflow này: `workflows/agents/shorts-cutter.md`.
+- File workflow này: `docs/legacy-box/workflows-agents/shorts-cutter.md`.

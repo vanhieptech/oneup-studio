@@ -44,6 +44,6 @@ source: "oneup-studio (soạn trong repo)"
 - Lưu ý đã đối chiếu 19/10: skills/motion-picks-per-script bản trong repo mới hơn bản ở /home/box/agent-data/workflows (khác ở mục doodle) — lấy bản repo làm chuẩn, chưa tự sửa skill khi Hiệp chưa duyệt cắt make-video.
 
 ## 8. File và skill liên quan
-- workflows/agents/README.md — bản đồ toàn chuỗi.
+- docs/legacy-box/workflows-agents/README.md — bản đồ toàn chuỗi.
 - research/agents/ — báo cáo nghiên cứu của từng agent đã gom vào repo.
 - Các workflow agents/*.md trong thư mục này.

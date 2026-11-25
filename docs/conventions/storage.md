@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: storage
 type: convention
 status: active
-updated: 2026-11-07
+updated: 2026-11-26
 tags: [storage, rule-65, rule-66, source-of-truth]
 ---
 # Quy ước lưu trữ (luật 65, L-034)
@@ -30,7 +30,7 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Test | `tests/` | |
 | Script, tool | `pipeline/scripts/`, `pipeline/tts/`, `video-engine/src/` | |
 | Research, trend | `research/` (`trends/<date>/`), `docs/research/`, `resources/` (từ điển, văn nói) | |
-| Skill | bản chạy: `/home/box/agent-data/workflows/<skill>/`; bản mirror: `skills/<skill>/` (cập nhật cả hai) | |
+| Skill | `skills/<skill>/` (nguồn duy nhất, local Mac; bản box cũ đã bỏ) | workflow đa agent cũ: `docs/legacy-box/workflows-agents/` (đã ngưng) |
 | Slash `/skill` cho Claude Code | `.claude/skills/<skill>` = symlink tới `skills/<skill>`, `skills/hyperframes/<skill>`, `channels/vanhiep-tech/skills/<skill>` (không chép file). Thêm skill mới → thêm symlink cùng tên với `name:` | tracked |
 | Log, bài học, quyết định | `logs/` (`lessons.md`, `decision-log.md`, `runs/`) | |
 | Luật | `rules/video-rules.md` | |

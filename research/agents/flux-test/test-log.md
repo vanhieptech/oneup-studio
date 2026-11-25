@@ -18,7 +18,7 @@ source: "oneup-studio (soạn trong repo)"
 - Chi phí thực tế: $0 (chưa gọi). Ước tính theo docs cho 1 ảnh 1080x1920 (~2,07MP, làm tròn 3MP): output ~$0,016 (MP đầu $0,014 + 2 MP thêm x $0,001) + xử lý ảnh tham chiếu ~$0,001/MP mỗi sheet — tổng cỡ $0,02-0,03/ảnh. API trả field `cost` (credits, 1 credit = $0,01) khi submit — lấy số đó làm chi phí thực tế.
 - Prompt: /workspace/flux-test/prompt.txt (tiếng Anh, không chữ trong ảnh, giấy #F7F7F5 / mực #111111 / accent cam #FF5A36, chibi theo sheet gấp sách + tự ghi ra giấy)
 - Script chạy sẵn (chưa chạy): /workspace/flux-test/run_flux_test.py — đọc BFL_API_KEY từ env, base64 2 sheet, POST 1 lần, poll tới Ready, tải ảnh. Thiếu key thì script tự dừng, không gọi API.
-- Đánh giá ảnh: chưa có ảnh để đánh giá — tiêu chí khi có (theo workflows/agents/flux-visual.md mục 4-6): giống sheet chibi Hiệp/Omi, truyền nghĩa bằng vật/hành động không cần chữ, 0 chữ lọt, không lỗi tay/mặt/vật, vật >=60% bề ngang, không che caption band y>1400, tự soát >=2 vòng full-size. Đạt/chưa đạt: CHƯA ĐÁNH GIÁ ĐƯỢC.
+- Đánh giá ảnh: chưa có ảnh để đánh giá — tiêu chí khi có (theo docs/legacy-box/workflows-agents/flux-visual.md mục 4-6): giống sheet chibi Hiệp/Omi, truyền nghĩa bằng vật/hành động không cần chữ, 0 chữ lọt, không lỗi tay/mặt/vật, vật >=60% bề ngang, không che caption band y>1400, tự soát >=2 vòng full-size. Đạt/chưa đạt: CHƯA ĐÁNH GIÁ ĐƯỢC.
 - Dùng cho final/cover: KHÔNG (test nội bộ, luật workflow: ảnh AI không vào final video/cover).
 
 ## Sheet kiểm tra (tồn tại, chưa upload)

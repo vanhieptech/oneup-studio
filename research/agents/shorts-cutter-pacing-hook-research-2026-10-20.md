@@ -84,7 +84,7 @@ Toàn bộ 32 dòng (kể cả clip không có VTT) có ở `research/trends/202
 3. **Nhịp:** video nói chuyện có thể dùng jump cut bỏ khoảng lặng > 0,3s, nhắm khoảng 0,2–0,35 cắt/s (mốc thấp đến trung vị của Dost & Huang). Thêm punch-in 110–120% ở từ khóa để tạo hit thay cho cắt. Nghiên cứu cho thấy cắt "chồng nhẹ" (overlapping) ở nhịp thấp tốt cho xem tiếp; cắt liền mạch (seamless) tốt cho like.
 4. **Đo trước khi trình:** chạy `select='gt(scene,0.15)'` và `0.3` trên mỗi Short, ghi số cắt, số cắt 0–3s và shot TB vào báo cáo, như bảng a1.
 5. **Phụ đề:** một cụm 3–5 chữ (brand-tokens `caption.chunk`), đặt trong vùng an toàn chung của cả 3 nền tảng (mục e1). Luôn xuất `.srt` rời (tính năng PR #1 của Short Factory, đang chờ Hiệp duyệt).
-6. Cổng bản quyền và cổng duyệt đoạn trong `workflows/agents/shorts-cutter.md` vẫn giữ nguyên: không có video tự sở hữu thì không cắt.
+6. Cổng bản quyền và cổng duyệt đoạn trong `docs/legacy-box/workflows-agents/shorts-cutter.md` vẫn giữ nguyên: không có video tự sở hữu thì không cắt.
 
 ## (e) Chuyển bản TikTok 9:16 sang Instagram Reels và YouTube Shorts (2026)
 

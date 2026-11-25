@@ -91,4 +91,4 @@ Kèm theo, ngoài bảng:
 - `logs/rule-scoring-rubric.md` — hạng mục D (Fact/evidence, 15 điểm) và lỗi chặn 1 + 6; trạng thái rubric vẫn là đề xuất chờ Hiệp duyệt.
 - `skills/make-video/SKILL.md` (bản workflow tại `/home/box/agent-data/workflows/make-video/SKILL.md`) — bước 1.4 (đọc nguồn HowToLiveBetter → Fact lock), mục 3 (polish không đổi fact lock), cổng gate 1.
 - **Báo cáo nghiên cứu của agent này hiện CHƯA nằm trong repo:** đang ở `/workspace/local-deep-research-review-vi.md` (ngoài `oneup-studio`) — ghi rõ để News gom vào repo (đề xuất đặt ở `research/` theo quy ước đặt tên `*-research-vi.md` đang dùng trong thư mục đó), tránh trùng với file workflow này.
-- File workflow này: `workflows/agents/deep-research.md` — chưa commit, chờ News gom và Hiệp duyệt.
+- File workflow này: `docs/legacy-box/workflows-agents/deep-research.md` — chưa commit, chờ News gom và Hiệp duyệt.

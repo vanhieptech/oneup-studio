@@ -118,7 +118,7 @@ SCRIPTS = ROOT / "pipeline/scripts"; TTS = ROOT / "pipeline/tts"; SKILLS_MIRROR 
 SKILLS_LIVE = HOME / ".claude/skills"
 # allowed top-level dirs/files (check-assets.py enforces)
 TOP_ALLOWED = {"GUIDE.md", "AGENTS.md", "INDEX.md", "README.md", "index.json", ".gitignore", "assets", "brand", "channels", "content", "docs", "logs", "media",
-               "pipeline", "research", "resources", "rules", "skills", "templates", "tests", "video-engine", "workflows"}
+               "pipeline", "research", "resources", "rules", "skills", "templates", "tests", "video-engine"}
 SAMPLES = ROOT / "content/samples"; LAB = SAMPLES / "lab"; FOOTAGE = MEDIA / "footage"; EXT_REFS = ROOT / "resources/refs"
 # per-clip standard layout: content/clips/<clip>/{README.md, final/, archive/}; drafts/old versions only in archive/
 CLIP_TOP_ALLOWED = {"final", "archive", "README.md"}

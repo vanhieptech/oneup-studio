@@ -177,7 +177,7 @@ Theo Agency Production: audio/kết luận thử nghiệm bàn giao cho **Short 
 
 | File / skill | Dùng để làm gì trong workflow này |
 |---|---|
-| `workflows/agents/kokoro-voice.md` (file này) | Workflow riêng của Kokoro Voice; slug: `kokoro-voice` |
+| `docs/legacy-box/workflows-agents/kokoro-voice.md` (file này) | Workflow riêng của Kokoro Voice; slug: `kokoro-voice` |
 | `/workspace/kokoro-vs-f5tts-initial-research-vi.md` (ngoài repo, đường dẫn tuyệt đối trên box) | Báo cáo nghiên cứu Kokoro vs F5-TTS ngày 2026-10-19: kết luận tiếng Việt/license, inventory box, thiết kế A/B và pass/fail gốc. Chỉ tham chiếu, không copy vào repo |
 | `research/agents/kokoro-vs-f5tts-initial-research-vi.md` | Bản sao trong repo của báo cáo trên (do News thêm). Hai bản phải giống nhau; trong repo thì đọc bản này |
 | `research/agents/kokoro-voice-tiktok-prosody-vi.md` (2026-10-20, W-19/W-17) | Nghiên cứu nhấn/ngắt giọng cho TikTok tiếng Việt: nguồn ngữ âm (nhấn giọng Nam = kéo dài, ngắt cụm = lặng + kéo dài âm tiết trước), đối chiếu L-xxx/W-08 với ba script giọng, mâu thuẫn X1–X5 chờ quyết, checklist T1–T7/C1–C7 khi làm giọng F5 clip-04 v18, đề xuất check E1–E6 cho `check-rules.py` (chưa viết code). Đọc trước mỗi việc giọng |

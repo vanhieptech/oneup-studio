@@ -80,4 +80,4 @@ Trạng thái giấy phép/phần cứng: đã kiểm tra 2026-10-19 (xem mục 
 - `logs/rule-checklist.md` mục D (hình/layout/motion) + mục E (gói đăng); `logs/rule-scoring-rubric.md`.
 - `skills/make-video/SKILL.md` (bản workflow tại `/home/box/agent-data/workflows/make-video/`) — §2 (meaning-by-objects, doodle gate), §5–§6 (gate 1, Cover rule-54, hook rule-55); skill `motion-picks-per-script` cho hiệu ứng theo beat.
 - `brand/characters/`, `brand/omi-exports/`, `brand/fonts/` (Be Vietnam Pro — mọi chữ trên màn hình, rule-15/L-002), `pipeline/paths.py` + `docs/conventions/storage.md` (rule-65, một nguồn asset duy nhất).
-- File này: `workflows/agents/flux-visual.md` — chưa commit (để News gom, tránh xung đột).
+- File này: `docs/legacy-box/workflows-agents/flux-visual.md` — chưa commit (để News gom, tránh xung đột).

@@ -3,11 +3,13 @@ title: "Bản đồ workflow agent — @hi.oneup"
 date: 2026-10-19
 type: readme
 tags: [workflows]
-status: ready
+status: archived
 source: "oneup-studio (soạn trong repo)"
 ---
 
 # Bản đồ workflow agent — @hi.oneup
+
+> **Đã ngưng (2026-11-26).** Bản đồ đa agent thời box (19/10), chuyển từ `workflows/agents/` vào đây để giữ lịch sử. Quy trình hiện hành: `skills/make-video/SKILL.md` (@hi.oneup) và `channels/vanhiep-tech/AGENTS.md`; trend: `skills/trend-digest/`. Không làm theo file trong thư mục này.
 
 Cập nhật: 19/10/2026 (Asia/Saigon). Từ nay mỗi agent giữ một workflow riêng trong thư mục này; News chỉ điều phối (xem news-coordinator.md). Skill make-video cũ vẫn là xương sống tạm thời; đề xuất cắt mỏng make-video chờ Hiệp duyệt, chưa tự cắt.
 
@@ -40,5 +42,5 @@ Cập nhật: 19/10/2026 (Asia/Saigon). Từ nay mỗi agent giữ một workflo
 
 ## Trạng thái lưu repo
 - Đã có sẵn trong repo trước đợt tách: rules/video-rules, logs/rule-checklist.md, logs/rule-scoring-rubric.md, logs/lessons.md L-001–L-058, pipeline/scripts/check-rules.py, skills make-video / motion-picks-per-script / trend-digest.
-- Đợt này thêm: 12 file workflows/agents/ (11 agent + News điều phối) và bản đồ này.
+- Đợt này thêm: 12 file docs/legacy-box/workflows-agents/ (11 agent + News điều phối) và bản đồ này.
 - Lệch đã ghi nhận, chưa tự sửa: skills/motion-picks-per-script bản repo mới hơn bản trên box (mục doodle); lấy bản repo làm chuẩn.

@@ -100,7 +100,7 @@ Agent trước mình: **Hiệp / News** (giao chủ đề, clip id, hoặc câu 
 | Đường dữ liệu A (Apify) | `skills/trend-digest/SKILL.md` (v4), `pipeline/trends/apify.yaml`, đầu ra `research/trends/<YYYY-MM-DD>/` (`digest.md`, `apify/top-clips.md`, `apify/clips.json`, `apify/vtt/`) |
 | Nơi tiêu thụ trend | `skills/make-video/SKILL.md` bước 1.3 (rule-57: `final/trend-signals.md` — URL/view/comment/beat dùng + trend bị loại và lý do), `research/trends/ingest.md`, `research/trends/patterns.md` |
 | Quy ước lưu file | `docs/conventions/storage.md` (luật 65, L-023: một repo duy nhất, research ở `research/`) |
-| Khâu sau | `workflows/agents/deep-research.md` (kiểm chứng claim) → `workflows/agents/opencreator-studio.md` (viết script) → `workflows/agents/rule-reviewer.md` (chấm rubric) |
+| Khâu sau | `docs/legacy-box/workflows-agents/deep-research.md` (kiểm chứng claim) → `docs/legacy-box/workflows-agents/opencreator-studio.md` (viết script) → `docs/legacy-box/workflows-agents/rule-reviewer.md` (chấm rubric) |
 | Đường dữ liệu B (chưa kích hoạt) | Repo ngoài ScrapeCreators (mục 7); cần `SCRAPECREATORS_API_KEY` để trong `.env`, không commit key |
 
 **Trạng thái kích hoạt:** Đường A chạy được ngay. Đường B mới ở mức audit + workflow này — chưa cài skill ScrapeCreators vào máy chạy, chưa có API key, chưa chạy scrape thật lần nào.

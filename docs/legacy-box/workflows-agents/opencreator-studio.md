@@ -59,4 +59,4 @@ tags: [workflow, agent, opencreator, script, hi-oneup]
 - Mẫu script: `templates/script.md` · Quy trình tổng: `skills/make-video/SKILL.md` · Chấm điểm: `logs/rule-scoring-rubric.md` + `logs/rule-checklist.md` · Bài học: `logs/lessons.md`
 - Giọng văn: `content/voice-profile.md`, `content/story-bank.md`, `content/theme-map.md` · Luật gốc: `rules/video-rules.md` · Lưu trữ: `docs/conventions/storage.md`, `AGENTS.md`
 - Kiểm tự động sau khi có spec: `pipeline/scripts/check-rules.py` (khâu sau, không thay chấm script .md ở gate 1).
-- Workflow bạn bè: `workflows/agents/social-research.md`, `workflows/agents/deep-research.md`, `workflows/agents/rule-reviewer.md`, `workflows/agents/flux-visual.md` (khi các agent đó lưu).
+- Workflow bạn bè: `docs/legacy-box/workflows-agents/social-research.md`, `docs/legacy-box/workflows-agents/deep-research.md`, `docs/legacy-box/workflows-agents/rule-reviewer.md`, `docs/legacy-box/workflows-agents/flux-visual.md` (khi các agent đó lưu).

@@ -84,4 +84,4 @@ Lỗi cứng — trả lại, không làm tiếp:
 - Nghiên cứu định dạng audio/hội thoại + trend TikTok (20/10/2026): `research/agents/podcastfy-audio-formats-2026-10-20.md` (6 định dạng, bảng clip có URL/số liệu Apify, đề xuất thử D1 hỏi–đáp Thầy–Omi). Dữ liệu thô: `research/agents/data/podcastfy-formats-2026-10-20/`.
 - Transcript mẫu chờ Hiệp duyệt: `research/agents/podcastfy-sample-transcript-2026-10-20.md` (mục 4.5, fact-lock F1–F10). Chưa chốt → chưa làm giọng.
 - Báo cáo repo Podcastfy: `research/agents/podcastfy-audio-research-vi.md`.
-- File workflow này: `workflows/agents/podcastfy-audio.md`. Chưa commit riêng lẻ, chờ News gom.
+- File workflow này: `docs/legacy-box/workflows-agents/podcastfy-audio.md`. Chưa commit riêng lẻ, chờ News gom.

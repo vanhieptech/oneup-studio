@@ -10,10 +10,18 @@ def fm(p):
         if ':' in l and not l.startswith(' '): k, v = l.split(':', 1); d[k.strip()] = v.strip()
     h = re.search(r'^# (.+)$', s, re.M); d['title'] = h.group(1) if h else d.get('title', p.stem).strip('"')
     return d
+import subprocess
+# Only files git knows (tracked + untracked-not-ignored): the index must come out the same on the Mac and in CI.
+GIT = sorted(subprocess.run(['git', 'ls-files', '-co', '--exclude-standard', '-z'], cwd=R, capture_output=True, text=True, check=True).stdout.split('\0'))
+SKIP_IN = ('node_modules', 'brand/omi-exports', '/.build/', '/archive/')
+SKIP_START = ('brand/scripts', 'resources/refs/', 'docs/legacy-box/', 'skills/hyperframes/')
+def indexed(rel):
+    if rel.startswith('skills/hyperframes/'): return rel.count('/') == 3 and rel.endswith('/SKILL.md')  # skill entry, not its rule files
+    return not (any(x in rel for x in SKIP_IN) or rel.startswith(SKIP_START))
 docs = []
-for p in sorted(R.rglob('*.md')):
-    rel = p.relative_to(R).as_posix()
-    if rel == 'INDEX.md' or any(x in rel for x in ('node_modules', 'brand/omi-exports', '/.build/')) or rel.startswith(('brand/scripts',)): continue
+for rel in GIT:
+    if not rel.endswith('.md') or rel == 'INDEX.md' or not indexed(rel) or not (R/rel).is_file(): continue
+    p = R/rel
     d = fm(p)
     if d and ('id' in d or 'date' in d): docs.append({'id': d.get('id') or rel[:-3].replace('/', '.'), 'type': d.get('type'), 'status': d.get('status'), 'updated': d.get('updated') or d.get('date'), 'path': rel, 'title': d['title']})
     elif d and 'name' in d: docs.append({'id': 'skill.' + p.parent.name, 'type': 'skill', 'status': 'active', 'path': rel, 'title': d['name']})
@@ -24,7 +32,7 @@ clips = []
 for c in sorted((R/'content/clips').iterdir()):
     if c.is_dir():
         sp = c/'storyboard/spec.json'; spec = json.loads(sp.read_text()) if sp.exists() else {}
-        clips.append({'id': c.name.split('-', 2)[0] + '-' + c.name.split('-', 2)[1], 'path': c.relative_to(R).as_posix(), 'theme': spec.get('theme'), 'files': sorted(x.name for x in c.iterdir() if not x.name.startswith('.'))})
+        clips.append({'id': c.name.split('-', 2)[0] + '-' + c.name.split('-', 2)[1], 'path': c.relative_to(R).as_posix(), 'theme': spec.get('theme'), 'files': sorted({f.split('/')[3] for f in GIT if f.startswith(c.relative_to(R).as_posix() + '/') and f.count('/') >= 3})})
 assets = [
  {'id': 'asset.fonts', 'path': 'brand/fonts/', 'desc': 'Be Vietnam Pro (video), DM Sans (app) + OFL licenses'},
  {'id': 'asset.logos', 'path': 'brand/logos/', 'desc': 'Logo SVG/PNG; hero = 05-pair-plus.svg'},
@@ -36,7 +44,7 @@ assets = [
  {'id': 'asset.characters', 'path': 'brand/characters/', 'desc': 'Hiệp rig + model sheets, Omi sheet (prototype v0.1)'},
  {'id': 'tool.comic', 'path': 'pipeline/comic/render.py', 'desc': 'Comic strip renderer (comic/spec.json -> strip.png)'},
  {'id': 'tool.storyboard', 'path': 'pipeline/storyboard/render.py', 'desc': 'Shared storyboard renderer (spec.json -> PNGs + contact sheet)'},
- {'id': 'tool.sync-trends', 'path': 'pipeline/scripts/sync-trends.sh', 'desc': 'Box -> repo trend sync, commit, push'},
+ {'id': 'tool.check-assets', 'path': 'pipeline/scripts/check-assets.py', 'desc': 'Storage/front-matter/duplicate/media checks (rule-59, rule-65); CI gate'},
  {'id': 'tool.build-index', 'path': 'pipeline/scripts/build-index.py', 'desc': 'Regenerates this index'},
  {'id': 'data.trends', 'path': 'research/trends/', 'desc': 'Daily digests YYYY-MM-DD/{digest.md,raw.json} + ingest.md'},
  {'id': 'dir.footage', 'path': 'media/footage/inbox/', 'desc': 'AirDrop inbox (media gitignored)'},
