@@ -36,7 +36,7 @@
    "v": "v21",
    "date": "2026-11-25",
    "dl": "DL-069",
-   "note": "Viết lại theo khung «bản chất» (script-v21-LOCKED.md); bản v4 cũ chuyển sang archive/v4-final/"
+   "note": "Viết lại theo khung «bản chất» (archive/script-v21-LOCKED.md); bản v4 cũ chuyển sang archive/v4-final/"
   },
   {
    "v": "v21",
@@ -150,7 +150,7 @@
    "text": "Thứ nhất thì clip trước nói rồi đó."
   }
  ],
- "fact_lock": "research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md + fact-package-v5.md F5",
+ "fact_lock": "research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md + content/archive/clip-05-hoc-mot-dem/archive/fact-package-v5.md F5",
  "parts": [
   {
    "id": "A",

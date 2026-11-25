@@ -508,7 +508,7 @@ def previous_hooks_ctas(cur_clip_no, exclude_file=None, same_clip_ok=False):
         for lst, t in ((hooks, h), (ctas, c)):
             key = (lab, tuple(norm(t)[:12]))
             if t.strip() and key not in seen: seen.add(key); lst.append((lab, t))
-    for f in sorted(glob.glob(os.path.join(REPO, "content/clips/*/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/clips/*/final/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/archive/*/*-LOCKED.md"))):
+    for f in sorted(glob.glob(os.path.join(REPO, "content/clips/*/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/clips/*/final/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/archive/*/*-LOCKED.md")) + glob.glob(os.path.join(REPO, "content/archive/*/archive/*-LOCKED.md"))):
         n = _clip_no(f)
         if n is None or (exclude_file and os.path.abspath(f) == os.path.abspath(exclude_file)): continue
         if cur_clip_no is not None and (n > cur_clip_no or (n == cur_clip_no and not same_clip_ok)): continue
@@ -550,10 +550,10 @@ def _l088_trend(clip_dir):
 
 def _l088_facts(clip_dir, extra=()):
     """L-088 (2) (Hiệp 21:47 qua News): clip có ràng buộc/kiểm fact của Deep Research — fact-package*/fact-check* trong thư mục clip
-    (gốc hoặc final/), research/fact-packages/*clip-NN*, hoặc file mà `fact_lock:` của bản nháp trỏ tới. Thiếu: ✖ từ clip-06, ⚠ ≤05."""
+    (gốc, final/ hoặc archive/), research/fact-packages/*clip-NN*, hoặc file mà `fact_lock:` của bản nháp trỏ tới. Thiếu: ✖ từ clip-06, ⚠ ≤05."""
     n = _clip_no(clip_dir); e = err if (n or 0) >= 6 else warn
     fs = []
-    for d in (clip_dir, os.path.join(clip_dir, "final")):
+    for d in (clip_dir, os.path.join(clip_dir, "final"), os.path.join(clip_dir, "archive")):  # archive/: nháp gốc đã dọn (luật 66)
         for pat in ("fact-package*.md", "fact-check*.md", "*fact-lock*.md", "dr-*.md"): fs += glob.glob(os.path.join(d, pat))
     if n is not None: fs += glob.glob(os.path.join(REPO, f"research/fact-packages/*clip-{n:02d}*.md"))
     fs += [p for p in extra if os.path.exists(p)]

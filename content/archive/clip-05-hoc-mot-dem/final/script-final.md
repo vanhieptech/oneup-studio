@@ -10,9 +10,9 @@ updated: 2026-11-25
 tags: [script, clip-05, dark, week-1, howtolivebetter-23.14, ban-chat]
 version: v21
 supersedes: archive/v4-final/script-final.md
-spec: final/spec.json (nguồn chuẩn; lời = script-v21-LOCKED.md)
+spec: final/spec.json (nguồn chuẩn; lời = archive/script-v21-LOCKED.md)
 template: templates/script.md (biến thể Độc thoại «bản chất», L-039)
-source: "HTB 23.14 (F5, fact-package-v5) · Roediger & Karpicke 2006 Exp1 (lock r15.2: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md)"
+source: "HTB 23.14 (F5, archive/fact-package-v5.md) · Roediger & Karpicke 2006 Exp1 (lock r15.2: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md)"
 fact_lock: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md
 format: "khung video phân tích «bản chất» (physical hook + Thứ nhất/Thứ hai/Và cuối cùng + demo nhập vai) + CTA hỏi chia sẻ"
 ---
