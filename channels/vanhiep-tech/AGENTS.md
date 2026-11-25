@@ -49,8 +49,9 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 3. Mac: đặt `a-roll.mp4`; bake-off cutout → `a-roll-cutout.mov` (`make-capcut-draft`)
 4. `capcut-cli compile` từ `capcut-spec.json` → CapCut store (hoặc `lab/out/` nếu app đang mở)
 5. CapCut Desktop: refine + VO + export
-6. Cutaway `cu-*` → `.mp4`; Overlay `ov-*` → `.mov` alpha, **no plate**
+6. Cutaway `cu-*` → `.mp4`; Overlay `ov-*` → `.mov` alpha, **no soft shadow/blur** (DL-069); optional opaque `hard-scrim` / CapCut `a-roll-blur` (DL-070)
 7. Cấm hồng / magenta / fuchsia
+8. `remove-background` chỉ cho A-roll cutout — **không** dùng để “sửa” overlay
 
 ## Media
 | Loại | Chỗ |
@@ -65,8 +66,11 @@ Mac: `/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/<clip-
 
 ## Brand + design (generate)
 - Tokens: `brand-tokens.json` + `tokens.css` + `frame.md` + generate gate trong `make-layer`
-- Overlay: canvas transparent, cấm glass board; piece fill OK; preview giữ alpha — cấm bake MP4 plate
+- Overlay: canvas transparent; cấm glass board; piece fill + **hard border** OK; **cấm** `box-shadow` / `text-shadow` / blur (CapCut = halo sương — DL-069)
+- Verify ov: `yuva*` + corners clear + soft-alpha mid-frame **&lt; 3%**
+- Preview giữ alpha — cấm bake MP4 plate
 - Safe-zone 1080×1920 · Be Vietnam Pro · Không logo / chibi / cam OneUp
+- UI overlays: floating pieces như `ov-d01` (toast/JWT/phone) — không text-card mỏng
 
 ## Cấm
 - `skills/make-video` comic cho kênh này
@@ -74,3 +78,5 @@ Mac: `/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/<clip-
 - CapCut từ cloud artifact / box path
 - Phụ thuộc CLI `render`/`export` làm bản ship (Desktop mới export)
 - Composite full talking-head-recut thay CapCut (HF cutout A-roll OK)
+- Soft shadow / blur trên `ov-*`; `remove-background` trên overlay ProRes
+- `cu-*` trên side track (main-track gap — CapCut kéo timeline)

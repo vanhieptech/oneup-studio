@@ -1,0 +1,666 @@
+{
+  "version": "0.9.0",
+  "target_path": null,
+  "overall_passed": true,
+  "overall_status": "passed",
+  "incomplete_scans": [],
+  "total_validators": 1,
+  "total_skipped": 0,
+  "total_advisory_skipped": 0,
+  "total_errors": 0,
+  "total_warnings": 6,
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 5,
+    "low": 1
+  },
+  "finding_counts": {
+    "raw_occurrences": 6,
+    "distinct_occurrences": 6,
+    "unique_findings": 6,
+    "duplicates_removed": 0,
+    "occurrences_grouped": 0,
+    "raw_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 1,
+      "info": 0
+    },
+    "unique_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 5,
+      "low": 1,
+      "info": 0
+    }
+  },
+  "finding_groups": [
+    {
+      "finding_id": "SEF-1c2c7c4eab45f12676f3",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_efficiency",
+      "message": "Deeply nested references in parameters.md",
+      "suggestion": "Keep references one level deep from SKILL.md",
+      "metadata": {
+        "dimension": "efficiency",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-49eba0c0df1426aad272",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-647938cbd1b1a0fa56fc",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_discoverability",
+      "message": "Description uses first/second person",
+      "suggestion": "Use third person: 'Processes files' not 'I can process'",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 15
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-e4a73c83072bf9c9aeb3",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-6d68dab37ccc357a6814",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "Instructions don't mention 'run_script'",
+      "suggestion": "Add explicit run_script() call examples",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-1f56e4b1c60833014ae8",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-740453e5661b3b5b6f1e",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "No documented scripts in table format",
+      "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-25f0925c715df84efa02",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-a01a82733ff61ca539bc",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_discoverability",
+      "message": "Description very long (333 chars, recommend 50-150)",
+      "suggestion": "Keep descriptions concise for progressive disclosure",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-532a4d89744736081049",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-e6bee2b3f281ff07e52f",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_discoverability",
+      "message": "Description contains vague words",
+      "suggestion": "Be specific about what this skill does",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 15
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-700f4fdf188d97f75804",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    }
+  ],
+  "message_counts": {
+    "informational": 0,
+    "independent_errors": 0,
+    "independent_warnings": 0
+  },
+  "skills": [
+    {
+      "name": "remotion-to-hyperframes",
+      "passed": true,
+      "issue_count": 6
+    }
+  ],
+  "contributors": [
+    {
+      "author": "Unknown",
+      "items": [
+        {
+          "name": "remotion-to-hyperframes",
+          "passed": true,
+          "issue_count": 6
+        }
+      ],
+      "total_items": 1,
+      "passed_count": 1,
+      "failed_count": 0,
+      "total_issues": 6
+    }
+  ],
+  "top_issues": [
+    {
+      "message": "No documented scripts in table format",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "remotion-to-hyperframes"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |"
+    },
+    {
+      "message": "Instructions don't mention 'run_script'",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "remotion-to-hyperframes"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add explicit run_script() call examples"
+    },
+    {
+      "message": "Description contains vague words",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "remotion-to-hyperframes"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Be specific about what this skill does"
+    },
+    {
+      "message": "Description uses first/second person",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "remotion-to-hyperframes"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Use third person: 'Processes files' not 'I can process'"
+    },
+    {
+      "message": "Deeply nested references in parameters.md",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "remotion-to-hyperframes"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep references one level deep from SKILL.md"
+    },
+    {
+      "message": "Description very long (333 chars, recommend 50-150)",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "remotion-to-hyperframes"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep descriptions concise for progressive disclosure"
+    }
+  ],
+  "results": [
+    {
+      "validator": "QUALITY",
+      "description": "Skill quality scoring across Correctness (35%), Discoverability (25%), Reliability (25%), and Efficiency (15%)",
+      "passed": true,
+      "status": "passed",
+      "skipped": false,
+      "skip_reason": null,
+      "incomplete_scans": [],
+      "summary": {
+        "files_scanned": 0,
+        "checks_performed": 1,
+        "errors": 0,
+        "warnings": 6,
+        "critical_count": 0,
+        "high_count": 0,
+        "medium_count": 5,
+        "low_count": 1
+      },
+      "finding_counts": {
+        "raw_occurrences": 6,
+        "distinct_occurrences": 6,
+        "unique_findings": 6,
+        "duplicates_removed": 0,
+        "occurrences_grouped": 0,
+        "raw_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 1,
+          "info": 0
+        },
+        "unique_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 5,
+          "low": 1,
+          "info": 0
+        }
+      },
+      "findings": [
+        {
+          "finding_id": "SEF-740453e5661b3b5b6f1e",
+          "occurrence_id": "SEO-25f0925c715df84efa02",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "No documented scripts in table format",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-6d68dab37ccc357a6814",
+          "occurrence_id": "SEO-1f56e4b1c60833014ae8",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "Instructions don't mention 'run_script'",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add explicit run_script() call examples",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-a01a82733ff61ca539bc",
+          "occurrence_id": "SEO-532a4d89744736081049",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_discoverability",
+          "message": "Description very long (333 chars, recommend 50-150)",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep descriptions concise for progressive disclosure",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-e6bee2b3f281ff07e52f",
+          "occurrence_id": "SEO-700f4fdf188d97f75804",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_discoverability",
+          "message": "Description contains vague words",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Be specific about what this skill does",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 15
+          }
+        },
+        {
+          "finding_id": "SEF-647938cbd1b1a0fa56fc",
+          "occurrence_id": "SEO-e4a73c83072bf9c9aeb3",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_discoverability",
+          "message": "Description uses first/second person",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Use third person: 'Processes files' not 'I can process'",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 15
+          }
+        },
+        {
+          "finding_id": "SEF-1c2c7c4eab45f12676f3",
+          "occurrence_id": "SEO-49eba0c0df1426aad272",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_efficiency",
+          "message": "Deeply nested references in parameters.md",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep references one level deep from SKILL.md",
+          "metadata": {
+            "dimension": "efficiency",
+            "deduction": 10
+          }
+        }
+      ],
+      "success_details": [
+        {
+          "check": "quality_score",
+          "message": "Score: 82.8/100 (Grade: B)",
+          "metadata": {
+            "overall_score": 82.8,
+            "grade": "B",
+            "skill_type": "hybrid"
+          }
+        }
+      ],
+      "legacy": {
+        "errors": [],
+        "warnings": [
+          "[QUALITY-MEDIUM] No documented scripts in table format in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "[QUALITY-MEDIUM] Instructions don't mention 'run_script' in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "[QUALITY-LOW] Description very long (333 chars, recommend 50-150) in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "[QUALITY-MEDIUM] Description contains vague words in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "[QUALITY-MEDIUM] Description uses first/second person in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md",
+          "[QUALITY-MEDIUM] Deeply nested references in parameters.md in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/remotion-to-hyperframes/SKILL.md"
+        ],
+        "messages": [
+          "[OK] quality_score: Score: 82.8/100 (Grade: B)"
+        ]
+      },
+      "tier1_required_checks": [
+        "code-integrity",
+        "license",
+        "lint",
+        "pii",
+        "quality",
+        "schema",
+        "security",
+        "unicode",
+        "version"
+      ],
+      "tier1_unscanned_paths": [],
+      "quality": {
+        "overall_score": 82.8,
+        "grade": "B",
+        "skill_type": "hybrid",
+        "skill_name": "remotion-to-hyperframes",
+        "dimensions": {
+          "correctness": {
+            "score": 80.0,
+            "weight": 0.35,
+            "issues_count": 2,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "No documented scripts in table format",
+                "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+                "deduction": 10
+              },
+              {
+                "severity": "warning",
+                "message": "Instructions don't mention 'run_script'",
+                "suggestion": "Add explicit run_script() call examples",
+                "deduction": 10
+              }
+            ]
+          },
+          "discoverability": {
+            "score": 65.0,
+            "weight": 0.25,
+            "issues_count": 3,
+            "issues": [
+              {
+                "severity": "info",
+                "message": "Description very long (333 chars, recommend 50-150)",
+                "suggestion": "Keep descriptions concise for progressive disclosure",
+                "deduction": 5
+              },
+              {
+                "severity": "warning",
+                "message": "Description contains vague words",
+                "suggestion": "Be specific about what this skill does",
+                "deduction": 15
+              },
+              {
+                "severity": "warning",
+                "message": "Description uses first/second person",
+                "suggestion": "Use third person: 'Processes files' not 'I can process'",
+                "deduction": 15
+              }
+            ]
+          },
+          "reliability": {
+            "score": 100.0,
+            "weight": 0.25,
+            "issues_count": 0,
+            "issues": []
+          },
+          "efficiency": {
+            "score": 90.0,
+            "weight": 0.15,
+            "issues_count": 1,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "Deeply nested references in parameters.md",
+                "suggestion": "Keep references one level deep from SKILL.md",
+                "deduction": 10
+              }
+            ]
+          }
+        },
+        "metrics": {
+          "total_tokens": 3064,
+          "estimated_tokens": 3064,
+          "estimate_method": "characters/4",
+          "recommended_max_tokens": 5000,
+          "frontmatter_tokens": 130,
+          "instructions_tokens": 2931,
+          "script_count": 3,
+          "has_examples": true,
+          "has_error_handling": true,
+          "has_frontmatter": true,
+          "has_instructions": false,
+          "has_scripts": true,
+          "has_lib_module": false
+        }
+      },
+      "publication_target": {
+        "skill_name": "remotion-to-hyperframes",
+        "skill_digest": "sha256:550a5bc26f430c01a287a35379f918a270901eafbf1c90cb8cb3cde490ac2412",
+        "skill_digest_algorithm": "skill-evaluator-source-tree/2"
+      },
+      "publication_evidence": {
+        "schema_version": 1,
+        "producer": "skillevaluator.tier1",
+        "tier": 1,
+        "check_id": "quality"
+      }
+    }
+  ],
+  "benchmark_policy": {
+    "tier2_required": true,
+    "tier3_required": true
+  },
+  "publication_status": "incomplete",
+  "publication": {
+    "status": "incomplete",
+    "eligible": false,
+    "reasons": [
+      "Tier 1 did not run every required check: code-integrity, license, lint, pii, schema, security, unicode, version.",
+      "Required recognized built-in Tier 2 evidence is missing.",
+      "Tier 3 lacks publication-complete execution evidence."
+    ],
+    "tier3": {
+      "status": "not_run",
+      "evidence_complete": false,
+      "execution_status": "not_run",
+      "verdict": "not_run",
+      "reason": "Tier 3 lacks publication-complete execution evidence."
+    }
+  },
+  "quality_config": {
+    "source": "packaged",
+    "file": null,
+    "digest": "sha256:298ff2bf62132c8154217b7aa59fc1fd04f28cf75372f55620a2cbcd951d6549",
+    "min_score": 70
+  },
+  "evaluated_source": null,
+  "quality_summary": [
+    {
+      "overall_score": 82.8,
+      "grade": "B",
+      "skill_type": "hybrid",
+      "skill_name": "remotion-to-hyperframes",
+      "dimensions": {
+        "correctness": {
+          "score": 80.0,
+          "weight": 0.35,
+          "issues_count": 2,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "No documented scripts in table format",
+              "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+              "deduction": 10
+            },
+            {
+              "severity": "warning",
+              "message": "Instructions don't mention 'run_script'",
+              "suggestion": "Add explicit run_script() call examples",
+              "deduction": 10
+            }
+          ]
+        },
+        "discoverability": {
+          "score": 65.0,
+          "weight": 0.25,
+          "issues_count": 3,
+          "issues": [
+            {
+              "severity": "info",
+              "message": "Description very long (333 chars, recommend 50-150)",
+              "suggestion": "Keep descriptions concise for progressive disclosure",
+              "deduction": 5
+            },
+            {
+              "severity": "warning",
+              "message": "Description contains vague words",
+              "suggestion": "Be specific about what this skill does",
+              "deduction": 15
+            },
+            {
+              "severity": "warning",
+              "message": "Description uses first/second person",
+              "suggestion": "Use third person: 'Processes files' not 'I can process'",
+              "deduction": 15
+            }
+          ]
+        },
+        "reliability": {
+          "score": 100.0,
+          "weight": 0.25,
+          "issues_count": 0,
+          "issues": []
+        },
+        "efficiency": {
+          "score": 90.0,
+          "weight": 0.15,
+          "issues_count": 1,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "Deeply nested references in parameters.md",
+              "suggestion": "Keep references one level deep from SKILL.md",
+              "deduction": 10
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "total_tokens": 3064,
+        "estimated_tokens": 3064,
+        "estimate_method": "characters/4",
+        "recommended_max_tokens": 5000,
+        "frontmatter_tokens": 130,
+        "instructions_tokens": 2931,
+        "script_count": 3,
+        "has_examples": true,
+        "has_error_handling": true,
+        "has_frontmatter": true,
+        "has_instructions": false,
+        "has_scripts": true,
+        "has_lib_module": false
+      }
+    }
+  ],
+  "generated_at": "2026-11-13T18:01:07.312277+00:00"
+}

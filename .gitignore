@@ -40,3 +40,17 @@ research/reference-videos/**/*.mp4
 # CapCut CLI compiled drafts (local)
 channels/vanhiep-tech/lab/out/
 
+# Raw camera / phone drops (keep under media/ + MANIFEST)
+channels/vanhiep-tech/clips/*.MOV
+channels/vanhiep-tech/clips/*.mov
+channels/vanhiep-tech/clips/*.MP4
+channels/vanhiep-tech/clips/*.mp4
+
+
+# Motion skill research clones (local Mac; not vendored)
+resources/refs/motion-video-skill/
+resources/refs/skill-motion-graphic/
+resources/refs/motion-graphics-skill/
+resources/refs/remotion-motion-graphics-skill/
+resources/refs/claude-motion-skills/
+resources/refs/iart-motion-skills/

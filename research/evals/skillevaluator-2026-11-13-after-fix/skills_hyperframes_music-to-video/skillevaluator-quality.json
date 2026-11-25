@@ -1,0 +1,666 @@
+{
+  "version": "0.9.0",
+  "target_path": null,
+  "overall_passed": true,
+  "overall_status": "passed",
+  "incomplete_scans": [],
+  "total_validators": 1,
+  "total_skipped": 0,
+  "total_advisory_skipped": 0,
+  "total_errors": 0,
+  "total_warnings": 6,
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 4,
+    "low": 2
+  },
+  "finding_counts": {
+    "raw_occurrences": 6,
+    "distinct_occurrences": 6,
+    "unique_findings": 6,
+    "duplicates_removed": 0,
+    "occurrences_grouped": 0,
+    "raw_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 4,
+      "low": 2,
+      "info": 0
+    },
+    "unique_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 4,
+      "low": 2,
+      "info": 0
+    }
+  },
+  "finding_groups": [
+    {
+      "finding_id": "SEF-0f3cde56a46498377f1a",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_discoverability",
+      "message": "Description doesn't mention WHEN to use this skill",
+      "suggestion": "Add trigger context: 'Use for...', 'When you need to...'",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-a7e5bfc632c17a229c70",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-1e93a59f48983d3ea497",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_efficiency",
+      "message": "Deeply nested references in storyboard-format.md",
+      "suggestion": "Keep references one level deep from SKILL.md",
+      "metadata": {
+        "dimension": "efficiency",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-56f514feb7587e66c92e",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-20804e4ce45a7deeab12",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_efficiency",
+      "message": "Large skill (~5027 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+      "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+      "metadata": {
+        "dimension": "efficiency",
+        "deduction": 15
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-f8ab9b14fe95427057b1",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-6d68dab37ccc357a6814",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "Instructions don't mention 'run_script'",
+      "suggestion": "Add explicit run_script() call examples",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-d9f74c68164093b5eb8c",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-740453e5661b3b5b6f1e",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_correctness",
+      "message": "No documented scripts in table format",
+      "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+      "metadata": {
+        "dimension": "correctness",
+        "deduction": 10
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-b12cafd653fe83e17768",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-7d468df6c340fcdfd918",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_discoverability",
+      "message": "Description very long (394 chars, recommend 50-150)",
+      "suggestion": "Keep descriptions concise for progressive disclosure",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-1f2c7efac9f5551b6c2a",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    }
+  ],
+  "message_counts": {
+    "informational": 0,
+    "independent_errors": 0,
+    "independent_warnings": 0
+  },
+  "skills": [
+    {
+      "name": "music-to-video",
+      "passed": true,
+      "issue_count": 6
+    }
+  ],
+  "contributors": [
+    {
+      "author": "Unknown",
+      "items": [
+        {
+          "name": "music-to-video",
+          "passed": true,
+          "issue_count": 6
+        }
+      ],
+      "total_items": 1,
+      "passed_count": 1,
+      "failed_count": 0,
+      "total_issues": 6
+    }
+  ],
+  "top_issues": [
+    {
+      "message": "No documented scripts in table format",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "music-to-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |"
+    },
+    {
+      "message": "Instructions don't mention 'run_script'",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "music-to-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add explicit run_script() call examples"
+    },
+    {
+      "message": "Large skill (~5027 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "music-to-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory"
+    },
+    {
+      "message": "Deeply nested references in storyboard-format.md",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "music-to-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep references one level deep from SKILL.md"
+    },
+    {
+      "message": "Description very long (394 chars, recommend 50-150)",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "music-to-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep descriptions concise for progressive disclosure"
+    },
+    {
+      "message": "Description doesn't mention WHEN to use this skill",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "music-to-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Add trigger context: 'Use for...', 'When you need to...'"
+    }
+  ],
+  "results": [
+    {
+      "validator": "QUALITY",
+      "description": "Skill quality scoring across Correctness (35%), Discoverability (25%), Reliability (25%), and Efficiency (15%)",
+      "passed": true,
+      "status": "passed",
+      "skipped": false,
+      "skip_reason": null,
+      "incomplete_scans": [],
+      "summary": {
+        "files_scanned": 0,
+        "checks_performed": 1,
+        "errors": 0,
+        "warnings": 6,
+        "critical_count": 0,
+        "high_count": 0,
+        "medium_count": 4,
+        "low_count": 2
+      },
+      "finding_counts": {
+        "raw_occurrences": 6,
+        "distinct_occurrences": 6,
+        "unique_findings": 6,
+        "duplicates_removed": 0,
+        "occurrences_grouped": 0,
+        "raw_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 4,
+          "low": 2,
+          "info": 0
+        },
+        "unique_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 4,
+          "low": 2,
+          "info": 0
+        }
+      },
+      "findings": [
+        {
+          "finding_id": "SEF-740453e5661b3b5b6f1e",
+          "occurrence_id": "SEO-b12cafd653fe83e17768",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "No documented scripts in table format",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-6d68dab37ccc357a6814",
+          "occurrence_id": "SEO-d9f74c68164093b5eb8c",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_correctness",
+          "message": "Instructions don't mention 'run_script'",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add explicit run_script() call examples",
+          "metadata": {
+            "dimension": "correctness",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-7d468df6c340fcdfd918",
+          "occurrence_id": "SEO-1f2c7efac9f5551b6c2a",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_discoverability",
+          "message": "Description very long (394 chars, recommend 50-150)",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep descriptions concise for progressive disclosure",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-0f3cde56a46498377f1a",
+          "occurrence_id": "SEO-a7e5bfc632c17a229c70",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_discoverability",
+          "message": "Description doesn't mention WHEN to use this skill",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Add trigger context: 'Use for...', 'When you need to...'",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 10
+          }
+        },
+        {
+          "finding_id": "SEF-20804e4ce45a7deeab12",
+          "occurrence_id": "SEO-f8ab9b14fe95427057b1",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_efficiency",
+          "message": "Large skill (~5027 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+          "metadata": {
+            "dimension": "efficiency",
+            "deduction": 15
+          }
+        },
+        {
+          "finding_id": "SEF-1e93a59f48983d3ea497",
+          "occurrence_id": "SEO-56f514feb7587e66c92e",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_efficiency",
+          "message": "Deeply nested references in storyboard-format.md",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep references one level deep from SKILL.md",
+          "metadata": {
+            "dimension": "efficiency",
+            "deduction": 10
+          }
+        }
+      ],
+      "success_details": [
+        {
+          "check": "quality_score",
+          "message": "Score: 85.5/100 (Grade: B)",
+          "metadata": {
+            "overall_score": 85.5,
+            "grade": "B",
+            "skill_type": "script-based"
+          }
+        }
+      ],
+      "legacy": {
+        "errors": [],
+        "warnings": [
+          "[QUALITY-MEDIUM] No documented scripts in table format in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "[QUALITY-MEDIUM] Instructions don't mention 'run_script' in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "[QUALITY-LOW] Description very long (394 chars, recommend 50-150) in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "[QUALITY-LOW] Description doesn't mention WHEN to use this skill in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "[QUALITY-MEDIUM] Large skill (~5027 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md",
+          "[QUALITY-MEDIUM] Deeply nested references in storyboard-format.md in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/music-to-video/SKILL.md"
+        ],
+        "messages": [
+          "[OK] quality_score: Score: 85.5/100 (Grade: B)"
+        ]
+      },
+      "tier1_required_checks": [
+        "code-integrity",
+        "license",
+        "lint",
+        "pii",
+        "quality",
+        "schema",
+        "security",
+        "unicode",
+        "version"
+      ],
+      "tier1_unscanned_paths": [],
+      "quality": {
+        "overall_score": 85.5,
+        "grade": "B",
+        "skill_type": "script-based",
+        "skill_name": "music-to-video",
+        "dimensions": {
+          "correctness": {
+            "score": 80.0,
+            "weight": 0.35,
+            "issues_count": 2,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "No documented scripts in table format",
+                "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+                "deduction": 10
+              },
+              {
+                "severity": "warning",
+                "message": "Instructions don't mention 'run_script'",
+                "suggestion": "Add explicit run_script() call examples",
+                "deduction": 10
+              }
+            ]
+          },
+          "discoverability": {
+            "score": 85.0,
+            "weight": 0.25,
+            "issues_count": 2,
+            "issues": [
+              {
+                "severity": "info",
+                "message": "Description very long (394 chars, recommend 50-150)",
+                "suggestion": "Keep descriptions concise for progressive disclosure",
+                "deduction": 5
+              },
+              {
+                "severity": "info",
+                "message": "Description doesn't mention WHEN to use this skill",
+                "suggestion": "Add trigger context: 'Use for...', 'When you need to...'",
+                "deduction": 10
+              }
+            ]
+          },
+          "reliability": {
+            "score": 100.0,
+            "weight": 0.25,
+            "issues_count": 0,
+            "issues": []
+          },
+          "efficiency": {
+            "score": 75.0,
+            "weight": 0.15,
+            "issues_count": 2,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "Large skill (~5027 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+                "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+                "deduction": 15
+              },
+              {
+                "severity": "warning",
+                "message": "Deeply nested references in storyboard-format.md",
+                "suggestion": "Keep references one level deep from SKILL.md",
+                "deduction": 10
+              }
+            ]
+          }
+        },
+        "metrics": {
+          "total_tokens": 5027,
+          "estimated_tokens": 5027,
+          "estimate_method": "characters/4",
+          "recommended_max_tokens": 5000,
+          "frontmatter_tokens": 141,
+          "instructions_tokens": 4884,
+          "script_count": 1,
+          "has_examples": true,
+          "has_error_handling": true,
+          "has_frontmatter": true,
+          "has_instructions": false,
+          "has_scripts": true,
+          "has_lib_module": false
+        }
+      },
+      "publication_target": {
+        "skill_name": "music-to-video",
+        "skill_digest": "sha256:0925c4533c4bdc32ed7f877b0e087399aaf518f48341b4cfd5efbe9faa50e8cf",
+        "skill_digest_algorithm": "skill-evaluator-source-tree/2"
+      },
+      "publication_evidence": {
+        "schema_version": 1,
+        "producer": "skillevaluator.tier1",
+        "tier": 1,
+        "check_id": "quality"
+      }
+    }
+  ],
+  "benchmark_policy": {
+    "tier2_required": true,
+    "tier3_required": true
+  },
+  "publication_status": "incomplete",
+  "publication": {
+    "status": "incomplete",
+    "eligible": false,
+    "reasons": [
+      "Tier 1 did not run every required check: code-integrity, license, lint, pii, schema, security, unicode, version.",
+      "Required recognized built-in Tier 2 evidence is missing.",
+      "Tier 3 lacks publication-complete execution evidence."
+    ],
+    "tier3": {
+      "status": "not_run",
+      "evidence_complete": false,
+      "execution_status": "not_run",
+      "verdict": "not_run",
+      "reason": "Tier 3 lacks publication-complete execution evidence."
+    }
+  },
+  "quality_config": {
+    "source": "packaged",
+    "file": null,
+    "digest": "sha256:298ff2bf62132c8154217b7aa59fc1fd04f28cf75372f55620a2cbcd951d6549",
+    "min_score": 70
+  },
+  "evaluated_source": null,
+  "quality_summary": [
+    {
+      "overall_score": 85.5,
+      "grade": "B",
+      "skill_type": "script-based",
+      "skill_name": "music-to-video",
+      "dimensions": {
+        "correctness": {
+          "score": 80.0,
+          "weight": 0.35,
+          "issues_count": 2,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "No documented scripts in table format",
+              "suggestion": "Add '## Available Scripts' with table: | Script | Purpose | Arguments |",
+              "deduction": 10
+            },
+            {
+              "severity": "warning",
+              "message": "Instructions don't mention 'run_script'",
+              "suggestion": "Add explicit run_script() call examples",
+              "deduction": 10
+            }
+          ]
+        },
+        "discoverability": {
+          "score": 85.0,
+          "weight": 0.25,
+          "issues_count": 2,
+          "issues": [
+            {
+              "severity": "info",
+              "message": "Description very long (394 chars, recommend 50-150)",
+              "suggestion": "Keep descriptions concise for progressive disclosure",
+              "deduction": 5
+            },
+            {
+              "severity": "info",
+              "message": "Description doesn't mention WHEN to use this skill",
+              "suggestion": "Add trigger context: 'Use for...', 'When you need to...'",
+              "deduction": 10
+            }
+          ]
+        },
+        "reliability": {
+          "score": 100.0,
+          "weight": 0.25,
+          "issues_count": 0,
+          "issues": []
+        },
+        "efficiency": {
+          "score": 75.0,
+          "weight": 0.15,
+          "issues_count": 2,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "Large skill (~5027 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+              "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+              "deduction": 15
+            },
+            {
+              "severity": "warning",
+              "message": "Deeply nested references in storyboard-format.md",
+              "suggestion": "Keep references one level deep from SKILL.md",
+              "deduction": 10
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "total_tokens": 5027,
+        "estimated_tokens": 5027,
+        "estimate_method": "characters/4",
+        "recommended_max_tokens": 5000,
+        "frontmatter_tokens": 141,
+        "instructions_tokens": 4884,
+        "script_count": 1,
+        "has_examples": true,
+        "has_error_handling": true,
+        "has_frontmatter": true,
+        "has_instructions": false,
+        "has_scripts": true,
+        "has_lib_module": false
+      }
+    }
+  ],
+  "generated_at": "2026-11-13T18:01:06.132146+00:00"
+}

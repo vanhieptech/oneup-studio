@@ -1,0 +1,99 @@
+      SkillEvaluator Validation Results      
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details              ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  FAIL  │ 1 errors, 8 warnings │
+└───────────┴────────┴──────────────────────┘
+
+╭─────────────────╮
+│ Failure Details │
+╰─────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 83.2/100 (Grade: B)
+  Skill Type: guide-only
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ trend-dig… │   B   │  83.2 │         70 │        90 │         85 │       100 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[FAIL] Validation failed
+
+Summary:
+  • Checks performed: 1
+  • Errors: 1 (1 high)
+  • Warnings: 8
+
+Issues:
+  1. [QUALITY-HIGH] Invalid name format: 'Trend digest' 
+(lowercase/numbers/hyphens only)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_correctness
+     Fix:     Use only lowercase letters, numbers, and hyphens
+
+  2. [QUALITY-LOW] No examples provided
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add example usage with code blocks
+
+  3. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  4. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  5. [QUALITY-LOW] Description very long (535 chars, recommend 50-150)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Keep descriptions concise for progressive disclosure
+
+  6. [QUALITY-LOW] No '## Purpose' section
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  7. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  8. [QUALITY-LOW] No limitations documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  9. [QUALITY-LOW] No troubleshooting section documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/trend-digest/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+
+[FAIL] Changes required
+Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Not eligible
+
+json report: 
+/Users/macbook/me/projects/oneup-studio/research/evals/skillevaluator-2026-11-13
+/skills_trend-digest/skillevaluator-quality.json
+Error: quality check failed

@@ -55,3 +55,5 @@ Mid-form · dual ratio · talking-head-recut full composite · CLI final export 
 | 2026-11-08 | Full layer pack; local Mac only |
 | 2026-11-08 | Grill CapCut CLI: compile V1.1 allowed; dual A-roll; cutout bake-off; `make-capcut-draft` |
 | 2026-11-08 | `compile --check` OK; draft viết `lab/out/` (CapCut app đang mở — chưa đẩy store). Chờ A-roll thật cho bake-off |
+| 2026-11-08 | A-roll thật: `copy_F3329B9A-….MOV` → `media/.../a-roll.mp4` (56.2s 1080×1920@30); timeline scale; HF bake-off 12s sample OK; full cutout + CapCut matting pending |
+| 2026-11-08 | **DL-069:** overlay halo = soft CSS shadow soft-alpha, không phải thiếu remove-bg. Gate soft-alpha &lt;3%; cấm box/text-shadow trên ov-*; skill/frame/AGENTS updated |

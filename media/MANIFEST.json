@@ -559,39 +559,39 @@
  },
  {
   "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4",
-  "size": 1238465,
-  "sha256": "1c60bb0b5768dd1bf304b227e8cc873dd17f1eb39629eb8ec7d2c4a42f70e4a1",
-  "source": "hyperframes local Mac render 2026-11-08"
+  "size": 1600774,
+  "sha256": "a5c4f60fc8845dbb34e4675e42f6b9312e3efd6ef5a5be2375a7d58e5d6f3c81",
+  "source": "HF script-synced motion explain re-render 2026-11-08"
  },
  {
   "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov",
-  "size": 130668768,
-  "sha256": "bbcf8fd7fd7545d8a287af35d83820387b870bb0092cc301afbd02315bed7194",
-  "source": "hyperframes local Mac render 2026-11-08"
+  "size": 93835866,
+  "sha256": "58767e3ce8ee34f59cf04e1fb9e719bc95e03589eed24645a49b3dbfd4350840",
+  "source": "HF breath pad cluster≥580 DL-071 fix"
  },
  {
   "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-hook.mov",
-  "size": 40850644,
-  "sha256": "c8edbaa0ea46b8cef2761ea976f375858ac82ca6d72cade729d10f2eed41e3bc",
-  "source": "hyperframes local Mac render 2026-11-08"
+  "size": 52100606,
+  "sha256": "0e8bef8a3caa7ebf46cdc3ca0dfc1ef96fd93ca6b0fa21c92c6f6d2a14ee53e4",
+  "source": "HF breath pad cluster≥580 DL-071 fix"
  },
  {
   "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov",
-  "size": 26676180,
-  "sha256": "23606cbcecc05cf2fbe63a43f61c6e560d7e87d950c0702316472fe01fa09038",
-  "source": "hyperframes local Mac render 2026-11-08"
+  "size": 42192538,
+  "sha256": "b94b6d4f1aea554dc439bd354dcf90fdbb1a575b555b3ad0ab108ba1ea7524b7",
+  "source": "HF breath pad cluster≥580 DL-071 fix"
  },
  {
   "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-q.mov",
-  "size": 60635864,
-  "sha256": "7304bf71878ab1c3f57008d0c89bfa5ec5b7b39d2f88a608580f2705678d1de3",
-  "source": "hyperframes local Mac render 2026-11-08"
+  "size": 84746820,
+  "sha256": "5c0017671a9698382bee1bf5df9ee7453ac41ede25438daafb9801eb66210e6b",
+  "source": "HF breath pad cluster≥580 DL-071 fix"
  },
  {
   "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll.mp4",
-  "size": 190981,
-  "sha256": "72c24d7ed4a3ba928b2a4a98260fbeef59e5cb34927a8391648ee3fcd59622bd",
-  "source": "placeholder slate until real A-roll (grill Q14B)"
+  "size": 57453553,
+  "sha256": "7168f793bef0e0cfe3894ca82bda23e1db7178cca7b4051ce579144f98a1542f",
+  "source": "talking-head from clips/copy_F3329B9A…MOV → 1080x1920@30 (2026-11-08)"
  },
  {
   "path": "media/clips/clip-05-hoc-mot-dem/clip-05-final.mp4",
@@ -604,5 +604,29 @@
   "size": 9687510,
   "sha256": "ccbd688e7596adb229fc668c5b1163c27282106011236c67bfbf7be22aed7404",
   "source": "content/archive/clip-05-hoc-mot-dem/final/out/clip-05-final.mp4 (scale 720)"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll-source.MOV",
+  "size": 203377287,
+  "sha256": "0e4f23894b53837be4b8fc71448f6f92925ffd5d12649a98ee0b5b15f702affc",
+  "source": "archive of copy_F3329B9A-63B0-4A97-9E7D-4B411D4DCE5C.MOV (4K60 HEVC)"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll-cutout.mov",
+  "size": 3399119089,
+  "sha256": "bdd7f8edd07d99fb950814cb38a1e34778b7783e7e6702a374f87f614934da44",
+  "source": "HF remove-background CoreML ProRes 4444 full A-roll 2026-11-08 (~8m7s)"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll-bakeoff-12s.mp4",
+  "size": 12280845,
+  "sha256": "b50b77520d7fc88ca6dbbf340b969b68ca186a6f35cc4f0050461577bb0eb218",
+  "source": "12s slice ss=8 from a-roll.mp4 for cutout bake-off"
+ },
+ {
+  "path": "media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll-cutout-bakeoff-12s.mov",
+  "size": 734519008,
+  "sha256": "4468dda2ddea0ab43d4e7af6e9b26bb2f4ca8bc9d1a91686d7749c0e5698187c",
+  "source": "HF remove-background bake-off sample 12s CoreML ProRes 2026-11-08"
  }
 ]

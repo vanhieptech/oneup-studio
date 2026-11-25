@@ -89,6 +89,7 @@ tags: [index, retrieval]
 | clip-05.post-checklist | doc | ready | `content/archive/clip-05-hoc-mot-dem/archive/v4-final/post-checklist.md` | Checklist đăng clip-05 v4 (đánh dấu khi xong) |
 | clip-05.post | post-package | bộ final v4, chờ Rule Reviewer soát phần chữ + Hiệp duyệt. CHƯA ĐĂNG. | `content/archive/clip-05-hoc-mot-dem/archive/v4-final/post.md` | Bộ final đăng clip-05 v4 «Học dồn một đêm» |
 | clip-05.script-final | script | final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3) | `content/archive/clip-05-hoc-mot-dem/archive/v4-final/script-final.md` | clip-05 «Học dồn một đêm» — script final |
+| clip-05.script-v5-draft | script | draft-not-approved | `content/archive/clip-05-hoc-mot-dem/archive/v4-final/script-v5-draft.md` | Clip 05 — Đọc lại hay tự nhớ? |
 | content.archive.clip-05-hoc-mot-dem.archive.v4-final.visual-plan-v4 | visual-plan | ready | `content/archive/clip-05-hoc-mot-dem/archive/v4-final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
 | content.archive.clip-05-hoc-mot-dem.evidence-lines-v10 | None | None | `content/archive/clip-05-hoc-mot-dem/evidence-lines-v10.md` | Câu dẫn chứng cho clip-05 v10 (Deep Research) |
 | content.archive.clip-05-hoc-mot-dem.factcheck-script-v9r92 | None | None | `content/archive/clip-05-hoc-mot-dem/factcheck-script-v9r92.md` | Deep Research soát fact clip-05 v9 r9.2 |
@@ -182,6 +183,7 @@ tags: [index, retrieval]
 | content.clips.clip-06-bong-hoa-chua-no.script-v1-draft-opencreator | None | DRAFT r1.2, vá 2 theo review-script-v1r11 (9e2e273): S5 bỏ vế hỏi lửng, đưa «vào lúc cố định» vào thiết kế nghiên cứu (cẩm nang 4.12: làm mỗi ngày trong bối cảnh cố định); S7 bỏ «miễn», rút từ chính thiết kế đó; S10 «có thể» thay «sẽ có ngày». Chưa Chốt, không giọng/render. | `content/clips/clip-06-bong-hoa-chua-no/script-v1-draft-opencreator.md` | clip-06 v1 r1.2 — lời thoại theo beat |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
+| sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
 | sample-f5n | sample | ready | `content/samples/sample-f5n/README.md` | sample-f5n (DL-039): F5 v5 naturalness markup |
 | sample-full-w5 | sample | internal (không đăng) | `content/samples/sample-full-w5/README.md` | Sample tổng hợp (tuần 5+, nội bộ): comic + giọng Omi + explainer |
@@ -254,6 +256,7 @@ tags: [index, retrieval]
 | research.anidoodle | reference | ready | `research/references/anidoodle-notes.md` | anidoodle → Remotion doodle draw-on (comic shorts) |
 | research.doodle-audit | audit | "kết luận: zero-doodle cho b06; cổng doodle đề xuất, CHƯA áp vào lessons/SKILL — chờ Hiệp duyệt" | `research/references/doodle-audit.md` | Doodle audit — animation cũ vẫn đẹp hơn |
 | research.doodle-style | reference | awaiting-hiep-pick | `research/references/doodle-style-research.md` | Doodle style research — đưa ý tưởng trước, Hiệp chọn mới làm |
+| research.motion-skills-catalog | reference | ready | `research/references/motion-skills-catalog.md` | Motion skills catalog |
 | research.motionmaxxing | reference | ready | `research/references/motionmaxxing-notes.md` | motionmaxxing → Remotion mapping (comic shorts) |
 | research.script-craft-opencreator-2026-10-20 | research | draft | `research/script-craft-opencreator-2026-10-20.md` | Viết script TikTok — phần bổ sung (OpenCreator) |
 | research.script-writer-prompt | procedure | draft — chờ Rule Reviewer soát, chưa thay templates/script.md | `research/script-writer-prompt.md` | Prompt viết script @hi.oneup |
@@ -322,8 +325,22 @@ tags: [index, retrieval]
 | refs | reference | active | `resources/refs/README.md` | Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo) |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/plugins/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
 | skill.anidoodle | skill | active | `resources/refs/anidoodle/skills/anidoodle/SKILL.md` | anidoodle |
+| skill.awesome-ai-motion | skill | active | `resources/refs/awesome-ai-motion/SKILL.md` | awesome-ai-motion |
+| skill.motion-graphics-skill | skill | active | `resources/refs/motion-graphics-skill/DESIGN.md` | motion-graphics |
+| skill.motion-graphics | skill | active | `resources/refs/motion-graphics-skill/skills/motion-graphics/SKILL.md` | motion-graphics |
+| skill.motion-video-skill | skill | active | `resources/refs/motion-video-skill/SKILL.md` | motion-video |
 | refs.motionmaxxing.integration | vendor-note | active | `resources/refs/motionmaxxing/INTEGRATION.md` | motionmaxxing — vendored copy + OneUp integration |
 | skill.motionmaxxing | skill | active | `resources/refs/motionmaxxing/SKILL.md` | motionmaxxing |
+| skill.article-highlights | skill | active | `resources/refs/remotion-motion-graphics-skill/skills/article-highlights/SKILL.md` | "article-highlights" |
+| skill.cinematic-camera | skill | active | `resources/refs/remotion-motion-graphics-skill/skills/cinematic-camera/SKILL.md` | "cinematic-camera" |
+| skill.motion-graphics | skill | active | `resources/refs/remotion-motion-graphics-skill/skills/motion-graphics/SKILL.md` | "motion-graphics" |
+| skill.terminal-inserts | skill | active | `resources/refs/remotion-motion-graphics-skill/skills/terminal-inserts/SKILL.md` | "terminal-inserts" |
+| skill.skill-motion-graphic | skill | active | `resources/refs/skill-motion-graphic/SKILL.md` | "motion-graphic" |
+| skill.skill | skill | active | `resources/refs/transitions.dev/agent/skill/SKILL.md` | transitions-agent |
+| skill.refine-live | skill | active | `resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md` | refine-live |
+| skill.transitions-dev | skill | active | `resources/refs/transitions.dev/skills/transitions-dev/SKILL.md` | transitions-dev |
+| skill.transitions-polish | skill | active | `resources/refs/transitions.dev/skills/transitions-polish/SKILL.md` | transitions-polish |
+| skill.transitions-ui-generation | skill | active | `resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md` | transitions-ui-generation |
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | ready | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |

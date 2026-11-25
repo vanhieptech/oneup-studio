@@ -1,0 +1,120 @@
+             SkillEvaluator Validation Results              
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details                             ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  PASS  │ 1 checks passed; quality B 85.0/100 │
+└───────────┴────────┴─────────────────────────────────────┘
+
+╭───────────────────────╮
+│ Non-blocking Findings │
+╰───────────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 85.0/100 (Grade: B)
+  Skill Type: guide-only
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ faceless-… │   B   │  85.0 │         85 │        85 │         85 │        85 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[PASS] Validation passed
+
+Summary:
+  • Checks performed: 1
+
+Details:
+  [OK] quality_score: Score: 85.0/100 (Grade: B) (overall_score=85.0, grade=B, 
+skill_type=guide-only)
+Issues:
+  1. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'version'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_correctness
+     Fix:     Add 'version' to frontmatter — Semantic version (e.g., "1.0.0")
+
+  2. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  3. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  4. [QUALITY-LOW] Description very long (387 chars, recommend 50-150)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_discoverability
+     Fix:     Keep descriptions concise for progressive disclosure
+
+  5. [QUALITY-LOW] Broad description without negative triggers may cause 
+over-triggering
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_discoverability
+     Fix:     Add boundary phrases like 'Do NOT use for...'
+
+  6. [QUALITY-LOW] No '## Purpose' section
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  7. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  8. [QUALITY-LOW] No limitations documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  9. [QUALITY-LOW] No troubleshooting section documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+  10. [QUALITY-MEDIUM] Large skill (~7709 estimated tokens at 4 characters per 
+token, recommended max <5000; a real tokenizer may count more). Per 
+agentskills.io, SKILL.md should be concise (~500 lines) — large skill bodies 
+increase token cost after invocation; long or unfocused top-level descriptions 
+can degrade agent routing accuracy
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/faceless-explainer/SK
+ILL.md
+     Check:   quality_efficiency
+     Fix:     Keep required sections concise; move detailed examples, reference 
+material, and supporting docs to the references/ directory
+
+
+[PASS] Passed required checks
+Tier 1: 1 of 1 checks passed; 0 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+
+json report: 
+/Users/macbook/me/projects/oneup-studio/research/evals/skillevaluator-2026-11-13
+/skills_hyperframes_faceless-explainer/skillevaluator-quality.json

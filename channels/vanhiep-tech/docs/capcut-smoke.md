@@ -23,7 +23,13 @@ tags: [capcut, vanhiep-tech, local]
 | `a-roll.mp4` | A-full (thật hoặc placeholder) |
 | `a-roll-cutout.mov` | A-cutout (sau HF remove-background) |
 | `cu-01.mp4` | Cutaway |
-| `ov-hook.mov` / `ov-d01.mov` / `ov-l3.mov` / `ov-q.mov` | Overlay alpha |
+| `ov-hook.mov` / `ov-d01.mov` / `ov-l3.mov` / `ov-q.mov` | Overlay alpha (hard-edge; optional opaque `hard-scrim` — DL-069/070) |
+
+## Before compile — overlay sanity
+- `pix_fmt` contains `yuva`
+- Mid-frame corners `(0,0,0,0)`
+- Soft-alpha sampled **&lt; 3%** (`make-layer` step 10). If CapCut shows misty halo around cards → **not** matting/remove-bg; strip CSS shadows and re-render.
+- Want A-roll soft behind UI? CapCut mask + Blur on **A-roll** (`a-roll-blur`), not on overlay MOV (DL-070).
 
 ## Path A — CLI compile (V1.1)
 1. Đóng CapCut (hoặc compile ra `lab/out/` rồi import).
@@ -44,4 +50,4 @@ tags: [capcut, vanhiep-tech, local]
 3. Fail alpha → PLAN Revisions; tạm MP4 solid brand (không hồng)
 
 ## Cutout bake-off
-Xem `make-capcut-draft` — HF `remove-background` vs CapCut `matting`; edge thắng.
+Xem `make-capcut-draft` — HF `remove-background` vs CapCut `matting`; edge thắng. **Chỉ A-roll** — không apply lên `ov-*`.

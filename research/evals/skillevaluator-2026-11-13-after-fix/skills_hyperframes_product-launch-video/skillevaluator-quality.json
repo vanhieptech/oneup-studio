@@ -1,0 +1,412 @@
+{
+  "version": "0.9.0",
+  "target_path": null,
+  "overall_passed": true,
+  "overall_status": "passed",
+  "incomplete_scans": [],
+  "total_validators": 1,
+  "total_skipped": 0,
+  "total_advisory_skipped": 0,
+  "total_errors": 0,
+  "total_warnings": 2,
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 1,
+    "low": 1
+  },
+  "finding_counts": {
+    "raw_occurrences": 2,
+    "distinct_occurrences": 2,
+    "unique_findings": 2,
+    "duplicates_removed": 0,
+    "occurrences_grouped": 0,
+    "raw_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 1,
+      "info": 0
+    },
+    "unique_by_severity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 1,
+      "info": 0
+    }
+  },
+  "finding_groups": [
+    {
+      "finding_id": "SEF-9ba0faf0d4cc2e7bb452",
+      "category": "QUALITY",
+      "severity": "low",
+      "check_name": "quality_discoverability",
+      "message": "Description very long (395 chars, recommend 50-150)",
+      "suggestion": "Keep descriptions concise for progressive disclosure",
+      "metadata": {
+        "dimension": "discoverability",
+        "deduction": 5
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-e7df5d1bf0b54c29d5ff",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/product-launch-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    },
+    {
+      "finding_id": "SEF-d1d1e218f65918d27dae",
+      "category": "QUALITY",
+      "severity": "medium",
+      "check_name": "quality_efficiency",
+      "message": "Large skill (~9201 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+      "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+      "metadata": {
+        "dimension": "efficiency",
+        "deduction": 15
+      },
+      "validators": [
+        "QUALITY"
+      ],
+      "occurrences": [
+        {
+          "occurrence_id": "SEO-653dad0e957db3967a5f",
+          "validator": "QUALITY",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/product-launch-video/SKILL.md",
+          "line_number": null
+        }
+      ],
+      "occurrence_count": 1
+    }
+  ],
+  "message_counts": {
+    "informational": 0,
+    "independent_errors": 0,
+    "independent_warnings": 0
+  },
+  "skills": [
+    {
+      "name": "product-launch-video",
+      "passed": true,
+      "issue_count": 2
+    }
+  ],
+  "contributors": [
+    {
+      "author": "Unknown",
+      "items": [
+        {
+          "name": "product-launch-video",
+          "passed": true,
+          "issue_count": 2
+        }
+      ],
+      "total_items": 1,
+      "passed_count": 1,
+      "failed_count": 0,
+      "total_issues": 2
+    }
+  ],
+  "top_issues": [
+    {
+      "message": "Large skill (~9201 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+      "severity": "medium",
+      "total_count": 1,
+      "skills_affected": [
+        "product-launch-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory"
+    },
+    {
+      "message": "Description very long (395 chars, recommend 50-150)",
+      "severity": "low",
+      "total_count": 1,
+      "skills_affected": [
+        "product-launch-video"
+      ],
+      "category": "QUALITY",
+      "suggestion": "Keep descriptions concise for progressive disclosure"
+    }
+  ],
+  "results": [
+    {
+      "validator": "QUALITY",
+      "description": "Skill quality scoring across Correctness (35%), Discoverability (25%), Reliability (25%), and Efficiency (15%)",
+      "passed": true,
+      "status": "passed",
+      "skipped": false,
+      "skip_reason": null,
+      "incomplete_scans": [],
+      "summary": {
+        "files_scanned": 0,
+        "checks_performed": 1,
+        "errors": 0,
+        "warnings": 2,
+        "critical_count": 0,
+        "high_count": 0,
+        "medium_count": 1,
+        "low_count": 1
+      },
+      "finding_counts": {
+        "raw_occurrences": 2,
+        "distinct_occurrences": 2,
+        "unique_findings": 2,
+        "duplicates_removed": 0,
+        "occurrences_grouped": 0,
+        "raw_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 1,
+          "low": 1,
+          "info": 0
+        },
+        "unique_by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 1,
+          "low": 1,
+          "info": 0
+        }
+      },
+      "findings": [
+        {
+          "finding_id": "SEF-9ba0faf0d4cc2e7bb452",
+          "occurrence_id": "SEO-e7df5d1bf0b54c29d5ff",
+          "category": "QUALITY",
+          "severity": "low",
+          "check_name": "quality_discoverability",
+          "message": "Description very long (395 chars, recommend 50-150)",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/product-launch-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep descriptions concise for progressive disclosure",
+          "metadata": {
+            "dimension": "discoverability",
+            "deduction": 5
+          }
+        },
+        {
+          "finding_id": "SEF-d1d1e218f65918d27dae",
+          "occurrence_id": "SEO-653dad0e957db3967a5f",
+          "category": "QUALITY",
+          "severity": "medium",
+          "check_name": "quality_efficiency",
+          "message": "Large skill (~9201 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+          "file_path": "/Users/macbook/me/projects/oneup-studio/skills/hyperframes/product-launch-video/SKILL.md",
+          "line_number": null,
+          "line_content": null,
+          "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+          "metadata": {
+            "dimension": "efficiency",
+            "deduction": 15
+          }
+        }
+      ],
+      "success_details": [
+        {
+          "check": "quality_score",
+          "message": "Score: 96.5/100 (Grade: A)",
+          "metadata": {
+            "overall_score": 96.5,
+            "grade": "A",
+            "skill_type": "guide-only"
+          }
+        }
+      ],
+      "legacy": {
+        "errors": [],
+        "warnings": [
+          "[QUALITY-LOW] Description very long (395 chars, recommend 50-150) in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/product-launch-video/SKILL.md",
+          "[QUALITY-MEDIUM] Large skill (~9201 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy in /Users/macbook/me/projects/oneup-studio/skills/hyperframes/product-launch-video/SKILL.md"
+        ],
+        "messages": [
+          "[OK] quality_score: Score: 96.5/100 (Grade: A)"
+        ]
+      },
+      "tier1_required_checks": [
+        "code-integrity",
+        "license",
+        "lint",
+        "pii",
+        "quality",
+        "schema",
+        "security",
+        "unicode",
+        "version"
+      ],
+      "tier1_unscanned_paths": [],
+      "quality": {
+        "overall_score": 96.5,
+        "grade": "A",
+        "skill_type": "guide-only",
+        "skill_name": "product-launch-video",
+        "dimensions": {
+          "correctness": {
+            "score": 100.0,
+            "weight": 0.35,
+            "issues_count": 0,
+            "issues": []
+          },
+          "discoverability": {
+            "score": 95.0,
+            "weight": 0.25,
+            "issues_count": 1,
+            "issues": [
+              {
+                "severity": "info",
+                "message": "Description very long (395 chars, recommend 50-150)",
+                "suggestion": "Keep descriptions concise for progressive disclosure",
+                "deduction": 5
+              }
+            ]
+          },
+          "reliability": {
+            "score": 100.0,
+            "weight": 0.25,
+            "issues_count": 0,
+            "issues": []
+          },
+          "efficiency": {
+            "score": 85.0,
+            "weight": 0.15,
+            "issues_count": 1,
+            "issues": [
+              {
+                "severity": "warning",
+                "message": "Large skill (~9201 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+                "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+                "deduction": 15
+              }
+            ]
+          }
+        },
+        "metrics": {
+          "total_tokens": 9201,
+          "estimated_tokens": 9201,
+          "estimate_method": "characters/4",
+          "recommended_max_tokens": 5000,
+          "frontmatter_tokens": 144,
+          "instructions_tokens": 9054,
+          "script_count": 0,
+          "has_examples": true,
+          "has_error_handling": true,
+          "has_frontmatter": true,
+          "has_instructions": false,
+          "has_scripts": false,
+          "has_lib_module": false
+        }
+      },
+      "publication_target": {
+        "skill_name": "product-launch-video",
+        "skill_digest": "sha256:d6846adb0bd22a5bc6411e1e3be9c3b7b40e018c65f115160f431fdc0ea269dc",
+        "skill_digest_algorithm": "skill-evaluator-source-tree/2"
+      },
+      "publication_evidence": {
+        "schema_version": 1,
+        "producer": "skillevaluator.tier1",
+        "tier": 1,
+        "check_id": "quality"
+      }
+    }
+  ],
+  "benchmark_policy": {
+    "tier2_required": true,
+    "tier3_required": true
+  },
+  "publication_status": "incomplete",
+  "publication": {
+    "status": "incomplete",
+    "eligible": false,
+    "reasons": [
+      "Tier 1 did not run every required check: code-integrity, license, lint, pii, schema, security, unicode, version.",
+      "Required recognized built-in Tier 2 evidence is missing.",
+      "Tier 3 lacks publication-complete execution evidence."
+    ],
+    "tier3": {
+      "status": "not_run",
+      "evidence_complete": false,
+      "execution_status": "not_run",
+      "verdict": "not_run",
+      "reason": "Tier 3 lacks publication-complete execution evidence."
+    }
+  },
+  "quality_config": {
+    "source": "packaged",
+    "file": null,
+    "digest": "sha256:298ff2bf62132c8154217b7aa59fc1fd04f28cf75372f55620a2cbcd951d6549",
+    "min_score": 70
+  },
+  "evaluated_source": null,
+  "quality_summary": [
+    {
+      "overall_score": 96.5,
+      "grade": "A",
+      "skill_type": "guide-only",
+      "skill_name": "product-launch-video",
+      "dimensions": {
+        "correctness": {
+          "score": 100.0,
+          "weight": 0.35,
+          "issues_count": 0,
+          "issues": []
+        },
+        "discoverability": {
+          "score": 95.0,
+          "weight": 0.25,
+          "issues_count": 1,
+          "issues": [
+            {
+              "severity": "info",
+              "message": "Description very long (395 chars, recommend 50-150)",
+              "suggestion": "Keep descriptions concise for progressive disclosure",
+              "deduction": 5
+            }
+          ]
+        },
+        "reliability": {
+          "score": 100.0,
+          "weight": 0.25,
+          "issues_count": 0,
+          "issues": []
+        },
+        "efficiency": {
+          "score": 85.0,
+          "weight": 0.15,
+          "issues_count": 1,
+          "issues": [
+            {
+              "severity": "warning",
+              "message": "Large skill (~9201 estimated tokens at 4 characters per token, recommended max <5000; a real tokenizer may count more). Per agentskills.io, SKILL.md should be concise (~500 lines) \u2014 large skill bodies increase token cost after invocation; long or unfocused top-level descriptions can degrade agent routing accuracy",
+              "suggestion": "Keep required sections concise; move detailed examples, reference material, and supporting docs to the references/ directory",
+              "deduction": 15
+            }
+          ]
+        }
+      },
+      "metrics": {
+        "total_tokens": 9201,
+        "estimated_tokens": 9201,
+        "estimate_method": "characters/4",
+        "recommended_max_tokens": 5000,
+        "frontmatter_tokens": 144,
+        "instructions_tokens": 9054,
+        "script_count": 0,
+        "has_examples": true,
+        "has_error_handling": true,
+        "has_frontmatter": true,
+        "has_instructions": false,
+        "has_scripts": false,
+        "has_lib_module": false
+      }
+    }
+  ],
+  "generated_at": "2026-11-13T18:01:06.940769+00:00"
+}

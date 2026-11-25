@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Motion 100 — sample pack</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1e26; --ink:#e8eaed; --muted:#9aa0a6; --accent:#56B6C2; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:28px 24px 12px; max-width:1400px; margin:0 auto; }
+  h1 { margin:0 0 8px; font-size:28px; }
+  p { margin:0; color:var(--muted); max-width:70ch; line-height:1.45; }
+  #meta { margin-top:10px; font-size:13px; color:var(--accent); }
+  #grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; padding:16px 24px 48px; max-width:1400px; margin:0 auto; }
+  a.card { display:block; background:var(--card); border:1px solid #2a3140; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit; transition:border-color .15s; }
+  a.card:hover { border-color:var(--accent); }
+  .poster { aspect-ratio:16/9; background:#000; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .poster img { width:100%; height:100%; object-fit:cover; display:block; }
+  .poster .ph { color:var(--muted); font-size:12px; }
+  .body { padding:10px 12px 12px; }
+  .n { font-size:11px; color:var(--accent); letter-spacing:.08em; }
+  .title { font-size:14px; font-weight:700; margin:4px 0; }
+  .fam { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .line { font-size:12px; color:var(--muted); margin-top:6px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Motion 100 sample pack</h1>
+  <p>First 100 <code>awesome-ai-motion</code> effects that ship HTML + MP4. Open a card for the live demo. Source clone: <code>resources/refs/awesome-ai-motion</code> (MIT).</p>
+  <div id="meta">loading…</div>
+</header>
+<div id="grid"></div>
+<script>
+fetch('./catalog.json').then(r=>r.json()).then(cat=>{
+  document.getElementById('meta').textContent = `${cat.count} samples · source ${cat.source}`;
+  const grid=document.getElementById('grid');
+  for (const it of cat.items) {
+    const a=document.createElement('a');
+    a.className='card';
+    a.href=it.demo+'index.html';
+    a.target='_blank';
+    a.innerHTML=`<div class="poster">${it.poster?`<img loading="lazy" src="${it.poster}" alt="">`:`<div class="ph">no poster</div>`}</div>
+      <div class="body"><div class="n">#${String(it.n).padStart(3,'0')}</div>
+      <div class="title">${it.en}</div>
+      <div class="fam">${it.family||''}</div>
+      <div class="line">${it.oneLiner||''}</div></div>`;
+    grid.appendChild(a);
+  }
+});
+</script>
+</body>
+</html>

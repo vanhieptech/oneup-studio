@@ -1,0 +1,141 @@
+             SkillEvaluator Validation Results              
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details                             ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  PASS  │ 1 checks passed; quality C 77.0/100 │
+└───────────┴────────┴─────────────────────────────────────┘
+
+╭───────────────────────╮
+│ Non-blocking Findings │
+╰───────────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 77.0/100 (Grade: C)
+  Skill Type: hybrid
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ embedded-… │   C   │  77.0 │         65 │        90 │         85 │        70 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[PASS] Validation passed
+
+Summary:
+  • Checks performed: 1
+
+Details:
+  [OK] quality_score: Score: 77.0/100 (Grade: C) (overall_score=77.0, grade=C, 
+skill_type=hybrid)
+Issues:
+  1. [QUALITY-MEDIUM] No documented scripts in table format
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_correctness
+     Fix:     Add '## Available Scripts' with table: | Script | Purpose | 
+Arguments |
+
+  2. [QUALITY-MEDIUM] Instructions don't mention 'run_script'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_correctness
+     Fix:     Add explicit run_script() call examples
+
+  3. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'version'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_correctness
+     Fix:     Add 'version' to frontmatter — Semantic version (e.g., "1.0.0")
+
+  4. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  5. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  6. [QUALITY-LOW] Description very long (557 chars, recommend 50-150)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_discoverability
+     Fix:     Keep descriptions concise for progressive disclosure
+
+  7. [QUALITY-LOW] No '## Purpose' section
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  8. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  9. [QUALITY-LOW] No limitations documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  10. [QUALITY-LOW] No troubleshooting section documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+  11. [QUALITY-MEDIUM] Large skill (~8558 estimated tokens at 4 characters per 
+token, recommended max <5000; a real tokenizer may count more). Per 
+agentskills.io, SKILL.md should be concise (~500 lines) — large skill bodies 
+increase token cost after invocation; long or unfocused top-level descriptions 
+can degrade agent routing accuracy
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_efficiency
+     Fix:     Keep required sections concise; move detailed examples, reference 
+material, and supporting docs to the references/ directory
+
+  12. [QUALITY-LOW] Uses complex/corporate language
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_efficiency
+     Fix:     Use simple, direct language: 'use' not 'utilize'
+
+  13. [QUALITY-MEDIUM] Deeply nested references in failure-modes.md
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/embedded-captions/SKI
+LL.md
+     Check:   quality_efficiency
+     Fix:     Keep references one level deep from SKILL.md
+
+
+[PASS] Passed required checks
+Tier 1: 1 of 1 checks passed; 0 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+
+json report: 
+/Users/macbook/me/projects/oneup-studio/research/evals/skillevaluator-2026-11-13
+/skills_hyperframes_embedded-captions/skillevaluator-quality.json

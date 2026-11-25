@@ -5,12 +5,16 @@ source: "oneup-studio (soạn trong repo)"
 id: refs
 type: reference
 status: active
-updated: 2026-11-07
+updated: 2026-11-08
 tags: [links]
 ---
 # Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)
+
+**Motion skills inventory (local + GitHub):** `research/references/motion-skills-catalog.md`  
+**100-sample gallery:** `content/samples/lab/motion-100/index.html` (needs awesome-ai-motion clone)
+
 - **awesome-ai-motion** (MIT): https://github.com/gongnyang/awesome-ai-motion
-  Clone vào máy bằng `git clone https://github.com/gongnyang/awesome-ai-motion resources/refs/awesome-ai-motion` (đã có trong .gitignore). Skill `skills/motion-picks-per-script` đọc `resources/refs/awesome-ai-motion/index.json`.
+  Clone: `git clone --depth 1 https://github.com/gongnyang/awesome-ai-motion resources/refs/awesome-ai-motion` (gitignored). 637 effects · `index.json`. Skill `skills/motion-picks-per-script` đọc index này.
 - HowToLiveBetter (CC BY 4.0): https://github.com/chuanman2707/HowToLiveBetter · https://chuanman2707.github.io/HowToLiveBetter/
 - HyperFrames: https://github.com/heygen-com/hyperframes · tài liệu: https://hyperframes.heygen.com
 - GSAP (free, Standard License): https://gsap.com/llms-full.txt

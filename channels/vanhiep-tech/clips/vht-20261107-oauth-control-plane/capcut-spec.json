@@ -7,29 +7,23 @@
   "tracks": [
     {
       "type": "video",
-      "name": "A-full",
+      "name": "A-main",
       "items": [
         {
           "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll.mp4",
           "start": 0,
-          "duration": 28
+          "duration": 21
+        },
+        {
+          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4",
+          "start": 21,
+          "duration": 15
         },
         {
           "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/a-roll.mp4",
-          "start": 48,
-          "duration": 27,
-          "sourceStart": 48
-        }
-      ]
-    },
-    {
-      "type": "video",
-      "name": "cutaway",
-      "items": [
-        {
-          "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/cu-01.mp4",
-          "start": 28,
-          "duration": 9
+          "start": 36,
+          "duration": 20.2,
+          "sourceStart": 36
         }
       ]
     },
@@ -40,7 +34,7 @@
         {
           "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-hook.mov",
           "start": 0,
-          "duration": 3.2
+          "duration": 7.5
         }
       ]
     },
@@ -50,8 +44,8 @@
       "items": [
         {
           "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-d01.mov",
-          "start": 10,
-          "duration": 6
+          "start": 8,
+          "duration": 12
         }
       ]
     },
@@ -61,8 +55,8 @@
       "items": [
         {
           "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-q.mov",
-          "start": 48,
-          "duration": 4
+          "start": 36,
+          "duration": 12
         }
       ]
     },
@@ -72,8 +66,8 @@
       "items": [
         {
           "path": "../../../../media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/ov-l3.mov",
-          "start": 65,
-          "duration": 3.5
+          "start": 49,
+          "duration": 7
         }
       ]
     }

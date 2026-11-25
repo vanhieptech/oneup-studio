@@ -616,6 +616,14 @@
    "title": "clip-05 «Học dồn một đêm» — script final"
   },
   {
+   "id": "clip-05.script-v5-draft",
+   "type": "script",
+   "status": "draft-not-approved",
+   "updated": "2026-11-20",
+   "path": "content/archive/clip-05-hoc-mot-dem/archive/v4-final/script-v5-draft.md",
+   "title": "Clip 05 — Đọc lại hay tự nhớ?"
+  },
+  {
    "id": "content.archive.clip-05-hoc-mot-dem.archive.v4-final.visual-plan-v4",
    "type": "visual-plan",
    "status": "ready",
@@ -1360,6 +1368,14 @@
    "title": "Published log: clip đã đăng"
   },
   {
+   "id": "sample.motion-100",
+   "type": "sample",
+   "status": "ready",
+   "updated": "2026-11-08",
+   "path": "content/samples/lab/motion-100/README.md",
+   "title": "Motion 100"
+  },
+  {
    "id": "sample-f5",
    "type": "sample",
    "status": "ready",
@@ -1936,6 +1952,14 @@
    "title": "Doodle style research — đưa ý tưởng trước, Hiệp chọn mới làm"
   },
   {
+   "id": "research.motion-skills-catalog",
+   "type": "reference",
+   "status": "ready",
+   "updated": "2026-11-08",
+   "path": "research/references/motion-skills-catalog.md",
+   "title": "Motion skills catalog"
+  },
+  {
    "id": "research.motionmaxxing",
    "type": "reference",
    "status": "ready",
@@ -2459,7 +2483,7 @@
    "id": "refs",
    "type": "reference",
    "status": "active",
-   "updated": "2026-11-07",
+   "updated": "2026-11-08",
    "path": "resources/refs/README.md",
    "title": "Tài liệu tham khảo (link ngoài, không đưa mã nguồn vào repo)"
   },
@@ -2478,6 +2502,34 @@
    "title": "anidoodle"
   },
   {
+   "id": "skill.awesome-ai-motion",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/awesome-ai-motion/SKILL.md",
+   "title": "awesome-ai-motion"
+  },
+  {
+   "id": "skill.motion-graphics-skill",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/motion-graphics-skill/DESIGN.md",
+   "title": "motion-graphics"
+  },
+  {
+   "id": "skill.motion-graphics",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/motion-graphics-skill/skills/motion-graphics/SKILL.md",
+   "title": "motion-graphics"
+  },
+  {
+   "id": "skill.motion-video-skill",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/motion-video-skill/SKILL.md",
+   "title": "motion-video"
+  },
+  {
    "id": "refs.motionmaxxing.integration",
    "type": "vendor-note",
    "status": "active",
@@ -2491,6 +2543,76 @@
    "status": "active",
    "path": "resources/refs/motionmaxxing/SKILL.md",
    "title": "motionmaxxing"
+  },
+  {
+   "id": "skill.article-highlights",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/remotion-motion-graphics-skill/skills/article-highlights/SKILL.md",
+   "title": "\"article-highlights\""
+  },
+  {
+   "id": "skill.cinematic-camera",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/remotion-motion-graphics-skill/skills/cinematic-camera/SKILL.md",
+   "title": "\"cinematic-camera\""
+  },
+  {
+   "id": "skill.motion-graphics",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/remotion-motion-graphics-skill/skills/motion-graphics/SKILL.md",
+   "title": "\"motion-graphics\""
+  },
+  {
+   "id": "skill.terminal-inserts",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/remotion-motion-graphics-skill/skills/terminal-inserts/SKILL.md",
+   "title": "\"terminal-inserts\""
+  },
+  {
+   "id": "skill.skill-motion-graphic",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/skill-motion-graphic/SKILL.md",
+   "title": "\"motion-graphic\""
+  },
+  {
+   "id": "skill.skill",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/agent/skill/SKILL.md",
+   "title": "transitions-agent"
+  },
+  {
+   "id": "skill.refine-live",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md",
+   "title": "refine-live"
+  },
+  {
+   "id": "skill.transitions-dev",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-dev/SKILL.md",
+   "title": "transitions-dev"
+  },
+  {
+   "id": "skill.transitions-polish",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-polish/SKILL.md",
+   "title": "transitions-polish"
+  },
+  {
+   "id": "skill.transitions-ui-generation",
+   "type": "skill",
+   "status": "active",
+   "path": "resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md",
+   "title": "transitions-ui-generation"
   },
   {
    "id": "vn-thesaurus",

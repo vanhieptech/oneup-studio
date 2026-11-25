@@ -1,0 +1,28 @@
+/* Canonical CSS vars for @vanhiep.tech — keep in sync with brand-tokens.json.
+   Rule: layer HTML/CSS/JS MUST use these vars (or token names). Do not invent hex. */
+:root {
+  /* One Dark swatches */
+  --vht-bg: #282C34;
+  --vht-red: #E06C75;
+  --vht-green: #98C379;
+  --vht-yellow: #E5C07B;
+  --vht-blue: #61AFEF;
+  --vht-purple: #C678DD;
+  --vht-cyan: #56B6C2;
+  --vht-fg: #ABB2BF;
+
+  /* Semantic / layer roles (defined in brand-tokens.json) */
+  --vht-surface: #21252B;
+  --vht-ink: #ABB2BF;
+  --vht-title: #FFFFFF;
+  --vht-muted: #5C6370;
+  --vht-border: #3E4451;
+  --vht-accent: #56B6C2;
+  --vht-accent-alt: #61AFEF;
+  --vht-warn: #E5C07B;
+  --vht-ok: #98C379;
+  --vht-danger: #E06C75;
+  --vht-emphasis: #C678DD;
+  --vht-on-accent: #282C34;
+  --vht-shadow: #1B1E24;
+}

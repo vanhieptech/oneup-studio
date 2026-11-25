@@ -1,0 +1,1708 @@
+{
+  "title": "Motion 100 sample pack",
+  "count": 100,
+  "source": "resources/refs/awesome-ai-motion (gongnyang, MIT)",
+  "note": "Symlinks into gitignored clone; run from Mac after clone.",
+  "items": [
+    {
+      "n": 1,
+      "id": "m100-001",
+      "slug": "overlapping-action",
+      "en": "Overlapping Action",
+      "family": "principles",
+      "oneLiner": "Parts of an object move in the same direction with slightly offset start and stop times.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/001-overlapping-action/",
+      "poster": "posters/001-overlapping-action.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 2,
+      "id": "m100-002",
+      "slug": "anticipation",
+      "en": "Anticipation",
+      "family": "principles",
+      "oneLiner": "A brief movement in the opposite direction prepares the viewer for the main action.",
+      "ease": "power2.inOut 준비 / power3.out 발사",
+      "source": "awesome-ai-motion",
+      "demo": "demos/002-anticipation/",
+      "poster": "posters/002-anticipation.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 3,
+      "id": "m100-003",
+      "slug": "easing-curves",
+      "en": "Easing",
+      "family": "principles",
+      "oneLiner": "Easing changes velocity over the course of an animation while keeping its distance and duration constant.",
+      "ease": "none / power3.in / power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/003-easing-curves/",
+      "poster": "posters/003-easing-curves.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 4,
+      "id": "m100-004",
+      "slug": "spring-overshoot",
+      "en": "Spring & Overshoot",
+      "family": "principles",
+      "oneLiner": "An object briefly exceeds its target scale before returning and settling.",
+      "ease": "back.out(1.5)",
+      "source": "awesome-ai-motion",
+      "demo": "demos/004-spring-overshoot/",
+      "poster": "posters/004-spring-overshoot.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 5,
+      "id": "m100-005",
+      "slug": "squash-stretch",
+      "en": "Squash & Stretch",
+      "family": "principles",
+      "oneLiner": "An object stretches as it gains speed and squashes on impact while keeping the product of its axis scales constant.",
+      "ease": "power2.in 낙하 / power2.out 반발",
+      "source": "awesome-ai-motion",
+      "demo": "demos/005-squash-stretch/",
+      "poster": "posters/005-squash-stretch.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 6,
+      "id": "m100-006",
+      "slug": "stagger",
+      "en": "Stagger",
+      "family": "principles",
+      "oneLiner": "Multiple elements appear in sequence with a consistent delay between them.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/006-stagger/",
+      "poster": "posters/006-stagger.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 7,
+      "id": "m100-007",
+      "slug": "arc-motion",
+      "en": "Arcs",
+      "family": "principles",
+      "oneLiner": "An object follows a curved trajectory instead of a straight line.",
+      "ease": "none, 포물선 위치 수식",
+      "source": "awesome-ai-motion",
+      "demo": "demos/007-arc-motion/",
+      "poster": "posters/007-arc-motion.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 8,
+      "id": "m100-008",
+      "slug": "follow-through",
+      "en": "Follow-through",
+      "family": "principles",
+      "oneLiner": "An attached extremity continues moving through inertia after the main body stops, then settles later.",
+      "ease": "none 몸통 / power2.out 관성 / power1.inOut 감쇠",
+      "source": "awesome-ai-motion",
+      "demo": "demos/008-follow-through/",
+      "poster": "posters/008-follow-through.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 9,
+      "id": "m100-009",
+      "slug": "motion-hierarchy",
+      "en": "Motion Hierarchy",
+      "family": "principles",
+      "oneLiner": "Differences in scale and entrance timing establish a reading order that prioritizes important information.",
+      "ease": "power3.out / power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/009-motion-hierarchy/",
+      "poster": "posters/009-motion-hierarchy.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 10,
+      "id": "m100-010",
+      "slug": "blinds-reveal",
+      "en": "Blinds Reveal",
+      "family": "entrance",
+      "oneLiner": "Staggered strips open to assemble a complete image.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/010-blinds-reveal/",
+      "poster": "posters/010-blinds-reveal.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 11,
+      "id": "m100-011",
+      "slug": "blur-reveal",
+      "en": "Blur Reveal",
+      "family": "entrance",
+      "oneLiner": "Blurred text or imagery resolves into sharp focus.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/011-blur-reveal/",
+      "poster": "posters/011-blur-reveal.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 12,
+      "id": "m100-012",
+      "slug": "fade-slide",
+      "en": "Fade Slide",
+      "family": "entrance",
+      "oneLiner": "An element fades in while sliding into position.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/012-fade-slide/",
+      "poster": "posters/012-fade-slide.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 13,
+      "id": "m100-013",
+      "slug": "flip-reveal",
+      "en": "Flip Reveal",
+      "family": "entrance",
+      "oneLiner": "An edge-on element rotates around a 3D axis to face the viewer.",
+      "ease": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "source": "awesome-ai-motion",
+      "demo": "demos/013-flip-reveal/",
+      "poster": "posters/013-flip-reveal.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 14,
+      "id": "m100-014",
+      "slug": "scale-pop",
+      "en": "Scale Pop",
+      "family": "entrance",
+      "oneLiner": "An element grows from a small scale to its final size.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/014-scale-pop/",
+      "poster": "posters/014-scale-pop.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 15,
+      "id": "m100-015",
+      "slug": "pulse",
+      "en": "Pulse",
+      "family": "emphasis",
+      "oneLiner": "A short scale beat where an element grows slightly and returns to its size in place.",
+      "ease": "sine.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/015-pulse/",
+      "poster": "posters/015-pulse.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 16,
+      "id": "m100-016",
+      "slug": "circumscribe",
+      "en": "Circumscribe",
+      "family": "emphasis",
+      "oneLiner": "A circle or rectangle is drawn around a target and then erased.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/016-circumscribe/",
+      "poster": "posters/016-circumscribe.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 17,
+      "id": "m100-017",
+      "slug": "focus-handoff",
+      "en": "Focus Handoff",
+      "family": "emphasis",
+      "oneLiner": "Among items already laid out, one lights up at a time and the highlight hands off to the next.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/017-focus-handoff/",
+      "poster": "posters/017-focus-handoff.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 18,
+      "id": "m100-018",
+      "slug": "shake",
+      "en": "Shake",
+      "family": "emphasis",
+      "oneLiner": "An element oscillates on both sides of its rest position or angle, then stops.",
+      "ease": "sine.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/018-shake/",
+      "poster": "posters/018-shake.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 19,
+      "id": "m100-019",
+      "slug": "char-stagger",
+      "en": "Per-character Rise",
+      "family": "type",
+      "oneLiner": "Characters rise from below and fade in with a staggered delay.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/019-char-stagger/",
+      "poster": "posters/019-char-stagger.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 20,
+      "id": "m100-020",
+      "slug": "highlight-sweep",
+      "en": "Highlight Sweep",
+      "family": "type",
+      "oneLiner": "A highlighter band sweeps from left to right behind a key phrase.",
+      "ease": "power1.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/020-highlight-sweep/",
+      "poster": "posters/020-highlight-sweep.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 21,
+      "id": "m100-021",
+      "slug": "kinetic-beats",
+      "en": "Kinetic Beats",
+      "family": "type",
+      "oneLiner": "Words hit the center at a large scale on regular beats and quickly settle.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/021-kinetic-beats/",
+      "poster": "posters/021-kinetic-beats.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 22,
+      "id": "m100-022",
+      "slug": "mask-reveal",
+      "en": "Mask Reveal",
+      "family": "type",
+      "oneLiner": "A title rises into clipped windows to reveal one line at a time.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/022-mask-reveal/",
+      "poster": "posters/022-mask-reveal.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 23,
+      "id": "m100-023",
+      "slug": "text-scramble",
+      "en": "Text Scramble",
+      "family": "type",
+      "oneLiner": "Symbols cycle in each character position before resolving into the final text from left to right.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/023-text-scramble/",
+      "poster": "posters/023-text-scramble.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 24,
+      "id": "m100-024",
+      "slug": "typewriter",
+      "en": "Typewriter",
+      "family": "type",
+      "oneLiner": "A sentence appears one character at a time at regular intervals while a cursor follows the insertion point.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/024-typewriter/",
+      "poster": "posters/024-typewriter.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 25,
+      "id": "m100-025",
+      "slug": "underline-draw",
+      "en": "Underline Draw",
+      "family": "type",
+      "oneLiner": "An SVG path draws beneath a key phrase from left to right in a single stroke.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/025-underline-draw/",
+      "poster": "posters/025-underline-draw.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 26,
+      "id": "m100-026",
+      "slug": "word-emphasis",
+      "en": "Word Emphasis",
+      "family": "type",
+      "oneLiner": "A phrase changes color and scale within a stationary sentence while surrounding text fades.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/026-word-emphasis/",
+      "poster": "posters/026-word-emphasis.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 27,
+      "id": "m100-027",
+      "slug": "kinetic-type-sweep",
+      "en": "Kinetic Type Sweep",
+      "family": "type",
+      "oneLiner": "Three lines of 200px+ serif type sweep across the frame in opposite directions at different speeds, then one key word slams to a stop dead center.",
+      "ease": "none → power4.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/027-kinetic-type-sweep/",
+      "poster": "posters/027-kinetic-type-sweep.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 28,
+      "id": "m100-028",
+      "slug": "crossfade",
+      "en": "Crossfade",
+      "family": "transitions",
+      "oneLiner": "Scene A fades out as scene B fades in at the same time.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/028-crossfade/",
+      "poster": "posters/028-crossfade.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 29,
+      "id": "m100-029",
+      "slug": "push-transition",
+      "en": "Push",
+      "family": "transitions",
+      "oneLiner": "An incoming scene pushes the existing scene out by the same amount in the same direction.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/029-push-transition/",
+      "poster": "posters/029-push-transition.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 30,
+      "id": "m100-030",
+      "slug": "wipe",
+      "en": "Wipe",
+      "family": "transitions",
+      "oneLiner": "A moving boundary progressively reveals the new scene behind it.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/030-wipe/",
+      "poster": "posters/030-wipe.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 31,
+      "id": "m100-031",
+      "slug": "iris-mask",
+      "en": "Shape Mask Transition",
+      "family": "transitions",
+      "oneLiner": "A circular mask expands from a point to reveal the next scene.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/031-iris-mask/",
+      "poster": "posters/031-iris-mask.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 32,
+      "id": "m100-032",
+      "slug": "match-cut",
+      "en": "Match Cut",
+      "family": "transitions",
+      "oneLiner": "Matching shapes at the same position and size connect two scenes across a cut.",
+      "ease": "확대 power2.out, 컷은 tl.set",
+      "source": "awesome-ai-motion",
+      "demo": "demos/032-match-cut/",
+      "poster": "posters/032-match-cut.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 33,
+      "id": "m100-033",
+      "slug": "shape-morph",
+      "en": "Morph",
+      "family": "transitions",
+      "oneLiner": "The same element changes shape and color to become a component of the next scene.",
+      "ease": "power2.inOut / power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/033-shape-morph/",
+      "poster": "posters/033-shape-morph.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 34,
+      "id": "m100-034",
+      "slug": "whip-pan",
+      "en": "Whip Pan",
+      "family": "transitions",
+      "oneLiner": "A rapid horizontal sweep with horizontal blur and sharp deceleration settles into the next scene.",
+      "ease": "power4.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/034-whip-pan/",
+      "poster": "posters/034-whip-pan.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 35,
+      "id": "m100-035",
+      "slug": "zoom-through",
+      "en": "Zoom Through",
+      "family": "transitions",
+      "oneLiner": "The opening in the letter O enlarges to carry the viewer through to the next scene inside it.",
+      "ease": "power3.in / power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/035-zoom-through/",
+      "poster": "posters/035-zoom-through.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 36,
+      "id": "m100-036",
+      "slug": "blur-dissolve",
+      "en": "Blur Dissolve",
+      "family": "transitions",
+      "oneLiner": "Two scenes overlap while blurred, swap, and the new scene sharpens back into focus.",
+      "ease": "power1.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/036-blur-dissolve/",
+      "poster": "posters/036-blur-dissolve.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 37,
+      "id": "m100-037",
+      "slug": "flash-transition",
+      "en": "Flash Transition",
+      "family": "transitions",
+      "oneLiner": "A white flash covers the frame, the scene changes at the peak, and brightness recovers.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/037-flash-transition/",
+      "poster": "posters/037-flash-transition.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 38,
+      "id": "m100-038",
+      "slug": "page-turn",
+      "en": "Page Turn",
+      "family": "transitions",
+      "oneLiner": "A page corner curls up, exposing the back and a soft shadow, and turns to the next screen.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/038-page-turn/",
+      "poster": "posters/038-page-turn.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 39,
+      "id": "m100-039",
+      "slug": "scale-swap",
+      "en": "Scale Swap",
+      "family": "transitions",
+      "oneLiner": "The old element shrinks toward a pivot while the new one grows in to take its place.",
+      "ease": "back.out(1.4)",
+      "source": "awesome-ai-motion",
+      "demo": "demos/039-scale-swap/",
+      "poster": "posters/039-scale-swap.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 40,
+      "id": "m100-040",
+      "slug": "split-slide",
+      "en": "Split Slide",
+      "family": "transitions",
+      "oneLiner": "Two halves of the frame slide apart or together in opposite directions and swap scenes.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/040-split-slide/",
+      "poster": "posters/040-split-slide.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 41,
+      "id": "m100-041",
+      "slug": "band-slide",
+      "en": "Band Slide",
+      "family": "transitions",
+      "oneLiner": "Video bands split horizontally or vertically slide at slightly different timings to reveal the next screen.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/041-band-slide/",
+      "poster": "posters/041-band-slide.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 42,
+      "id": "m100-042",
+      "slug": "chapter-interstitial",
+      "en": "Chapter Interstitial",
+      "family": "transitions",
+      "oneLiner": "A step-title card appears between scenes, holds briefly, then hands off to the next scene.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/042-chapter-interstitial/",
+      "poster": "posters/042-chapter-interstitial.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 43,
+      "id": "m100-043",
+      "slug": "glitch-transition",
+      "en": "Glitch Transition",
+      "family": "transitions",
+      "oneLiner": "Video blocks momentarily misalign and color channels or ghosts break apart while the scene is replaced.",
+      "ease": "steps(11)",
+      "source": "awesome-ai-motion",
+      "demo": "demos/043-glitch-transition/",
+      "poster": "posters/043-glitch-transition.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 44,
+      "id": "m100-044",
+      "slug": "grid-flip",
+      "en": "Grid Flip",
+      "family": "transitions",
+      "oneLiner": "Rectangular tiles cut from the scene flip in sequence to reveal the next scene on their backs.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/044-grid-flip/",
+      "poster": "posters/044-grid-flip.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 45,
+      "id": "m100-045",
+      "slug": "morph-match-cut",
+      "en": "Morph Match Cut",
+      "family": "transitions",
+      "oneLiner": "A vermilion circle hard-cuts to a serif letter O at the same position and size, then the O morphs into a 62% donut chart.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/045-morph-match-cut/",
+      "poster": "posters/045-morph-match-cut.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 46,
+      "id": "m100-046",
+      "slug": "noise-dissolve",
+      "en": "Noise Dissolve Transition",
+      "family": "transitions",
+      "oneLiner": "Pixels whose noise value falls below the progress disappear first, so blotchy holes spread through the first scene and reveal the next.",
+      "ease": "power1.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/046-noise-dissolve/",
+      "poster": "posters/046-noise-dissolve.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 47,
+      "id": "m100-047",
+      "slug": "shader-wipe",
+      "en": "Shader Directional Warp Wipe",
+      "family": "transitions",
+      "oneLiner": "A soft, bent diagonal edge sweeps across the frame while both plates near the edge stretch and smear along the direction of travel.",
+      "ease": "sine.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/047-shader-wipe/",
+      "poster": "posters/047-shader-wipe.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 48,
+      "id": "m100-048",
+      "slug": "zoom-wipe",
+      "en": "Zoom Wipe",
+      "family": "transitions",
+      "oneLiner": "Mid-zoom on the center, a straight edge moves across the frame and reveals the new scene.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/048-zoom-wipe/",
+      "poster": "posters/048-zoom-wipe.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 49,
+      "id": "m100-049",
+      "slug": "ken-burns",
+      "en": "Ken Burns",
+      "family": "camera",
+      "oneLiner": "A camera move that slowly zooms into a still image while panning diagonally.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/049-ken-burns/",
+      "poster": "posters/049-ken-burns.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 50,
+      "id": "m100-050",
+      "slug": "pan",
+      "en": "Pan",
+      "family": "camera",
+      "oneLiner": "A camera move that scans a wide scene in one direction while keeping the scale constant.",
+      "ease": "power1.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/050-pan/",
+      "poster": "posters/050-pan.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 51,
+      "id": "m100-051",
+      "slug": "parallax",
+      "en": "Parallax",
+      "family": "camera",
+      "oneLiner": "A motion effect that creates depth by moving nearer layers faster and distant layers more slowly as the camera moves.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/051-parallax/",
+      "poster": "posters/051-parallax.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 52,
+      "id": "m100-052",
+      "slug": "push-in",
+      "en": "Push-in",
+      "family": "camera",
+      "oneLiner": "A camera move that slowly approaches a fixed focal point in a sentence or scene.",
+      "ease": "power1.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/052-push-in/",
+      "poster": "posters/052-push-in.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 53,
+      "id": "m100-053",
+      "slug": "rack-focus",
+      "en": "Rack Focus",
+      "family": "camera",
+      "oneLiner": "A focus shift that swaps sharpness between foreground and background subjects without changing their positions.",
+      "ease": "power1.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/053-rack-focus/",
+      "poster": "posters/053-rack-focus.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 54,
+      "id": "m100-054",
+      "slug": "zoom-to-detail",
+      "en": "Zoom to Detail",
+      "family": "camera",
+      "oneLiner": "A motion that centers and enlarges a specific coordinate in an overview diagram to reveal detail.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/054-zoom-to-detail/",
+      "poster": "posters/054-zoom-to-detail.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 55,
+      "id": "m100-055",
+      "slug": "giant-mask-reveal",
+      "en": "Giant Mask Reveal",
+      "family": "camera",
+      "oneLiner": "A frame-filling 939 acts as a window onto an editorial world, and the camera dives into a stroke until the whole world is revealed.",
+      "ease": "power1.in (지수 배율) + power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/055-giant-mask-reveal/",
+      "poster": "posters/055-giant-mask-reveal.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 56,
+      "id": "m100-056",
+      "slug": "infinite-pan",
+      "en": "Infinite Canvas Pan",
+      "family": "camera",
+      "oneLiner": "A continuous 5,400px camera pan across six editorial plates settles on a scarlet focus.",
+      "ease": "sine.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/056-infinite-pan/",
+      "poster": "posters/056-infinite-pan.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 57,
+      "id": "m100-057",
+      "slug": "infinite-zoom",
+      "en": "Infinite Zoom",
+      "family": "camera",
+      "oneLiner": "Dive into a scarlet dot three times as nested plates expand through a continuous 2,744× zoom.",
+      "ease": "sine.inOut 진행률 + 14^p 지수 확대",
+      "source": "awesome-ai-motion",
+      "demo": "demos/057-infinite-zoom/",
+      "poster": "posters/057-infinite-zoom.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 58,
+      "id": "m100-058",
+      "slug": "perspective-tilt",
+      "en": "Perspective Tilt Reveal",
+      "family": "camera",
+      "oneLiner": "An editorial page tilts back by 55 degrees to reveal its grid before returning to one frontal figure.",
+      "ease": "power2.inOut / sine.inOut / power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/058-perspective-tilt/",
+      "poster": "posters/058-perspective-tilt.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 59,
+      "id": "m100-059",
+      "slug": "scroll-scrub-cinema",
+      "en": "Scroll-scrub Cinema Scene",
+      "family": "camera",
+      "oneLiner": "In one pinned scene, a single scroll progress value p drives a title mask reveal, an assembling diagram, and a parallaxing background number together.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/059-scroll-scrub-cinema/",
+      "poster": "posters/059-scroll-scrub-cinema.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 60,
+      "id": "m100-060",
+      "slug": "annotation-callout",
+      "en": "Annotation Callout",
+      "family": "data",
+      "oneLiner": "An animation that draws a leader line from a point on a chart and then reveals an annotation.",
+      "ease": "none / power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/060-annotation-callout/",
+      "poster": "posters/060-annotation-callout.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 61,
+      "id": "m100-061",
+      "slug": "bar-grow",
+      "en": "Bar Grow",
+      "family": "data",
+      "oneLiner": "An animation in which bars grow from a baseline to lengths proportional to their values.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/061-bar-grow/",
+      "poster": "posters/061-bar-grow.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 62,
+      "id": "m100-062",
+      "slug": "count-up",
+      "en": "Count-up",
+      "family": "data",
+      "oneLiner": "An animation in which a number increases from 0 to its target value while decelerating.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/062-count-up/",
+      "poster": "posters/062-count-up.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 63,
+      "id": "m100-063",
+      "slug": "dot-regroup",
+      "en": "Dot Regroup",
+      "family": "data",
+      "oneLiner": "An animation that moves scattered dots into orderly groups by category.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/063-dot-regroup/",
+      "poster": "posters/063-dot-regroup.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 64,
+      "id": "m100-064",
+      "slug": "line-draw",
+      "en": "Line Draw",
+      "family": "data",
+      "oneLiner": "An animation that progressively reveals a path from start to finish.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/064-line-draw/",
+      "poster": "posters/064-line-draw.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 65,
+      "id": "m100-065",
+      "slug": "unit-grid",
+      "en": "Unit Grid Fill",
+      "family": "data",
+      "oneLiner": "An animation that fills a specified number of cells in sequence within a grid representing the whole.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/065-unit-grid/",
+      "poster": "posters/065-unit-grid.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 66,
+      "id": "m100-066",
+      "slug": "bar-chart-race",
+      "en": "Bar Chart Race",
+      "family": "data",
+      "oneLiner": "Bar lengths and vertical ranks interpolate between time steps.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/066-bar-chart-race/",
+      "poster": "posters/066-bar-chart-race.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 67,
+      "id": "m100-067",
+      "slug": "pie-donut-update",
+      "en": "Pie and Donut Update",
+      "family": "data",
+      "oneLiner": "Shares update by interpolating the start and end angles of each pie or donut slice.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/067-pie-donut-update/",
+      "poster": "posters/067-pie-donut-update.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 68,
+      "id": "m100-068",
+      "slug": "progress-ring",
+      "en": "Progress Ring",
+      "family": "data",
+      "oneLiner": "A circular stroke fills to a target ratio with a synchronized label.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/068-progress-ring/",
+      "poster": "posters/068-progress-ring.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 69,
+      "id": "m100-069",
+      "slug": "radar-morph",
+      "en": "Radar Chart Morph",
+      "family": "data",
+      "oneLiner": "Vertices move along fixed radial axes to form or update a radar profile.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/069-radar-morph/",
+      "poster": "posters/069-radar-morph.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 70,
+      "id": "m100-070",
+      "slug": "sankey-ribbon-grow",
+      "en": "Sankey Ribbon Growth",
+      "family": "data",
+      "oneLiner": "Flow ribbons grow from source toward destination, revealing the network stage by stage.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/070-sankey-ribbon-grow/",
+      "poster": "posters/070-sankey-ribbon-grow.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 71,
+      "id": "m100-071",
+      "slug": "stacked-grouped-transition",
+      "en": "Stacked-to-grouped Transition",
+      "family": "data",
+      "oneLiner": "Stacked segments spread sideways, then move onto a shared baseline.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/071-stacked-grouped-transition/",
+      "poster": "posters/071-stacked-grouped-transition.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 72,
+      "id": "m100-072",
+      "slug": "table-to-chart",
+      "en": "Table-to-chart Transition",
+      "family": "data",
+      "oneLiner": "Highlighted table values become marks that move into a chart layout.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/072-table-to-chart/",
+      "poster": "posters/072-table-to-chart.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 73,
+      "id": "m100-073",
+      "slug": "waterfall-accumulation",
+      "en": "Waterfall Accumulation",
+      "family": "data",
+      "oneLiner": "Change bars appear from the preceding cumulative endpoint until a total bar is reached.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/073-waterfall-accumulation/",
+      "poster": "posters/073-waterfall-accumulation.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 74,
+      "id": "m100-074",
+      "slug": "answer-stream",
+      "en": "Answer Streaming",
+      "family": "ui",
+      "oneLiner": "An animation that reveals an answer in sequential token groups and gradually increases the opacity of each new group.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/074-answer-stream/",
+      "poster": "posters/074-answer-stream.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 75,
+      "id": "m100-075",
+      "slug": "cursor-click",
+      "en": "Cursor Move & Click",
+      "family": "ui",
+      "oneLiner": "An animation in which a cursor follows a curved path to a target button and signals a click with a pressed state and ripple.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/075-cursor-click/",
+      "poster": "posters/075-cursor-click.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 76,
+      "id": "m100-076",
+      "slug": "spotlight",
+      "en": "Spotlight",
+      "family": "ui",
+      "oneLiner": "An animation that dims the surrounding screen while keeping one region fully opaque and framing it with brackets.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/076-spotlight/",
+      "poster": "posters/076-spotlight.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 77,
+      "id": "m100-077",
+      "slug": "typing-input",
+      "en": "Typing Input",
+      "family": "ui",
+      "oneLiner": "An animation in which a question is typed character by character at irregular intervals with a blinking caret at the end.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/077-typing-input/",
+      "poster": "posters/077-typing-input.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 78,
+      "id": "m100-078",
+      "slug": "ui-scroll",
+      "en": "UI Scroll",
+      "family": "ui",
+      "oneLiner": "An animation that smoothly moves a long document upward, stops at a target paragraph, and marks it with a vertical line.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/078-ui-scroll/",
+      "poster": "posters/078-ui-scroll.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 79,
+      "id": "m100-079",
+      "slug": "zoom-callout",
+      "en": "Zoom Callout",
+      "family": "ui",
+      "oneLiner": "An animation that enlarges a small UI value in an adjacent circular callout and connects both locations with a line.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/079-zoom-callout/",
+      "poster": "posters/079-zoom-callout.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 80,
+      "id": "m100-080",
+      "slug": "accordion-expand",
+      "en": "Accordion Expansion",
+      "family": "ui",
+      "oneLiner": "A panel expands from a fixed edge while adjacent content moves aside.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/080-accordion-expand/",
+      "poster": "posters/080-accordion-expand.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 81,
+      "id": "m100-081",
+      "slug": "chat-thread",
+      "en": "Chat Thread",
+      "family": "ui",
+      "oneLiner": "Messages appear in sequence while the previous conversation shifts upward.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/081-chat-thread/",
+      "poster": "posters/081-chat-thread.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 82,
+      "id": "m100-082",
+      "slug": "drag-and-drop",
+      "en": "Drag and Drop",
+      "family": "ui",
+      "oneLiner": "Lift a translucent copy, carry it with the cursor, and settle it in a new slot.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/082-drag-and-drop/",
+      "poster": "posters/082-drag-and-drop.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 83,
+      "id": "m100-083",
+      "slug": "layout-reflow",
+      "en": "Layout Reflow",
+      "family": "ui",
+      "oneLiner": "Elements retain their identity as a layout changes position and size.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/083-layout-reflow/",
+      "poster": "posters/083-layout-reflow.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 84,
+      "id": "m100-084",
+      "slug": "modal-lift",
+      "en": "Modal Lift",
+      "family": "ui",
+      "oneLiner": "A dialog rises into focus as the backdrop dims.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/084-modal-lift/",
+      "poster": "posters/084-modal-lift.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 85,
+      "id": "m100-085",
+      "slug": "attention-lines",
+      "en": "Attention Lines",
+      "family": "explainer",
+      "oneLiner": "An animation that connects one token to the tokens it references using arcs of varying thickness and opacity.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/085-attention-lines/",
+      "poster": "posters/085-attention-lines.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 86,
+      "id": "m100-086",
+      "slug": "context-window",
+      "en": "Context Window",
+      "family": "explainer",
+      "oneLiner": "An animation that inserts new tokens into a fixed-length window and pushes out the oldest tokens first.",
+      "ease": "power2.out, power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/086-context-window/",
+      "poster": "posters/086-context-window.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 87,
+      "id": "m100-087",
+      "slug": "embedding-space",
+      "en": "Embedding Space",
+      "family": "explainer",
+      "oneLiner": "An animation that moves words to semantic coordinates so words with similar meanings cluster together.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/087-embedding-space/",
+      "poster": "posters/087-embedding-space.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 88,
+      "id": "m100-088",
+      "slug": "next-token",
+      "en": "Next-token Pick",
+      "family": "explainer",
+      "oneLiner": "An animation in which candidate probability bars grow, then the highest-probability candidate moves into a blank in the sentence.",
+      "ease": "power2.out, power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/088-next-token/",
+      "poster": "posters/088-next-token.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 89,
+      "id": "m100-089",
+      "slug": "progressive-disclosure",
+      "en": "Progressive Disclosure",
+      "family": "explainer",
+      "oneLiner": "A sequential reveal that leaves earlier stages dimmed as each new stage becomes active.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/089-progressive-disclosure/",
+      "poster": "posters/089-progressive-disclosure.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 90,
+      "id": "m100-090",
+      "slug": "split-compare",
+      "en": "Split Compare",
+      "family": "explainer",
+      "oneLiner": "An animation that overlays before and after states of the same subject and compares them with a moving vertical divider.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/090-split-compare/",
+      "poster": "posters/090-split-compare.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 91,
+      "id": "m100-091",
+      "slug": "token-split",
+      "en": "Token Split",
+      "family": "explainer",
+      "oneLiner": "An animation that separates a continuous sentence into spaced token fragments.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/091-token-split/",
+      "poster": "posters/091-token-split.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 92,
+      "id": "m100-092",
+      "slug": "graph-build",
+      "en": "Node-link Build",
+      "family": "explainer",
+      "oneLiner": "Reveal eight service nodes before their connecting edges.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/092-graph-build/",
+      "poster": "posters/092-graph-build.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 93,
+      "id": "m100-093",
+      "slug": "sequence-message-draw",
+      "en": "Sequence Message Draw",
+      "family": "explainer",
+      "oneLiner": "Message arrows draw between actors in chronological order, highlighting each receiver.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/093-sequence-message-draw/",
+      "poster": "posters/093-sequence-message-draw.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 94,
+      "id": "m100-094",
+      "slug": "source-result-mapping",
+      "en": "Source-to-result Mapping",
+      "family": "explainer",
+      "oneLiner": "The source remains visible as transformed code appears with linked corresponding tokens.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/094-source-result-mapping/",
+      "poster": "posters/094-source-result-mapping.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 95,
+      "id": "m100-095",
+      "slug": "state-transition-walk",
+      "en": "State Transition Walk",
+      "family": "explainer",
+      "oneLiner": "A signal moves to the next node, which becomes the active state.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/095-state-transition-walk/",
+      "poster": "posters/095-state-transition-walk.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 96,
+      "id": "m100-096",
+      "slug": "vector-tip-to-tail",
+      "en": "Vector Tip-to-tail Construction",
+      "family": "explainer",
+      "oneLiner": "Component vectors extend in sequence, then join tip to tail to form a resultant.",
+      "ease": "power2.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/096-vector-tip-to-tail/",
+      "poster": "posters/096-vector-tip-to-tail.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 97,
+      "id": "m100-097",
+      "slug": "piece-assembly",
+      "en": "Piece Assembly",
+      "family": "shape",
+      "oneLiner": "Loose shapes move and rotate until they lock into a single logo or a gap-free arrangement.",
+      "ease": "power3.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/097-piece-assembly/",
+      "poster": "posters/097-piece-assembly.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 98,
+      "id": "m100-098",
+      "slug": "outline-then-fill",
+      "en": "Outline Then Fill",
+      "family": "shape",
+      "oneLiner": "The outline or wireframe appears first, then the interior surfaces and color fill in.",
+      "ease": "power2.out",
+      "source": "awesome-ai-motion",
+      "demo": "demos/098-outline-then-fill/",
+      "poster": "posters/098-outline-then-fill.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 99,
+      "id": "m100-099",
+      "slug": "path-highlight",
+      "en": "Path Highlight",
+      "family": "shape",
+      "oneLiner": "Only a short bright stretch travels along the full line.",
+      "ease": "none",
+      "source": "awesome-ai-motion",
+      "demo": "demos/099-path-highlight/",
+      "poster": "posters/099-path-highlight.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    },
+    {
+      "n": 100,
+      "id": "m100-100",
+      "slug": "shape-split-merge",
+      "en": "Shape Split and Merge",
+      "family": "shape",
+      "oneLiner": "One shape splits into several smaller shapes, or several shapes merge into one.",
+      "ease": "power3.inOut",
+      "source": "awesome-ai-motion",
+      "demo": "demos/100-shape-split-merge/",
+      "poster": "posters/100-shape-split-merge.jpg",
+      "engines": [
+        "hyperframes",
+        "reelforge",
+        "scrolline"
+      ]
+    }
+  ]
+}

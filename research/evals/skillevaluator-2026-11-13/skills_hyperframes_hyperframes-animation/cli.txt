@@ -1,0 +1,100 @@
+             SkillEvaluator Validation Results              
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details                             ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  PASS  │ 1 checks passed; quality B 88.5/100 │
+└───────────┴────────┴─────────────────────────────────────┘
+
+╭───────────────────────╮
+│ Non-blocking Findings │
+╰───────────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 88.5/100 (Grade: B)
+  Skill Type: guide-only
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ hyperfram… │   B   │  88.5 │         85 │        90 │         85 │       100 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[PASS] Validation passed
+
+Summary:
+  • Checks performed: 1
+
+Details:
+  [OK] quality_score: Score: 88.5/100 (Grade: B) (overall_score=88.5, grade=B, 
+skill_type=guide-only)
+Issues:
+  1. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'version'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'version' to frontmatter — Semantic version (e.g., "1.0.0")
+
+  2. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  3. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  4. [QUALITY-LOW] Description very long (623 chars, recommend 50-150)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Keep descriptions concise for progressive disclosure
+
+  5. [QUALITY-LOW] No '## Purpose' section
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  6. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  7. [QUALITY-LOW] No limitations documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  8. [QUALITY-LOW] No troubleshooting section documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/hyperframes/hyperframes-animation
+/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+
+[PASS] Passed required checks
+Tier 1: 1 of 1 checks passed; 0 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Incomplete
+
+json report: 
+/Users/macbook/me/projects/oneup-studio/research/evals/skillevaluator-2026-11-13
+/skills_hyperframes_hyperframes-animation/skillevaluator-quality.json

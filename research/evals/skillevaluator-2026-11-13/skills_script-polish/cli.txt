@@ -1,0 +1,111 @@
+      SkillEvaluator Validation Results       
+┏━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Validator ┃ Status ┃ Details               ┃
+┡━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+│ QUALITY   │  FAIL  │ 1 errors, 10 warnings │
+└───────────┴────────┴───────────────────────┘
+
+╭─────────────────╮
+│ Failure Details │
+╰─────────────────╯
+
+[QUALITY]
+Skill quality scoring across Correctness (35%), Discoverability (25%), 
+Reliability (25%), and Efficiency (15%)
+
+  Overall: 79.0/100 (Grade: C)
+  Skill Type: guide-only
+
+                            Quality Scores by Skill                             
+┏━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃ Skill      ┃ Grade ┃ Score ┃ Correctne… ┃ Discover… ┃ Reliabili… ┃ Efficien… ┃
+┡━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│ script-po… │   C   │  79.0 │         65 │        90 │         75 │       100 │
+└────────────┴───────┴───────┴────────────┴───────────┴────────────┴───────────┘
+
+[FAIL] Validation failed
+
+Summary:
+  • Checks performed: 1
+  • Errors: 1 (1 high)
+  • Warnings: 10
+
+Issues:
+  1. [QUALITY-HIGH] Invalid name format: 'Script polish (VI voice)' 
+(lowercase/numbers/hyphens only)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_correctness
+     Fix:     Use only lowercase letters, numbers, and hyphens
+
+  2. [QUALITY-LOW] No examples provided
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add example usage with code blocks
+
+  3. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'version'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'version' to frontmatter — Semantic version (e.g., "1.0.0")
+
+  4. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.author'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'author' under metadata: — Author name or team (under 
+metadata:)
+
+  5. [QUALITY-MEDIUM] SKILL_SPEC recommended field missing: 'metadata.tags'
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_correctness
+     Fix:     Add 'tags' under metadata: — Categorization tags (under metadata:,
+list of 1-5 items)
+
+  6. [QUALITY-LOW] Description very long (283 chars, recommend 50-150)
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Keep descriptions concise for progressive disclosure
+
+  7. [QUALITY-LOW] No '## Purpose' section
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_discoverability
+     Fix:     Add purpose section to clarify use cases
+
+  8. [QUALITY-LOW] No mention of error handling or validation
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document expected errors and how to handle them
+
+  9. [QUALITY-LOW] No prerequisites/requirements documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_reliability
+     Fix:     Document dependencies, API keys, or setup needed
+
+  10. [QUALITY-LOW] No limitations documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Limitations' section with known issues/constraints
+
+  11. [QUALITY-LOW] No troubleshooting section documented
+     File:    
+/Users/macbook/me/projects/oneup-studio/skills/script-polish/SKILL.md
+     Check:   quality_reliability
+     Fix:     Add '## Troubleshooting' with Error/Cause/Solution patterns
+
+
+[FAIL] Changes required
+Tier 1: 0 of 1 checks passed; 1 failed, 0 incomplete, 0 skipped, 0 N/A
+Publication eligibility: Not eligible
+
+json report: 
+/Users/macbook/me/projects/oneup-studio/research/evals/skillevaluator-2026-11-13
+/skills_script-polish/skillevaluator-quality.json
+Error: quality check failed
