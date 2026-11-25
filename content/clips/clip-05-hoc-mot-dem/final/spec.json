@@ -37,6 +37,12 @@
    "date": "2026-11-25",
    "dl": "DL-069",
    "note": "Viết lại theo khung «bản chất» (script-v21-LOCKED.md); bản v4 cũ chuyển sang archive/v4-final/"
+  },
+  {
+   "v": "v21",
+   "date": "2026-11-25",
+   "dl": "DL-069",
+   "note": "Gate 1 (lời + bảng hiệu ứng) Hiệp «Duyệt» 25/11/2026; bước tiếp: voice F5 trên box"
   }
  ],
  "cover": {
@@ -1802,5 +1808,10 @@
     }
    ]
   }
- ]
+ ],
+ "gate1": {
+  "status": "approved",
+  "by": "Hiệp",
+  "date": "2026-11-25"
+ }
 }

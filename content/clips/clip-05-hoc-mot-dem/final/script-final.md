@@ -3,7 +3,8 @@ title: "clip-05 script final v21: Đọc đâu nhớ đó = tự trả bài (HTB
 date: 2026-11-25
 id: clip-05.script-final
 type: script
-status: locked
+status: gate1-approved
+gate1: "Hiệp «Duyệt» 25/11/2026 (lời + bảng hiệu ứng)"
 locked: "Hiệp «Chốt» 25/11/2026 (DL-069): giữ 23.14 + gọi lại clip-04, không chèn trend (ngoại lệ L-090), giữ thanh tiêu đề (ngoại lệ L-050), ~90s OK"
 updated: 2026-11-25
 tags: [script, clip-05, dark, week-1, howtolivebetter-23.14, ban-chat]
