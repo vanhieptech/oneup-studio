@@ -14,7 +14,7 @@ tags: [clip-05, post, tiktok, week-1, dark]
 ## 1. File video
 ```
 Đường dẫn: content/clips/clip-05-hoc-mot-dem/final/out/clip-05-final.mp4 (media, không vào git)
-Thời lượng: 89,0s đo thật sau render · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+Thời lượng: 104,5s đo thật sau render · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
 ```
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
