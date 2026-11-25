@@ -1,0 +1,558 @@
+{
+ "total": 104.469,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "/home/user/oneup-studio/content/clips/clip-05-hoc-mot-dem/final/plan-A.voiced.json",
+   "dur": 104.288,
+   "mp4": "/home/user/oneup-studio/video-engine/out/clip-05-final-A.mp4",
+   "fx": null,
+   "scene_starts": [
+    1.519,
+    4.811,
+    8.333,
+    14.438,
+    19.372,
+    25.292,
+    31.276000000000003,
+    37.373000000000005,
+    44.923,
+    48.849000000000004,
+    57.034000000000006,
+    60.55800000000001,
+    65.80900000000001,
+    69.53200000000001,
+    74.18800000000002,
+    79.50400000000002,
+    86.76000000000002,
+    91.07800000000002,
+    94.26700000000002,
+    101.28800000000003
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Thì cái, bản chất...",
+   "en": "So what's the real trick…",
+   "emotion": "happy",
+   "key": "c05v21s-b01",
+   "local": 0.12,
+   "dur": 1.339,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01a",
+   "speaker": "hiep",
+   "say": "của cái việc đọc đâu nhớ đó là như thế nào?",
+   "en": "…to remembering what you read?",
+   "emotion": "happy",
+   "key": "c05v21s-b01a",
+   "local": 0.02,
+   "dur": 3.212,
+   "t": 1.539
+  },
+  {
+   "beat": "clip-05.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "Chứ đọc xong gấp sách lại, là quên sạch trơn hà.",
+   "en": "Close the book, and it's all gone.",
+   "emotion": "despair",
+   "key": "c05v21s-b01b",
+   "local": 0.02,
+   "dur": 3.442,
+   "t": 4.831
+  },
+  {
+   "beat": "clip-05.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Đọc lại thì thấy quen quen, kiểu “Ừ… cái này biết rồi…”, mà ai hỏi là hông kể nổi.",
+   "en": "Rereading feels familiar, \"yeah, I know this…\" but you can't explain it.",
+   "emotion": "confused",
+   "key": "c05v21s-b02",
+   "local": 0.15,
+   "dur": 5.705,
+   "t": 8.483
+  },
+  {
+   "beat": "clip-05.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Vì đọc lại thì chữ nằm sẵn trên trang, đâu có bắt mình tự nhớ ra.",
+   "en": "When you reread, the words are right there. Nothing makes you recall.",
+   "emotion": "focused",
+   "key": "c05v21s-b03",
+   "local": 0.15,
+   "dur": 4.534,
+   "t": 14.588
+  },
+  {
+   "beat": "clip-05.b07",
+   "scene": "b07a",
+   "speaker": "hiep",
+   "say": "Mà chuyện này có thí nghiệm hẳn hoi, năm hai nghìn không trăm lẻ sáu với một trăm hai mươi sinh viên nè.",
+   "en": "There's a real study: 2006, 120 students.",
+   "emotion": "focused",
+   "key": "c05v21s-b07a",
+   "local": 0.15,
+   "dur": 5.52,
+   "t": 19.522
+  },
+  {
+   "beat": "clip-05.b07",
+   "scene": "b07b",
+   "speaker": "hiep",
+   "say": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
+   "en": "Reread one passage, close the other, recall it from the title.",
+   "emotion": "focused",
+   "key": "c05v21s-b07b",
+   "local": 0.15,
+   "dur": 5.584,
+   "t": 25.442
+  },
+  {
+   "beat": "clip-05.b07",
+   "scene": "b07c",
+   "speaker": "hiep",
+   "say": "Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn. Nhưng nhóm đo sau một tuần thì lật ngược.",
+   "en": "Tested after 5 minutes: rereading wins. Tested after a week: it flips.",
+   "emotion": "focused",
+   "key": "c05v21s-b07c",
+   "local": 0.15,
+   "dur": 5.697,
+   "t": 31.426
+  },
+  {
+   "beat": "clip-05.b07",
+   "scene": "b07d",
+   "speaker": "hiep",
+   "say": "Tự viết còn nhớ năm mươi sáu phần trăm ý, đọc lại chỉ bốn mươi hai. Nhưng năm mấy chục cũng đâu phải nhớ hết.",
+   "en": "Recall: 56% of ideas. Reread: 42%. Still not everything.",
+   "emotion": "focused",
+   "key": "c05v21s-b07d",
+   "local": 0.15,
+   "dur": 7.15,
+   "t": 37.523
+  },
+  {
+   "beat": "clip-05.b08",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.",
+   "en": "So the skill to train: recalling with the book closed.",
+   "emotion": "focused",
+   "key": "c05v21s-b08",
+   "local": 0.15,
+   "dur": 3.526,
+   "t": 45.073
+  },
+  {
+   "beat": "clip-05.b09",
+   "scene": "b09",
+   "speaker": "hiep",
+   "say": "Thứ nhất thì clíp trước nói rồi đó. Đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
+   "en": "First, like last video: finish a chapter, close the book, write what you remember from the title.",
+   "emotion": "focused",
+   "key": "c05v21s-b09",
+   "local": 0.15,
+   "dur": 7.785,
+   "t": 48.999
+  },
+  {
+   "beat": "clip-05.b09",
+   "scene": "b09b",
+   "speaker": "hiep",
+   "say": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.",
+   "en": "Like me: write whatever you can recall.",
+   "emotion": "happy",
+   "key": "c05v21s-b09b",
+   "local": 0.15,
+   "dur": 3.124,
+   "t": 57.184
+  },
+  {
+   "beat": "clip-05.b09",
+   "scene": "b09c",
+   "speaker": "hiep",
+   "say": "Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.",
+   "en": "Second: only after writing, open the book and check. Fix what's wrong.",
+   "emotion": "focused",
+   "key": "c05v21s-b09c",
+   "local": 0.15,
+   "dur": 4.851,
+   "t": 60.708
+  },
+  {
+   "beat": "clip-05.b09",
+   "scene": "b09d",
+   "speaker": "hiep",
+   "say": "Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu.",
+   "en": "Self-grading: no one's writing you up.",
+   "emotion": "happy",
+   "key": "c05v21s-b09d",
+   "local": 0.15,
+   "dur": 3.323,
+   "t": 65.959
+  },
+  {
+   "beat": "clip-05.b09",
+   "scene": "b09e",
+   "speaker": "hiep",
+   "say": "Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.",
+   "en": "This step is from the handbook, not the study.",
+   "emotion": "focused",
+   "key": "c05v21s-b09e",
+   "local": 0.15,
+   "dur": 4.256,
+   "t": 69.682
+  },
+  {
+   "beat": "clip-05.b09",
+   "scene": "b09f",
+   "speaker": "hiep",
+   "say": "Và cuối cùng, chưa chấm thì đừng liếc sách, liếc cái là thành đọc lại.",
+   "en": "And finally: no peeking before checking. One peek and you're rereading.",
+   "emotion": "focused",
+   "key": "c05v21s-b09f",
+   "local": 0.45,
+   "dur": 4.616,
+   "t": 74.638
+  },
+  {
+   "beat": "clip-05.b10",
+   "scene": "b10a",
+   "speaker": "hiep",
+   "say": "“Em kia, gấp sách lại rồi nhớ gì thì viết hết ra coi! Xong rồi mở sách ra, tự chấm đi!”",
+   "en": "\"You! Close the book and write what you remember! Then open it, grade yourself!\"",
+   "emotion": "focused",
+   "key": "c05v21s-b10a",
+   "local": 0.45,
+   "dur": 6.556,
+   "t": 79.954
+  },
+  {
+   "beat": "clip-05.b10",
+   "scene": "b10b",
+   "speaker": "hiep",
+   "say": "“Dạ… em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi…”",
+   "en": "\"Just a few mistakes, all fixed…\"",
+   "emotion": "sad",
+   "key": "c05v21s-b10b",
+   "local": 0.15,
+   "dur": 3.918,
+   "t": 86.91
+  },
+  {
+   "beat": "clip-05.b11",
+   "scene": "b11a",
+   "speaker": "hiep",
+   "say": "Đọc đâu nhớ đó là tự trả bài vậy đó.",
+   "en": "Remembering = quizzing yourself.",
+   "emotion": "happy",
+   "key": "c05v21s-b11a",
+   "local": 0.15,
+   "dur": 2.789,
+   "t": 91.228
+  },
+  {
+   "beat": "clip-05.b11",
+   "scene": "b11b",
+   "speaker": "hiep",
+   "say": "Mà chắc nhiều bạn có cách hay hơn mình nữa, bạn hay làm gì để nhớ lâu, com men cho mình biết với nha.",
+   "en": "You probably have better tricks than me. What helps you remember? Let me know in the comments.",
+   "emotion": "happy",
+   "key": "c05v21s-b11b",
+   "local": 0.15,
+   "dur": 6.621,
+   "t": 94.417
+  }
+ ],
+ "transitions": [
+  {
+   "at": 1.519,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 4.811,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 8.333,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 14.438,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 19.372,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 25.292,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 31.276,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 37.373,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 44.923,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 48.849,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 57.034,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 60.558,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 65.809,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 69.532,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 74.188,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 79.504,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 86.76,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 91.078,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 94.267,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 101.288,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "pop",
+   "at": 2.139
+  },
+  {
+   "name": "snap",
+   "at": 5.331
+  },
+  {
+   "name": "pop",
+   "at": 10.883
+  },
+  {
+   "name": "tick",
+   "at": 15.788
+  },
+  {
+   "name": "ding",
+   "at": 21.122
+  },
+  {
+   "name": "pen",
+   "at": 28.042
+  },
+  {
+   "name": "pop",
+   "at": 35.576
+  },
+  {
+   "name": "rise",
+   "at": 37.923
+  },
+  {
+   "name": "stamp",
+   "at": 46.673
+  },
+  {
+   "name": "pen",
+   "at": 52.399
+  },
+  {
+   "name": "tick",
+   "at": 58.984
+  },
+  {
+   "name": "snap",
+   "at": 60.708
+  },
+  {
+   "name": "pen",
+   "at": 63.108
+  },
+  {
+   "name": "stamp",
+   "at": 67.459
+  },
+  {
+   "name": "tick",
+   "at": 70.582
+  },
+  {
+   "name": "click",
+   "at": 76.638
+  },
+  {
+   "name": "click",
+   "at": 79.954
+  },
+  {
+   "name": "click",
+   "at": 82.554
+  },
+  {
+   "name": "pop",
+   "at": 87.91
+  },
+  {
+   "name": "ding",
+   "at": 92.428
+  },
+  {
+   "name": "pop",
+   "at": 98.017
+  },
+  {
+   "name": "swish",
+   "at": 1.399
+  },
+  {
+   "name": "swish",
+   "at": 4.691
+  },
+  {
+   "name": "swish",
+   "at": 8.213
+  },
+  {
+   "name": "swish",
+   "at": 14.318
+  },
+  {
+   "name": "swish",
+   "at": 19.252
+  },
+  {
+   "name": "swish",
+   "at": 25.172
+  },
+  {
+   "name": "swish",
+   "at": 31.156
+  },
+  {
+   "name": "swish",
+   "at": 37.253
+  },
+  {
+   "name": "swish",
+   "at": 44.803
+  },
+  {
+   "name": "swish",
+   "at": 48.729
+  },
+  {
+   "name": "swish",
+   "at": 56.914
+  },
+  {
+   "name": "swish",
+   "at": 60.438
+  },
+  {
+   "name": "swish",
+   "at": 65.689
+  },
+  {
+   "name": "swish",
+   "at": 69.412
+  },
+  {
+   "name": "swish",
+   "at": 74.068
+  },
+  {
+   "name": "swish",
+   "at": 79.384
+  },
+  {
+   "name": "swish",
+   "at": 86.64
+  },
+  {
+   "name": "swish",
+   "at": 90.958
+  },
+  {
+   "name": "swish",
+   "at": 94.147
+  },
+  {
+   "name": "swish",
+   "at": 101.168
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

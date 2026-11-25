@@ -34,7 +34,7 @@ def gen():
     json.dump(units,open(W+'/units.json','w'),ensure_ascii=False,indent=0)
     ref=REPO+"/assets/voice-refs/thai-son.wav";rt="Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha."
     for h in (0,1):
-      it=[{"t":u["t"],"seed":sd,"speed":float(arg("--speed","0.9")) if u["role"]=="Thầy" else 0.95,"out":f"{W}/{u['key']}-{sd}.wav"} for n,u in enumerate(units) if n%2==h for sd in (11,37)]
+      it=[{"t":u["t"],"seed":sd,"speed":float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95)),"out":f"{W}/{u['key']}-{sd}.wav"} for n,u in enumerate(units) if n%2==h for sd in (11,37)]
       json.dump({"ref":ref,"ref_text":rt,"items":it},open(f"{W}/batch{h}.json","w"),ensure_ascii=False)
     print(len(units)); [print(u['key'],u['t'],u['emph']) for u in units]
 
@@ -44,7 +44,7 @@ def helpers():
     from faster_whisper import WhisperModel
     m=WhisperModel("small",device="cpu",compute_type="int8")
     U=json.load(open(W+'/units.json')); OUT=REPO+"/video-engine/public/voice"; SR=48000; FPS=30
-    AL=[("tik tok","tíc tóc"),("tiktok","tíc tóc"),("tích tóc","tíc tóc"),("tiết tóc","tíc tóc"),("thứ 2","thứ hai"),("laptop","láp tóp"),("clip","clíp"),("file","phai"),("comment","com men"),("steel","xtiu"),("691","sáu trăm chín mươi mốt"),("9 giờ","chín giờ"),("1 dòng","một dòng"),("3 thứ","ba thứ"),("kruger","cru gơ"),("krugo","cru gơ"),("evans","ê vần"),("evan","ê vần"),("giang","yang"),("222","hai trăm hai mươi hai"),("48","bốn mươi tám"),("đúng lúc kỳ","đun lốt ki"),("đùa lúc kỳ","đun lốt ki"),("đúng lúc ki","đun lốt ki"),("đùa lúc ki","đun lốt ki"),("đúng lớp kỳ","đun lốt ki"),("đùa lớp kỳ","đun lốt ki"),("10","mười"),("2","hai"),("3","ba"),("1","một")]
+    AL=[("2006","hai nghìn không trăm lẻ sáu"),("120","một trăm hai mươi"),("56","năm mươi sáu"),("42","bốn mươi hai"),("5 phút","năm phút"),("1 tuần","một tuần"),("tik tok","tíc tóc"),("tiktok","tíc tóc"),("tích tóc","tíc tóc"),("tiết tóc","tíc tóc"),("thứ 2","thứ hai"),("laptop","láp tóp"),("clip","clíp"),("file","phai"),("comment","com men"),("steel","xtiu"),("691","sáu trăm chín mươi mốt"),("9 giờ","chín giờ"),("1 dòng","một dòng"),("3 thứ","ba thứ"),("kruger","cru gơ"),("krugo","cru gơ"),("evans","ê vần"),("evan","ê vần"),("giang","yang"),("222","hai trăm hai mươi hai"),("48","bốn mươi tám"),("đúng lúc kỳ","đun lốt ki"),("đùa lúc kỳ","đun lốt ki"),("đúng lúc ki","đun lốt ki"),("đùa lúc ki","đun lốt ki"),("đúng lớp kỳ","đun lốt ki"),("đùa lớp kỳ","đun lốt ki"),("10","mười"),("2","hai"),("3","ba"),("1","một")]
     LEAK=set("hôm nay trời sài gòn mát mẻ mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha".split())
     def n(s):
       s=unicodedata.normalize("NFC",s.lower()); s=re.sub(r"[^\w ]"," ",s); s=" ".join(s.split())
@@ -194,11 +194,14 @@ else:
         json.dump(res,open(W+"/units-stt.json","w"),ensure_ascii=False,indent=1)
     elif CMD == "stitch":
         U=json.load(open(W+'/units.json')); SR=48000
+        COMMA_GAP=float(json.load(open(SPEC)).get('comma_gap',0.18))
+        LINE_TEMPO={k:float(v) for k,v in (json.load(open(SPEC)).get('line_tempo') or {}).items()}
+        COMMA_GAP_LINE={k:float(v) for k,v in (json.load(open(SPEC)).get('comma_gap_line') or {}).items()}
         def gap(t,stemfirst,nxt=None):  # prosody-plan (b): comma .15-.25, period .35-.5, +0.08 before a stressed unit
           t=t.strip()
           if stemfirst: return 0.25
           # delivery rev3 (pacing-v14.md root fix): comma 0.18 < colon 0.25 < sentence 0.35; '///' before «Bút dừng» 0.4; voice-only uses prosody-check.py voice
-          g=0.35 if t[-1:] in '.?!…' else 0.25 if t[-1:]==':' else 0.18 if t[-1:]==',' else 0.0
+          g=0.35 if t[-1:] in '.?!…' else 0.25 if t[-1:]==':' else COMMA_GAP if t[-1:]==',' else 0.0
           return 0.4 if nxt and nxt["t"].startswith("Bút dừng") else g
         def env(x):
           hop=SR/FPS; e=[float(np.sqrt(np.mean(x[int(i*hop):int((i+1)*hop)]**2))) if len(x[int(i*hop):int((i+1)*hop)]) else 0 for i in range(int(len(x)/hop)+1)]
@@ -211,8 +214,9 @@ else:
         for ln in order:
           segs=[np.zeros(int(.06*SR),'float32')]
           for i,u in enumerate(lines[ln]):
-            segs.append(np.load(f"{W}/{u['key']}.npy").astype('float32'))
-            if i<len(lines[ln])-1: segs.append(np.zeros(int(gap(u["t"],u["stem"] and i==0,lines[ln][i+1])*SR),'float32'))
+            _x=np.load(f"{W}/{u['key']}.npy").astype('float32'); _lt=LINE_TEMPO.get(ln,1.0)
+            segs.append(rb(_x,tempo=_lt) if _lt!=1.0 else _x)  # spec line_tempo: slow a too-fast line (L-070), pitch kept
+            if i<len(lines[ln])-1: segs.append(np.zeros(int((COMMA_GAP_LINE[ln] if ln in COMMA_GAP_LINE and u["t"].strip()[-1:]=="," else gap(u["t"],u["stem"] and i==0,lines[ln][i+1]))*SR),'float32'))  # spec comma_gap_line
           segs.append(np.zeros(int(.1*SR),'float32')); y=np.concatenate(segs); y=y/max(1e-4,np.abs(y).max())*0.89
           dst=f"{OUT}/{PREFIX}-{ln}"
           subprocess.run(["ffmpeg","-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",dst+".wav"],input=y.tobytes(),check=True)

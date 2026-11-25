@@ -86,10 +86,10 @@ Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/se
 | b01a | remotion | mmx-cut-on-motion: cắt cận hơn, Hiệp nghiêng đầu nhướn mày, cuốn sách mở bật vào khung | “đọc đâu nhớ đó” | `pop` → “đọc đâu nhớ đó” | cut (`swish`) |
 | b01b | remotion | mmx-cut-on-motion: cuốn sách đóng «bộp», bong bóng ý trống trơn bên đầu Hiệp | “quên sạch” | `snap` → “gấp sách” | cut (`swish`) |
 | b02 | remotion | Hiệp lim dim gật gù trên trang sách mở, rồi bạn chibi ló vào hỏi, Hiệp đơ | “quen quen” | `pop` → “ai hỏi” | cut (`swish`) |
-| b03 | remotion | Trang sách mở to, ngón tay dò theo dòng có sẵn; trang đóng lại thì tay khựng | “nằm sẵn trên trang” | `tick` → “nằm sẵn” | cut (`swish`) |
+| b03 | remotion | Cuốn sách mở to trước mặt Hiệp, chữ in sẵn; tới 'tự nhớ ra' cuốn sách khép lại, Hiệp khựng | “nằm sẵn trên trang” | `tick` → “nằm sẵn” | cut (`swish`) |
 | b07a | remotion | hf-motion-graphic: hàng sinh viên chibi, mỗi người hai tờ giấy, một mở một úp; tag nguồn | “2006” | `ding` → “2006” | cut (`swish`) |
 | b07b | remotion | hf-motion-graphic: một tờ để mở (đọc lại), tờ kia lật úp, tay viết theo vạch tiêu đề, không tờ đáp án | “gấp lại” | `pen` → “tự viết” | cut (`swish`) |
-| b07c | remotion | Đồng hồ cát nhỏ chảy xong, cột «sách mở» cao hơn; rồi lịch xé một xấp, hai cột đổi chỗ «bụp» | “lật ngược” | `pop` → “lật ngược” | cut (`swish`) |
+| b07c | remotion | Đồng hồ cát chảy, cột xám (đọc lại) cao hơn; lịch xé một xấp; tới 'lật ngược' hai cột đổi chỗ, cột đen (tự viết) vượt lên | “lật ngược” | `pop` → “lật ngược” | cut (`swish`) |
 | b07d | remotion | Hai cột 56 / 42 (cột tự viết cao hơn), phía trên chừa khoảng trống lớn tới vạch 100 | “56 phần trăm” | `rise` → “56” | cut (`swish`) |
 | b08 | remotion | Hiệp úp sách xuống bàn «bộp», gật chắc nịch | “tự nhớ khi sách đóng” | `stamp` → “sách đóng” | cut (`swish`) |
 | b09 | remotion | tdev-badge: ô ① sách úp hiện trên bảng; tờ giấy chỉ có vạch tiêu đề, bút chạy theo dòng | “tự viết ra” | `pen` → “tự viết” | cut (`swish`) |

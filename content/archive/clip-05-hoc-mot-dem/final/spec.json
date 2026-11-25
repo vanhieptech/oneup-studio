@@ -7,7 +7,7 @@
  "pillar": "5 Học & đầu tư bản thân",
  "story": "monologue Hiệp, khung «bản chất» theo video mẫu (L-039); nhập vai cô giáo trả bài; L-050 nghĩa bằng vật + hành động",
  "trend": "none — ngoại lệ L-090 Hiệp quyết (DL-069); khung meme «bản chất» F06 (research/trends/2026-10-15/audio)",
- "voice_prefix": "c05v21",
+ "voice_prefix": "c05v21s",
  "mix": "linear",
  "layout": "tiktok",
  "length_target": [
@@ -43,6 +43,11 @@
    "date": "2026-11-25",
    "dl": "DL-069",
    "note": "Gate 1 (lời + bảng hiệu ứng) Hiệp «Duyệt» 25/11/2026; bước tiếp: voice F5 trên box"
+  },
+  {
+   "v": "v21",
+   "date": "2026-11-25",
+   "note": "Thu lại giọng speed 0.8 (L-070: >5 âm tiết/s ở 19/20 câu khi speed 0.95), comma_gap 0.1"
   }
  ],
  "cover": {
@@ -187,21 +192,24 @@
       {
        "speaker": "hiep",
        "emotion": "happy",
-       "text": "Thì cái **bản chất**…",
-       "say": "Thì cái bản chất...",
+       "text": "Thì cái, **bản chất**…",
+       "say": "Thì cái, bản chất...",
        "en": "So what's the real trick…",
        "hl": [
         3
        ],
        "phrases": [
         {
-         "t": "Thì cái"
+         "t": "Thì cái,",
+         "keep": true
         },
         {
-         "t": "{nhấn: bản chất}..."
+         "t": "{nhấn: bản chất}...",
+         "keep": true
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b01.wav"
       }
      ],
      "stage": {
@@ -274,7 +282,8 @@
          "t": "là như thế nào?"
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b01a.wav"
       }
      ],
      "stage": {
@@ -357,7 +366,8 @@
          "t": "là {nhấn: quên sạch} trơn hà."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b01b.wav"
       }
      ],
      "stage": {
@@ -439,7 +449,8 @@
          "t": "mà ai hỏi là hông kể nổi."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b02.wav"
       }
      ],
      "stage": {
@@ -457,9 +468,18 @@
      "framing": "medium",
      "push": 0.04,
      "transition": "cut",
-     "cast": [],
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.78,
+       "facing": "left",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "confused"
+      }
+     ],
      "fx": {
-      "visual": "Trang sách mở to, ngón tay dò theo dòng có sẵn; trang đóng lại thì tay khựng",
+      "visual": "Cuốn sách mở to trước mặt Hiệp, chữ in sẵn; tới 'tự nhớ ra' cuốn sách khép lại, Hiệp khựng",
       "word": "nằm sẵn trên trang"
      },
      "sfx": [
@@ -479,9 +499,9 @@
       },
       {
        "kind": "tome",
-       "x": 540,
+       "x": 340,
        "y": 1300,
-       "s": 0.8,
+       "s": 0.75,
        "closedDy": 120,
        "keys": [
         [
@@ -517,7 +537,8 @@
          "t": "đâu có bắt mình tự nhớ ra."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b03.wav"
       }
      ],
      "stage": {
@@ -587,7 +608,9 @@
          "t": "với {nhấn: một trăm hai mươi} sinh viên nè."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b07a.wav",
+       "bubble": false
       }
      ],
      "stage": {
@@ -689,7 +712,9 @@
          "t": "chỉ nhìn tiêu đề rồi tự viết ra."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b07b.wav",
+       "bubble": false
       }
      ],
      "stage": {
@@ -709,14 +734,14 @@
      "transition": "cut",
      "cast": [],
      "fx": {
-      "visual": "Đồng hồ cát nhỏ chảy xong, cột «sách mở» cao hơn; rồi lịch xé một xấp, hai cột đổi chỗ «bụp»",
+      "visual": "Đồng hồ cát chảy, cột xám (đọc lại) cao hơn; lịch xé một xấp; tới 'lật ngược' hai cột đổi chỗ, cột đen (tự viết) vượt lên",
       "word": "lật ngược"
      },
      "sfx": [
       {
        "name": "pop",
        "atLine": 0,
-       "offset": 3.2,
+       "offset": 4.15,
        "word": "lật ngược"
       }
      ],
@@ -750,7 +775,10 @@
        "y": 1400,
        "a": 300,
        "b": 330,
-       "riseAt": 0.6
+       "riseAt": 0.6,
+       "a2": 336,
+       "b2": 252,
+       "flipAt": 4.15
       }
      ],
      "lines": [
@@ -777,7 +805,9 @@
          "t": "thì {nhấn: lật ngược}."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b07c.wav",
+       "bubble": false
       }
      ],
      "stage": {
@@ -841,7 +871,9 @@
          "t": "Nhưng năm mấy chục cũng đâu phải nhớ hết."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b07d.wav",
+       "bubble": false
       }
      ],
      "stage": {
@@ -925,7 +957,8 @@
          "t": "là {nhấn: tự nhớ khi sách đóng}."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b08.wav"
       }
      ],
      "stage": {
@@ -974,9 +1007,9 @@
       },
       {
        "kind": "tome",
-       "x": 170,
+       "x": 130,
        "y": 1300,
-       "s": 0.45,
+       "s": 0.4,
        "closedDy": 120,
        "keys": [
         [
@@ -987,9 +1020,9 @@
       },
       {
        "kind": "paper",
-       "x": 560,
-       "y": 1250,
-       "s": 0.6,
+       "x": 400,
+       "y": 1290,
+       "s": 0.5,
        "rows": [
         [
          0,
@@ -1028,7 +1061,8 @@
          "t": "nhìn tiêu đề rồi tự viết ra những gì nhớ."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b09.wav"
       }
      ],
      "stage": {
@@ -1077,9 +1111,9 @@
       },
       {
        "kind": "tome",
-       "x": 170,
+       "x": 130,
        "y": 1300,
-       "s": 0.45,
+       "s": 0.4,
        "closedDy": 120,
        "keys": [
         [
@@ -1090,9 +1124,9 @@
       },
       {
        "kind": "paper",
-       "x": 560,
-       "y": 1250,
-       "s": 0.6,
+       "x": 400,
+       "y": 1290,
+       "s": 0.5,
        "rows": [
         [
          0,
@@ -1127,7 +1161,8 @@
          "t": "nhớ được bao nhiêu thì {nhấn: viết bấy nhiêu}."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b09b.wav"
       }
      ],
      "stage": {
@@ -1182,9 +1217,9 @@
       },
       {
        "kind": "tome",
-       "x": 200,
+       "x": 130,
        "y": 1300,
-       "s": 0.45,
+       "s": 0.4,
        "closedDy": 120,
        "keys": [
         [
@@ -1199,9 +1234,9 @@
       },
       {
        "kind": "paper",
-       "x": 600,
-       "y": 1250,
-       "s": 0.6,
+       "x": 400,
+       "y": 1290,
+       "s": 0.5,
        "rows": [
         [
          0,
@@ -1240,7 +1275,8 @@
          "t": "sai chỗ nào sửa chỗ đó."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b09c.wav"
       }
      ],
      "stage": {
@@ -1323,7 +1359,8 @@
          "t": "hông ai ghi {nhấn: sổ đầu bài} đâu."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b09d.wav"
       }
      ],
      "stage": {
@@ -1409,7 +1446,8 @@
          "t": "chứ thí nghiệm kia hông có làm."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b09e.wav"
       }
      ],
      "stage": {
@@ -1458,9 +1496,9 @@
       },
       {
        "kind": "tome",
-       "x": 170,
+       "x": 130,
        "y": 1300,
-       "s": 0.45,
+       "s": 0.4,
        "closedDy": 120,
        "keys": [
         [
@@ -1471,9 +1509,9 @@
       },
       {
        "kind": "paper",
-       "x": 560,
-       "y": 1250,
-       "s": 0.6,
+       "x": 400,
+       "y": 1290,
+       "s": 0.5,
        "rows": [
         [
          0,
@@ -1507,7 +1545,8 @@
          "t": "liếc cái là thành đọc lại."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b09f.wav"
       }
      ],
      "stage": {
@@ -1603,7 +1642,8 @@
          "t": "Xong rồi mở sách ra, tự chấm đi!”"
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b10a.wav"
       }
      ],
      "stage": {
@@ -1662,7 +1702,8 @@
          "t": "mà chỗ sai em sửa hết rồi…”"
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b10b.wav"
       }
      ],
      "stage": {
@@ -1735,7 +1776,8 @@
          "t": "là tự {nhấn: trả bài} vậy đó."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b11a.wav"
       }
      ],
      "stage": {
@@ -1797,7 +1839,8 @@
          "t": "{nhấn: com men} cho mình biết với nha."
         }
        ],
-       "voice_role": "Hiệp"
+       "voice_role": "Hiệp",
+       "voice_file": "voice/c05v21s-b11b.wav"
       }
      ],
      "stage": {
@@ -1813,5 +1856,32 @@
   "status": "approved",
   "by": "Hiệp",
   "date": "2026-11-25"
+ },
+ "voice_speed": 0.8,
+ "comma_gap": 0.14,
+ "line_tempo": {
+  "b01a": 0.786,
+  "b01b": 0.786,
+  "b02": 0.888,
+  "b03": 0.895,
+  "b07b": 0.885,
+  "b07c": 0.922,
+  "b07d": 0.888,
+  "b08": 0.83,
+  "b09": 0.806,
+  "b09b": 0.923,
+  "b09c": 0.916,
+  "b09d": 0.894,
+  "b09e": 0.842,
+  "b09f": 0.802,
+  "b10a": 0.848,
+  "b10b": 0.887,
+  "b11a": 0.856,
+  "b11b": 0.841
+ },
+ "comma_gap_line": {
+  "b07b": 0.06,
+  "b09f": 0.04,
+  "b01": 0.1
  }
 }

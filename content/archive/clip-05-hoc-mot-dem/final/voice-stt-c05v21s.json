@@ -1,0 +1,192 @@
+{
+ "b01": {
+  "line_sim": 0.875,
+  "units": {
+   "b01-0": 0.0,
+   "b01-1": 1.0
+  },
+  "stt": "Thì cái, bán chất!",
+  "dur": 1.34
+ },
+ "b01a": {
+  "line_sim": 0.864,
+  "units": {
+   "b01a-0": 0.929,
+   "b01a-1": 1.0
+  },
+  "stt": "Cú cái việc đọc đầu nhớ đó là như thế nào?",
+  "dur": 3.21
+ },
+ "b01b": {
+  "line_sim": 0.818,
+  "units": {
+   "b01b-0": 1.0,
+   "b01b-1": 0.9
+  },
+  "stt": "Chứ đọc sòng gấp sách lại là quân sạch trơn hà.",
+  "dur": 3.44
+ },
+ "b02": {
+  "line_sim": 0.895,
+  "units": {
+   "b02-0": 1.0,
+   "b02-1": 0.833,
+   "b02-2": 0.857
+  },
+  "stt": "Đọc lại thì thấy quen quen, kiểu, ở cái này biết rồi, mà ai hỏi là không kể nổi.",
+  "dur": 5.71
+ },
+ "b03": {
+  "line_sim": 0.969,
+  "units": {
+   "b03-0": 1.0,
+   "b03-1": 1.0,
+   "b03-2": 1.0
+  },
+  "stt": "Vì độc lại thì chữ nằm sẵn trên trang đâu có bắt mình tự nhớ ra.",
+  "dur": 4.53
+ },
+ "b07a": {
+  "line_sim": 1.0,
+  "units": {
+   "b07a-0": 0.938,
+   "b07a-1": 1.0,
+   "b07a-2": 1.0
+  },
+  "stt": "Mà chuyện này có thí nghiệm hẳn hoi năm 2006 với 120 sinh viên nè.",
+  "dur": 5.52
+ },
+ "b07b": {
+  "line_sim": 1.0,
+  "units": {
+   "b07b-0": 0.929,
+   "b07b-1": 1.0,
+   "b07b-2": 1.0
+  },
+  "stt": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
+  "dur": 5.58
+ },
+ "b07c": {
+  "line_sim": 1.0,
+  "units": {
+   "b07c-0": 1.0,
+   "b07c-1": 1.0,
+   "b07c-2": 0.917,
+   "b07c-3": 1.0
+  },
+  "stt": "Nhóm đo sau 5 phút đoạn đọc lại nhớ nhiều hơn, nhưng nhóm đo sau 1 tuần thì lật ngược.",
+  "dur": 5.7
+ },
+ "b07d": {
+  "line_sim": 0.96,
+  "units": {
+   "b07d-0": 1.0,
+   "b07d-1": 1.0,
+   "b07d-2": 1.0
+  },
+  "stt": "Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42, nhưng năm bấy chục cũng đâu phải nhớ hết.",
+  "dur": 7.15
+ },
+ "b08": {
+  "line_sim": 0.875,
+  "units": {
+   "b08-0": 0.917,
+   "b08-1": 1.0
+  },
+  "stt": "Vậy hóa ra, thư đáng tập là tự nhớ khi sắt đóng.",
+  "dur": 3.53
+ },
+ "b09": {
+  "line_sim": 0.962,
+  "units": {
+   "b09-0": 1.0,
+   "b09-1": 1.0,
+   "b09-2": 1.0
+  },
+  "stt": "Thứ nhất thì clip trước nói rồi đó, đọc xong một chương là gấp sắt lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
+  "dur": 7.78
+ },
+ "b09b": {
+  "line_sim": 1.0,
+  "units": {
+   "b09b-0": 1.0
+  },
+  "stt": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu?",
+  "dur": 3.12
+ },
+ "b09c": {
+  "line_sim": 1.0,
+  "units": {
+   "b09c-0": 1.0,
+   "b09c-1": 1.0,
+   "b09c-2": 0.667
+  },
+  "stt": "Thứ 2, viết xong rồi mới mở sách ra chấm sai chỗ nào sửa chỗ đó.",
+  "dur": 4.85
+ },
+ "b09d": {
+  "line_sim": 0.917,
+  "units": {
+   "b09d-0": 1.0,
+   "b09d-1": 0.857
+  },
+  "stt": "Tự chấm thì yên tâm, không ai ghi sổ đầu bài đâu.",
+  "dur": 3.32
+ },
+ "b09e": {
+  "line_sim": 0.8,
+  "units": {
+   "b09e-0": 0.938,
+   "b09e-1": 0.786
+  },
+  "stt": "Bước chấm này cảm năng gọi ý thêm, chữ thí nghiệm kia không có làm.",
+  "dur": 4.26
+ },
+ "b09f": {
+  "line_sim": 0.833,
+  "units": {
+   "b09f-0": 1.0,
+   "b09f-1": 0.833
+  },
+  "stt": "Và cuối cùng, chưa chấm thì đừng lít sách lít cái là thành độc lại.",
+  "dur": 4.62
+ },
+ "b10a": {
+  "line_sim": 1.0,
+  "units": {
+   "b10a-0": 0.8,
+   "b10a-1": 1.0,
+   "b10a-2": 1.0
+  },
+  "stt": "Em kia, gấp sách lại, rồi nhớ gì thì viết hết ra coi. Xong rồi mở sách ra, tự chấm đi.",
+  "dur": 6.56
+ },
+ "b10b": {
+  "line_sim": 1.0,
+  "units": {
+   "b10b-0": 1.0,
+   "b10b-1": 1.0
+  },
+  "stt": "Dạ em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi.",
+  "dur": 3.92
+ },
+ "b11a": {
+  "line_sim": 0.95,
+  "units": {
+   "b11a-0": 1.0,
+   "b11a-1": 1.0
+  },
+  "stt": "Đọc đầu nhớ đó là tự trả bài vậy đó.",
+  "dur": 2.79
+ },
+ "b11b": {
+  "line_sim": 0.979,
+  "units": {
+   "b11b-0": 1.0,
+   "b11b-1": 1.0,
+   "b11b-2": 1.0
+  },
+  "stt": "Mà chắc nhiều bạn có cách hay hơn mình nữa. Bạn hay làm gì để nhớ lâu, comment cho mình biết với nhà.",
+  "dur": 6.62
+ }
+}
