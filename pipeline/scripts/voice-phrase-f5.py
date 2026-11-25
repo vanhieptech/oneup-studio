@@ -195,6 +195,8 @@ else:
     elif CMD == "stitch":
         U=json.load(open(W+'/units.json')); SR=48000
         COMMA_GAP=float(json.load(open(SPEC)).get('comma_gap',0.18))
+        LINE_TEMPO={k:float(v) for k,v in (json.load(open(SPEC)).get('line_tempo') or {}).items()}
+        COMMA_GAP_LINE={k:float(v) for k,v in (json.load(open(SPEC)).get('comma_gap_line') or {}).items()}
         def gap(t,stemfirst,nxt=None):  # prosody-plan (b): comma .15-.25, period .35-.5, +0.08 before a stressed unit
           t=t.strip()
           if stemfirst: return 0.25
@@ -212,8 +214,9 @@ else:
         for ln in order:
           segs=[np.zeros(int(.06*SR),'float32')]
           for i,u in enumerate(lines[ln]):
-            segs.append(np.load(f"{W}/{u['key']}.npy").astype('float32'))
-            if i<len(lines[ln])-1: segs.append(np.zeros(int(gap(u["t"],u["stem"] and i==0,lines[ln][i+1])*SR),'float32'))
+            _x=np.load(f"{W}/{u['key']}.npy").astype('float32'); _lt=LINE_TEMPO.get(ln,1.0)
+            segs.append(rb(_x,tempo=_lt) if _lt!=1.0 else _x)  # spec line_tempo: slow a too-fast line (L-070), pitch kept
+            if i<len(lines[ln])-1: segs.append(np.zeros(int((COMMA_GAP_LINE[ln] if ln in COMMA_GAP_LINE and u["t"].strip()[-1:]=="," else gap(u["t"],u["stem"] and i==0,lines[ln][i+1]))*SR),'float32'))  # spec comma_gap_line
           segs.append(np.zeros(int(.1*SR),'float32')); y=np.concatenate(segs); y=y/max(1e-4,np.abs(y).max())*0.89
           dst=f"{OUT}/{PREFIX}-{ln}"
           subprocess.run(["ffmpeg","-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",dst+".wav"],input=y.tobytes(),check=True)

@@ -1,5 +1,5 @@
 {
- "voice_prefix": "c05v21",
+ "voice_prefix": "c05v21s",
  "targets": {
   ",": [
    0.15,
@@ -37,36 +37,22 @@
  },
  "lines": [
   {
-   "key": "c05v21-b01",
+   "key": "c05v21s-b01",
    "scene": "b01",
    "say": "Thì cái bản chất...",
    "t": 0.12,
-   "dur": 0.898,
-   "stt": "thì cái bản chất.",
+   "dur": 1.124,
+   "stt": "Thì các bạn chất.",
    "boundaries": [
-    {
-     "after": "Thì",
-     "punct": "",
-     "pause": 0.03,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "cái",
-     "punct": "",
-     "pause": 0.01,
-     "target": "<0.25",
-     "status": "ok"
-    },
     {
      "after": "bản",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.34,
+   "gap_after": 0.35,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -77,42 +63,35 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 7.55,
-   "stt_sim": 1.0
+   "syll_per_s": 5.33,
+   "stt_sim": 0.75
   },
   {
-   "key": "c05v21-b01a",
+   "key": "c05v21s-b01a",
    "scene": "b01a",
    "say": "của cái việc đọc đâu nhớ đó là như thế nào?",
-   "t": 1.1,
-   "dur": 2.365,
-   "stt": "của cái việc đọc đầu nhớ đó là như thế nào?",
+   "t": 1.32,
+   "dur": 3.212,
+   "stt": "Cú cái việc đọc đầu nhớ đó là như thế nào?",
    "boundaries": [
-    {
-     "after": "của",
-     "punct": "",
-     "pause": 0.03,
-     "target": "<0.25",
-     "status": "ok"
-    },
     {
      "after": "cái",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "việc",
      "punct": "",
-     "pause": 0.09,
+     "pause": 0.15,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "đọc",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.14,
      "target": "<0.25",
      "status": "ok"
     },
@@ -133,53 +112,53 @@
     {
      "after": "đó",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "là",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "như",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thế",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.33,
+   "gap_after": 0.39,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
     0.8
    ],
    "plan_mark": null,
-   "gap_status": "⚠ lệch mục tiêu",
-   "question_rise_st": 2.62,
+   "gap_status": "ok",
+   "question_rise_st": 1.32,
    "rise_status": "ok",
    "emphasis": [],
-   "syll_per_s": 6.4,
-   "stt_sim": 1.0
+   "syll_per_s": 4.76,
+   "stt_sim": 0.91
   },
   {
-   "key": "c05v21-b01b",
+   "key": "c05v21s-b01b",
    "scene": "b01b",
    "say": "Chứ đọc xong gấp sách lại, là quên sạch trơn hà.",
-   "t": 3.54,
-   "dur": 2.731,
-   "stt": "Chứ đọc xong gấp sách lại là quân sạch trơn hà.",
+   "t": 4.62,
+   "dur": 3.442,
+   "stt": "Chữ đọc xong gấp sách lại là Quân sạch Trơn Hà.",
    "boundaries": [
     {
      "after": "Chứ",
@@ -191,7 +170,7 @@
     {
      "after": "đọc",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.11,
      "target": "<0.25",
      "status": "ok"
     },
@@ -205,28 +184,28 @@
     {
      "after": "gấp",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "sách",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "lại",
      "punct": ",",
-     "pause": 0.13,
+     "pause": 0.14,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "sạch",
      "punct": "",
-     "pause": 0.11,
+     "pause": 0.15,
      "target": "<0.25",
      "status": "ok"
     },
@@ -238,7 +217,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.45,
+   "gap_after": 0.49,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -249,21 +228,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 6.04,
+   "syll_per_s": 4.64,
    "stt_sim": 0.91
   },
   {
-   "key": "c05v21-b02",
+   "key": "c05v21s-b02",
    "scene": "b02",
    "say": "Đọc lại thì thấy quen quen, kiểu “Ừ… cái này biết rồi…”, mà ai hỏi là hông kể nổi.",
-   "t": 6.48,
-   "dur": 4.699,
-   "stt": "Đọc lại thì thấy quen quen, kiểu ưu cái này biết rồi, mà ai hỏi là không kể nổi.",
+   "t": 8.27,
+   "dur": 5.705,
+   "stt": "Đọc lại thì thấy quen quen, kiểu, ở cái này biết rồi, mà ai hỏi là không kể nổi.",
    "boundaries": [
     {
      "after": "Đọc",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
@@ -277,19 +256,12 @@
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thấy",
-     "punct": "",
-     "pause": 0.08,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "quen",
      "punct": "",
      "pause": 0.05,
      "target": "<0.25",
@@ -297,8 +269,15 @@
     },
     {
      "after": "quen",
+     "punct": "",
+     "pause": 0.03,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
+     "after": "quen",
      "punct": ",",
-     "pause": 0.21,
+     "pause": 0.25,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -319,21 +298,21 @@
     {
      "after": "biết",
      "punct": "",
-     "pause": 0.11,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "rồi",
      "punct": ",",
-     "pause": 0.27,
+     "pause": 0.25,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "mà",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
@@ -359,7 +338,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -370,16 +349,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.56,
+   "syll_per_s": 4.7,
    "stt_sim": 0.89
   },
   {
-   "key": "c05v21-b03",
+   "key": "c05v21s-b03",
    "scene": "b03",
    "say": "Vì đọc lại thì chữ nằm sẵn trên trang, đâu có bắt mình tự nhớ ra.",
-   "t": 11.58,
-   "dur": 3.804,
-   "stt": "Vì độc lại thì chữ nằm sẵn trên trang, đâu có bắt mình tự nhớ ra.",
+   "t": 14.37,
+   "dur": 4.534,
+   "stt": "Vì độc lại thì chữ nằm sẵn trên trang đâu có bắt mình tự nhớ ra.",
    "boundaries": [
     {
      "after": "Vì",
@@ -405,7 +384,7 @@
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
@@ -433,14 +412,14 @@
     {
      "after": "trên",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "trang",
      "punct": ",",
-     "pause": 0.24,
+     "pause": 0.18,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -454,21 +433,21 @@
     {
      "after": "có",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "bắt",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.11,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "mình",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -487,7 +466,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.59,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -498,21 +477,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.71,
+   "syll_per_s": 4.66,
    "stt_sim": 1.0
   },
   {
-   "key": "c05v21-b07a",
+   "key": "c05v21s-b07a",
    "scene": "b07a",
    "say": "Mà chuyện này có thí nghiệm hẳn hoi, năm hai nghìn không trăm lẻ sáu với một trăm hai mươi sinh viên nè.",
-   "t": 15.79,
-   "dur": 5.284,
-   "stt": "mà chuyện này có thí nghiệm hẳn hội năm 2006 với 120 sinh viên nè.",
+   "t": 19.31,
+   "dur": 5.52,
+   "stt": "mà chuyện này có thí nghiệm hẳn hoi năm 2006 với 120 sinh viên nè.",
    "boundaries": [
     {
      "after": "Mà",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -526,7 +505,7 @@
     {
      "after": "này",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
@@ -561,14 +540,14 @@
     {
      "after": "hoi",
      "punct": ",",
-     "pause": 0.15,
+     "pause": 0.18,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "sinh",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
@@ -580,7 +559,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -591,15 +570,15 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.26,
+   "syll_per_s": 4.96,
    "stt_sim": 0.68
   },
   {
-   "key": "c05v21-b07b",
+   "key": "c05v21s-b07b",
    "scene": "b07b",
    "say": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
-   "t": 21.47,
-   "dur": 5.091,
+   "t": 25.23,
+   "dur": 5.584,
    "stt": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
    "boundaries": [
     {
@@ -626,7 +605,7 @@
     {
      "after": "đọc",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.08,
      "target": "<0.25",
      "status": "ok"
     },
@@ -640,21 +619,21 @@
     {
      "after": "một",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "đoạn",
      "punct": ",",
-     "pause": 0.27,
+     "pause": 0.16,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "đoạn",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -668,35 +647,35 @@
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "gấp",
      "punct": "",
-     "pause": 0.09,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "lại",
      "punct": ",",
-     "pause": 0.28,
+     "pause": 0.22,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "ok"
     },
     {
      "after": "chỉ",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "nhìn",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -717,7 +696,7 @@
     {
      "after": "rồi",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -736,7 +715,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.61,
+   "gap_after": 0.67,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -747,16 +726,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.42,
+   "syll_per_s": 4.67,
    "stt_sim": 1.0
   },
   {
-   "key": "c05v21-b07c",
+   "key": "c05v21s-b07c",
    "scene": "b07c",
    "say": "Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn. Nhưng nhóm đo sau một tuần thì lật ngược.",
-   "t": 26.96,
-   "dur": 4.911,
-   "stt": "Nhóm đo sau 5 phút, đoạn đọc lại nhớ nhiều hơn, nhưng nhóm đo sau 1 tuần thi lật ngược.",
+   "t": 31.21,
+   "dur": 5.697,
+   "stt": "Nhóm đo sau 5 phút đoạn đọc lại nhớ nhiều hơn, nhưng nhóm đo sau 1 tuần thì lật ngược.",
    "boundaries": [
     {
      "after": "Nhóm",
@@ -775,7 +754,7 @@
     {
      "after": "phút",
      "punct": ",",
-     "pause": 0.27,
+     "pause": 0.25,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -789,7 +768,7 @@
     {
      "after": "đọc",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.08,
      "target": "<0.25",
      "status": "ok"
     },
@@ -817,14 +796,14 @@
     {
      "after": "hơn",
      "punct": ".",
-     "pause": 0.45,
+     "pause": 0.43,
      "target": "0.35-0.5",
      "status": "ok"
     },
     {
      "after": "Nhưng",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -845,26 +824,26 @@
     {
      "after": "tuần",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "lật",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.68,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -875,28 +854,28 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.65,
+   "syll_per_s": 4.74,
    "stt_sim": 0.9
   },
   {
-   "key": "c05v21-b07d",
+   "key": "c05v21s-b07d",
    "scene": "b07d",
    "say": "Tự viết còn nhớ năm mươi sáu phần trăm ý, đọc lại chỉ bốn mươi hai. Nhưng năm mấy chục cũng đâu phải nhớ hết.",
-   "t": 32.27,
-   "dur": 6.057,
-   "stt": "Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42, nhưng năm máy chục cũng đâu phải nhớ hết.",
+   "t": 37.31,
+   "dur": 7.15,
+   "stt": "Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42, nhưng năm bấy chục cũng đâu phải nhớ hết.",
    "boundaries": [
     {
      "after": "Tự",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "viết",
      "punct": "",
-     "pause": 0.11,
+     "pause": 0.14,
      "target": "<0.25",
      "status": "ok"
     },
@@ -910,7 +889,7 @@
     {
      "after": "phần",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -924,7 +903,7 @@
     {
      "after": "ý",
      "punct": ",",
-     "pause": 0.25,
+     "pause": 0.24,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -945,35 +924,21 @@
     {
      "after": "Nhưng",
      "punct": "",
-     "pause": 0.01,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "năm",
-     "punct": "",
      "pause": 0.0,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "mấy",
-     "punct": "",
-     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "chục",
      "punct": "",
-     "pause": 0.15,
+     "pause": 0.24,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "cũng",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -999,7 +964,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.67,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1010,16 +975,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.62,
-   "stt_sim": 0.83
+   "syll_per_s": 4.72,
+   "stt_sim": 0.78
   },
   {
-   "key": "c05v21-b08",
+   "key": "c05v21s-b08",
    "scene": "b08",
    "say": "Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.",
-   "t": 38.73,
-   "dur": 2.784,
-   "stt": "Vậy hóa ra thứ đáng tập là tự nhớ khi sách đóng.",
+   "t": 44.86,
+   "dur": 3.526,
+   "stt": "Vậy hóa ra, thư đáng tập là tự nhớ khi sắt đóng.",
    "boundaries": [
     {
      "after": "Vậy",
@@ -1038,14 +1003,14 @@
     {
      "after": "ra",
      "punct": ",",
-     "pause": 0.11,
+     "pause": 0.27,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dính (<0.12s)"
+     "status": "ok"
     },
     {
      "after": "thứ",
      "punct": "",
-     "pause": 0.09,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1059,47 +1024,33 @@
     {
      "after": "tập",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.13,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "là",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.08,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "tự",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "nhớ",
      "punct": "",
-     "pause": 0.05,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "khi",
-     "punct": "",
-     "pause": 0.01,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "sách",
-     "punct": "",
-     "pause": 0.09,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.6,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1110,56 +1061,56 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 6.12,
-   "stt_sim": 1.0
+   "syll_per_s": 4.88,
+   "stt_sim": 0.92
   },
   {
-   "key": "c05v21-b09",
+   "key": "c05v21s-b09",
    "scene": "b09",
    "say": "Thứ nhất thì clíp trước nói rồi đó. Đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
-   "t": 41.91,
-   "dur": 6.451,
-   "stt": "Thứ nhất thì clip trước nói rồi đó. Đọc xong một chương là gấp xách lại. Nhìn tiêu đề rồi tự viết ra những gì nhớ.",
+   "t": 48.78,
+   "dur": 7.785,
+   "stt": "Thứ nhất thì clip trước nói rồi đó, đọc xong một chương là gấp sắt lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
    "boundaries": [
     {
      "after": "Thứ",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "nhất",
      "punct": "",
-     "pause": 0.12,
+     "pause": 0.13,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.13,
+     "pause": 0.12,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "clíp",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "trước",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "nói",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1173,7 +1124,7 @@
     {
      "after": "đó",
      "punct": ".",
-     "pause": 0.36,
+     "pause": 0.38,
      "target": "0.35-0.5",
      "status": "ok"
     },
@@ -1194,7 +1145,7 @@
     {
      "after": "một",
      "punct": "",
-     "pause": 0.11,
+     "pause": 0.13,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1208,21 +1159,21 @@
     {
      "after": "là",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "lại",
      "punct": ",",
-     "pause": 0.28,
+     "pause": 0.25,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "ok"
     },
     {
      "after": "nhìn",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1243,7 +1194,7 @@
     {
      "after": "rồi",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1257,7 +1208,7 @@
     {
      "after": "viết",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.11,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1283,7 +1234,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.66,
+   "gap_after": 0.67,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1294,16 +1245,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.74,
+   "syll_per_s": 4.53,
    "stt_sim": 0.96
   },
   {
-   "key": "c05v21-b09b",
+   "key": "c05v21s-b09b",
    "scene": "b09b",
    "say": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.",
-   "t": 48.77,
-   "dur": 2.559,
-   "stt": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu?",
+   "t": 56.97,
+   "dur": 3.124,
+   "stt": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.",
    "boundaries": [
     {
      "after": "Như",
@@ -1322,7 +1273,7 @@
     {
      "after": "nè",
      "punct": ",",
-     "pause": 0.16,
+     "pause": 0.18,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -1336,7 +1287,7 @@
     {
      "after": "được",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.08,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1350,21 +1301,21 @@
     {
      "after": "nhiêu",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "viết",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.11,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1376,7 +1327,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.64,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1387,16 +1338,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.7,
+   "syll_per_s": 4.7,
    "stt_sim": 1.0
   },
   {
-   "key": "c05v21-b09c",
+   "key": "c05v21s-b09c",
    "scene": "b09c",
    "say": "Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.",
-   "t": 51.72,
-   "dur": 4.16,
-   "stt": "Thứ 2, viết xong rồi, mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.",
+   "t": 60.49,
+   "dur": 4.851,
+   "stt": "Thứ 2, viết xong rồi mới mở sách ra chấm sai chỗ nào sửa chỗ đó.",
    "boundaries": [
     {
      "after": "viết",
@@ -1415,28 +1366,28 @@
     {
      "after": "rồi",
      "punct": "",
-     "pause": 0.3,
+     "pause": 0.16,
      "target": "<0.25",
-     "status": "✖ ngắt giữa cụm"
+     "status": "ok"
     },
     {
      "after": "mới",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.13,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "mở",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "sách",
      "punct": "",
-     "pause": 0.11,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1450,14 +1401,14 @@
     {
      "after": "chấm",
      "punct": ",",
-     "pause": 0.23,
+     "pause": 0.2,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "sai",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1490,7 +1441,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.67,
+   "gap_after": 0.68,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1501,28 +1452,28 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.76,
+   "syll_per_s": 4.65,
    "stt_sim": 0.94
   },
   {
-   "key": "c05v21-b09d",
+   "key": "c05v21s-b09d",
    "scene": "b09d",
    "say": "Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu.",
-   "t": 56.28,
-   "dur": 2.841,
-   "stt": "Tự chấm thì yên tâm. Không ai ghi sổ đầu bài đâu.",
+   "t": 65.74,
+   "dur": 3.323,
+   "stt": "Tự chấm thì yên tâm, không ai ghi sổ đầu bài đâu.",
    "boundaries": [
     {
      "after": "Tự",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "chấm",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1536,7 +1487,7 @@
     {
      "after": "yên",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1576,7 +1527,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.66,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1587,21 +1538,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.77,
+   "syll_per_s": 4.65,
    "stt_sim": 0.92
   },
   {
-   "key": "c05v21-b09e",
+   "key": "c05v21s-b09e",
    "scene": "b09e",
    "say": "Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.",
-   "t": 59.52,
-   "dur": 3.612,
-   "stt": "Bước chấm này cẩm năng gợi ý thêm, chứ thí nghiệm kia không có làm.",
+   "t": 69.47,
+   "dur": 4.256,
+   "stt": "Bước chấm này cảm năng gọi ý thêm, chữ thí nghiệm kia không có làm.",
    "boundaries": [
     {
      "after": "Bước",
      "punct": "",
-     "pause": 0.09,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1615,14 +1566,14 @@
     {
      "after": "này",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "cẩm",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1643,21 +1594,21 @@
     {
      "after": "ý",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thêm",
      "punct": ",",
-     "pause": 0.29,
+     "pause": 0.26,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "ok"
     },
     {
      "after": "chứ",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1671,7 +1622,7 @@
     {
      "after": "nghiệm",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1683,7 +1634,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.95,
+   "gap_after": 0.99,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1694,21 +1645,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.73,
+   "syll_per_s": 4.62,
    "stt_sim": 0.93
   },
   {
-   "key": "c05v21-b09f",
+   "key": "c05v21s-b09f",
    "scene": "b09f",
    "say": "Và cuối cùng, chưa chấm thì đừng liếc sách, liếc cái là thành đọc lại.",
-   "t": 63.84,
-   "dur": 3.73,
-   "stt": "Và cuối cùng, chưa chấm thì đừng liếc sách, liếc cái là thành độc lại.",
+   "t": 74.42,
+   "dur": 4.616,
+   "stt": "Và cuối cùng, chưa chấm thì đừng lít sách lít cái là thành độc lại.",
    "boundaries": [
     {
      "after": "Và",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1722,7 +1673,7 @@
     {
      "after": "cùng",
      "punct": ",",
-     "pause": 0.17,
+     "pause": 0.21,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -1736,42 +1687,14 @@
     {
      "after": "chấm",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.01,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "đừng",
-     "punct": "",
      "pause": 0.0,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "liếc",
-     "punct": "",
-     "pause": 0.03,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "sách",
-     "punct": ",",
-     "pause": 0.35,
-     "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
-    },
-    {
-     "after": "liếc",
-     "punct": "",
-     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1785,7 +1708,7 @@
     {
      "after": "là",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1799,12 +1722,12 @@
     {
      "after": "đọc",
      "punct": "",
-     "pause": 0.09,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.96,
+   "gap_after": 0.97,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1815,35 +1738,35 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 6.64,
-   "stt_sim": 1.0
+   "syll_per_s": 4.55,
+   "stt_sim": 0.87
   },
   {
-   "key": "c05v21-b10a",
+   "key": "c05v21s-b10a",
    "scene": "b10a",
    "say": "“Em kia, gấp sách lại rồi nhớ gì thì viết hết ra coi! Xong rồi mở sách ra, tự chấm đi!”",
-   "t": 68.27,
-   "dur": 5.218,
-   "stt": "Em kia gấp sách lại. Rồi nhớ gì thì viết hết ra coi. Xong rồi mở sách ra, tự chấm đi.",
+   "t": 79.74,
+   "dur": 6.556,
+   "stt": "Em kia, gấp sách lại, rồi nhớ gì thì viết hết ra coi. Xong rồi mở sách ra, tự chấm đi.",
    "boundaries": [
     {
      "after": "Em",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "kia",
      "punct": ",",
-     "pause": 0.15,
+     "pause": 0.26,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "gấp",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1871,28 +1794,28 @@
     {
      "after": "nhớ",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "gì",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thì",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "viết",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1906,21 +1829,21 @@
     {
      "after": "ra",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "coi",
      "punct": "!",
-     "pause": 0.43,
+     "pause": 0.44,
      "target": "0.35-0.5",
      "status": "ok"
     },
     {
      "after": "Xong",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1941,21 +1864,21 @@
     {
      "after": "sách",
      "punct": "",
-     "pause": 0.12,
+     "pause": 0.14,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "ra",
      "punct": ",",
-     "pause": 0.17,
+     "pause": 0.22,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "tự",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1967,7 +1890,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.59,
+   "gap_after": 0.69,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1978,15 +1901,15 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.93,
+   "syll_per_s": 4.68,
    "stt_sim": 1.0
   },
   {
-   "key": "c05v21-b10b",
+   "key": "c05v21s-b10b",
    "scene": "b10b",
    "say": "“Dạ… em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi…”",
-   "t": 73.89,
-   "dur": 3.48,
+   "t": 86.69,
+   "dur": 3.918,
    "stt": "Dạ em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi.",
    "boundaries": [
     {
@@ -2013,7 +1936,7 @@
     {
      "after": "chút",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
@@ -2034,14 +1957,14 @@
     {
      "after": "cô",
      "punct": ",",
-     "pause": 0.28,
+     "pause": 0.21,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "ok"
     },
     {
      "after": "mà",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
@@ -2076,12 +1999,12 @@
     {
      "after": "hết",
      "punct": "",
-     "pause": 0.11,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.64,
+   "gap_after": 0.6,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -2092,21 +2015,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.69,
+   "syll_per_s": 4.62,
    "stt_sim": 1.0
   },
   {
-   "key": "c05v21-b11a",
+   "key": "c05v21s-b11a",
    "scene": "b11a",
    "say": "Đọc đâu nhớ đó là tự trả bài vậy đó.",
-   "t": 77.77,
-   "dur": 2.216,
+   "t": 91.01,
+   "dur": 2.789,
    "stt": "Đọc đầu nhớ đó là tự trả bài vậy đó.",
    "boundaries": [
     {
      "after": "Đọc",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.11,
      "target": "<0.25",
      "status": "ok"
     },
@@ -2134,14 +2057,14 @@
     {
      "after": "là",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.08,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "tự",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
@@ -2155,7 +2078,7 @@
     {
      "after": "bài",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -2167,7 +2090,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.64,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -2178,16 +2101,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 6.06,
+   "syll_per_s": 4.78,
    "stt_sim": 1.0
   },
   {
-   "key": "c05v21-b11b",
+   "key": "c05v21s-b11b",
    "scene": "b11b",
    "say": "Mà chắc nhiều bạn có cách hay hơn mình nữa, bạn hay làm gì để nhớ lâu, com men cho mình biết với nha.",
-   "t": 80.38,
-   "dur": 5.356,
-   "stt": "mà chắc nhiều bạn có cách hay hơn mình nữa. Bạn hay làm gì để nhớ lâu? Comment cho mình biết với nha!",
+   "t": 94.2,
+   "dur": 6.621,
+   "stt": "Mà chắc nhiều bạn có cách hay hơn mình nữa. Bạn hay làm gì để nhớ lâu, comment cho mình biết với nhà.",
    "boundaries": [
     {
      "after": "Mà",
@@ -2220,14 +2143,14 @@
     {
      "after": "có",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "cách",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
@@ -2255,9 +2178,9 @@
     {
      "after": "nữa",
      "punct": ",",
-     "pause": 0.28,
+     "pause": 0.24,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "ok"
     },
     {
      "after": "bạn",
@@ -2318,14 +2241,14 @@
     {
      "after": "biết",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "với",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     }
@@ -2341,38 +2264,11 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.81,
+   "syll_per_s": 4.62,
    "stt_sim": 0.94
   }
  ],
  "flags": [
-  "c05v21-b01: 7.55 âm tiết/s (>5)",
-  "c05v21-b01a: 6.4 âm tiết/s (>5)",
-  "c05v21-b01b: 6.04 âm tiết/s (>5)",
-  "c05v21-b02: 5.56 âm tiết/s (>5)",
-  "c05v21-b03: 5.71 âm tiết/s (>5)",
-  "c05v21-b07a: 5.26 âm tiết/s (>5)",
-  "c05v21-b07b: 5.42 âm tiết/s (>5)",
-  "c05v21-b07b: sau «lại,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))",
-  "c05v21-b07c: 5.65 âm tiết/s (>5)",
-  "c05v21-b07d: 5.62 âm tiết/s (>5)",
-  "c05v21-b08: 6.12 âm tiết/s (>5)",
-  "c05v21-b08: sau «ra,» nghỉ 0.11s (✖ phẩy dính (<0.12s))",
-  "c05v21-b09: 5.74 âm tiết/s (>5)",
-  "c05v21-b09: sau «lại,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))",
-  "c05v21-b09b: 5.7 âm tiết/s (>5)",
-  "c05v21-b09c: 5.76 âm tiết/s (>5)",
-  "c05v21-b09c: sau «rồi» nghỉ 0.3s (✖ ngắt giữa cụm)",
-  "c05v21-b09d: 5.77 âm tiết/s (>5)",
-  "c05v21-b09e: 5.73 âm tiết/s (>5)",
-  "c05v21-b09e: sau «thêm,» nghỉ 0.29s (✖ phẩy dài hơn chấm (>0.27s))",
-  "c05v21-b09f: 6.64 âm tiết/s (>5)",
-  "c05v21-b09f: sau «sách,» nghỉ 0.35s (✖ phẩy dài hơn chấm (>0.27s))",
-  "c05v21-b10a: 5.93 âm tiết/s (>5)",
-  "c05v21-b10b: 5.69 âm tiết/s (>5)",
-  "c05v21-b10b: sau «cô,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))",
-  "c05v21-b11a: 6.06 âm tiết/s (>5)",
-  "c05v21-b11b: 5.81 âm tiết/s (>5)",
-  "c05v21-b11b: sau «nữa,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))"
+  "c05v21s-b01: 5.33 âm tiết/s (>5)"
  ]
 }
