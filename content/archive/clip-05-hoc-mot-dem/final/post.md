@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: clip-05.post
 type: post-package
 template: post-package v1 (rule-53, DL-045)
-status: ready — chờ gate 2
+status: approved — Hiệp duyệt gate 2 25/11/2026
 updated: 2026-11-25
 tags: [clip-05, post, tiktok, week-1, dark]
 ---
@@ -13,7 +13,7 @@ tags: [clip-05, post, tiktok, week-1, dark]
 
 ## 1. File video
 ```
-Đường dẫn: content/clips/clip-05-hoc-mot-dem/final/out/clip-05-final.mp4 (media, không vào git)
+Đường dẫn: media/clips/clip-05-hoc-mot-dem/clip-05-final.mp4 (full) · clip-05-final-720.mp4 (720p) — media, không vào git, sync bằng media-sync.py
 Thời lượng: 104,5s đo thật sau render · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
 ```
 

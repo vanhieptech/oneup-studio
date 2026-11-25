@@ -12,7 +12,7 @@ tags: [clip-05, post, checklist]
 Gói đăng: `final/post.md`.
 - [x] Render `final/out/clip-05-final.mp4` 1080×1920 30fps, 104,5s, −14,1 LUFS, check-rules --final PASS
 - [x] Cover template A → `final/cover.png` 1080×1920; tải lên riêng, không dùng frame video
-- [ ] Hiệp duyệt bộ final (gate 2: video + cover + post.md)
+- [x] Hiệp duyệt bộ final (gate 2: video + cover + post.md) 25/11/2026
 - [ ] TikTok: `clip-05-final.mp4` + `cover.png` + caption mục 3 (5 hashtag ở cuối, credit CC BY 4.0) + bật AI-generated content + tắt nội dung thương mại + playlist «Học & đầu tư bản thân»
 - [ ] TikTok: Bình luận / Duet / Stitch: ON; Mọi người; không vị trí
 - [ ] TikTok: thêm nhạc Commercial Music Library theo mục 8 (nhạc 5–10%)

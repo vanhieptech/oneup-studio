@@ -10,6 +10,8 @@ resources/refs/transitions.dev/
 content/samples/**/explainer/renders/
 content/clips/**/final/out/
 content/clips/**/final/*.mp4
+content/archive/**/final/out/*
+!content/archive/**/final/out/*.srt
 __pycache__/
 content/samples/**/out/
 content/samples/**/explainer/snapshots/
