@@ -536,14 +536,6 @@
    "title": "Clip 04 làm lại — gói fact (Deep Research)"
   },
   {
-   "id": "content.clips.clip-04-gap-sach-tu-kiem.final.out.short-factory-review.research-original-snapshot",
-   "type": null,
-   "status": "research-only",
-   "updated": "2026-10-19",
-   "path": "content/clips/clip-04-gap-sach-tu-kiem/final/out/short-factory-review/research-original-snapshot.md",
-   "title": "Nghiên cứu short-video-factory (YILS-LIN) đối chiếu pipeline oneup-studio"
-  },
-  {
    "id": "clip-04.post-checklist",
    "type": "doc",
    "status": "ready",
@@ -1216,6 +1208,14 @@
    "title": "[v2 2026-10-21] clip-05 v1 — lời thoại theo beat (8 beat, thứ tự W-16)"
   },
   {
+   "id": "clip-05.script-v21",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-11-25",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v21-draft.md",
+   "title": "clip-05 v21: Đọc đâu nhớ đó = tự trả bài"
+  },
+  {
    "id": "content.clips.clip-05-hoc-mot-dem.script-v3-draft-opencreator",
    "type": null,
    "status": "nháp v2 — Rule Reviewer chấm ĐẠT 21/10 22:40; CHƯA Chốt. Không voice/render trước «Chốt» (L-072).",
@@ -1315,7 +1315,7 @@
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-11-08",
+   "updated": "2026-11-12",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -1784,6 +1784,14 @@
    "title": "Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi)"
   },
   {
+   "id": "research.craft.hook-script-study-2026-11-11",
+   "type": "craft-study",
+   "status": "draft",
+   "updated": "2026-11-11",
+   "path": "research/craft/hook-script-study-2026-11-11.md",
+   "title": "Học lại hook và mạch script từ video thật (11/11/2026)"
+  },
+  {
    "id": "research.fact-packages.clip05-texthip-fact-bridge-2026-11-07",
    "type": null,
    "status": "fact-scope-checked-trend-pending-social-research",
@@ -1822,6 +1830,14 @@
    "updated": "2026-10-31",
    "path": "research/fact-packages/factcheck-trends-2026-10-31.md",
    "title": "Deep Research soát fact 3 trend 31/10 (5.27, 4.12, 4.9)"
+  },
+  {
+   "id": "hooks-2026-11-12-storytelling-hooks-vn",
+   "type": "hook-research",
+   "status": "draft",
+   "updated": "2026-11-12",
+   "path": "research/hooks/2026-11-12-storytelling-hooks-vn/README.md",
+   "title": "Hook kể chuyện trên TikTok tiếng Việt (12/11/2026)"
   },
   {
    "id": "research.motion-layer",
@@ -2312,10 +2328,58 @@
    "title": "Treg TikTok research 2026-11-08"
   },
   {
+   "id": "trends-2026-11-09",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-09",
+   "path": "research/trends/2026-11-09/digest.md",
+   "title": "Trend digest 2026-11-09 (thứ Hai)"
+  },
+  {
+   "id": "trends-2026-11-09-treg",
+   "type": "trend-source",
+   "status": "raw-evidence",
+   "updated": "2026-11-09",
+   "path": "research/trends/2026-11-09/treg/README.md",
+   "title": "Treg TikTok research 2026-11-09"
+  },
+  {
+   "id": "trends-2026-11-10",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-10",
+   "path": "research/trends/2026-11-10/digest.md",
+   "title": "Trend digest 2026-11-10 (thứ Ba)"
+  },
+  {
+   "id": "trends-2026-11-10-treg",
+   "type": "trend-source",
+   "status": "raw-evidence",
+   "updated": "2026-11-10",
+   "path": "research/trends/2026-11-10/treg/README.md",
+   "title": "Treg TikTok research 2026-11-10"
+  },
+  {
+   "id": "trends-2026-11-11",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-11",
+   "path": "research/trends/2026-11-11/digest.md",
+   "title": "Trend digest 2026-11-11 (thứ Tư, ngày 11.11)"
+  },
+  {
+   "id": "trends-2026-11-12",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-12",
+   "path": "research/trends/2026-11-12/digest.md",
+   "title": "Trend digest 2026-11-12 (thứ Năm)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-11-07",
+   "updated": "2026-11-12",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -2323,7 +2387,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-11-08",
+   "updated": "2026-11-12",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },
@@ -2382,13 +2446,6 @@
    "title": "anidoodle"
   },
   {
-   "id": "skill.awesome-ai-motion",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/awesome-ai-motion/SKILL.md",
-   "title": "awesome-ai-motion"
-  },
-  {
    "id": "refs.motionmaxxing.integration",
    "type": "vendor-note",
    "status": "active",
@@ -2402,41 +2459,6 @@
    "status": "active",
    "path": "resources/refs/motionmaxxing/SKILL.md",
    "title": "motionmaxxing"
-  },
-  {
-   "id": "skill.skill",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/agent/skill/SKILL.md",
-   "title": "transitions-agent"
-  },
-  {
-   "id": "skill.refine-live",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/refine/.agents/skills/refine-live/SKILL.md",
-   "title": "refine-live"
-  },
-  {
-   "id": "skill.transitions-dev",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/skills/transitions-dev/SKILL.md",
-   "title": "transitions-dev"
-  },
-  {
-   "id": "skill.transitions-polish",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/skills/transitions-polish/SKILL.md",
-   "title": "transitions-polish"
-  },
-  {
-   "id": "skill.transitions-ui-generation",
-   "type": "skill",
-   "status": "active",
-   "path": "resources/refs/transitions.dev/skills/transitions-ui-generation/SKILL.md",
-   "title": "transitions-ui-generation"
   },
   {
    "id": "vn-thesaurus",
@@ -3121,28 +3143,28 @@
    "type": "skill",
    "status": "active",
    "path": "skills/make-video/SKILL.md",
-   "title": "Make video (@hi.oneup end-to-end)"
+   "title": "make-video"
   },
   {
    "id": "skill.motion-picks-per-script",
    "type": "skill",
    "status": "active",
    "path": "skills/motion-picks-per-script/SKILL.md",
-   "title": "Motion picks per script"
+   "title": "motion-picks-per-script"
   },
   {
    "id": "skill.script-polish",
    "type": "skill",
    "status": "active",
    "path": "skills/script-polish/SKILL.md",
-   "title": "Script polish (VI voice)"
+   "title": "script-polish"
   },
   {
    "id": "skill.trend-digest",
    "type": "skill",
    "status": "active",
    "path": "skills/trend-digest/SKILL.md",
-   "title": "Trend digest"
+   "title": "trend-digest"
   },
   {
    "id": "clip-01.post",
@@ -3672,6 +3694,7 @@
     "script-v1-draft-opencreator.md",
     "script-v10-draft-opencreator.md",
     "script-v2-draft-opencreator.md",
+    "script-v21-draft.md",
     "script-v3-draft-opencreator.md",
     "script-v4-LOCKED.md",
     "script-v4-draft-opencreator.md",
