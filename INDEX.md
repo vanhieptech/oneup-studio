@@ -153,6 +153,7 @@ tags: [index, retrieval]
 | content.clips.clip-05-hoc-mot-dem.archive.v4-final.visual-plan-v4 | visual-plan | ready | `content/clips/clip-05-hoc-mot-dem/archive/v4-final/visual-plan-v4.md` | Clip 05 v4 — bảng minh hoạ chi tiết (FLUX Visual) |
 | content.clips.clip-05-hoc-mot-dem.evidence-lines-v10 | None | None | `content/clips/clip-05-hoc-mot-dem/evidence-lines-v10.md` | Câu dẫn chứng cho clip-05 v10 (Deep Research) |
 | content.clips.clip-05-hoc-mot-dem.factcheck-script-v9r92 | None | None | `content/clips/clip-05-hoc-mot-dem/factcheck-script-v9r92.md` | Deep Research soát fact clip-05 v9 r9.2 |
+| clip-05.post | post-package | draft — chờ render + gate 2 | `content/clips/clip-05-hoc-mot-dem/final/post.md` | Gói đăng TikTok: clip-05 "Đọc đâu nhớ đó = tự trả bài" |
 | clip-05.script-final | script | gate1-approved | `content/clips/clip-05-hoc-mot-dem/final/script-final.md` | clip-05 v21: Đọc đâu nhớ đó = tự trả bài |
 | clip-05.trend-signals | research | ready | `content/clips/clip-05-hoc-mot-dem/final/trend-signals.md` | Tín hiệu trend cho clip-05 v21 |
 | content.clips.clip-05-hoc-mot-dem.review-script-v5r2 | None | None | `content/clips/clip-05-hoc-mot-dem/review-script-v5r2.md` | Verdict: CHƯA ĐẠT (4 lỗi chặn, 9 ghi chú) |
