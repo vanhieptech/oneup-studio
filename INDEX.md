@@ -261,6 +261,7 @@ tags: [index, retrieval]
 | content.clips.clip-06-bong-hoa-chua-no.archive.review-script-v1r11 | script | draft | `content/clips/clip-06-bong-hoa-chua-no/archive/review-script-v1r11.md` | Review clip-06 v1 r1.1 |
 | content.clips.clip-06-bong-hoa-chua-no.archive.review-script-v1r12 | script | draft | `content/clips/clip-06-bong-hoa-chua-no/archive/review-script-v1r12.md` | Review clip-06 v1 r1.2 |
 | content.clips.clip-06-bong-hoa-chua-no.archive.script-v1-draft-opencreator | script | DRAFT r1.2, vá 2 theo review-script-v1r11 (9e2e273): S5 bỏ vế hỏi lửng, đưa «vào lúc cố định» vào thiết kế nghiên cứu (cẩm nang 4.12: làm mỗi ngày trong bối cảnh cố định); S7 bỏ «miễn», rút từ chính thiết kế đó; S10 «có thể» thay «sẽ có ngày». Chưa Chốt, không giọng/render. | `content/clips/clip-06-bong-hoa-chua-no/archive/script-v1-draft-opencreator.md` | clip-06 v1 r1.2 — lời thoại theo beat |
+| clip-06.script-v2-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/archive/script-v2-draft.md` | clip-06 v2 — lời thoại theo beat |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
