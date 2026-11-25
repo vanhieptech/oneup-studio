@@ -1,3 +1,12 @@
+---
+title: "Clip05 r14.1 — fact-check frozen exact spoken"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip05 r14.1 — fact-check frozen exact spoken
 
 Thời điểm: 08/11/2026 13:23:23 Asia/Saigon (UTC+7). Báo cáo standalone ngoài repo; **CHƯA ARCHIVE**.

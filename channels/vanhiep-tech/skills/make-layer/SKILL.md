@@ -52,33 +52,17 @@ Not `make-video` (comic). Read `channels/vanhiep-tech/AGENTS.md` + `PLAN.md` fir
    ```bash
    rg -n 'box-shadow|text-shadow|filter:\s*blur|drop-shadow' layers/<id>/index.html
    ```
-8. `cd` layer dir → `npm i` (gsap) → `npx hyperframes@0.8.150 check`
+8. `cd` layer dir → `npm i` (gsap) → `npx --yes hyperframes@0.9.94 check` (version nguồn chuẩn: `pipeline/versions.json`)
 9. Render by type:
    - **`cu-*` cutaway / B-roll** — solid `var(--vht-bg)` on `html,body,#main` → `--format mp4`
    - **`ov-*` overlay** — `html,body,#main{background:transparent !important}` · **no zone plate** · **no soft shadow** → `--format mov`
    ```bash
-   npx hyperframes@0.8.150 render --format mp4 -o media/.../cu-01.mp4 .
-   npx hyperframes@0.8.150 render --format mov -o media/.../ov-d01.mov .
+   npx --yes hyperframes@0.9.94 render --format mp4 -o media/.../cu-01.mp4 .
+   npx --yes hyperframes@0.9.94 render --format mov -o media/.../ov-d01.mov .
    ```
-10. **Verify alpha (ov only)** before shipping — corners alone are **not** enough:
+10. **Verify alpha & banned CSS (ov only)** before shipping — run the automated gate script (corners clear + banned CSS + `non_scrim_semi < 3.0%`, aware of uniform `hard-scrim`):
     ```bash
-    ffprobe -v error -select_streams v:0 -show_entries stream=pix_fmt -of csv=p=0 LAYER.mov
-    # must contain yuva / alpha
-
-    # mid-frame: corners clear + soft-alpha budget
-    ffmpeg -y -ss 1.5 -i LAYER.mov -frames:v 1 /tmp/ov-check.png
-    python3 - <<'PY'
-    from PIL import Image
-    im = Image.open("/tmp/ov-check.png").convert("RGBA")
-    w, h = im.size
-    assert im.getpixel((0, 0))[3] == 0 and im.getpixel((w-1, h-1))[3] == 0
-    semi = sum(1 for y in range(0, h, 2) for x in range(0, w, 2)
-               if 0 < im.getpixel((x, y))[3] < 250)
-    tot = (w // 2) * (h // 2)
-    pct = 100 * semi / tot
-    print(f"semi-alpha≈{pct:.2f}%")
-    assert pct < 3.0, "soft fog too high — strip box-shadow/text-shadow/blur"
-    PY
+    python3 channels/vanhiep-tech/scripts/check-layer.py channels/vanhiep-tech/clips/<clip-id>
     ```
 11. **Preview for human** (ov): export **alpha-preserving** watch file only — animated WebP/APNG (`*-alpha.webp` / `*-alpha.png`) or the ProRes `.mov` itself.  
     **Banned:** baking overlay onto One Dark / fake A-roll / checkerboard into an MP4 and calling that “the overlay video”. MP4 has no alpha → it will always look like it still has a background.

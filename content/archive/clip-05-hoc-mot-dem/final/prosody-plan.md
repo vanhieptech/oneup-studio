@@ -1,3 +1,12 @@
+---
+title: "Prosody plan — clip-05-final (voice c05v21)"
+date: 2026-10-21
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Prosody plan — clip-05-final (voice c05v21)
 
 Lời giữ nguyên script chốt. F5 không có SSML: nhấn = tách cụm (unit riêng) + nghỉ trước từ nhấn (+0.08s) + {nhấn:} giãn nhẹ; câu hỏi = nâng ~1.5 st từ cuối.

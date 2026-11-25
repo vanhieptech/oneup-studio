@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 r15 (concept E, full đầu tiên) — chỉ đọc, 08/11/2026 ~14:05 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 r15 (concept E, full đầu tiên) — chỉ đọc, 08/11/2026 ~14:05 giờ VN
 - File: SHA 8a1110ae…52aa2, khớp.
 - Lời: dòng 24–40, SHA 37567691…46fa7, khớp (trích sau dòng marker + LF, giữ LF cuối); 433 từ.

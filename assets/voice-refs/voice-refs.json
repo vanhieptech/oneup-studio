@@ -1,0 +1,27 @@
+{
+ "_doc": "Giọng mẫu F5 (ref + ref_text). voice-phrase-f5.py: spec không có `voice_refs` → thai-son; có `voice_refs` → chọn theo emotion của line (DL-073).",
+ "thai-son": {
+  "wav": "thai-son.wav",
+  "ref_text": "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha.",
+  "emotion": "neutral",
+  "source": "VieNeu \"Thái Sơn\" câu trung tính (DL-035); mặc định cho clip cũ"
+ },
+ "thai-son-v2": {
+  "wav": "thai-son-v2.wav",
+  "ref_text": "Hồi đó mình hay để dồn việc tới sát giờ mới làm á, ngồi vô bàn thì đầu óc trống trơn, mà cũng hông biết bắt đầu từ đâu, nên giờ mình tập làm từng chút một mỗi ngày thôi nha.",
+  "emotion": "neutral",
+  "source": "VieNeu preset \"Thái Sơn\" (Apache-2.0, không clone người thật), temperature 0.7, cắt lặng đầu/cuối, rubberband tempo 0.867 (giữ cao độ), 24 kHz mono; bản #3 trong media/voice-refs-6000h/compare.mp4"
+ },
+ "thai-son-happy": {
+  "wav": "thai-son-happy.wav",
+  "ref_text": "Ai mà nói để mai học là mình biết liền á, cái mai đó nó dài cả tuần luôn đó, hông tin thì mở cái lịch ra coi thử đi, toàn là chữ mai với mai hông hà nha.",
+  "emotion": "happy",
+  "source": "VieNeu preset \"Thái Sơn\" (Apache-2.0, không clone người thật), temperature 0.6, cắt lặng đầu/cuối, rubberband tempo 0.883 (giữ cao độ), 24 kHz mono; bản #5 trong media/voice-refs-6000h/compare.mp4"
+ },
+ "thai-son-serious": {
+  "wav": "thai-son-serious.wav",
+  "ref_text": "Mấy nhà nghiên cứu đã thử cho hai nhóm học cùng một bài, một nhóm đọc đi đọc lại, nhóm kia thì gấp sách lại rồi tự nhớ, và kết quả là nhóm tự nhớ giữ bài lâu hơn nhiều á.",
+  "emotion": "serious",
+  "source": "VieNeu preset \"Thái Sơn\" (Apache-2.0, không clone người thật), temperature 0.6, cắt lặng đầu/cuối, rubberband tempo 0.835 (giữ cao độ), 24 kHz mono; bản #8 trong media/voice-refs-6000h/compare.mp4"
+ }
+}

@@ -1,9 +1,12 @@
 ---
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 title: "Deep Research soát fact: Musk/5.27 r1 (8e9a02c) + Dọn liền tay/4.9 r1 (12aa6ce)"
 date: 2026-10-31
 source_check: cẩm nang book/05 mục 27, book/04 mục 9 (đọc trực tiếp); factcheck-trends-2026-10-31.md (c5d3777)
 ---
-
 ## Musk/5.27 r1: ĐẠT fact
 - S2+S3 giữ «tương lai xa» và vế «khi AI làm mọi thứ dư dả» ngay câu sau («Nhưng…»), không cắt ngữ cảnh.
 - S6 «hay được khuyên… ba đến sáu tháng chi tiêu» khớp 5.27 («kinh nghiệm phổ biến», mức C), không nói «nghiên cứu».

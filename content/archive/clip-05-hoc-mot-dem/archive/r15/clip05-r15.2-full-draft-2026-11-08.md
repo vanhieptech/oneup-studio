@@ -1,4 +1,6 @@
 ---
+tags: [content]
+source: "oneup-studio (soạn trong repo)"
 title: "Clip05 r15.2 PATCH2 — Concept E: đọc lại hay tự viết, xét ở mốc nào?"
 date: 2026-11-08
 type: full-script-draft

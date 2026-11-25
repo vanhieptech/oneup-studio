@@ -3,6 +3,7 @@
 usage: props-preview.py <spec.json> <outdir> scene:t1,t2 [scene:t ...]"""
 import importlib.util, json, os, re, subprocess, sys
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.join(R, "pipeline")); import paths as P
 spec_ = importlib.util.spec_from_file_location("bf", os.path.join(R, "pipeline/scripts/build-final.py")); bf = importlib.util.module_from_spec(spec_); spec_.loader.exec_module(bf)
 spec = json.load(open(sys.argv[1])); out = os.path.abspath(sys.argv[2]); os.makedirs(out, exist_ok=True)
 for p in spec["parts"]:
@@ -17,7 +18,7 @@ starts = {}; acc = 0.0
 for s in plan["scenes"]:
     starts[s["id"]] = acc; acc += s["duration"]
 pj = os.path.join(out, "preview-plan.json"); json.dump({"plan": plan}, open(pj, "w"), ensure_ascii=False)
-env = dict(os.environ, PATH="/workspace/tools/node-v22.20.0-linux-x64/bin:" + os.environ["PATH"])
+env = dict(os.environ, PATH=(P.NODE_BIN + ":" if P.NODE_BIN else "") + os.environ["PATH"])
 for arg in sys.argv[3:]:
     sid, ts = arg.split(":")
     for t in ts.split(","):

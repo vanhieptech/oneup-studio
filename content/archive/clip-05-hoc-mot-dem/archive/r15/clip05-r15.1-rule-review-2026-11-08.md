@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 r15.1 PATCH1, review delta (chỉ đọc), 08/11/2026 ~14:05 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 r15.1 PATCH1, review delta (chỉ đọc), 08/11/2026 ~14:05 giờ VN
 - File: SHA 57322fba…0183c, khớp.
 - Lời: ee0e5aa8…0652, khớp (trích sau dòng marker + LF, giữ LF cuối); 433 từ.

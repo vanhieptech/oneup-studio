@@ -36,7 +36,7 @@ xerj def    --prefix ref   "create_subtitle"                      # đi tới đ
 - **Không** gửi field report / `xerj feedback --submit` / `hub feedback` (gửi dữ liệu ra ngoài): luôn đặt `XERJ_DISABLE_FEEDBACK=true`. Không bật `rerank` (gửi nội dung ra bên thứ ba).
 - Không `DELETE` index; xoá một thư mục đã index bằng `xerj autoindex remove --prefix <p>`.
 
-## Repo tham khảo (`/workspace/reference-repos/`, prefix `ref`)
+## Repo tham khảo (`~/oneup-tools/reference-repos/`, prefix `ref`)
 Clone nông (`--depth 1`, sparse, bỏ media/font/model), nằm **ngoài** repo, không commit (xem `resources/refs/README.md`).
 
 | Repo | Commit | Giấy phép | Vì sao gần pipeline của mình |
@@ -48,14 +48,14 @@ Clone nông (`--depth 1`, sparse, bỏ media/font/model), nằm **ngoài** repo,
 | remotion-dev/template-tiktok | a6263081 | **UNLICENSED / Remotion License** (chỉ đọc) | caption kiểu TikTok theo word timestamp trên Remotion |
 | m-bain/whisperX | 5d3678b8 | BSD-2-Clause | forced alignment cho word timestamp (`whisperx/alignment.py`) |
 
-Clone lại (sau khi box bị dọn):
+Clone lại trên Mac:
 ```sh
-mkdir -p /workspace/reference-repos && cd /workspace/reference-repos
+mkdir -p ~/oneup-tools/reference-repos && cd ~/oneup-tools/reference-repos
 for r in krillinai/OpenCreator harry0703/MoneyPrinterTurbo YILS-LIN/short-video-factory SWivid/F5-TTS remotion-dev/template-tiktok m-bain/whisperX; do
   n=${r#*/}; git clone -q --depth 1 --filter=blob:none --no-checkout https://github.com/$r $n
   printf '/*\n!*.png\n!*.jpg\n!*.gif\n!*.mp4\n!*.mp3\n!*.wav\n!*.ttf\n!*.ttc\n!*.woff2\n!*.zip\n!*.pt\n!*.safetensors\n!*.onnx\n' | git -C $n sparse-checkout set --no-cone --stdin
   git -C $n checkout -q
 done
-cp /workspace/oneup-studio/.xerjignore .xerjignore && printf '*.ttc\n*.node\n*.lock\npackage-lock.json\n' >> .xerjignore
-/workspace/oneup-studio/pipeline/scripts/xerj-index.sh ref
+cp /Users/macbook/work/oneup-studio/.xerjignore .xerjignore && printf '*.ttc\n*.node\n*.lock\npackage-lock.json\n' >> .xerjignore
+/Users/macbook/work/oneup-studio/pipeline/scripts/xerj-index.sh ref
 ```

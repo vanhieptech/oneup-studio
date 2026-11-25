@@ -1,4 +1,5 @@
 ---
+tags: [logs]
 title: "Rule checklist hợp nhất — soi mọi draft trước gate 1 (Rule Reviewer)"
 date: 2026-10-19
 status: active
@@ -7,7 +8,6 @@ id: rule-checklist
 type: checklist
 updated: 2026-10-20
 ---
-
 # Rule checklist hợp nhất — OneUp / @hi.oneup
 
 **Vị trí & lý do:** đặt ở `logs/rule-checklist.md`, cạnh `logs/lessons.md` (nguồn lesson, bắt buộc đọc trước mỗi clip theo make-video bước 0/1). Đây là file *soi draft* duy nhất; không thay `rules/video-rules.md` (chuẩn luật gốc) và không thay `pipeline/scripts/check-rules.py` (cổng tự động trên `spec.json`). Chưa từng có file checklist hợp nhất trong repo (chỉ có `logs/rules-audit-2026-10-13.md` là audit một lần) nên tạo mới tại đây, tránh trùng.

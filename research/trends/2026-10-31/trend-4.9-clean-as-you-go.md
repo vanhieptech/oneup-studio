@@ -1,4 +1,9 @@
 ---
+title: "Trend: «Clean as you go»"
+date: 2026-10-31
+type: research
+tags: [research]
+status: draft
 trend_id: x-2116206747459420656
 for: ý tưởng mới 4.9 (dọn liền tay, callback clip-02), B-donlientay-01
 hook_pattern: P10+P15

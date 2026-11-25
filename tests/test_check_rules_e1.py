@@ -11,7 +11,7 @@ T("unrelated words not a hit", not cr.cluster_hit("sáng dậy", "mình gấp", 
 T("punctuation/case ignored", cr.cluster_hit("Mình cần là,", "Sáng hôm sau", "cần là sáng"))
 T("empty ctx never hits", not cr.cluster_hit("ngay", "", "ngay thì"))
 # delivery plan parse (real clip-04 v18 file)
-cl, src = cr.delivery_clusters(R+"/content/clips/clip-04-gap-sach-tu-kiem/final", "clip-04")
+cl, src = cr.delivery_clusters(R+"/content/archive/clip-04-gap-sach-tu-kiem/final", "clip-04")
 T(f"parsed clusters from {src}: {cl}", cl == ["ngay thì","nhỏ thì","kiểm tra lại nhớ","cần là sáng","gấp sách lại thì"] and src == "script-v18-delivery.md")
 cl2, src2 = cr.delivery_clusters(FX+"/clip-04-test/final", "clip-04-test"); T(f"default clip-04 list when no plan ({src2})", cl2 == cr.E1_DEFAULT_CLUSTERS["clip-04"])
 # synthetic measure with silences
@@ -39,8 +39,15 @@ T("L-027 ✖ on s01→s02 0.18, s01 comma 0.08 ok, hook→body 0.40 not counted"
 j2 = dict(j, pauses=[{"sid":"s01","after":"qua","mark":"/","pause":0.05},{"sid":"s01","after":"sạch","mark":"//","pause":0.09},{"sid":"s02","after":"gì","mark":"//beat","pause":0.40}])
 cr.res.clear(); cr.check_l027_voice(j2, None, "s.json"); T("L-027 ✔ when hook joins ≤0.1", cr.res[0][0]=="✔")
 # derived mode on the real v16c measure
-v16 = json.load(open(R+"/content/clips/clip-04-gap-sach-tu-kiem/final/prosody-measure-v16c.json"))
+v16 = json.load(open(R+"/content/archive/clip-04-gap-sach-tu-kiem/final/prosody-measure-v16c.json"))
 sil, mode = cr.measure_silences(v16); T(f"v16c derived: {len(sil)} silences, mode {mode}", mode=="derived" and len(sil)==36)
 jd = {"sentences":[{"id":"s09","beat":"b05","mid_breaks":["«nhỏ thì» 0.27s"]}], "pauses": []}
 sil, _ = cr.measure_silences(jd); T("mid_breaks string parsed", sil[0]["context_before"]=="nhỏ" and sil[0]["context_after"]=="thì" and sil[0]["dur_s"]==0.27)
-print("FAILS:", fails); sys.exit(1 if fails else 0)
+import unittest
+
+class E1Tests(unittest.TestCase):
+    def test_all_e1_assertions(self):
+        self.assertEqual(fails, 0)
+
+if __name__ == "__main__":
+    print("FAILS:", fails); sys.exit(1 if fails else 0)

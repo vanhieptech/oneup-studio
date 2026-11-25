@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 r14.1 full (chỉ đọc), 08/11/2026 ~13:30 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 r14.1 full (chỉ đọc), 08/11/2026 ~13:30 giờ VN
 File: handoffs/clip05-r14.1-full-draft-2026-11-08.md
 - SHA file 020c4109…7433f8: khớp.

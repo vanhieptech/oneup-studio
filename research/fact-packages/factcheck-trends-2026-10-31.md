@@ -1,9 +1,12 @@
 ---
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 title: "Deep Research soát fact 3 trend 31/10 (5.27, 4.12, 4.9)"
 date: 2026-10-31
 source_check: cẩm nang book/04, book/05 (đọc trực tiếp); VnExpress 5138848 (đọc 31/10)
 ---
-
 ## 5.27 Musk: hook hiện tại cắt mất ngữ cảnh
 - Câu gốc VnExpress (X, 29/10): «Tiết kiệm tiền cho tương lai xa là vô nghĩa khi siêu trí tuệ mang lại sự dư dả». Musk nói về tương lai xa, tiền hưu, và điều kiện AI làm mọi thứ dư dả.
 - Câu «tiết kiệm cho tương lai là vô nghĩa» bỏ mất «xa» và vế «khi siêu trí tuệ…», vậy là xuyên tạc. Lời đọc phải giữ cả hai, ví dụ: «Elon Musk vừa nói tiết kiệm cho tương lai xa là vô nghĩa, khi AI làm mọi thứ dư dả.»

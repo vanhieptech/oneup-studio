@@ -1,3 +1,12 @@
+---
+title: "FLUX.2 test log — vòng 1 (chỉ klein 4B)"
+date: 2026-11-07
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # FLUX.2 test log — vòng 1 (chỉ klein 4B)
 
 - Ngày giờ: 2026-10-20 (Asia/Saigon) — kiểm tra lúc ~00:03 Asia/Saigon, ghi log cùng ngày

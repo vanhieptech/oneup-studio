@@ -139,7 +139,7 @@ const Head: React.FC<{ expr: Expression; s: CharacterState; uid: string; INK: st
       <path d={`M${-w - 4},${104 + h * 0.5} Q0,${92 - h * 0.5} ${w + 4},${104 + h * 0.5} Q0,${100 + h * 0.2} ${-w - 4},${104 + h * 0.5}Z`} fill={INK} />
     ) : (
       <g>
-        <path d={`M${-w},96 Q${-w},${96 + h * 1.6} 0,${96 + h * 1.6} Q${w},${96 + h * 1.6} ${w},96 Q0,${expr === "sad" ? 104 : 90} ${-w},96Z`} fill={INK} />
+        <path d={`M${-w},96 Q${-w},${96 + h * 1.6} 0,${96 + h * 1.6} Q${w},${96 + h * 1.6} ${w},96 Q0,90 ${-w},96Z`} fill={INK} />
         <ellipse cx={0} cy={96 + h * 1.2} rx={w * 0.5} ry={Math.max(2, h * 0.35)} fill="#E86A5A" opacity={0.9} />
       </g>
     );

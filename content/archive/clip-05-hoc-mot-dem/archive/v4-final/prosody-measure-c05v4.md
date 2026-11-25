@@ -1,3 +1,12 @@
+---
+title: "Đo prosody bản giọng nháp — c05v4 (script-v16c, F5 Thái Sơn speed 1.0, plan A)"
+date: 2026-10-21
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Đo prosody bản giọng nháp — c05v4 (script-v16c, F5 Thái Sơn speed 1.0, plan A)
 
 File: `/workspace/clip-05-v4-voice-only.m4a` + `content/clips/clip-05-hoc-mot-dem/final/voice-only-c05v4.wav`. Đo trên chính file giao (sau loudnorm). Nghỉ = đoạn lặng dài nhất (năng lượng, khung 10ms) tại chỗ nối hai cụm; nhấn = độ to (chỉ tính khung có tiếng) của cụm đậm so phần còn lại của câu (bỏ âm tiết cuối) và so 2 âm tiết kề mỗi bên; lên giọng = trung vị F0 âm tiết cuối so 2 âm tiết ngay trước (semitone); STT = faster-whisper medium float32 (vi) trên đoạn câu, so với lời (số/từ EN quy về cách đọc).

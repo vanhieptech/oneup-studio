@@ -18,4 +18,11 @@ for t in ["Một nghiên cứu cho sinh viên đọc một bài hai lần liền
           "Lịch sử giao dịch ngân hàng.", "Địa chỉ nhà bạn.", "Sinh nhật mẹ tuần sau.", "Học lý thuyết rồi làm thử.",
           "Ôn tiếng Anh mười phút mỗi sáng.", "Gấp sách lại tự kiểm tra."]:
     T(f"no hit: {t} → {H(t)}", not H(t))
-print("FAILS", fails); sys.exit(1 if fails else 0)
+import unittest
+
+class L087Tests(unittest.TestCase):
+    def test_all_l087_assertions(self):
+        self.assertEqual(fails, 0)
+
+if __name__ == "__main__":
+    print("FAILS", fails); sys.exit(1 if fails else 0)

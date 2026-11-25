@@ -1,4 +1,9 @@
 ---
+date: 2026-10-30 18:25 (VN)
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 title: "Trend cho clip-05 v9 «Hay lắm» (thay trend học thuộc)"
 clip: clip-05-hoc-mot-dem
 trend_id: x-2114817316420805048

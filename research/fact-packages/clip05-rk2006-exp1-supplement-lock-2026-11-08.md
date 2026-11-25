@@ -1,3 +1,12 @@
+---
+title: "Clip05 — supplemental lock RK2006, Experiment 1"
+date: 2026-11-08
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip05 — supplemental lock RK2006, Experiment 1
 
 Status: **VERIFIED / SOURCE-OWNER SCOPE** (phạm vi nguồn đã xác minh).

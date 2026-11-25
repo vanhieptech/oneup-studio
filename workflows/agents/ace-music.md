@@ -1,4 +1,6 @@
 ---
+type: doc
+source: "oneup-studio (soạn trong repo)"
 title: "Workflow agent: ACE Music"
 agent: ACE Music
 slug: ace-music
@@ -7,7 +9,6 @@ status: ready
 repo_nguon: "https://github.com/ace-step/ACE-Step-1.5"
 tags: [workflow, agent, music, ace-step, hi.oneup]
 ---
-
 # ACE Music — Workflow
 
 ## 1. Vai trò và không làm gì

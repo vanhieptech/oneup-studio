@@ -4,7 +4,8 @@ date: 2026-10-18
 source: "so sánh clip-01/02/03 locked vs 4 doodle demo; test crack trên clip-03 b06 (2 vòng still)"
 id: research.doodle-audit
 type: audit
-status: "kết luận: zero-doodle cho b06; cổng doodle đề xuất, CHƯA áp vào lessons/SKILL — chờ Hiệp duyệt"
+status: draft
+summary: "kết luận: zero-doodle cho b06; cổng doodle đề xuất, CHƯA áp vào lessons/SKILL — chờ Hiệp duyệt"
 tags: [doodle, animation, audit, L-047, L-048, L-049]
 ---
 

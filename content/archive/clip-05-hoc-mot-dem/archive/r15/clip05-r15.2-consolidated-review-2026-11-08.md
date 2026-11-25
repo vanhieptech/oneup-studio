@@ -1,3 +1,12 @@
+---
+title: "clip-05 r15.2 PATCH2 — review gộp (Rule Reviewer, chỉ đọc), 08/11/2026 ~14:45 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # clip-05 r15.2 PATCH2 — review gộp (Rule Reviewer, chỉ đọc), 08/11/2026 ~14:45 giờ VN
 - Bản mới nhất: handoffs/clip05-r15.2-full-draft-2026-11-08.md (mtime 14:26).
   - File SHA 87885dd3…7dc2, lời SHA 3a6f280d…a78e, 439 đơn vị. Mình tự tính lại, khớp.

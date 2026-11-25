@@ -1,3 +1,12 @@
+---
+title: "Social Research — frozen r14.1: nguồn trend / giả định / caption"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Social Research — frozen r14.1: nguồn trend / giả định / caption
 Ngày 08/11/2026, Asia/Saigon (giờ Việt Nam). Không kiểm craft/hook/toàn script hoặc fact RK thay Deep.
 

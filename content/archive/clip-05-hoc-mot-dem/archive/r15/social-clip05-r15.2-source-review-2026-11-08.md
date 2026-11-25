@@ -1,3 +1,12 @@
+---
+title: "Social — r15.2: verdict nguồn riêng S05 / caption S05 / storyboard b02"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Social — r15.2: verdict nguồn riêng S05 / caption S05 / storyboard b02
 Thực kiểm: 08/11/2026 21:50:38, giờ Việt Nam (Asia/Saigon).
 

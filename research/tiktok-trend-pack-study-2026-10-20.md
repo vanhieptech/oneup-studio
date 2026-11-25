@@ -1,4 +1,5 @@
 ---
+source: "oneup-studio (soạn trong repo)"
 title: "Gói trend TikTok mảng học tập / từ vựng tiếng Anh / năng suất (Social Research, 20/10/2026)"
 date: 2026-10-20
 id: tiktok-trend-pack-study-2026-10-20
@@ -9,7 +10,6 @@ clip: clip-04-gap-sach-tu-kiem
 status: done
 tags: [trends, hooks, study-tips, tu-vung, active-recall, tiktok, shorts, reels, threads]
 ---
-
 # Gói trend TikTok mảng học tập, 20/10/2026
 
 Social Research làm, không phải script. Mọi số view/like/share/save dưới đây là số **hiện trên trang TikTok của bài đó** lúc Social Research đọc (20/10/2026, khoảng 23:15 giờ VN, UTC+7), hoặc số trong dataset Apify đã có sẵn trong repo (ghi rõ). Số liệu nền tảng chính thức về cách đề xuất video Deep Research đã làm, xem `research/platform-recommendation-facts-2026-10-20.md`. File này không làm lại phần đó.

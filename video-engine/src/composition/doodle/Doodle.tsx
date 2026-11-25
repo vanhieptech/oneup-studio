@@ -1,6 +1,6 @@
 import React from "react";
 import { BRAND } from "../theme";
-import { doodleEase, doodlePaths, fadeFactor, interpTranslate, pathLength, strokePaths, strokeWindow, toPathD, type DoodleKind, type DoodleStroke, type Pt, type TranslateKeyframe } from "./doodle";
+import { doodleEase, doodlePaths, fadeFactor, interpTranslate, pathLength, strokePaths, strokeWindow, toPathD, type DoodleKind, type DoodleStroke, type Pt, type TranslateKeyframe } from "./doodleMath";
 
 export interface DoodleCue {
   kind: DoodleKind; x: number; y: number; w: number; h: number;

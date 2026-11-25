@@ -60,4 +60,11 @@ r=run(cr._l088_facts, cd); T("DR fact-package present → ✔", r and all(x[0]==
 cd5=os.path.join(d, "clip-05-test"); os.makedirs(cd5)
 r=run(cr._l088_facts, cd5); T("clip ≤05 missing DR file → ⚠ only", any(x[0]=="⚠" for x in r) and not any(x[0]=="✖" for x in r))
 T("stray ')' stripped: «Steel 2007)»", cr.citations("(Steel 2007 Psych Bull), Steel 2007)") == ["Steel 2007", "Steel 2007"])
-print("FAILS", fails); sys.exit(1 if fails else 0)
+import unittest
+
+class L088Tests(unittest.TestCase):
+    def test_all_l088_assertions(self):
+        self.assertEqual(fails, 0)
+
+if __name__ == "__main__":
+    print("FAILS", fails); sys.exit(1 if fails else 0)

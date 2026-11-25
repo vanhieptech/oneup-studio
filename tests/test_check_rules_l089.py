@@ -49,4 +49,11 @@ T("parse: không đọc được beat → ✖", (cr.res.clear(), cr.check_flow_b
 with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf8") as f: f.write(R4)
 p = subprocess.run([sys.executable, R+"/pipeline/scripts/check-rules.py", "--flow", f.name], capture_output=True, text=True)
 T("CLI --flow exit 0 + có ⚠ L-089", p.returncode == 0 and "⚠ L-089" in p.stdout); os.unlink(f.name)
-print("FAILS", fails); sys.exit(1 if fails else 0)
+import unittest
+
+class L089Tests(unittest.TestCase):
+    def test_all_l089_assertions(self):
+        self.assertEqual(fails, 0)
+
+if __name__ == "__main__":
+    print("FAILS", fails); sys.exit(1 if fails else 0)

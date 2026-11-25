@@ -1,4 +1,8 @@
 ---
+type: doc
+tags: [channels]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 title: "@vanhiep.tech layer frame"
 date: 2026-11-08
 palette: one-dark
@@ -16,7 +20,6 @@ safeZone: "top 220 / bottom 420 / left 56 / right 140"
 tokens: "brand/tokens.css"
 updated: 2026-11-08
 ---
-
 # Frame — layer graphics @vanhiep.tech
 
 Hard rules for **every** generate. Skill: `channels/vanhiep-tech/skills/make-layer/SKILL.md` (DL-069 · DL-070 · DL-071).

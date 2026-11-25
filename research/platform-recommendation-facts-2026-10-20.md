@@ -1,3 +1,12 @@
+---
+title: "Các nền tảng chính thức nói gì về cách đề xuất video (Deep Research kiểm, 20/10/2026)"
+date: 2026-10-20
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Các nền tảng chính thức nói gì về cách đề xuất video (Deep Research kiểm, 20/10/2026)
 
 ## TikTok, trang Newsroom chính thức: https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you

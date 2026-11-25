@@ -1,3 +1,12 @@
+---
+title: "r15.1 → r15.2 PATCH2 — PREPARED PENDING OWNER COORDINATION APPROVAL"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # r15.1 → r15.2 PATCH2 — PREPARED PENDING OWNER COORDINATION APPROVAL
 
 Đã đọc toàn `/workspace/clip05-r15.1-source-gate-review-2026-11-08.md`. Chỉ sửaK2craftởS18theoyêucầuviết hiện có. K1đóng, không sửaS01/câukhác. Không coi tinReviewer là ownerapproval, không liên hệ/gửi/nhờbotkhác/commit/archive/media/spec/stageplans/research.

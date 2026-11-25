@@ -7,13 +7,43 @@
 Units: phrases split at '|' in spec `phrases[].t` (< 4 syllables merged). Emphasis: stem words +1 st +2 dB tempo .95; {nhấn:} words
 tempo .78 +0.8 st +1.5 dB; stem line last word −1.5 st (fall). Hiệp-né role +2 st. Writes video-engine/public/voice/<prefix>-<line>.wav/.json
 with emphasis_edits=true (check-rules L-016 exception) and final/voice-stt-<prefix>.json. Re-roll a failing unit: add seeds to a batch, re-run pick <key>.
+Refs (DL-073, assets/voice-refs/voice-refs.json): spec without `voice_refs` -> thai-son for every line (old clips unchanged). With `voice_refs`
+(true, or a dict overriding slots {"default","happy","serious"} with ref ids, plus optional {"lines": {<line key>: slot|ref id}}):
+emotion happy/teasing -> happy; focused/neutral in a scene with part "evidence" -> serious; else default (thai-son-v2). A line may set `voice_ref`.
 """
-import json, re, os, sys, subprocess
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+import hashlib, json, re, os, sys, subprocess, unicodedata
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import paths as P
+from tts import respell as RS
+REPO = str(P.ROOT)
+FFMPEG = P.FFMPEG_BIN
+def final_tone(text):
+    """Tone of the last Vietnamese syllable: huyen | nang | sac | hoi | nga | ngang (L-082)."""
+    ws_ = re.findall(r"[\wÀ-ỹ]+", text or "")
+    if not ws_: return "ngang"
+    d = unicodedata.normalize("NFD", ws_[-1].lower())
+    return "huyen" if "\u0300" in d else "nang" if "\u0323" in d else "sac" if "\u0301" in d else "hoi" if "\u0309" in d else "nga" if "\u0303" in d else "ngang"
+L082_TONES = ("huyen", "nang")
 def arg(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
-CMD, SPEC = sys.argv[1], os.path.abspath(sys.argv[2]); W = os.path.abspath(arg("--work", "/workspace/voice-work")); os.makedirs(W, exist_ok=True)
+CMD, SPEC = sys.argv[1], os.path.abspath(sys.argv[2]); W = os.path.abspath(arg("--work", str(P.VOICE_WORK_DIR))); os.makedirs(W, exist_ok=True)
 PREFIX = arg("--prefix", "vp"); LISTEN = arg("--listen", os.path.join(W, "listen.mp3"))
 ARGS = [a for i, a in enumerate(sys.argv[3:], 3) if not a.startswith("--") and not sys.argv[i - 1].startswith("--")]
+
+VR = json.load(open(os.path.join(REPO, "assets/voice-refs/voice-refs.json")))
+REF_SLOTS = {"default": "thai-son-v2", "happy": "thai-son-happy", "serious": "thai-son-serious"}
+def pick_ref(S, sc, l, key):
+    vr = S.get("voice_refs")
+    if not vr: return "thai-son"
+    slots = dict(REF_SLOTS); lines = {}
+    if isinstance(vr, dict):
+        slots.update({k: v for k, v in vr.items() if k in REF_SLOTS}); lines = vr.get("lines") or {}
+    o = l.get("voice_ref") or lines.get(key)
+    if o: r = slots.get(o, o)
+    elif l.get("emotion") in ("happy", "teasing"): r = slots["happy"]
+    elif l.get("emotion", "neutral") in ("focused", "neutral") and sc.get("part") == "evidence": r = slots["serious"]
+    else: r = slots["default"]
+    if r not in VR: sys.exit(f"voice_refs: unknown ref '{r}' for {key} (ids: {', '.join(k for k in VR if not k.startswith('_'))})")
+    return r
 
 def gen():
     import json,re
@@ -22,6 +52,7 @@ def gen():
     for sc in [s for part in S['parts'] for s in part.get('scenes',[])+part.get('sections',[])]:
       for li,l in enumerate(sc['lines']):
         key=sc['id']+('abcdef'[li] if len(sc['lines'])>1 else '')
+        ref_id=pick_ref(S,sc,l,key)
         ph=[p['t'] for p in l['phrases']]; m=[]
         keep=[p.get('keep') for p in l['phrases']]
         for p in ph:  # merge <4 syllables into next (phrases flagged keep: one unit each, clip-04 v14b)
@@ -30,29 +61,39 @@ def gen():
         if len(m)>1 and not any(keep) and len(re.sub(r"\{[^:]*: |\}","",m[-1]).split())<3: x=m.pop(); m[-1]=m[-1]+' '+x
         for i,p in enumerate(m):
           emph=re.findall(r"\{nhấn: ([^}]*)\}",p)+[w for w in ("Thứ nhất","Thứ hai","cuối cùng") if w in p]; t=re.sub(r"\{nhấn: ([^}]*)\}",r"\1",p)
-          units.append({"key":f"{key}-{i}","line":key,"role":l['voice_role'],"t":t,"emph":emph,"last":i==len(m)-1,"stem":bool(re.match(r"(thì cái|thứ nhất|thứ hai|và cuối cùng)",l['text'].lower().replace('*','')))})
+          units.append({"key":f"{key}-{i}","line":key,"ref":ref_id,"role":l['voice_role'],"t":t,"emph":emph,"last":i==len(m)-1,"stem":bool(re.match(r"(thì cái|thứ nhất|thứ hai|và cuối cùng)",l['text'].lower().replace('*','')))})
     json.dump(units,open(W+'/units.json','w'),ensure_ascii=False,indent=0)
-    ref=REPO+"/assets/voice-refs/thai-son.wav";rt="Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha."
-    for h in (0,1):
-      it=[{"t":u["t"],"seed":sd,"speed":float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95)),"out":f"{W}/{u['key']}-{sd}.wav"} for n,u in enumerate(units) if n%2==h for sd in (11,37)]
-      json.dump({"ref":ref,"ref_text":rt,"items":it},open(f"{W}/batch{h}.json","w"),ensure_ascii=False)
-    print(len(units)); [print(u['key'],u['t'],u['emph']) for u in units]
+    ref=REPO+"/assets/voice-refs/"+VR["thai-son"]["wav"];rt=VR["thai-son"]["ref_text"]
+    ck_fp=P.ckpt_fingerprint()
+    def _mk_item(u, sd):
+      spd=float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95))
+      ch=hashlib.sha256(json.dumps([u["t"],u["ref"],spd,sd,ck_fp],ensure_ascii=False).encode()).hexdigest()[:16]
+      return {"t":u["t"],"ref":REPO+"/assets/voice-refs/"+VR[u["ref"]]["wav"],"ref_text":VR[u["ref"]]["ref_text"],"seed":sd,"speed":spd,"cache_hash":ch,"out":f"{W}/{u['key']}-{sd}.wav"}
+    split=int(arg("--split","1"))
+    if split<=1:
+      it=[_mk_item(u,sd) for u in units for sd in (11,37)]
+      json.dump({"ref":ref,"ref_text":rt,"items":it},open(f"{W}/batch.json","w"),ensure_ascii=False)
+    else:
+      for h in range(split):
+        it=[_mk_item(u,sd) for n,u in enumerate(units) if n%split==h for sd in (11,37)]
+        json.dump({"ref":ref,"ref_text":rt,"items":it},open(f"{W}/batch{h}.json","w"),ensure_ascii=False)
+    print(len(units)); [print(u['key'],u['ref'],u['t'],u['emph']) for u in units]
 
 def helpers():
     global m, pcm, stt, sim, n
     import json,re,subprocess,difflib,unicodedata,os,glob,numpy as np
     from faster_whisper import WhisperModel
-    m=WhisperModel("small",device="cpu",compute_type="int8")
+    m=WhisperModel("small",device="cpu",compute_type=os.environ.get("ASR_COMPUTE","float32"))
     U=json.load(open(W+'/units.json')); OUT=REPO+"/video-engine/public/voice"; SR=48000; FPS=30
-    AL=[("2006","hai nghìn không trăm lẻ sáu"),("120","một trăm hai mươi"),("56","năm mươi sáu"),("42","bốn mươi hai"),("5 phút","năm phút"),("1 tuần","một tuần"),("tik tok","tíc tóc"),("tiktok","tíc tóc"),("tích tóc","tíc tóc"),("tiết tóc","tíc tóc"),("thứ 2","thứ hai"),("laptop","láp tóp"),("clip","clíp"),("file","phai"),("comment","com men"),("steel","xtiu"),("691","sáu trăm chín mươi mốt"),("9 giờ","chín giờ"),("1 dòng","một dòng"),("3 thứ","ba thứ"),("kruger","cru gơ"),("krugo","cru gơ"),("evans","ê vần"),("evan","ê vần"),("giang","yang"),("222","hai trăm hai mươi hai"),("48","bốn mươi tám"),("đúng lúc kỳ","đun lốt ki"),("đùa lúc kỳ","đun lốt ki"),("đúng lúc ki","đun lốt ki"),("đùa lúc ki","đun lốt ki"),("đúng lớp kỳ","đun lốt ki"),("đùa lớp kỳ","đun lốt ki"),("10","mười"),("2","hai"),("3","ba"),("1","một")]
-    LEAK=set("hôm nay trời sài gòn mát mẻ mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha".split())
+    AL=RS.STT_ALIASES
+    LEAKS={}  # per ref: words of its ref_text (leading leaked words are cut from a take)
     def n(s):
       s=unicodedata.normalize("NFC",s.lower()); s=re.sub(r"[^\w ]"," ",s); s=" ".join(s.split())
       for a,b in AL: s=s.replace(a,b)
       return s.split()
     def tl(ws): return ["".join(c for c in unicodedata.normalize("NFD",w) if unicodedata.category(c)!="Mn").replace("đ","d") for w in ws]
     def sim(h,t): return round(0.5*difflib.SequenceMatcher(None,h,t).ratio()+0.5*difflib.SequenceMatcher(None,tl(h),tl(t)).ratio(),3)
-    def pcm(f,sr=16000): return np.frombuffer(subprocess.run(["ffmpeg","-loglevel","error","-i",f,"-ac","1","-ar",str(sr),"-f","f32le","-"],capture_output=True).stdout,dtype="float32")
+    def pcm(f,sr=16000): return np.frombuffer(subprocess.run([FFMPEG,"-loglevel","error","-i",f,"-ac","1","-ar",str(sr),"-f","f32le","-"],capture_output=True,check=True).stdout,dtype="float32")
     def stt(a):
       best=None
       for pad in (8000,0):
@@ -63,8 +104,10 @@ def helpers():
     def rb(x,tempo=1.0,semi=0.0,db=0.0):
       if len(x)<SR*0.05: return x
       af=f"rubberband=tempo={tempo}:pitch={2**(semi/12)}"+(f",volume={db}dB" if db else "")
-      p=subprocess.run(["ffmpeg","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-","-af",af,"-f","f32le","-"],input=x.astype("float32").tobytes(),capture_output=True).stdout
-      return np.frombuffer(p,dtype="float32")
+      res=subprocess.run([FFMPEG,"-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-","-af",af,"-f","f32le","-"],input=x.astype("float32").tobytes(),capture_output=True)
+      if res.returncode!=0 or not res.stdout:
+        raise RuntimeError(f"ffmpeg rubberband failed ({FFMPEG}, rc={res.returncode}): {res.stderr.decode(errors='replace').strip()} — need ffmpeg-full with librubberband")
+      return np.frombuffer(res.stdout,dtype="float32")
     def trim(x,thr=0.01):
       i=np.where(np.abs(x)>thr)[0]; return x[max(0,i[0]-int(.03*SR)):i[-1]+int(.06*SR)] if len(i) else x
     return dict(globals(), **locals())
@@ -99,7 +142,7 @@ else:
           if ONLY and u['key'] not in ONLY: continue
           # v14b (pacing-v14.md, Rule Reviewer): pick = STT sim − penalty if >5 syll/s + bonus if a question rises; emphasis = gain only (no tempo,
           # no word split), ≥2 dB over the rest of the unit; commas get a real 0.15–0.2s pause (inserted/trimmed at the low-energy point); questions: last syllable +2.5 st
-          tgt=n(u["t"]); best=None; cands=[]; syl=max(1,len(tgt)); q=u["t"].rstrip().endswith("?")
+          rid=u.get("ref","thai-son"); LEAK=LEAKS.get(rid) or LEAKS.setdefault(rid,set(n(VR[rid]["ref_text"]))); tgt=n(u["t"]); best=None; cands=[]; syl=max(1,len(tgt)); q=u["t"].rstrip().endswith("?")
           def voiced(a,t0,t1,sr=16000):
             h=int(.01*sr); fr=[float(np.sqrt(np.mean(a[j:j+h]**2))) for j in range(int(t0*sr),max(int(t0*sr),int(t1*sr)-h),h)]
             if not fr: return 0.3
@@ -124,7 +167,8 @@ else:
               he=re.sub(r"[^a-z]","","".join(s_.text for s_ in segs_).lower()); sc=max(sc,round(difflib.SequenceMatcher(None,he,EN_U[u["key"]]).ratio(),3))
             rate=syl/voiced(a16,w2[0][1],w2[-1][2]) if w2 else 9.0
             rs=rise_st(a16,w2) if q else 0.0
-            score=sc-(0.15 if rate>5.0 else 0)+(0.05 if q and rs>0 else 0)
+            # L-074: no >5 syll/s penalty (natural Vietnamese conversational speed is 5.0-6.5 syll/s)
+            score=sc+(0.05 if q and rs>0 else 0)
             cands.append((os.path.basename(f),round(sc,3),round(rate,2),round(rs,2)))
             if best is None or score>best[0]: best=(score,f,cut,w2,sc,rate,rs)
           score,f,cut,ws,sc,rate,rs=best; x=pcm(f,SR); x=x[int(cut*SR):]
@@ -157,8 +201,8 @@ else:
           if u["last"] and u["stem"] and len(ws)>0:  # sentence-end fall on the last word (no tempo change)
             lw=int(ws[-1][1]*SR)
             if 0<lw<len(tail): out.append(tail[:lw]); tail=rb(tail[lw:],tempo=1.0,semi=-1.5)
-          elif q and len(ws)>0:  # question: raise the last syllable
-            lw=int(ttime(len(tgt)-1,False)*SR); semi=float(min(5.0,max(2.5,1.0-rs)))  # adaptive: beat the falling nặng/huyền tone of the take
+          elif q and len(ws)>0 and final_tone(u["t"]) not in L082_TONES:  # L-082: never lift huyền/nặng ending questions
+            lw=int(ttime(len(tgt)-1,False)*SR); semi=float(min(5.0,max(2.5,1.0-rs)))
             if 0<lw<len(tail): out.append(tail[:lw]); tail=rb(tail[lw:],tempo=1.0,semi=semi)
           out.append(tail); x=np.concatenate(out)
           # comma / colon pauses inside the unit: real 0.15–0.2s (':' 0.25s), never longer than a sentence pause
@@ -219,15 +263,20 @@ else:
             if i<len(lines[ln])-1: segs.append(np.zeros(int((COMMA_GAP_LINE[ln] if ln in COMMA_GAP_LINE and u["t"].strip()[-1:]=="," else gap(u["t"],u["stem"] and i==0,lines[ln][i+1]))*SR),'float32'))  # spec comma_gap_line
           segs.append(np.zeros(int(.1*SR),'float32')); y=np.concatenate(segs); y=y/max(1e-4,np.abs(y).max())*0.89
           dst=f"{OUT}/{PREFIX}-{ln}"
-          subprocess.run(["ffmpeg","-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",dst+".wav"],input=y.tobytes(),check=True)
+          subprocess.run([FFMPEG,"-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",dst+".wav"],input=y.tobytes(),check=True)
           say=" ".join(u["t"] for u in lines[ln]); ws=stt(pcm(dst+".wav")); hyp=" ".join(w[0] for w in ws); sc=sim(n(hyp),n(say))
           rep[ln]={"line_sim":sc,"units":{u["key"]:stt_u[u["key"]]["sim"] for u in lines[ln]},"stt":hyp,"dur":round(len(y)/SR,2)}
-          json.dump({"duration":round(len(y)/SR,3),"envelope":env(y),"engine":"F5-TTS hynt ViVoice thai-son, per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"+(", +2 semi" if lines[ln][0]["role"]=="Hiệp-né" else ""),
+          json.dump({"duration":round(len(y)/SR,3),"envelope":env(y),"engine":"F5-TTS hynt ViVoice "+"+".join(sorted({u.get("ref","thai-son") for u in lines[ln]}))+", per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"+(", +2 semi" if lines[ln][0]["role"]=="Hiệp-né" else ""),
             "role":lines[ln][0]["role"],"stt":hyp,"stt_sim":sc,"intra_output_cuts":0,"emphasis_edits":True,"units":[{"text":u["t"],"take":stt_u[u["key"]]["take"],"sim":stt_u[u["key"]]["sim"]} for u in lines[ln]]},open(dst+".json","w"),ensure_ascii=False)
           scene=ln.rstrip('abcdef') if ln not in ('b01b',) else ln
           if full: full.append(np.zeros(int((0.12 if ln in ('b01b','b02') else 0.3 if scene==prev_scene else 0.42)*SR),'float32'))
           full.append(y); prev_scene=scene; print(ln,sc,rep[ln]["dur"],hyp,flush=True)
         z=np.concatenate(full)
-        subprocess.run(["ffmpeg","-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-","-af","loudnorm=I=-16:TP=-1.5","-c:a","libmp3lame","-b:a","160k",LISTEN],input=z.tobytes(),check=True)
+        raw_l=os.path.join(W,"_listen_raw.wav")
+        subprocess.run([FFMPEG,"-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",raw_l],input=z.tobytes(),check=True)
+        err_l=subprocess.run([FFMPEG,"-hide_banner","-i",raw_l,"-af","ebur128","-f","null","-"],capture_output=True,text=True).stderr
+        ms_l=re.findall(r"I:\s+(-?[\d.]+)\s+LUFS",err_l); g_l=-16.0-float(ms_l[-1]) if ms_l else 0.0
+        subprocess.run([FFMPEG,"-y","-loglevel","error","-i",raw_l,"-af",f"volume={g_l:.2f}dB,alimiter=limit=0.84:attack=1:release=30:level=disabled","-c:a","libmp3lame","-b:a","160k",LISTEN],check=True)
+        os.remove(raw_l)
         json.dump(rep,open(os.path.join(os.path.dirname(SPEC),f'voice-stt-{PREFIX}.json'),'w'),ensure_ascii=False,indent=1)
         print("total",round(len(z)/SR,2))

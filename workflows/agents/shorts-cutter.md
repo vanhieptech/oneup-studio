@@ -1,4 +1,5 @@
 ---
+source: "oneup-studio (soạn trong repo)"
 title: "Workflow agent: Shorts Cutter — cắt video dài thành Shorts dọc cho @hi.oneup"
 date: 2026-10-19
 id: workflow.agent.shorts-cutter
@@ -8,7 +9,6 @@ updated: 2026-10-19
 tags: [agent-workflow, shorts-cutter, hi.oneup, agency-production]
 source_repo: "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator"
 ---
-
 # Shorts Cutter — workflow riêng
 
 ## 1. Vai trò và không làm gì

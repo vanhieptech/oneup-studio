@@ -1,10 +1,12 @@
 ---
+type: research
+tags: [research]
+source: "oneup-studio (soạn trong repo)"
 title: "Clip-05 — kiểm phạm vi cầu nối #texthip sang 23.14"
 author: Deep Research
 date: 2026-11-07
 status: fact-scope-checked-trend-pending-social-research
 ---
-
 # Kết luận
 
 Có thể nối CÓ ĐIỀU KIỆN như hai ý riêng: trào lưu đọc sách là bối cảnh; tự kiểm là khuyến nghị riêng khi người xem muốn nhớ nội dung vừa đọc. Không có bằng chứng được kiểm trong gói này rằng #texthip làm tăng khả năng nhớ, người tham gia thường quên, hoặc tự kiểm là cách họ đang dùng.

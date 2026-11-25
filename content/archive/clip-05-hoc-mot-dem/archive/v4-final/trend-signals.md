@@ -1,4 +1,9 @@
 ---
+date: 2026-10-28 (r6: bỏ nhánh video theo Deep Research F1)
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 title: "Trend signals — clip-05 (v5, hướng A1)"
 clip: clip-05-hoc-mot-dem
 idea: B-hoc1dem-01

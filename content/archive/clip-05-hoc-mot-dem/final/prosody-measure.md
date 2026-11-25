@@ -1,3 +1,12 @@
+---
+title: "Prosody đo thật — clip-05-final (voice c05v21s)"
+date: 2026-11-25
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Prosody đo thật — clip-05-final (voice c05v21s)
 
 Nghỉ = đoạn lặng dài nhất (năng lượng) giữa hai từ khớp; giữa câu/beat = khoảng lặng thật giữa hai file giọng theo timing.json. Lên giọng = trung vị F0 từ cuối so với phần trước (semitone).

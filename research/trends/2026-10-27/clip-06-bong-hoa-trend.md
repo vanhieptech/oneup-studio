@@ -1,4 +1,5 @@
 ---
+type: research
 title: "Trend cho clip-06 (4.12, “21 ngày tạo thói quen” là myth)"
 date: 2026-10-27
 feeds: clip-06 (4.12)

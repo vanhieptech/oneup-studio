@@ -74,7 +74,7 @@ describe("character state controller", () => {
 describe("profiles", () => {
   it("load once and are reused across plans", () => {
     expect(defaultRegistry.get("hiep")).toBe(defaultRegistry.get("hiep"));
-    expect(defaultRegistry.get("hiep")!.expressions).toEqual(["neutral", "happy", "sad", "surprised", "confused", "focused"]);
+    expect(defaultRegistry.get("hiep")!.expressions).toEqual(["neutral", "happy", "sad", "surprised", "confused", "focused", "despair"]);
     expect(defaultRegistry.get("omi")!.availableFromWeek).toBe(5);
   });
   it("can register an extra character without touching scenes", () => {

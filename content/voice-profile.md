@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: voice-profile
 type: profile
 status: confirmed
-updated: 2026-10-12
+updated: 2026-11-25
 tags: [voice, script, persona, southern-vi]
 ---
 # Voice profile: Hiệp (@hi.oneup)
@@ -36,7 +36,7 @@ Hiệp xác nhận ngày 2026-10-12 (DL-019). Skill `script-polish` áp dụng f
 | "Deadline hông có thì tự đặt nha." (chen tiếng Anh để nhấn ý) | "Let's lock in and be productive guys!" (cả câu tiếng Anh) |
 
 ## 3a. Giọng AI của nhân vật Hiệp (DL-035)
-- F5-TTS **"F5 · Thái Sơn"** (nam, miền Nam; giọng mẫu là câu tổng hợp bằng preset VieNeu "Thái Sơn", trước đây là "Đức Trí" DL-030). Không clone giọng thật. Nhấn nhá qua `phrases` (luật 46). Giấy phép checkpoint không thương mại, Hiệp đã chấp nhận rủi ro (DL-035). Viết số theo cách đọc, từ tiếng Anh khó đọc thì thêm `say` phiên âm (TOEIC → "tô ích", okay → "ô kê").
+- F5-TTS **"F5 · Thái Sơn"** (nam, miền Nam; giọng mẫu là câu tổng hợp bằng preset VieNeu "Thái Sơn", trước đây là "Đức Trí" DL-030). Checkpoint **6000h** (`model_last_6000h.pt`, DL-073; trước đó bản 2000h). Không clone giọng thật. Nhấn nhá qua `phrases` (luật 46). Giấy phép checkpoint không thương mại, Hiệp đã chấp nhận rủi ro (DL-035). Giọng mẫu theo cảm xúc (DL-073, chỉ khi spec khai báo `voice_refs`): `thai-son-v2` (mặc định), `thai-son-happy` (happy/teasing: đoạn hài, CTA), `thai-son-serious` (focused/neutral ở phần evidence); spec không khai báo thì vẫn `thai-son.wav`. Danh sách + ref_text: `assets/voice-refs/voice-refs.json`. Viết số theo cách đọc, từ tiếng Anh khó đọc thì thêm `say` phiên âm (TOEIC → "tô ích", okay → "ô kê").
 
 ## 3c. Nhấn nhá tự nhiên: markup giọng (DL-039, luật 46, check L-017)
 Chỉ viết trong `phrases[].t` (lời đọc). Bubble (`text`) và caption (`en`) **không** chứa markup.

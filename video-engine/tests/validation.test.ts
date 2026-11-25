@@ -13,7 +13,7 @@ describe("plan validation", () => {
   });
   it("applies defaults (1080x1920 30fps light)", () => {
     const r = validatePlan({ id: "x", scenes: [{ id: "a", duration: 2 }] });
-    expect(r.ok && r.plan.video).toEqual({ width: 1080, height: 1920, fps: 30, theme: "light" });
+    expect(r.ok && r.plan.video).toEqual({ width: 1080, height: 1920, fps: 30, theme: "light", layout: "tiktok", captionAccent: false });
   });
   it("rejects duplicate scene ids", () => {
     const p = base(); p.scenes[1].id = p.scenes[0].id;

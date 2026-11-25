@@ -1,4 +1,5 @@
 ---
+tags: [logs]
 title: "Rubric chấm điểm script video ngắn — ĐỀ XUẤT chờ Hiệp duyệt (chưa chốt)"
 date: 2026-10-19
 status: proposal-awaiting-hiep
@@ -7,7 +8,6 @@ id: rule-scoring-rubric
 type: rubric
 updated: 2026-10-19
 ---
-
 **L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
 
 # Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt)

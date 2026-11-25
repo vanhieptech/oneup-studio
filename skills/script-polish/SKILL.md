@@ -5,7 +5,7 @@ description: >-
   to the creator for approval: remove AI-writing tells with the vendored humanizer
   skill, adapt to spoken Vietnamese, and match the creator's voice profile, without
   changing any fact, number or citation.
-version: "1.0.0"
+version: "1.1.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -34,6 +34,7 @@ Polish a fact-checked short-form script into spoken Vietnamese that matches the 
    - Inflated words: "bí quyết", "thay đổi cuộc đời", "đỉnh cao", "chìa khoá vàng".
    - Staged openers: "Bạn có biết…", "Hãy cùng tìm hiểu…".
    - Every sentence the same length.
+   - **Paste test** (adapted from mankidev/antialgorithm, MIT): a line that could go into another clip unchanged is too general. Rewrite it around the concrete thing in this clip (something Hiệp saw, did or said, the study's real detail), not a bigger claim. Don't swap a cliché for its known opposite. Don't add a time, date or number just to sound concrete; keep one only when the viewer needs it. Never invent a fact to fill the gap (step 1 still holds).
 3. **Spoken VI pass.**
    - Write the way people talk: short phrases, natural particles where the profile allows (nha, á, thôi, đó). Don't put one on every line.
    - Use the profile's pronouns (mình/bạn by default).

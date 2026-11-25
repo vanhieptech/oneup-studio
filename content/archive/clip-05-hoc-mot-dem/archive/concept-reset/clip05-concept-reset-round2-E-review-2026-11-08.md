@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 concept reset vòng 2 / hướng E (chỉ đọc), 08/11/2026 ~13:55 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 concept reset vòng 2 / hướng E (chỉ đọc), 08/11/2026 ~13:55 giờ VN
 - File handoffs/clip05-concept-reset-round2-2026-11-08.md: SHA 0c45999f…ebb1, khớp.
 - Luật/skill (mtime 13:06 / 12:40 / 13:02) không đổi. Đã đối chiếu lại W-16/L-077, P-05 và X-09, L-091, L-094, L-095, L-098, quyết định W-16, skill craft §2, make-video (hook kiểu con số bất ngờ).

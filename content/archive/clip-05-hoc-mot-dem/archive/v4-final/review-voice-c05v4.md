@@ -1,3 +1,12 @@
+---
+title: "Rule Reviewer: chấm giọng clip-05 v4 (c05v4), 22/10/2026 ~01:00 (giờ VN, UTC+7)"
+date: 2026-10-22
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Reviewer: chấm giọng clip-05 v4 (c05v4), 22/10/2026 ~01:00 (giờ VN, UTC+7)
 
 Bản chấm: `final/voice-only-c05v4.wav` của commit `958e09d` (53,57s). Lời chuẩn: `script-v4-LOCKED.md`.

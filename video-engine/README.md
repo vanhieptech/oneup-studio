@@ -114,7 +114,9 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 **Mặc định (DL-035): F5-TTS** + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice` (⚠ CC-BY-NC-SA-4.0, không thương mại; Hiệp chấp nhận rủi ro). Profile: `voice.engine = "f5-tts"`, `ref` (giọng mẫu tổng hợp bằng VieNeu, `assets/voice-refs/`), `refText`.
 ```bash
 python3 -m venv /workspace/f5-venv && /workspace/f5-venv/bin/pip install f5-tts      # CPU
-# checkpoint: tải model_last.pt + vocab.txt của hynt/F5-TTS-Vietnamese-ViVoice vào /workspace/f5-ckpt (F5_CKPT_DIR)
+# checkpoint 6000h (DL-073): model_last_6000h.pt (674346171 byte) → model_last.pt, config_6000h.json → vocab.txt
+#   từ https://huggingface.co/hynt/F5-TTS-Vietnamese-ViVoice/resolve/main/ vào thư mục F5_CKPT_DIR (Mac: ~/oneup-tools/f5-ckpt-6000h)
+# vocoder: nếu huggingface_hub treo, tải charactr/vocos-mel-24khz (config.yaml, pytorch_model.bin) bằng curl rồi đặt F5_VOCODER_DIR
 export F5_PYTHON=/workspace/f5-venv/bin/python F5_NFE=24                              # NFE 24–32; ~40–70 s/take trên CPU 8 nhân
 ```
 Đường F5 luôn đi qua `pipeline/scripts/voice-prosody.py` (chạy bằng tts-venv; cần asr-venv faster-whisper): theo cụm, 3 take/cụm (seed/speed), tự cắt rò giọng mẫu, chọn take bằng STT + F0. `npm run voice` cũng tự chuyển câu của nhân vật F5 sang đường này (mỗi câu một cụm).

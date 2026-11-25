@@ -8,7 +8,7 @@ R = P.ROOT
 def scope():
     fs = subprocess.run(["git", "ls-files", "*.md"], cwd=R, capture_output=True, text=True).stdout.split()
     fs += subprocess.run(["git", "ls-files", "-o", "--exclude-standard", "*.md"], cwd=R, capture_output=True, text=True).stdout.split()
-    return sorted({f for f in fs if not f.startswith(P.FM_EXEMPT) and "node_modules" not in f})
+    return sorted({f for f in fs if (R / f).is_file() and not f.startswith(P.FM_EXEMPT) and "node_modules" not in f})
 def split(s):
     if s.startswith("---\n") and "\n---" in s[4:]:
         head, body = s[4:].split("\n---", 1); return head.splitlines(), body.lstrip("\n")

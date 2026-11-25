@@ -31,6 +31,7 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Script, tool | `pipeline/scripts/`, `pipeline/tts/`, `video-engine/src/` | |
 | Research, trend | `research/` (`trends/<date>/`), `docs/research/`, `resources/` (từ điển, văn nói) | |
 | Skill | bản chạy: `/home/box/agent-data/workflows/<skill>/`; bản mirror: `skills/<skill>/` (cập nhật cả hai) | |
+| Slash `/skill` cho Claude Code | `.claude/skills/<skill>` = symlink tới `skills/<skill>`, `skills/hyperframes/<skill>`, `channels/vanhiep-tech/skills/<skill>` (không chép file). Thêm skill mới → thêm symlink cùng tên với `name:` | tracked |
 | Log, bài học, quyết định | `logs/` (`lessons.md`, `decision-log.md`, `runs/`) | |
 | Luật | `rules/video-rules.md` | |
 | Quy trình | `docs/workflow/per-video-pipeline.md` | |
@@ -61,7 +62,7 @@ Front-matter bắt buộc cho `.md` nội dung (mọi file trừ `skills/`, `vid
 `content/clips/<clip>/` (đang làm, được thiếu) → đủ gói đăng + Hiệp nói "duyệt" → `git mv` sang `content/archive/<clip>/`, ghi `final/approved.json`, video full + 720p ở `media/clips/<clip>/` + `MANIFEST.json`.
 
 ## File gitignored và nơi giữ trên Mac
-Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (cùng đường dẫn tương đối như box `/workspace/oneup-studio`).
+Repo trên Mac (local chính): `/Users/macbook/work/oneup-studio`.
 
 | Gitignored | Là gì | Trên Mac | Cách có |
 |---|---|---|---|

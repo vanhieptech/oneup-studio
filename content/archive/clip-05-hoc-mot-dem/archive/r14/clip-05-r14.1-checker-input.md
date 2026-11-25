@@ -1,4 +1,10 @@
 ---
+title: "Exact spoken adapter — not a new wording"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 source_document: clip05-r14.1-full-draft-2026-11-08.md
 fact_lock: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md
 ---

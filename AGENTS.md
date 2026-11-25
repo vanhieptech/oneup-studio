@@ -22,7 +22,8 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 ## Nguồn chuẩn (không sao chép nội dung, chỉ trỏ tới)
 | Cần gì | File chuẩn |
 |---|---|
-| Luật (id `rule-N` = mục N) | `rules/video-rules.md` |
+| **Tóm tắt nhanh đang hiệu lực (đọc trước)** | `rules/ACTIVE-CHECKLIST.md` (2 kênh, local Mac, đã bỏ luật cũ bị ghi đè) |
+| Luật đầy đủ (id `rule-N` = mục N) | `rules/video-rules.md` |
 | Lịch sử quyết định, góp ý (id `DL-NNN`) | `logs/decision-log.md`, **đọc trước mỗi clip** (rule-33) |
 | Giọng nói của Hiệp | `content/voice-profile.md` (confirmed) · chuyện thật: `content/story-bank.md` |
 | Brand (màu, font, logo, caption) | `brand/brand-tokens.json` (máy đọc), `brand/brand-index.md` (người đọc) |
@@ -53,16 +54,15 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 ## Series format (DL-027)
 Series @hi.oneup hiện tại **chỉ comic + motion graphics** (Remotion `video-engine/` + HyperFrames). Không shot list, không b-roll tự quay; Hiệp chỉ thu giọng. Không nhắc đăng (DL-028).
 
-## Trend sync (rule-38, rule-47, rule-59: một nguồn duy nhất)
-Mọi asset của @hi.oneup chỉ nằm trong repo này (DL-060, L-023). Không còn thư mục sync riêng.
-1. Job hằng ngày chạy `skills/trend-digest` ngay trong `/workspace/oneup-studio` (box). Ghi thẳng vào `research/trends/{YYYY-MM-DD/,ingest.md,patterns.md}` và `content/idea-bank.md`, rồi `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"` (chỉ commit các path này).
-2. Box không có quyền ghi GitHub: commit nằm trên box cho tới khi agent có Mac, rồi đẩy bằng bundle (`git bundle` → `split -b 9m` → CopyFromBox → trên Mac `git pull --ff-only <bundle> HEAD && git push origin main`).
-3. Media lớn (>5MB audio/video) để ở `media/` (gitignored, không có git-lfs), liệt kê trong `media/MANIFEST.json` (path, size, sha256).
-4. `python3 pipeline/scripts/check-assets.py` chặn khi còn file dự án nằm ngoài repo (`/workspace/oneup-studio-sync`, `/workspace/hi-oneup`, `/workspace/*.md` của dự án).
-`/workspace/oneup-studio-sync` và `pipeline/scripts/sync-trends.sh` đã bỏ (deprecated).
+## Trend sync (rule-38, rule-47, rule-59: một nguồn duy nhất — local Mac)
+Mọi asset của @hi.oneup chỉ nằm trong repo local `/Users/macbook/work/oneup-studio` (DL-060, L-023). Không còn box `/workspace/` hay thư mục sync riêng.
+1. Job hằng ngày chạy `skills/trend-digest` trực tiếp trong repo local. Ghi thẳng vào `research/trends/{YYYY-MM-DD/,ingest.md,patterns.md}` và `content/idea-bank.md`, rồi `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"`.
+2. Media lớn (>2MB audio/video) để ở `media/` (gitignored, không có git-lfs), liệt kê trong `media/MANIFEST.json` (path, size, sha256) và kiểm bằng `python3 pipeline/scripts/media-sync.py verify`.
+3. `python3 pipeline/scripts/check-assets.py` kiểm layout clip, front-matter, trùng nội dung, trùng ID (`DL-NNN`/`L-NNN`), và media mới >2MB.
+4. Cài pre-commit hook local một lần: `bash pipeline/scripts/install-hooks.sh`.
 
 ## Đường dẫn máy
-Repo trên Mac: `/Users/macbook/me/projects/oneup-studio` (machine I-Am-Focused). Bản clone trên box (nơi làm việc duy nhất, commit tại đây rồi đẩy qua Mac): `/workspace/oneup-studio`.
+Repo trên Mac (máy làm việc local chính): `/Users/macbook/work/oneup-studio`. Toolchain local: `~/oneup-tools/` (tự động nhận qua `pipeline/paths.py`).
 
 ## Agent skills
 

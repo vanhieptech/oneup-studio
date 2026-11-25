@@ -1,3 +1,12 @@
+---
+title: "clip-05 v4 — prosody plan (bản đọc cho F5, News) · rev 1 · 21/10/2026"
+date: 2026-10-21
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # clip-05 v4 — prosody plan (bản đọc cho F5, News) · rev 1 · 21/10/2026
 
 Nguồn lời: `content/clips/clip-05-hoc-mot-dem/script-v4-LOCKED.md` (91848a3, cùng chữ với 8ec205e, Hiệp «Chốt» 21/10 23:01). **Không đổi chữ nào** (L-072): `mkchunks.py` (voice-work/clip-05-v4) ghép 18 chunk lại và `assert` bằng đúng lời 8 beat của file LOCKED (219 chữ). Phiên âm chỉ áp vào chữ nhập F5; caption/spec giữ chữ gốc.

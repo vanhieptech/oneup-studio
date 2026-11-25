@@ -6,7 +6,7 @@ set -euo pipefail
 export PATH="$HOME/.local/bin:$PATH"
 export XERJ_DISABLE_FEEDBACK=true          # no automatic field reports
 REPO="$(cd "$(dirname "$0")/../.." && pwd)"
-REF="${XERJ_REF_DIR:-/workspace/reference-repos}"
+REF="${XERJ_REF_DIR:-$HOME/oneup-tools/reference-repos}"
 DATA="${XERJ_DATA_DIR:-$HOME/xerj-data}"   # must stay OUTSIDE indexed folders
 command -v xerj >/dev/null || { echo "xerj not installed: curl -fsSL https://xerj.org/get -o /tmp/get.sh && less /tmp/get.sh && sh /tmp/get.sh"; exit 1; }
 if ! curl -s -m1 http://localhost:9200 >/dev/null; then

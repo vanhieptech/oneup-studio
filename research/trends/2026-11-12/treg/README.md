@@ -1,3 +1,12 @@
+---
+title: "Treg TikTok — 2026-11-12"
+date: 2026-11-12
+type: readme
+tags: [research]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Treg TikTok — 2026-11-12
 
 Treg-first theo quyết định của Hiệp 08/11/2026. **Không dùng Apify** (Treg có đủ capability; không có lỗi Treg thật).

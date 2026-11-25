@@ -42,13 +42,13 @@
   "source": "render (build-final) / 720p faststart"
  },
  {
-  "path": "media/clips/clip-02-procrastination-discomfort/clip-02-final.mp4",
+  "path": "media/clips/clip-02-procrastination-discomfort/versions/clip-02-pre-v17.mp4",
   "size": 39415923,
   "sha256": "b2167e93eb52d8f5a4b1ba8a7e3bff12ea9d793574c8ae967a9a07fb813dac61",
   "source": "render (build-final) / 720p faststart"
  },
  {
-  "path": "media/clips/clip-02-procrastination-discomfort/clip-02-final-720.mp4",
+  "path": "media/clips/clip-02-procrastination-discomfort/versions/clip-02-pre-v17-720.mp4",
   "size": 2982231,
   "sha256": "20c9f1b82ecd5005ed8103736272ae0c1c8d3c2f1eb6cd2fde21666e375615b6",
   "source": "render (build-final) / 720p faststart"
@@ -628,5 +628,41 @@
   "size": 734519008,
   "sha256": "4468dda2ddea0ab43d4e7af6e9b26bb2f4ca8bc9d1a91686d7749c0e5698187c",
   "source": "HF remove-background bake-off sample 12s CoreML ProRes 2026-11-08"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/clip-02-final.mp4",
+  "size": 40528146,
+  "sha256": "26f8949118a9ffda82178a1cb9456b954721b670f428de004b36bf5b0e83012d",
+  "source": "content/archive/clip-02-procrastination-discomfort/final/out/clip-02-v17-final.mp4"
+ },
+ {
+  "path": "media/clips/clip-02-procrastination-discomfort/clip-02-final-720.mp4",
+  "size": 7462440,
+  "sha256": "750407a3644f574151535eb03430aa2bf80f6df45ebf8ad8ee1c2783693ef467",
+  "source": "ffmpeg 720p từ clip-02-final.mp4"
+ },
+ {
+  "path": "media/clips/clip-04-gap-sach-tu-kiem/clip-04-final.mp4",
+  "size": 26623335,
+  "sha256": "e094556a13a48d54d75294d1d0bea9a66cae70c72df6ed11cd0e6a1450320c24",
+  "source": "content/archive/clip-04-gap-sach-tu-kiem/final/clip-04-v18-tiktok.mp4"
+ },
+ {
+  "path": "media/clips/clip-04-gap-sach-tu-kiem/clip-04-final-720.mp4",
+  "size": 4433405,
+  "sha256": "e4e4bbae90393a69512fe73867c834a805ae3a745b74a6fb95a866814818f9c7",
+  "source": "ffmpeg 720p từ clip-04-final.mp4"
+ },
+ {
+  "path": "media/clips/clip-03-big-task-chunking/clip-03-PLACEHOLDER.mp4",
+  "size": 9484,
+  "sha256": "9fb1f41ffa87dbfbda44fddcc64204cf40cbaee7c1fbb0be87e872772ed2471a",
+  "source": "PLACEHOLDER 2s black, không phải render thật (Hiệp 25/11)"
+ },
+ {
+  "path": "media/clips/clip-03-big-task-chunking/clip-03-PLACEHOLDER-720.mp4",
+  "size": 7441,
+  "sha256": "f0b101c14f2eb6f05cffefb20eaf294a25ea5f5f4a2167dc4a23f4a8e7bd55fc",
+  "source": "PLACEHOLDER 2s black, không phải render thật (Hiệp 25/11)"
  }
 ]

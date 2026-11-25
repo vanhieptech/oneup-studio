@@ -1,3 +1,12 @@
+---
+title: "Clip05 r15.1 — fact-check actual frozen, scoped source verdict"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip05 r15.1 — fact-check actual frozen, scoped source verdict
 
 Thời điểm hoàn tất: 08/11/2026 14:21:27 Asia/Saigon (UTC+7). Nội bộ, standalone ngoài repo, **CHƯA ARCHIVE**. Không research mới/primary mới, không sửa frozen/lock/repo, không media hoặc gửi ai.

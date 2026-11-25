@@ -1,3 +1,12 @@
+---
+title: "Omi TikTok — ý tưởng theo trend (Apify scrape 16/10/2026)"
+date: 2026-11-07
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Omi TikTok — ý tưởng theo trend (Apify scrape 16/10/2026)
 
 **Nguồn:** `clockworks/tiktok-scraper` · hashtag productivity / habittracker / selfimprovement / studymotivation / năngsuất / thóiquen · proxy VN  

@@ -1,4 +1,9 @@
 ---
+title: "Trend: «Đừng bao giờ coi thường bông hoa chưa nở»"
+date: 2026-10-31
+type: research
+tags: [research]
+status: draft
 trend_id: vtc-ar1048255-bong-hoa-chua-no
 for: clip-06 (4.12), B-bonghoa-02
 hook_pattern: P03+F04

@@ -3,7 +3,8 @@ title: "Doodle style research — học cách người ta làm, chốt ý tưở
 date: 2026-10-18
 type: reference
 tags: [doodle, whiteboard, motion, remotion, hi-oneup]
-status: awaiting-hiep-pick
+status: draft
+stage: awaiting-hiep-pick
 source: "web research 2026-10-18 (links đã fetch/verify, ghi rõ ở từng mục) + anidoodle vendored + 3 demo bị chê"
 id: research.doodle-style
 updated: 2026-10-18

@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 r15.2 PATCH2, review delta (chỉ đọc), 08/11/2026 ~14:33 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 r15.2 PATCH2, review delta (chỉ đọc), 08/11/2026 ~14:33 giờ VN
 - File: `/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.2-full-draft-2026-11-08.md`
 - File SHA `87885dd3f4e0b1d847e7971c0476878f85691e3178b55ff7cbae6f6a096f7dc2`, tự tính khớp.

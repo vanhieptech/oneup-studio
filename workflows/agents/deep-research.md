@@ -1,4 +1,5 @@
 ---
+tags: [workflows]
 title: "Workflow agent — Deep Research (kiểm chứng fact trước khi viết script)"
 date: 2026-10-19
 status: draft-awaiting-hiep
@@ -9,7 +10,6 @@ agent: Deep Research
 slug: deep-research
 updated: 2026-10-19
 ---
-
 # Workflow Deep Research — kiểm chứng fact cho @hi.oneup
 
 ## 1. Vai trò và không làm gì

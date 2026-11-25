@@ -1,4 +1,8 @@
 ---
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 title: "Trend cho clip-05 v5 (đọc tài liệu chuẩn bị thuyết trình buổi họp)"
 date: 2026-10-26
 feeds: clip-05-hoc-mot-dem v5

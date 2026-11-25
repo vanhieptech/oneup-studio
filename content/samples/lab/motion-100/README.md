@@ -1,4 +1,5 @@
 ---
+source: "oneup-studio (soạn trong repo)"
 title: "Motion 100 sample pack"
 date: 2026-11-08
 id: sample.motion-100

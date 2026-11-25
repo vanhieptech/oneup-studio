@@ -17,7 +17,7 @@ export const Caption: React.FC<{ text: string; start: number; end: number; t: nu
   const words = wordTimes(text, start, end - 0.25);
   const out = clamp((end - t) / 0.15);
   return (
-    <div style={{ position: "absolute", left: narrow ? 60 : 70, right: narrow ? 440 : 70, top, display: "flex", flexWrap: "wrap", justifyContent: narrow ? "flex-start" : "center", // reels: narrow left box keeps the face (x≈.76) clear
+    <div style={{ position: "absolute", left: narrow ? 60 : 70, right: narrow ? 440 : 120, top, display: "flex", flexWrap: "wrap", justifyContent: narrow ? "flex-start" : "center", // reels: narrow left box keeps the face (x≈.76) clear; tiktok: right>=120 clears action rail
  gap: "6px 14px", opacity: out, fontFamily: EN_FONT, // EN captions: DM Sans (brand pair)
       background: BRAND.paper, border: `6px solid ${BRAND.ink}`, borderRadius: 34, padding: narrow ? "18px 26px 22px" : "22px 30px 26px", boxShadow: `8px 10px 0 ${BRAND.ink}` }}>
       {words.map((w, i) => {

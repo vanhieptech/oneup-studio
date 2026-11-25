@@ -62,7 +62,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Ghép và hậu kỳ: FFmpeg, `pipeline/scripts/join-beats.sh` (xfade giữa beat, chuẩn −14 LUFS). Mỗi engine render file riêng, không trộn trong một lần render.
     - Pipeline: `pipeline/pipeline.md`.
 26. **Transcribe:** câu TTS (Hiệp, Omi) lấy thời lượng + envelope từ file TTS, kiểm lại bằng ASR (`pipeline/tts/stt_check.py`, faster-whisper). Nếu Hiệp tự thu giọng thật: whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
-27. **Nơi render:** bản nháp render trên box ảo, bản final render trên Mac I-Am-Focused.
+27. **Nơi render:** *[Cập nhật local Mac]* toàn bộ nháp (`--draft`) và final đều render trực tiếp trên local Mac (`/Users/macbook/work/oneup-studio`, toolchain `~/oneup-tools/`, F5-TTS trên Apple Silicon MPS). Không còn box ảo `/workspace/`.
 28. **Mức tự động:** agent làm toàn bộ theo skill `skills/make-video/SKILL.md`, Hiệp duyệt 2 lần (gate 1: script + beat table + storyboard; gate 2: MP4 final + post.md). Góp ý theo id beat (`b03: …`), agent sửa spec, không làm lại từ đầu.
 29. **Thu giọng:** mặc định không cần (giọng AI preset, DL-030). Nếu Hiệp muốn tự thu: thu bằng iPhone, AirDrop vào `media/footage/inbox/` trên Mac. File âm thanh và render không commit lên git.
 30. **Cover:** frame hook kèm chữ to.
@@ -182,12 +182,12 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
 54. **Cover luôn render từ template A (DL-046, L-020):**
     - Mọi clip dùng `Cover` direction A (`video-engine/src/composition/Cover.tsx`): tag series + số tập, hero 2–4 chữ (chữ thói quen cũ bị gạch → chữ mới trong pill ink), chibi tạo dáng riêng với biểu cảm mạnh, logo +1, theme theo luật 17, mọi slot nằm trong y 290–1600 (lưới 3:4).
     - Không bao giờ lấy frame video làm cover.
-    - Props của cover nằm trong `spec.json → cover` ngay từ bước kịch bản, và bản render nháp của cover phải có trong gói gate 1.
+    - Props của cover nằm trong `spec.json → cover` ngay từ bước kịch bản. *[Superseded by L-098: KHÔNG render ảnh/cover/still/voice trước khi Hiệp "Chốt" lời — chỉ kiểm ảnh thật ở gate sản xuất sau Chốt.]*
     - check-rules: `rule-54` (props trong spec, direction "a") và `L-020` (cover.png trùng md5 với bản render template) đều chặn khi chạy `--final`.
 
 55. **Hook 0–3s dồn dập, kịch tính, đậm cảm xúc (DL-051):**
     - 0–3s phải có: chữ hook to ngay frame 0 (`spec.hook.text` = narration cảnh đầu), lời đầu ≤ 0.3s, đổi hình/SFX đầu ≤ 1s, ≥ 2 cut/hit (ít nhất 1 cut) trong 3s đầu.
-    - Câu ngắn, cụt (vế đầu ≤ 6 chữ), lặp nhịp ("Hoãn. Hoãn. Lại hoãn."), pattern interrupt, zoom/push mạnh, giọng cảm xúc rõ (buồn/sốc/giận), không mở bằng câu dẫn trung tính.
+    - Câu ngắn, giàu cảm xúc, pattern interrupt, zoom/push rõ, không mở bằng câu dẫn trung tính. *[Lưu ý L-099 / L-103 / L-105: không ép hard-cap 6 chữ làm cụt nghĩa; hook ưu tiên storytelling tự nhiên có cái giá & bất ngờ trong 3s đầu.]*
     - Cảnh hook đánh dấu `part: "hook"`, chuyển `cut`, lead 0.06s, đuôi 0.15s (build-final).
     - check-rules: `rule-55` (chặn; trước render ước tính, `--final` đo từ timing.json).
 56. **Tương tác khéo, không xin (DL-052):**

@@ -48,6 +48,14 @@ for (const f of process.argv.slice(2)) {
         (sc.props ?? []).forEach((p: never, i: number) => { const b = propBox(p, i); if (b && near(proj(b)) && (p as { kind: string }).kind !== "table") msgs.push(`reels caption «${sg.text}» within ${M}px of ${b.label}`); });
       }
       chars.forEach((c: { x: number; headY: number; id: string }) => { const cb = proj(charBox(c.x, c.headY, fr.groundY, fr.scale, c.id)); if (cb.x1 > 1046 - M) msgs.push(`${c.id} ${Math.round(1046 - cb.x1)}px from the right frame edge (reels, need ≥${M})`); });
+    } else if (sc.id !== "endcard") {
+      // TikTok safe-zone bottom check: Caption starts at y=1488, max safe bottom ≈ 1700 (≤ 2 lines ≈ 8 words, L-051)
+      const segs: { text: string; highlight?: number[] }[] = sc.caption ? (sc.caption.segments?.length ? sc.caption.segments : [sc.caption]) : [];
+      const linesTk = (txt: string, hl: number[] = []) => { let n = 1, w = 0; txt.split(/\s+/).filter(Boolean).forEach((wd, i) => { const ww = wd.length * 29 + (hl.includes(i) ? 32 : 0); if (w && w + 14 + ww > 830) { n++; w = ww; } else w += (w ? 14 : 0) + ww; }); return n; };
+      for (const sg of segs) {
+        const y1 = 1488 + 56 + 70 * linesTk(sg.text, sg.highlight);
+        if (y1 > 1700) msgs.push(`tiktok caption «${sg.text.slice(0, 40)}» overflows bottom safe zone (y1≈${y1} > 1700; split ≤8 words/chunk, L-051)`);
+      }
     }
     if (msgs.length) { bad++; console.log(`✖ ${sc.id}: ${msgs.join(" · ")}`); } else console.log(`✔ ${sc.id}`);
   }

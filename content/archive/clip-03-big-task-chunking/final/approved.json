@@ -1,0 +1,14 @@
+{
+ "clip": "clip-03-big-task-chunking",
+ "status": "archived",
+ "approved": "duyệt",
+ "approved_by": "Hiệp",
+ "approved_at": "2026-11-25T23:40+07:00",
+ "note": "Hiệp xác nhận 25/11 clip đã xong và đăng; archive gộp clip-02/03/04 (luật 66). v9; không có file render trên Mac (có thể còn trên box), video_full/video_720 để null. Ngày duyệt gate 2 gốc không ghi lại. Video là PLACEHOLDER (2s màn đen) theo yêu cầu Hiệp 25/11, chỉ để check-assets pass; thay bằng render thật nếu tìm lại được.",
+ "title": "ĐỂ CẢ NĂM? CHIA NHỎ!",
+ "post": "final/post.md",
+ "cover": "final/cover.png",
+ "video_full": "media/clips/clip-03-big-task-chunking/clip-03-PLACEHOLDER.mp4",
+ "video_720": "media/clips/clip-03-big-task-chunking/clip-03-PLACEHOLDER-720.mp4",
+ "video_placeholder": true
+}

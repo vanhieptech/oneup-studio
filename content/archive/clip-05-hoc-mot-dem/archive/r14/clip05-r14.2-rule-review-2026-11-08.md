@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 r14.2 PATCH2 (chỉ đọc), 08/11/2026 ~13:40 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 r14.2 PATCH2 (chỉ đọc), 08/11/2026 ~13:40 giờ VN
 - File handoffs/clip05-r14.2-full-draft-2026-11-08.md: SHA 50a08f34…07fa, khớp.
 - Lời: d2609ab2…176a, khớp (trích theo đúng quy ước dòng 193), 501 từ.

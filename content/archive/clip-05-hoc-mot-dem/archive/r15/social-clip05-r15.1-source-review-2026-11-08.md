@@ -1,3 +1,12 @@
+---
+title: "Social — r15.1 nguồn/attribution, verdict riêng bản thực"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Social — r15.1 nguồn/attribution, verdict riêng bản thực
 Thực kiểm 08/11/2026 14:20:51 giờ Việt Nam (Asia/Saigon). Đã đọc frozen full và `/workspace/clip05-r15.1-rule-review-2026-11-08.md`. Không kế thừa PASS r14.1/r15, không chấm craft/full hoặc fact RK/F5 thay Deep.
 

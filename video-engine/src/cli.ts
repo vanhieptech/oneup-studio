@@ -80,13 +80,15 @@ async function main() {
   if (cmd === "render") {
     const outDir = flag("--out-dir", "out")!;
     const crf = Number(flag("--crf", "18"));
+    const scale = Number(flag("--scale", "1"));
     if (!Number.isInteger(crf) || crf < 1 || crf > 51) throw new Error(`--crf must be an integer 1–51, got ${flag("--crf")}`);
+    if (!Number.isFinite(scale) || scale <= 0 || scale > 2) throw new Error(`--scale must be (0, 2], got ${flag("--scale")}`);
     const serveUrl = await getBundle();
     for (const l of loaded) {
       const outFile = path.join(outDir, `${l.plan!.id}.mp4`);
       const t0 = Date.now();
       try {
-        const r = await renderPlan(l.plan!, outFile, { serveUrl, crf });
+        const r = await renderPlan(l.plan!, outFile, { serveUrl, crf, scale });
         console.log(`✔ ${outFile}: ${r.width}x${r.height} ${r.fps}fps ${r.frames} frames in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
       } catch (e) {
         console.error(`✖ render failed for ${l.plan!.id}: ${(e as Error).message}`);

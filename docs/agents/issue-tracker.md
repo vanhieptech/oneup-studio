@@ -1,3 +1,12 @@
+---
+title: "Issue tracker: GitHub"
+date: 2026-11-07
+type: doc
+tags: [docs]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Issue tracker: GitHub
 
 Issues and specs for this repo live as GitHub issues. Use the `gh` CLI for all operations.

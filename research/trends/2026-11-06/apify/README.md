@@ -1,3 +1,12 @@
+---
+title: "Apify 2026-11-06"
+date: 2026-11-06
+type: readme
+tags: [research]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Apify 2026-11-06
 
 **Apify: CÓ chạy** (hạn mức đã hồi sau nhiều ngày hết $0,13).

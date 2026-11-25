@@ -12,6 +12,7 @@ export const OMI_SHAPES: Record<Expression, Shape> = {
   surprised: { sx: 0.9,  sy: 1.14, tear: 0.08,  wob: 0.03,  lean: 0 },
   confused:  { sx: 0.96, sy: 1.05, tear: -0.04, wob: 0.024, lean: 0.12 },
   focused:   { sx: 1.02, sy: 0.98, tear: 0.14,  wob: 0.01,  lean: 0 },
+  despair:   { sx: 1.14, sy: 0.80, tear: -0.18, wob: 0.006, lean: -0.08 },
 };
 
 function blobPath(R: number, p: Shape, t: number): string {

@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 concept reset sau r14.3 (chỉ đọc), 08/11/2026 ~13:50 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 concept reset sau r14.3 (chỉ đọc), 08/11/2026 ~13:50 giờ VN
 - File handoffs/clip05-concept-reset-after-r14.3-2026-11-08.md: SHA 30c897c5…2c65, khớp.
 - Luật/skill: lessons, checklist, rules (mtime 13:06) và ba skill không đổi; đã đối chiếu lại L-094, L-095, L-098, W-16, quyết định W-16 của mình, skill craft §2.

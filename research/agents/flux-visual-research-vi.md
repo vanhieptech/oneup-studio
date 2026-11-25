@@ -1,3 +1,12 @@
+---
+title: "Nghiên cứu FLUX.2 — FLUX Visual"
+date: 2026-10-20
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Nghiên cứu FLUX.2 — FLUX Visual
 
 - Repo nguồn: https://github.com/black-forest-labs/flux2 (Black Forest Labs)

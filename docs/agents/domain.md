@@ -1,3 +1,12 @@
+---
+title: "Domain Docs"
+date: 2026-11-07
+type: doc
+tags: [docs]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Domain Docs
 
 How the engineering skills should consume this repo's domain documentation when exploring the codebase.

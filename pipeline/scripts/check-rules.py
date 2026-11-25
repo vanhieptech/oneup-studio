@@ -5,6 +5,7 @@
   check-rules.py content/clips/<clip>/ --final    # gate 2: also the rendered MP4 (ffprobe, loudness) + post.md required
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
+  check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all 12 draft checks + L-051 + L-053 in one pass
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
@@ -27,8 +28,10 @@ import json, os, re, subprocess, sys, difflib, unicodedata, glob, math, tempfile
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
 from duration_policy import duration_status, estimated_total
 REPO = str(P.ROOT)
-NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x64/bin")
-ASR_PY = os.environ.get("ASR_PYTHON", "/workspace/asr-venv/bin/python")
+NODE_BIN = P.NODE_BIN
+ASR_PY = P.ASR_PYTHON
+FFMPEG_BIN = P.FFMPEG_BIN
+FFPROBE_BIN = P.FFPROBE_BIN
 res = []
 def ok(rule, msg): res.append(("✔", rule, msg))
 def warn(rule, msg): res.append(("⚠", rule, msg))
@@ -79,7 +82,7 @@ def lines(spec):
                 yield p, s, l
 
 def ffprobe(path):
-    o = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,codec_name,profile,width,height,r_frame_rate,pix_fmt,color_space,sample_rate:format=duration",
+    o = subprocess.run([FFPROBE_BIN, "-v", "error", "-show_entries", "stream=codec_type,codec_name,profile,width,height,r_frame_rate,pix_fmt,color_space,sample_rate:format=duration",
                         "-of", "json", path], capture_output=True, text=True).stdout
     return json.loads(o)
 
@@ -973,9 +976,67 @@ def check_trend_file(path):  # --trend FILE
         (ok if pth.startswith("http") or os.path.exists(os.path.join(REPO, pth)) else warn)("L-090", f"example_evidence {pth}")
     info("L-090", L090_MANUAL)
 
+L053_BANNED = re.compile(r"(?<!\w)(đầu dở|mình dở|bạn dở|người dở|não cá vàng|đầu óc kém|ngu dốt)(?!\w)", re.I)
+
+def check_l053_file(path):
+    """L-053: ban learner-insult phrases in draft script spoken lines/captions."""
+    raw = open(path, encoding="utf8", errors="ignore").read()
+    body = raw.split("\n---", 1)[1] if raw.startswith("---\n") and "\n---" in raw[4:] else raw
+    hits = []
+    for i, ln in enumerate(body.splitlines(), 1):
+        if re.search(r"L-053|cấm|thay bằng|bị bác", ln, re.I):
+            continue
+        for m in L053_BANNED.finditer(ln):
+            hits.append(f"{os.path.basename(path)}:{i}: «{m.group(0)}»")
+    if hits:
+        for h in hits[:10]: err("L-053", f"cụm chê năng lực người học: {h}")
+    else:
+        ok("L-053", f"{os.path.basename(path)}: không có cụm chê năng lực người học")
+
+def check_l051_file(path):
+    """L-051: EN caption chunks in script markdown must be <= 8 words per chunk."""
+    raw = open(path, encoding="utf8", errors="ignore").read()
+    body = raw.split("\n---", 1)[1] if raw.startswith("---\n") and "\n---" in raw[4:] else raw
+    over = []
+    checked = 0
+    for i, ln in enumerate(body.splitlines(), 1):
+        m = re.match(r"^\s*(?:[-*]\s*)?(?:\*{1,2})?EN(?:\s+caption)?(?:\s*:\s*\*{1,2}|\*{1,2}\s*:|\s*:)\s*(.+)$", ln, re.I)
+        if not m:
+            continue
+        for chunk in re.split(r"\s*[|/]\s*", m.group(1).strip()):
+            c = re.sub(r"[*_`]", "", chunk).strip()
+            if not c: continue
+            checked += 1
+            if len(c.split()) > 8:
+                over.append(f"{os.path.basename(path)}:{i}: {len(c.split())}w «{c[:45]}»")
+    if over:
+        for o in over[:10]: err("L-051", f"EN caption chunk >8 từ: {o}")
+    elif checked:
+        ok("L-051", f"{os.path.basename(path)}: {checked} EN caption chunk(s) đều ≤8 từ")
+    else:
+        info("L-051", f"{os.path.basename(path)}: chưa có dòng EN caption riêng để đếm chunk")
+
 def main():
     a = sys.argv[1:]
     outp = a[a.index("--out") + 1] if "--out" in a else None
+    if a and a[0] == "--draft":  # combined draft gate: all 12 draft checks + L-051 + L-053
+        files_ = [f for f in a[1:] if f != "--out" and f != outp]
+        for f in files_:
+            check_subjects_file(f)
+            check_l088_file(f)
+            check_trend_file(f)
+            check_flow_file(f)
+            check_fresh_file(f, [])
+            check_evidence_file(f)
+            check_choppy_file(f)
+            check_link_file(f)
+            check_repeat_file(f)
+            check_clarity_file(f)
+            check_vague_hook_file(f)
+            check_story_hook_file(f)
+            check_l053_file(f)
+            check_l051_file(f)
+        return report(outp)
     if a and a[0] == "--subjects":  # L-087 on draft script files
         for f in a[1:]:
             if f != "--out" and f != outp: check_subjects_file(f)
@@ -1218,7 +1279,7 @@ def main():
             (ok if spec_ok else err)("rule-4", f"video {v['width']}×{v['height']} {v['r_frame_rate']} {v['codec_name']} {v.get('profile')} {v['pix_fmt']} {v.get('color_space')}")
             if not au: err("rule-46", "MP4 has no audio track")
             else:
-                m = subprocess.run(["ffmpeg", "-hide_banner", "-i", mp4, "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
+                m = subprocess.run([FFMPEG_BIN, "-hide_banner", "-i", mp4, "-af", "ebur128=peak=true", "-f", "null", "-"], capture_output=True, text=True).stderr
                 li = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", m)[-1]); pk = float(re.findall(r"Peak:\s+(-?[\d.]+) dBFS", m)[-1])
                 (ok if abs(li + 14) <= 1.0 and pk <= -0.5 else err)("rule-4", f"audio {au[0]['codec_name']} {au[0]['sample_rate']} Hz, {li} LUFS, peak {pk} dBFS (target −14 ±1, peak ≤ −0.5)")
             (ok if os.path.exists(os.path.join(fdir, "contact-sheet.png")) else err)("rule-34", "contact-sheet.png for frame review")
@@ -1226,7 +1287,7 @@ def main():
     if final:
         cpng = os.path.join(fdir, "cover.png")
         def _ssim(mp4, n):
-            r = subprocess.run(["ffmpeg", "-v", "error", "-i", mp4, "-i", cpng, "-filter_complex",
+            r = subprocess.run([FFMPEG_BIN, "-v", "error", "-i", mp4, "-i", cpng, "-filter_complex",
                 f"[0:v]trim=start_frame={n}:end_frame={n+1},setpts=PTS-STARTPTS[a];[1:v]scale=1080:1920[b];[a][b]ssim=stats_file=-", "-f", "null", "-"], capture_output=True, text=True)
             m = re.findall(r"All:([\d.]+)", r.stdout + r.stderr); return float(m[0]) if m else 0.0
         reels = sorted(glob.glob(os.path.join(fdir, "*-reels.mp4"))); tiks = sorted(glob.glob(os.path.join(fdir, "*-tiktok.mp4")))
@@ -1250,7 +1311,7 @@ def main():
         groups = None
         if vt and os.path.exists(os.path.join(fdir, vt)):
             sd = tempfile.mkdtemp(prefix="stt-slices-"); wavs = []
-            cut = lambda o, ss, du: (subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{max(0.0, ss):.3f}", "-t", f"{du:.3f}", "-i", os.path.join(fdir, vt), "-ac", "1", "-ar", "16000", o]), wavs.append(o))
+            cut = lambda o, ss, du: (subprocess.run([FFMPEG_BIN, "-loglevel", "error", "-y", "-ss", f"{max(0.0, ss):.3f}", "-t", f"{du:.3f}", "-i", os.path.join(fdir, vt), "-ac", "1", "-ar", "16000", o]), wavs.append(o))
             vo = sorted(glob.glob(os.path.join(fdir, "voice-only-*.timing.json")))
             spans = {x["id"]: (x["pieces"][0]["start"], x["pieces"][-1]["end"]) for x in json.load(open(vo[-1]))["sentences"]} if vo else {}
             sid = lambda k: (re.search(r"-(c\d+)[a-z]?$", k) or [None, None])[1]
@@ -1516,7 +1577,28 @@ def audio_cuts(path, meta):
 def lessons(spec, fdir, L, final, tpath):
     lp = os.path.join(REPO, "logs/lessons.md")
     if not os.path.exists(lp): err("rule-49", "logs/lessons.md missing"); return
-    ids = re.findall(r"^\| (L-\d{3}) ", open(lp).read(), re.M); ok("rule-49", f"lessons.md: {len(ids)} lessons loaded")
+    ids = re.findall(r"(?:^\|\s*|^#{2,3}\s+)(L-\d{3})\b", open(lp).read(), re.M); ok("rule-49", f"lessons.md: {len(ids)} lessons loaded")
+    # L-051: EN caption chunks <= 8 words
+    en_over = []
+    for _, s, l in L:
+        en = (l.get("en") or "").strip()
+        if not en: continue
+        for ch in re.split(r"\s*[|/]\s*", en):
+            c = ch.strip()
+            if c and len(c.split()) > 8:
+                en_over.append(f"{s['id']}: {len(c.split())}w «{c[:35]}»")
+    (err if en_over else ok)("L-051", f"EN caption chunk >8 từ (overflow >2 dòng): {en_over[:6]}" if en_over else "EN caption chunks ≤8 từ")
+    # L-053: no learner-insult phrases in spec lines or post.md
+    l53 = []
+    for _, s, l in L:
+        txt = " ".join(filter(None, [l.get("text"), l.get("say")] + [p.get("t", "") for p in l.get("phrases", [])]))
+        for m in L053_BANNED.finditer(txt):
+            l53.append(f"{s['id']}: «{m.group(0)}»")
+    post_p = os.path.join(fdir, "post.md")
+    if os.path.exists(post_p):
+        for m in L053_BANNED.finditer(open(post_p, encoding="utf8", errors="ignore").read()):
+            l53.append(f"post.md: «{m.group(0)}»")
+    (err if l53 else ok)("L-053", f"cụm chê năng lực người học: {l53[:6]}" if l53 else "không có cụm chê năng lực người học")
     # L-001 contact sheet (frame review)
     (ok if os.path.exists(os.path.join(fdir, "contact-sheet.png")) else (err if final else warn))("L-001", "contact-sheet.png present for self-review")
     # L-004 highlight index

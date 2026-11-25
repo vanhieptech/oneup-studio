@@ -1,3 +1,12 @@
+---
+title: "r15.2 PATCH2 — final counts / exact preservation audit"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # r15.2 PATCH2 — final counts / exact preservation audit
 
 **PREPARED PENDING OWNER COORDINATION APPROVAL.** Không contact/gửiReviewer/Deep/Social/News/Hiệp/nhờbotkhác; không commit/archive/repoedit/research/media/spec/stageplans. Không coi tinReviewer là đồng ý phối hợp của owner.

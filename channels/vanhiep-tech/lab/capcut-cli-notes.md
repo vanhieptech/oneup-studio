@@ -1,4 +1,5 @@
 ---
+source: "oneup-studio (soạn trong repo)"
 title: "lab — capcut-cli notes"
 date: 2026-11-08
 id: lab-vht-capcut-cli

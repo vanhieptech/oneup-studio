@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { doodleEase, doodlePaths, pathLength } from "../src/composition/doodle/doodle";
+import { doodleEase, doodlePaths, pathLength } from "../src/composition/doodle/doodleMath";
 import { validatePlan } from "../src/validation/validate";
 
 describe("doodle draw-on (anidoodle port)", () => {
@@ -29,14 +29,14 @@ describe("doodle draw-on (anidoodle port)", () => {
 
 describe("doodle drawing (creative multi-stroke, L-047)", () => {
   it("sequences strokes by offset and is deterministic", async () => {
-    const { strokePaths, strokeWindow, interpTranslate, fadeFactor } = await import("../src/composition/doodle/doodle");
+    const { strokePaths, strokeWindow, interpTranslate, fadeFactor } = await import("../src/composition/doodle/doodleMath");
     const s = { points: [[0, 0], [100, 0]] as [number, number][], offset: 0.4, duration: 0.5 };
     expect(strokeWindow(2, s)).toEqual([2.4, 2.9]);
     expect(strokePaths(s, 7)).toEqual(strokePaths(s, 7));
     expect(strokePaths({ points: [[0, 0], [10, 0], [10, 10]], closed: true }, 7).length).toBeGreaterThan(3);
   });
   it("interpolates translate keyframes with hop and fades out", async () => {
-    const { interpTranslate, fadeFactor } = await import("../src/composition/doodle/doodle");
+    const { interpTranslate, fadeFactor } = await import("../src/composition/doodle/doodleMath");
     const keys = [{ at: 0, x: 100, y: 0 }, { at: 2, x: 0, y: -100 }];
     expect(interpTranslate(keys, 0)).toEqual({ x: 100, y: 0 });
     expect(interpTranslate(keys, 5)).toEqual({ x: 0, y: -100 });

@@ -1,3 +1,12 @@
+---
+title: "Rule Reviewer: cổng final clip-05 v4, vòng 3 (Reels render lại), 26/10/2026 14:40 giờ VN (UTC+7)"
+date: 2026-10-22
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Reviewer: cổng final clip-05 v4, vòng 3 (Reels render lại), 26/10/2026 14:40 giờ VN (UTC+7)
 
 Chấm bản Reels render lại của News (`1a0bba2` tool, `3479ed7` plan Reels + post.md; chưa push). Tự đo bằng script riêng `rr-scan.py` (không dùng `scan-reels-clearance.py` của News).

@@ -26,7 +26,7 @@ Run the daily (and Sunday weekly) trend digest for @hi.oneup: collect public tre
 - Source book index (@hi.oneup: HowToLiveBetter, "phần.mục" ids), `content/theme-map.md`, `content/idea-bank.md`, `content/story-bank.md`, `content/voice-profile.md`.
 - Learning state: `research/trends/ingest.md` (tables + Bridges), `research/trends/patterns.md` (hook/format library), last 7 `research/trends/*/raw.json`.
 - Series format: comic-only (Remotion comic story beats with Hiệp/Omi chibi rigs + HyperFrames motion explainers). No real footage, no event footage/audio.
-- Output root: always the box repo `/workspace/oneup-studio` (research/trends/, content/idea-bank.md). Never `/workspace/oneup-studio-sync` or any other dir outside the repo; never directly to the user's computer.
+- Output root: always the local repo `/Users/macbook/work/oneup-studio` (`research/trends/`, `content/idea-bank.md`). Never write to dirs outside the repo.
 
 ## Sources (free and public only; no login, no cookies, no paid API)
 Config: `pipeline/trends/sources.yaml` (33 sources verified 2026-10-13). Collector: `pipeline/scripts/trend-collect.py` (stdlib + yt-dlp; parallel, 15 s timeout per source, per-source status, cross-source clustering, keyword safety pre-filter, heuristic heat/fit/bridgeability). Expect 400+ raw items/day.
@@ -82,7 +82,7 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 6. Bridges (top 5–8) with differentiation. 7. Ideas + plan stubs for top 1–2, validate.
 8. Write `digest.md`: front-matter, sources line, top trends (with rank_score/novelty/saturation), **Learning** (new patterns, saturated topics to avoid), **Bridges** table, **Differentiation**, **Plan stubs** (paths + validate result), **Script hooks** (3–5, mark approval needed), safety notes.
 9. Update ingest.md (rows, counts, Bridges with pattern+status) and idea-bank for new ideas.
-10. Commit in /workspace/oneup-studio only your paths: `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"`. Do not push unattended (agent pushes via Mac bundle, AGENTS.md "Trend sync"). Run `python3 pipeline/scripts/check-assets.py`.
+10. Commit in the repo only your paths: `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"`. Run `python3 pipeline/scripts/check-assets.py`.
 11. Report counts (sources ok/total, raw, clusters, kept), top 10 trends, top bridges + differentiation, stub paths, source failures.
 
 ## Weekly synthesis (Sunday, after the daily run)

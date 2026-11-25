@@ -1,3 +1,12 @@
+---
+title: "Workflow agent — FLUX Visual"
+date: 2026-10-19
+type: doc
+tags: [workflows]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Workflow agent — FLUX Visual
 
 Repo nguồn: https://github.com/black-forest-labs/flux2 (FLUX.2, Black Forest Labs)

@@ -7,7 +7,7 @@ inside the repo's .git/ dir (allowed local-exec root).
   mac:  media-sync.py unpack                          → joins .git/media-sync/part.*, checks sha256, untars into repo, verifies MANIFEST
   any:  media-sync.py verify                          → lists MANIFEST entries missing or with wrong sha256 (exit 1 if any)
 """
-import hashlib, json, subprocess, sys, tarfile
+import hashlib, json, os, subprocess, sys, tarfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1])); import paths as P
 PART = 5 * 1024 * 1024 - 64 * 1024
@@ -22,7 +22,7 @@ def verify():
     for b in bad: print("missing/stale:", b)
     print(f"media verify: {len(manifest()) - len(bad)}/{len(manifest())} ok"); return 1 if bad else 0
 def pack(missing=None):
-    out = Path("/workspace/media-sync"); out.mkdir(exist_ok=True); [p.unlink() for p in out.glob("part.*")]
+    out = Path(os.environ.get("MEDIA_SYNC_DIR", str(P.TOOLS_DIR / "media-sync"))); out.mkdir(parents=True, exist_ok=True); [p.unlink() for p in out.glob("part.*")]
     want = [e["path"] for e in manifest() if missing is None or e["path"] in missing]
     tp = out / "media.tar"
     with tarfile.open(tp, "w") as t:

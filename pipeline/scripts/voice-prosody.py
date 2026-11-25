@@ -27,20 +27,21 @@ or {"text": "a / b {300} / *c*"} DSL: "/" splits phrases, {ms} sets the gap afte
 """
 import json, os, re, sys, subprocess, tempfile, hashlib, wave, struct, math, unicodedata
 import numpy as np
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import paths as P
 
-ASR_PY = os.environ.get("ASR_PYTHON", "/workspace/asr-venv/bin/python")
+ASR_PY = P.ASR_PYTHON
 FPS = 30
 SR = 48000
 TAKES = [(0.7, 30), (0.85, 40), (1.0, 50)]
 F5_TAKES = [(11, 1.0), (23, 0.96), (37, 1.04)]   # (seed, speed)
-F5_PY = os.environ.get("F5_PYTHON", "/workspace/f5-venv/bin/python")
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+F5_PY = P.F5_PYTHON
+FFMPEG = P.FFMPEG_BIN
+REPO = str(P.ROOT)
 BASE_TEMPO = {"Đức Trí": 1.12, "Kim Thanh": 1.04}   # gentle; pacing comes from gaps, not stretching
 PUNCT_GAP = {",": 0.18, ":": 0.26, "…": 0.38, "...": 0.38, ".": 0.32, "?": 0.34, "!": 0.3}
-ALIAS = {"toeic": "tô ích", "tô ít": "tô ích", "ok": "ô kê", "okay": "ô kê",
-         # L-025: Whisper writes respelled English/brand words back in Latin; same word, not a misread
-         "pov": "pi ô vi", "omi": "ô mi", "tiktok": "tíc tóc", "tích tóc": "tíc tóc", "code": "cốt",
-         "ôm mì": "ô mi", "âu mì": "ô mi"}  # Whisper heard-forms of the brand Omi (no Vietnamese word); human ear confirms (L-025)
+from tts import respell as RS
+ALIAS = RS.STT_ALIAS_MAP
 DIGITS = {"0": "không", "1": "một", "2": "hai", "3": "ba", "4": "bốn", "5": "năm", "6": "sáu", "7": "bảy", "8": "tám", "9": "chín", "10": "mười"}
 
 def parse_dsl(text):
@@ -82,7 +83,27 @@ def write(path, x, sr=SR):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes(y.tobytes())
 
 def ff(inp, out, af):
-    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", inp, "-af", af, "-ac", "1", "-ar", str(SR), "-c:a", "pcm_s16le", out], check=True)
+    subprocess.run([FFMPEG, "-loglevel", "error", "-y", "-i", inp, "-af", af, "-ac", "1", "-ar", str(SR), "-c:a", "pcm_s16le", out], check=True)
+
+def norm_linear(inp, out, pre_af, target_lufs=-16.0, limit=0.84):
+    """DL-072: pre-filter + linear LUFS gain + alimiter (never single-pass dynamic loudnorm)."""
+    tmp_pre = out + ".pre.wav"
+    try:
+        ff(inp, tmp_pre, pre_af)
+        err = subprocess.run([FFMPEG, "-hide_banner", "-i", tmp_pre, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+        ms = re.findall(r"I:\s+(-?[\d.]+)\s+LUFS", err)
+        gain_db = target_lufs - float(ms[-1]) if ms else 0.0
+        for _ in range(3):
+            af = f"volume={gain_db:.2f}dB,alimiter=limit={limit}:attack=1:release=30:level=disabled,aresample={SR}"
+            ff(tmp_pre, out, af)
+            err2 = subprocess.run([FFMPEG, "-hide_banner", "-i", out, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+            ms2 = re.findall(r"I:\s+(-?[\d.]+)\s+LUFS", err2)
+            if not ms2 or abs(float(ms2[-1]) - target_lufs) <= 0.3:
+                break
+            gain_db += target_lufs - float(ms2[-1])
+    finally:
+        if os.path.exists(tmp_pre):
+            os.remove(tmp_pre)
 
 def f0_stats(x, sr):
     import librosa
@@ -118,15 +139,17 @@ def artifact(x, sr, text):
     return min(1.0, bad / 2)
 
 def stt(paths):
-    code = ("import sys,json,subprocess,numpy as np\nfrom faster_whisper import WhisperModel\nm=WhisperModel('small',device='cpu',compute_type='int8')\nr={}\n"
-            "for f in sys.argv[1:]:\n pcm=subprocess.run(['ffmpeg','-loglevel','error','-i',f,'-ac','1','-ar','16000','-f','s16le','-'],capture_output=True).stdout\n"
+    ct = os.environ.get("ASR_COMPUTE", "float32")
+    code = (f"import sys,json,subprocess,numpy as np\nfrom faster_whisper import WhisperModel\nm=WhisperModel('small',device='cpu',compute_type={ct!r})\nr={{}}\n"
+            f"for f in sys.argv[1:]:\n pcm=subprocess.run([{FFMPEG!r},'-loglevel','error','-i',f,'-ac','1','-ar','16000','-f','s16le','-'],capture_output=True).stdout\n"
             " a=np.frombuffer(pcm,dtype=np.int16).astype('float32')/32768\n s,_=m.transcribe(a,language='vi',beam_size=5,temperature=0,condition_on_previous_text=False)\n r[f]=' '.join(x.text.strip() for x in s)\nprint(json.dumps(r,ensure_ascii=False))")
     out = subprocess.run([ASR_PY, "-c", code, *paths], capture_output=True, text=True, check=True).stdout
     return json.loads(out.strip().splitlines()[-1])
 
 def stt_words(paths):
-    code = ("import sys,json,subprocess,numpy as np\nfrom faster_whisper import WhisperModel\nm=WhisperModel('small',device='cpu',compute_type='int8')\nr={}\n"
-            "for f in sys.argv[1:]:\n pcm=subprocess.run(['ffmpeg','-loglevel','error','-i',f,'-ac','1','-ar','16000','-f','s16le','-'],capture_output=True).stdout\n"
+    ct = os.environ.get("ASR_COMPUTE", "float32")
+    code = (f"import sys,json,subprocess,numpy as np\nfrom faster_whisper import WhisperModel\nm=WhisperModel('small',device='cpu',compute_type={ct!r})\nr={{}}\n"
+            f"for f in sys.argv[1:]:\n pcm=subprocess.run([{FFMPEG!r},'-loglevel','error','-i',f,'-ac','1','-ar','16000','-f','s16le','-'],capture_output=True).stdout\n"
             " a=np.frombuffer(pcm,dtype=np.int16).astype('float32')/32768\n s,_=m.transcribe(a,language='vi',beam_size=5,temperature=0,condition_on_previous_text=False,word_timestamps=True)\n"
             " r[f]=[[w.word.strip(),w.start,w.end] for x in s for w in (x.words or [])]\nprint(json.dumps(r,ensure_ascii=False))")
     out = subprocess.run([ASR_PY, "-c", code, *paths], capture_output=True, text=True, check=True).stdout
@@ -521,7 +544,7 @@ def run(jobs):
                 pick = best[1]; line_tx, line_sim, line_sim_tl = best[2], best[3], best[4]
                 y, meta = assemble(j, rank, pick); write(tmp, y)
         os.makedirs(os.path.dirname(j["out"]) or ".", exist_ok=True)
-        ff(tmp, j["out"] + ".wav", "highpass=f=70,deesser=i=0.35:m=0.5:f=0.5,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=140:makeup=2,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000")
+        norm_linear(tmp, j["out"] + ".wav", "highpass=f=70,deesser=i=0.35:m=0.5:f=0.5,acompressor=threshold=-20dB:ratio=2.5:attack=8:release=140:makeup=2", target_lufs=-16.0, limit=0.84)
         z, _ = read(j["out"] + ".wav")
         m = {"duration": round(len(z) / SR, 3), "envelope": envelope(z, SR), "engine": ("F5-TTS hynt/F5-TTS-Vietnamese-ViVoice (CC-BY-NC-SA-4.0) + voice-prosody v5 (v4 units + fillers/particles/punctuation markup, no intra-output cuts)" if f5 else "VieNeu-TTS v3 Turbo (local ONNX) + voice-prosody v1"), "voice": j["voice"], "leak_trims": j.get("_leak", {}), "take_stt": j.get("_take_stt", {}), "cuts": j.get("_cuts"), "units": [{k: v for k, v in u.items()} for u in j.get("_units", [])], "intra_output_cuts": 0 if j.get("_units") else None, "bank": j.get("_bank", []), "spoken": j.get("_spoken"),
              "phrases": meta, "stt": line_tx, "stt_sim": round(line_sim, 3), "stt_sim_toneless": round(line_sim_tl, 3), "metrics": metrics(j["out"] + ".wav")}

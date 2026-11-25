@@ -1,3 +1,12 @@
+---
+title: "Clip05 r15.2 — fact-check mới trên actual frozen"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip05 r15.2 — fact-check mới trên actual frozen
 
 Thời điểm: 08/11/2026 14:36:04 Asia/Saigon (UTC+7). Báo cáo nội bộ standalone, ngoài repo, **CHƯA ARCHIVE**. Đây là verdict mới cho r15.2, không trả lại verdict r15.1. Đã đọc review `/workspace/clip05-r15.2-rule-review-2026-11-08.md` để biết scope; không coi report agent là authority khoa học, owner approval hay Chốt.

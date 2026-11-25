@@ -1,10 +1,12 @@
 ---
+type: research
+tags: [research]
+source: "oneup-studio (soạn trong repo)"
 title: "Clip-05 — phạm vi fact cho bản viết lại"
 date: 2026-11-07
 author: Deep Research
 status: draft-awaiting-repo-archive
 ---
-
 # Phạm vi hiện tại
 
 Mục chính: cẩm nang 23.14 (tự kiểm tra); mục phụ 23.16 (đọc lại).

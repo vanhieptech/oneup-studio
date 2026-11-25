@@ -1,3 +1,12 @@
+---
+title: "Clip-05 — kiểm nguồn #texthip và giới hạn cầu nối 23.14"
+date: 2026-11-07
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip-05 — kiểm nguồn #texthip và giới hạn cầu nối 23.14
 
 Social Research. Hoàn tất đọc nguồn lúc 2026-11-07 14:07:28 (Asia/Saigon).

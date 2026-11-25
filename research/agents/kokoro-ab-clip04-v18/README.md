@@ -1,3 +1,12 @@
+---
+title: "Kokoro-Vietnamese vs F5 v18: thử c07 / c08 / c14 (clip-04)"
+date: 2026-10-20
+type: readme
+tags: [research]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Kokoro-Vietnamese vs F5 v18: thử c07 / c08 / c14 (clip-04)
 
 **Trạng thái (2026-10-20 23:30, UTC+7): đã cài xong, CHƯA synth, CHƯA load model.** News yêu cầu chờ F5 v18 render xong rồi mới load Kokoro (lần trước chạy hai model cùng lúc bị hết RAM, L-041). Lúc kiểm tra, F5 `f5tts_gen.py batch-all.json` vẫn đang chạy (PID 722198, cwd `/workspace/voice-work/clip-04-v18c`, ~5,4 GB RSS, RAM còn trống ~4 GB). Thư mục này chỉ để thử nghiệm, không phải giọng sản xuất, không ghi gì vào `final/` của clip.

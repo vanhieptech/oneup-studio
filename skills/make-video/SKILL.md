@@ -31,12 +31,14 @@ Before wording approval (Chốt), timing is ESTIMATED from natural speech only. 
 Old 55–60s TTS runtime estimates below are historical examples only, not a runtime promise for a 2–3-minute clip. Legacy checker/template limits must be reconciled through the code/storage owner; do not call an obsolete-length failure a waiver or claim the checker has been updated without evidence. All unrelated rules below remain in force.
 
 
-Repo: `oneup-studio` (box clone `/workspace/oneup-studio`; Mac: local checkout of the same repo).
+Repo: `oneup-studio` (local Mac checkout `/Users/macbook/work/oneup-studio`; toolchain `~/oneup-tools/` qua `pipeline/paths.py`).
+Active checklist rút gọn: `rules/ACTIVE-CHECKLIST.md`. Draft QA gộp 1 lệnh: `python3 pipeline/scripts/check-rules.py --draft <script.md>`.
 Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
 
 ## 0. How Hiệp asks (intake)
 | Hiệp writes | Agent does |
 |---|---|
+| `/make-video` alone, or `tiếp` / `làm tiếp` | **Resume first.** Scan `content/clips/clip-NN-*/` (skip non-`clip-` folders) and find each clip's last step from its files: drafts only in `archive/` → review/factcheck verdicts → `final/spec.json` (gate 1 pending) → Chốt noted in `revisions`/DL → render in `final/out/` or `media/clips/` (gate 2 pending). Take the lowest-numbered unfinished clip. Reply in 2–3 Vietnamese sentences: which clip, which step it's at, what changed since then that affects it (newer DL/lessons/rules, e.g. the 08/11 duration override), and the open decisions left for Hiệp. Then ask one go-ahead and continue from that step; never redo approved work. If nothing is unfinished, fall through to `Làm clip tiếp theo`. Hiệp never has to list sources, rules or logs in the prompt; step 1 below reads them. |
 | `Làm clip tiếp theo` | next row in `content/theme-map.md` without a `final/` folder → its topic, theme, week |
 | `Làm clip về <chủ đề / trend>` | pick the best Bridge for it in `research/trends/ingest.md` (or make one, rule-39) → map to a HowToLiveBetter lesson → next free clip id; theme by tone (rule-17) |
 | `Làm lại clip-NN` / `clip-NN v2` | reuse `content/clips/clip-NN-*/final/spec.json`, add a `revisions` row |
@@ -101,6 +103,9 @@ Motion: run `skills/motion-picks-per-script` → one main effect per beat (`moti
 - **Voicing {nhấn:} lines:** `python3 pipeline/scripts/build-final.py <spec> --stage voice-phrase` runs `voice-phrase-f5.py` gen → F5 (2 seeds/phrase, 2 parallel batches) → STT pick + emphasis edits → stitch to `video-engine/public/voice/<voice_prefix>-<line>.wav` (+ `final/voice-stt-<prefix>.json`, L-016 exception). Set `spec.voice_prefix` (e.g. `v18`). `--stage all` runs it automatically when the spec contains `{nhấn:` and no cached `voice-stt-<prefix>.json`; specs without `{nhấn:` keep the old `voice-prosody.py` path.
 - Structure in `spec.structure`: Hook (≤2 sentences, opens an info gap) → Intro (why keep watching, open loop, callback prior clip) → Body (problem → exploration w/ real study + caveat → climax/how-to) → 1-sentence summary answering the hook → ONE CTA shorter than a sentence.
 - Hook type: direct (name the specific thing), controversy ("điều không ai nói về…", back it up), or negative ("Đừng…"). Never generic. Always add `hook_alt` of another type.
+- **Default check for hook and angle** (adapted from mankidev/antialgorithm, MIT). Before writing the hook, put one line in the draft notes: "default hook here is X", meaning the hook any creator would write on this topic. Use X only if this clip's story-bank or source fact asks for it. Move away using a fact that belongs only to this clip (Hiệp's real moment, the study's odd detail, the trend's exact wording), not by flipping the cliché into its known opposite. Give each choice a one-sentence reason drawn from this clip. Test: if the hook could open another clip unchanged, rewrite it.
+- **Options differ in kind.** When offering hooks or angles at gate 1, make them different moves (a real failure moment, a number, a direct "Đừng…", a quoted self-promise), not rewordings of one. If one is the safe pick, label it. Recommend one, with the reason.
+- **Hook-move log** `logs/hook-moves.md`. Read it before choosing the hook. If the main move matches either of the last 2 clips, pick another kind or state in the notes why this clip needs it. After gate 1 approves, add one row: clip, hook text, the move in a few plain words.
 - Voice: Hiệp telling a friend a real story; Southern particles; idioms/metaphors/anecdote; words a 12-year-old gets; one `{nhấn: …}` per sentence; visuals stay in the action column. Read aloud: anything you'd never say to a friend gets rewritten (anti "giả trân").
 
 ## 3. Polish

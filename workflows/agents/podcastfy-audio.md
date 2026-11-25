@@ -1,4 +1,8 @@
 ---
+date: 2026-10-20
+type: doc
+tags: [workflows]
+source: "oneup-studio (soạn trong repo)"
 title: "Workflow agent: Podcastfy Audio"
 agent: Podcastfy Audio
 slug: podcastfy-audio
@@ -7,7 +11,6 @@ license: Apache-2.0
 status: research-done, chờ Hiệp duyệt thí nghiệm đầu tiên
 updated: 2026-10-20
 ---
-
 # Podcastfy Audio — workflow
 
 ## 1. Vai trò và không làm gì

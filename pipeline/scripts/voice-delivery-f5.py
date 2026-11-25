@@ -11,10 +11,12 @@ on the **bold** chunk (≥2 dB over the rest of the sentence and over its neighb
 syllable raised and proven by F0; takes picked by STT match minus a penalty above 5 syllables/s.
 """
 import json, os, re, sys, subprocess, difflib, unicodedata, glob
-HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import paths as P
+HERE = os.path.dirname(os.path.abspath(__file__)); REPO = str(P.ROOT); FFMPEG = P.FFMPEG_BIN
 PLANS = {"A": {"/": 0.18, "//breath": 0.28, "//": 0.35, "//beat": 0.4, "///": 0.4, "//hook": 0.08}, "B": {"/": 0.15, "//breath": 0.25, "//": 0.3, "//beat": 0.4, "///": 0.4, "//hook": 0.08}}  # //hook: L-027 splice ≤0.1s inside the hook (v18 R8)  # plan C forbidden (W-08)
-RESP = {"airport": "e pọt", "hotel": "hô ten", "ticket": "tích kịt", "passport": "pát pọt", "luggage": "lắc ghịt", "dunlosky": "Đun lốt ki",
-        "yang": "Giang", "comment": "Com men", "317": "ba trăm mười bảy", "222": "hai trăm hai mươi hai", "48": "bốn mươi tám", "2006": "hai ngàn lẻ sáu"}
+from tts import respell as RS
+RESP = RS.EN_TO_VI
 REF = os.path.join(REPO, "assets/voice-refs/thai-son.wav")
 REF_TEXT = "Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha."
 def arg(k, d=None): return sys.argv[sys.argv.index(k) + 1] if k in sys.argv else d
@@ -118,8 +120,10 @@ def stt(x48, lang="vi", words=True, target=None):
 def rb_pitch(x, semi):
     import numpy as np
     if len(x) < SR * 0.05: return x
-    p = subprocess.run(["ffmpeg", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-af", f"rubberband=tempo=1.0:pitch={2 ** (semi / 12)}", "-f", "f32le", "-"], input=x.astype("float32").tobytes(), capture_output=True).stdout
-    y = np.frombuffer(p, dtype="float32").copy(); return y[:len(x)] if len(y) >= len(x) else np.concatenate([y, np.zeros(len(x) - len(y), "float32")])
+    res = subprocess.run([FFMPEG, "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", "-af", f"rubberband=tempo=1.0:pitch={2 ** (semi / 12)}", "-f", "f32le", "-"], input=x.astype("float32").tobytes(), capture_output=True)
+    if res.returncode != 0 or not res.stdout:
+        raise RuntimeError(f"ffmpeg rubberband failed ({FFMPEG}, rc={res.returncode}): {res.stderr.decode(errors='replace').strip()} — need ffmpeg-full with librubberband")
+    y = np.frombuffer(res.stdout, dtype="float32").copy(); return y[:len(x)] if len(y) >= len(x) else np.concatenate([y, np.zeros(len(x) - len(y), "float32")])
 def frames(x, hop=None):
     import numpy as np
     hop = hop or int(0.01 * SR); n = len(x) // hop
@@ -315,7 +319,7 @@ def voice(fd):
         sr_["start"] = sr_["pieces"][0]["start"]; sr_["end"] = sr_["pieces"][-1]["end"]; rows.append(sr_)
     y = np.concatenate(out); raw = os.path.join(W, f"voice-only-{pre}-raw.wav")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", raw], input=y.astype("float32").tobytes(), check=True)
-    wav = os.path.join(fd, f"voice-only-{pre}.wav"); m4a = arg("--m4a", f"/workspace/clip-04-v16b-voice-only.m4a")
+    wav = os.path.join(fd, f"voice-only-{pre}.wav"); m4a = arg("--m4a", os.path.join(fd, f"voice-only-{pre}.m4a"))
     # -14 LUFS: linear gain + fast peak limiter (speech crest factor needs ~4 dB of peak limiting). The limiter shaves the loudest words first,
     # i.e. the stressed ones, so: measure every sentence's stress on the DELIVERED signal and add gain to the bold chunk until it is ≥2.3 dB (≤3 rounds).
     Sd = {s["id"]: s for s in S}; extra = {}

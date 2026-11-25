@@ -1,4 +1,8 @@
 ---
+date: 2026-10-21
+type: research
+tags: [research]
+status: draft
 title: "Phân tích 2 video tham khảo Hiệp gửi 21/10 — format «Bản chất của…»"
 author: Social Research
 updated: 2026-10-21

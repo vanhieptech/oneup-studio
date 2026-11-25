@@ -1,3 +1,12 @@
+---
+title: "Workflow — News (điều phối)"
+date: 2026-10-19
+type: doc
+tags: [workflows]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Workflow — News (điều phối)
 
 ## 1. Vai trò và không làm gì

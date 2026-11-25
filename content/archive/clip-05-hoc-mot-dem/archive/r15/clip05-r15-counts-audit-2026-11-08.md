@@ -1,3 +1,12 @@
+---
+title: "Clip05 r15 — counts / text audit, không craft PASS"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip05 r15 — counts / text audit, không craft PASS
 
 ## File và bytes

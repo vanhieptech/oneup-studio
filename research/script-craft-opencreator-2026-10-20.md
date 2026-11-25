@@ -1,4 +1,5 @@
 ---
+tags: [research]
 title: "Nghiên cứu viết script TikTok — phần bổ sung của OpenCreator (20/10/2026)"
 date: 2026-10-20
 type: research
@@ -6,7 +7,6 @@ status: draft
 source: "web + repo mở (đọc, không cài/chạy) + dữ liệu Apify đã có trong repo (16–20/10/2026, không chạy scrape mới)"
 builds_on: research/tiktok-script-craft-2026-10-20.md (Deep Research) · research/script-craft-2026-10-20.md (Rule Reviewer) · docs/research/scriptwriting-research-2026-10-15.md · docs/research/script-prompt-principles.md
 ---
-
 # Viết script TikTok — phần bổ sung (OpenCreator)
 
 Hai file của Deep Research và Rule Reviewer đã có: hook trong 3 giây, khung hook → đẩy → trả lời → 1 CTA, nối bằng «nhưng/nên», 6–10 hook rồi chọn, mỗi ý một ví dụ, hứa sớm, móc lại giữa clip, đọc to rồi cắt ~20%. File này **không nhắc lại** những điểm đó, chỉ thêm 6 phần mới: (1) tốc độ nói đo thật, (2) viết cho tai nghe, (3) cách nhắc nghiên cứu khi nói, (4) mẫu prompt và vòng tự chấm, (5) lời thật của creator Việt, (6) các luật rút ra cho @hi.oneup, kèm ví dụ câu sai và câu đúng.

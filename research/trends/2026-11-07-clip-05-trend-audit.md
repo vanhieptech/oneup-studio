@@ -1,3 +1,12 @@
+---
+title: "Audit trend clip-05 — 07/11/2026"
+date: 2026-11-07
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Audit trend clip-05 — 07/11/2026
 
 ## Phạm vi và kết luận

@@ -1,3 +1,12 @@
+---
+title: "Rule Review — clip-05 r15.1, tích hợp gate nguồn, 08/11/2026 ~14:25 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Rule Review — clip-05 r15.1, tích hợp gate nguồn, 08/11/2026 ~14:25 giờ VN
 - File: `/home/box/agent-data/agents/315819de-26d8-48c8-a4a6-e2f7a5d3545a/handoffs/clip05-r15.1-full-draft-2026-11-08.md`
 - File SHA `57322fba5e105ae0e81c290d0aefbb0d9b4ceef12449d2a01ff4d39b3c60183c`, khớp.

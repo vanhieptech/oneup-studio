@@ -6,7 +6,10 @@ Targets: comma 0.15–0.25s, period/?/! 0.35–0.5s, colon 0.2–0.35s, between 
 no break >0.25s at a boundary without punctuation (= ngắt giữa cụm từ). Pauses = silence runs (energy) between aligned words, so whisper's fuzzy
 word edges only locate the boundary. Question rise = median F0 of the last word vs. the rest of the sentence (numpy autocorrelation)."""
 import json, os, re, sys, subprocess, unicodedata, difflib
-REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import paths as P
+REPO = str(P.ROOT)
+FFMPEG = P.FFMPEG_BIN
 TGT = {",": (0.15, 0.25), ".": (0.35, 0.5), "?": (0.35, 0.5), "!": (0.35, 0.5), ":": (0.2, 0.35), "line": (0.3, 0.6), "beat": (0.4, 0.8)}
 MAX_PAUSE, MIN_PERIOD, MID_BREAK = 0.8, 0.1, 0.25
 # one stressed word per sentence; {nhấn:} in the locked script wins, otherwise this map (key words chosen by meaning, not stretched by DSP)
@@ -22,11 +25,10 @@ STRESS = {"Ví dụ học từ tiếng Anh để đi du lịch.": "du lịch", "
 # script-v14-delivery.md rev3: '/' phẩy/hai chấm 0.15–0.2 · '//' chấm/hỏi trong beat 0.35 · '//|' hết beat 0.4 · '///' lặng có chủ ý 0.4 (trước «Bút dừng»)
 PLANS = {"A": {"/": 0.18, "//": 0.35, "//beat": 0.4, "///": 0.4}, "B": {"/": 0.15, "//": 0.3, "//beat": 0.4, "///": 0.4}, "C": {"/": 0.12, "//": 0.25, "//beat": 0.35, "///": 0.4}}
 DELIV_GAP = {"/": (0.15, 0.2), "//": (0.35, 0.35), "//beat": (0.4, 0.4), "///": (0.4, 0.4)}
-RESPELL = [("hai trăm hai mươi hai", "222"), ("bốn mươi tám ngàn", "48 ngàn"), ("Đun lốt ki", "Dunlosky"), ("Giang", "Yang"), ("Com men", "Comment"),
-           ("Lắc ghịt", "Luggage"), ("lắc ghịt", "luggage"), ("e pọt", "airport"), ("hô ten", "hotel"), ("tích kịt", "ticket"), ("pát pọt", "passport")]
+from tts import respell as RS
+RESPELL = RS.VI_TO_EN
 def unrespell(s):
-    for a, b in RESPELL: s = s.replace(a, b)
-    return s
+    return RS.unrespell(s)
 def delivery_stream(fd):
     """[(word, mark_after)] over the whole clip from final/script-v14-delivery.md; mark in '', '/', '//', '//beat', '///'."""
     f = os.path.join(fd, "script-v14-delivery.md")
@@ -89,8 +91,8 @@ def measure(specp):
     def respell(s):
         for a, b in FWD: s = re.sub(rf"\b{re.escape(a)}\b", b, s)
         return s
-    m = WhisperModel("small", device="cpu", compute_type="int8"); SR = 16000; VO = os.path.join(REPO, "video-engine", "public", "voice")
-    def pcm(f): return np.frombuffer(subprocess.run(["ffmpeg", "-loglevel", "error", "-i", f, "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True).stdout, dtype="float32")
+    m = WhisperModel("small", device="cpu", compute_type=os.environ.get("ASR_COMPUTE", "float32")); SR = 16000; VO = os.path.join(REPO, "video-engine", "public", "voice")
+    def pcm(f): return np.frombuffer(subprocess.run([FFMPEG, "-loglevel", "error", "-i", f, "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout, dtype="float32")
     def silmask(x):
         hop = int(0.01 * SR); e = np.array([np.sqrt(np.mean(x[i:i + hop] ** 2)) for i in range(0, len(x) - hop, hop)]); thr = max(0.012, 0.06 * np.percentile(e, 95)); return e < thr
     def longest_sil(mask, a, b):
@@ -184,7 +186,7 @@ def measure(specp):
         r["emphasis"] = emph; r["syll_per_s"] = rate
         for e_ in emph:
             if e_["delta_db"] is not None and e_["delta_db"] < 2.0: flags.append(f"{L['key']}: nhấn «{e_['words']}» chỉ +{e_['delta_db']} dB (<2 dB)")
-        if rate and rate > 5.0: flags.append(f"{L['key']}: {rate} âm tiết/s (>5)")
+        # L-074: no >5 syll/s blocking flag (Vietnamese conversational speed is 5.0-6.5 syll/s)
         r["stt_sim"] = round(difflib.SequenceMatcher(None, [fold(w) for w in re.findall(r"[\wÀ-ỹ]+", r["stt"])], [fold(w) for w in words]).ratio(), 2)
         rows.append(r)
         for b_ in bnds:
@@ -201,7 +203,7 @@ def measure(specp):
         mb = "; ".join(f"«{b['after']}» {b['pause']}s" for b in r["boundaries"] if not b["punct"] and b["status"] != "ok") or "không"
         g = "—" if r["gap_after"] is None else f"{r['gap_after']}/{r['gap_target'][0]}–{r['gap_target'][1]} ({'giữa beat' if r['gap_kind'] == 'beat' else 'giữa câu'}){'' if r['gap_status'] == 'ok' else ' ' + r['gap_status']}"
         bad = any(b["status"].startswith("✖") for b in r["boundaries"]) or r["gap_status"].startswith("✖") or (r["rise_status"] or "").startswith("✖")
-        bad = bad or any((e_["delta_db"] or 9) < 2.0 for e_ in r["emphasis"]) or (r["syll_per_s"] or 0) > 5.0
+        bad = bad or any((e_["delta_db"] or 9) < 2.0 for e_ in r["emphasis"])
         em = "; ".join(f"«{e_['words']}» {'+' if (e_['delta_db'] or 0) >= 0 else ''}{e_['delta_db']}" for e_ in r["emphasis"]) or "—"
         md.append(f"| {unrespell(r['say'])} ({r['key']}) | {r['t']}–{round(r['t'] + r['dur'], 2)} | {pb} | {mb} | {g} | {em} | {r['syll_per_s']} | {'—' if r['question_rise_st'] is None else r['question_rise_st']} | {r['stt']} ({r['stt_sim']}) | {'**ĐỌC LẠI**' if bad else 'ok'} |")
     md += ["", f"Cờ chặn: {len(flags)}"] + [f"- {x}" for x in flags]
@@ -238,12 +240,20 @@ def voice(specp):
         L = lines.setdefault(ln, {"key": f"{pre}-{ln}", "scene": sc, "say": l["say"], "t": round(st + lead, 3), "units": []})
         L["dur"] = round(t - tail - L["t"], 3); L["units"].append({"key": u["key"], "t": round(st + lead, 3), "end": round(t - tail, 3), "mark_after": seg[-1][1]})
     y = np.concatenate(out); raw = os.path.join(W, "voice-only-raw.wav")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", raw], input=y.tobytes(), check=True)
-    wav = os.path.join(fd, f"voice-only-{pre}.wav"); m4a = arg("--m4a", f"/workspace/{spec['clip']}-v14-voice-only.m4a")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", "-ac", "1", wav], check=True)
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-c:a", "aac", "-b:a", "96k", "-ac", "1", "-movflags", "+faststart", m4a], check=True)
+    subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-f", "f32le", "-ar", str(SR), "-ac", "1", "-i", "-", raw], input=y.tobytes(), check=True)
+    wav = os.path.join(fd, f"voice-only-{pre}.wav"); m4a = arg("--m4a", os.path.join(fd, f"{spec['clip']}-voice-only.m4a"))
+    # DL-072: linear gain to -14 LUFS + conservative limiter (never single-pass dynamic loudnorm)
+    err = subprocess.run([FFMPEG, "-hide_banner", "-i", raw, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+    ms = re.findall(r"I:\s+(-?[\d.]+)\s+LUFS", err); gdb = -14.0 - float(ms[-1]) if ms else 0.0
+    for _ in range(3):
+        subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-i", raw, "-af", f"volume={gdb:.2f}dB,alimiter=limit=0.78:attack=1:release=30:level=disabled", "-ar", "48000", "-ac", "1", wav], check=True)
+        err2 = subprocess.run([FFMPEG, "-hide_banner", "-i", wav, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
+        ms2 = re.findall(r"I:\s+(-?[\d.]+)\s+LUFS", err2)
+        if not ms2 or abs(float(ms2[-1]) + 14.0) <= 0.3: break
+        gdb += -14.0 - float(ms2[-1])
+    subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-i", wav, "-c:a", "aac", "-b:a", "96k", "-ac", "1", "-movflags", "+faststart", m4a], check=True)
     for L in lines.values():  # per-line wav cut from the assembled file so measure() reads it like a normal voice line
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-ss", str(max(0, L["t"] - 0.06)), "-t", str(L["dur"] + 0.16), os.path.join(REPO, "video-engine/public/voice", L["key"] + ".wav")], check=True)
+        subprocess.run([FFMPEG, "-y", "-loglevel", "error", "-i", raw, "-ss", str(max(0, L["t"] - 0.06)), "-t", str(L["dur"] + 0.16), os.path.join(REPO, "video-engine/public/voice", L["key"] + ".wav")], check=True)
         L["t"] = round(L["t"] - 0.06, 3); L["dur"] = round(L["dur"] + 0.16, 3)
     json.dump({"total": round(len(y) / SR, 3), "lines": list(lines.values())}, open(os.path.join(fd, f"voice-only-{pre}.timing.json"), "w"), ensure_ascii=False, indent=1)
     print("voice-only", round(len(y) / SR, 2), "s ->", wav, m4a)

@@ -35,9 +35,41 @@ else:
 # ---- rule-65 / L-034: storage convention (docs/conventions/storage.md) ----
 sys.path.insert(0, str(ROOT / "pipeline")); import paths as P
 DUP_EXEMPT = ("skills/", "video-engine/public/voice/", "brand/omi-exports/", "refs/", "resources/refs/")
-DUP_EXEMPT_NAMES = {"package.json", "package-lock.json", "hyperframes.json", ".gitignore", "README.md", "AGENTS.md", "CLAUDE.md"}
+DUP_EXEMPT_NAMES = {"package.json", "package-lock.json", "hyperframes.json", ".gitignore", "README.md", "AGENTS.md", "CLAUDE.md", "tokens.css"}
 import re as _re
-DUP_EXEMPT_RE = _re.compile(r"(\.tpl$|^logs/runs/|/final/cover\.png$|/v\d+/)")  # templates, run logs, L-020 cover = template render, versioned snapshots
+DUP_EXEMPT_RE = _re.compile(r"(\.tpl$|^logs/runs/|/final/cover\.png$|/v\d+/|/qa-v\d+-render/|/apify/comments-merged\.json$)")  # templates, run logs, L-020 cover, versioned snapshots, QA frames, single-batch merged comments
+# Historical duplicate DL-069 (2026-11-08 @vanhiep.tech & 2026-11-25 clip-05 archive) is frozen and must NOT be renumbered.
+HIST_DUP_DL = {"DL-069"}
+MEDIA_EXT = {".mp4", ".mov", ".wav", ".m4a", ".mp3", ".webm", ".mkv"}
+MAX_TRACKED_MEDIA_BYTES = 2 * 1024 * 1024
+# Pre-existing legacy >2MB media already in git history (grandfathered; all NEW >2MB media in content/ or channels/ must go to media/ + MANIFEST.json)
+LEGACY_LARGE_MEDIA = {
+    "content/archive/clip-05-hoc-mot-dem/archive/v4-final/voice-only-c05v4.wav",
+    "content/archive/clip-02-procrastination-discomfort/final/preview/clip-02-final-preview.mp4",
+    "content/archive/clip-02-procrastination-discomfort/final/preview/clip-02-hook-preview.mp4",
+    "content/archive/clip-04-gap-sach-tu-kiem/final/voice-only-c04v16c.wav",
+    "content/archive/clip-04-gap-sach-tu-kiem/final/voice-only-c04v18.wav",
+    "content/archive/clip-04-gap-sach-tu-kiem/final/voice-track-c04v18.wav",
+    "content/samples/lab/motion-100/preview/01-hook-breath.mp4",
+    "content/samples/lab/motion-100/preview/01-hook-on-aroll.mp4",
+    "content/samples/lab/motion-100/preview/01-hook-padded.mp4",
+    "content/samples/lab/motion-100/preview/01-hook-scrim-plus-aroll-blur.mp4",
+    "content/samples/lab/motion-100/preview/01-hook-scrim.mp4",
+    "content/samples/lab/motion-100/preview/02-d01-on-aroll.mp4",
+    "content/samples/lab/motion-100/preview/03-l3-on-aroll.mp4",
+    "content/samples/lab/motion-100/preview/04-q-on-aroll.mp4",
+    "content/samples/lab/motion-100/preview/05-l3-on-aroll.mp4",
+    "content/samples/lab/sample-f5/ab-v3.wav",
+    "content/samples/lab/sample-f5/ab-v4.wav",
+    "content/samples/lab/sample-f5/ab.wav",
+    "content/samples/lab/sample-f5/filler-bank.wav",
+    "content/samples/lab/sample-full/sample-full-w5-story.mp4",
+    "content/samples/lab/sample-full/sample-full-w5.mp4",
+    "content/samples/lab/sample-natural/old-vs-new-AB.wav",
+    "content/samples/lab/video-engine/clip-01-story-b01-b03.mp4",
+    "content/samples/lab/video-engine/debugging-story.mp4",
+    "content/samples/lab/video-engine/sample-script.mp4",
+}
 tracked = [f for f in subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, text=True).stdout.split("\0") if f and (ROOT / f).is_file()]
 errs = []
 for f in tracked:
@@ -53,6 +85,20 @@ for f in tracked:
         errs.append(f"draft inside final/ (move to archive/): {f}")
     if f.startswith(("content/", "samples/")) and (Path(f).suffix.lower() in P.SHARED_EXT or name in P.SHARED_NAMES):
         errs.append(f"shared-type file inside a clip/sample folder (use brand/ or assets/, synced by sync-shared.py): {f}")
+    if f.startswith(("content/", "channels/")) and f not in LEGACY_LARGE_MEDIA and Path(f).suffix.lower() in MEDIA_EXT and (ROOT / f).stat().st_size > MAX_TRACKED_MEDIA_BYTES:
+        errs.append(f"large media (>2MB) tracked in git (move to media/ + MANIFEST.json): {f}")
+# Guard against duplicate DL-NNN / L-NNN IDs (use pipeline/scripts/next-id.py before adding)
+from collections import Counter
+for log_rel, pat, allow in [
+    ("logs/decision-log.md", r"(?:^\|\s*|^#{2,3}\s+)(DL-\d{3})\b", HIST_DUP_DL),
+    ("logs/lessons.md", r"(?:^\|\s*|^#{2,3}\s+)(L-\d{3})\b", set()),
+]:
+    lp = ROOT / log_rel
+    if lp.is_file():
+        counts = Counter(re.findall(pat, lp.read_text(encoding="utf-8", errors="ignore"), re.M))
+        for k, v in sorted(counts.items()):
+            if v > 1 and k not in allow:
+                errs.append(f"duplicate ID in {log_rel}: {k} appears {v}× (use pipeline/scripts/next-id.py)")
 by = {}
 for f in tracked:
     if f.startswith(DUP_EXEMPT) or f.rsplit("/", 1)[-1] in DUP_EXEMPT_NAMES or DUP_EXEMPT_RE.search(f) or (ROOT / f).stat().st_size < 64: continue

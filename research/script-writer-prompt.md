@@ -1,11 +1,11 @@
 ---
+tags: [research]
 title: "Prompt + quy trình viết script @hi.oneup (dùng lại cho mọi clip)"
 date: 2026-10-20
 type: procedure
 status: draft — chờ Rule Reviewer soát, chưa thay templates/script.md
 source: "research/script-craft-opencreator-2026-10-20.md · research/tiktok-script-craft-2026-10-20.md · research/script-craft-2026-10-20.md · logs/lessons.md L-022..L-075 · logs/rule-checklist.md P-01..P-16, W-01..W-14"
 ---
-
 # Prompt viết script @hi.oneup
 
 Cách dùng: chạy **6 bước, mỗi bước là một lần gọi riêng** (viết nháp → chấm → sửa theo bản chấm; Anthropic chaining, Self-Refine). Bước chấm (5) do **một agent khác** làm, hoặc ít nhất một lần gọi riêng không thấy lý do của người viết. Mỗi lần Hiệp chê thì thêm một cặp vào `<examples>` và một dòng vào rubric, **trước** khi viết bản sau (rule-49, logs/lessons.md).

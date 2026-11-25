@@ -1,4 +1,7 @@
 ---
+type: research
+tags: [research]
+source: "oneup-studio (soạn trong repo)"
 title: "clip-05 (tự kiểm khi đọc): báo cáo học kỹ thuật"
 date: 2026-11-07
 author: OpenCreator Studio

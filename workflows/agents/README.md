@@ -1,3 +1,12 @@
+---
+title: "Bản đồ workflow agent — @hi.oneup"
+date: 2026-10-19
+type: readme
+tags: [workflows]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Bản đồ workflow agent — @hi.oneup
 
 Cập nhật: 19/10/2026 (Asia/Saigon). Từ nay mỗi agent giữ một workflow riêng trong thư mục này; News chỉ điều phối (xem news-coordinator.md). Skill make-video cũ vẫn là xương sống tạm thời; đề xuất cắt mỏng make-video chờ Hiệp duyệt, chưa tự cắt.

@@ -1,3 +1,12 @@
+---
+title: "Nghiên cứu cách viết script TikTok giáo dục (Rule Reviewer, 20/10/2026)"
+date: 2026-10-20
+type: script
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Nghiên cứu cách viết script TikTok giáo dục (Rule Reviewer, 20/10/2026)
 
 Lý do: Hiệp chê clip-04 v16c «vẫn dở quá», yêu cầu tự nghiên cứu prompt, logic, cách creator viết script.

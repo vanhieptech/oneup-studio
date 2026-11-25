@@ -1,3 +1,12 @@
+---
+title: "Apify 2026-11-07"
+date: 2026-11-07
+type: readme
+tags: [research]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Apify 2026-11-07
 
 **Apify: CÓ chạy** (hạn mức vẫn hồi sau 06/11).

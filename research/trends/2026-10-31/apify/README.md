@@ -1,3 +1,12 @@
+---
+title: "Apify 2026-10-31"
+date: 2026-10-31
+type: readme
+tags: [research]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Apify 2026-10-31
 Quota check (1 call, `clockworks/tiktok-scraper`, hashtag `hoctap`, resultsPerPage 5, DOWNLOAD_SUBTITLES, commentsPerPost 0, maxItems 5) refused at ~08:05 (giờ VN, UTC+7):
 "Your remaining usage of $0.132525 this billing cycle isn't enough for this run". Same balance as 22/10, 25/10–30/10 → cycle not reset.

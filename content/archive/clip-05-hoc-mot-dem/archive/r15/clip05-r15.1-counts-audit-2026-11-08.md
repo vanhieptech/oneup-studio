@@ -1,3 +1,12 @@
+---
+title: "Clip05 r15.1 PATCH1 — counts / preservation audit"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Clip05 r15.1 PATCH1 — counts / preservation audit
 
 Status: nghĩa/craft CHƯA PASS; Deep/Social exactSHA CHƯA KIỂM; người thật/actualtiming CHƯA KIỂM. Không Chốt.

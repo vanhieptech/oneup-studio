@@ -1,8 +1,12 @@
 ---
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
 title: "clip-05 r15 exact spoken adapter"
 fact_lock: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md
 ---
-
 1. **[Hook]** Sinh viên đọc lại cùng đoạn, hai ngày sau vẫn nhớ ít ý hơn so với đoạn đã tự viết từ trí nhớ. Sau một tuần, tự viết còn hơn đọc lại không?
 2. **[b02]** Có, tự viết vẫn hơn ở mốc một tuần trong thí nghiệm năm 2006 này. Bạn sẽ có phép so cụ thể và một câu hỏi dùng ngay cho bài đọc muốn kể sau vài ngày. Nếu bạn thích đọc rồi chia sẻ sách, text hip ở Hàn cũng có nét ấy, đọc sách thành gu sống và kết nối người cùng sở thích.
 3. **[b03]** Với chuyện nhớ sau vài ngày, phép so này bắt đầu từ 120 sinh viên học hai đoạn ngắn. Sau đó, mỗi người đọc lại một đoạn và tự viết nội dung nhớ được của đoạn kia. Khi tự viết, họ có tiêu đề gợi nhắc, không có nội dung đoạn văn hay đáp án để sửa. Còn các mốc đo năm phút, hai ngày và một tuần được thực hiện ở những người khác nhau.

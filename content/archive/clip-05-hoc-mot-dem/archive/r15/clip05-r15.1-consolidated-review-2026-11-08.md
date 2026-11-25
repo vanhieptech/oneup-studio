@@ -1,3 +1,12 @@
+---
+title: "clip-05 r15.1 — review gộp (Rule Reviewer, chỉ đọc), 08/11/2026 ~14:30 giờ VN"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # clip-05 r15.1 — review gộp (Rule Reviewer, chỉ đọc), 08/11/2026 ~14:30 giờ VN
 - Bản: file 57322fba…0183c, lời ee0e5aa8…0652. Tính lại lúc gộp: vẫn khớp, không đổi.
 - Không sửa lời, repo hay code. Không research. `git status` trước và sau khi chạy checker giống nhau.

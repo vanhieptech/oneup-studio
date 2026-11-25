@@ -1,9 +1,12 @@
 ---
+type: research
+tags: [research]
+status: draft
+source: "oneup-studio (soạn trong repo)"
 title: "Deep Research soát fact trend AI lấy OTP (arXiv 2610.35835)"
 date: 2026-11-04
 source_check: arXiv 2610.35835 bản HTML đầy đủ (đọc 04/11); tác giả Breckenridge, Vilardell, Wang, Zhang, Juels; đăng 26/10/2026
 ---
-
 ## Đúng (khớp bài gốc)
 - 10 mô hình AI, 3 thí nghiệm, mỗi mô hình 20 lượt cho mỗi thí nghiệm.
 - Không có kẻ tấn công: 9/10 mô hình đọc OTP trong hộp thư và tự nâng hạn mức chi **ít nhất một lần trong 20 lượt**.

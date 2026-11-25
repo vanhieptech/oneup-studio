@@ -1,3 +1,12 @@
+---
+title: "r15 → r15.1 PATCH1 — delta note, không verdict craft"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # r15 → r15.1 PATCH1 — delta note, không verdict craft
 
 Đã đọc TOÀN review actual cập nhật. Steering mới nhất thu hẹp lỗi chắc cònK1/S01. Báo cáo trên đĩa còn ghiK2/S18; **không tự sửaS18**, để Deep chấm diễn đạt trênSHA mới. Giữ conceptE, không reset L095, không mổ thân.

@@ -234,7 +234,7 @@ class TestSRTIntegration(unittest.TestCase):
     
     def test_clip_01_timing(self):
         """Test with clip-01 archived timing.json."""
-        timing_path = Path("/workspace/content/archive/clip-01-implementation-intention/final/timing.json")
+        timing_path = Path(__file__).resolve().parents[2] / "content/archive/clip-01-implementation-intention/final/timing.json"
         
         if not timing_path.exists():
             self.skipTest(f"Clip-01 timing.json not found at {timing_path}")

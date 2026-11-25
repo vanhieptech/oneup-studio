@@ -1,3 +1,12 @@
+---
+title: "Social Research — xác nhận nguồn có sẵn cho lượt viết 08/11/2026 13:03"
+date: 2026-11-08
+type: doc
+tags: [content]
+status: ready
+source: "oneup-studio (soạn trong repo)"
+---
+
 # Social Research — xác nhận nguồn có sẵn cho lượt viết 08/11/2026 13:03
 Thực kiểm hoàn tất: 08/11/2026 13:04:38, giờ Việt Nam (Asia/Saigon). Chỉ xác nhận archive, không nghiên cứu trend mới, không chọn nguyên nhân, không viết/duyệt script hoặc craft.
 

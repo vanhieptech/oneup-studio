@@ -1,4 +1,9 @@
 ---
+title: "Trend: Musk «tiết kiệm cho tương lai là vô nghĩa»"
+date: 2026-10-31
+type: research
+tags: [research]
+status: draft
 trend_id: vnexpress-5138848-musk-tiet-kiem
 for: ý tưởng mới 5.27 (quỹ dự phòng), B-tietkiem-01
 hook_pattern: P11+P03
