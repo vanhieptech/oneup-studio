@@ -192,15 +192,15 @@
       {
        "speaker": "hiep",
        "emotion": "happy",
-       "text": "Thì cái **bản chất**…",
-       "say": "Thì cái bản chất...",
+       "text": "Thì cái, **bản chất**…",
+       "say": "Thì cái, bản chất...",
        "en": "So what's the real trick…",
        "hl": [
         3
        ],
        "phrases": [
         {
-         "t": "Thì cái",
+         "t": "Thì cái,",
          "keep": true
         },
         {
@@ -1881,6 +1881,7 @@
  },
  "comma_gap_line": {
   "b07b": 0.06,
-  "b09f": 0.04
+  "b09f": 0.04,
+  "b01": 0.1
  }
 }

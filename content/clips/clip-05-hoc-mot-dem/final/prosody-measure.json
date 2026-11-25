@@ -39,20 +39,34 @@
   {
    "key": "c05v21s-b01",
    "scene": "b01",
-   "say": "Thì cái bản chất...",
+   "say": "Thì cái, bản chất...",
    "t": 0.12,
-   "dur": 1.124,
-   "stt": "Thì các bạn chất.",
+   "dur": 1.339,
+   "stt": "Thì cái, bán chất!",
    "boundaries": [
+    {
+     "after": "Thì",
+     "punct": "",
+     "pause": 0.06,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
+     "after": "cái",
+     "punct": ",",
+     "pause": 0.18,
+     "target": "0.15-0.25",
+     "status": "ok"
+    },
     {
      "after": "bản",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.35,
+   "gap_after": 0.32,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -63,14 +77,14 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.33,
-   "stt_sim": 0.75
+   "syll_per_s": 4.88,
+   "stt_sim": 1.0
   },
   {
    "key": "c05v21s-b01a",
    "scene": "b01a",
    "say": "của cái việc đọc đâu nhớ đó là như thế nào?",
-   "t": 1.32,
+   "t": 1.54,
    "dur": 3.212,
    "stt": "Cú cái việc đọc đầu nhớ đó là như thế nào?",
    "boundaries": [
@@ -156,7 +170,7 @@
    "key": "c05v21s-b01b",
    "scene": "b01b",
    "say": "Chứ đọc xong gấp sách lại, là quên sạch trơn hà.",
-   "t": 4.62,
+   "t": 4.83,
    "dur": 3.442,
    "stt": "Chữ đọc xong gấp sách lại là Quân sạch Trơn Hà.",
    "boundaries": [
@@ -235,7 +249,7 @@
    "key": "c05v21s-b02",
    "scene": "b02",
    "say": "Đọc lại thì thấy quen quen, kiểu “Ừ… cái này biết rồi…”, mà ai hỏi là hông kể nổi.",
-   "t": 8.27,
+   "t": 8.48,
    "dur": 5.705,
    "stt": "Đọc lại thì thấy quen quen, kiểu, ở cái này biết rồi, mà ai hỏi là không kể nổi.",
    "boundaries": [
@@ -356,7 +370,7 @@
    "key": "c05v21s-b03",
    "scene": "b03",
    "say": "Vì đọc lại thì chữ nằm sẵn trên trang, đâu có bắt mình tự nhớ ra.",
-   "t": 14.37,
+   "t": 14.59,
    "dur": 4.534,
    "stt": "Vì độc lại thì chữ nằm sẵn trên trang đâu có bắt mình tự nhớ ra.",
    "boundaries": [
@@ -484,7 +498,7 @@
    "key": "c05v21s-b07a",
    "scene": "b07a",
    "say": "Mà chuyện này có thí nghiệm hẳn hoi, năm hai nghìn không trăm lẻ sáu với một trăm hai mươi sinh viên nè.",
-   "t": 19.31,
+   "t": 19.52,
    "dur": 5.52,
    "stt": "mà chuyện này có thí nghiệm hẳn hoi năm 2006 với 120 sinh viên nè.",
    "boundaries": [
@@ -577,7 +591,7 @@
    "key": "c05v21s-b07b",
    "scene": "b07b",
    "say": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
-   "t": 25.23,
+   "t": 25.44,
    "dur": 5.584,
    "stt": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
    "boundaries": [
@@ -733,7 +747,7 @@
    "key": "c05v21s-b07c",
    "scene": "b07c",
    "say": "Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn. Nhưng nhóm đo sau một tuần thì lật ngược.",
-   "t": 31.21,
+   "t": 31.43,
    "dur": 5.697,
    "stt": "Nhóm đo sau 5 phút đoạn đọc lại nhớ nhiều hơn, nhưng nhóm đo sau 1 tuần thì lật ngược.",
    "boundaries": [
@@ -861,7 +875,7 @@
    "key": "c05v21s-b07d",
    "scene": "b07d",
    "say": "Tự viết còn nhớ năm mươi sáu phần trăm ý, đọc lại chỉ bốn mươi hai. Nhưng năm mấy chục cũng đâu phải nhớ hết.",
-   "t": 37.31,
+   "t": 37.52,
    "dur": 7.15,
    "stt": "Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42, nhưng năm bấy chục cũng đâu phải nhớ hết.",
    "boundaries": [
@@ -982,7 +996,7 @@
    "key": "c05v21s-b08",
    "scene": "b08",
    "say": "Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.",
-   "t": 44.86,
+   "t": 45.07,
    "dur": 3.526,
    "stt": "Vậy hóa ra, thư đáng tập là tự nhớ khi sắt đóng.",
    "boundaries": [
@@ -1068,7 +1082,7 @@
    "key": "c05v21s-b09",
    "scene": "b09",
    "say": "Thứ nhất thì clíp trước nói rồi đó. Đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
-   "t": 48.78,
+   "t": 49.0,
    "dur": 7.785,
    "stt": "Thứ nhất thì clip trước nói rồi đó, đọc xong một chương là gấp sắt lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
    "boundaries": [
@@ -1252,7 +1266,7 @@
    "key": "c05v21s-b09b",
    "scene": "b09b",
    "say": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.",
-   "t": 56.97,
+   "t": 57.18,
    "dur": 3.124,
    "stt": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.",
    "boundaries": [
@@ -1345,7 +1359,7 @@
    "key": "c05v21s-b09c",
    "scene": "b09c",
    "say": "Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.",
-   "t": 60.49,
+   "t": 60.71,
    "dur": 4.851,
    "stt": "Thứ 2, viết xong rồi mới mở sách ra chấm sai chỗ nào sửa chỗ đó.",
    "boundaries": [
@@ -1459,7 +1473,7 @@
    "key": "c05v21s-b09d",
    "scene": "b09d",
    "say": "Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu.",
-   "t": 65.74,
+   "t": 65.96,
    "dur": 3.323,
    "stt": "Tự chấm thì yên tâm, không ai ghi sổ đầu bài đâu.",
    "boundaries": [
@@ -1545,7 +1559,7 @@
    "key": "c05v21s-b09e",
    "scene": "b09e",
    "say": "Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.",
-   "t": 69.47,
+   "t": 69.68,
    "dur": 4.256,
    "stt": "Bước chấm này cảm năng gọi ý thêm, chữ thí nghiệm kia không có làm.",
    "boundaries": [
@@ -1652,7 +1666,7 @@
    "key": "c05v21s-b09f",
    "scene": "b09f",
    "say": "Và cuối cùng, chưa chấm thì đừng liếc sách, liếc cái là thành đọc lại.",
-   "t": 74.42,
+   "t": 74.64,
    "dur": 4.616,
    "stt": "Và cuối cùng, chưa chấm thì đừng lít sách lít cái là thành độc lại.",
    "boundaries": [
@@ -1745,7 +1759,7 @@
    "key": "c05v21s-b10a",
    "scene": "b10a",
    "say": "“Em kia, gấp sách lại rồi nhớ gì thì viết hết ra coi! Xong rồi mở sách ra, tự chấm đi!”",
-   "t": 79.74,
+   "t": 79.95,
    "dur": 6.556,
    "stt": "Em kia, gấp sách lại, rồi nhớ gì thì viết hết ra coi. Xong rồi mở sách ra, tự chấm đi.",
    "boundaries": [
@@ -1908,7 +1922,7 @@
    "key": "c05v21s-b10b",
    "scene": "b10b",
    "say": "“Dạ… em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi…”",
-   "t": 86.69,
+   "t": 86.91,
    "dur": 3.918,
    "stt": "Dạ em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi.",
    "boundaries": [
@@ -2022,7 +2036,7 @@
    "key": "c05v21s-b11a",
    "scene": "b11a",
    "say": "Đọc đâu nhớ đó là tự trả bài vậy đó.",
-   "t": 91.01,
+   "t": 91.23,
    "dur": 2.789,
    "stt": "Đọc đầu nhớ đó là tự trả bài vậy đó.",
    "boundaries": [
@@ -2108,7 +2122,7 @@
    "key": "c05v21s-b11b",
    "scene": "b11b",
    "say": "Mà chắc nhiều bạn có cách hay hơn mình nữa, bạn hay làm gì để nhớ lâu, com men cho mình biết với nha.",
-   "t": 94.2,
+   "t": 94.42,
    "dur": 6.621,
    "stt": "Mà chắc nhiều bạn có cách hay hơn mình nữa. Bạn hay làm gì để nhớ lâu, comment cho mình biết với nhà.",
    "boundaries": [
@@ -2268,7 +2282,5 @@
    "stt_sim": 0.94
   }
  ],
- "flags": [
-  "c05v21s-b01: 5.33 âm tiết/s (>5)"
- ]
+ "flags": []
 }
