@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: clip-05.post
 type: post-package
 template: post-package v1 (rule-53, DL-045)
-status: draft — chờ render + gate 2
+status: ready — chờ gate 2
 updated: 2026-11-25
 tags: [clip-05, post, tiktok, week-1, dark]
 ---
@@ -13,15 +13,15 @@ tags: [clip-05, post, tiktok, week-1, dark]
 
 ## 1. File video
 ```
-Đường dẫn: content/clips/clip-05-hoc-mot-dem/final/out/clip-05-final.mp4 (chưa render)
-Thời lượng: ƯỚC ~90–115s trước Chốt render / đo thật sau render · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
+Đường dẫn: content/clips/clip-05-hoc-mot-dem/final/out/clip-05-final.mp4 (media, không vào git)
+Thời lượng: 89,0s đo thật sau render · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14 LUFS
 ```
 
 ## 2. Chữ trên cover (≤ 40 ký tự)
 ```
 ĐỌC ĐÂU QUÊN ĐÓ? → TỰ TRẢ BÀI!
 ```
-Cover: template A (luật 54), props từ `spec.json → cover`. File: `final/cover.png` (render sau). Lúc đăng chọn "Tải ảnh bìa lên".
+Cover: template A (luật 54), props `final/cover/cover-a.props.json` (từ `spec.json → cover`). File: `final/cover.png` 1080×1920. Frame cover: **0s** (ảnh bìa tải lên riêng, không lấy frame video). Lúc đăng chọn "Tải ảnh bìa lên" → `cover.png`.
 
 ## 3. Caption / tiêu đề TikTok (VI)
 ```

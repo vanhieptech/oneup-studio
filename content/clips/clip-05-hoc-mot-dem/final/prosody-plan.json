@@ -1,0 +1,320 @@
+[
+ {
+  "scene": "b01",
+  "voice": "voice/c05v21-b01.wav",
+  "sentence": "Thì cái bản chất…",
+  "units": [
+   "Thì cái",
+   "bản chất..."
+  ],
+  "stress": "bản chất",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b01a",
+  "voice": "voice/c05v21-b01a.wav",
+  "sentence": "…của cái việc đọc đâu nhớ đó là như thế nào?",
+  "units": [
+   "của cái việc đọc đâu nhớ đó",
+   "là như thế nào?"
+  ],
+  "stress": "đọc đâu nhớ đó",
+  "question_rise": true,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b01b",
+  "voice": "voice/c05v21-b01b.wav",
+  "sentence": "Chứ đọc xong gấp sách lại, là quên sạch trơn hà.",
+  "units": [
+   "Chứ đọc xong gấp sách lại,",
+   "là quên sạch trơn hà."
+  ],
+  "stress": "quên sạch",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b02",
+  "voice": "voice/c05v21-b02.wav",
+  "sentence": "Đọc lại thì thấy quen quen, kiểu “Ừ… cái này biết rồi…”, mà ai hỏi là hông kể nổi.",
+  "units": [
+   "Đọc lại thì thấy quen quen,",
+   "kiểu “Ừ… cái này biết rồi…”,",
+   "mà ai hỏi là hông kể nổi."
+  ],
+  "stress": "quen quen",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03",
+  "voice": "voice/c05v21-b03.wav",
+  "sentence": "Vì đọc lại thì chữ nằm sẵn trên trang, đâu có bắt mình tự nhớ ra.",
+  "units": [
+   "Vì đọc lại thì chữ",
+   "nằm sẵn trên trang,",
+   "đâu có bắt mình tự nhớ ra."
+  ],
+  "stress": "nằm sẵn trên trang",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07a",
+  "voice": "voice/c05v21-b07a.wav",
+  "sentence": "Mà chuyện này có thí nghiệm hẳn hoi, năm 2006 với 120 sinh viên nè.",
+  "units": [
+   "Mà chuyện này có thí nghiệm hẳn hoi,",
+   "năm hai nghìn không trăm lẻ sáu",
+   "với một trăm hai mươi sinh viên nè."
+  ],
+  "stress": "120 sinh viên",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07b",
+  "voice": "voice/c05v21-b07b.wav",
+  "sentence": "Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.",
+  "units": [
+   "Mỗi sinh viên đọc lại một đoạn,",
+   "đoạn kia thì gấp lại,",
+   "chỉ nhìn tiêu đề rồi tự viết ra."
+  ],
+  "stress": "gấp lại",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07c",
+  "voice": "voice/c05v21-b07c.wav",
+  "sentence": "Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn.",
+  "units": [
+   "Nhóm đo sau năm phút,",
+   "đoạn đọc lại nhớ nhiều hơn.",
+   "Nhưng nhóm đo sau một tuần",
+   "thì lật ngược."
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07c",
+  "voice": "voice/c05v21-b07c.wav",
+  "sentence": "Nhưng nhóm đo sau một tuần thì lật ngược.",
+  "units": [
+   "Nhóm đo sau năm phút,",
+   "đoạn đọc lại nhớ nhiều hơn.",
+   "Nhưng nhóm đo sau một tuần",
+   "thì lật ngược."
+  ],
+  "stress": "lật ngược",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07d",
+  "voice": "voice/c05v21-b07d.wav",
+  "sentence": "Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42.",
+  "units": [
+   "Tự viết còn nhớ năm mươi sáu phần trăm ý,",
+   "đọc lại chỉ bốn mươi hai.",
+   "Nhưng năm mấy chục cũng đâu phải nhớ hết."
+  ],
+  "stress": "56 phần trăm",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07d",
+  "voice": "voice/c05v21-b07d.wav",
+  "sentence": "Nhưng năm mấy chục cũng đâu phải nhớ hết.",
+  "units": [
+   "Tự viết còn nhớ năm mươi sáu phần trăm ý,",
+   "đọc lại chỉ bốn mươi hai.",
+   "Nhưng năm mấy chục cũng đâu phải nhớ hết."
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b08",
+  "voice": "voice/c05v21-b08.wav",
+  "sentence": "Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.",
+  "units": [
+   "Vậy hóa ra, thứ đáng tập",
+   "là tự nhớ khi sách đóng."
+  ],
+  "stress": "tự nhớ khi sách đóng",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09",
+  "voice": "voice/c05v21-b09.wav",
+  "sentence": "Thứ nhất thì clip trước nói rồi đó.",
+  "units": [
+   "Thứ nhất thì clíp trước nói rồi đó.",
+   "Đọc xong một chương là gấp sách lại,",
+   "nhìn tiêu đề rồi tự viết ra những gì nhớ."
+  ],
+  "stress": "Thứ nhất",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09",
+  "voice": "voice/c05v21-b09.wav",
+  "sentence": "Đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.",
+  "units": [
+   "Thứ nhất thì clíp trước nói rồi đó.",
+   "Đọc xong một chương là gấp sách lại,",
+   "nhìn tiêu đề rồi tự viết ra những gì nhớ."
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09b",
+  "voice": "voice/c05v21-b09b.wav",
+  "sentence": "Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.",
+  "units": [
+   "Như mình nè,",
+   "nhớ được bao nhiêu thì viết bấy nhiêu."
+  ],
+  "stress": "viết bấy nhiêu",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09c",
+  "voice": "voice/c05v21-b09c.wav",
+  "sentence": "Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.",
+  "units": [
+   "Thứ hai, viết xong rồi",
+   "mới mở sách ra chấm,",
+   "sai chỗ nào sửa chỗ đó."
+  ],
+  "stress": "Thứ hai",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09d",
+  "voice": "voice/c05v21-b09d.wav",
+  "sentence": "Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu.",
+  "units": [
+   "Tự chấm thì yên tâm,",
+   "hông ai ghi sổ đầu bài đâu."
+  ],
+  "stress": "sổ đầu bài",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09e",
+  "voice": "voice/c05v21-b09e.wav",
+  "sentence": "Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.",
+  "units": [
+   "Bước chấm này cẩm nang gợi ý thêm,",
+   "chứ thí nghiệm kia hông có làm."
+  ],
+  "stress": "cẩm nang",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b09f",
+  "voice": "voice/c05v21-b09f.wav",
+  "sentence": "Và cuối cùng, chưa chấm thì đừng liếc sách, liếc cái là thành đọc lại.",
+  "units": [
+   "Và cuối cùng,",
+   "chưa chấm thì đừng liếc sách,",
+   "liếc cái là thành đọc lại."
+  ],
+  "stress": "đừng liếc",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b10a",
+  "voice": "voice/c05v21-b10a.wav",
+  "sentence": "“Em kia, gấp sách lại rồi nhớ gì thì viết hết ra coi!",
+  "units": [
+   "“Em kia, gấp sách lại",
+   "rồi nhớ gì thì viết hết ra coi!",
+   "Xong rồi mở sách ra, tự chấm đi!”"
+  ],
+  "stress": "gấp sách lại",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b10a",
+  "voice": "voice/c05v21-b10a.wav",
+  "sentence": "Xong rồi mở sách ra, tự chấm đi!",
+  "units": [
+   "“Em kia, gấp sách lại",
+   "rồi nhớ gì thì viết hết ra coi!",
+   "Xong rồi mở sách ra, tự chấm đi!”"
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b10a",
+  "voice": "voice/c05v21-b10a.wav",
+  "sentence": "”",
+  "units": [
+   "“Em kia, gấp sách lại",
+   "rồi nhớ gì thì viết hết ra coi!",
+   "Xong rồi mở sách ra, tự chấm đi!”"
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b10b",
+  "voice": "voice/c05v21-b10b.wav",
+  "sentence": "“Dạ… em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi…”",
+  "units": [
+   "“Dạ… em sai chút xíu thôi cô,",
+   "mà chỗ sai em sửa hết rồi…”"
+  ],
+  "stress": "chút xíu",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b11a",
+  "voice": "voice/c05v21-b11a.wav",
+  "sentence": "Đọc đâu nhớ đó là tự trả bài vậy đó.",
+  "units": [
+   "Đọc đâu nhớ đó",
+   "là tự trả bài vậy đó."
+  ],
+  "stress": "trả bài",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b11b",
+  "voice": "voice/c05v21-b11b.wav",
+  "sentence": "Mà chắc nhiều bạn có cách hay hơn mình nữa, bạn hay làm gì để nhớ lâu, comment cho mình biết với nha.",
+  "units": [
+   "Mà chắc nhiều bạn có cách hay hơn mình nữa,",
+   "bạn hay làm gì để nhớ lâu,",
+   "com men cho mình biết với nha."
+  ],
+  "stress": "comment",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ }
+]

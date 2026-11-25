@@ -34,7 +34,7 @@ def gen():
     json.dump(units,open(W+'/units.json','w'),ensure_ascii=False,indent=0)
     ref=REPO+"/assets/voice-refs/thai-son.wav";rt="Hôm nay trời Sài Gòn mát mẻ, mình ngồi cà phê một chút rồi về nhà làm việc tiếp nha."
     for h in (0,1):
-      it=[{"t":u["t"],"seed":sd,"speed":float(arg("--speed","0.9")) if u["role"]=="Thầy" else 0.95,"out":f"{W}/{u['key']}-{sd}.wav"} for n,u in enumerate(units) if n%2==h for sd in (11,37)]
+      it=[{"t":u["t"],"seed":sd,"speed":float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95)),"out":f"{W}/{u['key']}-{sd}.wav"} for n,u in enumerate(units) if n%2==h for sd in (11,37)]
       json.dump({"ref":ref,"ref_text":rt,"items":it},open(f"{W}/batch{h}.json","w"),ensure_ascii=False)
     print(len(units)); [print(u['key'],u['t'],u['emph']) for u in units]
 
@@ -194,11 +194,12 @@ else:
         json.dump(res,open(W+"/units-stt.json","w"),ensure_ascii=False,indent=1)
     elif CMD == "stitch":
         U=json.load(open(W+'/units.json')); SR=48000
+        COMMA_GAP=float(json.load(open(SPEC)).get('comma_gap',0.18))
         def gap(t,stemfirst,nxt=None):  # prosody-plan (b): comma .15-.25, period .35-.5, +0.08 before a stressed unit
           t=t.strip()
           if stemfirst: return 0.25
           # delivery rev3 (pacing-v14.md root fix): comma 0.18 < colon 0.25 < sentence 0.35; '///' before «Bút dừng» 0.4; voice-only uses prosody-check.py voice
-          g=0.35 if t[-1:] in '.?!…' else 0.25 if t[-1:]==':' else 0.18 if t[-1:]==',' else 0.0
+          g=0.35 if t[-1:] in '.?!…' else 0.25 if t[-1:]==':' else COMMA_GAP if t[-1:]==',' else 0.0
           return 0.4 if nxt and nxt["t"].startswith("Bút dừng") else g
         def env(x):
           hop=SR/FPS; e=[float(np.sqrt(np.mean(x[int(i*hop):int((i+1)*hop)]**2))) if len(x[int(i*hop):int((i+1)*hop)]) else 0 for i in range(int(len(x)/hop)+1)]

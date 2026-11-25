@@ -7,7 +7,7 @@
  "pillar": "5 Học & đầu tư bản thân",
  "story": "monologue Hiệp, khung «bản chất» theo video mẫu (L-039); nhập vai cô giáo trả bài; L-050 nghĩa bằng vật + hành động",
  "trend": "none — ngoại lệ L-090 Hiệp quyết (DL-069); khung meme «bản chất» F06 (research/trends/2026-10-15/audio)",
- "voice_prefix": "c05v21",
+ "voice_prefix": "c05v21s",
  "mix": "linear",
  "layout": "tiktok",
  "length_target": [
@@ -43,6 +43,11 @@
    "date": "2026-11-25",
    "dl": "DL-069",
    "note": "Gate 1 (lời + bảng hiệu ứng) Hiệp «Duyệt» 25/11/2026; bước tiếp: voice F5 trên box"
+  },
+  {
+   "v": "v21",
+   "date": "2026-11-25",
+   "note": "Thu lại giọng speed 0.8 (L-070: >5 âm tiết/s ở 19/20 câu khi speed 0.95), comma_gap 0.1"
   }
  ],
  "cover": {
@@ -202,7 +207,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b01.wav"
+       "voice_file": "voice/c05v21s-b01.wav"
       }
      ],
      "stage": {
@@ -276,7 +281,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b01a.wav"
+       "voice_file": "voice/c05v21s-b01a.wav"
       }
      ],
      "stage": {
@@ -360,7 +365,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b01b.wav"
+       "voice_file": "voice/c05v21s-b01b.wav"
       }
      ],
      "stage": {
@@ -443,7 +448,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b02.wav"
+       "voice_file": "voice/c05v21s-b02.wav"
       }
      ],
      "stage": {
@@ -531,7 +536,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b03.wav"
+       "voice_file": "voice/c05v21s-b03.wav"
       }
      ],
      "stage": {
@@ -602,7 +607,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b07a.wav",
+       "voice_file": "voice/c05v21s-b07a.wav",
        "bubble": false
       }
      ],
@@ -706,7 +711,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b07b.wav",
+       "voice_file": "voice/c05v21s-b07b.wav",
        "bubble": false
       }
      ],
@@ -799,7 +804,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b07c.wav",
+       "voice_file": "voice/c05v21s-b07c.wav",
        "bubble": false
       }
      ],
@@ -865,7 +870,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b07d.wav",
+       "voice_file": "voice/c05v21s-b07d.wav",
        "bubble": false
       }
      ],
@@ -951,7 +956,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b08.wav"
+       "voice_file": "voice/c05v21s-b08.wav"
       }
      ],
      "stage": {
@@ -1055,7 +1060,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b09.wav"
+       "voice_file": "voice/c05v21s-b09.wav"
       }
      ],
      "stage": {
@@ -1155,7 +1160,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b09b.wav"
+       "voice_file": "voice/c05v21s-b09b.wav"
       }
      ],
      "stage": {
@@ -1269,7 +1274,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b09c.wav"
+       "voice_file": "voice/c05v21s-b09c.wav"
       }
      ],
      "stage": {
@@ -1353,7 +1358,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b09d.wav"
+       "voice_file": "voice/c05v21s-b09d.wav"
       }
      ],
      "stage": {
@@ -1440,7 +1445,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b09e.wav"
+       "voice_file": "voice/c05v21s-b09e.wav"
       }
      ],
      "stage": {
@@ -1539,7 +1544,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b09f.wav"
+       "voice_file": "voice/c05v21s-b09f.wav"
       }
      ],
      "stage": {
@@ -1636,7 +1641,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b10a.wav"
+       "voice_file": "voice/c05v21s-b10a.wav"
       }
      ],
      "stage": {
@@ -1696,7 +1701,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b10b.wav"
+       "voice_file": "voice/c05v21s-b10b.wav"
       }
      ],
      "stage": {
@@ -1770,7 +1775,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b11a.wav"
+       "voice_file": "voice/c05v21s-b11a.wav"
       }
      ],
      "stage": {
@@ -1833,7 +1838,7 @@
         }
        ],
        "voice_role": "Hiệp",
-       "voice_file": "voice/c05v21-b11b.wav"
+       "voice_file": "voice/c05v21s-b11b.wav"
       }
      ],
      "stage": {
@@ -1849,5 +1854,7 @@
   "status": "approved",
   "by": "Hiệp",
   "date": "2026-11-25"
- }
+ },
+ "voice_speed": 0.8,
+ "comma_gap": 0.1
 }
