@@ -1,9 +1,10 @@
 ---
-title: "clip-05 v21: Đọc đâu nhớ đó = tự trả bài (HTB 23.14) — nháp"
+title: "clip-05 v21: Đọc đâu nhớ đó = tự trả bài (HTB 23.14) — LOCKED"
 date: 2026-11-25
 id: clip-05.script-v21
 type: script
-status: draft
+status: locked
+locked: "Hiệp «Chốt» 25/11/2026 (DL-069): giữ 23.14 + gọi lại clip-04, không chèn trend (ngoại lệ L-090), giữ thanh tiêu đề (ngoại lệ L-050), ~90s OK"
 updated: 2026-11-25
 tags: [script, clip-05, dark, week-1, howtolivebetter-23.14, ban-chat]
 version: v21
@@ -35,7 +36,7 @@ format: "khung video phân tích «bản chất» (physical hook + Thứ nhất/
 | b07b | 24–31 | Hiệp | Nhóm đo sau năm phút, \| đoạn đọc lại nhớ **nhiều hơn**. \| Nhưng nhóm đo sau một tuần \| thì **lật ngược**. | Đồng hồ cát nhỏ, cột «sách mở» cao hơn → lịch lật một xấp, hai cột đổi chỗ «bụp» · *Tested after 5 minutes: \| rereading wins. \| Tested after a week: \| it flips.* |
 | b07c | 31–37 | Hiệp | Tự viết còn nhớ **56 phần trăm** ý, \| đọc lại chỉ **42**. \| Nhưng năm mấy chục cũng đâu phải nhớ hết. | Hai cột, phía trên chừa khoảng trống lớn · *Recall: 56% of ideas. \| Reread: 42%. \| Still not everything.* |
 | b08 Thông điệp | 37–41 | Hiệp | Vậy hóa ra, \| thứ đáng tập \| là **tự nhớ khi sách đóng**. | Hiệp úp sách xuống bàn, gật chắc nịch · *So the skill to train: \| recalling with the book closed.* |
-| b09 Thứ nhất | 41–48 | Hiệp | **Thứ nhất**, đọc xong một chương \| là gấp sách lại, \| nhìn tiêu đề rồi **tự viết ra** những gì nhớ. | Lùi khung lộ bảng, ô ① sách úp; tờ giấy chỉ có vạch tiêu đề, bút chạy · *First: finish a chapter, \| close the book, \| write what you remember from the title.* |
+| b09 Thứ nhất | 41–48 | Hiệp | **Thứ nhất** thì clip trước nói rồi đó: \| đọc xong một chương là gấp sách lại, \| nhìn tiêu đề rồi **tự viết ra** những gì nhớ. | Lùi khung lộ bảng, ô ① sách úp; tờ giấy chỉ có vạch tiêu đề, bút chạy · *First, like last video: \| finish a chapter, close the book, \| write what you remember from the title.* |
 | b09b | 48–51 | Hiệp | Như mình nè, \| nhớ được bao nhiêu \| thì viết bấy nhiêu. | Hiệp viết, tay che cuốn sách úp · *Like me: \| write whatever you can recall.* |
 | b09c Thứ hai | 51–58 | Hiệp | **Thứ hai**, viết xong rồi \| mới mở sách ra **chấm**, \| sai chỗ nào sửa chỗ đó. | Bung hai tay, ô ② bút đỏ; sách mở cạnh tờ giấy, bút đỏ khoanh · *Second: only after writing, \| open the book and check. \| Fix what's wrong.* |
 | b09d Miếng hài | 58–64 | Hiệp | Tự chấm thì yên tâm, \| hông ai **ghi sổ đầu bài** đâu. \| Bước chấm này cẩm nang gợi ý thêm, \| chứ thí nghiệm kia hông có làm. | Hiệp cười gian, cuốn sổ đầu bài đóng sập · *Self-grading: no one's writing you up. \| This step is from the handbook, \| not the study.* |
@@ -54,7 +55,7 @@ format: "khung video phân tích «bản chất» (physical hook + Thứ nhất/
 6. **[b07b]** Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn. Nhưng nhóm đo sau một tuần thì lật ngược.
 7. **[b07c]** Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42. Nhưng năm mấy chục cũng đâu phải nhớ hết.
 8. **[b08]** Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.
-9. **[b09]** Thứ nhất, đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.
+9. **[b09]** Thứ nhất thì clip trước nói rồi đó: đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.
 10. **[b09b]** Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.
 11. **[b09c]** Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.
 12. **[b09d]** Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu. Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.
@@ -103,9 +104,11 @@ Nội dung chuyển thể từ «Cẩm nang sống đáng giá» (HowToLiveBette
 1. «Đọc xong cuốn sách, gấp lại cái là quên sạch. Bản chất là sao?»
 2. «Đọc lại sách lần hai, thật ra hông giúp nhớ lâu bằng cái này đâu.»
 
-## [CẦN HIỆP XÁC NHẬN]
-1. Trùng chủ đề clip-04 (cũng HTB 23.14); theme-map gốc xếp clip-05 = 23.15. Giữ 23.14 hay quay về 23.15?
-2. Trend chưa nói thành lời ở b01–b02 (L-090). Đề xuất chèn text hip vào b01b: «Đọc sách giờ thành gu, mà gấp lại là quên sạch trơn hà.»
-3. Thanh tiêu đề cố định ngược L-050 (không chữ trong hình) — coi như caption cố định?
-4. ~~~90s, dưới target 120–180s~~ → Hiệp OK độ dài ~90s (25/11/2026).
-5. Hook «Thì cái bản chất của cái…» trùng khuôn mở clip-02 (⚠ L-088, chỉ cảnh báo). Phương án đổi nhẹ nếu cần: «Đọc đâu nhớ đó, bản chất của nó là gì?»
+## Chốt (Hiệp 25/11/2026, DL-069)
+1. Chủ đề: giữ HTB 23.14, gọi lại clip-04 ở b09 («Thứ nhất thì clip trước nói rồi đó»), clip-05 thành phần 2 (cách chấm + đừng liếc).
+2. Trend: không chèn text hip. Ngoại lệ L-090 do Hiệp quyết cho clip này.
+3. Thanh tiêu đề cố định «ĐỌC ĐÂU NHỚ ĐÓ?»: giữ, coi là caption cố định. Ngoại lệ L-050 do Hiệp quyết cho khung «bản chất».
+4. Độ dài ~90s: OK.
+5. Hook «Thì cái bản chất của cái…» trùng khuôn mở clip-02 (⚠ L-088): giữ theo khung video mẫu.
+
+Lời đã khoá. Bước tiếp (make-video sau Chốt): spec.json → voice F5 → stills duyệt bằng mắt → render → check-rules --final → gate 2.

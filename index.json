@@ -1210,9 +1210,9 @@
   {
    "id": "clip-05.script-v21",
    "type": "script",
-   "status": "draft",
+   "status": "locked",
    "updated": "2026-11-25",
-   "path": "content/clips/clip-05-hoc-mot-dem/script-v21-draft.md",
+   "path": "content/clips/clip-05-hoc-mot-dem/script-v21-LOCKED.md",
    "title": "clip-05 v21: Đọc đâu nhớ đó = tự trả bài"
   },
   {
@@ -1547,7 +1547,7 @@
    "id": "decision-log",
    "type": "log",
    "status": "living",
-   "updated": "2026-11-08",
+   "updated": "2026-11-25",
    "path": "logs/decision-log.md",
    "title": "Nhật ký quyết định: @hi.oneup (luật 33)"
   },
@@ -3694,7 +3694,7 @@
     "script-v1-draft-opencreator.md",
     "script-v10-draft-opencreator.md",
     "script-v2-draft-opencreator.md",
-    "script-v21-draft.md",
+    "script-v21-LOCKED.md",
     "script-v3-draft-opencreator.md",
     "script-v4-LOCKED.md",
     "script-v4-draft-opencreator.md",
