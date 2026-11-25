@@ -680,7 +680,19 @@
     "type": "cut",
     "duration": 0.4
    },
-   "characters": [],
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.78,
+     "pose": "sitting",
+     "action": "thinking",
+     "expression": "confused",
+     "facing": "left",
+     "enter": "none",
+     "expressionChanges": [],
+     "actionChanges": []
+    }
+   ],
    "dialogue": [
     {
      "speaker": "hiep",
@@ -688,7 +700,7 @@
      "start": 0.15,
      "end": 4.204,
      "emotion": "focused",
-     "bubble": false,
+     "bubble": true,
      "audio": {
       "src": "voice/c05v21-b03.wav",
       "duration": 3.804,
@@ -843,9 +855,9 @@
     },
     {
      "kind": "tome",
-     "x": 540,
+     "x": 340,
      "y": 1300,
-     "s": 0.8,
+     "s": 0.75,
      "closedDy": 120,
      "keys": [
       [
@@ -1546,7 +1558,7 @@
    "sfx": [
     {
      "name": "pop",
-     "at": 3.35
+     "at": 4.3
     }
    ],
    "props": [
@@ -1579,7 +1591,10 @@
      "y": 1400,
      "a": 300,
      "b": 330,
-     "riseAt": 0.6
+     "riseAt": 0.6,
+     "a2": 336,
+     "b2": 252,
+     "flipAt": 4.15
     }
    ]
   },

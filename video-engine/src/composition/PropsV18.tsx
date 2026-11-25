@@ -216,7 +216,8 @@ const Papers: React.FC<{ p: P; t: number }> = ({ p, t }) => {
 
 /** Two score bars (quiz class = ink, taller by a moderate amount; other = soft). riseAt; badgeAt = quiz sheet with tick above. */
 const Bars: React.FC<{ p: P; t: number }> = ({ p, t }) => {
-  const a = p.a ?? 330, b = p.b ?? 270, at = p.riseAt ?? 0;
+  const fl = p.flipAt != null ? eo(lin(t, p.flipAt, 0.45)) : 0; // clip-05 b07c: bars swap heights in-scene
+  const a = (p.a ?? 330) + ((p.a2 ?? p.a ?? 330) - (p.a ?? 330)) * fl, b = (p.b ?? 270) + ((p.b2 ?? p.b ?? 270) - (p.b ?? 270)) * fl, at = p.riseAt ?? 0;
   const ka = springAt(Math.max(0, t - at), 13, 7) * (t >= at ? 1 : 0), kb = springAt(Math.max(0, t - at - 0.12), 13, 7) * (t >= at + 0.12 ? 1 : 0);
   const base = p.base ?? 0.6; const ha = a * (base + (1 - base) * ka), hb = b * (base + (1 - base) * kb);
   const bk = p.badgeAt != null ? pop(t, p.badgeAt) : 0;
