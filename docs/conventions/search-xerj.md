@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo); https://xerj.org/llms.txt"
 id: search-xerj
 type: convention
 status: active
-updated: 2026-10-28
+updated: 2026-11-26
 tags: [search, xerj, reference-coding, reuse-first]
 ---
 # Tìm kiếm bằng XERJ: repo + repo tham khảo
@@ -15,7 +15,7 @@ XERJ (https://xerj.org, binary Rust, cài ở box: `~/.local/bin/xerj`, bản `v
 
 ## Luật: tìm repo tham khảo trước khi viết code pipeline mới
 Trước khi viết code mới trong `pipeline/`, `video-engine/` hoặc script render/TTS/phụ đề:
-1. `xerj search --prefix oneup "..."`: repo mình đã có chưa (reuse-first, GUIDE.md).
+1. `xerj search --prefix work-oneup-studio "..."`: repo mình đã có chưa (reuse-first, GUIDE.md).
 2. `xerj search --prefix ref "..."` / `xerj def --prefix ref "<tên hàm>"`: các dự án gần nhất đã giải bài này thế nào.
 3. Trích `path:line` của đoạn đã đọc vào commit/PR hoặc ghi chú. Kiểm giấy phép (bảng dưới) trước khi chép: **AGPL / UNLICENSED chỉ đọc cách làm, không chép code**.
 4. Không có kết quả liên quan thì nói rõ, rồi làm bình thường. Thư viện phổ biến mà mình đã thuộc thì không cần tra.
@@ -24,11 +24,12 @@ Trước khi viết code mới trong `pipeline/`, `video-engine/` hoặc script 
 ```sh
 export PATH="$HOME/.local/bin:$PATH" XERJ_DISABLE_FEEDBACK=true
 pipeline/scripts/xerj-index.sh            # bật node nếu chưa chạy + index lại cả hai (project|ref|all)
-xerj search --prefix oneup -k 5 "f5 word timestamps prosody"     # repo này
+xerj search --prefix work-oneup-studio -k 5 "f5 word timestamps prosody"     # repo này
 xerj search --prefix ref   -k 5 "subtitle word boundary srt"      # repo tham khảo
 xerj def    --prefix ref   "create_subtitle"                      # đi tới định nghĩa
 ```
-- Node: `xerj --insecure --data-dir ~/xerj-data` (chỉ loopback 127.0.0.1:9200, không auth, chỉ dùng trên box). Data dir phải nằm **ngoài** thư mục được index.
+- **Prefix repo này: `work-oneup-studio`**, ghi ở `.xerj-prefix` (gốc repo, nguồn duy nhất). Không dùng `oneup` (trên Mac đã thuộc repo khác `/Users/macbook/work/oneup`) hay `oneup-studio` (thuộc một checkout cũ đã xoá). XERJ không cho hai thư mục chung một prefix, và không được xoá index của thư mục khác để giành prefix.
+- Node (Mac local): chạy bằng `xerj-ensure` (launchd `org.xerj.server`, data `~/xerj-data`, loopback 127.0.0.1:9200), **có auth**: `export XERJ_API_KEY="$(cat ~/xerj-data/admin.key)"` trước mọi lệnh `xerj`. Hook SessionStart `~/.claude/hooks/tools-ready.sh` tự bật node, đồng bộ index chạy nền và báo prefix cho agent ở đầu mỗi phiên. Data dir phải nằm **ngoài** thư mục được index.
 - Index lại sau khi sửa nhiều file: chạy lại script (có journal, không nhân đôi). Exit `3` = xong, có file rác bị bỏ qua = **thành công**.
 - Chế độ embed mặc định là **lexical** (BM25 + hashing), không phải neural: hãy hỏi bằng đúng từ/tên hàm trong code. (MiniLM neural chỉ tiếng Anh nên không bật.)
 - Loại trừ: `.xerjignore` ở gốc repo (secret `.env*`, khoá, media wav/mp3/mp4/png/jpg, font, `node_modules`, venv, `media/`, `.vtt`, `.log`) + `.gitignore`.

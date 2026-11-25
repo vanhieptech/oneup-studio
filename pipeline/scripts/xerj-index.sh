@@ -9,18 +9,25 @@ REPO="$(cd "$(dirname "$0")/../.." && pwd)"
 REF="${XERJ_REF_DIR:-$HOME/oneup-tools/reference-repos}"
 DATA="${XERJ_DATA_DIR:-$HOME/xerj-data}"   # must stay OUTSIDE indexed folders
 command -v xerj >/dev/null || { echo "xerj not installed: curl -fsSL https://xerj.org/get -o /tmp/get.sh && less /tmp/get.sh && sh /tmp/get.sh"; exit 1; }
-if ! curl -s -m1 http://localhost:9200 >/dev/null; then
-  mkdir -p "$DATA"; nohup xerj --insecure --data-dir "$DATA" >"$DATA.log" 2>&1 &
+PREFIX="$(head -n1 "$REPO/.xerj-prefix" 2>/dev/null | tr -d '[:space:]')"
+PREFIX="${PREFIX:-work-oneup-studio}"
+[[ -z "${XERJ_API_KEY:-}" && -f "$DATA/admin.key" ]] && export XERJ_API_KEY="$(<"$DATA/admin.key")"
+if command -v xerj-ensure >/dev/null; then
+  xerj-ensure --no-sync --quiet "$REPO" >/dev/null   # starts the node (launchd) if needed
+  [[ -z "${XERJ_API_KEY:-}" && -f "$DATA/admin.key" ]] && export XERJ_API_KEY="$(<"$DATA/admin.key")"
+elif ! curl -s -m1 http://localhost:9200 >/dev/null; then
+  mkdir -p "$DATA"; nohup xerj --data-dir "$DATA" >"$DATA.log" 2>&1 &
   for _ in $(seq 1 30); do curl -s -m1 http://localhost:9200 >/dev/null && break; sleep 1; done
+  [[ -f "$DATA/admin.key" ]] && export XERJ_API_KEY="$(<"$DATA/admin.key")"
 fi
 what="${1:-all}"
 rc=0
 if [[ $what == project || $what == all ]]; then
-  xerj autoindex "$REPO" --prefix oneup --state-dir "$HOME/.xerj/state-oneup" --progress plain || rc=$?
+  xerj autoindex "$REPO" --prefix "$PREFIX" --progress plain || rc=$?   # same journal as xerj-ensure
   [[ $rc == 0 || $rc == 3 ]] || exit $rc   # exit 3 = completed-with-junk = OK
 fi
 if [[ $what == ref || $what == all ]] && [[ -d $REF ]]; then
   rc=0; xerj autoindex "$REF" --prefix ref --state-dir "$HOME/.xerj/state-ref" --progress plain || rc=$?
   [[ $rc == 0 || $rc == 3 ]] || exit $rc
 fi
-echo "done. search: xerj search --prefix oneup \"...\"  |  xerj search --prefix ref \"...\""
+echo "done. search: xerj search --prefix $PREFIX \"...\"  |  xerj search --prefix ref \"...\""
