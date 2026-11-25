@@ -1,77 +1,142 @@
 ---
-title: "clip-05 «Học dồn một đêm» — script final (render v4)"
-date: 2026-10-22
-type: script
+title: "clip-05 script final v21: Đọc đâu nhớ đó = tự trả bài (HTB 23.14)"
+date: 2026-11-25
 id: clip-05.script-final
-version: script-v4-LOCKED (lời) · render v4
-status: final render — lời khoá không đổi chữ nào (Hiệp «Chốt» 21/10/2026 23:01 trên 8ec205e; bản khoá 91848a3)
-source: "handbook"
-source_detail: "HowToLiveBetter 23.15 (mức A) + ghi chú 23.15 bước 2–3 + mục 23.14 (gọi lại clip-04)"
-trend_source: "final/trend-signals.md — @ng__phanh (TikTok 7532553338664045831), chỉ dùng ở hình + chữ trên màn hình b01a (L-084)"
-voice: "final/voice-only-c05v4.wav — F5 Thái Sơn speed 1.0, Rule Reviewer đạt 5b12e22 + sửa c18 /s/ rev5 764c16d (review-voice-c05v4.md 671070b)"
-visual: "final/visual-plan-v4.md (FLUX, b03 sửa 97a50af)"
-theme: DARK
-tags: [clip-05, script, spacing, rereading, howtolivebetter-23.15, monologue, dark, final]
+type: script
+status: gate1-approved
+gate1: "Hiệp «Duyệt» 25/11/2026 (lời + bảng hiệu ứng)"
+locked: "Hiệp «Chốt» 25/11/2026 (DL-069): giữ 23.14 + gọi lại clip-04, không chèn trend (ngoại lệ L-090), giữ thanh tiêu đề (ngoại lệ L-050), ~90s OK"
+updated: 2026-11-25
+tags: [script, clip-05, dark, week-1, howtolivebetter-23.14, ban-chat]
+version: v21
+supersedes: archive/v4-final/script-final.md
+spec: final/spec.json (nguồn chuẩn; lời = script-v21-LOCKED.md)
+template: templates/script.md (biến thể Độc thoại «bản chất», L-039)
+source: "HTB 23.14 (F5, fact-package-v5) · Roediger & Karpicke 2006 Exp1 (lock r15.2: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md)"
+fact_lock: research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md
+format: "khung video phân tích «bản chất» (physical hook + Thứ nhất/Thứ hai/Và cuối cùng + demo nhập vai) + CTA hỏi chia sẻ"
 ---
 
-# clip-05 «Học dồn một đêm» — script final
+# clip-05 v21: Đọc đâu nhớ đó = tự trả bài
 
-Lời thoại là **nguyên văn** `../script-v4-LOCKED.md` (không đổi chữ nào, L-072). Chỉ **Thầy** nói (L-039), chibi Hiệp chỉ diễn. Khung dọc 9:16, 1080×1920, theme DARK (khung mực, cảnh giấy).
-Ký hiệu: `\|` tách phrase · `{nhấn: …}` chữ nhấn (đã đo trong `prosody-measure-c05v4.md`).
-
-## Fact lock
-
-- **Cepeda et al. 2006**, Psychol Bull 132(3):354–80, PMID 16719566: «839 assessments of distributed practice in 317 experiments located in 184 articles». Lời chỉ nói «gom 317 thí nghiệm lại… muốn nhớ càng lâu thì khoảng cách giữa các lần ôn càng phải dài». KHÔNG gọi là «một nghiên cứu», KHÔNG nói «đều thống nhất».
-- **Rawson & Kintsch 2005**, J Educ Psychol 97(1):70–80: 423 sinh viên đọc một bài một lần / hai lần liền / hai lần cách 1 tuần. Kiểm tra ngay: hai lần liền > một lần. Sau 2 ngày: hai lần liền không còn hơn một lần; giãn 1 tuần vẫn hơn. Hình b03: **mỗi cột chỉ so với cột xám «Đọc 1 lần»** (FLUX 97a50af). Không số trên cột, không so cam với cột thứ ba.
-- **Ví dụ «3 tiếng chia 3 ngày, mỗi ngày 1 tiếng»**: có trong cẩm nang 23.15 (dòng Chi phí).
-- **Bước 2 (gấp sách tự kiểm mỗi buổi)**: ghi chú 23.15 «rải chính các lần tự kiểm tra ra nhiều ngày» + mục 23.14 (clip-04). Nguồn end card: Yang et al. 2021, Dunlosky et al. 2013.
-- **Minh hoạ, không phải dữ kiện**: chương Di truyền, dạng lai hai cặp tính trạng, ô Punnett 4×4 (b02/b07) là ví dụ ngôi «mình».
-- Không nói: «học dồn vô dụng», % quên, số ngày giãn cụ thể, số share trong lời (55,3K chỉ ở hình b01a, số chụp 20/10).
-- End card nguyên văn: «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · «Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/» · Nguồn: Rawson & Kintsch 2005 · Cepeda et al. 2006 · Yang et al. 2021 · Dunlosky et al. 2013 · Trend: @ng__phanh · TikTok.
+- **Thông điệp (nói thành lời ở b08):** thứ đáng tập là tự nhớ khi sách đóng.
+- **Vì sao đọc lại không đọng:** chữ nằm sẵn trên trang, không bắt mình tự nhớ ra; quen ≠ kể lại được.
+- **Cách làm:** (1) gấp sách, nhìn tiêu đề, tự viết ra · (2) viết xong mới mở ra chấm, sửa chỗ sai · (3) đang viết không liếc sách.
+- **ƯỚC thời lượng:** ~84s lời + ~3s chuyển cảnh + 3s end card ≈ **90s** (target 120–180s chỉ cảnh báo, strict <300s; L-099).
+- **Giọng:** chỉ Hiệp (F5 · Thái Sơn). Đoạn nhại cô giáo / học trò do Hiệp đổi giọng. Tuần 1, không Omi.
+- **Ký hiệu:** `|` tách phrase · **đậm** = nhấn · *“nghiêng trong ngoặc”* = giọng nhại.
 
 ## Kịch bản
 
-| Beat | Giây | Người nói | Lời thoại | Hình / caption EN |
+| Beat | Giây (ƯỚC) | Người nói | Lời thoại | Hình / caption EN |
 |---|---|---|---|---|
-| b01 | 0–4,8 | Thầy | Bạn học dồn {nhấn: một đêm} \| cho cả kỳ, sáng ra vẫn làm được đề. \| Một tuần sau, bạn còn nhớ {nhấn: bao nhiêu}? | b01a khung TikTok dựng bằng vật (giáo trình mới, đèn, trăng, đồng hồ gần 3h, share đếm lên 55,3K, «Học 1 đêm mới hiểu sao…», «@ng__phanh · TikTok») → b01b sáng, đặt bút, tờ đề có tích → b01c lịch xé 7 tờ, nghiêng đầu · EN: You crammed overnight / for the whole semester, / Still passed that morning / A week later, how much is left? |
-| b02 | 4,8–11,9 | Thầy | Ví dụ mình ôn chương Di truyền {nhấn: ba tiếng liền} trước hôm thi giữa kỳ. \| Tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, mình {nhấn: không nhớ} cách giải. | Đồng hồ cát lớn chảy liền cạnh sách Sinh (DNA) → phòng thi, ô Punnett 4×4 trống, bút khựng, «?» · EN: Three straight hours of genetics before midterm / Finals: same problem type, I'm stuck |
-| b03 | 11,9–24,2 | Thầy | Một nghiên cứu cho sinh viên đọc một bài hai lần liền. \| Khi kiểm tra ngay, họ có điểm cao hơn người chỉ đọc một lần, \| nhưng hai ngày sau họ {nhấn: không còn hơn} nữa. \| Còn ai đọc lần hai {nhấn: cách một tuần} thì hai ngày sau vẫn hơn người đọc một lần. | 3 nhóm (xám 1 lần · cam 2 lần liền · mực lần 2 cách 1 tuần); vạch xám tham chiếu; kiểm tra ngay cam > xám; +2 ngày cam = xám, mực nhỉnh hơn xám một chút (216 so với 210; RR final F2). «Rawson & Kintsch 2005» · EN: One study: students read a text twice / Back to back: beat one read, instantly / Two days later: no longer ahead / Second read a week later / Two days later: still ahead |
-| b04 | 24,2–26,9 | Thầy | Mình cần là tới cuối kỳ mình {nhấn: vẫn nhớ} chương đó. | Dây nối đề giữa kỳ → đề cuối kỳ, sách Sinh sáng ở đầu cuối kỳ · EN: I need it to stay till finals |
-| b05 | 26,9–36,6 | Thầy | Nên cùng ba tiếng đó, mình làm thế này. \| Một. Mình chia ra {nhấn: ba ngày}, mỗi ngày một tiếng, theo đúng ví dụ trong cẩm nang. \| Hai. Mỗi buổi, mình gấp sách {nhấn: tự kiểm} như clip trước. | Kéo đồng hồ cát ra giữa → «1» đồng hồ cát vỡ thành 3 cái nhỏ trên 3 tờ lịch (trăng) → chibi học 1 tiếng theo đồng hồ cát nhỏ, gập sách → «2» gập sách, viết từ trí nhớ, mở sách, khoanh đỏ một dòng (gọi lại clip-04) · EN: Same three hours, here's how / One: split into three days / One hour a day, as the guide says / Two: each session, self-test like last clip |
-| b06 | 36,6–43,5 | Thầy | Khi gom 317 thí nghiệm lại, \| các nhà nghiên cứu thấy người học muốn nhớ càng lâu \| thì khoảng cách giữa các lần ôn {nhấn: càng phải dài}. | Giấy nghiên cứu rơi thành chồng (không đếm) → dải lịch dài, kéo cờ «nhớ tới» xa dần, chấm ôn #FF5A36 giãn theo. «Cepeda et al. 2006» · EN: Pooling 317 experiments, researchers found / Longer memory needs / wider gaps between reviews |
-| b07 | 43,5–49,4 | Thầy | Khi mình làm đủ hai bước đó, \| tới cuối kỳ gặp lại dạng lai hai cặp tính trạng, \| mình {nhấn: dễ nhớ ra} cách giải hơn. | Tua nhanh 3 ngày, mỗi ngày đồng hồ cát nhỏ + sách gập + vòng đỏ → đúng khung b02 (cùng góc, cùng ô Punnett), bút chạy, ô được điền, tích nhỏ, gật đầu (không giữ thêm, RR final F3) · EN: Both steps, done together / Finals: same problem type again / Easier to recall the method |
-| b08 | 49,4–53,0 | Thầy | Còn bạn, môn sắp thi còn cách {nhấn: mấy hôm}? \| Comment {nhấn: số hôm} nha. | Giơ tờ lịch không số về phía người xem, bong bóng comment bật, tay chỉ xuống · EN: How many days until your exam? / Comment the number |
-| end | 53,0–55,0 | — | (không thoại) | End card tĩnh: câu an toàn + 4 nguồn + trend + credit CC BY 4.0 nguyên văn |
+| b01 Hook | 0–3 | Hiệp | Thì cái **bản chất** \| của cái việc **đọc đâu nhớ đó** \| là như thế nào? | SFX vỗ tay frame 0, chibi Hiệp lao sát camera, zoom cận ở «đọc đâu nhớ đó». Thanh tiêu đề cố định (chờ duyệt L-050) · *So what's the real trick \| to remembering what you read?* |
+| b01b Hook (cut) | 3–6 | Hiệp | Chứ đọc xong gấp sách lại, \| là **quên sạch** trơn hà. | Cut cứng: sách đóng «bộp», bong bóng ý trống trơn · *Close the book, \| and it's all gone.* |
+| b02 Vấn đề | 6–12 | Hiệp | Đọc lại thì thấy **quen quen**, \| kiểu *“Ừ… cái này biết rồi…”*, \| mà ai hỏi là hông kể nổi. | Zoom cận Hiệp lim dim gật gù trên trang sách → bạn chibi ló vào hỏi, Hiệp đơ · *Rereading feels familiar, \| "yeah, I know this…" \| but you can't explain it.* |
+| b03 Vì sao | 12–17 | Hiệp | Vì đọc lại thì chữ \| **nằm sẵn trên trang**, \| đâu có bắt mình tự nhớ ra. | Ngón tay dò dòng chữ có sẵn → trang đóng, ngón tay khựng · *When you reread, the words are right there. \| Nothing makes you recall.* |
+| b07 Bằng chứng | 17–24 | Hiệp | Mà chuyện này có thí nghiệm hẳn hoi, \| năm 2006 với **120 sinh viên** nè. \| Mỗi sinh viên đọc lại một đoạn, \| đoạn kia thì gấp lại, \| chỉ nhìn tiêu đề rồi tự viết ra. | MG: hàng sinh viên chibi, mỗi người hai tờ, một mở một úp · *A 2006 study, 120 students. \| Reread one passage, \| close the other, \| recall it from the title.* |
+| b07b | 24–31 | Hiệp | Nhóm đo sau năm phút, \| đoạn đọc lại nhớ **nhiều hơn**. \| Nhưng nhóm đo sau một tuần \| thì **lật ngược**. | Đồng hồ cát nhỏ, cột «sách mở» cao hơn → lịch lật một xấp, hai cột đổi chỗ «bụp» · *Tested after 5 minutes: \| rereading wins. \| Tested after a week: \| it flips.* |
+| b07c | 31–37 | Hiệp | Tự viết còn nhớ **56 phần trăm** ý, \| đọc lại chỉ **42**. \| Nhưng năm mấy chục cũng đâu phải nhớ hết. | Hai cột, phía trên chừa khoảng trống lớn · *Recall: 56% of ideas. \| Reread: 42%. \| Still not everything.* |
+| b08 Thông điệp | 37–41 | Hiệp | Vậy hóa ra, \| thứ đáng tập \| là **tự nhớ khi sách đóng**. | Hiệp úp sách xuống bàn, gật chắc nịch · *So the skill to train: \| recalling with the book closed.* |
+| b09 Thứ nhất | 41–48 | Hiệp | **Thứ nhất** thì clip trước nói rồi đó. \| Đọc xong một chương là gấp sách lại, \| nhìn tiêu đề rồi **tự viết ra** những gì nhớ. | Lùi khung lộ bảng, ô ① sách úp; tờ giấy chỉ có vạch tiêu đề, bút chạy · *First, like last video: \| finish a chapter, close the book, \| write what you remember from the title.* |
+| b09b | 48–51 | Hiệp | Như mình nè, \| nhớ được bao nhiêu \| thì viết bấy nhiêu. | Hiệp viết, tay che cuốn sách úp · *Like me: \| write whatever you can recall.* |
+| b09c Thứ hai | 51–58 | Hiệp | **Thứ hai**, viết xong rồi \| mới mở sách ra **chấm**, \| sai chỗ nào sửa chỗ đó. | Bung hai tay, ô ② bút đỏ; sách mở cạnh tờ giấy, bút đỏ khoanh · *Second: only after writing, \| open the book and check. \| Fix what's wrong.* |
+| b09d Miếng hài | 58–64 | Hiệp | Tự chấm thì yên tâm, \| hông ai **ghi sổ đầu bài** đâu. \| Bước chấm này cẩm nang gợi ý thêm, \| chứ thí nghiệm kia hông có làm. | Hiệp cười gian, cuốn sổ đầu bài đóng sập · *Self-grading: no one's writing you up. \| This step is from the handbook, \| not the study.* |
+| b09e Và cuối cùng | 64–70 | Hiệp | **Và cuối cùng**, \| chưa chấm thì **đừng liếc** sách, \| liếc cái là thành đọc lại. | Giơ 3 ngón, ô ③; Hiệp liếc trộm → thước gõ tay «chát» · *And finally: \| no peeking while writing. \| One peek and you're rereading.* |
+| b09f Demo | 70–76 | Hiệp (nhại cô → trò) | *“Em kia, **gấp sách lại** \| rồi nhớ gì thì viết hết ra coi! \| Xong rồi mở sách ra, tự chấm đi!”* \| *“Dạ… em sai **chút xíu** thôi cô, \| mà chỗ sai em sửa hết rồi…”* | Hard cut sang nhập vai: kính to, thước gõ «cộp» theo lệnh → đổi vai học trò gãi đầu · *"You! Close the book \| and write what you remember! \| Then open it, grade yourself!" \| "Just a few mistakes, \| all fixed…"* |
+| b10 CTA | 76–84 | Hiệp | **Đọc đâu nhớ đó** \| là tự trả bài vậy đó. \| Mà chắc nhiều bạn có cách hay hơn mình nữa, \| bạn hay làm gì để nhớ lâu, \| **comment cho mình biết với nha**. | Quay lại khung hook: Hiệp cầm sách úp, nghiêng đầu, tay khum sau tai lắng nghe · *Remembering = quizzing yourself. \| You probably have better tricks than me. \| What helps you remember? \| Let me know in the comments.* |
+| End card | 84–87 | (tĩnh) | — | «Thông tin tham khảo, không thay thế tư vấn chuyên gia» · Nội dung dựa trên «Cẩm nang sống đáng giá» – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/ · Nguồn: Roediger & Karpicke 2006 |
+
+## Lời đọc (checker input)
+
+1. **[b01]** Thì cái bản chất của cái việc đọc đâu nhớ đó là như thế nào?
+2. **[b01b]** Chứ đọc xong gấp sách lại, là quên sạch trơn hà.
+3. **[b02]** Đọc lại thì thấy quen quen, kiểu “Ừ… cái này biết rồi…”, mà ai hỏi là hông kể nổi.
+4. **[b03]** Vì đọc lại thì chữ nằm sẵn trên trang, đâu có bắt mình tự nhớ ra.
+5. **[b07]** Mà chuyện này có thí nghiệm hẳn hoi, năm 2006 với 120 sinh viên nè. Mỗi sinh viên đọc lại một đoạn, đoạn kia thì gấp lại, chỉ nhìn tiêu đề rồi tự viết ra.
+6. **[b07b]** Nhóm đo sau năm phút, đoạn đọc lại nhớ nhiều hơn. Nhưng nhóm đo sau một tuần thì lật ngược.
+7. **[b07c]** Tự viết còn nhớ 56 phần trăm ý, đọc lại chỉ 42. Nhưng năm mấy chục cũng đâu phải nhớ hết.
+8. **[b08]** Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.
+9. **[b09]** Thứ nhất thì clip trước nói rồi đó. Đọc xong một chương là gấp sách lại, nhìn tiêu đề rồi tự viết ra những gì nhớ.
+10. **[b09b]** Như mình nè, nhớ được bao nhiêu thì viết bấy nhiêu.
+11. **[b09c]** Thứ hai, viết xong rồi mới mở sách ra chấm, sai chỗ nào sửa chỗ đó.
+12. **[b09d]** Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu. Bước chấm này cẩm nang gợi ý thêm, chứ thí nghiệm kia hông có làm.
+13. **[b09e]** Và cuối cùng, chưa chấm thì đừng liếc sách, liếc cái là thành đọc lại.
+14. **[b09f]** “Em kia, gấp sách lại rồi nhớ gì thì viết hết ra coi! Xong rồi mở sách ra, tự chấm đi!” “Dạ… em sai chút xíu thôi cô, mà chỗ sai em sửa hết rồi…”
+15. **[CTA]** Đọc đâu nhớ đó là tự trả bài vậy đó. Mà chắc nhiều bạn có cách hay hơn mình nữa, bạn hay làm gì để nhớ lâu, comment cho mình biết với nha.
+
+## Sources
+Roediger & Karpicke (2006). https://doi.org/10.1111/j.1467-9280.2006.01693.x · Cẩm nang sống đáng giá 23.14 (CC BY 4.0) https://chuanman2707.github.io/HowToLiveBetter/
+
+## Thay đổi so với bản trước (r15.2)
+| Mục | r15.2 | v21 |
+|---|---|---|
+| Khung | giải thích dài, ~181–205s | khung «bản chất»: physical hook → vấn đề → bằng chứng → Thứ nhất / Thứ hai / Và cuối cùng → demo nhập vai → CTA |
+| Hook | mở bằng số liệu thí nghiệm | câu hỏi «bản chất» + vế nỗi đau «quên sạch trơn» (L-043, L-101) |
+| Bằng chứng | đủ 3 mốc + nhiều câu giới hạn | mốc 5 phút + 1 tuần (nhóm khác nhau), 56/42, giới hạn «đâu phải nhớ hết» |
+| Bước chấm | nói là của cẩm nang | giữ, nói thành lời ở b09d |
+| CTA | «để lại một từ về chủ đề muốn nhớ» | câu hỏi chia sẻ, giọng lắng nghe (Hiệp chọn B 25/11) |
 
 ## Bảng hiệu ứng (rule-52, duyệt ở gate 1 trước khi render)
 Transition SFX mặc định: chuyển phần = `whoosh-soft`, chuyển scene/section = `swish`; lớp nền `ambience` suốt clip (rule-50).
 
 | Beat | Engine | Hiệu ứng / ẩn dụ hình ảnh | Gắn với chữ | SFX nhấn → chữ | Chuyển cảnh vào (+SFX) |
 |---|---|---|---|---|---|
-| b01a | remotion | mmx-cut-on-motion: TikTok-style vertical feed rebuilt from objects (brand-new textbook pile, desk lamp, moon, clock near 3), share button pulses and counts up to 55,3K | “một đêm” | `pop` → “một đêm” | mở đầu |
-| b01b | remotion | mmx-cut-on-motion: morning sun, pen set down beside the exam sheet, tick pops, relieved exhale | “làm được đề” | `snap` → “làm” | cut (`swish`) |
-| b01c | remotion | mmx-stagger: number-less tear-off calendar sheds 7 pages fast, a blank page left; head tilt | “một tuần sau” | `swish` → “tuần” | cut (`swish`) |
-| b02a | remotion | mmx-cruise: night, one big hourglass pours non-stop beside the open genetics book (DNA sticker); pages flip fast | “ba tiếng liền” | `swish` → “ôn”; `tick` → “liền” | cut (`swish`) |
-| b02b | remotion | mmx-snap-settle: finals room, empty 4x4 Punnett grid, pen frozen mid-air, small '?' pops | “không nhớ” | `tick` → “không” | cut (`swish`) |
-| b03a | remotion | mmx-stagger: the one text page they all read sits on top; three faceless groups with their books: grey reads once, orange reads twice back-to-back, ink reads again a week later (7 sheets between books) | “hai lần liền” | `pop` → “hai” | cut (`swish`) |
-| b03b | remotion | mmx-snap-settle: desk lamp = tested right away; grey bar rises, dashed grey reference line; orange bar rises above it | “cao hơn” | `rise` → “cao” | cut (`swish`) |
-| b03c | remotion | mmx-snap-settle: window sun rises twice (+2 ngày), orange bar sinks onto the grey reference line | “hai ngày sau” | `tick` → “sau”; `snap` → “không” | cut (`swish`) |
-| b03d | remotion | mmx-push-in: spotlight moves to the ink group, its two books separated by seven calendar sheets | “cách một tuần” | `swish` → “tuần” | cut (`swish`) |
-| b03e | remotion | mmx-snap-settle: at +2 days the ink bar rises above the grey reference line (no numbers, orange stays level with grey) | “vẫn hơn” | `rise` → “hơn” | cut (`swish`) |
-| b04 | remotion | mmx-draw-on: a string runs from the midterm sheet to the finals sheet; the genetics book glows at the finals end | “vẫn nhớ” | `rise` → “vẫn” | cut (`swish`) |
-| b05a | remotion | mmx-cut-on-motion: the same big hourglass is pulled to centre, refilled | “ba tiếng” | `swish` → “ba” | cut (`swish`) |
-| b05b | remotion | mmx-stagger: big «1»; the big hourglass breaks into three small ones that land on three calendar pages, one moon each | “ba ngày” | `snap` → “chia”; `pop` → “ba” | cut (`swish`) |
-| b05c | remotion | mmx-cruise: one small hourglass runs out during one study hour, then the book snaps shut | “một tiếng” | `snap` → “cẩm” | cut (`swish`) |
-| b05d | remotion | mmx-snap: big «2»; quick clip-04 callback: book shut, pen writes from memory, book opens, red ring circles one row | “tự kiểm” | `snap` → “gấp”; `pen` → “tự”; `tick` → “clip” | cut (`swish`) |
-| b06a | remotion | mmx-stagger: research papers drop one by one into a tall pile (many experiments, not counted) | “317 thí nghiệm” | `ding` → “thí” | cut (`swish`) |
-| b06b | remotion | mmx-drag: a long number-less calendar strip; the hand drags the 'remember until' flag far right; the accent review dots spread with it | “nhớ càng lâu” | `swish` → “nhớ” | cut (`swish`) |
-| b06c | remotion | mmx-push-in: close on the strip, gaps between the accent dots stay wide (longer memory = wider gaps) | “càng phải dài” | `tick` → “dài” | cut (`swish`) |
-| b07a | remotion | mmx-stagger fast-forward: three days flip in, each with a small hourglass, the closed book and a red ring | “hai bước” | `pop` → “làm”; `pop` → “bước” | cut (`swish`) |
-| b07b | remotion | mmx-match-cut: the exact b02 finals frame (same angle, same empty Punnett grid), pen moves in this time | “dạng lai” | `swish` → “lai” | cut (`swish`) |
-| b07c | remotion | mmx-soft-land: same angle, the Punnett grid fills with coloured dots cell by cell, small tick, light nod | “dễ nhớ ra” | `pen` → “nhớ”; `ding` → “hơn” | cut (`swish`) |
-| b08 | remotion | mmx-soft-land: lifts a number-less calendar page toward the viewer, comment bubble pops, hand points down | “mấy hôm” | `swish` → “môn”; `tick` → “số” | cut (`swish`) |
+| b01 | remotion | mmx-crash-in: tiếng vỗ tay frame 0, Hiệp lao sát camera ở «bản chất» | “bản chất” | `stamp` → “bản chất” | mở đầu |
+| b01a | remotion | mmx-cut-on-motion: cắt cận hơn, Hiệp nghiêng đầu nhướn mày, cuốn sách mở bật vào khung | “đọc đâu nhớ đó” | `pop` → “đọc đâu nhớ đó” | cut (`swish`) |
+| b01b | remotion | mmx-cut-on-motion: cuốn sách đóng «bộp», bong bóng ý trống trơn bên đầu Hiệp | “quên sạch” | `snap` → “gấp sách” | cut (`swish`) |
+| b02 | remotion | Hiệp lim dim gật gù trên trang sách mở, rồi bạn chibi ló vào hỏi, Hiệp đơ | “quen quen” | `pop` → “ai hỏi” | cut (`swish`) |
+| b03 | remotion | Trang sách mở to, ngón tay dò theo dòng có sẵn; trang đóng lại thì tay khựng | “nằm sẵn trên trang” | `tick` → “nằm sẵn” | cut (`swish`) |
+| b07a | remotion | hf-motion-graphic: hàng sinh viên chibi, mỗi người hai tờ giấy, một mở một úp; tag nguồn | “2006” | `ding` → “2006” | cut (`swish`) |
+| b07b | remotion | hf-motion-graphic: một tờ để mở (đọc lại), tờ kia lật úp, tay viết theo vạch tiêu đề, không tờ đáp án | “gấp lại” | `pen` → “tự viết” | cut (`swish`) |
+| b07c | remotion | Đồng hồ cát nhỏ chảy xong, cột «sách mở» cao hơn; rồi lịch xé một xấp, hai cột đổi chỗ «bụp» | “lật ngược” | `pop` → “lật ngược” | cut (`swish`) |
+| b07d | remotion | Hai cột 56 / 42 (cột tự viết cao hơn), phía trên chừa khoảng trống lớn tới vạch 100 | “56 phần trăm” | `rise` → “56” | cut (`swish`) |
+| b08 | remotion | Hiệp úp sách xuống bàn «bộp», gật chắc nịch | “tự nhớ khi sách đóng” | `stamp` → “sách đóng” | cut (`swish`) |
+| b09 | remotion | tdev-badge: ô ① sách úp hiện trên bảng; tờ giấy chỉ có vạch tiêu đề, bút chạy theo dòng | “tự viết ra” | `pen` → “tự viết” | cut (`swish`) |
+| b09b | remotion | Hiệp viết, tay kia che lên cuốn sách đang úp | “viết bấy nhiêu” | `tick` → “bấy nhiêu” | cut (`swish`) |
+| b09c | remotion | Bung hai tay, ô ② bút đỏ; sách mở cạnh tờ giấy, chỗ sai được đánh dấu accent | “chấm” | `snap` → “Thứ hai”; `pen` → “chấm” | cut (`swish`) |
+| b09d | remotion | Hiệp cười gian, cuốn sổ (tome) đóng sập trước mặt | “sổ đầu bài” | `stamp` → “sổ đầu bài” | cut (`swish`) |
+| b09e | remotion | Tag nhỏ «Cẩm nang 23.14» cạnh cuốn sách mở; Hiệp nghiêm lại | “cẩm nang” | `tick` → “cẩm nang” | cut (`swish`) |
+| b09f | remotion | Giơ 3 ngón, ô ③; Hiệp liếc trộm sách thì vignette giật nhẹ (tdev-shake) như bị thước gõ | “đừng liếc” | `click` → “liếc” | tdev-shake (`swish`) |
+| b10a | remotion | Hard cut nhập vai cô giáo: vignette, Hiệp đứng chỉ tay, mỗi lệnh một tiếng gõ | “gấp sách lại” | `click` → “Em kia”; `click` → “mở sách” | mmx-whip (`swish`) |
+| b10b | remotion | Đổi vai học trò: Hiệp gãi đầu cười trừ, đứng thấp xuống | “chút xíu” | `pop` → “chút xíu” | cut (`swish`) |
+| b11a | remotion | Quay lại khung hook: Hiệp cầm sách úp chìa về camera | “trả bài” | `ding` → “trả bài” | cut (`swish`) |
+| b11b | remotion | Hiệp nghiêng đầu, tay khum sau tai như đang lắng nghe | “comment” | `pop` → “comment” | cut (`swish`) |
 
-## Hook dự phòng (L-043)
+## Fact lock
+- **RK2006 Exp1:** 120 sinh viên, hai đoạn ngắn; mỗi người đọc lại một đoạn, tự viết đoạn kia với tiêu đề gợi nhắc, không đoạn văn, không phản hồi; mốc 5 phút / 2 ngày / 1 tuần ở nhóm khác nhau; 5 phút đọc lại cao hơn, 2 ngày tự viết cao hơn, 1 tuần 56% / 42% ý nhớ đúng (idea units).
+- **Cẩm nang 23.14 (F5):** gấp tài liệu, tự nhớ lại, mở ra xem chỗ sai. Bước chấm thuộc cẩm nang (nói ở b09d).
+- **Cấm:** «đọc lại vô ích», «tự viết luôn hơn», cơ chế não, hứa người xem đạt 56%, gán bước chấm cho thí nghiệm, số trang / số ý / số lỗi của nhân vật, tên môn học (L-087).
 
-- Chữ hook trên màn hình (b01a, frame 0): «HỌC DỒN 1 ĐÊM? 1 TUẦN SAU CÒN GÌ?». Cắt cảnh ở 1,57s và 2,93s.
-- Hook dự phòng: xem `spec.json → hook_alt` (chưa dùng).
+## Cover (≤40 ký tự)
+```
+ĐỌC ĐÂU QUÊN ĐÓ → TỰ TRẢ BÀI
+```
+
+## Caption + hashtag
+```
+Đọc xong gấp sách lại là quên sạch? Thử tự "trả bài" cho mình 👇
+1. Đọc xong một chương, gấp sách, nhìn tiêu đề rồi tự viết ra những gì nhớ.
+2. Viết xong mới mở sách ra chấm, sai đâu sửa đó (bước này là gợi ý của cẩm nang).
+3. Đang viết thì đừng liếc sách.
+Thí nghiệm Roediger & Karpicke 2006 với 120 sinh viên: đo sau 5 phút thì đọc lại nhớ nhiều hơn, nhưng đo sau một tuần thì tự viết nhớ 56% ý, đọc lại 42%.
+Chắc nhiều bạn có cách hay hơn mình, bạn hay làm gì để nhớ lâu? Comment cho mình biết với nha 🙏
+Giọng của Hiệp (nhân vật) trong video là giọng AI tổng hợp (F5-TTS).
+Nội dung chuyển thể từ «Cẩm nang sống đáng giá» (HowToLiveBetter) – chuanman2707, CC BY 4.0, đã chuyển thể: https://chuanman2707.github.io/HowToLiveBetter/
+#docsach #hoctap #meohoctap #phattrienbanthan #learnontiktok
+```
+
+**Comment ghim:** «Ai đọc xong là quên sạch giống mình thì thả chữ “tui” nha.»
+
+## Hook dự phòng
+1. «Đọc xong cuốn sách, gấp lại cái là quên sạch. Bản chất là sao?»
+2. «Đọc lại sách lần hai, thật ra hông giúp nhớ lâu bằng cái này đâu.»
+
+## Chốt (Hiệp 25/11/2026, DL-069)
+1. Chủ đề: giữ HTB 23.14, gọi lại clip-04 ở b09 («Thứ nhất thì clip trước nói rồi đó»), clip-05 thành phần 2 (cách chấm + đừng liếc).
+2. Trend: không chèn text hip. Ngoại lệ L-090 do Hiệp quyết cho clip này.
+3. Thanh tiêu đề cố định «ĐỌC ĐÂU NHỚ ĐÓ?»: giữ, coi là caption cố định. Ngoại lệ L-050 do Hiệp quyết cho khung «bản chất».
+4. Độ dài ~90s: OK.
+5. Hook «Thì cái bản chất của cái…» trùng khuôn mở clip-02 (⚠ L-088): giữ theo khung video mẫu.
+
+Lời đã khoá. Bước tiếp (make-video sau Chốt): spec.json → voice F5 → stills duyệt bằng mắt → render → check-rules --final → gate 2.
