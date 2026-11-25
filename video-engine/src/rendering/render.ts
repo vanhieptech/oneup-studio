@@ -37,7 +37,7 @@ export async function getBundle(log = console.log): Promise<string> {
   return bundle({ entryPoint: path.join(ROOT, "src/index.ts"), outDir: out, publicDir: path.join(ROOT, "public") });
 }
 
-export async function renderPlan(plan: VideoPlan, outFile: string, opts: { serveUrl?: string; log?: (s: string) => void; concurrency?: number } = {}) {
+export async function renderPlan(plan: VideoPlan, outFile: string, opts: { serveUrl?: string; log?: (s: string) => void; concurrency?: number; crf?: number } = {}) {
   const log = opts.log ?? console.log;
   const { renderMedia, selectComposition } = await import("@remotion/renderer");
   const serveUrl = opts.serveUrl ?? (await getBundle(log));
@@ -47,7 +47,7 @@ export async function renderPlan(plan: VideoPlan, outFile: string, opts: { serve
   mkdirSync(path.dirname(path.resolve(outFile)), { recursive: true });
   let last = -1;
   await renderMedia({
-    serveUrl, composition, inputProps, codec: "h264", crf: 18, pixelFormat: "yuv420p", muted: !hasAudio(plan), audioCodec: "aac", audioBitrate: "192k",
+    serveUrl, composition, inputProps, codec: "h264", crf: opts.crf ?? 18, pixelFormat: "yuv420p", muted: !hasAudio(plan), audioCodec: "aac", audioBitrate: "192k",
     outputLocation: outFile, browserExecutable, concurrency: opts.concurrency ?? null,
     onProgress: ({ progress }) => { const p = Math.floor(progress * 10); if (p !== last) { last = p; log(`render ${plan.id}: ${p * 10}%`); } },
   });

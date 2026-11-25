@@ -28,6 +28,7 @@ NODE_BIN = os.environ.get("NODE22_BIN", "/workspace/tools/node-v22.20.0-linux-x6
 PY = os.environ.get("VIENEU_PYTHON", "/workspace/tts-venv/bin/python")
 FPS = 30
 XF = 0.35  # cross-part transition
+INTER_CRF = 10  # per-part renders are intermediates: near-lossless so only the final encode is lossy (no double generation loss)
 
 def sh(cmd, **kw):
     print("+", cmd if isinstance(cmd, str) else " ".join(cmd), flush=True)
@@ -286,13 +287,13 @@ def main():
     sh(["npx", "tsx", "src/cli.ts", "validate", *[q["plan"] for q in parts if q["engine"] == "remotion"]], cwd=VE)
     if stage in ("voice", "plans"): return
     if stage in ("render", "all"):
-        sh(["npx", "tsx", "src/cli.ts", "render", *[q["plan"] for q in parts if q["engine"] == "remotion"], "--out-dir", "out"], cwd=VE)
+        sh(["npx", "tsx", "src/cli.ts", "render", *[q["plan"] for q in parts if q["engine"] == "remotion"], "--out-dir", "out", "--crf", str(INTER_CRF)], cwd=VE)
         for q in parts:
             if q["engine"] == "hyperframes":
                 silent = q["mp4"].replace(".mp4", "-silent.mp4")
                 sh(["npx", "--yes", "hyperframes@0.8.150", "lint"], cwd=q["dir"])  # audit #1: lint gate (exit≠0 on error)
                 open(os.path.join(fdir, "hf-check.txt"), "w").write(f"hyperframes@0.8.150 lint {q['id']}: 0 errors (build-final gate)\n")  # L-014
-                sh(["npx", "--yes", "hyperframes@0.8.150", "render", ".", "-o", silent, "-f", str(FPS), "--quality", "delivery"], cwd=q["dir"])
+                sh(["npx", "--yes", "hyperframes@0.8.150", "render", ".", "-o", silent, "-f", str(FPS), "--quality", "delivery", "--crf", str(INTER_CRF)], cwd=q["dir"])
                 sh(["ffmpeg", "-loglevel", "error", "-y", "-i", silent, "-i", os.path.join(fdir, "out", f"{q['id']}-voice.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", q["mp4"]])
     # assemble (two passes: audio graph first, then video + mux; one big graph with lavfi sources can deadlock)
     for q in parts:
@@ -329,14 +330,15 @@ def main():
     if vt:
         vi = len(parts) + len(sfx); sfx_in += ["-i", os.path.join(fdir, vt)]
         af.append(f"[{vi}:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:{total},asetpts=PTS-STARTPTS[vt]"); mixl.insert(0, "[vt]")
-    lin = spec.get("mix") == "linear"  # v18: no dynamic loudnorm over the approved voice; linear gain to −14 LUFS below (+ true-peak limiter)
+    lin = spec.get("mix", "linear") == "linear"  # default: no dynamic loudnorm (it pumps the voice); one linear gain to −14 LUFS + limiter below. "mix": "loudnorm" = legacy
     af.append("".join(mixl) + f"amix=inputs={len(mixl)}:normalize=0:duration=first" + ("" if lin else ",loudnorm=I=-14:TP=-1.5:LRA=11") + f",aresample=48000,atrim=0:{total}[a]")
     wav = os.path.join(fdir, "out", f"mix{sfxn}.wav")
     sh(["ffmpeg", "-loglevel", "error", "-y", *ins, *sfx_in, "-filter_complex", ";".join(af), "-map", "[a]", "-ac", "1", "-ar", "48000", wav])
-    # 2nd loudness pass: single-pass loudnorm lands ~1 LU low on short clips; correct with a linear gain to -14 LUFS (rule-4)
+    # measure once, then one linear gain to -14 LUFS (rule-4) + peak limiter. Linear mode always runs it (peaks are unbounded
+    # without loudnorm); legacy loudnorm mode only corrects when single-pass loudnorm lands off (~1 LU low on short clips)
     m = subprocess.run(["ffmpeg", "-hide_banner", "-i", wav, "-af", "ebur128", "-f", "null", "-"], capture_output=True, text=True).stderr
     li = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", m)[-1]); gain = round(-14.0 - li, 2)
-    if abs(gain) > 0.2:
+    if lin or abs(gain) > 0.2:
         sh(["ffmpeg", "-loglevel", "error", "-y", "-i", wav, "-af", f"volume={gain}dB,alimiter=limit=0.84:level=false", wav.replace(".wav", "-g.wav")]); os.replace(wav.replace(".wav", "-g.wav"), wav)
     vf.append(f"[{vprev}]noise=alls=4:allf=t,format=yuv420p[v]")  # light film grain over the whole clip (rule-20)
     out = os.path.join(odir, spec["id"] + sfxn + ".mp4")

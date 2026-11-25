@@ -3,7 +3,7 @@
  * oneup video-engine CLI
  *   validate <plan.json|script.txt>...            validate only (fast, no browser)
  *   plan <script.txt> [--out plan.json] [--llm]   script → JSON scene plan (rule-based unless --llm + env configured)
- *   render <plan.json|script.txt>... [--out-dir out] [--llm]   validate all, then render each to MP4 (one shared bundle)
+ *   render <plan.json|script.txt>... [--out-dir out] [--crf 18] [--llm]   validate all, then render each to MP4 (one shared bundle; build-final passes a low --crf for near-lossless intermediates)
  *   voice <plan.json> [--out plan.voiced.json]    synthesize Omi lines with local VieNeu-TTS (rule-46), fill dialogue.audio
  *   frames <video.mp4> [--every 1] [--out dir]    extract frames + contact sheet (needs ffmpeg) for visual QA
  */
@@ -79,12 +79,14 @@ async function main() {
   }
   if (cmd === "render") {
     const outDir = flag("--out-dir", "out")!;
+    const crf = Number(flag("--crf", "18"));
+    if (!Number.isInteger(crf) || crf < 1 || crf > 51) throw new Error(`--crf must be an integer 1–51, got ${flag("--crf")}`);
     const serveUrl = await getBundle();
     for (const l of loaded) {
       const outFile = path.join(outDir, `${l.plan!.id}.mp4`);
       const t0 = Date.now();
       try {
-        const r = await renderPlan(l.plan!, outFile, { serveUrl });
+        const r = await renderPlan(l.plan!, outFile, { serveUrl, crf });
         console.log(`✔ ${outFile}: ${r.width}x${r.height} ${r.fps}fps ${r.frames} frames in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
       } catch (e) {
         console.error(`✖ render failed for ${l.plan!.id}: ${(e as Error).message}`);
