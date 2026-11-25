@@ -107,5 +107,5 @@ Nội dung chuyển thể từ «Cẩm nang sống đáng giá» (HowToLiveBette
 1. Trùng chủ đề clip-04 (cũng HTB 23.14); theme-map gốc xếp clip-05 = 23.15. Giữ 23.14 hay quay về 23.15?
 2. Trend chưa nói thành lời ở b01–b02 (L-090). Đề xuất chèn text hip vào b01b: «Đọc sách giờ thành gu, mà gấp lại là quên sạch trơn hà.»
 3. Thanh tiêu đề cố định ngược L-050 (không chữ trong hình) — coi như caption cố định?
-4. ~90s, dưới target 120–180s (chỉ cảnh báo).
+4. ~~~90s, dưới target 120–180s~~ → Hiệp OK độ dài ~90s (25/11/2026).
 5. Hook «Thì cái bản chất của cái…» trùng khuôn mở clip-02 (⚠ L-088, chỉ cảnh báo). Phương án đổi nhẹ nếu cần: «Đọc đâu nhớ đó, bản chất của nó là gì?»
