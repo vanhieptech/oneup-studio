@@ -82,3 +82,5 @@ Có 25 mẫu: 5 bản duyệt và 20 bản bị bác. Trong 20 bản bị bác, 
 | Ngày | Model | Bắt đúng bản bị bác | Cho qua bản đã duyệt | Ghi chú |
 |---|---|---|---|---|
 | 2026-11-26 | sonnet | 15/15 (100%) | 0/3 (0%), thêm 2 bản không có verdict | **Reviewer quá khắt khe: bác mọi bản, kể cả bản Hiệp đã duyệt.** Chưa dùng được làm cổng. Cần nới quy tắc verdict trong `docs/prompts/reviewer-script.md`, rồi đo lại. Chi phí 8,67 USD. Chi tiết: `eval-2026-11-26.json` |
+| 2026-11-26 (b) | sonnet | 14/15 (93%) | 1/5 (20%) | Reviewer 2 tầng (DL-074), verdict tính bằng `pipeline/review_tiers.py`. Bản duyệt được 68–85 điểm, bản bị bác 57–87: thang điểm bị nén. Điểm trừ ở bản duyệt đến từ chuyện cá nhân chưa xác nhận, markup spec, claim không mở được nguồn, kiểu CTA. Bản bị bác lọt: r-c06-v3r3 (87; Hiệp chỉ nói «làm lại»). Chi phí 8,90 USD. `eval-2026-11-26b.json` |
+| 2026-11-26 (c) | sonnet | đang chạy | đang chạy | Thêm neo điểm (bản duyệt gần nhất = 88), danh sách không trừ điểm, bỏ markup khỏi nháp khi đo. Kết quả ghi khi chạy xong: `eval-2026-11-26c.json` |

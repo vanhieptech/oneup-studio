@@ -33,4 +33,4 @@ Ghi chú: Giang Ơi và Have A Sip nói giọng Bắc/chuẩn, chỉ học nhị
 - Văn nói: câu ngắn, một ý, đọc to: https://lamvideo.net/bi-quyet-viet-loi-thoai-kich-ban-thu-hut-va-chuyen-nghiep/
 - Xem thêm `docs/research/scriptwriting-research-2026-10-15.md`.
 
-Kho cụm từ: `phrase-bank.md`. **Sổ nguồn đầy đủ (giấy phép, phạm vi dùng, xếp theo giá trị): `sources.md`** (26/11).
+Kho cụm từ: `phrase-bank.md`. **Từ nối văn nói** (mở nhịp, chuyển ý): `connectors.tsv`. **Danh sách đen mùi AI / văn dịch**: `ai-blacklist.tsv` (`check-rules.py --bookish` báo ⚠). Từ sách → từ nói: `bookish.tsv`. **Viết từ ghi âm của Hiệp:** `voice-first.md`. **Sổ nguồn đầy đủ (giấy phép, phạm vi dùng, xếp theo giá trị): `sources.md`** (26/11).

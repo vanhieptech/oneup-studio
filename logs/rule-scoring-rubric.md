@@ -3,7 +3,7 @@ tags: [logs]
 title: "Rubric chấm điểm script video ngắn — ĐỀ XUẤT chờ Hiệp duyệt (chưa chốt)"
 date: 2026-10-19
 status: proposal-awaiting-hiep
-source: "logs/rule-checklist.md (64 rule, commit 4a7c477) + logs/lessons.md L-001–L-058 + hiệu chuẩn clip-04 v04–v07"
+source: "DL-074 (§3b hai tầng, 26/11) + logs/rule-checklist.md (64 rule, commit 4a7c477) + logs/lessons.md L-001–L-058 + hiệu chuẩn clip-04 v04–v07"
 id: rule-scoring-rubric
 type: rubric
 updated: 2026-11-26
@@ -58,6 +58,23 @@ Mỗi hạng mục chấm theo neo: **tối đa** = đạt hết mô tả; **gi�
 4. Hook không có pain "bạn" + câu hỏi bám pain (kể lể ngôi "mình" ở hook) (P-05/P-06).
 5. Làm voice/render/publish trước khi Hiệp nói "Chốt" (P-12) — lỗi quy trình, chặn cả gói.
 6. Medical/legal/dosage/kết luận chuyên môn ngoài nguồn (rule an toàn gốc).
+
+### §3b. Hai tầng kiểm tra (DL-074, 26/11/2026; thay cách đọc «lỗi chặn» ở trên khi review script)
+Eval 26/11 (`research/review-golden/eval-2026-11-26.json`): reviewer bác 15/15 bản bị bác nhưng **bác cả 3/3 bản đã duyệt** (điểm ≈50). Nguyên nhân đọc từ câu trả lời: (1) quy tắc verdict cũ cho CHƯA ĐẠT khi có *một* cặp câu đứt hoặc *một* câu «không ai nói vậy» và dặn «nghiêng về nghiêm», nên điểm không còn quyết định; (2) lỗi chặn #4 (hook bắt buộc «bạn» + câu hỏi, cấm ngôi «mình») mâu thuẫn L-103–L-105 (hook kể chuyện), nên hook của bản duyệt bị trừ −8 ở A và ghi «xung đột mở» không tự chọn; (3) bản duyệt clip-01–03 bị chấm bằng lesson ra đời sau ngày duyệt (L-089, L-103…).
+
+**Tầng 1 — Hard fail (chặn tuyệt đối, chỉ 4 loại, phải trích dòng):**
+| mã | lỗi | nguồn luật |
+|---|---|---|
+| H1 | Fact bịa / không chỉ được về nguồn / nói quá mức nguồn; y tế, pháp lý ngoài nguồn | lỗi chặn 1, 6; L-088, L-096 |
+| H2 | Tổng ước ≥ 300 s (gồm end card, nghỉ, chuyển cảnh). 120–180 s chỉ là mục tiêu | L-099 |
+| H3 | Sai brand / format kênh: @hi.oneup quay mặt, b-roll, nhạc nền, nhắc lịch đăng (DL-027, DL-028); chê năng lực người xem (L-053); @vanhiep.tech sai `channels/vanhiep-tech/AGENTS.md` | lỗi chặn 2; DL-027 |
+| H4 | Lỗi cấu trúc: nháp không chia beat `N. **[bNN]** lời`, beat trống, spec thiếu trường bắt buộc; thiếu dòng an toàn / credit khi đã có end card | lỗi chặn 3 |
+Lỗi chặn #4 cũ (hook phải «bạn» + câu hỏi) **không còn là hard fail**: hook kể chuyện ngôi một (L-103–L-105) và hook «bạn» + nỗi đau + câu hỏi đều đạt neo tối đa của A nếu làm tròn. Lỗi chặn #5 (voice/render trước Chốt) là lỗi quy trình, kiểm ở `check-rules`, không phải lỗi lời.
+
+**Tầng 2 — Chấm điểm 7 hạng mục (§3).** Verdict theo tổng: ≥ 85 ĐẠT · 75–84 sửa nhỏ · 60–74 sửa vừa · < 60 sửa lớn. Đứt mạch, câu gượng, hook yếu, lặp bản bị bác: trừ điểm kèm trích dòng, không tự động CHƯA ĐẠT.
+**Cảnh báo mềm (trừ 0 điểm, không bao giờ đổi verdict):** biến thể khẩu ngữ, từ nối văn nói (`resources/vn-spoken/connectors.tsv`), câu ngắn ngắt nhịp, câu hỏi tu từ giữ chân, chuyện đời thường khớp `content/voice-profile.md` và `resources/feedback.md`; chuyển ngôi khi không làm người nghe lạc.
+**Chuẩn sàn:** cách viết mà một bản đã duyệt trong `research/review-golden/` cũng dùng thì không bị trừ, kể cả khi lesson ra đời sau ngày duyệt.
+**Máy tính lại verdict:** reviewer kết bằng khối `HARD_FAILS / SCORE / SOFT_WARNINGS / CONFLICTS / VERDICT`; `pipeline/review_tiers.py` tính verdict từ HARD_FAILS + TOTAL (dùng trong `review-eval.py` và `check-rules --review`).
 
 ## 4. Hiệu chuẩn: chấm 4 bản clip-04 đối chiếu verdict thật của Hiệp
 

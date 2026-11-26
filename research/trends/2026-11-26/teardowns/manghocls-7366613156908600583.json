@@ -158,6 +158,351 @@
   "cli": "agy 1.5.18",
   "model": "gemini-4-hydrogen-high",
   "source": "https://www.tiktok.com/@manghocls/video/7366613156908600583",
-  "blueprint": "SM01"
+  "arc": "ARC-001",
+  "arc_new": false
+ },
+ "arc": {
+  "name": "Lời hứa N cách + neo uy tín → điểm danh từng cách",
+  "hook_mechanism": "tò mò (danh sách có số + neo thành tích)",
+  "skeleton": [
+   "[Lời hứa số lượng: N cách để đạt kết quả X] + [neo uy tín: người/thành tích người xem tin]",
+   "[Từ chuyển nhịp ngắn] rồi cắt cảnh ngay vào cách 1",
+   "Mỗi cách lặp một khuôn: [tên cách ngắn] → [vì sao nó chạy] → [con số hoặc ví dụ cụ thể]",
+   "[Đổi nhấn chữ / đạo cụ / động tác] ở mỗi lần chuyển cách",
+   "[Ngắt nhịp tách phần kết] → [câu hỏi mở gắn với series] kéo bình luận"
+  ],
+  "_source": "Claude chuyển formula (Gemini) sang khung trống [...] — 26/11",
+  "beats": [
+   {
+    "role": "dẫn dắt",
+    "function": null,
+    "seconds": 4,
+    "transition": "Jump cut bỏ quyển vở xuống ở 00:05."
+   },
+   {
+    "role": "giải thích",
+    "function": null,
+    "seconds": 22,
+    "transition": "Jump cut kèm tiêu đề vàng 'Thứ hai:' ở 00:28-00:29."
+   },
+   {
+    "role": "giải thích",
+    "function": null,
+    "seconds": 12,
+    "transition": "Jump cut giơ nắm tay cầm bút kèm tiêu đề 'Cuối cùng' ở 00:41-00:42."
+   },
+   {
+    "role": "chứng minh",
+    "function": null,
+    "seconds": 16,
+    "transition": "Màn hình tối dần (fade) ở 00:58."
+   },
+   {
+    "role": "kết",
+    "function": null,
+    "seconds": 6,
+    "transition": ""
+   }
+  ]
+ },
+ "algorithmic_triggers": {
+  "comment": [
+   {
+    "what": "CTA hỏi có thích series không, xin comment để ra thêm mẹo (00:59–01:03)",
+    "why": "hỏi thêm",
+    "kind": "quan sát"
+   },
+   {
+    "what": "Người xem xác nhận cách làm bằng kinh nghiệm của mình: comment top 509 like kể đã dùng «viết ra giấy + đọc thành tiếng»",
+    "why": "đồng cảm",
+    "kind": "quan sát"
+   },
+   {
+    "what": "Người xem kể nỗi đau học dồn sát giờ thi: «chiều thi mà giờ học chưa xong» (205 like) và nhiều comment cùng kiểu (mai thi mà còn mấy tờ)",
+    "why": "đồng cảm",
+    "kind": "quan sát"
+   },
+   {
+    "what": "Xin làm tiếp chủ đề hẹp hơn (cách nhớ mốc thời gian, nhớ lâu)",
+    "why": "hỏi thêm",
+    "kind": "quan sát"
+   }
+  ],
+  "save_share": [
+   {
+    "what": "3 cách đánh số rõ, tiêu đề vàng + từ khoá đỏ: dạng checklist dễ lưu lại",
+    "why": "checklist",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Comment rủ tag bạn bè «để lưu ngay cách học thuộc»",
+    "why": "gửi bạn bè",
+    "kind": "quan sát"
+   }
+  ],
+  "_source": "Claude tổng hợp từ khối kết + why_it_works của Gemini và 20 top comment Apify (https://www.tiktok.com/@manghocls/video/7366613156908600583, research/trends/2026-11-26/apify/clips.json); không ghi tên người comment; bỏ comment về thuốc (brand-safety)"
+ },
+ "angles": {
+  "hi_oneup": {
+   "idea": "3 việc nhỏ làm thói quen dính hơn (đời thường, không lấy môn học — L-087): Hiệp chibi thử từng việc, mỗi việc một cơ chế + một nghiên cứu có nguồn, motion beat giải thích cơ chế",
+   "hook": "[chuyện thật của Hiệp lần bỏ thói quen] + «có ba việc nhỏ mà mình ước biết sớm hơn»",
+   "length_s": 150
+  },
+  "vanhiep_tech": {
+   "idea": "3 cách nhớ lệnh terminal / API lâu hơn mà không cần flashcard: khung giờ ít bị cắt ngang, đọc to (rubber duck), viết tay một lần — mỗi cách một overlay diagram",
+   "hook": "«Ba cách mình nhớ lệnh mà khỏi Google lại mỗi ngày»",
+   "length_s": 60
+  },
+  "_source": "Claude đề xuất 26/11 (suy đoán), Hiệp chọn ở Gate 0"
+ },
+ "beats": [
+  {
+   "from": "00:00",
+   "to": "00:04",
+   "seconds": 4,
+   "role": "dẫn dắt",
+   "retention_function": null,
+   "summary": "Đặt vấn đề 3 cách học thuộc nhanh, nhớ lâu giống học sinh giỏi quốc gia môn Lịch Sử và chốt 'Check'.",
+   "transition": "Jump cut bỏ quyển vở xuống ở 00:05."
+  },
+  {
+   "from": "00:05",
+   "to": "00:27",
+   "seconds": 22,
+   "role": "giải thích",
+   "retention_function": null,
+   "summary": "Cách 1: Chọn khung giờ yên tĩnh (4:00–6:00 sáng, 8:00–12:00 tối) để não tập trung, tăng tốc học thuộc từ 2–3 lần.",
+   "transition": "Jump cut kèm tiêu đề vàng 'Thứ hai:' ở 00:28-00:29."
+  },
+  {
+   "from": "00:28",
+   "to": "00:40",
+   "seconds": 12,
+   "role": "giải thích",
+   "retention_function": null,
+   "summary": "Cách 2: Đọc đi đọc lại thành tiếng để não nghe lại và tiếp nhận thông tin dễ dàng hơn khi học nhẩm không hiệu quả.",
+   "transition": "Jump cut giơ nắm tay cầm bút kèm tiêu đề 'Cuối cùng' ở 00:41-00:42."
+  },
+  {
+   "from": "00:41",
+   "to": "00:57",
+   "seconds": 16,
+   "role": "chứng minh",
+   "retention_function": null,
+   "summary": "Cách 3: Viết ra giấy (minh họa hành động viết ở 00:44), trích câu nói biến kiến thức người khác thành của mình, giải thích cơ chế mã hóa thông tin và viện dẫn 'đã được khoa học chứng minh'.",
+   "transition": "Màn hình tối dần (fade) ở 00:58."
+  },
+  {
+   "from": "00:58",
+   "to": "01:04",
+   "seconds": 6,
+   "role": "kết",
+   "retention_function": null,
+   "summary": "Hỏi người xem có thích series không, kêu gọi bình luận cho 'Măng' để làm thêm mẹo học thuộc, vẫy tay 'Byee'.",
+   "transition": ""
+  }
+ ],
+ "winning_points": {
+  "interrupts": [
+   {
+    "t": "00:04",
+    "what": "Chữ vàng 'Check' bật lên góc trên kèm động tác nháy mắt/chỉ tay kết thúc hook.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:05",
+    "what": "Jump cut sang khung hình hơi gần hơn, bỏ quyển vở khỏi tay để vào ý thứ nhất.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:14",
+    "what": "Đổi kiểu chữ sang phông lớn màu đỏ hồng viền đen để nhấn mốc giờ '4:00 đến 6:00 sáng' và '8:00 đến 12:00 tối' (00:15).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:20",
+    "what": "Đưa hai ngón trỏ chạm thái dương và nháy một mắt khi nhấn từ khóa đỏ 'hiệu quả hơn'.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:26",
+    "what": "Chữ đỏ lớn 'Từ 2-3 lần' bật lên khi giơ tay trái nhấn mạnh con số.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:29",
+    "what": "Jump cut chuyển mục, hiện tiêu đề vàng lớn 'Thứ hai:' rồi 'Đọc thành tiếng' (00:30).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:42",
+    "what": "Jump cut chuyển mục, giơ nắm tay cầm bút xanh với tiêu đề 'Cuối cùng' và 'Viết ra giấy' (00:43).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:44",
+    "what": "Cúi đầu xuống viết trực tiếp vào trang vở mở ở mép dưới khung hình.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:45",
+    "what": "Jump cut quay lại tư thế ôm quyển vở bìa xanh trước ngực như đầu video.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:57",
+    "what": "Giơ cả hai ngón cái (thumbs up) và cười trước khi kết thúc phần nội dung.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:58",
+    "what": "Chuyển cảnh mờ tối màn hình (fade) để tách nội dung chính với phần kết.",
+    "kind": "quan sát"
+   }
+  ]
+ },
+ "apify": {
+  "url": "https://www.tiktok.com/@manghocls/video/7366613156908600583",
+  "caption": "Vừa học nhanh vừa nhớ lâu là có thậttt #trending #manghocls #lichsu #tips ",
+  "author": {
+   "id": "7227825138296964104",
+   "name": "manghocls",
+   "nick": "Măng học Lịch Sử👧🏻",
+   "profile": "https://www.tiktok.com/@manghocls",
+   "fans": 99000
+  },
+  "play_count": 756800,
+  "like_count": 46200,
+  "share_count": 2247,
+  "comment_count": 410,
+  "duration_s": 64,
+  "music": {
+   "id": "7366613196742904593",
+   "name": "nhạc nền - Măng học Lịch Sử👧🏻",
+   "author": "Măng học Lịch Sử👧🏻",
+   "original": true
+  },
+  "hashtags": [
+   "trending",
+   "manghocls",
+   "lichsu",
+   "tips"
+  ],
+  "subtitle_or_transcript": {
+   "kind": "vtt",
+   "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:02.360\nBA cách giúp bạn học thật nhanh và nhớ lâu\n\n00:00:02.440 --> 00:00:04.680\ngiống như học sinh giáo quốc gia mua lịch sử check\n\n00:00:05.640 --> 00:00:08.280\nthứ nhất chính là lựa chọn thời gian học Cho phù hợp\n\n00:00:08.800 --> 00:00:09.440\nkhông phải mọi khoảng\n\n00:00:09.441 --> 00:00:11.121\nthời gian trong ngày đều phù hợp để học thuộc\n\n00:00:11.280 --> 00:00:13.040\ncó những khoảng thời gian rất thích hợp để học thuộc\n\n00:00:13.080 --> 00:00:13.760\nnhư từ\n\n00:00:13.761 --> 00:00:16.921\n4 giờ đến 6 giờ sáng hay từ 8 giờ đến 12 giờ tối\n\n00:00:17.120 --> 00:00:18.920\nbởi vì đây là khoảng thời gian yên tĩnh\n\n00:00:19.000 --> 00:00:19.600\ngiúp não bộ\n\n00:00:19.601 --> 00:00:21.681\ntập trung và nghi yếu kiến thức một cách hiệu quả hơn\n\n00:00:21.880 --> 00:00:23.360\nhọc thuộc vào trong những khoảng thời gian này\n\n00:00:23.400 --> 00:00:24.560\ngiúp bạn học nhanh hơn\n\n00:00:24.561 --> 00:00:25.681\nnhững khoảng thời gian khác trong ngày\n\n00:00:25.720 --> 00:00:28.080\n23 lần các bạn hãy thử xem SAO nhá\n\n00:00:28.480 --> 00:00:30.640\nthứ 2 chính là đọc thành tiếng\n\n00:00:30.920 --> 00:00:31.960\nnghe thì có vẻ đơn giản\n\n00:00:32.000 --> 00:00:34.200\nthế nhưng việc đọc đi đọc lại thành tiếng\n\n00:00:34.280 --> 00:00:35.480\ngiúp Cho não bộ được nghe\n\n00:00:35.520 --> 00:00:36.480\nthấy thông tin một lần nữa và\n\n00:00:36.520 --> 00:00:38.040\ntiếp nhận thông tin một cách dễ dàng hơn\n\n00:00:38.200 --> 00:00:39.800\nnếu bạn học nhẩm mà mãi chưa thuộc\n\n00:00:39.840 --> 00:00:41.440\nthì hãy đổi sang cách này xem SAO nhá\n\n00:00:41.840 --> 00:00:43.880\ncuối cùng đó chính là viết Ra giấy\n\n00:00:45.040 --> 00:00:46.520\nchắc hẳn các bạn đã từng nghe câu nói\n\n00:00:46.800 --> 00:00:47.760\nbiến kiến thức của người khác\n\n00:00:47.800 --> 00:00:48.960\ntrở thành kiến thức của mình\n\n00:00:49.120 --> 00:00:51.680\nvà việc viết Ra giấy giúp bạn mã hóa lại thông tin\n\n00:00:51.920 --> 00:00:53.000\nTheo ngôn ngữ của chính bạn\n\n00:00:53.160 --> 00:00:53.600\nnhư vậy\n\n00:00:53.601 --> 00:00:55.361\nviệc tiếp tục kiến thức sẽ trở nên hiệu quả hơn\n\n00:00:55.480 --> 00:00:56.240\nđiều này đã được khoa\n\n00:00:56.241 --> 00:00:58.161\nhọc chứng Minh rồi nha nên các bạn nhớ thử xem nhá\n\n00:00:58.560 --> 00:00:59.800\nmọi người có thích series này không\n\n00:00:59.840 --> 00:01:01.360\nthì hãy comment Cho mong biết để mang Ra\n\n00:01:01.440 --> 00:01:03.720\nthêm cách học thật nhanh và nhớ lâu Cho hiệu quả nhá\n\n00:01:04.120 --> 00:01:04.838\nbai\n",
+   "links": [
+    "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7366613156908600583-vie-VN.vtt"
+   ],
+   "file": "7366613156908600583-vie-VN.vtt"
+  },
+  "top_comments": [
+   {
+    "text": "Viết ra giấy + đọc thành tiếng+ học hiểu thì chắc chắn là hiệu quả nhất đấy, mình bên khối xã hội thường dùng cách này",
+    "likes": 509,
+    "author": "zenhuti18"
+   },
+   {
+    "text": "Uống modafina học dễ thuộc",
+    "likes": 346,
+    "author": "soicgive"
+   },
+   {
+    "text": "chiều thi mà giờ học chưa xong",
+    "likes": 205,
+    "author": "hunhminh2"
+   },
+   {
+    "text": "Địa 12 tờ mai thi😇",
+    "likes": 55,
+    "author": "zinzi_398"
+   },
+   {
+    "text": "nhà người khác thì lặng thinh còn nhà em gần với cái chợ😅",
+    "likes": 52,
+    "author": "de_than_bao"
+   },
+   {
+    "text": "12h não t buồn ngủ😌",
+    "likes": 32,
+    "author": "khanhvy_798"
+   },
+   {
+    "text": "tag 500 ae vào để lưu ngay cách học thuộc hqua nhaa",
+    "likes": 12,
+    "author": "manghocls"
+   },
+   {
+    "text": "Địa lý học tận 3tờ mà ngày kia thi😔",
+    "likes": 11,
+    "author": "nanh_.17"
+   },
+   {
+    "text": "cảm ơn cj\ne đã áp dụng hai cách cuối r hiệu quả lắm\ncj ơi cj lên vd dạy cách học thuộc mốc thời gian ngày tháng trong lịch sử đi cj🥰",
+    "likes": 11,
+    "author": "jannahalvi"
+   },
+   {
+    "text": "làm sao để nhớ lâu ạ em học mà thấy những năm nó ngoằn ngoèo quá chị ơi cứu em 🥺",
+    "likes": 5,
+    "author": "hhhhhhhi093"
+   },
+   {
+    "text": "Hình như tôi vừa export vid này 30p trước",
+    "likes": 4,
+    "author": "toiyeumuahe_"
+   },
+   {
+    "text": "tí thi văn mà h ms hc đc cái mở bài__^^",
+    "likes": 3,
+    "author": "g4ug4u_me0wme0w"
+   },
+   {
+    "text": "em c.ơn cj nha",
+    "likes": 1,
+    "author": "user2716959617332"
+   },
+   {
+    "text": "t2 thi rrr học kịp kh trrr",
+    "likes": 1,
+    "author": "khongthichnoinhieu_10"
+   },
+   {
+    "text": "10h r học sao đc v ạ",
+    "likes": 1,
+    "author": "btrn3.05"
+   },
+   {
+    "text": "đang đọc sử luôn nè 1 trang rưỡi",
+    "likes": 1,
+    "author": "htrng54"
+   },
+   {
+    "text": "Ok lắm nha",
+    "likes": 1,
+    "author": "htsuathanhyen90"
+   },
+   {
+    "text": "hiệu quả nha",
+    "likes": 1,
+    "author": "xukaxuka83"
+   },
+   {
+    "text": "Hiệu quả đó nha",
+    "likes": 1,
+    "author": "thuytieenne"
+   },
+   {
+    "text": "Chị ơi 6 giờ e đi thi 😅",
+    "likes": 0,
+    "author": "user_bongnganh"
+   }
+  ],
+  "source_actor": "clockworks/tiktok-scraper",
+  "raw_id": "7366613156908600583",
+  "create_time": "2024-05-08T13:01:28.000Z",
+  "is_slideshow": false,
+  "outlier": 7.64,
+  "basis": "fans"
  }
 }

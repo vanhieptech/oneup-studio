@@ -1,73 +1,54 @@
 ---
-title: "Mẫu phân tích clip nhiều view (teardown)"
+title: "Mẫu Viral DNA Card (teardown clip đối thủ đạt chuẩn outlier)"
 date: 2026-11-26
 id: template.clip-teardown
 type: template
 status: ready
 updated: 2026-11-26
-tags: [template, trend, teardown, retention]
-source: "oneup-studio: khung 11 mục (kế hoạch 26/11) + 5 phần phân tích video theo hướng dẫn Gemini Hiệp gửi 26/11 (đã chỉnh theo luật kênh)"
+tags: [template, trend, teardown, retention, viral-dna, arc]
+source: "oneup-studio: 6 khối Viral DNA (yêu cầu Hiệp 26/11) thay khung 11 mục; prompt docs/prompts/gemini-teardown.md; renderer pipeline/scripts/teardown.py"
 ---
-# Phân tích clip: <tên ngắn> (`<tiktok id>`)
+# Viral DNA Card: <tên ngắn> (`<creator>-<tiktok id>`)
 
-Một file mỗi clip, lưu ở `research/trends/<YYYY-MM-DD>/teardowns/<id>.md` (+ `<id>.json` cùng cấu trúc). Mỗi mục ghi nguồn điền: **[Apify]** số liệu/phụ đề/comment, **[Gemini]** xem + nghe video (`pipeline/trends/teardown.py`), **[Claude]** tổng hợp. Mọi ý đánh dấu `quan sát` (thấy/nghe được, có mốc giờ) hoặc `suy đoán` (giải thích lý do). Không chép câu, hình, âm thanh vào clip của mình; chỉ mượn khung trừu tượng.
+Một file mỗi clip: `research/trends/<YYYY-MM-DD>/teardowns/<id>.md` + `<id>.json` (cùng cấu trúc). `teardown.py` sinh file này; Claude chỉ bổ sung chỗ ghi «—». Nguồn mỗi ý: **[Apify]** số liệu / phụ đề / comment, **[agy]** model xem + nghe video (Antigravity CLI, `teardown.py`), **[Claude]** tổng hợp. Mỗi ý ghi `quan sát` (có mốc giờ) hoặc `suy đoán`. Không chép câu, hình, âm thanh vào clip của mình; chỉ mượn khung trừu tượng.
 
-## 0. Chọn clip [Apify]
-- Outlier: `play_count` ÷ trung vị view của creator (hoặc ÷ follower khi thiếu) = `<x>` (chỉ phân tích khi ≥ 3).
-- Vì sao chọn cho kênh: chủ đề gần `<thói quen / học / trì hoãn / ngủ / tập trung / tiền>`.
+Chỉ teardown clip đạt chuẩn outlier của radar (`pipeline/scripts/trend-streams.py radar`: view ÷ follower ≥ 3, hoặc comment/share tăng đột biến trong 24–72 giờ) hoặc clip Hiệp ném vào inbox.
 
-## 1. Số liệu [Apify]
-| link | creator (follower) | ngày đăng | độ dài | view | like | comment | share | save | share/view | sound |
-|---|---|---|---|---|---|---|---|---|---|---|
+## Khối 0 — Số liệu [Apify]
+| link | creator | follower | view | view/follower | comment | share | độ dài | ngày đăng |
+|---|---|---|---|---|---|---|---|---|
 
-## 2. Hook 0–3 giây [Gemini + Apify vtt]
-- Câu nói đầu (nguyên văn từ phụ đề, chỉ để phân tích): …
-- Chữ trên màn hình: …
-- Hình / hành động gây chú ý (góc máy, biểu cảm, chuyển động): …
-- Cơ chế tâm lý: tò mò · phản trực giác · đánh vào nỗi đau · kết quả gây sốc · khác: … (`suy đoán`)
-- Kiểu hook: mã `P..` trong `research/trends/patterns.md` (hoặc đề xuất mã mới).
+## Khối 1 — Hook Mechanics (0–3 giây) [agy + phụ đề Apify]
+- Câu mở đầu (nguyên văn khi nghe rõ, chỉ để phân tích): …
+- Visual / text hook trên màn hình: …
+- Cơ chế tâm lý: **phản trực giác · nỗi đau · tò mò · kết quả sốc** · khác (`suy đoán`)
 - Lời hứa ngầm với người xem: …
 
-## 3. Xương sống theo mốc giờ [Gemini + Claude]
-| mốc | vai trò (dẫn dắt · câu hỏi · chứng minh · lật kèo · giải thích · áp dụng · kết) | một câu tóm ý | cách chuyển sang đoạn sau |
-|---|---|---|---|
-| 0:00–0:03 | hook | | |
-- Giây nào trả lời lời hứa của hook: …
-- Vòng mở (open loop) mới ở đâu: …
+## Khối 2 — Story Arc & Beat Map [agy]
+4–6 beat theo mốc giờ, phủ toàn video. Vai trò chỉ dùng: hook, dẫn dắt, câu hỏi, chứng minh, lật kèo, giải thích, áp dụng, kết.
+| mốc | giây | vai trò | chức năng giữ chân | tóm ý | chuyển ý (câu / kỹ thuật) sang beat sau |
+|---|---|---|---|---|---|
+- Giây trả lời lời hứa của hook: …
 
-## 4. Cách nói [Apify vtt + Claude]
-- Ngôi kể, xưng hô: … · câu dài trung bình: … chữ · tốc độ: … chữ/phút
-- Từ đệm, cách nối ý giữa các câu (ghi kiểu nối, không chép câu): …
-- Cụm hay (ngắn < 10 chữ, kèm link) → đưa vào `resources/vn-spoken/phrase-bank.md` với nguồn.
+## Khối 3 — Winning Points [agy + Claude]
+- Ẩn dụ / ví dụ đời thường đắt nhất (mốc giờ): …
+- Câu đáng lưu / share (quotable line, mốc giờ): …
+- Tần suất ngắt nhịp hình / âm thanh: … lần / 10 giây; các điểm nổi bật `0:04 SFX + zoom` …
+- Dịch sang kênh: @hi.oneup = đổi cảnh comic, hit motion + SFX (luật 50, 51), không quay, không b-roll, không nhạc (DL-027, luật 21) · @vanhiep.tech = overlay `ov-*` / cutaway `cu-*` mỗi 3–5 giây (`make-layer`).
 
-## 5. Nhịp & ngắt nhịp (pattern interrupts) [Gemini]
-- Trung bình bao nhiêu giây đổi góc máy / zoom / chèn hình / text mới: …
-- Các điểm ngắt nhịp nổi bật: `0:04 SFX ting + zoom mặt` …
-- **Dịch sang kênh:** @hi.oneup = đổi cảnh comic, hit motion + SFX (luật 50, 51), không quay, không B-roll (DL-027) · @vanhiep.tech = overlay `ov-*` / cutaway `cu-*` (`make-layer`).
+## Khối 4 — Algorithmic Triggers [agy + comment Apify]
+- Kích bình luận (tranh luận / đồng cảm / hỏi thêm): … — người xem thật nói gì (cụm ngắn kèm link, không ghi tên).
+- Kích lưu / chia sẻ (checklist / kiến thức ngách / gửi bạn bè): …
 
-## 6. Âm thanh & năng lượng [Gemini — kiểm lại: qua `agy` model có thể không nhận âm thanh (26/11), đối chiếu phụ đề Apify]
-- Nhịp nói (nhanh/chậm, nhấn ở đâu), tone (tâm sự · tranh luận · chia sẻ kinh nghiệm): …
-- SFX: … · Nhạc nền: chỉ ghi nhận (luật 21: clip mình không có nhạc trong file).
+## Khối 5 — Reusable Story Arc (`ARC-NNN`) [agy → Claude]
+Khung xương trống, mọi nội dung riêng thay bằng `[...]`, dùng được cho chủ đề khác:
+1. [...]
+- `teardown.py` tự gộp vào thư viện (`pipeline/arc_library.py`): giống mạch có sẵn ≥ 0,6 hoặc cùng nguồn → cộng bằng chứng vào `ARC` đó; không thì cấp `ARC-NNN` mới. Bảng: `research/trends/patterns.md` › Story arcs.
 
-## 7. Kết thúc & CTA [Gemini + vtt]
-- Kiểu kết: bất ngờ · loop về đầu · kêu gọi hành động · …
-- Câu CTA: …
+## Khối 6 — Dual-Channel Angle [agy / Claude, `suy đoán`, Hiệp chọn ở Gate 0]
+- **@hi.oneup** (comic + motion, 120–180 s): ý · hook nháp · độ dài.
+- **@vanhiep.tech** (talking-head + overlay, 45–90 s): ý · hook nháp · độ dài.
+- Tự đẩy vào `content/idea-bank.md` › Từ teardown (ARC), kèm mã `ARC-NNN` và link file này.
 
-## 8. Comment [Apify]
-- Người xem trích lại câu nào: …
-- Họ hỏi gì / cãi gì: …
-- Họ tự nói về nỗi đau ra sao (cụm ngắn kèm link, không ghi tên người comment) → bảng dịch thuật ngữ `research/explainers/<chủ-đề>.md`.
-
-## 9. Vì sao nó chạy [Claude] (`suy đoán`, mỗi ý chỉ vào bằng chứng ở mục 2–8)
+## Vì sao nó chạy [agy / Claude] (`suy đoán`, mỗi ý chỉ vào bằng chứng ở Khối 1–4)
 1. …
-
-## 10. Mượn gì, không mượn gì
-| mượn (khung trừu tượng) | không mượn |
-|---|---|
-| | câu chữ, hình, audio, nhân vật, tên kênh |
-
-## 11. Công thức khung + chuyển sang kênh mình [Claude]
-- Công thức 4–6 bước (dùng được cho chủ đề khác) → thêm/cập nhật trong `research/blueprints/` (`seen` +1).
-- Áp cho @hi.oneup (comic + motion) hoặc @vanhiep.tech: …
-- Hợp ý nào trong `content/idea-bank.md`: …
-- Model đã dùng cho mục 2/3/5/6/7: `<tên model Gemini thật>` · ngày chạy: …

@@ -12,8 +12,8 @@ updated: 2026-11-26
 
 Một dòng mỗi lần đăng. Clip đã duyệt nằm ở `content/archive/<clip>/` (luật 66); file này ghi việc ĐĂNG (ngày giờ VN, link, số liệu 24h/7 ngày).
 
-| Ngày giờ (VN) | Clip | Link TikTok | Caption/hashtag dùng | Views 24h | Views 7d | Giữ chân 3s | Xem hết % | Share | Save | Script mode | Mã hook | Ghi chú |
+| Ngày giờ (VN) | Clip | Link TikTok | Caption/hashtag dùng | Views 24h | Views 7d | Giữ chân 3s | Xem hết % | Share | Save | ARC | Mã hook | Ghi chú |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | (chưa có, Hiệp đăng thì ghi vào đây) | | | | | | | | | | | | |
 
-Cột mới (26/11/2026): số liệu lấy từ TikTok Studio sau 24h/7 ngày; `Script mode` = id trong `research/blueprints/index.json` (vd `SM01`), `Mã hook` = mã `P..` trong `research/trends/patterns.md`. Trend-digest weekly đọc bảng này để cộng `uses`/`wins` cho script mode và mã hook. Chưa có số thì để trống, không ước đoán.
+Cột mới (26/11/2026): số liệu lấy từ TikTok Studio sau 24h/7 ngày; `ARC` = mạch cốt truyện `ARC-NNN` trong `research/blueprints/index.json` (vd `ARC-001`; cột cũ «Script mode», SM01 đã đổi thành ARC-001 ngày 26/11), `Mã hook` = mã `P..` trong `research/trends/patterns.md`. Trend-digest weekly đọc bảng này để cộng `uses`/`wins` cho ARC và mã hook. Chưa có số thì để trống, không ước đoán.

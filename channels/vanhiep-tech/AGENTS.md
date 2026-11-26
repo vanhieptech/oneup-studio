@@ -4,7 +4,7 @@ date: 2026-11-07
 id: agents-vanhiep-tech
 type: guide
 status: active
-updated: 2026-11-08
+updated: 2026-11-26
 source: "grill-me plan 2026-11-07"
 tags: [agents, vanhiep-tech, talking-head, local]
 ---
@@ -25,7 +25,9 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md` (layers)
 5. Skill `channels/vanhiep-tech/skills/make-capcut-draft/SKILL.md` (CLI compile + cutout)
 6. CapCut: `channels/vanhiep-tech/docs/capcut-smoke.md`
+   - **Gate 0 (trước bản nháp v1):** `python3 pipeline/scripts/gate0.py --channel vht --idea "<ý>" [--arc ARC-NNN] [--memo media/voice-memos/<x>.txt] --out channels/vanhiep-tech/clips/<clip-id>/script.md` nạp 4 mảnh: ý tưởng (`content/idea-bank.md`, kể cả ý `@vanhiep.tech` từ teardown) + fact package · mạch `ARC-NNN` với nhịp 45–90s, **cắt layer `ov-*`/`cu-*` mỗi 3–5s** · chi tiết thật (story-bank hoặc transcript ghi âm nói chay, Voice-First ≥ 80% từ của Hiệp) + từ nối `resources/vn-spoken/connectors.tsv` · lưu ý mới nhất `resources/feedback.md` + `rules/ACTIVE-CHECKLIST.md` §3. Mảnh nào «chưa có» thì đi lấy, không bịa.
    - Viết lời: prompt `docs/prompts/writer-vanhiep-tech.md` (3 hook, bảng mốc · overlay/marker · lời) + `docs/research/craft-brief.md`
+   - Review lời: 2 tầng như `@hi.oneup` (rubric §3b) nhưng H3 = sai format kênh này (quá 90s, chibi/luật comic, overlay có shadow/blur DL-069, hồng/magenta); khẩu ngữ tự nhiên không bị trừ
    - Cắt video dài thành short: `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` (cổng bản quyền, Hiệp chọn đoạn, ra `a-roll.mp4` cho pipeline CapCut)
 7. HyperFrames: router → creative → animation / motion-graphics → talking-head-recut (**layout only**) · cutout: `remove-background`
 

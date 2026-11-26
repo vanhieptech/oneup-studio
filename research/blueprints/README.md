@@ -1,20 +1,23 @@
 ---
-title: "Thư viện script mode (công thức khung từ clip nhiều view)"
+title: "Thư viện mạch cốt truyện ARC-NNN (khung xương từ clip đối thủ đạt chuẩn outlier)"
 date: 2026-11-26
 id: research.blueprints
 type: research
 status: living
 updated: 2026-11-26
-tags: [blueprints, script-mode, teardown, trend]
-source: "pipeline/scripts/teardown.py (Gemini CLI) gộp mục `formula` của mỗi bản phân tích; templates/clip-teardown.md mục 11"
+tags: [blueprints, arc, story-arc, viral-dna, teardown, trend]
+source: "pipeline/arc_library.py gộp Khối 5 của mỗi Viral DNA Card (pipeline/scripts/teardown.py); SM01 cũ chuyển thành ARC-001 ngày 26/11"
 ---
-# Thư viện script mode
+# Thư viện mạch cốt truyện `ARC-NNN`
 
-Mỗi script mode là một công thức khung 4–6 bước, trừu tượng, dùng được cho chủ đề khác (không chứa nội dung clip gốc). `teardown.py` tự gộp: công thức giống một mode có sẵn ≥ 0,6 thì `seen` + 1 và thêm nguồn; không thì tạo mode mới `SMnn`.
+Mỗi `ARC` là một khung xương 4–6 bước, trống (`[...]`), dùng được cho chủ đề khác, kèm nhịp beat (vai trò · giây · chức năng giữ chân) và danh sách bằng chứng (clip đối thủ đạt chuẩn outlier đã teardown).
 
-`index.json`: `{"modes": [{"id", "formula": [...], "seen", "uses", "wins", "sources": [...]}]}`
-- `seen`: số clip nhiều view dùng khung này (từ teardown).
-- `uses`: số clip của mình dùng khung này (make-video gate 0 ghi khi Hiệp chọn).
-- `wins`: số clip của mình dùng khung này có số liệu tốt (trend-digest weekly, theo `content/published/README.md`).
+`index.json` là nguồn máy đọc (nguồn duy nhất):
+- `arcs`: `{"id": "ARC-NNN", "legacy_id"?, "name", "skeleton": [...], "beats": [...], "hook_mechanism", "seen", "uses", "wins", "evidence": [{"source", "creator", "ratio", "views", "followers", "date", "teardown"}]}`
+  - `seen` = số bằng chứng (tính lại mỗi lần ghi; cùng nguồn chạy lại không cộng thêm).
+  - `uses`: số clip của mình dùng mạch này (Gate 0 ghi khi Hiệp chọn). `wins`: clip dùng mạch có số liệu trên trung vị kênh (trend-digest weekly, theo `content/published/README.md` cột «ARC»).
+- `ideas`: góc chuyển thể Khối 6 (`arc`, `channel`, `idea`, `hook`, `length_s`, `teardown`, `date`, `status`).
 
-Gate 0 (make-video §2.0) đọc thư viện này để gieo góc; ưu tiên mode `seen` cao, chưa dùng ở 3 clip gần nhất.
+Bảng người đọc được sinh lại từ JSON, không sửa tay: `research/trends/patterns.md` › Story arcs (ARC-NNN) và `content/idea-bank.md` › Từ teardown (ARC). Sửa `uses`, `wins`, `status`, `name` trong `index.json` rồi chạy `python3 pipeline/scripts/teardown.py --rerender <teardown.json>` (hoặc bất kỳ teardown nào) để làm mới bảng.
+
+Gộp mạch: cùng nguồn → làm mới `ARC` đó; không thì độ giống (chuỗi vai trò beat + chữ khung, bỏ phần trong `[...]`) ≥ 0,6 → cộng bằng chứng; còn lại → `ARC` mới. Gate 0 (`pipeline/scripts/gate0.py`) đọc thư viện để gắn mạch cho ý tưởng.

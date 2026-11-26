@@ -29,6 +29,7 @@ import json, os, re, subprocess, sys, difflib, unicodedata, glob, math, tempfile
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
 from duration_policy import duration_status, estimated_total
+from review_tiers import parse_block, tier_verdict  # DL-074 two-tier verdict
 REPO = str(P.ROOT)
 NODE_BIN = P.NODE_BIN
 ASR_PY = P.ASR_PYTHON
@@ -128,6 +129,11 @@ def check_review(spec, fdir, want=None):
         except IndexError: seen = -1
         if seen < n:
             err("review", f"{rel}: feedback_seen {fm.get('feedback_seen', 'missing')} < {n} notes in {os.path.relpath(fp, REPO)} → review must answer every Hiệp note"); return
+    blk = parse_block(txt.split("\n---", 1)[1] if head else txt)  # DL-074: body's 5-line block decides; soft warnings never reject
+    tv = tier_verdict(blk)
+    if tv and tv[0] != verdict:
+        err("review", f"{rel}: front-matter verdict {verdict} ≠ two-tier verdict {tv[0]} from the body block "
+                      f"(hard fails {len(blk['hard_fails'])}, TOTAL {blk['score']}) → fix the front-matter (rubric §3b)"); return
     if verdict == "CHƯA ĐẠT": err("review", f"{rel}: verdict CHƯA ĐẠT (score {fm.get('score', '?')}) → fix the quoted lines, re-run §3–§4b, don't send gate 1")
     elif verdict == "ĐẠT VỀ ĐIỂM": warn("review", f"{rel}: ĐẠT VỀ ĐIỂM (score {fm.get('score', '?')}), open conflict for Hiệp to decide: {fm.get('verdict')}")
     else: ok("review", f"{rel}: ĐẠT (score {fm.get('score', '?')}), script_hash matches")
@@ -920,10 +926,29 @@ def _viet_syllables():  # chỉ xét âm tiết tiếng Việt có trong Viet74K
         if os.path.exists(VIET74K):
             for l in open(VIET74K, encoding="utf-8"): _SYL.update(unicodedata.normalize("NFC", l).lower().split())
     return _SYL
+AI_BLACKLIST_TSV = os.path.join(REPO, "resources/vn-spoken/ai-blacklist.tsv")
+def _ai_blacklist():  # (cụm, vị trí start|any, thay bằng, nguồn) — DL-074 / resources/vn-spoken/ai-blacklist.tsv
+    out = []
+    if os.path.exists(AI_BLACKLIST_TSV):
+        for l in open(AI_BLACKLIST_TSV, encoding="utf-8"):
+            if l.strip() and not l.startswith("#"):
+                c = l.rstrip("\n").split("\t") + ["", "", "", ""]
+                out.append((unicodedata.normalize("NFC", c[0]).lower(), c[1] or "any", c[3], c[4]))
+    return out
+def _padded_words(s): return " " + " ".join(re.findall(r"[0-9a-zà-ỹđ]+", unicodedata.normalize("NFC", s).lower())) + " "
+def check_ai_blacklist_text(where, text):
+    sents = [_padded_words(x) for x in re.split(r"[.?!…\n]+", re.sub(r"\{[^}:]*:\s*([^}]*)\}", r"\1", text)) if x.strip()]
+    hits = []
+    for w, pos, alt, src in _ai_blacklist():
+        if any((s.startswith(f" {w} ") if pos == "start" else f" {w} " in s) for s in sents): hits.append((w, pos, alt, src))
+    for w, pos, alt, src in hits:
+        warn("ai-tell", f"{where}: «{w}»{' ở đầu câu' if pos == 'start' else ''} là mùi AI / văn dịch → {alt} ({src}; resources/vn-spoken/ai-blacklist.tsv)")
+    return len(hits)
 def check_bookish_text(where, text, rank=None):
-    t = " " + " ".join(re.findall(r"[0-9a-zà-ỹđ]+", unicodedata.normalize("NFC", text).lower())) + " "
+    t = _padded_words(text)
     hits = [(w, alt, src) for w, alt, src in _bookish_list() if f" {w} " in t]
     for w, alt, src in hits: warn("bookish", f"{where}: «{w}» nghe như văn viết → thử «{alt}» ({src})")
+    hits += [None] * check_ai_blacklist_text(where, text)
     rank = _freq_rank() if rank is None else rank
     syl = _viet_syllables()
     rare = sorted({x for x in t.split() if rank and not x.isdigit() and (not syl or x in syl) and rank.get(x, 10**9) > BOOKISH_RARE_RANK})

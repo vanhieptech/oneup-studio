@@ -104,7 +104,7 @@ tags: [index, retrieval]
 | research.social-poster.caption-hashtag-2026-10-20 | research | draft | `research/agents/social-poster-caption-hashtag-trends-2026-10-20.md` | Caption + hashtag theo nền tảng: nghiên cứu ngày 20/10/2026 (Social Poster) |
 | research.social-poster | research | reference | `research/agents/social-poster-research.md` | Social Poster — Nghiên cứu repo langchain-ai/social-media-agent (draft-only cho OneUp) |
 | research.social-research-audit | research | reference | `research/agents/social-research-repo-audit-vi.md` | Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp) |
-| research.blueprints | research | living | `research/blueprints/README.md` | Thư viện script mode |
+| research.blueprints | research | living | `research/blueprints/README.md` | Thư viện mạch cốt truyện `ARC-NNN` |
 | research-character-animation | research | draft | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.craft.hook-script-study-2026-11-11 | craft-study | draft | `research/craft/hook-script-study-2026-11-11.md` | Học lại hook và mạch script từ video thật (11/11/2026) |
@@ -234,7 +234,7 @@ tags: [index, retrieval]
 | research.trends.2026-11-11.treg.README | readme | ready | `research/trends/2026-11-11/treg/README.md` | Treg TikTok — 2026-11-11 |
 | trends-2026-11-12 | trend-digest | draft-needs-review | `research/trends/2026-11-12/digest.md` | Trend digest 2026-11-12 (thứ Năm) |
 | research.trends.2026-11-12.treg.README | readme | ready | `research/trends/2026-11-12/treg/README.md` | Treg TikTok — 2026-11-12 |
-| teardown.manghocls-7366613156908600583 | teardown | draft | `research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md` | Teardown `manghocls-7366613156908600583` |
+| teardown.manghocls-7366613156908600583 | teardown | draft | `research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md` | Viral DNA Card `manghocls-7366613156908600583` |
 | teardown.selftest-clip02 | teardown | draft | `research/trends/2026-11-26/teardowns/selftest-clip02.md` | Teardown `selftest-clip02` (tự kiểm trên clip của kênh) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
@@ -242,11 +242,13 @@ tags: [index, retrieval]
 | trends-weekly-2026-W43 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W43.md` | Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10) |
 | trends-weekly-2026-W44 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W44.md` | Tổng hợp tuần 2026-W44 (thứ Hai 26/10 → Chủ nhật 01/11) |
 | trends-weekly-2026-W45 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W45.md` | Tổng hợp tuần 2026-W45 (thứ Hai 02/11 → Chủ nhật 08/11) |
+| resources.feedback | resource | ready | `resources/feedback.md` | Góp ý của Hiệp về lời script |
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-dict.vi50k-source | resource | ready | `resources/vn-dict/vi_50k.SOURCE.md` | Nguồn `vi_50k.txt` |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | ready | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |
 | resources.vn-spoken.sources | resource | ready | `resources/vn-spoken/sources.md` | Sổ nguồn văn nói và kiến thức |
+| resources.vn-spoken.voice-first | resource | ready | `resources/vn-spoken/voice-first.md` | Voice-First Input |
 | rules-active-checklist | rules | ready | `rules/ACTIVE-CHECKLIST.md` | Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm) |
 | rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
@@ -277,7 +279,7 @@ tags: [index, retrieval]
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | script-polish |
 | skill.social-poster | skill | active | `skills/social-poster/SKILL.md` | social-poster |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | trend-digest |
-| template.clip-teardown | template | ready | `templates/clip-teardown.md` | Phân tích clip: <tên ngắn> (`<tiktok id>`) |
+| template.clip-teardown | template | ready | `templates/clip-teardown.md` | Viral DNA Card: <tên ngắn> (`<creator>-<tiktok id>`) |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |
 | video-engine | guide | active | `video-engine/README.md` | video-engine: comic character video từ scene plan (Remotion + React + TS) |

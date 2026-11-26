@@ -125,7 +125,7 @@ def run(s):
     except Exception as e:
         items, st, err = [], "error", f"{type(e).__name__}: {e}"[:200]
     for i, it in enumerate(items):
-        it.update(source=s["id"], cat=s["cat"], lang=s["lang"], rank=i + 1)
+        it.update(source=s["id"], cat=s["cat"], lang=s["lang"], rank=i + 1, stream=s.get("stream", "general"))
     return {"source": s["id"], "type": s["type"], "status": st, "count": len(items), "error": err,
             "ms": int((dt.datetime.now() - t0).total_seconds() * 1000)}, items
 
@@ -180,7 +180,9 @@ def main():
         m = c["members"][0]; text = m["title"] + " " + m.get("summary", "")
         nsrc = len({x["source"] for x in c["members"]}); best = min(x["rank"] for x in c["members"])
         safety = "drop" if re.search(DROP, text.lower()) else "caution" if re.search(CAUTION, text.lower()) else "ok"
-        items.append({"id": slug(m["title"]), "kind": "news", "category": classify(text, m["cat"]), "lang": m["lang"],
+        streams = {x.get("stream", "general") for x in c["members"]}
+        stream = next((k for k in ("tiktok", "upstream", "vn-tech") if k in streams), "general")
+        items.append({"id": slug(m["title"]), "kind": "news", "category": classify(text, m["cat"]), "lang": m["lang"], "stream": stream,
                       "text": m["title"], "summary": m.get("summary", "")[:300],
                       "signals": {"sources": sorted({x["source"] for x in c["members"]}), "cross_sources": nsrc, "best_rank": best,
                                   "metrics": {x["source"]: x["metric"] for x in c["members"] if x.get("metric")}},

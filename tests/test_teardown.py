@@ -22,7 +22,14 @@ def test_cut_accuracy_uses_part_offsets():
 
 def test_render_md_has_template_sections():
     md = td.render_md("c1", DATA, {"date": "2026-11-26", "video": "v.mp4", "cli": "0.71.1", "model": "m"})
-    for h in ("## 2. Hook", "## 3. Xương sống", "## 5. Nhịp", "## 11. Công thức khung"): assert h in md
+    for h in ("## Khối 0", "## Khối 1 — Hook Mechanics", "## Khối 2 — Story Arc & Beat Map", "## Khối 3 — Winning Points",
+              "## Khối 4 — Algorithmic Triggers", "## Khối 5 — Reusable Story Arc", "## Khối 6 — Dual-Channel Angle"): assert h in md
+
+def test_normalize_maps_old_json():
+    d = td.normalize(DATA)
+    assert [b["role"] for b in d["beats"]] == ["dẫn dắt", "kết"] and d["beats"][0]["seconds"] == 4
+    assert d["arc"]["skeleton"] == ["a", "b", "c", "d"] and d["winning_points"]["interrupts"][0]["t"] == "00:04"
+    assert td.normalize(d) == d  # idempotent
 
 
 import unittest as _ut
@@ -35,15 +42,22 @@ if __name__ == "__main__":
     _ut.main()
 
 class BlueprintAndCleanup(_ut.TestCase):
-    def test_merge_blueprint_seen_and_new(self):
+    def test_finish_upserts_arc_and_ideas_without_touching_repo(self):
         import tempfile, pathlib
-        p = pathlib.Path(tempfile.mkdtemp()) / "index.json"
-        a = td.merge_blueprint(["kể chuyện hụt", "hỏi vì sao", "nghiên cứu trả lời", "cách làm nhỏ"], "u1", path=p)
-        b = td.merge_blueprint(["kể chuyện hụt", "hỏi vì sao", "nghiên cứu trả lời", "cách làm nhỏ nhất"], "u2", path=p)
-        c = td.merge_blueprint(["danh sách 5 mẹo", "mẹo bất ngờ cuối"], "u3", path=p)
-        lib = json.loads(p.read_text())
-        self.assertEqual(a, b); self.assertNotEqual(a, c)
-        self.assertEqual(lib["modes"][0]["seen"], 2); self.assertEqual(lib["modes"][0]["sources"], ["u1", "u2"])
+        from unittest import mock
+        d = pathlib.Path(tempfile.mkdtemp())
+        (d / "patterns.md").write_text("# p\n", encoding="utf-8"); (d / "ideas.md").write_text("# i\n", encoding="utf-8")
+        new = dict(DATA, arc={"name": "x", "skeleton": ["[a]", "[b]", "[c]", "[d]"]},
+                   angles={"hi_oneup": {"idea": "ý comic", "hook": "h", "length_s": 150}, "vanhiep_tech": {"idea": "ý tech", "length_s": 60}})
+        with mock.patch.object(td.ARC, "LIB", d / "index.json"), mock.patch.object(td.ARC, "PATTERNS", d / "patterns.md"), \
+             mock.patch.object(td.ARC, "IDEAS", d / "ideas.md"), mock.patch.object(td, "find_clip", lambda s: None):
+            meta = {"date": "2026-11-26", "video": "v.mp4", "cli": "agy", "model": "m", "source": "https://www.tiktok.com/@a/video/1"}
+            td.finish("c1", new, meta, str(d / "td"))
+            td.finish("c1", new, dict(meta), str(d / "td"))  # re-run: same evidence, no double count
+        lib = json.loads((d / "index.json").read_text())
+        self.assertEqual(lib["arcs"][0]["id"], "ARC-001"); self.assertEqual(lib["arcs"][0]["seen"], 1); self.assertEqual(len(lib["ideas"]), 2)
+        self.assertIn("ARC-001", (d / "patterns.md").read_text()); self.assertIn("ý comic", (d / "ideas.md").read_text())
+        self.assertIn("## Khối 5 — Reusable Story Arc (ARC-001)", (d / "td" / "c1.md").read_text())
 
     def test_downloaded_file_deleted_even_when_gemini_fails(self):
         import tempfile, sys as _sys

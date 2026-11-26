@@ -2,7 +2,8 @@
 """Video teardown with Gemini CLI: watch + listen to a clip, extract hook / pacing / spine / audio / ending as JSON.
 
   teardown.py VIDEO.mp4 | --url <tiktok/youtube link> [--engine auto|agy|gemini] [--id ID] [--model gemini-2.5-pro] [--out-dir research/trends/<date>/teardowns]
-               [--clip-json row.json] [--timing final/timing.json]
+               [--clip-json row.json] [--timing final/timing.json] [--queue-id trends-YYYY-MM-DD-NN] [--no-arc]
+  teardown.py --rerender research/trends/<date>/teardowns/<id>.json     # re-render the 6-block .md + ARC/idea-bank from a saved JSON (no model call)
 
 - Prompt: docs/prompts/gemini-teardown.md (between <<<PROMPT and PROMPT>>>). Output: <out-dir>/<id>.json + <id>.md
   (sections 2, 3, 5, 6, 7 of templates/clip-teardown.md; the rest is filled from Apify / by Claude).
@@ -13,16 +14,21 @@
 - --timing: our own clip's timing.json → report how far Gemini's cut times are from the real scene starts (accuracy check).
 - --url: yt-dlp downloads to media/tmp/teardown/ (gitignored), the clip is analysed, and the file is deleted in a finally
   block even when Gemini fails; the link is stored in the JSON. Hiệp OK'd analysing competitor clips (26/11); never reuse them.
-- Each run merges `formula` into research/blueprints/index.json (similar ≥ 0.6 → seen+1, else a new script mode).
+- Output = Viral DNA card, 6 blocks (templates/clip-teardown.md): hook · beat map · winning points · algorithmic triggers ·
+  reusable arc ARC-NNN · dual-channel angle. Khối 0 metadata comes from --clip-json, else the clip's row in
+  research/trends/*/apify/clips.json (matched by URL / TikTok id).
+- Each run upserts Khối 5 into the ARC library (pipeline/arc_library.py: similar ≥ 0.6 → add evidence, else new ARC-NNN),
+  pushes Khối 6 to content/idea-bank.md, rebuilds the ARC table in research/trends/patterns.md, and with --queue-id marks the
+  teardown-queue row done (trend-streams.py). Old JSON (spine/pacing/formula) is mapped to the new blocks.
 """
 import datetime as dt, json, os, re, subprocess, sys
 from pathlib import Path
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+import arc_library as ARC
 
 PROMPT_MD = P.ROOT / "docs/prompts/gemini-teardown.md"
 
-BLUEPRINTS = P.ROOT / "research/blueprints/index.json"
 TMP_DIR = P.ROOT / "media/tmp/teardown"
 
 def download(url):
@@ -36,27 +42,6 @@ def download(url):
     if r.returncode or not path or not os.path.exists(path):
         raise SystemExit(f"yt-dlp failed for {url}: {r.stderr.strip()[-300:]}")
     return path
-
-def _sim(a, b):
-    import difflib
-    return difflib.SequenceMatcher(None, " ".join(a).lower(), " ".join(b).lower()).ratio()
-
-def merge_blueprint(formula, source, path=None, threshold=0.6):
-    """Add a teardown formula to the script-mode library: similar (≥ threshold) → seen+1 + source, else a new id."""
-    path = Path(path or BLUEPRINTS)
-    lib = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"modes": []}
-    if not formula: return None
-    best = max(lib["modes"], key=lambda m: _sim(m["formula"], formula), default=None)
-    if best and _sim(best["formula"], formula) >= threshold:
-        best["seen"] += 1
-        if source not in best["sources"]: best["sources"].append(source)
-        mode = best
-    else:
-        mode = {"id": f"SM{len(lib['modes']) + 1:02d}", "formula": formula, "seen": 1, "uses": 0, "wins": 0, "sources": [source]}
-        lib["modes"].append(mode)
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(lib, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    return mode["id"]
 
 def load_prompt():
     t = PROMPT_MD.read_text(encoding="utf-8")
@@ -85,7 +70,7 @@ def cut_accuracy(data, timing_path):
         starts += [round(base + float(x), 2) for x in part.get("scene_starts", [])]
         off = base + float(part.get("dur", 0))
     starts = sorted(set(starts))
-    guesses = [mmss(x.get("t")) for x in data.get("pacing", {}).get("interrupts", [])] + [mmss(x.get("from")) for x in data.get("spine", [])]
+    guesses = [mmss(x.get("t")) for x in ((data.get("winning_points") or {}).get("interrupts") or data.get("pacing", {}).get("interrupts", []))] + [mmss(x.get("from")) for x in (data.get("beats") or data.get("spine") or [])]
     guesses = [g for g in guesses if g is not None]
     if not starts or not guesses: return {"n": 0}
     d = [min(abs(g - s) for s in starts) for g in guesses]
@@ -125,31 +110,120 @@ def run_gemini(video, model):
         print(f"gemini error: {out['error'].get('message', out['error'])}", file=sys.stderr); sys.exit(3)
     return out
 
+def normalize(data):
+    """Map an old teardown JSON (spine / pacing / formula, before the 6-block prompt) onto the 6 blocks. Idempotent."""
+    d = dict(data)
+    if not d.get("beats") and d.get("spine"):
+        d["beats"] = [{"from": x.get("from"), "to": x.get("to"), "seconds": (lambda a, b: round(b - a, 1) if a is not None and b is not None else None)(mmss(x.get("from")), mmss(x.get("to"))),
+                       "role": x.get("role"), "retention_function": None, "summary": x.get("summary"), "transition": x.get("transition")} for x in d["spine"]]
+    if d.get("beats") and d["beats"] and d["beats"][0].get("role") != "hook" and mmss(d["beats"][0].get("from")) == 0:
+        pass  # Gemini may call the opening «dẫn dắt»; keep its word
+    wp = d.setdefault("winning_points", {})
+    if not wp.get("interrupts") and d.get("pacing", {}).get("interrupts"): wp["interrupts"] = d["pacing"]["interrupts"]
+    if wp.get("interrupts_per_10s") is None and d.get("pacing", {}).get("avg_seconds_per_change"):
+        wp["interrupts_per_10s"] = round(10 / float(d["pacing"]["avg_seconds_per_change"]), 1)
+    d.setdefault("algorithmic_triggers", {})
+    arc = d.setdefault("arc", {})
+    if not arc.get("skeleton") and d.get("formula"): arc["skeleton"] = d["formula"]
+    if not arc.get("hook_mechanism"): arc["hook_mechanism"] = (d.get("hook") or {}).get("mechanism") or ""
+    arc["beats"] = [{"role": b.get("role"), "function": b.get("retention_function"), "seconds": b.get("seconds"), "transition": b.get("transition")}
+                    for b in d.get("beats", [])]
+    d.setdefault("angles", {})
+    return d
+
+def find_clip(source):
+    """Khối 0 metadata: the clip's row in research/trends/*/apify/clips.json (by TikTok id or URL), newest first."""
+    vid = re.search(r"/video/(\d+)", source or "") or re.search(r"(\d{15,})", source or "")
+    for f in sorted(P.ROOT.glob("research/trends/20??-??-??/apify/clips.json"), reverse=True):
+        try: doc = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError: continue
+        for c in (doc if isinstance(doc, list) else doc.get("clips", [])):
+            if (vid and vid.group(1) in (c.get("url") or "")) or (source and source == c.get("url")): return c
+    return None
+
+def _v(x, k="text"):
+    return (x or {}).get(k) if isinstance(x, dict) else x
+
 def render_md(cid, data, meta):
-    h, L = data.get("hook", {}), []
+    d = normalize(data); h, L = d.get("hook", {}), []
+    c = d.get("apify") or {}
+    fans = (c.get("author") or {}).get("fans"); views = c.get("play_count")
+    ratio = round(views / fans, 2) if fans and views else None
     L += ["---", f'title: "Teardown {cid}"', f"date: {meta['date']}", f"id: teardown.{cid}", "type: teardown", "status: draft",
-          f"updated: {meta['date']}", "tags: [teardown, trend]", f'source: "{meta["video"]} · Gemini CLI {meta["cli"]} · model {meta["model"]}"', "---",
-          f"# Teardown `{cid}`", "", "Theo `templates/clip-teardown.md`. Mục 2, 3, 5, 6, 7 do Gemini điền (quan sát/suy đoán ghi trong JSON); mục 0, 1, 4, 8 từ Apify; 9–11 Claude tổng hợp.", "",
-          "## 2. Hook 0–3 giây", f"- Lời: {h.get('spoken')} (nguyên văn: {h.get('verbatim')})", f"- Chữ trên màn hình: {h.get('on_screen_text')}",
-          f"- Hình / hành động: {h.get('visual_action')}", f"- Cơ chế: {h.get('mechanism')} — {h.get('mechanism_note')}", f"- Lời hứa ngầm: {h.get('implied_promise')}", "",
-          "## 3. Xương sống", "| mốc | vai trò | tóm ý | chuyển ý |", "|---|---|---|---|"]
-    L += [f"| {x.get('from')}–{x.get('to')} | {x.get('role')} | {x.get('summary')} | {x.get('transition')} |" for x in data.get("spine", [])]
-    L += [f"- Trả lời lời hứa ở: {data.get('promise_answered_at')}", "", "## 5. Nhịp & ngắt nhịp",
-          f"- Trung bình mỗi lần đổi: {data.get('pacing', {}).get('avg_seconds_per_change')} giây"]
-    L += [f"- {x.get('t')} {x.get('what')} ({x.get('kind')})" for x in data.get("pacing", {}).get("interrupts", [])]
-    a = data.get("audio", {})
-    L += ["", "## 6. Âm thanh & năng lượng", f"- Nhịp nói: {a.get('speech_pace')} · tone: {a.get('tone')} · nhạc: {a.get('music')}"]
-    L += [f"- nhấn {x.get('t')}: {x.get('what')}" for x in a.get("emphasis", [])] + [f"- SFX {x.get('t')}: {x.get('what')}" for x in a.get("sfx", [])]
-    e = data.get("ending", {})
-    L += ["", "## 7. Kết & CTA", f"- Kiểu: {e.get('type')} · CTA: {e.get('cta')}", "", "## 9. Vì sao nó chạy (Gemini, suy đoán)"]
-    L += [f"- {x.get('claim')} ({x.get('evidence')})" for x in data.get("why_it_works", [])]
-    L += ["", "## 11. Công thức khung"] + [f"{k}. {x}" for k, x in enumerate(data.get("formula", []), 1)]
-    if meta.get("accuracy"): L += ["", f"## Kiểm độ chính xác mốc cắt (so với timing.json)", f"- {meta['accuracy']}"]
+          f"updated: {meta['date']}", "tags: [teardown, trend, viral-dna]", f'source: "{meta.get("source") or meta["video"]} · {meta["cli"]} · model {meta["model"]}"', "---",
+          f"# Viral DNA Card `{cid}`", "", "Theo `templates/clip-teardown.md` (6 khối). Khối 1–6 do model xem + nghe video điền (quan sát / suy đoán); Khối 0 từ Apify. Không chép câu, hình, âm thanh vào clip của mình.", "",
+          "## Khối 0 — Số liệu", "| link | creator | follower | view | view/follower | comment | share | độ dài | ngày đăng |", "|---|---|---|---|---|---|---|---|---|",
+          f"| {meta.get('source') or ''} | {(c.get('author') or {}).get('name', '')} | {fans or ''} | {views or ''} | {str(ratio) + 'x' if ratio else ''} | {c.get('comment_count', '')} | {c.get('share_count', '')} | {c.get('duration_s', '')} | {(c.get('create_time') or '')[:10]} |", "",
+          "## Khối 1 — Hook Mechanics (0–3 giây)", f"- Câu mở đầu: {h.get('spoken')} (nguyên văn: {h.get('verbatim')})", f"- Chữ trên màn hình: {h.get('on_screen_text')}",
+          f"- Hình / hành động: {h.get('visual_action')}", f"- Cơ chế tâm lý: **{h.get('mechanism')}** — {h.get('mechanism_note')}", f"- Lời hứa ngầm: {h.get('implied_promise')}", "",
+          "## Khối 2 — Story Arc & Beat Map", "| mốc | giây | vai trò | chức năng giữ chân | tóm ý | chuyển ý sang beat sau |", "|---|---|---|---|---|---|"]
+    L += [f"| {b.get('from')}–{b.get('to')} | {b.get('seconds')} | {b.get('role')} | {b.get('retention_function') or '—'} | {b.get('summary')} | {b.get('transition')} |" for b in d.get("beats", [])]
+    wp = d.get("winning_points", {})
+    L += [f"- Trả lời lời hứa của hook ở: {d.get('promise_answered_at')}", "", "## Khối 3 — Winning Points",
+          f"- Ẩn dụ / ví dụ đắt nhất: {_v(wp.get('best_metaphor')) or '—'} ({_v(wp.get('best_metaphor'), 't') or '—'})",
+          f"- Câu đáng lưu / share: {_v(wp.get('quotable_line')) or '—'} ({_v(wp.get('quotable_line'), 't') or '—'})",
+          f"- Ngắt nhịp: {wp.get('interrupts_per_10s') if wp.get('interrupts_per_10s') is not None else '—'} lần / 10 giây"]
+    L += [f"  - {x.get('t')} {x.get('what')} ({x.get('kind')})" for x in wp.get("interrupts", [])]
+    a = d.get("audio", {}); e = d.get("ending", {})
+    L += [f"- Âm thanh: nhịp {a.get('speech_pace')} · tone {a.get('tone')} · nhạc {a.get('music')} (luật 21: clip mình không có nhạc)",
+          f"- Kết: {e.get('type')} · CTA: {e.get('cta')}", "", "## Khối 4 — Algorithmic Triggers"]
+    at = d.get("algorithmic_triggers", {})
+    L += [f"- Bình luận: {x.get('what')} ({x.get('why')}, {x.get('kind')})" for x in at.get("comment", [])] or ["- Bình luận: — (bổ sung từ Apify comments)"]
+    L += [f"- Lưu / chia sẻ: {x.get('what')} ({x.get('why')}, {x.get('kind')})" for x in at.get("save_share", [])] or ["- Lưu / chia sẻ: —"]
+    if at.get("_source"): L.append(f"- Nguồn khối: {at['_source']}")
+    arc = d.get("arc", {})
+    L += ["", f"## Khối 5 — Reusable Story Arc ({meta.get('arc') or 'ARC chưa gộp'})", f"- Tên: {arc.get('name') or '—'} · cơ chế hook: {arc.get('hook_mechanism') or '—'}"]
+    L += [f"{k}. {x}" for k, x in enumerate(arc.get("skeleton", []), 1)]
+    if arc.get("_source"): L.append(f"- Nguồn khối: {arc['_source']}")
+    if meta.get("arc"): L += [f"- {'Mạch mới' if meta.get('arc_new') else 'Trùng mạch đã có, cộng bằng chứng'}: xem `research/trends/patterns.md` › Story arcs."]
+    ang = d.get("angles", {})
+    L += ["", "## Khối 6 — Dual-Channel Angle (suy đoán, Hiệp chọn ở Gate 0)"]
+    for ch, lab in (("hi_oneup", "@hi.oneup (comic + motion, 120–180s)"), ("vanhiep_tech", "@vanhiep.tech (talking-head + overlay, 45–90s)")):
+        x = ang.get(ch) or {}
+        L.append(f"- **{lab}:** {x.get('idea') or '— (chưa có: teardown cũ, Claude bổ sung hoặc chạy lại)'}" + (f" · hook: «{x.get('hook')}» · ~{x.get('length_s')}s" if x.get("idea") else ""))
+    if ang.get("_source"): L.append(f"- Nguồn khối: {ang['_source']}")
+    L += ["", "## Vì sao nó chạy (suy đoán)"] + [f"- {x.get('claim')} ({x.get('evidence')})" for x in d.get("why_it_works", [])]
+    if meta.get("accuracy"): L += ["", "## Kiểm độ chính xác mốc cắt (so với timing.json)", f"- {meta['accuracy']}"]
     return "\n".join(L) + "\n"
+
+def finish(cid, data, meta, outd, opt_queue=None, arc=True):
+    """Write JSON + 6-block md, upsert ARC, push angles to idea-bank, rebuild generated tables, close the queue row."""
+    data = normalize(data)
+    if data.get("apify") is None: data["apify"] = find_clip(meta.get("source"))
+    md_path = Path(outd) / f"{cid}.md"
+    rel = str(md_path.resolve().relative_to(P.ROOT)) if P.ROOT in md_path.resolve().parents else str(md_path)
+    if arc:
+        c = data.get("apify") or {}; fans = (c.get("author") or {}).get("fans"); views = c.get("play_count")
+        meta["arc"], meta["arc_new"] = ARC.upsert_arc(data["arc"], {"source": meta.get("source"), "creator": (c.get("author") or {}).get("name"),
+                                                                     "ratio": round(views / fans, 2) if fans and views else None, "views": views,
+                                                                     "followers": fans, "date": meta["date"], "teardown": rel})
+        if meta["arc"]:
+            ARC.push_ideas(meta["arc"], data.get("angles"), rel, meta["date"])
+            ARC.render_patterns(); ARC.render_ideas()
+    data["_meta"] = meta
+    os.makedirs(outd, exist_ok=True)
+    open(os.path.join(outd, f"{cid}.json"), "w", encoding="utf-8").write(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
+    md_path.write_text(render_md(cid, data, meta), encoding="utf-8")
+    if opt_queue:
+        import importlib.util
+        sp = importlib.util.spec_from_file_location("trend_streams", os.path.join(os.path.dirname(os.path.abspath(__file__)), "trend-streams.py"))
+        ts = importlib.util.module_from_spec(sp); sp.loader.exec_module(ts); ts.mark_done(opt_queue, rel)
+    return rel
+
+def rerender(json_path):
+    data = json.loads(Path(json_path).read_text(encoding="utf-8"))
+    meta = dict(data.get("_meta") or {}); meta.setdefault("date", dt.date.today().isoformat())
+    meta.setdefault("video", ""); meta.setdefault("cli", "?"); meta.setdefault("model", "?")
+    meta.pop("blueprint", None)
+    cid = Path(json_path).stem
+    rel = finish(cid, data, meta, str(Path(json_path).parent))
+    print(f"rerender → {rel} · {meta.get('arc')}{' (mới)' if meta.get('arc_new') else ''}")
+    return 0
 
 def main():
     a = sys.argv[1:]
     def opt(n, d=None): return a[a.index(n) + 1] if n in a else d
+    if opt("--rerender"): return rerender(opt("--rerender"))
     url = opt("--url")
     if not url and (not a or a[0].startswith("-")): print(__doc__); return 2
     video = download(url) if url else a[0]
@@ -178,12 +252,8 @@ def analyse(video, url, opt):
     if opt("--timing"): meta["accuracy"] = cut_accuracy(data, opt("--timing"))
     if opt("--clip-json"): data["apify"] = json.load(open(opt("--clip-json"), encoding="utf-8"))
     meta["source"] = source
-    meta["blueprint"] = merge_blueprint(data.get("formula") or [], source) if "--no-blueprint" not in sys.argv else None
-    data["_meta"] = meta
-    os.makedirs(outd, exist_ok=True)
-    open(os.path.join(outd, f"{cid}.json"), "w", encoding="utf-8").write(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
-    open(os.path.join(outd, f"{cid}.md"), "w", encoding="utf-8").write(render_md(cid, data, meta))
-    print(f"teardown → {outd}/{cid}.{{json,md}} · model {used}" + (f" · accuracy {meta['accuracy']}" if meta.get("accuracy") else ""))
+    rel = finish(cid, data, meta, outd, opt("--queue-id"), arc=not ({"--no-arc", "--no-blueprint"} & set(sys.argv)) and not opt("--timing"))  # --timing = self-test on our own clip, not evidence
+    print(f"teardown → {rel} · model {used} · {meta.get('arc') or 'no arc'}" + (f" · accuracy {meta['accuracy']}" if meta.get("accuracy") else ""))
     return 0
 
 if __name__ == "__main__":

@@ -68,3 +68,21 @@ class Gate0Warning(_ut.TestCase):
         draft.write_text("## Gate 0\n- A\n\n" + DRAFT, encoding="utf-8")
         out = subprocess.run([sys.executable, os.path.join(R, "pipeline/scripts/check-rules.py"), "--review", str(draft)], capture_output=True, text=True).stdout
         self.assertNotIn("gate0", out)
+
+
+class TwoTierBlock(_ut.TestCase):
+    """DL-074: the body's HARD_FAILS/SCORE block recomputes the verdict; front-matter must agree."""
+    BLOCK = "HARD_FAILS: {h}\nSCORE: A=18 B=13 C=17 D=14 E=14 F=9 G=4 TOTAL={t}\nSOFT_WARNINGS: 4\nCONFLICTS: không\nVERDICT: {v}\n"
+
+    def _fm(self, verdict, body):
+        return f"---\ntitle: \"review\"\nverdict: {verdict}\nscore: 89\nscript_hash: {cr.script_hash(SPEC)}\n---\n{body}"
+
+    def test_block_agrees_passes(self):
+        self.assertEqual(run(self._fm("ĐẠT", self.BLOCK.format(h="không", t=89, v="ĐẠT"))), [("✔", "review")])
+
+    def test_strict_model_overruled_by_numbers(self):
+        # model said CHƯA ĐẠT while score ≥85 and no hard fail: front-matter CHƯA ĐẠT disagrees with the tier verdict
+        self.assertEqual(run(self._fm("CHƯA ĐẠT — sửa nhỏ", self.BLOCK.format(h="không", t=89, v="CHƯA ĐẠT"))), [("✖", "review")])
+
+    def test_hard_fail_blocks_even_high_score(self):
+        self.assertEqual(run(self._fm("ĐẠT", self.BLOCK.format(h="H1: «nhớ gấp 3 lần» không có nguồn", t=92, v="ĐẠT"))), [("✖", "review")])

@@ -1,0 +1,54 @@
+{
+ "date": "2026-11-26",
+ "config": "pipeline/trends/radar.yaml",
+ "rows": [
+  {
+   "id": "depcungtram-7665217280120196373",
+   "url": "https://www.tiktok.com/@depcungtram/video/7665217280120196373",
+   "creator": "depcungtram",
+   "followers": 33700,
+   "views": 989600,
+   "ratio_views_followers": 29.36,
+   "apify_outlier": 29.36,
+   "apify_basis": "fans",
+   "comments": 350,
+   "shares": 6742,
+   "saves": null,
+   "created": "2026-07-22T13:00:00.000Z",
+   "duration_s": 10,
+   "topic_tags": [
+    "productivity"
+   ],
+   "growth": null,
+   "reasons": [
+    "ratio≥3.0"
+   ],
+   "angle": "",
+   "teardown": null
+  },
+  {
+   "id": "manghocls-7366613156908600583",
+   "url": "https://www.tiktok.com/@manghocls/video/7366613156908600583",
+   "creator": "manghocls",
+   "followers": 99000,
+   "views": 756800,
+   "ratio_views_followers": 7.64,
+   "apify_outlier": 7.64,
+   "apify_basis": "fans",
+   "comments": 410,
+   "shares": 2247,
+   "saves": null,
+   "created": "2024-05-08T13:01:28.000Z",
+   "duration_s": 64,
+   "topic_tags": [
+    "hoc-tap"
+   ],
+   "growth": null,
+   "reasons": [
+    "ratio≥3.0"
+   ],
+   "angle": "",
+   "teardown": "research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md"
+  }
+ ]
+}

@@ -1,20 +1,85 @@
 {
- "modes": [
+ "arcs": [
   {
-   "id": "SM01",
-   "formula": [
-    "Mở đầu bằng lời hứa số lượng cụ thể gắn với một chuẩn thành tích hoặc kết quả đáng tin.",
-    "Chốt hook bằng một từ chuyển nhịp ngắn gọn rồi cắt cảnh ngay vào ý đầu tiên.",
-    "Trình bày từng ý theo cấu trúc lặp lại: tên giải pháp ngắn -> cơ chế hoạt động -> con số hoặc ví dụ cụ thể.",
-    "Đổi kiểu chữ nhấn màu và kết hợp đạo cụ hoặc động tác tay minh họa ở mỗi lần chuyển ý.",
-    "Ngắt nhịp chuyển cảnh rõ ràng trước phần kết, sau đó đặt câu hỏi mở gắn với chuỗi nội dung để kéo bình luận."
+   "id": "ARC-001",
+   "legacy_id": "SM01",
+   "name": "Lời hứa N cách + neo uy tín → điểm danh từng cách",
+   "skeleton": [
+    "[Lời hứa số lượng: N cách để đạt kết quả X] + [neo uy tín: người/thành tích người xem tin]",
+    "[Từ chuyển nhịp ngắn] rồi cắt cảnh ngay vào cách 1",
+    "Mỗi cách lặp một khuôn: [tên cách ngắn] → [vì sao nó chạy] → [con số hoặc ví dụ cụ thể]",
+    "[Đổi nhấn chữ / đạo cụ / động tác] ở mỗi lần chuyển cách",
+    "[Ngắt nhịp tách phần kết] → [câu hỏi mở gắn với series] kéo bình luận"
    ],
-   "seen": 1,
+   "beats": [
+    {
+     "role": "dẫn dắt",
+     "function": null,
+     "seconds": 4,
+     "transition": "Jump cut bỏ quyển vở xuống ở 00:05."
+    },
+    {
+     "role": "giải thích",
+     "function": null,
+     "seconds": 22,
+     "transition": "Jump cut kèm tiêu đề vàng 'Thứ hai:' ở 00:28-00:29."
+    },
+    {
+     "role": "giải thích",
+     "function": null,
+     "seconds": 12,
+     "transition": "Jump cut giơ nắm tay cầm bút kèm tiêu đề 'Cuối cùng' ở 00:41-00:42."
+    },
+    {
+     "role": "chứng minh",
+     "function": null,
+     "seconds": 16,
+     "transition": "Màn hình tối dần (fade) ở 00:58."
+    },
+    {
+     "role": "kết",
+     "function": null,
+     "seconds": 6,
+     "transition": ""
+    }
+   ],
+   "hook_mechanism": "tò mò (danh sách có số + neo thành tích)",
    "uses": 0,
    "wins": 0,
-   "sources": [
-    "https://www.tiktok.com/@manghocls/video/7366613156908600583"
-   ]
+   "evidence": [
+    {
+     "source": "https://www.tiktok.com/@manghocls/video/7366613156908600583",
+     "creator": "manghocls",
+     "ratio": 7.64,
+     "views": 756800,
+     "followers": 99000,
+     "date": "2026-11-26",
+     "teardown": "research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md"
+    }
+   ],
+   "seen": 1
+  }
+ ],
+ "ideas": [
+  {
+   "arc": "ARC-001",
+   "channel": "hi_oneup",
+   "idea": "3 việc nhỏ làm thói quen dính hơn (đời thường, không lấy môn học — L-087): Hiệp chibi thử từng việc, mỗi việc một cơ chế + một nghiên cứu có nguồn, motion beat giải thích cơ chế",
+   "hook": "[chuyện thật của Hiệp lần bỏ thói quen] + «có ba việc nhỏ mà mình ước biết sớm hơn»",
+   "length_s": 150,
+   "teardown": "research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md",
+   "date": "2026-11-26",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-001",
+   "channel": "vanhiep_tech",
+   "idea": "3 cách nhớ lệnh terminal / API lâu hơn mà không cần flashcard: khung giờ ít bị cắt ngang, đọc to (rubber duck), viết tay một lần — mỗi cách một overlay diagram",
+   "hook": "«Ba cách mình nhớ lệnh mà khỏi Google lại mỗi ngày»",
+   "length_s": 60,
+   "teardown": "research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md",
+   "date": "2026-11-26",
+   "status": "ý tưởng"
   }
  ]
 }

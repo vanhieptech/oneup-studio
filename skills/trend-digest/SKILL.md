@@ -7,7 +7,7 @@ description: >-
   patterns/formats are performing, write a differentiation step (what everyone says vs our
   angle), bridge to a source-book lesson, grow a hook-pattern library, and emit validated
   scene-plan stubs for the top 1-2 ideas so trend -> script -> comic render is seamless.
-version: "4.1.0"
+version: "5.0.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -16,7 +16,7 @@ metadata:
     - research
     - ideas
 ---
-# Trend digest v4 (Apify TikTok-native + multi-source collector)
+# Trend digest v5 (3 streams → Viral DNA → ARC-NNN → idea bank)
 
 ## Purpose
 Run the daily (and Sunday weekly) trend digest for @hi.oneup: collect public trends, brand-safety filter, bridge to lessons, and emit scene-plan stubs.
@@ -27,6 +27,16 @@ Run the daily (and Sunday weekly) trend digest for @hi.oneup: collect public tre
 - Learning state: `research/trends/ingest.md` (tables + Bridges), `research/trends/patterns.md` (hook/format library), last 7 `research/trends/*/raw.json`.
 - Series format: comic-only (Remotion comic story beats with Hiệp/Omi chibi rigs + HyperFrames motion explainers). No real footage, no event footage/audio.
 - Output root: always the local repo `/Users/macbook/work/oneup-studio` (`research/trends/`, `content/idea-bank.md`). Never write to dirs outside the repo.
+
+## Three input streams (v5, 26/11/2026) — `pipeline/scripts/trend-streams.py`
+Every digest reports the three streams separately. Output: `research/trends/DATE/{digest.md,raw.json,radar.json}` + `research/trends/ingest.md`.
+1. **Stream 1 — TikTok Outlier Radar** (what is exploding on the platform). After `apify-run.py`: `python3 pipeline/scripts/trend-streams.py radar --date DATE --enqueue`. Keeps only clips in the niche (Productivity / Tư duy / Học tập / Tech / AI, topic keywords in `pipeline/trends/radar.yaml`) with **views ÷ followers ≥ 3.0** (e.g. manghocls 7.64x) **or** a comment/share(/save) spike between two snapshots 24–72 h apart (Apify does not return saves → counted only when present, never guessed). Each row keeps link, creator, followers, views, ratio, apify outlier + basis, topic tags, growth, and `angle` — the agent writes the exploitation angle (one line) into `radar.json` before the digest. `--enqueue` puts rows without a teardown into the teardown queue. Off-niche hits that only matched a broad keyword: set `angle: "off-niche"` and skip.
+2. **Stream 2 — Upstream Tech & Productivity news** (3–14 days ahead of TikTok VN). Sources tagged `"stream": "upstream"` (HN, Lobsters, Reddit r/productivity + r/programming via TinyFish search, Product Hunt, The Verge, Ars, GitHub changelog, OpenAI news, Google News AI releases, Bluesky, X via MCP) and `"vn-tech"` (VnExpress Số hoá, Genk, Tinh tế, CafeBiz, Google News VN AI) in `pipeline/trends/sources.yaml`; `collect.json` items carry `stream`. For each shortlisted upstream / vn-tech item write into `raw.json`: `"pain"` 1–5 (touches a mass pain), `"story"` 1–5 (can be told as a story or visual metaphor), `"fit": {"hi_oneup": 1–5, "vanhiep_tech": 1–5}`, `"shortlist": true`. Then `python3 pipeline/scripts/trend-streams.py upstream --date DATE --check` → `upstream_score = pain·story·max(fit)/125`, `channel`; exit 1 = an item is unscored, fix before writing the digest.
+3. **Stream 3 — Mobile / manual inbox** (`media/footage/inbox/`). Hiệp drops links (`.txt`, `.url`, `.md`, one URL per line or pasted text) or competitor video files. `python3 pipeline/scripts/trend-streams.py inbox --date DATE` dedupes against `ingest.md` + the queue (normalised URL; files by sha256), assigns `trends-DATE-NN`, appends to `research/trends/teardown-queue.json` and to the «Inbox (Luồng 3)» table in `ingest.md`. Inbox files are never moved or deleted.
+**Teardown queue:** `python3 pipeline/scripts/trend-streams.py queue` prints each queued row with its exact command (`teardown.py --url … --id … --queue-id …`); a successful teardown marks the row done in the queue and in `ingest.md`.
+
+## Viral DNA + ARC (v5) — after the queue
+Each teardown writes a 6-block **Viral DNA Card** (`templates/clip-teardown.md`: hook mechanics · beat map · winning points · algorithmic triggers · reusable arc · dual-channel angle) and automatically: upserts Khối 5 into the ARC library (`pipeline/arc_library.py`: same source or similarity ≥ 0.6 → add evidence to that `ARC-NNN`; else a new id), regenerates the «Story arcs (ARC-NNN)» table in `research/trends/patterns.md`, and pushes Khối 6 angles to `content/idea-bank.md` › «Từ teardown (ARC)» with the ARC id and the teardown link. Old teardown JSON: `teardown.py --rerender <json>`. In the digest list: new ARCs, ARCs that gained evidence, ideas added.
 
 ## Sources (free and public only; no login, no cookies, no paid API)
 Config: `pipeline/trends/sources.yaml` (33 sources verified 2026-10-13). Collector: `pipeline/scripts/trend-collect.py` (stdlib + yt-dlp; parallel, 15 s timeout per source, per-source status, cross-source clustering, keyword safety pre-filter, heuristic heat/fit/bridgeability). Expect 400+ raw items/day.
@@ -80,9 +90,9 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 
 ## Daily steps
 1. Read ingest.md, patterns.md, theme map (next 6–8 clips), idea bank, last digest.
-2. X via MCP → x-extra.json. 2a. TinyFish TikTok discovery → `tinyfish/tiktok-candidates.json`. 2b. `apify-run.py` (measures the candidates + keyword queries, subtitles, comments for the shortlist, `outlier` score) → `research/trends/DATE/apify/clips.json`. 2c. **Teardown 2–3 outliers** (`outlier` ≥ 3): `python3 pipeline/scripts/teardown.py <video file> --clip-json <row>` → `research/trends/DATE/teardowns/<id>.{md,json}` per `templates/clip-teardown.md`; downloading a competitor video needs Hiệp's OK (until then run teardown only on our own clips). 3. Run trend-collect.py. Read the top non-TikTok items with TinyFish fetch (MCP `fetch_content` or `tinyfish_client.py fetch`) before bridging. 4. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
+2. X via MCP → x-extra.json. 2a. TinyFish TikTok discovery → `tinyfish/tiktok-candidates.json`. 2b. `apify-run.py` (measures the candidates + keyword queries, subtitles, comments for the shortlist, `outlier` score) → `research/trends/DATE/apify/clips.json`. 2c. **Stream 1** `trend-streams.py radar --date DATE --enqueue` (write `angle` per row). 2d. **Stream 3** `trend-streams.py inbox --date DATE`. 2e. **Teardown 2–3 queued outliers**: `trend-streams.py queue` → run the printed `teardown.py … --queue-id …` commands (Hiệp OK'd analysing competitor clips 26/11; the downloaded file is deleted right after, never reused) → Viral DNA Card + ARC + idea bank update automatically. 3. Run trend-collect.py. Read the top non-TikTok items with TinyFish fetch (MCP `fetch_content` or `tinyfish_client.py fetch`) before bridging. 4. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json (with Stream 2 `pain/story/fit` on shortlisted upstream items), run `score`, then `trend-streams.py upstream --date DATE --check`. 5. Pattern mining -> update patterns.md.
 6. Bridges (top 5–8) with differentiation. 7. Ideas + plan stubs for top 1–2, validate.
-8. Write `digest.md`: front-matter, sources line, top trends (with rank_score/novelty/saturation), **Learning** (new patterns, saturated topics to avoid), **Bridges** table, **Differentiation**, **Plan stubs** (paths + validate result), **Script hooks** (3–5, mark approval needed), safety notes.
+8. Write `digest.md`: front-matter, sources line, **three stream sections** (Radar table · Upstream table with pain/story/fit/score/channel · Inbox ids), **Viral DNA** (teardowns run, ARC new/updated, ideas pushed), top trends (with rank_score/novelty/saturation), **Learning** (new patterns, saturated topics to avoid), **Bridges** table, **Differentiation**, **Plan stubs** (paths + validate result), **Script hooks** (3–5, mark approval needed), safety notes.
 9. Update ingest.md (rows, counts, Bridges with pattern+status) and idea-bank for new ideas.
 10. Commit in the repo only your paths: `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"`. Run `python3 pipeline/scripts/check-assets.py`.
 11. Report counts (sources ok/total, raw, clusters, kept), top 10 trends, top bridges + differentiation, stub paths, source failures.
@@ -90,7 +100,7 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 ## Weekly synthesis (Sunday, after the daily run)
 1. `python3 pipeline/scripts/trend-learn.py week` for the 7-day roll-up.
 2. Read `logs/decision-log.md` retro section for clip metrics Hiệp reported (views, completion, follows). If none, say so; do not invent numbers.
-3. Update patterns.md: `uses`/`wins` from published clips, retire tired patterns, promote patterns with wins/uses ≥0.5. Same for script modes in `research/blueprints/index.json`: read `content/published/README.md` (columns «Script mode», «Mã hook», giữ chân 3s, xem hết %); a clip with numbers above the channel median counts as a win. Empty numbers → no win, never estimate.
+3. Update patterns.md: `uses`/`wins` from published clips, retire tired patterns, promote patterns with wins/uses ≥0.5. Same for story arcs `ARC-NNN` in `research/blueprints/index.json` (`uses`/`wins`, then `teardown.py --rerender` any teardown to refresh the table): read `content/published/README.md` (columns «ARC», «Mã hook», giữ chân 3s, xem hết %); a clip with numbers above the channel median counts as a win. Empty numbers → no win, never estimate.
 4. Write `research/trends/weekly/YYYY-Www.md`: what trended, what saturated, patterns rising/falling, which bridges became clips, 3 recommended angles + 2 topics to avoid next week, proposed rule/skill changes (do not edit rules; propose for Hiệp, rule-33).
 5. Append one line to patterns.md "Learnings log".
 

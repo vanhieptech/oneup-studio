@@ -15,3 +15,21 @@ class VoiceMemo(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class VoiceFirstKeep(unittest.TestCase):
+    """resources/vn-spoken/voice-first.md: ≥ 80% of the draft's content words come from Hiệp's memo."""
+    MEMO = "Ờ thì hồi đó mình hứa chạy bộ mỗi sáng, mà được đúng ba hôm là bỏ, tại sáng nào cũng ngán cái lạnh."
+
+    def test_restructured_in_his_words_passes(self):
+        draft = "1. **[b01]** Mình hứa chạy bộ mỗi sáng. Được ba hôm là bỏ.\n2. **[b02]** Sáng nào cũng ngán cái lạnh nha."
+        r, k, n, _ = vm.keep_ratio(self.MEMO, draft)
+        self.assertGreaterEqual(r, 0.8)
+
+    def test_rewritten_in_writer_words_fails(self):
+        draft = "1. **[b01]** Thói quen vận động buổi sớm thường thất bại vì nhiệt độ thấp gây cảm giác khó chịu."
+        self.assertLess(vm.keep_ratio(self.MEMO, draft)[0], 0.5)
+
+    def test_citation_span_not_counted(self):
+        draft = "1. **[b01]** Mình hứa chạy bộ mỗi sáng {nguồn: Lally và cộng sự năm 2010} được ba hôm là bỏ."
+        self.assertEqual(vm.keep_ratio(self.MEMO, draft)[0], 1.0)

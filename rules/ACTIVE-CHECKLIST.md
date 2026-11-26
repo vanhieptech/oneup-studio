@@ -6,7 +6,7 @@ tags: [rules, checklist, onboarding, active]
 status: ready
 source: "oneup-studio (chưng cất từ rules/video-rules.md, logs/decision-log.md, logs/lessons.md)"
 id: rules-active-checklist
-updated: 2026-11-25
+updated: 2026-11-26
 ---
 # Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm)
 
@@ -41,8 +41,17 @@ Tài liệu gốc vẫn là `rules/video-rules.md`, `logs/decision-log.md`, `log
   - `python3 channels/vanhiep-tech/scripts/build-layers.py channels/vanhiep-tech/clips/<clip-id>`
   - Hoặc chỉ kiểm QA: `python3 channels/vanhiep-tech/scripts/check-layer.py channels/vanhiep-tech/clips/<clip-id>`
 
+## 3b. Script: Gate 0 → review 2 tầng (DL-074, cả 2 kênh)
+- **Gate 0 trước nháp v1:** `python3 pipeline/scripts/gate0.py --idea "<ý>" [--channel vht] [--memo <transcript>] --out <draft.md>` nạp 4 mảnh: ý tưởng + fact package · mạch `ARC-NNN` (Open Loop + Micro-Payoff mỗi 35–45s cho @hi.oneup; layer 3–5s cho @vanhiep.tech) · chuyện thật / ghi âm (Voice-First ≥ 80% từ của Hiệp) + từ nối văn nói · `resources/feedback.md`.
+- **Review 2 tầng (`logs/rule-scoring-rubric.md` §3b):** chặn tuyệt đối chỉ H1 fact không nguồn · H2 ≥ 300s · H3 sai brand/format kênh hoặc chê người xem · H4 lỗi cấu trúc. Còn lại chấm điểm, ≥ 85 là ĐẠT. Khẩu ngữ, từ nối văn nói, câu ngắn ngắt nhịp, câu hỏi tu từ = cảnh báo mềm, 0 điểm. Hook kể chuyện ngôi một và hook «bạn» + câu hỏi đều đạt. Verdict do `pipeline/review_tiers.py` tính lại từ khối cuối review.
+- Cụm mùi AI (`resources/vn-spoken/ai-blacklist.tsv`) → `check-rules.py --bookish` báo ⚠ ai-tell.
+
+## 3c. Trend v5: 3 luồng → Viral DNA → ARC
+- `pipeline/scripts/trend-streams.py radar|upstream|inbox|queue` (radar view/follower ≥ 3 hoặc tăng đột biến 24–72h; upstream chấm pain/story/fit; inbox `media/footage/inbox/` → `trends-YYYY-MM-DD-NN`).
+- `teardown.py … --queue-id …` → Viral DNA Card 6 khối, tự gộp `ARC-NNN` (`research/blueprints/index.json` → bảng trong `research/trends/patterns.md`) và đẩy ý vào `content/idea-bank.md`.
+
 ## 4. Cổng kho & CI trước khi commit
 - `python3 pipeline/scripts/check-assets.py` → phải **0 violations** (layout, front-matter, trùng file, trùng ID, media mới > 2 MB, `INDEX.md`).
-- `python3 -m unittest discover -s tests && python3 -m unittest discover -s pipeline/tests`
+- `python3 -m pytest -q tests/` (hoặc `python3 -m unittest discover -s tests`) `&& python3 -m unittest discover -s pipeline/tests`
 - Khi sửa `video-engine/`: `cd video-engine && npm run typecheck && npm test`
 - Bật hook tự kiểm local 1 lần: `bash pipeline/scripts/install-hooks.sh`
