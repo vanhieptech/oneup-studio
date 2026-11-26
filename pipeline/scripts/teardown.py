@@ -27,8 +27,8 @@ TMP_DIR = P.ROOT / "media/tmp/teardown"
 
 def download(url):
     TMP_DIR.mkdir(parents=True, exist_ok=True)
-    out = TMP_DIR / "%(id)s.%(ext)s"
-    r = subprocess.run([sys.executable, "-m", "yt_dlp", "-f", "mp4/best", "-o", str(out), "--no-playlist", "--print", "after_move:filepath", url],
+    out = TMP_DIR / "%(id)s.%(ext)s"  # -S res:480: ≤480p is enough for analysis, smaller and faster
+    r = subprocess.run([sys.executable, "-m", "yt_dlp", "-S", "res:480,ext:mp4", "-o", str(out), "--no-playlist", "--print", "after_move:filepath", url],
                        capture_output=True, text=True, timeout=300)
     path = (r.stdout.strip().splitlines() or [""])[-1]
     if r.returncode or not path or not os.path.exists(path):
