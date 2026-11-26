@@ -9,6 +9,7 @@
   check-rules.py --bookish draft.md               # L-106 (⚠): words from resources/vn-spoken/bookish.tsv + ai-blacklist.tsv + syllables very rare in speech (vi_50k)
   check-rules.py --ai-structure draft.md          # structural AI-tells (⚠ ai-structure): parallel symmetry clichés, preachy beat openers, low-concreteness >40w beats
   check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all draft checks (incl. --ai-structure) + L-051 + L-053 in one pass
+  check-rules.py --audit draft.md                # style reference only (bookish, ai-structure, choppy). Do not rewrite a natural line to clear these.
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
@@ -48,7 +49,7 @@ def check_duration_total(total, source, estimated=False):
     label = "ƯỚC/estimate" if estimated else "measured after Chốt"
     {"ok": ok, "warning": warn, "error": err}[status](
         "rule-4", f"{source}: {label} {float(total):.3f}s total INCLUDING end card, pauses and transitions; "
-        "target 120–180s (warning only), strict <300s; no word quota / speed-up")
+        "target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up")
 
 
 def check_spec_duration(spec, timing=None):
@@ -1248,6 +1249,13 @@ def main():
             check_ai_structure_file(f)
             check_l053_file(f)
             check_l051_file(f)
+        return report(outp)
+    if a and a[0] == "--audit":  # style reference: bookish + ai-structure + choppy. Not a rewrite order.
+        for f in a[1:]:
+            if f != "--out" and f != outp:
+                check_bookish_file(f)
+                check_ai_structure_file(f)
+                check_choppy_file(f)
         return report(outp)
     if a and a[0] == "--subjects":  # L-087 on draft script files
         for f in a[1:]:

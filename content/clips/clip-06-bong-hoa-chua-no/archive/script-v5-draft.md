@@ -1,18 +1,18 @@
 ---
-id: clip-06.script-v5-draft
+id: clip-06.script-v5-long
 type: script
 status: draft
 updated: 2026-11-26
 tags: [script, clip-06, dark, week-1, howtolivebetter-4.12, draft]
 source: "oneup-studio · HTB 4.12 · Lally et al. 2010 doi:10.1002/ejsp.674 · factcheck-trends-2026-10-31.md mục clip-06 · trend bông hoa chưa nở (chỉ là móc tự trào)"
-title: "clip-06 «bông hoa chưa nở» — script v5 nháp (kể mộc, chờ Gate 1)"
+title: "clip-06 «bông hoa chưa nở» — script v5 dài (đã bị thay bằng bản gọn)"
 date: 2026-11-26
 clip: clip-06-bong-hoa-chua-no
 item: HTB 4.12 (thói quen tính theo tháng; lỡ một lượt không kéo về số không), Lally 2010
 theme: DARK
 week: 1
 format: story_metaphor
-status_note: "DRAFT — chờ Hiệp duyệt Gate 1. Chưa Chốt. Không giọng, không ảnh, không render (L-098)."
+status_note: "Nháp dài đã bị thay bằng final/script-v5-draft.md. Giữ để so. Chưa Chốt."
 fact_lock: research/fact-packages/factcheck-trends-2026-10-31.md
 hook_pattern: P10
 trend_id: vtc-ar1048255-bong-hoa-chua-no
@@ -22,9 +22,9 @@ example_evidence: research/trends/2026-10-31/trend-clip-06-bong-hoa-chua-no.md
 supersedes: content/clips/clip-06-bong-hoa-chua-no/archive/script-v3.2-draft.md
 ---
 
-# clip-06 v5 — DRAFT, chờ Hiệp duyệt Gate 1
+# clip-06 v5 dài — đã bị thay
 
-`archive/script-v4-draft.md` là bản «lộ trình 30 ngày», giữ nguyên. Bản cơ khí tối qua chuyển sang `archive/script-v3.2-draft.md` vì `final/*-draft.md` làm `check-assets` đỏ. Chưa Chốt. Cảnh đôi giày là cảnh kể cho clip này, chưa có trong story-bank. Thời lượng dưới đây là ước từ nhịp nói, chưa đo audio.
+Bản gọn đang chờ duyệt là `final/script-v5-draft.md`. File này giữ lại để so: 10 beat, 437 âm tiết, kể lại nghiên cứu thành bài giảng. Chưa Chốt.
 
 ## Gate 0
 

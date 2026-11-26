@@ -6,7 +6,7 @@ tags: [rules, checklist, onboarding, active]
 status: ready
 source: "oneup-studio (chưng cất từ rules/video-rules.md, logs/decision-log.md, logs/lessons.md)"
 id: rules-active-checklist
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 # Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm)
 
@@ -21,7 +21,7 @@ Tài liệu gốc vẫn là `rules/video-rules.md`, `logs/decision-log.md`, `log
 
 ## 2. Kênh `@hi.oneup` (Comic + Motion, `DL-027`)
 - **Format:** 100% comic (Remotion `video-engine/`) + motion explainer (HyperFrames). Không quay mặt/b-roll, không nhạc nền (`rule-21`), không nhắc lịch đăng (`DL-028`), bắt buộc nhãn AI giọng (`rule-46`).
-- **Độ dài (`L-099`, thay rule-4/7/61 cũ):** strict **< 300s** tính cả end card/nghỉ/xfade; **120–180s** chỉ là mục tiêu/cảnh báo. Không quota từ cứng, không tăng tốc giọng để nhét.
+- **Độ dài (`L-099`, thay rule-4/7/61 cũ):** strict **< 300s** tính cả end card/nghỉ/xfade; mục tiêu **60–180s**. Clip cô đọng 60–119s không bị cảnh báo. Câu chuyện đã đủ ý thì dừng, không kéo chữ cho tới 120s. Không quota từ cứng, không tăng tốc giọng để nhét.
 - **Tách cổng lời vs cổng hình (`L-098`):** **KHÔNG** sinh voice, ảnh, still preview hay render trước khi Hiệp **"Chốt"** đúng bản lời.
 - **Nội dung & lời thoại:**
   - Kể chuyện tự nhiên giọng miền Nam như nói với bạn thân (`L-103`, `L-104`, `L-105`), không văn chương/báo cáo trong 2 câu đầu hook; không lấy môn học làm ví dụ (`L-087`); cấm cụm chê năng lực người học (`L-053`).

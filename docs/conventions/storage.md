@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: storage
 type: convention
 status: active
-updated: 2026-11-26
+updated: 2026-11-27
 tags: [storage, rule-65, rule-66, source-of-truth]
 ---
 # Quy ước lưu trữ (luật 65, L-034)
@@ -23,7 +23,7 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Template HyperFrames | `templates/hyperframes-base/` | |
 | Voice takes đã chọn | `video-engine/public/voice/` (key hash, hoặc `v<n>-<scene>`) | file `.json` kèm stt/stt_sim |
 | Take thô, thử nghiệm giọng | ngoài repo (`/workspace/<job>/`) hoặc `media/` + `MANIFEST.json` | không commit take thô |
-| Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác |
+| Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, một file `script-vN-draft.md` đang viết, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác; hai draft trong cùng `final/` thì fail |
 | Render clip | làm việc: `final/out/` (gitignored), part render `video-engine/out/`; **bản giữ lại**: `media/clips/<clip>/clip-NN-final.mp4` + `-720.mp4` (manifest) | bản gửi Hiệp: 720p faststart < 10 MB |
 | Nháp bài X/LinkedIn | `content/published/social/YYYY-MM-DD-<slug>.md` (skill `social-poster`; `status: draft → ready → published`) | không bao giờ tự đăng |
 | Review và góp ý một clip | `content/clips/<clip>/final/review.md` (make-video §4b: `verdict, score, script_hash, feedback_seen`) + `final/feedback.md` (lời Hiệp nguyên văn, mỗi góp ý một dòng) | `check-rules --review <draft>` kiểm cả hai |

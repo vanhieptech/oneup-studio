@@ -9,7 +9,7 @@ Pieces (printed as one Markdown block; --out writes/replaces the block between G
   1. Idea: best-matching rows of content/idea-bank.md (main table + «Từ teardown (ARC)» ideas) + fact package
      (research/explainers/<topic>.md, best match by words when --topic is omitted).
   2. Story arc ARC-NNN (research/blueprints/index.json): skeleton + beat timing planned for the channel —
-     @hi.oneup 120–180 s target (strict < 300 s, L-099) with an Open Loop + Micro-Payoff every 35–45 s;
+     @hi.oneup 60–180 s target (strict < 300 s, L-099; do not stretch a finished story) with an Open Loop + Micro-Payoff every 35–45 s;
      @vanhiep.tech 45–90 s with a layer cut every 3–5 s.
   3. Real details: the voice memo transcript (Voice-First Input, resources/vn-spoken/voice-first.md) or matching
      content/story-bank.md rows; spoken connectors (resources/vn-spoken/connectors.tsv) + AI blacklist size.
@@ -25,7 +25,7 @@ import arc_library as ARC
 
 ROOT = P.ROOT
 BEGIN, END = "<!-- GATE0-BRIEF:BEGIN (pipeline/scripts/gate0.py) -->", "<!-- GATE0-BRIEF:END -->"
-CH = {"hi": {"name": "@hi.oneup", "lo": 120, "hi": 180, "cap": 300, "default": 150},
+CH = {"hi": {"name": "@hi.oneup", "lo": 60, "hi": 180, "cap": 300, "default": 90},
       "vht": {"name": "@vanhiep.tech", "lo": 45, "hi": 90, "cap": 90, "default": 60}}
 STOP = set("và của là có cho một những các được với không thì mà này đó để khi người bạn mình rồi lại cũng như nào gì vì nên".split())
 
@@ -262,7 +262,7 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
         L += [f"  {i}. {s}" for i, s in enumerate(arc.get("skeleton", []), 1)]
         if ch == "hi":
             rows, loops = plan_hi(arc, total)
-            L += ["", f"Nhịp cho {c['name']}: mục tiêu **{total}s** (120–180s là mục tiêu, hard cap < 300s gồm end card/nghỉ/chuyển cảnh, L-099). Story beat = comic, giải thích/bằng chứng = motion (DL-027).",
+            L += ["", f"Nhịp cho {c['name']}: gợi ý **{total}s** khi chưa có lời (60–180s, hard cap < 300s gồm end card/nghỉ/chuyển cảnh, L-099). Câu chuyện đã đủ ý thì giữ độ dài đó, không kéo chữ. Story beat = comic, giải thích/bằng chứng = motion (DL-027).",
                   "| giây | vai trò | khung |", "|---|---|---|"]
             L += [f"| {r['from']}–{r['to']} | {r['role']} | {r['skeleton']} |" for r in rows]
             L += ["", "Open Loop & Micro-Payoff (mỗi 35–45s):"] + [f"- ~{x['at']}s: {x['payoff']} → {x['loop']}" for x in loops]
@@ -280,19 +280,10 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     else:
         st = story_rows(idea_q)
         L += [f"- Story bank {r[0]}: {r[1]} ({r[2]})" for r in st] or ["- Story bank: không có chuyện khớp; dùng `[VÍ DỤ THẬT CỦA HIỆP: …]` hoặc xin Hiệp ghi âm 60–90s (Voice-First)."]
-    con = [r for r in tsv(ROOT / "resources/vn-spoken/connectors.tsv") if len(r) >= 4]
-    con.sort(key=lambda r: {"H": 0, "PB": 1}.get(r[3], 2))
-    L.append("- Từ nối văn nói (≤ 1 mỗi beat, không lặp): " + " · ".join(f"«{r[0]}» ({r[1]})" for r in con[:6]))
-    L.append(f"- Cấm {len(tsv(ROOT / 'resources/vn-spoken/ai-blacklist.tsv'))} cụm mùi AI / văn dịch (`resources/vn-spoken/ai-blacklist.tsv`) + tránh cấu trúc AI ngầm (`check-rules.py --draft` / `--ai-structure`).")
-    cad = tsv(ROOT / "resources/vn-spoken/cadence-patterns.tsv")
-    if cad:
-        L.append(f"- Kho nhịp nói creator Việt: {len(cad)} mẫu (`resources/vn-spoken/cadence-patterns.tsv`) — dùng để đấu loại 4 biến thể Hook ở Gate 0.5 Hook Arena.")
-    sps = pick_style_pairs(idea_q, ch, n=3, tone=tone)
-    if sps:
-        tone_note = f", tone `{tone}`" if tone else ""
-        L.append(f"- **Style Few-Shot (3 cặp sửa thật gần chủ đề/kênh nhất từ `resources/vn-spoken/style-pairs.md`{tone_note} — học nhịp, không chép nguyên văn):**")
-        for sp in sps:
-            L.append(f"  - `{sp['id']}` ({sp['topics']}): [Thô/AI] «{sp['raw']}» → [Hiệp duyệt] «{sp['approved']}» *(vì sao: {sp['why']})*")
+    L.append("- Lúc viết nháp v1 và v2 chỉ nạp 3 thứ: (a) hai bản Hiệp đã duyệt `content/archive/clip-01-implementation-intention/final/script-final.md` (a-c01) và `content/archive/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md` (a-c04); (b) ý tưởng + fact cốt lõi; (c) mỗi câu sau trả lời câu hỏi câu trước vừa gợi («vì vậy / nhưng mà / thành ra»), kể xong thì dừng.")
+    L.append("- Không nạp `connectors.tsv`, `bookish.tsv`, `ai-blacklist.tsv`, `cadence-patterns.tsv` hay style-pairs vào lúc viết. Những bảng đó chỉ cho `check-rules.py --audit` sau khi lời đã xong. Không sửa câu cho hết cảnh báo bookish/choppy nếu câu sửa mất giọng.")
+    if tone:
+        L.append(f"- tone `{tone}`: học nhịp kể của a-c01 và a-c04, không lấy câu chặt chém.")
     # 4
     L += ["", "### 4. Lưu ý mới nhất"]
     fb = feedback_rows()

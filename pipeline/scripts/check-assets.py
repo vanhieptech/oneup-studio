@@ -72,6 +72,7 @@ LEGACY_LARGE_MEDIA = {
 }
 tracked = [f for f in subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, capture_output=True, text=True).stdout.split("\0") if f and (ROOT / f).is_file()]
 errs = []
+final_drafts = {}
 for f in tracked:
     top = f.split("/")[0]
     if top not in P.TOP_ALLOWED and not top.startswith("."): errs.append(f"outside allowed top-level dirs: {f}")
@@ -82,11 +83,14 @@ for f in tracked:
     if f.startswith("content/clips/") and len(parts) == 3:
         errs.append(f"stray file directly in content/clips/: {f}")
     if f.startswith("content/clips/") and "/final/" in f and re.search(r"(-draft|-v\d+(\.\d+)?-draft)\.md$", name):
-        errs.append(f"draft inside final/ (move to archive/): {f}")
+        final_drafts.setdefault("/".join(parts[:3]), []).append(f)
     if f.startswith(("content/", "samples/")) and (Path(f).suffix.lower() in P.SHARED_EXT or name in P.SHARED_NAMES):
         errs.append(f"shared-type file inside a clip/sample folder (use brand/ or assets/, synced by sync-shared.py): {f}")
     if f.startswith(("content/", "channels/")) and f not in LEGACY_LARGE_MEDIA and Path(f).suffix.lower() in MEDIA_EXT and (ROOT / f).stat().st_size > MAX_TRACKED_MEDIA_BYTES:
         errs.append(f"large media (>2MB) tracked in git (move to media/ + MANIFEST.json): {f}")
+for clip, fs in sorted(final_drafts.items()):
+    if len(fs) > 1:
+        errs.append(f"more than one draft inside {clip}/final/ (keep the working draft, move the rest to archive/): {', '.join(fs)}")
 # Guard against duplicate DL-NNN / L-NNN IDs (use pipeline/scripts/next-id.py before adding)
 from collections import Counter
 for log_rel, pat, allow in [

@@ -35,8 +35,14 @@ class DurationPolicyTests(unittest.TestCase):
     def test_300_1_fails(self):
         self.check(300.1, "✖")
 
-    def test_119_warns_not_fails(self):
-        self.check(119, "⚠")
+    def test_119_is_inside_target(self):
+        self.check(119, "✔")
+
+    def test_60_is_inside_target(self):
+        self.check(60, "✔")
+
+    def test_59_warns_not_fails(self):
+        self.check(59, "⚠")
 
     def test_181_warns_not_fails(self):
         self.check(181, "⚠")
@@ -48,7 +54,7 @@ class DurationPolicyTests(unittest.TestCase):
         self.check(150, "✔")
 
     def test_target_boundaries_inclusive(self):
-        self.check(120, "✔")
+        self.check(60, "✔")
         self.check(180, "✔")
 
     def test_end_card_pushes_over_limit(self):
@@ -88,7 +94,7 @@ class DurationPolicyTests(unittest.TestCase):
                   "estimated_transitions_s": 4,
                   "parts": [{"scenes": [{"lines": [{"text": "từ " * 290}]}]}]}
         cr.check_spec_duration(script)
-        self.assertEqual(cr.res[0][0], "⚠")
+        self.assertEqual(cr.res[0][0], "✔")
         self.assertIn("109.000s", cr.res[0][2])
         self.assertIn("ƯỚC/estimate", cr.res[0][2])
 

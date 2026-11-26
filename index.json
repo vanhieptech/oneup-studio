@@ -175,6 +175,14 @@
    "title": "clip-06 v4 — §4b kiểm claim + chấm điểm"
   },
   {
+   "id": "clip-06.script-v5-draft",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-11-27",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/script-v5-draft.md",
+   "title": "clip-06 v5 — DRAFT, chờ Hiệp duyệt Gate 1"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
@@ -290,7 +298,7 @@
    "id": "storage",
    "type": "convention",
    "status": "active",
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "path": "docs/conventions/storage.md",
    "title": "Quy ước lưu trữ (luật 65, L-034)"
   },
@@ -909,6 +917,14 @@
    "updated": "2026-10-18",
    "path": "research/references/anidoodle-notes.md",
    "title": "anidoodle → Remotion doodle draw-on (comic shorts)"
+  },
+  {
+   "id": "craft.manghocls-7366613156908600583",
+   "type": "research",
+   "status": "draft",
+   "updated": "2026-11-27",
+   "path": "research/references/craft-studies/manghocls-7366613156908600583.md",
+   "title": "Craft study manghocls — 3 cách học thuộc"
   },
   {
    "id": "research.doodle-audit",
@@ -1930,7 +1946,7 @@
    "id": "rules-active-checklist",
    "type": "rules",
    "status": "ready",
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "path": "rules/ACTIVE-CHECKLIST.md",
    "title": "Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm)"
   },

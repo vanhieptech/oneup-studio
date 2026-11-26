@@ -125,7 +125,7 @@ def test_synthesizes_multi_role_teardowns_and_writes_outputs():
         assert "## 4. Anti-Pattern cần tránh" in md
 
 
-def test_gate0_uses_synthesis_weights_and_embeds_style_pairs():
+def test_gate0_uses_synthesis_weights_and_skips_style_pairs_while_writing():
     fake_lib = {
         "arcs": [
             {"id": "ARC-001", "name": "Cũ", "skeleton": ["[a]"], "beats": [{"role": "hook", "seconds": 5}], "seen": 2, "uses": 0, "wins": 0, "win_rate": None, "evidence": []},
@@ -141,8 +141,8 @@ def test_gate0_uses_synthesis_weights_and_embeds_style_pairs():
          mock.patch.object(g0, "load_weekly_synthesis", lambda *a, **k: fake_synth):
         out = g0.brief("trì hoãn thói quen", "hi")
     assert "**ARC-002**" in out
-    assert "Style Few-Shot" in out
-    assert "SP-" in out
+    assert "a-c01" in out and "a-c04" in out
+    assert "Style Few-Shot" not in out
     assert "Tổng hợp đa video" in out
     # Tech channel should prioritize @vanhiep.tech style pair SP-14
     vht_pairs = g0.pick_style_pairs("bảo mật jwt api lập trình", "vht", n=3)

@@ -1,7 +1,7 @@
 """L-099: total video includes the end card; estimates never certify actual media."""
 import math
 
-TARGET_SECONDS = (120.0, 180.0)
+TARGET_SECONDS = (60.0, 180.0)
 HARD_LIMIT_SECONDS = 300.0
 # Descriptive fallback only, not a required delivery rate or word budget.
 NATURAL_WORDS_PER_SECOND = 2.9
