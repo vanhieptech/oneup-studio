@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active
-updated: 2026-11-07
+updated: 2026-11-26
 tags: [agents, retrieval, workflow]
 ---
 # AGENTS.md: cách AI làm việc trong repo này
@@ -50,6 +50,7 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 1. **Clip mới:** theo `skills/make-video/SKILL.md` (intake → đọc nguồn → spec → humanizer → check-rules → gate 1 → render → check-rules --final → gate 2 → DL).
 2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
 3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
+4. **Hoàn thành mọi tác vụ (bắt buộc):** sau khi sửa xong code/tài liệu và chạy qua các cổng kiểm tra (`build-index.py`, `check-assets.py`, `pytest`), **luôn tự động `git add`, `git commit` (theo mẫu `<loại>: <mô tả>`) và `git push` lên `origin/main`** mà không chờ nhắc.
 
 ## Series format (DL-027)
 Series @hi.oneup hiện tại **chỉ comic + motion graphics** (Remotion `video-engine/` + HyperFrames). Không shot list, không b-roll tự quay; Hiệp chỉ thu giọng. Không nhắc đăng (DL-028).
