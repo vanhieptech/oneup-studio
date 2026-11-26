@@ -32,6 +32,7 @@ tags: [index, retrieval]
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
 | skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
+| content.clips.clip-06-bong-hoa-chua-no.final.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | clip-06 v4 — §4b kiểm claim + chấm điểm |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
@@ -320,7 +321,7 @@ tags: [index, retrieval]
 |---|---|---|---|
 | b-donlientay | None | `content/clips/b-donlientay-01` | archive |
 | b-tietkiem | None | `content/clips/b-tietkiem-01-musk-quy-du-phong` | archive |
-| clip-06 | None | `content/clips/clip-06-bong-hoa-chua-no` | archive |
+| clip-06 | None | `content/clips/clip-06-bong-hoa-chua-no` | archive, final |
 
 ## Assets & tools
 | id | path | description |

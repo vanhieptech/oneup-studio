@@ -159,6 +159,14 @@
    "title": "Script short (45–90s) — `vht-YYYYMMDD-<slug>`"
   },
   {
+   "id": "content.clips.clip-06-bong-hoa-chua-no.final.review",
+   "type": "review",
+   "status": "draft",
+   "updated": "2026-11-26",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/review.md",
+   "title": "clip-06 v4 — §4b kiểm claim + chấm điểm"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
@@ -2182,7 +2190,8 @@
    "path": "content/clips/clip-06-bong-hoa-chua-no",
    "theme": null,
    "files": [
-    "archive"
+    "archive",
+    "final"
    ]
   }
  ],
