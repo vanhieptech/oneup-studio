@@ -35,9 +35,17 @@ def test_warns_too_fast_and_too_slow_beats():
     assert "RATE_SLOW" in codes
 
 
-def test_warns_long_sentence_over_22_syllables_without_pause():
+def test_narrative_breath_under_32_without_pause_is_ok():
     draft = (
-        "1. **[b01 · 0–9s]** Hôm qua mình ngồi trước màn hình máy tính cả buổi tối để cố gắng hoàn thành bài tập mà đầu óc cứ trống rỗng không nghĩ ra được chữ nào cả.\n"
+        "1. **[b01 · 0–8s]** Hôm qua mình ngồi trước màn hình máy tính cả buổi tối để cố gắng hoàn thành bài tập mà đầu óc trống.\n"
+    )
+    res = ap.analyze_beats(ap.parse_beats(draft))
+    assert not any(w["code"] in ("LONG_SENTENCE", "LONG_CLAUSE") for w in res["warnings"])
+
+
+def test_warns_long_sentence_over_32_syllables_without_pause():
+    draft = (
+        "1. **[b01 · 0–12s]** Hôm qua mình ngồi trước màn hình máy tính cả buổi tối để cố gắng hoàn thành bài tập mà đầu óc cứ trống rỗng không nghĩ ra được một chữ nào hết trơn luôn.\n"
     )
     res = ap.analyze_beats(ap.parse_beats(draft))
     assert any(w["code"] == "LONG_SENTENCE" for w in res["warnings"])

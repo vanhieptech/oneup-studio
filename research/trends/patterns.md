@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-patterns
 type: pattern-library
 status: living
-updated: 2026-11-12
+updated: 2026-11-26
 tags: [trends, hooks, patterns, formats, learning]
 ---
 # Hook & format pattern library (rule-47)
@@ -88,4 +88,5 @@ Khung xương tái dùng (Khối 5 của teardown). `[...]` là chỗ thay nội
 | id | tên | khung xương | beat (vai trò · giây · chức năng giữ chân) | cơ chế hook | seen | uses | wins | win_rate | bằng chứng |
 |---|---|---|---|---|---|---|---|---|---|
 | ARC-001 | Lời hứa N cách + neo uy tín → điểm danh từng cách | 1. [Lời hứa số lượng: N cách để đạt kết quả X] + [neo uy tín: người/thành tích người xem tin]<br>2. [Từ chuyển nhịp ngắn] rồi cắt cảnh ngay vào cách 1<br>3. Mỗi cách lặp một khuôn: [tên cách ngắn] → [vì sao nó chạy] → [con số hoặc ví dụ cụ thể]<br>4. [Đổi nhấn chữ / đạo cụ / động tác] ở mỗi lần chuyển cách<br>5. [Ngắt nhịp tách phần kết] → [câu hỏi mở gắn với series] kéo bình luận | dẫn dắt · 4s · <br>giải thích · 22s · <br>giải thích · 12s · <br>chứng minh · 16s · <br>kết · 6s ·  | tò mò (danh sách có số + neo thành tích) | 1 | 0 | 0 | — | manghocls 7.64x ([teardown](2026-11-26/teardowns/manghocls-7366613156908600583.md)) |
+| ARC-002 | Kể chuyện đồng cảm → lật góc nhìn | 1. [Khoảnh khắc thật, hơi chạnh, ai cũng từng gặp] — không giáo điều, không rao giảng<br>2. [Diễn biến tự trách và bỏ giữa chừng] — nỗi đau âm ỉ, vẫn một người kể<br>3. [Ẩn dụ đời thường nói như bạn bè] + [số liệu nói bằng lời thường, có rào giới hạn]<br>4. [Hạ giọng, nhìn lại quãng đang đi] — nhẹ vì được hiểu, không phải vì có mẹo<br>5. [Lời nhắn ấm] + [câu hỏi mở để người xem kể chuyện của họ] | dẫn dắt · 18s · 0–18s: vào một khoảnh thật, hơi chạnh<br>giải thích · 27s · 18–45s: tự trách và bỏ cuộc giữa chừng<br>chứng minh · 40s · 45–85s: ẩn dụ đời thường rồi số liệu nói thường<br>lật kèo · 40s · 85–125s: nhìn lại quãng đang đi, giọng hạ<br>kết · 25s · 125–150s: lời nhắn ấm và CTA mở | đồng cảm (khoảnh khắc thật → lật góc nhìn) | 0 | 0 | 0 | — |  |
 <!-- ARC:END -->

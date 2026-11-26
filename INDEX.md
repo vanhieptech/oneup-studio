@@ -34,7 +34,6 @@ tags: [index, retrieval]
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
 | content.clips.clip-06-bong-hoa-chua-no.final.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | clip-06 v4 — §4b kiểm claim + chấm điểm |
-| clip-06.script-v3-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/final/script-v3-draft.md` | clip-06 v3 — DRAFT, chờ Hiệp duyệt Gate 1 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |

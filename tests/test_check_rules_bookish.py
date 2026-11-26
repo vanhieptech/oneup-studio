@@ -10,7 +10,10 @@ def run(text):
 
 def test_l106_sentence_flagged():
     msgs = " ".join(run("Lý do nghe mới quê, tới tuần thứ ba vẫn thấy ngại. Cẩm nang ghi vậy."))
-    assert "cẩm nang" in msgs and "thấy ngại" in msgs
+    assert "cẩm nang" in msgs and "lý do nghe" in msgs
+    assert "thấy ngại" not in msgs and "ngại" not in msgs
+def test_emotional_spoken_words_not_bookish():
+    assert run("Mình chột dạ, nản, thấy hụt hẫng, cứ âm thầm nhú một chút mà vẫn ngại.") == []
 def test_spoken_sentence_clean():
     assert run("Hôm đó mình bỏ luôn, tại vì mình tưởng lỡ một bữa là hỏng hết.") == []
 def test_proper_names_not_flagged_as_rare():

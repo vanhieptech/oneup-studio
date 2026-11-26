@@ -57,7 +57,57 @@
      "teardown": "research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md"
     }
    ],
-   "seen": 1
+   "seen": 1,
+   "tone": "tech_sharp"
+  },
+  {
+   "id": "ARC-002",
+   "name": "Kể chuyện đồng cảm → lật góc nhìn",
+   "tone": "story_warm",
+   "skeleton": [
+    "[Khoảnh khắc thật, hơi chạnh, ai cũng từng gặp] — không giáo điều, không rao giảng",
+    "[Diễn biến tự trách và bỏ giữa chừng] — nỗi đau âm ỉ, vẫn một người kể",
+    "[Ẩn dụ đời thường nói như bạn bè] + [số liệu nói bằng lời thường, có rào giới hạn]",
+    "[Hạ giọng, nhìn lại quãng đang đi] — nhẹ vì được hiểu, không phải vì có mẹo",
+    "[Lời nhắn ấm] + [câu hỏi mở để người xem kể chuyện của họ]"
+   ],
+   "beats": [
+    {
+     "role": "dẫn dắt",
+     "function": "0–18s: vào một khoảnh thật, hơi chạnh",
+     "seconds": 18,
+     "transition": "Giữ cùng một vật (giày, cân, cửa) sang beat sau."
+    },
+    {
+     "role": "giải thích",
+     "function": "18–45s: tự trách và bỏ cuộc giữa chừng",
+     "seconds": 27,
+     "transition": "Câu cuối beat này là lý do người kể ngồi xuống."
+    },
+    {
+     "role": "chứng minh",
+     "function": "45–85s: ẩn dụ đời thường rồi số liệu nói thường",
+     "seconds": 40,
+     "transition": "Ẩn dụ mở ra từ cảm giác vừa kể, không cắm vào giữa câu."
+    },
+    {
+     "role": "lật kèo",
+     "function": "85–125s: nhìn lại quãng đang đi, giọng hạ",
+     "seconds": 40,
+     "transition": "Một hơi thở trước câu nhẹ nhõm."
+    },
+    {
+     "role": "kết",
+     "function": "125–150s: lời nhắn ấm và CTA mở",
+     "seconds": 25,
+     "transition": ""
+    }
+   ],
+   "hook_mechanism": "đồng cảm (khoảnh khắc thật → lật góc nhìn)",
+   "uses": 0,
+   "wins": 0,
+   "evidence": [],
+   "seen": 0
   }
  ],
  "ideas": [

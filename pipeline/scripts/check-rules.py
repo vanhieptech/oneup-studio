@@ -922,6 +922,8 @@ def check_choppy_file(path):
 BOOKISH_TSV = os.path.join(REPO, "resources/vn-spoken/bookish.tsv")
 FREQ_TXT = os.path.join(REPO, "resources/vn-dict/vi_50k.txt")
 BOOKISH_RARE_RANK = 20000   # âm tiết ngoài top 20k trong phụ đề phim (hoặc không có) = rất hiếm khi nói
+# Từ cảm xúc / hình ảnh nói tự nhiên. Phụ đề phim xếp hạng thấp, nhưng phạt chúng thì nháp né sang câu vô hồn.
+SPOKEN_OK = {"chột", "nhú", "ngại", "hụt", "hẫng", "nản", "thầm"}
 def _bookish_list():
     out = []
     if os.path.exists(BOOKISH_TSV):
@@ -1033,7 +1035,7 @@ def check_bookish_text(where, text, rank=None):
     hits += [None] * check_ai_blacklist_text(where, text)
     rank = _freq_rank() if rank is None else rank
     syl = _viet_syllables()
-    rare = sorted({x for x in t.split() if rank and not x.isdigit() and (not syl or x in syl) and rank.get(x, 10**9) > BOOKISH_RARE_RANK})
+    rare = sorted({x for x in t.split() if x not in SPOKEN_OK and rank and not x.isdigit() and (not syl or x in syl) and rank.get(x, 10**9) > BOOKISH_RARE_RANK})
     if rare: warn("bookish", f"{where}: âm tiết rất hiếm trong lời nói (phụ đề phim): {', '.join(rare[:12])} → đọc to, có ai nói vậy không?")
     return len(hits) + len(rare)
 def check_bookish_file(path):

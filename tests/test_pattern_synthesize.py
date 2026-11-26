@@ -147,3 +147,29 @@ def test_gate0_uses_synthesis_weights_and_embeds_style_pairs():
     # Tech channel should prioritize @vanhiep.tech style pair SP-14
     vht_pairs = g0.pick_style_pairs("bảo mật jwt api lập trình", "vht", n=3)
     assert vht_pairs and vht_pairs[0]["id"] == "SP-14"
+
+
+def test_story_warm_skips_choppy_pairs_and_keeps_subject():
+    pairs = g0.pick_style_pairs("thói quen nản giày chạy", "hi", n=3, tone="story_warm")
+    assert [p["id"] for p in pairs] == ["SP-01", "SP-09", "SP-13"]
+    for p in pairs:
+        low = f" {p['approved'].lower()} "
+        assert p["tone"] == "story_warm"
+        assert " mình " in low or " bạn " in low
+
+
+def test_tone_story_warm_picks_tagged_arc_not_heavier_listicle():
+    fake_lib = {
+        "arcs": [
+            {"id": "ARC-001", "name": "Liệt kê", "tone": "tech_sharp", "skeleton": ["[a]"], "beats": [{"role": "hook", "seconds": 5}], "seen": 2, "uses": 0, "wins": 0, "win_rate": None, "evidence": []},
+            {"id": "ARC-002", "name": "Đồng cảm", "tone": "story_warm", "skeleton": ["[b]"], "beats": [{"role": "dẫn dắt", "seconds": 18}], "seen": 0, "uses": 0, "wins": 0, "win_rate": None, "evidence": []},
+        ],
+        "ideas": [],
+    }
+    fake_synth = {"arc_weights": {"ARC-001": 20.0, "ARC-002": 0.1}, "top_hooks": []}
+    with mock.patch.object(g0.ARC, "load", lambda *a, **k: fake_lib), \
+         mock.patch.object(g0, "load_weekly_synthesis", lambda *a, **k: fake_synth):
+        out = g0.brief("thói quen nản", "hi", tone="story_warm")
+    assert "**ARC-002**" in out
+    assert "SP-06" not in out
+    assert "tone `story_warm`" in out

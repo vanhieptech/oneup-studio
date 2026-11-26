@@ -7,9 +7,11 @@ Checks per beat on spoken Vietnamese text (stripping markup like {nhấn: …}, 
   1. Speech rate (âm tiết/giây): natural VN spoken target is 2.6–3.4 syl/s.
      - Warns if > 3.8 syl/s (nói vội) or < 2.2 syl/s (lê thê) against beat duration
        (from beat label `[b01 · 0–5s]`, table Giây column, Gate 0 timing table, or estimated breath pacing).
-  2. Max sentence / breath-span length:
-     - Warns when a sentence has > 22 âm tiết with no pause mark (`,` / `—` / `...` / `…`),
-       or any unbroken segment between pause marks exceeds 22 âm tiết.
+  2. Pacing contrast (nhịp sóng), not a short-sentence quota:
+     - A spoken story mixes a narrative breath (about 15–25 âm tiết, commas as natural breaths)
+       with a short landing line (about 5–10 âm tiết). Do not split every line to dodge this check.
+     - Warns only when a sentence has > 32 âm tiết with no pause mark (`,` / `—` / `...` / `…`),
+       or any unbroken segment between pause marks exceeds 32 âm tiết.
   3. Consecutive beat opener repetition:
      - Warns when 2 adjacent beats start with the same opening structure (same first 2 words,
        or same repeating starter word/connector).
@@ -37,7 +39,7 @@ RATE_TARGET_MIN = 2.6
 RATE_TARGET_MAX = 3.4
 RATE_WARN_HIGH = 3.8
 RATE_WARN_LOW = 2.2
-MAX_UNBROKEN_SYLLABLES = 22
+MAX_UNBROKEN_SYLLABLES = 32
 NATURAL_SYL_PER_SEC = 3.0
 HOOK_AUDITION_TARGET_S = 20.0
 HOOK_AUDITION_MAX_SYL = 70
@@ -278,7 +280,7 @@ def analyze_beats(beats, archive_hooks=None):
                      "message": f"{b['id']}: tốc độ ước {rate:.2f} âm tiết/s ({n_syl} âm tiết / {dur_s}s) < {RATE_WARN_LOW} → lê thê, tụt nhịp (chuẩn {RATE_TARGET_MIN}–{RATE_TARGET_MAX})"}
                 warnings.append(w); b_warns.append(w)
 
-        # 2. Max sentence / unbroken clause length (> 22 syllables without `,` / `—` / `...`)
+        # 2. Unbroken breath (> 32 syllables without `,` / `—` / `...`). 15–25 with a comma is a narrative breath, not a warning.
         sents = [s.strip() for s in SENT_SPLIT_RE.split(clean) if s.strip()]
         long_sents = []
         for s in sents:
@@ -290,7 +292,7 @@ def analyze_beats(beats, archive_hooks=None):
                      "message": f"{b['id']}: câu {s_syl} âm tiết (> {MAX_UNBROKEN_SYLLABLES}) không có dấu ngắt nhịp (, / — / ...): «{s[:70]}»"}
                 warnings.append(w); b_warns.append(w)
             elif has_pause:
-                # Also catch a single unbroken breath span > 22 syllables inside a punctuated sentence
+                # Also catch a single unbroken breath span > 32 syllables inside a punctuated sentence
                 for seg in PAUSE_RE.split(s):
                     seg_syl = len(syllables(seg))
                     if seg_syl > MAX_UNBROKEN_SYLLABLES:

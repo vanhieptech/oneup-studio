@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Gate 0 brief: load the 4 pieces before draft v1 (make-video §2.0 step 0, channels/vanhiep-tech/AGENTS.md).
 
-  gate0.py --idea "<words from the idea>" [--channel hi|vht] [--arc ARC-NNN] [--memo media/voice-memos/x.txt]
-           [--topic <research/explainers slug>] [--clip content/clips/clip-NN-*/] [--length 150] [--out <draft.md>]
+  gate0.py --idea "<words from the idea>" [--channel hi|vht] [--arc ARC-NNN] [--tone story_warm|tech_sharp]
+           [--memo media/voice-memos/x.txt] [--topic <research/explainers slug>]
+           [--clip content/clips/clip-NN-*/] [--length 150] [--out <draft.md>]
 
 Pieces (printed as one Markdown block; --out writes/replaces the block between GATE0-BRIEF markers at the top of the draft):
   1. Idea: best-matching rows of content/idea-bank.md (main table + «Từ teardown (ARC)» ideas) + fact package
@@ -133,13 +134,36 @@ def load_style_pairs(path=None):
     out = []
     for r in md_rows(p, 6):
         if re.match(r"SP-\d+", r[0]):
-            out.append({"id": r[0], "channel": r[1], "topics": r[2], "raw": r[3], "approved": r[4], "why": r[5]})
+            out.append({"id": r[0], "channel": r[1], "topics": r[2], "raw": r[3], "approved": r[4], "why": r[5],
+                        "tone": r[6] if len(r) > 6 else ""})
     return out
 
 
-def pick_style_pairs(q, ch="hi", n=3, path=None):
-    """Pick the n closest style-pairs for the topic and channel (preferring channel match + token overlap)."""
+def _has_warm_subject(text):
+    pad = f" {(text or '').lower()} "
+    return " mình " in pad or " bạn " in pad
+
+
+def _choppy_approved(text):
+    """Majority of sentences ≤ 6 words: the tight punch style story_warm must not learn."""
+    sents = [s.strip() for s in re.split(r"[.!?]+", text or "") if s.strip()]
+    if len(sents) < 2:
+        return False
+    shorts = sum(1 for s in sents if len(s.split()) <= 6)
+    return shorts >= 2 and shorts * 2 >= len(sents)
+
+
+def pick_style_pairs(q, ch="hi", n=3, path=None, tone=None):
+    """Pick the n closest style-pairs for the topic and channel (preferring channel match + token overlap).
+
+    tone=story_warm keeps warm narrative pairs that say «mình» or «bạn» and drops choppy punch lines.
+    tone=tech_sharp keeps only pairs tagged tech_sharp. tone omitted keeps the old ranking.
+    """
     pairs = load_style_pairs(path)
+    if tone == "story_warm":
+        pairs = [sp for sp in pairs if sp.get("tone") == "story_warm" and _has_warm_subject(sp["approved"]) and not _choppy_approved(sp["approved"])]
+    elif tone == "tech_sharp":
+        pairs = [sp for sp in pairs if sp.get("tone") == "tech_sharp"]
     if not pairs:
         return []
     ch_name = CH.get(ch, {}).get("name", "@hi.oneup")
@@ -193,7 +217,7 @@ def feedback_rows():
     return [r for r in md_rows(ROOT / "resources/feedback.md", 4) if r[0].startswith("«")]
 
 
-def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length=None):
+def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length=None, tone=None):
     lib = ARC.load(); c = CH[ch]; L = [BEGIN, f"## Gate 0 brief ({c['name']})", ""]
     # 1
     ideas = find_ideas(idea_q, lib)
@@ -211,6 +235,12 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     # 2
     synth = load_weekly_synthesis()
     arc = ARC.get(arc_id) if arc_id else None
+    if not arc and tone:
+        tagged = [a for a in lib["arcs"] if a.get("tone") == tone]
+        if len(tagged) == 1:
+            arc = tagged[0]
+        elif tagged:
+            arc = pick_best_arc(tagged, synth)
     if not arc:
         aid = next((r["idea"]["arc"] for r in ideas if r["kind"] == "arc-idea"), None)
         arc = ARC.get(aid) if aid else pick_best_arc(lib["arcs"], synth)
@@ -257,9 +287,10 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     cad = tsv(ROOT / "resources/vn-spoken/cadence-patterns.tsv")
     if cad:
         L.append(f"- Kho nhịp nói creator Việt: {len(cad)} mẫu (`resources/vn-spoken/cadence-patterns.tsv`) — dùng để đấu loại 4 biến thể Hook ở Gate 0.5 Hook Arena.")
-    sps = pick_style_pairs(idea_q, ch, n=3)
+    sps = pick_style_pairs(idea_q, ch, n=3, tone=tone)
     if sps:
-        L.append("- **Style Few-Shot (3 cặp sửa thật gần chủ đề/kênh nhất từ `resources/vn-spoken/style-pairs.md` — học nhịp, không chép nguyên văn):**")
+        tone_note = f", tone `{tone}`" if tone else ""
+        L.append(f"- **Style Few-Shot (3 cặp sửa thật gần chủ đề/kênh nhất từ `resources/vn-spoken/style-pairs.md`{tone_note} — học nhịp, không chép nguyên văn):**")
         for sp in sps:
             L.append(f"  - `{sp['id']}` ({sp['topics']}): [Thô/AI] «{sp['raw']}» → [Hiệp duyệt] «{sp['approved']}» *(vì sao: {sp['why']})*")
     # 4
@@ -293,7 +324,10 @@ def main():
     if not opt("--idea"): print(__doc__); return 2
     ch = opt("--channel", "hi")
     if ch not in CH: print("--channel hi|vht"); return 2
-    b = brief(opt("--idea"), ch, opt("--arc"), opt("--memo"), opt("--topic"), opt("--clip"), opt("--length"))
+    tone = opt("--tone")
+    if tone and tone not in ("story_warm", "tech_sharp"):
+        print("--tone story_warm|tech_sharp"); return 2
+    b = brief(opt("--idea"), ch, opt("--arc"), opt("--memo"), opt("--topic"), opt("--clip"), opt("--length"), tone)
     if opt("--out"): write_into(opt("--out"), b); print(f"→ {opt('--out')}")
     else: print(b)
     return 0

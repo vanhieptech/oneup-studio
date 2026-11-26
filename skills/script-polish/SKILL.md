@@ -5,7 +5,7 @@ description: >-
   to the creator for approval: remove AI-writing tells with the vendored humanizer
   skill, adapt to spoken Vietnamese, and match the creator's voice profile, without
   changing any fact, number or citation.
-version: "1.3.0"
+version: "1.4.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -30,7 +30,7 @@ Polish a fact-checked short-form script into spoken Vietnamese that matches the 
 
 ## Two tiers — Hard-Gate + Pairwise A/B — what this pass may and may not "fix"
 - **Tier 1, hard fails (`H1–H4`, sole hard blocker; never introduce, always fix):** H1 fact without source / beyond the source · H2 total ≥ 300 s (L-099) · H3 wrong brand/format for the channel (@hi.oneup DL-027; @vanhiep.tech its AGENTS.md) or mocking the viewer (L-053) · H4 broken draft/spec structure.
-- **Tier 2, Pairwise A/B** (replaces absolute ≥85 score threshold): compared side-by-side against the theme/format-matched approved anchor clip on 4 relative axes (`Hook & Giữ chân`, `Mạch truyện & Chuyển ý`, `Văn nói tự nhiên VN`, `Độ đắt của ẩn dụ/payoff`). Also run `python3 pipeline/scripts/audio-precheck.py <draft.md>` to check spoken VN rhythm (2.6–3.4 syl/s, ≤22 syl/breath, no repeated consecutive beat openers).
+- **Tier 2, Pairwise A/B** (replaces absolute ≥85 score threshold): compared side-by-side against the theme/format-matched approved anchor clip on 4 relative axes (`Hook & Giữ chân`, `Mạch truyện & Chuyển ý`, `Văn nói tự nhiên VN`, `Độ đắt của ẩn dụ/payoff`). Also run `python3 pipeline/scripts/audio-precheck.py <draft.md>` to check spoken VN rhythm (2.6–3.4 syl/s, pacing contrast, no repeated consecutive beat openers). A narrative breath of about 15–25 syllables with a comma is healthy. A landing line of about 5–10 syllables is a punch, not a defect. Warn only on an unbroken span over 32 syllables.
 - **Soft warnings are not errors.** Do NOT "correct" natural spoken variants that match the voice profile: particles (nè, á, hông, nghen), spoken connectors («thật ra thì», «nhưng mà khoan», «nghe quen không», «nói thẳng ra là», «thế mới có chuyện»), short punchy sentences, rhetorical questions that hold attention. Polishing these into tidy written Vietnamese is exactly what Hiệp rejects (L-105, L-106).
 
 ## Mandatory Quality Bar: Sensory/Action Anchor + 3-Pass Rewrite
@@ -42,7 +42,10 @@ Every script polished with this skill MUST satisfy two hard craft standards befo
      * Preachy / book-summary beat openers: «bí quyết là», «điều quan trọng nhất là», «chìa khóa nằm ở», «điểm mấu chốt là».
      * Low-concreteness beats (> 40 words with no physical action verb, concrete number, or everyday time anchor).
    - **Pass 2 — Khẩu ngữ hóa (Spoken VI via `connectors.tsv` + `style-pairs.md`):** Replace all written/translated phrasing and `ai-blacklist.tsv` phrases using natural Southern spoken Vietnamese guided by `resources/vn-spoken/connectors.tsv`, `bookish.tsv`, and the 3 closest examples from `resources/vn-spoken/style-pairs.md`. Keep Fact lock intact and keep Voice-First ≥ 80% when a memo exists.
-   - **Pass 3 — Cắt 15% từ thừa & Audio-Back QA:** Trim **at least 15% filler words** (hedging, empty adverbs, redundant restatements, inflated transitions) without losing meaning or facts, then run `python3 pipeline/scripts/audio-precheck.py <draft.md>` (verify 2.6–3.4 syl/s target, zero >22-syllable unbroken breath spans, zero consecutive repeated beat openers) and `python3 pipeline/scripts/check-rules.py --draft <draft.md>`.
+   - **Pass 3 — Cắt 15% từ thừa & Audio-Back QA:** Trim **at least 15% filler words** (hedging, empty adverbs, redundant restatements, inflated transitions) without losing meaning or facts, then run `python3 pipeline/scripts/audio-precheck.py <draft.md>` (verify 2.6–3.4 syl/s target, zero unbroken breath spans over 32 syllables, zero consecutive repeated beat openers) and `python3 pipeline/scripts/check-rules.py --draft <draft.md>`. Do not chop a flowing sentence just to clear a length warning.
+
+## Emotional and logical flow
+A beat is not a slide. Do not list separate scenes one after another («cảnh A. Cảnh B. Cảnh C.»). The last sentence of a beat plants a psychological or causal hook, and the next beat opens from that hook the way a person keeps talking at a table. Soft connectors such as «thật ra hồi đó mình cũng vậy», «nhưng mà nghĩ kỹ lại thì», «cái hay ở chỗ là» are allowed when they carry the turn. If the next beat could be moved anywhere without the listener noticing, rewrite the join before touching word choice. When the piece is `story_warm`, take the few-shot pairs from `gate0.py --tone story_warm` only.
 
 ## Steps
 1. **Fact lock.** List every fact, number, study, date and citation in the draft. These must appear unchanged in the output.
