@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Rule linter for one clip (rule-48). Lints the clip spec (+ script, plan, MP4, post) against rules/video-rules.md.
 
-  check-rules.py content/clips/<clip>/            # gate 1: spec + script + post (if any) + plan validation
+  check-rules.py content/clips/<clip>/            # gate 1: spec + script + post (if any) + plan validation + final/review.md verdict ĐẠT (make-video §4b)
   check-rules.py content/clips/<clip>/ --final    # gate 2: also the rendered MP4 (ffprobe, loudness) + post.md required
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
@@ -80,6 +80,30 @@ def lines(spec):
         for s in p.get("scenes", []) + p.get("sections", []):
             for l in s["lines"]:
                 yield p, s, l
+
+def script_hash(spec):
+    """Hash of the spoken words (VI text + EN caption of every line, in order): a review is stale once these change."""
+    import hashlib
+    words = "\n".join(f"{l.get('text', '')}\t{l.get('en', '')}" for _, _, l in lines(spec))
+    return hashlib.sha256(unicodedata.normalize("NFC", words).encode()).hexdigest()[:12]
+
+REVIEW_VERDICTS = ("ĐẠT VỀ ĐIỂM", "CHƯA ĐẠT", "ĐẠT")  # longest first; make-video §4b
+def check_review(spec, fdir):
+    """make-video §4b: gate 1 needs final/review.md (claim table + rubric score) with verdict ĐẠT for the current script."""
+    rp = os.path.join(fdir, "review.md"); rel = os.path.relpath(rp, REPO); want = script_hash(spec)
+    if not os.path.exists(rp):
+        err("review", f"missing {rel}: run make-video §4b (claim check + rubric score) before gate 1; front-matter needs verdict, score, script_hash: {want}"); return
+    txt = open(rp, encoding="utf-8").read(); head = txt.split("\n---", 1)[0] if txt.startswith("---") else ""
+    fm = dict((k.strip(), v.strip().strip('"')) for k, v in (l.split(":", 1) for l in head.splitlines()[1:] if ":" in l and not l.startswith(" ")))
+    v = unicodedata.normalize("NFC", fm.get("verdict", "")).upper()
+    verdict = next((x for x in REVIEW_VERDICTS if v.startswith(x)), None)
+    if not verdict:
+        err("review", f"{rel}: front-matter `verdict:` must start with ĐẠT, ĐẠT VỀ ĐIỂM or CHƯA ĐẠT (got {fm.get('verdict')!r})"); return
+    if fm.get("script_hash") != want:
+        err("review", f"{rel} is stale: script_hash {fm.get('script_hash')!r} ≠ current {want} (VI/EN lines changed) → re-run §4b"); return
+    if verdict == "CHƯA ĐẠT": err("review", f"{rel}: verdict CHƯA ĐẠT (score {fm.get('score', '?')}) → fix the quoted lines, re-run §3–§4b, don't send gate 1")
+    elif verdict == "ĐẠT VỀ ĐIỂM": warn("review", f"{rel}: ĐẠT VỀ ĐIỂM (score {fm.get('score', '?')}), open conflict for Hiệp to decide: {fm.get('verdict')}")
+    else: ok("review", f"{rel}: ĐẠT (score {fm.get('score', '?')}), script_hash matches")
 
 def ffprobe(path):
     o = subprocess.run([FFPROBE_BIN, "-v", "error", "-show_entries", "stream=codec_type,codec_name,profile,width,height,r_frame_rate,pix_fmt,color_space,sample_rate:format=duration",
@@ -1096,6 +1120,7 @@ def main():
         except Exception: spec_ = None
         voice_only_checks(os.path.abspath(pmp), os.path.dirname(specp), clip_dir, spec_, True); return report(outp)
     spec = json.load(open(specp)); fdir = os.path.dirname(specp)
+    if "/content/clips/" in os.path.abspath(specp).replace(os.sep, "/"): check_review(spec, fdir)  # make-video §4b (samples exempt)
     prof = {}
     for f in glob.glob(os.path.join(REPO, "video-engine/src/characters/profiles/*.json")):
         j = json.load(open(f)); prof[j["id"]] = j
