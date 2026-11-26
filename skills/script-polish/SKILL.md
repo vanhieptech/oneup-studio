@@ -28,9 +28,9 @@ Polish a fact-checked short-form script into spoken Vietnamese that matches the 
 - Optional **voice memo transcript** (`media/voice-memos/<name>.txt`, Voice-First Input, `resources/vn-spoken/voice-first.md`).
 - `skills/humanizer/SKILL.md`: the pattern list. Apply it in "embedded mode".
 
-## Two tiers (DL-074, `logs/rule-scoring-rubric.md` §3b) — what this pass may and may not "fix"
-- **Tier 1, hard fails** (block absolutely; never introduce, always fix): H1 fact without source / beyond the source · H2 total ≥ 300 s (L-099) · H3 wrong brand/format for the channel (@hi.oneup DL-027; @vanhiep.tech its AGENTS.md) or mocking the viewer (L-053) · H4 broken draft/spec structure.
-- **Tier 2, score** (7 rubric categories, pass ≥ 85): flow, clarity, hook, evidence wording, length, tone, CTA.
+## Two tiers — Hard-Gate + Pairwise A/B — what this pass may and may not "fix"
+- **Tier 1, hard fails (`H1–H4`, sole hard blocker; never introduce, always fix):** H1 fact without source / beyond the source · H2 total ≥ 300 s (L-099) · H3 wrong brand/format for the channel (@hi.oneup DL-027; @vanhiep.tech its AGENTS.md) or mocking the viewer (L-053) · H4 broken draft/spec structure.
+- **Tier 2, Pairwise A/B** (replaces absolute ≥85 score threshold): compared side-by-side against the newest approved anchor clip on 4 relative axes (`Hook & Giữ chân`, `Mạch truyện & Chuyển ý`, `Văn nói tự nhiên VN`, `Độ đắt của ẩn dụ/payoff`). Also run `python3 pipeline/scripts/audio-precheck.py <draft.md>` to check spoken VN rhythm (2.6–3.4 syl/s, ≤22 syl/breath, no repeated consecutive beat openers).
 - **Soft warnings are not errors.** Do NOT "correct" natural spoken variants that match the voice profile: particles (nè, á, hông, nghen), spoken connectors («thật ra thì», «nhưng mà khoan», «nghe quen không», «nói thẳng ra là», «thế mới có chuyện»), short punchy sentences, rhetorical questions that hold attention. Polishing these into tidy written Vietnamese is exactly what Hiệp rejects (L-105, L-106).
 
 ## Steps

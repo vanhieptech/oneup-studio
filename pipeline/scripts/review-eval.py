@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """Measure the independent script reviewer against Hiệp's real verdicts (research/review-golden/).
 
-  review-eval.py [--model sonnet] [--limit N] [--only id,id] [--jobs 3] [--dry-run] [--out research/review-golden/eval-<date>.json]
+  review-eval.py [--mode pairwise|score] [--anchor a-c05] [--model sonnet] [--limit N] [--only id,id]
+                 [--jobs 3] [--dry-run] [--out research/review-golden/eval-<date>.json]
 
-For each golden sample that has words (rejected: the "Lời bản bị bác" section of rejected/<id>.md; approved: the
-`text` lines of content/archive/<clip>/final/spec.json), build a neutral draft in a temp folder, build a
-leave-one-out copy of the golden set without that sample (so the reviewer cannot look up the answer), and run
-`claude -p` with docs/prompts/reviewer-script.md (read-only tools, cwd = repo). The verdict is recomputed by
-review_tiers.py from the answer's HARD_FAILS/SCORE block (DL-074 two tiers); the model's own VERDICT line is kept as
-`verdict_llm` for comparison. A usage-limit answer is recorded as `error` (not a verdict) and stops new launches.
+Modes:
+  pairwise (default): Pairwise A/B against the newest approved anchor clip from research/review-golden/
+                      (or --anchor <approved_clip_id>; leave-one-out picks the next approved clip when
+                      evaluating the anchor itself). Recomputes verdict via review_tiers.py (H1–H4 hard
+                      gate + WIN/TIE/LOSE).
+  score:              Legacy absolute-score mode.
 
-Metrics: rejected caught = verdict is not ĐẠT/ĐẠT VỀ ĐIỂM (target ≥ 14/15); approved passed = ĐẠT or ĐẠT VỀ ĐIỂM (target all).
+Samples with no words (`skipped: no words`) are skipped before launching worker calls.
+Metrics: rejected caught = verdict is not ĐẠT/ĐẠT VỀ ĐIỂM (target ≥ 14/15); approved passed = ĐẠT or ĐẠT VỀ ĐIỂM.
 Writes per-sample results + metrics to --out and prints a table. Never edits the golden set.
 """
 import datetime as dt, json, os, re, shutil, subprocess, sys, tempfile, threading
@@ -24,34 +26,53 @@ GOLDEN = P.ROOT / "research/review-golden"
 PROMPT_MD = P.ROOT / "docs/prompts/reviewer-script.md"
 CLAUDE = shutil.which("claude") or str(Path.home() / ".local/bin/claude")
 
+
 def load_prompt():
     m = re.search(r"<<<PROMPT\n(.*?)\nPROMPT>>>", PROMPT_MD.read_text(encoding="utf-8"), re.S)
-    if not m: raise SystemExit(f"no prompt block in {PROMPT_MD}")
+    if not m:
+        raise SystemExit(f"no prompt block in {PROMPT_MD}")
     return m.group(1)
+
 
 def samples():
     d = json.loads((GOLDEN / "index.json").read_text(encoding="utf-8"))
     return d["samples"] if isinstance(d, dict) else d
 
+
 def rejected_words(s):
     f = GOLDEN / (s.get("excerpt_file") or f"rejected/{s['id']}.md")
-    if not f.exists(): return None
+    if not f.exists():
+        return None
     t = f.read_text(encoding="utf-8")
     m = re.search(r"^## Lời bản bị bác[^\n]*\n(.*?)(?=^## |\Z)", t, re.S | re.M)
-    if not m: return None
+    if not m:
+        return None
     body = "\n".join(l for l in m.group(1).splitlines() if not l.startswith("Nguồn:")).strip()
     return body if re.search(r"^\s*\d+\.\s*\*\*\[", body, re.M) else None
 
+
 def approved_words(s):
+    # Support explicit research/review-golden/approved/<id>.md if present, else content/archive/<clip>/final/spec.json
+    direct = GOLDEN / "approved" / f"{s['id']}.md"
+    if direct.exists():
+        t = direct.read_text(encoding="utf-8")
+        body = t.split("\n---", 1)[1].strip() if t.startswith("---") and "\n---" in t[3:] else t.strip()
+        if re.search(r"^\s*\d+\.\s*\*\*\[", body, re.M):
+            return body
     clipdir = P.ROOT / Path(s["source"]).parent.parent  # content/archive/<clip>/final/script-final.md → content/archive/<clip>
     spec = clipdir / "final/spec.json"
-    if not spec.exists(): return None
-    sp = json.loads(spec.read_text(encoding="utf-8")); out, n = [], 0
+    if not spec.exists():
+        return None
+    sp = json.loads(spec.read_text(encoding="utf-8"))
+    out, n = [], 0
     for p in sp.get("parts", []):
         for sc in p.get("scenes", []) + p.get("sections", []):
             words = " ".join((l.get("text") or "").strip() for l in sc.get("lines", []) if l.get("text"))
-            if words: n += 1; out.append(f"{n}. **[{sc.get('id', f'b{n:02d}')}]** {words}")
+            if words:
+                n += 1
+                out.append(f"{n}. **[{sc.get('id', f'b{n:02d}')}]** {words}")
     return "\n".join(out) or None
+
 
 def strip_markup(text):
     """Same footing for drafts and approved specs: drop voice/emphasis markup so the reviewer judges the words only."""
@@ -63,12 +84,35 @@ def strip_markup(text):
     t = re.sub(r"  +", " ", t)
     return re.sub(r"\x00(\d+)\x00", lambda m: labels[int(m.group(1))], t)
 
+
 def words_for(s):
     w = rejected_words(s) if s["verdict"] == "rejected" else approved_words(s)
     return strip_markup(w) if w else w
 
+
+def resolve_anchor(all_samples, sample_id, preferred_anchor=None):
+    """Pick an approved anchor sample (id, words) for leave-one-out pairwise comparison.
+
+    Uses `preferred_anchor` when provided and distinct from `sample_id`; otherwise picks the newest
+    approved sample (by order in index.json) whose id != sample_id and that has words.
+    """
+    approved = [x for x in all_samples if x["verdict"] == "approved" and x["id"] != sample_id]
+    if preferred_anchor:
+        cand = next((x for x in approved if x["id"] == preferred_anchor or x.get("clip") == preferred_anchor), None)
+        if cand:
+            w = words_for(cand)
+            if w:
+                return cand["id"], w
+    for cand in reversed(approved):
+        w = words_for(cand)
+        if w:
+            return cand["id"], w
+    return None, None
+
+
 def leave_one_out(tmp, sid):
-    g = tmp / "golden"; (g / "rejected").mkdir(parents=True)
+    g = tmp / "golden"
+    (g / "rejected").mkdir(parents=True)
     d = json.loads((GOLDEN / "index.json").read_text(encoding="utf-8"))
     keep = [x for x in (d["samples"] if isinstance(d, dict) else d) if x["id"] != sid]
     for x in keep:
@@ -77,77 +121,194 @@ def leave_one_out(tmp, sid):
     (g / "index.json").write_text(json.dumps({"samples": keep}, ensure_ascii=False, indent=1), encoding="utf-8")
     return g
 
+
 def parse_verdict(text):
     """Two-tier verdict from the block (review_tiers); falls back to the model's last VERDICT line when the block is missing."""
     tv = tier_verdict(parse_block(text))
-    if tv: return tv[0]
-    hits = re.findall(r"VERDICT:\s*(ĐẠT VỀ ĐIỂM|CHƯA ĐẠT|ĐẠT)", text or "")
-    return hits[-1] if hits else None
+    if tv:
+        return tv[0]
+    hits = re.findall(r"VERDICT\**\s*:\s*\**(ĐẠT VỀ ĐIỂM|CHƯA ĐẠT|CẦN SỬA|ĐẠT)", text or "", re.I)
+    return hits[-1].upper() if hits else None
+
 
 LIMIT_RE = re.compile(r"hit your (?:\d+-hour |weekly )?limit|usage limit|rate limit", re.I)
 STOP = threading.Event()
 
-def run_one(s, model, prompt_tpl):
-    words = words_for(s)
-    if not words: return {"id": s["id"], "verdict_hiep": s["verdict"], "skipped": "no words"}
-    with tempfile.TemporaryDirectory() as td:
-        tmp = Path(td); draft = tmp / "draft.md"
-        draft.write_text("# Nháp cần review\n\n" + words + "\n", encoding="utf-8")
-        g = leave_one_out(tmp, s["id"])
-        prompt = (prompt_tpl.replace("{DRAFT}", str(draft)).replace("{CLIP_DIR}", str(tmp / "noclip")).replace("{GOLDEN}", str(g))
-                  + f"\n\n(Chế độ đo: không mở thư mục research/review-golden/ gốc và không mở content/archive/{s.get('clip', '')}/; chỉ dùng {g}.)")
-        args = [CLAUDE, "-p", prompt, "--model", model, "--output-format", "json", "--allowedTools", "Read", "Grep", "Glob",
-                "--add-dir", str(tmp)]
-        r = subprocess.run(args, capture_output=True, text=True, timeout=900, cwd=str(P.ROOT))
-    try: out = json.loads(r.stdout); text = out.get("result", "")
-    except json.JSONDecodeError: out, text = {}, r.stdout
-    if LIMIT_RE.search(text or r.stderr or "") and "VERDICT" not in (text or ""):
-        STOP.set()
-        return {"id": s["id"], "verdict_hiep": s["verdict"], "error": "usage limit", "tail": (text or r.stderr)[-200:]}
-    b = parse_block(text); v = parse_verdict(text)
-    return {"id": s["id"], "verdict_hiep": s["verdict"], "verdict_reviewer": v, "verdict_llm": (b or {}).get("verdict_llm"),
-            "score": (b or {}).get("score"), "parts": (b or {}).get("parts"), "hard_fails": (b or {}).get("hard_fails"),
-            "soft_warnings": (b or {}).get("soft"), "block": b is not None, "cost_usd": out.get("total_cost_usd"),
-            "ok": (v not in ("ĐẠT", "ĐẠT VỀ ĐIỂM")) if s["verdict"] == "rejected" else (v in ("ĐẠT", "ĐẠT VỀ ĐIỂM")),
-            "tail": (text or r.stderr)[-600:]}
 
-def metrics(rows):
+def _invoke_reviewer(prompt, tmp, model, engine="claude"):
+    """Run reviewer via `claude -p` or `agy -p` (Antigravity CLI fallback when Claude quota is exhausted)."""
+    if engine == "agy":
+        if not P.AGY_BIN or not os.path.exists(P.AGY_BIN):
+            raise SystemExit("agy CLI not found (AGY_BIN)")
+        args = [P.AGY_BIN, "-p", prompt, "--output-format", "json", "--mode", "plan", "--add-dir", str(tmp),
+                "--print-timeout", "300s"]
+        if model and model not in ("sonnet", "default"):
+            args += ["--model", model]
+        r = subprocess.run(args, capture_output=True, text=True, timeout=360, cwd=str(P.ROOT))
+        try:
+            out = json.loads(r.stdout.strip().splitlines()[-1])
+            text = out.get("response", "")
+        except (json.JSONDecodeError, IndexError):
+            out, text = {}, r.stdout
+        return out, text, r.stderr, out.get("model") or model
+    args = [CLAUDE, "-p", prompt, "--model", model, "--output-format", "json", "--allowedTools", "Read",
+            "--add-dir", str(tmp)]
+    r = subprocess.run(args, capture_output=True, text=True, timeout=900, cwd=str(P.ROOT))
+    try:
+        out = json.loads(r.stdout)
+        text = out.get("result", "")
+    except json.JSONDecodeError:
+        out, text = {}, r.stdout
+    return out, text, r.stderr, model
+
+
+def run_one(s, model, prompt_tpl, mode="pairwise", anchor_pref=None, all_samples=None, engine="claude"):
+    words = words_for(s)
+    if not words:
+        return {"id": s["id"], "verdict_hiep": s["verdict"], "skipped": "no words"}
+    anchor_id, anchor_words = (None, None)
+    if mode == "pairwise":
+        anchor_id, anchor_words = resolve_anchor(all_samples or samples(), s["id"], anchor_pref)
+        if not anchor_words:
+            return {"id": s["id"], "verdict_hiep": s["verdict"], "error": "no approved anchor available"}
+    with tempfile.TemporaryDirectory() as td:
+        tmp = Path(td)
+        draft = tmp / "draft.md"
+        draft.write_text("# Bản nháp cần review\n\n" + words + "\n", encoding="utf-8")
+        anchor_file = tmp / "anchor.md"
+        if anchor_words:
+            anchor_file.write_text(f"# Bản chuẩn đã được Hiệp duyệt ({anchor_id})\n\n" + anchor_words + "\n", encoding="utf-8")
+        g = leave_one_out(tmp, s["id"])
+        prompt = (
+            prompt_tpl
+            .replace("{DRAFT}", str(draft))
+            .replace("{ANCHOR}", str(anchor_file) if anchor_words else "(không có)")
+            .replace("{ANCHOR_ID}", anchor_id or "(none)")
+            .replace("{CLIP_DIR}", str(tmp / "noclip"))
+            .replace("{GOLDEN}", str(g))
+            + f"\n\n(Chế độ đo: không mở thư mục research/review-golden/ gốc và không mở content/archive/{s.get('clip', '')}/; chỉ đọc {draft}"
+            + (f", {anchor_file}" if anchor_words else "")
+            + " và tối đa resources/feedback.md.)"
+        )
+        out, text, stderr, used_model = _invoke_reviewer(prompt, tmp, model, engine=engine)
+    if LIMIT_RE.search(text or stderr or "") and "VERDICT" not in (text or ""):
+        STOP.set()
+        return {"id": s["id"], "verdict_hiep": s["verdict"], "error": "usage limit", "tail": (text or stderr)[-200:]}
+    if out.get("status") == "ERROR" or out.get("error"):
+        return {"id": s["id"], "verdict_hiep": s["verdict"], "error": str(out.get("error"))[:200], "tail": (text or stderr)[-200:]}
+    b = parse_block(text)
+    v = parse_verdict(text)
+    row = {
+        "id": s["id"],
+        "verdict_hiep": s["verdict"],
+        "mode": mode,
+        "engine": engine,
+        "model": used_model,
+        "anchor_id": anchor_id,
+        "verdict_reviewer": v,
+        "verdict_llm": (b or {}).get("verdict_llm"),
+        "pairwise": (b or {}).get("pairwise"),
+        "top_fixes": (b or {}).get("top_fixes") or [],
+        "score": (b or {}).get("score"),
+        "parts": (b or {}).get("parts"),
+        "hard_fails": (b or {}).get("hard_fails"),
+        "soft_warnings": (b or {}).get("soft"),
+        "block": b is not None,
+        "cost_usd": out.get("total_cost_usd"),
+        "ok": (v not in ("ĐẠT", "ĐẠT VỀ ĐIỂM")) if s["verdict"] == "rejected" else (v in ("ĐẠT", "ĐẠT VỀ ĐIỂM")),
+        "tail": (text or stderr)[-600:],
+    }
+    return row
+
+
+def metrics(rows, mode="pairwise"):
     rej = [r for r in rows if r["verdict_hiep"] == "rejected" and not r.get("skipped") and r.get("verdict_reviewer")]
     app = [r for r in rows if r["verdict_hiep"] == "approved" and not r.get("skipped") and r.get("verdict_reviewer")]
-    caught = sum(1 for x in rej if x["ok"]); passed = sum(1 for x in app if x["ok"])
+    caught = sum(1 for x in rej if x["ok"])
+    passed = sum(1 for x in app if x["ok"])
     pct = lambda xs: round(100 * sum(1 for x in xs if x["ok"]) / len(xs), 1) if xs else None
-    return {"rejected_caught": f"{caught}/{len(rej)}", "approved_passed": f"{passed}/{len(app)}",
-            "rejected_caught_pct": pct(rej), "rejected_n": len(rej), "approved_passed_pct": pct(app), "approved_n": len(app),
-            "no_verdict": sum(1 for r in rows if not r.get("skipped") and not r.get("verdict_reviewer") and not r.get("error")),
-            "errors": sum(1 for r in rows if r.get("error")),
-            "skipped": sum(1 for r in rows if r.get("skipped")), "target": "rejected ≥ 14/15, approved all",
-            "verdict_source": "review_tiers (DL-074)",
-            "cost_usd": round(sum(r.get("cost_usd") or 0 for r in rows), 4)}
+    m = {
+        "mode": mode,
+        "rejected_caught": f"{caught}/{len(rej)}",
+        "approved_passed": f"{passed}/{len(app)}",
+        "rejected_caught_pct": pct(rej),
+        "rejected_n": len(rej),
+        "approved_passed_pct": pct(app),
+        "approved_n": len(app),
+        "no_verdict": sum(1 for r in rows if not r.get("skipped") and not r.get("verdict_reviewer") and not r.get("error")),
+        "errors": sum(1 for r in rows if r.get("error")),
+        "skipped": sum(1 for r in rows if r.get("skipped")),
+        "target": "rejected ≥ 14/15, approved all",
+        "verdict_source": "review_tiers (pairwise A/B + H1–H4)" if mode == "pairwise" else "review_tiers (DL-074)",
+        "cost_usd": round(sum(r.get("cost_usd") or 0 for r in rows), 4),
+    }
+    if mode == "pairwise":
+        pw_counts = lambda xs: {k: sum(1 for x in xs if x.get("pairwise") == k) for k in ("WIN", "TIE", "LOSE")}
+        m["pairwise_rejected"] = pw_counts(rej)
+        m["pairwise_approved"] = pw_counts(app)
+    return m
+
 
 def main():
     a = sys.argv[1:]
-    def opt(n, d=None): return a[a.index(n) + 1] if n in a else d
-    model = opt("--model", "sonnet"); ss = samples()
-    if opt("--only"): ss = [s for s in ss if s["id"] in opt("--only").split(",")]
-    if opt("--limit"): ss = ss[: int(opt("--limit"))]
+    def opt(n, d=None):
+        return a[a.index(n) + 1] if n in a else d
+    mode = opt("--mode", "pairwise")
+    if mode not in ("pairwise", "score"):
+        raise SystemExit("--mode must be pairwise or score")
+    engine = opt("--engine", "claude")
+    if engine not in ("claude", "agy"):
+        raise SystemExit("--engine must be claude or agy")
+    anchor_pref = opt("--anchor")
+    model = opt("--model", "sonnet" if engine == "claude" else "default")
+    all_ss = samples()
+    ss = list(all_ss)
+    if opt("--only"):
+        ss = [s for s in ss if s["id"] in opt("--only").split(",")]
+    if opt("--limit"):
+        ss = ss[: int(opt("--limit"))]
     if "--dry-run" in a:
         for s in ss:
-            w = words_for(s); print(f"{s['id']:14} {s['verdict']:9} {'words ' + str(len(w.splitlines())) + ' beats' if w else 'SKIP (no words)'}")
-        print(f"{sum(1 for s in ss if words_for(s))} with words / {len(ss)}"); return 0
-    tpl = load_prompt(); jobs = int(opt("--jobs", "1"))
+            w = words_for(s)
+            anc = resolve_anchor(all_ss, s["id"], anchor_pref)[0] if (mode == "pairwise" and w) else "-"
+            print(f"{s['id']:14} {s['verdict']:9} anchor={anc:6} {'words ' + str(len(w.splitlines())) + ' beats' if w else 'SKIP (no words)'}")
+        print(f"{sum(1 for s in ss if words_for(s))} with words / {len(ss)} (mode={mode}, engine={engine})")
+        return 0
+    tpl = load_prompt()
+    jobs = int(opt("--jobs", "1"))
+    # Skip samples without words up front so worker pool only runs real evaluations
+    runnable = [s for s in ss if words_for(s)]
+    skipped_rows = [{"id": s["id"], "verdict_hiep": s["verdict"], "skipped": "no words"} for s in ss if not words_for(s)]
+
     def one(s):
-        if STOP.is_set(): return {"id": s["id"], "verdict_hiep": s["verdict"], "error": "not run (usage limit hit earlier)"}
-        r = run_one(s, model, tpl)
+        if STOP.is_set():
+            return {"id": s["id"], "verdict_hiep": s["verdict"], "error": "not run (usage limit hit earlier)"}
+        r = run_one(s, model, tpl, mode=mode, anchor_pref=anchor_pref, all_samples=all_ss, engine=engine)
+        detail = f"pw={r.get('pairwise')} vs {r.get('anchor_id')}" if mode == "pairwise" else f"score={r.get('score')}"
         print(f"{r['id']:14} Hiệp={r['verdict_hiep']:9} reviewer={r.get('verdict_reviewer') or r.get('skipped') or r.get('error')}"
-              f" score={r.get('score')} llm={r.get('verdict_llm')}  {'✔' if r.get('ok') else ('–' if r.get('skipped') or r.get('error') else '✖')}", flush=True)
+              f" {detail} hf={len(r.get('hard_fails') or [])}  {'✔' if r.get('ok') else ('–' if r.get('skipped') or r.get('error') else '✖')}", flush=True)
         return r
-    with ThreadPoolExecutor(max_workers=max(1, jobs)) as ex: rows = list(ex.map(one, ss))
-    m = metrics(rows)
+
+    with ThreadPoolExecutor(max_workers=max(1, jobs)) as ex:
+        ran_rows = list(ex.map(one, runnable))
+    by_id = {r["id"]: r for r in ran_rows + skipped_rows}
+    rows = [by_id[s["id"]] for s in ss]
+    m = metrics(rows, mode=mode)
     out = Path(opt("--out", str(GOLDEN / f"eval-{dt.date.today().isoformat()}.json")))
-    out.write_text(json.dumps({"date": dt.date.today().isoformat(), "model": model, "prompt": str(PROMPT_MD.relative_to(P.ROOT)),
-                               "metrics": m, "rows": rows}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(json.dumps(m, ensure_ascii=False)); print(f"→ {out}")
+    out.write_text(json.dumps({
+        "date": dt.date.today().isoformat(),
+        "engine": engine,
+        "model": next((r.get("model") for r in ran_rows if r.get("model")), model),
+        "mode": mode,
+        "anchor": anchor_pref or "auto-latest-approved",
+        "prompt": str(PROMPT_MD.relative_to(P.ROOT)),
+        "metrics": m,
+        "rows": rows,
+    }, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(json.dumps(m, ensure_ascii=False))
+    print(f"→ {out}")
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())

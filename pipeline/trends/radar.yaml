@@ -1,10 +1,27 @@
-# TikTok Outlier Radar (Luồng 1) for pipeline/scripts/trend-streams.py radar. JSON-compatible YAML (stdlib reads it).
-# min_ratio: views ÷ follower của creator (Hiệp 26/11: ≥ 3.0, ví dụ manghocls 7,6x).
-# growth: cùng một clip đo lại sau 24–72h (hai snapshot apify/clips.json); spike khi (comment + share [+ save nếu có]) tăng ≥ min_pct VÀ ≥ min_abs.
-#   Apify clockworks không trả save → save tính khi có trường save_count/collect_count, không thì bỏ qua (ghi null, không đoán).
-# topics: một clip phải khớp ít nhất một nhóm (caption + hashtag, không dấu hoặc có dấu) mới vào radar.
+# TikTok Outlier Radar (Luồng 1) for pipeline/scripts/radar-fetch.py & trend-streams.py radar. JSON-compatible YAML (stdlib reads it).
+# min_ratio: views ÷ follower (hoặc views ÷ median_views 10 video gần nhất của kênh) ≥ 3.0 (Hiệp 26/11, vd manghocls 7,6x).
+# growth: cùng một clip đo lại sau 24–72h (hai snapshot radar-raw.json / apify/clips.json); spike khi (comment + share [+ save nếu có]) tăng ≥ min_pct VÀ ≥ min_abs.
+#   Save tính khi có trường save_count/collect_count, không thì bỏ qua (ghi null, không đoán).
+# topics: một clip phải khớp ít nhất một nhóm (caption + hashtag, không dấu hoặc có dấu) mới vào radar (hoặc kênh gắn niche_verified).
+# channels: danh sách kênh đối thủ/ngách theo dõi cho pipeline/scripts/radar-fetch.py (yt-dlp --flat-playlist --dump-json).
 {"min_ratio": 3.0,
+ "recent_limit": 10,
  "growth": {"min_hours": 24, "max_hours": 72, "min_pct": 0.5, "min_abs": 100},
+ "channels": [
+  {"handle": "manghocls", "platform": "tiktok", "url": "https://www.tiktok.com/@manghocls", "followers": 99000, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
+  {"handle": "hoaquynh", "platform": "tiktok", "url": "https://www.tiktok.com/@hoaquynh", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
+  {"handle": "kyluat.1", "platform": "tiktok", "url": "https://www.tiktok.com/@kyluat.1", "followers": 0, "niche": ["productivity", "tu-duy"], "niche_verified": true},
+  {"handle": "phamthuykieuhuong", "platform": "tiktok", "url": "https://www.tiktok.com/@phamthuykieuhuong", "followers": 0, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
+  {"handle": "braincorevn", "platform": "tiktok", "url": "https://www.tiktok.com/@braincorevn", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
+  {"handle": "quocnguyenkieuvi", "platform": "tiktok", "url": "https://www.tiktok.com/@quocnguyenkieuvi", "followers": 0, "niche": ["tu-duy"], "niche_verified": true}
+ ],
+ "keywords": [
+  "thói quen tốt mỗi ngày",
+  "hết trì hoãn",
+  "cách học nhớ lâu",
+  "kỷ luật bản thân",
+  "ai lập trình công cụ"
+ ],
  "topics": {
   "productivity": ["nang suat", "năng suất", "productivity", "ky luat", "kỷ luật", "thoi quen", "thói quen", "habit", "tri hoan", "trì hoãn", "procrastinat", "tap trung", "tập trung", "focus", "deep work", "pomodoro", "lười", "luoi", "quan ly thoi gian", "quản lý thời gian"],
   "tu-duy": ["tu duy", "tư duy", "mindset", "tam ly", "tâm lý", "tamlyhoc", "psychology", "phat trien ban than", "phát triển bản thân", "selfimprovement", "self improvement", "song tot", "sống tốt", "neuroscience"],

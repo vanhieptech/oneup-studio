@@ -158,7 +158,7 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     arc = ARC.get(arc_id) if arc_id else None
     if not arc:
         aid = next((r["idea"]["arc"] for r in ideas if r["kind"] == "arc-idea"), None)
-        arc = ARC.get(aid) if aid else max(lib["arcs"], key=lambda a: (a.get("seen", 0), -a.get("uses", 0)), default=None)
+        arc = ARC.get(aid) if aid else ARC.best_arc(lib["arcs"])
     L += ["", "### 2. Mạch cốt truyện"]
     if not arc:
         L.append("- chưa có ARC nào (`research/blueprints/index.json`): chạy teardown 1 clip outlier trước.")
@@ -166,7 +166,9 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
         idea_len = next((r["idea"].get("length_s") for r in ideas if r["kind"] == "arc-idea" and r["idea"]["channel"] == ("hi_oneup" if ch == "hi" else "vanhiep_tech")), None)
         total = int(length or idea_len or c["default"]); total = max(c["lo"], min(total, c["hi"]))
         ev = ", ".join(f"{e.get('creator') or e.get('source')}" + (f" {e['ratio']}x" if e.get("ratio") else "") for e in arc.get("evidence", []))
-        L.append(f"- **{arc['id']}** {arc.get('name') or ''} · cơ chế hook: {arc.get('hook_mechanism') or '—'} · bằng chứng: {ev or '—'} · đã dùng {arc.get('uses', 0)} lần")
+        wr = arc.get("win_rate")
+        wr_str = f"{wr:.0%} ({arc.get('wins', 0)}/{arc.get('uses', 0)})" if wr is not None else "chưa có"
+        L.append(f"- **{arc['id']}** {arc.get('name') or ''} · cơ chế hook: {arc.get('hook_mechanism') or '—'} · bằng chứng: {ev or '—'} · đã dùng {arc.get('uses', 0)} lần · win_rate: {wr_str}")
         L += [f"  {i}. {s}" for i, s in enumerate(arc.get("skeleton", []), 1)]
         if ch == "hi":
             rows, loops = plan_hi(arc, total)

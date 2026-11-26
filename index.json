@@ -428,7 +428,7 @@
    "status": "ready",
    "updated": "2026-11-26",
    "path": "docs/prompts/reviewer-script.md",
-   "title": "Prompt reviewer độc lập"
+   "title": "Prompt reviewer độc lập (Pairwise A/B)"
   },
   {
    "id": "prompts.writer-hi-oneup",
@@ -2106,6 +2106,13 @@
    "status": "active",
    "path": "skills/trend-digest/SKILL.md",
    "title": "trend-digest"
+  },
+  {
+   "id": "skill.video-qa",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/video-qa/SKILL.md",
+   "title": "video-qa"
   },
   {
    "id": "template.clip-teardown",

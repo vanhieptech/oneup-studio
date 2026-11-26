@@ -65,7 +65,7 @@ tags: [index, retrieval]
 | prompt.content-bot | prompt | ready | `docs/prompts/content-bot-prompt.md` | Prompt bot nội dung OneUp (Hiệp gửi) |
 | prompts.gemini-teardown | prompt | ready | `docs/prompts/gemini-teardown.md` | Prompt Gemini teardown |
 | prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
-| prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập |
+| prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập (Pairwise A/B) |
 | prompts.writer-hi-oneup | prompt | ready | `docs/prompts/writer-hi-oneup.md` | Prompt viết script @hi.oneup |
 | prompts.writer-vanhiep-tech | prompt | ready | `docs/prompts/writer-vanhiep-tech.md` | Prompt viết script @vanhiep.tech |
 | research.craft-brief | research | ready | `docs/research/craft-brief.md` | Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm) |
@@ -279,6 +279,7 @@ tags: [index, retrieval]
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | script-polish |
 | skill.social-poster | skill | active | `skills/social-poster/SKILL.md` | social-poster |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | trend-digest |
+| skill.video-qa | skill | active | `skills/video-qa/SKILL.md` | video-qa |
 | template.clip-teardown | template | ready | `templates/clip-teardown.md` | Viral DNA Card: <tên ngắn> (`<creator>-<tiktok id>`) |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |

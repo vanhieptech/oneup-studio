@@ -41,14 +41,17 @@ Tài liệu gốc vẫn là `rules/video-rules.md`, `logs/decision-log.md`, `log
   - `python3 channels/vanhiep-tech/scripts/build-layers.py channels/vanhiep-tech/clips/<clip-id>`
   - Hoặc chỉ kiểm QA: `python3 channels/vanhiep-tech/scripts/check-layer.py channels/vanhiep-tech/clips/<clip-id>`
 
-## 3b. Script: Gate 0 → review 2 tầng (DL-074, cả 2 kênh)
-- **Gate 0 trước nháp v1:** `python3 pipeline/scripts/gate0.py --idea "<ý>" [--channel vht] [--memo <transcript>] --out <draft.md>` nạp 4 mảnh: ý tưởng + fact package · mạch `ARC-NNN` (Open Loop + Micro-Payoff mỗi 35–45s cho @hi.oneup; layer 3–5s cho @vanhiep.tech) · chuyện thật / ghi âm (Voice-First ≥ 80% từ của Hiệp) + từ nối văn nói · `resources/feedback.md`.
-- **Review 2 tầng (`logs/rule-scoring-rubric.md` §3b):** chặn tuyệt đối chỉ H1 fact không nguồn · H2 ≥ 300s · H3 sai brand/format kênh hoặc chê người xem · H4 lỗi cấu trúc. Còn lại chấm điểm, ≥ 85 là ĐẠT. Khẩu ngữ, từ nối văn nói, câu ngắn ngắt nhịp, câu hỏi tu từ = cảnh báo mềm, 0 điểm. Hook kể chuyện ngôi một và hook «bạn» + câu hỏi đều đạt. Verdict do `pipeline/review_tiers.py` tính lại từ khối cuối review.
+## 3b. Script: Gate 0 → Audio-Back QA → Review Pairwise A/B (cả 2 kênh)
+- **Gate 0 trước nháp v1:** `python3 pipeline/scripts/gate0.py --idea "<ý>" [--channel vht] [--memo <transcript>] --out <draft.md>` nạp 4 mảnh: ý tưởng + fact package · mạch `ARC-NNN` (ưu tiên `win_rate` cao nhất; Open Loop + Micro-Payoff mỗi 35–45s cho @hi.oneup; layer 3–5s cho @vanhiep.tech) · chuyện thật / ghi âm (Voice-First ≥ 80% từ của Hiệp) + từ nối văn nói · `resources/feedback.md`.
+- **Audio-Back QA trước Gate 1:** `python3 pipeline/scripts/audio-precheck.py <draft.md>` kiểm nhịp nói tiếng Việt (2.6–3.4 âm tiết/s), câu > 22 âm tiết thiếu dấu ngắt nhịp, trùng mở đầu 2 beat liên tiếp; thêm `--audition-hook` khi Hiệp muốn nghe thử 20s đầu (`final/out/hook-audition.wav`).
+- **Review 2 tầng (Hard-Gate + Pairwise A/B):** Tầng 1 chặn cứng duy nhất chỉ `H1` fact không nguồn · `H2` ≥ 300s · `H3` sai format kênh / chê người xem · `H4` lỗi cấu trúc. Tầng 2 so sánh cặp **Pairwise A/B** với bản đã duyệt gần nhất (4 trục tương đối, bỏ ngưỡng điểm 85), xuất `HARD_FAILS / PAIRWISE (WIN|TIE|LOSE) / TOP_FIXES / CONFLICTS / VERDICT`. Verdict do `pipeline/review_tiers.py` tính lại.
+- **Gate 2 Multimodal Video QA (`rule-34`):** `python3 pipeline/scripts/gate2-qa.py <clip>/` (skill `video-qa`) rà file `720p` + `spec.json` qua `agy` (lệch tiếng/SFX/phụ đề, safe-zone `L-033`, đứng hình >4s, `L-099` <300s) → `<clip>/final/gate2-qa-report.md`.
 - Cụm mùi AI (`resources/vn-spoken/ai-blacklist.tsv`) → `check-rules.py --bookish` báo ⚠ ai-tell.
 
-## 3c. Trend v5: 3 luồng → Viral DNA → ARC
-- `pipeline/scripts/trend-streams.py radar|upstream|inbox|queue` (radar view/follower ≥ 3 hoặc tăng đột biến 24–72h; upstream chấm pain/story/fit; inbox `media/footage/inbox/` → `trends-YYYY-MM-DD-NN`).
+## 3c. Trend v5: 3 luồng → Viral DNA → ARC + Feedback Loop
+- `pipeline/scripts/radar-fetch.py` (yt-dlp local, 10 video gần nhất/kênh từ `pipeline/trends/radar.yaml`, baseline follower hoặc `median_views` ≥ 3.0) → `trend-streams.py radar|upstream|inbox|queue`.
 - `teardown.py … --queue-id …` → Viral DNA Card 6 khối, tự gộp `ARC-NNN` (`research/blueprints/index.json` → bảng trong `research/trends/patterns.md`) và đẩy ý vào `content/idea-bank.md`.
+- Khép vòng hiệu suất sau đăng: `python3 pipeline/arc_library.py sync-published` đọc `content/published/` → cập nhật `uses`, `wins`, `win_rate` cho `ARC-NNN`.
 
 ## 4. Cổng kho & CI trước khi commit
 - `python3 pipeline/scripts/check-assets.py` → phải **0 violations** (layout, front-matter, trùng file, trùng ID, media mới > 2 MB, `INDEX.md`).

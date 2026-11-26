@@ -33,3 +33,17 @@ def test_write_into_replaces_block_after_front_matter():
         g.write_into(f, f"{g.BEGIN}\nA\n{g.END}\n"); g.write_into(f, f"{g.BEGIN}\nB\n{g.END}\n")
         t = f.read_text(encoding="utf-8")
         assert t.startswith("---\ntitle: x\n---") and t.count(g.BEGIN) == 1 and "\nB\n" in t and "# Nháp" in t
+
+
+def test_brief_prioritizes_highest_win_rate_arc_when_arc_omitted():
+    from unittest import mock
+    fake_lib = {
+        "arcs": [
+            {"id": "ARC-001", "name": "Cũ", "skeleton": ["[a]"], "beats": [{"role": "hook", "seconds": 5}], "seen": 5, "uses": 4, "wins": 1, "win_rate": 0.25, "evidence": []},
+            {"id": "ARC-002", "name": "Thắng cao", "skeleton": ["[b]"], "beats": [{"role": "hook", "seconds": 5}], "seen": 1, "uses": 3, "wins": 3, "win_rate": 1.0, "evidence": []},
+        ],
+        "ideas": [],
+    }
+    with mock.patch.object(g.ARC, "load", lambda *a, **k: fake_lib):
+        out = g.brief("xyzzy unmatched topic", "hi")
+    assert "**ARC-002**" in out and "win_rate: 100% (3/3)" in out

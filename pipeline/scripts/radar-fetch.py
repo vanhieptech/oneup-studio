@@ -1,0 +1,265 @@
+#!/usr/bin/env python3
+"""Local TikTok / Short-form Outlier Radar collector (Luồng 1, zero paid API).
+
+  radar-fetch.py [--date YYYY-MM-DD] [--config pipeline/trends/radar.yaml]
+                 [--limit 10] [--only handle1,handle2] [--no-enqueue] [--dry-run]
+
+Reads watched channels + keywords from pipeline/trends/radar.yaml, runs
+`yt-dlp --flat-playlist --dump-json --playlist-end <limit>` per channel to fetch
+metadata of the latest N videos (views, likes, comments, timestamp, duration,
+title/caption) without downloading video media, computes follower ratio AND
+median-views baseline (`outlier_ratio = views / median_views >= min_ratio`),
+writes:
+  - research/trends/<date>/radar-raw.json  (normalized clip snapshot for multi-day growth tracking)
+  - research/trends/<date>/radar.json      (outlier rows in trend-streams.py schema)
+and automatically calls `pipeline/scripts/trend-streams.py radar --date <date> --enqueue`
+unless `--no-enqueue` or `--dry-run` is given.
+"""
+import datetime as dt
+import importlib.util
+import json
+import re
+import shutil
+import statistics
+import subprocess
+import sys
+from pathlib import Path
+
+import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+
+ROOT = P.ROOT
+TRENDS = ROOT / "research/trends"
+RADAR_CFG = ROOT / "pipeline/trends/radar.yaml"
+
+
+def _load_trend_streams():
+    p = Path(__file__).resolve().parent / "trend-streams.py"
+    sp = importlib.util.spec_from_file_location("trend_streams", str(p))
+    mod = importlib.util.module_from_spec(sp)
+    sp.loader.exec_module(mod)
+    return mod
+
+
+def load_config(path=RADAR_CFG):
+    lines = [l for l in Path(path).read_text(encoding="utf-8").splitlines() if not l.lstrip().startswith("#")]
+    return json.loads("\n".join(lines))
+
+
+def ytdlp_cmd():
+    b = shutil.which("yt-dlp")
+    return [b] if b else [sys.executable, "-m", "yt_dlp"]
+
+
+def fetch_channel_entries(url, limit=10, timeout=90):
+    """Run `yt-dlp --flat-playlist --dump-json --playlist-end <limit> <url>` and parse JSON lines."""
+    cmd = [*ytdlp_cmd(), "--flat-playlist", "--dump-json", "--no-warnings", "--ignore-errors",
+           "--playlist-end", str(limit), url]
+    r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    entries = []
+    for line in (r.stdout or "").splitlines():
+        line = line.strip()
+        if not line or not line.startswith("{"):
+            continue
+        try:
+            entries.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue
+    err = "" if entries else (r.stderr or "").strip()[-240:]
+    return entries, err
+
+
+def extract_hashtags(text):
+    return [m.group(1) for m in re.finditer(r"#([0-9A-Za-zÀ-ỹđ_]+)", text or "")]
+
+
+def entry_to_clip(entry, ch_cfg, median_views):
+    """Convert one yt-dlp JSON entry into the normalized clip schema shared with trend-streams.py."""
+    handle = (ch_cfg.get("handle") or entry.get("uploader_id") or entry.get("channel") or entry.get("uploader") or "").lstrip("@")
+    vid = str(entry.get("id") or "")
+    url = entry.get("webpage_url") or entry.get("url") or ""
+    if url and not url.startswith("http") and ch_cfg.get("platform", "tiktok") == "tiktok" and handle:
+        url = f"https://www.tiktok.com/@{handle}/video/{vid or url}"
+    elif not url and handle and vid:
+        url = f"https://www.tiktok.com/@{handle}/video/{vid}"
+
+    caption = (entry.get("description") or entry.get("title") or "").strip()
+    views = int(entry.get("view_count") or 0)
+    likes = int(entry.get("like_count") or 0) if entry.get("like_count") is not None else None
+    comments = int(entry.get("comment_count") or 0) if entry.get("comment_count") is not None else 0
+    shares = int(entry.get("repost_count") or entry.get("share_count") or 0)
+    saves = entry.get("save_count", entry.get("collect_count"))
+    fans = int(ch_cfg.get("followers") or entry.get("channel_follower_count") or 0)
+    dur = entry.get("duration")
+    ts = entry.get("timestamp")
+    if ts:
+        created = dt.datetime.fromtimestamp(int(ts), tz=dt.timezone.utc).isoformat()
+    elif entry.get("upload_date") and len(str(entry["upload_date"])) == 8:
+        ud = str(entry["upload_date"])
+        created = f"{ud[:4]}-{ud[4:6]}-{ud[6:8]}"
+    else:
+        created = None
+
+    outlier_ratio = round(views / median_views, 2) if median_views and median_views > 0 else None
+    follower_ratio = round(views / fans, 2) if fans > 0 else None
+    effective_ratio = follower_ratio if follower_ratio is not None else outlier_ratio
+    basis = "views/followers" if follower_ratio is not None else ("views/median_views" if outlier_ratio is not None else None)
+
+    return {
+        "raw_id": vid or url,
+        "url": url,
+        "caption": caption,
+        "hashtags": list(dict.fromkeys((entry.get("tags") or []) + extract_hashtags(caption))),
+        "author": {"name": handle, "fans": fans},
+        "play_count": views,
+        "like_count": likes,
+        "comment_count": comments,
+        "share_count": shares,
+        "save_count": saves,
+        "duration_s": round(float(dur), 1) if dur is not None else None,
+        "create_time": created,
+        "median_views": round(median_views, 1) if median_views else None,
+        "outlier_ratio": outlier_ratio,
+        "outlier": effective_ratio,
+        "basis": basis,
+        "channel_niche": ch_cfg.get("niche") or [],
+        "niche_verified": bool(ch_cfg.get("niche_verified")),
+        "source": "radar-fetch (yt-dlp)",
+    }
+
+
+def normalize_channel(ch_cfg, entries):
+    """Compute channel median views across fetched entries and return normalized clip dicts."""
+    view_counts = [int(e.get("view_count") or 0) for e in entries if (e.get("view_count") or 0) > 0]
+    median_views = float(statistics.median(view_counts)) if view_counts else 0.0
+    return [entry_to_clip(e, ch_cfg, median_views) for e in entries], median_views
+
+
+def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
+    """Filter clips into outlier radar rows matching trend-streams.py schema."""
+    ts = ts_mod or _load_trend_streams()
+    min_ratio = float(cfg.get("min_ratio", 3.0))
+    rows = []
+    for c in clips:
+        tags = ts.topic_tags(c, cfg.get("topics", {}))
+        if not tags and c.get("niche_verified") and c.get("channel_niche"):
+            tags = list(c["channel_niche"])
+        if not tags:
+            continue
+        fans = (c.get("author") or {}).get("fans") or 0
+        views = c.get("play_count") or 0
+        ratio_f = round(views / fans, 2) if fans else None
+        ratio_m = c.get("outlier_ratio")
+        reasons = []
+        if ratio_f is not None and ratio_f >= min_ratio:
+            reasons.append(f"ratio≥{min_ratio:.1f}")
+        if ratio_m is not None and ratio_m >= min_ratio:
+            reasons.append(f"median≥{min_ratio:.1f}x")
+        if not reasons:
+            continue
+        author = (c.get("author") or {}).get("name") or ""
+        rows.append({
+            "id": f"{author}-{ts.clip_id(c)}",
+            "url": c.get("url"),
+            "creator": author,
+            "followers": fans,
+            "views": views,
+            "median_views": c.get("median_views"),
+            "ratio_views_followers": ratio_f,
+            "outlier_ratio": ratio_m,
+            "apify_outlier": c.get("outlier"),
+            "apify_basis": c.get("basis"),
+            "comments": c.get("comment_count"),
+            "shares": c.get("share_count"),
+            "saves": c.get("save_count"),
+            "created": c.get("create_time"),
+            "duration_s": c.get("duration_s"),
+            "topic_tags": tags,
+            "growth": None,
+            "reasons": reasons,
+            "angle": "",
+            "teardown": None,
+        })
+    rows.sort(key=lambda r: -(r["ratio_views_followers"] or r["outlier_ratio"] or 0))
+    for r in rows:
+        td = sorted(Path(root).glob(f"*/teardowns/{r['id']}.md"))
+        if td:
+            r["teardown"] = str(td[-1].relative_to(ROOT)) if ROOT in td[-1].parents else str(td[-1])
+    return rows
+
+
+def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, root=TRENDS, fetcher=fetch_channel_entries,
+              enqueue=True, dry_run=False):
+    cfg = load_config(cfg_path)
+    lim = int(limit or cfg.get("recent_limit", 10))
+    channels = cfg.get("channels") or []
+    if only:
+        want = {x.lstrip("@").lower() for x in only}
+        channels = [c for c in channels if c.get("handle", "").lstrip("@").lower() in want]
+
+    all_clips, statuses = [], []
+    for ch in channels:
+        url = ch.get("url") or f"https://www.tiktok.com/@{ch['handle'].lstrip('@')}"
+        try:
+            entries, err = fetcher(url, lim)
+        except Exception as e:
+            entries, err = [], f"{type(e).__name__}: {e}"[:200]
+        clips, med = normalize_channel(ch, entries)
+        all_clips.extend(clips)
+        statuses.append({"handle": ch.get("handle"), "url": url, "fetched": len(clips),
+                         "median_views": round(med, 1) if med else None, "error": err})
+
+    rows = build_radar_rows(all_clips, cfg, date, root=root)
+    day_dir = Path(root) / date
+    raw_path = day_dir / "radar-raw.json"
+    out_path = day_dir / "radar.json"
+
+    if not dry_run:
+        day_dir.mkdir(parents=True, exist_ok=True)
+        raw_doc = {
+            "date": date,
+            "measured_at": dt.datetime.now().isoformat(timespec="seconds"),
+            "collector": "radar-fetch.py (yt-dlp)",
+            "channels": statuses,
+            "clips": all_clips,
+        }
+        raw_path.write_text(json.dumps(raw_doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        out_doc = {
+            "date": date,
+            "config": str(Path(cfg_path).relative_to(ROOT)) if ROOT in Path(cfg_path).resolve().parents else str(cfg_path),
+            "collector": "radar-fetch.py (yt-dlp)",
+            "channels": statuses,
+            "rows": rows,
+        }
+        out_path.write_text(json.dumps(out_doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        if enqueue:
+            ts_script = Path(__file__).resolve().parent / "trend-streams.py"
+            subprocess.run([sys.executable, str(ts_script), "radar", "--date", date, "--enqueue"], check=False)
+
+    return {"statuses": statuses, "clips": all_clips, "rows": rows, "raw_path": raw_path, "out_path": out_path}
+
+
+def main():
+    a = sys.argv[1:]
+    def opt(n, d=None):
+        return a[a.index(n) + 1] if n in a else d
+    if "-h" in a or "--help" in a:
+        print(__doc__)
+        return 0
+    date = opt("--date", dt.date.today().isoformat())
+    cfg_path = Path(opt("--config", str(RADAR_CFG)))
+    limit = int(opt("--limit")) if opt("--limit") else None
+    only = opt("--only").split(",") if opt("--only") else None
+    dry_run = "--dry-run" in a
+    enqueue = "--no-enqueue" not in a
+
+    res = run_fetch(date, cfg_path=cfg_path, limit=limit, only=only, enqueue=enqueue, dry_run=dry_run)
+    for st in res["statuses"]:
+        tag = f"ok ({st['fetched']} clips, median={st['median_views']})" if st["fetched"] else f"empty/err: {st['error']}"
+        print(f"  @{st['handle']:20} {tag}")
+    print(f"radar-fetch: {len(res['clips'])} clips fetched, {len(res['rows'])} outliers → {res['out_path']}"
+          + (" (dry-run)" if dry_run else ""))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

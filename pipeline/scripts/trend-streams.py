@@ -68,19 +68,32 @@ def clip_id(c):
 
 
 def snapshots(date, root=TRENDS):
-    """[(datetime, clips)] from research/trends/<day>/apify/clips.json up to `date` (newest last)."""
+    """[(datetime, clips)] from research/trends/<day>/{apify/clips.json, radar-raw.json} up to `date` (newest last)."""
     out = []
     for d in sorted(root.glob("20??-??-??")):
-        f = d / "apify/clips.json"
-        if d.name <= date and f.exists():
+        if d.name > date:
+            continue
+        merged, seen, ts = [], set(), None
+        for rel in ("apify/clips.json", "radar-raw.json"):
+            f = d / rel
+            if not f.exists():
+                continue
             try:
                 doc = json.loads(f.read_text(encoding="utf-8"))
-                ts = dt.datetime.fromtimestamp(f.stat().st_mtime) if d.name == date else dt.datetime.fromisoformat(d.name + "T12:00:00")
+                fts = dt.datetime.fromtimestamp(f.stat().st_mtime) if d.name == date else dt.datetime.fromisoformat(d.name + "T12:00:00")
                 clips = doc if isinstance(doc, list) else doc.get("clips", [])
-                if isinstance(doc, dict) and doc.get("measured_at"): ts = dt.datetime.fromisoformat(doc["measured_at"])
-                out.append((ts, clips))
+                if isinstance(doc, dict) and doc.get("measured_at"):
+                    fts = dt.datetime.fromisoformat(doc["measured_at"])
+                ts = max(ts, fts) if ts else fts
+                for c in clips:
+                    cid = clip_id(c)
+                    if cid not in seen:
+                        seen.add(cid)
+                        merged.append(c)
             except (json.JSONDecodeError, ValueError):
                 pass
+        if ts is not None:
+            out.append((ts, merged))
     return out
 
 
@@ -103,25 +116,34 @@ def radar(date, cfg=None, root=TRENDS):
     cfg = cfg or load_jsonish(RADAR_CFG)
     snaps = snapshots(date, root)
     if not snaps or snaps[-1][1] is None: return []
-    cur = root / date / "apify/clips.json"
-    if not cur.exists(): return []
+    cur_apify = root / date / "apify/clips.json"
+    cur_radar = root / date / "radar-raw.json"
+    if not cur_apify.exists() and not cur_radar.exists(): return []
     now_ts, clips = snaps[-1]
     rows = []
     for c in clips:
         tags = topic_tags(c, cfg["topics"])
+        if not tags and c.get("niche_verified") and c.get("channel_niche"):
+            tags = list(c["channel_niche"])
         if not tags: continue
         fans = (c.get("author") or {}).get("fans") or 0; views = c.get("play_count") or 0
         ratio = round(views / fans, 2) if fans else None
+        med_ratio = c.get("outlier_ratio")
         gr = growth(clip_id(c), c, now_ts, snaps[:-1], cfg["growth"])
-        reasons = (["ratio≥%.1f" % cfg["min_ratio"]] if ratio is not None and ratio >= cfg["min_ratio"] else []) + (["growth spike"] if gr and gr["spike"] else [])
+        reasons = (
+            (["ratio≥%.1f" % cfg["min_ratio"]] if ratio is not None and ratio >= cfg["min_ratio"] else [])
+            + (["median≥%.1fx" % cfg["min_ratio"]] if med_ratio is not None and med_ratio >= cfg["min_ratio"] else [])
+            + (["growth spike"] if gr and gr["spike"] else [])
+        )
         if not reasons: continue
         author = (c.get("author") or {}).get("name") or ""
         rows.append({"id": f"{author}-{clip_id(c)}", "url": c.get("url"), "creator": author, "followers": fans, "views": views,
-                     "ratio_views_followers": ratio, "apify_outlier": c.get("outlier"), "apify_basis": c.get("basis"),
+                     "median_views": c.get("median_views"), "ratio_views_followers": ratio, "outlier_ratio": med_ratio,
+                     "apify_outlier": c.get("outlier"), "apify_basis": c.get("basis"),
                      "comments": c.get("comment_count"), "shares": c.get("share_count"), "saves": c.get("save_count", c.get("collect_count")),
                      "created": c.get("create_time"), "duration_s": c.get("duration_s"), "topic_tags": tags, "growth": gr,
                      "reasons": reasons, "angle": "", "teardown": None})
-    rows.sort(key=lambda r: -(r["ratio_views_followers"] or 0))
+    rows.sort(key=lambda r: -(r["ratio_views_followers"] or r.get("outlier_ratio") or 0))
     for r in rows:
         td = sorted(root.glob(f"*/teardowns/{r['id']}.md"))
         if td: r["teardown"] = str(td[-1].relative_to(ROOT)) if ROOT in td[-1].parents else str(td[-1])

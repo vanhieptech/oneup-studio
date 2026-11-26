@@ -29,7 +29,7 @@ import json, os, re, subprocess, sys, difflib, unicodedata, glob, math, tempfile
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
 from duration_policy import duration_status, estimated_total
-from review_tiers import parse_block, tier_verdict  # DL-074 two-tier verdict
+from review_tiers import is_hard_blocked, parse_block, tier_verdict  # DL-074 two-tier + pairwise A/B verdict
 REPO = str(P.ROOT)
 NODE_BIN = P.NODE_BIN
 ASR_PY = P.ASR_PYTHON
@@ -106,19 +106,19 @@ def draft_hash(md):
     """Same hash computed from a draft (`N. **[bNN]** lời` lines, see draft_beats)."""
     return _hash12(_spoken_words(t for _, _, t in draft_beats(md)))
 
-REVIEW_VERDICTS = ("ĐẠT VỀ ĐIỂM", "CHƯA ĐẠT", "ĐẠT")  # longest first; make-video §4b
+REVIEW_VERDICTS = ("ĐẠT VỀ ĐIỂM", "CHƯA ĐẠT", "CẦN SỬA", "ĐẠT")  # longest first; make-video §4b
 def check_review(spec, fdir, want=None):
-    """make-video §4b: gate 1 needs final/review.md (claim table + rubric score) with verdict ĐẠT for the current words,
-    and every Hiệp note in final/feedback.md handled (feedback_seen)."""
+    """make-video §4b: gate 1 needs final/review.md with Tier 1 hard-gate clean (H1–H4 = sole hard blocker)
+    and Tier 2 pairwise A/B (or legacy score) verdict for the current words, plus feedback_seen."""
     rp = os.path.join(fdir, "review.md"); rel = os.path.relpath(rp, REPO); want = want or script_hash(spec)
     if not os.path.exists(rp):
-        err("review", f"missing {rel}: run make-video §4b (claim check + rubric score) before gate 1; front-matter needs verdict, score, script_hash: {want}"); return
+        err("review", f"missing {rel}: run make-video §4b (claim check + pairwise review) before gate 1; front-matter needs verdict, script_hash: {want}"); return
     txt = open(rp, encoding="utf-8").read(); head = txt.split("\n---", 1)[0] if txt.startswith("---") else ""
     fm = dict((k.strip(), v.strip().strip('"')) for k, v in (l.split(":", 1) for l in head.splitlines()[1:] if ":" in l and not l.startswith(" ")))
     v = unicodedata.normalize("NFC", fm.get("verdict", "")).upper()
     verdict = next((x for x in REVIEW_VERDICTS if v.startswith(x)), None)
     if not verdict:
-        err("review", f"{rel}: front-matter `verdict:` must start with ĐẠT, ĐẠT VỀ ĐIỂM or CHƯA ĐẠT (got {fm.get('verdict')!r})"); return
+        err("review", f"{rel}: front-matter `verdict:` must start with ĐẠT, ĐẠT VỀ ĐIỂM, CẦN SỬA or CHƯA ĐẠT (got {fm.get('verdict')!r})"); return
     m = re.search(r"\b[0-9a-f]{12}\b", fm.get("script_hash", ""))
     if not m or m.group(0) != want:
         err("review", f"{rel} is stale: script_hash {fm.get('script_hash')!r} ≠ current {want} (spoken VI words changed) → re-run §4b"); return
@@ -129,14 +129,30 @@ def check_review(spec, fdir, want=None):
         except IndexError: seen = -1
         if seen < n:
             err("review", f"{rel}: feedback_seen {fm.get('feedback_seen', 'missing')} < {n} notes in {os.path.relpath(fp, REPO)} → review must answer every Hiệp note"); return
-    blk = parse_block(txt.split("\n---", 1)[1] if head else txt)  # DL-074: body's 5-line block decides; soft warnings never reject
+    blk = parse_block(txt.split("\n---", 1)[1] if head else txt)  # Tier 1 hard fails + Tier 2 pairwise/score
     tv = tier_verdict(blk)
-    if tv and tv[0] != verdict:
-        err("review", f"{rel}: front-matter verdict {verdict} ≠ two-tier verdict {tv[0]} from the body block "
-                      f"(hard fails {len(blk['hard_fails'])}, TOTAL {blk['score']}) → fix the front-matter (rubric §3b)"); return
-    if verdict == "CHƯA ĐẠT": err("review", f"{rel}: verdict CHƯA ĐẠT (score {fm.get('score', '?')}) → fix the quoted lines, re-run §3–§4b, don't send gate 1")
-    elif verdict == "ĐẠT VỀ ĐIỂM": warn("review", f"{rel}: ĐẠT VỀ ĐIỂM (score {fm.get('score', '?')}), open conflict for Hiệp to decide: {fm.get('verdict')}")
-    else: ok("review", f"{rel}: ĐẠT (score {fm.get('score', '?')}), script_hash matches")
+    if tv:
+        # In pairwise mode, allow front-matter CHƯA ĐẠT as alias for CẦN SỬA, but never disagree on pass vs fail
+        same = (tv[0] == verdict) or (blk["mode"] == "pairwise" and {tv[0], verdict} == {"CẦN SỬA", "CHƯA ĐẠT"})
+        if not same:
+            detail = f"pairwise={blk.get('pairwise')}" if blk["mode"] == "pairwise" else f"TOTAL {blk['score']}"
+            err("review", f"{rel}: front-matter verdict {verdict} ≠ two-tier verdict {tv[0]} from the body block "
+                          f"(hard fails {len(blk['hard_fails'])}, {detail}) → fix the front-matter"); return
+    if blk and blk["mode"] == "pairwise":
+        # Tier 1 (H1–H4) is the SOLE hard blocker; Tier 2 LOSE without H1–H4 warns with top fixes
+        if is_hard_blocked(blk):
+            err("review", f"{rel}: HARD FAIL chặn Gate 1 ({'; '.join(blk['hard_fails'])}) → sửa lỗi H1–H4 trước khi trình")
+        elif verdict in ("CẦN SỬA", "CHƯA ĐẠT"):
+            fixes = "; ".join(blk.get("top_fixes") or [])
+            warn("review", f"{rel}: PAIRWISE {blk.get('pairwise')} vs {blk.get('anchor') or 'anchor'} (0 hard fails — không chặn cứng, nên sửa trước Gate 1)" + (f"; TOP_FIXES: {fixes}" if fixes else ""))
+        elif verdict == "ĐẠT VỀ ĐIỂM":
+            warn("review", f"{rel}: ĐẠT ({blk.get('pairwise')} vs {blk.get('anchor') or 'anchor'}), có xung đột chờ Hiệp quyết: {blk.get('conflicts') or fm.get('verdict')}")
+        else:
+            ok("review", f"{rel}: ĐẠT (PAIRWISE {blk.get('pairwise')} vs {blk.get('anchor') or 'anchor'}, 0 hard fails), script_hash matches")
+    else:
+        if verdict in ("CHƯA ĐẠT", "CẦN SỬA"): err("review", f"{rel}: verdict {verdict} (score {fm.get('score', '?')}) → fix the quoted lines, re-run §3–§4b, don't send gate 1")
+        elif verdict == "ĐẠT VỀ ĐIỂM": warn("review", f"{rel}: ĐẠT VỀ ĐIỂM (score {fm.get('score', '?')}), open conflict for Hiệp to decide: {fm.get('verdict')}")
+        else: ok("review", f"{rel}: ĐẠT (score {fm.get('score', '?')}), script_hash matches")
 
 def ffprobe(path):
     o = subprocess.run([FFPROBE_BIN, "-v", "error", "-show_entries", "stream=codec_type,codec_name,profile,width,height,r_frame_rate,pix_fmt,color_space,sample_rate:format=duration",

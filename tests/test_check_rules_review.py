@@ -86,3 +86,24 @@ class TwoTierBlock(_ut.TestCase):
 
     def test_hard_fail_blocks_even_high_score(self):
         self.assertEqual(run(self._fm("ĐẠT", self.BLOCK.format(h="H1: «nhớ gấp 3 lần» không có nguồn", t=92, v="ĐẠT"))), [("✖", "review")])
+
+
+class PairwiseHardGateBlock(_ut.TestCase):
+    """Tier 1 (H1–H4) is the sole hard blocker in pairwise mode; LOSE without H1–H4 warns instead of hard-blocking."""
+    PW = "HARD_FAILS: {h}\nPAIRWISE: {pw} (so với a-c05)\nTOP_FIXES: 1. b01: rút ngắn hook\nCONFLICTS: {c}\nVERDICT: {v}\n"
+
+    def _fm(self, verdict, body):
+        return f"---\ntitle: \"review\"\nverdict: {verdict}\nscript_hash: {cr.script_hash(SPEC)}\n---\n{body}"
+
+    def test_pairwise_tie_passes(self):
+        self.assertEqual(run(self._fm("ĐẠT", self.PW.format(h="không", pw="TIE", c="không", v="ĐẠT"))), [("✔", "review")])
+
+    def test_pairwise_lose_without_hard_fail_warns_only(self):
+        # Sole hard gate is H1–H4; LOSE without hard fails emits warning with TOP_FIXES
+        self.assertEqual(run(self._fm("CẦN SỬA", self.PW.format(h="không", pw="LOSE", c="không", v="CẦN SỬA"))), [("⚠", "review")])
+
+    def test_pairwise_hard_fail_blocks_hard(self):
+        self.assertEqual(run(self._fm("CẦN SỬA", self.PW.format(h="H3: chê người xem «não kém»", pw="WIN", c="không", v="CẦN SỬA"))), [("✖", "review")])
+
+    def test_pairwise_frontmatter_disagreement_blocks(self):
+        self.assertEqual(run(self._fm("ĐẠT", self.PW.format(h="H1: không nguồn", pw="WIN", c="không", v="ĐẠT"))), [("✖", "review")])

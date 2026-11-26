@@ -1,0 +1,552 @@
+{
+ "date": "2026-11-26",
+ "engine": "agy",
+ "model": "default",
+ "mode": "pairwise",
+ "anchor": "auto-latest-approved",
+ "prompt": "docs/prompts/reviewer-script.md",
+ "metrics": {
+  "mode": "pairwise",
+  "rejected_caught": "12/15",
+  "approved_passed": "5/5",
+  "rejected_caught_pct": 80.0,
+  "rejected_n": 15,
+  "approved_passed_pct": 100.0,
+  "approved_n": 5,
+  "no_verdict": 0,
+  "errors": 0,
+  "skipped": 5,
+  "target": "rejected ≥ 14/15, approved all",
+  "verdict_source": "review_tiers (pairwise A/B + H1–H4)",
+  "cost_usd": 0,
+  "pairwise_rejected": {
+   "WIN": 1,
+   "TIE": 2,
+   "LOSE": 12
+  },
+  "pairwise_approved": {
+   "WIN": 0,
+   "TIE": 5,
+   "LOSE": 0
+  }
+ },
+ "rows": [
+  {
+   "id": "r-c05-v2",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 2 & Beat 7: bỏ ví dụ môn Sinh học (\"chương Di truyền\", \"dạng lai hai cặp tính trạng\" — lỗi L-087), thay bằng tình huống học/ôn gần gũi với số đông và viết lại cú chốt Beat 7 có hình ảnh hơn thay vì lặp lại y câu Beat 2",
+    "Beat 3, Beat 5 & Beat 6: bổ sung nguồn cụ thể (tác giả/năm) cho nghiên cứu và con số 317 thí nghiệm, bỏ cụm mơ hồ \"theo đúng ví dụ trong cẩm nang\", và chỉnh cách chia lịch ôn ở Beat 5 cho khớp với nguyên lý giãn cách dài dần ở Beat 6",
+    "Toàn bài (nhất là Beat 3–6): viết lại theo giọng nói miền Nam tự nhiên của Hiệp, bỏ câu báo cáo lặp từ ở Beat 3 và câu đề mục cụt lủn ở Beat 4 (\"Mình cần là...\"), thêm 1 câu giải thích dễ hiểu vì sao học dồn mau quên"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Beat 3 (\"Một nghiên cứu cho sinh viên đọc một bài hai lần liền...\") và Beat 6 (\"Khi gom 317 thí nghiệm lại, các nhà nghiên cứu thấy...\") nêu kết quả và con số nghiên cứu nhưng không có nguồn (tác giả/năm/nguồn gốc)"
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "h huống học/ôn gần gũi với số đông và viết lại cú chốt Beat 7 có hình ảnh hơn thay vì lặp lại y câu Beat 2; 2. Beat 3, Beat 5 & Beat 6: bổ sung nguồn cụ thể (tác giả/năm) cho nghiên cứu và con số 317 thí nghiệm, bỏ cụm mơ hồ \"theo đúng ví dụ trong cẩm nang\", và chỉnh cách chia lịch ôn ở Beat 5 cho khớp với nguyên lý giãn cách dài dần ở Beat 6; 3. Toàn bài (nhất là Beat 3–6): viết lại theo giọng nói miền Nam tự nhiên của Hiệp, bỏ câu báo cáo lặp từ ở Beat 3 và câu đề mục cụt lủn ở Beat 4 (\"Mình cần là...\"), thêm 1 câu giải thích dễ hiểu vì sao học dồn mau quên\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-v4",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 5–7: bổ sung đầy đủ 2 bước chia thời gian ôn cụ thể (hiện beat 5 chỉ nói «mình làm thế này» rồi bỏ lửng trong khi beat 7 nhắc «làm đủ hai bước đó») để khép mạch và trả lời trọn hook",
+    "Beat 3 & 6: gắn nguồn rõ ràng (tác giả/năm) cho cả hai nghiên cứu và viết lại bằng văn nói miền Nam tự nhiên, bỏ lặp từ kiểu báo cáo dịch",
+    "Beat 2 & 7: bỏ ví dụ môn Sinh học («chương Di truyền», «dạng lai hai cặp tính trạng»), thay bằng tình huống học/nhớ bài đời thường phổ quát hơn"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Beat 3 «Một nghiên cứu cho sinh viên đọc một bài hai lần liền...» và Beat 6 «Khi gom 317 thí nghiệm lại, các nhà nghiên cứu thấy...» nêu kết quả/con số nghiên cứu nhưng không có nguồn (tác giả/năm/nguồn gốc)"
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "nhưng không có nguồn (tác giả/năm/nguồn gốc)\nPAIRWISE: LOSE (so với a-c05)\nTOP_FIXES: 1. Beat 5–7: bổ sung đầy đủ 2 bước chia thời gian ôn cụ thể (hiện beat 5 chỉ nói «mình làm thế này» rồi bỏ lửng trong khi beat 7 nhắc «làm đủ hai bước đó») để khép mạch và trả lời trọn hook; 2. Beat 3 & 6: gắn nguồn rõ ràng (tác giả/năm) cho cả hai nghiên cứu và viết lại bằng văn nói miền Nam tự nhiên, bỏ lặp từ kiểu báo cáo dịch; 3. Beat 2 & 7: bỏ ví dụ môn Sinh học («chương Di truyền», «dạng lai hai cặp tính trạng»), thay bằng tình huống học/nhớ bài đời thường phổ quát hơn\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r4",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 3: thêm bối cảnh nguồn cụ thể (năm/đối tượng/làm gì), bỏ lặp từ («người đọc», «một lần», «hơn»), viết lại bằng văn nói miền Nam và giải thích ngắn vì sao đọc dồn lại mau quên để trả lời hook và nối mượt với beat 2",
+    "Beat 4–5: bỏ câu văn sách («càng muốn nhớ lâu thì các lần ôn càng nên cách xa nhau»), dẫn rõ lý do của bước «úp tài liệu, tự nói lại» (hoặc giữ 1 trọng tâm ôn cách quãng), làm rõ ngữ cảnh «cẩm nang» và viết lại beat 5 bớt cộc lốc",
+    "Beat 1–2 & 6: sửa «trôi nhanh thế» sang giọng miền Nam, thêm câu nối tự nhiên từ «bạn» sang «mình» ở beat 2 và thống nhất bối cảnh «buổi họp» xuyên suốt tới CTA"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "m gì), bỏ lặp từ («người đọc», «một lần», «hơn»), viết lại bằng văn nói miền Nam và giải thích ngắn vì sao đọc dồn lại mau quên để trả lời hook và nối mượt với beat 2; 2. Beat 4–5: bỏ câu văn sách («càng muốn nhớ lâu thì các lần ôn càng nên cách xa nhau»), dẫn rõ lý do của bước «úp tài liệu, tự nói lại» (hoặc giữ 1 trọng tâm ôn cách quãng), làm rõ ngữ cảnh «cẩm nang» và viết lại beat 5 bớt cộc lốc; 3. Beat 1–2 & 6: sửa «trôi nhanh thế» sang giọng miền Nam, thêm câu nối tự nhiên từ «bạn» sang «mình» ở beat 2 và thống nhất bối cảnh «buổi họp» xuyên suốt tới CTA\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r53b",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 3: bổ sung nguồn cụ thể (tác giả/năm hoặc quy mô-số liệu thí nghiệm) và viết lại câu lặp «nhớ hơn… không còn hơn… vẫn hơn» thành lời kể dễ nghe bằng tai",
+    "Beat 1 & toàn bài: chuyển hẳn sang giọng nói miền Nam xưng «mình – bạn» (đổi «trôi nhanh thế?» sang «trôi nhanh vậy?»/«trôi lẹ dữ vậy?», đổi «Kể OneUp nghe» ở beat 6 sang ngôi «mình») và thêm chút nhịp kể đời thường thay vì giọng tóm tắt",
+    "Beat 4–6: giải thích ngắn nhịp cầu nối vì sao thêm bước «úp tài liệu tự nói lại» (và khớp mốc «cách một tuần» vs «ba ngày», «buổi họp» vs «thuyết trình»), đồng thời thêm 1 hình ảnh/ẩn dụ chốt đắt trước CTA"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "ặc quy mô-số liệu thí nghiệm) và viết lại câu lặp «nhớ hơn… không còn hơn… vẫn hơn» thành lời kể dễ nghe bằng tai; 2. Beat 1 & toàn bài: chuyển hẳn sang giọng nói miền Nam xưng «mình – bạn» (đổi «trôi nhanh thế?» sang «trôi nhanh vậy?»/«trôi lẹ dữ vậy?», đổi «Kể OneUp nghe» ở beat 6 sang ngôi «mình») và thêm chút nhịp kể đời thường thay vì giọng tóm tắt; 3. Beat 4–6: giải thích ngắn nhịp cầu nối vì sao thêm bước «úp tài liệu tự nói lại» (và khớp mốc «cách một tuần» vs «ba ngày», «buổi họp» vs «thuyết trình»), đồng thời thêm 1 hình ảnh/ẩn dụ chốt đắt trước CTA\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r65",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1–2: Viết lại hook gọn và tự nhiên hơn (sửa cụm «chương sách bạn đọc lại ngay cho nhớ»), bỏ đoạn chen trend «đọc nhiều có giúp viết hay hơn không» đang lạc mạch để câu hỏi Beat 1 nối thẳng vào lời giải thích",
+    "Beat 3–4: Nêu rõ nguồn nghiên cứu (tác giả/năm/mẫu) và vá lỗ hổng logic — phải giải thích cơ chế tự gợi nhớ thay vì chứng minh giãn cách đọc lại rồi nhảy cóc sang «tự kể ý chính»",
+    "Beat 3–6: Chuyển sang văn nói miền Nam xưng mình – bạn, bỏ lặp từ («vài hôm», «hơn», «đọc lại»), thêm ẩn dụ đời thường có lực và làm rõ các bước áp dụng ở phần kết."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": " Beat 1–2: Viết lại hook gọn và tự nhiên hơn (sửa cụm «chương sách bạn đọc lại ngay cho nhớ»), bỏ đoạn chen trend «đọc nhiều có giúp viết hay hơn không» đang lạc mạch để câu hỏi Beat 1 nối thẳng vào lời giải thích; 2. Beat 3–4: Nêu rõ nguồn nghiên cứu (tác giả/năm/mẫu) và vá lỗ hổng logic — phải giải thích cơ chế tự gợi nhớ thay vì chứng minh giãn cách đọc lại rồi nhảy cóc sang «tự kể ý chính»; 3. Beat 3–6: Chuyển sang văn nói miền Nam xưng mình – bạn, bỏ lặp từ («vài hôm», «hơn», «đọc lại»), thêm ẩn dụ đời thường có lực và làm rõ các bước áp dụng ở phần kết.\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r67b",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 2 («Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không. Nhưng nhớ được lâu hay không còn tùy cách bạn đọc lại.»): bỏ câu chêm trend «viết hay hơn» lạc đề, nối thẳng từ câu hỏi ở Beat 1 sang lý do vì sao đọc liền hai lần vẫn quên",
+    "Beat 3–4: bổ sung nguồn cụ thể (tác giả/năm/mẫu thí nghiệm) và chốt thống nhất một cơ chế — nếu Beat 4 khuyên «tự kể ý chính trước khi mở sách» thì Beat 3 phải dẫn cơ chế/thí nghiệm về tự nhớ lại chứ không chỉ nói giãn lịch đọc lại",
+    "Beat 3–6: viết lại bằng văn nói miền Nam tự nhiên xưng mình–bạn (thay «OneUp» bằng «mình»), xóa lặp từ («đọc», «hai ngày sau», «nhớ hơn») và câu cộc kiểu tóm tắt, thêm một ví dụ đời thường cụ thể để kết trả lời trọn lời hứa của hook."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Beat 3 («Một nghiên cứu về cách đọc thấy rằng, so với đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Nhưng hai ngày sau không còn hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn.») — nêu kết quả nghiên cứu nhưng không có tác giả, năm hay nguồn gốc."
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": " hay hơn» lạc đề, nối thẳng từ câu hỏi ở Beat 1 sang lý do vì sao đọc liền hai lần vẫn quên; 2. Beat 3–4: bổ sung nguồn cụ thể (tác giả/năm/mẫu thí nghiệm) và chốt thống nhất một cơ chế — nếu Beat 4 khuyên «tự kể ý chính trước khi mở sách» thì Beat 3 phải dẫn cơ chế/thí nghiệm về tự nhớ lại chứ không chỉ nói giãn lịch đọc lại; 3. Beat 3–6: viết lại bằng văn nói miền Nam tự nhiên xưng mình–bạn (thay «OneUp» bằng «mình»), xóa lặp từ («đọc», «hai ngày sau», «nhớ hơn») và câu cộc kiểu tóm tắt, thêm một ví dụ đời thường cụ thể để kết trả lời trọn lời hứa của hook.\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r68",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 2–4 (mạch truyện): bỏ nhánh rẽ gượng sang «đọc nhiều có giúp viết hay hơn không» ở Beat 2, thêm bước giải thích trực tiếp vì sao đọc liền hai lần vẫn quên, và nối rõ lý lẽ từ giãn cách thời gian sang thao tác «tự kể trước khi mở sách» ở Beat 4",
+    "Beat 3 (nguồn & văn nói): bổ sung tác giả/năm/bối cảnh nghiên cứu cụ thể và viết lại cho thoát kiểu văn viết lặp từ «Một nghiên cứu về cách đọc thấy rằng…»",
+    "Toàn bài (giọng & độ đắt): viết lại theo giọng kể miền Nam xưng «mình – bạn» của Hiệp, thêm 1 hình ảnh/ẩn dụ đời thường có lực và chuẩn hóa nhãn beat `[b01]`–`[bNN]`"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Beat 3 «Một nghiên cứu về cách đọc thấy rằng, so với đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Nhưng hai ngày sau không còn hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn.» (nêu kết quả thực nghiệm nhưng không có tác giả/năm/nguồn gốc)"
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "h truyện): bỏ nhánh rẽ gượng sang «đọc nhiều có giúp viết hay hơn không» ở Beat 2, thêm bước giải thích trực tiếp vì sao đọc liền hai lần vẫn quên, và nối rõ lý lẽ từ giãn cách thời gian sang thao tác «tự kể trước khi mở sách» ở Beat 4; 2. Beat 3 (nguồn & văn nói): bổ sung tác giả/năm/bối cảnh nghiên cứu cụ thể và viết lại cho thoát kiểu văn viết lặp từ «Một nghiên cứu về cách đọc thấy rằng…»; 3. Toàn bài (giọng & độ đắt): viết lại theo giọng kể miền Nam xưng «mình – bạn» của Hiệp, thêm 1 hình ảnh/ẩn dụ đời thường có lực và chuẩn hóa nhãn beat `[b01]`–`[bNN]`\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r612",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 2 (\"Trên mạng đang bàn đọc nhiều có giúp viết hay hơn không...\"): bỏ đoạn rẽ ngang hoặc lồng tự nhiên vào ngay mở đầu, không cắt đứt câu hỏi vừa đặt ở Beat 1",
+    "Beat 3–4 (\"Trong một nghiên cứu...\" → \"tự kể ý chính\"): bổ sung nguồn nghiên cứu cụ thể (tác giả/năm/đối tượng), thêm 1 câu giải thích cơ chế *vì sao* đọc liền dễ quên và nối đúng cầu sang hành động *tự kể trước khi mở sách* để không bị nhảy ý",
+    "Toàn bài (đặc biệt Beat 1, 3, 5): viết lại theo văn nói miền Nam xưng «mình – bạn», bỏ câu tóm tắt cộc lốc/lặp từ «hơn», thêm 1 hình ảnh hoặc tình huống đời thường sát nỗi đau và chuẩn hóa nhãn beat `[b01]`–`[bNN]`."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: \"Trong một nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đợi hai ngày rồi hỏi thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn.\" (dẫn kết quả nghiên cứu nhưng không nêu tác giả/năm/nguồn gốc)"
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "..\"): bỏ đoạn rẽ ngang hoặc lồng tự nhiên vào ngay mở đầu, không cắt đứt câu hỏi vừa đặt ở Beat 1; 2. Beat 3–4 (\"Trong một nghiên cứu...\" → \"tự kể ý chính\"): bổ sung nguồn nghiên cứu cụ thể (tác giả/năm/đối tượng), thêm 1 câu giải thích cơ chế *vì sao* đọc liền dễ quên và nối đúng cầu sang hành động *tự kể trước khi mở sách* để không bị nhảy ý; 3. Toàn bài (đặc biệt Beat 1, 3, 5): viết lại theo văn nói miền Nam xưng «mình – bạn», bỏ câu tóm tắt cộc lốc/lặp từ «hơn», thêm 1 hình ảnh hoặc tình huống đời thường sát nỗi đau và chuẩn hóa nhãn beat `[b01]`–`[bNN]`.\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r82",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1–2: viết lại hook có lực và bỏ câu nhét trend gượng (\"dù trên mạng bàn đọc nhiều có giúp viết hay hơn không\"), bám thẳng nỗi đau quên sau khi đọc lại kèm câu hỏi dẫn mạch",
+    "Beat 3: ghi rõ nguồn nghiên cứu (tác giả/năm và chi tiết thí nghiệm) đồng thời giải thích rõ cơ chế vì sao đọc lại liền vẫn quên để trả lời trọn câu hỏi ở beat 2",
+    "Beat 4–6: tách mạch rõ giữa giãn cách ôn tập và tự nhớ khi gấp sách, viết lại theo văn nói miền Nam xưng \"mình – bạn\" (bỏ cụm văn viết \"phần hơn ấy mất\", đổi tự xưng \"OneUp\"), thêm tình huống đời thường và chuẩn hóa nhãn beat `[bNN]`"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: \"Một nghiên cứu thử đúng chuyện này. Nhóm đọc một lần, nhóm đọc lại liền như bạn, nhóm đợi một tuần mới đọc lại. Kiểm tra ngay, nhóm như bạn nhớ hơn nhóm một lần. Hai ngày sau lần đọc cuối, phần hơn ấy mất, chỉ nhóm chờ một tuần còn giữ.\" (dẫn kết quả nghiên cứu nhưng không nêu tác giả, năm hay nguồn gốc)"
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "lại hook có lực và bỏ câu nhét trend gượng (\"dù trên mạng bàn đọc nhiều có giúp viết hay hơn không\"), bám thẳng nỗi đau quên sau khi đọc lại kèm câu hỏi dẫn mạch; 2. Beat 3: ghi rõ nguồn nghiên cứu (tác giả/năm và chi tiết thí nghiệm) đồng thời giải thích rõ cơ chế vì sao đọc lại liền vẫn quên để trả lời trọn câu hỏi ở beat 2; 3. Beat 4–6: tách mạch rõ giữa giãn cách ôn tập và tự nhớ khi gấp sách, viết lại theo văn nói miền Nam xưng \"mình – bạn\" (bỏ cụm văn viết \"phần hơn ấy mất\", đổi tự xưng \"OneUp\"), thêm tình huống đời thường và chuẩn hóa nhãn beat `[bNN]`\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r92",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 3 (\"Nhiều nghiên cứu thấy...\"): thay bằng nguồn/thí nghiệm cụ thể có tác giả hoặc năm và số liệu đúng nguồn, tách bạch phần thí nghiệm làm thật với bước mở sách dò thêm",
+    "Beat 2 (\"chương về tiêu tiền\" vs \"đọc nhiều có giúp viết hay hơn không\"): bỏ kiểu gài trend lạc quẻ vào cảnh đồng nghiệp gượng ép, viết lại tình huống bị hỏi liền mạch trong cùng một chủ đề",
+    "Toàn bài (Beat 1–6): chuyển từ văn viết cộc lốc sang văn nói miền Nam xưng mình – bạn, bỏ các cụm cứng/miền Bắc (\"khi sách gấp\", \"không có trang nào\", \"Chỗ sót ấy\", \"bình luận nha\"), giảm lặp từ (\"hay lắm\", \"kể\") và thêm một hình ảnh/ẩn dụ đời thường để chốt payoff rõ hơn"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: \"Nhiều nghiên cứu thấy tự kể rồi mở sách dò có ích hơn chỉ đọc lại.\""
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "iả hoặc năm và số liệu đúng nguồn, tách bạch phần thí nghiệm làm thật với bước mở sách dò thêm; 2. Beat 2 (\"chương về tiêu tiền\" vs \"đọc nhiều có giúp viết hay hơn không\"): bỏ kiểu gài trend lạc quẻ vào cảnh đồng nghiệp gượng ép, viết lại tình huống bị hỏi liền mạch trong cùng một chủ đề; 3. Toàn bài (Beat 1–6): chuyển từ văn viết cộc lốc sang văn nói miền Nam xưng mình – bạn, bỏ các cụm cứng/miền Bắc (\"khi sách gấp\", \"không có trang nào\", \"Chỗ sót ấy\", \"bình luận nha\"), giảm lặp từ (\"hay lắm\", \"kể\") và thêm một hình ảnh/ẩn dụ đời thường để chốt payoff rõ hơn\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c05-r114",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1–2: bỏ câu mở vòng vo và đoạn nhét «Text hip ở Hàn» lạc mạch, mở thẳng vào nỗi đau đọc xong gấp sách là quên hoặc chuyện thật có cái giá",
+    "Beat 3–5: dựng lại mạch tuần tự một lượt (vì sao đọc lại không hiệu quả → bằng chứng cụ thể thay vì liệt kê khô «hữu ích cao, đọc lại thấp» → các bước tự kiểm rõ ràng), bỏ câu hỏi lặp nhịp ở beat 4",
+    "Toàn bài & Beat 5–7: viết lại theo văn nói miền Nam xưng mình – bạn, bỏ câu ghép dấu chấm phẩy và giọng sách hướng dẫn («À, bạn bổ sung khoản vừa sót đó», «Bình luận một chữ...»), thay ví dụ «tiền thuê nhà / tiền ăn» bằng hình ảnh đời thường sắc hơn kèm lời kết chốt đúng lời hứa hook."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "ở thẳng vào nỗi đau đọc xong gấp sách là quên hoặc chuyện thật có cái giá; 2. Beat 3–5: dựng lại mạch tuần tự một lượt (vì sao đọc lại không hiệu quả → bằng chứng cụ thể thay vì liệt kê khô «hữu ích cao, đọc lại thấp» → các bước tự kiểm rõ ràng), bỏ câu hỏi lặp nhịp ở beat 4; 3. Toàn bài & Beat 5–7: viết lại theo văn nói miền Nam xưng mình – bạn, bỏ câu ghép dấu chấm phẩy và giọng sách hướng dẫn («À, bạn bổ sung khoản vừa sót đó», «Bình luận một chữ...»), thay ví dụ «tiền thuê nhà / tiền ăn» bằng hình ảnh đời thường sắc hơn kèm lời kết chốt đúng lời hứa hook.\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c06-v2",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "Beat 8 («không làm hỏng gì đáng kể quá trình tạo thói quen»): đổi sang văn nói tự nhiên hơn, ví dụ «lỡ một bữa cũng hông làm hư mấy công sức trước đó đâu»",
+    "Beat 6 («thì tới giờ chưa ai đo»): thu hẹp phạm vi cho chặt nguồn thành «thì nghiên cứu này chưa đo»",
+    "Beat 1 & nhãn beat: khi đưa vào spec nên tách Beat 1 thành 2–3 beat ngắn để giữ nhịp và gắn mã b01–bNN."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": false,
+   "tail": "n và biết tự giới hạn; chỉ cần chỉnh 1–2 câu hơi văn viết cho mượt miệng hơn khi vào khâu thu âm/lên spec.\n\n---\n\n### 3. Khối kết luận chuẩn\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c05)\nTOP_FIXES: 1. Beat 8 («không làm hỏng gì đáng kể quá trình tạo thói quen»): đổi sang văn nói tự nhiên hơn, ví dụ «lỡ một bữa cũng hông làm hư mấy công sức trước đó đâu»; 2. Beat 6 («thì tới giờ chưa ai đo»): thu hẹp phạm vi cho chặt nguồn thành «thì nghiên cứu này chưa đo»; 3. Beat 1 & nhãn beat: khi đưa vào spec nên tách Beat 1 thành 2–3 beat ngắn để giữ nhịp và gắn mã b01–bNN.\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "r-c06-v3",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1: rút gọn mở bài vào thẳng tương phản 3 năm–3 tuần và câu hỏi lõi, bỏ câu hàn 3 ý gượng («Lý do nghe mới quê, tới tuần thứ ba vẫn thấy ngại, trong khi...») và đoạn úp mở «cuốn cẩm nang… lát mình kể»",
+    "Beat 2–4: sắp lại mạch tuần tự một chiều bằng cách gộp hoặc bỏ Beat 2 đang lặp lại ý Beat 1, rồi nối mượt từ lý do đi làm chịu nổi (Beat",
+    "sang nghiên cứu Lally 2010 (Beat"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": " khi...») và đoạn úp mở «cuốn cẩm nang… lát mình kể»; 2. Beat 2–4: sắp lại mạch tuần tự một chiều bằng cách gộp hoặc bỏ Beat 2 đang lặp lại ý Beat 1, rồi nối mượt từ lý do đi làm chịu nổi (Beat 3) sang nghiên cứu Lally 2010 (Beat 4) thay vì nhảy cóc sau «nghe quen hông?»; 3. Beat 4, 5, 8–10: viết lại các cụm văn viết/dịch sang văn nói tự nhiên («được chia lại nhiều», «trong cùng một bối cảnh», «Phát hiện đó là, bỏ lỡ một lượt không ảnh hưởng gì đáng kể tới quá trình tạo thói quen») và gộp ý lặp giữa «đánh răng xong» (Beat 9) với «vừa súc miệng xong» (Beat 10)\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
+  },
+  {
+   "id": "r-c06-v3r2",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "Beat 1–2: nén gọn beat 1 và bớt lặp ý tương phản giữa beat 1 với beat 2 để vào nghiên cứu sớm hơn, kéo tổng thời lượng về gần mục tiêu 120–180s",
+    "Beat 5: rút gọn câu «quen gần tới mức cao nhất của chính người đó» theo văn nói ngắn gọn hơn khi đọc thành tiếng",
+    "Beat 6: đổi «tới giờ chưa ai đo» thành «trong nghiên cứu đó chưa đo» để rào phạm vi chính xác hơn."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": false,
+   "tail": " hơn), các điểm cần chỉnh ở Draft chỉ là tiểu tiết nén nhịp và không vướng lỗi Hiệp hay bác nên đủ chất lượng qua Gate 1.\n\n---\n\n### 3. Kết luận\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c05)\nTOP_FIXES: 1. Beat 1–2: nén gọn beat 1 và bớt lặp ý tương phản giữa beat 1 với beat 2 để vào nghiên cứu sớm hơn, kéo tổng thời lượng về gần mục tiêu 120–180s; 2. Beat 5: rút gọn câu «quen gần tới mức cao nhất của chính người đó» theo văn nói ngắn gọn hơn khi đọc thành tiếng; 3. Beat 6: đổi «tới giờ chưa ai đo» thành «trong nghiên cứu đó chưa đo» để rào phạm vi chính xác hơn.\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "r-c06-v3r3",
+   "verdict_hiep": "rejected",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "WIN",
+   "top_fixes": [
+    "Beat 2: bỏ kiểu dẫn tóm tắt («một câu được chia sẻ nhiều trên mạng… Đại ý là») và nối thẳng từ beat 1 sang câu hỏi để tránh lặp ý 3 năm vs 3 tuần",
+    "Beat 3–4: nói mềm lại cụm hơi sách/dịch («thành tự động tới đâu» → «làm theo phản xạ tới đâu», «gần tới mức cao nhất của họ» → «gần như thành phản xạ luôn»)",
+    "Beat 11: đổi «Viết tên nó xuống bình luận» sang giọng nói miền Nam gần hơn như «comment bên dưới cho mình biết với nha»."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": false,
+   "tail": "/resources/feedback.md), chỉ cần mài nhẹ 2–3 chỗ khẩu ngữ là rất mượt.\n\n---\n\nHARD_FAILS: không\nPAIRWISE: WIN (so với a-c05)\nTOP_FIXES: 1. Beat 2: bỏ kiểu dẫn tóm tắt («một câu được chia sẻ nhiều trên mạng… Đại ý là») và nối thẳng từ beat 1 sang câu hỏi để tránh lặp ý 3 năm vs 3 tuần; 2. Beat 3–4: nói mềm lại cụm hơi sách/dịch («thành tự động tới đâu» → «làm theo phản xạ tới đâu», «gần tới mức cao nhất của họ» → «gần như thành phản xạ luôn»); 3. Beat 11: đổi «Viết tên nó xuống bình luận» sang giọng nói miền Nam gần hơn như «comment bên dưới cho mình biết với nha».\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "r-c05-r153",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r174",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r183",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r1921",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r201",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "a-c01",
+   "verdict_hiep": "approved",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "[e05]: thêm năm/tác giả nguồn (trong lời thoại hoặc text trên hình) cho con số 94 kiểm nghiệm và nói mềm hơn cụm «hiệu ứng vừa tới lớn»",
+    "[e06]: viết lại cụm «dừng việc chắc chắn không thành» cho mượt văn nói hơn (ví dụ «biết dừng sớm khi thấy cách đó không ăn thua»)"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": ") và câu chốt gọn của `a-c05`.\n\n**Chốt tổng quan:** Hai bản ngang tầm chất lượng (`Draft` sắc hơn ở hook, `Anchor` mượt giọng nói hơn ở đoạn giải thích; lỗi khô chữ ở `[e05–e06]` là tiểu tiết chỉnh nhẹ, không phải lỗi làm Hiệp bác).\n\n---\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c05)\nTOP_FIXES: 1. [e05]: thêm năm/tác giả nguồn (trong lời thoại hoặc text trên hình) cho con số 94 kiểm nghiệm và nói mềm hơn cụm «hiệu ứng vừa tới lớn»; 2. [e06]: viết lại cụm «dừng việc chắc chắn không thành» cho mượt văn nói hơn (ví dụ «biết dừng sớm khi thấy cách đó không ăn thua»)\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "a-c02",
+   "verdict_hiep": "approved",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "[b08] («Mới thấy đi chung thôi.»): thêm từ nối và chủ ngữ ngắn để câu rào tương quan ăn mạch mượt hơn trước «À… mình đang né thiệt.»",
+    "[b07] («Steel gom 691 kết quả…»): thêm nhẹ năm/ngữ cảnh («691 kết quả nghiên cứu») và bớt dấu hai chấm liên tiếp cho mềm giọng kể",
+    "[b09c] («Không ai hối? Tự đặt ngày xong.»): nối rõ hơn với mạch né việc, đổi «ngày xong» thành «deadline / hạn chót» cho thuận miệng và đồng nhất «sửa một dòng» (`[b09]`) với «gõ một dòng» (`[b09c]`)."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "hông đủ làm Hiệp bác ở Gate 1.\n\n---\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c05)\nTOP_FIXES: 1. [b08] («Mới thấy đi chung thôi.»): thêm từ nối và chủ ngữ ngắn để câu rào tương quan ăn mạch mượt hơn trước «À… mình đang né thiệt.»; 2. [b07] («Steel gom 691 kết quả…»): thêm nhẹ năm/ngữ cảnh («691 kết quả nghiên cứu») và bớt dấu hai chấm liên tiếp cho mềm giọng kể; 3. [b09c] («Không ai hối? Tự đặt ngày xong.»): nối rõ hơn với mạch né việc, đổi «ngày xong» thành «deadline / hạn chót» cho thuận miệng và đồng nhất «sửa một dòng» (`[b09]`) với «gõ một dòng» (`[b09c]`).\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "a-c03",
+   "verdict_hiep": "approved",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "[b03–b04]: chỉnh câu chuyển giữa «nhìn vô là ngợp» (b03) và «nghĩ chút xíu là xong» (b04) để hai ý (tưởng nhanh nên cứ hẹn cuối tuần vs thấy tên việc to nên ngợp) không bị đá nhẹ nhau",
+    "[b04–b05]: bổ sung nhẹ 1 chi tiết thí nghiệm/bối cảnh nếu có trong nguồn để dẫn chứng có lực tương đương a-c05",
+    "[b09]: nối mềm hoặc gọn bớt đoạn nhắc liền «clip trước / clip đầu tiên» để nhịp sang kết b10 mượt hơn"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "rces/feedback.md), vài điểm gợn chỉ là tiểu tiết mài thêm), đủ chuẩn qua Gate 1.\n\n---\n\n### 3. Kết luận\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c05)\nTOP_FIXES: 1. [b03–b04]: chỉnh câu chuyển giữa «nhìn vô là ngợp» (b03) và «nghĩ chút xíu là xong» (b04) để hai ý (tưởng nhanh nên cứ hẹn cuối tuần vs thấy tên việc to nên ngợp) không bị đá nhẹ nhau; 2. [b04–b05]: bổ sung nhẹ 1 chi tiết thí nghiệm/bối cảnh nếu có trong nguồn để dẫn chứng có lực tương đương a-c05; 3. [b09]: nối mềm hoặc gọn bớt đoạn nhắc liền «clip trước / clip đầu tiên» để nhịp sang kết b10 mượt hơn\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "a-c04",
+   "verdict_hiep": "approved",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c05",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "b06b: bỏ lặp «kiểm tra nhỏ» và đổi đuôi văn dịch «ở mức vừa» sang văn nói tự nhiên (và cân nhắc dời b06 lên sát b03 để mạch chuyện b05 → b07 liền hơn)",
+    "b03a–b03c: thay «nhớ hơn hẳn» bằng số liệu cụ thể hoặc cách nói chặt nguồn hơn để tránh cảm giác nói quá",
+    "b01b: đổi «Giả sử bây giờ...» sang khẩu ngữ tự nhiên hơn (vd: «Thử bây giờ không nhìn sách...») để tăng chất giọng miền Nam của Hiệp"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "; điểm kém hơn `a-c05` chỉ nằm ở độ duyên khẩu ngữ và vài tiểu tiết diễn đạt.\n\n---\n\n### 3. Khối kết luận chuẩn\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c05)\nTOP_FIXES: 1. b06b: bỏ lặp «kiểm tra nhỏ» và đổi đuôi văn dịch «ở mức vừa» sang văn nói tự nhiên (và cân nhắc dời b06 lên sát b03 để mạch chuyện b05 → b07 liền hơn); 2. b03a–b03c: thay «nhớ hơn hẳn» bằng số liệu cụ thể hoặc cách nói chặt nguồn hơn để tránh cảm giác nói quá; 3. b01b: đổi «Giả sử bây giờ...» sang khẩu ngữ tự nhiên hơn (vd: «Thử bây giờ không nhìn sách...») để tăng chất giọng miền Nam của Hiệp\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  },
+  {
+   "id": "a-c05",
+   "verdict_hiep": "approved",
+   "mode": "pairwise",
+   "engine": "agy",
+   "model": "default",
+   "anchor_id": "a-c04",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "[b09e]: gom gọn hoặc dời nhẹ ý «cẩm nang gợi ý thêm» xuống sau bước cuối để không cắt mạch «Thứ hai» sang «Và cuối cùng»",
+    "[b09f]–[b10a]: thêm nửa nhịp dẫn ngắn (hoặc chuyển cảnh rõ bằng hình) trước lời thoại cô giáo để audio nghe không bị nhảy đột ngột"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "/ẩn dụ hơn Draft.\n\n**Chốt tổng quan:** Đặt cạnh `a-c04`, bản nháp giữ vững cấu trúc tuần tự, văn nói miền Nam còn tự nhiên và có màu hài hơn bản chuẩn, không vướng lỗi chí mạng nào Hiệp hay bác — đủ chất lượng để qua Gate 1.\n\n---\n\n### 3. Khối kết luận\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c04)\nTOP_FIXES: 1. [b09e]: gom gọn hoặc dời nhẹ ý «cẩm nang gợi ý thêm» xuống sau bước cuối để không cắt mạch «Thứ hai» sang «Và cuối cùng»; 2. [b09f]–[b10a]: thêm nửa nhịp dẫn ngắn (hoặc chuyển cảnh rõ bằng hình) trước lời thoại cô giáo để audio nghe không bị nhảy đột ngột\nCONFLICTS: không\nVERDICT: ĐẠT\n"
+  }
+ ]
+}
