@@ -45,3 +45,13 @@ def test_feedback_missing_field_blocks():
     assert run(fm("ĐẠT"), feedback=FB) == [("✖", "review")]
 def test_feedback_all_seen_passes():
     assert run(fm("ĐẠT", extra="feedback_seen: 2\n"), feedback=FB) == [("✔", "review")]
+
+
+import unittest as _ut
+class _All(_ut.TestCase):
+    pass
+for _n, _f in list(globals().items()):
+    if _n.startswith("test_") and callable(_f):
+        setattr(_All, _n, (lambda f: lambda self: f())(_f))
+if __name__ == "__main__":
+    _ut.main()

@@ -18,3 +18,13 @@ def test_proper_names_not_flagged_as_rare():
 def test_only_warnings():
     cr.res.clear(); cr.check_bookish_text("t", "Tuy nhiên do đó cẩm nang")
     assert {a for a, b, _ in cr.res} == {"⚠"}
+
+
+import unittest as _ut
+class _All(_ut.TestCase):
+    pass
+for _n, _f in list(globals().items()):
+    if _n.startswith("test_") and callable(_f):
+        setattr(_All, _n, (lambda f: lambda self: f())(_f))
+if __name__ == "__main__":
+    _ut.main()

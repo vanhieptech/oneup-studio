@@ -13,8 +13,9 @@ def test_extract_json_from_fenced_text():
 def test_prompt_block_loads():
     assert "Trả về DUY NHẤT một khối JSON" in td.load_prompt()
 
-def test_cut_accuracy_uses_part_offsets(tmp_path):
-    t = tmp_path / "timing.json"
+def test_cut_accuracy_uses_part_offsets():
+    import tempfile, pathlib
+    t = pathlib.Path(tempfile.mkdtemp()) / "timing.json"
     t.write_text(json.dumps({"parts": [{"_off": 0.0, "dur": 60, "scene_starts": [0.0, 4.3]}, {"_off": 60.0, "dur": 20, "scene_starts": [5.0]}]}))
     acc = td.cut_accuracy(DATA, str(t))
     assert acc["n"] == 3 and acc["within_1s"] == 3   # 00:04→4.3, 00:00→0, 01:05→65
@@ -22,3 +23,13 @@ def test_cut_accuracy_uses_part_offsets(tmp_path):
 def test_render_md_has_template_sections():
     md = td.render_md("c1", DATA, {"date": "2026-11-26", "video": "v.mp4", "cli": "0.71.1", "model": "m"})
     for h in ("## 2. Hook", "## 3. Xương sống", "## 5. Nhịp", "## 11. Công thức khung"): assert h in md
+
+
+import unittest as _ut
+class _All(_ut.TestCase):
+    pass
+for _n, _f in list(globals().items()):
+    if _n.startswith("test_") and callable(_f):
+        setattr(_All, _n, (lambda f: lambda self: f())(_f))
+if __name__ == "__main__":
+    _ut.main()
