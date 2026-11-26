@@ -31,6 +31,9 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Phân tích clip nhiều view | `research/trends/<date>/teardowns/<id>.{md,json}` theo `templates/clip-teardown.md`; công thức khung tích luỹ ở `research/blueprints/` | `pipeline/scripts/teardown.py` (Gemini CLI), prompt `docs/prompts/gemini-teardown.md` |
 | Dữ liệu TikTok (Apify) và tìm clip (TinyFish) | `research/trends/<date>/apify/` (`clips.json`, `dataset.json`, `comments.json`, `vtt/`, `cost.json`) · `research/trends/<date>/tinyfish/tiktok-candidates.json` | `pipeline/scripts/apify-run.py`, `pipeline/scripts/tinyfish_client.py`; token Apify chỉ ở `~/oneup-tools/env.sh` |
 | Bảng dịch thuật ngữ, kho văn nói | `research/explainers/<chủ-đề>.md` · `resources/vn-spoken/` (`sources.md`, `phrase-bank.md`, `bookish.tsv`) · `resources/vn-dict/vi_50k.txt` (CC BY-SA 4.0) | đọc lúc viết theo `docs/research/craft-brief.md` |
+| Prompt viết / reviewer / Gemini | `docs/prompts/writer-hi-oneup.md`, `writer-vanhiep-tech.md`, `reviewer-script.md`, `gemini-teardown.md` | sửa prompt ở đây, không sửa trong code |
+| Đo reviewer | `research/review-golden/eval-<date>.json` (+ bảng trong README) | `pipeline/scripts/review-eval.py` (leave-one-out, `claude -p`) |
+| Voice memo của Hiệp, video tạm để phân tích | `media/voice-memos/<tên>.txt` · `media/tmp/teardown/` (xoá ngay sau phân tích) | gitignored; `voice-memo.py`, `teardown.py --url` |
 | Clip đã duyệt | `content/archive/<clip>/` (cùng layout, thêm `final/approved.json`) | luật 66 |
 | Media lớn (mp4 sample, footage) | `media/` (gitignored) + `media/MANIFEST.json` | `media/footage/inbox/` cho video quay |
 | Test | `tests/` | |

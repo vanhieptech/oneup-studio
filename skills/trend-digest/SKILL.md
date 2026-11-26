@@ -90,7 +90,7 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 ## Weekly synthesis (Sunday, after the daily run)
 1. `python3 pipeline/scripts/trend-learn.py week` for the 7-day roll-up.
 2. Read `logs/decision-log.md` retro section for clip metrics Hiệp reported (views, completion, follows). If none, say so; do not invent numbers.
-3. Update patterns.md: `uses`/`wins` from published clips, retire tired patterns, promote patterns with wins/uses ≥0.5.
+3. Update patterns.md: `uses`/`wins` from published clips, retire tired patterns, promote patterns with wins/uses ≥0.5. Same for script modes in `research/blueprints/index.json`: read `content/published/README.md` (columns «Script mode», «Mã hook», giữ chân 3s, xem hết %); a clip with numbers above the channel median counts as a win. Empty numbers → no win, never estimate.
 4. Write `research/trends/weekly/YYYY-Www.md`: what trended, what saturated, patterns rising/falling, which bridges became clips, 3 recommended angles + 2 topics to avoid next week, proposed rule/skill changes (do not edit rules; propose for Hiệp, rule-33).
 5. Append one line to patterns.md "Learnings log".
 

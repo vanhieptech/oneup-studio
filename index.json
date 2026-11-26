@@ -186,7 +186,7 @@
    "id": "published-log",
    "type": "log",
    "status": "ready",
-   "updated": "2026-10-15",
+   "updated": "2026-11-26",
    "path": "content/published/README.md",
    "title": "Published log: clip đã đăng"
   },
@@ -242,7 +242,7 @@
    "id": "story-bank",
    "type": "plan",
    "status": "needs-confirmation",
-   "updated": "2026-10-12",
+   "updated": "2026-11-26",
    "path": "content/story-bank.md",
    "title": "Story bank: chuyện thật của Hiệp (rule-41)"
   },
@@ -421,6 +421,30 @@
    "updated": "2026-10-16",
    "path": "docs/prompts/hi-oneup-daily-trend-digest.md",
    "title": "Routine: @hi.oneup trend digest v5"
+  },
+  {
+   "id": "prompts.reviewer-script",
+   "type": "prompt",
+   "status": "ready",
+   "updated": "2026-11-26",
+   "path": "docs/prompts/reviewer-script.md",
+   "title": "Prompt reviewer độc lập"
+  },
+  {
+   "id": "prompts.writer-hi-oneup",
+   "type": "prompt",
+   "status": "ready",
+   "updated": "2026-11-26",
+   "path": "docs/prompts/writer-hi-oneup.md",
+   "title": "Prompt viết script @hi.oneup"
+  },
+  {
+   "id": "prompts.writer-vanhiep-tech",
+   "type": "prompt",
+   "status": "ready",
+   "updated": "2026-11-26",
+   "path": "docs/prompts/writer-vanhiep-tech.md",
+   "title": "Prompt viết script @vanhiep.tech"
   },
   {
    "id": "research.craft-brief",
@@ -709,6 +733,14 @@
    "updated": "2026-10-19",
    "path": "research/agents/social-research-repo-audit-vi.md",
    "title": "Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp)"
+  },
+  {
+   "id": "research.blueprints",
+   "type": "research",
+   "status": "living",
+   "updated": "2026-11-26",
+   "path": "research/blueprints/README.md",
+   "title": "Thư viện script mode"
   },
   {
    "id": "research-character-animation",

@@ -1117,6 +1117,8 @@ def main():
             md = open(f, encoding="utf-8").read()
             if not draft_beats(md): err("review", f"{f}: no `N. **[bNN]** lời` beat lines found"); continue
             check_review(None, ap[:m.end()] + "/final", want=draft_hash(md))
+            if not re.search(r"^##\s*Gate 0", md, re.M | re.I):
+                warn("gate0", f"{os.path.basename(f)}: no `## Gate 0` section (make-video §2.0 step 0: 3 ideas, the one Hiệp picked)")
         return report(outp)
     if a and a[0] == "--draft":  # combined draft gate: all 12 draft checks + L-051 + L-053
         files_ = [f for f in a[1:] if f != "--out" and f != outp]

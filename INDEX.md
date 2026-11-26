@@ -65,6 +65,9 @@ tags: [index, retrieval]
 | prompt.content-bot | prompt | ready | `docs/prompts/content-bot-prompt.md` | Prompt bot nội dung OneUp (Hiệp gửi) |
 | prompts.gemini-teardown | prompt | ready | `docs/prompts/gemini-teardown.md` | Prompt Gemini teardown |
 | prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
+| prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập |
+| prompts.writer-hi-oneup | prompt | ready | `docs/prompts/writer-hi-oneup.md` | Prompt viết script @hi.oneup |
+| prompts.writer-vanhiep-tech | prompt | ready | `docs/prompts/writer-vanhiep-tech.md` | Prompt viết script @vanhiep.tech |
 | research.craft-brief | research | ready | `docs/research/craft-brief.md` | Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm) |
 | research.script-prompt-principles | research | Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7 | `docs/research/script-prompt-principles.md` | Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s |
 | research.scriptwriting-2026-10-15 | research | chờ Hiệp duyệt trước khi viết lại clip-02 | `docs/research/scriptwriting-research-2026-10-15.md` | Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup) |
@@ -101,6 +104,7 @@ tags: [index, retrieval]
 | research.social-poster.caption-hashtag-2026-10-20 | research | draft | `research/agents/social-poster-caption-hashtag-trends-2026-10-20.md` | Caption + hashtag theo nền tảng: nghiên cứu ngày 20/10/2026 (Social Poster) |
 | research.social-poster | research | reference | `research/agents/social-poster-research.md` | Social Poster — Nghiên cứu repo langchain-ai/social-media-agent (draft-only cho OneUp) |
 | research.social-research-audit | research | reference | `research/agents/social-research-repo-audit-vi.md` | Báo cáo nền: Audit repo `social-media-research-skills` cho kênh TikTok @hi.oneup (OneUp) |
+| research.blueprints | research | living | `research/blueprints/README.md` | Thư viện script mode |
 | research-character-animation | research | draft | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.craft.hook-script-study-2026-11-11 | craft-study | draft | `research/craft/hook-script-study-2026-11-11.md` | Học lại hook và mạch script từ video thật (11/11/2026) |

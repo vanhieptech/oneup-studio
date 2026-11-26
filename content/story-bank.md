@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: story-bank
 type: plan
 status: needs-confirmation
-updated: 2026-10-12
+updated: 2026-11-26
 tags: [stories, storytelling, real-only]
 ---
 # Story bank: chuyện thật của Hiệp (rule-41)
@@ -25,4 +25,5 @@ Cấu trúc kể: tình huống → vật lộn → bước ngoặt → bài h�
 ## Quy tắc
 - **Luật 67 (15/10):** KHÔNG hỏi Hiệp xác nhận chuyện nữa. Cột "Câu hỏi cho Hiệp" chỉ là gợi ý chi tiết; tự viết chuyện comic hợp lý, không bịa số liệu.
 - Chuyện chỉ được đổi trạng thái sang `confirmed` khi Hiệp trả lời. Ghi chi tiết đã xác nhận ngay dưới bảng.
+- **Kể thêm = xác nhận (26/11/2026):** khi Hiệp tự kể thêm về một chuyện (dù chỉ một dòng, trong chat, voice memo hay góp ý), đổi chuyện đó sang `confirmed` và ghi nguyên văn chi tiết ngay dưới bảng kèm ngày. Chi tiết hài vẫn được dựng theo luật 67, nhưng **xương chuyện** (việc gì, ai, kết quả thật) phải lấy từ phần đã xác nhận. Script dùng chi tiết dựng thì ghi rõ trong danh sách «chi tiết đã dựng» của nháp (prompt `docs/prompts/writer-hi-oneup.md`).
 - Không đưa thông tin nhạy cảm (số tiền, địa chỉ, công ty) nếu Hiệp không cho phép rõ ràng.

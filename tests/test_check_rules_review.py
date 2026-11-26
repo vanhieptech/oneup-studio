@@ -55,3 +55,16 @@ for _n, _f in list(globals().items()):
         setattr(_All, _n, (lambda f: lambda self: f())(_f))
 if __name__ == "__main__":
     _ut.main()
+
+class Gate0Warning(_ut.TestCase):
+    def test_missing_gate0_warns_on_review_mode(self):
+        import subprocess, sys, tempfile, pathlib
+        d = pathlib.Path(tempfile.mkdtemp()) / "content" / "clips" / "clip-99-x"
+        (d / "archive").mkdir(parents=True); (d / "final").mkdir()
+        draft = d / "archive" / "script-v1-draft.md"; draft.write_text(DRAFT, encoding="utf-8")
+        (d / "final" / "review.md").write_text(fm("ĐẠT", h=cr.draft_hash(DRAFT)), encoding="utf-8")
+        out = subprocess.run([sys.executable, os.path.join(R, "pipeline/scripts/check-rules.py"), "--review", str(draft)], capture_output=True, text=True).stdout
+        self.assertIn("gate0", out)
+        draft.write_text("## Gate 0\n- A\n\n" + DRAFT, encoding="utf-8")
+        out = subprocess.run([sys.executable, os.path.join(R, "pipeline/scripts/check-rules.py"), "--review", str(draft)], capture_output=True, text=True).stdout
+        self.assertNotIn("gate0", out)

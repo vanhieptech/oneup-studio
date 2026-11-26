@@ -33,3 +33,24 @@ for _n, _f in list(globals().items()):
         setattr(_All, _n, (lambda f: lambda self: f())(_f))
 if __name__ == "__main__":
     _ut.main()
+
+class BlueprintAndCleanup(_ut.TestCase):
+    def test_merge_blueprint_seen_and_new(self):
+        import tempfile, pathlib
+        p = pathlib.Path(tempfile.mkdtemp()) / "index.json"
+        a = td.merge_blueprint(["kể chuyện hụt", "hỏi vì sao", "nghiên cứu trả lời", "cách làm nhỏ"], "u1", path=p)
+        b = td.merge_blueprint(["kể chuyện hụt", "hỏi vì sao", "nghiên cứu trả lời", "cách làm nhỏ nhất"], "u2", path=p)
+        c = td.merge_blueprint(["danh sách 5 mẹo", "mẹo bất ngờ cuối"], "u3", path=p)
+        lib = json.loads(p.read_text())
+        self.assertEqual(a, b); self.assertNotEqual(a, c)
+        self.assertEqual(lib["modes"][0]["seen"], 2); self.assertEqual(lib["modes"][0]["sources"], ["u1", "u2"])
+
+    def test_downloaded_file_deleted_even_when_gemini_fails(self):
+        import tempfile, sys as _sys
+        from unittest import mock
+        f = tempfile.NamedTemporaryFile(suffix=".mp4", delete=False); f.close()
+        def fail(*a, **k): raise SystemExit(3)
+        with mock.patch.object(td, "download", lambda url: f.name), mock.patch.object(td, "run_gemini", fail), \
+             mock.patch.object(_sys, "argv", ["teardown.py", "--url", "https://www.tiktok.com/@a/video/1"]):
+            with self.assertRaises(SystemExit): td.main()
+        self.assertFalse(os.path.exists(f.name))

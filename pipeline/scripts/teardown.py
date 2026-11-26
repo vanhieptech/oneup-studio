@@ -1,21 +1,59 @@
 #!/usr/bin/env python3
 """Video teardown with Gemini CLI: watch + listen to a clip, extract hook / pacing / spine / audio / ending as JSON.
 
-  teardown.py VIDEO.mp4 [--id ID] [--model gemini-2.5-pro] [--out-dir research/trends/<date>/teardowns]
+  teardown.py VIDEO.mp4 | --url <tiktok/youtube link> [--id ID] [--model gemini-2.5-pro] [--out-dir research/trends/<date>/teardowns]
                [--clip-json row.json] [--timing final/timing.json]
 
 - Prompt: docs/prompts/gemini-teardown.md (between <<<PROMPT and PROMPT>>>). Output: <out-dir>/<id>.json + <id>.md
   (sections 2, 3, 5, 6, 7 of templates/clip-teardown.md; the rest is filled from Apify / by Claude).
-- Gemini CLI auth: the CLI must be signed in once (`gemini` interactively → "Login with Google") or GEMINI_API_KEY set
-  outside the repo. Without it this exits 3 with the CLI's message.
+- Gemini CLI auth: `export GEMINI_API_KEY=…` in ~/oneup-tools/env.sh (outside git; key from Google AI Studio). "Sign in with
+  Google" is refused for individual accounts since 2026-11 ("no longer supported for Gemini Code Assist for individuals").
+  Without a key this exits 3 with the CLI's message.
 - --timing: our own clip's timing.json → report how far Gemini's cut times are from the real scene starts (accuracy check).
-- Competitor videos: download only with Hiệp's OK, analyse, then delete (the script never keeps or reuses the video).
+- --url: yt-dlp downloads to media/tmp/teardown/ (gitignored), the clip is analysed, and the file is deleted in a finally
+  block even when Gemini fails; the link is stored in the JSON. Hiệp OK'd analysing competitor clips (26/11); never reuse them.
+- Each run merges `formula` into research/blueprints/index.json (similar ≥ 0.6 → seen+1, else a new script mode).
 """
 import datetime as dt, json, os, re, subprocess, sys
+from pathlib import Path
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
 
 PROMPT_MD = P.ROOT / "docs/prompts/gemini-teardown.md"
+
+BLUEPRINTS = P.ROOT / "research/blueprints/index.json"
+TMP_DIR = P.ROOT / "media/tmp/teardown"
+
+def download(url):
+    TMP_DIR.mkdir(parents=True, exist_ok=True)
+    out = TMP_DIR / "%(id)s.%(ext)s"
+    r = subprocess.run([sys.executable, "-m", "yt_dlp", "-f", "mp4/best", "-o", str(out), "--no-playlist", "--print", "after_move:filepath", url],
+                       capture_output=True, text=True, timeout=300)
+    path = (r.stdout.strip().splitlines() or [""])[-1]
+    if r.returncode or not path or not os.path.exists(path):
+        raise SystemExit(f"yt-dlp failed for {url}: {r.stderr.strip()[-300:]}")
+    return path
+
+def _sim(a, b):
+    import difflib
+    return difflib.SequenceMatcher(None, " ".join(a).lower(), " ".join(b).lower()).ratio()
+
+def merge_blueprint(formula, source, path=None, threshold=0.6):
+    """Add a teardown formula to the script-mode library: similar (≥ threshold) → seen+1 + source, else a new id."""
+    path = Path(path or BLUEPRINTS)
+    lib = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {"modes": []}
+    if not formula: return None
+    best = max(lib["modes"], key=lambda m: _sim(m["formula"], formula), default=None)
+    if best and _sim(best["formula"], formula) >= threshold:
+        best["seen"] += 1
+        if source not in best["sources"]: best["sources"].append(source)
+        mode = best
+    else:
+        mode = {"id": f"SM{len(lib['modes']) + 1:02d}", "formula": formula, "seen": 1, "uses": 0, "wins": 0, "sources": [source]}
+        lib["modes"].append(mode)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(lib, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return mode["id"]
 
 def load_prompt():
     t = PROMPT_MD.read_text(encoding="utf-8")
@@ -55,7 +93,10 @@ def run_gemini(video, model):
     prompt = load_prompt() + f"\n\n@{os.path.abspath(video)}"
     args = [P.GEMINI_BIN, "-p", prompt, "-o", "json", "--approval-mode", "plan", "--include-directories", os.path.dirname(os.path.abspath(video))]
     if model: args += ["-m", model]
-    r = subprocess.run(args, capture_output=True, text=True, timeout=900, cwd=os.path.dirname(os.path.abspath(video)))
+    env = dict(os.environ)
+    key = P.tools_env("GEMINI_API_KEY")  # Google sign-in no longer works for individual accounts (26/11): API key from ~/oneup-tools/env.sh
+    if key: env["GEMINI_API_KEY"] = key
+    r = subprocess.run(args, capture_output=True, text=True, timeout=900, cwd=os.path.dirname(os.path.abspath(video)), env=env)
     try: out = json.loads(r.stdout)
     except json.JSONDecodeError: out = {"response": r.stdout, "error": {"message": r.stderr.strip()[:500]} if r.returncode else None}
     if out.get("error"):
@@ -86,11 +127,19 @@ def render_md(cid, data, meta):
 
 def main():
     a = sys.argv[1:]
-    if not a or a[0].startswith("-"): print(__doc__); return 2
-    video = a[0]
     def opt(n, d=None): return a[a.index(n) + 1] if n in a else d
+    url = opt("--url")
+    if not url and (not a or a[0].startswith("-")): print(__doc__); return 2
+    video = download(url) if url else a[0]
+    try:
+        return analyse(video, url, opt)
+    finally:
+        if url and os.path.exists(video): os.remove(video)  # never keep someone else's clip
+
+def analyse(video, url, opt):
     date = dt.date.today().isoformat()
     cid = opt("--id", os.path.splitext(os.path.basename(video))[0])
+    source = url or os.path.basename(video)
     outd = opt("--out-dir", str(P.ROOT / f"research/trends/{date}/teardowns"))
     model = opt("--model")
     out = run_gemini(video, model)
@@ -100,6 +149,8 @@ def main():
     meta = {"date": date, "video": os.path.basename(video), "cli": cli, "model": used}
     if opt("--timing"): meta["accuracy"] = cut_accuracy(data, opt("--timing"))
     if opt("--clip-json"): data["apify"] = json.load(open(opt("--clip-json"), encoding="utf-8"))
+    meta["source"] = source
+    meta["blueprint"] = merge_blueprint(data.get("formula") or [], source) if "--no-blueprint" not in sys.argv else None
     data["_meta"] = meta
     os.makedirs(outd, exist_ok=True)
     open(os.path.join(outd, f"{cid}.json"), "w", encoding="utf-8").write(json.dumps(data, ensure_ascii=False, indent=1) + "\n")
