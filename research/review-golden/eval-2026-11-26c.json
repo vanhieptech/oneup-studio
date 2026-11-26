@@ -1,0 +1,486 @@
+{
+ "date": "2026-11-26",
+ "model": "sonnet",
+ "prompt": "docs/prompts/reviewer-script.md",
+ "metrics": {
+  "rejected_caught": "14/15",
+  "approved_passed": "1/5",
+  "rejected_caught_pct": 93.3,
+  "rejected_n": 15,
+  "approved_passed_pct": 20.0,
+  "approved_n": 5,
+  "no_verdict": 0,
+  "errors": 0,
+  "skipped": 5,
+  "target": "rejected ≥ 14/15, approved all",
+  "verdict_source": "review_tiers (DL-074)",
+  "cost_usd": 9.27
+ },
+ "rows": [
+  {
+   "id": "r-c05-v2",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 74,
+   "parts": {
+    "A": 17,
+    "B": 10,
+    "C": 9,
+    "D": 12,
+    "E": 14,
+    "F": 8,
+    "G": 4
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.3806296,
+   "ok": true,
+   "tail": " B. Mạch | 10/15 |\n| C. Rõ ý | 9/20 |\n| D. Fact | 12/15 |\n| E. Ngắn gọn | 14/15 |\n| F. Tone | 8/10 |\n| G. CTA | 4/5 |\n\nCảnh báo mềm (trừ 0 điểm):\n1. \"Nên\" mở b5 và \"Mình cần là\" ở b4 là từ nối khẩu ngữ.\n2. Câu ngắn ngắt nhịp ở b2.\n3. Chuyển ngôi \"bạn\" ở b1 sang \"mình\" ở b2 không làm người nghe lạc.\n4. Chuyện chương Di truyền ở b2 và kết quả cá nhân ở b7 cần Hiệp xác nhận.\n5. b3 và b6 nêu nguồn nhưng không có tên tác giả, chưa kiểm được.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=17 B=10 C=9 D=12 E=14 F=8 G=4 TOTAL=74\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-v4",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 73,
+   "parts": {
+    "A": 18,
+    "B": 7,
+    "C": 10,
+    "D": 12,
+    "E": 13,
+    "F": 8,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 6,
+   "block": true,
+   "cost_usd": 0.5554341,
+   "ok": true,
+   "tail": "ở CTA (−0).\n- C=10: trừ −7 như bước 3.\n- D=12: −1 vì thiếu năm hoặc tên nguồn.\n- E=13.\n- F=8: beat 6 nói «các nhà nghiên cứu» chung chung, hơi khô (−1).\n- G=5: CTA comment số, đo được.\n\n**Cảnh báo mềm (trừ 0):**\n1. Từ nối «Nên…» ở b05.\n2. Câu hỏi giữ chân ở hook.\n3. Đổi ngôi bạn→mình→bạn, không làm lạc vì a-c04 cũng vậy.\n4. Câu ngắn ở b04.\n5. Ví dụ Di truyền ba tiếng cần Hiệp xác nhận.\n6. Kết quả «dễ nhớ ra hơn» ở b07 cần Hiệp xác nhận.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=18 B=7 C=10 D=12 E=13 F=8 G=5 TOTAL=73\nSOFT_WARNINGS: 6\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r4",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 64,
+   "parts": {
+    "A": 11,
+    "B": 8,
+    "C": 11,
+    "D": 8,
+    "E": 14,
+    "F": 7,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.39356789999999997,
+   "ok": true,
+   "tail": "«mình dễ nhớ ra hơn» là chuyện cá nhân chưa có trong story-bank.\n\n**7. Chấm điểm**\n- A=11: hook kiểu (b) đạt, nhưng trùng lỗi `r-c05-r53b` và «trôi» mơ hồ.\n- B=8, C=11, D=8: lý do ở các bước 2, 3 và 6.\n- E=14: phần lời đủ nghĩa.\n- F=7: beat 3 hơi khô (−1).\n- G=5: một CTA là câu hỏi mở, đạt.\n- Cảnh báo mềm (trừ 0 điểm), 5 cái:\n  - «nha» ở CTA\n  - «Thường thì»\n  - chuyển ngôi bạn sang mình\n  - câu ngắn ngắt nhịp\n  - câu hỏi giữ chân ở hook\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=11 B=8 C=11 D=8 E=14 F=7 G=5 TOTAL=64\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r53b",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 82,
+   "parts": {
+    "A": 18,
+    "B": 14,
+    "C": 15,
+    "D": 10,
+    "E": 13,
+    "F": 8,
+    "G": 4
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.43563660000000004,
+   "ok": true,
+   "tail": "mềm (5), trừ 0 điểm:** «Vậy mà», «Có thể vì», «Vậy», câu hỏi tu từ \"Sao ý đó trôi nhanh thế?\", câu ngắn ngắt nhịp ở hook, và «nha» ở CTA.\n\n**8. Xung đột mở:** không có.\n\n**Sửa nhỏ**\n- b4: thay «cẩm nang» bằng nguồn nói được thành lời, hoặc bỏ.\n- b4: nối mốc «ba ngày» với mốc «một tuần» của nghiên cứu, hoặc nói rõ đây là cách chia gợi ý.\n- b4: thêm một câu dẫn chứng cho bước tự nói lại, hoặc bỏ bước đó.\n- b6: bỏ lệch cảnh. Nếu hỏi có/không thì đổi câu \"Kể…\" cho khớp.\n\nHARD_FAILS: không\nSCORE: A=18 B=14 C=15 D=10 E=13 F=8 G=4 TOTAL=82\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ"
+  },
+  {
+   "id": "r-c05-r65",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 70,
+   "parts": {
+    "A": 16,
+    "B": 9,
+    "C": 12,
+    "D": 8,
+    "E": 13,
+    "F": 7,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.3820053,
+   "ok": true,
+   "tail": "ừ vì b02 gần như không thêm ý và câu +1 ở b05. |\n| F | 7/10 | b03 khô như báo cáo (−2), b02 thiếu cảm xúc ở beat đau (−1). |\n| G | 5/5 | CTA câu hỏi mở, đạt. |\n\nCảnh báo mềm (0 điểm):\n1. «Mà trên mạng…» là từ nối khẩu ngữ.\n2. «Sao đọc hai lần vẫn trôi?» là câu hỏi tu từ giữ chân.\n3. «Kể OneUp nghe nha» là từ đệm khớp giọng kênh.\n4. Chuỗi câu ngắn ở b02 và b05.\n5. «chắc bạn cũng quên» ở hook cần chú ý để không nghe như chê trí nhớ người xem.\n\n**8. Xung đột mở:** không.\n\nHARD_FAILS: không\nSCORE: A=16 B=9 C=12 D=8 E=13 F=7 G=5 TOTAL=70\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r67b",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 69,
+   "parts": {
+    "A": 18,
+    "B": 9,
+    "C": 10,
+    "D": 9,
+    "E": 13,
+    "F": 5,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.45080760000000003,
+   "ok": true,
+   "tail": "−1.\n- C=10: các lỗi mạch, mốc \"vài hôm\" lệch \"một tuần\" và lặp từ ở mục 2–3.\n- D=9: không có tên nguồn hay năm −2, lời khuyên đi quá dẫn chứng −1, hứa kết quả \"dễ kể lại hơn\" −3.\n- E=13, F=5, G=5: CTA là câu hỏi mở về chuyện của người xem nên đạt.\n- Cảnh báo mềm, trừ 0 điểm:\n  - \"nha\" ở CTA.\n  - Câu ngắn \"Nhưng hai ngày sau không còn hơn.\"\n  - Câu hỏi giữ chân ở b1.\n  - Chuyện \"bạn bè hỏi\" khớp đời thường.\n  - Nguồn nghiên cứu chưa kiểm.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=18 B=9 C=10 D=9 E=13 F=5 G=5 TOTAL=69\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r68",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 78,
+   "parts": {
+    "A": 17,
+    "B": 11,
+    "C": 15,
+    "D": 10,
+    "E": 13,
+    "F": 7,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 3,
+   "block": true,
+   "cost_usd": 0.425188,
+   "ok": true,
+   "tail": "ọng) | 7/10 | Beat bằng chứng khô (−2). Thiếu cảm xúc ở beat nỗi đau (−1). |\n| G (CTA) | 5/5 | Câu hỏi mở, tự kể lại chương gần nhất. |\n\nCảnh báo mềm, trừ 0 điểm:\n- Từ nối «Vậy…» và «Rồi lần sau…».\n- «Kể OneUp nghe nha».\n- Chuỗi câu ngắn ở beat 1 và beat 3.\n\nHARD_FAILS: không\nSCORE: A=17 B=11 C=15 D=10 E=13 F=7 G=5 TOTAL=78\nSOFT_WARNINGS: 3\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ\n\nĐể lên ≥85, cần sửa theo thứ tự này:\n1. Nêu năm và tên nguồn ở beat 3.\n2. Đồng bộ mốc «một tuần» với lời khuyên «vài hôm».\n3. Nói rõ ở beat 3 rằng đây là câu trả lời cho hook.\n4. Đóng hoặc bỏ câu trend ở beat 2."
+  },
+  {
+   "id": "r-c05-r612",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 73,
+   "parts": {
+    "A": 18,
+    "B": 8,
+    "C": 12,
+    "D": 9,
+    "E": 14,
+    "F": 7,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 3,
+   "block": true,
+   "cost_usd": 0.4647695,
+   "ok": true,
+   "tail": "cụm nghĩa. |\n| F | 7/10 | Beat bằng chứng khô như báo cáo, thiếu chi tiết đời thường và giọng «mình». |\n| G | 5/5 | CTA câu hỏi mở về chuyện của người xem, đạt. |\n\nTổng 73. Ba cảnh báo mềm, trừ 0 điểm:\n1. Câu hỏi tu từ ở hook («Sao đọc tới hai lần mà vẫn quên?») là kiểu giữ chân, chấp nhận được.\n2. Chữ «Mà» làm từ nối văn nói ở beat 2.\n3. «Kể OneUp nghe nha» gọi kênh bằng ngôi thứ ba trong khi cả bài chưa dùng «mình». Nên nhất quán ngôi.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=18 B=8 C=12 D=9 E=14 F=7 G=5 TOTAL=73\nSOFT_WARNINGS: 3\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r82",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 72,
+   "parts": {
+    "A": 15,
+    "B": 11,
+    "C": 13,
+    "D": 10,
+    "E": 11,
+    "F": 8,
+    "G": 4
+   },
+   "hard_fails": [],
+   "soft_warnings": 4,
+   "block": true,
+   "cost_usd": 0.445147,
+   "ok": true,
+   "tail": "−2): b3 dồn ba nhóm vào một beat nên tải nhận thức nặng.\n- F=8 (−1): b3 và b5 khô, beat đau không có cảm xúc. Chưa trừ vì giọng toàn «bạn» còn nhất quán.\n- G=4: CTA một câu hỏi mở, đạt, không trừ.\n\nCảnh báo mềm (trừ 0): CTA «Kể OneUp nghe nha» là khẩu ngữ; câu hỏi tu từ «Hai lần rồi, sao bạn vẫn quên?»; câu ngắn «Hai lần rồi»; từ nối «Nghĩa là» và «Nhờ vậy». Ghi chú «chưa kiểm» (0 điểm): tên «Cẩm nang sống đáng giá» và nghiên cứu ở b3.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=15 B=11 C=13 D=10 E=11 F=8 G=4 TOTAL=72\nSOFT_WARNINGS: 4\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r92",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 84,
+   "parts": {
+    "A": 18,
+    "B": 12,
+    "C": 17,
+    "D": 11,
+    "E": 14,
+    "F": 8,
+    "G": 4
+   },
+   "hard_fails": [],
+   "soft_warnings": 4,
+   "block": true,
+   "cost_usd": 0.3520973,
+   "ok": true,
+   "tail": "ọn, đủ nghĩa, không có phrase vụn. |\n| F (giọng, cảm xúc) | 8/10 | Thiếu giọng «mình» và chất tự giễu (−1). Beat kết hơi trừu tượng (−1). |\n| G (CTA) | 4/5 | CTA đạt, nhưng chưa đo được bằng một con số hay một chữ (−1). |\n\nCảnh báo mềm, trừ 0 điểm:\n- «nha» là biến thể khẩu ngữ.\n- Câu hỏi tu từ ở hook.\n- Câu ngắn ngắt nhịp ở b04 và «Bạn chỉ còn «hay lắm»».\n- b02 kể bằng ngôi «bạn» về việc người xem tự làm, gần lưu ý L-105 nhưng chưa sến.\n\n**8. Xung đột mở**\nKhông có.\n\nHARD_FAILS: không\nSCORE: A=18 B=12 C=17 D=11 E=14 F=8 G=4 TOTAL=84\nSOFT_WARNINGS: 4\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ"
+  },
+  {
+   "id": "r-c05-r114",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 68,
+   "parts": {
+    "A": 12,
+    "B": 8,
+    "C": 12,
+    "D": 12,
+    "E": 13,
+    "F": 6,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 8,
+   "block": true,
+   "cost_usd": 0.448319,
+   "ok": true,
+   "tail": "comment một chữ «đủ» hoặc «thiếu». |\n\n**Cảnh báo mềm (8, trừ 0 điểm):**\n1. Khẩu ngữ «nè / hông / nha».\n2. Thán từ «À,» ở b6.\n3. Câu hỏi giữ chân ở b4.\n4. «Giả sử» ở CTA. Bản duyệt a-c04 cũng dùng.\n5. Dunlosky chưa kiểm.\n6. «Cẩm nang sống đáng giá» chưa kiểm.\n7. Trend text hip ở Hàn chưa kiểm, cần nguồn.\n8. Ví dụ trang chi tiêu là minh họa, cần giữ nhãn minh họa. Câu «quên gì cũng không biết» nằm sát ranh L-053 nên nên giữ chữ trung tính.\n\n**8. Xung đột mở**\nKhông có.\n\nHARD_FAILS: không\nSCORE: A=12 B=8 C=12 D=12 E=13 F=6 G=5 TOTAL=68\nSOFT_WARNINGS: 8\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c06-v2",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 76,
+   "parts": {
+    "A": 18,
+    "B": 10,
+    "C": 11,
+    "D": 9,
+    "E": 14,
+    "F": 9,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 10,
+   "block": true,
+   "cost_usd": 0.6435046,
+   "ok": true,
+   "tail": "g» (b03, b09).\n3. «nha» (b12).\n4. «nghe quen hông?» (b03).\n5. «Mà nói cho công bằng» (b06).\n6. «Hóa ra» (b07).\n7. Câu hỏi tu từ ở b01.\n8. Câu hỏi tu từ ở b11.\n9. Chuyển «mình» sang «bạn» ở CTA, không làm lạc.\n10. Chuyện đi bộ, rửa chén và «tối thứ 22 lần này» cần Hiệp xác nhận vì chưa có trong story-bank.\n\n**8. Xung đột mở:** không. L-084 (trend ở b01–b02) và L-107 (không chen beat trước nghiên cứu) không mâu thuẫn hẳn. Gộp trend vào cuối b01 là thỏa cả hai.\n\n```\nHARD_FAILS: không\nSCORE: A=18 B=10 C=11 D=9 E=14 F=9 G=5 TOTAL=76\nSOFT_WARNINGS: 10\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ\n```"
+  },
+  {
+   "id": "r-c06-v3",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 78,
+   "parts": {
+    "A": 16,
+    "B": 8,
+    "C": 14,
+    "D": 13,
+    "E": 14,
+    "F": 8,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 6,
+   "block": true,
+   "cost_usd": 0.4079186,
+   "ok": true,
+   "tail": " đã bị chê ở b01 |\n| D | 13/15 | \"Chưa ai đo\" không có nguồn |\n| E | 14/15 | Độ dài ổn, hơi nhiều beat đi vòng |\n| F | 8/10 | Tone kể tốt, b05 hơi khô |\n| G | 5/5 | CTA comment tên thói quen, đạt |\n\nCảnh báo mềm, trừ 0 điểm:\n- \"hông\" ở b01.\n- \"nghe quen hông?\" ở b03.\n- Câu hỏi tu từ \"Vậy sao đi làm thì mình chịu nổi ba năm?\".\n- \"Mà nói cho công bằng\" ở b06.\n- Chuyển ngôi mình→bạn ở CTA, không làm lạc.\n- Chuyện cá nhân cần Hiệp xác nhận.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=16 B=8 C=14 D=13 E=14 F=8 G=5 TOTAL=78\nSOFT_WARNINGS: 6\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ"
+  },
+  {
+   "id": "r-c06-v3r2",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 81,
+   "parts": {
+    "A": 17,
+    "B": 11,
+    "C": 16,
+    "D": 11,
+    "E": 13,
+    "F": 8,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 6,
+   "block": true,
+   "cost_usd": 0.4784432,
+   "ok": true,
+   "tail": ". Từ nối văn nói: \"Vậy mà\", \"Nhưng nói cho công bằng thì\", \"Nên mình mới ngồi nghĩ\".\n3. Chuyện cá nhân cần Hiệp xác nhận (liệt kê ở mục 6).\n4. Câu trend ở b2 (\"Đại ý là…\") không nêu nguồn.\n5. Chuyển ngôi mình→bạn ở CTA. Không làm người nghe lạc.\n6. Nháp giữ nguyên khung r-c06-v3, mà Hiệp đã bác ba lần. Lời bác ghi là «làm lại», không nêu lý do (r-c06-v2, r-c06-v3r3). Tôi không suy ra lý do. Nếu lý do là ý tưởng gốc thì sửa câu chưa đủ.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=17 B=11 C=16 D=11 E=13 F=8 G=5 TOTAL=81\nSOFT_WARNINGS: 6\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ"
+  },
+  {
+   "id": "r-c06-v3r3",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "score": 90,
+   "parts": {
+    "A": 18,
+    "B": 13,
+    "C": 17,
+    "D": 13,
+    "E": 15,
+    "F": 9,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.4548586,
+   "ok": false,
+   "tail": "**\n1. Từ đệm miền Nam «hông», «nè» (kiểu của voice-profile).\n2. Từ nối văn nói: «Có điều, nói cho công bằng thì», «Tóm lại», «Nghĩa là».\n3. Câu hỏi giữ chân ở beat 2 và beat 6.\n4. Chuyển ngôi «mình» sang «bạn» ở CTA, không làm lạc, giống a-c04.\n5. Chuyện cá nhân (ba năm đi làm, hít đất, hết tháng đầu, «hít xong mới để ý không cần tự nhắc») chưa có trong story-bank. Ghi **cần Hiệp xác nhận**, 0 điểm, và không gắn với con số nghiên cứu nên không thành H1.\n\n**8. Xung đột mở:** không.\n\nHARD_FAILS: không\nSCORE: A=18 B=13 C=17 D=13 E=15 F=9 G=5 TOTAL=90\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: ĐẠT"
+  },
+  {
+   "id": "r-c05-r153",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r174",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r183",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r1921",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r201",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "a-c01",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 78,
+   "parts": {
+    "A": 18,
+    "B": 12,
+    "C": 12,
+    "D": 10,
+    "E": 14,
+    "F": 8,
+    "G": 4
+   },
+   "hard_fails": [],
+   "soft_warnings": 6,
+   "block": true,
+   "cost_usd": 0.5093783,
+   "ok": false,
+   "tail": " chưa kiểm bài gốc.\n6. Cả clip không có tiểu từ miền Nam (nha, á, hông, nè). Chỉ là nhắc, vì a-c04 cũng ít.\n\n**8. Xung đột mở:** không.\n\nGợi ý sửa nhỏ, mình chỉ trỏ dòng chứ không viết lại:\n- e05: thêm chủ ngữ và tên nguồn (Gollwitzer & Sheeran), bỏ «kiểm nghiệm» và «hiệu ứng vừa tới lớn».\n- e06: tách thành một ý, hoặc bỏ «dừng việc chắc chắn không thành».\n- e04: gắn ví dụ vào TOEIC.\n- e07: đổi «tín hiệu» thành lời nói thường.\n- b11: bỏ câu «Viết mất một, hai phút».\n\nHARD_FAILS: không\nSCORE: A=18 B=12 C=12 D=10 E=14 F=8 G=4 TOTAL=78\nSOFT_WARNINGS: 6\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ"
+  },
+  {
+   "id": "a-c02",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 70,
+   "parts": {
+    "A": 15,
+    "B": 8,
+    "C": 13,
+    "D": 10,
+    "E": 12,
+    "F": 7,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 7,
+   "block": true,
+   "cost_usd": 0.46279990000000004,
+   "ok": false,
+   "tail": " dồn ba yếu tố vào một beat (−1). |\n| F | 7 | Beat b07 khô và câu b02 gượng (−2). |\n| G | 5 | CTA «comment một chữ» đạt. |\n\nSoft warnings (trừ 0 điểm), 7 mục:\n- biến thể khẩu ngữ;\n- «Nghe quen hông?»;\n- câu ngắn ngắt nhịp «Đồ lười! Thôi để mai…»;\n- câu hỏi giữ chân;\n- ngôi chuyển «các bạn» → «mình» → «bạn» nhưng chưa làm lạc;\n- chuyện chín giờ tối cần Hiệp xác nhận;\n- «các bạn phải tự chửi bản thân» là trêu thói quen, hợp voice-profile.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=15 B=8 C=13 D=10 E=12 F=7 G=5 TOTAL=70\nSOFT_WARNINGS: 7\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "a-c03",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 77,
+   "parts": {
+    "A": 17,
+    "B": 10,
+    "C": 15,
+    "D": 9,
+    "E": 13,
+    "F": 8,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.44118260000000004,
+   "ok": false,
+   "tail": "ỗi đau (+1 so với neo). |\n\nCảnh báo mềm (0 điểm), có 5 mục:\n1. Chuyển ngôi «bạn» ở hook sang «mình» ở b04–b07, chưa làm người nghe lạc.\n2. Câu hỏi hook giữ chân.\n3. Khẩu ngữ «nha», «hẳn hoi», «chẳng hạn».\n4. Chuyện dọn phòng và «mười lăm phút mỗi việc» chưa có trong story-bank: cần Hiệp xác nhận, 0 điểm.\n5. Kruger/Evans và Steel chưa kiểm năm.\n\n**8. Xung đột mở**\n- Không có.\n\nSửa nhỏ: chỉnh b04 để cùng chiều với b03, và gỡ hoặc dẫn nguồn cho «việc to thì ngại» ở b05.\n\nHARD_FAILS: không\nSCORE: A=17 B=10 C=15 D=9 E=13 F=8 G=5 TOTAL=77\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa nhỏ"
+  },
+  {
+   "id": "a-c04",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "verdict_llm": "CHƯA ĐẠT",
+   "score": 74,
+   "parts": {
+    "A": 16,
+    "B": 9,
+    "C": 13,
+    "D": 9,
+    "E": 13,
+    "F": 9,
+    "G": 5
+   },
+   "hard_fails": [],
+   "soft_warnings": 5,
+   "block": true,
+   "cost_usd": 0.5451764,
+   "ok": false,
+   "tail": "9/15 | Mô tả sai thiết kế «nhóm» và «hơn hẳn» (−4) |\n| E | 13/15 | Độ dài ổn, không có lỗi |\n| F | 9/10 | Chi tiết \"từ thứ năm\", \"luggage\" tốt (+1), b06 khô (−1) |\n| G | 5/5 | CTA comment con số, quay lại hook |\n\n**Cảnh báo mềm (0 điểm):**\n1. Chuyển ngôi bạn → mình → bạn không làm lạc người nghe.\n2. Câu ngắt nhịp «thì mình bí».\n3. Câu hỏi giữ chân ở b01a.\n4. Chuyện cá nhân cần Hiệp xác nhận.\n5. Yang chưa có vai trò hay năm, chưa kiểm nguồn.\n\n**8. Xung đột mở:** không.\n\nHARD_FAILS: không\nSCORE: A=16 B=9 C=13 D=9 E=13 F=9 G=5 TOTAL=74\nSOFT_WARNINGS: 5\nCONFLICTS: không\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "a-c05",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "score": 85,
+   "parts": {
+    "A": 18,
+    "B": 12,
+    "C": 15,
+    "D": 14,
+    "E": 13,
+    "F": 9,
+    "G": 4
+   },
+   "hard_fails": [],
+   "soft_warnings": 8,
+   "block": true,
+   "cost_usd": 0.5931356999999999,
+   "ok": true,
+   "tail": " | 13/15 | |\n| F (giọng) | 9/10 | |\n| G (CTA) | 4/5 | CTA hỏi mở, chưa phải «comment con số» |\n\nCảnh báo mềm (8, trừ 0 điểm):\n1. Mở hook «Thì cái, bản chất…».\n2. Tiểu từ nè, hà, hông, nha.\n3. Nối «Mà chuyện này có thí nghiệm hẳn hoi».\n4. Nối «Vậy hóa ra».\n5. Câu ngắn ngắt nhịp ở b09d và b09f.\n6. Cảnh cô–trò b10a–b10b là dựng cảnh, không có câu dẫn.\n7. Thành ngữ «sổ đầu bài».\n8. b09b «Như mình nè» hàm ý Hiệp tự làm việc này. Cần Hiệp xác nhận, 0 điểm.\n\n**8. Xung đột mở:** không có.\n\nHARD_FAILS: không\nSCORE: A=18 B=12 C=15 D=14 E=13 F=9 G=4 TOTAL=85\nSOFT_WARNINGS: 8\nCONFLICTS: không\nVERDICT: ĐẠT"
+  }
+ ]
+}
