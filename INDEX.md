@@ -30,6 +30,7 @@ tags: [index, retrieval]
 | lab-vht-capcut-cli | lab | active | `channels/vanhiep-tech/lab/capcut-cli-notes.md` | lab — capcut-cli / cutout bake-off |
 | skill.make-capcut-draft | skill | active | `channels/vanhiep-tech/skills/make-capcut-draft/SKILL.md` | make-capcut-draft |
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
+| skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
@@ -238,6 +239,7 @@ tags: [index, retrieval]
 | skill.make-video | skill | active | `skills/make-video/SKILL.md` | make-video |
 | skill.motion-picks-per-script | skill | active | `skills/motion-picks-per-script/SKILL.md` | motion-picks-per-script |
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | script-polish |
+| skill.social-poster | skill | active | `skills/social-poster/SKILL.md` | social-poster |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | trend-digest |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |

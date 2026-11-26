@@ -25,6 +25,7 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Take thô, thử nghiệm giọng | ngoài repo (`/workspace/<job>/`) hoặc `media/` + `MANIFEST.json` | không commit take thô |
 | Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác |
 | Render clip | làm việc: `final/out/` (gitignored), part render `video-engine/out/`; **bản giữ lại**: `media/clips/<clip>/clip-NN-final.mp4` + `-720.mp4` (manifest) | bản gửi Hiệp: 720p faststart < 10 MB |
+| Nháp bài X/LinkedIn | `content/published/social/YYYY-MM-DD-<slug>.md` (skill `social-poster`; `status: draft → ready → published`) | không bao giờ tự đăng |
 | Clip đã duyệt | `content/archive/<clip>/` (cùng layout, thêm `final/approved.json`) | luật 66 |
 | Media lớn (mp4 sample, footage) | `media/` (gitignored) + `media/MANIFEST.json` | `media/footage/inbox/` cho video quay |
 | Test | `tests/` | |

@@ -25,6 +25,7 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 4. Skill `channels/vanhiep-tech/skills/make-layer/SKILL.md` (layers)
 5. Skill `channels/vanhiep-tech/skills/make-capcut-draft/SKILL.md` (CLI compile + cutout)
 6. CapCut: `channels/vanhiep-tech/docs/capcut-smoke.md`
+   - Cắt video dài thành short: `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` (cổng bản quyền, Hiệp chọn đoạn, ra `a-roll.mp4` cho pipeline CapCut)
 7. HyperFrames: router → creative → animation / motion-graphics → talking-head-recut (**layout only**) · cutout: `remove-background`
 
 ## Format video

@@ -10,6 +10,7 @@ source: "oneup-studio (soạn trong repo)"
 # Bản đồ workflow agent — @hi.oneup
 
 > **Đã ngưng (2026-11-26).** Bản đồ đa agent thời box (19/10), chuyển từ `workflows/agents/` vào đây để giữ lịch sử. Quy trình hiện hành: `skills/make-video/SKILL.md` (@hi.oneup) và `channels/vanhiep-tech/AGENTS.md`; trend: `skills/trend-digest/`. Không làm theo file trong thư mục này.
+> Phần còn dùng đã chuyển (26/11): deep-research + rule-reviewer → `skills/make-video/SKILL.md` §4b (`final/review.md`); social-poster → `skills/social-poster/`; shorts-cutter → `channels/vanhiep-tech/skills/shorts-cutter/` (gõ `/social-poster`, `/shorts-cutter`).
 
 Cập nhật: 19/10/2026 (Asia/Saigon). Từ nay mỗi agent giữ một workflow riêng trong thư mục này; News chỉ điều phối (xem news-coordinator.md). Skill make-video cũ vẫn là xương sống tạm thời; đề xuất cắt mỏng make-video chờ Hiệp duyệt, chưa tự cắt.
 

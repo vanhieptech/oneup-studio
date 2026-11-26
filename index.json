@@ -144,6 +144,13 @@
    "title": "make-layer"
   },
   {
+   "id": "skill.shorts-cutter",
+   "type": "skill",
+   "status": "active",
+   "path": "channels/vanhiep-tech/skills/shorts-cutter/SKILL.md",
+   "title": "shorts-cutter"
+  },
+  {
    "id": "template-vht-script-short",
    "type": "template",
    "status": "draft",
@@ -475,7 +482,7 @@
    "id": "rule-scoring-rubric",
    "type": "rubric",
    "status": "proposal-awaiting-hiep",
-   "updated": "2026-10-19",
+   "updated": "2026-11-26",
    "path": "logs/rule-scoring-rubric.md",
    "title": "Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt)"
   },
@@ -1781,6 +1788,13 @@
    "status": "active",
    "path": "skills/script-polish/SKILL.md",
    "title": "script-polish"
+  },
+  {
+   "id": "skill.social-poster",
+   "type": "skill",
+   "status": "active",
+   "path": "skills/social-poster/SKILL.md",
+   "title": "social-poster"
   },
   {
    "id": "skill.trend-digest",

@@ -6,7 +6,7 @@ status: proposal-awaiting-hiep
 source: "logs/rule-checklist.md (64 rule, commit 4a7c477) + logs/lessons.md L-001–L-058 + hiệu chuẩn clip-04 v04–v07"
 id: rule-scoring-rubric
 type: rubric
-updated: 2026-10-19
+updated: 2026-11-26
 ---
 **L-099 — Hiệp 08/11/2026 13:00 (Asia/Saigon), Rule Reviewer chuyển lời:** áp cho clip đang viết lại và clip mới. Tổng video **strict <300s**, gồm **end card, khoảng nghỉ và chuyển cảnh**; **120–180s chỉ là mục tiêu/cảnh báo**, không phải minimum. Bỏ quota từ toàn bài/beat/đoạn trước phương pháp; giữ đủ ngữ cảnh và nguồn + so sánh + kết quả/giới hạn, không kéo dài bằng lặp ý và không tăng tốc đọc để nhét. Trước Chốt ghi **ƯỚC/estimate** theo nhịp đọc tự nhiên (kèm end card/nghỉ/chuyển cảnh); chỉ đo thời lượng thật từ audio/video sau Chốt. Đây **không phải Chốt**, không miễn **W-16**; chưa Chốt: không hình/voice/render/publish.
 
@@ -90,4 +90,4 @@ Verdict thật (từ chính file script + lessons, không bịa): v04 — Hiệp
 3. Danh sách lỗi chặn §3, đặc biệt: hook thiếu câu hỏi = chặn (không chỉ trừ điểm).
 4. X-01 đã đóng theo L-099 (Hiệp 08/11 13:00 Asia/Saigon): không quota từ; xem luật 4. Các neo điểm/bản clip cũ ở §4 là lịch sử, không phải budget hiện hành.
 5. C-1 credit: giữ nguyên văn đã chốt hay theo rule-13 ("đã chuyển thể" + link giấy phép).
-6. Có tạo skill `rule-review` như §5 không, hay chỉ giữ rubric trong `logs/`?
+6. Có tạo skill `rule-review` như §5 không, hay chỉ giữ rubric trong `logs/`? **Đã quyết 26/11/2026 (Hiệp: "Làm theo đề xuất"):** không tạo skill riêng; rubric chạy ở bước `skills/make-video/SKILL.md` §4b (gộp kiểm claim + chấm điểm, ghi `final/review.md`). Câu 1, 2, 3, 5 vẫn chờ Hiệp; §4b dùng tạm số đề xuất và ghi rõ như vậy.

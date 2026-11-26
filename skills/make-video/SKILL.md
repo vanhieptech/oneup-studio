@@ -6,7 +6,7 @@ description: >-
   intake to post package that keeps every clip consistent with rules/video-rules.md:
   read sources → script → humanizer → check-rules → review gate 1 → render → check-rules
   --final → review gate 2 → log decisions. Edits go to the spec, never a regenerate.
-version: "1.0.0"
+version: "1.1.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -118,8 +118,25 @@ python3 pipeline/scripts/check-rules.py <clip>/ --stt                          #
 ```
 `check-rules` covers: finished total <300s including endcard/pauses/transitions, 120–180s target warning only, no hard total-word quota, hook/CTA, scene ≤ 8s, Omi week (rule-11), theme vs theme-map, beat ids, comic vs motion engine, EN-only captions + highlight indexes, no emoji, Be Vietnam Pro only + no CDN, no music, SFX allowed + sourced, every transition has an SFX + ambience bed (rule-50, DL-042: default whoosh-soft at part xfades, swish at scene/section changes, 0.12s lead, quiet; continuous ambience; never music), content-specific motion + accent SFX on marked hits (rule-51, DL-043: section `hits: [{id, f, sfx}]` → template `H(id, hit)` + mixed SFX at the same time; scenes use `sfx`; ≤3 per section), AI-tell phrases, particles / "bạn" / English mix, unconfirmed story items, voice presets (no cloning), STT of every line, post package (credit + license link + "đã chuyển thể", AI toggle + disclosure), video-engine validator; with `--final` also MP4 spec, −14 LUFS, contact sheet. A line failing STT: fix `say` or bump `take`, rebuild.
 
+## 4b. Claim check + score (before gate 1)
+Taken from the old box agents Deep Research and Rule Reviewer (`docs/legacy-box/workflows-agents/`, retired 26/11). Run it after §4 passes, on every draft, and again when Hiệp sends a single script or a vX fix. Write the result to `final/review.md` (front-matter `status: draft`); never edit the script inside this step, only quote lines and propose replacements.
+
+1. **Claim table.** Every research claim in `text`/`en` (number, mechanism, "nghiên cứu cho thấy…", effect size) gets one row:
+
+   | Claim (as allowed to say) | Original source (author/year + matching passage) | 2nd independent source | Confidence | Allowed wording | Banned wording |
+   |---|---|---|---|---|---|
+
+   - Open the original source and compare the exact passage; a search snippet or a source that won't open does not count.
+   - Confidence: `cao` (original + ≥1 independent source agree), `vừa` (original only, or a moderate/conditional effect), `chặn` (secondary only, conflicting, or unreadable).
+   - Keep 3 kinds apart: study result · speaker's inference · everyday illustration. An illustration (rule 67 comic detail, L-052) never carries a study number.
+   - Say effects at the source's strength (g = 0,499 = "mức vừa"; banned: "chứng minh", "hơn hẳn", "nhớ hết", L-045). Any `chặn` row blocks gate 1 until the line is cut or reworded to what the source supports.
+2. **Score** with `logs/rule-scoring-rubric.md` §3 (A Hook 20 · B Flow 15 · C Clarity 20 · D Fact 15 · E Length/caption 15 · F Tone 10 · G CTA/gate pack 5). Every deduction quotes the line. Measurable items come from `check-rules` output; mark the rest as manual reading, never as automated.
+3. **Hard gates** (rubric §3 "Lỗi chặn"): invented or inflated fact · belittling the viewer (P-07/L-053) · missing safety line or CC BY 4.0 credit · medical/legal/dosage beyond source · any voice/render/publish before Chốt. One hit = not ready, whatever the total.
+4. **Open conflicts** between rules (rubric C-1/C-3, checklist X-0N, or a rubric anchor vs a newer DL/lesson, e.g. hook-shape gate vs `logs/hook-moves.md` variety): list both sides, don't fix toward one side.
+5. **Verdict** at the top of `review.md`: `ĐẠT — trình gate 1` (≥85, 0 hard gate, 0 open conflict) · `CHƯA ĐẠT — sửa nhỏ/vừa/lớn` (75–84 / 60–74 / <60: fix those lines, re-run §3–§4b, don't send yet) · `ĐẠT VỀ ĐIỂM — chờ Hiệp quyết <conflict>`. The thresholds and weights are still the rubric's proposal (§6); use them as the default until Hiệp changes them, and say so in `review.md`.
+
 ## 5. Review gate 1 (Hiệp): script
-Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
+Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + the `final/review.md` verdict line, score and any open conflict + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
 
 
 **Effects table, required at gate 1 (rule 52, DL-044, L-019).** Plan every effect *before* any render, so late requests don't cost extra re-renders. When drafting `spec.json`, fill in:
