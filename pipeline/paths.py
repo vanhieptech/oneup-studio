@@ -95,6 +95,8 @@ def _which_any(name, env_key):
 
 TINYFISH_BIN = _which_any("tinyfish", "TINYFISH_BIN")   # @tiny-fish/cli: free search + fetch (TikTok pages are blocked for fetch, 26/11)
 GEMINI_BIN = _which_any("gemini", "GEMINI_BIN")         # @google/gemini-cli: video teardown (pipeline/scripts/teardown.py)
+AGY_BIN = _first_existing(("AGY_BIN",), ("/Applications/Gemini.app/Contents/Helpers/agy", HOME / ".local/bin/agy"), shutil.which("agy") or "")
+# Antigravity CLI (Google). Gemini CLI's Google sign-in is refused for individual accounts since 2026-11, so teardown.py prefers agy.
 
 VIENEU_PYTHON = _first_existing(
     ("VIENEU_PYTHON",),

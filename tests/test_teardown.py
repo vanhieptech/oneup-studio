@@ -50,7 +50,7 @@ class BlueprintAndCleanup(_ut.TestCase):
         from unittest import mock
         f = tempfile.NamedTemporaryFile(suffix=".mp4", delete=False); f.close()
         def fail(*a, **k): raise SystemExit(3)
-        with mock.patch.object(td, "download", lambda url: f.name), mock.patch.object(td, "run_gemini", fail), \
+        with mock.patch.object(td, "download", lambda url: f.name), mock.patch.object(td, "run_engine", fail), \
              mock.patch.object(_sys, "argv", ["teardown.py", "--url", "https://www.tiktok.com/@a/video/1"]):
             with self.assertRaises(SystemExit): td.main()
         self.assertFalse(os.path.exists(f.name))

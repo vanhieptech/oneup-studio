@@ -18,6 +18,9 @@ source: "Thử trực tiếp CLI tinyfish 0.59.0 + MCP TinyFish, 26/11/2026"
 | `browser session create --browser-profile stealth --proxy-country VN` | **Chưa chạy.** Lệnh bị bộ phân loại an toàn của Claude Code (auto mode) từ chối với lý do «Unauthorized Access»; không có session nào được tạo, không tốn tiền | 0 |
 | `agent run` | Không thử (đắt hơn, 0,016 USD/bước) | — |
 
+## Tải clip TikTok để phân tích (teardown --url)
+- 26/11: lệnh `teardown.py --url https://www.tiktok.com/@manghocls/video/7366613156908600583` bị bộ phân loại an toàn của Claude Code (auto mode) từ chối («Unauthorized Access») trước khi chạy. Hiệp có thể tự chạy lệnh này trong terminal; video tải tạm vào `media/tmp/teardown/` và bị xoá sau phân tích.
+
 ## Kết luận dùng trong pipeline
 - TinyFish = **tìm** clip (`pipeline/scripts/tinyfish_client.py tiktok …`), miễn phí.
 - Apify = **đo** clip đã tìm (số liệu, phụ đề, comment): `pipeline/scripts/apify-run.py --urls-from …`. Lần chạy 26/11: 10 clip, 8 phụ đề, comment 3 clip, 0,038 USD.

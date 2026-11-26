@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Video teardown with Gemini CLI: watch + listen to a clip, extract hook / pacing / spine / audio / ending as JSON.
 
-  teardown.py VIDEO.mp4 | --url <tiktok/youtube link> [--id ID] [--model gemini-2.5-pro] [--out-dir research/trends/<date>/teardowns]
+  teardown.py VIDEO.mp4 | --url <tiktok/youtube link> [--engine auto|agy|gemini] [--id ID] [--model gemini-2.5-pro] [--out-dir research/trends/<date>/teardowns]
                [--clip-json row.json] [--timing final/timing.json]
 
 - Prompt: docs/prompts/gemini-teardown.md (between <<<PROMPT and PROMPT>>>). Output: <out-dir>/<id>.json + <id>.md
   (sections 2, 3, 5, 6, 7 of templates/clip-teardown.md; the rest is filled from Apify / by Claude).
-- Gemini CLI auth: `export GEMINI_API_KEY=…` in ~/oneup-tools/env.sh (outside git; key from Google AI Studio). "Sign in with
+- Engine: `agy` (Antigravity CLI, Google sign-in, default when installed; models e.g. gemini-4-hydrogen-high,
+  gemini-4-carbon-high — `agy models`) or Gemini CLI. Gemini CLI auth: `export GEMINI_API_KEY=…` in ~/oneup-tools/env.sh (outside git; key from Google AI Studio). "Sign in with
   Google" is refused for individual accounts since 2026-11 ("no longer supported for Gemini Code Assist for individuals").
   Without a key this exits 3 with the CLI's message.
 - --timing: our own clip's timing.json → report how far Gemini's cut times are from the real scene starts (accuracy check).
@@ -88,6 +89,25 @@ def cut_accuracy(data, timing_path):
     d = [min(abs(g - s) for s in starts) for g in guesses]
     return {"n": len(d), "mean_s": round(sum(d) / len(d), 2), "max_s": round(max(d), 2), "within_1s": sum(1 for x in d if x <= 1.0)}
 
+def run_agy(video, model):
+    """Antigravity CLI (`agy -p`, Google sign-in). Returns the same shape as run_gemini: {"response": text, "stats": {...}}."""
+    prompt = load_prompt() + f"\n\nVideo cần phân tích: @{os.path.abspath(video)}"
+    args = [P.AGY_BIN, "-p", prompt, "--output-format", "json", "--mode", "plan", "--add-dir", os.path.dirname(os.path.abspath(video)),
+            "--print-timeout", "900s"]
+    if model: args += ["--model", model]
+    r = subprocess.run(args, capture_output=True, text=True, timeout=960, cwd=os.path.dirname(os.path.abspath(video)))
+    try: out = json.loads(r.stdout.strip().splitlines()[-1])
+    except (json.JSONDecodeError, IndexError): out = {"status": "ERROR", "error": (r.stderr or r.stdout).strip()[-500:]}
+    if out.get("status") == "ERROR" or out.get("error"):
+        print(f"agy error: {out.get('error')}", file=sys.stderr); sys.exit(3)
+    return {"response": out.get("response", ""), "stats": {"models": {out.get("model") or model or "agy-default": out.get("usage", {})}},
+            "engine": "agy"}
+
+def run_engine(video, model, engine):
+    if engine == "agy" or (engine == "auto" and P.AGY_BIN and os.path.exists(P.AGY_BIN)):
+        return run_agy(video, model)
+    return run_gemini(video, model)
+
 def run_gemini(video, model):
     if not P.GEMINI_BIN: raise SystemExit("gemini CLI not found (GEMINI_BIN)")
     prompt = load_prompt() + f"\n\n@{os.path.abspath(video)}"
@@ -142,9 +162,10 @@ def analyse(video, url, opt):
     source = url or os.path.basename(video)
     outd = opt("--out-dir", str(P.ROOT / f"research/trends/{date}/teardowns"))
     model = opt("--model")
-    out = run_gemini(video, model)
+    engine = opt("--engine", "auto")  # auto = agy (Antigravity) when installed, else gemini CLI
+    out = run_engine(video, model, engine)
     data = extract_json(out.get("response", ""))
-    cli = subprocess.run([P.GEMINI_BIN, "--version"], capture_output=True, text=True).stdout.strip()
+    cli = ("agy " if out.get("engine") == "agy" else "gemini ") + subprocess.run([P.AGY_BIN if out.get("engine") == "agy" else P.GEMINI_BIN, "--version"], capture_output=True, text=True).stdout.strip()[:40]
     used = model or next(iter((out.get("stats", {}).get("models") or {}).keys()), "default")
     meta = {"date": date, "video": os.path.basename(video), "cli": cli, "model": used}
     if opt("--timing"): meta["accuracy"] = cut_accuracy(data, opt("--timing"))

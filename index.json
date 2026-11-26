@@ -1775,6 +1775,14 @@
    "title": "Treg TikTok — 2026-11-12"
   },
   {
+   "id": "teardown.selftest-clip02",
+   "type": "teardown",
+   "status": "draft",
+   "updated": "2026-11-26",
+   "path": "research/trends/2026-11-26/teardowns/selftest-clip02.md",
+   "title": "Teardown `selftest-clip02` (tự kiểm trên clip của kênh)"
+  },
+  {
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
