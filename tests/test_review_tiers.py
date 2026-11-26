@@ -104,9 +104,11 @@ def test_eval_resolve_anchor_leave_one_out():
     s = importlib.util.spec_from_file_location("review_eval", os.path.join(R, "pipeline/scripts/review-eval.py"))
     m = importlib.util.module_from_spec(s); s.loader.exec_module(m)
     ss = m.samples()
-    # Evaluating a rejected sample defaults to newest approved (a-c05)
+    # Theme-matched: r-c05-v2 (memory_study) matches a-c05; r-c06-v2 (habit story_metaphor) matches a-c03
     aid, w = m.resolve_anchor(ss, "r-c05-v2")
     assert aid == "a-c05" and w
-    # Evaluating a-c05 itself must NOT leak a-c05; falls back to next approved (a-c04)
+    aid6, w6 = m.resolve_anchor(ss, "r-c06-v2")
+    assert aid6 == "a-c03" and w6
+    # Evaluating a-c05 itself must NOT leak a-c05; falls back to same-theme approved (a-c04)
     aid2, w2 = m.resolve_anchor(ss, "a-c05", preferred_anchor="a-c05")
-    assert aid2 == "a-c04" and w2
+    assert aid2 != "a-c05" and aid2 == "a-c04" and w2

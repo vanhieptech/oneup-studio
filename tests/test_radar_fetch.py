@@ -65,3 +65,38 @@ def test_trend_streams_reads_radar_raw_snapshot():
         rf.run_fetch("2026-11-26", cfg_path=cfg_p, root=root, fetcher=fake_fetcher, enqueue=False)
         rows = ts.radar("2026-11-26", CFG, root=root)
         assert {r["id"] for r in rows} == {"manghocls-101", "nofans_ch-201"}
+
+
+def test_radar_fetch_roles_and_audience_language_comments():
+    cfg_roles = {
+        "min_ratio": 3.0,
+        "recent_limit": 10,
+        "growth": {"min_hours": 24, "max_hours": 72, "min_pct": 0.5, "min_abs": 100},
+        "channels": [
+            {"handle": "veritasium", "platform": "youtube", "role": "cross_niche_craft",
+             "url": "https://www.youtube.com/@veritasium/shorts", "followers": 0, "niche": ["khoa-hoc"],
+             "craft_focus": ["hook-phan-truc-giac"], "niche_verified": True},
+            {"handle": "disabled_anti", "platform": "tiktok", "role": "anti_pattern", "url": "", "enabled": False},
+        ],
+        "topics": {"productivity": ["thói quen"]},
+    }
+    def multi_fetcher(url, limit):
+        return [
+            {"id": "yt11111111", "title": "Why your brain tricks you", "view_count": 400000, "comment_count": 500,
+             "comments": [{"text": "Mình cứ đọc xong là quên sạch không hiểu sao luôn", "like_count": 320}]},
+            {"id": "yt22222222", "title": "Normal short 1", "view_count": 50000, "comment_count": 20},
+            {"id": "yt33333333", "title": "Normal short 2", "view_count": 60000, "comment_count": 30},
+        ], ""
+    with tempfile.TemporaryDirectory() as d:
+        root = Path(d)
+        cfg_p = root / "radar.yaml"
+        cfg_p.write_text(json.dumps(cfg_roles), encoding="utf-8")
+        res = rf.run_fetch("2026-11-26", cfg_path=cfg_p, root=root, fetcher=multi_fetcher, enqueue=False)
+        assert len(res["statuses"]) == 1  # disabled_anti skipped
+        assert len(res["rows"]) == 1
+        row = res["rows"][0]
+        assert row["role"] == "cross_niche_craft" and row["learn_scope"] == "craft_only"
+        assert res["audience_language_path"] and res["audience_language_path"].exists()
+        aud_txt = res["audience_language_path"].read_text(encoding="utf-8")
+        assert "Mình cứ đọc xong là quên sạch" in aud_txt
+        assert "id: trends-2026-11-26-audience-language" in aud_txt

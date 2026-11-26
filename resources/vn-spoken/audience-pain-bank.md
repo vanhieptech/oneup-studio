@@ -1,0 +1,22 @@
+---
+title: "Kho Nỗi Đau & Câu Hỏi Khán Giả Thật (Audience Pain Bank từ comment)"
+date: 2026-11-26
+id: resources.vn-spoken.audience-pain-bank
+type: resource
+status: ready
+updated: 2026-11-26
+tags: [audience, pain-bank, comments, vn-spoken, teardown, gate-0]
+source: "Tự động gom từ comment thật qua pipeline/scripts/teardown.py (Khối 7) và radar-fetch.py (audience-language.md); hạt giống ban đầu từ Apify comments 16/10 & 26/11"
+---
+# Kho Nỗi Đau & Câu Hỏi Khán Giả Thật (Audience Pain Bank)
+
+Nơi tích lũy các câu hỏi, nỗi đau và cách diễn đạt cửa miệng của khán giả thật (ẩn danh, không lưu tên tài khoản cá nhân) lấy từ comment video outlier và teardown. Dùng làm hạt giống cho **Gate 0** và **Gate 0.5 Hook Arena (Pain-Mirror)** để đảm bảo ví dụ và hook chạm đúng nỗi đau có thật (`L-090`).
+
+## Bảng nỗi đau & câu hỏi từ comment
+
+| ngày | nguồn teardown / video | chủ đề | câu hỏi / nỗi đau khán giả (ẩn danh) | ghi chú dùng cho hook |
+|---|---|---|---|---|
+| 2026-10-16 | clip-03 (Apify comments) | trì hoãn, dọn phòng | «phòng chất đầy đồ, tuần nào cũng hứa cuối tuần dọn mà để cả năm» | Pain-Mirror cho chia nhỏ việc (`clip-03`) |
+| 2026-10-16 | clip-03 (Apify comments) | trì hoãn, học tập | «Muốn học mà mắc lười» | Nỗi đau thật: muốn làm nhưng không bắt đầu nổi |
+| 2026-11-26 | manghocls-7366613156908600583 | học thuộc, nhớ lâu | «chiều thi mà giờ học chưa xong, làm sao để nhớ lâu» | Đổi bối cảnh sang đời thường nếu dùng cho `@hi.oneup` (`L-087`) |
+| 2026-11-26 | thayqueo (Apify vtt/comments) | trì hoãn | «đợi khi nào thật sự sẵn sàng rồi làm, từ từ đã» | Niềm tin phổ biến để bẻ gãy ở Counter-Intuitive Hook |

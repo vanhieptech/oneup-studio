@@ -11,7 +11,7 @@ source: "Hướng dẫn Gemini Hiệp gửi 26/11 (5 phần: hook, nhịp, khung
 # Prompt Gemini teardown
 
 `pipeline/scripts/teardown.py` gửi phần giữa hai dòng `<<<PROMPT
-Bạn là chuyên gia phân tích retention (tỷ lệ giữ chân) video ngắn TikTok. Xem và nghe kỹ video đính kèm. Bóc tách "Viral DNA" của nó thành 6 khối, ngắn gọn, không kể lể.
+Bạn là chuyên gia phân tích retention (tỷ lệ giữ chân) video ngắn TikTok. Xem và nghe kỹ video đính kèm. Bóc tách "Viral DNA" của nó thành 7 khối (kèm Khối 7 Craft & Voice Transfer), ngắn gọn, không kể lể.
 
 Quy tắc:
 - Mỗi ý ghi `"kind": "quan sát"` (thấy/nghe được, có mốc giờ mm:ss) hoặc `"kind": "suy đoán"` (giải thích lý do). Không bịa mốc giờ; không chắc thì ghi null.
@@ -34,6 +34,12 @@ Trả về DUY NHẤT một khối JSON (không markdown, không lời dẫn) đ
   "ending": {"type": "bất ngờ|loop về đầu|kêu gọi hành động|khác", "cta": ""},
   "arc": {"name": "tên ngắn của mạch truyện", "skeleton": ["[...] bước 1", "[...] bước 2", "[...] bước 3", "[...] bước 4"], "hook_mechanism": ""},
   "angles": {"hi_oneup": {"idea": "", "hook": "", "length_s": 150}, "vanhiep_tech": {"idea": "", "hook": "", "length_s": 60}},
+  "craft_transfer": {
+    "metaphor_transfer": "cách tác giả dùng ẩn dụ biến khái niệm khó thành hình ảnh đời thường",
+    "sentence_rhythm": "cách ngắt câu, nhịp dừng, từ nối giúp nghe cuốn",
+    "pacing_3_5s": "kỹ thuật giữ nhịp hình/âm thanh mỗi 3–5 giây",
+    "audience_pains": ["câu hỏi hoặc nỗi đau thật của khán giả (nếu nghe/thấy hoặc suy từ comment)"]
+  },
   "why_it_works": [{"claim": "", "evidence": "mm:ss hoặc khối", "kind": "suy đoán"}],
   "model_note": "tên model bạn đang chạy nếu biết"
 }

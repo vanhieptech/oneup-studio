@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """Measure the independent script reviewer against Hiệp's real verdicts (research/review-golden/).
 
-  review-eval.py [--mode pairwise|score] [--anchor a-c05] [--model sonnet] [--limit N] [--only id,id]
-                 [--jobs 3] [--dry-run] [--out research/review-golden/eval-<date>.json]
+  review-eval.py [--mode pairwise|score] [--anchor auto|a-c05] [--engine agy|claude] [--model default|sonnet]
+                 [--limit N] [--only id,id] [--jobs 3] [--dry-run]
+                 [--out research/review-golden/eval-<date>.json]
 
 Modes:
-  pairwise (default): Pairwise A/B against the newest approved anchor clip from research/review-golden/
-                      (or --anchor <approved_clip_id>; leave-one-out picks the next approved clip when
-                      evaluating the anchor itself). Recomputes verdict via review_tiers.py (H1–H4 hard
-                      gate + WIN/TIE/LOSE).
+  pairwise (default): Pairwise A/B with Theme/Format-Matched Anchor Selection — automatically picks the
+                      closest approved script from `research/review-golden/approved/` + `index.json` matching
+                      the draft's channel (`@hi.oneup` vs `@vanhiep.tech`), format (`story_metaphor` vs
+                      `instructional_list`), and theme (leave-one-out when evaluating an approved sample).
+                      Also injects Hiệp's historical rejection blind-spots from `resources/feedback.md`.
+                      Recomputes verdict via review_tiers.py (H1–H4 hard gate + WIN/TIE/LOSE).
   score:              Legacy absolute-score mode.
 
 Samples with no words (`skipped: no words`) are skipped before launching worker calls.
 Metrics: rejected caught = verdict is not ĐẠT/ĐẠT VỀ ĐIỂM (target ≥ 14/15); approved passed = ĐẠT or ĐẠT VỀ ĐIỂM.
 Writes per-sample results + metrics to --out and prints a table. Never edits the golden set.
 """
-import datetime as dt, json, os, re, shutil, subprocess, sys, tempfile, threading
+import datetime as dt, json, os, re, shutil, subprocess, sys, tempfile, threading, unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -24,7 +27,40 @@ from review_tiers import parse_block, tier_verdict
 
 GOLDEN = P.ROOT / "research/review-golden"
 PROMPT_MD = P.ROOT / "docs/prompts/reviewer-script.md"
+FEEDBACK_MD = P.ROOT / "resources/feedback.md"
 CLAUDE = shutil.which("claude") or str(Path.home() / ".local/bin/claude")
+
+LIST_FORMAT_RE = re.compile(
+    r"(?<!\w)(?:thì cái bản chất|bản chất của cái|và cuối cùng|3 cách|ba cách|bước 1|bước 2)(?!\w)",
+    re.I,
+)
+THEME_KEYWORDS = {
+    "habit_procrastination": (
+        "thói quen", "trì hoãn", "21 ngày", "mai học", "để mai", "cuối tuần", "cả năm",
+        "dọn phòng", "chia nhỏ", "nếu thì", "đang né", "mình né", "khó chịu", "đi bộ", "hít đất", "lally", "steel", "gollwitzer",
+    ),
+    "memory_study": (
+        "nhớ lâu", "quên sạch", "học thuộc", "đọc sách", "đọc lại", "gấp sách", "tự kiểm",
+        "tự viết", "tự kể", "trả bài", "ôn thi", "chương sách", "sinh viên", "roediger", "yang", "từ tiếng anh",
+        "tài liệu", "thí nghiệm", "nhớ hơn", "học một đêm",
+    ),
+    "tech_dev": (
+        "code", "lập trình", "terminal", "api", "jwt", "token", "server", "bug", "deploy",
+        "docker", "git", "capcut", "overlay", "prompt", "llm", "agent", "database",
+    ),
+}
+STOP_WORDS = set(
+    "và của là có cho một những các được với không thì mà này đó để khi người bạn mình rồi lại cũng như nào gì vì nên hay hơn vào ra lên về tới tại".split()
+)
+
+
+def _fold(s):
+    s = unicodedata.normalize("NFD", (s or "").lower())
+    return unicodedata.normalize("NFC", "".join(c for c in s if unicodedata.category(c) != "Mn")).replace("đ", "d")
+
+
+def _content_tokens(text):
+    return {w for w in re.findall(r"[a-z0-9]+", _fold(text)) if len(w) > 2 and w not in STOP_WORDS}
 
 
 def load_prompt():
@@ -32,6 +68,20 @@ def load_prompt():
     if not m:
         raise SystemExit(f"no prompt block in {PROMPT_MD}")
     return m.group(1)
+
+
+def load_feedback_blindspots(path=FEEDBACK_MD):
+    """Extract Hiệp's historical rejection notes from resources/feedback.md for Pairwise TIE-vs-LOSE calibration."""
+    p = Path(path)
+    if not p.exists():
+        return "- (chưa có resources/feedback.md)"
+    rows = []
+    for ln in p.read_text(encoding="utf-8").splitlines():
+        if ln.startswith("|") and not re.match(r"^\|[-\s|:]+\|$", ln):
+            c = [x.strip() for x in ln.strip("|").split("|")]
+            if len(c) >= 4 and c[0].startswith("«"):
+                rows.append(f"- {c[0]} → **{c[1]}** ({c[3]})")
+    return "\n".join(rows) if rows else "- (chưa có mục chê nào trong resources/feedback.md)"
 
 
 def samples():
@@ -59,8 +109,22 @@ def approved_words(s):
         body = t.split("\n---", 1)[1].strip() if t.startswith("---") and "\n---" in t[3:] else t.strip()
         if re.search(r"^\s*\d+\.\s*\*\*\[", body, re.M):
             return body
-    clipdir = P.ROOT / Path(s["source"]).parent.parent  # content/archive/<clip>/final/script-final.md → content/archive/<clip>
-    spec = clipdir / "final/spec.json"
+    src = s.get("source") or ""
+    if src and (P.ROOT / src).exists() and str(src).endswith(".md"):
+        # For non-spec channels (e.g. @vanhiep.tech), allow numbered beats directly in the approved markdown
+        clipdir = P.ROOT / Path(src).parent.parent
+        spec = clipdir / "final/spec.json"
+        if not spec.exists():
+            t = (P.ROOT / src).read_text(encoding="utf-8")
+            body = t.split("\n---", 1)[1].strip() if t.startswith("---") and "\n---" in t[3:] else t.strip()
+            if re.search(r"^\s*\d+\.\s*\*\*\[", body, re.M):
+                return body
+            return None
+    else:
+        if not src:
+            return None
+        clipdir = P.ROOT / Path(src).parent.parent  # content/archive/<clip>/final/script-final.md → content/archive/<clip>
+        spec = clipdir / "final/spec.json"
     if not spec.exists():
         return None
     sp = json.loads(spec.read_text(encoding="utf-8"))
@@ -86,28 +150,172 @@ def strip_markup(text):
 
 
 def words_for(s):
+    if s.get("_words"):
+        return strip_markup(s["_words"])
     w = rejected_words(s) if s["verdict"] == "rejected" else approved_words(s)
     return strip_markup(w) if w else w
 
 
-def resolve_anchor(all_samples, sample_id, preferred_anchor=None):
-    """Pick an approved anchor sample (id, words) for leave-one-out pairwise comparison.
+def detect_channel(sample, text=""):
+    """Identify channel: '@vanhiep.tech' vs '@hi.oneup'."""
+    if sample and sample.get("channel"):
+        ch = str(sample["channel"]).lower()
+        return "@vanhiep.tech" if ("vht" in ch or "vanhiep" in ch) else "@hi.oneup"
+    src = str((sample or {}).get("source") or "").lower()
+    sid = str((sample or {}).get("id") or "").lower()
+    if "vanhiep-tech" in src or "vht-" in src or sid.startswith(("vht-", "a-vht", "r-vht")):
+        return "@vanhiep.tech"
+    return "@hi.oneup"
 
-    Uses `preferred_anchor` when provided and distinct from `sample_id`; otherwise picks the newest
-    approved sample (by order in index.json) whose id != sample_id and that has words.
+
+def detect_format(sample, text=""):
+    """Classify structure style: 'instructional_list' (hướng dẫn liệt kê / khung bản chất) vs 'story_metaphor' (kể chuyện ẩn dụ)."""
+    if sample and sample.get("format"):
+        return str(sample["format"])
+    norm = unicodedata.normalize("NFC", text or "")
+    hits = LIST_FORMAT_RE.findall(norm)
+    has_list_triad = all(re.search(p, norm, re.I) for p in (r"(?<!\w)thứ nhất(?!\w)", r"(?<!\w)thứ hai(?!\w)", r"(?<!\w)cuối cùng(?!\w)"))
+    if len(hits) >= 2 or has_list_triad:
+        return "instructional_list"
+    return "story_metaphor"
+
+
+def detect_theme(sample, text=""):
+    """Classify dominant topic theme from text + sample metadata using word-boundary matching."""
+    if sample and sample.get("theme"):
+        return str(sample["theme"])
+    low = " " + " ".join(re.findall(r"[a-z0-9]+", _fold((text or "") + " " + str((sample or {}).get("source") or "")))) + " "
+    best_theme, best_hits = "general", 0
+    for theme, kws in THEME_KEYWORDS.items():
+        hits = sum(1 for k in kws if f" {' '.join(re.findall(r'[a-z0-9]+', _fold(k)))} " in low)
+        if hits > best_hits:
+            best_theme, best_hits = theme, hits
+    return best_theme
+
+
+def load_approved_pool(all_samples, golden_dir=GOLDEN):
+    """Merge approved entries from index.json and optional research/review-golden/approved/*.md files."""
+    pool = [dict(x) for x in all_samples if x.get("verdict") == "approved"]
+    known_ids = {x["id"] for x in pool}
+    app_dir = Path(golden_dir) / "approved"
+    if app_dir.exists():
+        for f in sorted(app_dir.glob("*.md")):
+            sid = f.stem
+            if sid in known_ids:
+                continue
+            raw = f.read_text(encoding="utf-8")
+            fm = {}
+            if raw.startswith("---") and "\n---" in raw[3:]:
+                head, body = raw[3:].split("\n---", 1)
+                for ln in head.splitlines():
+                    if ":" in ln:
+                        k, v = ln.split(":", 1)
+                        fm[k.strip()] = v.strip().strip('"')
+            else:
+                body = raw
+            pool.append({
+                "id": sid,
+                "verdict": "approved",
+                "channel": fm.get("channel"),
+                "format": fm.get("format"),
+                "theme": fm.get("theme"),
+                "source": str(f.relative_to(P.ROOT)) if P.ROOT in f.resolve().parents else str(f),
+                "_words": body.strip(),
+            })
+    return pool
+
+
+SOUTHERN_MARKERS_RE = re.compile(r"(?<!\w)(?:nha|á|hông|nè|hen|ha|hà|nghen|vô|coi|ghê|đâu có|trời ơi|mắc cười|thiệt)(?!\w)", re.I)
+
+
+def _anchor_craft_bonus(text):
+    """Prefer anchors that demonstrate confirmed Southern spoken voice (>= 2 distinct markers) over minimal legacy scripts."""
+    hits = {m.group(0).lower() for m in SOUTHERN_MARKERS_RE.finditer(unicodedata.normalize("NFC", text or ""))}
+    return 2.5 if len(hits) >= 2 else 0.0
+
+
+def select_anchor_with_meta(all_samples, sample_id, preferred_anchor=None, sample=None, draft_words=None, golden_dir=GOLDEN):
+    """Theme/Format-Matched Anchor Selection (leave-one-out).
+
+    Matches approved scripts by:
+      1. Same channel (`@hi.oneup` vs `@vanhiep.tech`): +10.0
+      2. Same theme (`habit_procrastination` / `memory_study` / `tech_dev`): +5.0
+      3. Same structural format (`story_metaphor` vs `instructional_list`): +2.0
+      4. Anchor spoken-voice craft quality (≥2 Southern spoken markers): +2.5
+      5. Token Jaccard overlap: up to +1.0
+      6. Newer approved script as tie-breaker: +0.5 * (idx / len)
+    Returns `(anchor_id, anchor_words, match_meta)`.
     """
-    approved = [x for x in all_samples if x["verdict"] == "approved" and x["id"] != sample_id]
-    if preferred_anchor:
-        cand = next((x for x in approved if x["id"] == preferred_anchor or x.get("clip") == preferred_anchor), None)
+    pool = [x for x in load_approved_pool(all_samples, golden_dir=golden_dir) if x["id"] != sample_id]
+    if preferred_anchor and preferred_anchor != "auto":
+        cand = next((x for x in pool if x["id"] == preferred_anchor or x.get("clip") == preferred_anchor), None)
         if cand:
             w = words_for(cand)
             if w:
-                return cand["id"], w
-    for cand in reversed(approved):
+                return cand["id"], w, {"reason": "explicit --anchor", "anchor_channel": detect_channel(cand, w),
+                                       "anchor_format": detect_format(cand, w), "anchor_theme": detect_theme(cand, w)}
+
+    if sample is None:
+        sample = next((x for x in all_samples if x["id"] == sample_id), {"id": sample_id})
+    d_words = draft_words if draft_words is not None else (words_for(sample) if sample.get("verdict") else "")
+    d_ch = detect_channel(sample, d_words)
+    d_fmt = detect_format(sample, d_words)
+    d_thm = detect_theme(sample, d_words)
+    d_toks = _content_tokens(d_words)
+
+    best = None
+    n_pool = max(len(pool), 1)
+    for idx, cand in enumerate(pool):
         w = words_for(cand)
-        if w:
-            return cand["id"], w
-    return None, None
+        if not w:
+            continue
+        c_ch = detect_channel(cand, w)
+        c_fmt = detect_format(cand, w)
+        c_thm = detect_theme(cand, w)
+        c_toks = _content_tokens(w)
+        jac = (len(d_toks & c_toks) / max(len(d_toks | c_toks), 1)) if (d_toks and c_toks) else 0.0
+        craft = _anchor_craft_bonus(w)
+
+        score = 0.0
+        reasons = []
+        if c_ch == d_ch:
+            score += 10.0
+            reasons.append(f"kênh {c_ch}")
+        if c_thm == d_thm and d_thm != "general":
+            score += 5.0
+            reasons.append(f"chủ đề {c_thm}")
+        if c_fmt == d_fmt:
+            score += 2.0
+            reasons.append(f"format {c_fmt}")
+        if craft > 0:
+            score += craft
+        score += 1.0 * jac + 0.5 * (idx / n_pool)
+        meta = {
+            "channel": d_ch,
+            "format": d_fmt,
+            "theme": d_thm,
+            "anchor_channel": c_ch,
+            "anchor_format": c_fmt,
+            "anchor_theme": c_thm,
+            "jaccard": round(jac, 3),
+            "craft_bonus": craft,
+            "score": round(score, 3),
+            "reason": " + ".join(reasons) if reasons else "fallback mới nhất",
+        }
+        if best is None or score > best[0]:
+            best = (score, cand["id"], w, meta)
+
+    if not best:
+        return None, None, {}
+    return best[1], best[2], best[3]
+
+
+def resolve_anchor(all_samples, sample_id, preferred_anchor=None, sample=None, draft_words=None):
+    """Backward-compatible wrapper returning `(anchor_id, anchor_words)` via Theme/Format-Matched Selection."""
+    aid, aw, _ = select_anchor_with_meta(
+        all_samples, sample_id, preferred_anchor=preferred_anchor, sample=sample, draft_words=draft_words
+    )
+    return aid, aw
 
 
 def leave_one_out(tmp, sid):
@@ -166,11 +374,14 @@ def run_one(s, model, prompt_tpl, mode="pairwise", anchor_pref=None, all_samples
     words = words_for(s)
     if not words:
         return {"id": s["id"], "verdict_hiep": s["verdict"], "skipped": "no words"}
-    anchor_id, anchor_words = (None, None)
+    anchor_id, anchor_words, anchor_meta = (None, None, {})
     if mode == "pairwise":
-        anchor_id, anchor_words = resolve_anchor(all_samples or samples(), s["id"], anchor_pref)
+        anchor_id, anchor_words, anchor_meta = select_anchor_with_meta(
+            all_samples or samples(), s["id"], preferred_anchor=anchor_pref, sample=s, draft_words=words
+        )
         if not anchor_words:
             return {"id": s["id"], "verdict_hiep": s["verdict"], "error": "no approved anchor available"}
+    blindspots = load_feedback_blindspots()
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
         draft = tmp / "draft.md"
@@ -184,11 +395,13 @@ def run_one(s, model, prompt_tpl, mode="pairwise", anchor_pref=None, all_samples
             .replace("{DRAFT}", str(draft))
             .replace("{ANCHOR}", str(anchor_file) if anchor_words else "(không có)")
             .replace("{ANCHOR_ID}", anchor_id or "(none)")
+            .replace("{ANCHOR_MATCH}", anchor_meta.get("reason") or "mặc định")
+            .replace("{FEEDBACK_BLINDSPOTS}", blindspots)
             .replace("{CLIP_DIR}", str(tmp / "noclip"))
             .replace("{GOLDEN}", str(g))
             + f"\n\n(Chế độ đo: không mở thư mục research/review-golden/ gốc và không mở content/archive/{s.get('clip', '')}/; chỉ đọc {draft}"
             + (f", {anchor_file}" if anchor_words else "")
-            + " và tối đa resources/feedback.md.)"
+            + ".)"
         )
         out, text, stderr, used_model = _invoke_reviewer(prompt, tmp, model, engine=engine)
     if LIMIT_RE.search(text or stderr or "") and "VERDICT" not in (text or ""):
@@ -205,6 +418,7 @@ def run_one(s, model, prompt_tpl, mode="pairwise", anchor_pref=None, all_samples
         "engine": engine,
         "model": used_model,
         "anchor_id": anchor_id,
+        "anchor_match": anchor_meta,
         "verdict_reviewer": v,
         "verdict_llm": (b or {}).get("verdict_llm"),
         "pairwise": (b or {}).get("pairwise"),
@@ -227,19 +441,23 @@ def metrics(rows, mode="pairwise"):
     caught = sum(1 for x in rej if x["ok"])
     passed = sum(1 for x in app if x["ok"])
     pct = lambda xs: round(100 * sum(1 for x in xs if x["ok"]) / len(xs), 1) if xs else None
+    rc_pct = pct(rej)
+    ap_pct = pct(app)
+    bal_acc = round((rc_pct + ap_pct) / 2.0, 1) if (rc_pct is not None and ap_pct is not None) else None
     m = {
         "mode": mode,
         "rejected_caught": f"{caught}/{len(rej)}",
         "approved_passed": f"{passed}/{len(app)}",
-        "rejected_caught_pct": pct(rej),
+        "rejected_caught_pct": rc_pct,
         "rejected_n": len(rej),
-        "approved_passed_pct": pct(app),
+        "approved_passed_pct": ap_pct,
         "approved_n": len(app),
+        "balanced_accuracy_pct": bal_acc,
         "no_verdict": sum(1 for r in rows if not r.get("skipped") and not r.get("verdict_reviewer") and not r.get("error")),
         "errors": sum(1 for r in rows if r.get("error")),
         "skipped": sum(1 for r in rows if r.get("skipped")),
         "target": "rejected ≥ 14/15, approved all",
-        "verdict_source": "review_tiers (pairwise A/B + H1–H4)" if mode == "pairwise" else "review_tiers (DL-074)",
+        "verdict_source": "review_tiers (pairwise A/B theme-matched + H1–H4)" if mode == "pairwise" else "review_tiers (DL-074)",
         "cost_usd": round(sum(r.get("cost_usd") or 0 for r in rows), 4),
     }
     if mode == "pairwise":
@@ -270,8 +488,12 @@ def main():
     if "--dry-run" in a:
         for s in ss:
             w = words_for(s)
-            anc = resolve_anchor(all_ss, s["id"], anchor_pref)[0] if (mode == "pairwise" and w) else "-"
-            print(f"{s['id']:14} {s['verdict']:9} anchor={anc:6} {'words ' + str(len(w.splitlines())) + ' beats' if w else 'SKIP (no words)'}")
+            if mode == "pairwise" and w:
+                anc, _, meta = select_anchor_with_meta(all_ss, s["id"], preferred_anchor=anchor_pref, sample=s, draft_words=w)
+                why = meta.get("reason", "")
+            else:
+                anc, why = "-", ""
+            print(f"{s['id']:14} {s['verdict']:9} anchor={anc:6} ({why:42}) {'words ' + str(len(w.splitlines())) + ' beats' if w else 'SKIP (no words)'}")
         print(f"{sum(1 for s in ss if words_for(s))} with words / {len(ss)} (mode={mode}, engine={engine})")
         return 0
     tpl = load_prompt()
@@ -300,7 +522,7 @@ def main():
         "engine": engine,
         "model": next((r.get("model") for r in ran_rows if r.get("model")), model),
         "mode": mode,
-        "anchor": anchor_pref or "auto-latest-approved",
+        "anchor": anchor_pref or "auto-theme-format-matched",
         "prompt": str(PROMPT_MD.relative_to(P.ROOT)),
         "metrics": m,
         "rows": rows,

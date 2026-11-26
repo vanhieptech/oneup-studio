@@ -5,7 +5,7 @@ description: >-
   to the creator for approval: remove AI-writing tells with the vendored humanizer
   skill, adapt to spoken Vietnamese, and match the creator's voice profile, without
   changing any fact, number or citation.
-version: "1.2.0"
+version: "1.3.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -17,21 +17,32 @@ metadata:
 # Script polish (VI voice)
 
 ## Purpose
-Polish a fact-checked short-form script into spoken Vietnamese that matches the creator voice profile, removing AI-writing tells without changing facts.
+Polish a fact-checked short-form script into spoken Vietnamese that matches the creator voice profile, removing both AI-writing vocabulary and structural AI-tells without changing facts.
 
 
 ## Inputs
 - Draft script (VI voice lines + EN captions).
 - `content/voice-profile.md`: the creator's voice. Its samples override generic rules.
 - `resources/feedback.md`: what Hiệp rejected (quotes) and what he accepts (approved scripts = floor).
-- `resources/vn-spoken/`: `connectors.tsv` (spoken connectors to use), `ai-blacklist.tsv` (AI / translated-text tells to remove), `bookish.tsv` (book word → spoken word), `phrase-bank.md`.
+- `resources/vn-spoken/`: `connectors.tsv` (spoken connectors to use), `ai-blacklist.tsv` (AI / translated-text tells to remove), `style-pairs.md` (14 real AI-draft → Hiệp-approved few-shot transformations), `cadence-patterns.tsv` (14 VN creator spoken rhythm patterns), `bookish.tsv` (book word → spoken word), `phrase-bank.md`.
 - Optional **voice memo transcript** (`media/voice-memos/<name>.txt`, Voice-First Input, `resources/vn-spoken/voice-first.md`).
 - `skills/humanizer/SKILL.md`: the pattern list. Apply it in "embedded mode".
 
 ## Two tiers — Hard-Gate + Pairwise A/B — what this pass may and may not "fix"
 - **Tier 1, hard fails (`H1–H4`, sole hard blocker; never introduce, always fix):** H1 fact without source / beyond the source · H2 total ≥ 300 s (L-099) · H3 wrong brand/format for the channel (@hi.oneup DL-027; @vanhiep.tech its AGENTS.md) or mocking the viewer (L-053) · H4 broken draft/spec structure.
-- **Tier 2, Pairwise A/B** (replaces absolute ≥85 score threshold): compared side-by-side against the newest approved anchor clip on 4 relative axes (`Hook & Giữ chân`, `Mạch truyện & Chuyển ý`, `Văn nói tự nhiên VN`, `Độ đắt của ẩn dụ/payoff`). Also run `python3 pipeline/scripts/audio-precheck.py <draft.md>` to check spoken VN rhythm (2.6–3.4 syl/s, ≤22 syl/breath, no repeated consecutive beat openers).
+- **Tier 2, Pairwise A/B** (replaces absolute ≥85 score threshold): compared side-by-side against the theme/format-matched approved anchor clip on 4 relative axes (`Hook & Giữ chân`, `Mạch truyện & Chuyển ý`, `Văn nói tự nhiên VN`, `Độ đắt của ẩn dụ/payoff`). Also run `python3 pipeline/scripts/audio-precheck.py <draft.md>` to check spoken VN rhythm (2.6–3.4 syl/s, ≤22 syl/breath, no repeated consecutive beat openers).
 - **Soft warnings are not errors.** Do NOT "correct" natural spoken variants that match the voice profile: particles (nè, á, hông, nghen), spoken connectors («thật ra thì», «nhưng mà khoan», «nghe quen không», «nói thẳng ra là», «thế mới có chuyện»), short punchy sentences, rhetorical questions that hold attention. Polishing these into tidy written Vietnamese is exactly what Hiệp rejects (L-105, L-106).
+
+## Mandatory Quality Bar: Sensory/Action Anchor + 3-Pass Rewrite
+Every script polished with this skill MUST satisfy two hard craft standards before leaving the pass:
+1. **Sensory/Action Anchor (≥ 1 per beat):** Every beat must contain at least **1 concrete physical action, visible object, number, or everyday time anchor** that the viewer can see/hear in their head (e.g. *gấp sách lại*, *mở file lúc 9 giờ tối*, *dọn đống đồ trên ghế*, *lưu JWT trong localStorage*). Abstract >40-word prose beats with zero sensory/action anchors trigger `⚠ ai-structure` in `check-rules.py` and must be rewritten.
+2. **3-Pass Rewrite (do not merge into one vague pass):**
+   - **Pass 1 — Mạch giữ chân (Retention & Structural AI-Tells):** Verify linear cause-effect flow, apply spoken rhythm templates from `resources/vn-spoken/cadence-patterns.tsv`, inject ≥ 1 Sensory/Action Anchor per beat, and eliminate all **Structural AI-Tells** (`check-rules.py --ai-structure` / `--draft` → `⚠ ai-structure`):
+     * Parallel symmetry clichés: «không chỉ … mà còn …», «không những … mà còn …», «vừa … vừa … giúp bạn …».
+     * Preachy / book-summary beat openers: «bí quyết là», «điều quan trọng nhất là», «chìa khóa nằm ở», «điểm mấu chốt là».
+     * Low-concreteness beats (> 40 words with no physical action verb, concrete number, or everyday time anchor).
+   - **Pass 2 — Khẩu ngữ hóa (Spoken VI via `connectors.tsv` + `style-pairs.md`):** Replace all written/translated phrasing and `ai-blacklist.tsv` phrases using natural Southern spoken Vietnamese guided by `resources/vn-spoken/connectors.tsv`, `bookish.tsv`, and the 3 closest examples from `resources/vn-spoken/style-pairs.md`. Keep Fact lock intact and keep Voice-First ≥ 80% when a memo exists.
+   - **Pass 3 — Cắt 15% từ thừa & Audio-Back QA:** Trim **at least 15% filler words** (hedging, empty adverbs, redundant restatements, inflated transitions) without losing meaning or facts, then run `python3 pipeline/scripts/audio-precheck.py <draft.md>` (verify 2.6–3.4 syl/s target, zero >22-syllable unbroken breath spans, zero consecutive repeated beat openers) and `python3 pipeline/scripts/check-rules.py --draft <draft.md>`.
 
 ## Steps
 1. **Fact lock.** List every fact, number, study, date and citation in the draft. These must appear unchanged in the output.

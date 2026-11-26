@@ -23,7 +23,18 @@ def test_cut_accuracy_uses_part_offsets():
 def test_render_md_has_template_sections():
     md = td.render_md("c1", DATA, {"date": "2026-11-26", "video": "v.mp4", "cli": "0.71.1", "model": "m"})
     for h in ("## Khối 0", "## Khối 1 — Hook Mechanics", "## Khối 2 — Story Arc & Beat Map", "## Khối 3 — Winning Points",
-              "## Khối 4 — Algorithmic Triggers", "## Khối 5 — Reusable Story Arc", "## Khối 6 — Dual-Channel Angle"): assert h in md
+              "## Khối 4 — Algorithmic Triggers", "## Khối 5 — Reusable Story Arc", "## Khối 6 — Dual-Channel Angle",
+              "## Khối 7 — Craft & Voice Transfer"): assert h in md
+
+def test_push_audience_pains_appends_and_deduplicates():
+    import tempfile, pathlib
+    d = pathlib.Path(tempfile.mkdtemp())
+    bank = d / "audience-pain-bank.md"
+    doc = dict(DATA, craft_transfer={"audience_pains": ["Sao cứ mở sách ra là buồn ngủ liền vậy?"]})
+    n1 = td.push_audience_pains("clip-x", doc, "2026-11-26", bank_path=bank)
+    n2 = td.push_audience_pains("clip-x", doc, "2026-11-26", bank_path=bank)
+    assert n1 == 1 and n2 == 0
+    assert "Sao cứ mở sách ra là buồn ngủ liền vậy?" in bank.read_text(encoding="utf-8")
 
 def test_normalize_maps_old_json():
     d = td.normalize(DATA)

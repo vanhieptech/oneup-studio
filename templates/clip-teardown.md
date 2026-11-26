@@ -6,13 +6,13 @@ type: template
 status: ready
 updated: 2026-11-26
 tags: [template, trend, teardown, retention, viral-dna, arc]
-source: "oneup-studio: 6 khối Viral DNA (yêu cầu Hiệp 26/11) thay khung 11 mục; prompt docs/prompts/gemini-teardown.md; renderer pipeline/scripts/teardown.py"
+source: "oneup-studio: 7 khối Viral DNA + Craft Transfer (nâng cấp từ 6 khối 26/11); prompt docs/prompts/gemini-teardown.md; renderer pipeline/scripts/teardown.py"
 ---
 # Viral DNA Card: <tên ngắn> (`<creator>-<tiktok id>`)
 
-Một file mỗi clip: `research/trends/<YYYY-MM-DD>/teardowns/<id>.md` + `<id>.json` (cùng cấu trúc). `teardown.py` sinh file này; Claude chỉ bổ sung chỗ ghi «—». Nguồn mỗi ý: **[Apify]** số liệu / phụ đề / comment, **[agy]** model xem + nghe video (Antigravity CLI, `teardown.py`), **[Claude]** tổng hợp. Mỗi ý ghi `quan sát` (có mốc giờ) hoặc `suy đoán`. Không chép câu, hình, âm thanh vào clip của mình; chỉ mượn khung trừu tượng.
+Một file mỗi clip: `research/trends/<YYYY-MM-DD>/teardowns/<id>.md` + `<id>.json` (cùng cấu trúc). `teardown.py` sinh file này; Claude chỉ bổ sung chỗ ghi «—». Nguồn mỗi ý: **[Apify / yt-dlp]** số liệu / phụ đề / comment, **[agy]** model xem + nghe video (Antigravity CLI, `teardown.py`), **[Claude]** tổng hợp. Mỗi ý ghi `quan sát` (có mốc giờ) hoặc `suy đoán`. Không chép câu, hình, âm thanh vào clip của mình; chỉ mượn khung trừu tượng và kỹ thuật kể chuyện.
 
-Chỉ teardown clip đạt chuẩn outlier của radar (`pipeline/scripts/trend-streams.py radar`: view ÷ follower ≥ 3, hoặc comment/share tăng đột biến trong 24–72 giờ) hoặc clip Hiệp ném vào inbox.
+Chỉ teardown clip đạt chuẩn outlier của radar (`pipeline/scripts/radar-fetch.py` / `trend-streams.py radar`: view ÷ follower ≥ 3, hoặc view ÷ median ≥ 3, hoặc comment/share tăng đột biến trong 24–72 giờ) hoặc clip Hiệp ném vào inbox. Ghi rõ `role` kênh (`direct_niche` · `cross_niche_craft` · `anti_pattern`).
 
 ## Khối 0 — Số liệu [Apify]
 | link | creator | follower | view | view/follower | comment | share | độ dài | ngày đăng |
@@ -49,6 +49,12 @@ Khung xương trống, mọi nội dung riêng thay bằng `[...]`, dùng đư�
 - **@hi.oneup** (comic + motion, 120–180 s): ý · hook nháp · độ dài.
 - **@vanhiep.tech** (talking-head + overlay, 45–90 s): ý · hook nháp · độ dài.
 - Tự đẩy vào `content/idea-bank.md` › Từ teardown (ARC), kèm mã `ARC-NNN` và link file này.
+
+## Khối 7 — Craft & Voice Transfer (Kỹ thuật ngôn ngữ & Nhịp cắt học được) [agy + comment]
+- **Ẩn dụ chuyển hóa khái niệm khó → đời thường:** cách tác giả biến khái niệm trừu tượng/kỹ thuật thành hình ảnh mắt thấy tai nghe.
+- **Cách ngắt câu & nhịp nói:** độ dài câu, cách dùng câu ngắn/dừng nhịp/từ nối để giữ người xem không tụt chú ý.
+- **Kỹ thuật giữ nhịp mỗi 3–5s:** visual interrupt, đổi góc/overlay/đạo cụ hoặc micro-payoff mỗi 3–5 giây (áp sang comic+motion hoặc `ov-*`/`cu-*`).
+- **Câu hỏi / nỗi đau thật từ comment khán giả:** cụm câu hỏi/nỗi đau ẩn danh tự động đẩy sang `resources/vn-spoken/audience-pain-bank.md`.
 
 ## Vì sao nó chạy [agy / Claude] (`suy đoán`, mỗi ý chỉ vào bằng chứng ở Khối 1–4)
 1. …

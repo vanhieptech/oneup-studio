@@ -111,7 +111,7 @@ def run_gemini(video, model):
     return out
 
 def normalize(data):
-    """Map an old teardown JSON (spine / pacing / formula, before the 6-block prompt) onto the 6 blocks. Idempotent."""
+    """Map an old teardown JSON (spine / pacing / formula, before the 7-block prompt) onto the 7 blocks. Idempotent."""
     d = dict(data)
     if not d.get("beats") and d.get("spine"):
         d["beats"] = [{"from": x.get("from"), "to": x.get("to"), "seconds": (lambda a, b: round(b - a, 1) if a is not None and b is not None else None)(mmss(x.get("from")), mmss(x.get("to"))),
@@ -129,17 +129,68 @@ def normalize(data):
     arc["beats"] = [{"role": b.get("role"), "function": b.get("retention_function"), "seconds": b.get("seconds"), "transition": b.get("transition")}
                     for b in d.get("beats", [])]
     d.setdefault("angles", {})
+    ct = d.setdefault("craft_transfer", {})
+    if isinstance(ct, dict):
+        ct.setdefault("metaphor_transfer", "")
+        ct.setdefault("sentence_rhythm", "")
+        ct.setdefault("pacing_3_5s", "")
+        ct.setdefault("audience_pains", [])
     return d
 
 def find_clip(source):
-    """Khối 0 metadata: the clip's row in research/trends/*/apify/clips.json (by TikTok id or URL), newest first."""
-    vid = re.search(r"/video/(\d+)", source or "") or re.search(r"(\d{15,})", source or "")
-    for f in sorted(P.ROOT.glob("research/trends/20??-??-??/apify/clips.json"), reverse=True):
-        try: doc = json.loads(f.read_text(encoding="utf-8"))
-        except json.JSONDecodeError: continue
-        for c in (doc if isinstance(doc, list) else doc.get("clips", [])):
-            if (vid and vid.group(1) in (c.get("url") or "")) or (source and source == c.get("url")): return c
+    """Khối 0 metadata: the clip's row in research/trends/*/{apify/clips.json, radar-raw.json} (by TikTok/YT id or URL), newest first."""
+    vid = re.search(r"/video/(\d+)", source or "") or re.search(r"/shorts/([A-Za-z0-9_-]{8,})", source or "") or re.search(r"(\d{15,})", source or "")
+    for pat in ("research/trends/20??-??-??/apify/clips.json", "research/trends/20??-??-??/radar-raw.json"):
+        for f in sorted(P.ROOT.glob(pat), reverse=True):
+            try: doc = json.loads(f.read_text(encoding="utf-8"))
+            except json.JSONDecodeError: continue
+            for c in (doc if isinstance(doc, list) else doc.get("clips", [])):
+                if (vid and vid.group(1) in (c.get("url") or "")) or (source and source == c.get("url")): return c
     return None
+
+PAIN_BANK = P.ROOT / "resources/vn-spoken/audience-pain-bank.md"
+
+def push_audience_pains(cid, data, date, bank_path=None):
+    """Append deduplicated audience questions/pains from Block 7 / top_comments into resources/vn-spoken/audience-pain-bank.md."""
+    p = Path(bank_path or PAIN_BANK)
+    ct = data.get("craft_transfer") if isinstance(data.get("craft_transfer"), dict) else {}
+    ap = data.get("apify") if isinstance(data.get("apify"), dict) else {}
+    raw_pains = []
+    for x in (ct.get("audience_pains") or []):
+        if isinstance(x, str) and x.strip():
+            raw_pains.append(x.strip())
+    for cm in (ap.get("top_comments") or [])[:5]:
+        t = cm.get("text", "").strip() if isinstance(cm, dict) else str(cm).strip()
+        if len(t) >= 8:
+            raw_pains.append(t)
+    if not raw_pains:
+        return 0
+    if not p.exists():
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(
+            f"---\ntitle: \"Kho Nỗi Đau & Câu Hỏi Khán Giả Thật (Audience Pain Bank)\"\ndate: {date}\n"
+            f"id: resources.vn-spoken.audience-pain-bank\ntype: resource\nstatus: ready\nupdated: {date}\n"
+            f"tags: [audience, pain-bank, comments, vn-spoken, teardown]\n"
+            f"source: \"pipeline/scripts/teardown.py\"\n---\n# Kho Nỗi Đau & Câu Hỏi Khán Giả Thật\n\n"
+            f"## Bảng nỗi đau & câu hỏi từ comment\n\n"
+            f"| ngày | nguồn teardown / video | chủ đề | câu hỏi / nỗi đau khán giả (ẩn danh) | ghi chú dùng cho hook |\n"
+            f"|---|---|---|---|---|\n",
+            encoding="utf-8",
+        )
+    existing = p.read_text(encoding="utf-8")
+    existing_low = existing.lower()
+    topic = ", ".join((ap.get("channel_niche") or [])[:2]) or (data.get("arc") or {}).get("name") or "chung"
+    topic = topic.replace("|", "/").strip()
+    added_lines = []
+    for pain in raw_pains:
+        clean = re.sub(r"\s+", " ", pain).replace("|", "/").strip(" «»\"")
+        if len(clean) < 8 or clean.lower() in existing_low:
+            continue
+        existing_low += "\n" + clean.lower()
+        added_lines.append(f"| {date} | {cid} | {topic} | «{clean[:220]}» | Tự động trích từ Khối 7 / comment |")
+    if added_lines:
+        p.write_text(existing.rstrip("\n") + "\n" + "\n".join(added_lines) + "\n", encoding="utf-8")
+    return len(added_lines)
 
 def _v(x, k="text"):
     return (x or {}).get(k) if isinstance(x, dict) else x
@@ -182,12 +233,19 @@ def render_md(cid, data, meta):
         x = ang.get(ch) or {}
         L.append(f"- **{lab}:** {x.get('idea') or '— (chưa có: teardown cũ, Claude bổ sung hoặc chạy lại)'}" + (f" · hook: «{x.get('hook')}» · ~{x.get('length_s')}s" if x.get("idea") else ""))
     if ang.get("_source"): L.append(f"- Nguồn khối: {ang['_source']}")
+    ct = d.get("craft_transfer") if isinstance(d.get("craft_transfer"), dict) else {}
+    pains = ct.get("audience_pains") or []
+    L += ["", "## Khối 7 — Craft & Voice Transfer (Kỹ thuật ngôn ngữ & Nhịp cắt học được)",
+          f"- Ẩn dụ chuyển hóa khái niệm khó → đời thường: {ct.get('metaphor_transfer') or _v(wp.get('best_metaphor')) or '—'}",
+          f"- Cách ngắt câu & nhịp nói: {ct.get('sentence_rhythm') or a.get('speech_pace') or '—'}",
+          f"- Kỹ thuật giữ nhịp mỗi 3–5s: {ct.get('pacing_3_5s') or (str(wp.get('interrupts_per_10s')) + ' ngắt nhịp/10s' if wp.get('interrupts_per_10s') is not None else '—')}",
+          f"- Câu hỏi / nỗi đau khán giả (→ `resources/vn-spoken/audience-pain-bank.md`): {('; '.join(pains[:5]) if pains else '—')}"]
     L += ["", "## Vì sao nó chạy (suy đoán)"] + [f"- {x.get('claim')} ({x.get('evidence')})" for x in d.get("why_it_works", [])]
     if meta.get("accuracy"): L += ["", "## Kiểm độ chính xác mốc cắt (so với timing.json)", f"- {meta['accuracy']}"]
     return "\n".join(L) + "\n"
 
 def finish(cid, data, meta, outd, opt_queue=None, arc=True):
-    """Write JSON + 6-block md, upsert ARC, push angles to idea-bank, rebuild generated tables, close the queue row."""
+    """Write JSON + 7-block md, upsert ARC, push angles to idea-bank, push audience pains, rebuild generated tables, close the queue row."""
     data = normalize(data)
     if data.get("apify") is None: data["apify"] = find_clip(meta.get("source"))
     md_path = Path(outd) / f"{cid}.md"
@@ -200,6 +258,7 @@ def finish(cid, data, meta, outd, opt_queue=None, arc=True):
         if meta["arc"]:
             ARC.push_ideas(meta["arc"], data.get("angles"), rel, meta["date"])
             ARC.render_patterns(); ARC.render_ideas()
+        push_audience_pains(cid, data, meta["date"])
     data["_meta"] = meta
     os.makedirs(outd, exist_ok=True)
     open(os.path.join(outd, f"{cid}.json"), "w", encoding="utf-8").write(json.dumps(data, ensure_ascii=False, indent=1) + "\n")

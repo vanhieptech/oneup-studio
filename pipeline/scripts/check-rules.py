@@ -6,8 +6,9 @@
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
   check-rules.py --review <clip>/archive/script-vN-draft.md   # make-video §4b on a draft: final/review.md verdict + script_hash of the draft words + feedback_seen
-  check-rules.py --bookish draft.md               # L-106 (⚠): words from resources/vn-spoken/bookish.tsv + syllables very rare in speech (vi_50k)
-  check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all 12 draft checks + L-051 + L-053 in one pass
+  check-rules.py --bookish draft.md               # L-106 (⚠): words from resources/vn-spoken/bookish.tsv + ai-blacklist.tsv + syllables very rare in speech (vi_50k)
+  check-rules.py --ai-structure draft.md          # structural AI-tells (⚠ ai-structure): parallel symmetry clichés, preachy beat openers, low-concreteness >40w beats
+  check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all draft checks (incl. --ai-structure) + L-051 + L-053 in one pass
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
   check-rules.py --trend draft.md [more.md]      # L-090 only: trend_id/hook_pattern from research/trends, trend spoken in b01–b02, not saturated, example_evidence
@@ -960,6 +961,71 @@ def check_ai_blacklist_text(where, text):
     for w, pos, alt, src in hits:
         warn("ai-tell", f"{where}: «{w}»{' ở đầu câu' if pos == 'start' else ''} là mùi AI / văn dịch → {alt} ({src}; resources/vn-spoken/ai-blacklist.tsv)")
     return len(hits)
+
+# ---- Cấu trúc AI ngầm (Structural AI-Tells): ⚠ ai-structure (không chặn cứng) ----
+AI_STRUCT_SYMMETRY = [
+    (re.compile(r"(?<!\w)không\s+chỉ\b[^.?!\n]{1,90}\bmà\s+còn(?!\w)", re.I), "cấu trúc đối xứng lặp «không chỉ … mà còn …» → tách thành 2 ý nói tự nhiên"),
+    (re.compile(r"(?<!\w)không\s+những\b[^.?!\n]{1,90}\bmà\s+còn(?!\w)", re.I), "cấu trúc đối xứng lặp «không những … mà còn …» → tách ý đời thường"),
+    (re.compile(r"(?<!\w)vừa\b[^.?!\n]{1,55}\bvừa\b[^.?!\n]{0,55}\b(?:giúp\s+bạn|giúp\s+chúng\s+ta|mang\s+lại|tạo\s+ra)(?!\w)", re.I), "cấu trúc đối xứng lặp «vừa … vừa … giúp bạn …» → đổi sang hành động cụ thể"),
+]
+AI_STRUCT_PREACHY_OPENERS = [
+    (re.compile(r"^(?:(?:nhưng\s+mà|thật\s+ra\s+thì|vậy\s+nên|nên|và|tóm\s+lại|cuối\s+cùng)[,:\s]+)?bí\s+quyết\s+là\b", re.I), "mở đầu beat kiểu thuyết giảng «bí quyết là»"),
+    (re.compile(r"^(?:(?:nhưng\s+mà|thật\s+ra\s+thì|vậy\s+nên|nên|và|tóm\s+lại|cuối\s+cùng)[,:\s]+)?điều\s+quan\s+trọng\s+nhất\s+là\b", re.I), "mở đầu beat kiểu tóm tắt sách «điều quan trọng nhất là»"),
+    (re.compile(r"^(?:(?:nhưng\s+mà|thật\s+ra\s+thì|vậy\s+nên|nên|và|tóm\s+lại|cuối\s+cùng)[,:\s]+)?chìa\s+kh(?:óa|oá)\s+nằm\s+ở\b", re.I), "mở đầu beat kiểu tóm tắt sách «chìa khóa nằm ở»"),
+    (re.compile(r"^(?:(?:nhưng\s+mà|thật\s+ra\s+thì|vậy\s+nên|nên|và|tóm\s+lại|cuối\s+cùng)[,:\s]+)?điểm\s+mấu\s+chốt\s+là\b", re.I), "mở đầu beat kiểu thuyết giảng «điểm mấu chốt là»"),
+    (re.compile(r"^(?:(?:nhưng\s+mà|thật\s+ra\s+thì|vậy\s+nên|nên|và|tóm\s+lại|cuối\s+cùng)[,:\s]+)?bài\s+học\s+rút\s+ra\s+là\b", re.I), "mở đầu beat kiểu tóm tắt sách «bài học rút ra là»"),
+]
+AI_STRUCT_ACTION_RE = re.compile(
+    r"(?<!\w)(?:mở|gấp|đóng|viết|gõ|lướt|quẹt|cầm|ngồi|đứng|chạy|đi\s+bộ|xỏ\s+giày|nhìn|nghe|kể|lau|dọn|đổ|úp|liếc|chấm|gạch|xo[aá]|nhấn|bấm|kéo|cuộn|tắt|bật|hít\s+đất|thở|uống|ăn|rửa|đánh\s+răng|nằm|dậy|chống\s+tay|lôi|nhổ|khoanh|cắt|bẻ|chụp|quay|dán|đặt|bỏ\s+cuộc|xếp|lật|soi|quăng|ném|nhấc|gãi\s+đầu|gật|trượt|chạm|vẽ|ghi\s+ra|lấy\s+giấy|mở\s+file|mở\s+sách|gập\s+laptop|đọc\s+lại|tự\s+kiểm)(?!\w)",
+    re.I,
+)
+AI_STRUCT_NUMBER_RE = re.compile(
+    r"\b\d+(?:[.,]\d+)?\b|(?<!\w)(?:hai|ba|bốn|năm|sáu|bảy|tám|chín|mười|chục|trăm|ngàn|nghìn|triệu|phần\s+trăm|một\s+(?:phút|giây|giờ|tiếng|ngày|tuần|tháng|năm|lần|bước|câu|dòng|trang|chương|đề|trái|cái|tờ|buổi|tối|sáng|bữa|lượt|phát))(?!\w)",
+    re.I,
+)
+AI_STRUCT_TIME_RE = re.compile(
+    r"(?<!\w)(?:sáng\s+(?:nay|mai|dậy|ra|hôm)|tối\s+(?:qua|nay|nào|hôm)|trưa\s+(?:nay|mai)|chiều\s+(?:nay|mai)|nửa\s+đêm|đêm\s+khuya|hôm\s+qua|hôm\s+nay|ngày\s+mai|cuối\s+tuần|bữa\s+(?:sáng|trưa|tối)|giờ\s+(?:sáng|trưa|chiều|tối)|thứ\s+(?:hai|ba|tư|năm|sáu|bảy)|chủ\s+nhật|tuần\s+(?:sau|trước|thứ|đầu)|tháng\s+(?:sau|trước|đầu|thứ)|cả\s+năm|vài\s+(?:phút|giây|hôm|ngày|tuần|tháng)|mấy\s+(?:phút|giờ|hôm|ngày|tuần|tháng)|ngày\s+thứ)(?!\w)",
+    re.I,
+)
+AI_STRUCT_MIN_WORDS_CONCRETE = 40
+
+def check_ai_structure_text(where, text):
+    """Detect hidden structural AI-tells (⚠ ai-structure only, never blocks):
+    1. Parallel symmetry clichés («không chỉ … mà còn …», «vừa … vừa … giúp bạn …»).
+    2. Preachy / book-summary beat openers («bí quyết là», «điều quan trọng nhất là», «chìa khóa nằm ở»).
+    3. Low concreteness density (beat > 40 words without physical action verb, concrete number, or everyday time anchor).
+    """
+    clean = unicodedata.normalize("NFC", _plain(text or "")).strip()
+    if not clean:
+        return 0
+    hits = 0
+    for rx, why in AI_STRUCT_SYMMETRY:
+        m = rx.search(clean)
+        if m:
+            warn("ai-structure", f"{where}: {why}: «{m.group(0)[:80]}»")
+            hits += 1
+    first_sent = re.split(r"[.?!…\n]+", clean, maxsplit=1)[0].strip()
+    for rx, why in AI_STRUCT_PREACHY_OPENERS:
+        if rx.search(first_sent):
+            warn("ai-structure", f"{where}: {why} → bỏ câu dẫn sách vở, vào thẳng hành động/ví dụ («{first_sent[:70]}»)")
+            hits += 1
+            break
+    words = re.findall(r"[0-9a-zA-Zà-ỹÀ-ỸđĐ]+", clean)
+    if len(words) > AI_STRUCT_MIN_WORDS_CONCRETE:
+        has_concrete = bool(AI_STRUCT_ACTION_RE.search(clean) or AI_STRUCT_NUMBER_RE.search(clean) or AI_STRUCT_TIME_RE.search(clean))
+        if not has_concrete:
+            warn("ai-structure", f"{where}: beat dài {len(words)} từ (> {AI_STRUCT_MIN_WORDS_CONCRETE}) nhưng thiếu Sensory/Action Anchor (không có động từ hành động vật lý, con số, hay mốc thời gian đời thường) → thêm hành động mắt thấy tai nghe được")
+            hits += 1
+    return hits
+
+def check_ai_structure_file(path):
+    md = open(path, encoding="utf-8").read()
+    beats = draft_beats(md)
+    items = [(f"{os.path.basename(path)} {lab}", txt) for _, lab, txt in beats] or [(os.path.basename(path), md)]
+    n = sum(check_ai_structure_text(w, x) for w, x in items)
+    if not n:
+        ok("ai-structure", f"{os.path.basename(path)}: không thấy cấu trúc AI ngầm (đối xứng lặp, mở bài thuyết giảng, beat >40 từ thiếu chi tiết cụ thể)")
+    return n
 def check_bookish_text(where, text, rank=None):
     t = _padded_words(text)
     hits = [(w, alt, src) for w, alt, src in _bookish_list() if f" {w} " in t]
@@ -1177,6 +1243,7 @@ def main():
             check_vague_hook_file(f)
             check_story_hook_file(f)
             check_bookish_file(f)
+            check_ai_structure_file(f)
             check_l053_file(f)
             check_l051_file(f)
         return report(outp)
@@ -1192,9 +1259,15 @@ def main():
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
         return report(outp)
-    if a and a[0] == "--bookish":  # L-106 từ sách (⚠)
+    if a and a[0] == "--bookish":  # L-106 từ sách + ai-blacklist + ai-structure (⚠)
         for f in a[1:]:
-            if f != "--out" and f != outp: check_bookish_file(f)
+            if f != "--out" and f != outp:
+                check_bookish_file(f)
+                check_ai_structure_file(f)
+        return report(outp)
+    if a and a[0] == "--ai-structure":  # cấu trúc AI ngầm (⚠ ai-structure)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_ai_structure_file(f)
         return report(outp)
     if a and a[0] in ("--evidence", "--choppy"):  # L-096
         fn = check_evidence_file if a[0] == "--evidence" else check_choppy_file
