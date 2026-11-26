@@ -5,9 +5,10 @@ type: review
 tags: [review, clip-06, gate-1, howtolivebetter-4.12]
 status: draft
 source: "archive/script-v4-draft.md (e0cde74) · HTB book/04 mục 12 (đọc trực tiếp) · Lally et al. 2010 abstract (Wiley, mở được 26/11) · Gardner, Lally & Wardle 2012 BJGP (PMC3505409) · logs/rule-scoring-rubric.md §3"
-verdict: "ĐẠT VỀ ĐIỂM — chờ Hiệp quyết X-A (hook rubric gốc vs L-103–105), X-B (script_hash nháp) và xác nhận chuyện đi bộ (86 theo L-103–105; 75 theo neo A gốc)"
+verdict: "ĐẠT VỀ ĐIỂM — chờ Hiệp quyết X-A (hook rubric gốc vs L-103–105) và xác nhận chuyện đi bộ (86 theo L-103–105; 75 theo neo A gốc)"
 score: 86
-script_hash: "draft-f074d4b82697 (chưa có final/spec.json; check-rules sẽ in hash thật sau khi dựng spec)"
+script_hash: 529042a178c8
+feedback_seen: 4
 ---
 # clip-06 v4 — §4b kiểm claim + chấm điểm
 
@@ -55,7 +56,7 @@ Không có dòng `chặn`. Ví dụ đời thường (đi bộ 15 phút, ngày t
 
 ## 4. Xung đột mở (không tự chọn bên)
 - **X-A — neo hook của rubric vs L-103/L-104/L-105.** Rubric A và lỗi chặn 4 đòi câu 1 có «bạn» + pain + đúng 1 câu hỏi, và trừ 8 nếu hook kể ngôi «mình». L-103–105 (Hiệp 12/11, mới hơn rubric) đòi hook kể chuyện như nói với bạn thân, cho phép ngôi một. v4 theo L-103–105. Chấm theo bên nào thì tổng chênh 11 điểm, và có hay không có lỗi chặn.
-- **X-B — §4b `script_hash` vs luật 08/11 «không dựng gì trước Chốt».** check-rules tính `script_hash` trên `final/spec.json`. Spec chỉ dựng sau Chốt lời, nên ở giai đoạn nháp không có hash thật; khi dựng spec, review này sẽ thành stale và phải chạy §4b lại. Cần quyết định: dựng spec chỉ có chữ trước gate 1, hay cho phép review nháp dùng hash của file .md.
+- **X-B (ĐÃ ĐÓNG d5b24f2, xem mục 6) — §4b `script_hash` vs luật 08/11 «không dựng gì trước Chốt».** check-rules tính `script_hash` trên `final/spec.json`. Spec chỉ dựng sau Chốt lời, nên ở giai đoạn nháp không có hash thật; khi dựng spec, review này sẽ thành stale và phải chạy §4b lại. Cần quyết định: dựng spec chỉ có chữ trước gate 1, hay cho phép review nháp dùng hash của file .md.
 - C-1 (wording credit), C-3 (rule-55 frame 0, tầng spec), C-4 (hashtag, tầng gói đăng): vẫn mở như rubric §6, không ảnh hưởng điểm lời.
 
 ## 5. Sửa đề xuất
@@ -67,3 +68,14 @@ Không có dòng `chặn`. Ví dụ đời thường (đi bộ 15 phút, ngày t
 - b06: «thì tới giờ chưa ai đo» → «thì cuốn sách ghi là chưa ai đo».
 - b03: thêm một chi tiết cho đỡ khô, ví dụ «có người chọn ăn một trái cây sau bữa trưa» (HTB Ghi chú có ví dụ này).
 - b04/b07: bớt khung «điều thứ nhất / chỗ thứ nhất» nếu Hiệp thấy giống liệt kê. Hiệp đã đòi «cấu trúc tuần tự», nên giữ hay bỏ là để Hiệp chọn.
+
+## 6. Trả lời từng góp ý trong `final/feedback.md` (feedback_seen: 4)
+
+| # | Góp ý của Hiệp (nguyên văn) | v4 r1 đáp thế nào |
+|---|---|---|
+| 1 | «Script vẫn xàm thiếu tự nhiên, cả ai nói lý do nghe mới quê tuần .. thấy ngại» | Câu «lý do nghe mới quê» thuộc v3 và không còn ở v4. Theo L-106, mỗi câu chỉ một ý, dùng từ văn nói («về trễ», «xỏ giày», «vô ích»), không chèn câu tự giễu chỉ để tạo giọng. Còn một câu vụng: b04 «Cái làm mình mất cả lộ trình là ý nghĩ đứt rồi thì thôi» (C −2). Chưa ai đọc to thử. |
+| 2 | «Các câu văn vẫn rời rạc không rõ nghĩa k có liên kết không có cấu trúc tuần tự gì rõ ràng» | v4 có bảng khung mạch L-107: chuyện bỏ → hai niềm tin → nghiên cứu kiểm → điều 1 sai → điều 2 sai → giới hạn → sửa đúng hai chỗ → kết. Số thứ tự ở b04/b05/b07 khớp với b02. check-rules còn cảnh báo L-089/L-094 heuristic ở các chỗ chuyển beat, đã chấm tay ở B 13/15. |
+| 3 | «làm lại» | Đã đổi ý tưởng gốc theo L-095: v3 «việc ghét ba năm» được thay bằng v4 «lộ trình 30 ngày, lỡ một ngày là bỏ luôn» (e0cde74). Độ giống hook với v2 là 0,33, chuỗi beat 0,39 (đều dưới ngưỡng). |
+| 4 | «Sửa và chấm lại» | Đã sửa b04/b05/b06 theo mục 5 lượt 1 (5593c26) và chấm lại: 86/100. |
+
+**X-B đã đóng (d5b24f2):** `script_hash` giờ tính trên lời VI đã chuẩn hoá, nên nháp và spec cùng lời sẽ cùng hash. Hash của v4 r1 là `529042a178c8`. Không chấm lại vì lời không đổi.
