@@ -5,6 +5,8 @@
   check-rules.py content/clips/<clip>/ --final    # gate 2: also the rendered MP4 (ffprobe, loudness) + post.md required
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
+  check-rules.py --review <clip>/archive/script-vN-draft.md   # make-video §4b on a draft: final/review.md verdict + script_hash of the draft words + feedback_seen
+  check-rules.py --bookish draft.md               # L-106 (⚠): words from resources/vn-spoken/bookish.tsv + syllables very rare in speech (vi_50k)
   check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all 12 draft checks + L-051 + L-053 in one pass
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
@@ -81,16 +83,33 @@ def lines(spec):
             for l in s["lines"]:
                 yield p, s, l
 
-def script_hash(spec):
-    """Hash of the spoken words (VI text + EN caption of every line, in order): a review is stale once these change."""
+def _spoken_words(texts):
+    """Spoken VI words only, comparable between a draft .md and spec.json: drops voice/emphasis markup and punctuation, keeps tones."""
+    out = []
+    for t in texts:
+        t = unicodedata.normalize("NFC", t or "").lower()
+        t = re.sub(r"\{[^{}:]*:\s*([^{}]*)\}", r"\1", t)   # {nhấn: x} / {kéo: nha} / {nhỏ: …} → content
+        t = re.sub(r"\{[^{}]*\}", " ", t)                  # {ừm} {ngập ngừng} {bank:ừm} → drop
+        out += re.findall(r"[0-9a-zà-ỹđ]+", t.replace("**", " ").replace("|", " "))
+    return " ".join(out)
+
+def _hash12(words):
     import hashlib
-    words = "\n".join(f"{l.get('text', '')}\t{l.get('en', '')}" for _, _, l in lines(spec))
-    return hashlib.sha256(unicodedata.normalize("NFC", words).encode()).hexdigest()[:12]
+    return hashlib.sha256(words.encode()).hexdigest()[:12]
+
+def script_hash(spec):
+    """Hash of the spoken VI words of every line, in order (make-video §4b). Same words in the draft .md give the same hash."""
+    return _hash12(_spoken_words(l.get("text", "") for _, _, l in lines(spec)))
+
+def draft_hash(md):
+    """Same hash computed from a draft (`N. **[bNN]** lời` lines, see draft_beats)."""
+    return _hash12(_spoken_words(t for _, _, t in draft_beats(md)))
 
 REVIEW_VERDICTS = ("ĐẠT VỀ ĐIỂM", "CHƯA ĐẠT", "ĐẠT")  # longest first; make-video §4b
-def check_review(spec, fdir):
-    """make-video §4b: gate 1 needs final/review.md (claim table + rubric score) with verdict ĐẠT for the current script."""
-    rp = os.path.join(fdir, "review.md"); rel = os.path.relpath(rp, REPO); want = script_hash(spec)
+def check_review(spec, fdir, want=None):
+    """make-video §4b: gate 1 needs final/review.md (claim table + rubric score) with verdict ĐẠT for the current words,
+    and every Hiệp note in final/feedback.md handled (feedback_seen)."""
+    rp = os.path.join(fdir, "review.md"); rel = os.path.relpath(rp, REPO); want = want or script_hash(spec)
     if not os.path.exists(rp):
         err("review", f"missing {rel}: run make-video §4b (claim check + rubric score) before gate 1; front-matter needs verdict, score, script_hash: {want}"); return
     txt = open(rp, encoding="utf-8").read(); head = txt.split("\n---", 1)[0] if txt.startswith("---") else ""
@@ -99,8 +118,16 @@ def check_review(spec, fdir):
     verdict = next((x for x in REVIEW_VERDICTS if v.startswith(x)), None)
     if not verdict:
         err("review", f"{rel}: front-matter `verdict:` must start with ĐẠT, ĐẠT VỀ ĐIỂM or CHƯA ĐẠT (got {fm.get('verdict')!r})"); return
-    if fm.get("script_hash") != want:
-        err("review", f"{rel} is stale: script_hash {fm.get('script_hash')!r} ≠ current {want} (VI/EN lines changed) → re-run §4b"); return
+    m = re.search(r"\b[0-9a-f]{12}\b", fm.get("script_hash", ""))
+    if not m or m.group(0) != want:
+        err("review", f"{rel} is stale: script_hash {fm.get('script_hash')!r} ≠ current {want} (spoken VI words changed) → re-run §4b"); return
+    fp = os.path.join(fdir, "feedback.md")
+    if os.path.exists(fp):
+        n = sum(1 for l in open(fp, encoding="utf-8") if re.match(r"^\|\s*20\d\d-", l))
+        try: seen = int(re.findall(r"\d+", fm.get("feedback_seen", ""))[0])
+        except IndexError: seen = -1
+        if seen < n:
+            err("review", f"{rel}: feedback_seen {fm.get('feedback_seen', 'missing')} < {n} notes in {os.path.relpath(fp, REPO)} → review must answer every Hiệp note"); return
     if verdict == "CHƯA ĐẠT": err("review", f"{rel}: verdict CHƯA ĐẠT (score {fm.get('score', '?')}) → fix the quoted lines, re-run §3–§4b, don't send gate 1")
     elif verdict == "ĐẠT VỀ ĐIỂM": warn("review", f"{rel}: ĐẠT VỀ ĐIỂM (score {fm.get('score', '?')}), open conflict for Hiệp to decide: {fm.get('verdict')}")
     else: ok("review", f"{rel}: ĐẠT (score {fm.get('score', '?')}), script_hash matches")
@@ -868,6 +895,46 @@ def check_choppy_file(path):
     (err if r > L096_RATIO else ok)("L-096", f"câu ≤ {L096_SHORT - 1} chữ: {len(short)}/{len(n)} = {r:.0%} (trần {L096_RATIO:.0%})")
     if not pairs and r <= L096_RATIO: ok("L-096", "không có 2 câu cộc liền nhau")
 
+# ---- Từ sách (L-106, kế hoạch 26/11): --bookish <draft.md> — ⚠ chỉ hỗ trợ; đọc to vẫn là cổng thật
+BOOKISH_TSV = os.path.join(REPO, "resources/vn-spoken/bookish.tsv")
+FREQ_TXT = os.path.join(REPO, "resources/vn-dict/vi_50k.txt")
+BOOKISH_RARE_RANK = 20000   # âm tiết ngoài top 20k trong phụ đề phim (hoặc không có) = rất hiếm khi nói
+def _bookish_list():
+    out = []
+    if os.path.exists(BOOKISH_TSV):
+        for l in open(BOOKISH_TSV, encoding="utf-8"):
+            if l.strip() and not l.startswith("#"):
+                c = l.rstrip("\n").split("\t"); out.append((unicodedata.normalize("NFC", c[0]).lower(), c[1] if len(c) > 1 else "", c[2] if len(c) > 2 else ""))
+    return out
+def _freq_rank():
+    if not os.path.exists(FREQ_TXT): return {}
+    r = {}
+    for k, l in enumerate(open(FREQ_TXT, encoding="utf-8"), 1): r.setdefault(unicodedata.normalize("NFC", l.split(" ", 1)[0]), k)
+    return r
+VIET74K = os.path.join(REPO, "resources/vn-dict/Viet74K.txt")
+_SYL = None
+def _viet_syllables():  # chỉ xét âm tiết tiếng Việt có trong Viet74K (bỏ tên riêng như «Lally», «Phillippa»)
+    global _SYL
+    if _SYL is None:
+        _SYL = set()
+        if os.path.exists(VIET74K):
+            for l in open(VIET74K, encoding="utf-8"): _SYL.update(unicodedata.normalize("NFC", l).lower().split())
+    return _SYL
+def check_bookish_text(where, text, rank=None):
+    t = " " + " ".join(re.findall(r"[0-9a-zà-ỹđ]+", unicodedata.normalize("NFC", text).lower())) + " "
+    hits = [(w, alt, src) for w, alt, src in _bookish_list() if f" {w} " in t]
+    for w, alt, src in hits: warn("bookish", f"{where}: «{w}» nghe như văn viết → thử «{alt}» ({src})")
+    rank = _freq_rank() if rank is None else rank
+    syl = _viet_syllables()
+    rare = sorted({x for x in t.split() if rank and not x.isdigit() and (not syl or x in syl) and rank.get(x, 10**9) > BOOKISH_RARE_RANK})
+    if rare: warn("bookish", f"{where}: âm tiết rất hiếm trong lời nói (phụ đề phim): {', '.join(rare[:12])} → đọc to, có ai nói vậy không?")
+    return len(hits) + len(rare)
+def check_bookish_file(path):
+    md = open(path, encoding="utf-8").read(); beats = draft_beats(md); rank = _freq_rank()
+    items = [(f"{os.path.basename(path)} {lab}", txt) for _, lab, txt in beats] or [(os.path.basename(path), md)]
+    n = sum(check_bookish_text(w, x, rank) for w, x in items)
+    if not n: ok("bookish", f"{os.path.basename(path)}: không thấy từ sách trong danh sách, không có âm tiết rất hiếm")
+
 # ---- L-095 (Hiệp 30/10 18:00 «Tệ quá làm lại từ đầu toàn bộ script với sáng tạo hơn»): --fresh <draft.md> [--against f.md…] — bản mới không được giữ hook/khung của bản bị bác cùng clip
 L095_LIMIT = 0.5
 L095_MANUAL = ("manual gate (chặn): 3 ý tưởng một dòng trước khi viết lời; review ghi vì sao ý được chọn khác bản bị bác; "
@@ -1043,6 +1110,14 @@ def check_l051_file(path):
 def main():
     a = sys.argv[1:]
     outp = a[a.index("--out") + 1] if "--out" in a else None
+    if a and a[0] == "--review":  # make-video §4b on a draft (before spec exists): check final/review.md against the draft's words
+        for f in [x for x in a[1:] if x != "--out" and x != outp]:
+            ap = os.path.abspath(f).replace(os.sep, "/"); m = re.search(r"/content/(?:clips|archive)/[^/]+", ap)
+            if not m: err("review", f"{f}: not inside content/clips/<clip>/"); continue
+            md = open(f, encoding="utf-8").read()
+            if not draft_beats(md): err("review", f"{f}: no `N. **[bNN]** lời` beat lines found"); continue
+            check_review(None, ap[:m.end()] + "/final", want=draft_hash(md))
+        return report(outp)
     if a and a[0] == "--draft":  # combined draft gate: all 12 draft checks + L-051 + L-053
         files_ = [f for f in a[1:] if f != "--out" and f != outp]
         for f in files_:
@@ -1058,6 +1133,7 @@ def main():
             check_clarity_file(f)
             check_vague_hook_file(f)
             check_story_hook_file(f)
+            check_bookish_file(f)
             check_l053_file(f)
             check_l051_file(f)
         return report(outp)
@@ -1072,6 +1148,10 @@ def main():
     if a and a[0] == "--trend":  # L-090 on draft script files (trend từ nghiên cứu đã lưu phải nằm trong lời hook, không bão hoà, có hook_pattern)
         for f in a[1:]:
             if f != "--out" and f != outp: check_trend_file(f)
+        return report(outp)
+    if a and a[0] == "--bookish":  # L-106 từ sách (⚠)
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_bookish_file(f)
         return report(outp)
     if a and a[0] in ("--evidence", "--choppy"):  # L-096
         fn = check_evidence_file if a[0] == "--evidence" else check_choppy_file

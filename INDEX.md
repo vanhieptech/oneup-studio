@@ -32,6 +32,7 @@ tags: [index, retrieval]
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
 | skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
+| clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
 | content.clips.clip-06-bong-hoa-chua-no.final.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | clip-06 v4 — §4b kiểm claim + chấm điểm |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
@@ -62,7 +63,9 @@ tags: [index, retrieval]
 | docs.plans.trend-routine-prompt-v4 | plan | draft | `docs/plans/trend-routine-prompt-v4.md` | Routine: @hi.oneup trend digest v4 |
 | docs.plans.trend-routine-prompt-v5 | plan | ready | `docs/plans/trend-routine-prompt-v5.md` | Routine: @hi.oneup trend digest v5 |
 | prompt.content-bot | prompt | ready | `docs/prompts/content-bot-prompt.md` | Prompt bot nội dung OneUp (Hiệp gửi) |
+| prompts.gemini-teardown | prompt | ready | `docs/prompts/gemini-teardown.md` | Prompt Gemini teardown |
 | prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
+| research.craft-brief | research | ready | `docs/research/craft-brief.md` | Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm) |
 | research.script-prompt-principles | research | Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7 | `docs/research/script-prompt-principles.md` | Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s |
 | research.scriptwriting-2026-10-15 | research | chờ Hiệp duyệt trước khi viết lại clip-02 | `docs/research/scriptwriting-research-2026-10-15.md` | Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup) |
 | per-video-pipeline | workflow | active | `docs/workflow/per-video-pipeline.md` | Quy trình một video, từ ý tưởng tới sẵn sàng đăng |
@@ -101,6 +104,7 @@ tags: [index, retrieval]
 | research-character-animation | research | draft | `research/character-animation-research-vi.md` | Nhân vật cute, bo tròn, chuyển động liquid: nghiên cứu (13/10/2026) |
 | research.comic-system | research | reference | `research/comic-system-research-vi.md` | Nghiên cứu: hệ thống minh hoạ comic cho clip kể chuyện (Hiệp + Omi) |
 | research.craft.hook-script-study-2026-11-11 | craft-study | draft | `research/craft/hook-script-study-2026-11-11.md` | Học lại hook và mạch script từ video thật (11/11/2026) |
+| explainers.trihoan-thoiquen-hoctap | research | draft | `research/explainers/trihoan-thoiquen-hoctap.md` | Bảng dịch: trì hoãn · thói quen · học nhớ |
 | research.fact-packages.B-hoc1dem-01-2026-10-21 | research | draft | `research/fact-packages/B-hoc1dem-01-2026-10-21.md` | Gói fact: B-hoc1dem-01 (học một đêm cả kỳ), Deep Research, 2026-10-21 |
 | research.fact-packages.clip05-rk2006-exp1-supplement-lock-2026-11-08 | research | draft | `research/fact-packages/clip05-rk2006-exp1-supplement-lock-2026-11-08.md` | Clip05 — supplemental lock RK2006, Experiment 1 |
 | research.fact-packages.clip05-texthip-fact-bridge-2026-11-07 | research | fact-scope-checked-trend-pending-social-research | `research/fact-packages/clip05-texthip-fact-bridge-2026-11-07.md` | Kết luận |
@@ -119,8 +123,31 @@ tags: [index, retrieval]
 | research.anidoodle | reference | ready | `research/references/anidoodle-notes.md` | anidoodle → Remotion doodle draw-on (comic shorts) |
 | research.doodle-audit | audit | draft | `research/references/doodle-audit.md` | Doodle audit — animation cũ vẫn đẹp hơn |
 | research.doodle-style | reference | draft | `research/references/doodle-style-research.md` | Doodle style research — đưa ý tưởng trước, Hiệp chọn mới làm |
+| research.explainer-moves | research | ready | `research/references/explainer-moves.md` | Explainer moves: cách dẫn một ý cho dễ hiểu |
 | research.motion-skills-catalog | reference | ready | `research/references/motion-skills-catalog.md` | Motion skills catalog |
 | research.motionmaxxing | reference | ready | `research/references/motionmaxxing-notes.md` | motionmaxxing → Remotion mapping (comic shorts) |
+| references.tinyfish-tiktok-test | research | ready | `research/references/tinyfish-tiktok-test.md` | TinyFish với TikTok: kết quả thử |
+| review-golden | reference | active | `research/review-golden/README.md` | Bộ mẫu chuẩn review script |
+| "review-golden.r-c05-r114" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r114.md` | clip-05 r11.4: bị Hiệp bác |
+| "review-golden.r-c05-r153" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r153.md` | clip-05 r15.3 S01–S03: bị Hiệp bác |
+| "review-golden.r-c05-r174" | "golden-sample" | "incomplete" | `research/review-golden/rejected/r-c05-r174.md` | clip-05 r17.4: bị Hiệp bác (chưa có lời) |
+| "review-golden.r-c05-r183" | "golden-sample" | "incomplete" | `research/review-golden/rejected/r-c05-r183.md` | clip-05 r18.3: bị Hiệp bác (chưa có lời) |
+| "review-golden.r-c05-r1921" | "golden-sample" | "incomplete" | `research/review-golden/rejected/r-c05-r1921.md` | clip-05 r19.2.1: bị Hiệp bác (chưa có lời) |
+| "review-golden.r-c05-r201" | "golden-sample" | "incomplete" | `research/review-golden/rejected/r-c05-r201.md` | clip-05 r20.1 C1: bị Hiệp bác (chưa có lời) |
+| "review-golden.r-c05-r4" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r4.md` | clip-05 v5 r4: bị Hiệp bác |
+| "review-golden.r-c05-r53b" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r53b.md` | clip-05 v5 r5.3b: bị Hiệp bác |
+| "review-golden.r-c05-r612" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r612.md` | clip-05 r6.12: bị Hiệp bác |
+| "review-golden.r-c05-r65" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r65.md` | clip-05 r6.5: bị Hiệp bác |
+| "review-golden.r-c05-r67b" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r67b.md` | clip-05 r6.7b: bị Hiệp bác |
+| "review-golden.r-c05-r68" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r68.md` | clip-05 r6.8: bị Hiệp bác |
+| "review-golden.r-c05-r82" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r82.md` | clip-05 r8.2: bị Hiệp bác |
+| "review-golden.r-c05-r92" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-r92.md` | clip-05 v9 r9.2: bị Hiệp bác |
+| "review-golden.r-c05-v2" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-v2.md` | clip-05 v2: bị Hiệp bác |
+| "review-golden.r-c05-v4" | "golden-sample" | "active" | `research/review-golden/rejected/r-c05-v4.md` | clip-05 v4 (đã Chốt rồi bị chê): bị Hiệp bác |
+| "review-golden.r-c06-v2" | "golden-sample" | "active" | `research/review-golden/rejected/r-c06-v2.md` | clip-06 v2: bị Hiệp bác |
+| "review-golden.r-c06-v3" | "golden-sample" | "active" | `research/review-golden/rejected/r-c06-v3.md` | clip-06 v3: bị Hiệp bác |
+| "review-golden.r-c06-v3r2" | "golden-sample" | "active" | `research/review-golden/rejected/r-c06-v3r2.md` | clip-06 v3 r2: bị Hiệp bác |
+| "review-golden.r-c06-v3r3" | "golden-sample" | "active" | `research/review-golden/rejected/r-c06-v3r3.md` | clip-06 v3 r3: bị Hiệp bác |
 | research.script-craft-2026-10-20 | script | draft | `research/script-craft-2026-10-20.md` | Nghiên cứu cách viết script TikTok giáo dục (Rule Reviewer, 20/10/2026) |
 | research.script-craft-opencreator-2026-10-20 | research | draft | `research/script-craft-opencreator-2026-10-20.md` | Viết script TikTok — phần bổ sung (OpenCreator) |
 | research.script-writer-prompt | procedure | draft — chờ Rule Reviewer soát, chưa thay templates/script.md | `research/script-writer-prompt.md` | Prompt viết script @hi.oneup |
@@ -210,8 +237,10 @@ tags: [index, retrieval]
 | trends-weekly-2026-W44 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W44.md` | Tổng hợp tuần 2026-W44 (thứ Hai 26/10 → Chủ nhật 01/11) |
 | trends-weekly-2026-W45 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W45.md` | Tổng hợp tuần 2026-W45 (thứ Hai 02/11 → Chủ nhật 08/11) |
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
+| resources.vn-dict.vi50k-source | resource | ready | `resources/vn-dict/vi_50k.SOURCE.md` | Nguồn `vi_50k.txt` |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
 | resources.vn-spoken.phrase-bank | resource | ready | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |
+| resources.vn-spoken.sources | resource | ready | `resources/vn-spoken/sources.md` | Sổ nguồn văn nói và kiến thức |
 | rules-active-checklist | rules | ready | `rules/ACTIVE-CHECKLIST.md` | Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm) |
 | rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026) |
 | skill.humanizer | skill | active | `skills/humanizer/SKILL.md` | humanizer |
@@ -242,6 +271,7 @@ tags: [index, retrieval]
 | skill.script-polish | skill | active | `skills/script-polish/SKILL.md` | script-polish |
 | skill.social-poster | skill | active | `skills/social-poster/SKILL.md` | social-poster |
 | skill.trend-digest | skill | active | `skills/trend-digest/SKILL.md` | trend-digest |
+| template.clip-teardown | template | ready | `templates/clip-teardown.md` | Phân tích clip: <tên ngắn> (`<tiktok id>`) |
 | clip-01.post | post-package | sẵn sàng đăng sau khi Hiệp xác nhận mục [CẦN HIỆP XÁC NHẬN] trong script-final.md | `templates/post-package.md` | Gói đăng TikTok: <clip-NN "<tên>"> |
 | clip-NN.script-final | script | draft | `templates/script.md` | <Clip NN vX: tiêu đề> |
 | video-engine | guide | active | `video-engine/README.md` | video-engine: comic character video từ scene plan (Remotion + React + TS) |

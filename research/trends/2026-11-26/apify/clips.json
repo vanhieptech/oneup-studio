@@ -1,0 +1,756 @@
+{
+ "actor": "clockworks/tiktok-scraper",
+ "run_id": null,
+ "item_count": 10,
+ "fields_coverage": {
+  "url": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "caption": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "author": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "play_count": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "like_count": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "share_count": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "comment_count": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "duration_s": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "music": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "hashtags": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "subtitle_or_transcript": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  },
+  "top_comments": {
+   "present": 10,
+   "of": 10,
+   "pct": 100.0
+  }
+ },
+ "clips": [
+  {
+   "url": "https://www.tiktok.com/@amateurpsychology/video/7710265462361165078",
+   "caption": "Làm sao để bớt lười 🏃‍➡️ #tamlyhoc #amateurpsychologypodcast #learnontiktok #neuroscience ",
+   "author": {
+    "id": "7112851728568026117",
+    "name": "amateurpsychology",
+    "nick": "amateurpsychology",
+    "profile": "https://www.tiktok.com/@amateurpsychology",
+    "fans": 57600
+   },
+   "play_count": 33900,
+   "like_count": 5572,
+   "share_count": 509,
+   "comment_count": 13,
+   "duration_s": 139,
+   "music": {
+    "id": "7710265489930373910",
+    "name": "original sound - amateurpsychology",
+    "author": "amateurpsychology",
+    "original": true
+   },
+   "hashtags": [
+    "tamlyhoc",
+    "amateurpsychologypodcast",
+    "learnontiktok",
+    "neuroscience"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:02.400\nlàm SAO để bớt lười hế lô Xin chào tất cả mọi người\n\n00:00:02.401 --> 00:00:03.001\nmình là thư\n\n00:00:03.002 --> 00:00:04.601\nhiện là nghiên cứu sinh tiến sĩ chuyên ngành tông lý\n\n00:00:04.640 --> 00:00:05.040\ntại anh\n\n00:00:05.041 --> 00:00:05.721\ncùng mình Xin tông lý\n\n00:00:05.722 --> 00:00:07.281\nđể hiểu và tận hưởng một cuộc sống vui vẻ\n\n00:00:07.320 --> 00:00:09.640\nđây là một cái video được làm để hỗ trợ truyền thông\n\n00:00:09.720 --> 00:00:11.760\nCho các em ở trường đại học kinh tế Hồ Chí Minh\n\n00:00:12.000 --> 00:00:13.280\nvới chiến dịch làm teacher Chi\n\n00:00:13.560 --> 00:00:15.040\ntrong quyển sách tư duy nhanh và chậm\n\n00:00:15.160 --> 00:00:16.640\nthì nhà kinh tế học đạt giỏi Nobel\n\n00:00:16.920 --> 00:00:17.800\nDaniel canerman\n\n00:00:18.200 --> 00:00:20.640\nđã thảo luận về 2 hệ thống tư duy của chúng ta\n\n00:00:20.880 --> 00:00:22.560\nthứ nhất đó là hệ thống suy nghĩ tự động\n\n00:00:22.600 --> 00:00:24.040\nkhi chúng ta không cần phải động não\n\n00:00:24.160 --> 00:00:26.040\nbởi vì một cái điều gì đó đã quá quen thuộc\n\n00:00:26.240 --> 00:00:28.040\nví dụ như là việc 1+1=2\n\n00:00:28.200 --> 00:00:29.920\nthứ 2 là hệ thống tư duy có nỗ lực\n\n00:00:30.000 --> 00:00:31.440\nlà cái hệ thống mà sẽ cầm lái\n\n00:00:31.600 --> 00:00:33.840\nkhi mà chúng ta phải làm một cái việc gì đó cần động não\n\n00:00:34.120 --> 00:00:36.560\ncon người được lập trình Theo quy luật công sức tối thiểu\n\n00:00:36.600 --> 00:00:38.160\nhay là the Law of list effort\n\n00:00:38.400 --> 00:00:40.560\nám chỉ việc khi chúng ta phải làm một cái điều gì đó\n\n00:00:40.720 --> 00:00:43.000\nthì chúng ta thường sẽ sử dụng hệ thống tư duy tự động\n\n00:00:43.160 --> 00:00:44.240\nvà không muốn động não\n\n00:00:44.520 --> 00:00:46.640\nđồng thời né tránh những cái việc mà tốn công sức\n\n00:00:46.840 --> 00:00:47.960\nvậy nhưng ngược lại thì chúng\n\n00:00:48.040 --> 00:00:49.320\nta cũng có nghịch lý của công sức\n\n00:00:49.400 --> 00:00:51.320\nhay là the effort Paradox đám\n\n00:00:51.321 --> 00:00:53.601\nchỉ vì khi chúng ta bỏ công Ra làm một cái điều gì đó\n\n00:00:53.800 --> 00:00:55.360\nthì chúng ta sẽ trân trọng cái điều đó hơn\n\n00:00:55.480 --> 00:00:57.080\nmột ví dụ đó là hiệu ứng IKEA\n\n00:00:57.360 --> 00:00:59.680\nkhi mà người ta bỏ công sức Ra để xây dựng bộ bàn ghế\n\n00:00:59.720 --> 00:01:02.680\ntừ IKEA thì người ta sẽ Cho rằng nó chất lượng tốt hơn\n\n00:01:02.800 --> 00:01:04.560\nmặc dù sự thật nó không có hẳn là như vậy\n\n00:01:04.680 --> 00:01:07.200\ncông thức để bớt lười đó là hiểu về 2 cái định luật này\n\n00:01:07.360 --> 00:01:09.320\nthứ nhất đó là chúng ta sẽ có Xu hướng\n\n00:01:09.440 --> 00:01:11.200\nmuốn muốn né tránh những cái việc tốn công\n\n00:01:11.400 --> 00:01:12.920\nnhưng mà một khi chúng ta đã bỏ công sức\n\n00:01:13.000 --> 00:01:15.080\nthì chúng ta sẽ trân trọng cái công sức đó rất là nhiều\n\n00:01:15.200 --> 00:01:17.360\ntiếp Theo là bạn phải thiết kế cái việc mà bạn muốn làm\n\n00:01:17.480 --> 00:01:19.520\nở một cái điểm mà hấp dẫn trên cái than\n\n00:01:19.560 --> 00:01:22.440\nđo công sức không có quá khó đến độ nhìn vô một cái là bạn\n\n00:01:22.520 --> 00:01:23.840\nthấy ngán hông có muốn làm rồi\n\n00:01:23.920 --> 00:01:24.720\nnhưng mà cũng\n\n00:01:24.721 --> 00:01:25.921\nđủ để bỏ công sức\n\n00:01:25.960 --> 00:01:28.120\nkhiến bạn cảm thấy nhập tâm và tìm được sự ý nghĩa\n\n00:01:28.400 --> 00:01:30.840\ncách để có được điểm cân bằng này chính là đặt Ra mục tiêu\n\n00:01:30.880 --> 00:01:32.120\nthông Minh hay là smart goal\n\n00:01:32.520 --> 00:01:35.280\ncụ thể measureable có thể đo lường\n\n00:01:35.480 --> 00:01:36.960\nachievable có thể đạt được\n\n00:01:37.320 --> 00:01:39.840\nrelevant phù hợp với lại mục tiêu dài hạn của bạn\n\n00:01:39.920 --> 00:01:41.760\nvà time base có giới hạn thời gian\n\n00:01:41.880 --> 00:01:43.680\nmột ví dụ của Smart go đó là\n\n00:01:43.681 --> 00:01:46.521\nmình sẽ tập thể dục 3x1 tuần trong vòng một tháng\n\n00:01:46.680 --> 00:01:50.160\nmột lớp lvt một lớp spin class và một buổi chạy bộ\n\n00:01:50.440 --> 00:01:52.680\nđây là một cái mục tiêu mà đạt đủ tiêu chí của năm\n\n00:01:52.720 --> 00:01:53.600\ntiêu chí của Smart girl\n\n00:01:53.800 --> 00:01:55.160\nmột điều khác cũng đã được chứng Minh\n\n00:01:55.240 --> 00:01:56.720\nđó là learn industriousness\n\n00:01:56.960 --> 00:01:58.640\nhay là tính chăm chỉ học được\n\n00:01:58.760 --> 00:02:01.360\nám chỉ việc chăm chỉ không hẳn chỉ là bản tính\n\n00:02:01.520 --> 00:02:03.400\nmà nó cũng là một thứ có thể được rèn luyện\n\n00:02:03.680 --> 00:02:04.520\nnghiên cứu tìm thấy\n\n00:02:04.521 --> 00:02:05.441\nsau khi người tham gia\n\n00:02:05.520 --> 00:02:07.400\nhoàn thành một cái bài tập khó và được thưởng\n\n00:02:07.600 --> 00:02:09.840\nthì họ cũng sẽ có Xu hướng bỏ nhiều công sức Ra\n\n00:02:09.880 --> 00:02:11.280\nlàm một cái bài tập khác sau đó\n\n00:02:11.440 --> 00:02:12.480\ntức là việc nỗ lực\n\n00:02:12.520 --> 00:02:13.240\ncó thể chuyển hóa\n\n00:02:13.241 --> 00:02:15.001\ntừ mặt này sang mặt khác của cuộc sống của bạn\n\n00:02:15.160 --> 00:02:17.400\nnên là mình chúc các bạn sẽ thoát lười thành công\n\n00:02:17.480 --> 00:02:19.360\nvà mình sẽ hẹn các bạn ở video tiếp Theo nha bái bai\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7710265462361165078-vie-VN.vtt"
+    ],
+    "file": "7710265462361165078-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710265462361165078",
+   "create_time": "2026-11-20T14:47:57.000Z",
+   "is_slideshow": false,
+   "outlier": 0.59,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@depcungtram/video/7665217280120196373",
+   "caption": "“Người thoát gầy thành công khuyên người gầy nên bỏ 6 thứ này.”\n\nĐây đều là những điều mình từng mắc phải.\n\n1. Bỏ thói quen thức khuya.\nThức khuya kéo dài khiến cơ thể mệt mỏi, ăn uống thất thường và khó duy trì năng lượng cho ngày hôm sau.\n\n2. Bỏ uống nước đá liên tục.\nMình ưu tiên nước ấm hơn vì cảm thấy bụng dễ chịu, ăn ngon miệng và tiêu hóa cũng thoải mái hơn.\n\n3. Bỏ suy nghĩ “ăn nhiều là sẽ tăng cân”.\nĂn nhiều chỉ là điều kiện cần. Muốn tăng cân bền vững, cơ thể còn cần tiêu hóa, hấp thu và nghỉ ngơi tốt.\n\n4. Bỏ việc bỏ bữa sáng.\nSau một đêm dài, cơ thể cần được nạp năng lượng. Bỏ bữa sáng cũng khiến mình dễ ăn dồn vào các bữa sau.\n\n5. Bỏ căng thẳng và overthinking kéo dài.\nMỗi lần stress, mình ăn kém hơn, ngủ không ngon và cân nặng cũng chững lại.\n\n6. Bỏ ngồi lì cả ngày, ít vận động.\nMột chút vận động nhẹ giúp cơ thể khỏe khoắn hơn, kích thích cảm giác thèm ăn và hỗ trợ duy trì lối sống lành mạnh.\n\n💛 Mình từng nghĩ muốn tăng cân thì phải “thêm” thật nhiều. Nhưng sau này mới hiểu, đôi khi muốn cơ thể thay đổi, điều đầu tiên cần làm lại là “bớt” đi những thói quen đang cản mình. #tangcantunhien #tangcanantoan #depcungtram #duongtyvi #duongtyvisausinh ",
+   "author": {
+    "id": "6526724074151755777",
+    "name": "depcungtram",
+    "nick": "Đẹp cùng Trâm",
+    "profile": "https://www.tiktok.com/@depcungtram",
+    "fans": 33700
+   },
+   "play_count": 989600,
+   "like_count": 56200,
+   "share_count": 6742,
+   "comment_count": 350,
+   "duration_s": 10,
+   "music": {
+    "id": "7618419411029199623",
+    "name": "suara asli - 彦序.(xu)",
+    "author": "7阳 夙胤言生(xu_HUI)",
+    "original": true
+   },
+   "hashtags": [
+    "tangcantunhien",
+    "tangcanantoan",
+    "depcungtram",
+    "duongtyvi",
+    "duongtyvisausinh"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "“Người thoát gầy thành công khuyên người gầy nên bỏ 6 thứ này.”\n\nĐây đều là những điều mình từng mắc phải.\n\n1. Bỏ thói quen thức khuya.\nThức khuya kéo dài khiến cơ thể mệt mỏi, ăn uống thất thường và khó duy trì năng lượng cho ngày hôm sau.\n\n2. Bỏ uống nước đá liên tục.\nMình ưu tiên nước ấm hơn vì cảm thấy bụng dễ chịu, ăn ngon miệng và tiêu hóa cũng thoải mái hơn.\n\n3. Bỏ suy nghĩ “ăn nhiều là sẽ tăng cân”.\nĂn nhiều chỉ là điều kiện cần. Muốn tăng cân bền vững, cơ thể còn cần tiêu hóa, hấp thu và nghỉ ngơi tốt.\n\n4. Bỏ việc bỏ bữa sáng.\nSau một đêm dài, cơ thể cần được nạp năng lượng. Bỏ bữa sáng cũng khiến mình dễ ăn dồn vào các bữa sau.\n\n5. Bỏ căng thẳng và overthinking kéo dài.\nMỗi lần stress, mình ăn kém hơn, ngủ không ngon và cân nặng cũng chững lại.\n\n6. Bỏ ngồi lì cả ngày, ít vận động.\nMột chút vận động nhẹ giúp cơ thể khỏe khoắn hơn, kích thích cảm giác thèm ăn và hỗ trợ duy trì lối sống lành mạnh.\n\n💛 Mình từng nghĩ muốn tăng cân thì phải “thêm” thật nhiều. Nhưng sau này mới hiểu, đôi khi muốn cơ thể thay đổi, điều đầu tiên cần làm lại là “bớt” đi những thói quen đang cản mình. #tangcantunhien #tangcanantoan #depcungtram #duongtyvi #duongtyvisausinh ",
+    "links": []
+   },
+   "top_comments": [
+    {
+     "text": "t sẽ lm ngược lại để thoát béo",
+     "likes": 3019,
+     "author": "user8004120736617"
+    },
+    {
+     "text": "Xin día tăng cân lên đầu 5 với huuhu",
+     "likes": 425,
+     "author": "bubudangiune"
+    },
+    {
+     "text": "43kg mãi không tăng , ai cho tui xin vía coi",
+     "likes": 244,
+     "author": "mom041220"
+    },
+    {
+     "text": "ăn nhiều tăng cân thật mà 💔",
+     "likes": 157,
+     "author": "thyiuoidthg"
+    },
+    {
+     "text": "Hồi đó tui gầy lắm k lên kg luôn í nhưng đẻ xong 1d r mới hiểu là khi trải qua sinh đẻ r thì nó rất dễ lên",
+     "likes": 34,
+     "author": "qmy21"
+    },
+    {
+     "text": "Tui nhả vía mập cho mng 🥲 mng cho tui xin lại vía gầy đi. Cơ địa thở thôi cũng mập omg hic",
+     "likes": 29,
+     "author": "minow777"
+    },
+    {
+     "text": "t có hết lun tr 😔😔😔",
+     "likes": 25,
+     "author": "kthudyeuvcl"
+    },
+    {
+     "text": "39kg tăng lên 46kg nhờ sữa hạt vinamilk ko seeding lun nhaaa",
+     "likes": 20,
+     "author": "truonghann_"
+    },
+    {
+     "text": "E cần thoát béo",
+     "likes": 9,
+     "author": "sophiaa82074"
+    },
+    {
+     "text": "Xin vía tăng cân ạ, gầy khổ lắm. Hay ốm vặt, mông, ngực, mặt hóp. Nhìn lúc nào cũng loe ngoe thiếu sức sống, còn hay ốm vặt nữa😭😭😭😭",
+     "likes": 8,
+     "author": "_qquynhhttrangg_"
+    },
+    {
+     "text": "Có cach naooo bỏ lười k c",
+     "likes": 5,
+     "author": "_username.26.6"
+    },
+    {
+     "text": "1 điều quan trọng nữa là đi dưỡng tỳ đi mấy bà, dưỡng tỳ tăng hấp thu tốt. Uống sữa hạt ngày 3 ly là lên cân nhen😌",
+     "likes": 5,
+     "author": "nanghuongxanh"
+    },
+    {
+     "text": "Ăn nh tăng cân là đúng mà với kinh nghiệm ng ăn 1 thg tăng 4 cân",
+     "likes": 3,
+     "author": "lhnt8"
+    },
+    {
+     "text": "Ls để k thức khuya. Đi ngủ sớm đk ạ. E tắt dt nằm cứ chằn chọc mãi đến 1/2h sáng. E muốn ngủ từ 10h mà cứ đến tận 2h sáng thì lại 8h ms dậy. E con nhỏ",
+     "likes": 3,
+     "author": "khanhnhuminhhoi86"
+    },
+    {
+     "text": "Bh phải đi làm từ 2 3 h sáng thì làm sao để béo ạ 🥹",
+     "likes": 1,
+     "author": "cfunw_x06"
+    },
+    {
+     "text": "Hèn chi ko mập lên nổi😖",
+     "likes": 1,
+     "author": "lan.mnjk_"
+    },
+    {
+     "text": "chỉ em cách tăng cân với mấy chị ơii🥺",
+     "likes": 1,
+     "author": "_ngln.ih_"
+    },
+    {
+     "text": "sao t có hết v😭💔",
+     "likes": 0,
+     "author": "nha_banh_trang_hoc"
+    },
+    {
+     "text": "cho tui hỏi chút có sản phẩm nào giúp tăng v1 ko ạ",
+     "likes": 0,
+     "author": "username376221"
+    },
+    {
+     "text": "Huhu ai cho tui xin vía với ạ. Khổ quá cơ",
+     "likes": 0,
+     "author": "ngoclani_02"
+    }
+   ],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7665217280120196373",
+   "create_time": "2026-07-22T13:00:00.000Z",
+   "is_slideshow": false,
+   "outlier": 29.36,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@gonaox/video/7706333410909785362",
+   "caption": "5 thói quen buổi sáng mà 90% người thành công đều làm.\nNhưng trường học không bao giờ dạy bạn \n\n#gonao #hoctap #phattrienbanthan #tamlyhoc ",
+   "author": {
+    "id": "7411801384426963974",
+    "name": "gonaox",
+    "nick": "GÕ NÃO!",
+    "profile": "https://www.tiktok.com/@gonaox",
+    "fans": 149500
+   },
+   "play_count": 26800,
+   "like_count": 2580,
+   "share_count": 326,
+   "comment_count": 10,
+   "duration_s": 69,
+   "music": {
+    "id": "7706333483740662535",
+    "name": "âm thanh gốc - GÕ NÃO!",
+    "author": "GÕ NÃO!",
+    "original": true
+   },
+   "hashtags": [
+    "gonao",
+    "hoctap",
+    "phattrienbanthan",
+    "tamlyhoc"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.160 --> 00:00:02.720\nnăm thói quen buổi sáng mà 90% người thành công đều làm\n\n00:00:02.920 --> 00:00:04.280\nnhưng trường học không bao giờ dạy bạn\n\n00:00:04.640 --> 00:00:07.120\nxem hết đi vì cái số năm mới là thứ khiến bạn bất ngờ\n\n00:00:07.440 --> 00:00:08.080\nđầu tiên\n\n00:00:08.081 --> 00:00:10.201\nđừng mở điện thoại trong 30 phút đầu sau khi thức dậy\n\n00:00:10.560 --> 00:00:12.000\nnáo bạn lúc đó như tờ giấy trắng\n\n00:00:12.160 --> 00:00:14.280\nvà bạn đang để hàng trăm thông báo vẽ bậy lên đó\n\n00:00:14.600 --> 00:00:16.080\ntrước cả khi bạn kịp nghĩ về ngày mới\n\n00:00:16.240 --> 00:00:18.520\nhãy uống một cốc nước mở cửa sổ hít thở\n\n00:00:18.720 --> 00:00:20.840\nnghe đơn giản nhưng nó đổi cả buổi sáng của bạn\n\n00:00:21.280 --> 00:00:23.440\nthứ 2 đừng dậy và Lao ngay vào việc\n\n00:00:23.560 --> 00:00:25.400\nhãy dành năm phút viết Ra BA việc quan trọng nhất\n\n00:00:25.440 --> 00:00:26.800\ntrong ngày chỉ BA thôi\n\n00:00:27.000 --> 00:00:28.360\nkhi bạn biết rõ mình cần làm gì\n\n00:00:28.560 --> 00:00:30.480\nnão bạn ngừng hoảng loạn và bắt đầu tập trung\n\n00:00:30.920 --> 00:00:33.320\nthứ BA đừng bỏ bữa sáng rồi uống cà phê thay cơm\n\n00:00:33.600 --> 00:00:35.480\ncà phê lúc bụng đói khiến bạn tỉnh giả\n\n00:00:35.600 --> 00:00:37.400\nnhưng run Tay và hụt hơi giữa buổi\n\n00:00:37.600 --> 00:00:38.520\năn một chút gì đó\n\n00:00:38.640 --> 00:00:40.880\ndù chỉ là quả chuối rồi hẵng uống cà phê sau\n\n00:00:41.560 --> 00:00:43.720\nthứ tư đừng kiểm tra email ngay khi ngồi vào bàn\n\n00:00:44.120 --> 00:00:46.080\nhộp thư là việc của người khác không phải của bạn\n\n00:00:46.240 --> 00:00:48.560\nlàm việc quan trọng nhất trước rồi mới mở hộp thư sau\n\n00:00:49.000 --> 00:00:50.560\nthứ năm và đây là điều gây sốc nhất\n\n00:00:50.880 --> 00:00:52.800\nnhiều người nghĩ thành công đến từ những cú nhảy vọt\n\n00:00:52.960 --> 00:00:54.840\nnhưng sự thật là nó đến từ những buổi sáng\n\n00:00:54.841 --> 00:00:55.881\nnhàm chán lặp đi lặp lại\n\n00:00:56.000 --> 00:00:57.920\nngười thành công không làm điều gì phi thường mỗi sáng\n\n00:00:58.080 --> 00:00:59.200\nhọ chỉ làm những điều bình thường\n\n00:00:59.201 --> 00:01:00.481\nmột cách đều đặn đến mức phi thường\n\n00:01:00.880 --> 00:01:02.360\ntóm lại hãy để điện thoại xuống\n\n00:01:02.560 --> 00:01:04.000\nviết BA việc ăn chút gì đó\n\n00:01:04.120 --> 00:01:05.120\nlàm việc quan trọng trước\n\n00:01:05.200 --> 00:01:06.720\nvà kiên trì với những điều nhàm chán\n\n00:01:06.960 --> 00:01:08.400\nbuổi sáng của bạn không cần hoàn hảo\n\n00:01:08.560 --> 00:01:09.720\nnó chỉ cần bắt đầu đúng hướng\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7706333410909785362-vie-VN.vtt"
+    ],
+    "file": "7706333410909785362-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7706333410909785362",
+   "create_time": "2026-11-10T00:59:30.000Z",
+   "is_slideshow": false,
+   "outlier": 0.18,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@mai.trinh.h/video/7710270007145630996",
+   "caption": "14 thói quen khiến mình tệ hơn ở quá khứ ! #maitrinh #thoiquenxau ",
+   "author": {
+    "id": "7273104228171891719",
+    "name": "mai.trinh.h",
+    "nick": "Mai Trinh Hồ",
+    "profile": "https://www.tiktok.com/@mai.trinh.h",
+    "fans": 283900
+   },
+   "play_count": 329700,
+   "like_count": 22100,
+   "share_count": 1801,
+   "comment_count": 107,
+   "duration_s": 289,
+   "music": {
+    "id": "7710270073760451336",
+    "name": "âm thanh gốc - Mai Trinh Hồ",
+    "author": "Mai Trinh Hồ",
+    "original": true
+   },
+   "hashtags": [
+    "maitrinh",
+    "thoiquenxau"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:00.960\nmắc Cho mọi người những cái\n\n00:00:01.000 --> 00:00:02.720\nthói quen đã phá hủy nhan sắc của mình\n\n00:00:02.840 --> 00:00:03.680\ntrong quá khứ mà có\n\n00:00:03.760 --> 00:00:05.160\nthể là các bạn vẫn đang mắc ở những cái này\n\n00:00:05.200 --> 00:00:06.320\nchỉ cần sửa những cái này thôi\n\n00:00:06.360 --> 00:00:06.840\nthì mọi người sẽ\n\n00:00:06.841 --> 00:00:08.761\ntăng hạng nhan sắc đầu tiên đó chính là cắn móng Tay\n\n00:00:08.840 --> 00:00:10.080\nnếu như mọi người không biết thì mai Trinh hùng\n\n00:00:10.120 --> 00:00:10.800\ntrước đây là một người\n\n00:00:10.801 --> 00:00:13.201\ncó một cái hàm răng chín 6 BA không và mình rất tự ti\n\n00:00:13.360 --> 00:00:16.240\ntrong suốt 25 cuộc đời của mình luôn thứ 2 nữa là cái gốc\n\n00:00:16.280 --> 00:00:17.120\nthái dân hào của mình bị lệch\n\n00:00:17.160 --> 00:00:18.120\nthế là mặt của mình nó cũng bị lệch\n\n00:00:18.160 --> 00:00:19.160\nTheo và điều đó xuất phát\n\n00:00:19.200 --> 00:00:19.920\ntừ cái việc là mình\n\n00:00:19.921 --> 00:00:22.601\ncắn móng Tay và cộng thêm một cái thói quen nữa là mình há\n\n00:00:22.760 --> 00:00:24.120\nmiệng khi mà mình ngủ vô là do gen\n\n00:00:24.280 --> 00:00:24.920\nnhưng mà cũng có\n\n00:00:24.921 --> 00:00:26.761\nthể là do cái thói quen của mình ấy nên là mọi người nên\n\n00:00:27.040 --> 00:00:27.440\ncố gắng\n\n00:00:27.441 --> 00:00:29.401\ntập bỏ cái việc cắn móng Tay nhưng mà thực sự lúc đấy\n\n00:00:29.480 --> 00:00:30.920\nTay vừa xấu nhá hoặc là cái răng nó cũng bị\n\n00:00:30.960 --> 00:00:32.840\nvẩu vẩu vẩu vẩu luôn và nó còn kiểu bị lệch nữa\n\n00:00:32.880 --> 00:00:34.120\nấy còn đối với việc đi ngủ thì mọi người có\n\n00:00:34.200 --> 00:00:35.520\nthể là dùng những cái miếng dán miệng\n\n00:00:35.600 --> 00:00:36.680\nlại như thế này để Cho\n\n00:00:36.760 --> 00:00:37.560\nmọi người phải tập thở\n\n00:00:37.561 --> 00:00:40.121\nmũi nhá đừng có thở bằng miệng thứ 2 đó là Tay chống cằm\n\n00:00:40.160 --> 00:00:41.120\nrất nhiều chị em văn phòng\n\n00:00:41.160 --> 00:00:42.880\nhay là các bạn đi học các bạn cứ chống cằm như thế này\n\n00:00:42.920 --> 00:00:43.720\nthì cái việc chống cằm này\n\n00:00:43.760 --> 00:00:45.160\nấy mọi người chống cằm không đều ấy thì cái lực\n\n00:00:45.240 --> 00:00:47.440\nTay dần dần dần làm lệch cái mặt của mọi người luôn thứ BA\n\n00:00:47.520 --> 00:00:49.000\nlà cái thói quen không dùng kem chống nắng\n\n00:00:49.120 --> 00:00:49.920\nthật Ra mọi người nghĩ rằng là\n\n00:00:49.921 --> 00:00:51.401\nờ kem chống nắng chỉ là một cái màn marketing\n\n00:00:51.520 --> 00:00:53.040\nthôi nhưng mọi người có để ý rằng khi mọi người\n\n00:00:53.080 --> 00:00:53.840\nbôi kem chống nắng ấy\n\n00:00:53.841 --> 00:00:54.201\nthì mọi người sẽ\n\n00:00:54.202 --> 00:00:56.121\nthấy là nó sẽ được phủ lên da một cái lớp filter\n\n00:00:56.280 --> 00:00:58.160\nphải soi trên UV cam mọi người mới thấy đen xì\n\n00:00:58.240 --> 00:01:00.240\nvà đây sẽ là cái lớp để hấp thụ những cái Tia UV\n\n00:01:00.360 --> 00:01:02.800\nđể bảo vệ da Cho mọi người khỏi những cái vấn đề về đứt gạch collagen\n\n00:01:02.880 --> 00:01:05.920\nelastin và những cái vấn đề về u T da nên là thường ấy ở\n\n00:01:05.960 --> 00:01:07.560\ntrong nhà đi văn phòng gặp đối tác là dùng\n\n00:01:07.600 --> 00:01:09.200\nkem chống nắng Hàn Quốc Cho nó đẹp nhưng mà những hôm nào mình\n\n00:01:09.280 --> 00:01:11.360\ntiếp xúc ngoài trời nhiều ấy hoặc là không cần phải make up\n\n00:01:11.480 --> 00:01:12.680\nthì mình hay dùng kem chống nắng Âu Mỹ\n\n00:01:12.840 --> 00:01:16.040\ngelato Spray hoặc là valiocare hoặc là P 20\n\n00:01:16.080 --> 00:01:17.360\nhoặc là mathiderm vân vân\n\n00:01:17.400 --> 00:01:20.200\ncòn ở trong nhà thì mình hay dùng cỏ bềm hoặc là Anessa\n\n00:01:20.400 --> 00:01:21.295\nhoặc két sét vân vân\n\n00:01:21.480 --> 00:01:23.480\nrất nhiều những cái dòng nâng tông mà mình khá là thích nha\n\n00:01:23.560 --> 00:01:25.160\ntiếp Theo nữa đó là thói quen dùng khăn\n\n00:01:25.200 --> 00:01:27.400\nmặt nên là mình khuyên mọi người rồi mình luôn có những cái loại\n\n00:01:27.440 --> 00:01:28.360\nkhăn vải như thế này\n\n00:01:28.440 --> 00:01:29.680\ndùng một lần sau đấy mình vứt đi\n\n00:01:29.720 --> 00:01:31.080\nvà cái dòng này nó sẽ rất hợp vệ sinh\n\n00:01:31.120 --> 00:01:33.280\nvà đồng thời thì nó sẽ hạn chế cái tình trạng là khăn\n\n00:01:33.360 --> 00:01:34.480\ngiống như khăn ở nhà của mọi người để\n\n00:01:34.520 --> 00:01:36.280\ntrong nhà tắm lâu ấy nó sẽ dễ bị VI khuẩn tích\n\n00:01:36.320 --> 00:01:37.160\ntụ vào đấy khiến Cho da\n\n00:01:37.200 --> 00:01:38.760\nmọi người nó luôn trong cái tình trạng sần sùi mụn\n\n00:01:38.840 --> 00:01:39.960\nẩn hay là mụn viêm nó không đỡ\n\n00:01:40.040 --> 00:01:40.640\nấy thì mọi người nên\n\n00:01:40.641 --> 00:01:41.521\nthay đổi cái thói quen này nha\n\n00:01:41.600 --> 00:01:43.480\nvà cái này ấy có thể dùng để rửa mặt nạ đất sét\n\n00:01:43.560 --> 00:01:44.520\nrồi mọi người lau sạch\n\n00:01:44.560 --> 00:01:47.280\nrồi mọi người mát xa Cho cổ lau cổ làm sạch cổ rất là\n\n00:01:47.360 --> 00:01:48.640\ntiện luôn í ngoài Ra một cái\n\n00:01:48.680 --> 00:01:50.255\ntác nhân nữa khiến Cho mặt mọi người lệch là mọi người nhai\n\n00:01:50.320 --> 00:01:52.080\nkhông có đều nhiều chị em chỉ nhai đúng một bên thôi\n\n00:01:52.120 --> 00:01:54.160\nthì mình khuyên mọi người là nếu như mọi người đang có vấn đề về sâu răng\n\n00:01:54.200 --> 00:01:56.280\nấy thì mọi người nên đi xử lý luôn để nhai đều 2 bên\n\n00:01:56.320 --> 00:01:58.000\ncòn nếu không thì cái mặt của mọi người nó sẽ lệch\n\n00:01:58.080 --> 00:01:58.960\nthấy rõ bởi vì trước đây\n\n00:01:59.080 --> 00:02:00.880\nmặt của mình lệch rất là rõ luôn nhá mọi người\n\n00:02:00.960 --> 00:02:03.200\nlệch một bên bên này nó tụt xuống thấp cả bên này thì nó lại\n\n00:02:03.240 --> 00:02:04.240\nkiểu Cao lên ấy đến bây giờ\n\n00:02:04.280 --> 00:02:04.720\nthì nó vẫn không\n\n00:02:04.721 --> 00:02:06.121\nthể nào cân đối được bởi vì con người thì không có\n\n00:02:06.160 --> 00:02:08.360\nAI là cân đối 100% hết nhưng mà ít Ra nó được cải\n\n00:02:08.440 --> 00:02:10.680\nthiện hơn hơn đấy và thứ BA đó là nhắc nhai bản\n\n00:02:10.720 --> 00:02:11.440\nthân mình là một người nhắc\n\n00:02:11.441 --> 00:02:13.401\năn và mình nhắc nhai luôn nên là mọi người biết SAO hông\n\n00:02:13.480 --> 00:02:14.040\nthứ nhất là má\n\n00:02:14.041 --> 00:02:14.601\ncủa mình nó bị hóp\n\n00:02:14.602 --> 00:02:16.201\nthứ 2 đó là cái trái dưa của mình nó bị hóp Theo\n\n00:02:16.320 --> 00:02:17.720\nđược một cái AI nhắc nhai thì\n\n00:02:17.760 --> 00:02:18.880\ncái viền hàm này nó đỡ bị\n\n00:02:18.920 --> 00:02:20.480\nto và cái cơ hàm này nó không bị bặm Ra\n\n00:02:20.560 --> 00:02:21.840\nnhưng mà mọi người mà không nhai\n\n00:02:21.880 --> 00:02:23.960\nấy thì cái mặt mọi người rất dễ hóp bởi vì ở cái chỗ má\n\n00:02:24.200 --> 00:02:25.320\ntrước này của mình nó sẽ có một cái nhóm\n\n00:02:25.400 --> 00:02:27.120\ncơ và cái nhóm này nếu như mọi người không có\n\n00:02:27.360 --> 00:02:29.560\nnhai ấy mọi người không có tập để Cho nó căng nó nó nó săn\n\n00:02:29.600 --> 00:02:30.520\nấy là nó sẽ bị trùng nhão\n\n00:02:30.560 --> 00:02:32.680\nkhiến Cho cái vùng da này của mọi người này nó sẽ bị hóp hơn đồng\n\n00:02:32.720 --> 00:02:33.360\nthời khi mà những\n\n00:02:33.361 --> 00:02:34.761\nAI niềng răng mọi người không ăn được mọi người thấy là cái\n\n00:02:34.800 --> 00:02:36.160\ncái phần thái dương của mọi người sẽ rất\n\n00:02:36.200 --> 00:02:37.960\nrất là hóp như mọi người thấy nên là có\n\n00:02:38.000 --> 00:02:40.200\nthể là mọi người không phải ăn quá nhiều nhưng nhớ là hãy\n\n00:02:40.280 --> 00:02:41.200\ntập nhai đặc biệt là những\n\n00:02:41.280 --> 00:02:42.880\nchị em nào mà mọi người bị hóp má\n\n00:02:42.960 --> 00:02:44.040\nhoặc là mặt của mọi người khá là bé\n\n00:02:44.200 --> 00:02:45.880\nthứ BA đó là ngồi quá lâu\n\n00:02:46.040 --> 00:02:48.440\nđây là một cái mà mình thấy dân văn phòng gặp rất là nhiều\n\n00:02:48.520 --> 00:02:50.400\nthường ấy không phải là mọi người khó khăn đến cái mức mỏng\n\n00:02:50.440 --> 00:02:51.400\nthời gian mỗi 30 phút mọi người có\n\n00:02:51.480 --> 00:02:53.200\nthể đứng dậy và mọi người đi lại một chút\n\n00:02:53.280 -->",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7710270007145630996-vie-VN.vtt"
+    ],
+    "file": "7710270007145630996-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710270007145630996",
+   "create_time": "2026-11-20T15:05:33.000Z",
+   "is_slideshow": false,
+   "outlier": 1.16,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@ngoc_finance/video/7630485710637698325",
+   "caption": "1. Biết tiền của mình đang đi đâu\nHồi mới đi làm, cứ có lương là tiêu nên nhiều khi đến cuối tháng mọi thứ về 0 mà ko hiểu tại sao, \n\nVà chỉ đến khi quá mệt mỏi vì phải xoay vòng tiền trả nợ vặt cuối tháng thì mình mới thử viết lại các khoản chi tiêu hàng ngày, \n\nChính những lần ghi chép ấy đã giúp mình biết \"vì sao mình hết tiền\" và tiền của mình chảy về đâu. \n\n2. Tập thói quen để dành tiền trước khi tiêu\nTiêu trước tiết kiệm sau luôn là điều dễ làm hơn cả. Hết tháng còn dư thì cất, hết thì thôi - nhưng chính điều này đã khiến cho chúng ta chẳng dư dả được đồng nào bởi lẽ việc tiêu luôn dễ hơn tích. \n\nThay vì tiêu trước tiết kiệm sau, hãy thử tập thói quen tiết kiệm trước chi tiêu sau và thay vì nghĩ mình đang tiết kiệm hay phải tiết kiệm thì có thể nghĩ rằng đó là khoản \"tiền lương\" bạn đang trả cho chính mình - cho cố gắng và nỗ lực trong tháng vừa rồi của mình. \n\n3. Học cách chậm lại trước khi mua một thứ gì đó\nCó một giai đoạn mình mua rất nhiều thứ chỉ vì cảm xúc.\n- Một chiếc áo vì đang có khuyến mãi.\n- Một món đồ vì thấy bạn đang dùng rất xinh.\n\nNhưng rồi sau đó mình bắt đầu tập cho mình một thói quen đơn giản là \"chậm lại\" trước khi đưa ra quyết định. \n\nMình có thể cho bản thân 12 giờ hay 24 giờ để suy nghĩ về quyết định mua đó và rồi sau đó mình nhận ra rất nhiều thứ mình từng “rất muốn” bỗng nhiên không còn cần thiết nữa và kết quả là mình ko phải chi tiền mua nữa. \n\n4. Hiểu rằng nợ tiêu dùng không phải là giải pháp\nTuổi 20 bất cứ ai cũng rất dễ bị hấp dẫn bởi những thứ như mua trước trả sau, trả góp 0% hay thẻ tín dụng\n\nThoạt nhìn thì có vẻ rất tiện, nhưng nếu không kiểm soát tốt, nó sẽ khiến bạn vướng vào vóng xoáy \"kiếm tiền - trả nợ - kiếm tiền\" \n\nSau tuổi 25, mình cũng nhận ra rằng tự do tài chính bắt đầu từ một điều rất đơn giản đó là: \"đừng để mình sống bằng tiền chưa kiếm được\".\n\n5. Có một khoản tiền cho những ngày không mong muốn\nMình vẫn nhớ như những ngày cuối tháng 9 đầu tháng 10 năm 2019, lúc ấy mình thất nghiệp. Ngày ngày chạy xe đi phỏng vấn hết chỗ này đến chỗ khác, chỗ ưng thì họ không nhận, chỗ nhận thì mình chưa ưng…\n\nTiền không kiếm được nhưng vẫn phải tiêu vẫn phải dùng, mình lại không có khoản dự phòng nào đủ lớn nên những áp lực vô hình về tiền bạc đè bẹp mình mỗi ngày. \n\nVậy nên, khi mình nhận được việc và tháng lương đầu tiên sau chuỗi ngày ấy, điều đầu tiên mình làm không phải là mua sắm, không phải đi ăn đi chơi mà đó là tiết kiệm, mình tiết kiệm khoảng 50% thu nhập để đưa vào quỹ dự phòng vì sợ “những ngày tháng ấy” lại tái diễn.\n\nPhần 2 bữa sau mình viết tiếp nha \n#ngocfinance #taichinhcanhan #phattrienbanthan ",
+   "author": {
+    "id": "7118572744287274011",
+    "name": "ngoc_finance",
+    "nick": "Hồng Ngọc (Ngọc Finance 💸)",
+    "profile": "https://www.tiktok.com/@ngoc_finance",
+    "fans": 36300
+   },
+   "play_count": 1454,
+   "like_count": 18,
+   "share_count": 3,
+   "comment_count": 0,
+   "duration_s": 7,
+   "music": {
+    "id": "7387270514169301777",
+    "name": "nhạc nền - Mọi Núi và quotes sưu tầm 🍀",
+    "author": "Chữa lành ở đây nè 🍀",
+    "original": true
+   },
+   "hashtags": [
+    "ngocfinance",
+    "taichinhcanhan",
+    "phattrienbanthan"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "1. Biết tiền của mình đang đi đâu\nHồi mới đi làm, cứ có lương là tiêu nên nhiều khi đến cuối tháng mọi thứ về 0 mà ko hiểu tại sao, \n\nVà chỉ đến khi quá mệt mỏi vì phải xoay vòng tiền trả nợ vặt cuối tháng thì mình mới thử viết lại các khoản chi tiêu hàng ngày, \n\nChính những lần ghi chép ấy đã giúp mình biết \"vì sao mình hết tiền\" và tiền của mình chảy về đâu. \n\n2. Tập thói quen để dành tiền trước khi tiêu\nTiêu trước tiết kiệm sau luôn là điều dễ làm hơn cả. Hết tháng còn dư thì cất, hết thì thôi - nhưng chính điều này đã khiến cho chúng ta chẳng dư dả được đồng nào bởi lẽ việc tiêu luôn dễ hơn tích. \n\nThay vì tiêu trước tiết kiệm sau, hãy thử tập thói quen tiết kiệm trước chi tiêu sau và thay vì nghĩ mình đang tiết kiệm hay phải tiết kiệm thì có thể nghĩ rằng đó là khoản \"tiền lương\" bạn đang trả cho chính mình - cho cố gắng và nỗ lực trong tháng vừa rồi của mình. \n\n3. Học cách chậm lại trước khi mua một thứ gì đó\nCó một giai đoạn mình mua rất nhiều thứ chỉ vì cảm xúc.\n- Một chiếc áo vì đang có khuyến mãi.\n- Một món đồ vì thấy bạn đang dùng rất xinh.\n\nNhưng rồi sau đó mình bắt đầu tập cho mình một thói quen đơn giản là \"chậm lại\" trước khi đưa ra quyết định. \n\nMình có thể cho bản thân 12 giờ hay 24 giờ để suy nghĩ về quyết định mua đó và rồi sau đó mình nhận ra rất nhiều thứ mình từng “rất muốn” bỗng nhiên không còn cần thiết nữa và kết quả là mình ko phải chi tiền mua nữa. \n\n4. Hiểu rằng nợ tiêu dùng không phải là giải pháp\nTuổi 20 bất cứ ai cũng rất dễ bị hấp dẫn bởi những thứ như mua trước trả sau, trả góp 0% hay thẻ tín dụng\n\nThoạt nhìn thì có vẻ rất tiện, nhưng nếu không kiểm soát tốt, nó sẽ khiến bạn vướng vào vóng xoáy \"kiếm tiền - trả nợ - kiếm tiền\" \n\nSau tuổi 25, mình cũng nhận ra rằng tự do tài chính bắt đầu từ một điều rất đơn giản đó là: \"đừng để mình sống bằng tiền chưa kiếm được\".\n\n5. Có một khoản tiền cho những ngày không mong muốn\nMình vẫn nhớ như những ngày cuối tháng 9 đầu tháng 10 năm 2019, lúc ấy mình thất nghiệp. Ngày ngày chạy xe đi phỏng vấn hết chỗ này đến chỗ khác, chỗ ưng thì họ không nhận, chỗ nhận thì mình chưa ưng…\n\nTiền không kiếm được nhưng vẫn phải tiêu vẫn phải dùng, mình lại không có khoản dự phòng nào đủ lớn nên những áp lực vô hình về tiền bạc đè bẹp mình mỗi ngày. \n\nVậy nên, khi mình nhận được việc và tháng lương đầu tiên sau chuỗi ngày ấy, điều đầu tiên mình làm không phải là mua sắm, không phải đi ăn đi chơi mà đó là tiết kiệm, mình tiết kiệm khoảng 50% thu nhập để đưa vào quỹ dự phòng vì sợ “những ngày tháng ấy” lại tái diễn.\n\nPhần 2 bữa sau mình viết tiếp nha \n#ngocfinance #taichinhcanhan #phattrienbanthan ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7630485710637698325",
+   "create_time": "2026-04-19T15:01:45.000Z",
+   "is_slideshow": false,
+   "outlier": 0.04,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@manghocls/video/7366613156908600583",
+   "caption": "Vừa học nhanh vừa nhớ lâu là có thậttt #trending #manghocls #lichsu #tips ",
+   "author": {
+    "id": "7227825138296964104",
+    "name": "manghocls",
+    "nick": "Măng học Lịch Sử👧🏻",
+    "profile": "https://www.tiktok.com/@manghocls",
+    "fans": 99000
+   },
+   "play_count": 756800,
+   "like_count": 46200,
+   "share_count": 2247,
+   "comment_count": 410,
+   "duration_s": 64,
+   "music": {
+    "id": "7366613196742904593",
+    "name": "nhạc nền - Măng học Lịch Sử👧🏻",
+    "author": "Măng học Lịch Sử👧🏻",
+    "original": true
+   },
+   "hashtags": [
+    "trending",
+    "manghocls",
+    "lichsu",
+    "tips"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:02.360\nBA cách giúp bạn học thật nhanh và nhớ lâu\n\n00:00:02.440 --> 00:00:04.680\ngiống như học sinh giáo quốc gia mua lịch sử check\n\n00:00:05.640 --> 00:00:08.280\nthứ nhất chính là lựa chọn thời gian học Cho phù hợp\n\n00:00:08.800 --> 00:00:09.440\nkhông phải mọi khoảng\n\n00:00:09.441 --> 00:00:11.121\nthời gian trong ngày đều phù hợp để học thuộc\n\n00:00:11.280 --> 00:00:13.040\ncó những khoảng thời gian rất thích hợp để học thuộc\n\n00:00:13.080 --> 00:00:13.760\nnhư từ\n\n00:00:13.761 --> 00:00:16.921\n4 giờ đến 6 giờ sáng hay từ 8 giờ đến 12 giờ tối\n\n00:00:17.120 --> 00:00:18.920\nbởi vì đây là khoảng thời gian yên tĩnh\n\n00:00:19.000 --> 00:00:19.600\ngiúp não bộ\n\n00:00:19.601 --> 00:00:21.681\ntập trung và nghi yếu kiến thức một cách hiệu quả hơn\n\n00:00:21.880 --> 00:00:23.360\nhọc thuộc vào trong những khoảng thời gian này\n\n00:00:23.400 --> 00:00:24.560\ngiúp bạn học nhanh hơn\n\n00:00:24.561 --> 00:00:25.681\nnhững khoảng thời gian khác trong ngày\n\n00:00:25.720 --> 00:00:28.080\n23 lần các bạn hãy thử xem SAO nhá\n\n00:00:28.480 --> 00:00:30.640\nthứ 2 chính là đọc thành tiếng\n\n00:00:30.920 --> 00:00:31.960\nnghe thì có vẻ đơn giản\n\n00:00:32.000 --> 00:00:34.200\nthế nhưng việc đọc đi đọc lại thành tiếng\n\n00:00:34.280 --> 00:00:35.480\ngiúp Cho não bộ được nghe\n\n00:00:35.520 --> 00:00:36.480\nthấy thông tin một lần nữa và\n\n00:00:36.520 --> 00:00:38.040\ntiếp nhận thông tin một cách dễ dàng hơn\n\n00:00:38.200 --> 00:00:39.800\nnếu bạn học nhẩm mà mãi chưa thuộc\n\n00:00:39.840 --> 00:00:41.440\nthì hãy đổi sang cách này xem SAO nhá\n\n00:00:41.840 --> 00:00:43.880\ncuối cùng đó chính là viết Ra giấy\n\n00:00:45.040 --> 00:00:46.520\nchắc hẳn các bạn đã từng nghe câu nói\n\n00:00:46.800 --> 00:00:47.760\nbiến kiến thức của người khác\n\n00:00:47.800 --> 00:00:48.960\ntrở thành kiến thức của mình\n\n00:00:49.120 --> 00:00:51.680\nvà việc viết Ra giấy giúp bạn mã hóa lại thông tin\n\n00:00:51.920 --> 00:00:53.000\nTheo ngôn ngữ của chính bạn\n\n00:00:53.160 --> 00:00:53.600\nnhư vậy\n\n00:00:53.601 --> 00:00:55.361\nviệc tiếp tục kiến thức sẽ trở nên hiệu quả hơn\n\n00:00:55.480 --> 00:00:56.240\nđiều này đã được khoa\n\n00:00:56.241 --> 00:00:58.161\nhọc chứng Minh rồi nha nên các bạn nhớ thử xem nhá\n\n00:00:58.560 --> 00:00:59.800\nmọi người có thích series này không\n\n00:00:59.840 --> 00:01:01.360\nthì hãy comment Cho mong biết để mang Ra\n\n00:01:01.440 --> 00:01:03.720\nthêm cách học thật nhanh và nhớ lâu Cho hiệu quả nhá\n\n00:01:04.120 --> 00:01:04.838\nbai\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7366613156908600583-vie-VN.vtt"
+    ],
+    "file": "7366613156908600583-vie-VN.vtt"
+   },
+   "top_comments": [
+    {
+     "text": "Viết ra giấy + đọc thành tiếng+ học hiểu thì chắc chắn là hiệu quả nhất đấy, mình bên khối xã hội thường dùng cách này",
+     "likes": 509,
+     "author": "zenhuti18"
+    },
+    {
+     "text": "Uống modafina học dễ thuộc",
+     "likes": 346,
+     "author": "soicgive"
+    },
+    {
+     "text": "chiều thi mà giờ học chưa xong",
+     "likes": 205,
+     "author": "hunhminh2"
+    },
+    {
+     "text": "Địa 12 tờ mai thi😇",
+     "likes": 55,
+     "author": "zinzi_398"
+    },
+    {
+     "text": "nhà người khác thì lặng thinh còn nhà em gần với cái chợ😅",
+     "likes": 52,
+     "author": "de_than_bao"
+    },
+    {
+     "text": "12h não t buồn ngủ😌",
+     "likes": 32,
+     "author": "khanhvy_798"
+    },
+    {
+     "text": "tag 500 ae vào để lưu ngay cách học thuộc hqua nhaa",
+     "likes": 12,
+     "author": "manghocls"
+    },
+    {
+     "text": "Địa lý học tận 3tờ mà ngày kia thi😔",
+     "likes": 11,
+     "author": "nanh_.17"
+    },
+    {
+     "text": "cảm ơn cj\ne đã áp dụng hai cách cuối r hiệu quả lắm\ncj ơi cj lên vd dạy cách học thuộc mốc thời gian ngày tháng trong lịch sử đi cj🥰",
+     "likes": 11,
+     "author": "jannahalvi"
+    },
+    {
+     "text": "làm sao để nhớ lâu ạ em học mà thấy những năm nó ngoằn ngoèo quá chị ơi cứu em 🥺",
+     "likes": 5,
+     "author": "hhhhhhhi093"
+    },
+    {
+     "text": "Hình như tôi vừa export vid này 30p trước",
+     "likes": 4,
+     "author": "toiyeumuahe_"
+    },
+    {
+     "text": "tí thi văn mà h ms hc đc cái mở bài__^^",
+     "likes": 3,
+     "author": "g4ug4u_me0wme0w"
+    },
+    {
+     "text": "em c.ơn cj nha",
+     "likes": 1,
+     "author": "user2716959617332"
+    },
+    {
+     "text": "t2 thi rrr học kịp kh trrr",
+     "likes": 1,
+     "author": "khongthichnoinhieu_10"
+    },
+    {
+     "text": "10h r học sao đc v ạ",
+     "likes": 1,
+     "author": "btrn3.05"
+    },
+    {
+     "text": "đang đọc sử luôn nè 1 trang rưỡi",
+     "likes": 1,
+     "author": "htrng54"
+    },
+    {
+     "text": "Ok lắm nha",
+     "likes": 1,
+     "author": "htsuathanhyen90"
+    },
+    {
+     "text": "hiệu quả nha",
+     "likes": 1,
+     "author": "xukaxuka83"
+    },
+    {
+     "text": "Hiệu quả đó nha",
+     "likes": 1,
+     "author": "thuytieenne"
+    },
+    {
+     "text": "Chị ơi 6 giờ e đi thi 😅",
+     "likes": 0,
+     "author": "user_bongnganh"
+    }
+   ],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7366613156908600583",
+   "create_time": "2024-05-08T13:01:28.000Z",
+   "is_slideshow": false,
+   "outlier": 7.64,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@vuthanhhuyen.review/video/7710227710479568134",
+   "caption": "Muốn duy trì một lối sống lành mạnh lâu dài, đôi khi bí quyết lại nằm ở những thói quen thật đơn giản, dễ thực hiện mỗi ngày. �\n\n#healthylife #AlmondKoka #SongThanhXuanTuBenTrong #chongoxyhoa ",
+   "author": {
+    "id": "6720838221515539457",
+    "name": "vuthanhhuyen.review",
+    "nick": "Vũ Thanh Huyền",
+    "profile": "https://www.tiktok.com/@vuthanhhuyen.review",
+    "fans": 399700
+   },
+   "play_count": 33200,
+   "like_count": 202,
+   "share_count": 422,
+   "comment_count": 41,
+   "duration_s": 55,
+   "music": {
+    "id": "7710227772928690962",
+    "name": "âm thanh gốc - Vũ Thanh Huyền",
+    "author": "Vũ Thanh Huyền",
+    "original": true
+   },
+   "hashtags": [
+    "healthylife",
+    "almondkoka",
+    "songthanhxuantubentrong",
+    "chongoxyhoa",
+    "AlmondKoka",
+    "SongThanhXuanTuBenTrong"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.160 --> 00:00:03.520\ndạo này hay bị mấy cái filter trêu u 40 rồi mà vẫn Ra u 30\n\n00:00:03.800 --> 00:00:05.840\nnhưng mà trộm vía da dẻ thì vẫn cứ đẹp thật\n\n00:00:05.880 --> 00:00:07.320\nnhờ mình biết cách chăm sóc từ bên trong\n\n00:00:07.400 --> 00:00:09.680\nmấy nay thì sáng Ra bận rộn nên mình cũng lười bày vẽ\n\n00:00:10.080 --> 00:00:10.880\nviệc nhiều hơn hẳn\n\n00:00:11.040 --> 00:00:13.160\nnên là mình càng ý thức rõ cái chuyện chăm sóc bản thân\n\n00:00:13.240 --> 00:00:14.600\nmình chủ động chọn những gì lành lành\n\n00:00:14.720 --> 00:00:15.520\ntốt Cho sức khỏe\n\n00:00:15.521 --> 00:00:17.561\nđể lúc nào cũng bền sức đồng hành cùng các con\n\n00:00:17.680 --> 00:00:18.600\nnói thiệt là ban đầu\n\n00:00:18.720 --> 00:00:21.120\nmình mua lốc 180 mil này về uống thử vì tò mò thôi\n\n00:00:21.480 --> 00:00:23.440\nAI dè xài thì mới thấy hợp lý Cho cả nhà luôn\n\n00:00:23.480 --> 00:00:26.240\nđây là sữa hạnh nhân glico Omen Coca của Nhật Bản\n\n00:00:26.680 --> 00:00:28.000\nbữa sáng ăn nhẹ rồi à\n\n00:00:28.240 --> 00:00:30.200\nthêm một cái hộp sữa này thì đúng là vừa đủ êm bụng\n\n00:00:30.400 --> 00:00:31.480\nhoặc tầm chiều dài Lao\n\n00:00:31.680 --> 00:00:33.880\nhay lúc rảnh rỗi uống một hộp để trong ngăn mát tủ lạnh í\n\n00:00:34.040 --> 00:00:34.880\nthì cũng thấy nhẹ người\n\n00:00:35.120 --> 00:00:37.080\nmà lại nạp thêm được vitamin E với chất xơ\n\n00:00:37.360 --> 00:00:39.280\ncả nhà cứ thong thả thưởng thức bữa sáng nhẹ nhàng\n\n00:00:39.360 --> 00:00:41.440\nrồi làm một ly này nữa thì đúng là vừa vặn\n\n00:00:41.441 --> 00:00:42.241\nkhởi đầu ngày mới\n\n00:00:42.640 --> 00:00:44.120\nnuôi con hay là chăm chút Cho bản thân\n\n00:00:44.320 --> 00:00:45.880\nthì cứ chọn mấy cái thứ lành tính\n\n00:00:46.040 --> 00:00:47.760\ndễ uống thế này Cho nhẹ gánh mọi người ạ\n\n00:00:48.200 --> 00:00:49.880\nsữa hạnh nhân vị ngon sánh mịn\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7710227710479568134-vie-VN.vtt"
+    ],
+    "file": "7710227710479568134-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710227710479568134",
+   "create_time": "2026-11-20T12:21:35.000Z",
+   "is_slideshow": false,
+   "outlier": 0.08,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@myngoc.711/video/7500043731798658312",
+   "caption": "Các công dụng của phương pháp ngâm chân bằng nước muối\n\nHỗ trợ tình trạng mất ngủ\n\nThói quen ngâm chân với nước muối vào mỗi buổi tối trước khi đi ngủ sẽ giúp bạn có giấc ngủ sâu và ngon hơn. Nhiệt độ của nước ấm kết hợp cùng tinh thể muối sẽ giúp kích thích các tế bào thần kinh ở bàn chân. Đồng thời, khi bạn massage nhẹ nhàng sẽ thúc đẩy tuần hoàn máu, giúp máu huyết lưu thông tốt hơn và xoa dịu thần kinh. Qua đó, bạn sẽ cảm giác toàn bộ cơ thể được thả lỏng, cơn buồn ngủ sẽ nhanh chóng ập đến.\n\nNhững người lớn tuổi thường khó ngủ, rối loạn giấc ngủ hoặc tỉnh giấc lúc nửa đêm có thể áp dụng liệu pháp ngâm chân bằng nước muối ấm mỗi tối để cải thiện.\n\nHỗ trợ các chứng da liễu\n\nMuối có tính kháng khuẩn, chống viêm hiệu quả, đồng thời còn được sử dụng như một chất tẩy tế bào chết tự nhiên. Vì vậy, ngâm chân bằng nước muối sẽ giúp bạn cải thiện các chứng da liễu như nấm chân, nấm móng. Các khoáng chất trong muối sẽ giảm ngứa ngáy khó chịu do nấm gây ra, đồng thời còn sát trùng tốt, giúp vùng da bị nấm nhanh chóng hồi phục trong thời gian ngắn.\n\nBên cạnh đó, thói quen ngâm chân bằng nước muối còn giúp cải thiện tình trạng tay chân bị lạnh. Hiện tượng tay chân bị lạnh có nguyên nhân xuất phát từ việc lưu lượng máu di chuyển không đều, dẫn đến tay và chân không được cung cấp đủ máu cần thiết nên dễ bị nhiễm lạnh. Khi ngâm chân với nước muối sẽ kích thích lưu thông máu, giúp cơ thể ấm lên.\n\nNgâm chân với nước muối giảm đau nhức xương khớp\n\nMột công dụng khác của liệu pháp ngâm chân bằng nước muối nữa đó là cải thiện tình trạng đau nhức xương khớp tốt. Thành phần của muối có chứa Cation (dương) và Nation (Âm) đóng vai trò cân bằng âm dương trong cơ thể, điều hòa khí huyết. Khi muối được pha loãng với nước nóng sẽ có công dụng tới xương khớp theo cơ chế \"nóng thì giãn nở, lạnh thì co lại cục bộ\". Từ đó, mang đến cảm giác thoải mái và dễ chịu hơn cho những bệnh nhân đang bị viêm khớp dạng thấp, viêm dây thần kinh ngoại vi,...\n\nGiảm stress, cải thiện trí óc\n\nNhư đã nói ở trên, thói quen ngâm với với nước muối ấm kết hợp massage nhẹ nhàng sẽ giúp thúc đẩy tuần hoàn máu, xua tan mệt mỏi. Lúc này, toàn bộ cơ thể sẽ được thư giãn tuyệt đối, giúp hồi phục sự cân bằng giữa cảm xúc và suy nghĩ, giảm stress hiệu quả. Đồng thời, phương pháp này còn kích thích sự tập trung cho trí não, kiểm soát các cảm xúc tiêu cực và ổn định thần kinh.\n\nDưỡng da và khử mùi hôi chân\n\nNgoài những công dụng cho sức khỏe, ngâm chân với nước muối còn là cách dưỡng da chân ít tốn kém mà bạn có thể áp dụng. Nước muối sẽ giúp loại bỏ tế bào chết ở da chân, giúp da trắng sáng và mịn màng hơn. Ngoài ra, nước muối còn giúp khử mùi hôi chân hiệu quả. Bạn có thể kết hợp muối với các nguyên liệu khác như gừng, phèn chua, nước cốt chanh,... để tăng thêm hiệu quả.\n\n#myngoc #bonngamchan #chaungamchan #massage #dodungtienich ",
+   "author": {
+    "id": "7128998965711160347",
+    "name": "myngoc.711",
+    "nick": "Mỹ Ngọc",
+    "profile": "https://www.tiktok.com/@myngoc.711",
+    "fans": 365000
+   },
+   "play_count": 318500,
+   "like_count": 1314,
+   "share_count": 201,
+   "comment_count": 77,
+   "duration_s": 32,
+   "music": {
+    "id": "6849968592285337602",
+    "name": "Very cute melody by marimba tone(39813)",
+    "author": "Mitsu Sound",
+    "original": false
+   },
+   "hashtags": [
+    "myngoc",
+    "bonngamchan",
+    "chaungamchan",
+    "massage",
+    "dodungtienich"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:01.960\nthói quen ngâm chân bằng nước muối vào mỗi buổi tối\n\n00:00:02.000 --> 00:00:03.040\nsẽ giúp lưu thông khí huyết\n\n00:00:03.080 --> 00:00:04.000\nhỗ trợ chứng mất ngủ\n\n00:00:04.160 --> 00:00:05.680\ngiảm đau xương khớp và khử mùi hôi chân\n\n00:00:05.681 --> 00:00:06.721\nrất là tốt luôn nè anh chị\n\n00:00:06.960 --> 00:00:08.600\nchiếc bồn ngâm chân này có các bánh lăn\n\n00:00:08.760 --> 00:00:09.440\nvừa ngâm chân\n\n00:00:09.441 --> 00:00:11.481\nvừa lăn chân mát xa các huyệt đạo ở dưới lòng bàn chân\n\n00:00:11.520 --> 00:00:12.360\nrất là tốt luôn nha\n\n00:00:12.480 --> 00:00:13.280\nđúng dạng điều chỉnh này\n\n00:00:13.281 --> 00:00:15.121\nmình bật lên để cái bồn tự làm nóng nước ha\n\n00:00:15.240 --> 00:00:17.000\nvà có luôn cả chế độ sục khí nữa nè\n\n00:00:17.160 --> 00:00:19.600\nthời gian lý tưởng để ngâm chân đó là buổi tối tầm 9 giờ\n\n00:00:19.640 --> 00:00:20.400\ntrước khi đi ngủ\n\n00:00:20.401 --> 00:00:23.081\nmình ngâm chân khoảng tầm 20 Cho tới 30 phút là được ha\n\n00:00:23.240 --> 00:00:25.400\nngười lớn tuổi hay bị khó ngủ hoặc mất giấc ngủ nửa đêm\n\n00:00:25.520 --> 00:00:26.960\nmẹ bỉm sau sinh hay bị lạnh Tay chân\n\n00:00:27.040 --> 00:00:28.520\nthì nên áp dụng cái phương pháp này mỗi tối\n\n00:00:28.521 --> 00:00:29.441\nrất là hiệu quả đó nha\n\n00:00:29.520 --> 00:00:31.680\nbộ ngâm chân em để ở giỏ hàng màu vàng ở góc trái video\n\n00:00:31.720 --> 00:00:32.276\ná mọi người\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7500043731798658312-vie-VN.vtt"
+    ],
+    "file": "7500043731798658312-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7500043731798658312",
+   "create_time": "2025-05-03T02:40:15.000Z",
+   "is_slideshow": false,
+   "outlier": 0.87,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@thayqueo/video/7710623962837044481",
+   "caption": "Bạn đang trì hoãn điều gì đó?\n---\nChương trình AYP - Tìm lại mình, người đã từng sống rất tự tin.\n#timlaitutin #career #adminLCW #ayp ",
+   "author": {
+    "id": "6924909538215724034",
+    "name": "thayqueo",
+    "nick": "Thầy Quéo (Nguyễn Hữu Trí)",
+    "profile": "https://www.tiktok.com/@thayqueo",
+    "fans": 2500000
+   },
+   "play_count": 13900,
+   "like_count": 1252,
+   "share_count": 83,
+   "comment_count": 9,
+   "duration_s": 60,
+   "music": {
+    "id": "7710624023591930632",
+    "name": "âm thanh gốc - Thầy Quéo (Nguyễn Hữu Trí)",
+    "author": "Thầy Quéo (Nguyễn Hữu Trí)",
+    "original": true
+   },
+   "hashtags": [
+    "timlaitutin",
+    "career",
+    "adminlcw",
+    "ayp",
+    "adminLCW"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.520 --> 00:00:02.840\nê tiếng anh có một câu rất hay nghe\n\n00:00:03.280 --> 00:00:04.600\nyou never be ready\n\n00:00:04.880 --> 00:00:07.160\nbạn sẽ không bao giờ thật sự sẵn sàng đâu\n\n00:00:07.560 --> 00:00:10.000\nnhững người trì hoãn thường hay tự nhủ là\n\n00:00:10.680 --> 00:00:14.120\ntừ từ đã đợi khi nào thật sự sẵn sàng hãy chiến\n\n00:00:14.760 --> 00:00:15.760\nnhưng các bạn ơi\n\n00:00:16.200 --> 00:00:19.760\nsẵn sàng không phải là một trạng thái kỳ diệu nào đó mà\n\n00:00:19.840 --> 00:00:20.960\nchúng ta cứ ngồi chờ\n\n00:00:21.160 --> 00:00:22.320\nvà rồi nó sẽ tới\n\n00:00:22.600 --> 00:00:26.480\nlò sẵn sàng là một khoảnh khắc quyết định hành động\n\n00:00:27.080 --> 00:00:28.440\ntôi sẵn sàng tới phòng gym\n\n00:00:28.880 --> 00:00:30.480\ntôi sẵn sàng lật những trang sách\n\n00:00:30.800 --> 00:00:33.000\ntôi sẵn sàng đặt một cuộc hẹn với sếp\n\n00:00:33.480 --> 00:00:34.920\ntôi sẵn sàng xuống tiền\n\n00:00:35.400 --> 00:00:39.000\ntôi sẵn sàng mở lời làm quen với chàng trai đó\n\n00:00:40.360 --> 00:00:41.720\nCho nên tôi hỏi thật\n\n00:00:42.280 --> 00:00:43.760\ncác bạn có sẵn sàng\n\n00:00:44.080 --> 00:00:47.720\nsống cuộc đời mà mình mong ước ngay bây giờ hay không\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7710623962837044481-vie-VN.vtt"
+    ],
+    "file": "7710623962837044481-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710623962837044481",
+   "create_time": "2026-11-21T13:59:04.000Z",
+   "is_slideshow": false,
+   "outlier": 0.01,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@nomzbysue/video/7497252491864984839",
+   "caption": "Đi chợ tiết kiệm\n\n😋 Đây là công thức đi chợ \nvà các nguyên liệu mình mua cho tuần này\n3 loại protein (cá hồi, thịt nạc dăm, sườn/xương heo)\n3 loại củ quả (khoai tây, cà rốt, củ dền)\n2 loại rau ăn sống (cà chua và dưa leo)\n1 loại rau ăn lá (cải ngọt)\n\nvà 2-3 món ăn kèm hoặc ăn vặt tuỳ vào thực đơn mỗi tuần \nTuần này mình mua sandwich và mayonnaise để kẹp thịt nướng ăn \n\nSau khi mua về thì mình sơ chế và chia phần, các nội dung này mình đã chia sẻ trong các tập trước, mọi người xem lại nha. \n\nHồi trước mình thường chỉ đi chợ một lần và mua rất nhiều nguyên liệu để nấu cho cả tuần. Cách này có vẻ tiết kiệm thời gian nhưng nhiều khi mình không dự đoán được \n🍊khối lượng công việc trong tuần, \n🍊những cuộc hẹn đột xuất,\n🍊hoặc những ngày (lười biếng) hổng muốn nấu ăn  \n\nMua nhiều quá nấu hổng kịp, tuần tiếp theo lại lấp đầy tủ lạnh nên hình thức đi chợ này có tác dụng phụ là khiến mình lãng phí thực phẩm và cả một phần thu nhập hàng tháng luôn. Sau nhiều lần rút kinh nghiệm thì mình đã soạn ra được một công thức đi chợ vừa đủ cho 3-4 ngày đầu tuần. \n\nVậy thứ 2 tới thứ 5 tới bữa đã có đồ ăn, hổng cần suy nghĩ. \nThứ 6, 7, chủ nhật mình linh động vét tủ lạnh, mua bổ sung để nấu thêm hoặc ra ngoài thử các quán ngon mà hông lo lãng phí đồ ăn trong tủ lạnh. \n\nNăm nay cảm thấy bản thân tiến bộ vô cùng vì đã điều chỉnh được thói quen chi tiêu hàng tháng. Bớt lại những khoản không cần thiết, mình để dành được nhiều hơn mà cũng đỡ cảm thấy tội lỗi khi bỏ đi thức ăn cũ.   \n\nHi vọng các tips này sẽ giúp mọi người đi chợ hiệu quả và tiết kiện hơn nha. 🥰\n\n#Huchitieu #quanlychitieu #suenauan #vlognauan #mealprepwithsue #nauandelam ",
+   "author": {
+    "id": "7036594932807238657",
+    "name": "nomzbysue",
+    "nick": "Sue nấu ăn 🍉",
+    "profile": "https://www.tiktok.com/@nomzbysue",
+    "fans": 47600
+   },
+   "play_count": 95800,
+   "like_count": 4450,
+   "share_count": 180,
+   "comment_count": 12,
+   "duration_s": 88,
+   "music": {
+    "id": "7281342697137473537",
+    "name": "Daily life/streaming, cute and stylish jazz(1484407)",
+    "author": "yuhi_nostalgic",
+    "original": false
+   },
+   "hashtags": [
+    "huchitieu",
+    "quanlychitieu",
+    "suenauan",
+    "vlognauan",
+    "mealprepwithsue",
+    "nauandelam",
+    "Huchitieu"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.320 --> 00:00:01.320\nkhi mới bắt đầu meal PrEP\n\n00:00:01.440 --> 00:00:02.920\nthì mình thấy phần khó nhất đó là\n\n00:00:02.960 --> 00:00:04.680\ntính toán được lượng thực phẩm cần chuẩn bị\n\n00:00:04.800 --> 00:00:07.640\nmua ít á thì lo thiếu mà mua nhiều thì lại sợ ăn hổng hết\n\n00:00:08.120 --> 00:00:10.440\ntips của mình để tránh lãng phí thực phẩm đó là mua thiếu\n\n00:00:10.480 --> 00:00:11.280\ncòn hơn dư\n\n00:00:11.600 --> 00:00:13.760\nmình chỉ mua các nguyên liệu chính Cho 4 ngày trong tuần\n\n00:00:14.040 --> 00:00:15.280\ntừ thứ 2 tới thứ năm thôi\n\n00:00:15.440 --> 00:00:18.280\ncòn ngày cuối tuần thì thoải mái vét tủ lạnh có gì ăn đó\n\n00:00:18.320 --> 00:00:19.400\nnếu cần thì mua bổ sung\n\n00:00:19.640 --> 00:00:21.720\ncòn không thì cứ đi Ra ngoài ăn một cái quán ngon\n\n00:00:21.840 --> 00:00:22.640\nthay đổi không khí\n\n00:00:22.840 --> 00:00:25.000\nbên cạnh tiết kiệm thời gian thì một lợi ích khác\n\n00:00:25.240 --> 00:00:27.200\nmình thấy ở meal PrEP đó là nó giúp mình quản lý Chi\n\n00:00:27.280 --> 00:00:28.080\ntiêu tốt hơn\n\n00:00:28.240 --> 00:00:30.880\nthay vì mua sắm tùy hứng như hồi trước thì bây giờ mình sẽ\n\n00:00:31.120 --> 00:00:33.720\nđể ý kiểm tra lại tủ lạnh và lên danh sách trước khi đi chợ\n\n00:00:33.721 --> 00:00:36.361\nmình cũng lập Ra hũ Chi tiêu riêng Cho việc ăn uống\n\n00:00:36.600 --> 00:00:38.080\nnhiều khi tưởng mấy cái khoản này nhỏ\n\n00:00:38.120 --> 00:00:40.120\nnhưng cộng lại mình mới thấy nó chiếm một phần lớn\n\n00:00:40.160 --> 00:00:40.600\nthu nhập luôn\n\n00:00:40.601 --> 00:00:42.881\ná thiệt Ra mấy năm đầu Ra trường đi làm\n\n00:00:42.920 --> 00:00:44.200\nthì mình hổng nghĩ tới chuyện này\n\n00:00:44.520 --> 00:00:46.240\ntại đang lo sống Cho hiện tại mà\n\n00:00:46.480 --> 00:00:47.480\nnhưng càng lớn thì mình càng\n\n00:00:47.560 --> 00:00:49.400\nthấy có nhiều điều mình hổng đoán trước được\n\n00:00:49.560 --> 00:00:51.160\nmà nó có thể ảnh hưởng tới túi tiền của\n\n00:00:51.161 --> 00:00:54.601\nmình như là máy móc trong nhà đang chạy ngon lành thì bị hư\n\n00:00:55.000 --> 00:00:57.640\nhoặc bỗng dưng có một chiếc răng sâu và phải đi nha sĩ\n\n00:00:57.920 --> 00:01:00.120\ntới đoạn này là mình hay ước gì tuần trước đi siêu thị\n\n00:01:00.121 --> 00:01:02.321\ná mình đừng có tự thưởng bản thân quá đà như vậy\n\n00:01:02.600 --> 00:01:04.960\nthì từ giờ tới cuối tháng đâu phải sống trong nơm nớp đâu\n\n00:01:05.359 --> 00:01:06.800\nmuốn quản lý hạn mức hàng tuần\n\n00:01:06.840 --> 00:01:08.920\nthì mình gợi ý mọi người thử tính năng hũ Chi tiêu\n\n00:01:09.120 --> 00:01:10.120\ncủa ngân hàng số Timo\n\n00:01:10.480 --> 00:01:11.880\nsau khi đặt Ra ngân sách Cho tuần\n\n00:01:11.920 --> 00:01:14.240\nthì mình thường Chi một nửa vào ngày đi siêu thị\n\n00:01:14.400 --> 00:01:15.280\nvà meal PrEP thôi\n\n00:01:15.480 --> 00:01:16.880\ndành phần còn lại Cho cuối tuần\n\n00:01:17.080 --> 00:01:19.960\nvậy là yên tâm ăn ngon rồi làm việc khỏi lo nghĩ gì\n\n00:01:20.320 --> 00:01:22.600\nmình đính kèm công thức đi chợ Cho 2 người ăn trong caption\n\n00:01:22.800 --> 00:01:25.880\nmọi người có thể tham khảo hen còn giờ thì bái bai\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-26/apify/vtt/7497252491864984839-vie-VN.vtt"
+    ],
+    "file": "7497252491864984839-vie-VN.vtt"
+   },
+   "top_comments": [
+    {
+     "text": "B hướng dẫn meal prep chi tiết dc k ạ. Do mk chưa rõ lắm. Là đi chợ, rửa thịt, cắt lát rồi ướp thịt sống rồi nấu lên rồi sau đó chia các phần bỏ vô tủ đông hả b. Đối với rau củ thì s ạ",
+     "likes": 1,
+     "author": "bluesky2983"
+    },
+    {
+     "text": "Chị cho em xin loại hộp chị dùng với 🫶",
+     "likes": 0,
+     "author": "aidenlicht"
+    },
+    {
+     "text": "em xin công thức ướp cá hồi với chị ơi",
+     "likes": 0,
+     "author": "doanngocyennhi2408"
+    },
+    {
+     "text": "chị ơi chị thấy số lượng hộp bao nhiêu là đủ ạ",
+     "likes": 0,
+     "author": "melamiho"
+    },
+    {
+     "text": "😂",
+     "likes": 0,
+     "author": "thuytien6724"
+    },
+    {
+     "text": "😍😍😍",
+     "likes": 0,
+     "author": "scoobydooblubla"
+    },
+    {
+     "text": "🥺🥺🥺",
+     "likes": 0,
+     "author": "hemdasoe"
+    },
+    {
+     "text": "Bạn ơi cho mình hỏi đồ ăn ướp xong rồi nên để ngăn đông hay ngăn mát á",
+     "likes": 0,
+     "author": "lapis.ng00"
+    },
+    {
+     "text": "thịt, cá ướp rồi thì bỏ ngăn đông hãy ngăn mát luôn vậy c",
+     "likes": 0,
+     "author": "tieunguyet0108"
+    },
+    {
+     "text": "c ơi cho em hỏi thịt cá chị ướp sẵn chị hay để ngăn đông hay ngăn mát ạ",
+     "likes": 0,
+     "author": "pham.dang913"
+    },
+    {
+     "text": "Chị dùng hộp đựng bao nhiêu ml ý",
+     "likes": 0,
+     "author": "tuongnahee"
+    }
+   ],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7497252491864984839",
+   "create_time": "2025-04-25T14:08:47.000Z",
+   "is_slideshow": false,
+   "outlier": 2.01,
+   "basis": "fans"
+  }
+ ]
+}

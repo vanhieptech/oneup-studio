@@ -71,6 +71,31 @@ ASR_PYTHON = _first_existing(
     (TOOLS_DIR / "f5-venv/bin/python", TOOLS_DIR / "asr-venv/bin/python"),
     sys.executable,
 )
+def tools_env(key):
+    """Read one `export KEY=value` from ~/oneup-tools/env.sh (outside git) when it is not already in the environment.
+    Used for secrets such as APIFY_TOKEN, which must never be written into the repo."""
+    if os.environ.get(key):
+        return os.environ[key]
+    f = TOOLS_DIR / "env.sh"
+    if f.exists():
+        for line in f.read_text().splitlines():
+            line = line.strip()
+            if line.startswith(f"export {key}=") or line.startswith(f"{key}="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+    return ""
+
+def _which_any(name, env_key):
+    v = os.environ.get(env_key)
+    if v:
+        return v
+    nvm = sorted((HOME / ".nvm/versions/node").glob(f"v*/bin/{name}"), reverse=True)  # prefer user nvm installs over a stale /usr/local copy
+    if nvm:
+        return str(nvm[0])
+    return shutil.which(name) or ""
+
+TINYFISH_BIN = _which_any("tinyfish", "TINYFISH_BIN")   # @tiny-fish/cli: free search + fetch (TikTok pages are blocked for fetch, 26/11)
+GEMINI_BIN = _which_any("gemini", "GEMINI_BIN")         # @google/gemini-cli: video teardown (pipeline/scripts/teardown.py)
+
 VIENEU_PYTHON = _first_existing(
     ("VIENEU_PYTHON",),
     (TOOLS_DIR / "tts-venv/bin/python",),

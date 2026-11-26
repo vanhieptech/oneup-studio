@@ -7,7 +7,7 @@ description: >-
   patterns/formats are performing, write a differentiation step (what everyone says vs our
   angle), bridge to a source-book lesson, grow a hook-pattern library, and emit validated
   scene-plan stubs for the top 1-2 ideas so trend -> script -> comic render is seamless.
-version: "4.0.0"
+version: "4.1.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -35,7 +35,9 @@ Config: `pipeline/trends/sources.yaml` (33 sources verified 2026-10-13). Collect
 3. **Known blocked (do not retry daily):** TikTok Creative Center / `clockworks/tiktok-trends-scraper` (0 items) · lexis trending-hashtags (ads cookie) · lexis trending-videos without cookie · parseforge keyword+diacritics · reddit.com JSON/RSS (403) · rsshub.app (403) · Threads (login/JS). Use Apify primary actors in `pipeline/trends/apify.yaml` + Google News "trend TikTok", Kenh14, X News. Retest monthly.
 
 ## TikTok-native signals (rule 57, DL-053, L-037) — Apify primary (2026-10-16)
-Config: `pipeline/trends/apify.yaml`. Normalize: `pipeline/scripts/trend-apify-normalize.py`. Agent calls Apify via MCP `user-Apify` (free plan; keep daily spend tiny, never put tokens in repo).
+Config: `pipeline/trends/apify.yaml`. Normalize: `pipeline/scripts/trend-apify-normalize.py`. **Local Mac (26/11/2026):** the box MCP `user-Apify` is gone; run `python3 pipeline/scripts/apify-run.py --date DATE` (REST, token `APIFY_TOKEN` read from `~/oneup-tools/env.sh` via `pipeline/paths.py` `tools_env`, never in the repo; free plan, daily cap in `apify.yaml`, actual cost written to `apify/cost.json`).
+
+**Discovery first, free (TinyFish, 26/11/2026):** `python3 pipeline/scripts/tinyfish_client.py tiktok "<topic>" … --out research/trends/DATE/tinyfish/tiktok-candidates.json` finds clip links + captions + dates (`search --include-domains tiktok.com`). TinyFish **fetch** of TikTok pages is blocked ("Site Maintenance"), so views/subtitles/comments still come from Apify: pass the candidate links to `apify-run.py --urls-from <candidates.json>` so Apify only measures links already found (cheaper than broad keyword scraping). `trend-collect.py` also has `tinyfish` (web) and `tinyfish_tiktok` source types in `sources.yaml`. Only the free search/fetch meters; no TinyFish agent/browser/dataset/monitor in the daily job.
 
 **Do NOT use** (failed 2026-10-15/16): `clockworks/tiktok-trends-scraper` (Creative Center → 0 items VN+US) · `lexis-solutions/tiktok-trending-hashtags-scraper` (needs ads.tiktok.com cookie) · lexis trending-videos without cookie (~4 brand ads) · `parseforge/tiktok-scraper` with Vietnamese-diacritic **keywords** ("no public video page").
 
@@ -78,7 +80,7 @@ Then validate each: `cd video-engine && npm run validate -- <plan.json>`. Fix un
 
 ## Daily steps
 1. Read ingest.md, patterns.md, theme map (next 6–8 clips), idea bank, last digest.
-2. X via MCP → x-extra.json. 2b. Apify TikTok-native (see section above) → `research/trends/DATE/apify/clips.json`. 3. Run trend-collect.py. 4. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
+2. X via MCP → x-extra.json. 2a. TinyFish TikTok discovery → `tinyfish/tiktok-candidates.json`. 2b. `apify-run.py` (measures the candidates + keyword queries, subtitles, comments for the shortlist, `outlier` score) → `research/trends/DATE/apify/clips.json`. 2c. **Teardown 2–3 outliers** (`outlier` ≥ 3): `python3 pipeline/scripts/teardown.py <video file> --clip-json <row>` → `research/trends/DATE/teardowns/<id>.{md,json}` per `templates/clip-teardown.md`; downloading a competitor video needs Hiệp's OK (until then run teardown only on our own clips). 3. Run trend-collect.py. Read the top non-TikTok items with TinyFish fetch (MCP `fetch_content` or `tinyfish_client.py fetch`) before bridging. 4. Safety filter (confirm the keyword pre-filter by reading the shortlist). 4. Write raw.json, run `score`. 5. Pattern mining -> update patterns.md.
 6. Bridges (top 5–8) with differentiation. 7. Ideas + plan stubs for top 1–2, validate.
 8. Write `digest.md`: front-matter, sources line, top trends (with rank_score/novelty/saturation), **Learning** (new patterns, saturated topics to avoid), **Bridges** table, **Differentiation**, **Plan stubs** (paths + validate result), **Script hooks** (3–5, mark approval needed), safety notes.
 9. Update ingest.md (rows, counts, Bridges with pattern+status) and idea-bank for new ideas.

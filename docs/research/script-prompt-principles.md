@@ -6,9 +6,11 @@ source: "oneup-studio (soạn trong repo)"
 id: research.script-prompt-principles
 type: research
 status: Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7
-updated: 2026-10-15
+updated: 2026-11-26
 ---
 # Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s
+
+> **Đã thay (26/11/2026):** dùng `docs/research/craft-brief.md` lúc viết. File này giữ để tra lịch sử; giới hạn 40–48s, 110–130 chữ ở đây đã bị L-099 bỏ.
 
 Lý do: Hiệp chê clip-02 nghe "giả trân". Nguồn gốc: một prompt "YouTube scriptwriter" Hiệp chia sẻ (17:4x 15/10). Dưới đây là phần cốt lõi, đã chỉnh cho clip 40–48s, ~110–130 chữ.
 

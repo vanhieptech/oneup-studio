@@ -1,11 +1,16 @@
 # Trend sources for pipeline/scripts/trend-collect.py (JSON-compatible YAML so stdlib can read it).
-# type: rss | gtrends | hn | wiki | bsky_trending | bsky_search | yt | kworb | gnews
+# type: rss | gtrends | hn | wiki | bsky_trending | bsky_search | yt | kworb | gnews | tinyfish | tinyfish_tiktok
+# tinyfish* = free TinyFish CLI search (added 26/11/2026); tinyfish_tiktok only discovers clip links (TikTok pages block fetch), Apify measures them.
 # Verified 2026-10-13 from the box. Blocked (do not add back without re-testing):
 #   reddit.com json/rss (403 datacenter IP, needs OAuth) · rsshub.app public (403) · TikTok Creative Center
 #   (SPA + creative_radar_api returns 40101 "no permission" without browser-signed headers) · threads.net (login/JS)
 #   znews.vn/rss/tin-moi.rss, vietcetera feeds, kenh14.vn/home.rss, genk.vn/home.rss (404) · tuoitre RSS (0 items, use gnews site:)
 # TikTok-native Apify actors live in pipeline/trends/apify.yaml (NOT here; agent/MCP). Do not add Creative Center / trends-scraper / lexis-without-cookie / parseforge-diacritic-keywords.
 {"sources": [
+ {"id":"tf-tiktok-thoiquen","type":"tinyfish_tiktok","q":"thói quen","hl":"vi","gl":"VN","cat":"niche","lang":"vi","max":10},
+ {"id":"tf-tiktok-trihoan","type":"tinyfish_tiktok","q":"trì hoãn","hl":"vi","gl":"VN","cat":"niche","lang":"vi","max":10},
+ {"id":"tf-tiktok-hoctap","type":"tinyfish_tiktok","q":"mẹo học nhớ lâu","hl":"vi","gl":"VN","cat":"niche","lang":"vi","max":10},
+ {"id":"tf-web-niche-vi","type":"tinyfish","q":"thói quen trì hoãn kỷ luật bản thân gen Z","hl":"vi","gl":"VN","cat":"niche","lang":"vi","max":10},
  {"id":"gtrends-vn","type":"gtrends","geo":"VN","cat":"hot","lang":"vi"},
  {"id":"gtrends-us","type":"gtrends","geo":"US","cat":"hot","lang":"en"},
  {"id":"vnexpress-noibat","type":"rss","url":"https://vnexpress.net/rss/tin-noi-bat.rss","cat":"news","lang":"vi","max":20},

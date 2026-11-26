@@ -26,6 +26,11 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác |
 | Render clip | làm việc: `final/out/` (gitignored), part render `video-engine/out/`; **bản giữ lại**: `media/clips/<clip>/clip-NN-final.mp4` + `-720.mp4` (manifest) | bản gửi Hiệp: 720p faststart < 10 MB |
 | Nháp bài X/LinkedIn | `content/published/social/YYYY-MM-DD-<slug>.md` (skill `social-poster`; `status: draft → ready → published`) | không bao giờ tự đăng |
+| Review và góp ý một clip | `content/clips/<clip>/final/review.md` (make-video §4b: `verdict, score, script_hash, feedback_seen`) + `final/feedback.md` (lời Hiệp nguyên văn, mỗi góp ý một dòng) | `check-rules --review <draft>` kiểm cả hai |
+| Bộ mẫu chuẩn review | `research/review-golden/` (`index.json`, `rejected/<id>.md`; bản duyệt chỉ trỏ `content/archive/`) | hiệu chỉnh reviewer và người viết |
+| Phân tích clip nhiều view | `research/trends/<date>/teardowns/<id>.{md,json}` theo `templates/clip-teardown.md`; công thức khung tích luỹ ở `research/blueprints/` | `pipeline/scripts/teardown.py` (Gemini CLI), prompt `docs/prompts/gemini-teardown.md` |
+| Dữ liệu TikTok (Apify) và tìm clip (TinyFish) | `research/trends/<date>/apify/` (`clips.json`, `dataset.json`, `comments.json`, `vtt/`, `cost.json`) · `research/trends/<date>/tinyfish/tiktok-candidates.json` | `pipeline/scripts/apify-run.py`, `pipeline/scripts/tinyfish_client.py`; token Apify chỉ ở `~/oneup-tools/env.sh` |
+| Bảng dịch thuật ngữ, kho văn nói | `research/explainers/<chủ-đề>.md` · `resources/vn-spoken/` (`sources.md`, `phrase-bank.md`, `bookish.tsv`) · `resources/vn-dict/vi_50k.txt` (CC BY-SA 4.0) | đọc lúc viết theo `docs/research/craft-brief.md` |
 | Clip đã duyệt | `content/archive/<clip>/` (cùng layout, thêm `final/approved.json`) | luật 66 |
 | Media lớn (mp4 sample, footage) | `media/` (gitignored) + `media/MANIFEST.json` | `media/footage/inbox/` cho video quay |
 | Test | `tests/` | |

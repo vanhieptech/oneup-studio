@@ -6,7 +6,7 @@ status: ready
 source: "oneup-studio (soạn trong repo)"
 id: resources.vn-spoken
 type: resource
-updated: 2026-10-15
+updated: 2026-11-26
 ---
 # Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup
 
@@ -33,4 +33,4 @@ Ghi chú: Giang Ơi và Have A Sip nói giọng Bắc/chuẩn, chỉ học nhị
 - Văn nói: câu ngắn, một ý, đọc to: https://lamvideo.net/bi-quyet-viet-loi-thoai-kich-ban-thu-hut-va-chuyen-nghiep/
 - Xem thêm `docs/research/scriptwriting-research-2026-10-15.md`.
 
-Kho cụm từ: `phrase-bank.md`.
+Kho cụm từ: `phrase-bank.md`. **Sổ nguồn đầy đủ (giấy phép, phạm vi dùng, xếp theo giá trị): `sources.md`** (26/11).

@@ -47,3 +47,17 @@ Cột "Nguồn": DN = Đáng Nhớ 260 từ, TN = Thanh Niên Gen Z, MF = Mental
 | hông / khum | "không" mềm | Nghe quen hông? | K / TN (khum) |
 
 Giới hạn: tiểu từ ≤ 1/câu (L-017); từ lóng Gen Z ≤ 1/clip, không dùng từ có thể gây hiểu sai về sức khoẻ tâm thần.
+
+## Từ dữ liệu thật 26/11/2026 (Apify: `research/trends/2026-11-26/apify/`)
+Nguồn A = phụ đề/caption/comment TikTok có link trong `research/explainers/trihoan-thoiquen-hoctap.md`. Cụm ngắn để học cách nói, không chép câu dài.
+
+| Cụm | Nghĩa / sắc thái | Dùng ở | Nguồn |
+|---|---|---|---|
+| từ từ đã | chần chừ, hẹn lại | nhịp trì hoãn | A (vtt thayqueo) |
+| đợi khi nào thật sự sẵn sàng | lý do quen của người trì hoãn | hook / gọi tên niềm tin sai | A (vtt thayqueo) |
+| bớt lười / bỏ lười | muốn sửa thói quen, không tự mắng | hook, CTA | A (caption, comment) |
+| khỏi cần động não | việc đã quen, làm tự động | giải thích thói quen | A (vtt amateurpsychology) |
+| chiều thi mà giờ học chưa xong | hoảng vì học dồn | tình huống đời thường (đổi sang việc không phải môn học, L-087) | A (comment manghocls) |
+| làm sao để nhớ lâu | câu người xem tự hỏi | hook học nhớ | A (comment manghocls) |
+| xin vía / nhả vía | meme xin may mắn, trêu nhẹ | CTA vui | A (comment depcungtram) |
+| cứu em | cầu cứu khi bí | phản ứng nhân vật | A (comment manghocls) |

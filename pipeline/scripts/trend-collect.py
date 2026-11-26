@@ -16,6 +16,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
+_s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))  # tinyfish_client
 ROOT = P.ROOT
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
 DROP = r"chết|tử vong|thiệt mạng|tai nạn|án mạng|giết|cướp|ma túy|khởi tố|bắt giữ|xét xử|lừa đảo|bão|lũ|động đất|cháy|chiến tranh|tấn công|quân đội|đảng|quốc hội|chính phủ|bầu cử|tôn giáo|cờ bạc|cá độ|xổ số|vé số|jackpot|độc đắc|sex|tình dục|buôn người|xhamster|khiêu dâm|tô lâm|thủ tướng|chủ tịch nước|killed|dead|death|shooting|murder|war|attack|military|election|trump|senate|congress|lawsuit|court|arrest|hurricane|flood|earthquake|gambling|porn|israel|gaza|ukraine|russia|iran"
@@ -104,8 +105,17 @@ def s_yt(s):
     return [{"title": e.get("title", ""), "url": e.get("url") or f"https://www.youtube.com/watch?v={e['id']}", "summary": "",
              "metric": {"views": e.get("view_count")}} for e in d.get("entries", [])]
 
+def s_tinyfish(s):  # free TinyFish web search (CLI); niche Vietnamese queries the RSS feeds miss
+    import tinyfish_client as TF
+    return [{"title": r.get("title", ""), "url": r.get("url", ""), "summary": r.get("snippet", ""), "metric": {}}
+            for r in TF.search(s["q"], s.get("hl", "vi"), s.get("gl", "VN"), s.get("domains"))]
+def s_tinyfish_tiktok(s):  # TikTok clip discovery only (fetch of TikTok pages is blocked); Apify measures the links
+    import tinyfish_client as TF
+    return [{"title": c["title"], "url": c["url"], "summary": c["snippet"], "metric": {}, "creator": c["creator"], "date": c["date"]}
+            for c in TF.tiktok_discover([s["q"]], s.get("hl", "vi"), s.get("gl", "VN"))]
+
 FN = {"rss": s_rss, "gnews": s_gnews, "gtrends": s_gtrends, "hn": s_hn, "wiki": s_wiki, "bsky_trending": s_bsky_trending,
-      "bsky_search": s_bsky_search, "kworb": s_kworb, "yt": s_yt}
+      "bsky_search": s_bsky_search, "kworb": s_kworb, "yt": s_yt, "tinyfish": s_tinyfish, "tinyfish_tiktok": s_tinyfish_tiktok}
 
 def run(s):
     t0 = dt.datetime.now()

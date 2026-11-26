@@ -6,7 +6,7 @@ description: >-
   intake to post package that keeps every clip consistent with rules/video-rules.md:
   read sources → script → humanizer → check-rules → review gate 1 → render → check-rules
   --final → review gate 2 → log decisions. Edits go to the spec, never a regenerate.
-version: "1.1.0"
+version: "1.2.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -55,7 +55,18 @@ Ask only what blocks a decision (rule: ask before deciding). Never invent a pers
 4. The HowToLiveBetter source section → write the **Fact lock** list.
 5. `logs/effects-log.md` (avoid repeating signature effects back-to-back).
 
+**These reads are for planning and checking, not for the writing pass.** They decide the topic, fact lock, trend and what the checker/reviewer will hold the script to. When you actually write the words (§2.0 step 3), put only 4 things in front of you: `docs/research/craft-brief.md` (one page) · the topic's term sheet `research/explainers/<topic>.md` if it exists · `resources/vn-spoken/phrase-bank.md` · 2–3 voice samples (Hiệp's memos in `content/voice-profile.md` §4 when present, real creator subtitles in `research/hooks/2026-11-12-storytelling-hooks-vn/raw/*.vtt`, approved scripts in `content/archive/clip-0*/final/script-final.md`). Writing with ~37k words of rules open makes lines that dodge rules instead of sounding spoken (L-106); the rules come back at §2.0 step 5, §4 and §4b.
+
 ## 2. Script draft → `final/spec.json` (the ONE source of truth)
+### 2.0 Draft first, spec after Chốt (26/11; supersedes "write the script directly as the spec" below)
+Drafts live in `archive/script-vN-draft.md`; `final/spec.json` is built only after Hiệp says Chốt (L-098: no images, voice or render before Chốt). Order:
+1. **One-line idea:** the viewer's pain → what the clip promises → what answers it. Hook kind differs from the last 2 clips (`logs/hook-moves.md`).
+2. **Spine table** (L-107) at the top of the draft: one sentence per beat + its role (story → question → answer → limit → apply → close). Read the sentence column alone: it must argue in one line of «vì / nên / vậy / nhưng». A break means fix the spine, not the words.
+3. **Say it in one go:** write the whole script as one spoken monologue, as if transcribing a voice memo to a friend, using only the 4 writing inputs from §1. Don't write cell by cell.
+4. **Then cut into beats** in the format `N. **[bNN or label]** lời` (what `check-rules` `draft_beats` reads), with visual notes in a separate column or line.
+5. **Checks on the draft:** `python3 pipeline/scripts/check-rules.py --draft <draft.md>` (includes `--bookish`, ⚠ only) → `skills/script-polish` → §4b review → `check-rules.py --review <draft.md>` must pass before sending gate 1.
+6. After Chốt: build `final/spec.json` from the approved words (same spoken words ⇒ same `script_hash`, review stays valid), then §4 onward.
+
 **Script template (required, Hiệp 16/10, clip-02 v16/v17):** write `final/script-final.md` from `templates/script.md` — beat frame Hook (cut) → problem stems → evidence + signs → spoken HTB message → 2 concrete how-to beats (source + linked items, optional callback to the previous clip) → CTA echo; table `Beat | Giây | Người nói | Lời thoại | Hình / caption EN` with `|` phrase splits and `{nhấn:}` marks (L-036).
 Write the script directly as the spec (format below). Structure rule-41: hook 0–3s → struggle → turn → lesson/explainer (3–4 motion beats) → evidence → payoff → CTA question, last line loops to the hook. Target 120–180s at natural pacing, not a hard minimum; finished total strictly <300s including endcard, pauses and transitions. No hard word quota. Before Chốt use ESTIMATED timing only.
 - Story beats = comic (`engine: remotion`); explain/evidence beats = motion graphics (`engine: hyperframes`), rule-42.
@@ -98,7 +109,7 @@ Motion: run `skills/motion-picks-per-script` → one main effect per beat (`moti
 
 **Doodle gate (research/references/doodle-audit.md §5, accepted 18/10): stroke doodle is BANNED by default.** Only allowed when ALL hold, stated in the beat's fx table: (1) the beat's content IS an act of drawing/writing/cutting/connecting/a path — removing the stroke removes meaning, not just emphasis; (2) it draws on an object already existing in the scene, which persists or transforms into the next object (no invented prop to draw on, no floating stroke in empty space); (3) it uses the running scene's tdev/mmx easing and locks `at` to the spoken phrase + SFX like existing `dropAt`s (no separate doodleEase); (4) max 1 drawn moment per clip unless the script truly needs more and Hiệp approves first. The 4 doodle demos + b06 crack test are rejected references — keep them to remember why, never use as standard.
 
-### 2a. Script voice + structure (rule 64, read docs/research/script-prompt-principles.md)
+### 2a. Script voice + structure (rule 64; writing-time summary now in `docs/research/craft-brief.md`, which replaces `docs/research/script-prompt-principles.md`)
 - **Meme stem delivery (L-036, trend «bản chất», `research/trends/2026-10-15/audio/delivery-analysis.md`):** every meme line = **opener stem | content payload** split with `|` (e.g. `Thứ hai là {nhấn: khi nào} | xuất hiện cái cảm giác khó chịu | … thì phải đổi việc liền.`). Stem words (`Thì cái bản chất`, `Thứ nhất`, `Thứ hai`, `Và cuối cùng`) slap +1 st; the payload gets exactly one `{nhấn: …}` (slow .78, +0.8 st, +1.5 dB, stretched) and the line end falls (−1.5 st), never rises. Keep stems verbatim from the trend audio; break long payloads into 2–3 phrases of ≥4 syllables. `check-rules` L-036 errors on a flat stem line.
 - **Voicing {nhấn:} lines:** `python3 pipeline/scripts/build-final.py <spec> --stage voice-phrase` runs `voice-phrase-f5.py` gen → F5 (2 seeds/phrase, 2 parallel batches) → STT pick + emphasis edits → stitch to `video-engine/public/voice/<voice_prefix>-<line>.wav` (+ `final/voice-stt-<prefix>.json`, L-016 exception). Set `spec.voice_prefix` (e.g. `v18`). `--stage all` runs it automatically when the spec contains `{nhấn:` and no cached `voice-stt-<prefix>.json`; specs without `{nhấn:` keep the old `voice-prosody.py` path.
 - Structure in `spec.structure`: Hook (≤2 sentences, opens an info gap) → Intro (why keep watching, open loop, callback prior clip) → Body (problem → exploration w/ real study + caveat → climax/how-to) → 1-sentence summary answering the hook → ONE CTA shorter than a sentence.
@@ -119,21 +130,21 @@ python3 pipeline/scripts/check-rules.py <clip>/ --stt                          #
 `check-rules` covers: finished total <300s including endcard/pauses/transitions, 120–180s target warning only, no hard total-word quota, hook/CTA, scene ≤ 8s, Omi week (rule-11), theme vs theme-map, beat ids, comic vs motion engine, EN-only captions + highlight indexes, no emoji, Be Vietnam Pro only + no CDN, no music, SFX allowed + sourced, every transition has an SFX + ambience bed (rule-50, DL-042: default whoosh-soft at part xfades, swish at scene/section changes, 0.12s lead, quiet; continuous ambience; never music), content-specific motion + accent SFX on marked hits (rule-51, DL-043: section `hits: [{id, f, sfx}]` → template `H(id, hit)` + mixed SFX at the same time; scenes use `sfx`; ≤3 per section), AI-tell phrases, particles / "bạn" / English mix, unconfirmed story items, voice presets (no cloning), STT of every line, post package (credit + license link + "đã chuyển thể", AI toggle + disclosure), video-engine validator; with `--final` also MP4 spec, −14 LUFS, contact sheet. A line failing STT: fix `say` or bump `take`, rebuild.
 
 ## 4b. Claim check + score (before gate 1)
-Taken from the old box agents Deep Research and Rule Reviewer (`docs/legacy-box/workflows-agents/`, retired 26/11). Run it after §4 passes, on every draft, and again when Hiệp sends a single script or a vX fix. Write the result to `final/review.md`, front-matter `title, date, type: review, tags, status: draft, source, verdict, score, script_hash` (`script_hash` = the value `check-rules` prints; it covers the VI/EN lines, so any later wording change makes the review stale). Never edit the script inside this step, only quote lines and propose replacements.
+Taken from the old box agents Deep Research and Rule Reviewer (`docs/legacy-box/workflows-agents/`, retired 26/11). Run it after §4 passes, on every draft, and again when Hiệp sends a single script or a vX fix. Write the result to `final/review.md`, front-matter `title, date, type: review, tags, status: draft, source, verdict, score, script_hash, feedback_seen`. `script_hash` = the value `check-rules` prints: a hash of the spoken VI words only (markup and punctuation ignored, tones kept), so the draft and the later spec give the same hash; any wording change makes the review stale. Before the spec exists, check with `check-rules.py --review <clip>/archive/script-vN-draft.md`. `feedback_seen` = number of rows in `final/feedback.md` the review has answered, one by one. Never edit the script inside this step, only quote lines and propose replacements.
 
 1. **Claim table.** Every research claim in `text`/`en` (number, mechanism, "nghiên cứu cho thấy…", effect size) gets one row:
 
    | Claim (as allowed to say) | Original source (author/year + matching passage) | 2nd independent source | Confidence | Allowed wording | Banned wording |
    |---|---|---|---|---|---|
 
-   - Open the original source and compare the exact passage; a search snippet or a source that won't open does not count.
+   - Open the original source and compare the exact passage (TinyFish fetch: MCP `fetch_content` or `python3 pipeline/scripts/tinyfish_client.py fetch <url>`; find it with `tinyfish_client.py search`); a search snippet or a source that won't open does not count.
    - Confidence: `cao` (original + ≥1 independent source agree), `vừa` (original only, or a moderate/conditional effect), `chặn` (secondary only, conflicting, or unreadable).
    - Keep 3 kinds apart: study result · speaker's inference · everyday illustration. An illustration (rule 67 comic detail, L-052) never carries a study number.
    - Say effects at the source's strength (g = 0,499 = "mức vừa"; banned: "chứng minh", "hơn hẳn", "nhớ hết", L-045). Any `chặn` row blocks gate 1 until the line is cut or reworded to what the source supports.
 2. **Score** with `logs/rule-scoring-rubric.md` §3 (A Hook 20 · B Flow 15 · C Clarity 20 · D Fact 15 · E Length/caption 15 · F Tone 10 · G CTA/gate pack 5). Every deduction quotes the line. Measurable items come from `check-rules` output; mark the rest as manual reading, never as automated.
 3. **Hard gates** (rubric §3 "Lỗi chặn"): invented or inflated fact · belittling the viewer (P-07/L-053) · missing safety line or CC BY 4.0 credit · medical/legal/dosage beyond source · any voice/render/publish before Chốt. One hit = not ready, whatever the total.
 4. **Open conflicts** between rules (rubric C-1/C-3, checklist X-0N, or a rubric anchor vs a newer DL/lesson, e.g. hook-shape gate vs `logs/hook-moves.md` variety): list both sides, don't fix toward one side.
-5. **Verdict** at the top of `review.md`: `ĐẠT — trình gate 1` (≥85, 0 hard gate, 0 open conflict) · `CHƯA ĐẠT — sửa nhỏ/vừa/lớn` (75–84 / 60–74 / <60: fix those lines, re-run §3–§4b, don't send yet) · `ĐẠT VỀ ĐIỂM — chờ Hiệp quyết <conflict>`. The thresholds and weights are still the rubric's proposal (§6); use them as the default until Hiệp changes them, and say so in `review.md`. **Enforced:** `check-rules.py content/clips/<clip>/` fails (✖ `review`) when `review.md` is missing, its `script_hash` doesn't match the current lines, or `verdict` is CHƯA ĐẠT; ĐẠT VỀ ĐIỂM is a ⚠.
+5. **Verdict** at the top of `review.md`: `ĐẠT — trình gate 1` (≥85, 0 hard gate, 0 open conflict) · `CHƯA ĐẠT — sửa nhỏ/vừa/lớn` (75–84 / 60–74 / <60: fix those lines, re-run §3–§4b, don't send yet) · `ĐẠT VỀ ĐIỂM — chờ Hiệp quyết <conflict>`. The thresholds and weights are still the rubric's proposal (§6); use them as the default until Hiệp changes them, and say so in `review.md`. **Enforced:** `check-rules.py content/clips/<clip>/` fails (✖ `review`) when `review.md` is missing, its `script_hash` doesn't match the current words, `feedback_seen` is below the rows in `final/feedback.md`, or `verdict` is CHƯA ĐẠT; ĐẠT VỀ ĐIỂM is a ⚠. `--review <draft.md>` runs the same check on a draft.
 
 ## 5. Review gate 1 (Hiệp): script
 Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + the `final/review.md` verdict line, score and any open conflict + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
@@ -203,6 +214,14 @@ Also write `post-checklist.md`. `check-rules --final` blocks on any gap.
 Send the MP4 + `post.md` (caption VI in "bạn" voice that asserts no unconfirmed fact, hashtags, HowToLiveBetter CC BY 4.0 credit + license link + "đã chuyển thể", AI toggle + disclosure line naming the characters who speak, exact form: "Giọng của Hiệp (nhân vật) và Omi trong video là giọng AI tổng hợp (F5-TTS)." — rule-46/DL-035, check-rules errors if "F5-TTS" is missing) + `check-rules.txt` summary + confirm list. Agent never posts.
 
 ## 8. Feedback loop
+**First, before anything else:** append a row to `final/feedback.md` (create it with front-matter `title, date, type: feedback, tags, status: living, source` and the table header if missing):
+
+| thời gian | bản (commit) | lời Hiệp nguyên văn | đã xử lý ở |
+|---|---|---|---|
+| 2026-11-26 06:55 | 8df074e | «Các câu văn vẫn rời rạc…» | (điền khi sửa) |
+
+Quote him word for word, never a summary. The reviewer (§4b) reads this file and must answer every row; `check-rules` blocks gate 1 while `feedback_seen` < rows. A note repeated twice still becomes a lesson (rule-36).
+
 Hiệp gives feedback by beat id, one per line:
 ```
 b03: đổi câu "…" thành "…"
