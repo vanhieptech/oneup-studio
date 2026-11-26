@@ -76,3 +76,9 @@ Có 25 mẫu: 5 bản duyệt và 20 bản bị bác. Trong 20 bản bị bác, 
 - **Bản duyệt clip-04:** mẫu trỏ tới `final/script-v18-LOCKED.md`, không trỏ tới `final/script-final.md`, vì file script-final.md đó là nháp script-v07 cũ (status: draft).
 - **Bản duyệt clip-01 và clip-02:** chưa tìm thấy chữ duyệt nguyên văn. Mục trong index chỉ ghi nguồn gián tiếp (DL-041; post.md «Hiệp duyệt bản v17 final 16/10»). Front-matter script-final.md của clip-02 vẫn ghi `status: draft`.
 - **Không đưa vào:** r16 C1–C3 (Hiệp bác 11/11 nhưng không có câu nguyên văn) và r10.2 (không có kết luận của Hiệp).
+
+## Kết quả đo reviewer
+
+| Ngày | Model | Bắt đúng bản bị bác | Cho qua bản đã duyệt | Ghi chú |
+|---|---|---|---|---|
+| 2026-11-26 | sonnet | 15/15 (100%) | 0/3 (0%), thêm 2 bản không có verdict | **Reviewer quá khắt khe: bác mọi bản, kể cả bản Hiệp đã duyệt.** Chưa dùng được làm cổng. Cần nới quy tắc verdict trong `docs/prompts/reviewer-script.md`, rồi đo lại. Chi phí 8,67 USD. Chi tiết: `eval-2026-11-26.json` |

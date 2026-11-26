@@ -1,0 +1,202 @@
+{
+ "date": "2026-11-26",
+ "model": "sonnet",
+ "prompt": "docs/prompts/reviewer-script.md",
+ "metrics": {
+  "rejected_caught_pct": 100.0,
+  "rejected_n": 15,
+  "approved_passed_pct": 0.0,
+  "approved_n": 3,
+  "no_verdict": 2,
+  "skipped": 5,
+  "target_rejected_caught_pct": 90,
+  "cost_usd": 8.6688
+ },
+ "rows": [
+  {
+   "id": "r-c05-v2",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4769815,
+   "ok": true,
+   "tail": "A, lỗi chặn #4) đòi \"bạn + pain + câu hỏi\" ở hook. L-103 đến L-105 và craft brief B4 lại đòi hook là mở đầu một câu chuyện, ngôi một. Hook của bản này đứng về phía rubric. Hiệp chưa quyết bên nào thắng.\n- **Ngôi kể:** craft brief C11 và L-089 đòi một ngôi xuyên suốt. Rubric A đòi \"bạn\" ở hook. Bản này đi bạn → mình → bạn. Đây là chỗ hai luật đụng nhau, mình ghi cả hai bên.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c05-v4",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4137338,
+   "ok": true,
+   "tail": "ôn học, nhưng nháp dùng Di truyền. Mình không thấy luật nào mâu thuẫn ở điểm này, chỉ là vi phạm.\n\nChỗ cần sửa nhất:\n1. Viết lại b5 thành cách làm cụ thể (làm gì trong ba tiếng, chia thế nào).\n2. Sửa b7 để «hai bước» chỉ tới đúng hai việc đã kể.\n3. Đổi ví dụ khỏi môn học.\n4. Đổi khung gốc theo L-095, vì khung hiện tại đang lặp r4 và r8.2.\n5. Kiểm lại b6 với file nguồn.\n\nVERDICT: CHƯA ĐẠT — sửa lớn"
+  },
+  {
+   "id": "r-c05-r4",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4088162,
+   "ok": true,
+   "tail": "và L-103–L-105 muốn hook là mở đầu một câu chuyện, có cái giá và chỗ bất ngờ. Mục 11 còn đòi một ngôi kể xuyên suốt, mà bản này đổi từ «bạn» sang «mình» ngay beat 2.\n- Tôi không chọn bên nào. Các lỗi dẫn đến CHƯA ĐẠT ở trên đều độc lập với X-A.\n- Ngưỡng 85/75/60 trong rubric vẫn là đề xuất chờ Hiệp duyệt. Tôi dùng tạm, và bản này rớt cả theo luật verdict lẫn theo điểm.\n\nVERDICT: CHƯA ĐẠT — sửa lớn"
+  },
+  {
+   "id": "r-c05-r53b",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4757776,
+   "ok": true,
+   "tail": "đến L-105 đòi hook kể chuyện, và L-105 chê chính kiểu kể \"bạn\" về việc người xem tự làm là nghe như dựng cảnh. Nháp nằm ở giữa hai luật. Tôi không chọn bên nào, chủ kênh quyết.\n- **Câu trả lời \"Có thể vì\":** L-094 đòi câu hỏi hook được trả lời ngay. Nháp trả lời bằng giả thuyết \"có thể\" rồi mới nhờ nghiên cứu xác nhận. Có đủ để coi là trả lời hay không, tôi không tự quyết.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c05-r65",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.490199,
+   "ok": true,
+   "tail": " là hook và theo hướng story telling\", và hook kể chuyện ngôi một. Nháp không theo phía này.\n  - Tôi không tự chọn. Dù chọn bên nào, câu \"Video này vài hôm nữa chắc bạn cũng quên…\" vẫn không đạt, vì nó đi theo cả hai hướng mà không làm tròn hướng nào.\n\nViệc đọc to cả bài trước khi chấm luật (bài học L-089) mới là cổng thật, và bản này sẽ trượt ở B1→B2 ngay lần đọc đầu.\n\nVERDICT: CHƯA ĐẠT — sửa lớn"
+  },
+  {
+   "id": "r-c05-r67b",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.380218,
+   "ok": true,
+   "tail": "X-B (CTA):**\n  - Rubric G đòi CTA \"comment con số\".\n  - Craft-brief mục 14 đòi câu hỏi người xem trả lời bằng chính chuyện của họ.\n  - Nháp theo bên craft-brief.\n\nDù chủ kênh chọn bên nào ở X-A và X-B, nháp vẫn rớt vì các lỗi mạch, nguồn, câu không ai nói ở b2–b4 và trùng khuôn bản bị bác. Mức \"lớn\" là vì nháp chỉ là r6.8 cắt một câu, nên vá câu sẽ lặp lại vòng cũ (L-095).\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c05-r68",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4195935,
+   "ok": true,
+   "tail": "05 chê. Mình không chọn bên nào, chủ kênh quyết.\n- **Craft-brief #11** («bạn» chỉ khi khung chuyện làm việc đó tự nhiên) cũng nằm ở phía L-105.\n\nCần sửa cho đúng chỗ đứt: bỏ hoặc dời câu trend khỏi giữa hook và trả lời, nói rõ nghiên cứu là câu trả lời, thống nhất «một tuần» với lời khuyên, và cắt «tự kể» hoặc cho nó dẫn chứng riêng. Với ý tưởng gốc, L-095 yêu cầu đổi hẳn.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c05-r612",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.47784780000000004,
+   "ok": true,
+   "tail": "thỏa điều này.\n- **L-103 đến L-105** đòi hook là mở đầu một câu chuyện. Riêng L-105 chê kể ngôi \"bạn\" về việc người xem tự làm vì nghe như dựng cảnh, và hook của nháp đúng kiểu đó. L-104 còn chê câu tự hỏi là câu hỏi nghiên cứu, và \"Sao đọc tới hai lần mà vẫn quên?\" cũng giống vậy.\n\nMình không chọn bên nào. Xung đột này không đổi verdict, vì các lỗi khác đã đủ để CHƯA ĐẠT.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c05-r82",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.43144,
+   "ok": true,
+   "tail": ". L-103 đến L-105 đòi hook là mở đầu một câu chuyện, giọng như kể cho bạn thân. Nháp này nằm ở giữa và không thỏa bên nào. Tôi không tự chọn.\n- **Trend:** L-084/L-090 đòi trend nghe thấy ở hook (b01–b02). L-094, L-107 và craft-brief §A3 cấm chen câu trend vào giữa hook và câu trả lời. Nháp đặt trend ở b2, đúng L-084 nhưng phạm L-094. Chủ kênh cần quyết trend nằm ở đâu.\n\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r92",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4696494,
+   "ok": true,
+   "tail": "họn bên nào. Verdict không phụ thuộc vào xung đột này, vì nháp trượt ở nhiều điểm khác.\n- **Trend:** L-084 và L-090 đòi trend nghe được ở hook (b01–b02), còn L-092 và L-107 đòi câu sau phải là hệ quả của câu trước. Nháp đặt trend ở b02 nên đạt L-084, nhưng chính câu đó làm đứt mạch theo L-092. Việc này cần quyết ở khâu thiết kế khung, chưa phải mâu thuẫn giữa hai luật.\n\nVERDICT: CHƯA ĐẠT — sửa lớn"
+  },
+  {
+   "id": "r-c05-r114",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.4394884,
+   "ok": true,
+   "tail": "n tại + đúng một câu hỏi, không kể lể «mình».\n- **Bên kia:** L-103–L-105 đòi hook là mở đầu một câu chuyện (ngôi một), và craft brief mục 11 cho «bạn» chỉ khi khung chuyện làm việc đó tự nhiên.\n- **Nháp:** thỏa cả hai. Nó không có câu hỏi theo rubric, và cũng không phải chuyện theo L-103. Vì vậy xung đột này không làm đổi verdict. Quyết định thuộc chủ kênh, tôi không chọn.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c06-v2",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.44955130000000004,
+   "ok": true,
+   "tail": "uyện, ngôi kể nhất quán, lời như kể cho bạn thân.\n  - Nháp đi theo bên thứ hai. Theo bên thứ nhất là lỗi chặn.\n- **X-B, trend.**\n  - L-084: trend phải nghe được ở hook.\n  - L-094 và L-107: không chen trend giữa hook và chứng cứ.\n  - Nháp đặt trend ngay sau hook, nên thỏa vế đầu và vi phạm vế sau.\n- **C-1, credit CC BY 4.0:** vẫn chờ Hiệp, nháp không có dữ liệu để kết luận.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c06-v3",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.5702956,
+   "ok": true,
+   "tail": "ên rubric gốc** (§3 A, lỗi chặn #4): hook phải có «bạn» và một câu hỏi bám nỗi đau. Hook này kể ngôi «mình» và không có dấu hỏi nào, nên bị chặn.\n  - **Bên L-103–L-105:** hook là mở đầu một câu chuyện ngôi một, có cái giá. Hook này khớp hướng đó.\n  - Tôi không chọn bên nào. Dù chọn bên nào thì verdict vẫn là CHƯA ĐẠT vì mạch và claim, nên xung đột này chưa chặn quyết định.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c06-v3r2",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.5234422,
+   "ok": true,
+   "tail": "5 đòi hook kể chuyện. Hook này kể chuyện ngôi «mình», nên ở rubric gốc là lỗi chặn, còn theo L-103–105 là hợp lệ. Mình không chọn bên nào. Dù chọn bên nào thì verdict vẫn là CHƯA ĐẠT vì lỗi mạch ở mục 2.\n\nCòn một điểm nhỏ cần chủ kênh quyết: kết luận «tháng» có cần số liệu khác ngoài hai cực trị không. Gói fact cấm 66 ngày, nên thông điệp phải đổi cách nói thay vì thêm số.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "r-c06-v3r3",
+   "verdict_hiep": "rejected",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.690599,
+   "ok": true,
+   "tail": "nối vào câu hỏi), thêm một câu giải thích thước đo ở beat 3 hoặc 4, thêm trung vị hoặc bỏ «bình thường» ở beat 4, hạ «không có con số chung» và «phải», tách lại câu \"nếu… thì\" ở beat 9, thống nhất \"bữa/lượt\", và sửa CTA. Đây đều là sửa cục bộ. Ngay cả theo cách đọc khoan dung (60 điểm), nháp nằm ở mức \"sửa vừa\". Cách đọc nghiêm của X-A đẩy điểm xuống 50, tức \"sửa lớn\".\n\nVERDICT: CHƯA ĐẠT — sửa vừa"
+  },
+  {
+   "id": "r-c05-r153",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r174",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r183",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r1921",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "r-c05-r201",
+   "verdict_hiep": "rejected",
+   "skipped": "no words"
+  },
+  {
+   "id": "a-c01",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.41907010000000006,
+   "ok": false,
+   "tail": "á và lời hứa.\n- **X-B, ngôi kể:**\n  - Rubric A muốn \"bạn\".\n  - L-089 và craft-brief #11 muốn một ngôi xuyên suốt.\n  - Nháp đổi từ mình sang bạn giữa chừng, trái L-089 theo cả hai cách đọc.\n\nGhi chú: điểm ≈50 dưới ngưỡng 60 nên rubric xếp \"sửa lớn\". Khung truyện → tên gọi → ví dụ → bằng chứng → giới hạn → CTA vẫn dùng được. Phần cần viết lại là hook b01–b03, e05–e07 và b11.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "a-c02",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.5334765,
+   "ok": false,
+   "tail": " khung «bản chất» kèm vế đau.\n  - Nháp đi theo khung v21 nhưng bỏ vế đau, nên cả ba phía đều không thỏa.\n- **X-B châm biếm vs. ngôi kể:**\n  - *Craft brief C11 và P-07* đòi một ngôi kể xuyên suốt và không chê người học.\n  - *Ý tưởng của nháp* là châm biếm «phải» + «Đồ lười!» rồi lật lại ở b11.\n  - Cần chủ kênh quyết nháp có được dùng giọng mệnh lệnh châm biếm hay không.\n\nVERDICT: CHƯA ĐẠT — sửa lớn"
+  },
+  {
+   "id": "a-c03",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": "CHƯA ĐẠT",
+   "cost_usd": 0.5986451,
+   "ok": false,
+   "tail": "ột câu chuyện, không dựng cảnh bằng \"bạn\". Mình không chọn bên nào. Dù chọn bên nào, hook vẫn thiếu cái giá và chỗ bất ngờ.\n\n**Chưa làm xong:** chưa đối chiếu từng câu nháp với fact package của Steel và Kruger, và chưa kiểm câu \"clip trước\" nói gì. Hai việc này cần chạy lại khi còn dung lượng.\n\nGiới hạn dùng đã hết nên mình dừng ở đây. Verdict đặt ở dòng cuối đúng yêu cầu.\n\nVERDICT: CHƯA ĐẠT — lớn"
+  },
+  {
+   "id": "a-c04",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": null,
+   "cost_usd": 0,
+   "ok": false,
+   "tail": "You've hit your 5-hour limit · resets 6pm (Asia/Saigon)"
+  },
+  {
+   "id": "a-c05",
+   "verdict_hiep": "approved",
+   "verdict_reviewer": null,
+   "cost_usd": 0,
+   "ok": false,
+   "tail": "You've hit your 5-hour limit · resets 6pm (Asia/Saigon)"
+  }
+ ]
+}
