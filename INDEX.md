@@ -34,6 +34,7 @@ tags: [index, retrieval]
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
 | content.clips.clip-06-bong-hoa-chua-no.final.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | clip-06 v4 — §4b kiểm claim + chấm điểm |
+| clip-06.script-v3-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/final/script-v3-draft.md` | clip-06 v3 — DRAFT, chờ Hiệp duyệt Gate 1 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
@@ -65,7 +66,7 @@ tags: [index, retrieval]
 | prompt.content-bot | prompt | ready | `docs/prompts/content-bot-prompt.md` | Prompt bot nội dung OneUp (Hiệp gửi) |
 | prompts.gemini-teardown | prompt | ready | `docs/prompts/gemini-teardown.md` | Prompt Gemini teardown |
 | prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
-| prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập (Pairwise A/B) |
+| prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập (Pairwise A/B — Theme/Format-Matched Anchor) |
 | prompts.writer-hi-oneup | prompt | ready | `docs/prompts/writer-hi-oneup.md` | Prompt viết script @hi.oneup |
 | prompts.writer-vanhiep-tech | prompt | ready | `docs/prompts/writer-vanhiep-tech.md` | Prompt viết script @vanhiep.tech |
 | research.craft-brief | research | ready | `docs/research/craft-brief.md` | Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm) |
@@ -81,6 +82,7 @@ tags: [index, retrieval]
 | rule-checklist | checklist | active | `logs/rule-checklist.md` | Rule checklist hợp nhất — OneUp / @hi.oneup |
 | rule-scoring-rubric | rubric | proposal-awaiting-hiep | `logs/rule-scoring-rubric.md` | Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
+| run.verify-clip06-2026-11-26 | log | draft | `logs/runs/verify-clip06-2026-11-26.md` | Nghiệm thu clip-06 v3 (DRAFT — chờ Hiệp duyệt Gate 1) |
 | media.README | readme | ready | `media/README.md` | README |
 | pipeline.characters-v2.README | readme | ready | `pipeline/characters-v2/README.md` | Character rig v2 (chibi, liquid) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
@@ -238,6 +240,7 @@ tags: [index, retrieval]
 | teardown.selftest-clip02 | teardown | draft | `research/trends/2026-11-26/teardowns/selftest-clip02.md` | Teardown `selftest-clip02` (tự kiểm trên clip của kênh) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
+| trends.weekly-synthesis | trend-digest | active | `research/trends/weekly-synthesis.md` | Tổng hợp đa video — 2026-11-26 |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
 | trends-weekly-2026-W43 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W43.md` | Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10) |
 | trends-weekly-2026-W44 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W44.md` | Tổng hợp tuần 2026-W44 (thứ Hai 26/10 → Chủ nhật 01/11) |
@@ -246,8 +249,10 @@ tags: [index, retrieval]
 | vn-thesaurus | resource | ready | `resources/vn-dict/thesaurus.md` | Kho từ sắc (rule 58, DL-059) |
 | resources.vn-dict.vi50k-source | resource | ready | `resources/vn-dict/vi_50k.SOURCE.md` | Nguồn `vi_50k.txt` |
 | resources.vn-spoken | resource | ready | `resources/vn-spoken/README.md` | Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup |
+| resources.vn-spoken.audience-pain-bank | resource | ready | `resources/vn-spoken/audience-pain-bank.md` | Kho Nỗi Đau & Câu Hỏi Khán Giả Thật (Audience Pain Bank) |
 | resources.vn-spoken.phrase-bank | resource | ready | `resources/vn-spoken/phrase-bank.md` | Kho cụm từ văn nói (Nam Bộ / Gen Z) cho Hiệp chibi |
 | resources.vn-spoken.sources | resource | ready | `resources/vn-spoken/sources.md` | Sổ nguồn văn nói và kiến thức |
+| resources.vn-spoken.style-pairs | resource | ready | `resources/vn-spoken/style-pairs.md` | Kho Cặp Biến Đổi Phong Cách Thật (Style Few-Shot) |
 | resources.vn-spoken.voice-first | resource | ready | `resources/vn-spoken/voice-first.md` | Voice-First Input |
 | rules-active-checklist | rules | ready | `rules/ACTIVE-CHECKLIST.md` | Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm) |
 | rules | rules | active | `rules/video-rules.md` | @hi.oneup: Bộ luật sản xuất video (v3.21, 15/10/2026) |

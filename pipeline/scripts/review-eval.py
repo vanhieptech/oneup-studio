@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Measure the independent script reviewer against Hiệp's real verdicts (research/review-golden/).
 
-  review-eval.py [--mode pairwise|score] [--anchor auto|a-c05] [--engine agy|claude] [--model default|sonnet]
+  review-eval.py [--mode pairwise|score] [--anchor auto|a-c05] [--engine agy|claude|cursor] [--model default|sonnet|grok-4.7-medium]
                  [--limit N] [--only id,id] [--jobs 3] [--dry-run]
                  [--out research/review-golden/eval-<date>.json]
 
@@ -344,7 +344,13 @@ STOP = threading.Event()
 
 
 def _invoke_reviewer(prompt, tmp, model, engine="claude"):
-    """Run reviewer via `claude -p` or `agy -p` (Antigravity CLI fallback when Claude quota is exhausted)."""
+    """Run reviewer via `claude -p`, `agy -p`, or `cursor-agent -p` (ask mode, when the other CLIs are out of quota)."""
+    if engine == "cursor":
+        agent = shutil.which("cursor-agent") or str(Path.home() / ".local/bin/cursor-agent")
+        model_name = model if model and model not in ("sonnet", "default") else "grok-4.7-medium"
+        args = [agent, "-p", "--mode", "ask", "--trust", "--model", model_name, "--output-format", "text", prompt]
+        r = subprocess.run(args, capture_output=True, text=True, timeout=900, cwd=str(P.ROOT))
+        return {"result": r.stdout}, r.stdout, r.stderr, model_name
     if engine == "agy":
         if not P.AGY_BIN or not os.path.exists(P.AGY_BIN):
             raise SystemExit("agy CLI not found (AGY_BIN)")
@@ -475,10 +481,10 @@ def main():
     if mode not in ("pairwise", "score"):
         raise SystemExit("--mode must be pairwise or score")
     engine = opt("--engine", "claude")
-    if engine not in ("claude", "agy"):
-        raise SystemExit("--engine must be claude or agy")
+    if engine not in ("claude", "agy", "cursor"):
+        raise SystemExit("--engine must be claude, agy, or cursor")
     anchor_pref = opt("--anchor")
-    model = opt("--model", "sonnet" if engine == "claude" else "default")
+    model = opt("--model", "sonnet" if engine == "claude" else ("grok-4.7-medium" if engine == "cursor" else "default"))
     all_ss = samples()
     ss = list(all_ss)
     if opt("--only"):

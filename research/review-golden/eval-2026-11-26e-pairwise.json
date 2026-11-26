@@ -1,21 +1,22 @@
 {
  "date": "2026-11-26",
- "engine": "agy",
- "model": "default",
+ "engine": "agy+cursor",
+ "model": "agy default (6 mẫu đầu) + cursor-agent grok-4.7-medium (14 mẫu quota)",
  "mode": "pairwise",
  "anchor": "auto-theme-format-matched",
  "prompt": "docs/prompts/reviewer-script.md",
+ "note": "ff45901 dừng vì agy hết quota (14 error). Claude CLI cũng chạm hạn 5 giờ. 14 mẫu chạy lại bằng cursor-agent --mode ask --model grok-4.7-medium. 5 mẫu skipped: no words, không chạy lại.",
  "metrics": {
   "mode": "pairwise",
-  "rejected_caught": "6/6",
-  "approved_passed": "0/0",
+  "rejected_caught": "15/15",
+  "approved_passed": "3/5",
   "rejected_caught_pct": 100.0,
-  "rejected_n": 6,
-  "approved_passed_pct": null,
-  "approved_n": 0,
-  "balanced_accuracy_pct": null,
+  "rejected_n": 15,
+  "approved_passed_pct": 60.0,
+  "approved_n": 5,
+  "balanced_accuracy_pct": 80.0,
   "no_verdict": 0,
-  "errors": 14,
+  "errors": 0,
   "skipped": 5,
   "target": "rejected ≥ 14/15, approved all",
   "verdict_source": "review_tiers (pairwise A/B theme-matched + H1–H4)",
@@ -23,12 +24,12 @@
   "pairwise_rejected": {
    "WIN": 0,
    "TIE": 0,
-   "LOSE": 6
+   "LOSE": 15
   },
   "pairwise_approved": {
-   "WIN": 0,
-   "TIE": 0,
-   "LOSE": 0
+   "WIN": 1,
+   "TIE": 2,
+   "LOSE": 2
   }
  },
  "rows": [
@@ -263,56 +264,334 @@
   {
    "id": "r-c05-r68",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m28s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m28s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"7d6acfaa-af85-47f6-9c59-35c002a74a58-5\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c05",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.249,
+    "craft_bonus": 2.5,
+    "score": 18.149,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 2: bỏ cả câu trend «đọc nhiều có giúp viết hay hơn không» và hai câu nhắc lại quên; từ câu hỏi Beat 1 đi thẳng sang thí nghiệm",
+    "Beat 3: thay «Một nghiên cứu… nhớ hơn… không còn hơn… vẫn nhớ hơn» bằng một thí nghiệm có năm và cỡ mẫu trong lời đọc (tên tác giả để trên màn hình), một nhịp kết quả rồi một nhịp lật",
+    "Beat 4 và Beat 6: nếu dẫn chứng chỉ nói giãn lần đọc lại thì cách làm dừng ở «để vài hôm mới đọc lại»; «tự kể trước khi mở sách» phải đi với thí nghiệm tự nhớ, không gắn vào câu nghiên cứu này; CTA đổi «Kể OneUp nghe nha» thành kể mình nghe."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Một nghiên cứu về cách đọc thấy rằng, so với đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Nhưng hai ngày sau không còn hơn. Còn để một tuần mới đọc lại thì hai ngày sau vẫn nhớ hơn."
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "hẳng sang thí nghiệm; 2. Beat 3: thay «Một nghiên cứu… nhớ hơn… không còn hơn… vẫn nhớ hơn» bằng một thí nghiệm có năm và cỡ mẫu trong lời đọc (tên tác giả để trên màn hình), một nhịp kết quả rồi một nhịp lật; 3. Beat 4 và Beat 6: nếu dẫn chứng chỉ nói giãn lần đọc lại thì cách làm dừng ở «để vài hôm mới đọc lại»; «tự kể trước khi mở sách» phải đi với thí nghiệm tự nhớ, không gắn vào câu nghiên cứu này; CTA đổi «Kể OneUp nghe nha» thành kể mình nghe.\nCONFLICTS: Beat 3 là giãn lần đọc lại, Beat 4 là tự kể khi sách đóng — hai cơ chế khác nhau; Hiệp chọn một trước khi sửa nguồn.\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c05-r612",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m27s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m27s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"8057a189-86f0-4d07-a9f6-9b3fdb1fb355-5\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c05",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.26,
+    "craft_bonus": 2.5,
+    "score": 18.16,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 3: bỏ «Trong một nghiên cứu»; gắn năm và cỡ mẫu, nói rõ hơn nhóm nào, cắt chuỗi «nhớ hơn / không còn hơn / vẫn nhớ hơn»",
+    "Beat 2: cắt «đọc nhiều có giúp viết hay hơn không», nối thẳng câu hỏi hook sang lý do quên",
+    "Beat 6: đổi «Kể OneUp nghe nha» thành kể cho mình; Beat 4 chỉ giữ một cách làm đúng với thí nghiệm vừa dẫn"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Trong một nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đợi hai ngày rồi hỏi thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn."
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": " nghiên cứu, so với chỉ đọc một lần, đọc liền hai lần thì ngay sau đó nhớ hơn. Đợi hai ngày rồi hỏi thì không còn hơn. Còn người để một tuần mới xem lại, hai ngày sau lần xem đó vẫn nhớ hơn.\nPAIRWISE: LOSE (so với a-c05)\nTOP_FIXES: 1. Beat 3: bỏ «Trong một nghiên cứu»; gắn năm và cỡ mẫu, nói rõ hơn nhóm nào, cắt chuỗi «nhớ hơn / không còn hơn / vẫn nhớ hơn»; 2. Beat 2: cắt «đọc nhiều có giúp viết hay hơn không», nối thẳng câu hỏi hook sang lý do quên; 3. Beat 6: đổi «Kể OneUp nghe nha» thành kể cho mình; Beat 4 chỉ giữ một cách làm đúng với thí nghiệm vừa dẫn\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c05-r82",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m33s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m33s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"29e41efc-e8e3-4e19-a737-eade5b550d93-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c05",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.267,
+    "craft_bonus": 2.5,
+    "score": 18.167,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 2: bỏ câu «trên mạng bàn đọc nhiều có giúp viết hay hơn không», nối thẳng từ «kể không ra» sang thí nghiệm",
+    "Beat 3: gắn năm hoặc cỡ mẫu vào lời đọc, và để kết quả đúng một cơ chế với cách làm ở beat 4 (ôn cách ngày, hoặc gấp sách kể — không cả hai)",
+    "Beat 4 và CTA: đổi «Cẩm nang sống đáng giá khuyên» / «ôn lại cần cách ra» thành câu nói, CTA xưng mình thay vì OneUp"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Một nghiên cứu thử đúng chuyện này."
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "ày vòng trend, nguồn mơ hồ, khâu hai cơ chế, câu nghe như sách. Hiệp không cho qua Gate 1.\n\nHARD_FAILS: H1: Một nghiên cứu thử đúng chuyện này.\nPAIRWISE: LOSE (so với a-c05)\nTOP_FIXES: 1. Beat 2: bỏ câu «trên mạng bàn đọc nhiều có giúp viết hay hơn không», nối thẳng từ «kể không ra» sang thí nghiệm; 2. Beat 3: gắn năm hoặc cỡ mẫu vào lời đọc, và để kết quả đúng một cơ chế với cách làm ở beat 4 (ôn cách ngày, hoặc gấp sách kể — không cả hai); 3. Beat 4 và CTA: đổi «Cẩm nang sống đáng giá khuyên» / «ôn lại cần cách ra» thành câu nói, CTA xưng mình thay vì OneUp\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c05-r92",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m29s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m29s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"f9047f74-333e-40f9-b083-a2fa89797436-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c05",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.256,
+    "craft_bonus": 2.5,
+    "score": 18.156,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 3: bỏ «Nhiều nghiên cứu thấy…»; nêu năm, cỡ mẫu và kết quả đo (kiểu 2006, 120 sinh viên, sau một tuần tự viết 56% so với đọc lại 42%), và nói bước mở sách dò không nằm trong thí nghiệm đó",
+    "Beat 2: bỏ câu đồng nghiệp «đọc nhiều có giúp viết hay hơn không»; giữ một cảnh bị hỏi chương tiêu tiền rồi chỉ còn «hay lắm»",
+    "Beat 4–6: đổi «kể được khi sách gấp» và «Chỗ sót ấy…» sang câu nói được; kết đừng hứa «thường kể ra được», chỉ giao gấp sách kể một ý rồi bình luận"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [
+    "H1: Nhiều nghiên cứu thấy tự kể rồi mở sách dò có ích hơn chỉ đọc lại."
+   ],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "y tự kể rồi mở sách dò có ích hơn chỉ đọc lại.\nPAIRWISE: LOSE (so với a-c05)\nTOP_FIXES: 1. Beat 3: bỏ «Nhiều nghiên cứu thấy…»; nêu năm, cỡ mẫu và kết quả đo (kiểu 2006, 120 sinh viên, sau một tuần tự viết 56% so với đọc lại 42%), và nói bước mở sách dò không nằm trong thí nghiệm đó; 2. Beat 2: bỏ câu đồng nghiệp «đọc nhiều có giúp viết hay hơn không»; giữ một cảnh bị hỏi chương tiêu tiền rồi chỉ còn «hay lắm»; 3. Beat 4–6: đổi «kể được khi sách gấp» và «Chỗ sót ấy…» sang câu nói được; kết đừng hứa «thường kể ra được», chỉ giao gấp sách kể một ý rồi bình luận\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c05-r114",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m26s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m26s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"9304f00d-0be3-4fd0-a38a-966244be0dd3-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c05",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.198,
+    "craft_bonus": 2.5,
+    "score": 18.098,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1: một nhịp gấp trang là quên, không biết mình thiếu chỗ nào — bỏ câu «không chỉ biết mình quên»",
+    "Beat 2: bỏ «Text hip ở Hàn…», nối thẳng vì sao đọc lại không chỉ ra chỗ hổng",
+    "Beat 3 và 5: kể Dunlosky 2013 bằng câu nói (mười kỹ thuật, tự kiểm hơn đọc lại), bỏ «Cẩm nang sống đáng giá», sửa «bài nhắc» thành trang chi tiêu đang cầm"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": " chi tiêu chưa rõ).\n\nChốt: Hiệp duyệt `a-c05` thì bản này bị trả làm lại — mạch không thẳng và câu không nói được, dù có tên nghiên cứu và một ví dụ đời thường.\n\nHARD_FAILS: không\nPAIRWISE: LOSE (so với a-c05)\nTOP_FIXES: 1. Beat 1: một nhịp gấp trang là quên, không biết mình thiếu chỗ nào — bỏ câu «không chỉ biết mình quên»; 2. Beat 2: bỏ «Text hip ở Hàn…», nối thẳng vì sao đọc lại không chỉ ra chỗ hổng; 3. Beat 3 và 5: kể Dunlosky 2013 bằng câu nói (mười kỹ thuật, tự kiểm hơn đọc lại), bỏ «Cẩm nang sống đáng giá», sửa «bài nhắc» thành trang chi tiêu đang cầm\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c06-v2",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m20s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m20s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"3b83369b-f57e-4826-9932-e97634de6f5e-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c03",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.281,
+    "craft_bonus": 2.5,
+    "score": 19.981,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination + format story_metaphor"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1: cắt còn hai nhịp (bỏ ngày 22 + cái giá), đưa «21 ngày không phải hạn chung» ngay, bỏ câu hỏi lặp «sao ai cũng quen»",
+    "Beat 2: bỏ trend bông hoa và «chột dạ» — đang lặp beat 1, trì hoãn Lally",
+    "Beat 7–8 và CTA: gộp «lỡ một tối» vào cách làm trước khi chốt, đổi «không làm hỏng gì đáng kể quá trình tạo thói quen» và «Gõ tên nó xuống bình luận» sang câu nói"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "back.md` cũ để đối chiếu.\n\nChốt: hook, mạch, và giọng đều thua bản Hiệp đã duyệt, và dính ba điểm mù. Payoff đi bộ không kéo lại được.\n\nHARD_FAILS: không\nPAIRWISE: LOSE (so với a-c03)\nTOP_FIXES: 1. Beat 1: cắt còn hai nhịp (bỏ ngày 22 + cái giá), đưa «21 ngày không phải hạn chung» ngay, bỏ câu hỏi lặp «sao ai cũng quen»; 2. Beat 2: bỏ trend bông hoa và «chột dạ» — đang lặp beat 1, trì hoãn Lally; 3. Beat 7–8 và CTA: gộp «lỡ một tối» vào cách làm trước khi chốt, đổi «không làm hỏng gì đáng kể quá trình tạo thói quen» và «Gõ tên nó xuống bình luận» sang câu nói\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c06-v3",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m20s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m20s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"633f930a-ffc6-4e39-b533-7e2255375093-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c03",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.282,
+    "craft_bonus": 2.5,
+    "score": 19.982,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination + format story_metaphor"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1–2: cắt còn 1–2 nhịp (ba năm đi làm vs ba tuần hít đất) rồi vào thẳng bao lâu mới quen; bỏ «lát mình kể», «Lý do nghe mới quê», và cả beat trend lặp ý",
+    "Beat 7–8: chốt một lần ở «tính theo tháng»; nhập «nghỉ một buổi» vào cách làm, đừng mở «phát hiện thứ hai»",
+    "Beat 4–5, 8, 12: đổi «tự động tới đâu», «bối cảnh», «cẩm nang», «chột dạ», «mức quen tay cao nhất», «không ảnh hưởng gì đáng kể tới quá trình tạo thói quen», «Gõ tên nó xuống bình luận» sang câu nói khi kể cho bạn."
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "\n## 3. Kết luận\n\nHARD_FAILS: không\nPAIRWISE: LOSE (so với a-c03)\nTOP_FIXES: 1. Beat 1–2: cắt còn 1–2 nhịp (ba năm đi làm vs ba tuần hít đất) rồi vào thẳng bao lâu mới quen; bỏ «lát mình kể», «Lý do nghe mới quê», và cả beat trend lặp ý; 2. Beat 7–8: chốt một lần ở «tính theo tháng»; nhập «nghỉ một buổi» vào cách làm, đừng mở «phát hiện thứ hai»; 3. Beat 4–5, 8, 12: đổi «tự động tới đâu», «bối cảnh», «cẩm nang», «chột dạ», «mức quen tay cao nhất», «không ảnh hưởng gì đáng kể tới quá trình tạo thói quen», «Gõ tên nó xuống bình luận» sang câu nói khi kể cho bạn.\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c06-v3r2",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m19s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m19s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"f9760d17-d004-4677-a424-91906ae751e0-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c03",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.289,
+    "craft_bonus": 2.5,
+    "score": 19.989,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination + format story_metaphor"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1–2: cắt «lát mình kể kết quả» và xóa beat trend «Đại ý là…»; hook dừng ở tương phản ba năm / ba tuần rồi vào thẳng Lally",
+    "Beat 3 và beat 8: bỏ hai lý do đi làm và «phát hiện thứ hai» sau câu chốt beat 7; một đường: vẫn làm biếng → 18–254 ngày → tính bằng tháng → đánh răng xong là hít",
+    "Beat 4–5 và CTA: đổi «thành tự động tới đâu» / «quen gần tới mức cao nhất của chính người đó» thành «tự chấm coi đã thành quen chưa», CTA đổi «Viết tên nó xuống bình luận» thành câu hỏi nói được"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": " che mất.\n\nHARD_FAILS: không\nPAIRWISE: LOSE (so với a-c03)\nTOP_FIXES: 1. Beat 1–2: cắt «lát mình kể kết quả» và xóa beat trend «Đại ý là…»; hook dừng ở tương phản ba năm / ba tuần rồi vào thẳng Lally; 2. Beat 3 và beat 8: bỏ hai lý do đi làm và «phát hiện thứ hai» sau câu chốt beat 7; một đường: vẫn làm biếng → 18–254 ngày → tính bằng tháng → đánh răng xong là hít; 3. Beat 4–5 và CTA: đổi «thành tự động tới đâu» / «quen gần tới mức cao nhất của chính người đó» thành «tự chấm coi đã thành quen chưa», CTA đổi «Viết tên nó xuống bình luận» thành câu hỏi nói được\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c06-v3r3",
    "verdict_hiep": "rejected",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m15s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m15s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"e2908001-2fa1-4e78-84bc-ef2353d3001c-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c03",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.326,
+    "craft_bonus": 2.5,
+    "score": 20.026,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination + format story_metaphor"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "Beat 1–2: cắt câu «chia sẻ nhiều trên mạng / Đại ý là»; đưa câu hỏi «bao lâu mới thành thói quen» ngay sau đối lập ba năm đi làm và ba tuần hít đất",
+    "Beat 6–8: bỏ danh sách ba lý do đi làm; sau mốc 18–254 ngày nối thẳng sang một cách làm (gắn sau đánh răng, tính bằng tháng, lỡ một bữa thì sáng mai làm tiếp)",
+    "Beat 3, 4 và 11: đổi «thành tự động tới đâu», «quen gần tới mức cao nhất của họ», «Viết tên nó xuống bình luận» sang câu nói miền Nam"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "ng chỗ từng bị bác. Hiệp sẽ bảo làm lại trước Gate 1.\n\nHARD_FAILS: không\nPAIRWISE: LOSE (so với a-c03)\nTOP_FIXES: 1. Beat 1–2: cắt câu «chia sẻ nhiều trên mạng / Đại ý là»; đưa câu hỏi «bao lâu mới thành thói quen» ngay sau đối lập ba năm đi làm và ba tuần hít đất; 2. Beat 6–8: bỏ danh sách ba lý do đi làm; sau mốc 18–254 ngày nối thẳng sang một cách làm (gắn sau đánh răng, tính bằng tháng, lỡ một bữa thì sáng mai làm tiếp); 3. Beat 3, 4 và 11: đổi «thành tự động tới đâu», «quen gần tới mức cao nhất của họ», «Viết tên nó xuống bình luận» sang câu nói miền Nam\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "r-c05-r153",
@@ -342,32 +621,182 @@
   {
    "id": "a-c01",
    "verdict_hiep": "approved",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m19s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m19s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"08a4e6e5-3fc9-4635-b26d-21898fcd4c29-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c03",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.253,
+    "craft_bonus": 2.5,
+    "score": 19.878,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination + format story_metaphor"
+   },
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "e05 «hiệu ứng vừa tới lớn»: đổi thành câu nói, ví dụ «hơn hẳn nhóm không viết sẵn»",
+    "e06 «dừng việc chắc chắn không thành»: bỏ ý thứ ba, chỉ giữ bắt tay làm và lúc bị gián đoạn",
+    "e04 «viết phần mở đầu»: đổi thành một câu nếu–thì vẫn là bài TOEIC, cùng mạch listening ở e03"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "ng dẫn chứng rỗng kiểu «nhớ hơn… vẫn hơn», không giọng Bắc, không xưng OneUp.\n\nDraft ngắn và mộc hơn Anchor, nhưng hook hai nhịp, một mạch, giọng kể phần lớn là nói. Mức đó ngang bản đã duyệt, chưa tới mức làm lại.\n\n## 3. Kết luận\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c03)\nTOP_FIXES: 1. e05 «hiệu ứng vừa tới lớn»: đổi thành câu nói, ví dụ «hơn hẳn nhóm không viết sẵn»; 2. e06 «dừng việc chắc chắn không thành»: bỏ ý thứ ba, chỉ giữ bắt tay làm và lúc bị gián đoạn; 3. e04 «viết phần mở đầu»: đổi thành một câu nếu–thì vẫn là bài TOEIC, cùng mạch listening ở e03\nCONFLICTS: không\nVERDICT: ĐẠT\n"
   },
   {
    "id": "a-c02",
    "verdict_hiep": "approved",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m18s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m18s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"07a661fa-3b55-4945-a05a-48624e46a192-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c03",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "instructional_list",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.406,
+    "craft_bonus": 2.5,
+    "score": 18.031,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "b01–b02: mở bằng một buổi cụ thể có cái giá (mở laptop định làm, lướt một cái là mất buổi), bỏ câu «bản chất… là gì»",
+    "b03–b06: bỏ «các bạn phải» và ba bước rời, kể một mạch giường → mở file khó chịu → tự chửi rồi để mai",
+    "b08–b09c: sau ba yếu tố của Steel chỉ nên chốt ý né khó chịu cho khớp, đổi «Không ai hối? Tự đặt ngày xong» thành một việc ngay (tối nay gõ một dòng)"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": false,
+   "tail": "ng vào thẳng, mạch liệt kê không thành một đường, giọng giảng dày hơn `a-c03`. Hiệp duyệt `a-c03` thì bản này bị trả làm lại.\n\nHARD_FAILS: không\nPAIRWISE: LOSE (so với a-c03)\nTOP_FIXES: 1. b01–b02: mở bằng một buổi cụ thể có cái giá (mở laptop định làm, lướt một cái là mất buổi), bỏ câu «bản chất… là gì»; 2. b03–b06: bỏ «các bạn phải» và ba bước rời, kể một mạch giường → mở file khó chịu → tự chửi rồi để mai; 3. b08–b09c: sau ba yếu tố của Steel chỉ nên chốt ý né khó chịu cho khớp, đổi «Không ai hối? Tự đặt ngày xong» thành một việc ngay (tối nay gõ một dòng)\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "a-c03",
    "verdict_hiep": "approved",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m11s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m11s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"3399af8f-4242-433a-be45-9959da885b92-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c02",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "habit_procrastination",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "habit_procrastination",
+    "jaccard": 0.406,
+    "craft_bonus": 2.5,
+    "score": 18.031,
+    "reason": "kênh @hi.oneup + chủ đề habit_procrastination"
+   },
+   "verdict_reviewer": "CẦN SỬA",
+   "verdict_llm": "CẦN SỬA",
+   "pairwise": "LOSE",
+   "top_fixes": [
+    "b03–b04: chọn một cơ chế cho «cái tên việc» — hoặc nhìn vô là ngợp, không biết bắt đầu, hoặc nhìn mỗi cái tên thì tưởng chút xíu là xong (Kruger); hai câu này đang nói hai hướng ngược",
+    "b05: bỏ vòng «càng ngại đụng vô… Mà việc càng to thì mình càng ngại»; nếu giữ Steel thì một câu nối thẳng vào việc để cả năm, có quy mô (kiểu «691 kết quả» ở a-c02) thay cho «rất nhiều nghiên cứu»",
+    "b09: «clip trước… clip đầu tiên» nhắc lại chia nhỏ sau khi b06–b08 đã chỉ cách làm; giữ một việc tối nay cho khớp «dọn phòng» / «một đề»"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": false,
+   "tail": "WISE: LOSE (so với a-c02)\nTOP_FIXES: 1. b03–b04: chọn một cơ chế cho «cái tên việc» — hoặc nhìn vô là ngợp, không biết bắt đầu, hoặc nhìn mỗi cái tên thì tưởng chút xíu là xong (Kruger); hai câu này đang nói hai hướng ngược; 2. b05: bỏ vòng «càng ngại đụng vô… Mà việc càng to thì mình càng ngại»; nếu giữ Steel thì một câu nối thẳng vào việc để cả năm, có quy mô (kiểu «691 kết quả» ở a-c02) thay cho «rất nhiều nghiên cứu»; 3. b09: «clip trước… clip đầu tiên» nhắc lại chia nhỏ sau khi b06–b08 đã chỉ cách làm; giữ một việc tối nay cho khớp «dọn phòng» / «một đề»\nCONFLICTS: không\nVERDICT: CẦN SỬA\n"
   },
   {
    "id": "a-c04",
    "verdict_hiep": "approved",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m12s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m12s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"a091f85a-e8dc-4fb7-a60f-a7a85784cb31-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c05",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "story_metaphor",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "instructional_list",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.254,
+    "craft_bonus": 2.5,
+    "score": 18.129,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "WIN",
+   "top_fixes": [
+    "b03a–b03c: nối «năm 2006 thấy,» cho thành câu nói, và hạ «nhớ hơn hẳn» cho sát mức chênh",
+    "b04: đổi «Mình cần là sáng hôm sau» thành câu miệng kiểu «Mình cần sáng hôm sau gấp sách vẫn viết ra được»",
+    "b06b: bỏ lần lặp «kiểm tra nhỏ» thứ hai"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "là», không hứa «lát kể». Không rẽ sang bài thứ hai. Không «cẩm nang» / hàn ba ý bằng dấu phẩy. Ví dụ là từ vựng đời thường, không phải môn Sinh. Không có `feedback.md`.\n\nDraft ngắn và mộc hơn ở đoạn thí nghiệm, hook và payoff chặt hơn bản đã duyệt. Đủ cửa Gate 1.\n\nHARD_FAILS: không\nPAIRWISE: WIN (so với a-c05)\nTOP_FIXES: 1. b03a–b03c: nối «năm 2006 thấy,» cho thành câu nói, và hạ «nhớ hơn hẳn» cho sát mức chênh; 2. b04: đổi «Mình cần là sáng hôm sau» thành câu miệng kiểu «Mình cần sáng hôm sau gấp sách vẫn viết ra được»; 3. b06b: bỏ lần lặp «kiểm tra nhỏ» thứ hai\nCONFLICTS: không\nVERDICT: ĐẠT\n"
   },
   {
    "id": "a-c05",
    "verdict_hiep": "approved",
-   "error": "Individual quota reached. Please upgrade your subscription to increase your limits. Resets in 3h36m12s.",
-   "tail": "your subscription to increase your limits. Resets in 3h36m12s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"error_code\":429,\"code_kind\":\"http\",\"retryable\":true,\"error_id\":\"df14a5c4-142b-47ba-bd91-05a525bcccb0-2\"}\n"
+   "mode": "pairwise",
+   "engine": "cursor",
+   "model": "grok-4.7-medium",
+   "anchor_id": "a-c04",
+   "anchor_match": {
+    "channel": "@hi.oneup",
+    "format": "instructional_list",
+    "theme": "memory_study",
+    "anchor_channel": "@hi.oneup",
+    "anchor_format": "story_metaphor",
+    "anchor_theme": "memory_study",
+    "jaccard": 0.254,
+    "craft_bonus": 0.0,
+    "score": 15.629,
+    "reason": "kênh @hi.oneup + chủ đề memory_study"
+   },
+   "verdict_reviewer": "ĐẠT",
+   "verdict_llm": "ĐẠT",
+   "pairwise": "TIE",
+   "top_fixes": [
+    "b01–b01a: bỏ «Thì cái, bản chất…», mở thẳng bằng quên sạch khi gấp sách hoặc «quen mà hông kể nổi»",
+    "b09e: đổi «cẩm nang gợi ý thêm» thành lời nói kiểu «bước chấm này là mẹo thêm, thí nghiệm không có làm»",
+    "b10a–b10b: đoạn cô–em đang nhắc lại bước đã nói — hoặc cắt, hoặc biến thành một lần bí cụ thể rồi viết lại được, đừng diễn lại quy trình"
+   ],
+   "score": null,
+   "parts": {},
+   "hard_fails": [],
+   "soft_warnings": null,
+   "block": true,
+   "cost_usd": null,
+   "ok": true,
+   "tail": "ự viết, không phải môn học lạc trục.\n\n**Chốt:** Cùng tầm bản đã duyệt. Hiệp có thể cho qua Gate 1; câu mở và chữ «cẩm nang» là chỗ sửa nhỏ, không phải làm lại.\n\nHARD_FAILS: không\nPAIRWISE: TIE (so với a-c04)\nTOP_FIXES: 1. b01–b01a: bỏ «Thì cái, bản chất…», mở thẳng bằng quên sạch khi gấp sách hoặc «quen mà hông kể nổi»; 2. b09e: đổi «cẩm nang gợi ý thêm» thành lời nói kiểu «bước chấm này là mẹo thêm, thí nghiệm không có làm»; 3. b10a–b10b: đoạn cô–em đang nhắc lại bước đã nói — hoặc cắt, hoặc biến thành một lần bí cụ thể rồi viết lại được, đừng diễn lại quy trình\nCONFLICTS: không\nVERDICT: ĐẠT\n"
   }
  ]
 }

@@ -6,7 +6,7 @@ description: >-
   intake to post package that keeps every clip consistent with rules/video-rules.md:
   read sources → script → humanizer → check-rules → review gate 1 → render → check-rules
   --final → review gate 2 → log decisions. Edits go to the spec, never a regenerate.
-version: "1.5.0"
+version: "1.6.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -163,6 +163,14 @@ Taken from the old box agents Deep Research and Rule Reviewer (`docs/legacy-box/
 
 ## 5. Review gate 1 (Hiệp): script
 Send `final/script-final.md` (beat table: **beat · time · visual · VI line · EN caption · voice emotion**, motion picks, fact lock, confirm list) + the `final/review.md` verdict line, score and any open conflict + storyboard contact sheet (`storyboard/` or a draft render's `contact-sheet.png`) + one-line summary of voices/theme/week. Stop and wait.
+
+### 5b. Học style-pairs sau khi Hiệp sửa lời (trước Chốt)
+Khi Hiệp sửa lời thoại ở Gate 1 và **chưa** nói Chốt (comment theo beat, bản gửi lại, hoặc câu ông khóa khác câu trong nháp đã gửi):
+
+1. Giữ nguyên file nháp trước sửa. Đối chiếu từng câu ông đổi với câu ông chốt.
+2. Chọn **1–2 cặp đắt nhất**: nhịp nói đổi rõ, hình mắt thấy tai nghe thay câu trừu tượng, hoặc cụm AI/văn viết bị cắt. Bỏ cặp chỉ sửa chính tả hoặc đổi một từ không đổi giọng.
+3. Thêm vào bảng `resources/vn-spoken/style-pairs.md` với id `SP-NN` kế tiếp, cột: kênh · chủ đề · **Bản nháp trước sửa** · **Bản Hiệp chốt** · vì sao tự nhiên hơn (ghi clip + lesson nếu có). Cập nhật `updated` trong front-matter.
+4. Không chép hai câu đó nguyên văn vào clip sau. `gate0.py` tự lấy 3 cặp gần chủ đề nhất cho brief kế. Học cách biến đổi, không học câu.
 
 
 **Effects table, required at gate 1 (rule 52, DL-044, L-019).** Plan every effect *before* any render, so late requests don't cost extra re-renders. When drafting `spec.json`, fill in:

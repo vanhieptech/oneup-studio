@@ -60,6 +60,41 @@ def test_warns_consecutive_beat_opener_repetition():
     assert any(w["code"] == "REPEAT_OPENER" and w["beat"] == "b01→b02" for w in res["warnings"])
 
 
+def test_warns_hook_echo_when_opening_matches_archive():
+    hooks = [{
+        "clip": "clip-02-procrastination-discomfort",
+        "text": "Thì cái bản chất của việc trì hoãn là né cảm giác khó chịu.",
+    }]
+    draft = (
+        "1. **[b01 · 0–6s]** Thì cái bản chất của việc chờ hoa nở là mình cứ nhìn chậu mỗi ngày.\n"
+        "2. **[b02 · 6–12s]** Rồi một hôm đất nứt, mình mới thấy mầm.\n"
+    )
+    res = ap.analyze_beats(ap.parse_beats(draft), archive_hooks=hooks)
+    assert any(w["code"] == "HOOK_ECHO" and "clip-02" in w["message"] for w in res["warnings"])
+
+
+def test_distinct_hook_does_not_echo_archive():
+    hooks = [{
+        "clip": "clip-01-implementation-intention",
+        "text": "Kế hoạch học TOEIC của mình là mai học.",
+    }]
+    res = ap.analyze_beats(ap.parse_beats(GOOD_DRAFT), archive_hooks=hooks)
+    assert not any(w["code"] == "HOOK_ECHO" for w in res["warnings"])
+
+
+def test_load_archive_hooks_reads_spoken_b01():
+    import tempfile
+    with tempfile.TemporaryDirectory() as d:
+        spec = Path(d) / "content/archive/clip-09-demo/final/spec.json"
+        spec.parent.mkdir(parents=True)
+        spec.write_text(
+            '{"parts":[{"scenes":[{"id":"b01","part":"hook","lines":[{"text":"Tối qua mình nhổ nụ hoa rồi hối."}]}]}]}',
+            encoding="utf-8",
+        )
+        hooks = ap.load_archive_hooks(d)
+        assert hooks == [{"clip": "clip-09-demo", "text": "Tối qua mình nhổ nụ hoa rồi hối."}]
+
+
 def test_audition_hook_dry_run_extracts_first_two_beats_and_targets_final_out():
     with tempfile.TemporaryDirectory() as d:
         clip = Path(d) / "content/clips/clip-99-test"

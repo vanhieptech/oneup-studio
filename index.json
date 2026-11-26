@@ -175,6 +175,14 @@
    "title": "clip-06 v4 — §4b kiểm claim + chấm điểm"
   },
   {
+   "id": "clip-06.script-v3-draft",
+   "type": "script",
+   "status": "draft",
+   "updated": "2026-11-26",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/script-v3-draft.md",
+   "title": "clip-06 v3 — DRAFT, chờ Hiệp duyệt Gate 1"
+  },
+  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
@@ -428,7 +436,7 @@
    "status": "ready",
    "updated": "2026-11-26",
    "path": "docs/prompts/reviewer-script.md",
-   "title": "Prompt reviewer độc lập (Pairwise A/B)"
+   "title": "Prompt reviewer độc lập (Pairwise A/B — Theme/Format-Matched Anchor)"
   },
   {
    "id": "prompts.writer-hi-oneup",
@@ -549,6 +557,14 @@
    "updated": "2026-10-13",
    "path": "logs/rules-audit-2026-10-13.md",
    "title": "Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0)"
+  },
+  {
+   "id": "run.verify-clip06-2026-11-26",
+   "type": "log",
+   "status": "draft",
+   "updated": "2026-11-26",
+   "path": "logs/runs/verify-clip06-2026-11-26.md",
+   "title": "Nghiệm thu clip-06 v3 (DRAFT — chờ Hiệp duyệt Gate 1)"
   },
   {
    "id": "media.README",
@@ -1807,6 +1823,14 @@
    "title": "Hook & format pattern library (rule-47)"
   },
   {
+   "id": "trends.weekly-synthesis",
+   "type": "trend-digest",
+   "status": "active",
+   "updated": "2026-11-26",
+   "path": "research/trends/weekly-synthesis.md",
+   "title": "Tổng hợp đa video — 2026-11-26"
+  },
+  {
    "id": "trends-weekly-2026-W42",
    "type": "trend-weekly",
    "status": "draft-needs-review",
@@ -1871,6 +1895,14 @@
    "title": "Nguồn văn nói tiếng Việt (miền Nam + Gen Z) cho lời thoại @hi.oneup"
   },
   {
+   "id": "resources.vn-spoken.audience-pain-bank",
+   "type": "resource",
+   "status": "ready",
+   "updated": "2026-11-26",
+   "path": "resources/vn-spoken/audience-pain-bank.md",
+   "title": "Kho Nỗi Đau & Câu Hỏi Khán Giả Thật (Audience Pain Bank)"
+  },
+  {
    "id": "resources.vn-spoken.phrase-bank",
    "type": "resource",
    "status": "ready",
@@ -1885,6 +1917,14 @@
    "updated": "2026-11-26",
    "path": "resources/vn-spoken/sources.md",
    "title": "Sổ nguồn văn nói và kiến thức"
+  },
+  {
+   "id": "resources.vn-spoken.style-pairs",
+   "type": "resource",
+   "status": "ready",
+   "updated": "2026-11-26",
+   "path": "resources/vn-spoken/style-pairs.md",
+   "title": "Kho Cặp Biến Đổi Phong Cách Thật (Style Few-Shot)"
   },
   {
    "id": "resources.vn-spoken.voice-first",

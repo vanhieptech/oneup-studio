@@ -13,6 +13,10 @@ Checks per beat on spoken Vietnamese text (stripping markup like {nhấn: …}, 
   3. Consecutive beat opener repetition:
      - Warns when 2 adjacent beats start with the same opening structure (same first 2 words,
        or same repeating starter word/connector).
+  4. Cross-clip hook echo (Beat 1 vs approved hooks):
+     - Warns when the draft's first beat matches an archived hook in
+       `content/archive/clip-*/final/spec.json` on opening structure (first 3 syllables)
+       or on opening content keywords (shared first keyword + another, or Jaccard ≥ 0.6).
 
 --audition-hook (explicit opt-in before Gate 1; never runs unless requested):
   Extracts the first ~20 seconds (Hook + Beat 2) and synthesizes `final/out/hook-audition.wav`
@@ -43,6 +47,11 @@ SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 REPEATING_STARTERS = {
     "nhưng", "và", "rồi", "vậy", "nên", "vì", "bạn", "mình", "thật", "hóa",
     "tuy", "còn", "ngược", "đầu", "tiếp", "cuối", "thứ", "nếu", "khi", "cái",
+}
+HOOK_CONTENT_STOP = REPEATING_STARTERS | {
+    "là", "có", "một", "này", "đó", "thì", "mà", "ạ", "à", "nha", "á", "của",
+    "cho", "với", "không", "để", "khi", "người", "lại", "cũng", "như", "nào",
+    "gì", "hay", "hơn", "vào", "ra", "lên", "về", "tới", "tại", "được", "các",
 }
 
 
@@ -168,8 +177,75 @@ def estimate_breath_duration(text, syl_count):
     return round(syl_count / NATURAL_SYL_PER_SEC + pause_s, 2)
 
 
-def analyze_beats(beats):
-    """Run all 3 Vietnamese Audio-Back QA checks on parsed beats.
+def spoken_hook_from_spec(data):
+    """First spoken hook line in a clip spec: part=hook / b01 scene lines, else hook.text."""
+    for part in data.get("parts") or []:
+        for sc in (part.get("scenes") or []) + (part.get("sections") or []):
+            sid = str(sc.get("id") or "")
+            if sc.get("part") == "hook" or sid.startswith("b01"):
+                text = " ".join(strip_markup(l.get("text") or "") for l in (sc.get("lines") or [])).strip()
+                if text:
+                    return text
+    hook = data.get("hook")
+    if isinstance(hook, dict) and hook.get("text"):
+        return strip_markup(str(hook["text"]))
+    return ""
+
+
+def load_archive_hooks(root=None):
+    """Spoken Beat-1 hooks from content/archive/clip-*/final/spec.json."""
+    base = Path(root) if root else P.ROOT
+    out = []
+    for spec in sorted((base / "content/archive").glob("clip-*/final/spec.json")):
+        try:
+            data = json.loads(spec.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        text = spoken_hook_from_spec(data)
+        if text:
+            out.append({"clip": spec.parent.parent.name, "text": text})
+    return out
+
+
+def _hook_content_keys(text):
+    sent = SENT_SPLIT_RE.split(strip_markup(text) + " ")[0]
+    return [w for w in _norm_toks(sent)[:12] if w not in HOOK_CONTENT_STOP and len(w) > 2]
+
+
+def hook_similarity(draft_text, prior_text):
+    """Return (too_close, reason) for opening structure or opening keywords."""
+    a, b = _norm_toks(strip_markup(draft_text))[:4], _norm_toks(strip_markup(prior_text))[:4]
+    if len(a) >= 3 and len(b) >= 3 and a[:3] == b[:3]:
+        return True, "cùng 3 âm tiết mở đầu «" + " ".join(a[:3]) + "»"
+    ka, kb = _hook_content_keys(draft_text), _hook_content_keys(prior_text)
+    if not ka or not kb:
+        return False, ""
+    inter = set(ka) & set(kb)
+    if ka[0] == kb[0] and len(inter) >= 2:
+        return True, "cùng từ khóa mở đầu «" + ka[0] + "»"
+    jac = len(inter) / len(set(ka) | set(kb))
+    if jac >= 0.6 and len(inter) >= 3:
+        return True, f"từ khóa mở đầu trùng {jac:.0%}"
+    return False, ""
+
+
+def cross_clip_hook_warnings(hook_text, archive_hooks):
+    warnings = []
+    for prior in archive_hooks or []:
+        close, why = hook_similarity(hook_text, prior.get("text") or "")
+        if not close:
+            continue
+        clip = prior.get("clip") or "archive"
+        warnings.append({
+            "code": "HOOK_ECHO",
+            "beat": "b01",
+            "message": f"b01: Hook trùng cấu trúc/từ khóa mở đầu với {clip} ({why}) → đổi góc mở, đừng lặp hook clip đã duyệt",
+        })
+    return warnings
+
+
+def analyze_beats(beats, archive_hooks=None):
+    """Run Vietnamese Audio-Back QA checks on parsed beats.
 
     Returns dict:
       {beats: [...], warnings: [{code, beat, message}], total_syllables, estimated_total_s, ok}
@@ -248,6 +324,13 @@ def analyze_beats(beats):
                  "message": f"{prev['id']}→{cur['id']}: 2 beat liên tiếp trùng cấu trúc mở đầu «{phrase}» → đổi nhịp mở câu để khỏi đều giọng"}
             warnings.append(w)
             cur["warnings"].append(w)
+
+    # 4. Beat 1 vs approved archive hooks (opening structure / keywords)
+    if beats and archive_hooks:
+        for w in cross_clip_hook_warnings(beats[0]["text"], archive_hooks):
+            warnings.append(w)
+            if report_beats:
+                report_beats[0]["warnings"].append(w)
 
     return {
         "beats": report_beats,
@@ -357,7 +440,7 @@ def main():
     if not beats:
         print(f"✖ không đọc được beat nào từ {script_path} (cần dạng `N. **[bNN]** lời` hoặc bảng beat)", file=sys.stderr)
         return 1
-    res = analyze_beats(beats)
+    res = analyze_beats(beats, archive_hooks=load_archive_hooks())
     audition = None
     if "--audition-hook" in a:
         audition = run_audition_hook(

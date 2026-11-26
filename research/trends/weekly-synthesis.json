@@ -1,0 +1,72 @@
+{
+ "teardown_count": 2,
+ "role_counts": {
+  "direct_niche": 2
+ },
+ "top_hooks": [
+  {
+   "key": "tò mò",
+   "mechanism": "tò mò (danh sách có số + neo thành tích)",
+   "count": 2,
+   "weight": 8.64,
+   "roles": [
+    "direct_niche"
+   ],
+   "examples": [
+    {
+     "id": "manghocls-7366613156908600583",
+     "role": "direct_niche",
+     "ratio_w": 7.64,
+     "snippet": "3 cách giúp bạn / Học thuộc nhanh Nhớ lâu / Giống như HSGQG môn Lịch Sử / Check"
+    },
+    {
+     "id": "selftest-clip02",
+     "role": "direct_niche",
+     "ratio_w": 1.0,
+     "snippet": "BẢN CHẤT LÀ GÌ? | Thì cái bản chất... của cái việc mở laptop rồi lướt TikTok... là gì? | // TODO One"
+    }
+   ]
+  }
+ ],
+ "top_transitions": [
+  {
+   "pattern": "Jump cut + nhãn số/tiêu đề ngắn (đổi đạo cụ / tư thế)",
+   "count": 4,
+   "weight": 11.96,
+   "examples": [
+    "`manghocls-7366613156908600583`: Jump cut bỏ quyển vở xuống ở 00:05.",
+    "`manghocls-7366613156908600583`: Jump cut kèm tiêu đề vàng 'Thứ hai:' ở 00:28-00:29.",
+    "`manghocls-7366613156908600583`: Jump cut giơ nắm tay cầm bút kèm tiêu đề 'Cuối cùng' ở 00:41-00:42."
+   ]
+  },
+  {
+   "pattern": "Ngắt nhịp tách khối sang phần kết / CTA",
+   "count": 1,
+   "weight": 3.82,
+   "examples": [
+    "`manghocls-7366613156908600583`: Màn hình tối dần (fade) ở 00:58."
+   ]
+  },
+  {
+   "pattern": "Chuyển cảnh trực tiếp theo mạch nhân quả",
+   "count": 3,
+   "weight": 1.5,
+   "examples": [
+    "`selftest-clip02`: Chuyển cảnh sang bàn làm việc có dải băng phân tách khái niệm ở 00:37.",
+    "`selftest-clip02`: Chuyển sang cảnh gõ laptop và thanh công thức hành động ở 00:45.",
+    "`selftest-clip02`: Cắt về khung hình tối giản chính giữa màn hình ở 00:58."
+   ]
+  }
+ ],
+ "avg_interrupts_per_10s": null,
+ "craft_metaphors": [],
+ "craft_pacing": [],
+ "anti_patterns": [],
+ "arc_weights": {
+  "ARC-001": 7.64
+ },
+ "hook_weights": {
+  "tò mò": 8.64
+ },
+ "date": "2026-11-26"
+}
