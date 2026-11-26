@@ -19,7 +19,8 @@ source: "Thử trực tiếp CLI tinyfish 0.59.0 + MCP TinyFish, 26/11/2026"
 | `agent run` | Không thử (đắt hơn, 0,016 USD/bước) | — |
 
 ## Tải clip TikTok để phân tích (teardown --url)
-- 26/11: lệnh `teardown.py --url https://www.tiktok.com/@manghocls/video/7366613156908600583` bị bộ phân loại an toàn của Claude Code (auto mode) từ chối («Unauthorized Access») trước khi chạy. Hiệp có thể tự chạy lệnh này trong terminal; video tải tạm vào `media/tmp/teardown/` và bị xoá sau phân tích.
+- 26/11: lệnh `teardown.py --url https://www.tiktok.com/@manghocls/video/7366613156908600583` bị bộ phân loại an toàn của Claude Code (auto mode) từ chối («Unauthorized Access») trước khi chạy. Hiệp đã thêm quyền riêng cho lệnh này trong `.claude/settings.local.json`; sau đó chạy được (yt-dlp binary Homebrew, ≤480p), video bị xoá sau phân tích, blueprint đầu tiên `SM01`.
+- **Giới hạn đã thấy:** với clip manghocls, model qua `agy` báo «không có dữ liệu âm thanh trực tiếp» và tóm lời theo chữ trên màn hình. Clip-02 (có phụ đề in sẵn) cũng có thể được đọc qua chữ chứ không qua tiếng. Vì vậy phần lời nói lấy từ phụ đề Apify (`subtitle_or_transcript`), phần hình, nhịp cắt, chữ trên màn hình lấy từ teardown.
 
 ## Kết luận dùng trong pipeline
 - TinyFish = **tìm** clip (`pipeline/scripts/tinyfish_client.py tiktok …`), miễn phí.

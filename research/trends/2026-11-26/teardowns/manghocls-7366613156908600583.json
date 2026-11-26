@@ -1,0 +1,163 @@
+{
+ "hook": {
+  "spoken": "Tóm ý theo phụ đề trên màn hình (không có dữ liệu âm thanh trực tiếp): giới thiệu 3 cách giúp học thuộc nhanh, nhớ lâu giống như học sinh giỏi quốc gia môn Lịch Sử, kết bằng 'Check'.",
+  "verbatim": false,
+  "on_screen_text": "3 cách giúp bạn / Học thuộc nhanh Nhớ lâu / Giống như HSGQG môn Lịch Sử / Check",
+  "visual_action": "00:00-00:04: Người nói mặc sơ mi trắng ôm quyển vở/sách bìa lá xanh trước ngực, nhìn thẳng ống kính, giơ ngón trỏ tay trái đếm ý rồi nháy mắt và chỉ tay khi chữ 'Check' hiện lên.",
+  "mechanism": "tò mò",
+  "mechanism_note": "Kết hợp cấu trúc danh sách có số lượng cụ thể ('3 cách') với điểm neo uy tín cao ('HSGQG môn Lịch Sử') để tạo tò mò về phương pháp.",
+  "implied_promise": "Xem hết video để nhận đủ 3 cách học thuộc nhanh và nhớ lâu theo chuẩn học sinh giỏi quốc gia."
+ },
+ "pacing": {
+  "avg_seconds_per_change": null,
+  "interrupts": [
+   {
+    "t": "00:04",
+    "what": "Chữ vàng 'Check' bật lên góc trên kèm động tác nháy mắt/chỉ tay kết thúc hook.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:05",
+    "what": "Jump cut sang khung hình hơi gần hơn, bỏ quyển vở khỏi tay để vào ý thứ nhất.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:14",
+    "what": "Đổi kiểu chữ sang phông lớn màu đỏ hồng viền đen để nhấn mốc giờ '4:00 đến 6:00 sáng' và '8:00 đến 12:00 tối' (00:15).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:20",
+    "what": "Đưa hai ngón trỏ chạm thái dương và nháy một mắt khi nhấn từ khóa đỏ 'hiệu quả hơn'.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:26",
+    "what": "Chữ đỏ lớn 'Từ 2-3 lần' bật lên khi giơ tay trái nhấn mạnh con số.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:29",
+    "what": "Jump cut chuyển mục, hiện tiêu đề vàng lớn 'Thứ hai:' rồi 'Đọc thành tiếng' (00:30).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:42",
+    "what": "Jump cut chuyển mục, giơ nắm tay cầm bút xanh với tiêu đề 'Cuối cùng' và 'Viết ra giấy' (00:43).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:44",
+    "what": "Cúi đầu xuống viết trực tiếp vào trang vở mở ở mép dưới khung hình.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:45",
+    "what": "Jump cut quay lại tư thế ôm quyển vở bìa xanh trước ngực như đầu video.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:57",
+    "what": "Giơ cả hai ngón cái (thumbs up) và cười trước khi kết thúc phần nội dung.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:58",
+    "what": "Chuyển cảnh mờ tối màn hình (fade) để tách nội dung chính với phần kết.",
+    "kind": "quan sát"
+   }
+  ]
+ },
+ "spine": [
+  {
+   "from": "00:00",
+   "to": "00:04",
+   "role": "dẫn dắt",
+   "summary": "Đặt vấn đề 3 cách học thuộc nhanh, nhớ lâu giống học sinh giỏi quốc gia môn Lịch Sử và chốt 'Check'.",
+   "transition": "Jump cut bỏ quyển vở xuống ở 00:05."
+  },
+  {
+   "from": "00:05",
+   "to": "00:27",
+   "role": "giải thích",
+   "summary": "Cách 1: Chọn khung giờ yên tĩnh (4:00–6:00 sáng, 8:00–12:00 tối) để não tập trung, tăng tốc học thuộc từ 2–3 lần.",
+   "transition": "Jump cut kèm tiêu đề vàng 'Thứ hai:' ở 00:28-00:29."
+  },
+  {
+   "from": "00:28",
+   "to": "00:40",
+   "role": "giải thích",
+   "summary": "Cách 2: Đọc đi đọc lại thành tiếng để não nghe lại và tiếp nhận thông tin dễ dàng hơn khi học nhẩm không hiệu quả.",
+   "transition": "Jump cut giơ nắm tay cầm bút kèm tiêu đề 'Cuối cùng' ở 00:41-00:42."
+  },
+  {
+   "from": "00:41",
+   "to": "00:57",
+   "role": "chứng minh",
+   "summary": "Cách 3: Viết ra giấy (minh họa hành động viết ở 00:44), trích câu nói biến kiến thức người khác thành của mình, giải thích cơ chế mã hóa thông tin và viện dẫn 'đã được khoa học chứng minh'.",
+   "transition": "Màn hình tối dần (fade) ở 00:58."
+  },
+  {
+   "from": "00:58",
+   "to": "01:04",
+   "role": "kết",
+   "summary": "Hỏi người xem có thích series không, kêu gọi bình luận cho 'Măng' để làm thêm mẹo học thuộc, vẫy tay 'Byee'.",
+   "transition": ""
+  }
+ ],
+ "promise_answered_at": "00:43",
+ "audio": {
+  "speech_pace": null,
+  "emphasis": [],
+  "tone": "chia sẻ kinh nghiệm",
+  "music": null,
+  "sfx": []
+ },
+ "ending": {
+  "type": "kêu gọi hành động",
+  "cta": "Hỏi người xem có thích series này không và kêu gọi comment cho 'Măng' để ra thêm cách học thuộc nhanh, nhớ lâu (00:59-01:03)."
+ },
+ "why_it_works": [
+  {
+   "claim": "Neo uy tín ngay trong 4 giây đầu bằng danh xưng thành tích cụ thể giúp lời khuyên phổ thông trở nên đáng tin hơn.",
+   "evidence": "00:03",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Cấu trúc đánh số công khai ('Thứ nhất', 'Thứ hai', 'Cuối cùng') tạo lộ trình rõ ràng, kích thích người xem ở lại đủ 3 ý.",
+   "evidence": "00:06, 00:29, 00:42",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Phân cấp thị giác phụ đề (tiêu đề vàng, khung giải thích nền hồng, từ khóa/con số màu đỏ) giúp người xem nắm ý chính nhanh kể cả khi lướt không bật tiếng.",
+   "evidence": "00:06-00:57",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Thay đổi đạo cụ và hành động tay liên tục (cầm sách, chạm thái dương, cầm bút cúi viết, giơ ngón cái) bù đắp cho bối cảnh cố định một góc máy.",
+   "evidence": "00:00, 00:20, 00:43-00:45, 00:57",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Chèn nhịp tối màn hình tách hẳn phần nội dung giá trị với phần kêu gọi bình luận giúp CTA không làm gián đoạn mạch thông tin chính.",
+   "evidence": "00:58-01:03",
+   "kind": "suy đoán"
+  }
+ ],
+ "formula": [
+  "Mở đầu bằng lời hứa số lượng cụ thể gắn với một chuẩn thành tích hoặc kết quả đáng tin.",
+  "Chốt hook bằng một từ chuyển nhịp ngắn gọn rồi cắt cảnh ngay vào ý đầu tiên.",
+  "Trình bày từng ý theo cấu trúc lặp lại: tên giải pháp ngắn -> cơ chế hoạt động -> con số hoặc ví dụ cụ thể.",
+  "Đổi kiểu chữ nhấn màu và kết hợp đạo cụ hoặc động tác tay minh họa ở mỗi lần chuyển ý.",
+  "Ngắt nhịp chuyển cảnh rõ ràng trước phần kết, sau đó đặt câu hỏi mở gắn với chuỗi nội dung để kéo bình luận."
+ ],
+ "model_note": "Gemini 4 Hydrogen (High)",
+ "_meta": {
+  "date": "2026-11-26",
+  "video": "7366613156908600583.mp4",
+  "cli": "agy 1.5.18",
+  "model": "gemini-4-hydrogen-high",
+  "source": "https://www.tiktok.com/@manghocls/video/7366613156908600583",
+  "blueprint": "SM01"
+ }
+}

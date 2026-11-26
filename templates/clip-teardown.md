@@ -45,7 +45,7 @@ Một file mỗi clip, lưu ở `research/trends/<YYYY-MM-DD>/teardowns/<id>.md`
 - Các điểm ngắt nhịp nổi bật: `0:04 SFX ting + zoom mặt` …
 - **Dịch sang kênh:** @hi.oneup = đổi cảnh comic, hit motion + SFX (luật 50, 51), không quay, không B-roll (DL-027) · @vanhiep.tech = overlay `ov-*` / cutaway `cu-*` (`make-layer`).
 
-## 6. Âm thanh & năng lượng [Gemini]
+## 6. Âm thanh & năng lượng [Gemini — kiểm lại: qua `agy` model có thể không nhận âm thanh (26/11), đối chiếu phụ đề Apify]
 - Nhịp nói (nhanh/chậm, nhấn ở đâu), tone (tâm sự · tranh luận · chia sẻ kinh nghiệm): …
 - SFX: … · Nhạc nền: chỉ ghi nhận (luật 21: clip mình không có nhạc trong file).
 

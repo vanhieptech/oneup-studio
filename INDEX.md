@@ -234,6 +234,7 @@ tags: [index, retrieval]
 | research.trends.2026-11-11.treg.README | readme | ready | `research/trends/2026-11-11/treg/README.md` | Treg TikTok — 2026-11-11 |
 | trends-2026-11-12 | trend-digest | draft-needs-review | `research/trends/2026-11-12/digest.md` | Trend digest 2026-11-12 (thứ Năm) |
 | research.trends.2026-11-12.treg.README | readme | ready | `research/trends/2026-11-12/treg/README.md` | Treg TikTok — 2026-11-12 |
+| teardown.manghocls-7366613156908600583 | teardown | draft | `research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md` | Teardown `manghocls-7366613156908600583` |
 | teardown.selftest-clip02 | teardown | draft | `research/trends/2026-11-26/teardowns/selftest-clip02.md` | Teardown `selftest-clip02` (tự kiểm trên clip của kênh) |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |

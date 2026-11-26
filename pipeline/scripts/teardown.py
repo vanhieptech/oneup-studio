@@ -28,7 +28,9 @@ TMP_DIR = P.ROOT / "media/tmp/teardown"
 def download(url):
     TMP_DIR.mkdir(parents=True, exist_ok=True)
     out = TMP_DIR / "%(id)s.%(ext)s"  # -S res:480: ≤480p is enough for analysis, smaller and faster
-    r = subprocess.run([sys.executable, "-m", "yt_dlp", "-S", "res:480,ext:mp4", "-o", str(out), "--no-playlist", "--print", "after_move:filepath", url],
+    import shutil
+    ytdlp = [shutil.which("yt-dlp")] if shutil.which("yt-dlp") else [sys.executable, "-m", "yt_dlp"]  # Homebrew binary first (python3.14 has no yt_dlp module)
+    r = subprocess.run([*ytdlp, "-S", "res:480,ext:mp4", "-o", str(out), "--no-playlist", "--print", "after_move:filepath", url],
                        capture_output=True, text=True, timeout=300)
     path = (r.stdout.strip().splitlines() or [""])[-1]
     if r.returncode or not path or not os.path.exists(path):
@@ -164,7 +166,12 @@ def analyse(video, url, opt):
     model = opt("--model")
     engine = opt("--engine", "auto")  # auto = agy (Antigravity) when installed, else gemini CLI
     out = run_engine(video, model, engine)
-    data = extract_json(out.get("response", ""))
+    try:
+        data = extract_json(out.get("response", ""))
+    except ValueError:
+        raw = TMP_DIR / f"{cid}.raw.txt"; TMP_DIR.mkdir(parents=True, exist_ok=True)
+        raw.write_text(out.get("response", ""), encoding="utf-8")
+        print(f"no JSON in model response; raw saved to {raw}:\n{out.get('response', '')[:800]}", file=sys.stderr); sys.exit(4)
     cli = ("agy " if out.get("engine") == "agy" else "gemini ") + subprocess.run([P.AGY_BIN if out.get("engine") == "agy" else P.GEMINI_BIN, "--version"], capture_output=True, text=True).stdout.strip()[:40]
     used = model or next(iter((out.get("stats", {}).get("models") or {}).keys()), "default")
     meta = {"date": date, "video": os.path.basename(video), "cli": cli, "model": used}

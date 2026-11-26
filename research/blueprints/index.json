@@ -1,3 +1,20 @@
 {
- "modes": []
+ "modes": [
+  {
+   "id": "SM01",
+   "formula": [
+    "Mở đầu bằng lời hứa số lượng cụ thể gắn với một chuẩn thành tích hoặc kết quả đáng tin.",
+    "Chốt hook bằng một từ chuyển nhịp ngắn gọn rồi cắt cảnh ngay vào ý đầu tiên.",
+    "Trình bày từng ý theo cấu trúc lặp lại: tên giải pháp ngắn -> cơ chế hoạt động -> con số hoặc ví dụ cụ thể.",
+    "Đổi kiểu chữ nhấn màu và kết hợp đạo cụ hoặc động tác tay minh họa ở mỗi lần chuyển ý.",
+    "Ngắt nhịp chuyển cảnh rõ ràng trước phần kết, sau đó đặt câu hỏi mở gắn với chuỗi nội dung để kéo bình luận."
+   ],
+   "seen": 1,
+   "uses": 0,
+   "wins": 0,
+   "sources": [
+    "https://www.tiktok.com/@manghocls/video/7366613156908600583"
+   ]
+  }
+ ]
 }
