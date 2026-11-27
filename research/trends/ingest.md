@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-11-12
+updated: 2026-11-27
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -297,6 +297,17 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | kenh14-tien-an-9-6 | Gia đình 4 người giảm tiền ăn 9→6 triệu/tháng | money | caution | 2026-11-07 | 2026-11-07 | 1 | [Kenh14](https://kenh14.vn/tu-9-trieu-xuong-6-trieu-tien-an-moi-thang-gia-dinh-4-nguoi-tiet-kiem-them-3-trieu-nhung-phai-thay-doi-nhung-gi-215261106072524463.chn) |
 | vne-ai-phone-lock | AI lấy dữ liệu từ điện thoại đang khóa | tech/security | ok | 2026-11-07 | 2026-11-07 | 1 | [VnExpress](https://vnexpress.net/ai-lay-du-lieu-tu-dien-thoai-dang-khoa-the-nao-5141195.html) |
 
+### Bổ sung 2026-11-27
+| vne-black-friday-2026 | Người tiêu dùng bớt mặn mà với Black Friday (mua rải rác các đợt sale ngày đôi quanh năm) | seasonal/money | ok | 2026-11-27 | 2026-11-27 | 1 | [VnExpress](https://vnexpress.net/nguoi-tieu-dung-bot-man-ma-voi-black-friday-5149368.html) |
+| gta6-productivity-2026 | GTA 6 ra mắt làm sụt năng suất nhân viên (GNews US + Google Trends US + Verge + CafeBiz) | viral/gaming | ok | 2026-11-27 | 2026-11-27 | 1 | [The Verge](https://www.theverge.com/entertainment/1043362/grand-theft-auto-6-ending) |
+| genk-ios-darksword-coruna | Không chia sẻ OTP, không tải app lạ vẫn mất tiền vì mã độc web DarkSword/Coruna nhắm iOS cũ (13.0–17.2.1 & 18.4–18.7) | tech/security | ok | 2026-11-27 | 2026-11-27 | 1 | [Genk](https://genk.vn/khong-chia-se-otp-khong-tai-app-la-van-co-nguy-co-mat-tien-canh-bao-khan-cho-nguoi-dung-iphone-165261127155807425.chn) |
+| vne-google-ai-mode-mat-khach | Nhiều trang web mất khách vì Google AI Mode trả lời thay (cs=2) | tech/AI | ok | 2026-11-27 | 2026-11-27 | 1 | [VnExpress](https://vnexpress.net/nhieu-trang-web-mat-khach-vi-google-tra-loi-thay-5148929.html) |
+| vne-sap-sa-thai-10000 | SAP có thể sa thải 10.000 người khi tái cấu trúc AI (cs=2) | tech/work | ok | 2026-11-27 | 2026-11-27 | 1 | [VnExpress](https://vnexpress.net/hang-phan-mem-lon-nhat-chau-au-co-the-sa-thai-10-000-nguoi-5149433.html) |
+| tt-minggbest-tu-nay-quen | TikTok «Từ này nhìn quen lắm» (@minggbest, 796,4k view, 43,2k share, 106.33x) | tiktok/study | ok | 2026-11-27 | 2026-11-27 | 1 | [TikTok @minggbest](https://www.tiktok.com/@minggbest/video/7696495062217248018) |
+| tt-gonaox-ghi-nho | TikTok «Ghi nhớ bất cứ thứ gì nhanh đến mức khó tin» (@gonaox, 1,9M view, 31k share, 12.69x) | tiktok/study | ok | 2026-11-27 | 2026-11-27 | 1 | [TikTok @gonaox](https://www.tiktok.com/@gonaox/video/7702426588662598920) |
+| tt-phamthuykieuhuong-u30-lop11 | TikTok «U30 (28 tuổi) học lớp 11 GDTX» (@phamthuykieuhuong, 1,7M view, 38.99x, đã teardown ARC-003) | tiktok/study | caution | 2026-11-27 | 2026-11-27 | 1 | [TikTok @phamthuykieuhuong](https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196) |
+| tt-vutru-anh-mat-nguoi-khac | TikTok «Bạn có đang quá bận tâm đến ánh mắt người khác?» (@vutru_codai, 173k view) | tiktok/mind | ok | 2026-11-27 | 2026-11-27 | 1 | [TikTok @vutru_codai](https://www.tiktok.com/@vutru_codai/video/7709041076987858197) |
+
 ## Bridges (trend → khoảnh khắc → bài học → hook)
 | id | Trend | Khoảnh khắc | Bài học (phần.mục) | Hook VI | Góc | Đích | Trạng thái | first |
 |---|---|---|---|---|---|---|---|---|
@@ -430,6 +441,12 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-gapnguoi-01 | tt-duoi-30-ban-nhau (+ x-tough-20s) | tối thứ Sáu từ chối cuộc nhậu, tháng sau nhóm thôi rủ, cuối tuần chỉ còn mình với điện thoại | 22.9 (mức A, quan sát) + 3.16 (mức C) | "Một clip hơn bảy trăm nghìn lượt xem đang khuyên người dưới ba mươi: bớt thời gian cho những người chỉ rủ đi ăn chơi, nhậu nhẹt. Mà dưới comment, có người kể mình bỏ được từ năm hai mươi hai, giờ gần như chẳng còn bạn." (P03+F07) | contrarian / empathy | ý tưởng mới 22.9 (LIGHT) | stub, chờ duyệt; caution KOL thật (`research/trends/2026-11-11/plans/plan-2-cat-cuoc-nhau-dung-cat-nguoi.json`) | 2026-11-11 |
 | B-5c-01 | gen-z-iphone-5c-retro (+ tt-so-anh-5s-5c) | lục ngăn kéo thấy máy cũ, cắm sạc lên, Zalo/Facebook/email vẫn còn đăng nhập | 14.6 (mức C) (+5.23 mức C) | "Gen Z đang lùng mua lại iPhone 5C, máy từ năm 2013, chỉ để chụp ảnh kiểu ngày xưa. Còn cái điện thoại cũ trong ngăn kéo nhà bạn, nó còn đăng nhập tài khoản của bạn không?" (P13+P01) | contrarian / empathy | ý tưởng mới 14.6 (trụ 5), trend đầu tiên cho mục này | stub 2026-11-12 (chờ Deep Research + Hiệp chọn ô) | 2026-11-12 |
 | B-chienlanh-01 | silent-treatment-kenh14 (+ tt-chientranh-lanh-ship) | cãi nhau xong để tin nhắn «đã xem», tối nằm lướt điện thoại vẫn tua lại câu nói lúc chiều | 3.17 (mức B) (+10.17 mức B) | "Chiến tranh lạnh với người yêu, bạn tưởng mình im thì người kia mới là người khổ?…" (P10+P03) | contrarian / data | ý tưởng mới 3.17 (trụ 4) | stub 2026-11-12 (suy luận trò chơi → silent treatment cần Deep Research kiểm) | 2026-11-12 |
+| B-blackfriday-01 | vne-black-friday-2026 | không chen mua Black Friday mà mở sao kê cuối tháng tiền vẫn mất vào mấy gói tự trừ + đơn sale ngày đôi | 5.1 (mức C) (+5.23 mức C) | "Hôm nay Black Friday, báo đưa tin người tiêu dùng bớt mặn mà săn sale rồi. Nghe có vẻ năm nay mình giữ tiền giỏi hơn, đúng hông?" (P05+P03) | contrarian / empathy | đăng #28 (5.1, DARK) | stub 2026-11-27 (`research/trends/2026-11-27/plans/plan-1-black-friday-sale-ngay-doi-ro-tien.json`) | 2026-11-27 |
+| B-gta6-01 | gta6-productivity-2026 | bật game chơi 1 tiếng xả stress, câu «nốt nhiệm vụ này thôi» kéo thẳng tới 2h sáng | 4.15 (mức C) (+3.9 mức B) | "GTA 6 vừa ra, cả mạng bàn chuyện dân văn phòng tụt năng suất. Mình hông bảo bạn bỏ game đâu, vì mình cũng mê mà." (P01+P15) | humor / empathy | đăng #10 (4.15, LIGHT) | stub 2026-11-27 (`research/trends/2026-11-27/plans/plan-2-gta6-gioi-han-cung-gio-choi.json`) | 2026-11-27 |
+| B-nhinquen-01 | tt-minggbest-tu-nay-quen (+ tt-gonaox-ghi-nho) | đọc tài liệu công việc / sách kỹ năng thấy đoạn nào cũng «quen quen», tới lúc cần làm thì trống trơn | 23.14 | "Trên mạng đang rộ câu văn mẫu: «từ này nhìn quen lắm». Mà bạn có để ý không, lúc đọc tài liệu thấy quen là lúc não dễ lừa mình nhất?" (P01+P03) | contrarian / data | đăng #25 (23.14, DARK) | đề xuất (L-087: ví dụ đời thường, không môn học) | 2026-11-27 |
+| B-iosupdate-01 | genk-ios-darksword-coruna | thấy thông báo cập nhật iOS là bấm «để tối nay» cả tháng trời | 14.10 / 14.6 | "Không bấm link lạ, không đọc mã OTP cho ai mà điện thoại vẫn có thể bị xâm nhập chỉ vì lướt trúng trang web lỗi?" (P04+P10) | data / contrarian | đăng #29 (14.10, DARK) hook thay thế | đề xuất (cũng hợp `@vanhiep.tech`) | 2026-11-27 |
+| B-u30batdau-01 | tt-phamthuykieuhuong-u30-lop11 | gần 30 tuổi muốn học kỹ năng mới nhưng cứ ngại «trễ quá rồi» | 4.12 | "Gần 30 tuổi mới bắt đầu học lại từ con số 0, bạn nghĩ mình đang đi trễ hay đang cầm một lợi thế ngầm?" (P04+P15, ARC-003) | empathy / story | ý tưởng mới / callback clip-06 | đề xuất; caution người thật (đã teardown ARC-003) | 2026-11-27 |
+| B-aimode-01 | vne-google-ai-mode-mat-khach | đọc xong 3 dòng AI tóm tắt tưởng hiểu hết rồi, 10 phút sau kể lại thì không nhớ | 23.16 / 3.6 | "Google giờ trả lời thay luôn khỏi cần bấm vào trang web. Tiện thiệt, nhưng đọc ba dòng tóm tắt xong, mười phút sau bạn còn nhớ được gì?" (P03+P10) | contrarian | ý tưởng `@vanhiep.tech` + `@hi.oneup` | đề xuất | 2026-11-27 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
@@ -447,3 +464,34 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | âm thanh gốc - user2906592877976 | (creator) | 2026-11-12 | 2026-11-12 | [TikTok](https://www.tiktok.com/@user2906592877976/video/7706520170398813470) | âm gốc skit lồng tiếng, không dùng lại |
 
 _TikTok Creative Center vẫn bị chặn khi fetch (2026-10-13)._
+
+## Inbox (Luồng 3)
+Link hoặc file Hiệp ném vào `media/footage/inbox/`, gắn id bằng `pipeline/scripts/trend-streams.py inbox`; hàng đợi teardown ở `research/trends/teardown-queue.json`.
+
+| id | nguồn | thêm ngày | gốc | trạng thái | teardown |
+|---|---|---|---|---|---|
+| trends-2026-11-27-01 | https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196 | 2026-11-27 | radar:Nonex | done | research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md |
+| trends-2026-11-27-02 | https://www.tiktok.com/@braincorevn/video/7701948218548014344 | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-03 | https://www.tiktok.com/@quocnguyenkieuvi/video/7650766521169399058 | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-04 | https://www.youtube.com/shorts/AMZ0uEmXXAk | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-05 | https://www.youtube.com/shorts/TCAnJIDO3Bg | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-06 | https://www.tiktok.com/@braincorevn/video/7703052364013489428 | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-07 | https://www.tiktok.com/@phamthuykieuhuong/video/7710598254391479572 | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-08 | https://www.youtube.com/shorts/aXcuz6fn8_w | 2026-11-27 | radar:Nonex | queued | |
+| trends-2026-11-27-09 | https://www.tiktok.com/@manghocls/video/7703156842486058260 | 2026-11-27 | radar:0.45x | queued | |
+| trends-2026-11-27-10 | https://www.tiktok.com/@lucasgmc4/video/7658750516599655687 | 2026-11-27 | radar:356.9x | queued | |
+| trends-2026-11-27-11 | https://www.tiktok.com/@ngocanhh0565/video/7707619983878065429 | 2026-11-27 | radar:216.52x | queued | |
+| trends-2026-11-27-12 | https://www.tiktok.com/@b.ch.phng.thi0/video/7700960397515377927 | 2026-11-27 | radar:212.24x | queued | |
+| trends-2026-11-27-13 | https://www.tiktok.com/@meo_xinhhiuu/video/7699453148850572565 | 2026-11-27 | radar:155.56x | queued | |
+| trends-2026-11-27-14 | https://www.tiktok.com/@minggbest/video/7696495062217248018 | 2026-11-27 | radar:106.33x | queued | |
+| trends-2026-11-27-15 | https://www.tiktok.com/@b.ch.phng.thi0/video/7703576611345550610 | 2026-11-27 | radar:60.13x | queued | |
+| trends-2026-11-27-16 | https://www.tiktok.com/@dudu.edits46/video/7710008056418962706 | 2026-11-27 | radar:40.56x | queued | |
+| trends-2026-11-27-17 | https://www.tiktok.com/@phatbieulungtung/video/7702119001333189906 | 2026-11-27 | radar:23.74x | queued | |
+| trends-2026-11-27-18 | https://www.tiktok.com/@realnezzdapoet/video/7706904042181545224 | 2026-11-27 | radar:23.57x | queued | |
+| trends-2026-11-27-19 | https://www.tiktok.com/@gonaox/video/7702426588662598920 | 2026-11-27 | radar:12.69x | queued | |
+| trends-2026-11-27-20 | https://www.tiktok.com/@carter.selfdev/video/7701501687999270164 | 2026-11-27 | radar:9.44x | queued | |
+| trends-2026-11-27-21 | https://www.tiktok.com/@tapchidanong21/video/7261231953838361857 | 2026-11-27 | radar:9.09x | queued | |
+| trends-2026-11-27-22 | https://www.tiktok.com/@honghan582/video/7354359598393888008 | 2026-11-27 | radar:7.53x | queued | |
+| trends-2026-11-27-23 | https://www.tiktok.com/@_falling.seeds_/video/7074069721720704299 | 2026-11-27 | radar:7.32x | queued | |
+| trends-2026-11-27-24 | https://www.tiktok.com/@tramdungtrithuc/video/7710321816983620882 | 2026-11-27 | radar:4.32x | queued | |
+| trends-2026-11-27-25 | https://www.tiktok.com/@kinhthiendongdao.com/video/7557577809447767304 | 2026-11-27 | radar:3.2x | queued | |

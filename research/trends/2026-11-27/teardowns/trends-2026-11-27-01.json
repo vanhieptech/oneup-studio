@@ -1,0 +1,292 @@
+{
+ "hook": {
+  "spoken": "",
+  "verbatim": false,
+  "on_screen_text": "U30 (28 tuổi) học lớp 11 GDTX:",
+  "visual_action": "Cô gái mặc áo dài trắng nữ sinh, đeo kính, cài nơ ren trắng, đứng trong phòng đang khoác và chỉnh quai balo đen trên vai ngay từ 00:00 (quan sát)",
+  "mechanism": "phản trực giác",
+  "mechanism_note": "Sự đối lập trực diện giữa độ tuổi U30 (28 tuổi) và hình ảnh mặc áo dài trắng đi học lớp 11 GDTX phá vỡ khuôn mẫu tuổi học sinh ngay giây đầu tiên (suy đoán)",
+  "implied_promise": "Giải đáp cuộc sống đi học cấp 3 ở tuổi 28 thực tế ra sao và mục đích phía sau lựa chọn khác thường này là gì (suy đoán)"
+ },
+ "beats": [
+  {
+   "from": "00:00",
+   "to": "00:02",
+   "seconds": 2,
+   "role": "hook",
+   "emotion": "tò mò",
+   "retention_function": "Khóa mắt người xem bằng tương phản hình–chữ (áo dài trắng + tiêu đề U30 học lớp 11 GDTX) và khối 6 gạch đầu dòng buộc phải dừng lại đọc (suy đoán)",
+   "summary": "Nhân vật mặc áo dài trắng đứng nhìn thẳng camera chỉnh quai balo với biểu cảm hơi nghiêm, toàn bộ tiêu đề và 6 gạch đầu dòng hiện sẵn trên màn hình (quan sát)",
+   "transition": "Nhân vật xoay nhẹ người đổi góc đứng để giữ chuyển động thị giác trong lúc mắt người xem trượt xuống các dòng chữ đầu (quan sát)"
+  },
+  {
+   "from": "00:02",
+   "to": "00:05",
+   "seconds": 3,
+   "role": "chứng minh",
+   "emotion": "căng",
+   "retention_function": "Chuỗi số liệu khắc nghiệt và cụ thể (65k/tháng, đi gần 60km/ngày, học hơn 10 tiếng/ngày) chứng minh sự nghiêm túc thật sự chứ không làm nội dung cho vui (suy đoán)",
+   "summary": "Nhân vật xoay nghiêng tạo dáng nhẹ khoe tà áo dài trắng và bắt đầu hé nụ cười, tương ứng nhịp đọc 3 gạch đầu dòng đầu về chi phí, quãng đường và thời lượng học (quan sát)",
+   "transition": "Chuyển từ xoay người sang chỉnh hai quai balo chuẩn bị tiến gần ống kính (quan sát)"
+  },
+  {
+   "from": "00:05",
+   "to": "00:08",
+   "seconds": 3,
+   "role": "lật kèo",
+   "emotion": "nhẹ nhõm",
+   "retention_function": "Hai chi tiết đời thường tự giễu ('Từ chối làm lớp trưởng 3 lần', 'Lớn tuổi hơn thầy cô (số ít)') phá tan không khí căng thẳng và kích thích bật cười thiện cảm (suy đoán)",
+   "summary": "Nhân vật đặt tay lên quai balo rồi bước thẳng lại gần camera, khung hình chuyển từ trung cảnh sang cận cảnh hơn với nụ cười rõ và tự tin (quan sát)",
+   "transition": "Bước tiến sát camera dẫn thẳng vào khoảnh khắc dừng cận mặt ở 2 giây cuối (quan sát)"
+  },
+  {
+   "from": "00:08",
+   "to": "00:10",
+   "seconds": 2,
+   "role": "kết",
+   "emotion": "ấm áp",
+   "retention_function": "Chốt đích đến đo lường được ('Mục tiêu 25 điểm B00') cùng nụ cười cận mặt tự tin rồi cắt nhanh ở 00:10 để người xem đọc chưa kịp tự động xem lặp vòng 2 (suy đoán)",
+   "summary": "Cận cảnh gương mặt nhân vật nghiêng nhẹ đầu cười tươi nhìn thẳng ống kính cho tới khi hết clip ở 00:10 (quan sát)",
+   "transition": "Cắt hết clip ngay khi nhạc vẫn đang giàu năng lượng, nối mượt về 00:00 khi tự động phát lại (quan sát)"
+  }
+ ],
+ "promise_answered_at": "00:08",
+ "winning_points": {
+  "best_metaphor": {
+   "text": "Hình ảnh người phụ nữ 28 tuổi mặc áo dài trắng nữ sinh, đeo balo chuẩn bị tới lớp đóng vai trò ẩn dụ thị giác trực tiếp cho việc 'dám bắt đầu lại từ vạch xuất phát'",
+   "t": "00:00",
+   "kind": "quan sát"
+  },
+  "quotable_line": {
+   "text": "Từ chối làm lớp trưởng 3 lần",
+   "t": "00:00",
+   "verbatim": true
+  },
+  "interrupts_per_10s": 4,
+  "interrupts": [
+   {
+    "t": "00:00",
+    "what": "Xuất hiện đồng thời áo dài trắng nữ sinh và bảng 7 dòng chữ gây sốc thị giác",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:03",
+    "what": "Nhân vật xoay nghiêng người khoe tà áo dài và chuyển từ mặt nghiêm sang mỉm cười nhẹ",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:06",
+    "what": "Chỉnh hai quai balo rồi bước thẳng về phía ống kính, đổi cỡ cảnh từ trung cảnh sang cận cảnh",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:09",
+    "what": "Dừng cận mặt, nghiêng đầu cười tươi khóa ánh nhìn trước khi video kết thúc",
+    "kind": "quan sát"
+   }
+  ]
+ },
+ "algorithmic_triggers": {
+  "comment": [
+   {
+    "what": "Chi tiết 'Từ chối làm lớp trưởng 3 lần' và 'Lớn tuổi hơn thầy cô (số ít)' rất dễ kéo bình luận trêu vui, khen dễ thương và chia sẻ chuyện đi học muộn",
+    "why": "đồng cảm",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Mục tiêu '25 điểm B00' cùng cường độ đi 60km và học hơn 10 tiếng/ngày khiến người xem tò mò hỏi ngành dự thi (Y/Dược), lý do học lại và cách xoay xở sinh hoạt",
+    "why": "hỏi thêm",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Lựa chọn 28 tuổi quay lại học lớp 11 GDTX dễ tạo thảo luận trái chiều giữa việc theo đuổi đại học hay học nghề/liên thông cho nhanh",
+    "why": "tranh luận",
+    "kind": "suy đoán"
+   }
+  ],
+  "save_share": [
+   {
+    "what": "Người đang cảm thấy 'quá muộn' để học lại hoặc đổi hướng lưu lại làm nguồn động lực cá nhân",
+    "why": "khác",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Thông tin thực tế về học phí GDTX (65k/tháng) và cường độ ôn thi khối B00 hữu ích cho người đang tìm hiểu con đường học bổ túc/thi lại",
+    "why": "kiến thức ngách",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Gửi cho bạn bè cùng lứa U30 đang than già hoặc lười học để khích lệ và trêu nhau",
+    "why": "gửi bạn bè",
+    "kind": "suy đoán"
+   }
+  ]
+ },
+ "audio": {
+  "speech_pace": "Không có lời thoại (video dạng chữ trên màn hình kết hợp nhạc nền xuyên suốt)",
+  "emphasis": [
+   {
+    "t": "00:00",
+    "what": "Nhạc nền tiếng Anh vào ngay đoạn nhịp sôi động, tươi sáng từ giây đầu (quan sát)"
+   },
+   {
+    "t": "00:06",
+    "what": "Giai điệu và giọng hát nền dâng cao trào khớp với lúc nhân vật bước sát camera và cười rạng rỡ (quan sát)"
+   }
+  ],
+  "tone": "chia sẻ kinh nghiệm",
+  "music": "Nhạc nền pop/synth-pop tiếng Anh tiết tấu nhanh, giai điệu tươi sáng pha chất hoài niệm truyền cảm hứng, chạy liên tục 00:00–00:10 (quan sát)",
+  "sfx": []
+ },
+ "ending": {
+  "type": "loop về đầu",
+  "cta": ""
+ },
+ "arc": {
+  "name": "Bảng số liệu phản khuôn mẫu chốt bằng tự tin",
+  "format_compatibility": "instructional_list",
+  "skeleton": [
+   "[Tuyên bố thân phận/bối cảnh trái khuôn mẫu về tuổi tác hoặc xuất phát điểm + hình ảnh đời thực tương phản ngay giây 0]",
+   "[2–3 con số cụ thể chứng minh cái giá phải trả, sự kỷ luật và cường độ thực tế không tô hồng]",
+   "[1–2 chi tiết đời thường hài hước, tự giễu về sự lệch pha với môi trường xung quanh để hạ nhiệt và tạo thiện cảm]",
+   "[Chốt một mục tiêu đo lường được + biểu cảm tự tin tiến sát ống kính, kết gọn để kích vòng lặp đọc lại]"
+  ],
+  "hook_mechanism": "Phản trực giác bằng sự tương phản giữa danh tính U30 và bối cảnh học sinh lớp 11, khuếch đại bằng bảng thông tin dày chữ trên thời lượng ngắn",
+  "beats": [
+   {
+    "role": "hook",
+    "function": "Khóa mắt người xem bằng tương phản hình–chữ (áo dài trắng + tiêu đề U30 học lớp 11 GDTX) và khối 6 gạch đầu dòng buộc phải dừng lại đọc (suy đoán)",
+    "seconds": 2,
+    "transition": "Nhân vật xoay nhẹ người đổi góc đứng để giữ chuyển động thị giác trong lúc mắt người xem trượt xuống các dòng chữ đầu (quan sát)"
+   },
+   {
+    "role": "chứng minh",
+    "function": "Chuỗi số liệu khắc nghiệt và cụ thể (65k/tháng, đi gần 60km/ngày, học hơn 10 tiếng/ngày) chứng minh sự nghiêm túc thật sự chứ không làm nội dung cho vui (suy đoán)",
+    "seconds": 3,
+    "transition": "Chuyển từ xoay người sang chỉnh hai quai balo chuẩn bị tiến gần ống kính (quan sát)"
+   },
+   {
+    "role": "lật kèo",
+    "function": "Hai chi tiết đời thường tự giễu ('Từ chối làm lớp trưởng 3 lần', 'Lớn tuổi hơn thầy cô (số ít)') phá tan không khí căng thẳng và kích thích bật cười thiện cảm (suy đoán)",
+    "seconds": 3,
+    "transition": "Bước tiến sát camera dẫn thẳng vào khoảnh khắc dừng cận mặt ở 2 giây cuối (quan sát)"
+   },
+   {
+    "role": "kết",
+    "function": "Chốt đích đến đo lường được ('Mục tiêu 25 điểm B00') cùng nụ cười cận mặt tự tin rồi cắt nhanh ở 00:10 để người xem đọc chưa kịp tự động xem lặp vòng 2 (suy đoán)",
+    "seconds": 2,
+    "transition": "Cắt hết clip ngay khi nhạc vẫn đang giàu năng lượng, nối mượt về 00:00 khi tự động phát lại (quan sát)"
+   }
+  ]
+ },
+ "emotional_arc": {
+  "opening_emotion": "Ngạc nhiên và tò mò khi thấy hình ảnh nữ sinh áo dài trắng đi kèm dòng chữ U30 học lớp 11 GDTX (suy đoán)",
+  "vulnerability_dip": {
+   "t": "00:02",
+   "what": "Biểu cảm ban đầu hơi nghiêm, còn nét ngại ngùng khi đứng chỉnh balo kết hợp áp lực thật của việc đi 60km/ngày và học hơn 10 tiếng ở tuổi 28 (quan sát)"
+  },
+  "aha_peak": {
+   "t": "00:06",
+   "what": "Nhân vật bước thẳng lại gần ống kính nở nụ cười tươi tự tin cùng chi tiết hóm hỉnh từ chối làm lớp trưởng và mục tiêu 25 điểm B00, lật cảm giác 'muộn màng' thành 'bản lĩnh' (suy đoán)"
+  },
+  "ending_tone": "Ấm áp, tự tin, nhẹ nhõm và truyền cảm hứng không lên gân (suy đoán)"
+ },
+ "angles": {
+  "hi_oneup": {
+   "idea": "Chủ đề vượt qua 'bẫy trễ giờ cuộc đời' (cảm giác 25–30 tuổi đã quá muộn để học kỹ năng mới từ số 0): mở bằng thẻ 6 con số đời thực của một người lớn quay lại học lại nền tảng bằng hình ảnh comic chibi + motion graphics (không quay mặt, không b-roll, không nhạc nền, giọng kể miền Nam xưng mình–bạn), cài 2 tình huống chibi tự giễu khi ngồi học chung nhóm nhỏ tuổi hơn rồi giải thích cơ chế tâm lý vì sao người bắt đầu muộn nhưng có mục tiêu đo được lại bền hơn.",
+   "hook": "Gần 30 tuổi mới bắt đầu học lại từ con số 0, bạn nghĩ mình đang đi trễ hay đang cầm một lợi thế ngầm?",
+   "length_s": 80
+  },
+  "vanhiep_tech": {
+   "idea": "Talking-head về lộ trình chuyển ngành/học lại nền tảng lập trình ở tuổi U30: mở bằng bảng 5 con số thực tế (số giờ tự code mỗi ngày, học phí tự học, số lần ngồi review code với mentor nhỏ tuổi hơn, mục tiêu dự án đo được), cắt layer overlay diagram mỗi 3–5 giây so sánh đường cong học tập giữa học đối phó năm 18 tuổi và học có hệ thống ở tuổi 28.",
+   "hook": "Gần 30 tuổi mới học lại từ dòng code đầu tiên, chung team với mấy bạn nhỏ hơn gần chục tuổi — đây là 5 con số thực tế ít ai kể.",
+   "length_s": 65
+  }
+ },
+ "craft_transfer": {
+  "metaphor_transfer": "Không dùng khẩu hiệu sáo rỗng kiểu 'học không bao giờ muộn'; thay vào đó dùng chính trang phục áo dài trắng + balo và 6 gạch đầu dòng đầy con số thực tế để người xem tự rút ra cảm hứng.",
+  "sentence_rhythm": "Mỗi gạch đầu dòng chỉ 4–7 chữ, dẫn nhịp bằng các con số neo tâm trí (28 tuổi, lớp 11, 65k, 60km, 10 tiếng, 3 lần, 25 điểm), xen chi tiết hài ở giữa để tạo tương phản trước khi chốt mục tiêu.",
+  "spoken_pivots": [
+   "Nghe mấy con số đầu chắc bạn thấy hơi ngán đúng không, nhưng khúc mắc cười nhất lại nằm ở trong lớp…",
+   "Chưa hết đâu, đi học lại ở tuổi này còn dính mấy tình huống dở khóc dở cười kiểu…",
+   "Tới đây chắc nhiều bạn hỏi: cực vậy rốt cuộc học để làm gì?"
+  ],
+  "pacing_3_5s": "Dù chỉ 10 giây và một góc máy cố định, clip vẫn đổi trạng thái hình ảnh đều mỗi ~3 giây (00:00 đứng chỉnh balo -> 00:03 xoay nghiêng khoe áo dài và hé cười -> 00:06 bước tiến sát đổi từ trung cảnh sang cận mặt -> 00:09 nghiêng đầu chốt cười), đồng thời dùng 7 dòng chữ kéo thời gian đọc dài hơn thời lượng clip.",
+  "audience_pains": [
+   "Nỗi sợ U30 đã quá muộn để học lại, thi lại hoặc đổi hướng cuộc đời",
+   "Tâm lý ngại ánh nhìn và sự chênh lệch tuổi tác khi học chung với người nhỏ hơn hoặc thầy cô trẻ hơn",
+   "Áp lực cân bằng giữa chi phí, quãng đường, thời gian cày cuốc và mục tiêu điểm số cao"
+  ]
+ },
+ "why_it_works": [
+  {
+   "claim": "Tận dụng hiệu ứng 'thời gian đọc dài hơn thời lượng clip' (7 dòng thông tin đặc số liệu trên nền clip 10 giây) để kéo tỷ lệ xem hết và lặp vòng vượt 100%",
+   "evidence": "00:00–00:10, khối beats và ending",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Tương phản thị giác–chữ cực mạnh ngay 00:00 (áo dài nữ sinh đối lập nhãn U30) chặn thao tác lướt mà không cần mở bài rườm rà",
+   "evidence": "00:00, khối hook",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Kể chuyện bằng dữ kiện cụ thể xen chi tiết tự giễu duyên dáng thay vì rao giảng đạo lý, khiến người xem tự nể phục và chủ động để lại bình luận hỏi thêm hoặc cổ vũ",
+   "evidence": "00:00–00:08, khối winning_points và algorithmic_triggers",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Chuyển động bước tiến gần ống kính kèm nụ cười tự tin ở nửa sau chuyển hóa cảm xúc từ tò mò/áp lực sang ấm áp và khâm phục ngay trước khi clip lặp lại",
+   "evidence": "00:06–00:10, khối emotional_arc",
+   "kind": "suy đoán"
+  }
+ ],
+ "model_note": "Gemini 4 Neon",
+ "apify": {
+  "raw_id": "7711338098323410196",
+  "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196",
+  "platform": "tiktok",
+  "role": "direct_niche",
+  "learn_scope": "idea_and_craft",
+  "format_compatibility": "instructional_list",
+  "craft_focus": [],
+  "caption": "Năn nỉ xin xuống chức lớp trưởng 3 lần mới được  #huonghoclai #hocbotuc #viraltiktok",
+  "hashtags": [
+   "huonghoclai",
+   "hocbotuc",
+   "viraltiktok"
+  ],
+  "author": {
+   "name": "phamthuykieuhuong",
+   "fans": 0
+  },
+  "play_count": 1700000,
+  "like_count": 140100,
+  "comment_count": 1173,
+  "share_count": 11400,
+  "save_count": 3157,
+  "top_comments": [],
+  "duration_s": 11.0,
+  "create_time": "2026-11-23T12:10:18+00:00",
+  "median_views": 43600.0,
+  "outlier_ratio": 38.99,
+  "outlier": 38.99,
+  "views_per_day": 408786.1,
+  "engagement_intensity": 0.01548,
+  "basis": "views/median_views",
+  "channel_niche": [
+   "hoc-tap",
+   "productivity"
+  ],
+  "niche_verified": true,
+  "source": "radar-fetch (yt-dlp)"
+ },
+ "_meta": {
+  "date": "2026-11-27",
+  "video": "7711338098323410196.mp4",
+  "cli": "agy 1.5.18",
+  "model": "agy-default",
+  "source": "https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196",
+  "arc": "ARC-003",
+  "arc_new": true
+ }
+}

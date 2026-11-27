@@ -59,7 +59,8 @@
    ],
    "seen": 1,
    "tone": "tech_sharp",
-   "format_compatibility": "instructional_list"
+   "format_compatibility": "instructional_list",
+   "win_rate": null
   },
   {
    "id": "ARC-002",
@@ -109,7 +110,8 @@
    "uses": 0,
    "wins": 0,
    "evidence": [],
-   "seen": 0
+   "seen": 0,
+   "win_rate": null
   },
   {
    "id": "ONEUP-CORE-ARC",
@@ -202,7 +204,60 @@
      "source": "content/archive/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md",
      "creator": "a-c04 (Hiệp, đã duyệt)"
     }
-   ]
+   ],
+   "seen": 2,
+   "win_rate": null
+  },
+  {
+   "id": "ARC-003",
+   "name": "Bảng số liệu phản khuôn mẫu chốt bằng tự tin",
+   "skeleton": [
+    "[Tuyên bố thân phận/bối cảnh trái khuôn mẫu về tuổi tác hoặc xuất phát điểm + hình ảnh đời thực tương phản ngay giây 0]",
+    "[2–3 con số cụ thể chứng minh cái giá phải trả, sự kỷ luật và cường độ thực tế không tô hồng]",
+    "[1–2 chi tiết đời thường hài hước, tự giễu về sự lệch pha với môi trường xung quanh để hạ nhiệt và tạo thiện cảm]",
+    "[Chốt một mục tiêu đo lường được + biểu cảm tự tin tiến sát ống kính, kết gọn để kích vòng lặp đọc lại]"
+   ],
+   "beats": [
+    {
+     "role": "hook",
+     "function": "Khóa mắt người xem bằng tương phản hình–chữ (áo dài trắng + tiêu đề U30 học lớp 11 GDTX) và khối 6 gạch đầu dòng buộc phải dừng lại đọc (suy đoán)",
+     "seconds": 2,
+     "transition": "Nhân vật xoay nhẹ người đổi góc đứng để giữ chuyển động thị giác trong lúc mắt người xem trượt xuống các dòng chữ đầu (quan sát)"
+    },
+    {
+     "role": "chứng minh",
+     "function": "Chuỗi số liệu khắc nghiệt và cụ thể (65k/tháng, đi gần 60km/ngày, học hơn 10 tiếng/ngày) chứng minh sự nghiêm túc thật sự chứ không làm nội dung cho vui (suy đoán)",
+     "seconds": 3,
+     "transition": "Chuyển từ xoay người sang chỉnh hai quai balo chuẩn bị tiến gần ống kính (quan sát)"
+    },
+    {
+     "role": "lật kèo",
+     "function": "Hai chi tiết đời thường tự giễu ('Từ chối làm lớp trưởng 3 lần', 'Lớn tuổi hơn thầy cô (số ít)') phá tan không khí căng thẳng và kích thích bật cười thiện cảm (suy đoán)",
+     "seconds": 3,
+     "transition": "Bước tiến sát camera dẫn thẳng vào khoảnh khắc dừng cận mặt ở 2 giây cuối (quan sát)"
+    },
+    {
+     "role": "kết",
+     "function": "Chốt đích đến đo lường được ('Mục tiêu 25 điểm B00') cùng nụ cười cận mặt tự tin rồi cắt nhanh ở 00:10 để người xem đọc chưa kịp tự động xem lặp vòng 2 (suy đoán)",
+     "seconds": 2,
+     "transition": "Cắt hết clip ngay khi nhạc vẫn đang giàu năng lượng, nối mượt về 00:00 khi tự động phát lại (quan sát)"
+    }
+   ],
+   "hook_mechanism": "Phản trực giác bằng sự tương phản giữa danh tính U30 và bối cảnh học sinh lớp 11, khuếch đại bằng bảng thông tin dày chữ trên thời lượng ngắn",
+   "uses": 0,
+   "wins": 0,
+   "win_rate": null,
+   "evidence": [
+    {
+     "source": "https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196",
+     "creator": "phamthuykieuhuong",
+     "views": 1700000,
+     "followers": 0,
+     "date": "2026-11-27",
+     "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md"
+    }
+   ],
+   "seen": 1
   }
  ],
  "ideas": [
@@ -224,6 +279,26 @@
    "length_s": 60,
    "teardown": "research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md",
    "date": "2026-11-26",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "hi_oneup",
+   "idea": "Chủ đề vượt qua 'bẫy trễ giờ cuộc đời' (cảm giác 25–30 tuổi đã quá muộn để học kỹ năng mới từ số 0): mở bằng thẻ 6 con số đời thực của một người lớn quay lại học lại nền tảng bằng hình ảnh comic chibi + motion graphics (không quay mặt, không b-roll, không nhạc nền, giọng kể miền Nam xưng mình–bạn), cài 2 tình huống chibi tự giễu khi ngồi học chung nhóm nhỏ tuổi hơn rồi giải thích cơ chế tâm lý vì sao người bắt đầu muộn nhưng có mục tiêu đo được lại bền hơn.",
+   "hook": "Gần 30 tuổi mới bắt đầu học lại từ con số 0, bạn nghĩ mình đang đi trễ hay đang cầm một lợi thế ngầm?",
+   "length_s": 80,
+   "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md",
+   "date": "2026-11-27",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "vanhiep_tech",
+   "idea": "Talking-head về lộ trình chuyển ngành/học lại nền tảng lập trình ở tuổi U30: mở bằng bảng 5 con số thực tế (số giờ tự code mỗi ngày, học phí tự học, số lần ngồi review code với mentor nhỏ tuổi hơn, mục tiêu dự án đo được), cắt layer overlay diagram mỗi 3–5 giây so sánh đường cong học tập giữa học đối phó năm 18 tuổi và học có hệ thống ở tuổi 28.",
+   "hook": "Gần 30 tuổi mới học lại từ dòng code đầu tiên, chung team với mấy bạn nhỏ hơn gần chục tuổi — đây là 5 con số thực tế ít ai kể.",
+   "length_s": 65,
+   "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md",
+   "date": "2026-11-27",
    "status": "ý tưởng"
   }
  ]

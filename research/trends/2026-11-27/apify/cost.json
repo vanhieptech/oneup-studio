@@ -1,0 +1,21 @@
+{
+ "runs": [
+  {
+   "actor": "clockworks/tiktok-scraper",
+   "run_id": "htkY5I1oGi0b2O4hY",
+   "status": "SUCCEEDED",
+   "usd": 0.14900000000000002,
+   "items": 40,
+   "at": "2026-11-27T23:00:33"
+  },
+  {
+   "actor": "clockworks/tiktok-comments-scraper",
+   "run_id": "SborHiNg0DNQauOGY",
+   "status": "SUCCEEDED",
+   "usd": 0.0,
+   "items": 60,
+   "at": "2026-11-27T23:01:33"
+  }
+ ],
+ "total_usd": 0.149
+}

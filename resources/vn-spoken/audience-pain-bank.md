@@ -20,3 +20,6 @@ Nơi tích lũy các câu hỏi, nỗi đau và cách diễn đạt cửa miện
 | 2026-10-16 | clip-03 (Apify comments) | trì hoãn, học tập | «Muốn học mà mắc lười» | Nỗi đau thật: muốn làm nhưng không bắt đầu nổi |
 | 2026-11-26 | manghocls-7366613156908600583 | học thuộc, nhớ lâu | «chiều thi mà giờ học chưa xong, làm sao để nhớ lâu» | Đổi bối cảnh sang đời thường nếu dùng cho `@hi.oneup` (`L-087`) |
 | 2026-11-26 | thayqueo (Apify vtt/comments) | trì hoãn | «đợi khi nào thật sự sẵn sàng rồi làm, từ từ đã» | Niềm tin phổ biến để bẻ gãy ở Counter-Intuitive Hook |
+| 2026-11-27 | trends-2026-11-27-01 | hoc-tap, productivity | «Nỗi sợ U30 đã quá muộn để học lại, thi lại hoặc đổi hướng cuộc đời» | Tự động trích từ Khối 7 / comment |
+| 2026-11-27 | trends-2026-11-27-01 | hoc-tap, productivity | «Tâm lý ngại ánh nhìn và sự chênh lệch tuổi tác khi học chung với người nhỏ hơn hoặc thầy cô trẻ hơn» | Tự động trích từ Khối 7 / comment |
+| 2026-11-27 | trends-2026-11-27-01 | hoc-tap, productivity | «Áp lực cân bằng giữa chi phí, quãng đường, thời gian cày cuốc và mục tiêu điểm số cao» | Tự động trích từ Khối 7 / comment |

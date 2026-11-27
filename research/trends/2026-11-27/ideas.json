@@ -1,0 +1,60 @@
+{
+ "date": "2026-11-27",
+ "ideas": [
+  {
+   "id": "black-friday-sale-ngay-doi-ro-tien",
+   "title": "Black Friday 27/11/2026: Người tiêu dùng bớt mặn mà vì cả năm đã có sale ngày đôi (VnExpress 27/11). Sách 5.1 (+5.23): không mua đợt lớn không có nghĩa là dư tiền hơn — mở sao kê tắt khoản tự trừ đã quên, để giỏ hàng qua một đêm",
+   "trend_id": "nguoi-tieu-dung-bot-man-ma-voi-black",
+   "bridge_id": "B-blackfriday-01",
+   "lesson": "5.1 Tắt mọi gia hạn tự động / kiểm tra rò rỉ chi tiêu định kỳ (mức C; bỏ phần quy định nền tảng Trung Quốc, giữ nguyên tắc rà soát giao dịch lặp hàng tháng). Phụ: 5.23 để giỏ hàng qua 24 giờ trước khi mua món không thiết yếu (mức C, kinh nghiệm). Dẫn chứng trend: VnExpress 27/11/2026 ghi nhận không khí Black Friday tại TP HCM trầm hơn, nhiều người chỉ mua vài món cần thiết vì quanh năm đã mua trong các đợt sale ngày đôi.",
+   "angle": "contrarian / empathy",
+   "pattern": "P05 (mốc Black Friday) + P03 (lật góc nhìn)",
+   "differentiation": "Mọi người đang nói: người tiêu dùng năm nay tỉnh táo hơn, bớt mặn mà với Black Friday vì sale quanh năm ([VnExpress 27/11](https://vnexpress.net/nguoi-tieu-dung-bot-man-ma-voi-black-friday-5149368.html)); báo công nghệ thì vẫn đăng danh sách săn deal ([Genk 27/11](https://genk.vn/black-friday-san-deal-gia-dung-tu-panasonic-locklock-elmich-gia-tot-bat-ngo-nhieu-mon-con-165261127082941891.chn)). Góc của mình: không săn Black Friday chưa chắc đã dư tiền hơn — vì tiền đi ra bằng các khoản nhỏ đều đặn quanh năm (sale ngày đôi, gói tự gia hạn đã quên). +1 tối nay: mở lịch sử giao dịch 30 ngày, tắt đúng một khoản tự trừ mà tháng rồi bạn không đụng tới (5.1).",
+   "theme": "dark",
+   "week": 5,
+   "target": "đăng #28 (5.1, DARK) — hook thời điểm Black Friday, cạnh B-ro-tien-01",
+   "hook_vi": "Hôm nay Black Friday, báo đưa tin người tiêu dùng bớt mặn mà săn sale rồi. Nghe có vẻ năm nay mình giữ tiền giỏi hơn, đúng hông?",
+   "moment_vi": "Không chen trung tâm thương mại ngày Black Friday, nhưng mở sao kê cuối tháng vẫn thấy mấy dòng trừ tiền nhỏ rải đều cả tháng.",
+   "turn_vi": "Mình hông mất tiền vì một cú mua lớn. Mình mất vì mấy khoản nhỏ lặp đi lặp lại không ai để ý. Tối nay mở sao kê, tắt đúng một khoản tự trừ.",
+   "hook_en": "Black Friday feels quieter this year. Does that mean we're actually saving more?",
+   "beats": [
+    {"text": "Hôm nay Black Friday, báo đưa tin người tiêu dùng bớt mặn mà săn sale rồi. Nghe có vẻ năm nay mình giữ tiền giỏi hơn, đúng hông?", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Black Friday feels quieter. Are we saving more?", "background": "grid"},
+    {"text": "Người đi mua chia sẻ thiệt lòng: giờ tháng nào cũng có sale ngày đôi, đồ cần dùng thì sắm rải rác từ đầu năm hết rồi.", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "Double-day sales already happened all year.", "background": "grid"},
+    {"text": "Mình cũng vậy á. Tưởng năm nay tỉnh táo, không bấm đơn lớn ngày Black Friday. Tới lúc mở app ngân hàng coi lại, tiền vẫn đi đâu mất tiêu.", "expression": "sad", "action": "talking", "duration": 8, "caption_en": "Skipped the big sale. Money still vanished.", "background": "room"},
+    {"text": "Toàn mấy khoản nhỏ: gói nghe nhạc, gói lưu trữ ảnh, cái app tập thể dục mở đúng một lần hồi đầu năm, cộng thêm vài đơn sale ngày đôi.", "expression": "confused", "action": "talking", "duration": 8, "caption_en": "Small leaks: forgotten subscriptions and mini sales.", "background": "room"},
+    {"text": "Sách xếp chuyện này vào nhóm rò rỉ chi tiêu: một khoản lớn thì bạn đắn đo cả tuần, còn mấy khoản tự trừ vài chục ngàn mỗi tháng thì não cho qua luôn.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "Big buys make us pause. Auto-renewals slip by.", "background": "grid"},
+    {"text": "Mà cộng mười hai tháng lại, nó bằng đúng một khoản để dành kha khá.", "expression": "surprised", "action": "talking", "duration": 5, "caption_en": "Twelve months later, it adds up fast.", "background": "grid"},
+    {"text": "Tối nay làm đúng một việc nhỏ thôi: mở sao kê ba mươi ngày gần nhất, thấy khoản tự gia hạn nào tháng rồi hông đụng tới thì tắt liền.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Tonight: check 30-day history, cancel one.", "background": "desk"},
+    {"text": "Còn món nào đang nằm trong giỏ hàng Black Friday, thử để nó ngủ qua một đêm. Mai dậy còn cần thì mua.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "Leave cart items overnight before buying.", "background": "room"},
+    {"text": "Bạn mở sao kê thử coi, có tìm ra gói nào quên tắt hông?", "expression": "happy", "action": "talking", "duration": 4, "caption_en": "Found any forgotten subscription yet?", "background": "room"}
+   ]
+  },
+  {
+   "id": "gta6-gioi-han-cung-gio-choi",
+   "title": "GTA 6 ra mắt làm sụt năng suất làm việc (GNews US / Baltic News Network + Google Trends US + Verge + CafeBiz 27/11). Sách 4.15 (+3.9): không cần bỏ game, đặt giới hạn cứng giờ dừng trước khi bật máy",
+   "trend_id": "study-reveals-how-gta-6-s-release-affected",
+   "bridge_id": "B-gta6-01",
+   "lesson": "4.15 Đặt giới hạn cứng cho giải trí màn hình / video ngắn (mức C; bỏ số liệu Trung Quốc, giữ nguyên tắc đặt rào cản trước khi bắt đầu thay vì trông vào ý chí lúc đang cuốn). Phụ: 3.9 tới giờ thì ngủ / tách thiết bị khỏi giường (mức B). Dẫn chứng trend: cụm tin GTA 6 ra mắt (Google Trends US, The Verge, CafeBiz, bài khảo sát năng suất nhân viên trên GNews US) — không đưa số % cụ thể vào voice khi chưa tự kiểm bài gốc.",
+   "angle": "humor / empathy",
+   "pattern": "P01 (trend-as-mirror) + P15 (self-own first)",
+   "differentiation": "Mọi người đang nói: thống kê dân văn phòng nghỉ phép / sụt năng suất vì GTA 6 ([GNews US](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVzRHOU5YVU9IaXUtMndpYVh1NVhfS1pTNmQ4UFRyRFJoRnhDUzV2akZ1bjktQjBnNHVxdExrZHRQX0hkRFJhU2w1bEtubzZPWEI4UnBUb0g0T0x3cV9weGR2UHRMU2RhcnhLQ3IzVTFuN3Qyd2RYTGplNzZ2NTlTVVdzZ1VmUWlweWpjTXBmM3R1cUtTS1hOc2hBN0RqeVppUGNJU2xINnZUZDFPbm12b3hWd09KdTRPUmNaN2lfQzFBQQ?oc=5)), hoặc bàn kết thúc game ([The Verge](https://www.theverge.com/entertainment/1043362/grand-theft-auto-6-ending)). Góc của mình: tự nhận mình cũng mê game (P15), không giảng đạo «bỏ game đi»; dùng giới hạn cứng đặt TRƯỚC khi bật máy (4.15) để chơi đã mà sáng mai không vật vờ.",
+   "theme": "light",
+   "week": 2,
+   "target": "đăng #10 (4.15, LIGHT) — hook mới cực tươi (GTA 6), cạnh B-phimngan-01 / B-texthip-01",
+   "hook_vi": "GTA 6 vừa ra, cả mạng bàn chuyện dân văn phòng tụt năng suất. Mình hông bảo bạn bỏ game đâu, vì mình cũng mê mà.",
+   "moment_vi": "Mở máy tính chơi đúng một tiếng cho xả stress, rồi câu «làm nốt nhiệm vụ này nữa thôi» kéo thẳng tới hai giờ sáng.",
+   "turn_vi": "Đang cuốn thì ý chí thua chắc. Đặt giới hạn cứng trước khi bấm chơi: hẹn giờ tắt màn hình ở đúng mốc bạn tự chọn.",
+   "hook_en": "GTA 6 dropped and work productivity tanked. I'm not telling you to quit gaming.",
+   "beats": [
+    {"text": "GTA 6 vừa ra, cả mạng bàn chuyện dân văn phòng tụt năng suất. Mình hông bảo bạn bỏ game đâu, vì mình cũng mê mà.", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "GTA 6 dropped. Not saying quit gaming.", "background": "room"},
+    {"text": "Cái bẫy hông nằm ở việc chơi game. Nó nằm ở câu nói quen thuộc nhất lúc mười một giờ đêm: làm nốt nhiệm vụ này nữa thôi.", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "The trap is 'just one more mission'.", "background": "room"},
+    {"text": "Ngẩng lên thì hai giờ sáng. Sáng hôm sau ngồi trước màn hình công việc mà đầu cứ lơ lửng.", "expression": "sad", "action": "talking", "duration": 6, "caption_en": "2 AM hits. Tomorrow feels foggy.", "background": "desk"},
+    {"text": "Lúc đang cuốn vô cốt truyện, trông chờ vào ý chí để tự tắt máy gần như thua chắc.", "expression": "neutral", "action": "talking", "duration": 6, "caption_en": "Willpower loses mid-quest.", "background": "grid"},
+    {"text": "Sách gợi ý cách nhẹ hơn nhiều: đặt giới hạn cứng từ lúc bạn còn tỉnh táo, tức là trước khi bấm nút chơi.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Set a hard limit before you press play.", "background": "grid"},
+    {"text": "Ví dụ tối nay tự cho mình chơi từ chín giờ tới mười một giờ, hẹn báo thức để xa tầm tay, tới giờ là lưu game rồi đứng dậy.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Alarm across the room. Save and stand up.", "background": "desk"},
+    {"text": "Chơi có giờ dừng thì chơi mới đã, hông bị cảm giác áy náy kéo qua tận sáng mai.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "A clear stop makes gaming guilt-free.", "background": "room"},
+    {"text": "Còn bạn, lần gần nhất câu «nốt ván này thôi» kéo bạn tới mấy giờ sáng? Kể mình nghe với nha.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "How late did 'one more' take you?", "background": "room"}
+   ]
+  }
+ ]
+}

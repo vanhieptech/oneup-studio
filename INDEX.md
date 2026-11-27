@@ -245,6 +245,8 @@ tags: [index, retrieval]
 | research.trends.2026-11-12.treg.README | readme | ready | `research/trends/2026-11-12/treg/README.md` | Treg TikTok — 2026-11-12 |
 | teardown.manghocls-7366613156908600583 | teardown | draft | `research/trends/2026-11-26/teardowns/manghocls-7366613156908600583.md` | Viral DNA Card `manghocls-7366613156908600583` |
 | teardown.selftest-clip02 | teardown | draft | `research/trends/2026-11-26/teardowns/selftest-clip02.md` | Teardown `selftest-clip02` (tự kiểm trên clip của kênh) |
+| trends-2026-11-27 | trend-digest | draft-needs-review | `research/trends/2026-11-27/digest.md` | Trend digest 2026-11-27 (thứ Sáu — Black Friday) |
+| teardown.trends-2026-11-27-01 | teardown | draft | `research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md` | Viral DNA Card `trends-2026-11-27-01` |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends.weekly-synthesis | trend-digest | active | `research/trends/weekly-synthesis.md` | Tổng hợp đa video — 2026-11-26 |

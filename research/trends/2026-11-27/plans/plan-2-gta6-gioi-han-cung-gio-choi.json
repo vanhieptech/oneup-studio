@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-gta6-gioi-han-cung-gio-choi",
+ "title": "[STUB] GTA 6 ra mắt làm sụt năng suất làm việc (GNews US / Baltic News Network + Google Trends US + Verge + CafeBiz 27/11). Sách 4.15 (+3.9): không cần bỏ game, đặt giới hạn cứng giờ dừng trước khi bật máy",
+ "meta": {
+  "week": 2,
+  "status": "stub-needs-approval",
+  "trend_id": "study-reveals-how-gta-6-s-release-affected",
+  "bridge_id": "B-gta6-01",
+  "lesson": "4.15 Đặt giới hạn cứng cho giải trí màn hình / video ngắn (mức C; bỏ số liệu Trung Quốc, giữ nguyên tắc đặt rào cản trước khi bắt đầu thay vì trông vào ý chí lúc đang cuốn). Phụ: 3.9 tới giờ thì ngủ / tách thiết bị khỏi giường (mức B). Dẫn chứng trend: cụm tin GTA 6 ra mắt (Google Trends US, The Verge, CafeBiz, bài khảo sát năng suất nhân viên trên GNews US) — không đưa số % cụ thể vào voice khi chưa tự kiểm bài gốc.",
+  "angle": "humor / empathy",
+  "pattern": "P01 (trend-as-mirror) + P15 (self-own first)",
+  "differentiation": "Mọi người đang nói: thống kê dân văn phòng nghỉ phép / sụt năng suất vì GTA 6 ([GNews US](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVzRHOU5YVU9IaXUtMndpYVh1NVhfS1pTNmQ4UFRyRFJoRnhDUzV2akZ1bjktQjBnNHVxdExrZHRQX0hkRFJhU2w1bEtubzZPWEI4UnBUb0g0T0x3cV9weGR2UHRMU2RhcnhLQ3IzVTFuN3Qyd2RYTGplNzZ2NTlTVVdzZ1VmUWlweWpjTXBmM3R1cUtTS1hOc2hBN0RqeVppUGNJU2xINnZUZDFPbm12b3hWd09KdTRPUmNaN2lfQzFBQQ?oc=5)), hoặc bàn kết thúc game ([The Verge](https://www.theverge.com/entertainment/1043362/grand-theft-auto-6-ending)). Góc của mình: tự nhận mình cũng mê game (P15), không giảng đạo «bỏ game đi»; dùng giới hạn cứng đặt TRƯỚC khi bật máy (4.15) để chơi đã mà sáng mai không vật vờ."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "gta6-gioi-han-cung-gio-choi.b01",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "GTA 6 vừa ra, cả mạng bàn chuyện dân văn phòng tụt năng suất. Mình hông bảo bạn bỏ game đâu, vì mình cũng mê mà.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "GTA 6 dropped. Not saying quit gaming.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "gta6-gioi-han-cung-gio-choi.b02",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cái bẫy hông nằm ở việc chơi game. Nó nằm ở câu nói quen thuộc nhất lúc mười một giờ đêm: làm nốt nhiệm vụ này nữa thôi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "The trap is 'just one more mission'.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "gta6-gioi-han-cung-gio-choi.b03",
+   "duration": 6,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ngẩng lên thì hai giờ sáng. Sáng hôm sau ngồi trước màn hình công việc mà đầu cứ lơ lửng.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "2 AM hits. Tomorrow feels foggy.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "gta6-gioi-han-cung-gio-choi.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Lúc đang cuốn vô cốt truyện, trông chờ vào ý chí để tự tắt máy gần như thua chắc.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Willpower loses mid-quest.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "gta6-gioi-han-cung-gio-choi.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách gợi ý cách nhẹ hơn nhiều: đặt giới hạn cứng từ lúc bạn còn tỉnh táo, tức là trước khi bấm nút chơi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Set a hard limit before you press play.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "gta6-gioi-han-cung-gio-choi.b06",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Ví dụ tối nay tự cho mình chơi từ chín giờ tới mười một giờ, hẹn báo thức để xa tầm tay, tới giờ là lưu game rồi đứng dậy.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Alarm across the room. Save and stand up.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "gta6-gioi-han-cung-gio-choi.b07",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chơi có giờ dừng thì chơi mới đã, hông bị cảm giác áy náy kéo qua tận sáng mai.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "A clear stop makes gaming guilt-free.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "gta6-gioi-han-cung-gio-choi.b08",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Còn bạn, lần gần nhất câu «nốt ván này thôi» kéo bạn tới mấy giờ sáng? Kể mình nghe với nha.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "How late did 'one more' take you?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}
