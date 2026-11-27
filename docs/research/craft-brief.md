@@ -56,6 +56,14 @@ Chống nhồi nhét không có nghĩa là cắt cụt. Clip v9 xuống 150 âm 
 - **Câu dẫn mượt:** câu trend và câu nghiên cứu mở bằng một mối nối từ beat trước (nối cảm giác → trend; «Chuyện này có người đo hẳn hoi nè» → nghiên cứu), không nhảy cóc.
 - **Cách làm = 1 đổi thước đo + 1 hành động cụ thể** (vd tính thói quen theo tháng, đừng tính theo tuần; tối nay chạy nhẹ 10 phút), không phải 3 câu ngắn rời nhau.
 - **Khép vòng:** beat kết trả lời đúng nỗi lo ở Hook («chắc mình không hợp») rồi mới tới CTA.
+
+## Liên mạch bằng Ý, cấm dán keo từ nối (Thought-Flow over Connector-Glue; Hiệp 27/11, clip-06 v10)
+Hiệp: «kết nối các câu từ vẫn không liền mạch, quá rập khuôn khi thêm các từ nối câu». v10 mở gần mọi câu bằng `Tại… / Mà… / Vậy… / Nghĩa là… / Nên… / Còn… thì sao`, nghe như keo dán, ý vẫn rời nhau.
+- Không mở các beat/câu liên tiếp bằng công thức `Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`.
+- Câu sau **nảy ra từ hình ảnh, cảm xúc hoặc hệ quả của câu trước**: «hơn 8 tháng» tự dẫn sang «giữ cả mấy tháng trời kiểu gì cũng có hôm nghỉ ngang một bữa», không bật câu hỏi Q&A gượng («Còn lỡ hôm nào… thì sao?»).
+- Không dùng câu meta phá mạch («dạo này có câu trend nói:»). Câu trend hoà vào mạch nghĩ của người kể và chỉ ra ngay điểm giống với chuyện đang kể (mới 2 tuần đòi quen liền giống mới gieo hạt đã đòi ra hoa).
+- Không lặp số của câu trước chỉ để mở «Nghĩa là…»: gộp số + quy đổi nghĩa trong một hơi.
+- **Cách viết:** viết trước một đoạn độc thoại liền một mạch, rồi đọc bỏ hết từ nối đầu câu; nếu các ý vẫn tự kéo nhau đi thì mới cắt beat. Từ nối chỉ là lớp phủ, không phải thứ tạo mạch.
 - Rào giới hạn chỉ 1 vế ngắn: clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết».
 - **Trend** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả «đúng lúc đó mình lướt trúng câu đang trend…» và callback phi thực tế («đánh răng xong thì đăng đại một video»). Câu trend làm gãy mạch: xin ngoại lệ kiểu DL-069 (clip-05), không nhồi gượng.
 
