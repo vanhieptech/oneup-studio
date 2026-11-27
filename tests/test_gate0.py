@@ -50,11 +50,11 @@ def test_brief_prioritizes_highest_win_rate_arc_when_arc_omitted():
 
 
 # --- WS1 (27/11): ONEUP-CORE-ARC is the @hi.oneup default; approved-clip rhythm is loaded -------------------------
-def test_hi_default_is_core_arc_with_55_75s_window():
+def test_hi_default_is_core_arc_with_60_90s_window():
     out = g.brief("xyzzy unmatched topic", "hi")
-    assert "**ONEUP-CORE-ARC**" in out and "180–250 âm tiết" in out
+    assert "**ONEUP-CORE-ARC**" in out and "180–290 âm tiết" in out and "Đủ ý thì dừng" in out
     assert "gợi ý **65s**" in out
-    assert "gợi ý **75s**" in g.brief("xyzzy", "hi", length=150)  # capped to the core window
+    assert "gợi ý **90s**" in g.brief("xyzzy", "hi", length=150)  # capped to the core window
 
 
 def test_extended_lifts_core_window_to_120_180s():
@@ -67,10 +67,26 @@ def test_explicit_arc_and_vht_do_not_use_core_arc():
     assert "ONEUP-CORE-ARC" not in g.brief("xyzzy", "vht")
 
 
-def test_approved_structure_reads_both_reference_clips():
+def test_approved_structure_reads_all_five_approved_clips():
     st = g.approved_structure()
-    assert set(st) == {"a-c01", "a-c04"}
+    assert set(st) == {"a-c01", "a-c02", "a-c03", "a-c04", "a-c05"} == set(g.APPROVED_DESC)
     assert st["a-c01"]["n"] == 12 and st["a-c04"]["n"] == 8      # first beat table only; b12 two lines merged
-    assert all(150 <= s["total_syl"] <= 250 for s in st.values())
+    assert all(st[k]["n"] >= 8 and 150 <= st[k]["total_syl"] <= 350 for k in st)
     out = g.brief("xyzzy", "hi")
-    assert "Nhịp thực tế của 2 clip đã duyệt" in out and "a-c01:" in out and "a-c04:" in out
+    assert "Nhịp thực tế của 5 clip đã duyệt" in out
+    for k in st: assert f"{k}:" in out
+    assert "tự giễu + ví dụ đời thường" in out and "giọng miền Nam + miếng hài nhập vai" in out
+
+
+def test_brief_loads_voice_reminder_story_bank_and_only_four_writing_inputs():
+    out = g.brief("học TOEIC mai học", "hi")
+    assert "voice-profile.md" in out and "«ấy / thế / nhé»" in out and "«hông / nha / nè»" in out
+    assert "Story bank S-01" in out                       # dòng story-bank khớp từ khóa
+    assert "Chỉ nạp 4 thứ" in out and "Fact-lock" in out and "Single-Point Alignment" in out
+    assert "Không nạp `connectors.tsv`" in out
+
+
+def test_pick_approved_returns_closest_two_or_three():
+    picks = g.pick_approved("việc to ngợp chia nhỏ dọn phòng")
+    assert picks[0] == "a-c03" and 2 <= len(picks) <= 3
+    assert "a-c04" in g.pick_approved("học thuộc quên sạch sách tự kiểm")

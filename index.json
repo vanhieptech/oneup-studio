@@ -162,7 +162,7 @@
    "id": "clip-06.feedback",
    "type": "feedback",
    "status": "living",
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "path": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
    "title": "clip-06 — góp ý của Hiệp (nguyên văn)"
   },
@@ -434,7 +434,7 @@
    "id": "prompts.reviewer-script",
    "type": "prompt",
    "status": "ready",
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "path": "docs/prompts/reviewer-script.md",
    "title": "Prompt reviewer độc lập (Pairwise A/B — Theme/Format-Matched Anchor)"
   },
@@ -442,9 +442,9 @@
    "id": "prompts.writer-hi-oneup",
    "type": "prompt",
    "status": "ready",
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "path": "docs/prompts/writer-hi-oneup.md",
-   "title": "Prompt viết script @hi.oneup"
+   "title": "Master Writer Prompt @hi.oneup"
   },
   {
    "id": "prompts.writer-vanhiep-tech",
@@ -458,7 +458,7 @@
    "id": "research.craft-brief",
    "type": "research",
    "status": "ready",
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "path": "docs/research/craft-brief.md",
    "title": "Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm)"
   },
@@ -490,7 +490,7 @@
    "id": "decision-log",
    "type": "log",
    "status": "living",
-   "updated": "2026-11-25",
+   "updated": "2026-11-27",
    "path": "logs/decision-log.md",
    "title": "Nhật ký quyết định: @hi.oneup (luật 33)"
   },
@@ -530,7 +530,7 @@
    "id": "lessons",
    "type": "log",
    "status": "ready",
-   "updated": "2026-10-20",
+   "updated": "2026-11-27",
    "path": "logs/lessons.md",
    "title": "Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)"
   },

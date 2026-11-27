@@ -16,8 +16,8 @@ Pieces (printed as one Markdown block; --out writes/replaces the block between G
   4. Latest notes: resources/feedback.md (Hiệp's rejections, tier 1 list), the channel section of rules/ACTIVE-CHECKLIST.md,
      and <clip>/final/feedback.md when --clip is given.
 @hi.oneup default (WS1, 27/11): without --arc/--tone the spine is ONEUP-CORE-ARC (Mạch 5 nhịp thực dụng: hook tình huống → bẻ thước đo + gài trend →
-1 bằng chứng → 1 việc tối nay → CTA 1 chữ, 180–250 âm tiết ≈ 55–75 s). --extended lifts the window to 120–180 s, only for a topic with real technical steps.
-The brief also prints the beat structure measured from the 2 approved clips (a-c01, a-c04) as the rhythm reference, not only a listicle ARC.
+1 bằng chứng → 1 việc tối nay → CTA 1 chữ, ~180–290 âm tiết ≈ 60–90 s, đủ ý thì dừng). --extended lifts the window to 120–180 s, only for a topic with real technical steps.
+The brief also prints the 5 Hiệp-approved clips (a-c01…a-c05) with a one-line DNA each + measured beat structure, the 2–3 closest to the idea flagged, plus the matching story-bank rows and the voice-profile §2 reminder. Writing inputs are only: brief (Gate 0 + Fact-lock + trend) · voice-profile §2–3 · 2–3 closest approved · story-bank row + research/explainers/<topic>.md.
 Read-only except --out. Never invents: a missing piece is printed as «chưa có» with where to get it.
 """
 import json, math, re, sys, unicodedata
@@ -31,10 +31,26 @@ BEGIN, END = "<!-- GATE0-BRIEF:BEGIN (pipeline/scripts/gate0.py) -->", "<!-- GAT
 CH = {"hi": {"name": "@hi.oneup", "lo": 60, "hi": 180, "cap": 300, "default": 90},
       "vht": {"name": "@vanhiep.tech", "lo": 45, "hi": 90, "cap": 90, "default": 60}}
 CORE_ARC_ID = "ONEUP-CORE-ARC"
-CORE_WINDOW = (55, 75)       # seconds for the core arc unless --extended
+CORE_WINDOW = (60, 90)       # seconds for the core arc unless --extended (khung gọn mặc định; đủ ý thì dừng, không ép dài, không bóp cụt chất kể chuyện)
 EXTENDED_WINDOW = (120, 180)
 APPROVED = {"a-c01": "content/archive/clip-01-implementation-intention/final/script-final.md",
-            "a-c04": "content/archive/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md"}
+            "a-c02": "content/archive/clip-02-procrastination-discomfort/final/script-final.md",
+            "a-c03": "content/archive/clip-03-big-task-chunking/final/script-final.md",
+            "a-c04": "content/archive/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md",
+            "a-c05": "content/archive/clip-05-hoc-mot-dem/final/script-final.md"}
+# DNA từng bản Hiệp đã duyệt: một dòng để chọn mẫu gần thể loại, không để chép câu. `kw` dùng để xếp hạng theo ý tưởng.
+APPROVED_DESC = {
+    "a-c01": ("tự giễu + ví dụ đời thường: «mai học» của chính Hiệp, kế hoạch nếu–thì cụ thể, trả lời tuần tự",
+              "tự giễu thói quen ví dụ đời thường kế hoạch nếu thì học TOEIC mai học lời hứa"),
+    "a-c02": ("khung «bản chất» + meme đời thường: hook thầy hỏi bản chất, 3 dấu hiệu, 1 con số Steel, gọi lại clip-01",
+              "bản chất trì hoãn né cảm giác khó chịu lướt TikTok giải thích nguyên nhân dấu hiệu"),
+    "a-c03": ("hook câu hỏi mở + chia nhỏ vật lý: việc to thành vài việc cầm được, hai nghiên cứu ngắn, ví dụ dọn phòng/ôn thi",
+              "việc to chia nhỏ ngợp cuối tuần dọn phòng ôn thi ước lượng thời gian hook câu hỏi"),
+    "a-c04": ("kể chuyện khép vòng: mở bằng chuyện học tối qua sáng quên, đi một mạch, chốt đúng nỗi đau mở đầu",
+              "kể chuyện quên sạch học thuộc sách tự kiểm khép vòng nhớ ghi nhớ"),
+    "a-c05": ("giọng miền Nam + miếng hài nhập vai: «hà / nè / hông», thí nghiệm có số rõ, câu rào giới hạn, cú hài ghi sổ đầu bài",
+              "đọc lại nhớ tự viết thí nghiệm sinh viên giọng miền Nam miếng hài hông nè học một đêm"),
+}
 STOP = set("và của là có cho một những các được với không thì mà này đó để khi người bạn mình rồi lại cũng như nào gì vì nên".split())
 
 
@@ -75,26 +91,31 @@ def _sent_count(text):
 
 
 def approved_beats(key, root=None):
-    """Beats of an approved script as [{label, text, syl, sents}]. a-c01 = table (| bNN | engine | lời | caption |), a-c04 = «N. [Nhãn] lời»."""
+    """Beats of an approved script as [{label, text, syl, sents}]. Hai khung: bảng beat có cột «Lời…» (a-c01/02/03/05) và «N. [Nhãn] lời» (a-c04)."""
     p = Path(root or ROOT) / APPROVED[key]
     if not p.exists():
         return []
-    out, in_table = [], False
+    out, col = [], None
     for ln in p.read_text(encoding="utf-8").splitlines():
         if ln.startswith("## ") and out:
             break  # only the first beat list; later tables (effects, audit) reuse the same beat ids
-        if ln.startswith("|") and "Lời VI" in ln:
-            in_table = True
-            continue
         m = re.match(r"^\s*\d+\.\s*(?:\*\*)?\[([^\]]+)\](?:\*\*)?\s*(.+)$", ln)
         if m:
             label, text = m.group(1), m.group(2)
-        else:
-            c = [x.strip() for x in ln.strip().strip("|").split("|")] if (in_table and ln.startswith("|")) else []
-            if len(c) >= 3 and re.fullmatch(r"[be]\d{2}", c[0]) and c[1] in ("remotion", "hyperframes"):
-                label, text = c[0], c[2]
+        elif ln.startswith("|"):
+            c = [x.strip() for x in re.split(r"(?<!\\)\|", ln.strip().strip("|"))]
+            if col is None:
+                col = next((i for i, x in enumerate(c) if re.match(r"lời", x, re.I)), None)
+                continue
+            lab = c[0].split()[0] if c and c[0].split() else ""
+            if col < len(c) and re.fullmatch(r"[be]\d{2}[a-z]?", lab) and c[col]:
+                label, text = lab, c[col].replace("\\|", "|")
+            elif len(c) >= 3 and re.fullmatch(r"[be]\d{2}", c[0]) and c[1] in ("remotion", "hyperframes"):
+                label, text = c[0], c[2]  # a-c01 cũ: | bNN | engine | lời | caption |
             else:
                 continue
+        else:
+            continue
         text = text.replace("**", "")
         if out and out[-1]["label"] == label:  # same beat spoken in two lines (b12)
             out[-1]["text"] += " " + text
@@ -115,15 +136,35 @@ def approved_structure(root=None):
     return res
 
 
-def reference_lines(root=None):
+def reference_lines(root=None, picks=None):
     st = approved_structure(root)
     if not st:
-        return ["- Nhịp tham chiếu a-c01 / a-c04: chưa đọc được file đã duyệt (`APPROVED` trong gate0.py)."]
-    L = ["- **Nhịp thực tế của 2 clip đã duyệt** (đo từ file, không phải khuôn liệt kê): học độ dài beat + cách chuyển ý, không chép câu."]
+        return ["- Nhịp tham chiếu clip đã duyệt: chưa đọc được file nào (`APPROVED` trong gate0.py)."]
+    L = [f"- **Nhịp thực tế của {len(st)} clip đã duyệt** (đo từ file, không phải khuôn liệt kê): học độ dài beat + cách chuyển ý + giọng, không chép câu."]
     for k, s in st.items():
-        L.append(f"  - {k}: {s['n']} beat · {s['total_syl']} âm tiết · TB {s['avg_syl']} âm tiết/beat · {s['sents']} câu · beat: " +
+        star = " ← mẫu gần nhất, mở đọc" if picks and k in picks else ""
+        L.append(f"  - {k}: {APPROVED_DESC[k][0]}{star}")
+        L.append(f"    {s['n']} beat · {s['total_syl']} âm tiết · TB {s['avg_syl']} âm tiết/beat · {s['sents']} câu · beat: " +
                  ", ".join(f"{b['label']} {b['syl']}" for b in s["beats"]))
     return L
+
+
+def pick_approved(q, n=3):
+    """2–3 bản đã duyệt gần thể loại/ý tưởng nhất (xếp theo từ khóa DNA + lời beat đầu); luôn trả đủ n nếu có ≥ n bản."""
+    scored = []
+    for k in APPROVED:
+        bs = approved_beats(k)
+        first = " ".join(b["text"] for b in bs[:3])
+        scored.append((overlap(q, APPROVED_DESC[k][1] + " " + APPROVED_DESC[k][0]) + 0.5 * overlap(q, first), k))
+    scored.sort(key=lambda x: (-x[0], x[1]))
+    return [k for _, k in scored[:n]]
+
+
+VOICE_REMINDER = [
+    "- **Giọng Hiệp (`content/voice-profile.md` §2, bắt buộc):** miền Nam nhất quán, xưng mình–bạn; cấm trộn chữ Bắc «ấy / thế / nhé» cạnh «hông / nha / nè»; hài 4/5 tự giễu thói quen và tình huống của chính mình (không trêu người xem); chen 1–3 từ tiếng Anh tự nhiên (không cả câu); có ít nhất 1 lời nội tâm trích trong ngoặc kép (\"…\") khi đúng chuyện thật.",
+    "- Chuyện thật lấy từ `content/story-bank.md`; chi tiết chưa xác nhận để `[CẦN HIỆP XÁC NHẬN]`, không bịa kết quả. Callback clip trước nếu hợp tự nhiên (rule-62). CTA kiểu hỏi chuyện thật, không ép kiểu sáo rỗng.",
+]
+
 
 # ---------- piece 1 ----------
 def find_ideas(q, lib, n=3):
@@ -339,11 +380,11 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
             L.append(f"- Tổng hợp đa video (`research/trends/weekly-synthesis.md`): hook đang thắng — {th}")
         L += [f"  {i}. {s}" for i, s in enumerate(arc.get("skeleton", []), 1)]
         if ch == "hi" and is_core:
-            ts = arc.get("target_syllables") or [180, 250]
-            L.append(f"- Mạch chuẩn `{CORE_ARC_ID}`: **{ts[0]}–{ts[1]} âm tiết ≈ {CORE_WINDOW[0]}–{CORE_WINDOW[1]}s** đọc tự nhiên (2.7–3.3 âm tiết/s)"
+            ts = arc.get("target_syllables") or [180, 290]
+            L.append(f"- Mạch chuẩn `{CORE_ARC_ID}`: **{ts[0]}–{ts[1]} âm tiết ≈ {CORE_WINDOW[0]}–{CORE_WINDOW[1]}s** đọc tự nhiên (2.7–3.3 âm tiết/s); các clip đã duyệt nằm ở ~190–310 âm tiết. Đủ ý thì dừng: không kéo dài, cũng không bóp cụt phần kể chuyện (chuyện thật, tự giễu, lời nội tâm là chất của kênh)"
                      + (f"; đang ở chế độ `--extended` {EXTENDED_WINDOW[0]}–{EXTENDED_WINDOW[1]}s vì chủ đề có nhiều bước kỹ thuật thật sự." if extended
                         else f"; chỉ mở rộng lên {EXTENDED_WINDOW[0]}–{EXTENDED_WINDOW[1]}s (`--extended`) khi chủ đề có nhiều bước kỹ thuật thật sự."))
-            L.append("  Ngân sách âm tiết mỗi nhịp: " + " · ".join(f"{b['role']} {b['syllables'][0]}–{b['syllables'][1]}" for b in arc.get("beats", []) if b.get("syllables")) +
+            L.append("  Ngân sách âm tiết mỗi nhịp (gợi ý để cân đối, không phải trần cứng): " + " · ".join(f"{b['role']} {b['syllables'][0]}–{b['syllables'][1]}" for b in arc.get("beats", []) if b.get("syllables")) +
                      ". Một ví dụ xuyên suốt từ nhịp 1 tới nhịp 4. Không bịa chuyển cảnh, không câu tóm tắt bài học.")
         if ch == "hi":
             rows, loops = plan_hi(arc, total)
@@ -357,18 +398,22 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
                   "| giây | vai trò | khung | số layer (3–5s/layer) |", "|---|---|---|---|"]
             L += [f"| {r['from']}–{r['to']} | {r['role']} | {r['skeleton']} | {r['layers']} |" for r in rows]
     # 3
-    L += ["", "### 3. Chi tiết thật + khẩu ngữ"]
+    L += ["", "### 3. Chi tiết thật + giọng Hiệp"]
     if memo and Path(memo).exists():
         lines = [l.strip() for l in Path(memo).read_text(encoding="utf-8").splitlines() if l.strip()]
         L.append(f"- **Voice-First Input** `{memo}` ({len(lines)} đoạn): giữ ≥ 80% từ của Hiệp, chỉ đổi nhịp (`voice-memo.py keep <memo> <draft>`).")
         L += [f"  > {l}" for l in lines[:12]] + (["  > …"] if len(lines) > 12 else [])
-    else:
-        st = story_rows(idea_q)
-        L += [f"- Story bank {r[0]}: {r[1]} ({r[2]})" for r in st] or ["- Story bank: không có chuyện khớp; dùng `[VÍ DỤ THẬT CỦA HIỆP: …]` hoặc xin Hiệp ghi âm 60–90s (Voice-First)."]
-    L.append("- Lúc viết nháp v1 và v2 chỉ nạp 3 thứ: (a) hai bản Hiệp đã duyệt `content/archive/clip-01-implementation-intention/final/script-final.md` (a-c01) và `content/archive/clip-04-gap-sach-tu-kiem/final/script-v18-LOCKED.md` (a-c04); (b) ý tưởng + fact cốt lõi; (c) mỗi câu sau trả lời câu hỏi câu trước vừa gợi, nối bằng 2 sự thật đặt cạnh nhau hoặc 1 câu hỏi ngắn, không nhồi liên từ đầu câu (`⚠ connector-stuffing`), kể xong thì dừng.")
-    L.append("- Không nạp `connectors.tsv`, `bookish.tsv`, `ai-blacklist.tsv`, `cadence-patterns.tsv` hay style-pairs vào lúc viết. Những bảng đó chỉ cho `check-rules.py --audit` sau khi lời đã xong. Không sửa câu cho hết cảnh báo bookish/choppy nếu câu sửa mất giọng.")
+    st = story_rows(idea_q)
+    L += [f"- Story bank {r[0]}: {r[1]} ({r[2]})" for r in st] or ["- Story bank: không có dòng nào khớp từ khóa của ý này; dùng `[VÍ DỤ THẬT CỦA HIỆP: …]` hoặc xin Hiệp ghi âm 60–90s (Voice-First)."]
     if ch == "hi":
-        L += reference_lines()
+        L += VOICE_REMINDER
+    picks = pick_approved(idea_q) if ch == "hi" else []
+    L.append("- **Chỉ nạp 4 thứ khi viết nháp v1/v2:** (1) brief này (Gate 0 + Fact-lock + trend); (2) `content/voice-profile.md` §2–3; "
+             + ("(3) 2–3 bản đã duyệt gần thể loại nhất: " + ", ".join(f"{k} `{APPROVED[k]}`" for k in picks) if picks else "(3) 2–3 bản đã duyệt cùng kênh")
+             + "; (4) dòng `content/story-bank.md` khớp + `research/explainers/<topic>.md` nếu có. Không nạp `connectors.tsv`, `bookish.tsv`, `ai-blacklist.tsv`, `cadence-patterns.tsv`, style-pairs vào bước viết; các bảng đó chỉ cho `check-rules.py --audit` sau khi lời đã xong.")
+    L.append("- **Fact-lock:** ghi danh sách số/kết luận được phép nói và danh sách CẤM (từ/số bị cấm, cơ chế não ngoài nguồn) trước khi viết; chạm vào danh sách cấm = H1. **Single-Point Alignment:** chọn 1 câu hỏi trung tâm; hook và bằng chứng là câu hỏi và câu trả lời của cùng câu đó.")
+    if ch == "hi":
+        L += reference_lines(picks=picks)
     if tone:
         L.append(f"- tone `{tone}`: học nhịp kể của a-c01 và a-c04, không lấy câu chặt chém.")
     # 4

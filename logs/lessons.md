@@ -5,7 +5,7 @@ status: ready
 source: "oneup-studio (soạn trong repo)"
 id: lessons
 type: log
-updated: 2026-10-20
+updated: 2026-11-27
 tags: [lessons, self-learning, qa, rule-49]
 ---
 # Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)
@@ -316,3 +316,10 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Nguyên nhân: hook hứa «có người đo rồi, lát mình kể», nhưng ngay sau đó là hai beat lạc đề (câu trend, lý do đi làm chịu được) rồi mới tới nghiên cứu. Phát hiện «lỡ một lượt» bị tách khỏi lý do «nghỉ một bữa không bị đuổi». Cách làm lại không bám vào các lý do đã nêu. Mỗi beat đứng riêng, có từ nối ở đầu cho qua checker, nhưng không trả lời câu hỏi nào của beat trước. Checker L-089/L-094 chỉ bắt từ nối, không bắt được chuyện thiếu mạch logic.
 - Cách sửa: trước khi viết lời, viết bảng «khung mạch»: mỗi beat một câu và vai trò của nó (chuyện → câu hỏi → trả lời → giới hạn → câu hỏi tiếp → trả lời → áp dụng → kết). Beat nào không trả lời hay nối tiếp beat trước thì bỏ hoặc chuyển chỗ. Lời hứa phải được trả lời ngay beat sau. Liệt kê lý do thì đánh số, và phần áp dụng dùng lại đúng số đó. Cuối bài trả lời lại nỗi lo đã nêu ở hook (ở clip-06 là «chắc mình không hợp»).
 - Cách phát hiện (cổng tay, trước khi gửi Hiệp): có bảng khung mạch trong nháp. Đọc riêng cột «một câu» từ trên xuống phải ra một lập luận liền mạch bằng «vì / nên / vậy / nhưng». Đứt ở đâu thì CHƯA ĐẠT. Cảnh báo L-089 «beat mở không nối» chỉ dò từ, không thay được bảng này.
+
+## L-108 (2026-11-27, Hiệp trực tiếp) — Checker tự cắn đuôi + 5 file chỉ đạo mâu thuẫn + thiếu cổng ngữ nghĩa tiếng Việt: script v6/v7 tệ đi dù PASS
+- Nguồn: Hiệp đọc clip-06 v6 (d0cb97b) và v7 (e4e6a14): «câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi». (Câu chê v6 trước đó, ghi ở `skills/script-polish`: «rời rạc, hook không liên quan, nghe xong mù mờ».)
+- Nguyên nhân gốc (audit repo e4e6a14): (1) `check-rules.py --draft` chạy cả 17 check, `L-096` choppy vẫn là ✖ chặn cứng dù skill nói chỉ H1–H4 chặn; clip-01 đã duyệt có 41% câu ≤ 10 chữ nên writer phải hàn câu dài lủng củng để qua máy (commit e4e6a14). `L-089`/`L-094` (đòi lặp từ/từ nối) + `connector-stuffing` (cấm mở bằng liên từ) + `L-093` (cấm lặp cụm 3 chữ) bóp chéo nhau, ép nhại lại nửa câu trước. (2) 5 file chỉ đạo mâu thuẫn: `ACTIVE-CHECKLIST` §3b còn ghi gate0 nhúng `style-pairs.md` và Hook Arena chấm bằng `cadence-patterns.tsv`/`ai-blacklist.tsv`; `writer-hi-oneup` và `craft-brief` dạy thứ tự ngược `make-video` §2.0; `make-video` §2 còn đoạn «write the script directly as the spec» chồng lên override. (3) Bản vá ONEUP-CORE-ARC (27/11) làm rơi `voice-profile.md`, `story-bank.md`, a-c02/03/05, bảng khung mạch, Hook Arena 4 góc, cột Hình/Caption EN/nhấn, callback clip trước; ép viết số bằng chữ ngay từ nháp làm câu phình. (4) Không có cổng kiểm ngữ nghĩa tiếng Việt: lọt «đòi thấy nhẹ», «chê sao hông nở», «lặp một việc đơn giản», «giữ mức nhỏ nhất», mâu thuẫn «hai tối đầu hăng» → «cái oải ngày đầu»; v7 không chạy reviewer độc lập.
+- Cách sửa (DL-076): `--draft` chỉ ✖ cho H1–H4 + `L-087`, style chỉ ⚠ kèm nhắc không hàn câu; 5 file hợp nhất theo 1 thứ tự (Gate 0 → Hook Arena → Bảng khung mạch → độc thoại → số bằng chữ số → tách beat + Hình/EN/nhấn → tự kiểm ngữ nghĩa a–d → `--draft` + reviewer khác model + `--review`); `gate0.py` nạp 5 bản duyệt + story-bank + voice-profile §2; reviewer thêm Điểm mù 5 và DNA kênh; chạm danh sách Cấm của fact-lock = H1.
+- Cách phát hiện: `check-rules.py --draft` không còn ✖ vì phong cách (test `tests/test_check_rules_draft_gate.py`); cổng tay bước 7 (đọc từng câu: người miền Nam có nói không · ẩn dụ đúng vật lý/chủ ngữ · mốc thời gian giữa beat khớp · câu nào nhại chỉ để qua checker); reviewer độc lập chấm Điểm mù 5. Checker PASS không chứng minh tiếng Việt đúng nghĩa.
+

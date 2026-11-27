@@ -5,10 +5,10 @@
   check-rules.py content/clips/<clip>/ --final    # gate 2: also the rendered MP4 (ffprobe, loudness) + post.md required
   check-rules.py ... --stt                        # also STT every voice line and compare with the text (slow, ~1 min)
   check-rules.py ... --out report.txt
-  check-rules.py --review <clip>/archive/script-vN-draft.md   # make-video §4b on a draft: final/review.md verdict + script_hash of the draft words + feedback_seen
+  check-rules.py --review <clip>/final/script-vN-draft.md   # make-video §4b on a draft: final/review.md verdict + script_hash of the draft words + final/feedback.md required and fully answered (feedback_seen)
   check-rules.py --bookish draft.md               # L-106 (⚠): words from resources/vn-spoken/bookish.tsv + ai-blacklist.tsv + syllables very rare in speech (vi_50k)
   check-rules.py --ai-structure draft.md          # structural AI-tells (⚠ ai-structure): parallel symmetry clichés, preachy beat openers, low-concreteness >40w beats
-  check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all draft checks (incl. --ai-structure) + L-051 + L-053 in one pass
+  check-rules.py --draft draft.md [more.md]      # draft gate (DL-076): ✖ only for H4 structure, H1 (L-088, L-096 source), H2 est. ≥300s, H3 (L-053), L-087; every style check (choppy, flow, link, repeat, clarity, bookish, ai-structure, connector-stuffing…) is ⚠ only
   check-rules.py --connector draft.md             # ⚠ connector-stuffing: ≥ 2 câu liền mở bằng Nên/Nhưng mà/Thành ra/Vì vậy/Do đó/Mà/Rồi/Thế là, hoặc > 25% câu mở bằng liên từ
   check-rules.py --audit draft.md                # style reference only (bookish, ai-structure, choppy). Do not rewrite a natural line to clear these.
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
@@ -17,9 +17,9 @@
   check-rules.py --flow draft.md [more.md]       # L-089 only (⚠): narrator switches, beat openers with no link, «X, mà càng X» stitching, listy evidence, tacked-on maxim
   check-rules.py --fresh draft.md [--against old.md …]  # L-095: hook / beat chain similarity ≥0.5 vs every other script-v*.md of the clip (incl. git history) → ✖
   check-rules.py --evidence draft.md               # L-096: «nhiều nghiên cứu / nghiên cứu thấy» without a source name or year in the same sentence → ✖
-  check-rules.py --choppy draft.md                 # L-096: 2 adjacent sentences ≤ 10 words, or > 30% of sentences ≤ 10 words → ✖
+  check-rules.py --choppy draft.md                 # L-096 (⚠ only, DL-076): 2 adjacent sentences ≤ 10 words, or > 30% ≤ 10 words — reference, never weld sentences to clear it
   check-rules.py --link draft.md [more.md]       # L-094 (⚠): adjacent sentence pair (within or across beats) sharing no content word and not opening with a connector / back-reference
-  check-rules.py --repeat draft.md [more.md]     # L-093: content word >5% of words (✖), repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
+  check-rules.py --repeat draft.md [more.md]     # L-093 (⚠ in --draft): content word >5% of words, repeated 3-word phrase (⚠), ≥3 sentences opening with the same connector (⚠)
   check-rules.py --clarity draft.md [more.md]    # L-091 only (⚠): b01–b03 question before situation, sentence >25 words, vague words, «cũng thấy vậy» generalisation
   check-rules.py --vague-hook draft.md [more.md] # L-102 (⚠): hook hides the method («việc khác», «cách kia»…) with no name in that sentence and no promise in the hook; one result per concept (C1, A …)
   check-rules.py --story-hook draft.md [more.md] # L-103 (⚠ hint only): «theo/trong một thí nghiệm», «trung bình», «người ta» in the first 2 hook sentences of each concept
@@ -109,8 +109,33 @@ def draft_hash(md):
     """Same hash computed from a draft (`N. **[bNN]** lời` lines, see draft_beats)."""
     return _hash12(_spoken_words(t for _, _, t in draft_beats(md)))
 
+
+# ---- Draft gate: chỉ Tier-1 + ràng buộc nguồn/cấu trúc được ✖; phong cách chỉ ⚠ (DL-076)
+SOFT_NOTE = ("cảnh báo tham khảo — TUYỆT ĐỐI KHÔNG hàn câu hay nhại lại chữ để xóa ⚠ nếu câu đọc lên mất tự nhiên "
+             "(ngữ nghĩa tiếng Việt và mạch kể quan trọng hơn checker)")
+def soft(fn, *a, **k):
+    """Chạy một check phong cách; mọi ✖ phát ra bị hạ thành ⚠ (không chặn cứng)."""
+    i = len(res); fn(*a, **k)
+    for j in range(i, len(res)):
+        if res[j][0] == "✖": res[j] = ("⚠", res[j][1], res[j][2])
+
+def check_draft_structure(path):
+    """H4: nháp phải chia được beat, không beat trống."""
+    name = os.path.basename(path); items = draft_beats(open(path, encoding="utf-8").read())
+    if not items: err("H4", f"{name}: không đọc được beat (khung «N. **[Nhãn]** lời», «N. [Nhãn] lời» hoặc bảng beat có cột «Lời»)"); return False
+    empty = [lab for _, lab, t in items if len(_l089_tok(t)) == 0]
+    if empty: err("H4", f"{name}: beat trống: {', '.join(empty)}"); return False
+    ok("H4", f"{name}: {len(items)} beat đọc được"); return True
+
+def check_draft_duration(path):
+    """H2: thời lượng ƯỚC (nhịp đọc tự nhiên, chưa tính end card) ≥ 300s → ✖; ngoài 60–180s chỉ ⚠. Chưa Chốt thì chỉ là ước."""
+    items = draft_beats(open(path, encoding="utf-8").read())
+    if not items: return
+    words = len(_l089_tok(" ".join(t for _, _, t in items)))
+    check_duration_total(estimated_total(words), f"{os.path.basename(path)} ({words} chữ)", estimated=True)
+
 REVIEW_VERDICTS = ("ĐẠT VỀ ĐIỂM", "CHƯA ĐẠT", "CẦN SỬA", "ĐẠT")  # longest first; make-video §4b
-def check_review(spec, fdir, want=None):
+def check_review(spec, fdir, want=None, require_feedback=False):
     """make-video §4b: gate 1 needs final/review.md with Tier 1 hard-gate clean (H1–H4 = sole hard blocker)
     and Tier 2 pairwise A/B (or legacy score) verdict for the current words, plus feedback_seen."""
     rp = os.path.join(fdir, "review.md"); rel = os.path.relpath(rp, REPO); want = want or script_hash(spec)
@@ -126,8 +151,12 @@ def check_review(spec, fdir, want=None):
     if not m or m.group(0) != want:
         err("review", f"{rel} is stale: script_hash {fm.get('script_hash')!r} ≠ current {want} (spoken VI words changed) → re-run §4b"); return
     fp = os.path.join(fdir, "feedback.md")
+    if require_feedback and not os.path.exists(fp):
+        err("review", f"missing {os.path.relpath(fp, REPO)}: ghi nguyên văn mọi góp ý của Hiệp (make-video §8) trước khi trình, rồi review phải trả lời từng dòng"); return
     if os.path.exists(fp):
         n = sum(1 for l in open(fp, encoding="utf-8") if re.match(r"^\|\s*20\d\d-", l))
+        pend = [l for l in open(fp, encoding="utf-8") if re.match(r"^\|\s*20\d\d-", l) and re.search(r"điền khi sửa|\|\s*\|\s*$", l)]
+        if pend: warn("review", f"{os.path.relpath(fp, REPO)}: {len(pend)} góp ý chưa ghi «đã xử lý ở»")
         try: seen = int(re.findall(r"\d+", fm.get("feedback_seen", ""))[0])
         except IndexError: seen = -1
         if seen < n:
@@ -562,7 +591,7 @@ def draft_parts(md):
     CTA = mục có nhãn «CTA» (không có thì mục cuối). Lời đọc = các mục đánh số + gạch đầu dòng con, dừng ở «**End card» hoặc heading «## »."""
     items = []; spoken = []; inside = False
     for ln in md.splitlines():
-        m = re.match(r"^\s*(\d+)\.\s*\*\*\[([^\]]+)\]\*\*\s*(.*)$", ln)
+        m = _BEAT_LINE.match(ln)
         if m: items.append((m.group(2), m.group(3))); spoken.append(m.group(3)); inside = True; continue
         if inside and (ln.startswith("## ") or ln.lstrip().startswith("**End card")): inside = False
         if inside and re.match(r"^\s+[-*]\s+", ln): spoken.append(re.sub(r"^\s+[-*]\s+(\*\*[^*]+\*\*\s*)?", "", ln))
@@ -685,12 +714,31 @@ def _l089_person(t):
 def _l089_bigrams(t):
     tw = [w for w in _l089_tok(t)]; return {(a, b) for a, b in zip(tw, tw[1:]) if a not in L089_STOP or b not in L089_STOP}
 
+_BEAT_LINE = re.compile(r"^\s*(\d+)\.\s*(?:\*\*)?\[([^\]]+)\](?:\*\*)?\s*(.*)$")  # «N. **[Nhãn]** lời» hoặc «N. [Nhãn] lời»
+def _table_cells(ln): return [x.strip() for x in re.split(r"(?<!\\)\|", ln.strip().strip("|"))]  # «\|» trong ô là dấu ngắt delivery, không phải ranh cột
 def draft_beats(md):
+    """Lời đọc theo beat: → [(số, nhãn, lời)]. Hai khung chuẩn: «N. **[Nhãn]** lời» / «N. [Nhãn] lời» (ưu tiên),
+    hoặc bảng beat có cột «Lời…» (`| b01 | … | lời | … |`, kiểu a-c01 / a-c05). Dừng ở heading «## » đầu tiên sau khi đã có beat."""
     items = []
     for ln in md.splitlines():
-        m = re.match(r"^\s*(\d+)\.\s*\*\*\[([^\]]+)\]\*\*\s*(.*)$", ln)
-        if m: items.append((int(m.group(1)), m.group(2), m.group(3)))
+        m = _BEAT_LINE.match(ln)
+        if m: items.append((int(m.group(1)), m.group(2), m.group(3).strip()))
         elif ln.startswith("## ") and items: break
+    if items: return items
+    col = None; seen = {}
+    for ln in md.splitlines():
+        if ln.startswith("## ") and items: break
+        if not ln.lstrip().startswith("|") or re.match(r"^\s*\|[-\s|:]+\|\s*$", ln): continue
+        c = _table_cells(ln)
+        if col is None:
+            hit = next((i for i, x in enumerate(c) if re.match(r"lời", x, re.I)), None)
+            if hit is not None: col = hit
+            continue
+        lab = c[0].split()[0] if c and c[0].split() else ""
+        if col < len(c) and re.fullmatch(r"[be]\d{2}[a-z]?", lab) and c[col]:
+            txt = c[col].replace("\\|", "|")
+            if lab in seen: items[seen[lab]] = (items[seen[lab]][0], lab, items[seen[lab]][2] + " " + txt)
+            else: seen[lab] = len(items); items.append((len(items) + 1, lab, txt))
     return items
 
 def check_flow_beats(items, where="draft"):
@@ -915,9 +963,9 @@ def check_choppy_file(path):
     n = [len(_l089_tok(s)) for _, s in ss]; short = [k for k, x in enumerate(n) if x < L096_SHORT]
     pairs = [k for k in range(len(n) - 1) if n[k] < L096_SHORT and n[k + 1] < L096_SHORT]
     for k in pairs:
-        err("L-096", f"{ss[k][0]}→{ss[k+1][0]}: 2 câu cộc liền nhau ({n[k]}, {n[k+1]} chữ): «{ss[k][1]}» «{ss[k+1][1]}» → nối bằng nhân quả/đối chiếu")
+        warn("L-096", f"{ss[k][0]}→{ss[k+1][0]}: 2 câu ngắn liền nhau ({n[k]}, {n[k+1]} chữ): «{ss[k][1]}» «{ss[k+1][1]}» → chỉ sửa nếu đọc lên thấy cộc; câu ngắn nhấn nhịp là giọng Hiệp (clip-01 đã duyệt có 41% câu ≤ 10 chữ)")
     r = len(short) / len(n)
-    (err if r > L096_RATIO else ok)("L-096", f"câu ≤ {L096_SHORT - 1} chữ: {len(short)}/{len(n)} = {r:.0%} (trần {L096_RATIO:.0%})")
+    (warn if r > L096_RATIO else ok)("L-096", f"câu ≤ {L096_SHORT - 1} chữ: {len(short)}/{len(n)} = {r:.0%} (mốc tham khảo {L096_RATIO:.0%}, không chặn cứng)")
     if not pairs and r <= L096_RATIO: ok("L-096", "không có 2 câu cộc liền nhau")
 
 # ---- Từ sách (L-106, kế hoạch 26/11): --bookish <draft.md> — ⚠ chỉ hỗ trợ; đọc to vẫn là cổng thật
@@ -1269,30 +1317,27 @@ def main():
             if not m: err("review", f"{f}: not inside content/clips/<clip>/"); continue
             md = open(f, encoding="utf-8").read()
             if not draft_beats(md): err("review", f"{f}: no `N. **[bNN]** lời` beat lines found"); continue
-            check_review(None, ap[:m.end()] + "/final", want=draft_hash(md))
+            check_review(None, ap[:m.end()] + "/final", want=draft_hash(md), require_feedback=True)
             if not re.search(r"^##\s*Gate 0", md, re.M | re.I):
                 warn("gate0", f"{os.path.basename(f)}: no `## Gate 0` section (make-video §2.0 step 0: 3 ideas, the one Hiệp picked)")
         return report(outp)
-    if a and a[0] == "--draft":  # combined draft gate: all 12 draft checks + L-051 + L-053
+    if a and a[0] == "--draft":  # draft gate (DL-076): ✖ chỉ cho Tier-1 + nguồn/cấu trúc; mọi check phong cách chỉ ⚠
         files_ = [f for f in a[1:] if f != "--out" and f != outp]
         for f in files_:
+            # ---- cứng: H4 cấu trúc · H1 (L-088, L-096 nguồn) · H2 thời lượng · H3 (L-053) · L-087
+            if not check_draft_structure(f): continue
             check_subjects_file(f)
             check_l088_file(f)
-            check_trend_file(f)
-            check_flow_file(f)
-            check_fresh_file(f, [])
             check_evidence_file(f)
-            check_choppy_file(f)
-            check_link_file(f)
-            check_repeat_file(f)
-            check_clarity_file(f)
-            check_vague_hook_file(f)
-            check_story_hook_file(f)
-            check_bookish_file(f)
-            check_ai_structure_file(f)
-            check_connector_stuffing_file(f)
+            check_draft_duration(f)
             check_l053_file(f)
-            check_l051_file(f)
+            # ---- mềm: chỉ ⚠
+            for fn in (check_trend_file, check_flow_file, check_choppy_file, check_link_file, check_repeat_file,
+                       check_clarity_file, check_vague_hook_file, check_story_hook_file, check_bookish_file,
+                       check_ai_structure_file, check_connector_stuffing_file, check_l051_file):
+                soft(fn, f)
+            soft(check_fresh_file, f, [])
+            info("style", SOFT_NOTE)
         return report(outp)
     if a and a[0] == "--audit":  # style reference: bookish + ai-structure + choppy. Not a rewrite order.
         for f in a[1:]:
@@ -1301,6 +1346,7 @@ def main():
                 check_ai_structure_file(f)
                 check_connector_stuffing_file(f)
                 check_choppy_file(f)
+        res.append(("ℹ", "style", SOFT_NOTE))
         return report(outp)
     if a and a[0] == "--subjects":  # L-087 on draft script files
         for f in a[1:]:

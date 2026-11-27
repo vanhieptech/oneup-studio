@@ -67,7 +67,7 @@ tags: [index, retrieval]
 | prompts.gemini-teardown | prompt | ready | `docs/prompts/gemini-teardown.md` | Prompt Gemini teardown |
 | prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
 | prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập (Pairwise A/B — Theme/Format-Matched Anchor) |
-| prompts.writer-hi-oneup | prompt | ready | `docs/prompts/writer-hi-oneup.md` | Prompt viết script @hi.oneup |
+| prompts.writer-hi-oneup | prompt | ready | `docs/prompts/writer-hi-oneup.md` | Master Writer Prompt @hi.oneup |
 | prompts.writer-vanhiep-tech | prompt | ready | `docs/prompts/writer-vanhiep-tech.md` | Prompt viết script @vanhiep.tech |
 | research.craft-brief | research | ready | `docs/research/craft-brief.md` | Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm) |
 | research.script-prompt-principles | research | Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7 | `docs/research/script-prompt-principles.md` | Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s |

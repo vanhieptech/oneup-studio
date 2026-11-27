@@ -6,7 +6,7 @@ type: feedback
 tags: [feedback, clip-06]
 status: living
 source: "logs/lessons.md L-106, L-107; chat Hiệp 26/11 (lời nguyên văn, không tóm tắt)"
-updated: 2026-11-26
+updated: 2026-11-27
 ---
 # clip-06 — góp ý của Hiệp (nguyên văn)
 
@@ -18,3 +18,5 @@ Mỗi góp ý một dòng, ghi trước khi sửa (make-video §8). Reviewer §4
 | 2026-11-26 06:55 | v3 r2 8df074e | «Các câu văn vẫn rời rạc không rõ nghĩa k có liên kết không có cấu trúc tuần tự gì rõ ràng» | L-107; v3 r3 0a438dc |
 | 2026-11-26 07:09 | v3 r3 0a438dc | «làm lại» (giờ lấy từ transcript session «Make video») | v4 e0cde74 |
 | 2026-11-26 07:49 | v4 877bf9c | «Sửa và chấm lại» | v4 r1 5593c26 |
+| 2026-11-27 (giờ chưa ghi) | v6 d0cb97b | «rời rạc, hook không liên quan, nghe xong mù mờ» | v7 4e8e499 (Single-Point Alignment + Semantic Bridge) |
+| 2026-11-27 (giờ chưa ghi) | v7 e4e6a14 | «câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi» | DL-076, L-108 (sửa pipeline; chưa viết v8) |
