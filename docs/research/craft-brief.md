@@ -48,7 +48,14 @@ Trang này là bản tóm tắt nghề của **Master Writer Prompt** (`docs/pro
 **1 vấn đề · 1 câu hỏi · 1 ví dụ đại chúng · dẫn chứng ≤ 2 câu · rào giới hạn ≤ 1 vế ngắn.**
 - Ví dụ là nỗi đau ai cũng từng gặp (tập thể dục, đọc sách, dậy sớm, học tiếng Anh…), không phải chuyện ngách (đăng TikTok ngày 14).
 - Đúng 1 câu hỏi trung tâm; cấm gộp 2 ý `idea-bank` thành câu hỏi 2 vế.
-- Ngân sách: 5–6 beat, ~170–230 âm tiết (~55–75s), `b01` ≤ 20, không beat nào > 42 (cảnh báo `BEAT_BLOAT` > 45).
+- Ngân sách: 6–7 beat, ~200–265 âm tiết (~65–88s), `b01` ≤ 20, `b01+b02` ≤ 65, không beat nào > 45 (cảnh báo `BEAT_BLOAT` > 45).
+
+## Đủ ý & Khép vòng (Hiệp 27/11, clip-06 v9)
+Chống nhồi nhét không có nghĩa là cắt cụt. Clip v9 xuống 150 âm tiết (~52s) bị chê «kết thúc giữa chừng, chưa đủ ý, ngắt quãng, thiếu liền mạch».
+- **Số lớn phải được dịch nghĩa:** nêu 254 ngày thì nói luôn «hơn 8 tháng»; người nghe không tự quy đổi. Nêu cả hai đầu (18 ngày / 254 ngày) rồi áp vào nỗi lo ở Hook.
+- **Câu dẫn mượt:** câu trend và câu nghiên cứu mở bằng một mối nối từ beat trước (nối cảm giác → trend; «Chuyện này có người đo hẳn hoi nè» → nghiên cứu), không nhảy cóc.
+- **Cách làm = 1 đổi thước đo + 1 hành động cụ thể** (vd tính thói quen theo tháng, đừng tính theo tuần; tối nay chạy nhẹ 10 phút), không phải 3 câu ngắn rời nhau.
+- **Khép vòng:** beat kết trả lời đúng nỗi lo ở Hook («chắc mình không hợp») rồi mới tới CTA.
 - Rào giới hạn chỉ 1 vế ngắn: clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết».
 - **Trend** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả «đúng lúc đó mình lướt trúng câu đang trend…» và callback phi thực tế («đánh răng xong thì đăng đại một video»). Câu trend làm gãy mạch: xin ngoại lệ kiểu DL-069 (clip-05), không nhồi gượng.
 

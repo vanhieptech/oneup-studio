@@ -50,11 +50,11 @@ def test_brief_prioritizes_highest_win_rate_arc_when_arc_omitted():
 
 
 # --- WS1 (27/11): ONEUP-CORE-ARC is the @hi.oneup default; approved-clip rhythm is loaded -------------------------
-def test_hi_default_is_core_arc_with_60_90s_window():
+def test_hi_default_is_core_arc_with_65_88s_window():
     out = g.brief("xyzzy unmatched topic", "hi")
-    assert "**ONEUP-CORE-ARC**" in out and "180–290 âm tiết" in out and "Đủ ý thì dừng" in out
+    assert "**ONEUP-CORE-ARC**" in out and "200–265 âm tiết" in out and "Đủ ý thì dừng" in out
     assert "gợi ý **65s**" in out
-    assert "gợi ý **90s**" in g.brief("xyzzy", "hi", length=150)  # capped to the core window
+    assert "gợi ý **88s**" in g.brief("xyzzy", "hi", length=150)  # capped to the core window
 
 
 def test_extended_lifts_core_window_to_120_180s():
@@ -95,7 +95,7 @@ def test_pick_approved_returns_closest_two_or_three():
 def test_voice_reminder_has_anti_stuffing_budget_not_forced_checklist():
     out = "\n".join(g.VOICE_REMINDER)
     assert "Anti-Stuffing Budget" in out
-    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "170–230", "≤ 20 âm tiết", "> 42", "≤ 35 âm tiết",
+    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "200–265", "≤ 20 âm tiết", "> 45", "Đủ ý & Khép vòng", "dịch nghĩa", "≤ 35 âm tiết",
                  "tối đa 1–2 thứ", "xương sống ngay Hook", "DL-069", "lướt trúng câu đang trend"):
         assert must in out, must
     # không còn bắt buộc nhồi đủ mọi gia vị cùng lúc

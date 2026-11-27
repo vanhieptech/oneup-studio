@@ -21,3 +21,4 @@ Mỗi góp ý một dòng, ghi trước khi sửa (make-video §8). Reviewer §4
 | 2026-11-27 (giờ chưa ghi) | v6 d0cb97b | «rời rạc, hook không liên quan, nghe xong mù mờ» | v7 4e8e499 (Single-Point Alignment + Semantic Bridge) |
 | 2026-11-27 (giờ chưa ghi) | v7 e4e6a14 | «câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi» | DL-076, L-108 (sửa pipeline; chưa viết v8) |
 | 2026-11-27 (giờ chưa ghi) | v8 6eb6590 | «đọc lại logic code đã làm, hiện tại hook script vẫn không rõ nghĩa, lòng vòng lang mang, nhồi nhét quá nhiều thứ, không tự nhiên» | DL-077, L-109 (sửa audio-precheck/gate0/reviewer/5 file chỉ đạo) · viết lại v9 |
+| 2026-11-27 (giờ chưa ghi) | v9 f8afc75 | «về script có vẻ tự nhiên hơn nhưng các điểm đưa ra kết thúc giữa chừng, chưa đủ ý truyền đạt, bị ngắt quãng cũng như thiếu liền mạch» | v10 (đủ ý & khép vòng, 6–7 beat ~210–255 âm tiết); pipeline: gate0/writer/craft/reviewer thêm «Đủ ý & Khép vòng» + điểm mù 7 |

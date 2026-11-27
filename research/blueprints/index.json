@@ -116,12 +116,12 @@
    "channel": "hi_oneup",
    "core": true,
    "target_syllables": [
-    180,
-    290
+    200,
+    265
    ],
    "target_seconds": [
-    60,
-    90
+    65,
+    88
    ],
    "extended_seconds": [
     120,
@@ -130,59 +130,59 @@
    "extended_when": "chỉ khi chủ đề có nhiều bước kỹ thuật thật sự (gate0.py --extended)",
    "skeleton": [
     "[Hook tình huống: 1 khoảnh khắc/sai lầm cụ thể ai cũng từng mắc, 1–2 câu] — không mở bài chung chung",
-    "[Bẻ góc nhìn: 1 câu tự trào nhẹ (gài trend nếu có) vạch ra cái bẫy đo sai khiến người ta bỏ cuộc sớm]",
-    "[1 bằng chứng đắt: đúng 1 con số/kết luận từ fact-lock; bỏ cỡ mẫu, bối cảnh phụ]",
-    "[1 việc làm ngay tối nay: hành động nhỏ, đo được, trên chính ví dụ của nhịp 1]",
-    "[Chốt + CTA 1 chữ: 1 câu hỏi trực diện để comment 1 chữ hoặc 1 con số]"
+    "[Bẻ góc nhìn: nối vì sao mình nghĩ vậy, dẫn mượt sang trend nếu có (không nhảy cóc), rồi 1 câu hỏi gọn vạch ra cái bẫy đo sai]",
+    "[1 bằng chứng đắt: câu dẫn tự nhiên + đúng 1 kết luận từ fact-lock; con số lớn phải dịch nghĩa cho người nghe; bỏ cỡ mẫu, bối cảnh phụ]",
+    "[Cách làm: 1 đổi góc nhìn/thước đo + 1 hành động cụ thể tối nay, trên chính ví dụ của nhịp 1]",
+    "[Khép vòng về đúng nỗi lo ở Hook + CTA 1 chữ: 1 câu hỏi trực diện để comment]"
    ],
    "beats": [
     {
      "role": "hook",
      "function": "Hook tình huống, 1–2 câu",
-     "seconds": 10,
+     "seconds": 6,
      "syllables": [
-      25,
-      35
+      15,
+      20
      ],
      "transition": "Giữ cùng 1 vật/ví dụ sang nhịp sau, không đổi cảnh."
     },
     {
      "role": "lật kèo",
      "function": "Bẻ góc nhìn + gài trend, 2 câu",
-     "seconds": 13,
+     "seconds": 16,
      "syllables": [
-      35,
-      45
+      40,
+      55
      ],
      "transition": "Câu cuối nêu thước đo sai, nhịp sau trả lời bằng số."
     },
     {
      "role": "chứng minh",
      "function": "1 bằng chứng đắt, 2–3 câu",
-     "seconds": 17,
+     "seconds": 20,
      "syllables": [
-      45,
-      60
+      55,
+      70
      ],
      "transition": "Hai sự thật đặt cạnh nhau, không câu tóm tắt."
     },
     {
      "role": "áp dụng",
      "function": "1 việc làm ngay tối nay, 2 câu",
-     "seconds": 13,
+     "seconds": 20,
      "syllables": [
-      35,
-      45
+      55,
+      70
      ],
      "transition": "Đổi thước đo trên đúng ví dụ ở nhịp 1."
     },
     {
      "role": "kết",
      "function": "Chốt + CTA 1 chữ, 1–2 câu",
-     "seconds": 9,
+     "seconds": 12,
      "syllables": [
-      20,
-      30
+      30,
+      40
      ],
      "transition": ""
     }

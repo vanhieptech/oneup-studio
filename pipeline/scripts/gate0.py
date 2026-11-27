@@ -16,7 +16,7 @@ Pieces (printed as one Markdown block; --out writes/replaces the block between G
   4. Latest notes: resources/feedback.md (Hiệp's rejections, tier 1 list), the channel section of rules/ACTIVE-CHECKLIST.md,
      and <clip>/final/feedback.md when --clip is given.
 @hi.oneup default (WS1, 27/11): without --arc/--tone the spine is ONEUP-CORE-ARC (Mạch 5 nhịp thực dụng: hook tình huống → bẻ thước đo + gài trend →
-1 bằng chứng → 1 việc tối nay → CTA 1 chữ, ~180–290 âm tiết ≈ 60–90 s, đủ ý thì dừng). --extended lifts the window to 120–180 s, only for a topic with real technical steps.
+1 bằng chứng → 1 việc tối nay → CTA 1 chữ, ~200–265 âm tiết ≈ 65–88 s, đủ ý thì dừng). --extended lifts the window to 120–180 s, only for a topic with real technical steps.
 The brief also prints the 5 Hiệp-approved clips (a-c01…a-c05) with a one-line DNA each + measured beat structure, the 2–3 closest to the idea flagged, plus the matching story-bank rows and the voice-profile §2 reminder. Writing inputs are only: brief (Gate 0 + Fact-lock + trend) · voice-profile §2–3 · 2–3 closest approved · story-bank row + research/explainers/<topic>.md.
 Read-only except --out. Never invents: a missing piece is printed as «chưa có» with where to get it.
 """
@@ -31,7 +31,7 @@ BEGIN, END = "<!-- GATE0-BRIEF:BEGIN (pipeline/scripts/gate0.py) -->", "<!-- GAT
 CH = {"hi": {"name": "@hi.oneup", "lo": 60, "hi": 180, "cap": 300, "default": 90},
       "vht": {"name": "@vanhiep.tech", "lo": 45, "hi": 90, "cap": 90, "default": 60}}
 CORE_ARC_ID = "ONEUP-CORE-ARC"
-CORE_WINDOW = (60, 90)       # seconds for the core arc unless --extended (khung gọn mặc định; đủ ý thì dừng, không ép dài, không bóp cụt chất kể chuyện)
+CORE_WINDOW = (65, 88)       # seconds for the core arc unless --extended (khung gọn mặc định; đủ ý thì dừng, không ép dài, không bóp cụt chất kể chuyện)
 EXTENDED_WINDOW = (120, 180)
 APPROVED = {"a-c01": "content/archive/clip-01-implementation-intention/final/script-final.md",
             "a-c02": "content/archive/clip-02-procrastination-discomfort/final/script-final.md",
@@ -165,7 +165,8 @@ VOICE_REMINDER = [
     "- **Ngân sách nguyên liệu (Anti-Stuffing Budget, DL mới 27/11, từ góp ý clip-06 v8):** không phải checklist phải điền đủ.",
     "  - **Đúng 1 nỗi đau đại chúng** ai cũng từng gặp (tập thể dục, đọc sách, dậy sớm, học tiếng Anh…). Không lấy chuyện ngách (vd `S-04 tiktok-zero`) làm ví dụ chính cho clip phổ thông.",
     "  - **Đúng 1 câu hỏi trung tâm.** Cấm gộp 2 ý từ `idea-bank` thành câu hỏi 2 vế.",
-    "  - **5–6 beat, tổng ~170–230 âm tiết (~55–75s)**; `b01` ≤ 20 âm tiết (1–2 câu cực ngắn, người lạ nghe 3s đầu hiểu ngay chuyện của mình); không beat nào > 42 âm tiết. `audio-precheck.py` cảnh báo `HOOK_LONG` (b01 > 22), `SLOW_ENTRY` (b01+b02 > 65), `BEAT_BLOAT` (beat > 45).",
+    "  - **6–7 beat, tổng ~200–265 âm tiết (~65–88s)**; `b01` ≤ 20 âm tiết (1–2 câu cực ngắn, người lạ nghe 3s đầu hiểu ngay chuyện của mình); `b01+b02` ≤ 65; không beat nào > 45 âm tiết. `audio-precheck.py` cảnh báo `HOOK_LONG` (b01 > 22), `SLOW_ENTRY` (b01+b02 > 65), `BEAT_BLOAT` (beat > 45).",
+    "  - **Đủ ý & Khép vòng (Hiệp 27/11, clip-06 v9 «kết thúc giữa chừng, thiếu liền mạch»):** (1) con số lớn đã nêu phải được dịch nghĩa cho người nghe (254 ngày → «hơn 8 tháng»), không thả số rồi bỏ rơi; (2) câu trend và nghiên cứu phải có câu dẫn mượt từ beat trước, không nhảy cóc vào «Nhưng người ta nói…» hay «Năm 2010…»; (3) phần cách làm cho đúng 1 đổi góc nhìn/thước đo + 1 hành động cụ thể, rồi khép vòng về đúng nỗi lo ở Hook. Cắt tới mức nội dung cụt (< 60s, chưa giải tỏa trọn nỗi lo ở Hook) là lỗi, ngang với nhồi nhét.",
     "  - **Bằng chứng tối đa 1–2 câu (≤ 35 âm tiết):** chỉ tác giả/năm + kết luận cốt lõi (như clip-01 23 âm tiết, clip-04 27 âm tiết). Cỡ mẫu, số tuần, món phụ giữ trong bảng Fact-lock, không đưa vào lời đọc.",
     "  - **Gia vị giọng Hiệp** (tự giễu, lời nội tâm trong ngoặc kép, 1–3 từ tiếng Anh, callback clip trước): chọn **tối đa 1–2 thứ thật tự nhiên**, không cố nhồi đủ. Cấm bịa hành động phi thực tế ngoài đời (vd «đánh răng xong thì đăng đại một video»).",
     "  - **Trend:** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả kiểu «đúng lúc đó mình lướt trúng câu đang trend…». Nếu câu trend làm gãy mạch tự nhiên, đề xuất xin ngoại lệ như `DL-069` (clip-05), đừng nhồi gượng.",
@@ -388,7 +389,7 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
             L.append(f"- Tổng hợp đa video (`research/trends/weekly-synthesis.md`): hook đang thắng — {th}")
         L += [f"  {i}. {s}" for i, s in enumerate(arc.get("skeleton", []), 1)]
         if ch == "hi" and is_core:
-            ts = arc.get("target_syllables") or [180, 290]
+            ts = arc.get("target_syllables") or [200, 265]
             L.append(f"- Mạch chuẩn `{CORE_ARC_ID}`: **{ts[0]}–{ts[1]} âm tiết ≈ {CORE_WINDOW[0]}–{CORE_WINDOW[1]}s** đọc tự nhiên (2.7–3.3 âm tiết/s); các clip đã duyệt nằm ở ~190–310 âm tiết. Đủ ý thì dừng: không kéo dài, cũng không bóp cụt phần kể chuyện (chuyện thật, tự giễu, lời nội tâm là chất của kênh)"
                      + (f"; đang ở chế độ `--extended` {EXTENDED_WINDOW[0]}–{EXTENDED_WINDOW[1]}s vì chủ đề có nhiều bước kỹ thuật thật sự." if extended
                         else f"; chỉ mở rộng lên {EXTENDED_WINDOW[0]}–{EXTENDED_WINDOW[1]}s (`--extended`) khi chủ đề có nhiều bước kỹ thuật thật sự."))
