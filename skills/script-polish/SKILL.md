@@ -48,6 +48,13 @@ Ba lỗi làm v5 dài và mùi AI. Áp dụng lúc cắt, trước mọi bước
 4. **Đúng chất giọng Hiệp (`content/voice-profile.md`).** Thẳng, đời thường, tự giễu thói quen của chính mình (không trêu người xem), kết gọn. Cấm câu sến kiểu «mình ngồi nghe nha», «mình ở đây đợi bạn». CTA là 1 câu hỏi trực diện để comment 1 chữ hoặc 1 con số.
 5. **Khung mặc định `ONEUP-CORE-ARC`** (5 nhịp, 180–250 âm tiết ≈ 55–75s): hook tình huống → bẻ thước đo + gài trend → 1 bằng chứng → 1 việc tối nay → CTA 1 chữ. Chi tiết ở `skills/make-video/SKILL.md` (Gate 0).
 
+## Một thông điệp xuyên suốt + cầu nối ngữ nghĩa (27/11, clip-06 v6 → v7; Hiệp: «rời rạc, hook không liên quan, nghe xong mù mờ»)
+Chống nhồi liên từ không có nghĩa là cắt cụt. v6 qua được checker mà vẫn bị bác vì hai lỗi dưới đây.
+1. **1 clip = 1 thông điệp (Single-Point Alignment).** Hook ở nhịp 1 phải đặt đúng vấn đề mà bằng chứng ở nhịp 3 giải quyết. Cấm mở bằng tình huống A (giảm cân) rồi lấy nghiên cứu về B (thói quen thành tự động) để trả lời. Kiểm: viết 1 câu «clip này trả lời câu hỏi gì», rồi đọc hook và bằng chứng, cả hai phải là câu hỏi và câu trả lời của cùng một câu đó. Hook là nỗi đau của chính người sẽ nghe câu trả lời.
+2. **Cầu nối ngữ nghĩa (Semantic Bridge).** Cuối beat trước gieo 1 từ khóa hoặc 1 câu hỏi ngắn, đầu beat sau bắt đúng từ đó và trả lời. Không dùng *Nên / Vì vậy / Thành ra* ở đầu câu và cũng không để 2 beat đứng trơ cạnh nhau. Ví dụ: beat 2 kết «Vậy chưa quen nhịp là chờ bao lâu?», beat 3 mở bằng nghiên cứu đo đúng chuyện chờ bao lâu.
+3. **Số liệu phải được dịch.** Mỗi số liệu nghiên cứu đi kèm 1 mệnh đề tiếng Việt đời thường nói nghiên cứu đo cái gì và con số đó nghĩa gì với người đang nản. Không ném tên tác giả cộng hai con số trơ trọi. Vẫn giữ 1 kết luận từ fact-lock; việc dịch không được thêm số hay kết luận mới.
+4. **Đọc liền thành 1 đoạn văn xuôi** trước khi gửi duyệt. Người nghe không cần nghĩ vẫn thấy câu sau trả lời câu trước. Chỗ nào khựng thì sửa mối nối, đừng sửa từ ngữ.
+
 ## Emotional and logical flow
 A beat is not a slide. The last sentence of a beat plants the question the next beat answers. «Nhưng mà» and «thành ra» are for that turn, not a connector quota (see the anti-stuffing rules above: never two openers in a row). If the next beat could be moved anywhere without the listener noticing, rewrite the join in the monologue before touching word choice.
 
