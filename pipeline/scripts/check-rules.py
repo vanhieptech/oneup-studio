@@ -516,7 +516,8 @@ def check_l087(spec, L, fdir, clip_dir):
 
 def check_subjects_file(path):  # --subjects FILE: soi bản nháp script (.md/.txt) trước khi có spec
     n = 0
-    for i, ln in enumerate(open(path, encoding="utf8"), 1):
+    txt = re.sub(r"<!-- GATE0-BRIEF:BEGIN.*?GATE0-BRIEF:END -->", lambda m: "\n" * m.group(0).count("\n"), open(path, encoding="utf8").read(), flags=re.S)  # brief gate0 không phải lời đọc
+    for i, ln in enumerate(txt.splitlines(), 1):
         for h, why in subject_hits(ln): err("L-087", f"{os.path.basename(path)}:{i}: «{h}» ({why})"); n += 1
     if not n: ok("L-087", f"{os.path.basename(path)}: không gọi tên môn học / kiến thức môn học")
 
@@ -586,11 +587,15 @@ def spec_hook_cta(spec):
     j = lambda xs: " ".join(l.get("text", "") for x in xs for l in x.get("lines", []))
     return j(hk), j(ct)
 
+def _strip_brief(md):
+    """Bỏ block GATE0-BRIEF (gate0.py ghi vào đầu nháp): khung nhịp «1. [Hook tình huống…]» trong brief không phải lời đọc."""
+    return re.sub(r"<!-- GATE0-BRIEF:BEGIN.*?GATE0-BRIEF:END -->", "", md, flags=re.S)
+
 def draft_parts(md):
     """Bản nháp script (.md, khung «N. **[Nhãn]** lời»): → (hook, cta, toàn bộ lời đọc). Hook = mục có nhãn «Hook» (không có thì mục 1);
     CTA = mục có nhãn «CTA» (không có thì mục cuối). Lời đọc = các mục đánh số + gạch đầu dòng con, dừng ở «**End card» hoặc heading «## »."""
     items = []; spoken = []; inside = False
-    for ln in md.splitlines():
+    for ln in _strip_brief(md).splitlines():
         m = _BEAT_LINE.match(ln)
         if m: items.append((m.group(2), m.group(3))); spoken.append(m.group(3)); inside = True; continue
         if inside and (ln.startswith("## ") or ln.lstrip().startswith("**End card")): inside = False
@@ -719,7 +724,7 @@ def _table_cells(ln): return [x.strip() for x in re.split(r"(?<!\\)\|", ln.strip
 def draft_beats(md):
     """Lời đọc theo beat: → [(số, nhãn, lời)]. Hai khung chuẩn: «N. **[Nhãn]** lời» / «N. [Nhãn] lời» (ưu tiên),
     hoặc bảng beat có cột «Lời…» (`| b01 | … | lời | … |`, kiểu a-c01 / a-c05). Dừng ở heading «## » đầu tiên sau khi đã có beat."""
-    items = []
+    md = _strip_brief(md); items = []
     for ln in md.splitlines():
         m = _BEAT_LINE.match(ln)
         if m: items.append((int(m.group(1)), m.group(2), m.group(3).strip()))
