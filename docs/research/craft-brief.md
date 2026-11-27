@@ -26,22 +26,34 @@ Trang này là bản tóm tắt nghề của **Master Writer Prompt** (`docs/pro
 - **Một câu tóm ý:** người xem đang khổ chuyện gì → clip hứa gì → trả lời bằng gì.
 - Lời hứa ở hook được trả lời **ngay beat sau**; không chen câu trend hay ý phụ vào giữa (L-094, L-107). Cuối bài quay lại nỗi lo ở hook.
 
-## B. Hook
+## B. Hook — Luật 3 Giây Rõ Nghĩa
+- **`b01` ≤ 20 âm tiết (1–2 câu cực ngắn).** Người lạ nghe 3 giây đầu phải hiểu ngay chủ đề và thấy chuyện của mình. 5 clip đã duyệt có `b01` chỉ 9–21 âm tiết (3–6s). `audio-precheck.py` cảnh báo `HOOK_LONG` khi > 22, `SLOW_ENTRY` khi b01+b02 > 65.
+- Trong Hook Arena, **rõ nghĩa và trúng nỗi đau trong 3s luôn thắng** việc tránh trùng dạng câu hỏi với clip trước.
 - Hook là **mở đầu một câu chuyện**: ai, đang muốn gì, khoảnh khắc hụt, câu gợi chuyện gì xảy ra tiếp (L-103). Không dùng ngôn ngữ nghiên cứu («theo một thí nghiệm», «trung bình người ta») trong hook.
 - Có **cái giá người xem thấy đáng bận tâm** và một chỗ bất ngờ trong 3 giây đầu; viết được câu «vì sao người lướt sẽ dừng» (L-096, L-104).
 
 ## C. Viết như nói (giọng Hiệp, `voice-profile.md` §2)
 - **Viết liền một hơi**, rồi mới cắt thành beat. Không viết từng ô trong bảng (nguồn của câu rời).
 - **Miền Nam nhất quán**, xưng mình–bạn. Cấm trộn chữ Bắc «ấy / thế / nhé» cạnh «hông / nha / nè».
-- **Hài 4/5 tự giễu** thói quen và tình huống của chính mình; không trêu người xem. Có ít nhất 1 chi tiết tự giễu hoặc 1 **lời nội tâm trích trong ngoặc kép**.
-- **Tiếng Anh chen 1–3 từ** mỗi clip, tự nhiên, không cả câu. Từ đệm tối đa 1 mỗi câu, không rải theo danh sách (voice-profile §3c).
+- **Hài 4/5 tự giễu** thói quen và tình huống của chính mình; không trêu người xem.
+- **Gia vị giọng Hiệp** (tự giễu, lời lẩm bẩm trong ngoặc kép, từ tiếng Anh, callback): chọn **tối đa 1–2 thứ thật tự nhiên**, không nhồi đủ hết. Cấm bịa hành động phi thực tế ngoài đời.
+- **Tiếng Anh chen 1–3 từ** nếu tự nhiên, không cả câu. Từ đệm tối đa 1 mỗi câu, không rải theo danh sách (voice-profile §3c).
 - **Một câu một ý**, nối câu bằng nguyên nhân hoặc kết quả thật. Câu ngắn nhấn nhịp là giọng của Hiệp (clip-01 đã duyệt có 41% câu ≤ 10 chữ): không hàn ý khác chủ ngữ bằng dấu phẩy chỉ để tránh câu ngắn (L-106). Không quota chữ: đủ ý thì thôi, tổng < 300s (L-099).
 - **Từ miệng, không từ sách:** hỏi «có ai nói câu này ngoài đời không» với từng câu (L-105).
 - **Mọi từ trỏ phải chỉ tới được cái gì:** «lý do» là lý do gì, «cách này» là cách nào (L-098, L-106).
 - Một ngôi kể xuyên suốt; «bạn» chỉ khi khung chuyện làm việc đó tự nhiên (L-089).
 - Gọi lại clip trước nếu hợp tự nhiên (rule-62). CTA là câu hỏi người xem trả lời được bằng chuyện của chính họ; không ép kiểu sáo rỗng, không xin like/follow.
 
+## Luật Chống Nhồi Nhét (Hiệp 27/11, clip-06 v8)
+**1 vấn đề · 1 câu hỏi · 1 ví dụ đại chúng · dẫn chứng ≤ 2 câu · rào giới hạn ≤ 1 vế ngắn.**
+- Ví dụ là nỗi đau ai cũng từng gặp (tập thể dục, đọc sách, dậy sớm, học tiếng Anh…), không phải chuyện ngách (đăng TikTok ngày 14).
+- Đúng 1 câu hỏi trung tâm; cấm gộp 2 ý `idea-bank` thành câu hỏi 2 vế.
+- Ngân sách: 5–6 beat, ~170–230 âm tiết (~55–75s), `b01` ≤ 20, không beat nào > 42 (cảnh báo `BEAT_BLOAT` > 45).
+- Rào giới hạn chỉ 1 vế ngắn: clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết».
+- **Trend** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả «đúng lúc đó mình lướt trúng câu đang trend…» và callback phi thực tế («đánh răng xong thì đăng đại một video»). Câu trend làm gãy mạch: xin ngoại lệ kiểu DL-069 (clip-05), không nhồi gượng.
+
 ## D. Dẫn chứng
+- **≤ 2 câu, ≤ 35 âm tiết:** chỉ tác giả/năm + kết luận cốt lõi (clip-01 23 âm tiết, clip-04 27 âm tiết). Cỡ mẫu, số tuần, món phụ để trong Fact-lock, không đọc ra.
 - Dẫn chứng **nảy ra từ chuyện**, có câu dẫn: ai/nguồn nào, so A với B, kết quả đúng mức nguồn (L-096, L-103), rồi dịch con số thành ý người nghe hiểu ngay. Cấm «nhiều nghiên cứu thấy…».
 - Con số viết bằng chữ số trong nháp (`2010`, `96`); cách đọc để sau Chốt.
 - Ví dụ đời thường, cụ thể; không lấy môn học (L-087). Chuyện thật của Hiệp ưu tiên (story-bank); chi tiết hài được phép dựng (luật 67), số liệu thì không. Không dùng số hay từ nằm trong danh sách CẤM của Fact-lock.

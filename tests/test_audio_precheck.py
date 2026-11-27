@@ -10,7 +10,7 @@ ap = importlib.util.module_from_spec(s); s.loader.exec_module(ap)
 GOOD_DRAFT = """---
 title: "Nháp mẫu"
 ---
-1. **[b01 · 0–7s]** Hồi tối qua, mình mở laptop lên tính làm cho xong việc, mà ngồi nửa tiếng chưa gõ nổi dòng nào.
+1. **[b01 · 0–7s]** Hồi tối qua mình mở laptop lên tính làm cho xong việc, mà ngồi nửa tiếng chưa gõ nổi dòng.
 2. **[b02 · 7–16s]** Vậy mà sáng nay, mình chỉ đổi đúng một bước nhỏ — là ngồi vô bàn trước khi mở điện thoại, tự nhiên làm trơn luôn á.
 3. **[b03 · 16–24s]** Hóa ra bộ não tụi mình hông phải lười đâu, nó chỉ né cảm giác mơ hồ khi việc quá to thôi nha.
 """
@@ -116,3 +116,44 @@ def test_audition_hook_dry_run_extracts_first_two_beats_and_targets_final_out():
         assert aud["out"].endswith("clip-99-test/final/out/hook-audition.wav")
         assert "Hồi tối qua" in aud["text"] and "Vậy mà sáng nay" in aud["text"]
         assert "Hóa ra bộ não" not in aud["text"]
+
+
+def _beats(*counts):
+    """Dựng nháp có beat với số âm tiết cho trước (mỗi beat 1 câu có dấu phẩy)."""
+    lines = []
+    for i, n in enumerate(counts, 1):
+        words = ["từ"] * (n - 1)
+        lines.append(f"{i}. **[b{i:02d} · {(i-1)*5}–{i*5+5}s]** " + " ".join(words[:n // 2]) + ", " + " ".join(words[n // 2:]) + " nha.")
+    return ap.parse_beats("\n".join(lines))
+
+
+def _codes(res):
+    return {w["code"] for w in res["warnings"]}
+
+
+def test_hook_long_over_22_syllables_only():
+    assert "HOOK_LONG" not in _codes(ap.analyze_beats(_beats(22, 20)))
+    res = ap.analyze_beats(_beats(23, 20))
+    assert "HOOK_LONG" in _codes(res)
+    assert "HOOK_LONG" in {w["code"] for w in res["beats"][0]["warnings"]}
+
+
+def test_slow_entry_over_65_syllables_for_b01_plus_b02():
+    assert "SLOW_ENTRY" not in _codes(ap.analyze_beats(_beats(20, 45)))
+    res = ap.analyze_beats(_beats(20, 46))
+    assert "SLOW_ENTRY" in _codes(res)
+    assert [w for w in res["warnings"] if w["code"] == "SLOW_ENTRY"][0]["beat"] == "b01+b02"
+
+
+def test_beat_bloat_over_45_syllables_any_beat():
+    assert "BEAT_BLOAT" not in _codes(ap.analyze_beats(_beats(15, 20, 45)))
+    res = ap.analyze_beats(_beats(15, 20, 46))
+    bloat = [w for w in res["warnings"] if w["code"] == "BEAT_BLOAT"]
+    assert len(bloat) == 1 and bloat[0]["beat"] == "b03"
+
+
+def test_clip06_v8_shape_triggers_all_three_warnings():
+    # b01=39, b02=~30, b07=57 như clip-06 v8
+    res = ap.analyze_beats(_beats(39, 30, 20, 20, 20, 20, 57))
+    assert {"HOOK_LONG", "SLOW_ENTRY", "BEAT_BLOAT"} <= _codes(res)
+    assert not res["ok"]

@@ -20,6 +20,11 @@ Checks per beat on spoken Vietnamese text (stripping markup like {nhấn: …}, 
        `content/archive/clip-*/final/spec.json` on opening structure (first 3 syllables)
        or on opening content keywords (shared first keyword + another, or Jaccard ≥ 0.6).
 
+  5. Hook gọn / vào ý sớm / beat không nhồi (số liệu 5 clip đã duyệt, Hiệp 27/11 về clip-06 v8):
+     - HOOK_LONG: b01 > 22 âm tiết (~7.5s). Mục tiêu 9–20 âm tiết (3–6s), nghe phát hiểu ngay vấn đề.
+     - SLOW_ENTRY: b01+b02 > 65 âm tiết (~22s) → mở bài lòng vòng.
+     - BEAT_BLOAT: bất kỳ beat > 45 âm tiết (~15s) → nhồi nhiều ý vào 1 beat.
+
 --audition-hook (explicit opt-in before Gate 1; never runs unless requested):
   Extracts the first ~20 seconds (Hook + Beat 2) and synthesizes `final/out/hook-audition.wav`
   via `pipeline/tts/f5tts_gen.py` so Hiệp can hear the real spoken cadence before Gate 1.
@@ -41,6 +46,10 @@ RATE_WARN_HIGH = 3.8
 RATE_WARN_LOW = 2.2
 MAX_UNBROKEN_SYLLABLES = 32
 NATURAL_SYL_PER_SEC = 3.0
+# Số liệu từ 5 clip đã duyệt: b01 9–21 âm tiết (3–6s). Ngưỡng cảnh báo cố ý hơi rộng hơn mục tiêu viết (b01 ≤ 20, beat ≤ 42).
+HOOK_MAX_SYL = 22      # b01 > 22 (~7.5s) → HOOK_LONG
+ENTRY_MAX_SYL = 65     # b01+b02 > 65 (~22s) → SLOW_ENTRY
+BEAT_MAX_SYL = 45      # beat nào > 45 (~15s) → BEAT_BLOAT
 HOOK_AUDITION_TARGET_S = 20.0
 HOOK_AUDITION_MAX_SYL = 70
 
@@ -312,6 +321,28 @@ def analyze_beats(beats, archive_hooks=None):
             "opener_toks": _norm_toks(clean)[:3],
             "warnings": b_warns,
         })
+
+    # 2b. Hook / entry / bloat (Hiệp 27/11 về clip-06 v8: hook dài, vào ý chậm, beat phình)
+    def _flag(code, beat_ids, message, target):
+        w = {"code": code, "beat": beat_ids, "message": message}
+        warnings.append(w)
+        target["warnings"].append(w)
+
+    if report_beats:
+        b1 = report_beats[0]
+        if b1["syllables"] > HOOK_MAX_SYL:
+            _flag("HOOK_LONG", b1["id"],
+                  f"{b1['id']}: hook {b1['syllables']} âm tiết (> {HOOK_MAX_SYL}, ~{b1['syllables']/NATURAL_SYL_PER_SEC:.0f}s) → ép gọn 9–20 âm tiết (3–6s), nghe phát hiểu ngay vấn đề", b1)
+        if len(report_beats) > 1:
+            b2 = report_beats[1]
+            entry = b1["syllables"] + b2["syllables"]
+            if entry > ENTRY_MAX_SYL:
+                _flag("SLOW_ENTRY", f"{b1['id']}+{b2['id']}",
+                      f"{b1['id']}+{b2['id']}: {entry} âm tiết (> {ENTRY_MAX_SYL}, ~{entry/NATURAL_SYL_PER_SEC:.0f}s) trước khi vào câu hỏi chính → mở bài lòng vòng, đưa câu hỏi lên sớm", b2)
+        for rb in report_beats:
+            if rb["syllables"] > BEAT_MAX_SYL:
+                _flag("BEAT_BLOAT", rb["id"],
+                      f"{rb['id']}: beat {rb['syllables']} âm tiết (> {BEAT_MAX_SYL}, ~{rb['syllables']/NATURAL_SYL_PER_SEC:.0f}s) → nhồi nhiều ý vào 1 beat, tách hoặc cắt ý phụ", rb)
 
     # 3. Consecutive beat opener repetition
     for prev, cur in zip(report_beats, report_beats[1:]):

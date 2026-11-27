@@ -90,3 +90,19 @@ def test_pick_approved_returns_closest_two_or_three():
     picks = g.pick_approved("việc to ngợp chia nhỏ dọn phòng")
     assert picks[0] == "a-c03" and 2 <= len(picks) <= 3
     assert "a-c04" in g.pick_approved("học thuộc quên sạch sách tự kiểm")
+
+
+def test_voice_reminder_has_anti_stuffing_budget_not_forced_checklist():
+    out = "\n".join(g.VOICE_REMINDER)
+    assert "Anti-Stuffing Budget" in out
+    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "170–230", "≤ 20 âm tiết", "> 42", "≤ 35 âm tiết",
+                 "tối đa 1–2 thứ", "xương sống ngay Hook", "DL-069", "lướt trúng câu đang trend"):
+        assert must in out, must
+    # không còn bắt buộc nhồi đủ mọi gia vị cùng lúc
+    assert "ít nhất 1 lời nội tâm" not in out and "chen 1–3 từ tiếng Anh tự nhiên (không cả câu); có" not in out
+    assert "bắt buộc" in out  # chỉ còn ở dòng giọng miền Nam
+
+
+def test_brief_for_hi_includes_budget():
+    out = g.brief("tập thể dục bỏ cuộc", "hi")
+    assert "Anti-Stuffing Budget" in out and "HOOK_LONG" in out

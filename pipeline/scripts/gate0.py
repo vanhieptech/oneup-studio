@@ -161,8 +161,16 @@ def pick_approved(q, n=3):
 
 
 VOICE_REMINDER = [
-    "- **Giọng Hiệp (`content/voice-profile.md` §2, bắt buộc):** miền Nam nhất quán, xưng mình–bạn; cấm trộn chữ Bắc «ấy / thế / nhé» cạnh «hông / nha / nè»; hài 4/5 tự giễu thói quen và tình huống của chính mình (không trêu người xem); chen 1–3 từ tiếng Anh tự nhiên (không cả câu); có ít nhất 1 lời nội tâm trích trong ngoặc kép (\"…\") khi đúng chuyện thật.",
-    "- Chuyện thật lấy từ `content/story-bank.md`; chi tiết chưa xác nhận để `[CẦN HIỆP XÁC NHẬN]`, không bịa kết quả. Callback clip trước nếu hợp tự nhiên (rule-62). CTA kiểu hỏi chuyện thật, không ép kiểu sáo rỗng.",
+    "- **Giọng Hiệp (`content/voice-profile.md` §2, bắt buộc):** miền Nam nhất quán, xưng mình–bạn; cấm trộn chữ Bắc «ấy / thế / nhé» cạnh «hông / nha / nè». Đọc lên phải giống tin nhắn thoại gửi bạn thân.",
+    "- **Ngân sách nguyên liệu (Anti-Stuffing Budget, DL mới 27/11, từ góp ý clip-06 v8):** không phải checklist phải điền đủ.",
+    "  - **Đúng 1 nỗi đau đại chúng** ai cũng từng gặp (tập thể dục, đọc sách, dậy sớm, học tiếng Anh…). Không lấy chuyện ngách (vd `S-04 tiktok-zero`) làm ví dụ chính cho clip phổ thông.",
+    "  - **Đúng 1 câu hỏi trung tâm.** Cấm gộp 2 ý từ `idea-bank` thành câu hỏi 2 vế.",
+    "  - **5–6 beat, tổng ~170–230 âm tiết (~55–75s)**; `b01` ≤ 20 âm tiết (1–2 câu cực ngắn, người lạ nghe 3s đầu hiểu ngay chuyện của mình); không beat nào > 42 âm tiết. `audio-precheck.py` cảnh báo `HOOK_LONG` (b01 > 22), `SLOW_ENTRY` (b01+b02 > 65), `BEAT_BLOAT` (beat > 45).",
+    "  - **Bằng chứng tối đa 1–2 câu (≤ 35 âm tiết):** chỉ tác giả/năm + kết luận cốt lõi (như clip-01 23 âm tiết, clip-04 27 âm tiết). Cỡ mẫu, số tuần, món phụ giữ trong bảng Fact-lock, không đưa vào lời đọc.",
+    "  - **Gia vị giọng Hiệp** (tự giễu, lời nội tâm trong ngoặc kép, 1–3 từ tiếng Anh, callback clip trước): chọn **tối đa 1–2 thứ thật tự nhiên**, không cố nhồi đủ. Cấm bịa hành động phi thực tế ngoài đời (vd «đánh răng xong thì đăng đại một video»).",
+    "  - **Trend:** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả kiểu «đúng lúc đó mình lướt trúng câu đang trend…». Nếu câu trend làm gãy mạch tự nhiên, đề xuất xin ngoại lệ như `DL-069` (clip-05), đừng nhồi gượng.",
+    "  - **Rào giới hạn ≤ 1 vế ngắn** (như clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết»).",
+    "- Chuyện thật lấy từ `content/story-bank.md`; chi tiết chưa xác nhận để `[CẦN HIỆP XÁC NHẬN]`, không bịa kết quả. Callback clip trước chỉ khi hợp tự nhiên (rule-62), không ép. CTA kiểu hỏi chuyện thật, không ép kiểu sáo rỗng.",
 ]
 
 

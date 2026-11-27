@@ -20,3 +20,4 @@ Mỗi góp ý một dòng, ghi trước khi sửa (make-video §8). Reviewer §4
 | 2026-11-26 07:49 | v4 877bf9c | «Sửa và chấm lại» | v4 r1 5593c26 |
 | 2026-11-27 (giờ chưa ghi) | v6 d0cb97b | «rời rạc, hook không liên quan, nghe xong mù mờ» | v7 4e8e499 (Single-Point Alignment + Semantic Bridge) |
 | 2026-11-27 (giờ chưa ghi) | v7 e4e6a14 | «câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi» | DL-076, L-108 (sửa pipeline; chưa viết v8) |
+| 2026-11-27 (giờ chưa ghi) | v8 6eb6590 | «đọc lại logic code đã làm, hiện tại hook script vẫn không rõ nghĩa, lòng vòng lang mang, nhồi nhét quá nhiều thứ, không tự nhiên» | DL-077, L-109 (sửa audio-precheck/gate0/reviewer/5 file chỉ đạo; chưa viết lại clip-06) |

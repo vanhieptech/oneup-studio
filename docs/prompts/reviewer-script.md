@@ -45,12 +45,19 @@ Hãy đặt `{DRAFT}` cạnh `{ANCHOR}` (`{ANCHOR_ID}`) như một biên tập v
 #### ĐIỂM MÙ CẦN SOI KỸ (từ `resources/feedback.md` — KHÔNG dùng để chặn cứng H1–H4, dùng để phân định ranh giới `TIE` vs `LOSE`):
 {FEEDBACK_BLINDSPOTS}
 
-Khi ranh giới giữa `TIE` và `LOSE` hơi sát, hãy kiểm tra thẳng 5 điểm mù chí mạng từng khiến Hiệp bác kịch bản dù câu chữ nghe có vẻ «tròn trịa»:
+Khi ranh giới giữa `TIE` và `LOSE` hơi sát, hãy kiểm tra thẳng 6 điểm mù chí mạng từng khiến Hiệp bác kịch bản dù câu chữ nghe có vẻ «tròn trịa»:
 - **Điểm mù 1 — Hook phình to / trì hoãn lời hứa:** Beat 1 nhồi 5–6 câu kể lể dài dòng trước khi vào vấn đề, hoặc hứa «lát mình kể» rồi chèn 1–2 beat rẽ nhánh (nhất là chèn trend gượng kiểu «nhớ tới một câu được chia sẻ nhiều trên mạng… Đại ý là…» lặp lại đúng ý Beat 1) trước khi vào phần trả lời chính (`L-091`, `L-107`).
 - **Điểm mù 2 — Mạch rẽ nhánh / khâu hai bài làm một:** Đang kể mạch chính thì mở thêm một phép so phụ dài (như liệt kê 3 lý do đi làm) khiến mỗi ý nghiên cứu phải mượn phép so mới nối được, hoặc đã chốt xong thông điệp chính rồi lại bồi thêm «phát hiện thứ hai» / «cũng hồi đó còn một chuyện…» tách rời mạch (`L-089`, `L-094`, `L-107`).
 - **Điểm mù 3 — Văn dịch / sách vở dày:** Nhiều cụm dịch cứng không ai nói ngoài đời («thành tự động tới đâu», «không làm hỏng/ảnh hưởng gì đáng kể tới quá trình tạo thói quen», «quen gần tới mức cao nhất của chính người đó», «Đại ý là», «chột dạ», «bối cảnh», «cẩm nang», «Viết tên nó xuống bình luận»), hoặc hàn 3 ý khác chủ ngữ bằng dấu phẩy (`L-105`, `L-106`).
 - **Điểm mù 4 — Ví dụ lạc trục / dẫn chứng rỗng lặp từ / lệch giọng kể:** Lấy môn học (Sinh/Di truyền/Toán…) làm ví dụ; dựng cảnh công sở/đồng nghiệp gượng (hoặc đầu bài «buổi họp» cuối bài nhảy sang «thuyết trình»); thả kết quả nghiên cứu không tác giả/năm/cỡ mẫu thành chuỗi lặp khô kiểu «nhớ hơn… không còn hơn… vẫn hơn»; đổi ngôi kể đột ngột (`bạn → mình` hoặc xưng «OneUp» thay vì «mình»); khâu câu gượng «X, mà càng X thì…»; hoặc trộn giọng Bắc («nhanh thế?»)/từ sách («cẩm nang gợi ý») vào giọng miền Nam (`L-087`, `L-089`, `L-090`, `L-093`, `L-096`).
 - **Điểm mù 5 — Sai ngữ nghĩa tiếng Việt / văn dịch từ tiếng Anh (Translationese) / tự mâu thuẫn nội bộ:** câu đọc lên không phải tiếng Việt người miền Nam nói (mẫu lỗi đã lọt: «đòi thấy nhẹ», «chê sao hông nở», «lặp một việc đơn giản», «giữ mức nhỏ nhất», «đang sắp bị bỏ»); ẩn dụ sai vật lý hoặc sai chủ ngữ của động từ (tưới cây vs hoa nở); mốc thời gian hay số liệu giữa 2 beat không khớp (b01 «hai tối đầu hăng» rồi b02 «cái oải ngày đầu»). **Chỉ cần dính rõ 1 lỗi sai nghĩa hoặc 1 mâu thuẫn mốc thời gian giữa 2 beat là BẮT BUỘC chấm `PAIRWISE: LOSE` và `VERDICT: CẦN SỬA`.** Với mỗi lỗi: trích nguyên văn từng cụm, giải thích vì sao người Việt không nói vậy (hoặc hai beat đá nhau ở đâu), và đề xuất cách nói tự nhiên trong `TOP_FIXES`. Không bỏ qua vì checker PASS (`check-rules --draft` không bắt được ngữ nghĩa).
+
+- **Điểm mù 6 — Hook mù mờ / Lòng vòng / Nhồi nhét checklist (Over-packing) (Hiệp 27/11, clip-06 v8):** đếm âm tiết thật từng beat, rồi chạy 4 phép thử. **Dính rõ 1 trong 4 là BẮT BUỘC `PAIRWISE: LOSE` và `VERDICT: CẦN SỬA`** (kể cả khi `audio-precheck`/`check-rules` không báo; 5 clip đã duyệt có `b01` chỉ 9–21 âm tiết):
+  1. **3-Second Clarity Test:** `b01` > 22 âm tiết, HOẶC 3 giây đầu người lạ vẫn không hiểu clip nói về vấn đề gì của họ (vd mở bằng chuyện ngách «lỡ đăng TikTok ngày 14»).
+  2. **Time-to-Point Test:** `b01 + b02` > 65 âm tiết, hoặc phải tới beat 3 mới vào được câu hỏi/vấn đề chính.
+  3. **One-Point & Anti-Stuffing Test:** gộp 2 câu hỏi trong 1 clip, đọc thông số nghiên cứu dài dòng (> 40 âm tiết: cỡ mẫu, số tuần, liệt kê món phụ), hoặc nhồi > 2 mục đích vào 1 beat (beat > 45 âm tiết).
+  4. **Real-Life Plausibility Test:** có tình huống/cầu nối gượng ép mà người thật ngoài đời không làm («lướt trúng câu đang trend», «đánh răng xong đăng video»), hoặc callback/gia vị chỉ để thỏa luật.
+  Trích nguyên văn chỗ dính + số âm tiết, đề xuất cách cắt trong `TOP_FIXES`. Trong so cặp, **rõ nghĩa & trúng nỗi đau trong 3s thắng** việc tránh trùng dạng câu hỏi với clip trước.
 
 Đánh giá ngắn gọn theo đúng **4 trục tương đối** (mỗi trục ghi rõ `Draft thắng | Ngang | Anchor thắng` kèm trích 1 cụm mỗi bên):
 1. **Hook & Giữ chân (0–3s):** Hook có kéo ngay vào tình huống/nỗi đau quen thuộc hoặc chuyện thật có cái giá trong 1–2 nhịp gọn không? Nghe một lần có hiểu ngay vấn đề và vào thẳng mạch chính không? (Cả hook ngôi «mình» kể chuyện lẫn hook «bạn» + nỗi đau + câu hỏi đều tốt nếu sắc; hook mở bằng số báo cáo khô, câu sến giả trân, beat 1 dài dòng 5–6 câu, hoặc Beat 2 chèn trend tóm tắt «Đại ý là…» lặp lại ý Beat 1 → thua).
@@ -59,17 +66,17 @@ Khi ranh giới giữa `TIE` và `LOSE` hơi sát, hãy kiểm tra thẳng 5 đi
 4. **Độ đắt của ẩn dụ / payoff:** Ví dụ minh họa có đời thường, sắc, sát nỗi đau người xem và thống nhất xuyên suốt không? (Lấy môn học làm ví dụ, phép so bị gượng ép, hoặc dẫn chứng rỗng không rõ ai làm gì → thua rõ rệt). Kết có trả lời trọn lời hứa của hook và để lại một việc nhỏ làm được ngay không?
 
 QUY TẮC CHỌN `PAIRWISE` (công bằng với cả bản duyệt lẫn bản bị bác):
-- **Nhớ chuẩn thực tế để KHÔNG bác nhầm bản đạt:** `{ANCHOR_ID}` là bản thật đã được Hiệp duyệt, không phải văn mẫu hoàn hảo 10/10 — bản duyệt thật vẫn có thể ngắn gọn, hơi mộc ở đoạn dẫn chứng (ví dụ chỉ nêu 1 thí nghiệm ngắn, câu rào «Mới thấy đi chung thôi» / «ở mức vừa», hoặc chưa có đủ markup). Nếu Draft **đi một mạch tuyến tính gọn gàng, hook vào thẳng trong 1–2 nhịp, giọng nói đời thường và không dính 5 điểm mù ở trên**, thì **PHẢI chấm `TIE` hoặc `WIN`** — tuyệt đối KHÔNG chấm `LOSE` chỉ vì Draft ngắn hơn, mộc hơn hoặc ít giải thích hơn Anchor.
-- **`WIN`:** Draft thắng Anchor trên ≥ 2 trục, không thua nặng ở trục nào và không dính 5 điểm mù trên.
-- **`TIE`:** Draft ngang tầm chất lượng với Anchor, đi mạch tuyến tính sạch, không dính 5 điểm mù chí mạng (chỉ còn tiểu tiết nhỏ không làm Hiệp bác).
-- **`LOSE`:** Draft thua rõ rệt Anchor ở ít nhất 1 trục cốt lõi HOẶC dính rõ ít nhất 1 trong 5 điểm mù (4 điểm mù từ `resources/feedback.md` + điểm mù 5 ngữ nghĩa/văn dịch/tự mâu thuẫn) (hook phình to/trì hoãn lời hứa/chèn trend «Đại ý là…»; mạch rẽ nhánh/bồi thêm phát hiện tách rời; văn dịch/sách vở dày hoặc cộc lốc; ví dụ môn học/lạc đề/dẫn chứng rỗng; chưa xử lý góp ý cũ trong `feedback.md`).
+- **Nhớ chuẩn thực tế để KHÔNG bác nhầm bản đạt:** `{ANCHOR_ID}` là bản thật đã được Hiệp duyệt, không phải văn mẫu hoàn hảo 10/10 — bản duyệt thật vẫn có thể ngắn gọn, hơi mộc ở đoạn dẫn chứng (ví dụ chỉ nêu 1 thí nghiệm ngắn, câu rào «Mới thấy đi chung thôi» / «ở mức vừa», hoặc chưa có đủ markup). Nếu Draft **đi một mạch tuyến tính gọn gàng, hook vào thẳng trong 1–2 nhịp, giọng nói đời thường và không dính 6 điểm mù ở trên**, thì **PHẢI chấm `TIE` hoặc `WIN`** — tuyệt đối KHÔNG chấm `LOSE` chỉ vì Draft ngắn hơn, mộc hơn hoặc ít giải thích hơn Anchor.
+- **`WIN`:** Draft thắng Anchor trên ≥ 2 trục, không thua nặng ở trục nào và không dính 6 điểm mù trên.
+- **`TIE`:** Draft ngang tầm chất lượng với Anchor, đi mạch tuyến tính sạch, không dính 6 điểm mù chí mạng (chỉ còn tiểu tiết nhỏ không làm Hiệp bác).
+- **`LOSE`:** Draft thua rõ rệt Anchor ở ít nhất 1 trục cốt lõi HOẶC dính rõ ít nhất 1 trong 6 điểm mù (4 điểm mù từ `resources/feedback.md` + điểm mù 5 ngữ nghĩa/văn dịch/tự mâu thuẫn) (hook phình to/trì hoãn lời hứa/chèn trend «Đại ý là…»; mạch rẽ nhánh/bồi thêm phát hiện tách rời; văn dịch/sách vở dày hoặc cộc lốc; ví dụ môn học/lạc đề/dẫn chứng rỗng; chưa xử lý góp ý cũ trong `feedback.md`).
 
 ---
 
 ### ĐỊNH DẠNG ĐẦU RA
 Trình bày ngắn gọn 3 phần:
 1. **Tầng 1 (H1–H4):** liệt kê lỗi (trích dòng) hoặc ghi «không».
-2. **Tầng 2 — So sánh 4 trục (`{DRAFT}` vs `{ANCHOR_ID}`):** 4 gạch đầu dòng tương ứng 4 trục + kiểm nhanh 5 điểm mù (điểm mù 5: liệt kê từng cụm sai nghĩa/mâu thuẫn, hoặc «không») + 1 dòng chốt tổng quan.
+2. **Tầng 2 — So sánh 4 trục (`{DRAFT}` vs `{ANCHOR_ID}`):** 4 gạch đầu dòng tương ứng 4 trục + kiểm nhanh 6 điểm mù (điểm mù 5: liệt kê từng cụm sai nghĩa/mâu thuẫn, hoặc «không») + 1 dòng chốt tổng quan.
 3. **Khối kết luận chuẩn 5 dòng (BẮT BUỘC ở cuối, giữ nguyên văn nhãn để máy đọc):**
 
 HARD_FAILS: không | H1: <trích dòng>; H3: <trích dòng>
