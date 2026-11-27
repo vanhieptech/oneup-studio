@@ -97,6 +97,8 @@ TINYFISH_BIN = _which_any("tinyfish", "TINYFISH_BIN")   # @tiny-fish/cli: free s
 GEMINI_BIN = _which_any("gemini", "GEMINI_BIN")         # @google/gemini-cli: video teardown (pipeline/scripts/teardown.py)
 AGY_BIN = _first_existing(("AGY_BIN",), ("/Applications/Gemini.app/Contents/Helpers/agy", HOME / ".local/bin/agy"), shutil.which("agy") or "")
 # Antigravity CLI (Google). Gemini CLI's Google sign-in is refused for individual accounts since 2026-11, so teardown.py prefers agy.
+EGO_BROWSER_BIN = _first_existing(("EGO_BROWSER_BIN",), (HOME / ".local/bin/ego-browser",), shutil.which("ego-browser") or "")
+# Ego Lite browser CLI (DL-083): default browser for all web services, UI previews, and browser automation.
 
 VIENEU_PYTHON = _first_existing(
     ("VIENEU_PYTHON",),
