@@ -1,72 +1,94 @@
 ---
-title: "clip-06 — review độc lập script v8 (Gate 1, pairwise vs a-c05)"
+title: "clip-06 — review độc lập script (Gate 1, pairwise vs a-c05)"
 date: 2026-11-27
 id: clip-06.review
 type: review
 tags: [review, clip-06, gate-1, two-tier, pairwise]
 status: draft
 source: "docs/prompts/reviewer-script.md (Pairwise A/B) · draft scratchpad/draft-for-review.md (bảng beat + lời đọc + đọc liền) · anchor content/archive/clip-05-hoc-mot-dem/final/script-final.md (a-c05) · fact-lock research/fact-packages/factcheck-trends-2026-10-31.md mục «clip-06, 4.12 (Lally 2010, mức B)» · trend research/trends/2026-10-31/trend-clip-06-bong-hoa-chua-no.md · voice content/voice-profile.md §2–3 · feedback final/feedback.md (6 dòng)"
-verdict: CẦN SỬA
-pairwise: LOSE
+verdict: ĐẠT
+pairwise: TIE
 anchor: a-c05
 anchor_match: "cùng kênh @hi.oneup, giọng miền Nam, kể chuyện/độc thoại + 1 bằng chứng nghiên cứu + CTA hỏi người xem"
-script_hash: c2acc8f5c29f
+script_hash: 755740db300b
 feedback_seen: 6
 reviewer_model: claude-opus-5-5
 ---
+# clip-06 — review độc lập (2 tầng)
 
-# clip-06 v8 — review độc lập (Gate 1)
+Chấm từ đầu trên bản nháp 8 beat (b01–b08), không dựa vào review cũ.
 
-Chấm từ đầu, không dựa vào review cũ. Ước lượng: 8 beat, khoảng 306 âm tiết lời đọc, khoảng 96–105 giây ở nhịp 2,9–3,2 âm tiết/giây; cộng end card và chuyển cảnh khoảng 105–110 giây.
+## 1. Tầng 1 — Hard Fail (H1–H4)
 
-Tóm gọn: khung bản này tốt, đi một mạch thẳng, hook là chuyện có cái giá, hai câu hỏi ở b03 được trả lời đúng thứ tự ở b05 và b06, kết có việc nhỏ làm được ngay. Bản thua sát nút chỉ vì còn hai cụm dịch từ caption tiếng Anh sang (điểm mù 5) và ẩn dụ bông hoa bị bỏ giữa chừng. Cả hai đều sửa ở mức cụm từ, không cần viết lại.
+- **H1 (fact / danh sách Cấm):** không. Đối chiếu từng câu với fact-lock Lally 2010:
+  - Không có «66 ngày», «trung bình», «hơn hai tháng», cơ chế não, đọc sách hay chạy bộ.
+  - «21 ngày» chỉ xuất hiện như lời đồn: «mình nghe đồn phải làm liền 21 ngày» (b02), rồi bị bác ở b05: «cái mốc 21 ngày đâu có chắc gì».
+  - 18 và 254 được nêu như hai đầu của một khoảng, không phải một số ngày cố định để kết luận. Nguồn đủ dấu hiệu: «Năm 2010, nhóm của Phillippa Lally theo dõi 96 người suốt 12 tuần».
+  - Chỉ có một nghiên cứu. Giới hạn của nó được nói thành lời: «họ chỉ đo mấy việc đơn giản, còn đăng video thì chưa ai đo» (b07).
+  - Ví dụ «ăn thêm một trái cây, uống một chai nước hay đi bộ» đúng nhóm «ăn, uống, vận động đơn giản».
+  - Ghi chú nhỏ, không phải H1: «vẫn thành thói quen như thường» (b06) mạnh hơn nguồn một chút. Nguồn chỉ nói lỡ một lần không ảnh hưởng đáng kể; «gần như hông sao» đứng trước đã kéo câu về đúng mức.
+- **H2 (thời lượng):** không. Phần đọc liền khoảng 318 âm tiết, tức khoảng 100–110 giây ở nhịp 2.9–3.2 âm tiết/giây, cộng end card và chuyển cảnh vẫn dưới 2 phút. Bản này ngắn hơn mục tiêu 120–180 giây, nhưng ngắn hơn không phải H2.
+- **H3 (format / xúc phạm):** không. Đúng comic + motion, không quay mặt, không b-roll, không nhắc lịch đăng, không chê người xem.
+- **H4 (cấu trúc):** không. Đủ 8 beat dạng `N. **[bNN]** lời`, không beat nào trống.
 
-## Tầng 1 — Hard Fail (H1–H4)
+## 2. Tầng 2 — Pairwise A/B (draft vs a-c05)
 
-- **H1: không.** Dẫn chứng có đủ tên, năm, quy mô («Năm 2010, nhóm của Phillippa Lally theo dõi 96 người suốt 12 tuần»). Không có «66 ngày», «trung bình», «hơn hai tháng», cơ chế não, đọc sách hay chạy bộ. «21 ngày» chỉ xuất hiện như lời đồn («mình nghe đồn phải làm liền 21 ngày») và bị phủ định ở b05. 18 và 254 là hai đầu khoảng đo, không phải một con số cố định làm kết luận; «có người tính ra tới 254 ngày» còn đúng bản chất con số 254 là ước tính. Ví dụ «ăn thêm một trái cây, uống một chai nước hay đi bộ» có chữ «như», thuộc nhóm ăn, uống, vận động đơn giản. b07 tự rào («họ chỉ đo mấy việc đơn giản, còn đăng video thì chưa ai đo»), không nới sang việc phức tạp. Chỉ một nghiên cứu («Chính nghiên cứu đó»).
-  - Ghi chú b06: fact-lock ghi ý «lỡ một ngày không làm hỏng tiến trình» dưới tên cẩm nang, còn lời đọc gán cho chính nghiên cứu. Bài Lally 2010 có báo cáo đúng ý này (bỏ lỡ một lần không ảnh hưởng đáng kể tới quá trình), nên không phải H1. «Gần như hông sao» là mức rào đúng; riêng vế «thói quen vẫn thành như thường» hơi mạnh hơn nguồn (xem điểm mù 5).
-- **H2: không** (khoảng 105–110 s).
-- **H3: không.** Không quay mặt, b-roll, nhạc nền, nhắc lịch đăng; không chê người xem.
-- **H4: không.** 8 beat đều có dạng `N. **[bNN]** lời`, không beat trống.
+### Trục 1 — Hook và giữ chân: **Ngang**
+- Draft: «Tới tối ngày thứ 14, mình lỡ không đăng video TikTok… “Vậy là công cốc hết rồi.”» Hook là chuyện có cái giá, nghe một lần hiểu ngay, và câu thứ ba tự giễu: «làm như sập nguyên sự nghiệp vậy».
+- Anchor: «Thì cái bản chất của cái việc đọc đâu nhớ đó là như thế nào? Chứ đọc xong gấp sách lại, là quên sạch trơn hà.»
+- So sánh: anchor mở nhanh hơn một nhịp. Draft mở bằng con số «ngày thứ 14» nhưng đặt ngay trong cảnh, không phải số báo cáo khô. Hook liên quan trực tiếp tới trend và câu hỏi chính, nên góp ý «hook không liên quan» đã được xử lý.
 
-## Tầng 2 — So sánh 4 trục (draft v8 vs a-c05)
+### Trục 2 — Mạch và chuyển ý: **Ngang (Draft hơi nhỉnh)**
+- Mạch là một đường thẳng:
+  1. Lỡ ngày 14 (b01).
+  2. Lý do thấy công cốc: lời đồn có hai vế, «liền 21 ngày» và «đứt một bữa là đếm lại» (b02).
+  3. Ẩn dụ bông hoa biến thành hai câu hỏi (b03).
+  4. Nghiên cứu: 18–254 ngày trả lời vế 1 (b04–b05), lỡ một bữa trả lời vế 2 (b06).
+  5. Giới hạn của nghiên cứu, rồi cách làm nếu–thì (b07).
+  6. Đóng ẩn dụ và CTA (b08).
+- Mỗi vế của lời đồn được trả lời đúng một lần, không có «phát hiện thứ hai» bồi thêm.
+- Mốc thời gian khớp ở mọi beat: tối ngày 14 lỡ, «tới ngày 13» (b02), «mới 13 ngày» (b03, b05), «13 bữa» (b06), lịch ngày 15 (b08), «1, 2 tuần» (b08).
+- Anchor cũng tuyến tính, nhưng phải chia «Thứ nhất / Thứ hai / Và cuối cùng».
 
-1. **Hook & giữ chân: Draft thắng.** Draft vào thẳng chuyện có cái giá trong hai nhịp: «Tới tối ngày thứ 14, mình lỡ không đăng video TikTok… “Vậy là công cốc hết rồi.”», kèm câu tự giễu «Mới 13 video mà mình làm như sập nguyên sự nghiệp vậy». a-c05 mở bằng khuôn «Thì cái bản chất của cái việc đọc đâu nhớ đó là như thế nào?» (đã bị cảnh báo trùng khuôn L-088). Hook draft dính chặt với phần sau, đúng chỗ góp ý v6 «hook không liên quan».
-2. **Mạch & chuyển ý: Ngang.** Draft đi thẳng: lỡ ngày 14 → lời đồn 21 ngày, đứt là đếm lại → hai câu hỏi (b03) → Lally → «hông có mốc 21 ngày» → «lỡ một bữa gần như hông sao» → giới hạn + nếu–thì → CTA. Không hứa «lát mình kể», không bồi phát hiện thứ hai. Một chỗ nối hở: b02 nhảy từ nỗi lo sang «Dạo này lại có câu đang trend:» mà không có hành động dẫn vào (chữ «lại» nghe như thêm một chuyện bực). a-c05 cũng thẳng (vấn đề → vì sao → thí nghiệm → thứ nhất/hai/cuối).
-3. **Văn nói miền Nam + DNA kênh: Anchor thắng (sát).** Phần lớn draft nói rất tự nhiên («đăng đại một video», «13 bữa mình làm đâu có mất», «Lỡ nữa thì mai đăng tiếp, hông cần bù»). Nhưng còn hai cụm dịch từ caption tiếng Anh (chi tiết ở điểm mù 5). a-c05 không có cụm nào kiểu vậy, lại có thêm miếng hài («hông ai ghi sổ đầu bài đâu») và đoạn nhại cô–trò.
-4. **Ẩn dụ / payoff: Anchor thắng.** Draft mở ẩn dụ «chưa nở thôi chứ đâu phải héo» ở b03 rất đắt, nhưng từ b04 tới b08 không quay lại bông hoa nữa; lời kết và hình b08 không đóng vòng, nên câu trend vẫn có nguy cơ nghe như gắn vào. Việc làm cuối thì rõ và làm được ngay. a-c05 đóng vòng bằng «Đọc đâu nhớ đó là tự trả bài vậy đó» khớp với hook.
+### Trục 3 — Văn nói miền Nam và DNA kênh: **Anchor thắng nhẹ**
+- Draft có nhiều cụm nói tự nhiên: «chưa nở thôi chứ đâu phải héo», «đâu có chắc gì», «đâu có gì lạ», «gần như hông sao», «đăng đại một video», «hông cần bù». Có tự giễu ở b01.
+- Anchor có nhiều chất hài hơn: «hông ai ghi sổ đầu bài đâu», đoạn nhại cô giáo và học trò.
+- Cụm còn hơi dịch: «Chính nghiên cứu đó thấy» (b06) dịch theo kiểu «the study found». Người nói thường dùng «Cũng nhóm đó thấy là…» hoặc «nghiên cứu đó cho thấy…».
+- Cụm hơi lửng: «Mà tới ngày 13, tối nào mình cũng…» (b02) thiếu «rồi» hoặc «vẫn», nên ý «tới ngày 13 rồi mà vẫn còn cực» không bật ra ngay.
+- Kết luận trục: không có lỗi nặng, chỉ thua anchor ở độ hài.
+
+### Trục 4 — Độ đắt của ẩn dụ và payoff: **Ngang**
+- Ẩn dụ bông hoa được giữ xuyên suốt: trend (b02), «chưa nở / héo» (b03), «hoa tự nở» (b07), nụ he hé (b08). Hình lịch bị xé về ô 1 ở b02 đối lại với 13 ô vẫn sáng ở b06, gọn và đắt.
+- Kết để lại một việc làm được ngay: «nếu đánh răng xong, thì đăng đại một video».
+- Chỗ vênh: «Nên mình hông dám hứa gì» rồi hai câu sau lại chốt «Mình cứ làm, hoa tự nở». Câu cuối nghe như một lời chắc chắn ngay sau câu từ chối hứa (xem mục điểm mù 5).
+- Anchor có payoff «tự trả bài» cộng đoạn diễn mẫu, ngang tầm.
 
 ### Kiểm 5 điểm mù
-
-- **Điểm mù 1 (hook phình / trì hoãn):** không. Câu trend một câu, không lặp lại ý b01.
-- **Điểm mù 2 (rẽ nhánh):** không. Nếu–thì ở b07 là bước hành động, không phải phát hiện thứ hai.
-- **Điểm mù 3 (văn dịch / sách vở):** nhẹ, trùng với điểm mù 5 bên dưới.
-- **Điểm mù 4 (ví dụ lạc trục, đổi ngôi, trộn Bắc):** không. Ngôi «mình» giữ suốt, CTA chuyển sang «bạn» đúng chỗ. Không trộn «thế / nhé».
-- **Điểm mù 5 (sai ngữ nghĩa / văn dịch / mâu thuẫn):**
-  - b02 «Mà tới ngày 13 mình vẫn còn **gượng** từng tối.» và b05 «mới 13 ngày mà **còn gượng**». «Gượng» trong tiếng Việt cần đi với một hành động («gượng dậy», «cười gượng», «gượng làm»); đứng trơ thì người nghe không biết gượng cái gì. Caption cùng beat là «still forcing it», cho thấy câu Việt dịch thẳng từ «forcing it». Người miền Nam sẽ nói «tối nào cũng phải ráng lắm mới đăng nổi».
-  - b06 «thói quen **vẫn thành** như thường». «Thành» ở đây thiếu bổ ngữ, dịch từ «the habit still forms». Chính b02 dùng đúng («mới thành thói quen»), nên b06 nghe lệch. Nói tự nhiên: «vẫn thành thói quen như thường». Câu này cũng hơi mạnh hơn nguồn; «vẫn thành thói quen được như thường» hay «hông làm hỏng gì» là vừa.
-  - Cụm gượng phụ (không tự nó quyết LOSE): b05 «hông có mốc 21 ngày nào **chắc** cả» đặt chữ «chắc» lủng lẳng, nghe được cả nghĩa «chắc là»; nói gọn hơn: «vậy là cái mốc 21 ngày đâu có chắc gì». b05 «thì **chưa có gì lạ**», tự nhiên hơn là «thì cũng đâu có gì lạ».
-  - Mốc thời gian và số liệu: khớp giữa các beat (tối ngày 14 lỡ, 13 video, 13 ngày, 13 bữa, nhanh nhất 18 > 13, «1, 2 tuần» ở CTA). Không mâu thuẫn.
-  - Mắt xích nhân quả hook → lời đồn → bằng chứng → việc làm: liền. Lời đồn (đứt là đếm lại) giải thích vì sao «công cốc»; bằng chứng trả lời từng vế; việc làm «Lỡ nữa thì mai đăng tiếp, hông cần bù» đáp thẳng nỗi sợ ở b01.
-  - Lệch hình–lời (không phải ngữ nghĩa, nhưng nên sửa): b08 lời nói «Kể mình nghe trong comment nha», còn hình là «bong bóng COMMENT 1 CHỮ» và caption «Comment one word».
+1. **Hook phình to / trì hoãn lời hứa:** không. b01 có 3 câu. Câu trend ở b02 chỉ một câu và dùng làm cầu ẩn dụ, không phải kiểu «Đại ý là…» lặp lại b01.
+2. **Rẽ nhánh / khâu hai bài:** không. Nếu–thì là một callback ngắn ở bước «việc làm», không mở thêm phép so.
+3. **Văn dịch / sách vở dày:** nhẹ, chỉ «Chính nghiên cứu đó thấy». Không có «tự động», «bối cảnh», «cẩm nang», «Đại ý là».
+4. **Ví dụ lạc trục / lệch ngôi:** không. Không có môn học. Ngôi «mình» giữ suốt, CTA chuyển sang «bạn» đúng chỗ.
+5. **Sai nghĩa / văn dịch / tự mâu thuẫn (đọc từng câu):**
+   - «Nên mình hông dám hứa gì, … Mình cứ làm, hoa tự nở.» (b07): căng logic trong cùng một beat. «Hoa tự nở» có thể nghe như lời hứa ngay sau câu «hông dám hứa». Người nghe vẫn có thể hiểu đây là câu tục ngữ «cứ làm đi rồi tới lúc», chủ ngữ cũng đúng (mình làm, hoa nở), nên mình **không** xếp vào lỗi rõ. Đây là ưu tiên sửa số 1.
+   - «Chính nghiên cứu đó thấy» (b06): hơi dịch, nhưng không sai nghĩa.
+   - «có người tính ra tới 254 ngày» (b05): mơ hồ về chủ ngữ. Có thể nghe thành «có người tự tính ra». Ý đúng là «có người phải tới 254 ngày». Không đổi nghĩa chính.
+   - «Mà tới ngày 13, tối nào…» (b02): hơi lửng như đã nêu ở trục 3, không mâu thuẫn mốc.
+   - Mốc thời gian và số liệu giữa các beat: không có chỗ nào đá nhau (13 / 14 / 15, và 13 nhỏ hơn 18 khớp với «còn phải ráng thì cũng đâu có gì lạ»).
+   - Mắt xích nhân quả hook → lời đồn → bằng chứng → việc làm → đóng ẩn dụ: đủ, không đứt.
 
 ### Trả lời 6 dòng feedback.md
+1. «xàm thiếu tự nhiên… nói lý do nghe quê»: lời đọc không có câu nào tự giải thích ý đồ của người viết, giọng kể đời thường. **Đã xử lý.**
+2. «rời rạc… không có cấu trúc tuần tự»: mạch đi một đường như trục 2. **Đã xử lý.**
+3. «làm lại»: bản này dựng lại từ đầu quanh cảnh «lỡ ngày 14», không chắp vá bản cũ. **Đã xử lý.**
+4. «Sửa và chấm lại»: đã chấm lại từ đầu trong file này. **Đã xử lý.**
+5. «rời rạc, hook không liên quan, nghe xong mù mờ»: hook gắn thẳng vào lời đồn, ẩn dụ và câu hỏi. Nghe xong rút ra được hai ý rõ (18–254 ngày; lỡ một bữa gần như không sao) và một việc làm. **Đã xử lý.**
+6. «câu văn không đúng ngữ nghĩa tiếng Việt»: không còn lỗi sai nghĩa rõ kiểu «đòi thấy nhẹ» hay «chê sao hông nở». Còn 3 cụm cần mài: «hông dám hứa / hoa tự nở», «Chính nghiên cứu đó thấy», «có người tính ra». **Cơ bản đã xử lý, còn chỗ cần mài.**
 
-1. «xàm thiếu tự nhiên, cả ai nói lý do nghe mới quê»: phần lớn đã tự nhiên, không còn câu giải thích lý do kiểu sách; còn hai cụm dịch ở điểm mù 5.
-2. «rời rạc… không có cấu trúc tuần tự»: đã xử lý. Hai câu hỏi ở b03 được trả lời theo đúng thứ tự ở b05 và b06.
-3. «làm lại»: v8 là bản viết mới, khung khác hẳn các bản trước.
-4. «Sửa và chấm lại»: bản review này là lượt chấm lại.
-5. «rời rạc, hook không liên quan, nghe xong mù mờ»: hook đã là chuyện thật nối thẳng vào chủ đề; người xem nghe xong biết rõ hai điều (không có mốc ngày cố định, lỡ một bữa không mất gì) và một việc làm. Còn hở: câu trend vào thiếu cầu nối, và ẩn dụ hoa không được đóng ở cuối.
-6. «câu văn không đúng ngữ nghĩa tiếng Việt…»: chưa đạt hẳn; còn «vẫn còn gượng từng tối» và «thói quen vẫn thành như thường».
-
-### Chốt
-
-Bản v8 tốt hơn rõ ở hook và mạch so với các lỗi Hiệp từng bác, và có thể chạm TIE với a-c05 chỉ sau ba sửa nhỏ. Theo luật điểm mù 5 (một lỗi sai nghĩa rõ là LOSE), và vì góp ý mới nhất của Hiệp nhắm đúng lỗi ngữ nghĩa, bản này chưa qua Gate 1.
-
-## Khối kết luận
+### Chốt tổng quan
+Draft đi một mạch gọn, fact sạch, mốc thời gian khớp, giọng miền Nam đời thường và trả lời được cả 6 dòng góp ý. Draft thua anchor nhẹ ở độ hài, và còn một chỗ vênh logic nhẹ ở câu chốt b07. Không thua rõ ở trục nào và không dính rõ điểm mù nào, nên chấm **TIE**.
 
 HARD_FAILS: không
-PAIRWISE: LOSE (so với a-c05)
-TOP_FIXES: 1. b02 «mình vẫn còn gượng từng tối» và b05 «mà còn gượng»: «gượng» thiếu bổ ngữ, dịch từ «forcing it»; đổi thành «tối nào cũng phải ráng lắm mới đăng nổi» / «mới 13 ngày mà còn phải ráng thì cũng đâu có gì lạ»; 2. b06 «thói quen vẫn thành như thường»: đổi thành «vẫn thành thói quen như thường» (hoặc «hông làm hỏng gì hết»); kèm b05 «hông có mốc 21 ngày nào chắc cả» → «vậy là cái mốc 21 ngày đâu có chắc gì»; 3. b02→b08 ẩn dụ hoa: thay «Dạo này lại có câu đang trend:» bằng một hành động dẫn vào (vd «Rồi lướt trúng câu đang trend:») và đóng vòng ở b07 hoặc b08 bằng một câu ngắn về nụ chưa nở (chủ ngữ đúng: mình làm tiếp, hoa tự nở); đồng thời cho hình b08 khớp lời «Kể mình nghe» (bỏ «COMMENT 1 CHỮ» / «Comment one word»)
+PAIRWISE: TIE (so với a-c05)
+TOP_FIXES: 1. b07 «Nên mình hông dám hứa gì … Mình cứ làm, hoa tự nở.»: câu chốt nghe như hứa ngay sau câu từ chối hứa; đổi thành câu không cam kết kết quả, vd «Mình cứ đăng, hoa nở lúc nào thì nở.»; 2. b06 «Chính nghiên cứu đó thấy lỡ một bữa thì gần như hông sao, vẫn thành thói quen như thường»: bỏ kiểu dịch «nghiên cứu thấy» và chữ «như thường» nói quá nguồn, vd «Cũng nhóm đó thấy là lỡ một bữa thì gần như hông sao.»; 3. b05 «có người tính ra tới 254 ngày» và b02 «Mà tới ngày 13, tối nào mình cũng phải ráng»: đổi thành «có người phải tới 254 ngày» và «Mà tới ngày 13 rồi, tối nào mình vẫn phải ráng lắm mới đăng nổi» cho rõ nghĩa
 CONFLICTS: không
-VERDICT: CẦN SỬA
+VERDICT: ĐẠT
