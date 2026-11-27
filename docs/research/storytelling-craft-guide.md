@@ -4,11 +4,11 @@ type: research
 status: ready
 updated: 2026-11-27
 date: 2026-11-27
-tags: [script, craft, storytelling, cohesion, two-pass, hi.oneup, DL-078, DL-079]
-title: "Storytelling craft guide: dẫn chuyện liền mạch & kiến trúc 2 pha cho video ngắn tiếng Việt (@hi.oneup)"
-source: "DL-078 & DL-079 (27/11): Joseph Williams (Given–New Cohesion vs Mechanical Anadiplosis), cấu trúc Đề–Thuyết tiếng Việt nói, Randy Olson (ABT / But–Therefore), Veritasium/Kurzgesagt (Misconception Reveal), Johnny Harris (Everyday Paradox), Matthew Dicks (Storyworthy), nghiên cứu 15 video TikTok thật (hook-script-study-2026-11-11.md), và nghiên cứu Curse of Instructions / Prompt Bloat trên LLM."
+tags: [script, craft, storytelling, cohesion, two-pass, cta-psychology, hi.oneup, DL-078, DL-079, DL-081]
+title: "Storytelling craft guide: dẫn chuyện liền mạch, kiến trúc 2 pha & tâm lý CTA đối thoại thật (@hi.oneup)"
+source: "DL-078, DL-079 & DL-081 (27/11): Joseph Williams (Given–New Cohesion vs Mechanical Anadiplosis), Đề–Thuyết tiếng Việt nói, Randy Olson (ABT), Veritasium/Kurzgesagt, Johnny Harris, Matthew Dicks, nghiên cứu 15 video TikTok thật (hook-script-study-2026-11-11.md), Curse of Instructions trên LLM, và nghiên cứu tâm lý bình luận video ngắn (Banner Blindness, Shared Struggle, Perspective Scaffolding + dữ liệu top comment teardown)."
 ---
-# Storytelling craft guide (DL-078 · DL-079)
+# Storytelling craft guide (DL-078 · DL-079 · DL-081)
 
 Tài liệu chuẩn nghề của `@hi.oneup`, được trỏ từ `docs/prompts/writer-hi-oneup.md`, `pipeline/scripts/gate0.py` và `docs/prompts/reviewer-script.md`. Giải quyết dứt điểm hai bệnh: (1) câu rời rạc hoặc nối chữ cơ học, (2) văn bản đối phó kiểm duyệt (*Compliance Prose*) do nhồi quá nhiều luật vào cùng lượt viết.
 
@@ -44,10 +44,20 @@ Người xem video không đọc lại được; tai chỉ giữ ý vừa mở �
 - Không nhảy thẳng vào *"Năm 2010, nhóm Phillippa Lally..."* kiểu Wikipedia.
 - Dẫn vào bằng **kỳ vọng sai của người kể → cú tỉnh ngộ khi gặp dữ liệu thật**: *"Hồi trước mình cứ tưởng ráng hai ba tuần là vô guồng. Tới lúc đọc nghiên cứu năm 2010 của nhóm Phillippa Lally mới ngửa người ra..."* — biến số liệu thành bước ngoặt cảm xúc của chính câu chuyện.
 
-### 5. CTA chia sẻ đồng hành — Khớp tâm thế kết bài (*Companion CTA Fit*, DL-069 · DL-080)
-- **Khớp tâm thế cuối bài:** sau khi kịch bản đã vực người xem dậy và trao hành động tối nay, câu CTA phải mở theo **hướng tiến tới** (bạn đang tập thói quen gì, được bao lâu rồi, hay bạn làm sao để giữ nhịp bền), **cấm kéo tuột cảm xúc ngược về chữ «bỏ»** hoặc bó hẹp điều kiện giả tạo (*«thói quen nào mới tập hai tuần mà đang tính bỏ?»* khiến đa số người xem thấy không khớp mình).
-- **Cấm ép công thức «comment 1 chữ / 1 con số» phi thực tế:** tên thói quen hay trải nghiệm đời thực không thể viết bằng 1 chữ, và cụm *«Kể một chữ»* là sai tiếng Việt. Luôn dùng giọng bạn đồng hành lắng nghe, khiêm tốn như mẫu duyệt `a-c05` (*«…comment kể mình nghe với nha»*, *«…comment cho mình biết với nha»*).
-- **Nên tách beat riêng cho CTA** sau beat hành động để nhịp kết có khoảng thở tự nhiên.
+### 5. Tâm lý học CTA Đối thoại Thật — Đồng cảm, Cách vượt qua & Lắng nghe góc nhìn (*Authentic Conversation CTA*, DL-069 · DL-081)
+Nghiên cứu hành vi người xem TikTok/Shorts (*Banner Blindness*, *Shared Vulnerability*, *Perspective Scaffolding*) và dữ liệu top comment thực tế trong repo (`manghocls` Khối 4: comment 509 tim chia sẻ cách làm riêng, comment 205 tim đồng cảm nỗi đau) chỉ ra **2 bẫy CTA thất bại phải cấm tiệt**:
+- **Cấm Bẫy 1 — *Gimmick/Command CTA*:** «Comment một chữ / một con số nha» khi hỏi trải nghiệm/thói quen (cưỡng ép, sai ngữ nghĩa tiếng Việt).
+- **Cấm Bẫy 2 — *Survey/Small-Talk Boilerplate (Khảo sát xã giao sáo rỗng)*:** «Dạo này bạn đang tập thói quen gì, được bao lâu rồi, comment kể mình nghe nha» — câu hỏi điểm danh khô như khảo sát, không có điểm chạm cảm xúc, bị não người xem lọc bỏ như câu thảo mai xin tương tác cuối clip.
+
+**3 động cơ tâm lý thật sự kéo bình luận chất lượng** (mỗi CTA phải kết hợp ít nhất 2/3 động cơ này, đặt ở beat riêng sau khi người nói khiêm tốn nhận cách vừa nêu chỉ là lựa chọn của riêng `mình`):
+1. **Shared Struggle / Empathy Mirror («Có ai bị giống mình hông?»):** Tự thú điểm yếu thật ở đúng khúc dễ gãy nhất (*cứ tới tuần hai là dễ nản*) để người xem thấy mình không cô đơn và muốn lên tiếng xác nhận.
+2. **Crowdsourced Overcoming Strategy («Cách mọi người vượt qua khúc đó»):** Hỏi kinh nghiệm thực chiến mỗi người dùng để bước qua đúng ngưỡng khó vừa kể, thay vì hỏi chung chung họ đang làm việc gì.
+3. **Open Perspective Listening («Mỗi người một góc nhìn / quan điểm riêng»):** Thể hiện rõ sự tôn trọng rằng không có một công thức đúng cho tất cả (người hợp đi nhẹ giữ nhịp, người hợp ép kỷ luật gắt, người cần bạn đồng hành) — mở sàn lắng nghe quan điểm cá nhân của từng người xem.
+
+**3 mẫu khung CTA xoay vòng cho `@hi.oneup` (mở cửa đôi bằng `hay` để đón cả người đang nản, người nghĩ khác lẫn người có mẹo riêng; không dán nhãn khẩu hiệu khô và không dùng đuôi MC fanpage «chia sẻ cùng mình nha»):**
+- *C1 — Hạ cái tôi + Mở cửa đôi bằng `Hay` (Đồng cảm · Góc nhìn khác · Cách vượt qua):* «Mình thì đi nhẹ vậy thôi, chứ chuyện này mỗi người nghĩ mỗi khác. Có ai cứ tới tuần hai là dễ nản giống mình hông? Hay bạn nghĩ sao, có cách gì vượt qua khúc đó — comment kể mình nghe với nha.»
+- *C2 — Đặt 2 hướng thực tế (Perspective Split):* «Cách của mình là hạ nhẹ giữ nhịp thôi, chứ mỗi người hợp mỗi kiểu — tới khúc dễ nản đó bạn chọn đi nhẹ từ từ hay ép kỷ luật gắt luôn, comment cho mình nghe góc nhìn với nha.»
+- *C3 — Khiêm tốn học hỏi kinh nghiệm riêng (`a-c05`):* Thừa nhận chắc nhiều bạn có cách hay hơn mình ở đúng bài toán vừa bàn, mời chia sẻ cách/quan điểm riêng của họ.
 
 ## Trụ cột 3: Bốn hướng dẫn chuyện chuyên nghiệp (chọn 1 ở Gate 0, xoay vòng)
 
