@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active
-updated: 2026-11-26
+updated: 2026-11-27
 tags: [agents, retrieval, workflow]
 ---
 # AGENTS.md: cách AI làm việc trong repo này
@@ -37,7 +37,7 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 | Trend | `research/trends/ingest.md` (thư viện sống) + `research/trends/YYYY-MM-DD/` |
 | Quy trình | `pipeline/pipeline.md` |
 | **Tìm kiếm (mặc định XERJ)** | `docs/conventions/search-xerj.md`: `xerj search --prefix work-oneup-studio "..."` (repo; prefix lấy từ `.xerj-prefix`) · `--prefix ref` (repo tham khảo, tra **trước khi viết code pipeline mới**) · index lại `pipeline/scripts/xerj-index.sh` · dự phòng `rg`/`git grep` |
-| **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` · mẫu `content/archive/clip-01-implementation-intention/final/` |
+| **Làm clip (bắt buộc, luật 48)** | `skills/make-video/SKILL.md` (v2.0) · khởi tạo `pipeline/scripts/ideate-clip.py` (`trend-match.py` + `script-arena.py`) · build `pipeline/scripts/build-final.py` · lint `pipeline/scripts/check-rules.py` + `audio-precheck.py` · bộ nhớ `golden-sync.py` · mẫu `content/archive/clip-01-implementation-intention/final/` |
 | Skill | `skills/<id>/SKILL.md` (`make-video`, `social-poster` (link → nháp X/LinkedIn, không tự đăng), `motion-picks-per-script`, `trend-digest`, `script-polish`, `humanizer` (vendored MIT), `motionmaxxing` (symlink → `resources/refs/motionmaxxing/`, Apache-2.0 craft + measured eases; Remotion ports `video-engine/src/composition/motionmaxxing/`), `hyperframes/*` (vendored Apache-2.0, 21 skill HyperFrames chính thức, đọc trước mọi beat giải thích)) |
 
 ## Quy ước
@@ -47,7 +47,7 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 - Không đưa media vào git: file lớn ở `media/` (gitignored, `MANIFEST.json`), giữ trên Mac bằng `pipeline/scripts/media-sync.py`. Không vendor repo ngoài (xem `resources/refs/README.md`).
 
 ## Workflow
-1. **Clip mới:** theo `skills/make-video/SKILL.md` (intake → đọc nguồn → spec → humanizer → check-rules → gate 1 → render → check-rules --final → gate 2 → DL).
+1. **Clip mới:** theo `skills/make-video/SKILL.md` v2.0 (`ideate-clip.py` bắt trend <72h → Gate 0 + Fact-lock → Đấu trường 3 kịch bản `script-arena.py` → `audio-precheck.py` + `check-rules.py --draft` → Reviewer Tournament Judge → Gate 1 → Chốt → render → `check-rules --final` → Gate 2 → `golden-sync.py` → DL).
 2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
 3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
 4. **Hoàn thành mọi tác vụ (bắt buộc):** sau khi sửa xong code/tài liệu và chạy qua các cổng kiểm tra (`build-index.py`, `check-assets.py`, `pytest`), **luôn tự động `git add`, `git commit` (theo mẫu `<loại>: <mô tả>`) và `git push` lên `origin/main`** mà không chờ nhắc.
