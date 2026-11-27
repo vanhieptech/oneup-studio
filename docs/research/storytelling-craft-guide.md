@@ -4,51 +4,51 @@ type: research
 status: ready
 updated: 2026-11-27
 date: 2026-11-27
-tags: [script, craft, storytelling, cohesion, hi.oneup, DL-078]
-title: "Storytelling craft guide: dẫn chuyện liền mạch cho video ngắn tiếng Việt (@hi.oneup)"
-source: "Hiệp 27/11 (clip-06 v11): «có một chút liền mạch nhưng vài chỗ lại không rõ nghĩa, dẫn câu vẫn chưa liền mạch». Nền: Joseph Williams (Style: Lessons in Clarity and Grace, old-to-new), cấu trúc Đề–Thuyết của văn nói tiếng Việt, Randy Olson (ABT, But/Therefore), Veritasium/Kurzgesagt (misconception reveal), Johnny Harris (analogy-led), Matthew Dicks (Storyworthy, 5-second moment), DNA clip-02/03/05 đã duyệt."
+tags: [script, craft, storytelling, cohesion, two-pass, hi.oneup, DL-078, DL-079]
+title: "Storytelling craft guide: dẫn chuyện liền mạch & kiến trúc 2 pha cho video ngắn tiếng Việt (@hi.oneup)"
+source: "DL-078 & DL-079 (27/11): Joseph Williams (Given–New Cohesion vs Mechanical Anadiplosis), cấu trúc Đề–Thuyết tiếng Việt nói, Randy Olson (ABT / But–Therefore), Veritasium/Kurzgesagt (Misconception Reveal), Johnny Harris (Everyday Paradox), Matthew Dicks (Storyworthy), nghiên cứu 15 video TikTok thật (hook-script-study-2026-11-11.md), và nghiên cứu Curse of Instructions / Prompt Bloat trên LLM."
 ---
-# Storytelling craft guide (DL-078)
+# Storytelling craft guide (DL-078 · DL-079)
 
-Vá từng chữ nối trên **một khuôn duy nhất** (`ONEUP-CORE-ARC`) không đủ: v9→v11 vẫn bị chê «rời rạc», «không rõ nghĩa». Gốc là thiếu hai thứ: (1) quy tắc để câu nối câu mà không cần keo từ nối, (2) nhiều hơn một hướng dẫn chuyện để chọn theo chủ đề. File này là chuẩn nghề; `docs/prompts/writer-hi-oneup.md` (lúc viết), `pipeline/scripts/gate0.py` (brief) và `docs/prompts/reviewer-script.md` (lúc duyệt) trỏ về đây. Không thay Fact-lock, giọng Hiệp, ngân sách âm tiết của DL-077.
+Tài liệu chuẩn nghề của `@hi.oneup`, được trỏ từ `docs/prompts/writer-hi-oneup.md`, `pipeline/scripts/gate0.py` và `docs/prompts/reviewer-script.md`. Giải quyết dứt điểm hai bệnh: (1) câu rời rạc hoặc nối chữ cơ học, (2) văn bản đối phó kiểm duyệt (*Compliance Prose*) do nhồi quá nhiều luật vào cùng lượt viết.
 
-## Trụ cột 1: ba nguyên lý liền mạch ở tầng câu và ý
+## Trụ cột 1: Kiến trúc 2 Pha chống "Lời nguyền của Chỉ dẫn" (*Two-Pass Architecture*, DL-079)
 
-### 1. Old-to-New Baton Pass (Joseph Williams)
-Người xem không đọc lại được; tai chỉ giữ **ý mới ở cuối câu A**. Muốn câu B nối mượt mà không cần `Vì / Nên / Vậy`: **đầu câu B bắt lại đúng ý vừa thả ở cuối câu A (thông tin cũ), cuối câu B mới thả ý mới.**
-- Cuối câu A là «không hợp» thì câu B phải nói tiếp về «hợp hay không», không nhảy sang chuyện khác. Sai mẫu (v11): b01 kết «chắc mình không hợp rồi», b02 mở «Hai tuần mà mình đòi quen liền…», làm rơi gậy.
-- Đầu câu B có thể là đại từ trỏ rõ («con số đó», «chuyện đó») hoặc lặp đúng danh từ cuối câu A. Không đổi chủ đề giữa chừng.
-- **Baton Check (cách kiểm):** gạch dưới 3–4 chữ cuối của mỗi câu, rồi nhìn 3–4 chữ đầu của câu kế. Hai đầu này không chạm nhau (không cùng chủ đề, không có đại từ trỏ) là chỗ đứt.
+Nghiên cứu trên LLM (*Curse of Instructions*) chỉ ra: nhồi ~30 mệnh lệnh cấm/ép vào cùng lượt viết sáng tạo làm phân mảnh sự chú ý của mô hình, biến lời kể thành văn bản cứng nhắc, phẳng cảm xúc. Vì vậy **tách hẳn bước Tìm giọng khỏi bước Kiểm luật**:
 
-### 2. Đề–Thuyết văn nói tiếng Việt (Topic–Comment)
-Tiếng Việt nói trọng **Đề**: đưa cái đang nói tới (Đề) ra đầu câu, có nhịp nghỉ hoặc tiểu từ mềm (`á / thì / là`), rồi mới tới nhận xét hoặc cú lật (Thuyết). Cùng một Đề thì lược chủ ngữ tự nhiên.
-- Ví dụ: «Chuyện chạy bộ á, hai tuần đầu lúc nào cũng nặng như đeo chì.» tự nhiên hơn câu dịch khung Chủ–Vị–Tân kèm liên từ.
-- **Từ miền Nam đời thường, đúng nghĩa.** Cấm ghép ẩn dụ trừu tượng không ai nói («cái nụ thói quen»); cấm từ lệch nghĩa («hụt bữa» nghe thành thiếu bữa ăn, dùng «lỡ bữa / nghỉ bữa»); cấm mở ẩn dụ thứ hai («đường còn dài») đè lên ẩn dụ chính (một hình duy nhất xuyên bài).
+1. **Pha 1 — Pure Voice & Story Pass (Viết bằng Mẫu / Few-Shot Music):**
+   - Chỉ mở: (a) 1 hướng dẫn chuyện đã chọn, (b) hạt giống chuyện + dữ kiện được phép nói trong Fact-lock, (c) nguyên văn lời thoại của 2–3 bản đã duyệt (`a-c01…a-c05`). **Không mở các danh sách cấm lúc này.**
+   - Viết liền một hơi như tin nhắn thoại 70–80s Hiệp gửi bạn thân miền Nam: có ngữ khí mở lời trực diện (*Ngộ ghê ha, Đợt mình mới tập, Hồi trước mình cứ tưởng…*), khẩu ngữ sống động (*dẹp luôn, vô guồng, ngửa người ra, nhẹ hẳn cái đầu*), và nhịp sóng câu (câu kể vừa 15–22 chữ có dấu phẩy xen câu chốt ngắn 6–10 chữ).
+2. **Pha 2 — Surgical Audit & Beat Split (Kiểm vi phẫu):**
+   - Sau khi đã có bản thảo có hồn ở Pha 1, mới rà qua Fact-lock, ngữ nghĩa bản địa, ngân sách âm tiết, rồi cắt bảng Beat đầy đủ (`**nhấn**` mỗi câu, `Ý hình`, `Caption EN` ≤ 8 từ/chunk).
+   - **Nguyên tắc vàng:** chỉ sửa vi phẫu đúng từ chạm cấm hoặc vấp lưỡi; **cấm viết lại thành câu công thức làm mất hồn khẩu ngữ của Pha 1**.
 
-### 3. Nhưng / Vì vậy ở tầng ý (ABT, But–Therefore)
-Hai ý liền nhau chỉ có hai quan hệ hợp lệ: **bẻ ngược (nhưng)** hoặc **hệ quả trực tiếp (vì vậy)**. Cấm kiểu «và rồi… và rồi…» (liệt kê).
-- **Giải tỏa Hook ngay sau bằng chứng.** Vừa thả con số xong thì câu kế trả lời nỗi lo ở Hook («18–254 ngày» → «mới hai tuần oải là bình thường, đâu phải không hợp»). Không đẩy câu trả lời xuống beat cuối (lỗi v11 b04→b07).
-- Ý tiếp theo phải đẻ ra từ chính kết luận vừa có («hơn 8 tháng» → «giữ lâu vậy kiểu gì cũng có hôm nghỉ»), không phải ý đứng riêng.
-- Không dùng chữ nối (nhưng, vì vậy) như lớp sơn. Quan hệ phải có thật; chữ nối chỉ đánh dấu, không tạo mạch (Thought-Flow, DL-077 / v10).
+## Trụ cột 2: Bốn nguyên lý liền mạch ở tầng ý và tiếng Việt nói
 
-## Trụ cột 2: bốn hướng dẫn chuyện (chọn ở Gate 0, xoay vòng)
+### 1. Given–New Conceptual Flow (Joseph Williams) — KHÔNG PHẢI điệp từ đầu–cuối cơ học (*Anadiplosis*)
+Người xem video không đọc lại được; tai chỉ giữ ý vừa mở ở cuối câu trước.
+- **Given–New thật (vô hình, tự nhiên):** câu sau mọc tự nhiên từ tâm lý, tình huống hoặc kỳ vọng mà câu trước vừa gợi (vd *tưởng mình không hợp* → *lúc đó mình quên mất câu bông hoa chưa nở, mới hai tuần mới nhú cái nụ làm sao đòi nhẹ liền*).
+- **CẤM lạm dụng điệp vòng từ vựng (*Mechanical Anadiplosis*, lỗi clip-06 v12):** không chơi trò bắt lặp mặt chữ 3–4 từ cuối câu N vào đầu câu N+1 liên tiếp (`không hợp → Hợp hay không`, `chưa quen → Thói quen`, `còn đó → Công còn đó`). Điệp từ chỉ dùng tối đa **1 lần/clip** nếu thật sự cần nhấn cao trào.
+- **BẮT BUỘC giữ chiều cao trào tăng tiến (*Climactic Order*):** khi nêu dải số liệu, luôn đặt **số nhỏ trước → số lớn gây sốc ở cuối câu** (`nhanh nhất 18 ngày → lâu nhất tới 254 ngày, hơn tám tháng trời lận!`). Tuyệt đối cấm đảo ngược `254 → 18` chỉ để câu sau bắt chữ!
 
-Gate 0 chọn **một** hướng (ghi tên trong bảng khung mạch), không ép mọi clip vào cùng khuôn. Hook ≤ 20 âm tiết, 3 giây rõ nghĩa và ngân sách DL-077 áp cho cả bốn.
+### 2. Đề–Thuyết văn nói tiếng Việt & Ngữ khí mở lời
+- **Ngữ khí giao tiếp ngay câu đầu:** mở miệng phải có chủ thể/ngữ khí trò chuyện (*mình, bạn, Ngộ ghê ha, Có bao giờ bạn…*), không mở bằng câu châm ngôn tỉnh lược cụt chủ ngữ (*"Trồng cây thì chờ mấy tháng, tập thói quen hai tuần đã bỏ"*).
+- **Đề–Thuyết (Topic–Comment):** đưa cái đang nói tới (Đề) ra đầu câu kèm nhịp nghỉ hoặc tiểu từ mềm (`á / thì / là`), đặt nhận xét/cú lật (Thuyết) ra sau.
+- **Từ đời thường miền Nam đúng nghĩa:** cấm ghép ẩn dụ trừu tượng («cái nụ thói quen»), cấm từ lệch nghĩa («hụt bữa» → dùng «lỡ bữa / nghỉ bữa»), cấm mở ẩn dụ thứ hai («đường còn dài») đè lên ẩn dụ chính.
 
-| # | Hướng | Nguồn phương pháp | Khung | Hợp với |
+### 3. Chuỗi nhân quả *Nhưng / Vì vậy* (ABT) & Giải tỏa Hook ngay sau số liệu
+- Hai ý nối nhau phải là **bẻ ngược (nhưng)** hoặc **hệ quả trực tiếp (vì vậy)** ở tầng ý, không liệt kê «và rồi… và rồi…».
+- Vừa đưa xong con số bằng chứng thì **câu kế tiếp giải tỏa ngay nỗi lo ở Hook** (không trì hoãn xuống beat cuối), rồi từ chính kết luận mới («tính bằng tháng») mới tự đẻ ra hệ quả tiếp theo («làm mấy tháng kiểu gì cũng có hôm bận hay mệt phải nghỉ một bữa»).
+
+### 4. Kể chuyện nghiên cứu (*Storytelling the Study*, rút từ 15 video thật `hook-script-study-2026-11-11.md`)
+- Không nhảy thẳng vào *"Năm 2010, nhóm Phillippa Lally..."* kiểu Wikipedia.
+- Dẫn vào bằng **kỳ vọng sai của người kể → cú tỉnh ngộ khi gặp dữ liệu thật**: *"Hồi trước mình cứ tưởng ráng hai ba tuần là vô guồng. Tới lúc đọc nghiên cứu năm 2010 của nhóm Phillippa Lally mới ngửa người ra..."* — biến số liệu thành bước ngoặt cảm xúc của chính câu chuyện.
+
+## Trụ cột 3: Bốn hướng dẫn chuyện chuyên nghiệp (chọn 1 ở Gate 0, xoay vòng)
+
+| # | Hướng | Nguồn phương pháp | Khung dẫn mạch | Hợp với dạng bài |
 |---|---|---|---|---|
-| 1 | **Misconception Reveal** | Veritasium, Kurzgesagt | Gọi thẳng niềm tin sai ai cũng tin → đồng cảm vì sao ai cũng dính → dữ liệu bẻ gãy → thước đo mới + 1 việc làm | Bài có lời đồn phổ biến (vd «21 ngày thành thói quen») |
-| 2 | **Everyday Paradox / Analogy-Led** | Johnny Harris | 1 nghịch lý đời thường ai cũng thấy đúng → nối thẳng vào ẩn dụ/trend (làm xương sống, không dán thêm) → bằng chứng giải thích nghịch lý → 1 việc làm | Bài có câu trend/ẩn dụ mạnh (vd «bông hoa chưa nở») |
-| 3 | **5-Second Moment & Contrast** | Matthew Dicks | Mở ở cảm xúc ngược hẳn cái kết (muốn bỏ cuộc, tự trách) → căng thẳng → khoảnh khắc nhận ra → nhẹ nhõm + hành động | Chuyện thật của Hiệp (`story-bank.md`), giàu đồng cảm |
-| 4 | **Self-Dialogue** | DNA clip-02/03/05 đã duyệt | Hỏi thẳng nỗi đau → nhại lại suy nghĩ quen trong đầu → lật bằng chứng → cách làm gọn + miếng hài nhẹ | Bài cần giải trí, hài 4/5, nhịp nhanh |
-
-Cách chọn nhanh: có lời đồn → #1; có câu trend/hình ẩn dụ sẵn → #2; có chuyện thật đã xác nhận → #3; còn lại mà cần hài nhịp nhanh → #4. Không có hướng nào được phép bỏ qua Fact-lock hoặc luật «1 vấn đề · 1 câu hỏi · 1 ví dụ đại chúng».
-
-## Cách viết với bộ này (thứ tự)
-1. Chọn hướng (1 trong 4) ở Gate 0, ghi trong bảng khung mạch.
-2. Viết đoạn liền một hơi theo hướng đó; áp Baton Pass từng cặp câu, Đề–Thuyết khi đặt câu.
-3. Chạy **Baton Check** và **phép thử bỏ từ nối đầu câu** trước khi cắt beat.
-4. Cắt beat; kiểm Fact-lock, từ lệch nghĩa, ẩn dụ phụ; chạy checker và reviewer.
-
-## Ví dụ làm mẫu: clip-06 hướng #2 (v12)
-`content/clips/clip-06-bong-hoa-chua-no/final/script-v12-draft.md`: hook là nghịch lý (cây chờ cả mấy tháng, thói quen mới hai tuần đã muốn bỏ) → chạy bộ oải → «nụ» làm xương sống cho trend → Lally 18–254 ngày → giải tỏa «không hợp» ngay sau con số → «hơn 8 tháng thì kiểu gì cũng có hôm nghỉ» → việc tối nay → CTA.
+| 1 | **Misconception Reveal** | Veritasium, Kurzgesagt | Gọi thẳng niềm tin sai phổ biến → đồng cảm vì sao ai cũng dính → dữ liệu bẻ gãy (Aha!) → thước đo mới + 1 việc làm | Có lời đồn phổ biến (vd «21 ngày thành thói quen») |
+| 2 | **Everyday Paradox / Analogy-Led** | Johnny Harris | Đặt 1 nghịch lý đời thường có chủ thể trò chuyện → hòa câu trend/ẩn dụ làm xương sống → kỳ vọng sai vs số liệu thật → 1 việc làm | Có câu trend/ẩn dụ mạnh (vd «bông hoa chưa nở») |
+| 3 | **5-Second Moment & Contrast** | Matthew Dicks | Mở ở cảm xúc ngược hẳn cái kết (muốn bỏ cuộc, tự trách) → căng thẳng → khoảnh khắc nhận ra sự thật → nhẹ nhõm + hành động | Chuyện thật của Hiệp (`story-bank.md`), giàu đồng cảm |
+| 4 | **Self-Dialogue** | DNA clip-02/03/05 đã duyệt | Hỏi thẳng nỗi đau → nhại lại suy nghĩ quen trong đầu → lật bằng chứng → cách làm gọn + miếng hài nhẹ | Cần giải trí, hài 4/5, nhịp nhanh |

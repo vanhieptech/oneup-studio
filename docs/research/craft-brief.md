@@ -67,12 +67,14 @@ Hiệp: «kết nối các câu từ vẫn không liền mạch, quá rập khu�
 - Rào giới hạn chỉ 1 vế ngắn: clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết».
 - **Trend** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả «đúng lúc đó mình lướt trúng câu đang trend…» và callback phi thực tế («đánh răng xong thì đăng đại một video»). Câu trend làm gãy mạch: xin ngoại lệ kiểu DL-069 (clip-05), không nhồi gượng.
 
-## Baton Pass và bốn hướng dẫn chuyện (DL-078, Hiệp 27/11, clip-06 v11)
-Chuẩn đầy đủ: `docs/research/storytelling-craft-guide.md`. Tóm tắt dùng khi viết:
-- **Old-to-New Baton Pass (Joseph Williams):** ý mới cuối câu A thành điểm tựa đầu câu B. Kiểm bằng **Baton Check**: 3–4 chữ cuối câu N phải chạm 3–4 chữ đầu câu N+1 (cùng chủ đề hoặc đại từ trỏ rõ). Không để rơi nỗi lo ở Hook («không hợp») rồi nhảy sang ý khác.
-- **Đề–Thuyết văn nói:** Đề (chuyện đang nói) ra đầu câu, nhịp nghỉ hoặc `á / thì / là`, Thuyết ra sau. Từ miền Nam đời thường đúng nghĩa. CẤM ghép ẩn dụ trừu tượng («cái nụ thói quen»), CẤM từ lệch nghĩa («hụt bữa» → «lỡ bữa / nghỉ bữa»), CẤM mở ẩn dụ thứ hai («đường còn dài») đè lên ẩn dụ chính.
-- **Nhưng / Vì vậy (ABT):** hai ý liền nhau là bẻ ngược hoặc hệ quả trực tiếp, không liệt kê «và rồi». **Giải tỏa nỗi lo ở Hook ngay sau bằng chứng**, rồi ý kế đẻ ra từ chính kết luận đó.
-- **Chọn 1 trong 4 hướng ở Gate 0:** (1) Misconception Reveal (lời đồn) · (2) Everyday Paradox / Analogy-Led (câu trend, ẩn dụ làm xương sống) · (3) 5-Second Moment & Contrast (chuyện thật) · (4) Self-Dialogue (hài, nhịp nhanh).
+## Kiến trúc 2 Pha & Given–New Flow (DL-078 · DL-079)
+Chuẩn đầy đủ: `docs/research/storytelling-craft-guide.md`.
+- **Tách 2 Pha chống Prompt Bloat (DL-079):** **Pha 1 (Pure Voice)** viết liền một hơi như tin nhắn thoại gửi bạn thân, học nhạc điệu từ 2–3 mẫu duyệt (`a-c01…a-c05`), có chủ thể/ngữ khí trò chuyện ngay câu đầu (*Ngộ ghê ha, Đợt mình mới…*, không mở bằng châm ngôn cụt chủ ngữ) và nhịp sóng câu ngắn–dài. **Pha 2 (Surgical Audit)** mới kiểm Fact-lock, ngân sách âm tiết, tách Beat có đánh dấu `**nhấn**` mỗi câu — chỉ sửa vi phẫu chỗ chạm cấm, cấm gọt mất hồn khẩu ngữ Pha 1.
+- **Given–New Conceptual Flow (KHÔNG điệp từ cơ học):** câu sau mọc tự nhiên từ tâm lý/tình huống cuối câu trước; CẤM trò lặp 3–4 chữ cuối câu N vào đầu câu N+1 liên tiếp (`không hợp → Hợp hay không`, `còn đó → Công còn đó`); **BẮT BUỘC giữ chiều tăng tiến số liệu (*Climactic Order*: số nhỏ trước → số lớn gây bất ngờ ở cuối câu, vd `18 ngày → 254 ngày, hơn 8 tháng!`)**.
+- **Storytelling the Study:** dẫn vào nghiên cứu qua **kỳ vọng sai của người kể → cú tỉnh ngộ** (*"Hồi trước mình cứ tưởng… Tới lúc đọc nghiên cứu năm 2010 của… mới ngửa người ra"*), không vào thẳng kiểu Wikipedia.
+- **Đề–Thuyết & Một ẩn dụ duy nhất:** Đề ra đầu câu (`á / thì / là`), Thuyết ra sau; CẤM ghép ẩn dụ trừu tượng («cái nụ thói quen»), CẤM từ lệch nghĩa («hụt bữa» → «lỡ bữa / nghỉ bữa»), CẤM mở ẩn dụ thứ hai («đường còn dài»).
+- **Nhưng / Vì vậy (ABT):** giải tỏa nỗi lo ở Hook **ngay sau số liệu**, rồi ý kế tiếp đẻ ra từ chính kết luận đó.
+- **Chọn 1 trong 4 hướng ở Gate 0:** (1) Misconception Reveal · (2) Everyday Paradox / Analogy-Led · (3) 5-Second Moment & Contrast · (4) Self-Dialogue.
 
 ## D. Dẫn chứng
 - **≤ 2 câu, ≤ 35 âm tiết:** chỉ tác giả/năm + kết luận cốt lõi (clip-01 23 âm tiết, clip-04 27 âm tiết). Cỡ mẫu, số tuần, món phụ để trong Fact-lock, không đọc ra.

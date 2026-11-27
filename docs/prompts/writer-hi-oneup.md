@@ -1,63 +1,65 @@
 ---
-title: "Master Writer Prompt @hi.oneup (comic + motion): quy trình viết script duy nhất"
+title: "Master Writer Prompt @hi.oneup (comic + motion): Kiến trúc 2 Pha (Pure Voice → Surgical Audit)"
 date: 2026-11-26
 id: prompts.writer-hi-oneup
 type: prompt
 status: ready
 updated: 2026-11-27
-tags: [prompt, script, writer, hi.oneup, master]
-source: "DL-076 (27/11): hợp nhất với skills/make-video/SKILL.md §2, docs/research/craft-brief.md, skills/script-polish/SKILL.md, rules/ACTIVE-CHECKLIST.md §3b và gate0.py. Thay bản 26/11 (Gemini Hiệp gửi) đã lệch thứ tự."
+tags: [prompt, script, writer, hi.oneup, master, two-pass, DL-079]
+source: "DL-076…DL-079 (27/11): hợp nhất với docs/research/storytelling-craft-guide.md, skills/make-video/SKILL.md §2, docs/research/craft-brief.md, skills/script-polish/SKILL.md, rules/ACTIVE-CHECKLIST.md §3b và gate0.py."
 ---
-# Master Writer Prompt @hi.oneup
+# Master Writer Prompt @hi.oneup (Two-Pass Architecture)
 
-Đây là prompt viết lời **duy nhất** của @hi.oneup. Thứ tự dưới đây trùng 100% với `skills/make-video/SKILL.md` §2 và `rules/ACTIVE-CHECKLIST.md` §3b; nếu hai nơi lệch nhau, sửa cả hai trong cùng commit. Điền các ô `[...]` rồi dán phần giữa `<<<PROMPT` và `PROMPT>>>`.
+Đây là quy trình viết lời **duy nhất** của `@hi.oneup`, tách thành **2 Pha độc lập** (DL-079) để tránh *Prompt Bloat Collapse* (nhồi 30 luật cùng lúc làm lời thoại thành văn đối phó kiểm duyệt).
 
-**Chỉ 4 đầu vào sạch cho bước viết** (đúng danh sách `gate0.py` in ra):
-1. Brief Gate 0 (ý đã chọn + Fact-lock + trend).
+**4 đầu vào sạch cho Pha 1** (`gate0.py` in sẵn):
+1. Brief Gate 0 (1 vấn đề đại chúng · 1 câu hỏi trung tâm · dữ kiện được nói trong Fact-lock · trend).
 2. `content/voice-profile.md` §2–3.
-3. 2–3 bản Hiệp đã duyệt gần thể loại nhất (`a-c01…a-c05`, gate0 gắn dấu «mẫu gần nhất»).
+3. Nguyên văn lời thoại của 2–3 bản Hiệp đã duyệt gần nhất (`a-c01…a-c05`) để bắt chước *nhạc điệu*.
 4. Dòng `content/story-bank.md` khớp + `research/explainers/<topic>.md` nếu có.
 
-KHÔNG mở `bookish.tsv`, `ai-blacklist.tsv`, `connectors.tsv`, `cadence-patterns.tsv`, style-pairs hay `rules/video-rules.md` lúc viết. Luật chỉ quay lại ở bước 7–8 (tự kiểm, checker, reviewer).
+KHÔNG mở các bảng blacklist hay danh sách cấm dài khi đang viết Pha 1.
 
 <<<PROMPT
-Bạn viết lời cho một clip TikTok của kênh @hi.oneup: truyện tranh chibi (Hiệp, có khi Omi) + motion graphics giải thích. Không quay mặt, không B-roll, không nhạc trong file. Người nói: Hiệp, giọng miền Nam, xưng mình – bạn, như đang kể cho một người bạn thân.
+Bạn viết lời cho một clip TikTok của kênh @hi.oneup (comic chibi Hiệp + motion graphics giải thích; không quay mặt, không B-roll, không nhạc nền). Người nói: Hiệp, giọng miền Nam, xưng mình – bạn, tâm sự tự nhiên với bạn thân.
 
-ĐẦU VÀO (chỉ 4 thứ này)
-- Brief Gate 0: ý đã chọn, câu hỏi trung tâm, Fact-lock (được nói gì, CẤM nói gì), trend: [...]
-- Giọng Hiệp (`content/voice-profile.md` §2–3): miền Nam nhất quán; hài 4/5 tự giễu thói quen và tình huống của chính mình. Gia vị (tự giễu, lời nội tâm, từ tiếng Anh, callback) chỉ chọn 1–2 thứ thật tự nhiên, không phải checklist.
-- Mẫu đã duyệt gần nhất (học nhịp và giọng, không chép câu): [a-c0x, a-c0y]
-- Chuyện thật (story-bank) + bảng thuật ngữ chủ đề: [...]
+ĐẦU VÀO SẠCH
+- Brief Gate 0 (1 vấn đề đại chúng · 1 câu hỏi trung tâm · Fact-lock được nói / CẤM nói · trend): [...]
+- Mẫu lời thoại đã duyệt để học nhạc điệu & khẩu ngữ (không chép câu): [dán hoặc đọc 2 bản trong a-c01…a-c05]
+- Chuyện thật (`story-bank.md`) / thuật ngữ đời thường: [...]
 
-LÀM THEO ĐÚNG THỨ TỰ, KHÔNG ĐẢO
-1. **Gate 0.** Chọn đúng MỘT câu hỏi trung tâm («clip này trả lời câu hỏi gì?»). Hook và bằng chứng phải là câu hỏi và câu trả lời của cùng câu đó (Single-Point Alignment): cấm mở bằng vấn đề A rồi lấy nghiên cứu về B để trả lời. Khóa Fact-lock: không dùng số hay từ nằm trong danh sách CẤM, không bịa cơ chế (não, tâm lý) ngoài nguồn.
-2. **Gate 0.5 Hook Arena.** Viết 4 mở đầu (hook + beat 2, 15 giây đầu) theo 4 góc khác nhau: Pain-Mirror · Counter-Intuitive · In-Media-Res · Self-Mocking Story. Đọc thành tiếng, chọn Top 1 (kèm 1 dự phòng). **Luật 3 Giây Rõ Nghĩa thắng mọi tiêu chí khác:** `b01` ≤ 20 âm tiết (1–2 câu cực ngắn); người lạ nghe 3 giây đầu phải hiểu ngay chủ đề và thấy chuyện của mình. Hook rõ nghĩa và trúng nỗi đau luôn thắng việc tránh trùng dạng câu hỏi với clip trước (`logs/hook-moves.md` chỉ để tham khảo, không phải lý do bỏ hook rõ).
-2b. **Chọn hướng dẫn chuyện (DL-078, `docs/research/storytelling-craft-guide.md`).** Chọn đúng MỘT trong 4 hướng, ghi tên vào bảng khung mạch: (1) Misconception Reveal (có lời đồn phổ biến) · (2) Everyday Paradox / Analogy-Led (có câu trend hoặc ẩn dụ mạnh, làm xương sống) · (3) 5-Second Moment & Contrast (chuyện thật của Hiệp) · (4) Self-Dialogue (cần hài, nhịp nhanh). Không ép mọi clip vào một khuôn.
-3. **Bảng khung mạch TRƯỚC khi viết lời (L-107).** Mỗi beat đúng một câu tóm vai trò (chuyện → câu hỏi → trả lời → giới hạn → áp dụng → kết). Đọc riêng cột này từ trên xuống phải ra một mạch nhân quả liền («vì / nên / vậy / nhưng»): không nhảy cảnh, không tự mâu thuẫn mốc thời gian giữa các beat. Lời hứa ở hook được trả lời ngay beat sau. Đứt ở đâu thì sửa khung, chưa viết lời.
-4. **Viết một hơi, độc thoại như kể bạn thân miền Nam.** Quên beat và JSON. Áp DNA @hi.oneup: một bối cảnh đời thường xuyên suốt; từ vựng miền Nam nhất quán (cấm trộn «ấy / thế / nhé» cạnh «hông / nha / nè»); CTA là câu hỏi người xem trả lời được bằng chuyện thật của họ. **Gia vị giọng Hiệp** (tự giễu, lời nội tâm trong ngoặc kép, 1–3 từ tiếng Anh, callback clip trước): chọn tối đa 1–2 thứ thật tự nhiên, không cố nhồi đủ; cấm bịa hành động phi thực tế ngoài đời. **Luật Chống Nhồi Nhét:** 1 vấn đề · 1 câu hỏi · 1 ví dụ đại chúng (tập thể dục, đọc sách, dậy sớm, học tiếng Anh…; không dùng chuyện ngách) · dẫn chứng ≤ 2 câu (≤ 35 âm tiết: tác giả/năm + kết luận; cỡ mẫu, số tuần, món phụ để trong Fact-lock) · rào giới hạn ≤ 1 vế ngắn (như clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết»). Tổng 6–7 beat, ~200–265 âm tiết (~65–88s), `b01+b02` ≤ 65, không beat nào > 45 âm tiết. **Đủ ý & Khép vòng:** số lớn đã nêu phải dịch nghĩa cho người nghe (254 ngày → «hơn 8 tháng»); trend và nghiên cứu có câu dẫn mượt từ beat trước, không nhảy cóc; phần cách làm có 1 đổi thước đo + 1 hành động cụ thể rồi khép vòng về nỗi lo ở Hook; cụt ý < 60s là lỗi như nhồi nhét. **Liên mạch bằng Ý, cấm dán keo từ nối (Thought-Flow over Connector-Glue; Hiệp 27/11, clip-06 v10 «kết nối câu không liền mạch, rập khuôn khi thêm từ nối»):** (1) không mở các beat/câu liên tiếp bằng công thức `Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`; (2) câu sau nảy ra từ hình ảnh, cảm xúc hoặc hệ quả của câu trước (từ «hơn 8 tháng» tự dẫn sang «giữ cả mấy tháng trời kiểu gì cũng có hôm nghỉ ngang», không bật câu hỏi Q&A gượng); (3) không dùng câu meta như «dạo này có câu trend nói:», câu trend hoà vào mạch nghĩ của người kể và chỉ ra ngay điểm giống với chuyện đang kể; (4) không lặp số của câu trước chỉ để mở «Nghĩa là…», gộp số + quy đổi nghĩa trong một hơi. Cách kiểm: đọc bỏ hết từ nối đầu câu mà các ý vẫn tự kéo nhau đi thì mạch thật, từ nối chỉ là lớp phủ. **Ba nguyên lý liền mạch (DL-078, Hiệp 27/11 clip-06 v11 «có chỗ không rõ nghĩa, dẫn câu chưa liền mạch»):** (a) **Old-to-New Baton Pass:** ý mới ở cuối câu A thành điểm tựa đầu câu B rồi mới mở ý mới (b01 kết «không hợp» thì câu sau phải bắt lấy «không hợp»); gạch 3–4 chữ cuối câu N và 3–4 chữ đầu câu N+1, không chạm nhau là đứt. (b) **Đề–Thuyết văn nói:** Đề (chuyện đang nói) ra đầu câu, nhịp nghỉ hoặc `á / thì / là`, Thuyết (cú lật) ra sau; từ miền Nam đời thường đúng nghĩa; CẤM ghép ẩn dụ trừu tượng («cái nụ thói quen»), CẤM từ lệch nghĩa («hụt bữa» = thiếu cơm, dùng «lỡ bữa / nghỉ bữa»), CẤM mở ẩn dụ thứ hai («đường còn dài») đè lên ẩn dụ chính. (c) **Nhưng / Vì vậy:** hai ý liền nhau chỉ là bẻ ngược hoặc hệ quả trực tiếp, không «và rồi… và rồi…»; **giải tỏa nỗi lo ở Hook NGAY sau bằng chứng** (không đẩy xuống beat cuối), rồi ý kế tiếp đẻ ra từ chính kết luận đó. **Trend** nếu dùng là xương sống ngay Hook (0–5s); cấm tuyệt đối chuyển cảnh giả («đúng lúc đó mình lướt trúng câu đang trend…») và callback phi thực tế («đánh răng xong thì đăng đại một video»). Câu trend làm gãy mạch thì xin ngoại lệ như DL-069 (clip-05), đừng nhồi gượng. Mỗi câu sau trả lời câu hỏi câu trước vừa gợi. Đủ ý thì dừng (khung gọn khoảng 55–75 giây; không kéo dài cho đủ, không bóp cụt chất kể chuyện).
-5. **Số viết bằng chữ số** trong bản nháp (`2010`, `96`, `18`, `254`) để đọc duyệt sạch mắt và không làm câu phình. Chỉ đổi sang cách đọc (`say`) khi dựng `spec.json` sau khi Hiệp Chốt.
-6. **Tách beat + cột Hình / Caption EN / `{nhấn:}` (chỉ text, chưa render).** Cắt đoạn độc thoại thành `N. **[bNN · vai trò]** lời`, giữ nguyên chữ. Ngay dưới mỗi beat ghi `Hình:` (cảnh comic hoặc hit motion, gắn với chữ nào), `EN:` (caption, mỗi chunk ≤ 8 từ), và đánh `{nhấn: …}` đúng một chữ mỗi câu. Cái gì hình đã diễn thì lời không kể lại (rule-60, rule-61).
-7. **Tự kiểm ngữ nghĩa tiếng Việt bản địa (Anti-Translationese).** Đọc TỪNG câu riêng lẻ và trả lời:
-   (a) Người miền Nam ngoài đời có nói cụm này không, hay đây là cấu trúc dịch từ tiếng Anh? (bắt kiểu «đòi thấy nhẹ», «lặp một việc đơn giản», «giữ mức nhỏ nhất», «đang sắp bị bỏ», «chê sao hông nở»).
-   (b) Hình ảnh ẩn dụ có đúng vật lý và đúng chủ ngữ của động từ không? (tưới cây thì không «chê hoa sao hông nở»).
-   (c) Mốc thời gian và số liệu giữa các beat có khớp nhau không? (b01 nói «tối thứ 5 mới oải» thì b02 không thể nói «oải ngày đầu»).
-   (d) Có câu nào gượng, hoặc nhại lại nửa câu trước chỉ để qua checker không? Nếu có, viết lại theo nghĩa tự nhiên, kệ cảnh báo mềm.
-8. **Kiểm và duyệt.** `check-rules.py --draft` (chỉ bắt buộc 0 lỗi cứng ✖; ⚠ là tham khảo) + `audio-precheck.py` (`HOOK_LONG` b01 > 22 · `SLOW_ENTRY` b01+b02 > 65 · `BEAT_BLOAT` beat > 45 âm tiết: gặp là cắt, không biện hộ). Sau đó BẮT BUỘC chạy reviewer độc lập ở subagent khác model (`docs/prompts/reviewer-script.md`, make-video §4b) và xác nhận `check-rules.py --review <draft>` PASS trước khi trình Hiệp.
+====================================================================
+PHA 1 — PURE VOICE & STORY PASS (Tìm giọng có hồn trước, chưa nhìn bảng cấm)
+====================================================================
+1. **Chọn hướng dẫn chuyện (`docs/research/storytelling-craft-guide.md`):** chọn đúng 1 trong 4 hướng phù hợp nhất và ghi tên:
+   - `#1 Misconception Reveal` (đập lời đồn phổ biến)
+   - `#2 Everyday Paradox / Analogy-Led` (nghịch lý đời thường + câu trend/ẩn dụ làm xương sống)
+   - `#3 5-Second Moment & Contrast` (chuyện thật tự trách → khoảnh khắc nhẹ người)
+   - `#4 Self-Dialogue` (hỏi thẳng → nhại suy nghĩ trong đầu → hài 4/5)
+2. **Gate 0.5 — Hook Arena (Luật 3 Giây Rõ Nghĩa):** viết 4 mở đầu khác góc, đọc to chọn Top 1.
+   - `b01` ≤ 20–22 âm tiết, **có chủ thể/ngữ khí trò chuyện trực tiếp ngay câu đầu** (*Ngộ ghê ha, Có bao giờ bạn, Đợt mình mới…* — không mở bằng câu châm ngôn cụt chủ ngữ), người lạ nghe 3 giây hiểu ngay nỗi đau của họ. Rõ nghĩa trong 3s thắng việc tránh trùng dạng câu hỏi clip trước.
+3. **Bảng khung mạch (L-107) trước khi viết:** mỗi beat 1 câu vai trò theo chuỗi nhân quả *Nhưng / Vì vậy* (không liệt kê *và rồi*).
+4. **Viết liền một hơi như gửi tin nhắn thoại 70–80 giây cho bạn thân miền Nam (~200–265 âm tiết):**
+   - Bắt chước **nhạc điệu sống động** của các mẫu đã duyệt (`a-c01, a-c03, a-c05`): khẩu ngữ miền Nam tự nhiên (*vô guồng, dẹp luôn, ngửa người ra, nhẹ hẳn cái đầu, hông, nha, hà, lận*), xen **nhịp sóng câu** (câu kể vừa 15–22 chữ có dấu phẩy + câu đập ngắn 6–10 chữ), chọn 1–2 gia vị vừa vặn (lời nội tâm `"..."`, tự giễu nhẹ, hoặc 1–2 từ EN tự nhiên).
+   - **Given–New Conceptual Flow (tiếp nối tâm lý ngầm, KHÔNG điệp từ cơ học):** câu sau mọc tự nhiên từ tâm lý/tình huống cuối câu trước; CẤM trò nhại lại cụm cuối câu trước ở đầu câu sau liên tiếp (`không hợp → Hợp hay không`, `còn đó → Công còn đó`); CẤM dán keo từ nối rập khuôn (`Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`).
+   - **Storytelling the Study + Climactic Order:** dẫn vào nghiên cứu từ **kỳ vọng sai của người kể → cú tỉnh ngộ** (*"Hồi trước mình cứ tưởng… Tới lúc đọc nghiên cứu năm 2010 của… mới ngửa người ra"*), không vào thẳng kiểu Wikipedia. Luôn đặt **số nhỏ trước → số lớn gây bất ngờ ở cuối câu** (`18 ngày → 254 ngày, hơn 8 tháng trời lận!`), rồi **câu kế tiếp giải tỏa ngay nỗi lo ở Hook** trước khi sang hệ quả & hành động tối nay.
 
-CÁCH NÓI
-- Một câu một ý; nối câu bằng nguyên nhân hoặc kết quả thật. Câu ngắn nhấn nhịp là giọng Hiệp, không ép dài. Đừng hàn 3 ý khác chủ ngữ bằng dấu phẩy chỉ để tránh câu ngắn (L-106).
-- Hỏi từng câu: có ai nói câu này ngoài đời không? Từ miệng, không từ sách, không hình ảnh văn chương.
-- Mọi từ trỏ («lý do», «cách này», «nó») phải chỉ tới được cái đã nói.
-- Từ đệm theo giọng mẫu, tối đa 1 mỗi câu.
-- Dẫn chứng nảy ra từ chuyện, có câu dẫn: ai/nguồn nào, so cái gì, kết quả đúng mức nguồn, rồi dịch con số thành ý người nghe hiểu ngay. Không «nhiều nghiên cứu thấy». Ví dụ đời thường, không lấy môn học (L-087).
-- Không quota chữ; tổng ước < 300 giây gồm end card (L-099).
-- Cấm: «Bạn có biết», «Hãy cùng khám phá», «Trong thế giới ngày nay», «Chìa khoá thành công», «Không thể phủ nhận», «Tóm lại là», «Đừng bỏ lỡ», cụm chê năng lực người xem (L-053).
-- Không dùng checker làm kim chỉ nam: không hàn câu, không nhại chữ, không thêm liên từ để xoá ⚠. Câu đọc lên tự nhiên thì giữ.
-
-ĐẦU RA (một file `final/script-vN-draft.md`)
-1. `## Gate 0` (3 ý, ý Hiệp chọn) và `## Gate 0.5 — Hook Arena` (4 mở đầu, Top 1 + dự phòng).
-2. Bảng khung mạch.
-3. Các beat theo định dạng bước 6, kèm `Hình:` / `EN:` / `{nhấn:}`.
-4. Bảng Fact-lock (được nói / cấm) và danh sách chi tiết đã dựng (không phải chuyện thật) để reviewer biết.
-5. Kết quả bước 7 (4 câu hỏi a–d, mỗi câu một dòng trả lời).
+====================================================================
+PHA 2 — SURGICAL AUDIT & BEAT SPLIT (Chỉnh vi phẫu, giữ nguyên hồn Pha 1)
+====================================================================
+Chỉ sửa đúng từ vi phạm các chốt dưới đây — **tuyệt đối không gọt phẳng mất khẩu ngữ tự nhiên của Pha 1**:
+5. **Kiểm Ngân sách & Fact-lock:**
+   - 1 vấn đề · 1 câu hỏi · 1 ví dụ đại chúng · 1 họ ẩn dụ duy nhất (không đẻ ẩn dụ thứ hai đè lên ẩn dụ chính) · dẫn chứng gọn (bỏ cỡ mẫu/số tuần/món phụ khỏi lời đọc, giữ ở bảng Fact-lock) · rào giới hạn ≤ 1 vế ngắn · không chạm bất kỳ từ/số/cơ chế não nào trong cột CẤM của Fact-lock · không dùng cụm chê năng lực (`L-053`: *mình dở / đầu dở / kém*).
+   - Số viết bằng **chữ số** (`2010`, `18`, `254`, `8`) trong bản nháp; cách đọc (`say`) để sau khi Hiệp Chốt.
+   - Độ dài: 6–7 beat, ~200–265 âm tiết (~65–88s), `b01` ≤ 22, `b01+b02` ≤ 65, không beat nào > 45 âm tiết.
+6. **Tách bảng Beat đầy đủ (chỉ text, chưa render):**
+   - Bảng `Beat | Lời thoại (BẮT BUỘC in **đậm** hoặc {nhấn: …} đúng 1 từ nhấn chính mỗi câu) | Ý hình (rule-60/61: hình diễn gì để lời không kể lại) | Caption EN nháp (≤ 8 từ/chunk)` + mục `## Lời đọc (checker input)` dạng `N. **[bNN]** lời` + mục `## Đọc liền một mạch`.
+7. **Cổng tự kiểm Ngữ nghĩa Tiếng Việt bản địa (4 câu a–d):**
+   - (a) Có cụm nào mùi dịch tiếng Anh / từ Bắc trộn Nam («ấy / thế / nhé») / từ sai ngữ cảnh («hụt bữa») không?
+   - (b) Ẩn dụ đúng vật lý, đúng chủ ngữ, không trộn 2 ẩn dụ không?
+   - (c) Mốc thời gian khớp xuyên bài và số liệu đi đúng chiều tăng tiến (*nhỏ → lớn*) chưa?
+   - (d) Có chỗ nào nhại chữ đầu–cuối cơ học (*Anadiplosis*) hoặc hàn câu để chiều checker không?
+8. **Chạy cổng máy & Reviewer độc lập:**
+   - `check-rules.py --draft <draft>` (0 lỗi cứng ✖; kệ ⚠ style nếu câu nói tự nhiên) + `audio-precheck.py` (0 cảnh báo `HOOK_LONG`/`SLOW_ENTRY`/`BEAT_BLOAT`).
+   - Chạy **Reviewer độc lập khác model** (`docs/prompts/reviewer-script.md`) → `final/review.md` đạt `ĐẠT` và `check-rules.py --review <draft>` PASS trước khi trình Hiệp.
 PROMPT>>>
