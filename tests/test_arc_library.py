@@ -91,3 +91,21 @@ def test_best_arc_prioritizes_highest_win_rate():
         {"id": "ARC-003", "seen": 9, "uses": 0, "wins": 0, "win_rate": None},
     ]
     assert A.best_arc(arcs)["id"] == "ARC-002"
+
+
+def test_core_arc_id_does_not_break_numbering_or_published_sync(tmp_path):
+    import json
+    p = tmp_path / "index.json"
+    p.write_text(json.dumps({"arcs": [{"id": "ONEUP-CORE-ARC", "skeleton": ["[a]"], "beats": [], "evidence": []},
+                                      {"id": "ARC-004", "skeleton": ["[b] khác hẳn"], "beats": [], "evidence": []}], "ideas": []}), encoding="utf-8")
+    import importlib
+    A = importlib.import_module("arc_library") if "arc_library" in globals().get("sys", __import__("sys")).modules else None
+    if A is None:
+        import sys, os
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "pipeline"))
+        A = importlib.import_module("arc_library")
+    aid, new = A.upsert_arc({"skeleton": ["hoàn toàn mới về chủ đề đồ ăn vặt"], "beats": []}, {"source": "x://1"}, path=p)
+    assert new and aid == "ARC-005"
+    pub = tmp_path / "pub"; pub.mkdir()
+    (pub / "a.md").write_text("| clip | ARC | views |\n|---|---|---|\n| clip-06 | ONEUP-CORE-ARC | 20000 |\n", encoding="utf-8")
+    assert A.read_published(pub)[0]["arc"] == "ONEUP-CORE-ARC"

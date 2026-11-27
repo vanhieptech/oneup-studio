@@ -99,7 +99,7 @@ def upsert_arc(arc, evidence, path=None, threshold=THRESHOLD):
         if not tgt.get("hook_mechanism") and arc.get("hook_mechanism"): tgt["hook_mechanism"] = arc["hook_mechanism"]
         if not tgt.get("name") and arc.get("name"): tgt["name"] = arc["name"]
     else:
-        n = max([int(x["id"].split("-")[1]) for x in lib["arcs"]] or [0]) + 1
+        n = max([int(m.group(1)) for x in lib["arcs"] if (m := re.fullmatch(r"ARC-(\d+)", x["id"]))] or [0]) + 1
         tgt = {"id": f"ARC-{n:03d}", "name": arc.get("name", ""), "skeleton": arc["skeleton"], "beats": arc.get("beats", []),
                "hook_mechanism": arc.get("hook_mechanism", ""), "uses": 0, "wins": 0, "win_rate": None, "evidence": []}
         lib["arcs"].append(tgt); new = True
@@ -199,7 +199,7 @@ def read_published(published_dir=None):
                 headers = [_norm_header(c) for c in cells]
                 continue
             row = {headers[i]: (cells[i] if i < len(cells) else "") for i in range(len(headers))}
-            arc_m = re.search(r"\b(ARC-\d{3})\b", row.get("arc", ""), re.I)
+            arc_m = re.search(r"\b(ARC-\d{3}|ONEUP-CORE-ARC)\b", row.get("arc", ""), re.I)
             if not arc_m:
                 continue
             views_7d = _parse_num(row.get("views_7d"))
@@ -226,7 +226,7 @@ def read_published(published_dir=None):
         for it in items:
             if not isinstance(it, dict):
                 continue
-            arc_m = re.search(r"\b(ARC-\d{3})\b", str(it.get("arc") or ""), re.I)
+            arc_m = re.search(r"\b(ARC-\d{3}|ONEUP-CORE-ARC)\b", str(it.get("arc") or ""), re.I)
             if not arc_m:
                 continue
             views = _parse_num(it.get("views_7d") if it.get("views_7d") is not None else it.get("views") if it.get("views") is not None else it.get("views_24h"))
@@ -325,7 +325,7 @@ def render_patterns(path=None, patterns=None):
          "| id | tên | khung xương | beat (vai trò · giây · chức năng giữ chân) | cơ chế hook | seen | uses | wins | win_rate | bằng chứng |", "|---|---|---|---|---|---|---|---|---|---|"]
     for a in lib["arcs"]:
         sk = "<br>".join(f"{i}. {_cell(x)}" for i, x in enumerate(a.get("skeleton", []), 1))
-        bt = "<br>".join(f"{_cell(b.get('role'))} · {_cell(b.get('seconds'))}s · {_cell(b.get('function'))}" for b in a.get("beats", [])) or "chưa có (teardown cũ, chạy lại để có beat)"
+        bt = "<br>".join(f"{_cell(b.get('role'))} · {_cell(b.get('seconds'))}s" + (f" · ~{b['syllables'][0]}–{b['syllables'][1]} âm tiết" if b.get("syllables") else "") + f" · {_cell(b.get('function'))}" for b in a.get("beats", [])) or "chưa có (teardown cũ, chạy lại để có beat)"
         ev = "<br>".join(f"{_cell(e.get('creator') or e.get('source'))}" + (f" {e['ratio']}x" if e.get("ratio") else "") +
                          (f" ([teardown]({_rel(e['teardown'], p)}))" if e.get("teardown") else "") for e in a.get("evidence", []))
         wr = f"{a['win_rate']:.0%}" if a.get("win_rate") is not None else "—"

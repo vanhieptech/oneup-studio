@@ -47,3 +47,30 @@ def test_brief_prioritizes_highest_win_rate_arc_when_arc_omitted():
     with mock.patch.object(g.ARC, "load", lambda *a, **k: fake_lib):
         out = g.brief("xyzzy unmatched topic", "hi")
     assert "**ARC-002**" in out and "win_rate: 100% (3/3)" in out
+
+
+# --- WS1 (27/11): ONEUP-CORE-ARC is the @hi.oneup default; approved-clip rhythm is loaded -------------------------
+def test_hi_default_is_core_arc_with_55_75s_window():
+    out = g.brief("xyzzy unmatched topic", "hi")
+    assert "**ONEUP-CORE-ARC**" in out and "180–250 âm tiết" in out
+    assert "gợi ý **65s**" in out
+    assert "gợi ý **75s**" in g.brief("xyzzy", "hi", length=150)  # capped to the core window
+
+
+def test_extended_lifts_core_window_to_120_180s():
+    out = g.brief("xyzzy", "hi", length=150, extended=True)
+    assert "gợi ý **150s**" in out and "--extended" in out
+
+
+def test_explicit_arc_and_vht_do_not_use_core_arc():
+    assert "**ARC-002**" in g.brief("xyzzy", "hi", arc_id="ARC-002")
+    assert "ONEUP-CORE-ARC" not in g.brief("xyzzy", "vht")
+
+
+def test_approved_structure_reads_both_reference_clips():
+    st = g.approved_structure()
+    assert set(st) == {"a-c01", "a-c04"}
+    assert st["a-c01"]["n"] == 12 and st["a-c04"]["n"] == 8      # first beat table only; b12 two lines merged
+    assert all(150 <= s["total_syl"] <= 250 for s in st.values())
+    out = g.brief("xyzzy", "hi")
+    assert "Nhịp thực tế của 2 clip đã duyệt" in out and "a-c01:" in out and "a-c04:" in out

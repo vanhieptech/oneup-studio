@@ -1,7 +1,7 @@
 ---
-id: clip-06.script-v5-draft
+id: clip-06.script-v5-monologue-draft
 type: script
-status: draft
+status: archived
 updated: 2026-11-27
 tags: [script, clip-06, dark, week-1, howtolivebetter-4.12, draft]
 source: "oneup-studio · HTB 4.12 · Lally et al. 2010 doi:10.1002/ejsp.674 · factcheck-trends-2026-10-31.md mục clip-06 · trend bông hoa chưa nở"
@@ -12,7 +12,7 @@ item: HTB 4.12 (thói quen tính theo tháng; lỡ một lượt không kéo v�
 theme: DARK
 week: 1
 format: story_metaphor
-status_note: "DRAFT — chờ Hiệp duyệt Gate 1. Chưa Chốt. Không giọng, không ảnh, không render (L-098)."
+status_note: "ARCHIVED 27/11: bản độc thoại tâm tình bị dài dòng, nhồi liên từ, ghép 4 bối cảnh (giày → cái cây → nghiên cứu → úp chén). Thay bằng final/script-v6-draft.md (ONEUP-CORE-ARC)."
 fact_lock: research/fact-packages/factcheck-trends-2026-10-31.md
 hook_pattern: P10
 trend_id: vtc-ar1048255-bong-hoa-chua-no
@@ -22,7 +22,7 @@ example_evidence: research/trends/2026-10-31/trend-clip-06-bong-hoa-chua-no.md
 supersedes: content/clips/clip-06-bong-hoa-chua-no/archive/script-v5-draft.md
 ---
 
-# clip-06 v5 — DRAFT, chờ Hiệp duyệt Gate 1
+# clip-06 v5 — ARCHIVED (thay bằng v6)
 
 Một ý, kể một mạch, rồi cắt lời giải thích lại. Bản dài 437 âm tiết nằm ở `archive/script-v5-draft.md`. Cảnh đôi giày là cảnh kể cho clip này, chưa có trong story-bank. Chưa Chốt. Chưa đo audio.
 

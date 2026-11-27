@@ -5,7 +5,7 @@ description: >-
   to the creator for approval: remove AI-writing tells with the vendored humanizer
   skill, adapt to spoken Vietnamese, and match the creator's voice profile, without
   changing any fact, number or citation.
-version: "1.5.0"
+version: "1.6.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -40,8 +40,16 @@ This polish pass runs after the monologue exists and after the 25–30% cut. It 
 2. Do not add a sentence so a beat has an "anchor", a connector, or a number. A physical detail stays only when the story was already using it.
 3. `check-rules.py --draft` at the end is for hard errors (H1–H4, and any ✖ the draft gate still raises). `check-rules.py --audit` prints bookish, ai-structure and choppy. Leave a natural line alone when clearing the warning would make it sound written.
 
+## Chống nhồi liên từ, bịa chuyển cảnh, cắt nghĩa thừa (27/11, clip-06 v5 → v6)
+Ba lỗi làm v5 dài và mùi AI. Áp dụng lúc cắt, trước mọi bước chải chữ. `check-rules.py --draft` báo `⚠ connector-stuffing` cho lỗi đầu.
+1. **Cấm nhồi liên từ.** Không mở ≥ 2 câu liên tiếp bằng *Nên, Nhưng mà, Thành ra, Vì vậy, Do đó, Mà, Rồi, Thế là*, và các câu mở bằng liên từ không quá 25% tổng số câu. Muốn nối ý: đặt 2 sự thật cạnh nhau hoặc hỏi 1 câu ngắn để ý tự bật ra («Ba buổi. Cân hông nhích. Đo sai thước rồi.»). Tối đa 1 từ nối, ở chỗ lời thật sự rẽ hướng.
+2. **Cấm «kể lể chuyển cảnh giả».** Giữ đúng **1 bối cảnh/ví dụ xuyên suốt** từ hook tới việc làm tối nay. Không bịa hành động nối cảnh vô lý («đứng nhìn cái cây mỗi sáng», «úp chén xong kéo giày»), không ghép 3–4 bối cảnh rời (giày → cái cây → nghiên cứu → úp chén). Bằng chứng là 1 con số đặt cạnh ví dụ, không phải 1 cảnh mới.
+3. **Cấm giải thích lại điều đã rõ (No Over-Explaining).** Mỗi ý nói 1 lần bằng hình ảnh hoặc con số cụ thể. Không viết câu tóm tắt bài học kiểu «Vì vậy điều đó có nghĩa là…», «Tức là…» lặp lại ẩn dụ vừa nói. Với bằng chứng: giữ đúng 1 kết luận từ fact-lock, bỏ cỡ mẫu và bối cảnh phụ nếu không phục vụ ý chính.
+4. **Đúng chất giọng Hiệp (`content/voice-profile.md`).** Thẳng, đời thường, tự giễu thói quen của chính mình (không trêu người xem), kết gọn. Cấm câu sến kiểu «mình ngồi nghe nha», «mình ở đây đợi bạn». CTA là 1 câu hỏi trực diện để comment 1 chữ hoặc 1 con số.
+5. **Khung mặc định `ONEUP-CORE-ARC`** (5 nhịp, 180–250 âm tiết ≈ 55–75s): hook tình huống → bẻ thước đo + gài trend → 1 bằng chứng → 1 việc tối nay → CTA 1 chữ. Chi tiết ở `skills/make-video/SKILL.md` (Gate 0).
+
 ## Emotional and logical flow
-A beat is not a slide. The last sentence of a beat plants the question the next beat answers. «Nhưng mà» and «thành ra» are for that turn, not a connector quota. If the next beat could be moved anywhere without the listener noticing, rewrite the join in the monologue before touching word choice.
+A beat is not a slide. The last sentence of a beat plants the question the next beat answers. «Nhưng mà» and «thành ra» are for that turn, not a connector quota (see the anti-stuffing rules above: never two openers in a row). If the next beat could be moved anywhere without the listener noticing, rewrite the join in the monologue before touching word choice.
 
 ## Steps
 1. **Fact lock.** List every fact, number, study, date and citation in the draft. These must appear unchanged in the output.

@@ -9,6 +9,7 @@
   check-rules.py --bookish draft.md               # L-106 (⚠): words from resources/vn-spoken/bookish.tsv + ai-blacklist.tsv + syllables very rare in speech (vi_50k)
   check-rules.py --ai-structure draft.md          # structural AI-tells (⚠ ai-structure): parallel symmetry clichés, preachy beat openers, low-concreteness >40w beats
   check-rules.py --draft draft.md [more.md]      # combined draft gate: runs all draft checks (incl. --ai-structure) + L-051 + L-053 in one pass
+  check-rules.py --connector draft.md             # ⚠ connector-stuffing: ≥ 2 câu liền mở bằng Nên/Nhưng mà/Thành ra/Vì vậy/Do đó/Mà/Rồi/Thế là, hoặc > 25% câu mở bằng liên từ
   check-rules.py --audit draft.md                # style reference only (bookish, ai-structure, choppy). Do not rewrite a natural line to clear these.
   check-rules.py --subjects draft.md [more.md]   # L-087 only: spoken text must not use school subjects as examples
   check-rules.py --l088 draft.md [more.md]       # L-088 only: evidence cited + spoken, hook/CTA not copied from earlier clips, trend link
@@ -1029,6 +1030,48 @@ def check_ai_structure_file(path):
     if not n:
         ok("ai-structure", f"{os.path.basename(path)}: không thấy cấu trúc AI ngầm (đối xứng lặp, mở bài thuyết giảng, beat >40 từ thiếu chi tiết cụ thể)")
     return n
+# ---- WS2 (27/11, clip-06 v5): ⚠ connector-stuffing — chuỗi câu mở bằng liên từ nối nhau làm lời thoại thành nhân quả giả ----
+CS_OPENERS = ("nhưng mà", "thành ra", "vì vậy", "do đó", "thế là", "nên", "mà", "rồi")  # cụm dài đứng trước để khớp trước
+CS_MAX_RUN = 2          # ≥ 2 câu liên tiếp mở bằng liên từ → cảnh báo
+CS_MAX_DENSITY = 0.25   # > 25% tổng số câu mở bằng liên từ → cảnh báo
+
+def _cs_opener(sent):
+    words = re.findall(r"[0-9a-zà-ỹđ]+", unicodedata.normalize("NFC", sent).lower())
+    for c in CS_OPENERS:
+        cw = c.split()
+        if words[:len(cw)] == cw: return c
+    return None
+
+def check_connector_stuffing_text(where, sentences):
+    """⚠ connector-stuffing (không chặn cứng). `sentences` = câu theo thứ tự đọc, xuyên beat.
+    Cảnh báo khi ≥ 2 câu liền nhau mở bằng Nên / Nhưng mà / Thành ra / Vì vậy / Do đó / Mà / Rồi / Thế là,
+    hoặc khi các câu mở bằng liên từ chiếm > 25% tổng số câu. Trả về số cảnh báo."""
+    sents = [s for s in sentences if s and s.strip()]
+    if not sents: return 0
+    ops = [_cs_opener(s) for s in sents]; hits = 0
+    i = 0
+    while i < len(ops):
+        if ops[i]:
+            j = i
+            while j < len(ops) and ops[j]: j += 1
+            if j - i >= CS_MAX_RUN:
+                warn("connector-stuffing", f"{where}: {j - i} câu liên tiếp mở bằng liên từ ({', '.join('«' + o + '»' for o in ops[i:j])}) → bỏ từ nối, đặt 2 sự thật cạnh nhau hoặc hỏi một câu ngắn để ý tự bật ra («{sents[i][:50]}…»)")
+                hits += 1
+            i = j
+        else: i += 1
+    n = sum(1 for o in ops if o); dens = n / len(sents)
+    if dens > CS_MAX_DENSITY:
+        warn("connector-stuffing", f"{where}: {n}/{len(sents)} câu ({dens:.0%}) mở bằng liên từ, quá {CS_MAX_DENSITY:.0%} → chuỗi nhân quả giả; giữ tối đa 1 từ nối ở chỗ lời thật sự rẽ hướng")
+        hits += 1
+    return hits
+
+def check_connector_stuffing_file(path):
+    md = open(path, encoding="utf-8").read()
+    beats = draft_beats(md)
+    sents = [s for _, _, txt in beats for s in _l089_sents(txt)] if beats else _l089_sents(md)
+    if not check_connector_stuffing_text(os.path.basename(path), sents):
+        ok("connector-stuffing", f"{os.path.basename(path)}: không có ≥ {CS_MAX_RUN} câu liền mở bằng liên từ, mật độ liên từ đầu câu ≤ {CS_MAX_DENSITY:.0%}")
+
 def check_bookish_text(where, text, rank=None):
     t = _padded_words(text)
     hits = [(w, alt, src) for w, alt, src in _bookish_list() if f" {w} " in t]
@@ -1247,6 +1290,7 @@ def main():
             check_story_hook_file(f)
             check_bookish_file(f)
             check_ai_structure_file(f)
+            check_connector_stuffing_file(f)
             check_l053_file(f)
             check_l051_file(f)
         return report(outp)
@@ -1255,6 +1299,7 @@ def main():
             if f != "--out" and f != outp:
                 check_bookish_file(f)
                 check_ai_structure_file(f)
+                check_connector_stuffing_file(f)
                 check_choppy_file(f)
         return report(outp)
     if a and a[0] == "--subjects":  # L-087 on draft script files
@@ -1274,6 +1319,10 @@ def main():
             if f != "--out" and f != outp:
                 check_bookish_file(f)
                 check_ai_structure_file(f)
+        return report(outp)
+    if a and a[0] == "--connector":  # WS2: ⚠ connector-stuffing
+        for f in a[1:]:
+            if f != "--out" and f != outp: check_connector_stuffing_file(f)
         return report(outp)
     if a and a[0] == "--ai-structure":  # cấu trúc AI ngầm (⚠ ai-structure)
         for f in a[1:]:
