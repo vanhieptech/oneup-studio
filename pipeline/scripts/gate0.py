@@ -16,7 +16,7 @@ Pieces (printed as one Markdown block; --out writes/replaces the block between G
   4. Latest notes: resources/feedback.md (Hiệp's rejections, tier 1 list), the channel section of rules/ACTIVE-CHECKLIST.md,
      and <clip>/final/feedback.md when --clip is given.
 @hi.oneup default (WS1, 27/11): without --arc/--tone the spine is ONEUP-CORE-ARC (Mạch 5 nhịp thực dụng: hook tình huống → bẻ thước đo + gài trend →
-1 bằng chứng → 1 việc tối nay → CTA 1 chữ, ~200–265 âm tiết ≈ 65–88 s, đủ ý thì dừng). --extended lifts the window to 120–180 s, only for a topic with real technical steps.
+1 bằng chứng → 1 việc tối nay → CTA chia sẻ đồng hành, ~200–265 âm tiết ≈ 65–88 s, đủ ý thì dừng). --extended lifts the window to 120–180 s, only for a topic with real technical steps.
 The brief also prints the 5 Hiệp-approved clips (a-c01…a-c05) with a one-line DNA each + measured beat structure, the 2–3 closest to the idea flagged, plus the matching story-bank rows and the voice-profile §2 reminder. Writing inputs are only: brief (Gate 0 + Fact-lock + trend) · voice-profile §2–3 · 2–3 closest approved · story-bank row + research/explainers/<topic>.md.
 Read-only except --out. Never invents: a missing piece is printed as «chưa có» with where to get it.
 """
@@ -166,7 +166,7 @@ VOICE_REMINDER = [
     "- **Ngân sách nguyên liệu (Anti-Stuffing Budget, DL-077..079):** không phải checklist điền đủ.",
     "  - **Đúng 1 nỗi đau đại chúng** · **Đúng 1 câu hỏi trung tâm** · **6–7 beat, ~200–265 âm tiết (~65–88s)** (`b01` ≤ 20 âm tiết rõ nghĩa trong 3s đầu, `b01+b02` ≤ 65, beat ≤ 45; `audio-precheck.py` cảnh báo `HOOK_LONG` / `SLOW_ENTRY` / `BEAT_BLOAT`).",
     "  - **Bằng chứng ≤ 35 âm tiết (Storytelling the Study + Climactic Order):** dẫn từ kỳ vọng sai → cú tỉnh ngộ (không nhảy kiểu Wikipedia), đặt **số nhỏ trước → số lớn gây bất ngờ cuối câu** (`18 → 254 ngày, hơn 8 tháng`), dịch nghĩa số lớn, bỏ cỡ mẫu/số tuần/món phụ khỏi lời đọc; rào giới hạn ≤ 1 vế ngắn; gia vị giọng chọn **tối đa 1–2 thứ** tự nhiên.",
-    "  - **Đủ ý & Khép vòng + Thought-Flow over Connector-Glue:** giải tỏa nỗi lo ở Hook **ngay sau số liệu**, có 1 đổi thước đo + 1 hành động cụ thể; cấm mở câu rập khuôn `Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`, cấm câu meta «dạo này có câu trend nói» hay cảnh giả «lướt trúng câu đang trend»; trend là xương sống ngay Hook hoặc xin ngoại lệ như `DL-069`.",
+    "  - **Đủ ý & Khép vòng + CTA chia sẻ đồng hành + Thought-Flow over Connector-Glue (DL-069, DL-080):** giải tỏa nỗi lo ở Hook **ngay sau số liệu**, có 1 đổi thước đo + 1 hành động cụ thể; CTA hỏi trải nghiệm đời thực khớp tâm thế tiến tới ở cuối bài bằng giọng lắng nghe («…comment kể mình nghe với nha»), **cấm ép «comment 1 chữ / 1 con số» phi thực tế hay kéo ngược về «đang tính bỏ»**; cấm mở câu rập khuôn `Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`, cấm câu meta «dạo này có câu trend nói» hay cảnh giả «lướt trúng câu đang trend»; trend là xương sống ngay Hook hoặc xin ngoại lệ như `DL-069`.",
     "  - **Given–New Conceptual Flow + 4 hướng dẫn chuyện (`docs/research/storytelling-craft-guide.md`, DL-078/079):** chọn 1 hướng ở Gate 0 (`Misconception Reveal` · `Everyday Paradox` · `5-Second Moment` · `Self-Dialogue`); nối bằng tâm lý/tình huống ngầm (**CẤM điệp từ cuối–đầu cơ học Anadiplosis** kiểu `còn đó → Công còn đó`); Đề–Thuyết tự nhiên, 1 họ ẩn dụ duy nhất, không từ lệch nghĩa.",
     "- Chuyện thật từ `content/story-bank.md` (`[CẦN HIỆP XÁC NHẬN]` nếu chưa chốt), không bịa kết quả.",
 ]

@@ -33,7 +33,7 @@ tags: [index, retrieval]
 | skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
-| clip-06.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | Review độc lập Gate 1 — `clip-06` (`script-v13-draft.md` vs `a-c05`) |
+| clip-06.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | Review độc lập `clip-06` (`script-v13-draft.md` · `38d77ba5fe3e`) vs Anchor `a-c05` |
 | clip-06.script-v13-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md` | clip-06 v13 — DRAFT, chờ Hiệp duyệt Gate 1 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |

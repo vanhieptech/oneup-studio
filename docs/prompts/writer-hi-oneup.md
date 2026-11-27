@@ -43,6 +43,7 @@ PHA 1 — PURE VOICE & STORY PASS (Tìm giọng có hồn trước, chưa nhìn 
    - Bắt chước **nhạc điệu sống động** của các mẫu đã duyệt (`a-c01, a-c03, a-c05`): khẩu ngữ miền Nam tự nhiên (*vô guồng, dẹp luôn, ngửa người ra, nhẹ hẳn cái đầu, hông, nha, hà, lận*), xen **nhịp sóng câu** (câu kể vừa 15–22 chữ có dấu phẩy + câu đập ngắn 6–10 chữ), chọn 1–2 gia vị vừa vặn (lời nội tâm `"..."`, tự giễu nhẹ, hoặc 1–2 từ EN tự nhiên).
    - **Given–New Conceptual Flow (tiếp nối tâm lý ngầm, KHÔNG điệp từ cơ học):** câu sau mọc tự nhiên từ tâm lý/tình huống cuối câu trước; CẤM trò nhại lại cụm cuối câu trước ở đầu câu sau liên tiếp (`không hợp → Hợp hay không`, `còn đó → Công còn đó`); CẤM dán keo từ nối rập khuôn (`Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`).
    - **Storytelling the Study + Climactic Order:** dẫn vào nghiên cứu từ **kỳ vọng sai của người kể → cú tỉnh ngộ** (*"Hồi trước mình cứ tưởng… Tới lúc đọc nghiên cứu năm 2010 của… mới ngửa người ra"*), không vào thẳng kiểu Wikipedia. Luôn đặt **số nhỏ trước → số lớn gây bất ngờ ở cuối câu** (`18 ngày → 254 ngày, hơn 8 tháng trời lận!`), rồi **câu kế tiếp giải tỏa ngay nỗi lo ở Hook** trước khi sang hệ quả & hành động tối nay.
+   - **CTA chia sẻ đồng hành khớp tâm thế kết bài (`DL-069`, `DL-080`):** beat cuối tách riêng cho CTA sau khi người nói đã chốt hành động của `mình`; hỏi trải nghiệm đời thực theo hướng tiến tới bằng giọng lắng nghe (*«Còn dạo này bạn đang tập thói quen gì, được bao lâu rồi, comment kể mình nghe với nha.»* — chuẩn `a-c05`), **TUYỆT ĐỐI CẤM** ép công thức «comment 1 chữ / 1 con số» phi thực tế (vd «Kể một chữ») hoặc hỏi ngược tâm thế bỏ cuộc («mới tập hai tuần mà đang tính bỏ?»).
 
 ====================================================================
 PHA 2 — SURGICAL AUDIT & BEAT SPLIT (Chỉnh vi phẫu, giữ nguyên hồn Pha 1)
@@ -51,7 +52,7 @@ Chỉ sửa đúng từ vi phạm các chốt dưới đây — **tuyệt đối
 5. **Kiểm Ngân sách & Fact-lock:**
    - 1 vấn đề · 1 câu hỏi · 1 ví dụ đại chúng · 1 họ ẩn dụ duy nhất (không đẻ ẩn dụ thứ hai đè lên ẩn dụ chính) · dẫn chứng gọn (bỏ cỡ mẫu/số tuần/món phụ khỏi lời đọc, giữ ở bảng Fact-lock) · rào giới hạn ≤ 1 vế ngắn · không chạm bất kỳ từ/số/cơ chế não nào trong cột CẤM của Fact-lock · không dùng cụm chê năng lực (`L-053`: *mình dở / đầu dở / kém*).
    - Số viết bằng **chữ số** (`2010`, `18`, `254`, `8`) trong bản nháp; cách đọc (`say`) để sau khi Hiệp Chốt.
-   - Độ dài: 6–7 beat, ~200–265 âm tiết (~65–88s), `b01` ≤ 22, `b01+b02` ≤ 65, không beat nào > 45 âm tiết.
+   - Độ dài: 6–8 beat, ~200–265 âm tiết (~65–88s), `b01` ≤ 22, `b01+b02` ≤ 65, không beat nào > 45 âm tiết.
 6. **Tách bảng Beat đầy đủ (chỉ text, chưa render):**
    - Bảng `Beat | Lời thoại (BẮT BUỘC in **đậm** hoặc {nhấn: …} đúng 1 từ nhấn chính mỗi câu) | Ý hình (rule-60/61: hình diễn gì để lời không kể lại) | Caption EN nháp (≤ 8 từ/chunk)` + mục `## Lời đọc (checker input)` dạng `N. **[bNN]** lời` + mục `## Đọc liền một mạch`.
 7. **Cổng tự kiểm Ngữ nghĩa Tiếng Việt bản địa (4 câu a–d):**

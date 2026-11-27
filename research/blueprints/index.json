@@ -111,7 +111,7 @@
   },
   {
    "id": "ONEUP-CORE-ARC",
-   "name": "Mạch 5 nhịp thực dụng @hi.oneup: tình huống → bẻ thước đo → 1 bằng chứng → 1 việc tối nay → CTA 1 chữ",
+   "name": "Mạch 5 nhịp thực dụng @hi.oneup: tình huống → bẻ thước đo → 1 bằng chứng → 1 việc tối nay → CTA chia sẻ đồng hành",
    "tone": "oneup_core",
    "channel": "hi_oneup",
    "core": true,
@@ -133,7 +133,7 @@
     "[Bẻ góc nhìn: nối vì sao mình nghĩ vậy, dẫn mượt sang trend nếu có (không nhảy cóc), rồi 1 câu hỏi gọn vạch ra cái bẫy đo sai]",
     "[1 bằng chứng đắt: câu dẫn tự nhiên + đúng 1 kết luận từ fact-lock; con số lớn phải dịch nghĩa cho người nghe; bỏ cỡ mẫu, bối cảnh phụ]",
     "[Cách làm: 1 đổi góc nhìn/thước đo + 1 hành động cụ thể tối nay, trên chính ví dụ của nhịp 1]",
-    "[Khép vòng về đúng nỗi lo ở Hook + CTA 1 chữ: 1 câu hỏi trực diện để comment]"
+    "[Khép vòng về hình ảnh/nỗi lo ở Hook + CTA chia sẻ đồng hành (DL-069, DL-080): 1 câu hỏi đời thực khớp tâm thế kết bài, giọng lắng nghe tự nhiên, không ép comment 1 chữ/1 con số]"
    ],
    "beats": [
     {
@@ -178,7 +178,7 @@
     },
     {
      "role": "kết",
-     "function": "Chốt + CTA 1 chữ, 1–2 câu",
+     "function": "Chốt + CTA chia sẻ đồng hành, 1–2 câu",
      "seconds": 12,
      "syllables": [
       30,

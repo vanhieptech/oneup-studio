@@ -44,6 +44,11 @@ Người xem video không đọc lại được; tai chỉ giữ ý vừa mở �
 - Không nhảy thẳng vào *"Năm 2010, nhóm Phillippa Lally..."* kiểu Wikipedia.
 - Dẫn vào bằng **kỳ vọng sai của người kể → cú tỉnh ngộ khi gặp dữ liệu thật**: *"Hồi trước mình cứ tưởng ráng hai ba tuần là vô guồng. Tới lúc đọc nghiên cứu năm 2010 của nhóm Phillippa Lally mới ngửa người ra..."* — biến số liệu thành bước ngoặt cảm xúc của chính câu chuyện.
 
+### 5. CTA chia sẻ đồng hành — Khớp tâm thế kết bài (*Companion CTA Fit*, DL-069 · DL-080)
+- **Khớp tâm thế cuối bài:** sau khi kịch bản đã vực người xem dậy và trao hành động tối nay, câu CTA phải mở theo **hướng tiến tới** (bạn đang tập thói quen gì, được bao lâu rồi, hay bạn làm sao để giữ nhịp bền), **cấm kéo tuột cảm xúc ngược về chữ «bỏ»** hoặc bó hẹp điều kiện giả tạo (*«thói quen nào mới tập hai tuần mà đang tính bỏ?»* khiến đa số người xem thấy không khớp mình).
+- **Cấm ép công thức «comment 1 chữ / 1 con số» phi thực tế:** tên thói quen hay trải nghiệm đời thực không thể viết bằng 1 chữ, và cụm *«Kể một chữ»* là sai tiếng Việt. Luôn dùng giọng bạn đồng hành lắng nghe, khiêm tốn như mẫu duyệt `a-c05` (*«…comment kể mình nghe với nha»*, *«…comment cho mình biết với nha»*).
+- **Nên tách beat riêng cho CTA** sau beat hành động để nhịp kết có khoảng thở tự nhiên.
+
 ## Trụ cột 3: Bốn hướng dẫn chuyện chuyên nghiệp (chọn 1 ở Gate 0, xoay vòng)
 
 | # | Hướng | Nguồn phương pháp | Khung dẫn mạch | Hợp với dạng bài |

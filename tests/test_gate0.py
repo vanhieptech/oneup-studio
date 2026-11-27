@@ -95,11 +95,12 @@ def test_pick_approved_returns_closest_two_or_three():
 def test_voice_reminder_has_anti_stuffing_budget_not_forced_checklist():
     out = "\n".join(g.VOICE_REMINDER)
     assert "Anti-Stuffing Budget" in out
-    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "200–265", "≤ 20 âm tiết", "BEAT_BLOAT", "Đủ ý & Khép vòng", "dịch nghĩa", "Thought-Flow over Connector-Glue", "Given–New Conceptual Flow", "Climactic Order", "Kiến trúc 2 Pha", "Misconception Reveal", "Everyday Paradox", "storytelling-craft-guide", "dạo này có câu trend nói", "≤ 35 âm tiết",
-                 "tối đa 1–2 thứ", "xương sống ngay Hook", "DL-069", "lướt trúng câu đang trend"):
+    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "200–265", "≤ 20 âm tiết", "BEAT_BLOAT", "Đủ ý & Khép vòng", "CTA chia sẻ đồng hành", "dịch nghĩa", "Thought-Flow over Connector-Glue", "Given–New Conceptual Flow", "Climactic Order", "Kiến trúc 2 Pha", "Misconception Reveal", "Everyday Paradox", "storytelling-craft-guide", "dạo này có câu trend nói", "≤ 35 âm tiết",
+                 "tối đa 1–2 thứ", "xương sống ngay Hook", "DL-069", "DL-080", "lướt trúng câu đang trend"):
         assert must in out, must
-    # không còn bắt buộc nhồi đủ mọi gia vị cùng lúc hoặc đếm chữ 3–4 từ cuối chạm 3–4 từ đầu
+    # không còn bắt buộc nhồi đủ mọi gia vị cùng lúc, đếm chữ 3–4 từ cuối, hay ép «CTA 1 chữ»
     assert "ít nhất 1 lời nội tâm" not in out and "3–4 chữ cuối" not in out
+    assert "CTA 1 chữ" not in g.brief("xyzzy", "hi")
     assert len(g.VOICE_REMINDER) <= 10  # giữ gọn để không gây Prompt Bloat
     assert "bắt buộc" in out  # chỉ còn ở dòng giọng miền Nam
 

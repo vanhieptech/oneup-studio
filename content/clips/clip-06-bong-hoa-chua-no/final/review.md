@@ -1,135 +1,148 @@
 ---
 id: clip-06.review
 type: review
-title: "Review độc lập Gate 1 — clip-06 «bông hoa chưa nở» (script v13 vs a-c05)"
+title: "Review độc lập clip-06 v13 r2 — Pairwise A/B vs a-c05 (make-video §4b)"
 date: 2026-11-27
 updated: 2026-11-27
-tags: [review, clip-06, gate-1, pairwise, two-tier]
+tags: [review, clip-06, gate-1, pairwise, two-tier, dl-080]
 status: draft
-source: "make-video §4b · docs/prompts/reviewer-script.md · đối chiếu script-v13-draft.md với a-c05 & feedback.md (11 dòng)"
+source: "docs/prompts/reviewer-script.md (make-video §4b, reviewer độc lập)"
 verdict: ĐẠT
 pairwise: TIE
 anchor: a-c05
 anchor_match: "cùng kênh @hi.oneup, giọng miền Nam, một bằng chứng nghiên cứu + CTA hỏi người xem"
-script_hash: 1e324490a549
-feedback_seen: 11
+script_hash: 38d77ba5fe3e
+feedback_seen: 12
 reviewer_model: gemini-3.1-pro
 ---
+# Review độc lập `clip-06` (`script-v13-draft.md` · `38d77ba5fe3e`) vs Anchor `a-c05`
 
-# Review độc lập Gate 1 — `clip-06` (`script-v13-draft.md` vs `a-c05`)
+## Bảng đếm âm tiết thực tế từng beat (`b01–b08`)
 
-- **Bản chấm (`{DRAFT}`):** `content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md` (`script_hash: 1e324490a549`; lời khớp 100% giữa `## Pha 1`, `## Pha 2 — Lời theo beat`, `## Lời đọc (checker input)` và `## Đọc liền một mạch`).
-- **Bản chuẩn đối chiếu (`{ANCHOR}`):** `a-c05` — `content/archive/clip-05-hoc-mot-dem/final/script-final.md`.
-
-## Bảng đếm âm tiết thực tế từng beat
-
-*(Đếm cả số token chữ viết và số âm tiết thực tế khi đọc số/tên riêng/từ mượn thành tiếng.)*
-
-| Beat | Số câu | Token chữ (bỏ `—`) | Âm tiết đọc thực tế | Chi tiết quy đổi âm tiết & kiểm ngưỡng |
+| Beat | Số câu | Token chữ viết | Âm tiết đọc thực tế | Ghi chú quy đổi số / từ mượn & ngưỡng kiểm |
 |---|---:|---:|---:|---|
-| `b01` | 1 | 19 | **19** | Không có chữ số → 19 âm tiết. Đạt ngưỡng Hook `≤ 20` (và 3-Second Clarity `≤ 22`). |
-| `b02` | 2 | 32 | **32** | Không có chữ số → 32 âm tiết. Cộng dồn `b01 + b02 = 51` âm tiết (đạt ngưỡng Time-to-Point `≤ 65`). |
-| `b03` | 3 | 41 | **41** | Không có chữ số → 41 âm tiết (đạt ngưỡng `≤ 45`). |
-| `b04` | 1 | 34 | **44** *(41–44)* | Đọc đủ: `2010` = «hai ngàn không trăm mười» (5, đọc gọn «hai ngàn mười» = 3), `Lally` = «La-ly» (2), `18` = «mười tám» (2), `254` = «hai trăm năm mươi tư» (5, đọc gọn «hai trăm năm tư» = 4), `8` = «tám» (1) → **44 âm tiết** (riêng vế kết quả nghiên cứu sau dấu `:` là 27 âm tiết đọc thực tế; đạt ngưỡng beat `≤ 45` và bằng chứng không nhồi thông số phụ `≤ 40`). |
-| `b05` | 2 | 32 | **32** | Không có chữ số → 32 âm tiết (đạt ngưỡng `≤ 45`). |
-| `b06` | 2 | 43 | **43** | Không có chữ số → 43 âm tiết (đạt ngưỡng `≤ 45`). |
-| `b07` | 3 | 44 | **45** | `comment` đọc «còm-men» (2 âm tiết) → **45 âm tiết** (chạm đúng trần `≤ 45`). |
-| **Tổng** | **14** | **245** | **256** *(253–256)* | Nằm gọn trong khung chuẩn `ONEUP-CORE-ARC` (`200–265` âm tiết ≈ `80–88s` lời đọc tự nhiên; tính cả nghỉ dấu câu + chuyển cảnh + end card ≈ `85–95s`, rất xa trần cứng `300s`). |
+| `b01` | 1 | 19 | **19** | Không có chữ số/từ mượn · **Đạt** (`≤ 20` âm tiết, rõ nghĩa trong ~6s đầu) |
+| `b02` | 2 | 32 | **32** | Không có chữ số/từ mượn · Cộng dồn `b01 + b02` = **51** âm tiết (**Đạt** `≤ 65`) |
+| `b03` | 3 | 41 | **41** | Không có chữ số/từ mượn · **Đạt** (`≤ 45`) |
+| `b04` | 1 | 34 | **44** (41 nếu đọc gọn) | `2010` = *hai ngàn không trăm mười* (5, hoặc *hai ngàn mười* = 3); `Lally` = *La-li* (2); `18` = *mười tám* (2); `254` = *hai trăm năm mươi tư* (5, hoặc *hai trăm năm tư* = 4); `8` = *tám* (1) · **Đạt** (`≤ 45`; riêng phần thông số kết quả = 27 âm tiết đọc, đã lược bỏ cỡ mẫu/số tuần/món phụ) |
+| `b05` | 2 | 33 | **33** | Không có chữ số/từ mượn · **Đạt** (`≤ 45`) |
+| `b06` | 2 | 43 | **43** | Không có chữ số/từ mượn · **Đạt** (`≤ 45`) |
+| `b07` | 1 | 26 | **26** | `mười phút` đã viết sẵn thành chữ · **Đạt** (`≤ 45`) |
+| `b08` | 1 | 19 | **20** | `comment` đọc *còm-men* (2 âm tiết, 1 từ tiếng Anh tự nhiên duy nhất toàn bài) · **Đạt** (`≤ 45`) |
+| **Tổng** | **13** | **247** | **258** (255 nếu đọc gọn) | Ước thời lượng đọc tự nhiên (~2.9–3.2 âm tiết/s): ~81–89s lời + ~6–8s nghỉ/chuyển cảnh/end card ≈ **87–97s** (khớp khung lõi `ONEUP-CORE-ARC` ~200–265 âm tiết, << trần 300s) |
 
 ---
 
 ## Tầng 1 — Hard Fail (H1–H4)
 
-- **H1 (Fact không nguồn / nói quá / chạm danh sách Cấm của `fact_lock`):** **không**.
-  - Đối chiếu `research/fact-packages/factcheck-trends-2026-10-31.md` (mục `clip-06, 4.12 (Lally 2010)`) và `## Bảng Fact-lock` trong nháp:
-    - Nguồn nêu rõ năm + tên tác giả: `«Đọc nghiên cứu năm 2010 của nhóm Lally…»` (màn hình ghi đủ `PHILLIPPA LALLY (2010)`), chỉ dẫn đúng 1 nghiên cứu (`«nhóm đó»`).
-    - Giữ đúng phạm vi «động tác đơn giản mỗi ngày» (`«làm việc nhỏ mỗi ngày»`), đúng khoảng đo `«người nhanh nhất mất 18 ngày, chậm nhất tới 254 ngày — hơn 8 tháng mới thành nếp»` (254 ngày ≈ 8,4 tháng).
-    - Không chạm bất kỳ mục **Cấm** nào: không nói `«66 ngày»` hay con số cố định, không nói `«trung bình»` / `«hơn hai tháng»`, không nhắc `«12 tuần»`, không bịa cơ chế não (`«nhẹ hẳn cái đầu»` ở `b05` là thành ngữ chỉ tâm lý nhẹ nhõm trút gánh lo, không phải cơ chế thần kinh tạo thói quen), không gán chạy bộ hay mốc «mười phút» vào số liệu nghiên cứu, và câu nghỉ 1 bữa có rào chuẩn xác `«nghỉ một ngày gần như hông sao, công mấy hôm trước vẫn còn nguyên»` (khớp nguồn `lỡ một ngày không làm hỏng tiến trình`).
-- **H2 (Thời lượng ≥ 300s, L-099):** **không** (~85–95s tổng thể, < 300s).
-- **H3 (Sai format kênh / xúc phạm người xem):** **không** (100% comic + motion graphic theo `DL-027`; không đòi quay mặt/b-roll/nhạc nền/nhắc lịch đăng; không có từ chê năng lực người xem theo `L-053`).
-- **H4 (Lỗi cấu trúc):** **không** (`## Lời đọc (checker input)` đủ 7 beat dạng `N. **[bNN]**`, không có beat trống, khớp từng chữ với bảng `## Pha 2 — Lời theo beat`).
+- **H1 (Fact không nguồn / nói quá / chạm danh sách Cấm của `fact_lock`):** **Không.**
+  - Đã đối chiếu từng câu với `research/fact-packages/factcheck-trends-2026-10-31.md` (mục `clip-06, 4.12 — Lally 2010`) và `## Bảng Fact-lock` trong bản nháp:
+    - `b04` nêu rõ năm (`2010`), tên tác giả (`nhóm Lally`, màn hình `PHILLIPPA LALLY (2010)`), đúng phạm vi `làm việc nhỏ mỗi ngày` (không nới sang việc phức tạp, không gán chạy bộ thành kết quả đo của nghiên cứu), đúng khoảng `18 ngày` → `254 ngày` và quy đổi số học chuẩn `hơn 8 tháng` (254 ÷ 30 ≈ 8,47 tháng).
+    - Không chạm bất kỳ từ/số nào trong danh sách **Cấm**: không có «66 ngày», không số ngày cố định làm kết luận, không «trung bình», không «hơn hai tháng», không «12 tuần», không bịa cơ chế não («não chưa quen nhịp»), không nói «nhiều nghiên cứu» hay «chứng minh».
+    - `b05` («Nhanh nhất người ta còn mất hơn hai tuần, mình mới chạy hai tuần mà oải là quá bình thường») khớp số học `18 > 14` và khớp cẩm nang 4.12 («Hai ba tuần vẫn chưa thấy nhẹ là bình thường»).
+    - `b06` giữ đúng số ít «nhóm đó» và có từ rào «nghỉ một ngày **gần như** hông sao», khớp nguồn Lally 2010 & cẩm nang 4.12 («lỡ một ngày không làm hỏng tiến trình»).
+    - `b07` («chạy nhẹ mười phút, mệt thì đi bộ») là hành động cá nhân tối nay của người kể, không gán vào số liệu nghiên cứu; cảnh chạy bộ được khai báo minh bạch ở mục `## Chi tiết đã dựng` theo `rule-67`.
+- **H2 (Thời lượng ≥ 300s, `L-099`):** **Không.** Tổng 258 âm tiết đọc thực tế (~87–97s tính cả nghỉ và end card), thấp hơn xa ngưỡng chặn 300s.
+- **H3 (Sai format kênh / xúc phạm người xem):** **Không.** 100% comic + motion (`DL-027`), không đòi quay mặt/b-roll tự quay, không nhạc nền, không nhắc lịch đăng (`DL-028`), không có cụm chê năng lực người xem (`L-053`; cụm «hông hợp» ở `b02` là lời tự nghi ngờ độ hợp của nhân vật rồi được gỡ ngay ở `b05`).
+- **H4 (Lỗi cấu trúc):** **Không.** Mục `## Lời đọc (checker input)` chia đủ 8 beat `1. **[b01]**` → `8. **[b08]**`, không có beat trống, khớp nguyên văn từng chữ với bảng `Pha 2` và đoạn `Đọc liền một mạch`.
 
 ---
 
 ## Tầng 2 — Given–New Conceptual Flow & Anti-Anadiplosis Check
 
-### 1. Kiểm từng cặp câu liên tiếp (`b01` → `b07`, 14 câu / 13 điểm nối)
+### 1. Kiểm từng cặp câu liên tiếp (`b01` → `b08`, 13 câu / 12 điểm nối)
 
-| Cặp chuyển | Cuối câu trước → Đầu câu sau | Mạch tâm lý ngầm (*Given → New*) | Lặp từ cuối–đầu cơ học (*Anadiplosis*)? |
-|---|---|---|---|
-| `b01 (S1) → b02 (S2)` | `…đã muốn dẹp.` → `Đợt mới tập chạy bộ…` | Nghịch lý chung «tập 2 tuần muốn dẹp» (*Given*) → phóng cận vào trải nghiệm thật của người kể lúc mới tập chạy bộ 2 tuần vẫn oải và nghĩ «chắc mình hông hợp đâu» (*New*). | Không |
-| `b02 (S2 → S3)` | `…“chắc mình hông hợp đâu”.` → `Lúc đó quên mất câu…` | Khoảnh khắc nản lòng tự phán «hông hợp» (*Given*) → `Lúc đó` neo đúng thời điểm tâm lý ấy để sực nhớ câu nói quen thuộc về «bông hoa chưa nở» trên nền hình ảnh cây trồng đã gieo ở `b01` (*New*). | Không |
-| `b02 (S3) → b03 (S4)` | `…bông hoa chưa nở”.` → `Chạy có hai tuần thì mới nhú cái nụ hà…` | Hình ảnh «bông hoa chưa nở» (*Given*) → chiếu thẳng vào việc chạy 2 tuần mới chỉ ở giai đoạn «nhú cái nụ hà», giải thích vì sao chưa thể «nhẹ tênh liền được» (*New*). | Không (nối bằng hình ảnh `hoa → nụ`, không nhại chữ) |
-| `b03 (S4 → S5)` | `…nhẹ tênh liền được.` → `Ủa mà tập một việc mất bao lâu…` | Nhận ra 2 tuần chưa thể nhẹ liền (*Given*) → bật ra câu hỏi trung tâm rất tự nhiên `Ủa mà… mất bao lâu mới thành thói quen?` (*New*). | Không |
-| `b03 (S5 → S6)` | `…mới thành thói quen?` → `Hồi trước mình cứ đinh ninh…` | Câu hỏi «mất bao lâu?» (*Given*) → tự thú nhận kỳ vọng sai trước đây của chính mình (`cứ đinh ninh ráng hai ba tuần là vô guồng`) làm bàn đạp trước khi lật bằng chứng (*New*). | Không |
-| `b03 (S6) → b04 (S7)` | `…là vô guồng.` → `Đọc nghiên cứu năm 2010 của nhóm Lally mới ngửa người ra:…` | Kỳ vọng cũ 2–3 tuần vô guồng (*Given*) → cú tỉnh ngộ `mới ngửa người ra` khi gặp khoảng thời gian thật `18 → 254 ngày — hơn 8 tháng` (*New*). | Không |
-| `b04 (S7) → b05 (S8)` | `…hơn 8 tháng mới thành nếp.` → `Nghe xong tự nhiên nhẹ hẳn cái đầu.` | Con số 18 ngày tới hơn 8 tháng vừa nêu (*Given*) → cảm giác trút được gánh nặng tự trách ngay lập tức (*New*). *(Lưu ý vi mô: `b04` dùng động từ `Đọc` còn `b05` dùng `Nghe xong`; trong khẩu ngữ miền Nam `nghe` chỉ cảm giác khi tiếp nhận thông tin vẫn tự nhiên, không gây mâu thuẫn nghĩa, nhưng có thể đổi thành `Đọc tới đó…` nếu muốn khớp tuyệt đối).* | Không |
-| `b05 (S8 → S9)` | `…nhẹ hẳn cái đầu.` → `Nhanh nhất người ta còn mất hơn hai tuần…` | Cảm giác «nhẹ hẳn cái đầu» (*Given*) → lý giải trực tiếp bằng phép so `nhanh nhất còn mất hơn hai tuần` (18 > 14 ngày) nên chạy 2 tuần còn oải là bình thường, gỡ trọn nút thắt `«hông hợp»` ở `b02` (*New*). | Không |
-| `b05 (S9) → b06 (S10)` | `…đâu phải không hợp.` → `Thói quen tính bằng tháng chứ hông phải bằng tuần…` | Khi biết tiến trình kéo dài từ hơn 2 tuần tới hơn 8 tháng (*Given*) → rút ra thước đo mới `tính bằng tháng`, và từ việc làm ròng rã mấy tháng tự khắc dẫn sang tình huống tất yếu `kiểu gì cũng có hôm bận phải nghỉ` (*New*). | Không (đã bỏ cặp `chưa quen → Thói quen` của v12) |
-| `b06 (S10 → S11)` | `…có hôm bận phải nghỉ.` → `Cái hay là nhóm đó cũng thấy nghỉ một ngày…` | Tình huống tất yếu có hôm bận phải nghỉ (*Given*) → gỡ tiếp nỗi sợ đứt chuỗi từ chính kết quả của nhóm Lally: `nghỉ một ngày gần như hông sao, công mấy hôm trước vẫn còn nguyên` (*New*). | Không |
-| `b06 (S11) → b07 (S12)` | `…vẫn còn nguyên.` → `Tối nay cứ xỏ giày chạy nhẹ mười phút…` | Công sức cũ vẫn còn nguyên không mất trắng (*Given*) → hành động tối nay nhẹ nhàng không áp lực gồng bù (`chạy nhẹ mười phút, mệt thì đi bộ, lỡ bữa nào mai đi tiếp — cái nụ còn đó là được`) (*New*). | Không (đã bỏ cặp `còn đó → Công còn đó` của v12) |
-| `b07 (S12 → S13)` | `…cái nụ còn đó là được.` → `Còn bạn, thói quen nào mới tập hai tuần…` | Khép trọn chuyện của `mình` bằng hình ảnh cái nụ còn nguyên (*Given*) → xoay ống kính sang người xem ở đúng mốc «mới tập hai tuần mà đang tính bỏ» của `b01` (*New*). | Không |
-| `b07 (S13 → S14)` | `…mà đang tính bỏ?` → `Kể một chữ dưới comment nha.` | Câu hỏi gợi nhớ thói quen đang định bỏ (*Given*) → lời mời tương tác cực thấp rào cản (`một chữ`) (*New*). | Không |
+1. **`b01` → `b02` (câu 1):** *«…mà tập thói quen hai tuần đã muốn dẹp.»* → *«Đợt mới tập chạy bộ hai tuần vẫn oải, mình liền nghĩ “chắc mình hông hợp đâu”.»*
+   - **Mạch *Given → New*:** Từ nghịch lý chung («tập thói quen hai tuần đã muốn dẹp») hạ trực tiếp xuống kỷ niệm cụ thể của `mình` («tập chạy bộ hai tuần vẫn oải → nghĩ hông hợp»). Không điệp từ cuối–đầu. **Đạt.**
+2. **`b02` (câu 1) → `b02` (câu 2):** *«…mình liền nghĩ “chắc mình hông hợp đâu”.»* → *«Lúc đó quên mất câu “đừng bao giờ khinh thường một bông hoa chưa nở”.»*
+   - **Mạch *Given → New*:** Từ tiếng nói nội tâm nản lòng ở tuần thứ 2 (`Lúc đó`), người kể sực nhớ lại câu trend nhờ đã cài sẵn hình ảnh «trồng cây đợi mấy tháng» ngay `b01` — không nhảy cóc kiểu meta «trên mạng có câu trend». Không điệp từ cuối–đầu. **Đạt.**
+3. **`b02` (câu 2) → `b03` (câu 1):** *«…“đừng bao giờ khinh thường một bông hoa chưa nở”.»* → *«Chạy có hai tuần thì mới nhú cái nụ hà, sao đòi nhẹ tênh liền được.»*
+   - **Mạch *Given → New*:** Hình ảnh «bông hoa chưa nở» ở cuối `b02` hóa thành «mới nhú cái nụ» chiếu thẳng lên 2 tuần chạy bộ, đồng thời nối trả lại cảm giác «vẫn oải» bằng đối cực khẩu ngữ «nhẹ tênh». Liên kết bằng trường ẩn dụ, không nhại chữ cơ học. **Đạt.**
+4. **`b03` (câu 1) → `b03` (câu 2):** *«…sao đòi nhẹ tênh liền được.»* → *«Ủa mà tập một việc mất bao lâu mới thành thói quen?»*
+   - **Mạch *Given → New*:** Nhận ra 2 tuần chưa thể nhẹ tênh liền tự nhiên bật ra câu hỏi thực tế «vậy thật sự mất bao lâu?». Tiểu từ «Ủa mà» mở câu hỏi tự nhiên (dùng đúng 1 lần toàn bài). **Đạt.**
+5. **`b03` (câu 2) → `b03` (câu 3):** *«Ủa mà tập một việc mất bao lâu mới thành thói quen?»* → *«Hồi trước mình cứ đinh ninh ráng hai ba tuần là vô guồng.»*
+   - **Mạch *Given → New*:** Đặt câu hỏi xong tự thú ngay kỳ vọng sai trước đây của mình («đinh ninh ráng hai ba tuần là vô guồng»), dựng bệ phóng tâm lý cho cú lật số liệu. **Đạt.**
+6. **`b03` (câu 3) → `b04`:** *«Hồi trước mình cứ đinh ninh ráng hai ba tuần là vô guồng.»* → *«Đọc nghiên cứu năm 2010 của nhóm Lally mới ngửa người ra: làm việc nhỏ mỗi ngày, người nhanh nhất mất 18 ngày, chậm nhất tới 254 ngày — hơn 8 tháng mới thành nếp.»*
+   - **Mạch *Given → New*:** Kỳ vọng sai «đinh ninh hai ba tuần» va thẳng vào phản ứng «mới ngửa người ra» khi đọc nghiên cứu Lally — dẫn chuyện nghiên cứu qua trải nghiệm nhận thức (*Storytelling the Study*), không vào kiểu Wikipedia đứng trơ. **Đạt.**
+7. **`b04` → `b05` (câu 1):** *«…chậm nhất tới 254 ngày — hơn 8 tháng mới thành nếp.»* → *«Đọc tới đó tự nhiên nhẹ hẳn cái đầu.»*
+   - **Mạch *Given → New*:** Số liệu kéo giãn tới «hơn 8 tháng» tạo ngay phản ứng trút gánh nặng («nhẹ hẳn cái đầu») ngay sau bằng chứng, không trì hoãn xuống cuối bài. **Đạt.**
+8. **`b05` (câu 1) → `b05` (câu 2):** *«Đọc tới đó tự nhiên nhẹ hẳn cái đầu.»* → *«Nhanh nhất người ta còn mất hơn hai tuần, mình mới chạy hai tuần mà oải là quá bình thường — đâu phải không hợp.»*
+   - **Mạch *Given → New*:** Giải thích tức thì lý do «nhẹ hẳn cái đầu» bằng phép so trực diện (`18 ngày = hơn hai tuần` vs `mình mới chạy hai tuần`), gỡ trọn nút thắt «chắc mình hông hợp đâu» của `b02`. **Đạt.**
+9. **`b05` (câu 2) → `b06` (câu 1):** *«…mình mới chạy hai tuần mà oải là quá bình thường — đâu phải không hợp.»* → *«Thói quen tính bằng tháng chứ hông phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ.»*
+   - **Mạch *Given → New*:** Từ thực tế `hơn hai tuần → hơn 8 tháng`, người kể đúc thành thước đo mới («tính bằng tháng chứ hông phải bằng tuần»), và chính quy mô «cả mấy tháng» tất yếu dẫn tới tình huống đời thực «kiểu gì cũng có hôm bận phải nghỉ». **Đạt.**
+10. **`b06` (câu 1) → `b06` (câu 2):** *«…làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ.»* → *«Cái hay là nhóm đó cũng thấy nghỉ một ngày gần như hông sao, công mấy hôm trước vẫn còn nguyên.»*
+    - **Mạch *Given → New*:** Vừa chạm nỗi sợ đứt chuỗi khi bận nghỉ 1 hôm thì gỡ ngay bằng phát hiện thứ hai cùng nguồn Lally («nghỉ một ngày gần như hông sao, công mấy hôm trước vẫn còn nguyên»). Hai ý dính nhau bằng nhân quả thực tế, không phải hai bài khâu gượng. **Đạt.**
+11. **`b06` (câu 2) → `b07`:** *«…công mấy hôm trước vẫn còn nguyên.»* → *«Tối nay mình cứ xỏ giày chạy nhẹ mười phút, mệt thì đi bộ, lỡ bữa nào, mai đi tiếp — cái nụ còn đó là được.»*
+    - **Mạch *Given → New*:** Vì đã bỏ áp lực «2 tuần phải nhẹ» (`b05`) lẫn nỗi sợ «nghỉ 1 ngày mất hết công» (`b06`), hành động tối nay của `mình` trở nên nhẹ nhàng («chạy nhẹ mười phút, mệt thì đi bộ, lỡ bữa nào, mai đi tiếp») và khép vòng tự nhiên về hình ảnh «cái nụ còn đó là được». Không còn nối chữ cơ học `còn đó → Công còn đó`. **Đạt.**
+12. **`b07` → `b08`:** *«…lỡ bữa nào, mai đi tiếp — cái nụ còn đó là được.»* → *«Còn dạo này bạn đang tập thói quen gì, được bao lâu rồi, comment kể mình nghe với nha.»*
+    - **Mạch *Given → New*:** Khép xong phần hành động kiên nhẫn nuôi «cái nụ» của `mình`, câu kết xoay lượt trò chuyện sang `bạn` («Còn dạo này bạn…») với đúng tâm thế đồng hành nuôi thói quen theo thời gian. **Đạt.**
 
-### 2. Kiểm 6 tiêu chí Given–New & Craft (`DL-078`, `DL-079`)
-1. **Giải tỏa nỗi lo ở Hook đúng nhịp:** **Đạt** — nỗi lo «chạy hai tuần vẫn oải = hông hợp» được giải tỏa ngay tại `b05` liền sau số liệu `b04`, không bị treo xuống cuối bài.
-2. **Chống điệp từ cuối–đầu cơ học (*Anti-Anadiplosis*):** **Đạt** — **0/13 cặp câu** lặp cụm cuối–đầu cơ học (đã dọn sạch toàn bộ các mối hàn chữ `không hợp → Hợp hay không`, `chưa quen → Thói quen`, `còn đó → Công còn đó` của bản cũ).
-3. **Chiều cao trào số liệu (*Climactic Order*):** **Đạt** — đi đúng chiều tăng tiến `«người nhanh nhất mất 18 ngày, chậm nhất tới 254 ngày — hơn 8 tháng mới thành nếp»` (số nhỏ trước → số lớn sau → quy đổi «hơn 8 tháng» chốt đỉnh bất ngờ cuối câu).
-4. **Câu mở bài & câu dẫn vào nghiên cứu (*Storytelling the Study*):** **Đạt** — mở bài có ngữ khí trò chuyện miền Nam (`«Ngộ ghê ha — …»`) và chủ thể `mình` ngay câu đầu; vào nghiên cứu đi qua kỳ vọng sai của người kể (`«Hồi trước mình cứ đinh ninh ráng hai ba tuần là vô guồng»` → `«Đọc nghiên cứu năm 2010 của nhóm Lally mới ngửa người ra»`), không nhảy ngang kiểu Wikipedia.
-5. **Thống nhất ẩn dụ & chính xác từ vựng:** **Đạt** — duy nhất 1 họ ẩn dụ xuyên suốt (`trồng cây` ở `b01` → `bông hoa chưa nở` ở `b02` → `cái nụ` ở `b03` & `b07`); không ghép danh từ gượng («cái nụ thói quen»), không đẻ ẩn dụ thứ hai («đường còn dài»), đã sửa từ sai nghĩa «hụt bữa» thành `«lỡ bữa nào»`.
-6. **Đánh dấu từ `**nhấn**` trong bảng Beat (`## Pha 2 — Lời theo beat`):** **Đạt** — đủ **14/14 câu** trên cả **7/7 beat** đều có đánh dấu `**nhấn**` rõ ràng, đúng trọng tâm ngữ điệu (`**mấy tháng**`, `**dẹp**`, `**oải**`, `**hông hợp**`, `**chưa nở**`, `**cái nụ**`, `**bao lâu**`, `**hai ba tuần**`, `**ngửa người**`, `**18 ngày**`, `**254 ngày**`, `**8 tháng**`, `**nhẹ hẳn**`, `**bình thường**`, `**tháng**`, `**nghỉ**`, `**hông sao**`, `**mười phút**`, `**đi tiếp**`, `**tính bỏ**`, `**một chữ**`).
+### 2. Kiểm 6 tiêu chí Craft (`DL-078`, `DL-079`)
+
+1. **Không đứt ý / không rơi nỗi lo ở Hook:** Giải tỏa thẳng nỗi lo «2 tuần vẫn oải = hông hợp» ngay tại `b05` liền sau số liệu `b04`. **Đạt.**
+2. **Chống *Mechanical Anadiplosis*:** **0/12** cặp câu lặp từ cuối–đầu cơ học (đã xóa sạch các cặp nối chữ giả tạo của v12 như `không hợp → Hợp hay không`, `chưa quen → Thói quen`, `còn đó → Công còn đó`). **Đạt.**
+3. **Đúng chiều cao trào số liệu (*Climactic Order*):** Đi từ nhỏ tới lớn `18 ngày → 254 ngày — hơn 8 tháng mới thành nếp`, giữ nguyên độ bất ngờ ở vế cuối. **Đạt.**
+4. **Mở bài có chủ thể giao tiếp & vào nghiên cứu qua kỳ vọng sai:** `b01` mở bằng ngữ khí trò chuyện miền Nam + chủ thể `mình` («Ngộ ghê ha — trồng cây mình đợi mấy tháng được…»); `b03–b04` dẫn vào Lally 2010 qua kỳ vọng sai của người kể («Hồi trước mình cứ đinh ninh… → Đọc nghiên cứu… mới ngửa người ra»). **Đạt.**
+5. **Một họ ẩn dụ thống nhất & từ vựng chuẩn nghĩa:** Xuyên suốt một họ hình ảnh thực vật duy nhất (*trồng cây → bông hoa chưa nở → cái nụ*), không ghép danh từ gượng («cái nụ thói quen»), không mở ẩn dụ thứ hai («đường còn dài»), đã thay từ lệch nghĩa «hụt bữa» bằng «lỡ bữa nào». **Đạt.**
+6. **Đánh dấu từ nhấn trong bảng Beat:** Bảng `Pha 2` có đánh dấu `**đậm**` rõ ràng cho mọi câu ở cả 8 beat `b01–b08`. **Đạt.**
 
 ---
 
-## Tầng 2 — So sánh 4 trục (`v13` vs `a-c05`)
+## Tầng 2 — So sánh 4 trục (`v13 r2` vs `a-c05`)
 
 - **Trục 1 — Hook & Giữ chân (0–3s): Ngang.**
-  - Draft (`v13`): `«Ngộ ghê ha — trồng cây mình đợi mấy tháng được, mà tập thói quen hai tuần đã muốn dẹp.»` (19 âm tiết, bắt ngay nghịch lý tâm lý ai cũng từng gặp trong 3 giây đầu, có giọng trò chuyện và gài sẵn gốc ẩn dụ cây trồng).
-  - Anchor (`a-c05`): `«Thì cái bản chất của cái việc đọc đâu nhớ đó là như thế nào? Chứ đọc xong gấp sách lại, là quên sạch trơn hà.»` (26 âm tiết qua 2 nhịp cắt nhanh, trực diện vào nỗi đau đọc xong quên sạch).
-  - Cả hai đều rõ vấn đề tức thì ngay nhịp đầu, không vòng vo và không mở bài sáo rỗng.
+  - `Draft (v13 r2)`: *«Ngộ ghê ha — trồng cây mình đợi mấy tháng được, mà tập thói quen hai tuần đã muốn dẹp.»* (19 âm tiết) — vào thẳng nghịch lý đời thường ai cũng thấy mình trong đó ngay 3–6 giây đầu, có ngữ khí trò chuyện miền Nam ngay chữ đầu và cài sẵn mồi hình ảnh cái cây cho câu trend ở `b02`.
+  - `Anchor (a-c05)`: *«Thì cái bản chất của cái việc đọc đâu nhớ đó là như thế nào? Chứ đọc xong gấp sách lại, là quên sạch trơn hà.»* (26 âm tiết qua 2 nhịp cắt) — bắt nhịp vật lý nhanh, chạm đúng nỗi đau đọc xong quên sạch. Cả hai đều gọn, rõ nghĩa ngay lần nghe đầu tiên.
 - **Trục 2 — Mạch truyện & Chuyển ý: Ngang.**
-  - Draft (`v13`): Đi một đường thẳng nhân quả khép kín, không rẽ nhánh, đặc biệt mượt ở bước rút hệ quả từ thước đo tháng sang chuyện nghỉ 1 bữa (`«Thói quen tính bằng tháng chứ hông phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ. Cái hay là nhóm đó cũng thấy…»`) thay vì bồi thêm ý phụ rời rạc.
-  - Anchor (`a-c05`): Đi khung phân tích 3 bước (`Thứ nhất / Thứ hai / Và cuối cùng`) rõ ràng, chuyển đoạn gọn bằng câu chốt (`«Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng.»`).
-- **Trục 3 — Văn nói tự nhiên VN + DNA kênh (`voice-profile.md`): Anchor thắng** *(nhỉnh nhẹ về miếng hài diễn xuất, Draft vẫn đạt chuẩn tự nhiên của kênh)*.
-  - Draft (`v13`): Giọng miền Nam đời thường, liền hơi, không còn mùi văn dịch hay câu cộc (`«mới nhú cái nụ hà, sao đòi nhẹ tênh liền được»`, `«Ủa mà…»`, `«cứ đinh ninh ráng hai ba tuần là vô guồng»`, `«mới ngửa người ra»`). Chỉ có 2 tiểu tiết rất nhỏ không làm hỏng nghĩa: chuyển động từ `Đọc nghiên cứu…` (`b04`) sang `Nghe xong…` (`b05`), và cụm `«lỡ bữa nào mai đi tiếp»` (`b07`) hơi nén khi chưa có dấu phẩy ngắt cho TTS.
-  - Anchor (`a-c05`): Có thêm miếng cà khịa duyên dáng 4/5 và màn đổi giọng nhập vai cô–trò rất đắt (`«hông ai ghi sổ đầu bài đâu»`, `«“Em kia, gấp sách lại…” “Dạ… em sai chút xíu thôi cô…”»`), tạo đỉnh cá tính sắc hơn `v13` một nấc.
-- **Trục 4 — Độ đắt của ẩn dụ / payoff: Draft thắng.**
-  - Draft (`v13`): Một họ ẩn dụ duy nhất (`trồng cây → bông hoa chưa nở → cái nụ`) khóa chặt cả câu trend, bằng chứng khoa học (`«nhanh nhất mất 18 ngày, chậm nhất tới 254 ngày — hơn 8 tháng mới thành nếp»`), bước đổi thước đo (`tính bằng tháng`) lẫn hành động tối nay (`«Tối nay cứ xỏ giày chạy nhẹ mười phút… cái nụ còn đó là được»`), khép vòng tròn trịa về đúng câu mở đầu.
-  - Anchor (`a-c05`): Cú lật số liệu 5 phút vs 1 tuần (`56 phần trăm` vs `42`) và 3 bước thực hành rất rõ (`«chưa chấm thì đừng liếc sách, liếc cái là thành đọc lại»`), nhưng không có trục ẩn dụ hình ảnh xuyên suốt từ đầu tới cuối như `v13`.
+  - `Draft (v13 r2)`: *«Hồi trước mình cứ đinh ninh ráng hai ba tuần là vô guồng. Đọc nghiên cứu năm 2010 của nhóm Lally mới ngửa người ra…»* — đi một đường thẳng nhân quả tâm lý duy nhất từ tình huống → câu trend → kỳ vọng sai → bằng chứng → giải tỏa → đổi thước đo & gỡ nỗi lo nghỉ 1 bữa → việc nhỏ tối nay → CTA; đọc bỏ từ nối các câu vẫn tự kéo nhau đi.
+  - `Anchor (a-c05)`: *«Vậy hóa ra, thứ đáng tập là tự nhớ khi sách đóng. Thứ nhất thì clip trước nói rồi đó…»* — mạch phân tích 3 bước rõ ràng, chặt chẽ theo khung «bản chất».
+- **Trục 3 — Văn nói tự nhiên VN + DNA kênh (`voice-profile.md`): Anchor thắng nhẹ.**
+  - `Draft (v13 r2)`: *«Chạy có hai tuần thì mới nhú cái nụ hà, sao đòi nhẹ tênh liền được. Ủa mà…»* — khẩu ngữ miền Nam rất mượt, ấm, sạch mùi văn dịch, có lời nội tâm tự giễu nhẹ («chắc mình hông hợp đâu») và nhịp thở giống tin nhắn thoại gửi bạn thân (tiểu tiết rất nhỏ: câu `b07` nối 3 vế cùng chủ ngữ bằng dấu phẩy vẫn trôi chảy khi đọc, khi lên spec TTS chỉ cần ngắt phrase rõ sau «mệt thì đi bộ»).
+  - `Anchor (a-c05)`: *«Tự chấm thì yên tâm, hông ai ghi sổ đầu bài đâu.»* + màn nhập vai cô–trò *«Em kia, gấp sách lại…»* — nhỉnh hơn ở miếng hài cà khịa đặc sản 4/5 của Hiệp; bù lại `v13 r2` giữ tone điềm tĩnh, đồng cảm rất hợp với chủ đề kiên nhẫn nuôi thói quen và không vướng câu rào hơi sách như «Bước chấm này cẩm nang gợi ý thêm» của `a-c05`.
+- **Trục 4 — Độ đắt của ẩn dụ / payoff & độ hợp của CTA (`DL-069`, `DL-080`): Draft thắng nhẹ.**
+  - `Draft (v13 r2)`: *«…lỡ bữa nào, mai đi tiếp — cái nụ còn đó là được. Còn dạo này bạn đang tập thói quen gì, được bao lâu rồi, comment kể mình nghe với nha.»* — giữ trọn một họ ẩn dụ cây–hoa–nụ xuyên suốt từ mở bài tới kết bài, lồng câu trend tự nhiên làm xương sống cảm xúc, dịch nghĩa số lớn (`254 ngày — hơn 8 tháng`), để lại việc nhỏ làm được ngay tối nay và khép bằng CTA đồng hành chuẩn mực.
+  - `Anchor (a-c05)`: *«Mà chắc nhiều bạn có cách hay hơn mình nữa, bạn hay làm gì để nhớ lâu, comment cho mình biết với nha.»* — payoff thực hành 3 bước sắc gọn và CTA lắng nghe rất ấm, nhưng không có lớp ẩn dụ xuyên suốt (ngoại lệ không dùng trend theo `DL-069`).
 
-### Kiểm nhanh 7 điểm mù (`resources/feedback.md` + `reviewer-script.md`)
-1. **Điểm mù 1 (Hook phình to / trì hoãn lời hứa / chèn trend «Đại ý là…»):** **Không dính** (`b01` = 19 âm tiết, vào thẳng vấn đề ngay câu 1; không hứa hẹn câu giờ, không «Đại ý là…»).
-2. **Điểm mù 2 (Mạch rẽ nhánh / khâu hai bài làm một):** **Không dính** (1 ví dụ chạy bộ + 1 họ ẩn dụ cây/nụ xuyên suốt; ý nghỉ 1 ngày mọc thẳng từ mệnh đề «làm cả mấy tháng»).
-3. **Điểm mù 3 (Văn dịch / sách vở dày / hàn 3 ý lệch chủ ngữ):** **Không dính** (đã thay sạch «thành tự động», «lặp một động tác đơn giản», «không làm hỏng tiến trình» bằng khẩu ngữ đời thường `thành nếp`, `làm việc nhỏ mỗi ngày`, `gần như hông sao, công mấy hôm trước vẫn còn nguyên`).
-4. **Điểm mù 4 (Ví dụ lạc trục / dẫn chứng rỗng / lệch ngôi hoặc trộn giọng Bắc–Nam):** **Không dính** (ví dụ chạy bộ đại chúng; nguồn đủ `năm 2010 của nhóm Lally` + số `18`, `254`; xưng `mình – bạn` xuyên suốt; 100% khẩu ngữ miền Nam, 0 từ Bắc `ấy/thế/nhé`).
-5. **Điểm mù 5 (Sai ngữ nghĩa tiếng Việt / Translationese / tự mâu thuẫn nội bộ):** **Không dính** (không còn cụm sai nghĩa nào; mốc thời gian `hai tuần` = 14 ngày thống nhất tuyệt đối ở `b01, b02, b03, b05, b07` và khớp toán học với `hơn hai tuần` = 18 ngày ở `b04–b05`).
-6. **Điểm mù 6 (Hook mù mờ / Lòng vòng / Over-packing):** **Không dính** (qua trọn 4 phép thử: `b01` = 19 ≤ 22; `b01+b02` = 51 ≤ 65; 1 câu hỏi trung tâm duy nhất, lược sạch cỡ mẫu 96 người / 12 tuần / món phụ, mọi beat ≤ 45 âm tiết; tình huống đời thực không gượng).
-7. **Điểm mù 7 (Cụt ý / Ngắt quãng / Không khép vòng / Dán keo từ nối):** **Không dính** (256 âm tiết giải tỏa trọn vẹn nỗi lo ở Hook; có câu dẫn tự nhiên vào trend & nghiên cứu; dịch rõ `254 ngày` thành `hơn 8 tháng`; đủ đổi thước đo + hành động 10 phút tối nay + khép vòng `cái nụ` & `hai tuần tính bỏ`; **0/7 beat** mở rập khuôn bằng `Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`).
+### Kiểm nhanh 7 điểm mù lịch sử
 
-**Chốt tổng quan Tầng 2:** Đặt cạnh `a-c05`, `script-v13-draft.md` đạt chất lượng ngang tầm (`TIE`: 2 trục ngang, 1 trục `a-c05` nhỉnh về miếng hài nhập vai, 1 trục `v13` nhỉnh về độ khóa ẩn dụ xuyên suốt), mạch nói liền hơi tự nhiên và sạch cả 7 điểm mù — đủ điều kiện qua Gate 1 để trình Hiệp duyệt.
+1. **Điểm mù 1 (Hook phình to / trì hoãn lời hứa):** **Không.** `b01` dài 19 âm tiết (1 câu), không hứa suông «lát mình kể», không có câu tóm tắt trend kiểu «Đại ý là…».
+2. **Điểm mù 2 (Mạch rẽ nhánh / khâu hai bài làm một):** **Không.** Một trục duy nhất; ý «nghỉ một ngày gần như hông sao» ở `b06` nảy sinh tất yếu từ việc đổi thước đo sang «cả mấy tháng».
+3. **Điểm mù 3 (Văn dịch / sách vở dày / hàn câu khác chủ ngữ):** **Không.** Đã nói đời thường («mới thành nếp», «nghỉ một ngày gần như hông sao, công mấy hôm trước vẫn còn nguyên»), không có từ sách/mùi dịch.
+4. **Điểm mù 4 (Ví dụ lạc trục / dẫn chứng rỗng / lệch giọng kể):** **Không.** Một ví dụ chạy bộ xuyên suốt `b02 → b03 → b05 → b07`; nghiên cứu đủ tác giả + năm + con số; ngôi `mình – bạn` giọng miền Nam nhất quán.
+5. **Điểm mù 5 (Sai ngữ nghĩa tiếng Việt / Translationese / tự mâu thuẫn nội bộ):** **Không.** Các cụm khẩu ngữ đều chuẩn tiếng Việt miền Nam nói thật ngoài đời; mốc thời gian khớp chặt (`hai tuần` = 14 ngày < `18 ngày` = `hơn hai tuần` < `254 ngày` = `hơn 8 tháng`).
+6. **Điểm mù 6 (Hook mù mờ / Lòng vòng / Over-packing — 4 phép thử):** **Không.** `b01` = 19 âm tiết (`≤ 20`); `b01 + b02` = 51 âm tiết (`≤ 65`); mọi beat `≤ 44` âm tiết đọc (`≤ 45`), đã lược sạch cỡ mẫu/số tuần/món phụ; tình huống đời thực 100%.
+7. **Điểm mù 7 (Cụt ý / Ngắt quãng / Không khép vòng / Keo từ nối):** **Không.** Độ dài 258 âm tiết đọc đủ ý và khép vòng về «cái nụ»; chỉ 1/8 beat (`b08`) mở bằng từ chuyển lượt nói tự nhiên `Còn dạo này bạn…` (`< 3`).
 
----
+### Kiểm chuyên sâu độ hợp của CTA mới ở `b08` (`DL-069`, `DL-080` & góp ý dòng 12 `«CTA k hợp»`)
 
-## Đối chiếu 11 dòng `feedback.md`
+> **[b08]** *«Còn dạo này bạn đang tập thói quen gì, được bao lâu rồi, comment kể mình nghe với nha.»*
 
-| # | Bản bị góp ý | Lời Hiệp nguyên văn | Trạng thái ở `v13` & bằng chứng đối chiếu |
-|---:|---|---|---|
-| 1 | `v3` (`4b16165`) | «Script vẫn xàm thiếu tự nhiên, cả ai nói lý do nghe mới quê tuần .. thấy ngại» | **Đã giải quyết.** Bỏ hoàn toàn các câu viện lý do gượng gạo gây quê và câu ghép sách vở; thay bằng tâm lý thật ai cũng từng nghĩ thầm khi chạy 2 tuần còn mệt: `«mình liền nghĩ “chắc mình hông hợp đâu”»` (`b02`). |
-| 2 | `v3 r2` (`8df074e`) | «Các câu văn vẫn rời rạc không rõ nghĩa k có liên kết không có cấu trúc tuần tự gì rõ ràng» | **Đã giải quyết.** Có `## Bảng khung mạch (L-107)` rõ ràng và đi đúng 1 trục nhân quả tuần tự: nghịch lý đợi cây vs tập 2 tuần (`b01`) → trải nghiệm chạy bộ + câu bông hoa (`b02`) → cái nụ + câu hỏi & kỳ vọng cũ (`b03`) → số liệu Lally (`b04`) → giải tỏa tự trách (`b05`) → đổi thước đo sang tháng & nghỉ 1 bữa (`b06`) → việc tối nay + CTA (`b07`). |
-| 3 | `v3 r3` (`0a438dc`) | «làm lại» | **Đã giải quyết.** Đã đập bỏ khung cũ của v3 để viết lại từ gốc theo kiến trúc 2 pha (`Pure Voice → Surgical Audit`) và hướng dẫn chuyện `#2 Everyday Paradox`. |
-| 4 | `v4` (`877bf9c`) | «Sửa và chấm lại» | **Đã giải quyết.** Bản `v13` đã sửa triệt để và được chấm độc lập toàn diện tại file review này. |
-| 5 | `v6` (`d0cb97b`) | «rời rạc, hook không liên quan, nghe xong mù mờ» | **Đã giải quyết.** Hook `b01` (19 âm tiết) đặt thẳng nghịch lý `«trồng cây mình đợi mấy tháng được, mà tập thói quen hai tuần đã muốn dẹp»` — nghe 3 giây hiểu ngay chủ đề bỏ thói quen sớm, ăn khớp 1–1 với câu hỏi và bằng chứng phía sau. |
-| 6 | `v7` (`e4e6a14`) | «câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi» | **Đã giải quyết.** Dọn sạch toàn bộ cụm dịch cứng/sai nghĩa tiếng Việt («đòi thấy nhẹ», «lặp một việc đơn giản», «hụt bữa»…); câu chữ trong `v13` là khẩu ngữ miền Nam chuẩn nghĩa (`nhẹ tênh liền được`, `vô guồng`, `ngửa người ra`, `nhẹ hẳn cái đầu`, `lỡ bữa nào`). |
-| 7 | `v8` (`6eb6590`) | «đọc lại logic code đã làm, hiện tại hook script vẫn không rõ nghĩa, lòng vòng lang mang, nhồi nhét quá nhiều thứ, không tự nhiên» | **Đã giải quyết.** Không còn mở bằng chuyện ngách lòng vòng hay nhồi thông số cỡ mẫu 96 người / 12 tuần / món phụ: `b01` gọn 19 âm tiết, `b01+b02` = 51 âm tiết, chỉ giữ đúng 1 ví dụ (chạy bộ) + 1 câu hỏi trung tâm. |
-| 8 | `v9` (`f8afc75`) | «về script có vẻ tự nhiên hơn nhưng các điểm đưa ra kết thúc giữa chừng, chưa đủ ý truyền đạt, bị ngắt quãng cũng như thiếu liền mạch» | **Đã giải quyết.** Đủ độ dày 256 âm tiết (7 beat), triển khai trọn vẹn các ý: giải tỏa nỗi lo ở `b05`, dịch nghĩa `254 ngày` thành `hơn 8 tháng`, đổi thước đo sang tháng + gỡ nỗi sợ nghỉ 1 ngày ở `b06`, hướng dẫn hành động cụ thể tối nay và khép vòng cái nụ ở `b07`. |
-| 9 | `v10` (`016142b`) | «kết nối các câu từ vẫn không có liền mạch, quá rập khuôn khi thêm các từ nối câu, phải trình bày để có liên quan diễn đạt các câu kế tiếp một cách liền mạch hơn thay vì rời rạc như hiện tại» | **Đã giải quyết.** Xóa sạch keo từ nối rập khuôn đầu câu (**0/7 beat** mở bằng `Tại / Mà / Vậy / Nghĩa là / Nên`); các câu tự kéo nhau đi bằng diễn biến tâm lý và hệ quả thực tế. |
-| 10 | `v11` (`731e9e6`) | «có một chút liền mạch nhưng vài chỗ lại không rõ nghĩa, dẫn câu vẫn chưa liền mạch — cần đưa các phương pháp viết nói, dẫn truyện và nhiều hướng đi bài bản, chuyên nghiệp, tự nhiên hơn vào hệ thống» | **Đã giải quyết.** Áp dụng rõ phương pháp `#2 Everyday Paradox` kết hợp dòng chảy *Given → New*: mỗi câu nhận lại tình huống/cảm xúc của câu trước rồi đẩy thêm một bước mới rõ nghĩa, không có câu đứng chơ vơ. |
-| 11 | `v12` (`76d84ff`) | «đọc lại v12 và tự nhận xét, đánh giá research, nghiên cứu chuyên sâu nhất» → «chốt hướng này, làm luôn tại đây» (sửa lỗi nối từ cơ học Anadiplosis, đảo ngược cao trào 254→18, câu mở cụt chủ thể, vào nghiên cứu kiểu Wikipedia, phẳng khẩu ngữ do Prompt Bloat) | **Đã giải quyết trọn cả 5 điểm của v12:** (1) bỏ 100% điệp từ cuối–đầu Anadiplosis; (2) đảo lại đúng chiều cao trào tăng tiến `18 ngày → 254 ngày — hơn 8 tháng`; (3) mở bài có ngữ khí `«Ngộ ghê ha»` và chủ thể `mình`; (4) dẫn vào nghiên cứu qua kỳ vọng sai `«cứ đinh ninh ráng hai ba tuần là vô guồng»` → `«mới ngửa người ra»`; (5) giữ được khẩu ngữ sống động và đánh dấu đủ `**nhấn**` cho cả 14/14 câu trong bảng Beat. |
+1. **Đúng ngữ nghĩa tiếng Việt & tự nhiên khi nói to:** Đã gỡ bỏ hoàn toàn công thức cưỡng ép «Kể một chữ dưới comment nha» (phi thực tế và sai ngữ nghĩa tiếng Việt vì tên thói quen như *chạy bộ, đọc sách, ngủ sớm* hay trải nghiệm tập luyện không thể gói trong «một chữ»). Cụm «comment kể mình nghe với nha» là tiếng Việt giao tiếp đời thường 100%, cùng nhịp điệu và độ ấm với câu đã được Hiệp duyệt ở `a-c05` («comment cho mình biết với nha»).
+2. **Khớp tâm thế kết bài (tiến tới thay vì kéo ngược về bỏ cuộc):** Sau khi `b05–b07` đã giải tỏa áp lực, đổi thước đo sang tháng và chốt tâm thế bình tĩnh nuôi «cái nụ» tối nay, `b08` không còn kéo tuột cảm xúc ngược về tâm thế tiêu cực hay bó hẹp giả tạo vào nhóm «mới tập hai tuần mà đang tính bỏ». Câu hỏi mở ra cho mọi người xem đang nuôi bất kỳ thói quen nào ở bất kỳ chặng nào (3 ngày, 2 tuần hay 4 tháng).
+3. **Gắn chặt với trục nội dung của clip mà vẫn nhẹ ma sát bình luận:** Vế nhỏ «được bao lâu rồi» chạm đúng chủ đề cốt lõi của bài (thước đo thời gian của một «bông hoa chưa nở») nhưng cực dễ trả lời chỉ bằng vài chữ tự nhiên dưới phần bình luận (vd: *«chạy bộ mới được 10 ngày nè»*, *«tập ngủ sớm 2 tháng rồi»*).
+4. **Kết luận riêng cho CTA:** Đã giải quyết **triệt để** góp ý dòng 12 `«CTA k hợp»` của Hiệp.
+
+**Chốt tổng quan Tầng 2:** Bản `v13 r2` đạt độ chín ngang tầm bản chuẩn đã duyệt `a-c05` (`PAIRWISE: TIE`): mạch kể chuyện một hơi trôi chảy, sạch bẫy nối từ cơ học lẫn bẫy dịch thuật, giữ trọn hình ảnh «bông hoa chưa nở → cái nụ» và khép bài bằng một câu CTA bạn đồng hành tự nhiên, đúng tâm thế.
 
 ---
+
+## Đối chiếu 12 dòng `feedback.md`
+
+1. **Dòng 1 (`v3 4b16165` — *«Script vẫn xàm thiếu tự nhiên, cả ai nói lý do nghe mới quê tuần .. thấy ngại»*):** Đã bỏ hẳn đoạn liệt kê lý do gượng gạo/đáng quê và câu hàn nhiều chủ ngữ; thay bằng tình huống chạy bộ 2 tuần vẫn oải rất đời thường ở `b02`. **Đã xử lý triệt để.**
+2. **Dòng 2 (`v3 r2 8df074e` — *«Các câu văn vẫn rời rạc không rõ nghĩa k có liên kết không có cấu trúc tuần tự gì rõ ràng»*):** Đã lập `Bảng khung mạch (L-107)` và đi đúng một trục nhân quả tuyến tính từ `b01` tới `b08`. **Đã xử lý triệt để.**
+3. **Dòng 3 (`v3 r3 0a438dc` — *«làm lại»*):** Đã viết lại hoàn toàn trên cấu trúc `ONEUP-CORE-ARC` thay vì vá câu trên khung cũ. **Đã xử lý triệt để.**
+4. **Dòng 4 (`v4 877bf9c` — *«Sửa và chấm lại»*):** Đã sửa mới và thực hiện chấm độc lập theo chuẩn Pairwise A/B hai tầng. **Đã xử lý triệt để.**
+5. **Dòng 5 (`v6 d0cb97b` — *«rời rạc, hook không liên quan, nghe xong mù mờ»*):** Hook `b01` (19 âm tiết) vào thẳng nghịch lý «trồng cây đợi mấy tháng vs tập thói quen hai tuần đã muốn dẹp», liên quan trực tiếp tới câu hỏi trung tâm ở `b03` và số liệu Lally ở `b04`. **Đã xử lý triệt để.**
+6. **Dòng 6 (`v7 e4e6a14` — *«câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi»*):** Đã loại bỏ toàn bộ cụm sai ngữ nghĩa/mùi dịch («đòi thấy nhẹ», «lặp một động tác đơn giản», «hụt bữa»…), trả về khẩu ngữ miền Nam tự nhiên («nhẹ tênh», «làm việc nhỏ mỗi ngày», «lỡ bữa nào»). **Đã xử lý triệt để.**
+7. **Dòng 7 (`v8 6eb6590` — *«đọc lại logic code đã làm, hiện tại hook script vẫn không rõ nghĩa, lòng vòng lang mang, nhồi nhét quá nhiều thứ, không tự nhiên»*):** Đã áp ngân sách chống nhồi nhét: `b01` gọn 19 âm tiết, `b01+b02` = 51 âm tiết, 1 câu hỏi trung tâm duy nhất, bỏ cỡ mẫu 96 người / 12 tuần / món phụ khỏi lời đọc ở `b04`. **Đã xử lý triệt để.**
+8. **Dòng 8 (`v9 f8afc75` — *«về script có vẻ tự nhiên hơn nhưng các điểm đưa ra kết thúc giữa chừng, chưa đủ ý truyền đạt, bị ngắt quãng cũng như thiếu liền mạch»*):** Bản `v13 r2` dài 258 âm tiết đọc, giải tỏa trọn nỗi lo «hông hợp» ở `b05`, dịch nghĩa `254 ngày — hơn 8 tháng`, nêu đủ đổi thước đo sang tháng + gỡ nỗi sợ nghỉ 1 ngày (`b06`) + hành động tối nay và khép vòng «cái nụ» (`b07`). **Đã xử lý triệt để.**
+9. **Dòng 9 (`v10 016142b` — *«kết nối các câu từ vẫn không có liền mạch, quá rập khuôn khi thêm các từ nối câu, phải trình bày để có liên quan diễn đạt các câu kế tiếp một cách liền mạch hơn thay vì rời rạc như hiện tại»*):** Không còn chuỗi beat mở rập khuôn bằng `Tại / Vậy / Nghĩa là / Nên` (0/7 beat đầu mở bằng từ nối công thức); các câu tự kéo nhau bằng tâm lý và nhân quả nội tại. **Đã xử lý triệt để.**
+10. **Dòng 10 (`v11 731e9e6` — *«có một chút liền mạch nhưng vài chỗ lại không rõ nghĩa, dẫn câu vẫn chưa liền mạch — cần đưa các phương pháp viết nói, dẫn truyện và nhiều hướng đi bài bản, chuyên nghiệp, tự nhiên hơn vào hệ thống»*):** Áp dụng bài bản hướng dẫn chuyện *#2 Everyday Paradox* kết hợp *Given–New Conceptual Flow*, dẫn từ nghịch lý đời thường → kỷ niệm + câu trend → kỳ vọng sai → cú lật số liệu → giải tỏa → hành động khép vòng. **Đã xử lý triệt để.**
+11. **Dòng 11 (`v12 76d84ff` — *«đọc lại v12 và tự nhận xét, đánh giá research, nghiên cứu chuyên sâu nhất» → «chốt hướng này, làm luôn tại đây»*):** Đã sửa trọn cả 5 điểm yếu kỹ thuật của v12: (1) mở bài `b01` có ngữ khí trò chuyện + chủ thể `mình`; (2) xóa sạch điệp từ đầu–cuối cơ học (*Anadiplosis*); (3) dẫn vào nghiên cứu qua kỳ vọng sai thay vì kiểu Wikipedia; (4) xếp lại đúng chiều cao trào tăng tiến `18 ngày → 254 ngày — hơn 8 tháng`; (5) viết theo Kiến trúc 2 Pha giữ khẩu ngữ sống động và đánh dấu đủ từ `**nhấn**`. **Đã xử lý triệt để.**
+12. **Dòng 12 (`v13 b15e1bd` — *«CTA k hợp»*):** Đã tách riêng `b08` và viết lại thành *«Còn dạo này bạn đang tập thói quen gì, được bao lâu rồi, comment kể mình nghe với nha.»* — bỏ hẳn khuôn ép «Kể một chữ» sai ngữ nghĩa và bỏ câu hỏi tiêu cực bó hẹp «mới tập hai tuần mà đang tính bỏ», chuyển sang câu hỏi mở đồng hành, ấm áp đúng chuẩn `a-c05` (`DL-069`, `DL-080`). **Đã xử lý triệt để.**
 
 HARD_FAILS: không
 PAIRWISE: TIE (so với a-c05)
-TOP_FIXES: 1. b05 (tuỳ chọn vi mô, không chặn Gate 1): «Nghe xong tự nhiên nhẹ hẳn cái đầu.» có thể đổi thành «Đọc tới đó tự nhiên nhẹ hẳn cái đầu.» nếu muốn khớp tuyệt đối động từ với «Đọc nghiên cứu…» ở b04 (dù khẩu ngữ miền Nam dùng «nghe» cho thông tin vừa tiếp nhận vẫn tự nhiên); 2. b07 (tuỳ chọn khi tách phrases F5-TTS sau Chốt): thêm dấu phẩy ở «lỡ bữa nào, mai đi tiếp» để giọng AI có nhịp nghỉ ngắn sau «bữa nào», tránh đọc dính âm «bữa-nào-mai»
+TOP_FIXES: không
 CONFLICTS: không
 VERDICT: ĐẠT
