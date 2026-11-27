@@ -172,15 +172,15 @@
    "status": "draft",
    "updated": "2026-11-27",
    "path": "content/clips/clip-06-bong-hoa-chua-no/final/review.md",
-   "title": "clip-06 v11 — review độc lập vòng 3 (2 tầng)"
+   "title": "clip-06 v12 vòng 2 — review độc lập (2 tầng)"
   },
   {
-   "id": "clip-06.script-v11-draft",
+   "id": "clip-06.script-v12-draft",
    "type": "script",
    "status": "draft",
    "updated": "2026-11-27",
-   "path": "content/clips/clip-06-bong-hoa-chua-no/final/script-v11-draft.md",
-   "title": "clip-06 v11 — DRAFT, chờ Hiệp duyệt Gate 1"
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/script-v12-draft.md",
+   "title": "clip-06 v12 — DRAFT, chờ Hiệp duyệt Gate 1"
   },
   {
    "id": "idea-bank",
@@ -477,6 +477,14 @@
    "updated": "2026-10-15",
    "path": "docs/research/scriptwriting-research-2026-10-15.md",
    "title": "Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup)"
+  },
+  {
+   "id": "research.storytelling-craft-guide",
+   "type": "research",
+   "status": "ready",
+   "updated": "2026-11-27",
+   "path": "docs/research/storytelling-craft-guide.md",
+   "title": "Storytelling craft guide (DL-078)"
   },
   {
    "id": "per-video-pipeline",

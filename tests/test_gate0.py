@@ -95,7 +95,7 @@ def test_pick_approved_returns_closest_two_or_three():
 def test_voice_reminder_has_anti_stuffing_budget_not_forced_checklist():
     out = "\n".join(g.VOICE_REMINDER)
     assert "Anti-Stuffing Budget" in out
-    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "200–265", "≤ 20 âm tiết", "> 45", "Đủ ý & Khép vòng", "dịch nghĩa", "Thought-Flow over Connector-Glue", "dạo này có câu trend nói", "≤ 35 âm tiết",
+    for must in ("Đúng 1 nỗi đau đại chúng", "Đúng 1 câu hỏi trung tâm", "200–265", "≤ 20 âm tiết", "> 45", "Đủ ý & Khép vòng", "dịch nghĩa", "Thought-Flow over Connector-Glue", "Baton Pass", "Misconception Reveal", "Everyday Paradox", "storytelling-craft-guide", "dạo này có câu trend nói", "≤ 35 âm tiết",
                  "tối đa 1–2 thứ", "xương sống ngay Hook", "DL-069", "lướt trúng câu đang trend"):
         assert must in out, must
     # không còn bắt buộc nhồi đủ mọi gia vị cùng lúc

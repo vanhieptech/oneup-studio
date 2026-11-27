@@ -67,6 +67,13 @@ Hiệp: «kết nối các câu từ vẫn không liền mạch, quá rập khu�
 - Rào giới hạn chỉ 1 vế ngắn: clip-02 «Mới thấy đi chung thôi», clip-05 «Nhưng năm mấy chục cũng đâu phải nhớ hết».
 - **Trend** nếu dùng thì là xương sống ngay Hook (0–5s). Cấm chuyển cảnh giả «đúng lúc đó mình lướt trúng câu đang trend…» và callback phi thực tế («đánh răng xong thì đăng đại một video»). Câu trend làm gãy mạch: xin ngoại lệ kiểu DL-069 (clip-05), không nhồi gượng.
 
+## Baton Pass và bốn hướng dẫn chuyện (DL-078, Hiệp 27/11, clip-06 v11)
+Chuẩn đầy đủ: `docs/research/storytelling-craft-guide.md`. Tóm tắt dùng khi viết:
+- **Old-to-New Baton Pass (Joseph Williams):** ý mới cuối câu A thành điểm tựa đầu câu B. Kiểm bằng **Baton Check**: 3–4 chữ cuối câu N phải chạm 3–4 chữ đầu câu N+1 (cùng chủ đề hoặc đại từ trỏ rõ). Không để rơi nỗi lo ở Hook («không hợp») rồi nhảy sang ý khác.
+- **Đề–Thuyết văn nói:** Đề (chuyện đang nói) ra đầu câu, nhịp nghỉ hoặc `á / thì / là`, Thuyết ra sau. Từ miền Nam đời thường đúng nghĩa. CẤM ghép ẩn dụ trừu tượng («cái nụ thói quen»), CẤM từ lệch nghĩa («hụt bữa» → «lỡ bữa / nghỉ bữa»), CẤM mở ẩn dụ thứ hai («đường còn dài») đè lên ẩn dụ chính.
+- **Nhưng / Vì vậy (ABT):** hai ý liền nhau là bẻ ngược hoặc hệ quả trực tiếp, không liệt kê «và rồi». **Giải tỏa nỗi lo ở Hook ngay sau bằng chứng**, rồi ý kế đẻ ra từ chính kết luận đó.
+- **Chọn 1 trong 4 hướng ở Gate 0:** (1) Misconception Reveal (lời đồn) · (2) Everyday Paradox / Analogy-Led (câu trend, ẩn dụ làm xương sống) · (3) 5-Second Moment & Contrast (chuyện thật) · (4) Self-Dialogue (hài, nhịp nhanh).
+
 ## D. Dẫn chứng
 - **≤ 2 câu, ≤ 35 âm tiết:** chỉ tác giả/năm + kết luận cốt lõi (clip-01 23 âm tiết, clip-04 27 âm tiết). Cỡ mẫu, số tuần, món phụ để trong Fact-lock, không đọc ra.
 - Dẫn chứng **nảy ra từ chuyện**, có câu dẫn: ai/nguồn nào, so A với B, kết quả đúng mức nguồn (L-096, L-103), rồi dịch con số thành ý người nghe hiểu ngay. Cấm «nhiều nghiên cứu thấy…».

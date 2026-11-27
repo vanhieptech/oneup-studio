@@ -33,8 +33,8 @@ tags: [index, retrieval]
 | skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
 | clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
-| clip-06.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | clip-06 v11 — review độc lập vòng 3 (2 tầng) |
-| clip-06.script-v11-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/final/script-v11-draft.md` | clip-06 v11 — DRAFT, chờ Hiệp duyệt Gate 1 |
+| clip-06.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | clip-06 v12 vòng 2 — review độc lập (2 tầng) |
+| clip-06.script-v12-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/final/script-v12-draft.md` | clip-06 v12 — DRAFT, chờ Hiệp duyệt Gate 1 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
@@ -72,6 +72,7 @@ tags: [index, retrieval]
 | research.craft-brief | research | ready | `docs/research/craft-brief.md` | Craft brief (đọc lúc viết; luật đầy đủ để dành cho lúc kiểm) |
 | research.script-prompt-principles | research | Hiệp đưa (prompt YouTube scriptwriter), chuyển thể cho TikTok ~45s tiếng Việt; áp dụng từ clip-02 v7 | `docs/research/script-prompt-principles.md` | Nguyên tắc viết kịch bản (từ prompt Hiệp gửi), bản cho TikTok ~45s |
 | research.scriptwriting-2026-10-15 | research | chờ Hiệp duyệt trước khi viết lại clip-02 | `docs/research/scriptwriting-research-2026-10-15.md` | Nghiên cứu: viết kịch bản video ngắn liền mạch (cho @hi.oneup) |
+| research.storytelling-craft-guide | research | ready | `docs/research/storytelling-craft-guide.md` | Storytelling craft guide (DL-078) |
 | per-video-pipeline | workflow | active | `docs/workflow/per-video-pipeline.md` | Quy trình một video, từ ý tưởng tới sẵn sàng đăng |
 | decision-log | log | living | `logs/decision-log.md` | Nhật ký quyết định: @hi.oneup (luật 33) |
 | logs.dup-scan-2026-10-15 | log | ready | `logs/dup-scan-2026-10-15.md` | Dup scan (chỉ báo, không xoá) |
