@@ -1,0 +1,365 @@
+{
+ "hook": {
+  "spoken": "",
+  "verbatim": false,
+  "on_screen_text": "Trung bình văn mẫu của mấy đứa học tiếng Anh:\nTop 1: \"Từ này nhìn quen lắm\"",
+  "visual_action": "Cận cảnh bảng từ vựng tiếng Anh in dày đặc kèm bút và ghi chú viết tay (00:00), giữ nguyên một dòng chữ giữa màn hình trên nền nhạc remix đang dồn nhịp.",
+  "mechanism": "nỗi đau",
+  "mechanism_note": "Chạm trúng nỗi đau chung đầy tự giễu của người học tiếng Anh: học rất nhiều nhưng gặp lại từ vẫn chỉ thấy quen mặt chứ không nhớ nghĩa; đồng thời gắn nhãn \"Top 1\" để neo sự tò mò xem có \"Top 2\" hay không.",
+  "implied_promise": "Lật mở sự thật hoặc danh sách tiếp theo phía sau câu cửa miệng quen thuộc của dân ôn thi tiếng Anh."
+ },
+ "beats": [
+  {
+   "from": "00:00",
+   "to": "00:06",
+   "seconds": 6,
+   "role": "hook",
+   "emotion": "tò mò",
+   "retention_function": "Đặt câu nhận diện nỗi đau ngay giây đầu trên nền bảng từ vựng dày chữ, buộc người xem dừng lướt để đọc và chờ xem diễn biến tiếp theo.",
+   "summary": "Hiện bảng từ vựng in sẵn (PRO 3M & PRO 3MPLUS) với dòng chữ tĩnh \"Top 1: Từ này nhìn quen lắm\", đến 00:05 cắt nhanh hiệu ứng lưới ghép nhiều trang theo nhịp nhạc vào lời.",
+   "transition": "Hiệu ứng chia lưới nhiều ô kết hợp giật nhẹ theo nhịp trống chuyển sang cảnh tối hơn ở 00:06."
+  },
+  {
+   "from": "00:06",
+   "to": "00:15",
+   "seconds": 9,
+   "role": "dẫn dắt",
+   "emotion": "căng",
+   "retention_function": "Tăng cảm giác choáng ngợp về khối lượng kiến thức phải học bằng loạt góc quay tài liệu liên tiếp và giao diện máy ảnh giả lập.",
+   "summary": "Chuyển từ đề đọc hiểu trên bàn tối (00:06–00:09) sang màn hình máy tính mở danh sách hàng trăm từ vựng kèm vở ghi tay bên dưới, lồng khung chụp ảnh CAM10/CAM11/CAM13 (00:10–00:14).",
+   "transition": "Cú lia mờ ngang (whip-pan) tốc độ cao ở 00:15 sang bàn trải đầy đề thi."
+  },
+  {
+   "from": "00:15",
+   "to": "00:28",
+   "seconds": 13,
+   "role": "lật kèo",
+   "emotion": "vỡ òa",
+   "retention_function": "Tạo cú đảo ngược ngầm (flex khéo): chữ thì than \"nhìn quen lắm\" nhưng hình lại khoe loạt bài thi điểm 39/40, 40/40 khiến người xem vừa bất ngờ vừa muốn xem tiếp mức độ cày cuốc.",
+   "summary": "Lộ diện các tờ đề trắc nghiệm chấm mực đỏ 39/40 và 40/40 kèm hiệu ứng tách màu RGB theo nhịp (00:16–00:22), sau đó chuyển sang laptop mở giao diện luyện đề online giữa chồng giấy chép từ (00:23–00:28).",
+   "transition": "Chuyển cảnh mờ ngang theo nhịp nhạc sang trang từ vựng được tô highlight kín ở 00:29."
+  },
+  {
+   "from": "00:28",
+   "to": "00:40",
+   "seconds": 12,
+   "role": "chứng minh",
+   "emotion": "căng",
+   "retention_function": "Đẩy năng lượng lên cao nhất đúng đoạn điệp khúc remix dồn dập, liên tục bồi thêm bằng chứng điểm tuyệt đối và khối lượng tài liệu khổng lồ.",
+   "summary": "Khoe sổ từ vựng highlight màu (00:29), đúng nhịp drop điệp khúc ở 00:31 cắt sang tờ kiểm tra viết tay đạt 33/33 khoanh tròn mực đỏ, rồi sang MacBook mở đề đọc hiểu trên chồng đề in (00:36–00:40).",
+   "transition": "Cú phóng mờ giật theo nhịp bass ở 00:40 sang góc cận sổ ghi chép."
+  },
+  {
+   "from": "00:40",
+   "to": "00:59",
+   "seconds": 19,
+   "role": "kết",
+   "emotion": "nhẹ nhõm",
+   "retention_function": "Giữ nhịp rung nhẹ trên chồng đề cực dày kèm điểm 36/40 và giấy nhớ dán chi chít, cố tình không hiện \"Top 2\" để giữ người xem ở lại đọc kỹ chi tiết hoặc xuống bình luận kể tiếp.",
+   "summary": "Cận cảnh cây bút đặt trên vở từ vựng viết kín hai cột có dấu tích (00:41–00:46), chuyển mờ tối (00:47–00:48) rồi chốt bằng xấp đề dày cộp điểm 36/40 dán đầy giấy nhớ ghi từ vựng đến hết 00:59.",
+   "transition": "Nhạc kết đột ngột theo khung hình cuối ở 00:59, tạo cảm giác tự lặp lại khi video quay về 00:00."
+  }
+ ],
+ "promise_answered_at": "00:16",
+ "winning_points": {
+  "best_metaphor": {
+   "text": "Đặt câu than quên \"Từ này nhìn quen lắm\" ngay trên nền loạt bài thi 39/40, 40/40, 33/33 và chồng tài liệu dày cộp — dùng sự tương phản hình–chữ như một phép ẩn dụ cho kiểu \"học bá khiêm tốn / cày nát đề vẫn sợ quên\".",
+   "t": "00:16",
+   "kind": "quan sát"
+  },
+  "quotable_line": {
+   "text": "Trung bình văn mẫu của mấy đứa học tiếng Anh: Top 1: \"Từ này nhìn quen lắm\"",
+   "t": "00:00",
+   "verbatim": true
+  },
+  "interrupts_per_10s": 2.0,
+  "interrupts": [
+   {
+    "t": "00:03",
+    "what": "Hiệu ứng nhòe chuyển động (motion blur) giật khung hình trên bảng từ vựng.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:05",
+    "what": "Hiệu ứng chia lưới nhiều trang từ vựng đồng bộ đúng lúc giọng hát remix vào.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:06",
+    "what": "Cắt cảnh đột ngột sang bàn học ánh sáng tối với đề đọc hiểu và bút màu hồng.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:10",
+    "what": "Đổi sang cảnh màn hình máy tính chứa bảng từ vựng có lớp phủ giao diện máy ảnh (Panorama/Photo/Pro).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:12",
+    "what": "Hiệu ứng ống ngắm CAM10/CAM11/CAM13 nhấp nháy chuyển góc.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:15",
+    "what": "Cú lia mờ ngang tốc độ cao chuyển sang loạt đề thi trắc nghiệm.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:17",
+    "what": "Hiệu ứng tách màu RGB (glitch) làm nổi bật điểm đỏ 39/40 và 40/40.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:23",
+    "what": "Cắt sang cảnh laptop hiển thị bảng tiến độ luyện đề kèm trang từ vựng viết tay.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:29",
+    "what": "Cắt sang trang vở từ vựng tô highlight nhiều màu rồi zoom nhòe ở 00:30.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:31",
+    "what": "Đúng nhịp drop điệp khúc, cắt sang bảng kẹp bài kiểm tra viết tay đạt điểm 33/33 giật theo tiếng trống.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:36",
+    "what": "Cắt sang MacBook mở bài đọc hiểu đặt trên chồng đề in.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:49",
+    "what": "Sau cú nhòe tối (00:47–00:48), mở ra cận cảnh xấp đề dày cộp điểm 36/40 dán đầy giấy nhớ vàng.",
+    "kind": "quan sát"
+   }
+  ]
+ },
+ "algorithmic_triggers": {
+  "comment": [
+   {
+    "what": "Chỉ ghi \"Top 1\" và cố tình bỏ lửng, không hề hiện Top 2 hay Top 3 suốt gần 1 phút.",
+    "why": "đồng cảm",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Chữ nói kiểu hay quên nhưng hình lại lộ điểm 39/40, 40/40, 33/33 và tên giáo viên ôn thi quen thuộc (Cô Vũ Thị Mai Phương).",
+    "why": "tranh luận",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Xuất hiện hàng loạt tài liệu ôn thi PRO 3M / PRO 3MPLUS và cách ghi chép bằng giấy nhớ.",
+    "why": "hỏi thêm",
+    "kind": "suy đoán"
+   }
+  ],
+  "save_share": [
+   {
+    "what": "Khung hình tràn ngập chồng đề dày, vở chép kín chữ và điểm gần tuyệt đối tạo cảm giác truyền động lực ôn thi (study motivation).",
+    "why": "gửi bạn bè",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Câu meme \"Từ này nhìn quen lắm\" đúng tâm lý chung của nhóm bạn cùng lớp hoặc nhóm ôn thi.",
+    "why": "gửi bạn bè",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Cách trình bày giấy nhớ từ vựng và lộ trình luyện đề hiển thị rõ trên khung hình.",
+    "why": "kiến thức ngách",
+    "kind": "suy đoán"
+   }
+  ]
+ },
+ "audio": {
+  "speech_pace": "Không có lời thoại nói; toàn bộ video dùng một dòng chữ tĩnh kết hợp nhạc nền V-pop remix tiết tấu nhanh.",
+  "emphasis": [
+   {
+    "t": "00:04",
+    "what": "Giọng hát vào câu mở đầu khớp với hiệu ứng chia lưới hình ảnh ở 00:05."
+   },
+   {
+    "t": "00:16",
+    "what": "Nhịp trống dồn và hiệu ứng tách màu RGB nhấn mạnh cảnh điểm thi 39/40 và 40/40."
+   },
+   {
+    "t": "00:31",
+    "what": "Nhạc thả bass vào điệp khúc (\"Anh xòe đôi bàn tay trắng...\") đồng bộ cú giật khung hình điểm 33/33."
+   },
+   {
+    "t": "00:49",
+    "what": "Nhịp nhạc duy trì cao trào đều đặn trên cảnh chồng đề 36/40 cho đến hết clip."
+   }
+  ],
+  "tone": "khác",
+  "music": "Nhạc nền V-pop remix/Vinahouse tiết tấu nhanh, bass mạnh và đều xuyên suốt từ 00:00 đến 00:59.",
+  "sfx": [
+   {
+    "t": null,
+    "what": "Không nghe thấy hiệu ứng âm thanh (SFX) tách biệt ngoài nhịp trống và chuyển đoạn của bản nhạc remix."
+   }
+  ]
+ },
+ "ending": {
+  "type": "khác",
+  "cta": ""
+ },
+ "arc": {
+  "name": "Tự giễu nỗi đau học tập nhưng lật kèo khoe thành quả thực chiến",
+  "format_compatibility": "dialogue_skit",
+  "skeleton": [
+   "[Câu cửa miệng tự giễu gắn nhãn 'Top 1' của một cộng đồng cụ thể đặt trên bối cảnh đặc trưng nhất]",
+   "[Chuỗi hình ảnh tăng áp lực cho thấy khối lượng công việc/kiến thức đồ sộ phía sau]",
+   "[Cú lật kèo thị giác: bằng chứng kết quả cao đối lập hoàn toàn với vẻ than thở ở dòng chữ]",
+   "[Đẩy cao trào nhịp điệu với thêm 2–3 bằng chứng thực chiến và công cụ làm việc dày đặc]",
+   "[Chốt bằng hình ảnh tổng lượng nỗ lực tích lũy, cố tình bỏ lửng 'Top 2' để người xem tự điền]"
+  ],
+  "hook_mechanism": "Dùng câu trích dẫn quen thuộc của người trong cuộc + nhãn xếp hạng 'Top 1' mở vòng lặp tò mò chưa đóng.",
+  "beats": [
+   {
+    "role": "hook",
+    "function": "Đặt câu nhận diện nỗi đau ngay giây đầu trên nền bảng từ vựng dày chữ, buộc người xem dừng lướt để đọc và chờ xem diễn biến tiếp theo.",
+    "seconds": 6,
+    "transition": "Hiệu ứng chia lưới nhiều ô kết hợp giật nhẹ theo nhịp trống chuyển sang cảnh tối hơn ở 00:06."
+   },
+   {
+    "role": "dẫn dắt",
+    "function": "Tăng cảm giác choáng ngợp về khối lượng kiến thức phải học bằng loạt góc quay tài liệu liên tiếp và giao diện máy ảnh giả lập.",
+    "seconds": 9,
+    "transition": "Cú lia mờ ngang (whip-pan) tốc độ cao ở 00:15 sang bàn trải đầy đề thi."
+   },
+   {
+    "role": "lật kèo",
+    "function": "Tạo cú đảo ngược ngầm (flex khéo): chữ thì than \"nhìn quen lắm\" nhưng hình lại khoe loạt bài thi điểm 39/40, 40/40 khiến người xem vừa bất ngờ vừa muốn xem tiếp mức độ cày cuốc.",
+    "seconds": 13,
+    "transition": "Chuyển cảnh mờ ngang theo nhịp nhạc sang trang từ vựng được tô highlight kín ở 00:29."
+   },
+   {
+    "role": "chứng minh",
+    "function": "Đẩy năng lượng lên cao nhất đúng đoạn điệp khúc remix dồn dập, liên tục bồi thêm bằng chứng điểm tuyệt đối và khối lượng tài liệu khổng lồ.",
+    "seconds": 12,
+    "transition": "Cú phóng mờ giật theo nhịp bass ở 00:40 sang góc cận sổ ghi chép."
+   },
+   {
+    "role": "kết",
+    "function": "Giữ nhịp rung nhẹ trên chồng đề cực dày kèm điểm 36/40 và giấy nhớ dán chi chít, cố tình không hiện \"Top 2\" để giữ người xem ở lại đọc kỹ chi tiết hoặc xuống bình luận kể tiếp.",
+    "seconds": 19,
+    "transition": "Nhạc kết đột ngột theo khung hình cuối ở 00:59, tạo cảm giác tự lặp lại khi video quay về 00:00."
+   }
+  ]
+ },
+ "emotional_arc": {
+  "opening_emotion": "Chạm nhột và bật cười đồng cảm (00:00–00:05) khi thấy câu cửa miệng của chính mình hiện lên.",
+  "vulnerability_dip": {
+   "t": "00:06",
+   "what": "Cảnh bàn học ánh sáng tối và danh sách từ vựng dài dằng dặc tạo cảm giác ngợp, nặng nề của quá trình ôn luyện."
+  },
+  "aha_peak": {
+   "t": "00:16",
+   "what": "Lộ loạt bài thi 39/40 và 40/40 tạo cú bất ngờ thú vị: hóa ra người kêu 'nhìn quen lắm' lại là người cày cực khủng."
+  },
+  "ending_tone": "Phấn chấn nhẹ kèm cảm giác nể phục và có chút thôi thúc tự học (study-spo) khi nhìn xấp đề dày dán đầy giấy nhớ."
+ },
+ "angles": {
+  "hi_oneup": {
+   "idea": "Chuyển hóa nỗi đau \"nhìn từ này quen lắm mà không nhớ nghĩa\" thành clip giải thích hiện tượng Ảo giác quen mặt (Illusion of Competence) trong học tập/ghi nhớ: vì sao đọc đi đọc lại ghi chú khiến não tưởng mình đã thuộc nhưng lúc cần lại trống rỗng, và cách đổi sang tự truy xuất (Active Recall) trong 3 bước ngắn bằng hoạt hình comic chibi + motion graphics (không quay mặt, không b-roll, không nhạc nền, giọng kể miền Nam xưng mình–bạn).",
+   "hook": "Có bao giờ bạn nhìn một từ hay một công thức, thấy nó quen kinh khủng... mà tới lúc cần xài thì đầu trống trơn không? Không phải bạn mau quên đâu, mà não mình đang bẫy bằng chiêu 'ảo giác quen mặt' đó.",
+   "length_s": 80
+  },
+  "vanhiep_tech": {
+   "idea": "Mượn cấu trúc câu \"Top 1 văn mẫu\" để cà khịa tình huống dev mở lại code cũ hoặc đọc docs/AI gen code rồi nói \"đoạn này nhìn quen lắm\" nhưng không hiểu luồng chạy; bóc tách bẫy Passive Recognition khi học lập trình bằng AI và đưa sơ đồ overlay 3 bước biến 'quen mặt code' thành Mental Model thật, cắt layer sơ đồ/minh họa mỗi 3–5 giây.",
+   "hook": "Top 1 văn mẫu của anh em dev khi đọc lại code mình viết 3 tháng trước hoặc code AI sinh ra: 'Đoạn này nhìn quen lắm... nhưng nó chạy kiểu gì thì quên rồi.'",
+   "length_s": 60
+  }
+ },
+ "craft_transfer": {
+  "metaphor_transfer": "Không dùng ẩn dụ bằng lời mà dùng phép đối lập thị giác: ghép một câu than thở phổ thông ('từ này nhìn quen lắm') lên hàng loạt bằng chứng kỷ luật khắc nghiệt (đề 40/40, 33/33, xấp giấy nhớ dày cộp), biến sự tương phản chữ–hình thành thông điệp ngầm về sự chăm chỉ.",
+  "sentence_rhythm": "Cấu trúc văn bản cực ngắn chia 2 tầng rõ nhịp: tầng 1 định danh đối tượng ('Trung bình văn mẫu của mấy đứa học tiếng Anh:') — khoảng nghỉ xuống dòng — tầng 2 đấm thẳng cú trích dẫn 5 chữ ('Top 1: \"Từ này nhìn quen lắm\"'), đọc gọn trong dưới 2 giây.",
+  "spoken_pivots": [
+   "Trung bình văn mẫu của mấy đứa [nhóm đối tượng]...",
+   "Top 1: \"[Câu cửa miệng chạm nhột]\"",
+   "Nói thì nói vậy thôi, chứ mở [bằng chứng thực tế] ra thì..."
+  ],
+  "pacing_3_5s": "Dùng mẫu dựng giật nhịp theo bass (beat-sync montage): cứ 3–5 giây lại thay đổi hẳn góc quay, ánh sáng hoặc lớp hiệu ứng (chia lưới, khung camera viewfinder, tách màu RGB, zoom mờ) để giữ mắt người xem dù chữ trên màn hình đứng yên suốt 59 giây.",
+  "audience_pains": [
+   "Học hàng trăm từ vựng mỗi tuần nhưng gặp lại trong đề vẫn chỉ thấy 'quen quen' mà không bật ra được nghĩa chính xác.",
+   "Áp lực khối lượng đề ôn thi dày đặc và nỗi sợ học nhiều nhưng đi thi vẫn quên.",
+   "Tâm lý vừa muốn đồng cảm với bạn đồng trang lứa vừa bị kích thích bởi thành tích điểm cao (39/40, 40/40) của người khác."
+  ]
+ },
+ "why_it_works": [
+  {
+   "claim": "Cố tình chỉ đặt nhãn \"Top 1\" mà không bao giờ hiện Top 2 tạo hiệu ứng Zeigarnik (vòng lặp chưa đóng), giữ người xem xem sâu hơn và kích thích họ tự điền \"Top 2, Top 3\" ở phần bình luận.",
+   "evidence": "00:00–00:59",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Sự đối lập giữa dòng chữ tự giễu (quên từ) và hình ảnh khoe điểm gần tuyệt đối (39/40, 40/40, 33/33) tạo cú lật kèo ngầm khiến khán giả vừa thấy hài vừa có động lực lưu hoặc gửi bạn bè.",
+   "evidence": "00:16–00:35",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Dòng chữ tĩnh ngắn gọn giúp mắt người xem rảnh để soi chi tiết trong hậu cảnh (điểm số, tên khóa học, chữ viết tay, từ vựng trên giấy nhớ), làm tăng thời gian xem và tỷ lệ xem lại.",
+   "evidence": "00:00, 00:17, 00:49",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Nhịp cắt cảnh và hiệu ứng CapCut khớp chặt với tiếng trống nhạc remix duy trì kích thích thị giác mỗi 3–5 giây dù video không có lời thoại hay mặt người.",
+   "evidence": "00:05, 00:10, 00:15, 00:31",
+   "kind": "quan sát"
+  }
+ ],
+ "model_note": "Gemini 4",
+ "apify": {
+  "url": "https://www.tiktok.com/@minggbest/video/7696495062217248018",
+  "caption": "Trung bình văn mẫu của mấy đứa học tiếng Anh:\nTop 1: \"Từ này nhìn quen lắm\"\n#xh #viral #hoctap📚 #trending #studytok ",
+  "author": {
+   "id": "7231020391468270598",
+   "name": "minggbest",
+   "nick": "Dương tính với bài tập",
+   "profile": "https://www.tiktok.com/@minggbest",
+   "fans": 7490
+  },
+  "play_count": 796400,
+  "like_count": 155100,
+  "share_count": 43200,
+  "comment_count": 901,
+  "duration_s": 59,
+  "music": {
+   "id": "7696495743808441096",
+   "name": "âm thanh gốc - Dương tính với bài tập",
+   "author": "Dương tính với bài tập",
+   "original": true
+  },
+  "hashtags": [
+   "xh",
+   "viral",
+   "hoctap📚",
+   "trending",
+   "studytok",
+   "hoctap"
+  ],
+  "subtitle_or_transcript": {
+   "kind": "caption_fallback",
+   "text": "Trung bình văn mẫu của mấy đứa học tiếng Anh:\nTop 1: \"Từ này nhìn quen lắm\"\n#xh #viral #hoctap📚 #trending #studytok ",
+   "links": []
+  },
+  "top_comments": [],
+  "source_actor": "clockworks/tiktok-scraper",
+  "raw_id": "7696495062217248018",
+  "create_time": "2026-10-14T12:11:46.000Z",
+  "is_slideshow": false,
+  "outlier": 106.33,
+  "basis": "fans"
+ },
+ "_meta": {
+  "date": "2026-11-27",
+  "video": "7696495062217248018.mp4",
+  "cli": "agy 1.5.18",
+  "model": "agy-default",
+  "source": "https://www.tiktok.com/@minggbest/video/7696495062217248018",
+  "arc": "ARC-003",
+  "arc_new": false
+ }
+}

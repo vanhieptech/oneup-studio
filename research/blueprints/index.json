@@ -255,9 +255,18 @@
      "followers": 0,
      "date": "2026-11-27",
      "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md"
+    },
+    {
+     "source": "https://www.tiktok.com/@minggbest/video/7696495062217248018",
+     "creator": "minggbest",
+     "ratio": 106.33,
+     "views": 796400,
+     "followers": 7490,
+     "date": "2026-11-27",
+     "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md"
     }
    ],
-   "seen": 1
+   "seen": 2
   }
  ],
  "ideas": [
@@ -298,6 +307,26 @@
    "hook": "Gần 30 tuổi mới học lại từ dòng code đầu tiên, chung team với mấy bạn nhỏ hơn gần chục tuổi — đây là 5 con số thực tế ít ai kể.",
    "length_s": 65,
    "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md",
+   "date": "2026-11-27",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "hi_oneup",
+   "idea": "Chuyển hóa nỗi đau \"nhìn từ này quen lắm mà không nhớ nghĩa\" thành clip giải thích hiện tượng Ảo giác quen mặt (Illusion of Competence) trong học tập/ghi nhớ: vì sao đọc đi đọc lại ghi chú khiến não tưởng mình đã thuộc nhưng lúc cần lại trống rỗng, và cách đổi sang tự truy xuất (Active Recall) trong 3 bước ngắn bằng hoạt hình comic chibi + motion graphics (không quay mặt, không b-roll, không nhạc nền, giọng kể miền Nam xưng mình–bạn).",
+   "hook": "Có bao giờ bạn nhìn một từ hay một công thức, thấy nó quen kinh khủng... mà tới lúc cần xài thì đầu trống trơn không? Không phải bạn mau quên đâu, mà não mình đang bẫy bằng chiêu 'ảo giác quen mặt' đó.",
+   "length_s": 80,
+   "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md",
+   "date": "2026-11-27",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "vanhiep_tech",
+   "idea": "Mượn cấu trúc câu \"Top 1 văn mẫu\" để cà khịa tình huống dev mở lại code cũ hoặc đọc docs/AI gen code rồi nói \"đoạn này nhìn quen lắm\" nhưng không hiểu luồng chạy; bóc tách bẫy Passive Recognition khi học lập trình bằng AI và đưa sơ đồ overlay 3 bước biến 'quen mặt code' thành Mental Model thật, cắt layer sơ đồ/minh họa mỗi 3–5 giây.",
+   "hook": "Top 1 văn mẫu của anh em dev khi đọc lại code mình viết 3 tháng trước hoặc code AI sinh ra: 'Đoạn này nhìn quen lắm... nhưng nó chạy kiểu gì thì quên rồi.'",
+   "length_s": 60,
+   "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md",
    "date": "2026-11-27",
    "status": "ý tưởng"
   }

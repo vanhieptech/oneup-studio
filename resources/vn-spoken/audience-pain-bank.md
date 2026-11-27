@@ -23,3 +23,6 @@ Nơi tích lũy các câu hỏi, nỗi đau và cách diễn đạt cửa miện
 | 2026-11-27 | trends-2026-11-27-01 | hoc-tap, productivity | «Nỗi sợ U30 đã quá muộn để học lại, thi lại hoặc đổi hướng cuộc đời» | Tự động trích từ Khối 7 / comment |
 | 2026-11-27 | trends-2026-11-27-01 | hoc-tap, productivity | «Tâm lý ngại ánh nhìn và sự chênh lệch tuổi tác khi học chung với người nhỏ hơn hoặc thầy cô trẻ hơn» | Tự động trích từ Khối 7 / comment |
 | 2026-11-27 | trends-2026-11-27-01 | hoc-tap, productivity | «Áp lực cân bằng giữa chi phí, quãng đường, thời gian cày cuốc và mục tiêu điểm số cao» | Tự động trích từ Khối 7 / comment |
+| 2026-11-27 | trends-2026-11-27-14 | Tự giễu nỗi đau học tập nhưng lật kèo khoe thành quả thực chiến | «Học hàng trăm từ vựng mỗi tuần nhưng gặp lại trong đề vẫn chỉ thấy 'quen quen' mà không bật ra được nghĩa chính xác.» | Tự động trích từ Khối 7 / comment |
+| 2026-11-27 | trends-2026-11-27-14 | Tự giễu nỗi đau học tập nhưng lật kèo khoe thành quả thực chiến | «Áp lực khối lượng đề ôn thi dày đặc và nỗi sợ học nhiều nhưng đi thi vẫn quên.» | Tự động trích từ Khối 7 / comment |
+| 2026-11-27 | trends-2026-11-27-14 | Tự giễu nỗi đau học tập nhưng lật kèo khoe thành quả thực chiến | «Tâm lý vừa muốn đồng cảm với bạn đồng trang lứa vừa bị kích thích bởi thành tích điểm cao (39/40, 40/40) của người khác.» | Tự động trích từ Khối 7 / comment |

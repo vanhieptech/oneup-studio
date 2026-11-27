@@ -63,8 +63,10 @@ def load_config(path=RADAR_CFG):
 
 
 def ytdlp_cmd():
-    b = shutil.which("yt-dlp")
-    return [b] if b else [sys.executable, "-m", "yt_dlp"]
+    for cand in (shutil.which("yt-dlp"), "/opt/homebrew/bin/yt-dlp", "/usr/local/bin/yt-dlp"):
+        if cand and Path(cand).exists():
+            return [cand]
+    return [sys.executable, "-m", "yt_dlp"]
 
 
 def fetch_channel_entries(url, limit=10, timeout=90):

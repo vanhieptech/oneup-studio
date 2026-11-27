@@ -76,19 +76,61 @@ def cut_accuracy(data, timing_path):
     d = [min(abs(g - s) for s in starts) for g in guesses]
     return {"n": len(d), "mean_s": round(sum(d) / len(d), 2), "max_s": round(max(d), 2), "within_1s": sum(1 for x in d if x <= 1.0)}
 
-def run_agy(video, model):
+def compact_video(video):
+    """Downscale large videos (>4 MB) to 360p@12fps mono so agy/Gemini handles 60–180s clips reliably."""
+    import shutil
+    try:
+        if os.path.getsize(video) <= 4_000_000:
+            return video, False
+    except OSError:
+        return video, False
+    ffmpeg = shutil.which("ffmpeg") or ("/opt/homebrew/bin/ffmpeg" if os.path.exists("/opt/homebrew/bin/ffmpeg") else None)
+    if not ffmpeg:
+        return video, False
+    out = os.path.splitext(video)[0] + ".compact.mp4"
+    r = subprocess.run([
+        ffmpeg, "-y", "-i", video,
+        "-vf", "scale='min(360,iw)':-2,fps=12",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "32",
+        "-c:a", "aac", "-ac", "1", "-b:a", "48k",
+        out,
+    ], capture_output=True, text=True, timeout=180)
+    if r.returncode == 0 and os.path.exists(out) and os.path.getsize(out) > 10_000:
+        return out, True
+    return video, False
+
+def run_agy(video, model, retries=2):
     """Antigravity CLI (`agy -p`, Google sign-in). Returns the same shape as run_gemini: {"response": text, "stats": {...}}."""
-    prompt = load_prompt() + f"\n\nVideo cần phân tích: @{os.path.abspath(video)}"
-    args = [P.AGY_BIN, "-p", prompt, "--output-format", "json", "--mode", "plan", "--add-dir", os.path.dirname(os.path.abspath(video)),
-            "--print-timeout", "900s"]
-    if model: args += ["--model", model]
-    r = subprocess.run(args, capture_output=True, text=True, timeout=960, cwd=os.path.dirname(os.path.abspath(video)))
-    try: out = json.loads(r.stdout.strip().splitlines()[-1])
-    except (json.JSONDecodeError, IndexError): out = {"status": "ERROR", "error": (r.stderr or r.stdout).strip()[-500:]}
-    if out.get("status") == "ERROR" or out.get("error"):
-        print(f"agy error: {out.get('error')}", file=sys.stderr); sys.exit(3)
-    return {"response": out.get("response", ""), "stats": {"models": {out.get("model") or model or "agy-default": out.get("usage", {})}},
-            "engine": "agy"}
+    send_video, is_temp = compact_video(video)
+    try:
+        prompt = (
+            load_prompt()
+            + "\n\nYêu cầu bắt buộc: chỉ trả về duy nhất 1 JSON object hợp lệ trong câu trả lời cuối cùng, không tạo file và không để response trống."
+            + f"\n\nVideo cần phân tích: @{os.path.abspath(send_video)}"
+        )
+        args = [P.AGY_BIN, "-p", prompt, "--output-format", "json", "--mode", "plan", "--add-dir", os.path.dirname(os.path.abspath(send_video)),
+                "--print-timeout", "900s"]
+        if model: args += ["--model", model]
+        last_out = {}
+        for attempt in range(1, retries + 1):
+            r = subprocess.run(args, capture_output=True, text=True, timeout=960, cwd=os.path.dirname(os.path.abspath(send_video)))
+            try: out = json.loads(r.stdout.strip().splitlines()[-1])
+            except (json.JSONDecodeError, IndexError): out = {"status": "ERROR", "error": (r.stderr or r.stdout).strip()[-500:]}
+            if out.get("status") == "ERROR" or out.get("error"):
+                if attempt < retries:
+                    print(f"warn: agy attempt {attempt} error ({out.get('error')}), retrying...", file=sys.stderr)
+                    continue
+                print(f"agy error: {out.get('error')}", file=sys.stderr); sys.exit(3)
+            last_out = out
+            if (out.get("response") or "").strip():
+                break
+            if attempt < retries:
+                print(f"warn: agy attempt {attempt} returned empty response, retrying...", file=sys.stderr)
+        return {"response": last_out.get("response", ""), "stats": {"models": {last_out.get("model") or model or "agy-default": last_out.get("usage", {})}},
+                "engine": "agy"}
+    finally:
+        if is_temp and os.path.exists(send_video):
+            os.remove(send_video)
 
 def run_engine(video, model, engine):
     if engine == "agy" or (engine == "auto" and P.AGY_BIN and os.path.exists(P.AGY_BIN)):

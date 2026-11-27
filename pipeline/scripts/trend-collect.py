@@ -10,7 +10,7 @@ per-source status, normalises to the raw.json item schema, clusters near-duplica
 same keys (source, title, url, cat, lang, rank, metric). X lives behind MCP so a script cannot call it.
 No logins, no cookies.
 """
-import json, re, sys, html, subprocess, datetime as dt, urllib.request, urllib.parse, unicodedata
+import json, re, sys, html, shutil, subprocess, datetime as dt, urllib.error, urllib.request, urllib.parse, unicodedata
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -53,7 +53,17 @@ def parse_feed(text):
                     "summary": clean(d.text if d is not None else "")[:300], "date": (p.text or "").strip() if p is not None else ""})
     return out
 
-def s_rss(s): return parse_feed(get(s["url"]))
+def s_rss(s):
+    try:
+        return parse_feed(get(s["url"]))
+    except urllib.error.HTTPError as e:
+        if e.code in (403, 429):
+            import ego_crawl as EGO
+            if EGO.available():
+                items = EGO.crawl_feed(s["url"], max_items=s.get("max", 15))
+                if items:
+                    return items
+        raise
 def s_gnews(s):
     if s.get("q"): u = "https://news.google.com/rss/search?q=" + urllib.parse.quote(s["q"])
     else: u = "https://news.google.com/rss?"
@@ -99,8 +109,16 @@ def s_kworb(s):
     for m in re.finditer(r'<td class="text mp"><div>(.*?)</div></td>', t):
         out.append({"title": clean(m.group(1)), "url": s["url"], "summary": ""})
     return out
+def _ytdlp_cmd():
+    for cand in (shutil.which("yt-dlp"), "/opt/homebrew/bin/yt-dlp", "/usr/local/bin/yt-dlp"):
+        if cand and _o.path.exists(cand):
+            return [cand]
+    return [sys.executable, "-m", "yt_dlp"]
+
 def s_yt(s):
-    r = subprocess.run([sys.executable, "-m", "yt_dlp", "--flat-playlist", "-J", f"ytsearch{s.get('max', 8)}:{s['q']}"], capture_output=True, text=True, timeout=60)
+    r = subprocess.run([*_ytdlp_cmd(), "--flat-playlist", "-J", "--no-warnings", f"ytsearch{s.get('max', 8)}:{s['q']}"], capture_output=True, text=True, timeout=60)
+    if r.returncode != 0 or not r.stdout.strip():
+        raise RuntimeError(f"yt-dlp exit {r.returncode}: {(r.stderr or r.stdout).strip()[:160]}")
     d = json.loads(r.stdout)
     return [{"title": e.get("title", ""), "url": e.get("url") or f"https://www.youtube.com/watch?v={e['id']}", "summary": "",
              "metric": {"views": e.get("view_count")}} for e in d.get("entries", [])]
@@ -114,8 +132,13 @@ def s_tinyfish_tiktok(s):  # TikTok clip discovery only (fetch of TikTok pages i
     return [{"title": c["title"], "url": c["url"], "summary": c["snippet"], "metric": {}, "creator": c["creator"], "date": c["date"]}
             for c in TF.tiktok_discover([s["q"]], s.get("hl", "vi"), s.get("gl", "VN"))]
 
+def s_ego_crawl(s):  # native ego-browser crawl for JS-rendered / logged-in / Cloudflare-protected hubs
+    import ego_crawl as EGO
+    return EGO.crawl_feed(s["url"], max_items=s.get("max", 15))
+
 FN = {"rss": s_rss, "gnews": s_gnews, "gtrends": s_gtrends, "hn": s_hn, "wiki": s_wiki, "bsky_trending": s_bsky_trending,
-      "bsky_search": s_bsky_search, "kworb": s_kworb, "yt": s_yt, "tinyfish": s_tinyfish, "tinyfish_tiktok": s_tinyfish_tiktok}
+      "bsky_search": s_bsky_search, "kworb": s_kworb, "yt": s_yt, "tinyfish": s_tinyfish, "tinyfish_tiktok": s_tinyfish_tiktok,
+      "ego_crawl": s_ego_crawl}
 
 def run(s):
     t0 = dt.datetime.now()
