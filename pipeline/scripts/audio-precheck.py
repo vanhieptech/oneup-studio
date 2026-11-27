@@ -52,6 +52,32 @@ ENTRY_MAX_SYL = 65     # b01+b02 > 65 (~22s) → SLOW_ENTRY
 BEAT_MAX_SYL = 45      # beat nào > 45 (~15s) → BEAT_BLOAT
 HOOK_AUDITION_TARGET_S = 20.0
 HOOK_AUDITION_MAX_SYL = 70
+FLAT_CADENCE_RUN = 4
+FLAT_CADENCE_SPREAD = 3
+MIN_BEATS_FOR_DIP_CHECK = 5
+
+VULNERABILITY_CUES_RE = re.compile(
+    r"(?i)\b(mình|tự trách|nản|bỏ cuộc|sợ|ngại|mệt|chán|quên sạch|hông nổi|không nổi|thất vọng|ngợp|hoang mang|khó chịu|tưởng|tự hỏi|chạnh|tủi|mắc lười|rối|chưa xong|cạn|đuối|kỳ cục|lỡ)\b"
+)
+SERIOUS_EVIDENCE_RE = re.compile(
+    r"(?i)\b(\d+\s*(%|ngày|tuần|tháng|năm|người|phút|giờ|lần)|nghiên cứu|thí nghiệm|đại học|đo được|trung bình|thật ra|hóa ra|con số)\b"
+)
+WARM_CTA_RE = re.compile(
+    r"(?i)\b(comment|bình luận|kể mình nghe|giống mình|nghĩ sao|vượt qua|chia sẻ|góc nhìn)\b"
+)
+
+
+def suggest_voice_ref(beat_idx, total_beats, text):
+    """Map beat to DL-073 emotional F5 voice ref (thai-son-v2 / thai-son-serious / thai-son-happy)."""
+    if beat_idx == total_beats - 1 and (WARM_CTA_RE.search(text) or "?" in text):
+        return "thai-son-happy", "warm_cta"
+    if 1 <= beat_idx <= max(1, total_beats // 2) and VULNERABILITY_CUES_RE.search(text) and not SERIOUS_EVIDENCE_RE.search(text):
+        return "thai-son-v2", "vulnerability_dip"
+    if SERIOUS_EVIDENCE_RE.search(text) and beat_idx >= 1:
+        return "thai-son-serious", "aha_peak"
+    if beat_idx == 0:
+        return "thai-son-v2", "hook_spark"
+    return "thai-son-v2", "catharsis" if beat_idx >= total_beats - 2 else "curiosity"
 
 PAUSE_RE = re.compile(r"(?:,|—|–|\.\.\.|…|;|:)")
 SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
@@ -266,7 +292,9 @@ def analyze_beats(beats, archive_hooks=None):
     total_syl = 0
     total_est = 0.0
 
-    for b in beats:
+    all_sent_syls = []
+    n_beats = len(beats)
+    for idx, b in enumerate(beats):
         clean = strip_markup(b["text"])
         syls = syllables(clean)
         n_syl = len(syls)
@@ -276,6 +304,7 @@ def analyze_beats(beats, archive_hooks=None):
         used_dur = dur_s if dur_s and dur_s > 0 else est_s
         total_est += used_dur
         rate = round(n_syl / used_dur, 2) if used_dur > 0 else 0.0
+        v_ref, emo_role = suggest_voice_ref(idx, n_beats, clean)
 
         b_warns = []
         # 1. Speech rate check (explicit duration vs natural pace, or severe breath-density anomaly)
@@ -294,6 +323,7 @@ def analyze_beats(beats, archive_hooks=None):
         long_sents = []
         for s in sents:
             s_syl = len(syllables(s))
+            all_sent_syls.append((b["id"], s_syl))
             has_pause = bool(PAUSE_RE.search(s))
             if s_syl > MAX_UNBROKEN_SYLLABLES and not has_pause:
                 long_sents.append((s_syl, s))
@@ -318,6 +348,8 @@ def analyze_beats(beats, archive_hooks=None):
             "estimated_s": est_s,
             "rate_syl_s": rate,
             "rate_in_target": RATE_TARGET_MIN <= rate <= RATE_TARGET_MAX,
+            "voice_ref": v_ref,
+            "emotion_role": emo_role,
             "opener_toks": _norm_toks(clean)[:3],
             "warnings": b_warns,
         })
@@ -365,9 +397,42 @@ def analyze_beats(beats, archive_hooks=None):
             if report_beats:
                 report_beats[0]["warnings"].append(w)
 
+    # 5. Emotional Trajectory & Cadence Contrast (F4, DL-082)
+    # 5a. FLAT_CADENCE: >= 4 consecutive sentences with syllable length spread <= 3 (monotonous pacing)
+    if len(all_sent_syls) >= FLAT_CADENCE_RUN:
+        for i in range(len(all_sent_syls) - FLAT_CADENCE_RUN + 1):
+            window = all_sent_syls[i : i + FLAT_CADENCE_RUN]
+            lens = [x[1] for x in window]
+            if max(lens) - min(lens) <= FLAT_CADENCE_SPREAD:
+                bid_span = f"{window[0][0]}..{window[-1][0]}"
+                w = {
+                    "code": "FLAT_CADENCE",
+                    "beat": bid_span,
+                    "message": f"{bid_span}: {FLAT_CADENCE_RUN} câu liên tiếp có độ dài đều nhau ({lens} âm tiết, chênh ≤ {FLAT_CADENCE_SPREAD}) → thiếu tương phản nhịp kể dài (16–24) và câu đọng ngắn (6–10)",
+                }
+                warnings.append(w)
+                tgt = next((rb for rb in report_beats if rb["id"] == window[-1][0]), report_beats[-1])
+                tgt["warnings"].append(w)
+                break
+
+    # 5b. MISSING_VULNERABILITY_DIP: full script (>= 5 beats) lacking personal/vulnerability dip in first half
+    if len(beats) >= MIN_BEATS_FOR_DIP_CHECK:
+        first_half = " ".join(strip_markup(b["text"]) for b in beats[: max(2, len(beats) // 2)])
+        if not VULNERABILITY_CUES_RE.search(first_half):
+            w = {
+                "code": "MISSING_VULNERABILITY_DIP",
+                "beat": f"{beats[0]['id']}..{beats[max(1, len(beats)//2 - 1)]['id']}",
+                "message": "Nửa đầu kịch bản chưa có nhịp chùng đồng cảm / cảm giác thật của người trong cuộc (Vulnerability Dip) → dễ nghe khô như đọc báo cáo",
+            }
+            warnings.append(w)
+            report_beats[1]["warnings"].append(w)
+
+    voice_ref_map = {rb["id"]: {"voice_ref": rb["voice_ref"], "emotion_role": rb["emotion_role"]} for rb in report_beats}
+
     return {
         "beats": report_beats,
         "warnings": warnings,
+        "voice_ref_map": voice_ref_map,
         "total_syllables": total_syl,
         "estimated_total_s": round(total_est, 1),
         "ok": len(warnings) == 0,
@@ -443,13 +508,14 @@ def format_report(res, script_path):
         f"Audio-Back QA: {script_path}",
         f"Tổng: {len(res['beats'])} beat · {res['total_syllables']} âm tiết · ước ~{res['estimated_total_s']}s (chuẩn nói {RATE_TARGET_MIN}–{RATE_TARGET_MAX} âm tiết/s)",
         "",
-        "| Beat | Âm tiết | Thời lượng | Tốc độ (âm tiết/s) | Trạng thái |",
-        "|---|---:|---:|---:|---|",
+        "| Beat | Âm tiết | Thời lượng | Tốc độ (âm tiết/s) | Giọng F5 (gợi ý) | Trạng thái |",
+        "|---|---:|---:|---:|---|---|",
     ]
     for b in res["beats"]:
         dur = f"{b['duration_s']}s" if b["duration_s"] else f"~{b['estimated_s']}s"
         st = "⚠ " + ", ".join(w["code"] for w in b["warnings"]) if b["warnings"] else "✔ ổn"
-        lines.append(f"| {b['id']} | {b['syllables']} | {dur} | {b['rate_syl_s']:.2f} | {st} |")
+        vr = f"`{b.get('voice_ref', 'thai-son-v2')}` ({b.get('emotion_role', '')})"
+        lines.append(f"| {b['id']} | {b['syllables']} | {dur} | {b['rate_syl_s']:.2f} | {vr} | {st} |")
     if res["warnings"]:
         lines += ["", f"Cảnh báo ({len(res['warnings'])}):"] + [f"  ⚠ {w['message']}" for w in res["warnings"]]
     else:

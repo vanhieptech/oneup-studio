@@ -164,6 +164,37 @@ def _label(sentence):
     return "Next"
 
 
+EMOTION_CUES = re.compile(
+    r"(?i)\b(nhưng|mà|thật ra|hóa ra|tưởng|tự trách|nản|mỏi|bỏ cuộc|sợ|lo|nhẹ|nhõm|quên sạch|không nhích|hông nhích|vỡ òa|chạnh|tủi|cười|giật mình|bật ngửa)\b|[?!…]"
+)
+
+
+def _emotional_peak_sentence(sents):
+    """Score sentences for genuine emotional/contrast/reflection peak instead of picking the longest sentence."""
+    if not sents:
+        return "", ""
+    best, best_score, best_why = sents[0], -1.0, "câu mở đầu"
+    for i, s in enumerate(sents):
+        toks = _words(s)
+        n = len(toks)
+        cues = EMOTION_CUES.findall(s)
+        score = len(cues) * 2.0
+        reasons = []
+        if cues:
+            reasons.append("chứa tín hiệu cảm xúc/tương phản")
+        if 5 <= n <= 18:
+            score += 1.5
+            reasons.append("nhịp gọn dễ đọng")
+        if any(w in toks for w in ("mình", "tôi", "bạn")):
+            score += 1.0
+            reasons.append("ngôi kể gần")
+        if i > 0 and i < len(sents) - 1:
+            score += 0.5
+        if score > best_score:
+            best, best_score, best_why = s, score, ", ".join(reasons) or "câu nổi bật trong transcript"
+    return best, best_why
+
+
 def local_craft(text, duration=None):
     """Four sections (+ Compression Audit) from a plain transcript. Does not add facts the text lacks."""
     sents = split_sentences(text)
@@ -173,12 +204,12 @@ def local_craft(text, duration=None):
             links.append(f"- Mở: {sent}")
             continue
         links.append(f"- {_label(sent)}: «{sent}» đi tiếp từ câu trước, không chèn từ nối ngoài lời.")
-    peak = max(sents, key=lambda s: len(s.split())) if sents else ""
+    peak, peak_why = _emotional_peak_sentence(sents)
     return {
         "verbatim": text.strip(),
         "causal": "\n".join(links) or "- Transcript không có câu.",
         "skipped": "Transcript không liệt kê phần tác giả đã lược. Không suy diễn chi tiết không có trong lời.",
-        "peak": f"Câu dài nhất trong transcript (chưa phải cảm xúc bịa): «{peak}»" if peak else "Không có câu.",
+        "peak": f"Điểm nhấn cảm xúc quan sát trong transcript ({peak_why}): «{peak}»" if peak else "Không có câu.",
         "compression": compression_audit(text, duration),
     }
 
@@ -382,6 +413,63 @@ def write_study(slug, title, source, extractor, craft, out=None, updated="2026-1
     return path
 
 
+def transcribe_media_local(media_path, lang="vi", timeout=300):
+    """Transcribe local .mp4/.wav/.m4a via local faster-whisper (~/oneup-tools or active python). Returns (text, duration_s, err)."""
+    mp = Path(media_path)
+    if not mp.exists():
+        return "", None, f"không tìm thấy file: {media_path}"
+    candidates = [
+        Path.home() / "oneup-tools/whisper-venv/bin/python",
+        Path.home() / "oneup-tools/f5tts-venv/bin/python",
+        Path(sys.executable),
+    ]
+    py = next((str(p) for p in candidates if p.exists()), sys.executable)
+    snippet = (
+        "import json, sys\n"
+        "from faster_whisper import WhisperModel\n"
+        "m = WhisperModel('small', device='cpu', compute_type='int8')\n"
+        "segs, info = m.transcribe(sys.argv[1], language=sys.argv[2])\n"
+        "txt = ' '.join(s.text.strip() for s in segs if s.text.strip())\n"
+        "print(json.dumps({'text': txt, 'duration': round(float(info.duration or 0), 1)}, ensure_ascii=False))\n"
+    )
+    try:
+        proc = _run([py, "-c", snippet, str(mp), lang], timeout=timeout)
+    except (OSError, subprocess.TimeoutExpired) as e:
+        return "", None, f"lỗi gọi faster-whisper: {e}"
+    if proc.returncode != 0:
+        return "", None, (proc.stderr or proc.stdout or "").strip()[-240:]
+    import json as _json
+    for line in reversed((proc.stdout or "").splitlines()):
+        line = line.strip()
+        if line.startswith("{"):
+            try:
+                doc = _json.loads(line)
+                return doc.get("text", ""), doc.get("duration"), ""
+            except _json.JSONDecodeError:
+                pass
+    return "", None, "faster-whisper không trả JSON hợp lệ"
+
+
+def load_recent_craft_pivots(craft_dir=None, limit=6):
+    """Read non-connector spoken transition samples from research/references/craft-studies/*.md for Gate 0."""
+    d = Path(craft_dir or OUT_DIR)
+    if not d.exists():
+        return []
+    pivots = []
+    for f in sorted(d.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True):
+        txt = f.read_text(encoding="utf-8", errors="replace")
+        if "### Mẫu câu chuyển ý không dùng liên từ" not in txt:
+            continue
+        sec = txt.split("### Mẫu câu chuyển ý không dùng liên từ", 1)[1].split("\n## ", 1)[0]
+        for ln in sec.splitlines():
+            ln = ln.strip()
+            if ln.startswith("- «") and "Không bịa" not in ln:
+                pivots.append({"source": f.stem, "sample": ln[2:].strip()})
+                if len(pivots) >= limit:
+                    return pivots
+    return pivots
+
+
 def main(argv=None):
     a = list(sys.argv[1:] if argv is None else argv)
 
@@ -414,8 +502,13 @@ def main(argv=None):
     else:
         source = media
         slug = opt("--slug") or slugify(Path(media).stem)
-        print("File .mp4 cần transcript kèm theo (--transcript) hoặc --url để yt-dlp lấy phụ đề.", file=sys.stderr)
-        return 2
+        text, dur_w, err = transcribe_media_local(media, lang=opt("--lang", "vi"))
+        if not text:
+            print(f"File .mp4 chưa bóc được bằng faster-whisper ({err}). Cung cấp --transcript hoặc --url có phụ đề.", file=sys.stderr)
+            return 2
+        speech = text
+        if duration is None and dur_w:
+            duration = dur_w
     craft, how = extract(text, extractor, duration, speech)
     title = opt("--title") or f"Craft study {slug}"
     path = write_study(slug, title, source, how, craft, opt("--out"))

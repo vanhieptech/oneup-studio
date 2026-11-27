@@ -1,13 +1,13 @@
 {
   "id": "review-golden.index",
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "schema": "id, verdict (approved|rejected), source (đường dẫn hoặc `git show <commit>:<path>`), hiep_quote (nguyên văn; '|' tách nhiều tin), lesson; thêm: clip, version, quote_kind (verbatim|relayed|verbatim-instruction|none), lesson_id, excerpt_file, found",
   "counts": {
-    "total": 25,
+    "total": 38,
     "approved": 5,
-    "rejected": 20,
+    "rejected": 33,
     "rejected_with_excerpt": 16,
-    "rejected_not_found": 4
+    "rejected_not_found": 17
   },
   "samples": [
     {
@@ -335,6 +335,175 @@
       "lesson_id": "DL-069",
       "excerpt_file": null,
       "found": true
+    },
+    {
+      "id": "r-c06-v3-4b16165",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v3 4b16165",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«Script vẫn xàm thiếu tự nhiên, cả ai nói lý do nghe mới quê tuần .. thấy ngại»",
+      "quote_kind": "verbatim",
+      "lesson": "L-106; v3 r2 8df074e",
+      "lesson_id": "L-106",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v3-r2-8df074e",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v3 r2 8df074e",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«Các câu văn vẫn rời rạc không rõ nghĩa k có liên kết không có cấu trúc tuần tự gì rõ ràng»",
+      "quote_kind": "verbatim",
+      "lesson": "L-107; v3 r3 0a438dc",
+      "lesson_id": "L-107",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v3-r3-0a438dc",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v3 r3 0a438dc",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«làm lại» (giờ lấy từ transcript session «Make video»)",
+      "quote_kind": "verbatim",
+      "lesson": "v4 e0cde74",
+      "lesson_id": "",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v4-877bf9c",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v4 877bf9c",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«Sửa và chấm lại»",
+      "quote_kind": "verbatim",
+      "lesson": "v4 r1 5593c26",
+      "lesson_id": "",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v6-d0cb97b",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v6 d0cb97b",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«rời rạc, hook không liên quan, nghe xong mù mờ»",
+      "quote_kind": "verbatim",
+      "lesson": "v7 4e8e499 (Single-Point Alignment + Semantic Bridge)",
+      "lesson_id": "",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v7-e4e6a14",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v7 e4e6a14",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«câu văn không đúng ngữ nghĩa tiếng Việt, các bộ quy tắc chính không được áp dụng làm script tệ đi»",
+      "quote_kind": "verbatim",
+      "lesson": "DL-076, L-108 (sửa pipeline; chưa viết v8)",
+      "lesson_id": "DL-076",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v8-6eb6590",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v8 6eb6590",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«đọc lại logic code đã làm, hiện tại hook script vẫn không rõ nghĩa, lòng vòng lang mang, nhồi nhét quá nhiều thứ, không tự nhiên»",
+      "quote_kind": "verbatim",
+      "lesson": "DL-077, L-109 (sửa audio-precheck/gate0/reviewer/5 file chỉ đạo) · viết lại v9",
+      "lesson_id": "DL-077",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v9-f8afc75",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v9 f8afc75",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«về script có vẻ tự nhiên hơn nhưng các điểm đưa ra kết thúc giữa chừng, chưa đủ ý truyền đạt, bị ngắt quãng cũng như thiếu liền mạch»",
+      "quote_kind": "verbatim",
+      "lesson": "v10 (đủ ý & khép vòng, 6–7 beat ~210–255 âm tiết); pipeline: gate0/writer/craft/reviewer thêm «Đủ ý & Khép vòng» + điểm mù 7",
+      "lesson_id": "",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v10-016142b",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v10 016142b",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«kết nối các câu từ vẫn không có liền mạch, quá rập khuôn khi thêm các từ nối câu, phải trình bày để có liên quan diễn đạt các câu kế tiếp một cách liền mạch hơn thay vì rời rạc như hiện tại»",
+      "quote_kind": "verbatim",
+      "lesson": "v11 (viết đoạn liền mạch trước, bỏ keo từ nối); pipeline: Thought-Flow over Connector-Glue + reviewer bắt ≥3 beat mở rập khuôn",
+      "lesson_id": "",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v11-731e9e6",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v11 731e9e6",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«có một chút liền mạch nhưng vài chỗ lại không rõ nghĩa, dẫn câu vẫn chưa liền mạch — cần đưa các phương pháp viết nói, dẫn truyện và nhiều hướng đi bài bản, chuyên nghiệp, tự nhiên hơn vào hệ thống»",
+      "quote_kind": "verbatim",
+      "lesson": "v12 (hướng #2 Everyday Paradox, Baton Pass từng cặp câu, giải tỏa Hook ngay sau con số); pipeline DL-078: `docs/research/storytelling-craft-guide.md` + Baton Check trong gate0/writer/craft/reviewer",
+      "lesson_id": "DL-078",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v12-76d84ff",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v12 76d84ff",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«đọc lại v12 và tự nhận xét, đánh giá research, nghiên cứu chuyên sâu nhất» → «chốt hướng này, làm luôn tại đây» (sửa lỗi nối từ cơ học Anadiplosis, đảo ngược cao trào 254→18, câu mở cụt chủ thể, vào nghiên cứu kiểu Wikipedia, phẳng khẩu ngữ do Prompt Bloat)",
+      "quote_kind": "verbatim",
+      "lesson": "DL-079, L-111 (Kiến trúc 2 Pha Pure Voice → Surgical Audit, Given–New Conceptual Flow + Climactic Order + Storytelling the Study) · v13",
+      "lesson_id": "DL-079",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v13-b15e1bd",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v13 b15e1bd",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«CTA k hợp»",
+      "quote_kind": "verbatim",
+      "lesson": "DL-080, L-112 (bỏ khuôn «CTA 1 chữ» & câu hỏi tiêu cực bó hẹp «mới tập hai tuần mà đang tính bỏ? Kể một chữ…»; tách `b08` CTA chia sẻ đồng hành giọng lắng nghe) · v13 r2",
+      "lesson_id": "DL-080",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c06-v13-r2-0efe144",
+      "verdict": "rejected",
+      "clip": "clip-06",
+      "version": "v13 r2 0efe144",
+      "source": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
+      "hiep_quote": "«nghe rất sáo rỗi trả có ai comment như thế, nên chia se đồng cảm, ai bị giống mình, hay cách mng vượt quá, phải thể hiện sự lắng nghe ý kiến quan điểm theo góc nhìn của mỗi người. , m research tìm hiểu kỹ lưỡng giúp t»",
+      "quote_kind": "verbatim",
+      "lesson": "DL-081, L-113 (nghiên cứu tâm lý bình luận TikTok: bỏ hẳn câu khảo sát sáo rỗng «bạn đang tập gì, được bao lâu»; đổi sang hạ cái tôi + đồng cảm «ai dễ nản tuần hai giống mình» + tôn trọng «mỗi người một góc nhìn», lắng nghe cách vượt qua) · v13 r3",
+      "lesson_id": "DL-081",
+      "excerpt_file": null,
+      "found": false
     }
   ]
 }

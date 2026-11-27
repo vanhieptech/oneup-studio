@@ -32,9 +32,14 @@ tags: [index, retrieval]
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
 | skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
+| clip-06.fact-lock | research | locked | `content/clips/clip-06-bong-hoa-chua-no/final/fact-lock.md` | clip-06 fact lock |
 | clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
+| clip-06.post-checklist | checklist | draft | `content/clips/clip-06-bong-hoa-chua-no/final/post-checklist.md` | Checklist đăng clip-06 |
+| clip-06.post | post-package | sẵn sàng đăng sau khi Hiệp xem video | `content/clips/clip-06-bong-hoa-chua-no/final/post.md` | Gói đăng TikTok: clip-06 "bông hoa chưa nở" |
 | clip-06.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | Review độc lập `clip-06` (`script-v13-draft.md` · `c8469062ec2f`) vs Anchor `a-c05` |
-| clip-06.script-v13-draft | script | draft | `content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md` | clip-06 v13 — DRAFT, chờ Hiệp duyệt Gate 1 |
+| clip-06.script-final | script | locked | `content/clips/clip-06-bong-hoa-chua-no/final/script-final.md` | Clip 06 v13: thói quen tính bằng tháng, bông hoa chưa nở |
+| clip-06.script-v13-draft | script | locked | `content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md` | clip-06 v13 — ĐÃ CHỐT 27/11, sản xuất từ `final/spec.json` |
+| clip-06.trend-signals | research | ready | `content/clips/clip-06-bong-hoa-chua-no/final/trend-signals.md` | Tín hiệu trend cho clip-06 v13 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |

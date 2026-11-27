@@ -348,16 +348,25 @@ def get(arc_id, path=None):
     return next((a for a in load(path)["arcs"] if a["id"] == arc_id), None)
 
 
-def best_arc(arcs):
-    """Pick the top ARC prioritizing highest win_rate, then wins, then evidence seen, then fewest uses."""
+def best_arc(arcs, format_filter=None):
+    """Pick the top ARC prioritizing highest win_rate, then wins, then evidence seen, then fewest uses.
+
+    When `format_filter` is provided (e.g. 'story_metaphor'), excludes ARCs explicitly tagged with a
+    different `format_compatibility` (such as 'instructional_list') so listicle ARCs never pollute story channels.
+    """
     if not arcs:
         return None
+    pool = arcs
+    if format_filter:
+        compat = [a for a in arcs if a.get("format_compatibility", "any") in ("any", format_filter)]
+        if compat:
+            pool = compat
     def key(a):
         wr = a.get("win_rate")
         if wr is None:
             wr = _compute_win_rate(a.get("uses", 0), a.get("wins", 0))
         return (wr if wr is not None else -1.0, a.get("wins", 0), a.get("seen", 0), -a.get("uses", 0))
-    return max(arcs, key=key)
+    return max(pool, key=key)
 
 
 def main():

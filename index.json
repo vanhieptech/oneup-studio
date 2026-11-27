@@ -159,12 +159,36 @@
    "title": "Script short (45–90s) — `vht-YYYYMMDD-<slug>`"
   },
   {
+   "id": "clip-06.fact-lock",
+   "type": "research",
+   "status": "locked",
+   "updated": "2026-11-27",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/fact-lock.md",
+   "title": "clip-06 fact lock"
+  },
+  {
    "id": "clip-06.feedback",
    "type": "feedback",
    "status": "living",
    "updated": "2026-11-27",
    "path": "content/clips/clip-06-bong-hoa-chua-no/final/feedback.md",
    "title": "clip-06 — góp ý của Hiệp (nguyên văn)"
+  },
+  {
+   "id": "clip-06.post-checklist",
+   "type": "checklist",
+   "status": "draft",
+   "updated": "2026-11-27",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/post-checklist.md",
+   "title": "Checklist đăng clip-06"
+  },
+  {
+   "id": "clip-06.post",
+   "type": "post-package",
+   "status": "sẵn sàng đăng sau khi Hiệp xem video",
+   "updated": "2026-11-27",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/post.md",
+   "title": "Gói đăng TikTok: clip-06 \"bông hoa chưa nở\""
   },
   {
    "id": "clip-06.review",
@@ -175,12 +199,28 @@
    "title": "Review độc lập `clip-06` (`script-v13-draft.md` · `c8469062ec2f`) vs Anchor `a-c05`"
   },
   {
+   "id": "clip-06.script-final",
+   "type": "script",
+   "status": "locked",
+   "updated": "2026-11-27",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/script-final.md",
+   "title": "Clip 06 v13: thói quen tính bằng tháng, bông hoa chưa nở"
+  },
+  {
    "id": "clip-06.script-v13-draft",
    "type": "script",
-   "status": "draft",
+   "status": "locked",
    "updated": "2026-11-27",
    "path": "content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md",
-   "title": "clip-06 v13 — DRAFT, chờ Hiệp duyệt Gate 1"
+   "title": "clip-06 v13 — ĐÃ CHỐT 27/11, sản xuất từ `final/spec.json`"
+  },
+  {
+   "id": "clip-06.trend-signals",
+   "type": "research",
+   "status": "ready",
+   "updated": "2026-11-27",
+   "path": "content/clips/clip-06-bong-hoa-chua-no/final/trend-signals.md",
+   "title": "Tín hiệu trend cho clip-06 v13"
   },
   {
    "id": "idea-bank",
@@ -514,7 +554,7 @@
    "id": "effects-log",
    "type": "log",
    "status": "living",
-   "updated": "2026-10-12",
+   "updated": "2026-11-27",
    "path": "logs/effects-log.md",
    "title": "Effects log"
   },
@@ -522,7 +562,7 @@
    "id": "hook-moves",
    "type": "log",
    "status": "living",
-   "updated": "2026-11-25",
+   "updated": "2026-11-27",
    "path": "logs/hook-moves.md",
    "title": "Hook-move log"
   },

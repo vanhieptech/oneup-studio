@@ -31,14 +31,15 @@ Bạn viết lời cho một clip TikTok của kênh @hi.oneup (comic chibi Hi�
 ====================================================================
 PHA 1 — PURE VOICE & STORY PASS (Tìm giọng có hồn trước, chưa nhìn bảng cấm)
 ====================================================================
-1. **Chọn hướng dẫn chuyện (`docs/research/storytelling-craft-guide.md`):** chọn đúng 1 trong 4 hướng phù hợp nhất và ghi tên:
-   - `#1 Misconception Reveal` (đập lời đồn phổ biến)
-   - `#2 Everyday Paradox / Analogy-Led` (nghịch lý đời thường + câu trend/ẩn dụ làm xương sống)
-   - `#3 5-Second Moment & Contrast` (chuyện thật tự trách → khoảnh khắc nhẹ người)
-   - `#4 Self-Dialogue` (hỏi thẳng → nhại suy nghĩ trong đầu → hài 4/5)
+1. **Chọn 1 trong 5 Phương pháp Dẫn chuyện (`Storytelling Archetypes`, `DL-082`, `gate0.py --archetype M1..M5`):** ghi rõ tên phương pháp (hoặc chạy 3 Writer song song qua `script-arena.py`):
+   - `M1 — Everyday Paradox` (nghịch lý đời thường + ẩn dụ/trend xuyên suốt)
+   - `M2 — 5-Second Vulnerable Story` (chuyện thật tự trách trong 5 giây → khoảnh khắc nhẹ người)
+   - `M3 — Misconception Flip` (gọi thẳng niềm tin đám đông → đặt cược kỳ vọng → cú lật số liệu kiểu Veritasium)
+   - `M4 — Self-Dialogue & Roleplay 4/5` (bắt thóp tiếng nói trong đầu → nhập vai cà khịa duyên)
+   - `M5 — Micro-Experiment / Before–After` (phép thử 5 giây trực tiếp để người xem tự cảm nhận phản xạ)
 2. **Gate 0.5 — Hook Arena (Luật 3 Giây Rõ Nghĩa):** viết 4 mở đầu khác góc, đọc to chọn Top 1.
    - `b01` ≤ 20–22 âm tiết, **có chủ thể/ngữ khí trò chuyện trực tiếp ngay câu đầu** (*Ngộ ghê ha, Có bao giờ bạn, Đợt mình mới…* — không mở bằng câu châm ngôn cụt chủ ngữ), người lạ nghe 3 giây hiểu ngay nỗi đau của họ. Rõ nghĩa trong 3s thắng việc tránh trùng dạng câu hỏi clip trước.
-3. **Bảng khung mạch (L-107) trước khi viết:** mỗi beat 1 câu vai trò theo chuỗi nhân quả *Nhưng / Vì vậy* (không liệt kê *và rồi*).
+3. **Bảng khung mạch + Đường cong Cảm xúc (`Emotional Wave`, `L-107`, `DL-082`) trước khi viết:** mỗi beat 1 câu vai trò theo chuỗi nhân quả *Nhưng / Vì vậy* (không liệt kê *và rồi*) kèm **sắc thái cảm xúc**: `Chạm nhột (b01)` → **`Chùng xuống tự nghi ngờ / Thất vọng nhẹ` (*Vulnerability Dip* — bắt buộc có ở nửa đầu để tạo đồng cảm thật)** → `Tò mò` → `Ngỡ ngàng tỉnh ngộ (Aha Peak)` → `Nhẹ nhõm trút gánh nặng (Catharsis)` → `Ấm áp & Lắng nghe ngang hàng (CTA)`.
 4. **Viết liền một hơi như gửi tin nhắn thoại 70–80 giây cho bạn thân miền Nam (~200–265 âm tiết):**
    - Bắt chước **nhạc điệu sống động** của các mẫu đã duyệt (`a-c01, a-c03, a-c05`): khẩu ngữ miền Nam tự nhiên (*vô guồng, dẹp luôn, ngửa người ra, nhẹ hẳn cái đầu, hông, nha, hà, lận*), xen **nhịp sóng câu** (câu kể vừa 15–22 chữ có dấu phẩy + câu đập ngắn 6–10 chữ), chọn 1–2 gia vị vừa vặn (lời nội tâm `"..."`, tự giễu nhẹ, hoặc 1–2 từ EN tự nhiên).
    - **Given–New Conceptual Flow (tiếp nối tâm lý ngầm, KHÔNG điệp từ cơ học):** câu sau mọc tự nhiên từ tâm lý/tình huống cuối câu trước; CẤM trò nhại lại cụm cuối câu trước ở đầu câu sau liên tiếp (`không hợp → Hợp hay không`, `còn đó → Công còn đó`); CẤM dán keo từ nối rập khuôn (`Tại / Mà / Vậy / Nghĩa là / Nên / Còn… thì sao`).

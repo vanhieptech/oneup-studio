@@ -33,6 +33,52 @@ CH = {"hi": {"name": "@hi.oneup", "lo": 60, "hi": 180, "cap": 300, "default": 90
 CORE_ARC_ID = "ONEUP-CORE-ARC"
 CORE_WINDOW = (65, 88)       # seconds for the core arc unless --extended (khung gọn mặc định; đủ ý thì dừng, không ép dài, không bóp cụt chất kể chuyện)
 EXTENDED_WINDOW = (120, 180)
+# 5 Phương pháp Dẫn chuyện chuẩn hóa (Content Engine v2.0, F3, DL-082)
+ARCHETYPES = {
+    "M1": {
+        "name": "Everyday Paradox (Nghịch lý đời thường + ẩn dụ xuyên suốt)",
+        "color": "ấm áp · chiêm nghiệm · 1 hình ảnh xuyên suốt",
+        "hook_style": "Đặt 1 nghịch lý đời thường ai cũng gặp bằng 1 hình ảnh/trend cụ thể (≤ 20 âm tiết).",
+        "wave": "Chạm nhột → Chùng xuống tự nghi ngờ (Dip) → Kỳ vọng sai → Ngỡ ngàng tỉnh ngộ (Aha) → Nhẹ nhõm giải tỏa → Đồng cảm & lắng nghe",
+        "ref_clips": ["a-c04", "a-c01"],
+    },
+    "M2": {
+        "name": "5-Second Vulnerable Story (Tâm sự khoảnh khắc thật 5 giây)",
+        "color": "gần gũi · chân thật · tự giễu nhẹ",
+        "hook_style": "Mở thẳng vào 1 khoảnh khắc thật hơi chạnh hoặc tự giễu của chính Hiệp trong 5 giây đầu.",
+        "wave": "Tự giễu gần gũi → Tự trách âm ỉ (Dip) → Thử nhiều cách vẫn vấp → Lật góc nhìn bằng 1 bằng chứng → Nhẹ gánh → Rủ bạn kể chuyện",
+        "ref_clips": ["a-c01", "a-c04"],
+    },
+    "M3": {
+        "name": "Misconception Flip (Lật niềm tin đám đông kiểu Veritasium)",
+        "color": "sắc sảo · bất ngờ · mở mắt",
+        "hook_style": "Gọi thẳng niềm tin ai cũng đinh ninh là đúng rồi đặt cược kỳ vọng để cú lật phía sau thật đã.",
+        "wave": "Gọi niềm tin quen → Nỗi đau làm theo mà vẫn hụt (Dip) → Đặt câu hỏi ngược → Cú lật số liệu bất ngờ (Aha) → Giải tỏa + đổi thước đo → Hỏi góc nhìn khác",
+        "ref_clips": ["a-c02", "a-c05"],
+    },
+    "M4": {
+        "name": "Self-Dialogue & Roleplay 4/5 (Bắt thóp tiếng nói trong đầu + cà khịa duyên)",
+        "color": "duyên dáng · hài nhẹ · bắt bài tâm lý",
+        "hook_style": "Bắt quả tang đúng câu tự nhủ quen thuộc trong đầu người xem bằng giọng miền Nam cà khịa duyên.",
+        "wave": "Cà khịa bắt thóp → Chùng lại thừa nhận mình cũng từng vậy (Dip) → Giải mã cơ chế gọn → Cú lật thực tế → 1 bước nhẹ tênh tối nay → Hỏi ai bị giống mình",
+        "ref_clips": ["a-c05", "a-c02"],
+    },
+    "M5": {
+        "name": "Micro-Experiment / Before–After (Phép thử 5 giây trực tiếp)",
+        "color": "tương tác · thực tế · cầm nắm được",
+        "hook_style": "Mời người xem làm ngay 1 phép thử tưởng tượng 5 giây để tự thấy phản xạ của chính mình.",
+        "wave": "Kéo vào phép thử → Khựng lại thấy đúng là mình hay kẹt ở đó (Dip) → So sánh trước–sau → 1 bằng chứng chốt hạ → 1 bước thử tối nay → Hỏi kết quả & cách mỗi người",
+        "ref_clips": ["a-c03", "a-c01"],
+    },
+}
+EMOTIONAL_WAVE_6 = [
+    ("b01", "Chạm nhột / Ngạc nhiên (Hook Spark)", "thai-son-v2"),
+    ("b02", "Chùng xuống tự nghi ngờ / Thất vọng nhẹ (Vulnerability Dip — bắt buộc)", "thai-son-v2"),
+    ("b03", "Tò mò / Kỳ vọng cũ (Curiosity Setup)", "thai-son-v2"),
+    ("b04–b05", "Ngỡ ngàng tỉnh ngộ (Aha Peak — Climactic Order)", "thai-son-serious"),
+    ("b06–b07", "Nhẹ nhõm trút gánh nặng + 1 bước tối nay (Catharsis)", "thai-son-v2"),
+    ("b08", "Bình tĩnh ấm áp & Lắng nghe ngang hàng (Warm Peer CTA)", "thai-son-happy"),
+]
 APPROVED = {"a-c01": "content/archive/clip-01-implementation-intention/final/script-final.md",
             "a-c02": "content/archive/clip-02-procrastination-discomfort/final/script-final.md",
             "a-c03": "content/archive/clip-03-big-task-chunking/final/script-final.md",
@@ -307,20 +353,45 @@ def load_weekly_synthesis(path=None):
         return None
 
 
-def pick_best_arc(arcs, synth=None):
-    """Pick top ARC prioritizing win_rate, then weekly-synthesis weight, then wins/seen."""
+def pick_best_arc(arcs, synth=None, format_filter=None):
+    """Pick top ARC prioritizing win_rate, then weekly-synthesis weight, then wins/seen (with optional format isolation)."""
     if not arcs:
         return None
+    pool = arcs
+    if format_filter:
+        compat = [a for a in arcs if a.get("format_compatibility", "any") in ("any", format_filter)]
+        if compat:
+            pool = compat
     weights = (synth or {}).get("arc_weights") or {}
     if not weights:
-        return ARC.best_arc(arcs)
+        return ARC.best_arc(pool, format_filter=format_filter)
     def key(a):
         wr = a.get("win_rate")
         if wr is None:
             wr = ARC._compute_win_rate(a.get("uses", 0), a.get("wins", 0))
         w = float(weights.get(a["id"], 0.0))
         return (wr if wr is not None else -1.0, w, a.get("wins", 0), a.get("seen", 0), -a.get("uses", 0))
-    return max(arcs, key=key)
+    return max(pool, key=key)
+
+
+def load_craft_pivots(limit=3):
+    """Read recent non-connector spoken transition samples from research/references/craft-studies/*.md."""
+    d = ROOT / "research/references/craft-studies"
+    if not d.exists():
+        return []
+    out = []
+    for f in sorted(d.glob("*.md"), key=lambda p: p.stat().st_mtime, reverse=True):
+        txt = f.read_text(encoding="utf-8", errors="replace")
+        if "### Mẫu câu chuyển ý không dùng liên từ" not in txt:
+            continue
+        sec = txt.split("### Mẫu câu chuyển ý không dùng liên từ", 1)[1].split("\n## ", 1)[0]
+        for ln in sec.splitlines():
+            ln = ln.strip()
+            if ln.startswith("- «") and "Không bịa" not in ln:
+                out.append(f"[{f.stem}] {ln[2:].strip()}")
+                if len(out) >= limit:
+                    return out
+    return out
 
 
 def checklist_section(ch):
@@ -335,7 +406,7 @@ def feedback_rows():
     return [r for r in md_rows(ROOT / "resources/feedback.md", 4) if r[0].startswith("«")]
 
 
-def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length=None, tone=None, extended=False):
+def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length=None, tone=None, extended=False, archetype=None):
     lib = ARC.load(); c = CH[ch]; L = [BEGIN, f"## Gate 0 brief ({c['name']})", ""]
     # 1
     ideas = find_ideas(idea_q, lib)
@@ -352,19 +423,32 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     L.append(f"- Fact package: `{fp.relative_to(ROOT)}` — {fm_title(fp)}" if fp else "- Fact package: chưa có (`research/explainers/<chủ-đề>.md`); mọi số liệu cần claim → nguồn trước khi viết (H1).")
     # 2
     synth = load_weekly_synthesis()
-    arc = ARC.get(arc_id) if arc_id else None
+    fmt_filter = "story_metaphor" if ch == "hi" else None
+    if arc_id == "auto":
+        arc = pick_best_arc(lib["arcs"], synth, format_filter=fmt_filter)
+    else:
+        arc = ARC.get(arc_id) if arc_id else None
     if not arc and tone:
         tagged = [a for a in lib["arcs"] if a.get("tone") == tone]
         if len(tagged) == 1:
             arc = tagged[0]
         elif tagged:
-            arc = pick_best_arc(tagged, synth)
+            arc = pick_best_arc(tagged, synth, format_filter=fmt_filter)
     if not arc and ch == "hi" and not tone:  # @hi.oneup default spine (WS1): the core 5-beat arc, not a listicle teardown arc
         arc = next((a for a in lib["arcs"] if a["id"] == CORE_ARC_ID), None)
     if not arc:
         aid = next((r["idea"]["arc"] for r in ideas if r["kind"] == "arc-idea"), None)
-        arc = ARC.get(aid) if aid else pick_best_arc(lib["arcs"], synth)
+        arc = ARC.get(aid) if aid else pick_best_arc(lib["arcs"], synth, format_filter=fmt_filter)
     L += ["", "### 2. Mạch cốt truyện"]
+    if archetype and archetype.upper() in ARCHETYPES:
+        ak = archetype.upper()
+        ad = ARCHETYPES[ak]
+        L.append(f"- **Phương pháp dẫn chuyện (Archetype `{ak}`):** {ad['name']} — màu sắc: *{ad['color']}*")
+        L.append(f"  - Cách mở Hook: {ad['hook_style']}")
+        L.append(f"  - Đường cong cảm xúc (`Emotional Wave`): {ad['wave']}")
+    elif ch == "hi":
+        L.append("- **Bản đồ Sóng Cảm Xúc 6 nhịp (`Emotional Wave`, F4):** " + " → ".join(f"{b}: {e}" for b, e, _ in EMOTIONAL_WAVE_6))
+        L.append("- **Đa phương pháp (`--archetype M1..M5` hoặc `script-arena.py`):** M1 Everyday Paradox · M2 5-Second Vulnerable Story · M3 Misconception Flip · M4 Self-Dialogue & Roleplay · M5 Micro-Experiment.")
     if not arc:
         L.append("- chưa có ARC nào (`research/blueprints/index.json`): chạy teardown 1 clip outlier trước.")
     else:
@@ -420,6 +504,9 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     L.append("- **Fact-lock:** ghi danh sách số/kết luận được phép nói và danh sách CẤM (từ/số bị cấm, cơ chế não ngoài nguồn) trước khi viết; chạm vào danh sách cấm = H1. **Single-Point Alignment:** chọn 1 câu hỏi trung tâm; hook và bằng chứng là câu hỏi và câu trả lời của cùng câu đó.")
     if ch == "hi":
         L += reference_lines(picks=picks)
+        pivots = load_craft_pivots(limit=2)
+        if pivots:
+            L.append("- **Mẫu chuyển ý không liên từ từ `research/references/craft-studies/`:** " + " ; ".join(pivots))
     if tone:
         L.append(f"- tone `{tone}`: học nhịp kể của a-c01 và a-c04, không lấy câu chặt chém.")
     # 4
@@ -456,7 +543,10 @@ def main():
     tone = opt("--tone")
     if tone and tone not in ("story_warm", "tech_sharp"):
         print("--tone story_warm|tech_sharp"); return 2
-    b = brief(opt("--idea"), ch, opt("--arc"), opt("--memo"), opt("--topic"), opt("--clip"), opt("--length"), tone, "--extended" in a)
+    archetype = opt("--archetype")
+    if archetype and archetype.upper() not in ARCHETYPES:
+        print(f"--archetype {'|'.join(ARCHETYPES)}"); return 2
+    b = brief(opt("--idea"), ch, opt("--arc"), opt("--memo"), opt("--topic"), opt("--clip"), opt("--length"), tone, "--extended" in a, archetype=archetype)
     if opt("--out"): write_into(opt("--out"), b); print(f"→ {opt('--out')}")
     else: print(b)
     return 0

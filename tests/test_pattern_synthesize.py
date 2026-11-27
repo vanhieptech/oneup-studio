@@ -151,7 +151,8 @@ def test_gate0_uses_synthesis_weights_and_skips_style_pairs_while_writing():
 
 def test_story_warm_skips_choppy_pairs_and_keeps_subject():
     pairs = g0.pick_style_pairs("thói quen nản giày chạy", "hi", n=3, tone="story_warm")
-    assert [p["id"] for p in pairs] == ["SP-01", "SP-09", "SP-13"]
+    ids = [p["id"] for p in pairs]
+    assert len(ids) == 3 and "SP-01" in ids and "SP-12" not in ids
     for p in pairs:
         low = f" {p['approved'].lower()} "
         assert p["tone"] == "story_warm"

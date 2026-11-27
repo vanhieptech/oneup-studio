@@ -1,29 +1,36 @@
 # TikTok / Short-form Multi-Channel Outlier Radar (Luồng 1) for pipeline/scripts/radar-fetch.py & trend-streams.py radar.
 # JSON-compatible YAML (stdlib reads it).
 # min_ratio: views ÷ follower (hoặc views ÷ median_views 10 video gần nhất của kênh) ≥ 3.0 (Hiệp 26/11, vd manghocls 7,6x).
-# role:
-#   - direct_niche: kênh cùng ngách trực tiếp (lấy cả ý tưởng + cấu trúc + từ khóa).
-#   - cross_niche_craft: kênh khác ngách (tài chính, storytelling, khoa học thường thức, tech global/VN) có retention cao — chỉ học kỹ thuật mở hook, chuyển cảnh, ẩn dụ và nhịp kể chuyện (không lấy chủ đề).
+# role (Content Engine v2.0, DL-082):
+#   - direct_niche: kênh cùng ngách trực tiếp (lấy chủ đề nóng + top comments nỗi đau thật).
+#   - southern_story_voice: kênh kể chuyện/podcast giọng miền Nam & đời thường — chỉ trích khẩu ngữ mở câu, nhịp tâm tình, chuyển ý mềm và cách rủ đối thoại cuối bài (voice_cadence_only).
+#   - cross_niche_craft: kênh khác ngách (tài chính, storytelling, khoa học thường thức, tech global/VN) có retention cao — chỉ học kỹ thuật mở hook, chuyển cảnh, ẩn dụ và nhịp kể chuyện (craft_only).
 #   - anti_pattern (tùy chọn): kênh/video nhiều view nhưng nội dung rỗng/câu view rẻ tiền để ghi nhận lỗi cần tránh.
+# format_compatibility: story_metaphor | instructional_list | dialogue_skit (cách ly khuôn liệt kê học đường khỏi @hi.oneup kể chuyện).
 # growth: cùng một clip đo lại sau 24–72h (hai snapshot radar-raw.json / apify/clips.json); spike khi (comment + share [+ save nếu có]) tăng ≥ min_pct VÀ ≥ min_abs.
 #   Save tính khi có trường save_count/collect_count, không thì bỏ qua (ghi null, không đoán).
 # topics: một clip direct_niche phải khớp ít nhất một nhóm (caption + hashtag, không dấu hoặc có dấu) mới vào radar (hoặc kênh gắn niche_verified).
 {"min_ratio": 3.0,
+ "min_views_per_day": 15000,
+ "min_engagement_intensity": 0.015,
+ "min_abs_views_for_velocity": 50000,
  "recent_limit": 10,
  "growth": {"min_hours": 24, "max_hours": 72, "min_pct": 0.5, "min_abs": 100},
  "channels": [
-  {"handle": "manghocls", "platform": "tiktok", "role": "direct_niche", "url": "https://www.tiktok.com/@manghocls", "followers": 99000, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
-  {"handle": "hoaquynh", "platform": "tiktok", "role": "direct_niche", "url": "https://www.tiktok.com/@hoaquynh", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
-  {"handle": "kyluat.1", "platform": "tiktok", "role": "direct_niche", "url": "https://www.tiktok.com/@kyluat.1", "followers": 0, "niche": ["productivity", "tu-duy"], "niche_verified": true},
-  {"handle": "phamthuykieuhuong", "platform": "tiktok", "role": "direct_niche", "url": "https://www.tiktok.com/@phamthuykieuhuong", "followers": 0, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
-  {"handle": "braincorevn", "platform": "tiktok", "role": "direct_niche", "url": "https://www.tiktok.com/@braincorevn", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
-  {"handle": "quocnguyenkieuvi", "platform": "tiktok", "role": "direct_niche", "url": "https://www.tiktok.com/@quocnguyenkieuvi", "followers": 0, "niche": ["tu-duy"], "niche_verified": true},
-  {"handle": "fireship", "platform": "youtube", "role": "cross_niche_craft", "url": "https://www.youtube.com/@Fireship/shorts", "followers": 0, "niche": ["tech", "storytelling"], "craft_focus": ["hook-toc-do", "an-du-tech", "nhip-cat-3s"], "niche_verified": true},
-  {"handle": "veritasium", "platform": "youtube", "role": "cross_niche_craft", "url": "https://www.youtube.com/@veritasium/shorts", "followers": 0, "niche": ["khoa-hoc", "storytelling"], "craft_focus": ["hook-phan-truc-giac", "open-loop", "ke-chuyen-thi-nghiem"], "niche_verified": true},
-  {"handle": "aliabdaal", "platform": "youtube", "role": "cross_niche_craft", "url": "https://www.youtube.com/@aliabdaal/shorts", "followers": 0, "niche": ["productivity", "storytelling"], "craft_focus": ["chuyen-y-muot", "khung-3-buoc"], "niche_verified": true},
-  {"handle": "hieutv", "platform": "youtube", "role": "cross_niche_craft", "url": "https://www.youtube.com/@HieuTV/shorts", "followers": 0, "niche": ["tai-chinh", "tu-duy"], "craft_focus": ["an-du-doi-thuong", "giong-tram-tin-cay"], "niche_verified": true},
-  {"handle": "spiderum", "platform": "tiktok", "role": "cross_niche_craft", "url": "https://www.tiktok.com/@spiderum", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["nhap-de-vn", "an-du-doi-thuong"], "niche_verified": true},
-  {"handle": "clickbait_watch_sample", "platform": "tiktok", "role": "anti_pattern", "url": "", "enabled": false, "followers": 0, "niche": ["anti-pattern"], "craft_focus": ["cau-view-rong", "hook-khong-tra-loi"], "niche_verified": false}
+  {"handle": "manghocls", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "instructional_list", "url": "https://www.tiktok.com/@manghocls", "followers": 99000, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
+  {"handle": "hoaquynh", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@hoaquynh", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
+  {"handle": "kyluat.1", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@kyluat.1", "followers": 0, "niche": ["productivity", "tu-duy"], "niche_verified": true},
+  {"handle": "phamthuykieuhuong", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "instructional_list", "url": "https://www.tiktok.com/@phamthuykieuhuong", "followers": 0, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
+  {"handle": "braincorevn", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@braincorevn", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
+  {"handle": "quocnguyenkieuvi", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@quocnguyenkieuvi", "followers": 0, "niche": ["tu-duy"], "niche_verified": true},
+  {"handle": "vietcetera", "platform": "youtube", "role": "southern_story_voice", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Vietcetera/shorts", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["khau-ngu-mien-nam", "nhip-tam-tinh", "chuyen-y-mem", "cta-doi-thoai"], "niche_verified": true},
+  {"handle": "giangoi", "platform": "youtube", "role": "southern_story_voice", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@GiangOi/shorts", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["tam-su-doi-thuong", "tu-gieu-duyen", "ngat-nhip-tu-nhien"], "niche_verified": true},
+  {"handle": "fireship", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Fireship/shorts", "followers": 0, "niche": ["tech", "storytelling"], "craft_focus": ["hook-toc-do", "an-du-tech", "nhip-cat-3s"], "niche_verified": true},
+  {"handle": "veritasium", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@veritasium/shorts", "followers": 0, "niche": ["khoa-hoc", "storytelling"], "craft_focus": ["hook-phan-truc-giac", "open-loop", "ke-chuyen-thi-nghiem"], "niche_verified": true},
+  {"handle": "aliabdaal", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@aliabdaal/shorts", "followers": 0, "niche": ["productivity", "storytelling"], "craft_focus": ["chuyen-y-muot", "khung-3-buoc"], "niche_verified": true},
+  {"handle": "hieutv", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@HieuTV/shorts", "followers": 0, "niche": ["tai-chinh", "tu-duy"], "craft_focus": ["an-du-doi-thuong", "giong-tram-tin-cay"], "niche_verified": true},
+  {"handle": "spiderum", "platform": "tiktok", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@spiderum", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["nhap-de-vn", "an-du-doi-thuong"], "niche_verified": true},
+  {"handle": "clickbait_watch_sample", "platform": "tiktok", "role": "anti_pattern", "format_compatibility": "instructional_list", "url": "", "enabled": false, "followers": 0, "niche": ["anti-pattern"], "craft_focus": ["cau-view-rong", "hook-khong-tra-loi"], "niche_verified": false}
  ],
  "keywords": [
   "thói quen tốt mỗi ngày",

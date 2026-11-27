@@ -37,12 +37,16 @@ ROOT = P.ROOT
 TRENDS = ROOT / "research/trends"
 RADAR_CFG = ROOT / "pipeline/trends/radar.yaml"
 
-VALID_ROLES = ("direct_niche", "cross_niche_craft", "anti_pattern")
+VALID_ROLES = ("direct_niche", "southern_story_voice", "cross_niche_craft", "anti_pattern")
 LEARN_SCOPE = {
     "direct_niche": "idea_and_craft",
+    "southern_story_voice": "voice_cadence_only",
     "cross_niche_craft": "craft_only",
     "anti_pattern": "avoid_only",
 }
+DEFAULT_MIN_VIEWS_PER_DAY = 15000.0
+DEFAULT_MIN_ENGAGEMENT_INTENSITY = 0.015
+DEFAULT_MIN_ABS_VIEWS_FOR_VELOCITY = 50000
 
 
 def _load_trend_streams():
@@ -170,6 +174,17 @@ def entry_to_clip(entry, ch_cfg, median_views):
     effective_ratio = follower_ratio if follower_ratio is not None else outlier_ratio
     basis = "views/followers" if follower_ratio is not None else ("views/median_views" if outlier_ratio is not None else None)
     top_comments = extract_top_comments(entry)
+    engagement_intensity = round((comments * 3 + shares * 2) / views, 5) if views > 0 else None
+    views_per_day = None
+    if views > 0 and created:
+        try:
+            c_dt = dt.datetime.fromisoformat(created.replace("Z", "+00:00"))
+            if c_dt.tzinfo is None:
+                c_dt = c_dt.replace(tzinfo=dt.timezone.utc)
+            age_days = max(0.25, (dt.datetime.now(dt.timezone.utc) - c_dt).total_seconds() / 86400.0)
+            views_per_day = round(views / age_days, 1)
+        except ValueError:
+            views_per_day = None
 
     return {
         "raw_id": vid or url,
@@ -177,6 +192,7 @@ def entry_to_clip(entry, ch_cfg, median_views):
         "platform": platform,
         "role": role,
         "learn_scope": LEARN_SCOPE[role],
+        "format_compatibility": ch_cfg.get("format_compatibility") or "story_metaphor",
         "craft_focus": list(ch_cfg.get("craft_focus") or []),
         "caption": caption,
         "hashtags": list(dict.fromkeys((entry.get("tags") or []) + extract_hashtags(caption))),
@@ -192,6 +208,8 @@ def entry_to_clip(entry, ch_cfg, median_views):
         "median_views": round(median_views, 1) if median_views else None,
         "outlier_ratio": outlier_ratio,
         "outlier": effective_ratio,
+        "views_per_day": views_per_day,
+        "engagement_intensity": engagement_intensity,
         "basis": basis,
         "channel_niche": ch_cfg.get("niche") or [],
         "niche_verified": bool(ch_cfg.get("niche_verified")),
@@ -210,6 +228,9 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
     """Filter clips into outlier radar rows matching trend-streams.py schema + channel role."""
     ts = ts_mod or _load_trend_streams()
     min_ratio = float(cfg.get("min_ratio", 3.0))
+    min_vpd = float(cfg.get("min_views_per_day", DEFAULT_MIN_VIEWS_PER_DAY))
+    min_eng = float(cfg.get("min_engagement_intensity", DEFAULT_MIN_ENGAGEMENT_INTENSITY))
+    min_abs_v = int(cfg.get("min_abs_views_for_velocity", DEFAULT_MIN_ABS_VIEWS_FOR_VELOCITY))
     rows = []
     for c in clips:
         role = c.get("role") if c.get("role") in VALID_ROLES else "direct_niche"
@@ -217,6 +238,8 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
         if not tags:
             if role == "cross_niche_craft":
                 tags = list(c.get("channel_niche") or ["cross-niche-craft"])
+            elif role == "southern_story_voice":
+                tags = list(c.get("channel_niche") or ["southern-story-voice"])
             elif role == "anti_pattern":
                 tags = list(c.get("channel_niche") or ["anti-pattern"])
             elif c.get("niche_verified") and c.get("channel_niche"):
@@ -225,13 +248,22 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
             continue
         fans = (c.get("author") or {}).get("fans") or 0
         views = c.get("play_count") or 0
+        comments = c.get("comment_count") or 0
         ratio_f = round(views / fans, 2) if fans else None
         ratio_m = c.get("outlier_ratio")
+        vpd = c.get("views_per_day")
+        eng = c.get("engagement_intensity")
         reasons = []
         if ratio_f is not None and ratio_f >= min_ratio:
             reasons.append(f"ratio≥{min_ratio:.1f}")
         if ratio_m is not None and ratio_m >= min_ratio:
             reasons.append(f"median≥{min_ratio:.1f}x")
+        # Fallback for big channels with followers=0 whose clips consistently hit high views (ratio_m ≈ 1.0x)
+        if not reasons and fans == 0 and views >= min_abs_v:
+            if vpd is not None and vpd >= min_vpd:
+                reasons.append(f"velocity≥{int(min_vpd)}/d")
+            if eng is not None and eng >= min_eng and comments >= 50:
+                reasons.append(f"engagement≥{min_eng:.3f}")
         if not reasons:
             continue
         author = (c.get("author") or {}).get("name") or ""
@@ -241,6 +273,7 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
             "platform": c.get("platform", "tiktok"),
             "role": role,
             "learn_scope": c.get("learn_scope") or LEARN_SCOPE[role],
+            "format_compatibility": c.get("format_compatibility") or "story_metaphor",
             "craft_focus": c.get("craft_focus") or [],
             "creator": author,
             "followers": fans,
@@ -248,9 +281,11 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
             "median_views": c.get("median_views"),
             "ratio_views_followers": ratio_f,
             "outlier_ratio": ratio_m,
+            "views_per_day": vpd,
+            "engagement_intensity": eng,
             "apify_outlier": c.get("outlier"),
             "apify_basis": c.get("basis"),
-            "comments": c.get("comment_count"),
+            "comments": comments,
             "top_comments": c.get("top_comments") or [],
             "shares": c.get("share_count"),
             "saves": c.get("save_count"),

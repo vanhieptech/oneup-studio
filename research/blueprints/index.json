@@ -58,12 +58,14 @@
     }
    ],
    "seen": 1,
-   "tone": "tech_sharp"
+   "tone": "tech_sharp",
+   "format_compatibility": "instructional_list"
   },
   {
    "id": "ARC-002",
    "name": "Kể chuyện đồng cảm → lật góc nhìn",
    "tone": "story_warm",
+   "format_compatibility": "story_metaphor",
    "skeleton": [
     "[Khoảnh khắc thật, hơi chạnh, ai cũng từng gặp] — không giáo điều, không rao giảng",
     "[Diễn biến tự trách và bỏ giữa chừng] — nỗi đau âm ỉ, vẫn một người kể",
@@ -113,6 +115,7 @@
    "id": "ONEUP-CORE-ARC",
    "name": "Mạch 5 nhịp thực dụng @hi.oneup: tình huống → bẻ thước đo → 1 bằng chứng → 1 việc tối nay → CTA chia sẻ đồng hành",
    "tone": "oneup_core",
+   "format_compatibility": "story_metaphor",
    "channel": "hi_oneup",
    "core": true,
    "target_syllables": [
