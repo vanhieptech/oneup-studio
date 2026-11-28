@@ -23,7 +23,8 @@ from pathlib import Path
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
 
 ROOT = P.ROOT
-DEFAULT_ARCHETYPES = ("M1", "M2", "M4")
+DEFAULT_ARCHETYPES = ("M1", "M2", "M6")
+SOUL_ARCHETYPES = ("M2", "M6", "M7")
 
 
 def _load_mod(name, rel_path):
@@ -60,11 +61,12 @@ def prepare_arena(
         lines = [
             "---",
             f'title: "Arena Writer {label} ({ak} — {ad["name"]})"',
-            "date: 2026-11-27",
+            "date: 2026-11-28",
             f"id: arena.writer-{label.lower()}-{ak.lower()}",
             "type: draft",
             "status: draft",
-            "updated: 2026-11-27",
+            *(["mode: philosophy"] if ad.get("mode") == "philosophy" else []),
+            "updated: 2026-11-28",
             f"tags: [arena, script-draft, {ak.lower()}]",
             "---",
             f"# Đấu trường Kịch bản — Writer {label} (`{ak}`: {ad['name']})",
@@ -168,7 +170,7 @@ def main(argv=None):
         if not idea or not out_dir:
             print("prepare cần --idea và --out-dir", file=sys.stderr)
             return 2
-        archs = opt("--archetypes").split(",") if opt("--archetypes") else DEFAULT_ARCHETYPES
+        archs = SOUL_ARCHETYPES if "--soul" in a else (opt("--archetypes").split(",") if opt("--archetypes") else DEFAULT_ARCHETYPES)
         fl_path = opt("--fact-lock")
         fl_txt = Path(fl_path).read_text(encoding="utf-8") if fl_path and Path(fl_path).exists() else None
         written = prepare_arena(

@@ -114,7 +114,7 @@ def main(argv=None):
     clip_slug = opt("--clip", "clip-next")
     ref_date = opt("--date", dt.date.today().isoformat())
     idea = opt("--idea")
-    archs = tuple(opt("--archetypes").split(",")) if opt("--archetypes") else ("M1", "M2", "M4")
+    archs = ("M2", "M6", "M7") if "--soul" in a else (tuple(opt("--archetypes").split(",")) if opt("--archetypes") else ("M1", "M2", "M6"))
 
     res = run_ideate(
         clip_slug=clip_slug,

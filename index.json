@@ -311,6 +311,14 @@
    "title": "Idea bank"
   },
   {
+   "id": "philosophy-bank",
+   "type": "resource",
+   "status": "active",
+   "updated": "2026-11-28",
+   "path": "content/philosophy-bank.md",
+   "title": "Philosophy bank: Triết lý sống, Niềm vui Nỗi buồn & Lý tưởng (@hi.oneup)"
+  },
+  {
    "id": "published-log",
    "type": "log",
    "status": "ready",
@@ -1965,6 +1973,22 @@
    "updated": "2026-11-27",
    "path": "research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md",
    "title": "Viral DNA Card `trends-2026-11-27-14`"
+  },
+  {
+   "id": "teardown.trends-2026-11-28-01",
+   "type": "teardown",
+   "status": "draft",
+   "updated": "2026-11-28",
+   "path": "research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md",
+   "title": "Viral DNA Card `trends-2026-11-28-01`"
+  },
+  {
+   "id": "teardown.trends-2026-11-28-04",
+   "type": "teardown",
+   "status": "draft",
+   "updated": "2026-11-28",
+   "path": "research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md",
+   "title": "Viral DNA Card `trends-2026-11-28-04`"
   },
   {
    "id": "trends-ingest",

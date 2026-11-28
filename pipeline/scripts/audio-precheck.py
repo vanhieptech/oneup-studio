@@ -65,12 +65,20 @@ SERIOUS_EVIDENCE_RE = re.compile(
 WARM_CTA_RE = re.compile(
     r"(?i)\b(comment|bình luận|kể mình nghe|giống mình|nghĩ sao|vượt qua|chia sẻ|góc nhìn)\b"
 )
+SOUL_REFLECTION_RE = re.compile(
+    r"(?i)\b(cuộc đời|lý tưởng|mục tiêu|niềm vui|nỗi buồn|cô đơn|chạnh lòng|tử tế|bình yên|ý nghĩa|hạnh phúc|đủ đầy|tha thứ|trưởng thành|đêm muộn|lặng|thật lòng)\b"
+)
+AI_CHICKEN_SOUP_RE = re.compile(
+    r"(?i)(cuộc đời là một hành trình|không phải đích đến|thành công không đến sau một đêm|phiên bản tốt (?:nhất|hơn) của chính mình|hãy trân trọng từng khoảnh khắc|mọi chuyện xảy ra đều có lý do|chữa lành đứa trẻ bên trong|khám phá giá trị bản thân)"
+)
 
 
 def suggest_voice_ref(beat_idx, total_beats, text):
-    """Map beat to DL-073 emotional F5 voice ref (thai-son-v2 / thai-son-serious / thai-son-happy)."""
+    """Map beat to DL-073/DL-086 emotional F5 voice ref & delivery hint."""
     if beat_idx == total_beats - 1 and (WARM_CTA_RE.search(text) or "?" in text):
         return "thai-son-happy", "warm_cta"
+    if SOUL_REFLECTION_RE.search(text) and not SERIOUS_EVIDENCE_RE.search(text):
+        return "thai-son-v2", "soul_reflection"
     if 1 <= beat_idx <= max(1, total_beats // 2) and VULNERABILITY_CUES_RE.search(text) and not SERIOUS_EVIDENCE_RE.search(text):
         return "thai-son-v2", "vulnerability_dip"
     if SERIOUS_EVIDENCE_RE.search(text) and beat_idx >= 1:
@@ -307,6 +315,12 @@ def analyze_beats(beats, archive_hooks=None):
         v_ref, emo_role = suggest_voice_ref(idx, n_beats, clean)
 
         b_warns = []
+        # 0. AI Chicken-Soup Cliché detector (DL-086: protect human soul & earned maxims from AI platitudes)
+        cm = AI_CHICKEN_SOUP_RE.search(clean)
+        if cm:
+            w = {"code": "CLICHE_MAXIM", "beat": b["id"],
+                 "message": f"{b['id']}: dính câu đạo lý sáo rỗng mùi AI «{cm.group(0)}» → đổi sang cảnh đời thường cụ thể trước rồi tự rút câu đúc kết mộc (Earned Maxim, `content/philosophy-bank.md`)"}
+            warnings.append(w); b_warns.append(w)
         # 1. Speech rate check (explicit duration vs natural pace, or severe breath-density anomaly)
         if dur_s and dur_s > 0:
             if rate > RATE_WARN_HIGH:

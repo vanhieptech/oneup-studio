@@ -640,8 +640,31 @@ def _l088_novelty(hook, cta, cur_clip_no, exclude_file=None, same_clip_ok=False)
         if op: warn("L-088", f"{what} mở bằng «{' '.join(_l088_clean(new).split()[:2])}» như {len(op)} clip trước ({', '.join(op)}) → đổi cách mở")
         if not sim and not op: ok("L-088", f"{what} không trùng mẫu {len(olds)} {what} clip trước (ngưỡng {L088_SIM})")
 
-def _l088_evidence(cites, spoken, cur_clip_no, where):
-    (ok if cites else err)("L-088", f"có nguồn truy được ({where}): " + ", ".join(sorted(set(cites))[:6]) if cites else f"không có nguồn truy được (tác giả + năm / PMID / doi) trong {where} → clip phải có dẫn chứng")
+L088_PHILOSOPHERS = re.compile(
+    r"(?i)\b(Marcus Aurelius|Seneca|Epictetus|Viktor Frankl|Epicurus|Naval(?:\s+Ravikant)?|Albert Camus|Camus|Schopenhauer|Lao Tzu|Lão Tử|Shunryu Suzuki|HowToLiveBetter|P-\d{2}|S-\d{2})\b"
+)
+
+
+def _is_philosophy_mode(md_or_spec):
+    if isinstance(md_or_spec, dict):
+        return str(md_or_spec.get("mode") or "").lower() in ("philosophy", "soul_story", "life_reflection")
+    return bool(re.search(r"(?mi)^mode:\s*(?:philosophy|soul_story|life_reflection)\b", md_or_spec or ""))
+
+
+def _l088_evidence(cites, spoken, cur_clip_no, where, philosophy_mode=False, raw_source=""):
+    if philosophy_mode:
+        anchors = sorted(set(m.group(0) for m in L088_PHILOSOPHERS.finditer((raw_source or "") + " " + (spoken or ""))))
+        all_anchors = sorted(set(cites) | set(anchors))
+        (ok if all_anchors else warn)(
+            "L-088",
+            f"chế độ triết lý/tâm sự (`mode: philosophy`): có neo tư tưởng/chuyện thật ({', '.join(all_anchors[:6])})"
+            if all_anchors else f"chế độ triết lý/tâm sự ({where}): nên neo vào 1 hạt giống `P-NN`/`S-NN` hoặc tư tưởng kinh điển để sâu sắc, tránh súp gà rỗng",
+        )
+        dry = sorted({m.group(0).lower() for m in re.finditer(L088_DRY, _l088_clean(spoken), re.I)})
+        if dry:
+            warn("L-088", "dẫn chứng mở kiểu chèn trích dẫn: " + ", ".join(f"«{d}»" for d in dry))
+        return
+    (ok if cites else err)("L-088", f"có nguồn truy được ({where}): " + ", ".join(sorted(set(cites))[:6]) if cites else f"không có nguồn truy được (tác giả + năm / PMID / doi) trong {where} → clip phải có dẫn chứng (hoặc khai báo `mode: philosophy` cho bài triết lý/tâm sự đời sống)")
     sur = {w for c in cites for w in re.findall(r"[A-Z][a-z'\-]{2,}", c) if w not in ("PMID",)}
     sp = _l088_clean(spoken)
     said = re.search(L088_EVID_SPOKEN, sp, re.I) or any(re.search(rf"(?<!\w){re.escape(s)}(?!\w)", sp) for s in sur)
@@ -681,7 +704,8 @@ def check_l088(spec, L, fdir, clip_dir):
     n = _clip_no(clip_dir)
     sf = os.path.join(fdir, "script-final.md"); stx = open(sf, encoding="utf8").read() if os.path.exists(sf) else ""
     cites = citations(stx) + citations(json.dumps(spec, ensure_ascii=False))
-    _l088_evidence(cites, " ".join((l.get("text") or "") for _, _, l in L), n, "script-final.md + spec")
+    phil = _is_philosophy_mode(spec) or _is_philosophy_mode(stx)
+    _l088_evidence(cites, " ".join((l.get("text") or "") for _, _, l in L), n, "script-final.md + spec", philosophy_mode=phil, raw_source=stx + " " + json.dumps(spec, ensure_ascii=False))
     hook, cta = spec_hook_cta(spec); _l088_novelty(hook, cta, n)
     _l088_trend(clip_dir); _l088_facts(clip_dir)
     info("L-088", L088_MANUAL)
@@ -690,7 +714,7 @@ def check_l088_file(path):  # --l088 FILE: soi bản nháp script trước khi c
     md = open(path, encoding="utf8").read(); n = _clip_no(os.path.abspath(path))
     hook, cta, spoken = draft_parts(md)
     if not spoken: err("L-088", f"{os.path.basename(path)}: không đọc được lời theo beat (khung «N. **[Nhãn]** lời»)"); return
-    _l088_evidence(citations(md), spoken, n, os.path.basename(path))
+    _l088_evidence(citations(md), spoken, n, os.path.basename(path), philosophy_mode=_is_philosophy_mode(md), raw_source=md)
     _l088_novelty(hook, cta, n, exclude_file=path, same_clip_ok=not path.endswith("-LOCKED.md"))  # bản đã khoá không so với spec của chính nó
     m = re.search(r"content/(?:clips|archive)/[^/]+", os.path.abspath(path).replace(os.sep, "/"))
     fl = [os.path.join(REPO, x.strip()) for x in re.findall(r"(?m)^fact_lock:\s*(\S+\.md)", md)]  # frontmatter fact_lock: <path> (…)

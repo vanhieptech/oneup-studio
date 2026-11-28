@@ -30,7 +30,8 @@ PREFIX = arg("--prefix", "vp"); LISTEN = arg("--listen", os.path.join(W, "listen
 ARGS = [a for i, a in enumerate(sys.argv[3:], 3) if not a.startswith("--") and not sys.argv[i - 1].startswith("--")]
 
 VR = json.load(open(os.path.join(REPO, "assets/voice-refs/voice-refs.json")))
-REF_SLOTS = {"default": "thai-son-v2", "happy": "thai-son-happy", "serious": "thai-son-serious"}
+REF_SLOTS = {"default": "thai-son-v2", "happy": "thai-son-happy", "serious": "thai-son-serious", "reflective": "thai-son-v2"}
+REFLECTIVE_EMOTIONS = ("reflective", "sad", "warm", "maxim", "vulnerable")
 def pick_ref(S, sc, l, key):
     vr = S.get("voice_refs")
     if not vr: return "thai-son"
@@ -40,6 +41,7 @@ def pick_ref(S, sc, l, key):
     o = l.get("voice_ref") or lines.get(key)
     if o: r = slots.get(o, o)
     elif l.get("emotion") in ("happy", "teasing"): r = slots["happy"]
+    elif l.get("emotion") in REFLECTIVE_EMOTIONS: r = slots["reflective"]
     elif l.get("emotion", "neutral") in ("focused", "neutral") and sc.get("part") == "evidence": r = slots["serious"]
     else: r = slots["default"]
     if r not in VR: sys.exit(f"voice_refs: unknown ref '{r}' for {key} (ids: {', '.join(k for k in VR if not k.startswith('_'))})")
@@ -61,12 +63,13 @@ def gen():
         if len(m)>1 and not any(keep) and len(re.sub(r"\{[^:]*: |\}","",m[-1]).split())<3: x=m.pop(); m[-1]=m[-1]+' '+x
         for i,p in enumerate(m):
           emph=re.findall(r"\{nhấn: ([^}]*)\}",p)+[w for w in ("Thứ nhất","Thứ hai","cuối cùng") if w in p]; t=re.sub(r"\{nhấn: ([^}]*)\}",r"\1",p)
-          units.append({"key":f"{key}-{i}","line":key,"ref":ref_id,"role":l['voice_role'],"t":t,"emph":emph,"last":i==len(m)-1,"stem":bool(re.match(r"(thì cái|thứ nhất|thứ hai|và cuối cùng)",l['text'].lower().replace('*','')))})
+          units.append({"key":f"{key}-{i}","line":key,"ref":ref_id,"role":l['voice_role'],"emotion":l.get("emotion","neutral"),"t":t,"emph":emph,"last":i==len(m)-1,"stem":bool(re.match(r"(thì cái|thứ nhất|thứ hai|và cuối cùng)",l['text'].lower().replace('*','')))})
     json.dump(units,open(W+'/units.json','w'),ensure_ascii=False,indent=0)
     ref=REPO+"/assets/voice-refs/"+VR["thai-son"]["wav"];rt=VR["thai-son"]["ref_text"]
     ck_fp=P.ckpt_fingerprint()
     def _mk_item(u, sd):
-      spd=float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95))
+      base_spd=float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95))
+      spd=round(base_spd*0.93,3) if u.get("emotion") in REFLECTIVE_EMOTIONS else base_spd
       ch=hashlib.sha256(json.dumps([u["t"],u["ref"],spd,sd,ck_fp],ensure_ascii=False).encode()).hexdigest()[:16]
       return {"t":u["t"],"ref":REPO+"/assets/voice-refs/"+VR[u["ref"]]["wav"],"ref_text":VR[u["ref"]]["ref_text"],"seed":sd,"speed":spd,"cache_hash":ch,"out":f"{W}/{u['key']}-{sd}.wav"}
     split=int(arg("--split","1"))
@@ -198,9 +201,9 @@ else:
             have=db(x[a:b])-db(rest); g=float(min(7.0,max(3.0,2.5-have))); x=gain(x,a,b,g)
             emph_db.append((e,round(have,1),round(db(x[a:b])-db(np.concatenate([x[:a],x[b:ra]]) if (a>0 or ra>b) else x),1)))
           out=[]; pos=0; tail=x
-          if u["last"] and u["stem"] and len(ws)>0:  # sentence-end fall on the last word (no tempo change)
-            lw=int(ws[-1][1]*SR)
-            if 0<lw<len(tail): out.append(tail[:lw]); tail=rb(tail[lw:],tempo=1.0,semi=-1.5)
+          if u["last"] and (u["stem"] or u.get("emotion") in ("reflective","maxim","sad")) and len(ws)>0:  # sentence-end gentle fall (-1.2 st for soul/maxim, -1.5 st for stem)
+            lw=int(ws[-1][1]*SR); fall=-1.2 if u.get("emotion") in ("reflective","maxim","sad") and not u["stem"] else -1.5
+            if 0<lw<len(tail): out.append(tail[:lw]); tail=rb(tail[lw:],tempo=1.0,semi=fall)
           elif q and len(ws)>0 and final_tone(u["t"]) not in L082_TONES:  # L-082: never lift huyền/nặng ending questions
             lw=int(ttime(len(tgt)-1,False)*SR); semi=float(min(5.0,max(2.5,1.0-rs)))
             if 0<lw<len(tail): out.append(tail[:lw]); tail=rb(tail[lw:],tempo=1.0,semi=semi)
@@ -244,8 +247,8 @@ else:
         def gap(t,stemfirst,nxt=None):  # prosody-plan (b): comma .15-.25, period .35-.5, +0.08 before a stressed unit
           t=t.strip()
           if stemfirst: return 0.25
-          # delivery rev3 (pacing-v14.md root fix): comma 0.18 < colon 0.25 < sentence 0.35; '///' before «Bút dừng» 0.4; voice-only uses prosody-check.py voice
-          g=0.35 if t[-1:] in '.?!…' else 0.25 if t[-1:]==':' else COMMA_GAP if t[-1:]==',' else 0.0
+          # delivery rev3 + DL-086 human breath pause: ellipsis '…' gets 0.50s contemplative breath, sentence 0.35s, colon 0.25s, comma 0.18s
+          g=0.50 if t[-1:]=='…' or t.endswith('...') else 0.35 if t[-1:] in '.?!' else 0.25 if t[-1:]==':' else COMMA_GAP if t[-1:]==',' else 0.0
           return 0.4 if nxt and nxt["t"].startswith("Bút dừng") else g
         def env(x):
           hop=SR/FPS; e=[float(np.sqrt(np.mean(x[int(i*hop):int((i+1)*hop)]**2))) if len(x[int(i*hop):int((i+1)*hop)]) else 0 for i in range(int(len(x)/hop)+1)]

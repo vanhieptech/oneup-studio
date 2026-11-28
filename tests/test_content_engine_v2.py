@@ -284,6 +284,53 @@ class ContentEngineV2Tests(unittest.TestCase):
         self.assertEqual(c0["suggested_role"], "global_niche_source")
         self.assertEqual(c0["hits"], 2)
 
+    # --- DL-086: Human Soul, Life Philosophy (M6/M7, philosophy-bank, mode: philosophy, anti-chicken-soup) ---
+    def test_dl086_philosophy_bank_m6_m7_and_anti_chicken_soup(self):
+        import subprocess
+        # 1. Gate 0 loads philosophy-bank seeds and supports M6 / M7
+        b = g0.brief("cô đơn theo đuổi mục tiêu lý tưởng đêm muộn", "hi", archetype="M6")
+        self.assertIn("Archetype `M6`", b)
+        self.assertIn("Late-Night Confession", b)
+        self.assertIn("Philosophy bank P-", b)
+
+        # 2. script-arena --soul prepares M2, M6, M7 with mode: philosophy on M6/M7
+        with tempfile.TemporaryDirectory() as d:
+            written = sa.prepare_arena(
+                idea="lý tưởng sống và nỗi buồn khi đi chậm",
+                out_dir=d,
+                archetypes=sa.SOUL_ARCHETYPES,
+            )
+            self.assertEqual([w["archetype"] for w in written], ["M2", "M6", "M7"])
+            m6_txt = Path(written[1]["path"]).read_text(encoding="utf-8")
+            self.assertIn("mode: philosophy", m6_txt)
+
+            # 3. check-rules.py --l088 accepts mode: philosophy with philosophical anchor (no lab paper forced)
+            soul_draft = Path(d) / "soul-draft.md"
+            soul_draft.write_text(
+                "---\ntitle: Soul test\nmode: philosophy\n---\n"
+                "1. **[b01 · 0–6s]** Mười một giờ đêm tắt màn hình, tự nhiên mình thấy lòng chùng xuống lạ lắm.\n"
+                "2. **[b02 · 6–15s]** Cả ngày cặm cụi làm thứ mình tin (P-01, Marcus Aurelius), mà nhìn quanh chưa có gì để khoe hết…\n"
+                "3. **[b03 · 15–24s]** Lúc chưa ai thấy kết quả, thứ giữ mình ngồi lại là biết mình đang sống thật với điều mình chọn.\n"
+                "4. **[b04 · 24–32s]** Có ai đang âm thầm đi một con đường dài giống mình hông, kể mình nghe với nha?\n",
+                encoding="utf-8",
+            )
+            r = subprocess.run(
+                ["python3", str(ROOT / "pipeline/scripts/check-rules.py"), "--l088", str(soul_draft)],
+                capture_output=True, text=True, timeout=15,
+            )
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+            self.assertIn("mode: philosophy", r.stdout)
+
+        # 4. audio-precheck flags AI chicken-soup clichés (CLICHE_MAXIM) & detects soul_reflection
+        cliche_draft = (
+            "1. **[b01 · 0–6s]** Cuộc đời là một hành trình không phải đích đến nên bạn hãy cố lên nha.\n"
+            "2. **[b02 · 6–14s]** Đêm muộn ngồi nghĩ về lý tưởng và nỗi buồn trong cuộc đời mình thấy lặng đi.\n"
+        )
+        res = ap.analyze_beats(ap.parse_beats(cliche_draft))
+        codes = {w["code"] for w in res["warnings"]}
+        self.assertIn("CLICHE_MAXIM", codes)
+        self.assertEqual(res["voice_ref_map"]["b02"]["emotion_role"], "soul_reflection")
+
 
 if __name__ == "__main__":
     unittest.main()

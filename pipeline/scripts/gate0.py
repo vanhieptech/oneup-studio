@@ -70,6 +70,22 @@ ARCHETYPES = {
         "wave": "Kéo vào phép thử → Khựng lại thấy đúng là mình hay kẹt ở đó (Dip) → So sánh trước–sau → 1 bằng chứng chốt hạ → 1 bước thử tối nay → Hỏi kết quả & cách mỗi người",
         "ref_clips": ["a-c03", "a-c01"],
     },
+    "M6": {
+        "name": "Late-Night Confession (Tâm sự đêm muộn: Niềm vui · Nỗi buồn · Mục tiêu & Lý tưởng)",
+        "color": "thủ thỉ · sâu lắng · con người thật (`mode: philosophy`)",
+        "hook_style": "Mở bằng một khoảnh khắc thật lúc đêm về (ly nước nguội, màn hình tắt, cảm giác vui âm ỉ hoặc buồn chông chênh khi đi đường dài một mình).",
+        "wave": "Khoảnh khắc lặng thật sự → Nỗi buồn / Hoài nghi không né tránh (Deep Dip) → Góc nhìn triết lý ấm áp → 1 câu đúc kết cuộc đời mộc (Earned Maxim, nghỉ `…` 0.5s) → Lời hỏi thăm tâm tình ngang hàng",
+        "ref_clips": ["a-c04", "a-c01"],
+        "mode": "philosophy",
+    },
+    "M7": {
+        "name": "Earned Life Maxim (Từ chuyện nhỏ đời thường → Triết lý sống & Cuộc đời)",
+        "color": "chiêm nghiệm · châm ngôn đúc kết từ va vấp · không súp gà AI (`mode: philosophy`)",
+        "hook_style": "Mở bằng một tình huống nhỏ ngoài đời ai cũng lướt qua, nhưng khơi ra câu hỏi lớn về cách sống, mục tiêu hay lý tưởng cuộc đời.",
+        "wave": "Chi tiết đời thực sắc nét → Va vấp / Cái giá từng trả (Dip) → Đối chiếu tư tưởng kinh điển (Khắc kỷ / Hiện sinh / `philosophy-bank.md`) → Châm ngôn sống đúc kết 1 câu ngắn thấm → Mở lòng lắng nghe quan điểm sống của bạn",
+        "ref_clips": ["a-c01", "a-c04"],
+        "mode": "philosophy",
+    },
 }
 EMOTIONAL_WAVE_6 = [
     ("b01", "Chạm nhột / Ngạc nhiên (Hook Spark)", "thai-son-v2"),
@@ -287,6 +303,17 @@ def story_rows(q, n=2):
     return [r for s, r in scored[:n] if s > 0]
 
 
+def philosophy_rows(q, n=2):
+    """Match life-philosophy, joy/sorrow, ideals & earned-maxim seeds from content/philosophy-bank.md."""
+    rows = md_rows(ROOT / "content/philosophy-bank.md", 5)
+    p_rows = [r for r in rows if re.match(r"P-\d+", r[0])]
+    if not p_rows:
+        return []
+    scored = sorted(((overlap(q, " ".join(r[:5])), r) for r in p_rows), key=lambda x: -x[0])
+    hits = [r for s, r in scored[:n] if s > 0]
+    return hits if hits else p_rows[:1]
+
+
 def tsv(path):
     if not Path(path).exists(): return []
     return [l.rstrip("\n").split("\t") for l in Path(path).read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
@@ -496,6 +523,9 @@ def brief(idea_q, ch="hi", arc_id=None, memo=None, topic=None, clip=None, length
     st = story_rows(idea_q)
     L += [f"- Story bank {r[0]}: {r[1]} ({r[2]})" for r in st] or ["- Story bank: không có dòng nào khớp từ khóa của ý này; dùng `[VÍ DỤ THẬT CỦA HIỆP: …]` hoặc xin Hiệp ghi âm 60–90s (Voice-First)."]
     if ch == "hi":
+        ph = philosophy_rows(idea_q, n=2)
+        if ph:
+            L += [f"- Philosophy bank {r[0]} ({r[1]}): cảnh thật «{r[2]}» · nguồn `{r[3]}` · đúc kết mộc: «{r[4]}»" for r in ph]
         L += VOICE_REMINDER
     picks = pick_approved(idea_q) if ch == "hi" else []
     L.append("- **Chỉ nạp 4 thứ khi viết nháp v1/v2:** (1) brief này (Gate 0 + Fact-lock + trend); (2) `content/voice-profile.md` §2–3; "

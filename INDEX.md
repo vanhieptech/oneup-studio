@@ -51,6 +51,7 @@ tags: [index, retrieval]
 | clip-07.script-v1-draft | draft | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/script-v1-draft.md` | Đấu trường Kịch bản — Writer B (`M2`: 5-Second Vulnerable Story (Tâm sự khoảnh khắc thật 5 giây)) |
 | clip-07.trend-signals | research | ready | `content/clips/clip-07-check-tin-nhan-3-lan/final/trend-signals.md` | Tín hiệu trend cho clip-07 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
+| philosophy-bank | resource | active | `content/philosophy-bank.md` | Philosophy bank: Triết lý sống, Niềm vui Nỗi buồn & Lý tưởng (@hi.oneup) |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
 | sample-f5 | sample | ready | `content/samples/sample-f5/README.md` | sample-f5 (DL-035): same as sample-natural, voices = F5-TTS |
@@ -258,6 +259,8 @@ tags: [index, retrieval]
 | trends-2026-11-27 | trend-digest | draft-needs-review | `research/trends/2026-11-27/digest.md` | Trend digest 2026-11-27 (thứ Sáu — Black Friday) |
 | teardown.trends-2026-11-27-01 | teardown | draft | `research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md` | Viral DNA Card `trends-2026-11-27-01` |
 | teardown.trends-2026-11-27-14 | teardown | draft | `research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md` | Viral DNA Card `trends-2026-11-27-14` |
+| teardown.trends-2026-11-28-01 | teardown | draft | `research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md` | Viral DNA Card `trends-2026-11-28-01` |
+| teardown.trends-2026-11-28-04 | teardown | draft | `research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md` | Viral DNA Card `trends-2026-11-28-04` |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
 | trends-suggested-channels | trend-digest | active | `research/trends/suggested-channels.md` | Đề xuất Kênh Mới Nên Theo Dõi (2026-11-28) |

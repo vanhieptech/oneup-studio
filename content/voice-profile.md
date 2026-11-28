@@ -25,6 +25,12 @@ Hiệp xác nhận ngày 2026-10-12 (DL-019). Skill `script-polish` áp dụng f
 | Từ cấm | Không có từ cấm riêng. Vẫn tránh các tell của AI (rule-40) |
 | Chuyện thật | Càng nhiều càng tốt. **Ưu tiên video kể chuyện** (rule-41). Chỉ dùng chuyện Hiệp đã xác nhận (`content/story-bank.md`) |
 
+## 2b. Chiều sâu con người: Cảm xúc, Niềm vui Nỗi buồn, Triết lý & Lý tưởng sống (`DL-086`)
+`@hi.oneup` không phải kênh đọc mẹo năng suất vô hồn — người xem ở lại vì họ gặp một **con người thật đang sống, làm việc, vấp ngã và suy ngẫm cùng họ**:
+- **Dám chia sẻ cả niềm vui lẫn nỗi buồn thật:** không giấu những tối chông chênh, làm hoài chưa thấy kết quả, cảm giác chạnh lòng khi nhìn người khác đi nhanh, hay niềm vui âm ỉ khi giữ được một lời hứa nhỏ với chính mình (`content/philosophy-bank.md`).
+- **Triết lý & Châm ngôn sống đúc kết (*Earned Wisdom*, không súp gà AI):** không bao giờ đứng trên cao rao giảng đạo lý. Mọi câu châm ngôn sống, mục tiêu hay lý tưởng cuộc đời đều **mọc lên sau một chi tiết đời thực cụ thể**, nói bằng giọng miền Nam thủ thỉ, bình tĩnh như hai người bạn ngồi uống ly nước buổi tối.
+- **Nhịp thở người thật khi nói chuyện sâu:** tới câu chạnh lòng hoặc câu đúc kết cuộc đời thì **nói chậm lại một nhịp**, có dấu lửng `…` (nghỉ ~0.5s như tiếng thở nhẹ), có câu tự nhủ nhỏ `{nhỏ: …}`, kết câu châm ngôn hạ giọng trầm ấm thay vì lên gân.
+
 ## 3. Nên / Không nên (ví dụ)
 | Nên (giọng Hiệp) | Không nên |
 |---|---|
