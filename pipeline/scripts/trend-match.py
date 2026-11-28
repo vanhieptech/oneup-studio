@@ -39,17 +39,51 @@ STOP = set(
     "cái việc đã sẽ đang hay hơn rất cả mới nữa luôn nha nè á hông vào ra lên về tới tại theo từ trong ngoài".split()
 )
 
-# Emotional & everyday bridge clusters: maps trending metaphors/situations to core habit/psychology themes
+# Bilingual EN + VN Emotional & everyday bridge clusters: maps global English & VN trending metaphors/topics to core habit/psychology themes
 BRIDGE_CLUSTERS = {
-    "patience_habit": {"chua no", "bong hoa", "kien nhan", "21 ngay", "thoi quen", "bo cuoc", "nan", "cham", "mai mai", "doi", "ket qua"},
-    "procrastination": {"tri hoan", "luoi", "mai hoc", "mai lam", "de sau", "deadline", "nuoc den chan", "so", "kho chiu", "ngai"},
-    "focus_distraction": {"dien thoai", "luot", "tiktok", "shorts", "reels", "mat tap trung", "thong bao", "da nhiem", "hop", "tin nhan", "ngat quang"},
-    "energy_sleep": {"ngu", "thuc khuya", "ca phe", "met", "buon ngu", "cuoi tuan", "thu hai", "kiet suc", "burnout", "ngoi nhieu", "di bo"},
-    "mindset_stress": {"overthinking", "so sanh", "ap luc", "lo au", "buon", "y chi", "can pin", "tu trach", "nghi nhieu", "chua lanh"},
-    "learning_memory": {"hoc", "thi", "nho", "quen", "doc lai", "tu kiem", "hoc don", "mot dem", "on thi", "sach"},
-    "big_task_sunk": {"viec to", "chia nho", "ngop", "side project", "chi phi chim", "bo do", "ke hoach", "don phong"},
-    "money_tech": {"gia han", "tien", "api", "bao mat", "phim tat", "ai", "lap trinh", "code"},
+    "patience_habit": {
+        "chua no", "bong hoa", "kien nhan", "21 ngay", "thoi quen", "bo cuoc", "nan", "cham", "mai mai", "doi", "ket qua",
+        "21 days", "habit", "habits", "atomic habits", "consistency", "give up", "quit", "plateau", "compound", "routine",
+    },
+    "procrastination": {
+        "tri hoan", "luoi", "mai hoc", "mai lam", "de sau", "deadline", "nuoc den chan", "so", "kho chiu", "ngai",
+        "procrastinat", "lazy", "laziness", "avoidance", "discomfort", "perfectionism", "tomorrow", "put off", "delay",
+    },
+    "focus_distraction": {
+        "dien thoai", "luot", "tiktok", "shorts", "reels", "mat tap trung", "thong bao", "da nhiem", "hop", "tin nhan", "ngat quang",
+        "phone", "scroll", "doomscroll", "dopamine", "distract", "multitask", "attention", "notification", "focus", "deep work", "screen time",
+    },
+    "energy_sleep": {
+        "ngu", "thuc khuya", "ca phe", "met", "buon ngu", "cuoi tuan", "thu hai", "kiet suc", "burnout", "ngoi nhieu", "di bo",
+        "sleep", "caffeine", "coffee", "nap", "fatigue", "exhausted", "tired", "sedentary", "sitting", "walk", "circadian", "weekend",
+    },
+    "mindset_stress": {
+        "overthinking", "so sanh", "ap luc", "lo au", "buon", "y chi", "can pin", "tu trach", "nghi nhieu", "chua lanh",
+        "overthink", "compar", "anxiety", "willpower", "ego depletion", "stress", "breath", "sigh", "spotlight effect", "insecurity", "mood",
+    },
+    "learning_memory": {
+        "hoc", "thi", "nho", "quen", "doc lai", "tu kiem", "hoc don", "mot dem", "on thi", "sach",
+        "memory", "forget", "reread", "cram", "cramming", "retrieval", "active recall", "study", "exam", "learn", "remember",
+    },
+    "big_task_sunk": {
+        "viec to", "chia nho", "ngop", "side project", "chi phi chim", "bo do", "ke hoach", "don phong",
+        "overwhelm", "chunk", "break down", "sunk cost", "side project", "big task", "planning", "clean room",
+    },
+    "money_tech": {
+        "gia han", "tien", "api", "bao mat", "phim tat", "ai", "lap trinh", "code",
+        "subscription", "auto renew", "api key", "security", "shortcut", "shortcuts", "coding", "developer", "ai agent",
+    },
 }
+
+
+def detect_lang(text, explicit_lang=None):
+    """Detect whether a trend item is English (needs EN→VN cultural localization) or Vietnamese."""
+    if explicit_lang in ("en", "vi"):
+        return explicit_lang
+    s = text or ""
+    if re.search(r"[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]", s, re.I):
+        return "vi"
+    return "en"
 
 
 def fold(s):
@@ -200,9 +234,12 @@ def load_fresh_trends(ref_date=None, max_age_hours=DEFAULT_MAX_AGE_HOURS, trends
                     ])).strip()
                     if not text:
                         text = f"@{r.get('creator', '')} outlier {r.get('id', '')}"
+                    lang = detect_lang(text, r.get("lang"))
                     items.append({
-                        "title": f"Radar @{r.get('creator', '?')}: {text[:90]}",
+                        "title": f"Radar @{r.get('creator', '?')} [{lang.upper()}]: {text[:90]}",
                         "text": text,
+                        "lang": lang,
+                        "role": r.get("role", "direct_niche"),
                         "source": str(radar_p.relative_to(ROOT)) if ROOT in radar_p.parents else str(radar_p),
                         "date": d.isoformat(),
                         "age_hours": age_hours,
@@ -250,7 +287,15 @@ def match_trends(
 
     if explicit_trends:
         trends = [
-            {"title": t, "text": t, "source": "cli:--trend", "date": str(ref_date or dt.date.today()), "age_hours": 0.0, "kind": "explicit"}
+            {
+                "title": t,
+                "text": t,
+                "lang": detect_lang(t),
+                "source": "cli:--trend",
+                "date": str(ref_date or dt.date.today()),
+                "age_hours": 0.0,
+                "kind": "explicit",
+            }
             for t in explicit_trends if t and t.strip()
         ]
     else:
@@ -258,6 +303,7 @@ def match_trends(
 
     candidates = []
     for tr in trends:
+        tr_lang = detect_lang(tr.get("text", ""), tr.get("lang"))
         for ls in unproduced:
             if req_theme and ls["theme"] != req_theme:
                 continue
@@ -265,12 +311,16 @@ def match_trends(
             if sc < MIN_BRIDGE_SCORE:
                 continue
             fresh_bonus = max(0.0, 0.15 * (1.0 - min(tr["age_hours"], max_age_hours) / max(max_age_hours, 1.0)))
-            total = round(sc + fresh_bonus, 3)
+            # Small quality bonus for global_niche_source English hits (3–6 months ahead of TikTok VN)
+            global_bonus = 0.05 if tr.get("role") == "global_niche_source" else 0.0
+            total = round(sc + fresh_bonus + global_bonus, 3)
             candidates.append({
                 "score": total,
                 "bridge_score": sc,
                 "clusters": clusters,
                 "trend": tr,
+                "lang": tr_lang,
+                "needs_localization": tr_lang == "en",
                 "lesson": ls,
                 "agile_swap": ls["slot"] != (unproduced[0]["slot"] if unproduced else ls["slot"]),
                 "theme_rule_ok": True,
@@ -341,13 +391,14 @@ def format_report(res):
     lines.append(f"- **Chế độ:** `{res['mode']}` · Trend tươi (< 72h): **{res['fresh_trends_count']}** · Ràng buộc theme kế tiếp (Rule 4 `LIGHT/DARK ≤ 2`): **{req}**")
     lines.append("")
     if res["mode"] == "hot_trend_match":
-        lines.append("| # | Điểm | Slot (Theme) | Bài học khớp tự nhiên | Trend nóng (< 72h) | Cầu cảm xúc | Agile Swap |")
+        lines.append("| # | Điểm | Slot (Theme) | Bài học khớp tự nhiên | Trend nóng (< 72h) | Cầu cảm xúc | Việt hóa / Swap |")
         lines.append("|---|---:|---|---|---|---|---|")
         for i, m in enumerate(res["matches"], 1):
             ls, tr = m["lesson"], m["trend"]
             clu = ", ".join(m["clusters"]) or "lexical"
-            swap = "Có (đổi slot)" if m["agile_swap"] else "Đúng thứ tự"
-            lines.append(f"| {i} | {m['score']:.2f} | #{ls['slot']} ({ls['theme']}) | {ls['book_ref']} — {ls['topic']} | {tr['title']} ({tr['age_hours']:.0f}h) | {clu} | {swap} |")
+            loc = "EN→VN Localize" if m.get("needs_localization") else "VN gốc"
+            swap = "Đổi slot" if m["agile_swap"] else "Đúng thứ tự"
+            lines.append(f"| {i} | {m['score']:.2f} | #{ls['slot']} ({ls['theme']}) | {ls['book_ref']} — {ls['topic']} | {tr['title']} ({tr['age_hours']:.0f}h) | {clu} | {loc} · {swap} |")
     else:
         lines.append("> Không có trend tươi (< 72h) nào khớp tự nhiên với trục kênh → kích hoạt **Pain-Wave Fallback (ngoại lệ sạch `DL-069`, không ép meme gượng)** từ `resources/vn-spoken/audience-pain-bank.md`.")
         lines.append("")

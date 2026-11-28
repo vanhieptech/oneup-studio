@@ -1,8 +1,9 @@
 # TikTok / Short-form Multi-Channel Outlier Radar (Luồng 1) for pipeline/scripts/radar-fetch.py & trend-streams.py radar.
 # JSON-compatible YAML (stdlib reads it).
 # min_ratio: views ÷ follower (hoặc views ÷ median_views 10 video gần nhất của kênh) ≥ 3.0 (Hiệp 26/11, vd manghocls 7,6x).
-# role (Content Engine v2.0, DL-082):
-#   - direct_niche: kênh cùng ngách trực tiếp (lấy chủ đề nóng + top comments nỗi đau thật).
+# role (Content Engine v2.1, DL-082, DL-084):
+#   - global_niche_source: kênh tiếng Anh chất lượng cao cùng chủ đề (thói quen, tâm lý, tập trung, học tập, ngủ, dev/AI) — đi trước TikTok VN 3–6 tháng; học cả ý tưởng lõi, nghiên cứu khoa học, ẩn dụ thị giác & cấu trúc hook rồi Việt hóa hoàn toàn sang bối cảnh & giọng miền Nam (idea_and_craft_localize, cấm dịch word-by-word).
+#   - direct_niche: kênh VN cùng ngách trực tiếp (lấy chủ đề nóng + top comments nỗi đau thật).
 #   - southern_story_voice: kênh kể chuyện/podcast giọng miền Nam & đời thường — chỉ trích khẩu ngữ mở câu, nhịp tâm tình, chuyển ý mềm và cách rủ đối thoại cuối bài (voice_cadence_only).
 #   - cross_niche_craft: kênh khác ngách (tài chính, storytelling, khoa học thường thức, tech global/VN) có retention cao — chỉ học kỹ thuật mở hook, chuyển cảnh, ẩn dụ và nhịp kể chuyện (craft_only).
 #   - anti_pattern (tùy chọn): kênh/video nhiều view nhưng nội dung rỗng/câu view rẻ tiền để ghi nhận lỗi cần tránh.
@@ -17,22 +18,39 @@
  "recent_limit": 10,
  "growth": {"min_hours": 24, "max_hours": 72, "min_pct": 0.5, "min_abs": 100},
  "channels": [
-  {"handle": "manghocls", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "instructional_list", "url": "https://www.tiktok.com/@manghocls", "followers": 99000, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
-  {"handle": "hoaquynh0000", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@hoaquynh0000", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
-  {"handle": "kyluat.1", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@kyluat.1", "followers": 0, "niche": ["productivity", "tu-duy"], "niche_verified": true},
-  {"handle": "phamthuykieuhuong", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "instructional_list", "url": "https://www.tiktok.com/@phamthuykieuhuong", "followers": 0, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
-  {"handle": "braincorevn", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@braincorevn", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
-  {"handle": "quocnguyenkieuvi", "platform": "tiktok", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@quocnguyenkieuvi", "followers": 0, "niche": ["tu-duy"], "niche_verified": true},
-  {"handle": "vietcetera", "platform": "youtube", "role": "southern_story_voice", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Vietcetera/shorts", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["khau-ngu-mien-nam", "nhip-tam-tinh", "chuyen-y-mem", "cta-doi-thoai"], "niche_verified": true},
-  {"handle": "giangoi", "platform": "youtube", "role": "southern_story_voice", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@GiangOi/shorts", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["tam-su-doi-thuong", "tu-gieu-duyen", "ngat-nhip-tu-nhien"], "niche_verified": true},
-  {"handle": "fireship", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Fireship/shorts", "followers": 0, "niche": ["tech", "storytelling"], "craft_focus": ["hook-toc-do", "an-du-tech", "nhip-cat-3s"], "niche_verified": true},
-  {"handle": "veritasium", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@veritasium/shorts", "followers": 0, "niche": ["khoa-hoc", "storytelling"], "craft_focus": ["hook-phan-truc-giac", "open-loop", "ke-chuyen-thi-nghiem"], "niche_verified": true},
-  {"handle": "aliabdaal", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@aliabdaal/shorts", "followers": 0, "niche": ["productivity", "storytelling"], "craft_focus": ["chuyen-y-muot", "khung-3-buoc"], "niche_verified": true},
-  {"handle": "hieutv", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@hieu-tv/videos", "followers": 0, "niche": ["tai-chinh", "tu-duy"], "craft_focus": ["an-du-doi-thuong", "giong-tram-tin-cay"], "niche_verified": true},
-  {"handle": "spiderum", "platform": "youtube", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/channel/UCRsd_L7wBGdHLhfacuy3QVw/videos", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["nhap-de-vn", "an-du-doi-thuong"], "niche_verified": true},
-  {"handle": "clickbait_watch_sample", "platform": "tiktok", "role": "anti_pattern", "format_compatibility": "instructional_list", "url": "", "enabled": false, "followers": 0, "niche": ["anti-pattern"], "craft_focus": ["cau-view-rong", "hook-khong-tra-loi"], "niche_verified": false}
+  {"handle": "betterideas", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@BetterIdeas/shorts", "followers": 0, "niche": ["productivity", "tu-duy", "storytelling"], "craft_focus": ["tu-gieu-duyen", "hook-noi-dau", "tam-ly-thoi-quen"], "niche_verified": true},
+  {"handle": "mattdavella", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@MattDAvella/shorts", "followers": 0, "niche": ["productivity", "tu-duy", "storytelling"], "craft_focus": ["thu-nghiem-30-ngay", "giong-tram-ke-chuyen", "myth-busting"], "niche_verified": true},
+  {"handle": "hubermanlab", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@hubermanlab/shorts", "followers": 0, "niche": ["khoa-hoc", "productivity", "tu-duy"], "craft_focus": ["co-che-nao-bo", "nghien-cuu-khoa-hoc", "giac-ngu-tap-trung"], "niche_verified": true},
+  {"handle": "kurzgesagt", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@kurzgesagt/shorts", "followers": 0, "niche": ["khoa-hoc", "tu-duy", "storytelling"], "craft_focus": ["an-du-thi-giac-hoat-hinh", "open-loop", "nhip-giai-thich"], "niche_verified": true},
+  {"handle": "healthygamergg", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@HealthyGamerGG/shorts", "followers": 0, "niche": ["tu-duy", "productivity"], "craft_focus": ["tam-ly-tri-hoan", "overthinking", "dopamine-dien-thoai"], "niche_verified": true},
+  {"handle": "psych2go", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Psych2go/shorts", "followers": 0, "niche": ["tu-duy", "storytelling"], "craft_focus": ["hook-dong-cam", "hoat-hinh-tam-ly"], "niche_verified": true},
+  {"handle": "thomasfrank", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Thomasfrank/shorts", "followers": 0, "niche": ["hoc-tap", "productivity"], "craft_focus": ["phuong-phap-hoc", "chong-tri-hoan"], "niche_verified": true},
+  {"handle": "nathanieldrew", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@NathanielDrew/shorts", "followers": 0, "niche": ["tu-duy", "storytelling"], "craft_focus": ["mental-clarity", "ke-chuyen-trai-nghiem"], "niche_verified": true},
+  {"handle": "aliabdaal", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@aliabdaal/shorts", "followers": 0, "niche": ["productivity", "storytelling"], "craft_focus": ["chuyen-y-muot", "khung-3-buoc"], "niche_verified": true},
+  {"handle": "johnnyharris", "platform": "youtube", "lang": "en", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@JohnnyHarris/shorts", "followers": 0, "niche": ["storytelling", "khoa-hoc"], "craft_focus": ["visual-storytelling", "curiosity-gap", "nhip-cat-nhanh"], "niche_verified": true},
+  {"handle": "3blue1brown", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@3blue1brown/shorts", "followers": 0, "niche": ["tech", "ai", "khoa-hoc"], "craft_focus": ["truc-quan-hoa-ai", "giai-thich-sau"], "niche_verified": true},
+  {"handle": "t3dotgg", "platform": "youtube", "lang": "en", "role": "global_niche_source", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@t3dotgg/shorts", "followers": 0, "niche": ["tech", "ai"], "craft_focus": ["goc-nhin-dev-sac", "hook-tranh-luan-tech"], "niche_verified": true},
+  {"handle": "fireship", "platform": "youtube", "lang": "en", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Fireship/shorts", "followers": 0, "niche": ["tech", "storytelling"], "craft_focus": ["hook-toc-do", "an-du-tech", "nhip-cat-3s"], "niche_verified": true},
+  {"handle": "veritasium", "platform": "youtube", "lang": "en", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@veritasium/shorts", "followers": 0, "niche": ["khoa-hoc", "storytelling"], "craft_focus": ["hook-phan-truc-giac", "open-loop", "ke-chuyen-thi-nghiem"], "niche_verified": true},
+  {"handle": "manghocls", "platform": "tiktok", "lang": "vi", "role": "direct_niche", "format_compatibility": "instructional_list", "url": "https://www.tiktok.com/@manghocls", "followers": 99000, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
+  {"handle": "hoaquynh", "platform": "tiktok", "lang": "vi", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@hoaquynh", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
+  {"handle": "kyluat.1", "platform": "tiktok", "lang": "vi", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@kyluat.1", "followers": 0, "niche": ["productivity", "tu-duy"], "niche_verified": true},
+  {"handle": "phamthuykieuhuong", "platform": "tiktok", "lang": "vi", "role": "direct_niche", "format_compatibility": "instructional_list", "url": "https://www.tiktok.com/@phamthuykieuhuong", "followers": 0, "niche": ["hoc-tap", "productivity"], "niche_verified": true},
+  {"handle": "braincorevn", "platform": "tiktok", "lang": "vi", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@braincorevn", "followers": 0, "niche": ["tu-duy", "productivity"], "niche_verified": true},
+  {"handle": "quocnguyenkieuvi", "platform": "tiktok", "lang": "vi", "role": "direct_niche", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@quocnguyenkieuvi", "followers": 0, "niche": ["tu-duy"], "niche_verified": true},
+  {"handle": "vietcetera", "platform": "youtube", "lang": "vi", "role": "southern_story_voice", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@Vietcetera/shorts", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["khau-ngu-mien-nam", "nhip-tam-tinh", "chuyen-y-mem", "cta-doi-thoai"], "niche_verified": true},
+  {"handle": "giangoi", "platform": "youtube", "lang": "vi", "role": "southern_story_voice", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@GiangOi/shorts", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["tam-su-doi-thuong", "tu-gieu-duyen", "ngat-nhip-tu-nhien"], "niche_verified": true},
+  {"handle": "hieutv", "platform": "youtube", "lang": "vi", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.youtube.com/@HieuTV/shorts", "followers": 0, "niche": ["tai-chinh", "tu-duy"], "craft_focus": ["an-du-doi-thuong", "giong-tram-tin-cay"], "niche_verified": true},
+  {"handle": "spiderum", "platform": "tiktok", "lang": "vi", "role": "cross_niche_craft", "format_compatibility": "story_metaphor", "url": "https://www.tiktok.com/@spiderum", "followers": 0, "niche": ["storytelling", "tu-duy"], "craft_focus": ["nhap-de-vn", "an-du-doi-thuong"], "niche_verified": true},
+  {"handle": "clickbait_watch_sample", "platform": "tiktok", "lang": "vi", "role": "anti_pattern", "format_compatibility": "instructional_list", "url": "", "enabled": false, "followers": 0, "niche": ["anti-pattern"], "craft_focus": ["cau-view-rong", "hook-khong-tra-loi"], "niche_verified": false}
  ],
  "keywords": [
+  "why you procrastinate psychology",
+  "habit myth science 21 days",
+  "stop doomscrolling phone addiction",
+  "how to remember what you read science",
+  "overthinking psychology trick",
+  "sleep caffeine focus neuroscience",
   "thói quen tốt mỗi ngày",
   "hết trì hoãn",
   "cách học nhớ lâu",
@@ -40,12 +58,12 @@
   "ai lập trình công cụ"
  ],
  "topics": {
-  "productivity": ["nang suat", "năng suất", "productivity", "ky luat", "kỷ luật", "thoi quen", "thói quen", "habit", "tri hoan", "trì hoãn", "procrastinat", "tap trung", "tập trung", "focus", "deep work", "pomodoro", "lười", "luoi", "quan ly thoi gian", "quản lý thời gian"],
-  "tu-duy": ["tu duy", "tư duy", "mindset", "tam ly", "tâm lý", "tamlyhoc", "psychology", "phat trien ban than", "phát triển bản thân", "selfimprovement", "self improvement", "song tot", "sống tốt", "neuroscience"],
-  "hoc-tap": ["hoc tap", "học tập", "study", "studytok", "on thi", "ôn thi", "mẹo học", "meo hoc", "nho lau", "nhớ lâu", "learnontiktok"],
-  "tech": ["lap trinh", "lập trình", "coding", "developer", "lập trình viên", "software", "cong nghe", "công nghệ", "techtok", "tech"],
-  "ai": ["chatgpt", "claude", "gemini", "copilot", "prompt", "tri tue nhan tao", "trí tuệ nhân tạo", "ai"],
-  "tai-chinh": ["tai chinh", "tài chính", "tien bac", "tiền bạc", "dau tu", "đầu tư", "tiet kiem", "tiết kiệm", "finance"],
-  "khoa-hoc": ["khoa hoc", "khoa học", "science", "thi nghiem", "thí nghiệm", "nao bo", "não bộ", "experiment"],
-  "storytelling": ["story", "storytelling", "ke chuyen", "kể chuyện", "goc nhin", "góc nhìn"]
+  "productivity": ["nang suat", "năng suất", "productivity", "ky luat", "kỷ luật", "thoi quen", "thói quen", "habit", "habits", "tri hoan", "trì hoãn", "procrastinat", "tap trung", "tập trung", "focus", "deep work", "pomodoro", "lười", "luoi", "lazy", "quan ly thoi gian", "quản lý thời gian", "discipline", "consistency", "routine", "multitask", "distract", "doomscroll", "phone addiction", "attention span", "burnout"],
+  "tu-duy": ["tu duy", "tư duy", "mindset", "tam ly", "tâm lý", "tamlyhoc", "psychology", "phat trien ban than", "phát triển bản thân", "selfimprovement", "self improvement", "song tot", "sống tốt", "neuroscience", "overthink", "anxiety", "dopamine", "willpower", "sunk cost", "spotlight effect", "comparison", "mental clarity", "stress"],
+  "hoc-tap": ["hoc tap", "học tập", "study", "studytok", "on thi", "ôn thi", "mẹo học", "meo hoc", "nho lau", "nhớ lâu", "learnontiktok", "memory", "active recall", "retrieval practice", "cramming", "reread", "remember"],
+  "tech": ["lap trinh", "lập trình", "coding", "developer", "lập trình viên", "software", "cong nghe", "công nghệ", "techtok", "tech", "engineering", "system design", "typescript", "python"],
+  "ai": ["chatgpt", "claude", "gemini", "copilot", "prompt", "tri tue nhan tao", "trí tuệ nhân tạo", "ai", "llm", "agent", "agents", "mcp"],
+  "tai-chinh": ["tai chinh", "tài chính", "tien bac", "tiền bạc", "dau tu", "đầu tư", "tiet kiem", "tiết kiệm", "finance", "money", "subscription"],
+  "khoa-hoc": ["khoa hoc", "khoa học", "science", "thi nghiem", "thí nghiệm", "nao bo", "não bộ", "experiment", "brain", "sleep", "caffeine", "circadian", "cortisol"],
+  "storytelling": ["story", "storytelling", "ke chuyen", "kể chuyện", "goc nhin", "góc nhìn", "myth", "paradox"]
  }}

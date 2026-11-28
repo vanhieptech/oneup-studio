@@ -48,7 +48,12 @@ Trả về DUY NHẤT một khối JSON (không markdown, không lời dẫn) đ
     "sentence_rhythm": "cách ngắt câu, nhịp dừng, tương phản câu dài–ngắn giúp nghe cuốn",
     "spoken_pivots": ["1–3 câu chuyển ý tự nhiên hoặc khẩu ngữ mở lời không dùng liên từ sách vở"],
     "pacing_3_5s": "kỹ thuật giữ nhịp hình/âm thanh mỗi 3–5 giây",
-    "audience_pains": ["câu hỏi hoặc nỗi đau thật của khán giả (nếu nghe/thấy hoặc suy từ comment)"]
+    "audience_pains": ["câu hỏi hoặc nỗi đau thật của khán giả (nếu nghe/thấy hoặc suy từ comment)"],
+    "localization_vi": {
+      "core_insight_vi": "nếu video gốc tiếng Anh: 1 câu ý lõi bằng tiếng Việt đời thường (KHÔNG dịch sát chữ)",
+      "vn_everyday_scene": "đổi bối cảnh Mỹ/Âu sang cảnh đời thường Việt Nam tự nhiên (vd: kẹt xe, nằm lướt điện thoại khuya, dọn phòng)",
+      "translationese_traps": ["2–3 cụm tiếng Anh trong video gốc cấm dịch word-by-word sang tiếng Việt"]
+    }
   },
   "why_it_works": [{"claim": "", "evidence": "mm:ss hoặc khối", "kind": "suy đoán"}],
   "model_note": "tên model bạn đang chạy nếu biết"

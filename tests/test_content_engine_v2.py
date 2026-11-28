@@ -217,6 +217,32 @@ class ContentEngineV2Tests(unittest.TestCase):
             self.assertEqual(res["trend_match"]["mode"], "hot_trend_match")
             self.assertEqual(len(res["arena_briefs"]), 3)
 
+    # --- DL-084: Global English Intelligence & EN->VN Bilingual Matching ---
+    def test_dl084_global_english_channels_and_bilingual_trend_match(self):
+        cfg = rf.load_config()
+        en_channels = [c for c in cfg["channels"] if c.get("lang") == "en"]
+        self.assertGreaterEqual(len(en_channels), 12)
+        self.assertTrue(any(c["handle"] == "betterideas" and c["role"] == "global_niche_source" for c in en_channels))
+
+        # English trend matches Vietnamese theme-map lesson and flags EN->VN localization
+        res = tm.match_trends(
+            ref_date="2026-11-28",
+            explicit_trends=["Why doomscrolling your phone at night destroys your focus and dopamine"],
+            recent_themes=["DARK", "DARK"],
+            top_n=3,
+        )
+        self.assertEqual(res["mode"], "hot_trend_match")
+        self.assertTrue(res["matches"])
+        self.assertTrue(res["matches"][0]["needs_localization"])
+        self.assertEqual(res["matches"][0]["lang"], "en")
+        self.assertEqual(res["matches"][0]["lesson"]["theme"], "LIGHT")
+        self.assertIn("EN→VN Localize", tm.format_report(res))
+
+        # Teardown prompt includes localization_vi block to prevent Translationese
+        prompt = td.load_prompt()
+        self.assertIn("localization_vi", prompt)
+        self.assertIn("translationese_traps", prompt)
+
 
 if __name__ == "__main__":
     unittest.main()

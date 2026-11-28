@@ -40,6 +40,13 @@ tags: [index, retrieval]
 | clip-06.script-final | script | locked | `content/clips/clip-06-bong-hoa-chua-no/final/script-final.md` | Clip 06 v13: thói quen tính bằng tháng, bông hoa chưa nở |
 | clip-06.script-v13-draft | script | locked | `content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md` | clip-06 v13 — ĐÃ CHỐT 27/11, sản xuất từ `final/spec.json` |
 | clip-06.trend-signals | research | ready | `content/clips/clip-06-bong-hoa-chua-no/final/trend-signals.md` | Tín hiệu trend cho clip-06 v13 |
+| clip-07.fact-lock | research | locked | `content/clips/clip-07-check-tin-nhan-3-lan/final/fact-lock.md` | clip-07 fact lock |
+| clip-07.feedback | feedback | living | `content/clips/clip-07-check-tin-nhan-3-lan/final/feedback.md` | clip-07 — góp ý của Hiệp (nguyên văn) |
+| clip-07.post-checklist | checklist | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/post-checklist.md` | Checklist đăng clip-07 |
+| clip-07.review | review | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/review.md` | Review Đấu trường Kịch bản `clip-07-check-tin-nhan-3-lan` (Tournament Judge) |
+| clip-07.script-final | script | locked | `content/clips/clip-07-check-tin-nhan-3-lan/final/script-final.md` | Clip 07 v1: Check tin nhắn theo đợt 3 lần/ngày (HTB 3.5) |
+| clip-07.script-v1-draft | draft | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/script-v1-draft.md` | Đấu trường Kịch bản — Writer B (`M2`: 5-Second Vulnerable Story (Tâm sự khoảnh khắc thật 5 giây)) |
+| clip-07.trend-signals | research | ready | `content/clips/clip-07-check-tin-nhan-3-lan/final/trend-signals.md` | Tín hiệu trend cho clip-07 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
 | sample.motion-100 | sample | ready | `content/samples/lab/motion-100/README.md` | Motion 100 |
@@ -376,6 +383,7 @@ tags: [index, retrieval]
 | b-donlientay | None | `content/clips/b-donlientay-01` | archive |
 | b-tietkiem | None | `content/clips/b-tietkiem-01-musk-quy-du-phong` | archive |
 | clip-06 | None | `content/clips/clip-06-bong-hoa-chua-no` | archive, final |
+| clip-07 | None | `content/clips/clip-07-check-tin-nhan-3-lan` | archive, final |
 
 ## Assets & tools
 | id | path | description |
