@@ -102,8 +102,11 @@ EGO_BROWSER_BIN = _first_existing(("EGO_BROWSER_BIN",), (HOME / ".local/bin/ego-
 
 VIENEU_PYTHON = _first_existing(
     ("VIENEU_PYTHON",),
-    (TOOLS_DIR / "tts-venv/bin/python",),
+    (TOOLS_DIR / "vieneu-venv/bin/python", TOOLS_DIR / "tts-venv/bin/python"),
     sys.executable,
+)
+VIENEU_VOICES_DIR = Path(
+    os.environ.get("VIENEU_VOICES_DIR", str(TOOLS_DIR / "voices"))
 )
 F5_CKPT_DIR = _first_existing(
     ("F5_CKPT_DIR",),

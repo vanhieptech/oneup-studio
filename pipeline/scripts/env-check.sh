@@ -34,6 +34,7 @@ check("ffprobe", P.FFPROBE_BIN, False)
 check("F5_PYTHON", P.F5_PYTHON, False)
 check("ASR_PYTHON", P.ASR_PYTHON, False)
 check("VIENEU_PYTHON", P.VIENEU_PYTHON, False)
+check("VIENEU_VOICES_DIR", str(getattr(P, "VIENEU_VOICES_DIR", "")), False)
 check("F5_CKPT_DIR", P.F5_CKPT_DIR, False)
 check("F5_VOCODER_DIR", P.F5_VOCODER_DIR, False)
 check("VOICE_WORK_DIR", str(P.VOICE_WORK_DIR), False)
@@ -47,7 +48,7 @@ w = max(len(r[1]) for r in rows)
 print(f"oneup-studio env-check (root: {P.ROOT})")
 for s, n, p, v in rows: print(f"  {s} {n:<{w}}  {p}{('  [' + v + ']') if v else ''}")
 print("secrets (set/missing only, values never printed):")
-for k in ("APIFY_TOKEN", "GEMINI_API_KEY"):
+for k in ("APIFY_TOKEN", "GEMINI_API_KEY", "DAILY_DEV_TOKEN"):
     print(f"  {'set ' if P.tools_env(k) else '--  '} {k}")
 xk = Path.home() / "xerj-data/admin.key"
 print(f"  {'set ' if (os.environ.get('XERJ_API_KEY') or xk.exists()) else '--  '} XERJ_API_KEY (env or ~/xerj-data/admin.key)")

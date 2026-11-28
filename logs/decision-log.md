@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: decision-log
 type: log
 status: living
-updated: 2026-11-27
+updated: 2026-11-28
 tags: [decisions, feedback]
 ---
 # Nhật ký quyết định: @hi.oneup (luật 33)
@@ -103,6 +103,7 @@ tags: [decisions, feedback]
 | DL-089 | 2026-11-28 | Hiệp 28/11 (clip-08 arena-r1): «vẫn tệ, m phải đọc toàn bộ cách làm của skills, cấm bỏ bất k2i bước nào» | **Khóa cứng: `script-arena` không thay thế các bước §2 make-video.** Mỗi lane phải có Gate 0.5 (4 góc hook), bảng khung + Emotional Wave trước lời, Pure Voice từ 4 đầu vào sạch, bảng Hình/EN/nhấn, cổng tự kiểm a–d, rồi mới `score` + Tournament Judge. Bài học `L-116`. Viết lại arena clip-08 từ đầu. | skills/make-video/SKILL.md, logs/lessons.md L-116, content/clips/clip-08-dien-thoai-up-ban/ |
 | DL-090 | 2026-11-28 | Hiệp 28/11 (clip-08 v2): «vẫn tệ beat 3 trở đii các câu k liền mạch» | **Sửa từ b03 trở đi cho Given–New:** bỏ «đi lục thử / Đọc tới đây / Thước đo đâu phải»; lab mọc từ tự trách «yếu ý chí» → hỏi máy còn nằm trước mặt → Ward chỗ để máy → tắt nguồn không đổi → cắm sạc ngoài phòng. Bài học `L-117`. | content/clips/clip-08-dien-thoai-up-ban/final/script-v2-draft.md, logs/lessons.md L-117 |
 | DL-091 | 2026-11-28 | Hiệp 28/11 (clip-08 Gate 1): «chốt tóp 1» | **Khóa Top 1 M3** Misconception Flip. Lời `script_hash 86291b8033de` (review ĐẠT TIE a-c05). Dựng `script-final.md` + `spec.json` (18 scene remotion, `voice_prefix` c08v1, 1 ref `thai-son-v2` theo L-114), rồi TTS/render §2P. | content/clips/clip-08-dien-thoai-up-ban/final/ |
+| DL-092 | 2026-11-28 | Hiệp 28/11: Phase-1 voice — CI clip-08 đỏ + xây hệ thống giọng độc quyền giàu cảm xúc | **Voice Phase-1:** (1) Fix CI `check-assets` trên archive clip-06 (`approved.json` + front-matter). (2) `pipeline/tts/audio_utils.py`: room tone thật (không `np.zeros`), studio master −14 LUFS, `measure_f0_hz` / `audit_clip_l114` / `validate_ref_consistency`; `voice-phrase-f5.py` stitch dùng room tone. (3) `voice-direct.py`: thu mộc → denoise → stumble drop → breath-keep → master → beat Remotion. (4) `vieneu_gen.py` + `voice-vieneu.py`: VieNeu v3 Turbo ONNX (Apache-2.0), 4 khối cảm xúc spark/dip/clear/warm, cache hash khối, auto-reroll L-114; `paths.VIENEU_PYTHON` ưu tiên `$ONEUP_TOOLS_DIR/vieneu-venv`, `VIENEU_VOICES_DIR`. (5) `build-final.py --voice-mode auto\|direct\|vieneu\|f5` vẫn tái dùng `<voice_prefix>-*` (DL-087/088). Benchmark clip-08: `logs/runs/voice-phase1-benchmark-2026-11-28.md`. | pipeline/tts/{audio_utils,vieneu_gen}.py, pipeline/scripts/{voice-direct,voice-vieneu,voice-phrase-f5,build-final}.py, pipeline/paths.py, tests/test_{audio_utils,voice_direct,voice_vieneu,voice_hardening}.py, assets/voice-refs/voice-refs.json, logs/runs/voice-phase1-benchmark-2026-11-28.md |
 
 ## Góp ý lặp lại (theo dõi để nâng thành luật)
 | Chủ đề | Số lần | Đã nâng? |

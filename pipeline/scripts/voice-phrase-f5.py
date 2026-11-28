@@ -15,6 +15,7 @@ import hashlib, json, re, os, sys, subprocess, unicodedata
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import paths as P
 from tts import respell as RS
+from tts.audio_utils import make_room_tone, measure_f0_hz
 REPO = str(P.ROOT)
 FFMPEG = P.FFMPEG_BIN
 def final_tone(text):
@@ -263,31 +264,28 @@ else:
           if u["line"] not in lines: lines[u["line"]]=[]; order.append(u["line"])
           lines[u["line"]].append(u)
         stt_u=json.load(open(W+'/units-stt.json')); rep={}; full=[]; prev_scene=None
+        # Prefer a line wav (once written) as room-tone ref so gaps are not digital silence.
+        _rt_ref = None
         for ln in order:
-          segs=[np.zeros(int(.06*SR),'float32')]
+          segs=[make_room_tone(0.06, sr=SR, ref_wav=_rt_ref)]
           for i,u in enumerate(lines[ln]):
             _x=np.load(f"{W}/{u['key']}.npy").astype('float32'); _lt=LINE_TEMPO.get(ln,1.0)
             segs.append(rb(_x,tempo=_lt) if _lt!=1.0 else _x)  # spec line_tempo: slow a too-fast line (L-070), pitch kept
-            if i<len(lines[ln])-1: segs.append(np.zeros(int((COMMA_GAP_LINE[ln] if ln in COMMA_GAP_LINE and u["t"].strip()[-1:]=="," else gap(u["t"],u["stem"] and i==0,lines[ln][i+1]))*SR),'float32'))  # spec comma_gap_line
-          segs.append(np.zeros(int(.1*SR),'float32')); y=np.concatenate(segs); y=y/max(1e-4,np.abs(y).max())*0.89
+            if i<len(lines[ln])-1:
+              _g = (COMMA_GAP_LINE[ln] if ln in COMMA_GAP_LINE and u["t"].strip()[-1:]=="," else gap(u["t"],u["stem"] and i==0,lines[ln][i+1]))
+              segs.append(make_room_tone(_g, sr=SR, ref_wav=_rt_ref))  # spec comma_gap_line
+          segs.append(make_room_tone(0.1, sr=SR, ref_wav=_rt_ref)); y=np.concatenate(segs); y=y/max(1e-4,np.abs(y).max())*0.89
           dst=f"{OUT}/{PREFIX}-{ln}"
           subprocess.run([FFMPEG,"-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",dst+".wav"],input=y.tobytes(),check=True)
+          if _rt_ref is None: _rt_ref = dst+".wav"
           say=" ".join(u["t"] for u in lines[ln]); ws=stt(pcm(dst+".wav")); hyp=" ".join(w[0] for w in ws); sc=sim(n(hyp),n(say))
           # DL-087 / L-114: measure line median F0 (Hz) for clip-wide tone consistency audit
-          _hop, _win = int(SR * 0.03), int(SR * 0.04); _lo, _hi = int(SR / 260), int(SR / 70); _f0s = []
-          for _i in range(0, len(y) - _win, _hop):
-            _fr = y[_i:_i + _win]
-            if float(np.sqrt(np.mean(_fr * _fr))) < 0.02: continue
-            _fr = _fr - float(np.mean(_fr)); _ac = np.correlate(_fr, _fr, mode="full")[_win - 1:]
-            if _hi < len(_ac) and _ac[0] > 1e-9:
-              _k = _lo + int(np.argmax(_ac[_lo:_hi]))
-              if _ac[_k] > 0.45 * _ac[0]: _f0s.append(SR / _k)
-          f0_hz = round(float(np.median(_f0s)), 1) if _f0s else None
+          f0_hz = measure_f0_hz(y, SR)
           rep[ln]={"line_sim":sc,"units":{u["key"]:stt_u[u["key"]]["sim"] for u in lines[ln]},"stt":hyp,"dur":round(len(y)/SR,2),"f0_hz":f0_hz}
           json.dump({"duration":round(len(y)/SR,3),"envelope":env(y),"f0_hz":f0_hz,"engine":"F5-TTS hynt ViVoice "+"+".join(sorted({u.get("ref","thai-son") for u in lines[ln]}))+", per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"+(", +2 semi" if lines[ln][0]["role"]=="Hiệp-né" else ""),
             "role":lines[ln][0]["role"],"stt":hyp,"stt_sim":sc,"intra_output_cuts":0,"emphasis_edits":True,"units":[{"text":u["t"],"take":stt_u[u["key"]]["take"],"sim":stt_u[u["key"]]["sim"]} for u in lines[ln]]},open(dst+".json","w"),ensure_ascii=False)
           scene=ln.rstrip('abcdef') if ln not in ('b01b',) else ln
-          if full: full.append(np.zeros(int((0.12 if ln in ('b01b','b02') else 0.3 if scene==prev_scene else 0.42)*SR),'float32'))
+          if full: full.append(make_room_tone((0.12 if ln in ('b01b','b02') else 0.3 if scene==prev_scene else 0.42), sr=SR, ref_wav=_rt_ref))
           full.append(y); prev_scene=scene; print(ln,sc,rep[ln]["dur"],f"f0={f0_hz}",hyp,flush=True)
         _valid_f0 = [(k, v["f0_hz"]) for k, v in rep.items() if v.get("f0_hz")]
         if len(_valid_f0) >= 3:

@@ -615,6 +615,14 @@
    "title": "Nghiệm thu clip-06 v3 (DRAFT — chờ Hiệp duyệt Gate 1)"
   },
   {
+   "id": "run.voice-phase1-benchmark-2026-11-28",
+   "type": "note",
+   "status": "ready",
+   "updated": "2026-11-28",
+   "path": "logs/runs/voice-phase1-benchmark-2026-11-28.md",
+   "title": "Voice Phase-1 A/B — clip-08-dien-thoai-up-ban (2026-11-28)"
+  },
+  {
    "id": "media.README",
    "type": "readme",
    "status": "ready",
@@ -2058,7 +2066,7 @@
    "id": "rules-active-checklist",
    "type": "rules",
    "status": "ready",
-   "updated": "2026-11-27",
+   "updated": "2026-11-28",
    "path": "rules/ACTIVE-CHECKLIST.md",
    "title": "Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm)"
   },

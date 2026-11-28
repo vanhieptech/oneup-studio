@@ -2,6 +2,7 @@
 """Build a final clip from ONE source spec (content/clips/<clip>/final/spec.json).
 
   build-final.py <spec.json> [--stage voice-phrase|voice|plans|render|assemble|all]   (default all)
+                 [--voice-mode auto|direct|vieneu|f5]   (or spec.voice_engine: direct|vieneu|f5-tts)
   voice-phrase: lines with {nhấn:} → voice-phrase-f5.py gen → F5 batches → pick → stitch (L-036); cached by final/voice-stt-<prefix>.json
                 [--scenes b01,b01b,...]  partial preview: only these scene/section ids (parts left empty are dropped);
                                          outputs go to <final>/preview/ (plan-*-preview, timing-preview.json, <id>-preview.mp4)
@@ -154,7 +155,7 @@ def stage_voice(spec):
             l["_key"] = os.path.splitext(os.path.basename(l["voice_file"]))[0]
             if not os.path.exists(os.path.join(VE, "public/voice", l["_key"] + ".wav")): raise SystemExit(f"missing voice_file {l['voice_file']} (see media/MANIFEST.json)")
             continue
-        if vpre:  # DL-087 / L-114: auto-reuse stitched voice-phrase-f5 output (<voice_prefix>-<line>.wav) instead of re-voicing with voice-prosody
+        if vpre:  # DL-087/DL-088: auto-reuse <voice_prefix>-<line>.wav from voice-phrase-f5 / voice-direct / voice-vieneu
             li = sc["lines"].index(l)
             lkey = sc["id"] + ("abcdef"[li] if len(sc["lines"]) > 1 else "")
             cand = f"{vpre}-{lkey}"
@@ -339,6 +340,13 @@ def stage_voice_phrase(specp, spec, force=False):
     sh([asrpy, vp, "stitch", specp, "--work", work, "--prefix", prefix, "--listen", os.path.join(work, "listen.mp3")])
     return True
 
+def _voice_mode(spec):
+    """CLI --voice-mode wins; else spec.voice_engine / voice_mode; default auto (reuse prefix files, else F5)."""
+    if "--voice-mode" in sys.argv:
+        return sys.argv[sys.argv.index("--voice-mode") + 1].strip().lower()
+    eng = (spec.get("voice_engine") or spec.get("voice_mode") or "auto")
+    return {"f5-tts": "f5", "direct-voice": "direct"}.get(str(eng).lower(), str(eng).lower())
+
 def main():
     specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
     draft = "--draft" in sys.argv; no_cache = "--no-cache" in sys.argv; scene_cache = "--no-scene-cache" not in sys.argv
@@ -355,7 +363,19 @@ def main():
         spec["parts"] = [p for p in spec["parts"] if p.get("scenes") or p.get("sections")]
         spec["parts"][-1]["transitionOut"] = None
         print("preview scenes:", sel, "parts:", [p["id"] for p in spec["parts"]])
-    if stage in ("voice-phrase", "all", "voice"): stage_voice_phrase(specp, spec, force=stage == "voice-phrase")
+    vmode = _voice_mode(spec)
+    vpre = spec.get("voice_prefix")
+    # direct/vieneu: generate only when explicitly requested (raw path via VOICE_RAW env for direct)
+    if stage in ("voice-phrase", "all", "voice") and vmode == "vieneu" and vpre:
+        sh([sys.executable, os.path.join(REPO, "pipeline/scripts/voice-vieneu.py"),
+            "--spec", specp, "--prefix", vpre])
+    elif stage in ("voice-phrase", "all", "voice") and vmode == "direct" and vpre:
+        raw = os.environ.get("VOICE_RAW") or spec.get("voice_raw")
+        if not raw: raise SystemExit("voice-mode=direct needs VOICE_RAW env or spec.voice_raw")
+        sh([sys.executable, os.path.join(REPO, "pipeline/scripts/voice-direct.py"),
+            "--raw", raw, "--spec", specp, "--prefix", vpre])
+    elif stage in ("voice-phrase", "all", "voice") and vmode in ("auto", "f5"):
+        stage_voice_phrase(specp, spec, force=stage == "voice-phrase")
     if stage == "voice-phrase": return
     stage_voice(spec)
     parts = []; timing = []; offset = 0.0

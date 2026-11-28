@@ -6,7 +6,7 @@ tags: [rules, checklist, onboarding, active]
 status: ready
 source: "oneup-studio (chưng cất từ rules/video-rules.md, logs/decision-log.md, logs/lessons.md)"
 id: rules-active-checklist
-updated: 2026-11-27
+updated: 2026-11-28
 ---
 # Active Checklist — Tóm tắt nhanh cho agent (đọc trước khi làm)
 
@@ -15,6 +15,7 @@ Tài liệu gốc vẫn là `rules/video-rules.md`, `logs/decision-log.md`, `log
 ## 1. Môi trường local Mac
 - Repo duy nhất: checkout local này (gốc = `git rev-parse --show-toplevel`, không ghi cứng đường dẫn tuyệt đối) · Toolchain: `$ONEUP_TOOLS_DIR` (mặc định `~/oneup-tools/`, tự nhận qua `pipeline/paths.py`; không dùng box/workspace của agent).
 - F5-TTS: mặc định chạy **Apple Silicon MPS** (`F5_DEVICE=auto`) với checkpoint **`f5-ckpt-6000h`** + `vocos-mel-24khz` (CC-BY-NC-SA, Hiệp chấp nhận rủi ro `DL-035`).
+- **Voice Phase-1 (`DL-092`):** ưu tiên đường giọng độc quyền — `voice-direct.py` (thu mộc) hoặc `voice-vieneu.py` (VieNeu v3 Turbo ONNX, Apache-2.0, 4 khối spark/dip/clear/warm). `VIENEU_PYTHON` → `$ONEUP_TOOLS_DIR/vieneu-venv` (fallback `tts-venv`); `VIENEU_VOICES_DIR` → `$ONEUP_TOOLS_DIR/voices`. Room tone + master −14 LUFS + đo F0/`L-114` dùng chung `pipeline/tts/audio_utils.py` (cấm ghép beat bằng `np.zeros`). `build-final.py --voice-mode auto|direct|vieneu|f5` (hoặc `spec.voice_engine`) vẫn tái dùng `<voice_prefix>-*.wav` đã gen.
 - HyperFrames: version chuẩn trong `pipeline/versions.json` (`0.9.94`).
 - Media > 2 MB: để trong `media/` + `media/MANIFEST.json` (`python3 pipeline/scripts/media-sync.py verify`).
 - Trình duyệt / dịch vụ web (`DL-083`): **luôn mặc định dùng `/ego-browser`** (`~/.local/bin/ego-browser`, `EGO_BROWSER_BIN` trong `pipeline/paths.py`; chạy `ego-browser skill` để lấy hướng dẫn khớp phiên bản) cho mọi tác vụ web/service web, ưu tiên hơn built-in browser hoặc tự dựng Playwright/Puppeteer.
