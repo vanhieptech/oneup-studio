@@ -113,19 +113,20 @@ Tag đầu tiên của mỗi nhân vật là trạng thái ban đầu, tag sau t
 ## Giọng nhân vật (luật 46, DL-035: Hiệp = "F5 · Thái Sơn", Omi = "F5 · Mỹ Duyên") <a name="voice"></a>
 **Mặc định (DL-035): F5-TTS** + checkpoint `hynt/F5-TTS-Vietnamese-ViVoice` (⚠ CC-BY-NC-SA-4.0, không thương mại; Hiệp chấp nhận rủi ro). Profile: `voice.engine = "f5-tts"`, `ref` (giọng mẫu tổng hợp bằng VieNeu, `assets/voice-refs/`), `refText`.
 ```bash
-python3 -m venv /workspace/f5-venv && /workspace/f5-venv/bin/pip install f5-tts      # CPU
+T="${ONEUP_TOOLS_DIR:-$HOME/oneup-tools}"   # toolchain ngoài repo, xem pipeline/paths.py
+python3 -m venv "$T/f5-venv" && "$T/f5-venv/bin/pip" install f5-tts
 # checkpoint 6000h (DL-073): model_last_6000h.pt (674346171 byte) → model_last.pt, config_6000h.json → vocab.txt
 #   từ https://huggingface.co/hynt/F5-TTS-Vietnamese-ViVoice/resolve/main/ vào thư mục F5_CKPT_DIR (Mac: ~/oneup-tools/f5-ckpt-6000h)
 # vocoder: nếu huggingface_hub treo, tải charactr/vocos-mel-24khz (config.yaml, pytorch_model.bin) bằng curl rồi đặt F5_VOCODER_DIR
-export F5_PYTHON=/workspace/f5-venv/bin/python F5_NFE=24                              # NFE 24–32; ~40–70 s/take trên CPU 8 nhân
+export F5_PYTHON="$T/f5-venv/bin/python" F5_NFE=24                              # NFE 24–32; ~40–70 s/take trên CPU 8 nhân
 ```
 Đường F5 luôn đi qua `pipeline/scripts/voice-prosody.py` (chạy bằng tts-venv; cần asr-venv faster-whisper): theo cụm, 3 take/cụm (seed/speed), tự cắt rò giọng mẫu, chọn take bằng STT + F0. `npm run voice` cũng tự chuyển câu của nhân vật F5 sang đường này (mỗi câu một cụm).
 
-VieNeu (dự phòng, Apache-2.0, và để tạo giọng mẫu). Cài một lần (box/Mac, CPU, miễn phí, không API):
+VieNeu (dự phòng, Apache-2.0, và để tạo giọng mẫu). Cài một lần (Mac, CPU, miễn phí, không API):
 ```bash
-python3 -m venv /workspace/tts-venv
-/workspace/tts-venv/bin/pip install vieneu "onnxruntime==1.22.1"   # 1.31 lỗi external-data với cache HF
-export VIENEU_PYTHON=/workspace/tts-venv/bin/python                  # mặc định là đường dẫn này
+python3 -m venv "$T/tts-venv"
+"$T/tts-venv/bin/pip" install vieneu "onnxruntime==1.22.1"   # 1.31 lỗi external-data với cache HF
+export VIENEU_PYTHON="$T/tts-venv/bin/python"   # mặc định: $ONEUP_TOOLS_DIR/tts-venv/bin/python (pipeline/paths.py, src/voice/voice.ts)
 ```
 Luồng: `npm run voice -- plan.json` → với mỗi câu của nhân vật có `voice` trong profile (Hiệp, Omi), gọi `pipeline/tts/vieneu_tts.py` (preset theo profile, tag cảm xúc + tempo/pitch theo `emotion`, cắt lặng, loudnorm) → `public/voice/<hash>.wav` + `.json` (duration, envelope theo frame) → ghi `plan.voiced.json` (điền `dialogue[].audio`, kéo dài `end` nếu cần) và validate lại. `npm run render -- plan.voiced.json` sẽ tự bật audio (AAC 192k). Validator chặn audio của speaker không có preset. Clip có giọng AI phải bật nhãn AI khi đăng. Caption có thể chia theo câu (`caption.segments`). Clip final nhiều phần: `pipeline/scripts/build-final.py` (xem `skills/make-video`).
 
@@ -134,7 +135,7 @@ Mẫu đầy đủ (comic + giọng Omi + HyperFrames explainer + ghép): `conte
 ## HyperFrames ở đâu (ranh giới)
 - **Remotion = engine chính cho beat kể chuyện (comic, luật 42).** Nhân vật là component React dùng lại được, state theo frame, test được bằng vitest.
 - **HyperFrames (`templates/hyperframes-base`) giữ cho beat giải thích/motion graphics** (số liệu, sơ đồ, GSAP timeline), như luật 42 và pipeline cũ.
-- Không trộn hai engine trong một lần render. Mỗi engine xuất MP4 1080×1920 30fps riêng, ghép ở bước dựng bằng `pipeline/scripts/join-beats.sh` (xfade + −14 LUFS). HyperFrames CLI cần Node ≥ 22 (box: `/workspace/tools/node-v22.20.0-linux-x64/bin`). Browser capture không cần cho render thường; `pipeline/characters-v2/render.js` (puppeteer) chỉ còn là công cụ thử rig cũ.
+- Không trộn hai engine trong một lần render. Mỗi engine xuất MP4 1080×1920 30fps riêng, ghép ở bước dựng bằng `pipeline/scripts/join-beats.sh` (xfade + −14 LUFS). HyperFrames CLI cần Node ≥ 22 (`NODE22_BIN` hoặc node trong `PATH`/nvm, tự nhận qua `pipeline/paths.py`; kiểm bằng `bash pipeline/scripts/env-check.sh`). Browser capture không cần cho render thường; `pipeline/characters-v2/render.js` (puppeteer) chỉ còn là công cụ thử rig cũ.
 
 ## Giấy phép
 - **Remotion** dùng [Remotion License](https://www.remotion.dev/license): **miễn phí cho cá nhân và công ty ≤ 3 người**. Công ty lớn hơn cần Company License. @hi.oneup hiện là cá nhân nên dùng miễn phí. Nếu sau này OneUp có > 3 nhân sự thì phải xem lại.

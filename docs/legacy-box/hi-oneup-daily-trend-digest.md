@@ -3,13 +3,15 @@ title: "Routine: @hi.oneup trend digest v5"
 date: 2026-10-16
 type: prompt
 tags: [docs, routine, trend, apify]
-status: ready
+status: draft
 source: "oneup-studio (soạn trong repo); lessons Apify 2026-10-16"
 id: prompt.hi-oneup-daily-trend-digest
 updated: 2026-10-16
 ---
 
 # Routine: @hi.oneup trend digest v5
+
+> **ĐÃ NGƯNG (legacy box, 28/11/2026).** Prompt này viết cho job trên box `/workspace` cũ. Không dùng. Trend digest hiện chạy trong repo local theo `skills/trend-digest/SKILL.md`.
 Schedule: daily ~07:55 (Asia/Saigon). On Sundays, after the daily run, also run the weekly synthesis.
 Folder / routine name: `hi-oneup-daily-trend-digest` (update existing routine prompt to this text).
 

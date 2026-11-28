@@ -33,7 +33,7 @@ pipeline/          paths.py, scripts/ (build-final, check-rules, check-assets, s
 research/          trends/<ngày>/, references/ (creator/hook/format), motion, production research
 resources/         vn-dict/, vn-spoken/, refs/ (clone ngoài, gitignored)
 rules/             video-rules.md (luật hiện hành)
-skills/            mirror của skill (bản chạy: /home/box/agent-data/workflows/)
+skills/            nguồn duy nhất của skill (`.agents/skills`, `.claude/skills`, `.cursor/skills` chỉ là symlink; danh mục `docs/agents/skills-index.md`)
 templates/         hyperframes-base (scaffold), post-package.md, script.md (mẫu kịch bản)
 tests/             test
 video-engine/      Remotion: src/characters (rig, profile, biểu cảm), src/composition (props, layout, motion), public/voice (voice take, commit)
