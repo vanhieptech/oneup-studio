@@ -43,7 +43,9 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Script, tool | `pipeline/scripts/`, `pipeline/tts/`, `video-engine/src/` | |
 | Research, trend | `research/` (`trends/<date>/`), `docs/research/`, `resources/` (từ điển, văn nói) | |
 | Skill | `skills/<skill>/` (nguồn duy nhất, local Mac; bản box cũ đã bỏ) | workflow đa agent cũ: `docs/legacy-box/workflows-agents/` (đã ngưng) |
-| Slash `/skill` cho Claude Code | `.claude/skills/<skill>` = symlink tới `skills/<skill>`, `skills/hyperframes/<skill>`, `channels/vanhiep-tech/skills/<skill>` (không chép file). Thêm skill mới → thêm symlink cùng tên với `name:` | tracked |
+| Skill cho từng agent | `.agents/skills/` (Antigravity), `.claude/skills/` (Claude Code), `.cursor/skills/` (Cursor): cùng một bộ **symlink tương đối** tới `skills/<skill>`, `skills/hyperframes/<skill>`, `channels/vanhiep-tech/skills/<skill>` (không chép file). Grok đọc `docs/agents/skills-index.md`. Thêm skill mới → thêm symlink cùng tên với `name:` trong **cả ba** thư mục + một dòng skills-index (`tests/test_agent_setup.py` kiểm) | tracked |
+| Điểm vào của agent | `AGENTS.md` (nguồn duy nhất); `CLAUDE.md` (`@AGENTS.md`), `GEMINI.md`, `.cursor/rules/oneup.mdc` chỉ trỏ về | tracked |
+| Cổng kiểm tra trước commit | `pipeline/scripts/preflight.sh` (pre-commit hook gọi lại; agent không có hook chạy tay); toolchain: `pipeline/scripts/env-check.sh` | tracked |
 | Log, bài học, quyết định | `logs/` (`lessons.md`, `decision-log.md`, `runs/`) | |
 | Luật | `rules/video-rules.md` | |
 | Quy trình | `docs/workflow/per-video-pipeline.md` | |
