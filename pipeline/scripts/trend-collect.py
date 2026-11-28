@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Collect raw trend candidates from free public sources (stdlib only; yt-dlp optional).
 
-  trend-collect.py [--date YYYY-MM-DD] [--out DIR] [--extra file.json ...] [--only id,id]
+  trend-collect.py [--date YYYY-MM-DD] [--out DIR] --extra research/trends/<date>/x-extra.json [--only id,id]
+                   [--allow-without-x]
 
 Reads pipeline/trends/sources.yaml (JSON-compatible YAML). Fetches in parallel with timeouts, records
 per-source status, normalises to the raw.json item schema, clusters near-duplicates across sources
 (cross_sources = quality signal), applies a keyword brand-safety pre-filter, writes OUT/collect.json.
 --extra: JSON list of items gathered by the agent via MCP tools (X trends/news, web search) using the
 same keys (source, title, url, cat, lang, rank, metric). X lives behind MCP so a script cannot call it.
-No logins, no cookies.
+A run without --extra exits `BREAK trend-digest` before any fetch. --allow-without-x continues only
+after Hiệp says so in that run. No logins, no cookies.
 """
 import json, re, sys, html, shutil, subprocess, datetime as dt, urllib.error, urllib.request, urllib.parse, unicodedata
 import xml.etree.ElementTree as ET
@@ -33,6 +35,29 @@ def get(url, t=15, raw=False):
     with urllib.request.urlopen(req, timeout=t) as r:
         b = r.read()
     return b if raw else b.decode("utf-8", "replace")
+
+DAILY_DEV_API = "https://api.daily.dev/public/v1/"
+
+def get_dailydev(path, params=None, t=15):
+    """Authenticated GET against api.daily.dev only. Token from DAILY_DEV_TOKEN / ~/oneup-tools/env.sh."""
+    tok = P.tools_env("DAILY_DEV_TOKEN")
+    if not tok:
+        raise RuntimeError("Set DAILY_DEV_TOKEN in ~/oneup-tools/env.sh (https://daily.dev/settings/api)")
+    url = urllib.parse.urljoin(DAILY_DEV_API, path.lstrip("/"))
+    if params:
+        url += ("&" if "?" in url else "?") + urllib.parse.urlencode(params)
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {tok}", "User-Agent": UA, "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=t) as r:
+            return json.loads(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", "replace") if e.fp else ""
+        msg = body[:200]
+        try:
+            msg = json.loads(body).get("message") or msg
+        except Exception:
+            pass
+        raise RuntimeError(f"daily.dev HTTP {e.code}: {msg}") from e
 
 def clean(s): return html.unescape(re.sub(r"<[^>]+>", " ", s or "")).strip()
 def norm(s):
@@ -84,6 +109,45 @@ def s_hn(s):
     d = json.loads(get("https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=30"))
     return [{"title": h["title"], "url": h.get("url") or f"https://news.ycombinator.com/item?id={h['objectID']}",
              "summary": "", "metric": {"points": h.get("points"), "comments": h.get("num_comments")}} for h in d["hits"]]
+
+def s_dailydev(s):
+    """daily.dev Public API feeds (Bearer token). feed=popular|discussed|foryou|tag; tag= required for feed=tag.
+    Free tier ~200 req/mo — keep ≤5 dailydev sources in sources.yaml (docs.daily.dev)."""
+    feed = (s.get("feed") or "popular").strip().lower()
+    if feed == "tag":
+        tag = (s.get("tag") or "").strip().lstrip("#")
+        if not tag:
+            raise ValueError("dailydev feed=tag needs tag=")
+        path = f"feeds/tag/{urllib.parse.quote(tag)}"
+    elif feed in ("popular", "discussed", "foryou"):
+        path = f"feeds/{feed}"
+    else:
+        raise ValueError(f"dailydev feed must be popular|discussed|foryou|tag, got {feed!r}")
+    d = get_dailydev(path, {"limit": str(min(int(s.get("max", 10)), 50))})
+    out = []
+    for p in d.get("data") or []:
+        src = p.get("source") or {}
+        src_name = src.get("name") or src.get("handle") or ""
+        tags = p.get("tags") or []
+        summary = (p.get("summary") or "").strip()
+        if tags and summary:
+            summary = f"{summary} [tags: {', '.join(tags[:6])}]"
+        elif tags:
+            summary = f"[tags: {', '.join(tags[:6])}]"
+        out.append({
+            "title": p.get("title") or "",
+            "url": p.get("url") or p.get("commentsPermalink") or "",
+            "summary": summary[:300],
+            "date": (p.get("publishedAt") or p.get("createdAt") or "")[:10],
+            "metric": {
+                "upvotes": p.get("numUpvotes"),
+                "comments": p.get("numComments"),
+                "read_time": p.get("readTime"),
+                "dailydev_id": p.get("id"),
+                "publisher": src_name,
+            },
+        })
+    return out
 def s_wiki(s):
     y = dt.date.fromisoformat(s["_date"]) - dt.timedelta(days=1)
     d = json.loads(get(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/{s['project']}/all-access/{y:%Y/%m/%d}"))
@@ -136,9 +200,9 @@ def s_ego_crawl(s):  # native ego-browser crawl for JS-rendered / logged-in / Cl
     import ego_crawl as EGO
     return EGO.crawl_feed(s["url"], max_items=s.get("max", 15))
 
-FN = {"rss": s_rss, "gnews": s_gnews, "gtrends": s_gtrends, "hn": s_hn, "wiki": s_wiki, "bsky_trending": s_bsky_trending,
-      "bsky_search": s_bsky_search, "kworb": s_kworb, "yt": s_yt, "tinyfish": s_tinyfish, "tinyfish_tiktok": s_tinyfish_tiktok,
-      "ego_crawl": s_ego_crawl}
+FN = {"rss": s_rss, "gnews": s_gnews, "gtrends": s_gtrends, "hn": s_hn, "dailydev": s_dailydev, "wiki": s_wiki,
+      "bsky_trending": s_bsky_trending, "bsky_search": s_bsky_search, "kworb": s_kworb, "yt": s_yt,
+      "tinyfish": s_tinyfish, "tinyfish_tiktok": s_tinyfish_tiktok, "ego_crawl": s_ego_crawl}
 
 def run(s):
     t0 = dt.datetime.now()
@@ -175,9 +239,30 @@ def auto_score(it):
     if all(x.startswith("yt-") for x in s["sources"]):  # evergreen niche videos = hook/saturation evidence, not news
         it["kind"] = "pattern-evidence"; it["saturation_signal"] = 0.8
 
+def break_digest(reason, nxt):
+    """Stop the run. The text is the alert Hiệp must see. Do not catch this and continue."""
+    raise SystemExit(f"BREAK trend-digest\n{reason}\nNext: {nxt}")
+
+def require_x_extra(argv, date):
+    """X is agent-side. Collecting without the file is a bypass, so the run stops before any fetch."""
+    if "--allow-without-x" in argv:
+        return
+    extras = [argv[i + 1] for i, x in enumerate(argv) if x == "--extra"]
+    rel = f"research/trends/{date}/x-extra.json"
+    cmd = f"python3 pipeline/scripts/trend-collect.py --date {date} --out research/trends/{date} --extra {rel}"
+    if not extras:
+        break_digest("Chưa truyền file X (--extra). Không thu tin như thể X đã chạy.", cmd)
+    missing = [f for f in extras if not Path(f).exists()]
+    if missing:
+        break_digest(
+            "Thiếu file X: " + ", ".join(missing) + ". Thử lại namespace x một lần. Vẫn lỗi thì dừng và báo Hiệp. Không tự thêm --allow-without-x.",
+            cmd,
+        )
+
 def main():
     a = sys.argv[1:]; opt = lambda k, d=None: a[a.index(k) + 1] if k in a else d
     date = opt("--date", dt.date.today().isoformat())
+    require_x_extra(a, date)
     out = Path(opt("--out", ROOT / "research" / "trends" / date)); out.mkdir(parents=True, exist_ok=True)
     cfg = json.loads("\n".join(l for l in (ROOT / "pipeline/trends/sources.yaml").read_text().splitlines() if not l.lstrip().startswith("#")))
     srcs = [dict(s, _date=date) for s in cfg["sources"]]

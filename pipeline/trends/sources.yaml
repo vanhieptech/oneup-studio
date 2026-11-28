@@ -1,8 +1,9 @@
 # Trend sources for pipeline/scripts/trend-collect.py (JSON-compatible YAML so stdlib can read it).
 # stream: tiktok (Luồng 1 radar) | upstream (Luồng 2: HN, Reddit, X, Product Hunt, release notes AI/Dev — đi trước TikTok VN 3–14 ngày) | vn-tech (Luồng 2: tin công nghệ/sản phẩm VN) | general (tin nóng chung). Luồng 3 = media/footage/inbox/ (trend-streams.py inbox).
 # reddit.com JSON/RSS vẫn 403 → Reddit đọc qua TinyFish search (domains: reddit.com), added 26/11.
-# type: rss | gtrends | hn | wiki | bsky_trending | bsky_search | yt | kworb | gnews | tinyfish | tinyfish_tiktok
+# type: rss | gtrends | hn | dailydev | wiki | bsky_trending | bsky_search | yt | kworb | gnews | tinyfish | tinyfish_tiktok
 # tinyfish* = free TinyFish CLI search (added 26/11/2026); tinyfish_tiktok only discovers clip links (TikTok pages block fetch), Apify measures them.
+# dailydev = daily.dev Public API (Bearer DAILY_DEV_TOKEN in ~/oneup-tools/env.sh; free ~200 req/mo — keep ≤5 sources; docs.daily.dev).
 # Verified 2026-10-13 from the box. Blocked (do not add back without re-testing):
 #   reddit.com json/rss (403 datacenter IP, needs OAuth) · rsshub.app public (403) · TikTok Creative Center
 #   (SPA + creative_radar_api returns 40101 "no permission" without browser-signed headers) · threads.net (login/JS)
@@ -44,6 +45,11 @@
  {"id":"tf-x-ai-work","stream":"upstream","type":"tinyfish","q":"AI coding agents work burnout","hl":"en","gl":"US","domains":"x.com","cat":"tech/AI","lang":"en","max":10},
  {"id":"gnews-vn-ai","stream":"vn-tech","type":"gnews","q":"AI OR ChatGPT OR \"trí tuệ nhân tạo\" when:3d","hl":"vi","gl":"VN","cat":"tech/AI","lang":"vi","max":15},
  {"id":"hn-front","stream":"upstream","type":"hn","cat":"tech/AI","lang":"en","max":20},
+ {"id":"dailydev-popular","stream":"upstream","type":"dailydev","feed":"popular","cat":"tech/AI","lang":"en","max":10},
+ {"id":"dailydev-discussed","stream":"upstream","type":"dailydev","feed":"discussed","cat":"tech/AI","lang":"en","max":10},
+ {"id":"dailydev-tag-ai","stream":"upstream","type":"dailydev","feed":"tag","tag":"ai","cat":"tech/AI","lang":"en","max":10},
+ {"id":"dailydev-tag-webdev","stream":"upstream","type":"dailydev","feed":"tag","tag":"webdev","cat":"tech/AI","lang":"en","max":10},
+ {"id":"dailydev-tag-devops","stream":"upstream","type":"dailydev","feed":"tag","tag":"devops","cat":"tech/AI","lang":"en","max":8},
  {"id":"producthunt","stream":"upstream","type":"rss","url":"https://www.producthunt.com/feed","cat":"tech/AI","lang":"en","max":10},
  {"id":"verge","stream":"upstream","type":"rss","url":"https://www.theverge.com/rss/index.xml","cat":"tech/AI","lang":"en","max":10},
  {"id":"ars","stream":"upstream","type":"rss","url":"https://feeds.arstechnica.com/arstechnica/index","cat":"tech/AI","lang":"en","max":10},

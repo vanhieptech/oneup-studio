@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Apify TikTok run for the local Mac (replaces the box MCP `user-Apify`, 26/11/2026).
+"""Apify TikTok measure for the local Mac (replaces the box MCP `user-Apify`, 26/11/2026).
 
-  apify-run.py [--date YYYY-MM-DD] [--urls-from research/trends/<date>/tinyfish/tiktok-candidates.json]
-               [--max-urls 10] [--comments 3] [--cap-usd 0.15] [--dry-run]
+  apify-run.py --date YYYY-MM-DD --urls-from research/trends/<date>/tinyfish/tiktok-candidates.json
+               [--max-urls N] [--allow-truncate] [--comments N] [--allow-comment-sample]
+               [--allow-hashtag-basket] [--comments-only] [--cap-usd 0.15] [--dry-run]
 
-Flow: candidate links (TinyFish discovery, free) → clockworks/tiktok-scraper measures them (play/like/share/comment,
-author fans, music, subtitles) — or, with no candidates, the keyword/hashtag input in pipeline/trends/apify.yaml →
-VTT subtitles downloaded → clockworks/tiktok-comments-scraper on the top `--comments` clips by outlier score →
-pipeline/scripts/trend-apify-normalize.py → research/trends/<date>/apify/clips.json (+ `outlier` per clip) and cost.json.
+Native path: every URL in the TinyFish file is sent as postURLs. The hashtag/searchQueries block in
+pipeline/trends/apify.yaml is not a fallback. Missing file, empty file, a bare run while candidates
+exist, or a --max-urls that would drop links exits with `BREAK trend-digest` before any paid call.
+Comment pull defaults to 3; measuring more links than that also breaks unless --comments N or
+--allow-comment-sample is set. --allow-hashtag-basket is the only switch onto the yaml basket, and
+only after Hiệp says so in that run.
 
 Token: APIFY_TOKEN from the environment or ~/oneup-tools/env.sh (pipeline/paths.py tools_env). Sent only in the
 Authorization header to api.apify.com; never printed, logged or written into the repo.
@@ -78,6 +81,52 @@ def download_vtts(items, vtt_dir):
         (vtt_dir / f"{it.get('id')}-{pick.get('language', 'sub')}.vtt").write_bytes(data); n += 1
     return n
 
+def break_digest(reason, nxt):
+    """Stop the run. The text is the alert Hiệp must see. Do not catch this and continue."""
+    raise SystemExit(f"BREAK trend-digest\n{reason}\nNext: {nxt}")
+
+def load_candidate_urls(path):
+    """None when the file is absent. A list (possibly empty) when it exists."""
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
+    rows = data if isinstance(data, list) else (data.get("items") or data.get("candidates") or data.get("results") or [])
+    return [r["url"] for r in rows if isinstance(r, dict) and r.get("url")]
+
+def resolve_tiktok_input(argv, date, cfg, root):
+    """Pick the Apify input. Breaks before a paid call when the native TinyFish path would be skipped."""
+    def opt(n, d=None):
+        return argv[argv.index(n) + 1] if n in argv else d
+    base = dict(cfg["actors"]["clockworks_search"]["default_input"])
+    rel = f"research/trends/{date}/tinyfish/tiktok-candidates.json"
+    measure = f"python3 pipeline/scripts/apify-run.py --date {date} --urls-from {rel}"
+    discover = f"python3 pipeline/scripts/tinyfish_client.py tiktok \"<topic>\" --out {rel}"
+    if "--allow-hashtag-basket" in argv:
+        return base, "hashtag-basket"
+    src = Path(opt("--urls-from")) if opt("--urls-from") else (root / rel)
+    urls = load_candidate_urls(src)
+    shown = opt("--urls-from") or rel
+    if urls is None:
+        break_digest(f"Thiếu file ứng viên TinyFish ({shown}). Không chuyển sang giỏ hashtag trong pipeline/trends/apify.yaml.", discover)
+    if not urls:
+        break_digest(f"File ứng viên TinyFish rỗng ({shown}). Không chuyển sang giỏ hashtag.", discover)
+    if "--urls-from" not in argv:
+        break_digest(f"{len(urls)} link TinyFish tại {rel} chưa được đưa vào Apify. Không đo bằng hashtag mặc định.", measure)
+    cap_n = opt("--max-urls")
+    if cap_n is not None and len(urls) > int(cap_n) and "--allow-truncate" not in argv:
+        dropped = len(urls) - int(cap_n)
+        break_digest(f"{len(urls)} link trong {rel}, --max-urls {cap_n} sẽ bỏ {dropped} link. Không cắt im lặng.", f"{measure} --max-urls {len(urls)}")
+    if cap_n is not None and "--allow-truncate" in argv:
+        urls = urls[:int(cap_n)]
+    comment_n = int(opt("--comments", "3"))
+    if len(urls) > comment_n and "--allow-comment-sample" not in argv:
+        break_digest(
+            f"Sắp đo {len(urls)} link nhưng comment mặc định chỉ {comment_n} clip. Không lấy mẫu comment im lặng.",
+            f"{measure} --comments {len(urls)}   hoặc thêm --allow-comment-sample khi Hiệp nói rõ là giữ {comment_n} comment",
+        )
+    kept = {k: v for k, v in base.items() if k not in ("hashtags", "searchQueries", "searchSection", "resultsPerPage")}
+    return {**kept, "postURLs": urls}, "urls"
+
 def outlier_scores(items):
     """play ÷ median play of the same author in this batch when the author has ≥3 clips here, else play ÷ fans."""
     by = {}
@@ -91,42 +140,67 @@ def outlier_scores(items):
         else: out[str(it.get("id"))] = {"outlier": None, "basis": "unknown"}
     return out
 
+def finish_clips(items, outd, scores, comments_path):
+    norm = [sys.executable, str(P.ROOT / "pipeline/scripts/trend-apify-normalize.py"), "--actor", "clockworks/tiktok-scraper",
+            "--dataset", str(outd / "dataset.json"), "--vtt-dir", str(outd / "vtt"), "--out", str(outd / "clips.json")]
+    if comments_path.exists():
+        norm += ["--comments", str(comments_path)]
+    subprocess.run(norm, check=True)
+    clips = json.loads((outd / "clips.json").read_text())
+    rows = clips if isinstance(clips, list) else clips.get("clips", [])
+    for r in rows:
+        r.update(scores.get(str(r.get("raw_id")), {}))
+    (outd / "clips.json").write_text(json.dumps(clips, ensure_ascii=False, indent=1) + "\n")
+
+def pull_comments(items, scores, outd, cost_path, cap, cfg, comment_n):
+    """Paid comment step. Breaks when the cap would skip it after the dataset is already on disk."""
+    top = sorted(items, key=lambda it: -(scores.get(str(it.get("id")), {}).get("outlier") or 0))[:comment_n]
+    cpath = outd / "comments.json"
+    if not top:
+        return cpath, 0
+    if spent_today(cost_path) >= cap:
+        break_digest(
+            f"Đã lưu {len(items)} clip tại {outd / 'dataset.json'} nhưng trần tiền chặn comment. Chưa xong lớp TikTok.",
+            f"python3 pipeline/scripts/apify-run.py --date {outd.parent.name} --comments-only --cap-usd {cap}",
+        )
+    cinp = {**cfg["actors"]["clockworks_comments"]["default_input"], "postURLs": [t.get("webVideoUrl") for t in top if t.get("webVideoUrl")]}
+    citems, cinfo = run_actor("clockworks/tiktok-comments-scraper", cinp, cap - spent_today(cost_path))
+    save_cost(cost_path, cinfo)
+    cpath.write_text(json.dumps(citems, ensure_ascii=False, indent=1) + "\n")
+    return cpath, len(top)
+
 def main():
     a = sys.argv[1:]
     def opt(n, d=None): return a[a.index(n) + 1] if n in a else d
     date = opt("--date", dt.date.today().isoformat())
-    outd = P.ROOT / f"research/trends/{date}/apify"; outd.mkdir(parents=True, exist_ok=True)
+    outd = P.ROOT / f"research/trends/{date}/apify"
     cost_path = outd / "cost.json"; cfg = load_cfg()
     cap = float(opt("--cap-usd", min(0.15, cfg["budget"].get("daily_usd_cap", 0.15))))
-    urls = []
-    if opt("--urls-from"):
-        urls = [c["url"] for c in json.loads(Path(opt("--urls-from")).read_text()) if c.get("url")][: int(opt("--max-urls", 10))]
-    base = dict(cfg["actors"]["clockworks_search"]["default_input"])
-    inp = ({**{k: v for k, v in base.items() if k not in ("hashtags", "searchQueries", "searchSection", "resultsPerPage")}, "postURLs": urls}
-           if urls else base)
+    comment_n = int(opt("--comments", "3"))
+    if "--comments-only" in a:
+        dataset = outd / "dataset.json"
+        if not dataset.exists():
+            break_digest(f"Không có {dataset} để kéo comment. Không chạy lại scraper.", f"python3 pipeline/scripts/apify-run.py --date {date} --urls-from research/trends/{date}/tinyfish/tiktok-candidates.json")
+        items = json.loads(dataset.read_text())
+        scores = outlier_scores(items)
+        cpath, ntop = pull_comments(items, scores, outd, cost_path, cap, cfg, comment_n)
+        finish_clips(items, outd, scores, cpath)
+        print(f"apify: comments-only, {len(items)} clip(s), comments for {ntop}; cost today {spent_today(cost_path):.4f} USD → {outd}")
+        return 0
+    inp, _mode = resolve_tiktok_input(a, date, cfg, P.ROOT)
     if "--dry-run" in a:
         print(json.dumps({"date": date, "cap_usd": cap, "spent_today": spent_today(cost_path), "input": inp}, ensure_ascii=False, indent=1)); return 0
+    outd.mkdir(parents=True, exist_ok=True)
     if spent_today(cost_path) >= cap: raise SystemExit(f"daily cap reached ({spent_today(cost_path):.3f} ≥ {cap} USD)")
     items, info = run_actor("clockworks/tiktok-scraper", inp, cap - spent_today(cost_path)); save_cost(cost_path, info)
     (outd / "dataset.json").write_text(json.dumps(items, ensure_ascii=False, indent=1) + "\n")
+    if not items:
+        break_digest("Apify trả 0 clip. Không điền tín hiệu TikTok bằng giỏ hashtag hay proxy YouTube.", f"python3 pipeline/scripts/apify-run.py --date {date} --urls-from research/trends/{date}/tinyfish/tiktok-candidates.json")
     nv = download_vtts(items, outd / "vtt")
     scores = outlier_scores(items)
-    k = int(opt("--comments", 3))
-    top = sorted(items, key=lambda it: -(scores.get(str(it.get("id")), {}).get("outlier") or 0))[:k]
-    cpath = outd / "comments.json"
-    if top and spent_today(cost_path) < cap:
-        cinp = {**cfg["actors"]["clockworks_comments"]["default_input"], "postURLs": [t.get("webVideoUrl") for t in top if t.get("webVideoUrl")]}
-        citems, cinfo = run_actor("clockworks/tiktok-comments-scraper", cinp, cap - spent_today(cost_path)); save_cost(cost_path, cinfo)
-        cpath.write_text(json.dumps(citems, ensure_ascii=False, indent=1) + "\n")
-    norm = [sys.executable, str(P.ROOT / "pipeline/scripts/trend-apify-normalize.py"), "--actor", "clockworks/tiktok-scraper",
-            "--dataset", str(outd / "dataset.json"), "--vtt-dir", str(outd / "vtt"), "--out", str(outd / "clips.json")]
-    if cpath.exists(): norm += ["--comments", str(cpath)]
-    subprocess.run(norm, check=True)
-    clips = json.loads((outd / "clips.json").read_text())
-    rows = clips if isinstance(clips, list) else clips.get("clips", [])
-    for r in rows: r.update(scores.get(str(r.get("raw_id")), {}))
-    (outd / "clips.json").write_text(json.dumps(clips, ensure_ascii=False, indent=1) + "\n")
-    print(f"apify: {len(items)} clip(s), {nv} subtitle(s), comments for {len(top)}; cost today {spent_today(cost_path):.4f} USD → {outd}")
+    cpath, ntop = pull_comments(items, scores, outd, cost_path, cap, cfg, comment_n)
+    finish_clips(items, outd, scores, cpath)
+    print(f"apify: {len(items)} clip(s), {nv} subtitle(s), comments for {ntop}; cost today {spent_today(cost_path):.4f} USD → {outd}")
     return 0
 
 if __name__ == "__main__":
