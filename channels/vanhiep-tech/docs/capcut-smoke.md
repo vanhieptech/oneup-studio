@@ -13,10 +13,10 @@ tags: [capcut, vanhiep-tech, local]
 **Không** dùng cloud `/opt/cursor/artifacts`. Skill: `skills/make-capcut-draft/SKILL.md`.
 
 ## Repo Mac
-`/Users/macbook/me/projects/oneup-studio`
+Gốc repo: `REPO="$(git rev-parse --show-toplevel)"` (không ghi cứng đường dẫn)
 
 ## Media (absolute)
-`/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/`
+`$REPO/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/`
 
 | File | Track |
 |---|---|

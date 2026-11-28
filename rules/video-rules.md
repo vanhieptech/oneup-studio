@@ -62,7 +62,7 @@ Bản này thay thế v2.x (đã audit toàn bộ 45 luật ngày 13/10/2026, xe
     - Ghép và hậu kỳ: FFmpeg, `pipeline/scripts/join-beats.sh` (xfade giữa beat, chuẩn −14 LUFS). Mỗi engine render file riêng, không trộn trong một lần render.
     - Pipeline: `pipeline/pipeline.md`.
 26. **Transcribe:** câu TTS (Hiệp, Omi) lấy thời lượng + envelope từ file TTS, kiểm lại bằng ASR (`pipeline/tts/stt_check.py`, faster-whisper). Nếu Hiệp tự thu giọng thật: whisper.cpp large-v3 (Metal, `-l vi`) lấy timestamp từng từ. Caption tiếng Anh được rải theo từng cụm câu tiếng Việt. Bản dịch tiếng Anh được duyệt cùng script.
-27. **Nơi render:** *[Cập nhật local Mac]* toàn bộ nháp (`--draft`) và final đều render trực tiếp trên local Mac (`/Users/macbook/work/oneup-studio`, toolchain `~/oneup-tools/`, F5-TTS trên Apple Silicon MPS). Không còn box ảo `/workspace/`.
+27. **Nơi render:** *[Cập nhật local Mac]* toàn bộ nháp (`--draft`) và final đều render trực tiếp trên local Mac (checkout local, gốc = `git rev-parse --show-toplevel`; toolchain `$ONEUP_TOOLS_DIR` mặc định `~/oneup-tools/`, F5-TTS trên Apple Silicon MPS). Không còn box ảo.
 28. **Mức tự động:** agent làm toàn bộ theo skill `skills/make-video/SKILL.md`, Hiệp duyệt 2 lần (gate 1: script + beat table + storyboard; gate 2: MP4 final + post.md). Góp ý theo id beat (`b03: …`), agent sửa spec, không làm lại từ đầu.
 29. **Thu giọng:** mặc định không cần (giọng AI preset, DL-030). Nếu Hiệp muốn tự thu: thu bằng iPhone, AirDrop vào `media/footage/inbox/` trên Mac. File âm thanh và render không commit lên git.
 30. **Cover:** frame hook kèm chữ to.

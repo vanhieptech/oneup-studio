@@ -13,7 +13,7 @@ tags: [agents, vanhiep-tech, talking-head, local]
 Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng luật comic `@hi.oneup` (DL-027, `make-video`, chibi, F5 voice pipeline OneUp).
 
 ## Máy làm việc = **local Mac**
-- Repo Mac: `/Users/macbook/work/oneup-studio`
+- Repo Mac: checkout local `oneup-studio` (gốc = `git rev-parse --show-toplevel`; không ghi cứng đường dẫn)
 - HyperFrames render, CapCut assemble, A-roll/VO, xem `.mov` — **trên Mac**
 - **Cấm** lấy deliverable CapCut từ cloud agent (`/opt/cursor/artifacts`), chat link, hay coi `/workspace` box là máy edit
 - Box/cloud agent (nếu còn): chỉ sửa HTML/docs/git; **không** là nguồn import CapCut
@@ -68,7 +68,7 @@ Kênh cá nhân (tech / lập trình / kỹ năng / tư duy). **Không** dùng l
 | CapCut app drafts | `~/Movies/CapCut/User Data/Projects/com.lveditor.draft` |
 | VO | local Mac only |
 
-Mac: `/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/<clip-id>/`
+Mac: `<gốc repo>/media/channels/vanhiep-tech/<clip-id>/` (đường dẫn tuyệt đối lấy bằng `"$(git rev-parse --show-toplevel)/media/channels/vanhiep-tech/<clip-id>/"`)
 
 ## Brand + design (generate)
 - Tokens: `brand-tokens.json` + `tokens.css` + `frame.md` + generate gate trong `make-layer`

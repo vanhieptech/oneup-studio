@@ -26,7 +26,7 @@ Run the daily (and Sunday weekly) trend digest for @hi.oneup: collect public tre
 - Source book index (@hi.oneup: HowToLiveBetter, "phần.mục" ids), `content/theme-map.md`, `content/idea-bank.md`, `content/story-bank.md`, `content/voice-profile.md`.
 - Learning state: `research/trends/ingest.md` (tables + Bridges), `research/trends/patterns.md` (hook/format library), last 7 `research/trends/*/raw.json`.
 - Series format: comic-only (Remotion comic story beats with Hiệp/Omi chibi rigs + HyperFrames motion explainers). No real footage, no event footage/audio.
-- Output root: always the local repo `/Users/macbook/work/oneup-studio` (`research/trends/`, `content/idea-bank.md`). Never write to dirs outside the repo.
+- Output root: always the local repo root (`git rev-parse --show-toplevel`; `research/trends/`, `content/idea-bank.md`). Never write to dirs outside the repo, and never to an agent workspace/sandbox copy.
 
 ## Three input streams (v5, 26/11/2026) — `pipeline/scripts/trend-streams.py`
 Every digest reports the three streams separately. Output: `research/trends/DATE/{digest.md,raw.json,radar.json}` + `research/trends/ingest.md`.

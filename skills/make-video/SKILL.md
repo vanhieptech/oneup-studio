@@ -26,7 +26,7 @@ Run the full @hi.oneup comic+motion clip workflow from intake through review gat
 - **Trước Chốt** = chỉ text: Script Draft + Bảng khung mạch + ý Hình / Caption EN / nhấn dạng chữ. Thời lượng chỉ là ƯỚC theo nhịp đọc tự nhiên; kiểm «đọc to nghe một lần» vẫn là NOT TESTED nếu chưa thật sự làm trên đúng lời đó. **Không** sinh ảnh, TTS, still, render hay đăng trước Chốt (L-098); đặc biệt đừng chạy `build-final.py --stage plans` vì nó có thể gọi voice. Lúc duyệt lời gửi script + kế hoạch cảnh/motion dạng text.
 - **Sau Chốt** = dựng `final/spec.json` từ đúng lời đã duyệt, đo thời lượng thật (< 300 s gồm end card), rồi TTS / hình / render (§2P trở đi). Mọi luật sản xuất sau Chốt giữ nguyên.
 
-Repo: `oneup-studio` (local Mac checkout `/Users/macbook/work/oneup-studio`; toolchain `~/oneup-tools/` qua `pipeline/paths.py`).
+Repo: `oneup-studio` (local checkout; chạy mọi lệnh từ gốc repo `git rev-parse --show-toplevel`; toolchain `$ONEUP_TOOLS_DIR`, mặc định `~/oneup-tools/`, qua `pipeline/paths.py`).
 Active checklist rút gọn: `rules/ACTIVE-CHECKLIST.md`. Draft QA gộp 1 lệnh: `python3 pipeline/scripts/check-rules.py --draft <script.md>`.
 Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
 

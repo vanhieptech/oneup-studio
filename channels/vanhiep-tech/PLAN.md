@@ -30,7 +30,7 @@ Quyết định khóa từ grill-me. Không đổi lặng lẽ — ghi revision 
 15. DoD V1: scaffold + layers + smoke; pilot full = V1.1
 16. VI nói + VI overlay
 17. Audio: hình + VO riêng sync CapCut (**VO không trong compile**)
-18. Media + CapCut: **local Mac only** — `/Users/macbook/work/oneup-studio`
+18. Media + CapCut: **local Mac only** — checkout local `oneup-studio` (gốc = `git rev-parse --show-toplevel`)
 19. Id clip: `vht-YYYYMMDD-<slug>`
 20. Không dùng `/opt/cursor/artifacts` / box làm nguồn CapCut
 21. Dual A-roll: `a-roll.mp4` + `a-roll-cutout.mov` trong `media/channels/vanhiep-tech/<clip>/` + MANIFEST

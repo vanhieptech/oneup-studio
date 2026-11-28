@@ -57,14 +57,14 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 Series @hi.oneup hiện tại **chỉ comic + motion graphics** (Remotion `video-engine/` + HyperFrames). Không shot list, không b-roll tự quay; Hiệp chỉ thu giọng. Không nhắc đăng (DL-028).
 
 ## Trend sync (rule-38, rule-47, rule-59: một nguồn duy nhất — local Mac)
-Mọi asset của @hi.oneup chỉ nằm trong repo local `/Users/macbook/work/oneup-studio` (DL-060, L-023). Không còn box `/workspace/` hay thư mục sync riêng.
+Mọi asset của @hi.oneup chỉ nằm trong repo local này (gốc repo = `git rev-parse --show-toplevel`, DL-060, L-023). Không có box hay thư mục sync riêng.
 1. Job hằng ngày chạy `skills/trend-digest` trực tiếp trong repo local. Ghi thẳng vào `research/trends/{YYYY-MM-DD/,ingest.md,patterns.md}` và `content/idea-bank.md`, rồi `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"`.
 2. Media lớn (>2MB audio/video) để ở `media/` (gitignored, không có git-lfs), liệt kê trong `media/MANIFEST.json` (path, size, sha256) và kiểm bằng `python3 pipeline/scripts/media-sync.py verify`.
 3. `python3 pipeline/scripts/check-assets.py` kiểm layout clip, front-matter, trùng nội dung, trùng ID (`DL-NNN`/`L-NNN`), và media mới >2MB.
 4. Cài pre-commit hook local một lần: `bash pipeline/scripts/install-hooks.sh`.
 
 ## Đường dẫn máy
-Repo trên Mac (máy làm việc local chính): `/Users/macbook/work/oneup-studio`. Toolchain local: `~/oneup-tools/` (tự động nhận qua `pipeline/paths.py`).
+Không ghi cứng đường dẫn tuyệt đối của repo: mọi lệnh chạy từ gốc repo (`cd "$(git rev-parse --show-toplevel)"`), mọi đường dẫn trong tài liệu là tương đối với gốc repo. Checkout chính hiện ở Mac của Hiệp, nhưng repo có thể nằm ở thư mục khác (git worktree, máy khác). Toolchain ngoài repo: `$ONEUP_TOOLS_DIR` (mặc định `~/oneup-tools/`), tự nhận qua `pipeline/paths.py`; kiểm bằng `bash pipeline/scripts/env-check.sh`.
 
 ## Agent skills
 

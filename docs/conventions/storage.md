@@ -22,7 +22,7 @@ Một chỗ cho mỗi loại file. Đường dẫn khai báo tập trung trong `
 | Props, layout, motion | `video-engine/src/composition/` (`Props.tsx`, `layout.ts`, `transitions.ts`) | |
 | Template HyperFrames | `templates/hyperframes-base/` | |
 | Voice takes đã chọn | `video-engine/public/voice/` (key hash, hoặc `v<n>-<scene>`) | file `.json` kèm stt/stt_sim |
-| Take thô, thử nghiệm giọng | ngoài repo (`/workspace/<job>/`) hoặc `media/` + `MANIFEST.json` | không commit take thô |
+| Take thô, thử nghiệm giọng | ngoài repo (`$VOICE_WORK_DIR`, mặc định `~/oneup-tools/voice-work/<job>/`) hoặc `media/` + `MANIFEST.json` | không commit take thô |
 | Mỗi clip | `content/clips/<clip>/` chỉ có `final/` (bản hiện hành: `script-*.md`, một file `script-vN-draft.md` đang viết, `spec.json`, `plan-*.voiced.json`, `timing.json`, `cover/`, `preview/`, `out/`), `archive/` (nháp cũ, storyboard/comic cũ, bản box cũ) và `README.md` | check-assets chặn mọi thứ khác; hai draft trong cùng `final/` thì fail |
 | Render clip | làm việc: `final/out/` (gitignored), part render `video-engine/out/`; **bản giữ lại**: `media/clips/<clip>/clip-NN-final.mp4` + `-720.mp4` (manifest) | bản gửi Hiệp: 720p faststart < 10 MB |
 | Nháp bài X/LinkedIn | `content/published/social/YYYY-MM-DD-<slug>.md` (skill `social-poster`; `status: draft → ready → published`) | không bao giờ tự đăng |
@@ -74,7 +74,7 @@ Front-matter bắt buộc cho `.md` nội dung (mọi file trừ `skills/`, `vid
 `content/clips/<clip>/` (đang làm, được thiếu) → đủ gói đăng + Hiệp nói "duyệt" → `git mv` sang `content/archive/<clip>/`, ghi `final/approved.json`, video full + 720p ở `media/clips/<clip>/` + `MANIFEST.json`.
 
 ## File gitignored và nơi giữ trên Mac
-Repo trên Mac (local chính): `/Users/macbook/work/oneup-studio`.
+Repo: checkout local (gốc = `git rev-parse --show-toplevel`); không ghi cứng đường dẫn tuyệt đối trong tài liệu hay code (test `tests/test_agent_setup.py` chặn).
 
 | Gitignored | Là gì | Trên Mac | Cách có |
 |---|---|---|---|

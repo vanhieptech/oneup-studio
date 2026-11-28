@@ -44,7 +44,7 @@ Marker shorthand: `[mm:ss ov-d01 cutout]` khi cần A-cutout.
 **CapCut (local Mac):**
 
 ```
-/Users/macbook/me/projects/oneup-studio/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/
+$REPO/media/channels/vanhiep-tech/vht-20261107-oauth-control-plane/   # REPO=$(git rev-parse --show-toplevel)
   a-roll.mp4              # full talking-head (from copy_F3329B9A)
   a-roll-source.MOV       # original 4K60 archive
   a-roll-cutout.mov       # HF remove-background (bake-off)

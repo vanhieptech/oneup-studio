@@ -13,7 +13,7 @@ updated: 2026-11-27
 Tài liệu gốc vẫn là `rules/video-rules.md`, `logs/decision-log.md`, `logs/lessons.md`. File này gom ngắn gọn **các quy tắc đang có hiệu lực** để tránh áp nhầm luật cũ đã bị ghi đè.
 
 ## 1. Môi trường local Mac
-- Repo duy nhất: `/Users/macbook/work/oneup-studio` · Toolchain: `~/oneup-tools/` (tự nhận qua `pipeline/paths.py`, **không** dùng `/workspace/`).
+- Repo duy nhất: checkout local này (gốc = `git rev-parse --show-toplevel`, không ghi cứng đường dẫn tuyệt đối) · Toolchain: `$ONEUP_TOOLS_DIR` (mặc định `~/oneup-tools/`, tự nhận qua `pipeline/paths.py`; không dùng box/workspace của agent).
 - F5-TTS: mặc định chạy **Apple Silicon MPS** (`F5_DEVICE=auto`) với checkpoint **`f5-ckpt-6000h`** + `vocos-mel-24khz` (CC-BY-NC-SA, Hiệp chấp nhận rủi ro `DL-035`).
 - HyperFrames: version chuẩn trong `pipeline/versions.json` (`0.9.94`).
 - Media > 2 MB: để trong `media/` + `media/MANIFEST.json` (`python3 pipeline/scripts/media-sync.py verify`).
