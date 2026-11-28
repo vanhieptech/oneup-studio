@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: agents
 type: guide
 status: active
-updated: 2026-11-27
+updated: 2026-11-28
 tags: [agents, retrieval, workflow]
 ---
 # AGENTS.md: cách AI làm việc trong repo này
@@ -51,7 +51,7 @@ Khi user nói về `@vanhiep.tech`, CapCut A-roll, layer overlay/cutaway, hoặc
 1. **Clip mới:** theo `skills/make-video/SKILL.md` v2.0 (`ideate-clip.py` bắt trend <72h → Gate 0 + Fact-lock → Đấu trường 3 kịch bản `script-arena.py` → `audio-precheck.py` + `check-rules.py --draft` → Reviewer Tournament Judge → Gate 1 → Chốt → render → `check-rules --final` → Gate 2 → `golden-sync.py` → DL).
 2. **Có góp ý (rule-36):** thêm `DL-NNN` → sửa nguồn (`spec.json` / `script.md` / renderer), **không tạo lại từ đầu** → thêm một dòng vào `revisions` trong spec → render lại → tự xem lại 2 vòng (rule-34) → commit `...(DL-NNN)` → push.
 3. **Góp ý lặp lại từ 2 lần:** nâng thành luật hoặc skill, ghi vào decision-log. Retro mỗi Chủ nhật.
-4. **Hoàn thành mọi tác vụ (bắt buộc):** sau khi sửa xong code/tài liệu và chạy qua các cổng kiểm tra (`build-index.py`, `check-assets.py`, `pytest`), **luôn tự động `git add`, `git commit` (theo mẫu `<loại>: <mô tả>`) và `git push` lên `origin/main`** mà không chờ nhắc.
+4. **Hoàn thành mọi tác vụ (bắt buộc):** sau khi sửa xong code/tài liệu, chạy `python3 pipeline/scripts/build-index.py` rồi cổng kiểm tra chung `bash pipeline/scripts/preflight.sh` (check-assets + unittest + video-engine typecheck/vitest; cùng nội dung với pre-commit hook), rồi **tự động `git add`, `git commit` (theo mẫu `<loại>: <mô tả>`) và `git push` lên `origin/main`** mà không chờ nhắc. **Ngoại lệ Grok (OneUp bot):** Grok commit bình thường nhưng **chỉ push khi Hiệp yêu cầu** (áp dụng cả bước push ở mục 2).
 
 ## Series format (DL-027)
 Series @hi.oneup hiện tại **chỉ comic + motion graphics** (Remotion `video-engine/` + HyperFrames). Không shot list, không b-roll tự quay; Hiệp chỉ thu giọng. Không nhắc đăng (DL-028).
@@ -61,7 +61,7 @@ Mọi asset của @hi.oneup chỉ nằm trong repo local này (gốc repo = `git
 1. Job hằng ngày chạy `skills/trend-digest` trực tiếp trong repo local. Ghi thẳng vào `research/trends/{YYYY-MM-DD/,ingest.md,patterns.md}` và `content/idea-bank.md`, rồi `git add research/trends content/idea-bank.md && git commit -m "trends: YYYY-MM-DD digest"`.
 2. Media lớn (>2MB audio/video) để ở `media/` (gitignored, không có git-lfs), liệt kê trong `media/MANIFEST.json` (path, size, sha256) và kiểm bằng `python3 pipeline/scripts/media-sync.py verify`.
 3. `python3 pipeline/scripts/check-assets.py` kiểm layout clip, front-matter, trùng nội dung, trùng ID (`DL-NNN`/`L-NNN`), và media mới >2MB.
-4. Cài pre-commit hook local một lần: `bash pipeline/scripts/install-hooks.sh`.
+4. Cài pre-commit hook local một lần: `bash pipeline/scripts/install-hooks.sh` (hook chỉ gọi `pipeline/scripts/preflight.sh --staged`). Agent không có hook thì chạy tay `bash pipeline/scripts/preflight.sh` trước khi commit.
 
 ## Đường dẫn máy
 Không ghi cứng đường dẫn tuyệt đối của repo: mọi lệnh chạy từ gốc repo (`cd "$(git rev-parse --show-toplevel)"`), mọi đường dẫn trong tài liệu là tương đối với gốc repo. Checkout chính hiện ở Mac của Hiệp, nhưng repo có thể nằm ở thư mục khác (git worktree, máy khác). Toolchain ngoài repo: `$ONEUP_TOOLS_DIR` (mặc định `~/oneup-tools/`), tự nhận qua `pipeline/paths.py`; kiểm bằng `bash pipeline/scripts/env-check.sh`.
@@ -74,5 +74,29 @@ Issues live in this repo's GitHub Issues (via `gh`). See `docs/agents/issue-trac
 
 ### Domain docs
 
-Single-context: root `GLOSSARY.md` + `docs/adr/`. See `docs/agents/domain.md`.
+Single-context: root `GLOSSARY.md` + `docs/adr/` **chưa tồn tại** (tạo khi thật sự cần, xem `docs/agents/domain.md`: thiếu thì bỏ qua, không báo). Hiện thuật ngữ và quyết định nằm ở `rules/video-rules.md` (`rule-N`), `logs/decision-log.md` (`DL-NNN`), `logs/lessons.md` (`L-NNN`).
+
+## Agent setup (Claude Code · Antigravity · Cursor · Grok): một nguồn duy nhất
+Mọi agent đọc cùng một bộ luật; file riêng của từng agent chỉ là lớp mỏng trỏ về đây, không chép nội dung.
+
+| Agent | Điểm vào | Skill (đều là symlink tới nguồn) | Cổng kiểm tra |
+|---|---|---|---|
+| Grok (OneUp bot) | `AGENTS.md` (file này) | đọc `docs/agents/skills-index.md` → `SKILL.md` | chạy tay `preflight.sh` (không có hook) |
+| Claude Code | `CLAUDE.md` (`@AGENTS.md`) | `.claude/skills/` | pre-commit hook → `preflight.sh` |
+| Antigravity | `AGENTS.md`, `GEMINI.md` | `.agents/skills/` | pre-commit hook → `preflight.sh` |
+| Cursor | `AGENTS.md`, `.cursor/rules/oneup.mdc` | `.cursor/skills/` | pre-commit hook → `preflight.sh` |
+
+- **Nguồn skill:** `skills/<id>/`, `skills/hyperframes/<id>/`, `channels/vanhiep-tech/skills/<id>/`. Danh mục: `docs/agents/skills-index.md`. Thêm skill mới → thêm symlink cùng tên trong **cả ba** `.agents/skills`, `.claude/skills`, `.cursor/skills` + một dòng trong skills-index (`tests/test_agent_setup.py` chặn khi lệch).
+- **Gốc repo, không đường dẫn tuyệt đối:** mọi lệnh chạy từ `"$(git rev-parse --show-toplevel)"`; code Python lấy đường dẫn từ `pipeline/paths.py`, shell dùng `git rev-parse`. Không ghi `/Users/...`, `/home/...`, `/workspace...`, `/opt/cursor...`, đường dẫn tmp hay workspace riêng của agent vào file tracked (test chặn).
+- **Không làm trên bản sao của agent:** chỉ làm trong checkout local trên Mac của Hiệp. Không clone/sync sang sandbox, box `/workspace` hay thư mục artifact của agent.
+- **Nhiều agent cùng lúc:** nếu checkout chính đang có agent khác sửa (vd Antigravity làm clip), làm việc ở worktree riêng: `git worktree add ../oneup-studio-<việc> -b <nhánh> origin/main`, không stash/checkout đè lên thay đổi của agent khác.
+
+### Quy tắc riêng cho Grok (không có hook, chạy qua remote shell)
+1. Đầu phiên: `cd "$(git rev-parse --show-toplevel)"` rồi `bash pipeline/scripts/env-check.sh` (shell không tương tác nên không có nvm/venv; `paths.py` tự tìm). Secret chỉ báo set/missing, không in giá trị.
+2. Trước mọi commit: `python3 pipeline/scripts/build-index.py` (nếu thêm/đổi tên `.md`) rồi `bash pipeline/scripts/preflight.sh`. Lỗi có sẵn trước thay đổi của mình thì ghi rõ trong báo cáo, không giấu.
+3. **Push chỉ khi Hiệp yêu cầu** (ngoại lệ của Workflow 2 và 4). Không force-push, không sửa lịch sử đã push.
+4. Hook toàn cục của Claude (`~/.claude/hooks`: `tools-ready.sh` bật XERJ, các guard gsd…) **không** chạy với Grok. Muốn tìm bằng XERJ: `xerj-ensure`, `export XERJ_API_KEY="$(cat ~/xerj-data/admin.key)"`, rồi `xerj search --prefix work-oneup-studio "..."`; không được thì dùng `rg`/`git grep`.
+5. Trình duyệt (DL-083): dùng `ego-browser` CLI qua shell (`EGO_BROWSER_BIN`, chạy `ego-browser skill` trước). Chỉ dùng trình duyệt riêng của Grok khi ego-browser không làm được, và ghi lại.
+6. Bước cần subagent (Reviewer khác model, `make-video` §4b): dùng subagent của Grok hoặc `pipeline/scripts/review-eval.py --engine claude|agy|cursor`. Bước cần Antigravity/Gemini (`video-qa`, `teardown.py`, `gate2-qa.py`) gọi `agy` CLI qua shell.
+7. Bước dùng MCP (X trong `trend-digest`): dùng tool X của Grok nếu có; không có thì bỏ qua và ghi chú trong digest.
 
