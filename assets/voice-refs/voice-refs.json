@@ -1,28 +1,32 @@
 {
- "_doc": "Giọng mẫu F5/VieNeu (ref + ref_text). voice-phrase-f5.py: spec không có `voice_refs` → thai-son; có `voice_refs` → chọn theo emotion (DL-073). Phase-1 VieNeu: hiep-spark/dip/clear/warm là bộ 4 ref đồng tông (tạm trỏ thai-son-v2; Pha 3 thay bằng thu mộc 3–5s của Hiệp).",
+ "_doc": "Giọng mẫu F5/VieNeu (ref + ref_text). voice-phrase-f5.py: spec không có `voice_refs` → thai-son; có `voice_refs` → chọn theo emotion (DL-073). VieNeu clone ưu tiên hiep-spark/dip/clear/warm (thu mộc Hiệp, đồng tông ≤1.0 st, DL-093).",
  "hiep-spark": {
-  "wav": "thai-son-v2.wav",
-  "ref_text": "Hồi đó mình hay để dồn việc tới sát giờ mới làm á, ngồi vô bàn thì đầu óc trống trơn, mà cũng hông biết bắt đầu từ đâu, nên giờ mình tập làm từng chút một mỗi ngày thôi nha.",
+  "wav": "hiep-spark.wav",
+  "ref_text": "Ủa, sao bữa nào tính tập trung làm việc, là ý như rằng tay mình lại chụp cái điện thoại trước?",
   "emotion": "spark",
-  "source": "Phase-1 placeholder (= thai-son-v2) until Hiệp records same-F0 custom refs (DL-092)"
+  "f0_hz": 101.3,
+  "source": "Hiệp Voice Memos 2026-11-28 → 48 kHz mono, cắt lặng đầu/cuối; F0 median 101.3 Hz (DL-093)"
  },
  "hiep-dip": {
-  "wav": "thai-son-v2.wav",
-  "ref_text": "Hồi đó mình hay để dồn việc tới sát giờ mới làm á, ngồi vô bàn thì đầu óc trống trơn, mà cũng hông biết bắt đầu từ đâu, nên giờ mình tập làm từng chút một mỗi ngày thôi nha.",
+  "wav": "hiep-dip.wav",
+  "ref_text": "Tối về đầu nặng trịch, việc chính còn nguyên trên bàn, tự nhiên thấy mình hơi oải thiệt.",
   "emotion": "dip",
-  "source": "Phase-1 placeholder (= thai-son-v2) until Hiệp records same-F0 custom refs (DL-092)"
+  "f0_hz": 96.5,
+  "source": "Hiệp Voice Memos 2026-11-28 → 48 kHz mono, cắt lặng đầu/cuối; F0 median 96.5 Hz (DL-093)"
  },
  "hiep-clear": {
-  "wav": "thai-son-v2.wav",
-  "ref_text": "Hồi đó mình hay để dồn việc tới sát giờ mới làm á, ngồi vô bàn thì đầu óc trống trơn, mà cũng hông biết bắt đầu từ đâu, nên giờ mình tập làm từng chút một mỗi ngày thôi nha.",
+  "wav": "hiep-clear.wav",
+  "ref_text": "Thật ra, vấn đề không nằm ở chỗ mình lười ý. Mà do mỗi lần check mail là não bị đứt mạch.",
   "emotion": "clear",
-  "source": "Phase-1 placeholder (= thai-son-v2) until Hiệp records same-F0 custom refs (DL-092)"
+  "f0_hz": 102.3,
+  "source": "Hiệp Voice Memos 2026-11-28 → 48 kHz mono, cắt lặng đầu/cuối; F0 median 102.3 Hz (DL-093)"
  },
  "hiep-warm": {
-  "wav": "thai-son-v2.wav",
-  "ref_text": "Hồi đó mình hay để dồn việc tới sát giờ mới làm á, ngồi vô bàn thì đầu óc trống trơn, mà cũng hông biết bắt đầu từ đâu, nên giờ mình tập làm từng chút một mỗi ngày thôi nha.",
+  "wav": "hiep-warm.wav",
+  "ref_text": "Mình thử kiểu đó, thấy nhẹ hẳn cái đầu. Còn bạn có cách nào hay hơn thì kể mình nghe nha.",
   "emotion": "warm",
-  "source": "Phase-1 placeholder (= thai-son-v2) until Hiệp records same-F0 custom refs (DL-092)"
+  "f0_hz": 104.1,
+  "source": "Hiệp Voice Memos 2026-11-28 → 48 kHz mono, cắt lặng đầu/cuối; F0 median 104.1 Hz (DL-093)"
  },
  "thai-son": {
   "wav": "thai-son.wav",
