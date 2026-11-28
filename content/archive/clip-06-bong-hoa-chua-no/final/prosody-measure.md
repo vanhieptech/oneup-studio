@@ -1,3 +1,13 @@
+---
+title: "Prosody đo thật clip-06 voice c06v13"
+date: 2026-11-27
+id: clip-06.prosody-measure
+type: note
+tags: [clip-06, prosody, voice]
+status: draft
+source: "voice c06v13, timing.json"
+updated: 2026-11-28
+---
 # Prosody đo thật — clip-06-final (voice c06v13)
 
 Nghỉ = đoạn lặng dài nhất (năng lượng) giữa hai từ khớp; giữa câu/beat = khoảng lặng thật giữa hai file giọng theo timing.json. Lên giọng = trung vị F0 từ cuối so với phần trước (semitone).

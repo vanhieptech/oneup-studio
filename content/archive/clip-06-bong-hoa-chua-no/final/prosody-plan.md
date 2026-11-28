@@ -1,3 +1,13 @@
+---
+title: "Prosody plan clip-06 voice c06v13"
+date: 2026-11-27
+id: clip-06.prosody-plan
+type: note
+tags: [clip-06, prosody, voice]
+status: draft
+source: "script chốt clip-06 v13"
+updated: 2026-11-28
+---
 # Prosody plan — clip-06-final (voice c06v13)
 
 Lời giữ nguyên script chốt. F5 không có SSML: nhấn = tách cụm (unit riêng) + nghỉ trước từ nhấn (+0.08s) + {nhấn:} giãn nhẹ; câu hỏi = nâng ~1.5 st từ cuối.

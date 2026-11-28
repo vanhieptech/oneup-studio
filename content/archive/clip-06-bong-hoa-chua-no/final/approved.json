@@ -1,0 +1,13 @@
+{
+  "clip": "clip-06-bong-hoa-chua-no",
+  "status": "archived",
+  "approved": "duyệt",
+  "approved_by": "Hiệp",
+  "approved_at": "2026-11-28T12:09+07:00",
+  "note": "Hiệp chốt Gate 2 («chốt 2 clip 06 07, giờ làm clip 08»). Lời khóa script_hash c8469062ec2f. Video 75.4s, −14.1 LUFS. check-rules --final còn 4 lỗi: L-070 (12 cờ nghỉ/lên giọng) và L-008 (b02, b02a, b07 lệch 2.8–2.9 st). Không render lại.",
+  "title": "HAI TUẦN MUỐN DẸP",
+  "post": "final/post.md",
+  "cover": "final/cover.png",
+  "video_full": "media/clips/clip-06-bong-hoa-chua-no/clip-06-final.mp4",
+  "video_720": "media/clips/clip-06-bong-hoa-chua-no/clip-06-final-720.mp4"
+}

@@ -6,7 +6,7 @@ type: feedback
 tags: [feedback, clip-06]
 status: living
 source: "logs/lessons.md L-106, L-107; chat Hiệp 26/11 (lời nguyên văn, không tóm tắt)"
-updated: 2026-11-27
+updated: 2026-11-28
 ---
 # clip-06 — góp ý của Hiệp (nguyên văn)
 
@@ -27,3 +27,4 @@ Mỗi góp ý một dòng, ghi trước khi sửa (make-video §8). Reviewer §4
 | 2026-11-27 14:17 | v12 76d84ff | «đọc lại v12 và tự nhận xét, đánh giá research, nghiên cứu chuyên sâu nhất» → «chốt hướng này, làm luôn tại đây» (sửa lỗi nối từ cơ học Anadiplosis, đảo ngược cao trào 254→18, câu mở cụt chủ thể, vào nghiên cứu kiểu Wikipedia, phẳng khẩu ngữ do Prompt Bloat) | DL-079, L-111 (Kiến trúc 2 Pha Pure Voice → Surgical Audit, Given–New Conceptual Flow + Climactic Order + Storytelling the Study) · v13 |
 | 2026-11-27 14:55 | v13 b15e1bd | «CTA k hợp» | DL-080, L-112 (bỏ khuôn «CTA 1 chữ» & câu hỏi tiêu cực bó hẹp «mới tập hai tuần mà đang tính bỏ? Kể một chữ…»; tách `b08` CTA chia sẻ đồng hành giọng lắng nghe) · v13 r2 |
 | 2026-11-27 15:30 | v13 r2 0efe144 | «nghe rất sáo rỗi trả có ai comment như thế, nên chia se đồng cảm, ai bị giống mình, hay cách mng vượt quá, phải thể hiện sự lắng nghe ý kiến quan điểm theo góc nhìn của mỗi người. , m research tìm hiểu kỹ lưỡng giúp t» | DL-081, L-113 (nghiên cứu tâm lý bình luận TikTok: bỏ hẳn câu khảo sát sáo rỗng «bạn đang tập gì, được bao lâu»; đổi sang hạ cái tôi + đồng cảm «ai dễ nản tuần hai giống mình» + tôn trọng «mỗi người một góc nhìn», lắng nghe cách vượt qua) · v13 r3 |
+| 2026-11-28 12:09 | v13 render 75.4s | «chốt 2 clip 06 07, giờ làm clip 08» | Gate 2: `final/approved.json` + `media/clips/clip-06-bong-hoa-chua-no/` + `git mv` sang `content/archive/`. Clip-07 đã có `approved.json` từ 11:35 cùng ngày. |
