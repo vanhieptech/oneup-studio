@@ -1,0 +1,363 @@
+{
+ "hook": {
+  "spoken": "I guess people wanted me to take a look at this, so let's—let's see.",
+  "verbatim": true,
+  "on_screen_text": "Dr.K's Thoughts on GTA VI | You can see this streamer getting actively more socially intelligent in real time. | Stable Ronaldo spent 40 minutes renovating his house in GTA VI only to realize that Lucia might not like the color and decided to redo it",
+  "visual_action": "Chia đôi màn hình: nửa trên là bài đăng X kèm clip streamer Stable Ronaldo sơn tường trong GTA VI, chính giữa là tiêu đề nền trắng 'Dr.K's Thoughts on GTA VI', nửa dưới là Dr. K đeo tai nghe ngồi trước mic chăm chú xem rồi bật cười ở 00:16.",
+  "mechanism": "phản trực giác",
+  "mechanism_note": "Tạo tương phản bất ngờ ngay giây đầu: một tựa game nổi tiếng cướp bóc, bạo lực (GTA VI) lại mở đầu bằng cảnh nam streamer tốn 40 phút sơn lại nhà chỉ vì lo bạn gái trong game không thích màu xanh, kết hợp sức hút tên tuổi bác sĩ tâm lý Dr. K.",
+  "implied_promise": "Bác sĩ tâm lý Dr. K sẽ mổ xẻ xem hiện tượng kỳ lạ trong GTA VI này đang nói lên điều gì về tâm lý người chơi hiện đại."
+ },
+ "beats": [
+  {
+   "from": "00:00",
+   "to": "00:17",
+   "seconds": 17,
+   "role": "hook",
+   "emotion": "tò mò",
+   "retention_function": "Mượn clip viral có sẵn nhịp hài hước và phản ứng cảm thán mạnh của streamer để neo người xem mà không cần tự giải thích dài dòng.",
+   "summary": "Dr. K mở clip streamer Stable Ronaldo hoang mang chuyện màu sơn tường cho bạn gái trong GTA VI, cắt nhảy trực tiếp sang khoảnh khắc streamer la lên khi thấy màu tường thành màu xám khiến Dr. K bật cười.",
+   "transition": "Cắt cứng từ khung reaction chia đôi màn hình sang cận cảnh Dr. K tháo tai nghe và hỏi trực tiếp khán giả."
+  },
+  {
+   "from": "00:18",
+   "to": "00:44",
+   "seconds": 26,
+   "role": "dẫn dắt",
+   "emotion": "tò mò",
+   "retention_function": "Kéo khán giả vào cuộc trò chuyện bằng hai câu hỏi phân nhóm (người đang chơi vs người chỉ xem) và bật nổi liên tục các bình luận trái chiều trên màn hình.",
+   "summary": "Dr. K thừa nhận chưa từng chơi GTA, hỏi cảm nhận của kênh chat rồi đọc lướt loạt ý kiến chia rẽ: GTA 5 hay hơn, ít hoạt động giang hồ, phản ứng thái quá, chê dở tệ, hay nhưng chơi chán.",
+   "transition": "Chuyển đột ngột từ khung đọc chat sang chuỗi B-roll game hành động kỳ ảo kèm câu mở khung 'You know, games are supposed to be about fantasy.'"
+  },
+  {
+   "from": "00:45",
+   "to": "01:05",
+   "seconds": 20,
+   "role": "lật kèo",
+   "emotion": "chùng xuống",
+   "retention_function": "Đảo ngược kỳ vọng từ không khí vui vẻ sang nỗi chột dạ có thật thông qua cử chỉ vuốt trán và nhịp liệt kê tăng dần các chi tiết đời sống lành mạnh.",
+   "summary": "Dr. K nhắc lại bản chất game là thế giới tưởng tượng để thoát thực tại, rồi vuốt trán thừa nhận điều đáng sợ: những thứ game mô phỏng lại là thiền, uống protein, tập gym, gửi tiết kiệm, đi hẹn hò và có người chủ động nhắn tin trong ngày.",
+   "transition": "Ngắt chuỗi liệt kê dồn dập bằng một câu hỏi ngắn đánh thẳng vào trọng tâm trên nền cảnh đi siêu thị trong game."
+  },
+  {
+   "from": "01:06",
+   "to": "01:21",
+   "seconds": 15,
+   "role": "câu hỏi",
+   "emotion": "căng",
+   "retention_function": "Chốt luận điểm gây nhói lòng để giữ người xem muốn nghe lời giải thích sâu hơn, đồng thời tăng độ tin cậy bằng chi tiết đã đọc vài nghiên cứu khoa học.",
+   "summary": "Dr. K đặt câu hỏi liệu một cuộc sống bình thường như vậy giờ đã trở thành 'mộng tưởng ngoài tầm với', rồi dẫn sang việc mình đã đọc nghiên cứu và chỉ ra nghịch lý: vào GTA để làm việc nhà đời thật.",
+   "transition": "Chuyển từ cận mặt sang chuỗi cảnh nhân vật trong game làm việc vặt kèm câu đối lập 'but instead of doing the chores in real life...'."
+  },
+  {
+   "from": "01:22",
+   "to": "01:36",
+   "seconds": 14,
+   "role": "kết",
+   "emotion": "vỡ òa",
+   "retention_function": "Chồng nhanh 4 cảnh đối chiếu 'làm trong game thay vì làm ngoài đời' tạo cảm giác châm biếm rõ rệt rồi cắt lửng đúng câu hỏi cuối để kích thích bình luận hoặc tìm xem bản đầy đủ.",
+   "summary": "Dr. K liệt kê loạt hành động người chơi thà làm trong game hơn ngoài đời (rửa thuyền, khiêng TV, đẩy tạ, uống protein, mua hoa, mua rau và bánh mì), hiện nhãn healthygamer.gg rồi bật cười hỏi bỏ lửng 'is this what Grand Theft Auto...'.",
+   "transition": "Cắt ngang giữa câu kết trên tiếng cười bất lực."
+  }
+ ],
+ "promise_answered_at": "01:06",
+ "winning_points": {
+  "best_metaphor": {
+   "text": "Game vốn là 'fantasy' (thế giới mộng tưởng để tạm thoát đời thật), nhưng trong GTA VI chính một cuộc sống bình thường, lành mạnh và có kết nối lại trở thành 'fantasy' ngoài tầm với.",
+   "t": "01:06",
+   "kind": "quan sát"
+  },
+  "quotable_line": {
+   "text": "Is this fantasy now? Like, is this what life has become, where like this is now something that's out of reach?",
+   "t": "01:06",
+   "verbatim": true
+  },
+  "interrupts_per_10s": 2.0,
+  "interrupts": [
+   {
+    "t": "00:04",
+    "what": "Clip streamer bắt đầu chạy với tiếng con lăn sơn và đổi giọng nói từ Dr. K sang streamer.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:11",
+    "what": "Cắt nhảy bên trong clip gốc (từ 00:08 sang 00:23) ngay trước tiếng hét cảm thán 'Oh no! Ew! No!' ở 00:14.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:18",
+    "what": "Cắt cứng sang cận cảnh Dr. K tháo tai nghe, sau đó hiện logo 'Grand Theft Auto VI' phía trên đầu ở 00:19.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:22",
+    "what": "Đổi sang bố cục chia đôi với luồng Twitch chat cuộn ở nửa trên, rồi tách nổi từng dòng bình luận liên tiếp từ 00:33 đến 00:44.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:45",
+    "what": "Cắt ghép Dr. K góc dưới lên chuỗi 4 cảnh game hành động/kỳ ảo đổi hình mỗi ~1 giây.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:50",
+    "what": "Cắt về cận mặt toàn màn hình đúng lúc Dr. K đưa tay vuốt trán chuyển tông nghiêm túc.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "01:01",
+    "what": "Đổi liên tiếp cảnh hẹn hò (01:01), màn hình điện thoại tin nhắn Lucia (01:03), cảnh mua đồ kèm chữ vàng 'GTA 6 is a chores simulator' (01:06) và cảnh bắt vít tường (01:08).",
+    "kind": "quan sát"
+   },
+   {
+    "t": "01:22",
+    "what": "Chuỗi cảnh làm việc vặt trong game (rửa thuyền 01:22, khiêng TV 01:24, tập tạ 01:26, mua bánh mì 01:30) kèm nhãn healthygamer.gg bật lên ở 01:31.",
+    "kind": "quan sát"
+   }
+  ]
+ },
+ "algorithmic_triggers": {
+  "comment": [
+   {
+    "what": "Đặt trực diện câu hỏi GTA VI có thực sự hay không và đưa ra hai phe chê 'ít chất giang hồ / chơi chán' đối lập với sức hút mô phỏng đời thực.",
+    "why": "tranh luận",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Câu hỏi nhói lòng ở 01:06 về việc tập gym, tiết kiệm, hẹn hò và có người chủ động nhắn tin nay đã thành 'ảo mộng' dễ khiến người xem tự nhận thấy bản thân trong đó.",
+    "why": "đồng cảm",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Nhắc tới 'research papers' ở 01:12 nhưng cắt lửng video ở 01:35 mà chưa giải thích kết quả nghiên cứu, thôi thúc người xem hỏi phần tiếp theo hoặc bàn luận lý do tâm lý.",
+    "why": "hỏi thêm",
+    "kind": "suy đoán"
+   }
+  ],
+  "save_share": [
+   {
+    "what": "Bối cảnh GTA VI siêu hot kết hợp hình ảnh hài hước 'làm việc nhà và tập gym trong game thay vì ngoài đời' rất hợp gửi cho bạn bè chơi game để trêu nhau.",
+    "why": "gửi bạn bè",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Góc nhìn tâm lý học gọn sắc về việc 'cuộc sống lành mạnh cơ bản trở thành fantasy mới' đáng lưu lại như một nhận định văn hóa sâu sắc.",
+    "why": "kiến thức ngách",
+    "kind": "suy đoán"
+   }
+  ]
+ },
+ "audio": {
+  "speech_pace": "Tốc độ trò chuyện tự nhiên, vừa phải (~145–160 từ/phút); đẩy nhịp dồn dập khi liệt kê loạt hoạt động đời thường (00:54–01:05, 01:25–01:33) và chậm lại rõ rệt khi đặt câu hỏi trọng tâm (01:06–01:11).",
+  "emphasis": [
+   {
+    "t": "00:14",
+    "what": "Giọng streamer hét dài 'Oh no! Ew! No!' tạo cao trào hài ở cuối phần hook."
+   },
+   {
+    "t": "00:46",
+    "what": "Dr. K kéo dài giọng và hơi bật cười ở từ 'fantasy' để nhấn định nghĩa truyền thống của game."
+   },
+   {
+    "t": "00:53",
+    "what": "Nhấn mạnh chữ 'is' và ngắt hơi nhẹ trước khi tung danh sách thói quen lành mạnh."
+   },
+   {
+    "t": "01:06",
+    "what": "Lên giọng rõ ở câu 'is this fantasy now?' rồi chùng xuống ở 'out of reach?'."
+   },
+   {
+    "t": "01:26",
+    "what": "Nhấn đối lập giữa 'actually working out' và 'work out in the game'."
+   }
+  ],
+  "tone": "khác",
+  "music": "Không có nhạc nền xuyên suốt; giữ nguyên thoại khô sạch chuẩn podcast/stream giúp giọng nói và cảm xúc biểu đạt trực tiếp.",
+  "sfx": [
+   {
+    "t": "00:04",
+    "what": "Âm thanh lăn sơn tường gốc từ clip game GTA VI."
+   },
+   {
+    "t": "00:16",
+    "what": "Tiếng cười khúc khích tự nhiên của Dr. K khép lại đoạn reaction."
+   },
+   {
+    "t": "00:40",
+    "what": "Tiếng bật cười ngắn khi Dr. K đọc bình luận chê game 'absolute trash'."
+   },
+   {
+    "t": "01:35",
+    "what": "Tiếng cười bất lực xen vào câu nói cuối trước khi video cắt đột ngột."
+   }
+  ]
+ },
+ "ending": {
+  "type": "khác",
+  "cta": "Không có lời kêu gọi hành động bằng thoại; chỉ hiện nhãn tên miền healthygamer.gg ở góc trên trái từ 01:31 và cắt lửng câu hỏi để kéo người xem sang bản đầy đủ hoặc vào bình luận."
+ },
+ "arc": {
+  "name": "Hiện tượng ngược đời → Lật định nghĩa mộng tưởng",
+  "format_compatibility": "story_metaphor",
+  "skeleton": [
+   "[Một tình huống đang hot hoặc hành vi gây bật cười trái ngược với bản chất quen thuộc của chủ đề + tiêu đề hứa hẹn góc nhìn chuyên gia]",
+   "[Mở lời hỏi ý kiến đám đông và điểm nhanh 3–4 phản ứng trái chiều để dựng bối cảnh tranh luận]",
+   "[Nhắc lại định nghĩa chuẩn mực ban đầu rồi đảo khung bằng một phản ứng cảm xúc thật và chuỗi liệt kê những điều tưởng bình thường nhưng đang trở nên xa xỉ]",
+   "[Đặt một câu hỏi trọng tâm chạm thẳng vào nghịch lý xã hội và đệm tín hiệu có nghiên cứu/phân tích đứng sau]",
+   "[Chồng nhanh loạt bằng chứng tương phản hành vi thay thế thực tại, kèm dấu hiệu thương hiệu và kết lửng bằng câu hỏi châm biếm]"
+  ],
+  "hook_mechanism": "Mượn một tình huống viral phản trực giác (chơi game bạo lực nhưng lo sơn nhà cho người yêu) đặt cạnh uy tín chuyên gia tâm lý để biến tin giải trí thành câu hỏi về đời sống.",
+  "beats": [
+   {
+    "role": "hook",
+    "function": "Mượn clip viral có sẵn nhịp hài hước và phản ứng cảm thán mạnh của streamer để neo người xem mà không cần tự giải thích dài dòng.",
+    "seconds": 17,
+    "transition": "Cắt cứng từ khung reaction chia đôi màn hình sang cận cảnh Dr. K tháo tai nghe và hỏi trực tiếp khán giả."
+   },
+   {
+    "role": "dẫn dắt",
+    "function": "Kéo khán giả vào cuộc trò chuyện bằng hai câu hỏi phân nhóm (người đang chơi vs người chỉ xem) và bật nổi liên tục các bình luận trái chiều trên màn hình.",
+    "seconds": 26,
+    "transition": "Chuyển đột ngột từ khung đọc chat sang chuỗi B-roll game hành động kỳ ảo kèm câu mở khung 'You know, games are supposed to be about fantasy.'"
+   },
+   {
+    "role": "lật kèo",
+    "function": "Đảo ngược kỳ vọng từ không khí vui vẻ sang nỗi chột dạ có thật thông qua cử chỉ vuốt trán và nhịp liệt kê tăng dần các chi tiết đời sống lành mạnh.",
+    "seconds": 20,
+    "transition": "Ngắt chuỗi liệt kê dồn dập bằng một câu hỏi ngắn đánh thẳng vào trọng tâm trên nền cảnh đi siêu thị trong game."
+   },
+   {
+    "role": "câu hỏi",
+    "function": "Chốt luận điểm gây nhói lòng để giữ người xem muốn nghe lời giải thích sâu hơn, đồng thời tăng độ tin cậy bằng chi tiết đã đọc vài nghiên cứu khoa học.",
+    "seconds": 15,
+    "transition": "Chuyển từ cận mặt sang chuỗi cảnh nhân vật trong game làm việc vặt kèm câu đối lập 'but instead of doing the chores in real life...'."
+   },
+   {
+    "role": "kết",
+    "function": "Chồng nhanh 4 cảnh đối chiếu 'làm trong game thay vì làm ngoài đời' tạo cảm giác châm biếm rõ rệt rồi cắt lửng đúng câu hỏi cuối để kích thích bình luận hoặc tìm xem bản đầy đủ.",
+    "seconds": 14,
+    "transition": "Cắt ngang giữa câu kết trên tiếng cười bất lực."
+   }
+  ]
+ },
+ "emotional_arc": {
+  "opening_emotion": "Tò mò, buồn cười nhẹ trước cảnh streamer lo sốt vó chuyện màu sơn tường trong tựa game vốn nổi tiếng hỗn loạn.",
+  "vulnerability_dip": {
+   "t": "00:50",
+   "what": "Dr. K vuốt trán, đổi tông giọng nghiêm túc thừa nhận điều này hơi đáng sợ khi liệt kê những sinh hoạt bình dị (tập luyện, tiết kiệm, hẹn hò, có người nhắn tin) đang trở thành thứ xa xỉ."
+  },
+  "aha_peak": {
+   "t": "01:06",
+   "what": "Cú lật khái niệm 'fantasy': người trẻ không còn vào game để làm siêu nhân thoát đời thật, mà vào game để sống thử một cuộc đời bình thường và tử tế."
+  },
+  "ending_tone": "Châm biếm nhẹ pha chút chột dạ, khép lại bằng tiếng cười bất lực và câu hỏi bỏ lửng."
+ },
+ "angles": {
+  "hi_oneup": {
+   "idea": "Dùng mạch lật định nghĩa 'ảo mộng mới' cho thói quen sống: chuyện nhiều người chăm chỉ bấm hoàn thành nhiệm vụ uống nước, ngủ sớm cho nhân vật ảo trên app quản lý thói quen hoặc xem clip dọn phòng lúc 2 giờ sáng thay vì tự làm ngoài đời; dùng Hiệp và Omi mổ xẻ lý do bộ não chuộng 'cảm giác sống gọn gàng giả lập' hơn thực tế rồi chốt 1 hành động 2 phút cực dễ bắt đầu.",
+   "hook": "Bạn có thấy kỳ không, mình từng thức tới hai giờ sáng chỉ để canh giờ cho nhân vật trong app đi ngủ sớm?",
+   "length_s": 85
+  },
+  "vanhiep_tech": {
+   "idea": "Chuyển thể nghịch lý 'chăm làm việc giả lập hơn việc thật' sang hội chứng 'Productivity Simulator' trong giới lập trình: dev tốn 4 tiếng tinh chỉnh dotfiles, Notion hay dựng agent AI để tự động hóa một tác vụ làm tay chỉ mất 15 phút; bóc tách sơ đồ vòng lặp phần thưởng rõ ràng của việc config so với sự mơ hồ khi ship sản phẩm thật, cắt layer sơ đồ mỗi 3–5 giây.",
+   "hook": "Tại sao dân kỹ thuật thà bỏ 4 tiếng viết script tự động hóa còn hơn tốn 10 phút làm xong việc đó ngay bây giờ?",
+   "length_s": 65
+  }
+ },
+ "craft_transfer": {
+  "metaphor_transfer": "Lấy một định nghĩa ai cũng mặc định đúng ('game là thế giới mộng tưởng để thoát đời thật') rồi đặt sát cạnh loạt sinh hoạt cơ bản nhất (uống protein, gửi tiết kiệm, nhận tin nhắn bất chợt), biến vấn đề tâm lý xã hội trừu tượng thành một cú tương phản dễ chạm ngay lập tức.",
+  "sentence_rhythm": "Kết hợp nhịp kể thong thả với chuỗi liệt kê dồn dập nối liên tiếp bằng 'and... and... and...' (00:54–01:05 và 01:26–01:33) để nén áp lực cảm xúc, rồi chặt phăng bằng câu hỏi 4 từ cực ngắn: 'Is this fantasy now?' (01:06).",
+  "spoken_pivots": [
+   "You know, games are supposed to be about...",
+   "And what's kind of scary about this...",
+   "And I asked myself the question, okay, so now..."
+  ],
+  "pacing_3_5s": "Xoay vòng liên tục giữa cận mặt người nói, cắt nổi từng bình luận chat theo nhịp đọc (00:33–00:44), và đặt người nói đè lên B-roll minh họa đúng từng danh từ vừa phát âm (đánh rồng, hẹn hò, tin nhắn, siêu thị, đẩy tạ) giúp cứ 3–5 giây lại có một tín hiệu thị giác mới.",
+  "audience_pains": [
+   "Cảm giác những điều tưởng rất cơ bản như tập luyện đều, có tiền tiết kiệm, hẹn hò hay có người chủ động nhắn tin ngoài đời thật đang ngày càng khó chạm tới.",
+   "Thói quen chăm chỉ làm những việc lành mạnh trong thế giới ảo (nơi có hướng dẫn và phản hồi rõ ràng) nhưng lại trì hoãn đúng những việc đó ngoài đời thật.",
+   "Sự hụt hẫng khi giải trí không còn mang lại cảm giác tự do mà lại gợi nhớ áp lực việc nhà hằng ngày."
+  ],
+  "localization_vi": {
+   "core_insight_vi": "Ngày xưa người ta chơi game để tạm quên đời thật đi làm siêu anh hùng, còn bây giờ lại vào game chỉ để sống thử một cuộc đời bình thường, lành mạnh và có người hỏi thăm.",
+   "vn_everyday_scene": "Nằm lướt điện thoại khuya trong phòng trọ xem người khác dọn phòng, nấu ăn tươm tất hoặc cày chỉ số sức khỏe cho nhân vật game, trong khi mớ đồ chưa giặt và cái bàn bừa bộn vẫn nằm nguyên trước mặt.",
+   "translationese_traps": [
+    "a break from reality (tránh dịch 'một kỳ nghỉ khỏi thực tế'; nói là 'tạm quên đời thật' hoặc 'xả hơi khỏi áp lực ngoài đời')",
+    "socially intelligent in real time (tránh dịch 'thông minh xã hội theo thời gian thực'; nói là 'tinh tế hẳn lên ngay trên sóng' hoặc 'bỗng biết để ý cảm xúc người khác')",
+    "out of reach (tránh dịch 'ngoài tầm với của bàn tay'; nói là 'quá xa xỉ' hoặc 'khó chạm tới ngoài đời thật')"
+   ]
+  }
+ },
+ "why_it_works": [
+  {
+   "claim": "Dùng xu hướng cực nóng (GTA VI) làm vỏ bọc giải trí để dẫn người xem đi thẳng vào một nỗi đau tâm lý sâu sắc mà không gây cảm giác lên lớp.",
+   "evidence": "00:00–01:11",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Cú chuyển tông cảm xúc có điểm gãy rõ ràng: đi từ cười đùa nhẹ (00:16) qua khảo sát chat (00:33) rồi chùng hẳn xuống bằng cử chỉ vuốt trán (00:50) giúp câu hỏi ở 01:06 nặng ký hơn hẳn.",
+   "evidence": "emotional_arc",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Nhịp dựng hình bám chặt từ khóa nói (word-to-visual sync) và không dùng nhạc nền giúp người xem tập trung hoàn toàn vào lập luận mà không bị tụt chú ý ở đoạn thoại dài.",
+   "evidence": "00:45–01:33",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Kết lửng ngay sau khi hé lộ yếu tố 'research papers' tạo khoảng trống tò mò tự nhiên, đẩy lượt bình luận và nhu cầu tìm xem video gốc.",
+   "evidence": "01:12–01:36",
+   "kind": "suy đoán"
+  }
+ ],
+ "model_note": "Gemini 4 Neon",
+ "apify": {
+  "raw_id": "PlswZxxapn4",
+  "url": "https://www.youtube.com/shorts/PlswZxxapn4",
+  "platform": "youtube",
+  "lang": "en",
+  "role": "global_niche_source",
+  "learn_scope": "idea_and_craft_localize",
+  "format_compatibility": "story_metaphor",
+  "craft_focus": [
+   "tam-ly-tri-hoan",
+   "overthinking",
+   "dopamine-dien-thoai"
+  ],
+  "caption": "Dr. K's Thoughts on GTA VI",
+  "hashtags": [],
+  "author": {
+   "name": "healthygamergg",
+   "fans": 0
+  },
+  "play_count": 487000,
+  "like_count": null,
+  "comment_count": 0,
+  "share_count": 0,
+  "save_count": null,
+  "top_comments": [],
+  "duration_s": null,
+  "create_time": null,
+  "median_views": 32500.0,
+  "outlier_ratio": 14.98,
+  "outlier": 14.98,
+  "views_per_day": null,
+  "engagement_intensity": 0.0,
+  "basis": "views/median_views",
+  "channel_niche": [
+   "tu-duy",
+   "productivity"
+  ],
+  "niche_verified": true,
+  "source": "radar-fetch (yt-dlp)"
+ },
+ "_meta": {
+  "date": "2026-11-28",
+  "video": "PlswZxxapn4.mp4",
+  "cli": "agy 1.5.18",
+  "model": "agy-default",
+  "source": "https://www.youtube.com/shorts/PlswZxxapn4",
+  "arc": "ARC-003",
+  "arc_new": false
+ }
+}

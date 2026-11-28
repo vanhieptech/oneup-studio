@@ -1,0 +1,59 @@
+{
+ "date": "2026-11-28",
+ "ideas": [
+  {
+   "id": "khong-can-lam-hai-long-thien-ha",
+   "title": "Kenh14 28/11 (cs=2): Nghệ thuật quyến rũ của những người không có nhu cầu làm hài lòng thiên hạ. Sách 3.21 (+3.16): không cần đóng vai lạnh lùng — não mình đang phóng đại cảm giác 'ai cũng nhìn', thử từ chối gọn một lời mời không cần viết cả bài văn giải thích",
+   "trend_id": "nghe-thuat-quyen-ru-cua-nhung-nguoi-khong",
+   "bridge_id": "B-hailong-01",
+   "lesson": "3.21 Không ai để ý bạn nhiều như bạn tưởng (hiệu ứng ánh đèn sân khấu / spotlight effect, mức B). Phụ: 3.16 đặt ranh giới, nói không khi không phù hợp. Dẫn chứng trend: bài Kenh14 ngày 28/11/2026 (xuất hiện đồng thời trên kenh14-home và kenh14-doisong) phân tích cảm giác mệt mỏi khi vừa sống vừa tưởng tượng có hội đồng đánh giá xung quanh — bỏ toàn bộ ví dụ người nổi tiếng nước ngoài trong bài.",
+   "angle": "contrarian / empathy",
+   "pattern": "P03 (lật góc nhìn) + P10 (nghịch lý mệt mỏi)",
+   "differentiation": "Mọi người đang nói: khen khí chất lạnh lùng, bất cần của người nổi tiếng không cần chiều lòng ai ([Kenh14 28/11](https://kenh14.vn/nghe-thuat-quyen-ru-cua-nhung-nguoi-khong-co-nhu-cau-lam-hai-long-thien-ha-21526112807494151.chn)). Góc của mình: hông cần đóng vai lạnh lùng (và bỏ hết ví dụ sao) — lý do mình hay gật đầu mọi thứ rồi mệt rã rời là vì mình tưởng cả phòng đang chấm điểm từng câu từ chối của mình (3.21). +1 tối nay: từ chối đúng một lời mời không hợp bằng một câu gọn, lịch sự, không giải thích dài dòng.",
+   "theme": "light",
+   "week": 4,
+   "target": "đăng #20 (3.21, LIGHT) — hook mới 28/11, cạnh B-mongbantot-01",
+   "hook_vi": "Bài báo đang hot hôm nay nói về khí chất của mấy người hông cần làm hài lòng thiên hạ. Mà nói thiệt, nhiều khi mình sợ từ chối hông phải vì hiền, mà vì tưởng ai cũng đang soi mình á.",
+   "moment_vi": "Nhận lời mời đi chơi lúc đã đuối pin, ngồi gõ tin nhắn từ chối hết mười phút, viết tới ba lý do dài ngoằng chỉ vì sợ người ta giận.",
+   "turn_vi": "Hông cần học cách lạnh lùng. Chỉ cần nhớ: người ta bận nghĩ về chuyện của họ hơn là soi câu từ chối của bạn. Một câu gọn, lịch sự là đủ rồi.",
+   "hook_en": "Everyone admires people who don't try to please everyone. Usually we say yes just because we think everyone is watching.",
+   "beats": [
+    {"text": "Bài báo đang hot hôm nay nói về khí chất của mấy người hông cần làm hài lòng thiên hạ. Mà nói thiệt, nhiều khi mình sợ từ chối hông phải vì hiền, mà vì tưởng ai cũng đang soi mình á.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "We say yes because we think everyone is watching.", "background": "grid"},
+    {"text": "Tối thứ Sáu đã hết pin mà có người rủ đi chơi. Mình định từ chối, xong ngồi gõ tới ba lý do dài ngoằng, xóa đi viết lại cả chục phút.", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "Ten minutes typing three excuses to say no.", "background": "room"},
+    {"text": "Trong đầu mình lúc đó giống như có cả một khán đài đang ngồi chấm điểm từng chữ mình gửi vậy đó.", "expression": "sad", "action": "talking", "duration": 6, "caption_en": "Feels like a whole crowd is judging your reply.", "background": "room"},
+    {"text": "Mạng thì hay khuyên: hãy lạnh lùng lên, đừng quan tâm ai nghĩ gì. Nghe ngầu thiệt, mà làm theo thì thấy kỳ kỳ.", "expression": "confused", "action": "talking", "duration": 6, "caption_en": "'Just be cold' sounds cool, feels fake.", "background": "grid"},
+    {"text": "Sách nhắc một chuyện nhẹ hơn nhiều: hiệu ứng ánh đèn sân khấu. Mình luôn tưởng người khác chú ý tới mình kỹ hơn thực tế rất nhiều.", "expression": "neutral", "action": "talking", "duration": 8, "caption_en": "Spotlight effect: nobody watches as closely as we think.", "background": "grid"},
+    {"text": "Thực ra ai cũng đang bận lo việc của họ. Câu từ chối của bạn, người ta đọc xong ba giây là chuyển sang hỏi người kế tiếp rồi.", "expression": "surprised", "action": "talking", "duration": 7, "caption_en": "They read it in three seconds and move on.", "background": "grid"},
+    {"text": "Nên lần tới hông muốn đi hoặc hông nhận thêm việc được, thử nhắn đúng một câu gọn, lịch sự: hôm nay mình bận rồi, hẹn bạn dịp khác nha.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Try one short, polite line. No essay needed.", "background": "desk"},
+    {"text": "Khỏi viết cả bài văn biện minh. Bạn từng tốn bao lâu chỉ để gõ một tin nhắn từ chối? Kể mình nghe với nha.", "expression": "happy", "action": "talking", "duration": 6, "caption_en": "How long do you spend typing a simple no?", "background": "room"}
+   ]
+  },
+  {
+   "id": "terence-tao-toan-hoc-2-0-giai-thich-lai",
+   "title": "VnExpress Số hoá + Google Trends VN 28/11: GS Terence Tao kêu gọi chuyển sang 'toán học 2.0' — chỉ công nhận khi người gửi tự giải thích được thứ AI tạo ra. Sách 23.14: gấp màn hình tóm tắt AI lại, nói ra 3 ý chính bằng lời của mình",
+   "trend_id": "than-dong-terence-tao-keu-goi-chuyen-sang",
+   "bridge_id": "B-toan20-01",
+   "lesson": "23.14 Gấp sách tự kiểm / tự truy xuất (retrieval practice, đăng #25 DARK) — tuân thủ L-087 (dùng ví dụ đọc tài liệu công việc / báo cáo do AI tóm tắt, không lấy môn học phổ thông). Dẫn chứng trend: VnExpress Số hoá 28/11/2026 & Google Trends VN ('terence tao' 500+): GS Terence Tao nhận xét toà soạn tràn ngập bài do AI viết mà tác giả không hiểu mình đang gửi gì, đề xuất chỉ công nhận nếu tự giải thích được trước hội đồng. Caution: nhắc tên GS Terence Tao ở góc học thuật trung tính, không vẽ chân dung người thật, không đưa số liệu khảo sát chưa tự kiểm vào voice.",
+   "angle": "data / contrarian",
+   "pattern": "P03 (lật góc nhìn) + P10 (nghịch lý công việc)",
+   "differentiation": "Mọi người đang nói: AI giải toán siêu đỉnh, sinh viên và giới chuyên môn lo mất nghề ([VnExpress 28/11](https://vnexpress.net/than-dong-terence-tao-keu-goi-chuyen-sang-toan-hoc-2-0-vi-ai-5149544.html)). Góc của mình: câu đáng chú ý nhất của GS Terence Tao không phải AI giỏi cỡ nào, mà là *đừng gửi thứ chính mình không giải thích nổi*. Nhờ AI tóm tắt tài liệu rồi thấy «gọn quá, hiểu rồi» chính là bẫy ảo giác quen mặt — thử gấp màn hình lại và tự nói ra ba ý chính (23.14).",
+   "theme": "dark",
+   "week": 5,
+   "target": "đăng #25 (23.14, DARK) — hook thời sự AI 28/11, cạnh B-nhinquen-01",
+   "hook_vi": "GS Terence Tao vừa cảnh báo: giờ đầy bài nghiên cứu do AI viết mà chính người gửi cũng hông hiểu bên trong nói gì. Nghe xa xôi hả? Mà lần gần nhất bạn nhờ AI tóm tắt tài liệu rồi gửi sếp, bạn có giải thích lại được hông?",
+   "moment_vi": "Dán tài liệu dài hai mươi trang vô AI, đọc bản tóm tắt năm gạch đầu dòng thấy mượt quá trời, tới lúc họp bị hỏi ngược lại thì đứng hình.",
+   "turn_vi": "Đọc thấy mượt hông có nghĩa là não đã hiểu. Gấp màn hình lại ba mươi giây, tự nói lại ba ý chính bằng lời của mình — chỗ nào vấp là chỗ cần đọc lại.",
+   "hook_en": "Terence Tao warned journals are flooded with AI papers authors can't explain. What about the AI summary you just sent your boss?",
+   "beats": [
+    {"text": "GS Terence Tao vừa cảnh báo: giờ đầy bài nghiên cứu do AI viết mà chính người gửi cũng hông hiểu bên trong nói gì.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Terence Tao warns of AI papers authors can't explain.", "background": "grid"},
+    {"text": "Nghe chuyện giới học thuật có vẻ xa xôi hen. Mà lần gần nhất bạn nhờ AI tóm tắt tài liệu rồi gửi đi, bạn có tự giải thích lại được hông?", "expression": "confused", "action": "talking", "duration": 7, "caption_en": "Could you explain the last AI summary you sent?", "background": "desk"},
+    {"text": "Cảnh quen thuộc lắm: dán file hai chục trang vô AI, đọc năm gạch đầu dòng thấy trơn tru quá trời, tưởng mình nắm hết rồi.", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "Five crisp bullets make us feel like we got it.", "background": "desk"},
+    {"text": "Tới lúc vô họp đồng nghiệp hỏi vặn một câu, đầu tự nhiên trống trơn, phải lật lại khung chat kiếm chữ.", "expression": "sad", "action": "talking", "duration": 6, "caption_en": "Then someone asks a follow-up and our mind blanks.", "background": "room"},
+    {"text": "Trong sách gọi đây là bẫy đọc thụ động: nhìn chữ thấy quen và hợp lý làm não nhầm tưởng là mình đã hiểu thật.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Smooth text tricks the brain into feeling fluent.", "background": "grid"},
+    {"text": "GS Tao đề xuất cách kiểm tra rất thẳng: chỉ công nhận khi người làm tự giải thích lại được trước hội đồng.", "expression": "neutral", "action": "talking", "duration": 7, "caption_en": "Tao's test: only count it if you can explain it.", "background": "grid"},
+    {"text": "Mình áp dụng liền cho việc hằng ngày bằng đúng một bước: đọc xong bản tóm tắt AI, gấp màn hình lại ba mươi giây rồi tự nói ra ba ý chính.", "expression": "happy", "action": "talking", "duration": 8, "caption_en": "Close the screen 30s. Say 3 key points aloud.", "background": "desk"},
+    {"text": "Chỗ nào nói bị vấp chính là chỗ não chưa hiểu. Bạn có hay bị tình huống đọc AI thấy dễ hiểu mà hỏi tới lại quên hông?", "expression": "happy", "action": "talking", "duration": 7, "caption_en": "Ever felt an AI summary made sense until asked?", "background": "room"}
+   ]
+  }
+ ]
+}

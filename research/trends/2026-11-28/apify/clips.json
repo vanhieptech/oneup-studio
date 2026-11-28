@@ -1,0 +1,1985 @@
+{
+ "actor": "clockworks/tiktok-scraper",
+ "run_id": null,
+ "item_count": 40,
+ "fields_coverage": {
+  "url": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "caption": {
+   "present": 39,
+   "of": 40,
+   "pct": 97.5
+  },
+  "author": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "play_count": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "like_count": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "share_count": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "comment_count": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "duration_s": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "music": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "hashtags": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "subtitle_or_transcript": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  },
+  "top_comments": {
+   "present": 40,
+   "of": 40,
+   "pct": 100.0
+  }
+ },
+ "clips": [
+  {
+   "url": "https://www.tiktok.com/@thnguyen.y/video/7663776976519384340",
+   "caption": "hy vọng kiên trì học đến những bậc cao hơn để có thể tiếp tục chia sẻ đến mọi người 🥹 \n#TiengTrung #chinese #study #hoctap #fyp ",
+   "author": {
+    "id": "7419559215855354900",
+    "name": "thnguyen.y",
+    "nick": "Thảo Nguyên đây",
+    "profile": "https://www.tiktok.com/@thnguyen.y",
+    "fans": 13900
+   },
+   "play_count": 1700000,
+   "like_count": 112500,
+   "share_count": 8882,
+   "comment_count": 602,
+   "duration_s": 66,
+   "music": {
+    "id": "7462934988850203393",
+    "name": "suara asli",
+    "author": "CapybaraBersaudara",
+    "original": true
+   },
+   "hashtags": [
+    "tiengtrung",
+    "chinese",
+    "study",
+    "hoctap",
+    "fyp",
+    "TiengTrung"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.280 --> 00:00:01.880\ntừ một người không biết gì về tiếng Trung\n\n00:00:01.920 --> 00:00:05.000\nvà đây là cách mình đã tự học để có thể lên được HSK BA\n\n00:00:05.240 --> 00:00:07.240\nHSK BA thì cũng chưa phải là quá Cao đâu\n\n00:00:07.241 --> 00:00:09.561\nnhưng nếu như bạn nào có ý định tự học tiếng Trung\n\n00:00:09.720 --> 00:00:11.240\nthì mọi người có thể tham khảo nhá\n\n00:00:11.560 --> 00:00:13.680\ntoàn bộ quá trình đều làm mình hoàn toàn tự học\n\n00:00:13.840 --> 00:00:15.960\nkhông gia sư cũng như không Ra trung tâm nha mọi người\n\n00:00:16.280 --> 00:00:18.600\nvới H một và H 2 mình tự học hoàn toàn trên\n\n00:00:19.240 --> 00:00:21.200\nvà tất nhiên là hoàn toàn miễn phí\n\n00:00:21.280 --> 00:00:23.720\nthông qua series bài giảng của thầy Giang the Scene\n\n00:00:23.920 --> 00:00:25.840\nmình nghĩ một trong những động lực có thể giúp mình\n\n00:00:25.880 --> 00:00:26.480\ntự học tiếng\n\n00:00:26.481 --> 00:00:28.961\nTrung và kiên trì đến tận bây giờ là nhờ vào cách dạy của\n\n00:00:29.040 --> 00:00:29.840\nthầy mọi người ạ\n\n00:00:29.920 --> 00:00:31.440\nH một và H 2 đều là những kiến\n\n00:00:31.520 --> 00:00:33.720\nthức nền tảng để giúp mọi người nhận biết được mặt chữ\n\n00:00:34.080 --> 00:00:34.880\nnhư cách phát âm\n\n00:00:35.040 --> 00:00:38.000\nvì thế nên tìm được một người dạy có tâm rất rất quan trọng\n\n00:00:38.080 --> 00:00:38.600\nvà mình cảm\n\n00:00:38.601 --> 00:00:41.041\nthấy bản thân mình rất may mắn khi biết được đến series\n\n00:00:41.080 --> 00:00:42.080\ncủa thầy và đã tự học\n\n00:00:42.120 --> 00:00:43.520\nthành công để nhớ được mặt chữ\n\n00:00:43.560 --> 00:00:45.320\ntrong thời gian này mình cũng khá là vất vả\n\n00:00:45.640 --> 00:00:46.640\ncách học của mình là chép\n\n00:00:46.800 --> 00:00:48.360\nthuộc vì thế nên khá tốn thời gian\n\n00:00:48.400 --> 00:00:49.720\nnhưng bù lại thì rất hiệu quả\n\n00:00:49.880 --> 00:00:52.400\nđây là toàn bộ số lượng vỏ ô li mình đã sử dụng\n\n00:00:52.401 --> 00:00:55.161\nchỉ để chép và thuộc số từ vựng H một H 2 đấy mọi người ạ\n\n00:00:55.480 --> 00:00:57.360\nbù lại mình có được một lượng kiến thức nền tảng\n\n00:00:57.440 --> 00:00:59.040\nrất Chi tiết và mình cũng cảm thấy rằng\n\n00:00:59.120 --> 00:01:01.280\ntiếng Trung cũng không quá khó như mình tưởng tượng\n\n00:01:01.400 --> 00:01:03.760\nvà hiện tại thì mình đã và đang học high school BA ở một\n\n00:01:03.840 --> 00:01:04.400\ntrang web Kha\n\n00:01:04.401 --> 00:01:06.641\nvà mình sẽ review Cho mọi người ở video tiếp Theo nhá\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7663776976519384340-vie-VN.vtt"
+    ],
+    "file": "7663776976519384340-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7663776976519384340",
+   "create_time": "2026-07-18T08:08:55.000Z",
+   "is_slideshow": false,
+   "outlier": 122.3,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@b.ch.phng.thi0/video/7703576611345550610",
+   "caption": "có thể một đêm cân cả học kỳ cơ mà \n#dongluc #hocsinh #viral #hoctap #CapCut ",
+   "author": {
+    "id": "7694693834978591751",
+    "name": "b.ch.phng.thi0",
+    "nick": "Bá chủ phòng thi",
+    "profile": "https://www.tiktok.com/@b.ch.phng.thi0",
+    "fans": 3417
+   },
+   "play_count": 204300,
+   "like_count": 35300,
+   "share_count": 8142,
+   "comment_count": 109,
+   "duration_s": 48,
+   "music": {
+    "id": "7674304842512304913",
+    "name": "âm thanh gốc - kasukabe",
+    "author": "El nino",
+    "original": true
+   },
+   "hashtags": [
+    "dongluc",
+    "hocsinh",
+    "viral",
+    "hoctap",
+    "capcut",
+    "CapCut"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "có thể một đêm cân cả học kỳ cơ mà \n#dongluc #hocsinh #viral #hoctap #CapCut ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7703576611345550610",
+   "create_time": "2026-11-02T14:11:49.000Z",
+   "is_slideshow": false,
+   "outlier": 59.79,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@ngocanhh0565/video/7707619983878065429",
+   "caption": "bỏ các môn khác để tập trung 1 môn 😭😭 cái xg điểm thấp tất #viral #vatly #hoctap #xuhuong #studytok ",
+   "author": {
+    "id": "7388844405770339334",
+    "name": "ngocanhh0565",
+    "nick": "na.",
+    "profile": "https://www.tiktok.com/@ngocanhh0565",
+    "fans": 994
+   },
+   "play_count": 216300,
+   "like_count": 33400,
+   "share_count": 9559,
+   "comment_count": 46,
+   "duration_s": 33,
+   "music": {
+    "id": "7524288355287272193",
+    "name": "nhạc nền - nghe bài này đi eim",
+    "author": "nghe bài này đi eim",
+    "original": true
+   },
+   "hashtags": [
+    "viral",
+    "vatly",
+    "hoctap",
+    "xuhuong",
+    "studytok"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:07.400 --> 00:00:08.200\nkhác gì con ruồi\n\n00:00:08.360 --> 00:00:11.120\nngọn lửa của sinh mệnh đốt gần hết thời gian của con rồi\n\n00:00:11.880 --> 00:00:13.440\nít nhất là với người thân thương\n\n00:00:13.480 --> 00:00:14.840\ncon không phải là con người khác\n\n00:00:15.040 --> 00:00:17.560\nthưa chúa đều con người rap khác những gì mà con người hát\n\n00:00:17.720 --> 00:00:20.320\nnhững gì con người bảo hay và vỗ Tay con người tát\n\n00:00:20.321 --> 00:00:23.041\nnhưng con biết trong thâm tâm họ không phải là con người ác\n\n00:00:24.400 --> 00:00:26.440\ncon thì cũng chỉ là một con người mà\n\n00:00:26.520 --> 00:00:29.200\nkhông muốn chúng nó nhìn con với ánh mắt của con người nhà\n\n00:00:29.520 --> 00:00:32.880\nmất đi vài người bạn đủ để khiến con nhận Ra ơ\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7707619983878065429-vie-VN.vtt"
+    ],
+    "file": "7707619983878065429-vie-VN.vtt"
+   },
+   "top_comments": [
+    {
+     "text": "trình bày tự luận tốt ha",
+     "likes": 58,
+     "author": "langtucodon0504"
+    },
+    {
+     "text": "cố lên em",
+     "likes": 6,
+     "author": "anhlathangtoidayem"
+    },
+    {
+     "text": "",
+     "likes": 5,
+     "author": "condimemay1912"
+    },
+    {
+     "text": "amen",
+     "likes": 3,
+     "author": "cn.iuu585"
+    },
+    {
+     "text": "Lý 12 à chị",
+     "likes": 2,
+     "author": "buiminhhieu105"
+    },
+    {
+     "text": "học đêna cái phương trình áp suất thì học bản chất nha bạn,vì đề thi nó biến đổi rất nhiều đừng học thuộc mà hiểu 1 công thức kia là làm được các câu hỏi khác rồi,chương 2 khá nặng nhm nhìn chung dễ hơn chương 3 nên đẩy cố gắng nhanh mà qua chương 3 nha bạn,chúc bạn học tốt",
+     "likes": 2,
+     "author": "dvq183"
+    },
+    {
+     "text": "cay",
+     "likes": 2,
+     "author": "ngc.ct.tng365"
+    },
+    {
+     "text": "chữ siu siu đẹp lun^^",
+     "likes": 1,
+     "author": ".trn.h.gia.hn"
+    },
+    {
+     "text": "choo tui xin idea đc khomm ạa",
+     "likes": 1,
+     "author": "luv_ce_"
+    },
+    {
+     "text": "lại viral ròi",
+     "likes": 1,
+     "author": "vtienhochust_07"
+    },
+    {
+     "text": "bạn ui mình xin cap ạ💖💖💖",
+     "likes": 1,
+     "author": "tuy.6.nhm.c.ci.0"
+    },
+    {
+     "text": "t lười",
+     "likes": 1,
+     "author": "hknah_nad"
+    },
+    {
+     "text": "",
+     "likes": 1,
+     "author": "bunbof_08_06"
+    },
+    {
+     "text": "giống từng cái vt tắt",
+     "likes": 1,
+     "author": "phwnqc"
+    },
+    {
+     "text": "ko 10 thì 9 thôi",
+     "likes": 1,
+     "author": "cam41382"
+    },
+    {
+     "text": "tui muốn thi hsg lý nm tui thấy tui yếu kém q 😭😭😭",
+     "likes": 0,
+     "author": "i4.ytq"
+    },
+    {
+     "text": "kiểu gì cx phải thử",
+     "likes": 0,
+     "author": "showbiz124h"
+    },
+    {
+     "text": "4đ rồi 😭😭",
+     "likes": 0,
+     "author": "truonggiamy2"
+    },
+    {
+     "text": "để í vd ms mìn vs 😭",
+     "likes": 0,
+     "author": "iw_meomeo_.06"
+    },
+    {
+     "text": "hộ + bl vs ạ🙏🙏🥺chéo ạ",
+     "likes": 0,
+     "author": "okiiinho"
+    }
+   ],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7707619983878065429",
+   "create_time": "2026-11-13T11:42:09.000Z",
+   "is_slideshow": false,
+   "outlier": 217.61,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@parentlab3/video/7684183085755190548",
+   "caption": "Học mãi không vào, thử quy tắc “3 lần nhớ” này #studytips #hoctap #nuoiconkhoahoc #parentlab #AI ",
+   "author": {
+    "id": "7507086682530661394",
+    "name": "parentlab3",
+    "nick": "ParentLab",
+    "profile": "https://www.tiktok.com/@parentlab3",
+    "fans": 36100
+   },
+   "play_count": 502700,
+   "like_count": 49000,
+   "share_count": 8663,
+   "comment_count": 107,
+   "duration_s": 49,
+   "music": {
+    "id": "7684183203821947655",
+    "name": "âm thanh gốc - ParentLab",
+    "author": "ParentLab",
+    "original": true
+   },
+   "hashtags": [
+    "studytips",
+    "hoctap",
+    "nuoiconkhoahoc",
+    "parentlab",
+    "ai",
+    "AI"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:02.440\nhọc mãi không vào thử quy tắc BA lần nhớ này\n\n00:00:02.960 --> 00:00:04.760\ncó những kiến thức tưởng rằng đã học rất kỹ\n\n00:00:04.761 --> 00:00:06.081\nnhưng chỉ vài ngày sau lại quên\n\n00:00:06.240 --> 00:00:07.720\nkhông hẳn vì khả năng ghi nhớ kém\n\n00:00:07.721 --> 00:00:10.401\nmà có thể vì cách học chưa tạo đủ cơ hội để não bộ ghi nhớ\n\n00:00:11.040 --> 00:00:12.200\nlần một học để hiểu\n\n00:00:12.680 --> 00:00:13.640\nđừng vội cố học thuộc\n\n00:00:13.720 --> 00:00:16.160\nhãy tập trung hiểu bản chất công thức này dùng để làm gì\n\n00:00:16.240 --> 00:00:17.800\nvì SAO lại có cách làm như vậy\n\n00:00:18.320 --> 00:00:19.600\nlần 2 học để nhớ\n\n00:00:20.120 --> 00:00:20.920\nsau khi học xong\n\n00:00:21.160 --> 00:00:23.640\nthử gấp sách lại và tự nói hoặc viết lại những gì vừa học\n\n00:00:23.760 --> 00:00:25.840\nchỗ nào không nhớ được chính là phần cần xem lại\n\n00:00:26.440 --> 00:00:27.840\nlần BA học để vận dụng\n\n00:00:28.360 --> 00:00:30.160\nđừng chỉ làm lại đúng một dạng bài vừa học\n\n00:00:30.280 --> 00:00:32.040\nhãy thử áp dụng kiến thức vào một bài khác\n\n00:00:32.041 --> 00:00:33.801\nkhó hơn một chút hoặc được biến đổi cách hỏi\n\n00:00:34.080 --> 00:00:36.360\nhọc hiệu quả không nằm ở việc ngồi trước bàn học thật lâu\n\n00:00:36.361 --> 00:00:37.681\nmà nằm ở việc kiến thức được hiểu\n\n00:00:37.880 --> 00:00:38.880\nnhớ vận dụng như thế nào\n\n00:00:39.240 --> 00:00:41.200\nthay vì học một lần thật nhiều rồi nhanh chóng quên\n\n00:00:41.400 --> 00:00:42.200\nhãy học vừa đủ\n\n00:00:42.280 --> 00:00:44.520\nôn lại đúng lúc và liên tục đưa kiến thức vào bài tập\n\n00:00:44.800 --> 00:00:45.200\nbởi mục\n\n00:00:45.201 --> 00:00:47.281\ntiêu cuối cùng của việc học không phải là đã học bao nhiêu\n\n00:00:47.282 --> 00:00:49.561\nmà là có thể sử dụng được bao nhiêu trong những gì đã học\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7684183085755190548-vie-VN.vtt"
+    ],
+    "file": "7684183085755190548-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7684183085755190548",
+   "create_time": "2026-09-11T07:55:01.000Z",
+   "is_slideshow": false,
+   "outlier": 13.93,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@_falling.seeds_/video/7074069721720704299",
+   "caption": "cách tập trung 100% trong học tập #xuhuong #fallingseeds #ellastudy #studyvlog #studytips #hoccungtiktok #learnontiktok #fyp #foryou",
+   "author": {
+    "id": "6970634041486427142",
+    "name": "_falling.seeds_",
+    "nick": "Hạt Rơi, PharmD 💊",
+    "profile": "https://www.tiktok.com/@_falling.seeds_",
+    "fans": 177600
+   },
+   "play_count": 1300000,
+   "like_count": 142200,
+   "share_count": 610,
+   "comment_count": 270,
+   "duration_s": 59,
+   "music": {
+    "id": "7074069697095912235",
+    "name": "nhạc nền - Hạt",
+    "author": "Hạt Rơi, PharmD 💊",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuong",
+    "fallingseeds",
+    "ellastudy",
+    "studyvlog",
+    "studytips",
+    "hoccungtiktok",
+    "learnontiktok",
+    "fyp",
+    "foryou"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "cách tập trung 100% trong học tập #xuhuong #fallingseeds #ellastudy #studyvlog #studytips #hoccungtiktok #learnontiktok #fyp #foryou",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7074069721720704299",
+   "create_time": "2022-03-12T04:43:27.000Z",
+   "is_slideshow": false,
+   "outlier": 7.32,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@quang.xaydung/video/7678876606143745298",
+   "caption": "Học đi em #mindset #graduation #phattrienbanthan #dongluchoctap #studymotivation ",
+   "author": {
+    "id": "7673819648000984065",
+    "name": "quang.xaydung",
+    "nick": "Quang Thích Xây",
+    "profile": "https://www.tiktok.com/@quang.xaydung",
+    "fans": 27100
+   },
+   "play_count": 1800000,
+   "like_count": 173400,
+   "share_count": 21600,
+   "comment_count": 1003,
+   "duration_s": 18,
+   "music": {
+    "id": "7578866654408624903",
+    "name": "nhạc nền - gianganhwithlove",
+    "author": "gianganhwithlove",
+    "original": true
+   },
+   "hashtags": [
+    "mindset",
+    "graduation",
+    "phattrienbanthan",
+    "dongluchoctap",
+    "studymotivation"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "Học đi em #mindset #graduation #phattrienbanthan #dongluchoctap #studymotivation ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7678876606143745298",
+   "create_time": "2026-08-28T00:43:15.000Z",
+   "is_slideshow": false,
+   "outlier": 66.42,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@b.ch.phng.thi0/video/7709104431081475346",
+   "caption": "bảng điểm của m thế nào r?? \n#dongluc #hocsinh #hoctap #xuhuongtiktok #tienganh ",
+   "author": {
+    "id": "7694693834978591751",
+    "name": "b.ch.phng.thi0",
+    "nick": "Bá chủ phòng thi",
+    "profile": "https://www.tiktok.com/@b.ch.phng.thi0",
+    "fans": 3417
+   },
+   "play_count": 158800,
+   "like_count": 28500,
+   "share_count": 4267,
+   "comment_count": 371,
+   "duration_s": 14,
+   "music": {
+    "id": "7597457813341801236",
+    "name": "nhạc nền - _hoàng ngân",
+    "author": "😭",
+    "original": true
+   },
+   "hashtags": [
+    "dongluc",
+    "hocsinh",
+    "hoctap",
+    "xuhuongtiktok",
+    "tienganh"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "bảng điểm của m thế nào r?? \n#dongluc #hocsinh #hoctap #xuhuongtiktok #tienganh ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7709104431081475346",
+   "create_time": "2026-11-17T11:42:37.000Z",
+   "is_slideshow": false,
+   "outlier": 46.47,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@never_give_up_2701/video/7707322538669395220",
+   "caption": "12/11/2026: 📚 #studywithme #study #hoccungNQChien #hoctap  ",
+   "author": {
+    "id": "6639269499366768642",
+    "name": "never_give_up_2701",
+    "nick": "Nguyễn Quang Chiến",
+    "profile": "https://www.tiktok.com/@never_give_up_2701",
+    "fans": 2058
+   },
+   "play_count": 30500,
+   "like_count": 969,
+   "share_count": 371,
+   "comment_count": 22,
+   "duration_s": 35,
+   "music": {
+    "id": "7425350342189189905",
+    "name": "BẦU TRỜI MỚI.DT REMIX",
+    "author": "Đức Tư Remix",
+    "original": true
+   },
+   "hashtags": [
+    "studywithme",
+    "study",
+    "hoccungnqchien",
+    "hoctap",
+    "hoccungNQChien"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "12/11/2026: 📚 #studywithme #study #hoccungNQChien #hoctap  ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7707322538669395220",
+   "create_time": "2026-11-12T16:27:52.000Z",
+   "is_slideshow": false,
+   "outlier": 14.82,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@carter.selfdev/video/7701501687999270164",
+   "caption": "Bài Số 30: “Để ngày mai rồi tính?” ⏳\nĐiều đáng sợ nhất của trì hoãn không phải là việc chưa xong hôm nay, mà là bạn dần quen với cảm giác không hành động. \n#trihoan #batdauhomnay #dongluc #tuduy #phattrienbanthan ",
+   "author": {
+    "id": "7553510497937572865",
+    "name": "carter.selfdev",
+    "nick": "AI & SelfDev",
+    "profile": "https://www.tiktok.com/@carter.selfdev",
+    "fans": 50300
+   },
+   "play_count": 474800,
+   "like_count": 43600,
+   "share_count": 19600,
+   "comment_count": 276,
+   "duration_s": 108,
+   "music": {
+    "id": "7701501797567564552",
+    "name": "âm thanh gốc - AI & SelfDev",
+    "author": "AI & SelfDev",
+    "original": true
+   },
+   "hashtags": [
+    "trihoan",
+    "batdauhomnay",
+    "dongluc",
+    "tuduy",
+    "phattrienbanthan"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.360 --> 00:00:01.440\nđể ngày mai rồi tính\n\n00:00:01.680 --> 00:00:02.720\nđể ngày mai rồi tính\n\n00:00:02.721 --> 00:00:04.361\ncó lẽ là một trong những câu nói\n\n00:00:04.400 --> 00:00:06.000\nquen thuộc nhất mà chúng ta dùng\n\n00:00:06.120 --> 00:00:07.800\nđể trì hoãn cuộc đời mình\n\n00:00:08.040 --> 00:00:10.120\nhôm nay bạn định đọc vài trang sách\n\n00:00:10.121 --> 00:00:12.401\nnhưng lại nghĩ ngày mai đọc cũng được\n\n00:00:12.480 --> 00:00:13.520\nbạn muốn tập thể dục\n\n00:00:13.640 --> 00:00:14.720\nhọc một kỹ năng mới\n\n00:00:14.840 --> 00:00:17.480\nhay bắt đầu thực hiện một kế hoạch đã ấp ủ từ lâu\n\n00:00:17.640 --> 00:00:20.120\nnhưng rồi tự nhủ rằng mình vẫn còn thời gian\n\n00:00:20.400 --> 00:00:22.600\nthế là một ngày trôi qua rồi một tuần\n\n00:00:22.800 --> 00:00:24.400\nmột tháng thậm chí vài năm\n\n00:00:24.640 --> 00:00:26.000\ntrong khi những điều bạn muốn làm\n\n00:00:26.040 --> 00:00:27.440\nvẫn nằm nguyên trong danh sách\n\n00:00:27.520 --> 00:00:29.960\ndự định điều đáng sợ nhất của sự trì hoãn\n\n00:00:30.200 --> 00:00:32.320\nkhông phải là những việc bạn chưa hoàn thành hôm nay\n\n00:00:32.440 --> 00:00:35.440\nmà là việc bạn dần quen với cảm giác không hành động\n\n00:00:35.600 --> 00:00:38.640\nmỗi lần trì hoãn bạn đều có một lý do nghe rất hợp lý\n\n00:00:38.800 --> 00:00:41.000\nbạn mệt bạn bận bạn chưa sẵn sàng\n\n00:00:41.200 --> 00:00:43.120\nhoặc bạn muốn đợi một thời điểm tốt hơn\n\n00:00:43.240 --> 00:00:45.720\nnhưng sự thật là cuộc sống hiếm khi Cho chúng ta\n\n00:00:46.080 --> 00:00:47.080\nmột thời điểm hoàn hảo\n\n00:00:47.280 --> 00:00:49.040\nnếu cứ chờ đến khi có đủ động lực\n\n00:00:49.080 --> 00:00:52.480\nđủ thời gian và đủ tự tin có thể bạn sẽ phải chờ rất lâu\n\n00:00:52.680 --> 00:00:55.400\nhãy thử tưởng tượng một người muốn cải thiện sức khỏe\n\n00:00:55.600 --> 00:00:58.960\nngười ấy không cần ngay lập tức chạy 5km mỗi ngày\n\n00:00:59.240 --> 00:01:01.280\nhọ chỉ cần bắt đầu bằng 10 phút đi bộ\n\n00:01:01.480 --> 00:01:02.760\nmột người muốn học ngoại ngữ\n\n00:01:02.800 --> 00:01:05.120\ncũng không cần học hàng trăm từ trong một ngày\n\n00:01:05.280 --> 00:01:07.240\nhọ có thể bắt đầu bằng năm từ mới\n\n00:01:07.480 --> 00:01:09.640\nnhững hành động nhỏ có vẻ không đáng kể\n\n00:01:09.800 --> 00:01:11.160\nnhưng khi được lặp lại mỗi ngày\n\n00:01:11.360 --> 00:01:13.080\nchúng sẽ tạo nên sự khác biệt lớn\n\n00:01:13.240 --> 00:01:15.560\nbạn không cần phải hoàn thành mọi thứ ngay hôm nay\n\n00:01:15.720 --> 00:01:16.400\nnhưng hãy\n\n00:01:16.401 --> 00:01:19.641\nngừng dùng ngày mai làm cái cớ để không bắt đầu hôm nay\n\n00:01:19.880 --> 00:01:22.000\nnếu một việc quan trọng chỉ mất 10 phút\n\n00:01:22.120 --> 00:01:23.520\nhãy dành 10 phút Cho nó\n\n00:01:23.760 --> 00:01:25.920\nnếu mục tiêu quá lớn hãy chia nhỏ nó Ra\n\n00:01:26.080 --> 00:01:28.080\nđừng đợi đến khi có động lực mới hành động\n\n00:01:28.200 --> 00:01:31.360\nbởi đôi khi chính hành động mới là thứ tạo Ra động lực\n\n00:01:31.560 --> 00:01:34.600\nthời gian vẫn sẽ trôi qua dù bạn có bắt đầu hay không\n\n00:01:34.760 --> 00:01:37.720\nvậy nên lần tới khi bạn định nói để ngày mai rồi tính\n\n00:01:37.920 --> 00:01:39.520\nhãy tự hỏi mình một câu\n\n00:01:39.680 --> 00:01:41.120\nnếu ngày nào cũng để ngày mai\n\n00:01:41.360 --> 00:01:43.640\nthì đến bao giờ cuộc đời mình mới thật sự thay đổi\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7701501687999270164-vie-VN.vtt"
+    ],
+    "file": "7701501687999270164-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7701501687999270164",
+   "create_time": "2026-10-28T00:00:11.000Z",
+   "is_slideshow": false,
+   "outlier": 9.44,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@zitekbox/video/7691182695744851206",
+   "caption": "Trị tật trì hoãn chỉ với 5 phút: Hiệu ứng cầu trượt #tamlyhoc #hieuungcautruot #trihoan #kienthucthuvi #zitek ",
+   "author": {
+    "id": "7690572657699390470",
+    "name": "zitekbox",
+    "nick": "Zitek bổ ích",
+    "profile": "https://www.tiktok.com/@zitekbox",
+    "fans": 64000
+   },
+   "play_count": 32500,
+   "like_count": 2501,
+   "share_count": 369,
+   "comment_count": 18,
+   "duration_s": 197,
+   "music": {
+    "id": "7673934389286094882",
+    "name": "Briar Drift",
+    "author": "Mildred The Haze",
+    "original": false
+   },
+   "hashtags": [
+    "tamlyhoc",
+    "hieuungcautruot",
+    "trihoan",
+    "kienthucthuvi",
+    "zitek"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:01.440\nhôm nay mình sẽ nói về\n\n00:00:03.800 --> 00:00:04.800\nhiệu ứng cầu truyện\n\n00:00:05.560 --> 00:00:07.320\nbạn có thấy mình hay chỉ hoãn không\n\n00:00:07.720 --> 00:00:09.200\nrõ ràng việc ngay trước mắt\n\n00:00:09.240 --> 00:00:10.400\nlòng sốt như lửa đốt\n\n00:00:10.560 --> 00:00:12.680\nnhưng vẫn mải mê lướt mạng suốt mấy tiếng\n\n00:00:12.880 --> 00:00:14.080\nthừa biết sắp muộn rồi\n\n00:00:14.240 --> 00:00:16.840\nnhưng bạn luôn tìm đủ lý do để Xin thêm năm phút\n\n00:00:17.240 --> 00:00:19.720\nrồi lại cuống cuồng chạy việc trong lo âu và tự trách\n\n00:00:19.920 --> 00:00:22.640\nđa số đều nghĩ do mình lười hay thiếu ý chí\n\n00:00:22.840 --> 00:00:24.760\nnhưng sự thật hoàn toàn không phải vậy\n\n00:00:25.040 --> 00:00:25.680\ntrì hoãn nặng\n\n00:00:25.681 --> 00:00:28.201\nthường chỉ vì bạn chưa tìm được cách tháo gỡ phù hợp\n\n00:00:28.400 --> 00:00:31.200\nvà hiệu ứng cầu triệt chính là lời giải tuyệt vời nhất\n\n00:00:31.440 --> 00:00:32.720\nvậy hiệu ứng này là gì\n\n00:00:33.200 --> 00:00:35.520\nchúng ta thường thấy nhiều việc một khi đã bắt đầu\n\n00:00:35.640 --> 00:00:36.920\nthì sẽ tự nhiên làm tiếp\n\n00:00:37.200 --> 00:00:39.200\nkhó nhất luôn là khoảnh khắc mở màn\n\n00:00:39.520 --> 00:00:42.320\nchỉ cần bạn hạ lực cản ban đầu xuống mức tối thiểu\n\n00:00:42.520 --> 00:00:43.720\nđể bản thân trượt vào\n\n00:00:43.760 --> 00:00:46.040\ncác hành động sau đó sẽ Lao đi như trượt cầu\n\n00:00:46.120 --> 00:00:47.520\ntrượt không dừng lại được\n\n00:00:47.800 --> 00:00:49.160\nđó là hiệu ứng cầu truyền\n\n00:00:49.360 --> 00:00:50.680\nnhiều nhà tâm lý nhận thấy\n\n00:00:50.800 --> 00:00:53.520\nnão bộ tốn cực kỳ nhiều năng lượng Cho việc bắt đầu\n\n00:00:53.880 --> 00:00:55.520\nnhưng một khi đã vào cuồng rồi\n\n00:00:55.560 --> 00:00:56.800\nnăng lượng cần để duy trì\n\n00:00:56.880 --> 00:00:58.520\ntrạng thái đó lại giảm đi rất mạnh\n\n00:00:58.840 --> 00:01:01.400\nchẳng hạn khi phải viết một bài dài 2.000 chữ\n\n00:01:01.640 --> 00:01:04.880\nđừng vừa ngồi vào bàn đã ép mình phải xong trọn vẹn hôm nay\n\n00:01:05.080 --> 00:01:06.080\nmục tiêu quá lớn\n\n00:01:06.081 --> 00:01:07.881\nsẽ khiến não chùn bước Theo bản năng\n\n00:01:08.240 --> 00:01:08.920\nthay vào đó\n\n00:01:08.921 --> 00:01:12.361\nhãy đổi thành giờ chỉ đặt kế tiêu đề hoặc viết đúng BA câu\n\n00:01:12.760 --> 00:01:14.280\nhay ngồi xuống viết trong năm phút\n\n00:01:14.520 --> 00:01:16.120\nkhi nhiệm vụ được chia đủ nhỏ\n\n00:01:16.280 --> 00:01:18.960\nnhỏ tới mức chẳng tốn chút ý chí nào để khởi động\n\n00:01:19.160 --> 00:01:20.520\nbạn sẽ rất dễ bước tiếp\n\n00:01:21.000 --> 00:01:23.960\nđiều kỳ diệu là ban đầu bạn chỉ định viết năm phút\n\n00:01:24.120 --> 00:01:27.080\nnhưng viết xong đoạn một lại tiện Tay gõ luôn đoạn 2\n\n00:01:27.440 --> 00:01:28.920\ngiống như định lật 2 trang sách\n\n00:01:29.080 --> 00:01:31.240\nnhưng khi đã cuốn vào lại đọc liền 20 trang\n\n00:01:31.680 --> 00:01:33.760\nđó chính là cách hiệu ứng cầu trượt vận hành\n\n00:01:33.920 --> 00:01:37.240\ncứ để bản thân trượt vào trước rồi quán tính sẽ kéo bạn đi\n\n00:01:37.560 --> 00:01:38.480\nlấy ví dụ khác\n\n00:01:38.560 --> 00:01:40.800\nrất nhiều người hay trì hoãn việc tập thể dục\n\n00:01:41.080 --> 00:01:43.320\nhễ nghĩ tới cảnh phải thay đồ xỏ giày\n\n00:01:43.640 --> 00:01:45.840\nrồi Ra ngoài đổ mồ hôi suốt 40 phút\n\n00:01:45.841 --> 00:01:47.401\nlà tâm lý đã bắt đầu phản kháng\n\n00:01:47.600 --> 00:01:48.520\nnghĩ thôi đã mệt\n\n00:01:48.880 --> 00:01:50.720\nnhững lúc này việc tự trách mình\n\n00:01:50.721 --> 00:01:53.161\nlười biếng hay thiếu kiên trì chẳng có ích gì\n\n00:01:53.560 --> 00:01:55.120\nhãy áp dụng hiệu ứng cầu trượt\n\n00:01:55.320 --> 00:01:57.160\nchỉ cần xỏ giày đi bộ năm phút\n\n00:01:57.480 --> 00:01:59.920\nsquat đúng năm cái hoặc giãn cơ BA phút\n\n00:02:00.160 --> 00:02:03.240\nđộng tác vừa bắt đầu cả người sẽ tự khắc tỉnh táo\n\n00:02:03.520 --> 00:02:05.360\nsự kháng cự sẽ tan biến rất nhanh\n\n00:02:05.720 --> 00:02:07.920\nthứ giữ chân bạn chưa từng là việc tập luyện\n\n00:02:08.000 --> 00:02:10.120\nmà là rào cản tâm lý trước lúc bắt đầu\n\n00:02:10.320 --> 00:02:11.080\ncàng thiết kế\n\n00:02:11.081 --> 00:02:12.241\nbước mở đầu đơn giản\n\n00:02:12.440 --> 00:02:15.280\ndễ dàng và không áp lực bạn càng bớt trì hoãn\n\n00:02:15.480 --> 00:02:18.120\nnhưng hiệu ứng cầu trượt không chỉ dừng ở những mẹo vặt\n\n00:02:18.280 --> 00:02:21.520\nnó còn một tác dụng cực lớn đủ để thay đổi cả cuộc đời\n\n00:02:22.000 --> 00:02:25.000\nđó là nó giúp bạn hàn gắn lại với chính bản thân\n\n00:02:25.280 --> 00:02:28.000\nđiều đáng sợ nhất của chỉ hoãn không chỉ là lỡ việc\n\n00:02:28.200 --> 00:02:32.200\nmà là nó liên tục bào mòn sự tự tôn cứ sau mỗi lần chỉ hoãn\n\n00:02:32.440 --> 00:02:34.040\nbạn sẽ thấy mình thật kém cỏi\n\n00:02:34.160 --> 00:02:36.080\nvô dụng rồi dần mất hết niềm tin\n\n00:02:36.360 --> 00:02:38.400\nnhưng khi biết dùng cầu trượt để hành động\n\n00:02:38.480 --> 00:02:40.800\nbạn sẽ thấy mình chẳng hề tệ như đã nghĩ\n\n00:02:41.400 --> 00:02:43.840\nrằng mọi khó khăn bản thân đều có thể vượt qua\n\n00:02:44.240 --> 00:02:46.760\ntừ đó bạn xây dựng lại niềm tin vào chính mình\n\n00:02:47.040 --> 00:02:49.080\nthứ còn quý hơn cả năng suất nhất thời\n\n00:02:49.400 --> 00:02:52.040\nta thường ngỡ muốn thay đổi phải hạ quyết tâm thật lớn\n\n00:02:52.360 --> 00:02:55.560\nnhưng thực Ra sự thay đổi chỉ cần một khởi đầu rất nhỏ\n\n00:02:55.800 --> 00:02:57.920\nnhỏ đến mức chẳng cần gồng mình gắng gượng\n\n00:02:58.240 --> 00:03:01.160\nthứ giúp ta tiến bộ không phải những lời thể đao to búa lớn\n\n00:03:02.040 --> 00:03:04.000\nmà là khoảnh khắc tưởng chừng rất nhỏ nhặt\n\n00:03:04.120 --> 00:03:06.200\nnhưng đủ sức kéo bạn bắt Tay vào làm\n\n00:03:06.560 --> 00:03:09.640\nhãy cứ bước một bước đầu tiên thật nhẹ trượt êm vào buồng\n\n00:03:09.920 --> 00:03:11.120\nmột khi đã xuất phát\n\n00:03:11.280 --> 00:03:14.200\nbạn sẽ thấy con đường phía trước vốn dĩ chẳng hề khó khăn\n\n00:03:14.280 --> 00:03:15.800\nnhư những gì bạn từng tưởng tượng\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7691182695744851206-vie-VN.vtt"
+    ],
+    "file": "7691182695744851206-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7691182695744851206",
+   "create_time": "2026-09-30T04:37:06.000Z",
+   "is_slideshow": false,
+   "outlier": 0.51,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@goimimindset.com/video/7678243434066496776",
+   "caption": "#trihoan #dopamine #brainrot #learnontiktok #sachhay ",
+   "author": {
+    "id": "7661849294744781844",
+    "name": "goimimindset.com",
+    "nick": "Gói Mì Mindset",
+    "profile": "https://www.tiktok.com/@goimimindset.com",
+    "fans": 2178
+   },
+   "play_count": 147700,
+   "like_count": 3231,
+   "share_count": 142,
+   "comment_count": 34,
+   "duration_s": 76,
+   "music": {
+    "id": "6925816798772201473",
+    "name": "Healing piano ballad(959539)",
+    "author": "Heaven's Bell",
+    "original": false
+   },
+   "hashtags": [
+    "trihoan",
+    "dopamine",
+    "brainrot",
+    "learnontiktok",
+    "sachhay"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:01.480\ncó cách nào hết tình trạng này không\n\n00:00:01.481 --> 00:00:02.961\nmọi người không muốn làm gì cả\n\n00:00:03.360 --> 00:00:06.400\nchỉ nằm và lướt điện thoại ngủ rất nhiều nhưng vẫn thấy mệt\n\n00:00:06.680 --> 00:00:08.280\nlười học đến mức biết là quan trọng\n\n00:00:08.520 --> 00:00:09.680\nnhưng vẫn không có động lực\n\n00:00:10.000 --> 00:00:12.760\nmọi thứ cứ chỉ hoãn hết lần này đến lần khác thế chào cậu\n\n00:00:13.000 --> 00:00:14.600\nmình cũng đang trải qua cảm giác này\n\n00:00:14.800 --> 00:00:17.560\ná khó chịu dã man ý có phải là ở nhà nhiều quá\n\n00:00:17.760 --> 00:00:19.400\nset up một đống thứ trong đầu rằng\n\n00:00:19.600 --> 00:00:21.120\nsẽ làm việc này việc Kia đúng không\n\n00:00:21.200 --> 00:00:22.600\nvài bạn khuyên là bỏ điện thoại\n\n00:00:22.800 --> 00:00:25.680\nbỏ mạng xã hội nhưng đang đi làm này nọ bỏ không được\n\n00:00:26.080 --> 00:00:29.280\nbỏ khỏi Tay là trong tâm thế có task đến mà không đọc sớm ý\n\n00:00:29.840 --> 00:00:31.600\nthật sự thấy bản thân đang chỉ vô cùng\n\n00:00:31.800 --> 00:00:33.520\n2 nhìn những dòng comment đó\n\n00:00:33.680 --> 00:00:35.360\nbạn có thấy hình ảnh của chính mình không\n\n00:00:35.480 --> 00:00:36.920\ntối nào cũng nằm gục xuống giường\n\n00:00:37.400 --> 00:00:39.040\ndán mắt vào điện thoại hàng giờ liền\n\n00:00:39.280 --> 00:00:42.040\ndù biết càng lướt càng thấy mệt mỏi rồi tự rối lòng\n\n00:00:42.041 --> 00:00:42.921\nđó là thư giãn\n\n00:00:43.040 --> 00:00:46.000\nlướt mạng xã hội liên tục mang lại sự thỏa mãn chốc lát\n\n00:00:46.280 --> 00:00:47.560\nnhưng lại khiến bạn thối não\n\n00:00:47.720 --> 00:00:48.520\nlười suy nghĩ\n\n00:00:48.840 --> 00:00:51.160\nmất khả năng tập trung và luôn tìm cách chỉ hoãn\n\n00:00:51.440 --> 00:00:54.280\nlướt thêm năm phút nữa thôi chờ 6 rưỡi rồi đi tắm\n\n00:00:54.320 --> 00:00:55.360\nnếu không dừng lại ngay\n\n00:00:55.600 --> 00:00:57.160\ncái giá phải trả sẽ vô cùng đắt\n\n00:00:57.440 --> 00:00:59.920\nkhông được thăng tiến do thiếu chiều sâu trong tư duy\n\n00:01:00.440 --> 00:01:02.680\nốp thì rỗng toách và lúc nào cũng kiệt sức\n\n00:01:02.681 --> 00:01:04.281\ncuốn sách này sẽ giúp bạn nhận biết\n\n00:01:04.440 --> 00:01:06.240\nbản thân đang thối não ở giai đoạn nào\n\n00:01:06.520 --> 00:01:07.400\nTheo góc độ khoa học\n\n00:01:07.800 --> 00:01:09.160\ntừ đó đưa Ra các phương pháp\n\n00:01:09.360 --> 00:01:11.240\nđể rèn luyện não bộ của bạn chủ động hơn\n\n00:01:11.360 --> 00:01:12.400\nvà loại bỏ tri hoãn\n\n00:01:12.560 --> 00:01:15.280\nmình để sách ở giỏ hàng Cho những bạn nào quan tâm nha\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7678243434066496776-vie-VN.vtt"
+    ],
+    "file": "7678243434066496776-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7678243434066496776",
+   "create_time": "2026-08-26T07:46:10.000Z",
+   "is_slideshow": false,
+   "outlier": 67.81,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@amber_healing/video/7711645389278940437",
+   "caption": "CÁC KIỂU TRÌ HOÃN – BẠN ĐANG MẮC KẸT Ở ĐÂU?",
+   "author": {
+    "id": "7225138990856438785",
+    "name": "amber_healing",
+    "nick": "AMBER HEALING",
+    "profile": "https://www.tiktok.com/@amber_healing",
+    "fans": 7438
+   },
+   "play_count": 908,
+   "like_count": 47,
+   "share_count": 4,
+   "comment_count": 1,
+   "duration_s": 102,
+   "music": {
+    "id": "7711645445995727637",
+    "name": "âm thanh gốc - AMBER HEALING",
+    "author": "AMBER HEALING",
+    "original": true
+   },
+   "hashtags": [],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:00.920\ncùng là trì hoãn\n\n00:00:00.921 --> 00:00:03.041\nnhưng mà mỗi người lại mắc kẹt ở một chỗ khác nhau\n\n00:00:03.200 --> 00:00:04.920\nnên là cách gỡ cũng khác nhau\n\n00:00:05.360 --> 00:00:06.400\nkiểu một sợ\n\n00:00:06.880 --> 00:00:08.920\ntrong đầu lúc nào cũng có một giọng nói nhỏ thì thầm\n\n00:00:09.120 --> 00:00:10.280\nlỡ làm Sai thì SAO\n\n00:00:10.680 --> 00:00:11.720\nlỡ 7 bại thì SAO\n\n00:00:12.280 --> 00:00:14.400\nnếu mà bạn nhận Ra mình ở đây thì hãy đeo citrine\n\n00:00:14.680 --> 00:00:15.920\nnăng lượng của citrine lúc này\n\n00:00:15.921 --> 00:00:17.481\nnó sẽ giúp Cho bạn lạc quan hơn\n\n00:00:17.800 --> 00:00:19.200\ntin vào năng lực của chính mình\n\n00:00:19.240 --> 00:00:22.080\nđể từ đó đủ vững vàng bước đi bước đầu tiên\n\n00:00:22.240 --> 00:00:23.680\nkiểu thứ 2 phân tâm\n\n00:00:24.200 --> 00:00:25.400\nngười thì ngồi trước máy tính\n\n00:00:25.560 --> 00:00:27.960\nmà tâm trí thì đang nghĩ chuyện ở nhà\n\n00:00:28.200 --> 00:00:30.080\nhay là câu nói ban sáng của AI đó\n\n00:00:30.360 --> 00:00:31.760\nlúc này thì fluoride\n\n00:00:31.761 --> 00:00:34.761\nnó sẽ gom sự chú ý của bạn trở về với việc trước mắt\n\n00:00:35.000 --> 00:00:36.640\ncòn khi mà cảm xúc cuốn bạn đi xa\n\n00:00:36.720 --> 00:00:39.040\ntới mức không còn biết mình thật sự muốn gì luôn\n\n00:00:39.041 --> 00:00:41.401\ná thì sugi fluoride nó sẽ hợp hơn\n\n00:00:41.680 --> 00:00:43.200\ndòng đá này giúp bạn nối đất\n\n00:00:43.520 --> 00:00:46.080\ngiúp bạn nhẹ nhàng buông bớt những lo lắng đang chiếm chỗ\n\n00:00:46.081 --> 00:00:49.281\nđể đầu óc sáng rõ và tập trung vào điều thật sự quan trọng\n\n00:00:49.320 --> 00:00:52.360\ntrước mắt kiểu thứ BA là cạn năng lượng\n\n00:00:52.840 --> 00:00:54.920\nsáng nào thức dậy cũng thấy mình giống như là cái điện thoại\n\n00:00:54.921 --> 00:00:56.081\nchỉ còn 5% pin thôi\n\n00:00:56.280 --> 00:00:57.680\nkhi đó thì period incrust\n\n00:00:57.800 --> 00:01:00.720\nsẽ tiếp thêm sức mạnh và động lực để bạn bắt đầu và đi tiếp\n\n00:01:01.360 --> 00:01:03.920\nkiểu thứ tư thôi để tối làm để rồi á\n\n00:01:04.040 --> 00:01:06.440\ntới phút chót mới giật mình nhận Ra việc quan trọng\n\n00:01:06.441 --> 00:01:08.321\nđã bị mấy việc gấp Chen mất chỗ\n\n00:01:08.480 --> 00:01:09.120\ntừ lúc nào hông\n\n00:01:09.121 --> 00:01:09.841\nhay\n\n00:01:09.842 --> 00:01:13.521\nvới kiểu này á thì có một dòng đá đặc biệt màu nâu tím của\n\n00:01:13.880 --> 00:01:15.640\nAura Life 23 đeo\n\n00:01:15.800 --> 00:01:18.360\ngiống như là có một bà mẹ ngồi kế bên cạnh mình học bài vậy\n\n00:01:18.361 --> 00:01:20.761\nđó vừa lơ đãnh một chút thôi là bị nhắc liền\n\n00:01:20.920 --> 00:01:23.520\nbài hôm nay chưa xong thì còn lâu mới được đi ngủ ha\n\n00:01:24.200 --> 00:01:27.240\nviên đá nó là điểm tựa còn bước chân nó vẫn là của bạn\n\n00:01:27.480 --> 00:01:27.840\ncó điều\n\n00:01:27.841 --> 00:01:30.401\nkhi mà chọn đúng dòng đá Cho đúng chỗ mình đang vướng mắc\n\n00:01:30.402 --> 00:01:32.481\ná thì bước đầu tiên nó sẽ nhẹ đi rất nhiều\n\n00:01:32.880 --> 00:01:34.000\nbạn đang là kiểu số mấy\n\n00:01:34.080 --> 00:01:37.240\nđể lại con số ha một 2 BA hay là 4 dưới phần bình luận nha\n\n00:01:37.440 --> 00:01:38.800\nhoặc là nhắn Cho bơ để được tư vấn\n\n00:01:38.880 --> 00:01:40.320\nTheo đúng tình trạng của riêng bạn\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7711645389278940437-vie-VN.vtt"
+    ],
+    "file": "7711645389278940437-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7711645389278940437",
+   "create_time": "2026-11-24T08:02:46.000Z",
+   "is_slideshow": false,
+   "outlier": 0.12,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@ninawitch.magic/video/7712853429537754375",
+   "caption": "",
+   "author": {
+    "id": "7228293980315632646",
+    "name": "ninawitch.magic",
+    "nick": "NiNawitch.magic",
+    "profile": "https://www.tiktok.com/@ninawitch.magic",
+    "fans": 23800
+   },
+   "play_count": 16400,
+   "like_count": 3364,
+   "share_count": 56,
+   "comment_count": 110,
+   "duration_s": 6,
+   "music": {
+    "id": "7712853554217716501",
+    "name": "âm thanh gốc - NiNawitch.magic",
+    "author": "NiNawitch.magic",
+    "original": true
+   },
+   "hashtags": [],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7712853429537754375",
+   "create_time": "2026-11-27T14:10:56.000Z",
+   "is_slideshow": false,
+   "outlier": 0.69,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@amateurpsychology/video/7693909106041703713",
+   "caption": "Một cách giúp giảm trì hoãn 🤹‍♀️ #tamlyhoc #amateurpsychologypodcast ",
+   "author": {
+    "id": "7112851728568026117",
+    "name": "amateurpsychology",
+    "nick": "amateurpsychology",
+    "profile": "https://www.tiktok.com/@amateurpsychology",
+    "fans": 57700
+   },
+   "play_count": 78400,
+   "like_count": 11900,
+   "share_count": 990,
+   "comment_count": 26,
+   "duration_s": 137,
+   "music": {
+    "id": "7693909128451803936",
+    "name": "original sound - amateurpsychology",
+    "author": "amateurpsychology",
+    "original": true
+   },
+   "hashtags": [
+    "tamlyhoc",
+    "amateurpsychologypodcast"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:02.040\ngửi Cho bạn một cách để có thể giảm trì hoãn\n\n00:00:02.240 --> 00:00:03.320\nhế lô Xin chào tất cả mọi người\n\n00:00:03.321 --> 00:00:04.521\nmình là thư hiện là nghiên cứu sinh\n\n00:00:04.560 --> 00:00:05.360\ntiến sĩ trên ngành tâm lý\n\n00:00:05.361 --> 00:00:05.721\ntại anh\n\n00:00:05.722 --> 00:00:06.401\ncùng mình sự tâm lý\n\n00:00:06.402 --> 00:00:08.001\nđể hiểu và tận hưởng một cuộc sống vui vẻ\n\n00:00:08.160 --> 00:00:09.640\ntrong những cái video trước mà mình đã đăng\n\n00:00:09.680 --> 00:00:10.840\nthì chúng ta đã có bàn về việc\n\n00:00:11.080 --> 00:00:13.160\ntrì hoãn có thể không hẳn là do bạn lười biếng\n\n00:00:13.360 --> 00:00:14.800\nmà là do khi đứng trước stress\n\n00:00:14.880 --> 00:00:16.440\nbạn không có khả năng điều tiết cảm xúc\n\n00:00:16.720 --> 00:00:19.160\ndẫn đến Xu hướng hành VI hoặc là suy nghĩ né tránh\n\n00:00:19.320 --> 00:00:20.760\nmột nghiên cứu Cho người tham gia\n\n00:00:20.840 --> 00:00:23.160\nlựa chọn phần thưởng gắn liền với công sức tìm thấy\n\n00:00:23.400 --> 00:00:25.840\nkhi mà chúng ta cảm thấy mệt hoặc là kiệt quệ vào mặt\n\n00:00:25.880 --> 00:00:28.480\ntinh thần thì chúng ta sẽ từ bỏ những cái phần thưởng lớn\n\n00:00:28.520 --> 00:00:29.320\nkhi mà nhìn nhận\n\n00:00:29.480 --> 00:00:32.040\nlà cái công sức phải bỏ Ra để đạt được nó là quá lớn\n\n00:00:32.360 --> 00:00:34.480\nchế này có lẽ cũng liên quan đến Xu hướng trì hoãn\n\n00:00:34.520 --> 00:00:36.200\nkhi mà chúng ta bị quá tải bởi stress\n\n00:00:36.480 --> 00:00:38.280\ntừ đó chúng ta sẽ từ bỏ làm\n\n00:00:38.320 --> 00:00:39.920\ncái việc mà chúng ta biết là chúng ta cần phải bắt\n\n00:00:39.960 --> 00:00:42.200\nTay vào làm dù biết là trong tương Lai\n\n00:00:42.240 --> 00:00:44.120\nthì nó sẽ tốt Cho mình hơn là việc trì hoãn\n\n00:00:44.320 --> 00:00:46.560\ncác nhà nghiên cứu Cho rằng một phương pháp tư duy\n\n00:00:46.840 --> 00:00:48.920\ncó thể và đã được chứng Minh là rất hiệu\n\n00:00:48.921 --> 00:00:51.881\nquả trong việc đạt được mục tiêu được gọi là mental contrast\n\n00:00:52.480 --> 00:00:54.000\nimplementation intention\n\n00:00:54.200 --> 00:00:56.960\nmcii hay có thể tạm dịch trong tiếng Việt là\n\n00:00:57.080 --> 00:00:58.840\ntương phản tư duy với ý định hành động\n\n00:00:58.920 --> 00:01:00.040\nmục đích của phương pháp này\n\n00:01:00.080 --> 00:01:01.760\nchính là để có thể xác định BA yếu tố\n\n00:01:01.960 --> 00:01:04.600\nđiều bạn muốn là gì ích lợi của cái điều này là gì\n\n00:01:04.999 --> 00:01:06.920\nnhững cái trở ngại nào đang cản trở bạn\n\n00:01:07.000 --> 00:01:08.240\nthực hiện cái điều mà bạn mong muốn\n\n00:01:08.400 --> 00:01:10.400\nđiều này nó có thể hỗ trợ với Xu hướng trì hoãn\n\n00:01:10.440 --> 00:01:11.560\nbởi vì thay vì né tránh\n\n00:01:11.640 --> 00:01:12.440\nthì nó buộc bạn\n\n00:01:12.441 --> 00:01:14.561\nphải đối mặt với những cái suy nghĩ mà bạn cần phải có\n\n00:01:14.720 --> 00:01:16.040\nhơn nữa một nghiên cứu đã tìm\n\n00:01:16.120 --> 00:01:17.880\nthấy là phương pháp này rất là hiệu quả\n\n00:01:18.120 --> 00:01:20.160\ntrong việc giảm trì hoãn giờ đi ngủ\n\n00:01:20.440 --> 00:01:22.600\nvậy thì phương pháp này được thực hiện như thế nào\n\n00:01:22.680 --> 00:01:24.960\nbước thứ nhất bạn phải ghi Ra những cái mong muốn của bạn\n\n00:01:25.040 --> 00:01:26.760\nví dụ như là bạn muốn hoàn thành luận văn\n\n00:01:26.960 --> 00:01:29.360\nbước thứ 2 bạn phải ghi Ra những cái kết quả\n\n00:01:29.400 --> 00:01:30.880\nmà cái điều này có thể mang lại Cho bạn\n\n00:01:31.200 --> 00:01:32.760\nví dụ như là việc hoàn thành luận văn\n\n00:01:32.880 --> 00:01:35.080\nnó sẽ dẫn đến việc là bạn có thể hoàn thành khóa học\n\n00:01:35.160 --> 00:01:36.080\nvà đạt được bằng đại học\n\n00:01:36.160 --> 00:01:37.720\nlà một cột mốc rất là đáng tự hào\n\n00:01:37.880 --> 00:01:40.240\nthứ BA là bạn phải Mường tượng được trong đầu của bạn\n\n00:01:40.360 --> 00:01:42.320\nnhững cái trở ngại nào đang ngăn cản\n\n00:01:42.360 --> 00:01:44.000\nbạn thực hiện cái điều mà bạn mong muốn\n\n00:01:44.200 --> 00:01:47.080\nví dụ như là bạn cảm thấy lười hoặc là cảm thấy mệt\n\n00:01:47.360 --> 00:01:48.560\nvà bạn lướt điện thoại nhiều quá\n\n00:01:48.800 --> 00:01:51.360\nthứ tư bạn phải tự hỏi và trả lời được Cho câu hỏi\n\n00:01:51.440 --> 00:01:53.440\nlàm SAO bạn có thể vượt qua cái trở ngại này\n\n00:01:53.560 --> 00:01:54.840\nthứ năm bạn phải có tư duy\n\n00:01:54.880 --> 00:01:57.560\nnếu thì để có thể vượt qua được cảm giác muốn trì hoãn\n\n00:01:57.840 --> 00:01:59.920\nví dụ như nếu lần tới bạn lướt điện thoại\n\n00:02:00.000 --> 00:02:02.440\nthì bạn sẽ đặt đồng hồ báo thức chỉ được lướt năm phút\n\n00:02:02.600 --> 00:02:04.400\nsau đó phải quay lại bắt Tay làm việc ngay\n\n00:02:04.480 --> 00:02:06.440\nđiều này sẽ giúp Cho bạn có tư duy\n\n00:02:06.560 --> 00:02:08.240\nđể có thể thúc đẩy bản thân làm việc\n\n00:02:08.440 --> 00:02:09.400\nthay vì cứ mặc định\n\n00:02:09.401 --> 00:02:11.401\nlàm những cái hoạt động mà bạn đã rất là quen\n\n00:02:11.480 --> 00:02:12.760\nthuộc rồi tiếp tục trì hoãn\n\n00:02:12.960 --> 00:02:14.960\nmình chúc là các bạn sẽ áp dụng phương pháp này thành công\n\n00:02:15.000 --> 00:02:16.880\nmình sẽ hẹn gặp bạn ở video tiếp Theo nha bái bai\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7693909106041703713-vie-VN.vtt"
+    ],
+    "file": "7693909106041703713-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7693909106041703713",
+   "create_time": "2026-10-07T12:56:55.000Z",
+   "is_slideshow": false,
+   "outlier": 1.36,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@trinhdaudinhlunglinh/video/7672036784464760085",
+   "caption": "Trả lời @_mihn.awn_clhp ",
+   "author": {
+    "id": "7621538013320250388",
+    "name": "trinhdaudinhlunglinh",
+    "nick": "Trinh Đầu Đinh",
+    "profile": "https://www.tiktok.com/@trinhdaudinhlunglinh",
+    "fans": 55900
+   },
+   "play_count": 225500,
+   "like_count": 38900,
+   "share_count": 2834,
+   "comment_count": 268,
+   "duration_s": 60,
+   "music": {
+    "id": "7672036808872086280",
+    "name": "âm thanh gốc - Trinh Đầu Đinh",
+    "author": "Trinh Đầu Đinh",
+    "original": true
+   },
+   "hashtags": [],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:01.280\nô kê vào thẳng vấn đề luôn \n\n00:00:01.281 --> 00:00:02.640\nhôm nay sẽ nói về sự trì hoãn nha\n\n00:00:03.161 --> 00:00:04.920\n lại tính lưu video này để bữa sau coi hả \n\n00:00:04.921 --> 00:00:05.920\nbữa sau là bữa nào\n\n00:00:06.000 --> 00:00:07.440\nvà đó chính là sự trì hoãn\n\n00:00:07.640 --> 00:00:09.240\nví dụ như là mình muốn học một ngôn ngữ mới \n\n00:00:09.241 --> 00:00:10.400\nthật là thành thạo á mọi người\n\n00:00:10.600 --> 00:00:12.400\nnhưng mà mình cứ hứa hẹn với bản thân \n\n00:00:12.401 --> 00:00:13.360\nlà mai mình học\n\n00:00:13.720 --> 00:00:15.040\nừ giờ này ngày mai mình học\n\n00:00:15.200 --> 00:00:17.200\nvà ngày mai đó là ngày không bao giờ tới\n\n00:00:17.360 --> 00:00:18.480\ncũng giống như việc mình hứa hẹn bản\n\n00:00:18.520 --> 00:00:20.520\nthân mình sẽ đi ngủ sớm vào 9 giờ ngày hôm nay \n\n00:00:20.521 --> 00:00:21.160\nnhưng mà quá\n\n00:00:21.240 --> 00:00:23.040\n09:01 mình lại hứa hẹn bản thân là \n\n00:00:23.041 --> 00:00:24.400\nừ vậy 10 giờ mình đi ngủ \n\n00:00:24.401 --> 00:00:25.480\nrồi tới 10:03\n\n00:00:25.520 --> 00:00:28.280\nthì mình lại nghĩ trong đầu là thôi thêm 2 phút nữa rồi hẳn mình hẳn đi ngủ\n\n00:00:28.360 --> 00:00:29.320\nđể Cho nó làm tròn\n\n00:00:29.840 --> 00:00:30.840\nrồi khi nào mình mới đi ngủ\n\n00:00:31.160 --> 00:00:33.320\ntới khi mà mắt không mở nổi nữa là bắt đầu mới đi ngủ\n\n00:00:33.400 --> 00:00:35.000\nmình đã từng nghe một câu như thế này nè lúc nào cũng\n\n00:00:35.080 --> 00:00:36.120\nước mình bắt đầu sớm hơn \n\n00:00:36.121 --> 00:00:37.760\nnhưng mà lại quên mất là hôm nay là ngày mình\n\n00:00:37.800 --> 00:00:39.040\ntrẻ nhất trong phần đời còn lại \n\n00:00:39.041 --> 00:00:39.720\nvậy đó là mình thấy sự\n\n00:00:39.800 --> 00:00:42.560\ntrì hoãn khá là nguy hiểm bởi vì nó khiến bạn không đi đến đâu cả\n\n00:00:42.760 --> 00:00:44.280\nkhông có thành quả gì hết bởi vì bạn để \n\n00:00:44.281 --> 00:00:45.000\nngày mai mới làm à\n\n00:00:45.520 --> 00:00:46.320\nmai là ngày nào \n\n00:00:46.321 --> 00:00:47.600\nlà ngày không bao giờ đến \n\n00:00:47.920 --> 00:00:50.520\nnên mình lên video này để chia sẻ cũng như là cảnh báo rằng sự\n\n00:00:50.560 --> 00:00:52.520\ntrì hoãn sẽ phá nát tuổi trẻ của bạn\n\n00:00:52.680 --> 00:00:54.200\nvà cuộc đời của bạn như thế nào và\n\n00:00:54.240 --> 00:00:55.800\nthật sự đây cũng như là một lời nhắc nhở chân\n\n00:00:55.840 --> 00:00:57.600\nthành tới mọi người cũng như là bản thân mình\n\n00:00:57.800 --> 00:00:58.880\nô kê cảm ơn mọi người đã coi \n\n00:00:58.881 --> 00:01:00.360\nlàm bài tập hè chưa hay là để mai\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7672036784464760085-vie-VN.vtt"
+    ],
+    "file": "7672036784464760085-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7672036784464760085",
+   "create_time": "2026-08-09T14:21:07.000Z",
+   "is_slideshow": false,
+   "outlier": 4.03,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@trihoan3101/video/7710233283052768520",
+   "caption": "\"Nhớ\" không phải là một động từ, mà là tính từ. Tính từ khi xa nhau        @Ngọc Huyền ✿",
+   "author": {
+    "id": "6611819878914654209",
+    "name": "trihoan3101",
+    "nick": "Trihoan3101",
+    "profile": "https://www.tiktok.com/@trihoan3101",
+    "fans": 32
+   },
+   "play_count": 293,
+   "like_count": 17,
+   "share_count": 1,
+   "comment_count": 2,
+   "duration_s": 43,
+   "music": {
+    "id": "7709472551739247378",
+    "name": "âm thanh gốc - Bà chãaa",
+    "author": "Bà chãaa",
+    "original": true
+   },
+   "hashtags": [],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "\"Nhớ\" không phải là một động từ, mà là tính từ. Tính từ khi xa nhau        @Ngọc Huyền ✿",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710233283052768520",
+   "create_time": "2026-11-20T12:43:03.000Z",
+   "is_slideshow": false,
+   "outlier": 9.16,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@lynsyouth.me/video/7650119958835252487",
+   "caption": "Không cần làm nhiều, ít mà chất lượng 🤩! #Lynsyouth #trihoan #songchatluonghon #Spotifypodcastlynsyouth ",
+   "author": {
+    "id": "6660842872634359810",
+    "name": "lynsyouth.me",
+    "nick": "Lyn's youth",
+    "profile": "https://www.tiktok.com/@lynsyouth.me",
+    "fans": 183400
+   },
+   "play_count": 56500,
+   "like_count": 3553,
+   "share_count": 149,
+   "comment_count": 10,
+   "duration_s": 197,
+   "music": {
+    "id": "7650120002817379090",
+    "name": "âm thanh gốc - Lyn's youth",
+    "author": "Lyn's youth",
+    "original": true
+   },
+   "hashtags": [
+    "lynsyouth",
+    "trihoan",
+    "songchatluonghon",
+    "spotifypodcastlynsyouth",
+    "Lynsyouth",
+    "Spotifypodcastlynsyouth"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:01.560\ncách để bỏ cái tính trì hoãn lại\n\n00:00:01.600 --> 00:00:02.240\ntính viết cả một cái\n\n00:00:02.241 --> 00:00:04.401\ntôi đôi đít dài ngoằn như này phải hông cái mẹ nó bây giờ\n\n00:00:04.440 --> 00:00:06.520\nphải viết lịch công việc Cho nó dài ngoằng ngoằng\n\n00:00:06.560 --> 00:00:08.480\nấy ngày mai mình phải làm được nhiều việc mình sẽ làm hết\n\n00:00:08.560 --> 00:00:09.440\nmột ngày thật là năng suất\n\n00:00:09.520 --> 00:00:11.280\nviết cả một đống như này là cứ gọi là yên tâm\n\n00:00:11.400 --> 00:00:13.040\nbây giờ yên tâm rồi và ngày mai phấn khởi\n\n00:00:13.480 --> 00:00:14.680\ntràn đầy yên tâm đi ngủ\n\n00:00:15.800 --> 00:00:18.280\nmình mà lướt TikTok thì mình cũng chỉ muốn là ngồi lướt mãi\n\n00:00:18.960 --> 00:00:21.200\nlướt mãi và lướt mãi\n\n00:00:21.720 --> 00:00:22.560\nmình có thể lướt TikTok\n\n00:00:22.640 --> 00:00:24.360\ntừ sáng Cho đến đêm mà mình không cảm\n\n00:00:24.440 --> 00:00:25.640\nthấy chán mọi người ơi\n\n00:00:25.960 --> 00:00:27.760\nthôi mệt quá bây giờ 4 5 giờ chiều bây giờ mình hôm nay còn đi\n\n00:00:27.800 --> 00:00:28.440\ntập gym không ta\n\n00:00:28.441 --> 00:00:29.681\nSAO mình làm có được một 2 việc\n\n00:00:29.720 --> 00:00:31.560\nthôi mình đã thấy mệt như này mà hết thời gian rồi đây này\n\n00:00:31.840 --> 00:00:33.840\nhay ngày mai làm ta ngày mai làm đi nhất định\n\n00:00:34.120 --> 00:00:35.080\nnhất định ngày mai mình sẽ làm\n\n00:00:35.440 --> 00:00:37.120\nmai mình không làm làm con chó đâu SAO\n\n00:00:37.160 --> 00:00:38.040\ntự nhiên đâu Ra nhiều việc\n\n00:00:38.080 --> 00:00:39.320\nthế ta bây giờ mình phải làm gì nhở\n\n00:00:39.400 --> 00:00:40.480\nbây giờ làm cái gì trước tiên ta\n\n00:00:40.960 --> 00:00:41.760\nchán thật sự ý\n\n00:00:43.960 --> 00:00:45.640\nthử rồi viết rồi nhưng mà vẫn trì hoãn\n\n00:00:45.760 --> 00:00:46.720\nmình là một người không\n\n00:00:46.800 --> 00:00:47.520\nthể nào mà sống\n\n00:00:47.521 --> 00:00:49.441\nthiếu to do list sáng thức dậy mình cũng phải check xem\n\n00:00:49.520 --> 00:00:50.840\nto do list có cái gì để mình phải làm Theo\n\n00:00:50.960 --> 00:00:53.360\ntối trước khi đi ngủ mình cũng phải viết cả một hàng dài như\n\n00:00:53.400 --> 00:00:54.080\ntờ giấy a 4\n\n00:00:54.081 --> 00:00:54.521\nthì mình mới yên\n\n00:00:54.522 --> 00:00:56.081\ntâm đi ngủ được bao nhiêu năm nay là mình không thể sống\n\n00:00:56.120 --> 00:00:57.320\nthiếu đi mà nó cũng là một\n\n00:00:57.360 --> 00:00:59.960\ntrong những cái giúp mình có cuộc sống tốt như bây giờ mình\n\n00:01:00.200 --> 00:01:02.200\ncũng là một nạn nhân của con quỷ trì hoãn\n\n00:01:02.280 --> 00:01:03.560\nvà mình biết hầu hết cứ ngày qua\n\n00:01:03.600 --> 00:01:05.160\ntháng lại thì mọi thứ vẫn như thế\n\n00:01:05.240 --> 00:01:05.960\ncứ lấy động lực\n\n00:01:05.961 --> 00:01:07.801\nngày mai cứ bảo là ngày mai làm Cho mình có động lực\n\n00:01:08.080 --> 00:01:10.640\nmai làm xong cái ngày mai lại không làm xong ngày Kia\n\n00:01:10.800 --> 00:01:11.480\nngày Kia ngày Kia\n\n00:01:11.481 --> 00:01:12.921\nsẽ đến một cái thời gian khủng hoảng\n\n00:01:13.000 --> 00:01:15.400\ncực kỳ khủng hoảng mà khiến Cho bản thân mình cảm thấy\n\n00:01:15.480 --> 00:01:17.840\nSAO mình vô dụng mình bất tải đến như vậy ta SAO mình lười\n\n00:01:18.120 --> 00:01:19.200\nđến một cái giai đoạn mình trách bản\n\n00:01:19.280 --> 00:01:21.240\nthân rất nhiều bởi vì mình lên kế hoạch quá nhiều\n\n00:01:21.520 --> 00:01:22.440\nquá nhiều trong một ngày\n\n00:01:22.840 --> 00:01:24.240\nvà đến nỗi mà mình không có làm được hết\n\n00:01:24.320 --> 00:01:26.000\nmình chỉ làm được một 2 cái áng chừng\n\n00:01:26.040 --> 00:01:26.720\nthời gian không có chuẩn\n\n00:01:26.721 --> 00:01:27.841\nthì khiến Cho bản thân mình\n\n00:01:27.880 --> 00:01:29.880\ntrở nên có cái dấu hiệu là trách bản thân vào cuối ngày\n\n00:01:29.960 --> 00:01:30.520\nmất động lực\n\n00:01:30.521 --> 00:01:33.081\nmình đã suy nghĩ rất nhiều về cái vấn đề đấy bởi vì mình cũng bị mắc phải\n\n00:01:33.320 --> 00:01:34.120\nmình là một rất tham\n\n00:01:34.160 --> 00:01:36.120\nmột ngày mình muốn là mở mắt Ra phát là phải làm việc luôn\n\n00:01:36.200 --> 00:01:37.120\nlàm kiểu gì đấy mà phải\n\n00:01:37.160 --> 00:01:39.080\nthật là nhiều nhiều ơi là nhiều và đó chính là mình\n\n00:01:39.160 --> 00:01:40.200\nmình không biết cách sắp xếp thời gian\n\n00:01:40.360 --> 00:01:41.240\ndẫn đến Cho bản thân\n\n00:01:41.440 --> 00:01:42.600\nlàm thì ít mà suy nghĩ thì nhiều\n\n00:01:42.800 --> 00:01:44.240\nlàm ít nhưng lại mệt nhiều thế mới hay\n\n00:01:44.320 --> 00:01:45.240\ncái đầu mà mệt rồi thì cái\n\n00:01:45.280 --> 00:01:46.960\nTay cái chân nó không có động lực để nó làm việc được nữa\n\n00:01:47.000 --> 00:01:48.000\nsau khi đã tìm hiểu qua\n\n00:01:48.080 --> 00:01:50.600\nnhiều phương án khác nhau thì mọi vấn đề nó nằm từ ở ta\n\n00:01:50.800 --> 00:01:51.600\nchính ta mà Ra hết\n\n00:01:51.800 --> 00:01:53.280\nbắt đầu nghĩ ít đi mà làm nhiều hơn mình\n\n00:01:53.320 --> 00:01:55.760\nthấy là cái việc mà lên kế hoạch sống mỗi ngày rất là tốt\n\n00:01:55.880 --> 00:01:57.680\nphải viết rõ Ra những việc cần phải làm\n\n00:01:57.800 --> 00:01:59.960\nđể chúng mình có thể kiểm soát được và không có bị quên\n\n00:02:00.320 --> 00:02:01.760\ncũng là một cách rất là tốt thay vì ngày\n\n00:02:01.800 --> 00:02:03.480\ntrước mình lên rất là nhiều việc ở trong một ngày\n\n00:02:03.680 --> 00:02:05.400\nthì bây giờ mình đã rút kinh nghiệm là mình sẽ lên\n\n00:02:05.480 --> 00:02:07.440\ntừng cái đầu việc nhỏ nhỏ thôi nhưng cái gì quan trọng nhất\n\n00:02:07.600 --> 00:02:08.280\nthì ưu tiên nhất\n\n00:02:08.281 --> 00:02:08.961\nthì mình sẽ làm trước\n\n00:02:08.962 --> 00:02:09.641\ncòn mấy cái vụn vặt\n\n00:02:09.642 --> 00:02:10.841\nthì mình không cần phải ghi vào làm cái gì\n\n00:02:10.960 --> 00:02:12.840\nsau khi làm những cái công việc chính xong rồi á là mình sẽ có\n\n00:02:12.880 --> 00:02:14.760\nthời gian là mình sẽ đi làm những cái công việc phụ nhỏ nhỏ\n\n00:02:14.840 --> 00:02:16.160\nhoặc là mình sẽ dành riêng\n\n00:02:16.280 --> 00:02:17.200\nkhoảng tầm một tiếng\n\n00:02:17.560 --> 00:02:19.240\n2 tiếng nghỉ ngơi giải trí một chút\n\n00:02:19.360 --> 00:02:20.760\nchăm sóc bản thân một chút vui vẻ một chút\n\n00:02:20.840 --> 00:02:22.200\ncái đầu của mình nó không có bị căng quá\n\n00:02:22.400 --> 00:02:24.440\nmột ngày mình sẽ không cần phải làm nhiều đâu mình làm ít\n\n00:02:24.480 --> 00:02:25.440\nthôi tại vì một ngày ấy\n\n00:02:25.520 --> 00:02:27.160\nbản thân mình sẽ chỉ có khả năng tập trung\n\n00:02:27.280 --> 00:02:29.040\nđược có vài tiếng thôi nên là trong cái vài tiếng đó\n\n00:02:29.160 --> 00:02:30.080\nmình sẽ làm Cho nó Ra hồn\n\n00:02:30.160 --> 00:02:31.240\nRa ngô Ra khoai luôn còn vài\n\n00:02:31.280 --> 00:02:32.720\ntiếng còn lại thì mình sẽ nghỉ ngơi\n\n00:02:32.760 --> 00:02:33.840\nđể phục hồi năng lượng lại và\n\n00:02:33.880 --> 00:02:35.600\ntất nhiên là trong cái lúc mà tập gym thì vẫn có\n\n00:02:35.720 --> 00:02:36.560\ncái lúc mà mình nghỉ ngơi\n\n00:02:36.640 --> 00:02:38.400\nthì mình sẽ lấy cái máy Ra mình bấm mình lướt TikTok một tí\n\n00:02:38.480 --> 00:02:40.160\nthì cũng giải trí cũng vui nó không có bị\n\n00:02:40.320 --> 00:02:42.440\nkhuôn khổ dập khuôn quá suy Cho cùng thì cái tính trì\n\n00:02:42.480 --> 00:02:43.480\nhoãn nó nằm ở bản thân mình\n\n00:02:43.520 --> 00:02:45.600\ngiờ mình cứ hãy nghĩ đơn thuần thôi cái gì đó mình muốn làm\n\n00:02:45.760 --> 00:02:46.720\nthì làm luôn đi nhưng mà mình cảm\n\n00:02:46.760 --> 00:02:47.560\nthấy mình chưa bắt đầu được\n\n00:02:47.561 --> 00:02:50.281\nmình đang kiểu suy nghĩ nhiều trong đầu ấy thì mình cố gắng\n\n00:02:50.320 --> 00:02:50.800\nmình chịu khó\n\n00:02:50.801 --> 00:02:52.881\nmình lấy cái Tay mình vớ vào cái gì đó xong mình làm đi\n\n00:02:53.080 --> 00:02:55.760\nmột 2 phút đầu đang còn ngắt ruồi làm tiếp 4 năm phút\n\n00:02:56.080 --> 00:02:57.280\nthì tự nhiên nó đam mê luôn\n\n00:02:57.440 --> 00:02:59.320\nnó đi sâu vào luôn á nó chìm đắm vào luôn á\n\n00:02:59.360 --> 00:03:01.400\nđầu đang nghĩ đúng hông đừng có nương Theo cái đầu của mình\n\n00:03:01.600 --> 00:03:03.440\nkiểu nó đang suy nghĩ nhiều Cho cái cái việc đó\n\n00:03:03.760 --> 00:03:04.560\nthì mình cứ kệ nó đi\n\n00:03:0",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7650119958835252487-vie-VN.vtt"
+    ],
+    "file": "7650119958835252487-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7650119958835252487",
+   "create_time": "2026-06-12T04:00:00.000Z",
+   "is_slideshow": false,
+   "outlier": 0.31,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@nhile_n/video/7269745529582603526",
+   "caption": "Bí mật giúp cho bạn hết TRÌ HOÃN! #nhile #nhileteam #language #vietnam #tiktok #like #learnontiktok #trending #fyp @Nhi Le @NhiLe_anne @Podcast_Nhile ",
+   "author": {
+    "id": "6981390245653349381",
+    "name": "nhile_n",
+    "nick": "user54018533873",
+    "profile": "https://www.tiktok.com/@nhile_n",
+    "fans": 81300
+   },
+   "play_count": 740300,
+   "like_count": 53000,
+   "share_count": 1543,
+   "comment_count": 264,
+   "duration_s": 114,
+   "music": {
+    "id": "7269745813379156741",
+    "name": "nhạc nền - Tiêu diệt anti chị Nhi",
+    "author": "user54018533873",
+    "original": true
+   },
+   "hashtags": [
+    "nhile",
+    "nhileteam",
+    "language",
+    "vietnam",
+    "tiktok",
+    "like",
+    "learnontiktok",
+    "trending",
+    "fyp"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.806 --> 00:00:02.036\nnhớ nhấn like share subscribe\n\n00:00:02.606 --> 00:00:05.073\nem cố gắng đứng lên Cho chị coi coi\n\n00:00:05.446 --> 00:00:06.673\ncố gắng đứng lên coi coi\n\n00:00:07.566 --> 00:00:08.416\ncái đó là đứng\n\n00:00:09.446 --> 00:00:10.246\ncái đó là đứng\n\n00:00:10.886 --> 00:00:11.893\ncái đó là ngồi\n\n00:00:12.526 --> 00:00:14.300\nchị biểu em cố gắng đứng lên\n\n00:00:14.300 --> 00:00:16.301\nchị không biểu em đứng hay chị không biểu em ngồi\n\n00:00:16.301 --> 00:00:17.313\nmày cố gắng được hông vậy\n\n00:00:19.197 --> 00:00:20.660\nđược hông được hông được hả\n\n00:00:20.660 --> 00:00:25.282\nrồi tiếp cố gắng uống nước Cho chị coi coi nè\n\n00:00:28.280 --> 00:00:31.240\nnhư vầy là uống nước nè như vầy là không uống nước nè\n\n00:00:32.040 --> 00:00:33.240\ncố gắng uống nước là SAO\n\n00:00:34.770 --> 00:00:38.029\nlà SAO là ơ ơ\n\n00:00:38.850 --> 00:00:41.914\nkhi em dùng những cái từ vô nghĩa\n\n00:00:42.270 --> 00:00:45.469\nnão bộ của em không Cho phép em hành động\n\n00:00:45.810 --> 00:00:47.840\ntại vì em dùng những cái từ liên quan là a\n\n00:00:47.840 --> 00:00:49.080\nem sẽ cố gắng làm\n\n00:00:49.080 --> 00:00:50.589\ntức là em không có ý định làm\n\n00:00:51.240 --> 00:00:53.080\ntại vì cái người làm là một là họ làm\n\n00:00:53.080 --> 00:00:54.271\n2 là họ không làm\n\n00:00:54.288 --> 00:00:55.511\nlàm hay không làm\n\n00:00:56.208 --> 00:00:58.991\năn hay là không ăn uống hay là không uống\n\n00:00:59.400 --> 00:01:01.200\ntrả tiền hay là không trả tiền\n\n00:01:01.200 --> 00:01:03.060\nem sẽ cố gắng trả tiền là cái gì\n\n00:01:03.060 --> 00:01:04.840\nem sẽ cố gắng thức dậy tập thể dục\n\n00:01:04.840 --> 00:01:06.285\nmày dậy hay mày không dậy\n\n00:01:06.594 --> 00:01:08.800\nmày dậy tập thể dục hay mày không tập thể dục\n\n00:01:08.800 --> 00:01:09.805\ncố gắng là SAO\n\n00:01:10.320 --> 00:01:11.450\ntụi mày dùng những từ vô nghĩa\n\n00:01:11.450 --> 00:01:12.756\ntụi mày không bao giờ hành động\n\n00:01:12.883 --> 00:01:14.636\ntỉnh thức xây dựng tiềm thức\n\n00:01:14.843 --> 00:01:16.540\nnhững cái từ em nói mỗi ngày\n\n00:01:16.540 --> 00:01:18.860\nnó là cái làm Cho não bộ của em\n\n00:01:18.860 --> 00:01:19.660\nlưu trữ\n\n00:01:19.763 --> 00:01:22.276\nđể mà xác định được là em muốn làm hay không muốn làm\n\n00:01:22.563 --> 00:01:23.320\nvà nó có lý do\n\n00:01:23.320 --> 00:01:25.516\ntại SAO chị Nhi đặt cái luật đó ở trong Tim của chị Nhi\n\n00:01:25.843 --> 00:01:28.476\ntại vì chị Nhi biết rất rõ là\n\n00:01:29.120 --> 00:01:33.140\nwhat of imformation tức là ngôn ngữ nó làm Cho em\n\n00:01:33.140 --> 00:01:35.626\nví dụ như chị Cao nhớ nhấn like share subscribe\n\n00:01:36.360 --> 00:01:39.536\ncó tụi mày mới làm chứ giờ chị mà nói ơ tụi em a\n\n00:01:39.663 --> 00:01:41.320\ncố gắng nhấn like\n\n00:01:41.320 --> 00:01:42.520\nshare và subscribe Cho chị\n\n00:01:42.520 --> 00:01:43.320\ncố gắng nhấn like\n\n00:01:43.320 --> 00:01:46.096\nshare subscribe là SAO mày làm hay mày không làm\n\n00:01:46.103 --> 00:01:48.160\nhãy học thêm những kiến thức này bằng cách\n\n00:01:48.160 --> 00:01:49.080\nqua kênh YouTube\n\n00:01:49.080 --> 00:01:51.728\nNhi Lê bấm subscribe và nhấn cái chuông\n\n00:01:51.943 --> 00:01:53.976\nkiến thức là miễn phí hành động là ở bạn\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7269745529582603526-vie-VN.vtt"
+    ],
+    "file": "7269745529582603526-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7269745529582603526",
+   "create_time": "2023-08-21T12:05:34.000Z",
+   "is_slideshow": false,
+   "outlier": 9.11,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@gemsongnghe/video/7513478663749291265",
+   "caption": "Cách thực sự để vượt qua sự trì hoãn #thanhcongnghe #tips #learnontiktok #gemsongnghe #trihoan #studytips ",
+   "author": {
+    "id": "7429614403907388423",
+    "name": "gemsongnghe",
+    "nick": "Gem Sống Nghệ",
+    "profile": "https://www.tiktok.com/@gemsongnghe",
+    "fans": 106600
+   },
+   "play_count": 29900,
+   "like_count": 3044,
+   "share_count": 114,
+   "comment_count": 31,
+   "duration_s": 158,
+   "music": {
+    "id": "7513483907778480913",
+    "name": "nhạc nền - Gem Sống Nghệ",
+    "author": "Gem Sống Nghệ",
+    "original": true
+   },
+   "hashtags": [
+    "thanhcongnghe",
+    "tips",
+    "learnontiktok",
+    "gemsongnghe",
+    "trihoan",
+    "studytips"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:02.600 --> 00:00:04.200\nsau đây là cách thực sự\n\n00:00:04.400 --> 00:00:07.880\nthực sự để mà vượt qua sự trì hoãn và sẽ biến năm 2 02\n\n00:00:07.881 --> 00:00:09.761\n15 của các bạn trở thành một năm đáng nhớ\n\n00:00:09.960 --> 00:00:11.080\nmình biết là bên ngoài Kia\n\n00:00:11.081 --> 00:00:11.961\ncó rất là nhiều\n\n00:00:11.962 --> 00:00:13.601\nnhững cái phương pháp để mà giúp Cho các bạn\n\n00:00:13.602 --> 00:00:14.881\nchống lại sự trì hoãn\n\n00:00:15.320 --> 00:00:16.480\nnào là quy tắc 10 phút\n\n00:00:16.600 --> 00:00:17.560\nquy tắc năm phút\n\n00:00:17.600 --> 00:00:19.920\nhay là tắt và tránh xa những yếu tố gây xao nhãn\n\n00:00:19.960 --> 00:00:21.400\nhay thậm chí là quy tắc 2 phút\n\n00:00:21.840 --> 00:00:24.440\nnhưng mà nếu mà các bạn cũng đã từng giống như mình\n\n00:00:24.520 --> 00:00:27.120\nthì ngay cả cái việc bắt đầu có quy tắc 2 phút\n\n00:00:27.200 --> 00:00:28.640\nđôi khi nó cũng khó điên đi được\n\n00:00:28.680 --> 00:00:31.240\nthì video này sẽ dành Cho các bạn quay\n\n00:00:31.360 --> 00:00:34.000\nnếu mà các bạn có ý định lưu video này lại để mà xem sau á\n\n00:00:34.080 --> 00:00:36.800\nthì please mình sẽ cố gắng làm Cho nó ngắn nhất có thể\n\n00:00:36.880 --> 00:00:38.120\nvì mình hiểu các bạn mà\n\n00:00:38.280 --> 00:00:39.800\nđầu tiên chúng ta sẽ bắt đầu với cái việc\n\n00:00:39.801 --> 00:00:41.081\nhiểu rằng sự tri hoãn\n\n00:00:41.320 --> 00:00:42.880\nkhông chỉ là một cái thói quen xấu\n\n00:00:43.040 --> 00:00:45.840\nmà nó còn là một cách để mà não bộ giúp Cho chúng ta xả\n\n00:00:45.920 --> 00:00:48.600\nstress vì khi chúng ta né một cái công việc nào đó thì\n\n00:00:48.920 --> 00:00:51.240\nmình sẽ cảm thấy rất là dễ chịu đúng hông ờ\n\n00:00:51.320 --> 00:00:52.320\nthoát khỏi một cái gì đó\n\n00:00:52.480 --> 00:00:53.840\nmột cái bài kiểm tra miệng chẳng hạn\n\n00:00:53.920 --> 00:00:55.600\nnhưng mà các bạn cũng biết được cái điều gì sẽ xảy\n\n00:00:55.601 --> 00:00:56.521\nRa sau đó rồi đúng hông\n\n00:00:56.840 --> 00:00:57.920\nJack sẽ quay trở lại\n\n00:00:58.080 --> 00:01:01.080\nvà lần này nó sẽ kéo Theo đồng bọn của nó một đống deadline\n\n00:01:01.520 --> 00:01:03.360\nvà cả những cái cảm giác tội lỗi nữa\n\n00:01:03.480 --> 00:01:05.800\nvà quy tắc 60 giây mà mình sắp kể Cho các bạn sau đây\n\n00:01:05.920 --> 00:01:08.480\nlà một cách để mà thu hẹp hoàn cảnh giữa sự trì hoãn\n\n00:01:08.640 --> 00:01:10.520\nvà việc thực sự bắt đầu là một cái gì đó\n\n00:01:10.560 --> 00:01:12.160\nlet's go từ bây giờ\n\n00:01:12.161 --> 00:01:14.521\nmỗi khi mà các bạn chuẩn bị làm một cái gì đó\n\n00:01:14.640 --> 00:01:16.560\nthì thay vì kệ mẹ nó thì các bạn hãy\n\n00:01:16.840 --> 00:01:20.360\nđếm ngược năm 4 BA 2 một đứng dậy\n\n00:01:20.560 --> 00:01:21.840\nvà trong 55 giây tiếp Theo\n\n00:01:21.920 --> 00:01:25.160\nthì mục tiêu duy nhất của các bạn chỉ là chuẩn bị set up\n\n00:01:25.360 --> 00:01:25.960\ncác bạn\n\n00:01:25.961 --> 00:01:28.441\ncó thể làm những cái việc rất đơn giản như là bật máy tính\n\n00:01:28.520 --> 00:01:30.680\nnhư là chuẩn bị tài liệu hoặc set up một cái bàn\n\n00:01:31.000 --> 00:01:32.320\nờ làm việc nó ngăn nắp chẳng hạn\n\n00:01:32.520 --> 00:01:33.320\nhoặc là thậm chí\n\n00:01:33.360 --> 00:01:35.440\nthay một bộ đồ thể thao để chuẩn bị đi tập rồi\n\n00:01:35.520 --> 00:01:37.000\nô kê và nếu lúc này các bạn cảm\n\n00:01:37.040 --> 00:01:38.440\nthấy là mình vẫn chưa muốn làm lắm\n\n00:01:38.441 --> 00:01:39.441\ná thì cũng hổng SAO\n\n00:01:39.640 --> 00:01:40.600\nnhưng mà ngay lúc này\n\n00:01:40.640 --> 00:01:41.920\nthì các bạn đã đánh lừa não\n\n00:01:42.000 --> 00:01:44.680\nbộ của các bạn được rằng là các bạn chỉ đang sắp xếp thôi\n\n00:01:45.000 --> 00:01:46.200\nnhưng mà thực Ra các bạn đã\n\n00:01:46.360 --> 00:01:48.840\ntiến rất là gần tới cái việc bắt Tay và làm một cái gì đó\n\n00:01:48.841 --> 00:01:51.881\nrồi đó bây giờ các bạn chỉ cần làm việc đúng 2 phút thôi\n\n00:01:52.040 --> 00:01:53.320\ncó thể là những cái việc rất là đơn giản\n\n00:01:53.321 --> 00:01:54.921\nnhư là đọc một cái trang tài liệu\n\n00:01:55.240 --> 00:01:57.600\ngõ vào dòng email hay là viết một cái gì đó\n\n00:01:57.920 --> 00:02:00.400\nvà nghiên cứu chỉ Ra rằng nếu mà bạn đã làm được đến đây\n\n00:02:00.440 --> 00:02:01.560\nthì 80%\n\n00:02:01.720 --> 00:02:04.280\nkhả năng là các bạn sẽ tiếp tục làm trong vài giờ tiếp Theo\n\n00:02:04.520 --> 00:02:06.760\nđơn giản là vì các bạn đã quen với cái nhịp rồi\n\n00:02:07.000 --> 00:02:10.120\nnhưng mà nếu các bạn làm đúng 2 phút mà vẫn muốn nghỉ á\n\n00:02:10.480 --> 00:02:12.360\nthì thì thôi tự thưởng Cho bản thân mình đi\n\n00:02:12.560 --> 00:02:14.560\nnhưng mà mình chắc chắn là các bạn sẽ tiếp tục thôi\n\n00:02:14.680 --> 00:02:16.880\nhãy nhớ vấn đề không phải là vì các bạn à\n\n00:02:17.120 --> 00:02:18.440\nthiếu tập trung hay là năng lực kém\n\n00:02:18.920 --> 00:02:21.240\nmà do các bạn đã luyện một cái thói quen né\n\n00:02:21.320 --> 00:02:22.360\nviệc hơi bị giỏi\n\n00:02:22.440 --> 00:02:23.680\nchuyển khoản không phải là do mình lười\n\n00:02:23.720 --> 00:02:25.240\nmà do các bạn quá sáng tạo\n\n00:02:25.400 --> 00:02:27.280\nsáng tạo Ra đủ thứ lý do để mà không bắt đầu\n\n00:02:27.400 --> 00:02:28.520\nvà để thay đổi cái thói quen này\n\n00:02:28.560 --> 00:02:29.720\nthì không khó như bạn tưởng đâu\n\n00:02:29.721 --> 00:02:32.121\nchỉ cần một xíu mẹo để mà check cái não của mình là được\n\n00:02:32.160 --> 00:02:33.800\nchẳng hạn như cái quy tắc 60 giây vừa rồi\n\n00:02:33.840 --> 00:02:35.720\nrồi rồi bây giờ chúc các bạn may mắn thôi\n\n00:02:35.920 --> 00:02:38.240\nà không phải là chúc các bạn làm việc hiệu quả\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7513478663749291265-vie-VN.vtt"
+    ],
+    "file": "7513478663749291265-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7513478663749291265",
+   "create_time": "2025-06-08T07:34:47.000Z",
+   "is_slideshow": false,
+   "outlier": 0.28,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@bancunghoc/video/7265641018375113985",
+   "caption": "Ai vẫn còn trì hoãn (procrastinate) như mình thì vô xem thử cách chữa trị nha #phattrienbanthan #tienganh #learnontiktok #fyp ",
+   "author": {
+    "id": "6946696762644628486",
+    "name": "bancunghoc",
+    "nick": "Bạn cùng học",
+    "profile": "https://www.tiktok.com/@bancunghoc",
+    "fans": 82300
+   },
+   "play_count": 12900,
+   "like_count": 561,
+   "share_count": 35,
+   "comment_count": 16,
+   "duration_s": 225,
+   "music": {
+    "id": "7265641045496711938",
+    "name": "nhạc nền - Bạn cùng học",
+    "author": "Bạn cùng học",
+    "original": true
+   },
+   "hashtags": [
+    "phattrienbanthan",
+    "tienganh",
+    "learnontiktok",
+    "fyp"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.660 --> 00:00:03.539\nmình thú nhận rằng bây giờ mình vẫn còn cái tật\n\n00:00:03.820 --> 00:00:05.739\ntrì hoãn protein này\n\n00:00:06.020 --> 00:00:07.619\nmình biết việc hôm nay chớ để ngày mai\n\n00:00:07.820 --> 00:00:09.290\nvà nếu hôm nay mình chậm một nhịp\n\n00:00:09.291 --> 00:00:10.980\nthì mình chậm hơn người khác bên ngoài rất là nhiều\n\n00:00:11.160 --> 00:00:12.545\nnhưng mà mình cảm thấy\n\n00:00:12.760 --> 00:00:14.379\nmình không có chống lại cái bộ não của mình được\n\n00:00:14.420 --> 00:00:15.819\nCho nên mình đã lên mạng tìm\n\n00:00:15.920 --> 00:00:17.294\nnhững cái lý do vì SAO nó như vậy\n\n00:00:17.465 --> 00:00:19.120\nvà mình tìm được cái bài nghiên cứu\n\n00:00:19.121 --> 00:00:20.881\nrất là dài dòng và học thuật à\n\n00:00:20.882 --> 00:00:23.461\nbạn nào muốn đọc đơn giản hơn thì đọc cái bài báo này\n\n00:00:23.462 --> 00:00:24.601\nha mình sẽ đọc tí xíu\n\n00:00:24.602 --> 00:00:25.495\ntừ cái bài báo này\n\n00:00:25.545 --> 00:00:26.980\nnó nói về 2 lý do chính\n\n00:00:26.981 --> 00:00:28.575\nvì SAO con người mình lại trì hoãn\n\n00:00:28.665 --> 00:00:30.280\nmặc dù bên trong mình cảm thấy rất là tệ\n\n00:00:30.281 --> 00:00:31.815\nbiết nó lại rất là xấu ô kê\n\n00:00:32.159 --> 00:00:33.380\nvà từ khi mình đọc cái bài báo này\n\n00:00:33.381 --> 00:00:35.107\nmình biết 2 cái lý do rất là\n\n00:00:35.213 --> 00:00:35.760\nđúng với mình\n\n00:00:35.761 --> 00:00:37.541\nluôn thì mình đã có những cái giải pháp\n\n00:00:37.542 --> 00:00:39.701\nmà mình thấy cũng rất là hiệu quả so với mình\n\n00:00:39.702 --> 00:00:41.227\nmình sẽ kể Cho với mọi người ô kê\n\n00:00:41.573 --> 00:00:42.586\nlý do đầu tiên\n\n00:00:43.373 --> 00:00:45.666\ncon người mình trì hoãn là bởi vì mình tin rằng\n\n00:00:45.933 --> 00:00:47.306\nđể cái việc đó làm\n\n00:00:47.733 --> 00:00:48.706\nlàm phía sau này á\n\n00:00:49.080 --> 00:00:50.970\nthì nó sẽ dễ hơn thuận lợi hơn nha\n\n00:00:50.971 --> 00:00:54.686\nprotein iting brand ply date task Cub iz enter Future\n\n00:00:54.874 --> 00:00:56.580\nờ cái này ví dụ chuyện đổ\n\n00:00:56.581 --> 00:00:58.021\nrác không có chuyện rất là đơn giản luôn\n\n00:00:58.022 --> 00:00:59.246\nmình cũng chuyển khoản nha mọi người nha\n\n00:00:59.274 --> 00:01:02.165\nví dụ mình nghĩ ngay bây giờ trưa nay phải đi đổ rác\n\n00:01:02.235 --> 00:01:03.402\nnhưng mà tự nhiên mình ngồi\n\n00:01:03.634 --> 00:01:04.685\nmình nghĩ SAO\n\n00:01:04.834 --> 00:01:05.765\ncái mình thấy là\n\n00:01:05.895 --> 00:01:08.134\nđáng lẽ bây giờ nên làm chuyện khác đi ha\n\n00:01:08.160 --> 00:01:09.725\ncòn cái chuyện đổ rác thì để chiều\n\n00:01:10.094 --> 00:01:11.720\nđó chiều là tương Lai đúng hông\n\n00:01:11.721 --> 00:01:12.681\nvà một cái lý do nào đó\n\n00:01:12.682 --> 00:01:14.761\nmình lại nghĩ tới một cái chuyện nó thuận lợi hơn\n\n00:01:14.762 --> 00:01:16.546\nví dụ ờ chiều nay thì\n\n00:01:16.894 --> 00:01:19.651\nờ ờ tiện đi Ra đi làm rồi đổ luôn ha\n\n00:01:19.828 --> 00:01:21.365\nthì đó là mình lại trì hoãn tới chiều\n\n00:01:21.381 --> 00:01:22.370\nnhưng mà khi tới chiều\n\n00:01:22.371 --> 00:01:24.561\nmình lại có cái lý do khác để trì hoãn nó lại\n\n00:01:24.562 --> 00:01:25.201\nqua ngày mai đó\n\n00:01:25.202 --> 00:01:26.512\nmọi người đó thì cái não\n\n00:01:26.628 --> 00:01:29.020\nnhững cái người mà trì hoãn người ta lại nghĩ là ờ\n\n00:01:29.021 --> 00:01:30.732\nđể cái chuyện đó qua lát nữa đi\n\n00:01:30.808 --> 00:01:32.331\nlát nữa nó có điều kiện thuận lợi hơn\n\n00:01:32.588 --> 00:01:33.451\nmình sẽ mình sẽ làm\n\n00:01:33.937 --> 00:01:34.320\ntự nhiên\n\n00:01:34.321 --> 00:01:36.903\nlúc lúc đó mình mới có động lực để mình làm ha\n\n00:01:37.297 --> 00:01:38.271\nmới đầu nghĩ vậy thấy\n\n00:01:38.657 --> 00:01:40.097\nô kê nó rất là hợp lý\n\n00:01:40.098 --> 00:01:42.123\nnhưng mà tự nhiên khi các bạn thấy\n\n00:01:42.177 --> 00:01:44.662\ntới lúc đó mình lại có lý do khác để trì hoãn\n\n00:01:44.857 --> 00:01:45.902\nô kê đó là lý do thứ nhất\n\n00:01:45.937 --> 00:01:46.902\nlý do thứ 2 nè\n\n00:01:47.240 --> 00:01:50.223\nờm procuthnading ở is Mall lightly\n\n00:01:50.502 --> 00:01:52.283\nWen the tas is hot dog\n\n00:01:52.496 --> 00:01:54.783\ncái này thì chắc cũng rất là lo triết khỏi phải nói\n\n00:01:54.916 --> 00:01:58.303\nđặc biệt là những cái nhiệm vụ nào ví dụ như học thêm\n\n00:01:58.800 --> 00:01:59.820\nhọc thêm để phát triển bản thân\n\n00:01:59.821 --> 00:02:00.957\nhọc thêm cái ngôn ngữ nào đó\n\n00:02:01.243 --> 00:02:02.300\nhoặc là một cái chuyện gì đó\n\n00:02:02.301 --> 00:02:04.237\ncác bạn phải đối mặt với sếp của mình đi ha\n\n00:02:04.443 --> 00:02:06.516\nlà phải làm report ô kê ờm\n\n00:02:07.040 --> 00:02:09.510\nthì những cái chuyện mà tự nhiên cái não mình cảm thấy\n\n00:02:09.511 --> 00:02:10.261\nà ờ\n\n00:02:10.262 --> 00:02:12.348\ncái chuyện này nó rất là tạo áp lực\n\n00:02:12.452 --> 00:02:13.987\nvà thậm chí một cái áp lực bé thôi\n\n00:02:14.388 --> 00:02:15.580\nmà tự bên trong á\n\n00:02:15.581 --> 00:02:17.141\nthực sự bên trong các bạn muốn né tránh\n\n00:02:17.142 --> 00:02:18.772\ncó một cái gì đó khiến các bạn muốn né tránh\n\n00:02:18.908 --> 00:02:19.420\nthì tự nhiên\n\n00:02:19.421 --> 00:02:22.012\ncái não mình nó sẽ cứ xếp cái việc đó phía sau cùng\n\n00:02:22.320 --> 00:02:25.120\nlàm gì làm có thể đứng dậy tự nhiên\n\n00:02:25.259 --> 00:02:28.440\nquét một cái nhà không có rác nhưng mà cứ quét đi\n\n00:02:28.519 --> 00:02:30.880\ncứ như trì hoãn để cái việc Kia làm\n\n00:02:31.099 --> 00:02:33.900\ncuối cùng ô kê thì cái giải pháp của mình á\n\n00:02:33.901 --> 00:02:36.781\nlà thú thật mà phải nói với bản thân nè ờ\n\n00:02:36.782 --> 00:02:37.921\nlàm ngay bây giờ\n\n00:02:38.472 --> 00:02:40.347\nchuyện gì làm được làm ngay bây giờ\n\n00:02:40.652 --> 00:02:41.507\nnếu mình để\n\n00:02:42.032 --> 00:02:44.610\nlát nữa mình làm thì sẽ có lý do khác để trì hoãn lại\n\n00:02:44.611 --> 00:02:47.885\nsâu hơn nữa là cái lời mình nói Cho mình thứ nhất nha\n\n00:02:48.075 --> 00:02:49.308\nvà mình thấy nó hiệu quả thiệt\n\n00:02:49.309 --> 00:02:51.981\nmà mỗi lần niệm cái đó là tự nhiên đứng lên làm\n\n00:02:51.982 --> 00:02:52.965\nchứ không có chuyển khoản nữa\n\n00:02:53.035 --> 00:02:56.240\nô kê lý do cái giải pháp thứ 2 là\n\n00:02:56.241 --> 00:02:58.581\ncác bạn đừng có suy nghĩ quá nhiều\n\n00:02:58.582 --> 00:03:00.205\nvề cái chuyện mà mình cần làm\n\n00:03:00.680 --> 00:03:02.911\nthực Ra đôi lúc người ta nói là\n\n00:03:03.008 --> 00:03:06.031\nđể những cái chuyện nó nó tới một cái cách tự nhiên á\n\n00:03:07.048 --> 00:03:09.351\nkhông suy nghĩ tới nha thì tự nhiên mình lại làm\n\n00:03:09.848 --> 00:03:10.263\ntự nhiên\n\n00:03:10.264 --> 00:03:12.112\nđột nhiên mình nghĩ tới cái gì đó mình lại làm\n\n00:03:12.128 --> 00:03:14.500\ncòn hơn mình lên kế hoạch này Kia dữ dội Cho nó lắm\n\n00:03:14.501 --> 00:03:16.131\nmình nghĩ là một cái gì đó to tát\n\n00:03:16.132 --> 00:03:18.192\nkhó khăn lắm thì cái não mọi người á\n\n00:03:18.560 --> 00:03:19.909\nờ Theo cái cơ chế sinh tồn\n\n00:03:20.050 --> 00:03:22.189\ncái gì khó thì để cuối cùng mọi người nha\n\n00:03:22.610 --> 00:03:24.080\ncái gì khó nó sẽ giúp mình tránh\n\n00:03:24.081 --> 00:03:25.590\ntránh tránh xếp cái việc đó cuối cùng\n\n00:03:25.690 --> 00:03:27.774\nmình gọi là thần thánh cái chuyện gì đó quá\n\n00:03:27.865 --> 00:03:29.560\nmình gọi là ưu tiên\n\n00:03:29.561 --> 00:03:31.935\nnghĩ nhiều về cái chuyện đó quá thì mình lại càng\n\n00:03:32.105 --> 00:03:33.254\nờ có Xu hướng chuyển khoản\n\n00:03:33.305 --> 00:03:35.950\nCho nên mọi người tạo cái ờ không khí tạo\n\n00:03:35.951 --> 00:03:36.901\nđừng có tạo cái áp lực\n\n00:03:36.902 --> 00:03:37.935\nkhi mà làm cái chuyện gì đó\n\n00:03:37.985 --> 00:03:39.454\nthì mọi người sẽ bớt chuyển khoản hơn\n\n00:03:39.465 --> 00:03:41.260\nô kê mọi người có thể comment Cho mình biết coi\n\n00:03:41.261 --> 00:03:42.415\nmọi người thử cách nào ha\n\n00:03:42.505 --> 00:03:44.774\nvà cách nào mà nó hiệu quả để bớt trì hoãn hơn\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7265641018375113985-vie-VN.vtt"
+    ],
+    "file": "7265641018375113985-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7265641018375113985",
+   "create_time": "2023-08-10T10:37:59.000Z",
+   "is_slideshow": false,
+   "outlier": 0.16,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@thaodilam1/video/7591799643621657864",
+   "caption": "Sao để hết trì hoãn? #worktips #dilamcogivui #phattrienbanthan #productivity ",
+   "author": {
+    "id": "7347003993938134024",
+    "name": "thaodilam1",
+    "nick": "thaodilam",
+    "profile": "https://www.tiktok.com/@thaodilam1",
+    "fans": 66200
+   },
+   "play_count": 43600,
+   "like_count": 4950,
+   "share_count": 317,
+   "comment_count": 25,
+   "duration_s": 182,
+   "music": {
+    "id": "7591799755731225365",
+    "name": "original sound - thaodilam",
+    "author": "thaodilam",
+    "original": true
+   },
+   "hashtags": [
+    "worktips",
+    "dilamcogivui",
+    "phattrienbanthan",
+    "productivity"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.040 --> 00:00:03.360\nđối với mình á ở đâu có sự lờ mờ thì ở đó sẽ có sự trì hoãn\n\n00:00:03.440 --> 00:00:05.560\nđể có thể trị được cái vấn đề liên quan tới trì hoãn\n\n00:00:05.720 --> 00:00:06.760\nchúng ta phải hiểu được lý do\n\n00:00:06.920 --> 00:00:08.280\nbạn đã bao giờ thấy cái mô hình này chưa\n\n00:00:08.720 --> 00:00:09.600\nthì trong cái mô hình này á\n\n00:00:09.640 --> 00:00:10.880\ntác giả giải thích là cái the work\n\n00:00:11.120 --> 00:00:13.040\nlà cái công việc mà tụi mình làm ở cái khúc ở giữa\n\n00:00:13.400 --> 00:00:15.000\nnó không bao giờ chỉ là cái công việc đó\n\n00:00:15.001 --> 00:00:16.041\nnó luôn có những cái công việc\n\n00:00:16.120 --> 00:00:17.680\ntrước đó hoặc là những cái công việc sau đó\n\n00:00:17.920 --> 00:00:19.840\nthì khi mà mình lên kế hoạch để làm cái the work\n\n00:00:20.000 --> 00:00:20.840\nlà cái công việc chính đó\n\n00:00:20.960 --> 00:00:22.480\nmà mình không có hình dung Ra được là\n\n00:00:22.600 --> 00:00:23.800\nmình cần phải có những cái\n\n00:00:23.840 --> 00:00:25.480\nthời gian và năng lượng cũng như là nguồn lực\n\n00:00:25.560 --> 00:00:26.680\nđể giải quyết những cái công việc\n\n00:00:26.840 --> 00:00:28.400\ntrước cũng như là sau cái the work\n\n00:00:28.760 --> 00:00:30.240\nthì nó sẽ có thể khiến Cho mình\n\n00:00:30.560 --> 00:00:31.560\nờ bị underestimate\n\n00:00:31.640 --> 00:00:32.440\ncó nghĩa là dự trù\n\n00:00:32.480 --> 00:00:34.480\nkhông có chính xác về những cái gì mà mình cần và\n\n00:00:34.520 --> 00:00:35.320\nthời gian mình bỏ Ra\n\n00:00:35.440 --> 00:00:36.000\nliên hệ\n\n00:00:36.001 --> 00:00:37.961\ntới câu chuyện về trì hoãn á đây là cách mình giải thích\n\n00:00:38.040 --> 00:00:38.920\nbây giờ đưa Ra ví dụ\n\n00:00:38.921 --> 00:00:39.761\nha cái trường\n\n00:00:39.800 --> 00:00:40.600\nQuốc mà mình cần làm\n\n00:00:40.601 --> 00:00:42.761\nlà mình cần phải xác định và chốt được cái giờ học tiếng\n\n00:00:42.800 --> 00:00:43.600\nanh cùng với thầy\n\n00:00:43.720 --> 00:00:45.560\nnhưng mà cái câu chuyện là chốt giờ học tiếng\n\n00:00:45.600 --> 00:00:47.520\nanh cùng với thầy nó không bao giờ là một cái việc kiểu\n\n00:00:47.680 --> 00:00:49.080\ncó thể làm trong một 2 phút hết\n\n00:00:49.081 --> 00:00:50.161\nbây giờ mình sẽ phân tích thử\n\n00:00:50.480 --> 00:00:52.320\nnhững cái công việc mình cần làm trước khi\n\n00:00:52.440 --> 00:00:53.160\nmình có thể làm được\n\n00:00:53.161 --> 00:00:53.681\ncái trường quốc\n\n00:00:53.682 --> 00:00:55.201\nlà chốt việc học tiếng anh bao gồm những gì ạ\n\n00:00:55.520 --> 00:00:56.840\ncheck lại lịch của bản thân mình nè\n\n00:00:57.200 --> 00:00:58.040\nchắc lịch của thầy nè\n\n00:00:58.120 --> 00:01:00.560\nở lại thầy thông tin thời lượng học của mỗi buổi nè\n\n00:01:00.600 --> 00:01:01.480\nsẽ check coi cái map\n\n00:01:01.560 --> 00:01:03.400\ntừ nhà mình tới nhà thầy nó có dài hay không\n\n00:01:03.680 --> 00:01:04.720\nthì đây là những cái công việc á\n\n00:01:04.800 --> 00:01:06.680\nnó liên quan đến cái the work\n\n00:01:06.800 --> 00:01:07.920\nlà cái việc chốt học tiếng anh\n\n00:01:08.160 --> 00:01:09.840\nmình cần phải nắm được những cái thông tin này\n\n00:01:09.880 --> 00:01:12.040\nthì mình mới trao đổi về việc là chốt thời gian học được\n\n00:01:12.240 --> 00:01:14.120\nvà trong cái quá trình mình làm cái the work\n\n00:01:14.240 --> 00:01:16.120\nnày nó có những cái việc xảy Ra ở giữa nữa\n\n00:01:16.121 --> 00:01:17.281\nví dụ như là mình phải\n\n00:01:17.520 --> 00:01:18.960\nthí dụ như mình với thầy đang trao đổi với nhau\n\n00:01:19.000 --> 00:01:20.800\nthì có một cái lịch gì nào nào đó nó pop up\n\n00:01:21.040 --> 00:01:23.520\ntừ thầy hoặc là từ mình tụi mình phải trao đổi lại cái sau\n\n00:01:23.521 --> 00:01:25.681\ncái the work này có nghĩa là giả sử như mình và\n\n00:01:25.720 --> 00:01:27.280\nthầy đã chốt được lịch với nhau đi\n\n00:01:27.480 --> 00:01:29.560\nthì nó sẽ có thêm những cái việc cần phải xử lý như là\n\n00:01:29.840 --> 00:01:31.600\nphải gửi lịch nè phải sắp xếp lại những cái\n\n00:01:31.601 --> 00:01:32.401\nlịch khác của mình nè\n\n00:01:32.560 --> 00:01:34.360\nphải trao đổi với những cái bạn học viên khác\n\n00:01:34.361 --> 00:01:36.081\nđể coi là mọi người có đồng ý với cái lịch đó không\n\n00:01:36.082 --> 00:01:37.361\nchẳng hạn thì như các bạn thấy\n\n00:01:37.362 --> 00:01:38.161\nnếu ban đầu á\n\n00:01:38.200 --> 00:01:39.400\nmình Cho cái công việc là\n\n00:01:39.640 --> 00:01:40.560\nchốt lịch học với thầy\n\n00:01:40.600 --> 00:01:42.960\nlà một cái công việc kiểu nó đứng một mình thôi\n\n00:01:43.160 --> 00:01:45.000\nthì mình sẽ thấy là à cái công việc này nó đơn giản thôi\n\n00:01:45.001 --> 00:01:47.081\nđúng hông nhưng mà tại SAO mình mãi mình không bắt đầu được\n\n00:01:47.240 --> 00:01:47.880\nbởi bởi vì\n\n00:01:48.160 --> 00:01:50.720\nvốn dĩ có rất là nhiều những cái công việc nó xung quanh nó\n\n00:01:50.721 --> 00:01:51.401\nrâu ria\n\n00:01:51.402 --> 00:01:53.681\nmà nó cần được thực hiện để cái the work nó được diễn Ra\n\n00:01:53.800 --> 00:01:55.160\nbây giờ nó sẽ có 2 cái trường hợp\n\n00:01:55.200 --> 00:01:56.600\ntrường hợp thứ nhất á là có thể là\n\n00:01:57.000 --> 00:01:57.600\ntừ phía mình\n\n00:01:57.601 --> 00:02:00.081\nmình đã từng làm cái việc này rồi và mình hình dung được là\n\n00:02:00.200 --> 00:02:01.280\nđể chốt được cái lịch học này\n\n00:02:01.281 --> 00:02:02.641\nnó cần rất là nhiều những cái thứ khác\n\n00:02:02.760 --> 00:02:03.800\nnhưng mình đã không ghi Ra\n\n00:02:04.080 --> 00:02:05.760\ndo đó thì mình cứ giữ cái việc đó trì hoãn\n\n00:02:05.800 --> 00:02:06.440\nbởi vì mình biết là\n\n00:02:06.441 --> 00:02:08.081\nmình phải dành rất là nhiều thời gian và năng lượng Cho nó\n\n00:02:08.200 --> 00:02:09.000\nchừng thứ 2\n\n00:02:09.120 --> 00:02:11.200\ncái task này mình không thể bắt đầu được bởi vì SAO ạ\n\n00:02:11.201 --> 00:02:12.281\nbởi vì mình chưa bao giờ làm\n\n00:02:12.480 --> 00:02:13.640\nmình không biết được là\n\n00:02:13.800 --> 00:02:15.600\nmình nên bắt đầu những cái bước đầu là như thế nào\n\n00:02:15.840 --> 00:02:17.560\ntại vì cái câu chuyện là chốt giờ học tiếng anh với thầy\n\n00:02:17.561 --> 00:02:18.521\nnó không bao giờ đơn giản\n\n00:02:18.560 --> 00:02:20.360\nchỉ là mình nhắn tin Cho thầy mình nói là xong\n\n00:02:20.560 --> 00:02:23.840\nthì khi mà mình biết được cái mô hình tiếp cận như thế này\n\n00:02:23.841 --> 00:02:25.761\ná nó khiến Cho mình rõ hơn rất là nhiều lý do\n\n00:02:25.800 --> 00:02:26.920\ntại SAO mà mỗi khi\n\n00:02:27.200 --> 00:02:28.640\ncó một cái vấn đề gì đó xảy Ra\n\n00:02:28.840 --> 00:02:30.200\nmình ngồi mình dự đoán trước\n\n00:02:30.201 --> 00:02:30.881\nmình ghi lại\n\n00:02:30.882 --> 00:02:33.361\nvà mình xác định được những cái công việc mình cần phải làm\n\n00:02:33.640 --> 00:02:35.880\ntrước trong và sau cái the work thực sự đấy\n\n00:02:36.240 --> 00:02:38.160\nnó sẽ giúp mình hình dung được về thời gian về nguồn lực\n\n00:02:38.161 --> 00:02:39.841\nvề năng lượng mình cần có phù hợp hơn\n\n00:02:40.160 --> 00:02:41.880\nthay vì mình chỉ có\n\n00:02:42.000 --> 00:02:44.040\nhình dung là à đó chỉ là một cái task đơn giản thôi\n\n00:02:44.041 --> 00:02:44.921\nkhi nào mình rảnh thì mình làm\n\n00:02:44.960 --> 00:02:46.440\nthì nó sẽ lại trì hoãn mãi mãi luôn\n\n00:02:46.520 --> 00:02:47.040\nnhư thế nào\n\n00:02:47.041 --> 00:02:49.201\ncác bạn có liên hệ được cái mô hình này với lại cái\n\n00:02:49.360 --> 00:02:51.400\ncâu chuyện về trì hoãn của bản thân hông ờ\n\n00:02:51.480 --> 00:02:52.920\ntóm lại cái kết luận của mình ở đây là\n\n00:02:53.160 --> 00:02:54.880\ncái việc mà các bạn không hình dung được\n\n00:02:55.160 --> 00:02:56.800\nnhững cái việc tụi mình cần làm\n\n00:02:56.801 --> 00:02:58.681\nvà cái thời gian thực tế tụi mình cần dành Ra\n\n00:02:58.880 --> 00:02:59.680\nnó là một trong những\n\n00:02:59.880 --> 00:03:01.600\nlý do rất là lớn khiến Cho tụi mình trì hoãn\n\n00:03:01.640 --> 00:03:02.800\nvà không thực hiện cái công việc đó\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7591799643621657864-vie-VN.vtt"
+    ],
+    "file": "7591799643621657864-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7591799643621657864",
+   "create_time": "2026-01-05T09:00:06.000Z",
+   "is_slideshow": false,
+   "outlier": 0.66,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@luathapdan60s/video/7619707529756462343",
+   "caption": "Trì hoãn không tự biến mất, bạn cần 5 cách đúng sau để phá vỡ nó. #manifest #edutok #learnontiktok #luathapdan #luathapdan60s ",
+   "author": {
+    "id": "7386469950200382480",
+    "name": "luathapdan60s",
+    "nick": "LUẬT HẤP DẪN 60s",
+    "profile": "https://www.tiktok.com/@luathapdan60s",
+    "fans": 80500
+   },
+   "play_count": 12900,
+   "like_count": 643,
+   "share_count": 58,
+   "comment_count": 6,
+   "duration_s": 60,
+   "music": {
+    "id": "7619707573079509768",
+    "name": "âm thanh gốc - LUẬT HẤP DẪN 60s",
+    "author": "LUẬT HẤP DẪN 60s",
+    "original": true
+   },
+   "hashtags": [
+    "manifest",
+    "edutok",
+    "learnontiktok",
+    "luathapdan",
+    "luathapdan60s"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.480 --> 00:00:02.000\nlàm năm điều này trong 7 ngày tới\n\n00:00:02.320 --> 00:00:03.640\nvà sự trì hoãn bị ngừng lại\n\n00:00:04.040 --> 00:00:05.800\nđảm bảo lưu điều này như một lời nhắc nhở\n\n00:00:06.480 --> 00:00:08.040\nmột dọn giường ngay khi bạn thức dậy\n\n00:00:08.440 --> 00:00:09.560\n2 thức dậy ít nhất\n\n00:00:09.800 --> 00:00:11.560\n30 phút trước thời gian thức dậy bình thường\n\n00:00:11.800 --> 00:00:14.400\nnếu bạn thức dậy lúc 6 giờ hãy thức dậy lúc 5 giờ 30\n\n00:00:14.720 --> 00:00:16.560\nngay cả khi bạn thức dậy lúc 11 giờ\n\n00:00:16.840 --> 00:00:19.960\nhãy thử thức dậy lúc 10 giờ 33 trước khi Ra khỏi giường\n\n00:00:20.400 --> 00:00:21.760\nnói điều này với chính mình BA lần\n\n00:00:22.280 --> 00:00:23.520\ntôi là người kiến tạo cuộc đời mình\n\n00:00:24.120 --> 00:00:26.080\ntôi chịu trách nhiệm 100% Cho cuộc đời mình\n\n00:00:27.640 --> 00:00:30.160\n4 trong 7 ngày tới bắt đầu đánh răng bằng Tay không thuận\n\n00:00:31.720 --> 00:00:33.440\nnếu bạn đã quen đánh răng bằng Tay phải\n\n00:00:33.680 --> 00:00:35.320\nbắt đầu chuyển nó sang Tay trái của bạn\n\n00:00:35.680 --> 00:00:37.880\nnăm uống một ly nước ngay khi bạn thức dậy\n\n00:00:38.120 --> 00:00:38.920\nkhi bụng đang trống\n\n00:00:39.200 --> 00:00:40.000\nvới thử thách này\n\n00:00:40.040 --> 00:00:41.840\nngay khi bạn bỏ lỡ một trong những điều này\n\n00:00:42.040 --> 00:00:42.840\nvào bất kỳ ngày nào\n\n00:00:44.000 --> 00:00:45.520\nbạn phải bắt đầu lại từ ngày đầu tiên\n\n00:00:46.480 --> 00:00:47.960\ntất cả những điều này có vẻ rất đơn giản\n\n00:00:48.320 --> 00:00:49.200\nnhưng rất có hiệu quả\n\n00:00:49.360 --> 00:00:51.120\ngiúp bạn chiến thắng sự trì hoãn hiệu quả\n\n00:00:51.800 --> 00:00:54.280\nnếu bạn đang muốn thay đổi nhưng chưa biết bắt đầu từ đâu\n\n00:00:54.520 --> 00:00:55.520\nhãy ấn vào link đầu trang\n\n00:00:55.720 --> 00:00:57.640\ntham gia cùng cộng đồng luật hấp dẫn 60 giây\n\n00:00:57.880 --> 00:01:00.320\nđể cùng nhau rèn luyện và xây dựng sự kỷ luật mỗi ngày nhé\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7619707529756462343-vie-VN.vtt"
+    ],
+    "file": "7619707529756462343-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7619707529756462343",
+   "create_time": "2026-03-21T13:56:54.000Z",
+   "is_slideshow": false,
+   "outlier": 0.16,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@realnezzdapoet/video/7706904042181545224",
+   "caption": "Cách Đánh Bại Sự Trì Hoãn  #viral #xuhuong #fyp #nezzthepoet #kyluatbanthan ",
+   "author": {
+    "id": "7516059189951071249",
+    "name": "realnezzdapoet",
+    "nick": "Nezz Da Poet",
+    "profile": "https://www.tiktok.com/@realnezzdapoet",
+    "fans": 2251
+   },
+   "play_count": 53300,
+   "like_count": 7946,
+   "share_count": 1675,
+   "comment_count": 56,
+   "duration_s": 404,
+   "music": {
+    "id": "7706904095264721672",
+    "name": "âm thanh gốc - Nezz Da Poet",
+    "author": "Nezz Da Poet",
+    "original": true
+   },
+   "hashtags": [
+    "viral",
+    "xuhuong",
+    "fyp",
+    "nezzthepoet",
+    "kyluatbanthan"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.080 --> 00:00:03.720\n11:48 đêm Minh nằm trên giường căn phòng tối om\n\n00:00:04.160 --> 00:00:06.440\nánh sáng duy nhất chiếu lên khuôn mặt cậu là màn hình điện\n\n00:00:06.480 --> 00:00:08.000\nthoại Minh nhìn đồng hồ\n\n00:00:08.320 --> 00:00:10.040\ncậu đã định đi ngủ từ 2 tiếng trước\n\n00:00:10.360 --> 00:00:13.440\nnhưng chỉ thêm một video nữa thôi một video về tập gym\n\n00:00:13.960 --> 00:00:15.840\ntiếp Theo là một người đang lái chiếc Porsche\n\n00:00:16.200 --> 00:00:17.360\nrồi một video hài hước\n\n00:00:17.800 --> 00:00:20.160\nsau đó là một câu chuyện về cách kiếm tiền khi còn trẻ\n\n00:00:20.280 --> 00:00:22.040\nmình xem hết video này đến video khác\n\n00:00:22.480 --> 00:00:23.920\ncậu không thực sự quan tâm đến chúng\n\n00:00:24.240 --> 00:00:26.760\nthậm chí đôi khi cậu còn chẳng nhớ mình vừa xem gì\n\n00:00:27.040 --> 00:00:28.360\nnhưng ngón Tay vẫn tiếp tục lướt\n\n00:00:28.920 --> 00:00:30.520\nđột nhiên một thông báo xuất hiện\n\n00:00:31.080 --> 00:00:36.640\nthời gian sử dụng hôm nay 07:36 Minh im lặng 7 tiếng rưỡi\n\n00:00:37.240 --> 00:00:38.320\ncậu nhìn sang bàn học\n\n00:00:38.840 --> 00:00:40.600\ncuốn sách tiếng anh vẫn mở ở trang hôm qua\n\n00:00:41.120 --> 00:00:44.120\nbài tập chưa hoàn thành bộ quần áo tập gym vẫn nằm trên ghế\n\n00:00:44.560 --> 00:00:46.560\nMinh thở dài tắt điện thoại và tự nhủ\n\n00:00:47.080 --> 00:00:48.440\nngày mai mình sẽ thay đổi\n\n00:00:48.840 --> 00:00:52.000\nnhưng Minh đã nói câu đó rất nhiều lần rồi sáng hôm sau\n\n00:00:52.360 --> 00:00:56.440\n07:15 chuông báo thức vang lên Minh mở mắt\n\n00:00:56.640 --> 00:00:59.080\nvới Tay lấy điện thoại cậu định chỉ kiểm tra giờ\n\n00:00:59.280 --> 00:01:01.880\nnhưng một thông báo TikTok xuất hiện một video mới\n\n00:01:02.240 --> 00:01:04.800\nMinh bấm vào năm phút trôi qua\n\n00:01:05.399 --> 00:01:09.800\n10 phút 30 phút đến khi nhận Ra mình đã muộn giờ học\n\n00:01:10.360 --> 00:01:11.720\ncậu vội vàng vệ sinh cá nhân\n\n00:01:11.880 --> 00:01:13.480\nmặc quần áo rồi chạy Ra khỏi nhà\n\n00:01:14.080 --> 00:01:15.040\ntrên đường đến trường\n\n00:01:15.280 --> 00:01:16.680\nMinh vẫn không ngừng nhìn điện thoại\n\n00:01:16.800 --> 00:01:19.400\ncậu nhìn thấy những người cùng tuổi đang tập luyện học tập\n\n00:01:19.560 --> 00:01:21.840\nđi du lịch và đạt được những thành tựu đáng ngưỡng mộ\n\n00:01:22.240 --> 00:01:23.840\nMinh cũng có những mục tiêu như vậy\n\n00:01:24.280 --> 00:01:25.760\ncậu muốn có một cơ thể đẹp hơn\n\n00:01:26.200 --> 00:01:28.560\nmuốn học giỏi tiếng anh muốn kiếm được tiền\n\n00:01:29.040 --> 00:01:31.160\nmuốn trở thành một người thành công trước tuổi 30\n\n00:01:31.600 --> 00:01:32.720\nnhưng có một điều kỳ lạ\n\n00:01:32.920 --> 00:01:34.600\nMinh dành hàng giờ để xem người khác thực hiện\n\n00:01:34.680 --> 00:01:35.480\nước mơ của họ\n\n00:01:35.600 --> 00:01:37.520\ntrong khi chẳng dành nổi 30 phút để xây dựng\n\n00:01:37.560 --> 00:01:38.440\nước mơ của chính mình\n\n00:01:38.800 --> 00:01:40.080\nvà cậu không phải người duy nhất\n\n00:01:40.520 --> 00:01:42.600\ntrong lớp học Minh mở laptop để làm bài\n\n00:01:43.000 --> 00:01:45.400\nnhưng chỉ sau vài phút cậu lại kiểm tra tin nhắn\n\n00:01:45.720 --> 00:01:46.720\nmột video xuất hiện\n\n00:01:47.040 --> 00:01:48.280\nrồi một video khác\n\n00:01:48.520 --> 00:01:50.200\ncậu tự nhủ chỉ xem trong giờ nghỉ\n\n00:01:50.360 --> 00:01:51.640\nnhưng giờ nghỉ kết thúc từ lâu\n\n00:01:51.880 --> 00:01:53.680\ncòn bài tập thì vẫn nằm nguyên trên màn hình\n\n00:01:54.280 --> 00:01:55.440\ntại SAO chuyện này lại xảy Ra\n\n00:01:55.920 --> 00:01:58.880\ntại SAO Minh biết mình cần học cần tập luyện cần làm việc\n\n00:01:59.280 --> 00:02:00.960\nnhưng vẫn không thể ngừng sử dụng điện thoại\n\n00:02:01.520 --> 00:02:04.040\ncâu trả lời nằm trong một cơ chế rất đặc biệt của bộ não\n\n00:02:04.560 --> 00:02:07.200\ndopamin dopamin là một chất dẫn truyền thần kinh đóng vai\n\n00:02:07.280 --> 00:02:08.920\ntrò quan trọng trong động lực học tập\n\n00:02:09.080 --> 00:02:10.400\nvà quá trình dự đoán phần thưởng\n\n00:02:10.720 --> 00:02:12.400\nhãy tưởng tượng Minh đang lướt TikTok\n\n00:02:12.960 --> 00:02:14.600\ncậu không biết video tiếp Theo sẽ là gì\n\n00:02:15.000 --> 00:02:16.000\ncó thể nó chẳng thú vị\n\n00:02:16.360 --> 00:02:18.600\nnhưng cũng có thể đó là một video cực kỳ hài hước\n\n00:02:18.760 --> 00:02:19.720\nmột thông tin bất ngờ\n\n00:02:19.920 --> 00:02:21.560\nhoặc thứ gì đó đúng sở thích của cậu\n\n00:02:22.000 --> 00:02:23.760\nchính sự không chắc chắn này khiến mình muốn\n\n00:02:23.800 --> 00:02:25.520\ntiếp tục cậu không chỉ tìm kiếm niềm vui\n\n00:02:26.160 --> 00:02:27.760\ncậu đang chờ đợi niềm vui tiếp Theo\n\n00:02:28.480 --> 00:02:30.880\nvà cứ như vậy một vòng lặp được hình thành\n\n00:02:31.680 --> 00:02:36.480\nmong đợi lướt nhận phần thưởng rồi tiếp tục mong đợi\n\n00:02:37.400 --> 00:02:39.280\ntrong khi đó những công việc quan trọng\n\n00:02:39.320 --> 00:02:41.440\ntrong cuộc sống lại không mang đến phần thưởng ngay lập tức\n\n00:02:41.560 --> 00:02:42.480\nmuốn có cơ thể đẹp\n\n00:02:42.920 --> 00:02:44.240\nMinh phải tập luyện hàng tháng\n\n00:02:44.760 --> 00:02:47.080\nmuốn giỏi tiếng anh cậu phải học hàng nghìn từ vựng\n\n00:02:47.600 --> 00:02:48.560\nmuốn kiếm được tiền\n\n00:02:48.840 --> 00:02:50.800\ncậu phải xây dựng kỹ năng và chấp nhận 7 bại\n\n00:02:51.360 --> 00:02:52.960\nkhông có nút bấm nào giúp cậu đạt được\n\n00:02:53.000 --> 00:02:54.480\ntất cả những điều đó chỉ trong vài giây\n\n00:02:55.040 --> 00:02:57.000\nvà sau khi quen với những phần thưởng nhanh chóng\n\n00:02:57.360 --> 00:02:58.040\nmình bắt đầu cảm\n\n00:02:58.041 --> 00:02:59.881\nthấy mọi thứ trong cuộc sống thật đều nhàm chán\n\n00:03:00.080 --> 00:03:02.040\nmột buổi chiều mình quyết định thay đổi\n\n00:03:02.400 --> 00:03:04.960\ncậu đặt điện thoại xuống bàn mở sách và bắt đầu học\n\n00:03:05.440 --> 00:03:07.160\nBA phút sau cậu nhìn đồng hồ\n\n00:03:07.680 --> 00:03:09.880\nnăm phút sau cậu bắt đầu thấy khó chịu\n\n00:03:10.400 --> 00:03:13.320\n10 phút sau cậu tự hỏi liệu có tin nhắn nào mới không\n\n00:03:13.800 --> 00:03:16.920\ncuối cùng Minh cầm điện thoại lên chỉ một video thôi\n\n00:03:17.280 --> 00:03:18.440\nvà mọi thứ lại bắt đầu\n\n00:03:18.920 --> 00:03:21.080\ncậu cảm thấy 7 vọng về bản thân nhưng lần này\n\n00:03:21.320 --> 00:03:23.440\nMinh quyết định không tiếp tục đổ lỗi Cho sự thiếu động lực\n\n00:03:24.240 --> 00:03:25.800\ncậu bắt đầu quan sát thói quen của mình\n\n00:03:26.320 --> 00:03:28.800\ncậu nhận Ra điện thoại luôn nằm ngay bên cạnh mỗi khi học\n\n00:03:29.280 --> 00:03:30.440\nthông báo liên tục xuất hiện\n\n00:03:30.800 --> 00:03:32.920\nnhững ứng dụng giải trí chỉ cách một cú chạm\n\n00:03:33.040 --> 00:03:34.400\nà Minh đang cố gắng tập trung\n\n00:03:34.440 --> 00:03:36.560\ntrong khi chính mình liên tục đặt cám dỗ ngay trước mắt\n\n00:03:37.080 --> 00:03:38.440\nvì vậy cậu quyết định\n\n00:03:38.520 --> 00:03:40.320\nthay đổi môi trường trước khi thay đổi bản thân\n\n00:03:40.880 --> 00:03:43.280\nđầu tiên Minh tắt những thông báo không cần thiết\n\n00:03:43.840 --> 00:03:46.760\ntiếp Theo cậu xóa những ứng dụng khiến mình mất kiểm soát\n\n00:03:47.320 --> 00:03:49.400\ncậu đặt điện thoại ở một căn phòng khác mỗi khi học\n\n00:03:49.560 --> 00:03:50.400\nvà quan trọng nhất\n\n00:03:50.600 --> 00:03:51.480\nMinh không còn đặt mục\n\n00:03:51.520 --> 00:03:53.800\ntiêu phải thay đổi toàn bộ cuộc đời chỉ trong một ngày\n\n00:03:54.200 --> 00:03:57.000\ncậu bắt đầu bằng một quy tắc đơn giản năm phút\n\n00:03:57.360 --> 00:03:58.360\nmỗi khi không muốn học\n\n00:03:58.520 --> 00:04:00.760\nMinh chỉ yêu cầu bản thân ngồi xuống học năm phút\n\n00:04:01.360 --> 00:04:04.360\nkhông muốn tập gym chỉ cần mặc quần áo và đến phòng tập\n\n00:04:04.840 --> 00:04:08.520\nkhông muốn đọc sách chỉ cần đọc 2 trang không muốn làm bài\n\n00:04:09.040 --> 00:04:10.880\nchỉ cần mở tài liệu và viết câu đầu tiên\n\n00:04:10.960 --> 00:04:12.560\nnăm phút nghe có vẻ chẳng đáng kể\n\n00:04:12.960 --> 00:04:16.200\nnhưng nó giúp Minh vượt qua thứ khó khăn nhất bắt đầu\n\n00:04:16.840 --> 00:04:18.880\nngày đầu tiên Minh chỉ học được 10 phút\n\n00:04:19.520 --> 00:04:22.640\nngày thứ 2 cậu học được 20 phút ngày thứ BA\n\n00:04:22.920 --> 00:04:24.",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7706904042181545224-vie-VN.vtt"
+    ],
+    "file": "7706904042181545224-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7706904042181545224",
+   "create_time": "2026-11-11T13:23:54.000Z",
+   "is_slideshow": false,
+   "outlier": 23.68,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@namphuongoxford/video/7276813149427240194",
+   "caption": "Làm sao để hết trì hoãn P1! #namphuong #oxford #phiendichvien #dcgr #coach",
+   "author": {
+    "id": "6841582505955574786",
+    "name": "namphuongoxford",
+    "nick": "Nam Phương Oxford",
+    "profile": "https://www.tiktok.com/@namphuongoxford",
+    "fans": 315300
+   },
+   "play_count": 111200,
+   "like_count": 6093,
+   "share_count": 82,
+   "comment_count": 82,
+   "duration_s": 116,
+   "music": {
+    "id": "7276813285331159809",
+    "name": "original sound - Nam Phương Oxford",
+    "author": "Nam Phương Oxford",
+    "original": true
+   },
+   "hashtags": [
+    "namphuong",
+    "oxford",
+    "phiendichvien",
+    "dcgr",
+    "coach"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.021 --> 00:00:02.458\nlàm SAO để vượt qua được sự trì hoãn của bản thân\n\n00:00:04.421 --> 00:00:06.698\nquá khó luôn tại vì tôi vẫn đang trì hoãn mỗi ngày\n\n00:00:07.781 --> 00:00:10.849\nà nói thật với cả nhà a phương là đứa rất là lười\n\n00:00:11.141 --> 00:00:12.658\nhay nói vui trong nhà đó\n\n00:00:12.781 --> 00:00:14.560\nmẹ Nga là đầu tàu ờ\n\n00:00:14.560 --> 00:00:17.160\ncòn lại là phương với BA phương là tính trần như nhau\n\n00:00:17.160 --> 00:00:19.116\nnếu mà không có mẹ Nga chắc là\n\n00:00:19.723 --> 00:00:22.676\n2 BA con nằm không không có làm gì hết a\n\n00:00:22.963 --> 00:00:25.420\nthì cái đây vẫn là một cái a\n\n00:00:25.420 --> 00:00:27.178\nmà có thể gọi là điểm yếu của Phương\n\n00:00:27.223 --> 00:00:28.836\nPhương hoàn toàn ý thức về nó\n\n00:00:29.174 --> 00:00:30.120\nvà Cho tới bây giờ\n\n00:00:30.120 --> 00:00:32.265\nvẫn đang tìm cách vượt qua nó mỗi ngày luôn\n\n00:00:32.314 --> 00:00:34.000\nPhượng thật sự rất là phục các bạn\n\n00:00:34.000 --> 00:00:36.100\nmà có kỷ luật cá nhân Cao nha à\n\n00:00:36.100 --> 00:00:36.900\ncác bạn mà\n\n00:00:36.934 --> 00:00:39.160\nmỗi ngày có một cái danh sách những việc phải làm\n\n00:00:39.160 --> 00:00:40.540\nvà nhất định phải làm xong những việc\n\n00:00:40.540 --> 00:00:42.900\nđó là nếu đến cuối ngày không làm xong việc đó\n\n00:00:42.900 --> 00:00:43.985\nthì không Cho phép mình đi ngủ\n\n00:00:44.665 --> 00:00:47.094\nquá ổn phương vẫn chưa bao giờ làm được\n\n00:00:47.625 --> 00:00:49.160\nvà kể cả không xong việc mà tôi mệt quá\n\n00:00:49.160 --> 00:00:51.854\ntôi vẫn ngủ như thường ờ Cho nên là\n\n00:00:52.065 --> 00:00:53.900\nờ cái mẹo nhỏ của Phương á\n\n00:00:53.900 --> 00:00:56.210\nnó không phải là bí kíp gì kinh khủng đâu\n\n00:00:56.210 --> 00:00:59.374\nnhưng á đó là biết rất rõ mình phải làm gì\n\n00:00:59.709 --> 00:01:02.570\nà thì ít Ra sẽ giúp mình bớt trì hoãn đi\n\n00:01:02.629 --> 00:01:04.360\ntại vì á mình trì hoãn một\n\n00:01:04.360 --> 00:01:06.410\nphần đó là cái lười hoặc là cảm xúc thì không nói rồi\n\n00:01:06.661 --> 00:01:08.610\nnhưng mà cá nhân phương á rất là hay trì hoãn\n\n00:01:08.789 --> 00:01:10.410\nkhi mình thấy cái việc đó nó quá khó\n\n00:01:10.589 --> 00:01:12.180\nhoặc là nó quá phức tạp à\n\n00:01:12.180 --> 00:01:13.810\nnó quá lớn mình không biết bắt đầu từ đâu\n\n00:01:14.185 --> 00:01:15.920\nvà mình cứ nghĩ là vậy thôi\n\n00:01:15.920 --> 00:01:18.495\nđể sau bao giờ mình thư thả thì mình nghĩ về nó\n\n00:01:18.525 --> 00:01:20.380\nnhưng không mình sẽ không bao giờ thư thả đâu\n\n00:01:20.380 --> 00:01:21.855\ntại vì mình sẽ lười hoài nha\n\n00:01:21.865 --> 00:01:23.520\nCho nên là cái mẹo nhỏ của Phương là gì\n\n00:01:23.520 --> 00:01:25.055\nchúng ta hãy chia nhỏ mọi thứ Ra\n\n00:01:25.265 --> 00:01:26.615\nvà chia nhỏ mọi thứ Ra và\n\n00:01:27.250 --> 00:01:29.189\nhãy gặp được đầu dòng những cái thứ cụ thể\n\n00:01:29.330 --> 00:01:31.549\ncái việc gì nhỏ dễ làm làm được ngay\n\n00:01:31.770 --> 00:01:33.389\nà thì mình xác định trước đi\n\n00:01:33.530 --> 00:01:34.574\ncó thể bây giờ mình lười\n\n00:01:34.630 --> 00:01:36.909\nnhưng tới lúc mà cơn lười nó nguôi đi á\n\n00:01:37.090 --> 00:01:39.055\nthì mình biết liền mình phải làm gì à\n\n00:01:39.055 --> 00:01:40.113\nkhi đó mình Lao vào làm\n\n00:01:40.206 --> 00:01:42.740\nlà coi như mình đã vượt qua được sự trì hoãn rồi đó à\n\n00:01:42.740 --> 00:01:43.953\nnên là à\n\n00:01:43.966 --> 00:01:45.913\nbản thân phương vẫn cần đối mặt với nó mỗi ngày\n\n00:01:45.986 --> 00:01:47.673\nnhưng cái mẹo của Phương đó là\n\n00:01:47.766 --> 00:01:50.353\nchia nhỏ mọi thứ Ra thành những cái việc rất cụ thể\n\n00:01:50.646 --> 00:01:51.913\nthì nó sẽ giúp mình\n\n00:01:52.246 --> 00:01:53.993\nphần nào vượt qua được sự trì hoãn đó\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7276813149427240194-vie-VN.vtt"
+    ],
+    "file": "7276813149427240194-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7276813149427240194",
+   "create_time": "2023-09-09T13:11:56.000Z",
+   "is_slideshow": false,
+   "outlier": 0.35,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@hoaquynh0000/video/7710894949679566087",
+   "caption": "Có dk nè #xuhuongtiktok #phattrienbanthan #chualanhtamhon  #nangluong #suckhoe ",
+   "author": {
+    "id": "16395636",
+    "name": "hoaquynh0000",
+    "nick": "Hoa Quỳnh Nở 00.00",
+    "profile": "https://www.tiktok.com/@hoaquynh0000",
+    "fans": 666700
+   },
+   "play_count": 272300,
+   "like_count": 11200,
+   "share_count": 882,
+   "comment_count": 433,
+   "duration_s": 379,
+   "music": {
+    "id": "7710895066834963218",
+    "name": "âm thanh gốc",
+    "author": "Hoa Quỳnh Nở 00.00",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuongtiktok",
+    "phattrienbanthan",
+    "chualanhtamhon",
+    "nangluong",
+    "suckhoe"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.200 --> 00:00:01.640\nsuy Cho cùng á trong cuộc đời này\n\n00:00:01.641 --> 00:00:03.641\ncó 2 loại người các bạn không nên gặp lại\n\n00:00:03.680 --> 00:00:05.040\nđó là những người đã chia Tay\n\n00:00:05.080 --> 00:00:07.280\nly hôn rồi các bạn gặp lại Chi Cho mất thời gian\n\n00:00:07.640 --> 00:00:10.240\ncái người thứ 2 là bạn bè đã từng thân thiết với chúng ta\n\n00:00:10.720 --> 00:00:11.720\ngặp lại nó bị khớp\n\n00:00:12.280 --> 00:00:14.600\ntốt nhất á là khỏi gặp luôn mà vũ trụ hay lắm\n\n00:00:14.880 --> 00:00:15.880\ncòn duyên á các bạn\n\n00:00:15.881 --> 00:00:18.041\nđi đâu các bạn cũng gặp mà không còn duyên á\n\n00:00:18.080 --> 00:00:19.480\ncác bạn có ở Chung một thành phố\n\n00:00:19.760 --> 00:00:21.880\nthì các bạn cũng không bao giờ gặp lại người đó\n\n00:00:22.120 --> 00:00:22.920\nthấy hay hông\n\n00:00:23.000 --> 00:00:24.160\ncổ nhân ta có câu\n\n00:00:24.680 --> 00:00:27.200\nkhi mà đã Chung chăn rồi mà đã tình chia cắt rồi\n\n00:00:27.240 --> 00:00:28.680\nthì gặp nhau lại Chi Cho nó đớn đau\n\n00:00:28.681 --> 00:00:31.041\ncuộc đời tình bạn nó cũng vậy các bạn à\n\n00:00:31.320 --> 00:00:32.480\nnó khổ đau nhiều lắm\n\n00:00:32.880 --> 00:00:34.600\nhồi xưa chúng ta đã từng rất thân với nhau\n\n00:00:34.601 --> 00:00:35.361\nnhưng mà đến một ngày\n\n00:00:35.362 --> 00:00:37.121\nchúng ta nhìn nhau như là một cái bóng dáng mà\n\n00:00:37.240 --> 00:00:39.720\nkiểu không bao giờ muốn gặp lại cái phiên bản đó luôn\n\n00:00:39.760 --> 00:00:40.960\ncác bạn đã từng như vậy chưa\n\n00:00:41.480 --> 00:00:42.280\ntiếp nè các bạn\n\n00:00:42.400 --> 00:00:44.000\ncó những chuyện á trong cuộc sống này á\n\n00:00:44.040 --> 00:00:45.080\ncác bạn đừng có quan tâm\n\n00:00:45.320 --> 00:00:48.040\nđặc biệt là nếu họ hàng mà người ta hông để mình trong Tim á\n\n00:00:48.320 --> 00:00:49.760\nthì tội gì các bạn phải gặp họ hàng\n\n00:00:49.880 --> 00:00:51.280\nnhiều khi cũng chả cần gặp\n\n00:00:51.680 --> 00:00:53.400\nkể cả bạn bè mà chơi với nhau mà\n\n00:00:53.401 --> 00:00:55.881\nnó cũng để mình trong Tim thì gặp Chi Cho nó mất thời gian\n\n00:00:56.120 --> 00:00:59.440\nđó AI quý mến mình thì mình gặp còn AI không quý mến mình\n\n00:00:59.480 --> 00:01:01.720\nAI né tránh mình thì mình tự mình rút lui đến\n\n00:01:01.721 --> 00:01:03.281\nChi cũng làm vững ngập phương án cũ\n\n00:01:03.282 --> 00:01:04.921\nbảo tàng năng lượng Cho các bạn\n\n00:01:05.200 --> 00:01:06.280\ntrong cái cuộc đời này\n\n00:01:06.281 --> 00:01:07.961\ná các bạn phải ghi nhớ thêm một cái điều nữa là\n\n00:01:07.962 --> 00:01:08.921\ncác bạn đừng đi vay\n\n00:01:09.000 --> 00:01:11.040\ntiền những cái người đang thơ Tuấn Tuấn thiếu\n\n00:01:11.320 --> 00:01:12.920\nngười ta có tiền đâu mà các bạn đi vay\n\n00:01:13.440 --> 00:01:14.000\nnhững người đó\n\n00:01:14.001 --> 00:01:15.081\nhọ hay thật thà lắm\n\n00:01:15.120 --> 00:01:16.920\ncó nhiều họ Cho các bạn mượn nhưng đến khi mà\n\n00:01:17.200 --> 00:01:18.880\ntrả lại mà mình không trả được coi như\n\n00:01:19.240 --> 00:01:20.040\ntội nghiệp họ\n\n00:01:20.360 --> 00:01:22.040\ncòn đối với người giàu thì bạn đừng có ban phát\n\n00:01:22.200 --> 00:01:23.080\nbất cứ điều gì á\n\n00:01:23.120 --> 00:01:24.320\nngười ta nói là khinh thường người giàu\n\n00:01:24.480 --> 00:01:26.520\nlạ lùng vậy đó ừ người giàu hông cần Cho\n\n00:01:26.880 --> 00:01:28.360\nđể Cho người giàu người ta Cho mình thôi\n\n00:01:28.361 --> 00:01:30.441\nnó lạ lùng cái sĩ diện đó các bạn ừ\n\n00:01:30.600 --> 00:01:31.680\nbạn thấy để ý có đúng hông\n\n00:01:32.000 --> 00:01:33.720\ncuộc đời này có BA cái thứ các bạn đừng có ngại\n\n00:01:33.721 --> 00:01:34.401\nđó là tuổi tác\n\n00:01:34.402 --> 00:01:35.361\ncô đơn và tương Lai\n\n00:01:36.080 --> 00:01:37.000\ntuổi tác có gì đâu\n\n00:01:37.160 --> 00:01:38.960\ntuổi tác chỉ là con số thôi linh hồn mình\n\n00:01:39.320 --> 00:01:41.680\nmình học được cái bài học nào thì mình tới cái khúc đó thôi\n\n00:01:42.040 --> 00:01:43.880\ntuổi tác chưa bao giờ với tôi là một vấn đề\n\n00:01:44.280 --> 00:01:44.920\ntôi nói thiệt\n\n00:01:44.921 --> 00:01:46.601\nnhiều khi bây giờ tôi soi gương trên khuôn mặt của tôi\n\n00:01:46.602 --> 00:01:49.361\nnó già á chứ mấy bà cười nó nhăn nhúm nên tôi cũng cười thôi\n\n00:01:49.560 --> 00:01:50.360\nnhưng mà thôi kệ\n\n00:01:50.760 --> 00:01:52.760\ncon người nào mà con người hổng già đúng hông\n\n00:01:52.920 --> 00:01:54.040\ncái thứ 2 là cô đơn\n\n00:01:54.440 --> 00:01:56.440\ncô đơn là cái chuyện tất yếu của một đời người\n\n00:01:56.800 --> 00:01:58.000\nchính vì chúng ta tham ái\n\n00:01:58.240 --> 00:01:59.320\nchúng ta sợ cô đơn\n\n00:01:59.560 --> 00:02:02.400\nchúng ta mới chạy Theo đám bạn này chạy Theo con người Kia\n\n00:02:02.480 --> 00:02:03.280\ntình yêu này\n\n00:02:03.360 --> 00:02:05.240\nngồi trong một căn phòng mà chúng ta đã thấy buồn rồi\n\n00:02:05.440 --> 00:02:06.240\ncó đúng hông\n\n00:02:06.360 --> 00:02:09.160\nđừng có sợ cô đơn có gì đâu sợ tương Lai nữa các bạn\n\n00:02:09.560 --> 00:02:10.600\ntương Lai mà chưa tới\n\n00:02:10.601 --> 00:02:12.281\nmà trong đầu đã nhiều cái nỗi lo âu rồi\n\n00:02:12.360 --> 00:02:14.880\nthì làm SAO mà các bạn tập trung Cho hiện tại các bạn được\n\n00:02:15.120 --> 00:02:18.000\nnên tất cả những cái thứ đó các bạn đừng quan tâm đó rồi\n\n00:02:18.001 --> 00:02:18.801\ncác bạn biết hông\n\n00:02:19.400 --> 00:02:21.560\nkhi mà các bạn bớt quan tâm những cái thứ đó đi\n\n00:02:21.561 --> 00:02:22.881\ncác bạn sống vui vẻ xong\n\n00:02:23.080 --> 00:02:25.280\nsống chánh niệm á chánh niệm là 2 một một\n\n00:02:25.720 --> 00:02:27.800\nnay mình nhìn trời đất đẹp quá thì mình yêu trời đất thôi\n\n00:02:27.801 --> 00:02:28.681\nhôm nay mình ăn món này ngon\n\n00:02:28.682 --> 00:02:30.001\nmình thấy ăn ngon thì mình khen thôi\n\n00:02:30.160 --> 00:02:31.480\nnó khỏe chưa các bạn khỏe Ra\n\n00:02:31.840 --> 00:02:33.880\nrồi cổ xưa lại bày chúng ta như thế này\n\n00:02:34.080 --> 00:02:36.520\ncuộc đời này có 4 cái thứ các bạn đừng có cười nhạo\n\n00:02:37.200 --> 00:02:39.560\nđó là cái gì đó các bạn biết hông bệnh tật nha\n\n00:02:40.440 --> 00:02:43.320\nừ thiên Tai nha nhân họa nha khuyết tật nha\n\n00:02:43.640 --> 00:02:45.480\nđừng cười trên sự đau khổ của người khác\n\n00:02:45.760 --> 00:02:47.880\nthì chúng ta sẽ không bao giờ biết rằng đến một ngày chúng\n\n00:02:47.920 --> 00:02:48.960\nta sẽ y Chang như họ\n\n00:02:49.080 --> 00:02:51.200\nđâu AI biết được Tai họa nó sẽ đến đâu các bạn\n\n00:02:51.440 --> 00:02:54.520\nnhân họa là cái gì họa từ con người mà tới đó các bạn\n\n00:02:54.800 --> 00:02:58.760\ntrời ơi thị phi bao vây đơn giản lắm đầy đầy rẫy\n\n00:02:59.200 --> 00:03:01.320\nhôm nay các bạn ổn chứ ngày mai các bạn chưa chắc ổn\n\n00:03:01.400 --> 00:03:03.120\nthiên Tai cũng vậy hông AI nói trước được\n\n00:03:03.320 --> 00:03:04.120\nhôm nay trời nắng\n\n00:03:04.121 --> 00:03:06.081\nnhưng hông có nghĩa là ngày mai trời hông bão ớ\n\n00:03:06.320 --> 00:03:07.920\ntui đi phượt tui thấy má ơi hôm nay trời bão\n\n00:03:07.960 --> 00:03:10.000\ndã man SAO ngày hôm sau trời nắng là chuyện bình thường\n\n00:03:10.280 --> 00:03:12.000\nmình đừng có cười nhạo trên những cái thứ\n\n00:03:12.120 --> 00:03:13.480\ngọi là đau khổ của con người khác\n\n00:03:13.840 --> 00:03:14.920\ntại vì khi mình cười nhạo\n\n00:03:14.921 --> 00:03:16.761\nđến một ngày mình hấp thụ đúng cái năng lượng đó luôn\n\n00:03:16.880 --> 00:03:18.400\nnó sẽ đến với cái cuộc đời của mình\n\n00:03:18.600 --> 00:03:20.320\nlúc đó mình hông vui vẻ mà không an lạc\n\n00:03:20.321 --> 00:03:22.401\nlà mình cũng không thể nào vượt qua khỏi những khổ đau\n\n00:03:22.720 --> 00:03:26.000\ntôi thấy tôi rằng á con người ở năm 31 và 33 tuổi\n\n00:03:26.360 --> 00:03:28.400\ncái năm đó là bước lui bước tới rất khổ\n\n00:03:28.800 --> 00:03:30.720\ntôi đã chứng kiến rất nhiều cái bạn trẻ rồi\n\n00:03:31.360 --> 00:03:32.720\nBA mốt cũng hông xong tật\n\n00:03:32.800 --> 00:03:34.160\nmà BA BA cũng hông xong tật\n\n00:03:34.360 --> 00:03:36.400\nnhưng các bạn trẻ phải hiểu rằng là những cái\n\n00:03:36.560 --> 00:03:37.680\ngiai đoạn đó các bạn phải\n\n00:03:37.880 --> 00:03:39.320\ncó một cái tâm thế vững chãi\n\n00:03:39.960 --> 00:03:42.480\ncác bạn phải bước qua cái giai đoạn khó khăn đó ớ\n\n00:03:42.920 --> 0",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7710894949679566087-vie-VN.vtt"
+    ],
+    "file": "7710894949679566087-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710894949679566087",
+   "create_time": "2026-11-22T07:30:47.000Z",
+   "is_slideshow": false,
+   "outlier": 2.99,
+   "basis": "author_median"
+  },
+  {
+   "url": "https://www.tiktok.com/@tramdungtrithuc/video/7710946714219236626",
+   "caption": "Bị nói kháy đừng giải thích, hãy \"lặp lại và hỏi ngược\" 🎯 Bạn từng bị nói kháy câu nào? 👇\n📚 Sách \"EQ Đỉnh Cao\" ở link trong giỏ hàng\n#giaotiep #ungxu #congso #eq #phattrienbanthan #sachhay #learnontiktok #tramdungtrithuc",
+   "author": {
+    "id": "7013208580368466946",
+    "name": "tramdungtrithuc",
+    "nick": "Trạm Dừng Tri Thức",
+    "profile": "https://www.tiktok.com/@tramdungtrithuc",
+    "fans": 75400
+   },
+   "play_count": 1100000,
+   "like_count": 54600,
+   "share_count": 6746,
+   "comment_count": 549,
+   "duration_s": 408,
+   "music": {
+    "id": "7710948690834508564",
+    "name": "âm thanh gốc - Trạm Dừng Tri Thức",
+    "author": "Trạm Dừng Tri Thức",
+    "original": true
+   },
+   "hashtags": [
+    "giaotiep",
+    "ungxu",
+    "congso",
+    "eq",
+    "phattrienbanthan",
+    "sachhay",
+    "learnontiktok",
+    "tramdungtrithuc"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:02.240\nkhi bị người khác xúc phạm mà không kịp phản ứng\n\n00:00:02.440 --> 00:00:03.840\nhãy hỏi ngược lại đúng câu này\n\n00:00:04.000 --> 00:00:05.840\nbạn đã bao giờ trải qua cảm giác này chưa\n\n00:00:06.000 --> 00:00:08.200\nlúc bị người ta mỉa mai thì không thốt nên lời\n\n00:00:08.360 --> 00:00:11.040\nnhưng về đến nhà rồi thì miệng bỗng dưng trở nên sắc bén\n\n00:00:11.080 --> 00:00:13.120\nlạ thường trước đây tôi cũng y như vậy\n\n00:00:13.400 --> 00:00:14.760\nngười khác nói kháy tôi một câu\n\n00:00:15.000 --> 00:00:18.280\ntôi đứng đơ Ra 2 giây tại chỗ sau đó cười trừ một cái\n\n00:00:18.400 --> 00:00:20.360\nđợi đến lúc tan làm ngồi lên tàu điện ngầm\n\n00:00:20.560 --> 00:00:22.680\nđầu óc mới bắt đầu tua đi tua lại điên cuồng\n\n00:00:22.840 --> 00:00:24.640\nvừa nãy SAO mình không nói thế này nhỉ\n\n00:00:24.840 --> 00:00:26.320\ntức nhất là câu trả lời hay nhất\n\n00:00:26.360 --> 00:00:28.160\nluôn xuất hiện sau khi sự việc đã kết thúc\n\n00:00:28.320 --> 00:00:31.080\ntôi cứ luôn nghĩ đó là do mình vụng miệng phản ứng chậm\n\n00:00:31.280 --> 00:00:33.040\nsau này mới biết vấn đề thực sự\n\n00:00:33.080 --> 00:00:34.400\nkhông phải là không biết nói chuyện\n\n00:00:34.520 --> 00:00:36.480\nmà là ngay khoảnh khắc người khác xúc phạm bạn\n\n00:00:36.680 --> 00:00:38.240\nbạn vẫn đang bận phán đoán xem\n\n00:00:38.280 --> 00:00:39.640\ncó phải họ có ý đó thật không\n\n00:00:39.800 --> 00:00:41.280\ncó phải mình nhạy cảm quá không\n\n00:00:41.640 --> 00:00:43.840\nnếu mình bật lại thì có tỏ Ra khó gần không\n\n00:00:44.000 --> 00:00:46.000\nđợi đến lúc bạn nghĩ thông suốt BA chuyện này\n\n00:00:46.160 --> 00:00:47.760\nthì người ta đã đi từ đời nào rồi\n\n00:00:47.960 --> 00:00:50.040\nbây giờ hãy viết ngay Cho mình 4 chữ\n\n00:00:50.440 --> 00:00:51.680\nlặp lại và hỏi ngược\n\n00:00:51.800 --> 00:00:53.280\nkhi bạn gõ xuống 4 chữ này\n\n00:00:53.400 --> 00:00:55.240\nchính là để nhắc nhở bản thân khi đột\n\n00:00:55.241 --> 00:00:56.041\nngột bị xúc phạm\n\n00:00:56.280 --> 00:00:58.200\nkhông cần phải lập tức nghĩ Ra một câu phản công\n\n00:00:58.240 --> 00:00:59.080\nthật ngầu làm gì\n\n00:00:59.200 --> 00:01:01.400\nhãy nhặt chính câu nói mà đối phương vừa thốt Ra\n\n00:01:01.600 --> 00:01:03.680\nbắt họ tự giải thích rất nhiều sự ác ý\n\n00:01:04.200 --> 00:01:06.040\nthứ chúng sợ nhất không phải là bạn chửi lại\n\n00:01:06.240 --> 00:01:08.560\nmà là bạn bắt họ phải nói rõ ràng ý tứ Ra\n\n00:01:08.760 --> 00:01:10.160\nphương pháp này là do chị lý\n\n00:01:10.360 --> 00:01:12.040\n1đ nghiệp cũ của tôi dạy Cho tôi\n\n00:01:12.160 --> 00:01:13.400\ncó một lần liên hoan phòng ban\n\n00:01:13.800 --> 00:01:15.840\ntôi vừa mới nhận được một dự án tương đối quan trọng\n\n00:01:16.000 --> 00:01:16.800\ntrong bữa tiệc\n\n00:01:16.801 --> 00:01:19.601\n1đ nghiệp Nam uống vài ly rồi đột nhiên cười hỏi tôi\n\n00:01:19.720 --> 00:01:22.120\ntiểu lưu dạo này em thân thiết với sếp ghê nhở\n\n00:01:22.480 --> 00:01:24.960\nthảo nào dự án ngon đều giao hết Cho em đúng không\n\n00:01:25.200 --> 00:01:26.800\ntrên bàn có mấy người đều nghe thấy\n\n00:01:27.040 --> 00:01:28.760\nđầu óc tôi lúc đó đơ Ra một thoáng\n\n00:01:29.000 --> 00:01:31.160\nbảo anh ta đang mắng tôi thì anh ta không mắng\n\n00:01:31.360 --> 00:01:34.240\nbảo anh ta đang nói đùa thì ý tứ lại giành giành Ra đó\n\n00:01:34.440 --> 00:01:36.240\ntôi nhận được dự án không phải vì năng lực\n\n00:01:36.400 --> 00:01:38.440\nmà là vì đi cửa sau quan hệ với sếp\n\n00:01:38.560 --> 00:01:40.840\nthế nhưng phản ứng đầu tiên của tôi lúc đó là gì\n\n00:01:41.360 --> 00:01:43.760\ngiải thích tôi vội vàng nói đâu có đâu anh\n\n00:01:44.040 --> 00:01:46.160\ndự án này trước giờ em vẫn luôn Theo sát mà\n\n00:01:46.440 --> 00:01:48.440\nvả lại dạo này phòng cũng đang thiếu người thật\n\n00:01:48.600 --> 00:01:50.800\nnói được một nửa chính tôi cũng thấy Sai Sai\n\n00:01:51.200 --> 00:01:52.200\ntại SAO mình phải giải thích\n\n00:01:52.520 --> 00:01:54.160\nnhưng lời đã lỡ nói Ra rồi\n\n00:01:54.400 --> 00:01:56.200\nanh đồng nghiệp Nam Kia cười khẩy một cái\n\n00:01:56.560 --> 00:01:58.800\nanh có nói gì đâu em nghiêm túc thế làm gì\n\n00:01:59.000 --> 00:02:00.520\ntrên bàn có người hùa Theo cười\n\n00:02:00.880 --> 00:02:02.200\ntôi cũng chỉ đành cười gượng gạo\n\n00:02:02.360 --> 00:02:04.200\nhôm sau tôi kể chuyện này với chị lý\n\n00:02:04.560 --> 00:02:07.480\nchị ấy nghe xong chỉ hỏi tôi nguyên văn anh ta nói thế nào\n\n00:02:07.680 --> 00:02:09.920\ntôi bảo anh ta nói tôi thân thiết với sếp\n\n00:02:10.200 --> 00:02:13.400\nthảo nào dự án tốt đến lượt tôi chị lý nhìn tôi rồi nói\n\n00:02:13.800 --> 00:02:14.960\nthế SAO em không hỏi anh ta\n\n00:02:15.200 --> 00:02:17.440\ný anh nói chữ thảo nào là có nghĩa gì\n\n00:02:17.640 --> 00:02:19.560\ntôi ngẩn người Ra một lúc chị ấy nói tiếp\n\n00:02:19.920 --> 00:02:22.680\nlúc đó em hoàn toàn không cần nghĩ cách bật lại anh ta\n\n00:02:22.880 --> 00:02:24.840\nem chỉ cần bắt anh ta tự giải thích chữ\n\n00:02:24.920 --> 00:02:26.840\nthảo nào của anh ta có nghĩa là gì thôi\n\n00:02:27.000 --> 00:02:28.520\nđầu óc tôi bỗng dưng thông suốt\n\n00:02:28.640 --> 00:02:31.880\nnếu lúc đó tôi hỏi ý anh nói thảo nào là có nghĩa gì\n\n00:02:32.240 --> 00:02:33.520\nanh ta chỉ có 2 con đường\n\n00:02:33.680 --> 00:02:36.680\nthứ nhất anh ta nói không có ý gì đùa thôi\n\n00:02:36.840 --> 00:02:38.320\nthứ 2 anh ta thừa nhận\n\n00:02:38.480 --> 00:02:41.320\ný anh là em không phải dựa vào năng lực để lấy dự án\n\n00:02:41.480 --> 00:02:42.960\nmà là vì quan hệ tốt với sếp\n\n00:02:43.040 --> 00:02:43.680\nđúng không\n\n00:02:43.681 --> 00:02:46.041\nanh ta có dám nói chữ đúng trước mặt cả bàn tiệc không\n\n00:02:46.400 --> 00:02:47.520\nkhả năng Cao là không dám\n\n00:02:47.720 --> 00:02:50.120\nchị lý đã nói một câu mà tôi nhớ đến tận bây giờ\n\n00:02:50.320 --> 00:02:53.080\ntại SAO về đến nhà rồi em lại nói năng sắc sảo như thế\n\n00:02:53.440 --> 00:02:54.640\nbởi vì về đến nhà rồi\n\n00:02:54.760 --> 00:02:56.840\nem đã chắc chắn là anh ta đang xúc phạm em\n\n00:02:57.080 --> 00:02:57.760\nngay tại trận\n\n00:02:57.761 --> 00:02:58.801\nem không nói nên lời\n\n00:02:58.840 --> 00:03:01.480\nlà bởi vì một nửa bộ não của em đang nghĩ cách trả lời\n\n00:03:01.600 --> 00:03:02.760\ncòn một nửa bộ não khác\n\n00:03:02.800 --> 00:03:04.760\nvẫn đang tìm cớ bảo chữa thay Cho anh ta\n\n00:03:05.000 --> 00:03:06.400\nsau này tôi đã áp dụng thật\n\n00:03:06.760 --> 00:03:07.520\nkhi họp tuần\n\n00:03:07.521 --> 00:03:10.281\ntôi vừa báo cáo xong một phương án 1đ nghiệp thâm niên hơn\n\n00:03:10.360 --> 00:03:12.000\ntôi tựa lưng vào ghế nói\n\n00:03:12.280 --> 00:03:14.040\ný tưởng này của tiểu lưu táo bạo đấy\n\n00:03:14.400 --> 00:03:15.600\nngười trẻ đúng là dám nghĩ\n\n00:03:15.800 --> 00:03:17.400\nnghe thì có vẻ như đang khen tôi\n\n00:03:17.600 --> 00:03:20.960\nnhưng cả phòng họp AI cũng hiểu ngầm ý là trẻ người non dạ\n\n00:03:21.120 --> 00:03:21.920\nthiếu chín chắn\n\n00:03:22.040 --> 00:03:24.240\ntrước đây chắc chắn tôi sẽ bắt đầu tự chứng Minh\n\n00:03:24.440 --> 00:03:25.520\nkiểu như cái này\n\n00:03:25.560 --> 00:03:27.000\ntrước đây bọn em đã làm thử nghiệm rồi\n\n00:03:27.120 --> 00:03:28.680\nnhưng lần đó tôi không giải thích\n\n00:03:29.040 --> 00:03:30.120\ntôi nhìn anh ta và nói\n\n00:03:30.320 --> 00:03:32.040\nanh nói người trẻ dám nghĩ\n\n00:03:32.240 --> 00:03:34.720\nlà anh thấy phương án này chưa chín chắn ở chỗ nào ạ\n\n00:03:34.960 --> 00:03:37.400\nanh ta khựng lại một chút cũng không phải\n\n00:03:37.680 --> 00:03:39.200\nanh chỉ thấy hơi táo bạo thôi\n\n00:03:39.360 --> 00:03:42.440\ntôi hỏi tiếp cụ thể là phần nào anh thấy rủi ro lớn hơn ạ\n\n00:03:42.680 --> 00:03:44.280\nanh ta cứng họng không nói Ra được\n\n00:03:44.480 --> 00:03:46.680\ncuối cùng chỉ đành nói không có gì\n\n00:03:46.960 --> 00:03:49.400\nanh chỉ tiện miệng nhận xét một câu thôi tôi gật đầu\n\n00:03:49.680 --> 00:03:51.640\nvâng nếu có rủi ro cụ thể nào\n\n00:03:51.720 --> 00:03:53.800\nanh cứ chỉ Ra để chúng ta thảo luận trực tiếp nhá\n\n00:03:54.160 --> 00:03:55.120\nrồi tiếp tục cuộc họp\n\n00:03:55.240 --> 00:03:57.320\nkhông hề cãi vã cũng chẳng mỉa mai lại\n\n00:03:57.440 --> 00:03:59.120\nnhưng khoảnh khắc đó cực kỳ hả hê\n\n00:03:59.360 --> 00:04:01",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7710946714219236626-vie-VN.vtt"
+    ],
+    "file": "7710946714219236626-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710946714219236626",
+   "create_time": "2026-11-22T10:51:34.000Z",
+   "is_slideshow": false,
+   "outlier": 14.59,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@hoaquynh0000/video/7712400884570852615",
+   "caption": "Đúng không nè #xuhuongtiktok #learnontiktok #phattrienbanthan #chualanhtamhon #nhantuonghoc",
+   "author": {
+    "id": "16395636",
+    "name": "hoaquynh0000",
+    "nick": "Hoa Quỳnh Nở 00.00",
+    "profile": "https://www.tiktok.com/@hoaquynh0000",
+    "fans": 666700
+   },
+   "play_count": 89400,
+   "like_count": 5229,
+   "share_count": 206,
+   "comment_count": 62,
+   "duration_s": 333,
+   "music": {
+    "id": "7712401010920131349",
+    "name": "âm thanh gốc",
+    "author": "Hoa Quỳnh Nở 00.00",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuongtiktok",
+    "learnontiktok",
+    "phattrienbanthan",
+    "chualanhtamhon",
+    "nhantuonghoc"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.200 --> 00:00:00.640\ncác bạn có\n\n00:00:00.641 --> 00:00:03.001\ntin là cái khuôn mặt bạn sinh Ra nở phù hợp với sứ mệnh của\n\n00:00:03.002 --> 00:00:03.481\ncác bạn hông\n\n00:00:03.482 --> 00:00:05.041\nthấy khuôn mặt tui góc cạnh hông rất vuông\n\n00:00:05.400 --> 00:00:07.000\nhồi xưa tui tự ti về cái điều này lắm\n\n00:00:07.040 --> 00:00:09.400\ntại vì nhìn tui nó hông có kiểu hiền lành á\n\n00:00:09.680 --> 00:00:10.920\nmà cũng hông phải là kiểu nết na\n\n00:00:11.000 --> 00:00:12.760\nmà cũng phải kiểu dịu dàng bằng Tay tui nè\n\n00:00:13.000 --> 00:00:15.120\nTay rất to Tay của như đàn ông đó nha mấy bà\n\n00:00:15.600 --> 00:00:16.840\ntừ đó tui cũng khá là tự ti\n\n00:00:16.880 --> 00:00:17.840\ntui nói SAO con gái chụp hình\n\n00:00:17.841 --> 00:00:19.801\ncái Tay nó nhỏ nó thanh mà có cái Tay tui nè\n\n00:00:20.040 --> 00:00:21.880\nnó bự bằng cái khuôn mặt của tui luôn là cái Tay\n\n00:00:21.960 --> 00:00:23.360\ntui là phải làm việc rất là cực lực\n\n00:00:23.800 --> 00:00:24.960\ncó làm mới có ăn mấy bà\n\n00:00:25.080 --> 00:00:25.840\nchứ hông phải ngồi\n\n00:00:25.841 --> 00:00:27.601\nkhi ngồi không mà người ta Cho tui tiền đâu\n\n00:00:27.640 --> 00:00:28.800\nchưa một AI Cho tui tiền\n\n00:00:28.840 --> 00:00:29.640\ntui nói thẳng\n\n00:00:29.641 --> 00:00:33.081\nCha mẹ chỉ dạy tui học đến sau đại học là tui tự kiếm tiền\n\n00:00:33.120 --> 00:00:34.160\ntự lo tất cả mọi thứ luôn\n\n00:00:34.161 --> 00:00:36.721\ncác bạn gương mặt góc cạnh này hồi xưa tui cũng khó chịu\n\n00:00:36.800 --> 00:00:38.960\ntui nói SAO BA đẻ con Ra cái mặt góc cạnh như vậy\n\n00:00:38.961 --> 00:00:40.601\nnhưng mà các bạn biết hông tui là một cái người\n\n00:00:40.880 --> 00:00:42.840\nchiến đấu dễ sợ trong cái chốn văn phòng lắm\n\n00:00:43.200 --> 00:00:45.160\ngương mặt góc cạnh một cái gương mặt quyết đoán\n\n00:00:45.440 --> 00:00:47.480\nsẽ tập trung vào những cái vấn đề mình đã quyết là\n\n00:00:47.481 --> 00:00:49.201\nphải làm Cho tới cùng rồi Ra kết quả\n\n00:00:49.400 --> 00:00:50.640\nnên mấy ông sẽ hông ưa tui lắm\n\n00:00:50.641 --> 00:00:52.321\ngiao cái gì Ra làm Cho bằng được thôi\n\n00:00:52.640 --> 00:00:54.200\ngiao Cho đến nào hông được là nói em ơi\n\n00:00:54.201 --> 00:00:55.401\nphải xuất tiến công việc lên\n\n00:00:55.440 --> 00:00:57.120\nsáng tạo lên Cho anh thế là có sáng tạo riết\n\n00:00:57.360 --> 00:00:58.120\nđến ngày đẹp trời\n\n00:00:58.121 --> 00:01:00.201\nmệt quá hông còn sáng tạo nữa thì nghỉ việc thôi\n\n00:01:00.202 --> 00:01:01.161\nnó là như vậy đó các bạn\n\n00:01:01.520 --> 00:01:02.840\nnhưng các bạn đừng có tự ti rằng\n\n00:01:03.080 --> 00:01:04.200\nơ hôm nay khuôn mặt em thế này\n\n00:01:04.201 --> 00:01:05.001\nkhuôn mặt thế Kia\n\n00:01:05.040 --> 00:01:08.280\ncũng đã vì tự ti mới đi sửa này sửa nọ sửa Kia đó chứ\n\n00:01:08.320 --> 00:01:09.120\nthật sự các bạn ơi\n\n00:01:09.320 --> 00:01:11.280\nmỗi người sinh Ra có một cái nét khác nhau\n\n00:01:11.400 --> 00:01:13.680\nví dụ như cái nét dịu dàng nhưng mà kiên định nha\n\n00:01:13.920 --> 00:01:16.200\nUI UI tui có bà chị cái mắt bả rất là tự nhiên\n\n00:01:16.520 --> 00:01:17.240\ndịu dàng lắm\n\n00:01:17.241 --> 00:01:19.321\nnhưng mà con mắt bả mà trợn lên phát là nguyên cả cái\n\n00:01:19.360 --> 00:01:20.800\ncái công ty nó sợ luôn ờ\n\n00:01:21.080 --> 00:01:23.960\nmắt này trợn hông AI sợ hết trơn á nhìn mặt tui dữ vậy thôi\n\n00:01:24.200 --> 00:01:27.080\nnhưng cái vấn đề ở đây á là tui nói với mọi người nghe là\n\n00:01:27.600 --> 00:01:29.280\nmỗi người sinh Ra là một cái diện mạo\n\n00:01:29.560 --> 00:01:32.000\ncái thể xác này á là một cái thể xác mình đi mượn\n\n00:01:32.280 --> 00:01:34.640\ntrời đất sinh Ra Cho mình nhập vô cái thể xác này\n\n00:01:34.760 --> 00:01:37.280\nđể mình hoàn thành sứ mệnh của cuộc đời của mình\n\n00:01:37.600 --> 00:01:37.920\nsứ mệnh\n\n00:01:37.921 --> 00:01:40.401\ncuộc đời của mình là như vậy lần đầu là mình Chinh chiến ha\n\n00:01:40.440 --> 00:01:41.240\nmình quyết đoán ha\n\n00:01:41.320 --> 00:01:42.720\nmình khóc mạnh mẽ lắm\n\n00:01:42.721 --> 00:01:44.881\nmình dễ sợ lắm hông AI có thể đánh gục mình nữa\n\n00:01:45.080 --> 00:01:46.840\nnhưng mà khiến cái đó khiến Cho mình mệt mỏi\n\n00:01:46.920 --> 00:01:47.880\nmệt mỏi lắm các bạn\n\n00:01:48.280 --> 00:01:50.600\nnhìn dữ dằn hơn bây giờ nữa hông phải đơn giản đâu\n\n00:01:50.760 --> 00:01:52.960\nnhưng tới cái khoảng thời gian mà tôi chuyển qua cái bước là\n\n00:01:53.000 --> 00:01:54.880\ntự mình chữa Cho mình những cái vấn đề bên trong\n\n00:01:54.881 --> 00:01:56.961\ná thì tôi thấy tôi sống nó hiền hòa hơn\n\n00:01:57.200 --> 00:01:58.400\nvào đây thì đẹp đẽ hơn\n\n00:01:58.440 --> 00:02:00.440\ntí xíu Cho các bạn nhìn Cho nó lạ lạ thôi chứ\n\n00:02:00.441 --> 00:02:02.201\ncái thời mà mấy bạn biết hông tôi mới làm TikTok\n\n00:02:02.202 --> 00:02:04.161\ná mặt tôi cũng mệt lắm Úc dột lắm các bạn\n\n00:02:04.440 --> 00:02:06.880\ntại vì lúc đó mình chưa thực sự hiểu được những cái vấn đề\n\n00:02:07.080 --> 00:02:09.120\nnhân sinh làm SAO nhận thức của mình Cao cấp hơn\n\n00:02:09.280 --> 00:02:11.360\nđể mình sống bớt khổ đau và bớt mệt mỏi hơn\n\n00:02:11.520 --> 00:02:12.520\nnên thực sự các bạn ơi\n\n00:02:12.640 --> 00:02:14.400\ncái nét mặt của các bạn á có những người á nha\n\n00:02:14.680 --> 00:02:17.800\nmắt nó hiếp nó nhỏ nó hông có mi nhưng mà nó đẹp\n\n00:02:18.160 --> 00:02:20.440\ntui thích nó đẹp nó sang kiểu gì á\n\n00:02:20.680 --> 00:02:22.480\nđâu phải AI mắt có 2 mí cũng đẹp đâu mấy bà\n\n00:02:22.560 --> 00:02:25.120\nđúng hông có những người cái mặt nó cũng hông được xuất sắc\n\n00:02:25.121 --> 00:02:25.921\nnhưng mà mọi người ơi\n\n00:02:26.080 --> 00:02:28.000\nsửa Cho cấp mấy không bằng tâm sinh\n\n00:02:28.080 --> 00:02:28.720\ntướng\n\n00:02:28.721 --> 00:02:31.121\nngười của bạn á cái tâm hồn của bạn á bạn thay đổi tự nhiên\n\n00:02:31.122 --> 00:02:31.921\ncuộc sống của bạn thay đổi\n\n00:02:31.922 --> 00:02:33.961\nnét mặt thay đổi cái cơ mặt nó cũng thay đổi\n\n00:02:34.160 --> 00:02:36.640\ngương mặt nó cũng thay đổi nó dễ chịu hơn ừ\n\n00:02:36.920 --> 00:02:39.000\ncái xong rồi khi mà tui sửa cái mũi xong này nọ á\n\n00:02:39.200 --> 00:02:41.680\nngười ta nói là nhìn gương mặt Quỳnh là đỡ dữ hơn hồi xưa\n\n00:02:41.880 --> 00:02:42.920\nhồi xưa mặt tui dữ lắm\n\n00:02:43.120 --> 00:02:44.560\ntui dữ mà 2 cái này dính lại với nhau\n\n00:02:44.600 --> 00:02:45.600\ntui phải cạo lông nè mấy bà\n\n00:02:45.800 --> 00:02:48.320\ncái mũi của tui á là nó cặp nó quật nó hơi quật\n\n00:02:48.640 --> 00:02:49.480\nnó hơi bị gồm á mọi\n\n00:02:49.481 --> 00:02:51.041\nnhưng mà nó giống như là không AI mà ăn được\n\n00:02:51.080 --> 00:02:52.680\ntô đồng nào đâu dễ dầu gì đó\n\n00:02:52.880 --> 00:02:54.840\nnhưng khi sửa xong mình bắt đầu mình thấy ờ ờ\n\n00:02:55.080 --> 00:02:56.080\ncuộc sống này phải Cho đi\n\n00:02:56.320 --> 00:02:57.680\nCho bớt đi cứ giữ khư khư\n\n00:02:57.880 --> 00:02:58.960\nmà càng giữ là càng mất\n\n00:02:59.120 --> 00:03:01.200\nnó lạ lùng vậy đó mà Cho đi nó lại càng được nhiều\n\n00:03:01.360 --> 00:03:02.040\nnên các bạn biết hông\n\n00:03:02.041 --> 00:03:04.001\ncái khuôn mặt của mình là sứ mệnh của cuộc đời mình rồi\n\n00:03:04.002 --> 00:03:05.961\nmỗi người đến cuộc đời này nó có một sứ mệnh khác nhau\n\n00:03:06.360 --> 00:03:09.120\nnhưng mà hiền hòa có thể hướng về tu tập các bạn thấy hông\n\n00:03:09.280 --> 00:03:10.000\ncó những người họ đi\n\n00:03:10.001 --> 00:03:12.881\ntu tập xong cái khuôn mặt của họ hiền ơi là hiền luôn đó\n\n00:03:13.360 --> 00:03:15.160\ncác bạn Theo chiều hướng nào thì nhiên khuôn mặt của\n\n00:03:15.161 --> 00:03:16.321\nbạn nó sẽ Theo chiều hướng đó\n\n00:03:16.440 --> 00:03:18.320\nnên nhiều khi á hổng cần tiêm chích gì hết\n\n00:03:18.560 --> 00:03:19.360\nmình á nhiều khi\n\n00:03:19.480 --> 00:03:20.000\nđọc kinh\n\n00:03:20.001 --> 00:03:22.041\ncũng là một cái cách để Cho cái gương mặt của bạn nó trẻ\n\n00:03:22.320 --> 00:03:23.120\năn healthy\n\n00:03:23.121 --> 00:03:25.601\nđọc kinh và tập thể dục là sẽ khiến Cho người bạn nó\n\n00:03:25.840 --> 00:03:26.640\ntrẻ khỏe thôi\n\n00:03:26.800 --> 00:03:28.080\ncòn nếu mà mình cứ muốn trẻ khỏe\n\n00:03:28.081 --> 00:03:29.601\nmình tiêm chích này nọ hoặc là mình sửa\n\n00:03:29.640 --> 00",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7712400884570852615-vie-VN.vtt"
+    ],
+    "file": "7712400884570852615-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7712400884570852615",
+   "create_time": "2026-11-26T08:54:35.000Z",
+   "is_slideshow": false,
+   "outlier": 0.98,
+   "basis": "author_median"
+  },
+  {
+   "url": "https://www.tiktok.com/@hoaquynh0000/video/7708736249871224082",
+   "caption": "Năng lượng ở đây cực tốt cho mn #xuhuongtiktok #learnontiktok #chualanhtamhon #phattrienbanthan #trainghiem ",
+   "author": {
+    "id": "16395636",
+    "name": "hoaquynh0000",
+    "nick": "Hoa Quỳnh Nở 00.00",
+    "profile": "https://www.tiktok.com/@hoaquynh0000",
+    "fans": 666700
+   },
+   "play_count": 58800,
+   "like_count": 3774,
+   "share_count": 459,
+   "comment_count": 168,
+   "duration_s": 296,
+   "music": {
+    "id": "7708736341776878357",
+    "name": "âm thanh gốc",
+    "author": "Hoa Quỳnh Nở 00.00",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuongtiktok",
+    "learnontiktok",
+    "chualanhtamhon",
+    "phattrienbanthan",
+    "trainghiem"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:01.440\ncác bạn có biết cái hạnh phúc lớn nhất\n\n00:00:01.480 --> 00:00:04.320\ntrong cuộc đời mình là gì hông là chúng ta dành dụm\n\n00:00:04.360 --> 00:00:06.160\ntất cả để đi được một cái chuyến cuối năm\n\n00:00:06.200 --> 00:00:08.480\nđể thấy được cái cảnh đẹp như thế này cái\n\n00:00:08.520 --> 00:00:09.360\nthứ 2 các bạn biết hông\n\n00:00:09.400 --> 00:00:11.560\nchúng ta phải có sức khỏe tôi nói thiệt tôi lần đầu\n\n00:00:11.600 --> 00:00:14.040\ntiên 40 tuổi tôi đi phượt Hà Giang và tôi nói thiệt\n\n00:00:14.360 --> 00:00:16.480\nngồi là quẹo quẹo quẹo lên chảo xương sống luôn\n\n00:00:16.720 --> 00:00:17.920\ncác bạn phải có sức khỏe để Chi\n\n00:00:17.960 --> 00:00:19.600\nđể các bạn đi được những cái cung đường một cái\n\n00:00:19.640 --> 00:00:21.200\nthế giới mới hoàn toàn khác biệt\n\n00:00:21.520 --> 00:00:22.320\ntôi nghĩ Hà Giang\n\n00:00:22.360 --> 00:00:23.400\ntrên hình chỉ là những cái hình\n\n00:00:23.440 --> 00:00:25.320\nảnh nó đơn giản thôi các bạn không nha\n\n00:00:25.360 --> 00:00:27.800\nnó là một cái hòn đảo nó kinh khủng khiếp nó là một cái vũ\n\n00:00:27.920 --> 00:00:30.560\ntrụ với tôi là một cái vũ trụ rất là mới luôn và cái\n\n00:00:30.600 --> 00:00:31.320\nthứ BA mà tôi nói\n\n00:00:31.321 --> 00:00:32.441\nthiệt với mọi người là tôi cảm thấy\n\n00:00:32.480 --> 00:00:33.720\ntôi rất là may mắn luôn các bạn vì\n\n00:00:33.760 --> 00:00:35.880\ntôi có rất là nhiều người bạn có thể\n\n00:00:35.960 --> 00:00:37.080\ntrên những cái chuyến đi như vậy\n\n00:00:37.160 --> 00:00:38.000\ntrời ơi chụp hình Cho\n\n00:00:38.080 --> 00:00:39.760\ntôi chở tôi đi tất cả những cái con đường\n\n00:00:40.280 --> 00:00:41.480\ntôi nói thiệt nó vô cùng\n\n00:00:41.720 --> 00:00:43.240\nnó vô cùng xúc động luôn các bạn\n\n00:00:43.400 --> 00:00:44.800\nkhi tới ở đây nha mọi người biết hông\n\n00:00:45.280 --> 00:00:48.120\nthiên nhiên nó quá đẹp đi nó đẹp\n\n00:00:48.160 --> 00:00:49.520\nkinh khủng khiếp và các bạn biết hông\n\n00:00:49.560 --> 00:00:51.760\ntất cả những cái người đi phượt nó có một cái năng lượng mà khi\n\n00:00:51.840 --> 00:00:53.160\ntôi đi trên trên từng cái chuyến\n\n00:00:53.560 --> 00:00:55.880\nchuyến đường mà xe chạy á chào nhau\n\n00:00:55.920 --> 00:00:57.320\nvẫy gọi nhau cái năng lượng đó nó\n\n00:00:57.360 --> 00:00:58.960\ntruyền qua nhau trên một cái hành trình\n\n00:00:59.160 --> 00:01:01.240\nđi tìm về bản thân mình các bạn\n\n00:01:01.560 --> 00:01:02.840\nkhi mà còn trẻ chúng ta hay Ra\n\n00:01:03.080 --> 00:01:04.680\nChinh phục thế giới Chinh phục thế giới đúng hông\n\n00:01:04.840 --> 00:01:08.160\nkhi về già rồi trời ơi khám phá bản thân mình mình là AI\n\n00:01:08.320 --> 00:01:10.200\nmình được đi những cái cung đường hạnh phúc và mình được\n\n00:01:10.280 --> 00:01:12.960\ngặp rất nhiều những cái người mà cùng tần số với các bạn\n\n00:01:13.280 --> 00:01:14.080\nvà ngay tận đây\n\n00:01:14.160 --> 00:01:15.560\nđây là những cái giây phút cuối năm\n\n00:01:15.640 --> 00:01:17.640\ntôi Xin gửi đến Cho các bạn một cái nguồn năng lượng mới\n\n00:01:18.080 --> 00:01:18.920\nthứ nhất là tôi luôn\n\n00:01:18.960 --> 00:01:21.080\nluôn nhắc với các bạn là 2 02 7 là một cái năm\n\n00:01:21.120 --> 00:01:21.920\ncác bạn có phải\n\n00:01:22.160 --> 00:01:23.560\nđi cùng rất nhiều người\n\n00:01:23.800 --> 00:01:25.600\ncác bạn không nên đi một mình đi một mình làm SAO các\n\n00:01:25.680 --> 00:01:26.960\nbạn tới những cái cung đường như thế này\n\n00:01:27.280 --> 00:01:28.480\ntrời ơi bạn về tới khắp nơi\n\n00:01:28.680 --> 00:01:31.200\ncái thứ 2 các bạn phải có một cái năng lượng tích cực\n\n00:01:31.560 --> 00:01:33.040\nkhi các bạn có năng lượng tích cực và các bạn\n\n00:01:33.320 --> 00:01:35.560\nmanifest các bạn đặt nó ở trong đầu của các bạn có\n\n00:01:35.600 --> 00:01:39.160\nthể một năm 2 năm nhưng ít nhất là BA năm 4 năm hoặc là 15 các bạn cũng sẽ\n\n00:01:39.200 --> 00:01:40.840\ntới được những cái cung đường mà bạn thích nha\n\n00:01:41.160 --> 00:01:43.360\nvà cái thứ BA là các bạn phải có một cái niềm tin\n\n00:01:43.720 --> 00:01:44.920\nrằng mình xứng đáng\n\n00:01:45.320 --> 00:01:46.120\ntrong cuộc sống này tôi nói\n\n00:01:46.160 --> 00:01:47.880\nthiệt với các bạn các bạn không xứng đáng các bạn nói là\n\n00:01:47.920 --> 00:01:51.480\nờ tôi nghèo quá tôi tự kỷ quá tôi tự ti quá tôi hông có bạn\n\n00:01:51.760 --> 00:01:54.000\nờ tôi gì quá là cuộc đời của bạn sẽ không dẫn dắt được\n\n00:01:54.080 --> 00:01:54.880\ntới những cái vùng đất\n\n00:01:54.920 --> 00:01:57.040\nmặc dù đây là Việt Nam nhưng tôi nói\n\n00:01:57.080 --> 00:01:57.880\nthiệt với các bạn Việt Nam\n\n00:01:57.920 --> 00:01:58.840\nquá đẹp các bạn hãy\n\n00:01:58.880 --> 00:02:00.880\nmơ rằng các bạn đi hết cái Việt Nam này đi\n\n00:02:01.280 --> 00:02:02.080\ntrời ơi tôi nói thiệt\n\n00:02:02.200 --> 00:02:04.480\nnó rất là tuyệt vời cái cuối cùng tôi muốn nói với các bạn\n\n00:02:04.600 --> 00:02:06.200\nrằng đó là các bạn biết SAO hông\n\n00:02:06.840 --> 00:02:07.800\nmình hãy tin rằng\n\n00:02:08.200 --> 00:02:09.240\nlà mình có thể làm\n\n00:02:09.320 --> 00:02:11.480\ntất cả mọi thứ bằng 2 bàn Tay trắng của mình\n\n00:02:11.840 --> 00:02:13.720\ncác bạn đừng bao giờ nghĩ là các bạn không làm Ra\n\n00:02:13.760 --> 00:02:14.840\ntiền các bạn đừng có tự ti\n\n00:02:14.920 --> 00:02:15.840\nnữa năm sau các bạn\n\n00:02:15.880 --> 00:02:17.840\ntôi chắc chắn các bạn sẽ được đi rất nhiều nơi\n\n00:02:18.160 --> 00:02:20.040\nvà nơi đó các bạn được chữa lành chưa từng có\n\n00:02:20.280 --> 00:02:21.200\nkhi tôi thức dậy á\n\n00:02:21.280 --> 00:02:23.200\nlà tôi cảm thấy là sống trong thiên nhiên là một cái\n\n00:02:23.680 --> 00:02:25.800\ncái cách chữa lành tuyệt vời nhất trong cái cuộc đời này\n\n00:02:25.920 --> 00:02:26.600\nvới các bạn á\n\n00:02:26.601 --> 00:02:27.521\ntrải nghiệm nó đáng giá\n\n00:02:27.600 --> 00:02:29.760\nrất nhiều tiền luôn các bạn tôi nói thiệt mình có\n\n00:02:29.960 --> 00:02:31.480\nvàng bạc châu báu mà mình hông có\n\n00:02:31.520 --> 00:02:33.320\ntrải nghiệm nó nó uổng cuộc đời này lắm\n\n00:02:33.760 --> 00:02:35.640\ntrải nghiệm á các bạn biết hông cả cuộc đời của chúng\n\n00:02:35.680 --> 00:02:36.920\nta khi mà linh hồn của chúng ta\n\n00:02:37.160 --> 00:02:37.960\nhóa kiếp rồi chúng\n\n00:02:37.961 --> 00:02:39.241\nta sẽ nhớ hết những cái này ở\n\n00:02:39.280 --> 00:02:40.360\ntrong đầu của chúng ta các bạn\n\n00:02:40.640 --> 00:02:42.000\ntiền bạc không bao giờ mua được\n\n00:02:42.040 --> 00:02:43.560\ntôi khẳng định với các bạn luôn nên\n\n00:02:43.880 --> 00:02:45.360\nchút nữa tôi nói tiếp nha còn bây giờ di\n\n00:02:45.440 --> 00:02:47.080\nchuyển tiếp đến một cái vùng đất tiếp Theo\n\n00:02:47.280 --> 00:02:48.400\nlà ở dưới đây nè các bạn\n\n00:02:48.960 --> 00:02:50.200\ntuyệt vời lắm tôi không thể\n\n00:02:50.240 --> 00:02:52.600\ntưởng tượng rằng là sông nha quế nó quá đẹp như vậy các bạn\n\n00:02:53.240 --> 00:02:54.360\nđẹp là tuyệt tác luôn\n\n00:02:54.560 --> 00:02:57.440\ncảm ơn cảm ơn vũ trụ đã dẫn tui tới đây một hành\n\n00:02:57.480 --> 00:02:58.480\ntrình rất dài mấy\n\n00:02:58.520 --> 00:03:00.280\ntrăm ki lô mét để tới được đây đó các bạn ơi\n\n00:03:00.560 --> 00:03:02.040\ncái chuyến hành trình của tui á mấy bà\n\n00:03:02.120 --> 00:03:04.320\ntui gặp rất nhiều người trong cái cuộc sống này luôn\n\n00:03:04.680 --> 00:03:05.520\ntui không biết chặng cuối\n\n00:03:05.560 --> 00:03:06.040\ntrong cuộc đời\n\n00:03:06.041 --> 00:03:06.721\ntui là gì nhưng\n\n00:03:06.722 --> 00:03:08.761\ntui chắc tin chắc rằng cuộc đời tui là những cái trạng\n\n00:03:09.040 --> 00:03:10.680\ntôi là người số 7 nha mấy bà số 7\n\n00:03:10.720 --> 00:03:13.360\nthì trải qua rất nhiều những cay đắng ngọt bùi luôn lúc đó\n\n00:03:13.720 --> 00:03:14.760\nmình hay chấp bạn thân lắm\n\n00:03:15.200 --> 00:03:16.360\ntại SAO chuyện này xảy Ra với mình\n\n00:03:16.440 --> 00:03:18.040\ntại SAO thế này tại SAO những người đó bỏ đi\n\n00:03:18.240 --> 00:03:19.080\nnhưng các bạn biết hông cái\n\n00:03:19.120 --> 00:03:20.800\ncũ không đi thì không bao giờ có cái mới\n\n00:03:20.880 --> 00:03:21.720\nhãy tin điều đó\n\n00:03:22.000 --> 00:03:23.160\nbất cứ một cái chuyện gì xảy Ra\n\n00:03:23.200 --> 00:03:25.880\ntrong cuộc sống của các bạn nếu được nó đều có một cái",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7708736249871224082-vie-VN.vtt"
+    ],
+    "file": "7708736249871224082-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7708736249871224082",
+   "create_time": "2026-11-16T11:53:47.000Z",
+   "is_slideshow": false,
+   "outlier": 0.64,
+   "basis": "author_median"
+  },
+  {
+   "url": "https://www.tiktok.com/@dangde.suyngam/video/7707949451339402503",
+   "caption": "Hãy luôn học cách lập kế hoạch trước\n\n#cuocsong #dongluc #truyencamhung #phattrienbanthan #caunoihay",
+   "author": {
+    "id": "7025173856537084955",
+    "name": "dangde.suyngam",
+    "nick": "Đáng Để Suy Ngẫm",
+    "profile": "https://www.tiktok.com/@dangde.suyngam",
+    "fans": 36100
+   },
+   "play_count": 1100000,
+   "like_count": 77900,
+   "share_count": 15100,
+   "comment_count": 542,
+   "duration_s": 36,
+   "music": {
+    "id": "7707949509366401812",
+    "name": "âm thanh gốc - Đáng Để Suy Ngẫm",
+    "author": "Đáng Để Suy Ngẫm",
+    "original": true
+   },
+   "hashtags": [
+    "cuocsong",
+    "dongluc",
+    "truyencamhung",
+    "phattrienbanthan",
+    "caunoihay"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.120 --> 00:00:02.820\n人未必年年都能赚到钱\n\n00:00:03.000 --> 00:00:05.620\n所以能赚钱的那几年\n\n00:00:05.680 --> 00:00:09.940\n千万别嘚瑟也别飘老话说得好\n\n00:00:10.240 --> 00:00:12.760\n手中有粮心中不慌\n\n00:00:12.761 --> 00:00:14.361\n有钱的时候\n\n00:00:14.362 --> 00:00:17.341\n多想想没钱的日子该怎么过\n\n00:00:17.440 --> 00:00:18.600\n省着点花\n\n00:00:18.601 --> 00:00:20.061\n把钱存下来\n\n00:00:20.200 --> 00:00:21.860\n这绝不是抠门\n\n00:00:21.880 --> 00:00:24.980\n而是给未来的自己留条退路\n\n00:00:25.200 --> 00:00:27.240\n正所谓人无远虑\n\n00:00:27.241 --> 00:00:28.081\n必有尽忧\n\n00:00:28.082 --> 00:00:31.981\n在春风得意的时候默默布好局\n\n00:00:32.400 --> 00:00:34.640\n当四面楚歌时\n\n00:00:34.641 --> 00:00:36.551\n你才有资格从容\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7707949451339402503-cmn-Hans-CN.vtt"
+    ],
+    "file": "7707949451339402503-cmn-Hans-CN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7707949451339402503",
+   "create_time": "2026-11-14T09:00:39.000Z",
+   "is_slideshow": false,
+   "outlier": 30.47,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@hoaquynh0000/video/7708062177806077191",
+   "caption": "Đây không phải là năm để cố gắng một mình hay cạnh tranh bằng mọi giá, mà là năm học cách lắng nghe, kết nối đúng người, xây dựng những mối quan hệ có giá trị và cùng nhau phát triển. #xuhuongtiktok #learnontiktok #chualanhtamhon #phattrienbanthan #2027 ",
+   "author": {
+    "id": "16395636",
+    "name": "hoaquynh0000",
+    "nick": "Hoa Quỳnh Nở 00.00",
+    "profile": "https://www.tiktok.com/@hoaquynh0000",
+    "fans": 666700
+   },
+   "play_count": 98700,
+   "like_count": 6956,
+   "share_count": 710,
+   "comment_count": 93,
+   "duration_s": 394,
+   "music": {
+    "id": "7708062250733128456",
+    "name": "âm thanh gốc",
+    "author": "Hoa Quỳnh Nở 00.00",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuongtiktok",
+    "learnontiktok",
+    "chualanhtamhon",
+    "phattrienbanthan",
+    "2027"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.200 --> 00:00:03.360\ncác bạn có để ý là 2026 các bạn cực kỳ bị kiệt sức không\n\n00:00:03.640 --> 00:00:05.680\nvì 2026 là năm con ngựa\n\n00:00:06.000 --> 00:00:08.480\ndo đó các bạn phải ép bản thân chạy thật nhanh\n\n00:00:08.920 --> 00:00:09.680\nnói Chung là cái\n\n00:00:09.681 --> 00:00:12.041\ntôi của các bạn cái bản ngã của các bạn phải phóng nhanh\n\n00:00:12.080 --> 00:00:13.760\nvượt nhanh thấy xung quanh mọi người kiếm\n\n00:00:13.800 --> 00:00:14.840\ntiền nhanh hay là khởi nghiệp\n\n00:00:14.920 --> 00:00:16.600\nbên trong các bạn lo lắng rất nhiều\n\n00:00:16.840 --> 00:00:18.840\nnhưng bây giờ qua 2027 là SAO\n\n00:00:19.080 --> 00:00:21.760\ntôi nói thiệt với các bạn 2 02 7 là năm cá\n\n00:00:22.040 --> 00:00:24.240\nnăm thế giới số 2 và tôi là năm cá nhân số 2\n\n00:00:24.320 --> 00:00:25.120\ntôi luôn nói điều đó\n\n00:00:25.440 --> 00:00:29.200\nnhưng mà bản chất của năm thế giới số 2 và 2027 là con gì\n\n00:00:29.320 --> 00:00:32.760\ncon dê thì thực sự nó là một cái năm dịu mát\n\n00:00:33.120 --> 00:00:34.520\nsâu sắc và hướng nội\n\n00:00:34.760 --> 00:00:36.280\nvà các bạn phải bình yên từ bên\n\n00:00:36.360 --> 00:00:37.640\ntrong và các bạn đi một cái bước\n\n00:00:37.760 --> 00:00:38.920\nnó thật là chuyên môn\n\n00:00:39.240 --> 00:00:40.160\nthì các bạn sẽ thắng\n\n00:00:40.560 --> 00:00:43.440\nmọi năm về trước tôi nói thiệt tôi không thích làm đội nhóm\n\n00:00:43.760 --> 00:00:45.680\nvì xưa Kia tôi đã làm đội nhóm và tôi cảm\n\n00:00:45.760 --> 00:00:47.200\nthấy rằng là cái tính của mình\n\n00:00:47.520 --> 00:00:48.600\nEQ nó hông có Cao\n\n00:00:48.880 --> 00:00:50.320\nnên mình càng làm đội ngón\n\n00:00:50.400 --> 00:00:53.080\nmình sẽ càng bị kiệt sức và mình không quản lý được người ta\n\n00:00:53.400 --> 00:00:56.160\nthậm chí bản thân mình cũng không có đủ khả năng\n\n00:00:56.320 --> 00:00:58.240\nđể hiểu biết nhân sự của mình như thế nào\n\n00:00:58.640 --> 00:01:00.560\nnhưng tôi phát hiện Ra một điều rằng là\n\n00:01:00.880 --> 00:01:03.440\nnăm 2 02 17 này là một cái năm\n\n00:01:03.560 --> 00:01:04.800\ncó một cái năng lượng như sau\n\n00:01:05.040 --> 00:01:07.960\nđó là năng lượng về sự kết nối đoàn kết\n\n00:01:08.160 --> 00:01:11.520\nbứt phá và cùng nhau hỗ trợ với nhau các bạn tin hông\n\n00:01:11.800 --> 00:01:14.480\n2 02 7 này sẽ là những cái năm đội nhóm có thể\n\n00:01:14.680 --> 00:01:16.120\nsupport qua support lại với nhau\n\n00:01:16.400 --> 00:01:19.400\nnên các bạn hãy tin đi từ cái tháng 10 này tôi đã cảm\n\n00:01:19.440 --> 00:01:21.320\nthấy rằng là rất nhiều năng lượng của những người\n\n00:01:21.640 --> 00:01:22.520\ntới để giúp tôi\n\n00:01:22.760 --> 00:01:25.200\nxung quanh tôi đã 2 BA mối đang giúp tôi rồi các bạn\n\n00:01:25.560 --> 00:01:27.040\nvà nhiều người họ giúp tôi gọi là\n\n00:01:27.120 --> 00:01:29.520\nvolunteer đương nhiên lúc đó mình cũng sẽ suy nghĩ rằng\n\n00:01:29.720 --> 00:01:32.040\nủa lý do SAO người ta tới giúp mình vậy ờ\n\n00:01:32.160 --> 00:01:34.240\nmột phần đương nhiên mình cũng có phải mang lợi ích Cho người\n\n00:01:34.320 --> 00:01:35.240\nta cái thứ 2\n\n00:01:35.480 --> 00:01:37.760\ntôi cảm nhận được cái năng lượng của cái sự\n\n00:01:38.160 --> 00:01:40.840\ntất cả mọi bên đều huynh huynh là có\n\n00:01:41.040 --> 00:01:43.240\nvà họ làm việc rất là chuyên nghiệp luôn\n\n00:01:43.360 --> 00:01:46.400\nvà từ đó tôi đảm bảo với các bạn 2027 là một cái năm\n\n00:01:46.840 --> 00:01:50.000\nthiên về nước nước ở đây là nó Theo cái sự uyển chuyển\n\n00:01:50.320 --> 00:01:51.640\nvà trong cái cuộc sống này á\n\n00:01:52.160 --> 00:01:53.800\ngiống như là lý tử Long có nói đó các bạn\n\n00:01:54.080 --> 00:01:56.480\nkhông có gì bằng cái sự uyển chuyển của nước\n\n00:01:56.680 --> 00:01:59.640\nvà khi dòng nước nó uyển chuyển thì đá nó cũng mòn đó\n\n00:01:59.880 --> 00:02:03.200\ncác bạn phải uyển chuyển trong tất cả mọi thứ trong 2027\n\n00:02:03.360 --> 00:02:05.920\ncứ nhẹ nhàng cứ hướng nội cứ chuyên môn\n\n00:02:06.080 --> 00:02:08.480\ncứ xử lý một cái vấn đề nó thiệt là sâu sắc\n\n00:02:08.840 --> 00:02:11.960\nbền vững và có sự hợp tác qua lại thì các bạn sẽ thắng\n\n00:02:12.320 --> 00:02:14.320\nrồi 2027 này năm con dê\n\n00:02:14.720 --> 00:02:17.640\ncon dê thì nó sẽ thêm về sâu sắc và hiểu chuyện hơn\n\n00:02:17.800 --> 00:02:20.840\nchứ nó không như con ngựa mà lại ngựa hỏa nó chạy\n\n00:02:20.880 --> 00:02:23.520\nrất nhanh và nó bùng cháy nó rất là áp lực nó rất là căng\n\n00:02:23.560 --> 00:02:25.760\nthẳng thì năm con dê nó sẽ chiêu chiêu\n\n00:02:25.960 --> 00:02:28.720\nnhưng năm nay các bạn phải để ý nha năm con dê\n\n00:02:28.800 --> 00:02:31.720\nnó sẽ mang tính chất là các bạn phòng của các bạn nó sẽ\n\n00:02:31.880 --> 00:02:34.640\nphù hợp rất là phù hợp với thủy và mộc\n\n00:02:35.160 --> 00:02:35.960\nmà thủy và mộc\n\n00:02:36.040 --> 00:02:36.680\nthì các bạn phải\n\n00:02:36.681 --> 00:02:39.521\ntập trung những cái màu sắc như mà màu kem nè màu xanh nè\n\n00:02:39.680 --> 00:02:40.480\nnhững cái màu\n\n00:02:40.560 --> 00:02:42.160\ntrong cái căn phòng của bạn nó mang\n\n00:02:42.200 --> 00:02:44.360\ntính chất thủy và mộc để nó bổ trợ Cho cái năm nay\n\n00:02:44.680 --> 00:02:47.640\ncái nữa là các bạn nên dọn dẹp nhà cửa\n\n00:02:48.120 --> 00:02:48.920\nthiệt là sạch\n\n00:02:48.960 --> 00:02:50.160\nnhững cái đồ gì không xài\n\n00:02:50.200 --> 00:02:52.240\nnăm nay nên tập trung về cái năng lượng sạch\n\n00:02:52.560 --> 00:02:53.520\nsạch ở đây là gì\n\n00:02:53.760 --> 00:02:57.680\nsạch ngay cả cái bản thân mình giao du với AI ờ khác giới\n\n00:02:58.000 --> 00:03:00.880\nsạch ngay cả cái căn phòng mình ở sạch ngay cả\n\n00:03:00.920 --> 00:03:01.680\ntrong chốn văn phòng\n\n00:03:01.681 --> 00:03:02.481\nnhững cái người nào mà\n\n00:03:02.520 --> 00:03:04.240\nthực sự người ta không muốn giúp đỡ bạn\n\n00:03:04.440 --> 00:03:06.960\nngười ta không cộng tác với bạn người ta không đi với bạn\n\n00:03:07.080 --> 00:03:08.120\ncắt ngay lập tức\n\n00:03:08.320 --> 00:03:10.920\ncác bạn có muốn cắt thì vũ trụ sẽ cắt các bạn tin hông\n\n00:03:11.600 --> 00:03:14.480\ncòn cái người nào mà thiệt sự là nó còn duyên với các bạn\n\n00:03:14.760 --> 00:03:16.640\nduyên hồi nãy tui nói thẳng là duyên trong công việc\n\n00:03:17.120 --> 00:03:20.040\nduyên ở trong a bạn bè và duyên ở trong tình yêu\n\n00:03:20.360 --> 00:03:23.400\nnếu không có duyên phận 01 cái đứa nào là ở cạnh bạn đâu\n\n00:03:23.720 --> 00:03:26.160\nừ tất cả mọi mảng luôn tôi đều soi xét\n\n00:03:26.400 --> 00:03:29.200\nnhưng có duyên á có có gây lộn cách mấy đi chăng nữa\n\n00:03:29.400 --> 00:03:32.600\ncó hiểu nhầm cách mấy thì người đó vẫn ở bên cạnh bạn ừ\n\n00:03:32.800 --> 00:03:34.480\nvà một điều cái mà tôi cảm thấy rằng\n\n00:03:34.640 --> 00:03:36.240\nnăm 2 02 17 này nè các bạn\n\n00:03:36.720 --> 00:03:38.520\nnăm nay các bạn được quyền\n\n00:03:39.200 --> 00:03:41.600\nbứt phá Theo một cái phiên bản mới của các bạn\n\n00:03:41.880 --> 00:03:44.480\ncác bạn đừng chạy Theo AI năm nay là năm chuyên sâu\n\n00:03:45.000 --> 00:03:46.400\nnăm mấy năm vừa qua mình đã\n\n00:03:46.480 --> 00:03:49.400\nấp ủ cái gì thì mình chuyên sâu mình làm thật sâu vô thì\n\n00:03:49.440 --> 00:03:51.640\ntôi cảm nhận là năm nay các bạn sẽ gạch hái được rất nhiều\n\n00:03:51.680 --> 00:03:52.480\nthành công luôn\n\n00:03:52.600 --> 00:03:53.480\nừ các bạn đừng lo\n\n00:03:53.680 --> 00:03:55.520\nmặc dù ngoài thế giới bên Kia người ta nói là\n\n00:03:55.880 --> 00:03:59.080\n2027 là một cái năm kinh tế nó còn tệ hơn nữa\n\n00:03:59.320 --> 00:04:00.600\nngoài Ra sẽ có những cái chiến\n\n00:04:00.640 --> 00:04:02.880\ntranh rồi sẽ có vấn vấn đề về vũ khí rồi\n\n00:04:03.080 --> 00:04:05.480\nnăng lượng nó sẽ chuyển biến rồi sẽ có rất là nhiều\n\n00:04:05.680 --> 00:04:07.200\nngười ngoài hành tinh tôi nghe nhiều lắm\n\n00:04:07.720 --> 00:04:11.080\nnhưng mà nghe những cái vấn đề đó là những cái vấn đề là mình không có khả năng để\n\n00:04:11.120 --> 00:04:12.520\nthay đổi tôi chỉ\n\n00:04:12.720 --> 00:04:14.920\ncó khả năng thay đổi được cái con người của tôi\n\n00:04:15.120 --> 00:04:17.040\nnên tôi muốn gửi cái video này đến Cho các bạn\n\n00:04:17.200 --> 00:04:19.240\nnếu các bạn còn đang lóng ngang lóng ngóng vì\n\n00:04:19.280 --> 00:04:20.400\nbây giờ đã ",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7708062177806077191-vie-VN.vtt"
+    ],
+    "file": "7708062177806077191-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7708062177806077191",
+   "create_time": "2026-11-14T16:18:06.000Z",
+   "is_slideshow": false,
+   "outlier": 1.08,
+   "basis": "author_median"
+  },
+  {
+   "url": "https://www.tiktok.com/@hoaquynh0000/video/7712494750078749970",
+   "caption": "Bạn đang thiếu điều gì? #xuhuongtiktok #learnontiktok #phattrienbanthan #chualanhtamhon #connguoi ",
+   "author": {
+    "id": "16395636",
+    "name": "hoaquynh0000",
+    "nick": "Hoa Quỳnh Nở 00.00",
+    "profile": "https://www.tiktok.com/@hoaquynh0000",
+    "fans": 666700
+   },
+   "play_count": 8507,
+   "like_count": 688,
+   "share_count": 33,
+   "comment_count": 8,
+   "duration_s": 367,
+   "music": {
+    "id": "7712494828906498837",
+    "name": "âm thanh gốc",
+    "author": "Hoa Quỳnh Nở 00.00",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuongtiktok",
+    "learnontiktok",
+    "phattrienbanthan",
+    "chualanhtamhon",
+    "connguoi"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.440 --> 00:00:02.360\ntop những tính cách sẽ giúp Cho các bạn vượt qua\n\n00:00:02.400 --> 00:00:03.200\nrất nhiều cái trở ngại\n\n00:00:03.240 --> 00:00:05.680\ntrong cuộc sống này top đầu tiên đó là sự bình tĩnh\n\n00:00:05.800 --> 00:00:07.240\nbình tĩnh hông phải dễ đâu nha các bạn\n\n00:00:07.480 --> 00:00:08.280\nkhi mà mình mất bình\n\n00:00:08.320 --> 00:00:10.320\ntĩnh á cái chuyện nhỏ xíu à là mình gào\n\n00:00:10.400 --> 00:00:12.880\nthét mình la làng la đất la trời than thân\n\n00:00:12.920 --> 00:00:13.480\ntrách phận đủ\n\n00:00:13.481 --> 00:00:15.441\nthứ chuyện hết trơn á nhưng mà các bạn bình tĩnh đi\n\n00:00:15.720 --> 00:00:16.680\nthì lúc nào mọi\n\n00:00:16.720 --> 00:00:17.800\nthứ nó cũng có cách giải quyết\n\n00:00:17.840 --> 00:00:20.280\nvà cuộc đời của bạn nó rất là sáng suốt luôn các bạn sẽ\n\n00:00:20.360 --> 00:00:22.000\ntìm hướng đi trong quân đội có một cái\n\n00:00:22.040 --> 00:00:23.200\ntừ gọi là lúc nào các bạn mất bình\n\n00:00:23.240 --> 00:00:24.680\ntĩnh các bạn phải nhớ đó là từ stop\n\n00:00:25.120 --> 00:00:29.440\nchữ S đầu tiên là dừng lại ha chữ T là suy nghĩ và chữ o\n\n00:00:29.520 --> 00:00:30.840\nlà có nghĩa là bạn quan sát\n\n00:00:30.880 --> 00:00:32.720\nvà cuối cùng là chữ B là bạn lập kế hoạch\n\n00:00:32.880 --> 00:00:34.000\nluôn luôn ghi nhớ cái điều đó\n\n00:00:34.280 --> 00:00:35.920\nbắt đầu có chuyện gì xảy Ra mình hít thở\n\n00:00:36.480 --> 00:00:38.200\nchuyện này giải quyết được không mình quan sát chuyện này\n\n00:00:38.240 --> 00:00:41.040\ncái hướng giải quyết đó là gì và mình lập kế hoạch để giải quyết cái chuyện đó\n\n00:00:41.080 --> 00:00:43.120\nlà cuộc đời của các bạn sẽ suôn sẻ\n\n00:00:43.360 --> 00:00:44.160\ncòn mất bình tĩnh\n\n00:00:44.161 --> 00:00:45.041\ntrời ơi cái gì nó cũng\n\n00:00:45.080 --> 00:00:47.160\ntệ hết trơn chưa kịp vừa thành công nó đã tè le\n\n00:00:47.240 --> 00:00:49.040\ntát lét rồi là vì bạn mất bình tĩnh\n\n00:00:49.320 --> 00:00:51.120\ncái thứ 2 đó là cái sự kiên nhẫn\n\n00:00:51.520 --> 00:00:52.720\nnếu mà bạn không có sự kiên nhẫn\n\n00:00:52.760 --> 00:00:55.760\nXin lỗi các bạn làm cái việc gì nó cũng hông đến đích hết á bạn chỉ cần làm một việc\n\n00:00:56.000 --> 00:00:57.040\nmà bạn kiên trì với nó\n\n00:00:57.080 --> 00:00:58.400\ntừ năm này qua năm khác là chắc chắn\n\n00:00:58.440 --> 00:00:59.280\nthành công đối với các bạn\n\n00:00:59.600 --> 00:01:01.720\ncác bạn không có kiên nhẫn mới làm cái người ta chê\n\n00:01:01.840 --> 00:01:02.680\ncái hoặc là người ta khen\n\n00:01:02.760 --> 00:01:04.480\ncái là tình yêu vui sướng xong rồi người ta chê\n\n00:01:04.680 --> 00:01:05.960\nlà úp dột là các bạn bỏ\n\n00:01:06.200 --> 00:01:07.760\ncái sự kiên nhẫn Cho con người cũng phải\n\n00:01:07.800 --> 00:01:09.120\ntập mỗi ngày các bạn nó\n\n00:01:09.160 --> 00:01:10.000\ntập như một cái thói quen\n\n00:01:10.040 --> 00:01:11.960\nmà sáng dậy là bạn phải súc miệng đánh răng vậy đó\n\n00:01:12.200 --> 00:01:13.640\ncác bạn phải có cái sự kiên nhẫn\n\n00:01:13.680 --> 00:01:16.280\nvà cái tốc thứ BA đó là lạc quan lạc quan để sẽ\n\n00:01:16.320 --> 00:01:18.280\nthấy được những cái Tia hi vọng trong tương Lai và mình cứ\n\n00:01:18.440 --> 00:01:19.800\nthế mình âm thầm mình làm thôi\n\n00:01:19.960 --> 00:01:21.880\ncứ lạc quan người ta làm được thì mình làm được\n\n00:01:22.040 --> 00:01:23.520\nngười ta học được thì mình làm được\n\n00:01:23.600 --> 00:01:24.640\nhọc được giống như người ta\n\n00:01:24.800 --> 00:01:25.800\ncòn các bạn không lạc quan\n\n00:01:25.880 --> 00:01:27.880\nthì coi như là một bầu trời đầy mây đen luôn\n\n00:01:28.000 --> 00:01:29.680\nCho dù trời có đẹp các bạn cũng thấy mưa rơi\n\n00:01:29.800 --> 00:01:30.600\ncó đồng ý hay không\n\n00:01:30.800 --> 00:01:33.440\ncái thứ tiếp tiếp Theo đó là cái sự quyết đoán tôi nói\n\n00:01:33.480 --> 00:01:35.040\nthiệt với các bạn á các bạn có kế hoạch hay\n\n00:01:35.080 --> 00:01:36.200\ncách mấy các bạn có ID\n\n00:01:36.360 --> 00:01:37.240\ncách mấy mà các bạn\n\n00:01:37.560 --> 00:01:40.000\ndo dự tôi cũng là cái người hồi xưa hay do dự lắm\n\n00:01:40.480 --> 00:01:42.040\ncàng do dự sẽ mất cơ hội\n\n00:01:42.200 --> 00:01:43.160\nvà các bạn sẽ không chạm\n\n00:01:43.200 --> 00:01:43.760\nđến được cái sự\n\n00:01:43.761 --> 00:01:44.361\nthành công đâu\n\n00:01:44.362 --> 00:01:47.441\nđừng do dự hãy quyết đoán phải học được cái từ đó nha do dự\n\n00:01:47.480 --> 00:01:47.960\nvà mất bình\n\n00:01:47.961 --> 00:01:50.161\ntĩnh là 2 cái thứ khiến Cho bạn đi chậm hơn người khác\n\n00:01:50.520 --> 00:01:52.600\nnên mình phải cố gắng cố gắng quyết đoán\n\n00:01:52.640 --> 00:01:54.480\ntrong tất cả mọi việc đừng có do dự nữa\n\n00:01:54.640 --> 00:01:57.240\ncuộc sống này không có để thời gian Cho các bạn do dự nhưng\n\n00:01:57.440 --> 00:01:58.800\ncác bạn phải có kế hoạch ở trong đầu\n\n00:01:59.000 --> 00:02:00.240\nmột kế hoạch nó thực sự\n\n00:02:00.320 --> 00:02:02.360\nthành công khi các bạn dám bắt Tay vào làm\n\n00:02:02.480 --> 00:02:04.880\nchứ không phải nó nằm ở trong cái đầu của các bạn tiếp Theo\n\n00:02:05.080 --> 00:02:06.280\ncái top đó là một\n\n00:02:06.320 --> 00:02:06.640\ntrong những cái\n\n00:02:06.641 --> 00:02:07.441\nthứ mà cũng rất quan\n\n00:02:07.480 --> 00:02:09.160\ntrọng với cuộc đời của các bạn đó là phải\n\n00:02:09.799 --> 00:02:10.999\nbiết ơn cái cuộc sống này\n\n00:02:11.280 --> 00:02:14.400\ncác bạn không biết ơn á các bạn sẽ khó đứng vững ở\n\n00:02:14.440 --> 00:02:16.360\ntrên cái vị trí mà hiện tại của các bạn phải biết ơn\n\n00:02:16.600 --> 00:02:19.320\nhôm nay có cái gì mình phải biết ơn biết ơn vì ngày hôm qua\n\n00:02:19.760 --> 00:02:21.120\nđã coi Cho mình rất nhiều bài học\n\n00:02:21.160 --> 00:02:22.200\ntrải nghiệm và hôm nay biết\n\n00:02:22.280 --> 00:02:23.200\nơn và mình đã đứng ở đây\n\n00:02:23.400 --> 00:02:25.200\nbiết ơn vì mình có sức khỏe tốt biết\n\n00:02:25.280 --> 00:02:25.920\nơn là bây giờ mình\n\n00:02:25.921 --> 00:02:28.441\ntrẻ Ra biết ơn vì bây giờ mình nhận thức mình tốt hơn biết\n\n00:02:28.520 --> 00:02:29.960\nơn vì rất nhiều cái vấn đề xảy Ra\n\n00:02:30.000 --> 00:02:31.040\ntrong xung quanh cuộc đời các bạn\n\n00:02:31.360 --> 00:02:33.120\nbạn thử không biết ơn đi là các bạn\n\n00:02:33.240 --> 00:02:34.120\nkiểu giống như là các bạn\n\n00:02:34.200 --> 00:02:36.560\nđứng ở trên một cái sự chiến thắng ô kê vui tươi lắm\n\n00:02:36.680 --> 00:02:37.760\ncác bạn thoải mái lắm nhưng\n\n00:02:38.200 --> 00:02:40.400\ncái sự chiến thắng đó nó sẽ khiến Cho bạn gả gục\n\n00:02:40.680 --> 00:02:41.920\nkèm với cái sự khiêm tốn\n\n00:02:42.360 --> 00:02:43.520\nlàm gì phải khiêm tốn vô\n\n00:02:43.800 --> 00:02:46.320\ncuộc đời này còn nhiều cái phải học lắm nhiều người giỏi lắm\n\n00:02:46.360 --> 00:02:48.120\nthế giới này nó rộng lớn nó bao la lắm\n\n00:02:48.360 --> 00:02:50.360\ncái trái đất này á nó chỉ để Cho các bạn\n\n00:02:50.920 --> 00:02:52.720\ntới cái cuộc sống này để các bạn\n\n00:02:52.800 --> 00:02:55.040\ntrải nghiệm các bạn có một cái bài học linh hồn rồi các bạn Ra đi\n\n00:02:55.080 --> 00:02:56.640\nthôi nên trái đất mình nhỏ xíu à\n\n00:02:56.760 --> 00:02:57.560\nnên các bạn phải khiêm\n\n00:02:57.600 --> 00:02:59.760\ntốn để học hỏi thêm rất nhiều cái hay trong cuộc sống này\n\n00:03:00.120 --> 00:03:02.240\ncái điều tiếp Theo đó là bạn phải can đảm nha\n\n00:03:02.360 --> 00:03:03.520\nmình không có lòng can đảm á\n\n00:03:03.560 --> 00:03:05.880\nmình không dám bước Ra khỏi cái vỏ bọc hiện tại và cái\n\n00:03:06.000 --> 00:03:08.040\nlốc cái bộ an toàn của mình đâu cái hộp\n\n00:03:08.120 --> 00:03:10.160\nan toàn nó vậy là cứ ngày nào cũng làm như vậy không được\n\n00:03:10.480 --> 00:03:11.840\ncác bạn hãy can đảm nha\n\n00:03:12.080 --> 00:03:13.920\ncan đảm vượt qua chính bản thân các bạn luôn\n\n00:03:14.080 --> 00:03:15.560\nđừng có nhút nhát đừng có sợ nữa\n\n00:03:15.680 --> 00:03:17.160\ncuộc sống này nó nó rộng lớn lắm\n\n00:03:17.240 --> 00:03:19.160\ncác bạn cứ can đảm làm những cái thứ mà các bạn\n\n00:03:19.240 --> 00:03:20.960\ntin vào bản thân của các bạn và đơn giản\n\n00:03:21.000 --> 00:03:23.040\nđể can đảm làm được điều đó thì các bạn phải có một cái trí\n\n00:03:23.120 --> 00:03:23.920\nTuệ sáng suốt\n\n00:03:24.240 --> 00:03:25.440\ntrí Tuệ thì các bạn p",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7712494750078749970-vie-VN.vtt"
+    ],
+    "file": "7712494750078749970-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7712494750078749970",
+   "create_time": "2026-11-26T14:58:47.000Z",
+   "is_slideshow": false,
+   "outlier": 0.09,
+   "basis": "author_median"
+  },
+  {
+   "url": "https://www.tiktok.com/@hoaquynh0000/video/7712369053922331912",
+   "caption": "Thói quen nhỏ lại ảnh hưởng vận mệnh #xuhuongtiktok #learnontiktok #phattrienbanthan #manifest #nangluong ",
+   "author": {
+    "id": "16395636",
+    "name": "hoaquynh0000",
+    "nick": "Hoa Quỳnh Nở 00.00",
+    "profile": "https://www.tiktok.com/@hoaquynh0000",
+    "fans": 666700
+   },
+   "play_count": 93000,
+   "like_count": 5689,
+   "share_count": 1250,
+   "comment_count": 70,
+   "duration_s": 397,
+   "music": {
+    "id": "7712369125218650898",
+    "name": "âm thanh gốc",
+    "author": "Hoa Quỳnh Nở 00.00",
+    "original": true
+   },
+   "hashtags": [
+    "xuhuongtiktok",
+    "learnontiktok",
+    "phattrienbanthan",
+    "manifest",
+    "nangluong"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.360 --> 00:00:02.280\ncó một điều mình khuyên chân thành với các bạn trẻ\n\n00:00:02.281 --> 00:00:03.201\nngay tại thời điểm bây giờ\n\n00:00:03.240 --> 00:00:04.240\nnếu các bạn kiếm Ra tiền\n\n00:00:04.280 --> 00:00:07.320\ncác bạn hãy chừa Ra một cái số tiền để Cho Cha mẹ mình\n\n00:00:07.680 --> 00:00:10.400\ncon cái mà có hiếu với Cha mẹ á thì phước các bạn rất dày\n\n00:00:10.640 --> 00:00:13.040\nnhưng con cái mà bất hiếu với Cha mẹ hoặc là phá\n\n00:00:13.120 --> 00:00:13.920\ntiền của Cha mẹ á\n\n00:00:14.040 --> 00:00:16.320\nlà y như rằng phước báu của các bạn không có đâu\n\n00:00:16.480 --> 00:00:18.200\nvà các bạn biết những cái điều gì mà gây tổn\n\n00:00:18.240 --> 00:00:19.120\nthức của các bạn hông\n\n00:00:19.480 --> 00:00:20.120\ncác bạn biết hông\n\n00:00:20.121 --> 00:00:23.241\năn chơi cờ bạc gái gú là gây tổn phước vô cùng tận luôn\n\n00:00:23.400 --> 00:00:24.920\ncác bạn có thể chơi bời một tí xíu\n\n00:00:24.921 --> 00:00:26.121\nnhưng mà các bạn đừng có nghiện ngập\n\n00:00:26.200 --> 00:00:27.520\ncác bạn đừng có phải là nghiện rượu\n\n00:00:27.521 --> 00:00:29.121\nhay làm bất cứ một cái điều gì nó nghiện\n\n00:00:29.320 --> 00:00:31.480\nlàm Cho tài chính của các bạn hoan toàn\n\n00:00:31.520 --> 00:00:32.760\ncơ thể của bạn hoang dại\n\n00:00:32.880 --> 00:00:35.160\nnó rất là mệt mỏi luôn cái đó là tổn phước của các bạn á\n\n00:00:35.400 --> 00:00:37.840\ncái thứ 2 các bạn biết hông Cha mẹ các bạn rất quan trọng\n\n00:00:38.120 --> 00:00:40.040\nngày nào mà các bạn Cho BA mẹ nhiều tiền á\n\n00:00:40.280 --> 00:00:41.880\nthậm chí là một số tiền nào đó nó vừa phải\n\n00:00:41.960 --> 00:00:42.920\nvới BA mẹ là nhiều nha\n\n00:00:42.921 --> 00:00:45.721\nXin lỗi thì thực sự á các bạn sẽ tạo phước Cho gia đình\n\n00:00:45.920 --> 00:00:48.880\ntui nói thiệt cứ Cho BA mẹ Cho AI cũng được bằng Cho BA\n\n00:00:48.881 --> 00:00:51.201\nmẹ mình BA mẹ mình chỉ có một thôi các bạn ơi\n\n00:00:51.202 --> 00:00:52.801\nđừng sống bất hiếu với Cha mẹ mình\n\n00:00:53.000 --> 00:00:54.120\nsống bất hiếu là cái gì\n\n00:00:54.320 --> 00:00:57.200\nCha mẹ mình đến khi già rồi mà phải nuôi con\n\n00:00:57.240 --> 00:00:58.840\nphải dùng tiền của mình nuôi con\n\n00:00:58.880 --> 00:01:00.200\nthì đó là bất hiếu đó các bạn à\n\n00:01:00.600 --> 00:01:02.000\nquá đắt quá bất đắc đắc dĩ\n\n00:01:02.001 --> 00:01:04.281\nlà Cha mẹ mới phải trả nợ Cho mình mà Cha mẹ phải trả nợ\n\n00:01:04.282 --> 00:01:06.481\nđến khi già luôn là một đứa con bất hiếu\n\n00:01:06.680 --> 00:01:07.960\nthì các bạn nghĩ phước nó còn hông\n\n00:01:08.160 --> 00:01:10.480\nphước nó không có thì làm gì nó cũng tệ các bạn\n\n00:01:10.481 --> 00:01:11.801\nnó rơi xuống hoàn toàn luôn\n\n00:01:12.080 --> 00:01:12.880\ncái nữa các bạn\n\n00:01:12.960 --> 00:01:15.200\ncái mà tôi học được ở trong cái phước báu của chúng ta á đó\n\n00:01:15.201 --> 00:01:16.241\ncác bạn biết đó là gì hông\n\n00:01:16.440 --> 00:01:17.240\nđó là á\n\n00:01:17.320 --> 00:01:19.280\nkhi mà chúng ta làm một cái việc thiện á chúng ta đừng có\n\n00:01:19.720 --> 00:01:21.000\nchờ người ta phải báo đáp mình\n\n00:01:21.120 --> 00:01:23.880\nthực sự mình càng chờ người ta báo đáp hay là ưu tiên mình á\n\n00:01:23.920 --> 00:01:26.240\nmình bị rơi vào một cái trạng thái là mình mong chờ\n\n00:01:26.440 --> 00:01:28.560\nmà càng mong chờ á cái phước lành của mình nó hông tới\n\n00:01:28.680 --> 00:01:29.880\ncon đường mình nó hông hanh thông\n\n00:01:30.080 --> 00:01:31.720\nmình đã Cho đi rồi thì kệ nó đi\n\n00:01:32.040 --> 00:01:33.600\nAI AI Cho mình thì mình cảm ơn\n\n00:01:33.601 --> 00:01:35.521\ncòn AI không cảm ơn mình cũng chả SAO hết\n\n00:01:35.600 --> 00:01:36.400\nnhưng đừng có vô\n\n00:01:36.480 --> 00:01:38.480\nơn với những cái người gọi là ân nhân trong cuộc\n\n00:01:38.481 --> 00:01:39.281\nđời của các bạn\n\n00:01:39.480 --> 00:01:41.120\ncó những ân nhân là như thế này nè các bạn\n\n00:01:41.200 --> 00:01:44.080\nngười ta đến người ta giúp bạn một ngày tình cờ nào đó thôi\n\n00:01:44.081 --> 00:01:45.481\nnhưng các bạn phải nhớ ơn cái điều đó\n\n00:01:45.680 --> 00:01:47.560\nnhớ ơn không phải là bạn phải đội người ta lên đầu\n\n00:01:47.760 --> 00:01:49.640\nnhớ ơn ở đây là bạn làm một cái việc gì đó\n\n00:01:49.720 --> 00:01:51.000\ncảm thấy Cho người ta vui vẻ\n\n00:01:51.040 --> 00:01:51.840\ncó qua có lại mới\n\n00:01:52.200 --> 00:01:53.160\nthoại lòng nhau thôi các bạn\n\n00:01:53.320 --> 00:01:55.600\nvà khi cái mình sống mà mình sống vô ơn quá\n\n00:01:55.920 --> 00:01:58.600\nthì mình là càng ngày là cái cái cuộc đời của mình nó càng\n\n00:01:59.040 --> 00:02:00.520\ntệ bạc thôi vô ơn ở đây\n\n00:02:00.521 --> 00:02:02.441\nnó còn thể hiện trong chính gia đình của các bạn nữa\n\n00:02:02.480 --> 00:02:04.120\nthế sự có anh chị em mà thương mình á\n\n00:02:04.280 --> 00:02:05.960\nthì mình phải sống có ơn Cho anh chị em mình\n\n00:02:06.120 --> 00:02:06.840\ncòn mình vô ơn\n\n00:02:06.841 --> 00:02:09.241\nmình trách móc mình nói những cái lời mà đắng cay ngọt bùi\n\n00:02:09.242 --> 00:02:10.601\ná lời nói khẩu nghiệp mà\n\n00:02:10.720 --> 00:02:12.560\nnó khiến Cho cái phước của mình nó cũng bị mất luôn\n\n00:02:12.640 --> 00:02:13.720\nnên Nam mô A Di Đà Phật\n\n00:02:13.760 --> 00:02:15.760\nlỡ may mà có tranh cãi với gia đình hay gì á ha\n\n00:02:16.080 --> 00:02:16.880\nnói lời Xin lỗi\n\n00:02:17.120 --> 00:02:19.520\ntại vì phước báu của mình là bằng những cái lời mình nói Ra\n\n00:02:19.760 --> 00:02:20.840\ncòn mình càng bôi nhọ\n\n00:02:20.920 --> 00:02:22.680\nmình càng hạ hạ bệ người này người Kia\n\n00:02:22.920 --> 00:02:24.880\nthậm chí mình dùng cái lời nói mình hại người này\n\n00:02:25.040 --> 00:02:27.040\nhoặc là hại cái bi sinh của người ta thì\n\n00:02:27.041 --> 00:02:28.681\ncái phước của bạn nó cũng hông có còn đâu\n\n00:02:29.000 --> 00:02:30.120\ncác bạn có thể deal một cái gì đó\n\n00:02:30.121 --> 00:02:31.721\nnhưng mà các bạn đừng có dùng lời nói để làm\n\n00:02:32.080 --> 00:02:33.840\nCho cái cuộc vấn đề kinh doanh của họ\n\n00:02:34.080 --> 00:02:36.920\nsự nghiệp của họ tan nát thì có bạn bạn mang họa vào thân\n\n00:02:37.200 --> 00:02:38.160\nthậm chí đó là không tốt\n\n00:02:38.240 --> 00:02:40.160\nvà cái người ta Phật người ta hay nói như thế này nè\n\n00:02:40.520 --> 00:02:42.200\nđừng bao giờ mà giết á các bạn\n\n00:02:42.201 --> 00:02:44.121\ngiết hại đương nhiên là mình ăn thịt heo\n\n00:02:44.160 --> 00:02:46.240\nthịt bò nếu các bạn có thể ăn chay được thì quá tốt rồi\n\n00:02:46.400 --> 00:02:48.080\nnhưng mà khi mà mình giết hại chúng sinh\n\n00:02:48.081 --> 00:02:49.681\nhoặc là giết hại những cái động vật á các bạn\n\n00:02:49.840 --> 00:02:53.600\nhoặc là hại người hại người ta á thì rồi ăn cắp rồi à\n\n00:02:53.680 --> 00:02:54.520\ncứt củ này nọ\n\n00:02:54.560 --> 00:02:56.240\nthì các bạn nghĩ là phước nó còn hông hông\n\n00:02:56.241 --> 00:02:57.041\nchắc chắn là không còn\n\n00:02:57.440 --> 00:02:57.800\ntôi nói thiệt\n\n00:02:57.801 --> 00:03:00.241\ncó rất là nhiều gia đình nha đã từng là kinh doanh về\n\n00:03:00.440 --> 00:03:01.480\nà giết này nọ\n\n00:03:01.481 --> 00:03:03.321\nnhưng mà các bạn biết hông sau một thời gian cảm thấy là\n\n00:03:03.520 --> 00:03:05.520\nnó rất nhiều cái rủi ro đến với cuộc sống luôn\n\n00:03:05.720 --> 00:03:07.160\nđủ tới chuyện á là coi như người ta bỏ\n\n00:03:07.161 --> 00:03:08.161\nngười ta cắt bỏ luôn các bạn\n\n00:03:08.200 --> 00:03:09.360\nthậm chí người ta ăn chay luôn đó\n\n00:03:09.480 --> 00:03:10.720\năn chay niệm Phật là có thiệt\n\n00:03:11.200 --> 00:03:13.400\nvà hơn bao giờ hết đó là lòng tham sân si\n\n00:03:13.800 --> 00:03:15.120\ncái chuyện của người khác thì kệ\n\n00:03:15.121 --> 00:03:17.441\nhọ đi cái chuyện trên mạng xã hội kệ đi\n\n00:03:17.560 --> 00:03:20.000\nđừng có sân si Chi Cho cái mệt cái đầu của mình\n\n00:03:20.240 --> 00:03:22.240\nmệt cái đầu tại vì cái đầu của mình là để phải trong lành\n\n00:03:22.241 --> 00:03:23.761\nđể làm những cái việc của cuộc đời mình\n\n00:03:23.840 --> 00:03:24.680\ngiúp người này người Kia\n\n00:03:24.800 --> 00:03:26.760\nà giúp Cho cái chính bản thân mình nó tốt đẹp hơn\n\n00:03:26.920 --> 00:03:27.800\ncòn các bạn sân si\n\n00:03:28.160 --> 00:03:29.080\nngày này qua ngày nọ\n\n00:03:29.120 --> 00:03:30.920\nh",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7712369053922331912-vie-VN.vtt"
+    ],
+    "file": "7712369053922331912-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7712369053922331912",
+   "create_time": "2026-11-26T06:51:00.000Z",
+   "is_slideshow": false,
+   "outlier": 1.02,
+   "basis": "author_median"
+  },
+  {
+   "url": "https://www.tiktok.com/@ninth.04/video/7692736770869316882",
+   "caption": "vAy ThI BaN cHaT cUa GiAo DoNg DiEu HoA #fyp #cosplay #sinestrea #aov ",
+   "author": {
+    "id": "7516845107745801234",
+    "name": "ninth.04",
+    "nick": "chó thảo ngu",
+    "profile": "https://www.tiktok.com/@ninth.04",
+    "fans": 65
+   },
+   "play_count": 2184,
+   "like_count": 146,
+   "share_count": 27,
+   "comment_count": 18,
+   "duration_s": 15,
+   "music": {
+    "id": "7664254973472197396",
+    "name": "âm thanh gốc - Thầy Kiêu Vật Lí",
+    "author": "Thầy Kiêu Vật Lí",
+    "original": true
+   },
+   "hashtags": [
+    "fyp",
+    "cosplay",
+    "sinestrea",
+    "aov"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "vtt",
+    "text": "WEBVTT\n\n\n00:00:00.480 --> 00:00:03.240\nvậy thì bản chất của dao động điều hòa nó gồm 2 chuyển động\n\n00:00:03.280 --> 00:00:05.800\nlà chuyển động nhanh dần và chuyển động chậm dần\n\n00:00:06.160 --> 00:00:07.920\nlặp đi lặp lại\n\n00:00:08.680 --> 00:00:10.880\nnếu một vật mà dao động điều hòa\n\n00:00:10.960 --> 00:00:14.920\nthì nó sẽ có một phương trình X bằng a nhân\n",
+    "links": [
+     "/Users/macbook/work/oneup-studio/research/trends/2026-11-28/apify/vtt/7692736770869316882-vie-VN.vtt"
+    ],
+    "file": "7692736770869316882-vie-VN.vtt"
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7692736770869316882",
+   "create_time": "2026-10-04T09:07:45.000Z",
+   "is_slideshow": false,
+   "outlier": 33.6,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@37.n0/video/7691186915940240648",
+   "caption": "v thi ban chat cua dao dong..#allbum#cortis #xhh ",
+   "author": {
+    "id": "7644870510824178696",
+    "name": "37.n0",
+    "nick": "5 bạn kia ị đùn cô ơii",
+    "profile": "https://www.tiktok.com/@37.n0",
+    "fans": 198
+   },
+   "play_count": 332,
+   "like_count": 49,
+   "share_count": 25,
+   "comment_count": 3,
+   "duration_s": 8,
+   "music": {
+    "id": "7691186943010392853",
+    "name": "âm thanh gốc - cô ơi bn mimeo ị đùn",
+    "author": "5 bạn kia ị đùn cô ơii",
+    "original": true
+   },
+   "hashtags": [
+    "allbum",
+    "cortis",
+    "xhh"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "v thi ban chat cua dao dong..#allbum#cortis #xhh ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7691186915940240648",
+   "create_time": "2026-09-30T04:53:26.000Z",
+   "is_slideshow": false,
+   "outlier": 1.68,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@d11_thptvd/video/7638951609476697351",
+   "caption": "D11 collab A7@A7 #vietduchighschool #thptvietduc #viral #fyb #xuhuong ",
+   "author": {
+    "id": "7072007355793409051",
+    "name": "d11_thptvd",
+    "nick": "D11 – THPT Việt Đức",
+    "profile": "https://www.tiktok.com/@d11_thptvd",
+    "fans": 349
+   },
+   "play_count": 45000,
+   "like_count": 4202,
+   "share_count": 1112,
+   "comment_count": 105,
+   "duration_s": 28,
+   "music": {
+    "id": "7638951637281671943",
+    "name": "âm thanh gốc - D11 – THPT Việt Đức",
+    "author": "D11 – THPT Việt Đức",
+    "original": true
+   },
+   "hashtags": [
+    "vietduchighschool",
+    "thptvietduc",
+    "viral",
+    "fyb",
+    "xuhuong"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "D11 collab A7@A7 #vietduchighschool #thptvietduc #viral #fyb #xuhuong ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7638951609476697351",
+   "create_time": "2026-05-12T10:33:43.000Z",
+   "is_slideshow": false,
+   "outlier": 128.94,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@lupita_lapro0/video/7708138932717849877",
+   "caption": "ush💕🙃#fakechat #historiafalsa #videoviral #like #apoyoplissssssssssssss💞 ",
+   "author": {
+    "id": "7670396007763461121",
+    "name": "lupita_lapro0",
+    "nick": "🎀Lupis🎀",
+    "profile": "https://www.tiktok.com/@lupita_lapro0",
+    "fans": 4205
+   },
+   "play_count": 501800,
+   "like_count": 9989,
+   "share_count": 438,
+   "comment_count": 261,
+   "duration_s": 65,
+   "music": {
+    "id": "7195270081210141446",
+    "name": "Gracias a los chicos que usaron el audio",
+    "author": "•Historias falsas•",
+    "original": true
+   },
+   "hashtags": [
+    "fakechat",
+    "historiafalsa",
+    "videoviral",
+    "like",
+    "apoyoplissssssssssssss💞",
+    "apoyoplissssssssssssss"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "ush💕🙃#fakechat #historiafalsa #videoviral #like #apoyoplissssssssssssss💞 ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7708138932717849877",
+   "create_time": "2026-11-14T21:16:00.000Z",
+   "is_slideshow": false,
+   "outlier": 119.33,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@cuncte_49/video/7692652263092866312",
+   "caption": "🤷‍♀️#xh #cap #xhh #fyp #v ",
+   "author": {
+    "id": "7601392305148740609",
+    "name": "cuncte_49",
+    "nick": "ừ",
+    "profile": "https://www.tiktok.com/@cuncte_49",
+    "fans": 4416
+   },
+   "play_count": 2200000,
+   "like_count": 254300,
+   "share_count": 125700,
+   "comment_count": 914,
+   "duration_s": 10,
+   "music": {
+    "id": "7650736502167259924",
+    "name": "âm thanh gốc - Nghiaz 🚀",
+    "author": "Nghiaz 🚀",
+    "original": true
+   },
+   "hashtags": [
+    "xh",
+    "cap",
+    "xhh",
+    "fyp",
+    "v"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "🤷‍♀️#xh #cap #xhh #fyp #v ",
+    "links": []
+   },
+   "top_comments": [
+    {
+     "text": "Người ta không đổi thay, chỉ là chiếc mặt nạ theo năm tháng đã không còn vừa vặn",
+     "likes": 754,
+     "author": "mai.huyeendepgai"
+    },
+    {
+     "text": "95% mn đang ở acc phụ=))",
+     "likes": 654,
+     "author": "rubyduyen07"
+    },
+    {
+     "text": "nhật ký có biến căng",
+     "likes": 52,
+     "author": "doideocongbang14"
+    },
+    {
+     "text": "thời gian không làm thay đổi con người mà nó chỉ là mình lộ rõ bản chất con người",
+     "likes": 40,
+     "author": "em.mtyu2"
+    },
+    {
+     "text": "Thời gian không làm con người thay đổi, mà nó chỉ làm lộ rõ bản chất người.",
+     "likes": 40,
+     "author": "nguoihetthuonglav"
+    },
+    {
+     "text": "Kẻ khôn ngoan biết lúc nào nên tiến, lúc nào nên lùi",
+     "likes": 36,
+     "author": "nguyn.ngc.mai8378"
+    },
+    {
+     "text": "Thời gian không làm thay đổi con người mà nó chỉ làm lộ bản chất con người",
+     "likes": 32,
+     "author": "userdgai562"
+    },
+    {
+     "text": "lộ lắm rôi:)",
+     "likes": 13,
+     "author": "lewyzdunq"
+    },
+    {
+     "text": "bạn đang âm thầm đọc bình luận à",
+     "likes": 10,
+     "author": "manhcon.2.1.1"
+    },
+    {
+     "text": "Thời gian không làm thay đổi con người mà nó chỉ làm lộ rõ bản chất con người",
+     "likes": 9,
+     "author": "hk_30710"
+    },
+    {
+     "text": "Thời gian không làm thay đổi con người mà nó chỉ làm lộ rõ bản chất con người",
+     "likes": 9,
+     "author": "kietdznhattg3"
+    },
+    {
+     "text": "có mẹo cả đấy",
+     "likes": 7,
+     "author": "._1a172"
+    },
+    {
+     "text": "Hộ tui vứi",
+     "likes": 6,
+     "author": "ngk12333"
+    },
+    {
+     "text": "tình yeu đẹp nhất chỉ co lúc mới quen :))",
+     "likes": 5,
+     "author": "huuthienz09"
+    },
+    {
+     "text": "1 tháng thoi là hiểu hết😘😘",
+     "likes": 3,
+     "author": "user.ctevch"
+    },
+    {
+     "text": "riết sợ luog",
+     "likes": 3,
+     "author": "vmthu_04"
+    },
+    {
+     "text": "để ý nhki ủa mìn cái",
+     "likes": 3,
+     "author": "taodelsocht9999"
+    },
+    {
+     "text": "đôi khi càng cạnh nhau lâu mới nhận ra đc con người của nhau",
+     "likes": 2,
+     "author": "ductung._.12"
+    },
+    {
+     "text": "xin cap nha czang",
+     "likes": 1,
+     "author": "b_yen01"
+    },
+    {
+     "text": "Câu nói rất thâm",
+     "likes": 1,
+     "author": "user2665253065476"
+    }
+   ],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7692652263092866312",
+   "create_time": "2026-10-04T03:39:44.000Z",
+   "is_slideshow": false,
+   "outlier": 498.19,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@hatoogroup/video/7701754004027542805",
+   "caption": "vậy thì bản chất... #buihongquang #hatoo #mangchatvenha #xuhuong ",
+   "author": {
+    "id": "7685194271205737493",
+    "name": "hatoogroup",
+    "nick": "🍃HATOO💨",
+    "profile": "https://www.tiktok.com/@hatoogroup",
+    "fans": 80
+   },
+   "play_count": 397,
+   "like_count": 10,
+   "share_count": 0,
+   "comment_count": 0,
+   "duration_s": 32,
+   "music": {
+    "id": "7701754030678084404",
+    "name": "âm thanh gốc - HATOO",
+    "author": "🍃HATOO💨",
+    "original": true
+   },
+   "hashtags": [
+    "buihongquang",
+    "hatoo",
+    "mangchatvenha",
+    "xuhuong"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "vậy thì bản chất... #buihongquang #hatoo #mangchatvenha #xuhuong ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7701754004027542805",
+   "create_time": "2026-10-28T16:19:08.000Z",
+   "is_slideshow": false,
+   "outlier": 4.96,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@anaiscastillo109/video/7698890018089094421",
+   "caption": "meta IA no sabía que te justa chatgpt 😱😱",
+   "author": {
+    "id": "7695877840257008660",
+    "name": "anaiscastillo109",
+    "nick": "antito.mk77",
+    "profile": "https://www.tiktok.com/@anaiscastillo109",
+    "fans": 47
+   },
+   "play_count": 12000,
+   "like_count": 108,
+   "share_count": 104,
+   "comment_count": 6,
+   "duration_s": 12,
+   "music": {
+    "id": "7683509651553569556",
+    "name": "âm thanh gốc - 5.H130 14",
+    "author": "5.H130 14",
+    "original": true
+   },
+   "hashtags": [],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "meta IA no sabía que te justa chatgpt 😱😱",
+    "links": []
+   },
+   "top_comments": [
+    {
+     "text": "mira lo que le icimos jaja",
+     "likes": 1,
+     "author": "nakis130"
+    },
+    {
+     "text": "jjaja",
+     "likes": 1,
+     "author": "kimbeobvdfc"
+    },
+    {
+     "text": "[Manos 67]",
+     "likes": 1,
+     "author": "jadegomez903"
+    },
+    {
+     "text": "😂😂😂😂🤣🤣😂😂🤣😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣",
+     "likes": 1,
+     "author": "sofa.fernanda.bal8"
+    }
+   ],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7698890018089094421",
+   "create_time": "2026-10-20T23:05:26.000Z",
+   "is_slideshow": false,
+   "outlier": 255.32,
+   "basis": "fans"
+  },
+  {
+   "url": "https://www.tiktok.com/@nqaawnh/video/7710230740235062535",
+   "caption": "dang ngong trong co nguoi dan chat ban tay.\n#nnnn #xhh ",
+   "author": {
+    "id": "7441789393470342160",
+    "name": "nqaawnh",
+    "nick": "nGọC nGâN",
+    "profile": "https://www.tiktok.com/@nqaawnh",
+    "fans": 413
+   },
+   "play_count": 1709,
+   "like_count": 235,
+   "share_count": 10,
+   "comment_count": 44,
+   "duration_s": 30,
+   "music": {
+    "id": "7710230801771072263",
+    "name": "âm thanh gốc - nGọC nGâN",
+    "author": "nGọC nGâN",
+    "original": true
+   },
+   "hashtags": [
+    "nnnn",
+    "xhh"
+   ],
+   "subtitle_or_transcript": {
+    "kind": "caption_fallback",
+    "text": "dang ngong trong co nguoi dan chat ban tay.\n#nnnn #xhh ",
+    "links": []
+   },
+   "top_comments": [],
+   "source_actor": "clockworks/tiktok-scraper",
+   "raw_id": "7710230740235062535",
+   "create_time": "2026-11-20T12:33:14.000Z",
+   "is_slideshow": false,
+   "outlier": 4.14,
+   "basis": "fans"
+  }
+ ]
+}

@@ -1,0 +1,372 @@
+{
+ "hook": {
+  "spoken": "When you've got a task that you know you need to do, but you just can't get yourself to start it, you have hit resistance.",
+  "verbatim": true,
+  "on_screen_text": "When you've got a task that you know you need to do, but you just can't get yourself to start it, you have hit resistance.",
+  "visual_action": "00:00 mở đầu cận mặt người nói nhìn thẳng ống kính, đến 00:01 cắt ngay sang cảnh người ngồi thẫn thờ trước laptop rồi cầm tay cầm chơi game lên với ánh mắt vô hồn.",
+  "mechanism": "nỗi đau",
+  "mechanism_note": "Chạm đúng trải nghiệm ai cũng từng gặp (biết phải làm nhưng vẫn trì hoãn) rồi dán nhãn bằng một từ khóa gọn ('resistance') tô màu cam để tạo cảm giác được gọi đúng bệnh.",
+  "implied_promise": "Giải thích vì sao bị 'kẹt không bắt đầu được' và đưa ra cách vượt qua ngay."
+ },
+ "beats": [
+  {
+   "from": "00:00",
+   "to": "00:05",
+   "seconds": 5,
+   "role": "hook",
+   "emotion": "chùng xuống",
+   "retention_function": "Đánh trúng cảm giác tội lỗi quen thuộc khi né việc để chơi game và dùng một thuật ngữ gọn ('resistance') giữ người xem chờ cách gỡ.",
+   "summary": "Nêu tình huống biết rõ phải làm một việc nhưng không tài nào bắt đầu nổi và gọi tên trạng thái đó là sức ỳ/kháng cự.",
+   "transition": "Lặp lại cụm 'When we hit resistance' để kéo thẳng sang nguyên nhân và hướng xử lý."
+  },
+  {
+   "from": "00:05",
+   "to": "00:15",
+   "seconds": 10,
+   "role": "giải thích",
+   "emotion": "tò mò",
+   "retention_function": "Héo lộ giải pháp ('reframe our tasks') nhưng chưa nói cách làm ngay, thay vào đó bóc 4 nguyên nhân gốc tạo kỳ vọng cho bước lật.",
+   "summary": "Nói rằng khi gặp sức ỳ cần đóng khung lại công việc, rồi liệt kê 4 nguyên nhân chính gây trì hoãn: nhàm chán, khó, gây bực bội và mơ hồ.",
+   "transition": "Dùng câu điều kiện 'And if you reframe your task...' để nối trực tiếp từ 4 vấn đề sang cú giải quyết."
+  },
+  {
+   "from": "00:15",
+   "to": "00:22",
+   "seconds": 7,
+   "role": "lật kèo",
+   "emotion": "vỡ òa",
+   "retention_function": "Trả lời lời hứa chính bằng một cặp khái niệm đối lập dễ nhớ (input-based vs output-based) và cam kết xóa sổ ngay ít nhất 2 rào cản.",
+   "summary": "Đề xuất đổi mục tiêu từ dựa trên đầu ra (output-based) sang dựa trên đầu vào (input-based) để loại bỏ ít nhất 2 nguyên nhân trì hoãn ngay lập tức.",
+   "transition": "Mở ví dụ cụ thể bằng câu ngắn 'Here's an example.'"
+  },
+  {
+   "from": "00:22",
+   "to": "00:32",
+   "seconds": 10,
+   "role": "chứng minh",
+   "emotion": "nhẹ nhõm",
+   "retention_function": "Biến khái niệm trừu tượng thành tình huống đời thường ai cũng hiểu và mở vòng lặp mới ('you've done two things') để kéo người xem sang đoạn kế.",
+   "summary": "Lấy ví dụ viết bài luận: đổi từ mục tiêu đầu ra 'viết xong bài' sang mục tiêu đầu vào 'làm bài trong 25 phút' và báo trước hiệu ứng kép.",
+   "transition": "Chuyển bằng câu mồi số lượng 'and you've done two things' sang liệt kê đánh số."
+  },
+  {
+   "from": "00:32",
+   "to": "00:48",
+   "seconds": 16,
+   "role": "giải thích",
+   "emotion": "nhẹ nhõm",
+   "retention_function": "Cấu trúc đánh số 'Number one / Number two' rõ ràng kết hợp cắt cảnh làm việc thực tế giúp khán giả kiểm chứng logic của lời hứa ban đầu.",
+   "summary": "Phân tích 2 tác động: (1) giảm cảm giác khó vì chỉ cần làm 25 phút thay vì cả bài, (2) giảm sự mơ hồ vì hành động tiếp theo trở nên cực kỳ rõ ràng.",
+   "transition": "Dùng câu nâng cấp 'If you want to further strengthen your motivation...' để chuyển sang mẹo thực thi."
+  },
+  {
+   "from": "00:48",
+   "to": "00:59",
+   "seconds": 11,
+   "role": "kết",
+   "emotion": "ấm áp",
+   "retention_function": "Tặng thêm một hành động áp dụng tức thì kèm câu chốt sắc gọn về bản chất não bộ tạo cảm giác đọng lại khi hết video.",
+   "summary": "Gợi ý dùng kỹ thuật Pomodoro với đồng hồ hẹn giờ vật lý vì nó tạo ra động lực bên ngoài giữ tập trung tốt hơn chính bộ não của bạn.",
+   "transition": "Cắt sang màn hình đen ngay sau câu chốt cuối, không kéo dài lời chào."
+  }
+ ],
+ "promise_answered_at": "00:16",
+ "winning_points": {
+  "best_metaphor": {
+   "text": "Gọi trạng thái không thể bắt đầu là 'hit resistance' (đâm vào lực cản) ở 00:03 và đối chiếu đồng hồ vật lý như một 'external motivator' (bộ giữ nhịp bên ngoài) đáng tin hơn não bộ ở 00:54.",
+   "t": "00:54",
+   "kind": "quan sát"
+  },
+  "quotable_line": {
+   "text": "Using a timer creates an external motivator, which is much better at keeping you on task than your own brain is.",
+   "t": "00:54",
+   "verbatim": true
+  },
+  "interrupts_per_10s": 2.7,
+  "interrupts": [
+   {
+    "t": "00:01",
+    "what": "Cắt từ talking-head sang cảnh ngồi đờ đẫn trước laptop và cầm tay cầm game.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:05",
+    "what": "Zoom cận mặt khi lặp lại từ khóa 'resistance' tô cam và 'reframe' tô xanh lá.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:07",
+    "what": "Cắt về talking-head nền tối có ánh sáng viền xanh.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:10",
+    "what": "Cắt sang B-roll cận tay viết và lật chồng giấy tờ học tập.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:15",
+    "what": "Cắt về talking-head và giơ 2 ngón tay lúc 00:19 nhấn mạnh 'two of those'.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:22",
+    "what": "Cắt sang góc trên xuống cảnh gõ phím trên iPad Pro.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:26",
+    "what": "Cắt sang góc nghiêng người ngồi làm việc bên cửa sổ rồi sang macro bút viết ở 00:30.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:32",
+    "what": "Cắt về talking-head giơ 1 ngón tay mở mục 'Number one'.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:39",
+    "what": "Cắt sang góc qua vai gõ tài liệu trên Notion khi sang 'Number two'.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:44",
+    "what": "Cắt về talking-head chốt ý xóa mơ hồ.",
+    "kind": "quan sát"
+   },
+   {
+    "t": "00:48",
+    "what": "Chuỗi cắt nhanh mỗi 2–3 giây: macro vặn đồng hồ cơ (00:48), gõ MacBook từ trên xuống (00:51), macro mặt đồng hồ (00:53), ngồi tập trung (00:55), talking-head chốt câu cuối (00:57).",
+    "kind": "quan sát"
+   }
+  ]
+ },
+ "algorithmic_triggers": {
+  "comment": [
+   {
+    "what": "Cảnh cầm tay cầm game dù laptop đang mở ngay giây thứ 2 và câu cuối chê nhẹ bộ não tự quản lý kém.",
+    "why": "đồng cảm",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Khuyên dùng đồng hồ vật lý Pomodoro thay vì điện thoại hay tự dựa vào ý chí.",
+    "why": "tranh luận",
+    "kind": "suy đoán"
+   }
+  ],
+  "save_share": [
+   {
+    "what": "Công thức rõ ràng gồm 4 nguyên nhân trì hoãn + cặp chuyển đổi output-based sang input-based + khung 25 phút Pomodoro.",
+    "why": "checklist",
+    "kind": "suy đoán"
+   },
+   {
+    "what": "Mẹo vượt trì hoãn gọn dưới 1 phút, dễ gửi cho bạn bè hoặc đồng nghiệp đang than chạy deadline.",
+    "why": "gửi bạn bè",
+    "kind": "suy đoán"
+   }
+  ]
+ },
+ "audio": {
+  "speech_pace": "nhanh vừa, dứt khoát, rõ chữ và gần như không có khoảng lặng chết",
+  "emphasis": [
+   {
+    "t": "00:03",
+    "what": "Nhấn trọng âm và ngắt nhẹ ở từ 'resistance'."
+   },
+   {
+    "t": "00:12",
+    "what": "Đọc dồn nhịp danh sách 4 tính từ 'boring, difficult, frustrating, vague' và kéo nhẹ từ cuối."
+   },
+   {
+    "t": "00:17",
+    "what": "Nhấn tương phản cặp từ 'input-based' và 'output-based'."
+   },
+   {
+    "t": "00:33",
+    "what": "Nhấn rõ dấu mốc cấu trúc 'Number one' và sau đó là 'But number two' ở 00:39."
+   },
+   {
+    "t": "00:54",
+    "what": "Nhấn vào cụm 'external motivator' và hạ nhịp chắc ở câu chốt 'than your own brain is'."
+   }
+  ],
+  "tone": "chia sẻ kinh nghiệm",
+  "music": "Nhạc nền điện tử/lo-fi tiết tấu đều, sáng và năng động chạy xuyên suốt từ 00:00 đến 00:59 để tạo nhịp tiến tới.",
+  "sfx": []
+ },
+ "ending": {
+  "type": "khác",
+  "cta": ""
+ },
+ "arc": {
+  "name": "Gọi tên sức ỳ → Đảo khung mục tiêu → Công cụ khóa hành động",
+  "format_compatibility": "instructional_list",
+  "skeleton": [
+   "[Mô tả tình huống bế tắc ai cũng gặp + đặt nhãn ngắn gọn cho trạng thái đó]",
+   "[Hé lộ hướng giải quyết chung rồi liệt kê 3–4 nguyên nhân gốc gây ra vấn đề]",
+   "[Đưa ra cú đảo khung bằng một cặp khái niệm đối lập và hứa hẹn triệt tiêu ngay phần lớn rào cản]",
+   "[Minh họa bằng 1 ví dụ đời thường trước–sau và mở lời hứa phân tích 2 tác động]",
+   "[Bóc tách lần lượt 2 lợi ích theo thứ tự đánh số để chứng minh cơ chế hoạt động]",
+   "[Tặng thêm 1 công cụ/hành động cụ thể làm đòn bẩy và chốt bằng 1 nhận định ngắn sắc về tâm lý]"
+  ],
+  "hook_mechanism": "Mở bằng nỗi đau hành vi cụ thể kèm hình ảnh tương phản ở giây thứ 2, sau đó gom trọn trải nghiệm đó vào một từ khóa duy nhất.",
+  "beats": [
+   {
+    "role": "hook",
+    "function": "Đánh trúng cảm giác tội lỗi quen thuộc khi né việc để chơi game và dùng một thuật ngữ gọn ('resistance') giữ người xem chờ cách gỡ.",
+    "seconds": 5,
+    "transition": "Lặp lại cụm 'When we hit resistance' để kéo thẳng sang nguyên nhân và hướng xử lý."
+   },
+   {
+    "role": "giải thích",
+    "function": "Héo lộ giải pháp ('reframe our tasks') nhưng chưa nói cách làm ngay, thay vào đó bóc 4 nguyên nhân gốc tạo kỳ vọng cho bước lật.",
+    "seconds": 10,
+    "transition": "Dùng câu điều kiện 'And if you reframe your task...' để nối trực tiếp từ 4 vấn đề sang cú giải quyết."
+   },
+   {
+    "role": "lật kèo",
+    "function": "Trả lời lời hứa chính bằng một cặp khái niệm đối lập dễ nhớ (input-based vs output-based) và cam kết xóa sổ ngay ít nhất 2 rào cản.",
+    "seconds": 7,
+    "transition": "Mở ví dụ cụ thể bằng câu ngắn 'Here's an example.'"
+   },
+   {
+    "role": "chứng minh",
+    "function": "Biến khái niệm trừu tượng thành tình huống đời thường ai cũng hiểu và mở vòng lặp mới ('you've done two things') để kéo người xem sang đoạn kế.",
+    "seconds": 10,
+    "transition": "Chuyển bằng câu mồi số lượng 'and you've done two things' sang liệt kê đánh số."
+   },
+   {
+    "role": "giải thích",
+    "function": "Cấu trúc đánh số 'Number one / Number two' rõ ràng kết hợp cắt cảnh làm việc thực tế giúp khán giả kiểm chứng logic của lời hứa ban đầu.",
+    "seconds": 16,
+    "transition": "Dùng câu nâng cấp 'If you want to further strengthen your motivation...' để chuyển sang mẹo thực thi."
+   },
+   {
+    "role": "kết",
+    "function": "Tặng thêm một hành động áp dụng tức thì kèm câu chốt sắc gọn về bản chất não bộ tạo cảm giác đọng lại khi hết video.",
+    "seconds": 11,
+    "transition": "Cắt sang màn hình đen ngay sau câu chốt cuối, không kéo dài lời chào."
+   }
+  ]
+ },
+ "emotional_arc": {
+  "opening_emotion": "chạm nhột, bế tắc khi thấy đúng cảnh mình né việc",
+  "vulnerability_dip": {
+   "t": "00:01",
+   "what": "Khoảnh khắc nhân vật ngồi thẫn thờ trước laptop rồi cầm tay cầm chơi game thay vì bắt đầu việc cần làm."
+  },
+  "aha_peak": {
+   "t": "00:16",
+   "what": "Cú lật tư duy từ mục tiêu đầu ra (output-based) sang mục tiêu đầu vào (input-based) giải quyết cùng lúc 2 gốc rễ trì hoãn."
+  },
+  "ending_tone": "tỉnh táo, nhẹ nhõm và thực tế khi thừa nhận não dễ xao nhãng nên cần công cụ bên ngoài dẫn dắt"
+ },
+ "angles": {
+  "hi_oneup": {
+   "idea": "Vì sao bạn lên kế hoạch tập thể dục hay đọc sách mãi không làm nổi: không phải lười mà do đặt mục tiêu kiểu 'phải xong', thử đổi sang mục tiêu 'chỉ cần có mặt 10 phút' cùng đồng hồ hẹn giờ để não hết sợ bắt đầu (comic chibi Hiệp nằm lướt điện thoại đối đầu bức tường 'Mục tiêu khổng lồ' rồi thu nhỏ nó thành viên gạch 10 phút).",
+   "hook": "Có bao giờ bạn biết rõ hôm nay phải đọc sách hay tập thể dục, mà cứ nằm bấm điện thoại miết không nhấc người lên nổi không?",
+   "length_s": 80
+  },
+  "vanhiep_tech": {
+   "idea": "Cách dev thoát kẹt khi nhìn backlog/task refactor quá lớn: tách mục tiêu từ Output ('refactor xong module auth') sang Input ('timebox 25 phút mở PR nháp đầu tiên'), kết hợp overlay sơ đồ so sánh Output Goal vs Input Timebox và đồng hồ Pomodoro trên bàn làm việc.",
+   "hook": "Mở Jira thấy một task refactor to đùng rồi bạn tự nhiên đi pha cà phê và đọc tin công nghệ cả tiếng đồng hồ?",
+   "length_s": 60
+  }
+ },
+ "craft_transfer": {
+  "metaphor_transfer": "Không giảng lý thuyết tâm lý dài dòng mà gom triệu chứng thành nhãn vật lý ('hit resistance') và chia đôi mục tiêu thành 2 khái niệm đối xứng ('output-based' vs 'input-based') kết hợp đạo cụ trực quan (tay cầm game ↔ đồng hồ cơ).",
+  "sentence_rhythm": "Xen kẽ câu thiết lập dài vừa phải với các câu chốt ngắn, gọn và có dấu mốc liệt kê ('Here's an example.', 'Number one...', 'Get an actual timer, work to that.') tạo cảm giác mạch lạc, không bị đuối hơi.",
+  "spoken_pivots": [
+   "because think about what causes us to...",
+   "Here's an example. Let's say you have...",
+   "If you want to further strengthen your..."
+  ],
+  "pacing_3_5s": "Luân phiên đều giữa talking-head và B-roll hành động thực tế mỗi 3–5 giây, tăng tốc cắt lên 2–3 giây ở 10 giây cuối, đồng thời tô màu phụ đề cố định theo nhóm nghĩa (cam = vấn đề/đầu ra, xanh lá = giải pháp/đầu vào) và ghim icon đồng hồ xuyên suốt khung hình.",
+  "audience_pains": [
+   "Biết rõ việc cần làm rất quan trọng nhưng vẫn vô thức trốn sang giải trí (chơi game, lướt mạng).",
+   "Nhìn một đầu việc quá rộng nên thấy ngợp, không biết bước nhỏ đầu tiên phải làm gì.",
+   "Tự nhủ trong đầu sẽ tập trung nhưng bộ não nhanh chóng tìm cớ bỏ ngang."
+  ],
+  "localization_vi": {
+   "core_insight_vi": "Đừng ép mình phải làm xong cả đống việc, chỉ cần hẹn giờ ngồi làm đúng 25 phút là não sẽ chịu bắt đầu.",
+   "vn_everyday_scene": "Mở sẵn laptop định làm báo cáo hoặc ôn bài nhưng lại cầm điện thoại lướt TikTok/chơi game tới khuya, rồi chuyển sang đặt đồng hồ hẹn giờ trên bàn học hoặc góc làm việc nhỏ ở phòng trọ.",
+   "translationese_traps": [
+    "hit resistance (tránh dịch cứng 'đánh trúng sự kháng cự', nên nói 'bị khựng lại / đụng sức ỳ')",
+    "reframe your task as input-based instead of output-based (tránh dịch 'tái đóng khung nhiệm vụ dựa trên đầu vào thay vì đầu ra', nên nói 'đổi từ đặt mục tiêu phải làm xong sang chỉ cần ngồi làm đủ giờ')",
+    "right off the bat / external motivator (tránh dịch 'ngay từ cú đánh đầu tiên / động lực ngoại sinh', nên nói 'ngay lập tức / cái nhắc nhịp từ bên ngoài')"
+   ]
+  }
+ },
+ "why_it_works": [
+  {
+   "claim": "Phối màu phụ đề nhất quán (cam cho rào cản/đầu ra, xanh lá cho giải pháp/đầu vào) giúp người xem nắm trọn cấu trúc chỉ bằng mắt lướt mà không bị quá tải chữ.",
+   "evidence": "00:03–00:31",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Chèn cảnh B-roll cầm tay cầm game ngay giây thứ 2 biến khái niệm trì hoãn thành cảm giác chạm nhột tức thì, kéo tỷ lệ xem qua 3 giây đầu.",
+   "evidence": "00:01–00:05",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Mở một ví dụ duy nhất rồi soi qua đúng 2 tiêu chí đã nêu ở đầu video tạo cảm giác logic khép kín và dễ lưu lại để áp dụng.",
+   "evidence": "00:11–00:48",
+   "kind": "suy đoán"
+  },
+  {
+   "claim": "Kết thúc bằng lời khuyên dùng đồng hồ vật lý kèm nhịp cắt nhanh 2–3 giây/cảnh và một câu chốt sắc về não bộ giữ năng lượng cao tới giây cuối cùng.",
+   "evidence": "00:48–00:59",
+   "kind": "suy đoán"
+  }
+ ],
+ "model_note": "Gemini 4 Neon",
+ "apify": {
+  "raw_id": "7Co-TmrLiYk",
+  "url": "https://www.youtube.com/shorts/7Co-TmrLiYk",
+  "platform": "youtube",
+  "lang": "en",
+  "role": "global_niche_source",
+  "learn_scope": "idea_and_craft_localize",
+  "format_compatibility": "story_metaphor",
+  "craft_focus": [
+   "phuong-phap-hoc",
+   "chong-tri-hoan"
+  ],
+  "caption": "If you're procrastinating right now, do this ⏱",
+  "hashtags": [],
+  "author": {
+   "name": "thomasfrank",
+   "fans": 0
+  },
+  "play_count": 857000,
+  "like_count": null,
+  "comment_count": 0,
+  "share_count": 0,
+  "save_count": null,
+  "top_comments": [],
+  "duration_s": null,
+  "create_time": null,
+  "median_views": 212500.0,
+  "outlier_ratio": 4.03,
+  "outlier": 4.03,
+  "views_per_day": null,
+  "engagement_intensity": 0.0,
+  "basis": "views/median_views",
+  "channel_niche": [
+   "hoc-tap",
+   "productivity"
+  ],
+  "niche_verified": true,
+  "source": "radar-fetch (yt-dlp)"
+ },
+ "_meta": {
+  "date": "2026-11-28",
+  "video": "7Co-TmrLiYk.mp4",
+  "cli": "agy 1.5.18",
+  "model": "agy-default",
+  "source": "https://www.youtube.com/shorts/7Co-TmrLiYk",
+  "arc": "ARC-003",
+  "arc_new": false
+ }
+}

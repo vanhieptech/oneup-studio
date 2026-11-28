@@ -1,0 +1,7295 @@
+{
+ "date": "2026-11-28",
+ "measured_at": "2026-11-28T10:26:45",
+ "collector": "radar-fetch.py (yt-dlp parallel + rss + ttl-cache)",
+ "elapsed_s": 6.77,
+ "channels": [
+  {
+   "handle": "betterideas",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@BetterIdeas/shorts",
+   "fetched": 2,
+   "median_views": 425000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "mattdavella",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@MattDAvella/shorts",
+   "fetched": 10,
+   "median_views": 145500.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "hubermanlab",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@hubermanlab/shorts",
+   "fetched": 10,
+   "median_views": 65000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "kurzgesagt",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@kurzgesagt/shorts",
+   "fetched": 10,
+   "median_views": 557500.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "healthygamergg",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@HealthyGamerGG/shorts",
+   "fetched": 10,
+   "median_views": 32500.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "psych2go",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@Psych2go/shorts",
+   "fetched": 10,
+   "median_views": 59000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "thomasfrank",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@Thomasfrank/shorts",
+   "fetched": 4,
+   "median_views": 212500.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "nathanieldrew",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@NathanielDrew/shorts",
+   "fetched": 3,
+   "median_views": 32000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "aliabdaal",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@aliabdaal/shorts",
+   "fetched": 10,
+   "median_views": 26500.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "johnnyharris",
+   "role": "cross_niche_craft",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@JohnnyHarris/shorts",
+   "fetched": 10,
+   "median_views": 49000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "3blue1brown",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@3blue1brown/shorts",
+   "fetched": 10,
+   "median_views": 560000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "t3dotgg",
+   "role": "global_niche_source",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@t3dotgg/shorts",
+   "fetched": 0,
+   "median_views": null,
+   "error": "ERROR: [youtube:tab] @t3dotgg: This channel does not have a shorts tab",
+   "cache_hit": false
+  },
+  {
+   "handle": "fireship",
+   "role": "cross_niche_craft",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@Fireship/shorts",
+   "fetched": 10,
+   "median_views": 1600000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "veritasium",
+   "role": "cross_niche_craft",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@veritasium/shorts",
+   "fetched": 10,
+   "median_views": 1250000.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "manghocls",
+   "role": "direct_niche",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@manghocls",
+   "fetched": 10,
+   "median_views": 8264.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "hoaquynh",
+   "role": "direct_niche",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@hoaquynh",
+   "fetched": 0,
+   "median_views": null,
+   "error": "ERROR: [tiktok:user] hoaquynh: Unable to extract secondary user ID. If you are able to get the channel_id from a video posted by this user, try using \"tiktokuser:channel_id\" as the input URL (replacing `channel_id` with its actual value)",
+   "cache_hit": false
+  },
+  {
+   "handle": "kyluat.1",
+   "role": "direct_niche",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@kyluat.1",
+   "fetched": 10,
+   "median_views": 405.5,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "phamthuykieuhuong",
+   "role": "direct_niche",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong",
+   "fetched": 10,
+   "median_views": 44450.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "braincorevn",
+   "role": "direct_niche",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@braincorevn",
+   "fetched": 10,
+   "median_views": 418.5,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "quocnguyenkieuvi",
+   "role": "direct_niche",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi",
+   "fetched": 10,
+   "median_views": 78400.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "vietcetera",
+   "role": "southern_story_voice",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@Vietcetera/shorts",
+   "fetched": 10,
+   "median_views": 964.5,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "giangoi",
+   "role": "southern_story_voice",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@GiangOi/shorts",
+   "fetched": 6,
+   "median_views": 12500.0,
+   "error": "",
+   "cache_hit": false
+  },
+  {
+   "handle": "hieutv",
+   "role": "cross_niche_craft",
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@HieuTV/shorts",
+   "fetched": 0,
+   "median_views": null,
+   "error": "ERROR: [youtube:tab] @HieuTV/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)",
+   "cache_hit": false
+  },
+  {
+   "handle": "spiderum",
+   "role": "cross_niche_craft",
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@spiderum",
+   "fetched": 0,
+   "median_views": null,
+   "error": "ERROR: [tiktok:user] spiderum: Unable to extract secondary user ID. If you are able to get the channel_id from a video posted by this user, try using \"tiktokuser:channel_id\" as the input URL (replacing `channel_id` with its actual value)",
+   "cache_hit": false
+  }
+ ],
+ "clips": [
+  {
+   "raw_id": "i6-E5MxRLtU",
+   "url": "https://www.youtube.com/shorts/i6-E5MxRLtU",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tu-gieu-duyen",
+    "hook-noi-dau",
+    "tam-ly-thoi-quen"
+   ],
+   "caption": "The pain of action #shorts",
+   "hashtags": [
+    "shorts"
+   ],
+   "author": {
+    "name": "betterideas",
+    "fans": 0
+   },
+   "play_count": 414000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 425000.0,
+   "outlier_ratio": 0.97,
+   "outlier": 0.97,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Y16Vx1IXNgQ",
+   "url": "https://www.youtube.com/shorts/Y16Vx1IXNgQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tu-gieu-duyen",
+    "hook-noi-dau",
+    "tam-ly-thoi-quen"
+   ],
+   "caption": "You don't need willpower #shorts",
+   "hashtags": [
+    "shorts"
+   ],
+   "author": {
+    "name": "betterideas",
+    "fans": 0
+   },
+   "play_count": 436000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 425000.0,
+   "outlier_ratio": 1.03,
+   "outlier": 1.03,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "9AWUhbzVHTs",
+   "url": "https://www.youtube.com/shorts/9AWUhbzVHTs",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I tried mobility training for 30 days",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 304000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 2.09,
+   "outlier": 2.09,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "QHS_P0DyCEw",
+   "url": "https://www.youtube.com/shorts/QHS_P0DyCEw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I timed every task for 30 days",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 61000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 0.42,
+   "outlier": 0.42,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "om7pNpI4uLY",
+   "url": "https://www.youtube.com/shorts/om7pNpI4uLY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I swapped lives with a night owl",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 54000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 0.37,
+   "outlier": 0.37,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "OZnlOa8pOWM",
+   "url": "https://www.youtube.com/shorts/OZnlOa8pOWM",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I tracked my mood for 1 year",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 238000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 1.64,
+   "outlier": 1.64,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "1ajZUzPX5aY",
+   "url": "https://www.youtube.com/shorts/1ajZUzPX5aY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I tried yoga for 30 days",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 124000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 0.85,
+   "outlier": 0.85,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "3aqa7anoSfU",
+   "url": "https://www.youtube.com/shorts/3aqa7anoSfU",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "The 5 Minute Rule",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 60000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 0.41,
+   "outlier": 0.41,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "nAhhcmSsnYI",
+   "url": "https://www.youtube.com/shorts/nAhhcmSsnYI",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "My wife tried minimalism.",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 178000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 1.22,
+   "outlier": 1.22,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "1krU7DT_v4g",
+   "url": "https://www.youtube.com/shorts/1krU7DT_v4g",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I used a flip phone for 30 days",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 167000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 1.15,
+   "outlier": 1.15,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "jPGHkW97ldY",
+   "url": "https://www.youtube.com/shorts/jPGHkW97ldY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I wear the same pants every day",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 168000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 1.15,
+   "outlier": 1.15,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "_HDB_vZqxCM",
+   "url": "https://www.youtube.com/shorts/_HDB_vZqxCM",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "thu-nghiem-30-ngay",
+    "giong-tram-ke-chuyen",
+    "myth-busting"
+   ],
+   "caption": "I walked 10k steps for 30 days",
+   "hashtags": [],
+   "author": {
+    "name": "mattdavella",
+    "fans": 0
+   },
+   "play_count": 53000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 145500.0,
+   "outlier_ratio": 0.36,
+   "outlier": 0.36,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Ji-N7w1BhMw",
+   "url": "https://www.youtube.com/shorts/Ji-N7w1BhMw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "OPINIONS ARE CONCEPTS. IF THEY ARE STRONGLY LINKED TO YOUR EGO, YOU WILL BE EASILY OFFENDED.",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 15000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 0.23,
+   "outlier": 0.23,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "jZoTujYPduM",
+   "url": "https://www.youtube.com/shorts/jZoTujYPduM",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "4 THINGS TO DO TO FALL ASLEEP",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 188000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 2.89,
+   "outlier": 2.89,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "HrcT5tZyQ8E",
+   "url": "https://www.youtube.com/shorts/HrcT5tZyQ8E",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "Thank You! To everyone who has read or listened to my recently released book Protocols",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 27000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 0.42,
+   "outlier": 0.42,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "t09qO4lQ6y8",
+   "url": "https://www.youtube.com/shorts/t09qO4lQ6y8",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "Happiness Isn't the World's Job | Eckhart Tolle",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 59000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 0.91,
+   "outlier": 0.91,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "9dWQNg68Ncw",
+   "url": "https://www.youtube.com/shorts/9dWQNg68Ncw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "Why Addiction is a Control Problem | Dr. Anna Lembke",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 82000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 1.26,
+   "outlier": 1.26,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "pMuud2kayJo",
+   "url": "https://www.youtube.com/shorts/pMuud2kayJo",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "Breaking the Codependency Cycle | Dr. Anna Lembke",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 34000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 0.52,
+   "outlier": 0.52,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "jXTY8WwohF0",
+   "url": "https://www.youtube.com/shorts/jXTY8WwohF0",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "LEVERAGING PARALLEL PATHWAYS, EXERCISE & COLD TO FOCUS & LEARN BETTER",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 106000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 1.63,
+   "outlier": 1.63,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Ko9p7w3Za6w",
+   "url": "https://www.youtube.com/shorts/Ko9p7w3Za6w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "Falling in Love Is Rebellion | Robert Greene",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 71000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 1.09,
+   "outlier": 1.09,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "FNbTA_W9B5o",
+   "url": "https://www.youtube.com/shorts/FNbTA_W9B5o",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "WHEN TO *NOT* TRUST YOUR THOUGHTS",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 124000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 1.91,
+   "outlier": 1.91,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "EM0PDXPC4dc",
+   "url": "https://www.youtube.com/shorts/EM0PDXPC4dc",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "co-che-nao-bo",
+    "nghien-cuu-khoa-hoc",
+    "giac-ngu-tap-trung"
+   ],
+   "caption": "How Smiling Can Increase Endurance | Ross Edgley",
+   "hashtags": [],
+   "author": {
+    "name": "hubermanlab",
+    "fans": 0
+   },
+   "play_count": 56000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 65000.0,
+   "outlier_ratio": 0.86,
+   "outlier": 0.86,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "3X0UcSRQOY4",
+   "url": "https://www.youtube.com/shorts/3X0UcSRQOY4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "Something in Your Kitchen Could Save Millions of Lives!",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 189000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 0.34,
+   "outlier": 0.34,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "hCkyIuXEGGk",
+   "url": "https://www.youtube.com/shorts/hCkyIuXEGGk",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "What Happens If We Spin the Earth Twice as Fast?",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 283000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 0.51,
+   "outlier": 0.51,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "39Hc0MZtE4w",
+   "url": "https://www.youtube.com/shorts/39Hc0MZtE4w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "How Many People Can You Feed with a Dollar?",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 429000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 0.77,
+   "outlier": 0.77,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "NKeZ_HRk_O8",
+   "url": "https://www.youtube.com/shorts/NKeZ_HRk_O8",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "Cool Down Your Room... With a FRIDGE?",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 442000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 0.79,
+   "outlier": 0.79,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Y1vEGsnNYek",
+   "url": "https://www.youtube.com/shorts/Y1vEGsnNYek",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "What Is Food Fortification?",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 549000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 0.98,
+   "outlier": 0.98,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "KBfIo9sZbC4",
+   "url": "https://www.youtube.com/shorts/KBfIo9sZbC4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "How Does Ketamine Work?",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 1000000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 1.79,
+   "outlier": 1.79,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "35No369rmq0",
+   "url": "https://www.youtube.com/shorts/35No369rmq0",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "What If We Cool Down the Sun?",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 1000000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 1.79,
+   "outlier": 1.79,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "b1EMX3wyqCY",
+   "url": "https://www.youtube.com/shorts/b1EMX3wyqCY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "Your Brain on Magic Mushrooms",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 1400000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 2.51,
+   "outlier": 2.51,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "oNTaHYXQ4MM",
+   "url": "https://www.youtube.com/shorts/oNTaHYXQ4MM",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "Humans Can Regrow an Organ",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 1600000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 2.87,
+   "outlier": 2.87,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "RQprZZJIb6Y",
+   "url": "https://www.youtube.com/shorts/RQprZZJIb6Y",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "an-du-thi-giac-hoat-hinh",
+    "open-loop",
+    "nhip-giai-thich"
+   ],
+   "caption": "Your Skeleton Is Electric",
+   "hashtags": [],
+   "author": {
+    "name": "kurzgesagt",
+    "fans": 0
+   },
+   "play_count": 566000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 557500.0,
+   "outlier_ratio": 1.02,
+   "outlier": 1.02,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "kmjX2GgLNAs",
+   "url": "https://www.youtube.com/shorts/kmjX2GgLNAs",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "The Problem with Psychopathy Research",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 11000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 0.34,
+   "outlier": 0.34,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "QN6xjBp2W4A",
+   "url": "https://www.youtube.com/shorts/QN6xjBp2W4A",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "Current Dr. K Reacts to Past Dr. K",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 72000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 2.22,
+   "outlier": 2.22,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "musMqbllltk",
+   "url": "https://www.youtube.com/shorts/musMqbllltk",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "Why Modern Games Are REALLY Getting Concerning",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 140000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 4.31,
+   "outlier": 4.31,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "8VK8CpRc6_s",
+   "url": "https://www.youtube.com/shorts/8VK8CpRc6_s",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "Do Video Games Really Make People Violent?",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 28000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 0.86,
+   "outlier": 0.86,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "PlswZxxapn4",
+   "url": "https://www.youtube.com/shorts/PlswZxxapn4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "Dr. K's Thoughts on GTA VI",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 487000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 14.98,
+   "outlier": 14.98,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "HG4jIzQ7jQI",
+   "url": "https://www.youtube.com/shorts/HG4jIzQ7jQI",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "Dr. K Diagnoses GTA VI Characters: Lucia",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 357000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 10.98,
+   "outlier": 10.98,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "kMzNjPS6kFQ",
+   "url": "https://www.youtube.com/shorts/kMzNjPS6kFQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "The myth of the Anti Social Developer",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 32000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 0.98,
+   "outlier": 0.98,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "GnKQ1uFSrA4",
+   "url": "https://www.youtube.com/shorts/GnKQ1uFSrA4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "Surviving AI Anxiety Without Losing Your Mind",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 33000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 1.02,
+   "outlier": 1.02,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "BSj5e3CCq-4",
+   "url": "https://www.youtube.com/shorts/BSj5e3CCq-4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "How Developers Should Handle Management Forcing AI",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 30000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 0.92,
+   "outlier": 0.92,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "SHMAv5sxWHY",
+   "url": "https://www.youtube.com/shorts/SHMAv5sxWHY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-ly-tri-hoan",
+    "overthinking",
+    "dopamine-dien-thoai"
+   ],
+   "caption": "The Hidden Trap of Rushing Into AI",
+   "hashtags": [],
+   "author": {
+    "name": "healthygamergg",
+    "fans": 0
+   },
+   "play_count": 32000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32500.0,
+   "outlier_ratio": 0.98,
+   "outlier": 0.98,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "AXWX6kO5F7w",
+   "url": "https://www.youtube.com/shorts/AXWX6kO5F7w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "Dating: Then vs. Now – Did We Lose Romance?",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 12000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 0.2,
+   "outlier": 0.2,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "hVDi1CdFRxA",
+   "url": "https://www.youtube.com/shorts/hVDi1CdFRxA",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "Should We Launch This Idea For Mental Health?",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 21000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 0.36,
+   "outlier": 0.36,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "tCWFULp8YN8",
+   "url": "https://www.youtube.com/shorts/tCWFULp8YN8",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "How to Improve Your Mental Health with Psych2Go",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 61000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 1.03,
+   "outlier": 1.03,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "N5u5Y-bGJ1o",
+   "url": "https://www.youtube.com/shorts/N5u5Y-bGJ1o",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "What Type of Intelligence Do You Have?",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 59000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "qzsdeNEMtFw",
+   "url": "https://www.youtube.com/shorts/qzsdeNEMtFw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "Why You Can't Stop Overthinking (Let's Figure It Out Together)",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 59000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "CFUNbMP-V0s",
+   "url": "https://www.youtube.com/shorts/CFUNbMP-V0s",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "Psychology of Nostalgia: How Memories Affect Our Well-being",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 50000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 0.85,
+   "outlier": 0.85,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "HUsgv2ASrhY",
+   "url": "https://www.youtube.com/shorts/HUsgv2ASrhY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "Day in the Life of a Psych2Go Animator @rosie lam",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 80000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 1.36,
+   "outlier": 1.36,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "axwa6OGx3Kw",
+   "url": "https://www.youtube.com/shorts/axwa6OGx3Kw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "If You’re Born in April… Watch This",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 62000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 1.05,
+   "outlier": 1.05,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "PCczfSPUw5E",
+   "url": "https://www.youtube.com/shorts/PCczfSPUw5E",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "You're Not Lazy, It's Something DARKER",
+   "hashtags": [],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 68000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 1.15,
+   "outlier": 1.15,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "l3Gs33-_LJE",
+   "url": "https://www.youtube.com/shorts/l3Gs33-_LJE",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-dong-cam",
+    "hoat-hinh-tam-ly"
+   ],
+   "caption": "The Benefits of Crying #psychology",
+   "hashtags": [
+    "psychology"
+   ],
+   "author": {
+    "name": "psych2go",
+    "fans": 0
+   },
+   "play_count": 52000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 59000.0,
+   "outlier_ratio": 0.88,
+   "outlier": 0.88,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "vhqq4U3mnNQ",
+   "url": "https://www.youtube.com/shorts/vhqq4U3mnNQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "phuong-phap-hoc",
+    "chong-tri-hoan"
+   ],
+   "caption": "I never dread this workout",
+   "hashtags": [],
+   "author": {
+    "name": "thomasfrank",
+    "fans": 0
+   },
+   "play_count": 28000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 212500.0,
+   "outlier_ratio": 0.13,
+   "outlier": 0.13,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ImGfWyjK3no",
+   "url": "https://www.youtube.com/shorts/ImGfWyjK3no",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "phuong-phap-hoc",
+    "chong-tri-hoan"
+   ],
+   "caption": "The 3 Types of Progress",
+   "hashtags": [],
+   "author": {
+    "name": "thomasfrank",
+    "fans": 0
+   },
+   "play_count": 140000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 212500.0,
+   "outlier_ratio": 0.66,
+   "outlier": 0.66,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "e1fJwXmz1rg",
+   "url": "https://www.youtube.com/shorts/e1fJwXmz1rg",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "phuong-phap-hoc",
+    "chong-tri-hoan"
+   ],
+   "caption": "One simple tip to learn ANY skill faster",
+   "hashtags": [],
+   "author": {
+    "name": "thomasfrank",
+    "fans": 0
+   },
+   "play_count": 285000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 212500.0,
+   "outlier_ratio": 1.34,
+   "outlier": 1.34,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7Co-TmrLiYk",
+   "url": "https://www.youtube.com/shorts/7Co-TmrLiYk",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "phuong-phap-hoc",
+    "chong-tri-hoan"
+   ],
+   "caption": "If you're procrastinating right now, do this ⏱",
+   "hashtags": [],
+   "author": {
+    "name": "thomasfrank",
+    "fans": 0
+   },
+   "play_count": 857000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 212500.0,
+   "outlier_ratio": 4.03,
+   "outlier": 4.03,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "zA13oSucKWs",
+   "url": "https://www.youtube.com/shorts/zA13oSucKWs",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "mental-clarity",
+    "ke-chuyen-trai-nghiem"
+   ],
+   "caption": "Doing Van Gogh's INTENSE Daily Routine 😅🎨🥃",
+   "hashtags": [],
+   "author": {
+    "name": "nathanieldrew",
+    "fans": 0
+   },
+   "play_count": 32000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32000.0,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "NrkWp2j3yzw",
+   "url": "https://www.youtube.com/shorts/NrkWp2j3yzw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "mental-clarity",
+    "ke-chuyen-trai-nghiem"
+   ],
+   "caption": "I love listening to audiobooks",
+   "hashtags": [],
+   "author": {
+    "name": "nathanieldrew",
+    "fans": 0
+   },
+   "play_count": 23000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32000.0,
+   "outlier_ratio": 0.72,
+   "outlier": 0.72,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ncY-3uTCpVM",
+   "url": "https://www.youtube.com/shorts/ncY-3uTCpVM",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "mental-clarity",
+    "ke-chuyen-trai-nghiem"
+   ],
+   "caption": "A Book Recommendation",
+   "hashtags": [],
+   "author": {
+    "name": "nathanieldrew",
+    "fans": 0
+   },
+   "play_count": 65000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 32000.0,
+   "outlier_ratio": 2.03,
+   "outlier": 2.03,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ex3Vtitol6E",
+   "url": "https://www.youtube.com/shorts/ex3Vtitol6E",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "One of the best ways to make your audience happy is by providing free resources... #ad",
+   "hashtags": [
+    "ad"
+   ],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 8900,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 0.34,
+   "outlier": 0.34,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "WXnioZZVXtA",
+   "url": "https://www.youtube.com/shorts/WXnioZZVXtA",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "My top 5 productivity apps right now",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 40000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 1.51,
+   "outlier": 1.51,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "iACc_7N7QnU",
+   "url": "https://www.youtube.com/shorts/iACc_7N7QnU",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "What I got wrong about freedom in my 20s",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 36000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 1.36,
+   "outlier": 1.36,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ubDs4poi62Y",
+   "url": "https://www.youtube.com/shorts/ubDs4poi62Y",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "Top 5 business books for beginners",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 41000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 1.55,
+   "outlier": 1.55,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "nQVMKFkAzkk",
+   "url": "https://www.youtube.com/shorts/nQVMKFkAzkk",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "How I made £3,000 a month as a medical student",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 23000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 0.87,
+   "outlier": 0.87,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "eUYtuFidDy8",
+   "url": "https://www.youtube.com/shorts/eUYtuFidDy8",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "The book series I can't stop recommending",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 19000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 0.72,
+   "outlier": 0.72,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "_IyxRHCen68",
+   "url": "https://www.youtube.com/shorts/_IyxRHCen68",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "I got scammed out of £1,000",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 30000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 1.13,
+   "outlier": 1.13,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "AMZ0uEmXXAk",
+   "url": "https://www.youtube.com/shorts/AMZ0uEmXXAk",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "Skip, read or study: business books for new entrepreneurs",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 101000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 3.81,
+   "outlier": 3.81,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "B3AwuxBd--A",
+   "url": "https://www.youtube.com/shorts/B3AwuxBd--A",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "I was 12 years old when I started earning",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 15000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 0.57,
+   "outlier": 0.57,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "h3tLgxqU9nc",
+   "url": "https://www.youtube.com/shorts/h3tLgxqU9nc",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "chuyen-y-muot",
+    "khung-3-buoc"
+   ],
+   "caption": "Advice to my younger self",
+   "hashtags": [],
+   "author": {
+    "name": "aliabdaal",
+    "fans": 0
+   },
+   "play_count": 20000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 26500.0,
+   "outlier_ratio": 0.75,
+   "outlier": 0.75,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "iZQuRrhJIUQ",
+   "url": "https://www.youtube.com/shorts/iZQuRrhJIUQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "I didn't know the Nubian story. This episode opened my eyes",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 49000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "iQ99ZS7etxM",
+   "url": "https://www.youtube.com/shorts/iQ99ZS7etxM",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "Was it the honey wine or the jet lag?",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 24000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 0.49,
+   "outlier": 0.49,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "RI0OkqrqB-w",
+   "url": "https://www.youtube.com/shorts/RI0OkqrqB-w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "Iz reminding me about the number one rule in life: don't swim with hippos",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 49000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Obfdb_krtzI",
+   "url": "https://www.youtube.com/shorts/Obfdb_krtzI",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "I discovered the limits of my intellectual curiosity. The Human Element is what comes next",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 118000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 2.41,
+   "outlier": 2.41,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "H3on2bJG88w",
+   "url": "https://www.youtube.com/shorts/H3on2bJG88w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "I could not stop eating these mangos",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 42000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 0.86,
+   "outlier": 0.86,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "HELyBiuMG5c",
+   "url": "https://www.youtube.com/shorts/HELyBiuMG5c",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "This is life along the Nile",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 71000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 1.45,
+   "outlier": 1.45,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Jl7Aqd8em5A",
+   "url": "https://www.youtube.com/shorts/Jl7Aqd8em5A",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "Floating down the world’s longest river",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 22000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 0.45,
+   "outlier": 0.45,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "jZm9btwgav0",
+   "url": "https://www.youtube.com/shorts/jZm9btwgav0",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "How the Nile created a civilization",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 79000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 1.61,
+   "outlier": 1.61,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "TAV5Prbponw",
+   "url": "https://www.youtube.com/shorts/TAV5Prbponw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "Meta glasses? Woof.",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 148000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 3.02,
+   "outlier": 3.02,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "hikYW6s4cns",
+   "url": "https://www.youtube.com/shorts/hikYW6s4cns",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "visual-storytelling",
+    "curiosity-gap",
+    "nhip-cat-nhanh"
+   ],
+   "caption": "I can put stuff on a page. Iz makes it work.",
+   "hashtags": [],
+   "author": {
+    "name": "johnnyharris",
+    "fans": 0
+   },
+   "play_count": 48000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 49000.0,
+   "outlier_ratio": 0.98,
+   "outlier": 0.98,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "0IZcjWtWmDA",
+   "url": "https://www.youtube.com/shorts/0IZcjWtWmDA",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "Encoding the encyclopedia on a rod",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 783000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 1.4,
+   "outlier": 1.4,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "V_uq3v6xK-4",
+   "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "The Sphere Intersection Puzzle",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 343000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 0.61,
+   "outlier": 0.61,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ausLKMojXaY",
+   "url": "https://www.youtube.com/shorts/ausLKMojXaY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "The Phone Number puzzle",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 786000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 1.4,
+   "outlier": 1.4,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "bRQEWPA832A",
+   "url": "https://www.youtube.com/shorts/bRQEWPA832A",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "The last IMO problem AI could not solve",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 779000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 1.39,
+   "outlier": 1.39,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "rYyJm1tD3d0",
+   "url": "https://www.youtube.com/shorts/rYyJm1tD3d0",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "The jumping pegs puzzle",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 581000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 1.04,
+   "outlier": 1.04,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "6XPlmCDNLNc",
+   "url": "https://www.youtube.com/shorts/6XPlmCDNLNc",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "The 64 sugar cubes puzzle",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 354000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 0.63,
+   "outlier": 0.63,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "wGffBCfrAsE",
+   "url": "https://www.youtube.com/shorts/wGffBCfrAsE",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "100 random chords, how many intersections?",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 620000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 1.11,
+   "outlier": 1.11,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "-7etvZSBxlk",
+   "url": "https://www.youtube.com/shorts/-7etvZSBxlk",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "Measuring the entropy of English",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 512000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 0.91,
+   "outlier": 0.91,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7L_eTem1SQ4",
+   "url": "https://www.youtube.com/shorts/7L_eTem1SQ4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "What's the perfect encoding? How do you know?",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 252000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 0.45,
+   "outlier": 0.45,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ZHXt0-_gSj4",
+   "url": "https://www.youtube.com/shorts/ZHXt0-_gSj4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "global_niche_source",
+   "learn_scope": "idea_and_craft_localize",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "truc-quan-hoa-ai",
+    "giai-thich-sau"
+   ],
+   "caption": "Tie random ends: How many loops?",
+   "hashtags": [],
+   "author": {
+    "name": "3blue1brown",
+    "fans": 0
+   },
+   "play_count": 539000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 560000.0,
+   "outlier_ratio": 0.96,
+   "outlier": 0.96,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "ai",
+    "khoa-hoc"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "fwBIZRq-vzY",
+   "url": "https://www.youtube.com/shorts/fwBIZRq-vzY",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "5 life-changing Linux tips",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1700000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 1.06,
+   "outlier": 1.06,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "oRBvLbdMKM0",
+   "url": "https://www.youtube.com/shorts/oRBvLbdMKM0",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "This rubber duck can debug your code",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 491000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 0.31,
+   "outlier": 0.31,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "WbF2bLbAUik",
+   "url": "https://www.youtube.com/shorts/WbF2bLbAUik",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "Big O explained with a deck of cards",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1500000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 0.94,
+   "outlier": 0.94,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "tUjjsqRp3mg",
+   "url": "https://www.youtube.com/shorts/tUjjsqRp3mg",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "this is just sad...  CrowdStrike attacks a clown website",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1400000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 0.88,
+   "outlier": 0.88,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ZRjmGq1gAEQ",
+   "url": "https://www.youtube.com/shorts/ZRjmGq1gAEQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "Let’s play… Does your code suck? JavaScript Variables Edition",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1700000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 1.06,
+   "outlier": 1.06,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "X8LglXSG53A",
+   "url": "https://www.youtube.com/shorts/X8LglXSG53A",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "how god programmed birds probably",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 3000000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 1.88,
+   "outlier": 1.88,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "gGWQfV1FCis",
+   "url": "https://www.youtube.com/shorts/gGWQfV1FCis",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "real HTML programmers debug in 3D",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1900000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 1.19,
+   "outlier": 1.19,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "aXcuz6fn8_w",
+   "url": "https://www.youtube.com/shorts/aXcuz6fn8_w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "the untold history of web development",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 5200000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 3.25,
+   "outlier": 3.25,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7bmsDg4BaKw",
+   "url": "https://www.youtube.com/shorts/7bmsDg4BaKw",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "my browser, my paste",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1500000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 0.94,
+   "outlier": 0.94,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "0xnuhmqRvVQ",
+   "url": "https://www.youtube.com/shorts/0xnuhmqRvVQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-toc-do",
+    "an-du-tech",
+    "nhip-cat-3s"
+   ],
+   "caption": "Yo mama so FAT32...",
+   "hashtags": [],
+   "author": {
+    "name": "fireship",
+    "fans": 0
+   },
+   "play_count": 1500000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1600000.0,
+   "outlier_ratio": 0.94,
+   "outlier": 0.94,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tech",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "t81DrYDi3As",
+   "url": "https://www.youtube.com/shorts/t81DrYDi3As",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Can a roll of tape really make X-rays?",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 321000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 0.26,
+   "outlier": 0.26,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "HZjRoKgDnow",
+   "url": "https://www.youtube.com/shorts/HZjRoKgDnow",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Does adding helium reduce a balloon’s mass?",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 480000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 0.38,
+   "outlier": 0.38,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "LDloLvb3yno",
+   "url": "https://www.youtube.com/shorts/LDloLvb3yno",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "This is not a thread...",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 1200000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 0.96,
+   "outlier": 0.96,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "V8rT6UI3Crg",
+   "url": "https://www.youtube.com/shorts/V8rT6UI3Crg",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Making Gunpowder From Scratch",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 1000000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 0.8,
+   "outlier": 0.8,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "2QSkkhbl3v4",
+   "url": "https://www.youtube.com/shorts/2QSkkhbl3v4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Why you can't trust a test that's 99% accurate",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 1700000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 1.36,
+   "outlier": 1.36,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "rL0qEmTRI-I",
+   "url": "https://www.youtube.com/shorts/rL0qEmTRI-I",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Why do deserts get cold at night?",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 2000000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 1.6,
+   "outlier": 1.6,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "xlNKNnXdtN4",
+   "url": "https://www.youtube.com/shorts/xlNKNnXdtN4",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "These ponds help support half the people on Earth",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 577000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 0.46,
+   "outlier": 0.46,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "zEmabFZvdqA",
+   "url": "https://www.youtube.com/shorts/zEmabFZvdqA",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "What happens if I lower this weight into the water?",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 3500000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 2.8,
+   "outlier": 2.8,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "Kap7mRzr13w",
+   "url": "https://www.youtube.com/shorts/Kap7mRzr13w",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Why doesn't your heart get tired like other muscles do?",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 1400000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 1.12,
+   "outlier": 1.12,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "wxLc-gFORPQ",
+   "url": "https://www.youtube.com/shorts/wxLc-gFORPQ",
+   "platform": "youtube",
+   "lang": "en",
+   "role": "cross_niche_craft",
+   "learn_scope": "craft_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "hook-phan-truc-giac",
+    "open-loop",
+    "ke-chuyen-thi-nghiem"
+   ],
+   "caption": "Is there something faster than light?",
+   "hashtags": [],
+   "author": {
+    "name": "veritasium",
+    "fans": 0
+   },
+   "play_count": 1300000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 1250000.0,
+   "outlier_ratio": 1.04,
+   "outlier": 1.04,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "khoa-hoc",
+    "storytelling"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7711720959111220501",
+   "url": "https://www.tiktok.com/@manghocls/video/7711720959111220501",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Các em chú ý phải phát triển toàn diện nhé #xuhuongtiktok #xuhuong #manghocls",
+   "hashtags": [
+    "xuhuongtiktok",
+    "xuhuong",
+    "manghocls"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 8149,
+   "like_count": 1579,
+   "comment_count": 21,
+   "share_count": 241,
+   "save_count": 124,
+   "top_comments": [],
+   "duration_s": 41.0,
+   "create_time": "2026-11-24T12:56:00+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 0.99,
+   "outlier": 0.08,
+   "views_per_day": 2260.7,
+   "engagement_intensity": 0.06688,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7710233673722760468",
+   "url": "https://www.tiktok.com/@manghocls/video/7710233673722760468",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Kế hoạch nghỉ ngơi hiệu quả cho HSG Sử ngày Chủ nhật #xuhuongtiktok #trending #manghocls",
+   "hashtags": [
+    "xuhuongtiktok",
+    "trending",
+    "manghocls"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 4264,
+   "like_count": 656,
+   "comment_count": 7,
+   "share_count": 61,
+   "save_count": 57,
+   "top_comments": [],
+   "duration_s": 59.0,
+   "create_time": "2026-11-20T12:44:33+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 0.52,
+   "outlier": 0.04,
+   "views_per_day": 560.1,
+   "engagement_intensity": 0.03354,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7709495622373510421",
+   "url": "https://www.tiktok.com/@manghocls/video/7709495622373510421",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Thêm Huy chương Vàng, Bằng khen, Giấy khen nữa🤓 Tự dưng thấy Lịch Sử cũng không khó học thế #xuhuongtiktok #trending #manghocls",
+   "hashtags": [
+    "xuhuongtiktok",
+    "trending",
+    "manghocls"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 1693,
+   "like_count": 208,
+   "comment_count": 4,
+   "share_count": 19,
+   "save_count": 12,
+   "top_comments": [],
+   "duration_s": 21.0,
+   "create_time": "2026-11-18T13:00:33+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 0.2,
+   "outlier": 0.02,
+   "views_per_day": 176.3,
+   "engagement_intensity": 0.02953,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7707946539154558229",
+   "url": "https://www.tiktok.com/@manghocls/video/7707946539154558229",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "#xuhuongtiktok #trending #manghocls",
+   "hashtags": [
+    "xuhuongtiktok",
+    "trending",
+    "manghocls"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 7278,
+   "like_count": 900,
+   "comment_count": 14,
+   "share_count": 73,
+   "save_count": 22,
+   "top_comments": [],
+   "duration_s": 21.0,
+   "create_time": "2026-11-14T13:00:00+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 0.88,
+   "outlier": 0.07,
+   "views_per_day": 535.1,
+   "engagement_intensity": 0.02583,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7705015326257335573",
+   "url": "https://www.tiktok.com/@manghocls/video/7705015326257335573",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Hãy nói tôi không cô đơn đii #manghocls #xuhuong #trending",
+   "hashtags": [
+    "manghocls",
+    "xuhuong",
+    "trending"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 8457,
+   "like_count": 1028,
+   "comment_count": 11,
+   "share_count": 166,
+   "save_count": 93,
+   "top_comments": [],
+   "duration_s": 71.0,
+   "create_time": "2026-11-06T11:14:44+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 1.02,
+   "outlier": 0.09,
+   "views_per_day": 390.2,
+   "engagement_intensity": 0.04316,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7703893121477790997",
+   "url": "https://www.tiktok.com/@manghocls/video/7703893121477790997",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Có nhân vật nào nên được dùng mxh nữa nhỉii #manghocls #xuhuong #trending",
+   "hashtags": [
+    "manghocls",
+    "xuhuong",
+    "trending"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 8701,
+   "like_count": 1232,
+   "comment_count": 8,
+   "share_count": 189,
+   "save_count": 105,
+   "top_comments": [],
+   "duration_s": 71.0,
+   "create_time": "2026-11-03T13:09:00+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 1.05,
+   "outlier": 0.09,
+   "views_per_day": 353.8,
+   "engagement_intensity": 0.0462,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7703156842486058260",
+   "url": "https://www.tiktok.com/@manghocls/video/7703156842486058260",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Có những sự kết thúc này lại là sự mở đầu cho câu chuyện đẹp khác❤️ #manghocls #xuhuong #trending",
+   "hashtags": [
+    "manghocls",
+    "xuhuong",
+    "trending"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 45100,
+   "like_count": 5865,
+   "comment_count": 107,
+   "share_count": 497,
+   "save_count": 335,
+   "top_comments": [],
+   "duration_s": 18.0,
+   "create_time": "2026-11-01T11:02:50+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 5.46,
+   "outlier": 0.46,
+   "views_per_day": 1690.2,
+   "engagement_intensity": 0.02916,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7702047434716892417",
+   "url": "https://www.tiktok.com/@manghocls/video/7702047434716892417",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "@Văn học cô Thanh Tâm Văn Sử kết hợp kiểu #manghocls #xuhuong #trending",
+   "hashtags": [
+    "manghocls",
+    "xuhuong",
+    "trending"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 5598,
+   "like_count": 445,
+   "comment_count": 5,
+   "share_count": 10,
+   "save_count": 25,
+   "top_comments": [],
+   "duration_s": 47.0,
+   "create_time": "2026-10-29T12:50:00+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 0.68,
+   "outlier": 0.06,
+   "views_per_day": 189.1,
+   "engagement_intensity": 0.00625,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7699839247041236245",
+   "url": "https://www.tiktok.com/@manghocls/video/7699839247041236245",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Văn và Sử mà kết hợp thì chúng ta có gì nhỉi @Văn học cô Thanh Tâm #manghocls #xuhuong #trending",
+   "hashtags": [
+    "manghocls",
+    "xuhuong",
+    "trending"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 14800,
+   "like_count": 1409,
+   "comment_count": 16,
+   "share_count": 63,
+   "save_count": 37,
+   "top_comments": [],
+   "duration_s": 38.0,
+   "create_time": "2026-10-23T12:28:54+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 1.79,
+   "outlier": 0.15,
+   "views_per_day": 415.5,
+   "engagement_intensity": 0.01176,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7698331672193912084",
+   "url": "https://www.tiktok.com/@manghocls/video/7698331672193912084",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Ngoại lệ của Măng, và của nhiều bạn khác nữa nhỉ🫶🏻 #manghocls #xuhuong #trending",
+   "hashtags": [
+    "manghocls",
+    "xuhuong",
+    "trending"
+   ],
+   "author": {
+    "name": "manghocls",
+    "fans": 99000
+   },
+   "play_count": 8379,
+   "like_count": 1215,
+   "comment_count": 9,
+   "share_count": 70,
+   "save_count": 60,
+   "top_comments": [],
+   "duration_s": 38.0,
+   "create_time": "2026-10-19T13:00:00+00:00",
+   "median_views": 8264.0,
+   "outlier_ratio": 1.01,
+   "outlier": 0.08,
+   "views_per_day": 211.6,
+   "engagement_intensity": 0.01993,
+   "basis": "views/followers",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7710098519956163847",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7710098519956163847",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Tin vào những lời hứa hẹn \"ngồi mát ăn bát vàng\", lãi suất 20-30% mỗi tháng… Bạn nghĩ bạn thông minh hơn thị trường, hay bạn chỉ là một con mồi béo bở? #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 414,
+   "like_count": 7,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 58.0,
+   "create_time": "2026-11-20T04:00:14+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 1.02,
+   "outlier": 1.02,
+   "views_per_day": 51.9,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7709728884261948679",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7709728884261948679",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Bạn có phải là người nếu có khúc mắc với người yêu thì im lặng chiến tranh lạnh, bị cấp trên giao việc bất hợp lý thì cắn răng chịu đựng rồi ấm ức sau lưng… #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 378,
+   "like_count": 12,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 56.0,
+   "create_time": "2026-11-19T04:05:45+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 0.93,
+   "outlier": 0.93,
+   "views_per_day": 42.1,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7709356280414375176",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7709356280414375176",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Bạn sợ từ chối người khác đến mức sẵn sàng tự tay phá nát cuộc đời và thời gian của chính mình sao? #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 317,
+   "like_count": 8,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 66.0,
+   "create_time": "2026-11-18T03:59:58+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 0.78,
+   "outlier": 0.78,
+   "views_per_day": 31.8,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7708985224461585665",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7708985224461585665",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Mặc chiếc áo phông bạc màu nhăn nhúm đi gặp khách hàng, đi đôi dép lê xộc xệch đến công ty… Đừng bao giờ đánh đồng sự cẩu thả với cá tính giản dị! #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 344,
+   "like_count": 10,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 1,
+   "top_comments": [],
+   "duration_s": 50.0,
+   "create_time": "2026-11-17T04:00:03+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 0.85,
+   "outlier": 0.85,
+   "views_per_day": 31.3,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7708614138896862470",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7708614138896862470",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Bạn thức đến 2, 3 giờ sáng không phải vì bạn không buồn ngủ, mà vì bạn đang cố trả thù một ngày sống không trọn vẹn, đúng không? #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 764,
+   "like_count": 16,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 74.0,
+   "create_time": "2026-11-16T04:00:01+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 1.88,
+   "outlier": 1.88,
+   "views_per_day": 63.8,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7707500667975306503",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7707500667975306503",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Bạn có nhận ra não của bạn đang dần bị \"teo nhỏ\" lại vì những đoạn video ngắn 15 giây và những cơn hưng phấn rẻ tiền mỗi ngày không? #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 1062,
+   "like_count": 23,
+   "comment_count": 0,
+   "share_count": 1,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 76.0,
+   "create_time": "2026-11-13T03:59:23+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 2.62,
+   "outlier": 2.62,
+   "views_per_day": 70.9,
+   "engagement_intensity": 0.00188,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7707140171245882642",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7707140171245882642",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Dành 3 tiếng đồng hồ gõ bàn phím tranh cãi tay đôi với một nick ảo trên mạng… Thắng được một cuộc tranh luận có giúp tài khoản của bạn tăng thêm đồng nào không? #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 443,
+   "like_count": 9,
+   "comment_count": 0,
+   "share_count": 1,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 67.0,
+   "create_time": "2026-11-12T04:40:13+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 1.09,
+   "outlier": 1.09,
+   "views_per_day": 27.8,
+   "engagement_intensity": 0.00451,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7706758803059952904",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7706758803059952904",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Mua chuột công thái học, bàn phím cơ tiền triệu, sắm đủ đèn decor… nhưng chiếc bàn làm việc xịn sò đó vẫn chỉ dùng để bạn ngồi xem phim! #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 376,
+   "like_count": 11,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 75.0,
+   "create_time": "2026-11-11T04:00:32+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 0.93,
+   "outlier": 0.93,
+   "views_per_day": 22.1,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7706387307896655112",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7706387307896655112",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Dành cả tiếng đồng hồ chỉnh từng vệt sáng, bóp từng milimet eo trước khi đăng ảnh… Bạn có thấy kiệt sức khi phải sống sau lớp filter ảo đó không? #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 503,
+   "like_count": 17,
+   "comment_count": 0,
+   "share_count": 4,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 76.0,
+   "create_time": "2026-11-10T03:58:54+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 1.24,
+   "outlier": 1.24,
+   "views_per_day": 28.0,
+   "engagement_intensity": 0.0159,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7706016236022402312",
+   "url": "https://www.tiktok.com/@kyluat.1/video/7706016236022402312",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Quẹt thẻ mua chiếc túi hiệu, đôi giày sang để nhận lại vài lời khen ngoài phố… Giờ đây mỗi tháng bạn phải còng lưng đi làm chỉ để trả lãi cho sự sĩ diện! #rubybooks #kyluatbanthan #booktok #phattrienbanthan",
+   "hashtags": [
+    "rubybooks",
+    "kyluatbanthan",
+    "booktok",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "kyluat.1",
+    "fans": 0
+   },
+   "play_count": 397,
+   "like_count": 11,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 81.0,
+   "create_time": "2026-11-09T03:58:45+00:00",
+   "median_views": 405.5,
+   "outlier_ratio": 0.98,
+   "outlier": 0.98,
+   "views_per_day": 20.9,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "productivity",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7713051463668272405",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7713051463668272405",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "về ăn nói sao với 2 con ở nhà đâyy 🥹 #huonghoclai #viraltiktok",
+   "hashtags": [
+    "huonghoclai",
+    "viraltiktok"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 510,
+   "like_count": 35,
+   "comment_count": 2,
+   "share_count": 2,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 13.0,
+   "create_time": "2026-11-28T02:59:07+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 0.01,
+   "outlier": 0.01,
+   "views_per_day": 2040.0,
+   "engagement_intensity": 0.01961,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7712832213221428501",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7712832213221428501",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "28 tuổi đi học lại lớp 11 sợ bị hẹn ra cổng trường… #huonghoclai #hocbotuc #viraltiktok",
+   "hashtags": [
+    "huonghoclai",
+    "hocbotuc",
+    "viraltiktok"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 6501,
+   "like_count": 393,
+   "comment_count": 10,
+   "share_count": 32,
+   "save_count": 16,
+   "top_comments": [],
+   "duration_s": 77.0,
+   "create_time": "2026-11-27T12:48:14+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 0.15,
+   "outlier": 0.15,
+   "views_per_day": 10656.1,
+   "engagement_intensity": 0.01446,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7712333330192157958",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7712333330192157958",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "vui quá mọi người ơiiii #huonghoclai #hocbotuc #viraltiktok",
+   "hashtags": [
+    "huonghoclai",
+    "hocbotuc",
+    "viraltiktok"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 42500,
+   "like_count": 3868,
+   "comment_count": 70,
+   "share_count": 285,
+   "save_count": 96,
+   "top_comments": [],
+   "duration_s": 5.0,
+   "create_time": "2026-11-26T04:32:23+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 0.96,
+   "outlier": 0.96,
+   "views_per_day": 21745.6,
+   "engagement_intensity": 0.01835,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7711921204315163924",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7711921204315163924",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "không bao giờ quá muộn để bắt đầu lại… kế hoạch ấp ủ 7 năm đang được thực thi #huonghoclai #hocbotuc #viraltiktok",
+   "hashtags": [
+    "huonghoclai",
+    "hocbotuc",
+    "viraltiktok"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 52400,
+   "like_count": 2766,
+   "comment_count": 101,
+   "share_count": 100,
+   "save_count": 112,
+   "top_comments": [],
+   "duration_s": 11.0,
+   "create_time": "2026-11-25T01:53:10+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 1.18,
+   "outlier": 1.18,
+   "views_per_day": 17096.4,
+   "engagement_intensity": 0.0096,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7711338098323410196",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Năn nỉ xin xuống chức lớp trưởng 3 lần mới được  #huonghoclai #hocbotuc #viraltiktok",
+   "hashtags": [
+    "huonghoclai",
+    "hocbotuc",
+    "viraltiktok"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 1700000,
+   "like_count": 141500,
+   "comment_count": 1188,
+   "share_count": 11500,
+   "save_count": 3186,
+   "top_comments": [],
+   "duration_s": 11.0,
+   "create_time": "2026-11-23T12:10:18+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 38.25,
+   "outlier": 38.25,
+   "views_per_day": 366662.5,
+   "engagement_intensity": 0.01563,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7710959004872101140",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7710959004872101140",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "2 con đã phản đối vì Hương đi học lại cấp 3…. #huonghoclai #gdtx   #hoclaicap3",
+   "hashtags": [
+    "huonghoclai",
+    "gdtx",
+    "hoclaicap3"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 52500,
+   "like_count": 3286,
+   "comment_count": 14,
+   "share_count": 148,
+   "save_count": 75,
+   "top_comments": [],
+   "duration_s": 62.0,
+   "create_time": "2026-11-22T11:39:13+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 1.18,
+   "outlier": 1.18,
+   "views_per_day": 9278.9,
+   "engagement_intensity": 0.00644,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7710598254391479572",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7710598254391479572",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "“Già rồi thì học sao lại đám trẻ” Cứ còn thở thì còn cố. Chayoooo #huonghoclai #gdtx #hocbotuc",
+   "hashtags": [
+    "huonghoclai",
+    "gdtx",
+    "hocbotuc"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 150200,
+   "like_count": 12800,
+   "comment_count": 89,
+   "share_count": 577,
+   "save_count": 267,
+   "top_comments": [],
+   "duration_s": 7.0,
+   "create_time": "2026-11-21T12:19:20+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 3.38,
+   "outlier": 3.38,
+   "views_per_day": 22654.1,
+   "engagement_intensity": 0.00946,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7710078835726961941",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7710078835726961941",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Dù mình có lớn tuổi nhất, các Thầy Cô và các bạn vẫn yêu quý mình 🌷🌷🌷 #huonghoclai #teacherday #gdtx",
+   "hashtags": [
+    "huonghoclai",
+    "teacherday",
+    "gdtx"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 28500,
+   "like_count": 832,
+   "comment_count": 11,
+   "share_count": 33,
+   "save_count": 22,
+   "top_comments": [],
+   "duration_s": 15.0,
+   "create_time": "2026-11-20T02:43:46+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 0.64,
+   "outlier": 0.64,
+   "views_per_day": 3549.3,
+   "engagement_intensity": 0.00347,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7709858595936357653",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7709858595936357653",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Mẹ 2 con 28 tuổi và 1 ngày cày Hoá hữu cơ 11 + 12 #huonghoclai #viraltiktok #schoollife #gdtx",
+   "hashtags": [
+    "huonghoclai",
+    "viraltiktok",
+    "schoollife",
+    "gdtx"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 46400,
+   "like_count": 3162,
+   "comment_count": 15,
+   "share_count": 111,
+   "save_count": 87,
+   "top_comments": [],
+   "duration_s": 46.0,
+   "create_time": "2026-11-19T12:29:04+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 1.04,
+   "outlier": 1.04,
+   "views_per_day": 5380.7,
+   "engagement_intensity": 0.00575,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7709466029411274004",
+   "url": "https://www.tiktok.com/@phamthuykieuhuong/video/7709466029411274004",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "instructional_list",
+   "craft_focus": [],
+   "caption": "Đừng để drama trường học lấy hết năng lượng bạn có, tập trung học nhaaa #huonghoclai #chiase #hoclaicap3 #viral",
+   "hashtags": [
+    "huonghoclai",
+    "chiase",
+    "hoclaicap3",
+    "viral"
+   ],
+   "author": {
+    "name": "phamthuykieuhuong",
+    "fans": 0
+   },
+   "play_count": 22300,
+   "like_count": 1277,
+   "comment_count": 25,
+   "share_count": 84,
+   "save_count": 183,
+   "top_comments": [],
+   "duration_s": 63.0,
+   "create_time": "2026-11-18T11:05:45+00:00",
+   "median_views": 44450.0,
+   "outlier_ratio": 0.5,
+   "outlier": 0.5,
+   "views_per_day": 2303.4,
+   "engagement_intensity": 0.0109,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "hoc-tap",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7705277410563951878",
+   "url": "https://www.tiktok.com/@braincorevn/video/7705277410563951878",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Uống cà phê lúc 4h chiều rồi thắc mắc sao 1h sáng chưa ngủ ☕😵 Caffeine ở lại lâu hơn bạn nghĩ! Nguồn ở bình luận ghim 📌 #caphe #caffeine #tinhtao #danvanphong #sinhvienyduoc  #braincore",
+   "hashtags": [
+    "caphe",
+    "caffeine",
+    "tinhtao",
+    "danvanphong",
+    "sinhvienyduoc",
+    "braincore"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 450,
+   "like_count": 15,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 90.0,
+   "create_time": "2026-11-07T04:11:55+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 1.08,
+   "outlier": 1.08,
+   "views_per_day": 21.5,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7704903523602877714",
+   "url": "https://www.tiktok.com/@braincorevn/video/7704903523602877714",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Trì hoãn KHÔNG phải do lười 😮 Mà là não đang né cảm xúc khó chịu. Bắt đầu nhỏ xíu, kế hoạch nếu–thì + tha thứ cho bản thân 🧠 Nguồn ở bình luận ghim 📌 #trihoan #luoibieng #nangsuat #sinhvien #danvanphong #braincore",
+   "hashtags": [
+    "trihoan",
+    "luoibieng",
+    "nangsuat",
+    "sinhvien",
+    "danvanphong",
+    "braincore"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 406,
+   "like_count": 14,
+   "comment_count": 0,
+   "share_count": 1,
+   "save_count": 1,
+   "top_comments": [],
+   "duration_s": 96.0,
+   "create_time": "2026-11-06T04:01:01+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 0.97,
+   "outlier": 0.97,
+   "views_per_day": 18.5,
+   "engagement_intensity": 0.00493,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7703053554516315412",
+   "url": "https://www.tiktok.com/@braincorevn/video/7703053554516315412",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Vừa làm bài vừa rep tin nhắn = nấu 3 món trên 1 cái bếp 🍳 Canh nguội, trứng cháy, bài chưa xong 💀 Não không đa nhiệm, não ĐỔI NỒI Nguồn ở bình luận ghim 📌 #braincore #danvanphong #sinhvien #nangsuat #hieunao",
+   "hashtags": [
+    "braincore",
+    "danvanphong",
+    "sinhvien",
+    "nangsuat",
+    "hieunao"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 335,
+   "like_count": 5,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 87.0,
+   "create_time": "2026-11-01T12:00:00+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 0.8,
+   "outlier": 0.8,
+   "views_per_day": 12.6,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7703052364013489428",
+   "url": "https://www.tiktok.com/@braincorevn/video/7703052364013489428",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Ngủ trưa dậy như zombie 🧟 vì bạn ngủ LỐ GIỜ đó! Bao nhiêu phút là chuẩn + mẹo uống cà phê rồi mới ngủ ☕😴 Nguồn ở bình luận ghim 📌 #ngutrua #danvanphong #sinhvien #giacngu #nangsuat #hieunao #braincore",
+   "hashtags": [
+    "ngutrua",
+    "danvanphong",
+    "sinhvien",
+    "giacngu",
+    "nangsuat",
+    "hieunao",
+    "braincore"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 1450,
+   "like_count": 71,
+   "comment_count": 0,
+   "share_count": 4,
+   "save_count": 22,
+   "top_comments": [],
+   "duration_s": 79.0,
+   "create_time": "2026-11-01T04:17:25+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 3.46,
+   "outlier": 3.46,
+   "views_per_day": 53.8,
+   "engagement_intensity": 0.00552,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7702451087323778325",
+   "url": "https://www.tiktok.com/@braincorevn/video/7702451087323778325",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "2h chiều gục xuống bàn phím? Đừng đổ tại cơm, cơm chỉ là đồng phạm thôi 🍚🕵️ Thủ phạm thật ở trong đầu bạn ⏰ Nguồn ở bình luận ghim 📌  #giacngu #nangsuat #braincore",
+   "hashtags": [
+    "giacngu",
+    "nangsuat",
+    "braincore"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 183,
+   "like_count": 4,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 1,
+   "top_comments": [],
+   "duration_s": 66.0,
+   "create_time": "2026-10-30T13:24:07+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 0.44,
+   "outlier": 0.44,
+   "views_per_day": 6.4,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7702064043825188114",
+   "url": "https://www.tiktok.com/@braincorevn/video/7702064043825188114",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Thức trắng ôn thi: não bạn mất gì? (Con cá ngựa trong đầu bạn)#brainrot #năng_lượng_tích_cực #focus",
+   "hashtags": [
+    "brainrot",
+    "năng_lượng_tích_cực",
+    "focus"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 559,
+   "like_count": 20,
+   "comment_count": 1,
+   "share_count": 4,
+   "save_count": 5,
+   "top_comments": [],
+   "duration_s": 65.0,
+   "create_time": "2026-10-29T12:22:16+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 1.34,
+   "outlier": 1.34,
+   "views_per_day": 18.9,
+   "engagement_intensity": 0.01968,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7701948218548014344",
+   "url": "https://www.tiktok.com/@braincorevn/video/7701948218548014344",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Vì sao lướt mãi không dừng được? Vì dopamine không làm bạn \"sướng\", nó làm bạn \"MUỐN\" 🔥 Và nó hăng nhất khi phần thưởng chỉ \"có thể có\", y như máy gắp thú… và cái feed của bạn �",
+   "hashtags": [],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 2934,
+   "like_count": 113,
+   "comment_count": 0,
+   "share_count": 6,
+   "save_count": 28,
+   "top_comments": [],
+   "duration_s": 96.0,
+   "create_time": "2026-10-29T04:52:58+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 7.01,
+   "outlier": 7.01,
+   "views_per_day": 98.0,
+   "engagement_intensity": 0.00409,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7701702969687067911",
+   "url": "https://www.tiktok.com/@braincorevn/video/7701702969687067911",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Mở điện thoại định làm gì ấy nhỉ… 🫠 Não không thối đâu, nhưng nó \"chuyển kênh\" hơi nhiều 📺 Có 2 cách cứu não, lười cũng làm được 😎 Nguồn nghiên cứu ở bình luận ghim 📌 #brainrot #thoinao #taptrung #sinhvien #danvanphong",
+   "hashtags": [
+    "brainrot",
+    "thoinao",
+    "taptrung",
+    "sinhvien",
+    "danvanphong"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 417,
+   "like_count": 19,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 2,
+   "top_comments": [],
+   "duration_s": 82.0,
+   "create_time": "2026-10-28T13:01:06+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": 13.6,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7421549023993105682",
+   "url": "https://www.tiktok.com/@braincorevn/video/7421549023993105682",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Focus immediately #CapCut #viral_video #trending #lifestyle #motivation #focus #phattrienbanthan",
+   "hashtags": [
+    "CapCut",
+    "viral_video",
+    "trending",
+    "lifestyle",
+    "motivation",
+    "focus",
+    "phattrienbanthan"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 420,
+   "like_count": 3,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": 1,
+   "top_comments": [],
+   "duration_s": 57.0,
+   "create_time": "2024-10-03T14:00:39+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 1.0,
+   "outlier": 1.0,
+   "views_per_day": 0.5,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7421484706631273746",
+   "url": "https://www.tiktok.com/@braincorevn/video/7421484706631273746",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Motivational video #motivationalvideo #motivation #viral_video #success #trending #lifestyle",
+   "hashtags": [
+    "motivationalvideo",
+    "motivation",
+    "viral_video",
+    "success",
+    "trending",
+    "lifestyle"
+   ],
+   "author": {
+    "name": "braincorevn",
+    "fans": 0
+   },
+   "play_count": 369,
+   "like_count": 5,
+   "comment_count": 0,
+   "share_count": 1,
+   "save_count": 0,
+   "top_comments": [],
+   "duration_s": 71.0,
+   "create_time": "2024-10-03T09:51:05+00:00",
+   "median_views": 418.5,
+   "outlier_ratio": 0.88,
+   "outlier": 0.88,
+   "views_per_day": 0.5,
+   "engagement_intensity": 0.00542,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy",
+    "productivity"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7705090431322787080",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7705090431322787080",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Dưới 30 tuổi nên xem #phattrienbanthan #mindset #30tuoi",
+   "hashtags": [
+    "phattrienbanthan",
+    "mindset",
+    "30tuoi"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 882500,
+   "like_count": 85500,
+   "comment_count": 474,
+   "share_count": 12000,
+   "save_count": 26400,
+   "top_comments": [],
+   "duration_s": 440.0,
+   "create_time": "2026-11-06T16:06:11+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 11.26,
+   "outlier": 11.26,
+   "views_per_day": 41098.8,
+   "engagement_intensity": 0.02881,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7679094155435330823",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7679094155435330823",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "DƯỚI 30 TUỔI NÊN XEM 🥇#phattrienbanthan #mindset #phattrientuduy #tudotaichinh",
+   "hashtags": [
+    "phattrienbanthan",
+    "mindset",
+    "phattrientuduy",
+    "tudotaichinh"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 15700,
+   "like_count": 1269,
+   "comment_count": 10,
+   "share_count": 84,
+   "save_count": 234,
+   "top_comments": [],
+   "duration_s": 571.0,
+   "create_time": "2026-08-28T14:47:19+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 0.2,
+   "outlier": 0.2,
+   "views_per_day": 171.5,
+   "engagement_intensity": 0.01261,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7669662843167313160",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7669662843167313160",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "DƯỚI 30 TUỔI RẤT NÊN XEM #phattrienbanthan #tudotaichinh #phattrientuduy #mindset",
+   "hashtags": [
+    "phattrienbanthan",
+    "tudotaichinh",
+    "phattrientuduy",
+    "mindset"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 200900,
+   "like_count": 11700,
+   "comment_count": 90,
+   "share_count": 1774,
+   "save_count": 3251,
+   "top_comments": [],
+   "duration_s": 484.0,
+   "create_time": "2026-08-03T04:49:04+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 2.56,
+   "outlier": 2.56,
+   "views_per_day": 1717.9,
+   "engagement_intensity": 0.019,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7658328507516210440",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7658328507516210440",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "22-30 TUỔI GIAI ĐOẠN VÀNG HÃY NGHE ĐỂ ĐỔI ĐỜI #phattrienbanthan #phattrientuduy #tudotaichinh #mindset",
+   "hashtags": [
+    "phattrienbanthan",
+    "phattrientuduy",
+    "tudotaichinh",
+    "mindset"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 198500,
+   "like_count": 16200,
+   "comment_count": 58,
+   "share_count": 2908,
+   "save_count": 6400,
+   "top_comments": [],
+   "duration_s": 464.0,
+   "create_time": "2026-07-03T15:46:01+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 2.53,
+   "outlier": 2.53,
+   "views_per_day": 1345.9,
+   "engagement_intensity": 0.03018,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7650766521169399058",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7650766521169399058",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "DƯỚI 30 TUỔI RẤT NÊN XEM  #phattrienbanthan #dongluc #tuduythanhcong",
+   "hashtags": [
+    "phattrienbanthan",
+    "dongluc",
+    "tuduythanhcong"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 529400,
+   "like_count": 50200,
+   "comment_count": 241,
+   "share_count": 5053,
+   "save_count": 17100,
+   "top_comments": [],
+   "duration_s": 454.0,
+   "create_time": "2026-06-13T06:41:40+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 6.75,
+   "outlier": 6.75,
+   "views_per_day": 3153.7,
+   "engagement_intensity": 0.02046,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7639585257037106439",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7639585257037106439",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Trái tim không biết ơn sẽ không tìm được hạnh phúc. Khi chúng ta có lòng biết ơn, sẽ tìm thấy hạnh phúc trong từng giờ.  #bieton #phattrienbanthan #manifest #luathapdan",
+   "hashtags": [
+    "bieton",
+    "phattrienbanthan",
+    "manifest",
+    "luathapdan"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 6670,
+   "like_count": 248,
+   "comment_count": 9,
+   "share_count": 21,
+   "save_count": 45,
+   "top_comments": [],
+   "duration_s": 113.0,
+   "create_time": "2026-05-14T03:32:39+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 0.09,
+   "outlier": 0.09,
+   "views_per_day": 33.7,
+   "engagement_intensity": 0.01034,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7634541890217495815",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7634541890217495815",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "20 - 25 TUỔI NÊN NGHE NHA #phattrienbanthan #luathapdan #manifestation",
+   "hashtags": [
+    "phattrienbanthan",
+    "luathapdan",
+    "manifestation"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 111900,
+   "like_count": 8965,
+   "comment_count": 39,
+   "share_count": 530,
+   "save_count": 2273,
+   "top_comments": [],
+   "duration_s": 244.0,
+   "create_time": "2026-04-30T13:21:47+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 1.43,
+   "outlier": 1.43,
+   "views_per_day": 528.9,
+   "engagement_intensity": 0.01052,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7627686045634628872",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7627686045634628872",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "Nhóm học tập ở trên bioo #phattrienbanthan #manifestation #luathapdan",
+   "hashtags": [
+    "phattrienbanthan",
+    "manifestation",
+    "luathapdan"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 4288,
+   "like_count": 83,
+   "comment_count": 1,
+   "share_count": 5,
+   "save_count": 15,
+   "top_comments": [],
+   "duration_s": 297.0,
+   "create_time": "2026-04-12T01:57:41+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 0.05,
+   "outlier": 0.05,
+   "views_per_day": 18.6,
+   "engagement_intensity": 0.00303,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7626923401206156562",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7626923401206156562",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "CHÌA KHOÁ GIÚP VƯỢT TRỘI HƠN NGƯỜI KHÁC #phattrienbanthan #manifestation #luathapdan",
+   "hashtags": [
+    "phattrienbanthan",
+    "manifestation",
+    "luathapdan"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 44900,
+   "like_count": 2167,
+   "comment_count": 39,
+   "share_count": 118,
+   "save_count": 455,
+   "top_comments": [],
+   "duration_s": 256.0,
+   "create_time": "2026-04-10T13:00:00+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 0.57,
+   "outlier": 0.57,
+   "views_per_day": 193.9,
+   "engagement_intensity": 0.00786,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "7623402953570995474",
+   "url": "https://www.tiktok.com/@quocnguyenkieuvi/video/7623402953570995474",
+   "platform": "tiktok",
+   "lang": "vi",
+   "role": "direct_niche",
+   "learn_scope": "idea_and_craft",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [],
+   "caption": "CÁI GIÁ ĐẮC NHẤT BẠN PHẢI TRẢ LÀ GÌ  #phattrienbanthan #manifestation #luathapdan",
+   "hashtags": [
+    "phattrienbanthan",
+    "manifestation",
+    "luathapdan"
+   ],
+   "author": {
+    "name": "quocnguyenkieuvi",
+    "fans": 0
+   },
+   "play_count": 4481,
+   "like_count": 143,
+   "comment_count": 1,
+   "share_count": 8,
+   "save_count": 22,
+   "top_comments": [],
+   "duration_s": 131.0,
+   "create_time": "2026-03-31T12:57:02+00:00",
+   "median_views": 78400.0,
+   "outlier_ratio": 0.06,
+   "outlier": 0.06,
+   "views_per_day": 18.5,
+   "engagement_intensity": 0.00424,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "q9R46ov5UkU",
+   "url": "https://www.youtube.com/shorts/q9R46ov5UkU",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Làm sao để \"sinh tồn\" trước làn sóng layoff cuối năm?",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 341,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 0.35,
+   "outlier": 0.35,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "uUWa9wKWIOM",
+   "url": "https://www.youtube.com/shorts/uUWa9wKWIOM",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Why Is A Vietnamese Hospital Betting $76 Million On Proton Therapy?",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 179,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 0.19,
+   "outlier": 0.19,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "pS-xq0PS-TU",
+   "url": "https://www.youtube.com/shorts/pS-xq0PS-TU",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Giữ sự tò mò vô điều kiện | Bài học sau 10.000 giờ trình diễn thị giác",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 1300,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 1.35,
+   "outlier": 1.35,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "XnSiUKsvnNY",
+   "url": "https://www.youtube.com/shorts/XnSiUKsvnNY",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Why Is Ho Chi Minh City Turning To Global Investors To Fund Its Infrastructure?",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 362,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 0.38,
+   "outlier": 0.38,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "sd4ZZcqRFbs",
+   "url": "https://www.youtube.com/shorts/sd4ZZcqRFbs",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Nền kinh tế sáng tạo Việt Nam đang ở đâu trên bản đồ thế giới?",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 668,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 0.69,
+   "outlier": 0.69,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "04y4TFzo2m8",
+   "url": "https://www.youtube.com/shorts/04y4TFzo2m8",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Biến vạn vật thành chất liệu sáng tạo | Bài học sau 10.000 giờ trình diễn thị giác",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 1300,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 1.35,
+   "outlier": 1.35,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "n2l5QCHXXmw",
+   "url": "https://www.youtube.com/shorts/n2l5QCHXXmw",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Hỏi... hỏi nữa... hỏi mãi... | Bài học sau 10.000 giờ trình diễn thị giác",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 1300,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 1.35,
+   "outlier": 1.35,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "SwipOqtffhY",
+   "url": "https://www.youtube.com/shorts/SwipOqtffhY",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Surpassing Indonesia, How Far Can Vietnam's Economic Ambitions Reach?",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 929,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 0.96,
+   "outlier": 0.96,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "6ATC2RBLEiI",
+   "url": "https://www.youtube.com/shorts/6ATC2RBLEiI",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Những món quà ngày 20/11 đã thay đổi như thế nào qua các thời kỳ?",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 2800,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 2.9,
+   "outlier": 2.9,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "9gjAaQ9d9GU",
+   "url": "https://www.youtube.com/shorts/9gjAaQ9d9GU",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "khau-ngu-mien-nam",
+    "nhip-tam-tinh",
+    "chuyen-y-mem",
+    "cta-doi-thoai"
+   ],
+   "caption": "Đừng đánh mất sự rung động | Bài học sau 10.000 giờ tổ chức đám cưới",
+   "hashtags": [],
+   "author": {
+    "name": "vietcetera",
+    "fans": 0
+   },
+   "play_count": 1000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 964.5,
+   "outlier_ratio": 1.04,
+   "outlier": 1.04,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "ot9sm6TxCXY",
+   "url": "https://www.youtube.com/shorts/ot9sm6TxCXY",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-su-doi-thuong",
+    "tu-gieu-duyen",
+    "ngat-nhip-tu-nhien"
+   ],
+   "caption": "Over 30 Million Vietnamese Are Watching YouTube on TV, This Is a Golden Opportunity for Brands 🤩",
+   "hashtags": [],
+   "author": {
+    "name": "giangoi",
+    "fans": 0
+   },
+   "play_count": 6000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 12500.0,
+   "outlier_ratio": 0.48,
+   "outlier": 0.48,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "TCAnJIDO3Bg",
+   "url": "https://www.youtube.com/shorts/TCAnJIDO3Bg",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-su-doi-thuong",
+    "tu-gieu-duyen",
+    "ngat-nhip-tu-nhien"
+   ],
+   "caption": "Looking back on our 8-year journey 🥹",
+   "hashtags": [],
+   "author": {
+    "name": "giangoi",
+    "fans": 0
+   },
+   "play_count": 46000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 12500.0,
+   "outlier_ratio": 3.68,
+   "outlier": 3.68,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "_I-_EOwhBPo",
+   "url": "https://www.youtube.com/shorts/_I-_EOwhBPo",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-su-doi-thuong",
+    "tu-gieu-duyen",
+    "ngat-nhip-tu-nhien"
+   ],
+   "caption": "Wait, I thought it was JUST COLD, buddy? 😌",
+   "hashtags": [],
+   "author": {
+    "name": "giangoi",
+    "fans": 0
+   },
+   "play_count": 13000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 12500.0,
+   "outlier_ratio": 1.04,
+   "outlier": 1.04,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "RRglEFHovQ0",
+   "url": "https://www.youtube.com/shorts/RRglEFHovQ0",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-su-doi-thuong",
+    "tu-gieu-duyen",
+    "ngat-nhip-tu-nhien"
+   ],
+   "caption": "Those days of shutting doors and fans just to get clear audio in your vlogs are long gone 😅",
+   "hashtags": [],
+   "author": {
+    "name": "giangoi",
+    "fans": 0
+   },
+   "play_count": 9800,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 12500.0,
+   "outlier_ratio": 0.78,
+   "outlier": 0.78,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "M6WR8SUDV3s",
+   "url": "https://www.youtube.com/shorts/M6WR8SUDV3s",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-su-doi-thuong",
+    "tu-gieu-duyen",
+    "ngat-nhip-tu-nhien"
+   ],
+   "caption": "Another Mid-Autumn Festival, another questionable recipe 🥮 😝 Have you watched the full video yet?...",
+   "hashtags": [],
+   "author": {
+    "name": "giangoi",
+    "fans": 0
+   },
+   "play_count": 12000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 12500.0,
+   "outlier_ratio": 0.96,
+   "outlier": 0.96,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  },
+  {
+   "raw_id": "dk2ygWV9MJ0",
+   "url": "https://www.youtube.com/shorts/dk2ygWV9MJ0",
+   "platform": "youtube",
+   "lang": "vi",
+   "role": "southern_story_voice",
+   "learn_scope": "voice_cadence_only",
+   "format_compatibility": "story_metaphor",
+   "craft_focus": [
+    "tam-su-doi-thuong",
+    "tu-gieu-duyen",
+    "ngat-nhip-tu-nhien"
+   ],
+   "caption": "Bánh trung thu xôi bắp?",
+   "hashtags": [],
+   "author": {
+    "name": "giangoi",
+    "fans": 0
+   },
+   "play_count": 29000,
+   "like_count": null,
+   "comment_count": 0,
+   "share_count": 0,
+   "save_count": null,
+   "top_comments": [],
+   "duration_s": null,
+   "create_time": null,
+   "median_views": 12500.0,
+   "outlier_ratio": 2.32,
+   "outlier": 2.32,
+   "views_per_day": null,
+   "engagement_intensity": 0.0,
+   "basis": "views/median_views",
+   "channel_niche": [
+    "storytelling",
+    "tu-duy"
+   ],
+   "niche_verified": true,
+   "source": "radar-fetch (yt-dlp)"
+  }
+ ]
+}

@@ -264,9 +264,25 @@
      "followers": 7490,
      "date": "2026-11-27",
      "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md"
+    },
+    {
+     "source": "https://www.youtube.com/shorts/7Co-TmrLiYk",
+     "creator": "thomasfrank",
+     "views": 857000,
+     "followers": 0,
+     "date": "2026-11-28",
+     "teardown": "research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md"
+    },
+    {
+     "source": "https://www.youtube.com/shorts/PlswZxxapn4",
+     "creator": "healthygamergg",
+     "views": 487000,
+     "followers": 0,
+     "date": "2026-11-28",
+     "teardown": "research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md"
     }
    ],
-   "seen": 2
+   "seen": 4
   }
  ],
  "ideas": [
@@ -328,6 +344,46 @@
    "length_s": 60,
    "teardown": "research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md",
    "date": "2026-11-27",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "hi_oneup",
+   "idea": "Vì sao bạn lên kế hoạch tập thể dục hay đọc sách mãi không làm nổi: không phải lười mà do đặt mục tiêu kiểu 'phải xong', thử đổi sang mục tiêu 'chỉ cần có mặt 10 phút' cùng đồng hồ hẹn giờ để não hết sợ bắt đầu (comic chibi Hiệp nằm lướt điện thoại đối đầu bức tường 'Mục tiêu khổng lồ' rồi thu nhỏ nó thành viên gạch 10 phút).",
+   "hook": "Có bao giờ bạn biết rõ hôm nay phải đọc sách hay tập thể dục, mà cứ nằm bấm điện thoại miết không nhấc người lên nổi không?",
+   "length_s": 80,
+   "teardown": "research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md",
+   "date": "2026-11-28",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "vanhiep_tech",
+   "idea": "Cách dev thoát kẹt khi nhìn backlog/task refactor quá lớn: tách mục tiêu từ Output ('refactor xong module auth') sang Input ('timebox 25 phút mở PR nháp đầu tiên'), kết hợp overlay sơ đồ so sánh Output Goal vs Input Timebox và đồng hồ Pomodoro trên bàn làm việc.",
+   "hook": "Mở Jira thấy một task refactor to đùng rồi bạn tự nhiên đi pha cà phê và đọc tin công nghệ cả tiếng đồng hồ?",
+   "length_s": 60,
+   "teardown": "research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md",
+   "date": "2026-11-28",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "hi_oneup",
+   "idea": "Dùng mạch lật định nghĩa 'ảo mộng mới' cho thói quen sống: chuyện nhiều người chăm chỉ bấm hoàn thành nhiệm vụ uống nước, ngủ sớm cho nhân vật ảo trên app quản lý thói quen hoặc xem clip dọn phòng lúc 2 giờ sáng thay vì tự làm ngoài đời; dùng Hiệp và Omi mổ xẻ lý do bộ não chuộng 'cảm giác sống gọn gàng giả lập' hơn thực tế rồi chốt 1 hành động 2 phút cực dễ bắt đầu.",
+   "hook": "Bạn có thấy kỳ không, mình từng thức tới hai giờ sáng chỉ để canh giờ cho nhân vật trong app đi ngủ sớm?",
+   "length_s": 85,
+   "teardown": "research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md",
+   "date": "2026-11-28",
+   "status": "ý tưởng"
+  },
+  {
+   "arc": "ARC-003",
+   "channel": "vanhiep_tech",
+   "idea": "Chuyển thể nghịch lý 'chăm làm việc giả lập hơn việc thật' sang hội chứng 'Productivity Simulator' trong giới lập trình: dev tốn 4 tiếng tinh chỉnh dotfiles, Notion hay dựng agent AI để tự động hóa một tác vụ làm tay chỉ mất 15 phút; bóc tách sơ đồ vòng lặp phần thưởng rõ ràng của việc config so với sự mơ hồ khi ship sản phẩm thật, cắt layer sơ đồ mỗi 3–5 giây.",
+   "hook": "Tại sao dân kỹ thuật thà bỏ 4 tiếng viết script tự động hóa còn hơn tốn 10 phút làm xong việc đó ngay bây giờ?",
+   "length_s": 65,
+   "teardown": "research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md",
+   "date": "2026-11-28",
    "status": "ý tưởng"
   }
  ]

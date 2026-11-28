@@ -5,7 +5,7 @@ source: "oneup-studio (soạn trong repo)"
 id: trends-ingest
 type: trend-library
 status: living
-updated: 2026-11-27
+updated: 2026-11-28
 tags: [trends, memes, slang, hashtags, topics]
 ---
 # Trend ingest: thư viện sống (rule-37, rule-39)
@@ -308,6 +308,16 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | tt-phamthuykieuhuong-u30-lop11 | TikTok «U30 (28 tuổi) học lớp 11 GDTX» (@phamthuykieuhuong, 1,7M view, 38.99x, đã teardown ARC-003) | tiktok/study | caution | 2026-11-27 | 2026-11-27 | 1 | [TikTok @phamthuykieuhuong](https://www.tiktok.com/@phamthuykieuhuong/video/7711338098323410196) |
 | tt-vutru-anh-mat-nguoi-khac | TikTok «Bạn có đang quá bận tâm đến ánh mắt người khác?» (@vutru_codai, 173k view) | tiktok/mind | ok | 2026-11-27 | 2026-11-27 | 1 | [TikTok @vutru_codai](https://www.tiktok.com/@vutru_codai/video/7709041076987858197) |
 
+### Bổ sung 2026-11-28
+| kenh14-khong-hai-long-thien-ha | Nghệ thuật quyến rũ của những người không có nhu cầu làm hài lòng thiên hạ (cs=2 `kenh14-home` + `kenh14-doisong`) | social debates | ok | 2026-11-28 | 2026-11-28 | 1 | [Kenh14](https://kenh14.vn/nghe-thuat-quyen-ru-cua-nhung-nguoi-khong-co-nhu-cau-lam-hai-long-thien-ha-21526112807494151.chn) |
+| vne-terence-tao-toan-2-0 | GS Terence Tao kêu gọi chuyển sang «toán học 2.0» vì AI; chỉ công nhận khi người gửi tự giải thích được thứ AI viết (VnExpress + Google Trends VN 500+) | tech/AI | caution | 2026-11-28 | 2026-11-28 | 1 | [VnExpress](https://vnexpress.net/than-dong-terence-tao-keu-goi-chuyen-sang-toan-hoc-2-0-vi-ai-5149544.html) |
+| reddit-deleted-3-prod-apps | Reddit r/productivity: «I deleted three productivity apps this week» (xoá habit tracker, to-do, time blocking) | niche/productivity | ok | 2026-11-28 | 2026-11-28 | 1 | [Reddit](https://www.reddit.com/r/productivity/comments/1ukgb64/i_deleted_three_productivity_apps_this_week/) |
+| kenh14-tien-danh-doi-suc-khoe | Muốn tự do phải có tiền, nhưng kiếm tiền phải đánh đổi sức khoẻ: Nghịch lý khi làm người lớn | niche/work | ok | 2026-11-28 | 2026-11-28 | 1 | [Kenh14](https://kenh14.vn/muon-tu-do-phai-co-tien-nhung-kiem-tien-phai-danh-doi-suc-khoe-nghich-ly-khi-lam-nguoi-lon-215261127222051053.chn) |
+| tt-tramdungtrithuc-noi-khay | TikTok «Bị nói kháy đừng giải thích, hãy lặp lại và hỏi ngược» (@tramdungtrithuc, 1,1M view, 549 cmt, 6,7k share, 14.59x) | tiktok/mind | ok | 2026-11-28 | 2026-11-28 | 1 | [TikTok @tramdungtrithuc](https://www.tiktok.com/@tramdungtrithuc/video/7710946714219236626) |
+| tt-parentlab3-3-lan-nho | TikTok «Học mãi không vào, thử quy tắc 3 lần nhớ» (@parentlab3, 502,7k view, 8,6k share, 13.93x) | tiktok/study | ok | 2026-11-28 | 2026-11-28 | 1 | [TikTok @parentlab3](https://www.tiktok.com/@parentlab3/video/7684183085755190548) |
+| tt-dangde-lap-ke-hoach | TikTok «Hãy luôn học cách lập kế hoạch trước lúc còn kiếm được tiền» (@dangde.suyngam, 1,1M view, 15,1k share, 30.47x) | tiktok/money | caution | 2026-11-28 | 2026-11-28 | 1 | [TikTok @dangde.suyngam](https://www.tiktok.com/@dangde.suyngam/video/7707949451339402503) |
+| hn-convex-skills-webrtc-skimmer | HN front page: Convex skills gửi ý tưởng app lên server ngoài không báo + WebRTC credit card skimmer trên trang mua sắm dịp Black Friday | tech/security | ok | 2026-11-28 | 2026-11-28 | 1 | [HN Convex](https://github.com/convex/convex-backend-skill/issues/64) · [WebRTC Skimmer](https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer) |
+
 ## Bridges (trend → khoảnh khắc → bài học → hook)
 | id | Trend | Khoảnh khắc | Bài học (phần.mục) | Hook VI | Góc | Đích | Trạng thái | first |
 |---|---|---|---|---|---|---|---|---|
@@ -447,6 +457,12 @@ Cột: id · nội dung · loại · ngôn ngữ / khán giả · first_seen · 
 | B-iosupdate-01 | genk-ios-darksword-coruna | thấy thông báo cập nhật iOS là bấm «để tối nay» cả tháng trời | 14.10 / 14.6 | "Không bấm link lạ, không đọc mã OTP cho ai mà điện thoại vẫn có thể bị xâm nhập chỉ vì lướt trúng trang web lỗi?" (P04+P10) | data / contrarian | đăng #29 (14.10, DARK) hook thay thế | đề xuất (cũng hợp `@vanhiep.tech`) | 2026-11-27 |
 | B-u30batdau-01 | tt-phamthuykieuhuong-u30-lop11 | gần 30 tuổi muốn học kỹ năng mới nhưng cứ ngại «trễ quá rồi» | 4.12 | "Gần 30 tuổi mới bắt đầu học lại từ con số 0, bạn nghĩ mình đang đi trễ hay đang cầm một lợi thế ngầm?" (P04+P15, ARC-003) | empathy / story | ý tưởng mới / callback clip-06 | đề xuất; caution người thật (đã teardown ARC-003) | 2026-11-27 |
 | B-aimode-01 | vne-google-ai-mode-mat-khach | đọc xong 3 dòng AI tóm tắt tưởng hiểu hết rồi, 10 phút sau kể lại thì không nhớ | 23.16 / 3.6 | "Google giờ trả lời thay luôn khỏi cần bấm vào trang web. Tiện thiệt, nhưng đọc ba dòng tóm tắt xong, mười phút sau bạn còn nhớ được gì?" (P03+P10) | contrarian | ý tưởng `@vanhiep.tech` + `@hi.oneup` | đề xuất | 2026-11-27 |
+| B-hailong-01 | kenh14-khong-hai-long-thien-ha | nhận lời mời lúc đã hết pin, ngồi gõ tin nhắn từ chối 10 phút với 3 lý do dài ngoằng vì sợ bị giận | 3.21 (+3.16) | "Bài báo đang hot hôm nay nói về khí chất của mấy người hông cần làm hài lòng thiên hạ. Mà nói thiệt, nhiều khi mình sợ từ chối hông phải vì hiền, mà vì tưởng ai cũng đang soi mình á." (P03+P10) | contrarian / empathy | đăng #20 (3.21, LIGHT) | stub 2026-11-28 (`research/trends/2026-11-28/plans/plan-1-khong-can-lam-hai-long-thien-ha.json`; bỏ toàn bộ ví dụ sao) | 2026-11-28 |
+| B-toan20-01 | vne-terence-tao-toan-2-0 | dán tài liệu 20 trang vô AI tóm tắt 5 gạch đầu dòng thấy mượt, vô họp bị hỏi ngược thì đứng hình | 23.14 | "GS Terence Tao vừa cảnh báo: giờ đầy bài nghiên cứu do AI viết mà chính người gửi cũng hông hiểu bên trong nói gì. Nghe xa xôi hả? Mà lần gần nhất bạn nhờ AI tóm tắt tài liệu rồi gửi sếp, bạn có giải thích lại được hông?" (P03+P10) | data / contrarian | đăng #25 (23.14, DARK) | stub 2026-11-28 (`research/trends/2026-11-28/plans/plan-2-terence-tao-toan-hoc-2-0-giai-thich-lai.json`; caution tên GS học thuật, L-087) | 2026-11-28 |
+| B-xoa3app-01 | reddit-deleted-3-prod-apps | cài đủ habit tracker, to-do, time blocking mà cuối tuần vẫn chưa mở việc chính | 4.8 (+4.1) | "Có người vừa lên mạng kể: tuần này tôi xoá sạch ba cái app năng suất. Nghe ngược đời hen, mà cài thêm app thứ tư có làm bạn bắt đầu sớm hơn hông?" (P15+P03) | humor / contrarian | ô #27 (LIGHT trống) | đề xuất | 2026-11-28 |
+| B-tienvasuckhoe-01 | kenh14-tien-danh-doi-suc-khoe | chạy deadline tới 1–2h sáng để mong dư tiền hơn, sáng hôm sau vật vờ làm không ra việc | 3.13 | "Nghịch lý ai cũng than: có tiền thì không có thời gian, có thời gian thì lo chuyện tiền. Mà bạn có biết sau một ngưỡng giờ làm, càng cố thức khuya càng ít ra việc hơn không?" (P10+P03) | contrarian / data | đăng #12 (3.13, DARK) hook thay thế | đề xuất (bỏ claim y khoa/lão hoá) | 2026-11-28 |
+| B-noikhay-01 | tt-tramdungtrithuc-noi-khay | bị nói kháy trong cuộc họp/nhóm chat, tim đập nhanh muốn bật lại liền hoặc về nhà nghĩ cả tối | 3.17 (+3.23) | "Trên TikTok có clip hơn một triệu lượt xem dạy cách đáp trả khi bị nói kháy. Mà trước khi nghĩ câu phản pháo thật sắc, bạn có để ý cơn nóng đang lấy mất bao nhiêu tiếng tối nay của mình hông?" (P03+P10) | empathy / contrarian | ý tưởng mới 3.17 (trụ 4) | đề xuất (không chép lời creator) | 2026-11-28 |
+| B-skimmer-01 | hn-convex-skills-webrtc-skimmer | cài extension/skill AI lạ hoặc nhập thẻ mua deal Black Friday mà không kiểm tra nguồn | 14.10 / 14.6 | "Mùa sale cuối năm và thời đại cài skill AI chỉ bằng một dòng lệnh: dữ liệu của bạn có thể đi ra ngoài mà màn hình chẳng hiện cảnh báo nào." (P04+P10) | data / contrarian | đăng #29 (14.10, DARK) + `@vanhiep.tech` | đề xuất | 2026-11-28 |
 
 ## Âm thanh (chỉ ghi tên, Hiệp thêm trên TikTok)
 | Sound | Nghệ sĩ | first | last | Nguồn | Ghi chú |
@@ -495,3 +511,18 @@ Link hoặc file Hiệp ném vào `media/footage/inbox/`, gắn id bằng `pipel
 | trends-2026-11-27-23 | https://www.tiktok.com/@_falling.seeds_/video/7074069721720704299 | 2026-11-27 | radar:7.32x | queued | |
 | trends-2026-11-27-24 | https://www.tiktok.com/@tramdungtrithuc/video/7710321816983620882 | 2026-11-27 | radar:4.32x | queued | |
 | trends-2026-11-27-25 | https://www.tiktok.com/@kinhthiendongdao.com/video/7557577809447767304 | 2026-11-27 | radar:3.2x | queued | |
+| trends-2026-11-28-01 | https://www.youtube.com/shorts/PlswZxxapn4 | 2026-11-28 | radar:Nonex | done | research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md |
+| trends-2026-11-28-02 | https://www.youtube.com/shorts/HG4jIzQ7jQI | 2026-11-28 | radar:Nonex | queued | |
+| trends-2026-11-28-03 | https://www.youtube.com/shorts/musMqbllltk | 2026-11-28 | radar:Nonex | queued | |
+| trends-2026-11-28-04 | https://www.youtube.com/shorts/7Co-TmrLiYk | 2026-11-28 | radar:Nonex | done | research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md |
+| trends-2026-11-28-05 | https://www.youtube.com/shorts/TAV5Prbponw | 2026-11-28 | radar:Nonex | queued | |
+| trends-2026-11-28-06 | https://www.tiktok.com/@anaiscastillo109/video/7698890018089094421 | 2026-11-28 | radar:255.32x | queued | |
+| trends-2026-11-28-07 | https://www.tiktok.com/@thnguyen.y/video/7663776976519384340 | 2026-11-28 | radar:122.3x | queued | |
+| trends-2026-11-28-08 | https://www.tiktok.com/@goimimindset.com/video/7678243434066496776 | 2026-11-28 | radar:67.81x | queued | |
+| trends-2026-11-28-09 | https://www.tiktok.com/@quang.xaydung/video/7678876606143745298 | 2026-11-28 | radar:66.42x | queued | |
+| trends-2026-11-28-10 | https://www.tiktok.com/@b.ch.phng.thi0/video/7709104431081475346 | 2026-11-28 | radar:46.47x | queued | |
+| trends-2026-11-28-11 | https://www.tiktok.com/@dangde.suyngam/video/7707949451339402503 | 2026-11-28 | radar:30.47x | queued | |
+| trends-2026-11-28-12 | https://www.tiktok.com/@never_give_up_2701/video/7707322538669395220 | 2026-11-28 | radar:14.82x | queued | |
+| trends-2026-11-28-13 | https://www.tiktok.com/@tramdungtrithuc/video/7710946714219236626 | 2026-11-28 | radar:14.59x | queued | |
+| trends-2026-11-28-14 | https://www.tiktok.com/@parentlab3/video/7684183085755190548 | 2026-11-28 | radar:13.93x | queued | |
+| trends-2026-11-28-15 | https://www.tiktok.com/@nhile_n/video/7269745529582603526 | 2026-11-28 | radar:9.11x | queued | |

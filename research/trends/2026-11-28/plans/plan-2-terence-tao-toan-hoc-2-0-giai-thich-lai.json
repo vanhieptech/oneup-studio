@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-terence-tao-toan-hoc-2-0-giai-thich-lai",
+ "title": "[STUB] VnExpress Số hoá + Google Trends VN 28/11: GS Terence Tao kêu gọi chuyển sang 'toán học 2.0' — chỉ công nhận khi người gửi tự giải thích được thứ AI tạo ra. Sách 23.14: gấp màn hình tóm tắt AI lại, nói ra 3 ý chính bằng lời của mình",
+ "meta": {
+  "week": 5,
+  "status": "stub-needs-approval",
+  "trend_id": "than-dong-terence-tao-keu-goi-chuyen-sang",
+  "bridge_id": "B-toan20-01",
+  "lesson": "23.14 Gấp sách tự kiểm / tự truy xuất (retrieval practice, đăng #25 DARK) — tuân thủ L-087 (dùng ví dụ đọc tài liệu công việc / báo cáo do AI tóm tắt, không lấy môn học phổ thông). Dẫn chứng trend: VnExpress Số hoá 28/11/2026 & Google Trends VN ('terence tao' 500+): GS Terence Tao nhận xét toà soạn tràn ngập bài do AI viết mà tác giả không hiểu mình đang gửi gì, đề xuất chỉ công nhận nếu tự giải thích được trước hội đồng. Caution: nhắc tên GS Terence Tao ở góc học thuật trung tính, không vẽ chân dung người thật, không đưa số liệu khảo sát chưa tự kiểm vào voice.",
+  "angle": "data / contrarian",
+  "pattern": "P03 (lật góc nhìn) + P10 (nghịch lý công việc)",
+  "differentiation": "Mọi người đang nói: AI giải toán siêu đỉnh, sinh viên và giới chuyên môn lo mất nghề ([VnExpress 28/11](https://vnexpress.net/than-dong-terence-tao-keu-goi-chuyen-sang-toan-hoc-2-0-vi-ai-5149544.html)). Góc của mình: câu đáng chú ý nhất của GS Terence Tao không phải AI giỏi cỡ nào, mà là *đừng gửi thứ chính mình không giải thích nổi*. Nhờ AI tóm tắt tài liệu rồi thấy «gọn quá, hiểu rồi» chính là bẫy ảo giác quen mặt — thử gấp màn hình lại và tự nói ra ba ý chính (23.14)."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "dark"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b01",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "GS Terence Tao vừa cảnh báo: giờ đầy bài nghiên cứu do AI viết mà chính người gửi cũng hông hiểu bên trong nói gì.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Terence Tao warns of AI papers authors can't explain.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b02",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nghe chuyện giới học thuật có vẻ xa xôi hen. Mà lần gần nhất bạn nhờ AI tóm tắt tài liệu rồi gửi đi, bạn có tự giải thích lại được hông?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Could you explain the last AI summary you sent?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b03",
+   "duration": 7,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Cảnh quen thuộc lắm: dán file hai chục trang vô AI, đọc năm gạch đầu dòng thấy trơn tru quá trời, tưởng mình nắm hết rồi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Five crisp bullets make us feel like we got it.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b04",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tới lúc vô họp đồng nghiệp hỏi vặn một câu, đầu tự nhiên trống trơn, phải lật lại khung chat kiếm chữ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Then someone asks a follow-up and our mind blanks.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b05",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trong sách gọi đây là bẫy đọc thụ động: nhìn chữ thấy quen và hợp lý làm não nhầm tưởng là mình đã hiểu thật.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Smooth text tricks the brain into feeling fluent.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "GS Tao đề xuất cách kiểm tra rất thẳng: chỉ công nhận khi người làm tự giải thích lại được trước hội đồng.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Tao's test: only count it if you can explain it.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mình áp dụng liền cho việc hằng ngày bằng đúng một bước: đọc xong bản tóm tắt AI, gấp màn hình lại ba mươi giây rồi tự nói ra ba ý chính.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Close the screen 30s. Say 3 key points aloud.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "terence-tao-toan-hoc-2-0-giai-thich-lai.b08",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Chỗ nào nói bị vấp chính là chỗ não chưa hiểu. Bạn có hay bị tình huống đọc AI thấy dễ hiểu mà hỏi tới lại quên hông?",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Ever felt an AI summary made sense until asked?",
+    "start": 0.3,
+    "end": 6.7
+   }
+  }
+ ]
+}

@@ -306,7 +306,7 @@
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
-   "updated": "2026-11-27",
+   "updated": "2026-11-28",
    "path": "content/idea-bank.md",
    "title": "Idea bank"
   },
@@ -1975,6 +1975,14 @@
    "title": "Viral DNA Card `trends-2026-11-27-14`"
   },
   {
+   "id": "trends-2026-11-28",
+   "type": "trend-digest",
+   "status": "draft-needs-review",
+   "updated": "2026-11-28",
+   "path": "research/trends/2026-11-28/digest.md",
+   "title": "Trend digest 2026-11-28 (thứ Bảy)"
+  },
+  {
    "id": "teardown.trends-2026-11-28-01",
    "type": "teardown",
    "status": "draft",
@@ -1994,7 +2002,7 @@
    "id": "trends-ingest",
    "type": "trend-library",
    "status": "living",
-   "updated": "2026-11-27",
+   "updated": "2026-11-28",
    "path": "research/trends/ingest.md",
    "title": "Trend ingest: thư viện sống (rule-37, rule-39)"
   },
@@ -2002,7 +2010,7 @@
    "id": "trends-patterns",
    "type": "pattern-library",
    "status": "living",
-   "updated": "2026-11-27",
+   "updated": "2026-11-28",
    "path": "research/trends/patterns.md",
    "title": "Hook & format pattern library (rule-47)"
   },

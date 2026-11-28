@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "trend-khong-can-lam-hai-long-thien-ha",
+ "title": "[STUB] Kenh14 28/11 (cs=2): Nghệ thuật quyến rũ của những người không có nhu cầu làm hài lòng thiên hạ. Sách 3.21 (+3.16): không cần đóng vai lạnh lùng — não mình đang phóng đại cảm giác 'ai cũng nhìn', thử từ chối gọn một lời mời không cần viết cả bài văn giải thích",
+ "meta": {
+  "week": 4,
+  "status": "stub-needs-approval",
+  "trend_id": "nghe-thuat-quyen-ru-cua-nhung-nguoi-khong",
+  "bridge_id": "B-hailong-01",
+  "lesson": "3.21 Không ai để ý bạn nhiều như bạn tưởng (hiệu ứng ánh đèn sân khấu / spotlight effect, mức B). Phụ: 3.16 đặt ranh giới, nói không khi không phù hợp. Dẫn chứng trend: bài Kenh14 ngày 28/11/2026 (xuất hiện đồng thời trên kenh14-home và kenh14-doisong) phân tích cảm giác mệt mỏi khi vừa sống vừa tưởng tượng có hội đồng đánh giá xung quanh — bỏ toàn bộ ví dụ người nổi tiếng nước ngoài trong bài.",
+  "angle": "contrarian / empathy",
+  "pattern": "P03 (lật góc nhìn) + P10 (nghịch lý mệt mỏi)",
+  "differentiation": "Mọi người đang nói: khen khí chất lạnh lùng, bất cần của người nổi tiếng không cần chiều lòng ai ([Kenh14 28/11](https://kenh14.vn/nghe-thuat-quyen-ru-cua-nhung-nguoi-khong-co-nhu-cau-lam-hai-long-thien-ha-21526112807494151.chn)). Góc của mình: hông cần đóng vai lạnh lùng (và bỏ hết ví dụ sao) — lý do mình hay gật đầu mọi thứ rồi mệt rã rời là vì mình tưởng cả phòng đang chấm điểm từng câu từ chối của mình (3.21). +1 tối nay: từ chối đúng một lời mời không hợp bằng một câu gọn, lịch sự, không giải thích dài dòng."
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "theme": "light"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "beat": "khong-can-lam-hai-long-thien-ha.b01",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "cut"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Bài báo đang hot hôm nay nói về khí chất của mấy người hông cần làm hài lòng thiên hạ. Mà nói thiệt, nhiều khi mình sợ từ chối hông phải vì hiền, mà vì tưởng ai cũng đang soi mình á.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "We say yes because we think everyone is watching.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s02",
+   "beat": "khong-can-lam-hai-long-thien-ha.b02",
+   "duration": 7,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Tối thứ Sáu đã hết pin mà có người rủ đi chơi. Mình định từ chối, xong ngồi gõ tới ba lý do dài ngoằng, xóa đi viết lại cả chục phút.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "Ten minutes typing three excuses to say no.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s03",
+   "beat": "khong-can-lam-hai-long-thien-ha.b03",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "sad"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Trong đầu mình lúc đó giống như có cả một khán đài đang ngồi chấm điểm từng chữ mình gửi vậy đó.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "Feels like a whole crowd is judging your reply.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s04",
+   "beat": "khong-can-lam-hai-long-thien-ha.b04",
+   "duration": 6,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "confused"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Mạng thì hay khuyên: hãy lạnh lùng lên, đừng quan tâm ai nghĩ gì. Nghe ngầu thiệt, mà làm theo thì thấy kỳ kỳ.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "'Just be cold' sounds cool, feels fake.",
+    "start": 0.3,
+    "end": 5.7
+   }
+  },
+  {
+   "id": "s05",
+   "beat": "khong-can-lam-hai-long-thien-ha.b05",
+   "duration": 8,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "neutral"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Sách nhắc một chuyện nhẹ hơn nhiều: hiệu ứng ánh đèn sân khấu. Mình luôn tưởng người khác chú ý tới mình kỹ hơn thực tế rất nhiều.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Spotlight effect: nobody watches as closely as we think.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s06",
+   "beat": "khong-can-lam-hai-long-thien-ha.b06",
+   "duration": 7,
+   "background": {
+    "kind": "grid"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "surprised"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Thực ra ai cũng đang bận lo việc của họ. Câu từ chối của bạn, người ta đọc xong ba giây là chuyển sang hỏi người kế tiếp rồi.",
+     "start": 0.3,
+     "end": 6.7
+    }
+   ],
+   "caption": {
+    "text": "They read it in three seconds and move on.",
+    "start": 0.3,
+    "end": 6.7
+   }
+  },
+  {
+   "id": "s07",
+   "beat": "khong-can-lam-hai-long-thien-ha.b07",
+   "duration": 8,
+   "background": {
+    "kind": "desk"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Nên lần tới hông muốn đi hoặc hông nhận thêm việc được, thử nhắn đúng một câu gọn, lịch sự: hôm nay mình bận rồi, hẹn bạn dịp khác nha.",
+     "start": 0.3,
+     "end": 7.7
+    }
+   ],
+   "caption": {
+    "text": "Try one short, polite line. No essay needed.",
+    "start": 0.3,
+    "end": 7.7
+   }
+  },
+  {
+   "id": "s08",
+   "beat": "khong-can-lam-hai-long-thien-ha.b08",
+   "duration": 6,
+   "background": {
+    "kind": "room"
+   },
+   "camera": {
+    "framing": "medium",
+    "push": 0.04
+   },
+   "transition": {
+    "type": "fade"
+   },
+   "characters": [
+    {
+     "characterId": "hiep",
+     "x": 0.4,
+     "pose": "standing",
+     "action": "talking",
+     "expression": "happy"
+    }
+   ],
+   "dialogue": [
+    {
+     "speaker": "hiep",
+     "text": "Khỏi viết cả bài văn biện minh. Bạn từng tốn bao lâu chỉ để gõ một tin nhắn từ chối? Kể mình nghe với nha.",
+     "start": 0.3,
+     "end": 5.7
+    }
+   ],
+   "caption": {
+    "text": "How long do you spend typing a simple no?",
+    "start": 0.3,
+    "end": 5.7
+   }
+  }
+ ]
+}

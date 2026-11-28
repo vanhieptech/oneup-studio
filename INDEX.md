@@ -259,6 +259,7 @@ tags: [index, retrieval]
 | trends-2026-11-27 | trend-digest | draft-needs-review | `research/trends/2026-11-27/digest.md` | Trend digest 2026-11-27 (thứ Sáu — Black Friday) |
 | teardown.trends-2026-11-27-01 | teardown | draft | `research/trends/2026-11-27/teardowns/trends-2026-11-27-01.md` | Viral DNA Card `trends-2026-11-27-01` |
 | teardown.trends-2026-11-27-14 | teardown | draft | `research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md` | Viral DNA Card `trends-2026-11-27-14` |
+| trends-2026-11-28 | trend-digest | draft-needs-review | `research/trends/2026-11-28/digest.md` | Trend digest 2026-11-28 (thứ Bảy) |
 | teardown.trends-2026-11-28-01 | teardown | draft | `research/trends/2026-11-28/teardowns/trends-2026-11-28-01.md` | Viral DNA Card `trends-2026-11-28-01` |
 | teardown.trends-2026-11-28-04 | teardown | draft | `research/trends/2026-11-28/teardowns/trends-2026-11-28-04.md` | Viral DNA Card `trends-2026-11-28-04` |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
