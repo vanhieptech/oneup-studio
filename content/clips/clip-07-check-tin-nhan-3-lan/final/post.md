@@ -14,7 +14,7 @@ tags: [clip-07, post, tiktok, week-2]
 ## 1. File video
 ```
 Đường dẫn: content/clips/clip-07-check-tin-nhan-3-lan/final/out/clip-07-final.mp4
-Thời lượng: 75.0s (đo file, gồm end card) · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14.1 LUFS, peak −1.7 dBTP
+Thời lượng: 68.4s (đo file, gồm end card) · strict <300s · 1080×1920 (9:16) · 30fps · H.264 + AAC 48 kHz · −14.2 LUFS, peak −1.8 dBTP
 ```
 
 ## 2. Chữ trên cover (≤ 40 ký tự)

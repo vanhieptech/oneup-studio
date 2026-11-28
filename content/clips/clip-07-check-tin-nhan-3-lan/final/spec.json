@@ -7,8 +7,12 @@
  "pillar": "2 Giữ tập trung",
  "story": "độc thoại Hiệp; tình huống sếp nhắn 'em ơi' và 3 khung giờ 9h/1h/4h dựng theo luật 67; một họ hình ảnh chấm đỏ — mở ra đóng vô",
  "trend": "B-msg-02",
- "voice_prefix": "c07v1",
- "voice_refs": true,
+ "voice_prefix": "c07v2",
+ "voice_refs": {
+  "default": "thai-son-v2",
+  "happy": "thai-son-v2",
+  "serious": "thai-son-v2"
+ },
  "mix": "linear",
  "layout": "tiktok",
  "length_target": [
@@ -45,6 +49,12 @@
    "date": "2026-11-28",
    "dl": "DL-082",
    "note": "Sửa tự kiểm QA vòng 1 (rule-34): dời nhân vật/props tránh va chạm L-033, bỏ prop laptop chứa chữ Omi ở b02b, sửa b01b framing medium tránh đường bàn cắt phụ đề, chỉnh phiên âm b04 Cu lép + 6 takes cho b01/b04 đạt STT."
+  },
+  {
+   "v": "v1.2",
+   "date": "2026-11-28",
+   "dl": "DL-087",
+   "note": "Sửa theo góp ý giọng của Hiệp (DL-087, L-114): khóa 1 ref duy nhất thai-son-v2 hết lạt tông, tăng voice_speed 1.12 cho nhịp gọn hơn (~4.3-4.6 syl/s), chỉnh b01a em ơi... rồi im luôn."
   }
  ],
  "cover": {
@@ -183,7 +193,7 @@
      "lines": [
       {
        "speaker": "hiep",
-       "emotion": "surprised",
+       "emotion": "neutral",
        "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Sếp nhắn đúng hai chữ",
@@ -194,15 +204,15 @@
        ],
        "phrases": [
         {
-         "t": "{nhấn: Sếp} nhắn đúng hai chữ.",
+         "t": "Sếp nhắn đúng {nhấn: hai chữ}",
          "gap": 0.14,
-         "tempo": 1.04,
-         "semi": 0.4,
+         "tempo": 1.0,
+         "semi": 0.0,
          "emph": true,
-         "emph_semi": 0.2
+         "emph_semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b01.wav",
+       "voice_file": "c07v2-b01.wav",
        "takes": 6
       }
      ],
@@ -259,28 +269,22 @@
        "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "“em ơi” rồi im luôn —",
-       "say": "em ơi, rồi im luôn",
+       "say": "em ơi, rồi im luôn.",
        "en": "“hey” then goes silent.",
        "hl": [
         3
        ],
        "phrases": [
         {
-         "t": "em ơi,",
-         "gap": 0.18,
-         "tempo": 0.98,
-         "semi": 0.3
-        },
-        {
-         "t": "rồi {nhấn: im} luôn",
-         "gap": 0.22,
-         "tempo": 0.96,
-         "semi": -0.2,
+         "t": "em ơi, rồi {nhấn: im} luôn.",
+         "gap": 0.2,
+         "tempo": 1.0,
+         "semi": 0.0,
          "emph": true,
-         "emph_semi": -0.3
+         "emph_semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b01a.wav"
+       "voice_file": "c07v2-b01a.wav"
       }
      ],
      "stage": {
@@ -344,7 +348,7 @@
          "emph_semi": -0.4
         }
        ],
-       "voice_file": "c07v1-b01b.wav"
+       "voice_file": "c07v2-b01b.wav"
       }
      ],
      "stage": {
@@ -408,7 +412,7 @@
          "emph_semi": -0.3
         }
        ],
-       "voice_file": "c07v1-b02.wav"
+       "voice_file": "c07v2-b02.wav"
       }
      ],
      "stage": {
@@ -487,7 +491,7 @@
          "emph_semi": -0.4
         }
        ],
-       "voice_file": "c07v1-b02a.wav"
+       "voice_file": "c07v2-b02a.wav"
       }
      ],
      "stage": {
@@ -564,7 +568,7 @@
          "emph_semi": -0.5
         }
        ],
-       "voice_file": "c07v1-b02b.wav"
+       "voice_file": "c07v2-b02b.wav"
       }
      ],
      "stage": {
@@ -628,7 +632,7 @@
          "emph_semi": -0.4
         }
        ],
-       "voice_file": "c07v1-b03.wav"
+       "voice_file": "c07v2-b03.wav"
       }
      ],
      "stage": {
@@ -706,7 +710,7 @@
          "semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b03a.wav"
+       "voice_file": "c07v2-b03a.wav"
       }
      ],
      "stage": {
@@ -783,7 +787,7 @@
          "emph_semi": 0.5
         }
        ],
-       "voice_file": "c07v1-b03b.wav"
+       "voice_file": "c07v2-b03b.wav"
       }
      ],
      "stage": {
@@ -838,7 +842,7 @@
       {
        "speaker": "hiep",
        "emotion": "focused",
-       "voice_ref": "serious",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Nhóm Kushlev năm 2015 đo trên email nè:",
        "say": "Nhóm Cu lép năm hai ngàn mười lăm đo trên i meo nè:",
@@ -857,7 +861,7 @@
          "emph_semi": -0.1
         }
        ],
-       "voice_file": "c07v1-b04.wav",
+       "voice_file": "c07v2-b04.wav",
        "takes": 6
       }
      ],
@@ -911,7 +915,7 @@
       {
        "speaker": "hiep",
        "emotion": "focused",
-       "voice_ref": "serious",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "tuần gom còn 3 lần một ngày, so với thả cửa hơn **15** lần, căng thẳng giảm rõ mức vừa phải.",
        "say": "tuần gom còn ba lần một ngày, so với thả cửa hơn mười lăm lần, căng thẳng giảm rõ mức vừa phải.",
@@ -942,7 +946,7 @@
          "semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b04a.wav"
+       "voice_file": "c07v2-b04a.wav"
       }
      ],
      "stage": {
@@ -995,7 +999,7 @@
       {
        "speaker": "hiep",
        "emotion": "focused",
-       "voice_ref": "serious",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Số email nhận với trả lời vẫn y như **cũ**.",
        "say": "Số i meo nhận với trả lời vẫn y như cũ.",
@@ -1013,7 +1017,7 @@
          "emph_semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b05.wav"
+       "voice_file": "c07v2-b05.wav"
       }
      ],
      "stage": {
@@ -1059,7 +1063,7 @@
       {
        "speaker": "hiep",
        "emotion": "neutral",
-       "voice_ref": "serious",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Nghe vậy tự nhiên **nhẹ** hẳn cái vai — hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
        "say": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
@@ -1089,7 +1093,7 @@
          "semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b05a.wav"
+       "voice_file": "c07v2-b05a.wav"
       }
      ],
      "stage": {
@@ -1142,7 +1146,7 @@
       {
        "speaker": "hiep",
        "emotion": "focused",
-       "voice_ref": "serious",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Từ đó mình đổi luật: báo trước với team “việc gấp thì **gọi** nha”.",
        "say": "Từ đó mình đổi luật, báo trước với tim, việc gấp thì gọi nha.",
@@ -1166,7 +1170,7 @@
          "emph_semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b06.wav"
+       "voice_file": "c07v2-b06.wav"
       }
      ],
      "stage": {
@@ -1219,7 +1223,7 @@
       {
        "speaker": "hiep",
        "emotion": "focused",
-       "voice_ref": "serious",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Còn tin nhắn cứ **gom** đúng 3 khung giờ — 9 giờ sáng, 1 giờ trưa, 4 giờ chiều — mở một lượt rồi xử gọn.",
        "say": "Còn tin nhắn cứ gom đúng ba khung giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều, mở một lượt rồi xử gọn.",
@@ -1250,7 +1254,7 @@
          "semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b06a.wav"
+       "voice_file": "c07v2-b06a.wav"
       }
      ],
      "stage": {
@@ -1296,7 +1300,7 @@
       {
        "speaker": "hiep",
        "emotion": "happy",
-       "voice_ref": "happy",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi **khác**.",
        "say": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
@@ -1320,7 +1324,7 @@
          "emph_semi": -0.3
         }
        ],
-       "voice_file": "c07v1-b07.wav"
+       "voice_file": "c07v2-b07.wav"
       }
      ],
      "stage": {
@@ -1366,7 +1370,7 @@
       {
        "speaker": "hiep",
        "emotion": "happy",
-       "voice_ref": "happy",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Có ai cũng hay **canh** chấm đỏ giống mình hông?",
        "say": "Có ai cũng hay canh chấm đỏ giống mình hông?",
@@ -1385,7 +1389,7 @@
          "emph_semi": 0.4
         }
        ],
-       "voice_file": "c07v1-b07a.wav"
+       "voice_file": "c07v2-b07a.wav"
       }
      ],
      "stage": {
@@ -1431,7 +1435,7 @@
       {
        "speaker": "hiep",
        "emotion": "happy",
-       "voice_ref": "happy",
+       "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Hay bạn nghĩ sao, có cách gì né cảnh đó — comment **kể** mình nghe với nha.",
        "say": "Hay bạn nghĩ sao, có cách gì né cảnh đó, còm men kể mình nghe với nha.",
@@ -1456,7 +1460,7 @@
          "emph_semi": -0.2
         }
        ],
-       "voice_file": "c07v1-b07b.wav"
+       "voice_file": "c07v2-b07b.wav"
       }
      ],
      "stage": {
@@ -1467,5 +1471,6 @@
     }
    ]
   }
- ]
+ ],
+ "voice_speed": 1.12
 }

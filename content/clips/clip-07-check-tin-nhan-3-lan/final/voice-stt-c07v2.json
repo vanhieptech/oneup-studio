@@ -1,0 +1,160 @@
+{
+ "b01": {
+  "line_sim": 0.8,
+  "units": {
+   "b01-0": 0.8
+  },
+  "stt": "Xếp nhắn đúng 2 chữ.",
+  "dur": 1.3
+ },
+ "b01a": {
+  "line_sim": 0.667,
+  "units": {
+   "b01a-0": 0.889
+  },
+  "stt": "Em trở im luôn",
+  "dur": 1.23
+ },
+ "b01b": {
+  "line_sim": 0.875,
+  "units": {
+   "b01b-0": 0.875
+  },
+  "stt": "10 phút mình mở máy coi 5 lần.",
+  "dur": 1.89
+ },
+ "b02": {
+  "line_sim": 0.9,
+  "units": {
+   "b02-0": 0.9
+  },
+  "stt": "Hồng riêng bữa đó đâu?",
+  "dur": 1.31
+ },
+ "b02a": {
+  "line_sim": 1.0,
+  "units": {
+   "b02a-0": 1.0,
+   "b02a-1": 1.0
+  },
+  "stt": "Ngày thường cứ thấy chấm đỏ là tay mình tự chụp máy.",
+  "dur": 2.99
+ },
+ "b02b": {
+  "line_sim": 0.917,
+  "units": {
+   "b02b-0": 0.7,
+   "b02b-1": 1.0,
+   "b02b-2": 0.944
+  },
+  "stt": "Tối về đầu nặng trịt, việc chính còn nguyên, mình lại tự trách sao dễ phần tâm quá.",
+  "dur": 4.69
+ },
+ "b03": {
+  "line_sim": 1.0,
+  "units": {
+   "b03-0": 1.0
+  },
+  "stt": "Tắt chuông cũng thua.",
+  "dur": 1.18
+ },
+ "b03a": {
+  "line_sim": 0.933,
+  "units": {
+   "b03a-0": 1.0,
+   "b03a-1": 0.938
+  },
+  "stt": "Mình vẫn lén bật mạng hình coi, sợ việc gấp người ta kiếm hông ra.",
+  "dur": 3.75
+ },
+ "b03b": {
+  "line_sim": 0.9,
+  "units": {
+   "b03b-0": 1.0,
+   "b03b-1": 0.889
+  },
+  "stt": "Ủa mà cánh liền tay vậy, mình đỡ trễ việc hay chỉ căn đầu thêm?",
+  "dur": 3.71
+ },
+ "b04": {
+  "line_sim": 0.455,
+  "units": {
+   "b04-0": 0.455
+  },
+  "stt": "Nhóm Culep năm 2015 đo trên e -mail nè.",
+  "dur": 2.69
+ },
+ "b04a": {
+  "line_sim": 0.884,
+  "units": {
+   "b04a-0": 1.0,
+   "b04a-1": 0.8,
+   "b04a-2": 0.857
+  },
+  "stt": "Tuần gom còn ba lần một ngày so với thả cửa hơn 15 lần, căng thẳng giảm rõ mất vừa phải.",
+  "dur": 5.49
+ },
+ "b05": {
+  "line_sim": 0.857,
+  "units": {
+   "b05-0": 0.857
+  },
+  "stt": "Số email nhận với trả lời vẫn y như cũ.",
+  "dur": 2.32
+ },
+ "b05a": {
+  "line_sim": 0.92,
+  "units": {
+   "b05a-0": 1.0,
+   "b05a-1": 1.0,
+   "b05a-2": 0.917
+  },
+  "stt": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình không yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căn hà.",
+  "dur": 5.88
+ },
+ "b06": {
+  "line_sim": 0.857,
+  "units": {
+   "b06-0": 1.0,
+   "b06-1": 1.0
+  },
+  "stt": "Từ đó mình đổi luật báo chức với team việc gấp thì gọi nha.",
+  "dur": 3.39
+ },
+ "b06a": {
+  "line_sim": 0.756,
+  "units": {
+   "b06a-0": 1.0,
+   "b06a-1": 0.4,
+   "b06a-2": 0.667
+  },
+  "stt": "Còn tin nhắn cứ gom đúng ba khung giờ, 9h sáng, 1h trưa, 4h chiều. Mở một lượt rồi sử gọn.",
+  "dur": 6.43
+ },
+ "b07": {
+  "line_sim": 1.0,
+  "units": {
+   "b07-0": 1.0,
+   "b07-1": 1.0
+  },
+  "stt": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
+  "dur": 2.68
+ },
+ "b07a": {
+  "line_sim": 0.9,
+  "units": {
+   "b07a-0": 0.9
+  },
+  "stt": "Có ai cũng hay canh chấm đỏ giống mình không?",
+  "dur": 2.31
+ },
+ "b07b": {
+  "line_sim": 0.882,
+  "units": {
+   "b07b-0": 0.9,
+   "b07b-1": 0.714
+  },
+  "stt": "Hay bạn nghĩ sao có cách gì nét cảnh đó? Còn men kể mình nghe với nha!",
+  "dur": 3.94
+ }
+}

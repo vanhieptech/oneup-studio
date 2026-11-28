@@ -15,3 +15,4 @@ Mỗi góp ý một dòng, ghi trước khi sửa (make-video §8). Reviewer §4
 | thời gian | bản (commit) | lời Hiệp nguyên văn | đã xử lý ở |
 |---|---|---|---|
 | 2026-11-27 23:33 | Gate 0 | «1» (chọn Phương án 1: Slot #7 Tuần 2 LIGHT — 3.5 Check tin nhắn theo đợt 3 lần/ngày, Pain-Wave công sở B-msg-02) | Gate 0 + Đấu trường 3 kịch bản (M1, M2, M4) |
+| 2026-11-28 10:36 | v1.1 ceb92f3 | «voise chỗ chỗ em oi hơi nha, tốc độ hơi chậm, có chỗ bị lạt tông,» | DL-087, L-114 · v1.2 (`c07v2`: 1 ref `thai-son-v2`, `voice_speed: 1.12`, sửa `b01`/`b01a`) |

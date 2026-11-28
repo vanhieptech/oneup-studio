@@ -1,21 +1,21 @@
 {
- "total": 74.979,
+ "total": 68.428,
  "parts": [
   {
    "id": "A",
    "engine": "remotion",
    "plan": "content/clips/clip-07-check-tin-nhan-3-lan/final/plan-A.voiced.json",
-   "dur": 74.688,
+   "dur": 68.32,
    "mp4": "video-engine/out/clip-07-final-A.mp4",
    "fx": "fade",
    "scene_starts": [
-    5.362,
-    16.449,
-    27.293,
-    37.593999999999994,
-    48.16199999999999,
-    60.49999999999999,
-    71.68799999999999
+    4.757,
+    15.241,
+    25.382,
+    34.665000000000006,
+    43.973000000000006,
+    54.891000000000005,
+    65.32000000000001
    ],
    "_off": 0.0
   }
@@ -25,25 +25,25 @@
    "beat": "clip-07.b01",
    "scene": "b01",
    "speaker": "hiep",
-   "say": "Sếp nhắn đúng hai chữ.",
+   "say": "Sếp nhắn đúng hai chữ",
    "en": "Boss texts two words",
-   "emotion": "surprised",
-   "key": "c07v1-b01",
+   "emotion": "neutral",
+   "key": "c07v2-b01",
    "local": 0.12,
-   "dur": 1.54,
+   "dur": 1.299,
    "t": 0.12
   },
   {
    "beat": "clip-07.b01",
    "scene": "b01a",
    "speaker": "hiep",
-   "say": "em ơi, rồi im luôn",
+   "say": "em ơi, rồi im luôn.",
    "en": "“hey” then goes silent.",
    "emotion": "confused",
-   "key": "c07v1-b01a",
+   "key": "c07v2-b01a",
    "local": 0.02,
-   "dur": 1.376,
-   "t": 1.74
+   "dur": 1.225,
+   "t": 1.499
   },
   {
    "beat": "clip-07.b01",
@@ -52,10 +52,10 @@
    "say": "mười phút mình mở máy coi năm lần.",
    "en": "Checked five times in ten minutes.",
    "emotion": "sad",
-   "key": "c07v1-b01b",
+   "key": "c07v2-b01b",
    "local": 0.02,
-   "dur": 2.106,
-   "t": 3.196
+   "dur": 1.893,
+   "t": 2.804
   },
   {
    "beat": "clip-07.b02",
@@ -64,10 +64,10 @@
    "say": "Hông riêng bữa đó đâu.",
    "en": "Not just that one day.",
    "emotion": "sad",
-   "key": "c07v1-b02",
+   "key": "c07v2-b02",
    "local": 0.45,
-   "dur": 1.354,
-   "t": 5.812
+   "dur": 1.309,
+   "t": 5.207
   },
   {
    "beat": "clip-07.b02",
@@ -76,10 +76,10 @@
    "say": "Ngày thường cứ thấy chấm đỏ, là tay mình tự chụp máy.",
    "en": "Red dot pops, hand grabs phone.",
    "emotion": "neutral",
-   "key": "c07v1-b02a",
+   "key": "c07v2-b02a",
    "local": 0.15,
-   "dur": 3.313,
-   "t": 7.566
+   "dur": 2.985,
+   "t": 6.916
   },
   {
    "beat": "clip-07.b02",
@@ -88,10 +88,10 @@
    "say": "Tối về đầu nặng trịch, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.",
    "en": "Exhausted at night, blaming my focus.",
    "emotion": "sad",
-   "key": "c07v1-b02b",
+   "key": "c07v2-b02b",
    "local": 0.15,
-   "dur": 4.92,
-   "t": 11.279
+   "dur": 4.69,
+   "t": 10.301
   },
   {
    "beat": "clip-07.b03",
@@ -100,10 +100,10 @@
    "say": "Tắt chuông cũng thua.",
    "en": "Even muting alerts fails.",
    "emotion": "sad",
-   "key": "c07v1-b03",
+   "key": "c07v2-b03",
    "local": 0.45,
-   "dur": 1.253,
-   "t": 16.899
+   "dur": 1.183,
+   "t": 15.691
   },
   {
    "beat": "clip-07.b03",
@@ -112,10 +112,10 @@
    "say": "Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
    "en": "I still peek, fearing missed pings.",
    "emotion": "neutral",
-   "key": "c07v1-b03a",
+   "key": "c07v2-b03a",
    "local": 0.15,
-   "dur": 4.058,
-   "t": 18.552
+   "dur": 3.75,
+   "t": 17.274
   },
   {
    "beat": "clip-07.b03",
@@ -124,10 +124,10 @@
    "say": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căng đầu thêm?",
    "en": "Faster work, or just more stress?",
    "emotion": "confused",
-   "key": "c07v1-b03b",
+   "key": "c07v2-b03b",
    "local": 0.15,
-   "dur": 4.033,
-   "t": 23.01
+   "dur": 3.708,
+   "t": 21.424
   },
   {
    "beat": "clip-07.b04",
@@ -136,10 +136,10 @@
    "say": "Nhóm Cu lép năm hai ngàn mười lăm đo trên i meo nè:",
    "en": "Kushlev 2015 tested this on email:",
    "emotion": "focused",
-   "key": "c07v1-b04",
+   "key": "c07v2-b04",
    "local": 0.45,
-   "dur": 3.017,
-   "t": 27.743
+   "dur": 2.688,
+   "t": 25.832
   },
   {
    "beat": "clip-07.b04",
@@ -148,10 +148,10 @@
    "say": "tuần gom còn ba lần một ngày, so với thả cửa hơn mười lăm lần, căng thẳng giảm rõ mức vừa phải.",
    "en": "3 checks vs over 15: less stress.",
    "emotion": "focused",
-   "key": "c07v1-b04a",
+   "key": "c07v2-b04a",
    "local": 0.15,
-   "dur": 6.184,
-   "t": 31.16
+   "dur": 5.495,
+   "t": 28.92
   },
   {
    "beat": "clip-07.b05",
@@ -160,10 +160,10 @@
    "say": "Số i meo nhận với trả lời vẫn y như cũ.",
    "en": "Emails received and replied stayed identical.",
    "emotion": "focused",
-   "key": "c07v1-b05",
+   "key": "c07v2-b05",
    "local": 0.45,
-   "dur": 2.742,
-   "t": 38.044
+   "dur": 2.325,
+   "t": 35.115
   },
   {
    "beat": "clip-07.b05",
@@ -172,10 +172,10 @@
    "say": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
    "en": "Instant relief. Just constant switching.",
    "emotion": "neutral",
-   "key": "c07v1-b05a",
+   "key": "c07v2-b05a",
    "local": 0.15,
-   "dur": 6.726,
-   "t": 41.186
+   "dur": 5.883,
+   "t": 37.84
   },
   {
    "beat": "clip-07.b06",
@@ -184,10 +184,10 @@
    "say": "Từ đó mình đổi luật, báo trước với tim, việc gấp thì gọi nha.",
    "en": "New rule: tell your team to call.",
    "emotion": "focused",
-   "key": "c07v1-b06",
+   "key": "c07v2-b06",
    "local": 0.45,
-   "dur": 3.955,
-   "t": 48.612
+   "dur": 3.387,
+   "t": 44.423
   },
   {
    "beat": "clip-07.b06",
@@ -196,10 +196,10 @@
    "say": "Còn tin nhắn cứ gom đúng ba khung giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều, mở một lượt rồi xử gọn.",
    "en": "Batch messages at 9, 1, and 4.",
    "emotion": "focused",
-   "key": "c07v1-b06a",
+   "key": "c07v2-b06a",
    "local": 0.15,
-   "dur": 7.283,
-   "t": 52.967
+   "dur": 6.431,
+   "t": 48.21
   },
   {
    "beat": "clip-07.b07",
@@ -208,10 +208,10 @@
    "say": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
    "en": "Just my workaround; every job differs.",
    "emotion": "happy",
-   "key": "c07v1-b07",
+   "key": "c07v2-b07",
    "local": 0.45,
-   "dur": 2.933,
-   "t": 60.95
+   "dur": 2.68,
+   "t": 55.341
   },
   {
    "beat": "clip-07.b07",
@@ -220,10 +220,10 @@
    "say": "Có ai cũng hay canh chấm đỏ giống mình hông?",
    "en": "Anyone else glued to red dots?",
    "emotion": "happy",
-   "key": "c07v1-b07a",
+   "key": "c07v2-b07a",
    "local": 0.15,
-   "dur": 2.456,
-   "t": 64.283
+   "dur": 2.31,
+   "t": 58.421
   },
   {
    "beat": "clip-07.b07",
@@ -232,45 +232,45 @@
    "say": "Hay bạn nghĩ sao, có cách gì né cảnh đó, còm men kể mình nghe với nha.",
    "en": "How do you handle it? Tell me.",
    "emotion": "happy",
-   "key": "c07v1-b07b",
+   "key": "c07v2-b07b",
    "local": 0.15,
-   "dur": 4.299,
-   "t": 67.139
+   "dur": 3.939,
+   "t": 61.131
   }
  ],
  "transitions": [
   {
-   "at": 5.362,
+   "at": 4.757,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 16.449,
+   "at": 15.241,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 27.293,
+   "at": 25.382,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 37.594,
+   "at": 34.665,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 48.162,
+   "at": 43.973,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 60.5,
+   "at": 54.891,
    "kind": "scene",
    "sfx": "swish"
   },
   {
-   "at": 71.688,
+   "at": 65.32,
    "kind": "scene",
    "sfx": "swish"
   }
@@ -282,99 +282,99 @@
   },
   {
    "name": "pop",
-   "at": 1.94
+   "at": 1.699
   },
   {
    "name": "click",
-   "at": 3.546
+   "at": 3.154
   },
   {
    "name": "tick",
-   "at": 5.962
+   "at": 5.357
   },
   {
    "name": "snap",
-   "at": 7.916
+   "at": 7.266
   },
   {
    "name": "click",
-   "at": 11.679
+   "at": 10.701
   },
   {
    "name": "snap",
-   "at": 17.099
+   "at": 15.891
   },
   {
    "name": "tick",
-   "at": 18.802
+   "at": 17.524
   },
   {
    "name": "pop",
-   "at": 23.41
+   "at": 21.824
   },
   {
    "name": "stamp",
-   "at": 27.993
+   "at": 26.082
   },
   {
    "name": "rise",
-   "at": 31.51
+   "at": 29.27
   },
   {
    "name": "ding",
-   "at": 38.394
+   "at": 35.465
   },
   {
    "name": "whoosh",
-   "at": 41.386
+   "at": 38.04
   },
   {
    "name": "pop",
-   "at": 49.012
+   "at": 44.823
   },
   {
    "name": "ding",
-   "at": 53.267
+   "at": 48.51
   },
   {
    "name": "pop",
-   "at": 61.2
+   "at": 55.591
   },
   {
    "name": "tick",
-   "at": 64.533
+   "at": 58.671
   },
   {
    "name": "ding",
-   "at": 67.439
+   "at": 61.431
   },
   {
    "name": "swish",
-   "at": 5.242
+   "at": 4.637
   },
   {
    "name": "swish",
-   "at": 16.329
+   "at": 15.121
   },
   {
    "name": "swish",
-   "at": 27.173
+   "at": 25.262
   },
   {
    "name": "swish",
-   "at": 37.474
+   "at": 34.545
   },
   {
    "name": "swish",
-   "at": 48.042
+   "at": 43.853
   },
   {
    "name": "swish",
-   "at": 60.38
+   "at": 54.771
   },
   {
    "name": "swish",
-   "at": 71.568
+   "at": 65.2
   },
   {
    "name": "ambience",

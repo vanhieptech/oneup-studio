@@ -1,5 +1,5 @@
 {
- "voice_prefix": "c07v1",
+ "voice_prefix": "c07v2",
  "targets": {
   ",": [
    0.15,
@@ -37,11 +37,11 @@
  },
  "lines": [
   {
-   "key": "c07v1-b01",
+   "key": "c07v2-b01",
    "scene": "b01",
-   "say": "Sếp nhắn đúng hai chữ.",
+   "say": "Sếp nhắn đúng hai chữ",
    "t": 0.12,
-   "dur": 1.54,
+   "dur": 1.299,
    "stt": "Xếp nhắn đúng 2 chữ.",
    "boundaries": [
     {
@@ -52,7 +52,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.34,
+   "gap_after": 0.27,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -63,35 +63,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 4.67,
+   "syll_per_s": 5.21,
    "stt_sim": 0.6
   },
   {
-   "key": "c07v1-b01a",
+   "key": "c07v2-b01a",
    "scene": "b01a",
-   "say": "em ơi, rồi im luôn",
-   "t": 1.74,
-   "dur": 1.376,
-   "stt": "Em ơi! Rồi im luôn!",
+   "say": "em ơi, rồi im luôn.",
+   "t": 1.5,
+   "dur": 1.225,
+   "stt": "Em rồi im luôn",
    "boundaries": [
-    {
-     "after": "em",
-     "punct": "",
-     "pause": 0.0,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "ơi",
-     "punct": ",",
-     "pause": 0.18,
-     "target": "0.15-0.25",
-     "status": "ok"
-    },
     {
      "after": "rồi",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
@@ -103,26 +89,26 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.36,
+   "gap_after": 0.33,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
     0.8
    ],
    "plan_mark": null,
-   "gap_status": "ok",
+   "gap_status": "⚠ lệch mục tiêu",
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 6.76,
-   "stt_sim": 1.0
+   "syll_per_s": 7.69,
+   "stt_sim": 0.89
   },
   {
-   "key": "c07v1-b01b",
+   "key": "c07v2-b01b",
    "scene": "b01b",
    "say": "mười phút mình mở máy coi năm lần.",
-   "t": 3.2,
-   "dur": 2.106,
+   "t": 2.8,
+   "dur": 1.893,
    "stt": "10 phút mình mở máy coi 5 lần.",
    "boundaries": [
     {
@@ -149,7 +135,7 @@
     {
      "after": "máy",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     }
@@ -165,15 +151,15 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.23,
+   "syll_per_s": 5.88,
    "stt_sim": 0.75
   },
   {
-   "key": "c07v1-b02",
+   "key": "c07v2-b02",
    "scene": "b02",
    "say": "Hông riêng bữa đó đâu.",
-   "t": 5.81,
-   "dur": 1.354,
+   "t": 5.21,
+   "dur": 1.309,
    "stt": "Hồng riêng bữa đó đâu?",
    "boundaries": [
     {
@@ -205,7 +191,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.6,
+   "gap_after": 0.63,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -216,21 +202,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.15,
+   "syll_per_s": 5.49,
    "stt_sim": 1.0
   },
   {
-   "key": "c07v1-b02a",
+   "key": "c07v2-b02a",
    "scene": "b02a",
    "say": "Ngày thường cứ thấy chấm đỏ, là tay mình tự chụp máy.",
-   "t": 7.57,
-   "dur": 3.313,
+   "t": 6.92,
+   "dur": 2.985,
    "stt": "Ngày thường cứ thấy chấm đỏ là tay mình tự chụp máy.",
    "boundaries": [
     {
      "after": "Ngày",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -244,14 +230,14 @@
     {
      "after": "cứ",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thấy",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -265,47 +251,47 @@
     {
      "after": "đỏ",
      "punct": ",",
-     "pause": 0.15,
+     "pause": 0.14,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "là",
      "punct": "",
-     "pause": 0.12,
+     "pause": 0.13,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "tay",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "mình",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "tự",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "chụp",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.66,
+   "gap_after": 0.59,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -316,16 +302,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.06,
+   "syll_per_s": 5.36,
    "stt_sim": 1.0
   },
   {
-   "key": "c07v1-b02b",
+   "key": "c07v2-b02b",
    "scene": "b02b",
    "say": "Tối về đầu nặng trịch, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.",
-   "t": 11.28,
-   "dur": 4.92,
-   "stt": "Tối về đầu nặng trịt, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.",
+   "t": 10.3,
+   "dur": 4.69,
+   "stt": "Tối về đầu nặng trịt, việc chính còn nguyên, mình lại tự trách sao dễ phần tâm quá.\"",
    "boundaries": [
     {
      "after": "Tối",
@@ -358,7 +344,7 @@
     {
      "after": "chính",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -372,9 +358,9 @@
     {
      "after": "nguyên",
      "punct": ",",
-     "pause": 0.26,
+     "pause": 0.32,
      "target": "0.15-0.25",
-     "status": "ok"
+     "status": "✖ phẩy dài hơn chấm (>0.27s)"
     },
     {
      "after": "mình",
@@ -400,7 +386,7 @@
     {
      "after": "trách",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.08,
      "target": "<0.25",
      "status": "ok"
     },
@@ -421,44 +407,44 @@
     {
      "after": "phân",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "tâm",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.9,
+   "gap_after": 0.98,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
     0.8
    ],
    "plan_mark": null,
-   "gap_status": "ok",
+   "gap_status": "⚠ lệch mục tiêu",
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.03,
+   "syll_per_s": 5.41,
    "stt_sim": 0.94
   },
   {
-   "key": "c07v1-b03",
+   "key": "c07v2-b03",
    "scene": "b03",
    "say": "Tắt chuông cũng thua.",
-   "t": 16.9,
-   "dur": 1.253,
+   "t": 15.69,
+   "dur": 1.183,
    "stt": "Tắt chuông cũng thua.",
    "boundaries": [
     {
      "after": "Tắt",
      "punct": "",
-     "pause": 0.16,
+     "pause": 0.14,
      "target": "<0.25",
      "status": "ok"
     },
@@ -472,12 +458,12 @@
     {
      "after": "cũng",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.6,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -488,16 +474,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.8,
+   "syll_per_s": 5.88,
    "stt_sim": 1.0
   },
   {
-   "key": "c07v1-b03a",
+   "key": "c07v2-b03a",
    "scene": "b03a",
    "say": "Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
-   "t": 18.55,
-   "dur": 4.058,
-   "stt": "Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
+   "t": 17.27,
+   "dur": 3.75,
+   "stt": "Mình vẫn lén bật mạng hình coi, sợ việc gấp người ta kiếm hông ra.",
    "boundaries": [
     {
      "after": "Mình",
@@ -521,23 +507,9 @@
      "status": "ok"
     },
     {
-     "after": "bật",
-     "punct": "",
-     "pause": 0.09,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "màn",
-     "punct": "",
-     "pause": 0.0,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
      "after": "hình",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -551,35 +523,35 @@
     {
      "after": "sợ",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "việc",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "gấp",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "người",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "ta",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     },
@@ -609,16 +581,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 4.93,
-   "stt_sim": 1.0
+   "syll_per_s": 5.68,
+   "stt_sim": 0.93
   },
   {
-   "key": "c07v1-b03b",
+   "key": "c07v2-b03b",
    "scene": "b03b",
    "say": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căng đầu thêm?",
-   "t": 23.01,
-   "dur": 4.033,
-   "stt": "Ủa mà canh liền tay vậy, mình đỡ trái việc hay chỉ căn đầu thêm?",
+   "t": 21.42,
+   "dur": 3.708,
+   "stt": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căn đầu thêm?",
    "boundaries": [
     {
      "after": "Ủa",
@@ -630,7 +602,7 @@
     {
      "after": "mà",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -658,9 +630,9 @@
     {
      "after": "vậy",
      "punct": ",",
-     "pause": 0.22,
+     "pause": 0.29,
      "target": "0.15-0.25",
-     "status": "ok"
+     "status": "✖ phẩy dài hơn chấm (>0.27s)"
     },
     {
      "after": "mình",
@@ -670,16 +642,30 @@
      "status": "ok"
     },
     {
+     "after": "đỡ",
+     "punct": "",
+     "pause": 0.04,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
+     "after": "trễ",
+     "punct": "",
+     "pause": 0.01,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
      "after": "việc",
      "punct": "",
-     "pause": 0.21,
+     "pause": 0.14,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "hay",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
@@ -691,37 +677,37 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.95,
+   "gap_after": 0.9,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
     0.8
    ],
    "plan_mark": null,
-   "gap_status": "⚠ lệch mục tiêu",
-   "question_rise_st": 3.6,
+   "gap_status": "ok",
+   "question_rise_st": 4.26,
    "rise_status": "ok",
    "emphasis": [],
-   "syll_per_s": 5.21,
-   "stt_sim": 0.87
+   "syll_per_s": 5.7,
+   "stt_sim": 0.93
   },
   {
-   "key": "c07v1-b04",
+   "key": "c07v2-b04",
    "scene": "b04",
    "say": "Nhóm Cu lép năm hai ngàn mười lăm đo trên i meo nè:",
-   "t": 27.74,
-   "dur": 3.017,
-   "stt": "nhóm Culep năm 2015 đo trên e -mail nè.",
+   "t": 25.83,
+   "dur": 2.688,
+   "stt": "Nhóm Culep năm 2015 đo trên e -mail nè.",
    "boundaries": [
     {
      "after": "đo",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.64,
+   "gap_after": 0.61,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -732,16 +718,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.08,
+   "syll_per_s": 5.91,
    "stt_sim": 0.45
   },
   {
-   "key": "c07v1-b04a",
+   "key": "c07v2-b04a",
    "scene": "b04a",
    "say": "tuần gom còn ba lần một ngày, so với thả cửa hơn mười lăm lần, căng thẳng giảm rõ mức vừa phải.",
-   "t": 31.16,
-   "dur": 6.184,
-   "stt": "Tuần góm còn ba lần một ngày so với thả cửa hơn 15 lần, căng thẳng giảm rõ mức vừa phải.",
+   "t": 28.92,
+   "dur": 5.495,
+   "stt": "Tuần gom còn ba lần một ngày so với thả cửa hơn 15 lần, căng thẳng giảm rõ mức vừa phải.",
    "boundaries": [
     {
      "after": "tuần",
@@ -753,7 +739,7 @@
     {
      "after": "gom",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -788,7 +774,7 @@
     {
      "after": "ngày",
      "punct": ",",
-     "pause": 0.15,
+     "pause": 0.12,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -802,14 +788,14 @@
     {
      "after": "với",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "thả",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
@@ -823,7 +809,7 @@
     {
      "after": "lần",
      "punct": ",",
-     "pause": 0.26,
+     "pause": 0.27,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -858,19 +844,19 @@
     {
      "after": "mức",
      "punct": "",
-     "pause": 0.1,
+     "pause": 0.12,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "vừa",
      "punct": "",
-     "pause": 0.06,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.98,
+   "gap_after": 0.94,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -881,16 +867,16 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 4.55,
+   "syll_per_s": 5.24,
    "stt_sim": 0.93
   },
   {
-   "key": "c07v1-b05",
+   "key": "c07v2-b05",
    "scene": "b05",
    "say": "Số i meo nhận với trả lời vẫn y như cũ.",
-   "t": 38.04,
-   "dur": 2.742,
-   "stt": "số e -mail nhận với trả lời vẫn y như cũ.",
+   "t": 35.12,
+   "dur": 2.325,
+   "stt": "số email nhận với trả lời vẫn y như củ.",
    "boundaries": [
     {
      "after": "nhận",
@@ -902,7 +888,7 @@
     {
      "after": "với",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -916,33 +902,33 @@
     {
      "after": "lời",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "vẫn",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "y",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "như",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.65,
+   "gap_after": 0.63,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -953,15 +939,15 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.0,
-   "stt_sim": 0.82
+   "syll_per_s": 6.04,
+   "stt_sim": 0.86
   },
   {
-   "key": "c07v1-b05a",
+   "key": "c07v2-b05a",
    "scene": "b05a",
    "say": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
-   "t": 41.19,
-   "dur": 6.726,
+   "t": 37.84,
+   "dur": 5.883,
    "stt": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình không yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căn hà.",
    "boundaries": [
     {
@@ -981,7 +967,7 @@
     {
      "after": "tự",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1002,23 +988,23 @@
     {
      "after": "hẳn",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "cái",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "vai",
      "punct": ",",
-     "pause": 0.28,
+     "pause": 0.22,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "ok"
     },
     {
      "after": "hóa",
@@ -1037,7 +1023,7 @@
     {
      "after": "yếu",
      "punct": ",",
-     "pause": 0.22,
+     "pause": 0.24,
      "target": "0.15-0.25",
      "status": "ok"
     },
@@ -1105,27 +1091,27 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.93,
+   "gap_after": 0.89,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
     0.8
    ],
    "plan_mark": null,
-   "gap_status": "⚠ lệch mục tiêu",
+   "gap_status": "ok",
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 4.38,
+   "syll_per_s": 5.02,
    "stt_sim": 0.92
   },
   {
-   "key": "c07v1-b06",
+   "key": "c07v2-b06",
    "scene": "b06",
    "say": "Từ đó mình đổi luật, báo trước với tim, việc gấp thì gọi nha.",
-   "t": 48.61,
-   "dur": 3.955,
-   "stt": "Từ đó mình đổi luật báo trước với tim việc gấp thì gọi nha.",
+   "t": 44.42,
+   "dur": 3.387,
+   "stt": "Từ đó mình đổi luật báo trước với team việc gấp thì gọi nha.",
    "boundaries": [
     {
      "after": "Từ",
@@ -1165,7 +1151,7 @@
     {
      "after": "báo",
      "punct": "",
-     "pause": 0.07,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1177,30 +1163,16 @@
      "status": "ok"
     },
     {
-     "after": "với",
-     "punct": "",
-     "pause": 0.07,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "tim",
-     "punct": ",",
-     "pause": 0.05,
-     "target": "0.15-0.25",
-     "status": "✖ phẩy dính (<0.12s)"
-    },
-    {
      "after": "việc",
      "punct": "",
-     "pause": 0.09,
+     "pause": 0.1,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "gấp",
      "punct": "",
-     "pause": 0.12,
+     "pause": 0.11,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1219,7 +1191,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.6,
+   "gap_after": 0.65,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1230,21 +1202,21 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.13,
-   "stt_sim": 1.0
+   "syll_per_s": 6.19,
+   "stt_sim": 0.93
   },
   {
-   "key": "c07v1-b06a",
+   "key": "c07v2-b06a",
    "scene": "b06a",
    "say": "Còn tin nhắn cứ gom đúng ba khung giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều, mở một lượt rồi xử gọn.",
-   "t": 52.97,
-   "dur": 7.283,
-   "stt": "Còn tin nhắn cứ gồm đúng 30 giờ, 9 giờ sáng, 1 giờ trưa, 4 giờ chiều, mở một lượt rồi xử gọn.",
+   "t": 48.21,
+   "dur": 6.431,
+   "stt": "Còn tin nhắn cứ gom đúng ba khung giờ, 9h sáng, 1h trưa, 4h chiều. Mở một lượt rồi sử gọn.",
    "boundaries": [
     {
      "after": "Còn",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1258,7 +1230,7 @@
     {
      "after": "nhắn",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1277,23 +1249,23 @@
      "status": "ok"
     },
     {
-     "after": "giờ",
+     "after": "đúng",
      "punct": "",
      "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
     {
-     "after": "giờ",
+     "after": "ba",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.05,
      "target": "<0.25",
      "status": "ok"
     },
     {
-     "after": "giờ",
+     "after": "khung",
      "punct": "",
-     "pause": 0.08,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1321,46 +1293,32 @@
     {
      "after": "lượt",
      "punct": "",
-     "pause": 0.1,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "rồi",
-     "punct": "",
-     "pause": 0.0,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "xử",
-     "punct": "",
-     "pause": 0.0,
+     "pause": 0.09,
      "target": "<0.25",
      "status": "ok"
     }
    ],
-   "gap_after": 0.95,
+   "gap_after": 0.9,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
     0.8
    ],
    "plan_mark": null,
-   "gap_status": "⚠ lệch mục tiêu",
+   "gap_status": "ok",
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 4.48,
-   "stt_sim": 0.81
+   "syll_per_s": 5.15,
+   "stt_sim": 0.76
   },
   {
-   "key": "c07v1-b07",
+   "key": "c07v2-b07",
    "scene": "b07",
    "say": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
-   "t": 60.95,
-   "dur": 2.933,
-   "stt": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ là mỗi khác.",
+   "t": 55.34,
+   "dur": 2.68,
+   "stt": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
    "boundaries": [
     {
      "after": "Mình",
@@ -1393,14 +1351,14 @@
     {
      "after": "thôi",
      "punct": ",",
-     "pause": 0.24,
+     "pause": 0.22,
      "target": "0.15-0.25",
      "status": "ok"
     },
     {
      "after": "chứ",
      "punct": "",
-     "pause": 0.02,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1412,9 +1370,23 @@
      "status": "ok"
     },
     {
+     "after": "chỗ",
+     "punct": "",
+     "pause": 0.0,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
+     "after": "làm",
+     "punct": "",
+     "pause": 0.0,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
      "after": "mỗi",
      "punct": "",
-     "pause": 0.03,
+     "pause": 0.04,
      "target": "<0.25",
      "status": "ok"
     }
@@ -1430,35 +1402,49 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 4.98,
-   "stt_sim": 0.91
+   "syll_per_s": 5.53,
+   "stt_sim": 1.0
   },
   {
-   "key": "c07v1-b07a",
+   "key": "c07v2-b07a",
    "scene": "b07a",
    "say": "Có ai cũng hay canh chấm đỏ giống mình hông?",
-   "t": 64.28,
-   "dur": 2.456,
-   "stt": "Có ai cũng hay kênh chấm đỏ giống mình không?",
+   "t": 58.42,
+   "dur": 2.31,
+   "stt": "Có ai cũng hay canh chấm đỏ giống mình không?",
    "boundaries": [
     {
      "after": "Có",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "ai",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.03,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "cũng",
      "punct": "",
-     "pause": 0.0,
+     "pause": 0.01,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
+     "after": "hay",
+     "punct": "",
+     "pause": 0.03,
+     "target": "<0.25",
+     "status": "ok"
+    },
+    {
+     "after": "canh",
+     "punct": "",
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1484,7 +1470,7 @@
      "status": "ok"
     }
    ],
-   "gap_after": 0.67,
+   "gap_after": 0.62,
    "gap_kind": "beat",
    "gap_target": [
     0.4,
@@ -1492,24 +1478,24 @@
    ],
    "plan_mark": null,
    "gap_status": "ok",
-   "question_rise_st": 0.67,
-   "rise_status": "ok",
+   "question_rise_st": 0.38,
+   "rise_status": "✖ không lên giọng",
    "emphasis": [],
-   "syll_per_s": 5.15,
-   "stt_sim": 0.8
+   "syll_per_s": 5.43,
+   "stt_sim": 0.9
   },
   {
-   "key": "c07v1-b07b",
+   "key": "c07v2-b07b",
    "scene": "b07b",
    "say": "Hay bạn nghĩ sao, có cách gì né cảnh đó, còm men kể mình nghe với nha.",
-   "t": 67.14,
-   "dur": 4.299,
-   "stt": "Hay bạn nghĩ sao? Có cách gì nế cảnh đó? Còn men kể mình nghe với nha!",
+   "t": 61.13,
+   "dur": 3.939,
+   "stt": "Hay bạn nghĩ sao có cách gì nét cảnh đó? Còn men kể mình nghe với nha!",
    "boundaries": [
     {
      "after": "Hay",
      "punct": "",
-     "pause": 0.01,
+     "pause": 0.0,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1530,35 +1516,21 @@
     {
      "after": "sao",
      "punct": ",",
-     "pause": 0.28,
+     "pause": 0.1,
      "target": "0.15-0.25",
-     "status": "✖ phẩy dài hơn chấm (>0.27s)"
+     "status": "✖ phẩy dính (<0.12s)"
     },
     {
      "after": "có",
      "punct": "",
-     "pause": 0.05,
+     "pause": 0.07,
      "target": "<0.25",
      "status": "ok"
     },
     {
      "after": "cách",
      "punct": "",
-     "pause": 0.11,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "gì",
-     "punct": "",
-     "pause": 0.0,
-     "target": "<0.25",
-     "status": "ok"
-    },
-    {
-     "after": "né",
-     "punct": "",
-     "pause": 0.05,
+     "pause": 0.06,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1572,7 +1544,7 @@
     {
      "after": "men",
      "punct": "",
-     "pause": 0.04,
+     "pause": 0.02,
      "target": "<0.25",
      "status": "ok"
     },
@@ -1616,13 +1588,14 @@
    "question_rise_st": null,
    "rise_status": null,
    "emphasis": [],
-   "syll_per_s": 5.57,
-   "stt_sim": 0.94
+   "syll_per_s": 5.76,
+   "stt_sim": 0.88
   }
  ],
  "flags": [
-  "c07v1-b05a: sau «vai,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))",
-  "c07v1-b06: sau «tim,» nghỉ 0.05s (✖ phẩy dính (<0.12s))",
-  "c07v1-b07b: sau «sao,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))"
+  "c07v2-b02b: sau «nguyên,» nghỉ 0.32s (✖ phẩy dài hơn chấm (>0.27s))",
+  "c07v2-b03b: sau «vậy,» nghỉ 0.29s (✖ phẩy dài hơn chấm (>0.27s))",
+  "c07v2-b07a: câu hỏi cuối 0.38 st (✖ không lên giọng)",
+  "c07v2-b07b: sau «sao,» nghỉ 0.1s (✖ phẩy dính (<0.12s))"
  ]
 }

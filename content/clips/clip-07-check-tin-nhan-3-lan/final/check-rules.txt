@@ -1,5 +1,5 @@
-✔ review   content/clips/clip-07-check-tin-nhan-3-lan/final/review.md: ĐẠT (PAIRWISE WIN vs a-c04, 0 hard fails), script_hash matches
-✔ rule-4   cached timeline plan: ƯỚC/estimate 74.979s total INCLUDING end card, pauses and transitions; target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up
+✖ review   content/clips/clip-07-check-tin-nhan-3-lan/final/review.md: feedback_seen 1 < 2 notes in content/clips/clip-07-check-tin-nhan-3-lan/final/feedback.md → review must answer every Hiệp note
+✔ rule-4   cached timeline plan: ƯỚC/estimate 68.428s total INCLUDING end card, pauses and transitions; target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up
 ℹ rule-4   legacy per-spec length/word targets or exceptions do not override L-099
 ℹ rule-7   234 VI words (descriptive only; L-099 has no word budget)
 ✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
@@ -22,30 +22,30 @@
 ✔ rule-46  post.md: AI-voice disclosure line in caption
 ✔ rule-46  post.md: disclosure names the engine (F5-TTS, DL-035)
 ✔ rule-32  post.md hashtags
-✔ rule-45  video-engine validate: ✔ /Users/macbook/work/oneup-studio/content/clips/clip-07-check-tin-nhan-3-lan/final/plan-A.voiced.json: 19 scenes, 74.69s
+✔ rule-45  video-engine validate: ✔ /Users/macbook/work/oneup-studio/content/clips/clip-07-check-tin-nhan-3-lan/final/plan-A.voiced.json: 19 scenes, 68.32s
 ✔ L-033    layout collisions: none
-✔ rule-4   MP4: measured after Chốt 74.967s total INCLUDING end card, pauses and transitions; target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up
+✔ rule-4   MP4: measured after Chốt 68.400s total INCLUDING end card, pauses and transitions; target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up
 ✔ rule-4   video 1080×1920 30/1 h264 High yuv420p bt709
-✔ rule-4   audio aac 48000 Hz, -14.2 LUFS, peak -2.0 dBFS (target −14 ±1, peak ≤ −0.5)
+✔ rule-4   audio aac 48000 Hz, -14.2 LUFS, peak -1.8 dBFS (target −14 ±1, peak ≤ −0.5)
 ✔ rule-34  contact-sheet.png for frame review
 ⚠ rule-46  STT b01 0.60: “Xếp nhắn đúng 2 chữ.”
-✔ rule-46  STT b01a 1.00: “Em ơi! Rồi im luôn!”
+✔ rule-46  STT b01a 0.89: “Em rồi im luôn”
 ✔ rule-46  STT b01b 0.75: “10 phút mình mở máy coi 5 lần.”
 ✔ rule-46  STT b02 1.00: “Hồng riêng bữa đó đâu?”
 ✔ rule-46  STT b02a 1.00: “Ngày thường cứ thấy chấm đỏ là tay mình tự chụp máy.”
-✔ rule-46  STT b02b 0.94: “Tối về đầu nặng trịt, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.”
+✔ rule-46  STT b02b 0.94: “Tối về đầu nặng trịt, việc chính còn nguyên, mình lại tự trách sao dễ phần tâm quá."”
 ✔ rule-46  STT b03 1.00: “Tắt chuông cũng thua.”
-✔ rule-46  STT b03a 1.00: “Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.”
-✔ rule-46  STT b03b 0.87: “Ủa mà canh liền tay vậy, mình đỡ trái việc hay chỉ căn đầu thêm?”
-✖ rule-46  STT b04 0.45: “nhóm Culep năm 2015 đo trên e-mail nè.”
-✔ rule-46  STT b04a 0.93: “Tuần góm còn ba lần một ngày so với thả cửa hơn 15 lần, căng thẳng giảm rõ mức vừa phải.”
-✔ rule-46  STT b05 0.82: “số e-mail nhận với trả lời vẫn y như cũ.”
+✔ rule-46  STT b03a 0.93: “Mình vẫn lén bật mạng hình coi, sợ việc gấp người ta kiếm hông ra.”
+✔ rule-46  STT b03b 0.93: “Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căn đầu thêm?”
+✖ rule-46  STT b04 0.45: “Nhóm Culep năm 2015 đo trên e-mail nè.”
+✔ rule-46  STT b04a 0.93: “Tuần gom còn ba lần một ngày so với thả cửa hơn 15 lần, căng thẳng giảm rõ mức vừa phải.”
+✔ rule-46  STT b05 0.86: “số email nhận với trả lời vẫn y như củ.”
 ✔ rule-46  STT b05a 0.92: “Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình không yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căn hà.”
-✔ rule-46  STT b06 1.00: “Từ đó mình đổi luật báo trước với tim việc gấp thì gọi nha.”
-✔ rule-46  STT b06a 0.81: “Còn tin nhắn cứ gồm đúng 30 giờ, 9 giờ sáng, 1 giờ trưa, 4 giờ chiều, mở một lượt rồi xử gọn.”
-✔ rule-46  STT b07 0.91: “Mình gỡ kiểu đó thôi, chứ mỗi chỗ là mỗi khác.”
-✔ rule-46  STT b07a 0.80: “Có ai cũng hay kênh chấm đỏ giống mình không?”
-✔ rule-46  STT b07b 0.94: “Hay bạn nghĩ sao? Có cách gì nế cảnh đó? Còn men kể mình nghe với nha!”
+✔ rule-46  STT b06 0.93: “Từ đó mình đổi luật báo trước với team việc gấp thì gọi nha.”
+✔ rule-46  STT b06a 0.76: “Còn tin nhắn cứ gom đúng ba khung giờ, 9h sáng, 1h trưa, 4h chiều. Mở một lượt rồi sử gọn.”
+✔ rule-46  STT b07 1.00: “Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.”
+✔ rule-46  STT b07a 0.90: “Có ai cũng hay canh chấm đỏ giống mình không?”
+✔ rule-46  STT b07b 0.88: “Hay bạn nghĩ sao có cách gì nét cảnh đó? Còn men kể mình nghe với nha!”
 ✔ rule-50  7 transitions, 7 with SFX
 ✔ rule-50  ambience bed under whole clip
 ✔ rule-53  post.md has all 12 fields with code blocks
@@ -62,7 +62,7 @@
 ✔ L-020    cover.png rendered from Cover template (props json present)
 ✔ L-067    on-screen Vietnamese text keeps diacritics vs locked script
 ✔ L-070    delivery/prosody plan present (prosody-plan.md)
-✖ L-070    prosody: 18 sentences measured (voice c07v1, plan), 3 blocking pause/phrasing flags: c07v1-b05a: sau «vai,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s)); c07v1-b06: sau «tim,» nghỉ 0.05s (✖ phẩy dính (<0.12s)); c07v1-b07b: sau «sao,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s))
+✖ L-070    prosody: 18 sentences measured (voice c07v2, plan), 4 blocking pause/phrasing flags: c07v2-b02b: sau «nguyên,» nghỉ 0.32s (✖ phẩy dài hơn chấm (>0.27s)); c07v2-b03b: sau «vậy,» nghỉ 0.29s (✖ phẩy dài hơn chấm (>0.27s)); c07v2-b07a: câu hỏi cuối 0.38 st (✖ không lên giọng); c07v2-b07b: sau «sao,» nghỉ 0.1s (✖ phẩy dính (<0.12s))
 ℹ E1       no final/prosody-measure-*.json → E1 mid-phrase-pause skipped
 ℹ L-027    no prosody-measure json → voice-only hook gaps skipped
 ✔ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
@@ -70,7 +70,7 @@
 ✔ rule-55  first spoken word at 0.12s (≤ 0.3)
 ✔ rule-55  first visual change/hit at 0.12s (≤ 1.0)
 ✔ rule-55  0–3s: 1 cut(s) + 2 hit(s) (need ≥ 2 total, ≥ 1 cut)
-✔ rule-55  hook voice emotions ['surprised', 'confused', 'sad'] (dramatic)
+✔ rule-55  hook voice emotions ['neutral', 'confused', 'sad'] (dramatic)
 ✔ rule-56  engagement devices ['comment-challenge', 'loop', 'relatable-question'] (≥3 incl. comment-challenge + loop)
 ✔ rule-56  no begging for likes/follows
 ✔ L-084    trend shown at b01: Sếp nhắn đúng hai chữ "em ơi" rồi im luôn — áp lực canh chấm đỏ tin nhắn cả ngày
@@ -145,7 +145,7 @@
 ✔ L-088    file trend (Social Research) có link nguồn: content/clips/clip-07-check-tin-nhan-3-lan/final/trend-signals.md
 ✔ L-088    ràng buộc/kiểm fact Deep Research: content/clips/clip-07-check-tin-nhan-3-lan/final/fact-lock.md
 ℹ L-088    manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1
-✔ rule-49  lessons.md: 112 lessons loaded
+✔ rule-49  lessons.md: 113 lessons loaded
 ✔ L-051    EN caption chunks ≤8 từ
 ✔ L-053    không có cụm chê năng lực người học
 ✔ L-001    contact-sheet.png present for self-review
@@ -154,7 +154,7 @@
 ✔ L-006    phrase tempos within 0.85–1.15
 ✔ L-010    key terms use phonetic spelling
 ✔ L-025    spoken text respelled
-✖ L-025    line STT < 0.8: ['b04:c07v1-b04 0.455']
+✖ L-025    line STT < 0.8: ['b01a:c07v2-b01a 0.667', 'b04:c07v2-b04 0.455', 'b06a:c07v2-b06a 0.756']
 ✔ L-027    hook voice gaps ≤ 0.1s
 ✔ L-028    self-blame lines punchy + emphasized
 ✔ L-036    meme-stem lines split + payload emphasized
@@ -167,46 +167,46 @@
 ✔ L-017    no markup in on-screen text
 ✔ L-011    Omi/week consistent
 ✔ L-003    caption segments never overlap
-✔ L-016    b01/c07v1-b01: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b01/c07v1-b01: F5 per-phrase generation
-✔ L-016    b01a/c07v1-b01a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b01a/c07v1-b01a: F5 per-phrase generation
-✔ L-016    b01b/c07v1-b01b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b01b/c07v1-b01b: F5 per-phrase generation
-✔ L-016    b02/c07v1-b02: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b02/c07v1-b02: F5 per-phrase generation
-✔ L-016    b02a/c07v1-b02a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b02a/c07v1-b02a: F5 per-phrase generation
-✔ L-016    b02b/c07v1-b02b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b02b/c07v1-b02b: F5 per-phrase generation
-✔ L-016    b03/c07v1-b03: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b03/c07v1-b03: F5 per-phrase generation
-✔ L-016    b03a/c07v1-b03a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b03a/c07v1-b03a: F5 per-phrase generation
-✔ L-016    b03b/c07v1-b03b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b03b/c07v1-b03b: F5 per-phrase generation
-✔ L-016    b04/c07v1-b04: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b04/c07v1-b04: F5 per-phrase generation
-✔ L-016    b04a/c07v1-b04a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b04a/c07v1-b04a: F5 per-phrase generation
-✔ L-016    b05/c07v1-b05: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b05/c07v1-b05: F5 per-phrase generation
-✔ L-016    b05a/c07v1-b05a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b05a/c07v1-b05a: F5 per-phrase generation
-✔ L-016    b06/c07v1-b06: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b06/c07v1-b06: F5 per-phrase generation
-✔ L-016    b06a/c07v1-b06a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b06a/c07v1-b06a: F5 per-phrase generation
-✔ L-016    b07/c07v1-b07: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b07/c07v1-b07: F5 per-phrase generation
-✔ L-016    b07a/c07v1-b07a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b07a/c07v1-b07a: F5 per-phrase generation
-✔ L-016    b07b/c07v1-b07b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
-✔ L-007    b07b/c07v1-b07b: F5 per-phrase generation
+✔ L-016    b01/c07v2-b01: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b01/c07v2-b01: F5 per-phrase generation
+✔ L-016    b01a/c07v2-b01a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b01a/c07v2-b01a: F5 per-phrase generation
+✔ L-016    b01b/c07v2-b01b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b01b/c07v2-b01b: F5 per-phrase generation
+✔ L-016    b02/c07v2-b02: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b02/c07v2-b02: F5 per-phrase generation
+✔ L-016    b02a/c07v2-b02a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b02a/c07v2-b02a: F5 per-phrase generation
+✔ L-016    b02b/c07v2-b02b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b02b/c07v2-b02b: F5 per-phrase generation
+✔ L-016    b03/c07v2-b03: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b03/c07v2-b03: F5 per-phrase generation
+✔ L-016    b03a/c07v2-b03a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b03a/c07v2-b03a: F5 per-phrase generation
+✔ L-016    b03b/c07v2-b03b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b03b/c07v2-b03b: F5 per-phrase generation
+✔ L-016    b04/c07v2-b04: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b04/c07v2-b04: F5 per-phrase generation
+✔ L-016    b04a/c07v2-b04a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b04a/c07v2-b04a: F5 per-phrase generation
+✔ L-016    b05/c07v2-b05: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b05/c07v2-b05: F5 per-phrase generation
+✔ L-016    b05a/c07v2-b05a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b05a/c07v2-b05a: F5 per-phrase generation
+✔ L-016    b06/c07v2-b06: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b06/c07v2-b06: F5 per-phrase generation
+✔ L-016    b06a/c07v2-b06a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b06a/c07v2-b06a: F5 per-phrase generation
+✔ L-016    b07/c07v2-b07: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b07/c07v2-b07: F5 per-phrase generation
+✔ L-016    b07a/c07v2-b07a: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b07a/c07v2-b07a: F5 per-phrase generation
+✔ L-016    b07b/c07v2-b07b: per-phrase F5 units, cuts only for {nhấn:} emphasis edits (exception)
+✔ L-007    b07b/c07v2-b07b: F5 per-phrase generation
 ✔ L-013    nothing pending push
 ✔ srt-sidecar SRT file exists: clip-07-check-tin-nhan-3-lan.srt
 ✔ srt-sidecar SRT parsed: 18 entries
 ✔ srt-sidecar SRT timing is monotonic
-✔ srt-sidecar SRT duration 71.4s matches video 75.0s (±5s)
+✔ srt-sidecar SRT duration 65.1s matches video 68.4s (±5s)
 
-210 checks · 3 error(s) · 5 warning(s) → FAIL
+210 checks · 4 error(s) · 5 warning(s) → FAIL
