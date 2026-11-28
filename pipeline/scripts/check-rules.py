@@ -2097,10 +2097,11 @@ def lessons(spec, fdir, L, final, tpath):
                 bad = extra > 0.2 or extra < -0.25 or rep
                 (err if bad else ok)("L-009", f"{tag}: STT {len(hyp)} vs {len(ref)} syllables" + (f", repeated {rep}" if rep else "") + ("" if not bad else " → re-roll/rewrite"))
         # L-114 (DL-087): clip-wide F0 tone consistency (≤ 2.5 st from median) and natural speaking rate (≥ 3.8 syl/s)
+        # Note: `tl` above is the L-025 STT-fail list; read timing.json again for lines.
         f0_lines = []
         tot_syl_114, tot_dur_114 = 0, 0.0
-        for l in tl.get("lines", []):
-            jp = os.path.join(VE, "public/voice", l["key"] + ".json")
+        for l in json.load(open(tpath)).get("lines", []):
+            jp = os.path.join(vd, l["key"] + ".json")
             if not os.path.exists(jp): continue
             m = json.load(open(jp))
             if m.get("f0_hz"): f0_lines.append((l["scene"], float(m["f0_hz"])))

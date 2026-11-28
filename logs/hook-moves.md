@@ -20,5 +20,6 @@ Main move behind each approved hook, so the next clip doesn't reuse it by habit 
 | clip-05 | ĐỌC ĐÂU NHỚ ĐÓ? | relatable failure: forget right after reading, as a question |
 | clip-06 | Ngộ ghê ha — trồng cây mình đợi mấy tháng được, mà tập thói quen hai tuần đã muốn dẹp. | everyday paradox: patient with a plant, impatient with a new habit |
 | clip-07 | Sếp nhắn đúng hai chữ “em ơi” rồi im luôn — mười phút mình mở máy coi năm lần. | 5-second vulnerable story: relatable office text-silence spiral with self-mocking count |
+| clip-08 | Ai cũng bảo úp máy xuống là tập trung. Mình úp rồi, mắt vẫn liếc á. | misconception flip: crowd belief face-down = focus, then self-caught glance |
 
 Note: clip-04 and clip-05 share one move (forget-right-after-learning question). clip-06 uses a different move (everyday paradox).

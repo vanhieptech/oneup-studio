@@ -32,14 +32,13 @@ tags: [index, retrieval]
 | skill.make-layer | skill | active | `channels/vanhiep-tech/skills/make-layer/SKILL.md` | make-layer |
 | skill.shorts-cutter | skill | active | `channels/vanhiep-tech/skills/shorts-cutter/SKILL.md` | shorts-cutter |
 | template-vht-script-short | template | draft | `channels/vanhiep-tech/templates/script-short.md` | Script short (45–90s) — `vht-YYYYMMDD-<slug>` |
-| clip-06.fact-lock | research | locked | `content/clips/clip-06-bong-hoa-chua-no/final/fact-lock.md` | clip-06 fact lock |
-| clip-06.feedback | feedback | living | `content/clips/clip-06-bong-hoa-chua-no/final/feedback.md` | clip-06 — góp ý của Hiệp (nguyên văn) |
-| clip-06.post-checklist | checklist | draft | `content/clips/clip-06-bong-hoa-chua-no/final/post-checklist.md` | Checklist đăng clip-06 |
-| clip-06.post | post-package | sẵn sàng đăng sau khi Hiệp xem video | `content/clips/clip-06-bong-hoa-chua-no/final/post.md` | Gói đăng TikTok: clip-06 "bông hoa chưa nở" |
-| clip-06.review | review | draft | `content/clips/clip-06-bong-hoa-chua-no/final/review.md` | Review độc lập `clip-06` (`script-v13-draft.md` · `c8469062ec2f`) vs Anchor `a-c05` |
-| clip-06.script-final | script | locked | `content/clips/clip-06-bong-hoa-chua-no/final/script-final.md` | Clip 06 v13: thói quen tính bằng tháng, bông hoa chưa nở |
-| clip-06.script-v13-draft | script | locked | `content/clips/clip-06-bong-hoa-chua-no/final/script-v13-draft.md` | clip-06 v13 — ĐÃ CHỐT 27/11, sản xuất từ `final/spec.json` |
-| clip-06.trend-signals | research | ready | `content/clips/clip-06-bong-hoa-chua-no/final/trend-signals.md` | Tín hiệu trend cho clip-06 v13 |
+| clip-08-dien-thoai-up-ban | clip | draft | `content/clips/clip-08-dien-thoai-up-ban/README.md` | Clip 08 — Điện thoại úp bàn |
+| clip-08.fact-lock | research | locked | `content/clips/clip-08-dien-thoai-up-ban/final/fact-lock.md` | clip-08 fact lock |
+| clip-08.feedback | feedback | living | `content/clips/clip-08-dien-thoai-up-ban/final/feedback.md` | clip-08 — góp ý của Hiệp (nguyên văn) |
+| clip-08.review | review | draft | `content/clips/clip-08-dien-thoai-up-ban/final/review.md` | Review clip-08 · script-v2-draft vs a-c05 (vòng 5) |
+| clip-08.script-final | script | ready | `content/clips/clip-08-dien-thoai-up-ban/final/script-final.md` | Clip 08 v1: điện thoại úp bàn vẫn ăn sự tập trung |
+| clip-08.script-v2-draft | draft | draft | `content/clips/clip-08-dien-thoai-up-ban/final/script-v2-draft.md` | clip-08 v2 — Top 1 (M3) |
+| clip-08.trend-signals | research | draft | `content/clips/clip-08-dien-thoai-up-ban/final/trend-signals.md` | clip-08 trend signals |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |
 | philosophy-bank | resource | active | `content/philosophy-bank.md` | Philosophy bank: Triết lý sống, Niềm vui Nỗi buồn & Lý tưởng (@hi.oneup) |
 | published-log | log | ready | `content/published/README.md` | Published log: clip đã đăng |
@@ -381,7 +380,7 @@ tags: [index, retrieval]
 |---|---|---|---|
 | b-donlientay | None | `content/clips/b-donlientay-01` | archive |
 | b-tietkiem | None | `content/clips/b-tietkiem-01-musk-quy-du-phong` | archive |
-| clip-06 | None | `content/clips/clip-06-bong-hoa-chua-no` | archive, final |
+| clip-08 | None | `content/clips/clip-08-dien-thoai-up-ban` | README.md, archive, final |
 
 ## Assets & tools
 | id | path | description |

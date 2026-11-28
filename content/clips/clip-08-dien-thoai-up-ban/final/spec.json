@@ -1,0 +1,1417 @@
+{
+  "id": "clip-08-final",
+  "clip": "clip-08",
+  "title": "Điện thoại úp bàn vẫn ăn sự tập trung",
+  "week": 2,
+  "theme": "dark",
+  "pillar": "2 Giữ tập trung",
+  "trend": "pain-wave-phone-face-down",
+  "voice_prefix": "c08v1",
+  "voice_refs": {
+    "default": "thai-son-v2",
+    "happy": "thai-son-v2",
+    "serious": "thai-son-v2"
+  },
+  "voice_speed": 1.0,
+  "mix": "linear",
+  "layout": "tiktok",
+  "length_target": [
+    70,
+    95
+  ],
+  "length_note": "Ước ~72–85s lời + nghỉ/chuyển + end card 3s; strict <300s. Lời khóa script_hash 86291b8033de.",
+  "pacing": {
+    "lead": 0.15,
+    "lead_tr": 0.05,
+    "tail": 0.25,
+    "swish": "beat"
+  },
+  "transition_sfx": {
+    "part": "whoosh-soft",
+    "scene": "swish"
+  },
+  "endcard": {
+    "duration": 3.0,
+    "y": 560,
+    "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+    "sources": "Ward, Duke, Gneezy & Bos 2017 (via Canale et al. 2019)",
+    "credit": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/"
+  },
+  "engagement": [
+    {
+      "type": "loop",
+      "beat": "b07a",
+      "text": "mắt vẫn liếc",
+      "hook_word": "liếc"
+    },
+    {
+      "type": "relatable-question",
+      "beat": "b07a",
+      "text": "Có ai úp máy rồi mắt vẫn liếc giống mình hông?"
+    },
+    {
+      "type": "comment-challenge",
+      "beat": "b07b",
+      "text": "kể mình nghe với nha"
+    }
+  ],
+  "voices": {
+    "Hiệp": "F5 · Thái Sơn"
+  },
+  "hook": {
+    "text": "ÚP MÁY XUỐNG",
+    "scenes": [
+      "b01",
+      "b01mid",
+      "b01a"
+    ],
+    "format": "Misconception Flip: ai cũng bảo úp máy = tập trung → mắt vẫn liếc"
+  },
+  "hook_alt": {
+    "type": "direct",
+    "text": "Mình úp điện thoại xuống bàn rồi mà mắt cứ liếc qua nó."
+  },
+  "hook_question": {
+    "asked": "b03a: vụ xao nhãng tại ý chí thiệt hông, hay tại máy còn nằm ngay trước mặt?",
+    "answered": "b04-b05: Ward 2017 — máy trên bàn nhớ bài tệ hơn phòng khác; tắt nguồn không đổi, chỗ để máy mới đổi"
+  },
+  "throughline": "Ai cũng bảo úp máy xuống là tập trung VÀ mình úp rồi mắt vẫn liếc tự trách yếu ý chí, NHƯNG nhóm Ward 2017 thấy máy trên bàn làm nhớ bài tệ hơn máy phòng khác dù tắt nguồn, VÌ VẬY tối nay mình cắm sạc máy ngoài phòng cho bàn trống trơn",
+  "story": "Hiệp úp máy xuống bàn vẫn liếc, tự trách yếu ý chí, rồi thấy Ward 2017: chỗ để máy mới đổi kết quả.",
+  "fact_lock": "Ward 2017 hai thí nghiệm; máy trên bàn → nhớ bài tệ hơn máy phòng khác; tắt nguồn không đổi; chỗ để máy mới đổi. Cấm IQ/%/não bị rút/Stothart.",
+  "callbacks": [],
+  "cover": {
+    "title": "Úp máy xuống",
+    "subtitle": "vẫn liếc?"
+  },
+  "structure": {
+    "hook": [
+      "b01",
+      "b01mid"
+    ],
+    "intro": [
+      "b01a",
+      "b02",
+      "b02a",
+      "b02b"
+    ],
+    "body": {
+      "problem": [
+        "b03",
+        "b03a"
+      ],
+      "exploration": [
+        "b04",
+        "b04a",
+        "b04b",
+        "b05"
+      ],
+      "climax": [
+        "b05a",
+        "b06",
+        "b06a",
+        "b06b"
+      ]
+    },
+    "summary": [
+      "b07",
+      "b07a"
+    ],
+    "cta": [
+      "b07b"
+    ]
+  },
+  "revisions": [
+    {
+      "v": "v1",
+      "date": "2026-11-28",
+      "dl": "DL-091",
+      "note": "Hiệp chốt Top 1 M3 («chốt tóp 1»). Lời khóa script_hash 86291b8033de, review ĐẠT TIE a-c05. Spec dựng từ đúng lời v2, số 2017 đọc trong say."
+    },
+    {
+      "v": "v1.1",
+      "date": "2026-11-28",
+      "dl": "DL-091",
+      "note": "Post-Chốt: tách b01 ≤6 từ (rule-55); CTA thêm comment (rule-64); say Ward/năm số cho STT."
+    }
+  ],
+  "parts": [
+    {
+      "id": "A",
+      "engine": "remotion",
+      "transitionOut": "fade",
+      "scenes": [
+        {
+          "id": "b01",
+          "beat": "clip-08.b01",
+          "part": "hook",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "closeup",
+          "push": 0.14,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy",
+              "enter": "pop"
+            }
+          ],
+          "fx": {
+            "visual": "Cắt sát mặt frame 0, chữ ÚP MÁY XUỐNG",
+            "word": "bảo"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "bảo"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "teasing",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Ai cũng **bảo**.",
+              "say": "Ai cũng bảo.",
+              "en": "Everyone says so.",
+              "hl": [
+                2
+              ],
+              "phrases": [
+                {
+                  "t": "Ai cũng {nhấn: bảo}.",
+                  "gap": 0.14,
+                  "tempo": 1.04,
+                  "semi": 0.3,
+                  "emph": true,
+                  "emph_semi": -0.2
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Chỉ máy úp trên bàn",
+            "react": "cà khịa nhẹ niềm tin đám đông"
+          },
+          "narration": "ÚP MÁY XUỐNG"
+        },
+        {
+          "id": "b01mid",
+          "beat": "clip-08.b01",
+          "part": "hook",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "closeup",
+          "push": 0.14,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Điện thoại úp sấp nổi giữa khung đúng chữ máy",
+            "word": "máy"
+          },
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "máy"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "teasing",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "úp **máy** xuống là tập trung.",
+              "say": "úp máy xuống là tập trung.",
+              "en": "Face-down means focus.",
+              "hl": [
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "úp {nhấn: máy} xuống là tập trung.",
+                  "gap": 0.18,
+                  "tempo": 1.02,
+                  "semi": 0.2,
+                  "emph": true,
+                  "emph_semi": -0.2
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Chỉ máy úp trên bàn",
+            "react": "cà khịa nhẹ niềm tin đám đông"
+          },
+          "enter": "none",
+          "expression": "smirk",
+          "link": "nêu niềm tin đám đông: úp máy là tập trung"
+        },
+        {
+          "id": "b01a",
+          "beat": "clip-08.b01",
+          "part": "hook",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "closeup",
+          "push": 0.12,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "sad",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Mắt Hiệp lệch sang lưng máy úp đúng chữ liếc",
+            "word": "liếc"
+          },
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "liếc"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Mình úp rồi, mắt vẫn **liếc** á.",
+              "say": "Mình úp rồi, mắt vẫn liếc á.",
+              "en": "I flipped it. Eyes glance.",
+              "hl": [
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "Mình úp rồi, mắt vẫn {nhấn: liếc} á.",
+                  "gap": 0.22,
+                  "tempo": 1.0,
+                  "semi": 0.1,
+                  "emph": true,
+                  "emph_semi": -0.3
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Mắt lia sang lưng máy",
+            "react": "tự bắt quả tang"
+          },
+          "link": "lật niềm tin úp = tập trung bằng chính mắt liếc của mình"
+        },
+        {
+          "id": "b02",
+          "beat": "clip-08.b02",
+          "part": "struggle",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "sad",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Mắt lia 3 nhịp sang lưng máy",
+            "word": "lia"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "lia"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Cứ vài giây là mắt **lia** qua lưng điện thoại, như đang chờ nó rung.",
+              "say": "Cứ vài giây là mắt lia qua lưng điện thoại, như đang chờ nó rung.",
+              "en": "Eyes dart to phone back.",
+              "hl": [
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "Cứ vài giây là mắt {nhấn: lia} qua lưng điện thoại,",
+                  "gap": 0.16,
+                  "tempo": 0.98,
+                  "semi": 0.0,
+                  "emph": true,
+                  "emph_semi": -0.2
+                },
+                {
+                  "t": "như đang chờ nó rung.",
+                  "gap": 0.22,
+                  "tempo": 0.96,
+                  "semi": -0.2
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Ngồi viết, mắt cứ trượt sang máy",
+            "react": "chùng xuống"
+          },
+          "link": "mở rộng từ cú liếc sang nhịp lia lặp lại"
+        },
+        {
+          "id": "b02a",
+          "beat": "clip-08.b02",
+          "part": "struggle",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "sad",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Nửa dòng chữ trên giấy trắng dần đúng chữ mất",
+            "word": "mất"
+          },
+          "sfx": [
+            {
+              "name": "whoosh-soft",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "mất"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Viết dở nửa dòng, chữ bay **mất**.",
+              "say": "Viết dở nửa dòng, chữ bay mất.",
+              "en": "Half a line gone.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Viết dở nửa dòng, chữ bay {nhấn: mất}.",
+                  "gap": 0.2,
+                  "tempo": 0.96,
+                  "semi": -0.3,
+                  "emph": true,
+                  "emph_semi": -0.5
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Bút dừng giữa dòng",
+            "react": "thở dài"
+          },
+          "link": "hậu quả ngay khi mắt lia: chữ trên giấy bay mất"
+        },
+        {
+          "id": "b02b",
+          "beat": "clip-08.b02",
+          "part": "struggle",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "sad",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Vai Hiệp chùng, bong bóng tự trách yếu ý chí",
+            "word": "yếu"
+          },
+          "sfx": [
+            {
+              "name": "click",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "yếu"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "sad",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Mình tự trách, chắc mình **yếu** ý chí quá hà.",
+              "say": "Mình tự trách, chắc mình yếu ý chí quá hà.",
+              "en": "I blame weak will.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Mình tự trách, chắc mình {nhấn: yếu} ý chí quá hà.",
+                  "gap": 0.28,
+                  "tempo": 0.94,
+                  "semi": -0.4,
+                  "emph": true,
+                  "emph_semi": -0.5
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Ôm trán tự trách",
+            "react": "Vulnerability Dip"
+          },
+          "link": "từ chữ bay mất nhảy sang tự trách yếu ý chí"
+        },
+        {
+          "id": "b03",
+          "beat": "clip-08.b03",
+          "part": "turn",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "confused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Tay không chạm máy; máy úp im trên bàn",
+            "word": "bấm"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "bấm"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "confused",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Mà mình có **bấm** đâu. Máy úp **im**.",
+              "say": "Mà mình có bấm đâu. Máy úp im.",
+              "en": "I never tap it.",
+              "hl": [
+                2
+              ],
+              "phrases": [
+                {
+                  "t": "Mà mình có {nhấn: bấm} đâu.",
+                  "gap": 0.16,
+                  "tempo": 1.0,
+                  "semi": 0.1,
+                  "emph": true,
+                  "emph_semi": -0.2
+                },
+                {
+                  "t": "Máy úp {nhấn: im}.",
+                  "gap": 0.22,
+                  "tempo": 0.96,
+                  "semi": -0.1,
+                  "emph": true,
+                  "emph_semi": -0.3
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Giơ tay trống, chỉ máy úp",
+            "react": "phản biện lời tự trách"
+          },
+          "link": "phản biện lời tự trách: mình đâu có bấm máy"
+        },
+        {
+          "id": "b03a",
+          "beat": "clip-08.b03",
+          "part": "turn",
+          "role": "Hiệp",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.06,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "confused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Dấu hỏi lớn giữa «ý chí» và «máy trước mặt»",
+            "word": "hông"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "hông"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "curious",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Vậy cái vụ xao nhãng này tại ý chí thiệt **hông**, hay tại máy còn nằm ngay trước mặt?",
+              "say": "Vậy cái vụ xao nhãng này tại ý chí thiệt hông, hay tại máy còn nằm ngay trước mặt?",
+              "en": "Weak will — or phone there?",
+              "hl": [
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "Vậy cái vụ xao nhãng này",
+                  "gap": 0.12,
+                  "tempo": 0.92,
+                  "semi": 0.0
+                },
+                {
+                  "t": "tại ý chí thiệt {nhấn: hông},",
+                  "gap": 0.16,
+                  "tempo": 0.94,
+                  "semi": 0.2,
+                  "emph": true,
+                  "emph_semi": 0.1
+                },
+                {
+                  "t": "hay tại máy còn nằm ngay trước mặt?",
+                  "gap": 0.26,
+                  "tempo": 0.94,
+                  "semi": 0.1
+                }
+              ],
+              "takes": 12
+            }
+          ],
+          "stage": {
+            "action": "Hai vế đối chiếu trên đầu",
+            "react": "tò mò mở lab"
+          },
+          "link": "đặt câu hỏi trung tâm: ý chí hay máy còn trước mặt"
+        },
+        {
+          "id": "b04",
+          "beat": "clip-08.b04",
+          "part": "explain",
+          "role": "Hiệp",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.28,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Cầu nối từ câu hỏi sang thí nghiệm — mũi tên «máy trước mặt»",
+            "word": "trước mặt"
+          },
+          "sfx": [
+            {
+              "name": "whoosh-soft",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "trước mặt"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Có người thử đúng vụ máy nằm trước mặt rồi.",
+              "say": "Có người thử đúng vụ máy nằm trước mặt rồi.",
+              "en": "Someone tested phone upfront.",
+              "hl": [
+                1
+              ],
+              "phrases": [
+                {
+                  "t": "Có người thử đúng vụ máy nằm {nhấn: trước mặt} rồi.",
+                  "gap": 0.2,
+                  "tempo": 0.98,
+                  "semi": 0.0,
+                  "emph": true,
+                  "emph_semi": -0.2
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Chỉ sang khung lab",
+            "react": "mở bằng chứng"
+          },
+          "link": "dẫn từ câu hỏi máy trước mặt sang người đã thử"
+        },
+        {
+          "id": "b04a",
+          "beat": "clip-08.b04",
+          "part": "explain",
+          "role": "Hiệp",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.28,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Thẻ WARD ET AL. 2017 đóng xuống",
+            "word": "2017"
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "atLine": 0,
+              "offset": 0.2,
+              "word": "2017"
+            }
+          ],
+          "props": [
+            {
+              "kind": "card",
+              "x": 840,
+              "y": 1140,
+              "scale": 0.62,
+              "title": "WARD 2017",
+              "sub": "2 TESTS"
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Nhóm Ward năm **2017** làm hai thí nghiệm.",
+              "say": "Nhóm Oát năm 2017 làm 2 thí nghiệm.",
+              "en": "Ward team, year 2017.",
+              "hl": [
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "Nhóm Oát năm {nhấn: 2017} làm 2 thí nghiệm.",
+                  "gap": 0.24,
+                  "tempo": 0.92,
+                  "semi": 0.0,
+                  "emph": true,
+                  "emph_semi": -0.1
+                }
+              ],
+              "takes": 12
+            }
+          ],
+          "stage": {
+            "action": "Chỉ thẻ nguồn",
+            "react": "nghiêm túc"
+          },
+          "link": "mở thẻ nguồn Ward 2017 sau câu dẫn"
+        },
+        {
+          "id": "b04b",
+          "beat": "clip-08.b04",
+          "part": "explain",
+          "role": "Hiệp",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.28,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "surprised",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Hai ô bàn vs phòng khác; thanh bàn thấp hơn",
+            "word": "tệ"
+          },
+          "sfx": [
+            {
+              "name": "rise",
+              "atLine": 0,
+              "offset": 0.25,
+              "word": "tệ"
+            }
+          ],
+          "props": [
+            {
+              "kind": "bars",
+              "x": 840,
+              "y": 1140,
+              "scale": 0.62
+            }
+          ],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "surprised",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Máy trên bàn thì người ta nhớ bài **tệ** hơn lúc máy nằm phòng khác.",
+              "say": "Máy trên bàn thì người ta nhớ bài tệ hơn lúc máy nằm phòng khác.",
+              "en": "Desk phone: worse memory task.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Máy trên bàn thì người ta nhớ bài {nhấn: tệ} hơn",
+                  "gap": 0.16,
+                  "tempo": 0.96,
+                  "semi": 0.1,
+                  "emph": true,
+                  "emph_semi": -0.2
+                },
+                {
+                  "t": "lúc máy nằm phòng khác.",
+                  "gap": 0.26,
+                  "tempo": 0.96,
+                  "semi": -0.2
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "So hai cột kết quả",
+            "react": "Aha Peak"
+          },
+          "link": "nêu kết quả: máy trên bàn nhớ bài tệ hơn phòng khác"
+        },
+        {
+          "id": "b05",
+          "beat": "clip-08.b05",
+          "part": "explain",
+          "role": "Hiệp",
+          "background": "grid",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.28,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "focused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Công tắc nguồn = ; mũi tên chỗ để máy",
+            "word": "Chỗ"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "Chỗ"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Họ còn thử tắt **nguồn**: không đổi gì. **Chỗ** để máy mới làm kết quả khác đi.",
+              "say": "Họ còn thử tắt nguồn: không đổi gì. Chỗ để máy mới làm kết quả khác đi.",
+              "en": "Power off changed nothing.",
+              "hl": [
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "Họ còn thử tắt {nhấn: nguồn}: không đổi gì.",
+                  "gap": 0.18,
+                  "tempo": 0.96,
+                  "semi": 0.0,
+                  "emph": true,
+                  "emph_semi": -0.2
+                },
+                {
+                  "t": "{nhấn: Chỗ} để máy mới làm kết quả khác đi.",
+                  "gap": 0.24,
+                  "tempo": 0.96,
+                  "semi": 0.1,
+                  "emph": true,
+                  "emph_semi": -0.1
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Chỉ công tắc rồi chỗ máy",
+            "react": "cú lật chỗ để máy"
+          },
+          "link": "đuôi thí nghiệm: tắt nguồn không đổi, chỗ để máy mới đổi"
+        },
+        {
+          "id": "b05a",
+          "beat": "clip-08.b05",
+          "part": "payoff",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "focused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Nhãn nhỏ «mình đoán» trên máy úp vẫn nằm đó",
+            "word": "đoán"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "đoán"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "reflective",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Mình **đoán** úp xuống chỉ giấu màn hình thôi, máy vẫn nằm đó.",
+              "say": "Mình đoán úp xuống chỉ giấu màn hình thôi, máy vẫn nằm đó.",
+              "en": "Guess: just hides screen.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Mình {nhấn: đoán} úp xuống chỉ giấu màn hình thôi, máy vẫn nằm đó.",
+                  "gap": 0.26,
+                  "tempo": 0.96,
+                  "semi": -0.2,
+                  "emph": true,
+                  "emph_semi": -0.3
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Gãi đầu nhìn máy úp",
+            "react": "dịch nghĩa cho mình"
+          },
+          "link": "dịch nghĩa cho mình: úp chỉ giấu màn, máy vẫn nằm đó"
+        },
+        {
+          "id": "b06",
+          "beat": "clip-08.b06",
+          "part": "payoff",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Vai hạ, bong bóng tự trách mờ đi",
+            "word": "trách"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "trách"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "relieved",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Nghe vậy mình đỡ tự **trách** ý chí hẳn.",
+              "say": "Nghe vậy mình đỡ tự trách ý chí hẳn.",
+              "en": "Ease off blaming willpower.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Nghe vậy mình đỡ tự {nhấn: trách} ý chí hẳn.",
+                  "gap": 0.24,
+                  "tempo": 0.96,
+                  "semi": -0.3,
+                  "emph": true,
+                  "emph_semi": -0.4
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Thở ra, vai thả",
+            "react": "Catharsis"
+          },
+          "link": "khép vòng tự trách sau khi nghe chỗ để máy mới đổi"
+        },
+        {
+          "id": "b06a",
+          "beat": "clip-08.b06",
+          "part": "payoff",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "focused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Máy cắm sạc phòng bên; bàn trống trơn",
+            "word": "sạc"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "sạc"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "focused",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Tối nay mình cắm **sạc** máy ngoài phòng luôn. Bàn trống **trơn**, hết chỗ để liếc.",
+              "say": "Tối nay mình cắm sạc máy ngoài phòng luôn. Bàn trống trơn, hết chỗ để liếc.",
+              "en": "Charge phone next door.",
+              "hl": [
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "Tối nay mình cắm {nhấn: sạc} máy ngoài phòng luôn.",
+                  "gap": 0.18,
+                  "tempo": 0.98,
+                  "semi": 0.1,
+                  "emph": true,
+                  "emph_semi": -0.2
+                },
+                {
+                  "t": "Bàn trống {nhấn: trơn}, hết chỗ để liếc.",
+                  "gap": 0.22,
+                  "tempo": 0.96,
+                  "semi": -0.1,
+                  "emph": true,
+                  "emph_semi": -0.3
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Đưa máy ra cửa, bàn sạch",
+            "react": "việc tối nay"
+          },
+          "link": "việc tối nay: cắm sạc ngoài, bàn trống trơn"
+        },
+        {
+          "id": "b06b",
+          "beat": "clip-08.b06",
+          "part": "payoff",
+          "role": "Hiệp",
+          "background": "desk",
+          "framing": "medium",
+          "push": 0.03,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "sitting",
+              "action": "talking",
+              "expression": "happy",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Mắt nhìn thẳng tờ giấy, chỗ máy còn trống",
+            "word": "ngoài đó"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "ngoài đó"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Mai ngồi viết cũng để máy ngoài đó.",
+              "say": "Mai ngồi viết cũng để máy ngoài đó.",
+              "en": "Write tomorrow, phone outside.",
+              "hl": [
+                0
+              ],
+              "phrases": [
+                {
+                  "t": "Mai ngồi viết cũng để máy {nhấn: ngoài đó}.",
+                  "gap": 0.26,
+                  "tempo": 0.96,
+                  "semi": -0.2,
+                  "emph": true,
+                  "emph_semi": -0.3
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Ngồi viết, mắt không lia",
+            "react": "nhẹ"
+          },
+          "link": "giữ luật sang ngày mai khi ngồi viết"
+        },
+        {
+          "id": "b07",
+          "beat": "clip-08.b07",
+          "part": "summary",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "slide",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Hiệp hạ vai, không giảng",
+            "word": "thôi"
+          },
+          "sfx": [
+            {
+              "name": "tick",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "thôi"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Mình để ngoài vậy **thôi**, mỗi chỗ ngồi một kiểu.",
+              "say": "Mình để ngoài vậy thôi, mỗi chỗ ngồi một kiểu.",
+              "en": "This way is mine alone.",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Mình để ngoài vậy {nhấn: thôi}, mỗi chỗ ngồi một kiểu.",
+                  "gap": 0.22,
+                  "tempo": 0.98,
+                  "semi": -0.1,
+                  "emph": true,
+                  "emph_semi": -0.3
+                }
+              ]
+            }
+          ],
+          "stage": {
+            "action": "Hạ cái tôi",
+            "react": "ngang hàng"
+          },
+          "link": "hạ cái tôi trước khi hỏi người xem"
+        },
+        {
+          "id": "b07a",
+          "beat": "clip-08.b07",
+          "part": "summary",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.05,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "confused",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Hiệp nghiêng đầu hỏi, chỗ máy trên bàn còn trống",
+            "word": "liếc"
+          },
+          "sfx": [
+            {
+              "name": "pop",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "liếc"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Có ai úp máy rồi mắt vẫn **liếc** giống mình hông?",
+              "say": "Có ai úp máy rồi mắt vẫn liếc giống mình hông?",
+              "en": "Anyone else still glancing?",
+              "hl": [
+                3
+              ],
+              "phrases": [
+                {
+                  "t": "Có ai úp máy rồi mắt vẫn {nhấn: liếc} giống mình hông?",
+                  "gap": 0.24,
+                  "tempo": 0.94,
+                  "semi": 0.2,
+                  "emph": true,
+                  "emph_semi": 0.1
+                }
+              ],
+              "takes": 12
+            }
+          ],
+          "stage": {
+            "action": "Nghiêng đầu về người xem",
+            "react": "đồng cảm"
+          },
+          "link": "đồng cảm: ai cũng úp máy rồi vẫn liếc giống mình"
+        },
+        {
+          "id": "b07b",
+          "beat": "clip-08.b07",
+          "part": "cta",
+          "role": "Hiệp",
+          "background": "paper",
+          "framing": "medium",
+          "push": 0.04,
+          "transition": "cut",
+          "cast": [
+            {
+              "id": "hiep",
+              "x": 0.5,
+              "facing": "right",
+              "pose": "standing",
+              "action": "talking",
+              "expression": "happy",
+              "enter": "none"
+            }
+          ],
+          "fx": {
+            "visual": "Hiệp gật nhẹ chờ câu chuyện, không giơ nút like",
+            "word": "sao"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "atLine": 0,
+              "offset": 0.0,
+              "word": "sao"
+            }
+          ],
+          "props": [],
+          "lines": [
+            {
+              "speaker": "hiep",
+              "emotion": "happy",
+              "voice_ref": "default",
+              "voice_role": "Hiệp",
+              "text": "Bạn gỡ khúc liếc đó **sao**, comment kể mình nghe với nha.",
+              "say": "Này bạn gỡ vụ liếc máy đó sao, comment kể mình nghe với nha.",
+              "en": "How do you ease glancing?",
+              "hl": [
+                4
+              ],
+              "phrases": [
+                {
+                  "t": "Này bạn gỡ vụ liếc máy đó sao,",
+                  "gap": 0.2,
+                  "tempo": 0.9,
+                  "semi": 0.1
+                },
+                {
+                  "t": "comment kể mình nghe với nha.",
+                  "gap": 0.28,
+                  "tempo": 0.94,
+                  "semi": 0.0
+                }
+              ],
+              "takes": 16
+            }
+          ],
+          "stage": {
+            "action": "Mở tai nghe",
+            "react": "CTA ấm"
+          },
+          "link": "mở tai nghe cách mỗi người gỡ khúc liếc"
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ status: ready
 source: "oneup-studio (soạn trong repo)"
 id: lessons
 type: log
-updated: 2026-11-27
+updated: 2026-11-28
 tags: [lessons, self-learning, qa, rule-49]
 ---
 # Lessons: lỗi đã gặp → kiểm tra tự động (rule-49)
@@ -358,3 +358,21 @@ Trạng thái: `automated` (có check, chặn) · `partial` (check một phần)
 - Nguyên nhân gốc: (1) Bật `voice_refs: true` đổi giữa 3 file mẫu `thai-son-v2` (123,7 Hz) / `thai-son-serious` (130,4 Hz) / `thai-son-happy` (đầu ra 138–145 Hz) cộng `b01` vọt 177,8 Hz khiến biên độ F0 cả clip nhảy tới 6,9 bán cung (vượt xa ngưỡng 2,5 bán cung của L-016) → tai nghe bị lạt tông giữa các đoạn; (2) 3 file mẫu 6000h vốn đã giãn chậm bằng rubberband (~0,85×) lại chạy qua `voice-phrase-f5.py` với `base_spd` 0,95× (và 0,88× ở câu buồn/bối rối) → tốc độ tụt còn 3,2–3,7 âm tiết/s, nghe chậm rề; (3) tách beat ngay giữa cụm «hai chữ» / «em ơi» khiến cụm «em ơi» mất ngữ cảnh trước và bật nhanh/gắt.
 - Cách sửa (`DL-087`): khóa **một ref duy nhất** (`thai-son-v2`) xuyên suốt toàn bộ clip (không trộn 3 ref khác cao độ trong cùng một bài độc thoại); đặt `voice_speed: 1.12` bù độ chậm của ref 6000h để về nhịp tự nhiên ~4,3–4,6 âm tiết/s; đo F0 trung vị từng câu sau `stitch` để bắt và re-roll câu nào lệch > 2,5 bán cung so với trung vị clip; dùng dấu `...` giữ nhịp cho cụm trích thoại ngắn («em ơi...»).
 - Cách phát hiện: Đo `med_f0` từng file `wav` sau `stitch` — tự động hóa tại `voice-phrase-f5.py` (lưu `f0_hz` + `WARN L-114`) và `check-rules.py` (`L-114`: kiểm F0 ±2,5 st so với trung vị clip & tốc độ đọc ≥ 3,8 âm tiết/s; `DL-088`, `tests/test_voice_hardening.py`). Trạng thái: `automated`.
+
+## L-115 (2026-11-28, Hiệp trực tiếp trên clip-08 v1) — Hook trừu tượng, và gửi Gate 1 khi chưa đấu 3 lane
+- Nguồn: Hiệp đọc hook «Úp điện thoại xuống rồi. Câu đang viết vẫn đứt.»: «hook quá tệ». Liền đó: «m có chia 3 lane script r chọn scrip tốt nhất khog, đảm bảo phải làm theo 100% /make-video».
+- Nguyên nhân gốc: (1) Hook là hình «câu đứt», người lạ nghe 3 giây không thấy việc của mình. (2) Writer viết một bản rồi tự review, bỏ `script-arena.py` (3 archetype, Top 1 + 1 á quân). (3) Hướng M1 trùng move clip-06, M2 trùng move clip-07.
+- Cách sửa: trước Gate 1 phải có 3 bản trong `archive/arena/`, chấm nhịp, rồi reviewer khác model chọn Top 1 + á quân khác màu. Hook nói được cảnh cụ thể trong ≤ 20 âm tiết (máy úp, mắt liếc), không mở bằng ẩn dụ.
+- Cách phát hiện: soát tay. Gate 1 thiếu `archive/arena/draft-*.md` hoặc hook không có vật cụ thể trong câu đầu → chưa gửi. Trạng thái: `manual`.
+
+## L-116 (2026-11-28, Hiệp trực tiếp trên clip-08 arena-r1) — Có 3 lane nhưng bỏ bước trong make-video, lời vẫn tệ
+- Nguồn: Hiệp: «vẫn tệ, m phải đọc toàn bộ cách làm của skills, cấm bỏ bất k2i bước nào».
+- Nguyên nhân gốc: Agent có `script-arena.py prepare` nhưng viết thân bài tắt: không đọc 2–3 bản duyệt để học nhạc điệu; không Gate 0.5 bốn góc trước thân; không bảng khung cảm xúc trước lời; không bảng Hình/EN/nhấn; không cổng tự kiểm a–d; không `script-polish`; chỉ dán 7 câu Lời đọc rồi gửi Tournament Judge.
+- Cách sửa (`DL-089`): mỗi lane trong `archive/arena/` phải đủ gói §2 bước 2–7 của `skills/make-video` + `docs/prompts/writer-hi-oneup.md` trước khi `score` / Judge. Bỏ 1 bước = chưa gửi Gate 1.
+- Cách phát hiện: soát tay. File arena thiếu `## Gate 0.5`, bảng khung mạch, bảng beat (Hình/EN/nhấn), hoặc `## Tự kiểm tiếng Việt` → chưa chấm. Trạng thái: `manual`.
+
+## L-117 (2026-11-28, Hiệp trực tiếp trên clip-08 v2) — Từ beat 3 trở đi câu không liền mạch
+- Nguồn: Hiệp: «vẫn tệ beat 3 trở đii các câu k liền mạch».
+- Nguyên nhân gốc: b03 nhảy meta «Mình đi lục thử»; b04 mở Wikipedia «Nhóm Ward năm 2017» không mọc từ kỳ vọng sai vừa nói; b05 mở «tắt nguồn» như ý mới; b06 «Đọc tới đây» + «Thước đo đâu phải…» là câu tóm bài, đứt khỏi cảnh liếc máy.
+- Cách sửa (`DL-090`): từ b03 trở đi mỗi câu phải trả lời nỗi vừa gieo (tự trách / máy còn nằm đó / chỗ để máy). Cấm «đi lục thử», «Đọc tới đây», «Thước đo đâu phải». Lab vào bằng *Storytelling the Study*: kỳ vọng sai → kết quả Ward → tắt nguồn không đổi → việc tối nay.
+- Cách phát hiện: đọc to b02→b07 bỏ từ nối; chỗ khựng = chưa đạt. Trạng thái: `manual`.

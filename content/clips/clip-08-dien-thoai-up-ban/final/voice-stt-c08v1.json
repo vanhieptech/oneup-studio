@@ -1,0 +1,181 @@
+{
+ "b01": {
+  "line_sim": 1.0,
+  "units": {
+   "b01-0": 1.0
+  },
+  "stt": "Ai cũng bảo",
+  "dur": 0.79,
+  "f0_hz": 117.4
+ },
+ "b01mid": {
+  "line_sim": 1.0,
+  "units": {
+   "b01mid-0": 1.0
+  },
+  "stt": "Úp máy xuống là tập trung.",
+  "dur": 1.6,
+  "f0_hz": 150.9
+ },
+ "b01a": {
+  "line_sim": 0.714,
+  "units": {
+   "b01a-0": 0.714
+  },
+  "stt": "Mình ướp rồi, mắt vẫn lít á!",
+  "dur": 1.75,
+  "f0_hz": 125.3
+ },
+ "b02": {
+  "line_sim": 0.867,
+  "units": {
+   "b02-0": 0.85,
+   "b02-1": 1.0
+  },
+  "stt": "Cứ vài giây là mắc liê qua lưng điện thoại, như đang chờ nó rung.",
+  "dur": 3.94,
+  "f0_hz": 127.0
+ },
+ "b02a": {
+  "line_sim": 1.0,
+  "units": {
+   "b02a-0": 1.0
+  },
+  "stt": "Viết dở nửa dòng, chữ bay mất.",
+  "dur": 1.91,
+  "f0_hz": 122.1
+ },
+ "b02b": {
+  "line_sim": 1.0,
+  "units": {
+   "b02b-0": 1.0
+  },
+  "stt": "Mình tự trách chắc mình yếu ý chí quá hà.",
+  "dur": 2.66,
+  "f0_hz": 153.1
+ },
+ "b03": {
+  "line_sim": 0.733,
+  "units": {
+   "b03-0": 0.9,
+   "b03-1": 0.6
+  },
+  "stt": "Mà mình có bấm đầu, máy yên.",
+  "dur": 2.06,
+  "f0_hz": 137.1
+ },
+ "b03a": {
+  "line_sim": 0.842,
+  "units": {
+   "b03a-0": 0.667,
+   "b03a-1": 0.8,
+   "b03a-2": 1.0
+  },
+  "stt": "Vậy cái vụ sau nhãn này tại ý chí thiệt không, hay tại máy còn nằm ngay trước mặt?",
+  "dur": 4.53,
+  "f0_hz": 125.2
+ },
+ "b04": {
+  "line_sim": 1.0,
+  "units": {
+   "b04-0": 1.0
+  },
+  "stt": "Có người thử đúng vụ máy nằm trước mặt rồi.",
+  "dur": 2.66,
+  "f0_hz": 122.9
+ },
+ "b04a": {
+  "line_sim": 0.8,
+  "units": {
+   "b04a-0": 0.8
+  },
+  "stt": "Nhóm Úc 2017 làm 2 thí nghiệm.",
+  "dur": 2.08,
+  "f0_hz": 132.4
+ },
+ "b04b": {
+  "line_sim": 0.967,
+  "units": {
+   "b04b-0": 0.95,
+   "b04b-1": 1.0
+  },
+  "stt": "Mấy trên bàn thì người ta nhớ bài tệ hơn lúc máy nằm phòng khác.",
+  "dur": 3.59,
+  "f0_hz": 127.7
+ },
+ "b05": {
+  "line_sim": 1.0,
+  "units": {
+   "b05-0": 1.0,
+   "b05-1": 1.0
+  },
+  "stt": "Họ còn thử tắt nguồn, không đổi gì, chỗ để máy mới làm kết quả khác đi.",
+  "dur": 4.75,
+  "f0_hz": 134.8
+ },
+ "b05a": {
+  "line_sim": 1.0,
+  "units": {
+   "b05a-0": 1.0
+  },
+  "stt": "Mình đoán úp xuống chỉ giấu màn hình thôi, máy vẫn nằm đó.",
+  "dur": 3.63,
+  "f0_hz": 127.3
+ },
+ "b06": {
+  "line_sim": 0.889,
+  "units": {
+   "b06-0": 1.0
+  },
+  "stt": "Nghe vậy mình đã tự trách ý chí hẳn.",
+  "dur": 2.22,
+  "f0_hz": 120.0
+ },
+ "b06a": {
+  "line_sim": 0.906,
+  "units": {
+   "b06a-0": 0.889,
+   "b06a-1": 0.929
+  },
+  "stt": "Tối nay mình cắm sạch máy ngoài phòng luôn, bàn trống trơn, hết chỗ đề liếc.",
+  "dur": 4.52,
+  "f0_hz": 133.3
+ },
+ "b06b": {
+  "line_sim": 1.0,
+  "units": {
+   "b06b-0": 1.0
+  },
+  "stt": "Mai ngồi viết cũng để máy ngoài đó.",
+  "dur": 2.09,
+  "f0_hz": 130.8
+ },
+ "b07": {
+  "line_sim": 1.0,
+  "units": {
+   "b07-0": 1.0
+  },
+  "stt": "Mình để ngoài vậy thôi, mỗi chỗ ngồi một kiểu.",
+  "dur": 2.85,
+  "f0_hz": 118.8
+ },
+ "b07a": {
+  "line_sim": 0.909,
+  "units": {
+   "b07a-0": 0.818
+  },
+  "stt": "Có ai ướp máy rồi mắt vẫn liếc giống mình hông?",
+  "dur": 2.62,
+  "f0_hz": 161.6
+ },
+ "b07b": {
+  "line_sim": 0.833,
+  "units": {
+   "b07b-0": 1.0,
+   "b07b-1": 0.714
+  },
+  "stt": "Này bạn gỡ vụ liếc máy đó sao, còn nên kể mình nghe với nhà.",
+  "dur": 3.49,
+  "f0_hz": 125.5
+ }
+}

@@ -29,8 +29,10 @@ class TinyFish(unittest.TestCase):
             self.assertTrue(tf.fetch(["u"])[0]["blocked"])
 
     def test_missing_binary_returns_empty(self):
+        # ego_fallback=False: prove TinyFish path alone returns [] when binary missing (DL-083 ego is optional).
         with mock.patch.object(tf.P, "TINYFISH_BIN", "/nope/tinyfish"):
-            self.assertEqual(tf.search("x"), []); self.assertEqual(tf.tiktok_discover(["x"]), [])
+            self.assertEqual(tf.search("x", ego_fallback=False), [])
+            self.assertEqual(tf.tiktok_discover(["x"]), [])
 
     def test_nonzero_exit_returns_empty(self):
         with mock.patch.object(tf.P, "TINYFISH_BIN", self.exe), mock.patch.object(subprocess, "run", fake_run({}, code=1)):

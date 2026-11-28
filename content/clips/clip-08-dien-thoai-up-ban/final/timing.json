@@ -1,0 +1,404 @@
+{
+ "total": 65.484,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "content/clips/clip-08-dien-thoai-up-ban/final/plan-A.voiced.json",
+   "dur": 65.281,
+   "mp4": "video-engine/out/clip-08-final-A.mp4",
+   "fx": "fade",
+   "scene_starts": [
+    4.481999999999999,
+    14.497,
+    22.192999999999998,
+    32.017,
+    41.501000000000005,
+    51.831,
+    62.281000000000006
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-08.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Ai cũng bảo.",
+   "en": "Everyone says so.",
+   "emotion": "teasing",
+   "key": "c08v1-b01",
+   "local": 0.12,
+   "dur": 0.795,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-08.b01",
+   "scene": "b01mid",
+   "speaker": "hiep",
+   "say": "úp máy xuống là tập trung.",
+   "en": "Face-down means focus.",
+   "emotion": "teasing",
+   "key": "c08v1-b01mid",
+   "local": 0.02,
+   "dur": 1.6,
+   "t": 0.995
+  },
+  {
+   "beat": "clip-08.b01",
+   "scene": "b01a",
+   "speaker": "hiep",
+   "say": "Mình úp rồi, mắt vẫn liếc á.",
+   "en": "I flipped it. Eyes glance.",
+   "emotion": "sad",
+   "key": "c08v1-b01a",
+   "local": 0.02,
+   "dur": 1.747,
+   "t": 2.675
+  },
+  {
+   "beat": "clip-08.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Cứ vài giây là mắt lia qua lưng điện thoại, như đang chờ nó rung.",
+   "en": "Eyes dart to phone back.",
+   "emotion": "sad",
+   "key": "c08v1-b02",
+   "local": 0.45,
+   "dur": 3.941,
+   "t": 4.932
+  },
+  {
+   "beat": "clip-08.b02",
+   "scene": "b02a",
+   "speaker": "hiep",
+   "say": "Viết dở nửa dòng, chữ bay mất.",
+   "en": "Half a line gone.",
+   "emotion": "sad",
+   "key": "c08v1-b02a",
+   "local": 0.15,
+   "dur": 1.913,
+   "t": 9.273
+  },
+  {
+   "beat": "clip-08.b02",
+   "scene": "b02b",
+   "speaker": "hiep",
+   "say": "Mình tự trách, chắc mình yếu ý chí quá hà.",
+   "en": "I blame weak will.",
+   "emotion": "sad",
+   "key": "c08v1-b02b",
+   "local": 0.15,
+   "dur": 2.661,
+   "t": 11.586
+  },
+  {
+   "beat": "clip-08.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Mà mình có bấm đâu. Máy úp im.",
+   "en": "I never tap it.",
+   "emotion": "confused",
+   "key": "c08v1-b03",
+   "local": 0.45,
+   "dur": 2.063,
+   "t": 14.947
+  },
+  {
+   "beat": "clip-08.b03",
+   "scene": "b03a",
+   "speaker": "hiep",
+   "say": "Vậy cái vụ xao nhãng này tại ý chí thiệt hông, hay tại máy còn nằm ngay trước mặt?",
+   "en": "Weak will — or phone there?",
+   "emotion": "curious",
+   "key": "c08v1-b03a",
+   "local": 0.15,
+   "dur": 4.533,
+   "t": 17.41
+  },
+  {
+   "beat": "clip-08.b04",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Có người thử đúng vụ máy nằm trước mặt rồi.",
+   "en": "Someone tested phone upfront.",
+   "emotion": "focused",
+   "key": "c08v1-b04",
+   "local": 0.45,
+   "dur": 2.658,
+   "t": 22.643
+  },
+  {
+   "beat": "clip-08.b04",
+   "scene": "b04a",
+   "speaker": "hiep",
+   "say": "Nhóm Oát năm 2017 làm 2 thí nghiệm.",
+   "en": "Ward team, year 2017.",
+   "emotion": "focused",
+   "key": "c08v1-b04a",
+   "local": 0.15,
+   "dur": 2.078,
+   "t": 25.701
+  },
+  {
+   "beat": "clip-08.b04",
+   "scene": "b04b",
+   "speaker": "hiep",
+   "say": "Máy trên bàn thì người ta nhớ bài tệ hơn lúc máy nằm phòng khác.",
+   "en": "Desk phone: worse memory task.",
+   "emotion": "surprised",
+   "key": "c08v1-b04b",
+   "local": 0.15,
+   "dur": 3.588,
+   "t": 28.179
+  },
+  {
+   "beat": "clip-08.b05",
+   "scene": "b05",
+   "speaker": "hiep",
+   "say": "Họ còn thử tắt nguồn: không đổi gì. Chỗ để máy mới làm kết quả khác đi.",
+   "en": "Power off changed nothing.",
+   "emotion": "focused",
+   "key": "c08v1-b05",
+   "local": 0.15,
+   "dur": 4.753,
+   "t": 32.167
+  },
+  {
+   "beat": "clip-08.b05",
+   "scene": "b05a",
+   "speaker": "hiep",
+   "say": "Mình đoán úp xuống chỉ giấu màn hình thôi, máy vẫn nằm đó.",
+   "en": "Guess: just hides screen.",
+   "emotion": "reflective",
+   "key": "c08v1-b05a",
+   "local": 0.45,
+   "dur": 3.631,
+   "t": 37.62
+  },
+  {
+   "beat": "clip-08.b06",
+   "scene": "b06",
+   "speaker": "hiep",
+   "say": "Nghe vậy mình đỡ tự trách ý chí hẳn.",
+   "en": "Ease off blaming willpower.",
+   "emotion": "relieved",
+   "key": "c08v1-b06",
+   "local": 0.45,
+   "dur": 2.215,
+   "t": 41.951
+  },
+  {
+   "beat": "clip-08.b06",
+   "scene": "b06a",
+   "speaker": "hiep",
+   "say": "Tối nay mình cắm sạc máy ngoài phòng luôn. Bàn trống trơn, hết chỗ để liếc.",
+   "en": "Charge phone next door.",
+   "emotion": "focused",
+   "key": "c08v1-b06a",
+   "local": 0.15,
+   "dur": 4.521,
+   "t": 44.566
+  },
+  {
+   "beat": "clip-08.b06",
+   "scene": "b06b",
+   "speaker": "hiep",
+   "say": "Mai ngồi viết cũng để máy ngoài đó.",
+   "en": "Write tomorrow, phone outside.",
+   "emotion": "happy",
+   "key": "c08v1-b06b",
+   "local": 0.15,
+   "dur": 2.094,
+   "t": 49.487
+  },
+  {
+   "beat": "clip-08.b07",
+   "scene": "b07",
+   "speaker": "hiep",
+   "say": "Mình để ngoài vậy thôi, mỗi chỗ ngồi một kiểu.",
+   "en": "This way is mine alone.",
+   "emotion": "happy",
+   "key": "c08v1-b07",
+   "local": 0.45,
+   "dur": 2.847,
+   "t": 52.281
+  },
+  {
+   "beat": "clip-08.b07",
+   "scene": "b07a",
+   "speaker": "hiep",
+   "say": "Có ai úp máy rồi mắt vẫn liếc giống mình hông?",
+   "en": "Anyone else still glancing?",
+   "emotion": "happy",
+   "key": "c08v1-b07a",
+   "local": 0.15,
+   "dur": 2.617,
+   "t": 55.528
+  },
+  {
+   "beat": "clip-08.b07",
+   "scene": "b07b",
+   "speaker": "hiep",
+   "say": "Này bạn gỡ vụ liếc máy đó sao, comment kể mình nghe với nha.",
+   "en": "How do you ease glancing?",
+   "emotion": "happy",
+   "key": "c08v1-b07b",
+   "local": 0.15,
+   "dur": 3.486,
+   "t": 58.545
+  }
+ ],
+ "transitions": [
+  {
+   "at": 4.482,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 14.497,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 22.193,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 32.017,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 41.501,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 51.831,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 62.281,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "click",
+   "at": 0.995
+  },
+  {
+   "name": "click",
+   "at": 2.675
+  },
+  {
+   "name": "tick",
+   "at": 4.932
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 9.273
+  },
+  {
+   "name": "click",
+   "at": 11.586
+  },
+  {
+   "name": "tick",
+   "at": 14.947
+  },
+  {
+   "name": "pop",
+   "at": 17.41
+  },
+  {
+   "name": "whoosh-soft",
+   "at": 22.643
+  },
+  {
+   "name": "stamp",
+   "at": 25.901
+  },
+  {
+   "name": "rise",
+   "at": 28.429
+  },
+  {
+   "name": "ding",
+   "at": 32.167
+  },
+  {
+   "name": "tick",
+   "at": 37.62
+  },
+  {
+   "name": "pop",
+   "at": 41.951
+  },
+  {
+   "name": "ding",
+   "at": 44.566
+  },
+  {
+   "name": "tick",
+   "at": 49.487
+  },
+  {
+   "name": "tick",
+   "at": 52.281
+  },
+  {
+   "name": "pop",
+   "at": 55.528
+  },
+  {
+   "name": "ding",
+   "at": 58.545
+  },
+  {
+   "name": "swish",
+   "at": 4.362
+  },
+  {
+   "name": "swish",
+   "at": 14.377
+  },
+  {
+   "name": "swish",
+   "at": 22.073
+  },
+  {
+   "name": "swish",
+   "at": 31.897
+  },
+  {
+   "name": "swish",
+   "at": 41.381
+  },
+  {
+   "name": "swish",
+   "at": 51.711
+  },
+  {
+   "name": "swish",
+   "at": 62.161
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}
