@@ -54,6 +54,7 @@ tags: [index, retrieval]
 | voice-profile | profile | confirmed | `content/voice-profile.md` | Voice profile: Hiệp (@hi.oneup) |
 | docs.agents.domain | doc | ready | `docs/agents/domain.md` | Domain Docs |
 | docs.agents.issue-tracker | doc | ready | `docs/agents/issue-tracker.md` | Issue tracker: GitHub |
+| agents.skills-index | guide | ready | `docs/agents/skills-index.md` | Danh mục skill (một nguồn, mọi agent) |
 | search-xerj | convention | active | `docs/conventions/search-xerj.md` | Tìm kiếm bằng XERJ: repo + repo tham khảo |
 | storage | convention | active | `docs/conventions/storage.md` | Quy ước lưu trữ (luật 65, L-034) |
 | feat-srt-sidecar | feature | active | `docs/features/srt-sidecar.md` | SRT Sidecar Subtitle Feature |
@@ -71,7 +72,6 @@ tags: [index, retrieval]
 | docs.plans.trend-routine-prompt-v5 | plan | ready | `docs/plans/trend-routine-prompt-v5.md` | Routine: @hi.oneup trend digest v5 |
 | prompt.content-bot | prompt | ready | `docs/prompts/content-bot-prompt.md` | Prompt bot nội dung OneUp (Hiệp gửi) |
 | prompts.gemini-teardown | prompt | ready | `docs/prompts/gemini-teardown.md` | Prompt Gemini teardown |
-| prompt.hi-oneup-daily-trend-digest | prompt | ready | `docs/prompts/hi-oneup-daily-trend-digest.md` | Routine: @hi.oneup trend digest v5 |
 | prompts.reviewer-script | prompt | ready | `docs/prompts/reviewer-script.md` | Prompt reviewer độc lập (Pairwise A/B — Theme/Format-Matched Anchor) |
 | prompts.writer-hi-oneup | prompt | ready | `docs/prompts/writer-hi-oneup.md` | Master Writer Prompt @hi.oneup (Two-Pass Architecture) |
 | prompts.writer-vanhiep-tech | prompt | ready | `docs/prompts/writer-vanhiep-tech.md` | Prompt viết script @vanhiep.tech |
@@ -92,6 +92,7 @@ tags: [index, retrieval]
 | run.verify-clip06-2026-11-26 | log | draft | `logs/runs/verify-clip06-2026-11-26.md` | Nghiệm thu clip-06 v3 (DRAFT — chờ Hiệp duyệt Gate 1) |
 | media.README | readme | ready | `media/README.md` | README |
 | pipeline.characters-v2.README | readme | ready | `pipeline/characters-v2/README.md` | Character rig v2 (chibi, liquid) |
+| pipeline.legacy | guide | ready | `pipeline/legacy/README.md` | pipeline/legacy — script một lần của clip cũ (đóng băng) |
 | pipeline | workflow | active | `pipeline/pipeline.md` | Pipeline sản xuất 1 clip (theo rules v3.1, series comic-only) |
 | research.ace-music | research | reference | `research/agents/ace-music-research-vi.md` | Nghiên cứu: ACE-Step 1.5 (ace-step/ACE-Step-1.5) |
 | research.ace-music.tiktok-sound-trends | research | reference | `research/agents/ace-music-tiktok-sound-trends-2026-10-20.md` | Nhạc/âm thanh TikTok cho @hi.oneup (20/10/2026) |

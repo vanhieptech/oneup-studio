@@ -5,7 +5,7 @@
    "id": "agents",
    "type": "guide",
    "status": "active",
-   "updated": "2026-11-27",
+   "updated": "2026-11-28",
    "path": "AGENTS.md",
    "title": "AGENTS.md: cách AI làm việc trong repo này"
   },
@@ -335,6 +335,14 @@
    "title": "Issue tracker: GitHub"
   },
   {
+   "id": "agents.skills-index",
+   "type": "guide",
+   "status": "ready",
+   "updated": "2026-11-28",
+   "path": "docs/agents/skills-index.md",
+   "title": "Danh mục skill (một nguồn, mọi agent)"
+  },
+  {
    "id": "search-xerj",
    "type": "convention",
    "status": "active",
@@ -469,14 +477,6 @@
    "updated": "2026-11-26",
    "path": "docs/prompts/gemini-teardown.md",
    "title": "Prompt Gemini teardown"
-  },
-  {
-   "id": "prompt.hi-oneup-daily-trend-digest",
-   "type": "prompt",
-   "status": "ready",
-   "updated": "2026-10-16",
-   "path": "docs/prompts/hi-oneup-daily-trend-digest.md",
-   "title": "Routine: @hi.oneup trend digest v5"
   },
   {
    "id": "prompts.reviewer-script",
@@ -637,6 +637,14 @@
    "updated": "2026-10-13",
    "path": "pipeline/characters-v2/README.md",
    "title": "Character rig v2 (chibi, liquid)"
+  },
+  {
+   "id": "pipeline.legacy",
+   "type": "guide",
+   "status": "ready",
+   "updated": "2026-11-28",
+   "path": "pipeline/legacy/README.md",
+   "title": "pipeline/legacy — script một lần của clip cũ (đóng băng)"
   },
   {
    "id": "pipeline",
