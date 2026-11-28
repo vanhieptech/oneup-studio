@@ -88,6 +88,7 @@ tags: [index, retrieval]
 | rule-checklist | checklist | active | `logs/rule-checklist.md` | Rule checklist hợp nhất — OneUp / @hi.oneup |
 | rule-scoring-rubric | rubric | proposal-awaiting-hiep | `logs/rule-scoring-rubric.md` | Rubric chấm điểm script — OneUp / @hi.oneup (ĐỀ XUẤT, chưa chốt) |
 | rules-audit-2026-10-13 | log | done | `logs/rules-audit-2026-10-13.md` | Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0) |
+| runs-make-video-v3-benchmark-2026-11-28 | log | ready | `logs/runs/make-video-v3-benchmark-2026-11-28.md` | make-video v3 benchmark (2026-11-28) |
 | run.verify-clip06-2026-11-26 | log | draft | `logs/runs/verify-clip06-2026-11-26.md` | Nghiệm thu clip-06 v3 (DRAFT — chờ Hiệp duyệt Gate 1) |
 | run.voice-phase1-benchmark-2026-11-28 | note | ready | `logs/runs/voice-phase1-benchmark-2026-11-28.md` | Voice Phase-1 A/B — clip-08-dien-thoai-up-ban (2026-11-28) |
 | media.README | readme | ready | `media/README.md` | README |

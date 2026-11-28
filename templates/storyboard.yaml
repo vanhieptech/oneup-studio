@@ -1,0 +1,74 @@
+# Storyboard v1 — compact source for Remotion specs (make-video v3 / DL-094).
+# Compile: python3 pipeline/scripts/spec-compile.py --in <clip>/final/storyboard.yaml --out <clip>/final/spec.json
+# ≤ ~90 lines for a full clip. Visual presets expand to L-033-safe stage coords.
+
+clip: clip-00-example
+title: "Ví dụ storyboard gọn"
+theme: DARK
+pillar: "2 Giữ tập trung"
+trend: example-trend
+mode: default
+voice_engine: vieneu
+voice_prefix: c00v1
+voice_speed: 1.0
+layout: tiktok
+
+cover:
+  headline: "ÚP MÁY XUỐNG"
+  sub: "vẫn liếc"
+  mood: dark
+
+engagement:
+  - { type: loop, beat: b01, text: "úp máy", hook_word: "máy" }
+  - { type: relatable-question, beat: b07a, text: "Có ai vẫn liếc giống mình hông?" }
+  - { type: comment-challenge, beat: b07b, text: "kể mình nghe với nha" }
+
+beats:
+  - id: b01
+    part: hook
+    emotion: spark
+    text: "Ai cũng **bảo**."
+    en: Everyone says so.
+    visual: character_closeup
+    fx: { visual: "Chữ hook đập vào", word: bảo }
+    sfx: stamp
+
+  - id: b01a
+    part: hook
+    emotion: spark
+    text: "úp **máy** xuống là tập trung."
+    en: Face-down means focus.
+    visual: desk_phone_buzz
+    fx: { visual: "Máy úp giữa khung", word: máy }
+
+  - id: b02
+    part: dip
+    emotion: reflective
+    text: "Mình úp rồi mà mắt vẫn **liếc**."
+    en: I still glance anyway.
+    visual: character_closeup
+    fx: { visual: "Mắt liếc sang máy", word: liếc }
+
+  - id: b04
+    part: evidence
+    emotion: focused
+    text: "Nhóm **Ward** năm 2017 làm hai thí nghiệm."
+    en: Ward ran two lab tests.
+    visual: explainer_card
+    fx: { visual: "Thẻ Ward 2017", word: Ward }
+
+  - id: b06
+    part: action
+    emotion: warm
+    text: "Tối nay mình cắm sạc **ngoài phòng**."
+    en: Charge it outside tonight.
+    visual: split_compare
+    fx: { visual: "Bàn trống vs phòng khác", word: ngoài }
+
+  - id: b07a
+    part: cta
+    emotion: warm
+    text: "Có ai úp máy rồi mắt vẫn **liếc** giống mình hông?"
+    en: Anyone still glancing too?
+    visual: cta_peer
+    fx: { visual: "Câu hỏi ngang hàng", word: liếc }

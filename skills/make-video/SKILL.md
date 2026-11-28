@@ -6,7 +6,7 @@ description: >-
   intake to post package that keeps every clip consistent with rules/video-rules.md:
   read sources → script → humanizer → check-rules → review gate 1 → render → check-rules
   --final → review gate 2 → log decisions. Edits go to the spec, never a regenerate.
-version: "2.1.0"
+version: "3.0.0"
 metadata:
   author: OneUp Studio
   tags:
@@ -24,11 +24,11 @@ Run the full @hi.oneup comic+motion clip workflow from intake through review gat
 ## Thời lượng và Chốt (cập nhật 27/11, DL-076; thay các override 08/11 cũ)
 - Mục tiêu 60–180 s; clip cô đọng 60–119 s nằm trong mục tiêu. Giới hạn cứng: tổng **< 300 s** gồm end card, nghỉ, chuyển cảnh (đúng 300 s là fail). Khung gọn mặc định `ONEUP-CORE-ARC` ~60–90 s: đủ ý thì dừng, không kéo dài, không bóp cụt chất kể chuyện. Không quota chữ, không tăng tốc giọng.
 - **Trước Chốt** = chỉ text: Script Draft + Bảng khung mạch + ý Hình / Caption EN / nhấn dạng chữ. Thời lượng chỉ là ƯỚC theo nhịp đọc tự nhiên; kiểm «đọc to nghe một lần» vẫn là NOT TESTED nếu chưa thật sự làm trên đúng lời đó. **Không** sinh ảnh, TTS, still, render hay đăng trước Chốt (L-098); đặc biệt đừng chạy `build-final.py --stage plans` vì nó có thể gọi voice. Lúc duyệt lời gửi script + kế hoạch cảnh/motion dạng text.
-- **Sau Chốt** = dựng `final/spec.json` từ đúng lời đã duyệt, đo thời lượng thật (< 300 s gồm end card), rồi TTS / hình / render (§2P trở đi). Mọi luật sản xuất sau Chốt giữ nguyên.
+- **Sau Chốt** = viết `final/storyboard.yaml` (~80 dòng) → `spec-compile.py` → `build-final.py --preview` (540p + contact sheet) → sau duyệt preview mới `build-final.py` full 1080p60 + 720p (§2P). Mọi luật sản xuất sau Chốt giữ nguyên (`DL-094`).
 
 Repo: `oneup-studio` (local checkout; chạy mọi lệnh từ gốc repo `git rev-parse --show-toplevel`; toolchain `$ONEUP_TOOLS_DIR`, mặc định `~/oneup-tools/`, qua `pipeline/paths.py`).
 Active checklist rút gọn: `rules/ACTIVE-CHECKLIST.md`. Draft QA gộp 1 lệnh: `python3 pipeline/scripts/check-rules.py --draft <script.md>`.
-Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post).
+Reference implementation: `content/archive/clip-01-implementation-intention/final/` (spec, explainer template, script-final, post). Schema gọn: `templates/storyboard.yaml`.
 
 ## 0. How Hiệp asks (intake)
 | Hiệp writes | Agent does |
@@ -37,7 +37,9 @@ Reference implementation: `content/archive/clip-01-implementation-intention/fina
 | `Làm clip tiếp theo` | Chạy `python3 pipeline/scripts/ideate-clip.py --clip <clip-slug>` (`trend-match.py`, F2/F6): kiểm độ tươi Radar (< 48h), khớp đảo chiều Trend tươi (< 72h) × bài học chưa làm trong `content/theme-map.md` (Agile Slot Swap giữ chuẩn `LIGHT/DARK ≤ 2`; nếu không có trend khớp tự nhiên thì tự chuyển sang *Pain-Wave Fallback* từ `audience-pain-bank.md`, không ép meme gượng) → trình Top 3 cặp cho Hiệp chọn ở Gate 0 |
 | `Làm clip về <chủ đề / trend>` | pick the best Bridge for it in `research/trends/ingest.md` (or make one, rule-39) → map to a HowToLiveBetter lesson → next free clip id; theme by tone (rule-17) |
 | `Làm lại clip-NN` / `clip-NN v2` | reuse `content/clips/clip-NN-*/final/spec.json`, add a `revisions` row |
-| Optional add-ons in the same message | `tuần N` (default: theme-map week) · `có Omi` / `không Omi` · `dark`/`light` · `chuyện: S-xx` (story-bank id) |
+| `--fast` | Bỏ Đấu trường 3 kịch bản khi Hiệp đã chỉ góc kể hoặc gửi `--memo` (ghi âm 60s). Chạy 1 bản Pure-Voice + 1 lượt Pairwise Reviewer → Gate 1. Giữ `script-arena.py` mặc định cho chủ đề mới/khó hoặc `--soul`. |
+| `--voice-mode direct\|vieneu\|f5` | Engine giọng sau Chốt. Mặc định `vieneu` nếu không có thu mộc; `direct` ngay khi Hiệp cung cấp file thu 90s; `f5` khi cần phiên âm/`say` + F5. |
+| Optional add-ons in the same message | `tuần N` (default: theme-map week) · `có Omi` / `không Omi` · `dark`/`light` · `chuyện: S-xx` (story-bank id) · `--fast` · `--memo <path>` · `--voice-mode …` · `--soul` |
 Ask only what blocks a decision (rule: ask before deciding). Never invent a personal story; unknown details stay generic and go to the confirm list.
 
 ## 1. Read before writing (always, in this order)
@@ -83,10 +85,24 @@ Ngay ở bước này chốt **1 câu hỏi trung tâm duy nhất** («clip này
 1. `python3 pipeline/scripts/check-rules.py --draft <draft.md>`: bắt buộc **0 lỗi cứng ✖**. ✖ chỉ phát cho Tier-1 và ràng buộc nguồn/cấu trúc thật: H1 (`L-088`, `L-096` dẫn chứng không nguồn), H2 (ước ≥ 300 s), H3 (`L-053`), H4 (không đọc được beat / beat trống), cùng `L-087` (ví dụ môn học). Mọi check phong cách (`choppy`, `flow`, `link`, `repeat`, `clarity`, `bookish`, `ai-structure`, `connector-stuffing`…) chỉ là ⚠ tham khảo: **không hàn câu hay nhại chữ để xoá ⚠ nếu câu đọc lên mất tự nhiên**. `check-rules.py --audit` in lại bộ style để tham khảo.
 2. `python3 pipeline/scripts/audio-precheck.py <draft.md>` (hơi dài > 32 âm tiết không dấu ngắt; mở beat lặp; `HOOK_LONG` b01 > 22 · `SLOW_ENTRY` b01+b02 > 65 · `BEAT_BLOAT` beat > 45 âm tiết; `FLAT_CADENCE` ≥ 4 câu liền đều độ dài · `MISSING_VULNERABILITY_DIP` nửa đầu thiếu nhịp chùng đồng cảm; xuất `VOICE_REF_MAP` ánh xạ sẵn beat → `thai-son-v2/serious/happy`; `--audition-hook` chỉ khi Hiệp muốn nghe thử).
 3. **BẮT BUỘC** chạy Reviewer độc lập trong subagent mới, **khác model với người viết** (§4b; nếu dùng Đấu trường 3 kịch bản `script-arena.py`, chạy `script-arena.py score --dir <clip>/archive/arena` rồi giao Reviewer ở chế độ **Tournament Judge** chọn **Top 1 + 1 Á quân khác màu cảm xúc**). Xác nhận `python3 pipeline/scripts/check-rules.py --review <draft.md>` PASS (0 `HARD_FAILS`, `review.md` khớp `script_hash`, `final/feedback.md` tồn tại và `feedback_seen` bằng số góp ý) trước khi gửi Hiệp. Tối đa 2 vòng review; vẫn CẦN SỬA thì gửi Hiệp kèm các điểm còn mở thay vì lặp.
-Sau khi Hiệp Chốt: dựng `final/spec.json` từ đúng lời đã duyệt (cùng lời ⇒ cùng `script_hash`, review còn hiệu lực), chuyển số sang cách đọc, rồi §2P trở đi.
+Sau khi Hiệp Chốt: viết `final/storyboard.yaml` từ đúng lời đã duyệt (cùng lời ⇒ cùng `script_hash`, review còn hiệu lực) → biên dịch `spec.json` → §2P.
 
-## 2P. SAU CHỐT: `final/spec.json` + TTS Giọng Người Thật (`DL-073`, `DL-086`) / Visual / Render
-Từ đây mới sinh voice, hình, render. **Bật sẵn `"voice_refs": true` trong `spec.json` cho mọi clip mới** để `voice-phrase-f5.py` tự chuyển sắc thái giọng theo tâm lý từng câu: `happy`/`teasing` → `thai-son-happy`; `evidence` → `thai-son-serious`; `reflective`/`sad`/`maxim` (câu tâm sự, nỗi buồn, châm ngôn sống đúc kết) → `thai-son-v2` ấm trầm với tốc độ chậm tự nhiên `0.93×`, khoảng nghỉ thở `…` `0.50s`, câu tự nhủ `{nhỏ: …}` và hạ nhẹ tông cuối câu `-1.2 st` như người thật thở ra sau một suy ngẫm. Mọi luật sản xuất dưới đây giữ nguyên.
+## 2P. SAU CHỐT: `storyboard.yaml` → `spec-compile` → preview → full (`DL-094`, `DL-073`, `DL-086`)
+Từ đây mới sinh voice, hình, render. Luồng v3.0 (giảm ~75% file AI phải viết sau Gate 1):
+
+1. **Viết `final/storyboard.yaml`** (~80 dòng, mẫu `templates/storyboard.yaml`): clip meta + cover + engagement (≥3, rule-56) + beats phẳng (`id`, `part`, `emotion`, `text`/`**hl**`, `en` ≤8 từ, `visual` preset, `fx` bắt buộc rule-52; `say` chỉ khi `--voice-mode f5`).
+2. **Biên dịch:**
+   ```bash
+   python3 pipeline/scripts/spec-compile.py \
+     --in <clip>/final/storyboard.yaml \
+     --out <clip>/final/spec.json \
+     [--merge-existing]   # giữ revisions + override thủ công (rule-36)
+   ```
+   Compiler tự: gom `hook` (rule-55, lead 0.06 / tail 0.15), `hl` từ `**…**`, `phrases` + `voice_ref` theo emotion/engine, tọa độ `VISUAL_PRESETS` (L-033), SFX mặc định rule-50/51. Decompile kiểm chứng: `--decompile <spec.json> --out <storyboard.yaml>`.
+3. **Preview nhanh (<30s mục tiêu):** `python3 pipeline/scripts/build-final.py <clip>/final/spec.json --preview` → `final/out/<id>-preview-540p.mp4` + `final/contact-sheet.png` (540×960, 24fps, CRF 28, mix −14 LUFS). Gate 2 QA nháp: `gate2-qa.py` trên preview. Beat-hash cache: `final/out/.build-cache.json` — sửa 1 câu chỉ rebuild beat đổi (`cache hit: X/Y`).
+4. **Full quality** (sau duyệt preview): `python3 pipeline/scripts/build-final.py <clip>/final/spec.json` (1080p + 720p).
+
+**Bật sẵn `"voice_refs": true` trong `spec.json` cho mọi clip mới** (hoặc để compiler set theo `voice_engine`) để engine giọng tự chuyển sắc thái theo emotion. `--voice-mode direct|vieneu|f5` (mặc định `vieneu`; `direct` khi có thu 90s). F5 path: `happy`/`teasing` → `thai-son-happy`; `evidence` → `thai-son-serious`; `reflective`/`sad`/`maxim` → `thai-son-v2` 0.93× + nghỉ `…` 0.50s + hạ cuối `-1.2 st`. Mọi luật sản xuất dưới đây giữ nguyên.
 
 **Script template (sau Chốt, Hiệp 16/10, clip-02 v16/v17):** write `final/script-final.md` from `templates/script.md` — beat frame Hook (cut) → problem stems → evidence + signs → spoken HTB message → 2 concrete how-to beats (source + linked items, optional callback to the previous clip) → CTA echo; table `Beat | Giây | Người nói | Lời thoại | Hình / caption EN` with `|` phrase splits and `{nhấn:}` marks (L-036).
 Build the spec from the approved draft words (format below). Structure rule-41: hook 0–3s → struggle → turn → lesson/explainer → evidence → payoff → CTA question, last line loops to the hook. Target 60–180s at natural pacing; a finished story shorter than 120s stays short. Finished total strictly <300s including endcard, pauses and transitions. No hard word quota. Numbers are written as read aloud in `say` (e.g. 254 → "hai trăm năm mươi tư").

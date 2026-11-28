@@ -2,7 +2,9 @@
 """Build a final clip from ONE source spec (content/clips/<clip>/final/spec.json).
 
   build-final.py <spec.json> [--stage voice-phrase|voice|plans|render|assemble|all]   (default all)
-                 [--voice-mode auto|direct|vieneu|f5]   (or spec.voice_engine: direct|vieneu|f5-tts)
+                 [--voice-mode auto|direct|vieneu|f5]   (or spec.voice.engine / voice_engine)
+                 [--preview]   make-video v3: 540×960 CRF28, out/<id>-preview-540p.mp4 + contact-sheet.png (DL-094)
+                 [--draft]     legacy alias of fast scale (still supported)
   voice-phrase: lines with {nhấn:} → voice-phrase-f5.py gen → F5 batches → pick → stitch (L-036); cached by final/voice-stt-<prefix>.json
                 [--scenes b01,b01b,...]  partial preview: only these scene/section ids (parts left empty are dropped);
                                          outputs go to <final>/preview/ (plan-*-preview, timing-preview.json, <id>-preview.mp4)
@@ -20,6 +22,7 @@ Stages (each reuses cached output; edit the spec, never the generated files):
 Outputs: <final>/out/*.mp4 (gitignored) and <final>/<id>.mp4, timing.json (for STT/QA + script table).
 """
 import hashlib, json, os, re, subprocess, sys, math, wave, struct
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 import paths as P  # rule-65 canonical paths
@@ -33,6 +36,99 @@ HF_VER = P.HYPERFRAMES_VERSION
 FPS = 30
 XF = 0.35  # cross-part transition
 INTER_CRF = 10  # per-part renders are intermediates: near-lossless so only the final encode is lossy (no double generation loss)
+
+
+def beat_hash(scene: dict, voice_sha: str = "") -> str:
+    """Stable per-beat fingerprint for rule-36 rebuild skip (DL-094)."""
+    lines = scene.get("lines") or []
+    line0 = lines[0] if lines else {}
+    payload = [
+        scene.get("id"),
+        line0.get("text"),
+        line0.get("emotion"),
+        scene.get("framing"),
+        scene.get("fx"),
+        scene.get("sfx"),
+        scene.get("props"),
+        voice_sha,
+    ]
+    return hashlib.sha1(json.dumps(payload, ensure_ascii=False, sort_keys=True, default=str).encode()).hexdigest()[:16]
+
+
+def load_build_cache(fdir: str) -> dict:
+    p = os.path.join(fdir, "out", ".build-cache.json")
+    if os.path.isfile(p):
+        try:
+            return json.load(open(p, encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_build_cache(fdir: str, cache: dict) -> None:
+    os.makedirs(os.path.join(fdir, "out"), exist_ok=True)
+    json.dump(cache, open(os.path.join(fdir, "out", ".build-cache.json"), "w"), ensure_ascii=False, indent=2)
+
+
+def summarize_beat_cache(spec: dict, fdir: str) -> tuple[list[str], list[str]]:
+    """Return (hits, rebuilt) scene ids vs previous .build-cache.json; rewrite cache."""
+    old = load_build_cache(fdir).get("beats") or {}
+    new, hits, rebuilt = {}, [], []
+    vpre = spec.get("voice_prefix")
+    for _, sc, l in all_lines(spec):
+        key = l.get("_key") or ""
+        vp = os.path.join(VE, "public/voice", key + ".wav") if key else ""
+        vsha = _file_sha(vp)[:16] if vp and os.path.isfile(vp) else ""
+        # scene-level hash (one line scenes typical)
+        h = beat_hash(sc, vsha)
+        sid = sc["id"]
+        new[sid] = h
+        if old.get(sid) == h:
+            hits.append(sid)
+        else:
+            rebuilt.append(sid)
+    save_build_cache(fdir, {"beats": new})
+    print(f"cache hit: {len(hits)}/{len(new)} beats, rebuilt: {rebuilt}", flush=True)
+    return hits, rebuilt
+
+
+def render_cover_still(spec: dict, fdir: str) -> None:
+    """Cover template A → cover/cover-a.png + cover.png (best-effort; skip if Remotion Cover missing)."""
+    cover = spec.get("cover") or {}
+    if not cover:
+        return
+    cdir = os.path.join(fdir, "cover")
+    os.makedirs(cdir, exist_ok=True)
+    props = os.path.join(cdir, "cover-props.json")
+    json.dump(cover, open(props, "w"), ensure_ascii=False)
+    out_a = os.path.join(cdir, "cover-a.png")
+    out = os.path.join(fdir, "cover.png")
+    try:
+        sh(["npx", "remotion", "still", "src/index.ts", "Cover", out_a, f"--props={props}"], cwd=VE)
+        if os.path.isfile(out_a):
+            import shutil
+            shutil.copy2(out_a, out)
+            print(f"cover → {_rel(out)}", flush=True)
+    except Exception as e:
+        print(f"warn: cover still skipped ({e})", flush=True)
+
+
+def make_contact_sheet(mp4: str, out_png: str, cols: int = 3, rows: int = 4) -> None:
+    """Sparse frame grid for Gate 2 QA (L-001)."""
+    if not os.path.isfile(mp4):
+        return
+    dur = float(subprocess.run([FFPROBE, "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", mp4], capture_output=True, text=True).stdout or "0")
+    n = cols * rows
+    if dur <= 0 or n < 1:
+        return
+    # tile filter: pick n frames evenly
+    sel = "+".join(f"eq(n\\,{max(0, int(i * (dur * 30) / max(1, n - 1)))})" for i in range(n))
+    vf = f"select='{sel}',scale=180:-1,tile={cols}x{rows}"
+    try:
+        sh([FFMPEG, "-y", "-loglevel", "error", "-i", mp4, "-vf", vf, "-frames:v", "1", "-update", "1", out_png])
+        print(f"contact-sheet → {_rel(out_png)}", flush=True)
+    except Exception as e:
+        print(f"warn: contact-sheet skipped ({e})", flush=True)
 
 def _rel(path):
     try:
@@ -349,13 +445,19 @@ def _voice_mode(spec):
 
 def main():
     specp = os.path.abspath(sys.argv[1]); stage = sys.argv[sys.argv.index("--stage") + 1] if "--stage" in sys.argv else "all"
-    draft = "--draft" in sys.argv; no_cache = "--no-cache" in sys.argv; scene_cache = "--no-scene-cache" not in sys.argv
+    preview = "--preview" in sys.argv
+    draft = "--draft" in sys.argv or preview  # --preview is the v3 fast path (540p)
+    no_cache = "--no-cache" in sys.argv; scene_cache = "--no-scene-cache" not in sys.argv
     sync_shared()  # rule-65: fonts/logo copies from brand/ (gitignored)
     fdir = os.path.dirname(specp); spec = json.load(open(specp)); os.makedirs(os.path.join(fdir, "out"), exist_ok=True)
     sel = sys.argv[sys.argv.index("--scenes") + 1].split(",") if "--scenes" in sys.argv else None
-    sfxn = ("-preview" if sel else "") + ("-draft" if draft else "")
-    odir = os.path.join(fdir, "preview") if (sel or draft) else os.path.join(fdir, "out"); os.makedirs(odir, exist_ok=True)
+    sfxn = ("-preview" if sel else "") + ("-draft" if draft and not preview else "") + ("-preview-540p" if preview and not sel else "")
+    odir = os.path.join(fdir, "preview") if sel else (os.path.join(fdir, "out") if preview else (os.path.join(fdir, "preview") if draft else os.path.join(fdir, "out")))
+    if draft and not preview and not sel:
+        odir = os.path.join(fdir, "preview")
+    os.makedirs(odir, exist_ok=True)
     tj = os.path.join(odir, f"timing{sfxn}.json") if (sel or draft) else os.path.join(fdir, "timing.json")
+    out_fps = 24 if preview else FPS
     if sel:
         for p in spec["parts"]:
             for k in ("scenes", "sections"):
@@ -378,6 +480,7 @@ def main():
         stage_voice_phrase(specp, spec, force=stage == "voice-phrase")
     if stage == "voice-phrase": return
     stage_voice(spec)
+    summarize_beat_cache(spec, fdir)
     parts = []; timing = []; offset = 0.0
     for p in spec["parts"]:
         if p["engine"] == "remotion":
@@ -415,7 +518,16 @@ def main():
     if stage in ("voice", "plans"): return
     part_crf = 28 if draft else INTER_CRF
     part_scale = 0.5 if draft else 1
-    if stage in ("render", "all"):
+
+    def _branch_cover():
+        print("[parallel] cover", flush=True)
+        render_cover_still(spec, fdir)
+
+    def _branch_render():
+        print("[parallel] remotion/hyperframes render", flush=True)
+        _do_render()
+
+    def _do_render():
         src_sha = _dir_sha(os.path.join(VE, "src"))
         rem_todo = []
         chunk_jobs = []       # (chunk_plan_path, chunk_mp4_path, chunk_ck)
@@ -482,6 +594,18 @@ def main():
                 sh(hf_args, cwd=q["dir"])
                 sh([FFMPEG, "-loglevel", "error", "-y", "-i", silent, "-i", os.path.join(fdir, "out", f"{q['id']}-voice.wav"), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", q["mp4"]])
                 open(q["mp4"] + ".sha256", "w").write(q["_ck"] + "\n")
+
+    if stage in ("render", "all"):
+        # DL-094: cover still ∥ remotion/hf render (independent after plans+voice)
+        with ThreadPoolExecutor(max_workers=2) as pool:
+            futs = {pool.submit(_branch_cover): "cover", pool.submit(_branch_render): "render"}
+            for fut in as_completed(futs):
+                name = futs[fut]
+                try:
+                    fut.result()
+                    print(f"[parallel] {name} ok", flush=True)
+                except Exception as e:
+                    raise SystemExit(f"[parallel] {name} FAILED: {e}") from e
     # assemble (two passes: audio graph first, then video + mux; one big graph with lavfi sources can deadlock)
     for q in parts:
         real = float(subprocess.run([FFPROBE, "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", q["mp4"]], capture_output=True, text=True).stdout)
@@ -491,7 +615,7 @@ def main():
     scale_sz = "540:960:" if draft else ""
     for i, q in enumerate(parts):
         ins += ["-i", q["mp4"]]
-        vf.append(f"[{i}:v]trim=0:{q['dur']},setpts=PTS-STARTPTS,fps={FPS},scale={scale_sz}in_color_matrix=bt709:out_color_matrix=bt709:out_range=tv,format=yuv420p,setsar=1[v{i}]")
+        vf.append(f"[{i}:v]trim=0:{q['dur']},setpts=PTS-STARTPTS,fps={out_fps},scale={scale_sz}in_color_matrix=bt709:out_color_matrix=bt709:out_range=tv,format=yuv420p,setsar=1[v{i}]")
         af.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=mono,apad,atrim=0:{q['dur']},asetpts=PTS-STARTPTS[a{i}]" if not spec.get("voice_track") else f"anullsrc=r=48000:cl=mono,atrim=0:{q['dur']}[a{i}]")
     vprev, aprev, acc = "v0", "a0", parts[0]["dur"]; starts = [0.0]
     for i in range(1, len(parts)):
@@ -555,12 +679,18 @@ def main():
     else:
         vf.append(f"[{vprev}]noise=alls=4:allf=t,format=yuv420p[v]")  # light film grain over the whole clip (rule-20)
         v_enc = ["-c:v", "libx264", "-profile:v", "high", "-crf", "20", "-maxrate", "14M", "-bufsize", "28M"]
-    out = os.path.join(odir, spec["id"] + sfxn + ".mp4")
+    if preview and not sel:
+        os.makedirs(os.path.join(fdir, "out"), exist_ok=True)
+        out = os.path.join(fdir, "out", spec["id"] + "-preview-540p.mp4")
+    else:
+        out = os.path.join(odir, spec["id"] + sfxn + ".mp4")
     sh([FFMPEG, "-loglevel", "error", "-y", *ins, "-i", wav, "-filter_complex", ";".join(vf), "-map", "[v]", "-map", f"{len(parts)}:a", *v_enc,
-        "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv", "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", out])
+        "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv", "-r", str(out_fps), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest", "-movflags", "+faststart", out])
     t2 = json.load(open(tj)); t2["total"] = total; t2["partStarts"] = starts
     json.dump(t2, open(tj, "w"), ensure_ascii=False, indent=1)
     print("final →", out, f"({total}s)")
+    if preview or draft:
+        make_contact_sheet(out, os.path.join(fdir, "contact-sheet.png"))
     
     # Generate SRT sidecar (English captions synced to TTS timing)
     if not sel and not draft:  # only for full clips, not preview/draft

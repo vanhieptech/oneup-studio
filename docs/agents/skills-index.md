@@ -20,7 +20,7 @@ Mọi lệnh trong skill chạy từ gốc repo (`cd "$(git rev-parse --show-top
 
 | Skill | Nguồn | Khi nào dùng | Công cụ/CLI cần |
 |---|---|---|---|
-| `make-video` | `skills/make-video/` | Hiệp bảo làm clip @hi.oneup («Làm clip tiếp theo», «làm lại clip-NN», góp ý beat). Quy trình bắt buộc (luật 48). | `ideate-clip.py`, `script-arena.py`, `audio-precheck.py`, `check-rules.py`, `build-final.py`, `golden-sync.py`, `video-engine` (npm), F5-TTS; Reviewer cần subagent khác model hoặc `review-eval.py` |
+| `make-video` | `skills/make-video/` | Hiệp bảo làm clip @hi.oneup («Làm clip tiếp theo», «làm lại clip-NN», góp ý beat). Quy trình bắt buộc v3.0 (luật 48, `DL-094`): `--fast` / `--voice-mode` / `storyboard.yaml` → `spec-compile` → `--preview`. | `ideate-clip.py`, `script-arena.py`, `spec-compile.py`, `audio-precheck.py`, `check-rules.py`, `build-final.py` (`--preview`), `golden-sync.py`, `video-engine` (npm), VieNeu/F5/direct; Reviewer subagent khác model hoặc `review-eval.py` |
 | `trend-digest` | `skills/trend-digest/` | Quét trend hằng ngày / tổng hợp Chủ nhật cho @hi.oneup. | `trend-collect.py`, `trend-streams.py`, `radar-fetch.py`, `apify-run.py` (`APIFY_TOKEN`), `tinyfish`, `ego-browser`; X qua MCP nếu agent có |
 | `script-polish` | `skills/script-polish/` | Sau khi có kịch bản đã kiểm fact, trước khi gửi Hiệp duyệt: bỏ giọng AI, chuyển sang văn nói. | đọc `humanizer`, `content/voice-profile.md` |
 | `humanizer` | `skills/humanizer/` | Sửa văn bản nghe như AI (vendored, MIT). | không |

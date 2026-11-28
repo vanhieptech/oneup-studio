@@ -1,0 +1,278 @@
+clip: clip-08
+title: Điện thoại úp bàn vẫn ăn sự tập trung
+theme: DARK
+pillar: 2 Giữ tập trung
+trend: pain-wave-phone-face-down
+mode: default
+voice_engine: f5-tts
+voice_prefix: c08v1
+voice_speed: 1.0
+layout: tiktok
+cover:
+  headline: ÚP MÁY XUỐNG
+  sub: ''
+  mood: dark
+engagement:
+- type: loop
+  beat: b07a
+  text: mắt vẫn liếc
+  hook_word: liếc
+- type: relatable-question
+  beat: b07a
+  text: Có ai úp máy rồi mắt vẫn liếc giống mình hông?
+- type: comment-challenge
+  beat: b07b
+  text: kể mình nghe với nha
+beats:
+- id: b01
+  part: hook
+  emotion: spark
+  text: Ai cũng **bảo**.
+  en: Everyone says so.
+  visual: character_closeup
+  fx:
+    visual: Cắt sát mặt frame 0, chữ ÚP MÁY XUỐNG
+    word: bảo
+  sfx: stamp
+  narration: ÚP MÁY XUỐNG
+  hl:
+  - 2
+- id: b01mid
+  part: hook
+  emotion: spark
+  text: úp **máy** xuống là tập trung.
+  en: Face-down means focus.
+  visual: character_closeup
+  fx:
+    visual: Điện thoại úp sấp nổi giữa khung đúng chữ máy
+    word: máy
+  sfx: click
+  link: 'nêu niềm tin đám đông: úp máy là tập trung'
+  hl:
+  - 1
+- id: b01a
+  part: hook
+  emotion: sad
+  text: Mình úp rồi, mắt vẫn **liếc** á.
+  en: I flipped it. Eyes glance.
+  visual: character_closeup
+  fx:
+    visual: Mắt Hiệp lệch sang lưng máy úp đúng chữ liếc
+    word: liếc
+  sfx: click
+  link: lật niềm tin úp = tập trung bằng chính mắt liếc của mình
+  hl:
+  - 4
+- id: b02
+  part: dip
+  emotion: sad
+  text: Cứ vài giây là mắt **lia** qua lưng điện thoại, như đang chờ nó rung.
+  en: Eyes dart to phone back.
+  visual: character_closeup
+  fx:
+    visual: Mắt lia 3 nhịp sang lưng máy
+    word: lia
+  sfx: tick
+  link: mở rộng từ cú liếc sang nhịp lia lặp lại
+  hl:
+  - 0
+- id: b02a
+  part: dip
+  emotion: sad
+  text: Viết dở nửa dòng, chữ bay **mất**.
+  en: Half a line gone.
+  visual: character_closeup
+  fx:
+    visual: Nửa dòng chữ trên giấy trắng dần đúng chữ mất
+    word: mất
+  sfx: whoosh-soft
+  link: 'hậu quả ngay khi mắt lia: chữ trên giấy bay mất'
+  hl:
+  - 3
+- id: b02b
+  part: dip
+  emotion: sad
+  text: Mình tự trách, chắc mình **yếu** ý chí quá hà.
+  en: I blame weak will.
+  visual: character_closeup
+  fx:
+    visual: Vai Hiệp chùng, bong bóng tự trách yếu ý chí
+    word: yếu
+  sfx: click
+  link: từ chữ bay mất nhảy sang tự trách yếu ý chí
+  hl:
+  - 3
+- id: b03
+  part: story
+  emotion: confused
+  text: Mà mình có **bấm** đâu. Máy úp **im**.
+  en: I never tap it.
+  visual: character_closeup
+  fx:
+    visual: Tay không chạm máy; máy úp im trên bàn
+    word: bấm
+  sfx: tick
+  link: 'phản biện lời tự trách: mình đâu có bấm máy'
+  hl:
+  - 2
+- id: b03a
+  part: story
+  emotion: curious
+  text: Vậy cái vụ xao nhãng này tại ý chí thiệt **hông**, hay tại máy còn nằm ngay
+    trước mặt?
+  en: Weak will — or phone there?
+  visual: character_closeup
+  fx:
+    visual: Dấu hỏi lớn giữa «ý chí» và «máy trước mặt»
+    word: hông
+  sfx: pop
+  link: 'đặt câu hỏi trung tâm: ý chí hay máy còn trước mặt'
+  hl:
+  - 0
+- id: b04
+  part: explain
+  emotion: focused
+  text: Có người thử đúng vụ máy nằm trước mặt rồi.
+  en: Someone tested phone upfront.
+  visual: character_closeup
+  fx:
+    visual: Cầu nối từ câu hỏi sang thí nghiệm — mũi tên «máy trước mặt»
+    word: trước mặt
+  sfx: whoosh-soft
+  link: dẫn từ câu hỏi máy trước mặt sang người đã thử
+  hl:
+  - 1
+- id: b04a
+  part: explain
+  emotion: focused
+  text: Nhóm Ward năm **2017** làm hai thí nghiệm.
+  say: Nhóm Oát năm 2017 làm 2 thí nghiệm.
+  en: Ward team, year 2017.
+  visual: character_closeup
+  fx:
+    visual: Thẻ WARD ET AL. 2017 đóng xuống
+    word: '2017'
+  sfx: stamp
+  link: mở thẻ nguồn Ward 2017 sau câu dẫn
+  hl:
+  - 0
+- id: b04b
+  part: explain
+  emotion: surprised
+  text: Máy trên bàn thì người ta nhớ bài **tệ** hơn lúc máy nằm phòng khác.
+  en: 'Desk phone: worse memory task.'
+  visual: character_closeup
+  fx:
+    visual: Hai ô bàn vs phòng khác; thanh bàn thấp hơn
+    word: tệ
+  sfx: rise
+  link: 'nêu kết quả: máy trên bàn nhớ bài tệ hơn phòng khác'
+  hl:
+  - 3
+- id: b05
+  part: explain
+  emotion: focused
+  text: 'Họ còn thử tắt **nguồn**: không đổi gì. **Chỗ** để máy mới làm kết quả khác
+    đi.'
+  en: Power off changed nothing.
+  visual: character_closeup
+  fx:
+    visual: Công tắc nguồn = ; mũi tên chỗ để máy
+    word: Chỗ
+  sfx: ding
+  link: 'đuôi thí nghiệm: tắt nguồn không đổi, chỗ để máy mới đổi'
+  hl:
+  - 0
+- id: b05a
+  part: payoff
+  emotion: dip
+  text: Mình **đoán** úp xuống chỉ giấu màn hình thôi, máy vẫn nằm đó.
+  en: 'Guess: just hides screen.'
+  visual: character_closeup
+  fx:
+    visual: Nhãn nhỏ «mình đoán» trên máy úp vẫn nằm đó
+    word: đoán
+  sfx: tick
+  link: 'dịch nghĩa cho mình: úp chỉ giấu màn, máy vẫn nằm đó'
+  hl:
+  - 3
+- id: b06
+  part: payoff
+  emotion: relieved
+  text: Nghe vậy mình đỡ tự **trách** ý chí hẳn.
+  en: Ease off blaming willpower.
+  visual: character_closeup
+  fx:
+    visual: Vai hạ, bong bóng tự trách mờ đi
+    word: trách
+  sfx: pop
+  link: khép vòng tự trách sau khi nghe chỗ để máy mới đổi
+  hl:
+  - 3
+- id: b06a
+  part: payoff
+  emotion: focused
+  text: Tối nay mình cắm **sạc** máy ngoài phòng luôn. Bàn trống **trơn**, hết chỗ
+    để liếc.
+  en: Charge phone next door.
+  visual: character_closeup
+  fx:
+    visual: Máy cắm sạc phòng bên; bàn trống trơn
+    word: sạc
+  sfx: ding
+  link: 'việc tối nay: cắm sạc ngoài, bàn trống trơn'
+  hl:
+  - 0
+- id: b06b
+  part: payoff
+  emotion: happy
+  text: Mai ngồi viết cũng để máy ngoài đó.
+  en: Write tomorrow, phone outside.
+  visual: character_closeup
+  fx:
+    visual: Mắt nhìn thẳng tờ giấy, chỗ máy còn trống
+    word: ngoài đó
+  sfx: tick
+  link: giữ luật sang ngày mai khi ngồi viết
+  hl:
+  - 0
+- id: b07
+  part: summary
+  emotion: happy
+  text: Mình để ngoài vậy **thôi**, mỗi chỗ ngồi một kiểu.
+  en: This way is mine alone.
+  visual: character_closeup
+  fx:
+    visual: Hiệp hạ vai, không giảng
+    word: thôi
+  sfx: tick
+  link: hạ cái tôi trước khi hỏi người xem
+  hl:
+  - 3
+- id: b07a
+  part: summary
+  emotion: happy
+  text: Có ai úp máy rồi mắt vẫn **liếc** giống mình hông?
+  en: Anyone else still glancing?
+  visual: character_closeup
+  fx:
+    visual: Hiệp nghiêng đầu hỏi, chỗ máy trên bàn còn trống
+    word: liếc
+  sfx: pop
+  link: 'đồng cảm: ai cũng úp máy rồi vẫn liếc giống mình'
+  hl:
+  - 3
+- id: b07b
+  part: cta
+  emotion: happy
+  text: Bạn gỡ khúc liếc đó **sao**, comment kể mình nghe với nha.
+  say: Này bạn gỡ vụ liếc máy đó sao, comment kể mình nghe với nha.
+  en: How do you ease glancing?
+  visual: cta_peer
+  fx:
+    visual: Hiệp gật nhẹ chờ câu chuyện, không giơ nút like
+    word: sao
+  sfx: ding
+  link: mở tai nghe cách mỗi người gỡ khúc liếc
+  hl:
+  - 4

@@ -607,6 +607,14 @@
    "title": "Audit bộ luật ngày 13/10/2026 (v2.6 → v3.0)"
   },
   {
+   "id": "runs-make-video-v3-benchmark-2026-11-28",
+   "type": "log",
+   "status": "ready",
+   "updated": "2026-11-28",
+   "path": "logs/runs/make-video-v3-benchmark-2026-11-28.md",
+   "title": "make-video v3 benchmark (2026-11-28)"
+  },
+  {
    "id": "run.verify-clip06-2026-11-26",
    "type": "log",
    "status": "draft",
