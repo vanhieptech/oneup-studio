@@ -243,6 +243,47 @@ class ContentEngineV2Tests(unittest.TestCase):
         self.assertIn("localization_vi", prompt)
         self.assertIn("translationese_traps", prompt)
 
+    # --- DL-085: Persistent seen-index dedupe, spike detection, channel-discover, ego_crawl multi-platform ---
+    def test_dl085_seen_index_dedupe_and_spike_detection(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            rows_day1 = [{"id": "betterideas-abc", "creator": "betterideas", "views": 100000, "comments": 40, "shares": 10, "url": "https://yt/abc", "reasons": ["velocity"]}]
+            k1, s1 = rf.apply_seen_dedupe(rows_day1, root=root)
+            self.assertEqual(len(k1), 1)
+            self.assertEqual(k1[0]["dedupe_status"], "new")
+            self.assertEqual(len(s1), 0)
+
+            # Second run with same views -> skipped as seen (0 duplicate processing)
+            rows_day1_again = [{"id": "betterideas-abc", "creator": "betterideas", "views": 105000, "comments": 45, "shares": 10, "url": "https://yt/abc", "reasons": ["velocity"]}]
+            k2, s2 = rf.apply_seen_dedupe(rows_day1_again, root=root)
+            self.assertEqual(len(k2), 0)
+            self.assertEqual(len(s2), 1)
+            self.assertEqual(s2[0]["dedupe_status"], "seen")
+
+            # Third run with +80% views -> surfaced as spike!
+            rows_spike = [{"id": "betterideas-abc", "creator": "betterideas", "views": 190000, "comments": 120, "shares": 30, "url": "https://yt/abc", "reasons": ["velocity"]}]
+            k3, s3 = rf.apply_seen_dedupe(rows_spike, root=root)
+            self.assertEqual(len(k3), 1)
+            self.assertEqual(k3[0]["dedupe_status"], "spike")
+
+    def test_dl085_channel_discover_and_ego_crawl_platforms(self):
+        cd = _load("channel_discover_v2", "pipeline/scripts/channel-discover.py")
+        ec = _load("ego_crawl_v2", "pipeline/scripts/ego_crawl.py")
+        self.assertEqual(set(ec.SOCIAL_URLS.keys()), {"tiktok", "x", "threads", "instagram", "youtube"})
+
+        extra = [
+            {"handle": "betterideas", "platform": "youtube", "views": 500000, "title": "Already tracked", "lang": "en"},
+            {"handle": "newpsychcreator", "platform": "youtube", "views": 250000, "title": "Why you procrastinate", "lang": "en"},
+            {"handle": "newpsychcreator", "platform": "youtube", "views": 180000, "title": "Dopamine detox myth", "lang": "en"},
+        ]
+        cands = cd.discover_channels(extra_items=extra, min_views=50000, live=False, top_n=5)
+        handles = [c["handle"] for c in cands]
+        self.assertNotIn("betterideas", handles)
+        self.assertIn("newpsychcreator", handles)
+        c0 = next(c for c in cands if c["handle"] == "newpsychcreator")
+        self.assertEqual(c0["suggested_role"], "global_niche_source")
+        self.assertEqual(c0["hits"], 2)
+
 
 if __name__ == "__main__":
     unittest.main()

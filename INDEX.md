@@ -257,6 +257,7 @@ tags: [index, retrieval]
 | teardown.trends-2026-11-27-14 | teardown | draft | `research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md` | Viral DNA Card `trends-2026-11-27-14` |
 | trends-ingest | trend-library | living | `research/trends/ingest.md` | Trend ingest: thư viện sống (rule-37, rule-39) |
 | trends-patterns | pattern-library | living | `research/trends/patterns.md` | Hook & format pattern library (rule-47) |
+| trends-suggested-channels | trend-digest | active | `research/trends/suggested-channels.md` | Đề xuất Kênh Mới Nên Theo Dõi (2026-11-28) |
 | trends.weekly-synthesis | trend-digest | active | `research/trends/weekly-synthesis.md` | Tổng hợp đa video — 2026-11-26 |
 | trends-weekly-2026-W42 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W42.md` | Tổng hợp tuần 2026-W42 (thứ Hai 12/10 → Chủ nhật 18/10) |
 | trends-weekly-2026-W43 | trend-weekly | draft-needs-review | `research/trends/weekly/2026-W43.md` | Tổng hợp tuần 2026-W43 (thứ Hai 19/10 → Chủ nhật 25/10) |

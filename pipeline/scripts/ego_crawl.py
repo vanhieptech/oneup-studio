@@ -213,6 +213,135 @@ console.log("{_MARKER}" + JSON.stringify(items));
     return data if isinstance(data, list) else []
 
 
+SOCIAL_URLS = {
+    "tiktok": lambda q: "https://www.tiktok.com/search?q=" + urllib.parse.quote(q),
+    "x": lambda q: "https://x.com/search?q=" + urllib.parse.quote(q) + "&f=top",
+    "threads": lambda q: "https://www.threads.net/search?q=" + urllib.parse.quote(q) + "&serp_type=default",
+    "instagram": lambda q: "https://www.instagram.com/explore/tags/" + urllib.parse.quote(q.lstrip("#").replace(" ", "")) + "/",
+    "youtube": lambda q: "https://www.youtube.com/results?search_query=" + urllib.parse.quote(q) + "&sp=EgIYAQ%253D%253D",
+}
+
+
+def crawl_social(platform, query, max_items=15, timeout=TIMEOUT):
+    """DOM-only (zero screenshots, zero LLM vision tokens) extraction from logged-in TikTok/X/Threads/IG/YouTube in ego-browser."""
+    plat = (platform or "").strip().lower()
+    if plat not in SOCIAL_URLS or not query or not available():
+        return []
+    url = SOCIAL_URLS[plat](query.strip())
+    payload = json.dumps({"url": url, "platform": plat, "limit": int(max_items)})
+    script = f"""
+const INPUT = {payload};
+const task = await taskSpace("oneup-social-" + INPUT.platform + "-" + Date.now());
+let items = [];
+try {{
+  const page = task.page("p1");
+  try {{
+    await page.goto(INPUT.url, {{ waitUntil: "domcontentloaded", timeout: 15000 }});
+  }} catch (navErr) {{
+    if (!String(navErr).includes("Timeout")) throw navErr;
+  }}
+  await new Promise((r) => setTimeout(r, 2500));
+  items = await page.evaluate(({{ platform, limit }}) => {{
+    const bodyTxt = (document.body?.innerText || "").slice(0, 600).toLowerCase();
+    if (/verify you are human|captcha|cf-turnstile|recaptcha/.test(bodyTxt) && bodyTxt.length < 1000) {{
+      return [{{ blocked: true, captcha: true, platform }}];
+    }}
+    const out = [];
+    const seen = new Set();
+    const pushItem = (title, href, author = "", metric = "") => {{
+      const cleanT = (title || "").replace(/\\s+/g, " ").trim().slice(0, 220);
+      if (!href || !href.startsWith("http") || seen.has(href) || cleanT.length < 6) return;
+      seen.add(href);
+      out.push({{ platform, title: cleanT, url: href, author, metric, source: "ego-browser" }});
+    }};
+    if (platform === "tiktok") {{
+      for (const a of document.querySelectorAll('a[href*="/video/"]')) {{
+        const card = a.closest('[data-e2e="search_top-item"], [class*="DivItemContainer"], div') || a;
+        const m = a.href.match(/@([^/]+)\\/video/);
+        pushItem(card.innerText || a.title || a.href, a.href, m ? m[1] : "");
+        if (out.length >= limit) break;
+      }}
+    }} else if (platform === "x") {{
+      for (const art of document.querySelectorAll('article[data-testid="tweet"]')) {{
+        const a = art.querySelector('a[href*="/status/"]');
+        const txt = art.querySelector('[data-testid="tweetText"]')?.innerText || art.innerText;
+        const m = a?.href?.match(/x\\.com\\/([^/]+)\\/status/);
+        pushItem(txt, a?.href || "", m ? m[1] : "");
+        if (out.length >= limit) break;
+      }}
+    }} else if (platform === "threads") {{
+      for (const a of document.querySelectorAll('a[href*="/post/"]')) {{
+        const card = a.closest('div[data-pressable-container="true"], article, div') || a;
+        const m = a.href.match(/@([^/]+)\\/post/);
+        pushItem(card.innerText, a.href, m ? m[1] : "");
+        if (out.length >= limit) break;
+      }}
+    }} else if (platform === "instagram") {{
+      for (const a of document.querySelectorAll('a[href*="/reel/"], a[href*="/p/"]')) {{
+        const img = a.querySelector("img");
+        pushItem(img?.alt || a.innerText || a.href, a.href, "");
+        if (out.length >= limit) break;
+      }}
+    }} else if (platform === "youtube") {{
+      for (const a of document.querySelectorAll('a#video-title, a[href*="/shorts/"]')) {{
+        pushItem(a.title || a.innerText, a.href, "");
+        if (out.length >= limit) break;
+      }}
+    }}
+    return out;
+  }}, INPUT);
+}} catch (e) {{
+  items = [];
+}} finally {{
+  try {{ await task.finish({{ keep: [] }}); }} catch (_) {{}}
+}}
+console.log("{_MARKER}" + JSON.stringify(items));
+"""
+    data = _run_node(script, timeout=timeout)
+    return data if isinstance(data, list) else []
+
+
+def crawl_tiktok_comments(url, max_comments=15, timeout=TIMEOUT):
+    """Extract anonymized top comments from a TikTok video via logged-in ego-browser (DOM-only, zero screenshots)."""
+    if not url or not available():
+        return []
+    payload = json.dumps({"url": url, "limit": int(max_comments)})
+    script = f"""
+const INPUT = {payload};
+const task = await taskSpace("oneup-tt-comments-" + Date.now());
+let comments = [];
+try {{
+  const page = task.page("p1");
+  try {{
+    await page.goto(INPUT.url, {{ waitUntil: "domcontentloaded", timeout: 15000 }});
+  }} catch (navErr) {{
+    if (!String(navErr).includes("Timeout")) throw navErr;
+  }}
+  await new Promise((r) => setTimeout(r, 2500));
+  comments = await page.evaluate((limit) => {{
+    const out = [];
+    const seen = new Set();
+    const els = document.querySelectorAll('[data-e2e="comment-level-1"], p[data-e2e="comment-level-1"]');
+    for (const el of els) {{
+      const txt = (el.innerText || "").replace(/\\s+/g, " ").trim();
+      if (txt.length < 8 || seen.has(txt.toLowerCase())) continue;
+      seen.add(txt.toLowerCase());
+      out.push({{ text: txt.slice(0, 280), likes: 0 }});
+      if (out.length >= limit) break;
+    }}
+    return out;
+  }}, INPUT.limit);
+}} catch (e) {{
+  comments = [];
+}} finally {{
+  try {{ await task.finish({{ keep: [] }}); }} catch (_) {{}}
+}}
+console.log("{_MARKER}" + JSON.stringify(comments));
+"""
+    data = _run_node(script, timeout=timeout)
+    return data if isinstance(data, list) else []
+
+
 def main():
     a = sys.argv[1:]
     if not a:
@@ -230,6 +359,13 @@ def main():
         res = search_web(" ".join(rest), domains=opt("--domains"), max_results=int(opt("--max", 10)))
     elif cmd == "feed":
         res = crawl_feed(rest[0] if rest else "", max_items=int(opt("--max", 15)))
+    elif cmd == "social":
+        if len(rest) < 2:
+            print("Usage: ego_crawl.py social <tiktok|x|threads|instagram|youtube> \"<query>\" [--max 15]")
+            return 2
+        res = crawl_social(rest[0], " ".join(rest[1:]), max_items=int(opt("--max", 15)))
+    elif cmd == "comments":
+        res = crawl_tiktok_comments(rest[0] if rest else "", max_comments=int(opt("--max", 15)))
     else:
         print(__doc__)
         return 2

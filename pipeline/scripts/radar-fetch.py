@@ -29,6 +29,11 @@ import shutil
 import statistics
 import subprocess
 import sys
+import time
+import urllib.error
+import urllib.request
+import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..")); import paths as P  # rule-65
@@ -48,6 +53,113 @@ LEARN_SCOPE = {
 DEFAULT_MIN_VIEWS_PER_DAY = 15000.0
 DEFAULT_MIN_ENGAGEMENT_INTENSITY = 0.015
 DEFAULT_MIN_ABS_VIEWS_FOR_VELOCITY = 50000
+DEFAULT_TTL_HOURS = 6.0
+DEFAULT_WORKERS = 6
+SPIKE_VIEWS_PCT = 0.50
+SPIKE_ENGAGEMENT_ABS = 100
+UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
+
+
+def _load_json(path, default):
+    p = Path(path)
+    if not p.exists():
+        return default
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return default
+
+
+def _save_json(path, data):
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
+def fetch_youtube_rss(channel_id, etag=None, timeout=10):
+    """Fast-path (~0.2s) YouTube Atom RSS check with ETag support. Returns (status, entries_or_none, new_etag)."""
+    url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+    headers = {"User-Agent": UA}
+    if etag:
+        headers["If-None-Match"] = etag
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            body = r.read().decode("utf-8", "replace")
+            new_etag = r.headers.get("ETag")
+    except urllib.error.HTTPError as e:
+        if e.code == 304:
+            return "not_modified", None, etag
+        return f"http_{e.code}", None, etag
+    except Exception:
+        return "error", None, etag
+    try:
+        root = ET.fromstring(body)
+    except ET.ParseError:
+        return "parse_error", None, new_etag
+    ids = []
+    for entry in root.iter():
+        if entry.tag.endswith("}videoId") or entry.tag == "videoId":
+            if entry.text:
+                ids.append(entry.text.strip())
+    return "ok", ids, new_etag
+
+
+def load_seen_index(root=TRENDS):
+    return _load_json(Path(root) / "seen-index.json", {"updated": None, "videos": {}})
+
+
+def apply_seen_dedupe(rows, root=TRENDS, include_seen=False, save=True):
+    """Filter out unchanged already-seen videos using `seen-index.json`, keeping `new` and `spike` (+50% views or +100 comments/shares)."""
+    idx = load_seen_index(root)
+    videos = idx.setdefault("videos", {})
+    now_iso = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    kept, skipped = [], []
+    for r in rows:
+        vid_key = r["id"]
+        views = int(r.get("views") or 0)
+        eng = int(r.get("comments") or 0) + int(r.get("shares") or 0)
+        prev = videos.get(vid_key)
+        if not prev:
+            r["dedupe_status"] = "new"
+            videos[vid_key] = {
+                "first_seen": now_iso,
+                "last_seen": now_iso,
+                "views": views,
+                "engagement": eng,
+                "creator": r.get("creator"),
+                "url": r.get("url"),
+                "status": "new",
+            }
+            kept.append(r)
+            continue
+        prev_v = int(prev.get("views") or 0)
+        prev_e = int(prev.get("engagement") or 0)
+        view_growth = (views - prev_v) / max(prev_v, 1) if prev_v > 0 else 0.0
+        eng_delta = eng - prev_e
+        is_spike = (prev_v > 0 and view_growth >= SPIKE_VIEWS_PCT) or (eng_delta >= SPIKE_ENGAGEMENT_ABS)
+        prev["last_seen"] = now_iso
+        prev["views"] = max(prev_v, views)
+        prev["engagement"] = max(prev_e, eng)
+        if prev.get("status") == "done":
+            r["dedupe_status"] = "done"
+            skipped.append(r)
+        elif is_spike:
+            r["dedupe_status"] = "spike"
+            r["reasons"] = list(r.get("reasons") or []) + [f"spike+{int(view_growth * 100)}%"]
+            prev["status"] = "spike"
+            kept.append(r)
+        else:
+            r["dedupe_status"] = "seen"
+            prev["status"] = "seen"
+            if include_seen:
+                kept.append(r)
+            else:
+                skipped.append(r)
+    idx["updated"] = now_iso
+    if save:
+        _save_json(Path(root) / "seen-index.json", idx)
+    return kept, skipped
 
 
 def _load_trend_streams():
@@ -264,12 +376,17 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
             reasons.append(f"ratio≥{min_ratio:.1f}")
         if ratio_m is not None and ratio_m >= min_ratio:
             reasons.append(f"median≥{min_ratio:.1f}x")
-        # Fallback for big channels with followers=0 whose clips consistently hit high views (ratio_m ≈ 1.0x)
+        # Fallback for big channels with followers=0 whose clips consistently hit high views (ratio_m ≈ 1.0–2.5x)
         if not reasons and fans == 0 and views >= min_abs_v:
             if vpd is not None and vpd >= min_vpd:
                 reasons.append(f"velocity≥{int(min_vpd)}/d")
             if eng is not None and eng >= min_eng and comments >= 50:
                 reasons.append(f"engagement≥{min_eng:.3f}")
+            # YouTube Shorts --flat-playlist omits upload_date & comment_count: catch proven superstar/mega hits
+            if not reasons and views >= int(cfg.get("min_megahit_views", 1000000)):
+                reasons.append("megahit≥1M")
+            elif not reasons and views >= 300000 and ratio_m is not None and ratio_m >= 1.5:
+                reasons.append("superstar≥1.5x+300k")
         if not reasons:
             continue
         author = (c.get("author") or {}).get("name") or ""
@@ -358,7 +475,9 @@ def render_audience_language(date, clips):
 
 def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, langs=None, root=TRENDS,
               fetcher=fetch_channel_entries, comment_fetcher=None, with_comments=False,
-              enqueue=True, dry_run=False):
+              enqueue=True, dry_run=False, workers=DEFAULT_WORKERS, ttl_hours=None,
+              force=False, include_seen=False, use_ego=False):
+    t0 = time.monotonic()
     cfg = load_config(cfg_path)
     lim = int(limit or cfg.get("recent_limit", 10))
     channels = cfg.get("channels") or []
@@ -374,27 +493,95 @@ def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, langs
         want_l = {l.strip().lower() for l in langs if l.strip()}
         channels = [c for c in channels if (c.get("lang") or "vi").lower() in want_l]
 
-    all_clips, statuses = [], []
-    for ch in channels:
-        url = ch.get("url") or f"https://www.tiktok.com/@{ch['handle'].lstrip('@')}"
+    # Default TTL cache enabled for real runs, disabled when a mock fetcher is injected in unit tests
+    if ttl_hours is None:
+        ttl_hours = 0.0 if (fetcher is not fetch_channel_entries or force) else DEFAULT_TTL_HOURS
+    cache_path = Path(root) / ".cache/radar-cache.json"
+    cache_doc = _load_json(cache_path, {"channels": {}}) if (ttl_hours > 0 and not force) else {"channels": {}}
+    now_ts = time.time()
+
+    def _fetch_one(idx, ch):
+        handle = ch.get("handle") or ""
+        url = ch.get("url") or f"https://www.tiktok.com/@{handle.lstrip('@')}"
         role = ch.get("role") if ch.get("role") in VALID_ROLES else "direct_niche"
+        ckey = f"{ch.get('platform', 'tiktok')}:{handle.lower()}:{lim}"
+        cached = (cache_doc.get("channels") or {}).get(ckey)
+        if ttl_hours > 0 and not force and cached:
+            age_h = (now_ts - float(cached.get("fetched_at") or 0)) / 3600.0
+            if age_h <= ttl_hours and cached.get("entries") is not None:
+                # Optional YouTube Atom RSS 304 fast-check if channel_id is cached
+                cid = cached.get("channel_id") or ch.get("channel_id")
+                rss_ok = True
+                if ch.get("platform") == "youtube" and cid and age_h > 0.5:
+                    st_rss, rss_ids, new_etag = fetch_youtube_rss(cid, etag=cached.get("etag"))
+                    if st_rss == "ok" and rss_ids:
+                        cached_ids = {str(e.get("id") or "") for e in cached["entries"]}
+                        if any(rid not in cached_ids for rid in rss_ids[:3]):
+                            rss_ok = False
+                    if new_etag:
+                        cached["etag"] = new_etag
+                if rss_ok:
+                    clips, med = normalize_channel(ch, cached["entries"])
+                    return idx, clips, {
+                        "handle": handle, "role": role, "platform": ch.get("platform", "tiktok"),
+                        "url": url, "fetched": len(clips), "median_views": round(med, 1) if med else None,
+                        "error": "", "cache_hit": True,
+                    }, None
         try:
             entries, err = fetcher(url, lim)
         except Exception as e:
             entries, err = [], f"{type(e).__name__}: {e}"[:200]
         clips, med = normalize_channel(ch, entries)
-        all_clips.extend(clips)
-        statuses.append({"handle": ch.get("handle"), "role": role, "platform": ch.get("platform", "tiktok"),
-                         "url": url, "fetched": len(clips),
-                         "median_views": round(med, 1) if med else None, "error": err})
+        cid_found = next((e.get("channel_id") for e in entries if e.get("channel_id")), ch.get("channel_id"))
+        new_cache_val = {"fetched_at": now_ts, "channel_id": cid_found, "entries": entries} if entries else None
+        return idx, clips, {
+            "handle": handle, "role": role, "platform": ch.get("platform", "tiktok"),
+            "url": url, "fetched": len(clips), "median_views": round(med, 1) if med else None,
+            "error": err, "cache_hit": False,
+        }, (ckey, new_cache_val)
 
-    rows = build_radar_rows(all_clips, cfg, date, root=root)
+    results = []
+    max_w = max(1, min(int(workers or DEFAULT_WORKERS), len(channels) or 1))
+    if max_w == 1:
+        for i, ch in enumerate(channels):
+            results.append(_fetch_one(i, ch))
+    else:
+        with ThreadPoolExecutor(max_workers=max_w) as ex:
+            futs = [ex.submit(_fetch_one, i, ch) for i, ch in enumerate(channels)]
+            for fut in as_completed(futs):
+                results.append(fut.result())
+    results.sort(key=lambda x: x[0])
+
+    all_clips, statuses = [], []
+    cache_dirty = False
+    for _, clips, st, c_upd in results:
+        all_clips.extend(clips)
+        statuses.append(st)
+        if c_upd and c_upd[1] is not None:
+            cache_doc.setdefault("channels", {})[c_upd[0]] = c_upd[1]
+            cache_dirty = True
+    if cache_dirty and not dry_run and fetcher is fetch_channel_entries:
+        _save_json(cache_path, cache_doc)
+
+    raw_rows = build_radar_rows(all_clips, cfg, date, root=root)
+    rows, skipped_seen = apply_seen_dedupe(raw_rows, root=root, include_seen=include_seen, save=not dry_run)
+
     if with_comments and not dry_run:
         cf = comment_fetcher or fetch_video_comments
+        ego_mod = None
+        if use_ego:
+            try:
+                import ego_crawl as _ego
+                if _ego.available():
+                    ego_mod = _ego
+            except Exception:
+                ego_mod = None
         by_url = {c.get("url"): c for c in all_clips if c.get("url")}
         for r in rows[:10]:
             if r.get("url") and not r.get("top_comments"):
                 tcs = cf(r["url"])
+                if not tcs and ego_mod and r.get("platform") == "tiktok":
+                    tcs = ego_mod.crawl_tiktok_comments(r["url"], max_comments=10)
                 if tcs:
                     r["top_comments"] = tcs
                     if r["url"] in by_url:
@@ -405,13 +592,15 @@ def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, langs
     out_path = day_dir / "radar.json"
     aud_path = day_dir / "audience-language.md"
     aud_md = render_audience_language(date, all_clips)
+    elapsed_s = round(time.monotonic() - t0, 2)
 
     if not dry_run:
         day_dir.mkdir(parents=True, exist_ok=True)
         raw_doc = {
             "date": date,
             "measured_at": dt.datetime.now().isoformat(timespec="seconds"),
-            "collector": "radar-fetch.py (yt-dlp)",
+            "collector": "radar-fetch.py (yt-dlp parallel + rss + ttl-cache)",
+            "elapsed_s": elapsed_s,
             "channels": statuses,
             "clips": all_clips,
         }
@@ -419,7 +608,9 @@ def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, langs
         out_doc = {
             "date": date,
             "config": str(Path(cfg_path).relative_to(ROOT)) if ROOT in Path(cfg_path).resolve().parents else str(cfg_path),
-            "collector": "radar-fetch.py (yt-dlp)",
+            "collector": "radar-fetch.py (yt-dlp parallel + rss + ttl-cache)",
+            "elapsed_s": elapsed_s,
+            "skipped_seen": len(skipped_seen),
             "channels": statuses,
             "rows": rows,
         }
@@ -434,6 +625,8 @@ def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, langs
         "statuses": statuses,
         "clips": all_clips,
         "rows": rows,
+        "skipped_seen": skipped_seen,
+        "elapsed_s": elapsed_s,
         "raw_path": raw_path,
         "out_path": out_path,
         "audience_language_path": aud_path if aud_md else None,
@@ -453,17 +646,26 @@ def main():
     only = opt("--only").split(",") if opt("--only") else None
     roles = opt("--role").split(",") if opt("--role") else None
     langs = opt("--lang").split(",") if opt("--lang") else None
+    workers = int(opt("--workers", str(DEFAULT_WORKERS)))
+    ttl_hours = float(opt("--ttl-hours")) if opt("--ttl-hours") is not None else None
+    force = "--force" in a
+    include_seen = "--include-seen" in a
+    use_ego = "--use-ego" in a
     with_comments = "--with-comments" in a
     dry_run = "--dry-run" in a
     enqueue = "--no-enqueue" not in a
 
     res = run_fetch(date, cfg_path=cfg_path, limit=limit, only=only, roles=roles, langs=langs,
-                    with_comments=with_comments, enqueue=enqueue, dry_run=dry_run)
+                    with_comments=with_comments, enqueue=enqueue, dry_run=dry_run,
+                    workers=workers, ttl_hours=ttl_hours, force=force,
+                    include_seen=include_seen, use_ego=use_ego)
     for st in res["statuses"]:
-        tag = f"ok ({st['fetched']} clips, median={st['median_views']})" if st["fetched"] else f"empty/err: {st['error']}"
-        print(f"  @{st['handle']:20} [{st['role']:17}] {tag}")
+        c_tag = " [CACHE]" if st.get("cache_hit") else ""
+        tag = f"ok ({st['fetched']} clips, median={st['median_views']}){c_tag}" if st["fetched"] else f"empty/err: {st['error']}"
+        print(f"  @{st['handle']:20} [{st['role']:19}] {tag}")
     extra = f" · audience-language → {res['audience_language_path']}" if res["audience_language_path"] else ""
-    print(f"radar-fetch: {len(res['clips'])} clips fetched, {len(res['rows'])} outliers → {res['out_path']}{extra}"
+    skip_s = f" · {len(res['skipped_seen'])} seen skipped" if res.get("skipped_seen") else ""
+    print(f"radar-fetch: {len(res['clips'])} clips, {len(res['rows'])} new/spike outliers{skip_s} in {res['elapsed_s']}s → {res['out_path']}{extra}"
           + (" (dry-run)" if dry_run else ""))
     return 0
 
