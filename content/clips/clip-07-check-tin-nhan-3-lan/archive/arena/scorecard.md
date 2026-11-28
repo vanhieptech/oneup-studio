@@ -1,3 +1,14 @@
+---
+title: "Clip 07 Arena Scorecard"
+date: 2026-11-28
+id: clip-07.arena-scorecard
+type: report
+status: ready
+updated: 2026-11-28
+tags: [clip-07, arena, scorecard]
+source: "pipeline/scripts/script-arena.py"
+---
+
 ## Bảng Chấm Đấu Trường Đa Kịch Bản (`script-arena.py`, F3)
 
 | Hạng | Bản nháp | Beat | Âm tiết | Ước (s) | Điểm nhịp & cảm xúc | Cảnh báo |

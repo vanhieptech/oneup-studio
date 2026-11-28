@@ -3,7 +3,7 @@ title: "Clip 07 v1: Check tin nhắn theo đợt 3 lần/ngày (HTB 3.5)"
 date: 2026-11-28
 type: script
 tags: [script, giu-tap-trung, howtolivebetter-3.5]
-status: locked
+status: ready
 source: "HowToLiveBetter 3.5 · Kushlev & Dunn 2015 doi:10.1016/j.chb.2014.11.005 · B-msg-02 · script-v1-draft.md"
 id: clip-07.script-final
 version: v1

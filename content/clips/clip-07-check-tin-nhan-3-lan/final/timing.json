@@ -1,0 +1,388 @@
+{
+ "total": 74.979,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "content/clips/clip-07-check-tin-nhan-3-lan/final/plan-A.voiced.json",
+   "dur": 74.688,
+   "mp4": "video-engine/out/clip-07-final-A.mp4",
+   "fx": "fade",
+   "scene_starts": [
+    5.362,
+    16.449,
+    27.293,
+    37.593999999999994,
+    48.16199999999999,
+    60.49999999999999,
+    71.68799999999999
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-07.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "Sếp nhắn đúng hai chữ.",
+   "en": "Boss texts two words",
+   "emotion": "surprised",
+   "key": "c07v1-b01",
+   "local": 0.12,
+   "dur": 1.54,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-07.b01",
+   "scene": "b01a",
+   "speaker": "hiep",
+   "say": "em ơi, rồi im luôn",
+   "en": "“hey” then goes silent.",
+   "emotion": "confused",
+   "key": "c07v1-b01a",
+   "local": 0.02,
+   "dur": 1.376,
+   "t": 1.74
+  },
+  {
+   "beat": "clip-07.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "mười phút mình mở máy coi năm lần.",
+   "en": "Checked five times in ten minutes.",
+   "emotion": "sad",
+   "key": "c07v1-b01b",
+   "local": 0.02,
+   "dur": 2.106,
+   "t": 3.196
+  },
+  {
+   "beat": "clip-07.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Hông riêng bữa đó đâu.",
+   "en": "Not just that one day.",
+   "emotion": "sad",
+   "key": "c07v1-b02",
+   "local": 0.45,
+   "dur": 1.354,
+   "t": 5.812
+  },
+  {
+   "beat": "clip-07.b02",
+   "scene": "b02a",
+   "speaker": "hiep",
+   "say": "Ngày thường cứ thấy chấm đỏ, là tay mình tự chụp máy.",
+   "en": "Red dot pops, hand grabs phone.",
+   "emotion": "neutral",
+   "key": "c07v1-b02a",
+   "local": 0.15,
+   "dur": 3.313,
+   "t": 7.566
+  },
+  {
+   "beat": "clip-07.b02",
+   "scene": "b02b",
+   "speaker": "hiep",
+   "say": "Tối về đầu nặng trịch, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.",
+   "en": "Exhausted at night, blaming my focus.",
+   "emotion": "sad",
+   "key": "c07v1-b02b",
+   "local": 0.15,
+   "dur": 4.92,
+   "t": 11.279
+  },
+  {
+   "beat": "clip-07.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Tắt chuông cũng thua.",
+   "en": "Even muting alerts fails.",
+   "emotion": "sad",
+   "key": "c07v1-b03",
+   "local": 0.45,
+   "dur": 1.253,
+   "t": 16.899
+  },
+  {
+   "beat": "clip-07.b03",
+   "scene": "b03a",
+   "speaker": "hiep",
+   "say": "Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
+   "en": "I still peek, fearing missed pings.",
+   "emotion": "neutral",
+   "key": "c07v1-b03a",
+   "local": 0.15,
+   "dur": 4.058,
+   "t": 18.552
+  },
+  {
+   "beat": "clip-07.b03",
+   "scene": "b03b",
+   "speaker": "hiep",
+   "say": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căng đầu thêm?",
+   "en": "Faster work, or just more stress?",
+   "emotion": "confused",
+   "key": "c07v1-b03b",
+   "local": 0.15,
+   "dur": 4.033,
+   "t": 23.01
+  },
+  {
+   "beat": "clip-07.b04",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Nhóm Cu lép năm hai ngàn mười lăm đo trên i meo nè:",
+   "en": "Kushlev 2015 tested this on email:",
+   "emotion": "focused",
+   "key": "c07v1-b04",
+   "local": 0.45,
+   "dur": 3.017,
+   "t": 27.743
+  },
+  {
+   "beat": "clip-07.b04",
+   "scene": "b04a",
+   "speaker": "hiep",
+   "say": "tuần gom còn ba lần một ngày, so với thả cửa hơn mười lăm lần, căng thẳng giảm rõ mức vừa phải.",
+   "en": "3 checks vs over 15: less stress.",
+   "emotion": "focused",
+   "key": "c07v1-b04a",
+   "local": 0.15,
+   "dur": 6.184,
+   "t": 31.16
+  },
+  {
+   "beat": "clip-07.b05",
+   "scene": "b05",
+   "speaker": "hiep",
+   "say": "Số i meo nhận với trả lời vẫn y như cũ.",
+   "en": "Emails received and replied stayed identical.",
+   "emotion": "focused",
+   "key": "c07v1-b05",
+   "local": 0.45,
+   "dur": 2.742,
+   "t": 38.044
+  },
+  {
+   "beat": "clip-07.b05",
+   "scene": "b05a",
+   "speaker": "hiep",
+   "say": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
+   "en": "Instant relief. Just constant switching.",
+   "emotion": "neutral",
+   "key": "c07v1-b05a",
+   "local": 0.15,
+   "dur": 6.726,
+   "t": 41.186
+  },
+  {
+   "beat": "clip-07.b06",
+   "scene": "b06",
+   "speaker": "hiep",
+   "say": "Từ đó mình đổi luật, báo trước với tim, việc gấp thì gọi nha.",
+   "en": "New rule: tell your team to call.",
+   "emotion": "focused",
+   "key": "c07v1-b06",
+   "local": 0.45,
+   "dur": 3.955,
+   "t": 48.612
+  },
+  {
+   "beat": "clip-07.b06",
+   "scene": "b06a",
+   "speaker": "hiep",
+   "say": "Còn tin nhắn cứ gom đúng ba khung giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều, mở một lượt rồi xử gọn.",
+   "en": "Batch messages at 9, 1, and 4.",
+   "emotion": "focused",
+   "key": "c07v1-b06a",
+   "local": 0.15,
+   "dur": 7.283,
+   "t": 52.967
+  },
+  {
+   "beat": "clip-07.b07",
+   "scene": "b07",
+   "speaker": "hiep",
+   "say": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
+   "en": "Just my workaround; every job differs.",
+   "emotion": "happy",
+   "key": "c07v1-b07",
+   "local": 0.45,
+   "dur": 2.933,
+   "t": 60.95
+  },
+  {
+   "beat": "clip-07.b07",
+   "scene": "b07a",
+   "speaker": "hiep",
+   "say": "Có ai cũng hay canh chấm đỏ giống mình hông?",
+   "en": "Anyone else glued to red dots?",
+   "emotion": "happy",
+   "key": "c07v1-b07a",
+   "local": 0.15,
+   "dur": 2.456,
+   "t": 64.283
+  },
+  {
+   "beat": "clip-07.b07",
+   "scene": "b07b",
+   "speaker": "hiep",
+   "say": "Hay bạn nghĩ sao, có cách gì né cảnh đó, còm men kể mình nghe với nha.",
+   "en": "How do you handle it? Tell me.",
+   "emotion": "happy",
+   "key": "c07v1-b07b",
+   "local": 0.15,
+   "dur": 4.299,
+   "t": 67.139
+  }
+ ],
+ "transitions": [
+  {
+   "at": 5.362,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 16.449,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 27.293,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 37.594,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 48.162,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 60.5,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 71.688,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "pop",
+   "at": 1.94
+  },
+  {
+   "name": "click",
+   "at": 3.546
+  },
+  {
+   "name": "tick",
+   "at": 5.962
+  },
+  {
+   "name": "snap",
+   "at": 7.916
+  },
+  {
+   "name": "click",
+   "at": 11.679
+  },
+  {
+   "name": "snap",
+   "at": 17.099
+  },
+  {
+   "name": "tick",
+   "at": 18.802
+  },
+  {
+   "name": "pop",
+   "at": 23.41
+  },
+  {
+   "name": "stamp",
+   "at": 27.993
+  },
+  {
+   "name": "rise",
+   "at": 31.51
+  },
+  {
+   "name": "ding",
+   "at": 38.394
+  },
+  {
+   "name": "whoosh",
+   "at": 41.386
+  },
+  {
+   "name": "pop",
+   "at": 49.012
+  },
+  {
+   "name": "ding",
+   "at": 53.267
+  },
+  {
+   "name": "pop",
+   "at": 61.2
+  },
+  {
+   "name": "tick",
+   "at": 64.533
+  },
+  {
+   "name": "ding",
+   "at": 67.439
+  },
+  {
+   "name": "swish",
+   "at": 5.242
+  },
+  {
+   "name": "swish",
+   "at": 16.329
+  },
+  {
+   "name": "swish",
+   "at": 27.173
+  },
+  {
+   "name": "swish",
+   "at": 37.474
+  },
+  {
+   "name": "swish",
+   "at": 48.042
+  },
+  {
+   "name": "swish",
+   "at": 60.38
+  },
+  {
+   "name": "swish",
+   "at": 71.568
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

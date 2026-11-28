@@ -4,6 +4,7 @@ date: 2026-11-27
 id: clip-07.script-v1-draft
 type: draft
 status: draft
+source: "oneup-studio (script-arena.py, HTB 3.5)"
 updated: 2026-11-27
 tags: [arena, script-draft, m2]
 ---

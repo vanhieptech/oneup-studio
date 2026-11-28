@@ -43,8 +43,11 @@ tags: [index, retrieval]
 | clip-07.fact-lock | research | locked | `content/clips/clip-07-check-tin-nhan-3-lan/final/fact-lock.md` | clip-07 fact lock |
 | clip-07.feedback | feedback | living | `content/clips/clip-07-check-tin-nhan-3-lan/final/feedback.md` | clip-07 — góp ý của Hiệp (nguyên văn) |
 | clip-07.post-checklist | checklist | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/post-checklist.md` | Checklist đăng clip-07 |
+| clip-07.post | post-package | sẵn sàng đăng sau khi Hiệp xem video | `content/clips/clip-07-check-tin-nhan-3-lan/final/post.md` | Gói đăng TikTok: clip-07 "check tin nhắn 3 lần/ngày" |
+| clip-07.prosody-measure | report | ready | `content/clips/clip-07-check-tin-nhan-3-lan/final/prosody-measure.md` | Prosody đo thật — clip-07-final (voice c07v1) |
+| clip-07.prosody-plan | report | ready | `content/clips/clip-07-check-tin-nhan-3-lan/final/prosody-plan.md` | Prosody plan — clip-07-final (voice c07v1) |
 | clip-07.review | review | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/review.md` | Review Đấu trường Kịch bản `clip-07-check-tin-nhan-3-lan` (Tournament Judge) |
-| clip-07.script-final | script | locked | `content/clips/clip-07-check-tin-nhan-3-lan/final/script-final.md` | Clip 07 v1: Check tin nhắn theo đợt 3 lần/ngày (HTB 3.5) |
+| clip-07.script-final | script | ready | `content/clips/clip-07-check-tin-nhan-3-lan/final/script-final.md` | Clip 07 v1: Check tin nhắn theo đợt 3 lần/ngày (HTB 3.5) |
 | clip-07.script-v1-draft | draft | draft | `content/clips/clip-07-check-tin-nhan-3-lan/final/script-v1-draft.md` | Đấu trường Kịch bản — Writer B (`M2`: 5-Second Vulnerable Story (Tâm sự khoảnh khắc thật 5 giây)) |
 | clip-07.trend-signals | research | ready | `content/clips/clip-07-check-tin-nhan-3-lan/final/trend-signals.md` | Tín hiệu trend cho clip-07 |
 | idea-bank | plan | active | `content/idea-bank.md` | Idea bank |

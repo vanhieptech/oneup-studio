@@ -1,0 +1,215 @@
+[
+ {
+  "scene": "b01",
+  "voice": "c07v1-b01.wav",
+  "sentence": "Sếp nhắn đúng hai chữ",
+  "units": [
+   "Sếp nhắn đúng hai chữ"
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b01a",
+  "voice": "c07v1-b01a.wav",
+  "sentence": "“em ơi” rồi im luôn —",
+  "units": [
+   "em ơi,",
+   "rồi im luôn"
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b01b",
+  "voice": "c07v1-b01b.wav",
+  "sentence": "mười phút mình mở máy coi năm lần.",
+  "units": [
+   "mười phút mình mở máy coi năm lần."
+  ],
+  "stress": "năm",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b02",
+  "voice": "c07v1-b02.wav",
+  "sentence": "Hông riêng bữa đó đâu.",
+  "units": [
+   "Hông riêng bữa đó đâu."
+  ],
+  "stress": "riêng",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b02a",
+  "voice": "c07v1-b02a.wav",
+  "sentence": "Ngày thường cứ thấy chấm đỏ là tay mình tự chụp máy.",
+  "units": [
+   "Ngày thường cứ thấy chấm đỏ,",
+   "là tay mình tự chụp máy."
+  ],
+  "stress": "chụp",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b02b",
+  "voice": "c07v1-b02b.wav",
+  "sentence": "Tối về đầu nặng trịch, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.",
+  "units": [
+   "Tối về đầu nặng trịch,",
+   "việc chính còn nguyên,",
+   "mình lại tự trách sao dễ phân tâm quá."
+  ],
+  "stress": "trách",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03",
+  "voice": "c07v1-b03.wav",
+  "sentence": "Tắt chuông cũng thua.",
+  "units": [
+   "Tắt chuông cũng thua."
+  ],
+  "stress": "thua",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03a",
+  "voice": "c07v1-b03a.wav",
+  "sentence": "Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
+  "units": [
+   "Mình vẫn lén bật màn hình coi,",
+   "sợ việc gấp người ta kiếm hông ra."
+  ],
+  "stress": "lén",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03b",
+  "voice": "c07v1-b03b.wav",
+  "sentence": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căng đầu thêm?",
+  "units": [
+   "Ủa mà canh liền tay vậy,",
+   "mình đỡ trễ việc hay chỉ căng đầu thêm?"
+  ],
+  "stress": "căng",
+  "question_rise": true,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b04",
+  "voice": "c07v1-b04.wav",
+  "sentence": "Nhóm Kushlev năm 2015 đo trên email nè:",
+  "units": [
+   "Nhóm Cút lép năm hai ngàn mười lăm đo trên i meo nè:"
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b04a",
+  "voice": "c07v1-b04a.wav",
+  "sentence": "tuần gom còn 3 lần một ngày, so với thả cửa hơn 15 lần, căng thẳng giảm rõ mức vừa phải.",
+  "units": [
+   "tuần gom còn ba lần một ngày,",
+   "so với thả cửa hơn mười lăm lần,",
+   "căng thẳng giảm rõ mức vừa phải."
+  ],
+  "stress": "15",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b05",
+  "voice": "c07v1-b05.wav",
+  "sentence": "Số email nhận với trả lời vẫn y như cũ.",
+  "units": [
+   "Số i meo nhận với trả lời vẫn y như cũ."
+  ],
+  "stress": "cũ",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b05a",
+  "voice": "c07v1-b05a.wav",
+  "sentence": "Nghe vậy tự nhiên nhẹ hẳn cái vai — hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
+  "units": [
+   "Nghe vậy tự nhiên nhẹ hẳn cái vai,",
+   "hóa ra mình hông yếu,",
+   "chỉ tại mở ra đóng vô cả ngày nên đầu căng hà."
+  ],
+  "stress": "nhẹ",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b06",
+  "voice": "c07v1-b06.wav",
+  "sentence": "Từ đó mình đổi luật: báo trước với team “việc gấp thì gọi nha”.",
+  "units": [
+   "Từ đó mình đổi luật,",
+   "báo trước với tim, việc gấp thì gọi nha."
+  ],
+  "stress": "gọi",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b06a",
+  "voice": "c07v1-b06a.wav",
+  "sentence": "Còn tin nhắn cứ gom đúng 3 khung giờ — 9 giờ sáng, 1 giờ trưa, 4 giờ chiều — mở một lượt rồi xử gọn.",
+  "units": [
+   "Còn tin nhắn cứ gom đúng ba khung giờ,",
+   "chín giờ sáng, một giờ trưa, bốn giờ chiều,",
+   "mở một lượt rồi xử gọn."
+  ],
+  "stress": "gom",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07",
+  "voice": "c07v1-b07.wav",
+  "sentence": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
+  "units": [
+   "Mình gỡ kiểu đó thôi,",
+   "chứ mỗi chỗ làm mỗi khác."
+  ],
+  "stress": "khác",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07a",
+  "voice": "c07v1-b07a.wav",
+  "sentence": "Có ai cũng hay canh chấm đỏ giống mình hông?",
+  "units": [
+   "Có ai cũng hay canh chấm đỏ giống mình hông?"
+  ],
+  "stress": "canh",
+  "question_rise": true,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07b",
+  "voice": "c07v1-b07b.wav",
+  "sentence": "Hay bạn nghĩ sao, có cách gì né cảnh đó — comment kể mình nghe với nha.",
+  "units": [
+   "Hay bạn nghĩ sao, có cách gì né cảnh đó,",
+   "còm men kể mình nghe với nha."
+  ],
+  "stress": "kể",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ }
+]

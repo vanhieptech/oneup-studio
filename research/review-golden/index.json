@@ -1,13 +1,13 @@
 {
   "id": "review-golden.index",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "schema": "id, verdict (approved|rejected), source (đường dẫn hoặc `git show <commit>:<path>`), hiep_quote (nguyên văn; '|' tách nhiều tin), lesson; thêm: clip, version, quote_kind (verbatim|relayed|verbatim-instruction|none), lesson_id, excerpt_file, found",
   "counts": {
-    "total": 38,
+    "total": 39,
     "approved": 5,
-    "rejected": 33,
+    "rejected": 34,
     "rejected_with_excerpt": 16,
-    "rejected_not_found": 17
+    "rejected_not_found": 18
   },
   "samples": [
     {
@@ -502,6 +502,19 @@
       "quote_kind": "verbatim",
       "lesson": "DL-081, L-113 (nghiên cứu tâm lý bình luận TikTok: bỏ hẳn câu khảo sát sáo rỗng «bạn đang tập gì, được bao lâu»; đổi sang hạ cái tôi + đồng cảm «ai dễ nản tuần hai giống mình» + tôn trọng «mỗi người một góc nhìn», lắng nghe cách vượt qua) · v13 r3",
       "lesson_id": "DL-081",
+      "excerpt_file": null,
+      "found": false
+    },
+    {
+      "id": "r-c07-gate-0",
+      "verdict": "rejected",
+      "clip": "clip-07",
+      "version": "Gate 0",
+      "source": "content/clips/clip-07-check-tin-nhan-3-lan/final/feedback.md",
+      "hiep_quote": "«1» (chọn Phương án 1: Slot #7 Tuần 2 LIGHT — 3.5 Check tin nhắn theo đợt 3 lần/ngày, Pain-Wave công sở B-msg-02)",
+      "quote_kind": "verbatim",
+      "lesson": "Gate 0 + Đấu trường 3 kịch bản (M1, M2, M4)",
+      "lesson_id": "",
       "excerpt_file": null,
       "found": false
     }

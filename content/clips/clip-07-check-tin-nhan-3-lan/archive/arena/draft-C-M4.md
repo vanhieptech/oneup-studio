@@ -4,6 +4,7 @@ date: 2026-11-27
 id: arena.writer-c-m4
 type: draft
 status: draft
+source: "oneup-studio (script-arena.py, HTB 3.5)"
 updated: 2026-11-27
 tags: [arena, script-draft, m4]
 ---

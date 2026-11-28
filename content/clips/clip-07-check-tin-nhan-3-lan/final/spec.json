@@ -39,6 +39,12 @@
    "date": "2026-11-28",
    "dl": "DL-082",
    "note": "Hiệp chốt bản Top 1 (M2) từ Đấu trường 3 Kịch bản. Lời khóa script_hash 244918a45986, review ĐẠT WIN vs a-c04. Spec dựng từ đúng lời v1, bật voice_refs 6000h."
+  },
+  {
+   "v": "v1.1",
+   "date": "2026-11-28",
+   "dl": "DL-082",
+   "note": "Sửa tự kiểm QA vòng 1 (rule-34): dời nhân vật/props tránh va chạm L-033, bỏ prop laptop chứa chữ Omi ở b02b, sửa b01b framing medium tránh đường bàn cắt phụ đề, chỉnh phiên âm b04 Cu lép + 6 takes cho b01/b04 đạt STT."
   }
  ],
  "cover": {
@@ -181,21 +187,23 @@
        "voice_ref": "default",
        "voice_role": "Hiệp",
        "text": "Sếp nhắn đúng hai chữ",
-       "say": "Sếp nhắn đúng hai chữ",
+       "say": "Sếp nhắn đúng hai chữ.",
        "en": "Boss texts two words",
        "hl": [
         0
        ],
        "phrases": [
         {
-         "t": "{nhấn: Sếp} nhắn đúng hai chữ",
+         "t": "{nhấn: Sếp} nhắn đúng hai chữ.",
          "gap": 0.14,
          "tempo": 1.04,
          "semi": 0.4,
          "emph": true,
          "emph_semi": 0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b01.wav",
+       "takes": 6
       }
      ],
      "stage": {
@@ -215,7 +223,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.46,
+       "x": 0.28,
        "facing": "right",
        "pose": "sitting",
        "action": "reacting",
@@ -238,9 +246,9 @@
      "props": [
       {
        "kind": "phone",
-       "x": 760,
-       "y": 980,
-       "scale": 0.9,
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62,
        "badge": "1"
       }
      ],
@@ -271,7 +279,8 @@
          "emph": true,
          "emph_semi": -0.3
         }
-       ]
+       ],
+       "voice_file": "c07v1-b01a.wav"
       }
      ],
      "stage": {
@@ -285,8 +294,8 @@
      "beat": "clip-07.b01",
      "part": "hook",
      "role": "Hiệp",
-     "background": "desk",
-     "framing": "closeup",
+     "background": "paper",
+     "framing": "medium",
      "push": 0.08,
      "transition": "cut",
      "cast": [
@@ -334,7 +343,8 @@
          "emph": true,
          "emph_semi": -0.4
         }
-       ]
+       ],
+       "voice_file": "c07v1-b01b.wav"
       }
      ],
      "stage": {
@@ -397,7 +407,8 @@
          "emph": true,
          "emph_semi": -0.3
         }
-       ]
+       ],
+       "voice_file": "c07v1-b02.wav"
       }
      ],
      "stage": {
@@ -418,7 +429,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.28,
        "facing": "right",
        "pose": "sitting",
        "action": "reacting",
@@ -441,9 +452,9 @@
      "props": [
       {
        "kind": "phone",
-       "x": 770,
-       "y": 990,
-       "scale": 0.9,
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62,
        "badge": "9"
       }
      ],
@@ -475,7 +486,8 @@
          "emph": true,
          "emph_semi": -0.4
         }
-       ]
+       ],
+       "voice_file": "c07v1-b02a.wav"
       }
      ],
      "stage": {
@@ -489,16 +501,16 @@
      "beat": "clip-07.b02",
      "part": "struggle",
      "role": "Hiệp",
-     "background": "desk",
+     "background": "paper",
      "framing": "medium",
      "push": 0.04,
      "transition": "cut",
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.5,
        "facing": "right",
-       "pose": "sitting",
+       "pose": "standing",
        "action": "thinking",
        "expression": "sad",
        "enter": "none"
@@ -516,14 +528,7 @@
        "word": "trách"
       }
      ],
-     "props": [
-      {
-       "kind": "laptop",
-       "x": 760,
-       "y": 1020,
-       "scale": 0.85
-      }
-     ],
+     "props": [],
      "lines": [
       {
        "speaker": "hiep",
@@ -558,7 +563,8 @@
          "emph": true,
          "emph_semi": -0.5
         }
-       ]
+       ],
+       "voice_file": "c07v1-b02b.wav"
       }
      ],
      "stage": {
@@ -621,7 +627,8 @@
          "emph": true,
          "emph_semi": -0.4
         }
-       ]
+       ],
+       "voice_file": "c07v1-b03.wav"
       }
      ],
      "stage": {
@@ -642,7 +649,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.28,
        "facing": "right",
        "pose": "sitting",
        "action": "talking",
@@ -665,9 +672,9 @@
      "props": [
       {
        "kind": "phone",
-       "x": 760,
-       "y": 990,
-       "scale": 0.88
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62
       }
      ],
      "lines": [
@@ -698,7 +705,8 @@
          "tempo": 0.98,
          "semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b03a.wav"
       }
      ],
      "stage": {
@@ -719,7 +727,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.28,
        "facing": "right",
        "pose": "standing",
        "action": "thinking",
@@ -742,9 +750,9 @@
      "props": [
       {
        "kind": "qmark",
-       "x": 760,
-       "y": 820,
-       "scale": 0.95
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62
       }
      ],
      "lines": [
@@ -774,7 +782,8 @@
          "emph": true,
          "emph_semi": 0.5
         }
-       ]
+       ],
+       "voice_file": "c07v1-b03b.wav"
       }
      ],
      "stage": {
@@ -795,7 +804,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.42,
+       "x": 0.28,
        "facing": "right",
        "pose": "standing",
        "action": "talking",
@@ -818,9 +827,9 @@
      "props": [
       {
        "kind": "card",
-       "x": 740,
-       "y": 860,
-       "scale": 0.85,
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62,
        "title": "KUSHLEV 2015",
        "sub": "EMAIL"
       }
@@ -832,7 +841,7 @@
        "voice_ref": "serious",
        "voice_role": "Hiệp",
        "text": "Nhóm Kushlev năm 2015 đo trên email nè:",
-       "say": "Nhóm Cút lép năm hai ngàn mười lăm đo trên i meo nè:",
+       "say": "Nhóm Cu lép năm hai ngàn mười lăm đo trên i meo nè:",
        "en": "Kushlev 2015 tested this on email:",
        "hl": [
         0,
@@ -840,14 +849,16 @@
        ],
        "phrases": [
         {
-         "t": "Nhóm Cút lép năm {nhấn: hai ngàn mười lăm} đo trên i meo nè:",
+         "t": "Nhóm Cu lép năm {nhấn: hai ngàn mười lăm} đo trên i meo nè:",
          "gap": 0.22,
          "tempo": 0.96,
          "semi": 0.0,
          "emph": true,
          "emph_semi": -0.1
         }
-       ]
+       ],
+       "voice_file": "c07v1-b04.wav",
+       "takes": 6
       }
      ],
      "stage": {
@@ -868,7 +879,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.42,
+       "x": 0.28,
        "facing": "right",
        "pose": "standing",
        "action": "talking",
@@ -891,9 +902,9 @@
      "props": [
       {
        "kind": "bars",
-       "x": 750,
-       "y": 900,
-       "scale": 0.85
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62
       }
      ],
      "lines": [
@@ -930,7 +941,8 @@
          "tempo": 0.96,
          "semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b04a.wav"
       }
      ],
      "stage": {
@@ -951,7 +963,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.28,
        "facing": "right",
        "pose": "standing",
        "action": "talking",
@@ -974,9 +986,9 @@
      "props": [
       {
        "kind": "stack",
-       "x": 760,
-       "y": 960,
-       "scale": 0.85
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62
       }
      ],
      "lines": [
@@ -1000,7 +1012,8 @@
          "emph": true,
          "emph_semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b05.wav"
       }
      ],
      "stage": {
@@ -1075,7 +1088,8 @@
          "tempo": 0.96,
          "semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b05a.wav"
       }
      ],
      "stage": {
@@ -1096,7 +1110,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.28,
        "facing": "right",
        "pose": "sitting",
        "action": "typing",
@@ -1119,9 +1133,9 @@
      "props": [
       {
        "kind": "phone",
-       "x": 760,
-       "y": 980,
-       "scale": 0.88
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62
       }
      ],
      "lines": [
@@ -1151,7 +1165,8 @@
          "emph": true,
          "emph_semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b06.wav"
       }
      ],
      "stage": {
@@ -1172,7 +1187,7 @@
      "cast": [
       {
        "id": "hiep",
-       "x": 0.44,
+       "x": 0.28,
        "facing": "right",
        "pose": "sitting",
        "action": "talking",
@@ -1195,9 +1210,9 @@
      "props": [
       {
        "kind": "clock",
-       "x": 760,
-       "y": 920,
-       "scale": 0.85
+       "x": 840,
+       "y": 1140,
+       "scale": 0.62
       }
      ],
      "lines": [
@@ -1234,7 +1249,8 @@
          "tempo": 0.98,
          "semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b06a.wav"
       }
      ],
      "stage": {
@@ -1303,7 +1319,8 @@
          "emph": true,
          "emph_semi": -0.3
         }
-       ]
+       ],
+       "voice_file": "c07v1-b07.wav"
       }
      ],
      "stage": {
@@ -1367,7 +1384,8 @@
          "emph": true,
          "emph_semi": 0.4
         }
-       ]
+       ],
+       "voice_file": "c07v1-b07a.wav"
       }
      ],
      "stage": {
@@ -1437,7 +1455,8 @@
          "emph": true,
          "emph_semi": -0.2
         }
-       ]
+       ],
+       "voice_file": "c07v1-b07b.wav"
       }
      ],
      "stage": {
