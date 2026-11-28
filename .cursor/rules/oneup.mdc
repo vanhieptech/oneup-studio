@@ -1,0 +1,11 @@
+---
+description: oneup-studio: luật dự án nằm ở AGENTS.md (nguồn duy nhất cho mọi agent)
+alwaysApply: true
+---
+Đọc và làm theo `AGENTS.md` ở gốc repo trước mọi việc (luật, nguồn chuẩn, workflow, quy tắc agent). Không chép luật vào file này.
+
+- Skill: `.cursor/skills/` (symlink tới `skills/…`), danh mục `docs/agents/skills-index.md`.
+- Chạy lệnh từ gốc repo (`git rev-parse --show-toplevel`), không ghi cứng đường dẫn tuyệt đối.
+- Trước commit: `bash pipeline/scripts/preflight.sh`.
+
+@AGENTS.md

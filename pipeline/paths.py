@@ -144,9 +144,10 @@ RESEARCH = ROOT / "research"; TRENDS = RESEARCH / "trends"
 LOGS = ROOT / "logs"; LESSONS = LOGS / "lessons.md"; DECISIONS = LOGS / "decision-log.md"
 RULES = ROOT / "rules/video-rules.md"; DOCS = ROOT / "docs"; TESTS = ROOT / "tests"
 SCRIPTS = ROOT / "pipeline/scripts"; TTS = ROOT / "pipeline/tts"; SKILLS_MIRROR = ROOT / "skills"
-SKILLS_LIVE = HOME / ".claude/skills"
+SKILL_LINK_DIRS = (ROOT / ".agents/skills", ROOT / ".claude/skills", ROOT / ".cursor/skills")  # per-agent symlink mirrors of the skill sources (Antigravity, Claude Code, Cursor); Grok reads docs/agents/skills-index.md
+SKILLS_INDEX = DOCS / "agents/skills-index.md"
 # allowed top-level dirs/files (check-assets.py enforces)
-TOP_ALLOWED = {"GUIDE.md", "AGENTS.md", "INDEX.md", "README.md", "index.json", ".gitignore", "assets", "brand", "channels", "content", "docs", "logs", "media",
+TOP_ALLOWED = {"GUIDE.md", "AGENTS.md", "CLAUDE.md", "GEMINI.md", "INDEX.md", "README.md", "index.json", ".gitignore", "assets", "brand", "channels", "content", "docs", "logs", "media",
                "pipeline", "research", "resources", "rules", "skills", "templates", "tests", "video-engine"}
 SAMPLES = ROOT / "content/samples"; LAB = SAMPLES / "lab"; FOOTAGE = MEDIA / "footage"; EXT_REFS = ROOT / "resources/refs"
 # per-clip standard layout: content/clips/<clip>/{README.md, final/, archive/}; drafts/old versions only in archive/
@@ -158,5 +159,5 @@ SHARED_NAMES = {"logo.svg", "thai-son.wav", "my-duyen.wav"}
 PROMPTS = DOCS / "prompts"; REFERENCES = RESEARCH / "references"; PUBLISHED = ROOT / "content/published"; SCRIPT_TEMPLATE = ROOT / "templates/script.md"
 FM_REQUIRED = ("title", "date", "type", "tags", "status", "source")
 FM_STATUS = {"draft", "ready", "published"}
-FM_EXEMPT = ("skills/", "video-engine/", "templates/hyperframes-base/", "docs/legacy-box/", "resources/refs/awesome-ai-motion/", "resources/refs/transitions.dev/", "resources/refs/motionmaxxing/", "resources/refs/anidoodle/", "brand/omi-exports/", "channels/vanhiep-tech/skills/")
+FM_EXEMPT = ("CLAUDE.md", "GEMINI.md", "skills/", "video-engine/", "templates/hyperframes-base/", "docs/legacy-box/", "resources/refs/awesome-ai-motion/", "resources/refs/transitions.dev/", "resources/refs/motionmaxxing/", "resources/refs/anidoodle/", "brand/omi-exports/", "channels/vanhiep-tech/skills/")
 FM_STRICT_STATUS = ("docs/prompts/", "research/references/", "content/published/", "templates/script.md")
