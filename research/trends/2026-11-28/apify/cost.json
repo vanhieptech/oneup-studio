@@ -15,7 +15,23 @@
    "usd": 0.055,
    "items": 44,
    "at": "2026-11-28T10:29:57"
+  },
+  {
+   "actor": "clockworks/tiktok-scraper",
+   "run_id": "9ey7iSzq67CoFrteV",
+   "status": "SUCCEEDED",
+   "usd": 0.0935,
+   "items": 25,
+   "at": "2026-11-28T13:01:16"
+  },
+  {
+   "actor": "clockworks/tiktok-comments-scraper",
+   "run_id": "D7zHz4MaV4hiy0Ywm",
+   "status": "SUCCEEDED",
+   "usd": 0.38,
+   "items": 304,
+   "at": "2026-11-28T13:02:42"
   }
  ],
- "total_usd": 0.204
+ "total_usd": 0.6775
 }

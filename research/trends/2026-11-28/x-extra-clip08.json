@@ -1,0 +1,38 @@
+[
+  {
+    "source": "x-trends-vn",
+    "title": "BREAK get_trends_by_woeid woeid 23424984",
+    "url": "https://console.x.com",
+    "cat": "error",
+    "lang": "vi",
+    "rank": 0,
+    "summary": "Client Forbidden user-not-enrolled Pay-per-use. Retried once. Same error. Worldwide woeid 1 not called after the retry failed."
+  },
+  {
+    "source": "x-news",
+    "title": "Simple iPhone Settings Boost Battery Life and Cut Distractions",
+    "url": "https://x.com/i/trending/2116895165457875038",
+    "cat": "tech",
+    "lang": "en",
+    "rank": 1,
+    "summary": "Disable unnecessary notifications, location While Using, Focus Mode. Updated 2026-11-01. max_age_hours 720 is the API ceiling."
+  },
+  {
+    "source": "x-news",
+    "title": "People Reflect on Short-Form Video Regrets and Attention Toll",
+    "url": "https://x.com/i/trending/2116958571552498104",
+    "cat": "tech",
+    "lang": "en",
+    "rank": 2,
+    "summary": "Deathbed-regret framing of short-form video. Updated 2026-11-01. Do not quote the unnamed 2025 meta-analysis number until the paper is opened."
+  },
+  {
+    "source": "x-news",
+    "title": "People Share Tips to Rebuild Focus Lost to Short Videos",
+    "url": "https://x.com/i/trending/2123488685299749370",
+    "cat": "focus",
+    "lang": "en",
+    "rank": 3,
+    "summary": "Readers say short video wrecked attention. Updated 2026-11-20. Fixes they name: paper book, handwriting, silent walk. Do not quote the 45-study figure until opened."
+  }
+]

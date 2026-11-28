@@ -8,15 +8,15 @@ updated: 2026-11-28
 tags: [trends, digest, daily]
 date: 2026-11-28
 collector: pipeline/scripts/trend-collect.py + radar-fetch.py + apify-run.py + tinyfish_client.py
-skill: trend-digest v5.1.0
+skill: trend-digest v5.2.0
 ---
 # Trend digest 2026-11-28 (thứ Bảy)
 
-**Nguồn:** 51/52 collector ok. Lỗi duy nhất: `gnews-us-tiktoktrend` (HTTP 429). Toàn bộ nguồn `tf-*` (TinyFish web/TikTok/Reddit/X) và 6 nguồn `yt-*` chạy thành công; chạy riêng `tinyfish_client.py tiktok` thu được **25** ứng viên (`tinyfish/tiktok-candidates.json`). **X MCP:** `x: unavailable (no x MCP server configured)`.
-**Apify TikTok:** chạy ok — **40 clip**, **26 subtitle**, **comments cho 3 clip**, 97.5–100% đủ 12 trường bắt buộc; chi phí **$0.2040 USD** (`apify/clips.json`).
-**Multi-Channel Radar (`radar-fetch.py --use-ego` + `trend-streams.py radar`):** 175 clip từ 20/24 kênh (lỗi `t3dotgg` không có tab Shorts, `hoaquynh` & `spiderum` TikTok secondary user ID, `hieutv` HTTP 404) + 40 clip Apify → **30 outlier** trong `radar.json` (8 clip cũ bỏ qua nhờ `seen-index.json`), nạp **+15** vào `teardown-queue.json`.
-**Auto-Discovery (`channel-discover.py --live`):** đề xuất 5 kênh EN mới (`@TED`, `@TEDEd`, `@JustinSung`, `@TEDx`, `@easywayactually1`) → `research/trends/suggested-channels.md`.
-**Số lượng:** collector 604 thô → 577 cụm. `raw.json` 582 mục (thêm 5 TikTok-native): **460 ok · 31 caution · 91 drop** (53 drop bộ lọc từ khoá + 38 hand-drop: chính trị, công an/tố tụng, tai nạn/nổ khí gas, bệnh nặng/ung thư/GLP-1, phá sản/đấu giá, NSFW). **491 qua lọc.**
+**Nguồn (chiều, `trend-collect.py` + `x-extra.json`):** 53/53 ok. 617 thô → 587 cụm. An toàn tự động: 521 ok · 12 caution · 54 drop. Sáng cùng ngày collector là 51/52 vì `gnews-us-tiktoktrend` HTTP 429; chiều nguồn đó trả 10 mục. `raw.json` giữ bản chấm tay buổi sáng (582 mục, 491 qua lọc) vì cụm chiều chưa chấm lại từng dòng.
+**X:** `search_news` có 3 story trong `x-extra.json` (Focus Mode 01/11, hối hận video ngắn 01/11, lấy lại sự tập trung 20/11). `get_trends_by_woeid` 23424984 lỗi `Client Forbidden` / `user-not-enrolled` / Pay-per-use, `https://console.x.com`. Đã gọi lại một lần, cùng lỗi. Không ghi `x: unavailable`.
+**TinyFish → Apify:** 25 link trong `tinyfish/tiktok-candidates.json` đo đủ (`--urls-from`, `--comments 25`). 25 clip, 15 subtitle, comment cho cả 25, 12 trường đủ 96–100%. Chi phí đo này $0.0935 (scraper) + $0.38 (304 comment). Cộng giỏ sáng, **hôm nay $0.6775**, vượt trần `apify.yaml` $0.50. Giỏ hashtag sáng (40 clip, 26 VTT, comment 3 clip, $0.204) chuyển sang `apify-basket/`.
+**Ego-browser:** search TikTok 4 cụm (`nghiện điện thoại`, `dẹp điện thoại`, `điện thoại úp bàn`, `tập trung làm việc`) trả 0 thẻ. Trang search mở bằng Ego Lite 0.6.3.17 rồi hiện `Something went wrong`.
+**Radar chiều (`radar-fetch.py --use-ego --with-comments`):** cache ấm, 175 clip, **0 outlier mới**, 38 clip đã thấy. Lần chạy ghi đè `radar.json` thành bảng mỏng nên hoàn lại bản sáng **30 outlier**. Inbox: 0 file mới.
 
 Dữ liệu: `collect.json`, `radar.json`, `raw.json`, `score.txt`, `ideas.json`, `plans/`, `apify/`, `tinyfish/`, `teardowns/`.
 
@@ -78,7 +78,10 @@ Dữ liệu: `collect.json`, `radar.json`, `raw.json`, `score.txt`, `ideas.json`
 | 9 | Credit card skimming scripts using WebRTC found on popular shopping sites (HN) | 0.754 | 1.0 / 0.03 | [InfoHawk](https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer) | 14.10 / 14.6 + `@vanhiep.tech` | DARK |
 | 10 | TikTok `@thnguyen.y`: từ người không biết gì kiên trì học ngoại ngữ (1,7M view, 602 cmt, 122.3x) | 0.730 | 1.0 / 0.12 | [TikTok @thnguyen.y](https://www.tiktok.com/@thnguyen.y/video/7663776976519384340) | bằng chứng phụ 4.12 (caution) | LIGHT |
 
-## TikTok signals (Apify + Radar, 28/11/2026)
+## TikTok signals (28/11/2026)
+
+Giỏ sáng nằm ở `apify-basket/` (hashtag, không phải 25 link TinyFish). Bảng này là lớp view cao đúng ngách từ giỏ đó.
+
 | keyword / nguồn | clip | xem / comment / share | hook / transcript snippet | sound | brand-safe? | bridge |
 |---|---|---|---|---|---|---|
 | tu duy / giao tiep | [@tramdungtrithuc](https://www.tiktok.com/@tramdungtrithuc/video/7710946714219236626) · 408s | 1.100.000 / 549 / 6.746 | VTT: «khi bị người khác xúc phạm mà không kịp phản ứng…» | gốc | ok | B-noikhay-01 |
@@ -86,6 +89,20 @@ Dữ liệu: `collect.json`, `radar.json`, `raw.json`, `score.txt`, `ideas.json`
 | lap ke hoach | [@dangde.suyngam](https://www.tiktok.com/@dangde.suyngam/video/7707949451339402503) · 36s | 1.100.000 / 542 / 15.100 | caption: «Hãy luôn học cách lập kế hoạch trước» (VTT tiếng Trung: không phải năm nào cũng kiếm được tiền) | gốc | caution (tiền) | củng cố 5.27 |
 | kien tri | [@thnguyen.y](https://www.tiktok.com/@thnguyen.y/video/7663776976519384340) · 66s | 1.700.000 / 602 / 8.882 | VTT: «từ một người không biết gì về tiếng Trung…» | gốc | caution (người thật) | bằng chứng 4.12 |
 | tap trung | [@ngocanhh0565](https://www.tiktok.com/@ngocanhh0565/video/7707619983878065429) · 33s | 216.300 / 46 / 9.559 | caption: «bỏ các môn khác để tập trung 1 môn… cái xg điểm thấp tất» | gốc | ok | bằng chứng tự giễu (L-087) |
+
+### 25 link TinyFish vừa đo (chiều)
+
+Query `thoi quen` / `tri hoan` / `tap trung` / `quan ly thoi gian` kéo nhiều clip lệch từ khoá (cơm gà, Lăng Bác, trượt tuyết, hiến tóc). Xếp theo comment rồi view, chỉ giữ dòng đụng thói quen / tập trung / trì hoãn. Âm thanh đều là nhạc gốc trên clip.
+
+| keyword | clip | xem / comment / share | hook / comment | brand-safe? | bridge |
+|---|---|---|---|---|---|
+| quản lý thời gian | [@tuthanvuonlen](https://www.tiktok.com/@tuthanvuonlen/video/7397788075708976402) · 135s | 617.200 / 171 / 2.653 | «Quy tắc 1-3-5». Comment: «xem xong cuối cùng quên, không thèm làm» | ok | người xem nhận ra mẹo rồi không làm — gần 3.1 / 4.x, không phải mẹo mới |
+| trì hoãn | [@misslamdep19_01](https://www.tiktok.com/@misslamdep19_01/video/7553199316848971026) · 49s | 202.900 / 12 / 406 | «Cách để chữa sự trì hoãn» | ok | list chữa trì hoãn, bão hoà, comment không nói nỗi đau |
+| mất tập trung | [@khanhvyccf](https://www.tiktok.com/@khanhvyccf/video/7572561134096633095) · 76s | 146.800 / 66 / 423 | «Nếu mất tập trung thì hay thử làm mấy việc này». Comment nhiều về mặt, không về việc | caution (người nổi tiếng) | list mẹo, không lấy làm góc |
+| thói quen | [@thuyvinavi1602](https://www.tiktok.com/@thuyvinavi1602/video/7712066361492655380) · 249s | 90.900 / 42 / 1.349 | «7 thói quen giúp cuộc sống phất». Comment: «bạn nói nhanh quá» | ok | list 7 điều, bão hoà |
+| tập trung bàn học | [@tranquocphuc.taovang](https://www.tiktok.com/@tranquocphuc.taovang/video/7538353920767397128) · 145s | 37.700 / 51 / 711 | «vì sao con không tập trung khi ngồi vào bàn học» | caution (L-087, học sinh) | không đưa ví dụ môn học vào lời thoại |
+
+View cao nhưng lệch chủ đề, không bắc cầu: [@kaethykitchen](https://www.tiktok.com/@kaethykitchen/video/7474207141423811846) 1.800.000 view (cơm gà), [@sepannhan](https://www.tiktok.com/@sepannhan/video/7589154041150622983) 901.200 view / 2.157 comment (hài giận nhau).
 
 ## Learning
 - **2 teardown EN củng cố `ARC-003`:** cả `@thomasfrank` (857k) và `@healthygamergg` (487k) đều đi theo cấu trúc gọi tên nỗi đau bằng một nhãn gọn / ví dụ phản trực giác → lật khung khái niệm → chốt bằng câu ngắn sắc không cần nhạc nền dày.
@@ -124,3 +141,7 @@ Dữ liệu: `collect.json`, `radar.json`, `raw.json`, `score.txt`, `ideas.json`
 - **B-tienvasuckhoe-01:** bỏ toàn bộ phần lão hoá sớm / bệnh lý trong bài Kenh14; chỉ nói về ngưỡng giờ làm giảm hiệu suất (3.13).
 - **B-noikhay-01:** không chép câu thoại hay vẽ hình creator `@tramdungtrithuc`; giữ góc tự điều chỉnh cảm xúc (3.17 / 3.23).
 - **B-skimmer-01:** không quy kết hay công kích nhà cung cấp cụ thể; tập trung vào thói quen kiểm tra quyền truy cập của skill/công cụ AI và bảo vệ thẻ thanh toán (14.10).
+- **Apify 28/11:** tổng $0.6775, vượt trần ngày $0.50 vì comment 25 clip × 20 comment ($0.38). Lần sau giữ `--comments` đúng số link skill yêu cầu nhưng hạ `commentsPerPost` trước khi chạy, hoặc xin trần mới.
+- **TinyFish chiều:** `@khanhvyccf` là người nổi tiếng, chỉ caution. `@tranquocphuc.taovang` là bàn học của con, L-087, không đưa vào lời thoại.
+- **Chi phí Apify 28/11:** $0.6775, vượt trần ngày $0.50 vì comment 25 clip × 20 comment/clip ($0.38). Lần sau giữ `--comments` bằng số link đúng chủ đề, không kéo cả file ứng viên khi TinyFish trả clip lệch từ khoá.
+- **@khanhvyccf:** caution người nổi tiếng. **@tranquocphuc.taovang:** caution L-087, không đưa ví dụ bàn học học sinh vào lời thoại.
