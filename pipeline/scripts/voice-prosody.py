@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Human-sounding line synthesis, engine-agnostic (DL-033 VieNeu, DL-035 F5-TTS). Run with the TTS venv:
-  /workspace/tts-venv/bin/python pipeline/scripts/voice-prosody.py job.json      (job = {"jobs":[...]} )
-  /workspace/tts-venv/bin/python pipeline/scripts/voice-prosody.py --metrics a.wav b.wav ...   (F0/pause stats only)
+  "$VIENEU_PYTHON" pipeline/scripts/voice-prosody.py job.json      (job = {"jobs":[...]} )
+  "$VIENEU_PYTHON" pipeline/scripts/voice-prosody.py --metrics a.wav b.wav ...   (F0/pause stats only)
 
 Why: synthesizing a whole sentence and then time-stretching it (old path: atempo ×1.3) flattens
 pitch, removes pauses and smears consonants. Instead, per LINE:
@@ -15,7 +15,7 @@ pitch, removes pauses and smears consonants. Instead, per LINE:
      STT similarity (faster-whisper, asr venv) ≥0.8 gate, then 0.55·STT + 0.3·F0 range + 0.15·(1-artifact);
   5. line mastering: HPF 70 Hz, de-ess, gentle compression (2.5:1), −16 LUFS, room tone bed.
 Engines (job["engine"]): "vieneu-tts" (preset by name, in-process) or "f5-tts" (default since DL-035:
-  hynt/F5-TTS-Vietnamese-ViVoice via pipeline/tts/f5tts_gen.py in /workspace/f5-venv, job needs "ref"+"ref_text").
+  hynt/F5-TTS-Vietnamese-ViVoice via pipeline/tts/f5tts_gen.py in F5_PYTHON (pipeline/paths.py, default ~/oneup-tools/f5-venv), job needs "ref"+"ref_text").
   F5 takes = seed/speed grid; every raw take is auto-trimmed for REFERENCE LEAKAGE (words of the reference
   sentence bleeding in before the target text) using faster-whisper word timestamps, then the same
   STT/F0/artifact pick, gaps, emphasis and mastering apply.

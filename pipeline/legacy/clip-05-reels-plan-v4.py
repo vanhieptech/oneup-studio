@@ -7,7 +7,7 @@ Props that would sit under that caption box are moved:
                b01a (no cast) lifts the whole desk (table top 1250 → 960) with its pile/lamp; b08 calendar/chat/hand go up
   grid scenes (b02b/b07b/b07c, same angle kept across all three): Punnett sheet k=0.62 to (330, 760), clock under the caption box, pen remapped
   cast scenes (RR round 2, 3d8f43d): framing "reels" (Thầy ×0.835) at x .776; hourglass b02a/b05a s .33 standing on the desk (top ≥1268)
-Usage: python3 pipeline/scripts/clip-05-reels-plan-v4.py"""
+Usage: python3 pipeline/legacy/clip-05-reels-plan-v4.py"""
 import json, os
 D = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../content/clips/clip-05-hoc-mot-dem/final")
 p = json.load(open(os.path.join(D, "plan-A.voiced.json")))

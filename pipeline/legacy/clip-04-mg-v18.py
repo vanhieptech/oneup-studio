@@ -4,7 +4,7 @@ Writes final/mg-b03/index.html and final/mg-b06/index.html (silent, text-free pl
 study credits and the «+2 ngày» tag stay in the Remotion overlay layer on top). Timings come from the
 same word clock as clip-04-spec-v18-scenes.py (Scene.W), so the plates stay sample-locked to the voice.
 Render: cd final/mg-b03 && npx hyperframes@0.8.150 render -o ../../../../../video-engine/public/mg/c04v18-b03.mp4
-Usage: python3 pipeline/scripts/clip-04-mg-v18.py"""
+Usage: python3 pipeline/legacy/clip-04-mg-v18.py"""
 import importlib.util, json, os, shutil
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "../.."))

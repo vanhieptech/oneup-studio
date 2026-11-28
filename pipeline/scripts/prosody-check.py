@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Prosody plan + measurement (clip-04 v14b, Hiệp 20/10: "ngắt nghỉ, nhấn nhá không hợp lý").
   python3 pipeline/scripts/prosody-check.py plan    <spec.json>   # final/prosody-plan.md (+.json): cụm theo ý, nghỉ mục tiêu, 1 từ nhấn/câu, câu hỏi lên giọng
-  /workspace/asr-venv/bin/python pipeline/scripts/prosody-check.py measure <spec.json>  # final/prosody-measure.json/.md from the real voice wavs + timing.json
+  "$ASR_PYTHON" pipeline/scripts/prosody-check.py measure <spec.json>  # final/prosody-measure.json/.md from the real voice wavs + timing.json
 Targets: comma 0.15–0.25s, period/?/! 0.35–0.5s, colon 0.2–0.35s, between beats ≈0.5s (0.4–0.8), no pause >0.8s, no pause <0.1s at a period,
 no break >0.25s at a boundary without punctuation (= ngắt giữa cụm từ). Pauses = silence runs (energy) between aligned words, so whisper's fuzzy
 word edges only locate the boundary. Question rise = median F0 of the last word vs. the rest of the sentence (numpy autocorrelation)."""

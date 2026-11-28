@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """rule-59 / L-023: fail if @hi.oneup project files live outside the repo.
-Scans known external dirs on the box; a file passes only if an identical copy (sha256)
-is tracked in the repo or listed in media/MANIFEST.json. Usage: check-assets.py [--list]"""
-import hashlib, json, re, subprocess, sys
+Scans external dirs listed in ONEUP_EXTERNAL_DIRS (os.pathsep-separated; empty by default, the old agent-box
+sync dirs are gone); a file passes only if an identical copy (sha256) is tracked in the repo or
+listed in media/MANIFEST.json. No agent-specific path is hardcoded. Usage: check-assets.py [--list]"""
+import hashlib, json, os, re, subprocess, sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
-EXTERNAL = [Path("/workspace/oneup-studio-sync"), Path("/workspace/hi-oneup")]
+EXTERNAL = [Path(d).expanduser() for d in os.environ.get("ONEUP_EXTERNAL_DIRS", "").split(os.pathsep) if d.strip()]
 WS_MD = ["hi-oneup*", "howtolivebetter*", "make-video*", "oneup-*", "trend-digest*", "trend-routine*"]
 SKIP = {"node_modules", ".git", ".bundle-cache", "__pycache__"}
 def sha(p):
@@ -23,7 +24,9 @@ if m.exists(): known |= {e["sha256"] for e in json.loads(m.read_text())}
 cands = []
 for d in EXTERNAL:
     if d.exists(): cands += [p for p in d.rglob("*") if p.is_file() and not SKIP & set(p.parts)]
-for g in WS_MD: cands += [p for p in Path("/workspace").glob(g) if p.is_file() and p.suffix == ".md"]
+for d in EXTERNAL:
+    if d.is_dir():
+        for g in WS_MD: cands += [p for p in d.glob(g) if p.is_file() and p.suffix == ".md"]
 bad = [p for p in cands if sha(p) not in known]
 if bad:
     print(f"FAIL rule-59: {len(bad)} project file(s) outside repo {ROOT} not committed/manifested:")

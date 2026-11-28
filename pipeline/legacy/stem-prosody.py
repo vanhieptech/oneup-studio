@@ -1,5 +1,6 @@
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json,librosa,numpy as np,re
-R="/workspace/oneup-studio/research/trends/2026-10-15/audio/"
+R=_REPO + "/research/trends/2026-10-15/audio/"
 ref=[]
 for l in open(R+"transcript-medium.txt"):
   if l.startswith("   "):

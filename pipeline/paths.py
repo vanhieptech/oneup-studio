@@ -57,7 +57,7 @@ def _load_versions():
 VERSIONS = _load_versions()
 HYPERFRAMES_VERSION = os.environ.get("HYPERFRAMES_VERSION", VERSIONS.get("hyperframes", "0.9.94"))
 
-# Local Mac toolchain (no /workspace/ dependency)
+# Local Mac toolchain (no agent box/workspace dependency)
 NODE_BIN = _find_node_bin()
 FFMPEG_BIN = _find_ffmpeg()
 FFPROBE_BIN = _find_ffprobe()

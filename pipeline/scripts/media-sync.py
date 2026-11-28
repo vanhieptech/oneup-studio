@@ -2,7 +2,7 @@
 """rule-66 / storage.md §Gitignored: keep gitignored originals (media/**) on Hiệp's Mac.
 Box has no GitHub creds and CopyFromBox caps at ~5 MB per file, so media travels as a tar split into ≤5 MB parts
 inside the repo's .git/ dir (allowed local-exec root).
-  box:  media-sync.py pack [--missing mac_list.txt]   → /workspace/media-sync/part.NN + media-sync.json (sha256 of tar)
+  box:  media-sync.py pack [--missing mac_list.txt]   → $MEDIA_SYNC_DIR (default ~/oneup-tools/media-sync)/part.NN + media-sync.json (sha256 of tar)
         (agent copies each part with CopyFromBox to <repo>/.git/media-sync/part.NN on the Mac)
   mac:  media-sync.py unpack                          → joins .git/media-sync/part.*, checks sha256, untars into repo, verifies MANIFEST
   any:  media-sync.py verify                          → lists MANIFEST entries missing or with wrong sha256 (exit 1 if any)

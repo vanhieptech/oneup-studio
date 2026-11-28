@@ -4,7 +4,7 @@ Reels safe zone: captions y≈1000–1240 (engine: video.layout=reels → narrow
 title y≥300. Props that would sit under the caption band are moved above it:
   closeup: paper/card/pen/tag −200 · halves: everything but window −200, window wy 150
   plates (b03/b06 HyperFrames) untouched · room: small paper s.36 @y1300 (pen remapped), chat/hand icons lifted.
-Usage: python3 pipeline/scripts/clip-04-reels-plan-v18.py"""
+Usage: python3 pipeline/legacy/clip-04-reels-plan-v18.py"""
 import json, os
 D = os.path.join(os.path.dirname(__file__), "../../content/clips/clip-04-gap-sach-tu-kiem/final")
 p = json.load(open(os.path.join(D, "plan-A.voiced.json")))

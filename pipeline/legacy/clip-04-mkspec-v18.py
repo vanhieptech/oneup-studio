@@ -3,12 +3,13 @@
 lines are frame-aligned slices of it (cut inside the measured silences), written to video-engine/public/voice/c04v18-<line>.wav/.json;
 spec.voice_track = the same slices concatenated (+1.0s hold after b07, L-080) so build-final muxes the approved audio sample-exact.
 usage: clip-04-mkspec-v18.py slices   (cut + json; needs slice-stt.json from `stt` for stt fields)
-       clip-04-mkspec-v18.py stt      (faster-whisper medium float32 per slice → /workspace/voice-work/clip-04-v18c/slice-stt.json; run with asr-venv)
+       clip-04-mkspec-v18.py stt      (faster-whisper medium float32 per slice → $VOICE_WORK_DIR/clip-04-v18c/slice-stt.json; run with asr-venv)
        clip-04-mkspec-v18.py spec     (write final/spec.json)"""
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json, os, re, sys, wave, difflib, unicodedata
 import numpy as np
-REPO = "/workspace/oneup-studio"; D = f"{REPO}/content/clips/clip-04-gap-sach-tu-kiem/final/"
-VD = f"{REPO}/video-engine/public/voice/"; WORK = "/workspace/voice-work/clip-04-v18c/"; P = "c04v18"
+REPO = _REPO + ""; D = f"{REPO}/content/clips/clip-04-gap-sach-tu-kiem/final/"
+VD = f"{REPO}/video-engine/public/voice/"; WORK = _VW + "/clip-04-v18c/"; P = "c04v18"
 SR, FPS = 48000, 30; SPF = SR // FPS
 HOLD_AFTER, HOLD_S, TAIL_S = "c16b", 1.0, 0.3
 T = json.load(open(D + "voice-only-c04v18.timing.json")); M = json.load(open(D + "prosody-measure-v18.json"))

@@ -111,7 +111,7 @@ def build():
         ("mmx-snap-settle: close-up, pen stops dead on empty row 5; a face-down card with a faded suitcase shadow appears, shakes at 'bí'", "bí"),
         ("Pen stops at row 5; face-down card shows only a faint suitcase shadow", "stuck, deflated"), push=0.06, link="the exact word where that morning test broke")
 
-    # b03 cause + evidence → HyperFrames motion-graphic plate (rule-42): final/mg-b03 (pipeline/scripts/clip-04-mg-v18.py),
+    # b03 cause + evidence → HyperFrames motion-graphic plate (rule-42): final/mg-b03 (pipeline/legacy/clip-04-mg-v18.py),
     # rendered to video-engine/public/mg/c04v18-b03.mp4; Remotion only overlays captions + the study credit + «+2 ngày» tag.
     MG = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../content/clips/clip-04-gap-sach-tu-kiem/final/mg-v18.json")))
     PL = lambda name, frm: {"kind": "plate", "x": 0, "y": 0, "src": f"mg/c04v18-{name}.mp4", "from": round(frm, 4)}

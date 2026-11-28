@@ -6,16 +6,17 @@ written to video-engine/public/voice/c05v4-<line>.wav/.json; spec.voice_track = 
 usage: clip-05-mkspec-v4.py slices   (cut + json; reads slice-stt.json from `stt` for the stt fields)
        clip-05-mkspec-v4.py stt      (faster-whisper MEDIUM float32 per slice → WORK/slice-stt.json; run with asr-venv)
        clip-05-mkspec-v4.py spec     (write final/spec.json via clip-05-spec-v4-scenes.py)"""
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json, os, re, sys, wave, difflib, unicodedata, subprocess
 import numpy as np
-REPO = "/workspace/oneup-studio"; D = f"{REPO}/content/clips/clip-05-hoc-mot-dem/final/"
-VD = f"{REPO}/video-engine/public/voice/"; WORK = "/workspace/voice-work/clip-05-v4-render/"; P = "c05v4"
+REPO = _REPO + ""; D = f"{REPO}/content/clips/clip-05-hoc-mot-dem/final/"
+VD = f"{REPO}/video-engine/public/voice/"; WORK = _VW + "/clip-05-v4-render/"; P = "c05v4"
 SR, FPS = 48000, 30; SPF = SR // FPS
 HOLD_AFTER, HOLD_S, TAIL_S = "c16b", 0.0, 0.3  # Rule Reviewer final F3 (bb7423c): no extra hold after c16b, c16→c17 silence = voice-only 0.40s
 T = json.load(open(D + "voice-only-c05v4.timing.json")); M = json.load(open(D + "prosody-measure-c05v4.json"))
 CH = {s["id"]: s for s in T["sentences"]}
 TOK = {s["id"]: [k for p in s["pieces"] for k in p["tokens"]] for s in T["sentences"]}
-PICK = json.load(open("/workspace/voice-work/clip-05-v4/picks.json"))
+PICK = json.load(open(_VW + "/clip-05-v4/picks.json"))
 
 # line id, chunk, split (token index the line starts at inside the chunk), display text (VI = locked v4 words; **bold** = delivery stress),
 # EN caption (≤8 words), hl, emotion, bubble

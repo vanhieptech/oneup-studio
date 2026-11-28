@@ -2,7 +2,7 @@
 # clip-05 v4: Reels/Shorts MP4 = cover.png 0.5s (15 frames, L-083) + plan-reels render (layout reels) muxed with the same final mix as TikTok.
 # Audio: final/out/mix.wav when present, else the audio track of the delivered clip-05-v4-tiktok.mp4 (= that mix; out/ is gitignored and can vanish on resync).
 # Then the L-033 per-frame scan (RR round 2): a caption-less twin render gives the exact caption mask → clearance to every object + right frame edge.
-# Run after clip-05-reels-plan-v4.py.  Usage: bash pipeline/scripts/clip-05-reels-assemble-v4.sh
+# Run after clip-05-reels-plan-v4.py.  Usage: bash pipeline/legacy/clip-05-reels-assemble-v4.sh
 set -euo pipefail
 R=$(cd "$(dirname "$0")/../.." && pwd); F=$R/content/clips/clip-05-hoc-mot-dem/final; VE=$R/video-engine
 TOTAL=$(python3 -c "import json;print(json.load(open('$F/timing.json'))['total'])")

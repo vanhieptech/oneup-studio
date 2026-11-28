@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { homedir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { VideoPlan } from "../validation/schema";
@@ -43,7 +44,7 @@ export function voicePlan(plan: VideoPlan, opts: { registry?: ProfileRegistry; p
   const log = opts.log ?? console.log;
   const jobs = collectVoiceJobs(plan, opts.registry);
   if (!jobs.length) { log("voice: no synthetic-voice lines"); return plan; }
-  const py = opts.python ?? process.env.VIENEU_PYTHON ?? "/workspace/tts-venv/bin/python";
+  const py = opts.python ?? process.env.VIENEU_PYTHON ?? path.join(process.env.ONEUP_TOOLS_DIR ?? path.join(homedir(), "oneup-tools"), "tts-venv/bin/python"); // same default as pipeline/paths.py
   if (!existsSync(py)) throw new Error(`voice: VieNeu python not found at ${py}. Install: python3 -m venv tts-venv && tts-venv/bin/pip install vieneu "onnxruntime==1.22.1" (see video-engine/README.md#voice). Set VIENEU_PYTHON.`);
   const cached = jobs.filter((j) => existsSync(j.out + ".wav")).length;
   log(`voice: ${jobs.length} line(s), ${cached} cached, synthesizing ${jobs.length - cached} (F5-TTS / VieNeu-TTS)…`);

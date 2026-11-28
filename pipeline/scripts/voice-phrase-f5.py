@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Per-phrase F5 voice with {nhấn:} emphasis (L-036, clip-02 v17). Reusable for any clip spec.
   python3 pipeline/scripts/voice-phrase-f5.py gen    <spec.json> --work DIR            # write units + F5 batches (2 seeds/phrase)
-  F5_THREADS=4 /workspace/f5-venv/bin/python pipeline/tts/f5tts_gen.py DIR/batch0.json   # (and batch1.json in parallel)
-  /workspace/asr-venv/bin/python pipeline/scripts/voice-phrase-f5.py pick   <spec> --work DIR [unit keys…]  # STT pick + emphasis edits
-  /workspace/asr-venv/bin/python pipeline/scripts/voice-phrase-f5.py stitch <spec> --work DIR --prefix v17 --listen out.mp3
+  F5_THREADS=4 "$F5_PYTHON" pipeline/tts/f5tts_gen.py DIR/batch0.json   # (and batch1.json in parallel)
+  "$ASR_PYTHON" pipeline/scripts/voice-phrase-f5.py pick   <spec> --work DIR [unit keys…]  # STT pick + emphasis edits
+  "$ASR_PYTHON" pipeline/scripts/voice-phrase-f5.py stitch <spec> --work DIR --prefix v17 --listen out.mp3
 Units: phrases split at '|' in spec `phrases[].t` (< 4 syllables merged). Emphasis: stem words +1 st +2 dB tempo .95; {nhấn:} words
 tempo .78 +0.8 st +1.5 dB; stem line last word −1.5 st (fall). Hiệp-né role +2 st. Writes video-engine/public/voice/<prefix>-<line>.wav/.json
 with emphasis_edits=true (check-rules L-016 exception) and final/voice-stt-<prefix>.json. Re-roll a failing unit: add seeds to a batch, re-run pick <key>.

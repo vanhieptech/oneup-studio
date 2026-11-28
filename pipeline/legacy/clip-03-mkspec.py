@@ -1,7 +1,8 @@
 """clip-03 v8 spec generator (script locked 16/10) (HTB 4.7, Thầy monologue, meme 'bản chất' stems, L-039/L-040).
 Meta (cover, pacing, transition_sfx) modelled on clip-02; voice via build-final --stage voice-phrase (prefix c03v3)."""
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json, re
-D = '/workspace/oneup-studio/content/clips/clip-03-big-task-chunking/final/'
+D = _REPO + '/content/clips/clip-03-big-task-chunking/final/'
 P = 'c03v8'
 # key, display text, spoken phrases ('|' split, {nhấn:}), en, highlight words
 RAW = [
@@ -88,7 +89,7 @@ ST = {
 for n, sc in enumerate(A, 1):
     a, r, lk = ST[sc["id"]]; sc["stage"] = {"action": a, "react": r}; sc["beat"] = f"clip-03.b{n:02d}"
     if lk: sc["link"] = lk
-base = json.load(open('/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
+base = json.load(open(_REPO + '/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
 s = {k: base[k] for k in ("transition_sfx", "pacing")}
 s.update({"id": "clip-03-final", "clip": "clip-03", "title": "Việc hứa cuối tuần mà để cả năm: chia việc lớn thành việc con (HTB 4.7)",
   "week": 1, "theme": "dark", "pillar": "1 Làm ít, xong nhiều", "story": "monologue Thầy (L-039), dọn phòng + ôn thi (L-040), hook câu hỏi mở (L-043)",

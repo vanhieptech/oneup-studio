@@ -1,8 +1,9 @@
 """clip-04 v14 spec generator. Dialogue EXACT from final/script-v14.md as locked by Hiep 'chot' 2026-10-20.
 DO NOT change a word. voice_prefix c04v14, Thay only F5 Thai Son speed 0.9 (voice-phrase-f5.py hardcodes 0.9).
 Parts: A remotion b01-b05, E hyperframes b06-b07, B remotion b08-b10. End card appended at assemble stage (ffmpeg, 2s)."""
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json, re, shutil, os
-D='/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/'
+D=_REPO + '/content/clips/clip-04-gap-sach-tu-kiem/final/'
 P='c04v14b'  # v14b 20/10: F5 speed 1.0 regen (Rule Reviewer QA), 4 EN chunks restored by splitting lines (words unchanged)
 # lines: (scene, text_with_bold, phrases_with_nhan_pipe_split_by_|_as_list, en_chunk, hl_words, emotion)
 # Each entry = ONE spec line (caption chunk <=8 words). Phrases are the | splits inside that line.
@@ -150,7 +151,7 @@ for sc in A+B:
 for sec in E:
     bk=sec["beat"].split(".")[-1]; a,r=STAGE[bk]; sec["stage"]={"action":a,"react":r}; sec["link"]=LINKS[bk]
 A[0]["narration"]="HỌC THUỘC TỐI QUA, SÁNG DẬY QUÊN SẠCH?"  # L-067: on-screen text MUST keep diacritics
-base=json.load(open('/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
+base=json.load(open(_REPO + '/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
 s={k:base[k] for k in ("transition_sfx","pacing")}
 s.update({"id":"clip-04-final","clip":"clip-04","title":"Gấp sách tự kiểm (HTB 23.14) - script v14 locked","week":1,"theme":"dark","pillar":"Học đúng cách","story":"monologue Thay (L-039), vi du 30 tu tieng Anh di du lich (minh hoa), L-050 meaning-by-objects zero-doodle, L-059 bang canh 9 cot trong script-v14.md","trend":"supporting-signal only: final/trend-signals.md (HTB 23.14 topic, khong trend-driven)","voice_prefix":P,
  "revisions":[{"v":"v14","date":"2026-10-20","note":"Hiep 'chot' script-v14: loi nguyen van v14 khong sua chu; spec moi c04v14, F5 Thai Son 0.9, Remotion b01-b05/b08-b10 + HyperFrames b06-b07, end card 2s credit CC BY 4.0"}],

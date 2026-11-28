@@ -1,7 +1,8 @@
 """clip-04 v3.1 spec generator (script LOCKED by Hiep 18/10, hook C1). Dialogue EXACT from script-final v3.1.
 New props book/sheet (L-050 meaning-by-objects, zero doodle). voice_prefix c04v1, Thay only F5 Thai Son 0.9."""
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json, re
-D = '/workspace/oneup-studio/content/clips/clip-04-gap-sach-tu-kiem/final/'
+D = _REPO + '/content/clips/clip-04-gap-sach-tu-kiem/final/'
 P = 'c04v1'
 RAW = [
 ("b01", "Bạn tưởng mình **hay quên** hả?", "Bạn tưởng mình {nhấn: hay quên} hả?", "You think you just forget easily?", ["forget"]),
@@ -82,7 +83,7 @@ ST = {
 for n, sc in enumerate(A, 1):
     a, r, lk = ST[sc["id"]]; sc["stage"] = {"action": a, "react": r}; sc["beat"] = f"clip-04.b{n:02d}"
     if lk: sc["link"] = lk
-base = json.load(open('/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
+base = json.load(open(_REPO + '/content/clips/clip-02-procrastination-discomfort/final/spec.json'))
 s = {k: base[k] for k in ("transition_sfx", "pacing")}
 s.update({"id": "clip-04-final", "clip": "clip-04", "title": "Ban co nho gi dau ma quen: gap sach tu kiem (HTB 23.14)",
   "week": 1, "theme": "dark", "pillar": "Hoc dung cach", "story": "monologue Thay (L-039), on thi + tieng Anh (L-040), hook cau hoi mo C1 (L-043), L-050 meaning-by-objects zero-doodle",

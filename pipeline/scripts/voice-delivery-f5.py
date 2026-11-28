@@ -2,9 +2,9 @@
 """Voice-only straight from a delivery plan (script-vNN-delivery.md), no spec needed (clip-04 v16b preview, W-08 / L-070).
   python3 pipeline/scripts/voice-delivery-f5.py parse   <final dir> --script script-v16b.md --delivery script-v16b-delivery.md --work DIR
   python3 pipeline/scripts/voice-delivery-f5.py batch   ... --seeds 11,37,53 [--only s03,s07]      # F5 batch json (whole sentences)
-  /workspace/asr-venv/bin/python ... pick    ...            # STT + rate pick, gain stress, question rise, split at every delivery mark
-  /workspace/asr-venv/bin/python ... voice   ... --plan A|B --prefix c04v16b --m4a OUT
-  /workspace/asr-venv/bin/python ... measure ... --prefix c04v16b --out final/prosody-measure-v16b.md
+  "$ASR_PYTHON" ... pick    ...            # STT + rate pick, gain stress, question rise, split at every delivery mark
+  "$ASR_PYTHON" ... voice   ... --plan A|B --prefix c04v16b --m4a OUT
+  "$ASR_PYTHON" ... measure ... --prefix c04v16b --out final/prosody-measure-v16b.md
 Root rules (pacing-v14.md, L-070): F5 gets WHOLE sentences (never a lone word; English words respelled inside their sentence); every delivery mark
 ('/', '//', '//|', '///') becomes a cut at the real low-energy point between the two words, then the exact plan pause is laid in; stress = gain
 on the **bold** chunk (≥2 dB over the rest of the sentence and over its neighbours), no tempo change, no word split; '↗' questions get the last

@@ -1,7 +1,8 @@
 """clip-02 v14 spec generator (meme 'bản chất' stem, Thầy + Hiệp-né). Lines/voice keys from v14 voice batch.
 Loads the existing spec (keeps cover/meta), replaces parts/hook/engagement, appends a revision."""
+import os as _o; _REPO = _o.path.abspath(_o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "../..")); _VW = _o.environ.get("VOICE_WORK_DIR", _o.path.expanduser("~/oneup-tools/voice-work"))  # repo root from __file__ (agent-setup)
 import json, re, sys
-D = '/workspace/oneup-studio/content/clips/clip-02-procrastination-discomfort/final/'
+D = _REPO + '/content/clips/clip-02-procrastination-discomfort/final/'
 # key, role, display text, spoken(say), en, hl words
 RAW=[  # v15: say uses '|' = phrase split (L-036), {nhấn:}/{kéo:} = emphasis on the payload word
 ("b01","thay","Thì cái **bản chất**…","Thì cái|{nhấn: bản chất}...","So what's the essence…",["essence…"]),
