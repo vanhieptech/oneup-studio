@@ -223,86 +223,6 @@
    "title": "Tín hiệu trend cho clip-06 v13"
   },
   {
-   "id": "clip-07.fact-lock",
-   "type": "research",
-   "status": "locked",
-   "updated": "2026-11-27",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/fact-lock.md",
-   "title": "clip-07 fact lock"
-  },
-  {
-   "id": "clip-07.feedback",
-   "type": "feedback",
-   "status": "living",
-   "updated": "2026-11-27",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/feedback.md",
-   "title": "clip-07 — góp ý của Hiệp (nguyên văn)"
-  },
-  {
-   "id": "clip-07.post-checklist",
-   "type": "checklist",
-   "status": "draft",
-   "updated": "2026-11-28",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/post-checklist.md",
-   "title": "Checklist đăng clip-07"
-  },
-  {
-   "id": "clip-07.post",
-   "type": "post-package",
-   "status": "sẵn sàng đăng sau khi Hiệp xem video",
-   "updated": "2026-11-28",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/post.md",
-   "title": "Gói đăng TikTok: clip-07 \"check tin nhắn 3 lần/ngày\""
-  },
-  {
-   "id": "clip-07.prosody-measure",
-   "type": "report",
-   "status": "ready",
-   "updated": "2026-11-28",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/prosody-measure.md",
-   "title": "Prosody đo thật — clip-07-final (voice c07v2)"
-  },
-  {
-   "id": "clip-07.prosody-plan",
-   "type": "report",
-   "status": "ready",
-   "updated": "2026-11-28",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/prosody-plan.md",
-   "title": "Prosody plan — clip-07-final (voice c07v1)"
-  },
-  {
-   "id": "clip-07.review",
-   "type": "review",
-   "status": "draft",
-   "updated": "2026-11-27",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/review.md",
-   "title": "Review Đấu trường Kịch bản `clip-07-check-tin-nhan-3-lan` (Tournament Judge)"
-  },
-  {
-   "id": "clip-07.script-final",
-   "type": "script",
-   "status": "ready",
-   "updated": "2026-11-28",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/script-final.md",
-   "title": "Clip 07 v1: Check tin nhắn theo đợt 3 lần/ngày (HTB 3.5)"
-  },
-  {
-   "id": "clip-07.script-v1-draft",
-   "type": "draft",
-   "status": "draft",
-   "updated": "2026-11-27",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/script-v1-draft.md",
-   "title": "Đấu trường Kịch bản — Writer B (`M2`: 5-Second Vulnerable Story (Tâm sự khoảnh khắc thật 5 giây))"
-  },
-  {
-   "id": "clip-07.trend-signals",
-   "type": "research",
-   "status": "ready",
-   "updated": "2026-11-27",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan/final/trend-signals.md",
-   "title": "Tín hiệu trend cho clip-07"
-  },
-  {
    "id": "idea-bank",
    "type": "plan",
    "status": "active",
@@ -2739,15 +2659,6 @@
   {
    "id": "clip-06",
    "path": "content/clips/clip-06-bong-hoa-chua-no",
-   "theme": null,
-   "files": [
-    "archive",
-    "final"
-   ]
-  },
-  {
-   "id": "clip-07",
-   "path": "content/clips/clip-07-check-tin-nhan-3-lan",
    "theme": null,
    "files": [
     "archive",

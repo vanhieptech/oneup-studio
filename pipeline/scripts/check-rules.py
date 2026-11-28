@@ -2096,6 +2096,24 @@ def lessons(spec, fdir, L, final, tpath):
                 extra = (len(hyp) - len(ref)) / len(ref); rep = [hyp[i] for i in range(1, len(hyp)) if hyp[i] == hyp[i - 1] and not any(ref[k] == ref[k - 1] == hyp[i] for k in range(1, len(ref)))]
                 bad = extra > 0.2 or extra < -0.25 or rep
                 (err if bad else ok)("L-009", f"{tag}: STT {len(hyp)} vs {len(ref)} syllables" + (f", repeated {rep}" if rep else "") + ("" if not bad else " → re-roll/rewrite"))
+        # L-114 (DL-087): clip-wide F0 tone consistency (≤ 2.5 st from median) and natural speaking rate (≥ 3.8 syl/s)
+        f0_lines = []
+        tot_syl_114, tot_dur_114 = 0, 0.0
+        for l in tl.get("lines", []):
+            jp = os.path.join(VE, "public/voice", l["key"] + ".json")
+            if not os.path.exists(jp): continue
+            m = json.load(open(jp))
+            if m.get("f0_hz"): f0_lines.append((l["scene"], float(m["f0_hz"])))
+            if m.get("duration") and l.get("say"):
+                tot_syl_114 += len(norm(l["say"]))
+                tot_dur_114 += float(m["duration"])
+        if len(f0_lines) >= 3:
+            med_f0 = sorted(v for _, v in f0_lines)[len(f0_lines) // 2]
+            outliers = [(s, round(12 * math.log2(v / med_f0), 2)) for s, v in f0_lines if abs(12 * math.log2(v / med_f0)) > 2.5]
+            (warn if outliers else ok)("L-114", f"clip F0 median {med_f0:.1f} Hz; outliers > 2.5 st: {outliers}" if outliers else f"clip F0 consistent around {med_f0:.1f} Hz (all within ±2.5 st)")
+        if tot_dur_114 > 5.0:
+            avg_rate = tot_syl_114 / tot_dur_114
+            (warn if avg_rate < 3.8 else ok)("L-114", f"clip speaking rate {avg_rate:.2f} syl/s" + (" (< 3.8 syl/s — check voice_speed for 6000h refs)" if avg_rate < 3.8 else " (natural pace ≥ 3.8 syl/s)"))
     # L-013 push pending (warning only)
     r = subprocess.run(["git", "rev-list", "--count", "origin/main..HEAD"], cwd=REPO, capture_output=True, text=True)
     n = int(r.stdout.strip() or 0) if r.returncode == 0 else 0

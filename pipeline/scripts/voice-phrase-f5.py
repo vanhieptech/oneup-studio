@@ -30,7 +30,10 @@ PREFIX = arg("--prefix", "vp"); LISTEN = arg("--listen", os.path.join(W, "listen
 ARGS = [a for i, a in enumerate(sys.argv[3:], 3) if not a.startswith("--") and not sys.argv[i - 1].startswith("--")]
 
 VR = json.load(open(os.path.join(REPO, "assets/voice-refs/voice-refs.json")))
-REF_SLOTS = {"default": "thai-son-v2", "happy": "thai-son-happy", "serious": "thai-son-serious", "reflective": "thai-son-v2"}
+# DL-087 / L-114: lock one consistent ref across all slots by default (avoids timbre/F0 shifts across a monologue).
+# Specs can still pass a dict to voice_refs to override individual slots intentionally.
+REF_SLOTS = {"default": "thai-son-v2", "happy": "thai-son-v2", "serious": "thai-son-v2", "reflective": "thai-son-v2"}
+STRETCHED_6000H_REFS = {"thai-son-v2", "thai-son-happy", "thai-son-serious"}
 REFLECTIVE_EMOTIONS = ("reflective", "sad", "warm", "maxim", "vulnerable")
 def pick_ref(S, sc, l, key):
     vr = S.get("voice_refs")
@@ -68,7 +71,9 @@ def gen():
     ref=REPO+"/assets/voice-refs/"+VR["thai-son"]["wav"];rt=VR["thai-son"]["ref_text"]
     ck_fp=P.ckpt_fingerprint()
     def _mk_item(u, sd):
-      base_spd=float(S.get("voice_speed") or (arg("--speed","0.9") if u["role"]=="Thầy" else 0.95))
+      # DL-087 / L-114: 6000h refs are already rubberband-slowed (~0.85x); default to 1.12x so speech stays ~4.3-4.6 syl/s
+      default_spd = 1.12 if u["ref"] in STRETCHED_6000H_REFS else (float(arg("--speed","0.9")) if u["role"]=="Thầy" else 0.95)
+      base_spd=float(S.get("voice_speed") or default_spd)
       spd=round(base_spd*0.93,3) if u.get("emotion") in REFLECTIVE_EMOTIONS else base_spd
       ch=hashlib.sha256(json.dumps([u["t"],u["ref"],spd,sd,ck_fp],ensure_ascii=False).encode()).hexdigest()[:16]
       return {"t":u["t"],"ref":REPO+"/assets/voice-refs/"+VR[u["ref"]]["wav"],"ref_text":VR[u["ref"]]["ref_text"],"seed":sd,"speed":spd,"cache_hash":ch,"out":f"{W}/{u['key']}-{sd}.wav"}
@@ -268,12 +273,27 @@ else:
           dst=f"{OUT}/{PREFIX}-{ln}"
           subprocess.run([FFMPEG,"-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",dst+".wav"],input=y.tobytes(),check=True)
           say=" ".join(u["t"] for u in lines[ln]); ws=stt(pcm(dst+".wav")); hyp=" ".join(w[0] for w in ws); sc=sim(n(hyp),n(say))
-          rep[ln]={"line_sim":sc,"units":{u["key"]:stt_u[u["key"]]["sim"] for u in lines[ln]},"stt":hyp,"dur":round(len(y)/SR,2)}
-          json.dump({"duration":round(len(y)/SR,3),"envelope":env(y),"engine":"F5-TTS hynt ViVoice "+"+".join(sorted({u.get("ref","thai-son") for u in lines[ln]}))+", per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"+(", +2 semi" if lines[ln][0]["role"]=="Hiệp-né" else ""),
+          # DL-087 / L-114: measure line median F0 (Hz) for clip-wide tone consistency audit
+          _hop, _win = int(SR * 0.03), int(SR * 0.04); _lo, _hi = int(SR / 260), int(SR / 70); _f0s = []
+          for _i in range(0, len(y) - _win, _hop):
+            _fr = y[_i:_i + _win]
+            if float(np.sqrt(np.mean(_fr * _fr))) < 0.02: continue
+            _fr = _fr - float(np.mean(_fr)); _ac = np.correlate(_fr, _fr, mode="full")[_win - 1:]
+            if _hi < len(_ac) and _ac[0] > 1e-9:
+              _k = _lo + int(np.argmax(_ac[_lo:_hi]))
+              if _ac[_k] > 0.45 * _ac[0]: _f0s.append(SR / _k)
+          f0_hz = round(float(np.median(_f0s)), 1) if _f0s else None
+          rep[ln]={"line_sim":sc,"units":{u["key"]:stt_u[u["key"]]["sim"] for u in lines[ln]},"stt":hyp,"dur":round(len(y)/SR,2),"f0_hz":f0_hz}
+          json.dump({"duration":round(len(y)/SR,3),"envelope":env(y),"f0_hz":f0_hz,"engine":"F5-TTS hynt ViVoice "+"+".join(sorted({u.get("ref","thai-son") for u in lines[ln]}))+", per-phrase F5 (L-036, voice-phrase-f5.py), {nhấn:} rubberband stretch/pitch, stem end fall"+(", +2 semi" if lines[ln][0]["role"]=="Hiệp-né" else ""),
             "role":lines[ln][0]["role"],"stt":hyp,"stt_sim":sc,"intra_output_cuts":0,"emphasis_edits":True,"units":[{"text":u["t"],"take":stt_u[u["key"]]["take"],"sim":stt_u[u["key"]]["sim"]} for u in lines[ln]]},open(dst+".json","w"),ensure_ascii=False)
           scene=ln.rstrip('abcdef') if ln not in ('b01b',) else ln
           if full: full.append(np.zeros(int((0.12 if ln in ('b01b','b02') else 0.3 if scene==prev_scene else 0.42)*SR),'float32'))
-          full.append(y); prev_scene=scene; print(ln,sc,rep[ln]["dur"],hyp,flush=True)
+          full.append(y); prev_scene=scene; print(ln,sc,rep[ln]["dur"],f"f0={f0_hz}",hyp,flush=True)
+        _valid_f0 = [(k, v["f0_hz"]) for k, v in rep.items() if v.get("f0_hz")]
+        if len(_valid_f0) >= 3:
+          _med = sorted(v for _, v in _valid_f0)[len(_valid_f0) // 2]
+          _bad_f0 = [(k, round(12 * np.log2(v / _med), 2)) for k, v in _valid_f0 if abs(12 * np.log2(v / _med)) > 2.5]
+          if _bad_f0: print(f"WARN L-114 F0 outliers (>2.5 st from median {_med:.1f} Hz): {_bad_f0}", flush=True)
         z=np.concatenate(full)
         raw_l=os.path.join(W,"_listen_raw.wav")
         subprocess.run([FFMPEG,"-y","-loglevel","error","-f","f32le","-ar",str(SR),"-ac","1","-i","-",raw_l],input=z.tobytes(),check=True)

@@ -148,11 +148,19 @@ def sync_shared():
 
 def stage_voice(spec):
     prof = profiles(); jobs = []; pjobs = []
-    for _, _, l in all_lines(spec):
+    vpre = spec.get("voice_prefix")
+    for _, sc, l in all_lines(spec):
         if l.get("voice_file"):  # pre-voiced take (picked by STT outside the pipeline); <key>.wav/.json under public/voice
             l["_key"] = os.path.splitext(os.path.basename(l["voice_file"]))[0]
             if not os.path.exists(os.path.join(VE, "public/voice", l["_key"] + ".wav")): raise SystemExit(f"missing voice_file {l['voice_file']} (see media/MANIFEST.json)")
             continue
+        if vpre:  # DL-087 / L-114: auto-reuse stitched voice-phrase-f5 output (<voice_prefix>-<line>.wav) instead of re-voicing with voice-prosody
+            li = sc["lines"].index(l)
+            lkey = sc["id"] + ("abcdef"[li] if len(sc["lines"]) > 1 else "")
+            cand = f"{vpre}-{lkey}"
+            if os.path.exists(os.path.join(VE, "public/voice", cand + ".wav")) and os.path.exists(os.path.join(VE, "public/voice", cand + ".json")):
+                l["_key"] = cand
+                continue
         pv = prof[l["speaker"]].get("voice") or {}
         if pv.get("engine") == "f5-tts" and not l.get("phrases"):
             l["phrases"] = [{"t": spoken(l), "gap": 0}]

@@ -213,7 +213,7 @@ def voice(specp):
     """Assemble ONE voice-only file from picked F5 units (W/<unit>.npy, 48k) with the delivery-plan pauses: final/voice-only-<prefix>.wav (-14 LUFS),
     final/voice-only-<prefix>.timing.json (timing.json line format, feeds measure --timing) and --m4a (AAC mono 96k)."""
     import numpy as np
-    spec = json.load(open(specp)); fd = os.path.dirname(specp); W = arg("--work"); SR = 48000; pre = spec.get("voice_prefix")
+    spec = json.load(open(specp)); fd = os.path.dirname(specp); pre = spec.get("voice_prefix"); W = arg("--work") or str(P.VOICE_WORK_DIR / f"{spec.get('clip', 'clip')}-{pre or 'vp'}"); SR = 48000
     U = json.load(open(os.path.join(W, "units.json"))); DS = delivery_stream(fd); dpos = 0; marks = []
     USTT = json.load(open(os.path.join(W, "units-stt.json"))) if os.path.exists(os.path.join(W, "units-stt.json")) else {}
     if not DS: sys.exit("script-v14-delivery.md missing: the plan defines the pauses")
