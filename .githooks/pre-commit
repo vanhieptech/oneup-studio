@@ -1,18 +1,7 @@
 #!/usr/bin/env bash
-# Fast local QA pre-commit hook (installed via pipeline/scripts/install-hooks.sh)
+# Local pre-commit hook (installed via pipeline/scripts/install-hooks.sh).
+# The checks live in pipeline/scripts/preflight.sh (single source of truth), so agents without native
+# hooks (e.g. Grok) run the identical gate with: bash pipeline/scripts/preflight.sh
 set -euo pipefail
 ROOT="$(git rev-parse --show-toplevel)"
-cd "$ROOT"
-
-echo "[pre-commit] check-assets.py"
-python3 pipeline/scripts/check-assets.py
-
-echo "[pre-commit] Python unit tests"
-python3 -m unittest discover -s tests
-python3 -m unittest discover -s pipeline/tests
-
-if git diff --cached --name-only | grep -q '^video-engine/'; then
-  echo "[pre-commit] video-engine typecheck + vitest"
-  export PATH="$HOME/.nvm/versions/node/v22.22.0/bin:$PATH"
-  (cd video-engine && npm run typecheck && npm test)
-fi
+exec bash "$ROOT/pipeline/scripts/preflight.sh" --staged

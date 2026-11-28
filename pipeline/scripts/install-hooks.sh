@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Enable repo-managed git hooks (.githooks/pre-commit)
+# Enable repo-managed git hooks (.githooks/pre-commit -> pipeline/scripts/preflight.sh --staged)
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 chmod +x "$ROOT/.githooks/pre-commit"
