@@ -1,0 +1,277 @@
+✔ review   content/clips/clip-06-bong-hoa-chua-no/final/review.md: ĐẠT (PAIRWISE TIE vs a-c05, 0 hard fails), script_hash matches
+✔ rule-4   cached timeline plan: ƯỚC/estimate 75.425s total INCLUDING end card, pauses and transitions; target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up
+ℹ rule-4   legacy per-spec length/word targets or exceptions do not override L-099
+ℹ rule-7   281 VI words (descriptive only; L-099 has no word budget)
+✔ rule-7   first beat b01 part='hook' (hook expected in 0–3s)
+✔ rule-8   last beat b08b part='cta' (CTA question expected)
+✔ rule-11  no Omi
+✔ rule-17  theme dark vs theme-map DARK
+✔ rule-15  video-engine fonts.ts uses Be Vietnam Pro
+✔ rule-21  no music
+✔ rule-41  Southern particles in 10/18 lines
+✔ rule-41  addresses viewer as “bạn”
+⚠ rule-41  English mix words: none (profile: 1–3 per clip; proper nouns exempt)
+✔ rule-41  content/clips/clip-06-bong-hoa-chua-no/final/script-final.md: no unconfirmed story items
+✔ rule-46  AI voices: Hiệp=F5 · Thái Sơn
+✔ rule-46  hiep voice = F5 · Thái Sơn (F5-TTS, CC-BY-NC-SA risk accepted DL-035)
+✔ rule-13  post.md credit HowToLiveBetter
+✔ rule-13  post.md license name
+✔ rule-13  post.md license link
+✔ rule-13  post.md 'đã chuyển thể / adapted'
+✔ rule-46  post.md: TikTok 'AI-generated content' toggle
+✔ rule-46  post.md: AI-voice disclosure line in caption
+✔ rule-46  post.md: disclosure names the engine (F5-TTS, DL-035)
+✔ rule-32  post.md hashtags
+✔ rule-45  video-engine validate: ✔ /Users/macbook/work/oneup-studio/content/clips/clip-06-bong-hoa-chua-no/final/plan-A.voiced.json: 19 scenes, 75.30s
+✔ L-033    layout collisions: none
+✔ rule-4   MP4: measured after Chốt 75.400s total INCLUDING end card, pauses and transitions; target 60–180s (60–119s is ok when the story is finished; warning only outside the band), strict <300s; no word quota / speed-up
+✔ rule-4   video 1080×1920 30/1 h264 High yuv420p bt709
+✔ rule-4   audio aac 48000 Hz, -14.1 LUFS, peak -2.0 dBFS (target −14 ±1, peak ≤ −0.5)
+✔ rule-34  contact-sheet.png for frame review
+✔ rule-46  STT b01 1.00: “Ủa ngộ ghê ha”
+✔ rule-46  STT b01a 1.00: “trong cây mình đợi mấy tháng được.”
+✔ rule-46  STT b01b 0.89: “mà tập thói quen 2 tuần đã muốn dẹp.”
+✔ rule-46  STT b02 0.82: “đợt mới tập chạy bộ 2 tuần vẫn ỏi. Mình liền nghĩ chắc mình không hợp đâu.”
+✔ rule-46  STT b02a 1.00: “Lúc đó quên mất câu, đừng bao giờ khinh thường một bông hoa chưa nở.”
+✔ rule-46  STT b03 0.81: “Chạy có 2 tuần thì mới nhú cái nụ hà, sao đòi nhả tên liền được.”
+✔ rule-46  STT b03a 1.00: “Ủa mà tập một việc mất bao lâu mới thành thói quen?”
+✔ rule-46  STT b03b 0.77: “Hồi trước mình cứ đình ninh, ráng 2-3 tuần là vô gồn.”
+✔ rule-46  STT b04 0.86: “Đọc nghiên cứu năm 2010 của nhóm La Li mới ngửa người ra.”
+✔ rule-46  STT b04b 0.78: “làm việc nhỏ mỗi ngày, người nhanh nhất mất 18 ngày, chậm nhất tới 254 ngày, hơn 8 tháng mới thành nếp.”
+✔ rule-46  STT b05 1.00: “độc tới đó tự nhiên nhẹ hẳn cái đầu.”
+✔ rule-46  STT b05a 0.88: “Nhanh nhất người ta còn mất hơn 2 tuần. Mình mới chạy 2 tuần mà ỏi là quá bình thường. Đâu phải không hợp.”
+✔ rule-46  STT b06 0.95: “Thói quen tính bằng tháng chứ không phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải nghĩ.”
+✔ rule-46  STT b06a 0.95: “Cái hay là nhóm đó cũng thấy nghỉ một ngày gần như không sao, công mấy hôm trước vẫn còn nguyên.”
+✔ rule-46  STT b07 0.88: “Tối nay mình cứ xóa dày, chạy nhẹ 10 phút, mệt thì đi bộ, lỡ bữa nào mai đi tiếp, cái nụ còn đó là được.”
+✔ rule-46  STT b08 1.00: “Mình thì đi nhẹ vậy thôi, chứ chuyện này mỗi người nghĩ mỗi khác.”
+✔ rule-46  STT b08a 0.83: “Có ai cứ tới tuần 2 là dễ nạn giống mình không?”
+✔ rule-46  STT b08b 0.91: “Hay bạn nghĩ sao có cách gì vượt qua khúc đó, comment kể mình nghe với nha.”
+✔ rule-50  8 transitions, 8 with SFX
+✔ rule-50  ambience bed under whole clip
+✔ rule-53  post.md has all 12 fields with code blocks
+✔ rule-53  cover text 17 chars (≤ 40)
+✔ rule-53  cover.png exported
+✔ rule-53  cover frame timestamp given
+✔ rule-53  caption 610 chars (≤ 2200)
+✔ rule-53  5 hashtags (3–5)
+✔ rule-53  no spammy hashtags
+✔ rule-53  hashtags appended to caption
+✔ rule-53  settings checklist: AI toggle, duet/stitch, location
+✔ rule-53  post-checklist.md present
+✔ rule-54  spec.cover props (template A) present
+✔ L-020    cover.png rendered from Cover template (props json present)
+✔ L-067    on-screen Vietnamese text keeps diacritics vs locked script
+✔ L-070    delivery/prosody plan present (prosody-plan.md)
+✖ L-070    prosody: 18 sentences measured (voice c06v13, plan), 12 blocking pause/phrasing flags: f5-8798acca0c9b: câu hỏi cuối -1.16 st (✖ không lên giọng); f5-93e296610b39: sau «ninh,» nghỉ 0.29s (✖ phẩy dài hơn chấm (>0.27s)); f5-c85a79f6e820: sau «ngày,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s)); f5-0795f89c7184: sau «tuần,» nghỉ 0.28s (✖ phẩy dài hơn chấm (>0.27s)); f5-0795f89c7184: sau «thường,» nghỉ 0.3s (✖ phẩy dài hơn chấm (>0.27s)); f5-19fe51fdae99: sau «công,» nghỉ 0.0s (✖ phẩy dính (<0.12s)); f5-5d52a8e56f32: sau «phút,» nghỉ 0.3s (✖ phẩy dài hơn chấm (>0.27s)); f5-5d52a8e56f32: sau «nào,» nghỉ 0.0s (✖ phẩy dính (<0.12s))
+ℹ E1       no final/prosody-measure-*.json → E1 mid-phrase-pause skipped
+ℹ L-027    no prosody-measure json → voice-only hook gaps skipped
+✔ rule-55  on-screen hook text on frame 0 (first scene narration = spec.hook.text)
+✔ rule-55  first spoken clause 4 words (≤ 6, punchy)
+✔ rule-55  first spoken word at 0.12s (≤ 0.3)
+✔ rule-55  first visual change/hit at 0.12s (≤ 1.0)
+✔ rule-55  0–3s: 2 cut(s) + 2 hit(s) (need ≥ 2 total, ≥ 1 cut)
+✔ rule-55  hook voice emotions ['surprised', 'neutral', 'sad'] (dramatic)
+✔ rule-56  engagement devices ['comment-challenge', 'loop', 'relatable-question'] (≥3 incl. comment-challenge + loop)
+✔ rule-56  no begging for likes/follows
+✔ L-084    trend shown at b02: câu «đừng bao giờ khinh thường một bông hoa chưa nở» (lời đọc nguyên văn, không 
+⚠ rule-57  trend-signals.md has clip URLs with view counts
+✔ rule-58  no vague phrases (‘X thắng’, ‘điều gì đó’, ‘mọi thứ’…)
+✔ rule-58  every non-hook beat opens with a connector/callback
+⚠ rule-58  long-clause review hint only, not a word cap; preserve meaning/evidence; long: ['b02a', 'b03b', 'b05a', 'b06a', 'b08b']
+✔ rule-60  spoken style, no written/academic connectors
+✔ rule-60  every beat has a stage action (stage.action)
+✔ rule-60  every beat has an emotion cue (interjection in line or stage.react)
+⚠ rule-60  spoken interjections/particles in 7/18 beats (≥ half)
+✔ rule-61  dialogue does not narrate the stage action
+✔ rule-61  no filler / visual-describing phrases
+ℹ rule-61  no per-beat word cap (L-099); preserve complete meaning/evidence, vary shots instead
+✔ rule-62  spec.throughline present in ABT form (… VÀ … NHƯNG … VÌ VẬY …)
+✔ rule-62  every beat after the first has a contextual `link` (why it follows)
+✔ rule-62  literal ‘nhưng/nên’ in dialogue: 0 (≤ 2; links come from context)
+✔ rule-62  hook_question asked + answered later (open loop closed)
+✔ rule-62  callbacks to prior clips declared (0); use [] if none overlap
+✔ rule-64  spec.structure has hook/intro/body/summary/cta
+✔ rule-64  hook 1 sentence(s) (≤ 2)
+✔ rule-64  hook is not a generic opener
+✔ rule-64  exactly one CTA (1)
+✔ rule-64  hook_alt of another type proposed
+✔ rule-52  transition_sfx planned: {'part': 'whoosh-soft', 'scene': 'swish'}
+✔ rule-52  b01: motion/visual described
+✔ rule-52  b01: effect tied to spoken word “ghê”
+✔ rule-52  b01a: motion/visual described
+✔ rule-52  b01a: effect tied to spoken word “mấy tháng”
+✔ rule-52  b01b: motion/visual described
+✔ rule-52  b01b: effect tied to spoken word “dẹp”
+✔ rule-52  b02: motion/visual described
+✔ rule-52  b02: effect tied to spoken word “oải”
+✔ rule-52  b02a: motion/visual described
+✔ rule-52  b02a: effect tied to spoken word “chưa nở”
+✔ rule-52  b03: motion/visual described
+✔ rule-52  b03: effect tied to spoken word “cái nụ”
+✔ rule-52  b03a: motion/visual described
+✔ rule-52  b03a: effect tied to spoken word “bao lâu”
+✔ rule-52  b03b: motion/visual described
+✔ rule-52  b03b: effect tied to spoken word “hai ba tuần”
+✔ rule-52  b04: motion/visual described
+✔ rule-52  b04: effect tied to spoken word “ngửa người”
+✔ rule-52  b04b: motion/visual described
+✔ rule-52  b04b: effect tied to spoken word “254 ngày”
+✔ rule-52  b05: motion/visual described
+✔ rule-52  b05: effect tied to spoken word “nhẹ hẳn”
+✔ rule-52  b05a: motion/visual described
+✔ rule-52  b05a: effect tied to spoken word “bình thường”
+✔ rule-52  b06: motion/visual described
+✔ rule-52  b06: effect tied to spoken word “tháng”
+✔ rule-52  b06a: motion/visual described
+✔ rule-52  b06a: effect tied to spoken word “hông sao”
+✔ rule-52  b07: motion/visual described
+✔ rule-52  b07: effect tied to spoken word “mười phút”
+✔ rule-52  b08: motion/visual described
+✔ rule-52  b08: effect tied to spoken word “nghĩ mỗi khác”
+✔ rule-52  b08a: motion/visual described
+✔ rule-52  b08a: effect tied to spoken word “dễ nản”
+✔ rule-52  b08b: motion/visual described
+✔ rule-52  b08b: effect tied to spoken word “nghĩ sao”
+✔ rule-52  script-final.md effects table covers every beat
+✔ rule-52  effects table has no **THIẾU** cells
+✔ L-044    script beats flow (≤ 5 phrases, ≤ 1 fragment < 3 words, ≥ 4 phrases need avg ≥ 4.5 words)
+✔ rule-51  18 accent SFX, spacing ≥ 0.25s
+✔ L-087    lời đọc không lấy môn học làm ví dụ
+✔ L-087    hình/prop không gắn môn học
+✔ L-088    có nguồn truy được (script-final.md + spec): Lally 2010, Lally et al. 2010, doi:10.1002/ejsp.674, doi:10.1002/ejsp.674,
+✔ L-088    lời đọc có nói dẫn chứng (nghiên cứu / tên tác giả)
+✔ L-088    hook không trùng mẫu 5 hook clip trước (ngưỡng 0.7)
+✔ L-088    CTA không trùng mẫu 5 CTA clip trước (ngưỡng 0.7)
+✔ L-088    file trend (Social Research) có link nguồn: content/clips/clip-06-bong-hoa-chua-no/final/trend-signals.md, research/trends/2026-10-27/clip-06-bong-hoa-trend.md
+✔ L-088    ràng buộc/kiểm fact Deep Research: content/clips/clip-06-bong-hoa-chua-no/final/fact-lock.md
+ℹ L-088    manual gate: (a) liền mạch: dẫn chứng là một bước trong chuyện, không phải khối «nghiên cứu nói…»; (b) sáng tạo: kiểu hook khác 2 clip trước, chuyển ý tự nhiên trong khung W-16; (c) trend chỉ là cái móc, thông điệp bám trục kênh: truyền cảm hứng, motivation, sống tốt hơn mỗi ngày +1
+✔ rule-49  lessons.md: 112 lessons loaded
+✔ L-051    EN caption chunks ≤8 từ
+✔ L-053    không có cụm chê năng lực người học
+✔ L-001    contact-sheet.png present for self-review
+✔ L-004    highlight indexes within EN caption
+✔ L-005    no [tags] in spoken text
+✔ L-006    phrase tempos within 0.85–1.15
+✔ L-010    key terms use phonetic spelling
+✔ L-025    spoken text respelled
+✔ L-025    all rendered lines STT ≥ 0.8
+✔ L-027    hook voice gaps ≤ 0.1s
+✔ L-028    self-blame lines punchy + emphasized
+✔ L-036    meme-stem lines split + payload emphasized
+✔ L-031    each hook sentence has an emphasis word
+✔ L-026    despair lines use sad/despair face
+✔ L-017    voice markup valid
+✔ L-017    bank fillers available
+✔ L-018    {kéo:} used 0× (plain particles preferred by Hiệp; ≤ 1/clip)
+✔ L-017    fillers 0/clip (cap 4), per line ≤ 1
+✔ L-017    no markup in on-screen text
+✔ L-011    Omi/week consistent
+✔ L-003    caption segments never overlap
+✔ L-016    b01/f5-9da7e40c06dd: sentence/clause units, no cut inside any F5 output
+✔ L-007    b01/f5-9da7e40c06dd: F5 per-unit generation (whole clause per call)
+✔ L-016    b01/f5-9da7e40c06dd: 1 unit(s)
+✔ L-008    b01/f5-9da7e40c06dd: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b01/f5-9da7e40c06dd: STT 4 vs 4 syllables
+✔ L-016    b01a/f5-4c72dacccf8d: sentence/clause units, no cut inside any F5 output
+✔ L-007    b01a/f5-4c72dacccf8d: F5 per-unit generation (whole clause per call)
+✔ L-016    b01a/f5-4c72dacccf8d: 1 unit(s)
+✔ L-008    b01a/f5-4c72dacccf8d: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b01a/f5-4c72dacccf8d: STT 7 vs 7 syllables
+✔ L-016    b01b/f5-b9bdd37cc308: sentence/clause units, no cut inside any F5 output
+✔ L-007    b01b/f5-b9bdd37cc308: F5 per-unit generation (whole clause per call)
+✔ L-016    b01b/f5-b9bdd37cc308: 1 unit(s)
+✔ L-008    b01b/f5-b9bdd37cc308: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b01b/f5-b9bdd37cc308: STT 9 vs 9 syllables
+✔ L-016    b02/f5-3dba1efb9143: sentence/clause units, no cut inside any F5 output
+✔ L-007    b02/f5-3dba1efb9143: F5 per-unit generation (whole clause per call)
+✔ L-016    b02/f5-3dba1efb9143: 2 unit(s)
+✖ L-008    b02/f5-3dba1efb9143: timbre/F0 spread across units 2.8 st (≤ 2.5)
+✔ L-008    b02/f5-3dba1efb9143: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b02/f5-3dba1efb9143: STT 17 vs 17 syllables
+✔ L-016    b02a/f5-6e6bca839539: sentence/clause units, no cut inside any F5 output
+✔ L-007    b02a/f5-6e6bca839539: F5 per-unit generation (whole clause per call)
+✔ L-016    b02a/f5-6e6bca839539: 2 unit(s)
+✖ L-008    b02a/f5-6e6bca839539: timbre/F0 spread across units 2.9 st (≤ 2.5)
+✔ L-008    b02a/f5-6e6bca839539: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b02a/f5-6e6bca839539: STT 15 vs 15 syllables
+✔ L-016    b03/f5-018b4f88f7fe: sentence/clause units, no cut inside any F5 output
+✔ L-007    b03/f5-018b4f88f7fe: F5 per-unit generation (whole clause per call)
+✔ L-016    b03/f5-018b4f88f7fe: 2 unit(s)
+✔ L-008    b03/f5-018b4f88f7fe: timbre/F0 spread across units 0.1 st (≤ 2.5)
+✔ L-008    b03/f5-018b4f88f7fe: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b03/f5-018b4f88f7fe: STT 16 vs 16 syllables
+✔ L-016    b03a/f5-8798acca0c9b: sentence/clause units, no cut inside any F5 output
+✔ L-007    b03a/f5-8798acca0c9b: F5 per-unit generation (whole clause per call)
+✔ L-016    b03a/f5-8798acca0c9b: 1 unit(s)
+✔ L-008    b03a/f5-8798acca0c9b: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b03a/f5-8798acca0c9b: STT 12 vs 12 syllables
+✔ L-016    b03b/f5-93e296610b39: sentence/clause units, no cut inside any F5 output
+✔ L-007    b03b/f5-93e296610b39: F5 per-unit generation (whole clause per call)
+✔ L-016    b03b/f5-93e296610b39: 2 unit(s)
+✔ L-008    b03b/f5-93e296610b39: timbre/F0 spread across units 0.9 st (≤ 2.5)
+✔ L-008    b03b/f5-93e296610b39: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b03b/f5-93e296610b39: STT 13 vs 13 syllables
+✔ L-016    b04/f5-5efcffb65dda: sentence/clause units, no cut inside any F5 output
+✔ L-007    b04/f5-5efcffb65dda: F5 per-unit generation (whole clause per call)
+✔ L-016    b04/f5-5efcffb65dda: 1 unit(s)
+✔ L-008    b04/f5-5efcffb65dda: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b04/f5-5efcffb65dda: STT 13 vs 15 syllables
+✔ L-016    b04b/f5-c85a79f6e820: sentence/clause units, no cut inside any F5 output
+✔ L-007    b04b/f5-c85a79f6e820: F5 per-unit generation (whole clause per call)
+✔ L-016    b04b/f5-c85a79f6e820: 4 unit(s)
+✔ L-008    b04b/f5-c85a79f6e820: timbre/F0 spread across units 2.1 st (≤ 2.5)
+✔ L-008    b04b/f5-c85a79f6e820: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b04b/f5-c85a79f6e820: STT 22 vs 27 syllables
+✔ L-016    b05/f5-f71992baedfe: sentence/clause units, no cut inside any F5 output
+✔ L-007    b05/f5-f71992baedfe: F5 per-unit generation (whole clause per call)
+✔ L-016    b05/f5-f71992baedfe: 1 unit(s)
+✔ L-008    b05/f5-f71992baedfe: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b05/f5-f71992baedfe: STT 9 vs 9 syllables
+✔ L-016    b05a/f5-0795f89c7184: sentence/clause units, no cut inside any F5 output
+✔ L-007    b05a/f5-0795f89c7184: F5 per-unit generation (whole clause per call)
+✔ L-016    b05a/f5-0795f89c7184: 3 unit(s)
+✔ L-008    b05a/f5-0795f89c7184: timbre/F0 spread across units 1.9 st (≤ 2.5)
+✔ L-008    b05a/f5-0795f89c7184: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b05a/f5-0795f89c7184: STT 24 vs 24 syllables
+✔ L-016    b06/f5-8549ae621b09: sentence/clause units, no cut inside any F5 output
+✔ L-007    b06/f5-8549ae621b09: F5 per-unit generation (whole clause per call)
+✔ L-016    b06/f5-8549ae621b09: 2 unit(s)
+✔ L-008    b06/f5-8549ae621b09: timbre/F0 spread across units 0.7 st (≤ 2.5)
+✔ L-008    b06/f5-8549ae621b09: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b06/f5-8549ae621b09: STT 22 vs 22 syllables
+✔ L-016    b06a/f5-19fe51fdae99: sentence/clause units, no cut inside any F5 output
+✔ L-007    b06a/f5-19fe51fdae99: F5 per-unit generation (whole clause per call)
+✔ L-016    b06a/f5-19fe51fdae99: 2 unit(s)
+✔ L-008    b06a/f5-19fe51fdae99: timbre/F0 spread across units 0.8 st (≤ 2.5)
+✔ L-008    b06a/f5-19fe51fdae99: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b06a/f5-19fe51fdae99: STT 21 vs 21 syllables
+✔ L-016    b07/f5-5d52a8e56f32: sentence/clause units, no cut inside any F5 output
+✔ L-007    b07/f5-5d52a8e56f32: F5 per-unit generation (whole clause per call)
+✔ L-016    b07/f5-5d52a8e56f32: 5 unit(s)
+✖ L-008    b07/f5-5d52a8e56f32: timbre/F0 spread across units 2.8 st (≤ 2.5)
+✔ L-008    b07/f5-5d52a8e56f32: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b07/f5-5d52a8e56f32: STT 26 vs 26 syllables
+✔ L-016    b08/f5-c117431f583f: sentence/clause units, no cut inside any F5 output
+✔ L-007    b08/f5-c117431f583f: F5 per-unit generation (whole clause per call)
+✔ L-016    b08/f5-c117431f583f: 2 unit(s)
+✔ L-008    b08/f5-c117431f583f: timbre/F0 spread across units 0.2 st (≤ 2.5)
+✔ L-008    b08/f5-c117431f583f: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b08/f5-c117431f583f: STT 14 vs 14 syllables
+✔ L-016    b08a/f5-13b710c1fad1: sentence/clause units, no cut inside any F5 output
+✔ L-007    b08a/f5-13b710c1fad1: F5 per-unit generation (whole clause per call)
+✔ L-016    b08a/f5-13b710c1fad1: 1 unit(s)
+✔ L-008    b08a/f5-13b710c1fad1: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b08a/f5-13b710c1fad1: STT 12 vs 12 syllables
+✔ L-016    b08b/f5-938bf22b786d: sentence/clause units, no cut inside any F5 output
+✔ L-007    b08b/f5-938bf22b786d: F5 per-unit generation (whole clause per call)
+✔ L-016    b08b/f5-938bf22b786d: 3 unit(s)
+✔ L-008    b08b/f5-938bf22b786d: timbre/F0 spread across units 1.6 st (≤ 2.5)
+✔ L-008    b08b/f5-938bf22b786d: edit points clean (no loud/mid-syllable cuts)
+✔ L-009    b08b/f5-938bf22b786d: STT 17 vs 18 syllables
+✔ L-013    nothing pending push
+✔ srt-sidecar SRT file exists: clip-06-bong-hoa-chua-no.srt
+✔ srt-sidecar SRT parsed: 18 entries
+✔ srt-sidecar SRT timing is monotonic
+✔ srt-sidecar SRT duration 72.0s matches video 75.4s (±5s)
+
+275 checks · 4 error(s) · 4 warning(s) → FAIL

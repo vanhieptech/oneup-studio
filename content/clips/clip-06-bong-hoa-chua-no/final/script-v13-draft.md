@@ -1,11 +1,11 @@
 ---
 id: clip-06.script-v13-draft
 type: script
-status: draft
+status: locked
 updated: 2026-11-27
 tags: [script, clip-06, dark, week-1, howtolivebetter-4.12, draft, oneup-core-arc, everyday-paradox, two-pass]
 source: "oneup-studio · HTB 4.12 · Lally et al. 2010 doi:10.1002/ejsp.674 · factcheck-trends-2026-10-31.md mục clip-06 · trend bông hoa chưa nở · docs/research/storytelling-craft-guide.md (DL-078, DL-079)"
-title: "clip-06 «bông hoa chưa nở» — script v13 (Kiến trúc 2 Pha, chờ Gate 1)"
+title: "clip-06 «bông hoa chưa nở» — script v13 (đã Chốt 27/11)"
 date: 2026-11-27
 clip: clip-06-bong-hoa-chua-no
 item: HTB 4.12 (một việc mới mất bao lâu thành thói quen; tính theo tháng; lỡ một ngày không sao), Lally 2010
@@ -13,7 +13,7 @@ theme: DARK
 week: 1
 format: oneup_core_arc
 arc: ONEUP-CORE-ARC
-status_note: "DRAFT — chờ Hiệp duyệt Gate 1. Chưa Chốt. Không giọng, không ảnh, không render (L-098)."
+status_note: "CHỐT 2026-11-27 — Hiệp: «chốt script tiếp tục làm tiếp». script_hash c8469062ec2f. Sản xuất đi từ final/spec.json."
 fact_lock: research/fact-packages/factcheck-trends-2026-10-31.md
 hook_pattern: P10
 trend_id: vtc-ar1048255-bong-hoa-chua-no
@@ -107,7 +107,7 @@ Open Loop & Micro-Payoff (mỗi 35–45s):
 <!-- GATE0-BRIEF:END -->
 
 
-# clip-06 v13 — DRAFT, chờ Hiệp duyệt Gate 1
+# clip-06 v13 — ĐÃ CHỐT 27/11, sản xuất từ `final/spec.json`
 
 ## Gate 0
 

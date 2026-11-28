@@ -37,9 +37,10 @@ ROOT = P.ROOT
 TRENDS = ROOT / "research/trends"
 RADAR_CFG = ROOT / "pipeline/trends/radar.yaml"
 
-VALID_ROLES = ("direct_niche", "southern_story_voice", "cross_niche_craft", "anti_pattern")
+VALID_ROLES = ("direct_niche", "global_niche_source", "southern_story_voice", "cross_niche_craft", "anti_pattern")
 LEARN_SCOPE = {
     "direct_niche": "idea_and_craft",
+    "global_niche_source": "idea_and_craft_localize",
     "southern_story_voice": "voice_cadence_only",
     "cross_niche_craft": "craft_only",
     "anti_pattern": "avoid_only",
@@ -192,6 +193,7 @@ def entry_to_clip(entry, ch_cfg, median_views):
         "raw_id": vid or url,
         "url": url,
         "platform": platform,
+        "lang": ch_cfg.get("lang") or "vi",
         "role": role,
         "learn_scope": LEARN_SCOPE[role],
         "format_compatibility": ch_cfg.get("format_compatibility") or "story_metaphor",
@@ -240,6 +242,8 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
         if not tags:
             if role == "cross_niche_craft":
                 tags = list(c.get("channel_niche") or ["cross-niche-craft"])
+            elif role == "global_niche_source":
+                tags = list(c.get("channel_niche") or ["global-niche-source"])
             elif role == "southern_story_voice":
                 tags = list(c.get("channel_niche") or ["southern-story-voice"])
             elif role == "anti_pattern":
@@ -273,6 +277,7 @@ def build_radar_rows(clips, cfg, date, ts_mod=None, root=TRENDS):
             "id": f"{author}-{ts.clip_id(c)}",
             "url": c.get("url"),
             "platform": c.get("platform", "tiktok"),
+            "lang": c.get("lang", "vi"),
             "role": role,
             "learn_scope": c.get("learn_scope") or LEARN_SCOPE[role],
             "format_compatibility": c.get("format_compatibility") or "story_metaphor",
@@ -351,7 +356,7 @@ def render_audience_language(date, clips):
     return "\n".join(lines) + "\n"
 
 
-def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, root=TRENDS,
+def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, langs=None, root=TRENDS,
               fetcher=fetch_channel_entries, comment_fetcher=None, with_comments=False,
               enqueue=True, dry_run=False):
     cfg = load_config(cfg_path)
@@ -365,6 +370,9 @@ def run_fetch(date, cfg_path=RADAR_CFG, limit=None, only=None, roles=None, root=
     if roles:
         want_r = {r.strip() for r in roles if r.strip()}
         channels = [c for c in channels if (c.get("role") or "direct_niche") in want_r]
+    if langs:
+        want_l = {l.strip().lower() for l in langs if l.strip()}
+        channels = [c for c in channels if (c.get("lang") or "vi").lower() in want_l]
 
     all_clips, statuses = [], []
     for ch in channels:
@@ -444,11 +452,12 @@ def main():
     limit = int(opt("--limit")) if opt("--limit") else None
     only = opt("--only").split(",") if opt("--only") else None
     roles = opt("--role").split(",") if opt("--role") else None
+    langs = opt("--lang").split(",") if opt("--lang") else None
     with_comments = "--with-comments" in a
     dry_run = "--dry-run" in a
     enqueue = "--no-enqueue" not in a
 
-    res = run_fetch(date, cfg_path=cfg_path, limit=limit, only=only, roles=roles,
+    res = run_fetch(date, cfg_path=cfg_path, limit=limit, only=only, roles=roles, langs=langs,
                     with_comments=with_comments, enqueue=enqueue, dry_run=dry_run)
     for st in res["statuses"]:
         tag = f"ok ({st['fetched']} clips, median={st['median_views']})" if st["fetched"] else f"empty/err: {st['error']}"

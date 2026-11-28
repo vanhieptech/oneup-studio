@@ -483,7 +483,7 @@ Link hoặc file Hiệp ném vào `media/footage/inbox/`, gắn id bằng `pipel
 | trends-2026-11-27-11 | https://www.tiktok.com/@ngocanhh0565/video/7707619983878065429 | 2026-11-27 | radar:216.52x | queued | |
 | trends-2026-11-27-12 | https://www.tiktok.com/@b.ch.phng.thi0/video/7700960397515377927 | 2026-11-27 | radar:212.24x | queued | |
 | trends-2026-11-27-13 | https://www.tiktok.com/@meo_xinhhiuu/video/7699453148850572565 | 2026-11-27 | radar:155.56x | queued | |
-| trends-2026-11-27-14 | https://www.tiktok.com/@minggbest/video/7696495062217248018 | 2026-11-27 | radar:106.33x | queued | |
+| trends-2026-11-27-14 | https://www.tiktok.com/@minggbest/video/7696495062217248018 | 2026-11-27 | radar:106.33x | done | research/trends/2026-11-27/teardowns/trends-2026-11-27-14.md |
 | trends-2026-11-27-15 | https://www.tiktok.com/@b.ch.phng.thi0/video/7703576611345550610 | 2026-11-27 | radar:60.13x | queued | |
 | trends-2026-11-27-16 | https://www.tiktok.com/@dudu.edits46/video/7710008056418962706 | 2026-11-27 | radar:40.56x | queued | |
 | trends-2026-11-27-17 | https://www.tiktok.com/@phatbieulungtung/video/7702119001333189906 | 2026-11-27 | radar:23.74x | queued | |

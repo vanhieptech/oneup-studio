@@ -1,0 +1,398 @@
+{
+ "total": 75.425,
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "plan": "content/clips/clip-06-bong-hoa-chua-no/final/plan-A.voiced.json",
+   "dur": 75.3,
+   "mp4": "video-engine/out/clip-06-final-A.mp4",
+   "fx": "fade",
+   "scene_starts": [
+    4.758,
+    13.557,
+    24.354,
+    35.314,
+    43.833999999999996,
+    54.754,
+    61.196999999999996,
+    72.3
+   ],
+   "_off": 0.0
+  }
+ ],
+ "lines": [
+  {
+   "beat": "clip-06.b01",
+   "scene": "b01",
+   "speaker": "hiep",
+   "say": "ủa ngộ ghê ha",
+   "en": "Funny how that works.",
+   "emotion": "surprised",
+   "key": "f5-9da7e40c06dd",
+   "local": 0.12,
+   "dur": 0.768,
+   "t": 0.12
+  },
+  {
+   "beat": "clip-06.b01",
+   "scene": "b01a",
+   "speaker": "hiep",
+   "say": "trồng cây mình đợi, mấy tháng được,",
+   "en": "We wait months for a plant.",
+   "emotion": "neutral",
+   "key": "f5-4c72dacccf8d",
+   "local": 0.02,
+   "dur": 1.73,
+   "t": 0.968
+  },
+  {
+   "beat": "clip-06.b01",
+   "scene": "b01b",
+   "speaker": "hiep",
+   "say": "mà tập thói quen hai tuần đã muốn dẹp.",
+   "en": "Yet we quit a habit in two weeks.",
+   "emotion": "sad",
+   "key": "f5-b9bdd37cc308",
+   "local": 0.02,
+   "dur": 1.92,
+   "t": 2.778
+  },
+  {
+   "beat": "clip-06.b02",
+   "scene": "b02",
+   "speaker": "hiep",
+   "say": "Đợt mới tập chạy bộ hai tuần vẫn oải, mình liền nghĩ “chắc mình hông hợp đâu”.",
+   "en": "Two weeks of running, still wiped out.",
+   "emotion": "sad",
+   "key": "f5-3dba1efb9143",
+   "local": 0.45,
+   "dur": 4.13,
+   "t": 5.208
+  },
+  {
+   "beat": "clip-06.b02",
+   "scene": "b02a",
+   "speaker": "hiep",
+   "say": "Lúc đó quên mất câu “đừng bao giờ khinh thường một bông hoa chưa nở”.",
+   "en": "Forgot: never dismiss a bud.",
+   "emotion": "surprised",
+   "key": "f5-6e6bca839539",
+   "local": 0.15,
+   "dur": 3.569,
+   "t": 9.738
+  },
+  {
+   "beat": "clip-06.b03",
+   "scene": "b03",
+   "speaker": "hiep",
+   "say": "Chạy có hai tuần thì mới nhú cái nụ hà, sao đòi, nhẹ tênh, liền được.",
+   "en": "Two weeks in, it is barely a bud.",
+   "emotion": "confused",
+   "key": "f5-018b4f88f7fe",
+   "local": 0.45,
+   "dur": 3.65,
+   "t": 14.007
+  },
+  {
+   "beat": "clip-06.b03",
+   "scene": "b03a",
+   "speaker": "hiep",
+   "say": "Ủa mà tập một việc mất bao lâu mới thành thói quen?",
+   "en": "How long until a habit sticks?",
+   "emotion": "confused",
+   "key": "f5-8798acca0c9b",
+   "local": 0.15,
+   "dur": 2.58,
+   "t": 18.057
+  },
+  {
+   "beat": "clip-06.b03",
+   "scene": "b03b",
+   "speaker": "hiep",
+   "say": "Hồi trước mình cứ đinh ninh, ráng hai ba tuần là vô guồng.",
+   "en": "I assumed two or three weeks.",
+   "emotion": "neutral",
+   "key": "f5-93e296610b39",
+   "local": 0.15,
+   "dur": 3.067,
+   "t": 21.037
+  },
+  {
+   "beat": "clip-06.b04",
+   "scene": "b04",
+   "speaker": "hiep",
+   "say": "Đọc nghiên cứu năm hai ngàn mười của nhóm La li mới ngửa người ra:",
+   "en": "Lally’s 2010 study floored me.",
+   "emotion": "surprised",
+   "key": "f5-5efcffb65dda",
+   "local": 0.45,
+   "dur": 3.39,
+   "t": 24.804
+  },
+  {
+   "beat": "clip-06.b04",
+   "scene": "b04b",
+   "speaker": "hiep",
+   "say": "làm việc nhỏ mỗi ngày, người nhanh nhất mất mười tám ngày, chậm nhất tới hai trăm năm mươi tư ngày, hơn tám tháng mới thành nếp.",
+   "en": "Fastest took 18 days / slowest took 254, over 8 months.",
+   "emotion": "surprised",
+   "key": "f5-c85a79f6e820",
+   "local": 0.15,
+   "dur": 6.47,
+   "t": 28.594
+  },
+  {
+   "beat": "clip-06.b05",
+   "scene": "b05",
+   "speaker": "hiep",
+   "say": "Đọc tới đó tự nhiên nhẹ hẳn cái đầu.",
+   "en": "Reading that, the weight lifted.",
+   "emotion": "happy",
+   "key": "f5-f71992baedfe",
+   "local": 0.45,
+   "dur": 1.99,
+   "t": 35.764
+  },
+  {
+   "beat": "clip-06.b05",
+   "scene": "b05a",
+   "speaker": "hiep",
+   "say": "Nhanh nhất người ta còn mất hơn hai tuần, mình mới chạy hai tuần mà oải là quá bình thường, đâu phải không hợp.",
+   "en": "Tired at week two is normal.",
+   "emotion": "happy",
+   "key": "f5-0795f89c7184",
+   "local": 0.15,
+   "dur": 5.43,
+   "t": 38.154
+  },
+  {
+   "beat": "clip-06.b06",
+   "scene": "b06",
+   "speaker": "hiep",
+   "say": "Thói quen tính bằng tháng chứ hông phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ.",
+   "en": "Count habits in months, not weeks.",
+   "emotion": "focused",
+   "key": "f5-8549ae621b09",
+   "local": 0.45,
+   "dur": 5.07,
+   "t": 44.284
+  },
+  {
+   "beat": "clip-06.b06",
+   "scene": "b06a",
+   "speaker": "hiep",
+   "say": "Cái hay là nhóm đó cũng thấy nghỉ một ngày gần như hông sao, công, mấy hôm trước vẫn còn nguyên.",
+   "en": "Missing one day barely hurts.",
+   "emotion": "happy",
+   "key": "f5-19fe51fdae99",
+   "local": 0.15,
+   "dur": 4.75,
+   "t": 49.754
+  },
+  {
+   "beat": "clip-06.b07",
+   "scene": "b07",
+   "speaker": "hiep",
+   "say": "Tối nay mình cứ xỏ giày, chạy nhẹ mười phút, mệt thì đi bộ, lỡ bữa nào, mai đi tiếp, cái nụ còn đó là được.",
+   "en": "Tonight, an easy ten minutes.",
+   "emotion": "happy",
+   "key": "f5-5d52a8e56f32",
+   "local": 0.45,
+   "dur": 5.743,
+   "t": 55.204
+  },
+  {
+   "beat": "clip-06.b08",
+   "scene": "b08",
+   "speaker": "hiep",
+   "say": "Mình thì đi nhẹ vậy thôi, chứ chuyện này mỗi người nghĩ mỗi khác.",
+   "en": "That easy pace is just my way.",
+   "emotion": "neutral",
+   "key": "f5-c117431f583f",
+   "local": 0.45,
+   "dur": 3.21,
+   "t": 61.647
+  },
+  {
+   "beat": "clip-06.b08",
+   "scene": "b08a",
+   "speaker": "hiep",
+   "say": "Có ai cứ tới tuần hai là dễ nản giống mình hông?",
+   "en": "Anyone else lose steam at week two?",
+   "emotion": "confused",
+   "key": "f5-13b710c1fad1",
+   "local": 0.15,
+   "dur": 2.43,
+   "t": 65.257
+  },
+  {
+   "beat": "clip-06.b08",
+   "scene": "b08b",
+   "speaker": "hiep",
+   "say": "Hay bạn nghĩ sao, có cách gì vượt qua khúc đó, còm men kể mình nghe với nha.",
+   "en": "What helps you push through? Tell me.",
+   "emotion": "happy",
+   "key": "f5-938bf22b786d",
+   "local": 0.15,
+   "dur": 3.963,
+   "t": 68.087
+  }
+ ],
+ "transitions": [
+  {
+   "at": 4.758,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 13.557,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 24.354,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 35.314,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 43.834,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 54.754,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 61.197,
+   "kind": "scene",
+   "sfx": "swish"
+  },
+  {
+   "at": 72.3,
+   "kind": "scene",
+   "sfx": "swish"
+  }
+ ],
+ "sfx_mix": [
+  {
+   "name": "stamp",
+   "at": 0.12
+  },
+  {
+   "name": "pop",
+   "at": 1.318
+  },
+  {
+   "name": "click",
+   "at": 3.178
+  },
+  {
+   "name": "snap",
+   "at": 5.358
+  },
+  {
+   "name": "ding",
+   "at": 9.888
+  },
+  {
+   "name": "pop",
+   "at": 14.157
+  },
+  {
+   "name": "tick",
+   "at": 18.207
+  },
+  {
+   "name": "click",
+   "at": 21.187
+  },
+  {
+   "name": "stamp",
+   "at": 24.954
+  },
+  {
+   "name": "rise",
+   "at": 28.744
+  },
+  {
+   "name": "whoosh",
+   "at": 35.914
+  },
+  {
+   "name": "ding",
+   "at": 38.304
+  },
+  {
+   "name": "pop",
+   "at": 44.434
+  },
+  {
+   "name": "ding",
+   "at": 49.904
+  },
+  {
+   "name": "click",
+   "at": 55.354
+  },
+  {
+   "name": "pop",
+   "at": 61.797
+  },
+  {
+   "name": "tick",
+   "at": 65.407
+  },
+  {
+   "name": "ding",
+   "at": 68.237
+  },
+  {
+   "name": "swish",
+   "at": 4.638
+  },
+  {
+   "name": "swish",
+   "at": 13.437
+  },
+  {
+   "name": "swish",
+   "at": 24.234
+  },
+  {
+   "name": "swish",
+   "at": 35.194
+  },
+  {
+   "name": "swish",
+   "at": 43.714
+  },
+  {
+   "name": "swish",
+   "at": 54.634
+  },
+  {
+   "name": "swish",
+   "at": 61.077
+  },
+  {
+   "name": "swish",
+   "at": 72.18
+  },
+  {
+   "name": "ambience",
+   "at": 0.0
+  }
+ ],
+ "hits": [],
+ "partStarts": [
+  0.0
+ ]
+}

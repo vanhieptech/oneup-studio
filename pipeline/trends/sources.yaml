@@ -54,5 +54,11 @@
  {"id":"bsky-productivity","stream":"upstream","type":"bsky_search","q":"productivity","cat":"niche","lang":"en","max":10},
  {"id":"spotify-vn","stream":"general","type":"kworb","url":"https://kworb.net/spotify/country/vn_daily.html","cat":"music","lang":"vi","max":15},
  {"id":"yt-niche-vn","stream":"general","type":"yt","q":"cách hết trì hoãn","cat":"niche","lang":"vi","max":8},
- {"id":"yt-niche-en","stream":"upstream","type":"yt","q":"how to stop procrastinating 2026","cat":"niche","lang":"en","max":8}
+ {"id":"yt-niche-en","stream":"upstream","type":"yt","q":"how to stop procrastinating 2026","cat":"niche","lang":"en","max":8},
+ {"id":"yt-habits-en","stream":"upstream","type":"yt","q":"habit science psychology myth shorts","cat":"niche","lang":"en","max":8},
+ {"id":"yt-focus-en","stream":"upstream","type":"yt","q":"phone addiction dopamine focus psychology","cat":"niche","lang":"en","max":8},
+ {"id":"yt-learning-en","stream":"upstream","type":"yt","q":"how to remember what you read active recall","cat":"niche","lang":"en","max":8},
+ {"id":"yt-overthinking-en","stream":"upstream","type":"yt","q":"how to stop overthinking psychology","cat":"niche","lang":"en","max":8},
+ {"id":"tf-reddit-getdisciplined","stream":"upstream","type":"tinyfish","q":"r/getdisciplined top habits procrastination this week","hl":"en","gl":"US","domains":"reddit.com","cat":"niche","lang":"en","max":10},
+ {"id":"tf-tiktok-en-habits","stream":"tiktok","type":"tinyfish_tiktok","q":"procrastination habit psychology","hl":"en","gl":"US","cat":"niche","lang":"en","max":10}
 ]}

@@ -1,0 +1,225 @@
+[
+ {
+  "scene": "b01",
+  "voice": "",
+  "sentence": "Ngộ ghê ha —",
+  "units": [
+   "ủa ngộ ghê ha"
+  ],
+  "stress": "",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b01a",
+  "voice": "",
+  "sentence": "trồng cây mình đợi mấy tháng được,",
+  "units": [
+   "trồng cây mình đợi,",
+   "mấy tháng được,"
+  ],
+  "stress": "mấy tháng",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b01b",
+  "voice": "",
+  "sentence": "mà tập thói quen hai tuần đã muốn dẹp.",
+  "units": [
+   "mà tập thói quen hai tuần",
+   "đã muốn dẹp."
+  ],
+  "stress": "dẹp",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b02",
+  "voice": "",
+  "sentence": "Đợt mới tập chạy bộ hai tuần vẫn oải, mình liền nghĩ “chắc mình hông hợp đâu”.",
+  "units": [
+   "Đợt mới tập chạy bộ hai tuần vẫn oải,",
+   "mình liền nghĩ “chắc mình hông hợp đâu”."
+  ],
+  "stress": "oải",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b02a",
+  "voice": "",
+  "sentence": "Lúc đó quên mất câu “đừng bao giờ khinh thường một bông hoa chưa nở”.",
+  "units": [
+   "Lúc đó quên mất câu",
+   "“đừng bao giờ khinh thường một bông hoa chưa nở”."
+  ],
+  "stress": "chưa nở",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03",
+  "voice": "",
+  "sentence": "Chạy có hai tuần thì mới nhú cái nụ hà, sao đòi nhẹ tênh liền được.",
+  "units": [
+   "Chạy có hai tuần thì mới nhú cái nụ hà,",
+   "sao đòi, nhẹ tênh, liền được."
+  ],
+  "stress": "cái nụ",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03a",
+  "voice": "",
+  "sentence": "Ủa mà tập một việc mất bao lâu mới thành thói quen?",
+  "units": [
+   "Ủa mà tập một việc",
+   "mất bao lâu mới thành thói quen?"
+  ],
+  "stress": "bao lâu",
+  "question_rise": true,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b03b",
+  "voice": "",
+  "sentence": "Hồi trước mình cứ đinh ninh ráng hai ba tuần là vô guồng.",
+  "units": [
+   "Hồi trước mình cứ đinh ninh,",
+   "ráng hai ba tuần là vô guồng."
+  ],
+  "stress": "hai ba tuần",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b04",
+  "voice": "",
+  "sentence": "Đọc nghiên cứu năm 2010 của nhóm Lally mới ngửa người ra:",
+  "units": [
+   "Đọc nghiên cứu năm hai ngàn mười",
+   "của nhóm La li",
+   "mới ngửa người ra:"
+  ],
+  "stress": "ngửa người",
+  "question_rise": false,
+  "end_pause": "comma .15–.25s"
+ },
+ {
+  "scene": "b04b",
+  "voice": "",
+  "sentence": "làm việc nhỏ mỗi ngày, người nhanh nhất mất 18 ngày, chậm nhất tới 254 ngày — hơn 8 tháng mới thành nếp.",
+  "units": [
+   "làm việc nhỏ mỗi ngày,",
+   "người nhanh nhất mất mười tám ngày,",
+   "chậm nhất tới hai trăm năm mươi tư ngày,",
+   "hơn tám tháng mới thành nếp."
+  ],
+  "stress": "18 ngày",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b05",
+  "voice": "",
+  "sentence": "Đọc tới đó tự nhiên nhẹ hẳn cái đầu.",
+  "units": [
+   "Đọc tới đó tự nhiên",
+   "nhẹ hẳn cái đầu."
+  ],
+  "stress": "nhẹ hẳn",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b05a",
+  "voice": "",
+  "sentence": "Nhanh nhất người ta còn mất hơn hai tuần, mình mới chạy hai tuần mà oải là quá bình thường — đâu phải không hợp.",
+  "units": [
+   "Nhanh nhất người ta còn mất hơn hai tuần,",
+   "mình mới chạy hai tuần mà oải là quá bình thường,",
+   "đâu phải không hợp."
+  ],
+  "stress": "bình thường",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b06",
+  "voice": "",
+  "sentence": "Thói quen tính bằng tháng chứ hông phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ.",
+  "units": [
+   "Thói quen tính bằng tháng chứ hông phải bằng tuần,",
+   "làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ."
+  ],
+  "stress": "tháng",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b06a",
+  "voice": "",
+  "sentence": "Cái hay là nhóm đó cũng thấy nghỉ một ngày gần như hông sao, công mấy hôm trước vẫn còn nguyên.",
+  "units": [
+   "Cái hay là nhóm đó cũng thấy",
+   "nghỉ một ngày gần như hông sao,",
+   "công, mấy hôm trước vẫn còn nguyên."
+  ],
+  "stress": "hông sao",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b07",
+  "voice": "",
+  "sentence": "Tối nay mình cứ xỏ giày chạy nhẹ mười phút, mệt thì đi bộ, lỡ bữa nào, mai đi tiếp — cái nụ còn đó là được.",
+  "units": [
+   "Tối nay mình cứ xỏ giày, chạy nhẹ mười phút,",
+   "mệt thì đi bộ,",
+   "lỡ bữa nào, mai đi tiếp,",
+   "cái nụ còn đó là được."
+  ],
+  "stress": "mười phút",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b08",
+  "voice": "",
+  "sentence": "Mình thì đi nhẹ vậy thôi, chứ chuyện này mỗi người nghĩ mỗi khác.",
+  "units": [
+   "Mình thì đi nhẹ vậy thôi,",
+   "chứ chuyện này mỗi người nghĩ mỗi khác."
+  ],
+  "stress": "thôi",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b08a",
+  "voice": "",
+  "sentence": "Có ai cứ tới tuần hai là dễ nản giống mình hông?",
+  "units": [
+   "Có ai cứ tới tuần hai",
+   "là dễ nản giống mình hông?"
+  ],
+  "stress": "dễ nản",
+  "question_rise": true,
+  "end_pause": "period .35–.5s"
+ },
+ {
+  "scene": "b08b",
+  "voice": "",
+  "sentence": "Hay bạn nghĩ sao, có cách gì vượt qua khúc đó — comment kể mình nghe với nha.",
+  "units": [
+   "Hay bạn nghĩ sao,",
+   "có cách gì vượt qua khúc đó,",
+   "còm men kể mình nghe với nha."
+  ],
+  "stress": "nghĩ sao",
+  "question_rise": false,
+  "end_pause": "period .35–.5s"
+ }
+]

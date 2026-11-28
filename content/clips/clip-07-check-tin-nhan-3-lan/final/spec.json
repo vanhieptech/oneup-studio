@@ -1,0 +1,1452 @@
+{
+ "id": "clip-07-final",
+ "clip": "clip-07",
+ "title": "Check tin nhắn theo đợt 3 lần/ngày (HTB 3.5) — script v1 M2 locked",
+ "week": 2,
+ "theme": "light",
+ "pillar": "2 Giữ tập trung",
+ "story": "độc thoại Hiệp; tình huống sếp nhắn 'em ơi' và 3 khung giờ 9h/1h/4h dựng theo luật 67; một họ hình ảnh chấm đỏ — mở ra đóng vô",
+ "trend": "B-msg-02",
+ "voice_prefix": "c07v1",
+ "voice_refs": true,
+ "mix": "linear",
+ "layout": "tiktok",
+ "length_target": [
+  75,
+  95
+ ],
+ "length_note": "Chốt 28/11/2026 (bản Top 1 M2). Ước ~81s đọc tự nhiên + nghỉ/end card. Trần cứng <300s (L-099).",
+ "pacing": {
+  "lead": 0.15,
+  "lead_tr": 0.05,
+  "tail": 0.25,
+  "swish": "beat"
+ },
+ "transition_sfx": {
+  "part": "whoosh-soft",
+  "scene": "swish"
+ },
+ "endcard": {
+  "duration": 3.0,
+  "y": 560,
+  "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+  "sources": "Kushlev & Dunn 2015",
+  "credit": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/"
+ },
+ "revisions": [
+  {
+   "v": "v1",
+   "date": "2026-11-28",
+   "dl": "DL-082",
+   "note": "Hiệp chốt bản Top 1 (M2) từ Đấu trường 3 Kịch bản. Lời khóa script_hash 244918a45986, review ĐẠT WIN vs a-c04. Spec dựng từ đúng lời v1, bật voice_refs 6000h."
+  }
+ ],
+ "cover": {
+  "direction": "a",
+  "theme": "light",
+  "series": "Giữ tập trung",
+  "ep": 7,
+  "hero": [
+   "CANH CẢ NGÀY",
+   "3 KHUNG GIỜ"
+  ],
+  "accent": 1,
+  "strike": 0,
+  "expression": "confused",
+  "action": "reacting",
+  "emote": "!",
+  "tilt": -4
+ },
+ "hook": {
+  "text": "HAI CHỮ 'EM ƠI'",
+  "scenes": [
+   "b01",
+   "b01a",
+   "b01b"
+  ],
+  "format": "5-Second Vulnerable Story: sếp nhắn 'em ơi' rồi im, 10 phút mở máy 5 lần"
+ },
+ "engagement": [
+  {
+   "type": "loop",
+   "beat": "b07a",
+   "text": "canh chấm đỏ",
+   "hook_word": "mở máy"
+  },
+  {
+   "type": "relatable-question",
+   "beat": "b07a",
+   "text": "Có ai cũng hay canh chấm đỏ giống mình hông?"
+  },
+  {
+   "type": "comment-challenge",
+   "beat": "b07b",
+   "text": "comment kể mình nghe với nha"
+  }
+ ],
+ "voices": {
+  "Hiệp": "F5 · Thái Sơn"
+ },
+ "throughline": "Sếp nhắn em ơi rồi im làm mình mở máy liên tục VÀ cả ngày cứ thấy chấm đỏ là chụp máy, NHƯNG nhóm Kushlev 2015 cho thấy gom còn 3 lần thay vì hơn 15 lần giảm căng thẳng mà lượng thư vẫn y như cũ, VÌ VẬY mình báo team việc gấp thì gọi và gom tin nhắn 3 khung giờ",
+ "hook_question": {
+  "asked": "b03b: canh liền tay vậy, mình đỡ trễ việc hay chỉ căng đầu thêm?",
+  "answered": "b04a-b05: gom 3 lần vs hơn 15 lần giảm căng thẳng rõ mức vừa phải, số email nhận và trả lời vẫn y như cũ"
+ },
+ "structure": {
+  "hook": [
+   "b01",
+   "b01a",
+   "b01b"
+  ],
+  "intro": [
+   "b02",
+   "b02a",
+   "b02b"
+  ],
+  "body": {
+   "problem": [
+    "b03",
+    "b03a",
+    "b03b"
+   ],
+   "exploration": [
+    "b04",
+    "b04a"
+   ],
+   "climax": [
+    "b05",
+    "b05a",
+    "b06",
+    "b06a"
+   ]
+  },
+  "summary": [
+   "b07",
+   "b07a"
+  ],
+  "cta": [
+   "b07b"
+  ]
+ },
+ "hook_alt": {
+  "type": "direct",
+  "text": "Sếp nhắn “em ơi” rồi im — bạn tự nhủ “coi lẹ một giây thôi”, đúng hông?"
+ },
+ "callbacks": [],
+ "fact_lock": "Kushlev & Dunn 2015 doi:10.1016/j.chb.2014.11.005 — final/fact-lock.md (HTB 3.5). Được nói: 3 lần vs hơn 15 lần/ngày, căng thẳng giảm rõ mức vừa phải, email nhận và trả lời y như cũ, đo trên email. Cấm: chứng minh, nhiều nghiên cứu, dopamine/cortisol, tăng năng suất, bệnh lý.",
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "transitionOut": "fade",
+   "scenes": [
+    {
+     "id": "b01",
+     "beat": "clip-07.b01",
+     "part": "hook",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "closeup",
+     "push": 0.14,
+     "transition": "cut",
+     "narration": "HAI CHỮ 'EM ƠI'",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "surprised",
+       "enter": "pop"
+      }
+     ],
+     "fx": {
+      "visual": "Cắt sát mặt frame 0, màn hình sáng lên chữ sếp nhắn",
+      "word": "Sếp"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 0.0,
+       "word": "Sếp"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Sếp nhắn đúng hai chữ",
+       "say": "Sếp nhắn đúng hai chữ",
+       "en": "Boss texts two words",
+       "hl": [
+        0
+       ],
+       "phrases": [
+        {
+         "t": "{nhấn: Sếp} nhắn đúng hai chữ",
+         "gap": 0.14,
+         "tempo": 1.04,
+         "semi": 0.4,
+         "emph": true,
+         "emph_semi": 0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Mắt mở to nhìn màn hình vừa sáng",
+      "react": "giật mình, tự giễu"
+     }
+    },
+    {
+     "id": "b01a",
+     "beat": "clip-07.b01",
+     "part": "hook",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.46,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "reacting",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Bong bóng chat hiện đúng hai chữ em ơi rồi dấu gõ tắt ngấm",
+      "word": "im"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.2,
+       "word": "im"
+      }
+     ],
+     "props": [
+      {
+       "kind": "phone",
+       "x": 760,
+       "y": 980,
+       "scale": 0.9,
+       "badge": "1"
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "“em ơi” rồi im luôn —",
+       "say": "em ơi, rồi im luôn",
+       "en": "“hey” then goes silent.",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "em ơi,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.3
+        },
+        {
+         "t": "rồi {nhấn: im} luôn",
+         "gap": 0.22,
+         "tempo": 0.96,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.3
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Nhìn chằm chằm màn hình chờ tin tiếp",
+      "react": "hồi hộp, chột dạ"
+     },
+     "link": "từ hai chữ sếp nhắn, dừng ngay cú im lặng khó chịu"
+    },
+    {
+     "id": "b01b",
+     "beat": "clip-07.b01",
+     "part": "hook",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "closeup",
+     "push": 0.08,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "sad",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Đồng hồ nhảy 10 phút, tay bật tắt màn hình năm nhịp liên tiếp",
+      "word": "năm"
+     },
+     "sfx": [
+      {
+       "name": "click",
+       "atLine": 0,
+       "offset": 0.35,
+       "word": "năm"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "mười phút mình mở máy coi **năm** lần.",
+       "say": "mười phút mình mở máy coi năm lần.",
+       "en": "Checked five times in ten minutes.",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "mười phút mình mở máy coi {nhấn: năm} lần.",
+         "gap": 0.24,
+         "tempo": 0.98,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.4
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Bật rồi tắt điện thoại liên tục",
+      "react": "tự giễu, bồn chồn"
+     },
+     "link": "phản xạ ngay sau khi sếp im lặng là mở máy liên tục"
+    },
+    {
+     "id": "b02",
+     "beat": "clip-07.b02",
+     "part": "struggle",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "sad",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp lắc đầu thừa nhận chuyện lặp lại mỗi ngày",
+      "word": "riêng"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "riêng"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Hông **riêng** bữa đó đâu.",
+       "say": "Hông riêng bữa đó đâu.",
+       "en": "Not just that one day.",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Hông {nhấn: riêng} bữa đó đâu.",
+         "gap": 0.24,
+         "tempo": 0.96,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.3
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Lắc đầu nhẹ, hạ giọng",
+      "react": "thừa nhận thật lòng"
+     },
+     "link": "mở rộng từ câu chuyện sếp nhắn sang thói quen cả ngày"
+    },
+    {
+     "id": "b02a",
+     "beat": "clip-07.b02",
+     "part": "struggle",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.05,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "reacting",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Chấm đỏ thông báo bật lên, tay tự động chụp lấy điện thoại",
+      "word": "chụp"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.35,
+       "word": "chụp"
+      }
+     ],
+     "props": [
+      {
+       "kind": "phone",
+       "x": 770,
+       "y": 990,
+       "scale": 0.9,
+       "badge": "9"
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Ngày thường cứ thấy chấm đỏ là tay mình tự **chụp** máy.",
+       "say": "Ngày thường cứ thấy chấm đỏ là tay mình tự chụp máy.",
+       "en": "Red dot pops, hand grabs phone.",
+       "hl": [
+        0,
+        4
+       ],
+       "phrases": [
+        {
+         "t": "Ngày thường cứ thấy chấm đỏ,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.0
+        },
+        {
+         "t": "là tay mình tự {nhấn: chụp} máy.",
+         "gap": 0.24,
+         "tempo": 0.98,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.4
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Tay tự với sang điện thoại khi chấm đỏ nháy",
+      "react": "phản xạ vô thức"
+     },
+     "link": "cụ thể hóa chuyện ngày thường bằng phản xạ chụp máy"
+    },
+    {
+     "id": "b02b",
+     "beat": "clip-07.b02",
+     "part": "struggle",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "sad",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Đèn bàn tối muộn, danh sách việc chính còn nguyên, Hiệp ôm trán",
+      "word": "trách"
+     },
+     "sfx": [
+      {
+       "name": "click",
+       "atLine": 0,
+       "offset": 0.4,
+       "word": "trách"
+      }
+     ],
+     "props": [
+      {
+       "kind": "laptop",
+       "x": 760,
+       "y": 1020,
+       "scale": 0.85
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Tối về đầu nặng trịch, việc chính còn nguyên, mình lại tự **trách** sao dễ phân tâm quá.",
+       "say": "Tối về đầu nặng trịch, việc chính còn nguyên, mình lại tự trách sao dễ phân tâm quá.",
+       "en": "Exhausted at night, blaming my focus.",
+       "hl": [
+        0,
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Tối về đầu nặng trịch,",
+         "gap": 0.18,
+         "tempo": 0.94,
+         "semi": -0.3
+        },
+        {
+         "t": "việc chính còn nguyên,",
+         "gap": 0.18,
+         "tempo": 0.94,
+         "semi": -0.3
+        },
+        {
+         "t": "mình lại tự {nhấn: trách} sao dễ phân tâm quá.",
+         "gap": 0.28,
+         "tempo": 0.92,
+         "semi": -0.4,
+         "emph": true,
+         "emph_semi": -0.5
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Ôm trán ngồi bên laptop tối muộn",
+      "react": "mệt mỏi, tự trách"
+     },
+     "link": "hệ quả cuối ngày của việc chụp máy liên tục là tự trách"
+    },
+    {
+     "id": "b03",
+     "beat": "clip-07.b03",
+     "part": "turn",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "closeup",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "reacting",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Biểu tượng chuông gạch chéo rung nhẹ rồi gãy",
+      "word": "thua"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.2,
+       "word": "thua"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Tắt chuông cũng **thua**.",
+       "say": "Tắt chuông cũng thua.",
+       "en": "Even muting alerts fails.",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Tắt chuông cũng {nhấn: thua}.",
+         "gap": 0.24,
+         "tempo": 0.96,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.4
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Xua tay bất lực với mẹo tắt chuông",
+      "react": "chán nản nhẹ"
+     },
+     "link": "thử cách quen thuộc nhất là tắt chuông nhưng vẫn không ăn thua"
+    },
+    {
+     "id": "b03a",
+     "beat": "clip-07.b03",
+     "part": "turn",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Tay Hiệp vẫn lén chạm màn hình điện thoại dù đã tắt tiếng",
+      "word": "lén"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.25,
+       "word": "lén"
+      }
+     ],
+     "props": [
+      {
+       "kind": "phone",
+       "x": 760,
+       "y": 990,
+       "scale": 0.88
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Mình vẫn **lén** bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
+       "say": "Mình vẫn lén bật màn hình coi, sợ việc gấp người ta kiếm hông ra.",
+       "en": "I still peek, fearing missed pings.",
+       "hl": [
+        2,
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Mình vẫn {nhấn: lén} bật màn hình coi,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.0,
+         "emph": true,
+         "emph_semi": -0.2
+        },
+        {
+         "t": "sợ việc gấp người ta kiếm hông ra.",
+         "gap": 0.24,
+         "tempo": 0.98,
+         "semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Nghiêng người lén chạm màn hình",
+      "react": "lo sợ lỡ việc gấp"
+     },
+     "link": "giải thích vì sao tắt chuông vẫn thua là nỗi sợ lỡ việc gấp"
+    },
+    {
+     "id": "b03b",
+     "beat": "clip-07.b03",
+     "part": "turn",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.05,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "standing",
+       "action": "thinking",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Dấu hỏi lớn bật lên cạnh Hiệp tách hai vế đỡ trễ việc và căng đầu",
+      "word": "căng"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.4,
+       "word": "căng"
+      }
+     ],
+     "props": [
+      {
+       "kind": "qmark",
+       "x": 760,
+       "y": 820,
+       "scale": 0.95
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "voice_ref": "default",
+       "voice_role": "Hiệp",
+       "text": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ **căng** đầu thêm?",
+       "say": "Ủa mà canh liền tay vậy, mình đỡ trễ việc hay chỉ căng đầu thêm?",
+       "en": "Faster work, or just more stress?",
+       "hl": [
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Ủa mà canh liền tay vậy,",
+         "gap": 0.18,
+         "tempo": 1.0,
+         "semi": 0.3
+        },
+        {
+         "t": "mình đỡ trễ việc hay chỉ {nhấn: căng} đầu thêm?",
+         "gap": 0.28,
+         "tempo": 0.96,
+         "semi": 0.4,
+         "emph": true,
+         "emph_semi": 0.5
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Nghiêng đầu đặt câu hỏi lớn",
+      "react": "tò mò, nghi ngờ niềm tin cũ"
+     },
+     "link": "từ nỗi sợ lỡ việc gấp, đặt câu hỏi trung tâm cho cả clip"
+    },
+    {
+     "id": "b04",
+     "beat": "clip-07.b04",
+     "part": "explain",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.42,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "focused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Thẻ nguồn KUSHLEV & DUNN 2015 đóng xuống kèm nhãn đo trên email",
+      "word": "2015"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 0.25,
+       "word": "2015"
+      }
+     ],
+     "props": [
+      {
+       "kind": "card",
+       "x": 740,
+       "y": 860,
+       "scale": 0.85,
+       "title": "KUSHLEV 2015",
+       "sub": "EMAIL"
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "voice_ref": "serious",
+       "voice_role": "Hiệp",
+       "text": "Nhóm Kushlev năm 2015 đo trên email nè:",
+       "say": "Nhóm Cút lép năm hai ngàn mười lăm đo trên i meo nè:",
+       "en": "Kushlev 2015 tested this on email:",
+       "hl": [
+        0,
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Nhóm Cút lép năm {nhấn: hai ngàn mười lăm} đo trên i meo nè:",
+         "gap": 0.22,
+         "tempo": 0.96,
+         "semi": 0.0,
+         "emph": true,
+         "emph_semi": -0.1
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Chỉ sang thẻ nguồn nghiên cứu",
+      "react": "nghiêm túc, tập trung"
+     },
+     "link": "mở dẫn chứng Kushlev 2015 để trả lời thẳng câu hỏi vừa đặt"
+    },
+    {
+     "id": "b04a",
+     "beat": "clip-07.b04",
+     "part": "explain",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.05,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.42,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "surprised",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hai cột so sánh 3 lần vọt lên hơn 15 lần, thanh căng thẳng hạ rõ",
+      "word": "15"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 0.35,
+       "word": "15"
+      }
+     ],
+     "props": [
+      {
+       "kind": "bars",
+       "x": 750,
+       "y": 900,
+       "scale": 0.85
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "voice_ref": "serious",
+       "voice_role": "Hiệp",
+       "text": "tuần gom còn 3 lần một ngày, so với thả cửa hơn **15** lần, căng thẳng giảm rõ mức vừa phải.",
+       "say": "tuần gom còn ba lần một ngày, so với thả cửa hơn mười lăm lần, căng thẳng giảm rõ mức vừa phải.",
+       "en": "3 checks vs over 15: less stress.",
+       "hl": [
+        4,
+        6
+       ],
+       "phrases": [
+        {
+         "t": "tuần gom còn ba lần một ngày,",
+         "gap": 0.18,
+         "tempo": 0.96,
+         "semi": 0.0
+        },
+        {
+         "t": "so với thả cửa hơn {nhấn: mười lăm} lần,",
+         "gap": 0.18,
+         "tempo": 0.94,
+         "semi": 0.2,
+         "emph": true,
+         "emph_semi": 0.1
+        },
+        {
+         "t": "căng thẳng giảm rõ mức vừa phải.",
+         "gap": 0.26,
+         "tempo": 0.96,
+         "semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Mở tay so hai cột chênh lệch",
+      "react": "ngỡ ngàng tỉnh ngộ"
+     },
+     "link": "trình bày kết quả chính của thí nghiệm theo chiều 3 lên 15 lần"
+    },
+    {
+     "id": "b05",
+     "beat": "clip-07.b05",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hai chồng thư đến và thư đi đứng bằng nhau y như cũ",
+      "word": "cũ"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.35,
+       "word": "cũ"
+      }
+     ],
+     "props": [
+      {
+       "kind": "stack",
+       "x": 760,
+       "y": 960,
+       "scale": 0.85
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "voice_ref": "serious",
+       "voice_role": "Hiệp",
+       "text": "Số email nhận với trả lời vẫn y như **cũ**.",
+       "say": "Số i meo nhận với trả lời vẫn y như cũ.",
+       "en": "Emails received and replied stayed identical.",
+       "hl": [
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Số i meo nhận với trả lời vẫn y như {nhấn: cũ}.",
+         "gap": 0.24,
+         "tempo": 0.96,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Gật đầu nhấn mạnh lượng việc không hề hụt",
+      "react": "bất ngờ, nhẹ người"
+     },
+     "link": "bồi thêm chi tiết đắt nhất giải tỏa nỗi sợ trễ việc"
+    },
+    {
+     "id": "b05a",
+     "beat": "clip-07.b05",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "reacting",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp thả lỏng hai vai nhẹ nhõm, trút bỏ gánh nặng tự trách",
+      "word": "nhẹ"
+     },
+     "sfx": [
+      {
+       "name": "whoosh",
+       "atLine": 0,
+       "offset": 0.2,
+       "word": "nhẹ"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "voice_ref": "serious",
+       "voice_role": "Hiệp",
+       "text": "Nghe vậy tự nhiên **nhẹ** hẳn cái vai — hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
+       "say": "Nghe vậy tự nhiên nhẹ hẳn cái vai, hóa ra mình hông yếu, chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
+       "en": "Instant relief. Just constant switching.",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "Nghe vậy tự nhiên {nhấn: nhẹ} hẳn cái vai,",
+         "gap": 0.18,
+         "tempo": 0.96,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": -0.2
+        },
+        {
+         "t": "hóa ra mình hông yếu,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.0
+        },
+        {
+         "t": "chỉ tại mở ra đóng vô cả ngày nên đầu căng hà.",
+         "gap": 0.26,
+         "tempo": 0.96,
+         "semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Thở phào hạ vai, nét mặt giãn ra",
+      "react": "nhẹ nhõm giải tỏa"
+     },
+     "link": "từ kết quả thí nghiệm, gỡ ngay nhãn tự trách ở đầu clip"
+    },
+    {
+     "id": "b06",
+     "beat": "clip-07.b06",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "typing",
+       "expression": "focused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp gõ một tin nhắn ngắn cho team kèm biểu tượng gọi điện",
+      "word": "gọi"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.4,
+       "word": "gọi"
+      }
+     ],
+     "props": [
+      {
+       "kind": "phone",
+       "x": 760,
+       "y": 980,
+       "scale": 0.88
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "voice_ref": "serious",
+       "voice_role": "Hiệp",
+       "text": "Từ đó mình đổi luật: báo trước với team “việc gấp thì **gọi** nha”.",
+       "say": "Từ đó mình đổi luật, báo trước với tim, việc gấp thì gọi nha.",
+       "en": "New rule: tell your team to call.",
+       "hl": [
+        6
+       ],
+       "phrases": [
+        {
+         "t": "Từ đó mình đổi luật,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "báo trước với tim, việc gấp thì {nhấn: gọi} nha.",
+         "gap": 0.24,
+         "tempo": 0.96,
+         "semi": 0.0,
+         "emph": true,
+         "emph_semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Gõ tin nhắn báo trước cho team",
+      "react": "chủ động, dứt khoát"
+     },
+     "link": "chuyển từ hiểu nguyên nhân sang luật làm việc cụ thể bước 1"
+    },
+    {
+     "id": "b06a",
+     "beat": "clip-07.b06",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.44,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Đồng hồ ngày bật sáng đúng ba khung giờ 9 giờ, 1 giờ, 4 giờ",
+      "word": "gom"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.3,
+       "word": "gom"
+      }
+     ],
+     "props": [
+      {
+       "kind": "clock",
+       "x": 760,
+       "y": 920,
+       "scale": 0.85
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "voice_ref": "serious",
+       "voice_role": "Hiệp",
+       "text": "Còn tin nhắn cứ **gom** đúng 3 khung giờ — 9 giờ sáng, 1 giờ trưa, 4 giờ chiều — mở một lượt rồi xử gọn.",
+       "say": "Còn tin nhắn cứ gom đúng ba khung giờ, chín giờ sáng, một giờ trưa, bốn giờ chiều, mở một lượt rồi xử gọn.",
+       "en": "Batch messages at 9, 1, and 4.",
+       "hl": [
+        0,
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Còn tin nhắn cứ {nhấn: gom} đúng ba khung giờ,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": -0.1
+        },
+        {
+         "t": "chín giờ sáng, một giờ trưa, bốn giờ chiều,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.0
+        },
+        {
+         "t": "mở một lượt rồi xử gọn.",
+         "gap": 0.26,
+         "tempo": 0.98,
+         "semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Chỉ lần lượt ba mốc giờ trên đồng hồ",
+      "react": "gọn gàng, nhẹ nhõm"
+     },
+     "link": "hoàn thiện cách làm với đúng ba khung giờ cố định"
+    },
+    {
+     "id": "b07",
+     "beat": "clip-07.b07",
+     "part": "summary",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.03,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp đặt máy sang một bên, hạ vai trò chuyện ngang hàng",
+      "word": "khác"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.25,
+       "word": "khác"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "voice_ref": "happy",
+       "voice_role": "Hiệp",
+       "text": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi **khác**.",
+       "say": "Mình gỡ kiểu đó thôi, chứ mỗi chỗ làm mỗi khác.",
+       "en": "Just my workaround; every job differs.",
+       "hl": [
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Mình gỡ kiểu đó thôi,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "chứ mỗi chỗ làm mỗi {nhấn: khác}.",
+         "gap": 0.24,
+         "tempo": 0.96,
+         "semi": -0.1,
+         "emph": true,
+         "emph_semi": -0.3
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Hạ vai thoải mái, không giảng bài",
+      "react": "khiêm tốn, gần gũi"
+     },
+     "link": "hạ cái tôi nhận cách làm chỉ là lựa chọn riêng của mình"
+    },
+    {
+     "id": "b07a",
+     "beat": "clip-07.b07",
+     "part": "summary",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.03,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp nghiêng đầu hỏi đồng cảm với người xem đúng chữ canh",
+      "word": "canh"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.25,
+       "word": "canh"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "voice_ref": "happy",
+       "voice_role": "Hiệp",
+       "text": "Có ai cũng hay **canh** chấm đỏ giống mình hông?",
+       "say": "Có ai cũng hay canh chấm đỏ giống mình hông?",
+       "en": "Anyone else glued to red dots?",
+       "hl": [
+        2,
+        4
+       ],
+       "phrases": [
+        {
+         "t": "Có ai cũng hay {nhấn: canh} chấm đỏ giống mình hông?",
+         "gap": 0.24,
+         "tempo": 0.98,
+         "semi": 0.3,
+         "emph": true,
+         "emph_semi": 0.4
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Nghiêng đầu cười nhẹ hỏi người xem",
+      "react": "đồng cảm, thân thiện"
+     },
+     "link": "mở câu hỏi đồng cảm nối về đúng hình ảnh chấm đỏ ở đầu clip"
+    },
+    {
+     "id": "b07b",
+     "beat": "clip-07.b07",
+     "part": "cta",
+     "role": "Hiệp",
+     "background": "paper",
+     "framing": "medium",
+     "push": 0.04,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "reacting",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Hiệp gật đầu lắng nghe chờ câu chuyện, không giơ nút like",
+      "word": "kể"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.3,
+       "word": "kể"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "voice_ref": "happy",
+       "voice_role": "Hiệp",
+       "text": "Hay bạn nghĩ sao, có cách gì né cảnh đó — comment **kể** mình nghe với nha.",
+       "say": "Hay bạn nghĩ sao, có cách gì né cảnh đó, còm men kể mình nghe với nha.",
+       "en": "How do you handle it? Tell me.",
+       "hl": [
+        3,
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Hay bạn nghĩ sao, có cách gì né cảnh đó,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.2
+        },
+        {
+         "t": "còm men {nhấn: kể} mình nghe với nha.",
+         "gap": 0.26,
+         "tempo": 0.96,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": -0.2
+        }
+       ]
+      }
+     ],
+     "stage": {
+      "action": "Gật nhẹ mỉm cười lắng nghe",
+      "react": "ấm áp, mời đối thoại"
+     },
+     "link": "mời người xem chia sẻ góc nhìn và cách vượt qua riêng"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1496 @@
+{
+ "id": "clip-06-final",
+ "clip": "clip-06",
+ "title": "Bông hoa chưa nở: thói quen tính bằng tháng (HTB 4.12) — script v13 locked",
+ "week": 1,
+ "theme": "dark",
+ "pillar": "1 Làm ít, xong nhiều",
+ "story": "độc thoại Hiệp; ví dụ chạy bộ dựng theo luật 67, không phải kết quả đã xác nhận; một họ ẩn dụ cây–nụ–hoa",
+ "trend": "vtc-ar1048255-bong-hoa-chua-no",
+ "voice_prefix": "c06v13",
+ "mix": "linear",
+ "layout": "tiktok",
+ "length_target": [
+  90,
+  110
+ ],
+ "length_note": "Chốt 27/11/2026. Ước review 94–105s gồm nghỉ và end card. Trần cứng <300s (L-099).",
+ "pacing": {
+  "lead": 0.15,
+  "lead_tr": 0.05,
+  "tail": 0.25,
+  "swish": "beat"
+ },
+ "transition_sfx": {
+  "part": "whoosh-soft",
+  "scene": "swish"
+ },
+ "endcard": {
+  "duration": 3.0,
+  "y": 560,
+  "safety": "Thông tin tham khảo, không thay thế tư vấn chuyên gia",
+  "sources": "Lally et al. 2010",
+  "credit": "Nội dung dựa trên 'Cẩm nang sống đáng giá' – chuanman2707, CC BY 4.0 – https://chuanman2707.github.io/HowToLiveBetter/"
+ },
+ "revisions": [
+  {
+   "v": "v13",
+   "date": "2026-11-27",
+   "dl": "DL-081",
+   "note": "Hiệp chốt script («chốt script tiếp tục làm tiếp»). Lời khóa script_hash c8469062ec2f, review ĐẠT TIE a-c05. Spec dựng từ đúng lời v13, số đọc trong say/phrases."
+  }
+ ],
+ "cover": {
+  "direction": "a",
+  "theme": "dark",
+  "series": "Làm ít, xong nhiều",
+  "ep": 6,
+  "hero": [
+   "HAI TUẦN MUỐN DẸP",
+   "HƠN 8 THÁNG"
+  ],
+  "accent": 1,
+  "strike": 0,
+  "expression": "sad",
+  "action": "reacting",
+  "emote": "!",
+  "tilt": -5
+ },
+ "hook": {
+  "text": "HAI TUẦN MUỐN DẸP",
+  "scenes": [
+   "b01",
+   "b01a",
+   "b01b"
+  ],
+  "format": "Everyday Paradox: trồng cây đợi được mấy tháng, thói quen hai tuần đã muốn dẹp"
+ },
+ "engagement": [
+  {
+   "type": "loop",
+   "beat": "b08a",
+   "text": "tuần hai",
+   "hook_word": "hai tuần"
+  },
+  {
+   "type": "relatable-question",
+   "beat": "b08a",
+   "text": "Có ai cứ tới tuần hai là dễ nản giống mình hông"
+  },
+  {
+   "type": "comment-challenge",
+   "beat": "b08b",
+   "text": "comment kể mình nghe với nha"
+  }
+ ],
+ "voices": {
+  "Hiệp": "F5 · Thái Sơn"
+ },
+ "throughline": "Trồng cây mình đợi mấy tháng được VÀ tập thói quen hai tuần đã muốn dẹp, NHƯNG việc nhỏ mỗi ngày nhanh nhất 18 ngày chậm nhất 254 ngày hơn 8 tháng, VÌ VẬY tính bằng tháng và tối nay chỉ chạy nhẹ mười phút",
+ "hook_question": {
+  "asked": "b03a: tập một việc mất bao lâu mới thành thói quen?",
+  "answered": "b04b: nhanh nhất 18 ngày, chậm nhất 254 ngày, hơn 8 tháng"
+ },
+ "structure": {
+  "hook": [
+   "b01",
+   "b01a",
+   "b01b"
+  ],
+  "intro": [
+   "b02",
+   "b02a"
+  ],
+  "body": {
+   "problem": [
+    "b03",
+    "b03a",
+    "b03b"
+   ],
+   "exploration": [
+    "b04",
+    "b04b"
+   ],
+   "climax": [
+    "b05",
+    "b05a",
+    "b06",
+    "b06a",
+    "b07"
+   ]
+  },
+  "summary": [
+   "b08",
+   "b08a"
+  ],
+  "cta": [
+   "b08b"
+  ]
+ },
+ "hook_alt": {
+  "type": "negative",
+  "text": "Đừng dẹp một thói quen mới chỉ vì hai tuần vẫn còn oải."
+ },
+ "callbacks": [],
+ "fact_lock": "Lally et al. 2010 doi:10.1002/ejsp.674 — research/fact-packages/factcheck-trends-2026-10-31.md mục clip-06. Được nói: 18 ngày, 254 ngày, hơn 8 tháng, nghỉ một ngày gần như không sao. Cấm: 66 ngày, trung bình, chứng minh, cơ chế não.",
+ "parts": [
+  {
+   "id": "A",
+   "engine": "remotion",
+   "transitionOut": "fade",
+   "scenes": [
+    {
+     "id": "b01",
+     "beat": "clip-06.b01",
+     "part": "hook",
+     "role": "Hiệp",
+     "background": "ink",
+     "framing": "closeup",
+     "push": 0.14,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "surprised",
+       "enter": "pop"
+      }
+     ],
+     "fx": {
+      "visual": "Cắt sát mặt frame 0, tiếng vỗ nhẹ đúng lúc ngộ ra",
+      "word": "ghê"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 0.0,
+       "word": "ghê"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "Ngộ ghê ha —",
+       "say": "ủa ngộ ghê ha",
+       "en": "Funny how that works.",
+       "hl": [
+        0
+       ],
+       "phrases": [
+        {
+         "t": "ủa ngộ {nhấn: ghê} ha",
+         "gap": 0.16,
+         "tempo": 1.02,
+         "semi": 0.4,
+         "emph": true,
+         "emph_semi": 0.2
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Mặt áp sát ống kính, hai tay xoè",
+      "react": "ngạc nhiên, tự giễu"
+     },
+     "narration": "HAI TUẦN MUỐN DẸP"
+    },
+    {
+     "id": "b01a",
+     "beat": "clip-06.b01",
+     "part": "hook",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.05,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "focused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Lịch giấy lật chậm cạnh chậu nhỏ, dừng ở chữ mấy tháng",
+      "word": "mấy tháng"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.35,
+       "word": "tháng"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "trồng cây mình đợi **mấy tháng** được,",
+       "say": "trồng cây mình đợi, mấy tháng được,",
+       "en": "We wait months for a plant.",
+       "hl": [
+        2
+       ],
+       "phrases": [
+        {
+         "t": "trồng cây mình đợi,",
+         "gap": 0.2,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "{nhấn: mấy tháng} được,",
+         "gap": 0.28,
+         "tempo": 0.92,
+         "semi": 0.2,
+         "emph": true,
+         "emph_semi": -0.4
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Lịch giấy lật chậm bên chậu nhỏ",
+      "react": "kiên nhẫn, chậm"
+     },
+     "link": "từ câu ngộ ra, hạ xuống hình cái cây mình chịu đợi"
+    },
+    {
+     "id": "b01b",
+     "beat": "clip-06.b01",
+     "part": "hook",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "closeup",
+     "push": 0.08,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "sad",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Tờ lịch tuần hai vo tròn rơi đúng chữ dẹp",
+      "word": "dẹp"
+     },
+     "sfx": [
+      {
+       "name": "click",
+       "atLine": 0,
+       "offset": 0.4,
+       "word": "dẹp"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "text": "mà tập thói quen hai tuần đã muốn **dẹp**.",
+       "say": "mà tập thói quen hai tuần đã muốn dẹp.",
+       "en": "Yet we quit a habit in two weeks.",
+       "hl": [
+        4
+       ],
+       "phrases": [
+        {
+         "t": "mà tập thói quen hai tuần",
+         "gap": 0.18,
+         "tempo": 1.0,
+         "semi": 0.0
+        },
+        {
+         "t": "đã muốn {nhấn: dẹp}.",
+         "gap": 0.36,
+         "tempo": 0.9,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.5
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Tờ lịch bị vo tròn rồi rơi",
+      "react": "cụt hứng"
+     },
+     "link": "đối lập cái cây chịu đợi với thói quen muốn bỏ"
+    },
+    {
+     "id": "b02",
+     "beat": "clip-06.b02",
+     "part": "struggle",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "thinking",
+       "expression": "sad",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Ngồi bệt thở dốc, bong bóng nghĩ hông hợp",
+      "word": "oải"
+     },
+     "sfx": [
+      {
+       "name": "snap",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "oải"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "sad",
+       "text": "Đợt mới tập chạy bộ hai tuần vẫn **oải**, mình liền nghĩ “chắc mình **hông hợp** đâu”.",
+       "say": "Đợt mới tập chạy bộ hai tuần vẫn oải, mình liền nghĩ “chắc mình hông hợp đâu”.",
+       "en": "Two weeks of running, still wiped out.",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "Đợt mới tập chạy bộ hai tuần vẫn oải,",
+         "gap": 0.22,
+         "tempo": 0.96,
+         "semi": -0.3,
+         "emph": true,
+         "emph_semi": -0.3
+        },
+        {
+         "t": "mình liền nghĩ “chắc mình hông hợp đâu”.",
+         "gap": 0.3,
+         "tempo": 0.94,
+         "semi": -0.4
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Ngồi bệt thở dốc, vai sụp, mắt cụp",
+      "react": "mệt, tự trách"
+     },
+     "link": "nghịch lý hai tuần muốn dẹp hạ xuống chính buổi chạy của mình"
+    },
+    {
+     "id": "b02a",
+     "beat": "clip-06.b02",
+     "part": "struggle",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "sitting",
+       "action": "talking",
+       "expression": "surprised",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Nụ khép hiện cạnh vai đúng câu chưa nở, không viết lại câu trend",
+      "word": "chưa nở"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "nở"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "Lúc đó quên mất câu “đừng bao giờ khinh thường một bông hoa **chưa nở**”.",
+       "say": "Lúc đó quên mất câu “đừng bao giờ khinh thường một bông hoa chưa nở”.",
+       "en": "Forgot: never dismiss a bud.",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "Lúc đó quên mất câu",
+         "gap": 0.2,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "“đừng bao giờ khinh thường một bông hoa chưa nở”.",
+         "gap": 0.32,
+         "tempo": 0.95,
+         "semi": 0.3,
+         "emph": true,
+         "emph_semi": 0.2
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Nụ khép hiện cạnh vai, nhân vật khựng",
+      "react": "sực nhớ"
+     },
+     "link": "lời tự trách làm sực nhớ câu bông hoa chưa nở"
+    },
+    {
+     "id": "b03",
+     "beat": "clip-06.b03",
+     "part": "turn",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Cận chậu, chồi nhỏ vừa ló đúng chữ cái nụ",
+      "word": "cái nụ"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "nụ"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Chạy có hai tuần thì mới nhú **cái nụ** hà, sao đòi nhẹ tênh liền được.",
+       "say": "Chạy có hai tuần thì mới nhú cái nụ hà, sao đòi, nhẹ tênh, liền được.",
+       "en": "Two weeks in, it is barely a bud.",
+       "hl": [
+        7
+       ],
+       "phrases": [
+        {
+         "t": "Chạy có hai tuần thì mới nhú cái nụ hà,",
+         "gap": 0.22,
+         "tempo": 1.0,
+         "semi": 0.3,
+         "emph": true,
+         "emph_semi": 0.2
+        },
+        {
+         "t": "sao đòi, nhẹ tênh, liền được.",
+         "gap": 0.28,
+         "tempo": 0.96,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.3
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Cận chậu, chồi nhỏ vừa ló",
+      "react": "thấy ra, hơi bực mình"
+     },
+     "link": "câu hoa chưa nở được chiếu thẳng lên hai tuần chạy"
+    },
+    {
+     "id": "b03a",
+     "beat": "clip-06.b03",
+     "part": "turn",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "thinking",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Dấu hỏi lớn bật đúng chữ bao lâu",
+      "word": "bao lâu"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "lâu"
+      }
+     ],
+     "props": [
+      {
+       "kind": "qmark",
+       "x": 780,
+       "y": 480,
+       "s": 0.7,
+       "at": 0.4
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Ủa mà tập một việc mất **bao lâu** mới thành thói quen?",
+       "say": "Ủa mà tập một việc mất bao lâu mới thành thói quen?",
+       "en": "How long until a habit sticks?",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "Ủa mà tập một việc",
+         "gap": 0.16,
+         "tempo": 1.04,
+         "semi": 0.5
+        },
+        {
+         "t": "mất bao lâu mới thành thói quen?",
+         "gap": 0.3,
+         "tempo": 1.02,
+         "semi": 0.8,
+         "emph": true,
+         "emph_semi": 0.6
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Dấu hỏi bật lớn trên nền ô",
+      "react": "tò mò"
+     },
+     "link": "thấy nụ còn non nên hỏi thật mất bao lâu mới thành nếp"
+    },
+    {
+     "id": "b03b",
+     "beat": "clip-06.b03",
+     "part": "turn",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "focused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Mốc hai ba tuần hiện như kỳ vọng cũ rồi đứng im",
+      "word": "hai ba tuần"
+     },
+     "sfx": [
+      {
+       "name": "click",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "tuần"
+      }
+     ],
+     "props": [
+      {
+       "kind": "sign",
+       "x": 280,
+       "y": 480,
+       "s": 0.48,
+       "rot": 2,
+       "text": "2–3 TUẦN",
+       "at": 0.5
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "Hồi trước mình cứ đinh ninh ráng **hai ba tuần** là vô guồng.",
+       "say": "Hồi trước mình cứ đinh ninh, ráng hai ba tuần là vô guồng.",
+       "en": "I assumed two or three weeks.",
+       "hl": [
+        2
+       ],
+       "phrases": [
+        {
+         "t": "Hồi trước mình cứ đinh ninh,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": -0.1
+        },
+        {
+         "t": "ráng hai ba tuần là vô guồng.",
+         "gap": 0.28,
+         "tempo": 0.94,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.4
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Mốc kỳ vọng cũ hiện rồi đứng im",
+      "react": "tưởng đã hiểu"
+     },
+     "link": "câu hỏi vừa nêu được trả bằng kỳ vọng sai cũ của chính mình"
+    },
+    {
+     "id": "b04",
+     "beat": "clip-06.b04",
+     "part": "explain",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "surprised",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Thẻ PHILLIPPA LALLY 2010 đóng xuống, người kể ngả ra sau",
+      "word": "ngửa người"
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "ngửa"
+      }
+     ],
+     "props": [
+      {
+       "kind": "sign",
+       "x": 280,
+       "y": 460,
+       "s": 0.5,
+       "rot": -2,
+       "text": "LALLY 2010",
+       "at": 0.35
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "Đọc nghiên cứu năm 2010 của nhóm Lally mới **ngửa người** ra:",
+       "say": "Đọc nghiên cứu năm hai ngàn mười của nhóm La li mới ngửa người ra:",
+       "en": "Lally’s 2010 study floored me.",
+       "hl": [
+        0
+       ],
+       "phrases": [
+        {
+         "t": "Đọc nghiên cứu năm hai ngàn mười",
+         "gap": 0.18,
+         "tempo": 1.0,
+         "semi": 0.1
+        },
+        {
+         "t": "của nhóm La li",
+         "gap": 0.16,
+         "tempo": 0.98,
+         "semi": 0.0
+        },
+        {
+         "t": "mới ngửa người ra:",
+         "gap": 0.26,
+         "tempo": 0.92,
+         "semi": 0.4,
+         "emph": true,
+         "emph_semi": 0.3
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Thẻ nguồn đóng xuống, người kể ngả ra sau",
+      "react": "choáng"
+     },
+     "link": "kỳ vọng hai ba tuần đụng đúng nghiên cứu nên ngả người"
+    },
+    {
+     "id": "b04b",
+     "beat": "clip-06.b04",
+     "part": "explain",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "surprised",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Thước ngày chạy từ vạch 18 vọt tới vạch 254, nhãn hơn 8 tháng đập cuối",
+      "word": "254 ngày"
+     },
+     "sfx": [
+      {
+       "name": "rise",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "254"
+      }
+     ],
+     "props": [
+      {
+       "kind": "sign",
+       "x": 200,
+       "y": 1320,
+       "s": 0.32,
+       "rot": -2,
+       "text": "18 NGÀY",
+       "at": 0.7
+      },
+      {
+       "kind": "sign",
+       "x": 880,
+       "y": 1320,
+       "s": 0.32,
+       "rot": 2,
+       "text": "254 NGÀY",
+       "at": 1.6
+      },
+      {
+       "kind": "sign",
+       "x": 540,
+       "y": 1380,
+       "s": 0.26,
+       "rot": 0,
+       "text": "HƠN 8 THÁNG",
+       "at": 2.4
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "surprised",
+       "text": "làm việc nhỏ mỗi ngày, người nhanh nhất mất **18 ngày**, chậm nhất tới **254 ngày** — hơn **8 tháng** mới thành nếp.",
+       "say": "làm việc nhỏ mỗi ngày, người nhanh nhất mất mười tám ngày, chậm nhất tới hai trăm năm mươi tư ngày, hơn tám tháng mới thành nếp.",
+       "en": "Fastest took 18 days / slowest took 254, over 8 months.",
+       "hl": [
+        7
+       ],
+       "phrases": [
+        {
+         "t": "làm việc nhỏ mỗi ngày,",
+         "gap": 0.16,
+         "tempo": 1.0,
+         "semi": 0.0
+        },
+        {
+         "t": "người nhanh nhất mất mười tám ngày,",
+         "gap": 0.2,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "chậm nhất tới hai trăm năm mươi tư ngày,",
+         "gap": 0.24,
+         "tempo": 0.94,
+         "semi": 0.3,
+         "emph": true,
+         "emph_semi": 0.2
+        },
+        {
+         "t": "hơn tám tháng mới thành nếp.",
+         "gap": 0.34,
+         "tempo": 0.9,
+         "semi": -0.3
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Thước kéo từ vạch gần tới vạch thật xa",
+      "react": "sửng sốt"
+     },
+     "link": "cú ngửa người được trả bằng khoảng ngày tăng dần, số lớn nằm cuối"
+    },
+    {
+     "id": "b05",
+     "beat": "clip-06.b05",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Vai hạ, mặt giãn đúng chữ nhẹ hẳn",
+      "word": "nhẹ hẳn"
+     },
+     "sfx": [
+      {
+       "name": "whoosh",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "nhẹ"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Đọc tới đó tự nhiên **nhẹ hẳn** cái đầu.",
+       "say": "Đọc tới đó tự nhiên nhẹ hẳn cái đầu.",
+       "en": "Reading that, the weight lifted.",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "{nhấn: Đọc} tới đó tự nhiên",
+         "gap": 0.16,
+         "tempo": 0.98,
+         "semi": 0.2,
+         "emph": true,
+         "emph_semi": 0.2
+        },
+        {
+         "t": "nhẹ hẳn cái đầu.",
+         "gap": 0.3,
+         "tempo": 0.92,
+         "semi": -0.2,
+         "emph": true,
+         "emph_semi": -0.4
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Vai hạ xuống, mặt giãn",
+      "react": "trút được"
+     },
+     "link": "biên độ tới hơn 8 tháng làm gánh trên đầu rơi xuống"
+    },
+    {
+     "id": "b05a",
+     "beat": "clip-06.b05",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Mốc của mình nằm trước vạch sớm, nhãn không hợp bị gạch",
+      "word": "bình thường"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "bình"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Nhanh nhất người ta còn mất hơn hai tuần, mình mới chạy hai tuần mà oải là quá **bình thường** — đâu phải không hợp.",
+       "say": "Nhanh nhất người ta còn mất hơn hai tuần, mình mới chạy hai tuần mà oải là quá bình thường, đâu phải không hợp.",
+       "en": "Tired at week two is normal.",
+       "hl": [
+        5
+       ],
+       "phrases": [
+        {
+         "t": "Nhanh nhất người ta còn mất hơn hai tuần,",
+         "gap": 0.2,
+         "tempo": 1.0,
+         "semi": 0.1
+        },
+        {
+         "t": "mình mới chạy hai tuần mà oải là quá bình thường,",
+         "gap": 0.22,
+         "tempo": 0.96,
+         "semi": 0.0,
+         "emph": true,
+         "emph_semi": -0.2
+        },
+        {
+         "t": "đâu phải không hợp.",
+         "gap": 0.3,
+         "tempo": 0.94,
+         "semi": -0.3
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Mốc của người kể nằm trước vạch sớm nhất",
+      "react": "nhẹ người"
+     },
+     "link": "vừa trút gánh nên đối chiếu hai tuần của mình với mốc nhanh nhất"
+    },
+    {
+     "id": "b06",
+     "beat": "clip-06.b06",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "focused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Lịch tuần thu nhỏ thành chồng nhiều tháng, một ô trống hiện ở chữ nghỉ",
+      "word": "tháng"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "tháng"
+      }
+     ],
+     "props": [
+      {
+       "kind": "calendar",
+       "x": 860,
+       "y": 1280,
+       "s": 0.38,
+       "pages": [
+        "T1",
+        "T3",
+        "T6",
+        "T8"
+       ],
+       "tearAt": [
+        0.4,
+        0.9,
+        1.4
+       ]
+      }
+     ],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "focused",
+       "text": "Thói quen tính bằng **tháng** chứ hông phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải **nghỉ**.",
+       "say": "Thói quen tính bằng tháng chứ hông phải bằng tuần, làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ.",
+       "en": "Count habits in months, not weeks.",
+       "hl": [
+        1
+       ],
+       "phrases": [
+        {
+         "t": "Thói quen tính bằng tháng chứ hông phải bằng tuần,",
+         "gap": 0.2,
+         "tempo": 1.0,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": 0.1
+        },
+        {
+         "t": "làm cả mấy tháng kiểu gì cũng có hôm bận phải nghỉ.",
+         "gap": 0.28,
+         "tempo": 0.96,
+         "semi": -0.2
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Lịch tuần thu lại thành chồng dày",
+      "react": "nhìn lại thước đo"
+     },
+     "link": "đã thấy hai tuần là sớm nên đổi thước từ tuần sang tháng"
+    },
+    {
+     "id": "b06a",
+     "beat": "clip-06.b06",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "grid",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Một ô trống giữa chuỗi ô còn sáng, không bị xoá về không",
+      "word": "hông sao"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "sao"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Cái hay là nhóm đó cũng thấy nghỉ một ngày gần như **hông sao**, công mấy hôm trước vẫn còn nguyên.",
+       "say": "Cái hay là nhóm đó cũng thấy nghỉ một ngày gần như hông sao, công, mấy hôm trước vẫn còn nguyên.",
+       "en": "Missing one day barely hurts.",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Cái hay là nhóm đó cũng thấy",
+         "gap": 0.16,
+         "tempo": 1.0,
+         "semi": 0.2
+        },
+        {
+         "t": "nghỉ một ngày gần như hông sao,",
+         "gap": 0.22,
+         "tempo": 0.96,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": -0.2
+        },
+        {
+         "t": "công, mấy hôm trước vẫn còn nguyên.",
+         "gap": 0.28,
+         "tempo": 0.94,
+         "semi": -0.2
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Một ô trống giữa chuỗi ô còn sáng",
+      "react": "yên tâm"
+     },
+     "link": "tính bằng tháng thì chắc chắn có hôm bận, nên gỡ nỗi sợ đứt một ngày"
+    },
+    {
+     "id": "b07",
+     "beat": "clip-06.b07",
+     "part": "payoff",
+     "role": "Hiệp",
+     "background": "desk",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "walking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Ra cửa buộc dây, nụ trên bậu cửa còn nguyên đúng chữ mười phút",
+      "word": "mười phút"
+     },
+     "sfx": [
+      {
+       "name": "click",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "phút"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Tối nay mình cứ xỏ giày chạy nhẹ **mười phút**, mệt thì đi bộ, lỡ bữa nào, mai **đi tiếp** — cái nụ còn đó là được.",
+       "say": "Tối nay mình cứ xỏ giày, chạy nhẹ mười phút, mệt thì đi bộ, lỡ bữa nào, mai đi tiếp, cái nụ còn đó là được.",
+       "en": "Tonight, an easy ten minutes.",
+       "hl": [
+        2
+       ],
+       "phrases": [
+        {
+         "t": "Tối nay mình cứ xỏ giày, chạy nhẹ mười phút,",
+         "gap": 0.2,
+         "tempo": 1.0,
+         "semi": 0.1,
+         "emph": true,
+         "emph_semi": 0.0
+        },
+        {
+         "t": "mệt thì đi bộ,",
+         "gap": 0.16,
+         "tempo": 0.98,
+         "semi": -0.1
+        },
+        {
+         "t": "lỡ bữa nào, mai đi tiếp,",
+         "gap": 0.2,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "cái nụ còn đó là được.",
+         "gap": 0.32,
+         "tempo": 0.92,
+         "semi": -0.3
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Ra cửa dưới đèn, dây giày đang buộc",
+      "react": "nhẹ, làm được"
+     },
+     "link": "đã biết nghỉ một ngày không xoá công nên tối nay chỉ cần đi nhẹ"
+    },
+    {
+     "id": "b08",
+     "beat": "clip-06.b08",
+     "part": "summary",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "slide",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Dừng trước hiên, hạ vai, không giảng",
+      "word": "nghĩ mỗi khác"
+     },
+     "sfx": [
+      {
+       "name": "pop",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "khác"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "neutral",
+       "text": "Mình thì đi nhẹ vậy **thôi**, chứ chuyện này mỗi người **nghĩ mỗi khác**.",
+       "say": "Mình thì đi nhẹ vậy thôi, chứ chuyện này mỗi người nghĩ mỗi khác.",
+       "en": "That easy pace is just my way.",
+       "hl": [
+        2
+       ],
+       "phrases": [
+        {
+         "t": "Mình thì đi nhẹ vậy thôi,",
+         "gap": 0.2,
+         "tempo": 0.96,
+         "semi": -0.1
+        },
+        {
+         "t": "chứ chuyện này mỗi người nghĩ mỗi khác.",
+         "gap": 0.28,
+         "tempo": 0.98,
+         "semi": 0.2,
+         "emph": true,
+         "emph_semi": 0.1
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Dừng trước hiên, gãi đầu, mỉm",
+      "react": "khiêm"
+     },
+     "link": "việc tối nay là cách của mình, nên nhường chỗ cho góc nhìn người khác"
+    },
+    {
+     "id": "b08a",
+     "beat": "clip-06.b08",
+     "part": "summary",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "thinking",
+       "expression": "confused",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Nghiêng đầu về phía người xem đúng chữ dễ nản",
+      "word": "dễ nản"
+     },
+     "sfx": [
+      {
+       "name": "tick",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "nản"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "confused",
+       "text": "Có ai cứ tới tuần hai là **dễ nản** giống mình hông?",
+       "say": "Có ai cứ tới tuần hai là dễ nản giống mình hông?",
+       "en": "Anyone else lose steam at week two?",
+       "hl": [
+        3
+       ],
+       "phrases": [
+        {
+         "t": "Có ai cứ tới tuần hai",
+         "gap": 0.18,
+         "tempo": 1.02,
+         "semi": 0.4
+        },
+        {
+         "t": "là {nhấn: dễ nản} giống mình hông?",
+         "gap": 0.3,
+         "tempo": 1.0,
+         "semi": 0.7,
+         "emph": true,
+         "emph_semi": 0.6
+        }
+       ],
+       "voice_role": "Hiệp",
+       "takes": 6
+      }
+     ],
+     "stage": {
+      "action": "Nghiêng đầu nhìn ra phía người xem",
+      "react": "đồng cảm, hỏi thật"
+     },
+     "link": "vừa nhận mỗi người một góc nên hỏi ai cũng dễ nản đúng khúc tuần hai"
+    },
+    {
+     "id": "b08b",
+     "beat": "clip-06.b08",
+     "part": "cta",
+     "role": "Hiệp",
+     "background": "room",
+     "framing": "medium",
+     "push": 0.06,
+     "transition": "cut",
+     "cast": [
+      {
+       "id": "hiep",
+       "x": 0.5,
+       "facing": "right",
+       "pose": "standing",
+       "action": "talking",
+       "expression": "happy",
+       "enter": "none"
+      }
+     ],
+     "fx": {
+      "visual": "Gật nhẹ chờ bong bóng, không giơ nút like",
+      "word": "nghĩ sao"
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "atLine": 0,
+       "offset": 0.15,
+       "word": "sao"
+      }
+     ],
+     "props": [],
+     "lines": [
+      {
+       "speaker": "hiep",
+       "emotion": "happy",
+       "text": "Hay bạn **nghĩ sao**, có cách gì vượt qua khúc đó — comment kể mình nghe với nha.",
+       "say": "Hay bạn nghĩ sao, có cách gì vượt qua khúc đó, còm men kể mình nghe với nha.",
+       "en": "What helps you push through? Tell me.",
+       "hl": [
+        0
+       ],
+       "phrases": [
+        {
+         "t": "Hay bạn nghĩ sao,",
+         "gap": 0.2,
+         "tempo": 1.02,
+         "semi": 0.5,
+         "emph": true,
+         "emph_semi": 0.4
+        },
+        {
+         "t": "có cách gì vượt qua khúc đó,",
+         "gap": 0.18,
+         "tempo": 0.98,
+         "semi": 0.1
+        },
+        {
+         "t": "còm men kể mình nghe với nha.",
+         "gap": 0.32,
+         "tempo": 0.94,
+         "semi": -0.2
+        }
+       ],
+       "voice_role": "Hiệp"
+      }
+     ],
+     "stage": {
+      "action": "Gật nhẹ, chờ bong bóng ý kiến",
+      "react": "lắng nghe"
+     },
+     "link": "câu hỏi đồng cảm mở thêm cửa cách vượt qua và lời mời kể"
+    }
+   ]
+  }
+ ]
+}
